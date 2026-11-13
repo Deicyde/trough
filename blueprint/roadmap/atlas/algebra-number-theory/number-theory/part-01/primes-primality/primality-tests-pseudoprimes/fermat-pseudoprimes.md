@@ -7,7 +7,7 @@ statement: formalized
 
 # Fermat pseudoprimes
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-pseudoprimes/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-pseudoprimes/index.html).
 
 ## Cipolla's pseudoprime construction
 
@@ -20,7 +20,7 @@ $n > 1$, $n$ is not prime, and $n$ divides $a^{n-1} - 1$.
 
 - Y. Hamahata and Y. Kokubun, "Cipolla Pseudoprimes", Journal of Integer Sequences 10 (2007), Theorem 1 (Cipolla, cf. Ribenboim), lines 87--95, <https://cs.uwaterloo.ca/journals/JIS/VOL10/Hamahata2/hamahata44.tex>.
 
-Formalized by `MetaMathlibExt.cipolla_pseudoprime_construction`, a theorem declared in [MathlibExt/NumberTheory/CipollaPseudoprime.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/CipollaPseudoprime.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-pseudoprimes/index.html#cipolla-pseudoprime-construction).
+Formalized by `MetaMathlibExt.cipolla_pseudoprime_construction`, a theorem declared in [MathlibExt/NumberTheory/CipollaPseudoprime.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/CipollaPseudoprime.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-pseudoprimes/index.html#cipolla-pseudoprime-construction).
 
 ## Guy's question on non-squarefree base-two pseudoprimes beyond $10^{13}$
 
@@ -33,7 +33,7 @@ $3511^2$, and asks whether there are any other "square psp"s. Here "square psp" 
 non-squarefree base-two pseudoprime, not a number that is itself a perfect square. Guy poses this
 as a question; this is its affirmative existence form, which does not predict the answer.
 
-Formalized by `MathlibExt.NumberTheory.NonSquarefreeBaseTwoPseudoprimeWanted.conjecture`, a definition declared in [WantedExt/NumberTheory/NonSquarefreeBaseTwoPseudoprimeWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NonSquarefreeBaseTwoPseudoprimeWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-pseudoprimes/index.html#conjecture).
+Formalized by `MathlibExt.NumberTheory.NonSquarefreeBaseTwoPseudoprimeWanted.conjecture`, a definition declared in [WantedExt/NumberTheory/NonSquarefreeBaseTwoPseudoprimeWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NonSquarefreeBaseTwoPseudoprimeWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-pseudoprimes/index.html#conjecture).
 
 ## A non-squarefree base-two pseudoprime beyond $10^{13}$ exists
 
@@ -47,7 +47,7 @@ OEIS A158358 gives the witness $n = 10063351640161 = 73 \cdot 257 \cdot 449 \cdo
 
 - OEIS A158358, nonsquarefree Poulet numbers, https://oeis.org/A158358.
 
-Stated but not proved: `MathlibExt.NumberTheory.NonSquarefreeBaseTwoPseudoprimeWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/NumberTheory/NonSquarefreeBaseTwoPseudoprimeWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NonSquarefreeBaseTwoPseudoprimeWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-pseudoprimes/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.NumberTheory.NonSquarefreeBaseTwoPseudoprimeWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/NumberTheory/NonSquarefreeBaseTwoPseudoprimeWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NonSquarefreeBaseTwoPseudoprimeWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-pseudoprimes/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fermat pseudoprimes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-pseudoprimes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-pseudoprimes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-pseudoprimes)

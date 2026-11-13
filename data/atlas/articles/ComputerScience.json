@@ -1,6 +1,6 @@
 {
  "schema": "trough-atlas/v1",
- "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "rev": "035e1808ca0c8983682b74153a02628d616d77ce",
  "articles": [
   {
    "path": "ComputerScience/algebraic-and-numerical-algorithms/binary-polynomial-arithmetic-on-bitvectors/adjoin-root-equiv-apply.md",
@@ -8547,7 +8547,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/birthday-bound/collision-game.md",
+   "path": "ComputerScience/cryptography/hash-functions/birthday-bound/collision-game.md",
    "title": "The collision experiment",
    "statement": "For a nonempty finite set $\\alpha$ and a natural number $q$, the\ncollision experiment is the probability distribution on $\\{\\mathrm{true}, \\mathrm{false}\\}$\nobtained by drawing a function $s \\colon \\{0, \\dots, q - 1\\} \\to \\alpha$ uniformly at random\n(equivalently, $q$ independent uniform samples $s(0), \\dots, s(q - 1)$ from $\\alpha$) and\noutputting true exactly when $s$ is not injective, that is, when $s(i) = s(j)$ for some\n$i \\ne j$.",
    "declaration": "Cslib.Crypto.Birthday.collisionGame",
@@ -8559,7 +8559,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/birthday-bound/collision-prob-eq.md",
+   "path": "ComputerScience/cryptography/hash-functions/birthday-bound/collision-prob-eq.md",
    "title": "The exact collision probability",
    "statement": "Let $\\alpha$ be a nonempty finite set with $N$ elements\nand $q$ a natural number. The probability that $q$ independent uniform samples from $\\alpha$\ncontain a collision equals $1 - N (N - 1) \\cdots (N - q + 1) / N^q$, where the product\n$N (N - 1) \\cdots (N - q + 1)$ has $q$ factors (it is $1$ for $q = 0$ and $0$ for $q > N$).",
    "declaration": "Cslib.Crypto.Birthday.collisionProb_eq",
@@ -8571,7 +8571,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/birthday-bound/collision-prob-ge-of-le-sqrt-card.md",
+   "path": "ComputerScience/cryptography/hash-functions/birthday-bound/collision-prob-ge-of-le-sqrt-card.md",
    "title": "Birthday lower bound for at most square-root many samples",
    "statement": "Let $\\alpha$ be a nonempty\nfinite set with $N$ elements and $q$ a natural number with $q \\le \\sqrt{N}$. The probability that\n$q$ independent uniform samples from $\\alpha$ contain a collision is at least\n$q (q - 1) / (4 N)$.",
    "declaration": "Cslib.Crypto.Birthday.collisionProb_ge_of_le_sqrt_card",
@@ -8583,7 +8583,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/birthday-bound/collision-prob-ge-of-le-sqrt.md",
+   "path": "ComputerScience/cryptography/hash-functions/birthday-bound/collision-prob-ge-of-le-sqrt.md",
    "title": "Birthday lower bound as stated in Katz and Lindell",
    "statement": "Let $\\alpha$ be a nonempty finite set\nwith $N$ elements and $q$ a natural number with $q \\le \\sqrt{2 N}$. The probability that $q$\nindependent uniform samples from $\\alpha$ contain a collision is at least $q (q - 1) / (4 N)$.\n\nThis is Lemma A.16 of Katz and Lindell (2nd ed.): \"say $q \\le \\sqrt{2N}$ elements are chosen\nuniformly and independently ... at least $q (q - 1) / (4N)$\".",
    "declaration": "Cslib.Crypto.Birthday.collisionProb_ge_of_le_sqrt",
@@ -8595,7 +8595,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/birthday-bound/collision-prob-ge.md",
+   "path": "ComputerScience/cryptography/hash-functions/birthday-bound/collision-prob-ge.md",
    "title": "Birthday lower bound",
    "statement": "Let $\\alpha$ be a nonempty finite set with $N$ elements and $q$ a\nnatural number with $q (q - 1) \\le 2 N$. The probability that $q$ independent uniform samples\nfrom $\\alpha$ contain a collision is at least $q (q - 1) / (4 N)$.\n\nThis strengthens Katz and Lindell's Lemma A.16, whose hypothesis $q \\le \\sqrt{2 N}$ implies\n$q (q - 1) \\le 2 N$.",
    "declaration": "Cslib.Crypto.Birthday.collisionProb_ge",
@@ -8607,7 +8607,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/birthday-bound/collision-prob-le.md",
+   "path": "ComputerScience/cryptography/hash-functions/birthday-bound/collision-prob-le.md",
    "title": "Birthday upper bound",
    "statement": "Let $\\alpha$ be a nonempty finite set with $N$ elements and $q$ a\nnatural number. The probability that $q$ independent uniform samples from $\\alpha$ contain a\ncollision is at most $q (q - 1) / (2 N)$.\n\nThis implies Katz and Lindell's Lemma A.15, which states the bound $q^2 / (2 N)$.",
    "declaration": "Cslib.Crypto.Birthday.collisionProb_le",
@@ -8619,7 +8619,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/birthday-bound/collision-prob.md",
+   "path": "ComputerScience/cryptography/hash-functions/birthday-bound/collision-prob.md",
    "title": "Collision probability",
    "statement": "For a nonempty finite set $\\alpha$ and a natural number $q$, the\ncollision probability is the probability, as a real number, that the collision experiment with\n$q$ samples from $\\alpha$ outputs true, that is, that $q$ independent uniform samples from\n$\\alpha$ contain two equal samples at distinct positions.",
    "declaration": "Cslib.Crypto.Birthday.collisionProb",
@@ -8631,7 +8631,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/birthday-bound/div-one-add-le-collision-prob.md",
+   "path": "ComputerScience/cryptography/hash-functions/birthday-bound/div-one-add-le-collision-prob.md",
    "title": "Birthday lower bound, rational form",
    "statement": "Let $\\alpha$ be a nonempty finite set with $N$\nelements, $q$ a natural number, and $x = q (q - 1) / (2 N)$. The probability that $q$ independent\nuniform samples from $\\alpha$ contain a collision is at least $x / (1 + x)$.",
    "declaration": "Cslib.Crypto.Birthday.div_one_add_le_collisionProb",
@@ -8643,7 +8643,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/birthday-bound/half-le-collision-prob.md",
+   "path": "ComputerScience/cryptography/hash-functions/birthday-bound/half-le-collision-prob.md",
    "title": "Even odds of a collision",
    "statement": "Let $\\alpha$ be a nonempty finite set with $N$ elements and $q$ a\nnatural number with $2 N \\le q (q - 1)$. The probability that $q$ independent uniform samples from\n$\\alpha$ contain a collision is at least $1/2$.",
    "declaration": "Cslib.Crypto.Birthday.half_le_collisionProb",
@@ -8655,7 +8655,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/birthday-bound/one-sub-exp-le-collision-prob.md",
+   "path": "ComputerScience/cryptography/hash-functions/birthday-bound/one-sub-exp-le-collision-prob.md",
    "title": "Birthday lower bound, exponential form",
    "statement": "Let $\\alpha$ be a nonempty finite set with $N$\nelements and $q$ a natural number. The probability that $q$ independent uniform samples from\n$\\alpha$ contain a collision is at least $1 - \\exp(-q (q - 1) / (2 N))$.",
    "declaration": "Cslib.Crypto.Birthday.one_sub_exp_le_collisionProb",
@@ -8667,379 +8667,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/diffie-hellman-key-exchange/dh-agree.md",
-   "title": "Correctness of Diffie–Hellman key agreement",
-   "statement": "Let $G$ be a group, $q$ a natural number and\n$g \\in G$. For $x \\in G$ and $c \\in \\mathbb{Z}/q\\mathbb{Z}$ write $x^c$ for $x^n$, where $n$ is\nthe natural-number value of $c$: its representative in $\\{0, \\dots, q-1\\}$ when $q > 0$, and\n$|c|$ when $q = 0$ (in which case $\\mathbb{Z}/q\\mathbb{Z} = \\mathbb{Z}$). Then\n$(g^b)^a = (g^a)^b$ for all $a, b \\in \\mathbb{Z}/q\\mathbb{Z}$.",
-   "declaration": "Cslib.Crypto.PublicKey.dh_agree",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/DiffieHellman.lean",
-    "line": 62,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/diffie-hellman-key-exchange/dh-key-eq.md",
-   "title": "Value of the Diffie–Hellman shared key",
-   "statement": "Let $G$ be a group, $q$ a natural number and\n$g \\in G$ with $g^q = 1$. For $x \\in G$ and $c \\in \\mathbb{Z}/q\\mathbb{Z}$ write $x^c$ for $x^n$,\nwhere $n$ is the natural-number value of $c$: its representative in $\\{0, \\dots, q-1\\}$ when\n$q > 0$, and $|c|$ when $q = 0$ (in which case $\\mathbb{Z}/q\\mathbb{Z} = \\mathbb{Z}$). Then\n$(g^b)^a = g^{ab}$ for all $a, b \\in \\mathbb{Z}/q\\mathbb{Z}$, where $ab$ is the product in\n$\\mathbb{Z}/q\\mathbb{Z}$.",
-   "declaration": "Cslib.Crypto.PublicKey.dh_key_eq",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/DiffieHellman.lean",
-    "line": 66,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/diffie-hellman-key-exchange/gpow-equiv.md",
-   "title": "Exponentiation from a generator is a bijection",
-   "statement": "Let $G$ be a finite group of order $q$,\nwith $q \\neq 0$, and let $g \\in G$ generate $G$, that is, every element of $G$ is an integer\npower of $g$. Then $a \\mapsto g^a$ is a bijection from $\\mathbb{Z}/q\\mathbb{Z}$ to $G$, where\n$g^a = g^n$ for the representative $n \\in \\{0, \\dots, q-1\\}$ of $a$. Its inverse is the\ndiscrete logarithm to base $g$.",
-   "declaration": "Cslib.Crypto.PublicKey.gpowEquiv",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/DiffieHellman.lean",
-    "line": 76,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/diffie-hellman-key-exchange/gpow.md",
-   "title": "Group exponentiation with modular exponents",
-   "statement": "Let $G$ be a group, $q$ a natural number,\n$g \\in G$ and $a \\in \\mathbb{Z}/q\\mathbb{Z}$. Then $g^a$ is defined as $g^n$, where $n$ is the\nnatural-number value of $a$: its representative in $\\{0, \\dots, q-1\\}$ when $q > 0$, and $|a|$\nwhen $q = 0$ (in which case $\\mathbb{Z}/q\\mathbb{Z} = \\mathbb{Z}$).",
-   "declaration": "Cslib.Crypto.PublicKey.gpow",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/DiffieHellman.lean",
-    "line": 44,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/adversary.md",
-   "title": "ElGamal eavesdropping adversary",
-   "statement": "Given a type $G$ of public keys and messages and a type\n$R$ of random coins, an eavesdropping adversary consists of a choice function, which maps a public\nkey $h \\in G$ and coins $r \\in R$ to a pair of messages in $G \\times G$, and a guessing function,\nwhich maps a public key $h \\in G$, a ciphertext in $G \\times G$ and coins $r \\in R$ to a bit.",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.Adversary",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 93,
-    "kind": "structure",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/ddh-advantage.md",
-   "title": "Advantage of a DDH distinguisher",
-   "statement": "Let $G$ be a finite commutative group, $g \\in G$ and\n$q \\ge 1$, and let $D$ be a distinguisher that maps three elements of $G$ and coins in a finite\nnonempty type $S$ to a bit. The DDH advantage of $D$ is the real number\n$|p_{\\mathrm{real}} - p_{\\mathrm{rand}}|$, where $p_{\\mathrm{real}}$ and $p_{\\mathrm{rand}}$ are\nthe probabilities that $D$ outputs true in the real and in the random DDH experiment for $g$ with\nexponents in $\\mathbb{Z}/q\\mathbb{Z}$.",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.ddhAdvantage",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 132,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/ddh-rand-reduction-true.md",
-   "title": "The reduction is a fair coin on random DDH triples",
-   "statement": "Let $G$ be a finite commutative group\nof order $q$ generated by $g$. For every eavesdropping adversary $A$ with random coins in a finite\nnonempty type $R$, the DDH distinguisher obtained from $A$ by the reduction outputs true with\nprobability exactly $1/2$ in the random DDH experiment for $g$.\n\nIn that experiment the third input $g^z$, with $z$ uniform in $\\mathbb{Z}/q\\mathbb{Z}$, is a group\none-time pad on the challenge message.",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.ddhRand_reduction_true",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 187,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/ddh-rand.md",
-   "title": "Random DDH experiment",
-   "statement": "Let $G$ be a finite commutative group, $g \\in G$ and $q \\ge 1$ a\nnatural number, and let $D$ be a distinguisher that maps three elements of $G$ and coins in a\nfinite nonempty type $S$ to a bit. The random DDH experiment draws $x, y, z \\in \\mathbb{Z}/q$ and\ncoins $s \\in S$ independently and uniformly and outputs the distribution of the bit\n$D(g^x, g^y, g^z, s)$, where a power $g^a$ with $a \\in \\mathbb{Z}/q$ means $g^{v(a)}$ for the\nrepresentative $v(a) \\in \\{0, \\dots, q - 1\\}$ of $a$.",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.ddhRand",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 126,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/ddh-real.md",
-   "title": "Real DDH experiment",
-   "statement": "Let $G$ be a finite commutative group, $g \\in G$ and $q \\ge 1$ a\nnatural number, and let $D$ be a distinguisher that maps three elements of $G$ and coins in a\nfinite nonempty type $S$ to a bit. The real DDH experiment draws $x, y \\in \\mathbb{Z}/q$ and coins\n$s \\in S$ independently and uniformly and outputs the distribution of the bit\n$D(g^x, g^y, g^{xy}, s)$, where $xy$ is the product in $\\mathbb{Z}/q$ and a power $g^a$ with\n$a \\in \\mathbb{Z}/q$ means $g^{v(a)}$ for the representative $v(a) \\in \\{0, \\dots, q - 1\\}$\nof $a$.",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.ddhReal",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 119,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/decrypt-encrypt.md",
-   "title": "Correctness of ElGamal",
-   "statement": "Let $G$ be a commutative group, $g \\in G$ and $q$ a natural\nnumber. For $a \\in \\mathbb{Z}/q\\mathbb{Z}$ and $c \\in G$ write $c^a$ for\n$c^{\\operatorname{val}(a)}$, where $\\operatorname{val}(a) \\in \\mathbb{N}$ is the representative\nof $a$ in $\\{0, \\dots, q-1\\}$ if $q \\ge 1$ and $|a|$ if $q = 0$. For every secret key\n$x \\in \\mathbb{Z}/q\\mathbb{Z}$, every message $m \\in G$ and every encryption randomness\n$y \\in \\mathbb{Z}/q\\mathbb{Z}$, decrypting with $x$ the ElGamal encryption of $m$ under the\npublic key $g^x$ with randomness $y$ returns $m$.",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.decrypt_encrypt",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 73,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/decrypt.md",
-   "title": "ElGamal decryption",
-   "statement": "Let $G$ be a commutative group and $q$ a natural number. For\n$a \\in \\mathbb{Z}/q\\mathbb{Z}$ and $c \\in G$ write $c^a$ for $c^{\\operatorname{val}(a)}$, where\n$\\operatorname{val}(a) \\in \\mathbb{N}$ is the representative of $a$ in $\\{0, \\dots, q-1\\}$ if\n$q \\ge 1$ and $|a|$ if $q = 0$. Decrypting a ciphertext $(c_1, c_2) \\in G \\times G$ with the\nsecret key $x \\in \\mathbb{Z}/q\\mathbb{Z}$ gives $c_2 \\cdot (c_1^x)^{-1}$.",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.decrypt",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 69,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/eav-advantage-eq-ddh-advantage.md",
-   "title": "ElGamal eavesdropping advantage equals a DDH advantage",
-   "statement": "Let $G$ be a finite commutative\ngroup of order $q$ generated by $g$. For every eavesdropping adversary $A$ with random coins in a\nfinite nonempty type $R$, the eavesdropping advantage of $A$ against ElGamal equals the DDH\nadvantage of the distinguisher obtained from $A$ by the reduction.\n\nThis is the eavesdropping part of Katz and Lindell, Theorem 11.18 (ElGamal is secure if DDH is\nhard), in exact, non-asymptotic form.",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.eavAdvantage_eq_ddhAdvantage",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 213,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/eav-advantage-le.md",
-   "title": "DDH bounds transfer to ElGamal",
-   "statement": "Let $G$ be a finite commutative group of order $q$\ngenerated by $g$, and let $A$ be an eavesdropping adversary with random coins in a finite nonempty\ntype $R$. For every real number $\\varepsilon$, if the DDH advantage of the distinguisher obtained\nfrom $A$ by the reduction is at most $\\varepsilon$, then the eavesdropping advantage of $A$\nagainst ElGamal is at most $\\varepsilon$.",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.eavAdvantage_le",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 222,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/eav-advantage.md",
-   "title": "Eavesdropping advantage against ElGamal",
-   "statement": "Let $G$ be a finite commutative group, $g \\in G$\nand $q \\ge 1$. The eavesdropping advantage of an adversary $A$ with random coins in a finite\nnonempty type $R$ is the real number $|p - 1/2|$, where $p$ is the probability that $A$ wins the\nElGamal eavesdropping experiment for $g$ with exponents in $\\mathbb{Z}/q\\mathbb{Z}$, that is,\nguesses the challenge bit correctly.",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.eavAdvantage",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 111,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/eav-game-eq-ddh-real.md",
-   "title": "ElGamal eavesdropping game equals the real DDH experiment of the reduction",
-   "statement": "Let $G$ be a\ncommutative group, $q \\ge 1$ a natural number and $g \\in G$ with $g^q = 1$. For every\neavesdropping adversary $A$ with coins in a finite nonempty type $R$, the output distribution of\nthe ElGamal eavesdropping experiment for $A$ (exponents in $\\mathbb{Z}/q$) equals the output\ndistribution of the real DDH experiment run with the distinguisher built from $A$ by the\nreduction.",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.eavGame_eq_ddhReal",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 143,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/eav-game.md",
-   "title": "ElGamal eavesdropping experiment",
-   "statement": "Let $G$ be a commutative group, $g \\in G$ and $q \\ge 1$.\nFor an eavesdropping adversary $A$ with coins in a finite nonempty type $R$, the experiment draws\n$x, y \\in \\mathbb{Z}/q$, coins $r \\in R$ and a bit $b$ independently and uniformly. It sets the\npublic key $h = g^x$, lets $A$ choose messages $(m_0, m_1)$ from $h$ and $r$, and gives $A$ the\nkey $h$, the ElGamal ciphertext $(g^y, h^y m_b)$ and the coins $r$, where $m_b$ is $m_1$ if $b$\nis true and $m_0$ otherwise; powers use the value of the exponent in $\\{0, \\dots, q - 1\\}$. The\nexperiment outputs the distribution of the bit \"the guess of $A$ equals $b$\".",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.eavGame",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 103,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/encrypt.md",
-   "title": "ElGamal encryption",
-   "statement": "Let $G$ be a commutative group with a fixed element $g$ and let $q$ be\na natural number. The ElGamal encryption of a message $m \\in G$ under the public key $h \\in G$\nwith randomness $y \\in \\mathbb{Z}/q$ is the pair $(g^y, h^y m) \\in G \\times G$. Here a power\n$k^a$ with $k \\in G$ and $a \\in \\mathbb{Z}/q$ means $k^{v(a)}$, where $v(a) \\in \\{0, \\dots, q - 1\\}$\nis the least nonnegative representative of $a$ if $q \\ge 1$, and $v(a) = |a|$ if $q = 0$ (when\n$\\mathbb{Z}/0 = \\mathbb{Z}$).",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.encrypt",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 66,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/pick.md",
-   "title": "Message selected by the challenge bit",
-   "statement": "Let $G$ be a finite commutative group. For a pair\nof messages $(m_0, m_1) \\in G \\times G$ and a bit $b$, the selected message is $m_1$ if $b$ is\ntrue and $m_0$ if $b$ is false.",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.pick",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 88,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/public-key.md",
-   "title": "ElGamal public key",
-   "statement": "Let $G$ be a commutative group with a fixed element $g$ and let $q$ be\na natural number. The public key of a secret key $x \\in \\mathbb{Z}/q$ is $h = g^{v(x)} \\in G$,\nwhere $v(x) \\in \\{0, \\dots, q - 1\\}$ is the least nonnegative representative of $x$ if $q \\ge 1$,\nand $v(x) = |x|$ if $q = 0$ (when $\\mathbb{Z}/0 = \\mathbb{Z}$).",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.publicKey",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 62,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/elgamal-encryption/reduction.md",
-   "title": "DDH distinguisher from an ElGamal eavesdropper",
-   "statement": "Let $G$ be a finite commutative group and\nlet $A$ be an eavesdropping adversary with coins in a finite nonempty type $R$. The distinguisher\nbuilt from $A$ takes three elements $X, Y, Z \\in G$ and coins consisting of $r \\in R$ and a bit\n$b$. It lets $A$ choose messages $(m_0, m_1)$ from the public key $X$ and the coins $r$, gives $A$\nthe public key $X$, the ciphertext $(Y, Z m_b)$ and the coins $r$, where $m_b$ is $m_1$ if $b$ is\ntrue and $m_0$ otherwise, and outputs true exactly when the guess of $A$ equals $b$.",
-   "declaration": "Cslib.Crypto.PublicKey.ElGamal.reduction",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
-    "line": 138,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/lamport-signature/forge-game-le.md",
-   "title": "Security reduction for Lamport one-time signatures",
-   "statement": "Let $f : X \\to Y$ be a function on a\nfinite nonempty set $X$, let $\\ell \\ge 1$ be the message length, and let $A$ be a one-time forger\nwhose random coins range over a finite nonempty set $R$. Then the probability that $A$ wins the\none-time forgery game against the Lamport scheme built from $f$ is at most $2\\ell$ times the\nprobability that the inverter built from $A$ wins the one-wayness game for $f$.\n\nThis is the reduction behind Katz and Lindell, Theorem 12.16: if $f$ is one-way, then Lamport's\nscheme is one-time secure.",
-   "declaration": "Cslib.Crypto.Signatures.Lamport.forgeGame_le",
-   "lean": {
-    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
-    "line": 209,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/lamport-signature/forge-game.md",
-   "title": "One-time forgery game",
-   "statement": "Let $f : X \\to Y$ with $X$ finite and nonempty, and let $A$ be a\none-time forger for messages of length $\\ell$ with random coins in a finite nonempty set $R$. The\none-time forgery game is the distribution on $\\{\\mathrm{true}, \\mathrm{false}\\}$ obtained by drawing\na secret key $sk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to X$ and coins $r \\in R$ uniformly and\nindependently, and returning whether $A$ wins against $sk$ with coins $r$.",
-   "declaration": "Cslib.Crypto.Signatures.Lamport.forgeGame",
-   "lean": {
-    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
-    "line": 91,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/lamport-signature/forger.md",
-   "title": "One-time forger",
-   "statement": "A one-time forger for messages of length $\\ell$, with random coins in a\nset $R$, consists of two maps. The first takes a public key\n$pk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to Y$ and coins $r \\in R$ and returns the message\n$m \\in \\{0, 1\\}^\\ell$ whose signature the forger requests. The second takes a public key, a\nsignature $\\sigma \\in X^\\ell$ and coins $r$ and returns a message $m' \\in \\{0, 1\\}^\\ell$ together\nwith a signature $\\sigma' \\in X^\\ell$.",
-   "declaration": "Cslib.Crypto.Signatures.Lamport.Forger",
-   "lean": {
-    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
-    "line": 71,
-    "kind": "structure",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/lamport-signature/invert-game.md",
-   "title": "One-wayness game",
-   "statement": "Let $f : X \\to Y$ with $X$ finite and nonempty, and let $I$ be an\ninverter with random coins in a finite nonempty set $\\Omega$: given $y \\in Y$ and coins\n$\\omega \\in \\Omega$ it either outputs some $x' \\in X$ or fails. The one-wayness game for $f$ is the\ndistribution on $\\{\\mathrm{true}, \\mathrm{false}\\}$ obtained by drawing $x \\in X$ and\n$\\omega \\in \\Omega$ uniformly and independently and returning true exactly when $I$, run on $f(x)$\nwith coins $\\omega$, outputs some $x'$ with $f(x') = f(x)$.",
-   "declaration": "Cslib.Crypto.Signatures.Lamport.invertGame",
-   "lean": {
-    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
-    "line": 97,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/lamport-signature/invert.md",
-   "title": "Inverter built from a forger",
-   "statement": "Let $f : X \\to Y$, let $A$ be a one-time forger for messages\nof length $\\ell$ with coins in $R$, and let $y \\in Y$. The inverter's coins are a position $(i, b)$\nwith $i < \\ell$ and $b \\in \\{0, 1\\}$, a secret key\n$sk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to X$ and forger coins $r \\in R$. It forms the\npublic key $pk$ with $pk(i, b) = y$ and $pk(j, c) = f(sk(j, c))$ for every other $(j, c)$, and\nruns $A$ on $pk$ with coins $r$ to obtain the message $m$ whose signature $A$ requests. If\n$m_i = b$ it fails. Otherwise it hands $A$ the signature $(sk(j, m_j))_{j < \\ell}$ of $m$ under\n$sk$ and obtains a forgery $(m', \\sigma')$; it outputs $\\sigma'_i$ if $m'_i = b$ and fails\notherwise.",
-   "declaration": "Cslib.Crypto.Signatures.Lamport.invert",
-   "lean": {
-    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
-    "line": 111,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/lamport-signature/plant.md",
-   "title": "Planted public key",
-   "statement": "Let $f : X \\to Y$. Given a secret key\n$sk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to X$, a position $(i, b)$ and a value $y \\in Y$, the\nplanted public key takes the value $y$ at $(i, b)$ and the value $f(sk(j, c))$ at every other\nposition $(j, c)$.",
-   "declaration": "Cslib.Crypto.Signatures.Lamport.plant",
-   "lean": {
-    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
-    "line": 105,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/lamport-signature/public-key.md",
-   "title": "Lamport public key",
-   "statement": "For a function $f : X \\to Y$ and a secret key\n$sk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to X$, the public key is the map\n$pk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to Y$ with $pk(i, b) = f(sk(i, b))$.",
-   "declaration": "Cslib.Crypto.Signatures.Lamport.publicKey",
-   "lean": {
-    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
-    "line": 52,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/lamport-signature/sign.md",
-   "title": "Lamport signing",
-   "statement": "The signature of a message $m \\in \\{0, 1\\}^\\ell$ under a secret key\n$sk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to X$ is $\\sigma \\in X^\\ell$ with\n$\\sigma_i = sk(i, m_i)$ for every position $i < \\ell$.",
-   "declaration": "Cslib.Crypto.Signatures.Lamport.sign",
-   "lean": {
-    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
-    "line": 55,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/lamport-signature/verify-sign.md",
-   "title": "Correctness of Lamport signatures",
-   "statement": "Let $f : X \\to Y$. For every secret key\n$sk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to X$ and every message $m \\in \\{0, 1\\}^\\ell$, the\nLamport signature of $m$ under $sk$ is valid for $m$ under the public key of $sk$.",
-   "declaration": "Cslib.Crypto.Signatures.Lamport.verify_sign",
-   "lean": {
-    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
-    "line": 66,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/lamport-signature/verify.md",
-   "title": "Lamport verification",
-   "statement": "Let $f : X \\to Y$. A signature $\\sigma \\in X^\\ell$ on a message\n$m \\in \\{0, 1\\}^\\ell$ is valid for a public key $pk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to Y$\nwhen $f(\\sigma_i) = pk(i, m_i)$ for every position $i < \\ell$.",
-   "declaration": "Cslib.Crypto.Signatures.Lamport.Verify",
-   "lean": {
-    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
-    "line": 58,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/lamport-signature/wins.md",
-   "title": "Winning the Lamport one-time forgery game",
-   "statement": "Let $X$ be a nonempty finite set, $Y$ a set\nwith decidable equality, $f : X \\to Y$ a function, and $\\ell$ a message length; messages are bit\nstrings $m = (m_0, \\dots, m_{\\ell-1})$. A one-time forger $A$ with random coins from a nonempty\nfinite set $R$ wins against a secret key $sk$, which assigns $sk(i, b) \\in X$ to each position\n$i < \\ell$ and bit $b$, with coins $r \\in R$ when the following holds. Let $pk$ be the public key\nof $sk$, given by $pk(i, b) = f(sk(i, b))$; let $m$ be the message that $A$ chooses from $pk$ and\n$r$; and let $(m', \\sigma')$ be the message and signature that $A$ outputs from $pk$, the\nsignature $i \\mapsto sk(i, m_i)$ of $m$ under $sk$, and $r$. Then $m' \\ne m$, and $\\sigma'$ is a\nvalid signature on $m'$ for $pk$: $f(\\sigma'_i) = pk(i, m'_i)$ for every $i < \\ell$.",
-   "declaration": "Cslib.Crypto.Signatures.Lamport.Forger.Wins",
-   "lean": {
-    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
-    "line": 81,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/merkle-damg-rd-construction/chain-rev.md",
+   "path": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/chain-rev.md",
    "title": "Chaining value of a reversed block list",
    "statement": "Let $h : S \\times B \\to S$ be a compression\nfunction and $iv \\in S$ an initial value. The chaining value of a list of blocks given last block\nfirst is defined recursively: the empty list has chaining value $iv$, and a list with first entry\n$x$ followed by a list $xs$ has chaining value $h(c, x)$, where $c$ is the chaining value of\n$xs$.",
    "declaration": "Cslib.Crypto.MerkleDamgard.chainRev",
@@ -9051,7 +8679,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/merkle-damg-rd-construction/chain.md",
+   "path": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/chain.md",
    "title": "Merkle–Damgård chaining value",
    "statement": "Let $h : S \\times B \\to S$ be a compression function and\n$iv \\in S$ an initial value. The chaining value of a list of blocks $M = (x_1, \\dots, x_L)$ is\n$z_L$, where $z_0 = iv$ and $z_i = h(z_{i-1}, x_i)$ for $1 \\le i \\le L$.",
    "declaration": "Cslib.Crypto.MerkleDamgard.chain",
@@ -9063,7 +8691,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/merkle-damg-rd-construction/compression-collision-game.md",
+   "path": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/compression-collision-game.md",
    "title": "Compression-function collision game",
    "statement": "Let $h : S \\times B \\to S$ be a compression function\nand let $A$ be an adversary that maps random coins $r$ from a finite nonempty type $R$ either to a\npair $(p_1, p_2)$ of compression inputs in $S \\times B$ or to no output. The game is the\ndistribution of the Boolean outcome when $r$ is drawn uniformly from $R$: the adversary wins\n(outcome true) exactly when $A(r)$ is a pair $(p_1, p_2)$ with $p_1 \\ne p_2$ and\n$h(p_1) = h(p_2)$, and loses when $A(r)$ is no output.",
    "declaration": "Cslib.Crypto.MerkleDamgard.compressionCollisionGame",
@@ -9075,7 +8703,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/merkle-damg-rd-construction/find-collision-spec.md",
+   "path": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/find-collision-spec.md",
    "title": "A Merkle–Damgård hash collision yields a compression collision",
    "statement": "Let\n$h : S \\times B \\to S$ be a compression function, $iv \\in S$ an initial value and\n$\\ell : \\mathbb{N} \\to B$ a length encoding, and let $H$ be the Merkle–Damgård hash with length\nstrengthening they define. Write $|M|$ for the number of blocks of a list of blocks $M$. If $M$\nand $M'$ are distinct lists of blocks with $H(M) = H(M')$, and $\\ell(|M|) = \\ell(|M'|)$ implies\n$|M| = |M'|$, then the collision-finding procedure applied to $M$ and $M'$ returns a pair\n$(p_1, p_2)$ of compression inputs with $p_1 \\ne p_2$ and $h(p_1) = h(p_2)$.\n\nThis is a block-level form of Katz and Lindell, Theorem 5.4.",
    "declaration": "Cslib.Crypto.MerkleDamgard.findCollision_spec",
@@ -9087,7 +8715,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/merkle-damg-rd-construction/find-collision.md",
+   "path": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/find-collision.md",
    "title": "Extracting a compression collision from a Merkle–Damgård collision",
    "statement": "Let\n$h : S \\times B \\to S$ be a compression function, $iv \\in S$ an initial value and\n$\\ell : \\mathbb{N} \\to B$ a length encoding. Let $M = (x_1, \\dots, x_L)$ and\n$M' = (x'_1, \\dots, x'_{L'})$ be lists of blocks with chaining values $z_0 = z'_0 = iv$,\n$z_i = h(z_{i-1}, x_i)$ and $z'_j = h(z'_{j-1}, x'_j)$. The procedure compares the final\ncompression inputs $(z_L, \\ell(L))$ and $(z'_{L'}, \\ell(L'))$ and returns this pair if they\ndiffer. Otherwise, for $k = 1, 2, \\dots, \\min(L, L')$ in turn, it compares\n$(z_{L-k}, x_{L-k+1})$ with $(z'_{L'-k}, x'_{L'-k+1})$ and returns the first such pair that\ndiffers; if there is none, it returns no output.",
    "declaration": "Cslib.Crypto.MerkleDamgard.findCollision",
@@ -9099,7 +8727,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/merkle-damg-rd-construction/hash-collision-game-le.md",
+   "path": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/hash-collision-game-le.md",
    "title": "The Merkle–Damgård transform preserves collision resistance",
    "statement": "Let $h : S \\times B \\to S$\nbe a compression function, $iv \\in S$ an initial value, $\\ell : \\mathbb{N} \\to B$ a length\nencoding and $N$ a natural number such that $\\ell$ is injective on $\\{0, 1, \\dots, N - 1\\}$. Then\nfor every adversary $A$ that maps random coins from a finite nonempty type $R$ to a pair of lists\nof blocks, the probability that the reduction built from $A$ wins the compression-function\ncollision game for $h$ is at least the probability that $A$ wins the hash collision game for the\nMerkle–Damgård hash defined by $h$, $iv$ and $\\ell$ with messages of fewer than $N$ blocks.",
    "declaration": "Cslib.Crypto.MerkleDamgard.hashCollisionGame_le",
@@ -9111,7 +8739,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/merkle-damg-rd-construction/hash-collision-game.md",
+   "path": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/hash-collision-game.md",
    "title": "Hash collision game for Merkle–Damgård",
    "statement": "Let $H$ be the Merkle–Damgård hash with length\nstrengthening defined by a compression function $h : S \\times B \\to S$, an initial value\n$iv \\in S$ and a length encoding $\\ell : \\mathbb{N} \\to B$, and let $N$ be a natural number. An\nadversary $A$ maps random coins $r$ from a finite nonempty type $R$ to a pair of lists of blocks.\nThe game is the distribution of the Boolean outcome when $r$ is drawn uniformly from $R$: the\nadversary wins (outcome true) exactly when $A(r) = (M, M')$ with $M \\ne M'$, both $M$ and $M'$\nhave fewer than $N$ blocks, and $H(M) = H(M')$.",
    "declaration": "Cslib.Crypto.MerkleDamgard.hashCollisionGame",
@@ -9123,7 +8751,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/merkle-damg-rd-construction/hash.md",
+   "path": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/hash.md",
    "title": "Merkle–Damgård hash with length strengthening",
    "statement": "Let $h : S \\times B \\to S$ be a compression\nfunction, $iv \\in S$ an initial value and $\\ell : \\mathbb{N} \\to B$ a length encoding. The hash of\na list of blocks $M = (x_1, \\dots, x_L)$ is $h(z_L, \\ell(L))$, where $z_0 = iv$ and\n$z_i = h(z_{i-1}, x_i)$ for $1 \\le i \\le L$.",
    "declaration": "Cslib.Crypto.MerkleDamgard.hash",
@@ -9135,7 +8763,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/merkle-damg-rd-construction/is-collision.md",
+   "path": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/is-collision.md",
    "title": "Collision of a compression function",
    "statement": "Let $h : S \\times B \\to S$ be a compression function.\nA pair $(p_1, p_2)$ of compression inputs in $S \\times B$ is a collision of $h$ when $p_1 \\ne p_2$\nand $h(p_1) = h(p_2)$.",
    "declaration": "Cslib.Crypto.MerkleDamgard.IsCollision",
@@ -9147,7 +8775,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/merkle-damg-rd-construction/reduction.md",
+   "path": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/reduction.md",
    "title": "Merkle–Damgård collision reduction",
    "statement": "Let $h : S \\times B \\to S$ be a compression function,\n$iv \\in S$ an initial value, $\\ell : \\mathbb{N} \\to B$ a length encoding and $A$ an adversary that\nmaps random coins $r$ from a finite nonempty type $R$ to a pair $(M, M')$ of lists of blocks. The\nreduction is the adversary that, on coins $r$, outputs the result of the Merkle–Damgård\ncollision-finding procedure applied to the pair $(M, M') = A(r)$: a pair of compression inputs,\nor no output.",
    "declaration": "Cslib.Crypto.MerkleDamgard.reduction",
@@ -9159,7 +8787,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/merkle-damg-rd-construction/search.md",
+   "path": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/search.md",
    "title": "Backward search for a compression collision",
    "statement": "Let $h : S \\times B \\to S$ be a compression\nfunction with initial value $iv$, and for a list of blocks written last block first let $z(xs)$\nbe its chaining value: $z([\\,]) = iv$ and $z(x :: xs) = h(z(xs), x)$. Given two such lists, the\nsearch compares their leading compression inputs: on $x :: xs$ and $y :: ys$, if\n$(z(xs), x) = (z(ys), y)$ it continues with $xs$ and $ys$, and otherwise it returns the pair\n$((z(xs), x), (z(ys), y))$. When either list is empty it returns no pair.",
    "declaration": "Cslib.Crypto.MerkleDamgard.search",
@@ -9171,514 +8799,370 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/one-time-pad-over-a-finite-group/group-otp-ciphertext-dist-eq-uniform.md",
-   "title": "Group one-time pad ciphertexts are uniform",
-   "statement": "Let $G$ be a finite group. For every\nmessage $m \\in G$, the ciphertext of $m$ under the group one-time pad on $G$, whose key is\ndrawn uniformly from $G$, is uniformly distributed on $G$.",
-   "declaration": "Cslib.Crypto.Protocols.PerfectSecrecy.groupOTP_ciphertextDist_eq_uniform",
+   "path": "ComputerScience/cryptography/public-key/diffie-hellman-key-exchange/dh-agree.md",
+   "title": "Correctness of Diffie–Hellman key agreement",
+   "statement": "Let $G$ be a group, $q$ a natural number and\n$g \\in G$. For $x \\in G$ and $c \\in \\mathbb{Z}/q\\mathbb{Z}$ write $x^c$ for $x^n$, where $n$ is\nthe natural-number value of $c$: its representative in $\\{0, \\dots, q-1\\}$ when $q > 0$, and\n$|c|$ when $q = 0$ (in which case $\\mathbb{Z}/q\\mathbb{Z} = \\mathbb{Z}$). Then\n$(g^b)^a = (g^a)^b$ for all $a, b \\in \\mathbb{Z}/q\\mathbb{Z}$.",
+   "declaration": "Cslib.Crypto.PublicKey.dh_agree",
    "lean": {
-    "file": "CSLibExt/Crypto/Protocols/PerfectSecrecy/GroupOneTimePad.lean",
-    "line": 47,
+    "file": "CSLibExt/Crypto/PublicKey/DiffieHellman.lean",
+    "line": 62,
     "kind": "theorem",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/one-time-pad-over-a-finite-group/group-otp-perfectly-secret.md",
-   "title": "The group one-time pad is perfectly secret",
-   "statement": "Let $G$ be a finite group. The group\none-time pad on $G$ is perfectly secret: for every probability distribution on messages in $G$\nand every ciphertext $c$ that occurs with positive probability, the conditional distribution\nof the message given that the ciphertext is $c$ equals the prior distribution of the message.\n\n## Sources\n\n- Katz and Lindell, Lemma 11.15.",
-   "declaration": "Cslib.Crypto.Protocols.PerfectSecrecy.groupOTP_perfectlySecret",
+   "path": "ComputerScience/cryptography/public-key/diffie-hellman-key-exchange/dh-key-eq.md",
+   "title": "Value of the Diffie–Hellman shared key",
+   "statement": "Let $G$ be a group, $q$ a natural number and\n$g \\in G$ with $g^q = 1$. For $x \\in G$ and $c \\in \\mathbb{Z}/q\\mathbb{Z}$ write $x^c$ for $x^n$,\nwhere $n$ is the natural-number value of $c$: its representative in $\\{0, \\dots, q-1\\}$ when\n$q > 0$, and $|c|$ when $q = 0$ (in which case $\\mathbb{Z}/q\\mathbb{Z} = \\mathbb{Z}$). Then\n$(g^b)^a = g^{ab}$ for all $a, b \\in \\mathbb{Z}/q\\mathbb{Z}$, where $ab$ is the product in\n$\\mathbb{Z}/q\\mathbb{Z}$.",
+   "declaration": "Cslib.Crypto.PublicKey.dh_key_eq",
    "lean": {
-    "file": "CSLibExt/Crypto/Protocols/PerfectSecrecy/GroupOneTimePad.lean",
-    "line": 54,
+    "file": "CSLibExt/Crypto/PublicKey/DiffieHellman.lean",
+    "line": 66,
     "kind": "theorem",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/one-time-pad-over-a-finite-group/group-otp.md",
-   "title": "The group one-time pad",
-   "statement": "Let $G$ be a finite group. The group one-time pad on $G$ is the\nprivate-key encryption scheme with messages, keys and ciphertexts in $G$ whose key $k$ is drawn\nuniformly from $G$, which encrypts a message $m$ as $k m$, and which decrypts a ciphertext $c$\nas $k^{-1} c$.",
-   "declaration": "Cslib.Crypto.Protocols.PerfectSecrecy.groupOTP",
+   "path": "ComputerScience/cryptography/public-key/diffie-hellman-key-exchange/gpow-equiv.md",
+   "title": "Exponentiation from a generator is a bijection",
+   "statement": "Let $G$ be a finite group of order $q$,\nwith $q \\neq 0$, and let $g \\in G$ generate $G$, that is, every element of $G$ is an integer\npower of $g$. Then $a \\mapsto g^a$ is a bijection from $\\mathbb{Z}/q\\mathbb{Z}$ to $G$, where\n$g^a = g^n$ for the representative $n \\in \\{0, \\dots, q-1\\}$ of $a$. Its inverse is the\ndiscrete logarithm to base $g$.",
+   "declaration": "Cslib.Crypto.PublicKey.gpowEquiv",
    "lean": {
-    "file": "CSLibExt/Crypto/Protocols/PerfectSecrecy/GroupOneTimePad.lean",
-    "line": 43,
+    "file": "CSLibExt/Crypto/PublicKey/DiffieHellman.lean",
+    "line": 76,
     "kind": "def",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/card-mac-wins-mul-le.md",
-   "title": "Counting forgeries against a random function",
-   "statement": "Let $M$ and $T$ be finite sets and let $c$ be\nan adaptive oracle algorithm that queries messages in $M$, receives tags in $T$ and outputs a pair\nin $M \\times T$. Call a function $f \\colon M \\to T$ a win for $c$ when the run of $c$ with oracle\n$f$ outputs a pair $(m, t)$ with $f(m) = t$ and $m$ not among the messages queried in that run.\nIf $W$ is the set of functions $M \\to T$ that are wins for $c$, then $|W| \\cdot |T| \\le |T|^{|M|}$.\n\nChanging the tag of the fresh forged message, which the run never queries, gives $|T|$ functions\nwith the same run, of which exactly one is a win.",
-   "declaration": "Cslib.Crypto.PRF.card_macWins_mul_le",
+   "path": "ComputerScience/cryptography/public-key/diffie-hellman-key-exchange/gpow.md",
+   "title": "Group exponentiation with modular exponents",
+   "statement": "Let $G$ be a group, $q$ a natural number,\n$g \\in G$ and $a \\in \\mathbb{Z}/q\\mathbb{Z}$. Then $g^a$ is defined as $g^n$, where $n$ is the\nnatural-number value of $a$: its representative in $\\{0, \\dots, q-1\\}$ when $q > 0$, and $|a|$\nwhen $q = 0$ (in which case $\\mathbb{Z}/q\\mathbb{Z} = \\mathbb{Z}$).",
+   "declaration": "Cslib.Crypto.PublicKey.gpow",
    "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 212,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/cpa-advantage-le.md",
-   "title": "CPA encryption from a PRF, concrete security",
-   "statement": "Let $K$, $X$ and $R$ be nonempty finite sets,\n$Y$ a finite additive commutative group, $q$ a natural number and $F \\colon K \\to X \\to Y$ a keyed\nfunction, used in the scheme $\\mathrm{Enc}_k(m) = (r, F_k(r) + m)$ with uniform randomness\n$r \\in X$. For every CPA adversary $A$ with coins in $R$, the CPA advantage of $A$ in the\nexperiment whose encryption oracle answers at most $q$ queries is at most the PRF advantage of $F$\nagainst the distinguisher built from $A$ plus $q / (2 |X|)$.\n\nThis is the reduction of Katz and Lindell, Theorem 3.31, with the sharper statistical term\n$q / (2 |X|)$ in place of $q / |X|$.",
-   "declaration": "Cslib.Crypto.PRF.cpaAdvantage_le",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 596,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/cpa-advantage.md",
-   "title": "CPA advantage",
-   "statement": "Let $K$, $X$ and $R$ be nonempty finite sets, $Y$ an additive commutative\ngroup, $q$ a natural number, $F \\colon K \\to X \\to Y$ a keyed function and $A$ a CPA adversary\nwith coins in $R$. The CPA advantage of $A$ is the real number $|p - 1/2|$, where $p$ is the\nprobability that the CPA experiment for $F$ and $A$ with at most $q$ encryption queries outputs\ntrue, that is, that $A$ guesses the challenge bit.",
-   "declaration": "Cslib.Crypto.PRF.cpaAdvantage",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 339,
+    "file": "CSLibExt/Crypto/PublicKey/DiffieHellman.lean",
+    "line": 44,
     "kind": "def",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/cpa-game-eq-prf-real.md",
-   "title": "The CPA reduction is exact with the real oracle",
-   "statement": "Let $K$, $X$ and $R$ be nonempty finite\nsets, $Y$ an additive commutative group, $q$ a natural number and $F \\colon K \\to X \\to Y$ a keyed\nfunction. For every CPA adversary $A$ with coins in $R$, the CPA experiment for $F$ and $A$ with\nat most $q$ encryption queries has the same output distribution as the real world of the PRF\nexperiment for $F$ run with the distinguisher built from $A$ for $q$ queries: with the oracle $F_k$\nfor a uniform key $k$, the reduction runs the CPA experiment exactly.",
-   "declaration": "Cslib.Crypto.PRF.cpaGame_eq_prfReal",
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/adversary.md",
+   "title": "ElGamal eavesdropping adversary",
+   "statement": "Given a type $G$ of public keys and messages and a type\n$R$ of random coins, an eavesdropping adversary consists of a choice function, which maps a public\nkey $h \\in G$ and coins $r \\in R$ to a pair of messages in $G \\times G$, and a guessing function,\nwhich maps a public key $h \\in G$, a ciphertext in $G \\times G$ and coins $r \\in R$ to a bit.",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.Adversary",
    "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 385,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/cpa-game.md",
-   "title": "The CPA experiment",
-   "statement": "Let $K$, $X$ and $R$ be nonempty finite sets, $Y$ an additive\ncommutative group, $q$ a natural number, $F \\colon K \\to X \\to Y$ a keyed function and $A$ a CPA\nadversary with coins in $R$. The CPA indistinguishability experiment $\\mathrm{PrivK}^{\\mathrm{cpa}}$\nfor the scheme $\\mathrm{Enc}_k(m) = (r, F_k(r) + m)$ draws, uniformly and independently, a key\n$k \\in K$, encryption randomness $\\rho \\colon \\{0, \\dots, q - 1\\} \\to X$ for the encryption\nqueries, challenge randomness $r_s \\in X$, a challenge bit $b$ and coins $r \\in R$. It outputs true\nexactly when the adversary's guess, with keyed function $F_k$, encryption randomness $\\rho$,\nchallenge randomness $r_s$, challenge bit $b$ and the algorithm that $A$ assigns to $r$, equals $b$.\nAn adversary that asks more than $q$ encryption queries is stopped and guesses false.",
-   "declaration": "Cslib.Crypto.PRF.cpaGame",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 333,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/cpa-guess.md",
-   "title": "The adversary's guess in the CPA experiment",
-   "statement": "Let $Y$ be an additive commutative group,\n$f \\colon X \\to Y$ a function, $q$ a natural number, $\\rho \\colon \\{0, \\dots, q - 1\\} \\to X$ the\nencryption randomness, $r_s \\in X$ the challenge randomness and $b$ a bit. Let $c$ be an oracle\nalgorithm for the encryption oracle that outputs two messages $(m_0, m_1) \\in Y \\times Y$ and a\nsecond-phase algorithm. The encryption query with index $i$, counting from $0$ across both\nphases, is answered for a message $m$ by $(\\rho_i, f(\\rho_i) + m)$. Run $c$; when it outputs\n$(m_0, m_1)$, run its second phase on the challenge ciphertext $(r_s, f(r_s) + m_b)$, where $m_b$\nis $m_1$ if $b$ is true and $m_0$ otherwise. The guess is the output of the second phase. If the\ntwo phases together ask more than $q$ encryption queries, the adversary is stopped and the guess\nis false.",
-   "declaration": "Cslib.Crypto.PRF.cpaGuess",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 323,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/cpa-reduction.md",
-   "title": "The PRF distinguisher built from a CPA adversary",
-   "statement": "Let $X$ and $R$ be sets, $Y$ an additive\ncommutative group, $q$ a natural number and $A$ a CPA adversary with coins in $R$ against an\nencryption oracle that takes messages in $Y$ and returns ciphertexts in $X \\times Y$. With its own\ncoins $(\\rho, r_s, b, r)$, where $\\rho \\colon \\{0, \\dots, q - 1\\} \\to X$, $r_s \\in X$, $b$ is a bit\nand $r \\in R$, and with oracle access to a function $O \\colon X \\to Y$, the distinguisher runs the\nalgorithm $A$ assigns to $r$. It answers the encryption query with index $i$, counting from $0$\nacross both phases, for a message $m$ by querying $O$ at $\\rho_i$ and returning\n$(\\rho_i, O(\\rho_i) + m)$. When the first phase outputs messages $(m_0, m_1)$, it queries $O$ at\n$r_s$ and gives the second phase the challenge ciphertext $(r_s, O(r_s) + m_b)$, where $m_b$ is\n$m_1$ if $b$ is true and $m_0$ otherwise. It outputs true exactly when the adversary's guess\nequals $b$, where an adversary that asks more than $q$ encryption queries is stopped and guesses\nfalse.",
-   "declaration": "Cslib.Crypto.PRF.cpaReduction",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 364,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/cpaadversary.md",
-   "title": "CPA adversary",
-   "statement": "A CPA adversary with coins in $R$, against an encryption oracle that takes\nmessages in $Y$ and returns ciphertexts in $X \\times Y$, assigns to each $r \\in R$ an adaptive\noracle algorithm with access to the encryption oracle that outputs two challenge messages\n$(m_0, m_1) \\in Y \\times Y$ together with a second adaptive oracle algorithm, again with access to\nthe encryption oracle, which takes the challenge ciphertext in $X \\times Y$ and outputs a guess\nfor the challenge bit.",
-   "declaration": "Cslib.Crypto.PRF.CPAAdversary",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 317,
-    "kind": "abbrev",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/decrypt-encrypt.md",
-   "title": "Correctness of encryption with a keyed function",
-   "statement": "Let $Y$ be an additive commutative group\nand $F_k \\colon X \\to Y$ a function. For every message $m \\in Y$ and every randomness $r \\in X$,\ndecrypting the ciphertext $\\mathrm{Enc}(m) = (r, F_k(r) + m)$ gives back $m$, that is,\n$\\mathrm{Dec}(\\mathrm{Enc}(m)) = m$ where $\\mathrm{Dec}(r, c) = c - F_k(r)$.",
-   "declaration": "Cslib.Crypto.PRF.decrypt_encrypt",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 299,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/decrypt.md",
-   "title": "Decryption with a keyed function",
-   "statement": "For a function $F_k \\colon X \\to Y$ into an additive\ncommutative group $Y$, the decryption of a ciphertext $(r, c) \\in X \\times Y$ is\n$\\mathrm{Dec}(r, c) = c - F_k(r)$.",
-   "declaration": "Cslib.Crypto.PRF.decrypt",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 295,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/done.md",
-   "title": "The oracle algorithm that stops at once",
-   "statement": "For an output $a \\in \\alpha$, this is the\nadaptive oracle algorithm with queries in $X$ and answers in $Y$ that asks no query and stops\nwith output $a$.",
-   "declaration": "Cslib.Crypto.PRF.OracleComp.done",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
     "line": 93,
-    "kind": "abbrev",
+    "kind": "structure",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/encrypt.md",
-   "title": "Encryption from a keyed function",
-   "statement": "Let $Y$ be an additive commutative group of messages\nand let $f \\colon X \\to Y$ be a function (in the scheme, $f = F_k$ for a key $k$). The\nencryption of a message $m \\in Y$ with randomness $r \\in X$ is the pair\n$(r, f(r) + m) \\in X \\times Y$.\n\nThis is Construction 3.30 of Katz and Lindell, with XOR replaced by the addition of the\nmessage group.",
-   "declaration": "Cslib.Crypto.PRF.encrypt",
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/ddh-advantage.md",
+   "title": "Advantage of a DDH distinguisher",
+   "statement": "Let $G$ be a finite commutative group, $g \\in G$ and\n$q \\ge 1$, and let $D$ be a distinguisher that maps three elements of $G$ and coins in a finite\nnonempty type $S$ to a bit. The DDH advantage of $D$ is the real number\n$|p_{\\mathrm{real}} - p_{\\mathrm{rand}}|$, where $p_{\\mathrm{real}}$ and $p_{\\mathrm{rand}}$ are\nthe probabilities that $D$ outputs true in the real and in the random DDH experiment for $g$ with\nexponents in $\\mathbb{Z}/q\\mathbb{Z}$.",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.ddhAdvantage",
    "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 292,
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 132,
     "kind": "def",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/mac-game-eq-prf-real.md",
-   "title": "The MAC reduction in the real PRF world",
-   "statement": "Let $K$ and $R$ be finite nonempty types, let\n$F \\colon K \\to M \\to T$ be a keyed function, and let $A$ be a forger: for coins $r \\in R$,\n$A(r)$ is an adaptive oracle algorithm with queries in $M$, answers in $T$ and output in\n$M \\times T$. Then the output distribution of the existential-forgery experiment for $F$ and $A$\nequals the output distribution of the real world of the PRF experiment for $F$ with the\ndistinguisher that, on coins $r$, runs the MAC reduction on $A(r)$ starting from the empty query\nlog.",
-   "declaration": "Cslib.Crypto.PRF.macGame_eq_prfReal",
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/ddh-rand-reduction-true.md",
+   "title": "The reduction is a fair coin on random DDH triples",
+   "statement": "Let $G$ be a finite commutative group\nof order $q$ generated by $g$. For every eavesdropping adversary $A$ with random coins in a finite\nnonempty type $R$, the DDH distinguisher obtained from $A$ by the reduction outputs true with\nprobability exactly $1/2$ in the random DDH experiment for $g$.\n\nIn that experiment the third input $g^z$, with $z$ uniform in $\\mathbb{Z}/q\\mathbb{Z}$, is a group\none-time pad on the challenge message.",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.ddhRand_reduction_true",
    "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 200,
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 187,
     "kind": "theorem",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/mac-game-le.md",
-   "title": "The MAC from a PRF, concrete security",
-   "statement": "Let $K$, $M$, $T$ and $R$ be finite types with\n$K$, $T$ and $R$ nonempty, let $F \\colon K \\to M \\to T$ be a keyed function, and let $A$ be an\nadaptive chosen-message forger: for coins $r \\in R$, $A(r)$ is an adaptive oracle algorithm\nwith queries in $M$, answers in $T$ and output in $M \\times T$. Then the probability that $A$\nwins the existential-forgery experiment for the MAC $\\mathrm{Mac}_k(m) = F(k, m)$ is at most\nthe PRF advantage against $F$ of the distinguisher that, on coins $r$, runs the MAC reduction\non $A(r)$ starting from the empty query log, plus $1 / |T|$.\n\nThis is the reduction of Katz and Lindell, Theorem 4.6, stated as a concrete inequality.",
-   "declaration": "Cslib.Crypto.PRF.macGame_le",
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/ddh-rand.md",
+   "title": "Random DDH experiment",
+   "statement": "Let $G$ be a finite commutative group, $g \\in G$ and $q \\ge 1$ a\nnatural number, and let $D$ be a distinguisher that maps three elements of $G$ and coins in a\nfinite nonempty type $S$ to a bit. The random DDH experiment draws $x, y, z \\in \\mathbb{Z}/q$ and\ncoins $s \\in S$ independently and uniformly and outputs the distribution of the bit\n$D(g^x, g^y, g^z, s)$, where a power $g^a$ with $a \\in \\mathbb{Z}/q$ means $g^{v(a)}$ for the\nrepresentative $v(a) \\in \\{0, \\dots, q - 1\\}$ of $a$.",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.ddhRand",
    "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 272,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/mac-game.md",
-   "title": "The MAC forgery experiment",
-   "statement": "Let $K$ and $R$ be finite nonempty types, let\n$F \\colon K \\to M \\to T$ be a keyed function, and let $A$ be a forger: for coins $r \\in R$,\n$A(r)$ is an adaptive oracle algorithm with queries in $M$, answers in $T$ and output in\n$M \\times T$. The existential-forgery experiment under an adaptive chosen-message attack for the\nMAC $\\mathrm{Mac}_k(m) = F(k, m)$ draws $(k, r)$ uniformly from $K \\times R$, runs $A(r)$ with\nthe tagging oracle $F(k, \\cdot)$, and outputs true exactly when $A(r)$ wins against that oracle,\nthat is, outputs a pair $(m, t)$ with $F(k, m) = t$ where $m$ is not among its queries.",
-   "declaration": "Cslib.Crypto.PRF.macGame",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 175,
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 126,
     "kind": "def",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/mac-reduction.md",
-   "title": "The distinguisher built from a forger",
-   "statement": "For a list $L$ of messages in $M$ and a forger $c$,\nan adaptive oracle algorithm with queries in $M$, answers in $T$ and output in $M \\times T$, the\nMAC reduction is the oracle algorithm with the same queries and answers and a Boolean output,\ndefined by recursion on $c$. If $c$ stops with output $(m, t)$, it queries $m$ and, on answer\n$t'$, stops with output true exactly when $t' = t$ and $m \\notin L$. If $c$ queries $x$ and\ncontinues with $c_y$ on answer $y$, it queries $x$ and, on answer $y$, continues as the MAC\nreduction of $c_y$ with $x$ added to $L$.\n\nStarted with the empty list, it runs the forger, logging its queries, then queries the forged\nmessage and accepts when the answer is the forged tag and the message is fresh.",
-   "declaration": "Cslib.Crypto.PRF.macReduction",
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/ddh-real.md",
+   "title": "Real DDH experiment",
+   "statement": "Let $G$ be a finite commutative group, $g \\in G$ and $q \\ge 1$ a\nnatural number, and let $D$ be a distinguisher that maps three elements of $G$ and coins in a\nfinite nonempty type $S$ to a bit. The real DDH experiment draws $x, y \\in \\mathbb{Z}/q$ and coins\n$s \\in S$ independently and uniformly and outputs the distribution of the bit\n$D(g^x, g^y, g^{xy}, s)$, where $xy$ is the product in $\\mathbb{Z}/q$ and a power $g^a$ with\n$a \\in \\mathbb{Z}/q$ means $g^{v(a)}$ for the representative $v(a) \\in \\{0, \\dots, q - 1\\}$\nof $a$.",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.ddhReal",
    "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 119,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/decrypt-encrypt.md",
+   "title": "Correctness of ElGamal",
+   "statement": "Let $G$ be a commutative group, $g \\in G$ and $q$ a natural\nnumber. For $a \\in \\mathbb{Z}/q\\mathbb{Z}$ and $c \\in G$ write $c^a$ for\n$c^{\\operatorname{val}(a)}$, where $\\operatorname{val}(a) \\in \\mathbb{N}$ is the representative\nof $a$ in $\\{0, \\dots, q-1\\}$ if $q \\ge 1$ and $|a|$ if $q = 0$. For every secret key\n$x \\in \\mathbb{Z}/q\\mathbb{Z}$, every message $m \\in G$ and every encryption randomness\n$y \\in \\mathbb{Z}/q\\mathbb{Z}$, decrypting with $x$ the ElGamal encryption of $m$ under the\npublic key $g^x$ with randomness $y$ returns $m$.",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.decrypt_encrypt",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 73,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/decrypt.md",
+   "title": "ElGamal decryption",
+   "statement": "Let $G$ be a commutative group and $q$ a natural number. For\n$a \\in \\mathbb{Z}/q\\mathbb{Z}$ and $c \\in G$ write $c^a$ for $c^{\\operatorname{val}(a)}$, where\n$\\operatorname{val}(a) \\in \\mathbb{N}$ is the representative of $a$ in $\\{0, \\dots, q-1\\}$ if\n$q \\ge 1$ and $|a|$ if $q = 0$. Decrypting a ciphertext $(c_1, c_2) \\in G \\times G$ with the\nsecret key $x \\in \\mathbb{Z}/q\\mathbb{Z}$ gives $c_2 \\cdot (c_1^x)^{-1}$.",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.decrypt",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 69,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/eav-advantage-eq-ddh-advantage.md",
+   "title": "ElGamal eavesdropping advantage equals a DDH advantage",
+   "statement": "Let $G$ be a finite commutative\ngroup of order $q$ generated by $g$. For every eavesdropping adversary $A$ with random coins in a\nfinite nonempty type $R$, the eavesdropping advantage of $A$ against ElGamal equals the DDH\nadvantage of the distinguisher obtained from $A$ by the reduction.\n\nThis is the eavesdropping part of Katz and Lindell, Theorem 11.18 (ElGamal is secure if DDH is\nhard), in exact, non-asymptotic form.",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.eavAdvantage_eq_ddhAdvantage",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 213,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/eav-advantage-le.md",
+   "title": "DDH bounds transfer to ElGamal",
+   "statement": "Let $G$ be a finite commutative group of order $q$\ngenerated by $g$, and let $A$ be an eavesdropping adversary with random coins in a finite nonempty\ntype $R$. For every real number $\\varepsilon$, if the DDH advantage of the distinguisher obtained\nfrom $A$ by the reduction is at most $\\varepsilon$, then the eavesdropping advantage of $A$\nagainst ElGamal is at most $\\varepsilon$.",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.eavAdvantage_le",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 222,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/eav-advantage.md",
+   "title": "Eavesdropping advantage against ElGamal",
+   "statement": "Let $G$ be a finite commutative group, $g \\in G$\nand $q \\ge 1$. The eavesdropping advantage of an adversary $A$ with random coins in a finite\nnonempty type $R$ is the real number $|p - 1/2|$, where $p$ is the probability that $A$ wins the\nElGamal eavesdropping experiment for $g$ with exponents in $\\mathbb{Z}/q\\mathbb{Z}$, that is,\nguesses the challenge bit correctly.",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.eavAdvantage",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 111,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/eav-game-eq-ddh-real.md",
+   "title": "ElGamal eavesdropping game equals the real DDH experiment of the reduction",
+   "statement": "Let $G$ be a\ncommutative group, $q \\ge 1$ a natural number and $g \\in G$ with $g^q = 1$. For every\neavesdropping adversary $A$ with coins in a finite nonempty type $R$, the output distribution of\nthe ElGamal eavesdropping experiment for $A$ (exponents in $\\mathbb{Z}/q$) equals the output\ndistribution of the real DDH experiment run with the distinguisher built from $A$ by the\nreduction.",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.eavGame_eq_ddhReal",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 143,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/eav-game.md",
+   "title": "ElGamal eavesdropping experiment",
+   "statement": "Let $G$ be a commutative group, $g \\in G$ and $q \\ge 1$.\nFor an eavesdropping adversary $A$ with coins in a finite nonempty type $R$, the experiment draws\n$x, y \\in \\mathbb{Z}/q$, coins $r \\in R$ and a bit $b$ independently and uniformly. It sets the\npublic key $h = g^x$, lets $A$ choose messages $(m_0, m_1)$ from $h$ and $r$, and gives $A$ the\nkey $h$, the ElGamal ciphertext $(g^y, h^y m_b)$ and the coins $r$, where $m_b$ is $m_1$ if $b$\nis true and $m_0$ otherwise; powers use the value of the exponent in $\\{0, \\dots, q - 1\\}$. The\nexperiment outputs the distribution of the bit \"the guess of $A$ equals $b$\".",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.eavGame",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 103,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/encrypt.md",
+   "title": "ElGamal encryption",
+   "statement": "Let $G$ be a commutative group with a fixed element $g$ and let $q$ be\na natural number. The ElGamal encryption of a message $m \\in G$ under the public key $h \\in G$\nwith randomness $y \\in \\mathbb{Z}/q$ is the pair $(g^y, h^y m) \\in G \\times G$. Here a power\n$k^a$ with $k \\in G$ and $a \\in \\mathbb{Z}/q$ means $k^{v(a)}$, where $v(a) \\in \\{0, \\dots, q - 1\\}$\nis the least nonnegative representative of $a$ if $q \\ge 1$, and $v(a) = |a|$ if $q = 0$ (when\n$\\mathbb{Z}/0 = \\mathbb{Z}$).",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.encrypt",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 66,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/pick.md",
+   "title": "Message selected by the challenge bit",
+   "statement": "Let $G$ be a finite commutative group. For a pair\nof messages $(m_0, m_1) \\in G \\times G$ and a bit $b$, the selected message is $m_1$ if $b$ is\ntrue and $m_0$ if $b$ is false.",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.pick",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 88,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/public-key.md",
+   "title": "ElGamal public key",
+   "statement": "Let $G$ be a commutative group with a fixed element $g$ and let $q$ be\na natural number. The public key of a secret key $x \\in \\mathbb{Z}/q$ is $h = g^{v(x)} \\in G$,\nwhere $v(x) \\in \\{0, \\dots, q - 1\\}$ is the least nonnegative representative of $x$ if $q \\ge 1$,\nand $v(x) = |x|$ if $q = 0$ (when $\\mathbb{Z}/0 = \\mathbb{Z}$).",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.publicKey",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 62,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/elgamal-encryption/reduction.md",
+   "title": "DDH distinguisher from an ElGamal eavesdropper",
+   "statement": "Let $G$ be a finite commutative group and\nlet $A$ be an eavesdropping adversary with coins in a finite nonempty type $R$. The distinguisher\nbuilt from $A$ takes three elements $X, Y, Z \\in G$ and coins consisting of $r \\in R$ and a bit\n$b$. It lets $A$ choose messages $(m_0, m_1)$ from the public key $X$ and the coins $r$, gives $A$\nthe public key $X$, the ciphertext $(Y, Z m_b)$ and the coins $r$, where $m_b$ is $m_1$ if $b$ is\ntrue and $m_0$ otherwise, and outputs true exactly when the guess of $A$ equals $b$.",
+   "declaration": "Cslib.Crypto.PublicKey.ElGamal.reduction",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/ElGamal.lean",
+    "line": 138,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/crt-decrypt-eq.md",
+   "title": "RSA-CRT decryption is correct",
+   "statement": "Let $(p, q, e, d)$ be an RSA key with modulus $n = pq$, and\nlet $d_p, d_q \\ge 1$ be natural numbers with $d_p \\equiv d \\pmod{p - 1}$ and\n$d_q \\equiv d \\pmod{q - 1}$. Then for every $c \\in \\mathbb{Z}/n\\mathbb{Z}$, RSA-CRT decryption of\n$c$ with the exponents $d_p$ and $d_q$ equals the RSA decryption $c^d$.",
+   "declaration": "Cslib.Crypto.PublicKey.RSA.Key.crtDecrypt_eq",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
+    "line": 192,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/crt-decrypt-mod-eq.md",
+   "title": "RSA-CRT decryption with the standard exponents",
+   "statement": "Let $(p, q, e, d)$ be an RSA key with\nmodulus $n = pq$ in which both primes are odd, that is $p > 2$ and $q > 2$. Then for every\n$c \\in \\mathbb{Z}/n\\mathbb{Z}$, RSA-CRT decryption of $c$ with the exponents\n$d_p = d \\bmod (p - 1)$ and $d_q = d \\bmod (q - 1)$ equals the RSA decryption $c^d$.",
+   "declaration": "Cslib.Crypto.PublicKey.RSA.Key.crtDecrypt_mod_eq",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
+    "line": 202,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/crt-decrypt.md",
+   "title": "RSA-CRT decryption",
+   "statement": "Let $(p, q, e, d)$ be an RSA key with modulus $n = pq$. For natural\nnumbers $d_p$, $d_q$ and $c \\in \\mathbb{Z}/n\\mathbb{Z}$, let $c_p$ and $c_q$ be the images of $c$ in\n$\\mathbb{Z}/p\\mathbb{Z}$ and $\\mathbb{Z}/q\\mathbb{Z}$. RSA-CRT decryption of $c$ with the exponents\n$d_p$ and $d_q$ is the element of $\\mathbb{Z}/n\\mathbb{Z}$ that corresponds to the pair\n$(c_p^{d_p}, c_q^{d_q})$ under the Chinese remainder isomorphism\n$\\mathbb{Z}/n\\mathbb{Z} \\cong \\mathbb{Z}/p\\mathbb{Z} \\times \\mathbb{Z}/q\\mathbb{Z}$.",
+   "declaration": "Cslib.Crypto.PublicKey.RSA.Key.crtDecrypt",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
     "line": 180,
     "kind": "def",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/mac-wins.md",
-   "title": "Winning the forgery game",
-   "statement": "A forger $c$, an adaptive oracle algorithm with queries in $M$,\nanswers in $T$ and output in $M \\times T$, wins against the tagging oracle $O \\colon M \\to T$\nwhen, run with oracle $O$, it outputs a pair $(m, t)$ with $O(m) = t$ and $m$ is not among the\nqueries it asks in that run.",
-   "declaration": "Cslib.Crypto.PRF.MacWins",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 167,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/oracle-comp.md",
-   "title": "Adaptive oracle algorithms",
-   "statement": "For a type $X$ of queries, a type $Y$ of answers and a type\n$\\alpha$ of outputs, an adaptive deterministic oracle algorithm is an element of CSLib's free\nmonad over the polynomial functor of one oracle with queries $X$ and answers $Y$. It is built\ninductively: it either stops with an output in $\\alpha$, or asks a query $x \\in X$ and continues\nwith an algorithm that depends on the answer $y \\in Y$.",
-   "declaration": "Cslib.Crypto.PRF.OracleComp",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 85,
-    "kind": "abbrev",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/oracle-sig.md",
-   "title": "The signature of one oracle",
-   "statement": "For types $X$ and $Y$, this is the polynomial functor whose\noperations are the queries $x \\in X$, each answered by an element of $Y$.",
-   "declaration": "Cslib.Crypto.PRF.OracleSig",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 80,
-    "kind": "abbrev",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/pick.md",
-   "title": "Selecting the challenge message by a bit",
-   "statement": "Given a pair of messages\n$(m_0, m_1) \\in Y \\times Y$ and a challenge bit $b$, the selected message is $m_1$ when $b$ is\ntrue and $m_0$ when $b$ is false.",
-   "declaration": "Cslib.Crypto.PRF.pick",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 303,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/prf-advantage.md",
-   "title": "PRF advantage",
-   "statement": "Let $K$, $X$, $Y$ and $S$ be finite sets with $K$, $Y$ and $S$ nonempty,\nlet $F : K \\to X \\to Y$ be a keyed function and let $D$ be a distinguisher: an oracle algorithm\nwith coins in $S$ that queries a function $X \\to Y$ and outputs a bit. The PRF advantage of $D$\nagainst $F$ is the real number $|p_{\\mathrm{real}} - p_{\\mathrm{rand}}|$, where\n$p_{\\mathrm{real}}$ is the probability that $D$ outputs $1$ in the real world (uniform coins\n$s \\in S$, oracle $F(k, \\cdot)$ for a uniform key $k \\in K$) and $p_{\\mathrm{rand}}$ is the\nprobability that $D$ outputs $1$ in the random world (uniform coins, oracle a uniformly random\nfunction $X \\to Y$).",
-   "declaration": "Cslib.Crypto.PRF.prfAdvantage",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 153,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/prf-rand-cpa-reduction.md",
-   "title": "The CPA reduction against a random function",
-   "statement": "Let $X$ be a finite nonempty set, $Y$ a\nfinite additive commutative group, $q$ a natural number and $A$ a CPA adversary with coins in a\nfinite nonempty set. Let $p$ be the probability that the CPA reduction built from $A$ (whose\nencryption oracle answers at most $q$ queries) outputs $1$, that is, that $A$ guesses the\nchallenge bit, when its oracle is a uniformly random function $X \\to Y$ and its coins are\nuniform. Then $|p - 1/2| \\le q / (2|X|)$.\n\nThe success probability is exactly $1/2$ unless the challenge randomness repeats the randomness\nof one of the at most $q$ encryption queries.",
-   "declaration": "Cslib.Crypto.PRF.prfRand_cpaReduction",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 486,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/prf-rand-mac-reduction-le.md",
-   "title": "Forging against a random function",
-   "statement": "Let $M$ and $T$ be finite sets with $T$ nonempty, and\nlet $A$ be a forger: an oracle algorithm with coins in a finite nonempty set that queries tags\nin $T$ of messages in $M$ and outputs a message together with a tag. When the tagging oracle is\na uniformly random function $M \\to T$ and the coins are uniform, the MAC reduction built from\n$A$ accepts (that is, $A$ outputs the correct tag of a message it never queried) with\nprobability at most $1/|T|$.",
-   "declaration": "Cslib.Crypto.PRF.prfRand_macReduction_le",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 244,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/prf-rand.md",
-   "title": "Random world of the PRF experiment",
-   "statement": "Let $X$, $Y$ and $S$ be finite sets with $Y$ and $S$\nnonempty, and let $D$ be a distinguisher: an oracle algorithm with coins in $S$ that queries a\nfunction $X \\to Y$ and outputs a bit. The random world is the distribution of the output of $D$\nwith coins $s$ and oracle $f$, where the pair $(f, s)$ is uniform on $(X \\to Y) \\times S$.",
-   "declaration": "Cslib.Crypto.PRF.prfRand",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 149,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/prf-real.md",
-   "title": "Real world of the PRF experiment",
-   "statement": "Let $K$, $X$, $Y$ and $S$ be finite sets with $K$, $Y$\nand $S$ nonempty, let $F : K \\to X \\to Y$ be a keyed function and let $D$ be a distinguisher: an\noracle algorithm with coins in $S$ that queries a function $X \\to Y$ and outputs a bit. The real\nworld is the distribution of the output of $D$ with coins $s$ and oracle $F(k, \\cdot)$, where the\npair $(k, s)$ is uniform on $K \\times S$.",
-   "declaration": "Cslib.Crypto.PRF.prfReal",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 145,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/queries.md",
-   "title": "Queries of an oracle algorithm",
-   "statement": "For an oracle algorithm $c$ and a function\n$O : X \\to Y$, the queries of $c$ against $O$ are the list of the points of $X$ that $c$ asks,\nin order, when every query $x$ is answered by $O(x)$: the empty list if $c$ stops, and otherwise\nthe first query $x$ followed by the queries of the continuation on the answer $O(x)$.",
-   "declaration": "Cslib.Crypto.PRF.OracleComp.queries",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 104,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/query.md",
-   "title": "Query step",
-   "statement": "For a point $x \\in X$ and a continuation $k$ assigning an oracle algorithm to\neach answer $y \\in Y$, the oracle algorithm that first queries $x$ and then continues with\n$k(y)$, where $y$ is the answer.",
-   "declaration": "Cslib.Crypto.PRF.OracleComp.query",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 96,
-    "kind": "abbrev",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/run-bind.md",
-   "title": "Running a sequential composition",
-   "statement": "Let $c$ be an oracle algorithm with outputs in $\\alpha$,\nlet $g$ map each $a \\in \\alpha$ to an oracle algorithm with outputs in $\\beta$, and let\n$O : X \\to Y$. Running against $O$ the composition that first runs $c$ and then continues with\n$g$ applied to its output gives the output of $g(a)$ run against $O$, where $a$ is the output\nof $c$ run against $O$.",
-   "declaration": "Cslib.Crypto.PRF.OracleComp.run_bind",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 120,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/run-congr.md",
-   "title": "Locality of oracle runs",
-   "statement": "Let $c$ be an oracle algorithm and let $O, O' : X \\to Y$ agree\nat every query of $c$ against $O$. Then $c$ has the same output against $O$ as against $O'$, and\nthe same list of queries against $O$ as against $O'$.",
-   "declaration": "Cslib.Crypto.PRF.OracleComp.run_congr",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 109,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/run-enc-congr.md",
-   "title": "The encryption oracle depends only on the encryption randomness",
-   "statement": "Let $Y$ be an additive\ncommutative group, let $\\rho_0, \\dots, \\rho_{q-1} \\in X$ be encryption randomness and let\n$f, f' : X \\to Y$ satisfy $f(\\rho_j) = f'(\\rho_j)$ for every $j < q$. Then for every oracle\nalgorithm $c$ and every natural number $i$, running $c$ against the encryption oracle built from\n$f$, with query indices starting at $i$, gives the same result as running it against the one\nbuilt from $f'$. Here the encryption oracle built from $f$ answers a query $m$ with index $n < q$\nby $(\\rho_n, f(\\rho_n) + m)$, and the run fails at a query with index $n \\ge q$.",
-   "declaration": "Cslib.Crypto.PRF.runEnc_congr",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 394,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/run-enc.md",
-   "title": "Running an algorithm against the bounded encryption oracle",
-   "statement": "Let $X$ be a set, $Y$ an\nabelian group written additively, $f : X \\to Y$ a function, $q \\in \\mathbb{N}$ and\n$\\rho : \\{0, \\dots, q - 1\\} \\to X$ the encryption randomness of the queries. Run from query index\n$i \\in \\mathbb{N}$, an oracle algorithm with messages in $Y$ as queries, answers in $X \\times Y$\nand outputs in $\\beta$ either fails or yields its output together with the next query index: if\nit stops with output $a$, the result is $(a, i)$; if it queries a message $m$ and $i < q$, the\noracle answers $(\\rho(i), f(\\rho(i)) + m)$ and the run continues from index $i + 1$; if it\nqueries a message and $i \\ge q$, the run fails.",
-   "declaration": "Cslib.Crypto.PRF.runEnc",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 309,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/run.md",
-   "title": "Running an oracle algorithm",
-   "statement": "Given a function $O : X \\to Y$, the run of an oracle\nalgorithm with queries in $X$, answers in $Y$ and outputs in $\\alpha$ is its output when every\nquery $x$ is answered by $O(x)$: an algorithm that stops with output $a$ runs to $a$, and one\nthat queries $x$ and continues with $k(y)$ on answer $y$ runs to the run of $k(O(x))$.",
-   "declaration": "Cslib.Crypto.PRF.OracleComp.run",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 99,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/pseudorandom-functions/sim-enc.md",
-   "title": "Simulating the encryption oracle with a function oracle",
-   "statement": "Let $X$ be a set, $Y$ an abelian\ngroup written additively, $q \\in \\mathbb{N}$ and $\\rho : \\{0, \\dots, q - 1\\} \\to X$ the\nencryption randomness of the queries. Started at query index $i \\in \\mathbb{N}$, the simulation\nturns an oracle algorithm with messages in $Y$ as queries, answers in $X \\times Y$ and outputs in\n$\\beta$ into an oracle algorithm with queries in $X$ and answers in $Y$ that either fails or\noutputs the original output together with the next query index: if the original algorithm stops\nwith output $a$, the simulation stops with $(a, i)$; if it queries a message $m$ and $i < q$, the\nsimulation queries $\\rho(i)$ and, on answer $y$, continues by simulating the original algorithm\non the answer $(\\rho(i), y + m)$ from index $i + 1$; if it queries a message and $i \\ge q$, the\nsimulation stops with failure.",
-   "declaration": "Cslib.Crypto.PRF.simEnc",
-   "lean": {
-    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
-    "line": 343,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/crt-decrypt-eq.md",
-   "title": "RSA-CRT decryption is correct",
-   "statement": "Let $(p, q, e, d)$ be an RSA key with modulus $n = pq$, and\nlet $d_p, d_q \\ge 1$ be natural numbers with $d_p \\equiv d \\pmod{p - 1}$ and\n$d_q \\equiv d \\pmod{q - 1}$. Then for every $c \\in \\mathbb{Z}/n\\mathbb{Z}$, RSA-CRT decryption of\n$c$ with the exponents $d_p$ and $d_q$ equals the RSA decryption $c^d$.",
-   "declaration": "Cslib.Crypto.PublicKey.RSA.Key.crtDecrypt_eq",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 186,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/crt-decrypt-mod-eq.md",
-   "title": "RSA-CRT decryption with the standard exponents",
-   "statement": "Let $(p, q, e, d)$ be an RSA key with\nmodulus $n = pq$ in which both primes are odd, that is $p > 2$ and $q > 2$. Then for every\n$c \\in \\mathbb{Z}/n\\mathbb{Z}$, RSA-CRT decryption of $c$ with the exponents\n$d_p = d \\bmod (p - 1)$ and $d_q = d \\bmod (q - 1)$ equals the RSA decryption $c^d$.",
-   "declaration": "Cslib.Crypto.PublicKey.RSA.Key.crtDecrypt_mod_eq",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 196,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/crt-decrypt.md",
-   "title": "RSA-CRT decryption",
-   "statement": "Let $(p, q, e, d)$ be an RSA key with modulus $n = pq$. For natural\nnumbers $d_p$, $d_q$ and $c \\in \\mathbb{Z}/n\\mathbb{Z}$, let $c_p$ and $c_q$ be the images of $c$ in\n$\\mathbb{Z}/p\\mathbb{Z}$ and $\\mathbb{Z}/q\\mathbb{Z}$. RSA-CRT decryption of $c$ with the exponents\n$d_p$ and $d_q$ is the element of $\\mathbb{Z}/n\\mathbb{Z}$ that corresponds to the pair\n$(c_p^{d_p}, c_q^{d_q})$ under the Chinese remainder isomorphism\n$\\mathbb{Z}/n\\mathbb{Z} \\cong \\mathbb{Z}/p\\mathbb{Z} \\times \\mathbb{Z}/q\\mathbb{Z}$.",
-   "declaration": "Cslib.Crypto.PublicKey.RSA.Key.crtDecrypt",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 174,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/crt.md",
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/crt.md",
    "title": "Chinese remainder isomorphism for an RSA modulus",
    "statement": "For an RSA key with distinct primes $p$,\n$q$ and modulus $n = pq$, this is the ring isomorphism\n$\\mathbb{Z}/n\\mathbb{Z} \\cong \\mathbb{Z}/p\\mathbb{Z} \\times \\mathbb{Z}/q\\mathbb{Z}$ of the Chinese\nremainder theorem, sending $x$ to $(x \\bmod p, x \\bmod q)$.",
    "declaration": "Cslib.Crypto.PublicKey.RSA.Key.crt",
    "lean": {
     "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 115,
+    "line": 121,
     "kind": "def",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/decrypt-encrypt-nat.md",
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/decrypt-encrypt-nat.md",
    "title": "Correctness of textbook RSA on natural numbers",
    "statement": "For an RSA key with modulus $n = pq$ and\nexponents $e$, $d$, every natural number $m < n$ satisfies $(m^e \\bmod n)^d \\bmod n = m$.",
    "declaration": "Cslib.Crypto.PublicKey.RSA.Key.decrypt_encrypt_nat",
    "lean": {
     "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 162,
+    "line": 168,
     "kind": "theorem",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/decrypt-encrypt.md",
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/decrypt-encrypt.md",
    "title": "Correctness of textbook RSA",
    "statement": "Decryption inverts encryption on every message, including\nmessages that are not coprime to `n`.",
    "declaration": "Cslib.Crypto.PublicKey.RSA.Key.decrypt_encrypt",
    "lean": {
     "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 150,
+    "line": 156,
     "kind": "theorem",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/decrypt.md",
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/decrypt.md",
    "title": "RSA decryption",
    "statement": "For an RSA key with modulus $n = pq$ and private exponent $d$, decryption is\nthe map $\\mathbb{Z}/n\\mathbb{Z} \\to \\mathbb{Z}/n\\mathbb{Z}$ given by $c \\mapsto c^d$.",
    "declaration": "Cslib.Crypto.PublicKey.RSA.Key.decrypt",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
+    "line": 116,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/encrypt-bijective.md",
+   "title": "RSA encryption is a bijection",
+   "statement": "For an RSA key with modulus $n = pq$ and public exponent\n$e$, the encryption map $m \\mapsto m^e$ is a bijection from $\\mathbb{Z}/n\\mathbb{Z}$ to itself.",
+   "declaration": "Cslib.Crypto.PublicKey.RSA.Key.encrypt_bijective",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
+    "line": 160,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/encrypt.md",
+   "title": "RSA encryption",
+   "statement": "For an RSA key with modulus $n = pq$ and public exponent $e$, encryption is\nthe map $\\mathbb{Z}/n\\mathbb{Z} \\to \\mathbb{Z}/n\\mathbb{Z}$ given by $m \\mapsto m^e$.",
+   "declaration": "Cslib.Crypto.PublicKey.RSA.Key.encrypt",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
+    "line": 113,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/key.md",
+   "title": "RSA key",
+   "statement": "A textbook RSA key consists of distinct primes $p$ and $q$ and natural numbers $e$\n(the public exponent) and $d$ (the private exponent) such that $ed \\equiv 1 \\pmod{p - 1}$ and\n$ed \\equiv 1 \\pmod{q - 1}$.",
+   "declaration": "Cslib.Crypto.PublicKey.RSA.Key",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
+    "line": 90,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/n.md",
+   "title": "RSA modulus",
+   "statement": "The modulus of an RSA key with primes $p$ and $q$ is $n = pq$.",
+   "declaration": "Cslib.Crypto.PublicKey.RSA.Key.n",
    "lean": {
     "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
     "line": 110,
@@ -9687,82 +9171,58 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/encrypt-bijective.md",
-   "title": "RSA encryption is a bijection",
-   "statement": "For an RSA key with modulus $n = pq$ and public exponent\n$e$, the encryption map $m \\mapsto m^e$ is a bijection from $\\mathbb{Z}/n\\mathbb{Z}$ to itself.",
-   "declaration": "Cslib.Crypto.PublicKey.RSA.Key.encrypt_bijective",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 154,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/encrypt.md",
-   "title": "RSA encryption",
-   "statement": "For an RSA key with modulus $n = pq$ and public exponent $e$, encryption is\nthe map $\\mathbb{Z}/n\\mathbb{Z} \\to \\mathbb{Z}/n\\mathbb{Z}$ given by $m \\mapsto m^e$.",
-   "declaration": "Cslib.Crypto.PublicKey.RSA.Key.encrypt",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 107,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/key.md",
-   "title": "RSA key",
-   "statement": "A textbook RSA key consists of distinct primes $p$ and $q$ and natural numbers $e$\n(the public exponent) and $d$ (the private exponent) such that $ed \\equiv 1 \\pmod{p - 1}$ and\n$ed \\equiv 1 \\pmod{q - 1}$.",
-   "declaration": "Cslib.Crypto.PublicKey.RSA.Key",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 84,
-    "kind": "structure",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/n.md",
-   "title": "RSA modulus",
-   "statement": "The modulus of an RSA key with primes $p$ and $q$ is $n = pq$.",
-   "declaration": "Cslib.Crypto.PublicKey.RSA.Key.n",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 104,
-    "kind": "def",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/of-totient.md",
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/of-totient.md",
    "title": "RSA key from the totient condition",
    "statement": "Given distinct primes $p$ and $q$ and natural\nnumbers $e$ and $d$ with $ed \\equiv 1 \\pmod{\\varphi(pq)}$, where $\\varphi$ is Euler's totient\nfunction, this is the RSA key with primes $p$ and $q$, public exponent $e$ and private exponent\n$d$. Its conditions $ed \\equiv 1 \\pmod{p - 1}$ and $ed \\equiv 1 \\pmod{q - 1}$ hold because\n$\\varphi(pq) = (p - 1)(q - 1)$.",
    "declaration": "Cslib.Crypto.PublicKey.RSA.Key.ofTotient",
    "lean": {
     "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 202,
+    "line": 208,
     "kind": "def",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/one-le-mod.md",
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/one-le-mod.md",
    "title": "Positivity of the reduced RSA exponent",
    "statement": "Let $p$, $e$ and $d$ be natural numbers with\n$p > 2$ and $ed \\equiv 1 \\pmod{p - 1}$. Then $d \\bmod (p - 1) \\ge 1$.\n\nOtherwise $p - 1$ divides $ed$, contradicting $ed \\equiv 1 \\pmod{p - 1}$.",
    "declaration": "Cslib.Crypto.PublicKey.RSA.one_le_mod",
    "lean": {
     "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 74,
+    "line": 80,
     "kind": "theorem",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/pow-ed.md",
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/pow-ed.md",
    "title": "RSA exponent identity",
    "statement": "For an RSA key with modulus $n$ and exponents $e$ and $d$, every\n$x \\in \\mathbb{Z}/n\\mathbb{Z}$ satisfies $x^{ed} = x$.",
    "declaration": "Cslib.Crypto.PublicKey.RSA.Key.pow_ed",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
+    "line": 148,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/pow-eq-pow-of-mod-eq.md",
+   "title": "Fermat's little theorem for congruent exponents",
+   "statement": "Let $p$ be a prime and let $a$ and $b$\nbe natural numbers with $a, b \\ge 1$ and $a \\equiv b \\pmod{p - 1}$. Then $x^a = x^b$ for every\n$x \\in \\mathbb{Z}/p\\mathbb{Z}$.",
+   "declaration": "Cslib.Crypto.PublicKey.RSA.pow_eq_pow_of_modEq",
+   "lean": {
+    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
+    "line": 67,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/pow-eq-self-of-crt.md",
+   "title": "Checking a power identity through the Chinese remainder theorem",
+   "statement": "Let an RSA key have\nprimes $p$ and $q$ and modulus $n$, let $k$ be a natural number and $x \\in \\mathbb{Z}/n\\mathbb{Z}$,\nand let $(x_p, x_q) \\in \\mathbb{Z}/p\\mathbb{Z} \\times \\mathbb{Z}/q\\mathbb{Z}$ be the image of $x$\nunder the Chinese remainder isomorphism. If $x_p^k = x_p$ and $x_q^k = x_q$, then $x^k = x$.",
+   "declaration": "Cslib.Crypto.PublicKey.RSA.Key.pow_eq_self_of_crt",
    "lean": {
     "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
     "line": 142,
@@ -9771,43 +9231,247 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/pow-eq-pow-of-mod-eq.md",
-   "title": "Fermat's little theorem for congruent exponents",
-   "statement": "Let $p$ be a prime and let $a$ and $b$\nbe natural numbers with $a, b \\ge 1$ and $a \\equiv b \\pmod{p - 1}$. Then $x^a = x^b$ for every\n$x \\in \\mathbb{Z}/p\\mathbb{Z}$.",
-   "declaration": "Cslib.Crypto.PublicKey.RSA.pow_eq_pow_of_modEq",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 61,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/pow-eq-self-of-crt.md",
-   "title": "Checking a power identity through the Chinese remainder theorem",
-   "statement": "Let an RSA key have\nprimes $p$ and $q$ and modulus $n$, let $k$ be a natural number and $x \\in \\mathbb{Z}/n\\mathbb{Z}$,\nand let $(x_p, x_q) \\in \\mathbb{Z}/p\\mathbb{Z} \\times \\mathbb{Z}/q\\mathbb{Z}$ be the image of $x$\nunder the Chinese remainder isomorphism. If $x_p^k = x_p$ and $x_q^k = x_q$, then $x^k = x$.",
-   "declaration": "Cslib.Crypto.PublicKey.RSA.Key.pow_eq_self_of_crt",
-   "lean": {
-    "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 136,
-    "kind": "theorem",
-    "sorry": false
-   }
-  },
-  {
-   "path": "ComputerScience/cryptography/rsa-cryptosystem/pow-eq-self-of-mod-eq.md",
+   "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem/pow-eq-self-of-mod-eq.md",
    "title": "Fermat's little theorem with exponents congruent to one",
    "statement": "Let $p$ be a prime and let\n$k \\ge 1$ be a natural number with $k \\equiv 1 \\pmod{p - 1}$. Then $x^k = x$ for every\n$x \\in \\mathbb{Z}/p\\mathbb{Z}$.",
    "declaration": "Cslib.Crypto.PublicKey.RSA.pow_eq_self_of_modEq",
    "lean": {
     "file": "CSLibExt/Crypto/PublicKey/RSA.lean",
-    "line": 51,
+    "line": 57,
     "kind": "theorem",
     "sorry": false
    }
   },
   {
-   "path": "ComputerScience/cryptography/schnorr-identification-scheme/accepts-honest.md",
+   "path": "ComputerScience/cryptography/security-games/oracle-algorithms/done.md",
+   "title": "The oracle algorithm that stops at once",
+   "statement": "For an output $a \\in \\alpha$, this is the\nadaptive oracle algorithm with queries in $X$ and answers in $Y$ that asks no query and stops\nwith output $a$.",
+   "declaration": "Cslib.Crypto.Framework.OracleComp.done",
+   "lean": {
+    "file": "CSLibExt/Crypto/Framework/Oracle.lean",
+    "line": 215,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/security-games/oracle-algorithms/oracle-comp.md",
+   "title": "Adaptive oracle algorithms",
+   "statement": "For a type $X$ of queries, a type $Y$ of answers and a type\n$\\alpha$ of outputs, an adaptive deterministic oracle algorithm is an element of CSLib's free\nmonad over the polynomial functor of one oracle with queries $X$ and answers $Y$. It is built\ninductively: it either stops with an output in $\\alpha$, or asks a query $x \\in X$ and continues\nwith an algorithm that depends on the answer $y \\in Y$.",
+   "declaration": "Cslib.Crypto.Framework.OracleComp",
+   "lean": {
+    "file": "CSLibExt/Crypto/Framework/Oracle.lean",
+    "line": 207,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/security-games/oracle-algorithms/oracle-sig.md",
+   "title": "The signature of one oracle",
+   "statement": "For types $X$ and $Y$, this is the polynomial functor whose\noperations are the queries $x \\in X$, each answered by an element of $Y$.",
+   "declaration": "Cslib.Crypto.Framework.OracleSig",
+   "lean": {
+    "file": "CSLibExt/Crypto/Framework/Oracle.lean",
+    "line": 201,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/security-games/oracle-algorithms/queries.md",
+   "title": "Queries of an oracle algorithm",
+   "statement": "For an oracle algorithm $c$ and a function\n$O : X \\to Y$, the queries of $c$ against $O$ are the list of the points of $X$ that $c$ asks,\nin order, when every query $x$ is answered by $O(x)$: the empty list if $c$ stops, and otherwise\nthe first query $x$ followed by the queries of the continuation on the answer $O(x)$.",
+   "declaration": "Cslib.Crypto.Framework.OracleComp.queries",
+   "lean": {
+    "file": "CSLibExt/Crypto/Framework/Oracle.lean",
+    "line": 226,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/security-games/oracle-algorithms/query.md",
+   "title": "Query step",
+   "statement": "For a point $x \\in X$ and a continuation $k$ assigning an oracle algorithm to\neach answer $y \\in Y$, the oracle algorithm that first queries $x$ and then continues with\n$k(y)$, where $y$ is the answer.",
+   "declaration": "Cslib.Crypto.Framework.OracleComp.query",
+   "lean": {
+    "file": "CSLibExt/Crypto/Framework/Oracle.lean",
+    "line": 218,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/security-games/oracle-algorithms/run-bind.md",
+   "title": "Running a sequential composition",
+   "statement": "Let $c$ be an oracle algorithm with outputs in $\\alpha$,\nlet $g$ map each $a \\in \\alpha$ to an oracle algorithm with outputs in $\\beta$, and let\n$O : X \\to Y$. Running against $O$ the composition that first runs $c$ and then continues with\n$g$ applied to its output gives the output of $g(a)$ run against $O$, where $a$ is the output\nof $c$ run against $O$.",
+   "declaration": "Cslib.Crypto.Framework.OracleComp.run_bind",
+   "lean": {
+    "file": "CSLibExt/Crypto/Framework/Oracle.lean",
+    "line": 242,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/security-games/oracle-algorithms/run-congr.md",
+   "title": "Locality of oracle runs",
+   "statement": "Let $c$ be an oracle algorithm and let $O, O' : X \\to Y$ agree\nat every query of $c$ against $O$. Then $c$ has the same output against $O$ as against $O'$, and\nthe same list of queries against $O$ as against $O'$.",
+   "declaration": "Cslib.Crypto.Framework.OracleComp.run_congr",
+   "lean": {
+    "file": "CSLibExt/Crypto/Framework/Oracle.lean",
+    "line": 231,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/security-games/oracle-algorithms/run.md",
+   "title": "Running an oracle algorithm",
+   "statement": "Given a function $O : X \\to Y$, the run of an oracle\nalgorithm with queries in $X$, answers in $Y$ and outputs in $\\alpha$ is its output when every\nquery $x$ is answered by $O(x)$: an algorithm that stops with output $a$ runs to $a$, and one\nthat queries $x$ and continues with $k(y)$ on answer $y$ runs to the run of $k(O(x))$.",
+   "declaration": "Cslib.Crypto.Framework.OracleComp.run",
+   "lean": {
+    "file": "CSLibExt/Crypto/Framework/Oracle.lean",
+    "line": 221,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/forge-game-le.md",
+   "title": "Security reduction for Lamport one-time signatures",
+   "statement": "Let $f : X \\to Y$ be a function on a\nfinite nonempty set $X$, let $\\ell \\ge 1$ be the message length, and let $A$ be a one-time forger\nwhose random coins range over a finite nonempty set $R$. Then the probability that $A$ wins the\none-time forgery game against the Lamport scheme built from $f$ is at most $2\\ell$ times the\nprobability that the inverter built from $A$ wins the one-wayness game for $f$.\n\nThis is the reduction behind Katz and Lindell, Theorem 12.16: if $f$ is one-way, then Lamport's\nscheme is one-time secure.",
+   "declaration": "Cslib.Crypto.Signatures.Lamport.forgeGame_le",
+   "lean": {
+    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
+    "line": 209,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/forge-game.md",
+   "title": "One-time forgery game",
+   "statement": "Let $f : X \\to Y$ with $X$ finite and nonempty, and let $A$ be a\none-time forger for messages of length $\\ell$ with random coins in a finite nonempty set $R$. The\none-time forgery game is the distribution on $\\{\\mathrm{true}, \\mathrm{false}\\}$ obtained by drawing\na secret key $sk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to X$ and coins $r \\in R$ uniformly and\nindependently, and returning whether $A$ wins against $sk$ with coins $r$.",
+   "declaration": "Cslib.Crypto.Signatures.Lamport.forgeGame",
+   "lean": {
+    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
+    "line": 91,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/forger.md",
+   "title": "One-time forger",
+   "statement": "A one-time forger for messages of length $\\ell$, with random coins in a\nset $R$, consists of two maps. The first takes a public key\n$pk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to Y$ and coins $r \\in R$ and returns the message\n$m \\in \\{0, 1\\}^\\ell$ whose signature the forger requests. The second takes a public key, a\nsignature $\\sigma \\in X^\\ell$ and coins $r$ and returns a message $m' \\in \\{0, 1\\}^\\ell$ together\nwith a signature $\\sigma' \\in X^\\ell$.",
+   "declaration": "Cslib.Crypto.Signatures.Lamport.Forger",
+   "lean": {
+    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
+    "line": 71,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/invert-game.md",
+   "title": "One-wayness game",
+   "statement": "Let $f : X \\to Y$ with $X$ finite and nonempty, and let $I$ be an\ninverter with random coins in a finite nonempty set $\\Omega$: given $y \\in Y$ and coins\n$\\omega \\in \\Omega$ it either outputs some $x' \\in X$ or fails. The one-wayness game for $f$ is the\ndistribution on $\\{\\mathrm{true}, \\mathrm{false}\\}$ obtained by drawing $x \\in X$ and\n$\\omega \\in \\Omega$ uniformly and independently and returning true exactly when $I$, run on $f(x)$\nwith coins $\\omega$, outputs some $x'$ with $f(x') = f(x)$.",
+   "declaration": "Cslib.Crypto.Signatures.Lamport.invertGame",
+   "lean": {
+    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
+    "line": 97,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/invert.md",
+   "title": "Inverter built from a forger",
+   "statement": "Let $f : X \\to Y$, let $A$ be a one-time forger for messages\nof length $\\ell$ with coins in $R$, and let $y \\in Y$. The inverter's coins are a position $(i, b)$\nwith $i < \\ell$ and $b \\in \\{0, 1\\}$, a secret key\n$sk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to X$ and forger coins $r \\in R$. It forms the\npublic key $pk$ with $pk(i, b) = y$ and $pk(j, c) = f(sk(j, c))$ for every other $(j, c)$, and\nruns $A$ on $pk$ with coins $r$ to obtain the message $m$ whose signature $A$ requests. If\n$m_i = b$ it fails. Otherwise it hands $A$ the signature $(sk(j, m_j))_{j < \\ell}$ of $m$ under\n$sk$ and obtains a forgery $(m', \\sigma')$; it outputs $\\sigma'_i$ if $m'_i = b$ and fails\notherwise.",
+   "declaration": "Cslib.Crypto.Signatures.Lamport.invert",
+   "lean": {
+    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
+    "line": 111,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/plant.md",
+   "title": "Planted public key",
+   "statement": "Let $f : X \\to Y$. Given a secret key\n$sk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to X$, a position $(i, b)$ and a value $y \\in Y$, the\nplanted public key takes the value $y$ at $(i, b)$ and the value $f(sk(j, c))$ at every other\nposition $(j, c)$.",
+   "declaration": "Cslib.Crypto.Signatures.Lamport.plant",
+   "lean": {
+    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
+    "line": 105,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/public-key.md",
+   "title": "Lamport public key",
+   "statement": "For a function $f : X \\to Y$ and a secret key\n$sk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to X$, the public key is the map\n$pk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to Y$ with $pk(i, b) = f(sk(i, b))$.",
+   "declaration": "Cslib.Crypto.Signatures.Lamport.publicKey",
+   "lean": {
+    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
+    "line": 52,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/sign.md",
+   "title": "Lamport signing",
+   "statement": "The signature of a message $m \\in \\{0, 1\\}^\\ell$ under a secret key\n$sk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to X$ is $\\sigma \\in X^\\ell$ with\n$\\sigma_i = sk(i, m_i)$ for every position $i < \\ell$.",
+   "declaration": "Cslib.Crypto.Signatures.Lamport.sign",
+   "lean": {
+    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
+    "line": 55,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/verify-sign.md",
+   "title": "Correctness of Lamport signatures",
+   "statement": "Let $f : X \\to Y$. For every secret key\n$sk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to X$ and every message $m \\in \\{0, 1\\}^\\ell$, the\nLamport signature of $m$ under $sk$ is valid for $m$ under the public key of $sk$.",
+   "declaration": "Cslib.Crypto.Signatures.Lamport.verify_sign",
+   "lean": {
+    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
+    "line": 66,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/verify.md",
+   "title": "Lamport verification",
+   "statement": "Let $f : X \\to Y$. A signature $\\sigma \\in X^\\ell$ on a message\n$m \\in \\{0, 1\\}^\\ell$ is valid for a public key $pk : \\{0, \\dots, \\ell - 1\\} \\times \\{0, 1\\} \\to Y$\nwhen $f(\\sigma_i) = pk(i, m_i)$ for every position $i < \\ell$.",
+   "declaration": "Cslib.Crypto.Signatures.Lamport.Verify",
+   "lean": {
+    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
+    "line": 58,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/wins.md",
+   "title": "Winning the Lamport one-time forgery game",
+   "statement": "Let $X$ be a nonempty finite set, $Y$ a set\nwith decidable equality, $f : X \\to Y$ a function, and $\\ell$ a message length; messages are bit\nstrings $m = (m_0, \\dots, m_{\\ell-1})$. A one-time forger $A$ with random coins from a nonempty\nfinite set $R$ wins against a secret key $sk$, which assigns $sk(i, b) \\in X$ to each position\n$i < \\ell$ and bit $b$, with coins $r \\in R$ when the following holds. Let $pk$ be the public key\nof $sk$, given by $pk(i, b) = f(sk(i, b))$; let $m$ be the message that $A$ chooses from $pk$ and\n$r$; and let $(m', \\sigma')$ be the message and signature that $A$ outputs from $pk$, the\nsignature $i \\mapsto sk(i, m_i)$ of $m$ under $sk$, and $r$. Then $m' \\ne m$, and $\\sigma'$ is a\nvalid signature on $m'$ for $pk$: $f(\\sigma'_i) = pk(i, m'_i)$ for every $i < \\ell$.",
+   "declaration": "Cslib.Crypto.Signatures.Lamport.Forger.Wins",
+   "lean": {
+    "file": "CSLibExt/Crypto/Signatures/Lamport.lean",
+    "line": 81,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/accepts-honest.md",
    "title": "Completeness of the Schnorr identification scheme",
    "statement": "Let $G$ be a commutative group,\n$q \\ge 1$ a natural number and $g \\in G$ with $g^q = 1$; for $h \\in G$ and $a \\in \\mathbb{Z}/q$\nwrite $h^a$ for $h^{\\bar a}$, where $\\bar a \\in \\{0, \\dots, q - 1\\}$ is the representative\nof $a$. For all $x, k, r \\in \\mathbb{Z}/q$, with public key $y = g^x$, the honest transcript\n$(g^k, r, rx + k)$ is accepted, that is, $g^{rx + k} (y^r)^{-1} = g^k$.",
    "declaration": "Cslib.Crypto.Identification.Schnorr.accepts_honest",
@@ -9819,7 +9483,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/schnorr-identification-scheme/accepts.md",
+   "path": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/accepts.md",
    "title": "Schnorr verifier's acceptance condition",
    "statement": "Let $G$ be a commutative group, $q$ a natural\nnumber and $g, y \\in G$ (the base and the public key); for $h \\in G$ and $a \\in \\mathbb{Z}/q$\nwrite $h^a$ for $h^{\\bar a}$, where $\\bar a$ is the representative of $a$ in\n$\\{0, \\dots, q - 1\\}$ (and $\\bar a = |a|$ when $q = 0$, so that $\\mathbb{Z}/q = \\mathbb{Z}$).\nThe verifier accepts a transcript $(I, r, s)$ with $I \\in G$ and $r, s \\in \\mathbb{Z}/q$ when\n$g^s (y^r)^{-1} = I$.",
    "declaration": "Cslib.Crypto.Identification.Schnorr.Accepts",
@@ -9831,7 +9495,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/schnorr-identification-scheme/extract-spec.md",
+   "path": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/extract-spec.md",
    "title": "Special soundness",
    "statement": "Let $G$ be a commutative group, $q$ a prime and $g, y \\in G$ with\n$g^q = 1$ and $y^q = 1$; for $h \\in G$ and $a \\in \\mathbb{Z}/q$ write $h^a$ for $h^{\\bar a}$,\nwhere $\\bar a \\in \\{0, \\dots, q - 1\\}$ is the representative of $a$. Let $I \\in G$ and\n$r, s, r', s' \\in \\mathbb{Z}/q$ with $r \\ne r'$, and suppose both transcripts $(I, r, s)$ and\n$(I, r', s')$ are accepted, that is, $g^s (y^r)^{-1} = I$ and $g^{s'} (y^{r'})^{-1} = I$. Then\nthe extracted exponent $e = (s - s')(r - r')^{-1}$ is a discrete logarithm of $y$: $g^e = y$.",
    "declaration": "Cslib.Crypto.Identification.Schnorr.extract_spec",
@@ -9843,7 +9507,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/schnorr-identification-scheme/extract.md",
+   "path": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/extract.md",
    "title": "Schnorr knowledge extractor",
    "statement": "Let $q$ be a natural number. For\n$r, s, r', s' \\in \\mathbb{Z}/q$ (the challenges and answers of two transcripts), the extracted\nexponent is $(s - s')(r - r')^{-1} \\in \\mathbb{Z}/q$, where $u^{-1}$ is the inverse of $u$ in\n$\\mathbb{Z}/q$ when $u$ is a unit (and, otherwise, a conventional element of $\\mathbb{Z}/q$\ndepending on $u$). For $q$ prime and $r \\ne r'$ it is $(s - s')/(r - r')$.",
    "declaration": "Cslib.Crypto.Identification.Schnorr.extract",
@@ -9855,7 +9519,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/schnorr-identification-scheme/honest-transcript.md",
+   "path": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/honest-transcript.md",
    "title": "Honest Schnorr transcript",
    "statement": "Let $G$ be a commutative group, $q \\ge 1$ and $g \\in G$; for\n$a \\in \\mathbb{Z}/q$ write $g^a$ for $g^{\\bar a}$, where $\\bar a \\in \\{0, \\dots, q - 1\\}$ is the\nrepresentative of $a$. For a secret key $x$, prover randomness $k$ and challenge $r$, all in\n$\\mathbb{Z}/q$, the honest transcript is the element $(g^k, r, rx + k)$ of\n$G \\times \\mathbb{Z}/q \\times \\mathbb{Z}/q$.",
    "declaration": "Cslib.Crypto.Identification.Schnorr.honestTranscript",
@@ -9867,7 +9531,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/schnorr-identification-scheme/respond.md",
+   "path": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/respond.md",
    "title": "Schnorr prover's response",
    "statement": "Let $q$ be a natural number. For a secret key $x$, prover\nrandomness $k$ and challenge $r$, all in $\\mathbb{Z}/q$, the prover's answer is\n$s = rx + k \\in \\mathbb{Z}/q$.",
    "declaration": "Cslib.Crypto.Identification.Schnorr.respond",
@@ -9879,7 +9543,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/schnorr-identification-scheme/sim-transcript.md",
+   "path": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/sim-transcript.md",
    "title": "Simulated Schnorr transcript",
    "statement": "Let $G$ be a commutative group, $q \\ge 1$ and $g, y \\in G$;\nfor $h \\in G$ and $a \\in \\mathbb{Z}/q$ write $h^a$ for $h^{\\bar a}$, where\n$\\bar a \\in \\{0, \\dots, q - 1\\}$ is the representative of $a$. For a challenge $r$ and an answer\n$s$ in $\\mathbb{Z}/q$, the simulated transcript is the element $(g^s (y^r)^{-1}, r, s)$ of\n$G \\times \\mathbb{Z}/q \\times \\mathbb{Z}/q$.",
    "declaration": "Cslib.Crypto.Identification.Schnorr.simTranscript",
@@ -9891,7 +9555,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/schnorr-identification-scheme/simulate.md",
+   "path": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/simulate.md",
    "title": "Schnorr simulator",
    "statement": "Let $G$ be a commutative group, $q \\ge 1$ and $g, y \\in G$; for\n$h \\in G$ and $a \\in \\mathbb{Z}/q$ write $h^a$ for $h^{\\bar a}$, where\n$\\bar a \\in \\{0, \\dots, q - 1\\}$ is the representative of $a$. The simulator's distribution is\nthe law of the simulated transcript $(g^s (y^r)^{-1}, r, s)$ when $(r, s)$ is uniform on\n$\\mathbb{Z}/q \\times \\mathbb{Z}/q$; it uses only $g$ and the public key $y$.",
    "declaration": "Cslib.Crypto.Identification.Schnorr.simulate",
@@ -9903,7 +9567,7 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/schnorr-identification-scheme/transcript-eq-simulate.md",
+   "path": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/transcript-eq-simulate.md",
    "title": "Perfect honest-verifier zero knowledge",
    "statement": "Let $G$ be a commutative group, $q \\ge 1$ and\n$g \\in G$ with $g^q = 1$; for $h \\in G$ and $a \\in \\mathbb{Z}/q$ write $h^a$ for $h^{\\bar a}$,\nwhere $\\bar a \\in \\{0, \\dots, q - 1\\}$ is the representative of $a$. For every secret key\n$x \\in \\mathbb{Z}/q$, with public key $y = g^x$, the honest transcript $(g^k, r, rx + k)$ with\n$(k, r)$ uniform on $\\mathbb{Z}/q \\times \\mathbb{Z}/q$ has the same distribution as the\nsimulated transcript $(g^s (y^r)^{-1}, r, s)$ with $(r, s)$ uniform on\n$\\mathbb{Z}/q \\times \\mathbb{Z}/q$.",
    "declaration": "Cslib.Crypto.Identification.Schnorr.transcript_eq_simulate",
@@ -9915,13 +9579,349 @@
    }
   },
   {
-   "path": "ComputerScience/cryptography/schnorr-identification-scheme/transcript.md",
+   "path": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/transcript.md",
    "title": "Distribution of honest Schnorr transcripts",
    "statement": "Let $G$ be a commutative group, $q \\ge 1$ and\n$g \\in G$; for $a \\in \\mathbb{Z}/q$ write $g^a$ for $g^{\\bar a}$, where\n$\\bar a \\in \\{0, \\dots, q - 1\\}$ is the representative of $a$. For a secret key\n$x \\in \\mathbb{Z}/q$, this is the law of the honest transcript $(g^k, r, rx + k)$ when $(k, r)$ is\nuniform on $\\mathbb{Z}/q \\times \\mathbb{Z}/q$.",
    "declaration": "Cslib.Crypto.Identification.Schnorr.transcript",
    "lean": {
     "file": "CSLibExt/Crypto/Identification/Schnorr.lean",
     "line": 97,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/one-time-pad-over-a-finite-group/group-otp-ciphertext-dist-eq-uniform.md",
+   "title": "Group one-time pad ciphertexts are uniform",
+   "statement": "Let $G$ be a finite group. For every\nmessage $m \\in G$, the ciphertext of $m$ under the group one-time pad on $G$, whose key is\ndrawn uniformly from $G$, is uniformly distributed on $G$.",
+   "declaration": "Cslib.Crypto.Protocols.PerfectSecrecy.groupOTP_ciphertextDist_eq_uniform",
+   "lean": {
+    "file": "CSLibExt/Crypto/Protocols/PerfectSecrecy/GroupOneTimePad.lean",
+    "line": 47,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/one-time-pad-over-a-finite-group/group-otp-perfectly-secret.md",
+   "title": "The group one-time pad is perfectly secret",
+   "statement": "Let $G$ be a finite group. The group\none-time pad on $G$ is perfectly secret: for every probability distribution on messages in $G$\nand every ciphertext $c$ that occurs with positive probability, the conditional distribution\nof the message given that the ciphertext is $c$ equals the prior distribution of the message.\n\n## Sources\n\n- Katz and Lindell, Lemma 11.15.",
+   "declaration": "Cslib.Crypto.Protocols.PerfectSecrecy.groupOTP_perfectlySecret",
+   "lean": {
+    "file": "CSLibExt/Crypto/Protocols/PerfectSecrecy/GroupOneTimePad.lean",
+    "line": 54,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/one-time-pad-over-a-finite-group/group-otp.md",
+   "title": "The group one-time pad",
+   "statement": "Let $G$ be a finite group. The group one-time pad on $G$ is the\nprivate-key encryption scheme with messages, keys and ciphertexts in $G$ whose key $k$ is drawn\nuniformly from $G$, which encrypts a message $m$ as $k m$, and which decrypts a ciphertext $c$\nas $k^{-1} c$.",
+   "declaration": "Cslib.Crypto.Protocols.PerfectSecrecy.groupOTP",
+   "lean": {
+    "file": "CSLibExt/Crypto/Protocols/PerfectSecrecy/GroupOneTimePad.lean",
+    "line": 43,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/card-mac-wins-mul-le.md",
+   "title": "Counting forgeries against a random function",
+   "statement": "Let $M$ and $T$ be finite sets and let $c$ be\nan adaptive oracle algorithm that queries messages in $M$, receives tags in $T$ and outputs a pair\nin $M \\times T$. Call a function $f \\colon M \\to T$ a win for $c$ when the run of $c$ with oracle\n$f$ outputs a pair $(m, t)$ with $f(m) = t$ and $m$ not among the messages queried in that run.\nIf $W$ is the set of functions $M \\to T$ that are wins for $c$, then $|W| \\cdot |T| \\le |T|^{|M|}$.\n\nChanging the tag of the fresh forged message, which the run never queries, gives $|T|$ functions\nwith the same run, of which exactly one is a win.",
+   "declaration": "Cslib.Crypto.PRF.card_macWins_mul_le",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 204,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/cpa-advantage-le.md",
+   "title": "CPA encryption from a PRF, concrete security",
+   "statement": "Let $K$, $X$ and $R$ be nonempty finite sets,\n$Y$ a finite additive commutative group, $q$ a natural number and $F \\colon K \\to X \\to Y$ a keyed\nfunction, used in the scheme $\\mathrm{Enc}_k(m) = (r, F_k(r) + m)$ with uniform randomness\n$r \\in X$. For every CPA adversary $A$ with coins in $R$, the CPA advantage of $A$ in the\nexperiment whose encryption oracle answers at most $q$ queries is at most the PRF advantage of $F$\nagainst the distinguisher built from $A$ plus $q / (2 |X|)$.\n\nThis is the reduction of Katz and Lindell, Theorem 3.31, with the sharper statistical term\n$q / (2 |X|)$ in place of $q / |X|$.",
+   "declaration": "Cslib.Crypto.PRF.cpaAdvantage_le",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 588,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/cpa-advantage.md",
+   "title": "CPA advantage",
+   "statement": "Let $K$, $X$ and $R$ be nonempty finite sets, $Y$ an additive commutative\ngroup, $q$ a natural number, $F \\colon K \\to X \\to Y$ a keyed function and $A$ a CPA adversary\nwith coins in $R$. The CPA advantage of $A$ is the real number $|p - 1/2|$, where $p$ is the\nprobability that the CPA experiment for $F$ and $A$ with at most $q$ encryption queries outputs\ntrue, that is, that $A$ guesses the challenge bit.",
+   "declaration": "Cslib.Crypto.PRF.cpaAdvantage",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 331,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/cpa-game-eq-prf-real.md",
+   "title": "The CPA reduction is exact with the real oracle",
+   "statement": "Let $K$, $X$ and $R$ be nonempty finite\nsets, $Y$ an additive commutative group, $q$ a natural number and $F \\colon K \\to X \\to Y$ a keyed\nfunction. For every CPA adversary $A$ with coins in $R$, the CPA experiment for $F$ and $A$ with\nat most $q$ encryption queries has the same output distribution as the real world of the PRF\nexperiment for $F$ run with the distinguisher built from $A$ for $q$ queries: with the oracle $F_k$\nfor a uniform key $k$, the reduction runs the CPA experiment exactly.",
+   "declaration": "Cslib.Crypto.PRF.cpaGame_eq_prfReal",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 377,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/cpa-game.md",
+   "title": "The CPA experiment",
+   "statement": "Let $K$, $X$ and $R$ be nonempty finite sets, $Y$ an additive\ncommutative group, $q$ a natural number, $F \\colon K \\to X \\to Y$ a keyed function and $A$ a CPA\nadversary with coins in $R$. The CPA indistinguishability experiment $\\mathrm{PrivK}^{\\mathrm{cpa}}$\nfor the scheme $\\mathrm{Enc}_k(m) = (r, F_k(r) + m)$ draws, uniformly and independently, a key\n$k \\in K$, encryption randomness $\\rho \\colon \\{0, \\dots, q - 1\\} \\to X$ for the encryption\nqueries, challenge randomness $r_s \\in X$, a challenge bit $b$ and coins $r \\in R$. It outputs true\nexactly when the adversary's guess, with keyed function $F_k$, encryption randomness $\\rho$,\nchallenge randomness $r_s$, challenge bit $b$ and the algorithm that $A$ assigns to $r$, equals $b$.\nAn adversary that asks more than $q$ encryption queries is stopped and guesses false.",
+   "declaration": "Cslib.Crypto.PRF.cpaGame",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 325,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/cpa-guess.md",
+   "title": "The adversary's guess in the CPA experiment",
+   "statement": "Let $Y$ be an additive commutative group,\n$f \\colon X \\to Y$ a function, $q$ a natural number, $\\rho \\colon \\{0, \\dots, q - 1\\} \\to X$ the\nencryption randomness, $r_s \\in X$ the challenge randomness and $b$ a bit. Let $c$ be an oracle\nalgorithm for the encryption oracle that outputs two messages $(m_0, m_1) \\in Y \\times Y$ and a\nsecond-phase algorithm. The encryption query with index $i$, counting from $0$ across both\nphases, is answered for a message $m$ by $(\\rho_i, f(\\rho_i) + m)$. Run $c$; when it outputs\n$(m_0, m_1)$, run its second phase on the challenge ciphertext $(r_s, f(r_s) + m_b)$, where $m_b$\nis $m_1$ if $b$ is true and $m_0$ otherwise. The guess is the output of the second phase. If the\ntwo phases together ask more than $q$ encryption queries, the adversary is stopped and the guess\nis false.",
+   "declaration": "Cslib.Crypto.PRF.cpaGuess",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 315,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/cpa-reduction.md",
+   "title": "The PRF distinguisher built from a CPA adversary",
+   "statement": "Let $X$ and $R$ be sets, $Y$ an additive\ncommutative group, $q$ a natural number and $A$ a CPA adversary with coins in $R$ against an\nencryption oracle that takes messages in $Y$ and returns ciphertexts in $X \\times Y$. With its own\ncoins $(\\rho, r_s, b, r)$, where $\\rho \\colon \\{0, \\dots, q - 1\\} \\to X$, $r_s \\in X$, $b$ is a bit\nand $r \\in R$, and with oracle access to a function $O \\colon X \\to Y$, the distinguisher runs the\nalgorithm $A$ assigns to $r$. It answers the encryption query with index $i$, counting from $0$\nacross both phases, for a message $m$ by querying $O$ at $\\rho_i$ and returning\n$(\\rho_i, O(\\rho_i) + m)$. When the first phase outputs messages $(m_0, m_1)$, it queries $O$ at\n$r_s$ and gives the second phase the challenge ciphertext $(r_s, O(r_s) + m_b)$, where $m_b$ is\n$m_1$ if $b$ is true and $m_0$ otherwise. It outputs true exactly when the adversary's guess\nequals $b$, where an adversary that asks more than $q$ encryption queries is stopped and guesses\nfalse.",
+   "declaration": "Cslib.Crypto.PRF.cpaReduction",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 356,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/cpaadversary.md",
+   "title": "CPA adversary",
+   "statement": "A CPA adversary with coins in $R$, against an encryption oracle that takes\nmessages in $Y$ and returns ciphertexts in $X \\times Y$, assigns to each $r \\in R$ an adaptive\noracle algorithm with access to the encryption oracle that outputs two challenge messages\n$(m_0, m_1) \\in Y \\times Y$ together with a second adaptive oracle algorithm, again with access to\nthe encryption oracle, which takes the challenge ciphertext in $X \\times Y$ and outputs a guess\nfor the challenge bit.",
+   "declaration": "Cslib.Crypto.PRF.CPAAdversary",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 309,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/decrypt-encrypt.md",
+   "title": "Correctness of encryption with a keyed function",
+   "statement": "Let $Y$ be an additive commutative group\nand $F_k \\colon X \\to Y$ a function. For every message $m \\in Y$ and every randomness $r \\in X$,\ndecrypting the ciphertext $\\mathrm{Enc}(m) = (r, F_k(r) + m)$ gives back $m$, that is,\n$\\mathrm{Dec}(\\mathrm{Enc}(m)) = m$ where $\\mathrm{Dec}(r, c) = c - F_k(r)$.",
+   "declaration": "Cslib.Crypto.PRF.decrypt_encrypt",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 291,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/decrypt.md",
+   "title": "Decryption with a keyed function",
+   "statement": "For a function $F_k \\colon X \\to Y$ into an additive\ncommutative group $Y$, the decryption of a ciphertext $(r, c) \\in X \\times Y$ is\n$\\mathrm{Dec}(r, c) = c - F_k(r)$.",
+   "declaration": "Cslib.Crypto.PRF.decrypt",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 287,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/encrypt.md",
+   "title": "Encryption from a keyed function",
+   "statement": "Let $Y$ be an additive commutative group of messages\nand let $f \\colon X \\to Y$ be a function (in the scheme, $f = F_k$ for a key $k$). The\nencryption of a message $m \\in Y$ with randomness $r \\in X$ is the pair\n$(r, f(r) + m) \\in X \\times Y$.\n\nThis is Construction 3.30 of Katz and Lindell, with XOR replaced by the addition of the\nmessage group.",
+   "declaration": "Cslib.Crypto.PRF.encrypt",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 284,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/mac-game-eq-prf-real.md",
+   "title": "The MAC reduction in the real PRF world",
+   "statement": "Let $K$ and $R$ be finite nonempty types, let\n$F \\colon K \\to M \\to T$ be a keyed function, and let $A$ be a forger: for coins $r \\in R$,\n$A(r)$ is an adaptive oracle algorithm with queries in $M$, answers in $T$ and output in\n$M \\times T$. Then the output distribution of the existential-forgery experiment for $F$ and $A$\nequals the output distribution of the real world of the PRF experiment for $F$ with the\ndistinguisher that, on coins $r$, runs the MAC reduction on $A(r)$ starting from the empty query\nlog.",
+   "declaration": "Cslib.Crypto.PRF.macGame_eq_prfReal",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 192,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/mac-game-le.md",
+   "title": "The MAC from a PRF, concrete security",
+   "statement": "Let $K$, $M$, $T$ and $R$ be finite types with\n$K$, $T$ and $R$ nonempty, let $F \\colon K \\to M \\to T$ be a keyed function, and let $A$ be an\nadaptive chosen-message forger: for coins $r \\in R$, $A(r)$ is an adaptive oracle algorithm\nwith queries in $M$, answers in $T$ and output in $M \\times T$. Then the probability that $A$\nwins the existential-forgery experiment for the MAC $\\mathrm{Mac}_k(m) = F(k, m)$ is at most\nthe PRF advantage against $F$ of the distinguisher that, on coins $r$, runs the MAC reduction\non $A(r)$ starting from the empty query log, plus $1 / |T|$.\n\nThis is the reduction of Katz and Lindell, Theorem 4.6, stated as a concrete inequality.",
+   "declaration": "Cslib.Crypto.PRF.macGame_le",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 264,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/mac-game.md",
+   "title": "The MAC forgery experiment",
+   "statement": "Let $K$ and $R$ be finite nonempty types, let\n$F \\colon K \\to M \\to T$ be a keyed function, and let $A$ be a forger: for coins $r \\in R$,\n$A(r)$ is an adaptive oracle algorithm with queries in $M$, answers in $T$ and output in\n$M \\times T$. The existential-forgery experiment under an adaptive chosen-message attack for the\nMAC $\\mathrm{Mac}_k(m) = F(k, m)$ draws $(k, r)$ uniformly from $K \\times R$, runs $A(r)$ with\nthe tagging oracle $F(k, \\cdot)$, and outputs true exactly when $A(r)$ wins against that oracle,\nthat is, outputs a pair $(m, t)$ with $F(k, m) = t$ where $m$ is not among its queries.",
+   "declaration": "Cslib.Crypto.PRF.macGame",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 167,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/mac-reduction.md",
+   "title": "The distinguisher built from a forger",
+   "statement": "For a list $L$ of messages in $M$ and a forger $c$,\nan adaptive oracle algorithm with queries in $M$, answers in $T$ and output in $M \\times T$, the\nMAC reduction is the oracle algorithm with the same queries and answers and a Boolean output,\ndefined by recursion on $c$. If $c$ stops with output $(m, t)$, it queries $m$ and, on answer\n$t'$, stops with output true exactly when $t' = t$ and $m \\notin L$. If $c$ queries $x$ and\ncontinues with $c_y$ on answer $y$, it queries $x$ and, on answer $y$, continues as the MAC\nreduction of $c_y$ with $x$ added to $L$.\n\nStarted with the empty list, it runs the forger, logging its queries, then queries the forged\nmessage and accepts when the answer is the forged tag and the message is fresh.",
+   "declaration": "Cslib.Crypto.PRF.macReduction",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 172,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/mac-wins.md",
+   "title": "Winning the forgery game",
+   "statement": "A forger $c$, an adaptive oracle algorithm with queries in $M$,\nanswers in $T$ and output in $M \\times T$, wins against the tagging oracle $O \\colon M \\to T$\nwhen, run with oracle $O$, it outputs a pair $(m, t)$ with $O(m) = t$ and $m$ is not among the\nqueries it asks in that run.",
+   "declaration": "Cslib.Crypto.PRF.MacWins",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 159,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/pick.md",
+   "title": "Selecting the challenge message by a bit",
+   "statement": "Given a pair of messages\n$(m_0, m_1) \\in Y \\times Y$ and a challenge bit $b$, the selected message is $m_1$ when $b$ is\ntrue and $m_0$ when $b$ is false.",
+   "declaration": "Cslib.Crypto.PRF.pick",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 295,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/prf-advantage.md",
+   "title": "PRF advantage",
+   "statement": "Let $K$, $X$, $Y$ and $S$ be finite sets with $K$, $Y$ and $S$ nonempty,\nlet $F : K \\to X \\to Y$ be a keyed function and let $D$ be a distinguisher: an oracle algorithm\nwith coins in $S$ that queries a function $X \\to Y$ and outputs a bit. The PRF advantage of $D$\nagainst $F$ is the real number $|p_{\\mathrm{real}} - p_{\\mathrm{rand}}|$, where\n$p_{\\mathrm{real}}$ is the probability that $D$ outputs $1$ in the real world (uniform coins\n$s \\in S$, oracle $F(k, \\cdot)$ for a uniform key $k \\in K$) and $p_{\\mathrm{rand}}$ is the\nprobability that $D$ outputs $1$ in the random world (uniform coins, oracle a uniformly random\nfunction $X \\to Y$).",
+   "declaration": "Cslib.Crypto.PRF.prfAdvantage",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 129,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/prf-rand-cpa-reduction.md",
+   "title": "The CPA reduction against a random function",
+   "statement": "Let $X$ be a finite nonempty set, $Y$ a\nfinite additive commutative group, $q$ a natural number and $A$ a CPA adversary with coins in a\nfinite nonempty set. Let $p$ be the probability that the CPA reduction built from $A$ (whose\nencryption oracle answers at most $q$ queries) outputs $1$, that is, that $A$ guesses the\nchallenge bit, when its oracle is a uniformly random function $X \\to Y$ and its coins are\nuniform. Then $|p - 1/2| \\le q / (2|X|)$.\n\nThe success probability is exactly $1/2$ unless the challenge randomness repeats the randomness\nof one of the at most $q$ encryption queries.",
+   "declaration": "Cslib.Crypto.PRF.prfRand_cpaReduction",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 478,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/prf-rand-mac-reduction-le.md",
+   "title": "Forging against a random function",
+   "statement": "Let $M$ and $T$ be finite sets with $T$ nonempty, and\nlet $A$ be a forger: an oracle algorithm with coins in a finite nonempty set that queries tags\nin $T$ of messages in $M$ and outputs a message together with a tag. When the tagging oracle is\na uniformly random function $M \\to T$ and the coins are uniform, the MAC reduction built from\n$A$ accepts (that is, $A$ outputs the correct tag of a message it never queried) with\nprobability at most $1/|T|$.",
+   "declaration": "Cslib.Crypto.PRF.prfRand_macReduction_le",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 236,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/prf-rand.md",
+   "title": "Random world of the PRF experiment",
+   "statement": "Let $X$, $Y$ and $S$ be finite sets with $Y$ and $S$\nnonempty, and let $D$ be a distinguisher: an oracle algorithm with coins in $S$ that queries a\nfunction $X \\to Y$ and outputs a bit. The random world is the distribution of the output of $D$\nwith coins $s$ and oracle $f$, where the pair $(f, s)$ is uniform on $(X \\to Y) \\times S$.",
+   "declaration": "Cslib.Crypto.PRF.prfRand",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 125,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/prf-real.md",
+   "title": "Real world of the PRF experiment",
+   "statement": "Let $K$, $X$, $Y$ and $S$ be finite sets with $K$, $Y$\nand $S$ nonempty, let $F : K \\to X \\to Y$ be a keyed function and let $D$ be a distinguisher: an\noracle algorithm with coins in $S$ that queries a function $X \\to Y$ and outputs a bit. The real\nworld is the distribution of the output of $D$ with coins $s$ and oracle $F(k, \\cdot)$, where the\npair $(k, s)$ is uniform on $K \\times S$.",
+   "declaration": "Cslib.Crypto.PRF.prfReal",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 121,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/run-enc-congr.md",
+   "title": "The encryption oracle depends only on the encryption randomness",
+   "statement": "Let $Y$ be an additive\ncommutative group, let $\\rho_0, \\dots, \\rho_{q-1} \\in X$ be encryption randomness and let\n$f, f' : X \\to Y$ satisfy $f(\\rho_j) = f'(\\rho_j)$ for every $j < q$. Then for every oracle\nalgorithm $c$ and every natural number $i$, running $c$ against the encryption oracle built from\n$f$, with query indices starting at $i$, gives the same result as running it against the one\nbuilt from $f'$. Here the encryption oracle built from $f$ answers a query $m$ with index $n < q$\nby $(\\rho_n, f(\\rho_n) + m)$, and the run fails at a query with index $n \\ge q$.",
+   "declaration": "Cslib.Crypto.PRF.runEnc_congr",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 386,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/run-enc.md",
+   "title": "Running an algorithm against the bounded encryption oracle",
+   "statement": "Let $X$ be a set, $Y$ an\nabelian group written additively, $f : X \\to Y$ a function, $q \\in \\mathbb{N}$ and\n$\\rho : \\{0, \\dots, q - 1\\} \\to X$ the encryption randomness of the queries. Run from query index\n$i \\in \\mathbb{N}$, an oracle algorithm with messages in $Y$ as queries, answers in $X \\times Y$\nand outputs in $\\beta$ either fails or yields its output together with the next query index: if\nit stops with output $a$, the result is $(a, i)$; if it queries a message $m$ and $i < q$, the\noracle answers $(\\rho(i), f(\\rho(i)) + m)$ and the run continues from index $i + 1$; if it\nqueries a message and $i \\ge q$, the run fails.",
+   "declaration": "Cslib.Crypto.PRF.runEnc",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 301,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/sim-enc.md",
+   "title": "Simulating the encryption oracle with a function oracle",
+   "statement": "Let $X$ be a set, $Y$ an abelian\ngroup written additively, $q \\in \\mathbb{N}$ and $\\rho : \\{0, \\dots, q - 1\\} \\to X$ the\nencryption randomness of the queries. Started at query index $i \\in \\mathbb{N}$, the simulation\nturns an oracle algorithm with messages in $Y$ as queries, answers in $X \\times Y$ and outputs in\n$\\beta$ into an oracle algorithm with queries in $X$ and answers in $Y$ that either fails or\noutputs the original output together with the next query index: if the original algorithm stops\nwith output $a$, the simulation stops with $(a, i)$; if it queries a message $m$ and $i < q$, the\nsimulation queries $\\rho(i)$ and, on answer $y$, continues by simulating the original algorithm\non the answer $(\\rho(i), y + m)$ from index $i + 1$; if it queries a message and $i \\ge q$, the\nsimulation stops with failure.",
+   "declaration": "Cslib.Crypto.PRF.simEnc",
+   "lean": {
+    "file": "CSLibExt/Crypto/SymmetricKey/PRF.lean",
+    "line": 335,
     "kind": "def",
     "sorry": false
    }
@@ -10821,7 +10821,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.Valid.access",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3460,
+    "line": 3476,
     "kind": "theorem",
     "sorry": false
    }
@@ -10833,7 +10833,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.access_forest",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3382,
+    "line": 3398,
     "kind": "theorem",
     "sorry": false
    }
@@ -10845,7 +10845,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.access_last",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3410,
+    "line": 3426,
     "kind": "theorem",
     "sorry": false
    }
@@ -10857,7 +10857,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.access",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3333,
+    "line": 3349,
     "kind": "def",
     "sorry": false
    }
@@ -10869,7 +10869,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.ParentChild.adjacent",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2536,
+    "line": 2552,
     "kind": "theorem",
     "sorry": false
    }
@@ -10881,7 +10881,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.adjacentB",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 717,
+    "line": 721,
     "kind": "def",
     "sorry": false
    }
@@ -10893,7 +10893,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.adjacent_cutEdge",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 4090,
+    "line": 4106,
     "kind": "theorem",
     "sorry": false
    }
@@ -10905,7 +10905,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.adjacent_graftAt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 1159,
+    "line": 1167,
     "kind": "theorem",
     "sorry": false
    }
@@ -10917,7 +10917,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.adjacent_pruneAt_of_mem_mem",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2242,
+    "line": 2254,
     "kind": "theorem",
     "sorry": false
    }
@@ -10929,7 +10929,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.adjacent_rerootAt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 1618,
+    "line": 1627,
     "kind": "theorem",
     "sorry": false
    }
@@ -10941,7 +10941,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.Adjacent",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 602,
+    "line": 606,
     "kind": "def",
     "sorry": false
    }
@@ -10953,7 +10953,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.connected_iff_tour",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3206,
+    "line": 3222,
     "kind": "theorem",
     "sorry": false
    }
@@ -10965,7 +10965,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.connected_link",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3649,
+    "line": 3665,
     "kind": "theorem",
     "sorry": false
    }
@@ -10977,7 +10977,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.connected_makeRoot",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3562,
+    "line": 3578,
     "kind": "theorem",
     "sorry": false
    }
@@ -10989,7 +10989,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.Connected",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3181,
+    "line": 3197,
     "kind": "def",
     "sorry": false
    }
@@ -11001,7 +11001,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.Valid.cut",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3883,
+    "line": 3899,
     "kind": "theorem",
     "sorry": false
    }
@@ -11013,7 +11013,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.Valid.cutEdge",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 4007,
+    "line": 4023,
     "kind": "theorem",
     "sorry": false
    }
@@ -11025,7 +11025,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.cutEdge_eq_cut_makeRoot_of_adjacent",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3987,
+    "line": 4003,
     "kind": "theorem",
     "sorry": false
    }
@@ -11037,7 +11037,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.cutEdge_eq_of_not_adjacent",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3996,
+    "line": 4012,
     "kind": "theorem",
     "sorry": false
    }
@@ -11049,7 +11049,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.cutEdge",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3964,
+    "line": 3980,
     "kind": "def",
     "sorry": false
    }
@@ -11061,7 +11061,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.cut",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3769,
+    "line": 3785,
     "kind": "def",
     "sorry": false
    }
@@ -11073,7 +11073,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.decomp_fst_eq_rootPath",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3076,
+    "line": 3092,
     "kind": "theorem",
     "sorry": false
    }
@@ -11085,7 +11085,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.decomp_fst_head?",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2752,
+    "line": 2768,
     "kind": "theorem",
     "sorry": false
    }
@@ -11097,7 +11097,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.decomp_isChain",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3012,
+    "line": 3028,
     "kind": "theorem",
     "sorry": false
    }
@@ -11109,7 +11109,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.decomp_perm",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2977,
+    "line": 2993,
     "kind": "theorem",
     "sorry": false
    }
@@ -11121,7 +11121,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.decomp",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2727,
+    "line": 2743,
     "kind": "def",
     "sorry": false
    }
@@ -11157,7 +11157,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.getLast?_rootPath",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2403,
+    "line": 2419,
     "kind": "theorem",
     "sorry": false
    }
@@ -11169,7 +11169,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.graftAt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 852,
+    "line": 856,
     "kind": "def",
     "sorry": false
    }
@@ -11181,7 +11181,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.head?_rootPath",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2416,
+    "line": 2432,
     "kind": "theorem",
     "sorry": false
    }
@@ -11193,7 +11193,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.isChain_adjacent_rootPath",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2471,
+    "line": 2487,
     "kind": "theorem",
     "sorry": false
    }
@@ -11205,7 +11205,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.isChain_of_mem_paths",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3315,
+    "line": 3331,
     "kind": "theorem",
     "sorry": false
    }
@@ -11217,7 +11217,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.isChain_of_mem_treePaths",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3063,
+    "line": 3079,
     "kind": "theorem",
     "sorry": false
    }
@@ -11229,7 +11229,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.isChain_parentChild_rootPath",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2564,
+    "line": 2580,
     "kind": "theorem",
     "sorry": false
    }
@@ -11241,7 +11241,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.Valid.link",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3674,
+    "line": 3690,
     "kind": "theorem",
     "sorry": false
    }
@@ -11253,7 +11253,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.link",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3619,
+    "line": 3635,
     "kind": "def",
     "sorry": false
    }
@@ -11265,7 +11265,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.Valid.makeRoot",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3581,
+    "line": 3597,
     "kind": "theorem",
     "sorry": false
    }
@@ -11277,7 +11277,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.makeRoot_root",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3549,
+    "line": 3565,
     "kind": "theorem",
     "sorry": false
    }
@@ -11289,7 +11289,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.makeRoot",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3528,
+    "line": 3544,
     "kind": "def",
     "sorry": false
    }
@@ -11301,7 +11301,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.mem_cut",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3836,
+    "line": 3852,
     "kind": "theorem",
     "sorry": false
    }
@@ -11313,7 +11313,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.ParentChild.mem_left",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2552,
+    "line": 2568,
     "kind": "theorem",
     "sorry": false
    }
@@ -11325,7 +11325,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.Adjacent.mem_left",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 642,
+    "line": 646,
     "kind": "theorem",
     "sorry": false
    }
@@ -11337,7 +11337,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.mem_paths_flatMap",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3286,
+    "line": 3302,
     "kind": "theorem",
     "sorry": false
    }
@@ -11349,7 +11349,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.mem_preferred_access_of_mem_pathEdges",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3374,
+    "line": 3390,
     "kind": "theorem",
     "sorry": false
    }
@@ -11361,7 +11361,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.mem_preferred_access",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3352,
+    "line": 3368,
     "kind": "theorem",
     "sorry": false
    }
@@ -11373,7 +11373,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.ParentChild.mem_right",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2558,
+    "line": 2574,
     "kind": "theorem",
     "sorry": false
    }
@@ -11385,7 +11385,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.Adjacent.mem_right",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 677,
+    "line": 681,
     "kind": "theorem",
     "sorry": false
    }
@@ -11397,7 +11397,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.mem_rootPath",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2425,
+    "line": 2441,
     "kind": "theorem",
     "sorry": false
    }
@@ -11409,7 +11409,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.mem_vertices_graftAt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 963,
+    "line": 971,
     "kind": "theorem",
     "sorry": false
    }
@@ -11421,7 +11421,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.mem_vertices_pruneAt_of_mem_not_mem",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 1944,
+    "line": 1956,
     "kind": "theorem",
     "sorry": false
    }
@@ -11433,7 +11433,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.mem_vertices_pruneAt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 1880,
+    "line": 1892,
     "kind": "theorem",
     "sorry": false
    }
@@ -11445,7 +11445,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.mem_vertices_rerootAt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 1602,
+    "line": 1611,
     "kind": "theorem",
     "sorry": false
    }
@@ -11457,7 +11457,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.Mem",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3176,
+    "line": 3192,
     "kind": "def",
     "sorry": false
    }
@@ -11469,7 +11469,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.nodup_of_mem_paths",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3307,
+    "line": 3323,
     "kind": "theorem",
     "sorry": false
    }
@@ -11481,7 +11481,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.nodup_paths_flatMap",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3297,
+    "line": 3313,
     "kind": "theorem",
     "sorry": false
    }
@@ -11493,7 +11493,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.nodup_rootPath",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2449,
+    "line": 2465,
     "kind": "theorem",
     "sorry": false
    }
@@ -11505,7 +11505,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.not_connected_cutEdge",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 4042,
+    "line": 4058,
     "kind": "theorem",
     "sorry": false
    }
@@ -11517,7 +11517,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.not_connected_cut",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3802,
+    "line": 3818,
     "kind": "theorem",
     "sorry": false
    }
@@ -11541,7 +11541,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.pairwise_disjoint_paths",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3302,
+    "line": 3318,
     "kind": "theorem",
     "sorry": false
    }
@@ -11553,7 +11553,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.ParentChild",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2499,
+    "line": 2515,
     "kind": "def",
     "sorry": false
    }
@@ -11565,7 +11565,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.pathEdges",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2592,
+    "line": 2608,
     "kind": "def",
     "sorry": false
    }
@@ -11577,7 +11577,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.paths",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3265,
+    "line": 3281,
     "kind": "def",
     "sorry": false
    }
@@ -11601,7 +11601,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.perm_treePaths_flatMap",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2997,
+    "line": 3013,
     "kind": "theorem",
     "sorry": false
    }
@@ -11613,7 +11613,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.perm_vertices_graftAt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 1303,
+    "line": 1312,
     "kind": "theorem",
     "sorry": false
    }
@@ -11625,7 +11625,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.perm_vertices_pruneAt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2150,
+    "line": 2162,
     "kind": "theorem",
     "sorry": false
    }
@@ -11637,7 +11637,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.perm_vertices_rerootAt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 1758,
+    "line": 1767,
     "kind": "theorem",
     "sorry": false
    }
@@ -11649,7 +11649,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.pruneAt_eq_self_of_not_mem",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 1811,
+    "line": 1823,
     "kind": "theorem",
     "sorry": false
    }
@@ -11661,7 +11661,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.pruneAt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 1800,
+    "line": 1809,
     "kind": "def",
     "sorry": false
    }
@@ -11685,7 +11685,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.rerootAt_eq_none_of_not_mem",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 1439,
+    "line": 1448,
     "kind": "theorem",
     "sorry": false
    }
@@ -11697,7 +11697,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.rerootAt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 1346,
+    "line": 1355,
     "kind": "def",
     "sorry": false
    }
@@ -11709,7 +11709,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.root_graftAt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 1006,
+    "line": 1014,
     "kind": "theorem",
     "sorry": false
    }
@@ -11721,7 +11721,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.rootPath",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2312,
+    "line": 2324,
     "kind": "def",
     "sorry": false
    }
@@ -11733,7 +11733,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.root_pruneAt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2186,
+    "line": 2198,
     "kind": "theorem",
     "sorry": false
    }
@@ -11757,7 +11757,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3165,
+    "line": 3181,
     "kind": "structure",
     "sorry": false
    }
@@ -11769,7 +11769,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.Adjacent.symm",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 661,
+    "line": 665,
     "kind": "theorem",
     "sorry": false
    }
@@ -11781,7 +11781,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.treePaths",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 2748,
+    "line": 2764,
     "kind": "def",
     "sorry": false
    }
@@ -11793,7 +11793,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.valid_of_preferred_nil",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3227,
+    "line": 3243,
     "kind": "theorem",
     "sorry": false
    }
@@ -11805,7 +11805,7 @@
    "declaration": "Cslib.Algorithms.Lean.LinkCutTree.State.Valid",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/LinkCutTree.lean",
-    "line": 3217,
+    "line": 3233,
     "kind": "def",
     "sorry": false
    }
@@ -21693,7 +21693,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.augmentHead",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 261,
+    "line": 264,
     "kind": "def",
     "sorry": false
    }
@@ -21705,7 +21705,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.augmentOne",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 212,
+    "line": 215,
     "kind": "def",
     "sorry": false
    }
@@ -21717,7 +21717,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.augmented_singleton",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 285,
+    "line": 288,
     "kind": "theorem",
     "sorry": false
    }
@@ -21729,7 +21729,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.augmented",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 269,
+    "line": 272,
     "kind": "def",
     "sorry": false
    }
@@ -21741,7 +21741,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.bridgePtr_le_length",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 365,
+    "line": 368,
     "kind": "theorem",
     "sorry": false
    }
@@ -21753,7 +21753,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.bridgePtr",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 361,
+    "line": 364,
     "kind": "def",
     "sorry": false
    }
@@ -21765,7 +21765,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.bridges",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 370,
+    "line": 373,
     "kind": "def",
     "sorry": false
    }
@@ -21777,7 +21777,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.countLT_eq_lowerBound",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 199,
+    "line": 202,
     "kind": "theorem",
     "sorry": false
    }
@@ -21789,7 +21789,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.countLT",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 194,
+    "line": 197,
     "kind": "def",
     "sorry": false
    }
@@ -21801,7 +21801,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.getElem?_searchAll",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 415,
+    "line": 418,
     "kind": "theorem",
     "sorry": false
    }
@@ -21813,7 +21813,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.le_length_of_mem_bridges",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 380,
+    "line": 383,
     "kind": "theorem",
     "sorry": false
    }
@@ -21825,7 +21825,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.length_augmentOne_le",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 226,
+    "line": 229,
     "kind": "theorem",
     "sorry": false
    }
@@ -21837,7 +21837,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.length_augmentOne",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 221,
+    "line": 224,
     "kind": "theorem",
     "sorry": false
    }
@@ -21849,7 +21849,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.length_augmented",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 277,
+    "line": 280,
     "kind": "theorem",
     "sorry": false
    }
@@ -21861,7 +21861,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.length_bridges",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 375,
+    "line": 378,
     "kind": "theorem",
     "sorry": false
    }
@@ -21873,7 +21873,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.length_mem_augmented_le",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 320,
+    "line": 323,
     "kind": "theorem",
     "sorry": false
    }
@@ -21885,7 +21885,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.length_sample_le_length",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 122,
+    "line": 125,
     "kind": "theorem",
     "sorry": false
    }
@@ -21897,7 +21897,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.length_sample_le",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 116,
+    "line": 119,
     "kind": "theorem",
     "sorry": false
    }
@@ -21909,7 +21909,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.length_searchAll",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 405,
+    "line": 408,
     "kind": "theorem",
     "sorry": false
    }
@@ -21921,7 +21921,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.length_searchAugmented",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 432,
+    "line": 435,
     "kind": "theorem",
     "sorry": false
    }
@@ -21933,7 +21933,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.length_sortedMerge",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 146,
+    "line": 149,
     "kind": "theorem",
     "sorry": false
    }
@@ -21945,7 +21945,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.lowerBound_augmentOne_le",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 254,
+    "line": 257,
     "kind": "theorem",
     "sorry": false
    }
@@ -21957,7 +21957,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.lowerBound_augmentOne",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 248,
+    "line": 251,
     "kind": "theorem",
     "sorry": false
    }
@@ -21969,7 +21969,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.lowerBound_le_length",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 177,
+    "line": 180,
     "kind": "theorem",
     "sorry": false
    }
@@ -21981,7 +21981,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.lowerBound_sample_le",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 189,
+    "line": 192,
     "kind": "theorem",
     "sorry": false
    }
@@ -21993,7 +21993,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.lowerBound_sortedMerge",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 182,
+    "line": 185,
     "kind": "theorem",
     "sorry": false
    }
@@ -22005,7 +22005,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.lowerBound",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 173,
+    "line": 176,
     "kind": "def",
     "sorry": false
    }
@@ -22017,7 +22017,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.mem_augmentOne_iff",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 233,
+    "line": 236,
     "kind": "theorem",
     "sorry": false
    }
@@ -22029,7 +22029,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.mem_augmentOne_imp",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 238,
+    "line": 241,
     "kind": "theorem",
     "sorry": false
    }
@@ -22041,7 +22041,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.mem_of_mem_sample",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 96,
+    "line": 99,
     "kind": "theorem",
     "sorry": false
    }
@@ -22053,7 +22053,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.mem_sortedMerge_iff",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 164,
+    "line": 167,
     "kind": "theorem",
     "sorry": false
    }
@@ -22065,7 +22065,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.pairwise_augmentOne",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 216,
+    "line": 219,
     "kind": "theorem",
     "sorry": false
    }
@@ -22077,7 +22077,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.pairwise_augmented",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 289,
+    "line": 292,
     "kind": "theorem",
     "sorry": false
    }
@@ -22089,7 +22089,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.pairwise_sample",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 129,
+    "line": 132,
     "kind": "theorem",
     "sorry": false
    }
@@ -22101,7 +22101,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.pairwise_sortedMerge",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 151,
+    "line": 154,
     "kind": "theorem",
     "sorry": false
    }
@@ -22113,7 +22113,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.perm_sortedMerge",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 141,
+    "line": 144,
     "kind": "theorem",
     "sorry": false
    }
@@ -22125,7 +22125,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.sampleAux_sublist",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 85,
+    "line": 88,
     "kind": "theorem",
     "sorry": false
    }
@@ -22137,7 +22137,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.sampleAux",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 75,
+    "line": 78,
     "kind": "def",
     "sorry": false
    }
@@ -22149,7 +22149,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.sample_sublist",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 92,
+    "line": 95,
     "kind": "theorem",
     "sorry": false
    }
@@ -22161,7 +22161,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.sample",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 81,
+    "line": 84,
     "kind": "def",
     "sorry": false
    }
@@ -22173,7 +22173,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.searchAll_cons",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 399,
+    "line": 402,
     "kind": "theorem",
     "sorry": false
    }
@@ -22185,7 +22185,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.searchAll_eq_map_lowerBound",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 410,
+    "line": 413,
     "kind": "theorem",
     "sorry": false
    }
@@ -22197,7 +22197,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.searchAll_le_of_mem",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 420,
+    "line": 423,
     "kind": "theorem",
     "sorry": false
    }
@@ -22209,7 +22209,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.searchAll_nil",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 394,
+    "line": 397,
     "kind": "theorem",
     "sorry": false
    }
@@ -22221,7 +22221,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.searchAll",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 389,
+    "line": 392,
     "kind": "def",
     "sorry": false
    }
@@ -22233,7 +22233,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.searchAugmented_eq_map_lowerBound",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 437,
+    "line": 440,
     "kind": "theorem",
     "sorry": false
    }
@@ -22245,7 +22245,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.searchAugmented",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 428,
+    "line": 431,
     "kind": "def",
     "sorry": false
    }
@@ -22257,7 +22257,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.sortedMerge",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 137,
+    "line": 140,
     "kind": "def",
     "sorry": false
    }
@@ -22269,7 +22269,7 @@
    "declaration": "Cslib.Algorithms.Lean.FractionalCascading.two_mul_length_sample_le",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/DataStructures/FractionalCascading.lean",
-    "line": 109,
+    "line": 112,
     "kind": "theorem",
     "sorry": false
    }
@@ -50708,8 +50708,8 @@
    "statement": "`u` and `w` are adjacent (joined by an edge in either direction).",
    "declaration": "Cslib.MachineLearning.GraphicalModels.BayesianDirichlet.Adjacent",
    "lean": {
-    "file": "WantedExt/ComputerScience/BayesianNetworkEquivalenceWanted.lean",
-    "line": 46,
+    "file": "CSLibExt/MachineLearning/GraphicalModels/MarkovEquivalence.lean",
+    "line": 61,
     "kind": "def",
     "sorry": false
    }
@@ -50840,8 +50840,8 @@
    "statement": "The structure has no directed cycle.",
    "declaration": "Cslib.MachineLearning.GraphicalModels.BayesianDirichlet.IsAcyclic",
    "lean": {
-    "file": "WantedExt/ComputerScience/BayesianNetworkEquivalenceWanted.lean",
-    "line": 42,
+    "file": "CSLibExt/MachineLearning/GraphicalModels/MarkovEquivalence.lean",
+    "line": 57,
     "kind": "def",
     "sorry": false
    }
@@ -50852,8 +50852,8 @@
    "statement": "`u → w ← z` is a v-structure: two non-adjacent distinct parents of a common child.",
    "declaration": "Cslib.MachineLearning.GraphicalModels.BayesianDirichlet.IsVStructure",
    "lean": {
-    "file": "WantedExt/ComputerScience/BayesianNetworkEquivalenceWanted.lean",
-    "line": 49,
+    "file": "CSLibExt/MachineLearning/GraphicalModels/MarkovEquivalence.lean",
+    "line": 64,
     "kind": "def",
     "sorry": false
    }
@@ -50885,12 +50885,12 @@
   {
    "path": "ComputerScience/machine-learning/probabilistic-graphical-models/markov-equivalence-and-bayesian-network-scores/refl-trans-gen-covered-reversal-of-marko.md",
    "title": "Chickering's transformational characterization",
-   "statement": "**Chickering's transformational characterization** (1995): two acyclic structures with the\nsame skeleton and the same v-structures (Markov equivalent by Verma and Pearl) are connected by\na sequence of covered-edge reversals.",
+   "statement": "**Chickering's transformational characterization** (1995): two acyclic structures on a finite\nset of vertices with the same skeleton and the same v-structures (Markov equivalent by Verma\nand Pearl) are connected by a sequence of covered-edge reversals.",
    "declaration": "Cslib.MachineLearning.GraphicalModels.BayesianDirichlet.reflTransGen_coveredReversal_of_markovEquivalent",
    "lean": {
-    "file": "WantedExt/ComputerScience/BayesianNetworkEquivalenceWanted.lean",
-    "line": 55,
-    "kind": "theorem_wanted",
+    "file": "CSLibExt/MachineLearning/GraphicalModels/MarkovEquivalence.lean",
+    "line": 579,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -54729,7 +54729,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.adversaryOpt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 121,
+    "line": 127,
     "kind": "def",
     "sorry": false
    }
@@ -54741,7 +54741,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.adversary",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 112,
+    "line": 118,
     "kind": "def",
     "sorry": false
    }
@@ -54789,7 +54789,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.exists_isMatching_matched_le",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 263,
+    "line": 269,
     "kind": "theorem",
     "sorry": false
    }
@@ -54801,7 +54801,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.exists_isMatching_of_isPerfect",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 87,
+    "line": 93,
     "kind": "theorem",
     "sorry": false
    }
@@ -54813,7 +54813,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.exists_perfect_matched_le",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 252,
+    "line": 258,
     "kind": "theorem",
     "sorry": false
    }
@@ -54825,7 +54825,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.GadgetsDisjoint",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 128,
+    "line": 134,
     "kind": "def",
     "sorry": false
    }
@@ -54837,7 +54837,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.gadgets",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 234,
+    "line": 240,
     "kind": "def",
     "sorry": false
    }
@@ -54921,7 +54921,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.isPerfect_adversaryOpt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 202,
+    "line": 208,
     "kind": "theorem",
     "sorry": false
    }
@@ -54933,7 +54933,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.IsPerfect",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 77,
+    "line": 83,
     "kind": "def",
     "sorry": false
    }
@@ -54945,7 +54945,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.matched_adversary_le",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 140,
+    "line": 146,
     "kind": "theorem",
     "sorry": false
    }
@@ -54957,7 +54957,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.matched",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 66,
+    "line": 72,
     "kind": "def",
     "sorry": false
    }
@@ -54969,7 +54969,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.not_competitive_of_lt",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 274,
+    "line": 280,
     "kind": "theorem",
     "sorry": false
    }
@@ -54981,7 +54981,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.not_competitive",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 291,
+    "line": 297,
     "kind": "theorem",
     "sorry": false
    }
@@ -54993,7 +54993,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.OnlineMatcher",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 57,
+    "line": 63,
     "kind": "structure",
     "sorry": false
    }
@@ -55041,7 +55041,7 @@
    "declaration": "Cslib.Algorithms.Lean.Online.MatchingLowerBound.toAdj",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Online/MatchingLowerBound.lean",
-    "line": 82,
+    "line": 88,
     "kind": "def",
     "sorry": false
    }
@@ -70785,7 +70785,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Ctx.comp_assoc",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 140,
+    "line": 141,
     "kind": "theorem",
     "sorry": false
    }
@@ -70797,7 +70797,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Ctx.comp",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 116,
+    "line": 117,
     "kind": "def",
     "sorry": false
    }
@@ -70809,7 +70809,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Tm.CtxEquiv.congr",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 282,
+    "line": 294,
     "kind": "theorem",
     "sorry": false
    }
@@ -70833,7 +70833,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Tm.ctxApprox_of_denote_le",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 259,
+    "line": 271,
     "kind": "theorem",
     "sorry": false
    }
@@ -70845,7 +70845,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Tm.CtxApprox",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 197,
+    "line": 209,
     "kind": "def",
     "sorry": false
    }
@@ -70857,7 +70857,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Tm.ctxEquiv_iff_ctxApprox",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 301,
+    "line": 313,
     "kind": "theorem",
     "sorry": false
    }
@@ -70869,7 +70869,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Tm.ctxEquiv_of_denote_eq",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 190,
+    "line": 202,
     "kind": "theorem",
     "sorry": false
    }
@@ -70881,7 +70881,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Tm.CtxEquiv",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 150,
+    "line": 162,
     "kind": "def",
     "sorry": false
    }
@@ -70893,7 +70893,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Ctx",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 50,
+    "line": 51,
     "kind": "inductive",
     "sorry": false
    }
@@ -70953,7 +70953,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Tm.denote_plug_congr",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 154,
+    "line": 166,
     "kind": "theorem",
     "sorry": false
    }
@@ -70965,7 +70965,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Tm.denote_plug_mono",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 201,
+    "line": 213,
     "kind": "theorem",
     "sorry": false
    }
@@ -71325,7 +71325,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Ctx.plug_comp",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 135,
+    "line": 136,
     "kind": "theorem",
     "sorry": false
    }
@@ -71337,7 +71337,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Ctx.plug",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 68,
+    "line": 69,
     "kind": "def",
     "sorry": false
    }
@@ -71349,7 +71349,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Tm.CtxApprox.refl",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 288,
+    "line": 300,
     "kind": "theorem",
     "sorry": false
    }
@@ -71361,7 +71361,7 @@
    "declaration": "Cslib.Languages.LambdaCalculus.PCF.Tm.CtxEquiv.refl",
    "lean": {
     "file": "CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean",
-    "line": 269,
+    "line": 281,
     "kind": "theorem",
     "sorry": false
    }
@@ -71985,7 +71985,7 @@
    "declaration": "Cslib.Algorithms.Lean.TimeM.randomlyPermuteDistribution_apply",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean",
-    "line": 247,
+    "line": 248,
     "kind": "theorem",
     "sorry": false
    }
@@ -71997,7 +71997,7 @@
    "declaration": "Cslib.Algorithms.Lean.TimeM.randomlyPermuteDistribution_eq_map_uniform",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean",
-    "line": 258,
+    "line": 259,
     "kind": "theorem",
     "sorry": false
    }
@@ -72009,7 +72009,7 @@
    "declaration": "Cslib.Algorithms.Lean.TimeM.randomlyPermuteDistribution",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean",
-    "line": 232,
+    "line": 233,
     "kind": "def",
     "sorry": false
    }
@@ -72045,7 +72045,7 @@
    "declaration": "Cslib.Algorithms.Lean.TimeM.randomlyPermute_prefix_probability",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean",
-    "line": 271,
+    "line": 287,
     "kind": "theorem",
     "sorry": false
    }

@@ -8,13 +8,13 @@ proof: formalized
 
 # 92.15 Tensor products and the cotangent complex
 
-Section 92.15 of the Stacks Project, [Tag 09D8](https://stacks.math.columbia.edu/tag/09D8). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 92.15 of the Stacks Project, [Tag 09D8](https://stacks.math.columbia.edu/tag/09D8). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09D9, an equation
 
 [Tag 09D9](https://stacks.math.columbia.edu/tag/09D9) in the Stacks Project.
 
-**`CommAlgCat.exists_tensorProduct_nine_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/TensorProduct.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/TensorProduct.lean#L134).
+**`CommAlgCat.exists_tensorProduct_nine_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/TensorProduct.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/TensorProduct.lean#L134).
 
 > **Stacks 09D9**, Equation 92.15.0.1. Let `A` and `B` be algebras over a ring `R`. Given the
 > fundamental triangle `L_{A/R} ⊗^L_A (A ⊗_R B) ⟶ L_{A ⊗_R B/R} ⟶ L_{A ⊗_R B/A}` of
@@ -58,7 +58,7 @@ theorem exists_tensorProduct_nine_diagram
       q ≫ a = p ≫ b ∧ b ≫ e₁ = d₁ ∧ a ≫ e₂ = d₂
 ```
 
-**`CommAlgCat.exists_canonical_tensorProduct_nine_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/TensorProductNineDiagramCanonical.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/TensorProductNineDiagramCanonical.lean#L206). The attribute's comment: “the diagram 92.15.0.1 on the canonical maps, with nothing assumed: the middle row and column are the fundamental triangles of Proposition 08QX for R → A → A ⊗\_R B and R → B → A ⊗\_R B, with the functoriality maps of Tag 08PN and their own connecting maps; the top-row and right-column first maps are the 08PN maps of the squares (R → B, A → A ⊗\_R B) and (R → A, B → A ⊗\_R B); the left and lower squares commute; and an object E makes the top row and the right column distinguished, with the upper right square commuting”.
+**`CommAlgCat.exists_canonical_tensorProduct_nine_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/TensorProductNineDiagramCanonical.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/TensorProductNineDiagramCanonical.lean#L206). The attribute's comment: “the diagram 92.15.0.1 on the canonical maps, with nothing assumed: the middle row and column are the fundamental triangles of Proposition 08QX for R → A → A ⊗\_R B and R → B → A ⊗\_R B, with the functoriality maps of Tag 08PN and their own connecting maps; the top-row and right-column first maps are the 08PN maps of the squares (R → B, A → A ⊗\_R B) and (R → A, B → A ⊗\_R B); the left and lower squares commute; and an object E makes the top row and the right column distinguished, with the upper right square commuting”.
 
 > **Stacks 09D9**, Equation 92.15.0.1, on the canonical maps. Let `A` and `B` be algebras over
 > a ring `R`. In `D(A ⊗_R B)` consider
@@ -107,7 +107,7 @@ theorem exists_canonical_tensorProduct_nine_diagram :
 
 [Tag 09DA](https://stacks.math.columbia.edu/tag/09DA) in the Stacks Project.
 
-**`CommAlgCat.cotangentComplex_tensorProduct_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/TensorProductTorIndependent.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/TensorProductTorIndependent.lean#L544).
+**`CommAlgCat.cotangentComplex_tensorProduct_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/TensorProductTorIndependent.lean, line 544](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/TensorProductTorIndependent.lean#L544).
 
 > If `A` and `B` are Tor independent `R`-algebras, then the object `E` of Equation 92.15.0.1 —
 > the cone of the map of complexes
@@ -130,7 +130,7 @@ theorem cotangentComplex_tensorProduct_of_torIndependent
 
 [Tag 09DB](https://stacks.math.columbia.edu/tag/09DB) in the Stacks Project.
 
-**`CommAlgCat.isZero_homology_of_tensorProduct_nine_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/TensorProductCohomology.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/TensorProductCohomology.lean#L182). The attribute's comment: “the vanishing in degrees i ≥ 1 only, which is the exact ceiling of what the nine diagram of Tag 09D9 determines in this library. The source asserts it for i ≥ -1 and identifies H^\{-2}(E) with Tor\_1^R(A, B); neither is a consequence of the 09D9 conclusion as formalized here, because exists\_tensorProduct\_nine\_diagram leaves the morphisms of the two fundamental triangles arbitrary -- its host file sits upstream of the proof of Tag 08QX and so cannot name the display's own map L\_\{A ⊗ B/R} ⟶ L\_\{A ⊗ B/A} -- and two distinguished triangles on the given objects do not pin those maps down to anything that fixes their homology. At i = 0 the long exact sequence leaves coker H^0(v ≫ p), which the abstract data does not force to vanish”.
+**`CommAlgCat.isZero_homology_of_tensorProduct_nine_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/TensorProductCohomology.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/TensorProductCohomology.lean#L183). The attribute's comment: “the vanishing in degrees i ≥ 1 only, which is the exact ceiling of what the nine diagram of Tag 09D9 determines in this library. The source asserts it for i ≥ -1 and identifies H^\{-2}(E) with Tor\_1^R(A, B); neither is a consequence of the 09D9 conclusion as formalized here, because exists\_tensorProduct\_nine\_diagram leaves the morphisms of the two fundamental triangles arbitrary -- its host file sits upstream of the proof of Tag 08QX and so cannot name the display's own map L\_\{A ⊗ B/R} ⟶ L\_\{A ⊗ B/A} -- and two distinguished triangles on the given objects do not pin those maps down to anything that fixes their homology. At i = 0 the long exact sequence leaves coker H^0(v ≫ p), which the abstract data does not force to vanish”.
 
 > The cohomology of the object `E` of the nine diagram of Tag 09D9 vanishes in degrees `≥ 1`.
 >
@@ -148,7 +148,7 @@ theorem isZero_homology_of_tensorProduct_nine_diagram
     IsZero ((DerivedCategory.homologyFunctor (ModuleCat.{max u v} (A ⊗[R] B)) i).obj E)
 ```
 
-**`CommAlgCat.tensorProduct_rightColumn_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/TensorProductCohomologyCanonical.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/TensorProductCohomologyCanonical.lean#L145). The attribute's comment: “for every object E in a distinguished triangle on the canonical map L\_\{B/R} ⊗^L\_B (A ⊗\_R B) → L\_\{A ⊗\_R B/A} of the right column of Equation 92.15.0.1, which is how the source's proof describes E: H^i(E) = 0 for i ≥ -1 and H^\{-2}(E) ≅ Tor\_1^R(A, B) as A ⊗\_R B-modules, Tor\_1 with its canonical module structure”.
+**`CommAlgCat.tensorProduct_rightColumn_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/TensorProductCohomologyCanonical.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/TensorProductCohomologyCanonical.lean#L145). The attribute's comment: “for every object E in a distinguished triangle on the canonical map L\_\{B/R} ⊗^L\_B (A ⊗\_R B) → L\_\{A ⊗\_R B/A} of the right column of Equation 92.15.0.1, which is how the source's proof describes E: H^i(E) = 0 for i ≥ -1 and H^\{-2}(E) ≅ Tor\_1^R(A, B) as A ⊗\_R B-modules, Tor\_1 with its canonical module structure”.
 
 > **Stacks 09DB**, for every cone `E` of the canonical map
 > `L_{B/R} ⊗^L_B (A ⊗_R B) ⟶ L_{A ⊗_R B/A}` of the right column of Equation 92.15.0.1:
@@ -163,7 +163,7 @@ theorem tensorProduct_rightColumn_homology
         torOneTensorProductModule R A B)
 ```
 
-**`CommAlgCat.canonicalTensorProductNineDiagram_upperRight_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/TensorProductCohomologyCanonical.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/TensorProductCohomologyCanonical.lean#L190). The attribute's comment: “the object E of the nine diagram of Tag 09D9, CommAlgCat.canonicalTensorProductNineDiagram: H^i(E) = 0 for i ≥ -1 and H^\{-2}(E) ≅ Tor\_1^R(A, B) as A ⊗\_R B-modules, Tor\_1 with its canonical module structure (CommAlgCat.torOneTensorProductModule); the isomorphism itself is CommAlgCat.homologyNegTwoCanonicalUpperRightIsoTorOne”.
+**`CommAlgCat.canonicalTensorProductNineDiagram_upperRight_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/TensorProductCohomologyCanonical.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/TensorProductCohomologyCanonical.lean#L190). The attribute's comment: “the object E of the nine diagram of Tag 09D9, CommAlgCat.canonicalTensorProductNineDiagram: H^i(E) = 0 for i ≥ -1 and H^\{-2}(E) ≅ Tor\_1^R(A, B) as A ⊗\_R B-modules, Tor\_1 with its canonical module structure (CommAlgCat.torOneTensorProductModule); the isomorphism itself is CommAlgCat.homologyNegTwoCanonicalUpperRightIsoTorOne”.
 
 > **Stacks 09DB.** Let `R` be a ring and let `A`, `B` be `R`-algebras. The object `E` of
 > Equation 92.15.0.1 satisfies `H^i(E) = 0` for `i ≥ -1` and `H^{-2}(E) = Tor_1^R(A, B)`, the
@@ -186,4 +186,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 92.15, Tag 09D8](https://stacks.math.columbia.edu/tag/09D8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

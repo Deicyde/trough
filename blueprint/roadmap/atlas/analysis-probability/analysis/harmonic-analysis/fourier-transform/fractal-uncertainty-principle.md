@@ -7,7 +7,7 @@ statement: formalized
 
 # Fractal uncertainty principle
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fractal-uncertainty-principle/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fractal-uncertainty-principle/index.html).
 
 ## Porosity on balls
 
@@ -17,7 +17,7 @@ $\alpha_0$ to $\alpha_1$ if for every $y \in \mathbb{R}^d$ and every $R$ with
 $\alpha_0 < R < \alpha_1$, the closed ball of radius $R/2$ about $y$ contains a point $x$ such that
 the closed ball of radius $\nu R$ about $x$ is disjoint from $X$.
 
-Formalized by `MathlibExt.Analysis.FractalUncertaintyWanted.FractalUncertainty.PorousOnBalls`, a definition declared in [WantedExt/Analysis/FractalUncertaintyWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FractalUncertaintyWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fractal-uncertainty-principle/index.html#porous-on-balls).
+Formalized by `MathlibExt.Analysis.FractalUncertaintyWanted.FractalUncertainty.PorousOnBalls`, a definition declared in [WantedExt/Analysis/FractalUncertaintyWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FractalUncertaintyWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fractal-uncertainty-principle/index.html#porous-on-balls).
 
 ## Porosity on lines
 
@@ -27,7 +27,7 @@ $\alpha_0$ to $\alpha_1$ if for every $R$ with $\alpha_0 < R < \alpha_1$ and all
 $y_1, y_2 \in \mathbb{R}^d$ at distance $R$, the closed segment from $y_1$ to $y_2$ contains a point
 $x$ such that the closed ball of radius $\nu R$ about $x$ is disjoint from $X$.
 
-Formalized by `MathlibExt.Analysis.FractalUncertaintyWanted.FractalUncertainty.PorousOnLines`, a definition declared in [WantedExt/Analysis/FractalUncertaintyWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FractalUncertaintyWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fractal-uncertainty-principle/index.html#porous-on-lines).
+Formalized by `MathlibExt.Analysis.FractalUncertaintyWanted.FractalUncertainty.PorousOnLines`, a definition declared in [WantedExt/Analysis/FractalUncertaintyWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FractalUncertaintyWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fractal-uncertainty-principle/index.html#porous-on-lines).
 
 ## Closed cubes in Euclidean space
 
@@ -35,7 +35,7 @@ Let $d$ be a natural number. For real numbers $a$ and $b$,
 the cube $[a,b]^d$ is the set of points $x$ of the Euclidean space $\mathbb{R}^d$ with
 $a \le x_i \le b$ for every coordinate $i$.
 
-Formalized by `MathlibExt.Analysis.FractalUncertaintyWanted.FractalUncertainty.cube`, an abbreviation declared in [WantedExt/Analysis/FractalUncertaintyWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FractalUncertaintyWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fractal-uncertainty-principle/index.html#cube).
+Formalized by `MathlibExt.Analysis.FractalUncertaintyWanted.FractalUncertainty.cube`, an abbreviation declared in [WantedExt/Analysis/FractalUncertaintyWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FractalUncertaintyWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fractal-uncertainty-principle/index.html#cube).
 
 ## Cohen's fractal uncertainty principle for line-porous sets
 
@@ -58,7 +58,7 @@ We require $X$ and $Y$ to be measurable to make the statement more natural.
 
 - A. Cohen, `Fractal uncertainty in higher dimensions`, Annals of Math, 202 (1) 2025. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_fractal_uncertainty` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.FractalUncertaintyWanted.FractalUncertainty.theorem_1_1` is written with `theorem_wanted` in [WantedExt/Analysis/FractalUncertaintyWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FractalUncertaintyWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fractal-uncertainty-principle/index.html#theorem-1-1).
+Stated but not proved: `MathlibExt.Analysis.FractalUncertaintyWanted.FractalUncertainty.theorem_1_1` is written with `theorem_wanted` in [WantedExt/Analysis/FractalUncertaintyWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FractalUncertaintyWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fractal-uncertainty-principle/index.html#theorem-1-1).
 
 ## Depends on
 
@@ -67,4 +67,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fractal uncertainty principle](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fractal-uncertainty-principle/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/harmonic-analysis/fourier-transform/fractal-uncertainty-principle)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/harmonic-analysis/fourier-transform/fractal-uncertainty-principle)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Van Schooten's theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/van-schooten-s-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/van-schooten-s-theorem/index.html).
 
 ## Van Schooten's theorem
 
@@ -19,7 +19,7 @@ $PA + PB = PC$.
 
 No hypothesis that $P$ differs from $A$, $B$ or $C$ is needed.
 
-Formalized by `MetaMathlibExt.vanSchooten_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/VanSchooten.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/VanSchooten.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/van-schooten-s-theorem/index.html#van-schooten-general).
+Formalized by `MetaMathlibExt.vanSchooten_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/VanSchooten.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/VanSchooten.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/van-schooten-s-theorem/index.html#van-schooten-general).
 
 ## Van Schooten's theorem with distinctness hypotheses
 
@@ -35,7 +35,7 @@ condition is expressed by $CP > AP$ and $CP > BP$.
 
 - https://en.wikipedia.org/wiki/Van_Schooten%27s_theorem. It follows from `vanSchooten_general`; the hypotheses `P ≠ A`, `P ≠ B` and `P ≠ C` are unused and keep the source's shape.
 
-Formalized by `MetaMathlibExt.vanSchooten`, a theorem declared in [MathlibExt/Geometry/Euclidean/VanSchooten.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/VanSchooten.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/van-schooten-s-theorem/index.html#van-schooten).
+Formalized by `MetaMathlibExt.vanSchooten`, a theorem declared in [MathlibExt/Geometry/Euclidean/VanSchooten.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/VanSchooten.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/van-schooten-s-theorem/index.html#van-schooten).
 
 ## Depends on
 
@@ -44,4 +44,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Van Schooten's theorem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/van-schooten-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/van-schooten-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/van-schooten-s-theorem)

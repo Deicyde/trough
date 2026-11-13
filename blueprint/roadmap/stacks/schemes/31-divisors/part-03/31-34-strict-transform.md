@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.34 Strict transform
 
-Section 31.34 of the Stacks Project, [Tag 080C](https://stacks.math.columbia.edu/tag/080C). 7 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.34 of the Stacks Project, [Tag 080C](https://stacks.math.columbia.edu/tag/080C). 7 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 080D, a definition
 
 [Tag 080D](https://stacks.math.columbia.edu/tag/080D) in the Stacks Project.
 
-**`Stacks.Blowup.strictTransformSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransform.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransform.lean#L164). The attribute's comment: “strict transform of a module”.
+**`Stacks.Blowup.strictTransformSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransform.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransform.lean#L164). The attribute's comment: “strict transform of a module”.
 
 > The strict transform of an `𝒪_X`-module `ℱ` along the blowup of the base in `ℐ`: the
 > quotient of the pullback of `ℱ` to `X ×_S S'` by the submodule of sections supported on the
@@ -24,7 +24,7 @@ Section 31.34 of the Stacks Project, [Tag 080C](https://stacks.math.columbia.edu
 abbrev strictTransformSheaf (ℱ : X.Modules) : (blowUpPullback f ℐ).Modules
 ```
 
-**`Stacks.Blowup.strictTransformIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransform.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransform.lean#L172). The attribute's comment: “ideal of the strict transform of a scheme”.
+**`Stacks.Blowup.strictTransformIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransform.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransform.lean#L172). The attribute's comment: “ideal of the strict transform of a scheme”.
 
 > The quasi-coherent ideal of sections of `𝒪_{X ×_S S'}` supported on the inverse image of
 > the exceptional divisor, assembled from its modules of sections over the affine opens of
@@ -34,7 +34,7 @@ abbrev strictTransformSheaf (ℱ : X.Modules) : (blowUpPullback f ℐ).Modules
 def strictTransformIdeal : (blowUpPullback f ℐ).IdealSheafData
 ```
 
-**`Stacks.Blowup.strictTransform`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransform.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransform.lean#L210). The attribute's comment: “strict transform of a scheme”.
+**`Stacks.Blowup.strictTransform`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransform.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransform.lean#L210). The attribute's comment: “strict transform of a scheme”.
 
 > The strict transform of `X` along the blowup of the base in `ℐ`: the closed subscheme of
 > `X ×_S S'` cut out by the ideal of sections supported on the inverse image of the exceptional
@@ -44,7 +44,7 @@ def strictTransformIdeal : (blowUpPullback f ℐ).IdealSheafData
 abbrev strictTransform : Scheme.{u}
 ```
 
-**`Stacks.Blowup.ideal_strictTransformIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformRetrocompact.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformRetrocompact.lean#L130). The attribute's comment: “the defining ideal of the strict transform of a scheme, with no hypothesis”.
+**`Stacks.Blowup.ideal_strictTransformIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformRetrocompact.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformRetrocompact.lean#L130). The attribute's comment: “the defining ideal of the strict transform of a scheme, with no hypothesis”.
 
 > **Stacks Project, Tag 080D, part (2).** On an affine open, the defining ideal of the strict
 > transform of `X` consists of exactly the sections of `𝒪_{X ×_S S'}` supported on `pr_{S'}⁻¹ E`.
@@ -59,7 +59,7 @@ theorem ideal_strictTransformIdeal (U : (blowUpPullback f ℐ).affineOpens) :
           (Opposite.op U.1)
 ```
 
-**`Stacks.Blowup.isQuasicoherent_strictTransformSheaf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformRetrocompact.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformRetrocompact.lean#L142). The attribute's comment: “the strict transform of a quasi-coherent module is quasi-coherent”.
+**`Stacks.Blowup.isQuasicoherent_strictTransformSheaf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformRetrocompact.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformRetrocompact.lean#L142). The attribute's comment: “the strict transform of a quasi-coherent module is quasi-coherent”.
 
 > **Stacks Project, Tag 080D, part (1).** The strict transform of a quasi-coherent module is
 > quasi-coherent on `X ×_S S'`, with no hypothesis. Recorded as an instance because the strict
@@ -71,7 +71,7 @@ instance isQuasicoherent_strictTransformSheaf (ℱ : X.Modules) [ℱ.IsQuasicohe
     (strictTransformSheaf f ℐ ℱ).IsQuasicoherent
 ```
 
-**`Stacks.StrictTransform.sheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrictTransform/Basic.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/StrictTransform/Basic.lean#L256). The attribute's comment: “strict transform of a module”.
+**`Stacks.StrictTransform.sheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrictTransform/Basic.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrictTransform/Basic.lean#L257). The attribute's comment: “strict transform of a module”.
 
 > **Stacks Project, Tag 080D (1).** The strict transform of a sheaf of `𝒪_X`-modules `F`: the
 > quotient of `pr_X^* F` by the submodule of sections supported on `pr_{S'}^{-1}(Supp E)`.
@@ -80,7 +80,7 @@ instance isQuasicoherent_strictTransformSheaf (ℱ : X.Modules) [ℱ.IsQuasicohe
 public abbrev sheaf (F : X.Modules) : (baseChange f b).Modules
 ```
 
-**`Stacks.StrictTransform.ideal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrictTransform/Basic.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/StrictTransform/Basic.lean#L297). The attribute's comment: “ideal of the strict transform of a scheme”.
+**`Stacks.StrictTransform.ideal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrictTransform/Basic.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrictTransform/Basic.lean#L298). The attribute's comment: “ideal of the strict transform of a scheme”.
 
 > The quasi-coherent ideal of sections of `𝒪_{X ×_S S'}` supported on
 > `pr_{S'}^{-1}(Supp E)`, assembled from its values on affine opens.
@@ -89,7 +89,7 @@ public abbrev sheaf (F : X.Modules) : (baseChange f b).Modules
 public def ideal : (baseChange f b).IdealSheafData
 ```
 
-**`Stacks.StrictTransform.scheme`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrictTransform/Basic.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/StrictTransform/Basic.lean#L305). The attribute's comment: “strict transform of a scheme”. References: SGA 7 X (2.4), “more general”.
+**`Stacks.StrictTransform.scheme`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrictTransform/Basic.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrictTransform/Basic.lean#L306). The attribute's comment: “strict transform of a scheme”. References: SGA 7 X (2.4), “more general”.
 
 > **Stacks Project, Tag 080D (2).** The strict transform of `X`: the closed subscheme of
 > `X ×_S S'` cut out by the ideal of sections supported on `pr_{S'}^{-1}(Supp E)`.
@@ -102,7 +102,7 @@ public abbrev scheme : Scheme.{u}
 
 [Tag 080E](https://stacks.math.columbia.edu/tag/080E) in the Stacks Project.
 
-**`AlgebraicGeometry.strictTransformBlowUpIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/InverseImageCentre.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/InverseImageCentre.lean#L255). The attribute's comment: “scheme”. References: SGA 5 VII (9.5), “First clause only”.
+**`AlgebraicGeometry.strictTransformBlowUpIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/InverseImageCentre.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/InverseImageCentre.lean#L255). The attribute's comment: “scheme”. References: SGA 5 VII (9.5), “First clause only”.
 
 > The strict transform of `X` under the blowup of `S` in `ℐ` is the blowup of `X` in the
 > inverse image of `ℐ`, canonically as `X`-schemes.
@@ -113,7 +113,7 @@ def strictTransformBlowUpIso :
       pullback.fst f (blowUpToBase ℐ)) ≅ Over.mk (blowUpToBase (ℐ.comap f))
 ```
 
-**`AlgebraicGeometry.strictTransformSheafBlowUpIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/InverseImageCentre.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/InverseImageCentre.lean#L530). The attribute's comment: “sheaf”.
+**`AlgebraicGeometry.strictTransformSheafBlowUpIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/InverseImageCentre.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/InverseImageCentre.lean#L530). The attribute's comment: “sheaf”.
 
 > For a sheaf of `𝒪_X`-modules `F`, the strict
 > transform of `F` under the blowup of `S` in `ℐ` is canonically the direct image, along the closed
@@ -131,7 +131,7 @@ def strictTransformSheafBlowUpIso (F : X.Modules) :
 
 [Tag 080F](https://stacks.math.columbia.edu/tag/080F) in the Stacks Project.
 
-**`AlgebraicGeometry.strictTransformIdeal_eq_bot_of_flat_at_exceptional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/Flat.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/Flat.lean#L220). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.strictTransformIdeal_eq_bot_of_flat_at_exceptional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/Flat.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/Flat.lean#L220). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 080F (1).** If `X` is flat over `S` at every point lying over the
 > centre of the blowup, then the strict transform of `X` is the whole base change `X ×_S S'`: the
@@ -144,7 +144,7 @@ public theorem strictTransformIdeal_eq_bot_of_flat_at_exceptional
     Stacks.StrictTransform.ideal f (blowUpToBase I) (exceptionalIdeal I) = ⊥
 ```
 
-**`AlgebraicGeometry.isIso_strictTransformSheaf_quotient_of_flat_at_exceptional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/Flat.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/Flat.lean#L242). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isIso_strictTransformSheaf_quotient_of_flat_at_exceptional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/Flat.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/Flat.lean#L242). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 080F (2).** If a quasi-coherent `𝒪_X`-module `F` is flat over `S` at
 > every point lying over the centre of the blowup, then the canonical quotient map from `pr_X^* F`
@@ -161,7 +161,7 @@ public theorem isIso_strictTransformSheaf_quotient_of_flat_at_exceptional
 
 [Tag 080G](https://stacks.math.columbia.edu/tag/080G) in the Stacks Project.
 
-**`AlgebraicGeometry.strictTransformSheafPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/AffinePushforward.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/AffinePushforward.lean#L379).
+**`AlgebraicGeometry.strictTransformSheafPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/AffinePushforward.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/AffinePushforward.lean#L379).
 
 > **Stacks Project, Tag 080G.** Let `b : S' ⟶ S` be the blowup of `S` in a closed subscheme
 > cut out by the quasi-coherent ideal sheaf `I`, let `g : X ⟶ Y` be an affine morphism of schemes
@@ -189,7 +189,7 @@ def strictTransformSheafPushforwardIso {X Y S : Scheme.{u}}
 
 [Tag 080H](https://stacks.math.columbia.edu/tag/080H) in the Stacks Project.
 
-**`AlgebraicGeometry.blowUpProductIso_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/CartierProduct.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/CartierProduct.lean#L205). The attribute's comment: “part (1): isomorphism of blowups”.
+**`AlgebraicGeometry.blowUpProductIso_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/CartierProduct.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/CartierProduct.lean#L205). The attribute's comment: “part (1): isomorphism of blowups”.
 
 > **Stacks Project, Tag 080H**, part (1). Let `D` be an effective Cartier divisor on `S` and
 > let `I` be any quasi-coherent ideal sheaf. The blowup of `S` in `I * D` is the blowup of `S` in
@@ -201,7 +201,7 @@ theorem blowUpProductIso_exists {S : Scheme.{u}} (I D : S.IdealSheafData)
     Nonempty (Over.mk (blowUpToBase I) ≅ Over.mk (blowUpToBase (I * D)))
 ```
 
-**`Stacks.StrictTransform.exists_baseChange_iso_sheaf_iso_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrictTransform/DifferentCentres.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/StrictTransform/DifferentCentres.lean#L391). The attribute's comment: “part (2): strict transforms of modules”.
+**`Stacks.StrictTransform.exists_baseChange_iso_sheaf_iso_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrictTransform/DifferentCentres.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrictTransform/DifferentCentres.lean#L387). The attribute's comment: “part (2): strict transforms of modules”.
 
 > **[Stacks, Tag 080H] part (2).** Let `D` be an effective Cartier divisor on `S` and let `F`
 > be a sheaf of `𝒪_X`-modules with no nonzero local sections supported in `f^{-1}D`. Given an
@@ -243,7 +243,7 @@ public theorem exists_baseChange_iso_sheaf_iso_mul (f : X ⟶ S) (I D : S.IdealS
 
 [Tag 080I](https://stacks.math.columbia.edu/tag/080I) in the Stacks Project.
 
-**`Stacks.StrictTransform.strictTransformSheaf_comp_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrictTransform/CompositionBlowUp.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/StrictTransform/CompositionBlowUp.lean#L191). The attribute's comment: “part (1): strict transform of a module”.
+**`Stacks.StrictTransform.strictTransformSheaf_comp_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrictTransform/CompositionBlowUp.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrictTransform/CompositionBlowUp.lean#L191). The attribute's comment: “part (1): strict transform of a module”.
 
 > **[Stacks, Tag 080I] part (1).** For `b` the blowup of `S` in `I`, `c` the blowup of the
 > blowup in `J`, and `d` the blowup of `S` in a third centre `K` whose support is
@@ -293,7 +293,7 @@ public theorem strictTransformSheaf_comp_blowUp (f : X ⟶ S) (I K : S.IdealShea
           t.hom ≫ (Scheme.Modules.pullback pJ).map qI ≫ qJ
 ```
 
-**`Stacks.StrictTransform.strictTransform_comp_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrictTransform/CompositionScheme.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/StrictTransform/CompositionScheme.lean#L322). The attribute's comment: “part (2): strict transform of a scheme”.
+**`Stacks.StrictTransform.strictTransform_comp_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrictTransform/CompositionScheme.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrictTransform/CompositionScheme.lean#L322). The attribute's comment: “part (2): strict transform of a scheme”.
 
 > **[Stacks, Tag 080I] part (2).** For `b` the blowup of `S` in `I`, `c` the blowup of the
 > blowup in `J`, and `d` the blowup of `S` in a third centre `K` whose support is
@@ -342,7 +342,7 @@ public theorem strictTransform_comp_blowUp (f : X ⟶ S) (I K : S.IdealSheafData
 
 [Tag 080W](https://stacks.math.columbia.edu/tag/080W) in the Stacks Project.
 
-**`AlgebraicGeometry.strictTransformSheaf_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/ShortExact.lean, line 590](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/ShortExact.lean#L590).
+**`AlgebraicGeometry.strictTransformSheaf_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/ShortExact.lean, line 590](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/ShortExact.lean#L590).
 
 > **Stacks Project, Tag 080W.** A short exact sequence of quasi-coherent `𝒪_X`-modules which
 > remains short exact after every base change of the base scheme `S` has short exact strict
@@ -379,4 +379,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.34, Tag 080C](https://stacks.math.columbia.edu/tag/080C)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

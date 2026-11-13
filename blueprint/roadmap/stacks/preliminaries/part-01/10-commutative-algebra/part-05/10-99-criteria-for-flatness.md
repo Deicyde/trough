@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.99 Criteria for flatness
 
-Section 10.99 of the Stacks Project, [Tag 00MD](https://stacks.math.columbia.edu/tag/00MD). 17 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.99 of the Stacks Project, [Tag 00MD](https://stacks.math.columbia.edu/tag/00MD). 17 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00ME, a lemma
 
 [Tag 00ME](https://stacks.math.columbia.edu/tag/00ME) in the Stacks Project.
 
-**`Module.Flat.injective_and_flat_quotient_range_of_injective_mapQ_maximalIdeal_of_isNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean#L206). The attribute's comment: “`N/𝔪N` is `N ⧸ 𝔪 • (⊤ : Submodule R N)` and `ū` the canonical `Submodule.mapQ` of `u`. The cokernel `M/u(N)` is `M ⧸ LinearMap.range u`, and the two conclusions are conjoined; see the module docstring. The non-Noetherian generalization is 046Y.”. References: EGA III (4.6.7.1).
+**`Module.Flat.injective_and_flat_quotient_range_of_injective_mapQ_maximalIdeal_of_isNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean#L206). The attribute's comment: “`N/𝔪N` is `N ⧸ 𝔪 • (⊤ : Submodule R N)` and `ū` the canonical `Submodule.mapQ` of `u`. The cokernel `M/u(N)` is `M ⧸ LinearMap.range u`, and the two conclusions are conjoined; see the module docstring. The non-Noetherian generalization is 046Y.”. References: EGA III (4.6.7.1).
 
 > **Stacks 00ME.** Let `R → S` be a local homomorphism of local rings with `S` Noetherian, let
 > `𝔪` be the maximal ideal of `R`, let `M` be a flat `R`-module, let `N` be a finite `S`-module and
@@ -42,7 +42,7 @@ theorem
 
 [Tag 00MF](https://stacks.math.columbia.edu/tag/00MF) in the Stacks Project.
 
-**`Module.Flat.mem_nonZeroDivisors_and_flat_quotient_span_singleton_of_mem_nonZeroDivisors_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean#L327). The attribute's comment: “"Nonzerodivisor" is `nonZeroDivisors` at the level of rings, as in the source: `𝔪S` is `Ideal.map (algebraMap R S) (IsLocalRing.maximalIdeal R)` and `S/fS` is `S ⧸ Ideal.span {f}`. The two conclusions are conjoined, in the order of the sibling lemmas 00ME and 046Z rather than the source's. `IsNoetherianRing R` is redundant (faithful flatness descends the ascending chain condition) but is part of the tag's hypotheses; see the module docstring.”. References: SGA 3 V (7.2).
+**`Module.Flat.mem_nonZeroDivisors_and_flat_quotient_span_singleton_of_mem_nonZeroDivisors_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean#L327). The attribute's comment: “"Nonzerodivisor" is `nonZeroDivisors` at the level of rings, as in the source: `𝔪S` is `Ideal.map (algebraMap R S) (IsLocalRing.maximalIdeal R)` and `S/fS` is `S ⧸ Ideal.span {f}`. The two conclusions are conjoined, in the order of the sibling lemmas 00ME and 046Z rather than the source's. `IsNoetherianRing R` is redundant (faithful flatness descends the ascending chain condition) but is part of the tag's hypotheses; see the module docstring.”. References: SGA 3 V (7.2).
 
 > **Stacks 00MF.** Let `R → S` be a flat and local ring homomorphism of Noetherian local rings,
 > let `𝔪` be the maximal ideal of `R`, and let `f ∈ S` be a nonzerodivisor in `S/𝔪S`. Then `f` is a
@@ -67,7 +67,7 @@ theorem
 
 [Tag 00MG](https://stacks.math.columbia.edu/tag/00MG) in the Stacks Project.
 
-**`Module.Flat.isRegular_and_flat_quotient_ofList_take_of_isRegular_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean#L532). The attribute's comment: “"Regular sequence" is `RingTheory.Sequence.IsRegular`, which is Definition 00LF verbatim, nonvanishing clause included, and the sequence is a `List S`. The fibre is `S ⧸ Ideal.map (algebraMap R S) (IsLocalRing.maximalIdeal R)` and `S/(f₁, …, f_i)` is `S ⧸ Ideal.ofList (fs.take i)`, quantified over all `i : ℕ` since `List.take` saturates. `IsNoetherianRing R` and `IsLocalHom (algebraMap R S)` are both redundant here but are part of the tag's hypotheses; see the module docstring.”. References: EGA 0 (15.1.16), “c) => a), M = B”; EGA IV (11.3.8), “(c) ⇒ (a), special case”.
+**`Module.Flat.isRegular_and_flat_quotient_ofList_take_of_isRegular_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean, line 532](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean#L532). The attribute's comment: “"Regular sequence" is `RingTheory.Sequence.IsRegular`, which is Definition 00LF verbatim, nonvanishing clause included, and the sequence is a `List S`. The fibre is `S ⧸ Ideal.map (algebraMap R S) (IsLocalRing.maximalIdeal R)` and `S/(f₁, …, f_i)` is `S ⧸ Ideal.ofList (fs.take i)`, quantified over all `i : ℕ` since `List.take` saturates. `IsNoetherianRing R` and `IsLocalHom (algebraMap R S)` are both redundant here but are part of the tag's hypotheses; see the module docstring.”. References: EGA 0 (15.1.16), “c) => a), M = B”; EGA IV (11.3.8), “(c) ⇒ (a), special case”.
 
 > **Stacks 00MG.** Let `R → S` be a flat and local ring homomorphism of Noetherian local rings,
 > let `𝔪` be the maximal ideal of `R`, and let `f₁, …, f_c` be elements of `S` whose images form a
@@ -94,7 +94,7 @@ theorem Module.Flat.isRegular_and_flat_quotient_ofList_take_of_isRegular_maximal
 
 [Tag 00MH](https://stacks.math.columbia.edu/tag/00MH) in the Stacks Project.
 
-**`Module.Flat.free_and_flat_of_free_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean, line 688](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean#L688). The attribute's comment: “"Nonzero" is `Nontrivial M`. The fibre ring is `S ⧸ Ideal.map (algebraMap R S) (IsLocalRing.maximalIdeal R)` and `M/𝔪M` is `M ⧸ 𝔪S • (⊤ : Submodule S M)`, whose `S/𝔪S`-module structure is `Module.instQuotientIdealSubmoduleHSMulTop`. The two conclusions are conjoined, in the source's order: `M` is free over `S`, `S` is flat over `R`. `IsNoetherianRing R` is unused but is part of the tag's hypotheses; see the module docstring.”. References: EGA 0 (10.1.3), “special case”.
+**`Module.Flat.free_and_flat_of_free_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean, line 688](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean#L688). The attribute's comment: “"Nonzero" is `Nontrivial M`. The fibre ring is `S ⧸ Ideal.map (algebraMap R S) (IsLocalRing.maximalIdeal R)` and `M/𝔪M` is `M ⧸ 𝔪S • (⊤ : Submodule S M)`, whose `S/𝔪S`-module structure is `Module.instQuotientIdealSubmoduleHSMulTop`. The two conclusions are conjoined, in the source's order: `M` is free over `S`, `S` is flat over `R`. `IsNoetherianRing R` is unused but is part of the tag's hypotheses; see the module docstring.”. References: EGA 0 (10.1.3), “special case”.
 
 > **Stacks 00MH.** Let `R → S` be a local homomorphism of Noetherian local rings, let `𝔪` be the
 > maximal ideal of `R`, and let `M` be a nonzero finite `S`-module. If `M/𝔪M` is a free
@@ -119,7 +119,7 @@ theorem free_and_flat_of_free_maximalIdeal
 
 [Tag 00MI](https://stacks.math.columbia.edu/tag/00MI) in the Stacks Project.
 
-**`Module.Flat.exactAt_and_flat_cokernel_of_exactAt_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean, line 844](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean#L844). The attribute's comment: “The complex is a `ChainComplex (ModuleCat S) ℕ` vanishing above `e`, as in 00N0, so that `ExactAt e` is the leading `0 →`; exactness is assumed and concluded at every positive index, which above `e` is automatic. `F_i/𝔪F_i` is the base change `(S ⧸ Ideal.map (algebraMap R S) (maximalIdeal R)) ⊗[S] F_i` of `ModuleCat.extendScalars`, applied to `C` as a complex, and `Coker(F_1 → F_0)` is `cokernel (C.d 1 0)`. `IsNoetherianRing R` is unused but is part of the tag's hypotheses; see the module docstring.”.
+**`Module.Flat.exactAt_and_flat_cokernel_of_exactAt_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean, line 844](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/LocalCriteria/FibreCriteria.lean#L844). The attribute's comment: “The complex is a `ChainComplex (ModuleCat S) ℕ` vanishing above `e`, as in 00N0, so that `ExactAt e` is the leading `0 →`; exactness is assumed and concluded at every positive index, which above `e` is automatic. `F_i/𝔪F_i` is the base change `(S ⧸ Ideal.map (algebraMap R S) (maximalIdeal R)) ⊗[S] F_i` of `ModuleCat.extendScalars`, applied to `C` as a complex, and `Coker(F_1 → F_0)` is `cokernel (C.d 1 0)`. `IsNoetherianRing R` is unused but is part of the tag's hypotheses; see the module docstring.”.
 
 > **Stacks 00MI.** Let `R → S` be a local homomorphism of Noetherian local rings, let `𝔪` be the
 > maximal ideal of `R`, and let `0 → F_e → F_{e-1} → ⋯ → F_0` be a finite complex of finite
@@ -150,7 +150,7 @@ theorem Module.Flat.exactAt_and_flat_cokernel_of_exactAt_maximalIdeal
 
 [Tag 00MJ](https://stacks.math.columbia.edu/tag/00MJ) in the Stacks Project.
 
-**`IsLocalRing.isZero_Tor'_one_of_isFiniteLength`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriteria/TorAndNilpotentDescent.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/LocalCriteria/TorAndNilpotentDescent.lean#L397).
+**`IsLocalRing.isZero_Tor'_one_of_isFiniteLength`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriteria/TorAndNilpotentDescent.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/LocalCriteria/TorAndNilpotentDescent.lean#L397).
 
 > **Stacks 00MJ.** Let `R` be a local ring with residue field `κ` and let `M` be an `R`-module.
 > If `Tor₁(κ, M) = 0`, then `Tor₁(N, M) = 0` for every `R`-module `N` of finite length. Here
@@ -169,7 +169,7 @@ theorem isZero_Tor'_one_of_isFiniteLength {R : Type u} [CommRing R] [IsLocalRing
 
 [Tag 00MK](https://stacks.math.columbia.edu/tag/00MK) in the Stacks Project.
 
-**`Module.Flat.of_isZero_Tor'_one_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriterion.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/LocalCriterion.lean#L170). The attribute's comment: “`Tor₁^R(κ, M)` is `Tor'`, the left derived functor of `- ⊗_R M` evaluated at `κ`; forming it in `ModuleCat R` puts `M` in the universe of `R`.”. References: EGA 0 (10.1.3), “(d)⇒(c), case (ii)”; EGA 0 (10.2.2), “Tor₁^A(M, special case”; EGA IV (11.3.12), “b⇒a, special case”; SGA 1 IV (4.3), “case (b): (iv) ⇒ (iii)”; SGA 1 IV (5.6), “(ii)⇒(i), special case”.
+**`Module.Flat.of_isZero_Tor'_one_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriterion.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/LocalCriterion.lean#L170). The attribute's comment: “`Tor₁^R(κ, M)` is `Tor'`, the left derived functor of `- ⊗_R M` evaluated at `κ`; forming it in `ModuleCat R` puts `M` in the universe of `R`.”. References: EGA 0 (10.1.3), “(d)⇒(c), case (ii)”; EGA 0 (10.2.2), “Tor₁^A(M, special case”; EGA IV (11.3.12), “b⇒a, special case”; SGA 1 IV (4.3), “case (b): (iv) ⇒ (iii)”; SGA 1 IV (5.6), “(ii)⇒(i), special case”.
 
 > **Stacks 00MK** (local criterion for flatness). Let `R → S` be a local homomorphism of
 > Noetherian local rings, let `κ` be the residue field of `R` and let `M` be a finite `S`-module.
@@ -190,7 +190,7 @@ theorem of_isZero_Tor'_one_residueField {R : Type u} (S : Type v) (M : Type u) [
 
 [Tag 051C](https://stacks.math.columbia.edu/tag/051C) in the Stacks Project.
 
-**`tor1_vanishes_of_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/TorCriterion/NilpotentIdeal.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/TorCriterion/NilpotentIdeal.lean#L220). The attribute's comment: “(2)”. References: SGA 1 IV (5.3), “=> (iii)”; SGA 1 IV (5.2), “(ii) ⇒ (i), special case”; SGA 3 VIB (12.7), “partial”.
+**`tor1_vanishes_of_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/TorCriterion/NilpotentIdeal.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/TorCriterion/NilpotentIdeal.lean#L220). The attribute's comment: “(2)”. References: SGA 1 IV (5.3), “=> (iii)”; SGA 1 IV (5.2), “(ii) ⇒ (i), special case”; SGA 3 VIB (12.7), “partial”.
 
 > If `M/IM` is flat over `R/I` and `Tor₁^R(R/I, M) = 0`, then `Tor₁^R(N, M) = 0` for every
 > `R`-module `N` annihilated by `Iᵐ` for some `m`.
@@ -204,7 +204,7 @@ theorem tor1_vanishes_of_annihilated
     Tor1Vanishes R N M
 ```
 
-**`flat_quotient_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/TorCriterion/NilpotentIdeal.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/TorCriterion/NilpotentIdeal.lean#L263). The attribute's comment: “(1)”. References: EGA 0 (10.2.1), “(b) ⇒ (d)”; EGA 0 (10.2.2), “b ⇒ d”; SGA 1 IV (5.5), “more general”; SGA 1 IV (5.6), “(ii)⇒(iv)”; SGA 3 VIB (12.7), “more general”.
+**`flat_quotient_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/TorCriterion/NilpotentIdeal.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/TorCriterion/NilpotentIdeal.lean#L263). The attribute's comment: “(1)”. References: EGA 0 (10.2.1), “(b) ⇒ (d)”; EGA 0 (10.2.2), “b ⇒ d”; SGA 1 IV (5.5), “more general”; SGA 1 IV (5.6), “(ii)⇒(iv)”; SGA 3 VIB (12.7), “more general”.
 
 > If `M/IM` is flat over `R/I` and `Tor₁^R(R/I, M) = 0`, then for every `n ≥ 1` the
 > `R/Iⁿ`-module `M/IⁿM` is flat over `R/Iⁿ`.
@@ -217,7 +217,7 @@ theorem flat_quotient_pow
       Module.Flat (R ⧸ I ^ n) (M ⧸ ((I ^ n) • (⊤ : Submodule R M)))
 ```
 
-**`flat_of_nilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/TorCriterion/NilpotentIdeal.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/TorCriterion/NilpotentIdeal.lean#L281). The attribute's comment: “in particular”. References: EGA 0 (10.2.1), “(b)⇒(a), 𝔍 nilpotent”; EGA 0 (10.1.3), “(i)”; EGA 0 (10.2.2), “special case”; EGA IV (11.2.5), “special case”; EGA IV (11.3.12), “b⇒a when J is nilpotent”; SGA 1 IV (5.5), “(ii) => (i)”; SGA 1 IV (5.6), “(ii)⇒(i), special case”.
+**`flat_of_nilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/TorCriterion/NilpotentIdeal.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/TorCriterion/NilpotentIdeal.lean#L281). The attribute's comment: “in particular”. References: EGA 0 (10.2.1), “(b)⇒(a), 𝔍 nilpotent”; EGA 0 (10.1.3), “(i)”; EGA 0 (10.2.2), “special case”; EGA IV (11.2.5), “special case”; EGA IV (11.3.12), “b⇒a when J is nilpotent”; SGA 1 IV (5.5), “(ii) => (i)”; SGA 1 IV (5.6), “(ii)⇒(i), special case”.
 
 > If `M/IM` is flat over `R/I`, `Tor₁^R(R/I, M) = 0` and `I` is nilpotent, then `M` is flat
 > over `R`.
@@ -234,7 +234,7 @@ theorem flat_of_nilpotent
 
 [Tag 0AS8](https://stacks.math.columbia.edu/tag/0AS8) in the Stacks Project.
 
-**`Module.flat_quotient_pow_succ_of_flat_quotient_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/AdicFiltration.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/AdicFiltration.lean#L204). The attribute's comment: “Both parts: part (1) is the case `k = 1`. The injectivity of `M ⊗_R I^n/I^{n + 1} → I^nM/I^{n + 1}M` is stated as exactness of `M ⊗_R I^{n + 1} → M ⊗_R I^n → M/I^{n + 1}M`, an equivalent form; see the module docstring.”.
+**`Module.flat_quotient_pow_succ_of_flat_quotient_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/AdicFiltration.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/AdicFiltration.lean#L204). The attribute's comment: “Both parts: part (1) is the case `k = 1`. The injectivity of `M ⊗_R I^n/I^{n + 1} → I^nM/I^{n + 1}M` is stated as exactness of `M ⊗_R I^{n + 1} → M ⊗_R I^n → M/I^{n + 1}M`, an equivalent form; see the module docstring.”.
 
 > Let `R` be a ring, `I ⊆ R` an ideal and `M` an `R`-module. If `M/IM` is flat over `R/I` and the
 > multiplication map `M ⊗_R I^n/I^{n+1} → I^nM/I^{n+1}M` is injective for `n = 1, …, k`, then
@@ -261,7 +261,7 @@ public theorem flat_quotient_pow_succ_of_flat_quotient_of_exact {R : Type u} [Co
 
 [Tag 00ML](https://stacks.math.columbia.edu/tag/00ML) in the Stacks Project.
 
-**`Module.Flat.of_rTensor_subtype_injective_of_flat_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriterionVariant/Criterion.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/LocalCriterionVariant/Criterion.lean#L80). The attribute's comment: “The hypothesis `Tor_1^R(M, R/I) = 0` is stated in the form Remark 00M6 identifies it with, the injectivity of `I ⊗_R M → R ⊗_R M`; this is the form the source's own second proof of the lemma assumes, and unlike `Tor_1` it puts `R` and `M` in no common universe. See the module docstring.”. References: EGA IV (11.3.12), “partial”; SGA 1 IV (5.6), “(ii)⇒(i), special case”.
+**`Module.Flat.of_rTensor_subtype_injective_of_flat_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriterionVariant/Criterion.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/LocalCriterionVariant/Criterion.lean#L80). The attribute's comment: “The hypothesis `Tor_1^R(M, R/I) = 0` is stated in the form Remark 00M6 identifies it with, the injectivity of `I ⊗_R M → R ⊗_R M`; this is the form the source's own second proof of the lemma assumes, and unlike `Tor_1` it puts `R` and `M` in no common universe. See the module docstring.”. References: EGA IV (11.3.12), “partial”; SGA 1 IV (5.6), “(ii)⇒(i), special case”.
 
 > **Stacks 00ML** (variant of the local criterion for flatness). Let `R → S` be a local
 > homomorphism of Noetherian local rings, let `I ≠ R` be an ideal of `R` and let `M` be a finite
@@ -282,7 +282,7 @@ public theorem of_rTensor_subtype_injective_of_flat_quotient {R : Type u} (S : T
 
 [Tag 0523](https://stacks.math.columbia.edu/tag/0523) in the Stacks Project.
 
-**`Module.Flat.of_flat_quotient_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/AdicFiltration.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/AdicFiltration.lean#L419). The attribute's comment: “Both statements: the second is the case where `S` is local, `q` is its maximal ideal and the localization is taken to be `M` itself. `M/IⁿM` is `M ⧸ (I ^ n • ⊤ : Submodule R M)` and `M_q` is given by `IsLocalizedModule.AtPrime q f`; see the module docstring.”. References: EGA 0 (10.2.1), “d ⇒ a”.
+**`Module.Flat.of_flat_quotient_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/AdicFiltration.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/AdicFiltration.lean#L418). The attribute's comment: “Both statements: the second is the case where `S` is local, `q` is its maximal ideal and the localization is taken to be `M` itself. `M/IⁿM` is `M ⧸ (I ^ n • ⊤ : Submodule R M)` and `M_q` is given by `IsLocalizedModule.AtPrime q f`; see the module docstring.”. References: EGA 0 (10.2.1), “d ⇒ a”.
 
 > Let `R → S` be a ring map with `R` and `S` Noetherian, let `I ⊆ R` be an ideal and let `M` be a
 > finite `S`-module. If `M/IⁿM` is flat over `R/Iⁿ` for every `n ≥ 1`, then for every prime `q` of
@@ -310,7 +310,7 @@ public theorem of_flat_quotient_pow {R S : Type*} [CommRing R] [CommRing S] [Alg
 
 [Tag 00MM](https://stacks.math.columbia.edu/tag/00MM) in the Stacks Project.
 
-**`Stacks.TorOneBaseChange.tor_baseChange_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Tor/TorOneBaseChange.lean, line 696](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Tor/TorOneBaseChange.lean#L696). The attribute's comment: “Proved for the resolution model Tor1 S = H₁(P ⊗ᴿ S); the map is the explicit phi, not identified with the canonical derived base-change natural transformation.”.
+**`Stacks.TorOneBaseChange.tor_baseChange_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Tor/TorOneBaseChange.lean, line 693](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Tor/TorOneBaseChange.lean#L693). The attribute's comment: “Proved for the resolution model Tor1 S = H₁(P ⊗ᴿ S); the map is the explicit phi, not identified with the canonical derived base-change natural transformation.”.
 
 > **Stacks Tag 00MM (Lemma 10.99.12).**
 >
@@ -352,7 +352,7 @@ theorem tor_baseChange_surjective
 
 [Tag 00MN](https://stacks.math.columbia.edu/tag/00MN) in the Stacks Project.
 
-**`TorSurjective.surjective_on_tor_one_trivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Tor/BaseChangeSurjectivity.lean, line 1041](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Tor/BaseChangeSurjectivity.lean#L1041). The attribute's comment: “Epi holds between the genuine Tor objects for N = R'/IR', but the comparison map is naturalMap conjugated by Classical.choice isomorphisms, so it is not identified with the canonical derived base-change natural transformation.”.
+**`TorSurjective.surjective_on_tor_one_trivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Tor/BaseChangeSurjectivity.lean, line 1039](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Tor/BaseChangeSurjectivity.lean#L1039). The attribute's comment: “Epi holds between the genuine Tor objects for N = R'/IR', but the comparison map is naturalMap conjugated by Classical.choice isomorphisms, so it is not identified with the canonical derived base-change natural transformation.”.
 
 > **The Stacks lemma (tag [0BPB]).**  With `N = R'/I'` and `M' = M ⊗_R R'`, the
 > natural map
@@ -388,7 +388,7 @@ theorem surjective_on_tor_one_trivial (I : Ideal R) (M : ModuleCat R)
 
 [Tag 00MO](https://stacks.math.columbia.edu/tag/00MO) in the Stacks Project.
 
-**`Module.Flat.of_flat_quotient_of_tor_one_map_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriterionVariant/BaseChangeSquare.lean, line 680](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/LocalCriterionVariant/BaseChangeSquare.lean#L680). The attribute's comment: “`Tor₁` is spelled through Remark 00M6 as `Ker(I ⊗_R M → R ⊗_R M)`, and the hypothesis that `Tor_1^R(M, R/I) → Tor_1^{R'}(M', R'/I')` is zero as the vanishing on that kernel of the canonical map `I ⊗_R M → I' ⊗_{R'} M'`. `M'` and `S'` are abstract (`IsBaseChange`, `IsLocalization`). The unused hypotheses `R` Noetherian, `S` local Noetherian, `R → S` local and `S → S'` local are dropped; see the module docstring.”. References: EGA IV (11.2.5), “case b), local rings”; EGA IV (11.3.12), “partial”.
+**`Module.Flat.of_flat_quotient_of_tor_one_map_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriterionVariant/BaseChangeSquare.lean, line 667](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/LocalCriterionVariant/BaseChangeSquare.lean#L667). The attribute's comment: “`Tor₁` is spelled through Remark 00M6 as `Ker(I ⊗_R M → R ⊗_R M)`, and the hypothesis that `Tor_1^R(M, R/I) → Tor_1^{R'}(M', R'/I')` is zero as the vanishing on that kernel of the canonical map `I ⊗_R M → I' ⊗_{R'} M'`. `M'` and `S'` are abstract (`IsBaseChange`, `IsLocalization`). The unused hypotheses `R` Noetherian, `S` local Noetherian, `R → S` local and `S → S'` local are dropped; see the module docstring.”. References: EGA IV (11.2.5), “case b), local rings”; EGA IV (11.3.12), “partial”.
 
 > **Stacks 00MO.** Let `S ← R → R' → S'`, `S → S'` be a commutative square of ring maps with
 > `R`, `R'`, `S'` local, `R'` and `S'` Noetherian and `R → R'`, `R' → S'` local, let `I ⊆ R` be a
@@ -431,7 +431,7 @@ public theorem of_flat_quotient_of_tor_one_map_eq_zero {R R' S S' M M' : Type*} 
 
 [Tag 00MP](https://stacks.math.columbia.edu/tag/00MP) in the Stacks Project.
 
-**`Module.flat_and_flat_of_flat_quotient_maximalIdeal_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FibrewiseCriterion.lean, line 751](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/FibrewiseCriterion.lean#L751). The attribute's comment: “The composite `R → S'` is not assumed: the two scalar towers on `M` already pin the `R`-action to the restriction along `R → S → S'`. `𝔪M` is written as `𝔪S • ⊤` over `S`, so that the quotient carries the `S/𝔪S`-structure; see the module docstring.”. References: EGA IV (11.3.10), “special case”; EGA IV (11.3.10.1), “(a) ⇒ (b)”; SGA 1 I (5.9), “partial”; SGA 1 IV (5.9), “(ii) ⇒ (i)”; SGA 3 VIB (1.3.0), “special case”; SGA 3 VIB (12.7), “special case”; SGA 3 VIB (2.5), “flatness clause”; SGA 3 X (3.5), “Flat case”.
+**`Module.flat_and_flat_of_flat_quotient_maximalIdeal_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FibrewiseCriterion.lean, line 751](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/FibrewiseCriterion.lean#L751). The attribute's comment: “The composite `R → S'` is not assumed: the two scalar towers on `M` already pin the `R`-action to the restriction along `R → S → S'`. `𝔪M` is written as `𝔪S • ⊤` over `S`, so that the quotient carries the `S/𝔪S`-structure; see the module docstring.”. References: EGA IV (11.3.10), “special case”; EGA IV (11.3.10.1), “(a) ⇒ (b)”; SGA 1 I (5.9), “partial”; SGA 1 IV (5.9), “(ii) ⇒ (i)”; SGA 3 VIB (1.3.0), “special case”; SGA 3 VIB (12.7), “special case”; SGA 3 VIB (2.5), “flatness clause”; SGA 3 X (3.5), “Flat case”.
 
 > **Critère de platitude par fibres, Noetherian local case**. Let `R → S → S'` be local
 > homomorphisms of Noetherian local rings, let `𝔪 ⊆ R` be the maximal ideal of `R`, and let `M` be an
@@ -459,7 +459,7 @@ public theorem Module.flat_and_flat_of_flat_quotient_maximalIdeal_of_flat
 
 [Tag 0H7N](https://stacks.math.columbia.edu/tag/0H7N) in the Stacks Project.
 
-**`Module.flat_and_faithfullyFlat_of_flat_away_of_flat_quotSMulTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriteria/TorAndNilpotentDescent.lean, line 670](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/LocalCriteria/TorAndNilpotentDescent.lean#L670). The attribute's comment: “The two forms of the lemma are the two components of the conjunction: they share the hypotheses on `f`. `M_f` is an arbitrary localization away from `f` (`IsLocalization.Away`, `IsLocalizedModule`) rather than the model, `M/fM` is `QuotSMulTop f M` over `A ⧸ Ideal.span {f}`, and `f` a nonzerodivisor on `A` and on `M` is `IsSMulRegular A f` and `IsSMulRegular M f`.”.
+**`Module.flat_and_faithfullyFlat_of_flat_away_of_flat_quotSMulTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalCriteria/TorAndNilpotentDescent.lean, line 670](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/LocalCriteria/TorAndNilpotentDescent.lean#L670). The attribute's comment: “The two forms of the lemma are the two components of the conjunction: they share the hypotheses on `f`. `M_f` is an arbitrary localization away from `f` (`IsLocalization.Away`, `IsLocalizedModule`) rather than the model, `M/fM` is `QuotSMulTop f M` over `A ⧸ Ideal.span {f}`, and `f` a nonzerodivisor on `A` and on `M` is `IsSMulRegular A f` and `IsSMulRegular M f`.”.
 
 > **Stacks 0H7N.** Let `A` be a ring, let `M` be an `A`-module and let `f ∈ A` be a
 > nonzerodivisor on `A` and on `M`. If `M_f` is a flat `A_f`-module and `M/fM` is a flat
@@ -484,7 +484,7 @@ theorem flat_and_faithfullyFlat_of_flat_away_of_flat_quotSMulTop
 
 [Tag 0H7P](https://stacks.math.columbia.edu/tag/0H7P) in the Stacks Project.
 
-**`Module.flat_and_faithfullyFlat_of_isLocalized_away_of_isZero_Tor'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/TorCriterion/AwayGenerators.lean, line 766](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/TorCriterion/AwayGenerators.lean#L766). The attribute's comment: “Both statements: `.1` is the flat one and `.2` the faithfully flat one ("same with flat replaced by faithfully flat"), sharing the generating family and the Tor hypotheses. The two arguments of `Tor_n^A` are in the order used by the source's own proof (through 051C), namely `Tor_n^A(A/I, M)`; the two orders agree by the symmetry of Tor (00M3). The generators are a family indexed by a finite type, and the source's `r ≥ 1` is dropped. See the module docstring.”.
+**`Module.flat_and_faithfullyFlat_of_isLocalized_away_of_isZero_Tor'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/TorCriterion/AwayGenerators.lean, line 766](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/TorCriterion/AwayGenerators.lean#L766). The attribute's comment: “Both statements: `.1` is the flat one and `.2` the faithfully flat one ("same with flat replaced by faithfully flat"), sharing the generating family and the Tor hypotheses. The two arguments of `Tor_n^A` are in the order used by the source's own proof (through 051C), namely `Tor_n^A(A/I, M)`; the two orders agree by the symmetry of Tor (00M3). The generators are a family indexed by a finite type, and the source's `r ≥ 1` is dropped. See the module docstring.”.
 
 > Let `A` be a ring, let `M` be an `A`-module, and let `I` be the ideal
 > generated by a finite family of elements `f i` of `A`, with `r` the number of generators. Assume
@@ -518,4 +518,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.99, Tag 00MD](https://stacks.math.columbia.edu/tag/00MD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

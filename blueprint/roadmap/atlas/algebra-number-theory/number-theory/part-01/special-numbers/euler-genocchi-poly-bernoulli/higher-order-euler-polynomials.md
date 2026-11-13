@@ -7,7 +7,7 @@ statement: formalized
 
 # Higher-order Euler polynomials
 
-11 results, 6 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html).
+11 results, 6 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html).
 
 ## Euler polynomials
 
@@ -19,7 +19,7 @@ $E_n(x) = \frac{2}{n + 1} \left(B_{n+1}(x) - 2^{n+1} B_{n+1}(x/2)\right)$.
 
 - Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Section 1 (Euler polynomials).
 
-Formalized by `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly`, a definition declared in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-poly).
+Formalized by `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly`, a definition declared in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-poly).
 
 ## Generalized Stirling polynomial
 
@@ -32,7 +32,7 @@ $$S(n, k, x) = \frac{1}{k!} \sum_{j=0}^{k} \binom{k}{j} (-1)^{k-j} (x + j)^n.$$
 
 - Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Proposition 3.1 (definition).
 
-Formalized by `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.genStirlingPoly`, a definition declared in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#gen-stirling-poly).
+Formalized by `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.genStirlingPoly`, a definition declared in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#gen-stirling-poly).
 
 ## Taylor coefficients of (2 + 2z)/(2 + 2z + z²)
 
@@ -45,7 +45,7 @@ coefficients of $(2 + 2z)/(2 + 2z + z^2)$ at $z = 0$.
 
 - Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Lemma 2.2 (generating function).
 
-Formalized by `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerAlpha`, a definition declared in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-alpha).
+Formalized by `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerAlpha`, a definition declared in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-alpha).
 
 ## Fuel-bounded recurrence for the Euler numbers of order α
 
@@ -58,7 +58,7 @@ and $a_\alpha(f + 1, n + 1) = -\alpha \, a_\alpha(f, n) +
 Whenever $n \le f$, $a_\alpha(f, n)$ equals the Euler number of order $\alpha$,
 $E_n^{(\alpha)}(0)$.
 
-Formalized by `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerNumGenAux`, a definition declared in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-num-gen-aux).
+Formalized by `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerNumGenAux`, a definition declared in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-num-gen-aux).
 
 ## Euler numbers of order α
 
@@ -74,7 +74,7 @@ This is the coefficient recurrence of the generating function $(2/(e^t + 1))^\al
 
 - Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Section 1 (generalized Euler polynomials).
 
-Formalized by `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerNumGen`, a definition declared in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-num-gen).
+Formalized by `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerNumGen`, a definition declared in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-num-gen).
 
 ## Euler polynomials of order α
 
@@ -87,7 +87,7 @@ $E_n^{(\alpha)}(x) = \sum_{k=0}^{n} \binom{n}{k} E_k^{(\alpha)}(0) \, x^{n-k}$.
 
 - Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Section 1 (generalized Euler polynomials).
 
-Formalized by `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPolyGen`, a definition declared in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-poly-gen).
+Formalized by `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPolyGen`, a definition declared in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-poly-gen).
 
 ## Euler polynomials at (x + 1)/2 via generalized Stirling polynomials
 
@@ -101,7 +101,7 @@ $2^n E_n\left(\frac{x + 1}{2}\right) = \sum_{k=0}^{n} k! \, \alpha_k \, S(n, k, 
 
 - Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Proposition 3.1.
 
-Stated but not proved: `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_half_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-poly-half-eq-sum).
+Stated but not proved: `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_half_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-poly-half-eq-sum).
 
 ## Recurrence for Euler polynomials of order α
 
@@ -116,7 +116,7 @@ where the sum is empty when $n = 1$.
 
 - Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Proposition 3.2.
 
-Stated but not proved: `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPolyGen_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-poly-gen-recurrence).
+Stated but not proved: `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPolyGen_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-poly-gen-recurrence).
 
 ## Euler polynomials as alternating sums of shifted powers
 
@@ -130,7 +130,7 @@ as polynomials in $x$ with rational coefficients.
 
 - Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Theorem 4.1.
 
-Stated but not proved: `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_eq_binomial_average` is written with `theorem_wanted` in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-poly-eq-binomial-average).
+Stated but not proved: `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_eq_binomial_average` is written with `theorem_wanted` in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-poly-eq-binomial-average).
 
 ## Euler polynomials via generalized Stirling polynomials
 
@@ -144,7 +144,7 @@ coefficients, $2^n E_n(x) = \sum_{k=0}^{n} k! \, \alpha_k \, S(n, k, 2x - 1)$.
 
 - Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Theorem 4.2.
 
-Stated but not proved: `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_eq_sum_genStirling` is written with `theorem_wanted` in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-poly-eq-sum-gen-stirling).
+Stated but not proved: `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_eq_sum_genStirling` is written with `theorem_wanted` in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-poly-eq-sum-gen-stirling).
 
 ## Double-sum formula for Euler polynomials
 
@@ -158,7 +158,7 @@ $2^n E_n(x) = \sum_{\ell=0}^{n} \frac{(-1)^\ell}{\ell + 1}
 
 - Nouara Mokhtari, Rachid Boumahdi, and Farid Bencherif, "Generalizations of Several Explicit Formulas for Euler Polynomials", Theorem 4.3.
 
-Stated but not proved: `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_eq_double_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-poly-eq-double-sum).
+Stated but not proved: `MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_eq_double_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EulerPolynomialFormulasWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html#euler-poly-eq-double-sum).
 
 ## Depends on
 
@@ -167,4 +167,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Higher-order Euler polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/higher-order-euler-polynomials)

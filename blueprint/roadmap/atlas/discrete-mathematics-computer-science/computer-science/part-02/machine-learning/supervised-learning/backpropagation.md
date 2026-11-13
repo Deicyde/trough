@@ -8,7 +8,7 @@ proof: formalized
 
 # Backpropagation
 
-13 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html).
+13 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html).
 
 ## Feedforward network
 
@@ -17,7 +17,7 @@ network with widths $d$ is a sequence of arbitrary maps
 $f_k : \mathbb{R}^{d(k)} \to \mathbb{R}^{d(k+1)}$, one for each $k \in \mathbb{N}$, where $f_k$ is
 the map computed by layer $k$ and $\mathbb{R}^n$ carries its Euclidean structure.
 
-Formalized by `Cslib.MachineLearning.Backpropagation.Net`, a structure declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Backpropagation.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#net).
+Formalized by `Cslib.MachineLearning.Backpropagation.Net`, a structure declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Backpropagation.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#net).
 
 ## The forward pass
 
@@ -26,7 +26,7 @@ $f_k : \mathbb{R}^{d_k} \to \mathbb{R}^{d_{k+1}}$ between Euclidean spaces, the 
 through the first $n$ layers is the map $N_n : \mathbb{R}^{d_0} \to \mathbb{R}^{d_n}$ given by
 $N_0(x) = x$ and $N_{n+1}(x) = f_n(N_n(x))$, that is, $N_n = f_{n-1} \circ \cdots \circ f_0$.
 
-Formalized by `Cslib.MachineLearning.Backpropagation.Net.forward`, a definition declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Backpropagation.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#forward).
+Formalized by `Cslib.MachineLearning.Backpropagation.Net.forward`, a definition declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Backpropagation.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#forward).
 
 ## The backward pass
 
@@ -41,7 +41,7 @@ $^*$ denotes the adjoint. Thus
 $B_n(\delta) = Df_0(a_0)^* \cdots Df_{n-1}(a_{n-1})^* \, \delta$: the adjoints of the layer
 Jacobians are applied from the last layer to the first.
 
-Formalized by `Cslib.MachineLearning.Backpropagation.Net.backward`, a definition declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Backpropagation.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#backward).
+Formalized by `Cslib.MachineLearning.Backpropagation.Net.backward`, a definition declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Backpropagation.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#backward).
 
 ## Differentiability along the forward pass
 
@@ -52,7 +52,7 @@ forward pass of $x$ through the first $j$ layers. The network is differentiable 
 pass of $x$ through its first $n$ layers when $f_j$ is differentiable at $a_j$ for every
 $j < n$.
 
-Formalized by `Cslib.MachineLearning.Backpropagation.Net.DiffAlong`, a definition declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Backpropagation.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#diff-along).
+Formalized by `Cslib.MachineLearning.Backpropagation.Net.DiffAlong`, a definition declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Backpropagation.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#diff-along).
 
 ## Differentiable layers are differentiable along every forward pass
 
@@ -62,7 +62,7 @@ Euclidean spaces. If every $f_k$ is differentiable on all of $\mathbb{R}^{d_k}$,
 input $x \in \mathbb{R}^{d_0}$ and every $n \in \mathbb{N}$, the layer $f_j$ is differentiable at
 the forward pass of $x$ through the first $j$ layers for every $j < n$.
 
-Formalized by `Cslib.MachineLearning.Backpropagation.Net.diffAlong_of_differentiable`, a theorem declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Backpropagation.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#diff-along-of-differentiable).
+Formalized by `Cslib.MachineLearning.Backpropagation.Net.diffAlong_of_differentiable`, a theorem declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Backpropagation.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#diff-along-of-differentiable).
 
 ## Differentiability of the forward pass
 
@@ -72,7 +72,7 @@ $x \in \mathbb{R}^{d_0}$ and $n \in \mathbb{N}$, and write
 $N_j : \mathbb{R}^{d_0} \to \mathbb{R}^{d_j}$ for the forward pass through the first $j$ layers. If
 $f_j$ is differentiable at $N_j(x)$ for every $j < n$, then $N_n$ is differentiable at $x$.
 
-Formalized by `Cslib.MachineLearning.Backpropagation.Net.differentiableAt_forward`, a theorem declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Backpropagation.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#differentiable-at-forward).
+Formalized by `Cslib.MachineLearning.Backpropagation.Net.differentiableAt_forward`, a theorem declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Backpropagation.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#differentiable-at-forward).
 
 ## The backward pass is the vector-Jacobian product
 
@@ -85,7 +85,7 @@ the backward pass from $\delta$ at input $x$ through the first $n$ layers equals
 $DN_n(x)^* \, \delta$, where $DN_n(x)$ is the Fréchet derivative of $N_n$ at $x$ and $^*$ denotes
 the adjoint.
 
-Formalized by `Cslib.MachineLearning.Backpropagation.Net.backward_eq`, a theorem declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Backpropagation.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#backward-eq).
+Formalized by `Cslib.MachineLearning.Backpropagation.Net.backward_eq`, a theorem declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Backpropagation.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#backward-eq).
 
 ## Backpropagation computes the input gradient
 
@@ -100,7 +100,7 @@ $\nabla(\ell \circ N_n)(x) = Df_0(N_0(x))^* \cdots Df_{n-1}(N_{n-1}(x))^* \, \na
 where $Df_j(N_j(x))$ is the Fréchet derivative of $f_j$ at $N_j(x)$ and $^*$ denotes the
 adjoint.
 
-Formalized by `Cslib.MachineLearning.Backpropagation.gradient_comp_forward`, a theorem declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Backpropagation.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#gradient-comp-forward).
+Formalized by `Cslib.MachineLearning.Backpropagation.gradient_comp_forward`, a theorem declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Backpropagation.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#gradient-comp-forward).
 
 ## Shifted network
 
@@ -108,7 +108,7 @@ For a feedforward network $N$ with layer widths $d$ and a natural number
 $j$, the shifted network has layer widths $i \mapsto d(j + i)$, and its layer $i$ is layer
 $j + i$ of $N$. It is made of the layers of $N$ from layer $j$ on.
 
-Formalized by `Cslib.MachineLearning.Backpropagation.Net.shift`, a definition declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Backpropagation.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#shift).
+Formalized by `Cslib.MachineLearning.Backpropagation.Net.shift`, a definition declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Backpropagation.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#shift).
 
 ## Splitting the forward pass
 
@@ -119,7 +119,7 @@ forward pass through the first $m$ layers of the shifted network with layers
 $f_j, f_{j+1}, \dots$. Then for all $j, m \in \mathbb{N}$ and $x \in \mathbb{R}^{d_0}$,
 $N_{j+m}(x) = N^{(j)}_m(N_j(x))$.
 
-Formalized by `Cslib.MachineLearning.Backpropagation.Net.forward_add`, a theorem declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Backpropagation.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#forward-add).
+Formalized by `Cslib.MachineLearning.Backpropagation.Net.forward_add`, a theorem declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Backpropagation.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#forward-add).
 
 ## Parametrized feedforward network
 
@@ -129,7 +129,7 @@ arbitrary maps $f_k : \mathbb{R}^{p(k)} \times \mathbb{R}^{d(k)} \to \mathbb{R}^
 each $k \in \mathbb{N}$: layer $k$ sends parameters $\theta \in \mathbb{R}^{p(k)}$ and an input
 $x \in \mathbb{R}^{d(k)}$ to $f_k(\theta, x)$.
 
-Formalized by `Cslib.MachineLearning.Backpropagation.PNet`, a structure declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Backpropagation.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#pnet).
+Formalized by `Cslib.MachineLearning.Backpropagation.PNet`, a structure declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Backpropagation.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#pnet).
 
 ## The network at fixed parameters
 
@@ -139,7 +139,7 @@ and the input (all spaces Euclidean). For parameters $\theta = (\theta_k)_{k \in
 $\theta_k \in \mathbb{R}^{p_k}$, the network at $\theta$ is the feedforward network whose layer
 $k$ is $g_k(\theta_k, \cdot) : \mathbb{R}^{d_k} \to \mathbb{R}^{d_{k+1}}$.
 
-Formalized by `Cslib.MachineLearning.Backpropagation.PNet.net`, a definition declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Backpropagation.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#net-2).
+Formalized by `Cslib.MachineLearning.Backpropagation.PNet.net`, a definition declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Backpropagation.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#net-2).
 
 ## Backpropagation computes the parameter gradients
 
@@ -161,7 +161,7 @@ where $\delta = Df_{k+1}(a_{k+1})^* \cdots Df_{L-1}(a_{L-1})^* \, \nabla \ell(a_
 $\delta = \nabla \ell(a_L)$ when $m = 0$) is the backward pass of $\nabla \ell(a_L)$ through
 layers $k + 1, \dots, L - 1$ of $N$, $D$ denotes the Fréchet derivative and $^*$ the adjoint.
 
-Formalized by `Cslib.MachineLearning.Backpropagation.gradient_param`, a theorem declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Backpropagation.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#gradient-param).
+Formalized by `Cslib.MachineLearning.Backpropagation.gradient_param`, a theorem declared in [CSLibExt/MachineLearning/Backpropagation.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Backpropagation.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html#gradient-param).
 
 ## Depends on
 
@@ -170,4 +170,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Backpropagation](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/machine-learning/supervised-learning/backpropagation)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Subharmonic functions
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/subharmonic-functions/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/subharmonic-functions/index.html).
 
 ## Subharmonic functions on the plane
 
@@ -22,7 +22,7 @@ $$
 The integral is taken to be $0$ when the integrand is not integrable over $[0, 2\pi]$, so for
 such a circle the condition only says $\varphi(a, b) \le 0$.
 
-Formalized by `MathlibExt.Analysis.ScottishBook184Wanted.IsSubharmonic`, a definition declared in [WantedExt/Analysis/ScottishBook184Wanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ScottishBook184Wanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/subharmonic-functions/index.html#is-subharmonic).
+Formalized by `MathlibExt.Analysis.ScottishBook184Wanted.IsSubharmonic`, a definition declared in [WantedExt/Analysis/ScottishBook184Wanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ScottishBook184Wanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/subharmonic-functions/index.html#is-subharmonic).
 
 ## Existence of the pure second partial derivatives
 
@@ -31,7 +31,7 @@ $\varphi : \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ has second partial deriv
 point of the plane the partial derivatives $\varphi_x$ and $\varphi_y$ exist, and the partial
 derivatives $\varphi_{xx} = (\varphi_x)_x$ and $\varphi_{yy} = (\varphi_y)_y$ also exist.
 
-Formalized by `MathlibExt.Analysis.ScottishBook184Wanted.HasSecondPartialDerivatives`, a definition declared in [WantedExt/Analysis/ScottishBook184Wanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ScottishBook184Wanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/subharmonic-functions/index.html#has-second-partial-derivatives).
+Formalized by `MathlibExt.Analysis.ScottishBook184Wanted.HasSecondPartialDerivatives`, a definition declared in [WantedExt/Analysis/ScottishBook184Wanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ScottishBook184Wanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/subharmonic-functions/index.html#has-second-partial-derivatives).
 
 ## Subharmonic functions with second partial derivatives have nonnegative Laplacian
 
@@ -48,7 +48,7 @@ are continuous.
 
 - S. Saks, Problem 184 of the Scottish Book; solved by A. Eremenko, "A problem of Stanislaw Saks", Mat. Stud. 52 (2019), 173-175 (arXiv:1911.09530). See the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
-Stated but not proved: `MathlibExt.Analysis.ScottishBook184Wanted.saks184_subharmonic_laplacian_nonneg` is written with `theorem_wanted` in [WantedExt/Analysis/ScottishBook184Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ScottishBook184Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/subharmonic-functions/index.html#saks184-subharmonic-laplacian-nonneg).
+Stated but not proved: `MathlibExt.Analysis.ScottishBook184Wanted.saks184_subharmonic_laplacian_nonneg` is written with `theorem_wanted` in [WantedExt/Analysis/ScottishBook184Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ScottishBook184Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/subharmonic-functions/index.html#saks184-subharmonic-laplacian-nonneg).
 
 ## Depends on
 
@@ -57,4 +57,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Subharmonic functions](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/subharmonic-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/potential-theory/subharmonic-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/potential-theory/subharmonic-functions)

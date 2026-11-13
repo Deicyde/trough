@@ -8,13 +8,13 @@ proof: formalized
 
 # 82.24 Relative effective Cartier divisors
 
-Section 82.24 of the Stacks Project, [Tag 0ERD](https://stacks.math.columbia.edu/tag/0ERD). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 82.24 of the Stacks Project, [Tag 0ERD](https://stacks.math.columbia.edu/tag/0ERD). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ERE, a lemma
 
 [Tag 0ERE](https://stacks.math.columbia.edu/tag/0ERE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.chowClassCanonical_gysinCycleMap_canonicalSection_flatPullbackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/RelativeEffectiveCartierFlatPullback.lean, line 649](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/RelativeEffectiveCartierFlatPullback.lean#L649). The attribute's comment: “first identity: i^* p^* α = (p|\_D)^* α in CH\_\{k+r}(D), on cycles: i^* is the refined Gysin map of Stacks 0ER1 for (O\_X(D), 1\_D) (gysinCycleMap at sectionGysinRule), p^* and (p|\_D)^* the flat pullbacks of Stacks 0EP8, the classes taken in the Chow group of Stacks 0EQ6 at the canonical embeddings of Stacks 0ENK (chowGroupCanonical); the identity holds already in Z(D)”.
+**`AlgebraicGeometry.Space.chowClassCanonical_gysinCycleMap_canonicalSection_flatPullbackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/RelativeEffectiveCartierFlatPullback.lean, line 649](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/RelativeEffectiveCartierFlatPullback.lean#L649). The attribute's comment: “first identity: i^* p^* α = (p|\_D)^* α in CH\_\{k+r}(D), on cycles: i^* is the refined Gysin map of Stacks 0ER1 for (O\_X(D), 1\_D) (gysinCycleMap at sectionGysinRule), p^* and (p|\_D)^* the flat pullbacks of Stacks 0EP8, the classes taken in the Chow group of Stacks 0EQ6 at the canonical embeddings of Stacks 0ENK (chowGroupCanonical); the identity holds already in Z(D)”.
 
 > **Stacks 0ERE, first identity.** In Situation 0EDT let `X, Y/B` be good, let `p : X ⟶ Y` be
 > flat of relative dimension `r + 1` and let `i : D → X` be a relative effective Cartier divisor on
@@ -53,7 +53,7 @@ theorem chowClassCanonical_gysinCycleMap_canonicalSection_flatPullbackMap (k : �
               hDv)) (k + 1) (k + r + 1) (by ring) α)
 ```
 
-**`AlgebraicGeometry.Space.chowClassCanonical_firstChernCapCycleMap_canonicalSection_flatPullbackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/RelativeEffectiveCartierFlatPullback.lean, line 688](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/RelativeEffectiveCartierFlatPullback.lean#L688). The attribute's comment: “second identity: c₁(O\_X(D)) ∩ p^* α = i\_*((p|\_D)^* α) in CH\_\{k+r}(X), on cycles: c₁ ∩ - is the cap product of Stacks 0EQJ at the canonical choices, p^* and (p|\_D)^* the flat pullbacks of Stacks 0EP8, i\_* the pushforward along the closed immersion, the classes taken in the Chow group of Stacks 0EQ6 at the canonical embeddings of Stacks 0ENK (chowGroupCanonical)”.
+**`AlgebraicGeometry.Space.chowClassCanonical_firstChernCapCycleMap_canonicalSection_flatPullbackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/RelativeEffectiveCartierFlatPullback.lean, line 688](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/RelativeEffectiveCartierFlatPullback.lean#L688). The attribute's comment: “second identity: c₁(O\_X(D)) ∩ p^* α = i\_*((p|\_D)^* α) in CH\_\{k+r}(X), on cycles: c₁ ∩ - is the cap product of Stacks 0EQJ at the canonical choices, p^* and (p|\_D)^* the flat pullbacks of Stacks 0EP8, i\_* the pushforward along the closed immersion, the classes taken in the Chow group of Stacks 0EQ6 at the canonical embeddings of Stacks 0ENK (chowGroupCanonical)”.
 
 > **Stacks 0ERE, second identity.** In the situation of
 > `AlgebraicGeometry.Space.chowClassCanonical_gysinCycleMap_canonicalSection_flatPullbackMap`, for
@@ -93,7 +93,7 @@ theorem chowClassCanonical_firstChernCapCycleMap_canonicalSection_flatPullbackMa
                 Dv hDv)) (k + 1) (k + r + 1) (by ring) α))
 ```
 
-**`AlgebraicGeometry.Space.chowClassCanonical_flatPullbackMap_canonicalSection_eq_zero_of_hasRelativeDimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/RelativeEffectiveCartierFlatPullback.lean, line 805](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/RelativeEffectiveCartierFlatPullback.lean#L805). The attribute's comment: “the case of relative dimension r = 0, where D is empty: every cycle on D is zero, and i^* p^* α = 0 in CH\_k(D) and c₁(O\_X(D)) ∩ p^* α = 0 in CH\_k(X), on cycles, the classes taken in the Chow groups of Stacks 0EQ6 at the canonical embeddings of Stacks 0ENK (chowGroupCanonical)”.
+**`AlgebraicGeometry.Space.chowClassCanonical_flatPullbackMap_canonicalSection_eq_zero_of_hasRelativeDimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/RelativeEffectiveCartierFlatPullback.lean, line 805](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/RelativeEffectiveCartierFlatPullback.lean#L805). The attribute's comment: “the case of relative dimension r = 0, where D is empty: every cycle on D is zero, and i^* p^* α = 0 in CH\_k(D) and c₁(O\_X(D)) ∩ p^* α = 0 in CH\_k(X), on cycles, the classes taken in the Chow groups of Stacks 0EQ6 at the canonical embeddings of Stacks 0ENK (chowGroupCanonical)”.
 
 > **Stacks 0ERE in relative dimension zero.** If `p : X ⟶ Y` is flat of relative dimension `0`
 > and `i : D → X` is a relative effective Cartier divisor on `X/Y`, then `D` has no points
@@ -137,4 +137,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 82.24, Tag 0ERD](https://stacks.math.columbia.edu/tag/0ERD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

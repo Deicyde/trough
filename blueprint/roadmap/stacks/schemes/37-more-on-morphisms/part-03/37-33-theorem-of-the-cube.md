@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.hasDescentLocus_of_flat_of_isProper, AlgebraicGeometry.exists_finiteLocallyFree_iso_of_fiberwiseFree, AlgebraicGeometry.exists_finiteLocallyFree_iso_of_fiberwiseFree_of_isReduced, AlgebraicGeometry.ValuativeTriviality.isTrivial_of_isTrivial_genericFiber, AlgebraicGeometry.IsDescentLocus.isClosedImmersion_hom_of_geometricallyIntegral, AlgebraicGeometry.exists_open_descendsFromBase_iff, AlgebraicGeometry.IsDescentLocus.exists_factorsThrough_iff_forall_of_injective_H1, AlgebraicGeometry.SheafOfModules.exists_isTrivial_on_open_of_isTrivial_faces
+lean: AlgebraicGeometry.hasDescentLocus_of_flat_of_isProper, AlgebraicGeometry.exists_finiteLocallyFree_iso_of_fiberwiseFree_of_isReduced, AlgebraicGeometry.ValuativeTriviality.isTrivial_of_isTrivial_genericFiber, AlgebraicGeometry.IsDescentLocus.isClosedImmersion_hom_of_geometricallyIntegral, AlgebraicGeometry.exists_open_descendsFromBase_iff, AlgebraicGeometry.IsDescentLocus.exists_factorsThrough_iff_forall_of_injective_H1, AlgebraicGeometry.SheafOfModules.exists_isTrivial_on_open_of_isTrivial_faces, AlgebraicGeometry.SheafOfModules.isTrivial_of_isTrivial_faces_and_fiber
 statement: formalized
 proof: formalized
 ---
 
 # 37.33 Theorem of the cube
 
-Section 37.33 of the Stacks Project, [Tag 0BEZ](https://stacks.math.columbia.edu/tag/0BEZ). 8 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.33 of the Stacks Project, [Tag 0BEZ](https://stacks.math.columbia.edu/tag/0BEZ). 8 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BDP, a lemma
 
 [Tag 0BDP](https://stacks.math.columbia.edu/tag/0BDP) in the Stacks Project.
 
-**`AlgebraicGeometry.hasDescentLocus_of_flat_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusRepresentable.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusRepresentable.lean#L47).
+**`AlgebraicGeometry.hasDescentLocus_of_flat_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusRepresentable.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusRepresentable.lean#L47).
 
 > **Stacks Tag 0BDP.** Let `f : X ⟶ S` be a flat, proper morphism of finite presentation and
 > `E` a finite locally free `𝒪_X`-module. Assume that `𝒪_T ⟶ p_*𝒪_{X_T}` is an isomorphism for
@@ -36,36 +36,15 @@ theorem hasDescentLocus_of_flat_of_isProper {X S : Scheme.{u}} (f : X ⟶ S) [Fl
 
 [Tag 0EX7](https://stacks.math.columbia.edu/tag/0EX7) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finiteLocallyFree_iso_of_fiberwiseFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FiberwiseFreeReducedBase.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FiberwiseFreeReducedBase.lean#L218). The attribute's comment: “assuming the representability of the descent locus of Tag 0BDP”.
-
-> **Stacks Tag 0EX7, reduced to representability of the descent condition.** A finite locally
-> free module on `X` whose restriction to every fibre of `f` is free of finite rank is the pullback
-> of a finite locally free module on the reduced base `S`, provided the descent condition for it is
-> represented — that is, provided the conclusion of Stacks Tag 0BDP holds for `f` and `E`.
->
-> Tag 0BDP's hypotheses on `f` — flatness, properness, finite presentation, and invariance of the
-> structure sheaf under pushforward along every base change — enter only through that
-> representability, and so do not appear.
-
-```lean
-theorem exists_finiteLocallyFree_iso_of_fiberwiseFree {X S : Scheme.{u}} (f : X ⟶ S)
-    (E : _root_.SheafOfModules.{u} (structureSheafRing X.toRingedSpace))
-    (h0BDP : HasDescentLocus f E) [IsReduced S]
-    (hfiber : ∀ s : S, ∃ r : ℕ,
-      Nonempty ((modulePullback
-          (pullback.fst f (S.fromSpecResidueField s)).toLRSHom.toShHom).obj E ≅
-        _root_.SheafOfModules.free (ULift.{u} (Fin r)))) :
-    ∃ N : _root_.SheafOfModules.{u} (structureSheafRing S.toRingedSpace),
-      SheafOfModules.IsFiniteLocallyFree.{u, u, u} N ∧
-        Nonempty ((modulePullback f.toLRSHom.toShHom).obj N ≅ E)
-```
-
-**`AlgebraicGeometry.exists_finiteLocallyFree_iso_of_fiberwiseFree_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FiberwiseFreeReducedBaseUnconditional.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FiberwiseFreeReducedBaseUnconditional.lean#L39).
+**`AlgebraicGeometry.exists_finiteLocallyFree_iso_of_fiberwiseFree_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FiberwiseFreeReducedBaseUnconditional.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/FiberwiseFreeReducedBaseUnconditional.lean#L42).
 
 > **Stacks Tag 0EX7.** Let `f : X ⟶ S` be a flat, proper morphism of finite presentation such
 > that `𝒪_S ⟶ f_*𝒪_X` is an isomorphism and remains so after arbitrary base change. Let `E` be a
 > finite locally free `𝒪_X`-module such that (1) `E|_{X_s} ≅ 𝒪_{X_s}^{⊕ r_s}` for every `s ∈ S`,
 > and (2) `S` is reduced. Then `E ≅ f^*N` for a finite locally free `𝒪_S`-module `N`.
+>
+> The descent locus of `E` exists by Stacks Tag 0BDP, `hasDescentLocus_of_flat_of_isProper`, which
+> consumes the hypotheses on `f` and the finite local freeness of `E`.
 
 ```lean
 theorem exists_finiteLocallyFree_iso_of_fiberwiseFree_of_isReduced {X S : Scheme.{u}}
@@ -88,7 +67,7 @@ theorem exists_finiteLocallyFree_iso_of_fiberwiseFree_of_isReduced {X S : Scheme
 
 [Tag 0EX8](https://stacks.math.columbia.edu/tag/0EX8) in the Stacks Project.
 
-**`AlgebraicGeometry.ValuativeTriviality.isTrivial_of_isTrivial_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusValuationRing.lean, line 828](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusValuationRing.lean#L828).
+**`AlgebraicGeometry.ValuativeTriviality.isTrivial_of_isTrivial_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusValuationRing.lean, line 825](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusValuationRing.lean#L825).
 
 > **[Stacks, Tag 0EX8].** Let `f : X ⟶ Spec A` be a proper flat
 > morphism of finite presentation over a valuation ring `A` with fraction field `K`, and let `L` be
@@ -115,7 +94,7 @@ theorem isTrivial_of_isTrivial_genericFiber
 
 [Tag 0BF0](https://stacks.math.columbia.edu/tag/0BF0) in the Stacks Project.
 
-**`AlgebraicGeometry.IsDescentLocus.isClosedImmersion_hom_of_geometricallyIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusClosedness.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusClosedness.lean#L167).
+**`AlgebraicGeometry.IsDescentLocus.isClosedImmersion_hom_of_geometricallyIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusClosedness.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusClosedness.lean#L167).
 
 > **[Stacks, Tag 0BF0].** Let `f : X ⟶ S` be flat, proper and of finite
 > presentation, with `𝒪_T ⟶ f_{T,*}𝒪_{X_T}` an isomorphism for every base change `T ⟶ S`, let `E`
@@ -140,7 +119,7 @@ theorem IsDescentLocus.isClosedImmersion_hom_of_geometricallyIntegral
 
 [Tag 0BF1](https://stacks.math.columbia.edu/tag/0BF1) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_descendsFromBase_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescentLocusComparison0BF1.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/DescentLocusComparison0BF1.lean#L253).
+**`AlgebraicGeometry.exists_open_descendsFromBase_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescentLocusComparison0BF1.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/DescentLocusComparison0BF1.lean#L253).
 
 > **Stacks Tag 0BF1.** Let `f : X ⟶ S` and `f' : X' ⟶ S` satisfy the hypotheses of
 > [Stacks, Tag 0BDP] — flat, proper, of finite presentation, with `𝒪_T ⟶ p_* 𝒪_{X_T}` an
@@ -193,7 +172,7 @@ theorem exists_open_descendsFromBase_iff {X X' S : Scheme.{u}} (f : X ⟶ S) (f'
 
 [Tag 0BF2](https://stacks.math.columbia.edu/tag/0BF2) in the Stacks Project.
 
-**`AlgebraicGeometry.IsDescentLocus.exists_factorsThrough_iff_forall_of_injective_H1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusIntersection.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusIntersection.lean#L407).
+**`AlgebraicGeometry.IsDescentLocus.exists_factorsThrough_iff_forall_of_injective_H1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusIntersection.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/DescentLocusIntersection.lean#L407).
 
 > **[Stacks, Tag 0BF2].** Let `f : X ⟶ S` and the `i k ≫ f : Y k ⟶ S` (`k` in a finite type)
 > be flat, proper and of finite presentation with `𝒪_T ⟶ p_{T,*}𝒪` an isomorphism after every base
@@ -248,7 +227,7 @@ theorem IsDescentLocus.exists_factorsThrough_iff_forall_of_injective_H1
 
 [Tag 0BF3](https://stacks.math.columbia.edu/tag/0BF3) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.exists_isTrivial_on_open_of_isTrivial_faces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescentLocusTrivialityKunneth.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/DescentLocusTrivialityKunneth.lean#L59).
+**`AlgebraicGeometry.SheafOfModules.exists_isTrivial_on_open_of_isTrivial_faces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescentLocusTrivialityKunneth.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/DescentLocusTrivialityKunneth.lean#L59).
 
 > Let `f : X ⟶ S` and `g : Y ⟶ S` be flat, proper and of finite presentation with
 > `𝒪_T ≅ f_{T,*}𝒪` and `𝒪_T ≅ g_{T,*}𝒪` after every base change, with sections `σ` of `f` and `τ`
@@ -304,7 +283,7 @@ theorem exists_isTrivial_on_open_of_isTrivial_faces
 
 [Tag 0BF4](https://stacks.math.columbia.edu/tag/0BF4) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.isTrivial_of_isTrivial_faces_and_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/TheoremOfTheCube0BF4.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/TheoremOfTheCube0BF4.lean#L46).
+**`AlgebraicGeometry.SheafOfModules.isTrivial_of_isTrivial_faces_and_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/TheoremOfTheCube0BF4.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/TheoremOfTheCube0BF4.lean#L46).
 
 > **The theorem of the cube.** Let `f : X ⟶ S`, `g : Y ⟶ S` and `h : Z ⟶ S` be morphisms of
 > schemes, with `f` and `g` flat, proper, of finite presentation and with geometrically integral
@@ -363,7 +342,7 @@ theorem isTrivial_of_isTrivial_faces_and_fiber {S X Y Z : Scheme.{u}}
         (pullback (pullback.fst f g ≫ f) h).IsSheaf) L
 ```
 
-**`AlgebraicGeometry.SheafOfModules.isTrivial_of_isTrivial_face_and_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/TheoremOfTheCube.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/TheoremOfTheCube.lean#L223). The attribute's comment: “assuming the conclusions of Tags 0BDP, 0BF0 and 0BF3 for the descent locus”.
+**`AlgebraicGeometry.SheafOfModules.isTrivial_of_isTrivial_face_and_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/TheoremOfTheCube.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/TheoremOfTheCube.lean#L223). The attribute's comment: “assuming the conclusions of Tags 0BDP, 0BF0 and 0BF3 for the descent locus”.
 
 > **The theorem of the cube.** Let `f : X ⟶ S`, `g : Y ⟶ S` and `h : Z ⟶ S` be morphisms of
 > schemes, let `x` and `y` be sections of `f` and `g`, and let `L` be a sheaf of modules on
@@ -414,4 +393,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.33, Tag 0BEZ](https://stacks.math.columbia.edu/tag/0BEZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

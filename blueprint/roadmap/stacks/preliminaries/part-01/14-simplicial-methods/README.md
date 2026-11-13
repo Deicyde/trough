@@ -1,6 +1,6 @@
 # 14 Simplicial Methods
 
-Chapter 14 of the Stacks Project, *Simplicial Methods*, [Tag 0162](https://stacks.math.columbia.edu/tag/0162): the 32 sections of its 34 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 162 tags are carried by 158 declarations of the repository (all in StacksFrontier) and 49 registered declarations.
+Chapter 14 of the Stacks Project, *Simplicial Methods*, [Tag 0162](https://stacks.math.columbia.edu/tag/0162): the 32 sections of its 34 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 162 tags are carried by 173 declarations of the repository (all in StacksFrontier) and 49 registered declarations.
 
 ## [14.2 The category of finite… to 14.22 Simplicial objects in…](part-01/README.md)
 

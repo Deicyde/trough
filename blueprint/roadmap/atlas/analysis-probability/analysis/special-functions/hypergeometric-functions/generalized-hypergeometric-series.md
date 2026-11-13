@@ -8,7 +8,7 @@ proof: formalized
 
 # Generalized hypergeometric series
 
-8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html).
+8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html).
 
 ## Generalized hypergeometric coefficient
 
@@ -27,7 +27,7 @@ hypergeometric series ${}_pF_q$ with $p = |a|$ and $q = |b|$.
 Inverses are taken in $K$ with the convention $0^{-1} = 0$, so the coefficient is $0$ whenever
 the lower product or $n!$ is zero in $K$; the latter can happen in positive characteristic.
 
-Formalized by `MetaMathlibExt.GeneralizedHypergeometric.generalizedHypergeometricCoefficient`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#generalized-hypergeometric-coefficient).
+Formalized by `MetaMathlibExt.GeneralizedHypergeometric.generalizedHypergeometricCoefficient`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#generalized-hypergeometric-coefficient).
 
 ## Generalized hypergeometric series
 
@@ -38,7 +38,7 @@ $n$-linear map $(x_1, \dots, x_n) \mapsto c_n \, x_1 x_2 \cdots x_n$, where $c_n
 $n$-th generalized hypergeometric coefficient with upper parameters $a$ and lower parameters
 $b$.
 
-Formalized by `MetaMathlibExt.GeneralizedHypergeometric.generalizedHypergeometricSeries`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#generalized-hypergeometric-series).
+Formalized by `MetaMathlibExt.GeneralizedHypergeometric.generalizedHypergeometricSeries`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#generalized-hypergeometric-series).
 
 ## Admissible lower parameters
 
@@ -50,7 +50,7 @@ every natural number $k$.
 
 - arXiv:2608.10675, KMY-Conj.tex lines 456–470, the exclusion of lower parameters from $\mathbb{Z}_{\le 0}$ for ${}_{m+1}F_m$.
 
-Formalized by `MetaMathlibExt.GeneralizedHypergeometric.LowerParametersAdmissible`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#lower-parameters-admissible).
+Formalized by `MetaMathlibExt.GeneralizedHypergeometric.LowerParametersAdmissible`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#lower-parameters-admissible).
 
 ## Summability of the generalized hypergeometric series
 
@@ -62,7 +62,7 @@ summable in $\mathbb{C}$, where $c_n$ is the $n$-th generalized hypergeometric c
 Summability of a family in $\mathbb{C}$ is unconditional summability, which is equivalent to
 absolute convergence of $\sum_n c_n z^n$.
 
-Formalized by `MetaMathlibExt.GeneralizedHypergeometric.SummableHypergeometric`, an abbreviation declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#summable-hypergeometric).
+Formalized by `MetaMathlibExt.GeneralizedHypergeometric.SummableHypergeometric`, an abbreviation declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#summable-hypergeometric).
 
 ## Generalized hypergeometric function
 
@@ -78,7 +78,7 @@ when that family is not summable; no condition on the parameters or on $z$ is im
 
 - arXiv:2608.10675, KMY-Conj.tex lines 456–470, the infinite-sum presentation of ${}_{m+1}F_m$.
 
-Formalized by `MetaMathlibExt.GeneralizedHypergeometric.generalizedHypergeometricValue`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#generalized-hypergeometric-value).
+Formalized by `MetaMathlibExt.GeneralizedHypergeometric.generalizedHypergeometricValue`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#generalized-hypergeometric-value).
 
 ## Rising factorials at admissible lower parameters are nonzero
 
@@ -90,7 +90,7 @@ is nonzero.
 This follows because over $\mathbb{C}$, $(b)_n = 0$ if and only if $b = -k$ for some natural
 number $k < n$.
 
-Formalized by `MetaMathlibExt.GeneralizedHypergeometric.lowerParametersAdmissible_ascPochhammer_ne_zero`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#lower-parameters-admissible-asc-pochhamm).
+Formalized by `MetaMathlibExt.GeneralizedHypergeometric.lowerParametersAdmissible_ascPochhammer_ne_zero`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#lower-parameters-admissible-asc-pochhamm).
 
 ## Terminating generalized hypergeometric series are summable
 
@@ -103,7 +103,7 @@ generalized hypergeometric series with these parameters is summable at $z$.
 Only finitely many terms are nonzero, since $c_n = 0$ for $n > N$; no condition on the lower
 parameters is needed.
 
-Formalized by `MetaMathlibExt.GeneralizedHypergeometric.summableHypergeometric_of_neg_coe_nat_mem_upper`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#summable-hypergeometric-of-neg-coe-nat-m).
+Formalized by `MetaMathlibExt.GeneralizedHypergeometric.summableHypergeometric_of_neg_coe_nat_mem_upper`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#summable-hypergeometric-of-neg-coe-nat-m).
 
 ## Terminating generalized hypergeometric series are finite sums
 
@@ -119,7 +119,7 @@ $$
 No condition on the lower parameters is needed: $c_n = 0$ for $n > N$ because the rising
 factorial $(-N)_n = (-N)(-N+1)\cdots(-N+n-1)$ vanishes.
 
-Formalized by `MetaMathlibExt.GeneralizedHypergeometric.generalizedHypergeometric_tsum_eq_finset_sum`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#generalized-hypergeometric-tsum-eq-finse).
+Formalized by `MetaMathlibExt.GeneralizedHypergeometric.generalizedHypergeometric_tsum_eq_finset_sum`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/GeneralizedHypergeometric.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html#generalized-hypergeometric-tsum-eq-finse).
 
 ## Depends on
 
@@ -128,4 +128,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized hypergeometric series](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/special-functions/hypergeometric-functions/generalized-hypergeometric-series)

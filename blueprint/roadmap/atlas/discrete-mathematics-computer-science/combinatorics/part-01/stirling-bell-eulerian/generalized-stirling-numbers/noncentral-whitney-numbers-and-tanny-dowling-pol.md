@@ -8,7 +8,7 @@ proof: formalized
 
 # Noncentral Whitney numbers and Tanny–Dowling polynomials
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/noncentral-whitney-numbers-and-tanny-dowling-pol/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/noncentral-whitney-numbers-and-tanny-dowling-pol/index.html).
 
 ## Noncentral Whitney numbers of the second kind
 
@@ -23,7 +23,7 @@ $$W_{m,a}(n + 1, k + 1) = W_{m,a}(n, k) + ((k + 1) m - a) \, W_{m,a}(n, k + 1).$
 
 - <https://cs.uwaterloo.ca/journals/JIS/VOL24/Mangontarum/mang13.tex>, recurrence underlying the Tanny-Dowling polynomial in equation (6).
 
-Formalized by `MetaMathlibExt.noncentralWhitneySecond`, a definition declared in [MathlibExt/NumberTheory/NoncentralTannyDowlingPolynomial.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NoncentralTannyDowlingPolynomial.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/noncentral-whitney-numbers-and-tanny-dowling-pol/index.html#noncentral-whitney-second).
+Formalized by `MetaMathlibExt.noncentralWhitneySecond`, a definition declared in [MathlibExt/NumberTheory/NoncentralTannyDowlingPolynomial.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NoncentralTannyDowlingPolynomial.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/noncentral-whitney-numbers-and-tanny-dowling-pol/index.html#noncentral-whitney-second).
 
 ## Noncentral Tanny–Dowling polynomials
 
@@ -38,7 +38,7 @@ where $W_{m,a}(n, k)$ are the noncentral Whitney numbers of the second kind.
 
 - equation (6), source <https://cs.uwaterloo.ca/journals/JIS/VOL24/Mangontarum/mang13.tex>.
 
-Formalized by `MetaMathlibExt.noncentralTannyDowlingPolynomial`, a definition declared in [MathlibExt/NumberTheory/NoncentralTannyDowlingPolynomial.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NoncentralTannyDowlingPolynomial.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/noncentral-whitney-numbers-and-tanny-dowling-pol/index.html#noncentral-tanny-dowling-polynomial).
+Formalized by `MetaMathlibExt.noncentralTannyDowlingPolynomial`, a definition declared in [MathlibExt/NumberTheory/NoncentralTannyDowlingPolynomial.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NoncentralTannyDowlingPolynomial.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/noncentral-whitney-numbers-and-tanny-dowling-pol/index.html#noncentral-tanny-dowling-polynomial).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Noncentral Whitney numbers and Tanny–Dowling polynomials](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/noncentral-whitney-numbers-and-tanny-dowling-pol/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/noncentral-whitney-numbers-and-tanny-dowling-pol)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/noncentral-whitney-numbers-and-tanny-dowling-pol)

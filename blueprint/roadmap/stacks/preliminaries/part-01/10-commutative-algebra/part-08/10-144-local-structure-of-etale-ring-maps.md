@@ -8,7 +8,7 @@ proof: formalized
 
 # 10.144 Local structure of étale ring maps
 
-Section 10.144 of the Stacks Project, [Tag 0G1A](https://stacks.math.columbia.edu/tag/0G1A). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.144 of the Stacks Project, [Tag 0G1A](https://stacks.math.columbia.edu/tag/0G1A). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00UB, a definition
 
@@ -16,15 +16,15 @@ Section 10.144 of the Stacks Project, [Tag 0G1A](https://stacks.math.columbia.ed
 
 Declarations registered for the tag:
 
-- [`Algebra.IsStandardEtale`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.IsStandardEtale#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L172) (StacksFrontier): “the property of an `R`-algebra”.
-- [`StandardEtalePair`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=StandardEtalePair#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L173) (StacksFrontier): “the pair `(f, g)`”.
-- [`StandardEtalePair.equivAwayQuotient`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=StandardEtalePair.equivAwayQuotient#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L174) (StacksFrontier): “its ring, as `R[x]_g/(f)`”.
+- [`Algebra.IsStandardEtale`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.IsStandardEtale#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L172) (StacksFrontier): “the property of an `R`-algebra”.
+- [`StandardEtalePair`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=StandardEtalePair#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L173) (StacksFrontier): “the pair `(f, g)`”.
+- [`StandardEtalePair.equivAwayQuotient`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=StandardEtalePair.equivAwayQuotient#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L174) (StacksFrontier): “its ring, as `R[x]_g/(f)`”.
 
 ## Tag 00UC, a lemma
 
 [Tag 00UC](https://stacks.math.columbia.edu/tag/00UC) in the Stacks Project.
 
-**`standardEtalePair_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L240). The attribute's comment: “(1)”. References: EGA IV (18.4.3), “(F)”; SGA 1 I (7.3), “partial”; SGA 1 I (7.4), “partial”.
+**`standardEtalePair_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L240). The attribute's comment: “(1)”. References: EGA IV (18.4.3), “(F)”; SGA 1 I (7.3), “partial”; SGA 1 I (7.4), “partial”.
 
 > For an explicit standard étale pair `(f, g)` over `R`, the canonical map
 > `R → R[x]_g/(f)` is étale.
@@ -34,7 +34,7 @@ theorem standardEtalePair_isEtale {R : Type*} [CommRing R] (P : StandardEtalePai
     Algebra.Etale R P.Ring
 ```
 
-**`standardEtalePair_baseChange_isStandardEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L260). The attribute's comment: “(2)”. References: SGA 1 IX (1.3), “standard étale case”.
+**`standardEtalePair_baseChange_isStandardEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L260). The attribute's comment: “(2)”. References: SGA 1 IX (1.3), “standard étale case”.
 
 > The base change `T ⊗[R] (R[x]_g/(f))` is standard étale over `T`.
 
@@ -44,7 +44,7 @@ theorem standardEtalePair_baseChange_isStandardEtale {R T : Type*} [CommRing R]
     Algebra.IsStandardEtale T (T ⊗[R] P.Ring)
 ```
 
-**`standardEtalePair_localizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L270). The attribute's comment: “(3)”.
+**`standardEtalePair_localizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L270). The attribute's comment: “(3)”.
 
 > For a standard étale pair `(f, g)` over `R` with ring `A = R[x]_g/(f)` and any `α : A`, the
 > composite `R → A → A[1/α]` is standard étale.
@@ -57,7 +57,7 @@ theorem standardEtalePair_localizationAway {R : Type*} [CommRing R]
     Algebra.IsStandardEtale R Aα
 ```
 
-**`standardEtale_not_isStableUnderComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L512). The attribute's comment: “(4)”.
+**`standardEtale_not_isStableUnderComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L512). The attribute's comment: “(4)”.
 
 > There exist commutative rings `R, S, T` with algebra structures forming a scalar tower
 > `R → S → T` such that `R → S` and `S → T` are standard étale but the composite `R → T` is not.
@@ -74,7 +74,7 @@ theorem standardEtale_not_isStableUnderComposition :
 
 [Tag 00UD](https://stacks.math.columbia.edu/tag/00UD) in the Stacks Project.
 
-**`Algebra.exists_etale_liesOver_residueFieldRingEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/ResidueFieldExtension.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/ResidueFieldExtension.lean#L428). The attribute's comment: “The isomorphism of extensions `κ(p')/κ(p) ≅ κ(p) ⊂ L` is pinned as a ring isomorphism `e : κ(p') ≃+* L` with `e ∘ Ideal.ResidueField.map p p' (algebraMap R R') = algebraMap κ(p) L`. Only `Algebra.Etale R R'` is asserted, as in the source's statement; that `R'` may be taken standard étale is Proposition 00UE. See the module docstring.”. References: SGA 2 XIV (3.4), “affine case”.
+**`Algebra.exists_etale_liesOver_residueFieldRingEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/ResidueFieldExtension.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/ResidueFieldExtension.lean#L428). The attribute's comment: “The isomorphism of extensions `κ(p')/κ(p) ≅ κ(p) ⊂ L` is pinned as a ring isomorphism `e : κ(p') ≃+* L` with `e ∘ Ideal.ResidueField.map p p' (algebraMap R R') = algebraMap κ(p) L`. Only `Algebra.Etale R R'` is asserted, as in the source's statement; that `R'` may be taken standard étale is Proposition 00UE. See the module docstring.”. References: SGA 2 XIV (3.4), “affine case”.
 
 > **Stacks 00UD.** Let `R` be a ring, `p` a prime of `R` and `L/κ(p)` a finite separable field
 > extension. Then there are an étale ring map `R → R'` and a prime `p'` of `R'` lying over `p`
@@ -96,7 +96,7 @@ public theorem exists_etale_liesOver_residueFieldRingEquiv {R : Type u} [CommRin
 
 [Tag 00UE](https://stacks.math.columbia.edu/tag/00UE) in the Stacks Project.
 
-**`Algebra.exists_isStandardEtale_of_exists_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L149). The attribute's comment: “The hypothesis "étale at `q`" is Definition 00U1 verbatim, `∃ g ∉ Q, Algebra.Etale R (Localization.Away g)`, rather than Mathlib's `Algebra.IsEtaleAt`, which is `Algebra.FormallyEtale R S_Q` and agrees with it only for `S` finitely presented over `R`; the source assumes no finiteness on `S`, so this is strictly more general than Mathlib's `Algebra.IsEtaleAt.exists_isStandardEtale` and implies it. `S_g` is `Localization.Away g` with its `R`-algebra structure the composite `R → S → S_g`. See the module docstring.”.
+**`Algebra.exists_isStandardEtale_of_exists_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/StandardEtale.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/StandardEtale.lean#L149). The attribute's comment: “The hypothesis "étale at `q`" is Definition 00U1 verbatim, `∃ g ∉ Q, Algebra.Etale R (Localization.Away g)`, rather than Mathlib's `Algebra.IsEtaleAt`, which is `Algebra.FormallyEtale R S_Q` and agrees with it only for `S` finitely presented over `R`; the source assumes no finiteness on `S`, so this is strictly more general than Mathlib's `Algebra.IsEtaleAt.exists_isStandardEtale` and implies it. `S_g` is `Localization.Away g` with its `R`-algebra structure the composite `R → S → S_g`. See the module docstring.”.
 
 > Let `R → S` be a ring map and `q ⊂ S` a prime. If `R → S` is étale at `q`, that is, if
 > `R → S_g` is étale for some `g ∈ S` with `g ∉ q`, then there is a `g ∈ S`, `g ∉ q`,
@@ -113,7 +113,7 @@ public theorem Algebra.exists_isStandardEtale_of_exists_etale {R : Type u} {S : 
 
 [Tag 00UF](https://stacks.math.columbia.edu/tag/00UF) in the Stacks Project.
 
-**`Algebra.IsStandardEtale.exists_finite_faithfullyFlat_forall_exists_comp_eq_comap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FiniteFlatCover.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/FiniteFlatCover.lean#L373). The attribute's comment: “Conditions (1) and (2) are `Module.Finite`, `Algebra.FinitePresentation` and `Module.FaithfullyFlat` over `R`, faithful flatness being flatness plus surjectivity of `Spec(S') → Spec(R)`; `S'_{g'}` is an arbitrary localization of `S'` away from `g'`; lying over a common prime is the equation between contractions, and the factorization is pinned by an equation between the canonical maps `R → S'_{g'}`. See the module docstring.”.
+**`Algebra.IsStandardEtale.exists_finite_faithfullyFlat_forall_exists_comp_eq_comap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FiniteFlatCover.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/FiniteFlatCover.lean#L373). The attribute's comment: “Conditions (1) and (2) are `Module.Finite`, `Algebra.FinitePresentation` and `Module.FaithfullyFlat` over `R`, faithful flatness being flatness plus surjectivity of `Spec(S') → Spec(R)`; `S'_{g'}` is an arbitrary localization of `S'` away from `g'`; lying over a common prime is the equation between contractions, and the factorization is pinned by an equation between the canonical maps `R → S'_{g'}`. See the module docstring.”.
 
 > **Stacks 00UF.** Let `R → S` be a standard étale ring map. Then there is a finite, finitely
 > presented, faithfully flat `R`-algebra `S'` — equivalently, `S'` is finite projective over `R` and
@@ -138,7 +138,7 @@ public theorem Algebra.IsStandardEtale.exists_finite_faithfullyFlat_forall_exist
 
 [Tag 00UG](https://stacks.math.columbia.edu/tag/00UG) in the Stacks Project.
 
-**`Algebra.Etale.exists_finite_faithfullyFlat_forall_exists_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FiniteFlatCover.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/FiniteFlatCover.lean#L689). The attribute's comment: “Hypotheses (1) and (2) are `Algebra.Etale` and `Module.FaithfullyFlat` over `R`, faithful flatness being flatness — which étale supplies — plus surjectivity of `Spec(S) → Spec(R)`; conclusions (1) and (2) are likewise `Module.Finite`, `Algebra.FinitePresentation` and `Module.FaithfullyFlat` over `R`. `S'_{g'}` is an arbitrary localization of `S'` away from `g'`, and the factorization in (3) is pinned by an equation between the canonical maps `R → S'_{g'}`. See the module docstring.”.
+**`Algebra.Etale.exists_finite_faithfullyFlat_forall_exists_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FiniteFlatCover.lean, line 689](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/FiniteFlatCover.lean#L689). The attribute's comment: “Hypotheses (1) and (2) are `Algebra.Etale` and `Module.FaithfullyFlat` over `R`, faithful flatness being flatness — which étale supplies — plus surjectivity of `Spec(S) → Spec(R)`; conclusions (1) and (2) are likewise `Module.Finite`, `Algebra.FinitePresentation` and `Module.FaithfullyFlat` over `R`. `S'_{g'}` is an arbitrary localization of `S'` away from `g'`, and the factorization in (3) is pinned by an equation between the canonical maps `R → S'_{g'}`. See the module docstring.”.
 
 > **Stacks 00UG.** Let `R → S` be a ring map which is étale and surjective on spectra. Then
 > there is a finite, finitely presented, faithfully flat `R`-algebra `S'` — equivalently, `S'` is
@@ -164,4 +164,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.144, Tag 0G1A](https://stacks.math.columbia.edu/tag/0G1A)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Poisson processes
 
-12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html).
+12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html).
 
 ## Probability Theory
 
@@ -19,13 +19,13 @@ Karlin–Taylor 1975, ch. 4): `N 0 = 0` and the paths are nondecreasing almost s
 increments over consecutive intervals are independent, and for `s ≤ t` the increment `N t - N s`
 has the Poisson law of mean `r (t - s)`.
 
-Formalized by `ProbabilityTheory.IsPoissonProcess`, a structure declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Process/PoissonProcess.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#is-poisson-process).
+Formalized by `ProbabilityTheory.IsPoissonProcess`, a structure declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Process/PoissonProcess.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#is-poisson-process).
 
 ## Arrival times from interarrival times
 
 The `n`-th arrival time `S n = T 0 + ⋯ + T (n - 1)` of the interarrival times `T`.
 
-Formalized by `ProbabilityTheory.PoissonProcess.arrivalTime`, a definition declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Process/PoissonProcess.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#arrival-time).
+Formalized by `ProbabilityTheory.PoissonProcess.arrivalTime`, a definition declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Process/PoissonProcess.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#arrival-time).
 
 ## Counting process of interarrival times
 
@@ -33,28 +33,28 @@ The counting process of the interarrival times `T`: `count T t ω` is the number
 `n ≥ 1` with `S n ≤ t`. When that set is infinite (a null event for exponential interarrivals of
 positive rate) `Set.ncard` returns `0`.
 
-Formalized by `ProbabilityTheory.PoissonProcess.count`, a definition declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Process/PoissonProcess.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#count).
+Formalized by `ProbabilityTheory.PoissonProcess.count`, a definition declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Process/PoissonProcess.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#count).
 
 ## Arrival times of exponential interarrivals are Erlang
 
 The `(n + 1)`-th arrival time of i.i.d. rate-`r` exponential interarrivals has the Gamma
 (Erlang) law with shape `n + 1` and rate `r` (Karlin–Taylor 1975, §4.2).
 
-Formalized by `ProbabilityTheory.PoissonProcess.hasLaw_arrivalTime`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Process/PoissonProcess.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#has-law-arrival-time).
+Formalized by `ProbabilityTheory.PoissonProcess.hasLaw_arrivalTime`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Process/PoissonProcess.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#has-law-arrival-time).
 
 ## Arrival counts of exponential interarrivals are Poisson
 
 The number of arrivals in `[0, t]` of i.i.d. rate-`r` exponential interarrivals has the
 Poisson law of mean `r t` (Karlin–Taylor 1975, §4.2, Theorem 2.1).
 
-Formalized by `ProbabilityTheory.PoissonProcess.hasLaw_count`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Process/PoissonProcess.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#has-law-count).
+Formalized by `ProbabilityTheory.PoissonProcess.hasLaw_count`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Process/PoissonProcess.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#has-law-count).
 
 ## Counting process starts at zero almost surely
 
 The counting process of i.i.d. rate-`r` exponential interarrivals starts at `0` almost
 surely (all interarrival times are positive almost surely).
 
-Formalized by `ProbabilityTheory.PoissonProcess.ae_count_zero`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Process/PoissonProcess.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#ae-count-zero).
+Formalized by `ProbabilityTheory.PoissonProcess.ae_count_zero`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Process/PoissonProcess.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#ae-count-zero).
 
 ## Counting process has nondecreasing paths almost surely
 
@@ -62,7 +62,7 @@ The counting process of i.i.d. rate-`r` exponential interarrivals has nondecreas
 almost surely (the arrival times tend to infinity almost surely, so every arrival set in
 `[0, t]` is finite).
 
-Formalized by `ProbabilityTheory.PoissonProcess.ae_count_monotone`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 508](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Process/PoissonProcess.lean#L508). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#ae-count-monotone).
+Formalized by `ProbabilityTheory.PoissonProcess.ae_count_monotone`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 508](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Process/PoissonProcess.lean#L508). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#ae-count-monotone).
 
 ## Superposition
 
@@ -70,7 +70,7 @@ Formalized by `ProbabilityTheory.PoissonProcess.ae_count_monotone`, a theorem de
 `r₁` and `r₂` is a Poisson process of rate `r₁ + r₂`. Independence is of the two processes as
 random paths.
 
-Formalized by `ProbabilityTheory.IsPoissonProcess.add`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Process/PoissonProcess.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#add).
+Formalized by `ProbabilityTheory.IsPoissonProcess.add`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Process/PoissonProcess.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#add).
 
 ## Thinning of a Poisson process
 
@@ -78,7 +78,7 @@ The thinning of `N` by the marks `B`: the number of indices `i < N t` with `B i`
 number of points of `N` in `[0, t]` that are kept when the `i`-th point (in time order, from
 `0`) is kept iff `B i`.
 
-Formalized by `ProbabilityTheory.PoissonProcess.thinning`, a definition declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 880](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Process/PoissonProcess.lean#L880). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#thinning).
+Formalized by `ProbabilityTheory.PoissonProcess.thinning`, a definition declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 880](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Process/PoissonProcess.lean#L880). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#thinning).
 
 ## Thinning
 
@@ -87,7 +87,7 @@ process of rate `r` independently with probability `p`, independently of the pro
 Poisson process of rate `p r`. The marks `B i` are i.i.d. with `P(B i) = p` and independent of
 `N` as a random path.
 
-Formalized by `ProbabilityTheory.IsPoissonProcess.thinning`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 919](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Process/PoissonProcess.lean#L919). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#thinning-2).
+Formalized by `ProbabilityTheory.IsPoissonProcess.thinning`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 919](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Process/PoissonProcess.lean#L919). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#thinning-2).
 
 ## Independent Poisson increments of the counting process
 
@@ -96,7 +96,7 @@ consecutive intervals `(t i, t (i + 1)]` are independent with the Poisson laws o
 `r (t (i + 1) - t i)`: the increment vector has the product law (Kingman 1993, ch. 4;
 Karlin–Taylor 1975, ch. 4).
 
-Formalized by `ProbabilityTheory.PoissonProcess.hasLaw_count_increments`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 1488](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Process/PoissonProcess.lean#L1488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#has-law-count-increments).
+Formalized by `ProbabilityTheory.PoissonProcess.hasLaw_count_increments`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 1488](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Process/PoissonProcess.lean#L1488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#has-law-count-increments).
 
 ## Exponential interarrivals give a Poisson process
 
@@ -104,7 +104,7 @@ Formalized by `ProbabilityTheory.PoissonProcess.hasLaw_count_increments`, a theo
 1975, ch. 4): the counting process of i.i.d. rate-`r` exponential interarrival times is a Poisson
 process of rate `r`.
 
-Formalized by `ProbabilityTheory.PoissonProcess.isPoissonProcess_count`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 1511](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Process/PoissonProcess.lean#L1511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#is-poisson-process-count).
+Formalized by `ProbabilityTheory.PoissonProcess.isPoissonProcess_count`, a theorem declared in [MathlibExt/Probability/Process/PoissonProcess.lean, line 1511](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Process/PoissonProcess.lean#L1511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html#is-poisson-process-count).
 
 ## Depends on
 
@@ -113,4 +113,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Poisson processes](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/poisson-processes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/point-processes/poisson-processes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/point-processes/poisson-processes)

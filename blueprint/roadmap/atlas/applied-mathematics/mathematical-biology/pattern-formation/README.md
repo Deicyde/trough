@@ -1,6 +1,6 @@
 # Reaction–diffusion and pattern formation
 
-85 results of ATLAS's vault, 84 proved and 1 stated but not proved, in this branch's topics.
+85 results of ATLAS's vault, all proved, in this branch's topics.
 
 Reaction–diffusion models of biological spread and spatial patterning, including travelling waves, morphogen gradients and Turing instabilities.
 

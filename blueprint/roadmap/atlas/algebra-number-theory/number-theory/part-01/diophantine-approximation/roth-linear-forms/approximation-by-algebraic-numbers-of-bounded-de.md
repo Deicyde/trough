@@ -7,7 +7,7 @@ statement: formalized
 
 # Approximation by algebraic numbers of bounded degree
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de/index.html).
 
 ## Height of a real algebraic number
 
@@ -20,7 +20,7 @@ over $\mathbb{Q}$, the height is $0$.
 Equivalently, $H(\alpha)$ is the largest absolute value of a coefficient of the minimal polynomial
 of $\alpha$ scaled to have coprime integer coefficients.
 
-Formalized by `MathlibExt.NumberTheory.OnApproximationOfRealsWanted.OnApproximationOfReals.height`, a definition declared in [WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de/index.html#height).
+Formalized by `MathlibExt.NumberTheory.OnApproximationOfRealsWanted.OnApproximationOfReals.height`, a definition declared in [WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de/index.html#height).
 
 ## Real algebraic numbers of bounded degree
 
@@ -32,7 +32,7 @@ $\mathbb{Q}$ has degree at most $n$.
 
 - the lean-eval source ranged over `ℂ`; the classical exponent in Poëls' theorem uses real algebraic approximants, so this is restricted to `ℝ` (recorded as a Lean variant).
 
-Formalized by `MathlibExt.NumberTheory.OnApproximationOfRealsWanted.OnApproximationOfReals.AlgebraicDegLE`, a definition declared in [WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de/index.html#algebraic-deg-le).
+Formalized by `MathlibExt.NumberTheory.OnApproximationOfRealsWanted.OnApproximationOfReals.AlgebraicDegLE`, a definition declared in [WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de/index.html#algebraic-deg-le).
 
 ## Approximation exponents admitting infinitely many solutions
 
@@ -48,7 +48,7 @@ theorem.
 
 - `ω` here is `ω⋆` in the paper.
 
-Formalized by `MathlibExt.NumberTheory.OnApproximationOfRealsWanted.OnApproximationOfReals.ω_stars`, a definition declared in [WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de/index.html#stars).
+Formalized by `MathlibExt.NumberTheory.OnApproximationOfRealsWanted.OnApproximationOfReals.ω_stars`, a definition declared in [WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de/index.html#stars).
 
 ## Classical exponent of approximation by algebraic numbers
 
@@ -59,7 +59,7 @@ $\omega > 0$ for which there are infinitely many real algebraic numbers $\alpha$
 most $n$ with $0 < |\xi - \alpha| \le H(\alpha)^{-\omega - 1}$.
 It is $0$ when this set is empty.
 
-Formalized by `MathlibExt.NumberTheory.OnApproximationOfRealsWanted.OnApproximationOfReals.classicalExponent`, a definition declared in [WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de/index.html#classical-exponent).
+Formalized by `MathlibExt.NumberTheory.OnApproximationOfRealsWanted.OnApproximationOfReals.classicalExponent`, a definition declared in [WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de/index.html#classical-exponent).
 
 ## Poëls' lower bound for the classical exponent
 
@@ -72,7 +72,7 @@ satisfies $\omega^*_n(\xi) \ge a n$.
 
 - A. Poëls, `On approximation to a real number by algebraic numbers of bounded degree`, Annals of Math, 201 (1) 2025. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_on_approximation_of_reals` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.OnApproximationOfRealsWanted.OnApproximationOfReals.theorem_1_1` is written with `theorem_wanted` in [WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de/index.html#theorem-1-1).
+Stated but not proved: `MathlibExt.NumberTheory.OnApproximationOfRealsWanted.OnApproximationOfReals.theorem_1_1` is written with `theorem_wanted` in [WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OnApproximationOfRealsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de/index.html#theorem-1-1).
 
 ## Depends on
 
@@ -81,4 +81,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Approximation by algebraic numbers of bounded degree](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/approximation-by-algebraic-numbers-of-bounded-de)

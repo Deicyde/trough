@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# 21.28 Formalities on… to 21.34 Hom complexes
+# 21.26 Mayer-Vietoris to 21.34 Hom complexes
 
+- [21.26 Mayer-Vietoris](21-26-mayer-vietoris.md)
 - [21.28 Formalities on cohomological descent](21-28-formalities-on-cohomological-descent.md)
 - [21.29 Comparing two topologies, II](21-29-comparing-two-topologies-ii.md)
 - [21.30 Comparing cohomology](21-30-comparing-cohomology.md)

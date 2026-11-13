@@ -1,6 +1,6 @@
 # 22 Differential Graded Algebra
 
-Chapter 22 of the Stacks Project, *Differential Graded Algebra*, [Tag 09JD](https://stacks.math.columbia.edu/tag/09JD): the 32 sections of its 38 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 152 tags are carried by 439 declarations of the repository (all in StacksFrontier) and 46 registered declarations.
+Chapter 22 of the Stacks Project, *Differential Graded Algebra*, [Tag 09JD](https://stacks.math.columbia.edu/tag/09JD): the 32 sections of its 38 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 152 tags are carried by 448 declarations of the repository (all in StacksFrontier) and 46 registered declarations.
 
 ## [22.3 Differential graded… to 22.26 Differential graded…](part-01/README.md)
 

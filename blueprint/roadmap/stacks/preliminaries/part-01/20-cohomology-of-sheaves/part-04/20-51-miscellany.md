@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.51 Miscellany
 
-Section 20.51 of the Stacks Project, [Tag 0GM6](https://stacks.math.columbia.edu/tag/0GM6). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.51 of the Stacks Project, [Tag 0GM6](https://stacks.math.columbia.edu/tag/0GM6). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DJI, a lemma
 
 [Tag 0DJI](https://stacks.math.columbia.edu/tag/0DJI) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isDerivedLimit_tensorDerivedDual_of_isHomotopyColimit_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedHomOfAHomotopyColimit.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedHomOfAHomotopyColimit.lean#L257). The attribute's comment: “the whole tag: for a system of perfect objects `Kₙ` of `D(O_X)` with `K = hocolim Kₙ` and every `E` in `D(O_X)`, the identity `RSheafHom(K, E) = R lim (E ⊗^L_{O_X} Kₙ^∨)`”.
+**`Stacks.SheafOfModules.isDerivedLimit_tensorDerivedDual_of_isHomotopyColimit_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedHomOfAHomotopyColimit.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedHomOfAHomotopyColimit.lean#L258). The attribute's comment: “the whole tag: for a system of perfect objects `Kₙ` of `D(O_X)` with `K = hocolim Kₙ` and every `E` in `D(O_X)`, the identity `RSheafHom(K, E) = R lim (E ⊗^L_{O_X} Kₙ^∨)`”.
 
 > **Stacks 0DJI.** Let `(X, O_X)` be a ringed space, let `(Kₙ)` be a system of **perfect**
 > objects of `D(O_X)` and let `K = hocolim Kₙ`. Then for every object `E` of `D(O_X)`
@@ -38,7 +38,7 @@ theorem isDerivedLimit_tensorDerivedDual_of_isHomotopyColimit_of_isPerfect
 
 [Tag 0FVB](https://stacks.math.columbia.edu/tag/0FVB) in the Stacks Project.
 
-**`Stacks.SheafOfModules.derivedDualPairingSquare_cup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DualityPairingCupProduct.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DualityPairingCupProduct.lean#L510).
+**`Stacks.SheafOfModules.derivedDualPairingSquare_cup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DualityPairingCupProduct.lean, line 513](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DualityPairingCupProduct.lean#L513).
 
 > **Stacks 0FVB.** Let `(X, O_X)` be a ringed space
 > and let `K` and `E` be objects of `D(O_X)` with `E` perfect (Tag 08CM). The diagram
@@ -76,7 +76,7 @@ theorem derivedDualPairingSquare_cup (K E : DerivedCategory (StructureSheafModul
 
 [Tag 0GM7](https://stacks.math.columbia.edu/tag/0GM7) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedInternalHomPullback.isIso_derivedPullbackSheafHomMap_of_hasFiniteTorDimensionOverInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackFiniteTorDimension.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackFiniteTorDimension.lean#L220). The attribute's comment: “clause (3)”.
+**`Stacks.Cohomology.DerivedInternalHomPullback.isIso_derivedPullbackSheafHomMap_of_hasFiniteTorDimensionOverInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackFiniteTorDimension.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackFiniteTorDimension.lean#L220). The attribute's comment: “clause (3)”.
 
 > **Pullback of a derived internal hom along a morphism of finite tor dimension.** Let
 > `h : X ⟶ Y` be a morphism of ringed spaces such that `𝒪_X` has finite tor dimension over
@@ -93,7 +93,7 @@ theorem isIso_derivedPullbackSheafHomMap_of_hasFiniteTorDimensionOverInverseImag
     IsIso (derivedPullbackSheafHomMap h K M)
 ```
 
-**`Stacks.Cohomology.DerivedInternalHomPullback.isIso_derivedPullbackSheafHomMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackPerfectAndPseudoCoherent.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackPerfectAndPseudoCoherent.lean#L59). The attribute's comment: “clause (1)”.
+**`Stacks.Cohomology.DerivedInternalHomPullback.isIso_derivedPullbackSheafHomMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackPerfectAndPseudoCoherent.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackPerfectAndPseudoCoherent.lean#L59). The attribute's comment: “clause (1)”.
 
 > **Pullback of a derived internal hom out of a perfect object.**  For a morphism of ringed
 > spaces `h : X ⟶ Y`, a perfect `K ∈ D(𝒪_Y)` and an arbitrary `M ∈ D(𝒪_Y)`, the canonical map
@@ -107,7 +107,7 @@ theorem isIso_derivedPullbackSheafHomMap_of_isPerfect
     IsIso (derivedPullbackSheafHomMap h K M)
 ```
 
-**`Stacks.Cohomology.DerivedInternalHomPullback.isIso_derivedPullbackSheafHomMap_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackPerfectAndPseudoCoherent.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackPerfectAndPseudoCoherent.lean#L71). The attribute's comment: “clause (2)”.
+**`Stacks.Cohomology.DerivedInternalHomPullback.isIso_derivedPullbackSheafHomMap_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackPerfectAndPseudoCoherent.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackPerfectAndPseudoCoherent.lean#L71). The attribute's comment: “clause (2)”.
 
 > **Flat pullback of a derived internal hom out of a pseudo-coherent object.**  For a flat
 > morphism of ringed spaces `h : X ⟶ Y`, a pseudo-coherent `K ∈ D(𝒪_Y)` and a locally bounded below
@@ -126,7 +126,7 @@ theorem isIso_derivedPullbackSheafHomMap_of_isPseudoCoherent (hh : AlgebraicGeom
 
 [Tag 0GM8](https://stacks.math.columbia.edu/tag/0GM8) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedInternalHomStalk.isIso_stalkSheafHomMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomStalkInvertibility.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomStalkInvertibility.lean#L66). The attribute's comment: “case (1): K perfect, M arbitrary”.
+**`Stacks.Cohomology.DerivedInternalHomStalk.isIso_stalkSheafHomMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomStalkInvertibility.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomStalkInvertibility.lean#L66). The attribute's comment: “case (1): K perfect, M arbitrary”.
 
 > **Tag 0GM8, case (1).**  For a ringed space `X`, a point `x ∈ X`, a perfect `K ∈ D(𝒪_X)` and
 > an arbitrary `M ∈ D(𝒪_X)`, the canonical map
@@ -143,7 +143,7 @@ theorem isIso_stalkSheafHomMap_of_isPerfect
     IsIso (stalkSheafHomMap X x (pointStalkPresentation X x) K M)
 ```
 
-**`Stacks.Cohomology.DerivedInternalHomStalk.isIso_stalkSheafHomMap_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomStalkInvertibility.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomStalkInvertibility.lean#L79). The attribute's comment: “case (2): K pseudo-coherent, M locally bounded below”.
+**`Stacks.Cohomology.DerivedInternalHomStalk.isIso_stalkSheafHomMap_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomStalkInvertibility.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomStalkInvertibility.lean#L79). The attribute's comment: “case (2): K pseudo-coherent, M locally bounded below”.
 
 > **Tag 0GM8, case (2).**  For a ringed space `X`, a point `x ∈ X`, a pseudo-coherent
 > `K ∈ D(𝒪_X)` and a locally bounded below `M ∈ D(𝒪_X)`, the canonical map
@@ -166,4 +166,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.51, Tag 0GM6](https://stacks.math.columbia.edu/tag/0GM6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

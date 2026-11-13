@@ -8,7 +8,7 @@ proof: formalized
 
 # Brun–Titchmarsh theorem
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/brun-titchmarsh-theorem/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/brun-titchmarsh-theorem/index.html).
 
 ## Uniform Brun–Titchmarsh bound
 
@@ -30,7 +30,7 @@ optimized weights and a harmonic lower bound for the diagonal sum.
 
 - Jean-Marie De Koninck and Imre Kátai, "Some Remarks on a Paper of L. Toth," Journal of Integer Sequences 13 (2010), <https://cs.uwaterloo.ca/journals/JIS/VOL13/DeKoninck/dekoninck7.tex>, Lemma, lines 424–429. The source cites E. C. Titchmarsh, "A divisor problem," Rend. Palermo 54 (1930), 414–429 and 57 (1933), 478–479. The bound `2 ≤ X` makes the source's implicit analytic lower range explicit, and the source prints no coprimality hypothesis.
 
-Formalized by `MathlibExt.NumberTheory.PrimeCounting.BrunTitchmarshUniformWanted.brun_titchmarsh_uniform`, a theorem declared in [MathlibExt/NumberTheory/PrimeCounting/BrunTitchmarshUniform.lean, line 768](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PrimeCounting/BrunTitchmarshUniform.lean#L768). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/brun-titchmarsh-theorem/index.html#brun-titchmarsh-uniform).
+Formalized by `MathlibExt.NumberTheory.PrimeCounting.BrunTitchmarshUniformWanted.brun_titchmarsh_uniform`, a theorem declared in [MathlibExt/NumberTheory/PrimeCounting/BrunTitchmarshUniform.lean, line 768](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PrimeCounting/BrunTitchmarshUniform.lean#L768). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/brun-titchmarsh-theorem/index.html#brun-titchmarsh-uniform).
 
 ## Lower bound for the squarefree totient sum
 
@@ -42,7 +42,7 @@ function and $\varphi$ is Euler's totient function.
 
 - Montgomery–Vaughan, *The large sieve* (1973), Lemmas 4–7 and equation (4.3), lines 462–657. The bound here uses `log (z + 1)`, which is slightly stronger than the paper's `log z`.
 
-Formalized by `MathlibExt.NumberTheory.PrimeCounting.moebiusSq_div_totient_sum_gt_log`, a theorem declared in [MathlibExt/NumberTheory/PrimeCounting/SquarefreeTotient.lean, line 1027](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PrimeCounting/SquarefreeTotient.lean#L1027). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/brun-titchmarsh-theorem/index.html#moebius-sq-div-totient-sum-gt-log).
+Formalized by `MathlibExt.NumberTheory.PrimeCounting.moebiusSq_div_totient_sum_gt_log`, a theorem declared in [MathlibExt/NumberTheory/PrimeCounting/SquarefreeTotient.lean, line 1027](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PrimeCounting/SquarefreeTotient.lean#L1027). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/brun-titchmarsh-theorem/index.html#moebius-sq-div-totient-sum-gt-log).
 
 ## Weighted lower bound for the squarefree totient sum
 
@@ -54,7 +54,7 @@ Möbius function and $\varphi$ is Euler's totient function.
 
 - Montgomery–Vaughan, *The large sieve* (1973), Lemma 8, lines 658–714. The proof uses Abel summation, `moebiusSq_div_totient_sum_gt_log`, and the paper's explicit correction from the terms `q ≤ 5`.
 
-Formalized by `MathlibExt.NumberTheory.PrimeCounting.squarefreeTotientWeightedLower`, a theorem declared in [MathlibExt/NumberTheory/PrimeCounting/SquarefreeTotientWeighted.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PrimeCounting/SquarefreeTotientWeighted.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/brun-titchmarsh-theorem/index.html#squarefree-totient-weighted-lower).
+Formalized by `MathlibExt.NumberTheory.PrimeCounting.squarefreeTotientWeightedLower`, a theorem declared in [MathlibExt/NumberTheory/PrimeCounting/SquarefreeTotientWeighted.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PrimeCounting/SquarefreeTotientWeighted.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/brun-titchmarsh-theorem/index.html#squarefree-totient-weighted-lower).
 
 ## Brun–Titchmarsh inequality
 
@@ -74,7 +74,7 @@ the choice $z = \lfloor \sqrt{2N/3} \rfloor$, where $N = \lfloor X/q \rfloor + 1
 
 - H. Iwaniec and E. Kowalski, *Analytic Number Theory*, AMS Colloquium Publications 53, 2004, Theorem 6.6; quoted as equation (1) in Y. Wang and X. Zhang, arXiv:2608.19262v1.
 
-Formalized by `MathlibExt.NumberTheory.PrimeCounting.BrunTitchmarshWanted.brun_titchmarsh`, a theorem declared in [MathlibExt/NumberTheory/PrimeCounting/BrunTitchmarsh.lean, line 1450](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PrimeCounting/BrunTitchmarsh.lean#L1450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/brun-titchmarsh-theorem/index.html#brun-titchmarsh).
+Formalized by `MathlibExt.NumberTheory.PrimeCounting.BrunTitchmarshWanted.brun_titchmarsh`, a theorem declared in [MathlibExt/NumberTheory/PrimeCounting/BrunTitchmarsh.lean, line 1450](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PrimeCounting/BrunTitchmarsh.lean#L1450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/brun-titchmarsh-theorem/index.html#brun-titchmarsh).
 
 ## Depends on
 
@@ -83,4 +83,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Brun–Titchmarsh theorem](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/brun-titchmarsh-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/brun-titchmarsh-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/brun-titchmarsh-theorem)

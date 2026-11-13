@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.30 The topological space of an algebraic stack
 
-Section 101.30 of the Stacks Project, [Tag 0DQM](https://stacks.math.columbia.edu/tag/0DQM). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.30 of the Stacks Project, [Tag 0DQM](https://stacks.math.columbia.edu/tag/0DQM). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DQN, a lemma
 
 [Tag 0DQN](https://stacks.math.columbia.edu/tag/0DQN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.spectralSpace_points_of_isQuasiCompact_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpectralPointsAlgebraicStack.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SpectralPointsAlgebraicStack.lean#L248).
+**`AlgebraicGeometry.Stack.spectralSpace_points_of_isQuasiCompact_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpectralPointsAlgebraicStack.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SpectralPointsAlgebraicStack.lean#L248).
 
 > **Stacks 0DQN.** Let `𝒳` be a quasi-compact algebraic stack over `S` whose absolute diagonal
 > `Δ : 𝒳 ⟶ 𝒳 ×_{Spec ℤ} 𝒳` is quasi-compact. Then the topological space of points `|𝒳|` is
@@ -38,7 +38,7 @@ theorem spectralSpace_points_of_isQuasiCompact_diagonal (𝒳 : AlgebraicStacks.
 
 [Tag 0DQP](https://stacks.math.columbia.edu/tag/0DQP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.spectralSpace_points_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpectralPointsAlgebraicStack.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SpectralPointsAlgebraicStack.lean#L277).
+**`AlgebraicGeometry.Stack.spectralSpace_points_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpectralPointsAlgebraicStack.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SpectralPointsAlgebraicStack.lean#L277).
 
 > **Stacks 0DQP.** The topological space of points `|𝒳|` of a quasi-compact and
 > quasi-separated algebraic stack `𝒳` over `S` is spectral.
@@ -58,7 +58,7 @@ theorem spectralSpace_points_of_isAbsolutelyQuasiSeparated (𝒳 : AlgebraicStac
 
 [Tag 0DQQ](https://stacks.math.columbia.edu/tag/0DQQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_spectralSpace_cover_and_stacksSober`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpectralPointsAlgebraicStack.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SpectralPointsAlgebraicStack.lean#L351).
+**`AlgebraicGeometry.Stack.exists_spectralSpace_cover_and_stacksSober`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpectralPointsAlgebraicStack.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SpectralPointsAlgebraicStack.lean#L351).
 
 > **Stacks 0DQQ.** Let `𝒳` be an algebraic stack over `S` whose absolute diagonal
 > `Δ : 𝒳 ⟶ 𝒳 ×_{Spec ℤ} 𝒳` is quasi-compact. Then `|𝒳|` has an open covering by spectral
@@ -86,4 +86,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.30, Tag 0DQM](https://stacks.math.columbia.edu/tag/0DQM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

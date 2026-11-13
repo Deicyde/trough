@@ -7,7 +7,7 @@ statement: formalized
 
 # Existence of mixed partial derivatives
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/existence-of-mixed-partial-derivatives/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/existence-of-mixed-partial-derivatives/index.html).
 
 ## Mazur's mixed partial derivatives claim
 
@@ -24,7 +24,7 @@ Mazur asked whether a function with first partial derivatives and both pure seco
 derivatives must have its mixed second partial derivatives almost everywhere; the claim asks this
 only for $\partial_x \partial_y f$.
 
-Formalized by `MathlibExt.Analysis.Calculus.ScottishBook66Wanted.ScottishBookProblem66Claim`, a definition declared in [WantedExt/Analysis/Calculus/ScottishBook66Wanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/ScottishBook66Wanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/existence-of-mixed-partial-derivatives/index.html#scottish-book-problem66-claim).
+Formalized by `MathlibExt.Analysis.Calculus.ScottishBook66Wanted.ScottishBookProblem66Claim`, a definition declared in [WantedExt/Analysis/Calculus/ScottishBook66Wanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/ScottishBook66Wanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/existence-of-mixed-partial-derivatives/index.html#scottish-book-problem66-claim).
 
 ## Mazur's Problem 66 has a negative answer
 
@@ -40,7 +40,7 @@ differentiable at $x$ is not a Lebesgue null set.
 
 - S. Mazur, Problem 66 of the Scottish Book; refuted by V. Mykhaylyuk and A. Plichko, who construct a separately twice differentiable function on `[0, 1]²` and a set of positive measure on which the mixed derivative `f_xy` does not exist ("On a Mazur problem from 'The Scottish Book' concerning second partial derivatives", Colloq. Math. 141 (2015), 175–181, arXiv:1508.06909).
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.ScottishBook66Wanted.mazur66_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/ScottishBook66Wanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/ScottishBook66Wanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/existence-of-mixed-partial-derivatives/index.html#mazur66-refuted).
+Stated but not proved: `MathlibExt.Analysis.Calculus.ScottishBook66Wanted.mazur66_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/ScottishBook66Wanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/ScottishBook66Wanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/existence-of-mixed-partial-derivatives/index.html#mazur66-refuted).
 
 ## Depends on
 
@@ -49,4 +49,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Existence of mixed partial derivatives](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/existence-of-mixed-partial-derivatives/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/real-functions/multivariable-calculus/existence-of-mixed-partial-derivatives)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/real-functions/multivariable-calculus/existence-of-mixed-partial-derivatives)

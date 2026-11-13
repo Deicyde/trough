@@ -2,7 +2,7 @@
 
 Chapter 96 of the Stacks Project, *Sheaves on Algebraic Stacks*, [Tag 06TF](https://stacks.math.columbia.edu/tag/06TF): the 24 sections of its 26 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 96 tags are carried by 329 declarations of the repository (all in StacksFrontier) and 17 registered declarations.
 
-## [96.3 Presheaves to 96.15 Quasi-coherent sheaves on…](part-01/README.md)
+## [96.3 Presheaves to 96.16 Cohomology](part-01/README.md)
 
 - [96.3 Presheaves](part-01/96-3-presheaves.md)
 - [96.4 Sheaves](part-01/96-4-sheaves.md)
@@ -17,10 +17,10 @@ Chapter 96 of the Stacks Project, *Sheaves on Algebraic Stacks*, [Tag 06TF](http
 - [96.13 Stackification and sheaves](part-01/96-13-stackification-and-sheaves.md)
 - [96.14 Quasi-coherent sheaves and presentations](part-01/96-14-quasi-coherent-sheaves-and-presentations.md)
 - [96.15 Quasi-coherent sheaves on algebraic stacks](part-01/96-15-quasi-coherent-sheaves-on-algebraic-stacks.md)
+- [96.16 Cohomology](part-01/96-16-cohomology.md)
 
-## [96.16 Cohomology to 96.26 Quasi-coherent objects in…](part-02/README.md)
+## [96.17 Injective sheaves to 96.26 Quasi-coherent objects in…](part-02/README.md)
 
-- [96.16 Cohomology](part-02/96-16-cohomology.md)
 - [96.17 Injective sheaves](part-02/96-17-injective-sheaves.md)
 - [96.18 The Čech complex](part-02/96-18-the-cech-complex.md)
 - [96.19 The relative Čech complex](part-02/96-19-the-relative-cech-complex.md)

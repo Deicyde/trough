@@ -8,7 +8,7 @@ proof: formalized
 
 # Spectral norm on algebraic extensions
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/spectral-norm-on-algebraic-extensions/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/spectral-norm-on-algebraic-extensions/index.html).
 
 ## Spectral-norm unit ball is the integral closure
 
@@ -19,7 +19,7 @@ $A \to L$. Suppose that for every $y \in K$, $\|y\| \le 1$ if and only if $y$ is
 $A$. Then for every $x \in L$, the spectral norm of $x$ over $K$ is at most $1$ if and only if
 $x$ is integral over $A$.
 
-Formalized by `MetaMathlibExt.spectralNorm_le_one_iff_isIntegral`, a theorem declared in [MathlibExt/NumberTheory/SpectralNormUnitBall.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/SpectralNormUnitBall.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/spectral-norm-on-algebraic-extensions/index.html#spectral-norm-le-one-iff-is-integral).
+Formalized by `MetaMathlibExt.spectralNorm_le_one_iff_isIntegral`, a theorem declared in [MathlibExt/NumberTheory/SpectralNormUnitBall.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/SpectralNormUnitBall.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/spectral-norm-on-algebraic-extensions/index.html#spectral-norm-le-one-iff-is-integral).
 
 ## Spectral-norm unit ball as the image of an integral closure
 
@@ -33,7 +33,7 @@ over $A$. Suppose that for every $y \in K$, $\|y\| \le 1$ if and only if $y$ is 
 Then for every $x \in L$, the spectral norm of $x$ over $K$ is at most $1$ if and only if $x$ is
 the image of some element of $B$.
 
-Formalized by `MetaMathlibExt.spectralNorm_le_one_iff_exists_integralClosure`, a theorem declared in [MathlibExt/NumberTheory/SpectralNormUnitBall.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/SpectralNormUnitBall.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/spectral-norm-on-algebraic-extensions/index.html#spectral-norm-le-one-iff-exists-integral).
+Formalized by `MetaMathlibExt.spectralNorm_le_one_iff_exists_integralClosure`, a theorem declared in [MathlibExt/NumberTheory/SpectralNormUnitBall.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/SpectralNormUnitBall.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/spectral-norm-on-algebraic-extensions/index.html#spectral-norm-le-one-iff-exists-integral).
 
 ## Depends on
 
@@ -42,4 +42,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Spectral norm on algebraic extensions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/spectral-norm-on-algebraic-extensions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/p-adic-numbers/spectral-norm-on-algebraic-extensions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/p-adic-numbers/spectral-norm-on-algebraic-extensions)

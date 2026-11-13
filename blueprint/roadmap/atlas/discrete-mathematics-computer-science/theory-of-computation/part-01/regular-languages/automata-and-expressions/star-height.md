@@ -8,7 +8,7 @@ proof: formalized
 
 # Star height
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height/index.html).
 
 ## Language
 
@@ -20,7 +20,7 @@ empty word and the single letters have star height $0$; a union $e_1 + e_2$ and 
 $e_1 e_2$ have the larger of the star heights of $e_1$ and $e_2$; and $e^*$ has star height one
 more than $e$.
 
-Formalized by `Cslib.Language.regularStarHeight`, a definition declared in [CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height/index.html#regular-star-height).
+Formalized by `Cslib.Language.regularStarHeight`, a definition declared in [CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height/index.html#regular-star-height).
 
 ## Generalized regular expressions
 
@@ -30,7 +30,7 @@ concatenation and Kleene star: every ordinary regular expression over $\alpha$ i
 $e$, $e_1$, $e_2$ are generalized regular expressions, then so are the complement $\neg e$, the
 union $e_1 + e_2$, the concatenation $e_1 e_2$ and the star $e^*$.
 
-Formalized by `Cslib.Language.GenRegExp`, an inductive type declared in [CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height/index.html#gen-reg-exp).
+Formalized by `Cslib.Language.GenRegExp`, an inductive type declared in [CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height/index.html#gen-reg-exp).
 
 ## Language of a generalized regular expression
 
@@ -42,7 +42,7 @@ $\alpha$, of the language of $e$; the union $e_1 + e_2$ denotes the union and th
 $e_1 e_2$ the concatenation of the languages of $e_1$ and $e_2$; and the star $e^*$ denotes the
 Kleene star of the language of $e$.
 
-Formalized by `Cslib.Language.GenRegExp.denote`, a definition declared in [CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height/index.html#denote).
+Formalized by `Cslib.Language.GenRegExp.denote`, a definition declared in [CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height/index.html#denote).
 
 ## Generalized star height
 
@@ -53,7 +53,7 @@ expression has its usual star height; the complement $\neg e$ has the star heigh
 union $e_1 + e_2$ and the concatenation $e_1 e_2$ have the larger of the star heights of $e_1$
 and $e_2$; and the star $e^*$ has star height one more than $e$.
 
-Formalized by `Cslib.Language.GenRegExp.starHeight`, a definition declared in [CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height/index.html#star-height).
+Formalized by `Cslib.Language.GenRegExp.starHeight`, a definition declared in [CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height/index.html#star-height).
 
 ## Bounded generalized star height
 
@@ -61,7 +61,7 @@ A language $L$ over an alphabet $\alpha$ has generalized
 star height at most $n$, for a natural number $n$, if some generalized regular expression over
 $\alpha$ whose generalized star height is at most $n$ denotes $L$.
 
-Formalized by `Cslib.Language.HasGenHeightLe`, a definition declared in [CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height/index.html#has-gen-height-le).
+Formalized by `Cslib.Language.HasGenHeightLe`, a definition declared in [CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/GeneralizedRegularExpression.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height/index.html#has-gen-height-le).
 
 ## Depends on
 
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Star height](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/star-height)

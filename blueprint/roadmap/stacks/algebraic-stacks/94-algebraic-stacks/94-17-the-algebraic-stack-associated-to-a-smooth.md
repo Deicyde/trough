@@ -8,13 +8,13 @@ proof: formalized
 
 # 94.17 The algebraic stack associated to a smooth groupoid
 
-Section 94.17 of the Stacks Project, [Tag 04TJ](https://stacks.math.columbia.edu/tag/04TJ). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 94.17 of the Stacks Project, [Tag 04TJ](https://stacks.math.columbia.edu/tag/04TJ). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04TJ, the section
 
 [Tag 04TJ](https://stacks.math.columbia.edu/tag/04TJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.smoothGroupoidAlgebraicStack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidPresentation.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidPresentation.lean#L149). The attribute's comment: “the section's construction: the algebraic stack associated to a smooth groupoid in algebraic spaces, as one object bundling the quotient stack with its algebraicity. The quotient stack and its fibredness in groupoids are Stacks 044Q; algebraicity is Stacks 04TK”.
+**`AlgebraicGeometry.Stack.smoothGroupoidAlgebraicStack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidPresentation.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidPresentation.lean#L89). The attribute's comment: “the section's construction: the algebraic stack associated to a smooth groupoid in algebraic spaces, as one object bundling the quotient stack with its algebraicity. The quotient stack and its fibredness in groupoids are Stacks 044Q; algebraicity is Stacks 04TK”.
 
 > **Stacks 04TJ.** The algebraic stack associated to a smooth groupoid in algebraic spaces
 > `G = (U, R, s, t, c)` over an algebraic space over `S`: the quotient stack `[U/R]` of Stacks
@@ -36,7 +36,7 @@ noncomputable def smoothGroupoidAlgebraicStack
 
 [Tag 04WZ](https://stacks.math.columbia.edu/tag/04WZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasRepresentableDiagonal_quotientStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackRepresentableDiagonal.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackRepresentableDiagonal.lean#L204).
+**`AlgebraicGeometry.Stack.hasRepresentableDiagonal_quotientStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackRepresentableDiagonal.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackRepresentableDiagonal.lean#L204).
 
 > **Stacks 04WZ.** The diagonal of the quotient stack of a groupoid in algebraic spaces over a
 > scheme of a big fppf site is representable by algebraic spaces.
@@ -57,7 +57,7 @@ theorem hasRepresentableDiagonal_quotientStack
 
 [Tag 04X0](https://stacks.math.columbia.edu/tag/04X0) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.QuotientAtlas.isRelativelySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidQuotientAtlas.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidQuotientAtlas.lean#L97). The attribute's comment: “smoothness”.
+**`AlgebraicGeometry.Stack.QuotientAtlas.isRelativelySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidQuotientAtlas.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidQuotientAtlas.lean#L97). The attribute's comment: “smoothness”.
 
 > **Stacks 04X0, smoothness of the projection.** Let `G = (U, R, s, t, c)` be a smooth
 > groupoid in algebraic spaces over `S`. Then the canonical projection `π : S_U ⟶ [U/R]` of
@@ -75,7 +75,7 @@ theorem isRelativelySmooth {G : GroupoidInAlgebraicSpaces C S hS B}
     IsRelativelySmooth C S hS (quotientStackProjectionHom G)
 ```
 
-**`AlgebraicGeometry.Stack.QuotientAtlas.isRelativelySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidQuotientAtlas.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidQuotientAtlas.lean#L112). The attribute's comment: “surjectivity”.
+**`AlgebraicGeometry.Stack.QuotientAtlas.isRelativelySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidQuotientAtlas.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidQuotientAtlas.lean#L112). The attribute's comment: “surjectivity”.
 
 > **Stacks 04X0, surjectivity of the projection.** Let `G = (U, R, s, t, c)` be a groupoid
 > in algebraic spaces over `S`. Then the canonical projection `π : S_U ⟶ [U/R]` of
@@ -92,7 +92,7 @@ theorem isRelativelySurjective {G : GroupoidInAlgebraicSpaces C S hS B} :
       (quotientStackProjectionHom G) (representable_quotientStackProjectionHom G)
 ```
 
-**`AlgebraicGeometry.Stack.QuotientAtlas.isRelativelySmooth_isSurjective_of_bootstrap04S6`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidQuotientAtlas.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidQuotientAtlas.lean#L128).
+**`AlgebraicGeometry.Stack.QuotientAtlas.isRelativelySmooth_isSurjective_of_bootstrap04S6`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidQuotientAtlas.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothGroupoidQuotientAtlas.lean#L128).
 
 > **Stacks 04X0.** Let `G = (U, R, s, t, c)` be a smooth groupoid in algebraic spaces over
 > `S`. Then the canonical projection `π : S_U ⟶ [U/R]` of Stacks 044R is smooth and surjective in
@@ -117,7 +117,7 @@ theorem isRelativelySmooth_isSurjective_of_bootstrap04S6 {G : GroupoidInAlgebrai
 
 [Tag 04TK](https://stacks.math.columbia.edu/tag/04TK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStack_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/SmoothQuotientStackAlgebraic.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/SmoothQuotientStackAlgebraic.lean#L472).
+**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStack_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/SmoothQuotientStackAlgebraic.lean, line 472](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/SmoothQuotientStackAlgebraic.lean#L472).
 
 > Let `S` be a scheme contained in a big fppf site, and let `G = (U, R, s, t, c)` be a smooth
 > groupoid in algebraic spaces over an algebraic space `A` over `S`. Then the quotient stack `[U/R]`
@@ -130,7 +130,7 @@ theorem isAlgebraicStack_quotientStack_of_isSmooth
     IsAlgebraicStack.{u, w} C S hS (quotientStack G)
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStack_of_isSmooth_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/SmoothQuotientStackModel.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/SmoothQuotientStackModel.lean#L132).
+**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStack_of_isSmooth_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/SmoothQuotientStackModel.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/SmoothQuotientStackModel.lean#L132).
 
 > **Stacks 04TK.** Let `S` be a scheme contained in a big fppf site and let
 > `G = (U, R, s, t, c)` be a smooth groupoid in algebraic spaces over an algebraic space over `S`.
@@ -145,7 +145,7 @@ theorem isAlgebraicStack_quotientStack_of_isSmooth_unconditional
     IsAlgebraicStack.{u, w} C S hS (quotientStack G)
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStackOfAction_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothActionQuotientStackAlgebraic.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothActionQuotientStackAlgebraic.lean#L59). The attribute's comment: “the quotient stack of an action of a smooth group algebraic space”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStackOfAction_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothActionQuotientStackAlgebraic.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothActionQuotientStackAlgebraic.lean#L59). The attribute's comment: “the quotient stack of an action of a smooth group algebraic space”.
 
 > **Stacks 04TK** for a group action: if the structure morphism `G ⟶ B` of a group object in
 > the slice of presheaves over `B` is smooth, then the quotient stack `[X/G]` of Stacks 044Q,
@@ -166,4 +166,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 94.17, Tag 04TJ](https://stacks.math.columbia.edu/tag/04TJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

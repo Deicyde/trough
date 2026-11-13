@@ -7,7 +7,7 @@ statement: formalized
 
 # Factorials that are Fibonacci integers
 
-11 results, 7 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html).
+11 results, 7 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html).
 
 ## The largest factorial that is a Fibonacci integer is $36!$
 
@@ -22,7 +22,7 @@ paper's claim that $36!$ is a Fibonacci integer and that no $n!$ with $n \ge 37$
 
 - Florian Luca, *`F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!`*, INTEGERS 24 (2024), Article A72, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.factorial_mem_fibonacciIntegers_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#factorial-mem-fibonacci-integers-iff).
+Stated but not proved: `MetaMathlibExt.factorial_mem_fibonacciIntegers_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#factorial-mem-fibonacci-integers-iff).
 
 ## Carmichael's congruence for primitive prime divisors of Fibonacci numbers
 
@@ -38,7 +38,7 @@ of $F_m$ for $m > 12$ is a separate statement.
 
 - Florian Luca, *`F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!`*, INTEGERS 24 (2024), Article A72, Theorem 2 (Primitive Divisor Theorem, quoting R. D. Carmichael).
 
-Stated but not proved: `MetaMathlibExt.primitive_prime_dvd_fib_modEq_one_or_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#primitive-prime-dvd-fib-mod-eq-one-or-ne).
+Stated but not proved: `MetaMathlibExt.primitive_prime_dvd_fib_modEq_one_or_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#primitive-prime-dvd-fib-mod-eq-one-or-ne).
 
 ## Entry point in the Fibonacci sequence
 
@@ -50,7 +50,7 @@ $z(k) = 0$ if there is no such $m$.
 
 - Florian Luca, *`F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!`*, INTEGERS 24 (2024), Article A72, Section 2.
 
-Formalized by `MetaMathlibExt.fibEntryPoint`, a definition declared in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#fib-entry-point).
+Formalized by `MetaMathlibExt.fibEntryPoint`, a definition declared in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#fib-entry-point).
 
 ## Fibonacci entry point of $2$
 
@@ -61,7 +61,7 @@ $F_m$ is $3$, that is, the Fibonacci entry point of $2$ is $z(2) = 3$.
 
 - Florian Luca, *`F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!`*, INTEGERS 24 (2024), Article A72, Section 2 (`6 = 2 z(2)`).
 
-Formalized by `MetaMathlibExt.fibEntryPoint_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#fib-entry-point-two).
+Formalized by `MetaMathlibExt.fibEntryPoint_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#fib-entry-point-two).
 
 ## Fibonacci entry point of $5$
 
@@ -72,7 +72,7 @@ $F_m$ is $5$, that is, the Fibonacci entry point of $5$ is $z(5) = 5$.
 
 - Florian Luca, *`F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!`*, INTEGERS 24 (2024), Article A72, Section 2 (the exceptional index `m = 5`).
 
-Formalized by `MetaMathlibExt.fibEntryPoint_five`, a theorem declared in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#fib-entry-point-five).
+Formalized by `MetaMathlibExt.fibEntryPoint_five`, a theorem declared in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#fib-entry-point-five).
 
 ## Fibonacci cyclotomic values
 
@@ -89,7 +89,7 @@ $m = 0$ is treated as having no divisors, so $\Phi_0 = 1$.
 
 - Florian Luca, *`F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!`*, INTEGERS 24 (2024), Article A72, Section 2.
 
-Formalized by `MetaMathlibExt.fibCyclotomicValue`, a definition declared in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#fib-cyclotomic-value).
+Formalized by `MetaMathlibExt.fibCyclotomicValue`, a definition declared in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#fib-cyclotomic-value).
 
 ## Fibonacci cyclotomic value at $2$
 
@@ -101,7 +101,7 @@ and $\mu$ is the Möbius function, equals $1$.
 
 - Florian Luca, *`F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!`*, INTEGERS 24 (2024), Article A72, Section 2, Equation (1).
 
-Formalized by `MetaMathlibExt.fibCyclotomicValue_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#fib-cyclotomic-value-two).
+Formalized by `MetaMathlibExt.fibCyclotomicValue_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#fib-cyclotomic-value-two).
 
 ## Primitive part of a Fibonacci number
 
@@ -114,7 +114,7 @@ $F_m$.
 
 - Florian Luca, *`F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!`*, INTEGERS 24 (2024), Article A72, Section 2.
 
-Formalized by `MetaMathlibExt.fibPrimitivePart`, a definition declared in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#fib-primitive-part).
+Formalized by `MetaMathlibExt.fibPrimitivePart`, a definition declared in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#fib-primitive-part).
 
 ## Primitive part of $F_6$
 
@@ -126,7 +126,7 @@ factor $p$ with $z(p) = 6$.
 
 - Florian Luca, *`F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!`*, INTEGERS 24 (2024), Article A72, Section 2.
 
-Formalized by `MetaMathlibExt.fibPrimitivePart_six`, a theorem declared in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#fib-primitive-part-six).
+Formalized by `MetaMathlibExt.fibPrimitivePart_six`, a theorem declared in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#fib-primitive-part-six).
 
 ## Prime factors of the primitive parts of the denominator indices
 
@@ -148,7 +148,7 @@ of the form $p_l^{k_l} z(p_l)$.
 
 - Florian Luca, *`F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!`*, INTEGERS 24 (2024), Article A72, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.exists_injection_primeFactors_fibPrimitivePart` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#exists-injection-prime-factors-fib-primi).
+Stated but not proved: `MetaMathlibExt.exists_injection_primeFactors_fibPrimitivePart` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#exists-injection-prime-factors-fib-primi).
 
 ## Bound on denominator indices of $p$-adic valuation one
 
@@ -165,7 +165,7 @@ number $F_m$. Then $N_p < \frac{2n}{z(p)\, p\, (p - 2)}$.
 
 - Florian Luca, *`F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!`*, INTEGERS 24 (2024), Article A72, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.card_padicValRat_fibDelta_eq_one_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#card-padic-val-rat-fib-delta-eq-one-lt).
+Stated but not proved: `MetaMathlibExt.card_padicValRat_fibDelta_eq_one_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciIntegerFactorialWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html#card-padic-val-rat-fib-delta-eq-one-lt).
 
 ## Depends on
 
@@ -174,4 +174,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Factorials that are Fibonacci integers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/factorials-that-are-fibonacci-integers)

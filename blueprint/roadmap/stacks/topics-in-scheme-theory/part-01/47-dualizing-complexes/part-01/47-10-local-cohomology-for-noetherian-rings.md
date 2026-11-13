@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.10 Local cohomology for Noetherian rings
 
-Section 47.10 of the Stacks Project, [Tag 0BJD](https://stacks.math.columbia.edu/tag/0BJD). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 47.10 of the Stacks Project, [Tag 0BJD](https://stacks.math.columbia.edu/tag/0BJD). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A6U, an equation
 
 [Tag 0A6U](https://stacks.math.columbia.edu/tag/0A6U) in the Stacks Project.
 
-**`Dualizing.compareTorsionFunctors`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomologyDualizing/Basic.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomologyDualizing/Basic.lean#L159).
+**`Dualizing.compareTorsionFunctors`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomologyDualizing/Basic.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomologyDualizing/Basic.lean#L159).
 
 > **Stacks 0A6U.** The canonical natural transformation from derived power torsion followed
 > by the comparison functor to local cohomology with support in `V(I)`.
@@ -31,7 +31,7 @@ noncomputable def compareTorsionFunctors
 
 [Tag 0955](https://stacks.math.columbia.edu/tag/0955) in the Stacks Project.
 
-**`Dualizing.TorsionCounit.isIso_derivedPowerTorsionCounit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModelComparison/Noetherian.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/ModelComparison/Noetherian.lean#L430). The attribute's comment: “part (1)”.
+**`Dualizing.TorsionCounit.isIso_derivedPowerTorsionCounit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModelComparison/Noetherian.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/ModelComparison/Noetherian.lean#L430). The attribute's comment: “part (1)”.
 
 > **Stacks 0955, part (1).** Let `A` be a Noetherian ring and `I ⊆ A` a finitely generated
 > ideal. The counit `RΓ_I(K) ⟶ K` of [Stacks, Tag 0A6L] is an isomorphism at every object `K` of
@@ -46,7 +46,7 @@ theorem isIso_derivedPowerTorsionCounit_app
     IsIso ((derivedPowerTorsionCounit.{u, v} A I hI).app K.obj)
 ```
 
-**`Dualizing.TorsionCounit.isEquivalence_powerTorsionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModelComparison/Noetherian.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/ModelComparison/Noetherian.lean#L458). The attribute's comment: “part (2)”.
+**`Dualizing.TorsionCounit.isEquivalence_powerTorsionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModelComparison/Noetherian.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/ModelComparison/Noetherian.lean#L458). The attribute's comment: “part (2)”.
 
 > **Stacks 0955, part (2).** For a Noetherian ring the comparison functor
 > `D(I^∞-torsion) ⥤ D_{I^∞-torsion}(A)` of [Stacks, Tag 0A6N] is an equivalence.
@@ -56,7 +56,7 @@ theorem isEquivalence_powerTorsionComparison :
     (powerTorsionComparison.{u, max u v} A I hI).IsEquivalence
 ```
 
-**`Dualizing.TorsionCounit.isIso_compareTorsionFunctors_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModelComparison/Noetherian.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/ModelComparison/Noetherian.lean#L549). The attribute's comment: “part (3)”.
+**`Dualizing.TorsionCounit.isIso_compareTorsionFunctors_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModelComparison/Noetherian.lean, line 549](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/ModelComparison/Noetherian.lean#L549). The attribute's comment: “part (3)”.
 
 > **Stacks 0955, part (3).** Let `A` be a Noetherian ring and `I ⊆ A` a finitely generated
 > ideal. The comparison `RΓ_I ⟶ RΓ_Z` of [Stacks, Tag 0A6U] is an isomorphism at every object of
@@ -77,7 +77,7 @@ theorem isIso_compareTorsionFunctors_app
 
 [Tag 0956](https://stacks.math.columbia.edu/tag/0956) in the Stacks Project.
 
-**`Stacks.LocalCohomology.extendedCechComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModelComparison/ExtendedCech.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/ModelComparison/ExtendedCech.lean#L157).
+**`Stacks.LocalCohomology.extendedCechComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModelComparison/ExtendedCech.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/ModelComparison/ExtendedCech.lean#L157).
 
 > **Stacks 0956.** Let `A` be a Noetherian ring, let `I = (f₁, …, f_r)` be an ideal of `A` and
 > let `Z = V(I)`. For every `A`-module `M` there are canonical isomorphisms
@@ -107,7 +107,7 @@ def extendedCechComparison (A : Type u) [CommRing A] [IsNoetherianRing A] (I : I
 
 [Tag 0957](https://stacks.math.columbia.edu/tag/0957) in the Stacks Project.
 
-**`Dualizing.localCohomologyOfRingBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRings.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRings.lean#L86). The attribute's comment: “base change on regular modules”.
+**`Dualizing.localCohomologyOfRingBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRings.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRings.lean#L86). The attribute's comment: “base change on regular modules”.
 
 > **Stacks 0957.** Local cohomology of the regular module commutes with derived extension of
 > scalars along a homomorphism of commutative rings, for a finitely generated ideal.
@@ -119,7 +119,7 @@ def localCohomologyOfRingBaseChangeIso (A B : Type uA) [CommRing A] [CommRing B]
       localCohomologyOfRing B (I.map f) (hI.map f)
 ```
 
-**`Dualizing.localCohomologyOfRingLiftedBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRings.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRings.lean#L129). The attribute's comment: “base change across universes”.
+**`Dualizing.localCohomologyOfRingLiftedBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRings.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRings.lean#L129). The attribute's comment: “base change across universes”.
 
 > **Stacks 0957.** The change-of-rings isomorphism for local cohomology of the regular module,
 > for two rings in independent universes, after transporting both regular modules into a common
@@ -133,7 +133,7 @@ def localCohomologyOfRingLiftedBaseChangeIso (A : Type uA) (B : Type uB) [CommRi
       localCohomologyOfRingLifted.{uB, max uA uB} B (I.map f) (hI.map f)
 ```
 
-**`Dualizing.derivedPowerTorsionOfRingBaseChangeIsoLocalCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean#L142). The attribute's comment: “first equality: RΓ\_I(A) ⊗ᴸ B = RΓ\_Z(A) ⊗ᴸ B”.
+**`Dualizing.derivedPowerTorsionOfRingBaseChangeIsoLocalCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean#L142). The attribute's comment: “first equality: RΓ\_I(A) ⊗ᴸ B = RΓ\_Z(A) ⊗ᴸ B”.
 
 > **Stacks 0957, the first equality.** `RΓ_I(A) ⊗ᴸ_A B ≅ RΓ_Z(A) ⊗ᴸ_A B`: derived extension of
 > scalars applied to the identification of the two torsion models over the Noetherian ring `A`.
@@ -147,7 +147,7 @@ def derivedPowerTorsionOfRingBaseChangeIsoLocalCohomology (A B : Type uA) [CommR
         (localCohomologyOfRing A I hI)
 ```
 
-**`Dualizing.localCohomologyOfRingIsoDerivedPowerTorsionOfRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean#L155). The attribute's comment: “last equality: RΓ\_Y(B) = RΓ\_\{IB}(B)”.
+**`Dualizing.localCohomologyOfRingIsoDerivedPowerTorsionOfRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean#L155). The attribute's comment: “last equality: RΓ\_Y(B) = RΓ\_\{IB}(B)”.
 
 > **Stacks 0957, the last equality.** `RΓ_Y(B) ≅ RΓ_{IB}(B)` for `Y = V(IB)`: the
 > identification of the two torsion models over the Noetherian ring `B`, read backwards at the
@@ -160,7 +160,7 @@ def localCohomologyOfRingIsoDerivedPowerTorsionOfRing (A B : Type uA) [CommRing 
       derivedPowerTorsionOfRing B (I.map f) (hI.map f)
 ```
 
-**`Dualizing.derivedPowerTorsionOfRingBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean#L169). The attribute's comment: “the four-term chain, composed, for two rings in one universe”.
+**`Dualizing.derivedPowerTorsionOfRingBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean#L169). The attribute's comment: “the four-term chain, composed, for two rings in one universe”.
 
 > **Stacks 0957, the whole chain.** For a homomorphism `f : A → B` of Noetherian rings and a
 > finitely generated ideal `I ⊆ A`, there is an isomorphism
@@ -176,7 +176,7 @@ def derivedPowerTorsionOfRingBaseChangeIso (A B : Type uA) [CommRing A] [CommRin
       derivedPowerTorsionOfRing B (I.map f) (hI.map f)
 ```
 
-**`Dualizing.derivedPowerTorsionOfRingLiftedBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean#L181). The attribute's comment: “the four-term chain, composed, across universes”.
+**`Dualizing.derivedPowerTorsionOfRingLiftedBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean#L181). The attribute's comment: “the four-term chain, composed, across universes”.
 
 > **Stacks 0957, the whole chain, for two rings in independent universes**, after transporting
 > both regular modules into a common module universe.
@@ -197,4 +197,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.10, Tag 0BJD](https://stacks.math.columbia.edu/tag/0BJD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

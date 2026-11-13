@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.12 Submersive morphisms
 
-Section 101.12 of the Stacks Project, [Tag 06U5](https://stacks.math.columbia.edu/tag/06U5). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.12 of the Stacks Project, [Tag 06U5](https://stacks.math.columbia.edu/tag/06U5). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CHX, a lemma
 
 [Tag 0CHX](https://stacks.math.columbia.edu/tag/0CHX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.representable_universallySubmersive_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallySubmersiveCriterion.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallySubmersiveCriterion.lean#L57).
+**`AlgebraicGeometry.Stack.representable_universallySubmersive_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallySubmersiveCriterion.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallySubmersiveCriterion.lean#L57).
 
 > **Stacks 0CHX.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` representable by
 > algebraic spaces is universally submersive in the relative sense of Tag 04XB — every algebraic
@@ -44,7 +44,7 @@ theorem representable_universallySubmersive_iff
 
 [Tag 06U6](https://stacks.math.columbia.edu/tag/06U6) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsSubmersive`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubmersiveAlgebraicStack.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SubmersiveAlgebraicStack.lean#L77). The attribute's comment: “part (1)”. References: SGA 1 IX (2.1), “submersive”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsSubmersive`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubmersiveAlgebraicStack.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubmersiveAlgebraicStack.lean#L77). The attribute's comment: “part (1)”. References: SGA 1 IX (2.1), “submersive”.
 
 > **Stacks 06U6, part (1).** A 1-morphism of algebraic stacks over `S` *is submersive* when the
 > map `|𝒳| → |𝒴|` it induces on the topological spaces of points of Stacks 04XG and 04XL is a
@@ -54,7 +54,7 @@ theorem representable_universallySubmersive_iff
 abbrev IsSubmersive {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsUniversallySubmersive`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubmersiveAlgebraicStack.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SubmersiveAlgebraicStack.lean#L88). The attribute's comment: “part (2)”. References: SGA 1 IX (2.1), “univ. submersive”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsUniversallySubmersive`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubmersiveAlgebraicStack.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubmersiveAlgebraicStack.lean#L88). The attribute's comment: “part (2)”. References: SGA 1 IX (2.1), “univ. submersive”.
 
 > **Stacks 06U6, part (2).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` *is
 > universally submersive* when, for every 1-morphism `g : 𝒴' ⟶ 𝒴` of algebraic stacks over `S`, the
@@ -69,7 +69,7 @@ abbrev IsUniversallySubmersive {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS}
 
 [Tag 0CHY](https://stacks.math.columbia.edu/tag/0CHY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isUniversallySubmersive_baseChange_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyOpenSubmersiveBaseChange.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyOpenSubmersiveBaseChange.lean#L221).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isUniversallySubmersive_baseChange_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyOpenSubmersiveBaseChange.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyOpenSubmersiveBaseChange.lean#L221).
 
 > **Stacks 0CHY.** Universal submersiveness is stable under base change: let `f : 𝒳 ⟶ 𝒴` be a
 > universally submersive 1-morphism of algebraic stacks over `S` and let `R` be a 2-fibre product
@@ -91,7 +91,7 @@ theorem isUniversallySubmersive_baseChange_of_isTwoFibreProduct
 
 [Tag 0CHZ](https://stacks.math.columbia.edu/tag/0CHZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSubmersive_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean#L84). The attribute's comment: “composition\_submersive”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSubmersive_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean#L84). The attribute's comment: “composition\_submersive”.
 
 > **Stacks 0CHZ.** The composite of two submersive 1-morphisms of algebraic stacks over `S` is
 > submersive.
@@ -102,7 +102,7 @@ theorem isSubmersive_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w} B S hS}
     IsSubmersive B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isUniversallySubmersive_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean#L132). The attribute's comment: “composition\_universally\_submersive”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isUniversallySubmersive_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean#L132). The attribute's comment: “composition\_universally\_submersive”.
 
 > **Stacks 0CHZ.** The composite of two universally submersive 1-morphisms of algebraic stacks
 > over `S` is universally submersive.
@@ -121,4 +121,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.12, Tag 06U5](https://stacks.math.columbia.edu/tag/06U5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

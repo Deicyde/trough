@@ -8,7 +8,7 @@ proof: formalized
 
 # Ogden's lemma
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/ogden-s-lemma/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/ogden-s-lemma/index.html).
 
 ## Number of marked letters
 
@@ -17,7 +17,7 @@ pairs $(a, b)$ with $a \in T$ and $b$ a Boolean; the letter $(a, b)$ is marked w
 The number of marked letters of a marked word $w$ is the number of letters of $w$ that are
 marked, counted with multiplicity.
 
-Formalized by `Cslib.Language.marks`, a definition declared in [CSLibExt/Computability/Languages/ContextFree/Ogden.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Ogden.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/ogden-s-lemma/index.html#marks).
+Formalized by `Cslib.Language.marks`, a definition declared in [CSLibExt/Computability/Languages/ContextFree/Ogden.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Ogden.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/ogden-s-lemma/index.html#marks).
 
 ## Ogden's lemma for a grammar, with an explicit bound
 
@@ -33,7 +33,7 @@ has at least one marked letter, $vxy$ has at most $n$ marked letters, and for ev
 number $i$ the underlying word of $u v^i x y^i z$ lies in the language of $g$, where $v^i$ is the
 concatenation of $i$ copies of $v$.
 
-Formalized by `Cslib.Language.ogden_of_bound`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Ogden.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Ogden.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/ogden-s-lemma/index.html#ogden-of-bound).
+Formalized by `Cslib.Language.ogden_of_bound`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Ogden.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Ogden.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/ogden-s-lemma/index.html#ogden-of-bound).
 
 ## The pumping lemma for a grammar, with an explicit bound
 
@@ -48,7 +48,7 @@ concatenation of $i$ copies of $v$.
 
 It follows from Ogden's lemma with every letter marked.
 
-Formalized by `Cslib.Language.pumping_of_bound`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Ogden.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Ogden.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/ogden-s-lemma/index.html#pumping-of-bound).
+Formalized by `Cslib.Language.pumping_of_bound`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Ogden.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Ogden.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/ogden-s-lemma/index.html#pumping-of-bound).
 
 ## Ogden's lemma
 
@@ -61,7 +61,7 @@ $vy$ has at least one marked letter, $vxy$ has at most $n$ marked letters, and f
 number $i$ the underlying word of $u v^i x y^i z$ lies in $L$, where $v^i$ is the concatenation
 of $i$ copies of $v$.
 
-Formalized by `Cslib.Language.IsContextFree.ogden`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Ogden.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Ogden.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/ogden-s-lemma/index.html#ogden).
+Formalized by `Cslib.Language.IsContextFree.ogden`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Ogden.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Ogden.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/ogden-s-lemma/index.html#ogden).
 
 ## Depends on
 
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ogden's lemma](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/ogden-s-lemma/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/ogden-s-lemma)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/context-free-languages/closure-and-pumping/ogden-s-lemma)

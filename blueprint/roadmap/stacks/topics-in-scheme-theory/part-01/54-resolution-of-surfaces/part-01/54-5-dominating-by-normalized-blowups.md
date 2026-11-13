@@ -8,13 +8,13 @@ proof: formalized
 
 # 54.5 Dominating by normalized blowups
 
-Section 54.5 of the Stacks Project, [Tag 0BBR](https://stacks.math.columbia.edu/tag/0BBR). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 54.5 of the Stacks Project, [Tag 0BBR](https://stacks.math.columbia.edu/tag/0BBR). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BBS, a definition
 
 [Tag 0BBS](https://stacks.math.columbia.edu/tag/0BBS) in the Stacks Project.
 
-**`Stacks.Blowup.normalizedBlowUpScheme`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUp.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUp.lean#L184). The attribute's comment: “normalized blowup scheme”.
+**`Stacks.Blowup.normalizedBlowUpScheme`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUp.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUp.lean#L184). The attribute's comment: “normalized blowup scheme”.
 
 > **Stacks Project, Tag 0BBS.** The normalized blowup of `X` at a closed point `x`: the
 > normalization of the blowup of `X` in the reduced closed subscheme supported at `x`.
@@ -25,7 +25,7 @@ abbrev normalizedBlowUpScheme (X : Scheme.{u})
     (x : X) (hx : IsClosed ({x} : Set X)) : Scheme.{u}
 ```
 
-**`Stacks.Blowup.normalizedBlowUp`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUp.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUp.lean#L193). The attribute's comment: “normalized blowup morphism”.
+**`Stacks.Blowup.normalizedBlowUp`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUp.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUp.lean#L193). The attribute's comment: “normalized blowup morphism”.
 
 > **Stacks Project, Tag 0BBS.** The normalized blowup of `X` at a closed point `x`, as a
 > morphism to `X`: the normalization of the blowup followed by the blowup morphism.
@@ -40,7 +40,7 @@ abbrev normalizedBlowUp (X : Scheme.{u})
 
 [Tag 0BFT](https://stacks.math.columbia.edu/tag/0BFT) in the Stacks Project.
 
-**`Stacks.Blowup.isNormal_normalizedBlowUpScheme`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUpNagata.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUpNagata.lean#L63). The attribute's comment: “normal”.
+**`Stacks.Blowup.isNormal_normalizedBlowUpScheme`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUpNagata.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUpNagata.lean#L63). The attribute's comment: “normal”.
 
 > **Stacks Project, Tag 0BFT.** The normalized blowup of `X` at a closed point is a normal
 > scheme: it is by construction the normalization of the blowup of `X` at that point.
@@ -52,7 +52,7 @@ instance isNormal_normalizedBlowUpScheme {X : Scheme.{u}}
     IsNormal (normalizedBlowUpScheme X hX x hx)
 ```
 
-**`Stacks.Blowup.isNagataScheme_normalizedBlowUpScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUpNagata.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUpNagata.lean#L98). The attribute's comment: “Nagata”.
+**`Stacks.Blowup.isNagataScheme_normalizedBlowUpScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUpNagata.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUpNagata.lean#L98). The attribute's comment: “Nagata”.
 
 > **Stacks Project, Tag 0BFT.** The normalized blowup of a Nagata scheme at a closed point is
 > Nagata: the blowup is Nagata because it is of finite type over `X`, and the normalization of a
@@ -65,7 +65,7 @@ theorem isNagataScheme_normalizedBlowUpScheme {X : Scheme.{u}}
     IsNagataScheme (normalizedBlowUpScheme X hX x hx)
 ```
 
-**`Stacks.Blowup.isProper_normalizedBlowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUpNagata.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUpNagata.lean#L112). The attribute's comment: “proper over the base”.
+**`Stacks.Blowup.isProper_normalizedBlowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUpNagata.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/NormalizedBlowUpNagata.lean#L112). The attribute's comment: “proper over the base”.
 
 > **Stacks Project, Tag 0BFT.** The normalized blowup of a Nagata scheme at a closed point is
 > proper over it: the blowup is proper because `X` is locally Noetherian, and the normalization of
@@ -78,7 +78,7 @@ theorem isProper_normalizedBlowUp {X : Scheme.{u}}
     IsProper (normalizedBlowUp X hX x hx)
 ```
 
-**`AlgebraicGeometry.isNormal_isNagataScheme_and_isProper_normalizedBlowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Normalization/NormalizedBlowUpSequence.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Normalization/NormalizedBlowUpSequence.lean#L90).
+**`AlgebraicGeometry.isNormal_isNagataScheme_and_isProper_normalizedBlowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Normalization/NormalizedBlowUpSequence.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Normalization/NormalizedBlowUpSequence.lean#L90).
 
 > **Stacks Project, Tag 0BFT.** The normalized blowup of a Nagata scheme `X` at a closed point
 > is a normal, Nagata scheme, and its structure morphism is proper over `X`.
@@ -96,7 +96,7 @@ public theorem isNormal_isNagataScheme_and_isProper_normalizedBlowUp {X : Scheme
 
 [Tag 0BBT](https://stacks.math.columbia.edu/tag/0BBT) in the Stacks Project.
 
-**`Stacks.ResolutionOfSurfaces.exists_normalizedBlowUpChain_dominating`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DominateByNormalizedBlowUps/Basic.lean, line 2370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DominateByNormalizedBlowUps/Basic.lean#L2370).
+**`Stacks.ResolutionOfSurfaces.exists_normalizedBlowUpChain_dominating`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DominateByNormalizedBlowUps/Basic.lean, line 2370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DominateByNormalizedBlowUps/Basic.lean#L2370).
 
 > **Stacks Project, Tag 0BBT.** Let `X` be a Noetherian Nagata scheme of dimension two and let
 > `f : Y ⟶ X` be a proper birational morphism. Then there is a scheme `Z` obtained from the
@@ -118,7 +118,7 @@ theorem exists_normalizedBlowUpChain_dominating
 
 [Tag 0C5I](https://stacks.math.columbia.edu/tag/0C5I) in the Stacks Project.
 
-**`Stacks.ResolutionOfSurfaces.exists_normalizedBlowUpChain_resolving_partialMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DominateByNormalizedBlowUps/Basic.lean, line 2473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DominateByNormalizedBlowUps/Basic.lean#L2473).
+**`Stacks.ResolutionOfSurfaces.exists_normalizedBlowUpChain_resolving_partialMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DominateByNormalizedBlowUps/Basic.lean, line 2473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DominateByNormalizedBlowUps/Basic.lean#L2473).
 
 > **Stacks Project, Tag 0C5I.** Let `X` be a Noetherian Nagata scheme of dimension two over
 > `S` and let `Y` be proper over `S`. Any `S`-rational map from `X` to `Y` becomes an `S`-morphism
@@ -144,4 +144,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 54.5, Tag 0BBR](https://stacks.math.columbia.edu/tag/0BBR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

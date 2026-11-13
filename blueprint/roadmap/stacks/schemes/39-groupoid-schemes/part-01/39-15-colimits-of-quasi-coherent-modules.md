@@ -8,13 +8,13 @@ proof: formalized
 
 # 39.15 Colimits of quasi-coherent modules
 
-Section 39.15 of the Stacks Project, [Tag 07TS](https://stacks.math.columbia.edu/tag/07TS). 7 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 39.15 of the Stacks Project, [Tag 07TS](https://stacks.math.columbia.edu/tag/07TS). 7 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07TR, a lemma
 
 [Tag 07TR](https://stacks.math.columbia.edu/tag/07TR) in the Stacks Project.
 
-**`Stacks.Groupoids.GroupoidScheme.isQuasicoherent_pushforwardSource_pullbackTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Coinduction.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Coinduction.lean#L178). The attribute's comment: “the quasi-coherence of `s_* t^* 𝒢`”.
+**`Stacks.Groupoids.GroupoidScheme.isQuasicoherent_pushforwardSource_pullbackTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Coinduction.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Coinduction.lean#L178). The attribute's comment: “the quasi-coherence of `s_* t^* 𝒢`”.
 
 > **The first assertion of Tag 07TR.**  For a groupoid scheme whose source map is
 > quasi-compact and quasi-separated, the module `s_* t^* 𝒢` is quasi-coherent.
@@ -27,7 +27,7 @@ theorem isQuasicoherent_pushforwardSource_pullbackTarget
       ((Scheme.Modules.pullback G.target.left).obj 𝒢)).IsQuasicoherent
 ```
 
-**`Stacks.Groupoids.GroupoidScheme.coinductionAlpha`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Coinduction.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Coinduction.lean#L217). The attribute's comment: “the construction of the canonical isomorphism `α`; not the cocycle and identity conditions making `(s_* t^* 𝒢, α)` a module on the groupoid, and not the functor to `QCoh(U, R, s, t, c)` nor its right adjointness to the forgetful functor”.
+**`Stacks.Groupoids.GroupoidScheme.coinductionAlpha`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Coinduction.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Coinduction.lean#L217). The attribute's comment: “the construction of the canonical isomorphism `α`; not the cocycle and identity conditions making `(s_* t^* 𝒢, α)` a module on the groupoid, and not the functor to `QCoh(U, R, s, t, c)` nor its right adjointness to the forgetful functor”.
 
 > **The canonical isomorphism `α` of Tag 07TR.**  For a groupoid scheme `(U, R, s, t, c)` with
 > `s` and `t` flat, quasi-compact and quasi-separated and a quasi-coherent module `𝒢` on `U`, this
@@ -50,7 +50,7 @@ noncomputable def coinductionAlpha [Flat G.source.left] [Flat G.target.left]
           ((Scheme.Modules.pullback G.target.left).obj 𝒢))
 ```
 
-**`Stacks.Groupoids.GroupoidScheme.coinductionAlpha_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Coinduction.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Coinduction.lean#L235). The attribute's comment: “the naturality of `α` in `𝒢`”.
+**`Stacks.Groupoids.GroupoidScheme.coinductionAlpha_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Coinduction.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Coinduction.lean#L235). The attribute's comment: “the naturality of `α` in `𝒢`”.
 
 > The canonical isomorphism `α` is natural in `𝒢`, which is the sense in which the
 > construction `𝒢 ↦ (s_* t^* 𝒢, α)` is canonical.
@@ -70,7 +70,7 @@ theorem coinductionAlpha_naturality [Flat G.source.left] [Flat G.target.left]
         (coinductionAlpha G 𝒢').hom
 ```
 
-**`Stacks.Groupoids.GroupoidScheme.coinductionAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/Adjunction.lean, line 784](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/Adjunction.lean#L784). The attribute's comment: “the right adjointness of the coinduction functor to the forgetful functor”.
+**`Stacks.Groupoids.GroupoidScheme.coinductionAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/Adjunction.lean, line 784](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/Adjunction.lean#L784). The attribute's comment: “the right adjointness of the coinduction functor to the forgetful functor”.
 
 > **Coinduction is right adjoint to forgetting a groupoid descent datum.**  This is the
 > adjunction of Tag 07TR.
@@ -79,7 +79,7 @@ theorem coinductionAlpha_naturality [Flat G.source.left] [Flat G.target.left]
 noncomputable def coinductionAdjunction : quasicoherentForget G ⊣ coinduction G
 ```
 
-**`Stacks.Groupoids.GroupoidScheme.cocycle_coinductionAlpha`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/CocycleCondition.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/CocycleCondition.lean#L327). The attribute's comment: “the cocycle condition for `α`, the first of the two conditions making `(s_* t^* 𝒢, α)` a quasi-coherent module on the groupoid scheme”.
+**`Stacks.Groupoids.GroupoidScheme.cocycle_coinductionAlpha`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/CocycleCondition.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/CocycleCondition.lean#L327). The attribute's comment: “the cocycle condition for `α`, the first of the two conditions making `(s_* t^* 𝒢, α)` a quasi-coherent module on the groupoid scheme”.
 
 > **The cocycle condition for the coinduction descent isomorphism.**  On the scheme of
 > composable arrows, applying `α` to the two arrows in succession agrees with applying it to their
@@ -94,7 +94,7 @@ theorem cocycle_coinductionAlpha
       reindexHom G.comp.left (coinductionAlpha G 𝒢).hom
 ```
 
-**`Stacks.Groupoids.GroupoidScheme.identity_coinductionAlpha`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/CocycleCondition.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/CocycleCondition.lean#L412). The attribute's comment: “the normalization of `α` along the identity section, the second of the two conditions making `(s_* t^* 𝒢, α)` a quasi-coherent module on the groupoid scheme”.
+**`Stacks.Groupoids.GroupoidScheme.identity_coinductionAlpha`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/CocycleCondition.lean, line 412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/CocycleCondition.lean#L412). The attribute's comment: “the normalization of `α` along the identity section, the second of the two conditions making `(s_* t^* 𝒢, α)` a quasi-coherent module on the groupoid scheme”.
 
 > **The normalization of the coinduction descent isomorphism along the identity section.**
 > Pulling `α` back along the identity section gives the identity of `s_* t^* 𝒢`.  With
@@ -115,7 +115,7 @@ theorem identity_coinductionAlpha
 
 [Tag 0GNF](https://stacks.math.columbia.edu/tag/0GNF) in the Stacks Project.
 
-**`Stacks.Groupoids.GroupoidScheme.coinductionAdjunction_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/Adjunction.lean, line 803](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/Adjunction.lean#L803).
+**`Stacks.Groupoids.GroupoidScheme.coinductionAdjunction_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/Adjunction.lean, line 803](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/CoinductionAdjunction/Adjunction.lean#L803).
 
 > **Stacks 0GNF.**  The unit of the forgetful--coinduction adjunction at a quasi-coherent
 > module `(𝓕, α)` on a groupoid scheme is, on underlying modules, the unit of the
@@ -134,7 +134,7 @@ theorem coinductionAdjunction_unit_app (M : QuasicoherentModule G) :
 
 [Tag 07TT](https://stacks.math.columbia.edu/tag/07TT) in the Stacks Project.
 
-**`AlgebraicGeometry.isCoherent_pullback_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/CoherentPullbackPushforward.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/CoherentPullbackPushforward.lean#L69).
+**`AlgebraicGeometry.isCoherent_pullback_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/CoherentPullbackPushforward.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Modules/CoherentPullbackPushforward.lean#L69).
 
 > **Stacks Project, Tag 07TT.** For a flat, surjective, quasi-compact and quasi-separated
 > morphism `f : Y ⟶ X` of locally Noetherian schemes, a quasi-coherent module `F` on `X` and a
@@ -156,7 +156,7 @@ theorem isCoherent_pullback_pushforward {X Y : Scheme.{u}} (f : Y ⟶ X)
 
 [Tag 07TU](https://stacks.math.columbia.edu/tag/07TU) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.exists_filtered_diagram_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/CoherentColimit.lean, line 826](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/CoherentColimit.lean#L826). The attribute's comment: “every quasi-coherent module on the groupoid scheme is the colimit of a filtered diagram of quasi-coherent modules on the groupoid scheme with coherent underlying modules”.
+**`AlgebraicGeometry.GroupoidScheme.exists_filtered_diagram_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/CoherentColimit.lean, line 826](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/CoherentColimit.lean#L826). The attribute's comment: “every quasi-coherent module on the groupoid scheme is the colimit of a filtered diagram of quasi-coherent modules on the groupoid scheme with coherent underlying modules”.
 
 > **Stacks Project, Tag 07TU.**  Let `(U, R, s, t, c)` be a groupoid scheme over `S` with `U`
 > and `R` Noetherian and with `s` and `t` flat, quasi-compact and quasi-separated.  Then every
@@ -182,7 +182,7 @@ theorem exists_filtered_diagram_of_isCoherent
 
 [Tag 07TV](https://stacks.math.columbia.edu/tag/07TV) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.exists_filtered_diagram_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FiniteTypeStructure/GroupoidColimit.lean, line 1312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FiniteTypeStructure/GroupoidColimit.lean#L1312).
+**`AlgebraicGeometry.GroupoidScheme.exists_filtered_diagram_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FiniteTypeStructure/GroupoidColimit.lean, line 1311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FiniteTypeStructure/GroupoidColimit.lean#L1311).
 
 > **Stacks Project, Tag 07TV.** A quasi-coherent module on an affine groupoid scheme whose
 > arrow ring is free over its object ring via the source map is a filtered colimit of
@@ -209,7 +209,7 @@ theorem exists_filtered_diagram_of_isFiniteType
 
 [Tag 077T](https://stacks.math.columbia.edu/tag/077T) in the Stacks Project.
 
-**`AlgebraicGeometry.essentiallySmall_isCardinalGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidCardinalGenerated.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidCardinalGenerated.lean#L87).
+**`AlgebraicGeometry.essentiallySmall_isCardinalGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidCardinalGenerated.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidCardinalGenerated.lean#L87).
 
 > The `κ`-generated quasi-coherent modules on a groupoid scheme have only a set of
 > isomorphism classes.
@@ -226,7 +226,7 @@ theorem essentiallySmall_isCardinalGenerated {S : Scheme.{u}}
 
 [Tag 077U](https://stacks.math.columbia.edu/tag/077U) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.GroupoidCardinalGeneration.cardinalBound`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidQuasicoherentColimit.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidQuasicoherentColimit.lean#L101). The attribute's comment: “cardinal”.
+**`Stacks.AlgebraicGeometry.GroupoidCardinalGeneration.cardinalBound`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidQuasicoherentColimit.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidQuasicoherentColimit.lean#L101). The attribute's comment: “cardinal”.
 
 > **The cardinal of Stacks 077U.**  For a groupoid scheme it is the maximum of the cardinals
 > Gabber's theorem attaches to the object scheme and to the arrow scheme; the closure construction
@@ -237,7 +237,7 @@ theorem essentiallySmall_isCardinalGenerated {S : Scheme.{u}}
 def cardinalBound {S : Scheme.{u}} (G : GroupoidScheme S) : Cardinal.{u}
 ```
 
-**`Stacks.AlgebraicGeometry.GroupoidCardinalGeneration.cardinalGeneratedSubobject_isFiltered`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidQuasicoherentColimit.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidQuasicoherentColimit.lean#L294). The attribute's comment: “directedness”.
+**`Stacks.AlgebraicGeometry.GroupoidCardinalGeneration.cardinalGeneratedSubobject_isFiltered`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidQuasicoherentColimit.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidQuasicoherentColimit.lean#L294). The attribute's comment: “directedness”.
 
 > **Stacks 077U, the directedness assertion**, at the cardinal the tag attaches to the groupoid
 > scheme.
@@ -247,7 +247,7 @@ instance cardinalGeneratedSubobject_isFiltered (M : QuasicoherentModule G) :
     IsFiltered (CardinalGeneratedSubobject M (cardinalBound G))
 ```
 
-**`Stacks.AlgebraicGeometry.GroupoidCardinalGeneration.isColimit_cardinalGeneratedSubobjectCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidQuasicoherentColimit.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidQuasicoherentColimit.lean#L384). The attribute's comment: “colimit”.
+**`Stacks.AlgebraicGeometry.GroupoidCardinalGeneration.isColimit_cardinalGeneratedSubobjectCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidQuasicoherentColimit.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GroupoidQuasicoherentColimit.lean#L384). The attribute's comment: “colimit”.
 
 > **Stacks 077U, the colimit assertion.**  Every quasi-coherent module on a groupoid scheme with
 > flat source and target is the colimit of the canonical diagram of its quasi-coherent submodules
@@ -265,4 +265,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 39.15, Tag 07TS](https://stacks.math.columbia.edu/tag/07TS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

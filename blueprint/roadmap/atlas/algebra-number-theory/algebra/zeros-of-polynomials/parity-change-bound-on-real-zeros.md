@@ -7,7 +7,7 @@ statement: formalized
 
 # Parity-change bound on real zeros
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros/index.html).
 
 ## Newton-type coefficient differences
 
@@ -15,7 +15,7 @@ For a real polynomial $f = \sum_k a_k x^k$ and a
 natural number $k$, $\tilde c_k(f) = (k+1)\,a_k^2 - k\,a_{k-1}a_{k+1}$, where $a_j = 0$ for $j$
 above the degree of $f$; for $k = 0$ the second term vanishes, so $\tilde c_0(f) = a_0^2$.
 
-Formalized by `MathlibExt.Algebra.RealZerosParityChangeBoundWanted.cTilde`, a definition declared in [WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros/index.html#c-tilde).
+Formalized by `MathlibExt.Algebra.RealZerosParityChangeBoundWanted.cTilde`, a definition declared in [WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros/index.html#c-tilde).
 
 ## Indices with positive Newton-type difference
 
@@ -25,7 +25,7 @@ $\tilde c_0(f) = a_0^2$ and $\tilde c_k(f) = (k+1)\,a_k^2 - k\,a_{k-1}a_{k+1}$ f
 This is the list of the indices $k \in \{0, \dots, n\}$ with $\tilde c_k(f) > 0$, in increasing
 order.
 
-Formalized by `MathlibExt.Algebra.RealZerosParityChangeBoundWanted.posIndices`, a definition declared in [WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros/index.html#pos-indices).
+Formalized by `MathlibExt.Algebra.RealZerosParityChangeBoundWanted.posIndices`, a definition declared in [WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros/index.html#pos-indices).
 
 ## Parity changes of the positive-difference indices
 
@@ -35,7 +35,7 @@ $\tilde c_0(f) = a_0^2$ and $\tilde c_k(f) = (k+1)\,a_k^2 - k\,a_{k-1}a_{k+1}$ f
 Let $k_1 < k_2 < \dots < k_m$ be the indices $k \le n$ with $\tilde c_k(f) > 0$. Then $v(f)$ is the
 number of $i < m$ such that $k_i$ and $k_{i+1}$ have different parities.
 
-Formalized by `MathlibExt.Algebra.RealZerosParityChangeBoundWanted.vVal`, a definition declared in [WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros/index.html#v-val).
+Formalized by `MathlibExt.Algebra.RealZerosParityChangeBoundWanted.vVal`, a definition declared in [WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros/index.html#v-val).
 
 ## Parity-change bound on real zeros (conjecture)
 
@@ -50,7 +50,7 @@ $0 \le k \le n$ has at most $v(f)$ distinct real zeros.
 
 - AMR-021-0014.
 
-Formalized by `MathlibExt.Algebra.RealZerosParityChangeBoundWanted.conjecture`, a definition declared in [WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros/index.html#conjecture).
+Formalized by `MathlibExt.Algebra.RealZerosParityChangeBoundWanted.conjecture`, a definition declared in [WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros/index.html#conjecture).
 
 ## The parity-change bound on real zeros is false
 
@@ -70,7 +70,7 @@ zeros and $v = 21$.
 
 - Olga Katkova, Boris Shapiro and Anna Vishnyakova, In search of Newton-type inequalities, arXiv:2403.12200 (2024), https://arxiv.org/abs/2403.12200.
 
-Stated but not proved: `MathlibExt.Algebra.RealZerosParityChangeBoundWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros/index.html#conjecture-refuted).
+Stated but not proved: `MathlibExt.Algebra.RealZerosParityChangeBoundWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RealZerosParityChangeBoundWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros/index.html#conjecture-refuted).
 
 ## Depends on
 
@@ -79,4 +79,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Parity-change bound on real zeros](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/zeros-of-polynomials/parity-change-bound-on-real-zeros)

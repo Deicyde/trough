@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Scheme.Hom.etaleCohomologicalDimension, AlgebraicGeometry.Scheme.Hom.etaleCohomologicalDimension_lt_top_of_finiteType, AlgebraicGeometry.Scheme.etaleCohomologicalDimension_lt_top_of_finiteType, Stacks.EtaleCohomology.preservesColimitsOfShape_of_finiteCohomologicalDimension_directImage, Stacks.EtaleCohomology.preservesColimitsOfShape_of_finiteCohomologicalDimension_globalSections, Stacks.EtaleCohomology.preservesColimitsOfShape_derivedDirectImage_zmod, Stacks.EtaleCohomology.preservesColimitsOfShape_derivedGlobalSections_zmod, Stacks.EtaleCohomology.preservesColimitsOfShape_derivedDirectImage_of_natCast_eq_zero
+lean: AlgebraicGeometry.Scheme.Hom.etaleCohomologicalDimension, AlgebraicGeometry.Scheme.Hom.etaleCohomologicalDimension_lt_top_of_finiteType, AlgebraicGeometry.Scheme.etaleCohomologicalDimension_lt_top_of_finiteType, Stacks.EtaleCohomology.preservesColimitsOfShape_derivedDirectImage_zmod, Stacks.EtaleCohomology.preservesColimitsOfShape_derivedGlobalSections_zmod, Stacks.EtaleCohomology.preservesColimitsOfShape_derivedDirectImage_of_natCast_eq_zero, Stacks.EtaleCohomology.preservesColimitsOfShape_derivedGlobalSections_of_natCast_eq_zero, Stacks.EtaleCohomology.preservesColimitsOfShape_etaleModuleDerivedDirectImageUnbounded_of_isProper
 statement: formalized
 proof: formalized
 ---
 
 # 59.96 Finite cohomological dimension
 
-Section 59.96 of the Stacks Project, [Tag 0F0Y](https://stacks.math.columbia.edu/tag/0F0Y). 6 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.96 of the Stacks Project, [Tag 0F0Y](https://stacks.math.columbia.edu/tag/0F0Y). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F0Z, a definition
 
 [Tag 0F0Z](https://stacks.math.columbia.edu/tag/0F0Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.etaleCohomologicalDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension.lean#L163).
+**`AlgebraicGeometry.Scheme.Hom.etaleCohomologicalDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension.lean#L163).
 
 > **Stacks Project, Tag 0F0Z.** The cohomological dimension `cd(f)` of a quasi-compact,
 > quasi-separated morphism of schemes `f : X ⟶ Y`: the smallest `d ∈ {0, 1, 2, …} ∪ {∞}` such
@@ -28,7 +28,7 @@ public def etaleCohomologicalDimension [QuasiCompact f] [QuasiSeparated f] : ℕ
 
 [Tag 0F10](https://stacks.math.columbia.edu/tag/0F10) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.etaleCohomologicalDimension_lt_top_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/FiniteType.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/FiniteType.lean#L92). The attribute's comment: “(1): cd(f) < ∞ for a morphism of schemes of finite type over a field”.
+**`AlgebraicGeometry.Scheme.Hom.etaleCohomologicalDimension_lt_top_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/FiniteType.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/FiniteType.lean#L93). The attribute's comment: “(1): cd(f) < ∞ for a morphism of schemes of finite type over a field”.
 
 > **Stacks Project, Tag 0F10, part (1).** A morphism `f : X ⟶ Y` of schemes of finite type
 > over a field `K` has finite cohomological dimension: `cd(f) < ∞`.
@@ -43,7 +43,7 @@ theorem Hom.etaleCohomologicalDimension_lt_top_of_finiteType (K : Type u) [Field
     f.etaleCohomologicalDimension < ⊤
 ```
 
-**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_lt_top_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/FiniteTypeAbsolute.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/FiniteTypeAbsolute.lean#L48). The attribute's comment: “(2): cd(X) < ∞ for X of finite type over a field K with cd(K) < ∞”.
+**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_lt_top_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/FiniteTypeAbsolute.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/FiniteTypeAbsolute.lean#L48). The attribute's comment: “(2): cd(X) < ∞ for X of finite type over a field K with cd(K) < ∞”.
 
 > **Stacks Project, Tag 0F10, part (2).** If the field `K` has finite cohomological dimension
 > `cd(K) = cd(Spec K) < ∞`, then every scheme `X` of finite type over `K` has finite cohomological
@@ -62,72 +62,7 @@ theorem etaleCohomologicalDimension_lt_top_of_finiteType (K : Type u) [Field K]
 
 [Tag 0F11](https://stacks.math.columbia.edu/tag/0F11) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.preservesColimitsOfShape_of_finiteCohomologicalDimension_directImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimensionDirectSums.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimensionDirectSums.lean#L106). The attribute's comment: “(1) Rf\_* : D(X\_étale, Λ) ⟶ D(Y\_étale, Λ) commutes with direct sums when f\_* has finite cohomological dimension. Tag 09Z1, that each R^q f\_* commutes with direct sums, is carried as the hypothesis `hsums`, since it is not proved in this library; for Λ a general ring rather than only ℤ/nℤ.”.
-
-> **[Stacks, Tag 0F11] (1).** Let `Λ` be a ring and `f : X ⟶ Y` a morphism of schemes such
-> that the direct image of sheaves of `Λ`-modules on the small étale sites has finite
-> cohomological dimension, i.e. there is a degree `d` above which every higher direct image
-> `R^q f_*` vanishes on every sheaf of `Λ`-modules. Then any unbounded right derived functor
-> `Rf_* : D(X_étale, Λ) ⟶ D(Y_étale, Λ)` commutes with direct sums.
->
-> The hypothesis `hcd` is the source's `cd(f) < ∞`, in the shape its proof uses it and in which
-> [Stacks, Tag 095U] supplies it. The hypothesis `hsums` is [Stacks, Tag 09Z1], that each
-> `R^q f_*` commutes with direct sums; it is carried because that tag is not proved in this
-> library, and nothing else here is assumed.
-
-```lean
-theorem preservesColimitsOfShape_of_finiteCohomologicalDimension_directImage
-    (Λ : Type r) [Ring Λ] {X Y : Scheme.{u}} (f : X ⟶ Y)
-    [HasDerivedCategory.{z} (EtaleModules.{u, r} Λ X)]
-    [HasDerivedCategory.{z} (EtaleModules.{u, r} Λ Y)]
-    (hcd : ∃ d : ℕ, ∀ q : ℕ, d ≤ q → ∀ F : EtaleModules.{u, r} Λ X,
-      IsZero (((etaleModuleDirectImage.{u, r} Λ f).rightDerived q).obj F))
-    (hsums : ∀ (q : ℕ) (I : Type (max (u + 1) r)),
-      PreservesColimitsOfShape (Discrete I)
-        ((etaleModuleDirectImage.{u, r} Λ f).rightDerived q))
-    (RF : DerivedCategory (EtaleModules.{u, r} Λ X) ⥤
-      DerivedCategory (EtaleModules.{u, r} Λ Y))
-    (α : (etaleModuleDirectImage.{u, r} Λ f).mapHomotopyCategory (ComplexShape.up ℤ) ⋙
-      DerivedCategory.Qh ⟶ DerivedCategory.Qh ⋙ RF)
-    [RF.IsRightDerivedFunctor α
-      (HomotopyCategory.quasiIso (EtaleModules.{u, r} Λ X) (ComplexShape.up ℤ))]
-    (I : Type (max (u + 1) r)) :
-    PreservesColimitsOfShape (Discrete I) RF
-```
-
-**`Stacks.EtaleCohomology.preservesColimitsOfShape_of_finiteCohomologicalDimension_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimensionDirectSums.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimensionDirectSums.lean#L139). The attribute's comment: “(2) RΓ(X, -) : D(X\_étale, Λ) ⟶ D(Λ) commutes with direct sums when Γ has finite cohomological dimension. Tag 09Z1, that each H^q(X, -) commutes with direct sums, is carried as the hypothesis `hsums`, since it is not proved in this library; for Λ a general ring rather than only ℤ/nℤ.”.
-
-> **[Stacks, Tag 0F11] (2).** Let `Λ` be a ring and `X` a scheme such that global sections of
-> sheaves of `Λ`-modules on the small étale site of `X` has finite cohomological dimension, i.e.
-> there is a degree `d` above which every `H^q(X, -)` vanishes on every sheaf of `Λ`-modules.
-> Then any unbounded right derived functor `RΓ(X, -) : D(X_étale, Λ) ⟶ D(Λ)` commutes with direct
-> sums.
->
-> The hypothesis `hcd` is the source's `cd(X) < ∞`, and `hsums` is [Stacks, Tag 09Z1] read on the
-> structure morphism of `X`, that each `H^q(X, -)` commutes with direct sums; it is carried
-> because that tag is not proved in this library.
-
-```lean
-theorem preservesColimitsOfShape_of_finiteCohomologicalDimension_globalSections
-    (Λ : Type r) [Ring Λ] (X : Scheme.{u})
-    [HasDerivedCategory.{z} (EtaleModules.{u, r} Λ X)]
-    [HasDerivedCategory.{z} (ModuleCat.{max (u + 1) r} Λ)]
-    (hcd : ∃ d : ℕ, ∀ q : ℕ, d ≤ q → ∀ F : EtaleModules.{u, r} Λ X,
-      IsZero (((etaleModuleGlobalSections.{u, r} Λ X).rightDerived q).obj F))
-    (hsums : ∀ (q : ℕ) (I : Type (max (u + 1) r)),
-      PreservesColimitsOfShape (Discrete I)
-        ((etaleModuleGlobalSections.{u, r} Λ X).rightDerived q))
-    (RF : DerivedCategory (EtaleModules.{u, r} Λ X) ⥤
-      DerivedCategory (ModuleCat.{max (u + 1) r} Λ))
-    (α : (etaleModuleGlobalSections.{u, r} Λ X).mapHomotopyCategory (ComplexShape.up ℤ) ⋙
-      DerivedCategory.Qh ⟶ DerivedCategory.Qh ⋙ RF)
-    [RF.IsRightDerivedFunctor α
-      (HomotopyCategory.quasiIso (EtaleModules.{u, r} Λ X) (ComplexShape.up ℤ))]
-    (I : Type (max (u + 1) r)) :
-    PreservesColimitsOfShape (Discrete I) RF
-```
-
-**`Stacks.EtaleCohomology.preservesColimitsOfShape_derivedDirectImage_zmod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean#L422). The attribute's comment: “(1): Rf\_* : D(X\_étale, ℤ/nℤ) ⟶ D(Y\_étale, ℤ/nℤ) commutes with direct sums for f quasi-compact and quasi-separated with cd(f) < ∞, n ≥ 1”.
+**`Stacks.EtaleCohomology.preservesColimitsOfShape_derivedDirectImage_zmod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean#L422). The attribute's comment: “(1): Rf\_* : D(X\_étale, ℤ/nℤ) ⟶ D(Y\_étale, ℤ/nℤ) commutes with direct sums for f quasi-compact and quasi-separated with cd(f) < ∞, n ≥ 1”.
 
 > **[Stacks, Tag 0F11] (1).** Let `n ≥ 1` and let `f : X ⟶ Y` be a quasi-compact and
 > quasi-separated morphism of schemes with `cd(f) < ∞`. Then the unbounded derived direct image
@@ -157,7 +92,7 @@ theorem preservesColimitsOfShape_derivedDirectImage_zmod
     PreservesColimitsOfShape (Discrete I) RF
 ```
 
-**`Stacks.EtaleCohomology.preservesColimitsOfShape_derivedGlobalSections_zmod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean#L498). The attribute's comment: “(2): RΓ(X, -) : D(X\_étale, ℤ/nℤ) ⟶ D(ℤ/nℤ) commutes with direct sums for X quasi-compact and quasi-separated with cd(X) < ∞, n ≥ 1”.
+**`Stacks.EtaleCohomology.preservesColimitsOfShape_derivedGlobalSections_zmod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean, line 498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean#L498). The attribute's comment: “(2): RΓ(X, -) : D(X\_étale, ℤ/nℤ) ⟶ D(ℤ/nℤ) commutes with direct sums for X quasi-compact and quasi-separated with cd(X) < ∞, n ≥ 1”.
 
 > **[Stacks, Tag 0F11] (2).** Let `n ≥ 1` and let `X` be a quasi-compact and quasi-separated
 > scheme with `cd(X) < ∞`. Then the unbounded derived global sections
@@ -186,7 +121,7 @@ theorem preservesColimitsOfShape_derivedGlobalSections_zmod
     PreservesColimitsOfShape (Discrete I) RF
 ```
 
-**`Stacks.EtaleCohomology.preservesColimitsOfShape_derivedDirectImage_of_natCast_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean#L569). The attribute's comment: “(1)”.
+**`Stacks.EtaleCohomology.preservesColimitsOfShape_derivedDirectImage_of_natCast_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean, line 571](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean#L571). The attribute's comment: “(1): Rf\_* : D(X\_étale, Λ) ⟶ D(Y\_étale, Λ) commutes with direct sums for f quasi-compact and quasi-separated with cd(f) < ∞, for every commutative ring Λ with n = 0 in Λ for some n ≥ 1 (the source's case is Λ = ℤ/nℤ)”.
 
 > **[Stacks, Tag 0F11] (1).** Let `n ≥ 1` and let `f : X ⟶ Y` be a quasi-compact and
 > quasi-separated morphism of schemes with `cd(f) < ∞`. Then
@@ -214,7 +149,7 @@ theorem preservesColimitsOfShape_derivedDirectImage_of_natCast_eq_zero
     PreservesColimitsOfShape (Discrete I) RF
 ```
 
-**`Stacks.EtaleCohomology.preservesColimitsOfShape_derivedGlobalSections_of_natCast_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean, line 596](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean#L596). The attribute's comment: “(2)”.
+**`Stacks.EtaleCohomology.preservesColimitsOfShape_derivedGlobalSections_of_natCast_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean, line 600](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionCoefficientsDirectSums.lean#L600). The attribute's comment: “(2): RΓ(X, -) : D(X\_étale, Λ) ⟶ D(Λ) commutes with direct sums for X quasi-compact and quasi-separated with cd(X) < ∞, for every commutative ring Λ with n = 0 in Λ for some n ≥ 1 (the source's case is Λ = ℤ/nℤ)”.
 
 > **[Stacks, Tag 0F11] (2).** Let `n ≥ 1` and let `X` be a quasi-compact and quasi-separated
 > scheme with `cd(X) < ∞`. Then `RΓ(X, -) : D(X_étale, Λ) ⟶ D(Λ)` commutes with direct sums, for
@@ -245,7 +180,7 @@ theorem preservesColimitsOfShape_derivedGlobalSections_of_natCast_eq_zero
 
 [Tag 0F0D](https://stacks.math.columbia.edu/tag/0F0D) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.preservesColimitsOfShape_etaleModuleDerivedDirectImageUnbounded_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperDirectImageDirectSums.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperDirectImageDirectSums.lean#L274). The attribute's comment: “for a torsion ring Λ in any universe, which contains Λ = ℤ/nℤ, n ≥ 1”.
+**`Stacks.EtaleCohomology.preservesColimitsOfShape_etaleModuleDerivedDirectImageUnbounded_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperDirectImageDirectSums.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperDirectImageDirectSums.lean#L293). The attribute's comment: “for a torsion ring Λ in any universe, which contains Λ = ℤ/nℤ, n ≥ 1”.
 
 > Let `f : X ⟶ Y` be a proper morphism of schemes and let `Λ` be a torsion ring, in any
 > universe; for instance `Λ = ℤ/nℤ` with `n ≥ 1`. Then the unbounded derived direct image
@@ -262,7 +197,7 @@ theorem preservesColimitsOfShape_etaleModuleDerivedDirectImageUnbounded_of_isPro
 
 [Tag 0F12](https://stacks.math.columbia.edu/tag/0F12) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.ProjectionFormulaConstant.isIso_projectionFormulaMap_toPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProjectionFormulaConstant/Main.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProjectionFormulaConstant/Main.lean#L204). The attribute's comment: “the canonical map of Section 0943 for the structure morphism of `(X_étale, Λ̲)` to the point ringed by `Λ`, on the shared ringed topos `EtaleCoefficients.ringedTopos`; `D(pt, Λ)` is `D(Λ)` through `EtaleCoefficients.pointDerivedEquivalence`”.
+**`Stacks.EtaleCohomology.ProjectionFormulaConstant.isIso_projectionFormulaMap_toPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProjectionFormulaConstant/Main.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProjectionFormulaConstant/Main.lean#L204). The attribute's comment: “the canonical map of Section 0943 for the structure morphism of `(X_étale, Λ̲)` to the point ringed by `Λ`, on the shared ringed topos `EtaleCoefficients.ringedTopos`; `D(pt, Λ)` is `D(Λ)` through `EtaleCoefficients.pointDerivedEquivalence`”.
 
 > Let `X` be a quasi-compact and quasi-separated scheme with `cd(X) < ∞` and let `Λ` be a
 > torsion ring. For `E ∈ D(X_étale, Λ)` and `K ∈ D(pt, Λ) = D(Λ)`, the
@@ -287,7 +222,7 @@ theorem isIso_projectionFormulaMap_toPoint [CompactSpace X] [QuasiSeparatedSpace
 
 [Tag 0F0G](https://stacks.math.columbia.edu/tag/0F0G) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_etalePushforwardProjectionMap_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperProjectionFormula/TorsionProjectionFormula.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperProjectionFormula/TorsionProjectionFormula.lean#L149).
+**`Stacks.EtaleCohomology.isIso_etalePushforwardProjectionMap_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperProjectionFormula/TorsionProjectionFormula.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperProjectionFormula/TorsionProjectionFormula.lean#L149).
 
 > **[Stacks, Tag 0F0G].** Let `f : X ⟶ Y` be a proper morphism of schemes and `Λ` a torsion ring.
 > For `E ∈ D(X_étale, Λ)` and `K ∈ D(Y_étale, Λ)`, unbounded, the canonical map of
@@ -296,7 +231,7 @@ theorem isIso_projectionFormulaMap_toPoint [CompactSpace X] [QuasiSeparatedSpace
 > is an isomorphism in `D(Y_étale, Λ)`.
 
 ```lean
-theorem isIso_etalePushforwardProjectionMap_of_isProper (hΛ : AddMonoid.IsTorsion Λ)
+theorem isIso_etalePushforwardProjectionMap_of_isProper (hΛ : IsAddTorsion Λ)
     {X Y : Scheme.{u}} (f : X ⟶ Y) [IsProper f]
     (E : DerivedCategory (EtaleModules.{u, 0} Λ X))
     (K : DerivedCategory (EtaleModules.{u, 0} Λ Y)) :
@@ -310,4 +245,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.96, Tag 0F0Y](https://stacks.math.columbia.edu/tag/0F0Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

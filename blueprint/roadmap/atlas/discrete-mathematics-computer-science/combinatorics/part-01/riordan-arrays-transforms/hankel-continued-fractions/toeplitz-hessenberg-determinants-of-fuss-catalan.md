@@ -7,7 +7,7 @@ statement: formalized
 
 # Toeplitz–Hessenberg determinants of Fuss–Catalan numbers
 
-8 results, 1 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html).
+8 results, 1 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html).
 
 ## Small generalized Fuss–Catalan numbers
 
@@ -21,7 +21,7 @@ With $C_n$ the $n$-th Catalan number, $A_3(2, 1) = C_3$ and $A_2(2, 3) = C_4 - C
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Sections 1-2 (`C_n = A_n(2, 1)`, `K_n = A_n(2, 3)`, `H_n = A_n(3, 1)`, `J_n = A_n(3, 2)`).
 
-Formalized by `MetaMathlibExt.toeplitzHessenberg_fussCatalan_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#toeplitz-hessenberg-fuss-catalan-example).
+Formalized by `MetaMathlibExt.toeplitzHessenberg_fussCatalan_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#toeplitz-hessenberg-fuss-catalan-example).
 
 ## Generating function of Toeplitz–Hessenberg determinants
 
@@ -40,7 +40,7 @@ needs no hypothesis on $a_0$; for $a_0 = 0$ it gives $\det(0; a_1, \dots, a_n) =
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Lemma 2 (`jis-2026-26.1.2-lem-2`).
 
-Stated but not proved: `MetaMathlibExt.toeplitzHessenbergDet_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#toeplitz-hessenberg-det-gen-fun).
+Stated but not proved: `MetaMathlibExt.toeplitzHessenbergDet_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#toeplitz-hessenberg-det-gen-fun).
 
 ## Toeplitz–Hessenberg determinants of Fuss–Catalan numbers
 
@@ -63,7 +63,7 @@ $A_i(0, 0)$ is $0$ and both sides vanish.
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Theorem 3 (`jis-2026-26.1.2-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.toeplitzHessenbergDet_fussCatalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#toeplitz-hessenberg-det-fuss-catalan).
+Stated but not proved: `MetaMathlibExt.toeplitzHessenbergDet_fussCatalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#toeplitz-hessenberg-det-fuss-catalan).
 
 ## Special Toeplitz–Hessenberg determinants of Fuss–Catalan numbers
 
@@ -82,7 +82,7 @@ $D_n(3, 2) = \frac{2}{n} \binom{3n - 3}{n - 1}$ for every $n \ge 1$.
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Corollary 4 (`jis-2026-26.1.2-cor-4`).
 
-Stated but not proved: `MetaMathlibExt.toeplitzHessenbergDet_fussCatalan_special` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#toeplitz-hessenberg-det-fuss-catalan-spe).
+Stated but not proved: `MetaMathlibExt.toeplitzHessenbergDet_fussCatalan_special` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#toeplitz-hessenberg-det-fuss-catalan-spe).
 
 ## Toeplitz–Hessenberg determinants with Catalan entries
 
@@ -108,7 +108,7 @@ determinants in (1) form OEIS A066357.
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Theorem 6 (`jis-2026-26.1.2-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.toeplitzHessenbergDet_catalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#toeplitz-hessenberg-det-catalan).
+Stated but not proved: `MetaMathlibExt.toeplitzHessenbergDet_catalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#toeplitz-hessenberg-det-catalan).
 
 ## Toeplitz–Hessenberg determinants of ternary Fuss–Catalan numbers
 
@@ -124,7 +124,7 @@ $n \ge 2$, and $\det(-1; J_0, J_1, \dots, J_{n-1}) = H_n$ for every $n \ge 1$.
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Theorem 8, formulas (4) and (6) (`jis-2026-26.1.2-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.toeplitzHessenbergDet_ternary` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#toeplitz-hessenberg-det-ternary).
+Stated but not proved: `MetaMathlibExt.toeplitzHessenbergDet_ternary` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#toeplitz-hessenberg-det-ternary).
 
 ## Trudi multi-sums of Fuss–Catalan numbers
 
@@ -153,7 +153,7 @@ sides are $0$.
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Corollary 9 (`jis-2026-26.1.2-cor-9`).
 
-Stated but not proved: `MetaMathlibExt.trudiPartitionSum_fussCatalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#trudi-partition-sum-fuss-catalan).
+Stated but not proved: `MetaMathlibExt.trudiPartitionSum_fussCatalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#trudi-partition-sum-fuss-catalan).
 
 ## Even noncrossing partitions and Dyck paths with even descents
 
@@ -167,7 +167,7 @@ for each peak $UD$: the run of down steps starting at the $D$ of that peak.
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Lemma 10 (`jis-2026-26.1.2-lem-10`).
 
-Stated but not proved: `MetaMathlibExt.nonempty_equiv_evenNoncrossing_evenDescentDyck` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#nonempty-equiv-even-noncrossing-even-des).
+Stated but not proved: `MetaMathlibExt.nonempty_equiv_evenNoncrossing_evenDescentDyck` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ToeplitzHessenbergFussCatalanWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html#nonempty-equiv-even-noncrossing-even-des).
 
 ## Depends on
 
@@ -176,4 +176,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Toeplitz–Hessenberg determinants of Fuss–Catalan numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/toeplitz-hessenberg-determinants-of-fuss-catalan)

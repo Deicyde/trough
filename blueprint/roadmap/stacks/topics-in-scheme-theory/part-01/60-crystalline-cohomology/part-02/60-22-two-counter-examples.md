@@ -8,13 +8,13 @@ proof: formalized
 
 # 60.22 Two counter examples
 
-Section 60.22 of the Stacks Project, [Tag 07LI](https://stacks.math.columbia.edu/tag/07LI). 2 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 60.22 of the Stacks Project, [Tag 07LI](https://stacks.math.columbia.edu/tag/07LI). 2 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07LJ, an example
 
 [Tag 07LJ](https://stacks.math.columbia.edu/tag/07LJ) in the Stacks Project.
 
-**`Crystalline.TorsionExample.completedDifferential_tauForm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCompletedDeRham.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCompletedDeRham.lean#L286). The attribute's comment: “dτ = 0 in Ω\_D, the p-adic completion of the divided power differentials of D = D\_\{P,γ}(J)^∧ over ZZ\_p: τ lies in the kernel of the degree zero differential of D → Ω¹\_D → Ω²\_D → ⋯”.
+**`Crystalline.TorsionExample.completedDifferential_tauForm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCompletedDeRham.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCompletedDeRham.lean#L286). The attribute's comment: “dτ = 0 in Ω\_D, the p-adic completion of the divided power differentials of D = D\_\{P,γ}(J)^∧ over ZZ\_p: τ lies in the kernel of the degree zero differential of D → Ω¹\_D → Ω²\_D → ⋯”.
 
 > **`τ` lies in the kernel of the degree zero differential of the complex of
 > [Stacks, Tag 07LG]**, which is the example's identity `dτ = 0` read through `Ω^0_D = D`.
@@ -23,7 +23,7 @@ Section 60.22 of the Stacks Project, [Tag 07LI](https://stacks.math.columbia.edu
 theorem completedDifferential_tauForm : completedDifferential p 0 (tauForm p) = 0
 ```
 
-**`Crystalline.TorsionExample.frobeniusPullback_tauClass_eq_envelopeMapOfLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean, line 583](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean#L583). The attribute's comment: “F^*(τ) = σ(τ): for every lift φ of Frobenius on P = ZZ\_p[x, y] over ZZ\_p, with σ the map it induces on the divided power envelope, the Frobenius pullback of the class of τ in H^0(Cris(X/S), O\_\{X/S}) is the class defined by σ(τ)”.
+**`Crystalline.TorsionExample.frobeniusPullback_tauClass_eq_envelopeMapOfLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean, line 583](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean#L583). The attribute's comment: “F^*(τ) = σ(τ): for every lift φ of Frobenius on P = ZZ\_p[x, y] over ZZ\_p, with σ the map it induces on the divided power envelope, the Frobenius pullback of the class of τ in H^0(Cris(X/S), O\_\{X/S}) is the class defined by σ(τ)”.
 
 > **`F^*(τ) = σ(τ)`**: for every lift `φ` of Frobenius on `P` and the map `σ` it induces on the
 > divided power envelope, the class `F^*(τ) ∈ H⁰(Cris(X/S), 𝒪_{X/S})` is the class defined by
@@ -39,7 +39,7 @@ theorem frobeniusPullback_tauClass_eq_envelopeMapOfLift
       toSections (envelopeLift A.obj) (envelopeMapOfLift p φ hφ (envelopeTau p))
 ```
 
-**`Crystalline.TorsionExample.frobeniusPullback_tauClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean, line 604](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean#L604). The attribute's comment: “for the lift of Frobenius x ↦ x^p, y ↦ y^p one has F^*(τ) = 0 in H^0(Cris(X/S), O\_\{X/S})”.
+**`Crystalline.TorsionExample.frobeniusPullback_tauClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean, line 604](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean#L604). The attribute's comment: “for the lift of Frobenius x ↦ x^p, y ↦ y^p one has F^*(τ) = 0 in H^0(Cris(X/S), O\_\{X/S})”.
 
 > **`F^*(τ) = 0`** for the lift of Frobenius `x ↦ x^p`, `y ↦ y^p`: the class `F^*(τ) = σ(τ)`
 > vanishes, as `σ(τ) = γ_p(x^{2p}) γ_p(y^{2p}) − γ_p(x^p y^p)² = 0`.
@@ -48,7 +48,7 @@ theorem frobeniusPullback_tauClass_eq_envelopeMapOfLift
 theorem frobeniusPullback_tauClass : frobeniusPullback p (tauClass p) = 0
 ```
 
-**`Crystalline.TorsionExample.tauClass_ne_zero_and_prime_smul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean, line 627](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean#L627). The attribute's comment: “τ defines a nonzero element of H^0(Cris(X/S), O\_\{X/S}) killed by p, for X = Spec(F\_p[x, y]/(x^2, xy, y^2)) and S = Spec(ZZ\_p) with the divided power ideal (p)”.
+**`Crystalline.TorsionExample.tauClass_ne_zero_and_prime_smul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean, line 627](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean#L627). The attribute's comment: “τ defines a nonzero element of H^0(Cris(X/S), O\_\{X/S}) killed by p, for X = Spec(F\_p[x, y]/(x^2, xy, y^2)) and S = Spec(ZZ\_p) with the divided power ideal (p)”.
 
 > **`τ` defines a nonzero `p`-torsion element of `H⁰(Cris(X/S), 𝒪_{X/S})`.**
 
@@ -56,7 +56,7 @@ theorem frobeniusPullback_tauClass : frobeniusPullback p (tauClass p) = 0
 theorem tauClass_ne_zero_and_prime_smul_eq_zero : tauClass p ≠ 0 ∧ p • tauClass p = 0
 ```
 
-**`Crystalline.TorsionExample.exists_ne_zero_prime_smul_eq_zero_cohomologyZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean, line 634](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean#L634). The attribute's comment: “conclusion (1): H^0(Cris(X/S), O\_\{X/S}) has p-torsion, for X = Spec(F\_p[x, y]/(x^2, xy, y^2)) and S = Spec(ZZ\_p) with the divided power ideal (p)”.
+**`Crystalline.TorsionExample.exists_ne_zero_prime_smul_eq_zero_cohomologyZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean, line 634](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean#L634). The attribute's comment: “conclusion (1): H^0(Cris(X/S), O\_\{X/S}) has p-torsion, for X = Spec(F\_p[x, y]/(x^2, xy, y^2)) and S = Spec(ZZ\_p) with the divided power ideal (p)”.
 
 > **`H⁰(Cris(X/S), 𝒪_{X/S})` has `p`-torsion**, for `X = Spec(𝐅_p[x, y]/(x², xy, y²))` and
 > `S = Spec(ℤ_p)` with the divided power ideal `(p)` and its divided powers.
@@ -66,7 +66,7 @@ theorem exists_ne_zero_prime_smul_eq_zero_cohomologyZero :
     ∃ a : cohomologyZero p, a ≠ 0 ∧ p • a = 0
 ```
 
-**`Crystalline.TorsionExample.not_injective_frobeniusPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean, line 644](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean#L644). The attribute's comment: “conclusion (2): pulling back by Frobenius F^* : H^0(Cris(X/S), O\_\{X/S}) → H^0(Cris(X/S), O\_\{X/S}) is not injective, for X = Spec(F\_p[x, y]/(x^2, xy, y^2)) and S = Spec(ZZ\_p) with the divided power ideal (p)”.
+**`Crystalline.TorsionExample.not_injective_frobeniusPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean, line 644](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionCrystallineCohomology.lean#L644). The attribute's comment: “conclusion (2): pulling back by Frobenius F^* : H^0(Cris(X/S), O\_\{X/S}) → H^0(Cris(X/S), O\_\{X/S}) is not injective, for X = Spec(F\_p[x, y]/(x^2, xy, y^2)) and S = Spec(ZZ\_p) with the divided power ideal (p)”.
 
 > **Pulling back by Frobenius `F^* : H⁰(Cris(X/S), 𝒪_{X/S}) → H⁰(Cris(X/S), 𝒪_{X/S})` is not
 > injective**, for `X = Spec(𝐅_p[x, y]/(x², xy, y²))` and `S = Spec(ℤ_p)` with the divided power
@@ -76,7 +76,7 @@ theorem exists_ne_zero_prime_smul_eq_zero_cohomologyZero :
 theorem not_injective_frobeniusPullback : ¬ Function.Injective (frobeniusPullback p)
 ```
 
-**`Crystalline.TorsionExample.quotientRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionDegreeZero.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionDegreeZero.lean#L297). The attribute's comment: “the example's presentation C = P/J: reduction of coefficients ZZ\_p[x, y] -> F\_p[x, y] induces a ring isomorphism ZZ\_p[x, y]/(p, x^2, xy, y^2) = F\_p[x, y]/(x^2, xy, y^2), carrying the class of each variable to that variable”.
+**`Crystalline.TorsionExample.quotientRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionDegreeZero.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionDegreeZero.lean#L297). The attribute's comment: “the example's presentation C = P/J: reduction of coefficients ZZ\_p[x, y] -> F\_p[x, y] induces a ring isomorphism ZZ\_p[x, y]/(p, x^2, xy, y^2) = F\_p[x, y]/(x^2, xy, y^2), carrying the class of each variable to that variable”.
 
 > **The presentation of [Stacks, Tag 07LJ].**  Coefficient reduction induces a ring
 > isomorphism
@@ -90,7 +90,7 @@ theorem not_injective_frobeniusPullback : ¬ Function.Injective (frobeniusPullba
 noncomputable def quotientRingEquiv : quotientRing p ≃+* residueQuotient p
 ```
 
-**`Crystalline.TorsionExample.base_dividedPowers_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionDegreeZero.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionDegreeZero.lean#L331). The attribute's comment: “the example's base: the ideal (p) of ZZ\_p has exactly one divided power structure, so gamma is determined”.
+**`Crystalline.TorsionExample.base_dividedPowers_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionDegreeZero.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionDegreeZero.lean#L331). The attribute's comment: “the example's base: the ideal (p) of ZZ\_p has exactly one divided power structure, so gamma is determined”.
 
 > **The base of [Stacks, Tag 07LJ] is uniquely divided.**  The divided powers `γ` on the ideal
 > `(p) ⊆ ℤ_[p]` are the only ones: `ℤ_[p]` is torsion free as a `ℤ`-module, so `n! γ_n(a) = aⁿ`
@@ -101,7 +101,7 @@ theorem base_dividedPowers_unique (γ : DividedPowers (Ideal.span {(p : ℤ_[p])
     γ = PadicInt.dividedPowers p
 ```
 
-**`Crystalline.TorsionExample.prime_mul_tau_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionDegreeZero.lean, line 537](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionDegreeZero.lean#L537). The attribute's comment: “the example's identity p τ = 0 in D, for τ = gammabar\_p(x^2) gammabar\_p(y^2) - gammabar\_p(xy)^2, by the example's own display p! gammabar\_p(x^2) gammabar\_p(y^2) = x^\{2p} gammabar\_p(y^2) = gammabar\_p(x^2 y^2) = x^p y^p gammabar\_p(xy) = p! gammabar\_p(xy)^2 together with the invertibility of (p-1)! in D”.
+**`Crystalline.TorsionExample.prime_mul_tau_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionDegreeZero.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionDegreeZero.lean#L537). The attribute's comment: “the example's identity p τ = 0 in D, for τ = gammabar\_p(x^2) gammabar\_p(y^2) - gammabar\_p(xy)^2, by the example's own display p! gammabar\_p(x^2) gammabar\_p(y^2) = x^\{2p} gammabar\_p(y^2) = gammabar\_p(x^2 y^2) = x^p y^p gammabar\_p(xy) = p! gammabar\_p(xy)^2 together with the invertibility of (p-1)! in D”.
 
 > **`p τ = 0`.**  Multiplying `τ` by `p!` gives
 > `γ̄_p(x²y²) − γ̄_p((xy)(xy)) = 0`, and `p! = p (p − 1)!` with `(p − 1)!` invertible.
@@ -110,7 +110,7 @@ theorem base_dividedPowers_unique (γ : DividedPowers (Ideal.span {(p : ℤ_[p])
 theorem prime_mul_tau_eq_zero : (p : completedEnvelope p) * tau p = 0
 ```
 
-**`Crystalline.TorsionExample.toWitnessRing_envelopeTau`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionNonvanishing.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionNonvanishing.lean#L201). The attribute's comment: “the example's computation inside its witness thickening: the divided power morphism D\_\{P, γ}(J) -> B out of the universal property of the envelope sends γ\_p(x^2) γ\_p(y^2) - γ\_p(xy)^2 to uv, which is nonzero in B (u\_mul\_v\_ne\_zero of RingTheory.DividedPowers.TorsionWitnessRing), at every prime p”.
+**`Crystalline.TorsionExample.toWitnessRing_envelopeTau`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionNonvanishing.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionNonvanishing.lean#L201). The attribute's comment: “the example's computation inside its witness thickening: the divided power morphism D\_\{P, γ}(J) -> B out of the universal property of the envelope sends γ\_p(x^2) γ\_p(y^2) - γ\_p(xy)^2 to uv, which is nonzero in B (u\_mul\_v\_ne\_zero of RingTheory.DividedPowers.TorsionWitnessRing), at every prime p”.
 
 > **The computation of [Stacks, Tag 07LJ].**  The element
 > `γ_p(x²) γ_p(y²) − γ_p(xy)²` of the divided power envelope has image `u v` in the witness
@@ -121,7 +121,7 @@ theorem toWitnessRing_envelopeTau :
     (toWitnessRing p).toRingHom (envelopeTau p) = u p * v p
 ```
 
-**`Crystalline.TorsionExample.tau_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionNonvanishing.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionNonvanishing.lean#L225). The attribute's comment: “the example's claim that τ ≠ 0 in D, at every prime p, by the source's own witness thickening B = F\_p[x, y, u, v]/(x^3, x^2 y, x y^2, y^3, xu, yu, xv, yv, u^2, v^2) with the divided powers of DividedPowers.TorsionWitness on K = ker(B -> C), which send x^2 to u and y^2 to v, in which τ maps to uv ≠ 0, so that the first level of the p-adic completion already sees τ”.
+**`Crystalline.TorsionExample.tau_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionNonvanishing.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/TorsionNonvanishing.lean#L225). The attribute's comment: “the example's claim that τ ≠ 0 in D, at every prime p, by the source's own witness thickening B = F\_p[x, y, u, v]/(x^3, x^2 y, x y^2, y^3, xu, yu, xv, yv, u^2, v^2) with the divided powers of DividedPowers.TorsionWitness on K = ker(B -> C), which send x^2 to u and y^2 to v, in which τ maps to uv ≠ 0, so that the first level of the p-adic completion already sees τ”.
 
 > **`τ ≠ 0` in `D`**, the last claim of [Stacks, Tag 07LJ] about `τ`.
 >
@@ -137,7 +137,7 @@ theorem tau_ne_zero : tau p ≠ 0
 
 [Tag 07LK](https://stacks.math.columbia.edu/tag/07LK) in the Stacks Project.
 
-**`Crystalline.AffineSpaceCrystallineSetup.crisCohomologyIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean#L121). The attribute's comment: “RΓ(Cris(X/S), O\_\{X/S}) is represented by the complex D -> Omega^1\_D -> ... -> Omega^r\_D, D = Z\_p[x\_1, ..., x\_r]^wedge, degreewise: H^j(Cris(X/S), O\_\{X/S}) is the j-th cohomology of that complex for every j, by 07LG/07LH for the presentation C = P/pP”.
+**`Crystalline.AffineSpaceCrystallineSetup.crisCohomologyIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean#L121). The attribute's comment: “RΓ(Cris(X/S), O\_\{X/S}) is represented by the complex D -> Omega^1\_D -> ... -> Omega^r\_D, D = Z\_p[x\_1, ..., x\_r]^wedge, degreewise: H^j(Cris(X/S), O\_\{X/S}) is the j-th cohomology of that complex for every j, by 07LG/07LH for the presentation C = P/pP”.
 
 > **`RΓ(Cris(X/S), 𝒪_{X/S})` is represented by the complex `D → Ω¹_D → Ω²_D → ⋯ → Ω^r_D`**, for
 > `X = Spec(𝐅_p[x_1, …, x_r])` over `S = Spec(𝐙_p, (p), γ)` and `D = P^∧`,
@@ -163,7 +163,7 @@ theorem crisCohomologyIso (j : ℕ) :
       AddCommGrpCat.uliftFunctor.{1, 0}.obj (T.deRhamComplexNat.homology j))
 ```
 
-**`Crystalline.AffineSpaceCrystallineSetup.isZero_crisCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean#L173). The attribute's comment: “conclusion (1): H^j(Cris(X/S), O\_\{X/S}) = 0 for j > r, X = A^r\_\{F\_p}, S = Spec(Z\_p)”.
+**`Crystalline.AffineSpaceCrystallineSetup.isZero_crisCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean#L173). The attribute's comment: “conclusion (1): H^j(Cris(X/S), O\_\{X/S}) = 0 for j > r, X = A^r\_\{F\_p}, S = Spec(Z\_p)”.
 
 > **Conclusion (1) of [Stacks, Tag 07LK]: the crystalline cohomology of the crystalline
 > structure sheaf of `X = 𝐀^r_{𝐅_p}` over `S = Spec(𝐙_p)` is zero except in degrees `0, …, r`.**
@@ -175,7 +175,7 @@ theorem crisCohomologyIso (j : ℕ) :
 theorem isZero_crisCohomology {j : ℕ} (hj : T.r < j) : IsZero (T.crisCohomology j)
 ```
 
-**`Crystalline.AffineSpaceCrystallineSetup.crisCohomologyZeroIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean#L185). The attribute's comment: “conclusion (2): H^0(Cris(X/S), O\_\{X/S}) = Z\_p”.
+**`Crystalline.AffineSpaceCrystallineSetup.crisCohomologyZeroIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean#L185). The attribute's comment: “conclusion (2): H^0(Cris(X/S), O\_\{X/S}) = Z\_p”.
 
 > **Conclusion (2) of [Stacks, Tag 07LK]: `H⁰(Cris(X/S), 𝒪_{X/S}) = 𝐙_p`**, for every `r` (the
 > source states its conclusions under `r > 0`): the kernel of `d : D → Ω¹_D` consists of the
@@ -187,7 +187,7 @@ theorem crisCohomologyZeroIso :
     Nonempty (T.crisCohomology 0 ≅ AddCommGrpCat.of (ULift.{1, 0} T.A))
 ```
 
-**`Crystalline.AffineSpaceCrystallineSetup.infinite_and_not_isAddTorsion_crisCohomology_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean#L199). The attribute's comment: “conclusion (3): for r > 0, H^r(Cris(X/S), O\_\{X/S}) is infinite and is not a torsion abelian group”.
+**`Crystalline.AffineSpaceCrystallineSetup.infinite_and_not_isAddTorsion_crisCohomology_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean#L199). The attribute's comment: “conclusion (3): for r > 0, H^r(Cris(X/S), O\_\{X/S}) is infinite and is not a torsion abelian group”.
 
 > **Conclusion (3) of [Stacks, Tag 07LK]: for `r > 0` the cohomology group
 > `H^r(Cris(X/S), 𝒪_{X/S})` is infinite and is not a torsion abelian group.**
@@ -197,7 +197,7 @@ theorem infinite_and_not_isAddTorsion_crisCohomology_top (hr : 0 < T.r) :
     Infinite (T.crisCohomology T.r) ∧ ¬ IsAddTorsion (T.crisCohomology T.r)
 ```
 
-**`Crystalline.AffineSpaceCrystallineSetup.not_isHausdorff_crisCohomology_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean#L214). The attribute's comment: “conclusion (4): for r > 0, H^r(Cris(X/S), O\_\{X/S}) is not separated for the p-adic topology”.
+**`Crystalline.AffineSpaceCrystallineSetup.not_isHausdorff_crisCohomology_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean#L214). The attribute's comment: “conclusion (4): for r > 0, H^r(Cris(X/S), O\_\{X/S}) is not separated for the p-adic topology”.
 
 > **Conclusion (4) of [Stacks, Tag 07LK]: for `r > 0` the cohomology group
 > `H^r(Cris(X/S), 𝒪_{X/S})` is not separated for the `p`-adic topology.**
@@ -207,7 +207,7 @@ theorem not_isHausdorff_crisCohomology_top (hr : 0 < T.r) :
     ¬ IsHausdorff (Ideal.span {(T.p : ℤ)}) (T.crisCohomology T.r)
 ```
 
-**`Crystalline.AffineSpaceCrystallineSetup.exists_padicInt_crisCohomology_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean#L236). The attribute's comment: “closing remark on eta, the quoted 'generates a copy of Q\_p' in the sense its argument shows: for r > 0 an injective Z\_p -> H^r(Cris(X/S), O\_\{X/S}) through the class of eta, with [eta] in p^t H^r for every t, and no additive Q\_p -> H^r extending it”.
+**`Crystalline.AffineSpaceCrystallineSetup.exists_padicInt_crisCohomology_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/AffineSpaceCrystallineCohomology.lean#L236). The attribute's comment: “closing remark on eta, the quoted 'generates a copy of Q\_p' in the sense its argument shows: for r > 0 an injective Z\_p -> H^r(Cris(X/S), O\_\{X/S}) through the class of eta, with [eta] in p^t H^r for every t, and no additive Q\_p -> H^r extending it”.
 
 > **The closing remark of [Stacks, Tag 07LK] on `η`, in the sense its argument shows.**  For
 > `r > 0` the class of `η = ∑_{e > 0} p^e x_1^{p^e - 1} ⋯ x_r^{p^e - 1} dx_1 ∧ ⋯ ∧ dx_r` in
@@ -234,4 +234,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 60.22, Tag 07LI](https://stacks.math.columbia.edu/tag/07LI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

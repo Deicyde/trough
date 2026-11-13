@@ -8,7 +8,7 @@ proof: formalized
 
 # Cook-Levin: generator machine for the cell-shift family
 
-75 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html).
+75 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html).
 
 ## The family (pure specification)
 
@@ -26,7 +26,7 @@ $\neg C[t,k,u+c,x] \lor \neg S[t,i] \lor C[t+1,k,u+p,x]$.
 When all indices are in range, the literals are in increasing variable order: a row $t$ cell, the
 label/state block of row $t+1$, then a row $t+1$ cell.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.shLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-lits).
+Formalized by `Cslib.Complexity.CookLevin.Shift.shLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-lits).
 
 ## Literals of an overflow clause
 
@@ -41,7 +41,7 @@ situation variable $S[t, i]$, then the positive cell variable of row $t + 1$, st
 $H - c(i, k) + p(i, k) + r$ and symbol code $0$ (the empty cell). Subtraction is truncated at
 zero.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.ovLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ov-lits).
+Formalized by `Cslib.Complexity.CookLevin.Shift.ovLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ov-lits).
 
 ## Literals of a pushed-fill clause
 
@@ -56,7 +56,7 @@ situation variable $S[t, i]$, then the positive cell variable of row $t + 1$, st
 $j$ and symbol code $p_u(i, k, j)$. It is used for depths $j$ below the number of symbols that
 situation $i$ pushes on stack $k$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.pfLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#pf-lits).
+Formalized by `Cslib.Complexity.CookLevin.Shift.pfLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#pf-lits).
 
 ## The shift block of a situation and a stack
 
@@ -70,7 +70,7 @@ $r < c - p$, the dense clause over $V$ variables with the overflow literals for 
 and for each $j < p$, the dense clause over $V$ variables with the pushed-fill literals for
 $(t, i, k, j)$. Subtraction is truncated at $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.shBlk`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-blk).
+Formalized by `Cslib.Complexity.CookLevin.Shift.shBlk`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-blk).
 
 ## The cell-shift clause family
 
@@ -80,7 +80,7 @@ shift family is the CNF formula obtained by concatenating the shift blocks of si
 stack $k$ at time $t$ for all $t < T$, $i < N$ and $k < K$, ordered lexicographically by
 $(t, i, k)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.shFamily`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-family).
+Formalized by `Cslib.Complexity.CookLevin.Shift.shFamily`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-family).
 
 ## Well-formed situation tables for the cell-shift family
 
@@ -92,7 +92,7 @@ $g > 0$, $d \le H$, $\mathrm{sa}(i) < A$ for every $i < N$, and for all $i < N$ 
 $\mathrm{pl}(i, k) \le d$, $\mathrm{cn}(i, k) \le d$, and $\mathrm{pu}(i, k, j) < g$ for every
 $j < \mathrm{pl}(i, k)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.WF`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#wf).
+Formalized by `Cslib.Complexity.CookLevin.Shift.WF`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#wf).
 
 ## Coverage of target depths
 
@@ -104,7 +104,7 @@ $c - p$ is truncated subtraction (zero when $c \le p$).
 In the cell-shift family these are the pushed-fill, in-range and overflow target depths of a
 stack in the row after a time step.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.depth_cover`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#depth-cover).
+Formalized by `Cslib.Complexity.CookLevin.Shift.depth_cover`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#depth-cover).
 
 ## Bounds on in-range and overflow target depths
 
@@ -113,7 +113,7 @@ $p \le H$ and $c \le H$, and let $m = \max(p, c)$. For every natural number $u <
 $p \le u + p$, $u + p < H - c + p$ and $u + p < H$. For every natural number $r < c - p$, where
 $c - p$ is truncated subtraction, we have $H - m + p = H - c + p$ and $H - c + p + r < H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.depth_disjoint`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#depth-disjoint).
+Formalized by `Cslib.Complexity.CookLevin.Shift.depth_disjoint`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#depth-disjoint).
 
 ## Counters of the cell-shift generator
 
@@ -124,7 +124,7 @@ $\mathrm{TW1}$, $\mathrm{KB}$, $\mathrm{U}$, $\mathrm{Ui}$, $\mathrm{R}$, $\math
 $\mathrm{CB}$, $\mathrm{CW}$, $\mathrm{P}$, $\mathrm{Q}$, $\mathrm{tmp}$, $\mathrm{md}$,
 $\mathrm{Ka}$, $\mathrm{c1}$ and $\mathrm{c2}$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.CK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ck).
+Formalized by `Cslib.Complexity.CookLevin.Shift.CK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ck).
 
 ## Base counters of literal positions
 
@@ -132,7 +132,7 @@ The three bases $s$, $cb$ and $cw$ from which a literal
 position is computed; at time step $t$, with $W$ the row width, $s$ stands for the counter
 $TW1 = (t + 1) \cdot W$ and serves the situation variable.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.BS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#bs).
+Formalized by `Cslib.Complexity.CookLevin.Shift.BS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#bs).
 
 ## Counter holding a literal base
 
@@ -142,7 +142,7 @@ time step, the situation base goes to the counter holding $(t + 1) W$, the start
 $t + 1$; the current-row cell base goes to the cell-base counter; and the next-row cell base
 goes to the counter holding the cell base plus $W$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.BS.k`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#k).
+Formalized by `Cslib.Complexity.CookLevin.Shift.BS.k`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#k).
 
 ## Clause kinds of the cell-shift family
 
@@ -151,14 +151,14 @@ either an in-range shift clause $\mathrm{sh}(x)$ for a symbol code $x < g$, the 
 clause $\mathrm{ov}$, or a pushed-fill clause $\mathrm{pf}(j)$ for a pushed depth $j < d$. These
 are the kinds of clause in the block of a situation $i$ and a stack $k$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.CL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#cl).
+Formalized by `Cslib.Complexity.CookLevin.Shift.CL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#cl).
 
 ## Number of literals of a cell-shift clause kind
 
 An in-range shift clause has $3$
 literals, and an overflow clause and a pushed-fill clause have $2$ each.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.CL.nl`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#nl).
+Formalized by `Cslib.Complexity.CookLevin.Shift.CL.nl`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#nl).
 
 ## Base counter of a literal
 
@@ -167,7 +167,7 @@ in-range shift clause, literal $l$ has base $cb$ when $l = 0$, $s$ when $l = 1$ 
 $l \ge 2$; if $c$ is an overflow or pushed-fill clause, it has base $s$ when $l = 0$ and $cw$
 otherwise.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.CL.bs`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#bs-2).
+Formalized by `Cslib.Complexity.CookLevin.Shift.CL.bs`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#bs-2).
 
 ## Constant offsets of the literals of a clause kind
 
@@ -179,7 +179,7 @@ $pg + x$ otherwise; for the overflow-fill clause $\mathrm{ov}$, $s$ if $l = 0$ a
 otherwise; for a pushed-fill clause $\mathrm{pf}(j)$, $s$ if $l = 0$ and $jg + q(j)$
 otherwise.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.CL.cs`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#cs).
+Formalized by `Cslib.Complexity.CookLevin.Shift.CL.cs`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#cs).
 
 ## Literal signs of a shift clause kind
 
@@ -187,7 +187,7 @@ For a clause kind $c$ of a cell-shift block and
 $l \in \mathbb{N}$, the sign of literal $l$ of $c$ is positive exactly when $l + 1$ equals the
 number of literals of $c$; so only the last literal is positive.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.CL.sg`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sg).
+Formalized by `Cslib.Complexity.CookLevin.Shift.CL.sg`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sg).
 
 ## Precomputation stages of the shift generator
 
@@ -201,7 +201,7 @@ $K \cdot HG$ to $W$ (a multiplication site), so that $W = A + K H g$; empty the 
 set the variable counter $V$ to $T W$ (a multiplication site); and add $W$ to $V$ in two copy
 steps, so that $V = (T + 1) W$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.PS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ps).
+Formalized by `Cslib.Complexity.CookLevin.Shift.PS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ps).
 
 ## Stages of the cell-shift literal routine
 
@@ -210,7 +210,7 @@ stages: two copy stages, an offset stage, a decrement stage, a compare stage, tw
 for each comparison outcome (less, equal, greater), an absent-slot emission stage, a failure
 stage, a slot emission stage and a drain stage.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.LS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ls).
+Formalized by `Cslib.Complexity.CookLevin.Shift.LS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ls).
 
 ## Setup and loop stages of a cell-shift block
 
@@ -224,7 +224,7 @@ and $\mathrm{oD}$; the in-range-loop and drain stages $\mathrm{sHead}$, $\mathrm
 $\mathrm{dU}$, $\mathrm{dR}$ and $\mathrm{dKB}$; and the pushed-fill stages $\mathrm{fC1}$,
 $\mathrm{fC2}$, $\mathrm{fW1}$, $\mathrm{fW2}$ and $\mathrm{fD1}$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.ST`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#st).
+Formalized by `Cslib.Complexity.CookLevin.Shift.ST`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#st).
 
 ## Loop-body stages of the cell-shift generator
 
@@ -236,7 +236,7 @@ $d$), a terminator stage, two stages loading the variable count, one stage for e
 position $l < 3$ and each stage of the literal routine, and a finishing stage. The flag $b$ is
 true in the in-range loop and false in the overflow loop.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.BD`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#bd).
+Formalized by `Cslib.Complexity.CookLevin.Shift.BD`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#bd).
 
 ## Labels of the cell-shift generator
 
@@ -249,7 +249,7 @@ step $\mathrm{sb}(i, k, r)$ with $r < d + 1$; a loop-body stage $\mathrm{b}(i, k
 block, over clause kinds with parameters $g$ and $d$; or a halting label $\mathrm{bad}$ or
 $\mathrm{done}$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.GL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#gl).
+Formalized by `Cslib.Complexity.CookLevin.Shift.GL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#gl).
 
 ## Entry label of a literal routine of the cell-shift generator
 
@@ -258,7 +258,7 @@ stack $k < K$, a clause kind $c$ and $l \in \mathbb{N}$, the entry label of lite
 first stage of the routine emitting literal $l$ of a clause of kind $c$ in block $(i, k)$ when
 $l < 3$, and the generator's final label when $l \ge 3$ (that case is never used).
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.GL.litL`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#lit-l).
+Formalized by `Cslib.Complexity.CookLevin.Shift.GL.litL`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#lit-l).
 
 ## Label after a literal routine
 
@@ -268,7 +268,7 @@ first: the label is the finishing stage of clause $c$ in block $(i, k)$ when $l 
 is the first stage of the routine for literal $l - 1$ of $c$ in block $(i, k)$ when $l - 1 < 3$,
 and the final label $\mathrm{done}$, at which the generator halts, otherwise.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.GL.after`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#after).
+Formalized by `Cslib.Complexity.CookLevin.Shift.GL.after`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#after).
 
 ## Entry label of the in-range chain
 
@@ -280,7 +280,7 @@ $\mathrm{dCB}$ of block $(i, k)$ if $n = 0$, the first stage of the routine emit
 shift clause for symbol code $n - 1$ of block $(i, k)$ if $1 \le n \le g$, and the halting label
 $\mathrm{done}$ (unused) if $n > g$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.GL.xFrom`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#x-from).
+Formalized by `Cslib.Complexity.CookLevin.Shift.GL.xFrom`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#x-from).
 
 ## Entry label of the pushed-fill chain
 
@@ -291,7 +291,7 @@ the fill drains: the fill-drain stage $\mathrm{fD1}$ of block $(i, k)$ if $n = 0
 stage of the routine emitting pushed-fill clause $n - 1$ of block $(i, k)$ if $1 \le n \le d$,
 and the halting label $\mathrm{done}$ (unused) if $n > d$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.GL.pfFrom`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#pf-from).
+Formalized by `Cslib.Complexity.CookLevin.Shift.GL.pfFrom`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#pf-from).
 
 ## Label after a clause of the cell-shift generator
 
@@ -302,7 +302,7 @@ the overflow clause it goes to the overflow drains; after the pushed-fill clause
 it goes to the start of the pushed-fill clause for depth $j - 1$, or to the pushed-fill drains
 when $j = 0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.GL.nextC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#next-c).
+Formalized by `Cslib.Complexity.CookLevin.Shift.GL.nextC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#next-c).
 
 ## Label of the decrement chain
 
@@ -313,7 +313,7 @@ decrement label of block $(i, k)$ with index $n - 1$ if $1 \le n \le d + 1$, and
 label otherwise. It marks the point where $n$ decrements of the counter $U$ remain before the
 pushed-fill setup.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.GL.sbL`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sb-l).
+Formalized by `Cslib.Complexity.CookLevin.Shift.GL.sbL`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sb-l).
 
 ## Entry label of the situation chain
 
@@ -323,7 +323,7 @@ $K = 0$; the first setup stage of block $(n - 1, K - 1)$ when $1 \le n \le N$ an
 and the terminal (halting) label when $n > N$ and $K \ge 1$. For $n \le N$ it is the label
 from which the generator emits the blocks of situations $i < n$ and then ends the time step.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.GL.iFrom`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#i-from).
+Formalized by `Cslib.Complexity.CookLevin.Shift.GL.iFrom`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#i-from).
 
 ## Entry label of the stack chain of a situation
 
@@ -334,7 +334,7 @@ $i < N$; and the terminal (halting) label otherwise. For $i < N$ and $n \le K$ i
 from which the generator emits the blocks of stacks $k < n$ of situation $i$ and then the blocks
 of situations $< i$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.GL.ik`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ik).
+Formalized by `Cslib.Complexity.CookLevin.Shift.GL.ik`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ik).
 
 ## Labels of the shift generator
 
@@ -342,7 +342,7 @@ For a layout with $K$ stacks, $g$ symbol codes and
 window depth $d$, and a number $N$ of situations, the labels of the generator are the finite
 label type with parameters $N$, $K$, $g$ and $d$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.Lab`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#lab).
+Formalized by `Cslib.Complexity.CookLevin.Shift.Lab`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#lab).
 
 ## Constant offset of a literal in a block
 
@@ -355,7 +355,7 @@ in block $(i, k)$ is the constant offset of literal $l$ of $c$ with situation of
 $\mathrm{sa}(i)$, push count $\mathrm{pl}(i, k)$, consumed count $\mathrm{cn}(i, k)$ and pushed
 codes $j \mapsto \mathrm{pu}(i, k, j)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.csv`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#csv).
+Formalized by `Cslib.Complexity.CookLevin.Shift.csv`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#csv).
 
 ## Literal routine of the cell-shift generator
 
@@ -371,7 +371,7 @@ and repeat; if they are equal, push the slot code of a literal whose sign is pos
 when $l$ is the last literal of $c$. Finally it empties $Q$ and jumps to the routine of literal
 $l - 1$, or to the end of the clause when $l = 0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.litP`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#lit-p).
+Formalized by `Cslib.Complexity.CookLevin.Shift.litP`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#lit-p).
 
 ## Block stages of the cell-shift generator
 
@@ -397,7 +397,7 @@ $\mathrm{Ui}$ and runs the loop body with flag true for each popped unit, and wh
 empty moves $\mathrm{Ui}$ back onto $\mathrm{U}$. Finally it drains $\mathrm{U}$, $\mathrm{R}$ and
 $\mathrm{KB}$ and goes to the entry label of the stack chain of situation $i$ for $k$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.stP`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#st-p).
+Formalized by `Cslib.Complexity.CookLevin.Shift.stP`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#st-p).
 
 ## Loop body of the cell-shift generator
 
@@ -414,7 +414,7 @@ fill drain of the block setup, and after the last in-range clause and after the 
 the drain stages empty $CB$ and then $CW$ and return to the head of the in-range loop when $b$ is
 true, and of the overflow loop otherwise.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.bdP`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#bd-p).
+Formalized by `Cslib.Complexity.CookLevin.Shift.bdP`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#bd-p).
 
 ## The cell-shift generator
 
@@ -435,7 +435,7 @@ decrement stages pop $\mathrm{U}$ and continue the decrement chain, halting at $
 $\mathrm{U}$ is empty. Additions go through the scratch counters $\mathrm{md}$ and $\mathrm{tmp}$
 and restore their sources when the scratch counters start empty.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.prog`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 389](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L389). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#prog).
+Formalized by `Cslib.Complexity.CookLevin.Shift.prog`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 389](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L389). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#prog).
 
 ## The cell-shift generator as a finite stack machine
 
@@ -451,7 +451,7 @@ false, and its transition function is the cell-shift generator.
 
 It serves only to check that the generator meets the finiteness conditions of a finite machine.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.shTM`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-tm).
+Formalized by `Cslib.Complexity.CookLevin.Shift.shTM`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-tm).
 
 ## Literals of a clause kind at given positions
 
@@ -461,7 +461,7 @@ $\mathrm{pos} : \mathbb{N} \to \mathbb{N}$. The literals of $c$ at positions $\m
 list $(\mathrm{pos}(0), b_0), \dots, (\mathrm{pos}(n - 1), b_{n - 1})$ of variable-sign pairs,
 where the sign $b_l$ is true (a positive literal) exactly when $l = n - 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.clits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#clits).
+Formalized by `Cslib.Complexity.CookLevin.Shift.clits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#clits).
 
 ## Increasing literal positions below a bound
 
@@ -469,7 +469,7 @@ For $p : \mathbb{N} \to \mathbb{N}$ and
 $n, V \in \mathbb{N}$, the positions $p$ are increasing for $n$ literals below $V$ when
 $p(l) < p(l + 1)$ for every $l$ with $l + 1 < n$, and $p(n - 1) < V$ if $n \ge 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.Mono`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 442](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L442). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#mono).
+Formalized by `Cslib.Complexity.CookLevin.Shift.Mono`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 442](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L442). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#mono).
 
 ## Boundary before a literal
 
@@ -477,7 +477,7 @@ For $V, n, l \in \mathbb{N}$ and literal positions
 $pos : \mathbb{N} \to \mathbb{N}$, the boundary before literal $l$ is $pos(l)$ if $l < n$, and $V$
 otherwise.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.bnd`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 451](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L451). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#bnd).
+Formalized by `Cslib.Complexity.CookLevin.Shift.bnd`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 451](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L451). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#bnd).
 
 ## Empty scratch counters of the shift generator
 
@@ -485,7 +485,7 @@ A valuation $F$ of the generator's counters
 satisfies this predicate when the five scratch counters $Q$, $\mathit{tmp}$, $\mathit{md}$, $c_1$
 and $c_2$ all have value $0$ under $F$. The generator keeps them empty whenever a clause starts.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.Rest`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#rest).
+Formalized by `Cslib.Complexity.CookLevin.Shift.Rest`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#rest).
 
 ## One literal routine of the cell-shift generator
 
@@ -501,7 +501,7 @@ $l - 1$ (the end-of-clause label of $c$ when $l = 0$), with state false, counter
 that $P = q$, and output the slot code of literal $l$ (sign positive exactly when $l$ is the last
 literal of $c$), followed by $m$ copies of $01$, followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.lit_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 497](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L497). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#lit-run).
+Formalized by `Cslib.Complexity.CookLevin.Shift.lit_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 497](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L497). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#lit-run).
 
 ## Per-literal step overhead of the cell-shift generator
 
@@ -511,7 +511,7 @@ per-literal overhead is $6V + 9$.
 It is the step budget for emitting one literal of a clause over $V$ variables, not counting the
 loop that emits the gap before the literal.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.litE`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 531](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L531). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#lit-e).
+Formalized by `Cslib.Complexity.CookLevin.Shift.litE`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 531](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L531). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#lit-e).
 
 ## Step bound for one clause
 
@@ -519,7 +519,7 @@ For a natural number $V$ (the number of variables), the step
 bound for one clause of at most three literals is $V(3V + 6) + 3(6V + 9) + 3V + 4$, where
 $6V + 9$ is the per-literal cost apart from the gap loop.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.clauseB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 534](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L534). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#clause-b).
+Formalized by `Cslib.Complexity.CookLevin.Shift.clauseB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 534](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L534). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#clause-b).
 
 ## The literal routines of one clause of the cell-shift generator
 
@@ -539,7 +539,7 @@ $P = \beta(l)$, and output $E(l)$ followed by $00$ and $o$, to the end-of-clause
 with state $v'$, counters $F$ except that $P = \beta(0)$, and output $E(0)$ followed by $00$
 and $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.lits_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 537](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L537). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#lits-run).
+Formalized by `Cslib.Complexity.CookLevin.Shift.lits_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 537](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L537). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#lits-run).
 
 ## One clause of the cell-shift generator
 
@@ -561,7 +561,7 @@ in block $(i, k)$, flag false, counter values $F$ and output $e$ followed by $w$
 encoding of the dense clause over $V$ variables whose literals are those of $c$ at positions
 $\mathrm{pos}$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.clause_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 588](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L588). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#clause-run).
+Formalized by `Cslib.Complexity.CookLevin.Shift.clause_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 588](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L588). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#clause-run).
 
 ## First cell variable of a block
 
@@ -570,7 +570,7 @@ and $g$ symbol codes, a stack height $H$, a time $t$ and a stack $k$, this is th
 $k \cdot (H g) + (t W + A)$, where $W = A + K H g$ is the number of variables per time step.
 It is the index of the variable for depth $0$ and symbol code $0$ of stack $k$ in row $t$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.kbv`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 634](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L634). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#kbv).
+Formalized by `Cslib.Complexity.CookLevin.Shift.kbv`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 634](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L634). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#kbv).
 
 ## Literal positions of an in-range shift clause
 
@@ -583,7 +583,7 @@ $l = 1$, the situation variable $(t + 1) W + s_a(i)$; and if $l \ge 2$, the cell
 $t + 1$, stack $k$, depth $u + p(i, k)$ and symbol code $x$, namely
 $(t + 1) W + A + (k H + u + p(i, k)) g + x$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.shPos`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 637](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L637). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-pos).
+Formalized by `Cslib.Complexity.CookLevin.Shift.shPos`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 637](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L637). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-pos).
 
 ## Literal positions of an overflow clause
 
@@ -594,7 +594,7 @@ clause $(t, i, k, r)$ is the situation variable $(t + 1) W + s_a(i)$ if $l = 0$,
 cell variable of row $t + 1$, stack $k$, depth $H - c(i, k) + p(i, k) + r$ and symbol code $0$,
 namely $(t + 1) W + A + (k H + H - c(i, k) + p(i, k) + r) g$. Subtraction is truncated at $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.ovPos`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 642](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L642). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ov-pos).
+Formalized by `Cslib.Complexity.CookLevin.Shift.ovPos`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 642](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L642). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ov-pos).
 
 ## Literal positions of a pushed-fill clause
 
@@ -605,7 +605,7 @@ $(t, i, k, j)$ is the situation variable $(t + 1) W + s_a(i)$ if $l = 0$, and ot
 variable of row $t + 1$, stack $k$, depth $j$ and symbol code $p_u(i, k, j)$, namely
 $(t + 1) W + A + (k H + j) g + p_u(i, k, j)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.pfPos`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 713](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L713). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#pf-pos).
+Formalized by `Cslib.Complexity.CookLevin.Shift.pfPos`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 713](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L713). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#pf-pos).
 
 ## Counter state of a loop body
 
@@ -615,7 +615,7 @@ the row width. The condition holds when the scratch counters $Q$, $tmp$, $md$, $
 the counter $P$ are empty, $Vc$ holds the variable count $(T + 1) W$, $Gc$ holds $g$, $Wc$ holds
 $W$, $TW$ holds $t W$ and $TW1$ holds $(t + 1) W$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.Body`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 741](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L741). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#body).
+Formalized by `Cslib.Complexity.CookLevin.Shift.Body`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 741](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L741). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#body).
 
 ## The in-range chain of the cell-shift generator
 
@@ -639,7 +639,7 @@ followed by $o$ in at most $n \cdot \mathrm{clauseB}(V)$ steps, where
 $\mathrm{clauseB}(V) = V(3V + 6) + 3(6V + 9) + 3V + 4$ and $e_x$ is the encoding of the dense
 clause over $V$ variables whose literals are the in-range shift literals for $(t, i, k, u, x)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.xs_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 750](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L750). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#xs-run).
+Formalized by `Cslib.Complexity.CookLevin.Shift.xs_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 750](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L750). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#xs-run).
 
 ## The pushed-fill chain of the cell-shift generator
 
@@ -658,7 +658,7 @@ $e_0 e_1 \cdots e_{n-1}$ followed by $o$ in at most $n \cdot \mathrm{clauseB}(V)
 $\mathrm{clauseB}(V) = 3 V^2 + 27 V + 31$ and $e_j$ is the encoding of the dense clause over $V$
 variables whose literals are those of the pushed-fill clause $(t, i, k, j)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.pf_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 782](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L782). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#pf-run).
+Formalized by `Cslib.Complexity.CookLevin.Shift.pf_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 782](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L782). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#pf-run).
 
 ## The decrement chain takes $n$ steps
 
@@ -670,7 +670,7 @@ decrement-chain label for $n$ remaining decrements of block $(i, k)$ with flag $
 and output $o$, reaches in exactly $n$ steps the pushed-fill setup label of block $(i, k)$ with
 flag $v'$, the counters $F$ with $U$ set to $h$, and the same output $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.sb_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 817](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L817). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sb-run).
+Formalized by `Cslib.Complexity.CookLevin.Shift.sb_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 817](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L817). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sb-run).
 
 ## Step bound for one in-range loop iteration
 
@@ -678,7 +678,7 @@ For natural numbers $g$, $H$ and $V$, with
 $B(V)$ the cost bound of one clause over $V$ variables, the bound is
 $(2V + 2) + (H(2g + 3) + H + 2) + (2V + 2) + (2V + 2) + g \cdot B(V) + (V + 1) + (V + 1)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.sBodyB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 862](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L862). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#s-body-b).
+Formalized by `Cslib.Complexity.CookLevin.Shift.sBodyB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 862](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L862). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#s-body-b).
 
 ## Step budget of one overflow iteration of the cell-shift generator
 
@@ -690,7 +690,7 @@ $$(2H + 2) + (2d + 2) + (H(2g + 3) + H + 2) + (H + 1) + 3(2V + 2) + B(V) + 2(V +
 where $B(V) = V(3V + 6) + 3(6V + 9) + 3V + 4$ is the step budget of one clause. It bounds the
 steps of one iteration of the overflow loop.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.oBodyB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 867](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L867). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#o-body-b).
+Formalized by `Cslib.Complexity.CookLevin.Shift.oBodyB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 867](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L867). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#o-body-b).
 
 ## One iteration of the in-range loop of the cell-shift generator
 
@@ -712,7 +712,7 @@ $B(V) = V(3V + 6) + 3(6V + 9) + 3V + 4$ is the step budget of one clause and $e_
 encoding of the dense clause over $V$ variables whose literals are the in-range shift literals
 for $(t, i, k, u, x)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.sbody_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 872](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L872). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sbody-run).
+Formalized by `Cslib.Complexity.CookLevin.Shift.sbody_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 872](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L872). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sbody-run).
 
 ## One iteration of the overflow loop of the cell-shift generator
 
@@ -732,7 +732,7 @@ $\mathrm{oBodyB}(g, H, d, V) = 3 V^2 + 35 V + 2 g H + 7 H + 2 d + 46$ steps, whe
 encoding of the dense clause over $V$ variables whose literals are those of the overflow clause
 $(t, i, k, r)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.obody_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 918](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L918). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#obody-run).
+Formalized by `Cslib.Complexity.CookLevin.Shift.obody_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 918](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L918). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#obody-run).
 
 ## Counter state at the start of a block
 
@@ -741,7 +741,7 @@ $T, H, t \in \mathbb{N}$ and counter contents $F$: $F$ is a loop-body counter st
 $L, T, H, t$, the counters $KB$, $U$, $Ui$, $R$, $Ri$, $Ka$, $CB$ and $CW$ are empty, $HG$ holds
 $H \cdot g$ and $Hs$ holds $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.Blk`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 996](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L996). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#blk).
+Formalized by `Cslib.Complexity.CookLevin.Shift.Blk`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 996](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L996). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#blk).
 
 ## Step budget for one block of the shift generator
 
@@ -759,7 +759,7 @@ where $c(V)$ is the step budget of one clause, $o$ is the step budget $o(g, H, d
 iteration of the overflow loop, and $s$ is the step budget $s(g, H, V)$ of one iteration of
 the in-range loop.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.ikB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1009](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1009). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ik-b).
+Formalized by `Cslib.Complexity.CookLevin.Shift.ikB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1009](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1009). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ik-b).
 
 ## Correctness of the shift generator on one block
 
@@ -773,7 +773,7 @@ false, counters $F$ and output $e$ followed by $o$. Here $e$ is the encoding of 
 of situation $i$, stack $k$ at time $t$, and $B$ is the step budget for one block with
 $V = (T + 1) W$ variables, $W$ being the number of variables per time step.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.ik_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1031](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1031). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ik-run).
+Formalized by `Cslib.Complexity.CookLevin.Shift.ik_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1031](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1031). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ik-run).
 
 ## Encoded blocks of one situation
 
@@ -782,7 +782,7 @@ $sa, pl, cn, pu$ and $T, H, t, i \in \mathbb{N}$, the bit string obtained by con
 $k = 0, \dots, KK - 1$ in order, the encoding of the clause block of situation $i$, stack $k$ at
 time $t$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.blkI`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#blk-i).
+Formalized by `Cslib.Complexity.CookLevin.Shift.blkI`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#blk-i).
 
 ## Encoded blocks of one time step
 
@@ -790,7 +790,7 @@ For a layout $L$, family data $sa, pl, cn, pu$ and
 $N, T, H, t \in \mathbb{N}$, the bit string obtained by concatenating, for situations
 $i = 0, \dots, N - 1$ in order, the encoded blocks of situation $i$ at time $t$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.blkT`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#blk-t).
+Formalized by `Cslib.Complexity.CookLevin.Shift.blkT`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#blk-t).
 
 ## Correctness of the shift generator on the stack chain of a situation
 
@@ -805,7 +805,7 @@ and output $e_0 e_1 \cdots e_{n-1}$ followed by $o$. Here $e_k$ is the encoding 
 block of situation $i$, stack $k$ at time $t$, and $B$ is the step budget for one block with
 $V = (T + 1) W$ variables, $W$ being the number of variables per time step.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.ks_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ks-run).
+Formalized by `Cslib.Complexity.CookLevin.Shift.ks_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#ks-run).
 
 ## Correctness of the shift generator on the situation chain
 
@@ -820,7 +820,7 @@ number of stacks, $e_i$ is the concatenated encoding of the clause blocks of sit
 the stacks $0, \dots, K - 1$ at time $t$, and $B$ is the step budget for one block with
 $V = (T + 1) W$ variables, $W$ being the number of variables per time step.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.is_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#is-run).
+Formalized by `Cslib.Complexity.CookLevin.Shift.is_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#is-run).
 
 ## Step budget for one time step of the shift generator
 
@@ -834,7 +834,7 @@ $$
 \bigl(T(2V + 3) + T + 2\bigr) + (2V + 2) + (2V + 2) + N(K B) + (V + 1) + (V + 1).
 $$
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.tBodyB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#t-body-b).
+Formalized by `Cslib.Complexity.CookLevin.Shift.tBodyB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#t-body-b).
 
 ## One iteration of the time loop of the shift generator
 
@@ -853,7 +853,7 @@ $v$ with counters $F$ and output $o$, reaches the time-loop head $\mathrm{tHead}
 the step budget for one time step of the shift generator for $L$, $N$, $T$, $H$, in state $v'$
 with counters $F$ and output the encoded blocks of time step $t$ followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.tbody_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#tbody-run).
+Formalized by `Cslib.Complexity.CookLevin.Shift.tbody_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#tbody-run).
 
 ## Initial counter values of the shift generator
 
@@ -861,7 +861,7 @@ For natural numbers $T$ and $H$, the
 assignment of counter values that puts $T$ on the time-bound input counter, $H$ on the
 stack-height input counter, and $0$ on every other counter of the generator.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.initF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#init-f).
+Formalized by `Cslib.Complexity.CookLevin.Shift.initF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#init-f).
 
 ## Counters after the precomputation of the cell-shift generator
 
@@ -871,7 +871,7 @@ $\mathrm{Tn}$, $H$ on $\mathrm{Hs}$, $g$ on $\mathrm{Gc}$, $H g$ on $\mathrm{HG}
 $W = A + K H g$ on $\mathrm{Wc}$, the number of variables $(T + 1) W$ on $\mathrm{Vc}$, and $0$
 on every other counter.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.preF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#pre-f).
+Formalized by `Cslib.Complexity.CookLevin.Shift.preF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#pre-f).
 
 ## Cost of the precomputation of the cell-shift generator
 
@@ -884,7 +884,7 @@ $$
 (T (2 W + 3) + T + 2) + (2 W + 2).
 $$
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.preB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#pre-b).
+Formalized by `Cslib.Complexity.CookLevin.Shift.preB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#pre-b).
 
 ## Explicit time bound of the shift generator
 
@@ -894,7 +894,7 @@ $H$ and $B$ is the cost of one iteration of the time loop for $L$, $N$, $T$, $H$
 
 A separate result bounds it by a constant depending only on $L$ and $N$ times $(T + H + 1)^6$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.shBound`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-bound).
+Formalized by `Cslib.Complexity.CookLevin.Shift.shBound`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-bound).
 
 ## Correctness of the shift generator, with its explicit time bound
 
@@ -910,7 +910,7 @@ some state, with stacks whose output stack holds the encoding of the cell-shift 
 $L$, $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$, $N$, $T$ and $H$, followed by
 $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.sh_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-run).
+Formalized by `Cslib.Complexity.CookLevin.Shift.sh_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-run).
 
 ## Time bound of the shift generator on uniform layouts
 
@@ -922,7 +922,7 @@ $828\, k^7 y^6$.
 Every monomial of the bound is then at most $k^7 y^6$, and the coefficients sum to $828$, the
 value of the bound at $k = y = 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.shBound_uni`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-bound-uni).
+Formalized by `Cslib.Complexity.CookLevin.Shift.shBound_uni`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-bound-uni).
 
 ## Constant of the shift-generator time bound
 
@@ -932,7 +932,7 @@ $828 \cdot (A + K + g + d + N + 1)^7$.
 
 It depends only on $A$, $K$, $g$, $d$ and $N$, not on the time bound $T$ or the height $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.shC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1380](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1380). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-c).
+Formalized by `Cslib.Complexity.CookLevin.Shift.shC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1380](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1380). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-c).
 
 ## The shift-generator time bound as a polynomial
 
@@ -944,7 +944,7 @@ the polynomial $c\,(X + 1)^6$ with natural-number coefficients.
 For natural numbers $T$ and $H$, its value at $X = T + H$ is $c\,(T + H + 1)^6$, the bound on
 the number of steps of the shift generator started on $T$ and $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.shPoly`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1395](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-poly).
+Formalized by `Cslib.Complexity.CookLevin.Shift.shPoly`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1395](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-poly).
 
 ## Polynomial time bound for the shift generator
 
@@ -961,7 +961,7 @@ $\mathrm{done}$, in some state, with stacks whose output stack holds the encodin
 cell-shift clause family for $L$, $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$,
 $N$, $T$ and $H$, followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Shift.sh_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-time).
+Formalized by `Cslib.Complexity.CookLevin.Shift.sh_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Shift.lean, line 1402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Shift.lean#L1402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html#sh-time).
 
 ## Depends on
 
@@ -970,4 +970,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cook-Levin: generator machine for the cell-shift family](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-cell-shift)

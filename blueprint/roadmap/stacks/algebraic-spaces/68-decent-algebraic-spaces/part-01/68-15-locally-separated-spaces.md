@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.15 Locally separated spaces
 
-Section 68.15 of the Stacks Project, [Tag 088H](https://stacks.math.columbia.edu/tag/088H). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.15 of the Stacks Project, [Tag 088H](https://stacks.math.columbia.edu/tag/088H). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 088I, a lemma
 
 [Tag 088I](https://stacks.math.columbia.edu/tag/088I) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Decent.closure_iUnion_range_residuePairMap_meets_diagonal`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/InfiniteResidueFields.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/InfiniteResidueFields.lean#L225).
+**`AlgebraicGeometry.Space.Decent.closure_iUnion_range_residuePairMap_meets_diagonal`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/InfiniteResidueFields.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/InfiniteResidueFields.lean#L224).
 
 > The closure of the union of the off-diagonal products of residue-field spectra
 > meets the diagonal in `Spec(A ⊗ℤ A)`.
@@ -30,7 +30,7 @@ lemma closure_iUnion_range_residuePairMap_meets_diagonal (_hp : Function.Injecti
 
 [Tag 088J](https://stacks.math.columbia.edu/tag/088J) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isDecentSpace_of_isAbsolutelyLocallySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallySeparated.lean, line 1018](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallySeparated.lean#L1018).
+**`AlgebraicGeometry.Space.isDecentSpace_of_isAbsolutelyLocallySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallySeparated.lean, line 1019](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallySeparated.lean#L1019).
 
 > **Stacks 088J.** A locally separated algebraic space is decent.
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.15, Tag 088H](https://stacks.math.columbia.edu/tag/088H)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

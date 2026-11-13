@@ -8,13 +8,13 @@ proof: formalized
 
 # 49.13 The Tate map
 
-Section 49.13 of the Stacks Project, [Tag 0FKB](https://stacks.math.columbia.edu/tag/0FKB). 2 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 49.13 of the Stacks Project, [Tag 0FKB](https://stacks.math.columbia.edu/tag/0FKB). 2 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FKC, a remark
 
 [Tag 0FKC](https://stacks.math.columbia.edu/tag/0FKC) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_square_presentation_hasJacobianDelta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/CotangentDeterminant.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/CotangentDeterminant.lean#L42). The attribute's comment: “the local picture around a point of the source of a locally quasi-finite syntomic morphism; the presentation is chosen by Tag 0BWE part (5)”.
+**`AlgebraicGeometry.exists_square_presentation_hasJacobianDelta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/CotangentDeterminant.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/CotangentDeterminant.lean#L42). The attribute's comment: “the local picture around a point of the source of a locally quasi-finite syntomic morphism; the presentation is chosen by Tag 0BWE part (5)”.
 
 > Around every point of the source of a locally quasi-finite syntomic morphism of schemes there
 > is a square relative global complete intersection presentation `B = A[x_1, …, x_n]/(f_1, …, f_n)`
@@ -34,7 +34,7 @@ theorem exists_square_presentation_hasJacobianDelta {Y X : Scheme.{u}} {f : Y �
         P.HasJacobianDelta
 ```
 
-**`Algebra.Presentation.toMatrix_cotangentComplex_eq_relationJacobiMatrix`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean#L107). The attribute's comment: “NL\_\{B/A} is the two-term complex (f)/(f)^2 -> sum\_i B dx\_i: its differential, in the basis of the relation classes and the basis dx\_i, is the matrix df\_j/dx\_i”.
+**`Algebra.Presentation.toMatrix_cotangentComplex_eq_relationJacobiMatrix`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean#L107). The attribute's comment: “NL\_\{B/A} is the two-term complex (f)/(f)^2 -> sum\_i B dx\_i: its differential, in the basis of the relation classes and the basis dx\_i, is the matrix df\_j/dx\_i”.
 
 > In a basis of the conormal module given by the classes of the relations and the basis `dxᵢ`
 > of the cotangent space, the differential of the naive cotangent complex is the Jacobian matrix.
@@ -47,7 +47,7 @@ theorem Presentation.toMatrix_cotangentComplex_eq_relationJacobiMatrix
       P.relationJacobiMatrix
 ```
 
-**`Algebra.Presentation.isRankZero_cotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean#L122). The attribute's comment: “the two terms of NL\_\{B/A} have equal rank, so delta(NL\_\{B/A}) is defined”.
+**`Algebra.Presentation.isRankZero_cotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean#L122). The attribute's comment: “the two terms of NL\_\{B/A} have equal rank, so delta(NL\_\{B/A}) is defined”.
 
 > The naive cotangent complex of a relative global complete intersection with as many relations
 > as variables has rank zero: both of its terms are free of rank the number of variables.
@@ -57,7 +57,7 @@ theorem Presentation.isRankZero_cotangentComplex :
     TwoTermComplex.IsRankZero P.toExtension.cotangentComplex
 ```
 
-**`Algebra.Presentation.cotangentDeterminantBasis`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean#L131). The attribute's comment: “det(L\_\{B/A}) is free of rank one”.
+**`Algebra.Presentation.cotangentDeterminantBasis`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean#L131). The attribute's comment: “det(L\_\{B/A}) is free of rank one”.
 
 > The determinant line of the naive cotangent complex of a relative global complete
 > intersection with as many relations as variables, as a free module of rank one on the
@@ -69,7 +69,7 @@ noncomputable def Presentation.cotangentDeterminantBasis
     Module.Basis (Fin 1) B (TwoTermComplex.determinantLine P.toExtension.cotangentComplex)
 ```
 
-**`Algebra.Presentation.coe_cotangentDeterminantBasis_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean#L141). The attribute's comment: “the generator of det(L\_\{B/A}) is dx\_1 ^ ... ^ dx\_n tensor (f-bar\_1 ^ ... ^ f-bar\_n)^\{tensor -1}: it carries the wedge of the relation classes to the wedge of the dx\_i”.
+**`Algebra.Presentation.coe_cotangentDeterminantBasis_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean#L141). The attribute's comment: “the generator of det(L\_\{B/A}) is dx\_1 ^ ... ^ dx\_n tensor (f-bar\_1 ^ ... ^ f-bar\_n)^\{tensor -1}: it carries the wedge of the relation classes to the wedge of the dx\_i”.
 
 > The generator of the determinant line of the naive cotangent complex carries the wedge of the
 > classes of the relations to the wedge of the `dxᵢ`.
@@ -88,7 +88,7 @@ theorem Presentation.coe_cotangentDeterminantBasis_apply
       ExteriorAlgebra.ιMulti B n P.cotangentSpaceBasis
 ```
 
-**`Algebra.Presentation.delta_cotangentComplex_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean#L166). The attribute's comment: “delta(NL\_\{B/A}) = det(df\_j/dx\_i) . dx\_1 ^ ... ^ dx\_n tensor (f-bar\_1 ^ ... ^ f-bar\_n)^\{tensor -1}. Not a tautology: `TwoTermComplex.delta` is the pre-existing general construction `ProjectiveDeterminant.map`, defined with no reference to any Jacobian or basis, and this computes it in the two ordered bases”.
+**`Algebra.Presentation.delta_cotangentComplex_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean#L166). The attribute's comment: “delta(NL\_\{B/A}) = det(df\_j/dx\_i) . dx\_1 ^ ... ^ dx\_n tensor (f-bar\_1 ^ ... ^ f-bar\_n)^\{tensor -1}. Not a tautology: `TwoTermComplex.delta` is the pre-existing general construction `ProjectiveDeterminant.map`, defined with no reference to any Jacobian or basis, and this computes it in the two ordered bases”.
 
 > The canonical section of the determinant line of the naive cotangent complex is the Jacobian
 > determinant times the generator given by the classes of the relations and the `dxᵢ`.
@@ -101,7 +101,7 @@ theorem Presentation.delta_cotangentComplex_eq
       P.relationJacobiMatrix.det • P.cotangentDeterminantBasis b k
 ```
 
-**`Algebra.Presentation.hasJacobianDelta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean#L192). The attribute's comment: “the four assertions bundled for one square relative global complete intersection presentation”.
+**`Algebra.Presentation.hasJacobianDelta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean#L192). The attribute's comment: “the four assertions bundled for one square relative global complete intersection presentation”.
 
 > A relative global complete intersection presentation with as many relations as variables has
 > the local Jacobian picture of the determinant of its naive cotangent complex.
@@ -112,13 +112,13 @@ theorem Presentation.hasJacobianDelta : P.HasJacobianDelta
 
 Declarations registered for the tag:
 
-- [`Algebra.Presentation.exists_basis_cotangent_relation`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean#L981), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean#L200) (StacksFrontier): “the conormal module (f\_1, ..., f\_n)/(f\_1, ..., f\_n)^2 is free on the classes f-bar\_i”.
+- [`Algebra.Presentation.exists_basis_cotangent_relation`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean#L981), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/CotangentDeterminant.lean#L200) (StacksFrontier): “the conormal module (f\_1, ..., f\_n)/(f\_1, ..., f\_n)^2 is free on the classes f-bar\_i”.
 
 ## Tag 0FKD, a proposition
 
 [Tag 0FKD](https://stacks.math.columbia.edu/tag/0FKD) in the Stacks Project.
 
-**`AlgebraicGeometry.TateMap.existsUnique_tateRule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TateMap/TateMap.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TateMap/TateMap.lean#L108). The attribute's comment: “the unique rule c\_\{Y/X} : det(NL\_\{Y/X}) ≅ ω\_\{Y/X} carrying δ(NL\_\{Y/X}) to τ\_\{Y/X} and compatible with restriction to opens and with base change”.
+**`AlgebraicGeometry.TateMap.existsUnique_tateRule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TateMap/TateMap.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TateMap/TateMap.lean#L108). The attribute's comment: “the unique rule c\_\{Y/X} : det(NL\_\{Y/X}) ≅ ω\_\{Y/X} carrying δ(NL\_\{Y/X}) to τ\_\{Y/X} and compatible with restriction to opens and with base change”.
 
 > **Stacks Project, Tag 0FKD.** There exists a unique rule that to every locally quasi-finite
 > syntomic morphism of locally Noetherian schemes `Y → X` assigns an isomorphism
@@ -141,4 +141,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 49.13, Tag 0FKB](https://stacks.math.columbia.edu/tag/0FKB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

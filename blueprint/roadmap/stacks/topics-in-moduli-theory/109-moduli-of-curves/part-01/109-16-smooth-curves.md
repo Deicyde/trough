@@ -8,13 +8,13 @@ proof: formalized
 
 # 109.16 Smooth curves
 
-Section 109.16 of the Stacks Project, [Tag 0DZY](https://stacks.math.columbia.edu/tag/0DZY). 6 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 109.16 of the Stacks Project, [Tag 0DZY](https://stacks.math.columbia.edu/tag/0DZY). 6 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DZZ, a lemma
 
 [Tag 0DZZ](https://stacks.math.columbia.edu/tag/0DZZ) in the Stacks Project.
 
-**`AlgebraicGeometry.CurveFamily.isOpen_smoothBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L220). The attribute's comment: “the open locus in the base of smoothness”.
+**`AlgebraicGeometry.CurveFamily.isOpen_smoothBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L220). The attribute's comment: “the open locus in the base of smoothness”.
 
 > **Stacks 0DZZ.** The locus of points of the base of a family of curves over which the family
 > is smooth is open.
@@ -28,7 +28,7 @@ theorem CurveFamily.isOpen_smoothBaseLocus (X : CurveFamily B hZ) :
     IsOpen (CurveFamily.smoothBaseLocus B hZ X)
 ```
 
-**`AlgebraicGeometry.CurveFamily.preimage_smoothBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L241). The attribute's comment: “base change of the open locus in the base of smoothness”.
+**`AlgebraicGeometry.CurveFamily.preimage_smoothBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L241). The attribute's comment: “base change of the open locus in the base of smoothness”.
 
 > **Stacks 0DZZ.** The open locus in the base over which a family of curves is smooth commutes
 > with base change: for a morphism of families of curves, the locus of the source is the inverse
@@ -41,7 +41,7 @@ theorem CurveFamily.preimage_smoothBaseLocus {X Y : CurveFamily B hZ} (φ : X �
       CurveFamily.smoothBaseLocus B hZ X
 ```
 
-**`AlgebraicGeometry.CurveFamily.exists_isOpenSubspace_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L274). The attribute's comment: “the open subspace of the base over which a family becomes smooth, compatibly with base change”.
+**`AlgebraicGeometry.CurveFamily.exists_isOpenSubspace_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L274). The attribute's comment: “the open subspace of the base over which a family becomes smooth, compatibly with base change”.
 
 > **Stacks 0DZZ.** The open subspace of the base of a family of curves over which the family
 > becomes smooth, in the form the source's proof produces it: for a family of curves `G` there is
@@ -62,7 +62,7 @@ theorem CurveFamily.exists_isOpenSubspace_smooth (G : CurveFamily B hZ) :
             t ≫ W.ι = (schemeSpaceMap a.baseMap).hom
 ```
 
-**`AlgebraicGeometry.curvesSmooth_isStrictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L317). The attribute's comment: “strict fullness of the smooth subcategory”.
+**`AlgebraicGeometry.curvesSmooth_isStrictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L317). The attribute's comment: “strict fullness of the smooth subcategory”.
 
 > **Stacks 0DZZ.** The condition that a family of curves be smooth is invariant under
 > isomorphism, so `Curves^{smooth}` is a strictly full subcategory of the category of families of
@@ -77,7 +77,7 @@ theorem curvesSmooth_isStrictlyFull :
       IsSmoothFamily B hZ).IsClosedUnderIsomorphisms
 ```
 
-**`AlgebraicGeometry.CurvesSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L325). The attribute's comment: “the smooth subcategory of the category of curves”.
+**`AlgebraicGeometry.CurvesSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L325). The attribute's comment: “the smooth subcategory of the category of curves”.
 
 > **Stacks 0DZZ.** The subcategory `Curves^{smooth}`: the strictly full subcategory of families
 > of curves whose structure morphism is smooth.
@@ -86,7 +86,7 @@ theorem curvesSmooth_isStrictlyFull :
 abbrev CurvesSmooth
 ```
 
-**`AlgebraicGeometry.isSmoothDimOneFamily_iff_isSmoothFamily_and_isCohenMacaulayDimOneFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L347). The attribute's comment: “Curves^\{smooth,1} is Curves^\{smooth} intersected with Curves^\{CM,1}”.
+**`AlgebraicGeometry.isSmoothDimOneFamily_iff_isSmoothFamily_and_isCohenMacaulayDimOneFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L347). The attribute's comment: “Curves^\{smooth,1} is Curves^\{smooth} intersected with Curves^\{CM,1}”.
 
 > **Stacks 0DZZ.** `Curves^{smooth,1}` is the intersection of `Curves^{smooth}` with
 > `Curves^{CM,1}`: a family of curves is smooth of relative dimension one exactly when it is smooth
@@ -99,7 +99,7 @@ theorem isSmoothDimOneFamily_iff_isSmoothFamily_and_isCohenMacaulayDimOneFamily
       IsSmoothFamily B hZ X ∧ IsCohenMacaulayDimOneFamily B hZ X
 ```
 
-**`AlgebraicGeometry.CurveFamily.isOpen_smoothDimOneBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L364). The attribute's comment: “the open locus in the base of smooth relative dimension one”.
+**`AlgebraicGeometry.CurveFamily.isOpen_smoothDimOneBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L364). The attribute's comment: “the open locus in the base of smooth relative dimension one”.
 
 > **Stacks 0DZZ.** For a Cohen–Macaulay family of curves the locus in the base over which the
 > family is smooth and has relative dimension one is open: the locus of smoothness is open, and so
@@ -111,7 +111,7 @@ theorem CurveFamily.isOpen_smoothDimOneBaseLocus (X : CurveFamily B hZ)
     IsOpen (CurveFamily.smoothDimOneBaseLocus B hZ X)
 ```
 
-**`AlgebraicGeometry.CurveFamily.isOpen_smoothDimOneBaseLocus_of_isSmoothFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L373). The attribute's comment: “the open locus in the base of smooth relative dimension one, for a smooth family”.
+**`AlgebraicGeometry.CurveFamily.isOpen_smoothDimOneBaseLocus_of_isSmoothFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L373). The attribute's comment: “the open locus in the base of smooth relative dimension one, for a smooth family”.
 
 > **Stacks 0DZZ.** For a smooth family of curves the locus in the base over which the family is
 > smooth and has relative dimension one is open: a smooth family is Cohen–Macaulay.
@@ -122,7 +122,7 @@ theorem CurveFamily.isOpen_smoothDimOneBaseLocus_of_isSmoothFamily (X : CurveFam
     IsOpen (CurveFamily.smoothDimOneBaseLocus B hZ X)
 ```
 
-**`AlgebraicGeometry.CurveFamily.isOpen_smoothDimOneBaseLocus_of_any`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L445). The attribute's comment: “the open locus in the base of smooth relative dimension one, for any family”.
+**`AlgebraicGeometry.CurveFamily.isOpen_smoothDimOneBaseLocus_of_any`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 445](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L445). The attribute's comment: “the open locus in the base of smooth relative dimension one, for any family”.
 
 > **Stacks 0DZZ.** For any family of curves the locus in the base over which the family is
 > smooth and has relative dimension one is open.
@@ -137,7 +137,7 @@ theorem CurveFamily.isOpen_smoothDimOneBaseLocus_of_any (X : CurveFamily B hZ) :
     IsOpen (CurveFamily.smoothDimOneBaseLocus B hZ X)
 ```
 
-**`AlgebraicGeometry.CurveFamily.preimage_smoothDimOneBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 462](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L462). The attribute's comment: “base change of the locus in the base of smooth relative dimension one”.
+**`AlgebraicGeometry.CurveFamily.preimage_smoothDimOneBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 462](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L462). The attribute's comment: “base change of the locus in the base of smooth relative dimension one”.
 
 > **Stacks 0DZZ.** The locus in the base over which a family of curves is smooth and has
 > relative dimension one commutes with base change: for a morphism of families of curves, the locus
@@ -151,7 +151,7 @@ theorem CurveFamily.preimage_smoothDimOneBaseLocus {X Y : CurveFamily B hZ} (φ 
       CurveFamily.smoothDimOneBaseLocus B hZ X
 ```
 
-**`AlgebraicGeometry.CurveFamily.exists_isOpenSubspace_smoothDimOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L490). The attribute's comment: “the open subspace of the base over which a family becomes smooth of relative dimension one, compatibly with base change”.
+**`AlgebraicGeometry.CurveFamily.exists_isOpenSubspace_smoothDimOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L490). The attribute's comment: “the open subspace of the base over which a family becomes smooth of relative dimension one, compatibly with base change”.
 
 > **Stacks 0DZZ.** The open subspace of the base of a family of curves over which the family
 > becomes smooth of relative dimension one, in the form the source's proof produces it: for a
@@ -172,7 +172,7 @@ theorem CurveFamily.exists_isOpenSubspace_smoothDimOne (G : CurveFamily B hZ) :
             t ≫ W.ι = (schemeSpaceMap a.baseMap).hom
 ```
 
-**`AlgebraicGeometry.curvesSmooth1_isStrictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 529](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L529). The attribute's comment: “strict fullness of the smooth subcategory of relative dimension one”.
+**`AlgebraicGeometry.curvesSmooth1_isStrictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 529](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L529). The attribute's comment: “strict fullness of the smooth subcategory of relative dimension one”.
 
 > **Stacks 0DZZ.** The condition that a family of curves be smooth of relative dimension one is
 > invariant under isomorphism, so `Curves^{smooth,1}` is a strictly full subcategory of the category
@@ -184,7 +184,7 @@ theorem curvesSmooth1_isStrictlyFull :
       IsSmoothDimOneFamily B hZ).IsClosedUnderIsomorphisms
 ```
 
-**`AlgebraicGeometry.CurvesSmooth1`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 537](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L537). The attribute's comment: “the smooth subcategory of relative dimension one”.
+**`AlgebraicGeometry.CurvesSmooth1`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L537). The attribute's comment: “the smooth subcategory of relative dimension one”.
 
 > **Stacks 0DZZ.** The subcategory `Curves^{smooth,1}`: the strictly full subcategory of
 > families of curves whose structure morphism is smooth of relative dimension one.
@@ -193,7 +193,7 @@ theorem curvesSmooth1_isStrictlyFull :
 abbrev CurvesSmooth1
 ```
 
-**`AlgebraicGeometry.curvesSmooth1_le_curvesSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L543). The attribute's comment: “the chain of subcategories”.
+**`AlgebraicGeometry.curvesSmooth1_le_curvesSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L543). The attribute's comment: “the chain of subcategories”.
 
 > **Stacks 0DZZ.** The chain `Curves^{smooth,1} ⊂ Curves^{smooth}`: a family of curves which is
 > smooth of relative dimension one is smooth.
@@ -204,7 +204,7 @@ theorem curvesSmooth1_le_curvesSmooth :
       (show ObjectProperty (CurveFamily B hZ) from IsSmoothFamily B hZ)
 ```
 
-**`AlgebraicGeometry.isSmoothFamily_curveFamilyOfSchemeMorphism_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L618). The attribute's comment: “part (2): smoothness of the proper scheme”.
+**`AlgebraicGeometry.isSmoothFamily_curveFamilyOfSchemeMorphism_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L618). The attribute's comment: “part (2): smoothness of the proper scheme”.
 
 > **Stacks 0DZZ, part (2).** The family of curves attached to a proper flat morphism of schemes
 > of finite presentation whose source has dimension at most one is smooth exactly when that morphism
@@ -225,7 +225,7 @@ theorem isSmoothFamily_curveFamilyOfSchemeMorphism_iff
       Smooth ((BigFppfOver.toScheme B integerBase hZ).map g)
 ```
 
-**`AlgebraicGeometry.isSmoothDimOneFamily_curveFamilyOfSchemeMorphism_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 640](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L640). The attribute's comment: “part (2): the proper scheme is smooth and equidimensional of dimension one”.
+**`AlgebraicGeometry.isSmoothDimOneFamily_curveFamilyOfSchemeMorphism_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 640](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L640). The attribute's comment: “part (2): the proper scheme is smooth and equidimensional of dimension one”.
 
 > **Stacks 0DZZ, part (2).** For a proper flat morphism of schemes of finite presentation with
 > nonempty source of dimension at most one onto the spectrum of a field, the attached family of
@@ -256,7 +256,7 @@ theorem isSmoothDimOneFamily_curveFamilyOfSchemeMorphism_iff
           (1 : WithBot ℕ∞))
 ```
 
-**`AlgebraicGeometry.isSmoothDimOneFamily_curveFamilyOfSchemeMorphism_iff_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 679](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L679). The attribute's comment: “part (2): the proper scheme is smooth and every irreducible component of it has dimension one”.
+**`AlgebraicGeometry.isSmoothDimOneFamily_curveFamilyOfSchemeMorphism_iff_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 679](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L679). The attribute's comment: “part (2): the proper scheme is smooth and every irreducible component of it has dimension one”.
 
 > **Stacks 0DZZ, part (2).** For a proper flat morphism of schemes of finite presentation
 > whose source has dimension at most one onto the spectrum of a field, the attached family of
@@ -293,7 +293,7 @@ theorem isSmoothDimOneFamily_curveFamilyOfSchemeMorphism_iff_irreducibleComponen
 
 [Tag 0E1N](https://stacks.math.columbia.edu/tag/0E1N) in the Stacks Project.
 
-**`AlgebraicGeometry.isSmoothOverIntegers_isSmoothFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothOverIntegers.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothOverIntegers.lean#L67). The attribute's comment: “Curves^\{smooth} → Spec(ℤ) is smooth, on the algebraic stack of curves”.
+**`AlgebraicGeometry.isSmoothOverIntegers_isSmoothFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothOverIntegers.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothOverIntegers.lean#L67). The attribute's comment: “Curves^\{smooth} → Spec(ℤ) is smooth, on the algebraic stack of curves”.
 
 > The morphism `Curves^{smooth} → Spec(ℤ)` is smooth: the open substack of the algebraic stack
 > of curves (Stacks 0D5A) where the family of curves is smooth, followed by the structure morphism
@@ -309,7 +309,7 @@ theorem isSmoothOverIntegers_isSmoothFamily :
 
 [Tag 0E81](https://stacks.math.columbia.edu/tag/0E81) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesSmoothH0_isOpenSubstack_and_factors_iff_and_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothH0Open.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothH0Open.lean#L231). The attribute's comment: “the open substack Curves^\{smooth,h0} (the moduli stack M of 0E82), its family characterization (1) and the five equivalent conditions (2) over a field”.
+**`AlgebraicGeometry.curvesSmoothH0_isOpenSubstack_and_factors_iff_and_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothH0Open.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothH0Open.lean#L231). The attribute's comment: “the open substack Curves^\{smooth,h0} (the moduli stack M of 0E82), its family characterization (1) and the five equivalent conditions (2) over a field”.
 
 > There is an open substack `Curves^{smooth,h0} ⊂ Curves` — the moduli stack
 > `𝓜 = AlgebraicGeometry.moduliSmoothCurves` of Stacks 0E82, the strictly full subcategory of
@@ -381,7 +381,7 @@ theorem curvesSmoothH0_isOpenSubstack_and_factors_iff_and_tfae :
 
 [Tag 0E82](https://stacks.math.columbia.edu/tag/0E82) in the Stacks Project.
 
-**`AlgebraicGeometry.moduliSmoothCurves`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliCurves.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliCurves.lean#L79). The attribute's comment: “the moduli stack of smooth proper curves, 𝓜 = Curves^\{smooth, h0}”.
+**`AlgebraicGeometry.moduliSmoothCurves`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliCurves.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ModuliCurves.lean#L79). The attribute's comment: “the moduli stack of smooth proper curves, 𝓜 = Curves^\{smooth, h0}”.
 
 > **The moduli stack `𝓜 = Curves^{smooth, h0}` of smooth proper curves**: the substack of the
 > stack of curves of the families of curves `f : X → S` which are smooth of relative dimension one
@@ -393,7 +393,7 @@ def moduliSmoothCurves :
     CatFiberedInGroupoids.{u, u + 1, u + 1, u + 1} (BigFppfOver B integerBase hZ)
 ```
 
-**`AlgebraicGeometry.moduliSmoothCurvesOfGenus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesOfGenus.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesOfGenus.lean#L85). The attribute's comment: “the moduli stack of smooth proper curves of genus g, 𝓜\_g”.
+**`AlgebraicGeometry.moduliSmoothCurvesOfGenus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesOfGenus.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesOfGenus.lean#L85). The attribute's comment: “the moduli stack of smooth proper curves of genus g, 𝓜\_g”.
 
 > The moduli stack `𝓜_g` of smooth proper curves of genus `g`: the substack of the stack of
 > curves of the families `f : X → S` which are smooth of relative dimension one with
@@ -411,7 +411,7 @@ def moduliSmoothCurvesOfGenus (g : ℕ) :
 
 [Tag 0E83](https://stacks.math.columbia.edu/tag/0E83) in the Stacks Project.
 
-**`AlgebraicGeometry.moduliSmoothCurves_openClosedDecomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean#L173). The attribute's comment: “the decomposition 𝓜 = ∐\_\{g ≥ 0} 𝓜\_g into open and closed substacks, read on the scheme-valued points of 𝓜”.
+**`AlgebraicGeometry.moduliSmoothCurves_openClosedDecomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean#L173). The attribute's comment: “the decomposition 𝓜 = ∐\_\{g ≥ 0} 𝓜\_g into open and closed substacks, read on the scheme-valued points of 𝓜”.
 
 > **The decomposition `𝓜 = ∐_{g ≥ 0} 𝓜_g` into open and closed substacks.**
 > Let `G` be a family of curves in `𝓜` (`AlgebraicGeometry.moduliSmoothCurves`) over a scheme `S`,
@@ -447,7 +447,7 @@ theorem moduliSmoothCurves_openClosedDecomposition (G : CurveFamily B hZ)
               (schemeSpaceMap a.baseMap).hom) ⊆ CurveFamily.fibreGenusLocus B hZ G g)
 ```
 
-**`AlgebraicGeometry.factors_moduliSmoothCurvesOfGenus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean#L244). The attribute's comment: “part (1), with smooth of relative dimension one in (b): read with smooth of arbitrary relative dimension, (b) ⟹ (a) fails for g = 0, see not\_factors\_moduliSmoothCurvesOfGenus\_zero\_of\_identity”.
+**`AlgebraicGeometry.factors_moduliSmoothCurvesOfGenus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean#L244). The attribute's comment: “part (1), with smooth of relative dimension one in (b): read with smooth of arbitrary relative dimension, (b) ⟹ (a) fails for g = 0, see not\_factors\_moduliSmoothCurvesOfGenus\_zero\_of\_identity”.
 
 > Let `f : X → S` be a family of curves, classified by a
 > scheme-valued point `y` of the stack of curves over `S` with `y(S) ≅ X`. The following are
@@ -475,7 +475,7 @@ theorem factors_moduliSmoothCurvesOfGenus_iff (g : ℕ) (U : BigFppfOver B integ
         CurveFamily.HasGenus B hZ X g
 ```
 
-**`AlgebraicGeometry.factors_moduliSmoothCurvesOfGenus_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean#L323). The attribute's comment: “part (2): over a field, (a) the classifying morphism factors through 𝓜\_g, (b)-(e) the conditions on X”.
+**`AlgebraicGeometry.factors_moduliSmoothCurvesOfGenus_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean#L323). The attribute's comment: “part (2): over a field, (a) the classifying morphism factors through 𝓜\_g, (b)-(e) the conditions on X”.
 
 > Let `X` be a scheme proper over a field `k` with `dim(X) ≤ 1`, let `k̄` be an algebraic
 > closure of `k` and `g ≥ 0`. The following are equivalent:
@@ -518,7 +518,7 @@ theorem factors_moduliSmoothCurvesOfGenus_over_field_iff (g : ℕ) {k : Type u} 
 
 [Tag 0E84](https://stacks.math.columbia.edu/tag/0E84) in the Stacks Project.
 
-**`AlgebraicGeometry.isSmoothOverIntegers_moduliSmoothCurves_and_moduliSmoothCurvesOfGenus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesSmoothness.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesSmoothness.lean#L67). The attribute's comment: “both morphisms 𝓜 → Spec(ℤ) and 𝓜\_g → Spec(ℤ), for every g”.
+**`AlgebraicGeometry.isSmoothOverIntegers_moduliSmoothCurves_and_moduliSmoothCurvesOfGenus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesSmoothness.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesSmoothness.lean#L67). The attribute's comment: “both morphisms 𝓜 → Spec(ℤ) and 𝓜\_g → Spec(ℤ), for every g”.
 
 > The morphisms `𝓜 → Spec(ℤ)` and, for every `g`, `𝓜_g → Spec(ℤ)` are smooth. Here
 > `𝓜 = Curves^{smooth, h0}` and `𝓜_g` are the open substacks of the algebraic stack of curves (Stacks
@@ -556,4 +556,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 109.16, Tag 0DZY](https://stacks.math.columbia.edu/tag/0DZY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

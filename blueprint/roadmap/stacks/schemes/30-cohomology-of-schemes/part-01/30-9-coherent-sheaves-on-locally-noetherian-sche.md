@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.9 Coherent sheaves on locally Noetherian schemes
 
-Section 30.9 of the Stacks Project, [Tag 01XY](https://stacks.math.columbia.edu/tag/01XY). 11 tags here are carried by 43 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 30.9 of the Stacks Project, [Tag 01XY](https://stacks.math.columbia.edu/tag/01XY). 11 tags here are carried by 43 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01XZ, a lemma
 
 [Tag 01XZ](https://stacks.math.columbia.edu/tag/01XZ) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CoherenceCriteria.coherent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean#L168). The attribute's comment: “five equivalent conditions”. References: EGA I (1.5.1), “(a) <=> (b)”.
+**`Stacks.AlgebraicGeometry.CoherenceCriteria.coherent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean#L168). The attribute's comment: “five equivalent conditions”. References: EGA I (1.5.1), “(a) <=> (b)”.
 
 > **[Stacks, Tag 01XZ].** On a locally Noetherian scheme the following are equivalent for a
 > module `F`: it is coherent; it is quasi-coherent and of finite type; it is of finite
@@ -32,7 +32,7 @@ theorem coherent_tfae (X : Scheme.{u}) [IsLocallyNoetherian X] (F : X.Modules) :
         IsOpenCover U ∧ ∀ i, ∃ hU : IsAffineOpen (U i), IsFiniteTildeOn F (U i) hU]
 ```
 
-**`Stacks.AlgebraicGeometry.CoherenceCriteria.structureSheaf_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean#L229). The attribute's comment: “the structure sheaf is coherent”.
+**`Stacks.AlgebraicGeometry.CoherenceCriteria.structureSheaf_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean#L229). The attribute's comment: “the structure sheaf is coherent”.
 
 > **[Stacks, Tag 01XZ].** The structure sheaf of a locally Noetherian scheme is coherent.
 
@@ -41,7 +41,7 @@ theorem structureSheaf_isCoherent (X : Scheme.{u}) [IsLocallyNoetherian X] :
     (SheafOfModules.unit X.ringCatSheaf).IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherenceCriteria.isCoherent_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean#L259). The attribute's comment: “finite locally free modules are coherent”.
+**`Stacks.AlgebraicGeometry.CoherenceCriteria.isCoherent_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean#L259). The attribute's comment: “finite locally free modules are coherent”.
 
 > **[Stacks, Tag 01XZ].** A finite locally free module on a locally Noetherian scheme is
 > coherent.
@@ -52,7 +52,7 @@ theorem isCoherent_of_isFiniteLocallyFree (X : Scheme.{u}) [IsLocallyNoetherian 
       (C := Opens ↥X) (J := Opens.grothendieckTopology ↥X) F] : F.IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherenceCriteria.isCoherent_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean#L325). The attribute's comment: “invertible modules are coherent”.
+**`Stacks.AlgebraicGeometry.CoherenceCriteria.isCoherent_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherenceCriteria/Basic.lean#L325). The attribute's comment: “invertible modules are coherent”.
 
 > **[Stacks, Tag 01XZ].** An invertible module on a locally Noetherian scheme is coherent.
 >
@@ -67,7 +67,7 @@ theorem isCoherent_of_isInvertible (X : Scheme.{u}) [IsLocallyNoetherian X] (F :
     F.IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentKernel.coherent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean, line 617](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean#L617). The attribute's comment: “five equivalent conditions”.
+**`Stacks.AlgebraicGeometry.CoherentKernel.coherent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean#L618). The attribute's comment: “five equivalent conditions”.
 
 > **The five equivalent conditions of [Stacks, Tag 01XZ]** for a module on a locally Noetherian
 > scheme: coherence, quasi-coherence together with finite type, finite presentation, and the two
@@ -89,7 +89,7 @@ theorem coherent_tfae (F : X.Modules) :
     ]
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentKernel.structureSheaf_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean, line 639](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean#L639). The attribute's comment: “the structure sheaf is coherent”.
+**`Stacks.AlgebraicGeometry.CoherentKernel.structureSheaf_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean, line 640](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean#L640). The attribute's comment: “the structure sheaf is coherent”.
 
 > **On a locally Noetherian scheme the structure sheaf is coherent.**
 
@@ -97,7 +97,7 @@ theorem coherent_tfae (F : X.Modules) :
 theorem structureSheaf_isCoherent : (SheafOfModules.unit X.ringCatSheaf).IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentKernel.isCoherent_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean, line 652](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean#L652). The attribute's comment: “finite locally free modules are coherent”.
+**`Stacks.AlgebraicGeometry.CoherentKernel.isCoherent_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean, line 653](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean#L653). The attribute's comment: “finite locally free modules are coherent”.
 
 > **A finite locally free module on a locally Noetherian scheme is coherent.**
 
@@ -107,7 +107,7 @@ theorem isCoherent_of_isFiniteLocallyFree (F : X.Modules)
     F.IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentKernel.isCoherent_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean, line 662](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean#L662). The attribute's comment: “invertible modules are coherent”.
+**`Stacks.AlgebraicGeometry.CoherentKernel.isCoherent_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean, line 663](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentKernel/Basic.lean#L663). The attribute's comment: “invertible modules are coherent”.
 
 > **An invertible module on a locally Noetherian scheme is coherent.** An invertible module on
 > a scheme is finite locally free of rank one, by
@@ -119,7 +119,7 @@ theorem isCoherent_of_isInvertible (F : X.Modules)
     F.IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentTFAE.tfae_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/NoetherianCoherent.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/NoetherianCoherent.lean#L373).
+**`Stacks.AlgebraicGeometry.CoherentTFAE.tfae_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/NoetherianCoherent.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/NoetherianCoherent.lean#L373).
 
 > **[Stacks, Tag 01XZ].** For a module on a locally Noetherian scheme the following are
 > equivalent:
@@ -146,7 +146,7 @@ theorem tfae_isCoherent (F : X.Modules) :
           IsOpenCover U ∧ ∀ i, ∃ hU : IsAffineOpen (U i), IsFiniteTildeOn F (U i) hU]
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentTFAE.coherent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/Coherent.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/Coherent.lean#L57). The attribute's comment: “five equivalent conditions”.
+**`Stacks.AlgebraicGeometry.CoherentTFAE.coherent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/Coherent.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/Coherent.lean#L57). The attribute's comment: “five equivalent conditions”.
 
 > **Stacks Project, Tag 01XZ.** The five characterizations of a coherent module on a locally
 > Noetherian scheme.
@@ -164,7 +164,7 @@ theorem coherent_tfae (X : Scheme.{u}) [IsLocallyNoetherian X]
     ]
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentTFAE.structureSheaf_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/Coherent.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/Coherent.lean#L83). The attribute's comment: “the structure sheaf is coherent”.
+**`Stacks.AlgebraicGeometry.CoherentTFAE.structureSheaf_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/Coherent.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/Coherent.lean#L83). The attribute's comment: “the structure sheaf is coherent”.
 
 > **Stacks Project, Tag 01XZ.** On a locally Noetherian scheme the structure sheaf is
 > coherent.
@@ -174,7 +174,7 @@ theorem structureSheaf_isCoherent (X : Scheme.{u}) [IsLocallyNoetherian X] :
     (SheafOfModules.unit X.ringCatSheaf).IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentTFAE.isCoherent_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/Coherent.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/Coherent.lean#L89). The attribute's comment: “finite locally free modules are coherent”.
+**`Stacks.AlgebraicGeometry.CoherentTFAE.isCoherent_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/Coherent.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/Coherent.lean#L89). The attribute's comment: “finite locally free modules are coherent”.
 
 > **Stacks Project, Tag 01XZ.** A finite locally free module on a locally Noetherian scheme is
 > coherent.
@@ -190,7 +190,7 @@ theorem isCoherent_of_isFiniteLocallyFree (X : Scheme.{u}) [IsLocallyNoetherian 
 
 [Tag 01Y0](https://stacks.math.columbia.edu/tag/01Y0) in the Stacks Project.
 
-**`AlgebraicGeometry.isCoherent_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean#L71). The attribute's comment: “kernel”.
+**`AlgebraicGeometry.isCoherent_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean#L71). The attribute's comment: “kernel”.
 
 > **[Stacks, Tag 01Y0].** The kernel of a map of coherent modules on a locally Noetherian
 > scheme is coherent.
@@ -200,7 +200,7 @@ theorem isCoherent_kernel {X : Scheme.{u}} [IsLocallyNoetherian X] {F G : X.Modu
     [F.IsCoherent] [G.IsCoherent] (φ : F ⟶ G) : (kernel φ).IsCoherent
 ```
 
-**`AlgebraicGeometry.isCoherent_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean#L78). The attribute's comment: “cokernel”.
+**`AlgebraicGeometry.isCoherent_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean#L78). The attribute's comment: “cokernel”.
 
 > **[Stacks, Tag 01Y0].** The cokernel of a map of coherent modules on a locally Noetherian
 > scheme is coherent.
@@ -210,7 +210,7 @@ theorem isCoherent_cokernel {X : Scheme.{u}} [IsLocallyNoetherian X] {F G : X.Mo
     [F.IsCoherent] [G.IsCoherent] (φ : F ⟶ G) : (cokernel φ).IsCoherent
 ```
 
-**`AlgebraicGeometry.isCoherent_X₂_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean#L86). The attribute's comment: “extensions”.
+**`AlgebraicGeometry.isCoherent_X₂_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean#L86). The attribute's comment: “extensions”.
 
 > **[Stacks, Tag 01Y0].** An extension of coherent modules on a locally Noetherian scheme is
 > coherent: the middle term of a short exact sequence of `𝒪_X`-modules whose outer terms are
@@ -222,7 +222,7 @@ theorem isCoherent_X₂_of_shortExact {X : Scheme.{u}} [IsLocallyNoetherian X]
     (h₁ : S.X₁.IsCoherent) (h₃ : S.X₃.IsCoherent) : S.X₂.IsCoherent
 ```
 
-**`AlgebraicGeometry.nonempty_abelian_coherentModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean#L96). The attribute's comment: “abelian category”.
+**`AlgebraicGeometry.nonempty_abelian_coherentModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Abelian.lean#L96). The attribute's comment: “abelian category”.
 
 > **[Stacks, Tag 01Y0].** The category of coherent `𝒪_X`-modules on a locally Noetherian
 > scheme is abelian. The abelian structure is the one a weak Serre subcategory of an abelian
@@ -235,16 +235,16 @@ theorem nonempty_abelian_coherentModules (X : Scheme.{u}) [IsLocallyNoetherian X
 
 Declarations registered for the tag:
 
-- [`Stacks.SheafOfModules.coherentModulesAbelian`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean#L39), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean#L43) (StacksFrontier): “abelian category”.
-- [`Stacks.SheafOfModules.isCoherent_kernel`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/CoherentWeakSerre.lean#L583), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean#L44) (StacksFrontier): “kernel”.
-- [`Stacks.SheafOfModules.coherentModules_isClosedUnderCokernels`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/CoherentWeakSerre.lean#L647), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean#L45) (StacksFrontier): “cokernel”.
-- [`Stacks.SheafOfModules.isCoherent_X₂_of_shortExact`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/CoherentWeakSerre.lean#L591), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean#L46) (StacksFrontier): “extensions”.
+- [`Stacks.SheafOfModules.coherentModulesAbelian`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean#L39), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean#L43) (StacksFrontier): “abelian category”.
+- [`Stacks.SheafOfModules.isCoherent_kernel`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/CoherentWeakSerre.lean#L583), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean#L44) (StacksFrontier): “kernel”.
+- [`Stacks.SheafOfModules.coherentModules_isClosedUnderCokernels`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/CoherentWeakSerre.lean#L647), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean#L45) (StacksFrontier): “cokernel”.
+- [`Stacks.SheafOfModules.isCoherent_X₂_of_shortExact`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/CoherentWeakSerre.lean#L591), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AbelianCategory.lean#L46) (StacksFrontier): “extensions”.
 
 ## Tag 01Y1, a lemma
 
 [Tag 01Y1](https://stacks.math.columbia.edu/tag/01Y1) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CoherentOfFiniteType.isCoherent_of_mono_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean#L195). The attribute's comment: “quasi\_coherent\_submodule”. References: EGA I (9.6.4), “submodule, B = O\_X”.
+**`Stacks.AlgebraicGeometry.CoherentOfFiniteType.isCoherent_of_mono_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean#L195). The attribute's comment: “quasi\_coherent\_submodule”. References: EGA I (9.6.4), “submodule, B = O\_X”.
 
 > **Stacks 01Y1, submodules.** A quasi-coherent submodule of a coherent module on a locally
 > Noetherian scheme is coherent.
@@ -260,7 +260,7 @@ theorem isCoherent_of_mono_of_isQuasicoherent {G F : X.Modules} [G.IsQuasicohere
     _root_.SheafOfModules.IsCoherent G
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentOfFiniteType.isCoherent_of_epi_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean#L206). The attribute's comment: “quasi\_coherent\_quotient”. References: EGA I (9.6.4), “quotient, B = O\_X”.
+**`Stacks.AlgebraicGeometry.CoherentOfFiniteType.isCoherent_of_epi_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean#L206). The attribute's comment: “quasi\_coherent\_quotient”. References: EGA I (9.6.4), “quotient, B = O\_X”.
 
 > **Stacks 01Y1, quotients.** A quasi-coherent quotient of a coherent module on a locally
 > Noetherian scheme is coherent. This is the second of 01Y1's two assertions; see the submodule
@@ -272,7 +272,7 @@ theorem isCoherent_of_epi_of_isQuasicoherent {F Q : X.Modules} [Q.IsQuasicoheren
     _root_.SheafOfModules.IsCoherent Q
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentSubquotients.isCoherent_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean#L66). The attribute's comment: “quasi\_coherent\_quotient”. References: EGA I (9.6.4), “quotient, B = O\_X”.
+**`Stacks.AlgebraicGeometry.CoherentSubquotients.isCoherent_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean#L66). The attribute's comment: “quasi\_coherent\_quotient”. References: EGA I (9.6.4), “quotient, B = O\_X”.
 
 > **[Stacks, Tag 01Y1].** A quasi-coherent quotient of a coherent sheaf of modules on a
 > locally Noetherian scheme is coherent.
@@ -283,7 +283,7 @@ theorem isCoherent_of_epi {X : Scheme.{u}} [IsLocallyNoetherian X]
     (f : F ⟶ G) [Epi f] : G.IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentSubquotients.isCoherent_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean#L191). The attribute's comment: “quasi\_coherent\_submodule”.
+**`Stacks.AlgebraicGeometry.CoherentSubquotients.isCoherent_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean#L191). The attribute's comment: “quasi\_coherent\_submodule”.
 
 > **[Stacks, Tag 01Y1].** A quasi-coherent submodule of a coherent sheaf of modules on a
 > locally Noetherian scheme is coherent.
@@ -294,7 +294,7 @@ theorem isCoherent_of_mono {X : Scheme.{u}} [IsLocallyNoetherian X]
     (f : G ⟶ F) [Mono f] : G.IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentTFAE.isCoherent_of_epi_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean#L56). The attribute's comment: “quasi\_coherent\_quotient”.
+**`Stacks.AlgebraicGeometry.CoherentTFAE.isCoherent_of_epi_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean#L56). The attribute's comment: “quasi\_coherent\_quotient”.
 
 > **Stacks Project, Tag 01Y1.** A quasi-coherent quotient of a coherent module on a locally
 > Noetherian scheme is coherent.
@@ -305,7 +305,7 @@ theorem isCoherent_of_epi_of_isQuasicoherent [IsLocallyNoetherian X]
     (f : F ⟶ G) [Epi f] : G.IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentTFAE.isCoherent_of_mono_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean#L75). The attribute's comment: “quasi\_coherent\_submodule”.
+**`Stacks.AlgebraicGeometry.CoherentTFAE.isCoherent_of_mono_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean#L75). The attribute's comment: “quasi\_coherent\_submodule”.
 
 > **Stacks Project, Tag 01Y1.** A quasi-coherent submodule of a coherent module on a locally
 > Noetherian scheme is coherent.
@@ -320,7 +320,7 @@ theorem isCoherent_of_mono_of_isQuasicoherent [IsLocallyNoetherian X]
 
 [Tag 01Y2](https://stacks.math.columbia.edu/tag/01Y2) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.tensorSheaf_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorCoherence/Basic.lean, line 556](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TensorCoherence/Basic.lean#L556). The attribute's comment: “tensor product”. References: EGA 0 (5.3.5), “tensor product”; EGA I (9.1.1), “coherent tensor”.
+**`AlgebraicGeometry.SheafOfModules.tensorSheaf_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorCoherence/Basic.lean, line 556](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TensorCoherence/Basic.lean#L556). The attribute's comment: “tensor product”. References: EGA 0 (5.3.5), “tensor product”; EGA I (9.1.1), “coherent tensor”.
 
 > The tensor product of two coherent sheaves of modules is coherent.
 
@@ -333,7 +333,7 @@ theorem tensorSheaf_isCoherent (X : AlgebraicGeometry.RingedSpace.{u, u})
         ((X)).IsSheaf⟩).obj (F)).obj (G)))
 ```
 
-**`Stacks.AlgebraicGeometry.TensorHomCoherent.isCoherent_sheafInternalHom_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorHomCoherent/Basic.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TensorHomCoherent/Basic.lean#L104). The attribute's comment: “sheaf-hom”. References: EGA I (9.1.1), “more general”.
+**`Stacks.AlgebraicGeometry.TensorHomCoherent.isCoherent_sheafInternalHom_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorHomCoherent/Basic.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TensorHomCoherent/Basic.lean#L104). The attribute's comment: “sheaf-hom”. References: EGA I (9.1.1), “more general”.
 
 > **The sheaf-hom clause of [Stacks, Tag 01Y2].** On a ringed space, the sheaf-hom
 > `SheafHom(ℱ, 𝒢)` between two coherent modules is coherent.
@@ -351,7 +351,7 @@ theorem isCoherent_sheafInternalHom_of_isCoherent {Y : Type u} [TopologicalSpace
     _root_.SheafOfModules.IsCoherent (sheafInternalHom (spaceRingedSite O) F G)
 ```
 
-**`Stacks.AlgebraicGeometry.TensorHomCoherent.isCoherent_sheafHom`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorHomCoherent/Basic.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TensorHomCoherent/Basic.lean#L137). The attribute's comment: “sheaf-hom, as the source states it: locally Noetherian scheme”.
+**`Stacks.AlgebraicGeometry.TensorHomCoherent.isCoherent_sheafHom`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorHomCoherent/Basic.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TensorHomCoherent/Basic.lean#L137). The attribute's comment: “sheaf-hom, as the source states it: locally Noetherian scheme”.
 
 > **[Stacks, Tag 01Y2], the sheaf-hom clause.** Let `X` be a locally Noetherian scheme and let
 > `ℱ`, `𝒢` be coherent `𝒪_X`-modules. Then `SheafHom_{𝒪_X}(ℱ, 𝒢)` is coherent.
@@ -365,7 +365,7 @@ instance isCoherent_sheafHom (X : Scheme.{u}) [IsLocallyNoetherian X] (F G : X.M
     _root_.SheafOfModules.IsCoherent (sheafInternalHom (spaceRingedSite X.sheaf) F G)
 ```
 
-**`Stacks.AlgebraicGeometry.TensorHomCoherent.isCoherent_tensorObj`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorHomCoherent/Basic.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TensorHomCoherent/Basic.lean#L149). The attribute's comment: “tensor product, as the source states it: locally Noetherian scheme”.
+**`Stacks.AlgebraicGeometry.TensorHomCoherent.isCoherent_tensorObj`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorHomCoherent/Basic.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TensorHomCoherent/Basic.lean#L149). The attribute's comment: “tensor product, as the source states it: locally Noetherian scheme”.
 
 > **[Stacks, Tag 01Y2], the tensor-product clause.** Let `X` be a locally Noetherian scheme and
 > let `ℱ`, `𝒢` be coherent `𝒪_X`-modules. Then `ℱ ⊗_{𝒪_X} 𝒢` is coherent.
@@ -384,7 +384,7 @@ instance isCoherent_tensorObj (X : Scheme.{u}) [IsLocallyNoetherian X] (F G : X.
 
 [Tag 01Y3](https://stacks.math.columbia.edu/tag/01Y3) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_epi_over_of_stalk_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalSurjectivity.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalSurjectivity.lean#L114). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.exists_epi_over_of_stalk_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalSurjectivity.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalSurjectivity.lean#L114). The attribute's comment: “part (3)”.
 
 > **Stacks Project, Tag 01Y3.** A morphism with finite-type target which is surjective on one
 > stalk is an epimorphism after restriction to a neighbourhood of that point.
@@ -398,7 +398,7 @@ public theorem exists_epi_over_of_stalk_surjective {F G : SheafOfModules.{u} R}
     ∃ U : Opens X, x ∈ U ∧ Epi (φ.over U)
 ```
 
-**`AlgebraicGeometry.exists_isZero_over_of_stalk_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalSurjectivity.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalSurjectivity.lean#L126). The attribute's comment: “part (1)”. References: EGA 0 (5.2.2), “support closed”.
+**`AlgebraicGeometry.exists_isZero_over_of_stalk_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalSurjectivity.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalSurjectivity.lean#L126). The attribute's comment: “part (1)”. References: EGA 0 (5.2.2), “support closed”.
 
 > **Stacks Project, Tag 01Y3.** A finite-type sheaf whose stalk vanishes at a point vanishes
 > on a neighbourhood of that point.
@@ -410,7 +410,7 @@ public theorem exists_isZero_over_of_stalk_isZero (F : SheafOfModules.{u} R)
     ∃ U : Opens X, x ∈ U ∧ IsZero (F.over U)
 ```
 
-**`AlgebraicGeometry.exists_isIso_over_of_stalk_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalSurjectivity.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalSurjectivity.lean#L159). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.exists_isIso_over_of_stalk_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalSurjectivity.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalSurjectivity.lean#L159). The attribute's comment: “part (4)”.
 
 > **Stacks Project, Tag 01Y3.** A morphism from a module of finite type to a coherent module
 > which is bijective on the stalk at a point is an isomorphism after restriction to a
@@ -424,7 +424,7 @@ public theorem exists_isIso_over_of_stalk_isIso {F G : SheafOfModules.{u} R}
     ∃ U : Opens X, x ∈ U ∧ IsIso (φ.over U)
 ```
 
-**`Stacks.AlgebraicGeometry.Tag01Y3LocalIso.exists_isIso_over_of_stalk_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalIso/Basic.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalIso/Basic.lean#L293). The attribute's comment: “part (4)”.
+**`Stacks.AlgebraicGeometry.Tag01Y3LocalIso.exists_isIso_over_of_stalk_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalIso/Basic.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalIso/Basic.lean#L293). The attribute's comment: “part (4)”.
 
 > **Part (4) of [Stacks, Tag 01Y3].** A map from a finite-type module sheaf to a coherent
 > module sheaf which is an isomorphism on one stalk is an isomorphism after restriction to a
@@ -440,14 +440,14 @@ theorem exists_isIso_over_of_stalk_isIso {F G : SheafOfModules.{u} R}
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.exists_isMono_over_of_stalk_injective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalIsomorphism.lean#L136), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalIsomorphism.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalIsomorphism.lean#L156) (StacksFrontier): “part (2)”.
-- [`Stacks.AlgebraicGeometry.Tag01Y3LocalIso.exists_isMono_over_of_stalk_injective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalIso/Basic.lean#L277), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/LocalIso/Basic.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalIso/Basic.lean#L286) (StacksFrontier): “part (2)”.
+- [`AlgebraicGeometry.exists_isMono_over_of_stalk_injective`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalIsomorphism.lean#L136), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalIsomorphism.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalIsomorphism.lean#L156) (StacksFrontier): “part (2)”.
+- [`Stacks.AlgebraicGeometry.Tag01Y3LocalIso.exists_isMono_over_of_stalk_injective`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalIso/Basic.lean#L277), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/LocalIso/Basic.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalIso/Basic.lean#L286) (StacksFrontier): “part (2)”.
 
 ## Tag 01Y4, a lemma
 
 [Tag 01Y4](https://stacks.math.columbia.edu/tag/01Y4) in the Stacks Project.
 
-**`Stacks.SheafOfModules.SheafHomStalk.exists_localHom_of_stalkLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalHom.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalHom.lean#L86).
+**`Stacks.SheafOfModules.SheafHomStalk.exists_localHom_of_stalkLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalHom.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/LocalHom.lean#L86).
 
 > **Stacks Project, Tag 01Y4.** A linear map out of the stalk of a finitely presented sheaf of
 > modules on a ringed space is represented by a homomorphism on some open neighbourhood.
@@ -472,7 +472,7 @@ theorem exists_localHom_of_stalkLinearMap (X : TopCat.{u})
 
 [Tag 01Y5](https://stacks.math.columbia.edu/tag/01Y5) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.exists_coherent_module_on_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Support/SchemeTheoreticCoherent.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Support/SchemeTheoreticCoherent.lean#L72). The attribute's comment: “descent to a coherent module on the scheme-theoretic support”.
+**`AlgebraicGeometry.Scheme.Modules.exists_coherent_module_on_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Support/SchemeTheoreticCoherent.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Support/SchemeTheoreticCoherent.lean#L72). The attribute's comment: “descent to a coherent module on the scheme-theoretic support”.
 
 > **[Stacks, Tag 01Y5].** A coherent module on a locally Noetherian scheme is the direct
 > image of a coherent module on its scheme-theoretic support.
@@ -487,13 +487,13 @@ theorem exists_coherent_module_on_schemeTheoreticSupport :
 
 Declarations registered for the tag:
 
-- [`SheafOfModules.isClosed_supp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/Support.lean#L151), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Support/SchemeTheoreticCoherent.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Support/SchemeTheoreticCoherent.lean#L50) (StacksFrontier): “closedness of the support”.
+- [`SheafOfModules.isClosed_supp`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/Support.lean#L151), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Support/SchemeTheoreticCoherent.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Support/SchemeTheoreticCoherent.lean#L50) (StacksFrontier): “closedness of the support”.
 
 ## Tag 087T, a lemma
 
 [Tag 087T](https://stacks.math.columbia.edu/tag/087T) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.pushforwardCoh`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean#L170). The attribute's comment: “the induced functor”.
+**`Stacks.ClosedImmersion.pushforwardCoh`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean#L170). The attribute's comment: “the induced functor”.
 
 > **[Stacks, Tag 087T], the induced functor.** Direct image along a closed immersion of
 > locally Noetherian schemes carries a coherent `𝒪_Z`-module to a coherent `𝒪_X`-module
@@ -506,7 +506,7 @@ def pushforwardCoh :
       (coherentAnnihilatedByKer i).FullSubcategory
 ```
 
-**`Stacks.ClosedImmersion.pushforwardCohEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean#L230). The attribute's comment: “the equivalence”.
+**`Stacks.ClosedImmersion.pushforwardCohEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean#L230). The attribute's comment: “the equivalence”.
 
 > **[Stacks, Tag 087T].** Let `i : Z ⟶ X` be a closed immersion of locally Noetherian schemes
 > and let `ℐ ⊆ 𝒪_X` be the quasi-coherent sheaf of ideals cutting out `Z`. Direct image along `i`
@@ -523,7 +523,7 @@ def pushforwardCohEquivalence :
       (coherentAnnihilatedByKer i).FullSubcategory
 ```
 
-**`AlgebraicGeometry.isCoherent_pushforward_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean#L268). The attribute's comment: “coherence of the direct image”.
+**`AlgebraicGeometry.isCoherent_pushforward_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean#L268). The attribute's comment: “coherence of the direct image”.
 
 > **[Stacks, Tag 087T], coherence of the direct image.** The direct image of a coherent
 > module along a closed immersion into a locally Noetherian scheme is coherent.
@@ -537,7 +537,7 @@ theorem isCoherent_pushforward_of_isClosedImmersion
     ((Scheme.Modules.pushforward i).obj G).IsCoherent
 ```
 
-**`AlgebraicGeometry.exists_isCoherent_pushforward_iso_of_smul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean#L283). The attribute's comment: “essential surjectivity onto coherent modules”.
+**`AlgebraicGeometry.exists_isCoherent_pushforward_iso_of_smul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean#L283). The attribute's comment: “essential surjectivity onto coherent modules”.
 
 > **[Stacks, Tag 087T], essential surjectivity.** A coherent module on `X` annihilated,
 > section by section, by the kernel of the comorphism of a closed immersion `i : Z ⟶ X` is the
@@ -555,7 +555,7 @@ theorem exists_isCoherent_pushforward_iso_of_smul_eq_zero
       Nonempty ((Scheme.Modules.pushforward i).obj G ≅ M)
 ```
 
-**`AlgebraicGeometry.exists_isCoherent_pushforward_iso_iff_smul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean#L303). The attribute's comment: “the essential image on coherent modules”.
+**`AlgebraicGeometry.exists_isCoherent_pushforward_iso_iff_smul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedPushforward/Coherent.lean#L303). The attribute's comment: “the essential image on coherent modules”.
 
 > **[Stacks, Tag 087T], the essential image on coherent modules.** A coherent module on `X`
 > is the direct image of a coherent module on `Z` exactly when the kernel of the comorphism of
@@ -574,7 +574,7 @@ theorem exists_isCoherent_pushforward_iso_iff_smul_eq_zero
       ∀ (U : X.Opens) (a : Γ(X, U)), (i.app U).hom a = 0 → ∀ m : Γ(M, U), a • m = 0
 ```
 
-**`Stacks.AlgebraicGeometry.Tag087TCoherentImage.coherentPushforwardEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentImage/Basic.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentImage/Basic.lean#L236).
+**`Stacks.AlgebraicGeometry.Tag087TCoherentImage.coherentPushforwardEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentImage/Basic.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentImage/Basic.lean#L236).
 
 > **[Stacks, Tag 087T].** Direct image along a closed immersion of locally Noetherian schemes
 > is an equivalence from the coherent modules on the source onto the coherent modules on the
@@ -596,7 +596,7 @@ def coherentPushforwardEquivalence :
 
 [Tag 01Y6](https://stacks.math.columbia.edu/tag/01Y6) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.FiniteDirectImageCoherent.isCoherent_pushforward_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteDirectImageCoherent/Basic.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FiniteDirectImageCoherent/Basic.lean#L166). The attribute's comment: “the direct image is coherent”. References: EGA III (3.2.2), “finite case”; EGA III (4.8.6), “scheme case”.
+**`Stacks.AlgebraicGeometry.FiniteDirectImageCoherent.isCoherent_pushforward_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteDirectImageCoherent/Basic.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FiniteDirectImageCoherent/Basic.lean#L166). The attribute's comment: “the direct image is coherent”. References: EGA III (3.2.2), “finite case”; EGA III (4.8.6), “scheme case”.
 
 > The direct image of a coherent module along a finite morphism to a locally Noetherian scheme is
 > coherent.
@@ -610,7 +610,7 @@ theorem isCoherent_pushforward_of_isFinite {X S : Scheme.{u}} (f : X ⟶ S) [IsF
     ((Scheme.Modules.pushforward f).obj F).IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.FiniteDirectImageCoherent.isZero_higherDirectImage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteDirectImageCoherent/Basic.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FiniteDirectImageCoherent/Basic.lean#L178). The attribute's comment: “the higher direct images vanish”.
+**`Stacks.AlgebraicGeometry.FiniteDirectImageCoherent.isZero_higherDirectImage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteDirectImageCoherent/Basic.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FiniteDirectImageCoherent/Basic.lean#L178). The attribute's comment: “the higher direct images vanish”.
 
 > The higher direct images of a quasi-coherent module along a finite morphism vanish in positive
 > degrees, a finite morphism being affine; this is [Stacks, Tag 01XC]. No hypothesis on the target is
@@ -626,7 +626,7 @@ theorem isZero_higherDirectImage_of_isFinite {X S : Scheme.{u}} (f : X ⟶ S) [I
 
 [Tag 0B3J](https://stacks.math.columbia.edu/tag/0B3J) in the Stacks Project.
 
-**`AlgebraicGeometry.nonempty_generatingSections_of_support_dim_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/GlobalGeneration/ZeroDimensionalSupport.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/GlobalGeneration/ZeroDimensionalSupport.lean#L270). The attribute's comment: “global\_generation”.
+**`AlgebraicGeometry.nonempty_generatingSections_of_support_dim_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/GlobalGeneration/ZeroDimensionalSupport.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/GlobalGeneration/ZeroDimensionalSupport.lean#L270). The attribute's comment: “global\_generation”.
 
 > A coherent sheaf with support of dimension at most zero on a locally Noetherian
 > scheme is generated by global sections.
@@ -643,7 +643,7 @@ public theorem nonempty_generatingSections_of_support_dim_le_zero
     Nonempty F.GeneratingSections
 ```
 
-**`AlgebraicGeometry.isZero_hgroup_top_of_support_dim_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ZeroDimensionalSupport/HigherVanishing.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ZeroDimensionalSupport/HigherVanishing.lean#L80). The attribute's comment: “vanishing”.
+**`AlgebraicGeometry.isZero_hgroup_top_of_support_dim_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ZeroDimensionalSupport/HigherVanishing.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/ZeroDimensionalSupport/HigherVanishing.lean#L80). The attribute's comment: “vanishing”.
 
 > **[Stacks, Tag 0B3J], the vanishing clause.** For `X` a locally Noetherian scheme and `ℱ` a
 > coherent `𝒪_X`-module whose support has dimension at most zero, `Hⁱ(X, ℱ) = 0` for every
@@ -664,7 +664,7 @@ theorem isZero_hgroup_top_of_support_dim_le_zero
 
 [Tag 0CYJ](https://stacks.math.columbia.edu/tag/0CYJ) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CoherentPushforward.isCoherent_pushforward_of_supp_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/PushforwardSupport.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/PushforwardSupport.lean#L350).
+**`Stacks.AlgebraicGeometry.CoherentPushforward.isCoherent_pushforward_of_supp_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/PushforwardSupport.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/PushforwardSupport.lean#L350).
 
 > A coherent sheaf on an open subscheme, supported on a closed subset contained in
 > that open, has coherent direct image.
@@ -684,4 +684,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.9, Tag 01XY](https://stacks.math.columbia.edu/tag/01XY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

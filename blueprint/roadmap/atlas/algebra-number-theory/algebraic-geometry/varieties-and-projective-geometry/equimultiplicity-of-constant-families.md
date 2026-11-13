@@ -7,7 +7,7 @@ statement: formalized
 
 # Equimultiplicity of μ-constant families
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/equimultiplicity-of-constant-families/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/equimultiplicity-of-constant-families/index.html).
 
 ## Milnor number
 
@@ -19,7 +19,7 @@ when that rank is infinite. For $R = \mathbb{C}$ and $\sigma = \{1, \dots, n\}$ 
 $\dim_{\mathbb{C}} \mathbb{C}[[z_1, \dots, z_n]] / (\partial f / \partial z_1, \dots,
 \partial f / \partial z_n)$.
 
-Formalized by `MathlibExt.Geometry.SymplecticMonodromyWanted.SymplecticMonodromy.milnorNumber`, a definition declared in [WantedExt/Geometry/SymplecticMonodromyWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/SymplecticMonodromyWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/equimultiplicity-of-constant-families/index.html#milnor-number).
+Formalized by `MathlibExt.Geometry.SymplecticMonodromyWanted.SymplecticMonodromy.milnorNumber`, a definition declared in [WantedExt/Geometry/SymplecticMonodromyWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/SymplecticMonodromyWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/equimultiplicity-of-constant-families/index.html#milnor-number).
 
 ## Equimultiplicity of μ-constant families
 
@@ -40,7 +40,7 @@ contains $1$, while $f_0$ has order $1$ and $f_1$ has order $0$.
 
 - J. Fernández de Bobadilla and T. Pełka, `Symplectic monodromy at radius zero and equimultiplicity of μ-constant families`, Annals of Math, 200 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_symplectic_monodromy` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.SymplecticMonodromyWanted.SymplecticMonodromy.theorem_1_1` is written with `theorem_wanted` in [WantedExt/Geometry/SymplecticMonodromyWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/SymplecticMonodromyWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/equimultiplicity-of-constant-families/index.html#theorem-1-1).
+Stated but not proved: `MathlibExt.Geometry.SymplecticMonodromyWanted.SymplecticMonodromy.theorem_1_1` is written with `theorem_wanted` in [WantedExt/Geometry/SymplecticMonodromyWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/SymplecticMonodromyWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/equimultiplicity-of-constant-families/index.html#theorem-1-1).
 
 ## Depends on
 
@@ -49,4 +49,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Equimultiplicity of μ-constant families](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/equimultiplicity-of-constant-families/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/equimultiplicity-of-constant-families)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/equimultiplicity-of-constant-families)

@@ -8,7 +8,7 @@ proof: formalized
 
 # 66.13 The schematic locus
 
-Section 66.13 of the Stacks Project, [Tag 03JG](https://stacks.math.columbia.edu/tag/03JG). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 66.13 of the Stacks Project, [Tag 03JG](https://stacks.math.columbia.edu/tag/03JG). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03JG, the section
 
@@ -16,15 +16,15 @@ Section 66.13 of the Stacks Project, [Tag 03JG](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.schematicLocus`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspace.lean#L41), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SchematicLocusSection.lean, line 31](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchematicLocusSection.lean#L31) (StacksFrontier): “the schematic locus”.
-- [`AlgebraicGeometry.Space.exists_isGreatest_isOpenSubspace_isRepresentable`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DenseSchematicLocusEquivalence.lean#L91), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SchematicLocusSection.lean, line 32](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchematicLocusSection.lean#L32) (StacksFrontier): “a largest open subspace which is a scheme”.
-- [`AlgebraicGeometry.Space.denseRange_schematicLocus_of_isZariskiLocallyQuasiSeparatedOver`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiLocallyQuasiSeparatedSchematicLocus.lean#L85), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SchematicLocusSection.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchematicLocusSection.lean#L34) (StacksFrontier): “density of the schematic locus for quasi-separated spaces”.
+- [`AlgebraicGeometry.Space.schematicLocus`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspace.lean#L41), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SchematicLocusSection.lean, line 31](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchematicLocusSection.lean#L31) (StacksFrontier): “the schematic locus”.
+- [`AlgebraicGeometry.Space.exists_isGreatest_isOpenSubspace_isRepresentable`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DenseSchematicLocusEquivalence.lean#L91), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SchematicLocusSection.lean, line 32](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchematicLocusSection.lean#L32) (StacksFrontier): “a largest open subspace which is a scheme”.
+- [`AlgebraicGeometry.Space.denseRange_schematicLocus_of_isZariskiLocallyQuasiSeparatedOver`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiLocallyQuasiSeparatedSchematicLocus.lean#L85), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SchematicLocusSection.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchematicLocusSection.lean#L34) (StacksFrontier): “density of the schematic locus for quasi-separated spaces”.
 
 ## Tag 03JH, a lemma
 
 [Tag 03JH](https://stacks.math.columbia.edu/tag/03JH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOpenSubspace_and_isRepresentable_schematicLocus_of_isAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DenseSchematicLocusEquivalence.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DenseSchematicLocusEquivalence.lean#L67). The attribute's comment: “openness and representability”.
+**`AlgebraicGeometry.Space.isOpenSubspace_and_isRepresentable_schematicLocus_of_isAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DenseSchematicLocusEquivalence.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DenseSchematicLocusEquivalence.lean#L67). The attribute's comment: “openness and representability”.
 
 > The schematic locus of an algebraic space over `S` is an open subspace and is
 > representable.
@@ -36,7 +36,7 @@ theorem isOpenSubspace_and_isRepresentable_schematicLocus_of_isAlgebraicSpace
       (schematicLocus B S hS X).toFunctor.IsRepresentable
 ```
 
-**`AlgebraicGeometry.Space.exists_isGreatest_isOpenSubspace_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DenseSchematicLocusEquivalence.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DenseSchematicLocusEquivalence.lean#L91).
+**`AlgebraicGeometry.Space.exists_isGreatest_isOpenSubspace_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DenseSchematicLocusEquivalence.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DenseSchematicLocusEquivalence.lean#L91).
 
 > An algebraic space `X` over a scheme `S` has a largest open subspace which is a scheme: the
 > set of open subspaces of `X` that are represented by a scheme over `S` has a greatest element.
@@ -48,7 +48,7 @@ theorem exists_isGreatest_isOpenSubspace_isRepresentable
       {G : Subfunctor X | IsOpenSubspace B S hS G ∧ G.toFunctor.IsRepresentable} X'
 ```
 
-**`AlgebraicGeometry.Space.mem_range_pointsMap_schematicLocus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeSchematicLocus.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeSchematicLocus.lean#L196). The attribute's comment: “points of the schematic locus”.
+**`AlgebraicGeometry.Space.mem_range_pointsMap_schematicLocus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeSchematicLocus.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeSchematicLocus.lean#L196). The attribute's comment: “points of the schematic locus”.
 
 > A point of a presheaf lies in the point set of the schematic locus of Tag 03JH exactly
 > when it lies in the point set of one representable open subspace.
@@ -66,7 +66,7 @@ theorem mem_range_pointsMap_schematicLocus_iff
         y ∈ Set.range (pointsMap B S hS G.toFunctor G.ι)
 ```
 
-**`AlgebraicGeometry.Space.schematicLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspace.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspace.lean#L41). The attribute's comment: “schematic locus”.
+**`AlgebraicGeometry.Space.schematicLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspace.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspace.lean#L41). The attribute's comment: “schematic locus”.
 
 > The schematic locus of `F`: the union of all open subspaces of `F` which are represented
 > by a scheme over `S`.
@@ -75,7 +75,7 @@ theorem mem_range_pointsMap_schematicLocus_iff
 def schematicLocus (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Subfunctor F
 ```
 
-**`AlgebraicGeometry.Space.le_schematicLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspace.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspace.lean#L47). The attribute's comment: “maximality”.
+**`AlgebraicGeometry.Space.le_schematicLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspace.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspace.lean#L47). The attribute's comment: “maximality”.
 
 > Every open subspace which is represented by a scheme over `S` is contained in the
 > schematic locus.
@@ -90,7 +90,7 @@ theorem le_schematicLocus (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) (G : Subfu
 
 [Tag 0BAS](https://stacks.math.columbia.edu/tag/0BAS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.codimensionZero_mem_schematicLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteEtaleSchematicLocus.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteEtaleSchematicLocus.lean#L342). The attribute's comment: “codimension-zero points”.
+**`AlgebraicGeometry.Space.codimensionZero_mem_schematicLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteEtaleSchematicLocus.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteEtaleSchematicLocus.lean#L341). The attribute's comment: “codimension-zero points”.
 
 > **Stacks 0BAS, codimension-zero points.** If an algebraic space over `S` admits a finite,
 > étale, surjective morphism from an object of the site whose underlying scheme is
@@ -107,7 +107,7 @@ theorem codimensionZero_mem_schematicLocus (hF : IsAlgebraicSpace B S hS F)
       (schematicLocus B S hS F).ι)
 ```
 
-**`AlgebraicGeometry.Space.denseRange_schematicLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteEtaleSchematicLocus.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteEtaleSchematicLocus.lean#L358). The attribute's comment: “density”.
+**`AlgebraicGeometry.Space.denseRange_schematicLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteEtaleSchematicLocus.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteEtaleSchematicLocus.lean#L357). The attribute's comment: “density”.
 
 > **Stacks 0BAS, density.** If an algebraic space over `S` admits a finite, étale, surjective
 > morphism from an object of the site whose underlying scheme is quasi-separated, then the
@@ -126,7 +126,7 @@ theorem denseRange_schematicLocus (hF : IsAlgebraicSpace B S hS F)
 
 [Tag 06NH](https://stacks.math.columbia.edu/tag/06NH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_denseRange_isRepresentable_isOpenSubspace_codimensionZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiLocallyQuasiSeparatedCodimensionZero.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiLocallyQuasiSeparatedCodimensionZero.lean#L287).
+**`AlgebraicGeometry.Space.exists_denseRange_isRepresentable_isOpenSubspace_codimensionZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiLocallyQuasiSeparatedCodimensionZero.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiLocallyQuasiSeparatedCodimensionZero.lean#L287).
 
 > **Stacks 06NH.** A Zariski locally quasi-separated algebraic space over `S` — for instance
 > a quasi-separated one — has a dense open subspace which is a scheme, and every point of
@@ -149,7 +149,7 @@ theorem exists_denseRange_isRepresentable_isOpenSubspace_codimensionZero
         x ∈ Set.range (pointsMap B S hS G.toFunctor G.ι)
 ```
 
-**`AlgebraicGeometry.Space.denseRange_schematicLocus_of_isZariskiLocallyQuasiSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiLocallyQuasiSeparatedSchematicLocus.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiLocallyQuasiSeparatedSchematicLocus.lean#L85). The attribute's comment: “density”.
+**`AlgebraicGeometry.Space.denseRange_schematicLocus_of_isZariskiLocallyQuasiSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiLocallyQuasiSeparatedSchematicLocus.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiLocallyQuasiSeparatedSchematicLocus.lean#L85). The attribute's comment: “density”.
 
 > The schematic locus of a Zariski locally quasi-separated algebraic space over `S` is dense
 > in its space of points; so that space has a dense open subspace which is a scheme.
@@ -169,4 +169,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.13, Tag 03JG](https://stacks.math.columbia.edu/tag/03JG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

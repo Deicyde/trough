@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 45.3 Correspondences to 45.9 Weil cohomology theories, I
+# 45.3 Correspondences to 45.11 Weil cohomology theories…
 
 - [45.3 Correspondences](45-3-correspondences.md)
 - [45.4 Chow motives](45-4-chow-motives.md)
@@ -11,3 +11,5 @@ navigation: transparent
 - [45.7 Classical Weil cohomology theories](45-7-classical-weil-cohomology-theories.md)
 - [45.8 Cycles over non-closed fields](45-8-cycles-over-non-closed-fields.md)
 - [45.9 Weil cohomology theories, I](45-9-weil-cohomology-theories-i.md)
+- [45.10 Further properties](45-10-further-properties.md)
+- [45.11 Weil cohomology theories, II](45-11-weil-cohomology-theories-ii.md)

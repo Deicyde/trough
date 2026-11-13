@@ -1,50 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Deformation.ToposThickening.hasFlatLift_iff_obstruction_eq_zero, Deformation.ToposThickening.hasFlatLift_iff_basePullbackIdeal_obstruction_eq_zero, Deformation.ToposThickening.exists_addTorsor_flatLiftClass_basePullbackIdeal, Deformation.ToposThickening.autOverIdentityExtZeroEquiv_spec, Deformation.ToposThickening.FlatThickeningMorphismSituation, Deformation.ToposThickening.MorphismOfFirstOrderThickenings.existenceObstructionClass_first_tensorIdeal, Deformation.ToposThickening.ShortExactFlatThickeningSituation, Deformation.ToposThickening.ShortExactFlatThickeningSituation.F
+lean: Deformation.ToposThickening.hasFlatLift_iff_basePullbackIdeal_obstruction_eq_zero, Deformation.ToposThickening.exists_addTorsor_flatLiftClass_basePullbackIdeal, Deformation.ToposThickening.autOverIdentityExtZeroEquiv_spec, Deformation.ToposThickening.FlatThickeningMorphismSituation, Deformation.ToposThickening.MorphismOfFirstOrderThickenings.existenceObstructionClass_first_basePullbackIdeal, Deformation.ToposThickening.FlatThickeningComplexSituation, Deformation.ToposThickening.FlatThickeningComplexSituation.π, Deformation.ToposThickening.FlatThickeningComplexSituation.reduction
 statement: formalized
 proof: formalized
 ---
 
 # 91.12 Application to flat modules on flat thickenings of ringed topoi
 
-Section 91.12 of the Stacks Project, [Tag 08VV](https://stacks.math.columbia.edu/tag/08VV). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 91.12 of the Stacks Project, [Tag 08VV](https://stacks.math.columbia.edu/tag/08VV). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08VW, a lemma
 
 [Tag 08VW](https://stacks.math.columbia.edu/tag/08VW) in the Stacks Project.
 
-**`Deformation.ToposThickening.hasFlatLift_iff_obstruction_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatLiftObstruction.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/FlatLiftObstruction.lean#L343). The attribute's comment: “part (1) only; (2) and (3) are not proved; granting 08MQ as hypotheses”.
-
-> **Stacks 08VW, part (1).** In the situation of Stacks 08VV — a strict morphism `(f, f')` of
-> first order thickenings of ringed topoi with `f'` flat, and an `O`-module `ℱ` flat over `O_ℬ` —
-> the module `ℱ` has a lift to an `O'`-module flat over `O_{ℬ'}` if and only if the obstruction
-> class `o(ℱ, f^*J ⊗_O ℱ, 1)` of Stacks 08MF vanishes. The class is written here for
-> `I ⊗_O ℱ`, the two agreeing because `I = f^*J` under these hypotheses.
-
-```lean
-theorem hasFlatLift_iff_obstruction_eq_zero
-    (i : RingedToposHom X X') (t : RingedToposHom S S') (f : RingedToposHom X S)
-    (f' : RingedToposHom X' S') (hi : FirstOrderThickening i) (ht : FirstOrderThickening t)
-    (comm : f'.comp i = t.comp f)
-    (F : SheafOfModules.{w}
-      (Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor i.toToposHom).obj X.O)))
-    [HasExt.{e} (SheafOfModules.{w}
-      (Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor i.toToposHom).obj X.O)))]
-    [HasExt.{e} (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X'.O))]
-    (hstrict : (MorphismOfThickenings.ofFirstOrderThickenings i t f f' hi ht comm).IsStrict)
-    (hf' : f'.IsFlat) (hflat : IsFlatOverBase i f F)
-    (hMQ : IsFlatLiftCorrespondence i t f f' hi ht comm F)
-    (hMQ' : IsIdealComparisonIsoOfFlat i t f f' hi ht comm F) :
-    HasFlatLift i f' hi F ↔
-      existenceObstructionClass hi F
-          (((sheafTensor.{u', v', w, w, w}
-            ((pushforwardCommRingFunctor i.toToposHom).obj X.O)).obj hi.I).obj F)
-          (𝟙 (((sheafTensor.{u', v', w, w, w}
-            ((pushforwardCommRingFunctor i.toToposHom).obj X.O)).obj hi.I).obj F)) = 0
-```
-
-**`Deformation.ToposThickening.hasFlatLift_iff_basePullbackIdeal_obstruction_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatThickeningFlatLifts.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/FlatThickeningFlatLifts.lean#L236).
+**`Deformation.ToposThickening.hasFlatLift_iff_basePullbackIdeal_obstruction_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatThickeningFlatLifts.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FlatThickeningFlatLifts.lean#L242). The attribute's comment: “part (1): a flat lift exists iff o(ℱ, f^*J ⊗\_O ℱ, 1) vanishes”.
 
 > **Stacks 08VW, part (1).** In Situation 08VV — `(f, f')` a strict morphism of first order
 > thickenings of ringed topoi with `f'` flat, and `ℱ` an `O`-module flat over `O_ℬ` — there is an
@@ -72,7 +42,7 @@ theorem hasFlatLift_iff_basePullbackIdeal_obstruction_eq_zero
         (basePullbackIdealTensorIso i t f f' hi ht comm hf' hstrict F).inv = 0
 ```
 
-**`Deformation.ToposThickening.exists_addTorsor_flatLiftClass_basePullbackIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatThickeningFlatLifts.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/FlatThickeningFlatLifts.lean#L268).
+**`Deformation.ToposThickening.exists_addTorsor_flatLiftClass_basePullbackIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatThickeningFlatLifts.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FlatThickeningFlatLifts.lean#L274). The attribute's comment: “part (2): the lift classes are a torsor under Ext¹\_O(ℱ, f^*J ⊗\_O ℱ)”.
 
 > **Stacks 08VW, part (2).** In Situation 08VV, if `ℱ` has a lift to an `O'`-module flat over
 > `O_{ℬ'}`, then the isomorphism classes of such lifts form a principal homogeneous set under
@@ -127,7 +97,7 @@ theorem exists_addTorsor_flatLiftClass_basePullbackIdeal
                   (isFlat_reducedBaseModule_of_isFlatOverBase i t f f' hi ht comm F hflat))
 ```
 
-**`Deformation.ToposThickening.autOverIdentityExtZeroEquiv_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatThickeningFlatLifts.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/FlatThickeningFlatLifts.lean#L345).
+**`Deformation.ToposThickening.autOverIdentityExtZeroEquiv_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatThickeningFlatLifts.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FlatThickeningFlatLifts.lean#L351). The attribute's comment: “part (3): automorphisms of a lift over id\_ℱ are Ext⁰\_O(ℱ, f^*J ⊗\_O ℱ)”.
 
 > **Stacks 08VW, part (3).** In Situation 08VV, given a lift `ℱ'` of `ℱ` to an `O'`-module flat
 > over `O_{ℬ'}`, the set of automorphisms of `ℱ'` which pull back to the identity of `ℱ` is
@@ -157,7 +127,7 @@ theorem autOverIdentityExtZeroEquiv_spec
 
 [Tag 0CYD](https://stacks.math.columbia.edu/tag/0CYD) in the Stacks Project.
 
-**`Deformation.ToposThickening.FlatThickeningMorphismSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfFlatThickenings.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfFlatThickenings.lean#L107). The attribute's comment: “the situation”.
+**`Deformation.ToposThickening.FlatThickeningMorphismSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfFlatThickenings.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfFlatThickenings.lean#L107). The attribute's comment: “the situation”.
 
 > **Stacks 0CYD.** Two strict flat morphisms of first order thickenings of one morphism of
 > ringed topoi `f : (Sh(C), O) ⟶ (Sh(B), O_B)`, related by a morphism of the thickenings they
@@ -172,31 +142,62 @@ structure FlatThickeningMorphismSituation
 
 [Tag 0CYE](https://stacks.math.columbia.edu/tag/0CYE) in the Stacks Project.
 
-**`Deformation.ToposThickening.MorphismOfFirstOrderThickenings.existenceObstructionClass_first_tensorIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatObstructionCompatibility.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/FlatObstructionCompatibility.lean#L142). The attribute's comment: “coefficients and Ext map written through the ideals Iₖ, which are f^*Jₖ by 08MQ”.
+**`Deformation.ToposThickening.MorphismOfFirstOrderThickenings.existenceObstructionClass_first_basePullbackIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatObstructionCompatibilityBaseIdeal.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FlatObstructionCompatibilityBaseIdeal.lean#L127).
 
-> **Stacks 0CYE.** In the situation of Stacks 0CYD the canonical map
-> `Ext²_O(ℱ, f^*J₂ ⊗_O ℱ) ⟶ Ext²_O(ℱ, f^*J₁ ⊗_O ℱ)` carries the obstruction class
-> `o(ℱ, f^*J₂ ⊗_O ℱ, 1)` of the second column to the obstruction class `o(ℱ, f^*J₁ ⊗_O ℱ, 1)` of
-> the first.
+> **Stacks 0CYE.** In Situation 0CYD — a morphism `h` of first order thickenings
+> `(Sh(C), O) ⟶ (Sh(C'₁), O'₁) ⟶ (Sh(C'₂), O'₂)` (the data `U`, with `h^♯ = U.hSharp`), a
+> morphism `k` of first order thickenings `(Sh(B), O_ℬ) ⟶ (Sh(B'₁), O_{ℬ'₁}) ⟶ (Sh(B'₂), O_{ℬ'₂})`
+> (the data `E`, with `k^♯ = E.hSharp`), morphisms `f'₁, f'₂` restricting to
+> `f : (Sh(C), O) ⟶ (Sh(B), O_ℬ)` (`r₁`, `r₂`) with `f'₂ ∘ h = k ∘ f'₁` (`comm`), both pairs
+> `(f, f'ₖ)` strict (`hs₁`, `hs₂`), both `f'ₖ` flat (`hf₁`, `hf₂`), and an `O`-module `ℱ` flat
+> over `O_ℬ` (`_hF`) — the obstruction class `o(ℱ, f^*𝒥₂ ⊗_O ℱ, 1)` maps to the obstruction class
+> `o(ℱ, f^*𝒥₁ ⊗_O ℱ, 1)` under the canonical map
+> `Ext²_O(ℱ, f^*𝒥₂ ⊗_O ℱ) ⟶ Ext²_O(ℱ, f^*𝒥₁ ⊗_O ℱ)`.
 >
-> The coefficient module of the `k`-th column is written `Iₖ ⊗_O ℱ` and the map on `Ext²` is the
-> one induced by the map `I₂ ⟶ I₁` of square-zero ideals of the upper row; under the hypotheses of
-> Stacks 0CYD the comparison `f^*Jₖ ⟶ Iₖ` is an isomorphism, which is the reading under which
-> `Deformation.ToposThickening.hasFlatLift_iff_obstruction_eq_zero` states Stacks 08VW. See the
-> implementation notes.
+> Here `𝒥ₖ` is the defining ideal of the `k`-th thickening of `(Sh(B), O_ℬ)`, the coefficient
+> module of the `k`-th column is `f^*𝒥ₖ ⊗_O ℱ`
+> (`Deformation.ToposThickening.basePullbackIdealOverThickened`), the action `1` of the `k`-th
+> column is the map `Iₖ ⊗_O ℱ ⟶ f^*𝒥ₖ ⊗_O ℱ` that is the identity under the identification
+> `f^*𝒥ₖ = Iₖ` of Situation 08VV (the inverse of
+> `Deformation.ToposThickening.basePullbackIdealTensorIso`), exactly as in Stacks 08VW, and the
+> canonical map is the one induced by `f^*𝒥₂ ⟶ f^*𝒥₁`, the pullback along `f` of the map
+> `𝒥₂ ⟶ 𝒥₁` of the lower row (`Deformation.ToposThickening.basePullbackIdealOverThickenedMap`).
+> The two thickenings of each row are presented on one site, as in Stacks 0CYC.
 >
-> This is Stacks 0CYC at `Kₖ = Iₖ ⊗_O ℱ` and `cₖ = 1`.
+> The proof is the source's: Stacks 0CYC at `Kₖ = f^*𝒥ₖ ⊗_O ℱ`, whose commutation hypothesis is
+> that `I₂ ⟶ I₁` is `f^*𝒥₂ ⟶ f^*𝒥₁` under the identifications `f^*𝒥ₖ = Iₖ`
+> (`Deformation.ToposThickening.basePullbackIdealIsoIdeal_hom_comp_idealMap`). The flatness of `ℱ`
+> over `O_ℬ` is part of the source's situation and is not needed for the conclusion.
 
 ```lean
-theorem existenceObstructionClass_first_tensorIdeal :
-    existenceObstructionClass D.first F
-        (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).obj D.first.I).obj F)
-        (𝟙 (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).obj D.first.I).obj F)) =
-      (existenceObstructionClass D.second F
-          (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).obj D.second.I).obj F)
-          (𝟙 (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).obj D.second.I).obj F))).comp
-        (Abelian.Ext.mk₀
-          (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).map D.idealMap).app F))
+theorem MorphismOfFirstOrderThickenings.existenceObstructionClass_first_basePullbackIdeal
+    (U : MorphismOfFirstOrderThickenings i) (E : MorphismOfFirstOrderThickenings t)
+    (f : RingedToposHom X B) (f₁ : RingedToposHom Y B')
+    (f₂ : RingedToposHom (reshape Y U.O₂) (reshape B' E.O₂))
+    (r₁ : f₁.comp i = t.comp f)
+    (r₂ : f₂.comp (reshapeHom i U.O₂ U.fSharp₂) = (reshapeHom t E.O₂ E.fSharp₂).comp f)
+    (comm : f₂.comp (RingedToposHom.coefficientMorphism (O := U.O₂) (O' := Y.O) Y.J U.hSharp) =
+      (RingedToposHom.coefficientMorphism (O := E.O₂) (O' := B'.O) B'.J E.hSharp).comp f₁)
+    (hs₁ : (MorphismOfThickenings.ofFirstOrderThickenings i t f f₁ U.first E.first r₁).IsStrict)
+    (hs₂ : (MorphismOfThickenings.ofFirstOrderThickenings (reshapeHom i U.O₂ U.fSharp₂)
+      (reshapeHom t E.O₂ E.fSharp₂) f f₂ U.second E.second r₂).IsStrict)
+    (hf₁ : f₁.IsFlat) (hf₂ : f₂.IsFlat)
+    [HasExt.{e} (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf (baseRing i)))]
+    [HasExt.{e} (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf Y.O))]
+    [HasExt.{e} (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf U.O₂))]
+    (F : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf (baseRing i)))
+    (_hF : IsFlatOverBase i f F) :
+    existenceObstructionClass U.first F
+        (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
+          (basePullbackIdealOverThickened i t f E.first))
+        (basePullbackIdealTensorIso i t f f₁ U.first E.first r₁ hf₁ hs₁ F).inv =
+      (existenceObstructionClass U.second F
+          (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
+            (basePullbackIdealOverThickened i (reshapeHom t E.O₂ E.fSharp₂) f E.second))
+          (basePullbackIdealTensorIso (reshapeHom i U.O₂ U.fSharp₂)
+            (reshapeHom t E.O₂ E.fSharp₂) f f₂ U.second E.second r₂ hf₂ hs₂ F).inv).comp
+        (Abelian.Ext.mk₀ (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).map
+          (basePullbackIdealOverThickenedMap i E f)))
         (add_zero 2)
 ```
 
@@ -204,145 +205,54 @@ theorem existenceObstructionClass_first_tensorIdeal :
 
 [Tag 08VX](https://stacks.math.columbia.edu/tag/08VX) in the Stacks Project.
 
-**`Deformation.ToposThickening.ShortExactFlatThickeningSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ShortExactFlatThickenings.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ShortExactFlatThickenings.lean#L176). The attribute's comment: “the situation”.
+**`Deformation.ToposThickening.FlatThickeningComplexSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatThickeningComplexSituation.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FlatThickeningComplexSituation.lean#L107). The attribute's comment: “the situation: both rows short exact sequences of first order thickenings in the sense of 08ML (exactness of `0 ⟶ I₃ ⟶ I₂ ⟶ I₁ ⟶ 0` of defining ideals as modules over the base), each `f'ᵢ` restricting to `f`, each `(f, f'ᵢ)` strict, each `f'ᵢ` flat, and `ℱ'₂` an `O'₂`-module flat over `O_{ℬ'₂}`”.
 
-> **Stacks 08VX.** A short exact sequence of first order thickenings of a ringed topos
-> `(Sh(C), O)` mapping to a short exact sequence of first order thickenings of a ringed topos
-> `(Sh(B), O_B)`, by three strict flat deformations of one morphism `f : (Sh(C), O) ⟶
-> (Sh(B), O\_B)`, together with an `O'₂`-module flat over `O\_\{B'₂}` and the canonical splitting
-> of the upper row.
+> **Stacks 08VX.** A short exact sequence of first order thickenings `O'₃ ⟶ O'₂ ⟶ O'₁` of a
+> ringed topos `(Sh(C), O)`, over a short exact sequence of first order thickenings of a ringed
+> topos `(Sh(B), O_ℬ)`, by three strict flat deformations `f'₁, f'₂, f'₃` of one morphism
+> `f : (Sh(C), O) ⟶ (Sh(B), O_ℬ)` compatible with the two rows, together with an `O'₂`-module
+> `ℱ'₂` flat over `O_{ℬ'₂}`.
+>
+> The first thickening of each row is `i : (Sh(C), O) ⟶ (Sh(C'₁), O'₁)`, respectively
+> `t : (Sh(B), O_ℬ) ⟶ (Sh(B'₁), O_{ℬ'₁})`, and the other two are presented on its site, as in
+> `Deformation.ToposThickening.FirstOrderThickeningComplex`.
+>
+> Short exactness of each row is that of Stacks 08ML: the maps `I₃ ⟶ I₂ ⟶ I₁` of defining ideals
+> are the restrictions of the ring maps `O'₃ ⟶ O'₂ ⟶ O'₁`, and `0 ⟶ I₃ ⟶ I₂ ⟶ I₁ ⟶ 0` is a short
+> exact sequence of `O`-modules, read through the equivalence of topoi of the thickening as
+> modules over `i_*O` (respectively `t_*O_ℬ`) on the common underlying site. The squares of the
+> diagram are equalities of morphisms of ringed topoi: the horizontal arrows are the identity on
+> underlying topoi, so this is the source's identification of the underlying topoi of a
+> thickening and of its base (Stacks 08M7, `f = f'` on underlying topoi).
 
 ```lean
-structure ShortExactFlatThickeningSituation
-    (upper : FirstOrderThickeningSequence X X₁ X₂ X₃)
-    (lower : FirstOrderThickeningSequence S S₁ S₂ S₃)
+structure FlatThickeningComplexSituation (i : RingedToposHom X Y) (t : RingedToposHom B B')
 ```
 
-**`Deformation.ToposThickening.ShortExactFlatThickeningSituation.F`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ShortExactFlatThickenings.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ShortExactFlatThickenings.lean#L243). The attribute's comment: “the module `ℱ = ℱ'₂ ⊗ O`”.
+**`Deformation.ToposThickening.FlatThickeningComplexSituation.π`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatThickeningComplexSituation.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FlatThickeningComplexSituation.lean#L231). The attribute's comment: “the canonical splitting `π` of the upper row (Remark 08ML)”.
 
-> **Stacks 08VX.** The `O`-module `ℱ = ℱ'₂ ⊗ O`: the pullback of `ℱ'₂` along the middle
-> thickening of the upper row.
+> **The canonical splitting `π : (Sh(C'₁), O'₁) ⟶ (Sh(C), O)` of Remark Stacks 08ML**, the
+> trivialization of the first thickening of the upper row through which the composite
+> `(Sh(C'₁), O'₁) ⟶ (Sh(C'₃), O'₃)` factors.
 
 ```lean
-noncomputable def F (D : ShortExactFlatThickeningSituation upper lower) :
-    SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)
+noncomputable def π : Trivialization i
+```
+
+**`Deformation.ToposThickening.FlatThickeningComplexSituation.reduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatThickeningComplexSituation.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FlatThickeningComplexSituation.lean#L245). The attribute's comment: “the module `ℱ = ℱ'₂ ⊗ O`”.
+
+> **The `O`-module `ℱ = ℱ'₂ ⊗ O` of Stacks 08VX**: the pullback `i₂^*ℱ'₂` of `ℱ'₂` along the
+> second thickening of the upper row.
+
+```lean
+noncomputable def reduction : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)
 ```
 
 ## Tag 08VY, a lemma
 
 [Tag 08VY](https://stacks.math.columbia.edu/tag/08VY) in the Stacks Project.
 
-**`Deformation.ToposThickening.FirstOrderThickeningComplex.boundary_underlyingExtensionClass_eq_obstruction_pushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatThickeningBoundaryPushout.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/FlatThickeningBoundaryPushout.lean#L221). The attribute's comment: “the tag's own statement, at the two lifts the source names: the trivial extension of 08MI for π^*ℱ and the 08MJ pushout of ℱ'₂ for h^*ℱ'₂. UNCONDITIONAL on Stacks 08MQ: this declaration assumes none of 08MQ's consequences. All of them that it needs are proved and supplied -- `IsIdealTensorShortExact` by `FirstOrderThickeningComplex.isIdealTensorShortExact`, `IsFlatOfFixedActionIdentity` by `isFlatOfFixedActionIdentity`, `IsFlatLiftCorrespondence` by `isFlatLiftCorrespondence`, and `IsIdealComparisonIsoOfFlat` by `isIdealComparisonIsoOfFlat`. `IsIdealTensorShortExact` was FALSE as first stated -- refuted -- and is repaired with Situation 08VX's two horizontal squares, which its proof consumes twice each. The general form `boundary_underlyingExtensionClass_eq_obstruction` in `FlatThickeningBoundary.lean` still carries the binders, because the producer's module imports that file and discharging there would cycle; coefficients are written through the ideals Iₖ, which are f^*𝒥ₖ by 08MQ.”.
-
-> **Stacks Project, Tag 08VY.** In Situation 08VX the modules `π^*ℱ` and `h^*ℱ'₂` are
-> `O'₁`-modules flat over `O_{ℬ'₁}` restricting to `ℱ` on `(Sh(C), O)`. Their difference
-> (Stacks 08VW) is an element `θ` of `Ext¹_O(ℱ, f^*𝒥₁ ⊗_O ℱ)` whose boundary in
-> `Ext²_O(ℱ, f^*𝒥₃ ⊗_O ℱ)` equals the obstruction (Stacks 08VW) to lifting `ℱ` to an `O'₃`-module
-> flat over `O_{ℬ'₃}`.
->
-> This is
-> `Deformation.ToposThickening.FirstOrderThickeningComplex`
-> `.boundary_underlyingExtensionClass_eq_obstruction'` at the two lifts of the source: `π^*ℱ` is the
-> trivial extension of Stacks 08MI attached to the canonical splitting `π`, and `h^*ℱ'₂` is the
-> extension `S.coefficientExtensionOne` that Stacks 08MJ produces from `ℱ'₂`, which receives from
-> `ℱ'₂` the canonical map `S.coefficientComparisonMap` satisfying the pushout identities. The
-> seven clauses of the conclusion are, in order: the canonical action map of `h^*ℱ'₂` and of
-> `π^*ℱ` is the identity, so the kernel of each of `h^*ℱ'₂ ⟶ ℱ` and `π^*ℱ ⟶ ℱ` is
-> `I₁ ⊗_O ℱ = f^*𝒥₁ ⊗_O ℱ` and each restricts to `ℱ`; each of `π^*ℱ` and `h^*ℱ'₂` is flat over
-> `O_{ℬ'₁}`; the class `θ = ξ_{h^*ℱ'₂}` is the difference of the two lifts under the bijection
-> `ℱ' ↦ ξ_{ℱ'}` of Stacks 08MI; the obstruction class is, by Stacks 08VW for the third column, the
-> obstruction to lifting `ℱ` to an `O'₃`-module flat over `O_{ℬ'₃}`; and the boundary of `θ` for
-> the coefficient sequence equals that obstruction class.
->
-> See the implementation notes for the two readings inherited from the general form: the
-> coefficient modules are written through the ideals `Iₖ`, which are `f^*𝒥ₖ` by Stacks 08MQ, and
-> every consequence of Stacks 08MQ that the proof consumes is now supplied rather than
-> assumed: this statement carries no stand-in hypothesis.
-
-```lean
-theorem boundary_underlyingExtensionClass_eq_obstruction_pushout
-    [HasExt.{e} (SheafOfModules.{max v₂ u₂} (Stacks.SheafOfModules.Tensor.ringSheaf (baseRing i)))]
-    [HasExt.{e} (SheafOfModules.{max v₂ u₂} (Stacks.SheafOfModules.Tensor.ringSheaf Y.O))]
-    [HasExt.{e} (SheafOfModules.{max v₂ u₂} (Stacks.SheafOfModules.Tensor.ringSheaf S.O₃))]
-    (hS : S.IsComplex) (hT : T.IsComplex)
-    (hTSE : (ShortComplex.mk T.idealMap₃₂ T.idealMap₂₁ hT).ShortExact)
-    (π : Trivialization i)
-    (hπ : S.upper.ringMapH ≫ S.lower.ringMapH =
-      S.whole.ringMap₂ ≫ splittingRingHom i S.lower.first π)
-    (hstrict₁ : (MorphismOfThickenings.ofFirstOrderThickenings i t f f₁
-      S.lower.first T.lower.first commf₁).IsStrict)
-    (hstrict₂ : (MorphismOfThickenings.ofFirstOrderThickenings
-      (reshapeHom i S.lower.O₂ S.lower.fSharp₂) (reshapeHom t T.lower.O₂ T.lower.fSharp₂) f f₂
-      S.lower.second T.lower.second commf₂).IsStrict)
-    (hstrict₃ : (MorphismOfThickenings.ofFirstOrderThickenings S.thirdHom T.thirdHom f f₃
-      S.third T.third commf₃).IsStrict)
-    (hf₁ : f₁.IsFlat) (hf₂ : f₂.IsFlat) (hf₃ : f₃.IsFlat)
-    (commh : f₂.comp S.lowerHorizontalHom = T.lowerHorizontalHom.comp f₁)
-    (commh₃₂ : f₃.comp S.upperHorizontalHom = T.upperHorizontalHom.comp f₂)
-    (hF : IsFlatOverBase i f F) :
-    (extensionActionMap S.lower.first (S.coefficientExtensionOne F E₂ hE₂)).1 =
-        𝟙 (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-            S.lower.first.I) ∧
-      (extensionActionMap S.lower.first (trivialExtension S.lower.first π F
-          (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj S.lower.first.I)
-          (𝟙 (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-              S.lower.first.I)))).1 =
-        𝟙 (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-            S.lower.first.I) ∧
-      AlgebraicGeometry.SheafOfModules.IsFlat
-          ((SheafOfModules.restrictScalars
-            ((sheafCompose Y.J (forget₂ CommRingCat.{max v₂ u₂} RingCat.{max v₂ u₂})).map
-              f₁.fSharpInverseImage)).obj
-            (trivialExtension S.lower.first π F
-              (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-                  S.lower.first.I)
-              (𝟙 (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-                  S.lower.first.I))).Z.left) ∧
-      AlgebraicGeometry.SheafOfModules.IsFlat
-          ((SheafOfModules.restrictScalars
-            ((sheafCompose Y.J (forget₂ CommRingCat.{max v₂ u₂} RingCat.{max v₂ u₂})).map
-              f₁.fSharpInverseImage)).obj (S.coefficientExtensionOne F E₂ hE₂).Z.left) ∧
-      underlyingExtensionClass.{e} i S.lower.first π F
-            (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-                S.lower.first.I)
-            (S.coefficientExtensionOne F E₂ hE₂) =
-          splitRestrictionExtHom.{e} S.lower.first π F
-              (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-                  S.lower.first.I)
-              (extensionClass.{_, _, _, _, _, _, e} F
-                (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-                    S.lower.first.I)
-                (S.coefficientExtensionOne F E₂ hE₂)) -
-            splitRestrictionExtHom.{e} S.lower.first π F
-              (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-                  S.lower.first.I)
-              (extensionClass.{_, _, _, _, _, _, e} F
-                (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-                    S.lower.first.I)
-                (trivialExtension S.lower.first π F
-                  (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-                      S.lower.first.I)
-                  (𝟙 (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-                      S.lower.first.I)))) ∧
-      (HasFlatLift S.thirdHom f₃ S.third F ↔
-          existenceObstructionClass S.third F
-              (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj S.third.I)
-              (𝟙 (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-                  S.third.I)) = 0) ∧
-      (underlyingExtensionClass.{e} i S.lower.first π F
-            (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-                S.lower.first.I)
-            (S.coefficientExtensionOne F E₂ hE₂)).comp
-          (S.isIdealTensorShortExact T hS f f₁ f₂ f₃ commf₁ commf₂ commf₃ F
-            hT hTSE hF hstrict₁ hstrict₂ hstrict₃ hf₁ hf₂ hf₃ commh commh₃₂).extClass
-          (by decide) =
-        existenceObstructionClass S.third F
-          (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj S.third.I)
-          (𝟙 (((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).flip.obj F).obj
-            S.third.I))
-```
-
-**`Deformation.ToposThickening.FlatThickeningComplexSituation.boundary_difference_trivialLift_pulledLift_eq_obstruction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatThickeningComplexBoundaryObstruction.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/FlatThickeningComplexBoundaryObstruction.lean#L227).
+**`Deformation.ToposThickening.FlatThickeningComplexSituation.boundary_difference_trivialLift_pulledLift_eq_obstruction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatThickeningComplexBoundaryObstruction.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FlatThickeningComplexBoundaryObstruction.lean#L230). The attribute's comment: “the full statement in Situation 08VX: π^*ℱ and h^*ℱ'₂ are flat over O\_\{ℬ'₁} and restrict to ℱ, their difference lies in the Ext¹\_O(ℱ, f^*𝒥₁ ⊗ ℱ)-torsor of 08VW (2), and its boundary along the short exact sequence of the f^*𝒥ₖ ⊗ ℱ is the 08VW obstruction for the third column, which vanishes exactly when ℱ lifts to an O'₃-module flat over O\_\{ℬ'₃}.”.
 
 > **Stacks Project, Tag 08VY.** In Situation **Stacks 08VX** — a short exact sequence of first
 > order thickenings `O'₃ ⟶ O'₂ ⟶ O'₁` of `(Sh(C), O)` over a short exact sequence of first order
@@ -441,4 +351,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 91.12, Tag 08VV](https://stacks.math.columbia.edu/tag/08VV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

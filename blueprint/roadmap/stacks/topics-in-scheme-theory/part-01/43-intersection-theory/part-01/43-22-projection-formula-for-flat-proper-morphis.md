@@ -8,13 +8,13 @@ proof: formalized
 
 # 43.22 Projection formula for flat proper morphisms
 
-Section 43.22 of the Stacks Project, [Tag 0B0C](https://stacks.math.columbia.edu/tag/0B0C). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 43.22 of the Stacks Project, [Tag 0B0C](https://stacks.math.columbia.edu/tag/0B0C). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B10, a lemma
 
 [Tag 0B10](https://stacks.math.columbia.edu/tag/0B10) in the Stacks Project.
 
-**`Stacks.Intersection.ProjectionFormula.intersectProperly_coherentSheafCycle_pushforward_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/Basic.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/Basic.lean#L385). The attribute's comment: “the properness clause for `α = [ℱ]_r` and `β = [𝒢]_s`”.
+**`Stacks.Intersection.ProjectionFormula.intersectProperly_coherentSheafCycle_pushforward_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/Basic.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/Basic.lean#L385). The attribute's comment: “the properness clause for `α = [ℱ]_r` and `β = [𝒢]_s`”.
 
 > Let `f : X ⟶ Y` be a flat proper morphism of varieties over a field with `dim X = dim Y + e`,
 > let `ℱ` be a coherent `𝒪_X`-module whose support has dimension at most `r` and `𝒢` a coherent
@@ -45,7 +45,7 @@ theorem intersectProperly_coherentSheafCycle_pushforward_unconditional (K : Type
       (coherentSheafCycle (fieldChowSituation K) sY G (s : ℤ) hGs)
 ```
 
-**`Stacks.Intersection.ProjectionFormula.properPushforward_intersectionProductCycleGroup_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/Basic.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/Basic.lean#L419). The attribute's comment: “the identity `f_*(α) · β = f_*(α · f^*β)` for `α = [ℱ]_r` and `β = [𝒢]_s`, both products read by the Tor formula `∑ᵢ (-1)ⁱ [Torᵢ]_n` of Stacks 0AZR”.
+**`Stacks.Intersection.ProjectionFormula.properPushforward_intersectionProductCycleGroup_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/Basic.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/Basic.lean#L419). The attribute's comment: “the identity `f_*(α) · β = f_*(α · f^*β)` for `α = [ℱ]_r` and `β = [𝒢]_s`, both products read by the Tor formula `∑ᵢ (-1)ⁱ [Torᵢ]_n` of Stacks 0AZR”.
 
 > Let `f : X ⟶ Y` be a flat proper morphism of nonsingular varieties over a field. For a
 > coherent `𝒪_X`-module `ℱ` and a coherent `𝒪_Y`-module `𝒢`, proper pushforward carries the
@@ -84,7 +84,7 @@ theorem properPushforward_intersectionProductCycleGroup_unconditional (K : Type 
           hbase F hF G hG n hFn)
 ```
 
-**`Stacks.Intersection.ProjectionFormula.properPushforward_torFormulaCycleIntersectionProduct_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/Cycles.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/Cycles.lean#L527). The attribute's comment: “the whole lemma: both that `f_*α` and `β` intersect properly and the identity `f_*(α) · β = f_*(α · f^*β)`, for arbitrary cycles `α ∈ Z_r(X)` and `β ∈ Z_s(Y)` and every `r`, `s`, under the source's assumption that `α` and `f^*β` intersect properly, for a flat proper morphism of nonsingular varieties over an algebraically closed field — the chapter's own convention, Tag 0AZ8 — with `dim X = dim Y + e`. The products are the Section 43.17 product of cycles of Tag 0B08 in dimension `n = r + s - dim Y`, an integer.”.
+**`Stacks.Intersection.ProjectionFormula.properPushforward_torFormulaCycleIntersectionProduct_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/Cycles.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/Cycles.lean#L527). The attribute's comment: “the whole lemma: both that `f_*α` and `β` intersect properly and the identity `f_*(α) · β = f_*(α · f^*β)`, for arbitrary cycles `α ∈ Z_r(X)` and `β ∈ Z_s(Y)` and every `r`, `s`, under the source's assumption that `α` and `f^*β` intersect properly, for a flat proper morphism of nonsingular varieties over an algebraically closed field — the chapter's own convention, Tag 0AZ8 — with `dim X = dim Y + e`. The products are the Section 43.17 product of cycles of Tag 0B08 in dimension `n = r + s - dim Y`, an integer.”.
 
 > **Stacks Project, Tag 0B10.** Let `f : X ⟶ Y` be a flat proper morphism of nonsingular
 > varieties over an algebraically closed field `K` — the chapter's convention, Tag 0AZ8 — with
@@ -132,7 +132,7 @@ theorem properPushforward_torFormulaCycleIntersectionProduct_eq (K : Type u) [Fi
 
 [Tag 0B1M](https://stacks.math.columbia.edu/tag/0B1M) in the Stacks Project.
 
-**`Stacks.Intersection.intersectionProduct_zeroFibre_eq_properPushforward_zeroSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/ZeroFibreDegeneration/ZeroFibreIntersection.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/ZeroFibreDegeneration/ZeroFibreIntersection.lean#L496). The attribute's comment: “the whole lemma, for a closed immersion of nonsingular varieties over an algebraically closed field and a closed subvariety `C'` of `P × 𝐏¹` presented as an integral closed subscheme: clause (1) is the dimension of the scheme-theoretic zero fibre, clause (2) the Tag 0AZQ inequality for `C'` and `X × 𝐏¹`, clause (3) proper intersection of the cycles `[C]_r` and `[X]`. The conclusion states that the two products are pushforwards of cycles `α` on `X` and `β` on `X × 𝐏¹`, that `β` and `X × 0` intersect properly, and that `α = pr_{X,*}(β · X × 0)` for every such `α` and `β`.”.
+**`Stacks.Intersection.intersectionProduct_zeroFibre_eq_properPushforward_zeroSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/ZeroFibreDegeneration/ZeroFibreIntersection.lean, line 502](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/ProjectionFormulaFlat/ZeroFibreDegeneration/ZeroFibreIntersection.lean#L502). The attribute's comment: “the whole lemma, for a closed immersion of nonsingular varieties over an algebraically closed field and a closed subvariety `C'` of `P × 𝐏¹` presented as an integral closed subscheme: clause (1) is the dimension of the scheme-theoretic zero fibre, clause (2) the Tag 0AZQ inequality for `C'` and `X × 𝐏¹`, clause (3) proper intersection of the cycles `[C]_r` and `[X]`. The conclusion states that the two products are pushforwards of cycles `α` on `X` and `β` on `X × 𝐏¹`, that `β` and `X × 0` intersect properly, and that `α = pr_{X,*}(β · X × 0)` for every such `α` and `β`.”.
 
 > **Stacks Project, Tag 0B1M.** Let `X ⟶ P` be a closed immersion of nonsingular varieties over
 > an algebraically closed field `K`, of dimensions `d` and `p`, and let `C' ⊆ P × 𝐏¹` be a closed
@@ -237,4 +237,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 43.22, Tag 0B0C](https://stacks.math.columbia.edu/tag/0B0C)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

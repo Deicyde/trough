@@ -8,7 +8,7 @@ proof: formalized
 
 # 5.3 Hausdorff spaces
 
-Section 5.3 of the Stacks Project, [Tag 08ZD](https://stacks.math.columbia.edu/tag/08ZD). 4 tags here are carried by 1 declaration of the repository (in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 5.3 of the Stacks Project, [Tag 08ZD](https://stacks.math.columbia.edu/tag/08ZD). 4 tags here are carried by 1 declaration of the repository (in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08ZE, a lemma
 
@@ -16,7 +16,7 @@ Section 5.3 of the Stacks Project, [Tag 08ZD](https://stacks.math.columbia.edu/t
 
 Declarations registered for the tag:
 
-- [`t2_iff_isClosed_diagonal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=t2_iff_isClosed_diagonal#doc) registered with `add_to_stacks` in [StacksCore/Topology/Separation/Diagonal.lean, line 19](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Separation/Diagonal.lean#L19) (StacksCore).
+- [`t2_iff_isClosed_diagonal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=t2_iff_isClosed_diagonal#doc) registered with `add_to_stacks` in [StacksCore/Topology/Separation/Diagonal.lean, line 19](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Separation/Diagonal.lean#L19) (StacksCore).
 
 ## Tag 08ZF, a lemma
 
@@ -24,7 +24,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Continuous.isClosed_graph`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Continuous.isClosed_graph#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Separation/Graph.lean, line 20](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Separation/Graph.lean#L20) (StacksFrontier).
+- [`Continuous.isClosed_graph`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Continuous.isClosed_graph#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Separation/Graph.lean, line 20](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Separation/Graph.lean#L20) (StacksFrontier).
 
 ## Tag 08ZG, a lemma
 
@@ -32,13 +32,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Function.LeftInverse.isClosed_range`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Function.LeftInverse.isClosed_range#doc) registered with `add_to_stacks` in [StacksCore/Topology/Separation/Section.lean, line 22](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Separation/Section.lean#L22) (StacksCore): “a retract of a Hausdorff space is closed”.
+- [`Function.LeftInverse.isClosed_range`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Function.LeftInverse.isClosed_range#doc) registered with `add_to_stacks` in [StacksCore/Topology/Separation/Section.lean, line 22](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Separation/Section.lean#L22) (StacksCore): “a retract of a Hausdorff space is closed”.
 
 ## Tag 08ZH, a lemma
 
 [Tag 08ZH](https://stacks.math.columbia.edu/tag/08ZH) in the Stacks Project.
 
-**`fibreProduct_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Separation/FibreProduct.lean, line 28](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Separation/FibreProduct.lean#L28).
+**`fibreProduct_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Separation/FibreProduct.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Separation/FibreProduct.lean#L28).
 
 > **Stacks 08ZH.** Let `f : X → Z` and `g : Y → Z` be continuous maps of topological spaces.
 > If `Z` is Hausdorff, then the fibre product `X ×_Z Y` is a closed subset of `X × Y`, being the
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 5.3, Tag 08ZD](https://stacks.math.columbia.edu/tag/08ZD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

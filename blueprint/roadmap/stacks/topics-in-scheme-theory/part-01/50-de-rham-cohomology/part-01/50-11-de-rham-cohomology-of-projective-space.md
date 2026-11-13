@@ -8,13 +8,13 @@ proof: formalized
 
 # 50.11 de Rham cohomology of projective space
 
-Section 50.11 of the Stacks Project, [Tag 0FMG](https://stacks.math.columbia.edu/tag/0FMG). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 50.11 of the Stacks Project, [Tag 0FMG](https://stacks.math.columbia.edu/tag/0FMG). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FMH, a lemma
 
 [Tag 0FMH](https://stacks.math.columbia.edu/tag/0FMH) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjEulerSequence.exists_shortExact_eulerSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjEulerSequence/Exactness.lean, line 598](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjEulerSequence/Exactness.lean#L598). References: SGA 6 VIII (5.2), “special case”; SGA 7 XVII (5.1), “more general”.
+**`Stacks.AlgebraicGeometry.ProjEulerSequence.exists_shortExact_eulerSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjEulerSequence/Exactness.lean, line 598](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjEulerSequence/Exactness.lean#L598). References: SGA 6 VIII (5.2), “special case”; SGA 7 XVII (5.1), “more general”.
 
 > **There is a short exact sequence `0 ⟶ Ω ⟶ 𝒪(-1)^{⊕ (n+1)} ⟶ 𝒪 ⟶ 0`** on projective
 > `n`-space over a commutative ring, with `Ω` the sheaf of differentials relative to the base.
@@ -30,7 +30,7 @@ theorem exists_shortExact_eulerSequence :
 
 [Tag 0FUK](https://stacks.math.columbia.edu/tag/0FUK) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.isZero_hodgeCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean, line 681](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean#L681). The attribute's comment: “clause (1)”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.isZero_hodgeCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean, line 681](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean#L681). The attribute's comment: “clause (1)”.
 
 > **Clause (1) of [Stacks, Tag 0FUK].** `H^q(ℙⁿ_A, Ωᵖ) = 0` unless `0 ≤ p = q ≤ n`.
 
@@ -39,7 +39,7 @@ theorem isZero_hodgeCohomology (p q : ℕ) (hpq : ¬(p = q ∧ p ≤ m + 1)) :
     IsZero (hodgeCohomology A m p q)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.nonempty_hodgeCohomology_diag_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean, line 693](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean#L693). The attribute's comment: “clause (2), as an isomorphism with `A`”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.nonempty_hodgeCohomology_diag_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean, line 693](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean#L693). The attribute's comment: “clause (2), as an isomorphism with `A`”.
 
 > **Clause (2) of [Stacks, Tag 0FUK].** For `0 ≤ p ≤ n` the `A`-module `H^p(ℙⁿ_A, Ωᵖ)` is
 > isomorphic to `A`; its generator is, in the source, the `p`-fold boundary of
@@ -50,7 +50,7 @@ theorem nonempty_hodgeCohomology_diag_iso (p : ℕ) (hp : p ≤ m + 1) :
     Nonempty (hodgeCohomology A m p p ≅ ModuleCat.of A A)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.free_hodgeCohomology_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean, line 701](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean#L701). The attribute's comment: “clause (2), freeness”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.free_hodgeCohomology_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean, line 701](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean#L701). The attribute's comment: “clause (2), freeness”.
 
 > **Clause (2) of [Stacks, Tag 0FUK], as freeness.** For `0 ≤ p ≤ n` the `A`-module
 > `H^p(ℙⁿ_A, Ωᵖ)` is free, being isomorphic to `A`.
@@ -60,7 +60,7 @@ theorem free_hodgeCohomology_diag (p : ℕ) (hp : p ≤ m + 1) :
     Module.Free A ↥(hodgeCohomology A m p p)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.isZero_twistedHodgeCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean, line 748](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean#L748). The attribute's comment: “clause (3)”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.isZero_twistedHodgeCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean, line 748](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean#L748). The attribute's comment: “clause (3)”.
 
 > **Clause (3) of [Stacks, Tag 0FUK].** For `q > 0`, `k > 0` and arbitrary `p` we have
 > `H^q(ℙⁿ_A, Ωᵖ(k)) = 0`.
@@ -74,7 +74,7 @@ theorem isZero_twistedHodgeCohomology (p : ℕ) {k : ℤ} (hk : 0 < k) {q : ℕ}
 
 [Tag 0FMI](https://stacks.math.columbia.edu/tag/0FMI) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.exists_basis_chernPow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeChernPowers.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeChernPowers.lean#L512). The attribute's comment: “for 0 ≤ p ≤ n the A-module H^p(ℙⁿ\_A, Ω^p) is free of rank one with basis element c₁^\{Hodge}(𝒪(1))^p, the p-th cup power of the Hodge first Chern class of 𝒪(1)”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.exists_basis_chernPow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeChernPowers.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeChernPowers.lean#L512). The attribute's comment: “for 0 ≤ p ≤ n the A-module H^p(ℙⁿ\_A, Ω^p) is free of rank one with basis element c₁^\{Hodge}(𝒪(1))^p, the p-th cup power of the Hodge first Chern class of 𝒪(1)”.
 
 > **[Stacks, Tag 0FMI], the basis.** For `0 ≤ p ≤ n` the `A`-module `Hᵖ(ℙⁿ_A, Ωᵖ)` is free of
 > rank one with basis element `c₁^{Hodge}(𝒪(1))ᵖ`, the `p`-th cup power of the Hodge first Chern
@@ -95,7 +95,7 @@ theorem exists_basis_chernPow (p : ℕ) (hp : p ≤ m + 1) :
     ∃ b : Module.Basis (Fin 1) A ↥(hodgeCohomology A m p p), b 0 = hodgeChernPow A m p
 ```
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.isZero_hodgeCohomology_of_ne_or_gt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean, line 844](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean#L844). The attribute's comment: “H^q(ℙⁿ\_A, Ω^p) = 0 unless 0 ≤ p = q ≤ n”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.isZero_hodgeCohomology_of_ne_or_gt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean, line 844](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeCohomology.lean#L844). The attribute's comment: “H^q(ℙⁿ\_A, Ω^p) = 0 unless 0 ≤ p = q ≤ n”.
 
 > **[Stacks, Tag 0FMI], the vanishing.** `H^q(ℙⁿ_A, Ωᵖ) = 0` unless `0 ≤ p = q ≤ n`. The
 > source quotes this from [Stacks, Tag 0FUK], and so does the proof. The basis assertion of
@@ -106,7 +106,7 @@ theorem isZero_hodgeCohomology_of_ne_or_gt (p q : ℕ)
     (hpq : p ≠ q ∨ m + 1 < p) : IsZero (hodgeCohomology A m p q)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.isZero_projectiveHodgeCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeEveryDimension.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeEveryDimension.lean#L131). The attribute's comment: “H^q(ℙⁿ\_A, Ω^p) = 0 unless 0 ≤ p = q ≤ n, for every n ≥ 0”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.isZero_projectiveHodgeCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeEveryDimension.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeEveryDimension.lean#L131). The attribute's comment: “H^q(ℙⁿ\_A, Ω^p) = 0 unless 0 ≤ p = q ≤ n, for every n ≥ 0”.
 
 > **[Stacks, Tag 0FMI], the vanishing, for every `n ≥ 0`.** `H^q(ℙⁿ_A, Ωᵖ) = 0` unless
 > `0 ≤ p = q ≤ n`. For `n ≥ 1` it is clause (1) of [Stacks, Tag 0FUK]
@@ -118,7 +118,7 @@ theorem isZero_projectiveHodgeCohomology (p q : ℕ) (hpq : p ≠ q ∨ n < p) :
     IsZero (projectiveHodgeCohomology A n p q)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.exists_basis_projectiveHodgeChernPow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeEveryDimension.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeEveryDimension.lean#L146). The attribute's comment: “for 0 ≤ p ≤ n the A-module H^p(ℙⁿ\_A, Ω^p) is free of rank one with basis element c₁^\{Hodge}(𝒪(1))^p, for every n ≥ 0”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceHodge.exists_basis_projectiveHodgeChernPow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeEveryDimension.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceHodgeEveryDimension.lean#L146). The attribute's comment: “for 0 ≤ p ≤ n the A-module H^p(ℙⁿ\_A, Ω^p) is free of rank one with basis element c₁^\{Hodge}(𝒪(1))^p, for every n ≥ 0”.
 
 > **[Stacks, Tag 0FMI], the basis, for every `n ≥ 0`.** For `0 ≤ p ≤ n` the `A`-module
 > `Hᵖ(ℙⁿ_A, Ωᵖ)` is free of rank one with basis element `c₁^{Hodge}(𝒪(1))ᵖ`, the `p`-th cup power
@@ -138,7 +138,7 @@ theorem exists_basis_projectiveHodgeChernPow (p : ℕ) (hp : p ≤ n) :
 
 [Tag 0FMJ](https://stacks.math.columbia.edu/tag/0FMJ) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceDeRham.isZero_deRhamCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceDeRhamCohomology.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceDeRhamCohomology.lean#L267). The attribute's comment: “the vanishing in every degree other than 2i with 0 ≤ i ≤ n”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceDeRham.isZero_deRhamCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceDeRhamCohomology.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceDeRhamCohomology.lean#L267). The attribute's comment: “the vanishing in every degree other than 2i with 0 ≤ i ≤ n”.
 
 > **[Stacks, Tag 0FMJ], the vanishing.** In every degree that is not `2i` for some
 > `0 ≤ i ≤ n` the de Rham cohomology `H^•_dR(ℙⁿ_A/A)` of projective space vanishes.
@@ -153,7 +153,7 @@ theorem isZero_deRhamCohomology (i : ℤ) (hi : ∀ p : ℕ, p ≤ m + 1 → i �
     IsZero (deRhamCohomology A m i)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceDeRham.exists_basis_chernPow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceDeRhamCohomology.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceDeRhamCohomology.lean#L290). The attribute's comment: “free of rank one with basis c₁^dR(𝒪(1))^i for 0 ≤ i ≤ n”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceDeRham.exists_basis_chernPow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceDeRhamCohomology.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceDeRhamCohomology.lean#L290). The attribute's comment: “free of rank one with basis c₁^dR(𝒪(1))^i for 0 ≤ i ≤ n”.
 
 > **[Stacks, Tag 0FMJ], the computation in degree `2i`.** For `0 ≤ i ≤ n` the `A`-module
 > `H^{2i}_dR(ℙⁿ_A/A)` is free of rank one **with basis element `c₁^{dR}(𝒪(1))^i`**, the `i`-th cup
@@ -169,7 +169,7 @@ theorem exists_basis_chernPow (i : ℕ) (hi : i ≤ m + 1) :
     ∃ b : Module.Basis (Fin 1) A ↥(deRhamCohomology A m (2 * (i : ℤ))), b 0 = chernPow A m i
 ```
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceDeRham.exists_basis_and_isZero_projectiveDeRhamCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceDeRhamEveryDimension.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceDeRhamEveryDimension.lean#L165). The attribute's comment: “for 0 ≤ i ≤ n the A-module H^\{2i}\_dR(ℙⁿ\_A/A) is free of rank one with basis c₁^dR(𝒪(1))^i, and every other degree vanishes, for every n ≥ 0”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceDeRham.exists_basis_and_isZero_projectiveDeRhamCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceDeRhamEveryDimension.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ProjectiveSpaceDeRhamEveryDimension.lean#L165). The attribute's comment: “for 0 ≤ i ≤ n the A-module H^\{2i}\_dR(ℙⁿ\_A/A) is free of rank one with basis c₁^dR(𝒪(1))^i, and every other degree vanishes, for every n ≥ 0”.
 
 > **[Stacks, Tag 0FMJ].** For every `n ≥ 0`: for `0 ≤ i ≤ n` the `A`-module
 > `H^{2i}_dR(ℙⁿ_A/A)` is free of rank one with basis element `c₁^{dR}(𝒪(1))^i`, and in every
@@ -193,4 +193,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 50.11, Tag 0FMG](https://stacks.math.columbia.edu/tag/0FMG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

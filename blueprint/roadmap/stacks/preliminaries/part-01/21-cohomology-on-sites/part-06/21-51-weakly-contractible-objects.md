@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.51 Weakly contractible objects
 
-Section 21.51 of the Stacks Project, [Tag 0945](https://stacks.math.columbia.edu/tag/0945). 2 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.51 of the Stacks Project, [Tag 0945](https://stacks.math.columbia.edu/tag/0945). 2 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0946, a lemma
 
 [Tag 0946](https://stacks.math.columbia.edu/tag/0946) in the Stacks Project.
 
-**`Stacks.WeaklyContractible.exact_sheafSections_of_isWeaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/WeaklyContractible/CohomologyOverAWeaklyContractibleObject.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/WeaklyContractible/CohomologyOverAWeaklyContractibleObject.lean#L108). The attribute's comment: “part (1)”.
+**`Stacks.WeaklyContractible.exact_sheafSections_of_isWeaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/WeaklyContractible/CohomologyOverAWeaklyContractibleObject.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/WeaklyContractible/CohomologyOverAWeaklyContractibleObject.lean#L108). The attribute's comment: “part (1)”.
 
 > Evaluation of abelian sheaves at a weakly contractible object is exact, with weak
 > contractibility tested in the value universe `w`.
@@ -29,7 +29,7 @@ theorem exact_sheafSections_of_isWeaklyContractible
       ((sheafSections J AddCommGrpCat.{w}).obj (op U))
 ```
 
-**`Stacks.WeaklyContractible.subsingleton_cohomology_of_isWeaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/WeaklyContractible/CohomologyOverAWeaklyContractibleObject.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/WeaklyContractible/CohomologyOverAWeaklyContractibleObject.lean#L139). The attribute's comment: “part (2)”.
+**`Stacks.WeaklyContractible.subsingleton_cohomology_of_isWeaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/WeaklyContractible/CohomologyOverAWeaklyContractibleObject.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/WeaklyContractible/CohomologyOverAWeaklyContractibleObject.lean#L139). The attribute's comment: “part (2)”.
 
 > The positive-degree cohomology of an abelian sheaf over a weakly contractible object
 > vanishes.
@@ -43,7 +43,7 @@ theorem subsingleton_cohomology_of_isWeaklyContractible
     Subsingleton (Sheaf.H'.{w', v} F p U)
 ```
 
-**`Stacks.WeaklyContractible.nonempty_sections_of_isWeaklyContractible_of_isTorsor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/WeaklyContractible/CohomologyOverAWeaklyContractibleObject.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/WeaklyContractible/CohomologyOverAWeaklyContractibleObject.lean#L153). The attribute's comment: “part (3)”.
+**`Stacks.WeaklyContractible.nonempty_sections_of_isWeaklyContractible_of_isTorsor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/WeaklyContractible/CohomologyOverAWeaklyContractibleObject.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/WeaklyContractible/CohomologyOverAWeaklyContractibleObject.lean#L153). The attribute's comment: “part (3)”.
 
 > Every torsor has a section over a weakly contractible object.
 
@@ -59,7 +59,7 @@ theorem nonempty_sections_of_isWeaklyContractible_of_isTorsor
 
 [Tag 0947](https://stacks.math.columbia.edu/tag/0947) in the Stacks Project.
 
-**`Stacks.SheafOfModules.WeaklyContractible.hasExactLimitsOfShape_discrete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/WeaklyContractibleProducts.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/WeaklyContractibleProducts.lean#L214). The attribute's comment: “(4)”.
+**`Stacks.SheafOfModules.WeaklyContractible.hasExactLimitsOfShape_discrete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/WeaklyContractibleProducts.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/WeaklyContractibleProducts.lean#L214). The attribute's comment: “(4)”.
 
 > **Stacks 0947(4).** On a site every object of which has a covering by weakly contractible
 > objects, products of sheaves of modules are exact -- over an *arbitrary* index type `ι`, in an
@@ -73,7 +73,7 @@ theorem hasExactLimitsOfShape_discrete (ι : Type u₀) [Small.{t} ι] (B : Obje
     HasExactLimitsOfShape (Discrete ι) (SheafOfModules.{t} R)
 ```
 
-**`Stacks.WeaklyContractible.isZero_homology_of_isDerivedLimit_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedLimitOfModules.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedLimitOfModules.lean#L99). The attribute's comment: “(6), vanishing of the higher derived limits”.
+**`Stacks.WeaklyContractible.isZero_homology_of_isDerivedLimit_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedLimitOfModules.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedLimitOfModules.lean#L99). The attribute's comment: “(6), vanishing of the higher derived limits”.
 
 > **Stacks 0947(6).** On a ringed site with a covering collection of weakly contractible
 > objects, the derived limit of a countable inverse system `(Fₙ)` of sheaves of modules has no
@@ -91,7 +91,7 @@ theorem isZero_homology_of_isDerivedLimit_single
     IsZero ((DerivedCategory.homologyFunctor (SheafOfModules.{t} S.O) p).obj L)
 ```
 
-**`Stacks.WeaklyContractible.nonempty_cokernel_iso_homology_one_of_isDerivedLimit_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedLimitOfModules.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedLimitOfModules.lean#L119). The attribute's comment: “(6), R¹lim as a cokernel”.
+**`Stacks.WeaklyContractible.nonempty_cokernel_iso_homology_one_of_isDerivedLimit_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedLimitOfModules.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedLimitOfModules.lean#L119). The attribute's comment: “(6), R¹lim as a cokernel”.
 
 > **Stacks 0947(6).** On a ringed site with a covering collection of weakly contractible
 > objects, the first derived limit of a countable inverse system `(Fₙ)` of sheaves of modules is
@@ -109,7 +109,7 @@ theorem nonempty_cokernel_iso_homology_one_of_isDerivedLimit_single
       (DerivedCategory.homologyFunctor (SheafOfModules.{t} S.O) 1).obj L)
 ```
 
-**`Stacks.WeaklyContractible.isLimit_productFanInDerivedCategory_of_weaklyContractibleObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedProducts.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedProducts.lean#L68). The attribute's comment: “derived\_products\_termwise”.
+**`Stacks.WeaklyContractible.isLimit_productFanInDerivedCategory_of_weaklyContractibleObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedProducts.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedProducts.lean#L68). The attribute's comment: “derived\_products\_termwise”.
 
 > **Stacks 0947(5).** On a ringed site with a covering collection of weakly contractible
 > objects, products in the derived category of sheaves of modules are computed by termwise
@@ -126,7 +126,7 @@ theorem isLimit_productFanInDerivedCategory_of_weaklyContractibleObjectsSituatio
     Nonempty (IsLimit (Stacks.DerivedProducts.productFanInDerivedCategory K))
 ```
 
-**`Stacks.WeaklyContractible.exact_iff_exact_sections_of_weaklyContractibleObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ExactSections.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ExactSections.lean#L98). The attribute's comment: “exact\_iff\_sections”.
+**`Stacks.WeaklyContractible.exact_iff_exact_sections_of_weaklyContractibleObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ExactSections.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ExactSections.lean#L98). The attribute's comment: “exact\_iff\_sections”.
 
 > In a site covered by weakly contractible objects, a complex of sheaves of modules is
 > exact if and only if it is exact on sections over every chosen weakly contractible object.
@@ -141,7 +141,7 @@ theorem exact_iff_exact_sections_of_weaklyContractibleObjectsSituation
       Function.Exact (S.f.val.app (op U)) (S.g.val.app (op U))
 ```
 
-**`Stacks.WeaklyContractible.exists_milnor_shortExact_of_weaklyContractibleObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/MilnorSequence.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/MilnorSequence.lean#L57). The attribute's comment: “(7)”.
+**`Stacks.WeaklyContractible.exists_milnor_shortExact_of_weaklyContractibleObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/MilnorSequence.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/MilnorSequence.lean#L57). The attribute's comment: “(7)”.
 
 > **Milnor sequences.** On a ringed site with a covering collection of weakly contractible
 > objects, an inverse system `K` in the derived category of sheaves of modules and a derived limit
@@ -188,7 +188,7 @@ theorem exists_milnor_shortExact_of_weaklyContractibleObjectsSituation
               (ShortComplex.mk i q w).ShortExact
 ```
 
-**`Stacks.WeaklyContractible.epi_limit_π_zero_of_epi_map_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/SurjectiveTower.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/SurjectiveTower.lean#L85). The attribute's comment: “(3)”.
+**`Stacks.WeaklyContractible.epi_limit_π_zero_of_epi_map_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/SurjectiveTower.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/SurjectiveTower.lean#L85). The attribute's comment: “(3)”.
 
 > **Stacks 0947(3).** On a ringed site with a covering collection of weakly contractible
 > objects, let `G` be a countable inverse system of sheaves of modules whose transition maps
@@ -203,7 +203,7 @@ theorem epi_limit_π_zero_of_epi_map_succ
     Epi (limit.π G ⟨0⟩)
 ```
 
-**`Stacks.WeaklyContractible.exists_isDerivedLimit_truncGETower_of_weaklyContractibleObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/TruncationDerivedLimit.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/TruncationDerivedLimit.lean#L145). The attribute's comment: “(2)”.
+**`Stacks.WeaklyContractible.exists_isDerivedLimit_truncGETower_of_weaklyContractibleObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/TruncationDerivedLimit.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/TruncationDerivedLimit.lean#L145). The attribute's comment: “(2)”.
 
 > **Stacks 0947(2).** On a ringed site with a covering collection of weakly contractible
 > objects, every object `E` of the unbounded derived category of sheaves of modules *is* a derived
@@ -230,4 +230,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.51, Tag 0945](https://stacks.math.columbia.edu/tag/0945)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

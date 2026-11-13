@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 70.3 Morphisms of finite… to 70.14 Sections with support in…
+# 70.3 Morphisms of finite… to 70.16 Finite cover by a scheme
 
 - [70.3 Morphisms of finite presentation](70-3-morphisms-of-finite-presentation.md)
 - [70.4 Limits of algebraic spaces](70-4-limits-of-algebraic-spaces.md)
@@ -16,3 +16,5 @@ navigation: transparent
 - [70.12 Approximating proper morphisms](70-12-approximating-proper-morphisms.md)
 - [70.13 Embedding into affine space](70-13-embedding-into-affine-space.md)
 - [70.14 Sections with support in a closed subset](70-14-sections-with-support-in-a-closed-subset.md)
+- [70.15 Characterizing affine spaces](70-15-characterizing-affine-spaces.md)
+- [70.16 Finite cover by a scheme](70-16-finite-cover-by-a-scheme.md)

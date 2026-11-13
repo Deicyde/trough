@@ -7,7 +7,7 @@ statement: formalized
 
 # Sieving shifted primes and the parity problem
 
-9 results, 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html).
+9 results, 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html).
 
 ## Reciprocal totients of the primes between $x^{1/5}$ and $x^{1/2}$
 
@@ -22,7 +22,7 @@ forced by Mertens' theorem.
 
 - Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.calzado_sum_inv_totient_fifth_to_half_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-sum-inv-totient-fifth-to-half-te).
+Stated but not proved: `MetaMathlibExt.calzado_sum_inv_totient_fifth_to_half_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-sum-inv-totient-fifth-to-half-te).
 
 ## Reciprocal totients of the primes just below $x^{1/2}$
 
@@ -35,7 +35,7 @@ $\varphi$ is Euler's totient function.
 
 - Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.calzado_sum_inv_totient_near_sqrt_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-sum-inv-totient-near-sqrt-is-big).
+Stated but not proved: `MetaMathlibExt.calzado_sum_inv_totient_near_sqrt_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-sum-inv-totient-near-sqrt-is-big).
 
 ## Size of the Euler product of a sieve of dimension $k$
 
@@ -52,7 +52,7 @@ The constants depend on $\omega$ and $P$, not only on $k$.
 
 - Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.calzado_sieve_euler_product_asymp` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-sieve-euler-product-asymp).
+Stated but not proved: `MetaMathlibExt.calzado_sieve_euler_product_asymp` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-sieve-euler-product-asymp).
 
 ## Upper bound for sifted shifted primes divisible by a large prime
 
@@ -67,7 +67,7 @@ Euler's totient function.
 
 - Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.calzado_shifted_primes_sifted_multiple_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-shifted-primes-sifted-multiple-l).
+Stated but not proved: `MetaMathlibExt.calzado_shifted_primes_sifted_multiple_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-shifted-primes-sifted-multiple-l).
 
 ## Order of magnitude of the sifted shifted primes
 
@@ -80,7 +80,7 @@ $C_1 x / (\log x)^2 < S(x) < C_2 x / (\log x)^2$ for all sufficiently large $x$.
 
 - Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.calzado_shifted_primes_sifted_asymp` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-shifted-primes-sifted-asymp).
+Stated but not proved: `MetaMathlibExt.calzado_shifted_primes_sifted_asymp` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-shifted-primes-sifted-asymp).
 
 ## Relative bound for sifted shifted primes divisible by a large prime
 
@@ -95,7 +95,7 @@ $S_\ell(x) \le C S(x) / \varphi(\ell)$, where $\varphi$ is Euler's totient funct
 
 - Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.calzado_shifted_primes_sifted_multiple_le_sifted` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-shifted-primes-sifted-multiple-l-2).
+Stated but not proved: `MetaMathlibExt.calzado_shifted_primes_sifted_multiple_le_sifted` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-shifted-primes-sifted-multiple-l-2).
 
 ## Selberg's upper bound sieve
 
@@ -115,7 +115,7 @@ where $\gamma$ is the Euler–Mascheroni constant.
 
 - Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.calzado_selberg_upper_bound_sieve` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-selberg-upper-bound-sieve).
+Stated but not proved: `MetaMathlibExt.calzado_selberg_upper_bound_sieve` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-selberg-upper-bound-sieve).
 
 ## Rosser–Iwaniec linear sieve
 
@@ -140,7 +140,7 @@ $X V(z) (f(s) - C e^{-s} (\log y)^{-1/3}) - R \le S$.
 
 - Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.calzado_linear_sieve` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-linear-sieve).
+Stated but not proved: `MetaMathlibExt.calzado_linear_sieve` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-linear-sieve).
 
 ## Lower bound for primes $n$ with $n + a$ prime, up to a sieve error
 
@@ -158,7 +158,7 @@ $x^{1/5} < p \le x^{1/2} (\log x)^{-B}$.
 
 - Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.calzado_shifted_primes_prime_count_lower` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-shifted-primes-prime-count-lower).
+Stated but not proved: `MetaMathlibExt.calzado_shifted_primes_prime_count_lower` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/CalzadoParitySieveWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html#calzado-shifted-primes-prime-count-lower).
 
 ## Depends on
 
@@ -167,4 +167,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sieving shifted primes and the parity problem](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/sieve-methods/sieving-shifted-primes-and-the-parity-problem)

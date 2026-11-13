@@ -7,7 +7,7 @@ statement: formalized
 
 # Brauer's splitting field theorem
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/brauer-s-splitting-field-theorem/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/brauer-s-splitting-field-theorem/index.html).
 
 ## Character values of a finite group lie in a cyclotomic field
 
@@ -21,7 +21,7 @@ the trace of $\rho(g)$ lies in the image of $\varphi$.
 
 - R. Brauer, On the representation of a group of order g in the field of g-th roots of unity, Amer. J. Math. 67 (1945). Problem `brauer_character_in_cyclotomic` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.GroupTheory.BrauerCharacterInCyclotomicWanted.RepresentationTheory.brauer_character_in_cyclotomic` is written with `theorem_wanted` in [WantedExt/GroupTheory/BrauerCharacterInCyclotomicWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BrauerCharacterInCyclotomicWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/brauer-s-splitting-field-theorem/index.html#brauer-character-in-cyclotomic).
+Stated but not proved: `MathlibExt.GroupTheory.BrauerCharacterInCyclotomicWanted.RepresentationTheory.brauer_character_in_cyclotomic` is written with `theorem_wanted` in [WantedExt/GroupTheory/BrauerCharacterInCyclotomicWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BrauerCharacterInCyclotomicWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/brauer-s-splitting-field-theorem/index.html#brauer-character-in-cyclotomic).
 
 ## Brauer's splitting field theorem
 
@@ -38,7 +38,7 @@ $x \in \mathbb{C} \otimes_K W$.
 
 - R. Brauer, On the representation of a group of order g in the field of g-th roots of unity, Amer. J. Math. 67 (1945), 461–471. Problem `brauer_splitting_field` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.GroupTheory.BrauerSplittingFieldWanted.RepresentationTheory.brauer_splitting_field` is written with `theorem_wanted` in [WantedExt/GroupTheory/BrauerSplittingFieldWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BrauerSplittingFieldWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/brauer-s-splitting-field-theorem/index.html#brauer-splitting-field).
+Stated but not proved: `MathlibExt.GroupTheory.BrauerSplittingFieldWanted.RepresentationTheory.brauer_splitting_field` is written with `theorem_wanted` in [WantedExt/GroupTheory/BrauerSplittingFieldWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BrauerSplittingFieldWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/brauer-s-splitting-field-theorem/index.html#brauer-splitting-field).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Brauer's splitting field theorem](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/brauer-s-splitting-field-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/characters-of-finite-groups/brauer-s-splitting-field-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/characters-of-finite-groups/brauer-s-splitting-field-theorem)

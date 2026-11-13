@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.12 Approximating proper morphisms
 
-Section 70.12 of the Stacks Project, [Tag 0A0V](https://stacks.math.columbia.edu/tag/0A0V). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 70.12 of the Stacks Project, [Tag 0A0V](https://stacks.math.columbia.edu/tag/0A0V). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A0W, a lemma
 
 [Tag 0A0W](https://stacks.math.columbia.edu/tag/0A0W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isLimit_isProper_isFinitePresentation_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean#L213).
+**`AlgebraicGeometry.Space.exists_isLimit_isProper_isFinitePresentation_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean#L213).
 
 > Let `f : X ⟶ Y` be a proper morphism of algebraic spaces over `S`, with `Y` quasi-compact and
 > quasi-separated. Then `X` is the directed limit, along closed immersions and over `Y`, of algebraic
@@ -42,7 +42,7 @@ theorem exists_isLimit_isProper_isFinitePresentation_of_isProper
 
 [Tag 0A0X](https://stacks.math.columbia.edu/tag/0A0X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isLimit_isProper_isFinitePresentation_arrow_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean#L263).
+**`AlgebraicGeometry.Space.exists_isLimit_isProper_isFinitePresentation_arrow_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean#L263).
 
 > Let `f : X ⟶ Y` be a proper morphism of algebraic spaces over `Spec ℤ`, with `Y`
 > quasi-compact and quasi-separated. Then `f` is the limit of a directed system of proper morphisms
@@ -69,7 +69,7 @@ theorem exists_isLimit_isProper_isFinitePresentation_arrow_of_isProper
 
 [Tag 08K2](https://stacks.math.columbia.edu/tag/08K2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentData.exists_isProper_schemeTheoreticSupport_moduleAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean#L251).
+**`AlgebraicGeometry.Space.MorphismDescentData.exists_isProper_schemeTheoreticSupport_moduleAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/MorphismDescentData.lean#L251).
 
 > In Situation 084W, under the chapter's convention of Section 70.2, let `F₀`
 > be a quasi-coherent `𝒪_{X₀}`-module of finite type and let `F` and `F_i` be its pullbacks to `X`
@@ -101,4 +101,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.12, Tag 0A0V](https://stacks.math.columbia.edu/tag/0A0V)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

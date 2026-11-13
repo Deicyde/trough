@@ -1,6 +1,6 @@
 # 30 Cohomology of Schemes
 
-Chapter 30 of the Stacks Project, *Cohomology of Schemes*, [Tag 01X6](https://stacks.math.columbia.edu/tag/01X6): the 27 sections of its 28 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 139 tags are carried by 352 declarations of the repository (all in StacksFrontier) and 15 registered declarations.
+Chapter 30 of the Stacks Project, *Cohomology of Schemes*, [Tag 01X6](https://stacks.math.columbia.edu/tag/01X6): the 27 sections of its 28 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 139 tags are carried by 335 declarations of the repository (all in StacksFrontier) and 14 registered declarations.
 
 ## [30.2 Čech cohomology of… to 30.16 Higher direct images…](part-01/README.md)
 

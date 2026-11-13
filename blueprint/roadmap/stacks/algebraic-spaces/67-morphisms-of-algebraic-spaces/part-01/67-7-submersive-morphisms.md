@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.7 Submersive morphisms
 
-Section 67.7 of the Stacks Project, [Tag 0411](https://stacks.math.columbia.edu/tag/0411). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.7 of the Stacks Project, [Tag 0411](https://stacks.math.columbia.edu/tag/0411). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CFQ, a lemma
 
 [Tag 0CFQ](https://stacks.math.columbia.edu/tag/0CFQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.presheaf_universallySubmersive_iff_universallySubmersive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean, line 1123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean#L1123).
+**`AlgebraicGeometry.Space.presheaf_universallySubmersive_iff_universallySubmersive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean, line 1123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean#L1123).
 
 > **Stacks 0CFQ.** A representable morphism `f : X ⟶ Y` of algebraic spaces over `S` is
 > universally submersive in the sense of Stacks 03HA — each of its represented base changes is a
@@ -50,7 +50,7 @@ theorem presheaf_universallySubmersive_iff_universallySubmersive (f : X ⟶ Y)
 
 [Tag 0412](https://stacks.math.columbia.edu/tag/0412) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsSubmersive`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean#L142). The attribute's comment: “part (1): submersive”. References: EGA IV (15.7.8), “more general”; SGA 1 IX (2.1), “submersive”.
+**`AlgebraicGeometry.Space.IsSubmersive`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean#L142). The attribute's comment: “part (1): submersive”. References: EGA IV (15.7.8), “more general”; SGA 1 IX (2.1), “submersive”.
 
 > **Stacks 0412, part (1).** A morphism of algebraic spaces over `S` is *submersive* when the
 > map it induces on points is a quotient map for the topology detected by scheme-valued points.
@@ -61,7 +61,7 @@ theorem presheaf_universallySubmersive_iff_universallySubmersive (f : X ⟶ Y)
 abbrev IsSubmersive (f : F ⟶ G) : Prop
 ```
 
-**`AlgebraicGeometry.Space.UniversallySubmersive`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean#L151). The attribute's comment: “part (2): universally submersive”. References: SGA 1 IX (2.1), “univ. submersive”.
+**`AlgebraicGeometry.Space.UniversallySubmersive`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean#L151). The attribute's comment: “part (2): universally submersive”. References: SGA 1 IX (2.1), “univ. submersive”.
 
 > **Stacks 0412, part (2).** A morphism of algebraic spaces over `S` is *universally
 > submersive* when its base change along every morphism to its target from an algebraic space
@@ -75,7 +75,7 @@ abbrev UniversallySubmersive (f : F ⟶ G) : Prop
 
 [Tag 0CFR](https://stacks.math.columbia.edu/tag/0CFR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallySubmersive_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean#L263).
+**`AlgebraicGeometry.Space.universallySubmersive_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean#L263).
 
 > **Stacks 0CFR.** A base change of a universally submersive morphism of algebraic spaces
 > over `S` is universally submersive.
@@ -95,7 +95,7 @@ theorem universallySubmersive_pullback {X Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ T
 
 [Tag 0CFS](https://stacks.math.columbia.edu/tag/0CFS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsSubmersive.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean#L250). The attribute's comment: “submersive”.
+**`AlgebraicGeometry.Space.IsSubmersive.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean#L250). The attribute's comment: “submersive”.
 
 > **Stacks 0CFS, submersive morphisms.** A composition of submersive morphisms of algebraic
 > spaces over `S` is submersive: the map on points of a composition is the composition of the
@@ -107,7 +107,7 @@ theorem IsSubmersive.comp {f : F ⟶ G} {g : G ⟶ H} (hg : IsSubmersive B S hS 
     IsSubmersive B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.universallySubmersive_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean#L277). The attribute's comment: “universally submersive”.
+**`AlgebraicGeometry.Space.universallySubmersive_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Submersive.lean#L277). The attribute's comment: “universally submersive”.
 
 > **Stacks 0CFS, universally submersive morphisms.** A composition of universally submersive
 > morphisms of algebraic spaces over `S` is universally submersive.
@@ -131,4 +131,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.7, Tag 0411](https://stacks.math.columbia.edu/tag/0411)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

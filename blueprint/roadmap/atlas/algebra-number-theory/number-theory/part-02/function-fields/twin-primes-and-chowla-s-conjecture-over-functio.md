@@ -7,7 +7,7 @@ statement: formalized
 
 # Twin primes and Chowla's conjecture over function fields
 
-10 results, 8 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html).
+10 results, 8 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html).
 
 ## Size of the quotient of $F(T)$ by a nonzero polynomial
 
@@ -19,7 +19,7 @@ $|F|^{\deg f}$, where cardinalities are natural numbers and an infinite set has 
 
 - W. Sawin and M. Shusterman, *On the Chowla and twin primes conjectures over $\mathbb{F}_q[T]$*, Annals of Math. 196 (2) 2022, Equation (1.1).
 
-Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.cardQuot_span_eq_pow_natDegree`, a theorem declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#card-quot-span-eq-pow-nat-degree).
+Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.cardQuot_span_eq_pow_natDegree`, a theorem declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#card-quot-span-eq-pow-nat-degree).
 
 ## The norm on $F(T)$
 
@@ -32,7 +32,7 @@ only for $f = 0$, $|-f| = |f|$, $|f + g| \le |f| + |g|$ and $|fg| \le |f|\,|g|$.
 
 - W. Sawin and M. Shusterman, *On the Chowla and twin primes conjectures over $\mathbb{F}_q[T]$*, Annals of Math. 196 (2) 2022, Equation (1.1).
 
-Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.ringNorm`, a definition declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#ring-norm).
+Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.ringNorm`, a definition declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#ring-norm).
 
 ## The norm of a polynomial is the size of its quotient ring
 
@@ -44,7 +44,7 @@ the quotient ring $F[T]/(f)$, where an infinite quotient (the case $f = 0$) coun
 
 - W. Sawin and M. Shusterman, *On the Chowla and twin primes conjectures over $\mathbb{F}_q[T]$*, Annals of Math. 196 (2) 2022, Equation (1.1).
 
-Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.norm_eq_cardQuot`, a theorem declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#norm-eq-card-quot).
+Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.norm_eq_cardQuot`, a theorem declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#norm-eq-card-quot).
 
 ## Norm of a nonzero polynomial
 
@@ -56,7 +56,7 @@ of elements of $F$.
 
 - W. Sawin and M. Shusterman, *On the Chowla and twin primes conjectures over $\mathbb{F}_q[T]$*, Annals of Math. 196 (2) 2022, Equation (1.1).
 
-Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.norm_eq_pow_natDegree`, a theorem declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#norm-eq-pow-nat-degree).
+Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.norm_eq_pow_natDegree`, a theorem declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#norm-eq-pow-nat-degree).
 
 ## Primes of $F(T)$
 
@@ -67,7 +67,7 @@ its monic irreducible polynomials.
 
 - W. Sawin and M. Shusterman, *On the Chowla and twin primes conjectures over $\mathbb{F}_q[T]$*, Annals of Math. 196 (2) 2022, the sentence after Equation (1.4).
 
-Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.primes`, a definition declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#primes).
+Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.primes`, a definition declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#primes).
 
 ## Indicator of a statement
 
@@ -78,7 +78,7 @@ number $1$ if $P$ holds and $0$ otherwise.
 
 - W. Sawin and M. Shusterman, *On the Chowla and twin primes conjectures over $\mathbb{F}_q[T]$*, Annals of Math. 196 (2) 2022, Equation (1.4).
 
-Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.indicator`, a definition declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#indicator).
+Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.indicator`, a definition declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#indicator).
 
 ## Singular series for twin primes in $F(T)$
 
@@ -99,7 +99,7 @@ value is taken to be $1$.
 
 - W. Sawin and M. Shusterman, *On the Chowla and twin primes conjectures over $\mathbb{F}_q[T]$*, Annals of Math. 196 (2) 2022, Equation (1.4).
 
-Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.𝔖_q`, a definition declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#q).
+Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.𝔖_q`, a definition declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#q).
 
 ## Twin prime asymptotic over $\mathbb{F}_q(T)$ for large $q$
 
@@ -119,7 +119,7 @@ the implied constant may depend on $h$ (but $\varepsilon$ does not).
 
 - W. Sawin and M. Shusterman, `On the Chowla and twin primes conjectures over 𝔽_q[T]`, Annals of Math, 196 (2) 2022. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_chowla_and_twin_prime_over_fq_t` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.theorem_1_1` is written with `theorem_wanted` in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#theorem-1-1).
+Stated but not proved: `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.theorem_1_1` is written with `theorem_wanted` in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#theorem-1-1).
 
 ## Monic polynomials of bounded norm
 
@@ -127,7 +127,7 @@ Let $F$ be a finite field and let $X$ be a real number.
 This is the set of monic polynomials $f \in F[T]$ whose norm $|f| = |F[T]/(f)|$, the number of
 elements of the quotient ring $F[T]/(f)$, satisfies $|f| \le X$.
 
-Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.monicBounded`, a definition declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#monic-bounded).
+Formalized by `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.monicBounded`, a definition declared in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#monic-bounded).
 
 ## Chowla's conjecture over $\mathbb{F}_q(T)$ for large $q$
 
@@ -147,7 +147,7 @@ squarefree with $r$ irreducible factors, and $\mu(g) = 0$ otherwise.
 
 - W. Sawin and M. Shusterman, `On the Chowla and twin primes conjectures over 𝔽_q[T]`, Annals of Math, 196 (2) 2022. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_chowla_and_twin_prime_over_fq_t` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.theorem_1_3` is written with `theorem_wanted` in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#theorem-1-3).
+Stated but not proved: `MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.theorem_1_3` is written with `theorem_wanted` in [WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ChowlaAndTwinPrimeOverFqTWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html#theorem-1-3).
 
 ## Depends on
 
@@ -156,4 +156,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Twin primes and Chowla's conjecture over function fields](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/twin-primes-and-chowla-s-conjecture-over-functio)

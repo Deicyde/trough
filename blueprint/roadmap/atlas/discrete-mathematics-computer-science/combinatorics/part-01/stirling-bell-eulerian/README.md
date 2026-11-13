@@ -1,6 +1,6 @@
 # Stirling, Bell and Eulerian numbers
 
-393 results of ATLAS's vault, 230 proved and 163 stated but not proved, in this branch's topics.
+393 results of ATLAS's vault, 240 proved and 153 stated but not proved, in this branch's topics.
 
 The number triangles and sequences that count set partitions, permutations by cycles, descents and excedances, and their relatives: Stirling and Lah numbers and their generalizations, Bell and Fubini numbers and Bell polynomials, Eulerian numbers and polynomials, and Bernoulli, Euler and Genocchi numbers studied combinatorially.
 

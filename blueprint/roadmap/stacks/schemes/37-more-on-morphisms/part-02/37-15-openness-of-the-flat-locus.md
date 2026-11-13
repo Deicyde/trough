@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.15 Openness of the flat locus
 
-Section 37.15 of the Stacks Project, [Tag 0398](https://stacks.math.columbia.edu/tag/0398). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.15 of the Stacks Project, [Tag 0398](https://stacks.math.columbia.edu/tag/0398). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0399, a theorem
 
 [Tag 0399](https://stacks.math.columbia.edu/tag/0399) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpen_setOf_flatOverAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FlatLocus.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FlatLocus.lean#L331). References: EGA IV (11.3.1), “U open”; EGA IV (15.4.1), “partial”.
+**`AlgebraicGeometry.isOpen_setOf_flatOverAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FlatLocus.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FlatLocus.lean#L331). References: EGA IV (11.3.1), “U open”; EGA IV (15.4.1), “partial”.
 
 > **Stacks Project, Tag 0399.** The locus where a finitely presented quasi-coherent module is
 > flat over the target of a locally finitely presented morphism is open.
@@ -30,7 +30,7 @@ public theorem isOpen_setOf_flatOverAt
 
 [Tag 047C](https://stacks.math.columbia.edu/tag/047C) in the Stacks Project.
 
-**`AlgebraicGeometry.modulePullback_isFlatOverAt_of_isFlatOverAt`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean#L131). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.modulePullback_isFlatOverAt_of_isFlatOverAt`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean#L131). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 047C (1).** For a cartesian square of schemes a quasi-coherent module
 > which is flat over the base at the image of a point pulls back to a module which is flat over the
@@ -46,7 +46,7 @@ public lemma modulePullback_isFlatOverAt_of_isFlatOverAt
     IsFlatOverAt f'.toLRSHom.toShHom ((modulePullback g'.toLRSHom.toShHom).obj F) x'
 ```
 
-**`AlgebraicGeometry.isFlatOverAt_of_modulePullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean#L142). The attribute's comment: “part (2)”. References: SGA 3 V (7.4), “(i) descent”.
+**`AlgebraicGeometry.isFlatOverAt_of_modulePullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean#L142). The attribute's comment: “part (2)”. References: SGA 3 V (7.4), “(i) descent”.
 
 > **Stacks Project, Tag 047C (2).** Relative flatness of the pullback of a quasi-coherent
 > module along a cartesian square descends at a point at which the base morphism is flat.
@@ -62,7 +62,7 @@ public lemma isFlatOverAt_of_modulePullback
     IsFlatOverAt f.toLRSHom.toShHom F (g' x')
 ```
 
-**`AlgebraicGeometry.setOf_isFlatOverAt_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean#L180). The attribute's comment: “flat locus”.
+**`AlgebraicGeometry.setOf_isFlatOverAt_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean#L180). The attribute's comment: “flat locus”.
 
 > **Stacks Project, Tag 047C (flat locus).** Under flat base change the relative flat locus
 > of a quasi-coherent module is the preimage of the relative flat locus of the module itself.
@@ -78,7 +78,7 @@ public theorem setOf_isFlatOverAt_modulePullback
       g' ⁻¹' {x : X | IsFlatOverAt f.toLRSHom.toShHom F x}
 ```
 
-**`AlgebraicGeometry.isOpen_setOf_isFlatOverAt_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean#L202). The attribute's comment: “open locus after base change”. References: EGA IV (11.3.1), “more general”.
+**`AlgebraicGeometry.isOpen_setOf_isFlatOverAt_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/FlatLocusBaseChange.lean#L202). The attribute's comment: “open locus after base change”. References: EGA IV (11.3.1), “more general”.
 
 > **Stacks Project, Tag 047C (open locus).** The relative flat locus of the pullback of a
 > finitely presented quasi-coherent module along any base change of a morphism locally of finite
@@ -103,4 +103,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.15, Tag 0398](https://stacks.math.columbia.edu/tag/0398)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

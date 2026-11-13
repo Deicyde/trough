@@ -7,7 +7,7 @@ statement: formalized
 
 # Lüroth series
 
-50 results, 27 proved and 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html).
+50 results, 27 proved and 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html).
 
 ## First Lüroth digit
 
@@ -20,7 +20,7 @@ $x \le 0$ and for $x > 1$ it equals $1$.
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Section 2.
 
-Formalized by `MetaMathlibExt.lurothDigit`, a definition declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-digit).
+Formalized by `MetaMathlibExt.lurothDigit`, a definition declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-digit).
 
 ## Lüroth map
 
@@ -31,7 +31,7 @@ map is $L(x) = d(d - 1)x - (d - 1)$.
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Section 2.
 
-Formalized by `MetaMathlibExt.lurothMap`, a definition declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-map).
+Formalized by `MetaMathlibExt.lurothMap`, a definition declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-map).
 
 ## Lüroth digits
 
@@ -45,7 +45,7 @@ The digit sequence is indexed from $0$: its term of index $k$ is $d_1(L^k(x)) = 
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Section 2.
 
-Formalized by `MetaMathlibExt.lurothDigitSeq`, a definition declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-digit-seq).
+Formalized by `MetaMathlibExt.lurothDigitSeq`, a definition declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-digit-seq).
 
 ## First Lüroth digit of 1
 
@@ -55,7 +55,7 @@ The first Lüroth digit of $1$ is $d_1(1) = 2$.
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Section 2 (definition of `d₁`).
 
-Formalized by `MetaMathlibExt.lurothDigit_one`, a theorem declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-digit-one).
+Formalized by `MetaMathlibExt.lurothDigit_one`, a theorem declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-digit-one).
 
 ## First Lüroth digit of 1/2
 
@@ -65,7 +65,7 @@ The first Lüroth digit of $1/2$ is $d_1(1/2) = 3$.
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Section 2 (definition of `d₁`).
 
-Formalized by `MetaMathlibExt.lurothDigit_half`, a theorem declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-digit-half).
+Formalized by `MetaMathlibExt.lurothDigit_half`, a theorem declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-digit-half).
 
 ## The Lüroth map fixes 1
 
@@ -75,7 +75,7 @@ The Lüroth map $L$ satisfies $L(1) = 1$.
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Section 2 (definition of `L`).
 
-Formalized by `MetaMathlibExt.lurothMap_one`, a theorem declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-map-one).
+Formalized by `MetaMathlibExt.lurothMap_one`, a theorem declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-map-one).
 
 ## The Lüroth map at 1/2
 
@@ -85,7 +85,7 @@ The Lüroth map $L$ sends $1/2$ to $1$: $L(1/2) = 1$.
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Section 2 (definition of `L`).
 
-Formalized by `MetaMathlibExt.lurothMap_half`, a theorem declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-map-half).
+Formalized by `MetaMathlibExt.lurothMap_half`, a theorem declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-map-half).
 
 ## The Lüroth map fixes 0
 
@@ -95,7 +95,7 @@ The Lüroth map $L$ satisfies $L(0) = 0$.
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Section 2 (definition of `L`).
 
-Formalized by `MetaMathlibExt.lurothMap_zero`, a theorem declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-map-zero).
+Formalized by `MetaMathlibExt.lurothMap_zero`, a theorem declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-map-zero).
 
 ## The Lüroth map shifts the digits
 
@@ -107,7 +107,7 @@ $x$: $d_n(L(x)) = d_{n+1}(x)$.
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Section 2 (definition of `d_n`).
 
-Formalized by `MetaMathlibExt.lurothDigitSeq_succ`, a theorem declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-digit-seq-succ).
+Formalized by `MetaMathlibExt.lurothDigitSeq_succ`, a theorem declared in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-digit-seq-succ).
 
 ## Measure of Lüroth cylinders
 
@@ -121,7 +121,7 @@ sides vanish when some $c_j < 2$.
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Proposition 1, (10).
 
-Stated but not proved: `MetaMathlibExt.volume_lurothCylinder` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-luroth-cylinder).
+Stated but not proved: `MetaMathlibExt.volume_lurothCylinder` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-luroth-cylinder).
 
 ## Borel–Bernstein theorem for Lüroth digits
 
@@ -137,7 +137,7 @@ The paper quotes this result from Jager and de Vroedt (its reference [3]).
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.volume_lurothDigit_ge_zero_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-luroth-digit-ge-zero-one).
+Stated but not proved: `MetaMathlibExt.volume_lurothDigit_ge_zero_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-luroth-digit-ge-zero-one).
 
 ## Zero-one law for weighted products of consecutive Lüroth digits
 
@@ -157,7 +157,7 @@ The paper quotes this result from Brown-Sarre, Robert and Hussain (its reference
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 2, with `T` and `ℓ(t)` from (2).
 
-Stated but not proved: `MetaMathlibExt.volume_lurothWeightedProduct_ge_zero_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-luroth-weighted-product-ge-zero-o).
+Stated but not proved: `MetaMathlibExt.volume_lurothWeightedProduct_ge_zero_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-luroth-weighted-product-ge-zero-o).
 
 ## Zero-one law for functions of consecutive Lüroth digits
 
@@ -179,7 +179,7 @@ Unlike the paper, $F$ and $\Psi$ need not be positive.
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 3, with `H` from (4).
 
-Stated but not proved: `MetaMathlibExt.volume_lurothConsecutiveDigits_zero_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-luroth-consecutive-digits-zero-on).
+Stated but not proved: `MetaMathlibExt.volume_lurothConsecutiveDigits_zero_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-luroth-consecutive-digits-zero-on).
 
 ## Integral zero-one law for functions of consecutive Lüroth digits
 
@@ -204,7 +204,7 @@ weakens the divergence condition). Unlike the paper, $\Psi$ need not be positive
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 4, with (6) and `G` from (7).
 
-Stated but not proved: `MetaMathlibExt.volume_lurothConsecutiveDigits_zero_one_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-luroth-consecutive-digits-zero-on-2).
+Stated but not proved: `MetaMathlibExt.volume_lurothConsecutiveDigits_zero_one_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-luroth-consecutive-digits-zero-on-2).
 
 ## Borel–Cantelli dichotomy for Lüroth cylinder events
 
@@ -220,7 +220,7 @@ if $\sum_{n \ge 0} \lambda(A_n) = \infty$ then $\lambda(E) = 1$.
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.volume_limsup_lurothPreimage_zero_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-limsup-luroth-preimage-zero-one).
+Stated but not proved: `MetaMathlibExt.volume_limsup_lurothPreimage_zero_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-limsup-luroth-preimage-zero-one).
 
 ## Upper bound for the measure of a Lüroth digit superlevel set
 
@@ -238,7 +238,7 @@ the monotonicity of $F$ is used.
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.volume_lurothDigits_ge_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-luroth-digits-ge-le).
+Stated but not proved: `MetaMathlibExt.volume_lurothDigits_ge_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-luroth-digits-ge-le).
 
 ## Lower bound for the measure of large Lüroth digit values
 
@@ -261,7 +261,7 @@ condition (6) are assumed here.
 
 - Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.le_volume_lurothDigits_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#le-volume-luroth-digits-ge).
+Stated but not proved: `MetaMathlibExt.le_volume_lurothDigits_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothConsecutiveDigitsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#le-volume-luroth-digits-ge).
 
 ## Well approximable numbers
 
@@ -277,7 +277,7 @@ which use points of exact additive order $q$. The value $\psi(0)$ is irrelevant.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, equation (1).
 
-Formalized by `MetaMathlibExt.wellApproximableSet`, a definition declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#well-approximable-set).
+Formalized by `MetaMathlibExt.wellApproximableSet`, a definition declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#well-approximable-set).
 
 ## Well approximable numbers lie in $(0, 1)$
 
@@ -289,7 +289,7 @@ numbers lies in the interval $[0, 1)$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, equation (1).
 
-Formalized by `MetaMathlibExt.wellApproximableSet_subset_Ico`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#well-approximable-set-subset-ico).
+Formalized by `MetaMathlibExt.wellApproximableSet_subset_Ico`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#well-approximable-set-subset-ico).
 
 ## Lower order at infinity
 
@@ -307,7 +307,7 @@ $\tau_\psi$ may be infinite.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, equation (11).
 
-Formalized by `MetaMathlibExt.lowerOrderAtInfinity`, a definition declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#lower-order-at-infinity).
+Formalized by `MetaMathlibExt.lowerOrderAtInfinity`, a definition declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#lower-order-at-infinity).
 
 ## Upper order at infinity
 
@@ -322,7 +322,7 @@ of $[0, \infty]$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, equation (11).
 
-Formalized by `MetaMathlibExt.upperOrderAtInfinity`, a definition declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#upper-order-at-infinity).
+Formalized by `MetaMathlibExt.upperOrderAtInfinity`, a definition declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#upper-order-at-infinity).
 
 ## The order ratio of $q^{-\tau}$
 
@@ -333,7 +333,7 @@ numbers $q$, $\max(0, -\log((q^{\tau})^{-1})/\log q) = \max(0, \tau)$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, equation (11).
 
-Formalized by `MetaMathlibExt.orderRatio_rpow_inv`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#order-ratio-rpow-inv).
+Formalized by `MetaMathlibExt.orderRatio_rpow_inv`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#order-ratio-rpow-inv).
 
 ## Lower order at infinity of a power function
 
@@ -346,7 +346,7 @@ $[0, \infty]$; in particular $\tau_\psi = \tau$ when $\tau \ge 0$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, remark after Theorem 7.
 
-Formalized by `MetaMathlibExt.lowerOrderAtInfinity_rpow_inv`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#lower-order-at-infinity-rpow-inv).
+Formalized by `MetaMathlibExt.lowerOrderAtInfinity_rpow_inv`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#lower-order-at-infinity-rpow-inv).
 
 ## Upper order at infinity of $q^{-\tau}$
 
@@ -357,7 +357,7 @@ of $q \mapsto (q^{\tau})^{-1}$ is $\max(0, \tau)$; in particular it is $\tau$ wh
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, remark after Theorem 7.
 
-Formalized by `MetaMathlibExt.upperOrderAtInfinity_rpow_inv`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#upper-order-at-infinity-rpow-inv).
+Formalized by `MetaMathlibExt.upperOrderAtInfinity_rpow_inv`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#upper-order-at-infinity-rpow-inv).
 
 ## Khintchine's theorem
 
@@ -373,7 +373,7 @@ condition at $0$ costs nothing: extend by $\psi(0) = \psi(1)$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Theorem 1 (Khintchine).
 
-Stated but not proved: `MetaMathlibExt.volume_wellApproximableSet_khintchine` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-well-approximable-set-khintchine).
+Stated but not proved: `MetaMathlibExt.volume_wellApproximableSet_khintchine` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-well-approximable-set-khintchine).
 
 ## Jarník–Besicovitch theorem
 
@@ -386,7 +386,7 @@ $\psi(q) = q^{-\tau}$. Then the Hausdorff dimension of $W(\tau)$ is $2/(1 + \tau
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Theorem 2 (Jarník; Besicovitch).
 
-Stated but not proved: `MetaMathlibExt.dimH_wellApproximableSet_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#dim-h-well-approximable-set-rpow).
+Stated but not proved: `MetaMathlibExt.dimH_wellApproximableSet_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#dim-h-well-approximable-set-rpow).
 
 ## Dodson's theorem
 
@@ -405,7 +405,7 @@ $\psi = 1/4$ has $\tau_\psi = 0$ and $\dim_H W(\psi) = 1$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Theorem 3 (Dodson).
 
-Stated but not proved: `MetaMathlibExt.dimH_wellApproximableSet_dodson` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#dim-h-well-approximable-set-dodson).
+Stated but not proved: `MetaMathlibExt.dimH_wellApproximableSet_dodson` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#dim-h-well-approximable-set-dodson).
 
 ## Lüroth denominators
 
@@ -420,7 +420,7 @@ With digits numbered from $1$, as in the paper, this is the paper's $Q_{n+1}$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, equation (8).
 
-Formalized by `MetaMathlibExt.lurothDenominator`, a definition declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-denominator).
+Formalized by `MetaMathlibExt.lurothDenominator`, a definition declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-denominator).
 
 ## Lüroth convergents
 
@@ -437,7 +437,7 @@ the paper's $x_{n+1} = P_{n+1}/Q_{n+1}$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Section 2.
 
-Formalized by `MetaMathlibExt.lurothConvergent`, a definition declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-convergent).
+Formalized by `MetaMathlibExt.lurothConvergent`, a definition declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-convergent).
 
 ## The Lüroth digits of 1
 
@@ -448,7 +448,7 @@ $1 = [2, 2, 2, \dots]$ in Lüroth notation.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Section 2.
 
-Formalized by `MetaMathlibExt.lurothDigitSeq_one`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-digit-seq-one).
+Formalized by `MetaMathlibExt.lurothDigitSeq_one`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-digit-seq-one).
 
 ## The Lüroth orbit of $27/71$ has period two
 
@@ -459,7 +459,7 @@ and sends $20/71$ to $27/71$; in particular $T(T(27/71)) = 27/71$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Section 2 (example).
 
-Formalized by `MetaMathlibExt.lurothMap_lurothMap_27_71`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-map-luroth-map-27-71).
+Formalized by `MetaMathlibExt.lurothMap_lurothMap_27_71`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-map-luroth-map-27-71).
 
 ## Recurrence for Lüroth denominators
 
@@ -472,7 +472,7 @@ $$Q_{n+1} = Q_n (d_n - 1) d_{n+1}.$$
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, equation (8).
 
-Formalized by `MetaMathlibExt.lurothDenominator_succ`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-denominator-succ).
+Formalized by `MetaMathlibExt.lurothDenominator_succ`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-denominator-succ).
 
 ## Lüroth denominators of the constant digit sequence 2
 
@@ -484,7 +484,7 @@ this is the paper's $Q_{n+1} = 2^{n+1}$).
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, equation (8).
 
-Formalized by `MetaMathlibExt.lurothDenominator_two`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-denominator-two).
+Formalized by `MetaMathlibExt.lurothDenominator_two`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-denominator-two).
 
 ## Recurrence for Lüroth convergents
 
@@ -496,7 +496,7 @@ $n \ge 0$, $x_{n+1} = x_n + 1/Q_{n+1}$, where $1/Q_{n+1}$ is read as $0$ if $Q_{
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Section 2.
 
-Formalized by `MetaMathlibExt.lurothConvergent_succ`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-convergent-succ).
+Formalized by `MetaMathlibExt.lurothConvergent_succ`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-convergent-succ).
 
 ## Lüroth well approximable numbers
 
@@ -509,7 +509,7 @@ Lüroth convergent of the Lüroth digit sequence of $x$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Section 2.
 
-Formalized by `MetaMathlibExt.lurothWellApproximableSet`, a definition declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-well-approximable-set).
+Formalized by `MetaMathlibExt.lurothWellApproximableSet`, a definition declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-well-approximable-set).
 
 ## Lüroth well approximable numbers lie in $(0, 1)$
 
@@ -521,7 +521,7 @@ contained in $(0, 1]$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Section 2.
 
-Formalized by `MetaMathlibExt.lurothWellApproximableSet_subset_Ioc`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-well-approximable-set-subset-ioc).
+Formalized by `MetaMathlibExt.lurothWellApproximableSet_subset_Ioc`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-well-approximable-set-subset-ioc).
 
 ## Lüroth convergent triples
 
@@ -536,7 +536,7 @@ $Q_n(y)$ and the third the digit $d_n(y)$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, equation (16).
 
-Formalized by `MetaMathlibExt.lurothTripleSet`, a definition declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-triple-set).
+Formalized by `MetaMathlibExt.lurothTripleSet`, a definition declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-triple-set).
 
 ## A Lüroth triple from the expansion of $1$
 
@@ -550,7 +550,7 @@ $1 = [2, 2, 2, \ldots]$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, equation (16).
 
-Formalized by `MetaMathlibExt.half_two_two_mem_lurothTripleSet`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#half-two-two-mem-luroth-triple-set).
+Formalized by `MetaMathlibExt.half_two_two_mem_lurothTripleSet`, a theorem declared in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#half-two-two-mem-luroth-triple-set).
 
 ## Lüroth convergents approximate from below
 
@@ -566,7 +566,7 @@ In the paper's numbering from $1$ these are $d_{n+1}$, $Q_{n+1}$ and $x_{n+1} = 
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.lurothConvergent_lt_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-convergent-lt-le).
+Stated but not proved: `MetaMathlibExt.lurothConvergent_lt_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-convergent-lt-le).
 
 ## Mass transference principle for intervals
 
@@ -587,7 +587,7 @@ $0 < s < 1$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.hausdorffMeasure_limsup_closedBall_of_volume` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#hausdorff-measure-limsup-closed-ball-of).
+Stated but not proved: `MetaMathlibExt.hausdorffMeasure_limsup_closedBall_of_volume` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#hausdorff-measure-limsup-closed-ball-of).
 
 ## Recognising Lüroth convergents
 
@@ -602,7 +602,7 @@ $P/Q = P_n(x)/Q_n(x)$ for some $n$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.exists_lurothConvergent_eq_of_mem_lurothTripleSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#exists-luroth-convergent-eq-of-mem-lurot).
+Stated but not proved: `MetaMathlibExt.exists_lurothConvergent_eq_of_mem_lurothTripleSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#exists-luroth-convergent-eq-of-mem-lurot).
 
 ## Lüroth $q^{-\tau}$-well approximable numbers as a limsup over convergent triples
 
@@ -616,7 +616,7 @@ numbers $x$ that lie in $B_t$ for infinitely many $t \in S$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.lurothWellApproximableSet_rpow_eq_limsup` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-well-approximable-set-rpow-eq-lim).
+Stated but not proved: `MetaMathlibExt.lurothWellApproximableSet_rpow_eq_limsup` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-well-approximable-set-rpow-eq-lim).
 
 ## Lüroth well approximable numbers as a limsup over convergent triples
 
@@ -630,7 +630,7 @@ convergent triples with $c < x < c + \psi(Q)/Q$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.lurothWellApproximableSet_eq_limsup` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-well-approximable-set-eq-limsup).
+Stated but not proved: `MetaMathlibExt.lurothWellApproximableSet_eq_limsup` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#luroth-well-approximable-set-eq-limsup).
 
 ## Tan–Zhou theorem (Lüroth analogue of Khintchine's theorem)
 
@@ -644,7 +644,7 @@ measure $1$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Theorem 4 (Tan and Zhou).
 
-Stated but not proved: `MetaMathlibExt.volume_lurothWellApproximableSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-luroth-well-approximable-set).
+Stated but not proved: `MetaMathlibExt.volume_lurothWellApproximableSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#volume-luroth-well-approximable-set).
 
 ## Cao–Wu–Zhang theorem
 
@@ -658,7 +658,7 @@ $\psi(q) = q^{-\tau}$. Then the Hausdorff dimension of $L(\tau)$ is $1/(1 + \tau
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Theorem 5 (Cao, Wu, and Zhang).
 
-Stated but not proved: `MetaMathlibExt.dimH_lurothWellApproximableSet_rpow_of_one_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#dim-h-luroth-well-approximable-set-rpow).
+Stated but not proved: `MetaMathlibExt.dimH_lurothWellApproximableSet_rpow_of_one_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#dim-h-luroth-well-approximable-set-rpow).
 
 ## Hausdorff dimension and measure of Lüroth well approximable sets for powers
 
@@ -677,7 +677,7 @@ $(0, 1]$, so its $1$-dimensional Hausdorff measure is at most $1$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.dimH_hausdorffMeasure_lurothWellApproximableSet_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#dim-h-hausdorff-measure-luroth-well-appr).
+Stated but not proved: `MetaMathlibExt.dimH_hausdorffMeasure_lurothWellApproximableSet_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#dim-h-hausdorff-measure-luroth-well-appr).
 
 ## Dimension bounds for Lüroth well approximable sets
 
@@ -694,7 +694,7 @@ $1/(1 + \bar\tau_\psi) \le \dim_H L(\psi) \le 1/(1 + \tau_\psi)$, where $1/\inft
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.dimH_lurothWellApproximableSet_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#dim-h-luroth-well-approximable-set-bound).
+Stated but not proved: `MetaMathlibExt.dimH_lurothWellApproximableSet_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#dim-h-luroth-well-approximable-set-bound).
 
 ## Dimension bounds for Lüroth well approximable sets via denominators
 
@@ -718,7 +718,7 @@ limit inferior.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.dimH_lurothWellApproximableSet_bounds_denominators` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#dim-h-luroth-well-approximable-set-bound-2).
+Stated but not proved: `MetaMathlibExt.dimH_lurothWellApproximableSet_bounds_denominators` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#dim-h-luroth-well-approximable-set-bound-2).
 
 ## Without monotonicity the Lüroth dimension can vanish
 
@@ -736,7 +736,7 @@ Since $0 < 1/(1 + \tau)$, the Tan–Zhou conjecture fails without monotonicity.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.exists_not_antitone_dimH_lurothWellApproximableSet_eq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#exists-not-antitone-dim-h-luroth-well-ap).
+Stated but not proved: `MetaMathlibExt.exists_not_antitone_dimH_lurothWellApproximableSet_eq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#exists-not-antitone-dim-h-luroth-well-ap).
 
 ## Dimension of Lüroth well approximable sets under a divergence condition
 
@@ -760,7 +760,7 @@ $\infty$ is read as the partial sums tending to $+\infty$.
 
 - Ying Wai Lee, *Lüroth Expansions in Diophantine Approximation: Metric Properties and Conjectures*, INTEGERS 26 (2026), Article A45, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.dimH_lurothWellApproximableSet_of_tendsto_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#dim-h-luroth-well-approximable-set-of-te).
+Stated but not proved: `MetaMathlibExt.dimH_lurothWellApproximableSet_of_tendsto_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LurothDiophantineApproximationWanted.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html#dim-h-luroth-well-approximable-set-of-te).
 
 ## Depends on
 
@@ -769,4 +769,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lüroth series](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/l-roth-series)

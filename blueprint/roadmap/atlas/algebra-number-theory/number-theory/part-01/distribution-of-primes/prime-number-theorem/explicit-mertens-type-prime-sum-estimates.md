@@ -7,7 +7,7 @@ statement: formalized
 
 # Explicit Mertens-type prime sum estimates
 
-8 results, 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html).
+8 results, 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html).
 
 ## Explicit lower bound for the Dickman function
 
@@ -18,7 +18,7 @@ function. Then $\rho(x) \ge x^{-1.42 x}$ for every real $x \ge 1$.
 
 - Matteo Bordignon and Forrest J. Francis, *Explicit Improvements to the Burgess Bound via Pólya--Vinogradov*, INTEGERS 24 (2024), Article A66, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.dickman_ge_rpow_neg_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#dickman-ge-rpow-neg-mul).
+Stated but not proved: `MetaMathlibExt.dickman_ge_rpow_neg_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#dickman-ge-rpow-neg-mul).
 
 ## Logarithmic derivative of the zeta function near its pole
 
@@ -34,7 +34,7 @@ in $|\tau| \le 1/2$.
 
 - Matteo Bordignon and Forrest J. Francis, *Explicit Improvements to the Burgess Bound via Pólya--Vinogradov*, INTEGERS 24 (2024), Article A66, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.exists_norm_logDeriv_riemannZeta_le_inv_norm_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#exists-norm-log-deriv-riemann-zeta-le-in).
+Stated but not proved: `MetaMathlibExt.exists_norm_logDeriv_riemannZeta_le_inv_norm_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#exists-norm-log-deriv-riemann-zeta-le-in).
 
 ## Mertens' second theorem with the Rosser–Schoenfeld error term
 
@@ -47,7 +47,7 @@ primes $p \le x$.
 
 - Matteo Bordignon and Forrest J. Francis, *Explicit Improvements to the Burgess Bound via Pólya--Vinogradov*, INTEGERS 24 (2024), Article A66, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.abs_sum_inv_primes_sub_meisselMertensConstant_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#abs-sum-inv-primes-sub-meissel-mertens-c).
+Stated but not proved: `MetaMathlibExt.abs_sum_inv_primes_sub_meisselMertensConstant_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#abs-sum-inv-primes-sub-meissel-mertens-c).
 
 ## Two-sided explicit Mertens bound
 
@@ -59,7 +59,7 @@ the primes $p \le x$.
 
 - Matteo Bordignon and Forrest J. Francis, *Explicit Improvements to the Burgess Bound via Pólya--Vinogradov*, INTEGERS 24 (2024), Article A66, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.log_log_add_le_sum_inv_primes_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#log-log-add-le-sum-inv-primes-le).
+Stated but not proved: `MetaMathlibExt.log_log_add_le_sum_inv_primes_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#log-log-add-le-sum-inv-primes-le).
 
 ## Explicit bound for a cosine-weighted sum over primes
 
@@ -73,7 +73,7 @@ $\tau$, $\sum_{p \le e^{1/\alpha}} |\cos(\tau \log p) - K|/p \le (1 - K) \log(1/
 
 - Matteo Bordignon and Forrest J. Francis, *Explicit Improvements to the Burgess Bound via Pólya--Vinogradov*, INTEGERS 24 (2024), Article A66, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.sum_abs_cos_sub_div_primes_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#sum-abs-cos-sub-div-primes-le).
+Stated but not proved: `MetaMathlibExt.sum_abs_cos_sub_div_primes_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#sum-abs-cos-sub-div-primes-le).
 
 ## Upper bound for twisted prime sums with real coefficients
 
@@ -97,7 +97,7 @@ is defined.
 
 - Matteo Bordignon and Forrest J. Francis, *Explicit Improvements to the Burgess Bound via Pólya--Vinogradov*, INTEGERS 24 (2024), Article A66, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.re_sum_div_primes_cpow_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#re-sum-div-primes-cpow-le).
+Stated but not proved: `MetaMathlibExt.re_sum_div_primes_cpow_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#re-sum-div-primes-cpow-le).
 
 ## Bound for a Dirichlet series by its prime sum
 
@@ -115,7 +115,7 @@ Meissel–Mertens constant; the prime series above is the form of $\nu_2$ used i
 
 - Matteo Bordignon and Forrest J. Francis, *Explicit Improvements to the Burgess Bound via Pólya--Vinogradov*, INTEGERS 24 (2024), Article A66, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.norm_LSeries_le_exp_nu₂_mul_exp_re_sum_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#norm-lseries-le-exp-nu-mul-exp-re-sum-pr).
+Stated but not proved: `MetaMathlibExt.norm_LSeries_le_exp_nu₂_mul_exp_re_sum_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#norm-lseries-le-exp-nu-mul-exp-re-sum-pr).
 
 ## Uniform tail bound for the prime zeta series
 
@@ -127,7 +127,7 @@ over the primes $p > e^{1/\alpha}$.
 
 - Matteo Bordignon and Forrest J. Francis, *Explicit Improvements to the Burgess Bound via Pólya--Vinogradov*, INTEGERS 24 (2024), Article A66, Lemma 10.
 
-Stated but not proved: `MetaMathlibExt.tsum_rpow_neg_primes_gt_exp_inv_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#tsum-rpow-neg-primes-gt-exp-inv-le).
+Stated but not proved: `MetaMathlibExt.tsum_rpow_neg_primes_gt_exp_inv_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BurgessPolyaVinogradovWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html#tsum-rpow-neg-primes-gt-exp-inv-le).
 
 ## Depends on
 
@@ -136,4 +136,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Explicit Mertens-type prime sum estimates](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-mertens-type-prime-sum-estimates)

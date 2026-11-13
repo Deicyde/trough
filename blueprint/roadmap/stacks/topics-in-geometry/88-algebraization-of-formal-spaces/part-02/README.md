@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# 88.18 Rig-smooth morphisms to 88.30 Application to…
+# 88.19 Rig-étale homomorphisms to 88.30 Application to…
 
-- [88.18 Rig-smooth morphisms](88-18-rig-smooth-morphisms.md)
 - [88.19 Rig-étale homomorphisms](88-19-rig-etale-homomorphisms.md)
 - [88.20 Rig-étale morphisms](88-20-rig-etale-morphisms.md)
 - [88.21 Rig-surjective morphisms](88-21-rig-surjective-morphisms.md)

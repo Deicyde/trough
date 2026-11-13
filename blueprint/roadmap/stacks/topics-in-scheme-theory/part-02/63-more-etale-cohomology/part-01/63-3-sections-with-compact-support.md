@@ -8,13 +8,13 @@ proof: formalized
 
 # 63.3 Sections with compact support
 
-Section 63.3 of the Stacks Project, [Tag 0F4W](https://stacks.math.columbia.edu/tag/0F4W). 17 tags here are carried by 44 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 63.3 of the Stacks Project, [Tag 0F4W](https://stacks.math.columbia.edu/tag/0F4W). 17 tags here are carried by 44 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F4X, a lemma
 
 [Tag 0F4X](https://stacks.math.columbia.edu/tag/0F4X) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.properSupportSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean#L152). The attribute's comment: “the proper support condition”.
+**`AlgebraicGeometry.SmallEtale.properSupportSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean#L152). The attribute's comment: “the proper support condition”.
 
 > **Stacks 0F4X.** The condition that a section of the small-étale direct image of `F` over an
 > étale test object `V ⟶ Y` has proper support over `V`: its support in `X ×_Y V` is proper over
@@ -25,7 +25,7 @@ public def properSupportSections (V : SmallEtale B Y.obj Y.property)
     (s : F.obj.obj (op ((smallEtaleBaseChange B f).obj V))) : Prop
 ```
 
-**`AlgebraicGeometry.SmallEtale.properSupportSections_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean#L211). The attribute's comment: “stability under restriction”.
+**`AlgebraicGeometry.SmallEtale.properSupportSections_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean#L211). The attribute's comment: “stability under restriction”.
 
 > **Stacks 0F4X.** The proper-support condition is stable under restriction along an arrow of
 > the small étale site of `Y`.
@@ -38,7 +38,7 @@ public theorem properSupportSections_restrict [LocallyOfFiniteType (B.inclusion.
     properSupportSections B f F V (F.obj.map ((smallEtaleBaseChange B f).map a).op s)
 ```
 
-**`AlgebraicGeometry.SmallEtale.properSupportSections_descend`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean#L251). The attribute's comment: “locality of the proper support condition”.
+**`AlgebraicGeometry.SmallEtale.properSupportSections_descend`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean#L251). The attribute's comment: “locality of the proper support condition”.
 
 > **Stacks 0F4X.** The proper-support condition is local for the fpqc topology on the test
 > object.
@@ -57,7 +57,7 @@ public theorem properSupportSections_descend [LocallyOfFiniteType (B.inclusion.m
     properSupportSections B f F V s
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekSubsheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean#L477). References: SGA 4 XVII (6.3.16), “f\_! as subsheaf of f\_*”; SGA 4 XVII (6.1.2), “abelian sheaves”.
+**`AlgebraicGeometry.SmallEtale.fShriekSubsheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean#L477). References: SGA 4 XVII (6.3.16), “f\_! as subsheaf of f\_*”; SGA 4 XVII (6.1.2), “abelian sheaves”.
 
 > **Stacks 0F4X.** The abelian subsheaf `f_! F` of the small-étale direct image `f_* F`
 > consisting exactly of the sections whose support is proper over the étale base, bundled with the
@@ -76,7 +76,7 @@ public def fShriekSubsheaf [LocallyOfFiniteType (B.inclusion.map f)] :
             properSupportSections B f F V s}
 ```
 
-**`AlgebraicGeometry.SmallEtale.mem_range_fShriekSubsheaf_arrow_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean#L511). The attribute's comment: “the sectionwise characterization”.
+**`AlgebraicGeometry.SmallEtale.mem_range_fShriekSubsheaf_arrow_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean, line 511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean#L511). The attribute's comment: “the sectionwise characterization”.
 
 > **Stacks 0F4X.** The sections of `f_! F` over an étale test object are exactly the sections
 > of `f_* F` whose support is proper over that object.
@@ -93,7 +93,7 @@ public theorem mem_range_fShriekSubsheaf_arrow_iff [LocallyOfFiniteType (B.inclu
 
 [Tag 0F4Y](https://stacks.math.columbia.edu/tag/0F4Y) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.abelianExtensionByZeroToPushforward_range_eq_fShriekSubsheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekExtensionByZero.lean, line 945](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekExtensionByZero.lean#L945).
+**`AlgebraicGeometry.SmallEtale.abelianExtensionByZeroToPushforward_range_eq_fShriekSubsheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekExtensionByZero.lean, line 945](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekExtensionByZero.lean#L945).
 
 > **Stacks 0F4Y.** For a separated étale morphism, the image of extension by zero in the
 > direct image is precisely the proper-support subsheaf.
@@ -112,7 +112,7 @@ public theorem abelianExtensionByZeroToPushforward_range_eq_fShriekSubsheaf
 
 [Tag 0F4Z](https://stacks.math.columbia.edu/tag/0F4Z) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.fShriekSubsheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean#L477). The attribute's comment: “the subsheaf f\_! F of f\_* F, the direct image with compact support”. References: SGA 4 XVII (6.3.16), “f\_! as subsheaf of f\_*”; SGA 4 XVII (6.1.2), “abelian sheaves”.
+**`AlgebraicGeometry.SmallEtale.fShriekSubsheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekSubsheaf.lean#L477). The attribute's comment: “the subsheaf f\_! F of f\_* F, the direct image with compact support”. References: SGA 4 XVII (6.3.16), “f\_! as subsheaf of f\_*”; SGA 4 XVII (6.1.2), “abelian sheaves”.
 
 > **Stacks 0F4X.** The abelian subsheaf `f_! F` of the small-étale direct image `f_* F`
 > consisting exactly of the sections whose support is proper over the étale base, bundled with the
@@ -135,7 +135,7 @@ public def fShriekSubsheaf [LocallyOfFiniteType (B.inclusion.map f)] :
 
 [Tag 0F51](https://stacks.math.columbia.edu/tag/0F51) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.properSupportIsoPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L185). The attribute's comment: “natural isomorphism f\_! ≅ f\_* for proper f”.
+**`AlgebraicGeometry.SmallEtale.properSupportIsoPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L185). The attribute's comment: “natural isomorphism f\_! ≅ f\_* for proper f”.
 
 > For a proper morphism the proper-support direct image is the ordinary
 > direct image, naturally in the abelian étale sheaf.
@@ -145,7 +145,7 @@ public def properSupportIsoPushforward [IsProper (B.inclusion.map g)] :
     properSupportFunctor.{u, v} B g ≅ etalePushforward.{u, v} B g
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekSubsheaf_arrow_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekProper.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekProper.lean#L76).
+**`AlgebraicGeometry.SmallEtale.fShriekSubsheaf_arrow_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekProper.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekProper.lean#L76).
 
 > **Stacks 0F51.** For a proper morphism, the canonical inclusion of the proper-support
 > direct image `f_! F` into the ordinary direct image `f_* F` is an isomorphism.
@@ -159,7 +159,7 @@ public theorem fShriekSubsheaf_arrow_isIso [IsProper (B.inclusion.map f)] :
 
 [Tag 0F53](https://stacks.math.columbia.edu/tag/0F53) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.fShriekMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean#L65). The attribute's comment: “open\_inclusion\_compatibility: induced maps”.
+**`AlgebraicGeometry.SmallEtale.fShriekMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean#L65). The attribute's comment: “open\_inclusion\_compatibility: induced maps”.
 
 > The induced map on proper-support direct images, characterized by its
 > inclusion into ordinary direct image.
@@ -178,7 +178,7 @@ public noncomputable def fShriekMap
     {m : G.obj.left ⟶ K.obj.left // m ≫ K.arrow = G.arrow ≫ push.map φ}
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekMap_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean#L219). The attribute's comment: “open\_inclusion\_compatibility: identity”.
+**`AlgebraicGeometry.SmallEtale.fShriekMap_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean#L219). The attribute's comment: “open\_inclusion\_compatibility: identity”.
 
 > The proper-support direct image takes identity morphisms to identities.
 
@@ -190,7 +190,7 @@ public theorem fShriekMap_id
     (fShriekMap B f F F (𝟙 F)).val = 𝟙 _
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean#L236). The attribute's comment: “open\_inclusion\_compatibility: composition”.
+**`AlgebraicGeometry.SmallEtale.fShriekMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean#L236). The attribute's comment: “open\_inclusion\_compatibility: composition”.
 
 > The proper-support direct image respects composition of sheaf morphisms.
 
@@ -204,7 +204,7 @@ public theorem fShriekMap_comp
       (fShriekMap B f F H φ).val ≫ (fShriekMap B f H K ψ).val
 ```
 
-**`AlgebraicGeometry.SmallEtale.openInclusionShriekMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean, line 647](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean#L647). The attribute's comment: “open\_inclusion\_compatibility”.
+**`AlgebraicGeometry.SmallEtale.openInclusionShriekMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean, line 648](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekFunctorial.lean#L648). The attribute's comment: “open\_inclusion\_compatibility”.
 
 > Extension by zero from an open subscheme is natural in the abelian sheaf.
 
@@ -229,7 +229,7 @@ public theorem openInclusionShriekMap_naturality
         (fShriekMap B f F H φ).val
 ```
 
-**`AlgebraicGeometry.SmallEtale.openInclusionShriekMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusion/ShriekMap.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusion/ShriekMap.lean#L524). The attribute's comment: “open\_inclusion\_mono”.
+**`AlgebraicGeometry.SmallEtale.openInclusionShriekMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusion/ShriekMap.lean, line 524](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusion/ShriekMap.lean#L524). The attribute's comment: “open\_inclusion\_mono”.
 
 > The canonical injection from the proper-support direct image on an open
 > subscheme, with its sectionwise extension-by-zero characterization.
@@ -268,7 +268,7 @@ public noncomputable def openInclusionShriekMap
               ((smallEtaleBaseChange B j).obj W) s'W)}
 ```
 
-**`AlgebraicGeometry.SmallEtale.openInclusionShriekCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusionComp.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusionComp.lean#L383). The attribute's comment: “open\_inclusion\_trans”.
+**`AlgebraicGeometry.SmallEtale.openInclusionShriekCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusionComp.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusionComp.lean#L383). The attribute's comment: “open\_inclusion\_trans”.
 
 > **Stacks 0F53.** Restricting an abelian sheaf to a nested open subscheme in two steps or in
 > one gives canonically isomorphic proper-support direct images.
@@ -307,7 +307,7 @@ public noncomputable def openInclusionShriekCompIso
       (fShriekSubsheaf B ((i ≫ j) ≫ f) Fd).val.obj.left
 ```
 
-**`AlgebraicGeometry.SmallEtale.openInclusionShriekCompIso_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusionComp.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusionComp.lean#L419). The attribute's comment: “open\_inclusion\_trans”.
+**`AlgebraicGeometry.SmallEtale.openInclusionShriekCompIso_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusionComp.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusionComp.lean#L419). The attribute's comment: “open\_inclusion\_trans”.
 
 > **Stacks 0F53.** The comparison of proper-support direct images is the comparison of
 > restrictions, read inside the ordinary direct images.
@@ -362,7 +362,7 @@ public theorem openInclusionShriekCompIso_ambient
         (Pi.mapIso restrictionIso ≪≫ pushforwardIso.app Fd).hom
 ```
 
-**`AlgebraicGeometry.SmallEtale.openInclusionShriekMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusionComp.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusionComp.lean#L478). The attribute's comment: “open\_inclusion\_trans”.
+**`AlgebraicGeometry.SmallEtale.openInclusionShriekMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusionComp.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenInclusionComp.lean#L478). The attribute's comment: “open\_inclusion\_trans”.
 
 > **Stacks 0F53.** Extension by zero is transitive: for nested open subschemes
 > `X'' ⟶ X' ⟶ X` of the source of a separated morphism locally of finite type, the canonical map
@@ -406,7 +406,7 @@ public theorem openInclusionShriekMap_comp
 
 [Tag 0F52](https://stacks.math.columbia.edu/tag/0F52) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.compactificationProperSupportIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L224). The attribute's comment: “natural isomorphism of proper-support functors”.
+**`AlgebraicGeometry.SmallEtale.compactificationProperSupportIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L224). The attribute's comment: “natural isomorphism of proper-support functors”.
 
 > The canonical comparison `f_! ⟶ f̄_! ∘ j_!` of proper-support direct
 > images through a compactification `j : X ⟶ X̄` of `X` over `Y`, as a natural isomorphism of
@@ -420,7 +420,7 @@ public def compactificationProperSupportIso
         properSupportFunctor.{u, u + 1} B fbar
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekFunctorIsoCompactification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L243). The attribute's comment: “f\_! = f̄\_* ∘ j\_!”.
+**`AlgebraicGeometry.SmallEtale.fShriekFunctorIsoCompactification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L243). The attribute's comment: “f\_! = f̄\_* ∘ j\_!”.
 
 > `f_! = f̄_* ∘ j_!`: the direct image with compact support along
 > `f = j ≫ f̄`, for `j : X ⟶ X̄` an open immersion and `f̄ : X̄ ⟶ Y` proper, is extension by zero
@@ -434,7 +434,7 @@ public def fShriekFunctorIsoCompactification
         etalePushforward.{u, u + 1} B fbar
 ```
 
-**`AlgebraicGeometry.SmallEtale.compactificationFShriekMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean#L322). The attribute's comment: “canonical comparison”.
+**`AlgebraicGeometry.SmallEtale.compactificationFShriekMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean#L322). The attribute's comment: “canonical comparison”.
 
 > **Stacks 0F52.** The canonical map `f_! F ⟶ f̄_!(j_! F)` for an open immersion `j : X ⟶ X̄`
 > with `f = j ≫ f̄`: the extension-by-zero unit, which identifies `F` with the restriction of
@@ -466,7 +466,7 @@ public noncomputable def compactificationFShriekMap :
         (α = i.hom ≫ (openInclusionShriekMap B U.obj.hom fbar Fbar).val)}
 ```
 
-**`AlgebraicGeometry.SmallEtale.compactificationFShriekMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean#L521). The attribute's comment: “isomorphism”.
+**`AlgebraicGeometry.SmallEtale.compactificationFShriekMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean#L521). The attribute's comment: “isomorphism”.
 
 > **Stacks 0F52.** The canonical compactification comparison is an isomorphism.
 
@@ -475,7 +475,7 @@ public theorem compactificationFShriekMap_isIso :
     IsIso (compactificationFShriekMap B fbar U F).val
 ```
 
-**`AlgebraicGeometry.SmallEtale.compactificationFShriekMap_to_pushforward_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean, line 581](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean#L581). The attribute's comment: “ordinary direct image”.
+**`AlgebraicGeometry.SmallEtale.compactificationFShriekMap_to_pushforward_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean, line 581](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean#L581). The attribute's comment: “ordinary direct image”.
 
 > **Stacks 0F52.** Since the compactification is proper, the same canonical map identifies
 > `f_! F` with the ordinary direct image `f̄_*(j_! F)`.
@@ -488,7 +488,7 @@ public theorem compactificationFShriekMap_to_pushforward_isIso :
       (fShriekSubsheaf B fbar Fbar).val.arrow)
 ```
 
-**`AlgebraicGeometry.SmallEtale.compactificationFShriekMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean, line 597](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean#L597). The attribute's comment: “naturality and functor comparison”.
+**`AlgebraicGeometry.SmallEtale.compactificationFShriekMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean, line 597](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactification.lean#L597). The attribute's comment: “naturality and functor comparison”.
 
 > **Stacks 0F52.** The compactification comparison commutes with morphisms of abelian étale
 > sheaves, hence identifies the two direct-image functors naturally.
@@ -524,7 +524,7 @@ public theorem compactificationFShriekMap_naturality
 
 [Tag 0F72](https://stacks.math.columbia.edu/tag/0F72) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.compactlySupportedSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupport.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupport.lean#L62).
+**`AlgebraicGeometry.SmallEtale.compactlySupportedSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupport.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupport.lean#L62).
 
 > **Stacks 0F72.** The subgroup of global sections of an abelian sheaf on the small étale
 > site whose support is proper over the base field.
@@ -538,7 +538,7 @@ public def compactlySupportedSections :
 
 [Tag 0F73](https://stacks.math.columbia.edu/tag/0F73) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.compactlySupportedSections_eq_top_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekProper.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekProper.lean#L101).
+**`AlgebraicGeometry.SmallEtale.compactlySupportedSections_eq_top_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekProper.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekProper.lean#L101).
 
 > **Stacks 0F73.** On a scheme proper over a field, every global section of an abelian sheaf
 > on the small étale site has compact support.
@@ -552,7 +552,7 @@ public theorem compactlySupportedSections_eq_top_of_isProper :
 
 [Tag 0F74](https://stacks.math.columbia.edu/tag/0F74) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.compactlySupportedSections_openInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean#L474). The attribute's comment: “canonical injection”.
+**`AlgebraicGeometry.SmallEtale.compactlySupportedSections_openInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean#L474). The attribute's comment: “canonical injection”.
 
 > **Stacks 0F74.** Extension by zero gives a canonical injection on compactly supported
 > sections along an open immersion, characterised by the restriction of its value back to the
@@ -582,7 +582,7 @@ public noncomputable def compactlySupportedSections_openInclusion {X' X : B.Sche
               (SmallEtale.final B X'.obj X'.property) s.1)}
 ```
 
-**`AlgebraicGeometry.SmallEtale.compactlySupportedSections_openInclusion_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean, line 508](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean#L508). The attribute's comment: “precosheaf identity”.
+**`AlgebraicGeometry.SmallEtale.compactlySupportedSections_openInclusion_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean, line 508](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean#L508). The attribute's comment: “precosheaf identity”.
 
 > **Stacks 0F74.** For the identity open immersion extension by zero is surjective on
 > compactly supported sections, hence an isomorphism: the unit of the restriction adjunction
@@ -596,7 +596,7 @@ public theorem compactlySupportedSections_openInclusion_id (X : B.Scheme)
     Function.Surjective (compactlySupportedSections_openInclusion k B (𝟙 X) f F).1
 ```
 
-**`AlgebraicGeometry.SmallEtale.compactlySupportedSections_openInclusion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean, line 632](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean#L632). The attribute's comment: “precosheaf composition”.
+**`AlgebraicGeometry.SmallEtale.compactlySupportedSections_openInclusion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean, line 632](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean#L632). The attribute's comment: “precosheaf composition”.
 
 > **Stacks 0F74.** Extension by zero on compactly supported sections is transitive for
 > composable open immersions, once the two restrictions of the sheaf to the smallest open
@@ -638,7 +638,7 @@ public theorem compactlySupportedSections_openInclusion_comp {X'' X' X : B.Schem
           (compactlySupportedSections_openInclusion k B (i ≫ j) f F).1 t)
 ```
 
-**`AlgebraicGeometry.SmallEtale.exists_compactlySupportedSections_openInclusion_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean, line 906](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean#L906). The attribute's comment: “cosheaf, image of the canonical injection”.
+**`AlgebraicGeometry.SmallEtale.exists_compactlySupportedSections_openInclusion_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean, line 906](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean#L906). The attribute's comment: “cosheaf, image of the canonical injection”.
 
 > **Stacks 0F74.** A compactly supported section of `F` is the extension by zero of a
 > compactly supported section on an open subscheme exactly when its support lies in that open
@@ -660,7 +660,7 @@ public theorem exists_compactlySupportedSections_openInclusion_eq {X' X : B.Sche
         Set.range (B.inclusion.map j).base
 ```
 
-**`AlgebraicGeometry.SmallEtale.exists_compactlySupportedSections_openInclusion_inter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean, line 987](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean#L987). The attribute's comment: “cosheaf, Mayer–Vietoris”.
+**`AlgebraicGeometry.SmallEtale.exists_compactlySupportedSections_openInclusion_inter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean, line 987](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean#L987). The attribute's comment: “cosheaf, Mayer–Vietoris”.
 
 > **Stacks 0F74.** Mayer–Vietoris for compactly supported sections: two compactly supported
 > sections on open subschemes with the same extension by zero both come from a compactly
@@ -694,7 +694,7 @@ public theorem exists_compactlySupportedSections_openInclusion_inter {X₀ X₁ 
             (compactlySupportedSections_openInclusion k B j₁ f F).1 s₁
 ```
 
-**`AlgebraicGeometry.SmallEtale.exists_compactlySupportedSections_openInclusion_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean, line 1116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean#L1116). The attribute's comment: “cosheaf, gluing”.
+**`AlgebraicGeometry.SmallEtale.exists_compactlySupportedSections_openInclusion_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean, line 1116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpen.lean#L1116). The attribute's comment: “cosheaf, gluing”.
 
 > **Stacks 0F74.** Gluing for compactly supported sections: a compactly supported section
 > whose support is the union of two disjoint closed subsets, one inside each of two open
@@ -727,7 +727,7 @@ public theorem exists_compactlySupportedSections_openInclusion_add {X₁ X₂ X 
         (compactlySupportedSections_openInclusion k B j₂ f F).1 s₂ = t
 ```
 
-**`AlgebraicGeometry.SmallEtale.exists_zariskiCovering_not_surjective_compactlySupportedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpenNotCosheaf.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpenNotCosheaf.lean#L178). The attribute's comment: “the cosheaf condition is false in the literal sense: a Zariski covering of ℙ¹\_k by two opens on which the sum map H^0\_c(U₁) ⊕ H^0\_c(U₂) → H^0\_c(ℙ¹\_k, 𝔾\_a) is not surjective”.
+**`AlgebraicGeometry.SmallEtale.exists_zariskiCovering_not_surjective_compactlySupportedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpenNotCosheaf.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportOpenNotCosheaf.lean#L178). The attribute's comment: “the cosheaf condition is false in the literal sense: a Zariski covering of ℙ¹\_k by two opens on which the sum map H^0\_c(U₁) ⊕ H^0\_c(U₂) → H^0\_c(ℙ¹\_k, 𝔾\_a) is not surjective”.
 
 > **Stacks 0F74, the cosheaf condition fails for an actual Zariski covering.** For every field
 > `k` and every big étale site containing the projective line `ℙ¹_k`, the scheme `ℙ¹_k`, separated
@@ -755,7 +755,7 @@ public theorem exists_zariskiCovering_not_surjective_compactlySupportedSections
 
 [Tag 0F75](https://stacks.math.columbia.edu/tag/0F75) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.compactlySupportedSections_extensionByZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportCompactification.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportCompactification.lean#L373). The attribute's comment: “canonical isomorphism”.
+**`AlgebraicGeometry.SmallEtale.compactlySupportedSections_extensionByZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportCompactification.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportCompactification.lean#L373). The attribute's comment: “canonical isomorphism”.
 
 > **Stacks 0F75.** For an open immersion `j : X ⟶ X̄` with `X̄` proper over a field `k`, the
 > compactly supported global sections of an abelian sheaf `F` on the small étale site of `X` are
@@ -769,7 +769,7 @@ public noncomputable def compactlySupportedSections_extensionByZero :
         ((abelianExtensionByZero B Xbar.obj Xbar.property U).obj F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.compactlySupportedSections_extensionByZero_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportCompactification.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportCompactification.lean#L386). The attribute's comment: “restriction characterization”.
+**`AlgebraicGeometry.SmallEtale.compactlySupportedSections_extensionByZero_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportCompactification.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompactSupportCompactification.lean#L386). The attribute's comment: “restriction characterization”.
 
 > **Stacks 0F75.** The canonical equivalence is determined by the fact that restriction of the
 > extended section to the open subscheme is the original section, identified through the
@@ -790,7 +790,7 @@ public theorem compactlySupportedSections_extensionByZero_restrict
 
 [Tag 0F76](https://stacks.math.columbia.edu/tag/0F76) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.fShriekStalkEquivCompactSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekGeometricStalkIso.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekGeometricStalkIso.lean#L83).
+**`AlgebraicGeometry.SmallEtale.fShriekStalkEquivCompactSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekGeometricStalkIso.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekGeometricStalkIso.lean#L83).
 
 > **Stacks 0F76.** Let `f : X ⟶ Y` be separated and locally of finite type, `F` an abelian
 > sheaf on `X_étale` and `ȳ : Spec k ⟶ Y` a geometric point. There is a canonical isomorphism
@@ -806,7 +806,7 @@ def fShriekStalkEquivCompactSections :
       geometricFibreCompactSections B f y hy F
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekStalkEquivCompactSections_apply_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekGeometricStalkIso.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekGeometricStalkIso.lean#L104). The attribute's comment: “the isomorphism pulls a section on an étale neighbourhood back to the fibre”.
+**`AlgebraicGeometry.SmallEtale.fShriekStalkEquivCompactSections_apply_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekGeometricStalkIso.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekGeometricStalkIso.lean#L104). The attribute's comment: “the isomorphism pulls a section on an étale neighbourhood back to the fibre”.
 
 > **Stacks 0F76, the isomorphism on germs.** Let `(V, v̄)` be an étale neighbourhood of `ȳ`
 > and `s` a section of `f_!F` over `V`, that is a section of `F` over `X_V` with support proper over
@@ -836,7 +836,7 @@ theorem fShriekStalkEquivCompactSections_apply_germ
 
 [Tag 0F55](https://stacks.math.columbia.edu/tag/0F55) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.properSupportBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekProperBaseChange.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekProperBaseChange.lean#L80).
+**`AlgebraicGeometry.SmallEtale.properSupportBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekProperBaseChange.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekProperBaseChange.lean#L80).
 
 > **Stacks 0F55.** For a cartesian square of a big étale site with horizontal morphisms
 > `p : X' ⟶ X`, `g : Y' ⟶ Y` and vertical morphisms `f : X ⟶ Y` separated and locally of finite
@@ -858,7 +858,7 @@ public def properSupportBaseChangeIso :
 
 [Tag 0F50](https://stacks.math.columbia.edu/tag/0F50) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.properSupportFunctor_compIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekComposition.lean, line 1044](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekComposition.lean#L1044).
+**`AlgebraicGeometry.SmallEtale.properSupportFunctor_compIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekComposition.lean, line 1042](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekComposition.lean#L1042).
 
 > The canonical comparison is natural in the abelian étale sheaf.
 
@@ -877,7 +877,7 @@ public noncomputable def properSupportFunctor_compIso
 
 [Tag 0F77](https://stacks.math.columbia.edu/tag/0F77) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.properSupportFunctor_compIso_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekAssociativity.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekAssociativity.lean#L262). The attribute's comment: “composition\_coherence”.
+**`AlgebraicGeometry.SmallEtale.properSupportFunctor_compIso_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekAssociativity.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekAssociativity.lean#L260). The attribute's comment: “composition\_coherence”.
 
 > Canonical proper-support direct-image comparisons are associative.
 
@@ -913,7 +913,7 @@ public theorem properSupportFunctor_compIso_assoc
         rfl))
 ```
 
-**`AlgebraicGeometry.SmallEtale.properSupportBaseChange_compIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperSupportBaseChangeComposition.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ProperSupportBaseChangeComposition.lean#L302). The attribute's comment: “part (2): compatibility of the base change maps of 0F55 with the composition isomorphisms of 0F50”.
+**`AlgebraicGeometry.SmallEtale.properSupportBaseChange_compIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperSupportBaseChangeComposition.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ProperSupportBaseChangeComposition.lean#L302). The attribute's comment: “part (2): compatibility of the base change maps of 0F55 with the composition isomorphisms of 0F50”.
 
 > **Stacks, Remark 0F77, part (2).** Let
 > ```
@@ -965,7 +965,7 @@ theorem properSupportBaseChange_compIso (sq₁ : IsPullback c f' f b)
 
 [Tag 0F54](https://stacks.math.columbia.edu/tag/0F54) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.properSupportFunctor_isColimit_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCover.lean, line 1117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCover.lean#L1117).
+**`AlgebraicGeometry.SmallEtale.properSupportFunctor_isColimit_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCover.lean, line 1116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCover.lean#L1116).
 
 > **Stacks 0F54.** Let `f : X ⟶ Y` be separated and locally of finite type, and let the
 > `X_i = U i` form an open covering of `X` that is directed: any two members lie in a third.
@@ -1001,7 +1001,7 @@ public theorem properSupportFunctor_isColimit_openCover [IsDirected ι (· ≤ �
 
 [Tag 0F56](https://stacks.math.columbia.edu/tag/0F56) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.properSupportFunctor_preservesColimitsOfShape_discrete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekDirectSums.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekDirectSums.lean#L445).
+**`AlgebraicGeometry.SmallEtale.properSupportFunctor_preservesColimitsOfShape_discrete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekDirectSums.lean, line 445](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekDirectSums.lean#L445).
 
 > **Stacks 0F56.** Let `f : X ⟶ Y` be a morphism of schemes which is separated and locally of
 > finite type. Then the proper-support direct image `f_!` of abelian sheaves on the small étale
@@ -1021,7 +1021,7 @@ public theorem properSupportFunctor_preservesColimitsOfShape_discrete
 
 [Tag 0F57](https://stacks.math.columbia.edu/tag/0F57) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.properSupportStalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperSupportStalk.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ProperSupportStalk.lean#L64). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.SmallEtale.properSupportStalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperSupportStalk.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ProperSupportStalk.lean#L64). The attribute's comment: “part (1)”.
 
 > **Stacks 0F57, part (1).** For a separated locally quasi-finite morphism `f : X ⟶ Y` and a
 > geometric point `ȳ` of `Y`, the stalk at `ȳ` of the proper-support direct image `f_!F` is the
@@ -1038,7 +1038,7 @@ public def properSupportStalkFunctorIso (s : GeometricPoint Y.obj) :
           (A := AddCommGrpCat.{max (u + 1) v}))
 ```
 
-**`AlgebraicGeometry.SmallEtale.properSupportFunctor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperSupportStalk.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ProperSupportStalk.lean#L77). The attribute's comment: “part (2)”. References: SGA 4 XVII (6.1.4), “more general”.
+**`AlgebraicGeometry.SmallEtale.properSupportFunctor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ProperSupportStalk.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ProperSupportStalk.lean#L77). The attribute's comment: “part (2)”. References: SGA 4 XVII (6.1.4), “more general”.
 
 > **Stacks 0F57, part (2).** For a separated locally quasi-finite morphism the proper-support
 > direct image `f_!` on abelian étale sheaves is an exact functor.
@@ -1055,4 +1055,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 63.3, Tag 0F4W](https://stacks.math.columbia.edu/tag/0F4W)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

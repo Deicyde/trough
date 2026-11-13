@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.24 Finite étale covers of punctured spectra, IV
 
-Section 58.24 of the Stacks Project, [Tag 0EK8](https://stacks.math.columbia.edu/tag/0EK8). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 58.24 of the Stacks Project, [Tag 0EK8](https://stacks.math.columbia.edu/tag/0EK8). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EK9, a lemma
 
 [Tag 0EK9](https://stacks.math.columbia.edu/tag/0EK9) in the Stacks Project.
 
-**`AlgebraicGeometry.LocalLefschetzSituation.essSurj_finiteEtaleBaseChange_U₀ToU_of_dualizing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NeighbourhoodVocabularyDualizing.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NeighbourhoodVocabularyDualizing.lean#L133). The attribute's comment: “the restriction functor FÉt\_U ⥤ FÉt\_\{U₀} is essentially surjective, under the tag's three hypotheses; nothing beyond them is assumed”.
+**`AlgebraicGeometry.LocalLefschetzSituation.essSurj_finiteEtaleBaseChange_U₀ToU_of_dualizing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NeighbourhoodVocabularyDualizing.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/NeighbourhoodVocabularyDualizing.lean#L133). The attribute's comment: “the restriction functor FÉt\_U ⥤ FÉt\_\{U₀} is essentially surjective, under the tag's three hypotheses; nothing beyond them is assumed”.
 
 > **Stacks Project, Tag 0EK9.**  Let `(A, 𝔪)` be a Noetherian local ring and let `f ∈ 𝔪`.
 > Write `X = Spec A`, let `U = X ∖ {𝔪}` and `U₀ = Spec (A / fA) ∖ {𝔪}` be the two punctured
@@ -62,7 +62,7 @@ theorem essSurj_finiteEtaleBaseChange_U₀ToU_of_dualizing
 
 [Tag 0EKA](https://stacks.math.columbia.edu/tag/0EKA) in the Stacks Project.
 
-**`AlgebraicGeometry.LocalLefschetzSituation.essSurj_finiteEtaleBaseChange_U₀ToU_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/HypersurfaceExtension.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/HypersurfaceExtension.lean#L247). The attribute's comment: “the restriction functor FÉt\_U ⥤ FÉt\_\{U₀} is essentially surjective, under the tag's four hypotheses; nothing beyond them is assumed”.
+**`AlgebraicGeometry.LocalLefschetzSituation.essSurj_finiteEtaleBaseChange_U₀ToU_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/HypersurfaceExtension.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/HypersurfaceExtension.lean#L247). The attribute's comment: “the restriction functor FÉt\_U ⥤ FÉt\_\{U₀} is essentially surjective, under the tag's four hypotheses; nothing beyond them is assumed”.
 
 > **Stacks Project, Tag 0EKA.**  Let `(A, 𝔪)` be a Noetherian local ring and let `f ∈ 𝔪`.
 > Assume
@@ -99,4 +99,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.24, Tag 0EK8](https://stacks.math.columbia.edu/tag/0EK8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

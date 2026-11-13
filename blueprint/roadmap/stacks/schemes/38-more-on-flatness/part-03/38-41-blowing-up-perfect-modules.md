@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.41 Blowing up perfect modules
 
-Section 38.41 of the Stacks Project, [Tag 0F8K](https://stacks.math.columbia.edu/tag/0F8K). 4 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.41 of the Stacks Project, [Tag 0F8K](https://stacks.math.columbia.edu/tag/0F8K). 4 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ESS, a lemma
 
 [Tag 0ESS](https://stacks.math.columbia.edu/tag/0ESS) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_derivedPullbackComparison_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean#L618). The attribute's comment: “derived pullback agrees with ordinary pullback”.
+**`AlgebraicGeometry.isIso_derivedPullbackComparison_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean#L616). The attribute's comment: “derived pullback agrees with ordinary pullback”.
 
 > **Stacks 0ESS, the derived pullback.** For an `𝒪_X`-module of Tor dimension at most one the
 > canonical comparison `Lb^*ℱ ⟶ b^*ℱ` along the blowup of `X` in a quasi-coherent ideal is
@@ -34,7 +34,7 @@ theorem isIso_derivedPullbackComparison_blowUpToBase (F : OXMod.{u, u} X.toRinge
         ((CochainComplex.singleFunctor (OXMod.{u, u} X.toRingedSpace) 0).obj F)))
 ```
 
-**`AlgebraicGeometry.derivedPullbackBlowUpToBaseIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean, line 667](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean#L667). The attribute's comment: “derived pullback is the ordinary pullback”.
+**`AlgebraicGeometry.derivedPullbackBlowUpToBaseIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean, line 665](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean#L665). The attribute's comment: “derived pullback is the ordinary pullback”.
 
 > **Stacks 0ESS, the identification `Lb^*ℱ = b^*ℱ`.** For an `𝒪_X`-module of Tor dimension at
 > most one, the derived pullback to the blowup of `X` in a quasi-coherent ideal is the ordinary
@@ -51,7 +51,7 @@ noncomputable def derivedPullbackBlowUpToBaseIso (F : OXMod.{u, u} X.toRingedSpa
         ((modulePullback (blowUpToBase I).toLRSHom.toShHom).obj F)
 ```
 
-**`AlgebraicGeometry.isPerfect_modulePullback_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean#L698). The attribute's comment: “the ordinary pullback is perfect”.
+**`AlgebraicGeometry.isPerfect_modulePullback_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean, line 696](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean#L696). The attribute's comment: “the ordinary pullback is perfect”.
 
 > **Stacks 0ESS, perfectness.** The ordinary pullback of a perfect `𝒪_X`-module of Tor
 > dimension at most one to a blowup is perfect.
@@ -67,7 +67,7 @@ theorem isPerfect_modulePullback_blowUpToBase (F : OXMod.{u, u} X.toRingedSpace)
         ((modulePullback (blowUpToBase I).toLRSHom.toShHom).obj F))
 ```
 
-**`AlgebraicGeometry.hasTorAmplitude_modulePullback_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean, line 714](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean#L714). The attribute's comment: “the ordinary pullback has Tor dimension at most one”.
+**`AlgebraicGeometry.hasTorAmplitude_modulePullback_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean, line 712](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/PerfectPullback.lean#L712). The attribute's comment: “the ordinary pullback has Tor dimension at most one”.
 
 > **Stacks 0ESS, Tor dimension.** The ordinary pullback to a blowup of an `𝒪_X`-module of Tor
 > dimension at most one again has Tor dimension at most one.
@@ -85,7 +85,7 @@ theorem hasTorAmplitude_modulePullback_blowUpToBase (F : OXMod.{u, u} X.toRinged
 
 [Tag 0EST](https://stacks.math.columbia.edu/tag/0EST) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_shortExact_strictTransform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingNormalForm.lean, line 541](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingNormalForm.lean#L541).
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_shortExact_strictTransform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingNormalForm.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingNormalForm.lean#L542).
 
 > **Stacks Project, Tag 0EST.** Let `ℱ` be a perfect `𝒪_X`-module of Tor dimension at most
 > one which is finite locally free of constant rank `r` on a scheme-theoretically dense open `U`.
@@ -129,7 +129,7 @@ theorem exists_isAdmissibleBlowup_shortExact_strictTransform
 
 [Tag 0ESU](https://stacks.math.columbia.edu/tag/0ESU) in the Stacks Project.
 
-**`AlgebraicGeometry.isAdmissibleBlowup_blowUpToBase_fittingIdealProd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProduct.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProduct.lean#L193). The attribute's comment: “the U-admissible blowup, in the product of the Fitting ideals up to N”.
+**`AlgebraicGeometry.isAdmissibleBlowup_blowUpToBase_fittingIdealProd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProduct.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProduct.lean#L193). The attribute's comment: “the U-admissible blowup, in the product of the Fitting ideals up to N”.
 
 > **Stacks Project, Tag 0ESU, the blowup.** For a finitely presented `𝒪_X`-module vanishing on
 > an open `U`, the blowup of `X` in the product of the Fitting ideals of index at most `N` is a
@@ -142,7 +142,7 @@ theorem isAdmissibleBlowup_blowUpToBase_fittingIdealProd [F.IsFinitePresentation
     Stacks.Blowup.IsAdmissibleBlowup U (blowUpToBase (fittingIdealProd F N))
 ```
 
-**`AlgebraicGeometry.isEffectiveCartierDivisor_fittingIdeal_pullback_fittingIdealProd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProduct.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProduct.lean#L226). The attribute's comment: “the Fitting ideals of index at most N become effective Cartier divisors”.
+**`AlgebraicGeometry.isEffectiveCartierDivisor_fittingIdeal_pullback_fittingIdealProd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProduct.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProduct.lean#L226). The attribute's comment: “the Fitting ideals of index at most N become effective Cartier divisors”.
 
 > **Stacks Project, Tag 0ESU, the effective Cartier divisors.** On the blowup of `X` in the
 > product of the Fitting ideals of index at most `N`, the `k`-th Fitting ideal of the pulled back
@@ -160,7 +160,7 @@ theorem isEffectiveCartierDivisor_fittingIdeal_pullback_fittingIdealProd
         (k : ℤ))
 ```
 
-**`AlgebraicGeometry.isAdmissibleBlowup_blowUpToBase_fittingIdealProdAll`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean#L272). The attribute's comment: “the U-admissible blowup, in the product of all the Fitting ideals”.
+**`AlgebraicGeometry.isAdmissibleBlowup_blowUpToBase_fittingIdealProdAll`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean#L272). The attribute's comment: “the U-admissible blowup, in the product of all the Fitting ideals”.
 
 > For a finitely presented `𝒪_X`-module vanishing on an open `U`, the blowup of `X` in the
 > product of **all** the Fitting ideals is a `U`-admissible blowup: that product is of finite type
@@ -174,7 +174,7 @@ theorem isAdmissibleBlowup_blowUpToBase_fittingIdealProdAll [F.IsFinitePresentat
     Stacks.Blowup.IsAdmissibleBlowup U (blowUpToBase (fittingIdealProdAll F))
 ```
 
-**`AlgebraicGeometry.isEffectiveCartierDivisor_fittingIdeal_pullback_fittingIdealProdAll`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean#L321). The attribute's comment: “every Fitting ideal becomes an effective Cartier divisor on the blowup”.
+**`AlgebraicGeometry.isEffectiveCartierDivisor_fittingIdeal_pullback_fittingIdealProdAll`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean#L321). The attribute's comment: “every Fitting ideal becomes an effective Cartier divisor on the blowup”.
 
 > On the blowup of `X` in the product of all the Fitting ideals, the `k`-th Fitting ideal of
 > the pulled back module is an effective Cartier divisor for **every** `k ≥ 0`.
@@ -187,7 +187,7 @@ theorem isEffectiveCartierDivisor_fittingIdeal_pullback_fittingIdealProdAll
         (k : ℤ))
 ```
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_isEffectiveCartierDivisor_fittingIdeal_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean#L336). The attribute's comment: “the U-admissible blowup making every Fitting ideal effective Cartier, for ℱ|\_U = 0”.
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_isEffectiveCartierDivisor_fittingIdeal_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean#L336). The attribute's comment: “the U-admissible blowup making every Fitting ideal effective Cartier, for ℱ|\_U = 0”.
 
 > For a finitely presented `𝒪_X`-module `ℱ` with `ℱ|_U = 0` there is a `U`-admissible blowup
 > `b : X' → X` on which every Fitting ideal of `b^*ℱ` is an effective Cartier divisor.
@@ -201,7 +201,7 @@ theorem exists_isAdmissibleBlowup_isEffectiveCartierDivisor_fittingIdeal_pullbac
         (fittingIdeal ((Scheme.Modules.pullback b).obj F) (k : ℤ))
 ```
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_canonicalFiltrations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DivisorSum/CanonicalFiltrations.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DivisorSum/CanonicalFiltrations.lean#L94). The attribute's comment: “the blowup, the divisors, both canonical filtrations and every graded piece's rank”.
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_canonicalFiltrations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DivisorSum/CanonicalFiltrations.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DivisorSum/CanonicalFiltrations.lean#L94). The attribute's comment: “the blowup, the divisors, both canonical filtrations and every graded piece's rank”.
 
 > **Stacks Project, Tag 0ESU.** Let `ℱ` be an `𝒪_X`-module of finite presentation vanishing on
 > an open `U ⊆ X`. Then there is a `U`-admissible blowup `b : X' → X` and a locally finite family of
@@ -285,7 +285,7 @@ theorem exists_isAdmissibleBlowup_canonicalFiltrations [F.IsFinitePresentation] 
               (∏ j ∈ Finset.Icc (i + 1) N, e j) • s = 0)
 ```
 
-**`Stacks.Divisors.isEffectiveCartierDivisor_locallyFiniteSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DivisorSum/LocallyFinite.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DivisorSum/LocallyFinite.lean#L176). The attribute's comment: “the locally finite sum E\_k = D\_\{k+1} + 2D\_\{k+2} + ⋯ is effective Cartier”. References: EGA IV (21.2.7), “partial”.
+**`Stacks.Divisors.isEffectiveCartierDivisor_locallyFiniteSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DivisorSum/LocallyFinite.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DivisorSum/LocallyFinite.lean#L176). The attribute's comment: “the locally finite sum E\_k = D\_\{k+1} + 2D\_\{k+2} + ⋯ is effective Cartier”. References: EGA IV (21.2.7), “partial”.
 
 > **The sum of a locally finite family of effective Cartier divisors is an effective Cartier
 > divisor.**
@@ -296,7 +296,7 @@ theorem isEffectiveCartierDivisor_locallyFiniteSum {ι : Type*} {D : ι → X.Id
     IsEffectiveCartierDivisor (locallyFiniteSum D n)
 ```
 
-**`fittingIdeal_quotient_span_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L151). The attribute's comment: “the Fitting ideals of a presentation matrix divided by f”.
+**`fittingIdeal_quotient_span_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L151). The attribute's comment: “the Fitting ideals of a presentation matrix divided by f”.
 
 > **Stacks Project, Tag 0ESU**, the Fitting ideals of a scaled presentation.
 > If `A = f • B` is an `n`-row presentation matrix of `𝓕` and `B` presents `𝓕'`, then
@@ -309,7 +309,7 @@ theorem fittingIdeal_quotient_span_smul {n : ℕ} {J : Type*} (B : Matrix (Fin n
       Ideal.span {f} ^ (n - k) * fittingIdeal (M := (Fin n → R) ⧸ B.columnSpan) (k : ℤ)
 ```
 
-**`Stacks.ScaledPresentation.fittingIdeal_cokernel_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L406). The attribute's comment: “the Fitting ideals of a square presentation matrix divided by f”.
+**`Stacks.ScaledPresentation.fittingIdeal_cokernel_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L406). The attribute's comment: “the Fitting ideals of a square presentation matrix divided by f”.
 
 > **Stacks Project, Tag 0ESU**, the Fitting ideals of a square presentation matrix divided by
 > `f`: if `𝓕` is presented by `f • B` and `𝓕'` by `B`, then `Fit_k(𝓕) = (f)^{n-k} Fit_k(𝓕')`.
@@ -320,7 +320,7 @@ theorem fittingIdeal_cokernel_smul (k : ℕ) :
       Ideal.span {f} ^ (n - k) * fittingIdeal (M := Cokernel B) (k : ℤ)
 ```
 
-**`Stacks.ScaledPresentation.shortExact_ofFree_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L425). The attribute's comment: “the canonical sequence 0 → 𝒪\_\{D\_n}^\{⊕n} → ℱ → ℱ' → 0 of a local presentation”.
+**`Stacks.ScaledPresentation.shortExact_ofFree_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L425). The attribute's comment: “the canonical sequence 0 → 𝒪\_\{D\_n}^\{⊕n} → ℱ → ℱ' → 0 of a local presentation”.
 
 > **Stacks Project, Tag 0ESU**, the first canonical short exact sequence of a local
 > presentation. For `A = f • B` with `B` injective, writing `𝓕 = Rⁿ / A Rⁿ` and `𝓕' = Rⁿ / B Rⁿ`,
@@ -341,7 +341,7 @@ theorem shortExact_ofFree_toBase (hf : f ∈ nonZeroDivisors R)
       LinearMap.range (ofFree B f) = LinearMap.ker (LinearMap.lsmul R (Cokernel (f • B)) f)
 ```
 
-**`Stacks.ScaledPresentation.shortExact_ofBase_toFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L443). The attribute's comment: “the canonical sequence 0 → ℱ' → ℱ → 𝒪\_\{D\_n}^\{⊕n} → 0 of a local presentation”.
+**`Stacks.ScaledPresentation.shortExact_ofBase_toFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L443). The attribute's comment: “the canonical sequence 0 → ℱ' → ℱ → 𝒪\_\{D\_n}^\{⊕n} → 0 of a local presentation”.
 
 > **Stacks Project, Tag 0ESU**, the second canonical short exact sequence of a local
 > presentation. For `A = f • B` with `f` a nonzerodivisor, writing `𝓕 = Rⁿ / A Rⁿ` and
@@ -360,7 +360,7 @@ theorem shortExact_ofBase_toFree (hf : f ∈ nonZeroDivisors R) :
       LinearMap.range (ofBase B f) = LinearMap.range (LinearMap.lsmul R (Cokernel (f • B)) f)
 ```
 
-**`Stacks.ScaledPresentation.exists_eq_smul_and_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L496). The attribute's comment: “the local step: a principal Fit\_\{n-1} gives A = f A' and the two sequences”.
+**`Stacks.ScaledPresentation.exists_eq_smul_and_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 496](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L496). The attribute's comment: “the local step: a principal Fit\_\{n-1} gives A = f A' and the two sequences”.
 
 > **Stacks Project, Tag 0ESU**, the local step of the induction. Let `𝓕 = R^{n} / A R^{n}` be
 > presented by a square matrix `A` with `n = m + 1` rows, with `A` injective, and suppose
@@ -392,7 +392,7 @@ theorem exists_eq_smul_and_shortExact {m : ℕ}
           LinearMap.range (LinearMap.lsmul R (Cokernel (f • A')) f))
 ```
 
-**`Stacks.ScaledPresentation.fittingIdeal_cokernel_eq_top_of_fittingIdeal_smul_eq_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 541](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L541). The attribute's comment: “the entries of A' generate the unit ideal”.
+**`Stacks.ScaledPresentation.fittingIdeal_cokernel_eq_top_of_fittingIdeal_smul_eq_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 541](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L541). The attribute's comment: “the entries of A' generate the unit ideal”.
 
 > **Stacks Project, Tag 0ESU**: the entries of `A'` generate the unit ideal. If `𝓕` is presented
 > by `A = f A'` with `A'` square of size `n = m + 1` and `Fit_{n-1}(𝓕)` is generated by the
@@ -409,7 +409,7 @@ theorem fittingIdeal_cokernel_eq_top_of_fittingIdeal_smul_eq_span_singleton {m :
     fittingIdeal (R := R) (M := Cokernel A') (m : ℤ) = ⊤
 ```
 
-**`Stacks.ScaledPresentation.exists_cokernel_equiv_of_isUnit_entry`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/UnitEntryDescent.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/UnitEntryDescent.lean#L225). The attribute's comment: “dropping a generator: a unit relation entry gives a smaller presentation”.
+**`Stacks.ScaledPresentation.exists_cokernel_equiv_of_isUnit_entry`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/UnitEntryDescent.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/UnitEntryDescent.lean#L225). The attribute's comment: “dropping a generator: a unit relation entry gives a smaller presentation”.
 
 > If some entry of a square matrix `A` of size `n = m + 1` is a unit, then the module `Rⁿ / A Rⁿ`
 > presented by `A` is the module presented by a square matrix of size `m`, which is again injective
@@ -423,7 +423,7 @@ theorem exists_cokernel_equiv_of_isUnit_entry {m : ℕ}
         (Function.Injective A.mulVecLin → Function.Injective ψ.mulVecLin)
 ```
 
-**`Stacks.ScaledPresentation.exists_cover_cokernel_equiv_of_fittingIdeal_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/UnitEntryDescent.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/UnitEntryDescent.lean#L281). The attribute's comment: “the Zariski cover on which ℱ' needs only n-1 generators”.
+**`Stacks.ScaledPresentation.exists_cover_cokernel_equiv_of_fittingIdeal_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/UnitEntryDescent.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/UnitEntryDescent.lean#L281). The attribute's comment: “the Zariski cover on which ℱ' needs only n-1 generators”.
 
 > Let `𝓕` be presented by a square matrix `A` of size `n = m + 1` with `Fit_{n-1}(𝓕) = R`. Then
 > the entries of `A` generate the unit ideal — so the basic opens `D(A i j)` cover `Spec R` — and
@@ -447,7 +447,7 @@ theorem exists_cover_cokernel_equiv_of_fittingIdeal_eq_top {m : ℕ}
 
 [Tag 0ESV](https://stacks.math.columbia.edu/tag/0ESV) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_admissibleBlowup_isPerfectTorLEOne_ker_im_coker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PerfectHomomorphismFittingBlowup.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/PerfectHomomorphismFittingBlowup.lean#L164). The attribute's comment: “the U-admissible blowup after which the kernel, image and cokernel of the pullback of φ are perfect of Tor dimension ≤ 1”.
+**`AlgebraicGeometry.exists_admissibleBlowup_isPerfectTorLEOne_ker_im_coker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PerfectHomomorphismFittingBlowup.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/PerfectHomomorphismFittingBlowup.lean#L164). The attribute's comment: “the U-admissible blowup after which the kernel, image and cokernel of the pullback of φ are perfect of Tor dimension ≤ 1”.
 
 > **Stacks Project, Tag 0ESV.** Let `X` be a scheme and `φ : ℱ ⟶ 𝒢` a homomorphism of perfect
 > `𝒪_X`-modules of Tor dimension at most one. Let `U ⊆ X` be a scheme-theoretically dense open with
@@ -487,4 +487,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.41, Tag 0F8K](https://stacks.math.columbia.edu/tag/0F8K)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.72 Auxiliary lemmas on morphisms
 
-Section 59.72 of the Stacks Project, [Tag 095J](https://stacks.math.columbia.edu/tag/095J). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.72 of the Stacks Project, [Tag 095J](https://stacks.math.columbia.edu/tag/095J). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03S0, a lemma
 
 [Tag 03S0](https://stacks.math.columbia.edu/tag/03S0) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_constructible_partition_finite_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/FiniteEtaleStratification.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/FiniteEtaleStratification.lean#L574).
+**`AlgebraicGeometry.exists_constructible_partition_finite_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/FiniteEtaleStratification.lean, line 574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/FiniteEtaleStratification.lean#L574).
 
 > Let `f : U ⟶ X` be an étale morphism of quasi-compact and quasi-separated schemes. Then `X`
 > has a partition into constructible locally closed subschemes over each of which the base change
@@ -35,7 +35,7 @@ public theorem exists_constructible_partition_finite_etale
 
 [Tag 03S1](https://stacks.math.columbia.edu/tag/03S1) in the Stacks Project.
 
-**`AlgebraicGeometry.finite_preimage_singleton_iff_exists_affine_open_isFinite_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/GenericallyFinite.lean, line 513](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/GenericallyFinite.lean#L513). The attribute's comment: “forward direction over an affine open”.
+**`AlgebraicGeometry.finite_preimage_singleton_iff_exists_affine_open_isFinite_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/GenericallyFinite.lean, line 513](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/GenericallyFinite.lean#L513). The attribute's comment: “forward direction over an affine open”.
 
 > **Stacks Project, Tag 02NW, condition (4).** For a quasi-compact and quasi-separated
 > morphism locally of finite type, finiteness of the fibre over a generic point of an
@@ -54,7 +54,7 @@ theorem finite_preimage_singleton_iff_exists_affine_open_isFinite_restrict
 
 [Tag 095K](https://stacks.math.columbia.edu/tag/095K) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finite_affine_stratification_split_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/BaseChangeDecomposition.lean, line 2088](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/BaseChangeDecomposition.lean#L2088). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.exists_finite_affine_stratification_split_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/BaseChangeDecomposition.lean, line 2088](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/BaseChangeDecomposition.lean#L2088). The attribute's comment: “part (2)”.
 
 > A finite locally free cover of each affine stratum splits the reduced pullback into
 > finitely many copies of the reduced covering scheme.
@@ -83,7 +83,7 @@ public theorem exists_finite_affine_stratification_split_reduction
           e.hom ≫ Sigma.desc (fun _ : Fin m ↦ 𝟙 S'.nilradical.subscheme) = q
 ```
 
-**`AlgebraicGeometry.exists_surjective_affine_baseChange_thickening_finiteEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/BaseChangeDecomposition.lean, line 2150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/BaseChangeDecomposition.lean#L2150). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exists_surjective_affine_baseChange_thickening_finiteEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/BaseChangeDecomposition.lean, line 2150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/BaseChangeDecomposition.lean#L2150). The attribute's comment: “part (1)”.
 
 > After a surjective affine base change, the pullback contains a finite étale thickening.
 
@@ -107,4 +107,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.72, Tag 095J](https://stacks.math.columbia.edu/tag/095J)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.111 Formally catenary rings
 
-Section 15.111 of the Stacks Project, [Tag 0AW1](https://stacks.math.columbia.edu/tag/0AW1). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.111 of the Stacks Project, [Tag 0AW1](https://stacks.math.columbia.edu/tag/0AW1). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AW2, a definition
 
 [Tag 0AW2](https://stacks.math.columbia.edu/tag/0AW2) in the Stacks Project.
 
-**`IsFormallyCatenary`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Catenary/Formal.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Catenary/Formal.lean#L116). References: EGA IV (7.1.9).
+**`IsFormallyCatenary`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Catenary/Formal.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Catenary/Formal.lean#L116). References: EGA IV (7.1.9).
 
 > A local ring `A` is formally catenary if, for every minimal prime `p` of `A`, the spectrum
 > of the quotient of its maximal-ideal-adic completion by the extension of `p` is
@@ -28,7 +28,7 @@ def IsFormallyCatenary (A : Type*) [CommRing A] [IsLocalRing A] : Prop
 
 [Tag 0AW3](https://stacks.math.columbia.edu/tag/0AW3) in the Stacks Project.
 
-**`not_isUniversallyCatenary_of_not_isFormallyCatenary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Catenary/Formal.lean, line 1715](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Catenary/Formal.lean#L1715).
+**`not_isUniversallyCatenary_of_not_isFormallyCatenary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Catenary/Formal.lean, line 1717](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Catenary/Formal.lean#L1717).
 
 > **Stacks 0AW3.** A Noetherian local ring which is not formally catenary is not universally
 > catenary.
@@ -43,7 +43,7 @@ theorem not_isUniversallyCatenary_of_not_isFormallyCatenary
 
 [Tag 0AW4](https://stacks.math.columbia.edu/tag/0AW4) in the Stacks Project.
 
-**`flat_local_catenary_equidim_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Equidimensional/FlatLocal.lean, line 557](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Equidimensional/FlatLocal.lean#L557). The attribute's comment: “(1)”. References: EGA IV (7.1.3), “(ii) 'in particular'”.
+**`flat_local_catenary_equidim_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Equidimensional/FlatLocal.lean, line 557](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Equidimensional/FlatLocal.lean#L557). The attribute's comment: “(1)”. References: EGA IV (7.1.3), “(ii) 'in particular'”.
 
 > **Stacks 0AW4 (1).** For a flat local map `A → B` of Noetherian local rings with
 > `B` catenary and `Spec(B)` equidimensional, the fibre `Spec(B / pB)` is
@@ -59,7 +59,7 @@ theorem flat_local_catenary_equidim_fibre (A B : Type*) [CommRing A] [CommRing B
     SpecEquidimensional (B ⧸ p.map (algebraMap A B))
 ```
 
-**`flat_local_catenary_equidim_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Equidimensional/FlatLocal.lean, line 570](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Equidimensional/FlatLocal.lean#L570). The attribute's comment: “(2)”. References: EGA IV (7.1.3), “(i)”; EGA IV (7.8.3), “(x)”; EGA IV (7.8.4), “partial”.
+**`flat_local_catenary_equidim_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Equidimensional/FlatLocal.lean, line 570](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Equidimensional/FlatLocal.lean#L570). The attribute's comment: “(2)”. References: EGA IV (7.1.3), “(i)”; EGA IV (7.8.3), “(x)”; EGA IV (7.8.4), “partial”.
 
 > **Stacks 0AW4 (2).** For a flat local map `A → B` of Noetherian local rings with
 > `B` catenary and `Spec(B)` equidimensional, the base `A` is catenary and `Spec(A)`
@@ -78,7 +78,7 @@ theorem flat_local_catenary_equidim_base (A B : Type*) [CommRing A] [CommRing B]
 
 [Tag 0AW5](https://stacks.math.columbia.edu/tag/0AW5) in the Stacks Project.
 
-**`isUniversallyCatenary_of_isFormallyCatenary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Catenary/Formal.lean, line 652](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Catenary/Formal.lean#L652). References: EGA IV (7.1.11), “(i)”.
+**`isUniversallyCatenary_of_isFormallyCatenary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Catenary/Formal.lean, line 654](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Catenary/Formal.lean#L654). References: EGA IV (7.1.11), “(i)”.
 
 > **Stacks 0AW5.** A formally catenary Noetherian local ring is universally catenary.
 
@@ -92,7 +92,7 @@ theorem isUniversallyCatenary_of_isFormallyCatenary
 
 [Tag 0AW6](https://stacks.math.columbia.edu/tag/0AW6) in the Stacks Project.
 
-**`isUniversallyCatenary_iff_isFormallyCatenary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Catenary/Formal.lean, line 1742](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Catenary/Formal.lean#L1742). References: EGA IV (7.1.11), “(i)”.
+**`isUniversallyCatenary_iff_isFormallyCatenary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Catenary/Formal.lean, line 1744](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Catenary/Formal.lean#L1744). References: EGA IV (7.1.11), “(i)”.
 
 > **Ratliff's theorem (Stacks 0AW6).** A Noetherian local ring is universally catenary if and
 > only if it is formally catenary.
@@ -107,7 +107,7 @@ theorem isUniversallyCatenary_iff_isFormallyCatenary
 
 [Tag 0C2F](https://stacks.math.columbia.edu/tag/0C2F) in the Stacks Project.
 
-**`StacksDraft.Catenary.isUniversallyCatenary_henselization_and_of_isUnibranch`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Catenary/Henselization.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Catenary/Henselization.lean#L400).
+**`StacksDraft.Catenary.isUniversallyCatenary_henselization_and_of_isUnibranch`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Catenary/Henselization.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Catenary/Henselization.lean#L400).
 
 > **Stacks 0C2F.** A Noetherian local ring with geometrically normal formal fibres has a
 > universally catenary henselization, and is itself universally catenary if it is unibranch.
@@ -131,4 +131,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.111, Tag 0AW1](https://stacks.math.columbia.edu/tag/0AW1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

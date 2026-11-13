@@ -8,7 +8,7 @@ proof: formalized
 
 # Fisher information and the Cramér–Rao bound
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html).
 
 ## Fisher information
 
@@ -16,13 +16,13 @@ The **Fisher information** at `θ` of the one-parameter family of densities `p �
 respect to `ν`: `∫ (∂_θ p θ x)² / p θ x dν(x)`. Points with `p θ x = 0` contribute `0` (for a
 nonnegative family, `∂_θ p θ x = 0` there).
 
-Formalized by `MathlibExt.Probability.Statistics.FisherInformation.fisherInformation`, a definition declared in [MathlibExt/Probability/Statistics/FisherInformation.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/FisherInformation.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html#fisher-information).
+Formalized by `MathlibExt.Probability.Statistics.FisherInformation.fisherInformation`, a definition declared in [MathlibExt/Probability/Statistics/FisherInformation.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/FisherInformation.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html#fisher-information).
 
 ## Probability law of a density family member
 
 The probability law with density `p θ` with respect to `ν`.
 
-Formalized by `MathlibExt.Probability.Statistics.FisherInformation.lawOf`, a definition declared in [MathlibExt/Probability/Statistics/FisherInformation.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/FisherInformation.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html#law-of).
+Formalized by `MathlibExt.Probability.Statistics.FisherInformation.lawOf`, a definition declared in [MathlibExt/Probability/Statistics/FisherInformation.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/FisherInformation.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html#law-of).
 
 ## Cramér–Rao inequality, multiplicative form
 
@@ -34,7 +34,7 @@ says `g'(θ) = 0`.
 
 - Cramér (1946), ch. 32; Rao (1945); Lehmann & Casella (1998), ch. 2.
 
-Formalized by `MathlibExt.Probability.Statistics.FisherInformation.sq_deriv_le_fisherInformation_mul`, a theorem declared in [MathlibExt/Probability/Statistics/FisherInformation.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/FisherInformation.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html#sq-deriv-le-fisher-information-mul).
+Formalized by `MathlibExt.Probability.Statistics.FisherInformation.sq_deriv_le_fisherInformation_mul`, a theorem declared in [MathlibExt/Probability/Statistics/FisherInformation.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/FisherInformation.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html#sq-deriv-le-fisher-information-mul).
 
 ## Cramér–Rao inequality
 
@@ -49,7 +49,7 @@ sign at `θ`, then `g'(θ)² / I(θ) ≤ Var_θ T`. When `I(θ) = 0` the left si
 
 - Cramér (1946), ch. 32; Rao (1945); Lehmann & Casella (1998), ch. 2.
 
-Formalized by `MathlibExt.Probability.Statistics.FisherInformation.cramerRao_general`, a theorem declared in [MathlibExt/Probability/Statistics/FisherInformation.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/FisherInformation.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html#cramer-rao-general).
+Formalized by `MathlibExt.Probability.Statistics.FisherInformation.cramerRao_general`, a theorem declared in [MathlibExt/Probability/Statistics/FisherInformation.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/FisherInformation.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html#cramer-rao-general).
 
 ## Cramér–Rao inequality
 
@@ -64,7 +64,7 @@ needed; see `cramerRao_general`.
 
 - Cramér (1946), ch. 32; Rao (1945); Lehmann & Casella (1998), ch. 2. Proves the deferred entry `cramerRao`.
 
-Formalized by `MathlibExt.Probability.Statistics.FisherInformation.cramerRao`, a theorem declared in [MathlibExt/Probability/Statistics/FisherInformation.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/FisherInformation.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html#cramer-rao).
+Formalized by `MathlibExt.Probability.Statistics.FisherInformation.cramerRao`, a theorem declared in [MathlibExt/Probability/Statistics/FisherInformation.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/FisherInformation.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html#cramer-rao).
 
 ## Wald's consistency theorem for maximum likelihood
 
@@ -80,7 +80,7 @@ let `θhat n ω` maximize the log-likelihood `∑_{i<n} log p θ (X i ω)` over 
 
 - Wald (1949); Ferguson (1996), Theorem 17. Proves the deferred entry `ae_tendsto_maximumLikelihood`.
 
-Formalized by `MathlibExt.Probability.Statistics.FisherInformation.ae_tendsto_maximumLikelihood`, a theorem declared in [MathlibExt/Probability/Statistics/FisherInformation.lean, line 517](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/FisherInformation.lean#L517). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html#ae-tendsto-maximum-likelihood).
+Formalized by `MathlibExt.Probability.Statistics.FisherInformation.ae_tendsto_maximumLikelihood`, a theorem declared in [MathlibExt/Probability/Statistics/FisherInformation.lean, line 517](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/FisherInformation.lean#L517). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html#ae-tendsto-maximum-likelihood).
 
 ## Depends on
 
@@ -89,4 +89,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fisher information and the Cramér–Rao bound](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/statistical-estimation/fisher-information-and-the-cram-r-rao-bound)

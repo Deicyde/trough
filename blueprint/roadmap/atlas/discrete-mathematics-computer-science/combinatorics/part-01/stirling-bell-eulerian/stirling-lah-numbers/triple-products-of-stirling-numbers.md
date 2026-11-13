@@ -7,7 +7,7 @@ statement: formalized
 
 # Triple products of Stirling numbers
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/triple-products-of-stirling-numbers/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/triple-products-of-stirling-numbers/index.html).
 
 ## Triple products of Stirling numbers bracket the binomial coefficient
 
@@ -23,7 +23,7 @@ $\frac{c(p + j, j)\, c(n + j, p + j)}{c(n + j, j)} \le \binom{n}{p} \le
 
 - René Gy, *On Certain Products of Three Stirling Numbers*, INTEGERS 26 (2026), Article A108, Theorem 2.1.
 
-Stated but not proved: `MetaMathlibExt.stirling_triple_ratio_bounds_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/triple-products-of-stirling-numbers/index.html#stirling-triple-ratio-bounds-choose).
+Stated but not proved: `MetaMathlibExt.stirling_triple_ratio_bounds_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/triple-products-of-stirling-numbers/index.html#stirling-triple-ratio-bounds-choose).
 
 ## Gy's inequality for Stirling numbers of the second kind
 
@@ -37,7 +37,7 @@ integers, so that $n - 2k$ may be negative.
 
 - René Gy, *On Certain Products of Three Stirling Numbers*, INTEGERS 26 (2026), Article A108, Lemma 2.1.
 
-Stated but not proved: `MetaMathlibExt.mul_stirlingSecond_sub_gt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/triple-products-of-stirling-numbers/index.html#mul-stirling-second-sub-gt).
+Stated but not proved: `MetaMathlibExt.mul_stirlingSecond_sub_gt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/triple-products-of-stirling-numbers/index.html#mul-stirling-second-sub-gt).
 
 ## Gy's triple-ratio inequalities for log-concave sequences
 
@@ -57,7 +57,7 @@ $$\frac{h_n(p+j+1)}{h_n(p+j)} \cdot \frac{h_p(j+1)}{h_p(j)} \le \frac{h_{n+p}(j+
 
 - René Gy, *On Certain Products of Three Stirling Numbers*, INTEGERS 26 (2026), Article A108, Theorem 3.1.
 
-Stated but not proved: `MetaMathlibExt.symm_triple_ratio_of_logConcave` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/triple-products-of-stirling-numbers/index.html#symm-triple-ratio-of-log-concave).
+Stated but not proved: `MetaMathlibExt.symm_triple_ratio_of_logConcave` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/triple-products-of-stirling-numbers/index.html#symm-triple-ratio-of-log-concave).
 
 ## Gy's triple-ratio inequalities for log-convex sequences
 
@@ -77,7 +77,7 @@ $$\frac{h_{n+p}(j+1)}{h_{n+p}(j)} \le \frac{h_n(p+j+1)}{h_n(p+j)} \cdot \frac{h_
 
 - René Gy, *On Certain Products of Three Stirling Numbers*, INTEGERS 26 (2026), Article A108, Theorem 3.1.
 
-Stated but not proved: `MetaMathlibExt.symm_triple_ratio_of_logConvex` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/triple-products-of-stirling-numbers/index.html#symm-triple-ratio-of-log-convex).
+Stated but not proved: `MetaMathlibExt.symm_triple_ratio_of_logConvex` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingTripleProductWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/triple-products-of-stirling-numbers/index.html#symm-triple-ratio-of-log-convex).
 
 ## Depends on
 
@@ -86,4 +86,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Triple products of Stirling numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/triple-products-of-stirling-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/triple-products-of-stirling-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/triple-products-of-stirling-numbers)

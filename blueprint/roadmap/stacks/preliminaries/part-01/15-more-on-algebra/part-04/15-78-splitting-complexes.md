@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.78 Splitting complexes
 
-Section 15.78 of the Stacks Project, [Tag 0BCF](https://stacks.math.columbia.edu/tag/0BCF). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.78 of the Stacks Project, [Tag 0BCF](https://stacks.math.columbia.edu/tag/0BCF). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BCG, a lemma
 
 [Tag 0BCG](https://stacks.math.columbia.edu/tag/0BCG) in the Stacks Project.
 
-**`StacksDraft.ProjectiveAmplitude.hom_eq_zero_and_existsUnique_iso_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean#L181).
+**`StacksDraft.ProjectiveAmplitude.hom_eq_zero_and_existsUnique_iso_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean#L181).
 
 > **Stacks 0BCG.** If `L` has projective amplitude in `[a, b]`, then every morphism from `L` to
 > an object whose cohomology vanishes in all degrees `≥ a` is zero. A distinguished triangle
@@ -45,7 +45,7 @@ theorem hom_eq_zero_and_existsUnique_iso_biprod
 
 [Tag 0A1U](https://stacks.math.columbia.edu/tag/0A1U) in the Stacks Project.
 
-**`StacksDraft.Perfect.exists_localization_perfect_truncGE_and_iso_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/FibreCriterion/BaseChangeSurjective.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/FibreCriterion/BaseChangeSurjective.lean#L328).
+**`StacksDraft.Perfect.exists_localization_perfect_truncGE_and_iso_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/FibreCriterion/BaseChangeSurjective.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/FibreCriterion/BaseChangeSurjective.lean#L328).
 
 > Let `R` be a ring, `p ⊂ R` a prime and `K` a pseudo-coherent object of
 > `D(R)`. If for some `i ∈ ℤ` the map `H^i(K) ⊗_R κ(p) → H^i(K ⊗_R^L κ(p))` is surjective, then
@@ -80,7 +80,7 @@ theorem exists_localization_perfect_truncGE_and_iso_biprod
 
 [Tag 0A1V](https://stacks.math.columbia.edu/tag/0A1V) in the Stacks Project.
 
-**`StacksDraft.Perfect.exists_localization_finite_free_homology_and_iso_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/FibreCriterion/ThreeTermSplitting.lean, line 615](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/FibreCriterion/ThreeTermSplitting.lean#L615).
+**`StacksDraft.Perfect.exists_localization_finite_free_homology_and_iso_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/FibreCriterion/ThreeTermSplitting.lean, line 615](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/FibreCriterion/ThreeTermSplitting.lean#L615).
 
 > Let `R` be a ring, `p ⊂ R` a prime and `K` a pseudo-coherent object of
 > `D(R)`. If for some `i ∈ ℤ` both maps `H^i(K) ⊗_R κ(p) → H^i(K ⊗_R^L κ(p))` and
@@ -135,7 +135,7 @@ theorem exists_localization_finite_free_homology_and_iso_biprod
 
 [Tag 068U](https://stacks.math.columbia.edu/tag/068U) in the Stacks Project.
 
-**`StacksDraft.Perfect.exists_localization_iso_biprod_truncGE_truncLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/FibreCriterion/FibreCohomologyVanishing.lean, line 708](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/FibreCriterion/FibreCohomologyVanishing.lean#L708).
+**`StacksDraft.Perfect.exists_localization_iso_biprod_truncGE_truncLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/FibreCriterion/FibreCohomologyVanishing.lean, line 707](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/FibreCriterion/FibreCohomologyVanishing.lean#L707).
 
 > Let `R` be a ring, `p ⊂ R` a prime, `i ∈ ℤ` and let `K` be a pseudo-coherent
 > object of `D(R)` with `H^i(K ⊗_R^L κ(p)) = 0`. Then there is `f ∈ R`, `f ∉ p`, and a canonical
@@ -170,7 +170,7 @@ theorem exists_localization_iso_biprod_truncGE_truncLE
 
 [Tag 0G97](https://stacks.math.columbia.edu/tag/0G97) in the Stacks Project.
 
-**`StacksDraft.ProjectiveAmplitude.existsUnique_iso_biprod_truncations_of_ext_map_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean#L294).
+**`StacksDraft.ProjectiveAmplitude.existsUnique_iso_biprod_truncations_of_ext_map_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean#L294).
 
 > **Stacks 0G97.** Let `K` be a bounded above object of `D(R)` and let `a` be an integer.
 > Assume that for every injective `R`-module map `M ⟶ M'` the induced map
@@ -202,7 +202,7 @@ theorem existsUnique_iso_biprod_truncations_of_ext_map_injective
 
 [Tag 0G98](https://stacks.math.columbia.edu/tag/0G98) in the Stacks Project.
 
-**`StacksDraft.ProjectiveAmplitude.existsUnique_iso_biprod_truncations_of_ext_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean#L401).
+**`StacksDraft.ProjectiveAmplitude.existsUnique_iso_biprod_truncations_of_ext_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/ProjectiveAmplitude.lean#L401).
 
 > **Stacks 0G98.** Let `K` be a bounded above object of `D(R)` and let `a` be an integer.
 > Assume `Ext^{-a}(K, M) = 0` for every `R`-module `M`. Then `τ_{≥ a + 1}K` has projective
@@ -234,4 +234,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.78, Tag 0BCF](https://stacks.math.columbia.edu/tag/0BCF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

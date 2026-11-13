@@ -1,32 +1,37 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Examples.RadicalTower.fpqcTorsor_not_isomorphic_fppfTorsor
+lean: Stacks.Examples.RadicalTower.exists_not_isEquivalence_fppfTorsors_toPrincipal
 statement: formalized
 proof: formalized
 ---
 
 # 110.52 A torsor which is not an fppf torsor
 
-Section 110.52 of the Stacks Project, [Tag 04AF](https://stacks.math.columbia.edu/tag/04AF). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.52 of the Stacks Project, [Tag 04AF](https://stacks.math.columbia.edu/tag/04AF). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 077B, a lemma
 
 [Tag 077B](https://stacks.math.columbia.edu/tag/077B) in the Stacks Project.
 
-**`Stacks.Examples.RadicalTower.fpqcTorsor_not_isomorphic_fppfTorsor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/GroupSchemes/PrincipalNotFppf/Torsor.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/GroupSchemes/PrincipalNotFppf/Torsor.lean#L222). The attribute's comment: “counterexample: for S = Spec ℚ and G = ∏ᵢ μ\_\{i+2} a principal homogeneous G-space is exhibited that is isomorphic to no fppf G-torsor, which is the failure of essential surjectivity the source's proof invokes; the two stacks G-Principal and G-Torsors are not themselves constructed here”.
+**`Stacks.Examples.RadicalTower.exists_not_isEquivalence_fppfTorsors_toPrincipal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/GroupSchemes/PrincipalNotFppf/StackComparison.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/GroupSchemes/PrincipalNotFppf/StackComparison.lean#L301). The attribute's comment: “G-Principal and G-Torsors are not equivalent in general: for S = Spec ℚ and the group scheme G = ∏ᵢ μ\_\{i+2} the canonical functor G-Torsors ⥤ G-Principal is not essentially surjective, hence not an equivalence, over every big fppf site”.
 
-> **Stacks Project, Tag 077B.**  Over `S = Spec ℚ` the group scheme `G = ∏ᵢ μ_{i+2}` has a
-> principal homogeneous space, namely `P = Spec ℚ[x₀, x₁, …]/(xᵢ ^ (i + 2) - 2)`, which is
-> isomorphic to no fppf `G`-torsor.  Hence the inclusion of the fppf `G`-torsors into the
-> principal homogeneous `G`-spaces is not essentially surjective, so the two stacks they form are
-> not equivalent in general.
+> **Stacks Project, Tag 077B.**  The stack `G-Principal` of principal homogeneous `G`-spaces
+> (Stacks 04UN) and the stack `G-Torsors` of fppf `G`-torsors (Stacks 04UR) are not equivalent in
+> general: there are a big fppf site, a scheme `S` in it and a group scheme `G` over `S` in it,
+> regarded as a group algebraic space over `S`, for which the canonical functor
+> `G-Torsors ⥤ G-Principal` is not essentially surjective, hence not an equivalence.  One may take
+> `S = Spec ℚ` and `G = ∏ᵢ μ_{i+2}`, over any big fppf site: this is
+> `Stacks.Examples.RadicalTower.not_essSurj_toPrincipal`.
 
 ```lean
-theorem fpqcTorsor_not_isomorphic_fppfTorsor :
-    IsFpqcTorsor base groupObj torsorObj ∧
-      ∀ (Y : Over base) (_ : ModObj groupObj Y),
-        IsFppfTorsor base groupObj Y → ¬ Nonempty (torsorObj ≅ Y)
+theorem exists_not_isEquivalence_fppfTorsors_toPrincipal :
+    ∃ (𝒞 : BigFppfSite.{0}) (S : Scheme.{0}) (hS : 𝒞.Contains S)
+      (G : BigFppfOver 𝒞 S hS) (hG : GrpObj ((toSchemeOver 𝒞 S hS).obj G)),
+      ¬ (FppfTorsors.toPrincipal (isAlgebraicSpace_yoneda 𝒞 S hS (BigFppfOver.mk 𝒞 S hS hS (𝟙 S)))
+          (GroupAlgebraicSpace.ofGroupSchemeInSite 𝒞 S hS _ _ G hG)).EssSurj ∧
+      ¬ (FppfTorsors.toPrincipal (isAlgebraicSpace_yoneda 𝒞 S hS (BigFppfOver.mk 𝒞 S hS hS (𝟙 S)))
+          (GroupAlgebraicSpace.ofGroupSchemeInSite 𝒞 S hS _ _ G hG)).IsEquivalence
 ```
 
 ## Depends on
@@ -36,4 +41,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.52, Tag 04AF](https://stacks.math.columbia.edu/tag/04AF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

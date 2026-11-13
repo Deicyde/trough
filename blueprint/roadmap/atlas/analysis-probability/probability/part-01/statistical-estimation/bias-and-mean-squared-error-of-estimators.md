@@ -8,7 +8,7 @@ proof: formalized
 
 # Bias and mean squared error of estimators
 
-29 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html).
+29 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html).
 
 ## Bias of an estimator
 
@@ -24,7 +24,7 @@ the source (Chapter 2, Definition 2.2.1), so a nonintegrable estimator has no fi
 
 - blueprint `af_723199a7ca6fb3e936a73618`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.bias`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#bias).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.bias`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#bias).
 
 ## Bias as an integral
 
@@ -36,7 +36,7 @@ target. Then the bias of $W$ under $\mu$ at $\theta$ equals $\int_S W \, d\mu - 
 
 - blueprint `af_723199a7ca6fb3e936a73618`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.bias_eq_integral`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#bias-eq-integral).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.bias_eq_integral`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#bias-eq-integral).
 
 ## Mean squared error
 
@@ -52,7 +52,7 @@ defined.
 
 - Casella–Berger, Definition 7.3.1; blueprint `af_fd40353442120bd19166139d`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredError`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#mean-squared-error).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredError`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#mean-squared-error).
 
 ## Mean squared error as an integral
 
@@ -65,7 +65,7 @@ under $\mu$ equals $\int_S (W(x) - \theta)^2 \, d\mu(x)$.
 
 - blueprint `af_fd40353442120bd19166139d`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredError_eq_integral`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#mean-squared-error-eq-integral).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredError_eq_integral`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#mean-squared-error-eq-integral).
 
 ## Extended mean squared error
 
@@ -83,7 +83,7 @@ $\infty$.
 
 - blueprint `af_fd40353442120bd19166139d`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredErrorENN`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#mean-squared-error-enn).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredErrorENN`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#mean-squared-error-enn).
 
 ## Finite and extended mean squared error agree
 
@@ -97,7 +97,7 @@ mean squared error of $W$ at $\theta$ under $\mu$.
 
 - blueprint `af_fd40353442120bd19166139d`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.ofReal_meanSquaredError`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#of-real-mean-squared-error).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.ofReal_meanSquaredError`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#of-real-mean-squared-error).
 
 ## Extended mean squared error of a measurable non-integrable squared error is infinite
 
@@ -111,7 +111,7 @@ error $\int_S (W(x) - \theta)^2 \, d\mu(x) \in [0, \infty]$ of $W$ at $\theta$ e
 
 - blueprint `af_fd40353442120bd19166139d`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredErrorENN_eq_top_of_not_finite`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#mean-squared-error-enn-eq-top-of-not-fin).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredErrorENN_eq_top_of_not_finite`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#mean-squared-error-enn-eq-top-of-not-fin).
 
 ## Family bias of an estimator
 
@@ -127,7 +127,7 @@ The estimator $W$ is fixed before the family and does not depend on $\theta$.
 
 - blueprint `af_723199a7ca6fb3e936a73618`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.familyBias`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#family-bias).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.familyBias`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#family-bias).
 
 ## Family bias as an integral
 
@@ -141,7 +141,7 @@ $\int_S W \, dP_\theta - \tau(\theta)$.
 
 - blueprint `af_723199a7ca6fb3e936a73618`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.familyBias_apply`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#family-bias-apply).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.familyBias_apply`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#family-bias-apply).
 
 ## Family mean squared error of an estimator
 
@@ -159,7 +159,7 @@ The estimator $W$ is fixed before the family and does not depend on $\theta$.
 
 - blueprint `af_fd40353442120bd19166139d`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.familyMeanSquaredError`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#family-mean-squared-error).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.familyMeanSquaredError`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#family-mean-squared-error).
 
 ## Family mean squared error as an integral
 
@@ -174,7 +174,7 @@ $\int_S (W(x) - \tau(\theta))^2 \, dP_\theta(x)$.
 
 - blueprint `af_fd40353442120bd19166139d`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.familyMeanSquaredError_apply`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#family-mean-squared-error-apply).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.familyMeanSquaredError_apply`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#family-mean-squared-error-apply).
 
 ## Unbiased estimator
 
@@ -190,7 +190,7 @@ estimator $W$ is fixed and does not depend on $\theta$.
 
 - Casella–Berger Definition 7.3.2 is the case $\tau(\theta) = \theta$ on real parameters; the general target follows section 7.3.2. Blueprint `af_95118d196fd6478105a6eb43`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.IsUnbiased`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#is-unbiased).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.IsUnbiased`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#is-unbiased).
 
 ## Unbiased estimators are integrable
 
@@ -199,7 +199,7 @@ probability measures on $S$ and $\tau : \Theta \to \mathbb{R}$ a target function
 $W : S \to \mathbb{R}$ is unbiased for $\tau$, then $W$ is $P_\theta$-integrable for every
 $\theta \in \Theta$.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.IsUnbiased.integrable`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#integrable).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.IsUnbiased.integrable`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#integrable).
 
 ## An unbiased estimator has the target as its expectation
 
@@ -209,7 +209,7 @@ measures on $S$ and $\tau : \Theta \to \mathbb{R}$ a target function. If $W$ is 
 $\tau$ under the family $(P_\theta)$, then $\int_S W \, dP_\theta = \tau(\theta)$ for every
 $\theta \in \Theta$.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.IsUnbiased.expect_eq`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#expect-eq).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.IsUnbiased.expect_eq`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#expect-eq).
 
 ## An estimator is unbiased exactly when its bias vanishes
 
@@ -219,7 +219,7 @@ $\tau : \Theta \to \mathbb{R}$ a target function, and $W : S \to \mathbb{R}$ an 
 $P_\theta$-integrable for every $\theta \in \Theta$. Then $W$ is unbiased for $\tau$ if and only if
 its family bias $\int_S W \, dP_\theta - \tau(\theta)$ is zero for every $\theta \in \Theta$.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.isUnbiased_iff_forall_familyBias_eq_zero`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#is-unbiased-iff-forall-family-bias-eq-ze).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.isUnbiased_iff_forall_familyBias_eq_zero`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#is-unbiased-iff-forall-family-bias-eq-ze).
 
 ## A finite second moment makes the squared error integrable
 
@@ -227,7 +227,7 @@ Let $\mu$ be a probability
 measure on $S$ and $W : S \to \mathbb{R}$ an estimator in $L^2(\mu)$. Then for every
 $\theta \in \mathbb{R}$ the squared error $x \mapsto (W(x) - \theta)^2$ is $\mu$-integrable.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.integrable_sq_sub_of_memLp_two`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#integrable-sq-sub-of-mem-lp-two).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.integrable_sq_sub_of_memLp_two`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#integrable-sq-sub-of-mem-lp-two).
 
 ## Bias–variance decomposition of the mean squared error
 
@@ -243,7 +243,7 @@ The integrability that the mean squared error and the bias require follows from 
 
 - Casella–Berger, equation (7.3.1); blueprint `af_3a1bafba0b7dff99554b01f0`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredError_eq_variance_add_sq_bias`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#mean-squared-error-eq-variance-add-sq-bi).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredError_eq_variance_add_sq_bias`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#mean-squared-error-eq-variance-add-sq-bi).
 
 ## Mean squared error as variance plus squared mean deviation
 
@@ -257,7 +257,7 @@ $\operatorname{Var}_\mu(W) + \left(\int_S W \, d\mu - \theta\right)^2$.
 
 - Casella–Berger, equation (7.3.1) in expectation form; blueprint `af_3a1bafba0b7dff99554b01f0`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredError_eq_variance_add_sq_expectation_sub`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#mean-squared-error-eq-variance-add-sq-ex).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredError_eq_variance_add_sq_expectation_sub`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#mean-squared-error-eq-variance-add-sq-ex).
 
 ## Bias–variance decomposition of the extended mean squared error
 
@@ -268,7 +268,7 @@ error $\int_S (W(x) - \theta)^2 \, d\mu(x)$, computed in $[0, \infty]$, is finit
 $\operatorname{Var}_\mu(W) + b^2$, where $b = \int_S W \, d\mu - \theta$ is the bias of $W$ at
 $\theta$ under $\mu$.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.ofReal_variance_add_sq_bias`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#of-real-variance-add-sq-bias).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.ofReal_variance_add_sq_bias`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#of-real-variance-add-sq-bias).
 
 ## Bias–variance decomposition for a parametric family
 
@@ -284,7 +284,7 @@ $W$ under $P_\theta$ plus the square of the family bias of $W$ at $\theta$.
 
 - equation 7.3.1, in family form for a single fixed estimator.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.familyMeanSquaredError_eq_variance_add_sq_familyBias`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#family-mean-squared-error-eq-variance-ad).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.familyMeanSquaredError_eq_variance_add_sq_familyBias`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#family-mean-squared-error-eq-variance-ad).
 
 ## Mean squared error of an unbiased estimator
 
@@ -298,7 +298,7 @@ $\operatorname{Var}_\mu(W)$.
 
 - the display following Definition 7.3.2.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredError_eq_variance_of_expect_eq`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#mean-squared-error-eq-variance-of-expect).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredError_eq_variance_of_expect_eq`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#mean-squared-error-eq-variance-of-expect).
 
 ## An unbiased estimator has mean squared error equal to its variance
 
@@ -310,7 +310,7 @@ second moment under $P_\theta$ and $(W - \tau(\theta))^2$ is integrable for $P_\
 every $\theta \in \Theta$ the family mean squared error of $W$ at $\theta$ equals the variance
 $\operatorname{Var}_{P_\theta}(W)$ of $W$ under $P_\theta$.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.IsUnbiased.familyMeanSquaredError_eq_variance`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#family-mean-squared-error-eq-variance).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.IsUnbiased.familyMeanSquaredError_eq_variance`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#family-mean-squared-error-eq-variance).
 
 ## Frequentist risk
 
@@ -328,7 +328,7 @@ No prior, kernel or optimality criterion enters.
 
 - Casella–Berger equation 7.3.16; the integrability hypothesis is the expectation domain of Chapter 2 Definition 2.2.1. Blueprint `af_36871388da7326a07a5e4f71`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.frequentistRisk`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#frequentist-risk).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.frequentistRisk`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#frequentist-risk).
 
 ## Frequentist risk as an integral
 
@@ -339,7 +339,7 @@ $x \mapsto \ell(\theta, \delta(x))$ is integrable for $P_\theta$ for every $\the
 Then for every $\theta \in \Theta$ the frequentist risk of $\delta$ at $\theta$ equals
 $\int_S \ell(\theta, \delta(x)) \, dP_\theta(x)$.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.frequentistRisk_apply`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#frequentist-risk-apply).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.frequentistRisk_apply`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#frequentist-risk-apply).
 
 ## Frequentist risk is nonnegative
 
@@ -349,7 +349,7 @@ $\ell : \Theta \times A \to [0, \infty)$ a loss such that $x \mapsto \ell(\theta
 $P_\theta$-integrable for every $\theta \in \Theta$. Then the frequentist risk $R(\theta, \delta)$
 of $\delta$ at $\theta$ is nonnegative for every $\theta \in \Theta$.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.frequentistRisk_nonneg`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#frequentist-risk-nonneg).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.frequentistRisk_nonneg`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#frequentist-risk-nonneg).
 
 ## Extended frequentist risk
 
@@ -366,7 +366,7 @@ measurable but not integrable at $\theta$, it equals $\infty$.
 
 - blueprint `af_36871388da7326a07a5e4f71`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.frequentistRiskENN`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#frequentist-risk-enn).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.frequentistRiskENN`, a definition declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#frequentist-risk-enn).
 
 ## Finite and extended frequentist risk agree
 
@@ -382,7 +382,7 @@ the frequentist risk of $\delta$ at $\theta$.
 
 - blueprint `af_36871388da7326a07a5e4f71`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.ofReal_frequentistRisk`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 340](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#of-real-frequentist-risk).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.ofReal_frequentistRisk`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 340](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#of-real-frequentist-risk).
 
 ## Extended frequentist risk of a measurable non-integrable loss is infinite
 
@@ -400,7 +400,7 @@ So a measurable non-integrable loss is never assigned a finite extended risk.
 
 - blueprint `af_36871388da7326a07a5e4f71`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.frequentistRiskENN_eq_top_of_not_integrable`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#frequentist-risk-enn-eq-top-of-not-integ).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.frequentistRiskENN_eq_top_of_not_integrable`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#frequentist-risk-enn-eq-top-of-not-integ).
 
 ## Mean squared error is frequentist risk under squared-error loss
 
@@ -416,7 +416,7 @@ family mean squared error of $W$ for $\tau$ at $\theta$.
 
 - blueprint `af_36871388da7326a07a5e4f71`.
 
-Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.frequentistRisk_squared_eq_familyMeanSquaredError`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/EstimationRisk.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#frequentist-risk-squared-eq-family-mean).
+Formalized by `MathlibExt.Probability.Statistics.EstimationRisk.frequentistRisk_squared_eq_familyMeanSquaredError`, a theorem declared in [MathlibExt/Probability/Statistics/EstimationRisk.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/EstimationRisk.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html#frequentist-risk-squared-eq-family-mean).
 
 ## Depends on
 
@@ -425,4 +425,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bias and mean squared error of estimators](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/statistical-estimation/bias-and-mean-squared-error-of-estimators)

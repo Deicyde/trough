@@ -8,13 +8,13 @@ proof: formalized
 
 # 99.15 The stack of curves
 
-Section 99.15 of the Stacks Project, [Tag 0D4Y](https://stacks.math.columbia.edu/tag/0D4Y). 14 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 99.15 of the Stacks Project, [Tag 0D4Y](https://stacks.math.columbia.edu/tag/0D4Y). 14 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D4Z, a situation
 
 [Tag 0D4Z](https://stacks.math.columbia.edu/tag/0D4Z) in the Stacks Project.
 
-**`AlgebraicGeometry.CurveFamily`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean#L83). The attribute's comment: “objects”.
+**`AlgebraicGeometry.CurveFamily`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean#L83). The attribute's comment: “objects”.
 
 > A *family of curves*: a morphism from an algebraic space to a scheme of
 > the big fppf site which is flat, proper, of finite presentation and of relative dimension at
@@ -24,7 +24,7 @@ Section 99.15 of the Stacks Project, [Tag 0D4Y](https://stacks.math.columbia.edu
 structure CurveFamily
 ```
 
-**`AlgebraicGeometry.CurveFamily.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean#L109). The attribute's comment: “morphisms”.
+**`AlgebraicGeometry.CurveFamily.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean#L109). The attribute's comment: “morphisms”.
 
 > A morphism of families of curves: a morphism of total spaces over a
 > morphism of base schemes whose square is cartesian.
@@ -33,7 +33,7 @@ structure CurveFamily
 structure Hom (X Y : CurveFamily B hZ)
 ```
 
-**An instance with no name** in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean#L135). The attribute's comment: “category”.
+**An instance with no name** in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean#L135). The attribute's comment: “category”.
 
 > Families of curves and cartesian squares between them form a category,
 > with componentwise identities and composition.
@@ -42,7 +42,7 @@ structure Hom (X Y : CurveFamily B hZ)
 instance : Category (CurveFamily B hZ)
 ```
 
-**`AlgebraicGeometry.curvesProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean#L153). The attribute's comment: “projection”.
+**`AlgebraicGeometry.curvesProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilies.lean#L153). The attribute's comment: “projection”.
 
 > The forgetful functor taking a family of curves to its base scheme, which makes the category
 > of families of curves a category over the big fppf site.
@@ -55,7 +55,7 @@ def curvesProjection : CurveFamily B hZ ⥤ B.Schemes
 
 [Tag 0D50](https://stacks.math.columbia.edu/tag/0D50) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesToCartesianProperFlat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean#L403). The attribute's comment: “the inclusion”.
+**`AlgebraicGeometry.curvesToCartesianProperFlat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean#L405). The attribute's comment: “the inclusion”.
 
 > **Stacks equation 0D50.** The inclusion of the category of families of curves into the
 > category of finitely presented, flat and proper families of algebraic spaces over varying base
@@ -83,7 +83,7 @@ def curvesToCartesianProperFlat :
 
 [Tag 0D51](https://stacks.math.columbia.edu/tag/0D51) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesProjection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean#L182).
+**`AlgebraicGeometry.curvesProjection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean#L184).
 
 > **Stacks 0D51.** The category of families of curves is fibred in groupoids over the big fppf
 > site of schemes.
@@ -97,7 +97,7 @@ theorem curvesProjection_isFiberedInGroupoids :
 
 [Tag 0D52](https://stacks.math.columbia.edu/tag/0D52) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesProjection_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesStack.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesStack.lean#L262).
+**`AlgebraicGeometry.curvesProjection_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesStack.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesStack.lean#L262).
 
 > **Stacks 0D52.** The category of families of curves is a stack in groupoids over the big fppf
 > site of schemes, for covering families indexed in every universe.
@@ -117,13 +117,13 @@ theorem curvesProjection_isStackInGroupoids :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.C1590Private.hasRepresentableDiagonal_curvesFiberedCategory`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/C1590Private/CurvesDiagonal.lean#L77), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/CurvesAlgebraicStackUnconditional.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesAlgebraicStackUnconditional.lean#L42) (StacksFrontier).
+- [`AlgebraicGeometry.C1590Private.hasRepresentableDiagonal_curvesFiberedCategory`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/C1590Private/CurvesDiagonal.lean#L77), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/CurvesAlgebraicStackUnconditional.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesAlgebraicStackUnconditional.lean#L42) (StacksFrontier).
 
 ## Tag 0D54, a remark
 
 [Tag 0D54](https://stacks.math.columbia.edu/tag/0D54) in the Stacks Project.
 
-**`AlgebraicGeometry.CurveFamilyOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesOverSpace.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesOverSpace.lean#L95). The attribute's comment: “the category of families of curves over a base algebraic space”.
+**`AlgebraicGeometry.CurveFamilyOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesOverSpace.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesOverSpace.lean#L95). The attribute's comment: “the category of families of curves over a base algebraic space”.
 
 > **Stacks 0D54.** The category of families of curves over a fixed algebraic space `A`: an object
 > is a family of curves together with a morphism from its base scheme to `A`, and a morphism is a
@@ -133,7 +133,7 @@ Declarations registered for the tag:
 abbrev CurveFamilyOver (A : AlgebraicSpaces B integerBase hZ)
 ```
 
-**`AlgebraicGeometry.CurveFamilyOver.isEquivalence_toTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesOverSpace.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesOverSpace.lean#L179). The attribute's comment: “the base-change square”.
+**`AlgebraicGeometry.CurveFamilyOver.isEquivalence_toTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesOverSpace.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesOverSpace.lean#L179). The attribute's comment: “the base-change square”.
 
 > **Stacks 0D54.** The absolute and the relative categories of curves form a 2-fibre product
 > square over the big fppf site of schemes: the canonical comparison from families of curves over `A`
@@ -148,7 +148,7 @@ theorem isEquivalence_toTwoFibreProduct (A : AlgebraicSpaces B integerBase hZ) :
 
 [Tag 0D55](https://stacks.math.columbia.edu/tag/0D55) in the Stacks Project.
 
-**`AlgebraicGeometry.isLimitPreserving_curvesFiberedCategory_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLimitPreservingUnconditional.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesLimitPreservingUnconditional.lean#L51). The attribute's comment: “at a small index category”.
+**`AlgebraicGeometry.isLimitPreserving_curvesFiberedCategory_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLimitPreservingUnconditional.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesLimitPreservingUnconditional.lean#L51). The attribute's comment: “at a small index category”.
 
 > **Stacks 0D55.** The stack of families of curves over the big fppf site of `Spec(ℤ)` is limit
 > preserving in the sense of Artin's Axioms, Definition 07XL: for every inverse system of affine
@@ -166,7 +166,7 @@ theorem isLimitPreserving_curvesFiberedCategory_unconditional :
 
 [Tag 0D56](https://stacks.math.columbia.edu/tag/0D56) in the Stacks Project.
 
-**`AlgebraicGeometry.curvePushoutEquivalenceOfIsPushout`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProperPushoutGluingUnconditional.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ProperPushoutGluingUnconditional.lean#L58).
+**`AlgebraicGeometry.curvePushoutEquivalenceOfIsPushout`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProperPushoutGluingUnconditional.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ProperPushoutGluingUnconditional.lean#L58).
 
 > **[Stacks Project, Tag 0D56].** For a pushout `S' = S ⨿_T T'` of schemes along a
 > thickening `i : T ⟶ T'` and an affine morphism `f : T ⟶ S`, the canonical restriction functor
@@ -187,7 +187,7 @@ def curvePushoutEquivalenceOfIsPushout {T T' S S' : B.Schemes}
 
 [Tag 0D57](https://stacks.math.columbia.edu/tag/0D57) in the Stacks Project.
 
-**`AlgebraicGeometry.CurveDeformation.finiteDimensional_predeformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveDeformationsFiniteDimensional.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveDeformationsFiniteDimensional.lean#L68). The attribute's comment: “(1): for a family of curves x over any field k and any Λ with Spec k → Spec Λ, the predeformation category F\_\{X,k,x} is a deformation category whose tangent space T F and infinitesimal automorphisms Inf(F) are finite dimensional; k need not be of finite type over Z”.
+**`AlgebraicGeometry.CurveDeformation.finiteDimensional_predeformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveDeformationsFiniteDimensional.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveDeformationsFiniteDimensional.lean#L68). The attribute's comment: “(1): for a family of curves x over any field k and any Λ with Spec k → Spec Λ, the predeformation category F\_\{X,k,x} is a deformation category whose tangent space T F and infinitesimal automorphisms Inf(F) are finite dimensional; k need not be of finite type over Z”.
 
 > **Stacks Project, Tag 0D57, part (1).** Let `k` be a field and let `x = (X → Spec k)` be a
 > family of curves over `Spec k`, lying over `Spec k → Spec Λ → Spec ℤ`. Then the predeformation
@@ -208,7 +208,7 @@ theorem finiteDimensional_predeformation :
     ∃ hD : IsDeformationCategory.{u, u, u} (predeformation x hx).projection,
       (letI : Fact (IsPredeformationCategory
           (BasedCategory.ofFunctor (predeformation x hx).projection).p) := ⟨hD.predeformation⟩;
-        letI : Fact (SchlessingerConditionS2 (CategoryOfElements.π
+        letI : Fact (SchlessingerConditionS2 (Functor.Elements.π
           (isomorphismClasses (BasedCategory.ofFunctor (predeformation x hx).projection)
             hD.predeformation.cofibered))) := ⟨tangentConditionS2.{u, u, u} hD⟩;
         FiniteDimensional k (artinianTangentSpace Λ k
@@ -220,7 +220,7 @@ theorem finiteDimensional_predeformation :
             hD.satisfiesRS).functor.obj (FGModuleCat.of k (ULift.{u} k)))
 ```
 
-**`AlgebraicGeometry.finiteDimensional_curves_tangentFunctor_infinitesimalAutomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveTangentFunctor.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveTangentFunctor.lean#L68). The attribute's comment: “(2): for a family of curves x over a field k, the tangent functor T\_x and the functor Inf\_x of Stacks 07Y9 exist, and T\_x(k) and Inf\_x(k) are finite dimensional; both are stated for every k-linear functor carrying the identifications of 07Y9”.
+**`AlgebraicGeometry.finiteDimensional_curves_tangentFunctor_infinitesimalAutomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveTangentFunctor.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveTangentFunctor.lean#L68). The attribute's comment: “(2): for a family of curves x over a field k, the tangent functor T\_x and the functor Inf\_x of Stacks 07Y9 exist, and T\_x(k) and Inf\_x(k) are finite dimensional; both are stated for every k-linear functor carrying the identifications of 07Y9”.
 
 > Let `k` be a field and let `x = (X → Spec k)` be a family of curves over `Spec k`. Then the
 > tangent functor `T_x` and the functor of infinitesimal automorphisms `Inf_x` of Stacks 07Y9 exist,
@@ -255,7 +255,7 @@ theorem finiteDimensional_curves_tangentFunctor_infinitesimalAutomorphismFunctor
 
 [Tag 0D58](https://stacks.math.columbia.edu/tag/0D58) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesFormalObject_isEffective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesFormalEffectiveUnconditional.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesFormalEffectiveUnconditional.lean#L54).
+**`AlgebraicGeometry.curvesFormalObject_isEffective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesFormalEffectiveUnconditional.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesFormalEffectiveUnconditional.lean#L54).
 
 > Every formal object of the stack `Curves` of families of curves over `Spec(ℤ)` is effective:
 > it comes, up to isomorphism of formal objects, from a family of curves over the spectrum of its
@@ -275,14 +275,14 @@ theorem curvesFormalObject_isEffective (B : BigFppfSite.{u}) (hZ : B.Contains in
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.curves_openVersalityOf_specZ`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatOpennessOfVersalityOfDiagonal.lean#L117), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/CurvesOpennessOfVersalityTags.lean, line 28](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesOpennessOfVersalityTags.lean#L28) (StacksFrontier): “the first assertion: the stack of curves satisfies openness of versality over `Spec(ℤ)`”.
-- [`AlgebraicGeometry.curves_openVersalityOf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatOpennessOfVersalityOfDiagonal.lean#L124), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/CurvesOpennessOfVersalityTags.lean, line 32](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesOpennessOfVersalityTags.lean#L32) (StacksFrontier): “the second assertion: for a Noetherian scheme `S` of the site, the stack of `S`-curves -- the base change of Remark 0D54 -- satisfies openness of versality over `S`”.
+- [`AlgebraicGeometry.curves_openVersalityOf_specZ`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatOpennessOfVersalityOfDiagonal.lean#L117), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/CurvesOpennessOfVersalityTags.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesOpennessOfVersalityTags.lean#L28) (StacksFrontier): “the first assertion: the stack of curves satisfies openness of versality over `Spec(ℤ)`”.
+- [`AlgebraicGeometry.curves_openVersalityOf`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatOpennessOfVersalityOfDiagonal.lean#L124), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/CurvesOpennessOfVersalityTags.lean, line 32](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesOpennessOfVersalityTags.lean#L32) (StacksFrontier): “the second assertion: for a Noetherian scheme `S` of the site, the stack of `S`-curves -- the base change of Remark 0D54 -- satisfies openness of versality over `S`”.
 
 ## Tag 0D5A, a theorem
 
 [Tag 0D5A](https://stacks.math.columbia.edu/tag/0D5A) in the Stacks Project.
 
-**`AlgebraicGeometry.isAlgebraicStack_curvesStack_and_curveFamilyOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesAlgebraicStackUnconditional.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesAlgebraicStackUnconditional.lean#L47).
+**`AlgebraicGeometry.isAlgebraicStack_curvesStack_and_curveFamilyOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesAlgebraicStackUnconditional.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesAlgebraicStackUnconditional.lean#L47).
 
 > The stack `Curves` (Situation 0D4Z) is algebraic. In fact, for every algebraic space `A` the
 > stack `A-Curves` of families of curves over `A` (Remark 0D54) is algebraic.
@@ -299,7 +299,7 @@ theorem isAlgebraicStack_curvesStack_and_curveFamilyOver :
 
 [Tag 0D5B](https://stacks.math.columbia.edu/tag/0D5B) in the Stacks Project.
 
-**`AlgebraicGeometry.isRepresentableByAlgebraicSpaces_curvesToCartesianProperFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean, line 1153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean#L1153). The attribute's comment: “representability by algebraic spaces”.
+**`AlgebraicGeometry.isRepresentableByAlgebraicSpaces_curvesToCartesianProperFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean, line 1155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean#L1155). The attribute's comment: “representability by algebraic spaces”.
 
 > **Stacks 0D5B.** The 1-morphism from the category of families of curves to the category of
 > finitely presented, flat and proper families of algebraic spaces of Stacks equation 0D50 is
@@ -311,7 +311,7 @@ theorem isRepresentableByAlgebraicSpaces_curvesToCartesianProperFlat :
       (curvesToCartesianProperFlatHom B hZ).hom
 ```
 
-**`AlgebraicGeometry.isOpenImmersion_curvesToCartesianProperFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean, line 1194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean#L1194). The attribute's comment: “open immersions”.
+**`AlgebraicGeometry.isOpenImmersion_curvesToCartesianProperFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean, line 1196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean#L1196). The attribute's comment: “open immersions”.
 
 > **Stacks 0D5B.** The 1-morphism from the category of families of curves to the category of
 > finitely presented, flat and proper families of algebraic spaces of Stacks equation 0D50 is an
@@ -323,7 +323,7 @@ theorem isOpenImmersion_curvesToCartesianProperFlat :
     Stack.IsOpenImmersion B integerBase hZ (curvesToCartesianProperFlatHom B hZ)
 ```
 
-**`AlgebraicGeometry.isClosedImmersion_curvesToCartesianProperFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean, line 1205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean#L1205). The attribute's comment: “closed immersions”.
+**`AlgebraicGeometry.isClosedImmersion_curvesToCartesianProperFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean, line 1207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesFibered.lean#L1207). The attribute's comment: “closed immersions”.
 
 > **Stacks 0D5B.** The 1-morphism from the category of families of curves to the category of
 > finitely presented, flat and proper families of algebraic spaces of Stacks equation 0D50 is a
@@ -339,7 +339,7 @@ theorem isClosedImmersion_curvesToCartesianProperFlat :
 
 [Tag 0D5C](https://stacks.math.columbia.edu/tag/0D5C) in the Stacks Project.
 
-**`AlgebraicGeometry.polarizedCurvesToCurves_isAlgebraic_smooth_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/C1783/PolarizedCurvesRemark.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/C1783/PolarizedCurvesRemark.lean#L176).
+**`AlgebraicGeometry.polarizedCurvesToCurves_isAlgebraic_smooth_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/C1783/PolarizedCurvesRemark.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/C1783/PolarizedCurvesRemark.lean#L176).
 
 > **Stacks 0D5C.** Let `PolarizedCurves = 𝒞urves ×_{𝒮paces'_{fp, flat, proper}} 𝒫olarized`
 > (`AlgebraicGeometry.polarizedCurvesUnconditional`), over the big fppf site of `Spec ℤ`.
@@ -442,4 +442,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 99.15, Tag 0D4Y](https://stacks.math.columbia.edu/tag/0D4Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

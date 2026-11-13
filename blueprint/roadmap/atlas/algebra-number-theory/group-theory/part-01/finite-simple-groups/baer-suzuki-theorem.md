@@ -7,7 +7,7 @@ statement: formalized
 
 # Baer–Suzuki theorem
 
-6 results, 3 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html).
+6 results, 3 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html).
 
 ## Baer–Suzuki property for periodic groups at the prime 2
 
@@ -18,7 +18,7 @@ $a$. Here a $2$-subgroup is a subgroup in which every element has order a power 
 
 This is the case $p = 2$ of Kourovka Problem 11.11(a) (A. V. Borovik).
 
-Formalized by `MathlibExt.GroupTheory.BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.baerSuzukiPeriodicTwo`, a definition declared in [WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html#baer-suzuki-periodic-two).
+Formalized by `MathlibExt.GroupTheory.BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.baerSuzukiPeriodicTwo`, a definition declared in [WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html#baer-suzuki-periodic-two).
 
 ## Baer–Suzuki property for binary finite groups
 
@@ -29,7 +29,7 @@ containing $a$. Here a $p$-subgroup is a subgroup in which every element has ord
 
 This is the statement asked about in Kourovka Problem 11.11(b) (A. V. Borovik).
 
-Formalized by `MathlibExt.GroupTheory.BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.baerSuzukiBinaryFinite`, a definition declared in [WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html#baer-suzuki-binary-finite).
+Formalized by `MathlibExt.GroupTheory.BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.baerSuzukiBinaryFinite`, a definition declared in [WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html#baer-suzuki-binary-finite).
 
 ## Failure of the Baer–Suzuki theorem for periodic groups at the prime 2
 
@@ -45,7 +45,7 @@ Sozutov, 2015).
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 11.11 (A. V. Borovik); resolution: V. D. Mazurov, A. Yu. Olshanskii and A. I. Sozutov, Algebra and Logic 54, no. 2 (2015), 161-166 (a); A. I. Sozutov, Siberian Math. J. 41, no. 3 (2000), 561-562 (b), Kourovka Archive, Problem 11.11.
 
-Stated but not proved: `MathlibExt.GroupTheory.BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.baerSuzukiPeriodicTwo_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html#baer-suzuki-periodic-two-refuted).
+Stated but not proved: `MathlibExt.GroupTheory.BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.baerSuzukiPeriodicTwo_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html#baer-suzuki-periodic-two-refuted).
 
 ## Baer–Suzuki theorem for binary finite groups
 
@@ -63,7 +63,7 @@ conjugates of $a$ has $p$-power order, and the normal closure of $a$ is a normal
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 11.11 (A. V. Borovik); resolution: V. D. Mazurov, A. Yu. Olshanskii and A. I. Sozutov, Algebra and Logic 54, no. 2 (2015), 161-166 (a); A. I. Sozutov, Siberian Math. J. 41, no. 3 (2000), 561-562 (b), Kourovka Archive, Problem 11.11.
 
-Stated but not proved: `MathlibExt.GroupTheory.BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.baerSuzukiBinaryFinite_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html#baer-suzuki-binary-finite-holds).
+Stated but not proved: `MathlibExt.GroupTheory.BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.baerSuzukiBinaryFinite_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BaerSuzukiPeriodicBinaryFiniteKourovka11Problem11Wanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html#baer-suzuki-binary-finite-holds).
 
 ## The $p$-core of a group
 
@@ -75,7 +75,7 @@ When $p$ is prime, $O_p(G)$ is itself a normal $p$-subgroup of $G$, hence the la
 finiteness hypothesis is needed: the join of two normal $p$-subgroups is again a normal
 $p$-subgroup, so the family is directed and every element of the supremum lies in one of them.
 
-Formalized by `MathlibExt.GroupTheory.BaerSuzukiWanted.GroupTheory.Defs.pCore`, a definition declared in [WantedExt/GroupTheory/BaerSuzukiWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BaerSuzukiWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html#p-core).
+Formalized by `MathlibExt.GroupTheory.BaerSuzukiWanted.GroupTheory.Defs.pCore`, a definition declared in [WantedExt/GroupTheory/BaerSuzukiWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BaerSuzukiWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html#p-core).
 
 ## Baer–Suzuki theorem
 
@@ -87,7 +87,7 @@ by $x$ and $g x g^{-1}$ is a $p$-group, that is, every element of it has order a
 
 - R. Baer, Engelsche Elemente Noetherscher Gruppen, Math. Ann. 133 (1957), 256-270; M. Suzuki, Finite groups in which the centralizer of any element of order 2 is 2-closed, Ann. of Math. (2) 82 (1965), 191-212. Problem `baer_suzuki` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.GroupTheory.BaerSuzukiWanted.GroupTheory.baer_suzuki` is written with `theorem_wanted` in [WantedExt/GroupTheory/BaerSuzukiWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BaerSuzukiWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html#baer-suzuki).
+Stated but not proved: `MathlibExt.GroupTheory.BaerSuzukiWanted.GroupTheory.baer_suzuki` is written with `theorem_wanted` in [WantedExt/GroupTheory/BaerSuzukiWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BaerSuzukiWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html#baer-suzuki).
 
 ## Depends on
 
@@ -96,4 +96,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Baer–Suzuki theorem](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/finite-simple-groups/baer-suzuki-theorem)

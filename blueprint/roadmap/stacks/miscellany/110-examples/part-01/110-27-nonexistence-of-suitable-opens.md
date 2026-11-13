@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.27 Nonexistence of suitable opens
 
-Section 110.27 of the Stacks Project, [Tag 086G](https://stacks.math.columbia.edu/tag/086G). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.27 of the Stacks Project, [Tag 086G](https://stacks.math.columbia.edu/tag/086G). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 086H, a lemma
 
 [Tag 086H](https://stacks.math.columbia.edu/tag/086H) in the Stacks Project.
 
-**`Stacks.Examples.exists_affine_scheme_punctured_without_quasiCompact_dense_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Scheme/PuncturedAxes.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Scheme/PuncturedAxes.lean#L265). The attribute's comment: “punctured\_affine”.
+**`Stacks.Examples.exists_affine_scheme_punctured_without_quasiCompact_dense_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Scheme/PuncturedAxes.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Scheme/PuncturedAxes.lean#L265). The attribute's comment: “punctured\_affine”.
 
 > There is an affine scheme with a closed point such that its punctured complement contains no
 > quasi-compact dense open subset.
@@ -26,7 +26,7 @@ theorem exists_affine_scheme_punctured_without_quasiCompact_dense_open :
         ¬ ∃ U : Set {x : S // x ≠ s}, IsOpen U ∧ IsCompact U ∧ Dense U
 ```
 
-**`Stacks.Examples.exists_affineOpen_without_disjoint_quasiCompact_dense_union`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Scheme/PuncturedAxes.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Scheme/PuncturedAxes.lean#L279). The attribute's comment: “disjoint\_dense\_union”.
+**`Stacks.Examples.exists_affineOpen_without_disjoint_quasiCompact_dense_union`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Scheme/PuncturedAxes.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Scheme/PuncturedAxes.lean#L279). The attribute's comment: “disjoint\_dense\_union”.
 
 > In some affine scheme, an affine open has no disjoint quasi-compact open whose union with it
 > is dense.
@@ -42,7 +42,7 @@ theorem exists_affineOpen_without_disjoint_quasiCompact_dense_union :
 
 [Tag 086I](https://stacks.math.columbia.edu/tag/086I) in the Stacks Project.
 
-**`Stacks.Examples.exists_qcqs_without_separated_quasiCompact_dense_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Scheme/QcqsWithoutSeparatedDenseOpen.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Scheme/QcqsWithoutSeparatedDenseOpen.lean#L357).
+**`Stacks.Examples.exists_qcqs_without_separated_quasiCompact_dense_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Scheme/QcqsWithoutSeparatedDenseOpen.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Scheme/QcqsWithoutSeparatedDenseOpen.lean#L357).
 
 > **Stacks 086I.** There is a quasi-compact quasi-separated scheme with no separated
 > quasi-compact dense open.
@@ -61,4 +61,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.27, Tag 086G](https://stacks.math.columbia.edu/tag/086G)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

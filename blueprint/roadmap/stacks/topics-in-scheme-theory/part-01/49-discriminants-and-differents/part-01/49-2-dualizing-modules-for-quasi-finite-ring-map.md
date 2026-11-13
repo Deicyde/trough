@@ -8,13 +8,13 @@ proof: formalized
 
 # 49.2 Dualizing modules for quasi-finite ring maps
 
-Section 49.2 of the Stacks Project, [Tag 0BUK](https://stacks.math.columbia.edu/tag/0BUK). 14 tags here are carried by 33 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 49.2 of the Stacks Project, [Tag 0BUK](https://stacks.math.columbia.edu/tag/0BUK). 14 tags here are carried by 33 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BSZ, an equation
 
 [Tag 0BSZ](https://stacks.math.columbia.edu/tag/0BSZ) in the Stacks Project.
 
-**`Stacks.Discriminant.dualizingModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/TraceElement.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/TraceElement.lean#L169).
+**`Stacks.Discriminant.dualizingModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/TraceElement.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/TraceElement.lean#L169).
 
 > The relative dualizing module `Hom_A(B', A) ⊗_{B'} B` of a finite-open factorization
 > `A → B' → B`.
@@ -29,7 +29,7 @@ def dualizingModule {A : Type u} {B : Type v}
 
 [Tag 0BT0](https://stacks.math.columbia.edu/tag/0BT0) in the Stacks Project.
 
-**`Stacks.Discriminant.exists_finite_subalgebra_dominating`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/CommonFactorization.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/CommonFactorization.lean#L136).
+**`Stacks.Discriminant.exists_finite_subalgebra_dominating`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/CommonFactorization.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/CommonFactorization.lean#L136).
 
 > Two finite algebra factorizations, the first of which induces an open immersion on spectra,
 > are dominated by a finite subalgebra inducing an open immersion.
@@ -53,7 +53,7 @@ lemma exists_finite_subalgebra_dominating
 
 [Tag 0BT1](https://stacks.math.columbia.edu/tag/0BT1) in the Stacks Project.
 
-**`Stacks.Discriminant.dualizingModuleEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean#L237). The attribute's comment: “canonical comparison”.
+**`Stacks.Discriminant.dualizingModuleEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean#L237). The attribute's comment: “canonical comparison”.
 
 > **Stacks Project, Tag 0BT1.** The dualizing modules obtained from any two
 > finite-open factorizations are canonically equivalent as modules over the target.
@@ -67,7 +67,7 @@ noncomputable def dualizingModuleEquiv
     dualizingModule F ≃ₗ[B] dualizingModule G
 ```
 
-**`Stacks.Discriminant.dualizingModuleEquiv_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean#L311). The attribute's comment: “characterization on a common refinement”.
+**`Stacks.Discriminant.dualizingModuleEquiv_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean#L311). The attribute's comment: “characterization on a common refinement”.
 
 > The canonical comparison carries a tensor arising from a functional on a common finite-open
 > refinement inside the target to the tensor induced by the same functional in the other
@@ -94,7 +94,7 @@ theorem dualizingModuleEquiv_tmul
       dualizingModule.tmul G (φ.comp rG.toLinearMap) b
 ```
 
-**`Stacks.Discriminant.dualizingModuleEquiv_refl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean#L332). The attribute's comment: “identity comparison”.
+**`Stacks.Discriminant.dualizingModuleEquiv_refl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean#L332). The attribute's comment: “identity comparison”.
 
 > The canonical comparison of a factorization with itself is the identity.
 
@@ -106,7 +106,7 @@ theorem dualizingModuleEquiv_refl
     dualizingModuleEquiv F F = LinearEquiv.refl B (dualizingModule F)
 ```
 
-**`Stacks.Discriminant.dualizingModuleEquiv_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean#L385). The attribute's comment: “composition of comparisons”.
+**`Stacks.Discriminant.dualizingModuleEquiv_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleComparison.lean#L384). The attribute's comment: “composition of comparisons”.
 
 > Canonical comparisons compose independently of an intermediate factorization.
 
@@ -125,7 +125,7 @@ theorem dualizingModuleEquiv_trans
 
 [Tag 0BT2](https://stacks.math.columbia.edu/tag/0BT2) in the Stacks Project.
 
-**`Stacks.Discriminant.dualizingModule_equiv_of_isLocalization_away`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/BaseLocalization.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/BaseLocalization.lean#L78). The attribute's comment: “part (1)”.
+**`Stacks.Discriminant.dualizingModule_equiv_of_isLocalization_away`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/BaseLocalization.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/BaseLocalization.lean#L78). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 0BT2, part (1).** If `A → B` factors through the localization of
 > `A` away from `f`, then computing the relative dualizing module over that localization does not
@@ -143,7 +143,7 @@ public noncomputable def dualizingModule_equiv_of_isLocalization_away
     dualizingModule F ≃ₗ[B] dualizingModule G
 ```
 
-**`Stacks.Discriminant.dualizingModule_equiv_of_isLocalization_away_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/BaseLocalization.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/BaseLocalization.lean#L373). The attribute's comment: “part (1), characterization”.
+**`Stacks.Discriminant.dualizingModule_equiv_of_isLocalization_away_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/BaseLocalization.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/BaseLocalization.lean#L368). The attribute's comment: “part (1), characterization”.
 
 > The base-localization identification carries a functional to its scalar extension along a
 > compatible finite-open factorization.  The displayed equation characterizes this operation on
@@ -170,7 +170,7 @@ public theorem dualizingModule_equiv_of_isLocalization_away_tmul
         (dualizingModule.tmul F φ b) = dualizingModule.tmul G ψ b
 ```
 
-**`Stacks.Discriminant.dualizingModule_equiv_of_isLocalization_away_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/BaseLocalization.lean, line 664](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/BaseLocalization.lean#L664). The attribute's comment: “part (1), naturality”.
+**`Stacks.Discriminant.dualizingModule_equiv_of_isLocalization_away_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/BaseLocalization.lean, line 657](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/BaseLocalization.lean#L657). The attribute's comment: “part (1), naturality”.
 
 > Changing either finite-open factorization does not change the base-localization map.
 
@@ -192,7 +192,7 @@ public theorem dualizingModule_equiv_of_isLocalization_away_natural
         (dualizingModuleEquiv F F' m)
 ```
 
-**`Stacks.Discriminant.localizedModule_dualizingModule_equiv_of_baseLocalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/SimultaneousLocalization.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/SimultaneousLocalization.lean#L53). The attribute's comment: “part (3)”.
+**`Stacks.Discriminant.localizedModule_dualizingModule_equiv_of_baseLocalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/SimultaneousLocalization.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/SimultaneousLocalization.lean#L53). The attribute's comment: “part (3)”.
 
 > **Stacks Project, Tag 0BT2, part (3).** After localizing the base away from `f` and the
 > target away from its image, the relative dualizing module is the corresponding localization of
@@ -215,7 +215,7 @@ public noncomputable def localizedModule_dualizingModule_equiv_of_baseLocalizati
     M ≃ₗ[Bf] dualizingModule G
 ```
 
-**`Stacks.Discriminant.localizedModule_dualizingModule_equiv_of_baseLocalization_eq_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/SimultaneousLocalization.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/SimultaneousLocalization.lean#L80). The attribute's comment: “part (3), compatibility with parts (1) and (2)”.
+**`Stacks.Discriminant.localizedModule_dualizingModule_equiv_of_baseLocalization_eq_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/SimultaneousLocalization.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/SimultaneousLocalization.lean#L80). The attribute's comment: “part (3), compatibility with parts (1) and (2)”.
 
 > Simultaneous localization is the composite of localization in the target and replacement
 > of the base by its localization.  This fixes the canonical identification, rather than merely
@@ -244,7 +244,7 @@ public theorem localizedModule_dualizingModule_equiv_of_baseLocalization_eq_comp
         (dualizingModule_equiv_of_isLocalization_away f H G)
 ```
 
-**`Stacks.Discriminant.localizedModule_dualizingModule_equiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean#L58). The attribute's comment: “part (2)”.
+**`Stacks.Discriminant.localizedModule_dualizingModule_equiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean#L58). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 0BT2, part (2).** Localizing the relative dualizing module away from
 > an element of the target gives the relative dualizing module of the localized target.
@@ -264,7 +264,7 @@ public noncomputable def localizedModule_dualizingModule_equiv
     M ≃ₗ[Bg] dualizingModule G
 ```
 
-**`Stacks.Discriminant.localizedModule_dualizingModule_equiv_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean#L108). The attribute's comment: “part (2), characterization”.
+**`Stacks.Discriminant.localizedModule_dualizingModule_equiv_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean#L108). The attribute's comment: “part (2), characterization”.
 
 > On compatible finite-open factorizations, the target-localization map sends a pure tensor
 > to the tensor obtained by localizing its coefficient in the target.
@@ -291,7 +291,7 @@ public theorem localizedModule_dualizingModule_equiv_tmul
       dualizingModule.tmul G (φ.comp r.toLinearMap) (algebraMap B Bg b)
 ```
 
-**`Stacks.Discriminant.localizedModule_dualizingModule_equiv_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean#L162). The attribute's comment: “part (2), naturality”.
+**`Stacks.Discriminant.localizedModule_dualizingModule_equiv_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean#L162). The attribute's comment: “part (2), naturality”.
 
 > The target-localization identification is natural in the finite-open factorization of the
 > localized algebra.
@@ -314,7 +314,7 @@ public theorem localizedModule_dualizingModule_equiv_natural
       localizedModule_dualizingModule_equiv g F G' localizationMap hM m
 ```
 
-**`Stacks.Discriminant.localizedModule_dualizingModule_equiv_natural_in_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean#L233). The attribute's comment: “part (2), naturality in both factorizations”.
+**`Stacks.Discriminant.localizedModule_dualizingModule_equiv_natural_in_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/TargetLocalization.lean#L233). The attribute's comment: “part (2), naturality in both factorizations”.
 
 > Localization commutes with the canonical comparison of two factorizations of the original
 > algebra, as well as with the comparison of factorizations after localization.  A map between
@@ -352,7 +352,7 @@ public theorem localizedModule_dualizingModule_equiv_natural_in_source
 
 [Tag 0BVB](https://stacks.math.columbia.edu/tag/0BVB) in the Stacks Project.
 
-**`Stacks.Discriminant.dualizingModule.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/BaseChange.lean, line 492](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/BaseChange.lean#L492). The attribute's comment: “the base change map”.
+**`Stacks.Discriminant.dualizingModule.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/BaseChange.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/BaseChange.lean#L490). The attribute's comment: “the base change map”.
 
 > **Stacks Project, Tag 0BVB.** The canonical base change map on relative dualizing
 > modules, computed using a chosen finite-open factorization.  On the dual factor it extends
@@ -371,7 +371,7 @@ noncomputable def baseChange (F : FiniteOpenFactorization.{u, v, w} A B)
       dualizingModule (FiniteOpenFactorization.baseChange F A₁)
 ```
 
-**`Stacks.Discriminant.dualizingModule.baseChange_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/BaseChange.lean, line 627](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/BaseChange.lean#L627). The attribute's comment: “pure tensor formula”.
+**`Stacks.Discriminant.dualizingModule.baseChange_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/BaseChange.lean, line 622](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/BaseChange.lean#L622). The attribute's comment: “pure tensor formula”.
 
 > On a pure tensor, the relative-dualizing base change map extends the dual functional
 > and sends the coefficient to its scalar extension.
@@ -393,7 +393,7 @@ theorem baseChange_tmul (F : FiniteOpenFactorization.{u, v, w} A B)
 
 [Tag 0BVC](https://stacks.math.columbia.edu/tag/0BVC) in the Stacks Project.
 
-**`Stacks.Discriminant.dualizingModule.baseChange_congr`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingBaseChange/Independence.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingBaseChange/Independence.lean#L240). The attribute's comment: “independence of factorization”.
+**`Stacks.Discriminant.dualizingModule.baseChange_congr`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingBaseChange/Independence.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingBaseChange/Independence.lean#L234). The attribute's comment: “independence of factorization”.
 
 > The base change map respects the canonical identification between dualizing
 > modules computed using two finite-open factorizations.
@@ -414,7 +414,7 @@ theorem baseChange_congr
         (dualizingModuleEquiv F G ω)
 ```
 
-**`Stacks.Discriminant.dualizingModule.baseChange_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingBaseChange/Tower.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingBaseChange/Tower.lean#L195). The attribute's comment: “composition of base changes”.
+**`Stacks.Discriminant.dualizingModule.baseChange_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingBaseChange/Tower.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingBaseChange/Tower.lean#L191). The attribute's comment: “composition of base changes”.
 
 > Successive base change maps agree with direct base change after the
 > canonical identification of the iterated tensor product with the direct one.
@@ -438,7 +438,7 @@ theorem baseChange_comp
 
 [Tag 0BT3](https://stacks.math.columbia.edu/tag/0BT3) in the Stacks Project.
 
-**`Stacks.Discriminant.dualizingModule_isBaseChange_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/FlatBaseChange.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/FlatBaseChange.lean#L48).
+**`Stacks.Discriminant.dualizingModule_isBaseChange_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/FlatBaseChange.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/FlatBaseChange.lean#L48).
 
 > **Stacks Project, Tag 0BT3.** Flat base change identifies the scalar extension of
 > the relative dualizing module with the relative dualizing module after base change.
@@ -463,7 +463,7 @@ theorem dualizingModule_isBaseChange_of_flat
 
 [Tag 0BT4](https://stacks.math.columbia.edu/tag/0BT4) in the Stacks Project.
 
-**`Stacks.Discriminant.dualizingModule.comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingComposition/Basic.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingComposition/Basic.lean#L378).
+**`Stacks.Discriminant.dualizingModule.comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingComposition/Basic.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingComposition/Basic.lean#L374).
 
 > **Stacks Project, Tag 0BT4.** The canonical composition map for relative
 > dualizing modules of two composable quasi-finite algebra maps.
@@ -494,7 +494,7 @@ noncomputable def comp
       dualizingModule H
 ```
 
-**`Stacks.Discriminant.dualizingModule.comp_of_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingComposition/Basic.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingComposition/Basic.lean#L471). The attribute's comment: “composition of Hom maps for compatible factorizations”.
+**`Stacks.Discriminant.dualizingModule.comp_of_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingComposition/Basic.lean, line 467](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingComposition/Basic.lean#L467). The attribute's comment: “composition of Hom maps for compatible factorizations”.
 
 > For compatible finite-open factorizations, a functional on the middle
 > algebra that descends to the finite intermediate algebra composes with the
@@ -543,7 +543,7 @@ theorem comp_of_compatible
         h t = f (d * g' t))
 ```
 
-**`Stacks.Discriminant.dualizingModule.comp_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingComposition/Basic.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingComposition/Basic.lean#L554). The attribute's comment: “independence of factorization”.
+**`Stacks.Discriminant.dualizingModule.comp_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingComposition/Basic.lean, line 550](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingComposition/Basic.lean#L550). The attribute's comment: “independence of factorization”.
 
 > The composition map commutes with the canonical comparison isomorphisms
 > when any of the three finite-open factorizations is changed.
@@ -598,7 +598,7 @@ theorem comp_naturality
 
 [Tag 0BT5](https://stacks.math.columbia.edu/tag/0BT5) in the Stacks Project.
 
-**`Stacks.Discriminant.dualizingModuleProdEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleProduct.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleProduct.lean#L89).
+**`Stacks.Discriminant.dualizingModuleProdEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleProduct.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleProduct.lean#L89).
 
 > **Stacks Project, Tag 0BT5.** The dualizing module of a product of quasi-finite
 > Noetherian algebras is canonically the product of their dualizing modules.
@@ -620,7 +620,7 @@ noncomputable def dualizingModuleProdEquiv
     dualizingModule F ≃ₗ[B × C] (dualizingModule FB × dualizingModule FC)
 ```
 
-**`Stacks.Discriminant.dualizingModuleProdEquiv_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleProduct.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleProduct.lean#L473). The attribute's comment: “pure-tensor formula for a product factorization”.
+**`Stacks.Discriminant.dualizingModuleProdEquiv_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleProduct.lean, line 472](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleProduct.lean#L472). The attribute's comment: “pure-tensor formula for a product factorization”.
 
 > For a product factorization, the product equivalence sends a pure tensor to the pair
 > obtained by restricting its functional to the two factors and projecting its coefficient.
@@ -649,7 +649,7 @@ theorem dualizingModuleProdEquiv_tmul
         (f.comp (e.toLinearMap.comp (LinearMap.inr A FB.middle FC.middle))) c)
 ```
 
-**`Stacks.Discriminant.dualizingModuleProdEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleProduct.lean, line 605](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleProduct.lean#L605). The attribute's comment: “independence of factorization”.
+**`Stacks.Discriminant.dualizingModuleProdEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleProduct.lean, line 604](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/DualizingModuleProduct.lean#L604). The attribute's comment: “independence of factorization”.
 
 > Changing the finite-open factorizations of the product and its two factors commutes
 > with the canonical product equivalence.
@@ -679,7 +679,7 @@ theorem dualizingModuleProdEquiv_naturality
 
 [Tag 0BVD](https://stacks.math.columbia.edu/tag/0BVD) in the Stacks Project.
 
-**`Stacks.Discriminant.mem_associatedPrimes_dualizingModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/AssociatedPrimes.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/AssociatedPrimes.lean#L500).
+**`Stacks.Discriminant.mem_associatedPrimes_dualizingModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/AssociatedPrimes.lean, line 494](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/AssociatedPrimes.lean#L494).
 
 > **Stacks Project, Tag 0BVD.** A prime of an algebra with a finite-open factorization
 > is associated to its relative dualizing module if and only if it lies over an associated
@@ -698,7 +698,7 @@ public theorem mem_associatedPrimes_dualizingModule_iff
 
 [Tag 0BVE](https://stacks.math.columbia.edu/tag/0BVE) in the Stacks Project.
 
-**`Stacks.Discriminant.dualizingModule_flat`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/FlatOverBase.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/FlatOverBase.lean#L133).
+**`Stacks.Discriminant.dualizingModule_flat`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/FlatOverBase.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/FlatOverBase.lean#L133).
 
 > **Stacks Project, Tag 0BVE.** The relative dualizing module of a flat quasi-finite
 > homomorphism of Noetherian rings is flat over the base ring.
@@ -718,7 +718,7 @@ public lemma dualizingModule_flat
 
 [Tag 0BVF](https://stacks.math.columbia.edu/tag/0BVF) in the Stacks Project.
 
-**`Stacks.Discriminant.dualizingModule.baseChangeLinearMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/FlatAlgebraBaseChange/Bijective.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/FlatAlgebraBaseChange/Bijective.lean#L547).
+**`Stacks.Discriminant.dualizingModule.baseChangeLinearMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/FlatAlgebraBaseChange/Bijective.lean, line 535](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/DualizingModulesQuasi/FlatAlgebraBaseChange/Bijective.lean#L535).
 
 > **Stacks Project, Tag 0BVF.** For a flat quasi-finite algebra over a Noetherian
 > base, arbitrary base change induces an isomorphism of relative dualizing modules.
@@ -735,7 +735,7 @@ theorem baseChangeLinearMap_bijective
 
 [Tag 0BVG](https://stacks.math.columbia.edu/tag/0BVG) in the Stacks Project.
 
-**`Stacks.Discriminant.exists_relativeDualizingModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingModuleExistence0BVG.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingModuleExistence0BVG.lean#L574). The attribute's comment: “existence”.
+**`Stacks.Discriminant.exists_relativeDualizingModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingModuleExistence0BVG.lean, line 574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingModuleExistence0BVG.lean#L574). The attribute's comment: “existence”.
 
 > **The relative dualizing module of a locally quasi-finite morphism of locally Noetherian
 > schemes exists.** There is a coherent quasi-coherent `𝒪_Y`-module whose sections over every
@@ -761,7 +761,7 @@ public theorem exists_relativeDualizingModule :
             adaptedSheafComparison f k i j hki hkj (c i k.source.1 hki.le s))
 ```
 
-**`Stacks.Discriminant.nonempty_relativeDualizingModuleData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingModuleExistence0BVG.lean, line 605](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingModuleExistence0BVG.lean#L605). The attribute's comment: “existence, with the chart identifications”.
+**`Stacks.Discriminant.nonempty_relativeDualizingModuleData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingModuleExistence0BVG.lean, line 605](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingModuleExistence0BVG.lean#L605). The attribute's comment: “existence, with the chart identifications”.
 
 > **The relative dualizing module of Tag 0BVG, as chart data.** For a morphism locally of
 > finite type and locally quasi-finite between locally Noetherian schemes, the module of
@@ -781,7 +781,7 @@ public theorem exists_relativeDualizingModule :
 public theorem nonempty_relativeDualizingModuleData : Nonempty (RelativeDualizingModuleData f)
 ```
 
-**`Stacks.Discriminant.existsUnique_relativeDualizingComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingModuleUniqueness0BVG.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingModuleUniqueness0BVG.lean#L328). The attribute's comment: “uniqueness”.
+**`Stacks.Discriminant.existsUnique_relativeDualizingComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingModuleUniqueness0BVG.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingModuleUniqueness0BVG.lean#L328). The attribute's comment: “uniqueness”.
 
 > **Stacks Project, Tag 0BVG, uniqueness.** The relative dualizing module of a locally
 > quasi-finite morphism of locally Noetherian schemes is unique: any two coherent `𝒪_Y`-modules
@@ -811,7 +811,7 @@ public theorem existsUnique_relativeDualizingComparison
 
 [Tag 0C0I](https://stacks.math.columbia.edu/tag/0C0I) in the Stacks Project.
 
-**`Dualizing.nonempty_dualizingModule_linearEquiv_homologyZero_relativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/QuasiFiniteDualizingModule.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/QuasiFiniteDualizingModule.lean#L227). The attribute's comment: “ω\_\{B/A} = H⁰(ω•\_\{B/A}), the source's isomorphism being nonunique”.
+**`Dualizing.nonempty_dualizingModule_linearEquiv_homologyZero_relativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/QuasiFiniteDualizingModule.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/QuasiFiniteDualizingModule.lean#L227). The attribute's comment: “ω\_\{B/A} = H⁰(ω•\_\{B/A}), the source's isomorphism being nonunique”.
 
 > **Stacks Project, Tag 0C0I.**  Let `A → B` be a quasi-finite homomorphism of Noetherian rings
 > and let `ω•_{B/A}` be its algebraic relative dualizing complex.  Then the relative dualizing
@@ -839,4 +839,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 49.2, Tag 0BUK](https://stacks.math.columbia.edu/tag/0BUK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

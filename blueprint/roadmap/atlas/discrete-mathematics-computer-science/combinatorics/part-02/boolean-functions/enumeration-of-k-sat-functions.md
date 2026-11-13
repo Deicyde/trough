@@ -7,7 +7,7 @@ statement: formalized
 
 # Enumeration of k-SAT functions
 
-10 results, 9 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html).
+10 results, 9 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html).
 
 ## Satisfied clause
 
@@ -20,7 +20,7 @@ satisfies $C$ if $x_i = b$ for some literal $(i, b) \in C$.
 
 - [OWR-10252930-018], `k`-SAT clause semantics.
 
-Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.ClauseSatisfied`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#clause-satisfied).
+Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.ClauseSatisfied`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#clause-satisfied).
 
 ## $k$-SAT function
 
@@ -34,7 +34,7 @@ assignment $x$, $f(x) = \mathrm{true}$ if and only if $x$ satisfies every clause
 
 - [OWR-10252930-018], `k`-SAT functions.
 
-Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.IsKSATFunction`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#is-ksatfunction).
+Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.IsKSATFunction`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#is-ksatfunction).
 
 ## Positively unate variable
 
@@ -49,7 +49,7 @@ the value of $f$ from true to false.
 
 - [OWR-10252930-018], unate.
 
-Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.IsPositiveUnateIn`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#is-positive-unate-in).
+Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.IsPositiveUnateIn`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#is-positive-unate-in).
 
 ## Negatively unate variable
 
@@ -64,7 +64,7 @@ the value of $f$ from false to true.
 
 - [OWR-10252930-018], unate.
 
-Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.IsNegativeUnateIn`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#is-negative-unate-in).
+Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.IsNegativeUnateIn`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#is-negative-unate-in).
 
 ## Unate Boolean function
 
@@ -76,7 +76,7 @@ in $i$ or negatively unate in $i$.
 
 - [OWR-10252930-018], unate.
 
-Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.IsUnate`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#is-unate).
+Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.IsUnate`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#is-unate).
 
 ## Number of $k$-SAT functions
 
@@ -88,7 +88,7 @@ $k$-SAT functions on $n$ variables.
 
 - [OWR-10252930-018], enumeration of `k`-SAT functions.
 
-Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.countKSATFunctions`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#count-ksatfunctions).
+Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.countKSATFunctions`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#count-ksatfunctions).
 
 ## Number of unate $k$-SAT functions
 
@@ -100,7 +100,7 @@ $k$-SAT functions on $n$ variables and are unate.
 
 - [OWR-10252930-018], typical structure (unate).
 
-Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.countUnateKSATFunctions`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#count-unate-ksatfunctions).
+Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.countUnateKSATFunctions`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#count-unate-ksatfunctions).
 
 ## Bollobás–Brightwell–Leader conjecture for $k$
 
@@ -113,7 +113,7 @@ a $1 - o(1)$ fraction of the $k$-SAT functions on $n$ variables is unate.
 
 - [OWR-10252930-018], DOI 10.4171/owr/2022/22, arXiv:2107.09233.
 
-Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#conjecture).
+Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#conjecture).
 
 ## Bollobás–Brightwell–Leader conjecture for all $k$
 
@@ -121,7 +121,7 @@ The proposition that for every natural
 number $k \ge 2$, the number of unate $k$-SAT functions on $n$ Boolean variables divided by the
 number of $k$-SAT functions on $n$ Boolean variables tends to $1$ as $n \to \infty$.
 
-Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.conjectureAllK`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#conjecture-all-k).
+Formalized by `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.conjectureAllK`, a definition declared in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#conjecture-all-k).
 
 ## Nearly all $k$-SAT functions are unate
 
@@ -138,7 +138,7 @@ CNF, at-most-$k$ convention here for $n \ge k$ (negation preserves unateness).
 
 - J. Balogh, D. Dong, B. Lidický, N. Mani, Y. Zhao, Nearly all k-SAT functions are unate, STOC 2023; J. Eur. Math. Soc. (2026), arXiv:2209.04894, https://arxiv.org/abs/2209.04894.
 
-Stated but not proved: `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.conjectureAllK_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#conjecture-all-k-holds).
+Stated but not proved: `MathlibExt.Combinatorics.BollobasBrightwellLeaderUnateDensityWanted.conjectureAllK_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BollobasBrightwellLeaderUnateDensityWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html#conjecture-all-k-holds).
 
 ## Depends on
 
@@ -147,4 +147,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Enumeration of k-SAT functions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/boolean-functions/enumeration-of-k-sat-functions)

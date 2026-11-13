@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.27 Closed immersions
 
-Section 87.27 of the Stacks Project, [Tag 0ANN](https://stacks.math.columbia.edu/tag/0ANN). 7 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 87.27 of the Stacks Project, [Tag 0ANN](https://stacks.math.columbia.edu/tag/0ANN). 7 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ANP, a definition
 
 [Tag 0ANP](https://stacks.math.columbia.edu/tag/0ANP) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsClosedImmersion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersion.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersion.lean#L59).
+**`AlgebraicGeometry.FormalSpace.IsClosedImmersion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersion.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersion.lean#L59).
 
 > A morphism of formal algebraic spaces over `S` is a *closed immersion* when it is
 > representable by algebraic spaces and every base change of it along a scheme-valued point of its
@@ -29,7 +29,7 @@ abbrev IsClosedImmersion {X Y : FppfSheaf B S hS} (f : X ⟶ Y) : Prop
 
 [Tag 0GHW](https://stacks.math.columbia.edu/tag/0GHW) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isClosedImmersion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersion.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersion.lean#L120). References: EGA I (4.2.5), “closed immersions”.
+**`AlgebraicGeometry.FormalSpace.isClosedImmersion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersion.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersion.lean#L120). References: EGA I (4.2.5), “closed immersions”.
 
 > A composite of two closed immersions of formal algebraic spaces over `S` is a closed
 > immersion.
@@ -44,7 +44,7 @@ theorem isClosedImmersion_comp {X Y Z : FppfSheaf B S hS} (f : X ⟶ Y) (g : Y �
 
 [Tag 0GHX](https://stacks.math.columbia.edu/tag/0GHX) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isClosedImmersion_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersion.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersion.lean#L176).
+**`AlgebraicGeometry.FormalSpace.isClosedImmersion_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersion.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersion.lean#L176).
 
 > A base change of a closed immersion of formal algebraic spaces over `S` is a closed
 > immersion: in a cartesian square of fppf sheaves on the big fppf site of `S` whose right-hand
@@ -60,7 +60,7 @@ theorem isClosedImmersion_of_isPullback {X Y Y' P : FppfSheaf B S hS}
 
 [Tag 0GHY](https://stacks.math.columbia.edu/tag/0GHY) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isClosedImmersion_iff_forall_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionCriteria.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionCriteria.lean#L147). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.FormalSpace.isClosedImmersion_iff_forall_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionCriteria.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionCriteria.lean#L147). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 0GHY**, the equivalence of conditions (1) and (2): a morphism `f : X ⟶ Y` of
 > formal algebraic spaces over `S` is a closed immersion if and only if for every scheme `T`
@@ -75,7 +75,7 @@ theorem isClosedImmersion_iff_forall_scheme {X Y : FppfSheaf B S hS} (f : X ⟶ 
         IsClosedImmersion B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isClosedImmersion_of_locallySurjectiveFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionDescent.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionDescent.lean#L413). The attribute's comment: “the descent step along a surjection of sheaves, which is the sufficiency in conditions (4) and (5)”.
+**`AlgebraicGeometry.FormalSpace.isClosedImmersion_of_locallySurjectiveFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionDescent.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionDescent.lean#L413). The attribute's comment: “the descent step along a surjection of sheaves, which is the sufficiency in conditions (4) and (5)”.
 
 > **Stacks 0GHY**, the descent step along a surjection of sheaves: a morphism `f : X ⟶ Y` of
 > fppf sheaves on the big fppf site of `S` is a closed immersion as soon as there is a family
@@ -112,7 +112,7 @@ theorem isClosedImmersion_of_locallySurjectiveFamily {X Y : FppfSheaf B S hS} {f
     IsClosedImmersion B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isClosedImmersion_iff_forall_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean#L221). The attribute's comment: “conditions (1) and (3)”.
+**`AlgebraicGeometry.FormalSpace.isClosedImmersion_iff_forall_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean#L221). The attribute's comment: “conditions (1) and (3)”.
 
 > **Stacks 0GHY**, the equivalence of conditions (1) and (3): a morphism `f : X ⟶ Y` of
 > formal algebraic spaces over `S` is a closed immersion if and only if for every *affine*
@@ -128,7 +128,7 @@ theorem isClosedImmersion_iff_forall_affine {X Y : FppfSheaf B S hS} (f : X ⟶ 
           IsClosedImmersion B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isClosedImmersion_iff_exists_affineEtaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean#L240). The attribute's comment: “conditions (1) and (4)”.
+**`AlgebraicGeometry.FormalSpace.isClosedImmersion_iff_exists_affineEtaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean#L240). The attribute's comment: “conditions (1) and (4)”.
 
 > **Stacks 0GHY**, the equivalence of conditions (1) and (4): a morphism `f : X ⟶ Y` of
 > formal algebraic spaces over `S` is a closed immersion if and only if there is a covering
@@ -147,7 +147,7 @@ theorem isClosedImmersion_iff_exists_affineEtaleCover {X Y : FppfSheaf B S hS} (
           ∀ i, IsClosedImmersion B S hS (pullback.snd f (g i))
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasFlatClosedImmersionCover_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean#L506). The attribute's comment: “condition (1) implies condition (5)”.
+**`AlgebraicGeometry.FormalSpace.hasFlatClosedImmersionCover_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean, line 506](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean#L506). The attribute's comment: “condition (1) implies condition (5)”.
 
 > **Stacks 0GHY**, condition (1) implies condition (5): a closed immersion `f : X ⟶ Y` of
 > formal algebraic spaces over `S` admits a morphism `Z ⟶ Y` of formal algebraic spaces,
@@ -165,7 +165,7 @@ theorem hasFlatClosedImmersionCover_of_isClosedImmersion {X Y : FppfSheaf B S hS
     HasFlatClosedImmersionCover B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isClosedImmersion_of_hasFlatClosedImmersionCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean, line 535](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean#L535). The attribute's comment: “condition (5) implies condition (1)”.
+**`AlgebraicGeometry.FormalSpace.isClosedImmersion_of_hasFlatClosedImmersionCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean, line 535](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean#L535). The attribute's comment: “condition (5) implies condition (1)”.
 
 > **Stacks 0GHY**, condition (5) implies condition (1): if there is a morphism `Z ⟶ Y` of
 > formal algebraic spaces representable by algebraic spaces, surjective, flat and locally of
@@ -182,7 +182,7 @@ theorem isClosedImmersion_of_hasFlatClosedImmersionCover {X Y : FppfSheaf B S hS
     (h : HasFlatClosedImmersionCover B S hS f) : IsClosedImmersion B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isClosedImmersion_iff_hasFlatClosedImmersionCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean, line 555](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean#L555). The attribute's comment: “conditions (1) and (5)”.
+**`AlgebraicGeometry.FormalSpace.isClosedImmersion_iff_hasFlatClosedImmersionCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean, line 555](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionTfae.lean#L555). The attribute's comment: “conditions (1) and (5)”.
 
 > **Stacks 0GHY**, the equivalence of conditions (1) and (5): a morphism `f : X ⟶ Y` of
 > formal algebraic spaces over `S` is a closed immersion if and only if there is a morphism
@@ -199,7 +199,7 @@ theorem isClosedImmersion_iff_hasFlatClosedImmersionCover {X Y : FppfSheaf B S h
 
 [Tag 0ANQ](https://stacks.math.columbia.edu/tag/0ANQ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.hasSomeSurjectivePresentation_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillan.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillan.lean#L129). The attribute's comment: “the source is McQuillan”.
+**`AlgebraicGeometry.FormalSpace.hasSomeSurjectivePresentation_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillan.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillan.lean#L129). The attribute's comment: “the source is McQuillan”.
 
 > **Stacks 0ANQ**, the McQuillan property of the source. The source of a closed immersion of
 > formal algebraic spaces over `S` whose target is a McQuillan affine formal algebraic space is
@@ -213,7 +213,7 @@ theorem hasSomeSurjectivePresentation_of_isClosedImmersion {X Y : FppfSheaf B S 
     HasSomeSurjectivePresentation B S hS Y
 ```
 
-**`AlgebraicGeometry.FormalSpace.isClosed_ker_toRingHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillan.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillan.lean#L322). The attribute's comment: “closed kernel”.
+**`AlgebraicGeometry.FormalSpace.isClosed_ker_toRingHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillan.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillan.lean#L322). The attribute's comment: “closed kernel”.
 
 > **Stacks 0ANQ**, the closed-kernel assertion. The continuous homomorphism presenting a
 > morphism of formal spectra of weakly admissible topological rings over `S` has closed kernel,
@@ -228,7 +228,7 @@ theorem isClosed_ker_toRingHom {B : BigFppfSite.{u}} {S : Scheme.{u}} {hS : B.Co
     IsClosed (RingHom.ker g.toRingHom : Set A)
 ```
 
-**`AlgebraicGeometry.FormalSpace.denseRange_of_isClosedImmersion_formalSpectrumMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillan.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillan.lean#L357). The attribute's comment: “dense image”.
+**`AlgebraicGeometry.FormalSpace.denseRange_of_isClosedImmersion_formalSpectrumMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillan.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillan.lean#L357). The attribute's comment: “dense image”.
 
 > **Stacks 0ANQ**, the dense-image assertion. The continuous homomorphism presenting a closed
 > immersion of formal spectra of weakly admissible topological rings over `S` has dense image.
@@ -244,7 +244,7 @@ theorem denseRange_of_isClosedImmersion_formalSpectrumMap
     DenseRange g.toRingHom
 ```
 
-**`AlgebraicGeometry.FormalSpace.isTaut_of_isClosedImmersion_formalSpectrumMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillanRefined.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillanRefined.lean#L89). The attribute's comment: “tautness”.
+**`AlgebraicGeometry.FormalSpace.isTaut_of_isClosedImmersion_formalSpectrumMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillanRefined.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillanRefined.lean#L65). The attribute's comment: “tautness”.
 
 > **Stacks 0ANQ**, the tautness assertion. The continuous homomorphism presenting a closed
 > immersion of formal spectra of weakly admissible topological rings over `S` is taut. A closed
@@ -262,7 +262,7 @@ theorem isTaut_of_isClosedImmersion_formalSpectrumMap
     RingHom.IsTaut g.toRingHom
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_formalSpectrumMap_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillanRefined.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillanRefined.lean#L174). The attribute's comment: “presenting homomorphism”.
+**`AlgebraicGeometry.FormalSpace.exists_formalSpectrumMap_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillanRefined.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionMcQuillanRefined.lean#L150). The attribute's comment: “presenting homomorphism”.
 
 > **Stacks 0ANQ**, the presenting homomorphism. A closed immersion into the formal spectrum
 > of a weakly admissible topological ring `A` over `S`, from a formal algebraic space `Y`, is the
@@ -293,7 +293,7 @@ theorem exists_formalSpectrumMap_of_isClosedImmersion
 
 [Tag 0ANR](https://stacks.math.columbia.edu/tag/0ANR) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isPullback_baseChange_quotientCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuotientCompletionBaseChange.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/QuotientCompletionBaseChange.lean#L261). The attribute's comment: “base change”.
+**`AlgebraicGeometry.FormalSpace.isPullback_baseChange_quotientCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuotientCompletionBaseChange.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuotientCompletionBaseChange.lean#L261). The attribute's comment: “base change”.
 
 > **Stacks 0ANR, the base-change identification.** Let `T` be an fppf sheaf over `S` and let
 > `t : T ⟶ Spec (A/I)` be a morphism to a quotient stage of `Spf A`. Then the fibre product of
@@ -327,7 +327,7 @@ theorem isPullback_baseChange_quotientCompletion
       (t ≫ formalSpectrumInclusion D (OrderDual.toDual I))
 ```
 
-**`AlgebraicGeometry.FormalSpace.isClosedImmersion_formalSpectrumMap_quotientCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuotientCompletionBaseChange.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/QuotientCompletionBaseChange.lean#L487). The attribute's comment: “closed immersion”.
+**`AlgebraicGeometry.FormalSpace.isClosedImmersion_formalSpectrumMap_quotientCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuotientCompletionBaseChange.lean, line 488](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuotientCompletionBaseChange.lean#L488). The attribute's comment: “closed immersion”.
 
 > **Stacks 0ANR.** The morphism `Spf ((A/K)^∧) ⟶ Spf A` induced by the canonical map
 > `A → (A/K)^∧` is a closed immersion of formal algebraic spaces over `S`, in the sense of
@@ -343,7 +343,7 @@ theorem isClosedImmersion_formalSpectrumMap_quotientCompletion :
     AlgebraicGeometry.FormalSpace.IsClosedImmersion B S hS (formalSpectrumMap hA φ)
 ```
 
-**`TopologicalRing.ker_canonicalMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/ClosedImmersion.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/ClosedImmersion.lean#L91). The attribute's comment: “kernel”.
+**`TopologicalRing.ker_canonicalMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/ClosedImmersion.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/ClosedImmersion.lean#L91). The attribute's comment: “kernel”.
 
 > The kernel of the canonical map to the completion of a quotient by a closed ideal
 > is that ideal.
@@ -357,7 +357,7 @@ public theorem ker_canonicalMap_eq {A : Type u} [CommRing A] [TopologicalSpace A
       (TopologicalRing.CompletionOver.canonicalMap (Ideal.Quotient.mk K)) = K
 ```
 
-**`TopologicalRing.exists_not_surjective_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/ClosedImmersion.lean, line 1073](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/ClosedImmersion.lean#L1073). The attribute's comment: “nonsurjectivity”.
+**`TopologicalRing.exists_not_surjective_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/ClosedImmersion.lean, line 1073](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/ClosedImmersion.lean#L1073). The attribute's comment: “nonsurjectivity”.
 
 > For some weakly admissible ring and closed ideal, the map to the completed quotient
 > is not surjective.
@@ -372,7 +372,7 @@ theorem exists_not_surjective_canonicalMap :
 
 [Tag 0GHZ](https://stacks.math.columbia.edu/tag/0GHZ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isClosedImmersion_of_mono_of_reduction_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MonomorphismClosedImmersion.lean, line 770](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/MonomorphismClosedImmersion.lean#L770). The attribute's comment: “the reduction, its inclusion and the factorisation are data, as in Stacks 0GB8”.
+**`AlgebraicGeometry.FormalSpace.isClosedImmersion_of_mono_of_reduction_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MonomorphismClosedImmersion.lean, line 773](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/MonomorphismClosedImmersion.lean#L773). The attribute's comment: “the reduction, its inclusion and the factorisation are data, as in Stacks 0GB8”.
 
 > Let `f : X ⟶ Y` be a morphism of formal algebraic spaces over `S` which is representable by
 > algebraic spaces and a monomorphism, and through which the inclusion `iY : Yred ⟶ Y` of a
@@ -395,4 +395,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.27, Tag 0ANN](https://stacks.math.columbia.edu/tag/0ANN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

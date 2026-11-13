@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.31 Relative Proj
 
-Section 31.31 of the Stacks Project, [Tag 07ZW](https://stacks.math.columbia.edu/tag/07ZW). 7 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.31 of the Stacks Project, [Tag 07ZW](https://stacks.math.columbia.edu/tag/07ZW). 7 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07ZX, a lemma
 
 [Tag 07ZX](https://stacks.math.columbia.edu/tag/07ZX) in the Stacks Project.
 
-**`Stacks.RelativeProj.Situation.quasiCompact_relativeProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/RelativeProjQuasiCompact.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/RelativeProjQuasiCompact.lean#L237). References: EGA II (3.4.1), “quasi-compactness”; EGA II (3.1.3), “partial”; EGA II (4.6.18), “partial”.
+**`Stacks.RelativeProj.Situation.quasiCompact_relativeProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/RelativeProjQuasiCompact.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/RelativeProjQuasiCompact.lean#L237). References: EGA II (3.4.1), “quasi-compactness”; EGA II (3.1.3), “partial”; EGA II (4.6.18), “partial”.
 
 > **Stacks 07ZX.** The structure morphism of the relative homogeneous spectrum of a
 > quasi-coherent graded algebra is quasi-compact as soon as the algebra is of finite type over its
@@ -32,7 +32,7 @@ theorem quasiCompact_relativeProj
 
 [Tag 07ZY](https://stacks.math.columbia.edu/tag/07ZY) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjFiniteType.locallyOfFiniteType_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjFiniteType/Basic.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjFiniteType/Basic.lean#L146). The attribute's comment: “relative\_proj\_finite\_type”. References: EGA II (2.7.1), “(ii)”; EGA II (4.6.18), “f of finite type”; EGA II (3.4.1), “locally of finite type”; EGA II (3.1.3), “locally of finite type”.
+**`Stacks.AlgebraicGeometry.RelativeProjFiniteType.locallyOfFiniteType_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjFiniteType/Basic.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjFiniteType/Basic.lean#L146). The attribute's comment: “relative\_proj\_finite\_type”. References: EGA II (2.7.1), “(ii)”; EGA II (4.6.18), “f of finite type”; EGA II (3.4.1), “locally of finite type”; EGA II (3.1.3), “locally of finite type”.
 
 > **Stacks 07ZY, first assertion.** The structure morphism of the relative homogeneous spectrum
 > of a finite type quasi-coherent graded algebra is locally of finite type.
@@ -42,7 +42,7 @@ public theorem locallyOfFiniteType_toBase (hA : IsFiniteType A) :
     LocallyOfFiniteType (relativeProj A).toBase
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjFiniteType.quasiCompact_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjFiniteType/Basic.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjFiniteType/Basic.lean#L165). The attribute's comment: “relative\_proj\_finite\_type”. References: EGA II (2.7.1), “(ii)”; EGA II (4.6.18), “f quasi-compact”; EGA II (3.4.1), “quasi-compactness”; EGA II (3.1.3), “quasi-compact”.
+**`Stacks.AlgebraicGeometry.RelativeProjFiniteType.quasiCompact_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjFiniteType/Basic.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjFiniteType/Basic.lean#L165). The attribute's comment: “relative\_proj\_finite\_type”. References: EGA II (2.7.1), “(ii)”; EGA II (4.6.18), “f quasi-compact”; EGA II (3.4.1), “quasi-compactness”; EGA II (3.1.3), “quasi-compact”.
 
 > **Stacks 07ZY, first assertion.** The structure morphism of the relative homogeneous spectrum
 > of a finite type quasi-coherent graded algebra is quasi-compact.
@@ -52,7 +52,7 @@ public theorem quasiCompact_toBase (hA : IsFiniteType A) :
     QuasiCompact (relativeProj A).toBase
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjFiniteType.isFiniteType_relativeProjTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjFiniteType/GluedTwists.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjFiniteType/GluedTwists.lean#L44). The attribute's comment: “relative\_proj\_twist\_finite\_type”.
+**`Stacks.AlgebraicGeometry.RelativeProjFiniteType.isFiniteType_relativeProjTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjFiniteType/GluedTwists.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjFiniteType/GluedTwists.lean#L44). The attribute's comment: “relative\_proj\_twist\_finite\_type”.
 
 > Every twist `𝒪_X(t)` on the relative projective spectrum `X = Proj_S(A)` of a finite type
 > quasi-coherent graded algebra is a finite-type module sheaf. The twists are the homogeneous pieces
@@ -68,7 +68,7 @@ public theorem isFiniteType_relativeProjTwist (hA : IsFiniteType A) (t : ℤ) :
 
 [Tag 07ZZ](https://stacks.math.columbia.edu/tag/07ZZ) in the Stacks Project.
 
-**`Stacks.RelativeProj.Situation.universallyClosed_relativeProjToBase_of_isIntegralInDegreeZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProj/UniversallyClosed.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProj/UniversallyClosed.lean#L81).
+**`Stacks.RelativeProj.Situation.universallyClosed_relativeProjToBase_of_isIntegralInDegreeZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProj/UniversallyClosed.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProj/UniversallyClosed.lean#L81).
 
 > **Stacks 07ZZ.** If the degree-zero part of the graded algebra of a relative `Proj`
 > situation is integral over the structure sheaf and the graded algebra is of finite type over its
@@ -86,7 +86,7 @@ theorem universallyClosed_relativeProjToBase_of_isIntegralInDegreeZero
 
 [Tag 0800](https://stacks.math.columbia.edu/tag/0800) in the Stacks Project.
 
-**`Stacks.RelativeProj.isProper_projectiveBundleToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Proper.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Proper.lean#L387). The attribute's comment: “proper, for the projective bundle of a finite locally free module”.
+**`Stacks.RelativeProj.isProper_projectiveBundleToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Proper.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Proper.lean#L387). The attribute's comment: “proper, for the projective bundle of a finite locally free module”.
 
 > **The projection `π : 𝐏(ℰ) ⟶ X` of the projective bundle of a finite locally free sheaf of
 > modules is proper.**
@@ -101,7 +101,7 @@ theorem isProper_projectiveBundleToBase
     IsProper (projectiveBundleToBase X E)
 ```
 
-**`Stacks.RelativeProj.isProper_projectiveBundleToBase_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundleProperFiniteType/Basic.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveBundleProperFiniteType/Basic.lean#L155). The attribute's comment: “proper, for the projective bundle of a quasi-coherent module of finite type”. References: EGA II (3.4.1), “special case”.
+**`Stacks.RelativeProj.isProper_projectiveBundleToBase_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundleProperFiniteType/Basic.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundleProperFiniteType/Basic.lean#L155). The attribute's comment: “proper, for the projective bundle of a quasi-coherent module of finite type”. References: EGA II (3.4.1), “special case”.
 
 > **The projection `π : 𝐏(ℰ) ⟶ X` of the projective bundle of a quasi-coherent module of
 > finite type is proper.**
@@ -118,7 +118,7 @@ theorem isProper_projectiveBundleToBase_of_isFiniteType [E.IsQuasicoherent] [E.I
     IsProper (projectiveBundleToBase X E)
 ```
 
-**`Stacks.RelativeProj.Situation.relativeProj_finiteType_iff_and_isLocallyProjective_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProj/DegreeZeroFiniteType.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProj/DegreeZeroFiniteType.lean#L221).
+**`Stacks.RelativeProj.Situation.relativeProj_finiteType_iff_and_isLocallyProjective_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProj/DegreeZeroFiniteType.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProj/DegreeZeroFiniteType.lean#L221).
 
 > **Stacks 0800.** Let `𝒜` be a quasi-coherent graded `𝒪_S`-algebra over a scheme `S` and
 > `p : Proj_S(𝒜) ⟶ S` its relative homogeneous spectrum. The conditions
@@ -151,7 +151,7 @@ theorem relativeProj_finiteType_iff_and_isLocallyProjective_isProper :
 
 [Tag 0B3U](https://stacks.math.columbia.edu/tag/0B3U) in the Stacks Project.
 
-**`AlgebraicGeometry.isProjective_relativeProj_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeVeryAmpleTwist/CanonicalSymSurjective.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeVeryAmpleTwist/CanonicalSymSurjective.lean#L281).
+**`AlgebraicGeometry.isProjective_relativeProj_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeVeryAmpleTwist/CanonicalSymSurjective.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeVeryAmpleTwist/CanonicalSymSurjective.lean#L280).
 
 > **Stacks Project, Tag 0B3U.** Let `S` be a scheme and `𝒜` a quasi-coherent graded
 > `𝒪_S`-algebra generated by `𝒜_1` over `𝒜_0` with `𝒜_1` of finite type. Then the projection
@@ -174,7 +174,7 @@ theorem isProjective_relativeProj_toBase {S : Scheme.{u}}
 
 [Tag 0D4C](https://stacks.math.columbia.edu/tag/0D4C) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjFlat.flat_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjFlat/Basic.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjFlat/Basic.lean#L92). The attribute's comment: “flatness of relative Proj”.
+**`Stacks.AlgebraicGeometry.RelativeProjFlat.flat_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjFlat/Basic.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjFlat/Basic.lean#L92). The attribute's comment: “flatness of relative Proj”.
 
 > If the homogeneous piece `A_n` of a quasi-coherent graded `𝒪_S`-algebra is a flat
 > `𝒪_S`-module for every sufficiently large `n`, the structure morphism of the relative projective
@@ -187,7 +187,7 @@ public theorem flat_toBase
     Flat (relativeProj A).toBase
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjFlat.isFlatOver_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjFlat/Twists.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjFlat/Twists.lean#L159). The attribute's comment: “relative flatness of the twists”.
+**`Stacks.AlgebraicGeometry.RelativeProjFlat.isFlatOver_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjFlat/Twists.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjFlat/Twists.lean#L159). The attribute's comment: “relative flatness of the twists”.
 
 > **Relative flatness of the twists on a relative projective spectrum.**
 >
@@ -215,7 +215,7 @@ public theorem isFlatOver_twist (D : TwistData A) (t : ℤ)
 
 [Tag 0D4D](https://stacks.math.columbia.edu/tag/0D4D) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjFinitePresentation.isFinitePresentation_relativeProjTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjFinitePresentation/GluedTwists.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjFinitePresentation/GluedTwists.lean#L54). The attribute's comment: “twists\_finite\_presentation”.
+**`Stacks.AlgebraicGeometry.RelativeProjFinitePresentation.isFinitePresentation_relativeProjTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjFinitePresentation/GluedTwists.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjFinitePresentation/GluedTwists.lean#L54). The attribute's comment: “twists\_finite\_presentation”.
 
 > Every twist `𝒪_X(t)` on the relative projective spectrum `X = Proj_S(A)` of a quasi-coherent
 > graded algebra whose structure map is of finite presentation over every affine open of the base is
@@ -229,7 +229,7 @@ public theorem isFinitePresentation_relativeProjTwist
       ((GluedTwistAlgebra.twistDataOfGradedAlgebra A).algebra.piece t)
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjFinitePresentation.isFinitePresentation_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjFinitePresentation/TwistFinitePresentation.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjFinitePresentation/TwistFinitePresentation.lean#L97). The attribute's comment: “twists\_finite\_presentation”.
+**`Stacks.AlgebraicGeometry.RelativeProjFinitePresentation.isFinitePresentation_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjFinitePresentation/TwistFinitePresentation.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjFinitePresentation/TwistFinitePresentation.lean#L97). The attribute's comment: “twists\_finite\_presentation”.
 
 > **Stacks 0D4D, second assertion.** Every twist on the relative homogeneous spectrum of a
 > quasi-coherent graded algebra whose structure map is of finite presentation over every affine open
@@ -252,7 +252,7 @@ public theorem isFinitePresentation_twist (D : TwistData A)
 
 Declarations registered for the tag:
 
-- [`Stacks.AlgebraicGeometry.RelativeProjFinitePresentation.finitePresentation_toBase`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjFinitePresentation/Basic.lean#L185), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/RelativeProjFinitePresentation/TwistFinitePresentation.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjFinitePresentation/TwistFinitePresentation.lean#L103) (StacksFrontier): “relative\_proj\_finite\_presentation”.
+- [`Stacks.AlgebraicGeometry.RelativeProjFinitePresentation.finitePresentation_toBase`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjFinitePresentation/Basic.lean#L185), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/RelativeProjFinitePresentation/TwistFinitePresentation.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjFinitePresentation/TwistFinitePresentation.lean#L103) (StacksFrontier): “relative\_proj\_finite\_presentation”.
 
 ## Depends on
 
@@ -261,4 +261,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.31, Tag 07ZW](https://stacks.math.columbia.edu/tag/07ZW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

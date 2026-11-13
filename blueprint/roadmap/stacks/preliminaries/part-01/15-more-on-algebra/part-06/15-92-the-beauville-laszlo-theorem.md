@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.92 The Beauville-Laszlo theorem
 
-Section 15.92 of the Stacks Project, [Tag 0BNI](https://stacks.math.columbia.edu/tag/0BNI). 27 tags here are carried by 27 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.92 of the Stacks Project, [Tag 0BNI](https://stacks.math.columbia.edu/tag/0BNI). 27 tags here are carried by 27 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BNJ, a lemma
 
 [Tag 0BNJ](https://stacks.math.columbia.edu/tag/0BNJ) in the Stacks Project.
 
-**`BeauvilleLaszlo.quotient_pow_equiv_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean#L84).
+**`BeauvilleLaszlo.quotient_pow_equiv_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean#L84).
 
 > The canonical map `R / f^n R → R^∧ / f^n R^∧` is an isomorphism,
 > where `R^∧` is the `(f)`-adic completion.
@@ -34,7 +34,7 @@ public theorem quotient_pow_equiv_adicCompletion {R : Type*} [CommRing R]
 
 [Tag 0BNL](https://stacks.math.columbia.edu/tag/0BNL) in the Stacks Project.
 
-**`BeauvilleLaszlo.tensorProduct_prod_away_nontrivial_of_quotientMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean#L177).
+**`BeauvilleLaszlo.tensorProduct_prod_away_nontrivial_of_quotientMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean#L177).
 
 > If `R → S` induces isomorphisms modulo every positive power of `(f)`, then tensoring
 > with `S ⊕ R_f` detects nonzero modules. In particular, tensoring with `R^∧ ⊕ R_f`, where
@@ -61,7 +61,7 @@ public theorem tensorProduct_prod_away_nontrivial_of_quotientMap_bijective
 
 [Tag 0BNM](https://stacks.math.columbia.edu/tag/0BNM) in the Stacks Project.
 
-**`BeauvilleLaszlo.primeSpectrum_cover_of_quotientMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean#L273).
+**`BeauvilleLaszlo.primeSpectrum_cover_of_quotientMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean#L273).
 
 > If `R → S` is an isomorphism modulo `f`, then `Spec(S)` and `Spec(R_f)`
 > jointly cover `Spec(R)`. The same cover holds with the `(f)`-adic completion in
@@ -86,7 +86,7 @@ public theorem primeSpectrum_cover_of_quotientMap_bijective {R : Type*} [CommRin
 
 [Tag 0BNN](https://stacks.math.columbia.edu/tag/0BNN) in the Stacks Project.
 
-**`BeauvilleLaszlo.finite_iff_tensorProduct_prod_away_of_quotientMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean#L337).
+**`BeauvilleLaszlo.finite_iff_tensorProduct_prod_away_of_quotientMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/Covering.lean#L337).
 
 > Finite generation of a module is detected after extension of scalars to the product of
 > an algebra inducing isomorphisms modulo every positive power of `(f)` and the localization
@@ -118,7 +118,7 @@ public theorem finite_iff_tensorProduct_prod_away_of_quotientMap_bijective
 
 [Tag 0BNP](https://stacks.math.columbia.edu/tag/0BNP) in the Stacks Project.
 
-**`BeauvilleLaszlo.exists_nonflat_adicCompletion_prod_localizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean, line 1364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean#L1364).
+**`BeauvilleLaszlo.exists_nonflat_adicCompletion_prod_localizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean, line 1363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean#L1363).
 
 > **Stacks 0BNP.** Adic completion and localization do not in general form a flat cover: there
 > is a commutative ring `R` and an element `f` such that the product of the completion of `R` at
@@ -135,7 +135,7 @@ public theorem exists_nonflat_adicCompletion_prod_localizationAway :
 
 [Tag 0F1Q](https://stacks.math.columbia.edu/tag/0F1Q) in the Stacks Project.
 
-**`BeauvilleLaszlo.beauvilleLaszloSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean#L142).
+**`BeauvilleLaszlo.beauvilleLaszloSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean#L142).
 
 > The canonical sequence
 > `0 → R → S ⊕ Rₑ → Sₓ → 0`, whose right-hand map is the difference of the
@@ -150,7 +150,7 @@ public noncomputable def beauvilleLaszloSequence (f : R) (φ : R →+* S) :
 
 [Tag 0BNQ](https://stacks.math.columbia.edu/tag/0BNQ) in the Stacks Project.
 
-**`BeauvilleLaszlo.adicCompletionBeauvilleLaszloSequence`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean#L173).
+**`BeauvilleLaszlo.adicCompletionBeauvilleLaszloSequence`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean#L173).
 
 > The canonical sequence `0 → R → R̂ ⊕ Rₑ → R̂ₑ → 0`, where `R̂` is the
 > completion of `R` along the principal ideal generated by `f`.
@@ -164,7 +164,7 @@ public noncomputable abbrev adicCompletionBeauvilleLaszloSequence
 
 [Tag 0BNR](https://stacks.math.columbia.edu/tag/0BNR) in the Stacks Project.
 
-**`BeauvilleLaszlo.beauvilleLaszloSequence_exactness_iff_powerTorsionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean#L433).
+**`BeauvilleLaszlo.beauvilleLaszloSequence_exactness_iff_powerTorsionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean, line 433](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean#L433).
 
 > If `R → S` is an isomorphism modulo every positive power of `f`, the
 > Beauville--Laszlo sequence is always exact on the right; its left and middle
@@ -193,7 +193,7 @@ public theorem beauvilleLaszloSequence_exactness_iff_powerTorsionMap
 
 [Tag 0BNS](https://stacks.math.columbia.edu/tag/0BNS) in the Stacks Project.
 
-**`BeauvilleLaszlo.adicCompletion_isRegular_and_isGlueingPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean, line 520](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean#L520).
+**`BeauvilleLaszlo.adicCompletion_isRegular_and_isGlueingPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean, line 520](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean#L520).
 
 > A nonzerodivisor `f` remains a nonzerodivisor in the `(f)`-adic completion, and the
 > canonical Beauville--Laszlo sequence is short exact; equivalently, `(R, f)` is a glueing pair.
@@ -210,7 +210,7 @@ public theorem adicCompletion_isRegular_and_isGlueingPair {R : Type*} [CommRing 
 
 [Tag 0BNT](https://stacks.math.columbia.edu/tag/0BNT) in the Stacks Project.
 
-**`BeauvilleLaszlo.adicCompletion_isGlueingPair_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean, line 558](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean#L558).
+**`BeauvilleLaszlo.adicCompletion_isGlueingPair_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean, line 558](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean#L558).
 
 > If the `(f)`-adic completion of `R` is flat over `R`, then tensoring the exact sequence
 > given by multiplication by `f ^ n` remains exact for every positive `n`, the canonical map on
@@ -265,7 +265,7 @@ public theorem adicCompletion_isGlueingPair_of_flat {R : Type u} [CommRing R] (f
 
 [Tag 0BNU](https://stacks.math.columbia.edu/tag/0BNU) in the Stacks Project.
 
-**`BeauvilleLaszlo.adicCompletion_torsionMap_not_bijective_examples`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean, line 1288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean#L1288).
+**`BeauvilleLaszlo.adicCompletion_torsionMap_not_bijective_examples`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean, line 1287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingPair.lean#L1287).
 
 > Two quotients of `k[f, T₁, T₂, …]` for which the canonical map on `f`-power torsion
 > to the adic completion is respectively noninjective and nonsurjective. In the first example
@@ -307,7 +307,7 @@ public theorem adicCompletion_torsionMap_not_bijective_examples (k : Type*) [Fie
 
 [Tag 0F1R](https://stacks.math.columbia.edu/tag/0F1R) in the Stacks Project.
 
-**`BeauvilleLaszlo.beauvilleLaszloModuleSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/ModuleSequence.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/ModuleSequence.lean#L148).
+**`BeauvilleLaszlo.beauvilleLaszloModuleSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/ModuleSequence.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/ModuleSequence.lean#L148).
 
 > The canonical sequence
 > `0 → M → (M ⊗[R] S) ⊕ (M ⊗[R] R_f) → M ⊗[R] S_f → 0`.
@@ -322,7 +322,7 @@ public noncomputable def beauvilleLaszloModuleSequence (f : R) :
 
 [Tag 0BNV](https://stacks.math.columbia.edu/tag/0BNV) in the Stacks Project.
 
-**`BeauvilleLaszlo.isGlueable_iff_adicCompletion_beauvilleLaszloModuleSequence_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/ModuleSequence.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/ModuleSequence.lean#L217).
+**`BeauvilleLaszlo.isGlueable_iff_adicCompletion_beauvilleLaszloModuleSequence_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/ModuleSequence.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/ModuleSequence.lean#L217).
 
 > An `R`-module is glueable at `f` exactly when
 > `0 → M → (M ⊗[R] R̂) ⊕ (M ⊗[R] R_f) → M ⊗[R] R̂_f → 0`
@@ -341,7 +341,7 @@ public theorem isGlueable_iff_adicCompletion_beauvilleLaszloModuleSequence_short
 
 [Tag 0BNW](https://stacks.math.columbia.edu/tag/0BNW) in the Stacks Project.
 
-**`BeauvilleLaszlo.beauvilleLaszloModuleSequence_exactness_iff_powerTorsionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/ModuleSequence.lean, line 714](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/ModuleSequence.lean#L714).
+**`BeauvilleLaszlo.beauvilleLaszloModuleSequence_exactness_iff_powerTorsionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/ModuleSequence.lean, line 714](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/ModuleSequence.lean#L714).
 
 > If `R → S` is an isomorphism modulo every positive power of `f`, the module
 > Beauville--Laszlo sequence is surjective on the right; its left and middle exactness
@@ -380,7 +380,7 @@ public theorem beauvilleLaszloModuleSequence_exactness_iff_powerTorsionMap :
 
 [Tag 0BNX](https://stacks.math.columbia.edu/tag/0BNX) in the Stacks Project.
 
-**`BeauvilleLaszlo.glueable_criteria`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/Criteria.lean, line 642](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/Criteria.lean#L642).
+**`BeauvilleLaszlo.glueable_criteria`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/Criteria.lean, line 640](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/Criteria.lean#L640).
 
 > Criteria ensuring that a module is glueable for a Beauville--Laszlo glueing pair.
 >
@@ -441,7 +441,7 @@ public theorem glueable_criteria :
 
 [Tag 0BNY](https://stacks.math.columbia.edu/tag/0BNY) in the Stacks Project.
 
-**`BeauvilleLaszlo.exists_non_glueable_module_over_smooth_germ_ring`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/NonGlueableExample.lean, line 718](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/NonGlueableExample.lean#L718).
+**`BeauvilleLaszlo.exists_non_glueable_module_over_smooth_germ_ring`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/NonGlueableExample.lean, line 718](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueableModule/NonGlueableExample.lean#L718).
 
 > The ring `R` of germs at zero of smooth functions on `ℝ`, with coordinate germ `f`, has
 > completion `ℝ[[X]]`. The flat germs `φ(x) = exp (-1 / x²)` and `ψ(x) = φ(x) / x` vanish
@@ -485,7 +485,7 @@ public theorem exists_non_glueable_module_over_smooth_germ_ring :
 
 [Tag 0BNZ](https://stacks.math.columbia.edu/tag/0BNZ) in the Stacks Project.
 
-**`BeauvilleLaszlo.isZero_Tor_one_ideal_pow_of_beauvilleLaszlo_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/TorVanishing.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/TorVanishing.lean#L180).
+**`BeauvilleLaszlo.isZero_Tor_one_ideal_pow_of_beauvilleLaszlo_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/TorVanishing.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/TorVanishing.lean#L179).
 
 > If `(R → R', f)` is a gluing pair, then
 > `Tor₁ʿ(R', f ^ n R) = 0` for every positive `n`.
@@ -506,7 +506,7 @@ public theorem isZero_Tor_one_ideal_pow_of_beauvilleLaszlo_shortExact
 
 [Tag 0BP0](https://stacks.math.columbia.edu/tag/0BP0) in the Stacks Project.
 
-**`BeauvilleLaszlo.isZero_Tor_one_quotient_powerTorsion_of_beauvilleLaszlo_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/TorVanishing.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/TorVanishing.lean#L449).
+**`BeauvilleLaszlo.isZero_Tor_one_quotient_powerTorsion_of_beauvilleLaszlo_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/TorVanishing.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/TorVanishing.lean#L448).
 
 > If `(R → R', f)` is a glueing pair, then
 > `Tor₁ᴿ(R', R / R[f^∞]) = 0`.
@@ -525,7 +525,7 @@ public theorem isZero_Tor_one_quotient_powerTorsion_of_beauvilleLaszlo_shortExac
 
 [Tag 0BP1](https://stacks.math.columbia.edu/tag/0BP1) in the Stacks Project.
 
-**`BeauvilleLaszlo.isZero_Tor_one_coker_localizationMap_of_beauvilleLaszlo_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/TorVanishing.lean, line 637](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/TorVanishing.lean#L637).
+**`BeauvilleLaszlo.isZero_Tor_one_coker_localizationMap_of_beauvilleLaszlo_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/TorVanishing.lean, line 636](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/TorVanishing.lean#L636).
 
 > If `(R → R', f)` is a Beauville--Laszlo glueing pair, then for every `R`-module `M`,
 > `Tor₁ᴿ(R', coker(M → M_f)) = 0`.
@@ -551,7 +551,7 @@ public theorem isZero_Tor_one_coker_localizationMap_of_beauvilleLaszlo_shortExac
 
 [Tag 0BP2](https://stacks.math.columbia.edu/tag/0BP2) in the Stacks Project.
 
-**`BeauvilleLaszlo.canonicalOnGlueableModules_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/ModuleEquivalence.lean, line 854](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/ModuleEquivalence.lean#L854).
+**`BeauvilleLaszlo.canonicalOnGlueableModules_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/ModuleEquivalence.lean, line 852](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/ModuleEquivalence.lean#L852).
 
 > **Beauville--Laszlo glueing.** For a glueing pair `(R → S, f)`, the canonical functor
 > from glueable `R`-modules to module glueing data is an equivalence of categories. Compatible
@@ -582,7 +582,7 @@ public theorem canonicalOnGlueableModules_isEquivalence
 
 [Tag 0BP3](https://stacks.math.columbia.edu/tag/0BP3) in the Stacks Project.
 
-**`BeauvilleLaszlo.gluingDatum_difference_shortExact_of_quotientMap_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingData.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingData.lean#L105).
+**`BeauvilleLaszlo.gluingDatum_difference_shortExact_of_quotientMap_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingData.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingData.lean#L105).
 
 > The kernel of the difference map attached to a gluing datum fits into the short exact
 > sequence `0 → ker(d) → M' × M₁ → M'ₑ → 0`.
@@ -622,7 +622,7 @@ public theorem gluingDatum_difference_shortExact_of_quotientMap_surjective
 
 [Tag 0BP4](https://stacks.math.columbia.edu/tag/0BP4) in the Stacks Project.
 
-**`BeauvilleLaszlo.exists_exact_quotient_powerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingData.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingData.lean#L220).
+**`BeauvilleLaszlo.exists_exact_quotient_powerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingData.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingData.lean#L219).
 
 > Suppose `A → L` is localization away from `f`, the difference map
 > `A × B → L`, `(a, b) ↦ g a - h b`, is surjective, and multiplication by `f` is
@@ -652,7 +652,7 @@ public theorem exists_exact_quotient_powerTorsion
 
 [Tag 0BP5](https://stacks.math.columbia.edu/tag/0BP5) in the Stacks Project.
 
-**`BeauvilleLaszlo.gluingDatum_baseChange_localizationQuotient_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingData.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingData.lean#L478).
+**`BeauvilleLaszlo.gluingDatum_baseChange_localizationQuotient_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingData.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/GlueingData.lean#L477).
 
 > Let `(R → S, f)` be a Beauville--Laszlo glueing pair and let `(M', M₁, α)` be a
 > glueing datum. If `M` is the kernel of
@@ -710,7 +710,7 @@ public theorem gluingDatum_baseChange_localizationQuotient_shortExact
 
 [Tag 0BP9](https://stacks.math.columbia.edu/tag/0BP9) in the Stacks Project.
 
-**`BeauvilleLaszlo.canonicalToSections_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/ModuleEquivalence.lean, line 1064](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/ModuleEquivalence.lean#L1064).
+**`BeauvilleLaszlo.canonicalToSections_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/ModuleEquivalence.lean, line 1061](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/ModuleEquivalence.lean#L1061).
 
 > Let `(R → S, f)` be a Beauville--Laszlo glueing pair and let `M` be any
 > `R`-module. The canonical map from `M` to the compatible sections of its canonical
@@ -749,7 +749,7 @@ public theorem canonicalToSections_surjective
 
 [Tag 0BP7](https://stacks.math.columbia.edu/tag/0BP7) in the Stacks Project.
 
-**`BeauvilleLaszlo.flat_iff_flat_baseChange_and_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/Descent.lean, line 677](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/Descent.lean#L677).
+**`BeauvilleLaszlo.flat_iff_flat_baseChange_and_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/Descent.lean, line 669](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/Descent.lean#L669).
 
 > Let `(R → S, f)` be a Beauville--Laszlo glueing pair. An `R`-module `M` is flat
 > if and only if its scalar extension to `S` is flat over `S` and its localization away
@@ -772,7 +772,7 @@ public theorem flat_iff_flat_baseChange_and_localization
 
 [Tag 0BP6](https://stacks.math.columbia.edu/tag/0BP6) in the Stacks Project.
 
-**`BeauvilleLaszlo.finite_projective_iff_baseChange_and_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/Descent.lean, line 804](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/Descent.lean#L804).
+**`BeauvilleLaszlo.finite_projective_iff_baseChange_and_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/Descent.lean, line 796](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/Descent.lean#L796).
 
 > Let `(R → S, f)` be a Beauville--Laszlo glueing pair. An `R`-module `M` is finite
 > projective if and only if its scalar extension to `S` is finite projective over `S` and its
@@ -796,7 +796,7 @@ public theorem finite_projective_iff_baseChange_and_localization
 
 [Tag 0BP8](https://stacks.math.columbia.edu/tag/0BP8) in the Stacks Project.
 
-**`BeauvilleLaszlo.beauvilleLaszlo_completion_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/CompletionComparison.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/BeauvilleLaszlo/CompletionComparison.lean#L52).
+**`BeauvilleLaszlo.beauvilleLaszlo_completion_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/BeauvilleLaszlo/CompletionComparison.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/BeauvilleLaszlo/CompletionComparison.lean#L52).
 
 > For a nonzerodivisor `f : R`, passage to the `(f)`-adic completion gives a
 > Beauville--Laszlo glueing pair. Every module on which `f` is a nonzerodivisor is
@@ -828,4 +828,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.92, Tag 0BNI](https://stacks.math.columbia.edu/tag/0BNI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

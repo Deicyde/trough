@@ -1,6 +1,6 @@
 # 92 The Cotangent Complex
 
-Chapter 92 of the Stacks Project, *The Cotangent Complex*, [Tag 08P5](https://stacks.math.columbia.edu/tag/08P5): the 26 sections of its 28 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 119 tags are carried by 496 declarations of the repository (all in StacksFrontier) and 4 registered declarations.
+Chapter 92 of the Stacks Project, *The Cotangent Complex*, [Tag 08P5](https://stacks.math.columbia.edu/tag/08P5): the 26 sections of its 28 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 119 tags are carried by 462 declarations of the repository (all in StacksFrontier) and 4 registered declarations.
 
 ## [92.3 The cotangent complex of a… to 92.7 The fundamental triangle](part-01/README.md)
 
@@ -10,7 +10,7 @@ Chapter 92 of the Stacks Project, *The Cotangent Complex*, [Tag 08P5](https://st
 - [92.6 Functoriality](part-01/92-6-functoriality.md)
 - [92.7 The fundamental triangle](part-01/92-7-the-fundamental-triangle.md)
 
-## [92.8 Localization and étale… to 92.17 The Atiyah class of a…](part-02/README.md)
+## [92.8 Localization and étale… to 92.21 Deformations of ringed…](part-02/README.md)
 
 - [92.8 Localization and étale ring maps](part-02/92-8-localization-and-etale-ring-maps.md)
 - [92.9 Smooth ring maps](part-02/92-9-smooth-ring-maps.md)
@@ -22,13 +22,13 @@ Chapter 92 of the Stacks Project, *The Cotangent Complex*, [Tag 08P5](https://st
 - [92.15 Tensor products and the cotangent complex](part-02/92-15-tensor-products-and-the-cotangent-complex.md)
 - [92.16 Deformations of ring maps and the cotangent complex](part-02/92-16-deformations-of-ring-maps-and-the-cotangen.md)
 - [92.17 The Atiyah class of a module](part-02/92-17-the-atiyah-class-of-a-module.md)
+- [92.18 The cotangent complex](part-02/92-18-the-cotangent-complex.md)
+- [92.19 The Atiyah class of a sheaf of modules](part-02/92-19-the-atiyah-class-of-a-sheaf-of-modules.md)
+- [92.20 The cotangent complex of a morphism of ringed spaces](part-02/92-20-the-cotangent-complex-of-a-morphism-of-rin.md)
+- [92.21 Deformations of ringed spaces and the cotangent complex](part-02/92-21-deformations-of-ringed-spaces-and-the-cota.md)
 
-## [92.18 The cotangent complex to 92.28 Fibre products of…](part-03/README.md)
+## [92.22 The cotangent complex of… to 92.28 Fibre products of…](part-03/README.md)
 
-- [92.18 The cotangent complex](part-03/92-18-the-cotangent-complex.md)
-- [92.19 The Atiyah class of a sheaf of modules](part-03/92-19-the-atiyah-class-of-a-sheaf-of-modules.md)
-- [92.20 The cotangent complex of a morphism of ringed spaces](part-03/92-20-the-cotangent-complex-of-a-morphism-of-rin.md)
-- [92.21 Deformations of ringed spaces and the cotangent complex](part-03/92-21-deformations-of-ringed-spaces-and-the-cota.md)
 - [92.22 The cotangent complex of a morphism of ringed topoi](part-03/92-22-the-cotangent-complex-of-a-morphism-of-rin.md)
 - [92.23 Deformations of ringed topoi and the cotangent complex](part-03/92-23-deformations-of-ringed-topoi-and-the-cotan.md)
 - [92.24 The cotangent complex of a morphism of schemes](part-03/92-24-the-cotangent-complex-of-a-morphism-of-sch.md)

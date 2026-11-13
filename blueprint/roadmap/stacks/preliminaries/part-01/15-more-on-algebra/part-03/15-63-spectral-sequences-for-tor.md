@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.63 Spectral sequences for Tor
 
-Section 15.63 of the Stacks Project, [Tag 061Y](https://stacks.math.columbia.edu/tag/061Y). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.63 of the Stacks Project, [Tag 061Y](https://stacks.math.columbia.edu/tag/061Y). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 061Z, an example
 
 [Tag 061Z](https://stacks.math.columbia.edu/tag/061Z) in the Stacks Project.
 
-**`CochainComplex.Tor.exists_spectral_sequences_tor_homology_and_terms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Tor.lean, line 1258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Tor.lean#L1258). References: EGA III (6.3.2), “Q• = module M, K bdd”; EGA III (7.6.4), “(i) spectral sequence”.
+**`CochainComplex.Tor.exists_spectral_sequences_tor_homology_and_terms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Tor.lean, line 1258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Tor.lean#L1258). References: EGA III (6.3.2), “Q• = module M, K bdd”; EGA III (7.6.4), “(i) spectral sequence”.
 
 > Let `K` be a bounded-below chain complex of `R`-modules and let `M` be an `R`-module. There
 > is a bounded-below free resolution `P` of `M`, and the two filtrations of `K ⊗[R] P` give
@@ -64,7 +64,7 @@ public theorem exists_spectral_sequences_tor_homology_and_terms
 
 [Tag 068F](https://stacks.math.columbia.edu/tag/068F) in the Stacks Project.
 
-**`CochainComplex.Tor.ChangeOfRingsSpectralSequence.exists_tor_change_of_rings_spectral_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/ChangeOfRingsSpectralSequence.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/ChangeOfRingsSpectralSequence.lean#L452). References: EGA III (6.9.3), “special case”; EGA III (6.9.3.2), “special case”; EGA III (6.9.3.3), “special case”; SGA 7 VIII (2.1), “special case”.
+**`CochainComplex.Tor.ChangeOfRingsSpectralSequence.exists_tor_change_of_rings_spectral_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/ChangeOfRingsSpectralSequence.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/ChangeOfRingsSpectralSequence.lean#L448). References: EGA III (6.9.3), “special case”; EGA III (6.9.3.2), “special case”; EGA III (6.9.3.3), “special case”; SGA 7 VIII (2.1), “special case”.
 
 > **Stacks 068F.** Let `R → S` be a homomorphism of commutative rings, `M` an `R`-module and
 > `N` an `S`-module. There is a free resolution `P^•` of `M` over `R` such that the homology of
@@ -108,7 +108,7 @@ public theorem exists_tor_change_of_rings_spectral_sequence
 
 [Tag 0620](https://stacks.math.columbia.edu/tag/0620) in the Stacks Project.
 
-**`RingTheory.TorBaseChange.exists_tor_base_change_spectral_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/BaseChangeSpectralSequence.lean, line 715](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/BaseChangeSpectralSequence.lean#L715). References: EGA III (6.9.8), “(6.9.8.1)”.
+**`RingTheory.TorBaseChange.exists_tor_base_change_spectral_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/BaseChangeSpectralSequence.lean, line 714](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/BaseChangeSpectralSequence.lean#L714). References: EGA III (6.9.8), “(6.9.8.1)”.
 
 > If `A → B` and the `B`-modules `M` and `N` are flat over `A`, then for
 > `B' = B ⊗[A] A'`, `M' = M ⊗[B] B'`, and `N' = N ⊗[B] B'`, there is a homological spectral sequence
@@ -144,7 +144,7 @@ public theorem exists_tor_base_change_spectral_sequence
 
 [Tag 0662](https://stacks.math.columbia.edu/tag/0662) in the Stacks Project.
 
-**`CochainComplex.DerivedTensorSpectralSequence.exists_derived_tensor_spectral_sequences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DerivedTensor.lean, line 1317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/DerivedTensor.lean#L1317).
+**`CochainComplex.DerivedTensorSpectralSequence.exists_derived_tensor_spectral_sequences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DerivedTensor.lean, line 1317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/DerivedTensor.lean#L1317).
 
 > **Stacks 0662.** For two bounded-above objects `K`, `L` of the derived category of a
 > commutative ring `R` there are two convergent spectral sequences
@@ -243,4 +243,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.63, Tag 061Y](https://stacks.math.columbia.edu/tag/061Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

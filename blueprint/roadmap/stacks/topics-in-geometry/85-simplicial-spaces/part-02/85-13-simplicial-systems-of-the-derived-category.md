@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.13 Simplicial systems of the derived category
 
-Section 85.13 of the Stacks Project, [Tag 0D9F](https://stacks.math.columbia.edu/tag/0D9F). 7 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 85.13 of the Stacks Project, [Tag 0D9F](https://stacks.math.columbia.edu/tag/0D9F). 7 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D9G, a definition
 
 [Tag 0D9G](https://stacks.math.columbia.edu/tag/0D9G) in the Stacks Project.
 
-**`CategoryTheory.SimplicialDerivedSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean#L478). The attribute's comment: “the simplicial system”.
+**`CategoryTheory.SimplicialDerivedSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean#L478). The attribute's comment: “the simplicial system”.
 
 > A simplicial system of the derived category for `S`: an object `K_n` of the derived category
 > of abelian sheaves on each component site, and for every simplex map `φ : [m] ⟶ [n]` a map
@@ -26,7 +26,7 @@ Section 85.13 of the Stacks Project, [Tag 0D9F](https://stacks.math.columbia.edu
 structure SimplicialDerivedSystem
 ```
 
-**`CategoryTheory.SimplicialDerivedSystem.Cartesian`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean#L494). The attribute's comment: “cartesian systems”.
+**`CategoryTheory.SimplicialDerivedSystem.Cartesian`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean, line 494](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean#L494). The attribute's comment: “cartesian systems”.
 
 > A system is cartesian if all its transition maps are isomorphisms.
 
@@ -34,7 +34,7 @@ structure SimplicialDerivedSystem
 abbrev Cartesian (K : SimplicialDerivedSystem S) : Prop
 ```
 
-**`CategoryTheory.SimplicialDerivedSystem.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean#L499). The attribute's comment: “morphisms of simplicial systems”.
+**`CategoryTheory.SimplicialDerivedSystem.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean#L499). The attribute's comment: “morphisms of simplicial systems”.
 
 > A morphism is a degreewise morphism commuting with every transition map.
 
@@ -42,7 +42,7 @@ abbrev Cartesian (K : SimplicialDerivedSystem S) : Prop
 structure Hom (K L : SimplicialDerivedSystem S)
 ```
 
-**`CategoryTheory.SimplicialDerivedSystem.cartesianInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean, line 550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean#L550).
+**`CategoryTheory.SimplicialDerivedSystem.cartesianInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean, line 550](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/DerivedSystem.lean#L550).
 
 > Simplicial systems of the derived category: the category whose objects are the systems
 > `(K_n, K_φ)` of `SimplicialDerivedSystem S` and whose morphisms are the degreewise maps commuting
@@ -57,7 +57,7 @@ def cartesianInclusion : (cartesian S).FullSubcategory ⥤ SimplicialDerivedSyst
 
 [Tag 0D9H](https://stacks.math.columbia.edu/tag/0D9H) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.associatedDerivedSystemData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AssociatedDerivedSystem.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/AssociatedDerivedSystem.lean#L461). The attribute's comment: “associated simplicial system”.
+**`CategoryTheory.SimplicialSiteSituation.associatedDerivedSystemData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AssociatedDerivedSystem.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/AssociatedDerivedSystem.lean#L461). The attribute's comment: “associated simplicial system”.
 
 > The canonical simplicial system of the derived category attached to an object `K` of the
 > derived category of abelian sheaves on the total site, together with the equations stating that
@@ -72,7 +72,7 @@ def associatedDerivedSystemData (K : DerivedCategory (Sheaf S.totalTopology Ab.{
         HEq (T.map φ) ((derivedTransition S φ).app K)) }
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.associatedDerivedSystem_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AssociatedDerivedSystem.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/AssociatedDerivedSystem.lean#L479). The attribute's comment: “cartesian objects give cartesian systems”.
+**`CategoryTheory.SimplicialSiteSituation.associatedDerivedSystem_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AssociatedDerivedSystem.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/AssociatedDerivedSystem.lean#L479). The attribute's comment: “cartesian objects give cartesian systems”.
 
 > The simplicial system of derived restrictions of a cartesian object is cartesian.
 
@@ -86,7 +86,7 @@ theorem associatedDerivedSystem_cartesian
 
 [Tag 0GME](https://stacks.math.columbia.edu/tag/0GME) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.pairDerivedSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DerivedCocycleSystem.lean, line 979](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/DerivedCocycleSystem.lean#L979). The attribute's comment: “the simplicial system”.
+**`CategoryTheory.SimplicialSiteSituation.pairDerivedSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DerivedCocycleSystem.lean, line 979](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/DerivedCocycleSystem.lean#L979). The attribute's comment: “the simplicial system”.
 
 > **Stacks 0GME.** The cartesian simplicial system of the derived category attached to a pair
 > `(K₀, α)`: in degree `n` the derived inverse image of `K₀` along the last vertex of `⦋n⦌`.
@@ -95,7 +95,7 @@ theorem associatedDerivedSystem_cartesian
 def pairDerivedSystem (P : DerivedCocyclePair S) : SimplicialDerivedSystem S
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.pairDerivedSystem_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DerivedCocycleSystem.lean, line 989](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/DerivedCocycleSystem.lean#L989). The attribute's comment: “the objects of the system”.
+**`CategoryTheory.SimplicialSiteSituation.pairDerivedSystem_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DerivedCocycleSystem.lean, line 989](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/DerivedCocycleSystem.lean#L989). The attribute's comment: “the objects of the system”.
 
 > **Stacks 0GME.** The object of the system in degree `n` is `f_{τⁿₙ}⁻¹K₀`, the derived
 > inverse image of `K₀` along the last vertex of `⦋n⦌`.
@@ -107,7 +107,7 @@ theorem pairDerivedSystem_obj (P : DerivedCocyclePair S) (n : SimplexCategory) :
         (SimplexCategory.const (SimplexCategory.mk 0) n (Fin.last n.len))).obj P.obj
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.pairDerivedSystem_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DerivedCocycleSystem.lean, line 996](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/DerivedCocycleSystem.lean#L996). The attribute's comment: “the system is cartesian”.
+**`CategoryTheory.SimplicialSiteSituation.pairDerivedSystem_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DerivedCocycleSystem.lean, line 996](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/DerivedCocycleSystem.lean#L996). The attribute's comment: “the system is cartesian”.
 
 > **Stacks 0GME.** The system attached to a pair is cartesian.
 
@@ -120,7 +120,7 @@ theorem pairDerivedSystem_cartesian (P : DerivedCocyclePair S) :
 
 [Tag 0D9I](https://stacks.math.columbia.edu/tag/0D9I) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.derivedTensorIntegerResolutionPostnikovSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionDerivedTensor.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionDerivedTensor.lean#L142).
+**`CategoryTheory.SimplicialSiteSituation.derivedTensorIntegerResolutionPostnikovSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionDerivedTensor.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionDerivedTensor.lean#L142).
 
 > **Stacks 0D9I(1) for `- ⊗^L_ℤ K`.** For each length `N`, the images under `- ⊗^L_ℤ K` of
 > the brutal-truncation triangles `Yₙ₊₁ ⟶ Xₙ₊₁ ⟶ Yₙ ⟶ Yₙ₊₁[1]` of the integral resolution are a
@@ -137,7 +137,7 @@ def derivedTensorIntegerResolutionPostnikovSystem (N : ℕ) :
           (termDiff (integerResolutionComplex S) (i : ℕ)))
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.isHomotopyColimit_derivedTensorIntegerResolutionSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionDerivedTensor.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionDerivedTensor.lean#L186).
+**`CategoryTheory.SimplicialSiteSituation.isHomotopyColimit_derivedTensorIntegerResolutionSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionDerivedTensor.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionDerivedTensor.lean#L186).
 
 > **Stacks 0D9I(2) for `- ⊗^L_ℤ K`.** The object `K` is the derived colimit of the system
 > `Yₙ[n] = (g_{n!}ℤ → … → g_{0!}ℤ) ⊗^L_ℤ K`.
@@ -147,7 +147,7 @@ theorem isHomotopyColimit_derivedTensorIntegerResolutionSystem :
     IsHomotopyColimit (integerResolutionSystem S ⋙ integerDerivedTensorRight S K) K
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.map_integerResolutionPostnikovSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionPostnikov.lean, line 942](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionPostnikov.lean#L942).
+**`CategoryTheory.SimplicialSiteSituation.map_integerResolutionPostnikovSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionPostnikov.lean, line 942](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionPostnikov.lean#L942).
 
 > **Stacks 0D9I(1).** For an exact functor `T` of `D(𝒞_total)` — such as `- ⊗^L_ℤ K` for an
 > object `K` of `D(𝒞_total)` — the images under `T` of the brutal-truncation triangles of the
@@ -163,7 +163,7 @@ def map_integerResolutionPostnikovSystem
       (fun i : Fin N => T.map (termDiff (integerResolutionComplex S) (i : ℕ)))
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.isHomotopyColimit_map_integerResolutionSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionPostnikov.lean, line 969](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionPostnikov.lean#L969).
+**`CategoryTheory.SimplicialSiteSituation.isHomotopyColimit_map_integerResolutionSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionPostnikov.lean, line 969](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolutionPostnikov.lean#L969).
 
 > **Stacks 0D9I(2).** For an exact functor `T` of `D(𝒞_total)` commuting with countable
 > direct sums — such as `- ⊗^L_ℤ K` for an object `K` of `D(𝒞_total)` — the object `T(ℤ)` is the
@@ -182,7 +182,7 @@ theorem isHomotopyColimit_map_integerResolutionSystem
 
 [Tag 0D9J](https://stacks.math.columbia.edu/tag/0D9J) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.eq_zero_of_derivedComponent_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedMapVanishing.lean, line 537](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedMapVanishing.lean#L537).
+**`CategoryTheory.SimplicialSiteSituation.eq_zero_of_derivedComponent_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedMapVanishing.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedMapVanishing.lean#L537).
 
 > **Stacks 0D9J.** In the simplicial-site situation of Stacks 09WE, let `K` and `K'` be objects
 > of `D(𝒞_total)` with `K` cartesian, and suppose that every morphism `Kᵢ[i] ⟶ K'ᵢ` vanishes for
@@ -209,7 +209,7 @@ theorem eq_zero_of_derivedComponent_zero
 
 [Tag 0D9K](https://stacks.math.columbia.edu/tag/0D9K) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.exists_hom_of_isCartesianDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedLiftMorphism.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedLiftMorphism.lean#L150). The attribute's comment: “a morphism of simplicial systems comes from the total site, at the source's hypotheses (1) and (2): the degree-zero lift is `CategoryTheory.SimplicialSiteSituation.exists_hom_derivedComponent_zero_eq`, which makes the source's two omitted computations -- the vanishing of `X_1 ⟶ X_0 ⟶ K'` against the transition of the realization, and the reading of the structural map `X_0 ⟶ K` as the counit -- and the passage from degree zero to all degrees is `CategoryTheory.SimplicialSiteSituation.exists_hom_iff_exists_hom_zero`”.
+**`CategoryTheory.SimplicialSiteSituation.exists_hom_of_isCartesianDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedLiftMorphism.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedLiftMorphism.lean#L150). The attribute's comment: “a morphism of simplicial systems comes from the total site, at the source's hypotheses (1) and (2): the degree-zero lift is `CategoryTheory.SimplicialSiteSituation.exists_hom_derivedComponent_zero_eq`, which makes the source's two omitted computations -- the vanishing of `X_1 ⟶ X_0 ⟶ K'` against the transition of the realization, and the reading of the structural map `X_0 ⟶ K` as the counit -- and the passage from degree zero to all degrees is `CategoryTheory.SimplicialSiteSituation.exists_hom_iff_exists_hom_zero`”.
 
 > **Stacks 0D9K.** In the simplicial-site situation of Stacks 09WE, let `K` and `K'` be objects
 > of the derived category of abelian sheaves on the total site. If `K` is cartesian in the sense of
@@ -231,7 +231,7 @@ theorem exists_hom_of_isCartesianDerived
 
 [Tag 0D9L](https://stacks.math.columbia.edu/tag/0D9L) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.exists_isCartesianDerived_of_simplicialDerivedSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedOfSystem.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedOfSystem.lean#L344).
+**`CategoryTheory.SimplicialSiteSituation.exists_isCartesianDerived_of_simplicialDerivedSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedOfSystem.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedOfSystem.lean#L344).
 
 > A cartesian simplicial system of the derived categories of the components, whose objects have
 > no positively shifted self-maps, is the system associated with a cartesian object of the derived
@@ -252,7 +252,7 @@ theorem exists_isCartesianDerived_of_simplicialDerivedSystem (T : SimplicialDeri
                 (S.associatedDerivedSystem K).map φ
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.nonempty_sequentialPostnikovSystem_realizationComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedPostnikov.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedPostnikov.lean#L341). The attribute's comment: “the Postnikov system of the realization complex”.
+**`CategoryTheory.SimplicialSiteSituation.nonempty_sequentialPostnikovSystem_realizationComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedPostnikov.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedPostnikov.lean#L341). The attribute's comment: “the Postnikov system of the realization complex”.
 
 > **Stacks 0D9L, the Postnikov system of the realization.**  The complex whose term in degree
 > `n` is the extension by lower shriek of the object of the system in degree `n`, and whose
@@ -283,4 +283,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.13, Tag 0D9F](https://stacks.math.columbia.edu/tag/0D9F)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

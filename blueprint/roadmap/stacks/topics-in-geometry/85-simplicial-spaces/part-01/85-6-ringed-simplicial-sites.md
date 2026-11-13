@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.6 Ringed simplicial sites
 
-Section 85.6 of the Stacks Project, [Tag 0D71](https://stacks.math.columbia.edu/tag/0D71). 4 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 85.6 of the Stacks Project, [Tag 0D71](https://stacks.math.columbia.edu/tag/0D71). 4 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D72, a lemma
 
 [Tag 0D72](https://stacks.math.columbia.edu/tag/0D72) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.componentRingedTopos_restrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L134). The attribute's comment: “component\_ringed\_topos”.
+**`CategoryTheory.SimplicialSiteSituation.componentRingedTopos_restrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L134). The attribute's comment: “component\_ringed\_topos”.
 
 > The inverse image of sheaves of commutative rings along the component morphism of topoi is
 > canonically and naturally isomorphic to restriction along the component inclusion.
@@ -28,7 +28,7 @@ noncomputable def componentRingedTopos_restrictionIso (S : SimplicialSiteSituati
         (S.componentTopology n) S.totalTopology
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentRingedTopos_restrictionIso_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L148). The attribute's comment: “component\_ringed\_topos”.
+**`CategoryTheory.SimplicialSiteSituation.componentRingedTopos_restrictionIso_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L148). The attribute's comment: “component\_ringed\_topos”.
 
 > The restriction isomorphism is the canonical comparison of Stacks 09WG after forgetting the
 > ring operations. In particular its scalar map is not an arbitrary natural automorphism of
@@ -46,7 +46,7 @@ theorem componentRingedTopos_restrictionIso_forget (S : SimplicialSiteSituation.
           ((sheafCompose S.totalTopology (forget CommRingCat.{u})).obj O)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L166). The attribute's comment: “component\_ringed\_topos”.
+**`CategoryTheory.SimplicialSiteSituation.componentRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L166). The attribute's comment: “component\_ringed\_topos”.
 
 > The canonical morphism of ringed topoi from a simplicial component to the total site. Its
 > structure map is the adjoint of the comparison `gₙ⁻¹O ⟶ Oₙ` of structure sheaves.
@@ -57,7 +57,7 @@ noncomputable def componentRingedToposHom (S : SimplicialSiteSituation.{u})
     RingedToposHom (componentRingedTopos S O n) (totalRingedTopos S O)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentRingedToposHom_toToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L176). The attribute's comment: “component\_ringed\_topos”.
+**`CategoryTheory.SimplicialSiteSituation.componentRingedToposHom_toToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L176). The attribute's comment: “component\_ringed\_topos”.
 
 > The underlying geometric morphism is the component morphism of Stacks 09WG.
 
@@ -67,7 +67,7 @@ theorem componentRingedToposHom_toToposHom (S : SimplicialSiteSituation.{u})
     (componentRingedToposHom S O n).toToposHom = componentMorphism S n
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.moduleSumFormulaLegEq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleOfModuleSystem.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleOfModuleSystem.lean#L72). The attribute's comment: “the summand inclusions of the direct-sum formula on sheaves of modules are the canonical maps f\_φ^*G ⟶ g\_m^*g\_\{n!}G, in Situation 09WE (both cases)”.
+**`CategoryTheory.SimplicialSiteSituation.moduleSumFormulaLegEq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleOfModuleSystem.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleOfModuleSystem.lean#L72). The attribute's comment: “the summand inclusions of the direct-sum formula on sheaves of modules are the canonical maps f\_φ^*G ⟶ g\_m^*g\_\{n!}G, in Situation 09WE (both cases)”.
 
 > **The leg equation of Stacks 0D72 (6) in every simplicial-site situation.** For every simplex
 > map `φ : [n] ⟶ [m]` the `φ`th summand inclusion of the componentwise direct-sum formula for
@@ -80,7 +80,7 @@ theorem componentRingedToposHom_toToposHom (S : SimplicialSiteSituation.{u})
 theorem moduleSumFormulaLegEq : S.ModuleSumFormulaLegEq O
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentRingedToposHom_fSharpInverseImageRing_ringSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackRestriction.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackRestriction.lean#L107). The attribute's comment: “the structure map of the component morphism on underlying sheaves of sets”.
+**`CategoryTheory.SimplicialSiteSituation.componentRingedToposHom_fSharpInverseImageRing_ringSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackRestriction.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackRestriction.lean#L107). The attribute's comment: “the structure map of the component morphism on underlying sheaves of sets”.
 
 > **The inverse-image form of the structure map of `g_n` on underlying sheaves of sets is the
 > comparison of Stacks 09WG.** The structure map is recorded through the adjunction for sheaves of
@@ -96,7 +96,7 @@ theorem componentRingedToposHom_fSharpInverseImageRing_ringSheafMap :
         ((sheafCompose S.totalTopology (forget CommRingCat.{u})).obj O)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentPullbackModulesRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackRestriction.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackRestriction.lean#L171). The attribute's comment: “the pullback of modules along g\_n is restriction to the component”.
+**`CategoryTheory.SimplicialSiteSituation.componentPullbackModulesRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackRestriction.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackRestriction.lean#L171). The attribute's comment: “the pullback of modules along g\_n is restriction to the component”.
 
 > **Stacks 0D72: the pullback of sheaves of modules to a simplicial component is the literal
 > restriction.** The two presentations of restriction to the degree-`n` component that this
@@ -109,7 +109,7 @@ def componentPullbackModulesRestrictionIso :
       S.componentModulesRestriction O n
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentPullbackModulesRestrictionIso_underlying`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackUnderlying.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackUnderlying.lean#L210). The attribute's comment: “the comparison of the two presentations of restriction, on underlying sheaves of sets”.
+**`CategoryTheory.SimplicialSiteSituation.componentPullbackModulesRestrictionIso_underlying`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackUnderlying.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackUnderlying.lean#L210). The attribute's comment: “the comparison of the two presentations of restriction, on underlying sheaves of sets”.
 
 > **Stacks 0D72 on underlying sheaves of sets is Stacks 09WG.** Read through the identification
 > of the underlying sheaf of a pullback of modules with an inverse image, the comparison of
@@ -129,7 +129,7 @@ theorem componentPullbackModulesRestrictionIso_underlying
         (Sheaf.moduleSheaf.{u, u, u} (S.totalRingSheaf O) M)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentPullbackComplexRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean#L84). The attribute's comment: “degreewise pullback of complexes along g\_n is degreewise restriction”.
+**`CategoryTheory.SimplicialSiteSituation.componentPullbackComplexRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean#L84). The attribute's comment: “degreewise pullback of complexes along g\_n is degreewise restriction”.
 
 > **Stacks 0D72 on cochain complexes.** Degreewise pullback of complexes of modules along the
 > component morphism of ringed topoi is degreewise restriction to the component.
@@ -142,7 +142,7 @@ def componentPullbackComplexRestrictionIso :
       S.componentModulesRestrictionComplex O n
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentModuleLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriek.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriek.lean#L128). The attribute's comment: “existence of the left adjoint g\_\{n!} of g\_n^* on modules”.
+**`CategoryTheory.SimplicialSiteSituation.componentModuleLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriek.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriek.lean#L128). The attribute's comment: “existence of the left adjoint g\_\{n!} of g\_n^* on modules”.
 
 > **Stacks 0D72.** The defining adjunction `g_{n!} ⊣ g_n^*` of lower shriek of modules on a
 > simplicial component, exhibiting the left adjoint `g_{n!}` of `g_n^*` whose existence the tag
@@ -153,7 +153,7 @@ noncomputable def componentModuleLowerShriekAdjunction :
     componentModuleLowerShriek S O n ⊣ componentModuleRestriction S O n
 ```
 
-**`CategoryTheory.SimplicialSite.componentModuleSumFormulaA`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaCaseA.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaCaseA.lean#L137). The attribute's comment: “direct-sum formula in case (A), on sheaves of modules”.
+**`CategoryTheory.SimplicialSite.componentModuleSumFormulaA`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaCaseA.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaCaseA.lean#L137). The attribute's comment: “direct-sum formula in case (A), on sheaves of modules”.
 
 > **Stacks 0D72, the componentwise direct-sum formula for sheaves of modules in case (A).**
 > The restriction to simplicial degree `m` of lower shriek `g_{n!}` of sheaves of `O`-modules from
@@ -167,7 +167,7 @@ def componentModuleSumFormulaA (n m : SimplexCategory) :
         (situation C).componentModuleRestriction O m
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.componentModuleSumFormulaB`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaCaseB.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaCaseB.lean#L155). The attribute's comment: “direct-sum formula in case (B), on sheaves of modules”.
+**`CategoryTheory.CocontinuousSimplicialSite.componentModuleSumFormulaB`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaCaseB.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaCaseB.lean#L155). The attribute's comment: “direct-sum formula in case (B), on sheaves of modules”.
 
 > **The componentwise direct-sum formula for sheaves of modules in case (B).** The restriction
 > to simplicial degree `m` of lower shriek `g_{n!}` of sheaves of `O`-modules from degree `n` is the
@@ -181,7 +181,7 @@ def componentModuleSumFormulaB :
         (situation C).componentModuleRestriction (totalRingSheafB C P) m
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.moduleSumFormula`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaSituation.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaSituation.lean#L101). The attribute's comment: “direct-sum formula on sheaves of modules, in Situation 09WE (both cases)”.
+**`CategoryTheory.SimplicialSiteSituation.moduleSumFormula`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaSituation.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaSituation.lean#L101). The attribute's comment: “direct-sum formula on sheaves of modules, in Situation 09WE (both cases)”.
 
 > **The componentwise direct-sum formula of Stacks 0D72 (6) for sheaves of modules**, for an
 > arbitrary simplicial-site situation and in the summand spelling Stacks 0D74 consumes: the
@@ -199,7 +199,7 @@ def moduleSumFormula : ∀ (S : SimplicialSiteSituation.{u})
     (P : Sheaf S.totalTopology CommRingCat.{u}) (n : SimplexCategory), S.ModuleSumFormula' P n
 ```
 
-**`Stacks.Sites.ComponentModuleSumFormula.colimitPullbackRestrictionIsoCoproduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentModuleSumFormulaPresheaf.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentModuleSumFormulaPresheaf.lean#L220). The attribute's comment: “direct-sum formula in case (B), on presheaves of modules”.
+**`Stacks.Sites.ComponentModuleSumFormula.colimitPullbackRestrictionIsoCoproduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentModuleSumFormulaPresheaf.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentModuleSumFormulaPresheaf.lean#L220). The attribute's comment: “direct-sum formula in case (B), on presheaves of modules”.
 
 > The restriction to simplicial degree `m` of the presheaf-level module lower shriek from degree
 > `n` is, as a functor, the direct sum over the simplex maps `φ : [n] ⟶ [m]` of the presheaf-level
@@ -214,7 +214,7 @@ noncomputable def colimitPullbackRestrictionIsoCoproduct :
       ∐ fun φ : n ⟶ m => transitionPullbackPresheafModules C R φ
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentRingedToposHom_fSharpInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 711](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L711). The attribute's comment: “the structure map of the component morphism, in inverse-image form”.
+**`CategoryTheory.SimplicialSiteSituation.componentRingedToposHom_fSharpInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean, line 711](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/RingedToposMorphism.lean#L711). The attribute's comment: “the structure map of the component morphism, in inverse-image form”.
 
 > The structure map of the canonical morphism from a simplicial component to the total ringed
 > topos is, in inverse-image form, the comparison of structure sheaves of Stacks 0D72.
@@ -230,7 +230,7 @@ theorem componentRingedToposHom_fSharpInverseImage (S : SimplicialSiteSituation.
 
 [Tag 0D73](https://stacks.math.columbia.edu/tag/0D73) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.isTotallyAcyclic_component_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentTotalAcyclicity.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentTotalAcyclicity.lean#L83).
+**`CategoryTheory.SimplicialSiteSituation.isTotallyAcyclic_component_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentTotalAcyclicity.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentTotalAcyclicity.lean#L83).
 
 > **Stacks Project, Tag 0D73.** Let `O` be a sheaf of rings on the total site of a
 > simplicial-site situation and let `I` be an injective sheaf of `O`-modules. The abelian sheaf
@@ -246,7 +246,7 @@ theorem isTotallyAcyclic_component_of_injective
       ((S.restrictAb n).obj ((SheafOfModules.toSheaf O).obj I))
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.isTotallyAcyclic_componentModule_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentTotalAcyclicity.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentTotalAcyclicity.lean#L118). The attribute's comment: “the conclusion read on the restricted sheaf of modules rather than on the restriction of the underlying abelian sheaf”.
+**`CategoryTheory.SimplicialSiteSituation.isTotallyAcyclic_componentModule_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentTotalAcyclicity.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentTotalAcyclicity.lean#L118). The attribute's comment: “the conclusion read on the restricted sheaf of modules rather than on the restriction of the underlying abelian sheaf”.
 
 > **Stacks Project, Tag 0D73**, with the conclusion read on the restricted sheaf of modules.
 > The restriction of an injective sheaf of `O`-modules to the degree-`n` simplicial component —
@@ -269,7 +269,7 @@ theorem isTotallyAcyclic_componentModule_of_injective
 
 [Tag 0D74](https://stacks.math.columbia.edu/tag/0D74) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.exactFunctor_componentModuleLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriekExact.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriekExact.lean#L194). The attribute's comment: “with the componentwise direct-sum formula of Tag 0D72 proved in either case of 09WE”.
+**`CategoryTheory.SimplicialSiteSituation.exactFunctor_componentModuleLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriekExact.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriekExact.lean#L197). The attribute's comment: “with the componentwise direct-sum formula of Tag 0D72 proved in either case of 09WE”.
 
 > **Stacks 0D74.** Lower shriek `g_{n!}` of sheaves of modules from the degree-`n` simplicial
 > component is exact as soon as every structure-sheaf transition `f_φ⁻¹O_n ⟶ O_m` out of degree `n`
@@ -286,12 +286,14 @@ theorem isTotallyAcyclic_componentModule_of_injective
 theorem exactFunctor_componentModuleLowerShriek
     (hflat : ∀ (m : SimplexCategory) (φ : n ⟶ m), (S.transitionRingedToposHom P φ).IsFlat) :
     exactFunctor
-      (SheafOfModules.{u} (S.componentRingSheaf ((Stacks.SheafOfModules.Tensor.ringSheaf (J := S.totalTopology)) P) n))
+      (SheafOfModules.{u} (S.componentRingSheaf
+        ((Stacks.SheafOfModules.Tensor.ringSheaf (J := S.totalTopology)) P) n))
       (SheafOfModules.{u} ((Stacks.SheafOfModules.Tensor.ringSheaf (J := S.totalTopology)) P))
-      (S.componentModuleLowerShriek ((Stacks.SheafOfModules.Tensor.ringSheaf (J := S.totalTopology)) P) n)
+      (S.componentModuleLowerShriek
+        ((Stacks.SheafOfModules.Tensor.ringSheaf (J := S.totalTopology)) P) n)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.exactFunctor_componentModuleLowerShriek'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaSituation.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaSituation.lean#L118).
+**`CategoryTheory.SimplicialSiteSituation.exactFunctor_componentModuleLowerShriek'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaSituation.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaSituation.lean#L118).
 
 > **Stacks 0D74.** Lower shriek `g_{n!}` of sheaves of modules from the degree-`n` simplicial
 > component is exact as soon as every structure-sheaf transition `f_φ⁻¹O_n ⟶ O_m` out of degree `n`
@@ -317,7 +319,7 @@ theorem exactFunctor_componentModuleLowerShriek'
 
 [Tag 0D75](https://stacks.math.columbia.edu/tag/0D75) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.injective_componentModuleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriekExact.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriekExact.lean#L227). The attribute's comment: “with the componentwise direct-sum formula of Tag 0D72 proved in either case of 09WE”.
+**`CategoryTheory.SimplicialSiteSituation.injective_componentModuleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriekExact.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriekExact.lean#L236). The attribute's comment: “with the componentwise direct-sum formula of Tag 0D72 proved in either case of 09WE”.
 
 > **Stacks 0D75.** Let `O` be a sheaf of rings on the total site whose structure-sheaf
 > transitions `f_φ⁻¹O_n ⟶ O_m` out of degree `n` are flat. An injective sheaf of `O`-modules
@@ -330,11 +332,13 @@ theorem exactFunctor_componentModuleLowerShriek'
 ```lean
 theorem injective_componentModuleRestriction
     (hflat : ∀ (m : SimplexCategory) (φ : n ⟶ m), (S.transitionRingedToposHom P φ).IsFlat)
-    (I : SheafOfModules.{u} ((Stacks.SheafOfModules.Tensor.ringSheaf (J := S.totalTopology)) P)) [Injective I] :
-    Injective ((S.componentModuleRestriction ((Stacks.SheafOfModules.Tensor.ringSheaf (J := S.totalTopology)) P) n).obj I)
+    (I : SheafOfModules.{u} ((Stacks.SheafOfModules.Tensor.ringSheaf (J := S.totalTopology)) P))
+    [Injective I] :
+    Injective ((S.componentModuleRestriction
+      ((Stacks.SheafOfModules.Tensor.ringSheaf (J := S.totalTopology)) P) n).obj I)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.injective_componentModuleRestriction'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaSituation.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaSituation.lean#L177).
+**`CategoryTheory.SimplicialSiteSituation.injective_componentModuleRestriction'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaSituation.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleSumFormulaSituation.lean#L177).
 
 > **Stacks 0D75.** Let `O` be a sheaf of rings on the total site whose structure-sheaf
 > transitions `f_φ⁻¹O_n ⟶ O_m` out of degree `n` are flat. An injective sheaf of `O`-modules
@@ -359,4 +363,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.6, Tag 0D71](https://stacks.math.columbia.edu/tag/0D71)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

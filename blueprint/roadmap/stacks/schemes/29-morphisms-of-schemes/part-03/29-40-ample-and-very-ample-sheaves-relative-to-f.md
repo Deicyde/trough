@@ -8,13 +8,13 @@ proof: formalized
 
 # 29.40 Ample and very ample sheaves relative to finite type morphisms
 
-Section 29.40 of the Stacks Project, [Tag 02NO](https://stacks.math.columbia.edu/tag/02NO). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.40 of the Stacks Project, [Tag 02NO](https://stacks.math.columbia.edu/tag/02NO). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02NP, a lemma
 
 [Tag 02NP](https://stacks.math.columbia.edu/tag/02NP) in the Stacks Project.
 
-**`Stacks.CoordinateImmersion.hasImmersionTwistOver_of_isRelativelyVeryAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmpleAffineBase/CoordinateImmersion.lean, line 593](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/VeryAmpleAffineBase/CoordinateImmersion.lean#L593). References: EGA II (5.3.3), “special case”.
+**`Stacks.CoordinateImmersion.hasImmersionTwistOver_of_isRelativelyVeryAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmpleAffineBase/CoordinateImmersion.lean, line 593](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/VeryAmpleAffineBase/CoordinateImmersion.lean#L593). References: EGA II (5.3.3), “special case”.
 
 > **Stacks Tag 02NP.** A relatively very ample invertible sheaf on a scheme of finite type over
 > an affine base is the hyperplane sheaf pulled back along an immersion into a finite-dimensional
@@ -41,7 +41,7 @@ theorem hasImmersionTwistOver_of_isRelativelyVeryAmple {S X : Scheme.{u}} (f : X
 
 [Tag 04II](https://stacks.math.columbia.edu/tag/04II) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_immersion_affineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/AffineSpaceImmersion.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/AffineSpaceImmersion.lean#L162).
+**`AlgebraicGeometry.exists_immersion_affineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/AffineSpaceImmersion.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/AffineSpaceImmersion.lean#L162).
 
 > **Stacks Project, Tag 04II.** A quasi-affine scheme locally of finite type over `S` admits,
 > over `S`, an immersion into a finite-dimensional relative affine space.
@@ -57,7 +57,7 @@ theorem exists_immersion_affineSpace
 
 [Tag 01VS](https://stacks.math.columbia.edu/tag/01VS) in the Stacks Project.
 
-**`Stacks.StalkwiseGeneration.exists_immersion_projectiveSpaceOver_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StalkwiseGeneration/Ample.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/StalkwiseGeneration/Ample.lean#L81).
+**`Stacks.StalkwiseGeneration.exists_immersion_projectiveSpaceOver_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StalkwiseGeneration/Ample.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StalkwiseGeneration/Ample.lean#L81).
 
 > **[Stacks, Tag 01VS].** For `f : X ⟶ S` locally of finite type and `L` an ample invertible
 > `𝒪_X`-module there is a `d₀ ≥ 1` such that every degree `d ≥ d₀` admits an immersion
@@ -79,7 +79,7 @@ theorem exists_immersion_projectiveSpaceOver_of_isAmple {S : Scheme.{u}} (f : X 
 
 [Tag 01VT](https://stacks.math.columbia.edu/tag/01VT) in the Stacks Project.
 
-**`Stacks.AmpleRelativeFiniteType.tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/Basic.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/Basic.lean#L151). The attribute's comment: “conditions (1), (2), (5) and (6) of the six; conditions (3) and (4), relative very ampleness, are stated together with these four by `Stacks.AmpleRelativeFiniteType.tfae_six`, and (5), (6) are taken with no lower bound on `n`, which `Stacks.AmpleProjectiveImmersion.hasImmersionTwistOverPos_iff` shows is the source's `n ≥ 1` clause”.
+**`Stacks.AmpleRelativeFiniteType.tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/Basic.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/Basic.lean#L151). The attribute's comment: “conditions (1), (2), (5) and (6) of the six; conditions (3) and (4), relative very ampleness, are stated together with these four by `Stacks.AmpleRelativeFiniteType.tfae_six`, and (5), (6) are taken with no lower bound on `n`, which `Stacks.AmpleProjectiveImmersion.hasImmersionTwistOverPos_iff` shows is the source's `n ≥ 1` clause”.
 
 > **[Stacks, Tag 01VT], conditions (1), (2), (5) and (6), unconditionally.** For `f : X ⟶ S`
 > of finite type with `S` affine and `L` an invertible `𝒪_X`-module, the following are equivalent:
@@ -110,7 +110,7 @@ theorem tfae [IsAffine S] (f : X ⟶ S) (L : X.Modules) [IsInvertibleModule X L]
         HasImmersionTwistOver f (tensorPowModule X L (d : ℤ))]
 ```
 
-**`Stacks.AmpleRelativeFiniteType.tfae_six`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean#L190). The attribute's comment: “all six conditions, with no named input: ampleness, `f`-ampleness, relative very ampleness of some and of every sufficiently high tensor power, and the two immersion clauses; the immersion clauses are taken with no lower bound on the dimension `n` of the projective space, where the source writes `n ≥ 1` — the two agree by `Stacks.AmpleProjectiveImmersion.hasImmersionTwistOverPos_iff`, and `Stacks.AmpleRelativeFiniteType.tfae_six_pos` is the list with the source's clauses”.
+**`Stacks.AmpleRelativeFiniteType.tfae_six`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean#L190). The attribute's comment: “all six conditions, with no named input: ampleness, `f`-ampleness, relative very ampleness of some and of every sufficiently high tensor power, and the two immersion clauses; the immersion clauses are taken with no lower bound on the dimension `n` of the projective space, where the source writes `n ≥ 1` — the two agree by `Stacks.AmpleProjectiveImmersion.hasImmersionTwistOverPos_iff`, and `Stacks.AmpleRelativeFiniteType.tfae_six_pos` is the list with the source's clauses”.
 
 > **[Stacks, Tag 01VT], all six conditions, with no named input.** For
 > `f : X ⟶ S` of finite type with `S` affine and `L` an invertible `𝒪_X`-module, the following are
@@ -146,7 +146,7 @@ theorem tfae_six [IsAffine S]
         HasImmersionTwistOver f (tensorPowModule X L (d : ℤ))]
 ```
 
-**`Stacks.AmpleRelativeFiniteType.isAmple_iff_exists_isRelativelyVeryAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean#L224). The attribute's comment: “the equivalence of conditions (1) and (3): ampleness and relative very ampleness of some positive tensor power”.
+**`Stacks.AmpleRelativeFiniteType.isAmple_iff_exists_isRelativelyVeryAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean#L224). The attribute's comment: “the equivalence of conditions (1) and (3): ampleness and relative very ampleness of some positive tensor power”.
 
 > **The equivalence of (1) and (3) of [Stacks, Tag 01VT]**: `L` is ample exactly when some
 > tensor power `L ^⊗ d` with `d ≥ 1` is very ample relative to `f`.
@@ -158,7 +158,7 @@ theorem isAmple_iff_exists_isRelativelyVeryAmple [IsAffine S] (f : X ⟶ S)
       Stacks.Tag01VMVeryAmple.IsRelativelyVeryAmple f (tensorPowModule X L (d : ℤ))
 ```
 
-**`Stacks.AmpleRelativeFiniteType.isAmple_iff_eventually_isRelativelyVeryAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean#L234). The attribute's comment: “the equivalence of conditions (1) and (4): ampleness and relative very ampleness of every sufficiently high tensor power”. References: EGA II (4.5.10), “more general”.
+**`Stacks.AmpleRelativeFiniteType.isAmple_iff_eventually_isRelativelyVeryAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean#L234). The attribute's comment: “the equivalence of conditions (1) and (4): ampleness and relative very ampleness of every sufficiently high tensor power”. References: EGA II (4.5.10), “more general”.
 
 > **The equivalence of (1) and (4) of [Stacks, Tag 01VT]**: `L` is ample exactly when every
 > sufficiently high tensor power of `L` is very ample relative to `f`.
@@ -170,7 +170,7 @@ theorem isAmple_iff_eventually_isRelativelyVeryAmple [IsAffine S] (f : X ⟶ S)
       Stacks.Tag01VMVeryAmple.IsRelativelyVeryAmple f (tensorPowModule X L (d : ℤ))
 ```
 
-**`Stacks.AmpleRelativeFiniteType.tfae_six_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean#L256). The attribute's comment: “all six conditions verbatim and with no named input: ampleness, `f`-ampleness, relative very ampleness of some and of every sufficiently high tensor power, and the two immersion clauses with the source's lower bound `n ≥ 1` on the dimension of the projective space”.
+**`Stacks.AmpleRelativeFiniteType.tfae_six_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleRelativeFiniteType/VeryAmple.lean#L256). The attribute's comment: “all six conditions verbatim and with no named input: ampleness, `f`-ampleness, relative very ampleness of some and of every sufficiently high tensor power, and the two immersion clauses with the source's lower bound `n ≥ 1` on the dimension of the projective space”.
 
 > **[Stacks, Tag 01VT], all six conditions, with the source's own immersion clauses.** The
 > immersion clauses (5) and (6) are
@@ -202,7 +202,7 @@ theorem tfae_six_pos [IsAffine S] (f : X ⟶ S) (L : X.Modules) [IsInvertibleMod
 
 [Tag 01VU](https://stacks.math.columbia.edu/tag/01VU) in the Stacks Project.
 
-**`Stacks.VeryAmplePowersQuasiCompactBase.existsVeryAmplePower_of_eventuallyVeryAmplePower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean#L92). The attribute's comment: “(3) implies (2)”. References: EGA II (4.5.10), “(ii): e) implies e')”.
+**`Stacks.VeryAmplePowersQuasiCompactBase.existsVeryAmplePower_of_eventuallyVeryAmplePower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean#L92). The attribute's comment: “(3) implies (2)”. References: EGA II (4.5.10), “(ii): e) implies e')”.
 
 > If every sufficiently high tensor power of `L` is very ample relative to `f`, then some
 > positive tensor power of `L` is very ample relative to `f`.
@@ -212,7 +212,7 @@ theorem existsVeryAmplePower_of_eventuallyVeryAmplePower (f : X ⟶ S) (L : X.Mo
     [IsInvertibleModule X L] (h : EventuallyVeryAmplePower f L) : ExistsVeryAmplePower f L
 ```
 
-**`Stacks.VeryAmplePowersQuasiCompactBase.isRelativelyAmple_of_existsVeryAmplePower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean#L100). The attribute's comment: “(2) implies (1)”. References: EGA II (4.5.10), “more general”; EGA II (4.6.2), “more general”.
+**`Stacks.VeryAmplePowersQuasiCompactBase.isRelativelyAmple_of_existsVeryAmplePower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean#L100). The attribute's comment: “(2) implies (1)”. References: EGA II (4.5.10), “more general”; EGA II (4.6.2), “more general”.
 
 > If some positive tensor power of `L` is very ample relative to a quasi-compact `f`, then `L` is
 > ample relative to `f`.
@@ -223,7 +223,7 @@ theorem isRelativelyAmple_of_existsVeryAmplePower (f : X ⟶ S) (L : X.Modules)
     Stacks.RelativeAmple.IsRelativelyAmple f L
 ```
 
-**`Stacks.VeryAmplePowersQuasiCompactBase.isRelativelyAmple_of_eventuallyVeryAmplePower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean#L110). The attribute's comment: “(3) implies (1)”. References: EGA II (4.5.10), “(ii): e) implies ample”.
+**`Stacks.VeryAmplePowersQuasiCompactBase.isRelativelyAmple_of_eventuallyVeryAmplePower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean#L110). The attribute's comment: “(3) implies (1)”. References: EGA II (4.5.10), “(ii): e) implies ample”.
 
 > If every sufficiently high tensor power of `L` is very ample relative to a quasi-compact `f`,
 > then `L` is ample relative to `f`.
@@ -234,7 +234,7 @@ theorem isRelativelyAmple_of_eventuallyVeryAmplePower (f : X ⟶ S) (L : X.Modul
     Stacks.RelativeAmple.IsRelativelyAmple f L
 ```
 
-**`Stacks.VeryAmplePowersQuasiCompactBase.eventuallyVeryAmplePower_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean#L124). The attribute's comment: “(1) implies (3)”. References: EGA II (4.5.10), “(ii): ample implies e)”; EGA II (4.5.11), “The case L' = O\_X”; EGA II (4.6.11), “partial”.
+**`Stacks.VeryAmplePowersQuasiCompactBase.eventuallyVeryAmplePower_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean#L124). The attribute's comment: “(1) implies (3)”. References: EGA II (4.5.10), “(ii): ample implies e)”; EGA II (4.5.11), “The case L' = O\_X”; EGA II (4.6.11), “partial”.
 
 > Let `f : X ⟶ S` be locally of finite type with `S` quasi-compact and let `L` be ample
 > relative to `f`. Then `L^{⊗ d}` is very ample relative to `f` for every sufficiently large `d`.
@@ -246,7 +246,7 @@ theorem eventuallyVeryAmplePower_of_isRelativelyAmple (f : X ⟶ S)
     EventuallyVeryAmplePower f L
 ```
 
-**`Stacks.VeryAmplePowersQuasiCompactBase.tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean#L163).
+**`Stacks.VeryAmplePowersQuasiCompactBase.tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean#L163).
 
 > For `f : X ⟶ S` of finite type with `S` quasi-compact and `L` an invertible `𝒪_X`-module, the
 > three conditions
@@ -269,7 +269,7 @@ theorem tfae (f : X ⟶ S)
 
 [Tag 02NQ](https://stacks.math.columbia.edu/tag/02NQ) in the Stacks Project.
 
-**`Stacks.VeryAmpleFiniteTypeCover.hasProjectiveImmersionCover_of_isRelativelyVeryAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmpleFiniteTypeCover/Equivalence.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/VeryAmpleFiniteTypeCover/Equivalence.lean#L114). The attribute's comment: “(1) implies (2)”.
+**`Stacks.VeryAmpleFiniteTypeCover.hasProjectiveImmersionCover_of_isRelativelyVeryAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmpleFiniteTypeCover/Equivalence.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/VeryAmpleFiniteTypeCover/Equivalence.lean#L114). The attribute's comment: “(1) implies (2)”.
 
 > **Stacks Tag 02NQ, (1) implies (2).** Let `f : X ⟶ S` be of finite type and `L` an invertible
 > `𝒪_X`-module. If `L` is `f`-relatively very ample then there are an open covering `S = ⋃ V_j`, for
@@ -288,7 +288,7 @@ theorem hasProjectiveImmersionCover_of_isRelativelyVeryAmple (f : X ⟶ S) (L : 
     HasProjectiveImmersionCover f L
 ```
 
-**`Stacks.VeryAmpleFiniteTypeCover.isRelativelyVeryAmple_of_hasProjectiveImmersionCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmpleFiniteTypeCover/Equivalence.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/VeryAmpleFiniteTypeCover/Equivalence.lean#L194). The attribute's comment: “(2) implies (1)”.
+**`Stacks.VeryAmpleFiniteTypeCover.isRelativelyVeryAmple_of_hasProjectiveImmersionCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmpleFiniteTypeCover/Equivalence.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/VeryAmpleFiniteTypeCover/Equivalence.lean#L194). The attribute's comment: “(2) implies (1)”.
 
 > **Stacks Tag 02NQ, (2) implies (1).** Let `f : X ⟶ S` be quasi-compact and `L` an invertible
 > `𝒪_X`-module. If there are an open covering `S = ⋃ V_j`, for each `j` an integer `n_j`, and
@@ -310,7 +310,7 @@ theorem isRelativelyVeryAmple_of_hasProjectiveImmersionCover (f : X ⟶ S) (L : 
     Tag01VMVeryAmple.IsRelativelyVeryAmple f L
 ```
 
-**`Stacks.VeryAmpleFiniteTypeCover.isRelativelyVeryAmple_iff_hasProjectiveImmersionCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmpleFiniteTypeCover/Equivalence.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/VeryAmpleFiniteTypeCover/Equivalence.lean#L221).
+**`Stacks.VeryAmpleFiniteTypeCover.isRelativelyVeryAmple_iff_hasProjectiveImmersionCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmpleFiniteTypeCover/Equivalence.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/VeryAmpleFiniteTypeCover/Equivalence.lean#L221).
 
 > **Stacks Tag 02NQ.** For `f : X ⟶ S` of finite type and `L` an invertible `𝒪_X`-module,
 > relative very ampleness of `L` is equivalent to the existence of an open covering `S = ⋃ V_j`, of
@@ -331,7 +331,7 @@ theorem isRelativelyVeryAmple_iff_hasProjectiveImmersionCover (f : X ⟶ S) (L :
 
 [Tag 02NR](https://stacks.math.columbia.edu/tag/02NR) in the Stacks Project.
 
-**`Stacks.AmplePowerImmersionCover.hasPowerProjectiveImmersionCover_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePowerImmersionCover/Basic.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmplePowerImmersionCover/Basic.lean#L247). The attribute's comment: “(a) implies (b), with no hypothesis”.
+**`Stacks.AmplePowerImmersionCover.hasPowerProjectiveImmersionCover_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePowerImmersionCover/Basic.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmplePowerImmersionCover/Basic.lean#L247). The attribute's comment: “(a) implies (b), with no hypothesis”.
 
 > **Stacks Tag 02NR, (a) ⟹ (b).** Let `f : X ⟶ S` be of finite type and `L` an invertible
 > `𝒪_X`-module. If `L` is `f`-relatively ample then there are an open covering `S = ⋃ V_j`, for each
@@ -352,7 +352,7 @@ theorem hasPowerProjectiveImmersionCover_of_isRelativelyAmple (f : X ⟶ S) (L :
     HasPowerProjectiveImmersionCover f L
 ```
 
-**`Stacks.AmplePowerImmersionCover.isRelativelyAmple_of_hasPowerProjectiveImmersionCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePowerImmersionCover/Basic.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmplePowerImmersionCover/Basic.lean#L510). The attribute's comment: “(b) implies (a), with no hypothesis: the source's covering is by arbitrary opens, and the immersion clause at a member is restricted to the affine opens of that member by `hasImmersionTwistOver_morphismRestrict`, projective space over a base being a fibre product over the terminal scheme”.
+**`Stacks.AmplePowerImmersionCover.isRelativelyAmple_of_hasPowerProjectiveImmersionCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePowerImmersionCover/Basic.lean, line 511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmplePowerImmersionCover/Basic.lean#L511). The attribute's comment: “(b) implies (a), with no hypothesis: the source's covering is by arbitrary opens, and the immersion clause at a member is restricted to the affine opens of that member by `hasImmersionTwistOver_morphismRestrict`, projective space over a base being a fibre product over the terminal scheme”.
 
 > **Stacks Tag 02NR, (b) ⟹ (a).** Let `f : X ⟶ S` be quasi-compact and `L` an invertible
 > `𝒪_X`-module. If there are an open covering `S = ⋃ V_j`, for each `j` integers `d_j ≥ 1` and
@@ -383,7 +383,7 @@ theorem isRelativelyAmple_of_hasPowerProjectiveImmersionCover (f : X ⟶ S)
     Stacks.RelativeAmple.IsRelativelyAmple f L
 ```
 
-**`Stacks.AmplePowerImmersionCover.isRelativelyAmple_iff_hasPowerProjectiveImmersionCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePowerImmersionCover/Basic.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmplePowerImmersionCover/Basic.lean#L538). The attribute's comment: “the equivalence, with no hypothesis”.
+**`Stacks.AmplePowerImmersionCover.isRelativelyAmple_iff_hasPowerProjectiveImmersionCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePowerImmersionCover/Basic.lean, line 539](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmplePowerImmersionCover/Basic.lean#L539). The attribute's comment: “the equivalence, with no hypothesis”.
 
 > **Stacks Tag 02NR.** For `f : X ⟶ S` of finite type and `L` an invertible `𝒪_X`-module,
 > relative ampleness of `L` is equivalent to the existence of an open covering `S = ⋃ V_j`, of
@@ -405,7 +405,7 @@ theorem isRelativelyAmple_iff_hasPowerProjectiveImmersionCover (f : X ⟶ S)
 
 [Tag 0FVC](https://stacks.math.columbia.edu/tag/0FVC) in the Stacks Project.
 
-**`Stacks.VeryAmpleFixedTwist.eventuallyVeryAmpleFixedTwist_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmpleFixedTwist/Basic.lean, line 586](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/VeryAmpleFixedTwist/Basic.lean#L586). References: EGA II (4.5.10), “(ii): ample implies e)”; EGA II (4.5.11), “more general”; EGA II (4.6.12).
+**`Stacks.VeryAmpleFixedTwist.eventuallyVeryAmpleFixedTwist_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmpleFixedTwist/Basic.lean, line 586](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/VeryAmpleFixedTwist/Basic.lean#L586). References: EGA II (4.5.10), “(ii): ample implies e)”; EGA II (4.5.11), “more general”; EGA II (4.6.12).
 
 > **Stacks Tag 0FVC.** Let `f : X ⟶ S` be a morphism of schemes and `N`, `L` invertible
 > `𝒪_X`-modules. If `S` is quasi-compact, `f` is of finite type and `L` is `f`-relatively ample,
@@ -440,4 +440,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.40, Tag 02NO](https://stacks.math.columbia.edu/tag/02NO)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

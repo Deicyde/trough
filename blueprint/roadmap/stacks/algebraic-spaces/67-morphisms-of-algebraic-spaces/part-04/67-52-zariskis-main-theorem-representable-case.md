@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.52 Zariski's Main Theorem (representable case)
 
-Section 67.52 of the Stacks Project, [Tag 0ABQ](https://stacks.math.columbia.edu/tag/0ABQ). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.52 of the Stacks Project, [Tag 0ABQ](https://stacks.math.columbia.edu/tag/0ABQ). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ABR, a lemma
 
 [Tag 0ABR](https://stacks.math.columbia.edu/tag/0ABR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.NormalizationInData.isOpenSubspace_quasiFiniteImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean#L481). The attribute's comment: “the open subspace”.
+**`AlgebraicGeometry.Space.NormalizationInData.isOpenSubspace_quasiFiniteImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean#L482). The attribute's comment: “the open subspace”.
 
 > **Stacks 0ABR, the open subspace.** For a representable morphism of algebraic spaces over `S`
 > which is of finite type and separated, the image in the normalization of `Y` in `X` of the
@@ -39,7 +39,7 @@ theorem isOpenSubspace_quasiFiniteImage (N : NormalizationInData B S hS f)
     IsOpenSubspace B S hS N.quasiFiniteImage
 ```
 
-**`AlgebraicGeometry.Space.NormalizationInData.isIso_fromPreimage_quasiFiniteImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean, line 492](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean#L492). The attribute's comment: “part (1): the inverse image of the open subspace maps isomorphically onto it”.
+**`AlgebraicGeometry.Space.NormalizationInData.isIso_fromPreimage_quasiFiniteImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean#L493). The attribute's comment: “part (1): the inverse image of the open subspace maps isomorphically onto it”.
 
 > **Stacks 0ABR, part (1).** The inverse image of the open subspace under `f'` maps
 > isomorphically onto it.
@@ -53,7 +53,7 @@ theorem isIso_fromPreimage_quasiFiniteImage (N : NormalizationInData B S hS f)
     IsIso (N.quasiFiniteImage.fromPreimage N.toNorm)
 ```
 
-**`AlgebraicGeometry.Space.NormalizationInData.preimage_quasiFiniteImage_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean#L503). The attribute's comment: “part (2): the inverse image is the quasi-finite locus, as a subspace”.
+**`AlgebraicGeometry.Space.NormalizationInData.preimage_quasiFiniteImage_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean#L504). The attribute's comment: “part (2): the inverse image is the quasi-finite locus, as a subspace”.
 
 > **Stacks 0ABR, part (2).** The inverse image of the open subspace under `f'` is the
 > quasi-finite locus of `f`, as a subspace of `X`.
@@ -67,7 +67,7 @@ theorem preimage_quasiFiniteImage_eq (N : NormalizationInData B S hS f)
     N.quasiFiniteImage.preimage N.toNorm = quasiFiniteLocusSubspace B S hS f
 ```
 
-**`AlgebraicGeometry.Space.NormalizationInData.range_pointsMap_preimage_quasiFiniteImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean#L515). The attribute's comment: “part (2): the inverse image is the set of points of quasi-finiteness”.
+**`AlgebraicGeometry.Space.NormalizationInData.range_pointsMap_preimage_quasiFiniteImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean, line 516](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean#L516). The attribute's comment: “part (2): the inverse image is the set of points of quasi-finiteness”.
 
 > **Stacks 0ABR, part (2), on points.** The point set of the inverse image of the open subspace
 > under `f'` is the set of points of `X` at which `f` is quasi-finite. This is the form in which
@@ -84,7 +84,7 @@ theorem range_pointsMap_preimage_quasiFiniteImage (N : NormalizationInData B S h
       {x : points B S hS X | IsQuasiFiniteAt B S hS f x}
 ```
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_isIso_fromPreimage_and_range_pointsMap_preimage_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean#L536). The attribute's comment: “the existence statement”.
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_isIso_fromPreimage_and_range_pointsMap_preimage_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationQuasiFiniteLocus.lean#L537). The attribute's comment: “the existence statement”.
 
 > **Stacks 0ABR.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is
 > representable, of finite type and separated, and let `X ⟶ Y' ⟶ Y` be the normalization of `Y`
@@ -112,7 +112,7 @@ theorem exists_isOpenSubspace_isIso_fromPreimage_and_range_pointsMap_preimage_eq
 
 [Tag 0ABS](https://stacks.math.columbia.edu/tag/0ABS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.zariskiMainTheorem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremGeneral.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremGeneral.lean#L211). References: EGA III (4.4.12), “more general”.
+**`AlgebraicGeometry.Space.zariskiMainTheorem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremGeneral.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremGeneral.lean#L211). References: EGA III (4.4.12), “more general”.
 
 > **Zariski's main theorem for algebraic spaces.** Let `f : X ⟶ Y` be a quasi-finite
 > separated morphism of algebraic spaces over a scheme `S`. Then `f` is quasi-affine, and the
@@ -146,4 +146,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.52, Tag 0ABQ](https://stacks.math.columbia.edu/tag/0ABQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.60 Derived tensor product
 
-Section 15.60 of the Stacks Project, [Tag 06XY](https://stacks.math.columbia.edu/tag/06XY). 16 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.60 of the Stacks Project, [Tag 06XY](https://stacks.math.columbia.edu/tag/06XY). 16 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06XZ, a definition
 
 [Tag 06XZ](https://stacks.math.columbia.edu/tag/06XZ) in the Stacks Project.
 
-**`CochainComplex.KFlat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/KFlat.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/KFlat.lean#L49).
+**`CochainComplex.KFlat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/KFlat.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/KFlat.lean#L49).
 
 > A cochain complex `K` of `R`-modules is *K-flat* if the total complex `Tot(M ⊗_R K)` is
 > acyclic for every acyclic cochain complex `M` of `R`-modules. Here `⊗` is the monoidal product of
@@ -29,7 +29,7 @@ def CochainComplex.KFlat (K : CochainComplex (ModuleCat.{max u v} R) ℤ) : Prop
 
 [Tag 06Y0](https://stacks.math.columbia.edu/tag/06Y0) in the Stacks Project.
 
-**`CochainComplex.KFlat.kFlat_tright_preserves_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/QuasiIso.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KFlat/QuasiIso.lean#L60).
+**`CochainComplex.KFlat.kFlat_tright_preserves_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/QuasiIso.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KFlat/QuasiIso.lean#L60).
 
 > Tensoring with a K-flat complex and taking the total complex preserves
 > quasi-isomorphisms in the homotopy category.
@@ -46,7 +46,7 @@ public theorem kFlat_tright_preserves_quasiIso {R : Type u} [CommRing R]
 
 [Tag 06Y1](https://stacks.math.columbia.edu/tag/06Y1) in the Stacks Project.
 
-**`CochainComplex.KFlat.ScalarBaseChange.kFlat_extendScalars`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/ScalarBaseChange.lean, line 693](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KFlat/ScalarBaseChange.lean#L693).
+**`CochainComplex.KFlat.ScalarBaseChange.kFlat_extendScalars`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/ScalarBaseChange.lean, line 689](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KFlat/ScalarBaseChange.lean#L689).
 
 > **Stacks 06Y1.** Extension of scalars along `φ : R →+* R'` carries a K-flat complex of
 > `R`-modules to a K-flat complex of `R'`-modules: tensoring over `R'` with the base change is,
@@ -70,7 +70,7 @@ public lemma kFlat_extendScalars (φ : R →+* R')
 
 [Tag 0795](https://stacks.math.columbia.edu/tag/0795) in the Stacks Project.
 
-**`CochainComplex.KFlat.tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/Basic.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KFlat/Basic.lean#L629).
+**`CochainComplex.KFlat.tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/Basic.lean, line 629](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KFlat/Basic.lean#L629).
 
 > (Stacks tag 0795, Lemma 15.60.4) If `K` and `L` are K-flat complexes of
 > `R`-modules, then `Tot(K ⊗_R L)` (i.e. the monoidal tensor product `K ⊗ L`) is
@@ -89,7 +89,7 @@ theorem CochainComplex.KFlat.tensor (K L : CochainComplex (ModuleCat R) ℤ)
 
 [Tag 06Y2](https://stacks.math.columbia.edu/tag/06Y2) in the Stacks Project.
 
-**`CochainComplex.KFlat.kFlat_two_out_of_three_of_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/Triangle.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KFlat/Triangle.lean#L52).
+**`CochainComplex.KFlat.kFlat_two_out_of_three_of_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/Triangle.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KFlat/Triangle.lean#L52).
 
 > K-flatness is a two-out-of-three property in a distinguished triangle of the homotopy
 > category.
@@ -114,7 +114,7 @@ theorem kFlat_two_out_of_three_of_distTriang
 
 [Tag 0BYH](https://stacks.math.columbia.edu/tag/0BYH) in the Stacks Project.
 
-**`KFlatTwoOutOfThree.kFlat_two_out_of_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/Basic.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KFlat/Basic.lean#L544).
+**`KFlatTwoOutOfThree.kFlat_two_out_of_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/Basic.lean, line 544](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KFlat/Basic.lean#L544).
 
 > Two-out-of-three for K-flatness (Stacks Tag 0BYH, Lemma 15.60.6).
 > Given a short exact sequence of complexes `0 → K₁ → K₂ → K₃ → 0` with every
@@ -136,7 +136,7 @@ theorem kFlat_two_out_of_three {R : Type u} [CommRing R] (S : ShortComplex (Cx R
 
 [Tag 064K](https://stacks.math.columbia.edu/tag/064K) in the Stacks Project.
 
-**`CochainComplex.KFlat.kFlat_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/Flat.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KFlat/Flat.lean#L510). References: SGA 4 XVII (4.1.7), “(ii), modules over ring”.
+**`CochainComplex.KFlat.kFlat_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/Flat.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KFlat/Flat.lean#L510). References: SGA 4 XVII (4.1.7), “(ii), modules over ring”.
 
 > **Stacks 064K.** A bounded above cochain complex of flat modules is K-flat.
 
@@ -151,7 +151,7 @@ public theorem kFlat_of_flat {R : Type u} [CommRing R]
 
 [Tag 06Y3](https://stacks.math.columbia.edu/tag/06Y3) in the Stacks Project.
 
-**`CochainComplex.KFlat.kFlat_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/Flat.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KFlat/Flat.lean#L543).
+**`CochainComplex.KFlat.kFlat_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/Flat.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KFlat/Flat.lean#L543).
 
 > A filtered colimit of K-flat complexes of modules is K-flat.
 
@@ -166,7 +166,7 @@ public theorem kFlat_colimit {R : Type u} [CommRing R]
 
 [Tag 0E8F](https://stacks.math.columbia.edu/tag/0E8F) in the Stacks Project.
 
-**`CochainComplex.KFlat.kFlat_of_tensor_finitelyPresented_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/FinitelyPresented.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KFlat/FinitelyPresented.lean#L534).
+**`CochainComplex.KFlat.kFlat_of_tensor_finitelyPresented_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/FinitelyPresented.lean, line 533](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KFlat/FinitelyPresented.lean#L533).
 
 > **Stacks 0E8F.** A cochain complex whose tensor product with every finitely presented module
 > is acyclic is K-flat.
@@ -183,7 +183,7 @@ public theorem kFlat_of_tensor_finitelyPresented_acyclic {R : Type u} [CommRing 
 
 [Tag 06Y4](https://stacks.math.columbia.edu/tag/06Y4) in the Stacks Project.
 
-**`CochainComplex.KFlat.exists_kFlat_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/Resolution.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KFlat/Resolution.lean#L126).
+**`CochainComplex.KFlat.exists_kFlat_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/Resolution.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KFlat/Resolution.lean#L126).
 
 > **Stacks 06Y4.** Every cochain complex of modules admits a termwise-surjective
 > quasi-isomorphism from a K-flat complex with flat terms.
@@ -202,7 +202,7 @@ theorem exists_kFlat_resolution {R : Type u} [CommRing R]
 
 [Tag 09PB](https://stacks.math.columbia.edu/tag/09PB) in the Stacks Project.
 
-**`CochainComplex.KFlat.property_of_coproducts_of_two_out_of_three_of_shifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/FilteredColimitShifts.lean, line 1375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KFlat/FilteredColimitShifts.lean#L1375).
+**`CochainComplex.KFlat.property_of_coproducts_of_two_out_of_three_of_shifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/FilteredColimitShifts.lean, line 1375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KFlat/FilteredColimitShifts.lean#L1375).
 
 > Every complex has a split filtered resolution whose graded pieces are
 > coproducts of shifts of the ring and whose filtration yields the canonical telescope triangle.
@@ -231,7 +231,7 @@ theorem property_of_coproducts_of_two_out_of_three_of_shifts {R : Type u} [Ring 
 
 [Tag 064L](https://stacks.math.columbia.edu/tag/064L) in the Stacks Project.
 
-**`CochainComplex.DerivedTensor.quasiIso_trightCochain_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensorKFlatResolution.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/DerivedTensorKFlatResolution.lean#L124).
+**`CochainComplex.DerivedTensor.quasiIso_trightCochain_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensorKFlatResolution.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/DerivedTensorKFlatResolution.lean#L124).
 
 > A quasi-isomorphism between K-flat complexes remains a quasi-isomorphism after tensoring on
 > the right with any complex. This is the companion of `quasiIso_tleftCochain_map` (Stacks 064L),
@@ -244,7 +244,7 @@ theorem quasiIso_trightCochain_map
     QuasiIso ((TrightCochain L).map α)
 ```
 
-**`CochainComplex.DerivedTensor.quasiIso_tleftCochain_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensorLargeUniverse.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/DerivedTensorLargeUniverse.lean#L200).
+**`CochainComplex.DerivedTensor.quasiIso_tleftCochain_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensorLargeUniverse.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/DerivedTensorLargeUniverse.lean#L200).
 
 > A quasi-isomorphism between K-flat complexes remains a quasi-isomorphism after tensoring on
 > the left with any complex and taking the total complex.
@@ -260,7 +260,7 @@ public theorem quasiIso_tleftCochain_map {R : Type u} [CommRing R]
 
 [Tag 064M](https://stacks.math.columbia.edu/tag/064M) in the Stacks Project.
 
-**`CochainComplex.DerivedTensor.derivedTensorProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean#L63). References: SGA 4 XVII (4.1.7), “(i), modules over ring”.
+**`CochainComplex.DerivedTensor.derivedTensorProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean#L64). References: SGA 4 XVII (4.1.7), “(i), modules over ring”.
 
 > The derived tensor product with `M`, computed by a K-flat resolution of a representative of
 > `M`.
@@ -271,7 +271,7 @@ public noncomputable def derivedTensorProduct
     DerivedCategory (ModuleCat.{max u v} R) ⥤ DerivedCategory (ModuleCat.{max u v} R)
 ```
 
-**`CochainComplex.DerivedTensor.derivedTensorProduct_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean#L79).
+**`CochainComplex.DerivedTensor.derivedTensorProduct_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean#L82).
 
 > The derived tensor product commutes with the shift functors.
 
@@ -281,7 +281,7 @@ public noncomputable instance derivedTensorProduct_commShift
     (derivedTensorProduct M).CommShift ℤ
 ```
 
-**`CochainComplex.DerivedTensor.derivedTensorProduct_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean#L100).
+**`CochainComplex.DerivedTensor.derivedTensorProduct_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean#L105).
 
 > The derived tensor product is an exact functor of triangulated categories.
 
@@ -291,7 +291,7 @@ public noncomputable instance derivedTensorProduct_isTriangulated
     (derivedTensorProduct M).IsTriangulated
 ```
 
-**`CochainComplex.DerivedTensor.derivedTensorProduct_iso_lift_of_kFlat_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean#L207).
+**`CochainComplex.DerivedTensor.derivedTensorProduct_iso_lift_of_kFlat_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/DerivedTensorFunctorLargeUniverse.lean#L224).
 
 > A K-flat resolution of any representative of `M` computes the derived tensor product.
 > The comparison is a natural isomorphism, uniquely determined by its pullback to the homotopy
@@ -321,7 +321,7 @@ public theorem derivedTensorProduct_iso_lift_of_kFlat_resolution
 
 [Tag 0BYI](https://stacks.math.columbia.edu/tag/0BYI) in the Stacks Project.
 
-**`CochainComplex.DerivedTensor.canonicalSymmetricDerivedTensorProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensor.lean, line 754](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/DerivedTensor.lean#L754).
+**`CochainComplex.DerivedTensor.canonicalSymmetricDerivedTensorProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensor.lean, line 754](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/DerivedTensor.lean#L754).
 
 > **Stacks 0BYI.** The canonical derived tensor product, equipped with its symmetry functorial
 > in both complexes and represented on K-flat complexes in degrees `p` and `q` by the ordinary
@@ -337,7 +337,7 @@ public noncomputable def canonicalSymmetricDerivedTensorProduct
 
 [Tag 0BYJ](https://stacks.math.columbia.edu/tag/0BYJ) in the Stacks Project.
 
-**`CochainComplex.DerivedTensor.derivedTensorProduct_associator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensor.lean, line 1066](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/DerivedTensor.lean#L1066).
+**`CochainComplex.DerivedTensor.derivedTensorProduct_associator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensor.lean, line 1062](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/DerivedTensor.lean#L1062).
 
 > **Stacks 0BYJ.** The derived tensor product is associative up to a canonical isomorphism,
 > functorial in all three complexes. On K-flat representatives this is the standard associator
@@ -376,7 +376,7 @@ public theorem derivedTensorProduct_associator
 
 [Tag 0G6M](https://stacks.math.columbia.edu/tag/0G6M) in the Stacks Project.
 
-**`CochainComplex.KFlat.exists_kFlat_factorization_up_to_homotopy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/Resolution.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KFlat/Resolution.lean#L310).
+**`CochainComplex.KFlat.exists_kFlat_factorization_up_to_homotopy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KFlat/Resolution.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KFlat/Resolution.lean#L309).
 
 > A morphism from a K-flat complex factors up to homotopy through another K-flat complex
 > which maps to the target by a quasi-isomorphism. When the source has flat terms, the intermediate
@@ -400,4 +400,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.60, Tag 06XY](https://stacks.math.columbia.edu/tag/06XY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

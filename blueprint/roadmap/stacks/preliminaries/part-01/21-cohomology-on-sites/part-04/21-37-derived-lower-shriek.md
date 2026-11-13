@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.37 Derived lower shriek
 
-Section 21.37 of the Stacks Project, [Tag 07AB](https://stacks.math.columbia.edu/tag/07AB). 7 tags here are carried by 35 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.37 of the Stacks Project, [Tag 07AB](https://stacks.math.columbia.edu/tag/07AB). 7 tags here are carried by 35 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D6X, a lemma
 
 [Tag 0D6X](https://stacks.math.columbia.edu/tag/0D6X) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.subsiteSliceCohomology_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteAcyclicity.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteAcyclicity.lean#L153). The attribute's comment: “for the inclusion of a full subsite of the site of Stacks 06TP, localized at an object of the subsite”.
+**`AlgebraicGeometry.Stack.subsiteSliceCohomology_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteAcyclicity.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteAcyclicity.lean#L153). The attribute's comment: “for the inclusion of a full subsite of the site of Stacks 06TP, localized at an object of the subsite”.
 
 > **Stacks 0D6X for a slice of the inclusion of a full subsite.** Let `P` cut out a full
 > subcategory of the objects of a category fibred in groupoids over the big fppf category of `S`,
@@ -41,7 +41,7 @@ theorem subsiteSliceCohomology_eq_zero (hp : p.IsFiberedInGroupoids)
     (a : Sheaf.H ((subsiteSliceRestriction B S hS p τ P x).obj I) (n + 1)) : a = 0
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.sliceAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteAcyclicity.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteAcyclicity.lean#L260). The attribute's comment: “for the inclusion of the flat-fppf site of Stacks 0787, localized at a flat object”.
+**`AlgebraicGeometry.Stack.FlatFppf.sliceAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteAcyclicity.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteAcyclicity.lean#L260). The attribute's comment: “for the inclusion of the flat-fppf site of Stacks 0787, localized at a flat object”.
 
 > **Stacks 0D6X for the inclusion of the flat-fppf site, localized at a flat object.** The
 > restriction to the slice at `x` of the flat-fppf site of an injective abelian sheaf on the slice
@@ -59,7 +59,7 @@ theorem sliceAcyclic (x : ObjectProperty.FullSubcategory (objectProperty B S hS 
         (objectProperty B S hS 𝒳) x).obj I) (n + 1)), a = 0
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.sliceAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteAcyclicity.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteAcyclicity.lean#L327). The attribute's comment: “for the inclusion of the lisse-étale site of Stacks 0787, localized at a smooth object”.
+**`AlgebraicGeometry.Stack.LisseEtale.sliceAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteAcyclicity.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteAcyclicity.lean#L327). The attribute's comment: “for the inclusion of the lisse-étale site of Stacks 0787, localized at a smooth object”.
 
 > **Stacks 0D6X for the inclusion of the lisse-étale site, localized at a smooth object.** The
 > restriction to the slice at `x` of the lisse-étale site of an injective abelian sheaf on the slice
@@ -78,7 +78,7 @@ theorem sliceAcyclic (x : ObjectProperty.FullSubcategory (smoothObject.{u, w} B 
         (smoothObject.{u, w} B S hS 𝒳) x).obj I) (n + 1)), a = 0
 ```
 
-**`AlgebraicGeometry.Stack.subsiteObjectCohomology_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyComparison.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyComparison.lean#L234). The attribute's comment: “for the inclusion of a full subsite of the site of Stacks 06TP, over an object of the subsite”.
+**`AlgebraicGeometry.Stack.subsiteObjectCohomology_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyComparison.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyComparison.lean#L234). The attribute's comment: “for the inclusion of a full subsite of the site of Stacks 06TP, over an object of the subsite”.
 
 > **Stacks 0D6X for the inclusion of a full subsite, over an object of the subsite.** Let `P`
 > cut out a full subcategory of the objects of a category fibred in groupoids over the big fppf
@@ -106,7 +106,7 @@ theorem subsiteObjectCohomology_eq_zero (hp : p.IsFiberedInGroupoids)
     a = 0
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.objectAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyComparison.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyComparison.lean#L301). The attribute's comment: “for the inclusion of the flat-fppf site of Stacks 0787, over a flat object”.
+**`AlgebraicGeometry.Stack.FlatFppf.objectAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyComparison.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyComparison.lean#L301). The attribute's comment: “for the inclusion of the flat-fppf site of Stacks 0787, over a flat object”.
 
 > **Stacks 0D6X for the inclusion of the flat-fppf site, over a flat object.** The restriction
 > to the flat-fppf site of an injective abelian sheaf on the fppf site of an algebraic stack has
@@ -122,7 +122,7 @@ theorem objectAcyclic :
           (objectProperty B S hS 𝒳)).obj I) (n + 1)), a = 0
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.objectAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyComparison.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyComparison.lean#L420). The attribute's comment: “for the inclusion of the lisse-étale site of Stacks 0787, over a smooth object”.
+**`AlgebraicGeometry.Stack.LisseEtale.objectAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyComparison.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyComparison.lean#L420). The attribute's comment: “for the inclusion of the lisse-étale site of Stacks 0787, over a smooth object”.
 
 > **Stacks 0D6X for the inclusion of the lisse-étale site, over a smooth object.** The
 > restriction to the lisse-étale site of an injective abelian sheaf on the étale site of an
@@ -139,7 +139,7 @@ theorem objectAcyclic :
           (smoothObject.{u, w} B S hS 𝒳)).obj I) (n + 1)), a = 0
 ```
 
-**`AlgebraicGeometry.Stack.subsiteGlobalCohomology_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteTerminalCohomology.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteTerminalCohomology.lean#L55). The attribute's comment: “for the inclusion of a full subsite of the site of Stacks 06TP, for the global cohomology of a subsite with a terminal object”.
+**`AlgebraicGeometry.Stack.subsiteGlobalCohomology_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteTerminalCohomology.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteTerminalCohomology.lean#L55). The attribute's comment: “for the inclusion of a full subsite of the site of Stacks 06TP, for the global cohomology of a subsite with a terminal object”.
 
 > **Vanishing of the global cohomology of a restricted injective sheaf.** Let `P` cut out a
 > full subcategory of the objects of a category fibred in groupoids over the big fppf category of
@@ -159,7 +159,7 @@ theorem subsiteGlobalCohomology_eq_zero (hp : p.IsFiberedInGroupoids)
     a = 0
 ```
 
-**`Stacks.CechSite.injective_module_subsingleton_ext_of_continuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAContinuousFunctor.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAContinuousFunctor.lean#L221). The attribute's comment: “the Čech comparison derived from continuity; cocontinuity is not needed, neither site is small, and cohomology over `U` is `Ext` out of the free abelian sheaf on the lifted representable”.
+**`Stacks.CechSite.injective_module_subsingleton_ext_of_continuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAContinuousFunctor.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAContinuousFunctor.lean#L221). The attribute's comment: “the Čech comparison derived from continuity; cocontinuity is not needed, neither site is small, and cohomology over `U` is `Ext` out of the free abelian sheaf on the lifted representable”.
 
 > **Stacks Project, Tag 0D6X.** Let `u : C ⥤ D` be a continuous functor of sites and let
 > `g : Sh(C) → Sh(D)` be the corresponding morphism of topoi, so that `g⁻¹` is restriction along
@@ -185,7 +185,7 @@ theorem injective_module_subsingleton_ext_of_continuous
         ((SheafOfModules.toSheaf (Stacks.SheafOfModules.Tensor.ringSheaf Y.O)).obj I)) p)
 ```
 
-**`Stacks.CechSite.injective_module_sheafCohomology_isZero_of_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctor.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctor.lean#L297).
+**`Stacks.CechSite.injective_module_sheafCohomology_isZero_of_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctor.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctor.lean#L297).
 
 > **Stacks Project, Tag 0D6X.** Let `u : C ⥤ D` be a continuous functor of sites and let
 > `g : Sh(C) → Sh(D)` be the corresponding morphism of topoi, so that `g⁻¹` is restriction along
@@ -222,7 +222,7 @@ theorem injective_module_sheafCohomology_isZero_of_functor
       ((SheafOfModules.toSheaf (Stacks.SheafOfModules.Tensor.ringSheaf Y.O)).obj I)) p U)
 ```
 
-**`Stacks.CechSite.injective_module_sheafCohomology_isZero_of_functor_sheafOfRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctor.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctor.lean#L366).
+**`Stacks.CechSite.injective_module_sheafCohomology_isZero_of_functor_sheafOfRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctor.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctor.lean#L366).
 
 > **Stacks Project, Tag 0D6X.** Let `u : C ⥤ D` be a continuous functor of sites and let
 > `g : Sh(C) → Sh(D)` be the corresponding morphism of topoi, so that `g⁻¹` is restriction along
@@ -258,7 +258,7 @@ theorem injective_module_sheafCohomology_isZero_of_functor_sheafOfRings
       ((SheafOfModules.toSheaf O).obj I)) p U)
 ```
 
-**`Stacks.CechSite.injective_module_subsingleton_ext_of_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctorEssentiallySmall.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctorEssentiallySmall.lean#L452). The attribute's comment: “the morphism universes of the two sites are free and the sites are not assumed small; the coefficient universe contains their objects, and cohomology over an object is `Ext` out of the free abelian sheaf on the lifted representable”.
+**`Stacks.CechSite.injective_module_subsingleton_ext_of_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctorEssentiallySmall.lean, line 452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctorEssentiallySmall.lean#L452). The attribute's comment: “the morphism universes of the two sites are free and the sites are not assumed small; the coefficient universe contains their objects, and cohomology over an object is `Ext` out of the free abelian sheaf on the lifted representable”.
 
 > **Stacks Project, Tag 0D6X, with the morphism universes free.** Let `u : C ⥤ D` be a
 > continuous functor of sites and let `g : Sh(C) → Sh(D)` be the corresponding morphism of topoi,
@@ -300,7 +300,7 @@ theorem injective_module_subsingleton_ext_of_functor
         ((SheafOfModules.toSheaf (Stacks.SheafOfModules.Tensor.ringSheaf Y.O)).obj I)) p)
 ```
 
-**`Stacks.CechSite.injective_module_subsingleton_ext_of_functor_sheafOfRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctorEssentiallySmall.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctorEssentiallySmall.lean#L526). The attribute's comment: “the morphism universes of the two sites are free and the sites are not assumed small; the coefficient universe contains their objects, and cohomology over an object is `Ext` out of the free abelian sheaf on the lifted representable”.
+**`Stacks.CechSite.injective_module_subsingleton_ext_of_functor_sheafOfRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctorEssentiallySmall.lean, line 526](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctorEssentiallySmall.lean#L526). The attribute's comment: “the morphism universes of the two sites are free and the sites are not assumed small; the coefficient universe contains their objects, and cohomology over an object is `Ext` out of the free abelian sheaf on the lifted representable”.
 
 > **Stacks Project, Tag 0D6X, with the morphism universes free.** Let `u : C ⥤ D` be a
 > continuous functor of sites and let `g : Sh(C) → Sh(D)` be the corresponding morphism of topoi,
@@ -341,7 +341,7 @@ theorem injective_module_subsingleton_ext_of_functor_sheafOfRings
         ((SheafOfModules.toSheaf O).obj I)) p)
 ```
 
-**`Stacks.CechSite.injective_sheaf_subsingleton_sheafH_of_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctorEssentiallySmall.lean, line 704](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctorEssentiallySmall.lean#L704). The attribute's comment: “global cohomology of the source site, at a terminal object; the morphism universes of the two sites are free and the sites are not assumed small”.
+**`Stacks.CechSite.injective_sheaf_subsingleton_sheafH_of_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctorEssentiallySmall.lean, line 704](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/VanishingAlongAFunctorEssentiallySmall.lean#L704). The attribute's comment: “global cohomology of the source site, at a terminal object; the morphism universes of the two sites are free and the sites are not assumed small”.
 
 > **Stacks Project, Tag 0D6X for the global cohomology of the source site.** Let
 > `u : C ⥤ D` be a continuous functor of sites, let `g : Sh(C) → Sh(D)` be the corresponding
@@ -383,7 +383,7 @@ theorem injective_sheaf_subsingleton_sheafH_of_functor
 
 [Tag 07AC](https://stacks.math.columbia.edu/tag/07AC) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLowerShriek.derivedLowerShriek_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ModuleDerivedLowerShriek.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ModuleDerivedLowerShriek.lean#L369).
+**`Stacks.Cohomology.DerivedLowerShriek.derivedLowerShriek_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ModuleDerivedLowerShriek.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ModuleDerivedLowerShriek.lean#L369).
 
 > **Stacks 07AC.** Let `u : C ⥤ D` be a continuous and cocontinuous functor of sites, let
 > `g : Sh(C) ⟶ Sh(D)` be the corresponding morphism of topoi, let `O_D` be a sheaf of rings on `D`
@@ -432,7 +432,7 @@ theorem derivedLowerShriek_spec :
           (Stacks.SheafOfModules.Tensor.ringSheaf (targetRingedSite K O).O) (f.obj U))
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.pullbackExtensionByZeroUnitIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/PullbackExtensionByZeroUnit.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/PullbackExtensionByZeroUnit.lean#L100). The attribute's comment: “the second equality of the displayed chain, `g_! j_{U!} O_U = j_{u(U)!} O_{u(U)}`, on sheaves of modules, for an arbitrary structure morphism of sheaves of rings `O' ⟶ u_* O` and for the sheafified-free spelling of the extensions by zero. The first equality and the existence and adjointness of `Lg_!` are NOT covered: no unbounded total left derived functor of the module-level `g_!` is constructed in this library”.
+**`Stacks.Cohomology.DerivedLowerShriek.pullbackExtensionByZeroUnitIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/PullbackExtensionByZeroUnit.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/PullbackExtensionByZeroUnit.lean#L100). The attribute's comment: “the second equality of the displayed chain, `g_! j_{U!} O_U = j_{u(U)!} O_{u(U)}`, on sheaves of modules, for an arbitrary structure morphism of sheaves of rings `O' ⟶ u_* O` and for the sheafified-free spelling of the extensions by zero. The first equality and the existence and adjointness of `Lg_!` are NOT covered: no unbounded total left derived functor of the module-level `g_!` is constructed in this library”.
 
 > **`g_! (j_{V!} O'_V) ≅ j_{u(V)!} O_{u(V)}` for an arbitrary structure morphism of sheaves
 > of rings.** For a continuous functor of sites `u : C ⥤ D`, a sheaf of rings `O` on `D`, a sheaf
@@ -455,7 +455,7 @@ def pullbackExtensionByZeroUnitIso (V : C) :
 
 [Tag 07AE](https://stacks.math.columbia.edu/tag/07AE) in the Stacks Project.
 
-**`Stacks.SheafOfModules.lowerShriekForget_not_isomorphic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L448). The attribute's comment: “underived noncommutation”.
+**`Stacks.SheafOfModules.lowerShriekForget_not_isomorphic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L448). The attribute's comment: “underived noncommutation”.
 
 > The lower shriek of modules may differ, even as an abelian sheaf, from lower
 > shriek of the underlying abelian sheaf.
@@ -481,7 +481,7 @@ theorem lowerShriekForget_not_isomorphic :
               SheafOfModules.toSheaf.{0} R).obj M))
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.existsUnique_derivedForgetComparison_of_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparison.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparison.lean#L218). The attribute's comment: “the comparison transformation `Lg_!^{Ab} ∘ forget ⟶ forget ∘ Lg_!`”.
+**`Stacks.Cohomology.DerivedLowerShriek.existsUnique_derivedForgetComparison_of_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparison.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparison.lean#L218). The attribute's comment: “the comparison transformation `Lg_!^{Ab} ∘ forget ⟶ forget ∘ Lg_!`”.
 
 > **The comparison transformation**, conditional only on the acyclicity statement of Stacks 0794
 > for lower shriek: there is exactly one natural transformation `Lg_!^{Ab} ∘ forget ⟶ forget ∘ Lg_!`
@@ -504,7 +504,7 @@ theorem existsUnique_derivedForgetComparison_of_acyclic [Small.{w} C]
         derivedForgetComparisonCounit J K f O
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.exists_isIso_forgetComparison_not_isIso_derivedForgetComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparisonCounterexample.lean, line 810](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparisonCounterexample.lean#L810). The attribute's comment: “the warning: the square `forget ∘ Lg_!` vs `Lg_!^{Ab} ∘ forget` need not commute even when `g_! = g_!^{Ab}` -- an example of sites, a functor satisfying the hypotheses of Stacks 07AC and a sheaf of rings for which the comparison of Stacks 0798 is an isomorphism and the comparison `Lg_!^{Ab} ∘ forget ⟶ forget ∘ Lg_!` is not, nor are the two composites isomorphic by any natural isomorphism; the example lives in universe 0, an existence statement needing one”.
+**`Stacks.Cohomology.DerivedLowerShriek.exists_isIso_forgetComparison_not_isIso_derivedForgetComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparisonCounterexample.lean, line 810](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparisonCounterexample.lean#L810). The attribute's comment: “the warning: the square `forget ∘ Lg_!` vs `Lg_!^{Ab} ∘ forget` need not commute even when `g_! = g_!^{Ab}` -- an example of sites, a functor satisfying the hypotheses of Stacks 07AC and a sheaf of rings for which the comparison of Stacks 0798 is an isomorphism and the comparison `Lg_!^{Ab} ∘ forget ⟶ forget ∘ Lg_!` is not, nor are the two composites isomorphic by any natural isomorphism; the example lives in universe 0, an existence statement needing one”.
 
 > **Stacks Project, Tag 07AE, the warning.** Let `u : C ⥤ D`, `g`, `O_D` and `O_C = g^{-1} O_D`
 > be as in Stacks 07AC. In general the square
@@ -561,7 +561,7 @@ theorem exists_isIso_forgetComparison_not_isIso_derivedForgetComparison :
               (targetRingedSite K O).O)).mapDerivedCategory)
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.isIso_derivedForgetComparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparisonCriterionFromContinuity.lean, line 725](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparisonCriterionFromContinuity.lean#L725). The attribute's comment: “the criterion: `Lg_!` agrees with `Lg_!^{Ab}` (the comparison `Lg_!^{Ab} ∘ forget ⟶ forget ∘ Lg_!` is invertible) iff every canonical map `Lg_!^{Ab} j_{U!}O_U ⟶ j_{u(U)!}O_{u(U)}` is invertible in D(D); both directions, under the hypotheses of Stacks 07AC only, in the library's convention for it: small sites with objects, morphisms and module sections in one universe, and a sheaf of (commutative) rings”.
+**`Stacks.Cohomology.DerivedLowerShriek.isIso_derivedForgetComparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparisonCriterionFromContinuity.lean, line 725](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparisonCriterionFromContinuity.lean#L725). The attribute's comment: “the criterion: `Lg_!` agrees with `Lg_!^{Ab}` (the comparison `Lg_!^{Ab} ∘ forget ⟶ forget ∘ Lg_!` is invertible) iff every canonical map `Lg_!^{Ab} j_{U!}O_U ⟶ j_{u(U)!}O_{u(U)}` is invertible in D(D); both directions, under the hypotheses of Stacks 07AC only, in the library's convention for it: small sites with objects, morphisms and module sections in one universe, and a sheaf of (commutative) rings”.
 
 > **Stacks Project, Tag 07AE, the criterion.** Let `u : C ⥤ D` be a continuous and
 > cocontinuous functor of sites, `g` the corresponding morphism of topoi, `O_D` a sheaf of rings on
@@ -588,7 +588,7 @@ theorem isIso_derivedForgetComparison_iff :
         (Stacks.SheafOfModules.Tensor.ringSheaf (targetRingedSite K O).O) U)
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.existsUnique_derivedForgetComparison_of_continuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparisonFromContinuity.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparisonFromContinuity.lean#L119). The attribute's comment: “the comparison transformation `Lg_!^{Ab} ∘ forget ⟶ forget ∘ Lg_!`, with no hypothesis beyond those of Stacks 07AC: continuity of u (Stacks 00WV) is `Functor.IsContinuous` with `Stacks.Sites.PreservesCoveringPullbacks`; the existence of `g_!`, `g_!^{Ab}`, `Lg_!` and `Lg_!^{Ab}` is proved, not assumed; the sites are small and the ring sheaf commutative, as in Stacks 07AC”.
+**`Stacks.Cohomology.DerivedLowerShriek.existsUnique_derivedForgetComparison_of_continuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparisonFromContinuity.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/ForgetComparisonFromContinuity.lean#L119). The attribute's comment: “the comparison transformation `Lg_!^{Ab} ∘ forget ⟶ forget ∘ Lg_!`, with no hypothesis beyond those of Stacks 07AC: continuity of u (Stacks 00WV) is `Functor.IsContinuous` with `Stacks.Sites.PreservesCoveringPullbacks`; the existence of `g_!`, `g_!^{Ab}`, `Lg_!` and `Lg_!^{Ab}` is proved, not assumed; the sites are small and the ring sheaf commutative, as in Stacks 07AC”.
 
 > **Stacks Project, Tag 07AE.** Let `u : C ⥤ D` be a continuous and cocontinuous functor of
 > sites, let `g : Sh(C) ⟶ Sh(D)` be the corresponding morphism of topoi, let `O_D` be a sheaf of
@@ -637,7 +637,7 @@ theorem existsUnique_derivedForgetComparison_of_continuous :
 
 [Tag 0D6Y](https://stacks.math.columbia.edu/tag/0D6Y) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_inverseImage_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 451](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L451).
+**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_inverseImage_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L451).
 
 > **Stacks Project, Tag 0D6Y.** Let `u : C ⥤ D` be a continuous and cocontinuous functor of
 > sites and let `g : Sh(C) → Sh(D)` be the corresponding morphism of topoi, so that `g^{-1}` is
@@ -660,7 +660,7 @@ theorem isTotallyAcyclic_inverseImage_of_injective
         ((SheafOfModules.toSheaf (Stacks.SheafOfModules.Tensor.ringSheaf Y.O)).obj I))
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_inverseImage_of_injective_of_pullbacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 468](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L468). The attribute's comment: “the case of the footnote's sufficient condition: `C` has finite connected limits and `u` commutes with them”.
+**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_inverseImage_of_injective_of_pullbacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L468). The attribute's comment: “the case of the footnote's sufficient condition: `C` has finite connected limits and `u` commutes with them”.
 
 > **Stacks Project, Tag 0D6Y, under the sufficient condition of its footnote.** If `C` has
 > fibre products and equalizers — equivalently, all finite connected limits — and `u` preserves
@@ -676,7 +676,7 @@ theorem isTotallyAcyclic_inverseImage_of_injective_of_pullbacks [HasPullbacks C]
         ((SheafOfModules.toSheaf (Stacks.SheafOfModules.Tensor.ringSheaf Y.O)).obj I))
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_pushforwardModule_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L485). The attribute's comment: “the conclusion read on the inverse image module rather than on the restriction of the underlying abelian sheaf”.
+**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_pushforwardModule_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L485). The attribute's comment: “the conclusion read on the inverse image module rather than on the restriction of the underlying abelian sheaf”.
 
 > **Stacks Project, Tag 0D6Y, read on the inverse image module.** The abelian sheaf underlying
 > the inverse image `g^{-1}I` of an injective `O_D`-module — restriction along `u`, as a module
@@ -694,7 +694,7 @@ theorem isTotallyAcyclic_pushforwardModule_of_injective
             (Stacks.SheafOfModules.Tensor.ringSheaf Y.O)))).obj I))
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_inverseImage_of_injective_of_cospans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L510). The attribute's comment: “the tag at the source's own hypothesis, that `g_!^{Sh}` commute with binary fibre products; the iterated fibre powers the proof uses follow from it”.
+**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_inverseImage_of_injective_of_cospans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L510). The attribute's comment: “the tag at the source's own hypothesis, that `g_!^{Sh}` commute with binary fibre products; the iterated fibre powers the proof uses follow from it”.
 
 > **Stacks Project, Tag 0D6Y, with the hypothesis the source states.** Let `u : C ⥤ D` be a
 > continuous and cocontinuous functor of sites and let `g : Sh(C) → Sh(D)` be the corresponding
@@ -717,7 +717,7 @@ theorem isTotallyAcyclic_inverseImage_of_injective_of_cospans
         ((SheafOfModules.toSheaf (Stacks.SheafOfModules.Tensor.ringSheaf Y.O)).obj I))
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_inverseImage_of_injective_sheafOfRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 570](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L570).
+**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_inverseImage_of_injective_sheafOfRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 570](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L570).
 
 > **Stacks Project, Tag 0D6Y.** Let `u : C ⥤ D` be a continuous and cocontinuous functor of
 > sites and let `g : Sh(C) → Sh(D)` be the corresponding morphism of topoi, so that `g^{-1}` is
@@ -740,7 +740,7 @@ theorem isTotallyAcyclic_inverseImage_of_injective_sheafOfRings
         ((SheafOfModules.toSheaf O).obj I))
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_inverseImage_of_injective_of_pullbacks_sheafOfRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 587](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L587). The attribute's comment: “the case of the footnote's sufficient condition: `C` has finite connected limits and `u` commutes with them”.
+**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_inverseImage_of_injective_of_pullbacks_sheafOfRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 587](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L587). The attribute's comment: “the case of the footnote's sufficient condition: `C` has finite connected limits and `u` commutes with them”.
 
 > **Stacks Project, Tag 0D6Y, under the sufficient condition of its footnote.** If `C` has
 > fibre products and equalizers — equivalently, all finite connected limits — and `u` preserves
@@ -757,7 +757,7 @@ theorem isTotallyAcyclic_inverseImage_of_injective_of_pullbacks_sheafOfRings
         ((SheafOfModules.toSheaf O).obj I))
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_pushforwardModule_of_injective_sheafOfRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 605](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L605). The attribute's comment: “the conclusion read on the inverse image module rather than on the restriction of the underlying abelian sheaf”.
+**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_pushforwardModule_of_injective_sheafOfRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 605](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L605). The attribute's comment: “the conclusion read on the inverse image module rather than on the restriction of the underlying abelian sheaf”.
 
 > **Stacks Project, Tag 0D6Y, read on the inverse image module.** The abelian sheaf underlying
 > the inverse image `g^{-1}I` of an injective `O_D`-module — restriction along `u`, as a module
@@ -774,7 +774,7 @@ theorem isTotallyAcyclic_pushforwardModule_of_injective_sheafOfRings
           (𝟙 ((u.sheafPushforwardContinuous RingCat.{w} J K).obj O))).obj I))
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_inverseImage_of_injective_of_cospans_sheafOfRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L629). The attribute's comment: “the tag at the source's own hypothesis, that `g_!^{Sh}` commute with binary fibre products; the iterated fibre powers the proof uses follow from it”.
+**`Stacks.Cohomology.DerivedLowerShriek.isTotallyAcyclic_inverseImage_of_injective_of_cospans_sheafOfRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean, line 629](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/TotalAcyclicityOfTheInverseImage.lean#L629). The attribute's comment: “the tag at the source's own hypothesis, that `g_!^{Sh}` commute with binary fibre products; the iterated fibre powers the proof uses follow from it”.
 
 > **Stacks Project, Tag 0D6Y, with the hypothesis the source states.** Let `u : C ⥤ D` be a
 > continuous and cocontinuous functor of sites and let `g : Sh(C) → Sh(D)` be the corresponding
@@ -801,7 +801,7 @@ theorem isTotallyAcyclic_inverseImage_of_injective_of_cospans_sheafOfRings
 
 [Tag 0DD8](https://stacks.math.columbia.edu/tag/0DD8) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLowerShriek.derivedAbelianSectionsRestrictionIso_of_continuous`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAContinuousFunctor.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAContinuousFunctor.lean#L96). The attribute's comment: “part (1); the two sites are small and the coefficients are in their universe, the library's standard one-universe convention for sites”.
+**`Stacks.Cohomology.DerivedLowerShriek.derivedAbelianSectionsRestrictionIso_of_continuous`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAContinuousFunctor.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAContinuousFunctor.lean#L96). The attribute's comment: “part (1); the two sites are small and the coefficients are in their universe, the library's standard one-universe convention for sites”.
 
 > **Stacks Project, Tag 0DD8, part (1).** Let `u : C ⥤ D` be a continuous and cocontinuous
 > functor of sites and let `g : Sh(C) ⟶ Sh(D)` be the corresponding morphism of topoi. For every
@@ -824,7 +824,7 @@ def derivedAbelianSectionsRestrictionIso_of_continuous :
       derivedAbelianSections K (f.obj U)
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.derivedModuleSectionsRestrictionIso_of_continuous`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAContinuousFunctor.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAContinuousFunctor.lean#L123). The attribute's comment: “part (2); the two sites are small and the module sections are in their universe, the library's standard one-universe convention for sites; the structure sheaf is a sheaf of commutative rings, which is what a sheaf of rings is in the source (Stacks 0006)”.
+**`Stacks.Cohomology.DerivedLowerShriek.derivedModuleSectionsRestrictionIso_of_continuous`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAContinuousFunctor.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAContinuousFunctor.lean#L123). The attribute's comment: “part (2); the two sites are small and the module sections are in their universe, the library's standard one-universe convention for sites; the structure sheaf is a sheaf of commutative rings, which is what a sheaf of rings is in the source (Stacks 0006)”.
 
 > **Stacks Project, Tag 0DD8, part (2).** Let `u : C ⥤ D` be a continuous and cocontinuous
 > functor of sites, let `g : Sh(C) ⟶ Sh(D)` be the corresponding morphism of topoi, let `O_D` be a
@@ -849,7 +849,7 @@ def derivedModuleSectionsRestrictionIso_of_continuous (O : Sheaf K CommRingCat.{
         (f.obj U)
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.derivedModuleSectionsRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAFunctor.lean, line 564](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAFunctor.lean#L564). The attribute's comment: “part (2)”.
+**`Stacks.Cohomology.DerivedLowerShriek.derivedModuleSectionsRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAFunctor.lean, line 564](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAFunctor.lean#L564). The attribute's comment: “part (2)”.
 
 > **Stacks 0DD8, part (2).** Let `u : C ⥤ D` be a continuous and cocontinuous functor of
 > sites, let `g : Sh(C) ⟶ Sh(D)` be the corresponding morphism of topoi, let `O_D` be a sheaf of
@@ -863,7 +863,7 @@ def derivedModuleSectionsRestrictionIso
       derivedModuleSections K O (f.obj U)
 ```
 
-**`Stacks.Cohomology.DerivedLowerShriek.derivedAbelianSectionsRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAFunctor.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAFunctor.lean#L689). The attribute's comment: “part (1)”.
+**`Stacks.Cohomology.DerivedLowerShriek.derivedAbelianSectionsRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAFunctor.lean, line 689](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriek/DerivedSectionsAlongAFunctor.lean#L689). The attribute's comment: “part (1)”.
 
 > **Stacks 0DD8, part (1).** Let `u : C ⥤ D` be a continuous and cocontinuous functor of
 > sites and let `g : Sh(C) ⟶ Sh(D)` be the corresponding morphism of topoi. For every object `U`
@@ -881,7 +881,7 @@ def derivedAbelianSectionsRestrictionIso
 
 [Tag 0FN6](https://stacks.math.columbia.edu/tag/0FN6) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedBaseChange.nonempty_inverseImage_comp_totalDerivedPushforwardOf_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/UnboundedBaseChangeForACocontinuousSquare.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/UnboundedBaseChangeForACocontinuousSquare.lean#L498). The attribute's comment: “`Rf'_* ∘ (g')^* ≅ g^* ∘ Rf_*` on the unbounded derived categories `D(O_C) → D(O_{D'})`, for a commutative square of ringed topoi whose four functors `u`, `u'`, `v`, `v'` are cocontinuous, with `u' ⋙ v = v' ⋙ u`, with `v`, `v'` continuous as well, with the comparison functors `{}^{u'}_{V'} I → {}^u_{v(V')} I` of the index categories of Section 00XF cofinal, with `g^{-1} O_D = O_{D'}` and `(g')^{-1} O_C = O_{C'}`, and with the tag's condition (6) in the source's own form: exactness of `g'_! : Ab(C') → Ab(C)`, written `PreservesFiniteLimits (v'.sheafPullback AddCommGrpCat J' J)`, right exactness of a left adjoint being automatic. `Rf_*` and `Rf'_*` are *constructed*, as the total right derived functors of the degreewise direct images of sheaves of modules, and nothing about them is required. The price of the source's condition (6) is that the four sites lie in one universe, which is where Stacks 0D6J, the transport from abelian sheaves to modules that the source's proof opens with, is available. An isomorphism rather than an equality, and asserted through `Nonempty` as its underived input Stacks 0FN3 is, a right derived functor being determined only up to a canonical isomorphism and the sheaf-level comparison of Stacks 0FN1 being a base change of right Kan extensions.”.
+**`Stacks.Cohomology.DerivedBaseChange.nonempty_inverseImage_comp_totalDerivedPushforwardOf_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/UnboundedBaseChangeForACocontinuousSquare.lean, line 498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/UnboundedBaseChangeForACocontinuousSquare.lean#L498). The attribute's comment: “`Rf'_* ∘ (g')^* ≅ g^* ∘ Rf_*` on the unbounded derived categories `D(O_C) → D(O_{D'})`, for a commutative square of ringed topoi whose four functors `u`, `u'`, `v`, `v'` are cocontinuous, with `u' ⋙ v = v' ⋙ u`, with `v`, `v'` continuous as well, with the comparison functors `{}^{u'}_{V'} I → {}^u_{v(V')} I` of the index categories of Section 00XF cofinal, with `g^{-1} O_D = O_{D'}` and `(g')^{-1} O_C = O_{C'}`, and with the tag's condition (6) in the source's own form: exactness of `g'_! : Ab(C') → Ab(C)`, written `PreservesFiniteLimits (v'.sheafPullback AddCommGrpCat J' J)`, right exactness of a left adjoint being automatic. `Rf_*` and `Rf'_*` are *constructed*, as the total right derived functors of the degreewise direct images of sheaves of modules, and nothing about them is required. The price of the source's condition (6) is that the four sites lie in one universe, which is where Stacks 0D6J, the transport from abelian sheaves to modules that the source's proof opens with, is available. An isomorphism rather than an equality, and asserted through `Nonempty` as its underived input Stacks 0FN3 is, a right derived functor being determined only up to a canonical isomorphism and the sheaf-level comparison of Stacks 0FN1 being a base change of right Kan extensions.”.
 
 > **Stacks 0FN6.** For a commutative square of ringed topoi whose four functors `u : C ⥤ D`,
 > `u' : C' ⥤ D'`, `v : D' ⥤ D`, `v' : C' ⥤ C` are cocontinuous — giving `f`, `f'`, `g`, `g'` with
@@ -928,7 +928,7 @@ theorem nonempty_inverseImage_comp_totalDerivedPushforwardOf_iso
 
 [Tag 0FN7](https://stacks.math.columbia.edu/tag/0FN7) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedBaseChange.inverseImageCompDerivedPushforwardPlusIsoOfRingedSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BoundedBelowBaseChangeOverASquareOfSites.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BoundedBelowBaseChangeOverASquareOfSites.lean#L338). The attribute's comment: “first conclusion: `Rf'_* ∘ (g')^* ≅ g^* ∘ Rf_*` on the *bounded below* derived categories `D⁺(O_C) → D⁺(O_{D'})`, for a commutative square of ringed topoi whose horizontal functors `u`, `u'` are continuous and whose vertical functors `v`, `v'` are continuous as well as cocontinuous, with `v ⋙ u = u' ⋙ v'`, `g^{-1} O_D = O_{D'}` and `(g')^{-1} O_C = O_{C'}`, and WITHOUT the tag's condition (6), exactness of `g'_!` — which is what the second conclusion, on the unbounded derived categories, needs; that conclusion, under the source's own condition (6), is `Stacks.Cohomology.DerivedBaseChange.inverseImageCompTotalDerivedPushforwardIsoOfExactLowerShriek`. Proved as in the source, through the vanishing of Stacks 0D6X, the sheafified cohomology presheaf of Stacks 072W, and Leray's acyclicity lemma Stacks 015E. An isomorphism rather than an equality, a right derived functor being determined only up to a canonical isomorphism. The sites `C` and `C'` are at the single universe at which Stacks 0D6X and the Ext-to-derived-sections comparison of Stacks 03FD are available in this library — `C'` small and `C` the site of a ringed site — and `v'` is continuous in the sense of Sites, Definition 00WV, which is the hypothesis Stacks 0D6X uses and which Mathlib's `IsContinuous` does not supply; that is not an extra assumption relative to the source, where `v'` is continuous in exactly that sense, and `Stacks.Sites.preservesCoveringPullbacks_of_isContinuous` derives it from the project's formalization of Definition 00WV.”.
+**`Stacks.Cohomology.DerivedBaseChange.inverseImageCompDerivedPushforwardPlusIsoOfRingedSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BoundedBelowBaseChangeOverASquareOfSites.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BoundedBelowBaseChangeOverASquareOfSites.lean#L338). The attribute's comment: “first conclusion: `Rf'_* ∘ (g')^* ≅ g^* ∘ Rf_*` on the *bounded below* derived categories `D⁺(O_C) → D⁺(O_{D'})`, for a commutative square of ringed topoi whose horizontal functors `u`, `u'` are continuous and whose vertical functors `v`, `v'` are continuous as well as cocontinuous, with `v ⋙ u = u' ⋙ v'`, `g^{-1} O_D = O_{D'}` and `(g')^{-1} O_C = O_{C'}`, and WITHOUT the tag's condition (6), exactness of `g'_!` — which is what the second conclusion, on the unbounded derived categories, needs; that conclusion, under the source's own condition (6), is `Stacks.Cohomology.DerivedBaseChange.inverseImageCompTotalDerivedPushforwardIsoOfExactLowerShriek`. Proved as in the source, through the vanishing of Stacks 0D6X, the sheafified cohomology presheaf of Stacks 072W, and Leray's acyclicity lemma Stacks 015E. An isomorphism rather than an equality, a right derived functor being determined only up to a canonical isomorphism. The sites `C` and `C'` are at the single universe at which Stacks 0D6X and the Ext-to-derived-sections comparison of Stacks 03FD are available in this library — `C'` small and `C` the site of a ringed site — and `v'` is continuous in the sense of Sites, Definition 00WV, which is the hypothesis Stacks 0D6X uses and which Mathlib's `IsContinuous` does not supply; that is not an extra assumption relative to the source, where `v'` is continuous in exactly that sense, and `Stacks.Sites.preservesCoveringPullbacks_of_isContinuous` derives it from the project's formalization of Definition 00WV.”.
 
 > **Stacks 0FN7, first conclusion, with the acyclicity step discharged.** The same statement
 > as `inverseImageCompDerivedPushforwardPlusIso`, in the universes at which Stacks 0D6X and
@@ -952,7 +952,7 @@ def inverseImageCompDerivedPushforwardPlusIsoOfRingedSite (hsq : v ⋙ u = u' �
         (inverseImage.{w} K' K v OD).mapDerivedCategoryPlus
 ```
 
-**`Stacks.Cohomology.DerivedBaseChange.inverseImageCompTotalDerivedPushforwardIsoOfExactLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/UnboundedBaseChangeForAnExactLowerShriek.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/UnboundedBaseChangeForAnExactLowerShriek.lean#L310). The attribute's comment: “the second conclusion, at the source's full statement of it: `Rf'_* ∘ (g')^* ≅ g^* ∘ Rf_*` on the *unbounded* derived categories `D(O_C) → D(O_{D'})`, for a commutative square of ringed topoi whose horizontal functors `u`, `u'` are continuous and whose vertical functors `v`, `v'` are continuous as well as cocontinuous, with `v ⋙ u = u' ⋙ v'`, `g^{-1} O_D = O_{D'}` and `(g')^{-1} O_C = O_{C'}`, and with the tag's condition (6) as the source states it — exactness of `g'_! : Ab(C') → Ab(C)`, written `PreservesFiniteLimits (v'.sheafPullback AddCommGrpCat J' J)`, right exactness of a left adjoint being automatic. Nothing else is assumed: in particular NOT the module-level substitution for condition (6) that `Stacks.Cohomology.DerivedBaseChange.inverseImageCompDerivedPushforwardIso` and `Stacks.Cohomology.DerivedBaseChange.inverseImageCompTotalDerivedPushforwardIso` grant in its place, those two adding four independent universes instead. The price here is that the four sites lie in one universe, which is where Stacks 0D6J, the transport from abelian sheaves to modules that the source's proof opens with, is available. `Rf_*` and `Rf'_*` are *constructed*, as the total right derived functors of the degreewise direct images, and nothing about them is assumed. An isomorphism rather than an equality, a right derived functor being determined only up to a canonical isomorphism. The first conclusion of the tag, the same identity on `D^+` without condition (6), is `Stacks.Cohomology.DerivedBaseChange.inverseImageCompDerivedPushforwardPlusIsoOfRingedSite`.”.
+**`Stacks.Cohomology.DerivedBaseChange.inverseImageCompTotalDerivedPushforwardIsoOfExactLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/UnboundedBaseChangeForAnExactLowerShriek.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/UnboundedBaseChangeForAnExactLowerShriek.lean#L311). The attribute's comment: “the second conclusion, at the source's full statement of it: `Rf'_* ∘ (g')^* ≅ g^* ∘ Rf_*` on the *unbounded* derived categories `D(O_C) → D(O_{D'})`, for a commutative square of ringed topoi whose horizontal functors `u`, `u'` are continuous and whose vertical functors `v`, `v'` are continuous as well as cocontinuous, with `v ⋙ u = u' ⋙ v'`, `g^{-1} O_D = O_{D'}` and `(g')^{-1} O_C = O_{C'}`, and with the tag's condition (6) as the source states it — exactness of `g'_! : Ab(C') → Ab(C)`, written `PreservesFiniteLimits (v'.sheafPullback AddCommGrpCat J' J)`, right exactness of a left adjoint being automatic. Nothing else is assumed: in particular NOT the module-level substitution for condition (6) that `Stacks.Cohomology.DerivedBaseChange.inverseImageCompDerivedPushforwardIso` and `Stacks.Cohomology.DerivedBaseChange.inverseImageCompTotalDerivedPushforwardIso` grant in its place, those two adding four independent universes instead. The price here is that the four sites lie in one universe, which is where Stacks 0D6J, the transport from abelian sheaves to modules that the source's proof opens with, is available. `Rf_*` and `Rf'_*` are *constructed*, as the total right derived functors of the degreewise direct images, and nothing about them is assumed. An isomorphism rather than an equality, a right derived functor being determined only up to a canonical isomorphism. The first conclusion of the tag, the same identity on `D^+` without condition (6), is `Stacks.Cohomology.DerivedBaseChange.inverseImageCompDerivedPushforwardPlusIsoOfRingedSite`.”.
 
 > **Stacks 0FN7**, second conclusion, under the source's own condition (6). For a commutative
 > square of ringed topoi whose horizontal functors `u : D ⥤ C`, `u' : D' ⥤ C'` are continuous —
@@ -994,4 +994,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.37, Tag 07AB](https://stacks.math.columbia.edu/tag/07AB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

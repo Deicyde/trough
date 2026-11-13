@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.24 Points and geometric points
 
-Section 67.24 of the Stacks Project, [Tag 0485](https://stacks.math.columbia.edu/tag/0485). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.24 of the Stacks Project, [Tag 0485](https://stacks.math.columbia.edu/tag/0485). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0487, a lemma
 
 [Tag 0487](https://stacks.math.columbia.edu/tag/0487) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSurjective_iff_surjective_app_isAlgClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 610](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L610). References: EGA IV (1.3.7), “more general”; EGA I (6.3.10), “more general”.
+**`AlgebraicGeometry.Space.isSurjective_iff_surjective_app_isAlgClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean, line 611](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PointsOfFiniteType.lean#L611). References: EGA IV (1.3.7), “more general”; EGA I (6.3.10), “more general”.
 
 > **Stacks 0487.** A morphism of algebraic spaces over `S` which is locally of finite type is
 > surjective exactly when, for every algebraically closed field `k` of the working universe whose
@@ -36,7 +36,7 @@ theorem isSurjective_iff_surjective_app_isAlgClosed
 
 [Tag 0488](https://stacks.math.columbia.edu/tag/0488) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.geometricPoints_large_enough`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeEnoughFields.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargeEnoughFields.lean#L76).
+**`AlgebraicGeometry.Space.geometricPoints_large_enough`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeEnoughFields.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargeEnoughFields.lean#L76).
 
 > **Stacks 0488.** Let `S` be a scheme and let `X`, `Y` be algebraic spaces over `S`.
 >
@@ -144,4 +144,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.24, Tag 0485](https://stacks.math.columbia.edu/tag/0485)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

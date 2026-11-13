@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.146 Local homomorphisms
 
-Section 10.146 of the Stacks Project, [Tag 053J](https://stacks.math.columbia.edu/tag/053J). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.146 of the Stacks Project, [Tag 053J](https://stacks.math.columbia.edu/tag/053J). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GSD, a lemma
 
 [Tag 0GSD](https://stacks.math.columbia.edu/tag/0GSD) in the Stacks Project.
 
-**`IsLocalRing.exists_mem_maximalIdeal_bijective_algebraMap_quotient_span_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/ModuloPowers.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/ModuloPowers.lean#L458). The attribute's comment: “The hypothesis `t ∈ m_R` and the conclusion are the source's; the map shown bijective is the canonical `R/tⁿR → S/tⁿS`. Stated for all `n : ℕ` (the case `n = 0` is the zero ring), with `κ(m_R) → κ(m_S)` merely surjective (equivalent, as it is injective automatically), and with the étale algebra `T` and the prime `q` as hypotheses rather than an existential.”.
+**`IsLocalRing.exists_mem_maximalIdeal_bijective_algebraMap_quotient_span_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/ModuloPowers.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/ModuloPowers.lean#L459). The attribute's comment: “The hypothesis `t ∈ m_R` and the conclusion are the source's; the map shown bijective is the canonical `R/tⁿR → S/tⁿS`. Stated for all `n : ℕ` (the case `n = 0` is the zero ring), with `κ(m_R) → κ(m_S)` assumed surjective (equivalent, as it is injective automatically); the presentation of `S` as the localization of an étale `R`-algebra `T` at a prime `q` is universally quantified, which is equivalent to the source's existential.”.
 
 > **An étale local homomorphism is an isomorphism modulo powers of a principal ideal.** Let
 > `(R, m_R) → (S, m_S)` be a local homomorphism of local rings such that `S` is the localization
@@ -37,7 +37,7 @@ public theorem IsLocalRing.exists_mem_maximalIdeal_bijective_algebraMap_quotient
 
 [Tag 053K](https://stacks.math.columbia.edu/tag/053K) in the Stacks Project.
 
-**`IsLocalRing.exists_finite_faithfullyFlat_forall_isMaximal_isLocalHom_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FiniteFlatCover.lean, line 992](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/FiniteFlatCover.lean#L992). The attribute's comment: “The étale algebra `T` and the prime `q` presenting `S` are hypotheses rather than an existential, as in Lemma 0GSD. `R → S'` is `Module.Finite`, `Algebra.FinitePresentation` and `Module.FaithfullyFlat`; `S'_{m'}` is an arbitrary localization of `S'` at `m'`; the factorization is pinned by an equation with the canonical map `R → S'_{m'}`, and the factoring map is required to be local, as in the source's proof. See the module docstring.”.
+**`IsLocalRing.exists_finite_faithfullyFlat_forall_isMaximal_isLocalHom_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FiniteFlatCover.lean, line 992](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/FiniteFlatCover.lean#L992). The attribute's comment: “The étale algebra `T` and the prime `q` presenting `S` are hypotheses rather than an existential, as in Lemma 0GSD. `R → S'` is `Module.Finite`, `Algebra.FinitePresentation` and `Module.FaithfullyFlat`; `S'_{m'}` is an arbitrary localization of `S'` at `m'`; the factorization is pinned by an equation with the canonical map `R → S'_{m'}`, and the factoring map is required to be local, as in the source's proof. See the module docstring.”.
 
 > **Stacks 053K.** Let `(R, m_R) → (S, m_S)` be a local homomorphism of local rings such that
 > `S` is the localization of an étale `R`-algebra `T` at a prime `q`. Then there is a finite,
@@ -65,4 +65,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.146, Tag 053J](https://stacks.math.columbia.edu/tag/053J)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

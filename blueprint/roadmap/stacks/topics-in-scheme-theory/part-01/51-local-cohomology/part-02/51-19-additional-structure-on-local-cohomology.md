@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.19 Additional structure on local cohomology
 
-Section 51.19 of the Stacks Project, [Tag 0EC4](https://stacks.math.columbia.edu/tag/0EC4). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.19 of the Stacks Project, [Tag 0EC4](https://stacks.math.columbia.edu/tag/0EC4). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EC5, a lemma
 
 [Tag 0EC5](https://stacks.math.columbia.edu/tag/0EC5) in the Stacks Project.
 
-**`Stacks.LocalCohomology.derivationOperator`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/DerivationAction.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/DerivationAction.lean#L408).
+**`Stacks.LocalCohomology.derivationOperator`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/DerivationAction.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/DerivationAction.lean#L408).
 
 > **Stacks Project, Tag 0EC5.** A derivation `θ` of `A` induces a canonical additive operator on
 > each local cohomology module `H^i_{V(I)}(A)`, satisfying the Leibniz rule
@@ -32,7 +32,7 @@ def derivationOperator (A : Type u) [CommRing A] (I : Ideal A) (hI : I.FG)
 
 [Tag 0EC6](https://stacks.math.columbia.edu/tag/0EC6) in the Stacks Project.
 
-**`Stacks.LocalCohomology.localCohomologyOfRing_frobeniusIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Frobenius.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Frobenius.lean#L134).
+**`Stacks.LocalCohomology.localCohomologyOfRing_frobeniusIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Frobenius.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Frobenius.lean#L134).
 
 > **Stacks Project, Tag 0EC6.** For a commutative ring `A` in which a prime `p` vanishes and a
 > finitely generated ideal `I`, derived extension of scalars along the Frobenius endomorphism
@@ -52,7 +52,7 @@ def localCohomologyOfRing_frobeniusIso (A : Type u) [CommRing A] (p : ℕ) (hp :
 
 [Tag 0EC7](https://stacks.math.columbia.edu/tag/0EC7) in the Stacks Project.
 
-**`Stacks.EtaleDerivation.subsingleton_sheafDerivation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/StructureSheafDerivation.lean, line 886](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/StructureSheafDerivation.lean#L886). The attribute's comment: “uniqueness”.
+**`Stacks.EtaleDerivation.subsingleton_sheafDerivation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/StructureSheafDerivation.lean, line 885](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/StructureSheafDerivation.lean#L885). The attribute's comment: “uniqueness”.
 
 > The affine-normalized, restriction-compatible extension of a base derivation to the
 > structure sheaf is unique.
@@ -63,7 +63,7 @@ theorem subsingleton_sheafDerivation {A : Type u} [CommRing A] {V : Scheme.{u}}
     Subsingleton (SheafDerivation f θ)
 ```
 
-**`Stacks.EtaleDerivation.nonempty_twistedDerivation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/StructureSheafDerivation.lean, line 911](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/StructureSheafDerivation.lean#L911). The attribute's comment: “existence and Leibniz rule”.
+**`Stacks.EtaleDerivation.nonempty_twistedDerivation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/StructureSheafDerivation.lean, line 910](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/StructureSheafDerivation.lean#L910). The attribute's comment: “existence and Leibniz rule”.
 
 > An absolute derivation of the base ring extends to an affine-normalized derivation of the
 > structure sheaf of a quasi-compact, quasi-separated étale scheme. In every degree its induced
@@ -79,7 +79,7 @@ theorem nonempty_twistedDerivation {A : Type u} [CommRing A] {V : Scheme.{u}}
 
 [Tag 0EC9](https://stacks.math.columbia.edu/tag/0EC9) in the Stacks Project.
 
-**`Stacks.EtaleFrobenius.nonempty_extendScalarsDerived_derivedGlobalSections_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FrobeniusBaseChange.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FrobeniusBaseChange.lean#L230). The attribute's comment: “cohomology and base change is the explicit hypothesis `Stacks.EtaleFrobenius.DerivedGlobalSectionsBaseChange A`, namely Stacks 08IB for the structure sheaf over an affine base: for every ring map out of `A` and every Cartesian square over its spectrum whose left-hand morphism is flat, quasi-compact and quasi-separated, derived extension of scalars carries the derived global sections of the source to those of the base change. The library carries the base change morphism of Stacks 08HY but not its invertibility in Tor-independent generality, whose globalization step is Stacks 0DJ9. Everything else is proved: the Cartesian square supplied to that hypothesis is the absolute Frobenius square of `V`, Cartesian by Stacks 0EBS”.
+**`Stacks.EtaleFrobenius.nonempty_extendScalarsDerived_derivedGlobalSections_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FrobeniusBaseChange.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FrobeniusBaseChange.lean#L230). The attribute's comment: “cohomology and base change is the explicit hypothesis `Stacks.EtaleFrobenius.DerivedGlobalSectionsBaseChange A`, namely Stacks 08IB for the structure sheaf over an affine base: for every ring map out of `A` and every Cartesian square over its spectrum whose left-hand morphism is flat, quasi-compact and quasi-separated, derived extension of scalars carries the derived global sections of the source to those of the base change. The library carries the base change morphism of Stacks 08HY but not its invertibility in Tor-independent generality, whose globalization step is Stacks 0DJ9. Everything else is proved: the Cartesian square supplied to that hypothesis is the absolute Frobenius square of `V`, Cartesian by Stacks 0EBS”.
 
 > Let `p` be a prime number, let `A` be a commutative ring in which `p` vanishes and let
 > `F : A → A`, `a ↦ aᵖ`, be its Frobenius endomorphism. Assuming cohomology and base change
@@ -100,7 +100,7 @@ theorem nonempty_extendScalarsDerived_derivedGlobalSections_iso
       (derivedGlobalSectionsOver f).obj (derivedStructureSheaf V))
 ```
 
-**`Stacks.EtaleFrobenius.nonempty_extendScalarsDerived_derivedGlobalSections_iso_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FrobeniusCohomologyBaseChange.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FrobeniusCohomologyBaseChange.lean#L79).
+**`Stacks.EtaleFrobenius.nonempty_extendScalarsDerived_derivedGlobalSections_iso_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FrobeniusCohomologyBaseChange.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FrobeniusCohomologyBaseChange.lean#L79).
 
 > **Stacks Project, Tag 0EC9.** Let `p` be a prime number, let `A` be a commutative ring in
 > which `p` vanishes and let `F : A → A`, `a ↦ aᵖ`, be its Frobenius endomorphism. If
@@ -130,4 +130,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.19, Tag 0EC4](https://stacks.math.columbia.edu/tag/0EC4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

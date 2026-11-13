@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.5 Mittag-Leffler conditions
 
-Section 52.5 of the Stacks Project, [Tag 0EFN](https://stacks.math.columbia.edu/tag/0EFN). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 52.5 of the Stacks Project, [Tag 0EFN](https://stacks.math.columbia.edu/tag/0EFN). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DX0, a lemma
 
 [Tag 0DX0](https://stacks.math.columbia.edu/tag/0DX0) in the Stacks Project.
 
-**`Stacks.Algebraization.isArtinian_homology_puncturedSpectrumDerivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumCohomologyMittagLeffler.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumCohomologyMittagLeffler.lean#L332). The attribute's comment: “part (2), for the derived sections of the punctured spectrum read as a ringed space”.
+**`Stacks.Algebraization.isArtinian_homology_puncturedSpectrumDerivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumCohomologyMittagLeffler.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumCohomologyMittagLeffler.lean#L332). The attribute's comment: “part (2), for the derived sections of the punctured spectrum read as a ringed space”.
 
 > **Stacks Project, Tag 0DX0, part (2).** Let `(A, 𝔪)` be a Noetherian local ring, let
 > `U = Spec A ∖ {𝔪}` be its punctured spectrum and let `ℱ` be a coherent `𝒪_U`-module. Then the
@@ -36,7 +36,7 @@ theorem isArtinian_homology_puncturedSpectrumDerivedSections [IsNoetherianRing A
           (structureSheafRing (puncturedSpectrumRingedSpace A))) 0).obj F)))
 ```
 
-**`Stacks.LocalCohomology.isArtinian_localCohomology_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ArtinianOverLocalRing.lean, line 520](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/ArtinianOverLocalRing.lean#L520). The attribute's comment: “part (1)”.
+**`Stacks.LocalCohomology.isArtinian_localCohomology_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ArtinianOverLocalRing.lean, line 520](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/ArtinianOverLocalRing.lean#L520). The attribute's comment: “part (1)”.
 
 > Local cohomology of a finite module over a Noetherian local ring has the
 > descending chain condition in every degree.
@@ -58,7 +58,7 @@ public theorem isArtinian_localCohomology_maximalIdeal
 
 [Tag 0DX1](https://stacks.math.columbia.edu/tag/0DX1) in the Stacks Project.
 
-**`Stacks.Algebraization.isMittagLefflerCategorical_puncturedSpectrumCohomologySystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumCohomologyMittagLeffler.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumCohomologyMittagLeffler.lean#L397). The attribute's comment: “part (2), for the derived sections of the punctured spectrum read as a ringed space”.
+**`Stacks.Algebraization.isMittagLefflerCategorical_puncturedSpectrumCohomologySystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumCohomologyMittagLeffler.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumCohomologyMittagLeffler.lean#L397). The attribute's comment: “part (2), for the derived sections of the punctured spectrum read as a ringed space”.
 
 > **Stacks Project, Tag 0DX1, part (2).** Let `(A, 𝔪)` be a Noetherian local ring and let
 > `U = Spec A ∖ {𝔪}` be its punctured spectrum. Let `(ℱₙ)` be an inverse system of coherent
@@ -78,7 +78,7 @@ theorem isMittagLefflerCategorical_puncturedSpectrumCohomologySystem [IsNoetheri
     IsMittagLefflerCategorical (puncturedSpectrumCohomologySystem A S (p : ℤ))
 ```
 
-**`Stacks.LocalCohomology.isMittagLeffler_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/MittagLefflerSystems.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/MittagLefflerSystems.lean#L76). The attribute's comment: “local\_cohomology\_system”.
+**`Stacks.LocalCohomology.isMittagLeffler_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/MittagLefflerSystems.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/MittagLefflerSystems.lean#L76). The attribute's comment: “local\_cohomology\_system”.
 
 > **Stacks Project, Tag 0DX1.** Over a Noetherian local ring, the local cohomology modules of
 > an inverse system of finite modules satisfy the Mittag-Leffler condition in every degree.
@@ -100,7 +100,7 @@ public theorem isMittagLeffler_localCohomology
 
 [Tag 0EHB](https://stacks.math.columbia.edu/tag/0EHB) in the Stacks Project.
 
-**`Stacks.LocalCohomology.isEssentiallyConstantInverseSystem_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantSystem.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantSystem.lean#L519).
+**`Stacks.LocalCohomology.isEssentiallyConstantInverseSystem_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantSystem.lean, line 519](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantSystem.lean#L519).
 
 > **Stacks 0EHB.** If the canonical map from the local cohomology of a finite
 > module to the inverse limit of the local cohomology of a countable inverse
@@ -125,7 +125,7 @@ public theorem isEssentiallyConstantInverseSystem_localCohomology
 
 [Tag 0DXJ](https://stacks.math.columbia.edu/tag/0DXJ) in the Stacks Project.
 
-**`Stacks.LocalCohomology.isIso_completedLocalCohomologyToLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CompletedLimitComparison.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CompletedLimitComparison.lean#L178). The attribute's comment: “for a derived limit of the tower of local cohomologies of the adic quotients”.
+**`Stacks.LocalCohomology.isIso_completedLocalCohomologyToLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CompletedLimitComparison.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CompletedLimitComparison.lean#L176). The attribute's comment: “for a derived limit of the tower of local cohomologies of the adic quotients”.
 
 > **Stacks Project, Tag 0DXJ.** Let `(A, 𝔪)` be a Noetherian local ring, let `I ⊆ A` be an
 > ideal and let `M` be a finite `A`-module. For every `i`, the comparison map from the degree-`i`
@@ -144,7 +144,7 @@ theorem isIso_completedLocalCohomologyToLimit
       (IsLocalRing.maximalIdeal A).fg_of_isNoetherianRing M K hK i)
 ```
 
-**`Stacks.LocalCohomology.isIso_completedLocalCohomologyToLimit_derivedCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CompletedLimitComparison.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CompletedLimitComparison.lean#L214).
+**`Stacks.LocalCohomology.isIso_completedLocalCohomologyToLimit_derivedCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CompletedLimitComparison.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CompletedLimitComparison.lean#L212).
 
 > **Stacks Project, Tag 0DXJ, for the derived `I`-adic completion.** Let `(A, 𝔪)` be a
 > Noetherian local ring, let `I ⊆ A` be an ideal and let `M` be a finite `A`-module. For every
@@ -167,7 +167,7 @@ theorem isIso_completedLocalCohomologyToLimit_derivedCompletion
         I.fg_of_isNoetherianRing (IsLocalRing.maximalIdeal A).fg_of_isNoetherianRing M) i)
 ```
 
-**`Stacks.LocalCohomology.completedLocalCohomologyDerivedCompletionIsoLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CompletedLimitComparison.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CompletedLimitComparison.lean#L232).
+**`Stacks.LocalCohomology.completedLocalCohomologyDerivedCompletionIsoLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CompletedLimitComparison.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CompletedLimitComparison.lean#L230).
 
 > **Stacks Project, Tag 0DXJ.** For a finite module `M` over a Noetherian local ring
 > `(A, 𝔪)` and an ideal `I ⊆ A`, the degree-`i` cohomology of the derived `I`-adic completion
@@ -194,4 +194,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.5, Tag 0EFN](https://stacks.math.columbia.edu/tag/0EFN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

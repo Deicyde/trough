@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.11 Torsion free modules
 
-Section 31.11 of the Stacks Project, [Tag 0AVQ](https://stacks.math.columbia.edu/tag/0AVQ). 13 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.11 of the Stacks Project, [Tag 0AVQ](https://stacks.math.columbia.edu/tag/0AVQ). 13 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AXR, a lemma
 
 [Tag 0AXR](https://stacks.math.columbia.edu/tag/0AXR) in the Stacks Project.
 
-**`AlgebraicGeometry.torsion_section_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionSections.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionSections.lean#L224).
+**`AlgebraicGeometry.torsion_section_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionSections.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionSections.lean#L224).
 
 > A section of a quasi-coherent module on an integral scheme is torsion at some stalk if
 > and only if it is torsion at every stalk; equivalently, its germ at the generic point and
@@ -47,7 +47,7 @@ theorem torsion_section_tfae
 
 [Tag 0AVR](https://stacks.math.columbia.edu/tag/0AVR) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ReflexiveModules.IsTorsionSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Reflexive/Basic.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Reflexive/Basic.lean#L138). The attribute's comment: “part (1)”. References: EGA I (7.4.1), “torsion section”.
+**`Stacks.AlgebraicGeometry.ReflexiveModules.IsTorsionSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Reflexive/Basic.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Reflexive/Basic.lean#L139). The attribute's comment: “part (1)”. References: EGA I (7.4.1), “torsion section”.
 
 > A local section of a module on a scheme is *torsion* if its germ at every point of its
 > domain is a torsion element of the stalk, i.e. is annihilated by a nonzero element of the
@@ -57,7 +57,7 @@ theorem torsion_section_tfae
 public def IsTorsionSection (F : X.Modules) {U : X.Opens} (s : Γ(F, U)) : Prop
 ```
 
-**`Stacks.AlgebraicGeometry.ReflexiveModules.IsTorsionFree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Reflexive/Basic.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Reflexive/Basic.lean#L144). The attribute's comment: “part (2)”. References: EGA I (7.4.1), “torsion free”; EGA IV (20.1.5), “quasi-coherent case”.
+**`Stacks.AlgebraicGeometry.ReflexiveModules.IsTorsionFree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Reflexive/Basic.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Reflexive/Basic.lean#L145). The attribute's comment: “part (2)”. References: EGA I (7.4.1), “torsion free”; EGA IV (20.1.5), “quasi-coherent case”.
 
 > A module on a scheme is *torsion free* if every torsion local section vanishes.
 
@@ -69,7 +69,7 @@ public def IsTorsionFree (F : X.Modules) : Prop
 
 [Tag 0AXS](https://stacks.math.columbia.edu/tag/0AXS) in the Stacks Project.
 
-**`AlgebraicGeometry.isTorsionFree_iff_forall_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean#L170).
+**`AlgebraicGeometry.isTorsionFree_iff_forall_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean#L170).
 
 > A quasi-coherent module on an integral scheme is torsion free if and only if its
 > sections on every affine open are torsion free over the ring of functions there.
@@ -85,7 +85,7 @@ theorem isTorsionFree_iff_forall_isAffineOpen
 
 [Tag 0AXT](https://stacks.math.columbia.edu/tag/0AXT) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TorsionQuasicoherent.torsionSubmodule_isQuasicoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Basic.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Basic.lean#L316). The attribute's comment: “torsion\_subsheaf\_quasi\_coherent”. References: EGA I (7.4.1), “quasi-coherence of T”.
+**`Stacks.AlgebraicGeometry.TorsionQuasicoherent.torsionSubmodule_isQuasicoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Basic.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Basic.lean#L316). The attribute's comment: “torsion\_subsheaf\_quasi\_coherent”. References: EGA I (7.4.1), “quasi-coherence of T”.
 
 > **The first assertion of [Stacks, Tag 0AXT].** The torsion submodule sheaf of a
 > quasi-coherent module on an integral scheme is quasi-coherent.
@@ -95,7 +95,7 @@ instance torsionSubmodule_isQuasicoherent :
     (torsionSubmodule F).toSheafOfModules.IsQuasicoherent
 ```
 
-**`Stacks.AlgebraicGeometry.TorsionQuasicoherent.isTorsionFree_torsionQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Quotient.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Quotient.lean#L165). The attribute's comment: “the quotient F/F\_tors is torsion free”. References: EGA I (7.4.1), “special case”.
+**`Stacks.AlgebraicGeometry.TorsionQuasicoherent.isTorsionFree_torsionQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Quotient.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Quotient.lean#L165). The attribute's comment: “the quotient F/F\_tors is torsion free”. References: EGA I (7.4.1), “special case”.
 
 > **The second assertion of [Stacks, Tag 0AXT].** The quotient of a quasi-coherent module on
 > an integral scheme by its torsion subsheaf is torsion free.
@@ -109,7 +109,7 @@ theorem isTorsionFree_torsionQuotient :
 
 [Tag 0AXU](https://stacks.math.columbia.edu/tag/0AXU) in the Stacks Project.
 
-**`AlgebraicGeometry.isTorsionFree_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean#L222).
+**`AlgebraicGeometry.isTorsionFree_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean#L222).
 
 > A flat quasi-coherent module on an integral scheme is torsion free.
 
@@ -124,7 +124,7 @@ theorem isTorsionFree_of_isFlat {X : Scheme.{u}} [IsIntegral X]
 
 [Tag 0AXV](https://stacks.math.columbia.edu/tag/0AXV) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ReflexiveModules.isTorsionFree_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/TorsionFree/FlatPullback.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/TorsionFree/FlatPullback.lean#L89). References: EGA IV (9.4.9), “partial”.
+**`Stacks.AlgebraicGeometry.ReflexiveModules.isTorsionFree_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/TorsionFree/FlatPullback.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/TorsionFree/FlatPullback.lean#L89). References: EGA IV (9.4.9), “partial”.
 
 > **Stacks Project, Tag 0AXV.** The flat pullback of a torsion-free quasi-coherent module on an
 > integral scheme is torsion free.
@@ -143,7 +143,7 @@ theorem isTorsionFree_modulePullback {X Y : Scheme.{u}}
 
 [Tag 0BCM](https://stacks.math.columbia.edu/tag/0BCM) in the Stacks Project.
 
-**`AlgebraicGeometry.isIntegral_of_flat_of_isIntegral_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/GenericFibre.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/GenericFibre.lean#L78).
+**`AlgebraicGeometry.isIntegral_of_flat_of_isIntegral_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/GenericFibre.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/GenericFibre.lean#L78).
 
 > **Stacks Project, Tag 0BCM.** If a flat morphism has integral target and integral generic
 > fibre, then its source is integral.
@@ -158,7 +158,7 @@ theorem isIntegral_of_flat_of_isIntegral_genericFiber
 
 [Tag 0AXW](https://stacks.math.columbia.edu/tag/0AXW) in the Stacks Project.
 
-**`AlgebraicGeometry.isTorsionFree_iff_forall_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean#L106).
+**`AlgebraicGeometry.isTorsionFree_iff_forall_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean#L106).
 
 > A quasi-coherent module on an integral scheme is torsion free precisely when its
 > stalk at every point is torsion free over the local ring at that point.
@@ -178,7 +178,7 @@ theorem isTorsionFree_iff_forall_stalk
 
 [Tag 0AXX](https://stacks.math.columbia.edu/tag/0AXX) in the Stacks Project.
 
-**`AlgebraicGeometry.isTorsionFree_middle_of_shortExact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean#L201).
+**`AlgebraicGeometry.isTorsionFree_middle_of_shortExact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TorsionFree.lean#L201).
 
 > A short exact extension of torsion-free quasi-coherent modules on an integral
 > scheme is torsion free.
@@ -196,7 +196,7 @@ lemma isTorsionFree_middle_of_shortExact {X : Scheme.{u}} [IsIntegral X]
 
 [Tag 0AXY](https://stacks.math.columbia.edu/tag/0AXY) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ReflexiveModules.isTorsionFree_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/TorsionFree/IntegralNoetherian.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/TorsionFree/IntegralNoetherian.lean#L269). References: EGA IV (5.10.14), “integral case, (i)”.
+**`Stacks.AlgebraicGeometry.ReflexiveModules.isTorsionFree_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/TorsionFree/IntegralNoetherian.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/TorsionFree/IntegralNoetherian.lean#L269). References: EGA IV (5.10.14), “integral case, (i)”.
 
 > **Stacks Project, Tag 0AXY.** The characterizations of a nonzero torsion-free coherent
 > module on a locally Noetherian integral scheme: torsion freeness, uniqueness of the generic
@@ -220,7 +220,7 @@ theorem isTorsionFree_tfae
 
 [Tag 0CC4](https://stacks.math.columbia.edu/tag/0CC4) in the Stacks Project.
 
-**`AlgebraicGeometry.isTorsionFree_iff_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/TorsionFreeDimensionOne.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/TorsionFreeDimensionOne.lean#L68).
+**`AlgebraicGeometry.isTorsionFree_iff_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/TorsionFreeDimensionOne.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/TorsionFreeDimensionOne.lean#L68).
 
 > On an integral regular scheme of dimension at most one a coherent module is torsion free if
 > and only if it is finite locally free.
@@ -237,7 +237,7 @@ theorem isTorsionFree_iff_isFiniteLocallyFree {X : Scheme.{u}} [IsIntegral X]
 
 [Tag 0AXZ](https://stacks.math.columbia.edu/tag/0AXZ) in the Stacks Project.
 
-**`AlgebraicGeometry.isTorsionFree_sheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/TorsionFree/SheafHom.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/TorsionFree/SheafHom.lean#L64). The attribute's comment: “torsion freeness”.
+**`AlgebraicGeometry.isTorsionFree_sheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/TorsionFree/SheafHom.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/TorsionFree/SheafHom.lean#L64). The attribute's comment: “torsion freeness”.
 
 > **The torsion freeness clause of [Stacks, Tag 0AXZ].** On an integral scheme, the sheaf-hom
 > `SheafHom(F, G)` from a module of finite presentation into a quasi-coherent torsion free module
@@ -254,7 +254,7 @@ theorem isTorsionFree_sheafHom {X : Scheme.{u}} [IsIntegral X] (F G : X.Modules)
     IsTorsionFree (sheafInternalHom (spaceRingedSite X.sheaf) F G)
 ```
 
-**`AlgebraicGeometry.sheafHom_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InternalHomCoherent/Quasicoherent.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InternalHomCoherent/Quasicoherent.lean#L135). The attribute's comment: “quasi-coherence”.
+**`AlgebraicGeometry.sheafHom_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InternalHomCoherent/Quasicoherent.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InternalHomCoherent/Quasicoherent.lean#L135). The attribute's comment: “quasi-coherence”.
 
 > **The quasi-coherence clause of [Stacks, Tag 0AXZ].** On a scheme, the sheaf-hom
 > `SheafHom(F, G)` from a module of finite presentation into a quasi-coherent module is
@@ -276,7 +276,7 @@ theorem sheafHom_isQuasicoherent (F G : X.Modules)
 
 [Tag 0AVS](https://stacks.math.columbia.edu/tag/0AVS) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_of_stalk_isIso_or_depth_two_and_not_associated_of_isTorsionFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Reflexive.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Reflexive.lean#L180). The attribute's comment: “alternative (2) in the form Tag 0AV8 gives it, namely depth at least two at a point not associated to the target, which is the form the source's proof of this statement reduces to through Tag 0AV9, and asked for only at the generic point, the one point of an integral base at which a torsion-free target can have an associated point”.
+**`AlgebraicGeometry.isIso_of_stalk_isIso_or_depth_two_and_not_associated_of_isTorsionFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Reflexive.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Reflexive.lean#L180). The attribute's comment: “alternative (2) in the form Tag 0AV8 gives it, namely depth at least two at a point not associated to the target, which is the form the source's proof of this statement reduces to through Tag 0AV9, and asked for only at the generic point, the one point of an integral base at which a torsion-free target can have an associated point”.
 
 > **Stacks Project, Tag 0AVS.** Let `X` be an integral locally Noetherian scheme and
 > `f : F ⟶ G` a map of quasi-coherent modules with `F` coherent and `G` torsion free. If at every
@@ -319,4 +319,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.11, Tag 0AVQ](https://stacks.math.columbia.edu/tag/0AVQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

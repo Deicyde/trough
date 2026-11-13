@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.59 Tensor products of complexes
 
-Section 15.59 of the Stacks Project, [Tag 0GWN](https://stacks.math.columbia.edu/tag/0GWN). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.59 of the Stacks Project, [Tag 0GWN](https://stacks.math.columbia.edu/tag/0GWN). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FNI, a lemma
 
 [Tag 0FNI](https://stacks.math.columbia.edu/tag/0FNI) in the Stacks Project.
 
-**`TotalTensorComplex.cochainComplex_symmetricMonoidalCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/Monoidal.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TensorComplex/Monoidal.lean#L115).
+**`TotalTensorComplex.cochainComplex_symmetricMonoidalCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/Monoidal.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TensorComplex/Monoidal.lean#L116).
 
 > The category of cochain complexes of modules over a commutative ring, with tensor product
 > given by the total complex of the degreewise tensor product, is symmetric monoidal. On the
@@ -36,7 +36,7 @@ public theorem cochainComplex_symmetricMonoidalCategory (R : Type u) [CommRing R
 
 [Tag 064I](https://stacks.math.columbia.edu/tag/064I) in the Stacks Project.
 
-**`TotalTensorComplex.tensorTotal_preserves_homotopy_and_descends`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/Monoidal.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TensorComplex/Monoidal.lean#L128). References: SGA 4½ Etat 0 (1.3.3), “tensor over ModuleCat R”.
+**`TotalTensorComplex.tensorTotal_preserves_homotopy_and_descends`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/Monoidal.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TensorComplex/Monoidal.lean#L129). References: SGA 4½ Etat 0 (1.3.3), “tensor over ModuleCat R”.
 
 > Tensoring with a fixed complex and taking the total complex preserves homotopic maps,
 > and therefore induces an endofunctor of the homotopy category of complexes.
@@ -58,7 +58,7 @@ public theorem tensorTotal_preserves_homotopy_and_descends {R : Type u} [CommRin
 
 [Tag 0GWP](https://stacks.math.columbia.edu/tag/0GWP) in the Stacks Project.
 
-**`TotalTensorComplex.homotopyCategory_symmetricMonoidalCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/Monoidal.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TensorComplex/Monoidal.lean#L179).
+**`TotalTensorComplex.homotopyCategory_symmetricMonoidalCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/Monoidal.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TensorComplex/Monoidal.lean#L180).
 
 > The homotopy category of cochain complexes of modules over a commutative ring is symmetric
 > monoidal under the total tensor product. Its associator and Koszul braiding are induced from the
@@ -88,7 +88,7 @@ public theorem homotopyCategory_symmetricMonoidalCategory (R : Type u) [CommRing
 
 [Tag 064J](https://stacks.math.columbia.edu/tag/064J) in the Stacks Project.
 
-**`TotalTensorComplex.tleft_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/Monoidal.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TensorComplex/Monoidal.lean#L260).
+**`TotalTensorComplex.tleft_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/Monoidal.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TensorComplex/Monoidal.lean#L261).
 
 > Tensoring on the left with a fixed complex and totalizing is an exact functor of
 > triangulated categories on the homotopy category.
@@ -104,7 +104,7 @@ public theorem tleft_isTriangulated (G : CochainComplex C ℤ) :
       @Functor.IsTriangulated _ _ _ _ _ _ (Tleft G) e _ _ _ _ _ _ _ _
 ```
 
-**`TotalTensorComplex.tright_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/Monoidal.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TensorComplex/Monoidal.lean#L269).
+**`TotalTensorComplex.tright_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/Monoidal.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TensorComplex/Monoidal.lean#L270).
 
 > Tensoring on the right with a fixed complex and totalizing is an exact functor of
 > triangulated categories on the homotopy category. This is genuinely distinct from
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.59, Tag 0GWN](https://stacks.math.columbia.edu/tag/0GWN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

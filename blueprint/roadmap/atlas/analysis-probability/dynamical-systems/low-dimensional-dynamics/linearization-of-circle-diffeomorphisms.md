@@ -7,7 +7,7 @@ statement: formalized
 
 # Linearization of circle diffeomorphisms
 
-6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html).
+6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html).
 
 ## Diophantine numbers
 
@@ -19,7 +19,7 @@ integer $p$ and every integer $q \ge 1$.
 
 - Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.
 
-Formalized by `MathlibExt.Analysis.HermanProblem290Wanted.IsDiophantine`, a definition declared in [WantedExt/Analysis/HermanProblem290Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HermanProblem290Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html#is-diophantine).
+Formalized by `MathlibExt.Analysis.HermanProblem290Wanted.IsDiophantine`, a definition declared in [WantedExt/Analysis/HermanProblem290Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HermanProblem290Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html#is-diophantine).
 
 ## Real-analytic circle diffeomorphisms
 
@@ -33,7 +33,7 @@ $F(G(x)) = x$, and $F$ is strictly increasing.
 
 - Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.
 
-Formalized by `MathlibExt.Analysis.HermanProblem290Wanted.AnalyticCircleDiffeo`, a structure declared in [WantedExt/Analysis/HermanProblem290Wanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HermanProblem290Wanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html#analytic-circle-diffeo).
+Formalized by `MathlibExt.Analysis.HermanProblem290Wanted.AnalyticCircleDiffeo`, a structure declared in [WantedExt/Analysis/HermanProblem290Wanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HermanProblem290Wanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html#analytic-circle-diffeo).
 
 ## Rotation number of a lift
 
@@ -46,7 +46,7 @@ to infinity.
 
 - Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.
 
-Formalized by `MathlibExt.Analysis.HermanProblem290Wanted.HasRotationNumber`, a definition declared in [WantedExt/Analysis/HermanProblem290Wanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HermanProblem290Wanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html#has-rotation-number).
+Formalized by `MathlibExt.Analysis.HermanProblem290Wanted.HasRotationNumber`, a definition declared in [WantedExt/Analysis/HermanProblem290Wanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HermanProblem290Wanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html#has-rotation-number).
 
 ## Analytic conjugacy to a rotation
 
@@ -58,7 +58,7 @@ circle diffeomorphism with lift $H$ such that $H(F(x)) = H(x) + \alpha$ for ever
 
 - Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.
 
-Formalized by `MathlibExt.Analysis.HermanProblem290Wanted.IsAnalyticallyConjugateToRotation`, a definition declared in [WantedExt/Analysis/HermanProblem290Wanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HermanProblem290Wanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html#is-analytically-conjugate-to-rotation).
+Formalized by `MathlibExt.Analysis.HermanProblem290Wanted.IsAnalyticallyConjugateToRotation`, a definition declared in [WantedExt/Analysis/HermanProblem290Wanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HermanProblem290Wanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html#is-analytically-conjugate-to-rotation).
 
 ## Herman's analytic linearization problem
 
@@ -73,7 +73,7 @@ M. R. Herman asked whether such an $\alpha$ exists; this is Problem 2.90 in Haym
 
 - Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.
 
-Formalized by `MathlibExt.Analysis.HermanProblem290Wanted.conjecture`, a definition declared in [WantedExt/Analysis/HermanProblem290Wanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HermanProblem290Wanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html#conjecture).
+Formalized by `MathlibExt.Analysis.HermanProblem290Wanted.conjecture`, a definition declared in [WantedExt/Analysis/HermanProblem290Wanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HermanProblem290Wanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html#conjecture).
 
 ## Herman's analytic linearization problem has a positive answer
 
@@ -91,7 +91,7 @@ $\mathcal{H}$ that is not Diophantine has the required property.
 
 - H. Eliasson, B. Fayad and R. Krikorian, Jean-Christophe Yoccoz and the theory of circle diffeomorphisms (2018), arXiv:1810.07107 (account of J.-C. Yoccoz, Analytic linearization of circle diffeomorphisms, Lecture Notes in Math. 1784, Springer (2002), 125-173), https://arxiv.org/abs/1810.07107.
 
-Stated but not proved: `MathlibExt.Analysis.HermanProblem290Wanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Analysis/HermanProblem290Wanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HermanProblem290Wanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Analysis.HermanProblem290Wanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Analysis/HermanProblem290Wanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HermanProblem290Wanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -100,4 +100,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Linearization of circle diffeomorphisms](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms)

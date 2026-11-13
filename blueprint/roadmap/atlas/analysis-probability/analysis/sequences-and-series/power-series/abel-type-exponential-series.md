@@ -8,7 +8,7 @@ proof: formalized
 
 # Abel-type exponential series
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html).
 
 ## Absolute convergence of the shifted series in Entry 12 for every $n$
 
@@ -25,7 +25,7 @@ assumed about $n$. At an index where $n + k = 0$ and the exponent $r + 1 + k$ is
 term is $0^{r+1+k} = 0$, whereas the source's term is undefined there. Summability depends only
 on the tail, where every exponent is nonnegative.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry12SummableSuccN.ramanujan_part1_ch3_entry12_summable_succ_n_general`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12SummableSuccN.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12SummableSuccN.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html#ramanujan-part1-ch3-entry12-summable-suc).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry12SummableSuccN.ramanujan_part1_ch3_entry12_summable_succ_n_general`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12SummableSuccN.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12SummableSuccN.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html#ramanujan-part1-ch3-entry12-summable-suc).
 
 ## Absolute convergence of the shifted series in Entry 12
 
@@ -39,7 +39,7 @@ $$\sum_{k=0}^{\infty} \left| \frac{(n+k)^{r+1+k}}{a^k\, k!} \right| < \infty.$$
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (12.1) and Entry 12, printed pp. 66-67 / PDF pp. 76-77.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry12SummableSuccN.ramanujan_part1_ch3_entry12_summable_succ_n`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12SummableSuccN.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12SummableSuccN.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html#ramanujan-part1-ch3-entry12-summable-suc-2).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry12SummableSuccN.ramanujan_part1_ch3_entry12_summable_succ_n`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12SummableSuccN.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12SummableSuccN.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html#ramanujan-part1-ch3-entry12-summable-suc-2).
 
 ## Ramanujan's recurrence for the series in Entry 12
 
@@ -58,7 +58,7 @@ $$F_{r+1}(n) = n F_r(n) + \frac{1}{a} F_{r+1}(n+1).$$
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (12.1) and Entry 12, printed pp. 66-67 / PDF pp. 76-77.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry12.ramanujan_part1_ch3_entry12`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html#ramanujan-part1-ch3-entry12).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry12.ramanujan_part1_ch3_entry12`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html#ramanujan-part1-ch3-entry12).
 
 ## Absolute convergence of the series in Entry 12
 
@@ -72,7 +72,7 @@ $$\sum_{k=0}^{\infty} \left| \frac{(n+k)^{r+k}}{a^k\, k!} \right| < \infty.$$
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (12.1) and Entry 12, printed pp. 66-67 / PDF pp. 76-77.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry12SummableRN.ramanujan_part1_ch3_entry12_summable_r_n`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12SummableRN.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12SummableRN.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html#ramanujan-part1-ch3-entry12-summable-r-n).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry12SummableRN.ramanujan_part1_ch3_entry12_summable_r_n`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12SummableRN.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry12SummableRN.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html#ramanujan-part1-ch3-entry12-summable-r-n).
 
 ## Ramanujan's three-term recurrence (Chapter 3, Entry 16(a))
 
@@ -92,7 +92,7 @@ $$n\, \varphi(r, n) = \varphi(r + 1, n) - \log x \cdot \varphi(r + 1, n + 1).$$
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (12.1) printed p. 66 / PDF p. 76, Entry 12 p. 67 / PDF p. 77, and Entry 16(a) p. 78 / PDF p. 88. The series is `Entry12.F`, and the recurrence is `Entry12.ramanujan_part1_ch3_entry12` multiplied by `exp (-n * log x)`.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry16.ramanujan_part1_ch3_entry16`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry16.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry16.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html#ramanujan-part1-ch3-entry16).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry16.ramanujan_part1_ch3_entry16`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry16.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry16.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html#ramanujan-part1-ch3-entry16).
 
 ## Jensen's series (Chapter 3, Entry 16, Corollary 1)
 
@@ -108,7 +108,7 @@ converges unconditionally to $e^x / (1 - n)$.
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Corollary 1, formula (16.6), printed pp. 80--81 / PDF pp. 90--91.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry16Corollary1JensenSeries.ramanujan_part1_ch3_entry16_corollary1_jensen_series`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry16Corollary1JensenSeries.lean, line 1490](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry16Corollary1JensenSeries.lean#L1490). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html#ramanujan-part1-ch3-entry16-corollary1-j).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry16Corollary1JensenSeries.ramanujan_part1_ch3_entry16_corollary1_jensen_series`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry16Corollary1JensenSeries.lean, line 1490](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry16Corollary1JensenSeries.lean#L1490). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html#ramanujan-part1-ch3-entry16-corollary1-j).
 
 ## Ramanujan's $\psi$-series (Chapter 3, Entry 16)
 
@@ -139,7 +139,7 @@ base case from Berndt (16.6) extends to the star-convex domain by analytic uniqu
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, construction and formulas (16.4)-(16.5), printed pp. 78-79 / PDF pp. 88-89.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry16PsiSeries.ramanujan_part1_ch3_entry16_psi_series`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry16PsiSeries.lean, line 773](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry16PsiSeries.lean#L773). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html#ramanujan-part1-ch3-entry16-psi-series).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry16PsiSeries.ramanujan_part1_ch3_entry16_psi_series`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry16PsiSeries.lean, line 773](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry16PsiSeries.lean#L773). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html#ramanujan-part1-ch3-entry16-psi-series).
 
 ## Depends on
 
@@ -148,4 +148,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Abel-type exponential series](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/sequences-and-series/power-series/abel-type-exponential-series)

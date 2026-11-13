@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.57 Derived categories of modules
 
-Section 15.57 of the Stacks Project, [Tag 0914](https://stacks.math.columbia.edu/tag/0914). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.57 of the Stacks Project, [Tag 0914](https://stacks.math.columbia.edu/tag/0914). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0915, a lemma
 
 [Tag 0915](https://stacks.math.columbia.edu/tag/0915) in the Stacks Project.
 
-**`isKInjective_restrictScalars_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KInjective/ChangeOfRings.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KInjective/ChangeOfRings.lean#L99). References: SGA 4 V (4.9), “special case”.
+**`isKInjective_restrictScalars_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KInjective/ChangeOfRings.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KInjective/ChangeOfRings.lean#L99). References: SGA 4 V (4.9), “special case”.
 
 > **Stacks Tag 0915.** Let `f : R → S` be a flat ring map of commutative rings. If `I` is a
 > K-injective complex of `S`-modules, then its restriction of scalars `res_f I` is a K-injective
@@ -36,7 +36,7 @@ theorem isKInjective_restrictScalars_of_flat
 
 [Tag 0916](https://stacks.math.columbia.edu/tag/0916) in the Stacks Project.
 
-**`isKInjective_of_restrictScalars_of_isEpi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KInjective/ChangeOfRings.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KInjective/ChangeOfRings.lean#L162).
+**`isKInjective_of_restrictScalars_of_isEpi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KInjective/ChangeOfRings.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KInjective/ChangeOfRings.lean#L162).
 
 > **Stacks 0916.** Let `R → S` be an epimorphism of commutative rings. If a complex of
 > `S`-modules is K-injective when regarded as a complex of `R`-modules, then it is K-injective as
@@ -60,7 +60,7 @@ theorem isKInjective_of_restrictScalars_of_isEpi [Algebra.IsEpi R S]
 
 [Tag 0917](https://stacks.math.columbia.edu/tag/0917) in the Stacks Project.
 
-**`coextend_isKInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KInjective/ChangeOfRings.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/KInjective/ChangeOfRings.lean#L230).
+**`coextend_isKInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/KInjective/ChangeOfRings.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/KInjective/ChangeOfRings.lean#L230).
 
 > **Stacks Tag 0917.** If `I` is a K-injective complex of `R`-modules, then its degreewise
 > coextension of scalars `Hom_R(S, I)` is a K-injective complex of `S`-modules.
@@ -82,4 +82,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.57, Tag 0914](https://stacks.math.columbia.edu/tag/0914)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

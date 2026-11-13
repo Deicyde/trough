@@ -7,7 +7,7 @@ statement: formalized
 
 # Hyperbolic motions in the N-body problem
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/hyperbolic-motions-in-the-n-body-problem/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/hyperbolic-motions-in-the-n-body-problem/index.html).
 
 ## Mutual distances
 
@@ -15,7 +15,7 @@ For a configuration $x = (x_1, \dots, x_N) \in E^N$ of $N$ points in a
 finite-dimensional real inner product space $E$ and indices $i, j$, the mutual distance of the
 $i$-th and $j$-th points is $r_{ij}(x) = \lVert x_i - x_j \rVert$.
 
-Formalized by `MathlibExt.Analysis.ViscositySolutionsWanted.ViscositySolutions.r`, a definition declared in [WantedExt/Analysis/ViscositySolutionsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ViscositySolutionsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/hyperbolic-motions-in-the-n-body-problem/index.html#r).
+Formalized by `MathlibExt.Analysis.ViscositySolutionsWanted.ViscositySolutions.r`, a definition declared in [WantedExt/Analysis/ViscositySolutionsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ViscositySolutionsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/hyperbolic-motions-in-the-n-body-problem/index.html#r).
 
 ## Configurations without collisions
 
@@ -23,7 +23,7 @@ A configuration $x = (x_1, \dots, x_N) \in E^N$ of
 $N$ points in a finite-dimensional real inner product space $E$ is without collisions if
 $r_{ij}(x) = \lVert x_i - x_j \rVert \neq 0$ for all $i \neq j$.
 
-Formalized by `MathlibExt.Analysis.ViscositySolutionsWanted.ViscositySolutions.WithoutCollisions`, a definition declared in [WantedExt/Analysis/ViscositySolutionsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ViscositySolutionsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/hyperbolic-motions-in-the-n-body-problem/index.html#without-collisions).
+Formalized by `MathlibExt.Analysis.ViscositySolutionsWanted.ViscositySolutions.WithoutCollisions`, a definition declared in [WantedExt/Analysis/ViscositySolutionsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ViscositySolutionsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/hyperbolic-motions-in-the-n-body-problem/index.html#without-collisions).
 
 ## Solutions of the $N$-body problem
 
@@ -43,7 +43,7 @@ gives a zero component of $\nabla_m f$. Moreover $\nabla f(y) = 0$ at every poin
 is not differentiable; for instance, a curve that stays at a collision with $x'' = 0$ can be a
 solution in this sense.
 
-Formalized by `MathlibExt.Analysis.ViscositySolutionsWanted.ViscositySolutions.IsNBodySolution`, a structure declared in [WantedExt/Analysis/ViscositySolutionsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ViscositySolutionsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/hyperbolic-motions-in-the-n-body-problem/index.html#is-nbody-solution).
+Formalized by `MathlibExt.Analysis.ViscositySolutionsWanted.ViscositySolutions.IsNBodySolution`, a structure declared in [WantedExt/Analysis/ViscositySolutionsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ViscositySolutionsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/hyperbolic-motions-in-the-n-body-problem/index.html#is-nbody-solution).
 
 ## Maderna–Venturelli theorem on hyperbolic motions
 
@@ -61,7 +61,7 @@ $t > 0$, and $x(t) = \sqrt{2h}\, t\, a + \varepsilon(t)$ for every $t \ge 0$.
 
 - E. Maderna and A. Venturelli, `Viscosity solutions and hyperbolic motions: a new PDE method for the N-body problem`, Annals of Math, 192 (2) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_viscosity_solutions` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.ViscositySolutionsWanted.ViscositySolutions.theorem_1_1` is written with `theorem_wanted` in [WantedExt/Analysis/ViscositySolutionsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ViscositySolutionsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/hyperbolic-motions-in-the-n-body-problem/index.html#theorem-1-1).
+Stated but not proved: `MathlibExt.Analysis.ViscositySolutionsWanted.ViscositySolutions.theorem_1_1` is written with `theorem_wanted` in [WantedExt/Analysis/ViscositySolutionsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ViscositySolutionsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/hyperbolic-motions-in-the-n-body-problem/index.html#theorem-1-1).
 
 ## Depends on
 
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hyperbolic motions in the N-body problem](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/hyperbolic-motions-in-the-n-body-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/ordinary-differential-equations/hyperbolic-motions-in-the-n-body-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/ordinary-differential-equations/hyperbolic-motions-in-the-n-body-problem)

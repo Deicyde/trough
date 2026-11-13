@@ -8,38 +8,38 @@ proof: formalized
 
 # Lossless finite passive-protocol bridge
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge/index.html).
 
 ## Embedding of finite passive-name protocols
 
 Embed the original finite passive-name protocol without changing actions.
 
-Formalized by `Cslib.SessionTypes.Endpoint.Protocol.ofFinite`, a definition declared in [CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge/index.html#of-finite).
+Formalized by `Cslib.SessionTypes.Endpoint.Protocol.ofFinite`, a definition declared in [CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge/index.html#of-finite).
 
 ## Finite protocol embedding commutes with duality
 
 The finite embedding preserves both protocol orientations.
 
-Formalized by `Cslib.SessionTypes.Endpoint.Protocol.ofFinite_dual`, a theorem declared in [CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge/index.html#of-finite-dual).
+Formalized by `Cslib.SessionTypes.Endpoint.Protocol.ofFinite_dual`, a theorem declared in [CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge/index.html#of-finite-dual).
 
 ## Partial recovery of a finite passive-name protocol
 
 Recover a finite passive protocol; richer payloads and recursion are
 not erased into a falsely finite protocol.
 
-Formalized by `Cslib.SessionTypes.Endpoint.Protocol.toFinite?`, a definition declared in [CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge/index.html#to-finite).
+Formalized by `Cslib.SessionTypes.Endpoint.Protocol.toFinite?`, a definition declared in [CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge/index.html#to-finite).
 
 ## Recovery is a left inverse of the finite embedding
 
 The finite embedding has a literal left inverse.
 
-Formalized by `Cslib.SessionTypes.Endpoint.Protocol.toFinite?_ofFinite`, a theorem declared in [CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge/index.html#to-finite-of-finite).
+Formalized by `Cslib.SessionTypes.Endpoint.Protocol.toFinite?_ofFinite`, a theorem declared in [CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge/index.html#to-finite-of-finite).
 
 ## Injectivity of the finite protocol embedding
 
 Different finite protocols remain different in the richer representation.
 
-Formalized by `Cslib.SessionTypes.Endpoint.Protocol.ofFinite_injective`, a theorem declared in [CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge/index.html#of-finite-injective).
+Formalized by `Cslib.SessionTypes.Endpoint.Protocol.ofFinite_injective`, a theorem declared in [CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/SessionTypes/Endpoint/FiniteBridge.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge/index.html#of-finite-injective).
 
 ## Depends on
 
@@ -48,4 +48,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lossless finite passive-protocol bridge](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/process-calculi/session-types/linear-endpoint-typing-for-the-calculus/lossless-finite-passive-protocol-bridge)

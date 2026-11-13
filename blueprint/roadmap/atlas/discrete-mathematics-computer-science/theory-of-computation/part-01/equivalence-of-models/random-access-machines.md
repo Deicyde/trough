@@ -8,7 +8,7 @@ proof: formalized
 
 # Random-access machines
 
-15 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html).
+15 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html).
 
 ## RAM addressing mode
 
@@ -21,7 +21,7 @@ of the register whose index is the contents of register $n$).
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.RAMAddr`, an inductive type declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ramaddr).
+Formalized by `Cslib.Decidability.RAMAddr`, an inductive type declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ramaddr).
 
 ## RAM store destination
 
@@ -35,7 +35,7 @@ An immediate operand is not a valid store destination.
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.RAMDest`, an inductive type declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ramdest).
+Formalized by `Cslib.Decidability.RAMDest`, an inductive type declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ramdest).
 
 ## RAM instruction
 
@@ -50,7 +50,7 @@ is a natural number.
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.RAMInstr`, an inductive type declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#raminstr).
+Formalized by `Cslib.Decidability.RAMInstr`, an inductive type declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#raminstr).
 
 ## RAM state
 
@@ -62,7 +62,7 @@ $\mathbb{N} \to \mathbb{N}$ giving the contents of each register.
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.RAMState`, a structure declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ramstate).
+Formalized by `Cslib.Decidability.RAMState`, a structure declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ramstate).
 
 ## Value of a RAM operand
 
@@ -74,7 +74,7 @@ the contents $r(n)$ of register $n$, and the indirect operand $n$ to $r(r(n))$.
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.ramResolve`, a definition declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-resolve).
+Formalized by `Cslib.Decidability.ramResolve`, a definition declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-resolve).
 
 ## Register written by a RAM store
 
@@ -86,7 +86,7 @@ indirect destination $n$ resolves to the contents $r(n)$ of register $n$.
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.ramDestIndex`, a definition declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-dest-index).
+Formalized by `Cslib.Decidability.ramDestIndex`, a definition declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-dest-index).
 
 ## One step of a RAM machine
 
@@ -106,7 +106,7 @@ further step leaves the state unchanged.
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.ramStep`, a definition declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-step).
+Formalized by `Cslib.Decidability.ramStep`, a definition declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-step).
 
 ## Initial RAM state
 
@@ -118,7 +118,7 @@ $0$.
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.ramInit`, a definition declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-init).
+Formalized by `Cslib.Decidability.ramInit`, a definition declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-init).
 
 ## Bounded execution of a RAM machine
 
@@ -130,7 +130,7 @@ exactly $t$ times.
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.ramExecN`, a definition declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-exec-n).
+Formalized by `Cslib.Decidability.ramExecN`, a definition declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-exec-n).
 
 ## Output of a RAM machine
 
@@ -143,7 +143,7 @@ the least such number of steps; otherwise the output is undefined.
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.ramEval`, a definition declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-eval).
+Formalized by `Cslib.Decidability.ramEval`, a definition declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-eval).
 
 ## A RAM step is sticky at halting states
 
@@ -157,7 +157,7 @@ been executed the state no longer changes.
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.ramStep_sticky`, a theorem declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-step-sticky).
+Formalized by `Cslib.Decidability.ramStep_sticky`, a theorem declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-step-sticky).
 
 ## RAM execution is stable once halted
 
@@ -169,7 +169,7 @@ $\ell$, then the state after $t + 1$ steps of $P$ from $s$ equals the state afte
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.ramExecN_stable`, a theorem declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-exec-n-stable).
+Formalized by `Cslib.Decidability.ramExecN_stable`, a theorem declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-exec-n-stable).
 
 ## RAM execution stays at its halted state
 
@@ -182,7 +182,7 @@ $t_1$ steps.
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.ramExecN_eq_of_halted`, a theorem declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-exec-n-eq-of-halted).
+Formalized by `Cslib.Decidability.ramExecN_eq_of_halted`, a theorem declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ram-exec-n-eq-of-halted).
 
 ## Output membership for RAM machines
 
@@ -195,7 +195,7 @@ accumulator equals $y$, then the output of $P$ on these inputs is defined and eq
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.mem_ramEval_of_halted`, a theorem declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#mem-ram-eval-of-halted).
+Formalized by `Cslib.Decidability.mem_ramEval_of_halted`, a theorem declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#mem-ram-eval-of-halted).
 
 ## RAM-decidable predicate
 
@@ -211,7 +211,7 @@ at $n$.
 
 - Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2.
 
-Formalized by `Cslib.Decidability.RAMDecidable`, a definition declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/RAMMachines.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ramdecidable).
+Formalized by `Cslib.Decidability.RAMDecidable`, a definition declared in [CSLibExt/Computability/Decidability/RAMMachines.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/RAMMachines.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html#ramdecidable).
 
 ## Depends on
 
@@ -220,4 +220,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Random-access machines](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/equivalence-of-models/random-access-machines)

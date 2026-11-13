@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.IsDecentSpace, AlgebraicGeometry.Space.IsReasonableSpace, AlgebraicGeometry.Space.IsVeryReasonableSpace, AlgebraicGeometry.AffineLineTranslation.not_isDecentSpace_translationQuotient, AlgebraicGeometry.Space.exists_directedApproximation_of_isAbsolutelyQuasiSeparated, AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_directedApproximation, AlgebraicGeometry.Space.exists_correctedDirectedApproximation, AlgebraicGeometry.Space.exists_quasiCompact_reasonable_isEmpty_directedApproximation
+lean: AlgebraicGeometry.Space.IsDecentSpace, AlgebraicGeometry.Space.IsReasonableSpace, AlgebraicGeometry.Space.IsVeryReasonableSpace, AlgebraicGeometry.AffineLineTranslation.not_isDecentSpace_translationQuotient, AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_directedApproximation, AlgebraicGeometry.Space.exists_correctedDirectedApproximation, AlgebraicGeometry.Space.exists_quasiCompact_reasonable_isEmpty_directedApproximation, AlgebraicGeometry.Space.isDecentSpace_relocalizeRestrict
 statement: formalized
 proof: formalized
 ---
 
 # 68.6 Reasonable and decent algebraic spaces
 
-Section 68.6 of the Stacks Project, [Tag 03I7](https://stacks.math.columbia.edu/tag/03I7). 5 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.6 of the Stacks Project, [Tag 03I7](https://stacks.math.columbia.edu/tag/03I7). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03I8, a definition
 
 [Tag 03I8](https://stacks.math.columbia.edu/tag/03I8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsDecentSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean#L111). The attribute's comment: “decent”.
+**`AlgebraicGeometry.Space.IsDecentSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean#L111). The attribute's comment: “decent”.
 
 > **Stacks 03I8, decent.** An algebraic space over `S` is *decent* when every one of its
 > points satisfies the equivalent conditions of Stacks 03JV, taken here in the form of
@@ -24,7 +24,7 @@ Section 68.6 of the Stacks Project, [Tag 03I7](https://stacks.math.columbia.edu/
 abbrev IsDecentSpace : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsReasonableSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean#L117). The attribute's comment: “reasonable”.
+**`AlgebraicGeometry.Space.IsReasonableSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean#L119). The attribute's comment: “reasonable”.
 
 > **Stacks 03I8, reasonable.** An algebraic space over `S` is *reasonable* when it
 > satisfies the equivalent conditions of Stacks 03JT, taken here in the form of condition (2):
@@ -34,7 +34,7 @@ abbrev IsDecentSpace : Prop
 abbrev IsReasonableSpace : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsVeryReasonableSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean#L131). The attribute's comment: “very\_reasonable”.
+**`AlgebraicGeometry.Space.IsVeryReasonableSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean#L133). The attribute's comment: “very\_reasonable”.
 
 > **Stacks 03I8, very reasonable.** An algebraic space over `S` is *very reasonable* when
 > it satisfies the equivalent conditions of Stacks 03IH, taken here in the form of condition
@@ -49,7 +49,7 @@ abbrev IsVeryReasonableSpace : Prop
 
 [Tag 03ID](https://stacks.math.columbia.edu/tag/03ID) in the Stacks Project.
 
-**`AlgebraicGeometry.AffineLineTranslation.not_isDecentSpace_translationQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslationNotDecent.lean, line 759](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslationNotDecent.lean#L759).
+**`AlgebraicGeometry.AffineLineTranslation.not_isDecentSpace_translationQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslationNotDecent.lean, line 759](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslationNotDecent.lean#L759).
 
 > **Stacks 03ID.** The quotient of the affine line over a field of characteristic zero by
 > the integer translations is not a decent algebraic space: the point of the quotient
@@ -69,30 +69,7 @@ theorem not_isDecentSpace_translationQuotient (k : Type u) [Field k] [CharZero k
 
 [Tag 03K0](https://stacks.math.columbia.edu/tag/03K0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_directedApproximation_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableFilteredApproximation/DirectedApproximation.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableFilteredApproximation/DirectedApproximation.lean#L283). The attribute's comment: “correction: clause (1) as literally stated holds only for quasi-separated X,and is proved here under that hypothesis”.
-
-> **Stacks 03K0 for a quasi-separated space.** A quasi-compact, quasi-separated algebraic
-> space over `S` carries a directed approximation in the sense of the source, with clause (1)
-> in its original form over all quasi-compact test schemes: the constant system indexed by the
-> one-object category works, all of whose transition morphisms and coprojections are
-> identities.
->
-> By `AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_directedApproximation` the
-> quasi-separatedness hypothesis is also *necessary* when `X` is a scheme, so the statement of
-> Stacks 03K0 is not available for a general quasi-compact reasonable `X`; the hypothesis is
-> the correction, and an approximation of a non-quasi-separated `X` exists only after clause
-> (1) is restricted to quasi-compact quasi-separated test schemes.
-
-```lean
-theorem exists_directedApproximation_of_isAbsolutelyQuasiSeparated
-    (X : Sheaf (BigFppfOver.topology B S hS) (Type u))
-    (hX : IsAlgebraicSpace B S hS X.obj)
-    (hqc : IsQuasiCompactSpace B S hS X.obj)
-    (hqs : IsAbsolutelyQuasiSeparated B S hS hZ X.obj) :
-    Nonempty (DirectedApproximation B S hS hZ X)
-```
-
-**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_directedApproximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableFilteredApproximation/DirectedApproximation.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableFilteredApproximation/DirectedApproximation.lean#L334). The attribute's comment: “refutation of clause (1) as stated: it forces X quasi-separated, so thecorrect clause (1) restricts to quasi-compact quasi-separated test schemes”.
+**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_directedApproximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableFilteredApproximation/DirectedApproximation.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableFilteredApproximation/DirectedApproximation.lean#L338). The attribute's comment: “refutation of clause (1) as stated: it forces X quasi-separated, so thecorrect clause (1) restricts to quasi-compact quasi-separated test schemes”.
 
 > **Clause (1) of Stacks 03K0, as stated, forces `X` to be quasi-separated.** Let `X` be a
 > quasi-compact algebraic space which is a scheme, and suppose it carries a directed
@@ -116,7 +93,7 @@ theorem isAbsolutelyQuasiSeparated_of_directedApproximation
     IsAbsolutelyQuasiSeparated B S hS hZ X.obj
 ```
 
-**`AlgebraicGeometry.Space.exists_correctedDirectedApproximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableFilteredApproximation/Existence.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableFilteredApproximation/Existence.lean#L465). The attribute's comment: “clause (1) in the corrected form: the test schemes are the quasi-compactquasi-separated ones, which is what the source's proof supports”.
+**`AlgebraicGeometry.Space.exists_correctedDirectedApproximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableFilteredApproximation/Existence.lean, line 468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableFilteredApproximation/Existence.lean#L468). The attribute's comment: “the whole lemma, for every quasi-compact reasonable X: colimit in sheaves of adirected system of qcqs spaces, clauses (2) and (3), and clause (1) with injectivity over allquasi-compact T and surjectivity over quasi-compact quasi-separated T; surjectivity over allquasi-compact T is false (see errata) and is refuted unconditionally”.
 
 > **Stacks 03K0.** A quasi-compact reasonable algebraic space over `S` is the colimit, in
 > sheaves, of a directed system of quasi-compact and quasi-separated algebraic spaces, and the
@@ -152,7 +129,7 @@ theorem exists_correctedDirectedApproximation
     Nonempty (CorrectedDirectedApproximation B S hS hZ ⟨X, hX.isSheaf⟩)
 ```
 
-**`AlgebraicGeometry.Space.exists_quasiCompact_reasonable_isEmpty_directedApproximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableFilteredApproximationCounterexample.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableFilteredApproximationCounterexample.lean#L161). The attribute's comment: “refutation of clause (1) as stated, assuming nothing: the doubled-origin scheme of Example 01KL is a quasi-compact reasonable algebraic space with no such system”.
+**`AlgebraicGeometry.Space.exists_quasiCompact_reasonable_isEmpty_directedApproximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableFilteredApproximationCounterexample.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableFilteredApproximationCounterexample.lean#L161). The attribute's comment: “refutation of clause (1) as stated, assuming nothing: the doubled-origin scheme of Example 01KL is a quasi-compact reasonable algebraic space with no such system”.
 
 > **Stacks 03K0 is false as stated.** There are a big fppf site, a scheme over its terminal
 > object, and no hypotheses at all, for which the lemma's hypotheses hold and its conclusion
@@ -187,7 +164,7 @@ theorem exists_quasiCompact_reasonable_isEmpty_directedApproximation (k : Type u
 
 [Tag 0ABT](https://stacks.math.columbia.edu/tag/0ABT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isDecentSpace_relocalizeRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldBaseChange.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldBaseChange.lean#L217). The attribute's comment: “decency under change of affine base”.
+**`AlgebraicGeometry.Space.isDecentSpace_relocalizeRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldBaseChange.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldBaseChange.lean#L218). The attribute's comment: “decency under change of affine base”.
 
 > Decency of an algebraic space over an affine scheme `S` is preserved by restriction along a
 > morphism `g : S' ⟶ S` of affine schemes of the site: every point of the restricted space is
@@ -204,7 +181,7 @@ theorem isDecentSpace_relocalizeRestrict (B : BigFppfSite.{u}) (S S' : Scheme.{u
     IsDecentSpace B S' hS' ((CategoryTheory.OverShriek.relocalizeRestrict g).obj X)
 ```
 
-**`AlgebraicGeometry.Space.hasMonomorphicFieldRepresentative_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean#L101). The attribute's comment: “decent, as condition (4) of Stacks 03JU at every point”.
+**`AlgebraicGeometry.Space.hasMonomorphicFieldRepresentative_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean#L101). The attribute's comment: “decent, as condition (4) of Stacks 03JU at every point”.
 
 > **Stacks 0ABT, the decent case in the form of condition (4) of Stacks 03JU.** Let
 > `f : X ⟶ Y` be a representable morphism of presheaves on the big fppf site over `S`. If every
@@ -219,7 +196,7 @@ theorem hasMonomorphicFieldRepresentative_of_relativelyRepresentable (f : X ⟶ 
     HasMonomorphicFieldRepresentative B S hS X x
 ```
 
-**`AlgebraicGeometry.Space.hasFiniteRelationFibersAtEveryPoint_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean#L149). The attribute's comment: “decent, as property (β) of Stacks 03JX”.
+**`AlgebraicGeometry.Space.hasFiniteRelationFibersAtEveryPoint_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean#L149). The attribute's comment: “decent, as property (β) of Stacks 03JX”.
 
 > **Stacks 0ABT, the decent case as property `(β)` of Stacks 03JX.** The source of a
 > representable morphism into a presheaf all of whose points have a monomorphic field-valued
@@ -240,14 +217,14 @@ theorem hasFiniteRelationFibersAtEveryPoint_of_relativelyRepresentable
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isDecentSpace_of_relativelyRepresentable`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyGammaPermanence.lean#L76), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyGammaPermanence.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyGammaPermanence.lean#L128) (StacksFrontier): “decent”.
-- [`AlgebraicGeometry.Space.isReasonableSpace_of_relativelyRepresentable`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonablePermanence.lean#L72), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonablePermanence.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonablePermanence.lean#L90) (StacksFrontier): “reasonable”.
+- [`AlgebraicGeometry.Space.isDecentSpace_of_relativelyRepresentable`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyGammaPermanence.lean#L76), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyGammaPermanence.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyGammaPermanence.lean#L128) (StacksFrontier): “decent”.
+- [`AlgebraicGeometry.Space.isReasonableSpace_of_relativelyRepresentable`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonablePermanence.lean#L72), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonablePermanence.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonablePermanence.lean#L90) (StacksFrontier): “reasonable”.
 
 ## Tag 0ABU, a lemma
 
 [Tag 0ABU](https://stacks.math.columbia.edu/tag/0ABU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isDecentSpace_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/EtaleSourceDecency.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/EtaleSourceDecency.lean#L62). The attribute's comment: “decent”.
+**`AlgebraicGeometry.Space.isDecentSpace_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/EtaleSourceDecency.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/EtaleSourceDecency.lean#L62). The attribute's comment: “decent”.
 
 > **Stacks 0ABU, the decent case.** An algebraic space over `S` étale over a decent
 > algebraic space over `S` is decent.
@@ -259,7 +236,7 @@ theorem isDecentSpace_of_isEtale (f : X ⟶ Y) (hX : IsAlgebraicSpace B S hS X)
     IsDecentSpace B S hS X
 ```
 
-**`AlgebraicGeometry.Space.isReasonableSpace_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/EtaleSourceReasonableness.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/EtaleSourceReasonableness.lean#L108). The attribute's comment: “reasonable”.
+**`AlgebraicGeometry.Space.isReasonableSpace_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/EtaleSourceReasonableness.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/EtaleSourceReasonableness.lean#L108). The attribute's comment: “reasonable”.
 
 > **Stacks 0ABU, the reasonable case.** An algebraic space over `S` étale over a reasonable
 > algebraic space over `S` is reasonable.
@@ -278,4 +255,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.6, Tag 03I7](https://stacks.math.columbia.edu/tag/03I7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

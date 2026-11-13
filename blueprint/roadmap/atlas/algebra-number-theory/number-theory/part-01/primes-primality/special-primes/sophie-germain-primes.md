@@ -7,7 +7,7 @@ statement: formalized
 
 # Sophie Germain primes
 
-7 results, 4 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html).
+7 results, 4 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html).
 
 ## Sophie Germain primes
 
@@ -18,27 +18,27 @@ $2p + 1$ is prime. The case $p = 2$ is not excluded.
 
 - arXiv:2311.13375, lines 83–85.
 
-Formalized by `Nat.IsSophieGermainPrime`, a definition declared in [MathlibExt/NumberTheory/SophieGermainPrime.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/SophieGermainPrime.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html#is-sophie-germain-prime).
+Formalized by `Nat.IsSophieGermainPrime`, a definition declared in [MathlibExt/NumberTheory/SophieGermainPrime.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/SophieGermainPrime.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html#is-sophie-germain-prime).
 
 ## Characterization of Sophie Germain primes
 
 A natural number $p$ is a Sophie Germain prime
 if and only if $p$ is prime and $2p + 1$ is prime.
 
-Formalized by `Nat.isSophieGermainPrime_iff`, a theorem declared in [MathlibExt/NumberTheory/SophieGermainPrime.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/SophieGermainPrime.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html#is-sophie-germain-prime-iff).
+Formalized by `Nat.isSophieGermainPrime_iff`, a theorem declared in [MathlibExt/NumberTheory/SophieGermainPrime.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/SophieGermainPrime.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html#is-sophie-germain-prime-iff).
 
 ## Sophie Germain primes are prime
 
 If $p$ is a Sophie Germain prime, then $p$ is prime.
 
-Formalized by `Nat.IsSophieGermainPrime.prime`, a theorem declared in [MathlibExt/NumberTheory/SophieGermainPrime.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/SophieGermainPrime.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html#prime).
+Formalized by `Nat.IsSophieGermainPrime.prime`, a theorem declared in [MathlibExt/NumberTheory/SophieGermainPrime.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/SophieGermainPrime.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html#prime).
 
 ## Safe prime of a Sophie Germain prime
 
 If $p$ is a Sophie Germain prime, then $2p + 1$ is
 prime.
 
-Formalized by `Nat.IsSophieGermainPrime.prime_two_mul_add_one`, a theorem declared in [MathlibExt/NumberTheory/SophieGermainPrime.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/SophieGermainPrime.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html#prime-two-mul-add-one).
+Formalized by `Nat.IsSophieGermainPrime.prime_two_mul_add_one`, a theorem declared in [MathlibExt/NumberTheory/SophieGermainPrime.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/SophieGermainPrime.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html#prime-two-mul-add-one).
 
 ## Infinitely many primes are not Sophie Germain primes
 
@@ -49,7 +49,7 @@ Sophie Germain primes, that is, the primes $q$ for which $2q + 1$ is not prime, 
 
 - Takashi Agoh, *A Note on Sophie Germain Primes*, INTEGERS 25 (2025), Article A83, Theorem 3.1.
 
-Stated but not proved: `MetaMathlibExt.infinite_setOf_prime_not_isSophieGermainPrime` is written with `theorem_wanted` in [WantedExt/NumberTheory/NonSophieGermainPrimesWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NonSophieGermainPrimesWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html#infinite-set-of-prime-not-is-sophie-germ).
+Stated but not proved: `MetaMathlibExt.infinite_setOf_prime_not_isSophieGermainPrime` is written with `theorem_wanted` in [WantedExt/NumberTheory/NonSophieGermainPrimesWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NonSophieGermainPrimesWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html#infinite-set-of-prime-not-is-sophie-germ).
 
 ## Primes that are not Sophie Germain primes
 
@@ -62,7 +62,7 @@ equivalently, the Sophie Germain primes are exactly the primes outside $A$.
 
 - Takashi Agoh, *A Note on Sophie Germain Primes*, INTEGERS 25 (2025), Article A83, Theorem 2.1.
 
-Stated but not proved: `MetaMathlibExt.setOf_prime_not_isSophieGermainPrime_eq_inter` is written with `theorem_wanted` in [WantedExt/NumberTheory/NonSophieGermainPrimesWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NonSophieGermainPrimesWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html#set-of-prime-not-is-sophie-germain-prime).
+Stated but not proved: `MetaMathlibExt.setOf_prime_not_isSophieGermainPrime_eq_inter` is written with `theorem_wanted` in [WantedExt/NumberTheory/NonSophieGermainPrimesWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NonSophieGermainPrimesWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html#set-of-prime-not-is-sophie-germain-prime).
 
 ## Wilson-type characterization of Sophie Germain primes
 
@@ -79,7 +79,7 @@ $a$ needs $a \ge 2$).
 
 - Takashi Agoh, *A Note on Sophie Germain Primes*, INTEGERS 25 (2025), Article A83, Theorem 5.3.
 
-Stated but not proved: `MetaMathlibExt.isSophieGermainPrime_ne_two_iff_factorial_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/NonSophieGermainPrimesWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/NonSophieGermainPrimesWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html#is-sophie-germain-prime-ne-two-iff-facto).
+Stated but not proved: `MetaMathlibExt.isSophieGermainPrime_ne_two_iff_factorial_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/NonSophieGermainPrimesWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/NonSophieGermainPrimesWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html#is-sophie-germain-prime-ne-two-iff-facto).
 
 ## Depends on
 
@@ -88,4 +88,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sophie Germain primes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/primes-primality/special-primes/sophie-germain-primes)

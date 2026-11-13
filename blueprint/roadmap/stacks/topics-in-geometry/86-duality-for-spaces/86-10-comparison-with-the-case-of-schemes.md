@@ -8,13 +8,13 @@ proof: formalized
 
 # 86.10 Comparison with the case of schemes
 
-Section 86.10 of the Stacks Project, [Tag 0E6D](https://stacks.math.columbia.edu/tag/0E6D). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 86.10 of the Stacks Project, [Tag 0E6D](https://stacks.math.columbia.edu/tag/0E6D). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E6E, a lemma
 
 [Tag 0E6E](https://stacks.math.columbia.edu/tag/0E6E) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.representedRightAdjointIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RepresentedRightAdjointDuality.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RepresentedRightAdjointDuality.lean#L87).
+**`AlgebraicGeometry.Space.representedRightAdjointIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RepresentedRightAdjointDuality.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RepresentedRightAdjointDuality.lean#L87).
 
 > **Stacks 0E6E.** Let `f : X ⟶ Y` be the morphism of quasi-compact and quasi-separated
 > representable algebraic spaces over `S` represented by a morphism `g : T' ⟶ T` of the big fppf
@@ -55,4 +55,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 86.10, Tag 0E6D](https://stacks.math.columbia.edu/tag/0E6D)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

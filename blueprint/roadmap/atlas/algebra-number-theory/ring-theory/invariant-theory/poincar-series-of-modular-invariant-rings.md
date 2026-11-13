@@ -7,7 +7,7 @@ statement: formalized
 
 # Poincaré series of modular invariant rings
 
-8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html).
+8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html).
 
 ## Linear substitution by a matrix
 
@@ -18,7 +18,7 @@ $(\mathbb{Z}/p\mathbb{Z})[x_0, \dots, x_{n-1}]$ that sends each variable $x_i$ t
 $\sum_j g_{ij} x_j$. Viewing polynomials as functions on $V = (\mathbb{Z}/p\mathbb{Z})^n$, it sends
 $f$ to the function $x \mapsto f(gx)$.
 
-Formalized by `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.linSubst`, a definition declared in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#lin-subst).
+Formalized by `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.linSubst`, a definition declared in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#lin-subst).
 
 ## Homogeneous component of the invariant ring
 
@@ -30,7 +30,7 @@ of degree $m$ that are fixed by the linear substitution $x_i \mapsto \sum_j g_{i
 $g \in G$, that is, with $f(gx) = f(x)$ as polynomials for all $g \in G$, where
 $x = (x_0, \dots, x_{n-1})$ is the column vector of variables.
 
-Formalized by `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.invariantComponent`, a definition declared in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#invariant-component).
+Formalized by `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.invariantComponent`, a definition declared in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#invariant-component).
 
 ## Poincaré series of the invariant ring
 
@@ -40,7 +40,7 @@ is the formal power series $P(t) = \sum_{m \ge 0} b_m t^m$ over $\mathbb{Q}$, wh
 rank over $\mathbb{Z}/p\mathbb{Z}$ (the dimension, when $p$ is prime) of the degree-$m$
 homogeneous component $T_m$ of $T$.
 
-Formalized by `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.poincareSeries`, a definition declared in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#poincare-series).
+Formalized by `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.poincareSeries`, a definition declared in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#poincare-series).
 
 ## Pointwise stabilizer
 
@@ -49,7 +49,7 @@ $\mathrm{GL}_n(\mathbb{Z}/p\mathbb{Z})$ and a submodule $W$ of $V = (\mathbb{Z}/
 the pointwise stabilizer $G_W$ of $W$ in $G$ is the set of all $g \in G$ with $g w = w$ for every
 $w \in W$, where $g$ acts on column vectors by matrix multiplication.
 
-Formalized by `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.pointwiseStabilizer`, a definition declared in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#pointwise-stabilizer).
+Formalized by `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.pointwiseStabilizer`, a definition declared in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#pointwise-stabilizer).
 
 ## Hyperplane term
 
@@ -61,7 +61,7 @@ if $G_W$ is infinite), let $\alpha_W$ be the exponent of $p$ in the prime factor
 $N = p^{\alpha_W} s_W$ and $p \nmid s_W$ when $p$ is prime and $N \ne 0$. The hyperplane term of
 $W$ is the rational number $(p - 1) \alpha_W + s_W - 1$.
 
-Formalized by `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.hyperplaneTerm`, a definition declared in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#hyperplane-term).
+Formalized by `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.hyperplaneTerm`, a definition declared in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#hyperplane-term).
 
 ## Hyperplane sum
 
@@ -76,7 +76,7 @@ is prime and $N_W \ne 0$), and $s_W = N_W / p^{\alpha_W}$, so that $N_W = p^{\al
 The sum is defined to be $0$ if infinitely many of its terms are nonzero, which can happen only
 for $p = 0$.
 
-Formalized by `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.hyperplaneSum`, a definition declared in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#hyperplane-sum).
+Formalized by `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.hyperplaneSum`, a definition declared in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#hyperplane-sum).
 
 ## Carlisle–Kropholler conjecture on the second Laurent coefficient (Kourovka 12.36)
 
@@ -92,7 +92,7 @@ Here $(1 - t)^n P(t) = A(t) / B(t) = a_{-n} + a_{-n+1} (1 - t) + \cdots$, where
 $P(t) = \sum_{i \ge -n} a_i (1 - t)^i$ is the Laurent expansion of $P$ at $t = 1$, so the left
 side is $a_{-n+1} = -(A / B)'(1)$, and the conjecture says $a_{-n+1} = r / (2 |G|)$.
 
-Formalized by `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.poincareSeriesSecondCoefficient`, a definition declared in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#poincare-series-second-coefficient).
+Formalized by `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.poincareSeriesSecondCoefficient`, a definition declared in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#poincare-series-second-coefficient).
 
 ## Benson–Crawley-Boevey hyperplane formula (Kourovka 12.36)
 
@@ -116,7 +116,7 @@ Archive of Solved Problems, Problem 12.36 (D. Carlisle, P. H. Kropholler); resol
 and W. W. Crawley-Boevey, Bull. London Math. Soc. 27 (1995), no. 5, 435-440; A. Neeman, Comment.
 Math. Helv. 70 (1995), no. 3, 339-349, Kourovka Archive, Problem 12.36: the conjecture is proved.
 
-Stated but not proved: `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.poincareSeriesSecondCoefficient_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#poincare-series-second-coefficient-holds).
+Stated but not proved: `MathlibExt.GroupTheory.InvariantRingPoincareSeriesKourovka12Problem36Wanted.poincareSeriesSecondCoefficient_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/InvariantRingPoincareSeriesKourovka12Problem36Wanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html#poincare-series-second-coefficient-holds).
 
 ## Depends on
 
@@ -125,4 +125,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Poincaré series of modular invariant rings](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/invariant-theory/poincar-series-of-modular-invariant-rings)

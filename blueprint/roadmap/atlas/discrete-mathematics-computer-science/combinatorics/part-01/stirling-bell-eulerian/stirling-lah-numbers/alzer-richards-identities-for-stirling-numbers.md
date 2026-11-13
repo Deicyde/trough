@@ -7,7 +7,7 @@ statement: formalized
 
 # Alzer–Richards identities for Stirling numbers
 
-18 results, 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html).
+18 results, 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html).
 
 ## Alzer–Richards derivative identity for powers of $1 - f$
 
@@ -26,7 +26,7 @@ $$
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Theorem 1, Equation (2).
 
-Stated but not proved: `MetaMathlibExt.sum_iteratedDeriv_pow_one_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-iterated-deriv-pow-one-sub).
+Stated but not proved: `MetaMathlibExt.sum_iteratedDeriv_pow_one_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-iterated-deriv-pow-one-sub).
 
 ## Alzer–Richards derivative identity for powers of $1 + f$
 
@@ -45,7 +45,7 @@ $$
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Theorem 1, Equation (3).
 
-Stated but not proved: `MetaMathlibExt.sum_iteratedDeriv_zpow_one_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-iterated-deriv-zpow-one-add).
+Stated but not proved: `MetaMathlibExt.sum_iteratedDeriv_zpow_one_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-iterated-deriv-zpow-one-add).
 
 ## Alternating Stirling sums with $\binom{n+1}{k+1}$ give Bernoulli numbers
 
@@ -70,7 +70,7 @@ The case $r = n$ is Muthumalai's formula.
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Theorem 2, Equation (4).
 
-Stated but not proved: `MetaMathlibExt.sum_choose_div_choose_mul_stirlingSecond_eq_bernoulli` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-div-choose-mul-stirling-secon).
+Stated but not proved: `MetaMathlibExt.sum_choose_div_choose_mul_stirlingSecond_eq_bernoulli` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-div-choose-mul-stirling-secon).
 
 ## Vanishing alternating Stirling sums with $\binom{r+m}{k}$
 
@@ -86,7 +86,7 @@ $$
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Theorem 3, Equation (5).
 
-Stated but not proved: `MetaMathlibExt.sum_choose_div_choose_mul_stirlingSecond_eq_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-div-choose-mul-stirling-secon-2).
+Stated but not proved: `MetaMathlibExt.sum_choose_div_choose_mul_stirlingSecond_eq_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-div-choose-mul-stirling-secon-2).
 
 ## Alternating Stirling sums with $\binom{n+1}{k+2}$
 
@@ -110,7 +110,7 @@ $$
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Theorem 4, Equation (6).
 
-Stated but not proved: `MetaMathlibExt.sum_choose_add_two_div_choose_mul_stirlingSecond` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-add-two-div-choose-mul-stirli).
+Stated but not proved: `MetaMathlibExt.sum_choose_add_two_div_choose_mul_stirlingSecond` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-add-two-div-choose-mul-stirli).
 
 ## Alternating sums of signed Stirling numbers of the first kind
 
@@ -133,7 +133,7 @@ $$
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Theorem 5, Equation (7).
 
-Stated but not proved: `MetaMathlibExt.sum_choose_div_choose_mul_signedStirlingFirst` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-div-choose-mul-signed-stirlin).
+Stated but not proved: `MetaMathlibExt.sum_choose_div_choose_mul_signedStirlingFirst` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-div-choose-mul-signed-stirlin).
 
 ## Alzer–Richards identity for Euler numbers
 
@@ -153,7 +153,7 @@ With these conventions $1/\cosh x = \sum_{k \ge 0} E_k x^k / k!$.
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.sum_eulerNumber_mul_sum_centralPowerSum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-euler-number-mul-sum-central-power-s).
+Stated but not proved: `MetaMathlibExt.sum_eulerNumber_mul_sum_centralPowerSum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-euler-number-mul-sum-central-power-s).
 
 ## Alzer–Richards identity for Fubini numbers
 
@@ -171,7 +171,7 @@ $$
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Theorem 7, Equation (8).
 
-Stated but not proved: `MetaMathlibExt.sum_fubiniNumber_mul_sum_alternatingStirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-fubini-number-mul-sum-alternating-st).
+Stated but not proved: `MetaMathlibExt.sum_fubiniNumber_mul_sum_alternatingStirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-fubini-number-mul-sum-alternating-st).
 
 ## Sabar's identity for complex arguments
 
@@ -190,7 +190,7 @@ Sabar proved this formula for natural numbers $z = n \ge p$; here it is extended
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Theorem 8, Equation (9).
 
-Stated but not proved: `MetaMathlibExt.pow_sub_descPochhammer_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#pow-sub-desc-pochhammer-eq-sum-choose).
+Stated but not proved: `MetaMathlibExt.pow_sub_descPochhammer_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#pow-sub-desc-pochhammer-eq-sum-choose).
 
 ## A reciprocal-sum identity for generalized binomial coefficients
 
@@ -208,7 +208,7 @@ $$
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Corollary 1, Equation (10).
 
-Stated but not proved: `MetaMathlibExt.mul_pow_pred_sub_pow_mul_sum_inv_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#mul-pow-pred-sub-pow-mul-sum-inv-eq-sum).
+Stated but not proved: `MetaMathlibExt.mul_pow_pred_sub_pow_mul_sum_inv_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#mul-pow-pred-sub-pow-mul-sum-inv-eq-sum).
 
 ## The Alzer–Richards binomial sum as a ${}_3F_2$ series
 
@@ -231,7 +231,7 @@ which its terms vanish.
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Theorem 9 (i), Equation (15).
 
-Stated but not proved: `MetaMathlibExt.sum_choose_mul_choose_div_choose_eq_hypergeometric3F2` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-mul-choose-div-choose-eq-hype).
+Stated but not proved: `MetaMathlibExt.sum_choose_mul_choose_div_choose_eq_hypergeometric3F2` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-mul-choose-div-choose-eq-hype).
 
 ## A binomial sum as a terminating ${}_2F_1$ series
 
@@ -258,7 +258,7 @@ $n = \lfloor m/2 \rfloor - \nu$.
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Theorem 9 (ii), Equation (16).
 
-Stated but not proved: `MetaMathlibExt.sum_choose_mul_choose_div_choose_eq_hypergeometric2F1` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-mul-choose-div-choose-eq-hype-2).
+Stated but not proved: `MetaMathlibExt.sum_choose_mul_choose_div_choose_eq_hypergeometric2F1` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-mul-choose-div-choose-eq-hype-2).
 
 ## Closed form of the Alzer–Richards binomial sum for even $m$
 
@@ -277,7 +277,7 @@ $S(x) = \frac{(-1)^{m/2}}{2^m \binom{(m-1)/2}{m/2}}$.
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Corollary 2 (i), Equation (19).
 
-Stated but not proved: `MetaMathlibExt.sum_choose_mul_choose_div_choose_of_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-mul-choose-div-choose-of-even).
+Stated but not proved: `MetaMathlibExt.sum_choose_mul_choose_div_choose_of_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-mul-choose-div-choose-of-even).
 
 ## Closed form of the Alzer–Richards binomial sum for odd $m$
 
@@ -296,7 +296,7 @@ $S(x) = \frac{(-1)^{(m-1)/2} (m+1)}{2^m \binom{m/2}{(m-1)/2}}$.
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Corollary 2 (ii), Equation (20).
 
-Stated but not proved: `MetaMathlibExt.sum_choose_mul_choose_div_choose_of_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-mul-choose-div-choose-of-odd).
+Stated but not proved: `MetaMathlibExt.sum_choose_mul_choose_div_choose_of_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-mul-choose-div-choose-of-odd).
 
 ## Closed form of the shifted Alzer–Richards binomial sum
 
@@ -318,7 +318,7 @@ $x = (1-m)/2$, then $S(x) = \frac{(-1)^{(m-1)/2} (m+1)}{2^m \binom{m/2-1}{(m-1)/
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Corollary 2 (iii), Equation (21).
 
-Stated but not proved: `MetaMathlibExt.sum_choose_mul_choose_div_choose_shifted` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-mul-choose-div-choose-shifted).
+Stated but not proved: `MetaMathlibExt.sum_choose_mul_choose_div_choose_shifted` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#sum-choose-mul-choose-div-choose-shifted).
 
 ## Derivatives at zero of powers of $(1 - e^x)/x$
 
@@ -333,7 +333,7 @@ This is the expansion recorded in Gradshteyn and Ryzhik, p. 1047.
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.iteratedDeriv_pow_one_sub_exp_div_self_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#iterated-deriv-pow-one-sub-exp-div-self).
+Stated but not proved: `MetaMathlibExt.iteratedDeriv_pow_one_sub_exp_div_self_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#iterated-deriv-pow-one-sub-exp-div-self).
 
 ## Derivatives of $x/(1 - e^x)$ at zero
 
@@ -346,7 +346,7 @@ derivative of $1/f$ at $0$ equals $-B_k$.
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.iteratedDeriv_inv_one_sub_exp_div_self_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#iterated-deriv-inv-one-sub-exp-div-self).
+Stated but not proved: `MetaMathlibExt.iteratedDeriv_inv_one_sub_exp_div_self_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#iterated-deriv-inv-one-sub-exp-div-self).
 
 ## Derivatives at zero of $(1 + (1 - e^x)/x)^{n+1}$
 
@@ -359,7 +359,7 @@ is $0$, and the $(n+1)$-th derivative of $(1 + f)^{n+1}$ at $0$ equals $(-1/2)^{
 
 - Horst Alzer and Kendall C. Richards, *Extensions of Some Combinatorial Identities and Various Related Results*, INTEGERS 25 (2025), Article A61, Lemma 3, Equation (26).
 
-Stated but not proved: `MetaMathlibExt.iteratedDeriv_one_add_one_sub_exp_div_self_pow_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#iterated-deriv-one-add-one-sub-exp-div-s).
+Stated but not proved: `MetaMathlibExt.iteratedDeriv_one_add_one_sub_exp_div_self_pow_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AlzerRichardsIdentitiesWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html#iterated-deriv-one-add-one-sub-exp-div-s).
 
 ## Depends on
 
@@ -368,4 +368,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Alzer–Richards identities for Stirling numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/alzer-richards-identities-for-stirling-numbers)

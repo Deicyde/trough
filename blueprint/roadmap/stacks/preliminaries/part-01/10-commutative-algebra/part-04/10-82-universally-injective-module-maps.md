@@ -1,25 +1,40 @@
 ---
 declaration: section
 origin: cited
-lean: UniversallyInjective, split_universallyExact, colim_universallyExact, Function.Exact.universallyExact_tfae, Function.Exact.split_iff_forall_rTensor_injective, Module.Flat.iff_forall_rTensor_injective_of_exact, UniversallyExact.flat_of_middle_flat, universallyInjective_rTensor
+lean: UniversallyExact, UniversallyInjective, split_universallyExact, colim_universallyExact, Function.Exact.universallyExact_tfae, Function.Exact.split_iff_forall_rTensor_injective, Module.Flat.iff_forall_rTensor_injective_of_exact, UniversallyExact.flat_of_middle_flat
 statement: formalized
 proof: formalized
 ---
 
 # 10.82 Universally injective module maps
 
-Section 10.82 of the Stacks Project, [Tag 058H](https://stacks.math.columbia.edu/tag/058H). 14 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.82 of the Stacks Project, [Tag 058H](https://stacks.math.columbia.edu/tag/058H). 14 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 058I, a definition
 
 [Tag 058I](https://stacks.math.columbia.edu/tag/058I) in the Stacks Project.
 
-**`UniversallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L342). References: EGA IV (11.9.14), “special case”; EGA IV (11.9.18), “special case”; SGA 1 II (4.5).
+**`UniversallyExact`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyExact.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyExact.lean#L459). The attribute's comment: “universally exact”.
+
+> The short exact sequence `0 -> M_1 ->[u] M_2 ->[v] M_3 -> 0` is *universally exact* if it
+> is a short exact sequence (`u` injective, `v` surjective, exact at `M_2`) and the map `u`
+> is universally injective. This is the second of the two notions of Stacks 058I; the first,
+> universally injective maps, is `UniversallyInjective`.
+
+```lean
+structure UniversallyExact
+    {M₁ M₂ M₃ : Type u} [AddCommGroup M₁] [AddCommGroup M₂] [AddCommGroup M₃]
+    [Module R M₁] [Module R M₂] [Module R M₃]
+    (u : M₁ →ₗ[R] M₂) (v : M₂ →ₗ[R] M₃) : Prop
+```
+
+**`UniversallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L344). The attribute's comment: “universally injective”. References: EGA IV (11.9.14), “special case”; EGA IV (11.9.18), “special case”; SGA 1 II (4.5).
 
 > **Universally injective module map.**
 > A homomorphism of `R`-modules `f : M →ₗ[R] N` is *universally injective* if for every
 > `R`-module `Q`, the induced map `f ⊗ id_Q : M ⊗_R Q → N ⊗_R Q` (i.e. `f.rTensor Q`) is
-> injective.
+> injective. This is the first of the two notions of Stacks 058I; the second, universally exact
+> short exact sequences, is `UniversallyExact`.
 
 ```lean
 def UniversallyInjective {M N : Type v} [AddCommGroup M] [AddCommGroup N]
@@ -30,7 +45,7 @@ def UniversallyInjective {M N : Type v} [AddCommGroup M] [AddCommGroup N]
 
 [Tag 058J](https://stacks.math.columbia.edu/tag/058J) in the Stacks Project.
 
-**`split_universallyExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyExact.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyExact.lean#L289). The attribute's comment: “(1)”.
+**`split_universallyExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyExact.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyExact.lean#L289). The attribute's comment: “(1)”.
 
 > A split short exact sequence is universally exact; equivalently its first map `f₁`
 > is universally injective.
@@ -43,7 +58,7 @@ theorem split_universallyExact
     S.UniversallyExact
 ```
 
-**`colim_universallyExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyExact.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyExact.lean#L385). The attribute's comment: “(2)”.
+**`colim_universallyExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyExact.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyExact.lean#L385). The attribute's comment: “(2)”.
 
 > Filtered colimits preserve universally exact short exact sequences.
 
@@ -66,7 +81,7 @@ theorem colim_universallyExact
 
 [Tag 058K](https://stacks.math.columbia.edu/tag/058K) in the Stacks Project.
 
-**`Function.Exact.universallyExact_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/UniversallyExact.lean, line 1168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/UniversallyExact.lean#L1168). The attribute's comment: “Items (1)-(6), in the source's order, as a `List.TFAE`.”.
+**`Function.Exact.universallyExact_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/UniversallyExact.lean, line 1165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/UniversallyExact.lean#L1165). The attribute's comment: “Items (1)-(6), in the source's order, as a `List.TFAE`.”.
 
 > **Stacks 058K.** Let `0 → M₁ →[f₁] M₂ →[f₂] M₃ → 0` be a short exact sequence of `R`-modules.
 > The following are equivalent:
@@ -110,7 +125,7 @@ public theorem Function.Exact.universallyExact_tfae {R : Type u} [CommRing R] [S
 
 [Tag 058L](https://stacks.math.columbia.edu/tag/058L) in the Stacks Project.
 
-**`Function.Exact.split_iff_forall_rTensor_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/UniversallyExact.lean, line 1354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/UniversallyExact.lean#L1354). The attribute's comment: “Exactness is hypothesised; splitness is the existence of a section of `f₂`.”.
+**`Function.Exact.split_iff_forall_rTensor_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/UniversallyExact.lean, line 1351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/UniversallyExact.lean#L1351). The attribute's comment: “Exactness is hypothesised; splitness is the existence of a section of `f₂`.”.
 
 > **Stacks 058L.** Let `0 → M₁ →[f₁] M₂ →[f₂] M₃ → 0` be a short exact sequence of `R`-modules
 > with `M₃` of finite presentation. Then `f₂` admits an `R`-linear section — equivalently, the
@@ -132,7 +147,7 @@ public theorem Function.Exact.split_iff_forall_rTensor_injective {R : Type u} [C
 
 [Tag 058M](https://stacks.math.columbia.edu/tag/058M) in the Stacks Project.
 
-**`Module.Flat.iff_forall_rTensor_injective_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L132). The attribute's comment: “Exactness is hypothesised; universal injectivity of `f₁` is spelled out.”.
+**`Module.Flat.iff_forall_rTensor_injective_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L132). The attribute's comment: “Exactness is hypothesised; universal injectivity of `f₁` is spelled out.”.
 
 > An `R`-module `M` is flat if and only if every short exact sequence
 > `0 → M₁ →[f₁] M₂ →[f₂] M → 0` of `R`-modules is universally exact, that is, if and only if
@@ -153,7 +168,7 @@ public theorem Module.Flat.iff_forall_rTensor_injective_of_exact {R : Type u} [C
 
 [Tag 058P](https://stacks.math.columbia.edu/tag/058P) in the Stacks Project.
 
-**`UniversallyExact.flat_of_middle_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyExact.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyExact.lean#L481). References: EGA 0 (6.7.4), “partial”.
+**`UniversallyExact.flat_of_middle_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyExact.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyExact.lean#L483). References: EGA 0 (6.7.4), “partial”.
 
 > **Theorem (Stacks Tag 058P, Lemma 10.82.7).**
 > Let `0 -> M_1 ->[u] M_2 ->[v] M_3 -> 0` be a universally exact sequence of `R`-modules
@@ -172,18 +187,18 @@ theorem UniversallyExact.flat_of_middle_flat
 
 [Tag 05CH](https://stacks.math.columbia.edu/tag/05CH) in the Stacks Project.
 
-**`universallyInjective_rTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L358).
+**`UniversallyInjective.rTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L362).
 
 > If `u : M →ₗ[R] M'` is universally injective, then for any `R`-module `N` the induced map
 > `u ⊗ id_N : M ⊗_R N → M' ⊗_R N` (i.e. `LinearMap.rTensor N u`) is again universally
-> injective.
+> injective. The ring lives in any universe `u` and the modules in any universe `v`.
 
 ```lean
-theorem universallyInjective_rTensor {R : Type} [CommRing R]
-    {M : Type} [AddCommGroup M] [Module R M]
-    {M' : Type} [AddCommGroup M'] [Module R M']
-    (u : M →ₗ[R] M') (hu : UniversallyInjective u)
-    (N : Type) [AddCommGroup N] [Module R N] :
+theorem UniversallyInjective.rTensor {R : Type u} [CommRing R]
+    {M : Type v} [AddCommGroup M] [Module R M]
+    {M' : Type v} [AddCommGroup M'] [Module R M']
+    {u : M →ₗ[R] M'} (hu : UniversallyInjective u)
+    (N : Type v) [AddCommGroup N] [Module R N] :
     UniversallyInjective (LinearMap.rTensor N u)
 ```
 
@@ -191,7 +206,7 @@ theorem universallyInjective_rTensor {R : Type} [CommRing R]
 
 [Tag 05CI](https://stacks.math.columbia.edu/tag/05CI) in the Stacks Project.
 
-**`comp_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L392).
+**`comp_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L406).
 
 > A composition of universally injective `R`-module maps is universally injective.
 
@@ -208,7 +223,7 @@ theorem comp_universallyInjective {R : Type u} [CommRing R] {M N P : Type*}
 
 [Tag 05CJ](https://stacks.math.columbia.edu/tag/05CJ) in the Stacks Project.
 
-**`Function.Injective.of_rTensor_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/InjectiveComposition.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/TensorProduct/InjectiveComposition.lean#L77). The attribute's comment: “Stated for one test module `Q`; the source's form is its closure over `Q`.”.
+**`Function.Injective.of_rTensor_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/InjectiveComposition.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/InjectiveComposition.lean#L77). The attribute's comment: “Stated for one test module `Q`; the source's form is its closure over `Q`.”.
 
 > Let `f : M →ₗ[R] M'` and `g : M' →ₗ[R] M''` be `R`-module maps and let `Q` be an `R`-module.
 > If `(g ∘ₗ f) ⊗ id_Q` is injective, then so is `f ⊗ id_Q`. Quantifying over `Q`: if the
@@ -225,7 +240,7 @@ public theorem Function.Injective.of_rTensor_comp {R : Type*} [CommSemiring R] {
 
 [Tag 05CL](https://stacks.math.columbia.edu/tag/05CL) in the Stacks Project.
 
-**`Stacks.UniversalInjectivity.LocalizationCriteria.universally_injective_check_stalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 867](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L867).
+**`Stacks.UniversalInjectivity.LocalizationCriteria.universally_injective_check_stalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 881](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L881).
 
 > For a ring map `R → S` and a map `f : M → M'` of `S`-modules, universal injectivity of `f` as
 > a map of `R`-modules can be checked on localizations: the following are equivalent: `f` is
@@ -258,7 +273,7 @@ theorem universally_injective_check_stalks
 
 [Tag 05CM](https://stacks.math.columbia.edu/tag/05CM) in the Stacks Project.
 
-**`IsLocalizedModule.rTensor_injective_of_rTensor_injective_and_iff_extendScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Localization/UniversalInjectivity.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Localization/UniversalInjectivity.lean#L372). The attribute's comment: “Items (1) and (2) together, for one test module `Q`; the source's form is the closure over `Q`.”.
+**`IsLocalizedModule.rTensor_injective_of_rTensor_injective_and_iff_extendScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Localization/UniversalInjectivity.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Localization/UniversalInjectivity.lean#L372). The attribute's comment: “Items (1) and (2) together, for one test module `Q`; the source's form is the closure over `Q`.”.
 
 > **Stacks 05CM.** Let `A → B` be a ring map, let `S ⊆ A` and `S' ⊆ B` be multiplicative
 > subsets, let `f : M → M'` be a map of `B`-modules and let `fₛ : N → N'` be its localization at
@@ -294,7 +309,7 @@ public theorem IsLocalizedModule.rTensor_injective_of_rTensor_injective_and_iff_
           (fₛ.restrictScalars A)).rTensor Qₛ))
 ```
 
-**`IsLocalizedModule.rTensor_injective_of_rTensor_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Localization/UniversalInjectivity.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Localization/UniversalInjectivity.lean#L403). The attribute's comment: “Item (1), for one test module `Q`; the source's form is the closure over `Q`.”.
+**`IsLocalizedModule.rTensor_injective_of_rTensor_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Localization/UniversalInjectivity.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Localization/UniversalInjectivity.lean#L403). The attribute's comment: “Item (1), for one test module `Q`; the source's form is the closure over `Q`.”.
 
 > **Stacks 05CM, item (1).** Let `A → B` be a ring map, let `S' ⊆ B` be a multiplicative subset,
 > let `f : M → M'` be a map of `B`-modules and let `fₛ : N → N'` be its localization at `S'`, pinned
@@ -321,7 +336,7 @@ public theorem IsLocalizedModule.rTensor_injective_of_rTensor_injective
     Function.Injective ((fₛ.restrictScalars A).rTensor Q)
 ```
 
-**`LinearMap.rTensor_injective_iff_extendScalarsOfIsLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Localization/UniversalInjectivity.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Localization/UniversalInjectivity.lean#L428). The attribute's comment: “Item (2), for one test module `Q` and one localization `S⁻¹Q` of it; stated for an `A`-linear map between `S⁻¹A`-modules, of which the source's `B`-linear map between `(S')⁻¹B`-modules is a case.”.
+**`LinearMap.rTensor_injective_iff_extendScalarsOfIsLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Localization/UniversalInjectivity.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Localization/UniversalInjectivity.lean#L428). The attribute's comment: “Item (2), for one test module `Q` and one localization `S⁻¹Q` of it; stated for an `A`-linear map between `S⁻¹A`-modules, of which the source's `B`-linear map between `(S')⁻¹B`-modules is a case.”.
 
 > **Stacks 05CM, item (2).** Let `S ⊆ A` be a multiplicative subset, let `fₛ : N → N'` be a map
 > of `A`-modules between two `S⁻¹A`-modules and let `Q` be an `A`-module with localization `S⁻¹Q` at
@@ -348,7 +363,7 @@ public theorem LinearMap.rTensor_injective_iff_extendScalarsOfIsLocalization
 
 [Tag 0AS5](https://stacks.math.columbia.edu/tag/0AS5) in the Stacks Project.
 
-**`Module.Flat.rTensor_injective_iff_injective_mapQ_smul_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L318). The attribute's comment: “`M/IM` is `M ⧸ I • ⊤` and the induced map is `Submodule.mapQ` along `f`; the left-hand side spells out universal injectivity, which `Mathlib` has no name for.”.
+**`Module.Flat.rTensor_injective_iff_injective_mapQ_smul_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L318). The attribute's comment: “`M/IM` is `M ⧸ I • ⊤` and the induced map is `Submodule.mapQ` along `f`; the left-hand side spells out universal injectivity, which `Mathlib` has no name for.”.
 
 > Let `f : M →ₗ[R] M'` be a map of `R`-modules with `M'` flat. Then `f` is universally
 > injective, that is `f ⊗ id_Q` is injective for every `R`-module `Q`, if and only if the induced
@@ -368,7 +383,7 @@ public theorem Module.Flat.rTensor_injective_iff_injective_mapQ_smul_top {R : Ty
 
 [Tag 0H9I](https://stacks.math.columbia.edu/tag/0H9I) in the Stacks Project.
 
-**`reflects_injections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 973](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L973). The attribute's comment: “(1)”.
+**`reflects_injections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 987](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L987). The attribute's comment: “(1)”.
 
 > **Base change along a universally injective ring map reflects injections.**
 > If `R → S` is universally injective as a map of `R`-modules and
@@ -385,7 +400,7 @@ theorem reflects_injections
     Function.Injective f
 ```
 
-**`reflects_surjections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 988](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L988). The attribute's comment: “(2)”. References: EGA IV (2.2.7), “partial”; EGA IV (2.5.4.1), “more general”.
+**`reflects_surjections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 1002](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L1002). The attribute's comment: “(2)”. References: EGA IV (2.2.7), “partial”; EGA IV (2.5.4.1), “more general”.
 
 > **Base change along a universally injective ring map reflects surjections.**
 > If `R → S` is universally injective as a map of `R`-modules and
@@ -402,7 +417,7 @@ theorem reflects_surjections
     Function.Surjective f
 ```
 
-**`reflects_isomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 1019](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L1019). The attribute's comment: “(3)”.
+**`reflects_isomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 1033](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L1033). The attribute's comment: “(3)”.
 
 > **Base change along a universally injective ring map reflects isomorphisms.**
 > If `R → S` is universally injective as a map of `R`-modules and
@@ -423,7 +438,7 @@ theorem reflects_isomorphisms
 
 [Tag 05CK](https://stacks.math.columbia.edu/tag/05CK) in the Stacks Project.
 
-**`faithfullyFlat_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L485). References: EGA 0 (6.5.1), “B faithfully flat”; EGA IV (2.2.8), “affine case”; EGA 0 (6.6.1), “(a)”; SGA 3 VIB (11.14), “necessity”.
+**`faithfullyFlat_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L499). References: EGA 0 (6.5.1), “B faithfully flat”; EGA IV (2.2.8), “affine case”; EGA 0 (6.6.1), “(a)”; SGA 3 VIB (11.14), “necessity”.
 
 > For a faithfully flat ring map `φ : R → S`, the structure map `R → S` viewed as an
 > `R`-linear map (`Algebra.linearMap R S`, where `S` is given its `R`-module structure
@@ -437,7 +452,7 @@ theorem faithfullyFlat_universallyInjective
     UniversallyInjectivePoly (Algebra.linearMap R S)
 ```
 
-**`faithfullyFlat_comap_map_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L525). The attribute's comment: “in particular”. References: EGA 0 (6.6.3), “first part, M = A”; EGA 0 (6.5.1), “B faithfully flat”; EGA 0 (22.4.8), “more general”; EGA 0 (6.5.2), “φ⁻¹(aB) = a”; EGA 0 (6.6.1), “(a) ⇒ φ⁻¹(aB) = a in (d)”; SGA 1 IV (2.6), “(i)”; SGA 3 V (9.1), “partial”.
+**`faithfullyFlat_comap_map_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjective.lean, line 539](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L539). The attribute's comment: “in particular”. References: EGA 0 (6.6.3), “first part, M = A”; EGA 0 (6.5.1), “B faithfully flat”; EGA 0 (22.4.8), “more general”; EGA 0 (6.5.2), “φ⁻¹(aB) = a”; EGA 0 (6.6.1), “(a) ⇒ φ⁻¹(aB) = a in (d)”; SGA 1 IV (2.6), “(i)”; SGA 3 V (9.1), “partial”.
 
 > For a faithfully flat ring map `φ : R → S` and every ideal `I ⊆ R`, the contraction
 > of the extended ideal `I S` back to `R` equals `I`, i.e. `φ⁻¹(I S) = I`.
@@ -458,4 +473,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.82, Tag 058H](https://stacks.math.columbia.edu/tag/058H)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

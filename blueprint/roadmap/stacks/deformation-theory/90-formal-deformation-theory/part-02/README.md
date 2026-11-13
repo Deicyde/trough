@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# 90.16 Rim-Schlessinger… to 90.29 Change of residue field
+# 90.15 Miniversal formal objects… to 90.29 Change of residue field
 
+- [90.15 Miniversal formal objects and tangent spaces](90-15-miniversal-formal-objects-and-tangent-spac.md)
 - [90.16 Rim-Schlessinger conditions and deformation categories](90-16-rim-schlessinger-conditions-and-deformatio.md)
 - [90.17 Lifts of objects](90-17-lifts-of-objects.md)
 - [90.18 Schlessinger's theorem on prorepresentable functors](90-18-schlessingers-theorem-on-prorepresentable.md)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Central binomial series in trigonometric arguments
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen/index.html).
 
 ## The central binomial series in $\sin x$ and $x \log|2\sin x|$
 
@@ -23,7 +23,7 @@ $S(x) = L(x) + \frac{1}{2} F(x)$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry16Tan.ramanujan_part1_ch9_entry16_tan`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry16Tan.lean, line 1888](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry16Tan.lean#L1888). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen/index.html#ramanujan-part1-ch9-entry16-tan).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry16Tan.ramanujan_part1_ch9_entry16_tan`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry16Tan.lean, line 1888](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry16Tan.lean#L1888). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen/index.html#ramanujan-part1-ch9-entry16-tan).
 
 ## Terms of the cosine-minus-sine central binomial series
 
@@ -35,7 +35,7 @@ $\binom{2k}{k} \frac{\cos^{2k+1} x - \sin^{2k+1} x}{2^{2k} (2k+1)^2}$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9, Entry 16.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry16Tanseries.chapter9Entry16DifferenceTerm`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry16Tanseries.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry16Tanseries.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen/index.html#chapter9-entry16-difference-term).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry16Tanseries.chapter9Entry16DifferenceTerm`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry16Tanseries.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry16Tanseries.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen/index.html#chapter9-entry16-difference-term).
 
 ## The central binomial series in $\cos x$ minus that in $\sin x$
 
@@ -51,7 +51,7 @@ $D(x) = \frac{\pi}{2} \log(2\cos x) - \frac{1}{2} S(2x)$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry16Tanseries.ramanujan_part1_ch9_entry16_tanseries`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry16Tanseries.lean, line 569](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry16Tanseries.lean#L569). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen/index.html#ramanujan-part1-ch9-entry16-tanseries).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry16Tanseries.ramanujan_part1_ch9_entry16_tanseries`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry16Tanseries.lean, line 565](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry16Tanseries.lean#L565). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen/index.html#ramanujan-part1-ch9-entry16-tanseries).
 
 ## The central binomial series in $\cos x$ plus that in $\sin x$
 
@@ -65,7 +65,7 @@ both summable, and $C(x) = \frac{\pi}{2} \log(2\cos x) + T(x)$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry19Catalangf.ramanujan_part1_ch9_entry19_catalangf`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry19Catalangf.lean, line 1602](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry19Catalangf.lean#L1602). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen/index.html#ramanujan-part1-ch9-entry19-catalangf).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry19Catalangf.ramanujan_part1_ch9_entry19_catalangf`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry19Catalangf.lean, line 1582](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry19Catalangf.lean#L1582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen/index.html#ramanujan-part1-ch9-entry19-catalangf).
 
 ## Ramanujan's central-binomial sine series identity (Entry 31)
 
@@ -79,7 +79,7 @@ $\psi(1/2 - x) + \tfrac12 \psi(2x) - \psi(x) = \tfrac{\pi}{2} \log(2 \cos(\pi x)
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry31Ramanujansum.ramanujan_part1_ch9_entry31_ramanujansum`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry31Ramanujansum.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry31Ramanujansum.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen/index.html#ramanujan-part1-ch9-entry31-ramanujansum).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry31Ramanujansum.ramanujan_part1_ch9_entry31_ramanujansum`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry31Ramanujansum.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry31Ramanujansum.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen/index.html#ramanujan-part1-ch9-entry31-ramanujansum).
 
 ## Depends on
 
@@ -88,4 +88,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Central binomial series in trigonometric arguments](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/central-binomial-series-in-trigonometric-argumen)

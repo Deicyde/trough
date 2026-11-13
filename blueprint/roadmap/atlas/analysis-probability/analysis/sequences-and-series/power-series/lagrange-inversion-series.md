@@ -8,7 +8,7 @@ proof: formalized
 
 # Lagrange inversion series
 
-13 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html).
+13 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html).
 
 ## Ramanujan's series for powers of a root of $x = a \log x$ (Entry 13)
 
@@ -24,7 +24,7 @@ is summable with sum $x^n$.
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (12.1), printed p. 66 / PDF p. 76, and Entry 13, printed pp. 69--70 / PDF pp. 79--80; historical attribution on printed p. 72 / PDF p. 82.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry13.ramanujan_part1_ch3_entry13`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry13.lean, line 971](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry13.lean#L971). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry13).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry13.ramanujan_part1_ch3_entry13`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry13.lean, line 971](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry13.lean#L971). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry13).
 
 ## Abel's binomial identity
 
@@ -34,7 +34,7 @@ natural number $n$,
 
 $$\sum_{j=0}^{n} \binom{n}{j} A_j(x) A_{n-j}(y) = A_n(x + y).$$
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry13CorollarySchroder.schroder_abel_binomial`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry13CorollarySchroder.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry13CorollarySchroder.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#schroder-abel-binomial).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry13CorollarySchroder.schroder_abel_binomial`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry13CorollarySchroder.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry13CorollarySchroder.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#schroder-abel-binomial).
 
 ## Schröder's exponential series
 
@@ -57,7 +57,7 @@ holomorphic ODE; radial continuity selects the unit-disk branch of $u \mapsto u 
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Corollary to Entry 13, formula (13.8), printed p. 70 / PDF p. 80.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry13CorollarySchroder.ramanujan_part1_ch3_entry13_corollary_schroder`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry13CorollarySchroder.lean, line 788](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry13CorollarySchroder.lean#L788). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry13-corollary-sc).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry13CorollarySchroder.ramanujan_part1_ch3_entry13_corollary_schroder`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry13CorollarySchroder.lean, line 788](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry13CorollarySchroder.lean#L788). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry13-corollary-sc).
 
 ## Ramanujan's series for powers of the Catalan generating function
 
@@ -74,7 +74,7 @@ $$\left(\frac{2}{1 + \sqrt{1 - 4a}}\right)^{n} = 1 + n a + n \sum_{k=0}^{\infty}
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 14, Corollary 1, printed p. 71; scan PDF p. 81.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14Cor1Catalanpowerseries.ramanujan_part1_ch3_entry14_cor1_catalanpowerseries`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14Cor1Catalanpowerseries.lean, line 740](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14Cor1Catalanpowerseries.lean#L740). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry14-cor1-catalan).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14Cor1Catalanpowerseries.ramanujan_part1_ch3_entry14_cor1_catalanpowerseries`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14Cor1Catalanpowerseries.lean, line 740](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14Cor1Catalanpowerseries.lean#L740). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry14-cor1-catalan).
 
 ## Lagrange series coefficients
 
@@ -85,14 +85,14 @@ $$C_{p,q}(n, k) = n \prod_{j=1}^{k-1} (n + k p - j q)$$
 
 (an empty product when $k = 1$).
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14LagrangeSeries.lagrangeSeriesCoefficient`, a definition declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#lagrange-series-coefficient).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14LagrangeSeries.lagrangeSeriesCoefficient`, a definition declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#lagrange-series-coefficient).
 
 ## Lagrange series coefficient of degree zero
 
 For all real numbers $p$, $q$, $n$, the
 Lagrange series coefficient $C_{p,q}(n, 0)$ of degree $0$ equals $1$.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14LagrangeSeries.lagrangeSeriesCoefficient_zero`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#lagrange-series-coefficient-zero).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14LagrangeSeries.lagrangeSeriesCoefficient_zero`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#lagrange-series-coefficient-zero).
 
 ## Lagrange series coefficients of positive degree
 
@@ -101,7 +101,7 @@ every natural number $k \ne 0$, the Lagrange series coefficient of degree $k$ is
 
 $$C_{p,q}(n, k) = n \prod_{j=1}^{k-1} (n + k p - j q).$$
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14LagrangeSeries.lagrangeSeriesCoefficient_of_ne_zero`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#lagrange-series-coefficient-of-ne-zero).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14LagrangeSeries.lagrangeSeriesCoefficient_of_ne_zero`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#lagrange-series-coefficient-of-ne-zero).
 
 ## Hagen–Rothe convolution for Lagrange series coefficients
 
@@ -110,7 +110,7 @@ $r$, $s$ and every natural number $m$, the Lagrange series coefficients $C_{p,q}
 
 $$C_{p,q}(r + s, m) = \sum_{k=0}^{m} \binom{m}{k} C_{p,q}(r, k) \, C_{p,q}(s, m - k).$$
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14LagrangeSeries.lagrangeSeriesCoefficient_add`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#lagrange-series-coefficient-add).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14LagrangeSeries.lagrangeSeriesCoefficient_add`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#lagrange-series-coefficient-add).
 
 ## Ramanujan's Lagrange series
 
@@ -129,7 +129,7 @@ through the boundary circle, and a continuous exponential lift.
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 14, formulas (14.1)--(14.5), printed pp. 70--71 / PDF pp. 80--81; attribution on printed p. 72 / PDF p. 82.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14LagrangeSeries.ramanujan_part1_ch3_entry14_lagrange_series`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean, line 1925](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean#L1925). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry14-lagrange-ser).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14LagrangeSeries.ramanujan_part1_ch3_entry14_lagrange_series`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean, line 1925](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry14LagrangeSeries.lean#L1925). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry14-lagrange-ser).
 
 ## Ramanujan's exponential series for powers of two
 
@@ -148,7 +148,7 @@ $z = 2^{-n}$, with the endpoint supplied by Entry 14's Catalan-power series, giv
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 15, Example 1, printed pp. 73-75 / PDF pp. 83-85.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry15Example1ExponentialSeries.ramanujan_part1_ch3_entry15_example1_exponential_series`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry15Example1ExponentialSeries.lean, line 1771](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry15Example1ExponentialSeries.lean#L1771). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry15-example1-exp).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry15Example1ExponentialSeries.ramanujan_part1_ch3_entry15_example1_exponential_series`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry15Example1ExponentialSeries.lean, line 1771](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry15Example1ExponentialSeries.lean#L1771). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry15-example1-exp).
 
 ## Ramanujan's inverse series for $u - \log u$
 
@@ -163,7 +163,7 @@ unconditionally to $x^2/2$.
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 15, local inverse-series clause, printed p. 73 / PDF p. 83.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry15InverseSeries.ramanujan_part1_ch3_entry15_inverse_series`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry15InverseSeries.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry15InverseSeries.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry15-inverse-seri).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry15InverseSeries.ramanujan_part1_ch3_entry15_inverse_series`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry15InverseSeries.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry15InverseSeries.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry15-inverse-seri).
 
 ## Ramanujan's tree-function series (Chapter 3, Entry 15)
 
@@ -178,7 +178,7 @@ converges to $u\, e^{1 + x^2/2}$.
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 15, formulas (15.1)-(15.2), printed p. 73; scan PDF p. 83.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry15Treeseries.ramanujan_part1_ch3_entry15_treeseries`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry15Treeseries.lean, line 1084](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry15Treeseries.lean#L1084). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry15-treeseries).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry15Treeseries.ramanujan_part1_ch3_entry15_treeseries`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry15Treeseries.lean, line 1084](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry15Treeseries.lean#L1084). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry15-treeseries).
 
 ## Taylor coefficients of the solution of $x^x = a^a e^h$ (Chapter 3, Entry 17)
 
@@ -194,7 +194,7 @@ $$A_r = \frac{(r - 2)\, A_{r-1} + \sum_{k=1}^{r-1} \binom{r-1}{k} A_k A_{r-k}}{1
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, corrected Entry 17, formulas (17.1)--(17.7), printed pp. 81--83 / PDF pp. 91--93.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry17.ramanujan_part1_ch3_entry17`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry17.lean, line 623](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry17.lean#L623). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry17).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry17.ramanujan_part1_ch3_entry17`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry17.lean, line 623](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry17.lean#L623). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html#ramanujan-part1-ch3-entry17).
 
 ## Depends on
 
@@ -203,4 +203,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lagrange inversion series](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/sequences-and-series/power-series/lagrange-inversion-series)

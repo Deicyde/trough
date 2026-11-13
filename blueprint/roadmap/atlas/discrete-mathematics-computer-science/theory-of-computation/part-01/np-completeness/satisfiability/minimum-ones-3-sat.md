@@ -7,7 +7,7 @@ statement: formalized
 
 # Minimum-ones 3-SAT
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat/index.html).
 
 ## MINIMUM ONES 3-SAT instances
 
@@ -16,7 +16,7 @@ $(n, \varphi, K)$ of a natural number $n$ (the number of variables), a CNF formu
 natural number $K$ (the bound). No condition is placed on $\varphi$ here; clauses of exactly three
 literals are required separately, by well-formedness.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.MinOnesThreeSat.MinOnesThreeSatInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat/index.html#min-ones-three-sat-instance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.MinOnesThreeSat.MinOnesThreeSatInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat/index.html#min-ones-three-sat-instance).
 
 ## Well-formed MINIMUM ONES 3-SAT instances
 
@@ -25,7 +25,7 @@ $n$, a CNF formula $\varphi$ and a natural number $K$ is well formed when every 
 is a list of exactly three literals and every literal of every clause has variable index less
 than $n$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.MinOnesThreeSat.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.MinOnesThreeSat.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat/index.html#well-formed).
 
 ## Feasible MINIMUM ONES 3-SAT instances
 
@@ -34,7 +34,7 @@ a CNF formula $\varphi$ and a natural number $K$ is feasible when there is an as
 values to the variables $0, \dots, n-1$ that, with every variable $x \ge n$ set to false,
 satisfies $\varphi$ and sets at most $K$ of the variables $0, \dots, n-1$ to true.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.MinOnesThreeSat.MinOnesThreeSatFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat/index.html#min-ones-three-sat-feasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.MinOnesThreeSat.MinOnesThreeSatFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat/index.html#min-ones-three-sat-feasible).
 
 ## The MINIMUM ONES 3-SAT decision problem
 
@@ -45,7 +45,7 @@ such that every clause of $\varphi$ is a list of exactly three literals whose va
 less than $n$, and some assignment of truth values to the variables $0, \dots, n-1$ satisfies
 $\varphi$ and sets at most $K$ of them to true. Every other bitstring is rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.MinOnesThreeSat.minOnesThreeSatDec`, a definition declared in [WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat/index.html#min-ones-three-sat-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.MinOnesThreeSat.minOnesThreeSatDec`, a definition declared in [WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat/index.html#min-ones-three-sat-dec).
 
 ## MINIMUM ONES 3-SAT is NP-complete
 
@@ -63,7 +63,7 @@ $x$ exactly when MINIMUM ONES 3-SAT accepts $f(x)$.
 
 - M. R. Garey and D. S. Johnson, *Computers and Intractability: A Guide to the Theory of NP-Completeness* (1979), MINIMUM ONES 3-SAT.
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.MinOnesThreeSat.minOnesThreeSat_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat/index.html#min-ones-three-sat-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.MinOnesThreeSat.minOnesThreeSat_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/MinOnesThreeSatWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat/index.html#min-ones-three-sat-np-complete).
 
 ## Depends on
 
@@ -72,4 +72,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Minimum-ones 3-SAT](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/satisfiability/minimum-ones-3-sat)

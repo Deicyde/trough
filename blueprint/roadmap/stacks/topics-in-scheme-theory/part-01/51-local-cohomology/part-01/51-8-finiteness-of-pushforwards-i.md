@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.8 Finiteness of pushforwards, I
 
-Section 51.8 of the Stacks Project, [Tag 0BL8](https://stacks.math.columbia.edu/tag/0BL8). 9 tags here are carried by 33 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.8 of the Stacks Project, [Tag 0BL8](https://stacks.math.columbia.edu/tag/0BL8). 9 tags here are carried by 33 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BJZ, a lemma
 
 [Tag 0BJZ](https://stacks.math.columbia.edu/tag/0BJZ) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CoherenceFromPointClosures.isCoherent_pushforward_iff_forall_isAssociatedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/CoherenceEquivalence.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/CoherenceEquivalence.lean#L154).
+**`Stacks.AlgebraicGeometry.CoherenceFromPointClosures.isCoherent_pushforward_iff_forall_isAssociatedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/CoherenceEquivalence.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/CoherenceEquivalence.lean#L154).
 
 > **[Stacks, Tag 0BJZ].** Let `X` be a locally Noetherian scheme, let `j : U ⟶ X` be the
 > inclusion of an open subscheme and let `F` be a coherent `𝒪_U`-module. For `x ∈ U` let
@@ -32,7 +32,7 @@ theorem isCoherent_pushforward_iff_forall_isAssociatedPoint {U X : Scheme.{u}}
       ((Scheme.Modules.pushforward j).obj F).IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherenceFromPointClosures.isCoherent_pushforward_of_forall_isAssociatedPoint'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/CoherenceFromPointClosures.lean, line 571](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/CoherenceFromPointClosures.lean#L571). The attribute's comment: “(1) implies (2)”.
+**`Stacks.AlgebraicGeometry.CoherenceFromPointClosures.isCoherent_pushforward_of_forall_isAssociatedPoint'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/CoherenceFromPointClosures.lean, line 571](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/CoherenceFromPointClosures.lean#L571). The attribute's comment: “(1) implies (2)”.
 
 > **[Stacks, Tag 0BJZ], the implication (1) ⇒ (2).** Let `X` be a locally Noetherian scheme,
 > let `j : U ⟶ X` be the inclusion of an open subscheme and let `F` be a coherent `𝒪_U`-module. If
@@ -42,8 +42,8 @@ theorem isCoherent_pushforward_iff_forall_isAssociatedPoint {U X : Scheme.{u}}
 > subscheme becomes Noetherian and quasi-affine, which is what the induction needs.
 >
 > This is one direction of [Stacks, Tag 0BJZ]; the tag sits on the full equivalence
-> `isCoherent_pushforward_iff_forall_isAssociatedPoint`, in
-> `StacksFrontier.AlgebraicGeometry.LocalCohomology.CoherentPushforwardCriterion.CoherenceEquivalence`.
+> `isCoherent_pushforward_iff_forall_isAssociatedPoint`, in the module `CoherenceEquivalence` of
+> `StacksFrontier.AlgebraicGeometry.LocalCohomology.CoherentPushforwardCriterion`.
 
 ```lean
 theorem isCoherent_pushforward_of_forall_isAssociatedPoint' {U X : Scheme.{u}}
@@ -57,7 +57,7 @@ theorem isCoherent_pushforward_of_forall_isAssociatedPoint' {U X : Scheme.{u}}
 
 [Tag 0BK0](https://stacks.math.columbia.edu/tag/0BK0) in the Stacks Project.
 
-**`Stacks.LocalCohomology.exact_lowDegreeSequence_and_nonempty_complementCohomology_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentComplementAffine.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentComplementAffine.lean#L98). The attribute's comment: “(2)”. References: EGA III (1.4.3), “special case”; SGA 2 II (Corollary4), “special case”; SGA 4 V (6.5), “special case”.
+**`Stacks.LocalCohomology.exact_lowDegreeSequence_and_nonempty_complementCohomology_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentComplementAffine.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentComplementAffine.lean#L98). The attribute's comment: “(2)”. References: EGA III (1.4.3), “special case”; SGA 2 II (Corollary4), “special case”; SGA 4 V (6.5), “special case”.
 
 > **[Stacks, Tag 0BK0] (2).** Let `R` be a Noetherian ring, let `I ⊆ R` be an ideal, let
 > `X = Spec R`, let `Z = V(I)` and let `U = X ∖ Z`.  Let `M` be an `R`-module and let `F` be a
@@ -86,7 +86,7 @@ theorem exact_lowDegreeSequence_and_nonempty_complementCohomology_iso
           localCohomologyModule R I hI M ((p + 1 : ℕ) : ℤ))
 ```
 
-**`Stacks.LocalCohomology.coherent_complement_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentComplementAffine.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentComplementAffine.lean#L140).
+**`Stacks.LocalCohomology.coherent_complement_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentComplementAffine.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentComplementAffine.lean#L140).
 
 > **[Stacks, Tag 0BK0].** Let `R` be a Noetherian ring, let `I ⊆ R` be an ideal, let
 > `X = Spec R`, let `Z = V(I)`, let `U = X ∖ Z` and let `j : U → X` be the inclusion.  Let `F` be a
@@ -140,7 +140,7 @@ theorem coherent_complement_affine
               IsZero (localCohomologyModule R I hI (complementGlobalSections R I F) 1))
 ```
 
-**`Stacks.LocalCohomologySequence.moduleFinite_complementCohomologyBase_iff_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/FiniteLocallyFreeComplementAffine.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/FiniteLocallyFreeComplementAffine.lean#L161). The attribute's comment: “(3), (a) ⟺ (b)”.
+**`Stacks.LocalCohomologySequence.moduleFinite_complementCohomologyBase_iff_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/FiniteLocallyFreeComplementAffine.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/FiniteLocallyFreeComplementAffine.lean#L161). The attribute's comment: “(3), (a) ⟺ (b)”.
 
 > **[Stacks, Tag 0BK0] (3), the equivalence of (a) and (b).** Let `A` be a Noetherian ring,
 > `I ⊆ A` an ideal, `X = Spec A`, `Z = V(I)`, `U = X ∖ Z` and `j : U → X` the inclusion.  For an
@@ -165,7 +165,7 @@ public theorem moduleFinite_complementCohomologyBase_iff_isCoherent [IsNoetheria
         ((tilde M).restrict (zeroLocusCompl I).ι)).IsCoherent
 ```
 
-**`Stacks.LocalCohomologySequence.isCoherent_rightDerived_iff_finite_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/CutoffCriterionAffine.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/CutoffCriterionAffine.lean#L87). The attribute's comment: “(3), (a) ⟺ (c)”.
+**`Stacks.LocalCohomologySequence.isCoherent_rightDerived_iff_finite_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/CutoffCriterionAffine.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/CutoffCriterionAffine.lean#L87). The attribute's comment: “(3), (a) ⟺ (c)”.
 
 > **[Stacks, Tag 0BK0] (3), the equivalence of (a) and (c).** Let `A` be a Noetherian ring,
 > `I ⊆ A` an ideal, `X = Spec A`, `Z = V(I)`, `U = X ∖ Z` and `j : U → X` the inclusion. For a
@@ -187,7 +187,7 @@ public theorem isCoherent_rightDerived_iff_finite_localCohomology [IsNoetherianR
         ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj M) ((p + 1 : ℕ) : ℤ))
 ```
 
-**`AlgebraicGeometry.exists_finiteModule_tilde_restrict_zeroLocusCompl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/FiniteModule.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/FiniteModule.lean#L115). The attribute's comment: “(1)”. References: EGA I (1.5.1), “(a) => (c)”.
+**`AlgebraicGeometry.exists_finiteModule_tilde_restrict_zeroLocusCompl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/FiniteModule.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/FiniteModule.lean#L115). The attribute's comment: “(1)”. References: EGA I (1.5.1), “(a) => (c)”.
 
 > **Stacks Project, Tag 0BK0 (1).** Let `A` be a Noetherian ring, let `I ⊆ A` be an ideal and
 > let `U = Spec A \ V(I)`. A coherent `𝒪_U`-module is the restriction to `U` of the sheaf `M̃`
@@ -201,7 +201,7 @@ theorem exists_finiteModule_tilde_restrict_zeroLocusCompl {A : CommRingCat.{u}}
       Nonempty ((tilde M).restrict (zeroLocusCompl I).ι ≅ F)
 ```
 
-**`Stacks.LocalCohomologySequence.exact_localCohomology_sequence_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyDegreewise.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyDegreewise.lean#L158). The attribute's comment: “(2), principal ideal”.
+**`Stacks.LocalCohomologySequence.exact_localCohomology_sequence_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyDegreewise.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyDegreewise.lean#L158). The attribute's comment: “(2), principal ideal”.
 
 > **Stacks Project, Tag 0BK0 (2) for a principal ideal.**  Let `A` be a Noetherian ring, let
 > `f : A` and write `X = Spec A`, `Z = V(f)` and `U = X ∖ Z`.  For an `A`-module `M` there is a
@@ -229,7 +229,7 @@ theorem exact_localCohomology_sequence_span_singleton [IsNoetherianRing A] (f : 
             (localCohomologySpanSingleton A f (p + 1)).obj M)
 ```
 
-**`Stacks.LocalCohomologySequence.finite_complementCohomologyBase_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean#L120). The attribute's comment: “(3), (b) ⟺ (c), with cohomology with support in place of local cohomology”.
+**`Stacks.LocalCohomologySequence.finite_complementCohomologyBase_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean#L120). The attribute's comment: “(3), (b) ⟺ (c), with cohomology with support in place of local cohomology”.
 
 > **Stacks Project, Tag 0BK0 (3), the equivalence of (b) and (c)**, with cohomology with
 > support in place of local cohomology.  Let `I` be an ideal of a ring `A`, let `X = Spec A`, let
@@ -243,7 +243,7 @@ theorem finite_complementCohomologyBase_iff (I : Ideal A) (M : ModuleCat.{u} A)
       Module.Finite A (cohomologyWithSupportBase I M (p + 1))
 ```
 
-**`Stacks.LocalCohomologySequence.finite_localCohomology_iff_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean#L148). The attribute's comment: “(3), (b) ⟺ (c), principal ideal”.
+**`Stacks.LocalCohomologySequence.finite_localCohomology_iff_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean#L148). The attribute's comment: “(3), (b) ⟺ (c), principal ideal”.
 
 > **Stacks Project, Tag 0BK0 (3) for a principal ideal, the equivalence of (b) and (c).**  Let
 > `A` be a Noetherian ring, let `f : A`, let `X = Spec A`, let `Z = V(f)` and let `U = X ∖ Z`.  For
@@ -257,7 +257,7 @@ theorem finite_localCohomology_iff_span_singleton [IsNoetherianRing A] (f : A)
       Module.Finite A ((localCohomologySpanSingleton A f (p + 1)).obj M)
 ```
 
-**`Stacks.LocalCohomologySequence.isZero_cohomologyWithSupport_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean#L164). The attribute's comment: “(4), the vanishing, for a module whose canonical map to the sections over the complement is an isomorphism”.
+**`Stacks.LocalCohomologySequence.isZero_cohomologyWithSupport_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean#L164). The attribute's comment: “(4), the vanishing, for a module whose canonical map to the sections over the complement is an isomorphism”.
 
 > **Stacks Project, Tag 0BK0 (4), the vanishing.**  Let `I` be an ideal of a ring `A`, let
 > `X = Spec A`, let `Z = V(I)` and let `U = X ∖ Z`.  If the canonical map `M ⟶ Γ(U, M̃)` is an
@@ -270,7 +270,7 @@ theorem isZero_cohomologyWithSupport_of_isIso (I : Ideal A) (M : ModuleCat.{u} A
     IsZero (cohomologyWithSupportBase I M 0) ∧ IsZero (cohomologyWithSupportBase I M 1)
 ```
 
-**`Stacks.LocalCohomologySequence.isZero_localCohomology_of_isIso_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean#L202). The attribute's comment: “(4), the vanishing, principal ideal, for a module whose canonical map to the sections over the complement is an isomorphism”.
+**`Stacks.LocalCohomologySequence.isZero_localCohomology_of_isIso_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyFiniteness.lean#L202). The attribute's comment: “(4), the vanishing, principal ideal, for a module whose canonical map to the sections over the complement is an isomorphism”.
 
 > **Stacks Project, Tag 0BK0 (4) for a principal ideal, the vanishing.**  Let `A` be a
 > Noetherian ring, let `f : A`, let `X = Spec A`, let `Z = V(f)` and let `U = X ∖ Z`.  If the
@@ -284,7 +284,7 @@ theorem isZero_localCohomology_of_isIso_span_singleton [IsNoetherianRing A] (f :
       IsZero ((localCohomologySpanSingleton A f 1).obj M)
 ```
 
-**`Stacks.LocalCohomologySequence.exact_cohomologyWithSupport_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologySequence.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologySequence.lean#L164). The attribute's comment: “(2), with cohomology with support in place of local cohomology”. References: SGA 2 II (Corollary4), “(4.2), (4.3)”.
+**`Stacks.LocalCohomologySequence.exact_cohomologyWithSupport_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologySequence.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologySequence.lean#L164). The attribute's comment: “(2), with cohomology with support in place of local cohomology”. References: SGA 2 II (Corollary4), “(4.2), (4.3)”.
 
 > **Stacks Project, Tag 0BK0 (2)**, with cohomology with support in place of local cohomology.
 > For an ideal `I` of a ring `A` and an `A`-module `M`, write `X = Spec A`, `Z = V(I)` and
@@ -305,7 +305,7 @@ theorem exact_cohomologyWithSupport_sequence (I : Ideal A) (M : ModuleCat.{u} A)
       ∀ p : ℕ, 0 < p → IsIso ((delta p).app (tildeSheaf M))
 ```
 
-**`Stacks.LocalCohomologySequence.finite_complementCohomologyBase_iff_finite_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/HigherDegree/CohomologyWithSupportComparison.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/HigherDegree/CohomologyWithSupportComparison.lean#L385). The attribute's comment: “(3), (b) ⟺ (c)”.
+**`Stacks.LocalCohomologySequence.finite_complementCohomologyBase_iff_finite_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/HigherDegree/CohomologyWithSupportComparison.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/HigherDegree/CohomologyWithSupportComparison.lean#L385). The attribute's comment: “(3), (b) ⟺ (c)”.
 
 > **The finiteness consequence of Stacks 0DWR, in every degree.** For a finite module `M` over
 > a Noetherian ring the `A`-module `H^p(U, M̃)` on `U = Spec A ∖ V(I)` is finite exactly when the
@@ -329,7 +329,7 @@ theorem finite_complementCohomologyBase_iff_finite_localCohomology
         ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj M) ((p + 1 : ℕ) : ℤ))
 ```
 
-**`Stacks.LocalCohomology.exact_lowDegreeSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean#L373). The attribute's comment: “low\_degree\_sequence”. References: EGA III (1.4.3), “(1.4.3.2), special case”; SGA 2 II (Corollary4), “(4.2)”; SGA 4 V (6.5), “(6.5.3), special case”.
+**`Stacks.LocalCohomology.exact_lowDegreeSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean#L373). The attribute's comment: “low\_degree\_sequence”. References: EGA III (1.4.3), “(1.4.3.2), special case”; SGA 2 II (Corollary4), “(4.2)”; SGA 4 V (6.5), “(6.5.3), special case”.
 
 > **Stacks 0BK0, the low-degree sequence.** Let `I` be a finitely generated ideal of a
 > commutative ring `A`, let `U = Spec A \ V(I)`, let `M` be an `A`-module and let `F` be a sheaf of
@@ -361,7 +361,7 @@ theorem exact_lowDegreeSequence (M : ModuleCat.{max u v} A)
       Function.Surjective (localizationBoundary (localizationTriangleData.{v} A I hI) M F e)
 ```
 
-**`Stacks.LocalCohomology.finite_iso_restrict_and_isZero_localCohomology_globalSectionsModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsFinite.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsFinite.lean#L78). The attribute's comment: “(4)”.
+**`Stacks.LocalCohomology.finite_iso_restrict_and_isZero_localCohomology_globalSectionsModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsFinite.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsFinite.lean#L78). The attribute's comment: “(4)”.
 
 > **[Stacks, Tag 0BK0] (4).** Let `I` be a finitely generated ideal of `A`, let
 > `U = Spec A \ V(I)`, let `F` be a quasi-coherent `𝒪_U`-module and let `M` be a finite `A`-module
@@ -389,7 +389,7 @@ theorem finite_iso_restrict_and_isZero_localCohomology_globalSectionsModule
 
 [Tag 0AWA](https://stacks.math.columbia.edu/tag/0AWA) in the Stacks Project.
 
-**`Stacks.LocalCohomology.isCoherent_pushforward_of_isNagataScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/NagataCatenaryCoherence.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/NagataCatenaryCoherence.lean#L195). References: EGA IV (5.11.1), “c) ⇒ a), special case”.
+**`Stacks.LocalCohomology.isCoherent_pushforward_of_isNagataScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/NagataCatenaryCoherence.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/NagataCatenaryCoherence.lean#L195). References: EGA IV (5.11.1), “c) ⇒ a), special case”.
 
 > **[Stacks, Tag 0AWA].** Let `X` be a locally Noetherian scheme, let `j : U ⟶ X` be the
 > inclusion of an open subscheme with complement `Z`, and let `F` be a coherent `𝒪_U`-module.
@@ -421,7 +421,7 @@ theorem isCoherent_pushforward_of_isNagataScheme {X : Scheme.{u}} [IsLocallyNoet
 
 [Tag 0BK1](https://stacks.math.columbia.edu/tag/0BK1) in the Stacks Project.
 
-**`Stacks.LocalCohomology.isCoherent_pushforward_structureSheaf_of_completion_associatedPrime_dim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/PuncturedSpectrumCoherentPushforward.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/PuncturedSpectrumCoherentPushforward.lean#L336). References: EGA I (1.5.2), “special case”; EGA IV (7.2.2), “(b) ⇒ (a)”.
+**`Stacks.LocalCohomology.isCoherent_pushforward_structureSheaf_of_completion_associatedPrime_dim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/PuncturedSpectrumCoherentPushforward.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/PuncturedSpectrumCoherentPushforward.lean#L336). References: EGA I (1.5.2), “special case”; EGA IV (7.2.2), “(b) ⇒ (a)”.
 
 > **[Stacks, Tag 0BK1].** Let `X` be an integral locally Noetherian scheme and let `j : U ⟶ X`
 > be the inclusion of a nonempty open subscheme with complement `Z`. Assume that for every `z ∈ Z`
@@ -451,7 +451,7 @@ theorem isCoherent_pushforward_structureSheaf_of_completion_associatedPrime_dim
 
 [Tag 0BK2](https://stacks.math.columbia.edu/tag/0BK2) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ClosedImmersionCoherence.isCoherent_pushforward_pointClosure_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/ClosedImmersionCoherence.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/ClosedImmersionCoherence.lean#L342). The attribute's comment: “coherence equivalence”.
+**`Stacks.AlgebraicGeometry.ClosedImmersionCoherence.isCoherent_pushforward_pointClosure_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/ClosedImmersionCoherence.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/ClosedImmersionCoherence.lean#L342). The attribute's comment: “coherence equivalence”.
 
 > **Stacks Project, Tag 0BK2.** Coherence of the direct image to `X` of the structure sheaf of
 > the reduced closure of `{x}` in `U` is equivalent to coherence of its direct image to the reduced
@@ -482,7 +482,7 @@ theorem isCoherent_pushforward_pointClosure_iff {U X : Scheme.{u}} (j : U ⟶ X)
           (Closeds.closure ({x} : Set U))).subscheme.ringCatSheaf)).IsCoherent
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.exists_isOpenImmersion_pointClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean#L121). The attribute's comment: “commutative square of closures”. References: EGA I (5.2.3), “special case”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.exists_isOpenImmersion_pointClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean#L121). The attribute's comment: “commutative square of closures”. References: EGA I (5.2.3), “special case”.
 
 > **Stacks Project, Tag 0BK2.** For an open immersion `j : U ⟶ X` and a point `x` of `U`, the
 > reduced closure of `{x}` in `U` is an open subscheme of the reduced closure of `{j x}` in `X`,
@@ -503,7 +503,7 @@ theorem exists_isOpenImmersion_pointClosure {U X : Scheme.{u}} (j : U ⟶ X) [Is
           (Closeds.closure ({x} : Set U))).subschemeι ≫ j
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.range_of_pointClosureSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean#L214). The attribute's comment: “cartesianness of the square of closures”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.range_of_pointClosureSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean#L214). The attribute's comment: “cartesianness of the square of closures”.
 
 > **Stacks Project, Tag 0BK2.** The square of point closures is cartesian: the reduced closure
 > of `{x}` in `U` is exactly the part of the reduced closure of `{j x}` in `X` lying over `U`.
@@ -522,7 +522,7 @@ theorem range_of_pointClosureSquare {U X : Scheme.{u}} (j : U ⟶ X) [IsOpenImme
       (Closeds.closure ({j x} : Set X))).subschemeι.base ⁻¹' Set.range j.base
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.pushforwardPointClosureIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean#L253). The attribute's comment: “direct-image comparison”.
+**`AlgebraicGeometry.Scheme.Modules.pushforwardPointClosureIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean#L253). The attribute's comment: “direct-image comparison”.
 
 > **Stacks Project, Tag 0BK2.** The canonical comparison of the two iterated direct images of
 > the structure sheaf of the reduced closure of `{x}` around the commutative square of point
@@ -555,7 +555,7 @@ noncomputable def pushforwardPointClosureIso {U X : Scheme.{u}} (j : U ⟶ X) (x
             (Closeds.closure ({x} : Set U))).subscheme.ringCatSheaf))
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.pullbackPointClosureIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean#L325). The attribute's comment: “inverse-image comparison”.
+**`AlgebraicGeometry.Scheme.Modules.pullbackPointClosureIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentPushforwardCriteria/PointClosureSquare.lean#L325). The attribute's comment: “inverse-image comparison”.
 
 > **Stacks Project, Tag 0BK2.** The comparison of direct images of the structure sheaf of a
 > point closure in the inverse image direction: the restriction to the open subscheme `V` of the
@@ -588,7 +588,7 @@ noncomputable def pullbackPointClosureIso {X : Scheme.{u}} [IsLocallyNoetherian 
 
 [Tag 0AWC](https://stacks.math.columbia.edu/tag/0AWC) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CodimensionOneObstruction.not_isCoherent_pushforward_of_isAssociatedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CodimensionOneObstruction/AssociatedPointObstruction.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CodimensionOneObstruction/AssociatedPointObstruction.lean#L188). The attribute's comment: “first paragraph”. References: EGA IV (5.10.10), “Clause (ii) for closed Z”; EGA IV (5.11.1), “a) ⇒ c), for Z closed”; EGA IV (5.11.4), “more general”; EGA IV (7.8.3), “(ix), partial”.
+**`Stacks.AlgebraicGeometry.CodimensionOneObstruction.not_isCoherent_pushforward_of_isAssociatedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CodimensionOneObstruction/AssociatedPointObstruction.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/CodimensionOneObstruction/AssociatedPointObstruction.lean#L188). The attribute's comment: “first paragraph”. References: EGA IV (5.10.10), “Clause (ii) for closed Z”; EGA IV (5.11.1), “a) ⇒ c), for Z closed”; EGA IV (5.11.4), “more general”; EGA IV (7.8.3), “(ix), partial”.
 
 > **First paragraph of [Stacks, Tag 0AWC].** Let `X` be a locally Noetherian scheme, `U` an open
 > subscheme with complement `Z`, and `𝓕` an `𝒪_U`-module. Let `x` be a point of `U` associated to
@@ -615,7 +615,7 @@ theorem not_isCoherent_pushforward_of_isAssociatedPoint [IsLocallyNoetherian X]
     ¬ ((Scheme.Modules.pushforward U.ι).obj 𝓕).IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CodimensionOneObstruction.not_isCoherent_pushforward_structureSheaf_of_isAssociatedPrime_completedStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CodimensionOneObstruction/CompletedLocalBaseChange.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CodimensionOneObstruction/CompletedLocalBaseChange.lean#L187). The attribute's comment: “second paragraph”. References: EGA IV (7.2.4), “(e) ⇒ (f)”.
+**`Stacks.AlgebraicGeometry.CodimensionOneObstruction.not_isCoherent_pushforward_structureSheaf_of_isAssociatedPrime_completedStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CodimensionOneObstruction/CompletedLocalBaseChange.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/CodimensionOneObstruction/CompletedLocalBaseChange.lean#L187). The attribute's comment: “second paragraph”. References: EGA IV (7.2.4), “(e) ⇒ (f)”.
 
 > **A one-dimensional associated prime of the completed local ring obstructs coherence of the
 > direct image of the structure sheaf.** Let `j : U → X` be an open immersion of integral locally
@@ -634,7 +634,7 @@ theorem not_isCoherent_pushforward_structureSheaf_of_isAssociatedPrime_completed
     ¬ ((Scheme.Modules.pushforward U.ι).obj (SheafOfModules.unit _)).IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentPushforwardCriterion.not_isCoherent_pushforward_structureSheaf_of_isAssociatedPrime_completedStalk_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/CompletedStalkAssociatedDimension.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/CompletedStalkAssociatedDimension.lean#L131). The attribute's comment: “second paragraph, for an associated quotient of the completion of dimension at most one”. References: EGA IV (7.2.4), “(e) ⇒ (f)”.
+**`Stacks.AlgebraicGeometry.CoherentPushforwardCriterion.not_isCoherent_pushforward_structureSheaf_of_isAssociatedPrime_completedStalk_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/CompletedStalkAssociatedDimension.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/CompletedStalkAssociatedDimension.lean#L130). The attribute's comment: “second paragraph, for an associated quotient of the completion of dimension at most one”. References: EGA IV (7.2.4), “(e) ⇒ (f)”.
 
 > **`j_* 𝒪_U` is not coherent when a completed local ring outside `U` has an associated prime
 > of dimension at most one.** Let `j : U → X` be the inclusion of a nonempty open subscheme of an
@@ -653,7 +653,7 @@ theorem not_isCoherent_pushforward_structureSheaf_of_isAssociatedPrime_completed
     ¬ ((Scheme.Modules.pushforward U.ι).obj (SheafOfModules.unit _)).IsCoherent
 ```
 
-**`Stacks.LocalCohomology.not_isCoherent_pushforward_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CompletedLocalObstruction.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CompletedLocalObstruction.lean#L402). The attribute's comment: “completed\_local\_ring\_obstruction”. References: EGA IV (7.2.4), “(e) ⇒ (f)”.
+**`Stacks.LocalCohomology.not_isCoherent_pushforward_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CompletedLocalObstruction.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/CompletedLocalObstruction.lean#L402). The attribute's comment: “completed\_local\_ring\_obstruction”. References: EGA IV (7.2.4), “(e) ⇒ (f)”.
 
 > **[Stacks, Tag 0AWC], the completed-local-ring obstruction to coherence.** Let `j : U ⟶ X` be
 > an open immersion of integral locally Noetherian schemes and suppose some point `z` outside the
@@ -685,7 +685,7 @@ theorem not_isCoherent_pushforward_structureSheaf {U X : Scheme.{u}} (j : U ⟶ 
 
 [Tag 0BK3](https://stacks.math.columbia.edu/tag/0BK3) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CoherentPushforwardCriterion.not_isCoherent_pushforward_of_isAssociatedPrime_completedStalk_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/PointClosureCompletionDimension.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/PointClosureCompletionDimension.lean#L87). The attribute's comment: “(1) implies (2), contrapositive at one point, given a monomorphism from the structure sheaf of the point closure”. References: EGA IV (5.11.4), “necessity”.
+**`Stacks.AlgebraicGeometry.CoherentPushforwardCriterion.not_isCoherent_pushforward_of_isAssociatedPrime_completedStalk_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/PointClosureCompletionDimension.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/PointClosureCompletionDimension.lean#L87). The attribute's comment: “(1) implies (2), contrapositive at one point, given a monomorphism from the structure sheaf of the point closure”. References: EGA IV (5.11.4), “necessity”.
 
 > **[Stacks, Tag 0BK3], the implication (1) ⇒ (2), in contrapositive form at a single point,
 > for an associated quotient of dimension at most one.** Let `j : U ⟶ X` be an open immersion of
@@ -714,7 +714,7 @@ theorem not_isCoherent_pushforward_of_isAssociatedPrime_completedStalk_le_one {U
     ¬ ((Scheme.Modules.pushforward j).obj F).IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentPushforwardCriterion.two_le_ringKrullDim_quotient_completedStalk_of_isCoherent_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/PointClosureCompletionDimension.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/PointClosureCompletionDimension.lean#L146). The attribute's comment: “(1) implies (2), given a monomorphism from the structure sheaf of the point closure”. References: EGA IV (7.2.3), “b) => c)”; EGA IV (5.11.4), “necessity”; EGA IV (7.2.2), “a) => b)”.
+**`Stacks.AlgebraicGeometry.CoherentPushforwardCriterion.two_le_ringKrullDim_quotient_completedStalk_of_isCoherent_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/PointClosureCompletionDimension.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/PointClosureCompletionDimension.lean#L146). The attribute's comment: “(1) implies (2), given a monomorphism from the structure sheaf of the point closure”. References: EGA IV (7.2.3), “b) => c)”; EGA IV (5.11.4), “necessity”; EGA IV (7.2.2), “a) => b)”.
 
 > **[Stacks, Tag 0BK3], the implication (1) ⇒ (2).** Let `j : U ⟶ X` be an open immersion of
 > schemes with `X` locally Noetherian and let `F` be a quasi-coherent `𝒪_U`-module whose direct
@@ -743,7 +743,7 @@ theorem two_le_ringKrullDim_quotient_completedStalk_of_isCoherent_pushforward
             2 ≤ ringKrullDim (I.subscheme.completedLocalRingCat z ⧸ p.asIdeal)
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentPushforwardCriterion.not_isCoherent_pushforward_of_isAssociatedPrime_completedStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/PointClosureCompletionObstruction.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/PointClosureCompletionObstruction.lean#L129). The attribute's comment: “(1) implies (2), contrapositive at one point, for a one-dimensional associated quotient of the completion and given a monomorphism from the structure sheaf of the point closure”. References: EGA IV (5.11.4), “necessity”.
+**`Stacks.AlgebraicGeometry.CoherentPushforwardCriterion.not_isCoherent_pushforward_of_isAssociatedPrime_completedStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/PointClosureCompletionObstruction.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/PointClosureCompletionObstruction.lean#L129). The attribute's comment: “(1) implies (2), contrapositive at one point, for a one-dimensional associated quotient of the completion and given a monomorphism from the structure sheaf of the point closure”. References: EGA IV (5.11.4), “necessity”.
 
 > **[Stacks, Tag 0BK3], the implication (1) ⇒ (2), in contrapositive form at a single point.**
 > Let `j : U ⟶ X` be an open immersion of schemes with `X` locally Noetherian, let `F` be a
@@ -773,7 +773,7 @@ theorem not_isCoherent_pushforward_of_isAssociatedPrime_completedStalk {U X : Sc
     ¬ ((Scheme.Modules.pushforward j).obj F).IsCoherent
 ```
 
-**`Stacks.LocalCohomology.isCoherent_pushforward_iff_forall_two_le_ringKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/KollarCriterionAssembled.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/KollarCriterionAssembled.lean#L126).
+**`Stacks.LocalCohomology.isCoherent_pushforward_iff_forall_two_le_ringKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/KollarCriterionAssembled.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/KollarCriterionAssembled.lean#L126).
 
 > **Kollár's criterion.** Let `j : U ⟶ X` be an open immersion with `X`
 > locally Noetherian and let `F` be a coherent `𝒪_U`-module. Then `j_*F` is coherent if and only
@@ -815,7 +815,7 @@ theorem isCoherent_pushforward_iff_forall_two_le_ringKrullDim
 
 [Tag 0BL9](https://stacks.math.columbia.edu/tag/0BL9) in the Stacks Project.
 
-**`Stacks.LocalCohomology.finite_localCohomologyModule_one_iff_forall_ringKrullDim_ne_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/FirstLocalCohomologyKollar.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/FirstLocalCohomologyKollar.lean#L62).
+**`Stacks.LocalCohomology.finite_localCohomologyModule_one_iff_forall_ringKrullDim_ne_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/FirstLocalCohomologyKollar.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/PushforwardCoherence/FirstLocalCohomologyKollar.lean#L63).
 
 > **[Stacks, Tag 0BL9].** Let `A` be a Noetherian ring, `I` an ideal, `Z = V(I)` and `M` a
 > finite `A`-module. Then `H¹_Z(M)` is a finite `A`-module if and only if for every prime `𝔭`
@@ -850,7 +850,7 @@ theorem finite_localCohomologyModule_one_iff_forall_ringKrullDim_ne_one (A : Typ
 
 [Tag 0AWB](https://stacks.math.columbia.edu/tag/0AWB) in the Stacks Project.
 
-**`AlgebraicGeometry.isCoherent_pushforward_iff_two_le_ringKrullDim_stalk_pointClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/UniversallyCatenaryDimension.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/UniversallyCatenaryDimension.lean#L129). References: EGA IV (5.11.4), “(ii)”.
+**`AlgebraicGeometry.isCoherent_pushforward_iff_two_le_ringKrullDim_stalk_pointClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/UniversallyCatenaryDimension.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/CoherentPushforwardCriterion/UniversallyCatenaryDimension.lean#L129). References: EGA IV (5.11.4), “(ii)”.
 
 > **[Stacks, Tag 0AWB].** Let `j : U ⟶ X` be an open immersion with `X` locally Noetherian and
 > universally catenary, and suppose the formal fibres of `𝒪_{X, z}` satisfy `(S₁)` for every point
@@ -889,4 +889,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.8, Tag 0BL8](https://stacks.math.columbia.edu/tag/0BL8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

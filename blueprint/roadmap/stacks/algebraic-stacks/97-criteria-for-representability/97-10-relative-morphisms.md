@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.RelativeMorphism, AlgebraicGeometry.Space.RelativeMorphismDiagram, AlgebraicGeometry.Space.relativeHomData, AlgebraicGeometry.Space.relativeHomEquiv, AlgebraicGeometry.Space.isSheaf_relativeHom, AlgebraicGeometry.Space.isPullback_sheaf_relativeHomOfBaseChange, AlgebraicGeometry.Space.isPullback_sheaf_relativeHomOfBaseChange_relativeHomData, AlgebraicGeometry.Space.isPullback_sheaf_relativeHomOfBaseChange_of_isAlgebraicSpace
+lean: AlgebraicGeometry.Space.RelativeMorphism, AlgebraicGeometry.Space.RelativeMorphismDiagram, AlgebraicGeometry.Space.relativeHomData, AlgebraicGeometry.Space.relativeHomEquiv, AlgebraicGeometry.Space.isSheaf_relativeHom, AlgebraicGeometry.Space.RelativeHomConstruction.isPullback_sheaf_ofBaseChange, AlgebraicGeometry.Space.isPullback_relativeHomSheafOfBaseChange, AlgebraicGeometry.Space.isSurjective_relativeHomPostcompose_of_isFiniteLocallyFree
 statement: formalized
 proof: formalized
 ---
 
 # 97.10 Relative morphisms
 
-Section 97.10 of the Stacks Project, [Tag 05Y0](https://stacks.math.columbia.edu/tag/05Y0). 6 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 97.10 of the Stacks Project, [Tag 05Y0](https://stacks.math.columbia.edu/tag/05Y0). 6 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05Y1, an equation
 
 [Tag 05Y1](https://stacks.math.columbia.edu/tag/05Y1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeMorphism`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphism.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphism.lean#L231). The attribute's comment: “the pair `(a, b)` of the diagram”.
+**`AlgebraicGeometry.Space.RelativeMorphism`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphism.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphism.lean#L231). The attribute's comment: “the pair `(a, b)` of the diagram”.
 
 > **Stacks 05Y1.** A pair `(a, b)` for the relative morphism functor of `z : Z ⟶ Q` and
 > `x : X ⟶ Q` at a test presheaf `T`: a morphism `a : T ⟶ Q` together with a morphism
@@ -26,7 +26,7 @@ structure RelativeMorphism (Z X Q : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) (z : 
     (T : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u)
 ```
 
-**`AlgebraicGeometry.Space.RelativeMorphismDiagram`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphism.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphism.lean#L347). The attribute's comment: “the displayed diagram: `b : T ×_{a, B} Z ⟶ T ×_{a, B} X` over `T`”.
+**`AlgebraicGeometry.Space.RelativeMorphismDiagram`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphism.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphism.lean#L347). The attribute's comment: “the displayed diagram: `b : T ×_{a, B} Z ⟶ T ×_{a, B} X` over `T`”.
 
 > **Stacks 05Y1.** The diagram of a pair at a test presheaf `T`, in the shape the source
 > displays it: a morphism `a : T ⟶ Q` together with a morphism
@@ -47,7 +47,7 @@ structure RelativeMorphismDiagram (Z X Q : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u
 
 [Tag 05Y2](https://stacks.math.columbia.edu/tag/05Y2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativeHomData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphism.lean, line 513](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphism.lean#L513).
+**`AlgebraicGeometry.Space.relativeHomData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphism.lean, line 513](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphism.lean#L513).
 
 > **Stacks 05Y2.** The relative morphism functor `Mor_Q(Z, X)` of two morphisms `z : Z ⟶ Q` and
 > `x : X ⟶ Q` of algebraic spaces over `S`: a small-valued presheaf on the big fppf site of `S`
@@ -69,7 +69,7 @@ noncomputable def relativeHomData (Z X Q : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u
 
 [Tag 05Y3](https://stacks.math.columbia.edu/tag/05Y3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativeHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphismHom.lean, line 669](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphismHom.lean#L669). The attribute's comment: “part (2): the canonical bijection between the morphisms from an algebraic space `T` into `Mor_B(Z, X)` and the pairs `(a, b)` of Stacks 05Y1 at `T`”.
+**`AlgebraicGeometry.Space.relativeHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphismHom.lean, line 669](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphismHom.lean#L669). The attribute's comment: “part (2): the canonical bijection between the morphisms from an algebraic space `T` into `Mor_B(Z, X)` and the pairs `(a, b)` of Stacks 05Y1 at `T`”.
 
 > **Stacks 05Y3**, part (2). For a test object `T` — in the source an algebraic space over
 > `S` — the morphisms `T ⟶ Mor_Q(Z, X)` are canonically the pairs `(a, b)` of Stacks 05Y1 at `T`:
@@ -86,7 +86,7 @@ noncomputable def relativeHomEquiv (T : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u)
     (T ⟶ relativeHom B S hS Z X Q z x hZ hX hQ) ≃ RelativeMorphism B S hS Z X Q z x T
 ```
 
-**`AlgebraicGeometry.Space.isSheaf_relativeHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphismSheaf.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphismSheaf.lean#L269). The attribute's comment: “part (1): the relative morphism functor `Mor_B(Z, X)` is a sheaf on the big fppf site of `S`”.
+**`AlgebraicGeometry.Space.isSheaf_relativeHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphismSheaf.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeMorphismSheaf.lean#L269). The attribute's comment: “part (1): the relative morphism functor `Mor_B(Z, X)` is a sheaf on the big fppf site of `S`”.
 
 > **Stacks 05Y3**, part (1). For morphisms `z : Z ⟶ Q` and `x : X ⟶ Q` of algebraic spaces
 > over `S`, the relative morphism functor `Mor_Q(Z, X)` of Stacks 05Y2 is a sheaf on the big fppf
@@ -105,129 +105,42 @@ theorem isSheaf_relativeHom (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Conta
 
 [Tag 05Y4](https://stacks.math.columbia.edu/tag/05Y4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPullback_sheaf_relativeHomOfBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMorphismBaseChange.lean, line 581](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMorphismBaseChange.lean#L581). The attribute's comment: “the identification in `Sh((Sch/S)_fppf)`, with the sheaf property of the two relative morphism functors — part (1) of the cited Stacks 05Y3 — carried as a hypothesis”.
+**`AlgebraicGeometry.Space.RelativeHomConstruction.isPullback_sheaf_ofBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMorphismBaseChange.lean, line 801](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMorphismBaseChange.lean#L801). The attribute's comment: “the identification in `Sh((Sch/S)_fppf)`”.
 
-> **Stacks 05Y4.** The identification
+> **Stacks 05Y4.** Let `z : Z ⟶ Q`, `x : X ⟶ Q` and `q : Q' ⟶ Q` be morphisms of algebraic
+> spaces over `S`, and set `Z' = Q' ×_Q Z` and `X' = Q' ×_Q X`. Then
 >
 > ```text
 > Mor_{Q'}(Z', X') = Q' ×_Q Mor_Q(Z, X)
 > ```
 >
-> **in `Sh((Sch/S)_fppf)`**: the square of fppf sheaves formed by the two projections reading off
-> the first component of a pair of Stacks 05Y1, the morphism `q` and the morphism forgetting the
-> base change is cartesian.
+> **in `Sh((Sch/S)_fppf)`**, for arbitrary realizations `H` of `Mor_Q(Z, X)` and `H'` of
+> `Mor_{Q'}(Z', X')`: the square of fppf sheaves formed by the two projections reading off the first
+> component of a pair of Stacks 05Y1, the morphism `q` and the morphism forgetting the base change
+> is cartesian.
 >
-> This is the source's statement. Its proof is the source's: the square of presheaves is
-> cartesian, which is `AlgebraicGeometry.Space.isPullback_relativeHomOfBaseChange`, and the
-> inclusion of fppf sheaves into presheaves creates limits, so a square of sheaves is cartesian as
-> soon as the underlying square of presheaves is. The sheaf property of the two relative morphism
-> functors is part (1) of Stacks 05Y3, which this library does not carry; it is taken as the
-> hypotheses `hH` and `hH'`, and nothing else about the two functors is assumed. The sheaf
-> property of `Q` and of `Q'` is automatic for algebraic spaces.
+> Only `Z`, `X`, `Q` and `Q'` are assumed to be algebraic spaces, as in the source. The fibre
+> products `Z'` and `X'` are algebraic spaces by
+> `AlgebraicGeometry.isAlgebraicSpace_pullback`, the two relative morphism functors are
+> sheaves by part (1) of Stacks 05Y3
+> (`AlgebraicGeometry.Space.RelativeHomConstruction.isSheaf_functor`), and the square is cartesian
+> by `AlgebraicGeometry.Space.isPullback_sheaf_relativeHomOfBaseChange`.
 
 ```lean
-theorem isPullback_sheaf_relativeHomOfBaseChange (q : Q' ⟶ Q)
-    (H : RelativeHomConstruction B S hS Z X Q z x)
-    (H' : RelativeHomConstruction B S hS (pullback q z) (pullback q x) Q'
-      (pullback.fst q z) (pullback.fst q x))
-    (hQ : Presheaf.IsSheaf (BigFppfOver.topology B S hS) Q)
-    (hQ' : Presheaf.IsSheaf (BigFppfOver.topology B S hS) Q')
-    (hH : Presheaf.IsSheaf (BigFppfOver.topology B S hS) H.functor)
-    (hH' : Presheaf.IsSheaf (BigFppfOver.topology B S hS) H'.functor) :
-    IsPullback
-      (ObjectProperty.homMk H'.projection :
-        (⟨H'.functor, hH'⟩ : Sheaf (BigFppfOver.topology B S hS) (Type u)) ⟶ ⟨Q', hQ'⟩)
-      (ObjectProperty.homMk (relativeHomOfBaseChange q H H') :
-        (⟨H'.functor, hH'⟩ : Sheaf (BigFppfOver.topology B S hS) (Type u)) ⟶ ⟨H.functor, hH⟩)
-      (ObjectProperty.homMk q :
-        (⟨Q', hQ'⟩ : Sheaf (BigFppfOver.topology B S hS) (Type u)) ⟶ ⟨Q, hQ⟩)
-      (ObjectProperty.homMk H.projection :
-        (⟨H.functor, hH⟩ : Sheaf (BigFppfOver.topology B S hS) (Type u)) ⟶ ⟨Q, hQ⟩)
-```
-
-**`AlgebraicGeometry.Space.isPullback_sheaf_relativeHomOfBaseChange_relativeHomData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMorphismBaseChange.lean, line 667](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMorphismBaseChange.lean#L667). The attribute's comment: “the identification in `Sh((Sch/S)_fppf)` for the functor of Stacks 05Y2 and the fibre products of Stacks 02X2, with the sheaf property of the two relative morphism functors — part (1) of the cited Stacks 05Y3 — carried as a hypothesis”.
-
-> **Stacks 05Y4** for the relative morphism functor of Stacks 05Y2 and the fibre products of
-> algebraic spaces of Stacks 02X2: for morphisms `z : Z ⟶ Q`, `x : X ⟶ Q` and `q : Q' ⟶ Q` of
-> algebraic spaces over `S`,
->
-> ```text
-> Mor_{Q'}(Q' ×_Q Z, Q' ×_Q X) = Q' ×_Q Mor_Q(Z, X)
-> ```
->
-> **in `Sh((Sch/S)_fppf)`**. The sheaf property of the two relative morphism functors is part (1)
-> of Stacks 05Y3, which this library does not carry; it is taken as the hypotheses `hH` and `hH'`.
-> That `Q` and `Q'` are sheaves is part of being an algebraic space, so nothing else is assumed.
-
-```lean
-theorem isPullback_sheaf_relativeHomOfBaseChange_relativeHomData
-    {Z X Q Q' : AlgebraicSpaces B S hS} (z : Z ⟶ Q) (x : X ⟶ Q) (q : Q' ⟶ Q)
-    (hH : Presheaf.IsSheaf (BigFppfOver.topology B S hS)
-      (relativeHomData B S hS Z.obj X.obj Q.obj z.hom x.hom Z.property X.property
-        Q.property).functor)
-    (hH' : Presheaf.IsSheaf (BigFppfOver.topology B S hS)
-      (relativeHomData B S hS (AlgebraicSpaces.fiberProduct B S hS q z).obj
-        (AlgebraicSpaces.fiberProduct B S hS q x).obj Q'.obj
-        (pullback.fst q.hom z.hom) (pullback.fst q.hom x.hom)
-        (AlgebraicSpaces.fiberProduct B S hS q z).property
-        (AlgebraicSpaces.fiberProduct B S hS q x).property Q'.property).functor) :
-    IsPullback
-      (ObjectProperty.homMk
-        (relativeHomData B S hS (AlgebraicSpaces.fiberProduct B S hS q z).obj
-          (AlgebraicSpaces.fiberProduct B S hS q x).obj Q'.obj
-          (pullback.fst q.hom z.hom) (pullback.fst q.hom x.hom)
-          (AlgebraicSpaces.fiberProduct B S hS q z).property
-          (AlgebraicSpaces.fiberProduct B S hS q x).property Q'.property).projection :
-        (⟨_, hH'⟩ : Sheaf (BigFppfOver.topology B S hS) (Type u)) ⟶
-          ⟨Q'.obj, Q'.property.isSheaf⟩)
-      (ObjectProperty.homMk
-        (relativeHomOfBaseChange q.hom
-          (relativeHomData B S hS Z.obj X.obj Q.obj z.hom x.hom Z.property X.property Q.property)
-          (relativeHomData B S hS (AlgebraicSpaces.fiberProduct B S hS q z).obj
-            (AlgebraicSpaces.fiberProduct B S hS q x).obj Q'.obj
-            (pullback.fst q.hom z.hom) (pullback.fst q.hom x.hom)
-            (AlgebraicSpaces.fiberProduct B S hS q z).property
-            (AlgebraicSpaces.fiberProduct B S hS q x).property Q'.property)) :
-        (⟨_, hH'⟩ : Sheaf (BigFppfOver.topology B S hS) (Type u)) ⟶ ⟨_, hH⟩)
-      (ObjectProperty.homMk q.hom :
-        (⟨Q'.obj, Q'.property.isSheaf⟩ : Sheaf (BigFppfOver.topology B S hS) (Type u)) ⟶
-          ⟨Q.obj, Q.property.isSheaf⟩)
-      (ObjectProperty.homMk
-        (relativeHomData B S hS Z.obj X.obj Q.obj z.hom x.hom Z.property X.property
-          Q.property).projection :
-        (⟨_, hH⟩ : Sheaf (BigFppfOver.topology B S hS) (Type u)) ⟶
-          ⟨Q.obj, Q.property.isSheaf⟩)
-```
-
-**`AlgebraicGeometry.Space.isPullback_sheaf_relativeHomOfBaseChange_of_isAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMorphismBaseChange.lean, line 764](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMorphismBaseChange.lean#L764). The attribute's comment: “the identification in `Sh((Sch/S)_fppf)`”.
-
-> **Stacks 05Y4**, unconditionally. The identification
->
-> ```text
-> Mor_{Q'}(Z', X') = Q' ×_Q Mor_Q(Z, X)
-> ```
->
-> **in `Sh((Sch/S)_fppf)`**, for arbitrary realizations of the two relative morphism functors.
-> This is `AlgebraicGeometry.Space.isPullback_sheaf_relativeHomOfBaseChange` with its two sheaf
-> hypotheses discharged by part (1) of Stacks 05Y3, in the form
-> `AlgebraicGeometry.Space.RelativeHomConstruction.isSheaf_functor`; the algebraicity of the
-> sources and of the two bases is all that remains.
-
-```lean
-theorem isPullback_sheaf_relativeHomOfBaseChange_of_isAlgebraicSpace (q : Q' ⟶ Q)
+theorem RelativeHomConstruction.isPullback_sheaf_ofBaseChange (q : Q' ⟶ Q)
     (H : RelativeHomConstruction B S hS Z X Q z x)
     (H' : RelativeHomConstruction B S hS (pullback q z) (pullback q x) Q'
       (pullback.fst q z) (pullback.fst q x))
     (hZ : IsAlgebraicSpace B S hS Z) (hX : IsAlgebraicSpace B S hS X)
-    (hQ : IsAlgebraicSpace B S hS Q) (hQ' : IsAlgebraicSpace B S hS Q')
-    (hZ' : IsAlgebraicSpace B S hS (pullback q z))
-    (hX' : IsAlgebraicSpace B S hS (pullback q x)) :
+    (hQ : IsAlgebraicSpace B S hS Q) (hQ' : IsAlgebraicSpace B S hS Q') :
     IsPullback
       (ObjectProperty.homMk H'.projection :
-        (⟨H'.functor, H'.isSheaf_functor hZ' hX' hQ'⟩ :
+        (⟨H'.functor, H'.isSheaf_functor (isAlgebraicSpace_pullback B S hS q z hQ' hZ hQ)
+            (isAlgebraicSpace_pullback B S hS q x hQ' hX hQ) hQ'⟩ :
           Sheaf (BigFppfOver.topology B S hS) (Type u)) ⟶ ⟨Q', hQ'.isSheaf⟩)
       (ObjectProperty.homMk (relativeHomOfBaseChange q H H') :
-        (⟨H'.functor, H'.isSheaf_functor hZ' hX' hQ'⟩ :
+        (⟨H'.functor, H'.isSheaf_functor (isAlgebraicSpace_pullback B S hS q z hQ' hZ hQ)
+            (isAlgebraicSpace_pullback B S hS q x hQ' hX hQ) hQ'⟩ :
             Sheaf (BigFppfOver.topology B S hS) (Type u)) ⟶
           ⟨H.functor, H.isSheaf_functor hZ hX hQ⟩)
       (ObjectProperty.homMk q :
@@ -237,9 +150,9 @@ theorem isPullback_sheaf_relativeHomOfBaseChange_of_isAlgebraicSpace (q : Q' ⟶
           Sheaf (BigFppfOver.topology B S hS) (Type u)) ⟶ ⟨Q, hQ.isSheaf⟩)
 ```
 
-**`AlgebraicGeometry.Space.isPullback_relativeHomSheafOfBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMorphismBaseChange.lean, line 804](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMorphismBaseChange.lean#L804). The attribute's comment: “the identification in `Sh((Sch/S)_fppf)` for the functor of Stacks 05Y2 and the fibre products of Stacks 02X2”.
+**`AlgebraicGeometry.Space.isPullback_relativeHomSheafOfBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMorphismBaseChange.lean, line 840](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMorphismBaseChange.lean#L840). The attribute's comment: “the identification in `Sh((Sch/S)_fppf)` for the functor of Stacks 05Y2 and the fibre products of Stacks 02X2”.
 
-> **Stacks 05Y4**, unconditionally, for the relative morphism functor of Stacks 05Y2 and the
+> **Stacks 05Y4** for the relative morphism functor of Stacks 05Y2 and the
 > fibre products of algebraic spaces of Stacks 02X2: for morphisms `z : Z ⟶ Q`, `x : X ⟶ Q` and
 > `q : Q' ⟶ Q` of algebraic spaces over `S`,
 >
@@ -295,7 +208,7 @@ theorem isPullback_relativeHomSheafOfBaseChange {Z X Q Q' : AlgebraicSpaces B S 
 
 [Tag 05Y5](https://stacks.math.columbia.edu/tag/05Y5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSurjective_relativeHomPostcompose_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartComparisonAssembly.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartComparisonAssembly.lean#L445). The attribute's comment: “surjective, given `X' ⟶ X` surjective: at the hypotheses of the source, with nothing carried”.
+**`AlgebraicGeometry.Space.isSurjective_relativeHomPostcompose_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartComparisonAssembly.lean, line 445](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartComparisonAssembly.lean#L445). The attribute's comment: “surjective, given `X' ⟶ X` surjective: at the hypotheses of the source, with nothing carried”.
 
 > **Stacks 05Y5, third conclusion, at the hypotheses of the source.**  Let `z : Z ⟶ Q` and
 > `x' : X' ⟶ X ⟶ Q` be morphisms of algebraic spaces over `S` with `X' ⟶ X` étale and surjective
@@ -317,7 +230,7 @@ theorem isSurjective_relativeHomPostcompose_of_isFiniteLocallyFree
     IsSurjective B S hS (relativeHomPostcompose HX' HX g.hom hg)
 ```
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_relativeHomPostcompose_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean#L385). The attribute's comment: “representable by algebraic spaces: at the hypotheses of the source, with nothing carried”.
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_relativeHomPostcompose_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean#L385). The attribute's comment: “representable by algebraic spaces: at the hypotheses of the source, with nothing carried”.
 
 > **Stacks 05Y5, first conclusion, at the hypotheses of the source.** Let `Z → Q` and
 > `X' → X → Q` be morphisms of algebraic spaces over `S` with `X' → X` étale and `Z → Q` finite
@@ -333,7 +246,7 @@ theorem isRepresentableByAlgebraicSpaces_relativeHomPostcompose_of_isFiniteLocal
     IsRepresentableByAlgebraicSpaces B S hS (relativeHomPostcompose HX' HX g.hom hg)
 ```
 
-**`AlgebraicGeometry.Space.hasProperty_isEtale_relativeHomPostcompose_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean#L399). The attribute's comment: “étale: at the hypotheses of the source, with nothing carried”.
+**`AlgebraicGeometry.Space.hasProperty_isEtale_relativeHomPostcompose_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean#L399). The attribute's comment: “étale: at the hypotheses of the source, with nothing carried”.
 
 > **Stacks 05Y5, second conclusion, at the hypotheses of the source.** In the situation of
 > `isRepresentableByAlgebraicSpaces_relativeHomPostcompose_of_isFiniteLocallyFree`,
@@ -356,7 +269,7 @@ theorem hasProperty_isEtale_relativeHomPostcompose_of_isFiniteLocallyFree
 
 [Tag 05Y7](https://stacks.math.columbia.edu/tag/05Y7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_relativeHom_of_isFiniteLocallyFree_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean#L472). The attribute's comment: “at the hypotheses of the source, with nothing carried”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_relativeHom_of_isFiniteLocallyFree_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean, line 472](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean#L472). The attribute's comment: “at the hypotheses of the source, with nothing carried”.
 
 > **Stacks 05Y7, at the hypotheses of the source.** Let `S` be a scheme contained in a big fppf
 > site, and let `z : Z ⟶ Q` and `x : X ⟶ Q` be morphisms of algebraic spaces over `S`. If `z` is
@@ -381,4 +294,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 97.10, Tag 05Y0](https://stacks.math.columbia.edu/tag/05Y0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

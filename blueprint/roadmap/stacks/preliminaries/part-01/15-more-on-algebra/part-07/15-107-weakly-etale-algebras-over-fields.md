@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.107 Weakly étale algebras over fields
 
-Section 15.107 of the Stacks Project, [Tag 0CKQ](https://stacks.math.columbia.edu/tag/0CKQ). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.107 of the Stacks Project, [Tag 0CKQ](https://stacks.math.columbia.edu/tag/0CKQ). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CKR, a lemma
 
 [Tag 0CKR](https://stacks.math.columbia.edu/tag/0CKR) in the Stacks Project.
 
-**`structure_of_weaklyEtale_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/WeaklyEtale/Field.lean, line 573](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/WeaklyEtale/Field.lean#L573). References: EGA IV (18.3.3), “partial”; SGA 1 IX (1.8), “decomposition direction”; SGA 4½ Arcata (2.1.2), “partial”; SGA 4½ Arcata (2.4.2), “more general”.
+**`structure_of_weaklyEtale_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/WeaklyEtale/Field.lean, line 573](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/WeaklyEtale/Field.lean#L573). References: EGA IV (18.3.3), “partial”; SGA 1 IX (1.8), “decomposition direction”; SGA 4½ Arcata (2.1.2), “partial”; SGA 4½ Arcata (2.4.2), “more general”.
 
 > A weakly étale algebra `B` over a field `K` is reduced and integral. Every finitely
 > generated `K`-subalgebra is a finite product of finite separable extensions of `K`. Moreover,
@@ -46,7 +46,7 @@ theorem structure_of_weaklyEtale_over_field
 
 [Tag 0CKS](https://stacks.math.columbia.edu/tag/0CKS) in the Stacks Project.
 
-**`exists_greatest_weaklyEtale_subalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/WeaklyEtale/MaximalSubalgebra.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/WeaklyEtale/MaximalSubalgebra.lean#L136).
+**`exists_greatest_weaklyEtale_subalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/WeaklyEtale/MaximalSubalgebra.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/WeaklyEtale/MaximalSubalgebra.lean#L136).
 
 > An algebra over a field has a greatest weakly étale subalgebra.
 
@@ -62,7 +62,7 @@ theorem exists_greatest_weaklyEtale_subalgebra
 
 [Tag 0CKT](https://stacks.math.columbia.edu/tag/0CKT) in the Stacks Project.
 
-**`exists_maximalWeaklyEtaleSubalgebraFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/WeaklyEtale/MaximalSubalgebra.lean, line 722](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/WeaklyEtale/MaximalSubalgebra.lean#L722).
+**`exists_maximalWeaklyEtaleSubalgebraFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/WeaklyEtale/MaximalSubalgebra.lean, line 722](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/WeaklyEtale/MaximalSubalgebra.lean#L722).
 
 > The maximal weakly étale subalgebra over a field is functorial and commutes with filtered
 > colimits, reduction, and finite products. It pulls back along injective algebra maps, and over an
@@ -99,7 +99,7 @@ theorem exists_maximalWeaklyEtaleSubalgebraFunctor
 
 [Tag 0CKU](https://stacks.math.columbia.edu/tag/0CKU) in the Stacks Project.
 
-**`maximalWeaklyEtaleSubalgebra_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/WeaklyEtale/MaximalSubalgebra.lean, line 1086](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/WeaklyEtale/MaximalSubalgebra.lean#L1086).
+**`maximalWeaklyEtaleSubalgebra_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/WeaklyEtale/MaximalSubalgebra.lean, line 1079](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/WeaklyEtale/MaximalSubalgebra.lean#L1079).
 
 > Extending the base field carries the maximal weakly étale subalgebra to the maximal
 > weakly étale subalgebra of the scalar extension.
@@ -125,4 +125,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.107, Tag 0CKQ](https://stacks.math.columbia.edu/tag/0CKQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Formal power series: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/formal-power-series/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/formal-power-series/index.html).
 
 Rings of formal power series in one or several variables and Hahn series, with formal exponentials, derivatives, coefficient operators and Lagrange inversion.
 
@@ -29,7 +29,7 @@ $f(t + u)$.
 
 - Emanuele Munarini, *Combinatorial Identities for the Tricomi Polynomials*, Journal of Integer Sequences 23 (2020), Article 20.9.4, equation (5.32).
 
-Formalized by `PowerSeries.taylorFormula`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/TaylorFormula.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PowerSeries/TaylorFormula.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/formal-power-series/index.html#taylor-formula).
+Formalized by `PowerSeries.taylorFormula`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/TaylorFormula.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PowerSeries/TaylorFormula.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/formal-power-series/index.html#taylor-formula).
 
 ## Depends on
 
@@ -38,4 +38,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Formal power series](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/formal-power-series/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/formal-power-series)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/formal-power-series)

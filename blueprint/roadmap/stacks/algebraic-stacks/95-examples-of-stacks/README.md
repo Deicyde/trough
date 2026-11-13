@@ -1,6 +1,6 @@
 # 95 Examples of Stacks
 
-Chapter 95 of the Stacks Project, *Examples of Stacks*, [Tag 04SL](https://stacks.math.columbia.edu/tag/04SL): the 10 sections of its 18 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 35 tags are carried by 134 declarations of the repository (all in StacksFrontier) and 7 registered declarations.
+Chapter 95 of the Stacks Project, *Examples of Stacks*, [Tag 04SL](https://stacks.math.columbia.edu/tag/04SL): the 10 sections of its 18 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 35 tags are carried by 128 declarations of the repository (all in StacksFrontier) and 7 registered declarations.
 
 - [95.4 Quasi-coherent sheaves](95-4-quasi-coherent-sheaves.md)
 - [95.5 The stack of finitely generated quasi-coherent sheaves](95-5-the-stack-of-finitely-generated-quasi-coher.md)

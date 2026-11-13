@@ -7,7 +7,7 @@ statement: formalized
 
 # Number of groups with a given spectrum
 
-8 results, 6 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html).
+8 results, 6 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html).
 
 ## The spectrum of a group (Kourovka 12.84)
 
@@ -15,7 +15,7 @@ The spectrum of a group $G$ is the set
 $\{\operatorname{ord}(g) : g \in G\}$ of the orders of its elements, where an element of infinite
 order is counted as having order $0$.
 
-Formalized by `MathlibExt.GroupTheory.ElementOrderSetRealizationsKourovka12Problem84Wanted.elementOrders`, a definition declared in [WantedExt/GroupTheory/ElementOrderSetRealizationsKourovka12Problem84Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ElementOrderSetRealizationsKourovka12Problem84Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#element-orders).
+Formalized by `MathlibExt.GroupTheory.ElementOrderSetRealizationsKourovka12Problem84Wanted.elementOrders`, a definition declared in [WantedExt/GroupTheory/ElementOrderSetRealizationsKourovka12Problem84Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ElementOrderSetRealizationsKourovka12Problem84Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#element-orders).
 
 ## Syskin's question on groups with a given spectrum (Kourovka 12.84)
 
@@ -24,7 +24,7 @@ for every set $\Omega$ of natural numbers, if two non-isomorphic finite groups b
 element orders $\Omega$, then for every natural number $k$ there are $k$ pairwise non-isomorphic
 finite groups whose set of element orders is $\Omega$; that is, infinitely many.
 
-Formalized by `MathlibExt.GroupTheory.ElementOrderSetRealizationsKourovka12Problem84Wanted.twoRealizationsImplyInfinitelyMany`, a definition declared in [WantedExt/GroupTheory/ElementOrderSetRealizationsKourovka12Problem84Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ElementOrderSetRealizationsKourovka12Problem84Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#two-realizations-imply-infinitely-many).
+Formalized by `MathlibExt.GroupTheory.ElementOrderSetRealizationsKourovka12Problem84Wanted.twoRealizationsImplyInfinitelyMany`, a definition declared in [WantedExt/GroupTheory/ElementOrderSetRealizationsKourovka12Problem84Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ElementOrderSetRealizationsKourovka12Problem84Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#two-realizations-imply-infinitely-many).
 
 ## Two isospectral finite groups do not force infinitely many
 
@@ -42,14 +42,14 @@ $O_8^+(2)$, which have different orders. The Kourovka Archive answers 12.84 "No,
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 12.84 (well-known problem; S. A. Syskin); resolution: V. D. Mazurov, Algebra and Logic 33 (1994), no. 1, 49-55; M. A. Grechkoseeva, V. D. Mazurov, W. Shi, A. V. Vasil'ev and N. Yang, Finite groups isospectral to simple groups, arXiv:2111.15198, Kourovka Archive, Problem 12.84: No, it is not; Grechkoseeva et al., Theorem 2.1(iii): a finite group has the spectrum of S_6(2) if and only if it is S_6(2) or O_8^+(2), https://arxiv.org/abs/2111.15198.
 
-Stated but not proved: `MathlibExt.GroupTheory.ElementOrderSetRealizationsKourovka12Problem84Wanted.twoRealizationsImplyInfinitelyMany_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/ElementOrderSetRealizationsKourovka12Problem84Wanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ElementOrderSetRealizationsKourovka12Problem84Wanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#two-realizations-imply-infinitely-many-r).
+Stated but not proved: `MathlibExt.GroupTheory.ElementOrderSetRealizationsKourovka12Problem84Wanted.twoRealizationsImplyInfinitelyMany_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/ElementOrderSetRealizationsKourovka12Problem84Wanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ElementOrderSetRealizationsKourovka12Problem84Wanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#two-realizations-imply-infinitely-many-r).
 
 ## Spectrum of a group (Kourovka 13.63)
 
 For a group $G$, the spectrum $\pi_e(G)$ is the set
 of orders of elements of $G$, where an element of infinite order counts as having order $0$.
 
-Formalized by `MathlibExt.GroupTheory.ElementOrderSpectrumCountKourovka13Problem63Wanted.elementOrders`, a definition declared in [WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#element-orders-2).
+Formalized by `MathlibExt.GroupTheory.ElementOrderSpectrumCountKourovka13Problem63Wanted.elementOrders`, a definition declared in [WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#element-orders-2).
 
 ## At most $k$ isomorphism types with spectrum $\Gamma$
 
@@ -61,7 +61,7 @@ equal $\Gamma$, there are indices $i \ne j$ with $G_i \cong G_j$.
 This expresses $h(\Gamma) \le k$, where $h(\Gamma)$ is the number of isomorphism classes of finite
 groups with spectrum $\Gamma$, without counting isomorphism classes directly.
 
-Formalized by `MathlibExt.GroupTheory.ElementOrderSpectrumCountKourovka13Problem63Wanted.AtMostIsoClasses`, a definition declared in [WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#at-most-iso-classes).
+Formalized by `MathlibExt.GroupTheory.ElementOrderSpectrumCountKourovka13Problem63Wanted.AtMostIsoClasses`, a definition declared in [WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#at-most-iso-classes).
 
 ## Infinitely many isomorphism types with spectrum $\Gamma$
 
@@ -73,7 +73,7 @@ of elements of $G_i$) all equal $\Gamma$.
 This expresses $h(\Gamma) = \infty$, where $h(\Gamma)$ is the number of isomorphism classes of
 finite groups with spectrum $\Gamma$.
 
-Formalized by `MathlibExt.GroupTheory.ElementOrderSpectrumCountKourovka13Problem63Wanted.InfinitelyManyIsoClasses`, a definition declared in [WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#infinitely-many-iso-classes).
+Formalized by `MathlibExt.GroupTheory.ElementOrderSpectrumCountKourovka13Problem63Wanted.InfinitelyManyIsoClasses`, a definition declared in [WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#infinitely-many-iso-classes).
 
 ## Kourovka Problem 13.63 (bounded or infinite number of groups per spectrum)
 
@@ -85,7 +85,7 @@ $\Gamma$. Here $h(\Gamma) \le k$ means that among any $k + 1$ finite groups with
 two are isomorphic, and $h(\Gamma) = \infty$ means that for every $n$ there are $n$ pairwise
 non-isomorphic finite groups with spectrum $\Gamma$.
 
-Formalized by `MathlibExt.GroupTheory.ElementOrderSpectrumCountKourovka13Problem63Wanted.spectrumGroupCountBoundedOrInfinite`, a definition declared in [WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#spectrum-group-count-bounded-or-infinite).
+Formalized by `MathlibExt.GroupTheory.ElementOrderSpectrumCountKourovka13Problem63Wanted.spectrumGroupCountBoundedOrInfinite`, a definition declared in [WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#spectrum-group-count-bounded-or-infinite).
 
 ## No uniform bound on the number of groups with a given spectrum
 
@@ -105,7 +105,7 @@ no $k$ works.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 13.63 (W. J. Shi); resolution: A. V. Zavarnitsine, J. Group Theory 7 (2004), no. 1, 81-97, h(π_e(L_3(7^(3^r)))) = r + 1 for every r ≥ 0; Kourovka Archive, Problem 13.63 (answer: No, there is no such number).
 
-Stated but not proved: `MathlibExt.GroupTheory.ElementOrderSpectrumCountKourovka13Problem63Wanted.spectrumGroupCountBoundedOrInfinite_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#spectrum-group-count-bounded-or-infinite-2).
+Stated but not proved: `MathlibExt.GroupTheory.ElementOrderSpectrumCountKourovka13Problem63Wanted.spectrumGroupCountBoundedOrInfinite_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ElementOrderSpectrumCountKourovka13Problem63Wanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html#spectrum-group-count-bounded-or-infinite-2).
 
 ## Depends on
 
@@ -114,4 +114,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Number of groups with a given spectrum](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/orders-and-spectra/number-of-groups-with-a-given-spectrum)

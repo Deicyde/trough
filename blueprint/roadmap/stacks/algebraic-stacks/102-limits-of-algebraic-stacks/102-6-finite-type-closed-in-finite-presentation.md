@@ -8,13 +8,13 @@ proof: formalized
 
 # 102.6 Finite type closed in finite presentation
 
-Section 102.6 of the Stacks Project, [Tag 0CQ0](https://stacks.math.columbia.edu/tag/0CQ0). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 102.6 of the Stacks Project, [Tag 0CQ0](https://stacks.math.columbia.edu/tag/0CQ0). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CQ1, a lemma
 
 [Tag 0CQ1](https://stacks.math.columbia.edu/tag/0CQ1) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_isFinitePresentation_isClosedImmersion_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ClosedImmersionIntoFinitePresentationArbitraryBase.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ClosedImmersionIntoFinitePresentationArbitraryBase.lean#L60).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_isFinitePresentation_isClosedImmersion_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ClosedImmersionIntoFinitePresentationArbitraryBase.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ClosedImmersionIntoFinitePresentationArbitraryBase.lean#L60).
 
 > **Stacks 0CQ1.** Let `f : 𝒳 ⟶ Y` be a 1-morphism from an algebraic stack over a scheme `S`
 > to an algebraic space over `S`, with `f` of finite type and quasi-separated and `Y` quasi-compact
@@ -48,7 +48,7 @@ theorem exists_isFinitePresentation_isClosedImmersion_of_isFiniteType (B : BigFp
 
 [Tag 0CQ2](https://stacks.math.columbia.edu/tag/0CQ2) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.closedImmersionIntoFinitePresentationStatement_holds_overScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedClosedImmersionIntoFinitePresentationArbitraryBase.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedClosedImmersionIntoFinitePresentationArbitraryBase.lean#L248).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.closedImmersionIntoFinitePresentationStatement_holds_overScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedClosedImmersionIntoFinitePresentationArbitraryBase.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedClosedImmersionIntoFinitePresentationArbitraryBase.lean#L248).
 
 > **Stacks 0CQ2.** Let `f : 𝒳 ⟶ Y` be a 1-morphism from an algebraic stack over a scheme `S`
 > to an algebraic space over `S`, with `f` of finite type and separated and `Y` quasi-compact and
@@ -77,4 +77,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 102.6, Tag 0CQ0](https://stacks.math.columbia.edu/tag/0CQ0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

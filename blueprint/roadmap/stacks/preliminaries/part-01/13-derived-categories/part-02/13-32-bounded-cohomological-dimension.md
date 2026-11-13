@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.32 Bounded cohomological dimension
 
-Section 13.32 of the Stacks Project, [Tag 07K5](https://stacks.math.columbia.edu/tag/07K5). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.32 of the Stacks Project, [Tag 07K5](https://stacks.math.columbia.edu/tag/07K5). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07K6, a lemma
 
 [Tag 07K6](https://stacks.math.columbia.edu/tag/07K6) in the Stacks Project.
 
-**`Stacks.BoundedCohomologicalDimension.main_theorem_07k6`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedCohomologicalDimension/Resolution/DescentAndFreeze.lean, line 828](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedCohomologicalDimension/Resolution/DescentAndFreeze.lean#L828).
+**`Stacks.BoundedCohomologicalDimension.main_theorem_07k6`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedCohomologicalDimension/Resolution/DescentAndFreeze.lean, line 828](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedCohomologicalDimension/Resolution/DescentAndFreeze.lean#L828).
 
 > Let `A` be an abelian category and `d : Ob(A) → ℕ∞` a function satisfying the
 > bounded cohomological dimension hypotheses. Let `K•` be a cochain complex with
@@ -29,7 +29,7 @@ alias main_theorem_07k6
 
 [Tag 07K7](https://stacks.math.columbia.edu/tag/07K7) in the Stacks Project.
 
-**`CategoryTheory.Functor.hasRightDerivedFunctor_of_isZero_rightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedBoundedCohomologicalDimension.lean, line 1204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedBoundedCohomologicalDimension.lean#L1204). References: SGA 4½ Etat 0 (3.1.9), “(2) right, σ=F-acyclics”; SGA 4½ Etat 0 (4.2.3.2), “right case: Rf on D(A)”.
+**`CategoryTheory.Functor.hasRightDerivedFunctor_of_isZero_rightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedBoundedCohomologicalDimension.lean, line 1201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedBoundedCohomologicalDimension.lean#L1201). References: SGA 4½ Etat 0 (3.1.9), “(2) right, σ=F-acyclics”; SGA 4½ Etat 0 (4.2.3.2), “right case: Rf on D(A)”.
 
 > **Stacks 07K7.** Let `F : 𝒜 ⥤ ℬ` be a left exact functor of abelian categories, let `P` be
 > the class of objects `X` which are right acyclic for `F`, i.e. such that `X[0]` computes the right
@@ -46,7 +46,8 @@ alias main_theorem_07k6
 >    and `RF` shifts the range of degrees in which `E` lives by at most `n - 1` on the right.
 >
 > Right acyclicity is the source's notion (Stacks 0157(3) with 05SX); invertibility of the unit of
-> `RF⁺` at `X[0]` would be a weaker condition for a non-pointwise Kan extension (see the module documentation).
+> `RF⁺` at `X[0]` would be a weaker condition for a non-pointwise Kan extension (see the module
+> documentation).
 
 ```lean
 public theorem hasRightDerivedFunctor_of_isZero_rightDerived
@@ -84,7 +85,7 @@ public theorem hasRightDerivedFunctor_of_isZero_rightDerived
 
 [Tag 07K8](https://stacks.math.columbia.edu/tag/07K8) in the Stacks Project.
 
-**`CategoryTheory.Functor.hasLeftDerivedFunctor_of_isZero_leftDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedCohomologicalDimension.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedCohomologicalDimension.lean#L452). References: SGA 4½ Etat 0 (3.1.9), “(2) left, σ=F-acyclics”; SGA 4½ Etat 0 (4.2.3.2), “left case: Lf on D(A)”.
+**`CategoryTheory.Functor.hasLeftDerivedFunctor_of_isZero_leftDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedCohomologicalDimension.lean, line 452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedCohomologicalDimension.lean#L452). References: SGA 4½ Etat 0 (3.1.9), “(2) left, σ=F-acyclics”; SGA 4½ Etat 0 (4.2.3.2), “left case: Lf on D(A)”.
 
 > **Stacks 07K8.** Let `F : 𝒜 ⥤ ℬ` be a right exact functor of abelian categories, let
 > `LF' : D⁺(𝒜ᵒᵖ) ⥤ D⁺(ℬᵒᵖ)` be a right derived functor of `F.op` with unit `α'` — this is the
@@ -142,4 +143,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.32, Tag 07K5](https://stacks.math.columbia.edu/tag/07K5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

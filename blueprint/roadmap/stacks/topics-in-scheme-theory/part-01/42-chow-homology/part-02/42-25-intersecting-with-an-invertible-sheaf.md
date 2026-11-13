@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.25 Intersecting with an invertible sheaf
 
-Section 42.25 of the Stacks Project, [Tag 02SN](https://stacks.math.columbia.edu/tag/02SN). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.25 of the Stacks Project, [Tag 02SN](https://stacks.math.columbia.edu/tag/02SN). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02SO, a definition
 
 [Tag 02SO](https://stacks.math.columbia.edu/tag/02SO) in the Stacks Project.
 
-**`Stacks.Chow.firstChernClassCapOfInvertible`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernComponent/ClassRule.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernComponent/ClassRule.lean#L103).
+**`Stacks.Chow.firstChernClassCapOfInvertible`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernComponent/ClassRule.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernComponent/ClassRule.lean#L103).
 
 > The first Chern class cap product `Z_{k+1}(X) ⟶ A_k(X)`, `α ↦ c₁(L) ∩ α`, of an invertible
 > module: `Stacks.Chow.firstChernClassCap` at the component rule of `L`.
@@ -23,7 +23,7 @@ Section 42.25 of the Stacks Project, [Tag 02SN](https://stacks.math.columbia.edu
 abbrev firstChernClassCapOfInvertible : CycleGroup C p (k + 1) →+ chowGroup C p k
 ```
 
-**`Stacks.Chow.firstChernClassCapOfInvertible_integral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean#L110). The attribute's comment: “integral component formula”.
+**`Stacks.Chow.firstChernClassCapOfInvertible_integral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean#L110). The attribute's comment: “integral component formula”.
 
 > On the fundamental cycle of a single integral closed subscheme `W ⊆ X` of delta-dimension
 > `k + 1`, the cap product of an invertible module is the proper Chow pushforward along `W ⟶ X` of
@@ -46,7 +46,7 @@ theorem firstChernClassCapOfInvertible_integral (W : X.IdealSheafData)
         (firstChernComponentClass C p k L W hW hDim)
 ```
 
-**`Stacks.Chow.firstChernClassCapOfInvertible_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean#L125). The attribute's comment: “locally finite component formula”.
+**`Stacks.Chow.firstChernClassCapOfInvertible_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean#L125). The attribute's comment: “locally finite component formula”.
 
 > The locally finite component formula for the cap product of an invertible module: on a
 > presentation `α = ∑ n_j [W_j]` of a `(k+1)`-cycle, `c₁(L) ∩ α` is the class of
@@ -71,7 +71,7 @@ theorem firstChernClassCapOfInvertible_finsum {J : Type u} (W : J → X.IdealShe
 
 [Tag 02SP](https://stacks.math.columbia.edu/tag/02SP) in the Stacks Project.
 
-**`Stacks.Chow.firstChernClassCapOfInvertible_tensorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FirstChernClassTensor.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FirstChernClassTensor.lean#L498). The attribute's comment: “additivity in the invertible module”.
+**`Stacks.Chow.firstChernClassCapOfInvertible_tensorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FirstChernClassTensor.lean, line 498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FirstChernClassTensor.lean#L498). The attribute's comment: “additivity in the invertible module”.
 
 > **Stacks 02SP.** Let `(S, δ)` be the base situation of chapter 42, let `X` be locally of
 > finite type over `S` and let `L`, `N` be invertible `𝒪_X`-modules. Then
@@ -91,7 +91,7 @@ theorem firstChernClassCapOfInvertible_tensorObj (α : CycleGroup C p (k + 1)) :
       firstChernClassCapOfInvertible C p k (Scheme.Modules.tensorObj L N) α
 ```
 
-**`Stacks.Chow.firstChernClassCapOfInvertible_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FirstChernClassTensor.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FirstChernClassTensor.lean#L515). The attribute's comment: “vanishing on the structure sheaf”.
+**`Stacks.Chow.firstChernClassCapOfInvertible_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FirstChernClassTensor.lean, line 515](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FirstChernClassTensor.lean#L515). The attribute's comment: “vanishing on the structure sheaf”.
 
 > **Stacks 02SP.** `c₁(𝒪_X) ∩ α = 0` in `A_k(X)` for every `α ∈ Z_{k+1}(X)`.
 >
@@ -110,7 +110,7 @@ theorem firstChernClassCapOfInvertible_unit (α : CycleGroup C p (k + 1)) :
 
 [Tag 0EPI](https://stacks.math.columbia.edu/tag/0EPI) in the Stacks Project.
 
-**`Stacks.Chow.zeroCycle_eq_sum_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/IntersectionInvertibleSheaf.lean, line 927](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/IntersectionInvertibleSheaf.lean#L927).
+**`Stacks.Chow.zeroCycle_eq_sum_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/IntersectionInvertibleSheaf.lean, line 927](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/IntersectionInvertibleSheaf.lean#L927).
 
 > **Stacks 0EPI.** Let `(S, δ)` be the base situation of chapter 42, let `Y` be locally of
 > finite type over `S`, let `L` be an invertible `𝒪_Y`-module and `s` a global section of `L`.
@@ -152,7 +152,7 @@ theorem zeroCycle_eq_sum_components (C : ChowSituation.{u}) {Y : Scheme.{u}}
 
 [Tag 02SQ](https://stacks.math.columbia.edu/tag/02SQ) in the Stacks Project.
 
-**`Stacks.ChernCap42.firstChernClassCapOfInvertible_closedSubscheme_eq_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCap42/ClosedSubschemeZeroCycle.lean, line 862](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernCap42/ClosedSubschemeZeroCycle.lean#L862).
+**`Stacks.ChernCap42.firstChernClassCapOfInvertible_closedSubscheme_eq_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCap42/ClosedSubschemeZeroCycle.lean, line 862](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernCap42/ClosedSubschemeZeroCycle.lean#L862).
 
 > **Stacks 02SQ.** Let `(S, δ)` be the base situation of chapter 42 of the Stacks Project, let
 > `X` be locally of finite type over `S`, let `L` be an invertible `𝒪_X`-module, let `Y ⊆ X` be a
@@ -196,4 +196,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.25, Tag 02SN](https://stacks.math.columbia.edu/tag/02SN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

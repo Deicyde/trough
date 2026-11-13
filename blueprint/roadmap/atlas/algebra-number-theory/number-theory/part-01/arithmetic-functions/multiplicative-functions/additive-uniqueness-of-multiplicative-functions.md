@@ -7,7 +7,7 @@ statement: formalized
 
 # Additive uniqueness of multiplicative functions
 
-38 results, 1 proved and 37 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html).
+38 results, 1 proved and 37 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html).
 
 ## Multiplicative functions additive on pairs of squares
 
@@ -23,7 +23,7 @@ The source also assumes $f \ne 0$, which follows from $f(1) = 1$.
 
 - Elchin Hasanalizade, *On the k-Additive Uniqueness of Sums of Consecutive Squares for Multiplicative Functions*, INTEGERS 25 (2025), Article A40, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_additive_on_squares` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ConsecutiveSquareSumsAdditiveUniquenessWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ConsecutiveSquareSumsAdditiveUniquenessWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-on-squares).
+Stated but not proved: `MetaMathlibExt.multiplicative_additive_on_squares` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ConsecutiveSquareSumsAdditiveUniquenessWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ConsecutiveSquareSumsAdditiveUniquenessWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-on-squares).
 
 ## Sums of consecutive squares form a $k$-additive uniqueness set for every $k \ge 2$
 
@@ -38,7 +38,7 @@ $x_1, \dots, x_k$, then $f(n) = n$ for every natural number $n$.
 
 - Elchin Hasanalizade, *On the k-Additive Uniqueness of Sums of Consecutive Squares for Multiplicative Functions*, INTEGERS 25 (2025), Article A40, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.consecutiveSquareSums_kAdditiveUniqueness` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ConsecutiveSquareSumsAdditiveUniquenessWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ConsecutiveSquareSumsAdditiveUniquenessWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#consecutive-square-sums-k-additive-uniqu).
+Stated but not proved: `MetaMathlibExt.consecutiveSquareSums_kAdditiveUniqueness` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ConsecutiveSquareSumsAdditiveUniquenessWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ConsecutiveSquareSumsAdditiveUniquenessWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#consecutive-square-sums-k-additive-uniqu).
 
 ## Sums of two positive triangular numbers
 
@@ -46,7 +46,7 @@ A natural number $n$ is a sum of two positive
 triangular numbers if there are natural numbers $a \ge 1$ and $b \ge 1$ with
 $2n = a(a+1) + b(b+1)$, that is, $n = \frac{a(a+1)}{2} + \frac{b(b+1)}{2}$.
 
-Formalized by `MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.IsSumTwoPositiveTriangular`, a definition declared in [WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#is-sum-two-positive-triangular).
+Formalized by `MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.IsSumTwoPositiveTriangular`, a definition declared in [WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#is-sum-two-positive-triangular).
 
 ## Park's theorem on multiplicative functions additive on sums of two triangular numbers
 
@@ -59,7 +59,7 @@ $n$, or $f(n) = 0$ for every natural number $n \notin \{1, 3, 5\}$ and $f(3) f(5
 
 - Poo-Sung Park, "Multiplicative Functions Additive on the Sums of Two Positive Triangular Numbers", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.multiplicative_additive_on_sum_two_triangular_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-on-sum-two-trian).
+Stated but not proved: `MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.multiplicative_additive_on_sum_two_triangular_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-on-sum-two-trian).
 
 ## Park's Lemma 2: the identity up to 21 when the value at 2 is nonzero
 
@@ -72,7 +72,7 @@ $f(n) = n$ for every natural number $n \le 21$.
 
 - Poo-Sung Park, "Multiplicative Functions Additive on the Sums of Two Positive Triangular Numbers", Lemma 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.multiplicative_additive_on_sum_two_triangular_eq_id_le_21` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-on-sum-two-trian-2).
+Stated but not proved: `MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.multiplicative_additive_on_sum_two_triangular_eq_id_le_21` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-on-sum-two-trian-2).
 
 ## Park's Lemma 3: vanishing from 4 to 21 when the value at 2 is zero and at 3 is not
 
@@ -86,7 +86,7 @@ $4 \le n \le 21$.
 
 - Poo-Sung Park, "Multiplicative Functions Additive on the Sums of Two Positive Triangular Numbers", Lemma 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.multiplicative_additive_on_sum_two_triangular_zero_of_three_ne_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-on-sum-two-trian-3).
+Stated but not proved: `MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.multiplicative_additive_on_sum_two_triangular_zero_of_three_ne_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-on-sum-two-trian-3).
 
 ## Park's Lemma 4: vanishing from 2 to 21 except at 5
 
@@ -99,7 +99,7 @@ then $f(n) = 0$ for every natural number $n$ with $2 \le n \le 21$ and $n \neq 5
 
 - Poo-Sung Park, "Multiplicative Functions Additive on the Sums of Two Positive Triangular Numbers", Lemma 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.multiplicative_additive_on_sum_two_triangular_zero_of_five_ne_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-on-sum-two-trian-4).
+Stated but not proved: `MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.multiplicative_additive_on_sum_two_triangular_zero_of_five_ne_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-on-sum-two-trian-4).
 
 ## Park's Lemma 5: vanishing from 2 to 21 when the values at 2, 3 and 5 are zero
 
@@ -112,7 +112,7 @@ If $f(2) = f(3) = f(5) = 0$, then $f(n) = 0$ for every natural number $n$ with $
 
 - Poo-Sung Park, "Multiplicative Functions Additive on the Sums of Two Positive Triangular Numbers", Lemma 5.
 
-Stated but not proved: `MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.multiplicative_additive_on_sum_two_triangular_zero_of_all_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-on-sum-two-trian-5).
+Stated but not proved: `MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.multiplicative_additive_on_sum_two_triangular_zero_of_all_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/MultiplicativeTriangularAdditiveWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-on-sum-two-trian-5).
 
 ## Additive uniqueness of generalized nonagonal numbers
 
@@ -125,7 +125,7 @@ and $2b = k(7k - 5)$ for some integers $m$ and $k$. Then $f(n) = n$ for every na
 
 - Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_nonagonal_additive_eq_id` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-nonagonal-additive-eq-id).
+Stated but not proved: `MetaMathlibExt.multiplicative_nonagonal_additive_eq_id` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-nonagonal-additive-eq-id).
 
 ## Nonagonal additive uniqueness: the values up to 11
 
@@ -139,7 +139,7 @@ $1 \le n \le 11$.
 
 - Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_nonagonal_additive_eq_self_of_le_eleven` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-nonagonal-additive-eq-sel).
+Stated but not proved: `MetaMathlibExt.multiplicative_nonagonal_additive_eq_self_of_le_eleven` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-nonagonal-additive-eq-sel).
 
 ## Nonagonal additive uniqueness: the step at powers of 3
 
@@ -154,7 +154,7 @@ number $n < \alpha(3^r)$, then $f(3^r) = 3^r$.
 
 - Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_nonagonal_additive_three_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-nonagonal-additive-three).
+Stated but not proved: `MetaMathlibExt.multiplicative_nonagonal_additive_three_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-nonagonal-additive-three).
 
 ## Nonagonal additive uniqueness: the step at powers of 5
 
@@ -168,7 +168,7 @@ $\beta(x) = x/4$. If $f(n) = n$ for every natural number $n \le \beta(5^r)$, the
 
 - Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_nonagonal_additive_five_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-nonagonal-additive-five-p).
+Stated but not proved: `MetaMathlibExt.multiplicative_nonagonal_additive_five_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-nonagonal-additive-five-p).
 
 ## Nonagonal additive uniqueness: the step at powers of 7
 
@@ -182,7 +182,7 @@ for every natural number $n < 7^r$, then $f(7^r) = 7^r$.
 
 - Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_nonagonal_additive_seven_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-nonagonal-additive-seven).
+Stated but not proved: `MetaMathlibExt.multiplicative_nonagonal_additive_seven_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-nonagonal-additive-seven).
 
 ## Nonagonal additive uniqueness: the step at powers of 2
 
@@ -196,7 +196,7 @@ for every natural number $n < 2^r$, then $f(2^r) = 2^r$.
 
 - Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_nonagonal_additive_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-nonagonal-additive-two-po).
+Stated but not proved: `MetaMathlibExt.multiplicative_nonagonal_additive_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/NonagonalAdditiveUniquenessWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-nonagonal-additive-two-po).
 
 ## Parallelogram uniqueness of squares for multiplicative functions
 
@@ -209,7 +209,7 @@ $m > n \ge 1$, and suppose $f(4) \ne 0$. Then $f(n) = n^2$ for every natural num
 
 - Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_parallelogram_squares_eq_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-parallelogram-squares-eq).
+Stated but not proved: `MetaMathlibExt.multiplicative_parallelogram_squares_eq_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-parallelogram-squares-eq).
 
 ## Multiplicative parallelogram solutions vanishing at 4
 
@@ -227,7 +227,7 @@ symbol.
 
 - Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_parallelogram_squares_of_f_four_eq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-parallelogram-squares-of).
+Stated but not proved: `MetaMathlibExt.multiplicative_parallelogram_squares_of_f_four_eq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-parallelogram-squares-of).
 
 ## Values of a parallelogram-equation multiplicative function at powers of two
 
@@ -241,7 +241,7 @@ integer $r \ge 1$.
 
 - Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-two-pow).
+Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-two-pow).
 
 ## Parallelogram induction: the value at p² + 1
 
@@ -260,7 +260,7 @@ $f(5) = 1$.
 
 - Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_sq_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-sq-add-one).
+Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_sq_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-sq-add-one).
 
 ## Parallelogram induction: the values at p + 2 and (p + 2)²
 
@@ -275,7 +275,7 @@ If $p \equiv 3 \pmod 4$, then $f(p + 2) = (p + 2)^2$ and $f((p + 2)^2) = (p + 2)
 
 - Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_add_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-add-two).
+Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_add_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-add-two).
 
 ## Parallelogram induction: the values at k² + 1 and 4k² + 1
 
@@ -291,7 +291,7 @@ $f(4k^2 + 1) = (4k^2 + 1)^2$.
 
 - Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_k_sq_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-k-sq-add-on).
+Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_k_sq_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-k-sq-add-on).
 
 ## Parallelogram induction: the value at 5k + 3
 
@@ -307,7 +307,7 @@ $f(5k + 3) = (5k + 3)^2$.
 
 - Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_five_k_add_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-five-k-add).
+Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_five_k_add_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-five-k-add).
 
 ## Parallelogram induction: the value at 6k + 1
 
@@ -323,7 +323,7 @@ then $f(6k + 1) = (6k + 1)^2$.
 
 - Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_six_k_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-six-k-add-o).
+Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_six_k_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-six-k-add-o).
 
 ## Parallelogram induction: odd prime powers
 
@@ -342,7 +342,7 @@ $f(4) = 0$.
 
 - Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-prime-pow).
+Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-prime-pow).
 
 ## Parallelogram induction: primes congruent to 1 mod 4
 
@@ -357,7 +357,7 @@ If $p \equiv 1 \pmod 4$, then $f(p) = p^2$.
 
 - Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_prime_one_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-prime-one-m).
+Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_prime_one_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-prime-one-m).
 
 ## Parallelogram induction: primes congruent to 3 mod 4 from 19 on
 
@@ -372,7 +372,7 @@ If $p = 4k - 1$ for some natural number $k$ and $p \ge 19$, then $f(p) = p^2$.
 
 - Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_prime_three_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-prime-three).
+Stated but not proved: `MetaMathlibExt.parallelogram_multiplicative_prime_three_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/ParallelogramSquareUniquenessWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#parallelogram-multiplicative-prime-three).
 
 ## A square–triangular number identity
 
@@ -383,7 +383,7 @@ number. For every natural number $n \ge 2$, $n^2 + t_{n-2} = (n - 1)^2 + t_n$.
 
 - Mingyu Kim and Poo-Sung Park, *An Additive Uniqueness Pair of Sets for Multiplicative Functions: Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A103, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.sq_add_triangular_sub_two_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#sq-add-triangular-sub-two-eq).
+Stated but not proved: `MetaMathlibExt.sq_add_triangular_sub_two_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#sq-add-triangular-sub-two-eq).
 
 ## Square–triangular additivity fixes small squares
 
@@ -397,7 +397,7 @@ $f(m^2) = m^2$ for every integer $m$ with $1 \le m \le N - 2$.
 
 - Mingyu Kim and Poo-Sung Park, *An Additive Uniqueness Pair of Sets for Multiplicative Functions: Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A103, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_sq_triangular_additive_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-sq-triangular-additive-sq).
+Stated but not proved: `MetaMathlibExt.multiplicative_sq_triangular_additive_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-sq-triangular-additive-sq).
 
 ## Square–triangular additivity fixes odd powers of two
 
@@ -411,7 +411,7 @@ $f(2^{2k-1}) = 2^{2k-1}$ for every positive integer $k$ with $2k \le N - 2$.
 
 - Mingyu Kim and Poo-Sung Park, *An Additive Uniqueness Pair of Sets for Multiplicative Functions: Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A103, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_sq_triangular_additive_two_pow_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-sq-triangular-additive-tw).
+Stated but not proved: `MetaMathlibExt.multiplicative_sq_triangular_additive_two_pow_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-sq-triangular-additive-tw).
 
 ## Squares and triangular numbers are an additive uniqueness pair
 
@@ -424,7 +424,7 @@ $f(n) = n$ for every natural number $n$.
 
 - Mingyu Kim and Poo-Sung Park, *An Additive Uniqueness Pair of Sets for Multiplicative Functions: Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A103, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_sq_triangular_additive_eq_id` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-sq-triangular-additive-eq).
+Stated but not proved: `MetaMathlibExt.multiplicative_sq_triangular_additive_eq_id` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/SquareTriangularAdditiveUniquenessWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-sq-triangular-additive-eq).
 
 ## Dubouis's theorem on sums of nonzero squares
 
@@ -439,7 +439,7 @@ $E_m = \{1, \dots, m - 1\} \cup \{m + 1, m + 2, m + 4, m + 5, m + 7, m + 10, m +
 
 - Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Lemma 1, quoting Dubouis (1911).
 
-Stated but not proved: `MetaMathlibExt.sum_nonzero_squares_iff_not_mem_exceptional` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#sum-nonzero-squares-iff-not-mem-exceptio).
+Stated but not proved: `MetaMathlibExt.sum_nonzero_squares_iff_not_mem_exceptional` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#sum-nonzero-squares-iff-not-mem-exceptio).
 
 ## Sums of six and of eight nonzero squares
 
@@ -451,7 +451,7 @@ integers.
 
 - Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Corollary 1, as extracted inside the Lemma 1 record.
 
-Stated but not proved: `MetaMathlibExt.sum_six_and_eight_nonzero_squares` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#sum-six-and-eight-nonzero-squares).
+Stated but not proved: `MetaMathlibExt.sum_six_and_eight_nonzero_squares` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#sum-six-and-eight-nonzero-squares).
 
 ## Small values of a multiplicative function 3-additive on sums of two squares
 
@@ -465,7 +465,7 @@ $f(3) = 3$ and $f(5) = 5$.
 
 - Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_three_additive_two_squares_base` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-three-additive-two-square).
+Stated but not proved: `MetaMathlibExt.multiplicative_three_additive_two_squares_base` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-three-additive-two-square).
 
 ## Small values of a multiplicative function 4-additive on sums of two squares
 
@@ -479,7 +479,7 @@ then $f(n) = n$ for every $n \in \{2, 3, 4, 5, 6, 7, 8, 10\}$.
 
 - Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_four_additive_two_squares_base` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-four-additive-two-squares).
+Stated but not proved: `MetaMathlibExt.multiplicative_four_additive_two_squares_base` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-four-additive-two-squares).
 
 ## Multiplicative functions additive on six or eight paired squares and nonzero at $2$ are the identity
 
@@ -496,7 +496,7 @@ integer $n$.
 
 - Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_additive_paired_squares_eq_id_of_three_or_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-paired-squares-e).
+Stated but not proved: `MetaMathlibExt.multiplicative_additive_paired_squares_eq_id_of_three_or_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-paired-squares-e).
 
 ## Dichotomy for multiplicative functions additive on paired squares
 
@@ -514,7 +514,7 @@ satisfies $n \ge 2k + 14$.
 
 - Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_additive_paired_squares_dichotomy` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-paired-squares-d).
+Stated but not proved: `MetaMathlibExt.multiplicative_additive_paired_squares_dichotomy` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-paired-squares-d).
 
 ## A nonzero value in the vanishing range of the dichotomy forces the identity
 
@@ -532,7 +532,7 @@ $f(n) = n$ for every positive integer $n$.
 
 - Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_additive_paired_squares_eq_id_of_ne_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-paired-squares-e-2).
+Stated but not proved: `MetaMathlibExt.multiplicative_additive_paired_squares_eq_id_of_ne_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-paired-squares-e-2).
 
 ## Multiplicative functions additive on six paired squares and nonzero at $2$ are the identity
 
@@ -548,7 +548,7 @@ integer $n$.
 
 - Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_additive_six_squares_eq_id` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-six-squares-eq-i).
+Stated but not proved: `MetaMathlibExt.multiplicative_additive_six_squares_eq_id` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-six-squares-eq-i).
 
 ## Multiplicative functions additive on eight paired squares and nonzero at $2$ are the identity
 
@@ -564,7 +564,7 @@ integer $n$.
 
 - Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.multiplicative_additive_eight_squares_eq_id` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-eight-squares-eq).
+Stated but not proved: `MetaMathlibExt.multiplicative_additive_eight_squares_eq_id` is written with `theorem_wanted` in [WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MultiplicativeAdditivePairedSquaresWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html#multiplicative-additive-eight-squares-eq).
 
 ## Depends on
 
@@ -573,4 +573,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Additive uniqueness of multiplicative functions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/additive-uniqueness-of-multiplicative-functions)

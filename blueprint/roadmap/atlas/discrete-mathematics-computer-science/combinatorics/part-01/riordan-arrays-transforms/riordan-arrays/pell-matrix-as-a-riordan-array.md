@@ -8,7 +8,7 @@ proof: formalized
 
 # Pell matrix as a Riordan array
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/pell-matrix-as-a-riordan-array/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/pell-matrix-as-a-riordan-array/index.html).
 
 ## Generalized Pell matrix as a Riordan array, for every k
 
@@ -22,7 +22,7 @@ and $0$ otherwise. That is, the lower-triangular matrix whose entry in row $n$ a
 is $p(m, n - m)$ is the Riordan array
 $\left(\frac{1}{1-x}, \frac{x(1 + x + \dots + x^k)}{1-x}\right)$.
 
-Formalized by `MetaMathlibExt.pell_riordan_general`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/PellRiordan.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PellRiordan.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/pell-matrix-as-a-riordan-array/index.html#pell-riordan-general).
+Formalized by `MetaMathlibExt.pell_riordan_general`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/PellRiordan.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PellRiordan.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/pell-matrix-as-a-riordan-array/index.html#pell-riordan-general).
 
 ## Generalized Pell matrix as a Riordan array
 
@@ -40,7 +40,7 @@ $\left(\frac{1}{1-x}, \frac{x(1 + x + \dots + x^k)}{1-x}\right)$.
 
 - Jhon J. Bravo, Jose L. Herrera, and José L. Ramírez, "Combinatorial Interpretation of Generalized Pell Numbers," Journal of Integer Sequences 23 (2020), Article 20.2.1, Theorem, lines 269–272, https://cs.uwaterloo.ca/journals/JIS/VOL23/Bravo/bravo4.tex It follows from `pell_riordan_general`; the hypothesis `hk` is unused and keeps the source's shape.
 
-Formalized by `MetaMathlibExt.pell_riordan`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/PellRiordan.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PellRiordan.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/pell-matrix-as-a-riordan-array/index.html#pell-riordan).
+Formalized by `MetaMathlibExt.pell_riordan`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/PellRiordan.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PellRiordan.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/pell-matrix-as-a-riordan-array/index.html#pell-riordan).
 
 ## Depends on
 
@@ -49,4 +49,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Pell matrix as a Riordan array](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/pell-matrix-as-a-riordan-array/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/pell-matrix-as-a-riordan-array)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/pell-matrix-as-a-riordan-array)

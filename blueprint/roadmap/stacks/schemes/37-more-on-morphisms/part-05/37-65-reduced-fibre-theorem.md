@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.65 Reduced fibre theorem
 
-Section 37.65 of the Stacks Project, [Tag 09IJ](https://stacks.math.columbia.edu/tag/09IJ). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.65 of the Stacks Project, [Tag 09IJ](https://stacks.math.columbia.edu/tag/09IJ). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09IK, an equation
 
 [Tag 09IK](https://stacks.math.columbia.edu/tag/09IK) in the Stacks Project.
 
-**`AlgebraicGeometry.normalizedBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/NormalizedBaseChange.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/NormalizedBaseChange.lean#L49). The attribute's comment: “the normalization morphism to the base change”.
+**`AlgebraicGeometry.normalizedBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/NormalizedBaseChange.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/NormalizedBaseChange.lean#L49). The attribute's comment: “the normalization morphism to the base change”.
 
 > The normalized pullback of a finite-type scheme over a Dedekind domain along the
 > integral closure in a finite fraction-field extension, as a scheme over the pullback.
@@ -35,7 +35,7 @@ noncomputable def normalizedBaseChange
     Over (pullback p g)
 ```
 
-**`AlgebraicGeometry.normalizedBaseChangeOverIntegralClosure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/NormalizedBaseChange.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/NormalizedBaseChange.lean#L79). The attribute's comment: “the morphism to the integral closure”.
+**`AlgebraicGeometry.normalizedBaseChangeOverIntegralClosure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/NormalizedBaseChange.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/NormalizedBaseChange.lean#L79). The attribute's comment: “the morphism to the integral closure”.
 
 > The structure morphism to the integral closure in the normalized base-change diagram.
 
@@ -57,7 +57,7 @@ noncomputable def normalizedBaseChangeOverIntegralClosure
 
 [Tag 09IL](https://stacks.math.columbia.edu/tag/09IL) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finiteExtension_smoothAt_genericPoints_fiber_normalization_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreTheorem.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreTheorem.lean#L379).
+**`AlgebraicGeometry.exists_finiteExtension_smoothAt_genericPoints_fiber_normalization_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreTheorem.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreTheorem.lean#L379).
 
 > **Stacks Project, Tag 09IL (the reduced fibre theorem).**  Let `A` be a Nagata Dedekind
 > domain with fraction field `K` and let `f : X ⟶ Spec A` be flat, quasi-compact and locally of
@@ -100,7 +100,7 @@ theorem exists_finiteExtension_smoothAt_genericPoints_fiber_normalization_pullba
 
 [Tag 0BRQ](https://stacks.math.columbia.edu/tag/0BRQ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finiteExtension_smoothAt_genericPoints_fiber_normalization_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreCurve.lean, line 835](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreCurve.lean#L835). The attribute's comment: “corrected statement: the source omits quasi-compactness and is false without it (`not_forall_exists_finiteExtension_smoothAt_genericPoints_fiber_normalization`); stated here with `X` quasi-compact, which is implied by `S` quasi-compact (see the `_of_compactSpace` corollary)”.
+**`AlgebraicGeometry.exists_finiteExtension_smoothAt_genericPoints_fiber_normalization_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreCurve.lean, line 835](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreCurve.lean#L835). The attribute's comment: “corrected statement: the source omits quasi-compactness and is false without it (`not_forall_exists_finiteExtension_smoothAt_genericPoints_fiber_normalization`); stated here with `X` quasi-compact, which is implied by `S` quasi-compact (see the `_of_compactSpace` corollary)”.
 
 > **Stacks Project, Tag 0BRQ (variant of the reduced fibre theorem over curves), corrected:
 > the source omits quasi-compactness, and the statement is false without it.**  Let `f : X ⟶ S` be
@@ -161,7 +161,7 @@ theorem exists_finiteExtension_smoothAt_genericPoints_fiber_normalization_of_isR
 
 [Tag 0BRR](https://stacks.math.columbia.edu/tag/0BRR) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finiteSeparableExtension_smoothAt_genericPoints_fiber_normalization_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreSeparableTheorem.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreSeparableTheorem.lean#L411).
+**`AlgebraicGeometry.exists_finiteSeparableExtension_smoothAt_genericPoints_fiber_normalization_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreSeparableTheorem.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreSeparableTheorem.lean#L411).
 
 > **Stacks Project, Tag 0BRR (the reduced fibre theorem with a separable extension).**  Let `A`
 > be a Dedekind domain with fraction field `K` and let `f : X ⟶ Spec A` be flat, quasi-compact and
@@ -210,7 +210,7 @@ theorem exists_finiteSeparableExtension_smoothAt_genericPoints_fiber_normalizati
 
 [Tag 0BRS](https://stacks.math.columbia.edu/tag/0BRS) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finiteSeparableExtension_smoothAt_genericPoints_fiber_normalization_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreCurveSeparable.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreCurveSeparable.lean#L143). The attribute's comment: “corrected statement: the source omits quasi-compactness and is false without it (`not_forall_exists_finiteSeparableExtension_smoothAt_genericPoints_fiber_normalization`); stated here with `X` quasi-compact, which is implied by `S` quasi-compact (see the `_of_compactSpace` corollary)”.
+**`AlgebraicGeometry.exists_finiteSeparableExtension_smoothAt_genericPoints_fiber_normalization_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreCurveSeparable.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ReducedFibreCurveSeparable.lean#L143). The attribute's comment: “corrected statement: the source omits quasi-compactness and is false without it (`not_forall_exists_finiteSeparableExtension_smoothAt_genericPoints_fiber_normalization`); stated here with `X` quasi-compact, which is implied by `S` quasi-compact (see the `_of_compactSpace` corollary)”.
 
 > **Stacks Project, Tag 0BRS (variant with separable extensions over curves), corrected: the
 > source omits quasi-compactness, and the statement is false without it.**  Let `f : X ⟶ S` be
@@ -271,4 +271,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.65, Tag 09IJ](https://stacks.math.columbia.edu/tag/09IJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

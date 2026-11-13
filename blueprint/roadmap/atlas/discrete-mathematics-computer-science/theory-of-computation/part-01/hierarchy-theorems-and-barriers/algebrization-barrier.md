@@ -7,7 +7,7 @@ statement: formalized
 
 # Algebrization barrier
 
-6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html).
+6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html).
 
 ## Multilinear extension of a Boolean function
 
@@ -19,7 +19,7 @@ $$\sum_{a \in \{0,1\}^n} f(a) \prod_{i=0}^{n-1} \ell_{a_i}(x_i),$$
 
 where $f(a) \in \{0, 1\}$ is read in $F$, $\ell_1(t) = t$ and $\ell_0(t) = 1 - t$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Algebrization.multilinearExt`, a definition declared in [WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html#multilinear-ext).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Algebrization.multilinearExt`, a definition declared in [WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html#multilinear-ext).
 
 ## Restriction of an oracle to inputs of length $n$
 
@@ -28,7 +28,7 @@ booleans and a natural number $n$, the restriction of $B$ to inputs of length $n
 on $\{0,1\}^n$ sending $a = (a_0, \dots, a_{n-1})$ to $B(a_0 a_1 \cdots a_{n-1})$, the value of
 $B$ at the bitstring $a$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Algebrization.baseAt`, a definition declared in [WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html#base-at).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Algebrization.baseAt`, a definition declared in [WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html#base-at).
 
 ## Coefficient bitstring of a polynomial over $\mathbb{F}_2$
 
@@ -37,7 +37,7 @@ $\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$ and a natural number $n$, the coefficien
 with parameter $n$ is the bitstring $b_0 b_1 \cdots b_{n+1}$ of length $n + 2$ in which $b_i$ is
 true exactly when the coefficient of $X^i$ in $q$ equals $1$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Algebrization.polyBits`, a definition declared in [WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html#poly-bits).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Algebrization.polyBits`, a definition declared in [WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html#poly-bits).
 
 ## Answer bits of the algebraic extension oracle
 
@@ -55,7 +55,7 @@ $1, \alpha, \dots, \alpha^n$ of $F$ over $\mathbb{F}_2$, equals $1$.
 The index $j$ ranges over $0, \dots, n$ only: an out-of-range index must be rejected by the
 caller, not reduced modulo $n + 1$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Algebrization.extAnswer`, a definition declared in [WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html#ext-answer).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Algebrization.extAnswer`, a definition declared in [WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html#ext-answer).
 
 ## Algebraic extension oracles
 
@@ -81,7 +81,7 @@ Every malformed query is answered false, so an oracle machine cannot route aroun
 structure through invalid encodings, and an out-of-range $j$ does not wrap around to
 coordinate $0$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Algebrization.IsAlgebraicExtension`, a definition declared in [WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html#is-algebraic-extension).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Algebrization.IsAlgebraicExtension`, a definition declared in [WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html#is-algebraic-extension).
 
 ## Aaronson-Wigderson: the algebrization barrier
 
@@ -95,7 +95,7 @@ $\mathsf{P}^{\tilde B}$.
 
 - S. Aaronson and A. Wigderson, "Algebrization: A new barrier in complexity theory", Proceedings of the Fortieth Annual ACM Symposium on Theory of Computing (STOC 2008), 731-740 (journal version in ACM Transactions on Computation Theory 1 (2009)).
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Algebrization.aaronson_wigderson_algebrization` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html#aaronson-wigderson-algebrization).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Algebrization.aaronson_wigderson_algebrization` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/AlgebrizationWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html#aaronson-wigderson-algebrization).
 
 ## Depends on
 
@@ -104,4 +104,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Algebrization barrier](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/algebrization-barrier)

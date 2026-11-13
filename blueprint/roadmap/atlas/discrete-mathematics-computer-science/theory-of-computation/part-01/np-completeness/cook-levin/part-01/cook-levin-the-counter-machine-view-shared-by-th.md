@@ -8,14 +8,14 @@ proof: formalized
 
 # Cook-Levin: the counter-machine view shared by the clause generators
 
-8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html).
+8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html).
 
 ## Stages of the multiplication routine
 
 The stages of the counter-machine multiplication
 routine form the four-element type with elements head, body, l2 and rest.
 
-Formalized by `Cslib.Complexity.CookLevin.CounterView.MS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#ms).
+Formalized by `Cslib.Complexity.CookLevin.CounterView.MS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#ms).
 
 ## Stacks of a counter machine
 
@@ -23,7 +23,7 @@ For a type $C$, the stacks of a counter machine with
 counters indexed by $C$ are an output stack $\mathrm{out}$ and one counter stack $c_x$ for each
 $x \in C$.
 
-Formalized by `Cslib.Complexity.CookLevin.CounterView.SK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#sk).
+Formalized by `Cslib.Complexity.CookLevin.CounterView.SK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#sk).
 
 ## Alphabets of a counter machine
 
@@ -31,7 +31,7 @@ For a type $C$, the output stack $\mathrm{out}$ of a
 counter machine with counters indexed by $C$ has the Booleans as its alphabet, and each counter
 stack $c_x$ has a one-element alphabet.
 
-Formalized by `Cslib.Complexity.CookLevin.CounterView.SΓ`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#s).
+Formalized by `Cslib.Complexity.CookLevin.CounterView.SΓ`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#s).
 
 ## Stacks holding given counter values
 
@@ -40,7 +40,7 @@ $f : C \to \mathbb{N}$ and a list $o$ of Booleans, $\mathrm{st}(f, o)$ is the st
 counter machine whose output stack $\mathrm{out}$ holds $o$ and whose counter stack $c_x$ holds
 exactly $f(x)$ copies of the unit symbol, for each $x \in C$.
 
-Formalized by `Cslib.Complexity.CookLevin.CounterView.st`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#st).
+Formalized by `Cslib.Complexity.CookLevin.CounterView.st`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#st).
 
 ## The multiplication routine of a counter machine
 
@@ -61,7 +61,7 @@ Started at head with $a, a_d, b, c, t$ distinct and $a_d$ and $t$ empty, the rou
 $\mathrm{next}$ having added $a \cdot b$ to $c$, with every other counter unchanged; $a_d$
 serves as the loop index and $t$ as scratch.
 
-Formalized by `Cslib.Complexity.CookLevin.CounterView.mulS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#mul-s).
+Formalized by `Cslib.Complexity.CookLevin.CounterView.mulS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#mul-s).
 
 ## Gap emission in the counter view
 
@@ -88,7 +88,7 @@ $g(3q + 6) + 3q + 4$ steps from label $\mathrm{dec}$, flag $v$ and stacks $\math
 to label $\mathrm{next}$, flag false and stacks $\mathrm{st}(F', y^g o)$, where $F'$ agrees
 with $F$ except that $F'(P) = q$, and $y^g o$ is $g$ copies of $y$ followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.CounterView.gapS`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#gap-s).
+Formalized by `Cslib.Complexity.CookLevin.CounterView.gapS`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#gap-s).
 
 ## Budgeted runs transport along equal counter values
 
@@ -99,7 +99,7 @@ with $K + n \le X$ such that $M$ goes in exactly $n$ steps from the configuratio
 flag $v$ and stacks $\mathrm{st}(F', o)$ to $d$, then the same holds from the configuration with
 label $l$, flag $v$ and stacks $\mathrm{st}(F, o)$.
 
-Formalized by `Cslib.Complexity.CookLevin.CounterView.bud_st`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#bud-st).
+Formalized by `Cslib.Complexity.CookLevin.CounterView.bud_st`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#bud-st).
 
 ## A runtime `for` loop in the counter view
 
@@ -124,7 +124,7 @@ $\mathrm{st}(f, \mathrm{blk}(0)\, \mathrm{blk}(1) \cdots \mathrm{blk}(n-1)\, o)$
 The body runs with $c$ holding $t = n - 1, \dots, 0$ in that order, so the blocks end up in
 ascending order.
 
-Formalized by `Cslib.Complexity.CookLevin.CounterView.stLoop`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#st-loop).
+Formalized by `Cslib.Complexity.CookLevin.CounterView.stLoop`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/CounterView.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/CounterView.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html#st-loop).
 
 ## Depends on
 
@@ -133,4 +133,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cook-Levin: the counter-machine view shared by the clause generators](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-counter-machine-view-shared-by-th)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 77.5 Flat finitely presented modules
 
-Section 77.5 of the Stacks Project, [Tag 0CVX](https://stacks.math.columbia.edu/tag/0CVX). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 77.5 of the Stacks Project, [Tag 0CVX](https://stacks.math.columbia.edu/tag/0CVX). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CVY, a proposition
 
 [Tag 0CVY](https://stacks.math.columbia.edu/tag/0CVY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isAffine_etale_chart_square_at_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean#L222). The attribute's comment: “the commutative diagram of pointed schemes of the conclusion — affine étale charts of the source and of the target, through the given point and through its image, with a morphism between them over f — and nothing of the projectivity of the sections, which is the case of schemes, Tag 05ID”.
+**`AlgebraicGeometry.Space.exists_isAffine_etale_chart_square_at_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean#L222). The attribute's comment: “the commutative diagram of pointed schemes of the conclusion — affine étale charts of the source and of the target, through the given point and through its image, with a morphism between them over f — and nothing of the projectivity of the sections, which is the case of schemes, Tag 05ID”.
 
 > **Stacks Project, Tag 0CVY: the diagram of the conclusion.** Every point `x` of the source
 > of a morphism `f : X ⟶ Y` of algebraic spaces over `S` lies in the image of a commuting square
@@ -56,7 +56,7 @@ theorem exists_isAffine_etale_chart_square_at_point
           pointsMap B S hS X f x
 ```
 
-**`AlgebraicGeometry.Space.exists_isAffine_etale_charts_projective_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean#L367). The attribute's comment: “the full conclusion — the pointed affine étale diagram and the projectivity of the sections — with the case of schemes, Tag 05ID, supplied by exists\_isAffine\_etale\_hom\_projective\_sections, and with the tag's conditions (2) and (3) on the module in their étale-chartwise form”.
+**`AlgebraicGeometry.Space.exists_isAffine_etale_charts_projective_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean#L367). The attribute's comment: “the full conclusion — the pointed affine étale diagram and the projectivity of the sections — with the case of schemes, Tag 05ID, supplied by exists\_isAffine\_etale\_hom\_projective\_sections, and with the tag's conditions (2) and (3) on the module in their étale-chartwise form”.
 
 > **Stacks Project, Tag 0CVY.** Let `f : X ⟶ Y` be a morphism of
 > algebraic spaces over `S`, let `F` be an `𝒪_X`-module and let `x` be a point of `|X|`. Assume
@@ -132,7 +132,7 @@ theorem exists_isAffine_etale_charts_projective_sections
        Module.Projective Γ((BigFppfOver.toScheme B S hS).obj E', ⊤) Γ(M, ⊤))
 ```
 
-**`AlgebraicGeometry.Space.exists_isAffine_etale_charts_projective_sections_of_isFlatOverAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean#L435).
+**`AlgebraicGeometry.Space.exists_isAffine_etale_charts_projective_sections_of_isFlatOverAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean#L435).
 
 > **Stacks Project, Tag 0CVY.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`
 > which is locally of finite presentation, let `𝓕` be an `𝒪_X`-module which is quasi-coherent and
@@ -189,7 +189,7 @@ theorem exists_isAffine_etale_charts_projective_sections_of_isFlatOverAt
 
 [Tag 0CVZ](https://stacks.math.columbia.edu/tag/0CVZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isAffine_etale_chart_square_along_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSectionsAlongFibre.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSectionsAlongFibre.lean#L267). The attribute's comment: “the affine étale diagram covering the fibre — affine étale charts of the source and of the target with a morphism between them over f, through a point of the target chart over y and with the source chart covering the fibre — and nothing of the projectivity of the sections, which is the case of schemes, Tag 05KW”.
+**`AlgebraicGeometry.Space.exists_isAffine_etale_chart_square_along_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSectionsAlongFibre.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSectionsAlongFibre.lean#L267). The attribute's comment: “the affine étale diagram covering the fibre — affine étale charts of the source and of the target with a morphism between them over f, through a point of the target chart over y and with the source chart covering the fibre — and nothing of the projectivity of the sections, which is the case of schemes, Tag 05KW”.
 
 > **Stacks Project, Tag 0CVZ: the diagram of the conclusion.** Let `f : X ⟶ Y` be a
 > quasi-compact morphism of algebraic spaces over `S` and let `y` be a point of `|Y|`. Then there
@@ -236,7 +236,7 @@ theorem exists_isAffine_etale_chart_square_along_fibre
             pointsMap B S hS _ (yoneda.map k) x' = y'
 ```
 
-**`AlgebraicGeometry.Space.exists_isAffine_etale_charts_projective_sections_along_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSectionsAlongFibre.lean, line 456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSectionsAlongFibre.lean#L456). The attribute's comment: “the full conclusion — the affine étale diagram covering the fibre and the projectivity of the sections — with quasi-coherence and the tag's conditions (2) and (3) on the module in their étale-chartwise form, for a consumer holding chart data; the case of schemes, Tag 05KW, is discharged inside the big fppf site”.
+**`AlgebraicGeometry.Space.exists_isAffine_etale_charts_projective_sections_along_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSectionsAlongFibre.lean, line 456](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSectionsAlongFibre.lean#L456). The attribute's comment: “the full conclusion — the affine étale diagram covering the fibre and the projectivity of the sections — with quasi-coherence and the tag's conditions (2) and (3) on the module in their étale-chartwise form, for a consumer holding chart data; the case of schemes, Tag 05KW, is discharged inside the big fppf site”.
 
 > **Stacks Project, Tag 0CVZ.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`,
 > let `𝓕` be an `𝒪_X`-module and let `y` be a point of `|Y|`. Assume
@@ -310,7 +310,7 @@ theorem exists_isAffine_etale_charts_projective_sections_along_fibre
        Module.Projective Γ((BigFppfOver.toScheme B S hS).obj Y', ⊤) Γ(M, ⊤))
 ```
 
-**`AlgebraicGeometry.Space.exists_isAffine_etale_charts_projective_sections_along_fibre_of_isFlatOverAtPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSectionsAlongFibre.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSectionsAlongFibre.lean#L619). The attribute's comment: “the full conclusion — the affine étale diagram covering the fibre and the projectivity of the sections — at the tag's own three conditions throughout: the module quasi-coherent and of finite presentation on the small étale site, and condition (3) in the some-chart form which Stacks 05VV gives it; no chartwise condition on the module appears, and the case of schemes, Tag 05KW, is discharged inside the big fppf site”.
+**`AlgebraicGeometry.Space.exists_isAffine_etale_charts_projective_sections_along_fibre_of_isFlatOverAtPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSectionsAlongFibre.lean, line 619](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSectionsAlongFibre.lean#L619). The attribute's comment: “the full conclusion — the affine étale diagram covering the fibre and the projectivity of the sections — at the tag's own three conditions throughout: the module quasi-coherent and of finite presentation on the small étale site, and condition (3) in the some-chart form which Stacks 05VV gives it; no chartwise condition on the module appears, and the case of schemes, Tag 05KW, is discharged inside the big fppf site”.
 
 > **Stacks Project, Tag 0CVZ.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`,
 > let `𝓕` be a quasi-coherent `𝒪_X`-module and let `y` be a point of `|Y|` with fibre
@@ -378,4 +378,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 77.5, Tag 0CVX](https://stacks.math.columbia.edu/tag/0CVX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

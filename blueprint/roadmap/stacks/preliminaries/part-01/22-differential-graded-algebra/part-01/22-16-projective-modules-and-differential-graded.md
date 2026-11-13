@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.16 Projective modules and differential graded algebras
 
-Section 22.16 of the Stacks Project, [Tag 0FQB](https://stacks.math.columbia.edu/tag/0FQB). 2 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 22.16 of the Stacks Project, [Tag 0FQB](https://stacks.math.columbia.edu/tag/0FQB). 2 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09K0, a lemma
 
 [Tag 09K0](https://stacks.math.columbia.edu/tag/09K0) in the Stacks Project.
 
-**`Stacks.DifferentialGraded.DGModule.isAdmissibleEpi_of_surjective_of_isProjectiveAsGradedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DifferentialGraded/GradedProjective.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DifferentialGraded/GradedProjective.lean#L75).
+**`Stacks.DifferentialGraded.DGModule.isAdmissibleEpi_of_surjective_of_isProjectiveAsGradedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DifferentialGraded/GradedProjective.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DifferentialGraded/GradedProjective.lean#L75).
 
 > A surjective homomorphism of lawful differential graded modules whose target is
 > projective as a graded module is an admissible epimorphism.
@@ -35,7 +35,7 @@ theorem isAdmissibleEpi_of_surjective_of_isProjectiveAsGradedModule
 
 [Tag 09K1](https://stacks.math.columbia.edu/tag/09K1) in the Stacks Project.
 
-**`Stacks.DifferentialGraded.HomComplex.DGModule.hom_shift_equiv_cocycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/HomCohomology.lean, line 683](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/HomCohomology.lean#L683).
+**`Stacks.DifferentialGraded.HomComplex.DGModule.hom_shift_equiv_cocycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/HomCohomology.lean, line 683](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/HomCohomology.lean#L683).
 
 > **Statement 1.**  Evaluation at the generator `1` gives a natural
 > `R`-linear isomorphism
@@ -55,7 +55,7 @@ theorem hom_shift_equiv_cocycles (M : DGModule A) (k : ℤ) :
           eN (g.comp f) = cocyclesMap g (-k) (e f))
 ```
 
-**`Stacks.DifferentialGraded.HomComplex.DGModule.homotopyClasses_shift_equiv_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/HomCohomology.lean, line 758](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/HomCohomology.lean#L758).
+**`Stacks.DifferentialGraded.HomComplex.DGModule.homotopyClasses_shift_equiv_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/HomCohomology.lean, line 758](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/HomCohomology.lean#L758).
 
 > **Statement 2.**  Passing to homotopy classes, the isomorphism of
 > Statement 1 descends to a natural `R`-linear isomorphism
@@ -83,7 +83,7 @@ theorem homotopyClasses_shift_equiv_cohomology (M : DGModule A) (k : ℤ) :
             = cohomologyMap g (-k) (e (Submodule.Quotient.mk f)))
 ```
 
-**`DifferentialGradedModule.isZero_hom_toHomotopyCategory_shift_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean#L168). The attribute's comment: “vanishing of the homotopy classes”.
+**`DifferentialGradedModule.isZero_hom_toHomotopyCategory_shift_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean#L168). The attribute's comment: “vanishing of the homotopy classes”.
 
 > Every morphism of the homotopy category from the image of a shift of the regular module to
 > an acyclic object is zero.
@@ -94,7 +94,7 @@ theorem isZero_hom_toHomotopyCategory_shift_regularModule (A : DifferentialGrade
     ∀ f : (toHomotopyCategory A).obj (shift (regularModule A) k) ⟶ N, f = 0
 ```
 
-**`DifferentialGradedModule.leftOrthogonal_acyclic_toHomotopyCategory_shift_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean#L182). The attribute's comment: “left orthogonality of the shifted regular module”.
+**`DifferentialGradedModule.leftOrthogonal_acyclic_toHomotopyCategory_shift_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean#L182). The attribute's comment: “left orthogonality of the shifted regular module”.
 
 > The image of a shift of the regular module lies in the left orthogonal of the acyclic
 > objects of the homotopy category.
@@ -105,7 +105,7 @@ theorem leftOrthogonal_acyclic_toHomotopyCategory_shift_regularModule
     (acyclic' A).leftOrthogonal ((toHomotopyCategory A).obj (shift (regularModule A) k))
 ```
 
-**`DifferentialGradedModule.isZero_hom_shift_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean#L190).
+**`DifferentialGradedModule.isZero_hom_shift_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean#L190).
 
 > Every morphism of the homotopy category from the `k`-th shift, taken in `K(A, d)`, of the
 > regular module to an acyclic object is zero.
@@ -116,7 +116,7 @@ theorem isZero_hom_shift_regularModule (A : DifferentialGradedAlgebra R) (k : �
     ∀ f : ((toHomotopyCategory A).obj (regularModule A))⟦k⟧ ⟶ N, f = 0
 ```
 
-**`DifferentialGradedModule.leftOrthogonal_shift_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean#L204). The attribute's comment: “left orthogonality, with the shift taken in the homotopy category”.
+**`DifferentialGradedModule.leftOrthogonal_shift_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/RegularModuleHom.lean#L204). The attribute's comment: “left orthogonality, with the shift taken in the homotopy category”.
 
 > The `k`-th shift, taken in `K(A, d)`, of the regular module lies in the left orthogonal of
 > the acyclic objects.
@@ -133,4 +133,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.16, Tag 0FQB](https://stacks.math.columbia.edu/tag/0FQB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

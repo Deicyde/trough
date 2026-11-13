@@ -7,7 +7,7 @@ statement: formalized
 
 # Presentations and decision problems: its own results
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/index.html).
 
 Combinatorial group theory: presentations, one-relator groups, HNN extensions and embeddings, SQ-universality, finitely presented simple groups, the word and conjugacy problems (Novikov–Boone, Boone–Higman), Andrews–Curtis moves, generic properties of presentations and torsion quotients.
 
@@ -21,7 +21,7 @@ injective group homomorphism $f \colon G \to H$.
 
 - G. Higman, B. H. Neumann, H. Neumann, J. London Math. Soc. 24 (1949) 247–254 via HNN extensions; Lean states countable embedding into 2-generator group including finite case.
 
-Formalized by `MathlibExt.GroupTheory.HNNEmbeddingWanted.higman_neumann_neumann_embedding`, a theorem declared in [MathlibExt/GroupTheory/HNNEmbedding.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/HNNEmbedding.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/index.html#higman-neumann-neumann-embedding).
+Formalized by `MathlibExt.GroupTheory.HNNEmbeddingWanted.higman_neumann_neumann_embedding`, a theorem declared in [MathlibExt/GroupTheory/HNNEmbedding.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/HNNEmbedding.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/index.html#higman-neumann-neumann-embedding).
 
 ## Infinite finitely presented simple groups exist
 
@@ -34,7 +34,7 @@ and infinite.
 
 - G. Higman, 'A finitely generated infinite simple group', J. London Math. Soc. 26 (1951) 61–64; G. Higman, *Finitely Presented Infinite Simple Groups*, Notes on Pure Mathematics 8, Australian National University, 1974. §122 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `higman_infinite_simple` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.GroupTheory.HigmanInfiniteSimpleWanted.GroupTheory.HigmanInfiniteSimpleProblem.higman_infinite_simple` is written with `theorem_wanted` in [WantedExt/GroupTheory/HigmanInfiniteSimpleWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/HigmanInfiniteSimpleWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/index.html#higman-infinite-simple).
+Stated but not proved: `MathlibExt.GroupTheory.HigmanInfiniteSimpleWanted.GroupTheory.HigmanInfiniteSimpleProblem.higman_infinite_simple` is written with `theorem_wanted` in [WantedExt/GroupTheory/HigmanInfiniteSimpleWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/HigmanInfiniteSimpleWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/index.html#higman-infinite-simple).
 
 ## SQ-universal group
 
@@ -42,7 +42,7 @@ A group $G$ is SQ-universal if every countable group is isomorphic
 to a subgroup of a quotient of $G$: for every countable group $C$ there are a group $Q$, a
 surjective homomorphism $G \to Q$ and an injective homomorphism $C \to Q$.
 
-Formalized by `MathlibExt.GroupTheory.SQUniversalShared.IsSQUniversal`, a definition declared in [WantedExt/GroupTheory/SQUniversalShared.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/SQUniversalShared.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/index.html#is-squniversal).
+Formalized by `MathlibExt.GroupTheory.SQUniversalShared.IsSQUniversal`, a definition declared in [WantedExt/GroupTheory/SQUniversalShared.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/SQUniversalShared.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/index.html#is-squniversal).
 
 ## Depends on
 
@@ -51,4 +51,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Presentations and decision problems](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/presentations-and-decision-problems)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/presentations-and-decision-problems)

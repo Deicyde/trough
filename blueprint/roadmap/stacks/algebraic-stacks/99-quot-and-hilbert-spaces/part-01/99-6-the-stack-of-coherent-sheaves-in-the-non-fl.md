@@ -8,13 +8,13 @@ proof: formalized
 
 # 99.6 The stack of coherent sheaves in the non-flat case
 
-Section 99.6 of the Stacks Project, [Tag 08WB](https://stacks.math.columbia.edu/tag/08WB). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 99.6 of the Stacks Project, [Tag 08WB](https://stacks.math.columbia.edu/tag/08WB). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09DS, a theorem
 
 [Tag 09DS](https://stacks.math.columbia.edu/tag/09DS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicStack_coherentCFG`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackIsAlgebraic.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackIsAlgebraic.lean#L35).
+**`AlgebraicGeometry.Space.isAlgebraicStack_coherentCFG`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackIsAlgebraic.lean, line 35](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackIsAlgebraic.lean#L35).
 
 > **Algebraicity of the stack of coherent sheaves.** Let `S` be a scheme and let `f : X ⟶ Y` be a
 > morphism of algebraic spaces over `S`, of finite presentation (part of the standing datum `D` of
@@ -33,4 +33,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 99.6, Tag 08WB](https://stacks.math.columbia.edu/tag/08WB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

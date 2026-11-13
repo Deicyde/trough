@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Blowup.exists_isClosedImmersion_isPullback_projectiveLine_blowUpSpec_maximalIdeal, Stacks.Blowup.exists_isClosedImmersion_blowUpSpec_maximalIdeal, Stacks.Blowup.exists_isClosedImmersion_blowUpSpec_maximalIdeal_exceptional_projectiveLine, AlgebraicGeometry.irreducibleSpace_blowUp_maximalIdeal, AlgebraicGeometry.isRegular_blowUp_maximalIdeal, AlgebraicGeometry.isRegular_and_topologicalKrullDim_blowUp_vanishingIdeal_singleton, AlgebraicGeometry.isRegular_blowUp_vanishingIdeal_of_isRegular, AlgebraicGeometry.Scheme.IdealSheafData.IsExceptionalCurveOfFirstKind.eq_zero_of_zsmul_picardClass_eq_zero
+lean: Stacks.Blowup.exists_isClosedImmersion_isPullback_projectiveLine_blowUpSpec_maximalIdeal, Stacks.Blowup.exists_isClosedImmersion_blowUpSpec_maximalIdeal, Stacks.Blowup.exists_isClosedImmersion_blowUpSpec_maximalIdeal_exceptional_projectiveLine, AlgebraicGeometry.irreducibleSpace_blowUp_maximalIdeal, AlgebraicGeometry.isRegular_blowUp_maximalIdeal, AlgebraicGeometry.isRegular_and_topologicalKrullDim_blowUp_vanishingIdeal_singleton, AlgebraicGeometry.isRegular_blowUp_vanishingIdeal_of_isRegular, AlgebraicGeometry.subsingleton_picardGroup_compl_exceptionalIdeal
 statement: formalized
 proof: formalized
 ---
 
 # 54.3 Quadratic transformations
 
-Section 54.3 of the Stacks Project, [Tag 0AGP](https://stacks.math.columbia.edu/tag/0AGP). 6 tags here are carried by 35 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 54.3 of the Stacks Project, [Tag 0AGP](https://stacks.math.columbia.edu/tag/0AGP). 6 tags here are carried by 31 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AGQ, a lemma
 
 [Tag 0AGQ](https://stacks.math.columbia.edu/tag/0AGQ) in the Stacks Project.
 
-**`Stacks.Blowup.exists_isClosedImmersion_isPullback_projectiveLine_blowUpSpec_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ProjectiveLineExceptional.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ProjectiveLineExceptional.lean#L345). The attribute's comment: “part (1)”.
+**`Stacks.Blowup.exists_isClosedImmersion_isPullback_projectiveLine_blowUpSpec_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ProjectiveLineExceptional.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ProjectiveLineExceptional.lean#L345). The attribute's comment: “part (1)”.
 
 > Let `(A, 𝔪, κ)` be a regular local ring of dimension two and let `X ⟶ Spec A` be the blowup of
 > `Spec A` in `𝔪`. There is a closed immersion `r : X ⟶ 𝐏¹_{Spec A}` over `Spec A` whose restriction
@@ -48,7 +48,7 @@ theorem exists_isClosedImmersion_isPullback_projectiveLine_blowUpSpec_maximalIde
                   (IsLocalRing.residue A))
 ```
 
-**`Stacks.Blowup.exists_isClosedImmersion_blowUpSpec_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ProjectiveSpaceEmbedding.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ProjectiveSpaceEmbedding.lean#L324). The attribute's comment: “the closed immersion of the blowup into the projective line over the base”.
+**`Stacks.Blowup.exists_isClosedImmersion_blowUpSpec_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ProjectiveSpaceEmbedding.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ProjectiveSpaceEmbedding.lean#L324). The attribute's comment: “the closed immersion of the blowup into the projective line over the base”.
 
 > **Stacks Project, Tag 0AGQ.** Let `A` be a regular local ring of dimension two and let
 > `X ⟶ Spec A` be the blowup of `Spec A` in its maximal ideal. There is a closed immersion
@@ -65,7 +65,7 @@ theorem exists_isClosedImmersion_blowUpSpec_maximalIdeal (A : Type u) [CommRing 
         r ≫ projSpaceToSpec A 2 = toSpec (IsLocalRing.maximalIdeal A)
 ```
 
-**`Stacks.Blowup.exists_isClosedImmersion_blowUpSpec_maximalIdeal_exceptional_projectiveLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceProjectiveLine.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceProjectiveLine.lean#L86). The attribute's comment: “for the blowup X of Spec A in the maximal ideal of a regular local ring (A, m, kappa) of dimension 2, with exceptional divisor E: there is a closed immersion r : X -> P^1\_S = Proj A[T\_0, T\_1] over S = Spec A, and an isomorphism rho : E -> P^1\_kappa = Proj kappa[T\_0, T\_1] whose composite with the inclusion of the special fibre P^1\_kappa -> P^1\_S is r restricted to E, such that O\_X(E) = O\_X(-1) = r^* O\_\{P^1\_S}(-1), C\_\{E/X} = rho^* O\_\{P^1\_kappa}(1) and N\_\{E/X} = rho^* O\_\{P^1\_kappa}(-1)”.
+**`Stacks.Blowup.exists_isClosedImmersion_blowUpSpec_maximalIdeal_exceptional_projectiveLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceProjectiveLine.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceProjectiveLine.lean#L86). The attribute's comment: “for the blowup X of Spec A in the maximal ideal of a regular local ring (A, m, kappa) of dimension 2, with exceptional divisor E: there is a closed immersion r : X -> P^1\_S = Proj A[T\_0, T\_1] over S = Spec A, and an isomorphism rho : E -> P^1\_kappa = Proj kappa[T\_0, T\_1] whose composite with the inclusion of the special fibre P^1\_kappa -> P^1\_S is r restricted to E, such that O\_X(E) = O\_X(-1) = r^* O\_\{P^1\_S}(-1), C\_\{E/X} = rho^* O\_\{P^1\_kappa}(1) and N\_\{E/X} = rho^* O\_\{P^1\_kappa}(-1)”.
 
 > **The blowup of a regular local surface in its closed point embeds in `𝐏¹`.** Let `(A, 𝔪, κ)`
 > be a regular local ring of dimension `2`, let `f : X = Proj (⨁ₙ 𝔪ⁿ) ⟶ S = Spec A` be the blowing up
@@ -113,7 +113,7 @@ theorem exists_isClosedImmersion_blowUpSpec_maximalIdeal_exceptional_projectiveL
 
 [Tag 0AGR](https://stacks.math.columbia.edu/tag/0AGR) in the Stacks Project.
 
-**`AlgebraicGeometry.irreducibleSpace_blowUp_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceBlowup.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceBlowup.lean#L499). The attribute's comment: “irreducibility”.
+**`AlgebraicGeometry.irreducibleSpace_blowUp_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceBlowup.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceBlowup.lean#L499). The attribute's comment: “irreducibility”.
 
 > **Stacks Project, Tag 0AGR.** The blowup of a two-dimensional regular local ring at its
 > closed point is irreducible.
@@ -125,7 +125,7 @@ public theorem irreducibleSpace_blowUp_maximalIdeal (A : Type u) [CommRing A]
       (Ideal.map (Scheme.ΓSpecIso (CommRingCat.of A)).inv.hom (maximalIdeal A))))
 ```
 
-**`AlgebraicGeometry.isRegular_blowUp_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceBlowup.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceBlowup.lean#L512). The attribute's comment: “regularity”.
+**`AlgebraicGeometry.isRegular_blowUp_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceBlowup.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceBlowup.lean#L512). The attribute's comment: “regularity”.
 
 > **Stacks Project, Tag 0AGR.** The blowup of a two-dimensional regular local ring at its
 > closed point is a regular scheme.
@@ -137,7 +137,7 @@ public theorem isRegular_blowUp_maximalIdeal (A : Type u) [CommRing A] [IsRegula
       (Ideal.map (Scheme.ΓSpecIso (CommRingCat.of A)).inv.hom (maximalIdeal A))))
 ```
 
-**`AlgebraicGeometry.isRegular_and_topologicalKrullDim_blowUp_vanishingIdeal_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceBlowupGlobal.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceBlowupGlobal.lean#L335). The attribute's comment: “the globalization of the source's statement: the blowup of a regular Noetherian scheme of dimension two in a reduced closed point is regular of dimension two. The source's own statement, for the spectrum of a regular local ring of dimension two blown up at its closed point, is `AlgebraicGeometry.isRegular_blowUp_maximalIdeal`. The local ring at a closed point of such a scheme may have dimension `0`, `1` or `2`, and all three cases are treated; see the module docstring”. References: EGA IV (19.4.11), “(iii), special case”.
+**`AlgebraicGeometry.isRegular_and_topologicalKrullDim_blowUp_vanishingIdeal_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceBlowupGlobal.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceBlowupGlobal.lean#L335). The attribute's comment: “the globalization of the source's statement: the blowup of a regular Noetherian scheme of dimension two in a reduced closed point is regular of dimension two. The source's own statement, for the spectrum of a regular local ring of dimension two blown up at its closed point, is `AlgebraicGeometry.isRegular_blowUp_maximalIdeal`. The local ring at a closed point of such a scheme may have dimension `0`, `1` or `2`, and all three cases are treated; see the module docstring”. References: EGA IV (19.4.11), “(iii), special case”.
 
 > **Stacks Project, Tag 0AGR, globally.** The blowup of a regular Noetherian scheme of
 > dimension two in a reduced closed point is again regular of dimension two.
@@ -156,7 +156,7 @@ public theorem isRegular_and_topologicalKrullDim_blowUp_vanishingIdeal_singleton
         (⟨{y}, hy⟩ : Closeds Y))) = 2
 ```
 
-**`AlgebraicGeometry.isRegular_blowUp_vanishingIdeal_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RegularPointBlowupRegular.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RegularPointBlowupRegular.lean#L57). The attribute's comment: “regularity, relative form: the blowup of a regular scheme at a closed point whose local ring is regular of dimension two is regular. The absolute statement, for Spec of a two-dimensional regular local ring, is isRegular\_blowUp\_maximalIdeal”. References: EGA IV (19.4.11), “(iii), special case”.
+**`AlgebraicGeometry.isRegular_blowUp_vanishingIdeal_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RegularPointBlowupRegular.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RegularPointBlowupRegular.lean#L57). The attribute's comment: “regularity, relative form: the blowup of a regular scheme at a closed point whose local ring is regular of dimension two is regular. The absolute statement, for Spec of a two-dimensional regular local ring, is isRegular\_blowUp\_maximalIdeal”. References: EGA IV (19.4.11), “(iii), special case”.
 
 > The blowup of a regular scheme at a closed point whose local ring is regular of dimension two
 > is again a regular scheme. The case `X = Spec A`, for `A` a two-dimensional regular local ring
@@ -172,50 +172,7 @@ theorem isRegular_blowUp_vanishingIdeal_of_isRegular {X : Scheme.{u}} (hX : IsRe
 
 [Tag 0C5G](https://stacks.math.columbia.edu/tag/0C5G) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.IsExceptionalCurveOfFirstKind.eq_zero_of_zsmul_picardClass_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PicardGroup.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/PicardGroup.lean#L134). The attribute's comment: “the infinite-order half, for an exceptional curve of the first kind: that the exceptional divisor of the blowup is one is the unproved half of Tag 0AGQ”.
-
-> **Stacks Project, Tag 0C5G, the infinite-order half.** Let `D` be an exceptional curve of
-> the first kind on a scheme `X` over a field `k`. Then the class of `𝒪_X(D)` has infinite order
-> in `Pic(X)`: no nonzero multiple of it vanishes.
->
-> Pulling the class back along the closed immersion `D ⟶ X` gives the class of the normal sheaf of
-> `D`, and pulling that back along `e` gives the class of `𝒪(-1)` on `𝐏¹_k`, which has infinite
-> order because `m ↦ [𝒪(m)]` is injective there (Tag 0BXJ).
-
-```lean
-theorem IsExceptionalCurveOfFirstKind.eq_zero_of_zsmul_picardClass_eq_zero
-    (hE : D.IsExceptionalCurveOfFirstKind k e) (n : ℤ)
-    (hn : n • Stacks.Divisors.picardClass D = 0) : n = 0
-```
-
-**`AlgebraicGeometry.Scheme.IdealSheafData.IsExceptionalCurveOfFirstKind.picardGroupEquivInt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PicardGroup.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/PicardGroup.lean#L157). The attribute's comment: “granted generation, which is hypothesized: the source's generation step needs the Weil divisor of the canonical section of O\_X(D) to be identified with D, which the library lacks; and that the exceptional divisor of the blowup is an exceptional curve of the first kind is the unproved half of Tag 0AGQ”.
-
-> **Stacks Project, Tag 0C5G, granted generation.** Let `D` be an exceptional curve of the
-> first kind on a scheme `X` over a field `k`, and suppose every Picard class of `X` is an
-> integral multiple of the class of `𝒪_X(D)`. Then `n ↦ n • [𝒪_X(D)]` is an isomorphism
-> `ℤ ≃+ Pic(X)`: it is surjective by hypothesis and injective because `[𝒪_X(D)]` has infinite
-> order.
-
-```lean
-def IsExceptionalCurveOfFirstKind.picardGroupEquivInt
-    {e : projectiveLineProj k ≅ D.subscheme} (hE : D.IsExceptionalCurveOfFirstKind k e)
-    (hgen : Function.Surjective fun n : ℤ => n • Stacks.Divisors.picardClass D) :
-    ℤ ≃+ Stacks.Picard.ofScheme X
-```
-
-**`AlgebraicGeometry.Scheme.IdealSheafData.IsExceptionalCurveOfFirstKind.picardGroupEquivInt_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PicardGroup.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/PicardGroup.lean#L168). The attribute's comment: “granted generation, which is hypothesized: the generator clause”.
-
-> The isomorphism `ℤ ≃+ Pic(X)` carries `1` to the class of `𝒪_X(D)`, so `Pic(X)` is
-> infinite cyclic *on that class*.
-
-```lean
-theorem IsExceptionalCurveOfFirstKind.picardGroupEquivInt_one
-    {e : projectiveLineProj k ≅ D.subscheme} (hE : D.IsExceptionalCurveOfFirstKind k e)
-    (hgen : Function.Surjective fun n : ℤ => n • Stacks.Divisors.picardClass D) :
-    hE.picardGroupEquivInt D k hgen 1 = Stacks.Divisors.picardClass D
-```
-
-**`AlgebraicGeometry.subsingleton_picardGroup_compl_exceptionalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PicardGroup.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/PicardGroup.lean#L239). The attribute's comment: “the third step of the source's proof: triviality of the Picard group of the complement of the exceptional divisor”.
+**`AlgebraicGeometry.subsingleton_picardGroup_compl_exceptionalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PicardGroup.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/PicardGroup.lean#L221). The attribute's comment: “the third step of the source's proof: triviality of the Picard group of the complement of the exceptional divisor”.
 
 > **Stacks Project, Tag 0C5G, the third step of the source's proof.** Let `A` be a regular
 > local ring and let `X ⟶ Spec A` be the blowup of `Spec A` in its maximal ideal, with exceptional
@@ -234,33 +191,7 @@ theorem subsingleton_picardGroup_compl_exceptionalIdeal (A : Type u) [CommRing A
         (IsLocalRing.maximalIdeal A)))).support.compl).picardGroup
 ```
 
-**`AlgebraicGeometry.picardGroupEquivInt_blowUp_maximalIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PicardGroup.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/PicardGroup.lean#L259). The attribute's comment: “granted the two inputs the library lacks, both hypothesized: that the exceptional divisor is an exceptional curve of the first kind over the residue field (the unproved half of Tag 0AGQ), and generation of the Picard group by its class”.
-
-> **Stacks Project, Tag 0C5G, granted the two missing inputs.** Let `(A, 𝔪, κ)` be a regular
-> local ring of dimension two and let `X ⟶ Spec A` be the blowup of `Spec A` in `𝔪`, with
-> exceptional divisor `E`. Granted that `E` is an exceptional curve of the first kind over `κ` and
-> that every Picard class of `X` is an integral multiple of `[𝒪_X(E)]`, the map `n ↦ n • [𝒪_X(E)]`
-> is an isomorphism `ℤ ≃+ Pic(X)`; so `Pic(X) = ℤ`, generated by `𝒪_X(E)`.
-
-```lean
-def picardGroupEquivInt_blowUp_maximalIdeal (A : Type u) [CommRing A] [IsRegularLocalRing A]
-    (_hdim : ringKrullDim A = 2)
-    {e : projectiveLineProj (IsLocalRing.ResidueField A) ≅
-      (exceptionalIdeal (Scheme.IdealSheafData.ofIdealTop
-        (Ideal.map (Scheme.ΓSpecIso (.of A)).inv.hom
-          (IsLocalRing.maximalIdeal A)))).subscheme}
-    (hE : (exceptionalIdeal (Scheme.IdealSheafData.ofIdealTop
-        (Ideal.map (Scheme.ΓSpecIso (.of A)).inv.hom
-          (IsLocalRing.maximalIdeal A)))).IsExceptionalCurveOfFirstKind
-      (IsLocalRing.ResidueField A) e)
-    (hgen : Function.Surjective fun n : ℤ => n • Stacks.Divisors.picardClass
-      (exceptionalIdeal (Scheme.IdealSheafData.ofIdealTop
-        (Ideal.map (Scheme.ΓSpecIso (.of A)).inv.hom (IsLocalRing.maximalIdeal A))))) :
-    ℤ ≃+ Stacks.Picard.ofScheme (blowUp (Scheme.IdealSheafData.ofIdealTop
-      (Ideal.map (Scheme.ΓSpecIso (.of A)).inv.hom (IsLocalRing.maximalIdeal A))))
-```
-
-**`AlgebraicGeometry.surjective_zsmul_picardClass_exceptionalIdealData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean#L151). The attribute's comment: “the generation half, with nothing assumed: every Picard class of the blowup of a regular local ring of dimension two in its maximal ideal is an integral multiple of the class of O\_X(E)”.
+**`AlgebraicGeometry.surjective_zsmul_picardClass_exceptionalIdealData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean#L151). The attribute's comment: “the generation half, with nothing assumed: every Picard class of the blowup of a regular local ring of dimension two in its maximal ideal is an integral multiple of the class of O\_X(E)”.
 
 > **Stacks Project, Tag 0C5G, the generation half, with nothing assumed.** Let `(A, 𝔪, κ)` be a
 > regular local ring of dimension two, let `X ⟶ Spec A` be the blowing up of `Spec A` in `𝔪` and
@@ -283,7 +214,7 @@ theorem surjective_zsmul_picardClass_exceptionalIdealData (A : Type u) [CommRing
       (Stacks.Blowup.exceptionalIdealData (maximalIdeal A))
 ```
 
-**`AlgebraicGeometry.eq_zero_of_zsmul_picardClass_exceptionalIdealData_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean#L195). The attribute's comment: “the infinite-order half for the blowup of a regular local ring of dimension two in its maximal ideal, with nothing assumed: no nonzero multiple of the class of O\_X(E) vanishes in Pic(X)”.
+**`AlgebraicGeometry.eq_zero_of_zsmul_picardClass_exceptionalIdealData_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean#L195). The attribute's comment: “the infinite-order half for the blowup of a regular local ring of dimension two in its maximal ideal, with nothing assumed: no nonzero multiple of the class of O\_X(E) vanishes in Pic(X)”.
 
 > **Stacks Project, Tag 0C5G, the infinite-order half for the blowup itself.** Let `(A, 𝔪, κ)`
 > be a regular local ring of dimension two, let `X ⟶ Spec A` be the blowing up of `Spec A` in `𝔪`
@@ -303,7 +234,7 @@ theorem eq_zero_of_zsmul_picardClass_exceptionalIdealData_eq_zero (A : Type u) [
     n = 0
 ```
 
-**`AlgebraicGeometry.picardGroupEquivInt_blowUpSpec_maximalIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean#L218). The attribute's comment: “the identification Z ≃+ Pic(X) for the blowup of a regular local ring of dimension two in its maximal ideal, with nothing assumed: both halves, generation and infinite order, are proved for the exceptional divisor of this blowup”.
+**`AlgebraicGeometry.picardGroupEquivInt_blowUpSpec_maximalIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean#L218). The attribute's comment: “the identification Z ≃+ Pic(X) for the blowup of a regular local ring of dimension two in its maximal ideal, with nothing assumed: both halves, generation and infinite order, are proved for the exceptional divisor of this blowup”.
 
 > **Stacks Project, Tag 0C5G.** Let `(A, 𝔪, κ)` be a regular local ring of dimension two and
 > let `X ⟶ Spec A` be the blowing up of `Spec A` in `𝔪`, with exceptional divisor `E`. Then
@@ -322,7 +253,7 @@ def picardGroupEquivInt_blowUpSpec_maximalIdeal (A : Type u) [CommRing A] [IsReg
     ℤ ≃+ Stacks.Picard.ofScheme (Stacks.Blowup.blowUpSpec (maximalIdeal A))
 ```
 
-**`AlgebraicGeometry.picardGroupEquivInt_blowUpSpec_maximalIdeal_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean#L229). The attribute's comment: “the generator clause for the blowup of a regular local ring of dimension two in its maximal ideal, with nothing assumed: the isomorphism carries 1 to the class of O\_X(E)”.
+**`AlgebraicGeometry.picardGroupEquivInt_blowUpSpec_maximalIdeal_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/PicardGroupGeneration.lean#L229). The attribute's comment: “the generator clause for the blowup of a regular local ring of dimension two in its maximal ideal, with nothing assumed: the isomorphism carries 1 to the class of O\_X(E)”.
 
 > The isomorphism `ℤ ≃+ Pic(X)` of the blowup carries `1` to the class of `𝒪_X(E)`, so
 > `Pic(X)` is infinite cyclic on that class.
@@ -339,7 +270,7 @@ theorem picardGroupEquivInt_blowUpSpec_maximalIdeal_one (A : Type u) [CommRing A
 
 [Tag 0AGS](https://stacks.math.columbia.edu/tag/0AGS) in the Stacks Project.
 
-**`Stacks.Blowup.bijective_negSections_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceNegativeTwistSections.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceNegativeTwistSections.lean#L301). The attribute's comment: “part (4) for n < 0: for the blowup X of Spec A in the maximal ideal m of a regular local ring A of dimension two, the canonical A-linear map from A = m^0 to the global sections of O\_X(n) is bijective for every n < 0, which is Gamma(X, O\_X(n)) = m^(max 0 n) = A in that range”.
+**`Stacks.Blowup.bijective_negSections_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceNegativeTwistSections.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceNegativeTwistSections.lean#L301). The attribute's comment: “part (4) for n < 0: for the blowup X of Spec A in the maximal ideal m of a regular local ring A of dimension two, the canonical A-linear map from A = m^0 to the global sections of O\_X(n) is bijective for every n < 0, which is Gamma(X, O\_X(n)) = m^(max 0 n) = A in that range”.
 
 > Let `(A, 𝔪, κ)` be a regular local ring of dimension two and let `f : X ⟶ S = Spec A` be the
 > blowing up of `A` in `𝔪`. For every `n < 0` the canonical `A`-linear map
@@ -357,7 +288,7 @@ theorem bijective_negSections_maximalIdeal (A : Type u) [CommRing A] [IsRegularL
       (show n = ((0 : ℕ) : ℤ) - (((-n).toNat : ℕ) : ℤ) by omega))
 ```
 
-**`Stacks.Blowup.bijective_maxSections_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceNegativeTwistSections.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceNegativeTwistSections.lean#L319). The attribute's comment: “part (4): for the blowup X of Spec A in the maximal ideal m of a regular local ring A of dimension two, the canonical A-linear map from m^(max 0 n) to the global sections of O\_X(n) is bijective for every integer n, i.e. H^0(X, O\_X(n)) = m^(max 0 n)”.
+**`Stacks.Blowup.bijective_maxSections_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceNegativeTwistSections.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceNegativeTwistSections.lean#L319). The attribute's comment: “part (4): for the blowup X of Spec A in the maximal ideal m of a regular local ring A of dimension two, the canonical A-linear map from m^(max 0 n) to the global sections of O\_X(n) is bijective for every integer n, i.e. H^0(X, O\_X(n)) = m^(max 0 n)”.
 
 > Let `(A, 𝔪, κ)` be a regular local ring of dimension two and let `f : X ⟶ S = Spec A` be the
 > blowing up of `A` in `𝔪`. For every `n : ℤ` the canonical `A`-linear map
@@ -373,7 +304,7 @@ theorem bijective_maxSections_maximalIdeal (A : Type u) [CommRing A] [IsRegularL
     Function.Bijective (maxSections (maximalIdeal A) n)
 ```
 
-**`Stacks.Blowup.bijective_ambientSections_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceTwistSections.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceTwistSections.lean#L382). The attribute's comment: “part (4) for n at least 0: for the blowup X of Spec A in the maximal ideal m of a regular local ring A of dimension two, the canonical map from m^n to the global sections of O\_X(n) is bijective, which is Gamma(X, O\_X(n)) = m^(max 0 n) in that range”.
+**`Stacks.Blowup.bijective_ambientSections_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceTwistSections.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceTwistSections.lean#L383). The attribute's comment: “part (4) for n at least 0: for the blowup X of Spec A in the maximal ideal m of a regular local ring A of dimension two, the canonical map from m^n to the global sections of O\_X(n) is bijective, which is Gamma(X, O\_X(n)) = m^(max 0 n) in that range”.
 
 > **Stacks Project, Tag 0AGS part (4) in nonnegative degrees.** Let `(A, 𝔪)` be a regular
 > local ring of dimension two and let `X ⟶ Spec A` be the blowup of `Spec A` in `𝔪`. Then the
@@ -396,7 +327,7 @@ theorem bijective_ambientSections_maximalIdeal (A : Type u) [CommRing A] [IsRegu
     Function.Bijective (ambientSections (maximalIdeal A) n)
 ```
 
-**`AlgebraicGeometry.isZero_cohomology_of_two_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowup.lean, line 671](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowup.lean#L671). The attribute's comment: “higher\_cohomology\_vanishes”.
+**`AlgebraicGeometry.isZero_cohomology_of_two_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowup.lean, line 671](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowup.lean#L671). The attribute's comment: “higher\_cohomology\_vanishes”.
 
 > **Stacks Project, Tag 0AGS.** Quasi-coherent cohomology of the blowup of a two-dimensional
 > regular local ring at its closed point vanishes in degrees at least two.
@@ -428,7 +359,7 @@ public theorem isZero_cohomology_of_two_le
                   (IsLocalRing.maximalIdeal A)))).Opens))).rightDerived p).obj F)
 ```
 
-**`Stacks.ResolutionOfSurfaces.isZero_firstCohomology_of_generatingSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupFirstCohomology.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupFirstCohomology.lean#L257). The attribute's comment: “clause (3), for a module generated by global sections”.
+**`Stacks.ResolutionOfSurfaces.isZero_firstCohomology_of_generatingSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupFirstCohomology.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupFirstCohomology.lean#L257). The attribute's comment: “clause (3), for a module generated by global sections”.
 
 > Let `A` be a regular local ring of dimension two and let `X ⟶ Spec(A)` be the blowup of
 > `Spec(A)` in the maximal ideal. Then `H¹(X, ℱ) = 0` for every quasi-coherent `𝒪_X`-module `ℱ`
@@ -451,7 +382,7 @@ theorem isZero_firstCohomology_of_generatingSections
           (IsLocalRing.maximalIdeal A))))).rightDerivedPlus 1).obj F)
 ```
 
-**`Stacks.Blowup.length_firstCohomologySheafAsBaseModule_blowUpTwist_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwistLength.lean, line 424](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwistLength.lean#L424). The attribute's comment: “part (5): length\_A H^1(X, O\_X(n)) = (-n)(-n-1)/2 for n < 0”.
+**`Stacks.Blowup.length_firstCohomologySheafAsBaseModule_blowUpTwist_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwistLength.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwistLength.lean#L424). The attribute's comment: “part (5): length\_A H^1(X, O\_X(n)) = (-n)(-n-1)/2 for n < 0”.
 
 > **Stacks Project, Tag 0AGS part (5).** Let `(A, 𝔪, κ)` be a regular local ring of dimension
 > two and let `f : X ⟶ S = Spec A` be the blowing up of `A` in `𝔪`. Then for every `n < 0`$$ \text{length}_A H^1(X, \mathcal{O}_X(n)) = \frac{(-n)(-n-1)}{2}. $$
@@ -483,7 +414,7 @@ theorem length_firstCohomologySheafAsBaseModule_blowUpTwist_maximalIdeal (A : Ty
       = ((((-n) * (-n - 1) / 2).toNat : ℕ) : ℕ∞)
 ```
 
-**`Stacks.Blowup.isZero_hgroup_one_twistingSheaf_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean#L418). The attribute's comment: “part (2): H^1(X, O\_X(n)) = 0 for n at least -1”.
+**`Stacks.Blowup.isZero_hgroup_one_twistingSheaf_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean#L418). The attribute's comment: “part (2): H^1(X, O\_X(n)) = 0 for n at least -1”.
 
 > **Stacks Project, Tag 0AGS part (2).** Let `(A, 𝔪, κ)` be a regular local ring of dimension
 > two and let `f : X ⟶ S = Spec A` be the blowing up of `A` in `𝔪`. Then
@@ -500,7 +431,7 @@ theorem isZero_hgroup_one_twistingSheaf_maximalIdeal (A : Type u) [CommRing A]
       (twistingSheaf (reesGrading (IsLocalRing.maximalIdeal A)) n))
 ```
 
-**`Stacks.Blowup.isZero_hgroup_one_of_generatingSections_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean#L436). The attribute's comment: “part (3), the case where F itself is globally generated”.
+**`Stacks.Blowup.isZero_hgroup_one_of_generatingSections_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean#L436). The attribute's comment: “part (3), the case where F itself is globally generated”.
 
 > **Stacks Project, Tag 0AGS part (3), the globally generated case.** Let `(A, 𝔪, κ)` be a
 > regular local ring of dimension two and let `f : X ⟶ S = Spec A` be the blowing up of `A` in
@@ -520,7 +451,7 @@ theorem isZero_hgroup_one_of_generatingSections_maximalIdeal (A : Type u) [CommR
     IsZero (Hgroup (blowUpSpec (IsLocalRing.maximalIdeal A)).ringCatSheaf ⊤ 1 F)
 ```
 
-**`Stacks.Blowup.isZero_hgroup_one_of_generatingSections_twist_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean#L453). The attribute's comment: “part (3), the case where F(1) is globally generated”.
+**`Stacks.Blowup.isZero_hgroup_one_of_generatingSections_twist_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean#L453). The attribute's comment: “part (3), the case where F(1) is globally generated”.
 
 > **Stacks Project, Tag 0AGS part (3), the case where `ℱ(1)` is globally generated.** Let
 > `(A, 𝔪, κ)` be a regular local ring of dimension two and let `f : X ⟶ S = Spec A` be the blowing
@@ -539,7 +470,7 @@ theorem isZero_hgroup_one_of_generatingSections_twist_maximalIdeal (A : Type u) 
     IsZero (Hgroup (blowUpSpec (IsLocalRing.maximalIdeal A)).ringCatSheaf ⊤ 1 F)
 ```
 
-**`Stacks.Blowup.isZero_hgroup_one_of_generatingSections_or_twist_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean#L477). The attribute's comment: “part (3): H^1(X,F) = 0 if F or F(1) is globally generated”.
+**`Stacks.Blowup.isZero_hgroup_one_of_generatingSections_or_twist_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwists.lean#L477). The attribute's comment: “part (3): H^1(X,F) = 0 if F or F(1) is globally generated”.
 
 > **Stacks Project, Tag 0AGS part (3).** Let `(A, 𝔪, κ)` be a regular local ring of dimension
 > two and let `f : X ⟶ S = Spec A` be the blowing up of `A` in `𝔪`. Then, for a quasi-coherent
@@ -565,7 +496,7 @@ theorem isZero_hgroup_one_of_generatingSections_or_twist_maximalIdeal (A : Type 
     IsZero (Hgroup (blowUpSpec (IsLocalRing.maximalIdeal A)).ringCatSheaf ⊤ 1 F)
 ```
 
-**`AlgebraicGeometry.isZero_cohomology_one_twistingSheaf_of_neg_one_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwistVanishing.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwistVanishing.lean#L39). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isZero_cohomology_one_twistingSheaf_of_neg_one_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwistVanishing.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwistVanishing.lean#L39). The attribute's comment: “part (2)”.
 
 > For `(A, 𝔪, κ)` a regular local ring of dimension two and
 > `X = Stacks.Blowup.blowUpSpec 𝔪 = Proj(⨁ₙ 𝔪ⁿ)` the blowup of `Spec A` in `𝔪`,
@@ -581,7 +512,7 @@ public theorem isZero_cohomology_one_twistingSheaf_of_neg_one_le
         (Stacks.Blowup.reesGrading (IsLocalRing.maximalIdeal A)) n))
 ```
 
-**`AlgebraicGeometry.isZero_cohomology_one_of_generatingSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwistVanishing.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwistVanishing.lean#L53). The attribute's comment: “part (3), for a globally generated quasi-coherent module”.
+**`AlgebraicGeometry.isZero_cohomology_one_of_generatingSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwistVanishing.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/RegularLocalBlowupTwistVanishing.lean#L53). The attribute's comment: “part (3), for a globally generated quasi-coherent module”.
 
 > For `(A, 𝔪, κ)` a regular local ring of dimension two, `X = Stacks.Blowup.blowUpSpec 𝔪` the
 > blowup of `Spec A` in `𝔪` and `ℱ` a quasi-coherent `𝒪_X`-module generated by global sections
@@ -600,7 +531,7 @@ public theorem isZero_cohomology_one_of_generatingSections
 
 [Tag 0AGT](https://stacks.math.columbia.edu/tag/0AGT) in the Stacks Project.
 
-**`Stacks.Blowup.Colength.length_globalSections_ge_sum_length_stalkQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Colength/LocalBound.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Colength/LocalBound.lean#L266). The attribute's comment: “clause (3), the second inequality: the length over the base ring of the global sections of the quotient is at least the sum over the support points of the colengths of the stalks”.
+**`Stacks.Blowup.Colength.length_globalSections_ge_sum_length_stalkQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Colength/LocalBound.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Colength/LocalBound.lean#L268). The attribute's comment: “clause (3), the second inequality: the length over the base ring of the global sections of the quotient is at least the sum over the support points of the colengths of the stalks”.
 
 > The length over the base ring of a finite-support quotient is bounded
 > below by the sum of the colengths of its stalks.
@@ -620,7 +551,7 @@ public theorem length_globalSections_ge_sum_length_stalkQuotient
       Module.length A Γ(I.subscheme, ⊤)
 ```
 
-**`Stacks.Blowup.Colength.pos_order_of_le_center`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Colength/PositiveOrder.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Colength/PositiveOrder.lean#L39). The attribute's comment: “positive\_order”.
+**`Stacks.Blowup.Colength.pos_order_of_le_center`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Colength/PositiveOrder.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Colength/PositiveOrder.lean#L39). The attribute's comment: “positive\_order”.
 
 > The maximal order of an ideal sheaf contained in the centre of a blowup is positive
 > along the exceptional divisor.
@@ -636,7 +567,7 @@ public theorem pos_order_of_le_center
     0 < d
 ```
 
-**`Stacks.Blowup.Colength.exists_exceptionalIdeal_pow_mul_eq_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Colength/ResidualFactorization.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Colength/ResidualFactorization.lean#L39). The attribute's comment: “clause (2), the splitting: the pulled-back ideal is the d-th power of the exceptional divisor times a residual ideal sheaf”.
+**`Stacks.Blowup.Colength.exists_exceptionalIdeal_pow_mul_eq_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Colength/ResidualFactorization.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Colength/ResidualFactorization.lean#L39). The attribute's comment: “clause (2), the splitting: the pulled-back ideal is the d-th power of the exceptional divisor times a residual ideal sheaf”.
 
 > The pulled-back ideal sheaf is the `d`-th power of the exceptional divisor times a residual
 > ideal sheaf on the blowup, whenever it is contained in that power. The residual factor is the
@@ -650,7 +581,7 @@ public theorem exists_exceptionalIdeal_pow_mul_eq_comap
       exceptionalIdeal M ^ d * J' = J.comap (blowUpToBase M)
 ```
 
-**`Stacks.Blowup.Colength.exists_finset_support_residual_and_length_ge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Colength/ResidualFiniteSupport.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Colength/ResidualFiniteSupport.lean#L51). The attribute's comment: “clause (2), the finite support, together with clause (3)'s second inequality, with the finite support no longer assumed”.
+**`Stacks.Blowup.Colength.exists_finset_support_residual_and_length_ge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Colength/ResidualFiniteSupport.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Colength/ResidualFiniteSupport.lean#L51). The attribute's comment: “clause (2), the finite support, together with clause (3)'s second inequality, with the finite support no longer assumed”.
 
 > Let `A` be a two-dimensional regular local ring, `M` the ideal sheaf of its closed point and
 > `b : X' ⟶ Spec A` the blowup in `M`. Let `J` be an ideal sheaf with `M ^ n ≤ J`, and suppose the
@@ -683,7 +614,7 @@ public theorem exists_finset_support_residual_and_length_ge
         Module.length A Γ(Z.subscheme, ⊤)
 ```
 
-**`AlgebraicGeometry.exists_residualIdeal_of_maximal_order`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Colength/ResidualIdeal.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Colength/ResidualIdeal.lean#L228). The attribute's comment: “for the blowup X of a two-dimensional regular local ring (A, m) in m, with exceptional divisor E, and an ideal I with m^n contained in I contained in m: the largest d with I O\_X contained in O\_X(-dE) exists and is positive, the ideal I' with O\_X(-dE) I' = I O\_X exists and is unique, O\_X/I' is supported in a finite set of closed points x\_i, and length\_A(A/I) > length\_A Gamma(X, O\_X/I') >= sum\_i length\_\{O\_\{X,x\_i}}(O\_\{X,x\_i}/I'\_\{x\_i})”.
+**`AlgebraicGeometry.exists_residualIdeal_of_maximal_order`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Colength/ResidualIdeal.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Colength/ResidualIdeal.lean#L228). The attribute's comment: “for the blowup X of a two-dimensional regular local ring (A, m) in m, with exceptional divisor E, and an ideal I with m^n contained in I contained in m: the largest d with I O\_X contained in O\_X(-dE) exists and is positive, the ideal I' with O\_X(-dE) I' = I O\_X exists and is unique, O\_X/I' is supported in a finite set of closed points x\_i, and length\_A(A/I) > length\_A Gamma(X, O\_X/I') >= sum\_i length\_\{O\_\{X,x\_i}}(O\_\{X,x\_i}/I'\_\{x\_i})”.
 
 > Let `(A, 𝔪)` be a regular local ring of dimension two, let `f : X ⟶ Spec A` be the blowing
 > up of `A` in `𝔪` (the blowup of the ideal sheaf `ℐ` generated by `𝔪`), with exceptional divisor
@@ -735,7 +666,7 @@ public theorem exists_residualIdeal_of_maximal_order
           Module.length A Γ(I'.subscheme, ⊤)
 ```
 
-**`AlgebraicGeometry.finite_supportSet_residual_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceResidual.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceResidual.lean#L175). The attribute's comment: “clause (2), the finite support: the residual factor left by dividing out the exceptional divisor is supported at finitely many closed points of the blowup”.
+**`AlgebraicGeometry.finite_supportSet_residual_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceResidual.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceResidual.lean#L175). The attribute's comment: “clause (2), the finite support: the residual factor left by dividing out the exceptional divisor is supported at finitely many closed points of the blowup”.
 
 > **Clause (2) of [Stacks, Tag 0AGT].** Let `A` be a two-dimensional regular local ring, `M` the
 > ideal sheaf of its closed point, and `b : X' ⟶ Spec A` the blowup in `M`. Let `J` be an ideal
@@ -760,7 +691,7 @@ public theorem finite_supportSet_residual_maximalIdeal (A : Type u) [CommRing A]
 
 [Tag 0B4L](https://stacks.math.columbia.edu/tag/0B4L) in the Stacks Project.
 
-**`Stacks.Blowup.isIso_relativeDifferentialsToPushforward_residuePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalDifferentials.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalDifferentials.lean#L485).
+**`Stacks.Blowup.isIso_relativeDifferentialsToPushforward_residuePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalDifferentials.lean, line 484](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalDifferentials.lean#L484).
 
 > **Stacks Project, Tag 0B4L.** Let `(A, 𝔪, κ)` be a regular local ring of dimension two and
 > let `f : X ⟶ S = Spec(A)` be the blowing up of `A` in `𝔪`, with `i : E ⟶ X` the immersion of the
@@ -786,4 +717,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 54.3, Tag 0AGP](https://stacks.math.columbia.edu/tag/0AGP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

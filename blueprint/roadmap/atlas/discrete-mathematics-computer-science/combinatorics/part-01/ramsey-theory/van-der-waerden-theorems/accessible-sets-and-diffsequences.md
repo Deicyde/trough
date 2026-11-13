@@ -7,7 +7,7 @@ statement: formalized
 
 # Accessible sets and diffsequences
 
-80 results, 47 proved and 33 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html).
+80 results, 47 proved and 33 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html).
 
 ## Monochromatic sequences of positive integers
 
@@ -20,7 +20,7 @@ all $i, j < k$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (r-large).
 
-Formalized by `MetaMathlibExt.IsMonochromatic`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-monochromatic).
+Formalized by `MetaMathlibExt.IsMonochromatic`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-monochromatic).
 
 ## Arithmetic progressions with gap in $D$
 
@@ -33,7 +33,7 @@ that $x_i = a + i d$ for every $i < k$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (r-large).
 
-Formalized by `MetaMathlibExt.IsDAP`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-dap).
+Formalized by `MetaMathlibExt.IsDAP`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-dap).
 
 ## Characterization of arithmetic progressions with gap in $D$
 
@@ -46,7 +46,7 @@ are a positive integer $a$ and an element $d \in D$ such that $x_i = a + i d$ fo
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (r-large).
 
-Formalized by `MetaMathlibExt.isDAP_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-dap-iff).
+Formalized by `MetaMathlibExt.isDAP_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-dap-iff).
 
 ## $r$-large sets
 
@@ -62,7 +62,7 @@ Quantifying over every length $k \ge 1$ formalizes "arbitrarily long" monochroma
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (r-large).
 
-Formalized by `MetaMathlibExt.IsRLarge`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-rlarge).
+Formalized by `MetaMathlibExt.IsRLarge`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-rlarge).
 
 ## Characterization of $r$-large sets
 
@@ -77,7 +77,7 @@ all $i < k$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (r-large).
 
-Formalized by `MetaMathlibExt.isRLarge_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-rlarge-iff).
+Formalized by `MetaMathlibExt.isRLarge_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-rlarge-iff).
 
 ## Large set
 
@@ -88,7 +88,7 @@ number $r \ge 1$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (r-large).
 
-Formalized by `MetaMathlibExt.IsLarge`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-large).
+Formalized by `MetaMathlibExt.IsLarge`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-large).
 
 ## Characterization of large sets
 
@@ -99,7 +99,7 @@ is $r$-large for every natural number $r \ge 1$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (r-large).
 
-Formalized by `MetaMathlibExt.isLarge_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-large-iff).
+Formalized by `MetaMathlibExt.isLarge_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-large-iff).
 
 ## $D$-diffsequences
 
@@ -111,7 +111,7 @@ $i + 1 < k$ there is $d \in D$ with $x_{i+1} - x_i = d$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (D-diffsequence).
 
-Formalized by `MetaMathlibExt.IsDDiffSequence`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-ddiff-sequence).
+Formalized by `MetaMathlibExt.IsDDiffSequence`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-ddiff-sequence).
 
 ## Characterization of $D$-diffsequences
 
@@ -123,7 +123,7 @@ for every $i$ with $i + 1 < k$ there is $d \in D$ such that $x_{i+1} - x_i = d$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (D-diffsequence).
 
-Formalized by `MetaMathlibExt.isDDiffSequence_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-ddiff-sequence-iff).
+Formalized by `MetaMathlibExt.isDDiffSequence_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-ddiff-sequence-iff).
 
 ## $r$-accessibility for colorings of the positive integers
 
@@ -138,7 +138,7 @@ $i$ with $i + 1 < k$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (r-accessible).
 
-Formalized by `MetaMathlibExt.IsRAccessible`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-raccessible).
+Formalized by `MetaMathlibExt.IsRAccessible`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-raccessible).
 
 ## Characterization of $r$-accessible sets
 
@@ -153,7 +153,7 @@ the integers, for every $i$ with $i + 1 < k$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (r-accessible).
 
-Formalized by `MetaMathlibExt.isRAccessible_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-raccessible-iff).
+Formalized by `MetaMathlibExt.isRAccessible_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-raccessible-iff).
 
 ## Accessibility with more colors implies accessibility with fewer
 
@@ -165,7 +165,7 @@ $s$-accessible, then $D$ is $r$-accessible.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (r-accessible).
 
-Formalized by `MetaMathlibExt.IsRAccessible.mono`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#mono).
+Formalized by `MetaMathlibExt.IsRAccessible.mono`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#mono).
 
 ## Accessible sets
 
@@ -176,7 +176,7 @@ every natural number $r \ge 1$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (r-accessible).
 
-Formalized by `MetaMathlibExt.IsAccessible`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-accessible).
+Formalized by `MetaMathlibExt.IsAccessible`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-accessible).
 
 ## Accessibility means $r$-accessibility for every $r \ge 1$
 
@@ -187,7 +187,7 @@ is accessible if and only if it is $r$-accessible for every natural number $r \g
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (r-accessible).
 
-Formalized by `MetaMathlibExt.isAccessible_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-accessible-iff).
+Formalized by `MetaMathlibExt.isAccessible_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-accessible-iff).
 
 ## Lacunary sequence
 
@@ -199,7 +199,7 @@ $m_{n+1} \ge \lambda m_n$ for every $n \ge 0$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Context (lacunary sequence).
 
-Formalized by `MetaMathlibExt.IsLacunary`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-lacunary).
+Formalized by `MetaMathlibExt.IsLacunary`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-lacunary).
 
 ## Characterization of lacunary sequences
 
@@ -211,7 +211,7 @@ $m_{n+1} \ge q \, m_n$ for every $n \ge 0$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Context (lacunary sequence).
 
-Formalized by `MetaMathlibExt.isLacunary_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-lacunary-iff).
+Formalized by `MetaMathlibExt.isLacunary_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-lacunary-iff).
 
 ## Lacunary set
 
@@ -222,7 +222,7 @@ some lacunary sequence $(m_n)_{n \ge 0}$ of natural numbers.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Context (lacunary set).
 
-Formalized by `MetaMathlibExt.IsLacunarySet`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-lacunary-set).
+Formalized by `MetaMathlibExt.IsLacunarySet`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-lacunary-set).
 
 ## Characterization of lacunary sets
 
@@ -234,7 +234,7 @@ $D = \{m_n : n \ge 0\}$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Context (lacunary set).
 
-Formalized by `MetaMathlibExt.isLacunarySet_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-lacunary-set-iff).
+Formalized by `MetaMathlibExt.isLacunarySet_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-lacunary-set-iff).
 
 ## Minimal system
 
@@ -246,7 +246,7 @@ from $X$ and invariant, meaning $T(K) = K$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (topological dynamical system, minimal).
 
-Formalized by `MetaMathlibExt.IsMinimalSystem`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-minimal-system).
+Formalized by `MetaMathlibExt.IsMinimalSystem`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-minimal-system).
 
 ## Characterization of minimal systems
 
@@ -258,7 +258,7 @@ $K \subseteq X$ with $K \ne \emptyset$, $K \ne X$ and $T(K) = K$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (topological dynamical system, minimal).
 
-Formalized by `MetaMathlibExt.isMinimalSystem_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-minimal-system-iff).
+Formalized by `MetaMathlibExt.isMinimalSystem_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-minimal-system-iff).
 
 ## Iterated preimage
 
@@ -270,7 +270,7 @@ $(T^s)^{-1}(U)$ of $U$ under the $s$-th power $T^s$ of $T$ in the group of homeo
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (ℓ-topological recurrence).
 
-Formalized by `MetaMathlibExt.iteratePreimage`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#iterate-preimage).
+Formalized by `MetaMathlibExt.iteratePreimage`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#iterate-preimage).
 
 ## Iterated preimage as a preimage under a power
 
@@ -283,7 +283,7 @@ homeomorphisms of $X$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (ℓ-topological recurrence).
 
-Formalized by `MetaMathlibExt.iteratePreimage_eq`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#iterate-preimage-eq).
+Formalized by `MetaMathlibExt.iteratePreimage_eq`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#iterate-preimage-eq).
 
 ## Sets of $\ell$-topological recurrence
 
@@ -298,7 +298,7 @@ the $jd$-th iterate of $T$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (ℓ-topological recurrence).
 
-Formalized by `MetaMathlibExt.IsLTopologicalRecurrence`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-ltopological-recurrence).
+Formalized by `MetaMathlibExt.IsLTopologicalRecurrence`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-ltopological-recurrence).
 
 ## Characterization of $\ell$-topological recurrence
 
@@ -313,7 +313,7 @@ the $jd$-th iterate of $T$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (ℓ-topological recurrence).
 
-Formalized by `MetaMathlibExt.isLTopologicalRecurrence_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-ltopological-recurrence-iff).
+Formalized by `MetaMathlibExt.isLTopologicalRecurrence_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-ltopological-recurrence-iff).
 
 ## Sets of topological recurrence
 
@@ -324,7 +324,7 @@ recurrence when it is a set of $\ell$-topological recurrence for $\ell = 1$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (ℓ-topological recurrence).
 
-Formalized by `MetaMathlibExt.IsTopologicalRecurrence`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-topological-recurrence).
+Formalized by `MetaMathlibExt.IsTopologicalRecurrence`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-topological-recurrence).
 
 ## Topological recurrence is $1$-topological recurrence
 
@@ -336,7 +336,7 @@ $\ell = 1$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (ℓ-topological recurrence).
 
-Formalized by `MetaMathlibExt.isTopologicalRecurrence_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-topological-recurrence-iff).
+Formalized by `MetaMathlibExt.isTopologicalRecurrence_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-topological-recurrence-iff).
 
 ## Sets of multiple topological recurrence
 
@@ -348,7 +348,7 @@ $\ell \ge 1$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (ℓ-topological recurrence).
 
-Formalized by `MetaMathlibExt.IsMultipleTopologicalRecurrence`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-multiple-topological-recurrence).
+Formalized by `MetaMathlibExt.IsMultipleTopologicalRecurrence`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-multiple-topological-recurrence).
 
 ## Characterization of multiple topological recurrence
 
@@ -360,7 +360,7 @@ every natural number $\ell \ge 1$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Definition (ℓ-topological recurrence).
 
-Formalized by `MetaMathlibExt.isMultipleTopologicalRecurrence_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-multiple-topological-recurrence-iff).
+Formalized by `MetaMathlibExt.isMultipleTopologicalRecurrence_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-multiple-topological-recurrence-iff).
 
 ## Chromatically intersective sets
 
@@ -373,7 +373,7 @@ of the same color whose difference $a - b$, computed in the integers, lies in $D
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 13(iv).
 
-Formalized by `MetaMathlibExt.IsChromaticallyIntersective`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-chromatically-intersective).
+Formalized by `MetaMathlibExt.IsChromaticallyIntersective`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-chromatically-intersective).
 
 ## Characterization of chromatically intersective sets
 
@@ -387,7 +387,7 @@ integers, lies in $D$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 13(iv).
 
-Formalized by `MetaMathlibExt.isChromaticallyIntersective_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-chromatically-intersective-iff).
+Formalized by `MetaMathlibExt.isChromaticallyIntersective_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-chromatically-intersective-iff).
 
 ## Positive Fibonacci set
 
@@ -399,7 +399,7 @@ set $\{1, 2, 3, 5, 8, \dots\}$ of positive Fibonacci numbers, each counted once.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Proposition 1.
 
-Formalized by `MetaMathlibExt.positiveFibonacciSet`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#positive-fibonacci-set).
+Formalized by `MetaMathlibExt.positiveFibonacciSet`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#positive-fibonacci-set).
 
 ## Membership in the positive Fibonacci set
 
@@ -411,7 +411,7 @@ only if $d = F_n$ for some natural number $n \ge 2$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Proposition 1.
 
-Formalized by `MetaMathlibExt.mem_positiveFibonacciSet_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#mem-positive-fibonacci-set-iff).
+Formalized by `MetaMathlibExt.mem_positiveFibonacciSet_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#mem-positive-fibonacci-set-iff).
 
 ## Even Fibonacci set
 
@@ -423,7 +423,7 @@ $2, 8, 34, \dots$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Proposition 2.
 
-Formalized by `MetaMathlibExt.evenFibonacciSet`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#even-fibonacci-set).
+Formalized by `MetaMathlibExt.evenFibonacciSet`, a definition declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#even-fibonacci-set).
 
 ## Membership in the even Fibonacci set
 
@@ -435,7 +435,7 @@ $d = F_{3n+3}$ for some natural number $n$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Proposition 2.
 
-Formalized by `MetaMathlibExt.mem_evenFibonacciSet_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#mem-even-fibonacci-set-iff).
+Formalized by `MetaMathlibExt.mem_evenFibonacciSet_iff`, a theorem declared in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#mem-even-fibonacci-set-iff).
 
 ## Growth bound for the degree of accessibility
 
@@ -452,7 +452,7 @@ starts at index $0$, so $d_n$ is the paper's $d_{n+1}$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.accessibility_degree_growth_bound` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#accessibility-degree-growth-bound).
+Stated but not proved: `MetaMathlibExt.accessibility_degree_growth_bound` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#accessibility-degree-growth-bound).
 
 ## Fast eventual growth rules out 2-accessibility
 
@@ -466,7 +466,7 @@ $n + 1 \ge N$. Then $D$ is not $2$-accessible.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.not_two_accessible_of_growth` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#not-two-accessible-of-growth).
+Stated but not proved: `MetaMathlibExt.not_two_accessible_of_growth` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#not-two-accessible-of-growth).
 
 ## 2-large sets contain multiples of every positive integer
 
@@ -477,7 +477,7 @@ positive integers contains a multiple of each positive integer $m$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.two_large_contains_multiples` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#two-large-contains-multiples).
+Stated but not proved: `MetaMathlibExt.two_large_contains_multiples` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#two-large-contains-multiples).
 
 ## Finite removal preserves $r$-largeness
 
@@ -489,7 +489,7 @@ is $r$-large.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.rLarge_sdiff_finite` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#r-large-sdiff-finite).
+Stated but not proved: `MetaMathlibExt.rLarge_sdiff_finite` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#r-large-sdiff-finite).
 
 ## Largeness is partition regular
 
@@ -500,7 +500,7 @@ $D = D_1 \cup D_2$ is large, then $D_1$ is large or $D_2$ is large.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.large_union_partition` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#large-union-partition).
+Stated but not proved: `MetaMathlibExt.large_union_partition` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#large-union-partition).
 
 ## Sets growing by a factor of three are not 2-large
 
@@ -512,7 +512,7 @@ $n \in \mathbb{N}$, and let $D = \{d_n : n \in \mathbb{N}\}$. Then $D$ is not $2
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.not_two_large_of_triple_growth` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#not-two-large-of-triple-growth).
+Stated but not proved: `MetaMathlibExt.not_two_large_of_triple_growth` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#not-two-large-of-triple-growth).
 
 ## Dilates of a finite union of lacunary sets stay away from the integers
 
@@ -526,7 +526,7 @@ $\alpha s$ to its nearest integer $\operatorname{round}(\alpha s)$ equals $\vare
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.lacunary_union_avoids_integers` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#lacunary-union-avoids-integers).
+Stated but not proved: `MetaMathlibExt.lacunary_union_avoids_integers` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#lacunary-union-avoids-integers).
 
 ## Two-colorings avoiding long $D$-progressions
 
@@ -540,7 +540,7 @@ with no monochromatic $D$-arithmetic progression of length $\lceil 1/(2\varepsil
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.two_coloring_avoids_long_DAP` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#two-coloring-avoids-long-dap).
+Stated but not proved: `MetaMathlibExt.two_coloring_avoids_long_DAP` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#two-coloring-avoids-long-dap).
 
 ## Finite unions of lacunary sets are not 2-large
 
@@ -551,7 +551,7 @@ $D_1, \dots, D_n$, the union $D_1 \cup \dots \cup D_n$ is not 2-large.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.finite_union_lacunary_not_two_large` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#finite-union-lacunary-not-two-large).
+Stated but not proved: `MetaMathlibExt.finite_union_lacunary_not_two_large` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#finite-union-lacunary-not-two-large).
 
 ## Positive values of a polynomial vanishing at zero form a large set
 
@@ -563,7 +563,7 @@ of positive integers $d$ such that $p(n) = d$ for some positive integer $n$ is l
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.polynomial_range_large` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#polynomial-range-large).
+Stated but not proved: `MetaMathlibExt.polynomial_range_large` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#polynomial-range-large).
 
 ## A coloring criterion for accessibility of a shifted set
 
@@ -577,7 +577,7 @@ $x_{i+1} - x_i \in D + c$ for every $i < k - 1$. Then $D + c$ is $r$-accessible.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.accessible_of_colored_subset_diffsequences` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#accessible-of-colored-subset-diffsequenc).
+Stated but not proved: `MetaMathlibExt.accessible_of_colored_subset_diffsequences` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#accessible-of-colored-subset-diffsequenc).
 
 ## Sets containing their own long diffsequences are 2-accessible
 
@@ -589,7 +589,7 @@ $D$, that form a $D$-diffsequence, then $D$ is $2$-accessible.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.two_accessible_of_internal_diffsequences` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#two-accessible-of-internal-diffsequences).
+Stated but not proved: `MetaMathlibExt.two_accessible_of_internal_diffsequences` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#two-accessible-of-internal-diffsequences).
 
 ## Integral quotients of an accessible set
 
@@ -601,7 +601,7 @@ that is, the positive integers of the form $a/d$ with $a \in A$, is $r$-accessib
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 11(i).
 
-Stated but not proved: `MetaMathlibExt.accessible_integral_quotients` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 446](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L446). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#accessible-integral-quotients).
+Stated but not proved: `MetaMathlibExt.accessible_integral_quotients` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 446](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L446). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#accessible-integral-quotients).
 
 ## Multiples of $d$ in an accessible set
 
@@ -613,7 +613,7 @@ members of $A$ divisible by $d$ is $r$-accessible.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 11(ii).
 
-Stated but not proved: `MetaMathlibExt.accessible_divisible_subset` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 454](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L454). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#accessible-divisible-subset).
+Stated but not proved: `MetaMathlibExt.accessible_divisible_subset` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 454](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L454). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#accessible-divisible-subset).
 
 ## Colorings avoiding long diffsequences under fractional-part bounds
 
@@ -629,7 +629,7 @@ $\lceil 1/(r\varepsilon) \rceil + 1$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.coloring_avoids_diffsequence_of_fractional_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 463](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L463). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#coloring-avoids-diffsequence-of-fraction).
+Stated but not proved: `MetaMathlibExt.coloring_avoids_diffsequence_of_fractional_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 463](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L463). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#coloring-avoids-diffsequence-of-fraction).
 
 ## A 2-coloring with no monochromatic 6-term progression with positive Fibonacci gap
 
@@ -642,7 +642,7 @@ monochromatic.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Proposition 1 (coloring claim).
 
-Stated but not proved: `MetaMathlibExt.fibonacci_two_coloring_avoids_six_term_AP` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fibonacci-two-coloring-avoids-six-term-a).
+Stated but not proved: `MetaMathlibExt.fibonacci_two_coloring_avoids_six_term_AP` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fibonacci-two-coloring-avoids-six-term-a).
 
 ## The positive Fibonacci set is not 2-large
 
@@ -654,7 +654,7 @@ $\{F_n : n \ge 2\} = \{1, 2, 3, 5, 8, \dots\}$ is not $2$-large.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Proposition 1 (consequence).
 
-Stated but not proved: `MetaMathlibExt.fibonacci_not_two_large` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 486](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L486). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fibonacci-not-two-large).
+Stated but not proved: `MetaMathlibExt.fibonacci_not_two_large` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 486](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L486). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fibonacci-not-two-large).
 
 ## A 2-coloring with no monochromatic 4-term even-Fibonacci diffsequence
 
@@ -668,7 +668,7 @@ $x_0, x_1, x_2, x_3$ of the same color satisfy $x_{i+1} - x_i \in E$ for $i = 0,
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Proposition 2 (coloring claim).
 
-Stated but not proved: `MetaMathlibExt.even_fibonacci_two_coloring_avoids_four_term_diffsequence` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#even-fibonacci-two-coloring-avoids-four).
+Stated but not proved: `MetaMathlibExt.even_fibonacci_two_coloring_avoids_four_term_diffsequence` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#even-fibonacci-two-coloring-avoids-four).
 
 ## The even Fibonacci set is not 2-accessible
 
@@ -680,7 +680,7 @@ $\{F_{3n+3} : n \ge 0\} = \{2, 8, 34, \dots\}$ is not $2$-accessible.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Proposition 2 (consequence).
 
-Stated but not proved: `MetaMathlibExt.even_fibonacci_not_two_accessible` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#even-fibonacci-not-two-accessible).
+Stated but not proved: `MetaMathlibExt.even_fibonacci_not_two_accessible` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#even-fibonacci-not-two-accessible).
 
 ## Furstenberg–Weiss correspondence for translation-invariant families
 
@@ -700,7 +700,7 @@ cover of $X$ by $r$ clopen sets $U_1, \dots, U_r$.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.furstenberg_weiss_correspondence` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#furstenberg-weiss-correspondence).
+Stated but not proved: `MetaMathlibExt.furstenberg_weiss_correspondence` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#furstenberg-weiss-correspondence).
 
 ## Topological recurrence, accessibility and chromatic intersectivity
 
@@ -717,7 +717,7 @@ intersective.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.recurrence_accessibility_equivalences` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#recurrence-accessibility-equivalences).
+Stated but not proved: `MetaMathlibExt.recurrence_accessibility_equivalences` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#recurrence-accessibility-equivalences).
 
 ## One part of a union inherits $k$-topological recurrence
 
@@ -729,7 +729,7 @@ then $D_1$ or $D_2$ is a set of $k$-topological recurrence.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Theorem 14.
 
-Stated but not proved: `MetaMathlibExt.topological_recurrence_union_partition` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 564](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L564). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#topological-recurrence-union-partition).
+Stated but not proved: `MetaMathlibExt.topological_recurrence_union_partition` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 564](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L564). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#topological-recurrence-union-partition).
 
 ## One part of an accessible union is accessible
 
@@ -741,7 +741,7 @@ is accessible.
 
 - Oscar Quester, *On Some Properties of Accessible Sets*, INTEGERS 25 (2025), Article A64, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.accessible_union_partition` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 572](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#accessible-union-partition).
+Stated but not proved: `MetaMathlibExt.accessible_union_partition` is written with `theorem_wanted` in [WantedExt/Combinatorics/AccessibleSetsWanted.lean, line 572](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AccessibleSetsWanted.lean#L572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#accessible-union-partition).
 
 ## Monochromatic finite sequences
 
@@ -754,7 +754,7 @@ $i, j < k$.
 
 - `OPG-1797` (Open Problem Garden, node 1797, http://www.openproblemgarden.org/op/2_accessibility_of_primes): formalizes "monochromatic sequence" from the definition of `r`-accessible.
 
-Formalized by `MathlibExt.Combinatorics.PrimeTwoAccessibilityWanted.IsMonochromatic`, a definition declared in [WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-monochromatic-2).
+Formalized by `MathlibExt.Combinatorics.PrimeTwoAccessibilityWanted.IsMonochromatic`, a definition declared in [WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-monochromatic-2).
 
 ## Finite $S$-diffsequences
 
@@ -767,7 +767,7 @@ $x_{i+1} = x_i + d$.
 
 - `OPG-1797` (Open Problem Garden, node 1797, http://www.openproblemgarden.org/op/2_accessibility_of_primes): formalizes "`S`-diffsequence", i.e. `x_{i+1} - x_i ∈ S`, stated additively as `x (i+1) = x i + d` with `d ∈ S`.
 
-Formalized by `MathlibExt.Combinatorics.PrimeTwoAccessibilityWanted.IsSDiffSequence`, a definition declared in [WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-sdiff-sequence).
+Formalized by `MathlibExt.Combinatorics.PrimeTwoAccessibilityWanted.IsSDiffSequence`, a definition declared in [WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-sdiff-sequence).
 
 ## $r$-accessible sets of natural numbers
 
@@ -781,7 +781,7 @@ $d \in S$ with $x_{i+1} = x_i + d$.
 
 - `OPG-1797` (Open Problem Garden, node 1797, http://www.openproblemgarden.org/op/2_accessibility_of_primes): `S` is `r`-accessible if for every `r`-coloring of `ℕ` and every `k ∈ ℕ \ {1}` there is a monochromatic `S`-diffsequence of length `k`.
 
-Formalized by `MathlibExt.Combinatorics.PrimeTwoAccessibilityWanted.IsRAccessible`, a definition declared in [WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-raccessible-2).
+Formalized by `MathlibExt.Combinatorics.PrimeTwoAccessibilityWanted.IsRAccessible`, a definition declared in [WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#is-raccessible-2).
 
 ## 2-accessibility of the primes
 
@@ -795,7 +795,7 @@ Garden question OPG-1797 asks whether this holds.
 
 - `OPG-1797` (Open Problem Garden, node 1797, http://www.openproblemgarden.org/op/2_accessibility_of_primes): "Is the set of prime numbers 2-accessible?"
 
-Formalized by `MathlibExt.Combinatorics.PrimeTwoAccessibilityWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#conjecture).
+Formalized by `MathlibExt.Combinatorics.PrimeTwoAccessibilityWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#conjecture).
 
 ## The primes are 2-accessible
 
@@ -811,7 +811,7 @@ Frantzikinakis–Host–Kra recurrence theorem along shifted primes.
 
 - Oscar Quester, The Primes are 2-Accessible, arXiv preprint (2026), arXiv:2606.00410, https://arxiv.org/abs/2606.00410; Nikos Frantzikinakis, Bernard Host, Bryna Kra, The polynomial multidimensional Szemeredi theorem along shifted primes, Israel J. Math. 194 (2013), 331-348, arXiv:1009.1484, https://arxiv.org/abs/1009.1484.
 
-Stated but not proved: `MathlibExt.Combinatorics.PrimeTwoAccessibilityWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Combinatorics.PrimeTwoAccessibilityWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PrimeTwoAccessibilityWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#conjecture-holds).
 
 ## Halves of even Fibonacci numbers
 
@@ -824,7 +824,7 @@ $g_n = F_{3n}/2$ for $n \ge 1$.
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Section 2 (notation `G`, `g_n`).
 
-Formalized by `MetaMathlibExt.halfEvenFibonacciSet`, a definition declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#half-even-fibonacci-set).
+Formalized by `MetaMathlibExt.halfEvenFibonacciSet`, a definition declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#half-even-fibonacci-set).
 
 ## $4$ is half of an even Fibonacci number
 
@@ -837,7 +837,7 @@ numbers; indeed $4 = F_6/2$.
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Section 2 (notation `G`, `g_n`).
 
-Formalized by `MetaMathlibExt.four_mem_halfEvenFibonacciSet`, a theorem declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#four-mem-half-even-fibonacci-set).
+Formalized by `MetaMathlibExt.four_mem_halfEvenFibonacciSet`, a theorem declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#four-mem-half-even-fibonacci-set).
 
 ## The Thue–Morse morphism $\mu$
 
@@ -848,7 +848,7 @@ the word $10$ and the letter $1$ to the word $01$.
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Definition 1.
 
-Formalized by `MetaMathlibExt.thueMorseMorphism`, a definition declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#thue-morse-morphism).
+Formalized by `MetaMathlibExt.thueMorseMorphism`, a definition declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#thue-morse-morphism).
 
 ## The morphism $\nu$
 
@@ -859,7 +859,7 @@ $\nu(0) = 1$ and $\nu(1) = 00$.
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Definition 1.
 
-Formalized by `MetaMathlibExt.fibonacciNuMorphism`, a definition declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fibonacci-nu-morphism).
+Formalized by `MetaMathlibExt.fibonacciNuMorphism`, a definition declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fibonacci-nu-morphism).
 
 ## Wesley's word $S$
 
@@ -875,7 +875,7 @@ $F_\infty = 010010100\dots$ is the infinite Fibonacci word.
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Definition 1.
 
-Formalized by `MetaMathlibExt.wesleyWordS`, a definition declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#wesley-word-s).
+Formalized by `MetaMathlibExt.wesleyWordS`, a definition declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#wesley-word-s).
 
 ## Wesley's word $T$
 
@@ -891,7 +891,7 @@ $F_\infty = 010010100\dots$ is the infinite Fibonacci word.
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Definition 1.
 
-Formalized by `MetaMathlibExt.wesleyWordT`, a definition declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#wesley-word-t).
+Formalized by `MetaMathlibExt.wesleyWordT`, a definition declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#wesley-word-t).
 
 ## The first ten letters of Wesley's words $S$ and $T$
 
@@ -904,7 +904,7 @@ $1001101001$ and $T$ begins with $1001100100$.
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Definition 1.
 
-Formalized by `MetaMathlibExt.wesleyWords_first_ten`, a theorem declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#wesley-words-first-ten).
+Formalized by `MetaMathlibExt.wesleyWords_first_ten`, a theorem declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#wesley-words-first-ten).
 
 ## Wesley's constants $c_{n,\varepsilon}$
 
@@ -923,7 +923,7 @@ Lemma 5 uses these constants only for $\varepsilon \in \{-4, 0, 4\}$.
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Lemma 5 (definition of `c_{n,ε}`).
 
-Formalized by `MetaMathlibExt.wesleyFractionalConstant`, a definition declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#wesley-fractional-constant).
+Formalized by `MetaMathlibExt.wesleyFractionalConstant`, a definition declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#wesley-fractional-constant).
 
 ## Wesley's constant $c_{n,0}$ for $n \equiv 0 \pmod 4$
 
@@ -934,7 +934,7 @@ $n \equiv 0 \pmod 4$, Wesley's constant satisfies $c_{n,0} = 2/5$.
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Lemma 5 (definition of `c_{n,ε}`).
 
-Formalized by `MetaMathlibExt.wesleyFractionalConstant_zero_of_mod_four_eq_zero`, a theorem declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#wesley-fractional-constant-zero-of-mod-f).
+Formalized by `MetaMathlibExt.wesleyFractionalConstant_zero_of_mod_four_eq_zero`, a theorem declared in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#wesley-fractional-constant-zero-of-mod-f).
 
 ## The Fibonacci numbers have degree of accessibility at most $3$
 
@@ -949,7 +949,7 @@ $i = 0, 1, 2$.
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.fibonacciSet_degreeOfAccessibility_le_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fibonacci-set-degree-of-accessibility-le).
+Stated but not proved: `MetaMathlibExt.fibonacciSet_degreeOfAccessibility_le_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fibonacci-set-degree-of-accessibility-le).
 
 ## Arithmetic progressions with Fibonacci gaps are not $2$-regular
 
@@ -964,7 +964,7 @@ $r$-large for any natural number $r \ge 2$.
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.fibonacci_gap_progressions_not_two_regular` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fibonacci-gap-progressions-not-two-regul).
+Stated but not proved: `MetaMathlibExt.fibonacci_gap_progressions_not_two_regular` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fibonacci-gap-progressions-not-two-regul).
 
 ## Fibonacci numbers divided by the golden ratio
 
@@ -978,7 +978,7 @@ $$\frac{F_n}{\varphi} - F_{n-1} = (-1)^{n+1} \varphi^{-n}.$$
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.fib_div_goldenRatio_sub_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fib-div-golden-ratio-sub-fib).
+Stated but not proved: `MetaMathlibExt.fib_div_goldenRatio_sub_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fib-div-golden-ratio-sub-fib).
 
 ## Beatty-sequence descriptions of the words $F_\infty$, $S$ and $T$
 
@@ -1003,7 +1003,7 @@ for some integer $m$.
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.fibonacciWord_beatty_properties` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fibonacci-word-beatty-properties).
+Stated but not proved: `MetaMathlibExt.fibonacciWord_beatty_properties` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fibonacci-word-beatty-properties).
 
 ## Halved even Fibonacci numbers and $4$-accessibility of the Fibonacci numbers
 
@@ -1017,7 +1017,7 @@ $4$-accessible.
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.not_accessible_four_of_halfEvenFibonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#not-accessible-four-of-half-even-fibonac).
+Stated but not proved: `MetaMathlibExt.not_accessible_four_of_halfEvenFibonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#not-accessible-four-of-half-even-fibonac).
 
 ## Differences of fractional parts of multiples of the golden ratio
 
@@ -1043,7 +1043,7 @@ $x_1 = 1$, $x_2 = 3$ give $\{2\varphi\} - \{\varphi\} = (\varphi^{-5} - \varphi)
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.fract_goldenRatio_differences` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fract-golden-ratio-differences).
+Stated but not proved: `MetaMathlibExt.fract_goldenRatio_differences` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fract-golden-ratio-differences).
 
 ## Fractional parts of shifted Fibonacci numbers divided by $\sqrt{5}$
 
@@ -1066,7 +1066,7 @@ The paper prints $+2(-\varphi)^{-n}/5$ in (i). The sign $-$ is the one its proof
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.fract_fib_add_div_sqrt_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fract-fib-add-div-sqrt-five).
+Stated but not proved: `MetaMathlibExt.fract_fib_add_div_sqrt_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#fract-fib-add-div-sqrt-five).
 
 ## The Lucas numbers are not $4$-accessible
 
@@ -1079,7 +1079,7 @@ both monochromatic and an $L$-diffsequence; and $L$ is not $r$-accessible for an
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.lucasSet_not_four_accessible` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#lucas-set-not-four-accessible).
+Stated but not proved: `MetaMathlibExt.lucasSet_not_four_accessible` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#lucas-set-not-four-accessible).
 
 ## The even Fibonacci numbers have degree of accessibility $1$
 
@@ -1091,7 +1091,7 @@ $r \ge 2$.
 
 - William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.evenFibonacciSet_degreeOfAccessibility_eq_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#even-fibonacci-set-degree-of-accessibili).
+Stated but not proved: `MetaMathlibExt.evenFibonacciSet_degreeOfAccessibility_eq_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/FibonacciDiffsequenceRamseyWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html#even-fibonacci-set-degree-of-accessibili).
 
 ## Depends on
 
@@ -1100,4 +1100,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Accessible sets and diffsequences](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/accessible-sets-and-diffsequences)

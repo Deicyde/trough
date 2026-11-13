@@ -1,6 +1,6 @@
 # 32 Limits of Schemes
 
-Chapter 32 of the Stacks Project, *Limits of Schemes*, [Tag 01YT](https://stacks.math.columbia.edu/tag/01YT): the 21 sections of its 22 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 117 tags are carried by 194 declarations of the repository (all in StacksFrontier) and 13 registered declarations.
+Chapter 32 of the Stacks Project, *Limits of Schemes*, [Tag 01YT](https://stacks.math.columbia.edu/tag/01YT): the 21 sections of its 22 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 118 tags are carried by 197 declarations of the repository (all in StacksFrontier) and 12 registered declarations.
 
 ## [32.2 Directed limits of schemes… to 32.21 Application to…](part-01/README.md)
 

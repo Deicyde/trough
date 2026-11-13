@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.8 The Čech complex and Čech cohomology
 
-Section 21.8 of the Stacks Project, [Tag 03AK](https://stacks.math.columbia.edu/tag/03AK). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.8 of the Stacks Project, [Tag 03AK](https://stacks.math.columbia.edu/tag/03AK). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03AL, an equation
 
 [Tag 03AL](https://stacks.math.columbia.edu/tag/03AL) in the Stacks Project.
 
-**`Stacks.CechSite.cechComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexOfAFamily.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexOfAFamily.lean#L153). The attribute's comment: “the alternating-sum differential of the Čech complex”. References: SGA 4 V (2.4.3), “Čech complex”.
+**`Stacks.CechSite.cechComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexOfAFamily.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexOfAFamily.lean#L153). The attribute's comment: “the alternating-sum differential of the Čech complex”. References: SGA 4 V (2.4.3), “Čech complex”.
 
 > The Čech complex associated to an additive presheaf and a family of morphisms with fixed
 > target whose finite nonempty fibre products exist.
@@ -31,7 +31,7 @@ noncomputable abbrev cechComplex
 
 [Tag 03AM](https://stacks.math.columbia.edu/tag/03AM) in the Stacks Project.
 
-**`Stacks.CechSite.cechComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexOfAFamily.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexOfAFamily.lean#L153). The attribute's comment: “the Čech complex”. References: SGA 4 V (2.4.3), “Čech complex”.
+**`Stacks.CechSite.cechComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexOfAFamily.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexOfAFamily.lean#L153). The attribute's comment: “the Čech complex”. References: SGA 4 V (2.4.3), “Čech complex”.
 
 > The Čech complex associated to an additive presheaf and a family of morphisms with fixed
 > target whose finite nonempty fibre products exist.
@@ -44,7 +44,7 @@ noncomputable abbrev cechComplex
     (F : CategoryTheory.Functor Cᵒᵖ A) : CochainComplex A ℕ
 ```
 
-**`Stacks.CechSite.cechCohomology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexOfAFamily.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexOfAFamily.lean#L165). The attribute's comment: “the Čech cohomology groups”. References: SGA 4 V (2.4.3), “Čech cohomology of 𝒰”.
+**`Stacks.CechSite.cechCohomology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexOfAFamily.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexOfAFamily.lean#L165). The attribute's comment: “the Čech cohomology groups”. References: SGA 4 V (2.4.3), “Čech cohomology of 𝒰”.
 
 > The degree-`n` Čech cohomology object of a presheaf with respect to a family of morphisms
 > with fixed target. For abelian-group-valued presheaves this is the Čech cohomology group.
@@ -61,7 +61,7 @@ noncomputable abbrev cechCohomology
 
 [Tag 03AN](https://stacks.math.columbia.edu/tag/03AN) in the Stacks Project.
 
-**`Stacks.CechSite.cechRestrictionToCohomology_bijective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DegreeZeroAndSheafCondition.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DegreeZeroAndSheafCondition.lean#L430). The attribute's comment: “the Čech-complex formulation”.
+**`Stacks.CechSite.cechRestrictionToCohomology_bijective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DegreeZeroAndSheafCondition.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DegreeZeroAndSheafCondition.lean#L430). The attribute's comment: “the Čech-complex formulation”.
 
 > For an individual family whose Čech complex exists, bijectivity into degree-zero
 > Čech homology is equivalent to bijectivity into matching families.
@@ -76,7 +76,7 @@ public theorem cechRestrictionToCohomology_bijective_iff {X : C}
       Function.Bijective (cechRestriction E F)
 ```
 
-**`Stacks.CechSite.isSheaf_iff_bijective_cechRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DegreeZeroAndSheafCondition.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DegreeZeroAndSheafCondition.lean#L453).
+**`Stacks.CechSite.isSheaf_iff_bijective_cechRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DegreeZeroAndSheafCondition.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DegreeZeroAndSheafCondition.lean#L453).
 
 > **Stacks 03AN.** An abelian presheaf is a sheaf if and only if restriction to the
 > degree-zero Čech cohomology of every covering family is bijective.
@@ -93,7 +93,7 @@ public theorem isSheaf_iff_bijective_cechRestriction
 
 [Tag 03F4](https://stacks.math.columbia.edu/tag/03F4) in the Stacks Project.
 
-**`Stacks.CechSite.cechComplexMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexMapOfARefinement.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexMapOfARefinement.lean#L380).
+**`Stacks.CechSite.cechComplexMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexMapOfARefinement.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexMapOfARefinement.lean#L380).
 
 > The map of Čech complexes induced by a morphism of families of morphisms with fixed target,
 > from the Čech complex of the refined family `G` to that of the refining family `E`.
@@ -118,4 +118,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.8, Tag 03AK](https://stacks.math.columbia.edu/tag/03AK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

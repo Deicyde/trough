@@ -8,13 +8,13 @@ proof: formalized
 
 # 107.3 Multiplicities of components of algebraic stacks
 
-Section 107.3 of the Stacks Project, [Tag 0DR4](https://stacks.math.columbia.edu/tag/0DR4). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 107.3 of the Stacks Project, [Tag 0DR4](https://stacks.math.columbia.edu/tag/0DR4). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DR5, a lemma
 
 [Tag 0DR5](https://stacks.math.columbia.edu/tag/0DR5) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.closure_image_chartPointMap_mem_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ComponentMultiplicity.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ComponentMultiplicity.lean#L229). The attribute's comment: “closure of the image of an irreducible component”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.closure_image_chartPointMap_mem_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ComponentMultiplicity.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ComponentMultiplicity.lean#L229). The attribute's comment: “closure of the image of an irreducible component”.
 
 > For a smooth 1-morphism to a locally Noetherian algebraic stack over `S` from the algebraic
 > stack of a scheme `U` of the site, the closure of the image of any irreducible component of `U` is
@@ -32,7 +32,7 @@ theorem closure_image_chartPointMap_mem_irreducibleComponents (U : BigFppfOver B
     closure (chartPointMap B S hS U 𝒳 f '' T) ∈ irreducibleComponents (points B S hS 𝒳)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_mem_irreducibleComponents_closure_image_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ComponentMultiplicity.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ComponentMultiplicity.lean#L249). The attribute's comment: “surjective charts give every irreducible component”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_mem_irreducibleComponents_closure_image_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ComponentMultiplicity.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ComponentMultiplicity.lean#L249). The attribute's comment: “surjective charts give every irreducible component”.
 
 > For a smooth *surjective* 1-morphism to a locally Noetherian algebraic stack over `S` from the
 > algebraic stack of a scheme `U` of the site, every irreducible component of the space of points of
@@ -55,7 +55,7 @@ theorem exists_mem_irreducibleComponents_closure_image_eq (U : BigFppfOver B S h
 
 [Tag 0DR6](https://stacks.math.columbia.edu/tag/0DR6) in the Stacks Project.
 
-**`Stacks.Chow.componentMultiplicity_id_eq_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothComponentMultiplicity.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SmoothComponentMultiplicity.lean#L119).
+**`Stacks.Chow.componentMultiplicity_id_eq_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothComponentMultiplicity.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/SmoothComponentMultiplicity.lean#L119).
 
 > **Stacks 0DR6.** Let `f : U ⟶ X` be a smooth morphism of locally Noetherian schemes, let
 > `T'` be an irreducible component of `U` and let `T` be the irreducible component of `X` obtained
@@ -74,7 +74,7 @@ public theorem componentMultiplicity_id_eq_of_smooth
 
 [Tag 0DR7](https://stacks.math.columbia.edu/tag/0DR7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.componentMultiplicity_eq_of_closure_image_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ComponentMultiplicityIndependence.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ComponentMultiplicityIndependence.lean#L227).
+**`AlgebraicGeometry.Stack.componentMultiplicity_eq_of_closure_image_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ComponentMultiplicityIndependence.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ComponentMultiplicityIndependence.lean#L227).
 
 > **Stacks 0DR7.** Let `f₁ : U₁ → 𝒳` and `f₂ : U₂ → 𝒳` be smooth 1-morphisms to a locally
 > Noetherian algebraic stack over `S` from the algebraic stacks of two schemes `U₁`, `U₂` of the
@@ -112,7 +112,7 @@ theorem componentMultiplicity_eq_of_closure_image_eq
 
 [Tag 0DR8](https://stacks.math.columbia.edu/tag/0DR8) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.componentMultiplicity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StackComponentMultiplicity.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StackComponentMultiplicity.lean#L147).
+**`AlgebraicGeometry.Stack.componentMultiplicity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StackComponentMultiplicity.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StackComponentMultiplicity.lean#L147).
 
 > **Stacks 0DR8.** The multiplicity `m_{T, 𝒳}` of an irreducible component `T` of the space of
 > points of Stacks 04XL of a locally Noetherian algebraic stack `𝒳` over `S`: the multiplicity of
@@ -127,7 +127,7 @@ noncomputable def componentMultiplicity (𝒳 : AlgebraicStacks.{u, w} B S hS)
     (hT : T ∈ irreducibleComponents (AlgebraicStacks.points B S hS 𝒳)) : ℤ
 ```
 
-**`AlgebraicGeometry.Stack.componentMultiplicity_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StackComponentMultiplicity.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StackComponentMultiplicity.lean#L170). The attribute's comment: “the multiplicity is computed by any smooth chart”.
+**`AlgebraicGeometry.Stack.componentMultiplicity_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StackComponentMultiplicity.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StackComponentMultiplicity.lean#L170). The attribute's comment: “the multiplicity is computed by any smooth chart”.
 
 > **Stacks 0DR8.** The multiplicity of an irreducible component `T` of the space of points of a
 > locally Noetherian algebraic stack over `S` is computed by *any* smooth 1-morphism `f : U → 𝒳` from
@@ -157,4 +157,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 107.3, Tag 0DR4](https://stacks.math.columbia.edu/tag/0DR4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

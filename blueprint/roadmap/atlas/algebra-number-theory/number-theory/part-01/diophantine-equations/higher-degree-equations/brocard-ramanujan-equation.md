@@ -7,7 +7,7 @@ statement: formalized
 
 # Brocard–Ramanujan equation
 
-7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html).
+7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html).
 
 ## Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ power-free are finite
 
@@ -19,7 +19,7 @@ $n! + 1 = x^2$ such that $x - 1$ or $x + 1$ is $k$-free.
 
 - Abderrahim Makki Naciri, *On the Brocard-Ramanujan Equation with 7-Free Integers and Prime Powers*, INTEGERS 25 (2025), Article A71, Theorem 1(i), first sentence.
 
-Stated but not proved: `MetaMathlibExt.brocardRamanujan_powerFree_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html#brocard-ramanujan-power-free-finite).
+Stated but not proved: `MetaMathlibExt.brocardRamanujan_powerFree_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html#brocard-ramanujan-power-free-finite).
 
 ## Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ seven-free
 
@@ -31,7 +31,7 @@ $(4, 5)$, $(5, 11)$ and $(7, 71)$.
 
 - Abderrahim Makki Naciri, *On the Brocard-Ramanujan Equation with 7-Free Integers and Prime Powers*, INTEGERS 25 (2025), Article A71, Theorem 1(i), second sentence.
 
-Stated but not proved: `MetaMathlibExt.brocardRamanujan_sevenFree_subset` is written with `theorem_wanted` in [WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html#brocard-ramanujan-seven-free-subset).
+Stated but not proved: `MetaMathlibExt.brocardRamanujan_sevenFree_subset` is written with `theorem_wanted` in [WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html#brocard-ramanujan-seven-free-subset).
 
 ## Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ having few prime factors are finite
 
@@ -43,7 +43,7 @@ divisors.
 
 - Abderrahim Makki Naciri, *On the Brocard-Ramanujan Equation with 7-Free Integers and Prime Powers*, INTEGERS 25 (2025), Article A71, Theorem 1(ii), first sentence.
 
-Stated but not proved: `MetaMathlibExt.brocardRamanujan_fewPrimeFactors_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html#brocard-ramanujan-few-prime-factors-fini).
+Stated but not proved: `MetaMathlibExt.brocardRamanujan_fewPrimeFactors_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html#brocard-ramanujan-few-prime-factors-fini).
 
 ## Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ a prime power
 
@@ -55,7 +55,7 @@ $(n, x) = (4, 5)$.
 
 - Abderrahim Makki Naciri, *On the Brocard-Ramanujan Equation with 7-Free Integers and Prime Powers*, INTEGERS 25 (2025), Article A71, Theorem 1(ii), second sentence.
 
-Stated but not proved: `MetaMathlibExt.brocardRamanujan_primePow_subset` is written with `theorem_wanted` in [WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html#brocard-ramanujan-prime-pow-subset).
+Stated but not proved: `MetaMathlibExt.brocardRamanujan_primePow_subset` is written with `theorem_wanted` in [WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html#brocard-ramanujan-prime-pow-subset).
 
 ## Divisors of a factorial bounded by their largest prime exponent
 
@@ -67,7 +67,7 @@ factorization of $x$, with $K(1) = 0$. Then $x \le \exp(3 n K(x) / 2)$.
 
 - Abderrahim Makki Naciri, *On the Brocard-Ramanujan Equation with 7-Free Integers and Prime Powers*, INTEGERS 25 (2025), Article A71, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.le_exp_of_dvd_factorial` is written with `theorem_wanted` in [WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html#le-exp-of-dvd-factorial).
+Stated but not proved: `MetaMathlibExt.le_exp_of_dvd_factorial` is written with `theorem_wanted` in [WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html#le-exp-of-dvd-factorial).
 
 ## Divisors of a factorial bounded by their number of prime factors
 
@@ -80,7 +80,7 @@ $x \le n^{n/a} (a \, \omega(x) + 1)^{n \, \omega(x)}$, where $n^{n/a}$ is a real
 
 - Abderrahim Makki Naciri, *On the Brocard-Ramanujan Equation with 7-Free Integers and Prime Powers*, INTEGERS 25 (2025), Article A71, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.le_rpow_mul_pow_of_dvd_factorial` is written with `theorem_wanted` in [WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html#le-rpow-mul-pow-of-dvd-factorial).
+Stated but not proved: `MetaMathlibExt.le_rpow_mul_pow_of_dvd_factorial` is written with `theorem_wanted` in [WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html#le-rpow-mul-pow-of-dvd-factorial).
 
 ## Finitely many Brocard–Ramanujan solutions of polynomial shape
 
@@ -99,7 +99,7 @@ $x_1 \cdots x_m P(x_1, \ldots, x_m) \pm 1$.
 
 - Abderrahim Makki Naciri, *On the Brocard-Ramanujan Equation with 7-Free Integers and Prime Powers*, INTEGERS 25 (2025), Article A71, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.brocardRamanujan_polynomial_powerFree_mul_fewPrimeFactors_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html#brocard-ramanujan-polynomial-power-free).
+Stated but not proved: `MetaMathlibExt.brocardRamanujan_polynomial_powerFree_mul_fewPrimeFactors_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BrocardRamanujanPowerFreeWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html#brocard-ramanujan-polynomial-power-free).
 
 ## Depends on
 
@@ -108,4 +108,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Brocard–Ramanujan equation](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/brocard-ramanujan-equation)

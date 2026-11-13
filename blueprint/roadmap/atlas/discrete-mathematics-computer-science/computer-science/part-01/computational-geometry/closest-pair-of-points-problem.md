@@ -8,14 +8,14 @@ proof: formalized
 
 # Closest pair of points problem
 
-25 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html).
+25 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html).
 
 ## Squared distance in the plane
 
 Let $K$ be a linearly ordered field. The squared distance
 between points $p = (p_1, p_2)$ and $q = (q_1, q_2)$ of $K^2$ is $(p_1 - q_1)^2 + (p_2 - q_2)^2$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.dist2`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#dist2).
+Formalized by `Cslib.Algorithms.Lean.Geometry.dist2`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#dist2).
 
 ## Least pairwise squared distance
 
@@ -25,7 +25,7 @@ $p = (p_1, p_2)$ and $q = (q_1, q_2)$ of $K^2$. For a list $c_1, \dots, c_n$ of 
 an element $\delta$ of $K$ is the least pairwise squared distance of the list when
 $\delta = d(c_i, c_j)$ for some $i < j$ and $\delta \le d(c_i, c_j)$ for all $i < j$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.IsMinPairDist2`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#is-min-pair-dist2).
+Formalized by `Cslib.Algorithms.Lean.Geometry.IsMinPairDist2`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#is-min-pair-dist2).
 
 ## Least squared distance from a point to a list
 
@@ -36,7 +36,7 @@ points of $K^2$, the least squared distance from $p$ to the list is no value if 
 $\min_{1 \le k \le m} d(p, c_k)$ otherwise. Computing it is charged one unit of cost per point of
 the list, $m$ units in total.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.minDistFrom`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#min-dist-from).
+Formalized by `Cslib.Algorithms.Lean.Geometry.minDistFrom`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#min-dist-from).
 
 ## Brute-force closest pair
 
@@ -47,7 +47,7 @@ returns no value if $n < 2$, and otherwise returns $\min_{i < j} d(c_i, c_j)$: f
 computes the least squared distance from $c_i$ to the later points $c_{i+1}, \dots, c_n$, and
 takes the least of these minima. It is charged one unit of cost per squared distance computed.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.bruteMin`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#brute-min).
+Formalized by `Cslib.Algorithms.Lean.Geometry.bruteMin`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#brute-min).
 
 ## Strip scan from a point
 
@@ -60,7 +60,7 @@ with threshold $\delta$ returns no value if $k = 0$ and $\min_{1 \le l \le k} d(
 otherwise. It is charged one unit of cost per point $c_1, \dots, c_k$: it stops at the first
 point whose squared vertical gap to $p$ is at least $\delta$, without computing its distance.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.scanFrom`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#scan-from).
+Formalized by `Cslib.Algorithms.Lean.Geometry.scanFrom`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#scan-from).
 
 ## Closest-pair strip scan
 
@@ -70,7 +70,7 @@ $c_i$ with threshold $\delta$ on the later points $c_{i+1}, \dots, c_n$. It retu
 the values these scans return, or no value if none of them returns a value, and its cost is the
 sum of their costs.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.stripScan`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#strip-scan).
+Formalized by `Cslib.Algorithms.Lean.Geometry.stripScan`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#strip-scan).
 
 ## Closest-pair recursion
 
@@ -86,7 +86,7 @@ its cost is that of the brute-force scan; otherwise it is the sum of the costs o
 recursive calls and of the strip scan when it is run, and splitting, filtering and sorting are
 free.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.closestRec`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-rec).
+Formalized by `Cslib.Algorithms.Lean.Geometry.closestRec`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-rec).
 
 ## Divide-and-conquer closest pair
 
@@ -97,7 +97,7 @@ no value, and is charged one unit of cost per squared distance computed.
 
 This is CLRS `CLOSEST-PAIR` (Section 33.4), with distances compared squared.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.closestPair`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-pair).
+Formalized by `Cslib.Algorithms.Lean.Geometry.closestPair`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-pair).
 
 ## Closest-pair answer
 
@@ -108,7 +108,7 @@ an optional value $r$ (an element of $K$ or no value) is an answer for the list 
 $\delta$ that $r$ holds equals $d(c_i, c_j)$ for some $i < j$, and when for all $i < j$, $r$ holds
 a value $\delta$ with $\delta \le d(c_i, c_j)$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.IsAnswer`, a structure declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#is-answer).
+Formalized by `Cslib.Algorithms.Lean.Geometry.IsAnswer`, a structure declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#is-answer).
 
 ## The nearest-point scan returns the least squared distance
 
@@ -119,7 +119,7 @@ $K^2$. If the scan for the least squared distance from $p$ to the entries of $qs
 $\delta$, then $\delta = d(p, q)$ for some entry $q$ of $qs$. For every entry $q$ of $qs$, the
 scan returns a value $\delta$ with $\delta \le d(p, q)$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.minDistFrom_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#min-dist-from-spec).
+Formalized by `Cslib.Algorithms.Lean.Geometry.minDistFrom_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#min-dist-from-spec).
 
 ## The strip scan bounds every pair with a small vertical gap
 
@@ -131,7 +131,7 @@ most the other's. If $a = (a_1, a_2)$ and $b = (b_1, b_2)$ are entries of $ys$ a
 respectively and $(b_2 - a_2)^2 < \delta$, then the strip scan with threshold $\delta$ on $ys$
 returns a value $e$ with $e \le d(a, b)$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.stripScan_lower`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#strip-scan-lower).
+Formalized by `Cslib.Algorithms.Lean.Geometry.stripScan_lower`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#strip-scan-lower).
 
 ## The closest-pair recursion is correct on lists sorted by first coordinate
 
@@ -143,7 +143,7 @@ other's. If the closest-pair recursion returns a value $\delta$ on $xs$, then $\
 for some entries $p$, $q$ of $xs$ at different positions. For any two entries $p$, $q$ of $xs$ at
 different positions, the recursion returns a value $\delta$ with $\delta \le d(p, q)$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.closestRec_isAnswer`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-rec-is-answer).
+Formalized by `Cslib.Algorithms.Lean.Geometry.closestRec_isAnswer`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-rec-is-answer).
 
 ## The closest-pair algorithm returns the answer
 
@@ -154,7 +154,7 @@ closest-pair algorithm returns a value $\delta$ on $ps$, then $\delta = d(p, q)$
 $p$, $q$ of $ps$ at different positions. For any two entries $p$, $q$ of $ps$ at different
 positions, the algorithm returns a value $\delta$ with $\delta \le d(p, q)$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.closestPair_isAnswer`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 462](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L462). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-pair-is-answer).
+Formalized by `Cslib.Algorithms.Lean.Geometry.closestPair_isAnswer`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 462](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L462). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-pair-is-answer).
 
 ## Correctness of divide-and-conquer closest pair
 
@@ -166,7 +166,7 @@ and any two entries at different positions have squared distance at least $\delt
 
 This is the correctness of CLRS Section 33.4, with distances compared squared.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.closestPair_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-pair-spec).
+Formalized by `Cslib.Algorithms.Lean.Geometry.closestPair_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-pair-spec).
 
 ## The closest-pair algorithm returns no value exactly on fewer than two points
 
@@ -174,7 +174,7 @@ Let $K$ be a
 linearly ordered field. For every list of points in $K^2$, the divide-and-conquer closest-pair
 algorithm returns no value if and only if the list has fewer than two entries.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.closestPair_eq_none_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-pair-eq-none-iff).
+Formalized by `Cslib.Algorithms.Lean.Geometry.closestPair_eq_none_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-pair-eq-none-iff).
 
 ## Divide and conquer agrees with brute force
 
@@ -182,7 +182,7 @@ Let $K$ be a linearly ordered field. For every
 list of points in $K^2$, the divide-and-conquer closest-pair algorithm returns the same value as
 the brute-force scan (their costs may differ).
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.closestPair_eq_bruteMin`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 498](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L498). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-pair-eq-brute-min).
+Formalized by `Cslib.Algorithms.Lean.Geometry.closestPair_eq_bruteMin`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 498](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L498). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-pair-eq-brute-min).
 
 ## Cost of the brute-force closest-pair scan
 
@@ -191,7 +191,7 @@ $ps$ be a list of $n$ points in $K^2$. Counting one unit of cost per squared dis
 twice the cost of the brute-force scan on $ps$ equals $n(n-1)$; that is, the scan computes exactly
 $n(n-1)/2$ squared distances.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.bruteMin_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 515](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L515). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#brute-min-time).
+Formalized by `Cslib.Algorithms.Lean.Geometry.bruteMin_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean, line 515](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPair.lean#L515). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#brute-min-time).
 
 ## Side-tagged points
 
@@ -199,7 +199,7 @@ A tagged point is a pair $(p, s)$ of a point $p \in \mathbb{R}^2$ and a
 Boolean $s$, read as the side of the dividing line on which $p$ lies: false for left, true for
 right.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.Tagged`, an abbreviation declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#tagged).
+Formalized by `Cslib.Algorithms.Lean.Geometry.Tagged`, an abbreviation declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#tagged).
 
 ## Same-side points far apart
 
@@ -207,7 +207,7 @@ For a real $\delta$, two tagged points $a$ and $b$ are
 same-side far apart when, if $a$ and $b$ carry the same side, the squared distance between their
 points is at least $\delta$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.SameSideFar`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#same-side-far).
+Formalized by `Cslib.Algorithms.Lean.Geometry.SameSideFar`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#same-side-far).
 
 ## Strip points
 
@@ -215,7 +215,7 @@ Given reals $\delta$ and $x_{\mathrm{mid}}$, a tagged point $((x, y), s)$ lies
 in the strip when $(x - x_{\mathrm{mid}})^2 < \delta$, and moreover $x \le x_{\mathrm{mid}}$ if its
 side $s$ is left ($s$ false) and $x_{\mathrm{mid}} \le x$ if its side $s$ is right ($s$ true).
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.InStrip`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#in-strip).
+Formalized by `Cslib.Algorithms.Lean.Geometry.InStrip`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#in-strip).
 
 ## Packing bound for the strip
 
@@ -230,7 +230,7 @@ $(y_a - y_p)^2 < \delta$. Then $Z$ has at most $7$ entries.
 
 - CLRS, third edition, Section 33.4, the packing argument.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.length_le_seven`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#length-le-seven).
+Formalized by `Cslib.Algorithms.Lean.Geometry.length_le_seven`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#length-le-seven).
 
 ## Cost of the scan from one strip point
 
@@ -239,7 +239,7 @@ $\mathbb{R}^2$ and $L$ a list of points of $\mathbb{R}^2$. The cost of the scan 
 with threshold $\delta$, one unit per squared distance computed, equals the length of the longest
 initial segment of $L$ all of whose points $r = (r_1, r_2)$ satisfy $(r_2 - q_2)^2 < \delta$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.scanFrom_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#scan-from-time).
+Formalized by `Cslib.Algorithms.Lean.Geometry.scanFrom_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#scan-from-time).
 
 ## Cost of the strip scan
 
@@ -250,7 +250,7 @@ side are at squared distance at least $\delta$. Then the strip scan with paramet
 underlying points of $Y$ (tags forgotten) computes at most $7m$ squared distances, where $m$ is the
 length of $Y$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.stripScan_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#strip-scan-time-le).
+Formalized by `Cslib.Algorithms.Lean.Geometry.stripScan_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#strip-scan-time-le).
 
 ## Running time of the closest-pair recursion
 
@@ -259,7 +259,7 @@ sorted by nondecreasing $x$-coordinate, the divide-and-conquer recursion of the 
 algorithm computes at most $7 n \lceil \log_2 n \rceil + n$ squared distances, where
 $\lceil \log_2 0 \rceil$ is read as $0$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.closestRec_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-rec-time-le).
+Formalized by `Cslib.Algorithms.Lean.Geometry.closestRec_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-rec-time-le).
 
 ## Running time of the closest-pair algorithm
 
@@ -271,7 +271,7 @@ where $\lceil \log_2 0 \rceil$ is read as $0$. In particular it computes $O(n \l
 
 - CLRS, third edition, Section 33.4.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.closestPair_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-pair-time-le).
+Formalized by `Cslib.Algorithms.Lean.Geometry.closestPair_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ClosestPairTime.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html#closest-pair-time-le).
 
 ## Depends on
 
@@ -280,4 +280,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Closest pair of points problem](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/computational-geometry/closest-pair-of-points-problem)

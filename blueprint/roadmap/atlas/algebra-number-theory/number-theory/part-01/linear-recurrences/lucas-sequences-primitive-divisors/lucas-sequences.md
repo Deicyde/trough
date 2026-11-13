@@ -7,7 +7,7 @@ statement: formalized
 
 # Lucas sequences
 
-20 results, 19 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html).
+20 results, 19 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html).
 
 ## Parameters of a Lucas sequence
 
@@ -16,7 +16,7 @@ $(P, Q)$ with $Q \ne 0$.
 
 The condition $Q \ne 0$ follows the convention of the sources.
 
-Formalized by `MetaMathlibExt.LucasSequenceParams`, a structure declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasSequence.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-sequence-params).
+Formalized by `MetaMathlibExt.LucasSequenceParams`, a structure declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasSequence.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-sequence-params).
 
 ## Coprime Lucas sequence parameters
 
@@ -25,7 +25,7 @@ there exist integers $x$ and $y$ with $xP + yQ = 1$.
 
 This additional condition is imposed in some applications of Lucas sequences.
 
-Formalized by `MetaMathlibExt.LucasSequenceParams.IsCoprime`, a definition declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasSequence.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#is-coprime).
+Formalized by `MetaMathlibExt.LucasSequenceParams.IsCoprime`, a definition declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasSequence.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#is-coprime).
 
 ## Lucas sequence $U(P, Q)$
 
@@ -33,7 +33,7 @@ For Lucas sequence parameters $(P, Q)$, the Lucas sequence
 $U(P, Q)$ is the integer sequence $(U_n)_{n \ge 0}$ with $U_0 = 0$, $U_1 = 1$ and
 $U_{n+2} = P U_{n+1} - Q U_n$ for every natural number $n$.
 
-Formalized by `MetaMathlibExt.lucasU`, a definition declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasSequence.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-u).
+Formalized by `MetaMathlibExt.lucasU`, a definition declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasSequence.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-u).
 
 ## Companion Lucas sequence $V(P, Q)$
 
@@ -41,7 +41,7 @@ For Lucas sequence parameters $(P, Q)$, the
 companion Lucas sequence $V(P, Q)$ is the integer sequence $(V_n)_{n \ge 0}$ with $V_0 = 2$,
 $V_1 = P$ and $V_{n+2} = P V_{n+1} - Q V_n$ for every natural number $n$.
 
-Formalized by `MetaMathlibExt.lucasV`, a definition declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasSequence.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-v).
+Formalized by `MetaMathlibExt.lucasV`, a definition declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasSequence.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-v).
 
 ## Fibonacci parameters for Lucas sequences
 
@@ -50,7 +50,7 @@ parameters $P = 1$ and $Q = -1$; they satisfy the required condition $Q \ne 0$.
 
 These parameters give the Fibonacci and classical Lucas-number sequences.
 
-Formalized by `MetaMathlibExt.fibonacciLucasParams`, a definition declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasSequence.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#fibonacci-lucas-params).
+Formalized by `MetaMathlibExt.fibonacciLucasParams`, a definition declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasSequence.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#fibonacci-lucas-params).
 
 ## Lucas numbers
 
@@ -58,7 +58,7 @@ The Lucas numbers are the natural numbers $L_n$ defined by $L_0 = 2$,
 $L_1 = 1$ and $L_{n+2} = L_{n+1} + L_n$ for every natural number $n$. They begin
 $2, 1, 3, 4, 7, \dots$.
 
-Formalized by `MetaMathlibExt.lucasNumber`, a definition declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasSequence.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-number).
+Formalized by `MetaMathlibExt.lucasNumber`, a definition declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasSequence.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-number).
 
 ## The Lucas sequence $U(1, -1)$ is the Fibonacci sequence
 
@@ -66,7 +66,7 @@ For every natural number $n$,
 the $n$-th term of the Lucas sequence $U(1, -1)$ equals the Fibonacci number $F_n$, where
 $F_0 = 0$, $F_1 = 1$ and $F_{n+2} = F_{n+1} + F_n$.
 
-Formalized by `MetaMathlibExt.lucasU_fibonacciLucasParams`, a theorem declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasSequence.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-u-fibonacci-lucas-params).
+Formalized by `MetaMathlibExt.lucasU_fibonacciLucasParams`, a theorem declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasSequence.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-u-fibonacci-lucas-params).
 
 ## Recurrence for the Lucas sequence $U(P, Q)$
 
@@ -74,7 +74,7 @@ For Lucas sequence parameters $(P, Q)$ and
 every natural number $n$, the Lucas sequence $U = U(P, Q)$ satisfies
 $U_{n+2} = P U_{n+1} - Q U_n$.
 
-Formalized by `MetaMathlibExt.lucasU_add_two`, a theorem declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasSequence.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-u-add-two).
+Formalized by `MetaMathlibExt.lucasU_add_two`, a theorem declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasSequence.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-u-add-two).
 
 ## Cassini's identity for Lucas sequences
 
@@ -82,21 +82,21 @@ For Lucas sequence parameters $(P, Q)$ and every
 natural number $n$, the Lucas sequence $U = U(P, Q)$ satisfies
 $U_{n+1}^2 - U_n U_{n+2} = Q^n$.
 
-Formalized by `MetaMathlibExt.lucasU_cassini`, a theorem declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasSequence.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-u-cassini).
+Formalized by `MetaMathlibExt.lucasU_cassini`, a theorem declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasSequence.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-u-cassini).
 
 ## The Lucas sequence $V(1, -1)$ gives the Lucas numbers
 
 For every natural number $n$, the
 $n$-th term of the companion Lucas sequence $V(1, -1)$ equals the $n$-th Lucas number $L_n$.
 
-Formalized by `MetaMathlibExt.lucasV_fibonacciLucasParams`, a theorem declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasSequence.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-v-fibonacci-lucas-params).
+Formalized by `MetaMathlibExt.lucasV_fibonacciLucasParams`, a theorem declared in [MathlibExt/NumberTheory/LucasSequence.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasSequence.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-v-fibonacci-lucas-params).
 
 ## Special primes of a Lucas pair
 
 For integers $P$ and $Q$, a natural number $p$ is a special
 prime for the Lucas parameters $(P, Q)$ if $p$ is prime and $p$ divides $\gcd(P, Q)$.
 
-Formalized by `MetaMathlibExt.IsLucasSpecialPrime`, a definition declared in [MathlibExt/NumberTheory/LucasSpecialPrime.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasSpecialPrime.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#is-lucas-special-prime).
+Formalized by `MetaMathlibExt.IsLucasSpecialPrime`, a definition declared in [MathlibExt/NumberTheory/LucasSpecialPrime.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasSpecialPrime.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#is-lucas-special-prime).
 
 ## Special primes are the common prime divisors of the parameters
 
@@ -104,7 +104,7 @@ For integers $P$ and $Q$
 and a natural number $p$, $p$ is a special prime for the Lucas parameters $(P, Q)$ if and only if
 $p$ is prime and $p$ divides both $P$ and $Q$ in $\mathbb{Z}$.
 
-Formalized by `MetaMathlibExt.isLucasSpecialPrime_iff`, a theorem declared in [MathlibExt/NumberTheory/LucasSpecialPrime.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasSpecialPrime.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#is-lucas-special-prime-iff).
+Formalized by `MetaMathlibExt.isLucasSpecialPrime_iff`, a theorem declared in [MathlibExt/NumberTheory/LucasSpecialPrime.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasSpecialPrime.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#is-lucas-special-prime-iff).
 
 ## Binet formulas for Lucas sequences over any field
 
@@ -120,7 +120,7 @@ and $n$ are mapped into $K$.
 No assumption on the characteristic of $K$ is made; for example $K$ may be $\mathbb{Z}/p\mathbb{Z}$
 for a prime $p$, where the coefficient $n$ of the double-root formula is read modulo $p$.
 
-Formalized by `MetaMathlibExt.lucas_binet_formulas_of_field`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/LucasBinetFormula.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/LucasBinetFormula.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-binet-formulas-of-field).
+Formalized by `MetaMathlibExt.lucas_binet_formulas_of_field`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/LucasBinetFormula.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/LucasBinetFormula.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-binet-formulas-of-field).
 
 ## Binet formulas for Lucas sequences
 
@@ -139,7 +139,7 @@ In the double-root case the hypotheses give $P = 2 \alpha$ and $Q = \alpha^2$.
 
 - Christian Ballot, "A Further Generalization of a Congruence of Wolstenholme", Journal of Integer Sequences 15 (2012), Article 12.8.6, sequence definitions and formulas at lines 274–289, https://cs.uwaterloo.ca/journals/JIS/VOL15/Ballot/ballot4.tex
 
-Formalized by `MetaMathlibExt.lucas_binet_formulas`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/LucasBinetFormula.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/LucasBinetFormula.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-binet-formulas).
+Formalized by `MetaMathlibExt.lucas_binet_formulas`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/LucasBinetFormula.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/LucasBinetFormula.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#lucas-binet-formulas).
 
 ## Lucas sequence of the first kind
 
@@ -151,21 +151,21 @@ $u_0 = 0$, $u_1 = 1$, and $u_{n+2} = P u_{n+1} - Q u_n$ for every natural number
 
 - <https://cs.uwaterloo.ca/journals/JIS/VOL13/Smyth/smyth2.tex>, lines 114-122.
 
-Formalized by `MetaMathlibExt.IsLucasSequenceFirstKind`, a definition declared in [MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#is-lucas-sequence-first-kind).
+Formalized by `MetaMathlibExt.IsLucasSequenceFirstKind`, a definition declared in [MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#is-lucas-sequence-first-kind).
 
 ## Lucas sequence of the first kind: value at zero
 
 If $(u_n)_{n \ge 0}$ is the Lucas sequence
 of the first kind with integer parameters $P$ and $Q$, then $u_0 = 0$.
 
-Formalized by `MetaMathlibExt.IsLucasSequenceFirstKind.initialZero`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#initial-zero).
+Formalized by `MetaMathlibExt.IsLucasSequenceFirstKind.initialZero`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#initial-zero).
 
 ## Lucas sequence of the first kind: value at one
 
 If $(u_n)_{n \ge 0}$ is the Lucas sequence
 of the first kind with integer parameters $P$ and $Q$, then $u_1 = 1$.
 
-Formalized by `MetaMathlibExt.IsLucasSequenceFirstKind.initialOne`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#initial-one).
+Formalized by `MetaMathlibExt.IsLucasSequenceFirstKind.initialOne`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#initial-one).
 
 ## Lucas sequence of the first kind: the recurrence
 
@@ -173,7 +173,7 @@ If $(u_n)_{n \ge 0}$ is the Lucas
 sequence of the first kind with integer parameters $P$ and $Q$, then
 $u_{n+2} = P u_{n+1} - Q u_n$ for every natural number $n$.
 
-Formalized by `MetaMathlibExt.IsLucasSequenceFirstKind.recurrenceStep`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#recurrence-step).
+Formalized by `MetaMathlibExt.IsLucasSequenceFirstKind.recurrenceStep`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/LucasSequenceFirstKind.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#recurrence-step).
 
 ## Nondegenerate Lucas pair
 
@@ -186,7 +186,7 @@ $x^2 - P x + Q$, in either order.
 
 - <https://cs.uwaterloo.ca/journals/JIS/VOL13/Smyth/smyth2.tex>: lines 621-622 say a Lucas sequence is degenerate iff `Q = 0` or `α / β` is a root of unity, where `α` and `β` are the two roots of `x² - P x + Q`. Lines 114-122 establish `α + β = P` and `α * β = Q`.
 
-Formalized by `MetaMathlibExt.IsNondegenerateLucasPair`, a definition declared in [MathlibExt/NumberTheory/Recurrences/NondegenerateLucasPair.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/NondegenerateLucasPair.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#is-nondegenerate-lucas-pair).
+Formalized by `MetaMathlibExt.IsNondegenerateLucasPair`, a definition declared in [MathlibExt/NumberTheory/Recurrences/NondegenerateLucasPair.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/NondegenerateLucasPair.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#is-nondegenerate-lucas-pair).
 
 ## Addition formula $2U_{m+n} = U_m V_n + V_m U_n$ for Lucas sequences
 
@@ -202,7 +202,7 @@ $U_n(a, -b)$ and $V_n(a, -b)$, and the paper allows real $a$ and $b$.
 
 - Vladimir V. Kruchinin and Maria Y. Perminova, "Identities and Hadamard Product of the Generalized Fibonacci, Lucas, Catalan, and Harmonic Numbers", Proposition 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.KruchininPerminovaHadamardWanted.two_mul_lucasU_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KruchininPerminovaHadamardWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KruchininPerminovaHadamardWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#two-mul-lucas-u-add).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.KruchininPerminovaHadamardWanted.two_mul_lucasU_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KruchininPerminovaHadamardWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KruchininPerminovaHadamardWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html#two-mul-lucas-u-add).
 
 ## Depends on
 
@@ -211,4 +211,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lucas sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/lucas-sequences)

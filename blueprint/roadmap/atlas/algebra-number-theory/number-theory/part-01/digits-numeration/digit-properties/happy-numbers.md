@@ -7,7 +7,7 @@ statement: formalized
 
 # Happy numbers
 
-20 results, 11 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html).
+20 results, 11 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html).
 
 ## Smallest run of six consecutive happy numbers
 
@@ -21,7 +21,7 @@ $m, m + 1, \dots, m + 5$ are all happy satisfies $m \ge N_0$.
 
 - Robert Styer, "Smallest Examples of Strings of Consecutive Happy Numbers," Journal of Integer Sequences 13 (2010), Article 10.6.3, Proposition, lines 135–136, https://cs.uwaterloo.ca/journals/JIS/VOL13/Styer/styer5.tex
 
-Formalized by `MetaMathlibExt.happy_six_min`, a theorem declared in [MathlibExt/NumberTheory/Digits/HappySixMin.lean, line 1106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Digits/HappySixMin.lean#L1106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#happy-six-min).
+Formalized by `MetaMathlibExt.happy_six_min`, a theorem declared in [MathlibExt/NumberTheory/Digits/HappySixMin.lean, line 1106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Digits/HappySixMin.lean#L1106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#happy-six-min).
 
 ## Truncated digit-square sum in a negative base
 
@@ -36,7 +36,7 @@ base-$b$ digits of $a$, counted from the least significant one.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Section 2.
 
-Formalized by `MetaMathlibExt.negBaseSqDigitSumAux`, a definition declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#neg-base-sq-digit-sum-aux).
+Formalized by `MetaMathlibExt.negBaseSqDigitSumAux`, a definition declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#neg-base-sq-digit-sum-aux).
 
 ## Sum of squared digits in a negative base
 
@@ -54,7 +54,7 @@ $2|a| + 1$ (for $a < 0$) strictly decreases at each step.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Section 2.
 
-Formalized by `MetaMathlibExt.negBaseSqDigitSum`, a definition declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#neg-base-sq-digit-sum).
+Formalized by `MetaMathlibExt.negBaseSqDigitSum`, a definition declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#neg-base-sq-digit-sum).
 
 ## The digit-square sum of zero
 
@@ -65,7 +65,7 @@ satisfies $S_{2,b}(0) = 0$.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Section 2.
 
-Formalized by `MetaMathlibExt.negBaseSqDigitSum_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#neg-base-sq-digit-sum-zero).
+Formalized by `MetaMathlibExt.negBaseSqDigitSum_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#neg-base-sq-digit-sum-zero).
 
 ## The digit-square sum of a single digit
 
@@ -77,7 +77,7 @@ satisfies $S_{2,b}(d) = d^2$.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Section 2.
 
-Formalized by `MetaMathlibExt.negBaseSqDigitSum_of_digit`, a theorem declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#neg-base-sq-digit-sum-of-digit).
+Formalized by `MetaMathlibExt.negBaseSqDigitSum_of_digit`, a theorem declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#neg-base-sq-digit-sum-of-digit).
 
 ## Sample values of the negative-base digit-square sum
 
@@ -91,7 +91,7 @@ $5 = 1 \cdot (-4)^2 + 3 \cdot (-4) + 1$ has base-$(-4)$ digits $1, 3, 1$ (most s
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Section 2.
 
-Formalized by `MetaMathlibExt.negBaseSqDigitSum_samples`, a theorem declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#neg-base-sq-digit-sum-samples).
+Formalized by `MetaMathlibExt.negBaseSqDigitSum_samples`, a theorem declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#neg-base-sq-digit-sum-samples).
 
 ## Happy integers in a negative base
 
@@ -104,7 +104,7 @@ $S_{2,b}^k$ denotes the $k$-th iterate of $S_{2,b}$.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Section 2.
 
-Formalized by `MetaMathlibExt.IsNegBaseHappy`, a definition declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-happy).
+Formalized by `MetaMathlibExt.IsNegBaseHappy`, a definition declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-happy).
 
 ## $1$ is happy in every negative base
 
@@ -115,7 +115,7 @@ $b$-happy.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Section 2.
 
-Formalized by `MetaMathlibExt.isNegBaseHappy_one`, a theorem declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-happy-one).
+Formalized by `MetaMathlibExt.isNegBaseHappy_one`, a theorem declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-happy-one).
 
 ## Cycles of the negative-base digit-square map
 
@@ -128,7 +128,7 @@ for some $m \ge 1$, that is, the positive integers lying on a cycle of $S_{2,b}$
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Section 2.
 
-Formalized by `MetaMathlibExt.negBaseSqDigitCycles`, a definition declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#neg-base-sq-digit-cycles).
+Formalized by `MetaMathlibExt.negBaseSqDigitCycles`, a definition declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#neg-base-sq-digit-cycles).
 
 ## One lies on a cycle of the negative-base digit-square map
 
@@ -140,7 +140,7 @@ digit-square sum $S_{2,b}$.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Section 2.
 
-Formalized by `MetaMathlibExt.one_mem_negBaseSqDigitCycles`, a theorem declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#one-mem-neg-base-sq-digit-cycles).
+Formalized by `MetaMathlibExt.one_mem_negBaseSqDigitCycles`, a theorem declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#one-mem-neg-base-sq-digit-cycles).
 
 ## Good sets for the digit-square map
 
@@ -155,7 +155,7 @@ $S_{2,b}^k(t + n) = u$ for every $t \in T$.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Section 2.
 
-Formalized by `MetaMathlibExt.IsNegBaseGood`, a definition declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-good).
+Formalized by `MetaMathlibExt.IsNegBaseGood`, a definition declared in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-good).
 
 ## Happy numbers in base $-2$
 
@@ -168,7 +168,7 @@ This is part (1) of the Grundman–Harris theorem.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.isNegBaseHappy_neg_two_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-happy-neg-two-iff).
+Stated but not proved: `MetaMathlibExt.isNegBaseHappy_neg_two_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-happy-neg-two-iff).
 
 ## Happy numbers in base $-3$
 
@@ -181,7 +181,7 @@ This is part (2) of the Grundman–Harris theorem.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.isNegBaseHappy_neg_three_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-happy-neg-three-iff).
+Stated but not proved: `MetaMathlibExt.isNegBaseHappy_neg_three_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-happy-neg-three-iff).
 
 ## Arbitrarily long runs of consecutive happy numbers in bases $-4$, $-6$, $-8$, $-10$
 
@@ -195,7 +195,7 @@ This is part (3) of the Grundman–Harris theorem.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.isNegBaseHappy_consecutive_runs_small` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-happy-consecutive-runs-small).
+Stated but not proved: `MetaMathlibExt.isNegBaseHappy_consecutive_runs_small` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-happy-consecutive-runs-small).
 
 ## Arithmetic progressions of happy numbers in odd negative bases
 
@@ -210,7 +210,7 @@ This is part (4) of the theorem of Grundman and Harris.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.isNegBaseHappy_two_consecutive_runs_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-happy-two-consecutive-runs-o).
+Stated but not proved: `MetaMathlibExt.isNegBaseHappy_two_consecutive_runs_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-happy-two-consecutive-runs-o).
 
 ## Arbitrarily long runs of consecutive happy numbers in even bases at most $-4$
 
@@ -222,7 +222,7 @@ $n + i$ is $b$-happy for every $0 \le i < N$.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Theorem 1.2.
 
-Stated but not proved: `MetaMathlibExt.isNegBaseHappy_consecutive_runs_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-happy-consecutive-runs-even).
+Stated but not proved: `MetaMathlibExt.isNegBaseHappy_consecutive_runs_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-happy-consecutive-runs-even).
 
 ## Goodness pulls back along compositions of the digit-square map and the successor map
 
@@ -236,7 +236,7 @@ $(2, b)$-good, then $T$ is $(2, b)$-good.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Lemma 2.1.
 
-Stated but not proved: `MetaMathlibExt.isNegBaseGood_of_image_comp` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-good-of-image-comp).
+Stated but not proved: `MetaMathlibExt.isNegBaseGood_of_image_comp` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-good-of-image-comp).
 
 ## A common iterate of the negative-base digit-square map falls below twice the squared base
 
@@ -249,7 +249,7 @@ every $a \in A$.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Lemma 2.2.
 
-Stated but not proved: `MetaMathlibExt.exists_iterate_negBaseSqDigitSum_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#exists-iterate-neg-base-sq-digit-sum-lt).
+Stated but not proved: `MetaMathlibExt.exists_iterate_negBaseSqDigitSum_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#exists-iterate-neg-base-sq-digit-sum-lt).
 
 ## A congruence for the negative-base digit-square map
 
@@ -265,7 +265,7 @@ S_{2,b}\bigl((|b| - 1)b^2 + |b| - 1 - w\bigr) + 5 + 2c \equiv 0 \pmod{|b| + 1}.$
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Lemma 3.1.
 
-Stated but not proved: `MetaMathlibExt.exists_negBaseSqDigitSum_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#exists-neg-base-sq-digit-sum-congr).
+Stated but not proved: `MetaMathlibExt.exists_negBaseSqDigitSum_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#exists-neg-base-sq-digit-sum-congr).
 
 ## Even bases at most $-4$ make every finite set of positive integers good
 
@@ -276,7 +276,7 @@ be an even integer. Then every finite set of positive integers is $(2, b)$-good.
 
 - Helen G. Grundman, *Closing an Open Problem on Negative Base Happy Numbers*, The Fibonacci Quarterly 62 (2024), Article 62-2/grundman11162023, Theorem 3.2.
 
-Stated but not proved: `MetaMathlibExt.isNegBaseGood_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-good-of-even).
+Stated but not proved: `MetaMathlibExt.isNegBaseGood_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NegativeBaseHappyNumbersWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html#is-neg-base-good-of-even).
 
 ## Depends on
 
@@ -285,4 +285,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Happy numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/happy-numbers)

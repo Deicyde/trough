@@ -1,6 +1,6 @@
 # Graph Theory
 
-1,402 results of ATLAS's vault, 1,257 proved and 145 stated but not proved, in this subject's topics.
+1,402 results of ATLAS's vault, 1,254 proved, 140 stated but not proved and 8 whose declaration the Lean read here does not declare, in this subject's topics.
 
 Graph theory studies vertices and edges through connectivity, coloring, minors, flows, and extremal structure.
 

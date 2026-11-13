@@ -7,7 +7,7 @@ statement: formalized
 
 # Moments of Dedekind zeta coefficients over sums of six squares
 
-10 results, 7 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html).
+10 results, 7 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html).
 
 ## Fourth moment of the $L$-function modulo $4$
 
@@ -19,7 +19,7 @@ every real $T \ge 1$, $\int_1^T |L(1/2 + it, \chi)|^4 \, dt \le C\, T^{1 + \vare
 
 - Naveen K. Godara and Prashant Tiwari, *The Higher Power Moments of the Coefficients of the Dedekind Zeta Function over a Polynomial in Six Variables*, INTEGERS 25 (2025), Article A101, Lemma 5, third display.
 
-Stated but not proved: `MetaMathlibExt.dirichletLFunction_mod_four_fourth_moment_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#dirichlet-lfunction-mod-four-fourth-mome).
+Stated but not proved: `MetaMathlibExt.dirichletLFunction_mod_four_fourth_moment_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#dirichlet-lfunction-mod-four-fourth-mome).
 
 ## Coefficients of the Dedekind zeta function
 
@@ -31,7 +31,7 @@ absolute norm $n$. These are the coefficients of $\zeta_K(s) = \sum_{n \ge 1} a_
 
 - Naveen K. Godara and Prashant Tiwari, *The Higher Power Moments of the Coefficients of the Dedekind Zeta Function over a Polynomial in Six Variables*, INTEGERS 25 (2025), Article A101, Section 1, equation (2).
 
-Formalized by `MetaMathlibExt.dedekindZetaCoeff`, a definition declared in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#dedekind-zeta-coeff).
+Formalized by `MetaMathlibExt.dedekindZetaCoeff`, a definition declared in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#dedekind-zeta-coeff).
 
 ## The Dedekind zeta coefficient at $1$
 
@@ -43,7 +43,7 @@ ideal is the only ideal of norm $1$.
 
 - Naveen K. Godara and Prashant Tiwari, *The Higher Power Moments of the Coefficients of the Dedekind Zeta Function over a Polynomial in Six Variables*, INTEGERS 25 (2025), Article A101, Section 1, equation (2).
 
-Formalized by `MetaMathlibExt.dedekindZetaCoeff_one`, a theorem declared in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#dedekind-zeta-coeff-one).
+Formalized by `MetaMathlibExt.dedekindZetaCoeff_one`, a theorem declared in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#dedekind-zeta-coeff-one).
 
 ## Six-squares moments of Dedekind zeta coefficients
 
@@ -59,7 +59,7 @@ of $n$ as a sum of six squares of integers.
 
 - Naveen K. Godara and Prashant Tiwari, *The Higher Power Moments of the Coefficients of the Dedekind Zeta Function over a Polynomial in Six Variables*, INTEGERS 25 (2025), Article A101, Section 1, equation (4), and Section 2, equation (12).
 
-Formalized by `MetaMathlibExt.sixSquaresDedekindMoment`, a definition declared in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#six-squares-dedekind-moment).
+Formalized by `MetaMathlibExt.sixSquaresDedekindMoment`, a definition declared in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#six-squares-dedekind-moment).
 
 ## The six-squares moment vanishes below $1$
 
@@ -73,7 +73,7 @@ ideals of the ring of integers of $K$ of absolute norm $n$.
 
 - Naveen K. Godara and Prashant Tiwari, *The Higher Power Moments of the Coefficients of the Dedekind Zeta Function over a Polynomial in Six Variables*, INTEGERS 25 (2025), Article A101, Section 1, equation (4).
 
-Formalized by `MetaMathlibExt.sixSquaresDedekindMoment_of_lt_one`, a theorem declared in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#six-squares-dedekind-moment-of-lt-one).
+Formalized by `MetaMathlibExt.sixSquaresDedekindMoment_of_lt_one`, a theorem declared in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#six-squares-dedekind-moment-of-lt-one).
 
 ## The exponent $a_{0,\ell}$
 
@@ -87,7 +87,7 @@ where $C_i = (2i)!/(i!\,(i+1)!)$ is the $i$-th Catalan number.
 
 - Naveen K. Godara and Prashant Tiwari, *The Higher Power Moments of the Coefficients of the Dedekind Zeta Function over a Polynomial in Six Variables*, INTEGERS 25 (2025), Article A101, Theorem 2 and equation (19).
 
-Formalized by `MetaMathlibExt.dedekindSixSquaresA0`, a definition declared in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#dedekind-six-squares-a0).
+Formalized by `MetaMathlibExt.dedekindSixSquaresA0`, a definition declared in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#dedekind-six-squares-a0).
 
 ## The exponent $a_{3,\ell}$
 
@@ -102,7 +102,7 @@ $\lfloor (\ell - 1)/2 \rfloor$ equals the source's $\lceil \ell/2 - 1 \rceil$.
 
 - Naveen K. Godara and Prashant Tiwari, *The Higher Power Moments of the Coefficients of the Dedekind Zeta Function over a Polynomial in Six Variables*, INTEGERS 25 (2025), Article A101, Theorem 2.
 
-Formalized by `MetaMathlibExt.dedekindSixSquaresA3`, a definition declared in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#dedekind-six-squares-a3).
+Formalized by `MetaMathlibExt.dedekindSixSquaresA3`, a definition declared in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#dedekind-six-squares-a3).
 
 ## Values of $a_{0,\ell}$ and $a_{3,\ell}$ for $\ell = 3, 4, 5$
 
@@ -117,7 +117,7 @@ and $(a_{0,5}, a_{3,5}) = (21, 14)$.
 
 - Naveen K. Godara and Prashant Tiwari, *The Higher Power Moments of the Coefficients of the Dedekind Zeta Function over a Polynomial in Six Variables*, INTEGERS 25 (2025), Article A101, Table 1.
 
-Formalized by `MetaMathlibExt.dedekindSixSquaresA0_A3_small`, a theorem declared in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#dedekind-six-squares-a0-a3-small).
+Formalized by `MetaMathlibExt.dedekindSixSquaresA0_A3_small`, a theorem declared in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#dedekind-six-squares-a0-a3-small).
 
 ## Second and third six-squares moments over a cubic field of negative discriminant
 
@@ -137,7 +137,7 @@ A cubic field of negative discriminant is not normal over $\mathbb{Q}$.
 
 - Naveen K. Godara and Prashant Tiwari, *The Higher Power Moments of the Coefficients of the Dedekind Zeta Function over a Polynomial in Six Variables*, INTEGERS 25 (2025), Article A101, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.sixSquaresDedekindMoment_two_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#six-squares-dedekind-moment-two-three).
+Stated but not proved: `MetaMathlibExt.sixSquaresDedekindMoment_two_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#six-squares-dedekind-moment-two-three).
 
 ## Higher six-squares moments over a non-normal cubic field
 
@@ -160,7 +160,7 @@ and $Q_\ell$ for odd $\ell$ in the source.
 
 - Naveen K. Godara and Prashant Tiwari, *The Higher Power Moments of the Coefficients of the Dedekind Zeta Function over a Polynomial in Six Variables*, INTEGERS 25 (2025), Article A101, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.sixSquaresDedekindMoment_ge_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#six-squares-dedekind-moment-ge-four).
+Stated but not proved: `MetaMathlibExt.sixSquaresDedekindMoment_ge_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DedekindZetaSixSquaresMomentsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html#six-squares-dedekind-moment-ge-four).
 
 ## Depends on
 
@@ -169,4 +169,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Moments of Dedekind zeta coefficients over sums of six squares](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/moments-of-dedekind-zeta-coefficients-over-sums)

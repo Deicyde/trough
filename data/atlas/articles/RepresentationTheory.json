@@ -1,6 +1,6 @@
 {
  "schema": "trough-atlas/v1",
- "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "rev": "035e1808ca0c8983682b74153a02628d616d77ce",
  "articles": [
   {
    "path": "RepresentationTheory/finite-group-representations/characters-of-representations/char-charpoly-roots-pow-eq-one.md",
@@ -21,7 +21,7 @@
    "declaration": "CharacterTheory.char_dual_eq_conj",
    "lean": {
     "file": "MathlibExt/RepresentationTheory/CharacterInvEqConj.lean",
-    "line": 132,
+    "line": 134,
     "kind": "theorem",
     "sorry": false
    }
@@ -33,7 +33,7 @@
    "declaration": "CharacterTheory.char_inv_eq_conj",
    "lean": {
     "file": "MathlibExt/RepresentationTheory/CharacterInvEqConj.lean",
-    "line": 54,
+    "line": 56,
     "kind": "theorem",
     "sorry": false
    }

@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.4 Elementary results on triangulated categories
 
-Section 13.4 of the Stacks Project, [Tag 05QN](https://stacks.math.columbia.edu/tag/05QN). 20 tags here are carried by 18 declarations of the repository (all in StacksFrontier) and 9 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.4 of the Stacks Project, [Tag 05QN](https://stacks.math.columbia.edu/tag/05QN). 20 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 014A, a lemma
 
 [Tag 014A](https://stacks.math.columbia.edu/tag/014A) in the Stacks Project.
 
-**`Stacks.CategoryTheory.ComponentwiseInvertibility.isIso_of_five`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/ComponentwiseInvertibility.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/ComponentwiseInvertibility.lean#L124). The attribute's comment: “the rotation `two of (a, b, c) isomorphisms give the third` in the case `a, b` give `c`, in an arbitrary pretriangulated category. The five independent morphisms with four commuting squares are a weaker hypothesis than a morphism of triangles, which forces the fourth and fifth to be `a⟦1⟧'` and `b⟦1⟧'`; Mathlib's `isIso₃_of_isIso₁₂` consumes a morphism of triangles and so does not apply in this form, and the proof here is from the exactness of the Yoneda sequences of the two triangles rather than from it. The other two rotations, for data that is a morphism of triangles, are Mathlib's `isIso₁_of_isIso₂₃` and `isIso₂_of_isIso₁₃`”.
+**`Stacks.CategoryTheory.ComponentwiseInvertibility.isIso_of_five`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/ComponentwiseInvertibility.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/ComponentwiseInvertibility.lean#L124). The attribute's comment: “the rotation `two of (a, b, c) isomorphisms give the third` in the case `a, b` give `c`, in an arbitrary pretriangulated category. The five independent morphisms with four commuting squares are a weaker hypothesis than a morphism of triangles, which forces the fourth and fifth to be `a⟦1⟧'` and `b⟦1⟧'`; Mathlib's `isIso₃_of_isIso₁₂` consumes a morphism of triangles and so does not apply in this form, and the proof here is from the exactness of the Yoneda sequences of the two triangles rather than from it. The other two rotations, for data that is a morphism of triangles, are Mathlib's `isIso₁_of_isIso₂₃` and `isIso₂_of_isIso₁₃`”.
 
 > **The five lemma in a pretriangulated category.**  Two distinguished triangles connected by
 > five morphisms whose four consecutive squares commute, with the first, second, fourth and fifth
@@ -39,7 +39,7 @@ theorem isIso_of_five {C : Type*} [Category* C] [HasShift C ℤ] [Preadditive C]
 
 [Tag 05QP](https://stacks.math.columbia.edu/tag/05QP) in the Stacks Project.
 
-**`comp_middle_zero_of_endomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 829](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L829).
+**`comp_middle_zero_of_endomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 842](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L842).
 
 > If `(0, b, 0)` and `(0, b', 0)` are endomorphisms of a distinguished triangle
 > `T = (X, Y, Z, f, g, h)`, then the composite of their middle components vanishes,
@@ -59,7 +59,7 @@ theorem comp_middle_zero_of_endomorphisms (T : Triangle C)
 
 [Tag 05QQ](https://stacks.math.columbia.edu/tag/05QQ) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.complete_distinguished_triangle_morphism₂_idempotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L220).
+**`CategoryTheory.Pretriangulated.complete_distinguished_triangle_morphism₂_idempotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L220).
 
 > Let `T = (X, Y, Z, f, g, h)` be a distinguished triangle in
 > a pre-triangulated category, and let `a : X ⟶ X`, `c : Z ⟶ Z` be idempotents
@@ -80,14 +80,14 @@ theorem complete_distinguished_triangle_morphism₂_idempotent (T : Triangle C)
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Pretriangulated.distinguished_cocone_triangle`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Pretriangulated.distinguished_cocone_triangle#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L120) (StacksFrontier): “existence of a distinguished triangle on a morphism”.
-- [`CategoryTheory.Pretriangulated.exists_iso_of_arrow_iso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Pretriangulated.exists_iso_of_arrow_iso#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L122) (StacksFrontier): “uniqueness up to a (nonunique) isomorphism of triangles”.
+- [`CategoryTheory.Pretriangulated.distinguished_cocone_triangle`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Pretriangulated.distinguished_cocone_triangle#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L120) (StacksFrontier): “existence of a distinguished triangle on a morphism”.
+- [`CategoryTheory.Pretriangulated.exists_iso_of_arrow_iso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Pretriangulated.exists_iso_of_arrow_iso#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L122) (StacksFrontier): “uniqueness up to a (nonunique) isomorphism of triangles”.
 
 ## Tag 0FWZ, a lemma
 
 [Tag 0FWZ](https://stacks.math.columbia.edu/tag/0FWZ) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.Triangle.hom_ext_of_hom₁_eq_of_hom₃_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 571](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L571).
+**`CategoryTheory.Pretriangulated.Triangle.hom_ext_of_hom₁_eq_of_hom₃_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 584](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L584).
 
 > A morphism of distinguished triangles is determined by its outer two components, as
 > soon as one of the following five vanishing conditions holds:
@@ -112,15 +112,15 @@ theorem Triangle.hom_ext_of_hom₁_eq_of_hom₃_eq {T T' : Triangle C}
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Pretriangulated.Triangle.distinguished_iff_of_isZero₃`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Pretriangulated.Triangle.distinguished_iff_of_isZero₃#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L239) (StacksFrontier): “(1) ⟺ (2)”.
-- [`CategoryTheory.Pretriangulated.Triangle.isZero₃_iff_isIso₁`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Pretriangulated.Triangle.isZero₃_iff_isIso₁#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L241) (StacksFrontier): “(1) ⟺ (3)”.
-- [`CategoryTheory.Pretriangulated.Triangle.isZero₃_of_isIso₁`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Pretriangulated.Triangle.isZero₃_of_isIso₁#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L243) (StacksFrontier): “(1) ⟹ (3)”.
+- [`CategoryTheory.Pretriangulated.Triangle.distinguished_iff_of_isZero₃`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Pretriangulated.Triangle.distinguished_iff_of_isZero₃#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L239) (StacksFrontier): “(1) ⟺ (2)”.
+- [`CategoryTheory.Pretriangulated.Triangle.isZero₃_iff_isIso₁`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Pretriangulated.Triangle.isZero₃_iff_isIso₁#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L241) (StacksFrontier): “(1) ⟺ (3)”.
+- [`CategoryTheory.Pretriangulated.Triangle.isZero₃_of_isIso₁`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Pretriangulated.Triangle.isZero₃_of_isIso₁#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L243) (StacksFrontier): “(1) ⟹ (3)”.
 
 ## Tag 05QS, a lemma
 
 [Tag 05QS](https://stacks.math.columbia.edu/tag/05QS) in the Stacks Project.
 
-**`productTriangle_distinguished_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 946](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L946).
+**`productTriangle_distinguished_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 959](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L959).
 
 > The direct sum of two triangles is distinguished if and only if both summand triangles are
 > distinguished. Here `T : WalkingPair → Triangle C` packages the pair `(T₁, T₂)`, and
@@ -139,7 +139,7 @@ theorem productTriangle_distinguished_iff
 
 [Tag 05QT](https://stacks.math.columbia.edu/tag/05QT) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.isIso_biprod_desc_of_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L270).
+**`CategoryTheory.Pretriangulated.isIso_biprod_desc_of_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L271). The attribute's comment: “(2): for any right inverse `s` of `g`, the map `f ⊕ s : X ⊕ Z ⟶ Y` is an isomorphism.”.
 
 > Let `T = (X, Y, Z, f, g, h)` be a distinguished triangle in a
 > pre-triangulated category. For any right inverse `s : Z ⟶ Y` of `g`, the map
@@ -151,11 +151,25 @@ theorem isIso_biprod_desc_of_distTriang (T : Triangle C) (hT : T ∈ distTriang 
     IsIso (biprod.desc T.mor₁ s)
 ```
 
+**`CategoryTheory.Pretriangulated.exists_section_mor₂_of_mor₃_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L280). The attribute's comment: “(1): if `h = 0`, then `g` has a right inverse `s : Z ⟶ Y`.”.
+
+> Let `T = (X, Y, Z, f, g, h)` be a distinguished triangle in a pre-triangulated category.
+> If `h = 0`, then `g` has a right inverse `s : Z ⟶ Y`.
+
+```lean
+theorem exists_section_mor₂_of_mor₃_eq_zero (T : Triangle C) (hT : T ∈ distTriang C)
+    (h : T.mor₃ = 0) : ∃ s : T.obj₃ ⟶ T.obj₂, s ≫ T.mor₂ = 𝟙 T.obj₃
+```
+
+Declarations registered for the tag:
+
+- [`CategoryTheory.Pretriangulated.binaryBiproductTriangle_distinguished`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Pretriangulated.binaryBiproductTriangle_distinguished#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L287) (StacksFrontier): “(3): for any objects `X'`, `Z'` the triangle `(X', X' ⊕ Z', Z', (1, 0), (0, 1), 0)` is distinguished.”.
+
 ## Tag 05QU, a lemma
 
 [Tag 05QU](https://stacks.math.columbia.edu/tag/05QU) in the Stacks Project.
 
-**`hasKernel_iff_hasCokernel_iff_split`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 1104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L1104).
+**`hasKernel_iff_hasCokernel_iff_split`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 1117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L1117).
 
 > In a pre-triangulated category `C`, for a
 > morphism `f : X ⟶ Y` the following are equivalent:
@@ -180,7 +194,7 @@ theorem hasKernel_iff_hasCokernel_iff_split (C : Type*) [Category C] [HasZeroObj
 
 [Tag 0CRG](https://stacks.math.columbia.edu/tag/0CRG) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.shiftFunctor_preservesProductsCoproducts_and_productCoproductTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L472).
+**`CategoryTheory.Pretriangulated.shiftFunctor_preservesProductsCoproducts_and_productCoproductTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L485).
 
 > Let `C` be a pre-triangulated category and `I` an index type.
 > (1)(a) The shift functors preserve `I`-indexed products, i.e. if `∏ Xᵢ` exists then
@@ -214,7 +228,7 @@ theorem
 
 [Tag 05QW](https://stacks.math.columbia.edu/tag/05QW) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.isIdempotentComplete_of_hasCountableProducts_or_coproducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L328).
+**`CategoryTheory.Pretriangulated.isIdempotentComplete_of_hasCountableProducts_or_coproducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L341).
 
 > A pre-triangulated category in which every object has a countable power
 > `∏_{n : ℕ} Z` is Karoubian, i.e. idempotent complete; and so is one in which every object has a
@@ -233,13 +247,13 @@ theorem isIdempotentComplete_of_hasCountableProducts_or_coproducts :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.IsTriangulated.mk'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsTriangulated.mk'#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch13.lean#L37) (StacksFrontier).
+- [`CategoryTheory.IsTriangulated.mk'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsTriangulated.mk'#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch13.lean#L37) (StacksFrontier).
 
 ## Tag 05QX, a lemma
 
 [Tag 05QX](https://stacks.math.columbia.edu/tag/05QX) in the Stacks Project.
 
-**`Stacks.Triangulated.SubcategoryWithTriangles.statement1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Functor.lean, line 783](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Functor.lean#L783).
+**`Stacks.Triangulated.SubcategoryWithTriangles.statement1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Functor.lean, line 748](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Functor.lean#L748).
 
 > **Statement 1** (Tag 05QX, equivalence of (1) and (2)). For an additive full
 > subcategory `D'` (described by `P`) of a pre-triangulated category `D`,
@@ -257,7 +271,7 @@ theorem statement1 (P : ObjectProperty C)
     Condition1 P ↔ Condition2 P
 ```
 
-**`Stacks.Triangulated.SubcategoryWithTriangles.statement2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Functor.lean, line 807](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Functor.lean#L807).
+**`Stacks.Triangulated.SubcategoryWithTriangles.statement2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Functor.lean, line 772](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Functor.lean#L772).
 
 > **Statement 2** (Tag 05QX, characterization of `T'`). When the equivalent
 > conditions hold, the set `T'` is uniquely determined: *any* `T'` making
@@ -284,7 +298,7 @@ theorem statement2 (P : ObjectProperty C)
         IsPretriangulatedSubcategoryWithTriangles P (restrictedTriangles P))
 ```
 
-**`Stacks.Triangulated.SubcategoryWithTriangles.statement3`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Functor.lean, line 838](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Functor.lean#L838).
+**`Stacks.Triangulated.SubcategoryWithTriangles.statement3`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Functor.lean, line 803](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Functor.lean#L803).
 
 > **Statement 3** (Tag 05QX, the triangulated case). If `D` is moreover a
 > triangulated category (it satisfies the octahedral condition TR4), then
@@ -321,7 +335,7 @@ theorem statement3 (P : ObjectProperty C)
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.IsTriangulated.instAdditive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.IsTriangulated.instAdditive#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Functor.lean, line 858](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Functor.lean#L858) (StacksFrontier).
+- [`CategoryTheory.Functor.IsTriangulated.instAdditive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.IsTriangulated.instAdditive#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Functor.lean, line 823](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Functor.lean#L823) (StacksFrontier).
 
 ## Tag 05SQ, a lemma
 
@@ -329,7 +343,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.map_distinguished_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.map_distinguished_iff#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L114) (StacksFrontier).
+- [`CategoryTheory.Functor.map_distinguished_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.map_distinguished_iff#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L114) (StacksFrontier).
 
 ## Tag 014Y, a lemma
 
@@ -337,13 +351,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.IsTriangulated.instComp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.IsTriangulated.instComp#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 22](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch13.lean#L22) (StacksFrontier).
+- [`CategoryTheory.Functor.IsTriangulated.instComp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.IsTriangulated.instComp#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 22](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch13.lean#L22) (StacksFrontier).
 
 ## Tag 05QZ, a lemma
 
 [Tag 05QZ](https://stacks.math.columbia.edu/tag/05QZ) in the Stacks Project.
 
-**`main_statement_comp_triangulated_homological`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/HomologicalFunctor.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/HomologicalFunctor.lean#L84). The attribute's comment: “(1)”.
+**`main_statement_comp_triangulated_homological`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/HomologicalFunctor.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/HomologicalFunctor.lean#L84). The attribute's comment: “(1)”.
 
 > **Statement 1** (Stacks 13.4.20, first part). If `F : D' → D` is an exact
 > (triangulated) functor between pre-triangulated categories and `H : D → A` is a
@@ -364,7 +378,7 @@ theorem main_statement_comp_triangulated_homological
     (F ⋙ H).IsHomological
 ```
 
-**`main_statement_comp_homological_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/HomologicalFunctor.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/HomologicalFunctor.lean#L105). The attribute's comment: “(2)”.
+**`main_statement_comp_homological_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/HomologicalFunctor.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/HomologicalFunctor.lean#L105). The attribute's comment: “(2)”.
 
 > **Statement 2** (Stacks 13.4.20, second part). If `H : D → A` is a
 > homological functor and `G : A → A'` is an exact functor of abelian categories
@@ -387,7 +401,7 @@ theorem main_statement_comp_homological_exact
 
 [Tag 0151](https://stacks.math.columbia.edu/tag/0151) in the Stacks Project.
 
-**`CategoryTheory.Functor.DeltaFunctorStructure.comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Functor.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Functor.lean#L200). The attribute's comment: “(1)”.
+**`CategoryTheory.Functor.DeltaFunctorStructure.comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Functor.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Functor.lean#L164). The attribute's comment: “(1)”.
 
 > **Stacks 0151 (1).** If `G : 𝒜 ⥤ 𝒟` is a `δ`-functor and `F : 𝒟 ⥤ 𝒟'` is an exact functor
 > of pre-triangulated categories, then `F ∘ G` is a `δ`-functor, with connecting morphisms
@@ -402,7 +416,7 @@ public noncomputable def DeltaFunctorStructure.comp (d : G.DeltaFunctorStructure
     (G ⋙ F).DeltaFunctorStructure 𝒜 𝒟'
 ```
 
-**`CategoryTheory.Functor.DeltaFunctorStructure.precomp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Functor.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Functor.lean#L216). The attribute's comment: “(2)”.
+**`CategoryTheory.Functor.DeltaFunctorStructure.precomp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Functor.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Functor.lean#L180). The attribute's comment: “(2)”.
 
 > **Stacks 0151 (2).** If `G : 𝒜 ⥤ 𝒟` is a `δ`-functor and `H : 𝒜' ⥤ 𝒜` is an exact functor
 > of abelian categories, then `G ∘ H` is a `δ`-functor, with connecting morphisms
@@ -419,7 +433,7 @@ public noncomputable def DeltaFunctorStructure.precomp (d : G.DeltaFunctorStruct
 
 [Tag 05SR](https://stacks.math.columbia.edu/tag/05SR) in the Stacks Project.
 
-**`CategoryTheory.Functor.DeltaFunctorStructure.isCohomologicalDeltaFunctor_comp_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 771](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L771).
+**`CategoryTheory.Functor.DeltaFunctorStructure.isCohomologicalDeltaFunctor_comp_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 784](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L784).
 
 > A homological functor composed with a `δ`-functor is a cohomological `δ`-functor. Let
 > `G : 𝒜 ⥤ 𝒟` be a `δ`-functor from an abelian category to a pre-triangulated category, with
@@ -460,7 +474,7 @@ theorem isCohomologicalDeltaFunctor_comp_shift (h : DeltaFunctorStructure 𝒜 �
 
 [Tag 05R0](https://stacks.math.columbia.edu/tag/05R0) in the Stacks Project.
 
-**`CategoryTheory.Triangulated.exists_nine_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 646](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L646).
+**`CategoryTheory.Triangulated.exists_nine_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Elementary.lean, line 659](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Elementary.lean#L659).
 
 > Let `C` be a triangulated category. Given a commutative square
 > `u₁ ≫ b₁ = a₁ ≫ v₁` and distinguished triangles `(u₁, u₂, u₃)`, `(v₁, v₂, v₃)` on its two
@@ -497,4 +511,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.4, Tag 05QN](https://stacks.math.columbia.edu/tag/05QN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.13 Universally closed morphisms
 
-Section 101.13 of the Stacks Project, [Tag 0511](https://stacks.math.columbia.edu/tag/0511). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.13 of the Stacks Project, [Tag 0511](https://stacks.math.columbia.edu/tag/0511). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0512, a lemma
 
 [Tag 0512](https://stacks.math.columbia.edu/tag/0512) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.representable_universallyClosed_iff_closedMap_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedCriterion.lean, line 551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedCriterion.lean#L551).
+**`AlgebraicGeometry.Stack.representable_universallyClosed_iff_closedMap_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedCriterion.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedCriterion.lean#L551).
 
 > **Stacks 0512.** A 1-morphism of algebraic stacks over `S` which is representable by
 > algebraic spaces is universally closed — the relative property of Tag 04XB at universal
@@ -43,7 +43,7 @@ theorem representable_universallyClosed_iff_closedMap_baseChange
 
 [Tag 0513](https://stacks.math.columbia.edu/tag/0513) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsClosed`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperAlgebraicStack.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ProperAlgebraicStack.lean#L89). The attribute's comment: “closed”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsClosed`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperAlgebraicStack.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ProperAlgebraicStack.lean#L89). The attribute's comment: “closed”.
 
 > **Stacks 0513, part (1).** A 1-morphism of algebraic stacks over `S` *is closed* when the
 > map `|𝒳| → |𝒴|` it induces on the topological spaces of points of Stacks 04XG and 04XL is a
@@ -53,7 +53,7 @@ theorem representable_universallyClosed_iff_closedMap_baseChange
 abbrev IsClosed {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.UniversallyClosed`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperAlgebraicStack.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ProperAlgebraicStack.lean#L99). The attribute's comment: “universally closed”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.UniversallyClosed`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperAlgebraicStack.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ProperAlgebraicStack.lean#L99). The attribute's comment: “universally closed”.
 
 > **Stacks 0513, part (2).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` *is
 > universally closed* when, for every 1-morphism `g : 𝒵 ⟶ 𝒴` of algebraic stacks over `S`, the
@@ -68,7 +68,7 @@ abbrev UniversallyClosed {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f : 
 
 [Tag 0514](https://stacks.math.columbia.edu/tag/0514) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_baseChange_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedBaseChange.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedBaseChange.lean#L95).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_baseChange_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedBaseChange.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedBaseChange.lean#L95).
 
 > **Stacks 0514.** Universal closedness is stable under base change: let `f : 𝒳 ⟶ 𝒴` be a
 > universally closed 1-morphism of algebraic stacks over `S` and let `R` be a 2-fibre product
@@ -90,7 +90,7 @@ theorem universallyClosed_baseChange_of_isTwoFibreProduct
 
 [Tag 0515](https://stacks.math.columbia.edu/tag/0515) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedComposition.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedComposition.lean#L48). The attribute's comment: “closed”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedComposition.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedComposition.lean#L48). The attribute's comment: “closed”.
 
 > The composite of two closed 1-morphisms of algebraic stacks over `S` is closed.
 
@@ -100,7 +100,7 @@ theorem isClosed_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w} B S hS}
     IsClosed B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedComposition.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedComposition.lean#L62). The attribute's comment: “universally closed”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedComposition.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedComposition.lean#L62). The attribute's comment: “universally closed”.
 
 > The composite of two universally closed 1-morphisms of algebraic stacks over `S` is
 > universally closed.
@@ -116,7 +116,7 @@ theorem universallyClosed_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w} B 
 
 [Tag 0CL3](https://stacks.math.columbia.edu/tag/0CL3) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean#L483).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean#L477).
 
 > **Stacks 0CL3.** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` the following are
 > equivalent: `f` is universally closed; every base change of `f` to a scheme of the site is closed
@@ -147,4 +147,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.13, Tag 0511](https://stacks.math.columbia.edu/tag/0511)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

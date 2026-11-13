@@ -7,7 +7,7 @@ statement: formalized
 
 # Holomorphic self-maps of the upper half-plane
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-self-maps-of-the-upper-half-plane/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-self-maps-of-the-upper-half-plane/index.html).
 
 ## Schwarz lemma on the upper half-plane
 
@@ -22,7 +22,7 @@ $$|F(z)|\le\left|\frac{z-i}{z+i}\right|.$$
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functions of a complex variable; Geometric function theory), problem `ma_proofbench_l1_20`.
 
-Stated but not proved: `MathlibExt.Analysis.Complex.UpperHalfPlaneSchwarzLemmaWanted.norm_le_norm_cayley_of_upperHalfPlane_bounded_vanishing_at_I` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/UpperHalfPlaneSchwarzLemmaWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/UpperHalfPlaneSchwarzLemmaWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-self-maps-of-the-upper-half-plane/index.html#norm-le-norm-cayley-of-upper-half-plane).
+Stated but not proved: `MathlibExt.Analysis.Complex.UpperHalfPlaneSchwarzLemmaWanted.norm_le_norm_cayley_of_upperHalfPlane_bounded_vanishing_at_I` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/UpperHalfPlaneSchwarzLemmaWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/UpperHalfPlaneSchwarzLemmaWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-self-maps-of-the-upper-half-plane/index.html#norm-le-norm-cayley-of-upper-half-plane).
 
 ## Derivative bound at $i$ for a self-map of the upper half-plane
 
@@ -35,7 +35,7 @@ satisfies $f(i)=e^{2\pi i/3}$. Then $|f'(i)|\le\sqrt{3/2}$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functions of a complex variable; Geometric function theory), problem `ma_proofbench_l2_62`.
 
-Stated but not proved: `MathlibExt.Analysis.Complex.UpperHalfPlaneSelfMapDerivBoundWanted.norm_deriv_I_le_sqrt_three_halves_of_mapsTo_upperHalfPlane` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/UpperHalfPlaneSelfMapDerivBoundWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/UpperHalfPlaneSelfMapDerivBoundWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-self-maps-of-the-upper-half-plane/index.html#norm-deriv-i-le-sqrt-three-halves-of-map).
+Stated but not proved: `MathlibExt.Analysis.Complex.UpperHalfPlaneSelfMapDerivBoundWanted.norm_deriv_I_le_sqrt_three_halves_of_mapsTo_upperHalfPlane` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/UpperHalfPlaneSelfMapDerivBoundWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/UpperHalfPlaneSelfMapDerivBoundWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-self-maps-of-the-upper-half-plane/index.html#norm-deriv-i-le-sqrt-three-halves-of-map).
 
 ## Iterates of a self-map of the upper half-plane fixing $i$
 
@@ -49,7 +49,7 @@ as $n\to\infty$, where $f^{\circ n}$ is the $n$-fold composite of $f$ with itsel
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functions of a complex variable; Geometric function theory), problem `ma_proofbench_l2_34`.
 
-Stated but not proved: `MathlibExt.Analysis.Complex.UpperHalfPlaneSelfMapIterateConvergesWanted.tendsto_iterate_two_mul_I_of_fixed_I` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/UpperHalfPlaneSelfMapIterateConvergesWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/UpperHalfPlaneSelfMapIterateConvergesWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-self-maps-of-the-upper-half-plane/index.html#tendsto-iterate-two-mul-i-of-fixed-i).
+Stated but not proved: `MathlibExt.Analysis.Complex.UpperHalfPlaneSelfMapIterateConvergesWanted.tendsto_iterate_two_mul_I_of_fixed_I` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/UpperHalfPlaneSelfMapIterateConvergesWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/UpperHalfPlaneSelfMapIterateConvergesWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-self-maps-of-the-upper-half-plane/index.html#tendsto-iterate-two-mul-i-of-fixed-i).
 
 ## Surjectivity for half-plane self-maps that are real on the real axis
 
@@ -65,7 +65,7 @@ $\mathbb{C}_{+}$. Then $f(\mathbb{C}_{+}) = \mathbb{C}_{+}$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functions of a complex variable; Geometric function theory), problem `ma_proofbench_l2_71`.
 
-Stated but not proved: `MathlibExt.Analysis.Complex.UpperHalfPlaneSelfMapSurjectiveWanted.image_upperHalfPlane_eq_of_real_on_real` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/UpperHalfPlaneSelfMapSurjectiveWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/UpperHalfPlaneSelfMapSurjectiveWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-self-maps-of-the-upper-half-plane/index.html#image-upper-half-plane-eq-of-real-on-rea).
+Stated but not proved: `MathlibExt.Analysis.Complex.UpperHalfPlaneSelfMapSurjectiveWanted.image_upperHalfPlane_eq_of_real_on_real` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/UpperHalfPlaneSelfMapSurjectiveWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/UpperHalfPlaneSelfMapSurjectiveWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-self-maps-of-the-upper-half-plane/index.html#image-upper-half-plane-eq-of-real-on-rea).
 
 ## Depends on
 
@@ -74,4 +74,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Holomorphic self-maps of the upper half-plane](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-self-maps-of-the-upper-half-plane/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-self-maps-of-the-upper-half-plane)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-self-maps-of-the-upper-half-plane)

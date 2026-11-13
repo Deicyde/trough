@@ -1,6 +1,6 @@
 # 15 More on Algebra
 
-Chapter 15 of the Stacks Project, *More on Algebra*, [Tag 05E3](https://stacks.math.columbia.edu/tag/05E3): the 127 sections of its 130 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 1,016 tags are carried by 1,175 declarations of the repository (all in StacksFrontier) and 57 registered declarations.
+Chapter 15 of the Stacks Project, *More on Algebra*, [Tag 05E3](https://stacks.math.columbia.edu/tag/05E3): the 127 sections of its 130 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 1,016 tags are carried by 1,185 declarations of the repository (all in StacksFrontier) and 51 registered declarations.
 
 ## [15 More on Algebra: the… to 15.21 Descent of flatness along…](part-01/README.md)
 
@@ -122,7 +122,7 @@ Chapter 15 of the Stacks Project, *More on Algebra*, [Tag 05E3](https://stacks.m
 - [15.104 Miscellany](part-06/15-104-miscellany.md)
 - [15.105 Tricks with double complexes](part-06/15-105-tricks-with-double-complexes.md)
 
-## [15.106 Weakly étale ring maps to 15.122 Determinants of…](part-07/README.md)
+## [15.106 Weakly étale ring maps to 15.121 Perfect complexes and…](part-07/README.md)
 
 - [15.106 Weakly étale ring maps](part-07/15-106-weakly-etale-ring-maps.md)
 - [15.107 Weakly étale algebras over fields](part-07/15-107-weakly-etale-algebras-over-fields.md)
@@ -140,10 +140,10 @@ Chapter 15 of the Stacks Project, *More on Algebra*, [Tag 05E3](https://stacks.m
 - [15.119 Picard groups of rings](part-07/15-119-picard-groups-of-rings.md)
 - [15.120 Determinants](part-07/15-120-determinants.md)
 - [15.121 Perfect complexes and K-groups](part-07/15-121-perfect-complexes-and-k-groups.md)
-- [15.122 Determinants of endomorphisms of finite length modules](part-07/15-122-determinants-of-endomorphisms-of-finite-l.md)
 
-## [15.123 A regular local ring is… to 15.130 Big projective modules…](part-08/README.md)
+## [15.122 Determinants of… to 15.130 Big projective modules…](part-08/README.md)
 
+- [15.122 Determinants of endomorphisms of finite length modules](part-08/15-122-determinants-of-endomorphisms-of-finite-l.md)
 - [15.123 A regular local ring is a UFD](part-08/15-123-a-regular-local-ring-is-a-ufd.md)
 - [15.124 Determinants of complexes](part-08/15-124-determinants-of-complexes.md)
 - [15.125 Extensions of valuation rings](part-08/15-125-extensions-of-valuation-rings.md)

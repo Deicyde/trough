@@ -8,7 +8,7 @@ proof: formalized
 
 # 67.8 Quasi-compact morphisms
 
-Section 67.8 of the Stacks Project, [Tag 03HC](https://stacks.math.columbia.edu/tag/03HC). 11 tags here are carried by 27 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.8 of the Stacks Project, [Tag 03HC](https://stacks.math.columbia.edu/tag/03HC). 11 tags here are carried by 27 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03HC, the section
 
@@ -16,15 +16,15 @@ Section 67.8 of the Stacks Project, [Tag 03HC](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.IsQuasiCompact`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L262), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactMorphisms.lean, line 32](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactMorphisms.lean#L32) (StacksFrontier): “quasi-compact morphisms of algebraic spaces”.
-- [`AlgebraicGeometry.Space.presheaf_quasiCompact_iff_isQuasiCompact`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L128), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactMorphisms.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactMorphisms.lean#L34) (StacksFrontier): “agreement with the notion for representable morphisms”.
-- [`AlgebraicGeometry.Space.isQuasiCompact_of_isQuasiCompactSpace`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactSupport.lean#L171), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactMorphisms.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactMorphisms.lean#L36) (StacksFrontier): “a morphism from a quasi-compact space to a quasi-separated one is quasi-compact”.
+- [`AlgebraicGeometry.Space.IsQuasiCompact`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L262), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactMorphisms.lean, line 32](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactMorphisms.lean#L32) (StacksFrontier): “quasi-compact morphisms of algebraic spaces”.
+- [`AlgebraicGeometry.Space.presheaf_quasiCompact_iff_isQuasiCompact`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L128), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactMorphisms.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactMorphisms.lean#L34) (StacksFrontier): “agreement with the notion for representable morphisms”.
+- [`AlgebraicGeometry.Space.isQuasiCompact_of_isQuasiCompactSpace`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactSupport.lean#L171), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactMorphisms.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompactMorphisms.lean#L36) (StacksFrontier): “a morphism from a quasi-compact space to a quasi-separated one is quasi-compact”.
 
 ## Tag 03HD, a lemma
 
 [Tag 03HD](https://stacks.math.columbia.edu/tag/03HD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.presheaf_quasiCompact_iff_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L128).
+**`AlgebraicGeometry.Space.presheaf_quasiCompact_iff_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L128).
 
 > For a representable morphism of algebraic spaces over `S` the two readings of
 > quasi-compactness agree: every represented base change of it is a quasi-compact morphism of
@@ -39,7 +39,7 @@ theorem presheaf_quasiCompact_iff_isQuasiCompact {F G : (BigFppfOver B S hS)ᵒ�
       IsQuasiCompact B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompact_of_presheaf_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactComposition.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactComposition.lean#L56). The attribute's comment: “part (1) implies part (2)”.
+**`AlgebraicGeometry.Space.isQuasiCompact_of_presheaf_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactComposition.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactComposition.lean#L56). The attribute's comment: “part (1) implies part (2)”.
 
 > A morphism of presheaves on the big fppf site of `S` which is representable and
 > quasi-compact after every representable base change is quasi-compact: every base change of it
@@ -58,7 +58,7 @@ theorem isQuasiCompact_of_presheaf_quasiCompact
 
 [Tag 03HE](https://stacks.math.columbia.edu/tag/03HE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsQuasiCompact`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L262).
+**`AlgebraicGeometry.Space.IsQuasiCompact`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L262).
 
 > **Stacks 03HE.** A morphism of algebraic spaces over `S` is *quasi-compact* when every
 > base change of it along a morphism from a quasi-compact algebraic space has quasi-compact
@@ -72,7 +72,7 @@ abbrev IsQuasiCompact (f : F ⟶ G) : Prop
 
 [Tag 0EMK](https://stacks.math.columbia.edu/tag/0EMK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiCompactMap_pointsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactOnPoints.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactOnPoints.lean#L52).
+**`AlgebraicGeometry.Space.isQuasiCompactMap_pointsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactOnPoints.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactOnPoints.lean#L52).
 
 > A quasi-compact morphism `f : X ⟶ Y` of algebraic spaces over `S`
 > induces a quasi-compact map `|X| → |Y|` of point spaces: the preimage of a quasi-compact
@@ -90,7 +90,7 @@ theorem isQuasiCompactMap_pointsMap {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u
 
 [Tag 03HF](https://stacks.math.columbia.edu/tag/03HF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiCompact_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L137).
+**`AlgebraicGeometry.Space.isQuasiCompact_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L137).
 
 > Quasi-compactness of a morphism of algebraic spaces is stable under base change: in a
 > cartesian square, the base change `b` of a quasi-compact `p` is quasi-compact.
@@ -105,7 +105,7 @@ theorem isQuasiCompact_of_isPullback {F G F' G' : (BigFppfOver B S hS)ᵒᵖ ⥤
 
 [Tag 03HG](https://stacks.math.columbia.edu/tag/03HG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsQuasiCompact.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactComposition.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactComposition.lean#L80).
+**`AlgebraicGeometry.Space.IsQuasiCompact.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactComposition.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactComposition.lean#L80).
 
 > The composition of a pair of quasi-compact morphisms of algebraic spaces over `S` is
 > quasi-compact.
@@ -122,7 +122,7 @@ theorem IsQuasiCompact.comp
 
 [Tag 040W](https://stacks.math.columbia.edu/tag/040W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiCompactSpaceULift_of_isSurjectiveULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedQuasiCompactPoints.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedQuasiCompactPoints.lean#L208). The attribute's comment: “part (1), for a value universe independent of the universe of the schemes”.
+**`AlgebraicGeometry.Space.isQuasiCompactSpaceULift_of_isSurjectiveULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedQuasiCompactPoints.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedQuasiCompactPoints.lean#L208). The attribute's comment: “part (1), for a value universe independent of the universe of the schemes”.
 
 > **Stacks 040W**, part (1), for a value universe `max w u` independent of the universe `u` of
 > the schemes: if `f : F ⟶ G` is a surjective morphism of algebraic spaces over `S` and `F` is
@@ -138,7 +138,7 @@ theorem isQuasiCompactSpaceULift_of_isSurjectiveULift
     IsQuasiCompactSpaceULift.{w} B S hS G
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompactSpace_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L178). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isQuasiCompactSpace_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L178). The attribute's comment: “part (1)”.
 
 > The image of a quasi-compact algebraic space over `S` under a surjective morphism of
 > algebraic spaces over `S` is quasi-compact.
@@ -150,7 +150,7 @@ theorem isQuasiCompactSpace_of_isSurjective {F G : (BigFppfOver B S hS)ᵒᵖ �
     IsQuasiCompactSpace B S hS G
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompact_of_comp_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L189). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isQuasiCompact_of_comp_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L189). The attribute's comment: “part (2)”.
 
 > In a commuting triangle `p = f ≫ q` of morphisms of algebraic
 > spaces over `S` whose horizontal morphism `f` is surjective, quasi-compactness of `p` implies
@@ -164,7 +164,7 @@ theorem isQuasiCompact_of_comp_surjective {F G H : (BigFppfOver B S hS)ᵒᵖ �
     IsQuasiCompact B S hS q
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiCompactSpace.of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactSurjection.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactSurjection.lean#L60). The attribute's comment: “part (1): quasi-compactness of the target”.
+**`AlgebraicGeometry.Space.IsQuasiCompactSpace.of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactSurjection.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactSurjection.lean#L60). The attribute's comment: “part (1): quasi-compactness of the target”.
 
 > **Stacks 040W, part (1).** The image of a quasi-compact algebraic space under a
 > surjective morphism of algebraic spaces over `S` is quasi-compact: if `f : X ⟶ Y` is
@@ -177,7 +177,7 @@ theorem IsQuasiCompactSpace.of_isSurjective {f : X ⟶ Y}
     IsQuasiCompactSpace B S hS Y
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiCompact.of_isSurjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactSurjection.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactSurjection.lean#L72). The attribute's comment: “part (2): quasi-compactness of a morphism”. References: EGA IV (1.1.3).
+**`AlgebraicGeometry.Space.IsQuasiCompact.of_isSurjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactSurjection.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactSurjection.lean#L72). The attribute's comment: “part (2): quasi-compactness of a morphism”. References: EGA IV (1.1.3).
 
 > **Stacks 040W, part (2).** In a commuting triangle `f ≫ q = p` of morphisms of algebraic
 > spaces over `S` whose horizontal arrow `f` is surjective, quasi-compactness of `p` implies
@@ -195,7 +195,7 @@ theorem IsQuasiCompact.of_isSurjective_comp {f : X ⟶ Y} {p : X ⟶ Z} {q : Y �
 
 [Tag 04ZJ](https://stacks.math.columbia.edu/tag/04ZJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiCompact_of_universallyOpen_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L322).
+**`AlgebraicGeometry.Space.isQuasiCompact_of_universallyOpen_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L322).
 
 > Let `g : G' ⟶ G` be a universally open surjective morphism of algebraic spaces over `S`.
 > If the base change of `f : F ⟶ G` along `g` is quasi-compact, then so is `f`.
@@ -213,7 +213,7 @@ theorem isQuasiCompact_of_universallyOpen_isSurjective
 
 [Tag 03KG](https://stacks.math.columbia.edu/tag/03KG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiCompact_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L248).
+**`AlgebraicGeometry.Space.isQuasiCompact_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L248).
 
 > For a morphism `f : F ⟶ G` of algebraic spaces over `S` the following six
 > conditions are equivalent: `f` is quasi-compact; the base change of `f` along every morphism
@@ -244,7 +244,7 @@ theorem isQuasiCompact_tfae {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
           ∀ i, IsQuasiCompact B S hS (pullback.fst (U i).ι f)]
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompact_pullback_snd_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean#L319). The attribute's comment: “part (1) implies part (2)”.
+**`AlgebraicGeometry.Space.isQuasiCompact_pullback_snd_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean#L319). The attribute's comment: “part (1) implies part (2)”.
 
 > **Stacks 03KG, part (1) implies part (2).** If `f : X ⟶ Y` is a quasi-compact morphism of
 > algebraic spaces over `S`, then for every object `Z` of the site and every `g : h_Z ⟶ Y` the
@@ -260,7 +260,7 @@ theorem isQuasiCompact_pullback_snd_of_isQuasiCompact
     IsQuasiCompact B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompactSpace_pullback_of_isQuasiCompact_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean#L335). The attribute's comment: “part (2) implies part (3)”.
+**`AlgebraicGeometry.Space.isQuasiCompactSpace_pullback_of_isQuasiCompact_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean#L335). The attribute's comment: “part (2) implies part (3)”.
 
 > **Stacks 03KG, part (2) implies part (3).** If every projection `Z ×_Y X ⟶ h_Z` of
 > `f : X ⟶ Y` along a morphism from a represented presheaf is quasi-compact, then `Z ×_Y X` is a
@@ -283,7 +283,7 @@ theorem isQuasiCompactSpace_pullback_of_isQuasiCompact_pullback_snd
     IsQuasiCompactSpace B S hS (pullback f g)
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompact_of_isQuasiCompactSpace_pullback_affine'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean#L362). The attribute's comment: “part (3) implies part (1)”.
+**`AlgebraicGeometry.Space.isQuasiCompact_of_isQuasiCompactSpace_pullback_affine'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean#L362). The attribute's comment: “part (3) implies part (1)”.
 
 > **Stacks 03KG, part (3) implies part (1): quasi-compactness of a morphism of algebraic
 > spaces may be tested on affine schemes.** If `Z ×_Y X` is a quasi-compact algebraic space for
@@ -308,7 +308,7 @@ theorem isQuasiCompact_of_isQuasiCompactSpace_pullback_affine'
     IsQuasiCompact B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompact_of_surjectiveEtale_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean#L389). The attribute's comment: “part (4) implies part (1)”.
+**`AlgebraicGeometry.Space.isQuasiCompact_of_surjectiveEtale_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean#L389). The attribute's comment: “part (4) implies part (1)”.
 
 > **Stacks 03KG, part (4) implies part (1): quasi-compactness of a morphism of algebraic
 > spaces is étale-local on the target.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over
@@ -332,7 +332,7 @@ theorem isQuasiCompact_of_surjectiveEtale_atlas
     IsQuasiCompact B S hS f
 ```
 
-**`AlgebraicGeometry.Space.exists_surjectiveEtale_atlas_isQuasiCompact_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean#L423). The attribute's comment: “part (1) implies part (4)”.
+**`AlgebraicGeometry.Space.exists_surjectiveEtale_atlas_isQuasiCompact_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean#L423). The attribute's comment: “part (1) implies part (4)”.
 
 > **Stacks 03KG, part (1) implies part (4).** A quasi-compact morphism `f : X ⟶ Y` of
 > algebraic spaces over `S` has a surjective étale chart `φ : h_V ⟶ Y` of its target along
@@ -354,7 +354,7 @@ theorem exists_surjectiveEtale_atlas_isQuasiCompact_pullback_snd
       IsQuasiCompact B S hS (pullback.snd f φ)
 ```
 
-**`AlgebraicGeometry.Space.exists_isAlgebraicSpace_surjectiveEtale_isQuasiCompact_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean#L441). The attribute's comment: “part (4) implies part (5)”.
+**`AlgebraicGeometry.Space.exists_isAlgebraicSpace_surjectiveEtale_isQuasiCompact_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean#L441). The attribute's comment: “part (4) implies part (5)”.
 
 > **Stacks 03KG, part (4) implies part (5).** A surjective étale chart of `Y` by an object
 > of the site is in particular a surjective étale morphism of algebraic spaces onto `Y`.
@@ -374,7 +374,7 @@ theorem exists_isAlgebraicSpace_surjectiveEtale_isQuasiCompact_pullback_snd
         IsQuasiCompact B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.Space.exists_surjectiveEtale_atlas_of_isAlgebraicSpace_surjectiveEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean, line 462](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean#L462). The attribute's comment: “part (5) implies part (4)”.
+**`AlgebraicGeometry.Space.exists_surjectiveEtale_atlas_of_isAlgebraicSpace_surjectiveEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean, line 462](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactEtaleLocalTarget.lean#L462). The attribute's comment: “part (5) implies part (4)”.
 
 > **Stacks 03KG, part (5) implies part (4): an algebraic-space chart may be replaced by a
 > scheme chart.** If `g : Y' ⟶ Y` is a surjective étale morphism of algebraic spaces over `S`
@@ -398,7 +398,7 @@ theorem exists_surjectiveEtale_atlas_of_isAlgebraicSpace_surjectiveEtale
       IsQuasiCompact B S hS (pullback.snd f φ)
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompact_of_zariskiCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactZariskiLocalTarget.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactZariskiLocalTarget.lean#L218). The attribute's comment: “part (6) implies part (1)”.
+**`AlgebraicGeometry.Space.isQuasiCompact_of_zariskiCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactZariskiLocalTarget.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactZariskiLocalTarget.lean#L218). The attribute's comment: “part (6) implies part (1)”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`. If there is a Zariski covering
 > of `Y` by open subspaces `W i`, that is one whose point sets cover the space of points of `Y`,
@@ -416,7 +416,7 @@ theorem isQuasiCompact_of_zariskiCover
     IsQuasiCompact B S hS f
 ```
 
-**`AlgebraicGeometry.Space.exists_zariskiCover_isQuasiCompact_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactZariskiLocalTarget.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactZariskiLocalTarget.lean#L232). The attribute's comment: “part (1) implies part (6)”.
+**`AlgebraicGeometry.Space.exists_zariskiCover_isQuasiCompact_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactZariskiLocalTarget.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactZariskiLocalTarget.lean#L232). The attribute's comment: “part (1) implies part (6)”.
 
 > A quasi-compact morphism `f : X ⟶ Y` of algebraic spaces over `S` admits a Zariski
 > covering of `Y` over each member of which its restriction is quasi-compact.
@@ -435,7 +435,7 @@ theorem exists_zariskiCover_isQuasiCompact_pullback_snd
 
 [Tag 03KS](https://stacks.math.columbia.edu/tag/03KS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiCompact_of_comp_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L148). References: EGA IV (1.2.4).
+**`AlgebraicGeometry.Space.isQuasiCompact_of_comp_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L148). References: EGA IV (1.2.4).
 
 > If a composite of morphisms of algebraic spaces over `S` is quasi-compact and its second
 > factor is quasi-separated, then its first factor is quasi-compact.
@@ -452,7 +452,7 @@ theorem isQuasiCompact_of_comp_of_isQuasiSeparated {F G H : (BigFppfOver B S hS)
 
 [Tag 073B](https://stacks.math.columbia.edu/tag/073B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiSeparated_of_isAbsolutelyQuasiSeparated_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L401). The attribute's comment: “part (2): quasi-separated”.
+**`AlgebraicGeometry.Space.isQuasiSeparated_of_isAbsolutelyQuasiSeparated_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L401). The attribute's comment: “part (2): quasi-separated”.
 
 > Every morphism of algebraic spaces over `S` out of a quasi-separated algebraic space is
 > quasi-separated.
@@ -464,7 +464,7 @@ theorem isQuasiSeparated_of_isAbsolutelyQuasiSeparated_source
     IsQuasiSeparated B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompactSpace_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L411). The attribute's comment: “part (3): quasi-compact”.
+**`AlgebraicGeometry.Space.isQuasiCompactSpace_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L411). The attribute's comment: “part (3): quasi-compact”.
 
 > A fibre product of quasi-compact algebraic spaces over `S` over a quasi-separated
 > algebraic space is quasi-compact.
@@ -477,7 +477,7 @@ theorem isQuasiCompactSpace_pullback {F G H : (BigFppfOver B S hS)ᵒᵖ ⥤ Typ
     IsQuasiCompactSpace B S hS (pullback f g)
 ```
 
-**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L420). The attribute's comment: “part (3): quasi-separated”.
+**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiCompact.lean#L420). The attribute's comment: “part (3): quasi-separated”.
 
 > A fibre product of quasi-separated algebraic spaces over `S` is quasi-separated.
 
@@ -490,7 +490,7 @@ theorem isAbsolutelyQuasiSeparated_pullback {F G H : (BigFppfOver B S hS)ᵒᵖ 
     IsAbsolutelyQuasiSeparated B S hS hZ (pullback f g)
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompact_of_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactSupport.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactSupport.lean#L171). The attribute's comment: “part (1)”. References: SGA 4 VI (1.14), “(i), algebraic spaces”.
+**`AlgebraicGeometry.Space.isQuasiCompact_of_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactSupport.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactSupport.lean#L171). The attribute's comment: “part (1)”. References: SGA 4 VI (1.14), “(i), algebraic spaces”.
 
 > A morphism from a quasi-compact algebraic space into a quasi-separated algebraic space is
 > quasi-compact.
@@ -510,4 +510,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.8, Tag 03HC](https://stacks.math.columbia.edu/tag/03HC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

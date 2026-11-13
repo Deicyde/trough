@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.32 Bertini theorems
 
-Section 37.32 of the Stacks Project, [Tag 0G4C](https://stacks.math.columbia.edu/tag/0G4C). 4 tags here are carried by 43 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.32 of the Stacks Project, [Tag 0G4C](https://stacks.math.columbia.edu/tag/0G4C). 4 tags here are carried by 43 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G4D, a lemma
 
 [Tag 0G4D](https://stacks.math.columbia.edu/tag/0G4D) in the Stacks Project.
 
-**`Algebra.isGeometricallyIrreducible_adjoin_linearCombination`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Bertini.lean, line 821](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Bertini.lean#L821).
+**`Algebra.isGeometricallyIrreducible_adjoin_linearCombination`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Bertini.lean, line 821](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Bertini.lean#L821).
 
 > Let `K/k` be a finitely generated geometrically irreducible extension and let `Ω` be generated
 > over `K` by algebraically independent elements `x₁, …, xₙ`. If `x₁, …, xₙ`, `∑ gᵢxᵢ` and
@@ -46,7 +46,7 @@ theorem isGeometricallyIrreducible_adjoin_linearCombination
 
 [Tag 0G4E](https://stacks.math.columbia.edu/tag/0G4E) in the Stacks Project.
 
-**`Algebra.exists_algebraicIndependent_linearCombinations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniAlgebraicIndependence.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniAlgebraicIndependence.lean#L333).
+**`Algebra.exists_algebraicIndependent_linearCombinations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniAlgebraicIndependence.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniAlgebraicIndependence.lean#L332).
 
 > Let `A` be a domain of finite type over a field `k`, let
 > `n ≥ 2` and let `g : Fin n → A`. If the common zero locus of `g 0` and `g 1` has an irreducible
@@ -71,7 +71,7 @@ public theorem exists_algebraicIndependent_linearCombinations
               MvPolynomial.C (∑ i : Fin n, algebraMap k A (c i) * g i)))
 ```
 
-**`Algebra.algebraicIndependent_linearCombination_of_codimTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniLinearCombinationCodimTwo.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniLinearCombinationCodimTwo.lean#L90). The attribute's comment: “the variables and their linear combination, read in the ambient field”.
+**`Algebra.algebraicIndependent_linearCombination_of_codimTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniLinearCombinationCodimTwo.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniLinearCombinationCodimTwo.lean#L90). The attribute's comment: “the variables and their linear combination, read in the ambient field”.
 
 > **The variables and their linear combination are algebraically independent over the base
 > field.** Let `A` be a domain of finite type over `k`, `n ≥ 2` and `g : Fin n → A` such that
@@ -93,7 +93,7 @@ theorem algebraicIndependent_linearCombination_of_codimTwo
 
 [Tag 0G4F](https://stacks.math.columbia.edu/tag/0G4F) in the Stacks Project.
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_ringKrullDim_quotient_add_two_eq_reducedChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartAlgebra.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartAlgebra.lean#L126). The attribute's comment: “hypothesis (3) as the codimension datum of the chart statements”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_ringKrullDim_quotient_add_two_eq_reducedChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartAlgebra.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartAlgebra.lean#L126). The attribute's comment: “hypothesis (3) as the codimension datum of the chart statements”.
 
 > On a trivializing affine chart meeting `Z`, the reduced chart ring `A` is a domain of finite
 > type over `k`, and some minimal prime `p` over the ideal generated by the images of the functions
@@ -109,7 +109,7 @@ theorem exists_ringKrullDim_quotient_add_two_eq_reducedChart (c : D.Chart)
         ringKrullDim (reducedChartRing c.U ⧸ p) + 2 = ringKrullDim (reducedChartRing c.U)
 ```
 
-**`Algebra.isGeometricallyIrreducible_universalDivisorChart_of_linearSubst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartChangeOfBasis.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartChangeOfBasis.lean#L326). The attribute's comment: “the generic fibre over a chart, for distinguished vectors of an arbitrary basis”.
+**`Algebra.isGeometricallyIrreducible_universalDivisorChart_of_linearSubst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartChangeOfBasis.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartChangeOfBasis.lean#L326). The attribute's comment: “the generic fibre over a chart, for distinguished vectors of an arbitrary basis”.
 
 > The function field of the universal divisor over a chart is geometrically irreducible over
 > the field generated by the parameters. This is
@@ -134,7 +134,7 @@ theorem isGeometricallyIrreducible_universalDivisorChart_of_linearSubst (hn : 2 
     Algebra.IsGeometricallyIrreducible F Ω
 ```
 
-**`Algebra.algebraicIndependent_universalDivisorChartMap_X_of_linearSubst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartChangeOfBasis.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartChangeOfBasis.lean#L360). The attribute's comment: “the dominance over the parameter space, for an arbitrary basis”.
+**`Algebra.algebraicIndependent_universalDivisorChartMap_X_of_linearSubst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartChangeOfBasis.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartChangeOfBasis.lean#L360). The attribute's comment: “the dominance over the parameter space, for an arbitrary basis”.
 
 > The parameters of a chart are algebraically independent over the base field. This is
 > `Algebra.algebraicIndependent_universalDivisorChartMap_X` with the parameters indexed by an
@@ -153,7 +153,7 @@ theorem algebraicIndependent_universalDivisorChartMap_X_of_linearSubst (hn : 2 �
     AlgebraicIndependent k fun j : σ => universalDivisorChartMap A Ω f (X j)
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_mem_minimalPrimes_height_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean#L64). The attribute's comment: “hypothesis (3) read on a chart meeting Z, as an exact height”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_mem_minimalPrimes_height_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean#L64). The attribute's comment: “hypothesis (3) read on a chart meeting Z, as an exact height”.
 
 > On a trivializing affine chart `U` that meets `Z`, the prime of `Γ(U, ⊤)` cutting out `Z ∩ U`
 > is a minimal prime over the ideal generated by the functions `g₂, g₃` of `v₂, v₃`, and its height
@@ -167,7 +167,7 @@ theorem exists_mem_minimalPrimes_height_eq_two (c : D.Chart)
         p.height = 2
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_chart_isUnit_and_height_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean#L81). The attribute's comment: “hypothesis (3) on a single chart: an invertible first function and an exact height”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_chart_isUnit_and_height_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean#L81). The attribute's comment: “hypothesis (3) on a single chart: an invertible first function and an exact height”.
 
 > There is a trivializing affine chart on which the function of `v₁` is a unit and on which
 > some minimal prime over the ideal generated by the functions of `v₂` and `v₃` has height exactly
@@ -181,7 +181,7 @@ theorem exists_chart_isUnit_and_height_eq_two :
           p.height = 2
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.v₁_notMem_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean#L111). The attribute's comment: “v₁ is independent from v₂ and v₃”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.v₁_notMem_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean#L111). The attribute's comment: “v₁ is independent from v₂ and v₃”.
 
 > The vector `v₁` is not in the span of `v₂` and `v₃`.
 
@@ -189,7 +189,7 @@ theorem exists_chart_isUnit_and_height_eq_two :
 theorem v₁_notMem_span : h.v₁ ∉ Submodule.span D.k {h.v₂, h.v₃}
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.linearIndependent_v₂_v₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean#L129). The attribute's comment: “v₂ and v₃ are independent”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.linearIndependent_v₂_v₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean#L129). The attribute's comment: “v₂ and v₃ are independent”.
 
 > The vectors `v₂` and `v₃` are linearly independent.
 
@@ -197,7 +197,7 @@ theorem v₁_notMem_span : h.v₁ ∉ Submodule.span D.k {h.v₂, h.v₃}
 theorem linearIndependent_v₂_v₃ : LinearIndependent D.k ![h.v₂, h.v₃]
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.linearIndependent_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean#L151). The attribute's comment: “the three distinguished vectors are linearly independent”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.linearIndependent_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartCodimension.lean#L151). The attribute's comment: “the three distinguished vectors are linearly independent”.
 
 > The three distinguished vectors `v₁, v₂, v₃` of hypothesis (3) are linearly independent.
 
@@ -205,7 +205,7 @@ theorem linearIndependent_v₂_v₃ : LinearIndependent D.k ![h.v₂, h.v₃]
 theorem linearIndependent_distinguished : LinearIndependent D.k ![h.v₁, h.v₂, h.v₃]
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.isGeometricallyIrreducible_chartRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFractionField.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFractionField.lean#L75). The attribute's comment: “hypothesis (2) read on a trivializing affine chart”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.isGeometricallyIrreducible_chartRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFractionField.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFractionField.lean#L75). The attribute's comment: “hypothesis (2) read on a trivializing affine chart”.
 
 > The chart ring `Γ(U, ⊤)` of a trivializing affine chart is geometrically irreducible
 > over `k`.
@@ -216,7 +216,7 @@ theorem isGeometricallyIrreducible_chartRing (c : D.Chart) :
     Algebra.IsGeometricallyIrreducible D.k Γ(c.U.toScheme, ⊤)
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.isGeometricallyIrreducible_reducedChartRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFractionField.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFractionField.lean#L95). The attribute's comment: “hypothesis (2) read on the reduced ring of a trivializing affine chart”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.isGeometricallyIrreducible_reducedChartRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFractionField.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFractionField.lean#L95). The attribute's comment: “hypothesis (2) read on the reduced ring of a trivializing affine chart”.
 
 > The reduced chart ring `Γ(U, ⊤) ⧸ √0` of a trivializing affine chart is geometrically
 > irreducible over `k`.
@@ -227,7 +227,7 @@ theorem isGeometricallyIrreducible_reducedChartRing (c : D.Chart) :
     Algebra.IsGeometricallyIrreducible D.k (reducedChartRing c.U)
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.isGeometricallyIrreducible_reducedChartFractionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFractionField.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFractionField.lean#L107). The attribute's comment: “hypothesis (2) as geometric irreducibility of the chart's fraction field”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.isGeometricallyIrreducible_reducedChartFractionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFractionField.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFractionField.lean#L107). The attribute's comment: “hypothesis (2) as geometric irreducibility of the chart's fraction field”.
 
 > The fraction field of the reduced chart ring of a trivializing affine chart is geometrically
 > irreducible over `k`.
@@ -238,7 +238,7 @@ theorem isGeometricallyIrreducible_reducedChartFractionRing (c : D.Chart) :
     Algebra.IsGeometricallyIrreducible D.k (reducedChartFractionRing c.U)
 ```
 
-**`Algebra.isGeometricallyIrreducible_universalDivisorChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFunctionField.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFunctionField.lean#L432). The attribute's comment: “the generic fibre over a trivializing affine chart, in field-theoretic form”.
+**`Algebra.isGeometricallyIrreducible_universalDivisorChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFunctionField.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFunctionField.lean#L432). The attribute's comment: “the generic fibre over a trivializing affine chart, in field-theoretic form”.
 
 > **The function field of the universal divisor over a trivializing chart is geometrically
 > irreducible over the field generated by the parameters.**
@@ -272,7 +272,7 @@ theorem isGeometricallyIrreducible_universalDivisorChart
     Algebra.IsGeometricallyIrreducible F Ω
 ```
 
-**`Algebra.algebraicIndependent_universalDivisorChartMap_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFunctionField.lean, line 463](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFunctionField.lean#L463). The attribute's comment: “the dominance over the parameter space, read on a trivializing affine chart”.
+**`Algebra.algebraicIndependent_universalDivisorChartMap_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFunctionField.lean, line 463](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartFunctionField.lean#L463). The attribute's comment: “the dominance over the parameter space, read on a trivializing affine chart”.
 
 > **The parameters of the chart are algebraically independent over the base field.** In the
 > situation of `Algebra.isGeometricallyIrreducible_universalDivisorChart` the `n + 1` images of the
@@ -296,7 +296,7 @@ theorem algebraicIndependent_universalDivisorChartMap_X
     AlgebraicIndependent k fun j : Fin (n + 1) => universalDivisorChartMap A Ω f (X j)
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.isGeometricallyIrreducible_reducedChartDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartGenericFibre.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartGenericFibre.lean#L88). The attribute's comment: “the generic fibre over a chart, from the tag's own hypotheses”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.isGeometricallyIrreducible_reducedChartDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartGenericFibre.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartGenericFibre.lean#L88). The attribute's comment: “the generic fibre over a chart, from the tag's own hypotheses”.
 
 > Let `Ω` be a fraction field of the chart ring of the universal divisor over the reduced chart
 > ring of a trivializing affine chart, compatibly with the fraction field `K` of the chart's own
@@ -334,7 +334,7 @@ theorem isGeometricallyIrreducible_reducedChartDivisor (c : D.Chart) {m : ℕ}
       Algebra.IsGeometricallyIrreducible F Ω
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.algebraicIndependent_reducedChartDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartGenericFibre.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartGenericFibre.lean#L128). The attribute's comment: “the dominance over the parameter space, from the tag's own hypotheses”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.algebraicIndependent_reducedChartDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartGenericFibre.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartGenericFibre.lean#L128). The attribute's comment: “the dominance over the parameter space, from the tag's own hypotheses”.
 
 > In the situation of
 > `Stacks.Bertini.FamilyDivisors.Hypotheses.isGeometricallyIrreducible_reducedChartDivisor` the
@@ -365,7 +365,7 @@ theorem algebraicIndependent_reducedChartDivisor (c : D.Chart) {m : ℕ}
           (MvPolynomial.X j)
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_chart_generic_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartGenericFibre.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartGenericFibre.lean#L182). The attribute's comment: “the generic fibre and the dominance on a chart, from the tag's own hypotheses”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_chart_generic_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartGenericFibre.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartGenericFibre.lean#L182). The attribute's comment: “the generic fibre and the dominance on a chart, from the tag's own hypotheses”.
 
 > There is a trivializing affine chart whose chart ring of the universal divisor is a domain
 > and on which, for every fraction field `Ω` of that ring compatible with the chart's own fraction
@@ -397,7 +397,7 @@ theorem exists_chart_generic_fibre :
       Algebra.IsGeometricallyIrreducible F Ω
 ```
 
-**`Stacks.Bertini.FamilyDivisors.exists_surjective_ker_le_nilradical_reducedChartDivisorRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartReduction.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartReduction.lean#L141). The attribute's comment: “the reduced chart ring of the universal divisor as the reduction of its chart ring”.
+**`Stacks.Bertini.FamilyDivisors.exists_surjective_ker_le_nilradical_reducedChartDivisorRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartReduction.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartReduction.lean#L141). The attribute's comment: “the reduced chart ring of the universal divisor as the reduction of its chart ring”.
 
 > **The reduced chart ring of the universal divisor is the reduction of its chart ring**: there
 > is a surjection from the chart ring onto the reduced chart ring with kernel inside the
@@ -409,7 +409,7 @@ theorem exists_surjective_ker_le_nilradical_reducedChartDivisorRing (c : D.Chart
       Function.Surjective Φ ∧ RingHom.ker Φ ≤ nilradical (chartDivisorRing c)
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_chart_substitution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartSubstitution.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartSubstitution.lean#L115). The attribute's comment: “hypothesis (3) as the substitution datum of the chart statements”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_chart_substitution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartSubstitution.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartSubstitution.lean#L115). The attribute's comment: “hypothesis (3) as the substitution datum of the chart statements”.
 
 > There is a trivializing affine chart, an invertible pair of `k`-matrices between the parameter
 > index set of the family and `{0, …, m + 2}`, and a tuple `g` of elements of the reduced chart ring
@@ -432,7 +432,7 @@ theorem exists_chart_substitution :
                 ringKrullDim (reducedChartRing c.U)
 ```
 
-**`Stacks.Bertini.FamilyDivisors.isIrreducible_supportSet_universalDivisor_of_directed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartSupport.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartSupport.lean#L314). The attribute's comment: “the passage from the trivializing charts to the universal divisor”.
+**`Stacks.Bertini.FamilyDivisors.isIrreducible_supportSet_universalDivisor_of_directed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartSupport.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniChartSupport.lean#L314). The attribute's comment: “the passage from the trivializing charts to the universal divisor”.
 
 > **The universal divisor is irreducible, for a cover closed under refining intersections.**
 > Same as `Stacks.Bertini.FamilyDivisors.isIrreducible_supportSet_universalDivisor`, but with the
@@ -457,7 +457,7 @@ theorem isIrreducible_supportSet_universalDivisor_of_directed {ι : Sort*} [None
     IsIrreducible D.universalDivisor.supportSet
 ```
 
-**`Stacks.Bertini.FamilyDivisors.commonZeroSet`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniCommonZeroSet.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniCommonZeroSet.lean#L102). The attribute's comment: “the common zero locus of the linear system”.
+**`Stacks.Bertini.FamilyDivisors.commonZeroSet`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniCommonZeroSet.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniCommonZeroSet.lean#L102). The attribute's comment: “the common zero locus of the linear system”.
 
 > **The common zero locus `Z = ⋂_{v ∈ V} H_v`** of the linear system. This is the closed set
 > on which hypothesis (4) of [Stacks, Tag 0G4F] imposes a codimension bound.
@@ -466,7 +466,7 @@ theorem isIrreducible_supportSet_universalDivisor_of_directed {ι : Sort*} [None
 def commonZeroSet : Set D.X
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_basis_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniDistinguishedBasis.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniDistinguishedBasis.lean#L52). The attribute's comment: “the three distinguished vectors as the first members of a basis”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_basis_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniDistinguishedBasis.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniDistinguishedBasis.lean#L52). The attribute's comment: “the three distinguished vectors as the first members of a basis”.
 
 > The linear system has a basis indexed by `Fin (m + 3)`, for some `m`, whose members at
 > `0, 1, 2` are the three distinguished vectors `v₁, v₂, v₃` of hypothesis (3).
@@ -477,7 +477,7 @@ theorem exists_basis_distinguished :
       W ⟨0, by omega⟩ = h.v₁ ∧ W ⟨1, by omega⟩ = h.v₂ ∧ W ⟨2, by omega⟩ = h.v₃
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean#L131). The attribute's comment: “the hypotheses”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean#L131). The attribute's comment: “the hypotheses”.
 
 > **The hypotheses of the Bertini irreducibility theorem** on the standing situation of the
 > Bertini theorems: `X` of finite type and geometrically irreducible over `k`, an irreducible
@@ -488,7 +488,7 @@ theorem exists_basis_distinguished :
 structure Hypotheses (D : FamilyDivisors.{u, v})
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.two_le_height_chartEquation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean#L183). The attribute's comment: “hypothesis (4) read on a trivializing affine chart”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.two_le_height_chartEquation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean#L183). The attribute's comment: “hypothesis (4) read on a trivializing affine chart”.
 
 > **Hypothesis (4), read on a chart.** Every minimal prime over the ideal `(f₁, …, f_r)`
 > generated by the functions representing the sections `ψ(vᵢ)` on a trivializing affine chart has
@@ -501,7 +501,7 @@ theorem two_le_height_chartEquation (c : D.Chart)
     2 ≤ q.height
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_not_isNilpotent_chartEquation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean#L193). The attribute's comment: “hypothesis (3) read on a trivializing affine chart”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_not_isNilpotent_chartEquation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean#L193). The attribute's comment: “hypothesis (3) read on a trivializing affine chart”.
 
 > **Hypothesis (3), read on a chart.** On every trivializing affine chart some basis vector is
 > represented by a function that is not nilpotent.
@@ -511,7 +511,7 @@ theorem exists_not_isNilpotent_chartEquation (c : D.Chart) :
     ∃ j, ¬ IsNilpotent (D.chartEquation c.triv j)
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.isIrreducible_supportSet_universalDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean#L221). The attribute's comment: “the irreducibility of the universal divisor, from the tag's own hypotheses”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.isIrreducible_supportSet_universalDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean#L221). The attribute's comment: “the irreducibility of the universal divisor, from the tag's own hypotheses”.
 
 > **`H_univ` is irreducible under the hypotheses of the Bertini irreducibility theorem.**
 
@@ -520,7 +520,7 @@ theorem isIrreducible_supportSet_universalDivisor :
     IsIrreducible D.universalDivisor.supportSet
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.irreducibleSpace_universalDivisorScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean#L233). The attribute's comment: “the universal divisor as an irreducible scheme, from the tag's own hypotheses”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.irreducibleSpace_universalDivisorScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniHypotheses.lean#L233). The attribute's comment: “the universal divisor as an irreducible scheme, from the tag's own hypotheses”.
 
 > **`H_univ` is an irreducible scheme under the hypotheses of the Bertini irreducibility
 > theorem.**
@@ -530,7 +530,7 @@ theorem irreducibleSpace_universalDivisorScheme :
     IrreducibleSpace D.universalDivisor.subscheme
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_chart_isUnit_chartFunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniInvertibleChart.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniInvertibleChart.lean#L81). The attribute's comment: “hypothesis (3) as an invertible section on a chart meeting Z”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_chart_isUnit_chartFunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniInvertibleChart.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniInvertibleChart.lean#L81). The attribute's comment: “hypothesis (3) as an invertible section on a chart meeting Z”.
 
 > There is a trivializing affine chart meeting `Z` on which the function of `v₁` is
 > invertible.
@@ -541,7 +541,7 @@ theorem exists_chart_isUnit_chartFunction :
       IsUnit (chartFunction c.triv h.v₁)
 ```
 
-**`Stacks.Bertini.FamilyDivisors.isFractionRing_parameterBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniParameterFunctionField.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniParameterFunctionField.lean#L105). The attribute's comment: “the residue field at the generic point of the parameter space”.
+**`Stacks.Bertini.FamilyDivisors.isFractionRing_parameterBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniParameterFunctionField.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniParameterFunctionField.lean#L105). The attribute's comment: “the residue field at the generic point of the parameter space”.
 
 > The function field `κ(η)` of the parameter space `𝔸^r_k` is a fraction field of the
 > polynomial ring in the parameters.
@@ -552,7 +552,7 @@ theorem isFractionRing_parameterBase :
     IsFractionRing (MvPolynomial D.basisIndex D.k) D.parameterBase.functionField
 ```
 
-**`Stacks.Bertini.FamilyDivisors.adjoin_range_coord_parameterBase_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniParameterFunctionField.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniParameterFunctionField.lean#L123). The attribute's comment: “the generic point of the parameter space generates the residue field”.
+**`Stacks.Bertini.FamilyDivisors.adjoin_range_coord_parameterBase_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniParameterFunctionField.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniParameterFunctionField.lean#L123). The attribute's comment: “the generic point of the parameter space generates the residue field”.
 
 > The residue field `κ(η)` at the generic point of `𝔸^r_k` is generated over `k` as a field by
 > the images of the coordinates.
@@ -567,7 +567,7 @@ theorem adjoin_range_coord_parameterBase_eq_top :
           (MvPolynomial.X i)) = ⊤
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_chart_isFractionRing_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorFunctionField.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorFunctionField.lean#L116). The attribute's comment: “the residue field of the universal divisor at its generic point”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.exists_chart_isFractionRing_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorFunctionField.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorFunctionField.lean#L116). The attribute's comment: “the residue field of the universal divisor at its generic point”.
 
 > Under the hypotheses of the family, `H_univ` is irreducible and there is a chart `c`, whose
 > part of `H_univ` contains the generic point, such that the residue field of `H_univ` at its
@@ -592,7 +592,7 @@ theorem exists_chart_isFractionRing_residueField :
                 (genericPoint D.universalDivisorScheme) hξ a
 ```
 
-**`Stacks.Bertini.FamilyDivisors.isFractionRing_parameterSpecResidueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean#L120). The attribute's comment: “the residue field at the generic point of the parameter space, on `Spec Γ`”.
+**`Stacks.Bertini.FamilyDivisors.isFractionRing_parameterSpecResidueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean#L120). The attribute's comment: “the residue field at the generic point of the parameter space, on `Spec Γ`”.
 
 > The residue field of `Spec Γ(𝔸^r_k, ⊤)` at its generic point is a fraction field of the
 > polynomial ring in the parameters: `κ(η) = k(xⱼ)`.
@@ -603,7 +603,7 @@ theorem isFractionRing_parameterSpecResidueField :
     IsFractionRing (MvPolynomial D.basisIndex D.k) D.parameterSpecResidueField
 ```
 
-**`Stacks.Bertini.FamilyDivisors.adjoin_range_parameterSpecResidueField_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean#L140). The attribute's comment: “the coordinates generate the residue field at the generic point of `𝔸^r_k`”.
+**`Stacks.Bertini.FamilyDivisors.adjoin_range_parameterSpecResidueField_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean#L140). The attribute's comment: “the coordinates generate the residue field at the generic point of `𝔸^r_k`”.
 
 > `κ(η)` is generated over `k` by the images of the coordinates.
 
@@ -617,7 +617,7 @@ theorem adjoin_range_parameterSpecResidueField_eq_top :
           (MvPolynomial.X j)) = ⊤
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.isGeometricallyIrreducible_residueField_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean#L231). The attribute's comment: “the generic fibre, read on the residue field of the universal divisor”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.isGeometricallyIrreducible_residueField_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean#L231). The attribute's comment: “the generic fibre, read on the residue field of the universal divisor”.
 
 > The residue field of `H_univ` at its generic point is geometrically irreducible over `κ(η)`.
 
@@ -630,7 +630,7 @@ theorem isGeometricallyIrreducible_residueField_genericPoint :
       (D.universalDivisorScheme.residueField (genericPoint D.universalDivisorScheme))
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.geometricallyIrreducible_fiber_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean#L315). The attribute's comment: “the generic fibre of the universal family”. References: SGA 7 XVIII (6.1.6.1), “Case s = 1 of 6.1.6.1”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.geometricallyIrreducible_fiber_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean#L315). The attribute's comment: “the generic fibre of the universal family”. References: SGA 7 XVIII (6.1.6.1), “Case s = 1 of 6.1.6.1”.
 
 > The generic fibre of the universal family is geometrically irreducible.
 
@@ -641,7 +641,7 @@ theorem geometricallyIrreducible_fiber_genericPoint :
       (D.universalFamily.fiberToSpecResidueField (genericPoint D.parameterBase))
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.forGeneral_geometricallyIrreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean#L335). References: SGA 7 XVIII (6.1.6.1), “special case”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.forGeneral_geometricallyIrreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorGenericFibre.lean#L335). References: SGA 7 XVIII (6.1.6.1), “special case”.
 
 > Let `X` be a scheme of finite type over a field `k`, geometrically irreducible over `k`, let
 > `L` be an invertible module on `X` and let `V ⊂ Γ(X, L)` be a finite dimensional linear system.
@@ -661,7 +661,7 @@ theorem forGeneral_geometricallyIrreducible :
             ((D.specializedDivisor K a).subschemeι ≫ D.baseChangeToSpec K))
 ```
 
-**`Algebra.isIrreducible_zeroLocus_universalLinearForm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorIrreducible.lean, line 747](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorIrreducible.lean#L747). The attribute's comment: “irreducibility of the universal divisor over an affine chart”.
+**`Algebra.isIrreducible_zeroLocus_universalLinearForm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorIrreducible.lean, line 747](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorIrreducible.lean#L747). The attribute's comment: “irreducibility of the universal divisor over an affine chart”.
 
 > **The universal divisor over an affine chart is irreducible.** Let `A` be a Noetherian domain
 > and `f₁, …, f_r ∈ A` with `f₁ ≠ 0`. If every irreducible component of `V(f₁, …, f_r)` has
@@ -678,7 +678,7 @@ theorem isIrreducible_zeroLocus_universalLinearForm (hf : f 0 ≠ 0)
       Set (PrimeSpectrum (MvPolynomial (Fin (n + 1)) A)))
 ```
 
-**`Algebra.isIrreducible_zeroLocus_linearForm_of_isPrime_nilradical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorIrreducible.lean, line 855](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorIrreducible.lean#L855). The attribute's comment: “the reduction step and the irreducibility of the universal divisor over a chart”.
+**`Algebra.isIrreducible_zeroLocus_linearForm_of_isPrime_nilradical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorIrreducible.lean, line 855](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalDivisorIrreducible.lean#L855). The attribute's comment: “the reduction step and the irreducibility of the universal divisor over a chart”.
 
 > **The universal divisor over an affine chart is irreducible, without a reducedness
 > hypothesis.** Let `A` be a Noetherian ring whose nilradical is prime — equivalently, with `Spec A`
@@ -704,7 +704,7 @@ theorem isIrreducible_zeroLocus_linearForm_of_isPrime_nilradical
       Set (PrimeSpectrum (MvPolynomial σ A)))
 ```
 
-**`Stacks.Bertini.FamilyDivisors.Hypotheses.isDominant_universalFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalFamilyDominance.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalFamilyDominance.lean#L153). The attribute's comment: “the dominance of the universal family over the parameter space”.
+**`Stacks.Bertini.FamilyDivisors.Hypotheses.isDominant_universalFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalFamilyDominance.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniUniversalFamilyDominance.lean#L153). The attribute's comment: “the dominance of the universal family over the parameter space”.
 
 > Under the hypotheses of the family, the universal family `H_univ → 𝔸^r_k` is dominant.
 
@@ -716,7 +716,7 @@ theorem isDominant_universalFamily : IsDominant D.universalFamily
 
 [Tag 0G4G](https://stacks.math.columbia.edu/tag/0G4G) in the Stacks Project.
 
-**`Stacks.Bertini.FamilyDivisors.exists_smooth_irreducibleSpace_specializedDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniSmoothIrreducibleMember.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniSmoothIrreducibleMember.lean#L425). The attribute's comment: “for an arbitrary finite dimensional linear system with phi\_(L, psi) a closed immersion: the hyperplane section is H\_v over k itself”.
+**`Stacks.Bertini.FamilyDivisors.exists_smooth_irreducibleSpace_specializedDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniSmoothIrreducibleMember.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniSmoothIrreducibleMember.lean#L425). The attribute's comment: “for an arbitrary finite dimensional linear system with phi\_(L, psi) a closed immersion: the hyperplane section is H\_v over k itself”.
 
 > **[Stacks, Tag 0G4G] for an arbitrary linear system.** Let `k` be an algebraically closed
 > field and let `X ⊂ 𝐏^n_k` be smooth and irreducible of dimension `≥ 2`. Then there is a
@@ -757,7 +757,7 @@ theorem exists_smooth_irreducibleSpace_specializedDivisor [IsAlgClosed D.k] [Smo
           IrreducibleSpace (D.specializedDivisor D.k c).subscheme
 ```
 
-**`Stacks.Bertini.ProjectiveSubscheme.exists_hyperplane_smooth_irreducibleSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniSmoothIrreducibleMember.lean, line 617](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniSmoothIrreducibleMember.lean#L617).
+**`Stacks.Bertini.ProjectiveSubscheme.exists_hyperplane_smooth_irreducibleSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniSmoothIrreducibleMember.lean, line 617](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniSmoothIrreducibleMember.lean#L617).
 
 > **[Stacks, Tag 0G4G].** Let `k` be an algebraically closed field and let `X ⊂ 𝐏^n_k` be
 > smooth and irreducible of dimension `≥ 2`. Then there is a hyperplane `H ⊂ 𝐏^n_k` such that
@@ -802,4 +802,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.32, Tag 0G4C](https://stacks.math.columbia.edu/tag/0G4C)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

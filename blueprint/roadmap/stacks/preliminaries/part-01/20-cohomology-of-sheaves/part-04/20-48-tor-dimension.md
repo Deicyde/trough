@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.48 Tor dimension
 
-Section 20.48 of the Stacks Project, [Tag 08CF](https://stacks.math.columbia.edu/tag/08CF). 8 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.48 of the Stacks Project, [Tag 08CF](https://stacks.math.columbia.edu/tag/08CF). 8 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08CG, a definition
 
 [Tag 08CG](https://stacks.math.columbia.edu/tag/08CG) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.CertifiedDerivedSheafTensoring.HasTorAmplitudeIn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean#L174). The attribute's comment: “tor amplitude in an interval”. References: SGA 6 I (5.2), “Tor-amp(F) ⊂ [m,n]”; SGA 4½ Rapport (4.5), “sheaf tor-dimension ≤ r”; SGA 4 XVII (4.1.9), “ringed space, (i)”.
+**`AlgebraicGeometry.RingedSpace.CertifiedDerivedSheafTensoring.HasTorAmplitudeIn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean#L174). The attribute's comment: “tor amplitude in an interval”. References: SGA 6 I (5.2), “Tor-amp(F) ⊂ [m,n]”; SGA 4½ Rapport (4.5), “sheaf tor-dimension ≤ r”; SGA 4 XVII (4.1.9), “ringed space, (i)”.
 
 > **Stacks 08CG (1).** An object `E` of `D(𝒪_X)` *has Tor amplitude in `[a, b]`* if, for every
 > `𝒪_X`-module `ℱ` and every integer `i` outside `[a, b]`, the cohomology sheaf
@@ -28,7 +28,7 @@ public def HasTorAmplitudeIn (D : CertifiedDerivedSheafTensoring.{d, u} X)
     (E : DerivedCategory (OXMod.{u, u} X)) (a b : ℤ) : Prop
 ```
 
-**`AlgebraicGeometry.RingedSpace.CertifiedDerivedSheafTensoring.HasFiniteTorDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean#L196). The attribute's comment: “finite tor dimension”. References: SGA 6 I (5.2), “finite flat amplitude”; SGA 4½ Rapport (4.5), “sheaf case, finite”.
+**`AlgebraicGeometry.RingedSpace.CertifiedDerivedSheafTensoring.HasFiniteTorDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean#L196). The attribute's comment: “finite tor dimension”. References: SGA 6 I (5.2), “finite flat amplitude”; SGA 4½ Rapport (4.5), “sheaf case, finite”.
 
 > **Stacks 08CG (2).** An object `E` of `D(𝒪_X)` *has finite Tor dimension* if it has Tor
 > amplitude in some interval `[a, b]`.
@@ -38,7 +38,7 @@ public def HasFiniteTorDimension (D : CertifiedDerivedSheafTensoring.{d, u} X)
     (E : DerivedCategory (OXMod.{u, u} X)) : Prop
 ```
 
-**`AlgebraicGeometry.RingedSpace.CertifiedDerivedSheafTensoring.HasTorDimensionLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean#L205). The attribute's comment: “tor dimension of a module”. References: SGA 4½ Rapport (4.5), “sheaf module case”; SGA 4 XVII (4.1.9), “ringed space, module”.
+**`AlgebraicGeometry.RingedSpace.CertifiedDerivedSheafTensoring.HasTorDimensionLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean#L205). The attribute's comment: “tor dimension of a module”. References: SGA 4½ Rapport (4.5), “sheaf module case”; SGA 4 XVII (4.1.9), “ringed space, module”.
 
 > **The last sentence of Stacks 08CG.** An `𝒪_X`-module `ℱ` *has Tor dimension at most `n`* if
 > `ℱ[0]`, viewed in `D(𝒪_X)`, has Tor amplitude in `[-n, 0]`.
@@ -48,7 +48,7 @@ public def HasTorDimensionLE (D : CertifiedDerivedSheafTensoring.{d, u} X)
     (F : OXMod.{u, u} X) (n : ℤ) : Prop
 ```
 
-**`AlgebraicGeometry.RingedSpace.LocallyHasFiniteTorDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean#L233). The attribute's comment: “locally finite tor dimension”.
+**`AlgebraicGeometry.RingedSpace.LocallyHasFiniteTorDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/TorDimension.lean#L233). The attribute's comment: “locally finite tor dimension”.
 
 > **Stacks 08CG (3).** An object `E` of `D(𝒪_X)` *locally has finite Tor dimension* if there is
 > an open covering `X = ⋃ U i` such that `E|_{U i}` has finite Tor dimension for every `i`.
@@ -64,7 +64,7 @@ public def LocallyHasFiniteTorDimension
     (E : DerivedCategory (OXMod.{u, u} X)) : Prop
 ```
 
-**`CategoryTheory.DerivedCategory.HasTorAmplitudeIn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/TorAmplitudeStalkwise.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/TorAmplitudeStalkwise.lean#L143). The attribute's comment: “tor amplitude in an interval, for a derived tensor bifunctor T over an arbitrary abelian category: H^i(E ⊗^L F) = 0 for every object F in degree 0 and every i outside [a, b]; at the derivedTensor of AlgebraicGeometry.RingedSpace.CertifiedDerivedSheafTensoring it is CertifiedDerivedSheafTensoring.HasTorAmplitudeIn by Iff.rfl”.
+**`CategoryTheory.DerivedCategory.HasTorAmplitudeIn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/TorAmplitudeStalkwise.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/TorAmplitudeStalkwise.lean#L143). The attribute's comment: “tor amplitude in an interval, for a derived tensor bifunctor T over an arbitrary abelian category: H^i(E ⊗^L F) = 0 for every object F in degree 0 and every i outside [a, b]; at the derivedTensor of AlgebraicGeometry.RingedSpace.CertifiedDerivedSheafTensoring it is CertifiedDerivedSheafTensoring.HasTorAmplitudeIn by Iff.rfl”.
 
 > **Stacks 08CG (1)**, for a derived tensor product given as a bifunctor on `D(A)`. An object
 > `E` of `D(A)` *has Tor amplitude in `[a, b]`* when `H^i(E ⊗^{L} F) = 0` for every object `F` of
@@ -90,7 +90,7 @@ public def HasTorAmplitudeIn
     (E : DerivedCategory A) (a b : ℤ) : Prop
 ```
 
-**`Stacks.Cohomology.TorAmplitude.HasTorAmplitude`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean#L113). The attribute's comment: “tor amplitude in an interval, at the derived tensor product of Tag 06YU”. References: SGA 6 I (5.2), “Tor-amp(F) ⊂ [m,n]”; SGA 4½ Rapport (4.5), “sheaf tor-dimension ≤ r”; SGA 4 XVII (4.1.9), “ringed space, (i)”.
+**`Stacks.Cohomology.TorAmplitude.HasTorAmplitude`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean#L113). The attribute's comment: “tor amplitude in an interval, at the derived tensor product of Tag 06YU”. References: SGA 6 I (5.2), “Tor-amp(F) ⊂ [m,n]”; SGA 4½ Rapport (4.5), “sheaf tor-dimension ≤ r”; SGA 4 XVII (4.1.9), “ringed space, (i)”.
 
 > An object of `D(O_X)` has Tor amplitude in `[a, b]` when its derived tensor product with
 > every `O_X`-module, placed in degree `0`, has vanishing cohomology in every degree outside
@@ -101,7 +101,7 @@ def HasTorAmplitude (X : RingedSpace.{u, u}) [HasDerivedCategory.{d} (OXMod.{u} 
     (E : DerivedCategory (OXMod.{u} X)) (a b : ℤ) : Prop
 ```
 
-**`Stacks.Cohomology.TorAmplitude.HasFiniteTorDimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean#L125). The attribute's comment: “finite tor dimension, at the derived tensor product of Tag 06YU”. References: SGA 6 I (5.2), “finite flat amplitude”; SGA 4½ Rapport (4.5), “sheaf case, finite”.
+**`Stacks.Cohomology.TorAmplitude.HasFiniteTorDimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean#L125). The attribute's comment: “finite tor dimension, at the derived tensor product of Tag 06YU”. References: SGA 6 I (5.2), “finite flat amplitude”; SGA 4½ Rapport (4.5), “sheaf case, finite”.
 
 > An object of `D(O_X)` has finite Tor dimension when it has Tor amplitude in some interval
 > `[a, b]`.
@@ -111,7 +111,7 @@ abbrev HasFiniteTorDimension (X : RingedSpace.{u, u}) [HasDerivedCategory.{d} (O
     (E : DerivedCategory (OXMod.{u} X)) : Prop
 ```
 
-**`Stacks.Cohomology.TorAmplitude.HasTorDimensionLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean#L134). The attribute's comment: “tor dimension of a module, at the derived tensor product of Tag 06YU”. References: SGA 4½ Rapport (4.5), “sheaf module case”; SGA 4 XVII (4.1.9), “ringed space, module”.
+**`Stacks.Cohomology.TorAmplitude.HasTorDimensionLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean#L134). The attribute's comment: “tor dimension of a module, at the derived tensor product of Tag 06YU”. References: SGA 4½ Rapport (4.5), “sheaf module case”; SGA 4 XVII (4.1.9), “ringed space, module”.
 
 > An `O_X`-module `F` has Tor dimension at most `n` when `F[0]`, viewed in `D(O_X)`, has Tor
 > amplitude in `[-n, 0]`.
@@ -121,7 +121,7 @@ def HasTorDimensionLE (X : RingedSpace.{u, u}) [HasDerivedCategory.{d} (OXMod.{u
     (F : OXMod.{u} X) (n : ℤ) : Prop
 ```
 
-**`Stacks.Cohomology.TorAmplitude.LocallyHasFiniteTorDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean#L165). The attribute's comment: “locally finite tor dimension, at the Tag 06YU tensor on each open subspace”.
+**`Stacks.Cohomology.TorAmplitude.LocallyHasFiniteTorDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean#L165). The attribute's comment: “locally finite tor dimension, at the Tag 06YU tensor on each open subspace”.
 
 > An object of `D(O_X)` locally has finite Tor dimension when its restriction to each member of
 > some open cover has finite Tor dimension.
@@ -138,7 +138,7 @@ def LocallyHasFiniteTorDimension (X : RingedSpace.{u, u})
 
 [Tag 08CH](https://stacks.math.columbia.edu/tag/08CH) in the Stacks Project.
 
-**`Stacks.Cohomology.TorAmplitude.FlatCokernel.isFlat_cokernel_of_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/FlatCokernel.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/FlatCokernel.lean#L203).
+**`Stacks.Cohomology.TorAmplitude.FlatCokernel.isFlat_cokernel_of_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/FlatCokernel.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/FlatCokernel.lean#L203).
 
 > **Tag 08CH.** The cokernel of the differential into the lowest degree of the Tor-amplitude
 > interval of a bounded above complex of flat `O_X`-modules is a flat `O_X`-module.
@@ -162,7 +162,7 @@ theorem isFlat_cokernel_of_hasTorAmplitude
 
 [Tag 08CI](https://stacks.math.columbia.edu/tag/08CI) in the Stacks Project.
 
-**`Stacks.Cohomology.TorAmplitude.BoundedFlatRepresentative.hasTorAmplitude_iff_exists_flat_representative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/BoundedFlatRepresentative.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/BoundedFlatRepresentative.lean#L280). References: SGA 4 XVII (4.1.9), “(i), (iii)”; SGA 6 I (5.1), “ringed space case”.
+**`Stacks.Cohomology.TorAmplitude.BoundedFlatRepresentative.hasTorAmplitude_iff_exists_flat_representative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/BoundedFlatRepresentative.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/BoundedFlatRepresentative.lean#L280). References: SGA 4 XVII (4.1.9), “(i), (iii)”; SGA 6 I (5.1), “ringed space case”.
 
 > An object of `D(O_X)` has Tor amplitude in `[a, b]` exactly when some complex
 > of flat `O_X`-modules vanishing in every degree outside `[a, b]` represents it.
@@ -182,7 +182,7 @@ theorem hasTorAmplitude_iff_exists_flat_representative (E : DerivedCategory (Mod
 
 [Tag 09U8](https://stacks.math.columbia.edu/tag/09U8) in the Stacks Project.
 
-**`Stacks.Cohomology.TorAmplitude.Pullback.hasTorAmplitude_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/DerivedPullback.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/DerivedPullback.lean#L96).
+**`Stacks.Cohomology.TorAmplitude.Pullback.hasTorAmplitude_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/DerivedPullback.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/DerivedPullback.lean#L96).
 
 > **Tag 09U8.** Derived pullback along a morphism of ringed spaces preserves Tor amplitude in
 > a fixed interval.
@@ -201,7 +201,7 @@ theorem hasTorAmplitude_derivedPullback (E : DerivedCategory (OXMod.{u} Y)) (a b
 
 [Tag 09U9](https://stacks.math.columbia.edu/tag/09U9) in the Stacks Project.
 
-**`Stacks.Cohomology.TorAmplitude.hasTorAmplitude_iff_forall_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/DerivedTensorStalk.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/DerivedTensorStalk.lean#L465). The attribute's comment: “Tor amplitude in [a, b] on a ringed space holds exactly when it holds at every stalk, for the derived tensor product of Stacks 06YU on D(O\_X) and the canonical derived tensor product of Stacks 0BYI over each stalk ring; the derived form of Stacks 01CB that the source proof cites is derivedTensorStalkIso in this file.”. References: SGA 6 I (5.6.2), “ringed space case”; SGA 4 XVII (4.2.8), “clause (iii)”.
+**`Stacks.Cohomology.TorAmplitude.hasTorAmplitude_iff_forall_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/DerivedTensorStalk.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/DerivedTensorStalk.lean#L465). The attribute's comment: “Tor amplitude in [a, b] on a ringed space holds exactly when it holds at every stalk, for the derived tensor product of Stacks 06YU on D(O\_X) and the canonical derived tensor product of Stacks 0BYI over each stalk ring; the derived form of Stacks 01CB that the source proof cites is derivedTensorStalkIso in this file.”. References: SGA 6 I (5.6.2), “ringed space case”; SGA 4 XVII (4.2.8), “clause (iii)”.
 
 > **Stacks 09U9.** Let `(X, 𝒪_X)` be a ringed space and `E` an object of `D(𝒪_X)`. Then `E`
 > has Tor amplitude in `[a, b]` if and only if, for every point `x` of `X`, the stalk `E_x` has
@@ -236,7 +236,7 @@ theorem hasTorAmplitude_iff_forall_stalk
           ).mapDerivedCategory.obj E) a b
 ```
 
-**`Stacks.Cohomology.TorAmplitude.hasTorAmplitude_iff_forall_hasTorAmplitudeCanonical_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/StalkwiseCriterion.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/StalkwiseCriterion.lean#L87). References: SGA 4 XVII (4.2.8), “(iii), special case”.
+**`Stacks.Cohomology.TorAmplitude.hasTorAmplitude_iff_forall_hasTorAmplitudeCanonical_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/StalkwiseCriterion.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/StalkwiseCriterion.lean#L87). References: SGA 4 XVII (4.2.8), “(iii), special case”.
 
 > **Stacks 09U9.** Let `(X, 𝒪_X)` be a ringed space and `E` an object of `D(𝒪_X)`. Then `E`
 > has Tor amplitude in `[a, b]` if and only if, for every point `x` of `X`, the stalk `E_x` has
@@ -262,7 +262,7 @@ theorem hasTorAmplitude_iff_forall_hasTorAmplitudeCanonical_stalk
 
 [Tag 08CJ](https://stacks.math.columbia.edu/tag/08CJ) in the Stacks Project.
 
-**`Stacks.Cohomology.TorAmplitude.FlatOpcycles.hasTorAmplitude_obj₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/TwoTermResolution.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/TwoTermResolution.lean#L143). The attribute's comment: “(1), at the ringed-space Tor-amplitude predicate”.
+**`Stacks.Cohomology.TorAmplitude.FlatOpcycles.hasTorAmplitude_obj₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/TwoTermResolution.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Transform/TwoTermResolution.lean#L143). The attribute's comment: “(1), at the ringed-space Tor-amplitude predicate”.
 
 > **Tag 08CJ (1) at the ringed-space Tor-amplitude predicate.** In a distinguished triangle
 > `K ⟶ L ⟶ M ⟶ K[1]` of `D(O_X)`, if `K` has Tor amplitude in `[a + 1, b + 1]` and `L` has Tor
@@ -282,7 +282,7 @@ theorem hasTorAmplitude_obj₃
     Stacks.Cohomology.TorAmplitude.HasTorAmplitude X T.obj₃ a b
 ```
 
-**`Stacks.Cohomology.TorAmplitude.FlatOpcycles.hasTorAmplitude_obj₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/MiddleTwoOutOfThree.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/MiddleTwoOutOfThree.lean#L67). The attribute's comment: “(2), at the ringed-space Tor-amplitude predicate”.
+**`Stacks.Cohomology.TorAmplitude.FlatOpcycles.hasTorAmplitude_obj₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/MiddleTwoOutOfThree.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/MiddleTwoOutOfThree.lean#L67). The attribute's comment: “(2), at the ringed-space Tor-amplitude predicate”.
 
 > **[Stacks, Tag 08CJ] (2) at the ringed-space Tor-amplitude predicate.** In a distinguished
 > triangle `K ⟶ L ⟶ M ⟶ K[1]` of `D(O_X)`, if `K` has Tor amplitude in `[a, b]` and `M` has Tor
@@ -299,7 +299,7 @@ theorem hasTorAmplitude_obj₂ (T : Triangle (DerivedCategory (Modules X)))
     Stacks.Cohomology.TorAmplitude.HasTorAmplitude X T.obj₂ a b
 ```
 
-**`TorAmplitude.hasTorAmplitude_obj₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Triangles.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Triangles.lean#L91). The attribute's comment: “(1)”. References: SGA 6 I (5.3), “partial”; SGA 6 III (3.2), “Triangulatedness clause”.
+**`TorAmplitude.hasTorAmplitude_obj₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Triangles.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Triangles.lean#L91). The attribute's comment: “(1)”. References: SGA 6 I (5.3), “partial”; SGA 6 III (3.2), “Triangulatedness clause”.
 
 > Stacks Tag 08CJ (1): in a distinguished triangle `K → L → M → K[1]`, if `K` has
 > tor-amplitude in `[a+1, b+1]` and `L` has tor-amplitude in `[a, b]`, then `M` has
@@ -313,7 +313,7 @@ theorem hasTorAmplitude_obj₃ (T : Triangle (DerivedCategory M))
     HasTorAmplitude derTensor T.obj₃ a b
 ```
 
-**`TorAmplitude.hasTorAmplitude_obj₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Triangles.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Triangles.lean#L114). The attribute's comment: “(2)”. References: SGA 6 I (5.3), “partial”; SGA 6 III (3.2), “Triangulatedness clause”.
+**`TorAmplitude.hasTorAmplitude_obj₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Triangles.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Triangles.lean#L114). The attribute's comment: “(2)”. References: SGA 6 I (5.3), “partial”; SGA 6 III (3.2), “Triangulatedness clause”.
 
 > Stacks Tag 08CJ (2): in a distinguished triangle `K → L → M → K[1]`, if `K` and `M`
 > both have tor-amplitude in `[a, b]`, then `L` has tor-amplitude in `[a, b]`.
@@ -326,7 +326,7 @@ theorem hasTorAmplitude_obj₂ (T : Triangle (DerivedCategory M))
     HasTorAmplitude derTensor T.obj₂ a b
 ```
 
-**`TorAmplitude.hasTorAmplitude_obj₁`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Triangles.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Triangles.lean#L137). The attribute's comment: “(3)”. References: SGA 6 I (5.3), “partial”; SGA 6 III (3.2), “Triangulatedness clause”.
+**`TorAmplitude.hasTorAmplitude_obj₁`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Triangles.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Triangles.lean#L137). The attribute's comment: “(3)”. References: SGA 6 I (5.3), “partial”; SGA 6 III (3.2), “Triangulatedness clause”.
 
 > Stacks Tag 08CJ (3): in a distinguished triangle `K → L → M → K[1]`, if `L` has
 > tor-amplitude in `[a+1, b+1]` and `M` has tor-amplitude in `[a, b]`, then `K` has
@@ -344,7 +344,7 @@ theorem hasTorAmplitude_obj₁ (T : Triangle (DerivedCategory M))
 
 [Tag 09J4](https://stacks.math.columbia.edu/tag/09J4) in the Stacks Project.
 
-**`Stacks.Cohomology.TorAmplitude.Tensor.hasTorAmplitude_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/TensorProduct.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/TensorProduct.lean#L157).
+**`Stacks.Cohomology.TorAmplitude.Tensor.hasTorAmplitude_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/TensorProduct.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/TensorProduct.lean#L157).
 
 > If `K` has Tor amplitude in `[a, b]` and `L` has Tor amplitude in `[c, d]`, then
 > `K ⊗^L_{O_X} L` has Tor amplitude in `[a + c, b + d]`.
@@ -361,7 +361,7 @@ theorem hasTorAmplitude_derivedTensor (K L : DerivedCategory (Modules X)) (a b c
 
 [Tag 08CK](https://stacks.math.columbia.edu/tag/08CK) in the Stacks Project.
 
-**`Stacks.Cohomology.TorAmplitude.hasTorAmplitude_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/BiproductSum.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/BiproductSum.lean#L68). The attribute's comment: “from the summands to the sum, at the ringed-space Tor-amplitude predicate”.
+**`Stacks.Cohomology.TorAmplitude.hasTorAmplitude_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/BiproductSum.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/BiproductSum.lean#L68). The attribute's comment: “from the summands to the sum, at the ringed-space Tor-amplitude predicate”.
 
 > **[Stacks, Tag 08CK], from the summands to the sum.** If `K` and `L` have Tor amplitude in
 > `[a, b]` then so does `K ⊞ L`.
@@ -375,7 +375,7 @@ theorem hasTorAmplitude_biprod (a b : ℤ) (K L : DerivedCategory (OXMod.{u, u} 
     HasTorAmplitude X (K ⊞ L) a b
 ```
 
-**`Stacks.Cohomology.TorAmplitude.hasFiniteTorDimension_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/BiproductSum.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/BiproductSum.lean#L78). The attribute's comment: “finite Tor dimension, from the summands to the sum”.
+**`Stacks.Cohomology.TorAmplitude.hasFiniteTorDimension_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/BiproductSum.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/BiproductSum.lean#L78). The attribute's comment: “finite Tor dimension, from the summands to the sum”.
 
 > **Finite Tor dimension passes from two summands to their sum.** The two intervals are
 > merged.
@@ -386,7 +386,7 @@ theorem hasFiniteTorDimension_biprod (K L : DerivedCategory (OXMod.{u, u} X))
     HasFiniteTorDimension X (K ⊞ L)
 ```
 
-**`Stacks.TorAmplitude.hasTorAmplitude_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Defs.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Defs.lean#L189).
+**`Stacks.TorAmplitude.hasTorAmplitude_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Defs.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/Defs.lean#L190).
 
 > **Statement 1 (Tag 08CK / Lemma 20.48.8).**  Let `(X, 𝒪_X)` be a ringed space
 > and `a ≤ b`.  We work with THE derived tensor product `- ⊗^L_{𝒪_X} -` on
@@ -416,4 +416,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.48, Tag 08CF](https://stacks.math.columbia.edu/tag/08CF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

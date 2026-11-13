@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.14 Absolute integral closure
 
-Section 15.14 of the Stacks Project, [Tag 0DCK](https://stacks.math.columbia.edu/tag/0DCK). 8 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.14 of the Stacks Project, [Tag 0DCK](https://stacks.math.columbia.edu/tag/0DCK). 8 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DCL, a definition
 
 [Tag 0DCL](https://stacks.math.columbia.edu/tag/0DCL) in the Stacks Project.
 
-**`IsAbsolutelyIntegrallyClosed`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean#L61).
+**`IsAbsolutelyIntegrallyClosed`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean#L61).
 
 > **Stacks 0DCL.**
 > A ring `A` is *absolutely integrally closed* if every monic polynomial in `A[X]` is the product
@@ -28,7 +28,7 @@ def IsAbsolutelyIntegrallyClosed (A : Type*) [CommRing A] : Prop
 
 [Tag 0DCM](https://stacks.math.columbia.edu/tag/0DCM) in the Stacks Project.
 
-**`isAbsolutelyIntegrallyClosed_iff_exists_root`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean#L133).
+**`isAbsolutelyIntegrallyClosed_iff_exists_root`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean#L133).
 
 > **Stacks 0DCM**.
 > A ring `A` is absolutely integrally closed if and only if every monic polynomial of degree at least
@@ -44,7 +44,7 @@ theorem isAbsolutelyIntegrallyClosed_iff_exists_root (A : Type*) [CommRing A] :
 
 [Tag 0DCN](https://stacks.math.columbia.edu/tag/0DCN) in the Stacks Project.
 
-**`isAbsolutelyIntegrallyClosed_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean#L175). The attribute's comment: “(1)”.
+**`isAbsolutelyIntegrallyClosed_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean#L175). The attribute's comment: “(1)”.
 
 > **Stacks 0DCN** (part 1).
 > If `A` is absolutely integrally closed, then so is the quotient `A ⧸ I` for every ideal `I`.
@@ -54,7 +54,7 @@ theorem isAbsolutelyIntegrallyClosed_quotient (A : Type*) [CommRing A] (I : Idea
     (hA : IsAbsolutelyIntegrallyClosed A) : IsAbsolutelyIntegrallyClosed (A ⧸ I)
 ```
 
-**`isAbsolutelyIntegrallyClosed_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean#L191). The attribute's comment: “(2)”.
+**`isAbsolutelyIntegrallyClosed_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean#L191). The attribute's comment: “(2)”.
 
 > **Stacks 0DCN** (part 2).
 > If `A` is absolutely integrally closed, then so is every localization `B` of `A` at a submonoid
@@ -70,7 +70,7 @@ theorem isAbsolutelyIntegrallyClosed_localization (A : Type*) [CommRing A] (S : 
 
 [Tag 0DCP](https://stacks.math.columbia.edu/tag/0DCP) in the Stacks Project.
 
-**`isAbsolutelyIntegrallyClosed_of_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean#L230).
+**`isAbsolutelyIntegrallyClosed_of_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean#L230).
 
 > **Stacks 0DCP**.
 > Let `B = S⁻¹A` be the localization of `A` at a submonoid `S` of nonzerodivisors. If `B` is
@@ -88,7 +88,7 @@ theorem isAbsolutelyIntegrallyClosed_of_localization (A : Type*) [CommRing A] (B
 
 [Tag 0DCQ](https://stacks.math.columbia.edu/tag/0DCQ) in the Stacks Project.
 
-**`isAbsolutelyIntegrallyClosed_iff_isAlgClosed_fractionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean#L264).
+**`isAbsolutelyIntegrallyClosed_iff_isAlgClosed_fractionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed.lean#L264).
 
 > **Stacks 0DCQ**.
 > A normal domain is absolutely integrally closed if and only if its fraction field is
@@ -105,7 +105,7 @@ theorem isAbsolutelyIntegrallyClosed_iff_isAlgClosed_fractionRing
 
 [Tag 0DCR](https://stacks.math.columbia.edu/tag/0DCR) in the Stacks Project.
 
-**`exists_absolutelyIntegrallyClosed_extension_as_filteredColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed/Extension.lean, line 1409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed/Extension.lean#L1409).
+**`exists_absolutelyIntegrallyClosed_extension_as_filteredColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed/Extension.lean, line 1409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AbsolutelyIntegrallyClosed/Extension.lean#L1409).
 
 > **Stacks 0DCR.** Every commutative ring has an injective extension which is a filtered
 > colimit of finite free algebras, is free as a module over the original ring, and is absolutely
@@ -127,7 +127,7 @@ theorem exists_absolutelyIntegrallyClosed_extension_as_filteredColimit
 
 [Tag 0DCS](https://stacks.math.columbia.edu/tag/0DCS) in the Stacks Project.
 
-**`IsAbsolutelyIntegrallyClosed.isStrictlyHenselian_atPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/AbsolutelyIntegrallyClosed.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/AbsolutelyIntegrallyClosed.lean#L436).
+**`IsAbsolutelyIntegrallyClosed.isStrictlyHenselian_atPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/AbsolutelyIntegrallyClosed.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/AbsolutelyIntegrallyClosed.lean#L436).
 
 > **Stacks 0DCS**.
 > The localization of an absolutely integrally closed ring at a prime ideal is strictly
@@ -146,7 +146,7 @@ theorem IsAbsolutelyIntegrallyClosed.isStrictlyHenselian_atPrime
 
 [Tag 0DCT](https://stacks.math.columbia.edu/tag/0DCT) in the Stacks Project.
 
-**`henselianPair_iff_of_absolutelyIntegrallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/AbsolutelyIntegrallyClosed.lean, line 424](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/AbsolutelyIntegrallyClosed.lean#L424).
+**`henselianPair_iff_of_absolutelyIntegrallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/AbsolutelyIntegrallyClosed.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/AbsolutelyIntegrallyClosed.lean#L424).
 
 > **Stacks 0DCT**.
 > Let `A` be an absolutely integrally closed ring and `I ⊆ A` an ideal. Then `(A, I)` is a
@@ -168,4 +168,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.14, Tag 0DCK](https://stacks.math.columbia.edu/tag/0DCK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Reciprocal sums of doubly exponential sequences
 
-19 results, 7 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html).
+19 results, 7 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html).
 
 ## Pseudo-greedy remainder sequence
 
@@ -22,7 +22,7 @@ Here $0^{-1}$ and $1/0$ are read as $0$.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Section 2 (definitions of the pseudo-greedy expansion and its remainder sequence).
 
-Formalized by `MetaMathlibExt.pseudoGreedyRemainder`, a definition declared in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-remainder).
+Formalized by `MetaMathlibExt.pseudoGreedyRemainder`, a definition declared in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-remainder).
 
 ## Pseudo-greedy expansion
 
@@ -37,7 +37,7 @@ Here $0^{-1}$ is read as $0$.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Section 2 (definition of the pseudo-greedy expansion).
 
-Formalized by `MetaMathlibExt.pseudoGreedyExpansion`, a definition declared in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-expansion).
+Formalized by `MetaMathlibExt.pseudoGreedyExpansion`, a definition declared in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-expansion).
 
 ## Gap sequence of the pseudo-greedy expansion
 
@@ -51,7 +51,7 @@ Here $0^{-1}$ is read as $0$.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Section 2 (definition of the gap sequence).
 
-Formalized by `MetaMathlibExt.pseudoGreedyGap`, a definition declared in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-gap).
+Formalized by `MetaMathlibExt.pseudoGreedyGap`, a definition declared in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-gap).
 
 ## Remainder recursion
 
@@ -64,7 +64,7 @@ Here $1/0$ is read as $0$.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Section 2 (definition of the remainder sequence).
 
-Formalized by `MetaMathlibExt.pseudoGreedyRemainder_succ`, a theorem declared in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-remainder-succ).
+Formalized by `MetaMathlibExt.pseudoGreedyRemainder_succ`, a theorem declared in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-remainder-succ).
 
 ## The pseudo-greedy expansion of 1 starts with 2
 
@@ -75,7 +75,7 @@ pseudo-greedy expansion of $1$ equals $2$, the first Sylvester number.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Example 1 (the expansion of `1` is the Sylvester sequence).
 
-Formalized by `MetaMathlibExt.pseudoGreedyExpansion_one_zero`, a theorem declared in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-expansion-one-zero).
+Formalized by `MetaMathlibExt.pseudoGreedyExpansion_one_zero`, a theorem declared in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-expansion-one-zero).
 
 ## Second term of the pseudo-greedy expansion of $1$
 
@@ -88,7 +88,7 @@ The remainder after the first term $a_0 = 2$ is $1 - 1/2 = 1/2$.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Example 1 (the expansion of `1` is the Sylvester sequence).
 
-Formalized by `MetaMathlibExt.pseudoGreedyExpansion_one_one`, a theorem declared in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-expansion-one-one).
+Formalized by `MetaMathlibExt.pseudoGreedyExpansion_one_one`, a theorem declared in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-expansion-one-one).
 
 ## The first gap of the expansion of 1 vanishes
 
@@ -100,7 +100,7 @@ first term of the expansion is $a_0 = 2$, so $\varepsilon_0 = x_0^{-1} + 1 - a_0
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Example 1 (`ε_n = 0` for the expansion of `1`).
 
-Formalized by `MetaMathlibExt.pseudoGreedyGap_one_zero`, a theorem declared in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-gap-one-zero).
+Formalized by `MetaMathlibExt.pseudoGreedyGap_one_zero`, a theorem declared in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-gap-one-zero).
 
 ## Recovering a doubly exponential sequence from its reciprocal sum
 
@@ -116,7 +116,7 @@ $|x_n^{-1} + \beta - a_n| \to 0$.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.eq_round_inv_remainder_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#eq-round-inv-remainder-add).
+Stated but not proved: `MetaMathlibExt.eq_round_inv_remainder_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#eq-round-inv-remainder-add).
 
 ## Characterization of the Sylvester sequence
 
@@ -129,7 +129,7 @@ sequence with parameter $1$, that is, the Sylvester sequence $2, 3, 7, 43, \ldot
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.eq_sylvester_of_ratio_mem_of_hasSum_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#eq-sylvester-of-ratio-mem-of-has-sum-one).
+Stated but not proved: `MetaMathlibExt.eq_sylvester_of_ratio_mem_of_hasSum_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#eq-sylvester-of-ratio-mem-of-has-sum-one).
 
 ## Characterization of the denominators of the Millin series
 
@@ -143,7 +143,7 @@ $F_2, F_4, F_8, \ldots$.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.eq_fib_two_pow_of_ratio_le_of_hasSum_millin` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#eq-fib-two-pow-of-ratio-le-of-has-sum-mi).
+Stated but not proved: `MetaMathlibExt.eq_fib_two_pow_of_ratio_le_of_hasSum_millin` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#eq-fib-two-pow-of-ratio-le-of-has-sum-mi).
 
 ## Doubly exponential floors are Type 2 irrationality sequences for all but countably many bases
 
@@ -157,7 +157,7 @@ the series $\sum_n 1 / b_n$ does not converge to a rational number.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Theorem 2 and the definition of Type 2 irrationality sequences preceding it.
 
-Stated but not proved: `MetaMathlibExt.countable_not_type2IrrationalitySequence_floor_pow_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#countable-not-type2-irrationality-sequen).
+Stated but not proved: `MetaMathlibExt.countable_not_type2IrrationalitySequence_floor_pow_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#countable-not-type2-irrationality-sequen).
 
 ## Convergence of the pseudo-greedy expansion
 
@@ -168,7 +168,7 @@ pseudo-greedy expansion $(a_n)_{n \ge 0}$ of $r$ satisfies $\sum_n 1 / a_n = r$.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.hasSum_one_div_pseudoGreedyExpansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#has-sum-one-div-pseudo-greedy-expansion).
+Stated but not proved: `MetaMathlibExt.hasSum_one_div_pseudoGreedyExpansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#has-sum-one-div-pseudo-greedy-expansion).
 
 ## Recursion for the pseudo-greedy expansion
 
@@ -182,7 +182,7 @@ $$a_{n+1} = \frac{a_n^2}{1 - \varepsilon_n} - a_n + (1 - \varepsilon_{n+1}).$$
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.pseudoGreedyExpansion_succ_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-expansion-succ-eq).
+Stated but not proved: `MetaMathlibExt.pseudoGreedyExpansion_succ_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-expansion-succ-eq).
 
 ## A vanishing gap stays zero
 
@@ -194,7 +194,7 @@ then $\varepsilon_{n+1} = 0$.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.pseudoGreedyGap_succ_eq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-gap-succ-eq-zero).
+Stated but not proved: `MetaMathlibExt.pseudoGreedyGap_succ_eq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-gap-succ-eq-zero).
 
 ## Structure of the pseudo-greedy expansion of a rational
 
@@ -211,7 +211,7 @@ $n \to \infty$, $c_n = O(a_0 \cdots a_{n-1} / a_n)$ and $c_n = O(1.5^n)$.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.pseudoGreedyExpansion_rational_structure` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-expansion-rational-structu).
+Stated but not proved: `MetaMathlibExt.pseudoGreedyExpansion_rational_structure` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-expansion-rational-structu).
 
 ## Eventual vanishing of the pseudo-greedy gaps of a rational number
 
@@ -226,7 +226,7 @@ Then $\varepsilon_n = 0$ for all sufficiently large $n$.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.eventually_pseudoGreedyGap_eq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#eventually-pseudo-greedy-gap-eq-zero).
+Stated but not proved: `MetaMathlibExt.eventually_pseudoGreedyGap_eq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#eventually-pseudo-greedy-gap-eq-zero).
 
 ## Tails that are pseudo-greedy expansions
 
@@ -240,7 +240,7 @@ expansion tends to $0$.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.exists_tail_eq_pseudoGreedyExpansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#exists-tail-eq-pseudo-greedy-expansion).
+Stated but not proved: `MetaMathlibExt.exists_tail_eq_pseudoGreedyExpansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#exists-tail-eq-pseudo-greedy-expansion).
 
 ## Erdős–Straus and Badea criterion for the Sylvester recurrence
 
@@ -256,7 +256,7 @@ $a_{n+1} = a_n^2 - a_n + 1$ for all sufficiently large $n$.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.eventually_sylvester_recurrence_of_rational_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#eventually-sylvester-recurrence-of-ratio).
+Stated but not proved: `MetaMathlibExt.eventually_sylvester_recurrence_of_rational_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#eventually-sylvester-recurrence-of-ratio).
 
 ## Koizumi's conjecture is equivalent to the Erdős–Graham question
 
@@ -271,7 +271,7 @@ all sufficiently large $n$.
 
 - Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Theorem 3, with Conjecture 1 and Question 1.
 
-Stated but not proved: `MetaMathlibExt.pseudoGreedy_conjecture_iff_erdos_graham_question` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-conjecture-iff-erdos-graha).
+Stated but not proved: `MetaMathlibExt.pseudoGreedy_conjecture_iff_erdos_graham_question` is written with `theorem_wanted` in [WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DoublyExponentialReciprocalSumWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html#pseudo-greedy-conjecture-iff-erdos-graha).
 
 ## Depends on
 
@@ -280,4 +280,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Reciprocal sums of doubly exponential sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/reciprocal-sums-of-doubly-exponential-sequences)

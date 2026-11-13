@@ -1,36 +1,45 @@
 ---
 declaration: section
 origin: cited
-lean: IsEmbeddedAssociatedPrime, Module.exists_isGreatest_isNowhereDense_support, Module.isGreatest_isNowhereDense_support_localized', hasNoEmbeddedAssociatedPrimes_quotient_annihilator
+lean: IsEmbeddedAssociatedPrimeStacks, IsEmbeddedPrimeStacks, Module.exists_isGreatest_isNowhereDense_support, Module.isGreatest_isNowhereDense_support_localized', hasNoEmbeddedAssociatedPrimes_quotient_annihilator
 statement: formalized
 proof: formalized
 ---
 
 # 10.67 Embedded primes
 
-Section 10.67 of the Stacks Project, [Tag 02M4](https://stacks.math.columbia.edu/tag/02M4). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.67 of the Stacks Project, [Tag 02M4](https://stacks.math.columbia.edu/tag/02M4). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02M5, a definition
 
 [Tag 02M5](https://stacks.math.columbia.edu/tag/02M5) in the Stacks Project.
 
-**`IsEmbeddedAssociatedPrime`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean, line 899](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean#L899).
+**`IsEmbeddedAssociatedPrimeStacks`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean, line 931](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean#L931). The attribute's comment: “(1) embedded associated primes of a module”.
 
-> Definition 1 (Embedded associated prime). A prime `𝔭` is an *embedded
-> associated prime of `M`* if it is an associated prime of `M` that is not minimal
-> among the associated primes of `M`, i.e. there is an associated prime `𝔮` of `M`
-> with `𝔮 ⊊ 𝔭`.
+> **Stacks 02M5 (1).** Let `R` be a ring and `M` an `R`-module. A prime `𝔭` is an
+> *embedded associated prime of `M`* if it is an associated prime of `M` (Stacks 00LA: `𝔭` is
+> exactly the annihilator of some element of `M`) which is not minimal among the associated
+> primes of `M`.
 
 ```lean
-def IsEmbeddedAssociatedPrime
+def IsEmbeddedAssociatedPrimeStacks
     (R M : Type*) [CommRing R] [AddCommGroup M] [Module R M] (𝔭 : Ideal R) : Prop
+```
+
+**`IsEmbeddedPrimeStacks`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean, line 938](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean#L938). The attribute's comment: “(2) embedded primes of a ring”.
+
+> **Stacks 02M5 (2).** The *embedded primes of a ring* `R` are the embedded associated
+> primes of `R` regarded as a module over itself.
+
+```lean
+def IsEmbeddedPrimeStacks (R : Type*) [CommRing R] (𝔭 : Ideal R) : Prop
 ```
 
 ## Tag 02M6, a lemma
 
 [Tag 02M6](https://stacks.math.columbia.edu/tag/02M6) in the Stacks Project.
 
-**`Module.exists_isGreatest_isNowhereDense_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean#L421).
+**`Module.exists_isGreatest_isNowhereDense_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean#L422).
 
 > Let `R` be a Noetherian ring and `M` a finite `R`-module. The set of `R`-submodules
 > `K ⊆ M` whose support is nowhere dense in `Supp(M)` has a largest element `K`, and the
@@ -54,7 +63,7 @@ public theorem exists_isGreatest_isNowhereDense_support :
 
 [Tag 02M7](https://stacks.math.columbia.edu/tag/02M7) in the Stacks Project.
 
-**`Module.isGreatest_isNowhereDense_support_localized'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean, line 859](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean#L859).
+**`Module.isGreatest_isNowhereDense_support_localized'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean, line 860](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean#L860).
 
 > Let `R` be a Noetherian ring, `M` a finite `R`-module, and let `K ⊆ M` be the largest
 > `R`-submodule whose support is nowhere dense in `Supp(M)`, as produced by
@@ -78,7 +87,7 @@ public theorem isGreatest_isNowhereDense_support_localized' (p : Submonoid R)
 
 [Tag 02M8](https://stacks.math.columbia.edu/tag/02M8) in the Stacks Project.
 
-**`hasNoEmbeddedAssociatedPrimes_quotient_annihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean, line 980](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean#L980).
+**`hasNoEmbeddedAssociatedPrimes_quotient_annihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean, line 1027](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Embedded.lean#L1027).
 
 > **Theorem (Stacks Tag 02M8).** Let `R` be a Noetherian commutative ring and
 > `M` a finite `R`-module having no embedded associated primes. Let `I` be the
@@ -101,4 +110,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.67, Tag 02M4](https://stacks.math.columbia.edu/tag/02M4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

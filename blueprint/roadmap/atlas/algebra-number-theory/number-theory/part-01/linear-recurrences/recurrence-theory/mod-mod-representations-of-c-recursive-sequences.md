@@ -7,7 +7,7 @@ statement: formalized
 
 # Mod-mod representations of C-recursive sequences
 
-10 results, 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html).
+10 results, 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html).
 
 ## Term extraction from the generating function under cube-root growth
 
@@ -26,7 +26,7 @@ strictly weaker, so this statement is stronger than the paper's.
 
 - M. Prunescu and J. M. Shunia, *On Modular Representations of C-Recursive Integer Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.3, Theorem 2, second part.
 
-Stated but not proved: `MetaMathlibExt.generating_function_term_extraction_of_one_third_growth` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#generating-function-term-extraction-of-o).
+Stated but not proved: `MetaMathlibExt.generating_function_term_extraction_of_one_third_growth` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#generating-function-term-extraction-of-o).
 
 ## Term extraction from the generating function persists in larger bases
 
@@ -48,7 +48,7 @@ which makes the series at $r^{-n}$ converge.
 
 - M. Prunescu and J. M. Shunia, *On Modular Representations of C-Recursive Integer Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.3, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.generating_function_term_representation_mono_base` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#generating-function-term-representation).
+Stated but not proved: `MetaMathlibExt.generating_function_term_representation_mono_base` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#generating-function-term-representation).
 
 ## Floor quotient of a negated non-multiple
 
@@ -60,7 +60,7 @@ $-\lfloor -A/B \rfloor = \lfloor A/B \rfloor + 1$.
 
 - M. Prunescu and J. M. Shunia, *On Modular Representations of C-Recursive Integer Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.3, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.neg_ediv_eq_ediv_add_one_of_not_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#neg-ediv-eq-ediv-add-one-of-not-dvd).
+Stated but not proved: `MetaMathlibExt.neg_ediv_eq_ediv_add_one_of_not_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#neg-ediv-eq-ediv-add-one-of-not-dvd).
 
 ## Pulling a factor out of a remainder
 
@@ -71,7 +71,7 @@ Then $(ay) \bmod C = a \cdot (y \bmod C)$.
 
 - M. Prunescu and J. M. Shunia, *On Modular Representations of C-Recursive Integer Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.3, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.mul_mod_eq_mul_mod_of_mul_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#mul-mod-eq-mul-mod-of-mul-lt).
+Stated but not proved: `MetaMathlibExt.mul_mod_eq_mul_mod_of_mul_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#mul-mod-eq-mul-mod-of-mul-lt).
 
 ## Adding one to a remainder without wrap-around
 
@@ -83,7 +83,7 @@ modulo $C$, then $(x + 1) \bmod C = (x \bmod C) + 1$.
 
 - M. Prunescu and J. M. Shunia, *On Modular Representations of C-Recursive Integer Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.3, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.add_one_mod_eq_mod_add_one_of_ne` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#add-one-mod-eq-mod-add-one-of-ne).
+Stated but not proved: `MetaMathlibExt.add_one_mod_eq_mod_add_one_of_ne` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#add-one-mod-eq-mod-add-one-of-ne).
 
 ## Remainder of a remainder, negative residue case
 
@@ -98,7 +98,7 @@ $(A \bmod B) \bmod C = |a| \cdot (\lfloor A/B \rfloor \bmod C)$.
 
 - M. Prunescu and J. M. Shunia, *On Modular Representations of C-Recursive Integer Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.3, Lemma 7(i).
 
-Stated but not proved: `MetaMathlibExt.emod_emod_eq_abs_mul_ediv_emod_of_neg` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#emod-emod-eq-abs-mul-ediv-emod-of-neg).
+Stated but not proved: `MetaMathlibExt.emod_emod_eq_abs_mul_ediv_emod_of_neg` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#emod-emod-eq-abs-mul-ediv-emod-of-neg).
 
 ## Remainder of a remainder, positive residue case
 
@@ -113,7 +113,7 @@ $((-A) \bmod B) \bmod C = a \cdot \bigl(1 + (\lfloor A/B \rfloor \bmod C)\bigr)$
 
 - M. Prunescu and J. M. Shunia, *On Modular Representations of C-Recursive Integer Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.3, Lemma 7(ii).
 
-Stated but not proved: `MetaMathlibExt.neg_emod_emod_eq_mul_one_add_ediv_emod_of_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#neg-emod-emod-eq-mul-one-add-ediv-emod-o).
+Stated but not proved: `MetaMathlibExt.neg_emod_emod_eq_mul_one_add_ediv_emod_of_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#neg-emod-emod-eq-mul-one-add-ediv-emod-o).
 
 ## Mod-mod representation of C-recursive sequences, negative free term
 
@@ -138,7 +138,7 @@ $$|\alpha| \, t_n = \bigl( P_r(n) \bmod \tilde B(r^n) \bigr) \bmod r^n.$$
 
 - M. Prunescu and J. M. Shunia, *On Modular Representations of C-Recursive Integer Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.3, Theorem 8, negative free term.
 
-Stated but not proved: `MetaMathlibExt.exists_mod_mod_representation_of_neg_free_term` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#exists-mod-mod-representation-of-neg-fre).
+Stated but not proved: `MetaMathlibExt.exists_mod_mod_representation_of_neg_free_term` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#exists-mod-mod-representation-of-neg-fre).
 
 ## Mod-mod representation of C-recursive sequences, positive free term
 
@@ -166,7 +166,7 @@ right side is $0$.
 
 - M. Prunescu and J. M. Shunia, *On Modular Representations of C-Recursive Integer Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.3, Theorem 8, positive free term.
 
-Stated but not proved: `MetaMathlibExt.exists_mod_mod_representation_of_pos_free_term` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#exists-mod-mod-representation-of-pos-fre).
+Stated but not proved: `MetaMathlibExt.exists_mod_mod_representation_of_pos_free_term` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#exists-mod-mod-representation-of-pos-fre).
 
 ## Single-formula mod-mod representation of C-recursive sequences
 
@@ -197,7 +197,7 @@ side is $-1$.
 
 - M. Prunescu and J. M. Shunia, *On Modular Representations of C-Recursive Integer Sequences*, Journal of Integer Sequences 28 (2025), Article 25.5.3, Corollary 9.
 
-Stated but not proved: `MetaMathlibExt.exists_mod_mod_representation_sign` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#exists-mod-mod-representation-sign).
+Stated but not proved: `MetaMathlibExt.exists_mod_mod_representation_sign` is written with `theorem_wanted` in [WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CRecursiveModularRepresentationsWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html#exists-mod-mod-representation-sign).
 
 ## Depends on
 
@@ -206,4 +206,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Mod-mod representations of C-recursive sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mod-mod-representations-of-c-recursive-sequences)

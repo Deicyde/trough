@@ -8,7 +8,7 @@ proof: formalized
 
 # 17.29 Finite order differential operators
 
-Section 17.29 of the Stacks Project, [Tag 0G3P](https://stacks.math.columbia.edu/tag/0G3P). 7 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 17.29 of the Stacks Project, [Tag 0G3P](https://stacks.math.columbia.edu/tag/0G3P). 7 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G3Q, a definition
 
@@ -16,7 +16,7 @@ Section 17.29 of the Stacks Project, [Tag 0G3P](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`DiffOp.IsGlobalDiffOpOfOrder`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperatorsOrder.lean#L185), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean#L72) (StacksFrontier).
+- [`DiffOp.IsGlobalDiffOpOfOrder`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperatorsOrder.lean#L185), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean#L72) (StacksFrontier).
 
 ## Tag 0G3R, a lemma
 
@@ -24,7 +24,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`DiffOp.isGlobalDiffOpOfOrder_comp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperatorsOrder.lean#L523), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialOperatorsRingedSpace.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialOperatorsRingedSpace.lean#L40) (StacksFrontier): “the ringed-space case of 09CS”.
+- [`DiffOp.isGlobalDiffOpOfOrder_comp`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperatorsOrder.lean#L523), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialOperatorsRingedSpace.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialOperatorsRingedSpace.lean#L40) (StacksFrontier): “the ringed-space case of 09CS”.
 
 ## Tag 0G3S, a lemma
 
@@ -32,7 +32,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.SheafOfModules.differentialOperatorsFunctor_isCorepresentable`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean#L571), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialOperatorsRingedSpace.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialOperatorsRingedSpace.lean#L42) (StacksFrontier): “the ringed-space case of 09CT”.
+- [`AlgebraicGeometry.SheafOfModules.differentialOperatorsFunctor_isCorepresentable`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean#L571), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialOperatorsRingedSpace.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialOperatorsRingedSpace.lean#L42) (StacksFrontier): “the ringed-space case of 09CT”.
 
 ## Tag 0G3T, a definition
 
@@ -40,13 +40,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.SheafOfModules.moduleOfPrincipalParts`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean#L164), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsRingedSpace.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsRingedSpace.lean#L33) (StacksFrontier): “the ringed-space case of 09CU”.
+- [`AlgebraicGeometry.SheafOfModules.moduleOfPrincipalParts`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean#L164), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsRingedSpace.lean, line 33](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsRingedSpace.lean#L33) (StacksFrontier): “the ringed-space case of 09CU”.
 
 ## Tag 0G3U, a lemma
 
 [Tag 0G3U](https://stacks.math.columbia.edu/tag/0G3U) in the Stacks Project.
 
-**`Stacks.Sheaves.PrincipalParts.principalPartsSheafification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSheafification.lean, line 697](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSheafification.lean#L697). References: EGA IV (16.4.24), “(ii)”.
+**`Stacks.Sheaves.PrincipalParts.principalPartsSheafification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSheafification.lean, line 697](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/PrincipalPartsSheafification.lean#L697). References: EGA IV (16.4.24), “(ii)”.
 
 > **Stacks Project, Tag 0G3U**, which read as a statement about the sheaf of principal parts
 > is **Tag 09CV**. Let `φ : O₁ ⟶ O₂` be a morphism of presheaves of
@@ -97,7 +97,7 @@ noncomputable def principalPartsSheafification [HasWeakSheafify J CommRingCat.{u
 
 [Tag 0G3V](https://stacks.math.columbia.edu/tag/0G3V) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.nonempty_principalPartsSequence_opens`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Differentials/PrincipalParts.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/Differentials/PrincipalParts.lean#L77). References: SGA 6 II (AppII.1.2.4), “n = 1, top. space”.
+**`AlgebraicGeometry.SheafOfModules.nonempty_principalPartsSequence_opens`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Differentials/PrincipalParts.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/Differentials/PrincipalParts.lean#L77). References: SGA 6 II (AppII.1.2.4), “n = 1, top. space”.
 
 > **Stacks Project, Tag 0G3V.** For a homomorphism `φ : O₁ ⟶ O₂` of sheaves of commutative
 > rings on a topological space, the sheaves of first principal parts of the sheaves of
@@ -120,7 +120,7 @@ theorem nonempty_principalPartsSequence_opens {X : TopCat.{u}}
 
 Declarations registered for the tag:
 
-- [`DiffOp.IsGlobalDiffOpOfOrder`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperatorsOrder.lean#L185), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean#L73) (StacksFrontier): “differential operators on X/S, for the map f♯ : f⁻¹𝒪\_S ⟶ 𝒪\_X”.
+- [`DiffOp.IsGlobalDiffOpOfOrder`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperatorsOrder.lean#L185), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean#L73) (StacksFrontier): “differential operators on X/S, for the map f♯ : f⁻¹𝒪\_S ⟶ 𝒪\_X”.
 
 ## Depends on
 
@@ -129,4 +129,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 17.29, Tag 0G3P](https://stacks.math.columbia.edu/tag/0G3P)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

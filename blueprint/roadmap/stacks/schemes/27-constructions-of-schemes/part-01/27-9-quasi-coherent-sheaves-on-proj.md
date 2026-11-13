@@ -8,7 +8,7 @@ proof: formalized
 
 # 27.9 Quasi-coherent sheaves on Proj
 
-Section 27.9 of the Stacks Project, [Tag 01MJ](https://stacks.math.columbia.edu/tag/01MJ). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 27.9 of the Stacks Project, [Tag 01MJ](https://stacks.math.columbia.edu/tag/01MJ). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AG1, an equation
 
@@ -16,13 +16,13 @@ Section 27.9 of the Stacks Project, [Tag 01MJ](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`Stacks.AlgebraicGeometry.ProjStalkGlobalSections.degreeZeroToGlobalSections`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjStalkGlobalSections/GlobalSections.lean#L184), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistGlobalSections.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistGlobalSections.lean#L134) (StacksFrontier).
+- [`Stacks.AlgebraicGeometry.ProjStalkGlobalSections.degreeZeroToGlobalSections`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjStalkGlobalSections/GlobalSections.lean#L184), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistGlobalSections.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistGlobalSections.lean#L134) (StacksFrontier).
 
 ## Tag 0AG2, an equation
 
 [Tag 0AG2](https://stacks.math.columbia.edu/tag/0AG2) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjShiftedSections.degreeNToGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjShiftedSectionModule.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjShiftedSectionModule.lean#L309). The attribute's comment: “map\_degree\_n\_global\_sections”. References: EGA II (3.3.2), “partial, special case”.
+**`Stacks.AlgebraicGeometry.ProjShiftedSections.degreeNToGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjShiftedSectionModule.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjShiftedSectionModule.lean#L309). The attribute's comment: “map\_degree\_n\_global\_sections”. References: EGA II (3.3.2), “partial, special case”.
 
 > The canonical map from the degree-`n` homogeneous elements of `M` to the global sections of
 > `M(n)~`, as an additive homomorphism: it is the degree-zero global-sections map of the shift.
@@ -35,7 +35,7 @@ public noncomputable def degreeNToGlobalSections (n : ℤ) :
     𝒨 n →+ shiftedSectionsComponent 𝒮 𝒨 n
 ```
 
-**`Stacks.GradedModule.shiftedGrading_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistGlobalSections.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistGlobalSections.lean#L78). The attribute's comment: “twist\_degree\_zero”.
+**`Stacks.GradedModule.shiftedGrading_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistGlobalSections.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistGlobalSections.lean#L78). The attribute's comment: “twist\_degree\_zero”.
 
 > The degree-zero piece of the twist `M(n)` is the degree-`n` piece of `M`: `M(n)₀ = Mₙ`.
 > The two indices are `0 + n` and `n`, which are equal by `zero_add` and not by reduction.
@@ -49,7 +49,7 @@ public theorem shiftedGrading_zero {M : Type v} {τ : Type t} [SetLike τ M] (�
 
 [Tag 01MK](https://stacks.math.columbia.edu/tag/01MK) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjSheafFunctoriality.associatedModuleSheafTensorMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean, line 661](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean#L661). The attribute's comment: “canonical sheaf morphism”. References: EGA II (2.5.11), “(2.5.11.2)”; EGA II (3.2.6), “λ (3.2.6.1)”.
+**`Stacks.AlgebraicGeometry.ProjSheafFunctoriality.associatedModuleSheafTensorMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean, line 659](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean#L659). The attribute's comment: “canonical sheaf morphism”. References: EGA II (2.5.11), “(2.5.11.2)”; EGA II (3.2.6), “λ (3.2.6.1)”.
 
 > The canonical morphism from the tensor product of the associated sheaves of `M` and `N`
 > to the associated sheaf of the graded tensor product `M ⊗[S] N`.
@@ -64,7 +64,7 @@ def associatedModuleSheafTensorMap :
       ProjectiveSpectrum.Proj.associatedModuleSheaf 𝒮 (tensorGrading (S := S) 𝒨 𝒩)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjSheafFunctoriality.associatedModuleSheafTensorMap_standardOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean, line 731](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean#L731). The attribute's comment: “formula on standard opens”. References: EGA II (2.5.11), “λ\_f on D\_+(f)”.
+**`Stacks.AlgebraicGeometry.ProjSheafFunctoriality.associatedModuleSheafTensorMap_standardOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean, line 729](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean#L729). The attribute's comment: “formula on standard opens”. References: EGA II (2.5.11), “λ\_f on D\_+(f)”.
 
 > On a positive-degree standard open, the canonical morphism sends the tensor of two
 > homogeneous fractions to the fraction of their tensor over the product of the denominators.
@@ -96,7 +96,7 @@ theorem associatedModuleSheafTensorMap_standardOpen
             simp [add_mul]))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjSheafFunctoriality.associatedModuleSheafTensorMap_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean, line 794](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean#L794). The attribute's comment: “formula on stalks”.
+**`Stacks.AlgebraicGeometry.ProjSheafFunctoriality.associatedModuleSheafTensorMap_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean, line 792](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean#L792). The attribute's comment: “formula on stalks”.
 
 > On the stalk at a homogeneous prime of a positive-degree standard open, the canonical
 > morphism carries the tensor of the germs of two homogeneous fractions to the germ of the
@@ -143,7 +143,7 @@ theorem associatedModuleSheafTensorMap_stalk
               simp [add_mul])))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjStalkGlobalSections.associatedModuleSheafTensorMap_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjStalkGlobalSections/Tensor.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjStalkGlobalSections/Tensor.lean#L67). The attribute's comment: “global-sections compatibility”.
+**`Stacks.AlgebraicGeometry.ProjStalkGlobalSections.associatedModuleSheafTensorMap_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjStalkGlobalSections/Tensor.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjStalkGlobalSections/Tensor.lean#L67). The attribute's comment: “global-sections compatibility”.
 
 > The canonical morphism commutes with the maps from degree-zero elements into global
 > sections, evaluated on a pure tensor.
@@ -170,7 +170,7 @@ theorem associatedModuleSheafTensorMap_globalSections (m : 𝒨 0) (n : 𝒩 0) 
 
 [Tag 01ML](https://stacks.math.columbia.edu/tag/01ML) in the Stacks Project.
 
-**`Stacks.ProjTensorComparison.tensorComparison_not_isomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTensorComparisonStatement.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTensorComparisonStatement.lean#L146). The attribute's comment: “Remark 27.10.3 as one theorem: the canonical comparison morphism M-tilde ⊗ N-tilde ⟶ (M ⊗\_S N)-tilde of sheaves of modules on Proj(S) is not an isomorphism, and for k[x, y, z] with weights 1, 2, 3, M = S(1) and N = S(2) the remark's computation — S\_z is S with 1/z adjoined, M ⊗\_S N = S(3) degreewise, S₍z₎ ≅ k[u, v, w]/(uw - v³) by the map sending the variables to u, v, w, M₍z₎ = S₍z₎x + S₍z₎y²/z, N₍z₎ = S₍z₎y + S₍z₎x², S(3)₍z₎ = S₍z₎z, the ideal (u, v, w) is maximal with residue field k, the fibres of M₍z₎ and N₍z₎ there have dimension 2 and that of S(3)₍z₎ dimension 1, and the multiplication map M₍z₎ ⊗ N₍z₎ → S(3)₍z₎ is not bijective. The first conjunct is witnessed by k[X] with deg X = 2 and M = N = S(1)”.
+**`Stacks.ProjTensorComparison.tensorComparison_not_isomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTensorComparisonStatement.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTensorComparisonStatement.lean#L146). The attribute's comment: “Remark 27.10.3 as one theorem: the canonical comparison morphism M-tilde ⊗ N-tilde ⟶ (M ⊗\_S N)-tilde of sheaves of modules on Proj(S) is not an isomorphism, and for k[x, y, z] with weights 1, 2, 3, M = S(1) and N = S(2) the remark's computation — S\_z is S with 1/z adjoined, M ⊗\_S N = S(3) degreewise, S₍z₎ ≅ k[u, v, w]/(uw - v³) by the map sending the variables to u, v, w, M₍z₎ = S₍z₎x + S₍z₎y²/z, N₍z₎ = S₍z₎y + S₍z₎x², S(3)₍z₎ = S₍z₎z, the ideal (u, v, w) is maximal with residue field k, the fibres of M₍z₎ and N₍z₎ there have dimension 2 and that of S(3)₍z₎ dimension 1, and the multiplication map M₍z₎ ⊗ N₍z₎ → S(3)₍z₎ is not bijective. The first conjunct is witnessed by k[X] with deg X = 2 and M = N = S(1)”.
 
 > **Stacks Project, Tag 01ML.** The canonical comparison morphism
 > `M̃ ⊗_𝒪 Ñ ⟶ (M ⊗_S N)~` of sheaves of modules on `Proj(S)` is not an isomorphism, and the
@@ -262,4 +262,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.9, Tag 01MJ](https://stacks.math.columbia.edu/tag/01MJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

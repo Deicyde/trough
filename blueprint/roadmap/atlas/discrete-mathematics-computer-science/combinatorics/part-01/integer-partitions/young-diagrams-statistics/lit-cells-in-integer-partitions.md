@@ -7,7 +7,7 @@ statement: formalized
 
 # Lit cells in integer partitions
 
-18 results, 11 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html).
+18 results, 11 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html).
 
 ## Parts of a partition in decreasing order
 
@@ -19,7 +19,7 @@ to its multiplicity, sorted in weakly decreasing order.
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Section 1 (weakly decreasing bargraphs).
 
-Formalized by `MetaMathlibExt.decreasingParts`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#decreasing-parts).
+Formalized by `MetaMathlibExt.decreasingParts`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#decreasing-parts).
 
 ## Lit cells of a weakly increasing bargraph
 
@@ -32,7 +32,7 @@ partition is $0$).
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Section 3, proof of Proposition 1.
 
-Formalized by `MetaMathlibExt.litCellsIncreasing`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-increasing).
+Formalized by `MetaMathlibExt.litCellsIncreasing`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-increasing).
 
 ## Lit nodes of a partition
 
@@ -44,7 +44,7 @@ parts of $p$ minus one; for the empty partition it is $0$.
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Section 3, proof of Proposition 2.
 
-Formalized by `MetaMathlibExt.litNodesIncreasing`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-nodes-increasing).
+Formalized by `MetaMathlibExt.litNodesIncreasing`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-nodes-increasing).
 
 ## Lit cells of a weakly decreasing bargraph
 
@@ -58,7 +58,7 @@ $x_i \mapsto x_i + i - 1$.
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Section 5.
 
-Formalized by `MetaMathlibExt.litCellsDecreasing`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-decreasing).
+Formalized by `MetaMathlibExt.litCellsDecreasing`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-decreasing).
 
 ## Triangular $q$-binomial coefficient
 
@@ -72,7 +72,7 @@ $x_i + (i - 1) \le r$ for $1 \le i \le s$.
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Section 4.
 
-Formalized by `MetaMathlibExt.triangularQBinomial`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#triangular-qbinomial).
+Formalized by `MetaMathlibExt.triangularQBinomial`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#triangular-qbinomial).
 
 ## Triangle partition series
 
@@ -85,7 +85,7 @@ triangle with column heights $r, r - 1, \dots, 1$.
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Definition 1.
 
-Formalized by `MetaMathlibExt.trianglePartitionSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#triangle-partition-series).
+Formalized by `MetaMathlibExt.trianglePartitionSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#triangle-partition-series).
 
 ## Lit cells of a one-part increasing bargraph
 
@@ -96,7 +96,7 @@ partition $(n)$ of $n$ with a single part has $n$ lit cells as a weakly increasi
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Section 3 (definition of lit cells).
 
-Formalized by `MetaMathlibExt.litCellsIncreasing_indiscrete`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-increasing-indiscrete).
+Formalized by `MetaMathlibExt.litCellsIncreasing_indiscrete`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-increasing-indiscrete).
 
 ## Lit nodes of a one-part partition
 
@@ -107,7 +107,7 @@ partition $(n)$ of $n$ has exactly $n$ lit nodes.
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Section 3 (definition of lit nodes).
 
-Formalized by `MetaMathlibExt.litNodesIncreasing_indiscrete`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-nodes-increasing-indiscrete).
+Formalized by `MetaMathlibExt.litNodesIncreasing_indiscrete`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-nodes-increasing-indiscrete).
 
 ## Lit cells of a one-part decreasing bargraph
 
@@ -118,7 +118,7 @@ partition $(n)$ of $n$ with a single part has $n$ lit cells as a weakly decreasi
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Section 5 (lit cells of decreasing partitions).
 
-Formalized by `MetaMathlibExt.litCellsDecreasing_indiscrete`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-decreasing-indiscrete).
+Formalized by `MetaMathlibExt.litCellsDecreasing_indiscrete`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-decreasing-indiscrete).
 
 ## Triangular $q$-binomial coefficients with no parts
 
@@ -130,7 +130,7 @@ parts.
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Section 4, initial conditions (10).
 
-Formalized by `MetaMathlibExt.triangularQBinomial_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#triangular-qbinomial-zero-right).
+Formalized by `MetaMathlibExt.triangularQBinomial_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#triangular-qbinomial-zero-right).
 
 ## Triangle partition series at zero
 
@@ -141,7 +141,7 @@ equals $1$, that is, $T_q(0) = 1$ in $\mathbb{Z}[[q]]$.
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Definition 1.
 
-Formalized by `MetaMathlibExt.trianglePartitionSeries_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#triangle-partition-series-zero).
+Formalized by `MetaMathlibExt.trianglePartitionSeries_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#triangle-partition-series-zero).
 
 ## Generating function for lit cells of weakly increasing bargraphs
 
@@ -162,7 +162,7 @@ where the sums converge coefficientwise.
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Proposition 1, eq. (5).
 
-Stated but not proved: `MetaMathlibExt.litCellsIncreasing_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-increasing-generating-function).
+Stated but not proved: `MetaMathlibExt.litCellsIncreasing_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-increasing-generating-function).
 
 ## Generating function for lit nodes of weakly increasing diagrams
 
@@ -179,7 +179,7 @@ where the sum converges coefficientwise.
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Proposition 2, eq. (7).
 
-Stated but not proved: `MetaMathlibExt.litNodesIncreasing_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-nodes-increasing-generating-function).
+Stated but not proved: `MetaMathlibExt.litNodesIncreasing_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-nodes-increasing-generating-function).
 
 ## Recursion for triangular $q$-binomial coefficients
 
@@ -197,7 +197,7 @@ $q^2 (t[0, 0] + t[0, 1] + t[0, 2]) = q^2$.
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Proposition 3, eqs. (9), (10).
 
-Stated but not proved: `MetaMathlibExt.triangularQBinomial_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#triangular-qbinomial-recursion).
+Stated but not proved: `MetaMathlibExt.triangularQBinomial_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#triangular-qbinomial-recursion).
 
 ## Triangular $q$-binomial coefficients via Gaussian binomials
 
@@ -218,7 +218,7 @@ one has $t[r, s] = 0$.
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Proposition 4, eq. (12).
 
-Stated but not proved: `MetaMathlibExt.triangularQBinomial_eq_gaussBinom_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#triangular-qbinomial-eq-gauss-binom-sub).
+Stated but not proved: `MetaMathlibExt.triangularQBinomial_eq_gaussBinom_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#triangular-qbinomial-eq-gauss-binom-sub).
 
 ## Lit cells of weakly decreasing partitions with few parts
 
@@ -236,7 +236,7 @@ $$\mathrm{lit}[k, s] = \sum_{i=0}^{s} t[s, i] \, q^{i(k-s)} \binom{k + 1 - i}{k 
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Proposition 5, eq. (13).
 
-Stated but not proved: `MetaMathlibExt.litCellsDecreasing_le_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-decreasing-le-generating-funct).
+Stated but not proved: `MetaMathlibExt.litCellsDecreasing_le_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-decreasing-le-generating-funct).
 
 ## Generating function for lit cells of weakly decreasing bargraphs
 
@@ -255,7 +255,7 @@ where the sum converges coefficientwise.
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Theorem 1, eq. (16).
 
-Stated but not proved: `MetaMathlibExt.litCellsDecreasing_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-decreasing-generating-function).
+Stated but not proved: `MetaMathlibExt.litCellsDecreasing_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-decreasing-generating-function).
 
 ## Lit cells when only the first column is lit
 
@@ -280,7 +280,7 @@ column is lit it excludes only $(1)$.
 
 - Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.litCellsDecreasing_firstColumn_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-decreasing-first-column-genera).
+Stated but not proved: `MetaMathlibExt.litCellsDecreasing_firstColumn_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/LitCellsPartitionsWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html#lit-cells-decreasing-first-column-genera).
 
 ## Depends on
 
@@ -289,4 +289,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lit cells in integer partitions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/lit-cells-in-integer-partitions)

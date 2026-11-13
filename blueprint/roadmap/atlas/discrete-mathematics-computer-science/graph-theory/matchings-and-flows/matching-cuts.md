@@ -7,7 +7,7 @@ statement: formalized
 
 # Matching cuts
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/matching-cuts/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/matching-cuts/index.html).
 
 ## Average degree of a finite graph
 
@@ -15,7 +15,7 @@ For a simple graph $G$ on a finite vertex set $V$ with
 edge set $E$, the average degree of $G$ is the rational number $2|E|/|V|$; it equals $0$ when $V$
 is empty.
 
-Formalized by `MathlibExt.Combinatorics.MatchingCutGirthWanted.avgDegree`, a definition declared in [WantedExt/Combinatorics/MatchingCutGirthWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MatchingCutGirthWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/matching-cuts/index.html#avg-degree).
+Formalized by `MathlibExt.Combinatorics.MatchingCutGirthWanted.avgDegree`, a definition declared in [WantedExt/Combinatorics/MatchingCutGirthWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MatchingCutGirthWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/matching-cuts/index.html#avg-degree).
 
 ## Matching cut
 
@@ -24,7 +24,7 @@ a set of pairwise disjoint edges of $G$, is such that deleting the edges of $M$ 
 two vertices $u$ and $v$ that are not joined by any path. The matching may be empty, in which
 case this says that $G$ itself has two vertices not joined by any path.
 
-Formalized by `MathlibExt.Combinatorics.MatchingCutGirthWanted.HasMatchingCut`, a definition declared in [WantedExt/Combinatorics/MatchingCutGirthWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MatchingCutGirthWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/matching-cuts/index.html#has-matching-cut).
+Formalized by `MathlibExt.Combinatorics.MatchingCutGirthWanted.HasMatchingCut`, a definition declared in [WantedExt/Combinatorics/MatchingCutGirthWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MatchingCutGirthWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/matching-cuts/index.html#has-matching-cut).
 
 ## Matching cut and girth question, affirmative form
 
@@ -37,7 +37,7 @@ cut. An acyclic graph has infinite girth, so it meets the girth bound for every 
 
 - [OPG-37364], Open Problem Garden, "Matching cut and girth".
 
-Formalized by `MathlibExt.Combinatorics.MatchingCutGirthWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/MatchingCutGirthWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MatchingCutGirthWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/matching-cuts/index.html#conjecture).
+Formalized by `MathlibExt.Combinatorics.MatchingCutGirthWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/MatchingCutGirthWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MatchingCutGirthWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/matching-cuts/index.html#conjecture).
 
 ## Negative answer to the matching cut and girth question
 
@@ -55,7 +55,7 @@ bipartite graph of girth at least $g$ with no matching cut; these graphs give $d
 
 - C. Feghali, F. Lucke, D. Paulusma and B. Ries, Matching Cuts in Graphs of High Girth and H-Free Graphs, ISAAC 2023, arXiv:2212.12317, https://arxiv.org/abs/2212.12317.
 
-Stated but not proved: `MathlibExt.Combinatorics.MatchingCutGirthWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/MatchingCutGirthWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MatchingCutGirthWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/matching-cuts/index.html#conjecture-refuted).
+Stated but not proved: `MathlibExt.Combinatorics.MatchingCutGirthWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/MatchingCutGirthWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MatchingCutGirthWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/matching-cuts/index.html#conjecture-refuted).
 
 ## Depends on
 
@@ -64,4 +64,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Matching cuts](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/matching-cuts/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/matchings-and-flows/matching-cuts)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/matchings-and-flows/matching-cuts)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 18.26 Tensor product
 
-Section 18.26 of the Stacks Project, [Tag 03EK](https://stacks.math.columbia.edu/tag/03EK). 3 tags here are carried by 15 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.26 of the Stacks Project, [Tag 03EK](https://stacks.math.columbia.edu/tag/03EK). 3 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GMW, a lemma
 
 [Tag 0GMW](https://stacks.math.columbia.edu/tag/0GMW) in the Stacks Project.
 
-**`PresheafOfModules.sheafificationTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafificationTensor.lean, line 994](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafificationTensor.lean#L994).
+**`PresheafOfModules.sheafificationTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafificationTensor.lean, line 994](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafificationTensor.lean#L994).
 
 > Sheafification commutes with the tensor product of presheaves of modules: there is an
 > isomorphism `F⁺ ⊗_{O⁺} G⁺ ≅ (F ⊗_{p,O} G)⁺`, natural in both presheaves of modules, where the
@@ -30,7 +30,7 @@ noncomputable def sheafificationTensorIso :
         moduleSheafification.{v, u, w, max z z₁} J a
 ```
 
-**`PresheafOfModules.sheafificationTensorIso_hom_unit_tmul`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafificationTensor.lean, line 1019](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafificationTensor.lean#L1019).
+**`PresheafOfModules.sheafificationTensorIso_hom_unit_tmul`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafificationTensor.lean, line 1019](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafificationTensor.lean#L1019).
 
 > The isomorphism `sheafificationTensorIso` sends the image, under the unit exhibiting the tensor
 > product sheaf as a sheafification, of a pure tensor of two sheafification-unit images to the
@@ -49,16 +49,11 @@ lemma sheafificationTensorIso_hom_unit_tmul (U : Cᵒᵖ) (x : F.obj U) (y : G.o
       Hom.app (moduleSheafificationUnit.{v, u, w, max z z₁} J a (tensorObj F G)) U (x ⊗ₜ y)
 ```
 
-Declarations registered for the tag:
-
-- [`PresheafOfModules.sheafificationTensorIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafificationTensor.lean#L994), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/Tensor.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Tensor.lean#L304) (StacksFrontier).
-- [`PresheafOfModules.sheafificationTensorIso_hom_unit_tmul`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafificationTensor.lean#L1019), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/Tensor.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Tensor.lean#L305) (StacksFrontier).
-
 ## Tag 03EL, a lemma
 
 [Tag 03EL](https://stacks.math.columbia.edu/tag/03EL) in the Stacks Project.
 
-**`Stacks.SheafOfModules.pullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackTensor.lean, line 1006](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackTensor.lean#L1006). References: SGA 4 IV (13.4), “special case”.
+**`Stacks.SheafOfModules.pullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackTensor.lean, line 1006](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackTensor.lean#L1006). References: SGA 4 IV (13.4), “special case”.
 
 > **Stacks 03EL.** For a morphism of ringed topoi
 > `(f, f♯) : (Sh(C), O_C) ⟶ (Sh(D), O_D)`, the pullback of a tensor product of sheaves of
@@ -79,7 +74,7 @@ def pullbackTensorIso :
         (Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, w, w} X.O))
 ```
 
-**`Stacks.Sheaves.RingedPoint.RingedPointSituation.stalkTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointStalkTensor.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointStalkTensor.lean#L90). The attribute's comment: “the stalk at a point of a ringed topos commutes with the tensor product”.
+**`Stacks.Sheaves.RingedPoint.RingedPointSituation.stalkTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointStalkTensor.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointStalkTensor.lean#L90). The attribute's comment: “the stalk at a point of a ringed topos commutes with the tensor product”.
 
 > **The stalk commutes with the tensor product of sheaves of modules.** At a point `p` of a
 > ringed topos `(Sh(C), O)` the module-valued stalk carries a tensor product of sheaves of
@@ -99,7 +94,7 @@ def stalkTensorIso :
         (Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor s.point.O))
 ```
 
-**`Stacks.SheafOfModules.RingedToposPullback.pullbackCoherence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullbackCoherence.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullbackCoherence.lean#L79). The attribute's comment: “the comparison of the pullback with the tensor product is a monoidal structure: the three coherences”.
+**`Stacks.SheafOfModules.RingedToposPullback.pullbackCoherence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullbackCoherence.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullbackCoherence.lean#L79). The attribute's comment: “the comparison of the pullback with the tensor product is a monoidal structure: the three coherences”.
 
 > **The coherence of Tag 03EL, proved.** The comparison
 > `f^*(F ⊗_{O_D} G) ≅ f^*F ⊗_{O_C} f^*G` is compatible with the associator and with both unitors,
@@ -111,7 +106,7 @@ def stalkTensorIso :
 theorem pullbackCoherence : PullbackCoherence f
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentRestrictionTensorTotalIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean#L97). The attribute's comment: “on total complexes, for restriction to a simplicial component”.
+**`CategoryTheory.SimplicialSiteSituation.componentRestrictionTensorTotalIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean#L97). The attribute's comment: “on total complexes, for restriction to a simplicial component”.
 
 > **Stacks 03EL on total complexes, at the component inclusion.** Restriction to the degree-`n`
 > component commutes with the total tensor complex:
@@ -131,7 +126,7 @@ def componentRestrictionTensorTotalIso
         (ComplexShape.up ℤ)
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackTensor.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackTensor.lean#L66). The attribute's comment: “for the small étale ringed topoi of a morphism of algebraic spaces”.
+**`AlgebraicGeometry.Space.modulePullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackTensor.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackTensor.lean#L66). The attribute's comment: “for the small étale ringed topoi of a morphism of algebraic spaces”.
 
 > **Stacks 03EL for a morphism of algebraic spaces.** The inverse image of a tensor product of
 > `𝒪_Y`-modules along `f : X ⟶ Y` is the tensor product of the inverse images,
@@ -153,7 +148,7 @@ noncomputable def modulePullbackTensorIso (f : X ⟶ Y)
 
 [Tag 03L6](https://stacks.math.columbia.edu/tag/03L6) in the Stacks Project.
 
-**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isCoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorCoherentOnSite.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorCoherentOnSite.lean#L70). The attribute's comment: “coherent”. References: EGA I (9.1.1), “coherent tensor”; EGA 0 (5.3.5), “tensor product”.
+**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isCoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorCoherentOnSite.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorCoherentOnSite.lean#L70). The attribute's comment: “coherent”. References: EGA I (9.1.1), “coherent tensor”; EGA 0 (5.3.5), “tensor product”.
 
 > **Stacks Project, Tag 03L6, coherent case.**  The tensor product of two coherent sheaves of
 > modules on a ringed site is coherent.
@@ -176,7 +171,7 @@ theorem tensorSheaf_isCoherentOnSite (X : AlgebraicGeometry.RingedSite.{u, v, w}
       (((Stacks.SheafOfModules.Tensor.sheafTensor X.O).obj F).obj G)
 ```
 
-**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFiniteness.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFiniteness.lean#L304). The attribute's comment: “finite\_type”.
+**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFiniteness.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFiniteness.lean#L307). The attribute's comment: “finite\_type”.
 
 > **Stacks Project, Tag 03L6, finite type case.** The tensor product of two sheaves of
 > modules of finite type on a ringed site is of finite type.
@@ -194,7 +189,7 @@ theorem tensorSheaf_isFiniteType (X : AlgebraicGeometry.RingedSite.{u, v, w})
       (((Stacks.SheafOfModules.Tensor.sheafTensor X.O).obj F).obj G)
 ```
 
-**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isLocallyGeneratedBySectionsOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFiniteness.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFiniteness.lean#L342). The attribute's comment: “locally\_generated”.
+**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isLocallyGeneratedBySectionsOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFiniteness.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFiniteness.lean#L345). The attribute's comment: “locally\_generated”.
 
 > **Stacks Project, Tag 03L6, locally generated case.** The tensor product of two sheaves of
 > modules locally generated by sections on a ringed site is locally generated by sections.
@@ -214,7 +209,7 @@ theorem tensorSheaf_isLocallyGeneratedBySectionsOnSite
       (((Stacks.SheafOfModules.Tensor.sheafTensor X.O).obj F).obj G)
 ```
 
-**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFinitePresentation.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFinitePresentation.lean#L142). The attribute's comment: “finite\_presentation”.
+**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFinitePresentation.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFinitePresentation.lean#L142). The attribute's comment: “finite\_presentation”.
 
 > **Stacks Project, Tag 03L6, finite presentation case.** The tensor product of two sheaves of
 > modules of finite presentation on a ringed site is of finite presentation.
@@ -232,7 +227,7 @@ theorem tensorSheaf_isFinitePresentation
       (((Stacks.SheafOfModules.Tensor.sheafTensor X.O).obj F).obj G)
 ```
 
-**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isCoherent_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFinitePresentationCoherence.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFinitePresentationCoherence.lean#L188). The attribute's comment: “fp\_tensor\_coherent”.
+**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isCoherent_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFinitePresentationCoherence.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorFinitePresentationCoherence.lean#L191). The attribute's comment: “fp\_tensor\_coherent”.
 
 > **Stacks Project, Tag 03L6, finite presentation against coherence.**  The tensor product of
 > a sheaf of modules of finite presentation with a coherent sheaf of modules on a ringed site is
@@ -260,7 +255,7 @@ theorem tensorSheaf_isCoherent_of_isFinitePresentation
       (((Stacks.SheafOfModules.Tensor.sheafTensor X.O).obj F).obj G)
 ```
 
-**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isLocallyFreeOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorLocallyFree.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorLocallyFree.lean#L562). The attribute's comment: “locally\_free”.
+**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isLocallyFreeOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorLocallyFree.lean, line 562](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorLocallyFree.lean#L562). The attribute's comment: “locally\_free”.
 
 > **Stacks Project, Tag 03L6, part (1).** The tensor product of two locally free sheaves of
 > modules on a ringed site is locally free.
@@ -278,7 +273,7 @@ theorem tensorSheaf_isLocallyFreeOnSite (X : AlgebraicGeometry.RingedSite.{u, v,
         (F, G))
 ```
 
-**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isFiniteLocallyFreeOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorLocallyFree.lean, line 580](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorLocallyFree.lean#L580). The attribute's comment: “finite\_locally\_free”.
+**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isFiniteLocallyFreeOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorLocallyFree.lean, line 580](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorLocallyFree.lean#L580). The attribute's comment: “finite\_locally\_free”.
 
 > **Stacks Project, Tag 03L6, part (2).** The tensor product of two finite locally free
 > sheaves of modules on a ringed site is finite locally free.
@@ -296,7 +291,7 @@ theorem tensorSheaf_isFiniteLocallyFreeOnSite (X : AlgebraicGeometry.RingedSite.
         (F, G))
 ```
 
-**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorQuasicoherentOnSite.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorQuasicoherentOnSite.lean#L108). The attribute's comment: “quasi\_coherent”. References: EGA I (9.1.1), “more general”.
+**`Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorQuasicoherentOnSite.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorQuasicoherentOnSite.lean#L108). The attribute's comment: “quasi\_coherent”. References: EGA I (9.1.1), “more general”.
 
 > **Stacks Project, Tag 03L6, quasi-coherent case.** The tensor product of two quasi-coherent
 > sheaves of modules on a ringed site is quasi-coherent.
@@ -316,4 +311,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.26, Tag 03EK](https://stacks.math.columbia.edu/tag/03EK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

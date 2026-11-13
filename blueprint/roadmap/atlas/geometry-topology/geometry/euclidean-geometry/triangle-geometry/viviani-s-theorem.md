@@ -8,7 +8,7 @@ proof: formalized
 
 # Viviani's theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/viviani-s-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/viviani-s-theorem/index.html).
 
 ## Viviani's theorem
 
@@ -27,7 +27,7 @@ Proof: Following the barycentric-coordinate area decomposition in Wikipedia, "Vi
 
 - https://en.wikipedia.org/wiki/Viviani%27s_theorem.
 
-Formalized by `MetaMathlibExt.viviani_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/Viviani.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/Viviani.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/viviani-s-theorem/index.html#viviani-general).
+Formalized by `MetaMathlibExt.viviani_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/Viviani.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/Viviani.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/viviani-s-theorem/index.html#viviani-general).
 
 ## Viviani's theorem with a positive side length
 
@@ -39,7 +39,7 @@ altitude of the triangle.
 
 The hypothesis $AB > 0$ is not needed: Viviani's theorem gives the same conclusion without it.
 
-Formalized by `MetaMathlibExt.viviani`, a theorem declared in [MathlibExt/Geometry/Euclidean/Viviani.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/Viviani.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/viviani-s-theorem/index.html#viviani).
+Formalized by `MetaMathlibExt.viviani`, a theorem declared in [MathlibExt/Geometry/Euclidean/Viviani.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/Viviani.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/viviani-s-theorem/index.html#viviani).
 
 ## Depends on
 
@@ -48,4 +48,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Viviani's theorem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/viviani-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/viviani-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/viviani-s-theorem)

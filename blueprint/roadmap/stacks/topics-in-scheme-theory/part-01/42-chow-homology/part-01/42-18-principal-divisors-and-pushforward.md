@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Chow.properPushforward_principalDivisorCycle, Stacks.Chow.lineZeroDivisor, Stacks.Chow.lineInfinityDivisor, Stacks.Chow.zeroScheme_lineZeroDivisor, Stacks.Chow.zeroScheme_lineInfinityDivisor, Stacks.Chow.isTrivial_pullback_divisorSheaf_lineZeroDivisor, Stacks.Chow.isTrivial_pullback_divisorSheaf_lineInfinityDivisor, Stacks.Chow.graphProjection_isProper
+lean: Stacks.Chow.properPushforward_principalDivisorCycle, Stacks.Chow.lineZeroDivisor, Stacks.Chow.lineInfinityDivisor, Stacks.Chow.eq_lineZeroDivisor_iff, Stacks.Chow.eq_lineInfinityDivisor_iff, Stacks.Chow.lineInfinityDivisor_isEffectiveCartierDivisor, Stacks.Chow.zeroScheme_lineZeroDivisor, Stacks.Chow.zeroScheme_lineInfinityDivisor
 statement: formalized
 proof: formalized
 ---
 
 # 42.18 Principal divisors and pushforward
 
-Section 42.18 of the Stacks Project, [Tag 02RS](https://stacks.math.columbia.edu/tag/02RS). 4 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.18 of the Stacks Project, [Tag 02RS](https://stacks.math.columbia.edu/tag/02RS). 4 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02RT, a lemma
 
 [Tag 02RT](https://stacks.math.columbia.edu/tag/02RT) in the Stacks Project.
 
-**`Stacks.Chow.properPushforward_principalDivisorCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PrincipalDivisorPushforward.lean, line 802](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/PrincipalDivisorPushforward.lean#L802).
+**`Stacks.Chow.properPushforward_principalDivisorCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PrincipalDivisorPushforward.lean, line 802](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PrincipalDivisorPushforward.lean#L802).
 
 > **Stacks 02RT.** For a dominant proper morphism `p : X ⟶ Y` of integral schemes locally of
 > finite type over the base with `dim_δ(X) = dim_δ(Y) = n`, the proper pushforward of the principal
@@ -38,25 +38,74 @@ theorem properPushforward_principalDivisorCycle (C : ChowSituation.{u}) {X Y : S
 
 [Tag 0F93](https://stacks.math.columbia.edu/tag/0F93) in the Stacks Project.
 
-**`Stacks.Chow.lineZeroDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean#L303). The attribute's comment: “the divisor D₀ ⊆ ℙ¹\_S”.
+**`Stacks.Chow.lineZeroDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean#L306). The attribute's comment: “the divisor D₀ = V(T₁) ⊆ ℙ¹\_S, as the image of the zero section”.
 
-> The zero divisor `D₀ ⊆ ℙ¹_S`: the closed subscheme cut out by the kernel ideal sheaf of
-> the zero section, equivalently the scheme-theoretic image of that section.
+> The zero divisor `D₀ ⊆ ℙ¹_S`, which Stacks 0F93 defines as the closed subscheme cut out by
+> the section `T₁` of `𝒪(1)`. It is constructed here as the kernel ideal sheaf of the zero section
+> `T₁/T₀ = 0`, equivalently the scheme-theoretic image of that section. That this is the closed
+> subscheme cut out by `T₁` is `Stacks.Chow.eq_lineZeroDivisor_iff`, and that it is an effective
+> Cartier divisor is `Stacks.Chow.lineZeroDivisor_isEffectiveCartierDivisor`.
 
 ```lean
 def lineZeroDivisor (S : Scheme.{u}) : (relativeProjectiveLine S).IdealSheafData
 ```
 
-**`Stacks.Chow.lineInfinityDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean#L309). The attribute's comment: “the divisor D₀ ⊆ ℙ¹\_S”.
+**`Stacks.Chow.lineInfinityDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean#L315). The attribute's comment: “the divisor D\_∞ = V(T₀) ⊆ ℙ¹\_S, as the image of the infinity section”.
 
-> The infinity divisor `D_∞ ⊆ ℙ¹_S`: the closed subscheme cut out by the kernel ideal sheaf
-> of the infinity section.
+> The infinity divisor `D_∞ ⊆ ℙ¹_S`, which Stacks 0F93 defines as the closed subscheme cut
+> out by the section `T₀` of `𝒪(1)`. It is constructed here as the kernel ideal sheaf of the
+> infinity section `T₀/T₁ = 0`. That this is the closed subscheme cut out by `T₀` is
+> `Stacks.Chow.eq_lineInfinityDivisor_iff`, and that it is an effective Cartier divisor is
+> `Stacks.Chow.lineInfinityDivisor_isEffectiveCartierDivisor`.
 
 ```lean
 def lineInfinityDivisor (S : Scheme.{u}) : (relativeProjectiveLine S).IdealSheafData
 ```
 
-**`Stacks.Chow.zeroScheme_lineZeroDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean#L68). The attribute's comment: “D₀ is the zero scheme of a global section of an invertible module”.
+**`Stacks.Chow.eq_lineZeroDivisor_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/CoordinateEquations.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/CoordinateEquations.lean#L109). The attribute's comment: “D₀ is the closed subscheme cut out by T₁: generated by T₁/T₀ on the chart T₀ ≠ 0 and the unit ideal on the chart T₁ ≠ 0”.
+
+> **Stacks 0F93, `D₀ = V(T₁)`.** A closed subscheme `D` of `ℙ¹_S` is the zero divisor `D₀` if
+> and only if it is the closed subscheme cut out by `T₁`: on the chart `T₀ ≠ 0`, with coordinate
+> `T₁/T₀`, its ideal on every affine open is generated by the coordinate, and on the chart
+> `T₁ ≠ 0`, where `T₁` is a unit, it is the unit ideal.
+
+```lean
+theorem eq_lineZeroDivisor_iff (S : Scheme.{u}) (D : (relativeProjectiveLine S).IdealSheafData) :
+    D = lineZeroDivisor S ↔
+      (∀ V : (affineLineOver S).affineOpens, (D.comap (affineChart S)).ideal V =
+        Ideal.span {(affineLineOver S).presheaf.map (homOfLE le_top).op (affineCoordinate S)}) ∧
+      D.comap (affineYChart S) = ⊤
+```
+
+**`Stacks.Chow.eq_lineInfinityDivisor_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/CoordinateEquations.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/CoordinateEquations.lean#L129). The attribute's comment: “D\_∞ is the closed subscheme cut out by T₀: generated by T₀/T₁ on the chart T₁ ≠ 0 and the unit ideal on the chart T₀ ≠ 0”.
+
+> **Stacks 0F93, `D_∞ = V(T₀)`.** A closed subscheme `D` of `ℙ¹_S` is the infinity divisor
+> `D_∞` if and only if it is the closed subscheme cut out by `T₀`: on the chart `T₁ ≠ 0`, with
+> coordinate `T₀/T₁`, its ideal on every affine open is generated by the coordinate, and on the
+> chart `T₀ ≠ 0`, where `T₀` is a unit, it is the unit ideal.
+
+```lean
+theorem eq_lineInfinityDivisor_iff (S : Scheme.{u})
+    (D : (relativeProjectiveLine S).IdealSheafData) :
+    D = lineInfinityDivisor S ↔
+      (∀ V : (affineLineOver S).affineOpens, (D.comap (affineYChart S)).ideal V =
+        Ideal.span {(affineLineOver S).presheaf.map (homOfLE le_top).op (affineCoordinate S)}) ∧
+      D.comap (affineChart S) = ⊤
+```
+
+**`Stacks.Chow.lineInfinityDivisor_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/InfinityCartier.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/InfinityCartier.lean#L179). The attribute's comment: “D\_∞ is an effective Cartier divisor”.
+
+> **Stacks 0F93, `D_∞` is an effective Cartier divisor.** `D_∞ ⊆ ℙ¹_S` is an effective
+> Cartier divisor: on the second affine chart it is cut out by the coordinate `T`, which is a
+> nonzerodivisor on the inverse image of any affine open of `S`, and away from that chart it is
+> the unit ideal.
+
+```lean
+theorem lineInfinityDivisor_isEffectiveCartierDivisor (S : Scheme.{u}) :
+    Stacks.Divisors.IsEffectiveCartierDivisor (lineInfinityDivisor S)
+```
+
+**`Stacks.Chow.zeroScheme_lineZeroDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean#L68). The attribute's comment: “D₀ is the zero scheme of a global section of an invertible module”.
 
 > **Stacks 0F93, the zero divisor as a zero scheme.** `D₀ ⊆ ℙ¹_S` is the zero scheme of a
 > global section of an invertible module, namely of the canonical section `1_{D₀}` of
@@ -70,7 +119,7 @@ theorem zeroScheme_lineZeroDivisor (S : Scheme.{u}) :
       lineZeroDivisor S
 ```
 
-**`Stacks.Chow.zeroScheme_lineInfinityDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean#L79). The attribute's comment: “D\_∞ is the zero scheme of a global section of an invertible module”.
+**`Stacks.Chow.zeroScheme_lineInfinityDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean#L79). The attribute's comment: “D\_∞ is the zero scheme of a global section of an invertible module”.
 
 > **Stacks 0F93, the infinity divisor as a zero scheme.** `D_∞ ⊆ ℙ¹_S` is the zero scheme of a
 > global section of an invertible module, namely of the canonical section `1_{D_∞}` of
@@ -84,7 +133,7 @@ theorem zeroScheme_lineInfinityDivisor (S : Scheme.{u}) :
       lineInfinityDivisor S
 ```
 
-**`Stacks.Chow.isTrivial_pullback_divisorSheaf_lineZeroDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean#L224). The attribute's comment: “the normal bundle of D₀ is trivial”.
+**`Stacks.Chow.isTrivial_pullback_divisorSheaf_lineZeroDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean#L224). The attribute's comment: “the normal bundle of D₀ is trivial”.
 
 > **Stacks 0F93, the trivial normal bundle of `D₀`.** The invertible module `𝒪(D₀)` restricts
 > trivially to `D₀`: the support of `D₀` lies in the chart `𝔸¹_S`, where `D₀` is cut out by the
@@ -98,7 +147,7 @@ theorem isTrivial_pullback_divisorSheaf_lineZeroDivisor (S : Scheme.{u}) :
         (Stacks.Divisors.divisorSheaf (lineZeroDivisor S)))
 ```
 
-**`Stacks.Chow.isTrivial_pullback_divisorSheaf_lineInfinityDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean#L238). The attribute's comment: “the normal bundle of D\_∞ is trivial”.
+**`Stacks.Chow.isTrivial_pullback_divisorSheaf_lineInfinityDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean#L238). The attribute's comment: “the normal bundle of D\_∞ is trivial”.
 
 > **Stacks 0F93, the trivial normal bundle of `D_∞`.** The invertible module `𝒪(D_∞)`
 > restricts trivially to `D_∞`: the support of `D_∞` lies in the second chart, where `D_∞` is cut
@@ -113,11 +162,23 @@ theorem isTrivial_pullback_divisorSheaf_lineInfinityDivisor (S : Scheme.{u}) :
         (Stacks.Divisors.divisorSheaf (lineInfinityDivisor S)))
 ```
 
+**`Stacks.Chow.lineZeroDivisor_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/ZeroCartier.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/ZeroCartier.lean#L271). The attribute's comment: “D₀ is an effective Cartier divisor”.
+
+> **Stacks 0F93, `D₀` is an effective Cartier divisor.** `D₀ ⊆ ℙ¹_S` is an effective
+> Cartier divisor: on the affine chart it is cut out by the coordinate `T`, which is a
+> nonzerodivisor on the inverse image of any affine open of `S`, and away from the chart it is
+> the unit ideal.
+
+```lean
+theorem lineZeroDivisor_isEffectiveCartierDivisor (S : Scheme.{u}) :
+    Stacks.Divisors.IsEffectiveCartierDivisor (lineZeroDivisor S)
+```
+
 ## Tag 02RQ, a lemma
 
 [Tag 02RQ](https://stacks.math.columbia.edu/tag/02RQ) in the Stacks Project.
 
-**`Stacks.Chow.graphProjection_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean, line 516](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean#L516). The attribute's comment: “part (1): properness of the projection”.
+**`Stacks.Chow.graphProjection_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean, line 522](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean#L522). The attribute's comment: “part (1): properness of the projection”.
 
 > **Part (1) of Stacks Project, Tag 02RQ.** The projection `p : Y ⟶ X` is proper. No
 > hypothesis on `X`, on `U` or on the section is needed: `Y` is closed in `X ×_S ℙ¹_S`, which is
@@ -128,7 +189,7 @@ theorem graphProjection_isProper {X S : Scheme.{u}} (sX : X ⟶ S) (U : X.Opens)
     (s : Γ(X, U)) : IsProper (graphProjection sX U s)
 ```
 
-**`Stacks.Chow.isIso_graphProjection_morphismRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean#L95). The attribute's comment: “part (2)”.
+**`Stacks.Chow.isIso_graphProjection_morphismRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean#L96). The attribute's comment: “part (2)”.
 
 > **Part (2) of Stacks Project, Tag 02RQ.** The restriction `p|_{p⁻¹(U)} : p⁻¹(U) ⟶ U` of the
 > projection `p : Y ⟶ X` is an isomorphism.
@@ -138,7 +199,7 @@ theorem isIso_graphProjection_morphismRestrict (U : X.Opens) (s : Γ(X, U)) :
     IsIso (graphProjection sX U s ∣_ U)
 ```
 
-**`Stacks.Chow.isPullbackDefined_graphFibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean#L105). The attribute's comment: “part (3)”.
+**`Stacks.Chow.isPullbackDefined_graphFibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean#L106). The attribute's comment: “part (3)”.
 
 > **Part (3) of Stacks Project, Tag 02RQ.** The pullbacks `Y₀ = q⁻¹D₀` and `Y_∞ = q⁻¹D_∞` of
 > the zero and infinity divisors of `ℙ¹_S` along `q : Y ⟶ ℙ¹_S` are defined.
@@ -151,7 +212,7 @@ theorem isPullbackDefined_graphFibres [IsIntegral X] (U : X.Opens) [Nonempty U.t
         (lineInfinityDivisor C.S)
 ```
 
-**`Stacks.Chow.principalDivisorCycle_graphClosure_eq_fibreCycles_sub`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean#L120). The attribute's comment: “part (4)”.
+**`Stacks.Chow.principalDivisorCycle_graphClosure_eq_fibreCycles_sub`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean#L121). The attribute's comment: “part (4)”.
 
 > **Part (4) of Stacks Project, Tag 02RQ.** On `Y`, the principal divisor of the rational
 > function `f` is the difference `[Y₀]_{n-1} - [Y_∞]_{n-1}` of the cycles of the two fibres.
@@ -173,7 +234,7 @@ theorem principalDivisorCycle_graphClosure_eq_fibreCycles_sub [IsIntegral X] (n 
           (graphInfinityFiber sX U ↑g).subschemeι (n - 1)
 ```
 
-**`Stacks.Chow.principalDivisorCycle_eq_properPushforward_graphClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean#L137). The attribute's comment: “part (5)”.
+**`Stacks.Chow.principalDivisorCycle_eq_properPushforward_graphClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean#L138). The attribute's comment: “part (5)”.
 
 > **Part (5) of Stacks Project, Tag 02RQ.** The principal divisor of `f` on `X` is the proper
 > pushforward along `p : Y ⟶ X` of the principal divisor of `f` on `Y`.
@@ -191,7 +252,7 @@ theorem principalDivisorCycle_eq_properPushforward_graphClosure [IsIntegral X] (
             ↑(graphRationalFunction sX U g (graphPreimageDense_of_chowSituation C sX U ↑g))))
 ```
 
-**`Stacks.Chow.principalDivisorCycle_eq_imageFibreCycles_sub`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean#L153). The attribute's comment: “part (6)”.
+**`Stacks.Chow.principalDivisorCycle_eq_imageFibreCycles_sub`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisorCycles/GraphConstruction.lean#L154). The attribute's comment: “part (6)”.
 
 > **Part (6) of Stacks Project, Tag 02RQ.** Viewing `Y₀` and `Y_∞` as closed subschemes of `X`
 > through `p : Y ⟶ X`, the principal divisor of `f` on `X` is `[Y₀]_{n-1} - [Y_∞]_{n-1}`.
@@ -212,7 +273,7 @@ theorem principalDivisorCycle_eq_imageFibreCycles_sub [IsIntegral X] (n : ℤ)
 
 [Tag 02RU](https://stacks.math.columbia.edu/tag/02RU) in the Stacks Project.
 
-**`Stacks.Chow.properPushforward_principalDivisorCycle_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveLineDivisorDegree/ProperCurve.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveLineDivisorDegree/ProperCurve.lean#L41). The attribute's comment: “pushforward of the principal divisor”.
+**`Stacks.Chow.properPushforward_principalDivisorCycle_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveLineDivisorDegree/ProperCurve.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveLineDivisorDegree/ProperCurve.lean#L41). The attribute's comment: “pushforward of the principal divisor”.
 
 > **The degree of a principal divisor on a proper curve over a field vanishes.** For a Chow
 > situation whose base is the spectrum of a field with vanishing dimension function, a proper
@@ -231,7 +292,7 @@ theorem properPushforward_principalDivisorCycle_eq_zero
       (principalDivisorCycle C c hdim ((rationalFunctionsEquivFunctionField X).1 ↑f)) = 0
 ```
 
-**`Stacks.Chow.principalDivisorDegree_eq_zero_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveLineDivisorDegree/ProperCurve.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveLineDivisorDegree/ProperCurve.lean#L62). The attribute's comment: “displayed-sum form”.
+**`Stacks.Chow.principalDivisorDegree_eq_zero_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveLineDivisorDegree/ProperCurve.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveLineDivisorDegree/ProperCurve.lean#L62). The attribute's comment: “displayed-sum form”.
 
 > **Stacks 02RU in the displayed-sum form.** For a proper integral curve over a field the
 > weighted sum `∑_x ord_x(f) · [κ(x) : k]` of the orders of vanishing of an invertible rational
@@ -250,7 +311,7 @@ theorem principalDivisorDegree_eq_zero_of_isProper
     principalDivisorDegree c ((rationalFunctionsEquivFunctionField X).1 ↑f) = 0
 ```
 
-**`Stacks.Chow.principalDivisorDegree_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardPrincipal/NormalizationDescent.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardPrincipal/NormalizationDescent.lean#L163). The attribute's comment: “the displayed sum”.
+**`Stacks.Chow.principalDivisorDegree_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardPrincipal/NormalizationDescent.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardPrincipal/NormalizationDescent.lean#L163). The attribute's comment: “the displayed sum”.
 
 > **Stacks Project, Tag 02RU.** Let `X` be an integral scheme of dimension one, proper over a
 > field `k`. Then the degree of the principal divisor of a nonzero rational function `f` on `X`
@@ -271,7 +332,7 @@ theorem principalDivisorDegree_eq_zero (k : Type u) [Field k] (X : Scheme.{u})
     principalDivisorDegree (X ↘ AlgebraicGeometry.Spec (.of k)) f = 0
 ```
 
-**`Stacks.Chow.properPushforward_principalDivisorCycle_eq_zero_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardPrincipal/NormalizationDescent.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardPrincipal/NormalizationDescent.lean#L219). The attribute's comment: “the pushforward of the principal divisor”.
+**`Stacks.Chow.properPushforward_principalDivisorCycle_eq_zero_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardPrincipal/NormalizationDescent.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardPrincipal/NormalizationDescent.lean#L219). The attribute's comment: “the pushforward of the principal divisor”.
 
 > **Stacks Project, Tag 02RU**, in its cycle form: the proper pushforward to `Spec k` of the
 > principal divisor of a nonzero rational function on a proper integral curve vanishes.
@@ -297,4 +358,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.18, Tag 02RS](https://stacks.math.columbia.edu/tag/02RS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

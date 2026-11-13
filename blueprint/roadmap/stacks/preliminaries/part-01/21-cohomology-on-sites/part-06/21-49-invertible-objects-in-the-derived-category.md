@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.49 Invertible objects in the derived category
 
-Section 21.49 of the Stacks Project, [Tag 0FPW](https://stacks.math.columbia.edu/tag/0FPW). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.49 of the Stacks Project, [Tag 0FPW](https://stacks.math.columbia.edu/tag/0FPW). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FPX, a lemma
 
 [Tag 0FPX](https://stacks.math.columbia.edu/tag/0FPX) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.finiteFreeSummandEquivalenceFiniteProjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/SummandsOfFiniteFreeModules.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/SummandsOfFiniteFreeModules.lean#L585). The attribute's comment: “the equivalence”.
+**`AlgebraicGeometry.RingedSite.finiteFreeSummandEquivalenceFiniteProjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/SummandsOfFiniteFreeModules.lean, line 585](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/SummandsOfFiniteFreeModules.lean#L585). The attribute's comment: “the equivalence”.
 
 > On a ringed site `(C, O)` with `R = Γ(C, O)`, the category of `O`-modules which are summands
 > of finite free modules is equivalent to the category of finite projective `R`-modules.
@@ -34,7 +34,7 @@ def finiteFreeSummandEquivalenceFiniteProjective :
                 (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) M)
 ```
 
-**`AlgebraicGeometry.RingedSite.finiteFreeSummandEquivalenceFiniteProjective_iso_globalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/SummandsOfFiniteFreeModules.lean, line 699](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/SummandsOfFiniteFreeModules.lean#L699). The attribute's comment: “identification with global sections”.
+**`AlgebraicGeometry.RingedSite.finiteFreeSummandEquivalenceFiniteProjective_iso_globalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/SummandsOfFiniteFreeModules.lean, line 699](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/SummandsOfFiniteFreeModules.lean#L699). The attribute's comment: “identification with global sections”.
 
 > The equivalence `finiteFreeSummandEquivalenceFiniteProjective` is given by taking global
 > sections.
@@ -51,7 +51,7 @@ def finiteFreeSummandEquivalenceFiniteProjective_iso_globalSections :
 
 [Tag 0FPY](https://stacks.math.columbia.edu/tag/0FPY) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.InvertibleDerived.isPerfect_of_hasInvertibleModuleDecomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjects.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjects.lean#L459). The attribute's comment: “clause (2) implies that M is a perfect object of D(O)”.
+**`AlgebraicGeometry.RingedSite.InvertibleDerived.isPerfect_of_hasInvertibleModuleDecomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjects.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjects.lean#L459). The attribute's comment: “clause (2) implies that M is a perfect object of D(O)”.
 
 > **Stacks 0FPY, the perfectness conclusion.** Let `(C, O)` be a ringed site and let `M` be an
 > object of `D(O)`. If there is a locally finite direct product decomposition
@@ -68,7 +68,7 @@ theorem isPerfect_of_hasInvertibleModuleDecomposition (M : DerivedModules X.O)
     (hM : HasInvertibleModuleDecomposition X M) : X.IsPerfect M
 ```
 
-**`AlgebraicGeometry.RingedSite.InvertibleDerived.IsInvertibleObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjectsClauseThree.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjectsClauseThree.lean#L114). The attribute's comment: “clause (1) as a condition on M: that M is invertible in D(O) in the sense of Stacks 0FFN, for the symmetric monoidal structure of Stacks 0FPT. This is the clause, not an implication between clauses”.
+**`AlgebraicGeometry.RingedSite.InvertibleDerived.IsInvertibleObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjectsClauseThree.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjectsClauseThree.lean#L114). The attribute's comment: “clause (1) as a condition on M: that M is invertible in D(O) in the sense of Stacks 0FFN, for the symmetric monoidal structure of Stacks 0FPT. This is the clause, not an implication between clauses”.
 
 > **Clause (1) of Stacks 0FPY.** `M` is an invertible object of `D(O)`: there is an object `N`
 > of `D(O)` with `M ⊗^L N ≅ O` and `N ⊗^L M ≅ O`, the tensor product being the derived tensor
@@ -78,7 +78,7 @@ theorem isPerfect_of_hasInvertibleModuleDecomposition (M : DerivedModules X.O)
 def IsInvertibleObject (M : DerivedModules X.O) : Prop
 ```
 
-**`AlgebraicGeometry.RingedSite.InvertibleDerived.HasLocalInvertibleDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjectsClauseThree.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjectsClauseThree.lean#L172). The attribute's comment: “clause (3) as a condition on M: that every object U of the site has a covering \{U\_i → U} and for each i an integer n\_i with M|\_\{U\_i} isomorphic in D(O\_\{U\_i}) to an invertible O\_\{U\_i}-module placed in degree n\_i. This is the clause, not an implication between clauses”.
+**`AlgebraicGeometry.RingedSite.InvertibleDerived.HasLocalInvertibleDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjectsClauseThree.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjectsClauseThree.lean#L172). The attribute's comment: “clause (3) as a condition on M: that every object U of the site has a covering \{U\_i → U} and for each i an integer n\_i with M|\_\{U\_i} isomorphic in D(O\_\{U\_i}) to an invertible O\_\{U\_i}-module placed in degree n\_i. This is the clause, not an implication between clauses”.
 
 > **Clause (3) of Stacks 0FPY.** Every object `U` of the site has a covering `{U_i → U}` and
 > for each `i` an integer `n_i` such that `M|_{U_i}` is represented by an invertible
@@ -95,7 +95,7 @@ def IsInvertibleObject (M : DerivedModules X.O) : Prop
 def HasLocalInvertibleDegree (M : DerivedModules X.O) : Prop
 ```
 
-**`AlgebraicGeometry.RingedSite.InvertibleDerived.isInvertibleObject_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjectsTFAE.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjectsTFAE.lean#L165). The attribute's comment: “All of the tag: (1) ⟺ (2) on every ringed site; (1) implies that M is perfect; and (1) ⟺ (2) ⟺ (3) on a locally ringed site. The ringed site is RingedSite.\{u, u, u} -- objects, morphisms and sections of O in one universe u. This is the library's one-universe convention for D(O) as a symmetric monoidal category: the derived tensor product of Stacks 0FPT on a ringed site (Stacks.SheafOfModules.DerivedMonoidal.derivedMonoidal) is built from the K-flat resolutions of Stacks 06YS, which the library constructs at that universe pattern only, so clause (1) has no meaning off it. The four HasSheafify / WEqualsLocallyBijective instance arguments are the library's standard ones, and Mathlib synthesizes all four for every RingedSite.\{u, u, u}”.
+**`AlgebraicGeometry.RingedSite.InvertibleDerived.isInvertibleObject_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjectsTFAE.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/InvertibleObjectsTFAE.lean#L165). The attribute's comment: “All of the tag: (1) ⟺ (2) on every ringed site; (1) implies that M is perfect; and (1) ⟺ (2) ⟺ (3) on a locally ringed site. The ringed site is RingedSite.\{u, u, u} -- objects, morphisms and sections of O in one universe u. This is the library's one-universe convention for D(O) as a symmetric monoidal category: the derived tensor product of Stacks 0FPT on a ringed site (Stacks.SheafOfModules.DerivedMonoidal.derivedMonoidal) is built from the K-flat resolutions of Stacks 06YS, which the library constructs at that universe pattern only, so clause (1) has no meaning off it. The four HasSheafify / WEqualsLocallyBijective instance arguments are the library's standard ones, and Mathlib synthesizes all four for every RingedSite.\{u, u, u}”.
 
 > **Stacks 0FPY.** Let `(C, O)` be a ringed site and let `M` be an object of `D(O)`. The
 > following are equivalent:
@@ -132,4 +132,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.49, Tag 0FPW](https://stacks.math.columbia.edu/tag/0FPW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

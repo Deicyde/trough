@@ -7,7 +7,7 @@ statement: formalized
 
 # Zero-sum subsequences of small cross number
 
-22 results, 15 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html).
+22 results, 15 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html).
 
 ## Zero-sum subsequences of cross number at most one (Geroldinger; Elledge–Hurlbert)
 
@@ -22,7 +22,7 @@ $\operatorname{ord}(g_i)$ is the order of $g_i$.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.exists_zero_sum_cross_number_le_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#exists-zero-sum-cross-number-le-one).
+Stated but not proved: `MetaMathlibExt.exists_zero_sum_cross_number_le_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#exists-zero-sum-cross-number-le-one).
 
 ## Lemke–Kleitman theorem
 
@@ -37,7 +37,7 @@ Kleitman and to Chung.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.ZMod.exists_zero_sum_cross_number_le_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#exists-zero-sum-cross-number-le-one-2).
+Stated but not proved: `MetaMathlibExt.ZMod.exists_zero_sum_cross_number_le_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#exists-zero-sum-cross-number-le-one-2).
 
 ## Good sequences in a finite abelian group
 
@@ -51,7 +51,7 @@ $|g_i|$ is the order of $g_i$.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Section 1 (definition of good sequences).
 
-Formalized by `MetaMathlibExt.IsGoodSequence`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#is-good-sequence).
+Formalized by `MetaMathlibExt.IsGoodSequence`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#is-good-sequence).
 
 ## Probability that a random sequence is good
 
@@ -67,7 +67,7 @@ random sequence of length $t$ in $\Gamma$ is good.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Section 1.1 (the event `E_Γ(t)`).
 
-Formalized by `MetaMathlibExt.goodSequenceProb`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#good-sequence-prob).
+Formalized by `MetaMathlibExt.goodSequenceProb`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#good-sequence-prob).
 
 ## Good-sequence probability at length zero
 
@@ -79,7 +79,7 @@ empty sequence has no nonempty zero-sum subsequence, so it is not good.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, characteristic lemma of the Section 1.1 definition.
 
-Formalized by `MetaMathlibExt.goodSequenceProb_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#good-sequence-prob-zero).
+Formalized by `MetaMathlibExt.goodSequenceProb_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#good-sequence-prob-zero).
 
 ## Half-good threshold
 
@@ -93,7 +93,7 @@ such $t$ exists, $P_{1/2}(\Gamma)$ is defined to be $0$.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Section 1.1 (definition of `P_{1/2}(Γ)`).
 
-Formalized by `MetaMathlibExt.halfGoodThreshold`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#half-good-threshold).
+Formalized by `MetaMathlibExt.halfGoodThreshold`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#half-good-threshold).
 
 ## Half-good threshold of a group of order at most two
 
@@ -107,7 +107,7 @@ sequence of length one is good with probability at least $1/|\Gamma| \ge 1/2$.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, characteristic lemma of the Section 1.1 definition of `P_{1/2}(Γ)`.
 
-Formalized by `MetaMathlibExt.halfGoodThreshold_eq_one_of_card_le_two`, a theorem declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#half-good-threshold-eq-one-of-card-le-tw).
+Formalized by `MetaMathlibExt.halfGoodThreshold_eq_one_of_card_le_two`, a theorem declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#half-good-threshold-eq-one-of-card-le-tw).
 
 ## Threshold functions
 
@@ -125,7 +125,7 @@ positivity condition $-t$ would be a threshold function whenever $t$ is.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Section 1.1 (definition of a threshold and of `τ(G)`).
 
-Formalized by `MetaMathlibExt.IsThresholdFunction`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#is-threshold-function).
+Formalized by `MetaMathlibExt.IsThresholdFunction`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#is-threshold-function).
 
 ## Positive multiples of threshold functions
 
@@ -137,7 +137,7 @@ $c > 0$ is a real number, then $k \mapsto c \, t(k)$ is also a threshold functio
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, characteristic lemma of the Section 1.1 definition of a threshold.
 
-Formalized by `MetaMathlibExt.IsThresholdFunction.const_mul`, a theorem declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#const-mul).
+Formalized by `MetaMathlibExt.IsThresholdFunction.const_mul`, a theorem declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#const-mul).
 
 ## Lagarias–Saks pebbling step
 
@@ -154,7 +154,7 @@ requires $w(uv) > 0$, so a zero cost never creates a pebble for free.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Section 2.2 (pebbling step).
 
-Formalized by `MetaMathlibExt.PebblingStep`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#pebbling-step).
+Formalized by `MetaMathlibExt.PebblingStep`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#pebbling-step).
 
 ## Solvable pebbling configurations
 
@@ -167,7 +167,7 @@ $G$ with costs $w$ leading from $C$ to a configuration with at least one pebble 
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Sections 2.2 and 3.1 (`r`-solvability, for every target).
 
-Formalized by `MetaMathlibExt.PebblingSolvable`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#pebbling-solvable).
+Formalized by `MetaMathlibExt.PebblingSolvable`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#pebbling-solvable).
 
 ## Configurations covering every vertex are solvable
 
@@ -179,7 +179,7 @@ every vertex $r$ is solvable with respect to $G$ and $w$.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, characteristic lemma of the Section 2.2 definition.
 
-Formalized by `MetaMathlibExt.pebblingSolvable_of_forall_pos`, a theorem declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#pebbling-solvable-of-forall-pos).
+Formalized by `MetaMathlibExt.pebblingSolvable_of_forall_pos`, a theorem declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#pebbling-solvable-of-forall-pos).
 
 ## Probability that a random pebbling configuration is solvable
 
@@ -199,7 +199,7 @@ $D_{G,t}$ of the source).
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Section 3.1 (configuration model).
 
-Formalized by `MetaMathlibExt.solvableConfigurationProb`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#solvable-configuration-prob).
+Formalized by `MetaMathlibExt.solvableConfigurationProb`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#solvable-configuration-prob).
 
 ## The solvability probability is at most one
 
@@ -211,7 +211,7 @@ uniformly random configuration of $t$ pebbles on $G$ is solvable is at most $1$.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, characteristic lemma of the Section 3.1 definition.
 
-Formalized by `MetaMathlibExt.solvableConfigurationProb_le_one`, a theorem declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#solvable-configuration-prob-le-one).
+Formalized by `MetaMathlibExt.solvableConfigurationProb_le_one`, a theorem declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#solvable-configuration-prob-le-one).
 
 ## Grid graph
 
@@ -224,7 +224,7 @@ $|x_i - y_i| = 1$. For $k = 2$ this is the $d$-cube $Q_d$.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Section 2.1 (grids and cubes).
 
-Formalized by `MetaMathlibExt.gridGraph`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#grid-graph).
+Formalized by `MetaMathlibExt.gridGraph`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#grid-graph).
 
 ## Grid edge costs
 
@@ -238,7 +238,7 @@ $i$ costs $w_i$.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Section 3.2 (cost `wᵢ` in coordinate `i`).
 
-Formalized by `MetaMathlibExt.gridCost`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#grid-cost).
+Formalized by `MetaMathlibExt.gridCost`, a definition declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#grid-cost).
 
 ## Grid cost of a pair differing in one coordinate
 
@@ -251,7 +251,7 @@ cost of the pair $\{x, y\}$ with cost $w_j$ in coordinate $j$ is $w_i$.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, characteristic lemma of the Section 3.2 grid costs.
 
-Formalized by `MetaMathlibExt.gridCost_eq_of_eq_off`, a theorem declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#grid-cost-eq-of-eq-off).
+Formalized by `MetaMathlibExt.gridCost_eq_of_eq_off`, a theorem declared in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#grid-cost-eq-of-eq-off).
 
 ## Threshold version of Geroldinger's theorem
 
@@ -273,7 +273,7 @@ need not be an equality). The case $d = 0$, where $\Gamma_k$ is trivial, is incl
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.halfGoodThreshold_pi_zmod_prime_pow_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#half-good-threshold-pi-zmod-prime-pow-le).
+Stated but not proved: `MetaMathlibExt.halfGoodThreshold_pi_zmod_prime_pow_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#half-good-threshold-pi-zmod-prime-pow-le).
 
 ## Bushaw–Kettle pebbling threshold for grids
 
@@ -305,7 +305,7 @@ tends to infinity. Likewise $d \ge 1$ excludes $d = 0$, where the grid is a sing
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Theorem 9 (quoting Bushaw and Kettle).
 
-Stated but not proved: `MetaMathlibExt.gridGraph_pebbling_threshold_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#grid-graph-pebbling-threshold-eq).
+Stated but not proved: `MetaMathlibExt.gridGraph_pebbling_threshold_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#grid-graph-pebbling-threshold-eq).
 
 ## Pebbling threshold bounds for the cubes (Czygrinow–Wagner, Alon)
 
@@ -321,7 +321,7 @@ $t \in \Omega(n^{1-\varepsilon}) \cap O\big(n / (\lg \lg n)^{1-\varepsilon}\big)
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.cube_pebbling_threshold_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#cube-pebbling-threshold-bounds).
+Stated but not proved: `MetaMathlibExt.cube_pebbling_threshold_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#cube-pebbling-threshold-bounds).
 
 ## Threshold for good sequences in $\mathbb{Z}_2^d$
 
@@ -334,7 +334,7 @@ $t(d) = O\left(n / (\lg \lg n)^{1-\varepsilon}\right)$ as $d \to \infty$.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.zmod_two_pi_good_threshold_isBigO` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#zmod-two-pi-good-threshold-is-big-o).
+Stated but not proved: `MetaMathlibExt.zmod_two_pi_good_threshold_isBigO` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#zmod-two-pi-good-threshold-is-big-o).
 
 ## Threshold for good sequences in $\mathbb{Z}/35^k\mathbb{Z}$
 
@@ -354,7 +354,7 @@ constant factors, so no single $C$ serves every threshold.
 
 - Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.zmod_thirtyFive_pow_good_threshold_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#zmod-thirty-five-pow-good-threshold-le).
+Stated but not proved: `MetaMathlibExt.zmod_thirtyFive_pow_good_threshold_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SmallCrossNumberZeroSumWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html#zmod-thirty-five-pow-good-threshold-le).
 
 ## Depends on
 
@@ -363,4 +363,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Zero-sum subsequences of small cross number](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/zero-sum-subsequences-of-small-cross-number)

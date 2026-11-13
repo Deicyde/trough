@@ -1,6 +1,6 @@
 # 91 Deformation Theory
 
-Chapter 91 of the Stacks Project, *Deformation Theory*, [Tag 08KW](https://stacks.math.columbia.edu/tag/08KW): the 15 sections of its 16 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 98 tags are carried by 338 declarations of the repository (all in StacksFrontier) and 9 registered declarations.
+Chapter 91 of the Stacks Project, *Deformation Theory*, [Tag 08KW](https://stacks.math.columbia.edu/tag/08KW): the 15 sections of its 16 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 98 tags are carried by 328 declarations of the repository (all in StacksFrontier) and 9 registered declarations.
 
 ## [91.2 Deformations of rings and… to 91.9 Thickenings of ringed topoi](part-01/README.md)
 

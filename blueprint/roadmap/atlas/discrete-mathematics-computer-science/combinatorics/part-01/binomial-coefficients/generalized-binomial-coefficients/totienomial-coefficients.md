@@ -8,7 +8,7 @@ proof: formalized
 
 # Totienomial coefficients
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html).
 
 ## Generalized factorial
 
@@ -20,7 +20,7 @@ the values $f(i)$ for $1 \le i \le n$; for $n = 0$ it is the empty product $1$.
 
 - https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.tex
 
-Formalized by `MetaMathlibExt.generalizedFactorial`, a definition declared in [MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html#generalized-factorial).
+Formalized by `MetaMathlibExt.generalizedFactorial`, a definition declared in [MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html#generalized-factorial).
 
 ## Positive sequence
 
@@ -29,7 +29,7 @@ $f(i) > 0$ for every $i > 0$; the value $f(0)$ is unrestricted.
 
 This is the condition on $f$ under which the source defines generalized binomial coefficients.
 
-Formalized by `MetaMathlibExt.IsPositiveSequence`, a definition declared in [MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html#is-positive-sequence).
+Formalized by `MetaMathlibExt.IsPositiveSequence`, a definition declared in [MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html#is-positive-sequence).
 
 ## Generalized factorials of positive sequences are positive
 
@@ -37,7 +37,7 @@ Let $f \colon \mathbb{N} \to
 \mathbb{N}$ be a positive sequence, that is $f(i) > 0$ for every $i > 0$. Then for every natural
 number $n$, the generalized factorial $f(1) f(2) \cdots f(n)$ is positive.
 
-Formalized by `MetaMathlibExt.generalizedFactorial_pos`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html#generalized-factorial-pos).
+Formalized by `MetaMathlibExt.generalizedFactorial_pos`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html#generalized-factorial-pos).
 
 ## Generalized binomial coefficient
 
@@ -56,7 +56,7 @@ this is the source's quotient.
 
 - https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.tex
 
-Formalized by `MetaMathlibExt.generalizedBinomialCoefficient`, a definition declared in [MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html#generalized-binomial-coefficient).
+Formalized by `MetaMathlibExt.generalizedBinomialCoefficient`, a definition declared in [MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html#generalized-binomial-coefficient).
 
 ## Defining equation of the generalized binomial coefficient
 
@@ -67,7 +67,7 @@ and $m$, the generalized binomial coefficient $\binom{n+m}{n}_f$, defined as
 $(n+m)!_f / (n!_f \, m!_f)$ with division by $0$ giving $0$, satisfies
 $\binom{n+m}{n}_f \cdot n!_f \, m!_f = (n+m)!_f$ in $\mathbb{Q}$.
 
-Formalized by `MetaMathlibExt.generalizedBinomialCoefficient_mul_denominator`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html#generalized-binomial-coefficient-mul-den).
+Formalized by `MetaMathlibExt.generalizedBinomialCoefficient_mul_denominator`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html#generalized-binomial-coefficient-mul-den).
 
 ## Totienomial coefficient
 
@@ -84,7 +84,7 @@ Since $\varphi(i) > 0$ for every $i > 0$, the denominator is never $0$.
 
 - https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.tex
 
-Formalized by `MetaMathlibExt.totienomialCoefficient`, a definition declared in [MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html#totienomial-coefficient).
+Formalized by `MetaMathlibExt.totienomialCoefficient`, a definition declared in [MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/TotienomialCoefficient.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html#totienomial-coefficient).
 
 ## Integrality and prime factorization of totienomial coefficients
 
@@ -105,7 +105,7 @@ Both exponents are natural numbers, since $\lfloor n/p \rfloor + \lfloor m/p \rf
 
 - Tom Edgar and Michael Z. Spivey, "Multiplicative Functions, Generalized Binomial Coefficients, and Generalized Catalan Numbers", Journal of Integer Sequences 19 (2016), Article 16.1.6, Corollary `totcor`, lines 244-249, <https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.tex>.
 
-Formalized by `MetaMathlibExt.totienomial_integral_factorization`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/TotienomialCoefficient.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/TotienomialCoefficient.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html#totienomial-integral-factorization).
+Formalized by `MetaMathlibExt.totienomial_integral_factorization`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/TotienomialCoefficient.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/TotienomialCoefficient.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html#totienomial-integral-factorization).
 
 ## Depends on
 
@@ -114,4 +114,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Totienomial coefficients](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/totienomial-coefficients)

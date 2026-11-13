@@ -7,14 +7,14 @@ statement: formalized
 
 # Shadowing lemma
 
-6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html).
+6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html).
 
 ## Euclidean model space for the shadowing lemma
 
 For a natural number $d$, $E_d$ is the
 Euclidean space $\mathbb{R}^d$, the real $d$-tuples with the Euclidean norm.
 
-Formalized by `MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.E`, an abbreviation declared in [WantedExt/Dynamics/HyperbolicShadowingWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/HyperbolicShadowingWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html#e).
+Formalized by `MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.E`, an abbreviation declared in [WantedExt/Dynamics/HyperbolicShadowingWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/HyperbolicShadowingWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html#e).
 
 ## Hyperbolic structure
 
@@ -29,7 +29,7 @@ $C > 0$ such that for every $x \in K$ and every $n \in \mathbb{N}$,
 $\|D(T^n)_x v\| \le C \lambda^n \|v\|$ for all $v \in E^s(x)$ and
 $\|D(T^{-n})_x v\| \le C \lambda^n \|v\|$ for all $v \in E^u(x)$.
 
-Formalized by `MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.HyperbolicStructure`, a structure declared in [WantedExt/Dynamics/HyperbolicShadowingWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/HyperbolicShadowingWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html#hyperbolic-structure).
+Formalized by `MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.HyperbolicStructure`, a structure declared in [WantedExt/Dynamics/HyperbolicShadowingWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/HyperbolicShadowingWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html#hyperbolic-structure).
 
 ## Hyperbolic invariant set
 
@@ -37,7 +37,7 @@ Let $T : \mathbb{R}^d \to \mathbb{R}^d$ be a homeomorphism. A set
 $K \subseteq \mathbb{R}^d$ is a hyperbolic invariant set for $T$ if there exists a hyperbolic
 structure for $T$ on $K$.
 
-Formalized by `MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.IsHyperbolic`, a definition declared in [WantedExt/Dynamics/HyperbolicShadowingWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/HyperbolicShadowingWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html#is-hyperbolic).
+Formalized by `MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.IsHyperbolic`, a definition declared in [WantedExt/Dynamics/HyperbolicShadowingWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/HyperbolicShadowingWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html#is-hyperbolic).
 
 ## Pseudo-orbit
 
@@ -46,7 +46,7 @@ let $T : \mathbb{R}^d \to \mathbb{R}^d$ be a map and let $\varepsilon$ be a real
 sequence $(x_n)_{n \in \mathbb{N}}$ in $\mathbb{R}^d$ is an $\varepsilon$-pseudo orbit of $T$
 if $\|x_{n+1} - T(x_n)\| < \varepsilon$ for every $n \in \mathbb{N}$.
 
-Formalized by `MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.IsPseudoOrbit`, a definition declared in [WantedExt/Dynamics/HyperbolicShadowingWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/HyperbolicShadowingWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html#is-pseudo-orbit).
+Formalized by `MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.IsPseudoOrbit`, a definition declared in [WantedExt/Dynamics/HyperbolicShadowingWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/HyperbolicShadowingWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html#is-pseudo-orbit).
 
 ## Shadowing property
 
@@ -57,7 +57,7 @@ $\delta > 0$ there is $\varepsilon > 0$ with the following property: for every $
 orbit $(x_n)_{n \in \mathbb{N}}$ of $T$ with $x_n \in U$ for all $n$, there is a point
 $y \in \mathbb{R}^d$ with $\|x_n - T^n(y)\| < \delta$ for all $n \in \mathbb{N}$.
 
-Formalized by `MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.HasShadowing`, a definition declared in [WantedExt/Dynamics/HyperbolicShadowingWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/HyperbolicShadowingWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html#has-shadowing).
+Formalized by `MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.HasShadowing`, a definition declared in [WantedExt/Dynamics/HyperbolicShadowingWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/HyperbolicShadowingWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html#has-shadowing).
 
 ## Anosov–Bowen shadowing lemma
 
@@ -69,7 +69,7 @@ has the shadowing property for $T$.
 
 - D.V. Anosov, 'Geodesic flows on closed Riemannian manifolds with negative curvature', Trudy Mat. Inst. Steklov. 90 (1967); R. Bowen, 'ω-limit sets for Axiom A diffeomorphisms', J. Differential Equations 18 (1975) 333–339. Listed as §67 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `anosov_bowen_shadowing` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.hyperbolic_has_shadowing` is written with `theorem_wanted` in [WantedExt/Dynamics/HyperbolicShadowingWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/HyperbolicShadowingWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html#hyperbolic-has-shadowing).
+Stated but not proved: `MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.hyperbolic_has_shadowing` is written with `theorem_wanted` in [WantedExt/Dynamics/HyperbolicShadowingWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/HyperbolicShadowingWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html#hyperbolic-has-shadowing).
 
 ## Depends on
 
@@ -78,4 +78,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Shadowing lemma](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/smooth-dynamics/shadowing-lemma/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/smooth-dynamics/shadowing-lemma)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/smooth-dynamics/shadowing-lemma)

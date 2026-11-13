@@ -8,7 +8,7 @@ proof: formalized
 
 # Strassen algorithm
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/strassen-algorithm/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/strassen-algorithm/index.html).
 
 ## Strassen's matrix accumulator
 
@@ -32,7 +32,7 @@ $C_{22} + P_5 + P_1 - P_3 - P_7$, each sum formed entrywise from left to right.
 Each entrywise scalar addition or subtraction adds one to the second count and each base-case
 multiplication adds one to the first; indexing, allocation, copying and zero-fill are uncharged.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.strassenMatrixAccumulate`, a definition declared in [CSLibExt/Algorithms/Lean/Matrix/Strassen/Basic.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Strassen/Basic.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/strassen-algorithm/index.html#strassen-matrix-accumulate).
+Formalized by `Cslib.Algorithms.Lean.Matrix.strassenMatrixAccumulate`, a definition declared in [CSLibExt/Algorithms/Lean/Matrix/Strassen/Basic.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Strassen/Basic.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/strassen-algorithm/index.html#strassen-matrix-accumulate).
 
 ## Correctness of Strassen's matrix accumulator
 
@@ -43,7 +43,7 @@ matrix product, $(AB)_{ij} = \sum_t A_{it} B_{tj}$.
 
 Multiplication in $R$ need not be commutative or associative.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.strassenMatrixAccumulate_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Strassen/Correctness.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Strassen/Correctness.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/strassen-algorithm/index.html#strassen-matrix-accumulate-ret).
+Formalized by `Cslib.Algorithms.Lean.Matrix.strassenMatrixAccumulate_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Strassen/Correctness.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Strassen/Correctness.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/strassen-algorithm/index.html#strassen-matrix-accumulate-ret).
 
 ## Entries of Strassen's matrix accumulator
 
@@ -52,7 +52,7 @@ For every $k \ge 0$, all $2^k \times 2^k$ matrices $A$, $B$, $C$ over $R$ and al
 $i, j$, the $(i, j)$ entry of the matrix returned by Strassen's accumulator on $A$, $B$, $C$ is
 $C_{ij} + \sum_{t} A_{it} B_{tj}$, the sum running over all $2^k$ indices $t$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.strassenMatrixAccumulate_apply`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Strassen/Correctness.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Strassen/Correctness.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/strassen-algorithm/index.html#strassen-matrix-accumulate-apply).
+Formalized by `Cslib.Algorithms.Lean.Matrix.strassenMatrixAccumulate_apply`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Strassen/Correctness.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Strassen/Correctness.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/strassen-algorithm/index.html#strassen-matrix-accumulate-apply).
 
 ## Operation counts of Strassen's matrix accumulator
 
@@ -64,7 +64,7 @@ subtractions.
 
 This count does not charge allocation or bit operations.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.strassenMatrixAccumulate_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Strassen/Costs.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Strassen/Costs.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/strassen-algorithm/index.html#strassen-matrix-accumulate-time).
+Formalized by `Cslib.Algorithms.Lean.Matrix.strassenMatrixAccumulate_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Strassen/Costs.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Strassen/Costs.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/strassen-algorithm/index.html#strassen-matrix-accumulate-time).
 
 ## Depends on
 
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Strassen algorithm](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/algebraic-and-numerical-algorithms/strassen-algorithm/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/algebraic-and-numerical-algorithms/strassen-algorithm)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/algebraic-and-numerical-algorithms/strassen-algorithm)

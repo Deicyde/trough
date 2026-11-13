@@ -8,7 +8,7 @@ proof: formalized
 
 # r-Stirling numbers
 
-11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html).
+11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html).
 
 ## Unsigned r-Stirling numbers of the first kind
 
@@ -26,7 +26,7 @@ the polynomial is $x^r$.
 
 - A. Z. Broder, "The r-Stirling numbers", Stanford Computer Science Report STAN-CS-82-949 (December 1982), PDF page 12 / printed page 9, Equation (24); journal version: Discrete Mathematics 49 (1984), 241-259, DOI 10.1016/0012-365X(84)90161-4.
 
-Formalized by `MetaMathlibExt.rStirlingFirst`, a definition declared in [MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-first).
+Formalized by `MetaMathlibExt.rStirlingFirst`, a definition declared in [MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-first).
 
 ## Initial row of the r-Stirling numbers of the first kind
 
@@ -35,7 +35,7 @@ $r$, the unsigned $r$-Stirling number of the first kind $[r, m]_r$ equals $1$ if
 otherwise: when the first index equals $r$, the product in the definition is empty, so the
 polynomial is $x^r$.
 
-Formalized by `MetaMathlibExt.rStirlingFirst_self`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-first-self).
+Formalized by `MetaMathlibExt.rStirlingFirst_self`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-first-self).
 
 ## Vanishing of the r-Stirling numbers of the first kind with second index zero
 
@@ -44,7 +44,7 @@ natural numbers $N$ and $r$ with $r \ge 1$, the unsigned $r$-Stirling number of 
 $[N, 0]_r$ is $0$: the defining polynomial is divisible by $x$, so its constant coefficient
 vanishes.
 
-Formalized by `MetaMathlibExt.rStirlingFirst_zero_of_pos`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-first-zero-of-pos).
+Formalized by `MetaMathlibExt.rStirlingFirst_zero_of_pos`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-first-zero-of-pos).
 
 ## Recurrence for the r-Stirling numbers of the first kind
 
@@ -53,7 +53,7 @@ $r$ with $1 \le r \le n$, the unsigned $r$-Stirling numbers of the first kind $[
 $[n+1, m]_r = [n, m-1]_r + n \, [n, m]_r$, where for $m = 0$ the term $[n, m-1]_r$ is read as
 $[n, 0]_r$.
 
-Formalized by `MetaMathlibExt.rStirlingFirst_succ`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-first-succ).
+Formalized by `MetaMathlibExt.rStirlingFirst_succ`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-first-succ).
 
 ## Broder's alternating expansion of the r-Stirling numbers of the first kind
 
@@ -71,7 +71,7 @@ $\lbrace k-1, r-1 \rbrace$ vanishes for $k < r$ and $[n, m+k-r]$ vanishes for $k
 
 - A. Z. Broder, "The r-Stirling numbers", Stanford Computer Science Report STAN-CS-82-949 (December 1982), PDF page 16 / printed page 13, Equation (43); journal version: Discrete Mathematics 49 (1984), 241-259, DOI 10.1016/0012-365X(84)90161-4.
 
-Formalized by `MetaMathlibExt.rStirlingFirst_eq_alternating_sum`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-first-eq-alternating-sum).
+Formalized by `MetaMathlibExt.rStirlingFirst_eq_alternating_sum`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RStirlingFirstAlternatingExpansion.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-first-eq-alternating-sum).
 
 ## r-Stirling numbers of the second kind
 
@@ -87,7 +87,7 @@ where ${a \brace b}$ denotes the Stirling number of the second kind (and $0^0 = 
 
 - A. Z. Broder, *The r-Stirling numbers*, Discrete Mathematics 49 (1984), 241-259; Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Section 4 (exponential generating function of `{m+v \brace k+v}_v`).
 
-Formalized by `MetaMathlibExt.rStirlingSecond`, a definition declared in [MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-second).
+Formalized by `MetaMathlibExt.rStirlingSecond`, a definition declared in [MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-second).
 
 ## Finite-sum formula for r-Stirling numbers of the second kind
 
@@ -102,7 +102,7 @@ where ${a \brace b}$ denotes the Stirling number of the second kind (and $0^0 = 
 
 - A. Z. Broder, *The r-Stirling numbers*, Discrete Mathematics 49 (1984), 241-259.
 
-Formalized by `MetaMathlibExt.rStirlingSecond_add_add`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-second-add-add).
+Formalized by `MetaMathlibExt.rStirlingSecond_add_add`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-second-add-add).
 
 ## Vanishing of r-Stirling numbers of the second kind
 
@@ -113,7 +113,7 @@ $r$ with $m < r$ or $n < r$, the r-Stirling number of the second kind ${n \brace
 
 - A. Z. Broder, *The r-Stirling numbers*, Discrete Mathematics 49 (1984), 241-259.
 
-Formalized by `MetaMathlibExt.rStirlingSecond_eq_zero`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-second-eq-zero).
+Formalized by `MetaMathlibExt.rStirlingSecond_eq_zero`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-second-eq-zero).
 
 ## r-Stirling numbers of the second kind for r = 0
 
@@ -125,7 +125,7 @@ second kind ${n \brace m}$.
 
 - A. Z. Broder, *The r-Stirling numbers*, Discrete Mathematics 49 (1984), 241-259.
 
-Formalized by `MetaMathlibExt.rStirlingSecond_zero_right`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-second-zero-right).
+Formalized by `MetaMathlibExt.rStirlingSecond_zero_right`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-second-zero-right).
 
 ## r-Stirling numbers of the second kind with exactly r blocks
 
@@ -137,7 +137,7 @@ $0^0 = 1$).
 
 - Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Section 4 (exponential generating function at `k = 0`).
 
-Formalized by `MetaMathlibExt.rStirlingSecond_add_self`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-second-add-self).
+Formalized by `MetaMathlibExt.rStirlingSecond_add_self`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-second-add-self).
 
 ## r-Stirling numbers as generalized Stirling numbers
 
@@ -150,7 +150,7 @@ Broder) at the real parameter $x = r$.
 
 - A. Z. Broder, *The r-Stirling numbers*, Discrete Mathematics 49 (1984), 241-259.
 
-Formalized by `MetaMathlibExt.rStirlingSecond_add_add_eq_generalizedStirlingSecond`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-second-add-add-eq-generalized).
+Formalized by `MetaMathlibExt.rStirlingSecond_add_add_eq_generalizedStirlingSecond`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RStirlingSecond.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html#r-stirling-second-add-add-eq-generalized).
 
 ## Depends on
 
@@ -159,4 +159,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: r-Stirling numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/generalized-stirling-numbers/r-stirling-numbers)

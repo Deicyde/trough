@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.92 Countably generated Mittag-Leffler modules
 
-Section 10.92 of the Stacks Project, [Tag 05D1](https://stacks.math.columbia.edu/tag/05D1). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.92 of the Stacks Project, [Tag 05D1](https://stacks.math.columbia.edu/tag/05D1). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 059W, a lemma
 
 [Tag 059W](https://stacks.math.columbia.edu/tag/059W) in the Stacks Project.
 
-**`ModuleCat.exists_countable_directedOn_isColimit_whisker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/DirectLimit/Countable.lean, line 564](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/DirectLimit/Countable.lean#L564). The attribute's comment: “Mittag-Leffler as 059E (3); finite presentation of the members is unused”.
+**`ModuleCat.exists_countable_directedOn_isColimit_whisker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/DirectLimit/Countable.lean, line 564](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/DirectLimit/Countable.lean#L564). The attribute's comment: “Mittag-Leffler as 059E (3); finite presentation of the members is unused”.
 
 > **Stacks 059W.** Let `R` be a ring, `w`-small relative to the universe of the modules below,
 > let `F : J ⥤ ModuleCat R` be a directed system of `R`-modules over a nonempty directed preorder
@@ -41,7 +41,7 @@ public theorem ModuleCat.exists_countable_directedOn_isColimit_whisker
 
 [Tag 05D2](https://stacks.math.columbia.edu/tag/05D2) in the Stacks Project.
 
-**`Module.exists_end_factorization_finitePresentation_of_countable_span_of_mittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Endomorphism.lean, line 607](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/Endomorphism.lean#L607). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E, as in 059M, 059N, 059P, 059R, 05CQ, 059X and 05D6; countable generation as a countable spanning set, as in 0590. Test data in the universe of `M`, whence `Small.{v} R`; the source's `P` keeps its own universe. Factoring through a finitely presented module is the equation `α = v ∘ₗ u`, as in `Module.Flat.exists_factorization_of_finitePresentation`. See the module docstring.”.
+**`Module.exists_end_factorization_finitePresentation_of_countable_span_of_mittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Endomorphism.lean, line 607](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/Endomorphism.lean#L607). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E, as in 059M, 059N, 059P, 059R, 05CQ, 059X and 05D6; countable generation as a countable spanning set, as in 0590. Test data in the universe of `M`, whence `Small.{v} R`; the source's `P` keeps its own universe. Factoring through a finitely presented module is the equation `α = v ∘ₗ u`, as in `Module.Flat.exists_factorization_of_finitePresentation`. See the module docstring.”.
 
 > Let `R` be a commutative ring and let `M` be an `R`-module which is countably generated — it
 > admits a countable spanning set — and Mittag-Leffler, the latter in the intrinsic form 059E (1):
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.92, Tag 05D1](https://stacks.math.columbia.edu/tag/05D1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

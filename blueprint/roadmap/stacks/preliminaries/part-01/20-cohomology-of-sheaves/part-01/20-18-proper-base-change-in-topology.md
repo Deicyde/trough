@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.18 Proper base change in topology
 
-Section 20.18 of the Stacks Project, [Tag 09V4](https://stacks.math.columbia.edu/tag/09V4). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.18 of the Stacks Project, [Tag 09V4](https://stacks.math.columbia.edu/tag/09V4). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09V5, a lemma
 
 [Tag 09V5](https://stacks.math.columbia.edu/tag/09V5) in the Stacks Project.
 
-**`Stacks.Cohomology.ProperBaseChange.isIso_properBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/ProperBaseChangeAtAPoint.lean, line 746](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/ProperBaseChangeAtAPoint.lean#L746).
+**`Stacks.Cohomology.ProperBaseChange.isIso_properBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/ProperBaseChangeAtAPoint.lean, line 747](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/ProperBaseChangeAtAPoint.lean#L747).
 
 > **Proper base change in topology.** For a closed separated morphism of ringed
 > spaces `f : X ⟶ Y` and a point `y` of `Y` with quasi-compact fibre, the canonical base-change
@@ -37,7 +37,7 @@ theorem isIso_properBaseChangeMap
 
 [Tag 09V6](https://stacks.math.columbia.edu/tag/09V6) in the Stacks Project.
 
-**`Stacks.Cohomology.AbelianProperBaseChange.isIso_abelianBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/AbelianProperBaseChange.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/AbelianProperBaseChange.lean#L379). The attribute's comment: “derived proper base change for abelian sheaves: g^\{-1} Rf\_* ⟶ Rf'\_* (g')^\{-1} is an isomorphism of functors on D⁺ for f proper and the square cartesian; the underived base change morphism is inverted by isIso\_abelianSheafBaseChange\_of\_properMap, the acyclicity R^p f'\_* (g')^\{-1} I = 0 for p > 0 is rightAcyclic\_pushforward\_pullback\_of\_injective, and properness of f' is isClosedMap\_baseChange/isCompact\_fiber\_baseChange/isSeparatedMap\_baseChange”. References: SGA 4 Vbis (4.1.1), “more general”.
+**`Stacks.Cohomology.AbelianProperBaseChange.isIso_abelianBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/AbelianProperBaseChange.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/AbelianProperBaseChange.lean#L379). The attribute's comment: “derived proper base change for abelian sheaves: g^\{-1} Rf\_* ⟶ Rf'\_* (g')^\{-1} is an isomorphism of functors on D⁺ for f proper and the square cartesian; the underived base change morphism is inverted by isIso\_abelianSheafBaseChange\_of\_properMap, the acyclicity R^p f'\_* (g')^\{-1} I = 0 for p > 0 is rightAcyclic\_pushforward\_pullback\_of\_injective, and properness of f' is isClosedMap\_baseChange/isCompact\_fiber\_baseChange/isSeparatedMap\_baseChange”. References: SGA 4 Vbis (4.1.1), “more general”.
 
 > **Proper base change for abelian sheaves on topological spaces, [Stacks, Tag 09V6].** For a
 > cartesian square of topological spaces
@@ -79,7 +79,7 @@ theorem isIso_abelianBaseChange (hcart : IsPullback g' f' f g)
 
 [Tag 0D90](https://stacks.math.columbia.edu/tag/0D90) in the Stacks Project.
 
-**`Stacks.Topology.ProperBaseChange.isIso_properBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ProperPushforward/ProperBaseChange.lean, line 531](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ProperPushforward/ProperBaseChange.lean#L531).
+**`Stacks.Topology.ProperBaseChange.isIso_properBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ProperPushforward/ProperBaseChange.lean, line 531](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ProperPushforward/ProperBaseChange.lean#L531).
 
 > **Proper base change for sheaves of sets, Stacks 0D90.** Let
 >
@@ -108,4 +108,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.18, Tag 09V4](https://stacks.math.columbia.edu/tag/09V4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

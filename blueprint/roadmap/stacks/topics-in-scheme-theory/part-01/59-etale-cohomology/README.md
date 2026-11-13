@@ -1,6 +1,6 @@
 # 59 Étale Cohomology
 
-Chapter 59 of the Stacks Project, *Étale Cohomology*, [Tag 03N1](https://stacks.math.columbia.edu/tag/03N1): the 93 sections of its 107 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 497 tags are carried by 1,404 declarations of the repository (all in StacksFrontier) and 196 registered declarations.
+Chapter 59 of the Stacks Project, *Étale Cohomology*, [Tag 03N1](https://stacks.math.columbia.edu/tag/03N1): the 93 sections of its 107 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 497 tags are carried by 1,350 declarations of the repository (all in StacksFrontier) and 201 registered declarations.
 
 ## [59.4 The étale topology to 59.27 Étale coverings](part-01/README.md)
 
@@ -69,17 +69,17 @@ Chapter 59 of the Stacks Project, *Étale Cohomology*, [Tag 03N1](https://stacks
 - [59.68 Higher vanishing for the multiplicative group](part-04/59-68-higher-vanishing-for-the-multiplicative-gr.md)
 - [59.69 Picard groups of curves](part-04/59-69-picard-groups-of-curves.md)
 
-## [59.70 Extension by zero to 59.74 Constructible sheaves on…](part-05/README.md)
+## [59.70 Extension by zero to 59.75 Specializations and étale…](part-05/README.md)
 
 - [59.70 Extension by zero](part-05/59-70-extension-by-zero.md)
 - [59.71 Constructible sheaves](part-05/59-71-constructible-sheaves.md)
 - [59.72 Auxiliary lemmas on morphisms](part-05/59-72-auxiliary-lemmas-on-morphisms.md)
 - [59.73 More on constructible sheaves](part-05/59-73-more-on-constructible-sheaves.md)
 - [59.74 Constructible sheaves on Noetherian schemes](part-05/59-74-constructible-sheaves-on-noetherian-scheme.md)
+- [59.75 Specializations and étale sheaves](part-05/59-75-specializations-and-etale-sheaves.md)
 
-## [59.75 Specializations and étale… to 59.85 First cohomology of…](part-06/README.md)
+## [59.76 Complexes with… to 59.86 Preliminaries on base…](part-06/README.md)
 
-- [59.75 Specializations and étale sheaves](part-06/59-75-specializations-and-etale-sheaves.md)
 - [59.76 Complexes with constructible cohomology](part-06/59-76-complexes-with-constructible-cohomology.md)
 - [59.77 Tor finite with constructible cohomology](part-06/59-77-tor-finite-with-constructible-cohomology.md)
 - [59.78 Torsion sheaves](part-06/59-78-torsion-sheaves.md)
@@ -90,10 +90,10 @@ Chapter 59 of the Stacks Project, *Étale Cohomology*, [Tag 03N1](https://stacks
 - [59.83 Cohomology of torsion sheaves on curves](part-06/59-83-cohomology-of-torsion-sheaves-on-curves.md)
 - [59.84 Cohomology of torsion modules on curves](part-06/59-84-cohomology-of-torsion-modules-on-curves.md)
 - [59.85 First cohomology of proper schemes](part-06/59-85-first-cohomology-of-proper-schemes.md)
+- [59.86 Preliminaries on base change](part-06/59-86-preliminaries-on-base-change.md)
 
-## [59.86 Preliminaries on base… to 59.98 Comparing chaotic and…](part-07/README.md)
+## [59.87 Base change for… to 59.100 Comparing fppf and étale…](part-07/README.md)
 
-- [59.86 Preliminaries on base change](part-07/59-86-preliminaries-on-base-change.md)
 - [59.87 Base change for pushforward](part-07/59-87-base-change-for-pushforward.md)
 - [59.88 Base change for higher direct images](part-07/59-88-base-change-for-higher-direct-images.md)
 - [59.89 Smooth base change](part-07/59-89-smooth-base-change.md)
@@ -106,11 +106,11 @@ Chapter 59 of the Stacks Project, *Étale Cohomology*, [Tag 03N1](https://stacks
 - [59.96 Finite cohomological dimension](part-07/59-96-finite-cohomological-dimension.md)
 - [59.97 Künneth in étale cohomology](part-07/59-97-kunneth-in-etale-cohomology.md)
 - [59.98 Comparing chaotic and Zariski topologies](part-07/59-98-comparing-chaotic-and-zariski-topologies.md)
+- [59.99 Comparing big and small topoi](part-07/59-99-comparing-big-and-small-topoi.md)
+- [59.100 Comparing fppf and étale topologies](part-07/59-100-comparing-fppf-and-etale-topologies.md)
 
-## [59.99 Comparing big and small… to 59.107 Cohomology of the…](part-08/README.md)
+## [59.101 Comparing fppf and étale… to 59.107 Cohomology of the…](part-08/README.md)
 
-- [59.99 Comparing big and small topoi](part-08/59-99-comparing-big-and-small-topoi.md)
-- [59.100 Comparing fppf and étale topologies](part-08/59-100-comparing-fppf-and-etale-topologies.md)
 - [59.101 Comparing fppf and étale topologies: modules](part-08/59-101-comparing-fppf-and-etale-topologies-modul.md)
 - [59.102 Comparing ph and étale topologies](part-08/59-102-comparing-ph-and-etale-topologies.md)
 - [59.103 Comparing h and étale topologies](part-08/59-103-comparing-h-and-etale-topologies.md)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Alternating sums of Motzkin numbers
 
-12 results, 7 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html).
+12 results, 7 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html).
 
 ## Log-convexity of the even-indexed Riordan numbers
 
@@ -23,7 +23,7 @@ The Riordan numbers begin $1, 0, 1, 1, 3, 6, 15, \dots$.
 
 - Feng-Zhen Zhao, *The Log-Balancedness of the Sequence for the Alternating Sums of Motzkin Numbers*, INTEGERS 26 (2026), Article A55, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.riordanNumber_even_logConvex` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#riordan-number-even-log-convex).
+Stated but not proved: `MetaMathlibExt.riordanNumber_even_logConvex` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#riordan-number-even-log-convex).
 
 ## Alternating sums of Motzkin numbers
 
@@ -38,7 +38,7 @@ It is OEIS A187306, which begins $1, 0, 2, 2, 7, 14, 37, \dots$
 
 - Feng-Zhen Zhao, *The Log-Balancedness of the Sequence for the Alternating Sums of Motzkin Numbers*, INTEGERS 26 (2026), Article A55, Equation (2).
 
-Formalized by `MetaMathlibExt.motzkinAlternatingSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#motzkin-alternating-sum).
+Formalized by `MetaMathlibExt.motzkinAlternatingSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#motzkin-alternating-sum).
 
 ## The alternating Motzkin sum at 0
 
@@ -49,7 +49,7 @@ $T_n = \sum_{k=0}^{n} (-1)^{n-k} M_k$. Then $T_0 = 1$.
 
 - Feng-Zhen Zhao, *The Log-Balancedness of the Sequence for the Alternating Sums of Motzkin Numbers*, INTEGERS 26 (2026), Article A55, Table 2.
 
-Formalized by `MetaMathlibExt.motzkinAlternatingSum_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#motzkin-alternating-sum-zero).
+Formalized by `MetaMathlibExt.motzkinAlternatingSum_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#motzkin-alternating-sum-zero).
 
 ## Recurrence for alternating Motzkin sums
 
@@ -60,7 +60,7 @@ let $T_n = \sum_{k=0}^{n} (-1)^{n-k} M_k$. For every natural number $n$, $T_{n+1
 
 - Feng-Zhen Zhao, *The Log-Balancedness of the Sequence for the Alternating Sums of Motzkin Numbers*, INTEGERS 26 (2026), Article A55, Equation (2).
 
-Formalized by `MetaMathlibExt.motzkinAlternatingSum_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#motzkin-alternating-sum-succ).
+Formalized by `MetaMathlibExt.motzkinAlternatingSum_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#motzkin-alternating-sum-succ).
 
 ## Alternating Motzkin sums at 1 and 2
 
@@ -71,7 +71,7 @@ $T_n = \sum_{k=0}^{n} (-1)^{n-k} M_k$. Then $T_1 = 0$ and $T_2 = 2$.
 
 - Feng-Zhen Zhao, *The Log-Balancedness of the Sequence for the Alternating Sums of Motzkin Numbers*, INTEGERS 26 (2026), Article A55, Table 2.
 
-Formalized by `MetaMathlibExt.motzkinAlternatingSum_one_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#motzkin-alternating-sum-one-two).
+Formalized by `MetaMathlibExt.motzkinAlternatingSum_one_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#motzkin-alternating-sum-one-two).
 
 ## Alternating sums of Fibonacci numbers
 
@@ -87,7 +87,7 @@ The sequence begins $0, 1, 0, 2, 1, 4, 4, 9, \dots$
 
 - Feng-Zhen Zhao, *The Log-Balancedness of the Sequence for the Alternating Sums of Motzkin Numbers*, INTEGERS 26 (2026), Article A55, Equation (9).
 
-Formalized by `MetaMathlibExt.fibonacciAlternatingSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#fibonacci-alternating-sum).
+Formalized by `MetaMathlibExt.fibonacciAlternatingSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#fibonacci-alternating-sum).
 
 ## The alternating Fibonacci sum at 0
 
@@ -98,7 +98,7 @@ $F_0 = 0$ and $F_1 = 1$, and let $W_n = \sum_{k=0}^{n} (-1)^{n-k} F_k$. Then $W_
 
 - Feng-Zhen Zhao, *The Log-Balancedness of the Sequence for the Alternating Sums of Motzkin Numbers*, INTEGERS 26 (2026), Article A55, Table 3.
 
-Formalized by `MetaMathlibExt.fibonacciAlternatingSum_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#fibonacci-alternating-sum-zero).
+Formalized by `MetaMathlibExt.fibonacciAlternatingSum_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#fibonacci-alternating-sum-zero).
 
 ## Recurrence for alternating Fibonacci sums
 
@@ -110,7 +110,7 @@ natural number $n$, $W_{n+1} = F_{n+1} - W_n$.
 
 - Feng-Zhen Zhao, *The Log-Balancedness of the Sequence for the Alternating Sums of Motzkin Numbers*, INTEGERS 26 (2026), Article A55, Equation (9).
 
-Formalized by `MetaMathlibExt.fibonacciAlternatingSum_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#fibonacci-alternating-sum-succ).
+Formalized by `MetaMathlibExt.fibonacciAlternatingSum_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#fibonacci-alternating-sum-succ).
 
 ## The alternating Motzkin sums are eventually log-balanced and tempered
 
@@ -136,7 +136,7 @@ quotient weights using the original index $n$, as in the paper's proofs.
 
 - Feng-Zhen Zhao, *The Log-Balancedness of the Sequence for the Alternating Sums of Motzkin Numbers*, INTEGERS 26 (2026), Article A55, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.motzkinAlternatingSum_logBalanced_tempered` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#motzkin-alternating-sum-log-balanced-tem).
+Stated but not proved: `MetaMathlibExt.motzkinAlternatingSum_logBalanced_tempered` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#motzkin-alternating-sum-log-balanced-tem).
 
 ## Products of consecutive alternating Motzkin sums are eventually log-convex and log-balanced
 
@@ -155,7 +155,7 @@ that $(P_n)_{n \ge 6}$ is log-convex and $(P_n)_{n \ge 9}$ is log-balanced.
 
 - Feng-Zhen Zhao, *The Log-Balancedness of the Sequence for the Alternating Sums of Motzkin Numbers*, INTEGERS 26 (2026), Article A55, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.motzkinAlternatingSum_mul_succ_logConvex_logBalanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#motzkin-alternating-sum-mul-succ-log-con).
+Stated but not proved: `MetaMathlibExt.motzkinAlternatingSum_mul_succ_logConvex_logBalanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#motzkin-alternating-sum-mul-succ-log-con).
 
 ## Log-balancedness of Motzkin numbers plus their alternating sums
 
@@ -173,7 +173,7 @@ $z_n / n!$ with denominators cleared, the factorial using the original index $n$
 
 - Feng-Zhen Zhao, *The Log-Balancedness of the Sequence for the Alternating Sums of Motzkin Numbers*, INTEGERS 26 (2026), Article A55, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.motzkinNumber_add_motzkinAlternatingSum_logBalanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#motzkin-number-add-motzkin-alternating-s).
+Stated but not proved: `MetaMathlibExt.motzkinNumber_add_motzkinAlternatingSum_logBalanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#motzkin-number-add-motzkin-alternating-s).
 
 ## The alternating Fibonacci sums are eventually tempered
 
@@ -191,7 +191,7 @@ sequence $(W_n)_{n \ge 11}$ is tempered, with the conditions imposed at every in
 
 - Feng-Zhen Zhao, *The Log-Balancedness of the Sequence for the Alternating Sums of Motzkin Numbers*, INTEGERS 26 (2026), Article A55, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.fibonacciAlternatingSum_tempered` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#fibonacci-alternating-sum-tempered).
+Stated but not proved: `MetaMathlibExt.fibonacciAlternatingSum_tempered` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinAlternatingSumsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html#fibonacci-alternating-sum-tempered).
 
 ## Depends on
 
@@ -200,4 +200,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Alternating sums of Motzkin numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/alternating-sums-of-motzkin-numbers)

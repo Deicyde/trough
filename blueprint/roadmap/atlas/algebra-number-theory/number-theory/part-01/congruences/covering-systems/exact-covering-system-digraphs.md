@@ -7,7 +7,7 @@ statement: formalized
 
 # Exact covering system digraphs
 
-33 results, 8 proved and 25 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html).
+33 results, 8 proved and 25 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html).
 
 ## Edge relation of an exact covering system digraph
 
@@ -23,7 +23,7 @@ the definition itself places no condition on the $d_i$ and $a_i$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Section 1 (definition of `G_S`).
 
-Formalized by `MetaMathlibExt.ecsdAdj`, a definition declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-adj).
+Formalized by `MetaMathlibExt.ecsdAdj`, a definition declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-adj).
 
 ## Out-neighbours in a two-rule digraph
 
@@ -35,7 +35,7 @@ $y = d_2 x + a_2$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Section 1 (definition of `G_S`).
 
-Formalized by `MetaMathlibExt.ecsdAdj_two`, a theorem declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-adj-two).
+Formalized by `MetaMathlibExt.ecsdAdj_two`, a theorem declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-adj-two).
 
 ## $k$-descendants in a digraph on the integers
 
@@ -49,7 +49,7 @@ $1 \le i \le k$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Section 1 (definition of `k`-descendant).
 
-Formalized by `MetaMathlibExt.IsKDescendant`, a definition declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#is-kdescendant).
+Formalized by `MetaMathlibExt.IsKDescendant`, a definition declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#is-kdescendant).
 
 ## The only $0$-descendant of a vertex is itself
 
@@ -60,7 +60,7 @@ $m, n \in \mathbb{Z}$. Then $n$ is a $0$-descendant of $m$ in $R$ if and only if
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Section 1 (definition of `k`-descendant).
 
-Formalized by `MetaMathlibExt.isKDescendant_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#is-kdescendant-zero).
+Formalized by `MetaMathlibExt.isKDescendant_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#is-kdescendant-zero).
 
 ## The $1$-descendants are the out-neighbours
 
@@ -72,7 +72,7 @@ $m \to n$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Section 1 (definition of successor).
 
-Formalized by `MetaMathlibExt.isKDescendant_one`, a theorem declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#is-kdescendant-one).
+Formalized by `MetaMathlibExt.isKDescendant_one`, a theorem declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#is-kdescendant-one).
 
 ## Cycles of a digraph on the integers
 
@@ -85,7 +85,7 @@ $c_t \to c_1$ (for $t = 1$ this means a loop $c_1 \to c_1$).
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Section 2 (cycles `C = (c₁, …, c_t)`).
 
-Formalized by `MetaMathlibExt.IsDigraphCycle`, a definition declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#is-digraph-cycle).
+Formalized by `MetaMathlibExt.IsDigraphCycle`, a definition declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#is-digraph-cycle).
 
 ## One-vertex cycles of a digraph on the integers
 
@@ -97,7 +97,7 @@ $x \to x$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Section 2 (cycles of length 1).
 
-Formalized by `MetaMathlibExt.isDigraphCycle_singleton`, a theorem declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#is-digraph-cycle-singleton).
+Formalized by `MetaMathlibExt.isDigraphCycle_singleton`, a theorem declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#is-digraph-cycle-singleton).
 
 ## Two-vertex cycles of a digraph on the integers
 
@@ -109,7 +109,7 @@ edges $x \to y$ and $y \to x$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Section 2 (2-cycles).
 
-Formalized by `MetaMathlibExt.isDigraphCycle_pair`, a theorem declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#is-digraph-cycle-pair).
+Formalized by `MetaMathlibExt.isDigraphCycle_pair`, a theorem declared in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#is-digraph-cycle-pair).
 
 ## Translation isomorphism of exact covering system digraphs
 
@@ -124,7 +124,7 @@ The paper's exact-covering hypothesis on the rules is not needed.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.ecsdAdj_shift_relIso` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-adj-shift-rel-iso).
+Stated but not proved: `MetaMathlibExt.ecsdAdj_shift_relIso` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-adj-shift-rel-iso).
 
 ## Reflection isomorphism of exact covering system digraphs
 
@@ -139,7 +139,7 @@ The paper's exact-covering hypothesis on the rules is not needed.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.ecsdAdj_neg_shift_relIso` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-adj-neg-shift-rel-iso).
+Stated but not proved: `MetaMathlibExt.ecsdAdj_neg_shift_relIso` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-adj-neg-shift-rel-iso).
 
 ## Normal form of the ECSDs $G(2n + a_1, 2n + a_2)$
 
@@ -152,7 +152,7 @@ to $G(2n, 2n - a)$ for some odd natural number $a$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.ecsd_type_one_relIso` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-type-one-rel-iso).
+Stated but not proved: `MetaMathlibExt.ecsd_type_one_relIso` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-type-one-rel-iso).
 
 ## Normal form of Type 2 exact covering system digraphs
 
@@ -167,7 +167,7 @@ $n = -2m + a$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.ecsd_type_two_relIso` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-type-two-rel-iso).
+Stated but not proved: `MetaMathlibExt.ecsd_type_two_relIso` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-type-two-rel-iso).
 
 ## Normal forms of the ECSDs $G(-2n + a_1, -2n + a_2)$
 
@@ -182,7 +182,7 @@ $G(-2n + 1, -2n + a)$ for an even integer $a$ with $a \equiv 2 \pmod 3$ (Type 3.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.ecsd_type_three_relIso` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-type-three-rel-iso).
+Stated but not proved: `MetaMathlibExt.ecsd_type_three_relIso` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-type-three-rel-iso).
 
 ## Cycles of the digraph $G(2n, 2n - a)$
 
@@ -203,7 +203,7 @@ $(t c_1, \dots, t c_s)$ is a cycle of $G_a$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.ecsd_two_two_sub_cycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-two-two-sub-cycles).
+Stated but not proved: `MetaMathlibExt.ecsd_two_two_sub_cycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-two-two-sub-cycles).
 
 ## Descendants in the digraph $G(2n, -2n + a)$
 
@@ -220,7 +220,7 @@ covering system digraph.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.ecsd_two_neg_two_descendants` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-two-neg-two-descendants).
+Stated but not proved: `MetaMathlibExt.ecsd_two_neg_two_descendants` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-two-neg-two-descendants).
 
 ## Cycles of the digraph $G(2n, -2n + a)$
 
@@ -236,7 +236,7 @@ a cycle of $G_a$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.ecsd_two_neg_two_cycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-two-neg-two-cycles).
+Stated but not proved: `MetaMathlibExt.ecsd_two_neg_two_cycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-two-neg-two-cycles).
 
 ## Descendants modulo the difference of offsets
 
@@ -254,7 +254,7 @@ The exact-covering condition on $a_1, a_2$ is not needed.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.ecsd_neg_two_descendant_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-neg-two-descendant-mod-eq).
+Stated but not proved: `MetaMathlibExt.ecsd_neg_two_descendant_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-neg-two-descendant-mod-eq).
 
 ## Cyclic vertices in every residue class
 
@@ -266,7 +266,7 @@ cycle of $G(-2n + a_1, -2n + a_2)$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.ecsd_neg_two_cyclic_residues` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-neg-two-cyclic-residues).
+Stated but not proved: `MetaMathlibExt.ecsd_neg_two_cyclic_residues` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-neg-two-cyclic-residues).
 
 ## Cycles of $G(-2n, -2n + a)$
 
@@ -295,7 +295,7 @@ The paper also assumes $a'$ odd in (v); this follows from $a$ odd.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.ecsd_neg_two_neg_two_cycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-neg-two-neg-two-cycles).
+Stated but not proved: `MetaMathlibExt.ecsd_neg_two_neg_two_cycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-neg-two-neg-two-cycles).
 
 ## Cyclic vertices of $G(-2n + 1, -2n + a)$ when $a \equiv 1 \pmod 3$
 
@@ -309,7 +309,7 @@ if $-(a - 1)/3 < m < 2a/3$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.ecsd_type_three_two_cyclic_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-type-three-two-cyclic-iff).
+Stated but not proved: `MetaMathlibExt.ecsd_type_three_two_cyclic_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-type-three-two-cyclic-iff).
 
 ## Bounds on the cyclic vertices of $G(-2n + 1, -2n + a)$ when $a \equiv 2 \pmod 3$
 
@@ -323,7 +323,7 @@ then $-(a - 1)/3 < m < 2a/3$; if $a \le -2$, then $-2(|a| + 1)/3 < m < (|a| + 3)
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.ecsd_type_three_three_cyclic_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-type-three-three-cyclic-bounds).
+Stated but not proved: `MetaMathlibExt.ecsd_type_three_three_cyclic_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-type-three-three-cyclic-bounds).
 
 ## Cyclic vertices of $G(-2n + 1, -2n + a)$ and their residues when $a \equiv 2 \pmod 3$
 
@@ -341,7 +341,7 @@ two distinct cyclic integers that are congruent modulo $|a - 1|$ are $\ell$ and 
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.ecsd_type_three_three_cyclic` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-type-three-three-cyclic).
+Stated but not proved: `MetaMathlibExt.ecsd_type_three_three_cyclic` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-type-three-three-cyclic).
 
 ## Digit representations and connected digraphs
 
@@ -359,7 +359,7 @@ The paper also states that the representation is unique; that clause is omitted 
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 14.
 
-Stated but not proved: `MetaMathlibExt.ecsd_digit_representation_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-digit-representation-iff).
+Stated but not proved: `MetaMathlibExt.ecsd_digit_representation_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-digit-representation-iff).
 
 ## Connectivity of $G(-2n + 1, -2n + a)$
 
@@ -371,7 +371,7 @@ integer $m \ge 0$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 15.
 
-Stated but not proved: `MetaMathlibExt.ecsd_one_component_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-one-component-iff).
+Stated but not proved: `MetaMathlibExt.ecsd_one_component_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-one-component-iff).
 
 ## Shortest walks to $\pm(a - 1)$ in $G(-2n + 1, -2n + a)$
 
@@ -388,7 +388,7 @@ edges, which holds when the digraph has a single component.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 16.
 
-Stated but not proved: `MetaMathlibExt.ecsd_path_length_to_a_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-path-length-to-a-sub-one).
+Stated but not proved: `MetaMathlibExt.ecsd_path_length_to_a_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-path-length-to-a-sub-one).
 
 ## Degree-2 ECSDs with one component and $0$ on a cycle
 
@@ -409,7 +409,7 @@ cycle $(0, 1)$, although $\max(1, 2) = 2 > 2 \cdot 1 - 1$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 17.
 
-Stated but not proved: `MetaMathlibExt.ecsd_single_component_zero_cyclic_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-single-component-zero-cyclic-iff).
+Stated but not proved: `MetaMathlibExt.ecsd_single_component_zero_cyclic_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-single-component-zero-cyclic-iff).
 
 ## Negabinary representations with digits $1$ and $a$
 
@@ -422,7 +422,7 @@ $m \ge 0$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.negabinary_digits_one_a_complete_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#negabinary-digits-one-a-complete-iff).
+Stated but not proved: `MetaMathlibExt.negabinary_digits_one_a_complete_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#negabinary-digits-one-a-complete-iff).
 
 ## Negabinary representations with two digits
 
@@ -440,7 +440,7 @@ The paper's alternative $\{a_1, a_2\} = \{0, \pm 1\}$ lies in the excluded case 
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.negabinary_two_digits_complete_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#negabinary-two-digits-complete-iff).
+Stated but not proved: `MetaMathlibExt.negabinary_two_digits_complete_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#negabinary-two-digits-complete-iff).
 
 ## Divisibility of $2^{3n} + 1$ from $2^n + 1$
 
@@ -454,7 +454,7 @@ $(2^{3n} + 1)/3$. For $n = 0$ the hypothesis fails, so positivity is not assumed
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.three_mul_dvd_two_pow_add_one_cube` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 430](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L430). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#three-mul-dvd-two-pow-add-one-cube).
+Stated but not proved: `MetaMathlibExt.three_mul_dvd_two_pow_add_one_cube` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 430](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L430). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#three-mul-dvd-two-pow-add-one-cube).
 
 ## Divisibility of $1 - (-2)^{3k}$ from $1 - (-2)^k$
 
@@ -469,7 +469,7 @@ and $k$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.three_mul_dvd_one_sub_neg_two_pow_cube` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 440](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L440). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#three-mul-dvd-one-sub-neg-two-pow-cube).
+Stated but not proved: `MetaMathlibExt.three_mul_dvd_one_sub_neg_two_pow_cube` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 440](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L440). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#three-mul-dvd-one-sub-neg-two-pow-cube).
 
 ## Bounding the power of $3$ dividing $2^{3k} + 1$
 
@@ -484,7 +484,7 @@ does not divide $2^{3k} + 1$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.three_pow_not_dvd_two_pow_add_one_cube` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#three-pow-not-dvd-two-pow-add-one-cube).
+Stated but not proved: `MetaMathlibExt.three_pow_not_dvd_two_pow_add_one_cube` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#three-pow-not-dvd-two-pow-add-one-cube).
 
 ## Nine divides $n$ when $n > 3$ and $3n$ divides $2^n + 1$
 
@@ -498,7 +498,7 @@ in the paper; for even $n$ it never holds, since $3$ does not divide $2^n + 1$.
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Lemma 4, quoting [3].
 
-Stated but not proved: `MetaMathlibExt.nine_dvd_of_three_mul_dvd_two_pow_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#nine-dvd-of-three-mul-dvd-two-pow-add-on).
+Stated but not proved: `MetaMathlibExt.nine_dvd_of_three_mul_dvd_two_pow_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#nine-dvd-of-three-mul-dvd-two-pow-add-on).
 
 ## Single-component degree-2 ECSDs up to isomorphism
 
@@ -513,7 +513,7 @@ $G(-2n + 1, -2n + a)$ for some integer $a$ with $a = 0$, $a = 2$ or $a \equiv 1 
 
 - Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.ecsd_single_component_relIso` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 468](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L468). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-single-component-rel-iso).
+Stated but not proved: `MetaMathlibExt.ecsd_single_component_relIso` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean, line 468](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ExactCoveringSystemDigraphWanted.lean#L468). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html#ecsd-single-component-rel-iso).
 
 ## Depends on
 
@@ -522,4 +522,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Exact covering system digraphs](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/congruences/covering-systems/exact-covering-system-digraphs)

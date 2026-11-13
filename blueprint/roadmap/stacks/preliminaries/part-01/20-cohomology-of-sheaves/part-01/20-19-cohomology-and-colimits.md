@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.19 Cohomology and colimits
 
-Section 20.19 of the Stacks Project, [Tag 01FE](https://stacks.math.columbia.edu/tag/01FE). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.19 of the Stacks Project, [Tag 01FE](https://stacks.math.columbia.edu/tag/01FE). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01FF, a lemma
 
 [Tag 01FF](https://stacks.math.columbia.edu/tag/01FF) in the Stacks Project.
 
-**`Stacks.Cohomology.ModuleColimit.isIso_colimit_post_rightDerived_evaluation_of_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/CohomologyFilteredColimits.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/CohomologyFilteredColimits.lean#L150).
+**`Stacks.Cohomology.ModuleColimit.isIso_colimit_post_rightDerived_evaluation_of_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/CohomologyFilteredColimits.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/CohomologyFilteredColimits.lean#L151).
 
 > **[Stacks, Tag 01FF] at the module-valued spelling, in the tag's own shape.** Let `X` be a
 > space with a basis of quasi-compact opens whose pairwise intersections are quasi-compact, let
@@ -35,7 +35,7 @@ theorem isIso_colimit_post_rightDerived_evaluation_of_isCompact
     IsIso (colimit.post F ((_root_.SheafOfModules.evaluation R (op U)).rightDerived q))
 ```
 
-**`Stacks.Cohomology.Vanishing.isIso_colimit_post_Hfunctor_of_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredColimits/CohomologyOverAQuasiCompactOpen.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredColimits/CohomologyOverAQuasiCompactOpen.lean#L318).
+**`Stacks.Cohomology.Vanishing.isIso_colimit_post_Hfunctor_of_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredColimits/CohomologyOverAQuasiCompactOpen.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/FilteredColimits/CohomologyOverAQuasiCompactOpen.lean#L318).
 
 > **Stacks 01FF.**  Let `X` be a topological space with a basis of quasi-compact opens whose
 > pairwise intersections are quasi-compact, let `O_X` be a sheaf of rings on `X` and let `U` be a
@@ -69,7 +69,7 @@ theorem isIso_colimit_post_Hfunctor_of_isCompact
 
 [Tag 0H7A](https://stacks.math.columbia.edu/tag/0H7A) in the Stacks Project.
 
-**`Stacks.Cohomology.AbelianSheaf.preservesColimit_higherDirectImage_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredColimits/AbelianHigherDirectImage.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredColimits/AbelianHigherDirectImage.lean#L111).
+**`Stacks.Cohomology.AbelianSheaf.preservesColimit_higherDirectImage_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredColimits/AbelianHigherDirectImage.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/FilteredColimits/AbelianHigherDirectImage.lean#L111).
 
 > **Stacks 0H7A.** If cohomology over the inverse images of the opens of a basis of `Y`
 > commutes with a colimit of abelian sheaves on `X`, then so does the degree-`p` higher direct
@@ -92,7 +92,7 @@ theorem preservesColimit_higherDirectImage_of_isBasis
 
 [Tag 0A37](https://stacks.math.columbia.edu/tag/0A37) in the Stacks Project.
 
-**`Stacks.Cohomology.SpectralLimit.SpectralAbelianSheafSystem.nonempty_and_isIso_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SpectralSpaceLimit/ComparisonInEveryDegree.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SpectralSpaceLimit/ComparisonInEveryDegree.lean#L270). The attribute's comment: “quasi-compact open: colim\_\{a : j → i} Hᵖ(f\_a⁻¹(Uᵢ), 𝓕ⱼ) = Hᵖ(pᵢ⁻¹(Uᵢ), 𝓕) for every p ≥ 0”.
+**`Stacks.Cohomology.SpectralLimit.SpectralAbelianSheafSystem.nonempty_and_isIso_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SpectralSpaceLimit/ComparisonInEveryDegree.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/SpectralSpaceLimit/ComparisonInEveryDegree.lean#L270). The attribute's comment: “quasi-compact open: colim\_\{a : j → i} Hᵖ(f\_a⁻¹(Uᵢ), 𝓕ⱼ) = Hᵖ(pᵢ⁻¹(Uᵢ), 𝓕) for every p ≥ 0”.
 
 > **Stacks 0A37, over a quasi-compact open of a stage.**  For a cofiltered system of spectral
 > spaces `Xⱼ` with spectral transition maps and abelian sheaves `𝓕ⱼ` with compatible `f`-maps, the
@@ -110,7 +110,7 @@ theorem nonempty_and_isIso_comparison (c : Cone S.E) (hc : IsLimit c) (i : J)
       (S.stageOpenCone c i U) p, IsIso D.comparison
 ```
 
-**`Stacks.Cohomology.SpectralLimit.SpectralAbelianSheafSystem.nonempty_and_isIso_comparison_global`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SpectralSpaceLimit/ComparisonInEveryDegree.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SpectralSpaceLimit/ComparisonInEveryDegree.lean#L282). The attribute's comment: “in particular Hᵖ(X, 𝓕) = colim Hᵖ(Xᵢ, 𝓕ᵢ) for every p ≥ 0”.
+**`Stacks.Cohomology.SpectralLimit.SpectralAbelianSheafSystem.nonempty_and_isIso_comparison_global`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SpectralSpaceLimit/ComparisonInEveryDegree.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/SpectralSpaceLimit/ComparisonInEveryDegree.lean#L282). The attribute's comment: “in particular Hᵖ(X, 𝓕) = colim Hᵖ(Xᵢ, 𝓕ᵢ) for every p ≥ 0”.
 
 > **Stacks 0A37, the global statement**: for a limiting cone `c` of the system and `p ≥ 0`, the
 > cohomology cocone `colim Hᵖ(Xᵢ, 𝓕ᵢ) ⟶ Hᵖ(X, 𝓕)` exists and its comparison out of the colimit is
@@ -129,4 +129,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.19, Tag 01FE](https://stacks.math.columbia.edu/tag/01FE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

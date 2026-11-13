@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 28.2 Constructible sets to 28.22 Locally projective modules
+# 28.2 Constructible sets to 28.21 Locally free modules
 
 - [28.2 Constructible sets](28-2-constructible-sets.md)
 - [28.3 Integral, irreducible, and reduced schemes](28-3-integral-irreducible-and-reduced-schemes.md)
@@ -16,6 +16,7 @@ navigation: transparent
 - [28.11 Catenary schemes](28-11-catenary-schemes.md)
 - [28.12 Serre's conditions](28-12-serres-conditions.md)
 - [28.13 Japanese and Nagata schemes](28-13-japanese-and-nagata-schemes.md)
+- [28.14 G-schemes](28-14-g-schemes.md)
 - [28.15 The singular locus](28-15-the-singular-locus.md)
 - [28.16 Local irreducibility](28-16-local-irreducibility.md)
 - [28.17 Characterizing modules of finite type and finite presentation](28-17-characterizing-modules-of-finite-type-and.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [28.19 Quasi-affine schemes](28-19-quasi-affine-schemes.md)
 - [28.20 Flat modules](28-20-flat-modules.md)
 - [28.21 Locally free modules](28-21-locally-free-modules.md)
-- [28.22 Locally projective modules](28-22-locally-projective-modules.md)

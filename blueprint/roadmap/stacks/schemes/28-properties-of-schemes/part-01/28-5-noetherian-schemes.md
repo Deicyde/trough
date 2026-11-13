@@ -8,7 +8,7 @@ proof: formalized
 
 # 28.5 Noetherian schemes
 
-Section 28.5 of the Stacks Project, [Tag 01OU](https://stacks.math.columbia.edu/tag/01OU). 10 tags here are carried by 15 declarations of the repository (all in StacksFrontier) and 8 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 28.5 of the Stacks Project, [Tag 01OU](https://stacks.math.columbia.edu/tag/01OU). 10 tags here are carried by 15 declarations of the repository (all in StacksFrontier) and 8 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01OV, a definition
 
@@ -16,9 +16,9 @@ Section 28.5 of the Stacks Project, [Tag 01OU](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.IsLocallyNoetherian`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsLocallyNoetherian#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch28.lean#L47) (StacksFrontier): “part (1): Mathlib's definition is the equivalent condition 01OW (2)”. References: EGA I (6.1.1); EGA I (10.4.2), “special case”; SGA 3 X (7.0).
-- [`AlgebraicGeometry.isLocallyNoetherian_iff_of_iSup_eq_top`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isLocallyNoetherian_iff_of_iSup_eq_top#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch28.lean#L49) (StacksFrontier): “part (1): equivalence of Mathlib's definition with an affine cover, as in (1)”. References: EGA I (6.1.1), “more general”; EGA I (6.1.3), “more general”; EGA I (10.4.2), “special case”.
-- [`AlgebraicGeometry.IsNoetherian`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsNoetherian#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch28.lean#L51) (StacksFrontier): “part (2): the definition of a Noetherian scheme”. References: EGA I (6.1.1); EGA I (10.4.2), “special case”; SGA 4½ Arcata (4.3).
+- [`AlgebraicGeometry.IsLocallyNoetherian`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsLocallyNoetherian#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch28.lean#L51) (StacksFrontier): “part (1): Mathlib's definition is the equivalent condition 01OW (2)”. References: EGA I (6.1.1); EGA I (10.4.2), “special case”; SGA 3 X (7.0).
+- [`AlgebraicGeometry.isLocallyNoetherian_iff_of_iSup_eq_top`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isLocallyNoetherian_iff_of_iSup_eq_top#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch28.lean#L53) (StacksFrontier): “part (1): equivalence of Mathlib's definition with an affine cover, as in (1)”. References: EGA I (6.1.1), “more general”; EGA I (6.1.3), “more general”; EGA I (10.4.2), “special case”.
+- [`AlgebraicGeometry.IsNoetherian`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsNoetherian#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch28.lean#L55) (StacksFrontier): “part (2): the definition of a Noetherian scheme”. References: EGA I (6.1.1); EGA I (10.4.2), “special case”; SGA 4½ Arcata (4.3).
 
 ## Tag 01OW, a lemma
 
@@ -26,17 +26,17 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.IsLocallyNoetherian`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsLocallyNoetherian#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch28.lean#L53) (StacksFrontier): “part (1) ⇔ (2): Mathlib defines locally Noetherian by condition (2)”. References: EGA I (6.1.1); EGA I (10.4.2), “special case”; SGA 3 X (7.0).
-- [`AlgebraicGeometry.isLocallyNoetherian_iff_of_iSup_eq_top`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isLocallyNoetherian_iff_of_iSup_eq_top#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch28.lean#L55) (StacksFrontier): “part (1) ⇔ (3)”. References: EGA I (6.1.1), “more general”; EGA I (6.1.3), “more general”; EGA I (10.4.2), “special case”.
-- [`AlgebraicGeometry.isLocallyNoetherian_iff_of_affine_openCover`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isLocallyNoetherian_iff_of_affine_openCover#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch28.lean#L56) (StacksFrontier): “part (1) ⇔ (3), for an affine open cover”. References: EGA I (6.1.1), “more general”; EGA I (6.1.3), “more general”; EGA I (10.4.2), “special case”.
-- [`AlgebraicGeometry.isLocallyNoetherian_iff_openCover`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isLocallyNoetherian_iff_openCover#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch28.lean#L58) (StacksFrontier): “part (1) ⇔ (4)”. References: EGA I (6.1.4), “special case”; EGA I (10.4.4), “special case”; EGA IV (1.3.3), “special case”.
-- [`AlgebraicGeometry.isLocallyNoetherian_of_isOpenImmersion`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isLocallyNoetherian_of_isOpenImmersion#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch28.lean#L59) (StacksFrontier): “the `Moreover` clause, for any open immersion”. References: EGA I (6.1.4), “special case”; EGA I (10.4.4), “special case”; EGA IV (1.3.3), “open immersions”; EGA IV (20.3.6), “partial”.
+- [`AlgebraicGeometry.IsLocallyNoetherian`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsLocallyNoetherian#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch28.lean#L57) (StacksFrontier): “part (1) ⇔ (2): Mathlib defines locally Noetherian by condition (2)”. References: EGA I (6.1.1); EGA I (10.4.2), “special case”; SGA 3 X (7.0).
+- [`AlgebraicGeometry.isLocallyNoetherian_iff_of_iSup_eq_top`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isLocallyNoetherian_iff_of_iSup_eq_top#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch28.lean#L59) (StacksFrontier): “part (1) ⇔ (3)”. References: EGA I (6.1.1), “more general”; EGA I (6.1.3), “more general”; EGA I (10.4.2), “special case”.
+- [`AlgebraicGeometry.isLocallyNoetherian_iff_of_affine_openCover`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isLocallyNoetherian_iff_of_affine_openCover#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch28.lean#L60) (StacksFrontier): “part (1) ⇔ (3), for an affine open cover”. References: EGA I (6.1.1), “more general”; EGA I (6.1.3), “more general”; EGA I (10.4.2), “special case”.
+- [`AlgebraicGeometry.isLocallyNoetherian_iff_openCover`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isLocallyNoetherian_iff_openCover#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch28.lean#L62) (StacksFrontier): “part (1) ⇔ (4)”. References: EGA I (6.1.4), “special case”; EGA I (10.4.4), “special case”; EGA IV (1.3.3), “special case”.
+- [`AlgebraicGeometry.isLocallyNoetherian_of_isOpenImmersion`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isLocallyNoetherian_of_isOpenImmersion#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch28.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch28.lean#L63) (StacksFrontier): “the `Moreover` clause, for any open immersion”. References: EGA I (6.1.4), “special case”; EGA I (10.4.4), “special case”; EGA IV (1.3.3), “open immersions”; EGA IV (20.3.6), “partial”.
 
 ## Tag 01OX, a lemma
 
 [Tag 01OX](https://stacks.math.columbia.edu/tag/01OX) in the Stacks Project.
 
-**`AlgebraicGeometry.quasiCompact_of_isImmersion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/NoetherianImmersion.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/NoetherianImmersion.lean#L43). The attribute's comment: “all immersions”. References: SGA 3 VIB (1.4.2).
+**`AlgebraicGeometry.quasiCompact_of_isImmersion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/NoetherianImmersion.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/NoetherianImmersion.lean#L43). The attribute's comment: “all immersions”. References: SGA 3 VIB (1.4.2).
 
 > An immersion into a locally Noetherian scheme is quasi-compact.
 
@@ -50,7 +50,7 @@ instance (priority := 50) quasiCompact_of_isImmersion
 
 [Tag 01OZ](https://stacks.math.columbia.edu/tag/01OZ) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyNoetherianSpace_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Noetherian.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Noetherian.lean#L53). The attribute's comment: “the (locally) half: a locally Noetherian scheme has a locally Noetherian space”.
+**`AlgebraicGeometry.isLocallyNoetherianSpace_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Noetherian.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/Noetherian.lean#L53). The attribute's comment: “the (locally) half: a locally Noetherian scheme has a locally Noetherian space”.
 
 > The underlying topological space of a locally Noetherian scheme is locally Noetherian.
 
@@ -64,7 +64,7 @@ theorem isLocallyNoetherianSpace_of_isLocallyNoetherian
 
 [Tag 02IK](https://stacks.math.columbia.edu/tag/02IK) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyNoetherian_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/NoetherianLocallyClosed.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/NoetherianLocallyClosed.lean#L55). The attribute's comment: “the locally Noetherian case, for the source of an arbitrary immersion”. References: EGA I (6.1.4).
+**`AlgebraicGeometry.isLocallyNoetherian_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/NoetherianLocallyClosed.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/NoetherianLocallyClosed.lean#L55). The attribute's comment: “the locally Noetherian case, for the source of an arbitrary immersion”. References: EGA I (6.1.4).
 
 > A locally closed subscheme of a locally Noetherian scheme is locally Noetherian: the source
 > of an immersion into a locally Noetherian scheme is locally Noetherian.
@@ -74,7 +74,7 @@ theorem isLocallyNoetherian_of_isImmersion [IsImmersion f] [IsLocallyNoetherian 
     IsLocallyNoetherian Z
 ```
 
-**`AlgebraicGeometry.isNoetherian_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/NoetherianLocallyClosed.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/NoetherianLocallyClosed.lean#L69). The attribute's comment: “the Noetherian case, for the source of an arbitrary immersion”. References: EGA I (6.1.4).
+**`AlgebraicGeometry.isNoetherian_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/NoetherianLocallyClosed.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/NoetherianLocallyClosed.lean#L69). The attribute's comment: “the Noetherian case, for the source of an arbitrary immersion”. References: EGA I (6.1.4).
 
 > A locally closed subscheme of a Noetherian scheme is Noetherian: the source of an immersion
 > into a Noetherian scheme is Noetherian.
@@ -87,7 +87,7 @@ theorem isNoetherian_of_isImmersion [IsImmersion f] [IsNoetherian X] : IsNoether
 
 [Tag 02IL](https://stacks.math.columbia.edu/tag/02IL) in the Stacks Project.
 
-**`AlgebraicGeometry.closedPoints_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/NoetherianClosedPoints.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/NoetherianClosedPoints.lean#L96). The attribute's comment: “nonempty scheme”.
+**`AlgebraicGeometry.closedPoints_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/NoetherianClosedPoints.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/NoetherianClosedPoints.lean#L96). The attribute's comment: “nonempty scheme”.
 
 > Every nonempty locally Noetherian scheme has a closed point.
 
@@ -96,7 +96,7 @@ theorem closedPoints_nonempty (X : Scheme.{u}) [IsLocallyNoetherian X] [Nonempty
     (closedPoints X).Nonempty
 ```
 
-**`AlgebraicGeometry.nonempty_inter_closedPoints_of_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/NoetherianClosedPoints.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/NoetherianClosedPoints.lean#L253). The attribute's comment: “nonempty closed subset”. References: EGA IV (5.1.11).
+**`AlgebraicGeometry.nonempty_inter_closedPoints_of_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/NoetherianClosedPoints.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/NoetherianClosedPoints.lean#L253). The attribute's comment: “nonempty closed subset”. References: EGA IV (5.1.11).
 
 > Every nonempty closed subset of a locally Noetherian scheme contains a point that is
 > closed in the ambient scheme.
@@ -107,7 +107,7 @@ theorem nonempty_inter_closedPoints_of_isClosed (X : Scheme.{u}) [IsLocallyNoeth
     (Z ∩ closedPoints X).Nonempty
 ```
 
-**`AlgebraicGeometry.exists_specializes_closedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/NoetherianClosedPoints.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/NoetherianClosedPoints.lean#L278). The attribute's comment: “closed specialization”.
+**`AlgebraicGeometry.exists_specializes_closedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/NoetherianClosedPoints.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/NoetherianClosedPoints.lean#L278). The attribute's comment: “closed specialization”.
 
 > Every point of a locally Noetherian scheme specializes to a closed point.
 
@@ -120,7 +120,7 @@ theorem exists_specializes_closedPoint (X : Scheme.{u}) [IsLocallyNoetherian X] 
 
 [Tag 054F](https://stacks.math.columbia.edu/tag/054F) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_dvr_morphism_of_specializes_with_residueField_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/DiscreteValuation.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/DiscreteValuation.lean#L226). The attribute's comment: “part (2)”. References: EGA II (7.1.4), “special case”; EGA II (7.1.9), “more general”; EGA IV (15.5.2.2), “1°”; SGA 3 XV (3.3), “partial”.
+**`AlgebraicGeometry.exists_dvr_morphism_of_specializes_with_residueField_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/DiscreteValuation.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/DiscreteValuation.lean#L226). The attribute's comment: “part (2)”. References: EGA II (7.1.4), “special case”; EGA II (7.1.9), “more general”; EGA IV (15.5.2.2), “1°”; SGA 3 XV (3.3), “partial”.
 
 > **Stacks Project, Tag 054F, part (2).** For a strict specialization and a
 > finitely generated extension `K` of the residue field at the generic point,
@@ -144,7 +144,7 @@ theorem exists_dvr_morphism_of_specializes_with_residueField_equiv
               algebraMap (X.residueField x') K a
 ```
 
-**`AlgebraicGeometry.exists_dvr_morphism_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/DiscreteValuation.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/DiscreteValuation.lean#L309). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exists_dvr_morphism_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/DiscreteValuation.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/DiscreteValuation.lean#L309). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 054F, part (1).** A specialization of points on a
 > locally Noetherian scheme is the image of the generic-to-closed specialization
@@ -163,7 +163,7 @@ theorem exists_dvr_morphism_of_specializes (X : Scheme.{u}) [IsLocallyNoetherian
 
 [Tag 0CXG](https://stacks.math.columbia.edu/tag/0CXG) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_infinite_subset_pairwise_not_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Specialization.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Specialization.lean#L97).
+**`AlgebraicGeometry.exists_infinite_subset_pairwise_not_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Specialization.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/Specialization.lean#L97).
 
 > An infinite set of points on a Noetherian scheme contains an infinite subset with no
 > nontrivial specializations among its points.
@@ -179,7 +179,7 @@ theorem exists_infinite_subset_pairwise_not_specializes (S : Scheme.{u}) [IsNoet
 
 [Tag 0G2R](https://stacks.math.columbia.edu/tag/0G2R) in the Stacks Project.
 
-**`maximalPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean#L56). The attribute's comment: “the set of maximal points”.
+**`maximalPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean#L56). The attribute's comment: “the set of maximal points”.
 
 > The points of `T` which admit no nontrivial generalization belonging to `T`.
 
@@ -187,7 +187,7 @@ theorem exists_infinite_subset_pairwise_not_specializes (S : Scheme.{u}) [IsNoet
 def maximalPoints {X : Type u} [TopologicalSpace X] (T : Set X) : Set X
 ```
 
-**`specialization_eq_of_mem_maximalPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean#L61). The attribute's comment: “part (a)”.
+**`specialization_eq_of_mem_maximalPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean#L61). The attribute's comment: “part (a)”.
 
 > There is no nontrivial specialization between maximal points of a subset.
 
@@ -198,7 +198,7 @@ theorem specialization_eq_of_mem_maximalPoints
     (hxy : x ⤳ y) : x = y
 ```
 
-**`AlgebraicGeometry.exists_maximalPoint_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean#L72). The attribute's comment: “part (b)”.
+**`AlgebraicGeometry.exists_maximalPoint_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean#L72). The attribute's comment: “part (b)”.
 
 > Every point of a subset of a Noetherian scheme is a specialization of a maximal point
 > of that subset.
@@ -209,7 +209,7 @@ theorem exists_maximalPoint_specializes
     ∃ y ∈ maximalPoints T, y ⤳ x
 ```
 
-**`AlgebraicGeometry.closure_maximalPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean#L103). The attribute's comment: “part (c)”.
+**`AlgebraicGeometry.closure_maximalPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean#L103). The attribute's comment: “part (c)”.
 
 > The maximal points of a subset of a Noetherian scheme have the same closure as the
 > subset.
@@ -224,7 +224,7 @@ theorem closure_maximalPoints
 
 [Tag 0G2F](https://stacks.math.columbia.edu/tag/0G2F) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_countable_dense_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean#L290).
+**`AlgebraicGeometry.exists_countable_dense_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/MaximalPoints.lean#L290).
 
 > An infinite dense subset of a Noetherian scheme contains a countable dense
 > subset.
@@ -242,4 +242,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 28.5, Tag 01OU](https://stacks.math.columbia.edu/tag/01OU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

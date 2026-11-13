@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.EtaleCohomology.smallEtalePushforwardFullyFaithful_of_integral_universallyInjective, Stacks.EtaleCohomology.smallEtalePushforward_essImage_iff_of_integral_universallyInjective, Stacks.EtaleCohomology.smallEtalePushforwardCompInverseImageIso_of_integral_universallyInjective, Stacks.EtaleCohomology.smallEtalePushforwardAbFullyFaithful_of_integral_universallyInjective, Stacks.EtaleCohomology.smallEtalePushforwardAb_essImage_iff_of_integral_universallyInjective, Stacks.EtaleCohomology.smallEtalePushforwardAbCompPullbackIso_of_integral_universallyInjective, Stacks.EtaleCohomology.smallEtalePushforwardAb_essImage_iff_of_integral_universallyInjective', Stacks.EtaleCohomology.smallEtalePushforward_fullyFaithful_essImage_leftInverse_of_integral_universallyInjective
+lean: Stacks.EtaleCohomology.smallEtalePushforwardFullyFaithful_of_integral_universallyInjective, Stacks.EtaleCohomology.smallEtalePushforward_essImage_iff_of_integral_universallyInjective, Stacks.EtaleCohomology.smallEtalePushforwardCompInverseImageIso_of_integral_universallyInjective, Stacks.EtaleCohomology.smallEtalePushforwardAbFullyFaithful_of_integral_universallyInjective, Stacks.EtaleCohomology.smallEtalePushforwardAbCompPullbackIso_of_integral_universallyInjective, Stacks.EtaleCohomology.smallEtalePushforwardAb_essImage_iff_of_integral_universallyInjective', Stacks.EtaleCohomology.smallEtalePushforwardAb_essImage_iff_support_of_integral_universallyInjective, Stacks.EtaleCohomology.smallEtalePushforward_fullyFaithful_essImage_leftInverse_of_integral_universallyInjective
 statement: formalized
 proof: formalized
 ---
 
 # 59.47 Integral universally injective morphisms
 
-Section 59.47 of the Stacks Project, [Tag 04FY](https://stacks.math.columbia.edu/tag/04FY). 1 tag here is carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.47 of the Stacks Project, [Tag 04FY](https://stacks.math.columbia.edu/tag/04FY). 1 tag here is carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04FZ, a proposition
 
 [Tag 04FZ](https://stacks.math.columbia.edu/tag/04FZ) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.smallEtalePushforwardFullyFaithful_of_integral_universallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean#L179). The attribute's comment: “part (1): fully faithful”.
+**`Stacks.EtaleCohomology.smallEtalePushforwardFullyFaithful_of_integral_universallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean#L172). The attribute's comment: “part (1): fully faithful”.
 
 > **Stacks 04FZ, part (1).** Direct image of sheaves of sets along an integral universally
 > injective morphism is fully faithful.
@@ -25,7 +25,7 @@ public def smallEtalePushforwardFullyFaithful_of_integral_universallyInjective :
       (smallEtaleTopology Y) (smallEtaleTopology X)).FullyFaithful
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforward_essImage_iff_of_integral_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean#L194). The attribute's comment: “part (1): essential image”.
+**`Stacks.EtaleCohomology.smallEtalePushforward_essImage_iff_of_integral_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean#L187). The attribute's comment: “part (1): essential image”.
 
 > **Stacks 04FZ, part (1).** A sheaf of sets on `Y_étale` lies in the essential image of direct
 > image along an integral universally injective morphism exactly when its restriction to the open
@@ -40,7 +40,7 @@ public theorem smallEtalePushforward_essImage_iff_of_integral_universallyInjecti
         ((smallEtaleInverseImage.{u, v} (openComplementRange f).ι).obj F))
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforwardCompInverseImageIso_of_integral_universallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean#L208). The attribute's comment: “trailing clause for sheaves of sets: left inverse”.
+**`Stacks.EtaleCohomology.smallEtalePushforwardCompInverseImageIso_of_integral_universallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean#L201). The attribute's comment: “trailing clause for sheaves of sets: left inverse”.
 
 > **Stacks 04FZ, trailing clause.** Inverse image along an integral universally injective
 > morphism is a left inverse to direct image on sheaves of sets.
@@ -53,7 +53,7 @@ public def smallEtalePushforwardCompInverseImageIso_of_integral_universallyInjec
       𝟭 (Sheaf (smallEtaleTopology X) (Type (max (u + 1) v)))
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforwardAbFullyFaithful_of_integral_universallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean#L246). The attribute's comment: “part (2): fully faithful”.
+**`Stacks.EtaleCohomology.smallEtalePushforwardAbFullyFaithful_of_integral_universallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean#L239). The attribute's comment: “part (2): fully faithful”.
 
 > **Stacks 04FZ, part (2).** Direct image of abelian sheaves along an integral universally
 > injective morphism is fully faithful.
@@ -63,24 +63,7 @@ public def smallEtalePushforwardAbFullyFaithful_of_integral_universallyInjective
     (smallEtalePushforwardAb f).FullyFaithful
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforwardAb_essImage_iff_of_integral_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean#L268). The attribute's comment: “part (2): essential image”.
-
-> **Stacks 04FZ, part (2).** An abelian sheaf on `Y_étale` lies in the essential image of
-> direct image along an integral universally injective morphism exactly when its support is
-> contained in `f(X)`, that is, exactly when its restriction to the open complement of `f(X)`
-> vanishes.
-
-```lean
-public theorem smallEtalePushforwardAb_essImage_iff_of_integral_universallyInjective
-    (h04CA : AbelianEssImageClosedImmersion.{u})
-    (F : Sheaf (smallEtaleTopology Y) Ab.{u + 1}) :
-    (smallEtalePushforwardAb f).essImage F ↔
-      IsZero (((smallEtaleBaseChange (openComplementRange f).ι).sheafPullback Ab.{u + 1}
-        (smallEtaleTopology Y)
-        (smallEtaleTopology (openComplementRange f).toScheme)).obj F)
-```
-
-**`Stacks.EtaleCohomology.smallEtalePushforwardAbCompPullbackIso_of_integral_universallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean#L288). The attribute's comment: “trailing clause for abelian sheaves: left inverse”.
+**`Stacks.EtaleCohomology.smallEtalePushforwardAbCompPullbackIso_of_integral_universallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforward.lean#L280). The attribute's comment: “trailing clause for abelian sheaves: left inverse”.
 
 > **Stacks 04FZ, trailing clause.** Inverse image along an integral universally injective
 > morphism is a left inverse to direct image on abelian sheaves.
@@ -92,7 +75,7 @@ public def smallEtalePushforwardAbCompPullbackIso_of_integral_universallyInjecti
       𝟭 (Sheaf (smallEtaleTopology X) Ab.{u + 1})
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforwardAb_essImage_iff_of_integral_universallyInjective'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforwardEssImage.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforwardEssImage.lean#L144). The attribute's comment: “part (2): essential image, with the closed-immersion case supplied by Tag 04CA”.
+**`Stacks.EtaleCohomology.smallEtalePushforwardAb_essImage_iff_of_integral_universallyInjective'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforwardEssImage.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforwardEssImage.lean#L144). The attribute's comment: “part (2): essential image, as vanishing of the restriction away from f(X)”.
 
 > An abelian sheaf on `Y_étale` lies in the essential image of direct image along an integral
 > universally injective morphism exactly when its restriction to the open complement of `f(X)`
@@ -107,7 +90,18 @@ public theorem smallEtalePushforwardAb_essImage_iff_of_integral_universallyInjec
         (smallEtaleTopology (openComplementRange f).toScheme)).obj F)
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforward_fullyFaithful_essImage_leftInverse_of_integral_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforwardEssImage.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforwardEssImage.lean#L178).
+**`Stacks.EtaleCohomology.smallEtalePushforwardAb_essImage_iff_support_of_integral_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforwardEssImage.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforwardEssImage.lean#L156). The attribute's comment: “part (2): essential image”.
+
+> An abelian sheaf on `Y_étale` is a direct image along an integral universally injective
+> morphism exactly when its support is contained in `f(X)`.
+
+```lean
+public theorem smallEtalePushforwardAb_essImage_iff_support_of_integral_universallyInjective
+    (F : Sheaf (smallEtaleTopology Y) Ab.{u + 1}) :
+    (smallEtalePushforwardAb f).essImage F ↔ smallEtaleSupportAb F ⊆ Set.range f.base
+```
+
+**`Stacks.EtaleCohomology.smallEtalePushforward_fullyFaithful_essImage_leftInverse_of_integral_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforwardEssImage.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforwardEssImage.lean#L179).
 
 > Let `f : X ⟶ Y` be a morphism of schemes which is integral and universally injective.
 > Then (1) `f_{small, *} : Sh(X_étale) ⟶ Sh(Y_étale)` is fully faithful and its essential image is
@@ -155,4 +149,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.47, Tag 04FY](https://stacks.math.columbia.edu/tag/04FY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

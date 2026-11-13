@@ -8,13 +8,13 @@ proof: formalized
 
 # 50.22 A Weil cohomology theory
 
-Section 50.22 of the Stacks Project, [Tag 0FWC](https://stacks.math.columbia.edu/tag/0FWC). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 50.22 of the Stacks Project, [Tag 0FWC](https://stacks.math.columbia.edu/tag/0FWC). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FWD, a proposition
 
 [Tag 0FWD](https://stacks.math.columbia.edu/tag/0FWD) in the Stacks Project.
 
-**`Stacks.WeilDeRham.exists_weilCohomologyTheory_deRham`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilDeRham/DeRhamWeilCohomologyTheory.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilDeRham/DeRhamWeilCohomologyTheory.lean#L84). The attribute's comment: “de Rham cohomology over a field of characteristic zero is a Weil cohomology theory (Definition 0FI2, coefficients k), with data (D0)-(D3) those of de Rham cohomology: F(1) = k, H^* = H^*\_dR(-/k) with cup product and pullbacks, gamma from c\_1^dR (0FIF), trace lambda of (A6)”.
+**`Stacks.WeilDeRham.exists_weilCohomologyTheory_deRham`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilDeRham/DeRhamWeilCohomologyTheory.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilDeRham/DeRhamWeilCohomologyTheory.lean#L84). The attribute's comment: “de Rham cohomology over a field of characteristic zero is a Weil cohomology theory (Definition 0FI2, coefficients k), with data (D0)-(D3) those of de Rham cohomology: F(1) = k, H^* = H^*\_dR(-/k) with cup product and pullbacks, gamma from c\_1^dR (0FIF), trace lambda of (A6)”.
 
 > **Stacks Project, Proposition 0FWD**: for a field `k` of characteristic zero, the functor
 > `X ↦ H^*_{dR}(X/k)` on smooth projective schemes over `k` is a Weil cohomology theory over `k`
@@ -46,7 +46,7 @@ theorem exists_weilCohomologyTheory_deRham [CharZero k] :
 
 [Tag 0FWE](https://stacks.math.columbia.edu/tag/0FWE) in the Stacks Project.
 
-**`Stacks.HodgeWeil.exists_weilCohomologyTheory_hodge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeWeil/HodgeWeilCohomologyTheory.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeWeil/HodgeWeilCohomologyTheory.lean#L218). The attribute's comment: “part 1 (the first sentence): for k of characteristic zero, Hodge cohomology H^*\_Hodge(-/k) with c\_1^Hodge is a Weil cohomology theory (Definition 0FI2, coefficients k), with data (D0)-(D3) those of Hodge cohomology: F(1) = k, H^* = H^*\_Hodge(-/k) with cup product and pullbacks, gamma from c\_1^Hodge (0FIF), trace lambda of (A6). Part 2 (the consequence) is degeneratesAt\_one\_of\_finrank\_grade\_eq”.
+**`Stacks.HodgeWeil.exists_weilCohomologyTheory_hodge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeWeil/HodgeWeilCohomologyTheory.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/HodgeWeil/HodgeWeilCohomologyTheory.lean#L218). The attribute's comment: “part 1 (the first sentence): for k of characteristic zero, Hodge cohomology H^*\_Hodge(-/k) with c\_1^Hodge is a Weil cohomology theory (Definition 0FI2, coefficients k), with data (D0)-(D3) those of Hodge cohomology: F(1) = k, H^* = H^*\_Hodge(-/k) with cup product and pullbacks, gamma from c\_1^Hodge (0FIF), trace lambda of (A6). Part 2 (the consequence) is degeneratesAt\_one\_of\_finrank\_grade\_eq”.
 
 > **Stacks Project, Remark 0FWE, part 1**: for a field `k` of characteristic zero, Hodge
 > cohomology `X ↦ H^*_{Hodge}(X/k) = ⨁_{p, q} H^q(X, Ω^p_{X/k})` on smooth projective schemes over
@@ -75,7 +75,7 @@ theorem exists_weilCohomologyTheory_hodge [CharZero k] :
           (hodge_kunnethAxiom k) (hodge_traceAxiom k h)
 ```
 
-**`Stacks.HodgeWeil.degeneratesAt_one_of_finrank_grade_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeWeil/HodgeWeilCohomologyTheory.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeWeil/HodgeWeilCohomologyTheory.lean#L260). The attribute's comment: “part 2 (the amusing consequence): over k of characteristic zero, if the betti numbers dim\_F H^n(X) of Weil cohomology theories (any coefficient fields F of characteristic zero) do not depend on the theory, then for every smooth projective X over k the Hodge-to-de Rham spectral sequence (every brutal-truncation spectral sequence of the de Rham complex abutting to H^*\_dR(X/k), 0FM7) degenerates at E\_1. Part 1 is exists\_weilCohomologyTheory\_hodge”.
+**`Stacks.HodgeWeil.degeneratesAt_one_of_finrank_grade_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeWeil/HodgeWeilCohomologyTheory.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/HodgeWeil/HodgeWeilCohomologyTheory.lean#L260). The attribute's comment: “part 2 (the amusing consequence): over k of characteristic zero, if the betti numbers dim\_F H^n(X) of Weil cohomology theories (any coefficient fields F of characteristic zero) do not depend on the theory, then for every smooth projective X over k the Hodge-to-de Rham spectral sequence (every brutal-truncation spectral sequence of the de Rham complex abutting to H^*\_dR(X/k), 0FM7) degenerates at E\_1. Part 1 is exists\_weilCohomologyTheory\_hodge”.
 
 > **Stacks Project, Remark 0FWE, part 2** (the "amusing consequence"): let `k` be a field of
 > characteristic zero. If the betti numbers of a Weil cohomology theory over `k` are independent of
@@ -119,4 +119,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 50.22, Tag 0FWC](https://stacks.math.columbia.edu/tag/0FWC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 94.16 From an algebraic stack to a presentation
 
-Section 94.16 of the Stacks Project, [Tag 04T3](https://stacks.math.columbia.edu/tag/04T3). 6 tags here are carried by 31 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 94.16 of the Stacks Project, [Tag 04T3](https://stacks.math.columbia.edu/tag/04T3). 6 tags here are carried by 31 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04T3, the section
 
 [Tag 04T3](https://stacks.math.columbia.edu/tag/04T3) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.nonempty_groupoidPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationExistence.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationExistence.lean#L152). The attribute's comment: “every algebraic stack has a presentation by a smooth groupoid in algebraic spaces”.
+**`AlgebraicGeometry.Stack.nonempty_groupoidPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationExistence.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationExistence.lean#L152). The attribute's comment: “every algebraic stack has a presentation by a smooth groupoid in algebraic spaces”.
 
 > **Stacks 04T3: every algebraic stack has a presentation.** Let `𝒳` be an algebraic stack
 > over `S`. Then there are a smooth groupoid `(U, R, s, t, c)` in algebraic spaces over `S` and an
@@ -36,7 +36,7 @@ theorem nonempty_groupoidPresentation
 
 [Tag 04T4](https://stacks.math.columbia.edu/tag/04T4) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.SelfIntersection.tripleEquivComposable`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L165). The attribute's comment: “part (2): three-fold product as composable arrows”.
+**`AlgebraicGeometry.Stack.SelfIntersection.tripleEquivComposable`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L165). The attribute's comment: “part (2): three-fold product as composable arrows”.
 
 > **Stacks 04T4 (2).** The canonical equivalence, in the 2-category of categories over the
 > big fppf site of `S`, between the three-fold 2-fibre product `𝒰 ×_𝒳 𝒰 ×_𝒳 𝒰` and the
@@ -49,7 +49,7 @@ noncomputable def tripleEquivComposable :
       (composableProjection B S hS 𝒰 𝒳 f)
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.tripleEquivComposable_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L174). The attribute's comment: “part (2): first arrow of the comparison”.
+**`AlgebraicGeometry.Stack.SelfIntersection.tripleEquivComposable_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L174). The attribute's comment: “part (2): first arrow of the comparison”.
 
 > The comparison of Stacks 04T4 (2) leaves the first relation arrow unchanged.
 
@@ -58,7 +58,7 @@ theorem tripleEquivComposable_fst (x : triple B S hS 𝒰 𝒳 f) :
     ((tripleEquivComposable B S hS 𝒰 𝒳 f).hom.functor.obj x).x = x.x
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.tripleEquivComposable_last`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L179). The attribute's comment: “part (2): last object of the comparison”.
+**`AlgebraicGeometry.Stack.SelfIntersection.tripleEquivComposable_last`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L179). The attribute's comment: “part (2): last object of the comparison”.
 
 > The comparison of Stacks 04T4 (2) leaves the final object unchanged.
 
@@ -67,7 +67,7 @@ theorem tripleEquivComposable_last (x : triple B S hS 𝒰 𝒳 f) :
     ((tripleEquivComposable B S hS 𝒰 𝒳 f).hom.functor.obj x).y.y = x.y
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.tripleEquivComposable_middle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L185). The attribute's comment: “part (2): middle object of the comparison”.
+**`AlgebraicGeometry.Stack.SelfIntersection.tripleEquivComposable_middle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L185). The attribute's comment: “part (2): middle object of the comparison”.
 
 > Under the comparison of Stacks 04T4 (2) the second relation arrow starts at the first
 > arrow's endpoint.
@@ -77,7 +77,7 @@ theorem tripleEquivComposable_middle (x : triple B S hS 𝒰 𝒳 f) :
     ((tripleEquivComposable B S hS 𝒰 𝒳 f).hom.functor.obj x).y.x = x.x.y
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.tripleEquivComposable_secondIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L191). The attribute's comment: “part (2): second isomorphism of the comparison”.
+**`AlgebraicGeometry.Stack.SelfIntersection.tripleEquivComposable_secondIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L191). The attribute's comment: “part (2): second isomorphism of the comparison”.
 
 > Under the comparison of Stacks 04T4 (2) the second relation arrow carries the original
 > second isomorphism.
@@ -87,7 +87,7 @@ theorem tripleEquivComposable_secondIso (x : triple B S hS 𝒰 𝒳 f) :
     HEq ((tripleEquivComposable B S hS 𝒰 𝒳 f).hom.functor.obj x).y.iso x.iso
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.tripleEquivComposable_middleIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L197). The attribute's comment: “part (2): identity at the middle object”.
+**`AlgebraicGeometry.Stack.SelfIntersection.tripleEquivComposable_middleIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L197). The attribute's comment: “part (2): identity at the middle object”.
 
 > Under the comparison of Stacks 04T4 (2) the identification of the two middle objects is
 > the identity.
@@ -98,7 +98,7 @@ theorem tripleEquivComposable_middleIso (x : triple B S hS 𝒰 𝒳 f) :
       (Iso.refl x.x.y)
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.composition`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L206). The attribute's comment: “part (3): composition of the relation”.
+**`AlgebraicGeometry.Stack.SelfIntersection.composition`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L206). The attribute's comment: “part (3): composition of the relation”.
 
 > **Stacks 04T4 (3).** The outer projection `pr₀₂`, induced through the comparison of part
 > (2) by the projection of the three-fold product onto its outer two factors: a 1-morphism
@@ -111,7 +111,7 @@ noncomputable def composition :
       (relation B S hS 𝒰 𝒳 f).val
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.composition_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L219). The attribute's comment: “part (3): source of the composite”.
+**`AlgebraicGeometry.Stack.SelfIntersection.composition_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L219). The attribute's comment: “part (3): source of the composite”.
 
 > The composite of Stacks 04T4 (3) begins at the first arrow's source.
 
@@ -120,7 +120,7 @@ theorem composition_fst (x : composable B S hS 𝒰 𝒳 f) :
     ((composition B S hS 𝒰 𝒳 f).toFunctor.obj x).x = x.x.x
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.composition_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L224). The attribute's comment: “part (3): target of the composite”.
+**`AlgebraicGeometry.Stack.SelfIntersection.composition_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L224). The attribute's comment: “part (3): target of the composite”.
 
 > The composite of Stacks 04T4 (3) ends at the second arrow's target.
 
@@ -129,7 +129,7 @@ theorem composition_snd (x : composable B S hS 𝒰 𝒳 f) :
     ((composition B S hS 𝒰 𝒳 f).toFunctor.obj x).y = x.y.y
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.composition_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L230). The attribute's comment: “part (3): composition on fibre objects”.
+**`AlgebraicGeometry.Stack.SelfIntersection.composition_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersection.lean#L230). The attribute's comment: “part (3): composition on fibre objects”.
 
 > On objects the outer arrow of Stacks 04T4 (3) carries the composite of the two
 > isomorphisms, including the identification of their middle objects.
@@ -140,7 +140,7 @@ theorem composition_iso (x : composable B S hS 𝒰 𝒳 f) :
       (x.x.iso ≪≫ f.toFunctor.mapIso x.iso ≪≫ x.y.iso)
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.isRepresentableByAlgebraicSpace_relation_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionAlgebraicSpace.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionAlgebraicSpace.lean#L102). The attribute's comment: “part (1): the relation is an algebraic space”.
+**`AlgebraicGeometry.Stack.SelfIntersection.isRepresentableByAlgebraicSpace_relation_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionAlgebraicSpace.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionAlgebraicSpace.lean#L102). The attribute's comment: “part (1): the relation is an algebraic space”.
 
 > **Stacks 04T4 (1).** Let `𝒳` be an algebraic stack over `S` and let `f : 𝒰 ⟶ 𝒳` be a
 > 1-morphism whose source is a category fibred in groupoids representable by an algebraic space over
@@ -157,7 +157,7 @@ theorem isRepresentableByAlgebraicSpace_relation_of_isAlgebraicStack
     Stack.IsRepresentableByAlgebraicSpace B S hS (relation B S hS 𝒰 𝒴 f)
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.nonempty_fullyFaithful_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFullyFaithful.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFullyFaithful.lean#L394). The attribute's comment: “part (6): full faithfulness”.
+**`AlgebraicGeometry.Stack.SelfIntersection.nonempty_fullyFaithful_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFullyFaithful.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFullyFaithful.lean#L394). The attribute's comment: “part (6): full faithfulness”.
 
 > The canonical morphism `f_can : [U/R] ⟶ 𝒳` of the presentation datum
 > `AlgebraicGeometry.Stack.SelfIntersection.selfIntersectionPresentation` is fully faithful.
@@ -167,7 +167,7 @@ theorem nonempty_fullyFaithful_canonicalMap (h𝒳 : IsAlgebraicStack B S hS �
     Nonempty ((selfIntersectionPresentation eU eR h𝒳).canonicalMap.toFunctor.FullyFaithful)
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.relationTarget`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoid.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoid.lean#L172). The attribute's comment: “part (4): target morphism of the groupoid”.
+**`AlgebraicGeometry.Stack.SelfIntersection.relationTarget`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoid.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoid.lean#L172). The attribute's comment: “part (4): target morphism of the groupoid”.
 
 > The target morphism `t : R ⟶ U` of the self-intersection groupoid, read in the category of
 > algebraic spaces over `S` of Stacks 02X2: the morphism of algebraic spaces named, through Stacks
@@ -179,7 +179,7 @@ theorem nonempty_fullyFaithful_canonicalMap (h𝒳 : IsAlgebraicStack B S hS �
 noncomputable def relationTarget : R ⟶ U
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.relationSource`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoid.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoid.lean#L181). The attribute's comment: “part (4): source morphism of the groupoid”.
+**`AlgebraicGeometry.Stack.SelfIntersection.relationSource`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoid.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoid.lean#L181). The attribute's comment: “part (4): source morphism of the groupoid”.
 
 > The source morphism `s : R ⟶ U` of the self-intersection groupoid, read in the category of
 > algebraic spaces over `S` of Stacks 02X2: the morphism of algebraic spaces named, through Stacks
@@ -191,7 +191,7 @@ noncomputable def relationTarget : R ⟶ U
 noncomputable def relationSource : R ⟶ U
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.SelfIntersectionPresentation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionPresentation.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionPresentation.lean#L308). The attribute's comment: “parts (4) and (5), the presentation datum: the groupoid and the canonical morphism from its quotient stack, as a structure”.
+**`AlgebraicGeometry.Stack.SelfIntersection.SelfIntersectionPresentation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionPresentation.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionPresentation.lean#L308). The attribute's comment: “parts (4) and (5), the presentation datum: the groupoid and the canonical morphism from its quotient stack, as a structure”.
 
 > A presentation datum for `f`: a groupoid in algebraic spaces whose object space is the chosen
 > representing space of `𝒰` and whose arrow space is the chosen representing space of the
@@ -202,7 +202,7 @@ noncomputable def relationSource : R ⟶ U
 structure SelfIntersectionPresentation
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.selfIntersectionPresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionPresentation.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionPresentation.lean#L400). The attribute's comment: “parts (4) and (5), the construction: that datum built from the declarations of this file and its three predecessors”.
+**`AlgebraicGeometry.Stack.SelfIntersection.selfIntersectionPresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionPresentation.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionPresentation.lean#L400). The attribute's comment: “parts (4) and (5), the construction: that datum built from the declarations of this file and its three predecessors”.
 
 > The presentation datum of an algebraic stack `𝒳`: the groupoid
 > `AlgebraicGeometry.Stack.SelfIntersection.selfIntersectionGroupoid` over the final algebraic space,
@@ -219,7 +219,7 @@ noncomputable def selfIntersectionPresentation (h𝒳 : IsAlgebraicStack B S hS 
 
 [Tag 04T5](https://stacks.math.columbia.edu/tag/04T5) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.SelfIntersection.isSmooth_relationSource_and_relationTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoidRelativeProperty.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoidRelativeProperty.lean#L251). The attribute's comment: “part (1): the structure morphisms of the groupoid are smooth”.
+**`AlgebraicGeometry.Stack.SelfIntersection.isSmooth_relationSource_and_relationTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoidRelativeProperty.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoidRelativeProperty.lean#L251). The attribute's comment: “part (1): the structure morphisms of the groupoid are smooth”.
 
 > **Stacks 04T5 (1).** If the point `f : 𝒰 ⟶ 𝒳` is smooth in the sense of Stacks 04XB, then the
 > source and target morphisms `s`, `t : R ⟶ U` of the self-intersection groupoid of Stacks 04T4 (4)
@@ -231,7 +231,7 @@ theorem isSmooth_relationSource_and_relationTarget (hf : IsRelativelySmooth B S 
       Space.IsSmooth B S hS (relationTarget eU eR).hom
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.exists_equivalenceOver_canonicalMap_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionSmoothPresentation.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionSmoothPresentation.lean#L65). The attribute's comment: “part (2): canonical equivalence”.
+**`AlgebraicGeometry.Stack.SelfIntersection.exists_equivalenceOver_canonicalMap_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionSmoothPresentation.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionSmoothPresentation.lean#L65). The attribute's comment: “part (2): canonical equivalence”.
 
 > Let `𝒳` be an algebraic stack over `S`, let `f : 𝒰 ⟶ 𝒳` be a 1-morphism whose source is
 > represented by an algebraic space `U` and whose self-intersection is represented by an algebraic
@@ -271,7 +271,7 @@ theorem exists_equivalenceOver_canonicalMap_of_isSmooth
       e.hom.functor = (selfIntersectionPresentation eU eR h𝒳).canonicalMap.toFunctor
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.isSmooth_selfIntersectionPresentation_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionSmoothProjections.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionSmoothProjections.lean#L50). The attribute's comment: “part (1): source projection”.
+**`AlgebraicGeometry.Stack.SelfIntersection.isSmooth_selfIntersectionPresentation_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionSmoothProjections.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionSmoothProjections.lean#L50). The attribute's comment: “part (1): source projection”.
 
 > The source morphism `R ⟶ U` of the groupoid in algebraic spaces
 > `AlgebraicGeometry.Stack.SelfIntersection.selfIntersectionPresentation` is smooth when the
@@ -286,7 +286,7 @@ theorem isSmooth_selfIntersectionPresentation_source
     Space.IsSmooth B S hS (selfIntersectionPresentation eU eR h𝒳).groupoid.source.hom
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.isSmooth_selfIntersectionPresentation_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionSmoothProjections.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionSmoothProjections.lean#L68). The attribute's comment: “part (1): target projection”.
+**`AlgebraicGeometry.Stack.SelfIntersection.isSmooth_selfIntersectionPresentation_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionSmoothProjections.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionSmoothProjections.lean#L68). The attribute's comment: “part (1): target projection”.
 
 > The target morphism `R ⟶ U` of the groupoid in algebraic spaces
 > `AlgebraicGeometry.Stack.SelfIntersection.selfIntersectionPresentation` is smooth when the
@@ -305,7 +305,7 @@ theorem isSmooth_selfIntersectionPresentation_target
 
 [Tag 04WY](https://stacks.math.columbia.edu/tag/04WY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.SelfIntersection.nonempty_isEquivalenceOver_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatPresentation.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatPresentation.lean#L187). The attribute's comment: “flat\_presentation\_equivalence”.
+**`AlgebraicGeometry.Stack.SelfIntersection.nonempty_isEquivalenceOver_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatPresentation.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatPresentation.lean#L187). The attribute's comment: “flat\_presentation\_equivalence”.
 
 > Let `𝒳` be an algebraic stack over `S`, let `f : 𝒰 ⟶ 𝒳` be a 1-morphism whose
 > source is represented by an algebraic space `U` and whose self-intersection is represented by an
@@ -336,7 +336,7 @@ theorem nonempty_isEquivalenceOver_canonicalMap
       (selfIntersectionPresentation eU eR h𝒳).canonicalMap.toFunctor)
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.isFlat_selfIntersectionPresentation_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean#L153). The attribute's comment: “the source projection of a flat presentation is flat”.
+**`AlgebraicGeometry.Stack.SelfIntersection.isFlat_selfIntersectionPresentation_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean#L153). The attribute's comment: “the source projection of a flat presentation is flat”.
 
 > **Stacks 04WY for the source projection, flatness.** The source morphism `R ⟶ U` of the
 > groupoid in algebraic spaces of Stacks 04T4 (4) is flat when the presenting 1-morphism is.
@@ -354,7 +354,7 @@ theorem isFlat_selfIntersectionPresentation_source
     Space.IsFlat B S hS (selfIntersectionPresentation eU eR h𝒳).groupoid.source.hom
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.isFlat_selfIntersectionPresentation_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean#L168). The attribute's comment: “the target projection of a flat presentation is flat”.
+**`AlgebraicGeometry.Stack.SelfIntersection.isFlat_selfIntersectionPresentation_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean#L168). The attribute's comment: “the target projection of a flat presentation is flat”.
 
 > **Stacks 04WY for the target projection, flatness.** The target morphism `R ⟶ U` of the
 > groupoid in algebraic spaces of Stacks 04T4 (4) is flat when the presenting 1-morphism is.
@@ -372,7 +372,7 @@ theorem isFlat_selfIntersectionPresentation_target
     Space.IsFlat B S hS (selfIntersectionPresentation eU eR h𝒳).groupoid.target.hom
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.isLocallyOfFinitePresentation_selfIntersectionPresentation_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean#L183). The attribute's comment: “the source projection is locally of finite presentation”.
+**`AlgebraicGeometry.Stack.SelfIntersection.isLocallyOfFinitePresentation_selfIntersectionPresentation_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean#L183). The attribute's comment: “the source projection is locally of finite presentation”.
 
 > **Stacks 04WY for the source projection, local finite presentation.** The source morphism
 > `R ⟶ U` of the groupoid in algebraic spaces of Stacks 04T4 (4) is locally of finite presentation
@@ -392,7 +392,7 @@ theorem isLocallyOfFinitePresentation_selfIntersectionPresentation_source
       (selfIntersectionPresentation eU eR h𝒳).groupoid.source.hom
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.isLocallyOfFinitePresentation_selfIntersectionPresentation_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean#L200). The attribute's comment: “the target projection is locally of finite presentation”.
+**`AlgebraicGeometry.Stack.SelfIntersection.isLocallyOfFinitePresentation_selfIntersectionPresentation_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean#L200). The attribute's comment: “the target projection is locally of finite presentation”.
 
 > **Stacks 04WY for the target projection, local finite presentation.** The target morphism
 > `R ⟶ U` of the groupoid in algebraic spaces of Stacks 04T4 (4) is locally of finite presentation
@@ -412,7 +412,7 @@ theorem isLocallyOfFinitePresentation_selfIntersectionPresentation_target
       (selfIntersectionPresentation eU eR h𝒳).groupoid.target.hom
 ```
 
-**`AlgebraicGeometry.dualNumbers_projections_not_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean#L308). The attribute's comment: “the projections of a flat presentation need not be smooth”.
+**`AlgebraicGeometry.dualNumbers_projections_not_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatProjections.lean#L308). The attribute's comment: “the projections of a flat presentation need not be smooth”.
 
 > **Stacks 04WY, the dual-number counterexample.** The cover of a point by the spectrum of its
 > dual numbers is surjective, flat and locally of finite presentation, and neither projection of its
@@ -428,7 +428,7 @@ theorem dualNumbers_projections_not_smooth (k : Type u) [Field k] :
       ¬ Smooth (pullback.fst f f) ∧ ¬ Smooth (pullback.snd f f)
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.isFlat_relationSource_and_relationTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoidRelativeProperty.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoidRelativeProperty.lean#L209). The attribute's comment: “second clause, flatness half: the structure morphisms of the groupoid are flat”.
+**`AlgebraicGeometry.Stack.SelfIntersection.isFlat_relationSource_and_relationTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoidRelativeProperty.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoidRelativeProperty.lean#L209). The attribute's comment: “second clause, flatness half: the structure morphisms of the groupoid are flat”.
 
 > **Stacks 04WY**, the flatness half of its clause on the structure morphisms of the groupoid.
 > If the point `f : 𝒰 ⟶ 𝒳` is flat in the relative sense of Stacks 03YK, then the source and target
@@ -448,7 +448,7 @@ theorem isFlat_relationSource_and_relationTarget
       Space.IsFlat B S hS (relationTarget eU eR).hom
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.isLocallyOfFinitePresentation_relationSource_and_relationTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoidRelativeProperty.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoidRelativeProperty.lean#L231). The attribute's comment: “second clause, lfp half: the structure morphisms are locally of finite presentation”.
+**`AlgebraicGeometry.Stack.SelfIntersection.isLocallyOfFinitePresentation_relationSource_and_relationTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoidRelativeProperty.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionGroupoidRelativeProperty.lean#L231). The attribute's comment: “second clause, lfp half: the structure morphisms are locally of finite presentation”.
 
 > **Stacks 04WY**, the local finite presentation half of its clause on the structure morphisms
 > of the groupoid. If the point `f : 𝒰 ⟶ 𝒳` is locally of finite presentation in the relative sense
@@ -477,7 +477,7 @@ theorem isLocallyOfFinitePresentation_relationSource_and_relationTarget
 
 [Tag 04TH](https://stacks.math.columbia.edu/tag/04TH) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.IsSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/SmoothGroupoid.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/SmoothGroupoid.lean#L62).
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.IsSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/SmoothGroupoid.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/SmoothGroupoid.lean#L62).
 
 > **Stacks 04TH.** A groupoid `(U, R, s, t, c)` in algebraic spaces over `B` is *smooth* when
 > both its source and its target morphism `R ⟶ U` are smooth morphisms of algebraic spaces.
@@ -492,7 +492,7 @@ abbrev IsSmooth (G : GroupoidInAlgebraicSpaces B S hS Z) : Prop
 
 [Tag 04TI](https://stacks.math.columbia.edu/tag/04TI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.GroupoidPresentation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GroupoidPresentation.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GroupoidPresentation.lean#L57).
+**`AlgebraicGeometry.Stack.GroupoidPresentation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GroupoidPresentation.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GroupoidPresentation.lean#L57).
 
 > A *presentation* of a category `𝒳` over `(Sch/S)_fppf` is a smooth groupoid
 > `(U, R, s, t, c)` in algebraic spaces over `S` together with an equivalence of categories over
@@ -509,4 +509,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 94.16, Tag 04T3](https://stacks.math.columbia.edu/tag/04T3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.isRightDerivedFunctor_quasicoherentPushforwardMapDerivedCategory, AlgebraicGeometry.Space.derivedQuasicoherentComparisonSquareOfIsAffineHom, AlgebraicGeometry.Space.flatPushforwardDerivedCoheratorIso, AlgebraicGeometry.Space.flatPushforwardDerivedCoheratorIsoOfForallAffine, AlgebraicGeometry.Space.derivedModulePushforwardCompDerivedCoheratorIso, AlgebraicGeometry.Space.inclusionAdjunctionGlobalSectionsAssociated, AlgebraicGeometry.Space.coheratorIsoAssociatedGlobalSections, AlgebraicGeometry.Space.derivedCoheratorIsoAssociatedDerivedGlobalSections
+lean: AlgebraicGeometry.Space.isRightDerivedFunctor_quasicoherentPushforwardMapDerivedCategory, AlgebraicGeometry.Space.derivedQuasicoherentComparisonSquareOfIsAffineHom, AlgebraicGeometry.Space.derivedModulePushforwardCompDerivedCoheratorIso, AlgebraicGeometry.Space.inclusionAdjunctionGlobalSectionsAssociated_of_isAffineSpace, AlgebraicGeometry.Space.coheratorIsoGlobalSectionsAssociated_of_isAffineSpace, AlgebraicGeometry.Space.derivedCoheratorIsoComparisonInv_of_isAffineSpace, AlgebraicGeometry.Space.derivedCoheratorIsoDerivedGlobalSectionsAssociated_of_isAffineSpace, AlgebraicGeometry.Space.quasicoherentDerivedComparison_isEquivalence_of_affineEtaleDerivedPushforwardSquareCommutes
 statement: formalized
 proof: formalized
 ---
 
 # 75.11 The coherator
 
-Section 75.11 of the Stacks Project, [Tag 08GX](https://stacks.math.columbia.edu/tag/08GX). 6 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 75.11 of the Stacks Project, [Tag 08GX](https://stacks.math.columbia.edu/tag/08GX). 6 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08GY, a lemma
 
 [Tag 08GY](https://stacks.math.columbia.edu/tag/08GY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRightDerivedFunctor_quasicoherentPushforwardMapDerivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineDerivedQuasicoherentPushforward.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineDerivedQuasicoherentPushforward.lean#L133). The attribute's comment: “the derived functor”.
+**`AlgebraicGeometry.Space.isRightDerivedFunctor_quasicoherentPushforwardMapDerivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineDerivedQuasicoherentPushforward.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineDerivedQuasicoherentPushforward.lean#L133). The attribute's comment: “the derived functor”.
 
 > **[Stacks, Tag 08GY], the derived functor.**  Let `f : X ⟶ Y` be an affine morphism of
 > algebraic spaces over a scheme `S`.  Then direct image defines a derived functor
@@ -42,7 +42,7 @@ theorem isRightDerivedFunctor_quasicoherentPushforwardMapDerivedCategory (f : X 
         (ComplexShape.up ℤ))
 ```
 
-**`AlgebraicGeometry.Space.derivedQuasicoherentComparisonSquareOfIsAffineHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineDerivedQuasicoherentPushforward.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineDerivedQuasicoherentPushforward.lean#L198). The attribute's comment: “the commuting square”.
+**`AlgebraicGeometry.Space.derivedQuasicoherentComparisonSquareOfIsAffineHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineDerivedQuasicoherentPushforward.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineDerivedQuasicoherentPushforward.lean#L198). The attribute's comment: “the commuting square”.
 
 > **[Stacks, Tag 08GY], the commuting square.**  Let `f : X ⟶ Y` be an affine morphism of
 > algebraic spaces over a scheme `S`, and let `Rf_*` be a total right derived functor of the direct
@@ -81,64 +81,7 @@ noncomputable def derivedQuasicoherentComparisonSquareOfIsAffineHom :
 
 [Tag 08GZ](https://stacks.math.columbia.edu/tag/08GZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.flatPushforwardDerivedCoheratorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoheratorFlatPushforward.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoheratorFlatPushforward.lean#L303). The attribute's comment: “granted Stacks 03M9 that the direct image preserves quasi-coherence, Stacks 03GA that the inverse image does, Stacks 077V part (1) that QCoh(𝒪\_X) is Grothendieck abelian, and flatness in the ringed-topos form of Stacks 04JC”.
-
-> **Stacks Project, Tag 08GZ.**  Let `f : X ⟶ Y` be a flat morphism of algebraic spaces whose
-> direct image and inverse image preserve quasi-coherence.  Let `Rf_*` be a total right derived
-> functor of the direct image of all modules, let `RQ_X`, `RQ_Y` be total right derived functors of
-> coherators of `X` and `Y`, and let `Φ` be a total right derived functor of the direct image
-> restricted to quasi-coherent modules.  Then `Rf_* ⋙ RQ_Y ≅ RQ_X ⋙ Φ`.
->
-> Both sides are right adjoint to the same functor `D(QCoh(𝒪_Y)) ⥤ D(𝒪_X)`: flatness makes the
-> inverse image exact, on all modules and on quasi-coherent modules alike, so it induces functors
-> of derived categories with no derivation, and these compose to one functor in two ways which
-> agree because the inverse image commutes with the inclusion of the quasi-coherent modules
-> already before deriving.
-
-```lean
-noncomputable def flatPushforwardDerivedCoheratorIso
-    (hpush : PushforwardPreservesQuasicoherence B S hS f)
-    (Φ : DerivedCategory (QuasicoherentSheaves.{u, u} B S hS X.1 X.2) ⥤
-      DerivedCategory (QuasicoherentSheaves.{u, u} B S hS Y.1 Y.2))
-    (ΦUnit : (quasicoherentPushforward B S hS f hpush).mapHomologicalComplex
-        (ComplexShape.up ℤ) ⋙ QY ⟶ QX ⋙ Φ)
-    [Φ.IsRightDerivedFunctor ΦUnit (HomologicalComplex.quasiIso
-      (QuasicoherentSheaves.{u, u} B S hS X.1 X.2) (ComplexShape.up ℤ))] :
-    Rf ⋙ RQY ≅ RQX ⋙ Φ
-```
-
-**`AlgebraicGeometry.Space.flatPushforwardDerivedCoheratorIsoOfForallAffine`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoheratorFlatPushforward.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoheratorFlatPushforward.lean#L393). The attribute's comment: “in the binders of the source statement, granted the affine-base case of the preservation of quasi-coherence by the direct image, Stacks 03GA that the inverse image preserves quasi-coherence, Stacks 077V part (1) that QCoh(𝒪\_X) is Grothendieck abelian, and flatness in the ringed-topos form of Stacks 04JC”.
-
-> **Stacks Project, Tag 08GZ, in the binders of the source statement.**  Let `f : X ⟶ Y` be a
-> quasi-compact, quasi-separated and flat morphism of algebraic spaces whose inverse image
-> preserves quasi-coherence.  With `Rf_*`, `RQ_X`, `RQ_Y` and `Φ` as above,
-> `Rf_* ⋙ RQ_Y ≅ RQ_X ⋙ Φ`.
->
-> Quasi-compactness and quasi-separatedness enter exactly where the source puts them: they are what
-> makes the direct image preserve quasi-coherence, by the reduction of Stacks 03M9 whose residual
-> affine-base case is `haffine`.
-
-```lean
-noncomputable def flatPushforwardDerivedCoheratorIsoOfForallAffine
-    (hfqc : IsQuasiCompact B S hS f.hom) (hfqs : IsQuasiSeparated B S hS f.hom)
-    (haffine : ∀ F : Modules.{u, u} B S hS X.1 X.2, F.IsQuasicoherentOnSite →
-      ∀ V : SmallEtale B S hS Y.1,
-        IsAffine ((BigFppfOver.toScheme B S hS).obj ((SmallEtale.toOver B S hS Y.1).obj V)) →
-        IsQuasiCompact B S hS (chartBaseChangeProjection B S hS f V).hom →
-        IsQuasiSeparated B S hS (chartBaseChangeProjection B S hS f V).hom →
-        ((chartLocalizedModulePushforward B S hS f V).obj
-          ((moduleChartBaseChangeRestriction B S hS f V).obj F)).IsQuasicoherentOnSite)
-    (Φ : DerivedCategory (QuasicoherentSheaves.{u, u} B S hS X.1 X.2) ⥤
-      DerivedCategory (QuasicoherentSheaves.{u, u} B S hS Y.1 Y.2))
-    (ΦUnit : (quasicoherentPushforward B S hS f
-        (pushforwardPreservesQuasicoherence_of_forall_affine B S hS f hfqc hfqs
-          haffine)).mapHomologicalComplex (ComplexShape.up ℤ) ⋙ QY ⟶ QX ⋙ Φ)
-    [Φ.IsRightDerivedFunctor ΦUnit (HomologicalComplex.quasiIso
-      (QuasicoherentSheaves.{u, u} B S hS X.1 X.2) (ComplexShape.up ℤ))] :
-    Rf ⋙ RQY ≅ RQX ⋙ Φ
-```
-
-**`AlgebraicGeometry.Space.derivedModulePushforwardCompDerivedCoheratorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoheratorFlatPushforwardQcqs.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoheratorFlatPushforwardQcqs.lean#L326). The attribute's comment: “RQ\_Y ∘ Rf\_* = Φ ∘ RQ\_X for a flat, quasi-compact, quasi-separated morphism”.
+**`AlgebraicGeometry.Space.derivedModulePushforwardCompDerivedCoheratorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoheratorFlatPushforwardQcqs.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoheratorFlatPushforwardQcqs.lean#L328). The attribute's comment: “RQ\_Y ∘ Rf\_* = Φ ∘ RQ\_X, the source's equality as a natural isomorphism, for a flat, quasi-compact, quasi-separated morphism of algebraic spaces; Stacks 03M9, 03GA and 077V (1) are proved in the library”.
 
 > **The derived coherator commutes with the direct image along a flat morphism.**  Let
 > `f : X ⟶ Y` be a quasi-compact, quasi-separated and flat morphism of algebraic spaces over `S`,
@@ -164,72 +107,7 @@ def derivedModulePushforwardCompDerivedCoheratorIso (f : X ⟶ Y)
 
 [Tag 08H0](https://stacks.math.columbia.edu/tag/08H0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.inclusionAdjunctionGlobalSectionsAssociated`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineCoheratorGlobalSections.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineCoheratorGlobalSections.lean#L171). The attribute's comment: “(1): the coherator of an affine algebraic space is the associated module of the global sections; carried are the associated-module equivalence Mod(A) ≌ QCoh(O\_X) of the affine case of Stacks 03DX(2) and its adjunction to global sections (Stacks 01BH(4)), neither of which this development has on the small etale site of an algebraic space”.
-
-> **Stacks 08H0 (1).**  Let `X` be an affine algebraic space and `A = Γ(X, 𝒪_X)`.  The functor
-> sending an `𝒪_X`-module `𝓕` to the quasi-coherent `𝒪_X`-module associated to the `A`-module
-> `Γ(X, 𝓕)` is a right adjoint of the inclusion `QCoh(𝒪_X) ⥤ Mod(𝒪_X)`; that is, it is a
-> coherator of `X`.
->
-> Carried: the associated-module equivalence `assoc : Mod(A) ≌ QCoh(𝒪_X)` of the affine case of
-> Stacks 03DX (2) and its adjunction `adjAssoc` to global sections, Stacks 01BH (4).  See
-> "What is carried, and why it is an input and not the conclusion" in the module documentation.
->
-> The proof is the source's, and is the one the scheme analogue Stacks 08D9 (1) uses: composing
-> the adjunction `assoc.inverse ⊣ assoc.functor` of the equivalence with `adjAssoc` gives
-> `assoc.inverse ⋙ assoc.functor ⋙ ι ⊣ Γ(X, -) ⋙ assoc.functor`, and the left-hand side is `ι`
-> by the counit of the equivalence.
-
-```lean
-def inclusionAdjunctionGlobalSectionsAssociated (_hAffine : IsAffineSpace B S hS F) :
-    (SheafOfModules.isQuasicoherentOnSite.{u + 1, u, u, m}
-      ((Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B S hS F hF).O))).ι ⊣
-        moduleGlobalSectionsSmallEtale.{u, m} B S hS F hF ⋙ assoc.functor
-```
-
-**`AlgebraicGeometry.Space.coheratorIsoAssociatedGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineCoheratorGlobalSections.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineCoheratorGlobalSections.lean#L199). The attribute's comment: “(1): every coherator of an affine algebraic space is naturally the associated module of the global sections; carried are a coherator with its adjunction (Stacks 077V(2), which the development has only as an existence statement) and the associated-module equivalence Mod(A) ≌ QCoh(O\_X) of the affine case of Stacks 03DX(2) with its adjunction to global sections”.
-
-> **Stacks 08H0 (1).**  Let `X` be an affine algebraic space and `A = Γ(X, 𝒪_X)`.  Every
-> coherator `Q_X : Mod(𝒪_X) ⥤ QCoh(𝒪_X)` of `X` — every right adjoint of the inclusion
-> `QCoh(𝒪_X) ⥤ Mod(𝒪_X)`, which is what Stacks 077V (2) produces — is naturally isomorphic to the
-> functor sending `𝓕` to the quasi-coherent `𝒪_X`-module associated to the `A`-module
-> `Γ(X, 𝓕)`.
->
-> Carried: a coherator `Q` with its adjunction `adjQ`, and the associated-module equivalence; see
-> "What is carried, and why it is an input and not the conclusion" in the module documentation.
-> Both sides are right adjoints of the inclusion, by `adjQ` and by
-> `AlgebraicGeometry.Space.inclusionAdjunctionGlobalSectionsAssociated`, and a right adjoint is
-> unique up to a unique natural isomorphism.
-
-```lean
-def coheratorIsoAssociatedGlobalSections
-    (Q : Modules.{u, m} B S hS F hF ⥤ QuasicoherentSheaves.{u, m} B S hS F hF)
-    (adjQ : (SheafOfModules.isQuasicoherentOnSite.{u + 1, u, u, m}
-      ((Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B S hS F hF).O))).ι ⊣ Q)
-    (hAffine : IsAffineSpace B S hS F) :
-    Q ≅ moduleGlobalSectionsSmallEtale.{u, m} B S hS F hF ⋙ assoc.functor
-```
-
-**`AlgebraicGeometry.Space.derivedCoheratorIsoAssociatedDerivedGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineDerivedCoheratorGlobalSections.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineDerivedCoheratorGlobalSections.lean#L205). The attribute's comment: “(2): the derived coherator of an affine algebraic space is the associated complex of the derived global sections; carried are a coherator with its adjunction (Stacks 077V(2), which the development has only as an existence statement) and the associated-module equivalence Mod(A) ≌ QCoh(O\_X) of the affine case of Stacks 03DX(2) with its adjunction to global sections”.
-
-> Let `X` be an affine algebraic space and `A = Γ(X, 𝒪_X)`. The derived coherator
-> `RQ_X : D(𝒪_X) ⥤ D(QCoh(𝒪_X))` sends an object `E` of `D(𝒪_X)` to the complex of
-> quasi-coherent `𝒪_X`-modules associated to the object `RΓ(X, E)` of `D(A)`.
-
-```lean
-def derivedCoheratorIsoAssociatedDerivedGlobalSections (hAffine : IsAffineSpace B S hS F) :
-    letI := modulesAbelianSmallEtale B S hS F hF
-    letI := quasicoherentSheavesAbelianSmallEtale B S hS F hF
-    letI := modulesHasDerivedCategorySmallEtale B S hS F hF
-    letI := quasicoherentSheavesHasDerivedCategorySmallEtale B S hS F hF
-    letI := additive_assoc_functor B S hS F hF assoc adjAssoc
-    letI := additive_coherator B S hS F hF Q adjQ
-    letI := isGrothendieckAbelian_modules B S hS F hF
-    derivedCoheratorSmallEtale B S hS F hF Q adjQ ≅
-      derivedModuleGlobalSectionsSmallEtale B S hS F hF ⋙ assoc.functor.mapDerivedCategory
-```
-
-**`AlgebraicGeometry.Space.inclusionAdjunctionGlobalSectionsAssociated_of_isAffineSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceCoheratorAssociatedModule.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceCoheratorAssociatedModule.lean#L196). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.inclusionAdjunctionGlobalSectionsAssociated_of_isAffineSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceCoheratorAssociatedModule.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceCoheratorAssociatedModule.lean#L196). The attribute's comment: “part (1): for affine X, F ↦ Γ(X, F)^~ is right adjoint to QCoh(O\_X) ⊆ Mod(O\_X)”.
 
 > **Stacks 08H0 (1).**  Let `X` be an affine algebraic space over a scheme `S` and set
 > `A = Γ(X, 𝒪_X)`.  The functor sending an `𝒪_X`-module `𝓕` to the quasi-coherent `𝒪_X`-module
@@ -249,7 +127,7 @@ def inclusionAdjunctionGlobalSectionsAssociated_of_isAffineSpace :
         (affineSpaceAssociatedModuleEquivalence B S hS F hF hAffine).functor
 ```
 
-**`AlgebraicGeometry.Space.coheratorIsoGlobalSectionsAssociated_of_isAffineSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceCoheratorAssociatedModule.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceCoheratorAssociatedModule.lean#L225). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.coheratorIsoGlobalSectionsAssociated_of_isAffineSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceCoheratorAssociatedModule.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceCoheratorAssociatedModule.lean#L226). The attribute's comment: “part (1): for affine X, the coherator Q\_X is naturally isomorphic to F ↦ Γ(X, F)^~”.
 
 > **Stacks 08H0 (1).**  Let `X` be an affine algebraic space over a scheme `S` and set
 > `A = Γ(X, 𝒪_X)`.  The coherator `Q_X : Mod(𝒪_X) ⥤ QCoh(𝒪_X)` of Stacks 077V (2) is naturally
@@ -268,7 +146,7 @@ def coheratorIsoGlobalSectionsAssociated_of_isAffineSpace :
         (affineSpaceAssociatedModuleEquivalence B S hS F hF hAffine).functor
 ```
 
-**`AlgebraicGeometry.Space.derivedCoheratorIsoComparisonInv_of_isAffineSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceCoheratorComparisonInverse.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceCoheratorComparisonInverse.lean#L46). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.derivedCoheratorIsoComparisonInv_of_isAffineSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceCoheratorComparisonInverse.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceCoheratorComparisonInverse.lean#L47). The attribute's comment: “part (3): for affine X, RQ\_X restricted to D\_QCoh(O\_X) is naturally isomorphic to the inverse of the comparison equivalence D(QCoh(O\_X)) → D\_QCoh(O\_X) of 08F1”.
 
 > **Stacks 08H0 (3).**  On an affine algebraic space the derived coherator `RQ_X`, restricted
 > to the complexes of `𝒪_X`-modules with quasi-coherent cohomology, is naturally isomorphic to the
@@ -284,7 +162,7 @@ def derivedCoheratorIsoComparisonInv_of_isAffineSpace (hAffine : IsAffineSpace B
       (quasicoherentDerivedComparison B S hS F hF).inv
 ```
 
-**`AlgebraicGeometry.Space.derivedCoheratorIsoDerivedGlobalSectionsAssociated_of_isAffineSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceDerivedCoheratorAssociatedModule.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceDerivedCoheratorAssociatedModule.lean#L100). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.derivedCoheratorIsoDerivedGlobalSectionsAssociated_of_isAffineSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceDerivedCoheratorAssociatedModule.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineSpaceDerivedCoheratorAssociatedModule.lean#L101). The attribute's comment: “part (2): for affine X, RQ\_X is naturally isomorphic to E ↦ RΓ(X, E)^~ on the unbounded derived category”.
 
 > **Stacks 08H0 (2).**  Let `X` be an affine algebraic space over a scheme `S` and set
 > `A = Γ(X, 𝒪_X)`.  The derived coherator `RQ_X : D(𝒪_X) ⥤ D(QCoh(𝒪_X))` sends an object `E` of
@@ -302,7 +180,7 @@ def derivedCoheratorIsoDerivedGlobalSectionsAssociated_of_isAffineSpace :
 
 [Tag 09TG](https://stacks.math.columbia.edu/tag/09TG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedComparison_isEquivalence_of_affineEtaleDerivedPushforwardSquareCommutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorEquivalence.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorEquivalence.lean#L88). The attribute's comment: “equivalence clause”.
+**`AlgebraicGeometry.Space.quasicoherentDerivedComparison_isEquivalence_of_affineEtaleDerivedPushforwardSquareCommutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorEquivalence.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorEquivalence.lean#L88). The attribute's comment: “equivalence clause”.
 
 > Let `X` be a quasi-compact and quasi-separated algebraic space over `S`.  Suppose that for
 > every étale morphism `j : V ⟶ W` with `W ⊆ X` a quasi-compact open and `V` affine, the right
@@ -318,7 +196,7 @@ theorem quasicoherentDerivedComparison_isEquivalence_of_affineEtaleDerivedPushfo
     (quasicoherentDerivedComparison B S hS X.1 X.2).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.derivedCoherator_isoInv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorQuasiInverse.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorQuasiInverse.lean#L366). The attribute's comment: “quasi-inverse clause, given the equivalence”.
+**`AlgebraicGeometry.Space.derivedCoherator_isoInv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorQuasiInverse.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorQuasiInverse.lean#L366). The attribute's comment: “quasi-inverse clause, given the equivalence”.
 
 > **[Stacks, Tag 09TG], quasi-inverse clause.**  Let `X` be an algebraic space whose comparison
 > functor `i_X : D(QCoh(𝒪_X)) ⥤ D_QCoh(𝒪_X)` of Stacks 08F1 is an equivalence, and let `RQ_X` be
@@ -349,7 +227,7 @@ def derivedCoherator_isoInv
 
 [Tag 08H1](https://stacks.math.columbia.edu/tag/08H1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedComparison_isEquivalence_of_isAffineHom_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorEquivalence.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorEquivalence.lean#L129). The attribute's comment: “equivalence”.
+**`AlgebraicGeometry.Space.quasicoherentDerivedComparison_isEquivalence_of_isAffineHom_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorEquivalence.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorEquivalence.lean#L130). The attribute's comment: “equivalence”.
 
 > On a quasi-compact algebraic space with affine diagonal over `ℤ` the comparison functor
 > `i_X : D(QCoh(𝒪_X)) ⥤ D_QCoh(𝒪_X)` of Stacks 08F1 is an equivalence.
@@ -361,7 +239,7 @@ theorem quasicoherentDerivedComparison_isEquivalence_of_isAffineHom_diag
     (quasicoherentDerivedComparison B S hS X.1 X.2).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.exists_equivalence_functor_eq_and_inverse_eq_derivedCoherator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorEquivalence.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorEquivalence.lean#L202). The attribute's comment: “equivalence with quasi-inverse RQ\_X”.
+**`AlgebraicGeometry.Space.exists_equivalence_functor_eq_and_inverse_eq_derivedCoherator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorEquivalence.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorEquivalence.lean#L220). The attribute's comment: “equivalence with quasi-inverse RQ\_X”.
 
 > Let `X` be a quasi-compact algebraic space with affine diagonal over `ℤ`, `C_X` a coherator
 > of `X` and `RQ_X` a total right derived functor of it.  Then the comparison functor
@@ -370,7 +248,20 @@ theorem quasicoherentDerivedComparison_isEquivalence_of_isAffineHom_diag
 > `J ⋙ RQ_X`, for `J : D_QCoh(𝒪_X) ⥤ D(𝒪_X)` the inclusion.
 
 ```lean
-theorem exists_equivalence_functor_eq_and_inverse_eq_derivedCoherator :
+theorem exists_equivalence_functor_eq_and_inverse_eq_derivedCoherator
+    (hXqc : IsQuasiCompactSpace B S hS X.1)
+    (hXdiag : IsAffineHom B (⊤_ Scheme.{u}) hZ (diag (viewOverIntegers B S hS hZ X.1)))
+    (CF : Modules.{u, u} B S hS X.1 X.2 ⥤ QuasicoherentSheaves.{u, u} B S hS X.1 X.2)
+    (adjF : (SheafOfModules.isQuasicoherentOnSite.{u + 1, u, u, u}
+      ((Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B S hS X.1 X.2).O))).ι ⊣ CF)
+    [CF.Additive]
+    (RQ : DerivedCategory (Modules.{u, u} B S hS X.1 X.2) ⥤
+      DerivedCategory (QuasicoherentSheaves.{u, u} B S hS X.1 X.2))
+    (RQUnit : CF.mapHomologicalComplex (ComplexShape.up ℤ) ⋙
+        DerivedCategory.Q (C := QuasicoherentSheaves.{u, u} B S hS X.1 X.2) ⟶
+      DerivedCategory.Q (C := Modules.{u, u} B S hS X.1 X.2) ⋙ RQ)
+    [RQ.IsRightDerivedFunctor RQUnit
+      (HomologicalComplex.quasiIso (Modules.{u, u} B S hS X.1 X.2) (ComplexShape.up ℤ))] :
     ∃ e : DerivedCategory (QuasicoherentSheaves.{u, u} B S hS X.1 X.2) ≌
         QuasicoherentDerivedCategory.{u, u} B S hS X.1 X.2,
       e.functor = quasicoherentDerivedComparison B S hS X.1 X.2 ∧
@@ -385,7 +276,7 @@ theorem exists_equivalence_functor_eq_and_inverse_eq_derivedCoherator :
 
 [Tag 0CSR](https://stacks.math.columbia.edu/tag/0CSR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.derivedQuasicoherentPushforwardSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardQuasicoherentSquareTag.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardQuasicoherentSquareTag.lean#L112).
+**`AlgebraicGeometry.Space.derivedQuasicoherentPushforwardSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardQuasicoherentSquareTag.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardQuasicoherentSquareTag.lean#L112).
 
 > **[Stacks, Tag 0CSR].**  Let `f : X ⟶ Y` be a morphism of algebraic spaces over a scheme `S`,
 > with `X` and `Y` quasi-compact with affine diagonal over `ℤ`.  Let `Φ` be a right derived functor
@@ -441,4 +332,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.11, Tag 08GX](https://stacks.math.columbia.edu/tag/08GX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

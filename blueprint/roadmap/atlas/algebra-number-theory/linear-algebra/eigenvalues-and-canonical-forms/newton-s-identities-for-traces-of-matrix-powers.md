@@ -7,7 +7,7 @@ statement: formalized
 
 # Newton's identities for traces of matrix powers
 
-4 results, 1 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/newton-s-identities-for-traces-of-matrix-powers/index.html).
+4 results, 1 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/newton-s-identities-for-traces-of-matrix-powers/index.html).
 
 ## Traces of powers of a $2 \times 2$ matrix
 
@@ -26,7 +26,7 @@ $$\operatorname{tr}(M^{2m+1}) = (2m + 1) \sum_{r=0}^{m} (-1)^r
 
 - Peiran Ding, Yanjun Zhu and Lei Wang, "A New Formula for the Sum of Integer Powers Based on Elementary Matrix Theory", Theorem 1, equations (5) and (6).
 
-Stated but not proved: `MathlibExt.LinearAlgebra.PowerSumMatrixWanted.trace_pow_two` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/PowerSumMatrixWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/PowerSumMatrixWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/newton-s-identities-for-traces-of-matrix-powers/index.html#trace-pow-two).
+Stated but not proved: `MathlibExt.LinearAlgebra.PowerSumMatrixWanted.trace_pow_two` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/PowerSumMatrixWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/PowerSumMatrixWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/newton-s-identities-for-traces-of-matrix-powers/index.html#trace-pow-two).
 
 ## Integral of $x^r (1 - x)^r$ over $(0, 1)$
 
@@ -39,7 +39,7 @@ $$\int_0^1 x^r (1 - x)^r \, dx = \frac{1}{(2r + 1) \binom{2r}{r}}.$$
 
 - Peiran Ding, Yanjun Zhu and Lei Wang, "A New Formula for the Sum of Integer Powers Based on Elementary Matrix Theory", Lemma 3.
 
-Stated but not proved: `MathlibExt.LinearAlgebra.PowerSumMatrixWanted.integral_pow_one_sub_pow` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/PowerSumMatrixWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/PowerSumMatrixWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/newton-s-identities-for-traces-of-matrix-powers/index.html#integral-pow-one-sub-pow).
+Stated but not proved: `MathlibExt.LinearAlgebra.PowerSumMatrixWanted.integral_pow_one_sub_pow` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/PowerSumMatrixWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/PowerSumMatrixWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/newton-s-identities-for-traces-of-matrix-powers/index.html#integral-pow-one-sub-pow).
 
 ## Characteristic-polynomial coefficients in descending order
 
@@ -51,7 +51,7 @@ $X^{N-k}$ in $\chi_A$ when $k \le N$, and $0$ when $k > N$.
 
 Setting $c_k = 0$ for $k > N$ lets the trace recurrence be stated uniformly for all positive $k$.
 
-Formalized by `MathlibExt.LinearAlgebra.TraceNewtonWanted.LinearAlgebra.TraceNewton.charpolyDescendingCoeff`, a definition declared in [WantedExt/LinearAlgebra/TraceNewtonWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TraceNewtonWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/newton-s-identities-for-traces-of-matrix-powers/index.html#charpoly-descending-coeff).
+Formalized by `MathlibExt.LinearAlgebra.TraceNewtonWanted.LinearAlgebra.TraceNewton.charpolyDescendingCoeff`, a definition declared in [WantedExt/LinearAlgebra/TraceNewtonWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TraceNewtonWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/newton-s-identities-for-traces-of-matrix-powers/index.html#charpoly-descending-coeff).
 
 ## Newton's trace identities for the characteristic polynomial
 
@@ -69,7 +69,7 @@ where $k$ is read as an element of $R$.
 
 - Knill, *Some fundamental theorems in mathematics*, §220. Problem `trace_cayley_hamilton_newton` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.LinearAlgebra.TraceNewtonWanted.LinearAlgebra.TraceNewton.trace_cayley_hamilton_newton` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TraceNewtonWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TraceNewtonWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/newton-s-identities-for-traces-of-matrix-powers/index.html#trace-cayley-hamilton-newton).
+Stated but not proved: `MathlibExt.LinearAlgebra.TraceNewtonWanted.LinearAlgebra.TraceNewton.trace_cayley_hamilton_newton` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TraceNewtonWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TraceNewtonWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/newton-s-identities-for-traces-of-matrix-powers/index.html#trace-cayley-hamilton-newton).
 
 ## Depends on
 
@@ -78,4 +78,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Newton's identities for traces of matrix powers](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/newton-s-identities-for-traces-of-matrix-powers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/newton-s-identities-for-traces-of-matrix-powers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/newton-s-identities-for-traces-of-matrix-powers)

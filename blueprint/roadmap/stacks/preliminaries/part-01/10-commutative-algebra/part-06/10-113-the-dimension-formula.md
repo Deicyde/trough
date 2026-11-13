@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.113 The dimension formula
 
-Section 10.113 of the Stacks Project, [Tag 02II](https://stacks.math.columbia.edu/tag/02II). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.113 of the Stacks Project, [Tag 02II](https://stacks.math.columbia.edu/tag/02II). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02IJ, a lemma
 
 [Tag 02IJ](https://stacks.math.columbia.edu/tag/02IJ) in the Stacks Project.
 
-**`height_add_trdeg_residue_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DimensionFormula/GeneratorInduction.lean, line 790](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DimensionFormula/GeneratorInduction.lean#L790). References: EGA IV (13.3.4), “partial”; EGA IV (5.5.6), “partial”; EGA IV (5.5.7), “more general”; EGA IV (5.5.8), “more general”; EGA IV (5.6.5), “special case”.
+**`height_add_trdeg_residue_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DimensionFormula/GeneratorInduction.lean, line 790](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DimensionFormula/GeneratorInduction.lean#L790). References: EGA IV (13.3.4), “partial”; EGA IV (5.5.6), “partial”; EGA IV (5.5.7), “more general”; EGA IV (5.5.8), “more general”; EGA IV (5.6.5), “special case”.
 
 > **Stacks 02IJ**.
 > For `R` Noetherian, `S` a finite-type domain extension of the domain `R`, and `q` a prime of `S`
@@ -30,7 +30,7 @@ theorem height_add_trdeg_residue_le
       ≤ p.height + (Cardinal.toNat (Algebra.trdeg R S) : ℕ∞)
 ```
 
-**`height_add_trdeg_residue_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DimensionFormula/GeneratorInduction.lean, line 810](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DimensionFormula/GeneratorInduction.lean#L810). References: EGA IV (13.3.4), “special case”; EGA IV (5.5.6), “special case”; EGA IV (5.5.7), “special case”; EGA IV (5.6.5), “partial”.
+**`height_add_trdeg_residue_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DimensionFormula/GeneratorInduction.lean, line 810](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DimensionFormula/GeneratorInduction.lean#L810). References: EGA IV (13.3.4), “special case”; EGA IV (5.5.6), “special case”; EGA IV (5.5.7), “special case”; EGA IV (5.6.5), “partial”.
 
 > **Stacks 02IJ**.
 > If in addition `R` is universally catenary, the dimension formula is an equality:
@@ -50,7 +50,7 @@ theorem height_add_trdeg_residue_eq
 
 [Tag 02MA](https://stacks.math.columbia.edu/tag/02MA) in the Stacks Project.
 
-**`Ideal.primesOver_finite_and_forall_height_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/Over/HeightOne.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/Over/HeightOne.lean#L325). The attribute's comment: “Finiteness of the induced extension of fraction fields is stated as `Algebra.IsAlgebraic A B`, to which it is equivalent for `B` of finite type over `A`; see the module docstring.”.
+**`Ideal.primesOver_finite_and_forall_height_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/Over/HeightOne.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/Over/HeightOne.lean#L325). The attribute's comment: “Finiteness of the induced extension of fraction fields is stated as `Algebra.IsAlgebraic A B`, to which it is equivalent for `B` of finite type over `A`; see the module docstring.”.
 
 > **Generically finite maps are quasi-finite in codimension one.**
 > Let `A ⊆ B` be an extension of domains with `A` Noetherian, `B` algebraic and of finite type over
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.113, Tag 02II](https://stacks.math.columbia.edu/tag/02II)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

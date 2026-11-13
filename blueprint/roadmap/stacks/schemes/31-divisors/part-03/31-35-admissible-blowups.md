@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.35 Admissible blowups
 
-Section 31.35 of the Stacks Project, [Tag 080J](https://stacks.math.columbia.edu/tag/080J). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.35 of the Stacks Project, [Tag 080J](https://stacks.math.columbia.edu/tag/080J). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 080K, a definition
 
 [Tag 080K](https://stacks.math.columbia.edu/tag/080K) in the Stacks Project.
 
-**`Stacks.Blowup.IsAdmissibleBlowup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Admissible.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Admissible.lean#L80).
+**`Stacks.Blowup.IsAdmissibleBlowup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Admissible.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Admissible.lean#L80).
 
 > A morphism `f : X' ⟶ X` is a **`U`-admissible blowup** if there is a quasi-coherent sheaf of
 > ideals `I` on `X` whose closed subscheme is of finite presentation over `X` and supported away
@@ -29,7 +29,7 @@ abbrev IsAdmissibleBlowup (U : X.Opens) (f : X' ⟶ X) : Prop
 
 [Tag 080L](https://stacks.math.columbia.edu/tag/080L) in the Stacks Project.
 
-**`Stacks.Blowup.IsAdmissibleBlowup.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleComposition.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleComposition.lean#L262).
+**`Stacks.Blowup.IsAdmissibleBlowup.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleComposition.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleComposition.lean#L262).
 
 > **Stacks Project, Tag 080L.** Let `X` be a quasi-compact and quasi-separated scheme and
 > `U ⊆ X` an open subscheme. If `b : X' ⟶ X` is a `U`-admissible blowup and `b' : X'' ⟶ X'` is a
@@ -54,7 +54,7 @@ theorem IsAdmissibleBlowup.comp [CompactSpace X] [QuasiSeparatedSpace X]
 
 [Tag 080M](https://stacks.math.columbia.edu/tag/080M) in the Stacks Project.
 
-**`Stacks.Blowup.exists_admissibleBlowup_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleExtension.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleExtension.lean#L402).
+**`Stacks.Blowup.exists_admissibleBlowup_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleExtension.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleExtension.lean#L402).
 
 > **Stacks Project, Tag 080M.** A blowup admissible over the intersection of two quasi-compact
 > opens extends to a blowup of the ambient scheme admissible over the first open, with its
@@ -74,7 +74,7 @@ public theorem exists_admissibleBlowup_isPullback
 
 [Tag 080N](https://stacks.math.columbia.edu/tag/080N) in the Stacks Project.
 
-**`Stacks.Blowup.exists_admissibleBlowup_dominating`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleDominating.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleDominating.lean#L437).
+**`Stacks.Blowup.exists_admissibleBlowup_dominating`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleDominating.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleDominating.lean#L437).
 
 > **Stacks Project, Tag 080N.** Let `U` be an open subscheme of a scheme `X` and let
 > `b_i : Y_i ⟶ X`, `i ∈ ι`, be a finite family of `U`-admissible blowups. There is a `U`-admissible
@@ -105,7 +105,7 @@ theorem exists_admissibleBlowup_dominating {X : Scheme.{u}} (U : X.Opens)
 
 [Tag 080P](https://stacks.math.columbia.edu/tag/080P) in the Stacks Project.
 
-**`Stacks.Blowup.exists_admissibleBlowup_disjoint_open_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleSeparation.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleSeparation.lean#L375).
+**`Stacks.Blowup.exists_admissibleBlowup_disjoint_open_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleSeparation.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleSeparation.lean#L375).
 
 > **Stacks Project, Tag 080P.** Let `X` be a quasi-compact and quasi-separated scheme and let
 > `U, V` be disjoint quasi-compact open subschemes of `X`. Then there is a `U ∪ V`-admissible
@@ -123,7 +123,7 @@ theorem exists_admissibleBlowup_disjoint_open_cover
           b ⁻¹ᵁ U ≤ U₁ ∧ b ⁻¹ᵁ V ≤ U₂
 ```
 
-**`Stacks.Blowup.exists_admissibleBlowup_pairwise_disjoint_open_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleSeparation.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleSeparation.lean#L476). The attribute's comment: “stated for a finite family of pairwise disjoint quasi-compact opens; the source's two-piece statement is the case of a two-element index type”.
+**`Stacks.Blowup.exists_admissibleBlowup_pairwise_disjoint_open_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleSeparation.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleSeparation.lean#L476). The attribute's comment: “stated for a finite family of pairwise disjoint quasi-compact opens; the source's two-piece statement is the case of a two-element index type”.
 
 > **Stacks Project, Tag 080P for a finite family.** Let `X` be a quasi-compact and
 > quasi-separated scheme and let `U_i`, `i ∈ ι`, be a finite family of pairwise disjoint
@@ -155,7 +155,7 @@ theorem exists_admissibleBlowup_pairwise_disjoint_open_cover
 
 [Tag 0ESL](https://stacks.math.columbia.edu/tag/0ESL) in the Stacks Project.
 
-**`Stacks.DenominatorBlowup.isAdmissibleBlowup_denominatorIdealData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/DenominatorAdmissible.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/DenominatorAdmissible.lean#L210). The attribute's comment: “the blowup in the ideal of denominators is U-admissible”.
+**`Stacks.DenominatorBlowup.isAdmissibleBlowup_denominatorIdealData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/DenominatorAdmissible.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/DenominatorAdmissible.lean#L210). The attribute's comment: “the blowup in the ideal of denominators is U-admissible”.
 
 > Let `X` be a locally Noetherian scheme, `L` an invertible `𝒪_X`-module and `s` a regular
 > meromorphic section of `L`.  Let `U ⊆ X` be the maximal open subscheme such that `s` corresponds
@@ -169,7 +169,7 @@ theorem isAdmissibleBlowup_denominatorIdealData [IsLocallyNoetherian X]
       (Stacks.Blowup.blowUpToBase (denominatorIdealData X L s))
 ```
 
-**`Stacks.DenominatorBlowup.isSectionOver_and_isAdmissibleBlowup_and_exists_differenceTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/DenominatorExceptionalDivisor.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/DenominatorExceptionalDivisor.lean#L303). The attribute's comment: “the whole statement: U is maximal, the blowup in the ideal of denominators is U-admissible, and there is an effective Cartier divisor D with b^* L = O(D - E) carrying the last clause in the form the source's own proof gives it, that b^* s is the regular global section of b^* L(E) whose zero scheme is D”.
+**`Stacks.DenominatorBlowup.isSectionOver_and_isAdmissibleBlowup_and_exists_differenceTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/DenominatorExceptionalDivisor.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/DenominatorExceptionalDivisor.lean#L303). The attribute's comment: “the whole statement: U is maximal, the blowup in the ideal of denominators is U-admissible, and there is an effective Cartier divisor D with b^* L = O(D - E) carrying the last clause in the form the source's own proof gives it, that b^* s is the regular global section of b^* L(E) whose zero scheme is D”.
 
 > **Stacks Project, Tag 0ESL.**  Let `X` be a locally Noetherian scheme, `L` an invertible
 > `𝒪_X`-module and `s` a regular meromorphic section of `L`.  Let `U ⊆ X` be the maximal open
@@ -222,4 +222,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.35, Tag 080J](https://stacks.math.columbia.edu/tag/080J)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

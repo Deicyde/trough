@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.30 Application to modifications
 
-Section 88.30 of the Stacks Project, [Tag 0AS1](https://stacks.math.columbia.edu/tag/0AS1). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.30 of the Stacks Project, [Tag 0AS1](https://stacks.math.columbia.edu/tag/0AS1). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AS2, an equation
 
 [Tag 0AS2](https://stacks.math.columbia.edu/tag/0AS2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsFiniteTypeModification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Modifications.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Modifications.lean#L113). The attribute's comment: “the three defining conditions”.
+**`AlgebraicGeometry.Space.IsFiniteTypeModification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Modifications.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Modifications.lean#L113). The attribute's comment: “the three defining conditions”.
 
 > **Stacks 0AS2.** An algebraic space over `W`, locally of finite type over `W` and
 > unchanged over `W₀`.
@@ -24,7 +24,7 @@ def IsFiniteTypeModification {W : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (W₀ :
     (X : Over W) : Prop
 ```
 
-**`AlgebraicGeometry.Space.FiniteTypeModification`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Modifications.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Modifications.lean#L120). The attribute's comment: “the category they form”.
+**`AlgebraicGeometry.Space.FiniteTypeModification`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Modifications.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Modifications.lean#L120). The attribute's comment: “the category they form”.
 
 > **Stacks 0AS2.** The category of algebraic spaces over `W` which are locally of finite
 > type over `W` and isomorphisms over `W₀`.
@@ -33,7 +33,7 @@ def IsFiniteTypeModification {W : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (W₀ :
 abbrev FiniteTypeModification {W : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (W₀ : Subfunctor W)
 ```
 
-**`AlgebraicGeometry.Space.isFiniteTypeModification_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Modifications.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Modifications.lean#L130).
+**`AlgebraicGeometry.Space.isFiniteTypeModification_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Modifications.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Modifications.lean#L130).
 
 > **Stacks 0AS2.** The three conditions of Stacks 0AS2: the source is an algebraic space,
 > the structure morphism is locally of finite type, and its base change to `W₀` is an
@@ -51,7 +51,7 @@ theorem isFiniteTypeModification_iff :
 
 [Tag 0AE5](https://stacks.math.columbia.edu/tag/0AE5) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isEquivalence_affineModificationBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineModificationBaseChange.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineModificationBaseChange.lean#L457).
+**`AlgebraicGeometry.FormalSpace.isEquivalence_affineModificationBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineModificationBaseChange.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineModificationBaseChange.lean#L457).
 
 > **Stacks 0AE5.** Let `φ : A →+* R` be a homomorphism of Noetherian rings inducing an
 > isomorphism from the `I`-adic completion of `A` to the `I R`-adic completion of `R`, for an
@@ -68,7 +68,7 @@ theorem isEquivalence_affineModificationBaseChange [IsNoetherianRing A] [IsNoeth
 
 [Tag 0BH5](https://stacks.math.columbia.edu/tag/0BH5) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.fpqcLocalProperties_iff_of_affineModificationBaseChange_obj_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineModificationBaseChangeProperties.lean, line 416](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineModificationBaseChangeProperties.lean#L416).
+**`AlgebraicGeometry.FormalSpace.fpqcLocalProperties_iff_of_affineModificationBaseChange_obj_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineModificationBaseChangeProperties.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineModificationBaseChangeProperties.lean#L416).
 
 > Let `φ : A →+* R` be a homomorphism of rings, `A` Noetherian, inducing an isomorphism from
 > the `I`-adic completion of `A` to the `I R`-adic completion of `R`, as in Stacks 0AE5. Let
@@ -97,7 +97,7 @@ theorem fpqcLocalProperties_iff_of_affineModificationBaseChange_obj_iso
 
 [Tag 0AF7](https://stacks.math.columbia.edu/tag/0AF7) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isEquivalence_finiteTypeBaseChange_of_flat_localHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FlatLocalModificationEquivalence.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FlatLocalModificationEquivalence.lean#L84).
+**`AlgebraicGeometry.FormalSpace.isEquivalence_finiteTypeBaseChange_of_flat_localHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FlatLocalModificationEquivalence.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FlatLocalModificationEquivalence.lean#L84).
 
 > **Stacks 0AF7.** Let `A → R` be a local homomorphism of Noetherian local rings which is
 > flat, with `𝔪_R = 𝔪_A R` and `κ(𝔪_A) = κ(𝔪_R)`. Then the base-change functor along
@@ -130,7 +130,7 @@ theorem isEquivalence_finiteTypeBaseChange_of_flat_localHom {A R : Type u} [Comm
 
 [Tag 0AE6](https://stacks.math.columbia.edu/tag/0AE6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_dominating_of_isLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationDomination/LocalRing.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModificationDomination/LocalRing.lean#L247).
+**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_dominating_of_isLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationDomination/LocalRing.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationDomination/LocalRing.lean#L249).
 
 > **Stacks 0AE6.** Let `(A, 𝔪, κ)` be a Noetherian local ring, let `U = Spec(A) ∖ V(𝔪)` and let
 > `f : X ⟶ Spec(A)` be an object of the category of Stacks 0AS2 for `(A, 𝔪)` — an algebraic space,
@@ -166,4 +166,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.30, Tag 0AS1](https://stacks.math.columbia.edu/tag/0AS1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

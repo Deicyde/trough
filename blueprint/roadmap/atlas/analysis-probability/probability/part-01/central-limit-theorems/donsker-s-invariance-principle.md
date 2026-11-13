@@ -8,21 +8,21 @@ proof: formalized
 
 # Donsker's invariance principle
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html).
 
 ## Clamping to the unit interval
 
 For a real number $x$, its clamp to $[0,1]$ is
 $\min(\max(x, 0), 1)$.
 
-Formalized by `MathlibExt.Probability.DonskerWanted.donskerClamp`, a definition declared in [MathlibExt/Probability/Donsker.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Donsker.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#donsker-clamp).
+Formalized by `MathlibExt.Probability.DonskerWanted.donskerClamp`, a definition declared in [MathlibExt/Probability/Donsker.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Donsker.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#donsker-clamp).
 
 ## Polygonal interpolation weight
 
 For natural numbers $n$ and $i$ and $t \in [0,1]$, the
 weight is $w_{n,i}(t) = \min(\max(nt - i, 0), 1)$, the clamp of $nt - i$ to $[0,1]$.
 
-Formalized by `MathlibExt.Probability.DonskerWanted.donskerWeight`, a definition declared in [MathlibExt/Probability/Donsker.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Donsker.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#donsker-weight).
+Formalized by `MathlibExt.Probability.DonskerWanted.donskerWeight`, a definition declared in [MathlibExt/Probability/Donsker.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Donsker.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#donsker-weight).
 
 ## Polygonal interpolation weight as a continuous function
 
@@ -30,7 +30,7 @@ For natural numbers $n$ and $i$,
 this is the function $t \mapsto \min(\max(nt - i, 0), 1)$ on $[0,1]$, regarded as an element of
 the space $C([0,1], \mathbb{R})$ of continuous real functions on $[0,1]$.
 
-Formalized by `MathlibExt.Probability.DonskerWanted.donskerWeightCM`, a definition declared in [MathlibExt/Probability/Donsker.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Donsker.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#donsker-weight-cm).
+Formalized by `MathlibExt.Probability.DonskerWanted.donskerWeightCM`, a definition declared in [MathlibExt/Probability/Donsker.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Donsker.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#donsker-weight-cm).
 
 ## Polygonal partial-sum process
 
@@ -44,7 +44,7 @@ $$S_n(\omega)(t) = \frac{1}{\sqrt{n}} \sum_{i=0}^{n-1} X_i(\omega) \min(\max(nt 
 Thus for $n \ge 1$, $S_n(\omega)$ linearly interpolates the values
 $(X_0(\omega) + \dots + X_{k-1}(\omega))/\sqrt{n}$ at the times $k/n$ for $0 \le k \le n$.
 
-Formalized by `MathlibExt.Probability.DonskerWanted.donskerProcess`, a definition declared in [MathlibExt/Probability/Donsker.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Donsker.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#donsker-process).
+Formalized by `MathlibExt.Probability.DonskerWanted.donskerProcess`, a definition declared in [MathlibExt/Probability/Donsker.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Donsker.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#donsker-process).
 
 ## Explicit formula for the polygonal partial-sum process
 
@@ -56,14 +56,14 @@ $$S_n(\omega)(t) = \frac{1}{\sqrt{n}} \Big( \sum_{i=0}^{m-1} X_i(\omega) + c \Bi
 
 where $c = (nt - m) X_m(\omega)$ if $m < n$ and $c = 0$ otherwise.
 
-Formalized by `MathlibExt.Probability.DonskerWanted.donskerProcess_apply_eq`, a theorem declared in [MathlibExt/Probability/Donsker.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Donsker.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#donsker-process-apply-eq).
+Formalized by `MathlibExt.Probability.DonskerWanted.donskerProcess_apply_eq`, a theorem declared in [MathlibExt/Probability/Donsker.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Donsker.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#donsker-process-apply-eq).
 
 ## Inclusion of the unit interval into the nonnegative reals
 
 This map sends $t \in [0,1]$
 to $t$ regarded as a nonnegative real number.
 
-Formalized by `MathlibExt.Probability.DonskerWanted.iccToNNReal`, a definition declared in [MathlibExt/Probability/Donsker.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Donsker.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#icc-to-nnreal).
+Formalized by `MathlibExt.Probability.DonskerWanted.iccToNNReal`, a definition declared in [MathlibExt/Probability/Donsker.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Donsker.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#icc-to-nnreal).
 
 ## Finite-dimensional distributions determine laws on $C((0,1))$
 
@@ -72,7 +72,7 @@ distributions. Compatibility wrapper around
 `MathlibExt.Probability.ContinuousPathConvergence.continuousPath_measure_ext_of_finset_eval`
 at `T = 1`; the projective-limit argument lives there, not here.
 
-Formalized by `MathlibExt.Probability.DonskerWanted.continuousMap_measure_ext_of_finset_eval`, a theorem declared in [MathlibExt/Probability/Donsker.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Donsker.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#continuous-map-measure-ext-of-finset-eva).
+Formalized by `MathlibExt.Probability.DonskerWanted.continuousMap_measure_ext_of_finset_eval`, a theorem declared in [MathlibExt/Probability/Donsker.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Donsker.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#continuous-map-measure-ext-of-finset-eva).
 
 ## Etemadi's maximal inequality
 
@@ -82,7 +82,7 @@ Then for every natural number $n$ and every real number $a$,
 
 $$P\Big(\max_{0 \le k \le n} |S_k| \ge 3a\Big) \le 3 \max_{0 \le k \le n} P(|S_k| \ge a).$$
 
-Formalized by `MathlibExt.Probability.DonskerWanted.etemadi_maximal_inequality`, a theorem declared in [MathlibExt/Probability/Donsker.lean, line 1334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Donsker.lean#L1334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#etemadi-maximal-inequality).
+Formalized by `MathlibExt.Probability.DonskerWanted.etemadi_maximal_inequality`, a theorem declared in [MathlibExt/Probability/Donsker.lean, line 1417](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Donsker.lean#L1417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#etemadi-maximal-inequality).
 
 ## Donsker's invariance principle
 
@@ -107,7 +107,7 @@ and uniqueness of laws on $C([0,1], \mathbb{R})$ from finite-dimensional distrib
 
 - M. D. Donsker, An invariance principle for certain probability limit theorems, Mem. Amer. Math. Soc. 6 (1951); extension Prohorov 1956 to Polish; textbook in Billingsley, Convergence of Probability Measures, 2nd ed., Kallenberg, Foundations of Modern Probability; Lean is `C(Icc 0 1, ℝ)` polygonal process with `MemLp 2`, mean-zero variance-one standardization.
 
-Formalized by `MathlibExt.Probability.DonskerWanted.donsker_invariance_principle`, a theorem declared in [MathlibExt/Probability/Donsker.lean, line 2618](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Donsker.lean#L2618). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#donsker-invariance-principle).
+Formalized by `MathlibExt.Probability.DonskerWanted.donsker_invariance_principle`, a theorem declared in [MathlibExt/Probability/Donsker.lean, line 2701](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Donsker.lean#L2701). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html#donsker-invariance-principle).
 
 ## Depends on
 
@@ -116,4 +116,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Donsker's invariance principle](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/central-limit-theorems/donsker-s-invariance-principle)

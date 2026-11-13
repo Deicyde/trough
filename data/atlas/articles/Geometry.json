@@ -1,6 +1,6 @@
 {
  "schema": "trough-atlas/v1",
- "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "rev": "035e1808ca0c8983682b74153a02628d616d77ce",
  "articles": [
   {
    "path": "Geometry/complex-and-symplectic-geometry/darboux-s-theorem/darboux.md",
@@ -1077,7 +1077,7 @@
    "declaration": "MathlibExt.Analysis.Convex.LPDuality.strong_linear_programming_duality",
    "lean": {
     "file": "MathlibExt/Analysis/Convex/LinearProgrammingDuality.lean",
-    "line": 929,
+    "line": 930,
     "kind": "theorem",
     "sorry": false
    }
@@ -2181,7 +2181,7 @@
    "declaration": "MathlibExt.Geometry.Manifold.HairyBallWanted.hairyBall_even_sphere_ambient",
    "lean": {
     "file": "MathlibExt/Geometry/Manifold/HairyBall.lean",
-    "line": 1305,
+    "line": 1298,
     "kind": "theorem",
     "sorry": false
    }
@@ -2349,7 +2349,7 @@
    "declaration": "MathlibExt.Geometry.Manifold.MorseLemmaWanted.morse_lemma",
    "lean": {
     "file": "MathlibExt/Geometry/Manifold/MorseLemma.lean",
-    "line": 1463,
+    "line": 1460,
     "kind": "theorem",
     "sorry": false
    }
@@ -6993,7 +6993,7 @@
    "declaration": "MetaMathlibExt.pizza_theorem",
    "lean": {
     "file": "MathlibExt/Geometry/Euclidean/PizzaTheorem.lean",
-    "line": 1329,
+    "line": 1323,
     "kind": "theorem",
     "sorry": false
    }

@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.48 Enriques-Severi-Zariski
 
-Section 33.48 of the Stacks Project, [Tag 0FVD](https://stacks.math.columbia.edu/tag/0FVD). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.48 of the Stacks Project, [Tag 0FVD](https://stacks.math.columbia.edu/tag/0FVD). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FD7, a lemma
 
 [Tag 0FD7](https://stacks.math.columbia.edu/tag/0FD7) in the Stacks Project.
 
-**`Stacks.EnriquesSeveriZariski.forall_le_eq_zero_sections_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean#L407). The attribute's comment: “the vanishing stated on the global sections themselves”.
+**`Stacks.EnriquesSeveriZariski.forall_le_eq_zero_sections_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean#L407). The attribute's comment: “the vanishing stated on the global sections themselves”.
 
 > **[Stacks, Tag 0FD7], on global sections.** Let `k` be a field, let `X` be a proper scheme
 > over `k`, let `ℒ` be an ample invertible `𝒪_X`-module and let `ℱ` be a coherent `𝒪_X`-module. If
@@ -27,7 +27,7 @@ theorem forall_le_eq_zero_sections_twist (k : Type u) [Field k] (f : X ⟶ Spec 
     ∃ n₀ : ℤ, ∀ n : ℤ, n ≤ n₀ → ∀ t : Γ(twist L F n, ⊤), t = 0
 ```
 
-**`Stacks.EnriquesSeveriZariski.exists_forall_le_isZero_globalSectionsOverField_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean#L432).
+**`Stacks.EnriquesSeveriZariski.exists_forall_le_isZero_globalSectionsOverField_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean#L432).
 
 > **[Stacks, Tag 0FD7].** Let `k` be a field, let `X` be a proper scheme over `k`, let `ℒ` be
 > an ample invertible `𝒪_X`-module and let `ℱ` be a coherent `𝒪_X`-module. If `Ass(ℱ)` contains no
@@ -45,7 +45,7 @@ theorem exists_forall_le_isZero_globalSectionsOverField_twist (k : Type u) [Fiel
     ∃ n₀ : ℤ, ∀ n : ℤ, n ≤ n₀ → IsZero (globalSectionsOverField k f (twist L F n))
 ```
 
-**`Stacks.EnriquesSeveriZariski.exists_forall_le_isZero_cohomologyOverField_zero_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean#L447). The attribute's comment: “the vanishing stated on degree-zero cohomology”.
+**`Stacks.EnriquesSeveriZariski.exists_forall_le_isZero_cohomologyOverField_zero_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean, line 447](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean#L447). The attribute's comment: “the vanishing stated on degree-zero cohomology”.
 
 > **[Stacks, Tag 0FD7], in degree-zero cohomology.** The same vanishing read through the
 > derived functor computing `H⁰`, which is the form the twisted-cohomology consumers of 0FD7 ask
@@ -59,7 +59,7 @@ theorem exists_forall_le_isZero_cohomologyOverField_zero_twist (k : Type u) [Fie
     ∃ n₀ : ℤ, ∀ n : ℤ, n ≤ n₀ → IsZero (cohomologyOverField k f (twist L F n) 0)
 ```
 
-**`Stacks.EnriquesSeveriZariski.exists_forall_le_isZero_globalSectionsOverField_twistedGradedModuleTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean#L477). The attribute's comment: “the vanishing at the twisted-graded-module spelling of the twist”.
+**`Stacks.EnriquesSeveriZariski.exists_forall_le_isZero_globalSectionsOverField_twistedGradedModuleTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean#L477). The attribute's comment: “the vanishing at the twisted-graded-module spelling of the twist”.
 
 > **[Stacks, Tag 0FD7] at the twisted-graded-module spelling of the twist**, which is the
 > spelling the graded twisted-cohomology machinery is typed against.
@@ -74,7 +74,7 @@ theorem exists_forall_le_isZero_globalSectionsOverField_twistedGradedModuleTwist
         (Stacks.Cohomology.TwistedGradedModule.twist X L F n))
 ```
 
-**`Stacks.EnriquesSeveriZariski.exists_forall_le_isZero_cohomologyOverField_zero_twistedGradedModuleTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean#L490). The attribute's comment: “the vanishing at the twisted-graded-module spelling, in degree-zero cohomology”.
+**`Stacks.EnriquesSeveriZariski.exists_forall_le_isZero_cohomologyOverField_zero_twistedGradedModuleTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/Basic.lean#L490). The attribute's comment: “the vanishing at the twisted-graded-module spelling, in degree-zero cohomology”.
 
 > **[Stacks, Tag 0FD7] at the twisted-graded-module spelling, in degree-zero cohomology.**
 
@@ -92,7 +92,7 @@ theorem exists_forall_le_isZero_cohomologyOverField_zero_twistedGradedModuleTwis
 
 [Tag 0FD8](https://stacks.math.columbia.edu/tag/0FD8) in the Stacks Project.
 
-**`Stacks.EnriquesSeveriZariski.exists_forall_le_isZero_cohomologyOverField_one_twistedGradedModuleTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/H1Vanishing.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/H1Vanishing.lean#L194).
+**`Stacks.EnriquesSeveriZariski.exists_forall_le_isZero_cohomologyOverField_one_twistedGradedModuleTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/H1Vanishing.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EnriquesSeveriZariski/H1Vanishing.lean#L194).
 
 > **[Stacks, Tag 0FD8].**  Let `k` be a field, let `X` be a scheme proper over `k`, let `ℒ` be
 > an ample invertible `𝒪_X`-module and let `ℱ` be a coherent `𝒪_X`-module.  If the stalk of `ℱ` has
@@ -119,7 +119,7 @@ theorem exists_forall_le_isZero_cohomologyOverField_one_twistedGradedModuleTwist
 
 [Tag 0FD9](https://stacks.math.columbia.edu/tag/0FD9) in the Stacks Project.
 
-**`Stacks.AmpleSectionConnected.connectedSpace_zeroScheme_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleSectionConnected/Connected.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleSectionConnected/Connected.lean#L88).
+**`Stacks.AmpleSectionConnected.connectedSpace_zeroScheme_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleSectionConnected/Connected.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleSectionConnected/Connected.lean#L88).
 
 > **[Stacks, Tag 0FD9].** Let `k` be a field, let `X` be a proper scheme over `k`, let `ℒ` be
 > an ample invertible `𝒪_X`-module and let `s ∈ Γ(X, ℒ)`. If `s` is a regular section
@@ -147,4 +147,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.48, Tag 0FVD](https://stacks.math.columbia.edu/tag/0FVD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

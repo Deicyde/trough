@@ -8,13 +8,13 @@ proof: formalized
 
 # 89.8 Resolution
 
-Section 89.8 of the Stacks Project, [Tag 0BHV](https://stacks.math.columbia.edu/tag/0BHV). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 89.8 of the Stacks Project, [Tag 0BHV](https://stacks.math.columbia.edu/tag/0BHV). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BHW, a definition
 
 [Tag 0BHW](https://stacks.math.columbia.edu/tag/0BHW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsResolutionOfSingularities`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ResolutionOfSingularities.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ResolutionOfSingularities.lean#L62).
+**`AlgebraicGeometry.Space.IsResolutionOfSingularities`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ResolutionOfSingularities.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ResolutionOfSingularities.lean#L62).
 
 > A *resolution of singularities* of a Noetherian integral algebraic space `Y` over `S` is a
 > modification `f : X ⟶ Y` whose source `X` is regular.
@@ -31,7 +31,7 @@ abbrev IsResolutionOfSingularities {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 0BHX](https://stacks.math.columbia.edu/tag/0BHX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HasResolutionByNormalizedBlowUps`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ResolutionByNormalizedBlowUps.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ResolutionByNormalizedBlowUps.lean#L133).
+**`AlgebraicGeometry.Space.HasResolutionByNormalizedBlowUps`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ResolutionByNormalizedBlowUps.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ResolutionByNormalizedBlowUps.lean#L133).
 
 > **Stacks 0BHX.** A two-dimensional Noetherian integral algebraic space `Y` over `S` *has a
 > resolution of singularities by normalized blowups* when the normalization of `Y` can be
@@ -49,7 +49,7 @@ abbrev HasResolutionByNormalizedBlowUps (Y : AlgebraicSpaces B S hS)
 
 [Tag 0BHY](https://stacks.math.columbia.edu/tag/0BHY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.tfae_resolution_of_dimension_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SurfaceResolutionTheorem.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SurfaceResolutionTheorem.lean#L64).
+**`AlgebraicGeometry.Space.tfae_resolution_of_dimension_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SurfaceResolutionTheorem.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SurfaceResolutionTheorem.lean#L64).
 
 > **Stacks 0BHY.** For a two-dimensional integral Noetherian algebraic space `Y` over `S`, the
 > following are equivalent: (1) there is an alteration `X ⟶ Y` with `X` regular; (2) `Y` has a
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 89.8, Tag 0BHV](https://stacks.math.columbia.edu/tag/0BHV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

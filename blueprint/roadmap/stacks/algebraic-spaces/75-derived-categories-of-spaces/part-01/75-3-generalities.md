@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.3 Generalities
 
-Section 75.3 of the Stacks Project, [Tag 08GD](https://stacks.math.columbia.edu/tag/08GD). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 75.3 of the Stacks Project, [Tag 08GD](https://stacks.math.columbia.edu/tag/08GD). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08GE, a lemma
 
 [Tag 08GE](https://stacks.math.columbia.edu/tag/08GE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.derivedModulePushforwardEtaleRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardEtaleRestriction.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardEtaleRestriction.lean#L227).
+**`AlgebraicGeometry.Space.derivedModulePushforwardEtaleRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardEtaleRestriction.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardEtaleRestriction.lean#L227).
 
 > **Stacks 08GE.**  Let `S` be a scheme, let `f : X ⟶ Y` be a morphism of algebraic spaces over
 > `S`, let `g : Y' ⟶ Y` be an étale morphism, set `X' = Y' ×_Y X` and let `f' : X' ⟶ Y'` be the
@@ -68,7 +68,7 @@ def derivedModulePushforwardEtaleRestrictIso (sq : IsPullback i f' f g)
     Rf ⋙ Rg ≅ Ri ⋙ Rf'
 ```
 
-**`AlgebraicGeometry.Space.derivedModulePushforwardEtaleRestrictIsoOfIsEtale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardEtaleRestrictionNoShriekData.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardEtaleRestrictionNoShriekData.lean#L61).
+**`AlgebraicGeometry.Space.derivedModulePushforwardEtaleRestrictIsoOfIsEtale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardEtaleRestrictionNoShriekData.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardEtaleRestrictionNoShriekData.lean#L61).
 
 > Let `S` be a scheme, let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`, let
 > `g : Y' ⟶ Y` be an étale morphism, set `X' = Y' ×_Y X` (the square `sq` is cartesian) and let
@@ -115,7 +115,7 @@ def derivedModulePushforwardEtaleRestrictIsoOfIsEtale (sq : IsPullback i f' f g)
 
 [Tag 08GF](https://stacks.math.columbia.edu/tag/08GF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CohomologySupportedOn`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedSupport.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedSupport.lean#L77).
+**`AlgebraicGeometry.Space.CohomologySupportedOn`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedSupport.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivedSupport.lean#L77).
 
 > **Stacks 08GF.** An object `E` of `D(𝒪_F)` is *supported on* a subset `T` of `|F|` when
 > every one of its cohomology sheaves `Hⁱ(E)` is supported on `T`.
@@ -135,4 +135,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.3, Tag 08GD](https://stacks.math.columbia.edu/tag/08GD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

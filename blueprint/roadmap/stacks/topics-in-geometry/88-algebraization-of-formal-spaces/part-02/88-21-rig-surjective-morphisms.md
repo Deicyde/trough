@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.FormalSpace.IsRigSurjective, AlgebraicGeometry.FormalSpace.FractionalPowers.not_isAdic_toDiscreteValuationRing, AlgebraicGeometry.FormalSpace.IsRigSurjective.comp, AlgebraicGeometry.FormalSpace.IsRigSurjective.comp_of_isFormalAlgebraicSpace, AlgebraicGeometry.FormalSpace.IsRigSurjective.of_isPullback, AlgebraicGeometry.FormalSpace.hasRigSurjectiveOnPullbackCharts_of_isRigSurjective, AlgebraicGeometry.FormalSpace.IsRigSurjective.of_isPullback_of_representable, AlgebraicGeometry.FormalSpace.IsRigSurjective.of_comp_of_mono
+lean: AlgebraicGeometry.FormalSpace.IsRigSurjective, AlgebraicGeometry.FormalSpace.FractionalPowers.noAdicPoints_isRigSurjective_isDomain, AlgebraicGeometry.FormalSpace.IsRigSurjective.comp, AlgebraicGeometry.FormalSpace.IsRigSurjective.comp_of_isFormalAlgebraicSpace, AlgebraicGeometry.FormalSpace.IsRigSurjective.of_isPullback, AlgebraicGeometry.FormalSpace.hasRigSurjectiveOnPullbackCharts_of_isRigSurjective, AlgebraicGeometry.FormalSpace.IsRigSurjective.of_isPullback_of_representable, AlgebraicGeometry.FormalSpace.IsRigSurjective.of_comp_of_mono
 statement: formalized
 proof: formalized
 ---
 
 # 88.21 Rig-surjective morphisms
 
-Section 88.21 of the Stacks Project, [Tag 0AQP](https://stacks.math.columbia.edu/tag/0AQP). 14 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.21 of the Stacks Project, [Tag 0AQP](https://stacks.math.columbia.edu/tag/0AQP). 14 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AQQ, a definition
 
 [Tag 0AQQ](https://stacks.math.columbia.edu/tag/0AQQ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsRigSurjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjective.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjective.lean#L116).
+**`AlgebraicGeometry.FormalSpace.IsRigSurjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjective.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjective.lean#L116).
 
 > **Stacks 0AQQ.** A morphism `f : X ⟶ Y` of fppf sheaves on the big fppf site of `S` is
 > *rig-surjective* when every adic morphism `p : Spf R ⟶ Y` out of the formal spectrum of a
@@ -35,29 +35,31 @@ abbrev IsRigSurjective (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S
 
 [Tag 0AQZ](https://stacks.math.columbia.edu/tag/0AQZ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.FractionalPowers.not_isAdic_toDiscreteValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/NoAdicDiscreteValuationPoints.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/NoAdicDiscreteValuationPoints.lean#L225).
+**`AlgebraicGeometry.FormalSpace.FractionalPowers.noAdicPoints_isRigSurjective_isDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/NoAdicDiscreteValuationPointsRigSurjective.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/NoAdicDiscreteValuationPointsRigSurjective.lean#L212).
 
-> **Stacks 0AQZ.** No ring map from `A = (⋃_{n ≥ 1} k[t^{1/n}])^∧`, carrying its `t`-adic
-> topology, to a complete discrete valuation ring `R`, carrying its maximal-adic topology, is
-> adic. Since a morphism `Spf R ⟶ Spf A` of affine formal algebraic spaces is `Spf` of a
-> continuous ring map `A → R` by Stacks 0AN0, there are therefore no adic morphisms
-> `Spf R ⟶ Spf A`, and every morphism `X ⟶ Spf A` satisfies the lifting condition of
-> Stacks 0AQQ vacuously, although `t` is a nonzero element of `A`.
+> **Stacks 0AQZ.** Let `A = (⋃_{n ≥ 1} k[t^{1/n}])^∧` be the `t`-adic completion of the ring
+> of polynomials in the fractional powers of `t` over a field `k`, carrying its `t`-adic topology.
+> There are no adic morphisms `Spf R ⟶ Spf A` with `R` a complete discrete valuation ring; thus
+> every morphism `X ⟶ Spf A` is rig-surjective; and yet `A` is a domain and `t ∈ A` is not zero.
 
 ```lean
-theorem not_isAdic_toDiscreteValuationRing [TopologicalSpace (Completion k)]
-    [IsTopologicalRing (Completion k)]
-    (hA : _root_.IsAdic (Ideal.span {completionGenerator k})) (R : Type*) [CommRing R]
-    [IsDomain R] [IsDiscreteValuationRing R] [TopologicalSpace R] [IsTopologicalRing R]
-    [IsAdicComplete (IsLocalRing.maximalIdeal R) R]
-    (hR : _root_.IsAdic (IsLocalRing.maximalIdeal R)) (φ : Completion k →+* R) : ¬ φ.IsAdic
+theorem noAdicPoints_isRigSurjective_isDomain [TopologicalSpace (Completion k)]
+    (hA : _root_.IsAdic (Ideal.span {completionGenerator k}))
+    (D : QuotientSystem B S hS (Completion k)) :
+    (∀ (R : Type u) [CommRing R] [IsDomain R] [IsDiscreteValuationRing R] [TopologicalSpace R],
+      _root_.IsAdic (IsLocalRing.maximalIdeal R) →
+        IsAdicComplete (IsLocalRing.maximalIdeal R) R →
+          ∀ (E : QuotientSystem B S hS R) (p : formalSpectrum E ⟶ formalSpectrum D),
+            ¬ Space.IsRepresentableByAlgebraicSpacesULift.{u + 1} B S hS p.hom) ∧
+      (∀ {X : FppfSheaf B S hS} (f : X ⟶ formalSpectrum D), IsRigSurjective B S hS f) ∧
+      IsDomain (Completion k) ∧ completionGenerator k ≠ 0
 ```
 
 ## Tag 0AQR, a lemma
 
 [Tag 0AQR](https://stacks.math.columbia.edu/tag/0AQR) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsRigSurjective.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjective.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjective.lean#L171). The attribute's comment: “assuming Stacks 0AN5 and, for the second factor, Stacks 0AQ0”.
+**`AlgebraicGeometry.FormalSpace.IsRigSurjective.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjective.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjective.lean#L171). The attribute's comment: “assuming Stacks 0AN5 and, for the second factor, Stacks 0AQ0”.
 
 > **Stacks 0AQR**, carrying two hypotheses. A composite of rig-surjective morphisms of formal
 > algebraic spaces over `S` which are locally of finite type is locally of finite type and
@@ -86,7 +88,7 @@ theorem IsRigSurjective.comp (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Cont
     IsLocallyOfFiniteType B S hS (f ≫ g) ∧ IsRigSurjective B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsRigSurjective.comp_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveComposition.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveComposition.lean#L150).
+**`AlgebraicGeometry.FormalSpace.IsRigSurjective.comp_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveComposition.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveComposition.lean#L150).
 
 > **Stacks 0AQR.** A composite of rig-surjective morphisms of formal algebraic spaces over `S`
 > which are locally of finite type is locally of finite type and rig-surjective: an adic point of
@@ -113,7 +115,7 @@ theorem IsRigSurjective.comp_of_isFormalAlgebraicSpace
 
 [Tag 0AQS](https://stacks.math.columbia.edu/tag/0AQS) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsRigSurjective.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveBaseChange.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveBaseChange.lean#L80).
+**`AlgebraicGeometry.FormalSpace.IsRigSurjective.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveBaseChange.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveBaseChange.lean#L80).
 
 > **Stacks 0AQS.** Let `f : X ⟶ Y` and `g : Z ⟶ Y` be morphisms of formal algebraic spaces
 > over `S` which are locally of finite type. A base change `p : W ⟶ Z` of `f` along `g` is
@@ -132,7 +134,7 @@ theorem IsRigSurjective.of_isPullback {W X Y Z : FppfSheaf B S hS}
     IsLocallyOfFiniteType B S hS p ∧ IsRigSurjective B S hS p
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasRigSurjectiveOnPullbackCharts_of_isRigSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersionCharts.lean, line 612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersionCharts.lean#L612). The attribute's comment: “the chart shape in which the proof of Stacks 0GD5 uses it, carrying nothing beyond rig-surjectivity of f: a chart which is representable by algebraic spaces and etale is in particular representable, so the base change of f along it is rig-surjective, and the presenting isomorphisms of the chart are stripped off by Stacks 0AQT and its postcomposition companion. Local finite typeness of f and of the chart, which the source assumes, is used by the source only for the conclusion that the base change is locally of finite type, which is not asserted here”.
+**`AlgebraicGeometry.FormalSpace.hasRigSurjectiveOnPullbackCharts_of_isRigSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersionCharts.lean, line 612](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersionCharts.lean#L612). The attribute's comment: “the chart shape in which the proof of Stacks 0GD5 uses it, carrying nothing beyond rig-surjectivity of f: a chart which is representable by algebraic spaces and etale is in particular representable, so the base change of f along it is rig-surjective, and the presenting isomorphisms of the chart are stripped off by Stacks 0AQT and its postcomposition companion. Local finite typeness of f and of the chart, which the source assumes, is used by the source only for the conclusion that the base change is locally of finite type, which is not asserted here”.
 
 > **Stacks 0AQS** in the chart shape in which the proof of Stacks 0GD5 uses it: a
 > rig-surjective morphism has rig-surjective chart base changes, presented as formal spectra of
@@ -153,7 +155,7 @@ theorem hasRigSurjectiveOnPullbackCharts_of_isRigSurjective {X Y : FppfSheaf B S
     HasRigSurjectiveOnPullbackCharts B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsRigSurjective.of_isPullback_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveRigEtaleDiagonal.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveRigEtaleDiagonal.lean#L198). The attribute's comment: “rig-surjectivity alone, for a base change along a morphism assumed only representable by algebraic spaces rather than locally of finite type”.
+**`AlgebraicGeometry.FormalSpace.IsRigSurjective.of_isPullback_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveRigEtaleDiagonal.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveRigEtaleDiagonal.lean#L202). The attribute's comment: “rig-surjectivity alone, for a base change along a morphism assumed only representable by algebraic spaces rather than locally of finite type”.
 
 > **Stacks 0AQS**, with both hypotheses that
 > `AlgebraicGeometry.FormalSpace.IsRigSurjective.of_isPullback` makes on local finite typeness
@@ -179,7 +181,7 @@ theorem IsRigSurjective.of_isPullback_of_representable {W X Y Z : FppfSheaf B S 
 
 [Tag 0GH5](https://stacks.math.columbia.edu/tag/0GH5) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsRigSurjective.of_comp_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveMonomorphism.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveMonomorphism.lean#L75).
+**`AlgebraicGeometry.FormalSpace.IsRigSurjective.of_comp_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveMonomorphism.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveMonomorphism.lean#L75).
 
 > **Stacks 0GH5.** Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of locally Noetherian formal
 > algebraic spaces over `S` which are locally of finite type. If `g ∘ f` is rig-surjective and
@@ -201,7 +203,7 @@ theorem IsRigSurjective.of_comp_of_mono {X Y Z : FppfSheaf B S hS} (f : X ⟶ Y)
 
 [Tag 0AQT](https://stacks.math.columbia.edu/tag/0AQT) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsRigSurjective.of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjective.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjective.lean#L138).
+**`AlgebraicGeometry.FormalSpace.IsRigSurjective.of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjective.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjective.lean#L138).
 
 > **Stacks 0AQT.** If a composition of morphisms of formal algebraic spaces over `S` is
 > rig-surjective, then so is its second factor: a lift of an adic point of the final target to
@@ -219,7 +221,7 @@ theorem IsRigSurjective.of_comp (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.C
 
 [Tag 0AQU](https://stacks.math.columbia.edu/tag/0AQU) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSurjective_of_isSurjective_of_isRepresentableEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleAdicPointLift.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleAdicPointLift.lean#L629).
+**`AlgebraicGeometry.FormalSpace.isRigSurjective_of_isSurjective_of_isRepresentableEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleAdicPointLift.lean, line 629](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleAdicPointLift.lean#L629).
 
 > **Stacks 0AQU.** A morphism of fppf sheaves over `S` which is representable by algebraic
 > spaces, étale and surjective is rig-surjective.
@@ -241,7 +243,7 @@ theorem isRigSurjective_of_isSurjective_of_isRepresentableEtale {X Y : FppfSheaf
     IsRigSurjective B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isRigSurjective_of_isRepresentableEtale_of_isSurjective'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveEtaleSurjectiveRefined.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveEtaleSurjectiveRefined.lean#L59).
+**`AlgebraicGeometry.FormalSpace.isRigSurjective_of_isRepresentableEtale_of_isSurjective'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveEtaleSurjectiveRefined.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveEtaleSurjectiveRefined.lean#L59).
 
 > A morphism of locally Noetherian formal algebraic spaces over `S` which is representable by
 > algebraic spaces, étale and surjective is rig-surjective.
@@ -258,7 +260,7 @@ theorem isRigSurjective_of_isRepresentableEtale_of_isSurjective'
 
 [Tag 0AQV](https://stacks.math.columbia.edu/tag/0AQV) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSurjective_iff_forall_pullback_snd_of_isRepresentableEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/JointlyRigSurjectiveEtale.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/JointlyRigSurjectiveEtale.lean#L129).
+**`AlgebraicGeometry.FormalSpace.isRigSurjective_iff_forall_pullback_snd_of_isRepresentableEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/JointlyRigSurjectiveEtale.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/JointlyRigSurjectiveEtale.lean#L132). The attribute's comment: “for a morphism f : X ⟶ Y locally of finite type and a family of representable étale morphisms gᵢ : Yᵢ ⟶ Y from formal algebraic spaces with ∐ gᵢ surjective, f is rig-surjective if and only if every base change X ×\_Y Yᵢ ⟶ Yᵢ is; the locally Noetherian hypotheses of the source are not needed”.
 
 > **Stacks 0AQV.** Let `f : X ⟶ Y` be a morphism of fppf sheaves over `S` which is locally of
 > finite type and let `{gᵢ : Yᵢ ⟶ Y}` be a family of morphisms from formal algebraic spaces which
@@ -272,9 +274,9 @@ theorem isRigSurjective_of_isRepresentableEtale_of_isSurjective'
 > applies Stacks 0AQU to `∐ gᵢ`, and that form avoids the coproduct by catching each adic point in
 > one member of the family.
 >
-> The source states this for locally Noetherian formal algebraic spaces `X`, `Y` and `Yᵢ`. Only
-> that the `Yᵢ` are formal algebraic spaces is used; the locally Noetherian hypotheses and the
-> hypotheses on `X` and `Y` are omitted.
+> The source states this for locally Noetherian formal algebraic spaces `X`, `Y` and `Yᵢ`. The
+> proof uses that the `Yᵢ` are formal algebraic spaces and nothing more, so the locally Noetherian
+> hypotheses and the hypotheses on `X` and `Y` are omitted.
 
 ```lean
 theorem isRigSurjective_iff_forall_pullback_snd_of_isRepresentableEtale (B : BigFppfSite.{u})
@@ -287,45 +289,11 @@ theorem isRigSurjective_iff_forall_pullback_snd_of_isRepresentableEtale (B : Big
     IsRigSurjective B S hS f ↔ ∀ i, IsRigSurjective B S hS (pullback.snd f (g i))
 ```
 
-**`AlgebraicGeometry.FormalSpace.isRigSurjective_iff_forall_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveEtaleLocal.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveEtaleLocal.lean#L155). The attribute's comment: “both directions, assuming that a representable étale morphism is locally of finite type (hetaleFiniteType) and that a jointly surjective family of representable étale morphisms is jointly rig-surjective, which is Stacks 0AQU for the coproduct of the family together with the factorization of an adic point of a coproduct through a summand (h0AQU)”.
-
-> **Stacks 0AQV**, both directions, carrying two hypotheses. Let `f : X ⟶ Y` be a morphism of
-> formal algebraic spaces over `S` which is locally of finite type and let `{gᵢ : Yᵢ ⟶ Y}` be a
-> family of representable étale morphisms which is jointly surjective on points. Then `f` is
-> rig-surjective exactly when each base change `X ×_Y Yᵢ ⟶ Yᵢ` is rig-surjective.
->
-> The forward direction is Stacks 0AQS. For the converse an adic point of `Y` out of a complete
-> discrete valuation ring is lifted to one `Yᵢ` over an extension of complete discrete valuation
-> rings, using that the family is jointly rig-surjective, and then lifted through that base
-> change over a further extension; the projection to `X` makes the result a lift through `f`, and
-> the two extensions compose to one.
->
-> The two hypotheses are `hetaleFiniteType`, that a representable étale morphism is locally of
-> finite type (Stacks 0AJG for Definition 0AM4), and `h0AQU`, that a jointly surjective family of
-> representable étale morphisms is jointly rig-surjective (**Stacks 0AQU** for `∐ gᵢ`, together
-> with the factorization of an adic point of a coproduct through a summand); neither is available
-> in this library.
-
-```lean
-theorem isRigSurjective_iff_forall_pullback_snd (B : BigFppfSite.{u}) (S : Scheme.{u})
-    (hS : B.Contains S) {I : Type v} {X Y : FppfSheaf B S hS} (f : X ⟶ Y)
-    (Yi : I → FppfSheaf B S hS) (g : ∀ i, Yi i ⟶ Y)
-    (hf : IsLocallyOfFiniteType B S hS f)
-    (hg : ∀ i, IsRepresentableEtale B S hS (g i))
-    (hcover : IsJointlySurjective B S hS Yi g)
-    (hetaleFiniteType : ∀ {U V : FppfSheaf B S hS} (w : U ⟶ V),
-      IsRepresentableEtale B S hS w → IsLocallyOfFiniteType B S hS w)
-    (h0AQU : ∀ {V : FppfSheaf B S hS} {J : Type v} (Vj : J → FppfSheaf B S hS)
-      (v : ∀ j, Vj j ⟶ V), (∀ j, IsRepresentableEtale B S hS (v j)) →
-      IsJointlySurjective B S hS Vj v → IsJointlyRigSurjective B S hS Vj v) :
-    IsRigSurjective B S hS f ↔ ∀ i, IsRigSurjective B S hS (pullback.snd f (g i))
-```
-
 ## Tag 0AQX, a lemma
 
 [Tag 0AQX](https://stacks.math.columbia.edu/tag/0AQX) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSurjective_formalSpectrumMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveCriterion.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveCriterion.lean#L191).
+**`AlgebraicGeometry.FormalSpace.isRigSurjective_formalSpectrumMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveCriterion.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveCriterion.lean#L191).
 
 > Let `A` be a Noetherian ring complete with respect to an ideal `I`, and let `C` be an
 > `I`-adically complete `A`-algebra. If `A/Iⁿ → C/IⁿC` is of finite type and flat for every `n`,
@@ -355,43 +323,7 @@ theorem isRigSurjective_formalSpectrumMap
 
 [Tag 0AQY](https://stacks.math.columbia.edu/tag/0AQY) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSurjective_formalSpectrumMap_iff_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveFaithfullyFlat.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveFaithfullyFlat.lean#L406). The attribute's comment: “modulo Stacks 0AN5 part (3) implies part (1) for the adic point, carried as `hAdicRepresentable`”.
-
-> **Stacks 0AQY.** Let `A` be a Noetherian ring complete with respect to an ideal `I` whose
-> `I`-torsion vanishes, and let `C` be an `I`-adically complete `A`-algebra such that
-> `A/Iⁿ → C/IⁿC` is flat and of finite type for every `n`. Then `Spf C → Spf A` is rig-surjective
-> if and only if `A/I → C/IC` is faithfully flat.
->
-> Faithful flatness gives rig-surjectivity by Stacks 0AQX. Conversely, a closed point of
-> `Spec(A/I)` is a maximal ideal `I ⊆ 𝔪 ⊆ A`, and
-> `exists_isPrime_comap_eq_of_isRigSurjective` contracts a prime of `C` onto it; so
-> `Spec(C/IC) → Spec(A/I)` meets every closed point, which for a flat map is faithful flatness
-> (Stacks 00HQ).
-
-```lean
-theorem isRigSurjective_formalSpectrumMap_iff_faithfullyFlat (I : Ideal A)
-    (hAadic : IsAdic I) (hAcomplete : IsAdicComplete I A)
-    (hCadic : IsAdic (I.map (algebraMap A C)))
-    (hCcomplete : IsAdicComplete (I.map (algebraMap A C)) C)
-    (hTorsion : Submodule.torsionBySet A A (I : Set A) = ⊥)
-    (hfinite : ∀ n : ℕ, Algebra.FiniteType (A ⧸ I ^ n) (C ⧸ (I ^ n).map (algebraMap A C)))
-    (hflat : ∀ n : ℕ, Module.Flat (A ⧸ I ^ n) (C ⧸ (I ^ n).map (algebraMap A C)))
-    (D : QuotientSystem B S hS A) (E : QuotientSystem B S hS C)
-    (f : ContinuousHom D E) (hf : f.toRingHom = algebraMap A C)
-    (hAdicRepresentable : ∀ (R : Type u) [CommRing R] [TopologicalSpace R]
-      [IsTopologicalRing R] [IsLinearTopology R R], TopologicalRing.IsWeaklyAdmissible R →
-      ∀ (DR : QuotientSystem B S hS R)
-      (q : ContinuousHom D DR), RingHom.IsAdic q.toRingHom →
-        Space.IsRepresentableByAlgebraicSpacesULift.{u + 1} B S hS
-          (formalSpectrumMap
-            (TopologicalRing.isWeaklyAdmissible_of_isAdic hAadic hAcomplete) q).hom) :
-    IsRigSurjective B S hS
-      (formalSpectrumMap
-        (TopologicalRing.isWeaklyAdmissible_of_isAdic hAadic hAcomplete) f) ↔
-      Module.FaithfullyFlat (A ⧸ I) (C ⧸ I.map (algebraMap A C))
-```
-
-**`AlgebraicGeometry.FormalSpace.isRigSurjective_formalSpectrumMap_iff_faithfullyFlat'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveFaithfullyFlatUnconditional.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveFaithfullyFlatUnconditional.lean#L226).
+**`AlgebraicGeometry.FormalSpace.isRigSurjective_formalSpectrumMap_iff_faithfullyFlat'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveFaithfullyFlatUnconditional.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveFaithfullyFlatUnconditional.lean#L228).
 
 > **Stacks 0AQY.** Let `A` be a Noetherian ring complete with respect to an ideal `I` whose
 > `I`-torsion vanishes, and let `C` be an `I`-adically complete `A`-algebra such that
@@ -424,7 +356,7 @@ theorem isRigSurjective_formalSpectrumMap_iff_faithfullyFlat' (I : Ideal A)
 
 [Tag 0AR0](https://stacks.math.columbia.edu/tag/0AR0) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSurjective_iff_factorsAdicCompleteDvrPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveDvrCriterion.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveDvrCriterion.lean#L383).
+**`AlgebraicGeometry.FormalSpace.isRigSurjective_iff_factorsAdicCompleteDvrPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveDvrCriterion.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveDvrCriterion.lean#L383).
 
 > **Stacks 0AR0.** Let `f : X ⟶ Y` be a morphism of formal algebraic
 > spaces over `S` with `X` and `Y` locally Noetherian, `f` locally of finite type and `f` a
@@ -445,7 +377,7 @@ theorem isRigSurjective_iff_factorsAdicCompleteDvrPoints {X Y : FppfSheaf B S hS
 
 [Tag 0GD5](https://stacks.math.columbia.edu/tag/0GD5) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSurjective_iff_hasAnnihilatedKerPowOnPullbackCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersion.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersion.lean#L404). The attribute's comment: “both directions, carrying three hypotheses: Stacks 0AQI in the chart form of Stacks 0GD4, that the chart homomorphism is a surjection of WAdm^Noeth which is adic of topologically finite type (hAQI); the equivalence of rig-surjectivity of f with rig-surjectivity of its chart base changes, which is Stacks 0AQS forwards and Stacks 0AQV backwards (hAQV); and Stacks 0AR0 for the chart maps, read through the full faithfulness of Spf of Stacks 0AN0, identifying rig-surjectivity of a chart map with the factorisation of its adic discrete valuation points (hAR0). The algebraic equivalence joining the factorisation criterion to the annihilation condition, which is what the source's two implications come down to and which uses Stacks 00PH, is proved”.
+**`AlgebraicGeometry.FormalSpace.isRigSurjective_iff_hasAnnihilatedKerPowOnPullbackCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersion.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersion.lean#L404). The attribute's comment: “both directions, carrying three hypotheses: Stacks 0AQI in the chart form of Stacks 0GD4, that the chart homomorphism is a surjection of WAdm^Noeth which is adic of topologically finite type (hAQI); the equivalence of rig-surjectivity of f with rig-surjectivity of its chart base changes, which is Stacks 0AQS forwards and Stacks 0AQV backwards (hAQV); and Stacks 0AR0 for the chart maps, read through the full faithfulness of Spf of Stacks 0AN0, identifying rig-surjectivity of a chart map with the factorisation of its adic discrete valuation points (hAR0). The algebraic equivalence joining the factorisation criterion to the annihilation condition, which is what the source's two implications come down to and which uses Stacks 00PH, is proved”.
 
 > **Stacks 0GD5**, both directions, carrying three hypotheses. Let `f : X ⟶ Y` be a closed
 > immersion of locally Noetherian formal algebraic spaces over `S`. Then `f` is rig-surjective
@@ -471,7 +403,7 @@ theorem isRigSurjective_iff_hasAnnihilatedKerPowOnPullbackCharts {X Y : FppfShea
     IsRigSurjective B S hS f ↔ HasAnnihilatedKerPowOnPullbackCharts B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isRigSurjective_iff_hasAnnihilatedKerPow_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersionAtlas.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersionAtlas.lean#L92).
+**`AlgebraicGeometry.FormalSpace.isRigSurjective_iff_hasAnnihilatedKerPow_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersionAtlas.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersionAtlas.lean#L92).
 
 > **Stacks 0GD5.** Let `f : X ⟶ Y` be a closed immersion of locally Noetherian formal
 > algebraic spaces over `S`. Then `f` is rig-surjective if and only if for every affine formal
@@ -500,7 +432,7 @@ theorem isRigSurjective_iff_hasAnnihilatedKerPow_of_isClosedImmersion {X Y : Fpp
 
 [Tag 0GD6](https://stacks.math.columbia.edu/tag/0GD6) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSmooth_and_isRigSurjective_tfae_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveClosedImmersion.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveClosedImmersion.lean#L253). The attribute's comment: “all three conditions and every implication between them, carrying exactly the four hypotheses which this library's Stacks 0GD4 and Stacks 0GD5 already carry and nothing more: Stacks 0AQI in the chart form of Stacks 0GD4, that the chart homomorphism is a surjection of WAdm^Noeth which is adic of topologically finite type (hAQI), whose library carrier covers only the countably indexed case, which the Noetherian charts here are not; Stacks 0GCZ read as the proof of Stacks 0GD4 reads it, that rig-etaleness of f need only be checked on the ring maps appearing in condition (3) (hGCZ); the equivalence of rig-surjectivity of f with rig-surjectivity of its chart base changes, Stacks 0AQS forwards and Stacks 0AQV backwards (hAQV), undischargeable because Tag 0AJG, IsEtaleULift implies IsLocallyOfFiniteTypeULift, has no carrier in this library; and Stacks 0AR0 for the chart maps read through the full faithfulness of Spf of Stacks 0AN0 (hAR0), undischargeable because its substantial direction rests on the EXISTENCE half of Tag 0AQD, whose carriers supply uniqueness only. No carried hypothesis is an implication of this lemma. The combination the source calls trivial is proved, including the ring-theoretic observation the source omits: I * J ^ n = 0 together with I * J <= J ^ 2 forces I ^ n * J = 0”.
+**`AlgebraicGeometry.FormalSpace.isRigSmooth_and_isRigSurjective_tfae_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveClosedImmersion.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveClosedImmersion.lean#L253). The attribute's comment: “all three conditions and every implication between them, carrying exactly the four hypotheses which this library's Stacks 0GD4 and Stacks 0GD5 already carry and nothing more: Stacks 0AQI in the chart form of Stacks 0GD4, that the chart homomorphism is a surjection of WAdm^Noeth which is adic of topologically finite type (hAQI), whose library carrier covers only the countably indexed case, which the Noetherian charts here are not; Stacks 0GCZ read as the proof of Stacks 0GD4 reads it, that rig-etaleness of f need only be checked on the ring maps appearing in condition (3) (hGCZ); the equivalence of rig-surjectivity of f with rig-surjectivity of its chart base changes, Stacks 0AQS forwards and Stacks 0AQV backwards (hAQV), undischargeable because Tag 0AJG, IsEtaleULift implies IsLocallyOfFiniteTypeULift, has no carrier in this library; and Stacks 0AR0 for the chart maps read through the full faithfulness of Spf of Stacks 0AN0 (hAR0), undischargeable because its substantial direction rests on the EXISTENCE half of Tag 0AQD, whose carriers supply uniqueness only. No carried hypothesis is an implication of this lemma. The combination the source calls trivial is proved, including the ring-theoretic observation the source omits: I * J ^ n = 0 together with I * J <= J ^ 2 forces I ^ n * J = 0”.
 
 > **Stacks 0GD6.** Let `f : X ⟶ Y` be a closed immersion of locally Noetherian formal
 > algebraic spaces over `S`. Then the following are equivalent: (1) `f` is rig-smooth and
@@ -535,7 +467,7 @@ theorem isRigSmooth_and_isRigSurjective_tfae_of_isClosedImmersion {X Y : FppfShe
         HasAnnihilatedKerOnPullbackCharts B S hS f]
 ```
 
-**`AlgebraicGeometry.FormalSpace.isRigSmooth_and_isRigSurjective_tfae_of_isClosedImmersion'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveClosedImmersionCharts.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveClosedImmersionCharts.lean#L65).
+**`AlgebraicGeometry.FormalSpace.isRigSmooth_and_isRigSurjective_tfae_of_isClosedImmersion'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveClosedImmersionCharts.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveClosedImmersionCharts.lean#L65).
 
 > **Stacks 0GD6.** Let `f : X ⟶ Y` be a closed immersion of locally Noetherian formal
 > algebraic spaces over `S`. Then the following are equivalent: (1) `f` is rig-smooth and
@@ -563,7 +495,7 @@ theorem isRigSmooth_and_isRigSurjective_tfae_of_isClosedImmersion' {X Y : FppfSh
 
 [Tag 0GH6](https://stacks.math.columbia.edu/tag/0GH6) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSmooth_of_comp_of_isRigSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescent.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescent.lean#L292). The attribute's comment: “the rig-smooth case, assuming Stacks 0GCK (hlocal), the transfer of Remark 0GBG to formal algebraic spaces (htransfer), that a representable étale morphism is adic and locally of finite type (hetaleAdic, hetaleFiniteType), and the chart-level argument of the source's proof (hdescent)”.
+**`AlgebraicGeometry.FormalSpace.isRigSmooth_of_comp_of_isRigSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescent.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescent.lean#L292). The attribute's comment: “the rig-smooth case, assuming Stacks 0GCK (hlocal), the transfer of Remark 0GBG to formal algebraic spaces (htransfer), that a representable étale morphism is adic and locally of finite type (hetaleAdic, hetaleFiniteType), and the chart-level argument of the source's proof (hdescent)”.
 
 > **Stacks 0GH6**, the rig-smooth case, carrying four hypotheses. Let `f : X ⟶ Y` and
 > `g : Y ⟶ Z` be morphisms of formal algebraic spaces over `S`. If `g` is locally of finite type,
@@ -605,7 +537,7 @@ theorem isRigSmooth_of_comp_of_isRigSurjective
     IsRigSmooth B S hS g
 ```
 
-**`AlgebraicGeometry.FormalSpace.isRigEtale_of_comp_of_isRigSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescent.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescent.lean#L331). The attribute's comment: “the rig-étale case, assuming Stacks 0AQL (hlocal), the transfer of Remark 0GBG to formal algebraic spaces (htransfer), that a representable étale morphism is adic and locally of finite type (hetaleAdic, hetaleFiniteType), and the chart-level argument of the source's proof (hdescent)”.
+**`AlgebraicGeometry.FormalSpace.isRigEtale_of_comp_of_isRigSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescent.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescent.lean#L331). The attribute's comment: “the rig-étale case, assuming Stacks 0AQL (hlocal), the transfer of Remark 0GBG to formal algebraic spaces (htransfer), that a representable étale morphism is adic and locally of finite type (hetaleAdic, hetaleFiniteType), and the chart-level argument of the source's proof (hdescent)”.
 
 > **Stacks 0GH6**, the rig-étale case, carrying four hypotheses. Let `f : X ⟶ Y` and
 > `g : Y ⟶ Z` be morphisms of formal algebraic spaces over `S`. If `g` is locally of finite type,
@@ -639,7 +571,7 @@ theorem isRigEtale_of_comp_of_isRigSurjective
     IsRigEtale B S hS g
 ```
 
-**`AlgebraicGeometry.FormalSpace.isRigSmooth_of_comp_of_isRigSurjective_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescentCharts.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescentCharts.lean#L285). The attribute's comment: “the rig-smooth case”.
+**`AlgebraicGeometry.FormalSpace.isRigSmooth_of_comp_of_isRigSurjective_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescentCharts.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescentCharts.lean#L285). The attribute's comment: “the rig-smooth case”.
 
 > **Stacks 0GH6**, the rig-smooth case. Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of formal
 > algebraic spaces over `S` with `X` locally Noetherian. If `g` is locally of finite type, `f` is
@@ -656,7 +588,7 @@ theorem isRigSmooth_of_comp_of_isRigSurjective_of_isLocallyNoetherian
     IsRigSmooth B S hS g
 ```
 
-**`AlgebraicGeometry.FormalSpace.isRigEtale_of_comp_of_isRigSurjective_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescentCharts.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescentCharts.lean#L301). The attribute's comment: “the rig-étale case”.
+**`AlgebraicGeometry.FormalSpace.isRigEtale_of_comp_of_isRigSurjective_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescentCharts.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigSurjectiveDescentCharts.lean#L301). The attribute's comment: “the rig-étale case”.
 
 > **Stacks 0GH6**, the rig-étale case. Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of formal
 > algebraic spaces over `S` with `X` locally Noetherian. If `g` is locally of finite type, `f` is
@@ -680,4 +612,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.21, Tag 0AQP](https://stacks.math.columbia.edu/tag/0AQP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

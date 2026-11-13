@@ -8,13 +8,13 @@ proof: formalized
 
 # 55.18 Semistable reduction for curves
 
-Section 55.18 of the Stacks Project, [Tag 0CDM](https://stacks.math.columbia.edu/tag/0CDM). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 55.18 of the Stacks Project, [Tag 0CDM](https://stacks.math.columbia.edu/tag/0CDM). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CEJ, an equation
 
 [Tag 0CEJ](https://stacks.math.columbia.edu/tag/0CEJ) in the Stacks Project.
 
-**`AlgebraicGeometry.SemistableReduction.semistableReductionDegreeBound`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/Curves.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/Curves.lean#L37).
+**`AlgebraicGeometry.SemistableReduction.semistableReductionDegreeBound`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/Curves.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/Curves.lean#L37).
 
 > The genus-dependent degree bound used in the semistable reduction theorem.
 > Here `ℓ` is the second prime strictly greater than `768 * g`.
@@ -27,7 +27,7 @@ public noncomputable def semistableReductionDegreeBound (g : ℕ) : ℕ
 
 [Tag 0CDN](https://stacks.math.columbia.edu/tag/0CDN) in the Stacks Project.
 
-**`Stacks.Models.semistableReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/Unconditional.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/Unconditional.lean#L81).
+**`Stacks.Models.semistableReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/Unconditional.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/Unconditional.lean#L81).
 
 > **Stacks Project, Tag 0CDN.** Let `R` be a discrete valuation ring with fraction field `K` and
 > `C` a smooth projective curve over `K` with `H⁰(C, 𝒪_C) = K`. Then there is an extension of
@@ -93,7 +93,7 @@ theorem semistableReduction
           (hproj.pullback_snd _))
 ```
 
-**`Stacks.Models.exists_genusOne_semistableReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/Unconditional.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/Unconditional.lean#L146). The attribute's comment: “(2), genus one”.
+**`Stacks.Models.exists_genusOne_semistableReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/Unconditional.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/Unconditional.lean#L146). The attribute's comment: “(2), genus one”.
 
 > **Stacks Project, Tag 0CDN (2), genus one.** Let `R` be a discrete valuation ring with fraction
 > field `K` and `C` a smooth projective curve of genus one over `K` with `H⁰(C, 𝒪_C) = K`. Then there
@@ -118,7 +118,7 @@ theorem exists_genusOne_semistableReduction
         (pullback.snd c (Spec.map (CommRingCat.ofHom (algebraMap K K'))))
 ```
 
-**`Stacks.Models.exists_hasSemistableReductionAtMaximalIdeals_of_two_le_genus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/Unconditional.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/Unconditional.lean#L167). The attribute's comment: “(3), genus at least two”.
+**`Stacks.Models.exists_hasSemistableReductionAtMaximalIdeals_of_two_le_genus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/Unconditional.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/Unconditional.lean#L167). The attribute's comment: “(3), genus at least two”.
 
 > **Stacks Project, Tag 0CDN (3), genus at least two.** Let `R` be a discrete valuation ring with
 > fraction field `K` and `C` a smooth projective curve over `K` with `H⁰(C, 𝒪_C) = K`, of genus
@@ -142,7 +142,7 @@ theorem exists_hasSemistableReductionAtMaximalIdeals_of_two_le_genus
         (hproj.pullback_snd _)
 ```
 
-**`AlgebraicGeometry.SemistableReduction.genusZero_splitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroSplitting.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroSplitting.lean#L287). The attribute's comment: “(1), genus zero”.
+**`AlgebraicGeometry.SemistableReduction.genusZero_splitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroSplitting.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroSplitting.lean#L287). The attribute's comment: “(1), genus zero”.
 
 > **Stacks Project, Tag 0CDN, part (1).** Let `R` be a discrete valuation ring with fraction
 > field `K` and `C` a smooth projective curve over `K` with `H⁰(C, 𝒪_C) = K`. If the genus of `C`
@@ -183,4 +183,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 55.18, Tag 0CDM](https://stacks.math.columbia.edu/tag/0CDM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

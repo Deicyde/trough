@@ -8,13 +8,13 @@ proof: formalized
 
 # 29.44 Projective morphisms
 
-Section 29.44 of the Stacks Project, [Tag 01W7](https://stacks.math.columbia.edu/tag/01W7). 18 tags here are carried by 29 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.44 of the Stacks Project, [Tag 01W7](https://stacks.math.columbia.edu/tag/01W7). 18 tags here are carried by 29 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01W8, a definition
 
 [Tag 01W8](https://stacks.math.columbia.edu/tag/01W8) in the Stacks Project.
 
-**`AlgebraicGeometry.IsProjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Basic.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Basic.lean#L170). The attribute's comment: “projective”. References: EGA II (5.5.2).
+**`AlgebraicGeometry.IsProjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Basic.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Basic.lean#L170). The attribute's comment: “projective”. References: EGA II (5.5.2).
 
 > **Stacks Project, Tag 01W8, first condition.** A morphism `f : X ⟶ S` is *projective* if
 > `X` is isomorphic, as a scheme over `S`, to a closed subscheme of the projective bundle
@@ -26,7 +26,7 @@ Section 29.44 of the Stacks Project, [Tag 01W7](https://stacks.math.columbia.edu
 def IsProjective (f : X ⟶ S) : Prop
 ```
 
-**`AlgebraicGeometry.IsLocallyProjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Basic.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Basic.lean#L221). The attribute's comment: “locally projective”.
+**`AlgebraicGeometry.IsLocallyProjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Basic.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Basic.lean#L221). The attribute's comment: “locally projective”.
 
 > **Stacks Project, Tag 01W8, third condition.** A morphism `f : X ⟶ S` is *locally
 > projective* if the base is covered by opens over each of which the restriction of `f` is
@@ -36,7 +36,7 @@ def IsProjective (f : X ⟶ S) : Prop
 def IsLocallyProjective (f : X ⟶ S) : Prop
 ```
 
-**`AlgebraicGeometry.IsProjectiveMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean#L108). The attribute's comment: “H-projective”.
+**`AlgebraicGeometry.IsProjectiveMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean#L108). The attribute's comment: “H-projective”.
 
 > **Stacks Project, Tag 01W8 (H-projective).** A morphism `f : X ⟶ S` is H-projective if
 > for some `n` there is a closed immersion `X ⟶ ℙⁿ_S` over `S`.
@@ -49,7 +49,7 @@ def IsProjectiveMorphism (f : X ⟶ S) : Prop
 
 [Tag 07ZS](https://stacks.math.columbia.edu/tag/07ZS) in the Stacks Project.
 
-**`AlgebraicGeometry.isProjective_relativeProj_toBase_and_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/RelativeProj.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/RelativeProj.lean#L56).
+**`AlgebraicGeometry.isProjective_relativeProj_toBase_and_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/RelativeProj.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/RelativeProj.lean#L56).
 
 > **Stacks Project, Example 07ZS.** Let `S` be a scheme and `𝒜` a quasi-coherent graded
 > `𝒪_S`-algebra generated by `𝒜_1` over `𝒜_0`, with `𝒜_1` of finite type over `𝒪_S`, and let
@@ -79,7 +79,7 @@ theorem isProjective_relativeProj_toBase_and_isClosedImmersion {S : Scheme.{u}}
 
 [Tag 01W9](https://stacks.math.columbia.edu/tag/01W9) in the Stacks Project.
 
-**`AlgebraicGeometry.IsProjectiveMorphism.isHQuasiProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean#L125). The attribute's comment: “H-quasi-projective”.
+**`AlgebraicGeometry.IsProjectiveMorphism.isHQuasiProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean#L126). The attribute's comment: “H-quasi-projective”.
 
 > **Stacks Project, Tag 01W9, first clause.** An H-projective morphism is
 > H-quasi-projective: the closed immersion into `ℙⁿ_S` witnessing H-projectivity is an immersion,
@@ -90,7 +90,7 @@ theorem IsProjectiveMorphism.isHQuasiProjective (hf : IsProjectiveMorphism f) :
     IsHQuasiProjective f
 ```
 
-**`AlgebraicGeometry.IsProjectiveMorphism.isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean#L139). The attribute's comment: “projective”.
+**`AlgebraicGeometry.IsProjectiveMorphism.isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean#L140). The attribute's comment: “projective”.
 
 > **Stacks Project, Tag 01W9, second clause.** An H-projective morphism is projective.
 >
@@ -108,7 +108,7 @@ theorem IsProjectiveMorphism.isProjective (hf : IsProjectiveMorphism f) : IsProj
 
 [Tag 01WB](https://stacks.math.columbia.edu/tag/01WB) in the Stacks Project.
 
-**`Stacks.LocallyProjectiveHProjective.isLocallyProjectiveMorphism_of_isLocallyProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocallyProjectiveHProjective/Sym.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocallyProjectiveHProjective/Sym.lean#L274). The attribute's comment: “(1) ⟹ (2): locally projective implies locally H-projective”.
+**`Stacks.LocallyProjectiveHProjective.isLocallyProjectiveMorphism_of_isLocallyProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocallyProjectiveHProjective/Sym.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocallyProjectiveHProjective/Sym.lean#L274). The attribute's comment: “(1) ⟹ (2): locally projective implies locally H-projective”.
 
 > **Stacks Project, Tag 01WB, the implication (1) ⟹ (2).** A locally projective morphism is
 > H-projective over the members of an open covering of its base.
@@ -122,7 +122,7 @@ theorem isLocallyProjectiveMorphism_of_isLocallyProjective (hf : IsLocallyProjec
     IsLocallyProjectiveMorphism f
 ```
 
-**`Stacks.LocallyProjectiveHProjective.isLocallyProjective_iff_isLocallyProjectiveMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocallyProjectiveHProjective/Sym.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocallyProjectiveHProjective/Sym.lean#L298).
+**`Stacks.LocallyProjectiveHProjective.isLocallyProjective_iff_isLocallyProjectiveMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocallyProjectiveHProjective/Sym.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocallyProjectiveHProjective/Sym.lean#L298).
 
 > **Stacks Project, Tag 01WB.** A morphism of schemes is locally projective if and only if its
 > base is covered by opens over which it is H-projective.
@@ -132,7 +132,7 @@ theorem isLocallyProjective_iff_isLocallyProjectiveMorphism :
     IsLocallyProjective f ↔ IsLocallyProjectiveMorphism f
 ```
 
-**`AlgebraicGeometry.isLocallyProjective_of_isLocallyProjectiveMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean#L238). The attribute's comment: “the implication from a local H-projective cover”.
+**`AlgebraicGeometry.isLocallyProjective_of_isLocallyProjectiveMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean#L239). The attribute's comment: “the implication from a local H-projective cover”.
 
 > **Stacks Project, Tag 01WB, the implication (2) ⟹ (1).** If the base is covered by opens
 > over each of which `f` is H-projective, then `f` is locally projective.
@@ -150,7 +150,7 @@ theorem isLocallyProjective_of_isLocallyProjectiveMorphism (hf : IsLocallyProjec
 
 [Tag 01WC](https://stacks.math.columbia.edu/tag/01WC) in the Stacks Project.
 
-**`AlgebraicGeometry.isProper_of_isLocallyProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/LocallyProjective.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/LocallyProjective.lean#L43).
+**`AlgebraicGeometry.isProper_of_isLocallyProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/LocallyProjective.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/LocallyProjective.lean#L43).
 
 > **Stacks Project, Tag 01WC.** A locally projective morphism is proper.
 >
@@ -165,7 +165,7 @@ theorem isProper_of_isLocallyProjective (hf : IsLocallyProjective f) : IsProper 
 
 [Tag 0B5N](https://stacks.math.columbia.edu/tag/0B5N) in the Stacks Project.
 
-**`Stacks.ProperRelativeAmpleProjective.isLocallyProjective_of_isProper_of_exists_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProperRelativeAmpleProjective/Basic.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProperRelativeAmpleProjective/Basic.lean#L191).
+**`Stacks.ProperRelativeAmpleProjective.isLocallyProjective_of_isProper_of_exists_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProperRelativeAmpleProjective/Basic.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProperRelativeAmpleProjective/Basic.lean#L191).
 
 > **[Stacks, Tag 0B5N].** Let `f : X ⟶ S` be a proper morphism of schemes. If there exists an
 > `f`-ample invertible `𝒪_X`-module, then `f` is locally projective.
@@ -182,7 +182,7 @@ theorem isLocallyProjective_of_isProper_of_exists_isRelativelyAmple {X S : Schem
 
 [Tag 01WE](https://stacks.math.columbia.edu/tag/01WE) in the Stacks Project.
 
-**`AlgebraicGeometry.IsProjectiveMorphism.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean#L183).
+**`AlgebraicGeometry.IsProjectiveMorphism.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean#L183).
 
 > **Stacks Project, Tag 01WE. A composition of H-projective morphisms is H-projective.**
 >
@@ -200,7 +200,7 @@ theorem comp {Y Z : Scheme.{u}} {f : X ⟶ Y} {g : Y ⟶ Z} (hf : IsProjectiveMo
 
 [Tag 01WF](https://stacks.math.columbia.edu/tag/01WF) in the Stacks Project.
 
-**`AlgebraicGeometry.IsProjectiveMorphism.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean#L161).
+**`AlgebraicGeometry.IsProjectiveMorphism.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean#L161).
 
 > **Stacks Project, Tag 01WF. H-projectivity is stable under base change.** A closed
 > immersion `X ⟶ ℙⁿ_S` over `S` base changes to a closed immersion
@@ -215,7 +215,7 @@ theorem baseChange {f : X ⟶ S} (hf : IsProjectiveMorphism f) {T : Scheme.{u}} 
 
 [Tag 02V6](https://stacks.math.columbia.edu/tag/02V6) in the Stacks Project.
 
-**`AlgebraicGeometry.IsProjective.pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/BaseChange.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/BaseChange.lean#L236). The attribute's comment: “projective”.
+**`AlgebraicGeometry.IsProjective.pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/BaseChange.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/BaseChange.lean#L236). The attribute's comment: “projective”.
 
 > **A base change of a projective morphism is projective.** For `f : X ⟶ S` projective and
 > `g : S' ⟶ S` arbitrary, the first projection `S' ×_S X ⟶ S'` is projective.
@@ -226,7 +226,7 @@ theorem IsProjective.pullback_fst
     IsProjective (pullback.fst g f)
 ```
 
-**`AlgebraicGeometry.IsLocallyProjective.pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/BaseChange.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/BaseChange.lean#L324). The attribute's comment: “locally projective”.
+**`AlgebraicGeometry.IsLocallyProjective.pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/BaseChange.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/BaseChange.lean#L324). The attribute's comment: “locally projective”.
 
 > **A base change of a locally projective morphism is locally projective.** For
 > `f : X ⟶ S` locally projective and `g : S' ⟶ S` arbitrary, the first projection
@@ -246,7 +246,7 @@ theorem IsLocallyProjective.pullback_fst
 
 [Tag 07RL](https://stacks.math.columbia.edu/tag/07RL) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasiProjective_of_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Composition.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Composition.lean#L116). The attribute's comment: “over a quasi-compact quasi-separated base, the forward half of clause (1) of Tag 0BCL; the source states the tag over an arbitrary base”.
+**`AlgebraicGeometry.isQuasiProjective_of_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Composition.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Composition.lean#L116). The attribute's comment: “over a quasi-compact quasi-separated base, the forward half of clause (1) of Tag 0BCL; the source states the tag over an arbitrary base”.
 
 > **Stacks Project, Tag 07RL over a quasi-compact quasi-separated base. A projective morphism
 > is quasi-projective.** This is the forward half of clause (1) of Tag 0BCL, which
@@ -258,7 +258,7 @@ theorem isQuasiProjective_of_isProjective
     (hf : IsProjective f) : IsQuasiProjective f
 ```
 
-**`AlgebraicGeometry.IsProjective.isQuasiProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundleProperFiniteType/Basic.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveBundleProperFiniteType/Basic.lean#L219).
+**`AlgebraicGeometry.IsProjective.isQuasiProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundleProperFiniteType/Basic.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundleProperFiniteType/Basic.lean#L219).
 
 > **Stacks Project, Tag 07RL. A projective morphism is quasi-projective.** Properness supplies
 > the finite-type half, and the `f`-very ample module of
@@ -281,7 +281,7 @@ theorem IsProjective.isQuasiProjective {f : X ⟶ S} (hf : IsProjective f) :
 
 [Tag 01WA](https://stacks.math.columbia.edu/tag/01WA) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isOpenImmersion_isProjectiveMorphism_of_isHQuasiProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean#L186).
+**`AlgebraicGeometry.exists_isOpenImmersion_isProjectiveMorphism_of_isHQuasiProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean#L187).
 
 > **Stacks Project, Tag 01WA.** An H-quasi-projective morphism factors as an open immersion
 > followed by an H-projective morphism.
@@ -302,7 +302,7 @@ theorem exists_isOpenImmersion_isProjectiveMorphism_of_isHQuasiProjective
 
 [Tag 07RM](https://stacks.math.columbia.edu/tag/07RM) in the Stacks Project.
 
-**`Stacks.QuasiProjectiveCompactification.exists_isOpenImmersion_isProjective_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjectiveCompactification/Projective.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjectiveCompactification/Projective.lean#L248).
+**`Stacks.QuasiProjectiveCompactification.exists_isOpenImmersion_isProjective_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjectiveCompactification/Projective.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiProjectiveCompactification/Projective.lean#L248).
 
 > **[Stacks, Tag 07RM].** Let `f : X ⟶ S` be a quasi-projective morphism with `S` quasi-compact
 > and quasi-separated. Then `f` factors as `X ⟶ X' ⟶ S` where `X ⟶ X'` is an open immersion and
@@ -326,7 +326,7 @@ theorem exists_isOpenImmersion_isProjective_of_qcqs {X S : Scheme.{u}} (f : X �
 
 [Tag 0BCL](https://stacks.math.columbia.edu/tag/0BCL) in the Stacks Project.
 
-**`AlgebraicGeometry.isProjective_iff_isQuasiProjective_and_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Composition.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Composition.lean#L103). The attribute's comment: “(1)”. References: EGA II (5.5.3), “more general”.
+**`AlgebraicGeometry.isProjective_iff_isQuasiProjective_and_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Composition.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Composition.lean#L103). The attribute's comment: “(1)”. References: EGA II (5.5.3), “more general”.
 
 > **Stacks Project, Tag 0BCL, clause (1).** A morphism of schemes `f : X ⟶ S` to a
 > quasi-compact quasi-separated scheme is projective — in the sense of
@@ -343,7 +343,7 @@ theorem isProjective_iff_isQuasiProjective_and_isProper {X S : Scheme.{u}} [Comp
     IsProjective f ↔ IsQuasiProjective f ∧ IsProper f
 ```
 
-**`AlgebraicGeometry.isProjectiveMorphism_iff_isHQuasiProjective_and_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean#L165). The attribute's comment: “(2)”. References: EGA II (5.5.3), “(i)+(ii) in H-form”; EGA II (7.3.9), “special case”.
+**`AlgebraicGeometry.isProjectiveMorphism_iff_isHQuasiProjective_and_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiProjective/HProjective.lean#L166). The attribute's comment: “(2)”. References: EGA II (5.5.3), “(i)+(ii) in H-form”; EGA II (7.3.9), “special case”.
 
 > **Stacks Project, Tag 0BCL, clause (2).** A morphism of schemes is H-projective if and only
 > if it is H-quasi-projective and proper.
@@ -365,7 +365,7 @@ theorem isProjectiveMorphism_iff_isHQuasiProjective_and_isProper :
 
 [Tag 0C4P](https://stacks.math.columbia.edu/tag/0C4P) in the Stacks Project.
 
-**`AlgebraicGeometry.IsProjective.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Composition.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Composition.lean#L149).
+**`AlgebraicGeometry.IsProjective.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Composition.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/Composition.lean#L149).
 
 > **Stacks Project, Tag 0C4P. A composition of projective morphisms over a quasi-compact
 > quasi-separated base is projective.** For `f : X ⟶ Y` and `g : Y ⟶ S` projective and `S`
@@ -387,7 +387,7 @@ theorem IsProjective.comp {X Y S : Scheme.{u}} [CompactSpace S] [QuasiSeparatedS
 
 [Tag 0C4Q](https://stacks.math.columbia.edu/tag/0C4Q) in the Stacks Project.
 
-**`AlgebraicGeometry.IsProjective.of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/BaseChange.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/BaseChange.lean#L290). The attribute's comment: “projective case: closed immersion over the base into the projective bundle 𝐏(ℰ) of a quasi-coherent module of finite type, i.e. clause (1) of Definition 01W8; no hypothesis beyond the separatedness of `g` that the source states”.
+**`AlgebraicGeometry.IsProjective.of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/BaseChange.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/BaseChange.lean#L290). The attribute's comment: “projective case: closed immersion over the base into the projective bundle 𝐏(ℰ) of a quasi-coherent module of finite type, i.e. clause (1) of Definition 01W8; no hypothesis beyond the separatedness of `g` that the source states”.
 
 > **If `f ≫ g` is projective and `g` is separated then `f` is projective.** Here projective is
 > `AlgebraicGeometry.IsProjective`, clause (1) of Definition 01W8: a closed immersion over the base
@@ -399,7 +399,7 @@ theorem IsProjective.of_comp {X Y S : Scheme.{u}} (f : X ⟶ Y) (g : Y ⟶ S) [I
     (h : IsProjective (f ≫ g)) : IsProjective f
 ```
 
-**`AlgebraicGeometry.IsProjectiveMorphism.of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean#L223). The attribute's comment: “H-projective case”.
+**`AlgebraicGeometry.IsProjectiveMorphism.of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/Projective.lean#L223). The attribute's comment: “H-projective case”.
 
 > **Stacks Project, Tag 0C4Q, H-projective case.** If `f ≫ g` is H-projective and `g` is
 > separated then `f` is H-projective.
@@ -418,7 +418,7 @@ theorem of_comp {Y : Scheme.{u}} (f : X ⟶ Y) (g : Y ⟶ S) [IsSeparated g]
 
 [Tag 087S](https://stacks.math.columbia.edu/tag/087S) in the Stacks Project.
 
-**`Stacks.HProjective.isHQuasiProjective_of_isQuasiProjective_of_exists_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HProjective/AmpleBase.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HProjective/AmpleBase.lean#L83). The attribute's comment: “part (2)”. References: EGA II (5.3.3), “more general”.
+**`Stacks.HProjective.isHQuasiProjective_of_isQuasiProjective_of_exists_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HProjective/AmpleBase.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/HProjective/AmpleBase.lean#L83). The attribute's comment: “part (2)”. References: EGA II (5.3.3), “more general”.
 
 > **A quasi-projective morphism to a scheme admitting an ample invertible module is
 > H-quasi-projective**: it admits a quasi-compact immersion into a projective space over the base.
@@ -433,7 +433,7 @@ theorem isHQuasiProjective_of_isQuasiProjective_of_exists_isAmple {X S : Scheme.
     (hf : AlgebraicGeometry.IsQuasiProjective f) : AlgebraicGeometry.IsHQuasiProjective f
 ```
 
-**`AlgebraicGeometry.isHQuasiProjective_of_isQuasiProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveOverAmpleBase.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveOverAmpleBase.lean#L203). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isHQuasiProjective_of_isQuasiProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveOverAmpleBase.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveOverAmpleBase.lean#L203). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 087S, part (2). Over a base carrying an ample invertible module, a
 > quasi-projective morphism is H-quasi-projective.**
@@ -448,7 +448,7 @@ theorem isHQuasiProjective_of_isQuasiProjective (f : X ⟶ S) (M : S.Modules)
     (hf : IsQuasiProjective f) : IsHQuasiProjective f
 ```
 
-**`AlgebraicGeometry.isProjectiveMorphism_of_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveOverAmpleBase.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveOverAmpleBase.lean#L217). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.isProjectiveMorphism_of_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveOverAmpleBase.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Projective/QuasiProjectiveOverAmpleBase.lean#L217). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 087S, part (1). Over a base carrying an ample invertible module, a
 > projective morphism is H-projective.**
@@ -468,7 +468,7 @@ theorem isProjectiveMorphism_of_isProjective
 
 [Tag 0C6J](https://stacks.math.columbia.edu/tag/0C6J) in the Stacks Project.
 
-**`Stacks.RelativeAmple.isIso_relativeAmpleProjHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjIso.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjIso.lean#L398).
+**`Stacks.RelativeAmple.isIso_relativeAmpleProjHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjIso.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjIso.lean#L398).
 
 > **[Stacks, Tag 0C6J].** Let `f : X ⟶ S` be a universally closed morphism of schemes and `L` an
 > invertible `𝒪_X`-module ample relative to `f`. Then the canonical morphism
@@ -492,7 +492,7 @@ theorem isIso_relativeAmpleProjHom {X S : Scheme.{u}} (f : X ⟶ S) [Universally
 
 [Tag 0EKE](https://stacks.math.columbia.edu/tag/0EKE) in the Stacks Project.
 
-**`Stacks.AmpleNonvanishingUniversallyClosed.isAffineHom_nonvanishingOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/AmpleNonvanishingUniversallyClosed.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/AmpleNonvanishingUniversallyClosed.lean#L122).
+**`Stacks.AmpleNonvanishingUniversallyClosed.isAffineHom_nonvanishingOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/AmpleNonvanishingUniversallyClosed.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/AmpleNonvanishingUniversallyClosed.lean#L122).
 
 > **Stacks Tag 0EKE.** Let `f : X ⟶ S` be a universally closed morphism, `L` an invertible
 > `𝒪_X`-module ample relative to `f`, and `s` a global section of `L`. Then the nonvanishing open
@@ -517,4 +517,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.44, Tag 01W7](https://stacks.math.columbia.edu/tag/01W7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.22 Composition of right derived functors
 
-Section 13.22 of the Stacks Project, [Tag 015L](https://stacks.math.columbia.edu/tag/015L). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.22 of the Stacks Project, [Tag 015L](https://stacks.math.columbia.edu/tag/015L). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 015M, a lemma
 
 [Tag 015M](https://stacks.math.columbia.edu/tag/015M) in the Stacks Project.
 
-**`CategoryTheory.Functor.isIso_iff_rightAcyclic_obj_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/CompositionOfRightDerivedFunctors.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/CompositionOfRightDerivedFunctors.lean#L205). References: SGA 4½ Etat 0 (4.3.1), “enough injectives”.
+**`CategoryTheory.Functor.isIso_iff_rightAcyclic_obj_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/CompositionOfRightDerivedFunctors.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/CompositionOfRightDerivedFunctors.lean#L205). References: SGA 4½ Etat 0 (4.3.1), “enough injectives”.
 
 > Let `F : 𝒜 ⥤ ℬ` and `G : ℬ ⥤ 𝒞` be additive functors between abelian categories, with `𝒜`
 > and `ℬ` having enough injectives. The canonical transformation `t : R(G ∘ F) ⟶ RG ∘ RF` of
@@ -40,7 +40,7 @@ public theorem isIso_iff_rightAcyclic_obj_injective (F : C ⥤ D) (G : D ⥤ E)
 
 [Tag 015N](https://stacks.math.columbia.edu/tag/015N) in the Stacks Project.
 
-**`CategoryTheory.Functor.exists_spectralSequence_rightDerivedFunctorPlus_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Grothendieck.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Grothendieck.lean#L72). References: SGA 4 V (0.3), “(ii) ⇒ (i)”; SGA 4 VII (1.5), “more general”; SGA 4½ Arcata (2.3.3), “more general”; SGA 4½ Arcata (2.3.4), “more general”.
+**`CategoryTheory.Functor.exists_spectralSequence_rightDerivedFunctorPlus_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Grothendieck.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Grothendieck.lean#L72). References: SGA 4 V (0.3), “(ii) ⇒ (i)”; SGA 4 VII (1.5), “more general”; SGA 4½ Arcata (2.3.3), “more general”; SGA 4½ Arcata (2.3.4), “more general”.
 
 > The Grothendieck spectral sequence. Let `F : 𝒜 ⥤ ℬ` and `G : ℬ ⥤ 𝒞` be additive functors
 > between abelian categories, with `𝒜` and `ℬ` having enough injectives, such that `F(I)` is right
@@ -98,4 +98,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.22, Tag 015L](https://stacks.math.columbia.edu/tag/015L)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

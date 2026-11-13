@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.13 Coherent sheaves on Noetherian spaces
 
-Section 69.13 of the Stacks Project, [Tag 07UI](https://stacks.math.columbia.edu/tag/07UI). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 69.13 of the Stacks Project, [Tag 07UI](https://stacks.math.columbia.edu/tag/07UI). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07UJ, a lemma
 
 [Tag 07UJ](https://stacks.math.columbia.edu/tag/07UJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_eventually_constant_quasicoherentSubobjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAscendingChain.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAscendingChain.lean#L311).
+**`AlgebraicGeometry.Space.exists_eventually_constant_quasicoherentSubobjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAscendingChain.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAscendingChain.lean#L311).
 
 > **Stacks 07UJ.** The ascending chain condition holds for the quasi-coherent submodules of a
 > coherent module on a Noetherian algebraic space: an ascending sequence of quasi-coherent subobjects
@@ -34,7 +34,7 @@ theorem exists_eventually_constant_quasicoherentSubobjects
 
 [Tag 07UK](https://stacks.math.columbia.edu/tag/07UK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_idealPowSmul_eq_bot_iff_supportOfSheaf_subset_idealZeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IdealPowerSupport.lean, line 815](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IdealPowerSupport.lean#L815). References: EGA I (9.3.4), “more general”.
+**`AlgebraicGeometry.Space.exists_idealPowSmul_eq_bot_iff_supportOfSheaf_subset_idealZeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IdealPowerSupport.lean, line 811](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IdealPowerSupport.lean#L811). References: EGA I (9.3.4), “more general”.
 
 > **Stacks 07UK.** Let `X` be a Noetherian algebraic space over a scheme `S`, let `F` be a
 > coherent `𝒪_X`-module and let `ℐ ⊆ 𝒪_X` be a quasi-coherent sheaf of ideals, cutting out the
@@ -67,7 +67,7 @@ theorem exists_idealPowSmul_eq_bot_iff_supportOfSheaf_subset_idealZeroLocus
 
 [Tag 07UL](https://stacks.math.columbia.edu/tag/07UL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_idealPowSmul_inf_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentArtinRees.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentArtinRees.lean#L511).
+**`AlgebraicGeometry.Space.exists_idealPowSmul_inf_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentArtinRees.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentArtinRees.lean#L510).
 
 > Artin-Rees for a quasi-coherent submodule `G` of a coherent module `M` and a quasi-coherent
 > sheaf of ideals `I` on a Noetherian algebraic space: there is a `c ≥ 0` with
@@ -88,7 +88,7 @@ theorem exists_idealPowSmul_inf_eq (hZ : B.Contains (⊤_ Scheme.{u}))
 
 [Tag 07UM](https://stacks.math.columbia.edu/tag/07UM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.canonicalMapToHomRestrict_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentHomColimitBijective.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentHomColimitBijective.lean#L84). The attribute's comment: “first display”.
+**`AlgebraicGeometry.Space.canonicalMapToHomRestrict_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentHomColimitBijective.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentHomColimitBijective.lean#L84). The attribute's comment: “first display”.
 
 > **[Stacks, Tag 07UM], first display.**  For a Noetherian algebraic space `X` over `S`, a
 > quasi-coherent sheaf of ideals `ℐ` with open complement `U = X ∖ V(ℐ)`, a coherent `𝒪_X`-module
@@ -114,7 +114,7 @@ theorem canonicalMapToHomRestrict_bijective (hZ : B.Contains (⊤_ Scheme.{u}))
     Function.Bijective (canonicalMapToHomRestrict B S hS X I G F)
 ```
 
-**`AlgebraicGeometry.Space.canonicalMapToSections_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentHomColimitBijective.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentHomColimitBijective.lean#L109). The attribute's comment: “the in particular display”.
+**`AlgebraicGeometry.Space.canonicalMapToSections_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentHomColimitBijective.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentHomColimitBijective.lean#L109). The attribute's comment: “the in particular display”.
 
 > **[Stacks, Tag 07UM], the "in particular" display.**  For a Noetherian algebraic space `X`
 > over `S`, a quasi-coherent sheaf of ideals `ℐ` with open complement `U = X ∖ V(ℐ)` and a
@@ -138,7 +138,7 @@ theorem canonicalMapToSections_bijective (hZ : B.Contains (⊤_ Scheme.{u}))
     Function.Bijective (canonicalMapToSections B S hS X I F)
 ```
 
-**`AlgebraicGeometry.Space.idealPowHomRestrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HomOverIdealUnitLocus.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/HomOverIdealUnitLocus.lean#L325). The attribute's comment: “the canonical map of the first display, term by term”.
+**`AlgebraicGeometry.Space.idealPowHomRestrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HomOverIdealUnitLocus.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/HomOverIdealUnitLocus.lean#L325). The attribute's comment: “the canonical map of the first display, term by term”.
 
 > **The canonical map of the first display of [Stacks, Tag 07UM], term by term.**  A morphism
 > `φ : ℐⁿ G ⟶ F` restricts along an étale morphism `j : Y ⟶ X` whose image misses `V(ℐ)` to a
@@ -165,4 +165,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.13, Tag 07UI](https://stacks.math.columbia.edu/tag/07UI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

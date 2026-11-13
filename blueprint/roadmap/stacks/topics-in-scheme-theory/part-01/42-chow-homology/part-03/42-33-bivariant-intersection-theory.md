@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.33 Bivariant intersection theory
 
-Section 42.33 of the Stacks Project, [Tag 0B75](https://stacks.math.columbia.edu/tag/0B75). 9 tags here are carried by 82 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.33 of the Stacks Project, [Tag 0B75](https://stacks.math.columbia.edu/tag/0B75). 9 tags here are carried by 77 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B75, the section
 
 [Tag 0B75](https://stacks.math.columbia.edu/tag/0B75) in the Stacks Project.
 
-**`Stacks.Chow.bivariantComposite_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Associativity.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Associativity.lean#L188). The attribute's comment: “the composition of bivariant classes is associative: for a ∈ A^p(X ⟶ Y), b ∈ A^q(Y ⟶ Z) and c ∈ A^r(Z ⟶ W) the triple composites (a ∘ b) ∘ c and a ∘ (b ∘ c) agree in A^\{p+q+r}(X ⟶ W), the degrees (p + q) + r and p + (q + r) being the same integer written two ways”.
+**`Stacks.Chow.bivariantComposite_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Associativity.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Associativity.lean#L188). The attribute's comment: “the composition of bivariant classes is associative: for a ∈ A^p(X ⟶ Y), b ∈ A^q(Y ⟶ Z) and c ∈ A^r(Z ⟶ W) the triple composites (a ∘ b) ∘ c and a ∘ (b ∘ c) agree in A^\{p+q+r}(X ⟶ W), the degrees (p + q) + r and p + (q + r) being the same integer written two ways”.
 
 > The composition of bivariant classes is associative: for `a ∈ A^p(X ⟶ Y)`, `b ∈ A^q(Y ⟶ Z)`
 > and `c ∈ A^r(Z ⟶ W)` the two triple composites `(a ∘ b) ∘ c` and `a ∘ (b ∘ c)` agree in
@@ -30,7 +30,7 @@ theorem bivariantComposite_assoc (hgys : G.IsNaturalUnderBaseChangeIso)
         (q + r) a (bivariantComposite C G sY sZ sW g h hg hh q r b c hgys hgysc) hgys hgysc
 ```
 
-**`Stacks.Chow.bivariantCompositeBilinear_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Associativity.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Associativity.lean#L203). The attribute's comment: “the bilinear composition A^p(X ⟶ Y) × A^q(Y ⟶ Z) ⟶ A^\{p+q}(X ⟶ Z) is associative”.
+**`Stacks.Chow.bivariantCompositeBilinear_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Associativity.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Associativity.lean#L203). The attribute's comment: “the bilinear composition A^p(X ⟶ Y) × A^q(Y ⟶ Z) ⟶ A^\{p+q}(X ⟶ Z) is associative”.
 
 > Associativity of the composition, read on the bilinear map
 > `Stacks.Chow.bivariantCompositeBilinear` that bundles it [Stacks, Tag 0B75].
@@ -46,7 +46,7 @@ theorem bivariantCompositeBilinear_assoc (hgys : G.IsNaturalUnderBaseChangeIso)
         (bivariantCompositeBilinear C G sY sZ sW g h hg hh q r hgys hgysc b c)
 ```
 
-**`Stacks.Chow.bivariantComposite_add_left'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L56). The attribute's comment: “the bilinearity of the composition, additivity in the first argument”.
+**`Stacks.Chow.bivariantComposite_add_left'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L56). The attribute's comment: “the bilinearity of the composition, additivity in the first argument”.
 
 > Additivity of the composition in the first argument: `(a + a') ∘ b = a ∘ b + a' ∘ b`.
 
@@ -58,7 +58,7 @@ theorem bivariantComposite_add_left' (a a' : BivariantClass C G sX sY f hf p)
         bivariantComposite C G sX sY sZ f g hf hg p q a' b hgys hgysc
 ```
 
-**`Stacks.Chow.bivariantComposite_add_right'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L70). The attribute's comment: “the bilinearity of the composition, additivity in the second argument”.
+**`Stacks.Chow.bivariantComposite_add_right'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L70). The attribute's comment: “the bilinearity of the composition, additivity in the second argument”.
 
 > Additivity of the composition in the second argument: `a ∘ (b + b') = a ∘ b + a ∘ b'`.
 
@@ -70,7 +70,7 @@ theorem bivariantComposite_add_right' (a : BivariantClass C G sX sY f hf p)
         bivariantComposite C G sX sY sZ f g hf hg p q a b' hgys hgysc
 ```
 
-**`Stacks.Chow.bivariantComposite_neg_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L84). The attribute's comment: “the bilinearity of the composition, negation in the first argument”.
+**`Stacks.Chow.bivariantComposite_neg_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L84). The attribute's comment: “the bilinearity of the composition, negation in the first argument”.
 
 > The composition negates in its first argument: `(-a) ∘ b = -(a ∘ b)`.
 
@@ -81,7 +81,7 @@ theorem bivariantComposite_neg_left (a : BivariantClass C G sX sY f hf p)
       -bivariantComposite C G sX sY sZ f g hf hg p q a b hgys hgysc
 ```
 
-**`Stacks.Chow.bivariantComposite_neg_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L95). The attribute's comment: “the bilinearity of the composition, negation in the second argument”.
+**`Stacks.Chow.bivariantComposite_neg_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L95). The attribute's comment: “the bilinearity of the composition, negation in the second argument”.
 
 > The composition negates in its second argument: `a ∘ (-b) = -(a ∘ b)`.
 
@@ -92,7 +92,7 @@ theorem bivariantComposite_neg_right (a : BivariantClass C G sX sY f hf p)
       -bivariantComposite C G sX sY sZ f g hf hg p q a b hgys hgysc
 ```
 
-**`Stacks.Chow.bivariantComposite_zero_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L106). The attribute's comment: “the bilinearity of the composition, the zero class on the left”.
+**`Stacks.Chow.bivariantComposite_zero_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L106). The attribute's comment: “the bilinearity of the composition, the zero class on the left”.
 
 > The composite of the zero class with any class is zero.
 
@@ -101,7 +101,7 @@ theorem bivariantComposite_zero_left (b : BivariantClass C G sY sZ g hg q) :
     bivariantComposite C G sX sY sZ f g hf hg p q 0 b hgys hgysc = 0
 ```
 
-**`Stacks.Chow.bivariantComposite_zero_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L114). The attribute's comment: “the bilinearity of the composition, the zero class on the right”.
+**`Stacks.Chow.bivariantComposite_zero_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L114). The attribute's comment: “the bilinearity of the composition, the zero class on the right”.
 
 > The composite of any class with the zero class is zero.
 
@@ -110,7 +110,7 @@ theorem bivariantComposite_zero_right (a : BivariantClass C G sX sY f hf p) :
     bivariantComposite C G sX sY sZ f g hf hg p q a 0 hgys hgysc = 0
 ```
 
-**`Stacks.Chow.bivariantCompositeAddHomLeft`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L124). The attribute's comment: “the bilinearity of the composition: the partial map in the first argument as a homomorphism of groups”.
+**`Stacks.Chow.bivariantCompositeAddHomLeft`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L124). The attribute's comment: “the bilinearity of the composition: the partial map in the first argument as a homomorphism of groups”.
 
 > Composition with a fixed class `b ∈ A^q(Y ⟶ Z)` on the right, as a homomorphism
 > `A^p(X ⟶ Y) ⟶ A^{p+q}(X ⟶ Z)` of groups.
@@ -121,7 +121,7 @@ def bivariantCompositeAddHomLeft (b : BivariantClass C G sY sZ g hg q) :
       BivariantClass C G sX sZ (f ≫ g) (comp_comp_structureMorphism_eq hf hg) (p + q)
 ```
 
-**`Stacks.Chow.bivariantCompositeAddHomRight`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L135). The attribute's comment: “the bilinearity of the composition: the partial map in the second argument as a homomorphism of groups”.
+**`Stacks.Chow.bivariantCompositeAddHomRight`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Bilinearity.lean#L135). The attribute's comment: “the bilinearity of the composition: the partial map in the second argument as a homomorphism of groups”.
 
 > Composition with a fixed class `a ∈ A^p(X ⟶ Y)` on the left, as a homomorphism
 > `A^q(Y ⟶ Z) ⟶ A^{p+q}(X ⟶ Z)` of groups.
@@ -132,7 +132,7 @@ def bivariantCompositeAddHomRight (a : BivariantClass C G sX sY f hf p) :
       BivariantClass C G sX sZ (f ≫ g) (comp_comp_structureMorphism_eq hf hg) (p + q)
 ```
 
-**`Stacks.Chow.bivariantComposite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Class.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Class.lean#L134). The attribute's comment: “the composite bivariant class, assembled from its cap operation and the three naturality conditions of Stacks 0B76”.
+**`Stacks.Chow.bivariantComposite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Class.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Class.lean#L134). The attribute's comment: “the composite bivariant class, assembled from its cap operation and the three naturality conditions of Stacks 0B76”.
 
 > The composite `a ∘ b ∈ A^{p+q}(X ⟶ Z)` of bivariant classes `a ∈ A^p(X ⟶ Y)` and
 > `b ∈ A^q(Y ⟶ Z)`: the bivariant class of degree `p + q` for `f ≫ g` whose cap operation is
@@ -145,7 +145,7 @@ def bivariantComposite (hgys : G.IsNaturalUnderBaseChangeIso)
     BivariantClass C G sX sZ (f ≫ g) (comp_comp_structureMorphism_eq hf hg) (p + q)
 ```
 
-**`Stacks.Chow.bivariantCompositeBilinear`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Class.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Class.lean#L260). The attribute's comment: “the composition of bivariant classes is bilinear”.
+**`Stacks.Chow.bivariantCompositeBilinear`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Class.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Class.lean#L260). The attribute's comment: “the composition of bivariant classes is bilinear”.
 
 > The composition `A^p(X ⟶ Y) × A^q(Y ⟶ Z) ⟶ A^{p+q}(X ⟶ Z)` as a bilinear map, that is,
 > `Stacks.Chow.bivariantComposite` bundled through its additivity in each argument
@@ -159,7 +159,7 @@ def bivariantCompositeBilinear (hgys : G.IsNaturalUnderBaseChangeIso)
         BivariantClass C G sX sZ (f ≫ g) (comp_comp_structureMorphism_eq hf hg) (p + q)
 ```
 
-**`Stacks.Chow.bivariantCompositeOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/GysinSystemOfInvertible.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/GysinSystemOfInvertible.lean#L157). The attribute's comment: “the composite bivariant class at the Gysin system of the first Chern class rule, with both cases of Stacks 02TA discharged”.
+**`Stacks.Chow.bivariantCompositeOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/GysinSystemOfInvertible.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/GysinSystemOfInvertible.lean#L157). The attribute's comment: “the composite bivariant class at the Gysin system of the first Chern class rule, with both cases of Stacks 02TA discharged”.
 
 > The composite `a ∘ b ∈ A^{p+q}(X ⟶ Z)` of bivariant classes at the Gysin system of the first
 > Chern class rule of an invertible module.
@@ -172,7 +172,7 @@ def bivariantCompositeOfInvertible
       (comp_comp_structureMorphism_eq hf hg) (p + q)
 ```
 
-**`Stacks.Chow.bivariantCompositeBilinearOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/GysinSystemOfInvertible.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/GysinSystemOfInvertible.lean#L170). The attribute's comment: “the composition as a bilinear map, at the Gysin system of the first Chern class rule, with both cases of Stacks 02TA discharged”.
+**`Stacks.Chow.bivariantCompositeBilinearOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/GysinSystemOfInvertible.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/GysinSystemOfInvertible.lean#L170). The attribute's comment: “the composition as a bilinear map, at the Gysin system of the first Chern class rule, with both cases of Stacks 02TA discharged”.
 
 > The composition `A^p(X ⟶ Y) × A^q(Y ⟶ Z) ⟶ A^{p+q}(X ⟶ Z)` of bivariant classes as a bilinear
 > map, at the Gysin system of the first Chern class rule.
@@ -185,7 +185,7 @@ def bivariantCompositeBilinearOfInvertible :
           (comp_comp_structureMorphism_eq hf hg) (p + q)
 ```
 
-**`Stacks.Chow.bivariantCompositeCap_proper_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Naturality.lean, line 597](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Naturality.lean#L597). The attribute's comment: “the proper-pushforward condition of the composite”.
+**`Stacks.Chow.bivariantCompositeCap_proper_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Naturality.lean, line 597](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Naturality.lean#L597). The attribute's comment: “the proper-pushforward condition of the composite”.
 
 > The proper-pushforward condition of Stacks 0B76 for the composite of two bivariant classes:
 > the cap operation `α ↦ a ∩ (b ∩ α)` commutes with proper pushforward along a morphism of test
@@ -212,13 +212,13 @@ theorem bivariantCompositeCap_proper_naturality {T T' : Scheme.{u}} (t : T ⟶ Z
 
 Declarations registered for the tag:
 
-- [`Stacks.Chow.instAddCommGroupBivariantClass`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Stacks.Chow.instAddCommGroupBivariantClass#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Naturality.lean, line 773](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Naturality.lean#L773) (StacksFrontier): “the abelian group of bivariant classes”.
+- [`Stacks.Chow.instAddCommGroupBivariantClass`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Stacks.Chow.instAddCommGroupBivariantClass#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Naturality.lean, line 773](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/Naturality.lean#L773) (StacksFrontier): “the abelian group of bivariant classes”.
 
 ## Tag 0B76, a definition
 
 [Tag 0B76](https://stacks.math.columbia.edu/tag/0B76) in the Stacks Project.
 
-**`Stacks.Chow.BivariantClass`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L250). The attribute's comment: “the group A^p(X ⟶ Y) of bivariant classes of degree p for f, stated against a GysinSystem supplying the first Chern class rule of Stacks 02SO and the vanishing of Stacks 02TO”.
+**`Stacks.Chow.BivariantClass`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L250). The attribute's comment: “the group A^p(X ⟶ Y) of bivariant classes of degree p for f, stated against a GysinSystem supplying the first Chern class rule of Stacks 02SO and the vanishing of Stacks 02TO”.
 
 > **Stacks 0B76.** A bivariant class of degree `p` for `f : X ⟶ Y`: a rule assigning to every
 > morphism `g : T ⟶ Y` locally of finite type and every `k` an additive map
@@ -235,7 +235,7 @@ structure BivariantClass (C : ChowSituation.{u}) (G : GysinSystem C) {X Y : Sche
     (f : X ⟶ Y) [LocallyOfFiniteType f] (hf : f ≫ sY = sX) (p : ℤ)
 ```
 
-**`Stacks.Chow.BivariantClass.ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L411). The attribute's comment: “extensionality: a bivariant class is determined by its cap operations”.
+**`Stacks.Chow.BivariantClass.ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L411). The attribute's comment: “extensionality: a bivariant class is determined by its cap operations”.
 
 > **Stacks 0B76.** Two bivariant classes agree as soon as all their cap operations agree.
 
@@ -245,7 +245,7 @@ theorem BivariantClass.ext {c d : BivariantClass C G sX sY f hf p}
       (α : chowGroup C (g ≫ sY) k), c.cap g k α = d.cap g k α) : c = d
 ```
 
-**`Stacks.Chow.BivariantClass.zero_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L534). The attribute's comment: “the zero of the group A^p(X ⟶ Y)”.
+**`Stacks.Chow.BivariantClass.zero_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 534](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L534). The attribute's comment: “the zero of the group A^p(X ⟶ Y)”.
 
 > **Stacks 0B76.** The zero bivariant class caps to zero.
 
@@ -255,7 +255,7 @@ theorem BivariantClass.zero_cap {T : Scheme.{u}} (g : T ⟶ Y) [LocallyOfFiniteT
     (0 : BivariantClass C G sX sY f hf p).cap g k α = 0
 ```
 
-**`Stacks.Chow.BivariantClass.add_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 541](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L541). The attribute's comment: “addition in A^p(X ⟶ Y) is pointwise on cap products”.
+**`Stacks.Chow.BivariantClass.add_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 541](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L541). The attribute's comment: “addition in A^p(X ⟶ Y) is pointwise on cap products”.
 
 > **Stacks 0B76.** A sum of bivariant classes caps to the sum of their cap products.
 
@@ -265,7 +265,7 @@ theorem BivariantClass.add_cap (c d : BivariantClass C G sX sY f hf p) {T : Sche
     (c + d).cap g k α = c.cap g k α + d.cap g k α
 ```
 
-**`Stacks.Chow.BivariantClass.neg_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L548). The attribute's comment: “negation in A^p(X ⟶ Y) is pointwise on cap products”.
+**`Stacks.Chow.BivariantClass.neg_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 548](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L548). The attribute's comment: “negation in A^p(X ⟶ Y) is pointwise on cap products”.
 
 > **Stacks 0B76.** A negated bivariant class caps to the negated cap product.
 
@@ -275,7 +275,7 @@ theorem BivariantClass.neg_cap (c : BivariantClass C G sX sY f hf p) {T : Scheme
     (-c).cap g k α = -c.cap g k α
 ```
 
-**`Stacks.Chow.BivariantClass.sub_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 598](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L598). The attribute's comment: “subtraction in A^p(X ⟶ Y) is pointwise on cap products”.
+**`Stacks.Chow.BivariantClass.sub_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 598](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L598). The attribute's comment: “subtraction in A^p(X ⟶ Y) is pointwise on cap products”.
 
 > **Stacks 0B76.** A difference of bivariant classes caps to the difference of their cap
 > products.
@@ -286,7 +286,7 @@ theorem BivariantClass.sub_cap (c d : BivariantClass C G sX sY f hf p) {T : Sche
     (c - d).cap g k α = c.cap g k α - d.cap g k α
 ```
 
-**`Stacks.Chow.BivariantClass.nsmul_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L606). The attribute's comment: “natural multiples in A^p(X ⟶ Y) are pointwise on cap products”.
+**`Stacks.Chow.BivariantClass.nsmul_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 606](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L606). The attribute's comment: “natural multiples in A^p(X ⟶ Y) are pointwise on cap products”.
 
 > **Stacks 0B76.** A natural multiple of a bivariant class caps to that multiple of its cap
 > product.
@@ -297,7 +297,7 @@ theorem BivariantClass.nsmul_cap (n : ℕ) (c : BivariantClass C G sX sY f hf p)
     (n • c).cap g k α = n • c.cap g k α
 ```
 
-**`Stacks.Chow.BivariantClass.zsmul_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L616). The attribute's comment: “integer multiples in A^p(X ⟶ Y) are pointwise on cap products”.
+**`Stacks.Chow.BivariantClass.zsmul_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Basic.lean#L616). The attribute's comment: “integer multiples in A^p(X ⟶ Y) are pointwise on cap products”.
 
 > **Stacks 0B76.** An integer multiple of a bivariant class caps to that multiple of its cap
 > product.
@@ -308,7 +308,7 @@ theorem BivariantClass.zsmul_cap (n : ℤ) (c : BivariantClass C G sX sY f hf p)
     (n • c).cap g k α = n • c.cap g k α
 ```
 
-**`Stacks.Chow.CanonicalBivariantClass`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Canonical.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Canonical.lean#L116). The attribute's comment: “the group A^p(X ⟶ Y) of bivariant classes of degree p for f, with nothing assumed: the Gysin system is the canonical one, whose first Chern class rule is the rule of an invertible module and whose vanishing is Stacks 02TO, and the descent conditions Stacks 02S1 and 02S2 of the proper and flat axioms are discharged”.
+**`Stacks.Chow.CanonicalBivariantClass`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Canonical.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Canonical.lean#L116). The attribute's comment: “the group A^p(X ⟶ Y) of bivariant classes of degree p for f, with nothing assumed: the Gysin system is the canonical one, whose first Chern class rule is the rule of an invertible module and whose vanishing is Stacks 02TO, and the descent conditions Stacks 02S1 and 02S2 of the proper and flat axioms are discharged”.
 
 > **Stacks 0B76.** The group `A^p(X ⟶ Y)` of bivariant classes of degree `p` for a morphism
 > `f : X ⟶ Y` of schemes locally of finite type over the base: a rule assigning to every morphism
@@ -325,7 +325,7 @@ abbrev CanonicalBivariantClass (C : ChowSituation.{u}) {X Y : Scheme.{u}} (sX : 
     [LocallyOfFiniteType f] (hf : f ≫ sY = sX) (p : ℤ)
 ```
 
-**`Stacks.Chow.BivariantClass.flat_naturality_of_relativeDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Canonical.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Canonical.lean#L134). The attribute's comment: “the flat pullback axiom, with the descent condition Stacks 02S1 discharged; the relative dimension of the base change is assumed, Stacks 02NK being absent”.
+**`Stacks.Chow.BivariantClass.flat_naturality_of_relativeDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Canonical.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Canonical.lean#L134). The attribute's comment: “the flat pullback axiom, with the descent condition Stacks 02S1 discharged; the relative dimension of the base change is assumed, Stacks 02NK being absent”.
 
 > **Stacks 0B76 (2), with Stacks 02S1 discharged.** Cap product with a bivariant class commutes
 > with flat pullback of fixed relative dimension, the relative dimension of the base change being a
@@ -351,7 +351,7 @@ theorem BivariantClass.flat_naturality_of_relativeDimension (c : BivariantClass 
           (flatPullbackDescends C _ _ _ _ _ _ _) (c.cap g k α))
 ```
 
-**`Stacks.Chow.BivariantClass.gysin_naturality_gysinChowOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Canonical.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Canonical.lean#L160). The attribute's comment: “the Gysin axiom for a class at the canonical Gysin system, stated for the unconditional Gysin map of Stacks 02TO and with the descent condition Stacks 02S2 discharged”.
+**`Stacks.Chow.BivariantClass.gysin_naturality_gysinChowOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Canonical.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Canonical.lean#L160). The attribute's comment: “the Gysin axiom for a class at the canonical Gysin system, stated for the unconditional Gysin map of Stacks 02TO and with the descent condition Stacks 02S2 discharged”.
 
 > **Stacks 0B76 (3), for the canonical Gysin system.** Cap product with a bivariant class read
 > against `Stacks.Chow.canonicalGysinSystem` commutes with the unconditional Gysin map
@@ -385,7 +385,7 @@ theorem BivariantClass.gysin_naturality_gysinChowOfInvertible
             (by omega : (k + 1) - p = (k - p) + 1)) (c.cap g (k + 1) α))
 ```
 
-**`Stacks.Chow.BivariantChowClass`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Definition.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Definition.lean#L199). The attribute's comment: “a bivariant class of degree p for f, the elements of A^p(X → Y)”.
+**`Stacks.Chow.BivariantChowClass`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Definition.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Definition.lean#L199). The attribute's comment: “a bivariant class of degree p for f, the elements of A^p(X → Y)”.
 
 > A bivariant class `c` of degree `p` for `f : X ⟶ Y`: a rule assigning to
 > every morphism `g : Y' ⟶ Y` locally of finite type and every `k` a map
@@ -406,7 +406,7 @@ structure BivariantChowClass (C : ChowSituation.{u}) {X Y : Scheme.{u}}
     (f : X ⟶ Y) (hf : f ≫ sY = sX) (p : ℤ)
 ```
 
-**`Stacks.Chow.BivariantChowClass.equivBivariantClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Definition.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Definition.lean#L504). The attribute's comment: “bridge: A^p(X → Y) is BivariantClass at the Gysin system of the first Chern class”.
+**`Stacks.Chow.BivariantChowClass.equivBivariantClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Definition.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Definition.lean#L504). The attribute's comment: “bridge: A^p(X → Y) is BivariantClass at the Gysin system of the first Chern class”.
 
 > A bivariant class of degree `p` for `f` is the same thing as a `Stacks.Chow.BivariantClass`
 > at the Gysin system `Stacks.Chow.gysinSystemOfInvertible` of the first Chern class; the cap
@@ -417,7 +417,7 @@ def equivBivariantClass :
     BivariantChowClass C sX sY f hf p ≃ BivariantClass C (gysinSystemOfInvertible C) sX sY f hf p
 ```
 
-**`Stacks.Chow.BivariantClass.proper_naturality_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/VanishingUnconditional.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/VanishingUnconditional.lean#L61). The attribute's comment: “the proper pushforward axiom, with the descent condition Stacks 02S2 discharged”.
+**`Stacks.Chow.BivariantClass.proper_naturality_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/VanishingUnconditional.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/VanishingUnconditional.lean#L61). The attribute's comment: “the proper pushforward axiom, with the descent condition Stacks 02S2 discharged”.
 
 > Capping with a bivariant class commutes with proper pushforward along a
 > proper morphism `h : T' ⟶ T` of test schemes and its base change `h'`, pushforward being taken
@@ -447,40 +447,7 @@ theorem BivariantClass.proper_naturality_of_isProper (c : BivariantClass C G sX 
 
 [Tag 0B78](https://stacks.math.columbia.edu/tag/0B78) in the Stacks Project.
 
-**`Stacks.Chow.flatPullbackBivariantCap_flat_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullback.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullback.lean#L329). The attribute's comment: “the flat-pullback condition of Stacks 0B76 for the flat-pullback rule, from Stacks 02RD, with the Stacks 02S1 descent hypothesis bundled; the rule is `Stacks.Chow.flatPullbackBivariantCap`, and it is not assembled into a term of `Stacks.Chow.BivariantClass` here because the proper condition is Stacks 02RG and the Gysin condition is Stacks 0B71, neither of which this repository carries”.
-
-> **Stacks 0B78.** The flat-pullback condition of Stacks 0B76 for the rule of Stacks 0B78: the
-> rule `α ↦ (f')^* α` commutes with flat pullback of fixed relative dimension along a morphism
-> `h : T' ⟶ T` of test schemes.
->
-> The base change of `f` over `T'` followed by `h`, and the base change of `h` followed by the base
-> change of `f` over `T`, are the same morphism `T' ×_Y X ⟶ T`, because the two cartesian squares
-> paste; Stacks 02RD then traverses that morphism both ways. The two sides land in degrees
-> `(k + s) - (-r)` and `(k - (-r)) + s`, so the identity is a heterogeneous equality, exactly as
-> the corresponding field of `Stacks.Chow.BivariantClass` is.
-
-```lean
-theorem flatPullbackBivariantCap_flat_naturality {T T' : Scheme.{u}} (g : T ⟶ Y)
-    [LocallyOfFiniteType g] (h : T' ⟶ T) [LocallyOfFiniteType h] [Flat h] (s : ℕ)
-    (hs : AlgebraicGeometry.RelativeDimension h s)
-    (h' : pullback f (h ≫ g) ⟶ pullback f g) [LocallyOfFiniteType h'] [Flat h']
-    (sq : IsPullback (pullback.snd f (h ≫ g)) h' h (pullback.snd f g))
-    (hfst : h' ≫ pullback.fst f g = pullback.fst f (h ≫ g)) (k : ℤ)
-    (hs' : AlgebraicGeometry.RelativeDimension h' s)
-    (hfac : FlatPullbackFactorsThroughRationalEquivalence C ((h ≫ g) ≫ sY) (g ≫ sY) h
-      (by simp [Category.assoc]) s hs k)
-    (hfac' : FlatPullbackFactorsThroughRationalEquivalence C (pullback.fst f (h ≫ g) ≫ sX)
-      (pullback.fst f g ≫ sX) h' (by rw [← Category.assoc, hfst]) s hs' (k - -(r : ℤ)))
-    (α : chowGroup C (g ≫ sY) k) :
-    flatPullbackBivariantCap C sX sY f hf r hfr hfp (h ≫ g) (k + (s : ℤ))
-          (flatPullbackChow C ((h ≫ g) ≫ sY) (g ≫ sY) h (by simp [Category.assoc]) s hs k
-            hfac α) ≍
-      flatPullbackChow C (pullback.fst f (h ≫ g) ≫ sX) (pullback.fst f g ≫ sX) h'
-        (by rw [← Category.assoc, hfst]) s hs' (k - -(r : ℤ)) hfac'
-        (flatPullbackBivariantCap C sX sY f hf r hfr hfp g k α)
-```
-
-**`Stacks.Chow.flatPullbackBivariantChowClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClass.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClass.lean#L72). The attribute's comment: “the flat-pullback rule as an element of A^\{-r}(X → Y), the group of Stacks 0B76 whose three conditions use the genuine proper pushforward, flat pullback and Gysin map; its cap operation is flat pullback along the base change of f (flatPullbackBivariantChowClass\_cap)”.
+**`Stacks.Chow.flatPullbackBivariantChowClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClass.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClass.lean#L72). The attribute's comment: “the flat-pullback rule as an element of A^\{-r}(X → Y), the group of Stacks 0B76 whose three conditions use the genuine proper pushforward, flat pullback and Gysin map; its cap operation is flat pullback along the base change of f (flatPullbackBivariantChowClass\_cap)”.
 
 > **Stacks 0B78.** For `f : X ⟶ Y` flat of relative dimension `r` between schemes locally of
 > finite type over `S`, the rule which assigns to `g : Y' ⟶ Y` the flat pullback
@@ -491,7 +458,7 @@ theorem flatPullbackBivariantCap_flat_naturality {T T' : Scheme.{u}} (g : T ⟶ 
 def flatPullbackBivariantChowClass : BivariantChowClass C sX sY f hf (-(r : ℤ))
 ```
 
-**`Stacks.Chow.existsUnique_bivariantChowClass_cap_eq_flatPullbackChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClassUnique.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClassUnique.lean#L74). The attribute's comment: “the flat-pullback rule is a bivariant class of degree -r, with nothing assumed: exactly one element of A^\{-r}(X → Y), the group of Stacks 0B76 whose three conditions use the genuine proper pushforward, flat pullback and Gysin map, caps by (f')^*”.
+**`Stacks.Chow.existsUnique_bivariantChowClass_cap_eq_flatPullbackChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClassUnique.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClassUnique.lean#L74). The attribute's comment: “the flat-pullback rule is a bivariant class of degree -r, with nothing assumed: exactly one element of A^\{-r}(X → Y), the group of Stacks 0B76 whose three conditions use the genuine proper pushforward, flat pullback and Gysin map, caps by (f')^*”.
 
 > **Stacks 0B78.** Let `f : X ⟶ Y` be flat of relative dimension `r` between schemes locally of
 > finite type over `S`. The rule which assigns to `g : Y' ⟶ Y` the flat pullback
@@ -512,7 +479,7 @@ theorem existsUnique_bivariantChowClass_cap_eq_flatPullbackChow :
               (flatPullbackFactorsThroughRationalEquivalence_general C _ _ _ _ _ _ _) α)
 ```
 
-**`Stacks.Chow.exists_bivariantChowClass_cap_heq_flatPullbackChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClassUnique.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClassUnique.lean#L97). The attribute's comment: “the flat-pullback rule (f')^* : CH\_k(Y') → CH\_\{k+r}(X') is the cap operation of an element of A^\{-r}(X → Y), with nothing assumed, read in degree k + r as the source writes it”.
+**`Stacks.Chow.exists_bivariantChowClass_cap_heq_flatPullbackChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClassUnique.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClassUnique.lean#L97). The attribute's comment: “the flat-pullback rule (f')^* : CH\_k(Y') → CH\_\{k+r}(X') is the cap operation of an element of A^\{-r}(X → Y), with nothing assumed, read in degree k + r as the source writes it”.
 
 > **Stacks 0B78**, with the degree transport removed. For `f : X ⟶ Y` flat of relative
 > dimension `r`, there is a bivariant class `c ∈ A^{-r}(X ⟶ Y)` whose cap operation on `CH_k(Y')`
@@ -532,7 +499,7 @@ theorem exists_bivariantChowClass_cap_heq_flatPullbackChow :
             (flatPullbackFactorsThroughRationalEquivalence_general C _ _ _ _ _ _ _) α
 ```
 
-**`Stacks.Chow.existsUnique_bivariantClass_isBivariantFlatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClassUnique.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClassUnique.lean#L114). The attribute's comment: “exactly one bivariant class of degree -r, at the Gysin system of the first Chern class, satisfies the characterization Stacks.Chow.IsBivariantFlatPullback, with nothing assumed”.
+**`Stacks.Chow.existsUnique_bivariantClass_isBivariantFlatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClassUnique.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackChowClassUnique.lean#L114). The attribute's comment: “exactly one bivariant class of degree -r, at the Gysin system of the first Chern class, satisfies the characterization Stacks.Chow.IsBivariantFlatPullback, with nothing assumed”.
 
 > **Stacks 0B78** for `Stacks.Chow.BivariantClass` at the Gysin system of the first Chern
 > class of an invertible module: exactly one bivariant class of degree `-r` for `f` caps by flat
@@ -545,54 +512,7 @@ theorem existsUnique_bivariantClass_isBivariantFlatPullback :
         (flatPullbackDescends C) c
 ```
 
-**`Stacks.Chow.flatPullbackBivariantClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackClass.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackClass.lean#L493). The attribute's comment: “with Stacks 02S1 as hS1, Stacks 02RG as hRG and Stacks 0B71 as h71”.
-
-> **Stacks 0B78.** For `f : X ⟶ Y` flat of relative dimension `r` between schemes locally of
-> finite type over the base, the rule which assigns to a test scheme `g : T ⟶ Y` the flat pullback
-> `A_k(T) ⟶ A_{k+r}(X ×_Y T)` along the base change of `f` is a bivariant class of degree `-r`
-> for `f`.
->
-> The three inputs of the source that this repository does not have are the named hypotheses `hS1`
-> (Stacks 02S1), `hRG` (Stacks 02RG) and `h71` (Stacks 0B71, with the identification of Stacks
-> 0B6Y). The fourth, Stacks 02RD, is proved here, as is Stacks 02NK; see the implementation notes
-> of `StacksFrontier.AlgebraicGeometry.Chow.Bivariant.FlatPullbackClass`.
-
-```lean
-def flatPullbackBivariantClass (hRG : ProperPushforwardFlatPullbackBaseChange C)
-    (h71 : G.FlatPullbackNaturality r) :
-    BivariantClass C G sX sY f hf (-(r : ℤ))
-```
-
-**`Stacks.Chow.flatPullbackBivariantCap_proper_naturality_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackProperPushforward.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackProperPushforward.lean#L72). The attribute's comment: “the proper-pushforward condition of Stacks 0B76 for the flat-pullback rule, with NOTHING ASSUMED: Stacks 02RG on Chow groups is the theorem Stacks.Chow.properPushforwardFlatPullbackBaseChange above, and the Stacks 02S1 descent along which the rule is formed is the theorem Stacks.Chow.flatPullbackDescends”.
-
-> The proper-pushforward condition of Stacks 0B76 (1) for the flat-pullback rule of Stacks 0B78:
-> flat pullback along the base change of a flat `f : X ⟶ Y` of relative dimension `r` commutes with
-> proper pushforward along a proper morphism `h : T' ⟶ T` of test schemes over `Y`.
-
-```lean
-theorem flatPullbackBivariantCap_proper_naturality_unconditional (C : ChowSituation.{u})
-    {X Y : Scheme.{u}} (sX : X ⟶ C.S) [LocallyOfFiniteType sX] (sY : Y ⟶ C.S)
-    [LocallyOfFiniteType sY] (f : X ⟶ Y) [LocallyOfFiniteType f] [Flat f] (hf : f ≫ sY = sX)
-    (r : ℕ) (hfr : AlgebraicGeometry.RelativeDimension f r) {T T' : Scheme.{u}} (g : T ⟶ Y)
-    [LocallyOfFiniteType g] (h : T' ⟶ T) [IsProper h]
-    (h' : pullback f (h ≫ g) ⟶ pullback f g) [IsProper h']
-    (sq : IsPullback (pullback.snd f (h ≫ g)) h' h (pullback.snd f g))
-    (hfst : h' ≫ pullback.fst f g = pullback.fst f (h ≫ g)) (k : ℤ)
-    (hfac : ProperPushforwardFactorsThroughRationalEquivalence C ((h ≫ g) ≫ sY) (g ≫ sY) h
-      (by simp [Category.assoc]) k)
-    (hfac' : ProperPushforwardFactorsThroughRationalEquivalence C
-      (pullback.fst f (h ≫ g) ≫ sX) (pullback.fst f g ≫ sX) h'
-      (by rw [← Category.assoc, hfst]) (k - -(r : ℤ)))
-    (α : chowGroup C ((h ≫ g) ≫ sY) k) :
-    flatPullbackBivariantCap C sX sY f hf r hfr (flatPullbackDescends C) g k
-        (properChowPushforward C ((h ≫ g) ≫ sY) (g ≫ sY) h (by simp [Category.assoc]) k hfac
-          α) =
-      properChowPushforward C (pullback.fst f (h ≫ g) ≫ sX) (pullback.fst f g ≫ sX) h'
-        (by rw [← Category.assoc, hfst]) (k - -(r : ℤ)) hfac'
-        (flatPullbackBivariantCap C sX sY f hf r hfr (flatPullbackDescends C) (h ≫ g) k α)
-```
-
-**`Stacks.Chow.flatPullbackBivariantClassOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackProperPushforward.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackProperPushforward.lean#L104). The attribute's comment: “the flat-pullback rule IS a bivariant class of degree -r, with NOTHING ASSUMED: the Stacks 02S1 descent is the theorem Stacks.Chow.flatPullbackDescends, Stacks 02RG on Chow groups is the theorem Stacks.Chow.properPushforwardFlatPullbackBaseChange above, and Stacks 0B71 with the identification of Stacks 0B6Y is the theorem Stacks.Chow.gysinSystemOfInvertible\_flatPullbackNaturalityAtZeroSchemeComparison”.
+**`Stacks.Chow.flatPullbackBivariantClassOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackProperPushforward.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackProperPushforward.lean#L94). The attribute's comment: “the flat-pullback rule IS a bivariant class of degree -r, with NOTHING ASSUMED: the Stacks 02S1 descent is the theorem Stacks.Chow.flatPullbackDescends, Stacks 02RG on Chow groups is the theorem Stacks.Chow.properPushforwardFlatPullbackBaseChange above, and Stacks 0B71 with the identification of Stacks 0B6Y is the theorem Stacks.Chow.gysinSystemOfInvertible\_flatPullbackNaturalityAtZeroSchemeComparison”.
 
 > For `f : X ⟶ Y` flat of relative dimension `r` between schemes locally of finite type over the
 > base, the rule which assigns to a test scheme `g : T ⟶ Y` the flat pullback
@@ -607,41 +527,11 @@ def flatPullbackBivariantClassOfInvertible (C : ChowSituation.{u}) {X Y : Scheme
     BivariantClass C (gysinSystemOfInvertible C) sX sY f hf (-(r : ℤ))
 ```
 
-**`Stacks.Chow.isBivariantFlatPullback_flatPullbackBivariantClassOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackProperPushforward.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FlatPullbackProperPushforward.lean#L138). The attribute's comment: “the class of the same tag constructed above satisfies the characterization Stacks.Chow.IsBivariantFlatPullback, with NOTHING ASSUMED, so that the uniqueness statement Stacks.Chow.eq\_of\_isBivariantFlatPullback is about a nonempty collection”.
-
-> The class `Stacks.Chow.flatPullbackBivariantClassOfInvertible` is the flat-pullback class in
-> the sense of `Stacks.Chow.IsBivariantFlatPullback`: on every test scheme its cap operation is flat
-> pullback along the base change of `f`.
-
-```lean
-theorem isBivariantFlatPullback_flatPullbackBivariantClassOfInvertible (C : ChowSituation.{u})
-    {X Y : Scheme.{u}} (sX : X ⟶ C.S) [LocallyOfFiniteType sX] (sY : Y ⟶ C.S)
-    [LocallyOfFiniteType sY] (f : X ⟶ Y) [LocallyOfFiniteType f] [Flat f] (hf : f ≫ sY = sX)
-    (r : ℕ) (hfr : AlgebraicGeometry.RelativeDimension f r) :
-    IsBivariantFlatPullback C (gysinSystemOfInvertible C) sX sY f hf r hfr
-      (flatPullbackDescends C) (flatPullbackBivariantClassOfInvertible C sX sY f hf r hfr)
-```
-
-**`Stacks.Chow.completedFlatPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedFlatPullback.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedFlatPullback.lean#L164). The attribute's comment: “flat pullback along a flat morphism whose relative dimension is constant on each connected component, in the completed bivariant group A^*(X → Y)^∧”.
-
-> **`f^* ∈ A^*(X ⟶ Y)^∧` for a flat morphism `f`** (Stacks 0B78 on completions). For a flat
-> morphism whose restriction to every connected component `X_a` of `X` has pure relative dimension
-> `r_a`, the flat-pullback class in the completed bivariant group of Stacks 0FE0: on `X_a` it is the
-> class of Stacks 0B78 of the restriction `X_a ⟶ Y_{a'}` of `f`, placed in degree `-r_a`. Every input
-> of Stacks 0B78 is discharged.
-
-```lean
-def completedFlatPullback [IsLocallyNoetherian X] [IsLocallyNoetherian Y]
-    (hrel : ∀ a : _root_.ConnectedComponents X,
-      ∃ r : ℕ, AlgebraicGeometry.RelativeDimension (f.resConnectedComponent a) r) :
-    completedBivariantGroup C (gysinSystemOfInvertible C) sX sY f hf
-```
-
 ## Tag 0B79, a lemma
 
 [Tag 0B79](https://stacks.math.columbia.edu/tag/0B79) in the Stacks Project.
 
-**`Stacks.Chow.gysinBivariantClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinClass.lean, line 540](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinClass.lean#L540).
+**`Stacks.Chow.gysinBivariantClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinClass.lean, line 540](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinClass.lean#L540).
 
 > Let `(𝓛, s, i : D ⟶ X)` be a triple as in Definition 02T8 on a scheme `X` locally of finite
 > type over the base. The rule assigning to every `g : X' ⟶ X` locally of finite type the Gysin map
@@ -660,7 +550,7 @@ def gysinBivariantClass :
 
 [Tag 0EPK](https://stacks.math.columbia.edu/tag/0EPK) in the Stacks Project.
 
-**`Stacks.Chow.isProper_bivariantPushforwardBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforward.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforward.lean#L210). The attribute's comment: “properness of the base change of the proper morphism”.
+**`Stacks.Chow.isProper_bivariantPushforwardBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforward.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforward.lean#L210). The attribute's comment: “properness of the base change of the proper morphism”.
 
 > **Stacks 0EPK.** The base change of a proper morphism along a test scheme is proper, so the
 > rule of Stacks 0EPK can push forward along it.
@@ -670,7 +560,7 @@ instance isProper_bivariantPushforwardBaseChange {X Y Z T : Scheme.{u}} (f : X �
     (g : Y ⟶ Z) (t : T ⟶ Z) : IsProper (bivariantPushforwardBaseChange f g t)
 ```
 
-**`Stacks.Chow.bivariantProperPushforwardCap_proper_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforward.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforward.lean#L256). The attribute's comment: “the proper-pushforward axiom of the pushed-forward class”.
+**`Stacks.Chow.bivariantProperPushforwardCap_proper_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforward.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforward.lean#L256). The attribute's comment: “the proper-pushforward axiom of the pushed-forward class”.
 
 > **Stacks 0EPK.** The proper-pushforward axiom of Stacks 0B76 for the rule of Stacks 0EPK: the
 > cap operation `α ↦ f'_*(c ∩ α)` commutes with proper pushforward along a morphism of test
@@ -692,7 +582,7 @@ theorem bivariantProperPushforwardCap_proper_naturality {T T' : Scheme.{u}} (t :
         (bivariantProperPushforwardCap C G sX sY sZ f g hf hg hpp p c (h ≫ t) k α)
 ```
 
-**`Stacks.Chow.eq_of_isBivariantProperPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforward.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforward.lean#L319). The attribute's comment: “uniqueness of the pushed-forward class”.
+**`Stacks.Chow.eq_of_isBivariantProperPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforward.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforward.lean#L319). The attribute's comment: “uniqueness of the pushed-forward class”.
 
 > **Stacks 0EPK.** The rule of Stacks 0EPK determines the pushed-forward class: two bivariant
 > classes that both push `c` forward along `f` are equal.
@@ -703,7 +593,7 @@ theorem eq_of_isBivariantProperPushforward
     (h' : IsBivariantProperPushforward C G sX sY sZ f g hf hg hpp p c d') : d = d'
 ```
 
-**`Stacks.Chow.canonicalBivariantProperPushforwardCap_gysin_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardCanonical.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardCanonical.lean#L86). The attribute's comment: “the Gysin axiom of Stacks 0B76 for the rule α ↦ f'\_*(c ∩ α)”.
+**`Stacks.Chow.canonicalBivariantProperPushforwardCap_gysin_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardCanonical.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardCanonical.lean#L86). The attribute's comment: “the Gysin axiom of Stacks 0B76 for the rule α ↦ f'\_*(c ∩ α)”.
 
 > **Stacks 0EPK, the Gysin axiom.** For `c ∈ A^p(X ⟶ Z)` and `f` proper, the rule
 > `α ↦ f'_*(c ∩ α)` commutes with the Gysin map `i^*` of Stacks 02TO of the zero scheme of a section
@@ -738,7 +628,7 @@ theorem canonicalBivariantProperPushforwardCap_gysin_naturality
               (properPushforwardDescends C) p c t (k + 1) α))
 ```
 
-**`Stacks.Chow.canonicalBivariantProperPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardCanonical.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardCanonical.lean#L125).
+**`Stacks.Chow.canonicalBivariantProperPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardCanonical.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardCanonical.lean#L125).
 
 > **Stacks 0EPK.** For `f : X ⟶ Y` proper, `g : Y ⟶ Z` and `c ∈ A^p(X ⟶ Z)`, the rule which to
 > a test scheme `t : T ⟶ Z` assigns `α ↦ f'_*(c ∩ α)`, with `f' : T ×_Z X ⟶ T ×_Z Y` the base change
@@ -751,7 +641,7 @@ def canonicalBivariantProperPushforward
     CanonicalBivariantClass C sY sZ g hg p
 ```
 
-**`Stacks.Chow.existsUnique_canonicalBivariantProperPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardCanonical.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardCanonical.lean#L149). The attribute's comment: “existence and uniqueness of f\_* ∘ c with its cap formula”.
+**`Stacks.Chow.existsUnique_canonicalBivariantProperPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardCanonical.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardCanonical.lean#L149). The attribute's comment: “existence and uniqueness of f\_* ∘ c with its cap formula”.
 
 > **Stacks 0EPK.** For `f : X ⟶ Y` proper, `g : Y ⟶ Z` and `c ∈ A^p(X ⟶ Z)` there is exactly one
 > bivariant class `f_* ∘ c ∈ A^p(Y ⟶ Z)` whose cap operation is `α ↦ f'_*(c ∩ α)` on every test
@@ -770,7 +660,7 @@ theorem existsUnique_canonicalBivariantProperPushforward
             (properPushforwardDescends C _ _ _ _ _) (c.cap t k α)
 ```
 
-**`Stacks.Chow.bivariantProperPushforwardCap_flat_naturality_of_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardFlatPullback.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardFlatPullback.lean#L119). The attribute's comment: “the flat-pullback axiom of the pushed-forward class”.
+**`Stacks.Chow.bivariantProperPushforwardCap_flat_naturality_of_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardFlatPullback.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardFlatPullback.lean#L119). The attribute's comment: “the flat-pullback axiom of the pushed-forward class”.
 
 > **Stacks 0EPK.** The flat-pullback axiom of Stacks 0B76 for the rule of Stacks 0EPK: the cap
 > operation `α ↦ f'_*(c ∩ α)` commutes with flat pullback of fixed relative dimension along a
@@ -808,7 +698,7 @@ theorem bivariantProperPushforwardCap_flat_naturality_of_factors {T T' : Scheme.
         (bivariantProperPushforwardCap C G sX sY sZ f g hf hg hpp p c t k α)
 ```
 
-**`Stacks.Chow.bivariantProperPushforwardCap_proper_naturality_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L70). The attribute's comment: “the proper-pushforward axiom of the pushed-forward class, with NOTHING ASSUMED: the descent of Stacks 02S2 is the theorem Stacks.Chow.properPushforwardDescends”.
+**`Stacks.Chow.bivariantProperPushforwardCap_proper_naturality_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L70). The attribute's comment: “the proper-pushforward axiom of the pushed-forward class, with NOTHING ASSUMED: the descent of Stacks 02S2 is the theorem Stacks.Chow.properPushforwardDescends”.
 
 > The proper-pushforward axiom of Stacks 0B76 for the rule of Stacks 0EPK, with proper
 > pushforward on Chow groups taken along the descent `Stacks.Chow.properPushforwardDescends`.
@@ -830,7 +720,7 @@ theorem bivariantProperPushforwardCap_proper_naturality_unconditional {T T' : Sc
           (h ≫ t) k α)
 ```
 
-**`Stacks.Chow.bivariantProperPushforwardCap_flat_naturality_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L95). The attribute's comment: “the flat-pullback axiom of the pushed-forward class, with NOTHING ASSUMED: Stacks 02RG on Chow groups is the theorem Stacks.Chow.properPushforwardFlatPullbackBaseChange, and the two descents are Stacks.Chow.flatPullbackDescends and Stacks.Chow.properPushforwardDescends”.
+**`Stacks.Chow.bivariantProperPushforwardCap_flat_naturality_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L95). The attribute's comment: “the flat-pullback axiom of the pushed-forward class, with NOTHING ASSUMED: Stacks 02RG on Chow groups is the theorem Stacks.Chow.properPushforwardFlatPullbackBaseChange, and the two descents are Stacks.Chow.flatPullbackDescends and Stacks.Chow.properPushforwardDescends”.
 
 > The flat-pullback axiom of Stacks 0B76 for the rule of Stacks 0EPK, with flat pullback and
 > proper pushforward on Chow groups taken along the descents `Stacks.Chow.flatPullbackDescends` and
@@ -861,7 +751,7 @@ theorem bivariantProperPushforwardCap_flat_naturality_unconditional {T T' : Sche
           α))
 ```
 
-**`Stacks.Chow.bivariantProperPushforwardCap_gysin_naturality_ofInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L142). The attribute's comment: “the Gysin axiom of the pushed-forward class at the Gysin system of the first Chern class rule, with NOTHING ASSUMED: Stacks 02TA for that Gysin system is a pair of theorems here, the identification is Stacks 0B6Y, and the descent of Stacks 02S2 is Stacks.Chow.properPushforwardDescends”.
+**`Stacks.Chow.bivariantProperPushforwardCap_gysin_naturality_ofInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L142). The attribute's comment: “the Gysin axiom of the pushed-forward class at the Gysin system of the first Chern class rule, with NOTHING ASSUMED: Stacks 02TA for that Gysin system is a pair of theorems here, the identification is Stacks 0B6Y, and the descent of Stacks 02S2 is Stacks.Chow.properPushforwardDescends”.
 
 > The Gysin axiom of Stacks 0B76 for the rule of Stacks 0EPK at the Gysin system
 > `Stacks.Chow.gysinSystemOfInvertible` of the first Chern class rule, with proper pushforward on
@@ -906,7 +796,7 @@ theorem bivariantProperPushforwardCap_gysin_naturality_ofInvertible {T : Scheme.
             (properPushforwardDescends C) p c t (k + 1) α))
 ```
 
-**`Stacks.Chow.bivariantProperPushforwardOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L191). The attribute's comment: “the pushed-forward class f\_* ∘ c itself, at the Gysin system of the first Chern class rule, with NOTHING ASSUMED: the rule of the lemma IS a bivariant class, so the three axioms of Stacks 0B76 for it are the three fields of this term, and Stacks 02RG, Stacks 02TA for this Gysin system and Stacks 02S2 are all theorems of this repository”.
+**`Stacks.Chow.bivariantProperPushforwardOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L191). The attribute's comment: “the pushed-forward class f\_* ∘ c itself, at the Gysin system of the first Chern class rule, with NOTHING ASSUMED: the rule of the lemma IS a bivariant class, so the three axioms of Stacks 0B76 for it are the three fields of this term, and Stacks 02RG, Stacks 02TA for this Gysin system and Stacks 02S2 are all theorems of this repository”.
 
 > The proper pushforward `f_* ∘ c ∈ A^p(Y ⟶ Z)` of a bivariant class `c ∈ A^p(X ⟶ Z)` along a
 > proper `f : X ⟶ Y`, at the Gysin system of the first Chern class rule: the bivariant class whose
@@ -917,7 +807,7 @@ def bivariantProperPushforwardOfInvertible :
     BivariantClass C (gysinSystemOfInvertible C) sY sZ g hg p
 ```
 
-**`Stacks.Chow.isBivariantProperPushforward_bivariantProperPushforwardOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L204). The attribute's comment: “the constructed class satisfies the characterization Stacks.Chow.IsBivariantProperPushforward of the same tag, with NOTHING ASSUMED, so the uniqueness statement is about a nonempty collection”.
+**`Stacks.Chow.isBivariantProperPushforward_bivariantProperPushforwardOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L204). The attribute's comment: “the constructed class satisfies the characterization Stacks.Chow.IsBivariantProperPushforward of the same tag, with NOTHING ASSUMED, so the uniqueness statement is about a nonempty collection”.
 
 > The class `Stacks.Chow.bivariantProperPushforwardOfInvertible` caps by the rule
 > `α ↦ f'_*(c ∩ α)`, so it is the proper pushforward of `c` in the sense of
@@ -930,7 +820,7 @@ theorem isBivariantProperPushforward_bivariantProperPushforwardOfInvertible :
       (bivariantProperPushforwardOfInvertible C sX sY sZ f g hf hg p c)
 ```
 
-**`Stacks.Chow.exists_isBivariantProperPushforward_ofInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L218). The attribute's comment: “existence of the pushed-forward class at the Gysin system of the first Chern class rule, with NOTHING ASSUMED”.
+**`Stacks.Chow.exists_isBivariantProperPushforward_ofInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L218). The attribute's comment: “existence of the pushed-forward class at the Gysin system of the first Chern class rule, with NOTHING ASSUMED”.
 
 > For a proper `f : X ⟶ Y`, a morphism `g : Y ⟶ Z` and a bivariant class `c` of degree `p` for
 > `f ≫ g` against the Gysin system of the first Chern class rule, there is a bivariant class of
@@ -943,7 +833,7 @@ theorem exists_isBivariantProperPushforward_ofInvertible :
         (properPushforwardDescends C) p c d
 ```
 
-**`Stacks.Chow.bivariantProperPushforwardExistsOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L232). The attribute's comment: “the bundled existence statement at the Gysin system of the first Chern class rule, with NOTHING ASSUMED: Stacks 02RG on Chow groups and Stacks 02TA for this Gysin system are both theorems of this repository”.
+**`Stacks.Chow.bivariantProperPushforwardExistsOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L232). The attribute's comment: “the bundled existence statement at the Gysin system of the first Chern class rule, with NOTHING ASSUMED: Stacks 02RG on Chow groups and Stacks 02TA for this Gysin system are both theorems of this repository”.
 
 > The bundled existence statement `Stacks.Chow.BivariantProperPushforwardExists` of
 > Stacks 0EPK holds at the Gysin system of the first Chern class rule.
@@ -953,7 +843,7 @@ theorem bivariantProperPushforwardExistsOfInvertible (C : ChowSituation.{u}) :
     BivariantProperPushforwardExists C (gysinSystemOfInvertible C)
 ```
 
-**`Stacks.Chow.eq_of_isBivariantProperPushforward_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L243). The attribute's comment: “uniqueness of the pushed-forward class, with NOTHING ASSUMED: the descent of Stacks 02S2 is the theorem Stacks.Chow.properPushforwardDescends”.
+**`Stacks.Chow.eq_of_isBivariantProperPushforward_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ProperPushforwardUnconditional.lean#L243). The attribute's comment: “uniqueness of the pushed-forward class, with NOTHING ASSUMED: the descent of Stacks 02S2 is the theorem Stacks.Chow.properPushforwardDescends”.
 
 > Two bivariant classes that both push `c` forward along `f`, with proper pushforward on Chow
 > groups taken along the descent `Stacks.Chow.properPushforwardDescends`, are equal.
@@ -974,7 +864,7 @@ theorem eq_of_isBivariantProperPushforward_unconditional {C : ChowSituation.{u}}
 
 [Tag 0F9Z](https://stacks.math.columbia.edu/tag/0F9Z) in the Stacks Project.
 
-**`Stacks.Chow.chowCohomologyRestriction_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyFunctoriality.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyFunctoriality.lean#L44). The attribute's comment: “compatibility with compositions, for the restriction map on Chow cohomology of Tag 0B7F”.
+**`Stacks.Chow.chowCohomologyRestriction_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyFunctoriality.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyFunctoriality.lean#L44). The attribute's comment: “compatibility with compositions, for the restriction map on Chow cohomology of Tag 0B7F”.
 
 > The restriction map of Stacks 0B7F is compatible with composition: restricting a class on `X`
 > along `f : Y ⟶ X` and then along `a : W ⟶ Y` gives the restriction along `a ≫ f`,
@@ -988,7 +878,7 @@ theorem chowCohomologyRestriction_comp (c : chowCohomologyComponent C G sX p) :
       chowCohomologyRestriction C G sX (a ≫ f) p hgys c
 ```
 
-**`Stacks.Chow.BivariantChowClass.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean#L165). The attribute's comment: “the restriction map A^p(X → Y) → A^p(X' → Y'), c ↦ res(c)”.
+**`Stacks.Chow.BivariantChowClass.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean#L165). The attribute's comment: “the restriction map A^p(X → Y) → A^p(X' → Y'), c ↦ res(c)”.
 
 > The restriction `res(c) ∈ A^p(X' ⟶ Y')`, `X' = Y' ×_Y X`, of a bivariant class `c ∈ A^p(X ⟶ Y)`
 > along `h : Y' ⟶ Y`: a scheme `Y''` locally of finite type over `Y'` is one over `Y`, and
@@ -1001,7 +891,7 @@ def restrict (c : BivariantChowClass C sX sY f hf p) :
       (restrict_structure_eq hf h hh) p
 ```
 
-**`Stacks.Chow.BivariantChowClass.restrict_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean#L179). The attribute's comment: “res(c) ∩ α'' = c ∩ α''”.
+**`Stacks.Chow.BivariantChowClass.restrict_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean#L179). The attribute's comment: “res(c) ∩ α'' = c ∩ α''”.
 
 > `res(c) ∩ α'' = c ∩ α''`: for `g : Y'' ⟶ Y'` and `α'' ∈ CH_k(Y'')`, the cap of the restriction
 > is the cap of `c` at `g ≫ h`, read on `(Y' ×_Y X) ×_{Y'} Y''` through the canonical isomorphism
@@ -1018,7 +908,7 @@ theorem restrict_cap (c : BivariantChowClass C sX sY f hf p) {T : Scheme.{u}} (g
         (c.cap (g ≫ h) k (chowGroupCongr C (by rw [Category.assoc, hh]) k α))
 ```
 
-**`Stacks.Chow.BivariantChowClass.restrict_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean#L217). The attribute's comment: “compatibility with compositions: res along Y'' → Y' after res along Y' → Y is res along Y'' → Y”.
+**`Stacks.Chow.BivariantChowClass.restrict_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean#L217). The attribute's comment: “compatibility with compositions: res along Y'' → Y' after res along Y' → Y is res along Y'' → Y”.
 
 > Restriction is compatible with compositions of base changes: restricting `c` along `h : Y' ⟶ Y`
 > and then along `h' : Y'' ⟶ Y'` is restricting `c` along `h' ≫ h`, the two classes agreeing after
@@ -1035,7 +925,7 @@ theorem restrict_restrict {Y'' : Scheme.{u}} {sY'' : Y'' ⟶ C.S} [LocallyOfFini
       c.restrict (h' ≫ h) (by rw [Category.assoc, hh, hh'])
 ```
 
-**`Stacks.Chow.BivariantChowClass.restrict_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean#L283). The attribute's comment: “compatibility with compositions: res(a ∘ b) = res(a) ∘ res(b)”.
+**`Stacks.Chow.BivariantChowClass.restrict_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowRestriction.lean#L283). The attribute's comment: “compatibility with compositions: res(a ∘ b) = res(a) ∘ res(b)”.
 
 > Restriction is compatible with the composition of bivariant classes. For `a ∈ A^p(X ⟶ Y)`,
 > `b ∈ A^q(Y ⟶ Z)` and `h : Z' ⟶ Z`, write `Y' = Y ×_Z Z'` and `X' = X ×_Y Y' = X ×_Z Z'`; then
@@ -1054,7 +944,7 @@ theorem restrict_comp {Z' : Scheme.{u}} {sZ' : Z' ⟶ C.S} [LocallyOfFiniteType 
       (a.comp b).restrict h hh
 ```
 
-**`Stacks.Chow.bivariantRestrictionCap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean, line 676](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean#L676). The attribute's comment: “the cap operation of the restriction”.
+**`Stacks.Chow.bivariantRestrictionCap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean, line 676](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean#L676). The attribute's comment: “the cap operation of the restriction”.
 
 > **Stacks 0F9Z.** The cap operation `res(c) ∩ -` of the restriction of a bivariant class `c`
 > of degree `p` for `f : X ⟶ Y` along `h : Y' ⟶ Y`: on a test scheme `g : T ⟶ Y'` it is the cap
@@ -1068,7 +958,7 @@ def bivariantRestrictionCap (c : BivariantClass C G sX sY f hf p) {T : Scheme.{u
       chowGroup C (pullback.fst (pullback.snd f h) g ≫ (pullback.fst f h ≫ sX)) (k - p)
 ```
 
-**`Stacks.Chow.bivariantRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean, line 1116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean#L1116).
+**`Stacks.Chow.bivariantRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean, line 1116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean#L1116).
 
 > **Stacks 0F9Z.** The restriction `res(c)` of a bivariant class `c` of degree `p` for
 > `f : X ⟶ Y` along `h : Y' ⟶ Y`: the bivariant class of degree `p` for the base change
@@ -1087,7 +977,7 @@ def bivariantRestriction (hgys : G.IsNaturalUnderBaseChangeIso)
       (pullbackSnd_comp_structureMorphism_eq C sX sY f hf h) p
 ```
 
-**`Stacks.Chow.bivariantRestrictionAddHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean, line 1243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean#L1243).
+**`Stacks.Chow.bivariantRestrictionAddHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean, line 1243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean#L1243).
 
 > **Stacks 0F9Z.** The restriction map `A^p(X ⟶ Y) ⟶ A^p(X' ⟶ Y')` along `h : Y' ⟶ Y`, as a
 > homomorphism of groups.
@@ -1099,7 +989,7 @@ def bivariantRestrictionAddHom (hgys : G.IsNaturalUnderBaseChangeIso) :
         (pullbackSnd_comp_structureMorphism_eq C sX sY f hf h) p
 ```
 
-**`Stacks.Chow.bivariantRestrictionCap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean, line 1343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean#L1343). The attribute's comment: “compatibility with compositions, on cap operations”.
+**`Stacks.Chow.bivariantRestrictionCap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean, line 1343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean#L1343). The attribute's comment: “compatibility with compositions, on cap operations”.
 
 > **Stacks 0F9Z.** Restriction of a bivariant class is compatible with composition of base
 > changes: if `c'` is the restriction of `c` along `h`, then the restriction of `c'` along `h'` caps
@@ -1124,7 +1014,7 @@ theorem bivariantRestrictionCap_comp (c : BivariantClass C G sX sY f hf p)
         (chowGroupCongr C (congrArg (g ≫ ·) (Category.assoc h' h sY).symm) k α)
 ```
 
-**`Stacks.Chow.bivariantRestriction_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean, line 1380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean#L1380).
+**`Stacks.Chow.bivariantRestriction_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean, line 1380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Restriction.lean#L1380).
 
 > **Stacks 0F9Z.** Restriction is compatible with composition of base changes: restricting
 > along `h` and then along `h'` agrees with restricting along `h' ≫ h`, after the canonical
@@ -1147,7 +1037,7 @@ theorem bivariantRestriction_comp (hgys : G.IsNaturalUnderBaseChangeIso)
         (chowGroupCongr C (congrArg (g ≫ ·) (Category.assoc h' h sY).symm) k α)
 ```
 
-**`Stacks.Chow.isBivariantTransport_bivariantComposite_bivariantRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/RestrictionOfComposite.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/RestrictionOfComposite.lean#L73). The attribute's comment: “the clause `res(a ∘ b) = res(a) ∘ res(b)`: restriction commutes with the composition of bivariant classes of Tag 0B75, on cap operations, read through the comparison isomorphism of the two readings of the source fibre product. The compatibility with the composition of BASE CHANGES is the separate Stacks.Chow.bivariantRestrictionCap\_comp”.
+**`Stacks.Chow.isBivariantTransport_bivariantComposite_bivariantRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/RestrictionOfComposite.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/RestrictionOfComposite.lean#L73). The attribute's comment: “the clause `res(a ∘ b) = res(a) ∘ res(b)`: restriction commutes with the composition of bivariant classes of Tag 0B75, on cap operations, read through the comparison isomorphism of the two readings of the source fibre product. The compatibility with the composition of BASE CHANGES is the separate Stacks.Chow.bivariantRestrictionCap\_comp”.
 
 > **Stacks 0F9Z, compatibility with the composition of bivariant classes.** The restriction of
 > the composite `a ∘ b` of Stacks 0B75 along `h : W ⟶ Z` caps exactly as the composite of the
@@ -1181,7 +1071,7 @@ theorem isBivariantTransport_bivariantComposite_bivariantRestriction
         (bivariantComposite C G sX sY sZ f g hf hg p q a b hgys hgysc))
 ```
 
-**`Stacks.Chow.bivariantTransport_bivariantComposite_bivariantRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/RestrictionOfComposite.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/RestrictionOfComposite.lean#L123). The attribute's comment: “the clause `res(a ∘ b) = res(a) ∘ res(b)` as an equality of bivariant classes, the composition being that of Tag 0B75 and the transport the comparison isomorphism of the two readings of the source fibre product”.
+**`Stacks.Chow.bivariantTransport_bivariantComposite_bivariantRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/RestrictionOfComposite.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/RestrictionOfComposite.lean#L123). The attribute's comment: “the clause `res(a ∘ b) = res(a) ∘ res(b)` as an equality of bivariant classes, the composition being that of Tag 0B75 and the transport the comparison isomorphism of the two readings of the source fibre product”.
 
 > **Stacks 0F9Z, compatibility with the composition of bivariant classes**, as an identity of
 > bivariant classes: the transport along `X ×_Y (Y ×_Z W) ≅ X ×_Z W` of the composite of the
@@ -1213,7 +1103,7 @@ theorem bivariantTransport_bivariantComposite_bivariantRestriction
         hgys (bivariantComposite C G sX sY sZ f g hf hg p q a b hgys hgysc)
 ```
 
-**`Stacks.Chow.completedBivariantRestrictionViaSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedRestrictionFlatCommute.lean, line 579](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedRestrictionFlatCommute.lean#L579). The attribute's comment: “the restriction on the completed bivariant groups A^*(X → Y)^∧ → A^*(X' → Y')^∧”.
+**`Stacks.Chow.completedBivariantRestrictionViaSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedRestrictionFlatCommute.lean, line 579](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedRestrictionFlatCommute.lean#L579). The attribute's comment: “the restriction on the completed bivariant groups A^*(X → Y)^∧ → A^*(X' → Y')^∧”.
 
 > **Stacks 0F9Z on completions.** The restriction
 > `res : A^*(X ⟶ Y)^∧ ⟶ A^*(X ×_Y Y' ⟶ Y')^∧` of completed bivariant classes (Stacks 0FE0) along
@@ -1229,7 +1119,7 @@ def completedBivariantRestrictionViaSequence :
         (pullback.snd f h) (pullbackSnd_comp_structureMorphism_eq C sX sY f hf h)
 ```
 
-**`Stacks.Chow.bivariantRestrictionOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean#L236).
+**`Stacks.Chow.bivariantRestrictionOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean#L236).
 
 > The restriction `res(c)` of a bivariant class `c ∈ A^p(X ⟶ Y)` along a morphism
 > `b : Y' ⟶ Y`, for the Gysin system of the first Chern class rule of an invertible module: the
@@ -1242,7 +1132,7 @@ def bivariantRestrictionOfInvertible
       (pullback.snd f b) (pullbackSnd_comp_structureMorphism_eq C sX sY f hf b) p
 ```
 
-**`Stacks.Chow.bivariantRestrictionOfInvertible_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean#L246).
+**`Stacks.Chow.bivariantRestrictionOfInvertible_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean#L246).
 
 > The restriction caps by the cap operation of `c`: `res(c) ∩ α = c ∩ α`, after the canonical
 > identification of the two fibre products.
@@ -1255,7 +1145,7 @@ theorem bivariantRestrictionOfInvertible_cap
       bivariantRestrictionCap C (gysinSystemOfInvertible C) sX sY f hf b p c g k α
 ```
 
-**`Stacks.Chow.bivariantRestrictionAddHomOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean#L256).
+**`Stacks.Chow.bivariantRestrictionAddHomOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean#L256).
 
 > The restriction map `A^p(X ⟶ Y) ⟶ A^p(X' ⟶ Y')` along `b : Y' ⟶ Y`, as a homomorphism of
 > groups, for the Gysin system of the first Chern class rule of an invertible module.
@@ -1267,7 +1157,7 @@ def bivariantRestrictionAddHomOfInvertible :
         (pullback.snd f b) (pullbackSnd_comp_structureMorphism_eq C sX sY f hf b) p
 ```
 
-**`Stacks.Chow.bivariantRestrictionOfInvertible_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean#L269).
+**`Stacks.Chow.bivariantRestrictionOfInvertible_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/BaseChangeIsoGysinSystem.lean#L269).
 
 > Restriction is compatible with composition of base changes: restricting along `b` and then
 > along `b'` agrees with restricting along `b' ≫ b`, after the canonical identification of the two
@@ -1294,7 +1184,7 @@ theorem bivariantRestrictionOfInvertible_comp
 
 [Tag 0FA2](https://stacks.math.columbia.edu/tag/0FA2) in the Stacks Project.
 
-**`Stacks.Chow.BivariantCommute`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Commuting.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Commuting.lean#L282). The attribute's comment: “the definition of commuting bivariant classes”.
+**`Stacks.Chow.BivariantCommute`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Commuting.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Commuting.lean#L282). The attribute's comment: “the definition of commuting bivariant classes”.
 
 > Two bivariant classes `c₁ ∈ A^{p₁}(Z₁ ⟶ X)` and `c₂ ∈ A^{p₂}(Z₂ ⟶ X)` *commute* when
 >
@@ -1312,7 +1202,7 @@ theorem bivariantRestrictionOfInvertible_comp
 def BivariantCommute : Prop
 ```
 
-**`Stacks.Chow.bivariantCommute_iff_commuteCompositeCap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Commuting.lean, line 416](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Commuting.lean#L416). The attribute's comment: “commuting is the equality of the two composites”.
+**`Stacks.Chow.bivariantCommute_iff_commuteCompositeCap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Commuting.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Commuting.lean#L416). The attribute's comment: “commuting is the equality of the two composites”.
 
 > Two bivariant classes commute if and only if the cap operations of the two
 > composites `res(c₁) ∘ c₂` and `res(c₂) ∘ c₁` agree, under the canonical identification
@@ -1335,7 +1225,7 @@ theorem bivariantCommute_iff_commuteCompositeCap_eq :
             (commuteCompositeCap C G sX f₂ f₁ p₂ p₁ c₂ c₁ hgys hpp t k α)
 ```
 
-**`Stacks.Chow.bivariantCommute_iff_cap_eq_of_isBivariantClassComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Commuting.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Commuting.lean#L439). The attribute's comment: “commuting is the equality of the two composite classes”.
+**`Stacks.Chow.bivariantCommute_iff_cap_eq_of_isBivariantClassComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Commuting.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Commuting.lean#L439). The attribute's comment: “commuting is the equality of the two composite classes”.
 
 > If `d₁` is the composite `res(c₁) ∘ c₂` and `d₂` is the composite `res(c₂) ∘ c₁` in the sense
 > of Stacks 0FE0, then `c₁` and `c₂` commute exactly when `d₁` and `d₂` agree under the canonical
@@ -1373,7 +1263,7 @@ theorem bivariantCommute_iff_cap_eq_of_isBivariantClassComposition
             (by ring : k - (p₂ + p₁) = (k - p₂) - p₁) (d₂.cap t k α)
 ```
 
-**`Stacks.Chow.bivariantCommute_iff_commuteCompositeOfInvertible_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/CommutingOfInvertible.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/CommutingOfInvertible.lean#L135). The attribute's comment: “commuting is the equality res(c₁) ∘ c₂ = res(c₂) ∘ c₁ of bivariant classes, at the canonical Gysin system, with nothing assumed”.
+**`Stacks.Chow.bivariantCommute_iff_commuteCompositeOfInvertible_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/CommutingOfInvertible.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/CommutingOfInvertible.lean#L135). The attribute's comment: “commuting is the equality res(c₁) ∘ c₂ = res(c₂) ∘ c₁ of bivariant classes, at the canonical Gysin system, with nothing assumed”.
 
 > **Stacks 0FA2.** Two bivariant classes `c₁ ∈ A^{p₁}(Z₁ ⟶ X)` and `c₂ ∈ A^{p₂}(Z₂ ⟶ X)` at
 > the Gysin system of the first Chern class rule commute if and only if
@@ -1412,7 +1302,7 @@ theorem bivariantCommute_iff_commuteCompositeOfInvertible_eq
 
 [Tag 0FA3](https://stacks.math.columbia.edu/tag/0FA3) in the Stacks Project.
 
-**`Stacks.Chow.gysinBivariantClass_bivariantCommute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinClassCommuting.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinClassCommuting.lean#L70). The attribute's comment: “the Gysin class i^* of Stacks 0B79 commutes with every c ∈ A^p(Z → X), in the sense of Remark 0FA2”.
+**`Stacks.Chow.gysinBivariantClass_bivariantCommute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinClassCommuting.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinClassCommuting.lean#L70). The attribute's comment: “the Gysin class i^* of Stacks 0B79 commutes with every c ∈ A^p(Z → X), in the sense of Remark 0FA2”.
 
 > **Stacks 0FA3.** Let `(S, δ)` be as in Situation 02QL, let `X` be locally of finite type over
 > `S`, let `(𝓛, s, i : D ⟶ X)` be a triple as in Definition 02T8, let `f : Z ⟶ X` be locally of
@@ -1430,7 +1320,7 @@ theorem gysinBivariantClass_bivariantCommute
       (gysinBivariantClass C sX L s).1 (BivariantChowClass.equivBivariantClass c)
 ```
 
-**`Stacks.Chow.gysinBivariantClass_comp_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinClassCommuting.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinClassCommuting.lean#L91). The attribute's comment: “res(i^*) ∘ c = res(c) ∘ i^* in A^\{1+p}(D ×\_X Z → X), the form of Remark 0FA2 on composites”.
+**`Stacks.Chow.gysinBivariantClass_comp_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinClassCommuting.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinClassCommuting.lean#L91). The attribute's comment: “res(i^*) ∘ c = res(c) ∘ i^* in A^\{1+p}(D ×\_X Z → X), the form of Remark 0FA2 on composites”.
 
 > **Stacks 0FA3, on composites.** In the situation of
 > `Stacks.Chow.gysinBivariantClass_bivariantCommute`, with `i^* ∈ A^1(D ⟶ X)` the bivariant Gysin
@@ -1456,7 +1346,7 @@ theorem gysinBivariantClass_comp_comm {sZ : Z ⟶ C.S} [LocallyOfFiniteType sZ]
         (pullbackSymmetry_hom_comp_snd_comp (gysinTripleInclusion L s) f)
 ```
 
-**`Stacks.Chow.gysinBivariantCommute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinCommuting.lean, line 599](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinCommuting.lean#L599).
+**`Stacks.Chow.gysinBivariantCommute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinCommuting.lean, line 600](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinCommuting.lean#L600).
 
 > **Stacks 0FA3.** Let `(𝓛, s, i : D ⟶ X)` be a triple as in Definition 02T8, let
 > `f : Z ⟶ X` be locally of finite type and let `c ∈ A^p(Z ⟶ X)` be a bivariant class. Then the
@@ -1479,7 +1369,7 @@ theorem gysinBivariantCommute (hG : G.IsNaturalUnderPullbackCompPushforward)
 
 [Tag 0FDU](https://stacks.math.columbia.edu/tag/0FDU) in the Stacks Project.
 
-**`Stacks.Chow.GeneralizedBivariantClass`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Generalized.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Generalized.lean#L155).
+**`Stacks.Chow.GeneralizedBivariantClass`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Generalized.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/Generalized.lean#L155).
 
 > A generalized bivariant class of degree `p` for a diagram `X --x--> Z <--y-- Y` of schemes
 > locally of finite type over the base: a rule assigning to every morphism `z' : Z' ⟶ Z` locally of
@@ -1496,7 +1386,7 @@ structure GeneralizedBivariantClass (C : ChowSituation.{u}) (G : GysinSystem C)
     (hy : y ≫ sZ = sY) (p : ℤ)
 ```
 
-**`Stacks.Chow.properPushforwardGeneralizedBivariantClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GeneralizedProperPushforward.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GeneralizedProperPushforward.lean#L496). The attribute's comment: “the example of the remark: for a proper f : X₂ ⟶ X₁, f\_* ∈ A^0(X₁ ⟶ X₁ ⟵ X₂), at the canonical Gysin system gysinSystemOfInvertible, with NOTHING ASSUMED”.
+**`Stacks.Chow.properPushforwardGeneralizedBivariantClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GeneralizedProperPushforward.lean, line 496](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GeneralizedProperPushforward.lean#L496). The attribute's comment: “the example of the remark: for a proper f : X₂ ⟶ X₁, f\_* ∈ A^0(X₁ ⟶ X₁ ⟵ X₂), at the canonical Gysin system gysinSystemOfInvertible, with NOTHING ASSUMED”.
 
 > For a proper morphism `f : X₂ ⟶ X₁` of schemes locally of finite type over the base, proper
 > pushforward is a generalized bivariant class of degree `0` for the diagram
@@ -1515,7 +1405,7 @@ def properPushforwardGeneralizedBivariantClass :
       (Category.id_comp s₁) hf 0
 ```
 
-**`Stacks.Chow.properPushforwardGeneralizedBivariantClass_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GeneralizedProperPushforward.lean, line 513](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GeneralizedProperPushforward.lean#L513). The attribute's comment: “the class f\_* ∈ A^0(X₁ ⟶ X₁ ⟵ X₂) caps by proper pushforward along the base change of f”.
+**`Stacks.Chow.properPushforwardGeneralizedBivariantClass_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GeneralizedProperPushforward.lean, line 513](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GeneralizedProperPushforward.lean#L513). The attribute's comment: “the class f\_* ∈ A^0(X₁ ⟶ X₁ ⟵ X₂) caps by proper pushforward along the base change of f”.
 
 > The cap operation of `f_* ∈ A^0(X₁ ⟶ X₁ ⟵ X₂)` on a test scheme `z' : Z' ⟶ X₁` is proper
 > pushforward along the base change `Z' ×_{X₁} X₂ ⟶ X₁ ×_{X₁} Z'` of `f`, read in degree `k - 0`.
@@ -1538,4 +1428,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.33, Tag 0B75](https://stacks.math.columbia.edu/tag/0B75)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

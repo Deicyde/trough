@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.42 Finding affine opens
 
-Section 33.42 of the Stacks Project, [Tag 09NF](https://stacks.math.columbia.edu/tag/09NF). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.42 of the Stacks Project, [Tag 09NF](https://stacks.math.columbia.edu/tag/09NF). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09NG, a lemma
 
 [Tag 09NG](https://stacks.math.columbia.edu/tag/09NG) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpenImmersion_of_openCover_source_of_separated_of_genericPoints_injOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/OpenImmersionCriterion.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/OpenImmersionCriterion.lean#L189).
+**`AlgebraicGeometry.isOpenImmersion_of_openCover_source_of_separated_of_genericPoints_injOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/OpenImmersionCriterion.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/OpenImmersionCriterion.lean#L189).
 
 > **Stacks Project, Tag 09NG.** A separated morphism that is locally an open immersion on
 > the source and injective on generic points of irreducible components is an open immersion.
@@ -31,7 +31,7 @@ public theorem isOpenImmersion_of_openCover_source_of_separated_of_genericPoints
 
 [Tag 09NH](https://stacks.math.columbia.edu/tag/09NH) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isOpenImmersion_res_of_isIso_stalkMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/LocalIsomorphism.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/LocalIsomorphism.lean#L81).
+**`AlgebraicGeometry.exists_isOpenImmersion_res_of_isIso_stalkMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/LocalIsomorphism.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/LocalIsomorphism.lean#L81).
 
 > **Stacks Project, Tag 09NH.** If the local-ring map of a locally finite-type morphism
 > is an isomorphism at `x`, and the target is reduced with finitely many irreducible
@@ -50,7 +50,7 @@ public theorem exists_isOpenImmersion_res_of_isIso_stalkMap
 
 [Tag 09NI](https://stacks.math.columbia.edu/tag/09NI) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAffineOpen_containing_image_of_genericPoints_injOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfStalks.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfStalks.lean#L420).
+**`AlgebraicGeometry.exists_isAffineOpen_containing_image_of_genericPoints_injOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfStalks.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfStalks.lean#L420).
 
 > **[Stacks, Tag 09NI].** Let `f : T ⟶ X` be a morphism of schemes with `T` affine and `X`
 > quasi-separated with finitely many generic points. If `f` carries the generic points of the
@@ -73,7 +73,7 @@ public theorem exists_isAffineOpen_containing_image_of_genericPoints_injOn
 
 [Tag 09NJ](https://stacks.math.columbia.edu/tag/09NJ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAffineOpen_containing_of_stalk_krullDimLE_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfDimensionOnePoints.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfDimensionOnePoints.lean#L179).
+**`AlgebraicGeometry.exists_isAffineOpen_containing_of_stalk_krullDimLE_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfDimensionOnePoints.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfDimensionOnePoints.lean#L179).
 
 > **[Stacks, Tag 09NJ]** A finite family of points on an integral separated scheme,
 > whose local rings are Noetherian of Krull dimension at most one, lies in a common affine open.
@@ -91,7 +91,7 @@ theorem exists_isAffineOpen_containing_of_stalk_krullDimLE_one
 
 [Tag 09NK](https://stacks.math.columbia.edu/tag/09NK) in the Stacks Project.
 
-**`Ideal.exists_lift_avoiding_primes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/AvoidingPrimes.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/AvoidingPrimes.lean#L33).
+**`Ideal.exists_lift_avoiding_primes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/AvoidingPrimes.lean, line 33](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Defs/AvoidingPrimes.lean#L33).
 
 > If an ideal is contained in none of a finite family of prime ideals, every
 > class modulo that ideal has a representative outside all of the primes.
@@ -107,7 +107,7 @@ public theorem exists_lift_avoiding_primes
 
 [Tag 09NM](https://stacks.math.columbia.edu/tag/09NM) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAffineOpen_containing_of_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfComponents.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfComponents.lean#L471).
+**`AlgebraicGeometry.exists_isAffineOpen_containing_of_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfComponents.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfComponents.lean#L471).
 
 > **[Stacks, Tag 09NM].** Let `X` be a scheme with finitely many irreducible components and
 > `T ⊆ X` a finite set of points. If for every irreducible component `Z` the set `T ∩ Z` is
@@ -130,7 +130,7 @@ public theorem exists_isAffineOpen_containing_of_components
 
 [Tag 09NN](https://stacks.math.columbia.edu/tag/09NN) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAffineOpen_containing_of_stalk_krullDimLE_one_of_finite_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfDimensionOnePointsFiniteComponents.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfDimensionOnePointsFiniteComponents.lean#L80).
+**`AlgebraicGeometry.exists_isAffineOpen_containing_of_stalk_krullDimLE_one_of_finite_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfDimensionOnePointsFiniteComponents.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/FindingAffineOpens/CommonAffineOpenOfDimensionOnePointsFiniteComponents.lean#L80).
 
 > **[Stacks, Tag 09NN]** Let `X` be a separated scheme such that every quasi-compact open of
 > `X` has finitely many irreducible components. A finite family of points of `X` whose local rings
@@ -153,4 +153,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.42, Tag 09NF](https://stacks.math.columbia.edu/tag/09NF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.17 Morphisms of finite type
 
-Section 101.17 of the Stacks Project, [Tag 06FR](https://stacks.math.columbia.edu/tag/06FR). 8 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.17 of the Stacks Project, [Tag 06FR](https://stacks.math.columbia.edu/tag/06FR). 8 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06FS, a definition
 
 [Tag 06FS](https://stacks.math.columbia.edu/tag/06FS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsLocallyOfFiniteType`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeAlgebraicStack.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeAlgebraicStack.lean#L56). The attribute's comment: “part (1): locally of finite type”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsLocallyOfFiniteType`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeAlgebraicStack.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeAlgebraicStack.lean#L56). The attribute's comment: “part (1): locally of finite type”.
 
 > A 1-morphism `f` of algebraic stacks over `S` is *locally of finite type* when every
 > 2-commutative square of algebraic spaces over `f` whose two vertical 1-morphisms are smooth and
@@ -25,7 +25,7 @@ Section 101.17 of the Stacks Project, [Tag 06FR](https://stacks.math.columbia.ed
 abbrev IsLocallyOfFiniteType {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsFiniteType`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeAlgebraicStack.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeAlgebraicStack.lean#L63). The attribute's comment: “part (2): finite type”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsFiniteType`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeAlgebraicStack.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeAlgebraicStack.lean#L63). The attribute's comment: “part (2): finite type”.
 
 > A 1-morphism of algebraic stacks over `S` is *of finite type* when it is locally of finite
 > type and quasi-compact.
@@ -38,7 +38,7 @@ abbrev IsFiniteType {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f : 𝒳 
 
 [Tag 06FT](https://stacks.math.columbia.edu/tag/06FT) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFiniteType_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean#L110). The attribute's comment: “locally of finite type”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFiniteType_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean#L110). The attribute's comment: “locally of finite type”.
 
 > **Stacks 06FT**, the local assertion. The composite of two 1-morphisms of algebraic stacks
 > over `S` which are locally of finite type is locally of finite type.
@@ -55,7 +55,7 @@ theorem isLocallyOfFiniteType_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w
     IsLocallyOfFiniteType B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFiniteType_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean#L127). The attribute's comment: “finite type”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFiniteType_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean#L127). The attribute's comment: “finite type”.
 
 > **Stacks 06FT**, the global assertion. The composite of two finite type 1-morphisms of
 > algebraic stacks over `S` is of finite type.
@@ -75,7 +75,7 @@ theorem isFiniteType_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w} B S hS}
 
 [Tag 06FU](https://stacks.math.columbia.edu/tag/06FU) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFiniteType_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitenessBaseChange.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FinitenessBaseChange.lean#L89). The attribute's comment: “locally of finite type”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFiniteType_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitenessBaseChange.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitenessBaseChange.lean#L89). The attribute's comment: “locally of finite type”.
 
 > **Stacks 06FU**, the local assertion. A base change of a 1-morphism of algebraic stacks over
 > `S` which is locally of finite type is locally of finite type: if `P` is a 2-fibre product of the
@@ -97,7 +97,7 @@ theorem isLocallyOfFiniteType_baseChange {𝒳 𝒴 𝒴' : Stack.AlgebraicStack
     IsLocallyOfFiniteType B S hS P.fst
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFiniteType_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitenessBaseChange.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FinitenessBaseChange.lean#L117). The attribute's comment: “finite type”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFiniteType_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitenessBaseChange.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitenessBaseChange.lean#L117). The attribute's comment: “finite type”.
 
 > **Stacks 06FU**, the global assertion. A base change of a finite type 1-morphism of algebraic
 > stacks over `S` is of finite type.
@@ -119,7 +119,7 @@ theorem isFiniteType_baseChange {𝒳 𝒴 𝒴' : Stack.AlgebraicStacks.{u, w} 
 
 [Tag 06FV](https://stacks.math.columbia.edu/tag/06FV) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFiniteType_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFiniteness.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFiniteness.lean#L99).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFiniteType_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFiniteness.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFiniteness.lean#L99).
 
 > **Stacks 06FV.** An immersion of algebraic stacks over `S` is locally of finite type.
 >
@@ -140,7 +140,7 @@ theorem isLocallyOfFiniteType_of_isImmersion
 
 [Tag 06R6](https://stacks.math.columbia.edu/tag/06R6) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyNoetherian_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianAlgebraicStack.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianAlgebraicStack.lean#L310).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyNoetherian_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianAlgebraicStack.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianAlgebraicStack.lean#L310).
 
 > **Stacks 06R6.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`. If `f` is
 > locally of finite type and `𝒴` is locally Noetherian, then `𝒳` is locally Noetherian. Local
@@ -170,7 +170,7 @@ theorem isLocallyNoetherian_of_isLocallyOfFiniteType
 
 [Tag 06U7](https://stacks.math.columbia.edu/tag/06U7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFiniteType_of_baseChange_algebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeFppfBaseChange.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeFppfBaseChange.lean#L123).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFiniteType_of_baseChange_algebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeFppfBaseChange.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeFppfBaseChange.lean#L123).
 
 > **Stacks 06U7.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` and let
 > `g : W ⟶ 𝒴` be surjective, flat and locally of finite presentation, where `W` is an algebraic
@@ -194,7 +194,7 @@ theorem isLocallyOfFiniteType_of_baseChange_algebraicSpace
 
 [Tag 06U8](https://stacks.math.columbia.edu/tag/06U8) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFiniteType_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeFppfDescent.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeFppfDescent.lean#L250).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFiniteType_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeFppfDescent.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeFppfDescent.lean#L250).
 
 > Let `f : 𝒳 ⟶ 𝒴` and `g : 𝒴 ⟶ 𝒵` be 1-morphisms of algebraic stacks over
 > `S`. If `f ≫ g` is locally of finite type and `f` is representable by algebraic spaces,
@@ -215,7 +215,7 @@ theorem isLocallyOfFiniteType_of_comp_of_fppf
 
 [Tag 06U9](https://stacks.math.columbia.edu/tag/06U9) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFiniteType_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismCancellation.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismCancellation.lean#L292).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFiniteType_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismCancellation.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismCancellation.lean#L292).
 
 > Let `f : 𝒳 ⟶ 𝒴` and `g : 𝒴 ⟶ 𝒵` be 1-morphisms of algebraic stacks over `S`. If `f ≫ g` is
 > locally of finite type, then so is `f`.
@@ -234,4 +234,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.17, Tag 06FR](https://stacks.math.columbia.edu/tag/06FR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

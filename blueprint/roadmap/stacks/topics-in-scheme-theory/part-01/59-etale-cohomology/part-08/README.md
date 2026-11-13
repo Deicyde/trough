@@ -2,10 +2,8 @@
 navigation: transparent
 ---
 
-# 59.99 Comparing big and small… to 59.107 Cohomology of the…
+# 59.101 Comparing fppf and étale… to 59.107 Cohomology of the…
 
-- [59.99 Comparing big and small topoi](59-99-comparing-big-and-small-topoi.md)
-- [59.100 Comparing fppf and étale topologies](59-100-comparing-fppf-and-etale-topologies.md)
 - [59.101 Comparing fppf and étale topologies: modules](59-101-comparing-fppf-and-etale-topologies-modul.md)
 - [59.102 Comparing ph and étale topologies](59-102-comparing-ph-and-etale-topologies.md)
 - [59.103 Comparing h and étale topologies](59-103-comparing-h-and-etale-topologies.md)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.25 Catenary algebraic spaces
 
-Section 68.25 of the Stacks Project, [Tag 0ED3](https://stacks.math.columbia.edu/tag/0ED3). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.25 of the Stacks Project, [Tag 0ED3](https://stacks.math.columbia.edu/tag/0ED3). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ED4, a definition
 
 [Tag 0ED4](https://stacks.math.columbia.edu/tag/0ED4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsCatenary`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean#L112).
+**`AlgebraicGeometry.Space.IsCatenary`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean#L112).
 
 > **Stacks 0ED4.** An algebraic space is catenary when its space of points, with the
 > topology of Tag 03BX, is a catenary topological space.
@@ -28,7 +28,7 @@ abbrev IsCatenary (X : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u)
 
 [Tag 0ED5](https://stacks.math.columbia.edu/tag/0ED5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.inducedDimensionValue_isDimensionFunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean#L192). The attribute's comment: “with decency read as condition (alpha) of Stacks 03JX”. References: SGA 6 X (1.5), “(1.5.2) is a dim. fn”.
+**`AlgebraicGeometry.Space.inducedDimensionValue_isDimensionFunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean#L192). The attribute's comment: “with decency read as condition (alpha) of Stacks 03JX”. References: SGA 6 X (1.5), “(1.5.2) is a dim. fn”.
 
 > **Stacks 0ED5.** Let `T` be an object of the big fppf site over `S` whose underlying
 > scheme is locally Noetherian and universally catenary, and let `δ` be a dimension function on
@@ -61,7 +61,7 @@ theorem inducedDimensionValue_isDimensionFunction
 
 [Tag 0ED6](https://stacks.math.columbia.edu/tag/0ED6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCatenary_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/Catenary.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/Catenary.lean#L182).
+**`AlgebraicGeometry.Space.isCatenary_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/Catenary.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/Catenary.lean#L182).
 
 > **Stacks 0ED6.** A decent algebraic space over `S` which is locally of finite type over an
 > object of the site whose scheme is locally Noetherian and universally catenary is catenary.
@@ -79,7 +79,7 @@ theorem isCatenary_of_isDecentSpace {T : BigFppfOver B S hS}
 
 [Tag 0ED7](https://stacks.math.columbia.edu/tag/0ED7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsUniversallyCatenary`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean#L119).
+**`AlgebraicGeometry.Space.IsUniversallyCatenary`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean#L119).
 
 > **Stacks 0ED7.** An algebraic space is universally catenary when every decent algebraic
 > space locally of finite type over it is catenary.
@@ -92,7 +92,7 @@ abbrev IsUniversallyCatenary (X : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 
 [Tag 0ED8](https://stacks.math.columbia.edu/tag/0ED8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isUniversallyCatenary_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean#L132).
+**`AlgebraicGeometry.Space.isUniversallyCatenary_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Catenary.lean#L132).
 
 > **Stacks 0ED8.** An algebraic space locally of finite type over a universally catenary
 > algebraic space is universally catenary.
@@ -114,7 +114,7 @@ theorem isUniversallyCatenary_of_isLocallyOfFiniteType
 
 [Tag 0ED9](https://stacks.math.columbia.edu/tag/0ED9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_dimensionFunction_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionFunction.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionFunction.lean#L133). The attribute's comment: “decency and local Noetherianity not needed”.
+**`AlgebraicGeometry.Space.exists_dimensionFunction_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionFunction.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DimensionFunction.lean#L133). The attribute's comment: “decency and local Noetherianity not needed”.
 
 > Let `q : Z ⟶ X` be a surjective finite morphism of algebraic spaces and let `δ` be a function
 > on the points of `X`. If the pullback of `δ` along the map on points of `q` is a dimension
@@ -138,4 +138,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.25, Tag 0ED3](https://stacks.math.columbia.edu/tag/0ED3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

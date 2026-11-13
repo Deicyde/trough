@@ -1,6 +1,6 @@
 # Probabilistic graphical models
 
-222 results of ATLAS's vault, 221 proved and 1 stated but not proved, in this branch's topics.
+222 results of ATLAS's vault, all proved, in this branch's topics.
 
 Bayesian networks and their Markov properties, structure scores and Markov equivalence, causal networks and adjustment, belief propagation and variable elimination, conditional random fields, hidden Markov models (forward-backward, Viterbi, Baum-Welch) and the Kalman filter.
 

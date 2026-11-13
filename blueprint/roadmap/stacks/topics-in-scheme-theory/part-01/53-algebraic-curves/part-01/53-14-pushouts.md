@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.curvePushoutSituation, AlgebraicGeometry.exists_curvePushoutCompletedLocalRing_isPullback
+lean: AlgebraicGeometry.curvePushoutSituation, AlgebraicGeometry.exists_pushout_of_curve, AlgebraicGeometry.exists_curvePushoutCompletedLocalRing_isPullback
 statement: formalized
 proof: formalized
 ---
 
 # 53.14 Pushouts
 
-Section 53.14 of the Stacks Project, [Tag 0E35](https://stacks.math.columbia.edu/tag/0E35). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 53.14 of the Stacks Project, [Tag 0E35](https://stacks.math.columbia.edu/tag/0E35). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E35, the section
 
 [Tag 0E35](https://stacks.math.columbia.edu/tag/0E35) in the Stacks Project.
 
-**`AlgebraicGeometry.curvePushoutSituation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Pushout.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Pushout.lean#L100). The attribute's comment: “the assumptions of More on Morphisms, Proposition 0E25 are satisfied”.
+**`AlgebraicGeometry.curvePushoutSituation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Pushout.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Pushout.lean#L101). The attribute's comment: “the verification that the assumptions of More on Morphisms, Proposition 0E25 are satisfied; the conclusions (1)-(7) are `AlgebraicGeometry.exists_pushout_of_curve`”.
 
 > **Stacks Project, Tag 0E35.** The four conditions of the section — `X` separated of finite
 > type over the field `k` of dimension `≤ 1`, `i` a closed immersion, `Z` and `Y` finite over
@@ -36,11 +36,47 @@ def curvePushoutSituation
     PushoutAlongClosedImmersionAndIntegralSituation.{u}
 ```
 
+**`AlgebraicGeometry.exists_pushout_of_curve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PushoutProperties.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/PushoutProperties.lean#L126).
+
+> **Stacks Project, Tag 0E35.** Let `k` be a field, `X` separated of finite type over `k` of
+> dimension `≤ 1`, `i : Z ⟶ X` a closed immersion, `Z` and `Y` finite over `Spec k` and
+> `j : Z ⟶ Y` surjective, all over `k`.  Then every finite set of points of `X` lies in an affine
+> open, and there is a scheme `P` over `k` with maps `a : X ⟶ P`, `b : Y ⟶ P` over `k` such that
+>
+> 1. the square `i, j, a, b` is a pushout in the category of schemes;
+> 2. `b` is a closed immersion;
+> 3. `a` is integral and surjective;
+> 4. `P` is separated over `k`;
+> 5. `P` is of finite type (locally of finite type and quasi-compact) over `k`;
+> 6. `a` is finite;
+> 7. if `X` is proper over `k`, then so is `P`.
+>
+> The pushout is the one of [Stacks Project, Tag 0E25] for the situation
+> `AlgebraicGeometry.curvePushoutSituation`; (2) and the integrality in (3) are part of 0E25,
+> (4) is [Stacks Project, Tag 0E26] and the local finite type in (5) is
+> [Stacks Project, Tag 0E27].
+
+```lean
+theorem exists_pushout_of_curve
+    (k : Type u) [Field k] {X Y Z : Scheme.{u}}
+    (pX : X ⟶ Spec (.of k)) (pY : Y ⟶ Spec (.of k)) (pZ : Z ⟶ Spec (.of k))
+    (i : Z ⟶ X) (j : Z ⟶ Y) (hi : i ≫ pX = pZ) (hj : j ≫ pY = pZ)
+    [IsSeparated pX] [LocallyOfFiniteType pX] [QuasiCompact pX]
+    (hdim : topologicalKrullDim X ≤ 1)
+    [IsClosedImmersion i] [IsFinite pY] [IsFinite pZ] [Surjective j] :
+    (∀ F : Finset X, ∃ U : X.Opens, IsAffineOpen U ∧ ∀ x ∈ F, x ∈ U) ∧
+    ∃ (P : Scheme.{u}) (a : X ⟶ P) (b : Y ⟶ P) (pP : P ⟶ Spec (.of k)),
+      IsPushout i j a b ∧ a ≫ pP = pX ∧ b ≫ pP = pY ∧
+      IsClosedImmersion b ∧ (IsIntegralHom a ∧ Surjective a) ∧
+      IsSeparated pP ∧ (LocallyOfFiniteType pP ∧ QuasiCompact pP) ∧ IsFinite a ∧
+      (IsProper pX → IsProper pP)
+```
+
 ## Tag 0E36, a lemma
 
 [Tag 0E36](https://stacks.math.columbia.edu/tag/0E36) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_curvePushoutCompletedLocalRing_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PushoutCompletedLocalRing.lean, line 1283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PushoutCompletedLocalRing.lean#L1283).
+**`AlgebraicGeometry.exists_curvePushoutCompletedLocalRing_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PushoutCompletedLocalRing.lean, line 1280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/PushoutCompletedLocalRing.lean#L1280).
 
 > **Stacks Project, Tag 0E36.**  Stated in the situation of [Stacks Project, Tag 0E35] itself:
 > `k` is a field, `X` is separated of finite type over `k` of dimension `≤ 1`, `i : Z ⟶ X` is a
@@ -117,4 +153,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.14, Tag 0E35](https://stacks.math.columbia.edu/tag/0E35)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

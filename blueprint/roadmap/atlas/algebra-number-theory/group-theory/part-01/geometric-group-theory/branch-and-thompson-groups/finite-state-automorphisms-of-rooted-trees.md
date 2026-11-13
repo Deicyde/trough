@@ -7,7 +7,7 @@ statement: formalized
 
 # Finite-state automorphisms of rooted trees
 
-17 results, 14 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html).
+17 results, 14 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html).
 
 ## Automorphism of the regular rooted tree
 
@@ -17,7 +17,7 @@ permutation $f$ of this set of words is a tree automorphism when, for all words 
 writing $|u|$ for the length of $u$ and $uv$ for the concatenation of $u$ and $v$, the word
 $f(u)$ has length $|u|$ and the first $|u|$ letters of $f(uv)$ form $f(u)$.
 
-Formalized by `MathlibExt.GroupTheory.FiniteStateConjugacyProblemKourovka16Problem34Wanted.IsTreeAut`, a definition declared in [WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#is-tree-aut).
+Formalized by `MathlibExt.GroupTheory.FiniteStateConjugacyProblemKourovka16Problem34Wanted.IsTreeAut`, a definition declared in [WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#is-tree-aut).
 
 ## Section of a map of the regular rooted tree at a vertex
 
@@ -27,7 +27,7 @@ $d$-regular rooted tree) and let $u$ be a word, of length $|u|$. The section (st
 $u$ is the map sending each word $w$ to the word obtained from $f(uw)$ by deleting its first
 $|u|$ letters, where $uw$ is the concatenation of $u$ and $w$.
 
-Formalized by `MathlibExt.GroupTheory.FiniteStateConjugacyProblemKourovka16Problem34Wanted.treeSection`, a definition declared in [WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#tree-section).
+Formalized by `MathlibExt.GroupTheory.FiniteStateConjugacyProblemKourovka16Problem34Wanted.treeSection`, a definition declared in [WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#tree-section).
 
 ## Finite-state automorphism of the regular rooted tree
 
@@ -36,7 +36,7 @@ permutation $f$ of the finite words over $\{0, \dots, d-1\}$ is a finite-state a
 the $d$-regular rooted tree when it is an automorphism of the tree and the sections of $f$ at
 all vertices $u$ form a finite set of maps.
 
-Formalized by `MathlibExt.GroupTheory.FiniteStateConjugacyProblemKourovka16Problem34Wanted.IsFiniteStateAut`, a definition declared in [WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#is-finite-state-aut).
+Formalized by `MathlibExt.GroupTheory.FiniteStateConjugacyProblemKourovka16Problem34Wanted.IsFiniteStateAut`, a definition declared in [WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#is-finite-state-aut).
 
 ## Value of a word in the generators
 
@@ -46,7 +46,7 @@ letters are pairs $(i, b)$ with $i < k$ and $b$ a boolean. The value of $w$ is t
 the group generated by $g_0, \dots, g_{k-1}$ obtained by multiplying, from left to right, $g_i$
 for each letter $(i, \mathrm{true})$ and $g_i^{-1}$ for each letter $(i, \mathrm{false})$.
 
-Formalized by `MathlibExt.GroupTheory.FiniteStateConjugacyProblemKourovka16Problem34Wanted.wordValue`, a definition declared in [WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#word-value).
+Formalized by `MathlibExt.GroupTheory.FiniteStateConjugacyProblemKourovka16Problem34Wanted.wordValue`, a definition declared in [WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#word-value).
 
 ## Kourovka Problem 16.34: conjugacy in finite-state automorphism groups
 
@@ -59,7 +59,7 @@ generated by $g_0, \dots, g_{k-1}$.
 
 The problem was posed by R. I. Grigorchuk, V. V. Nekrashevich and V. I. Sushchanskiĭ.
 
-Formalized by `MathlibExt.GroupTheory.FiniteStateConjugacyProblemKourovka16Problem34Wanted.finiteStateConjugacyDecidable`, a definition declared in [WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#finite-state-conjugacy-decidable).
+Formalized by `MathlibExt.GroupTheory.FiniteStateConjugacyProblemKourovka16Problem34Wanted.finiteStateConjugacyDecidable`, a definition declared in [WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#finite-state-conjugacy-decidable).
 
 ## Finite-state tree automorphism groups with undecidable conjugacy problem
 
@@ -78,7 +78,7 @@ always".
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 16.34 (R. I. Grigorchuk, V. V. Nekrashevich, V. I. Sushchanskiĭ); resolution: Z. Šunić and E. Ventura, The conjugacy problem in automaton groups is not solvable, J. Algebra 364 (2012), 148-154, arXiv:1010.1993, Theorem 1.1 (there exist automaton groups with unsolvable conjugacy problem; the examples are (free abelian)-by-free groups generated by finite self-similar sets of tree automorphisms); the Kourovka Notebook (21st issue) marks 16.34 solved (No, not always), https://arxiv.org/abs/1010.1993.
 
-Stated but not proved: `MathlibExt.GroupTheory.FiniteStateConjugacyProblemKourovka16Problem34Wanted.finiteStateConjugacyDecidable_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#finite-state-conjugacy-decidable-refuted).
+Stated but not proved: `MathlibExt.GroupTheory.FiniteStateConjugacyProblemKourovka16Problem34Wanted.finiteStateConjugacyDecidable_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateConjugacyProblemKourovka16Problem34Wanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#finite-state-conjugacy-decidable-refuted).
 
 ## Automorphisms of the regular rooted tree (Kourovka 16.85)
 
@@ -88,7 +88,7 @@ $d$-regular rooted tree. A permutation $f$ of $X^*$ is a tree automorphism when,
 and $v$, the word $f(u)$ has the same length $|u|$ as $u$ and the first $|u|$ letters of $f(uv)$
 form the word $f(u)$, where $uv$ denotes concatenation.
 
-Formalized by `MathlibExt.GroupTheory.FiniteStateFreeProductKourovka16Problem85Wanted.IsTreeAut`, a definition declared in [WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#is-tree-aut-2).
+Formalized by `MathlibExt.GroupTheory.FiniteStateFreeProductKourovka16Problem85Wanted.IsTreeAut`, a definition declared in [WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#is-tree-aut-2).
 
 ## Section of a permutation of the tree at a vertex (Kourovka 16.85)
 
@@ -98,7 +98,7 @@ $X^*$ and let $u \in X^*$, of length $|u|$. The section (state) of $f$ at $u$ is
 $X^* \to X^*$ sending a word $w$ to the word obtained from $f(uw)$ by deleting its first $|u|$
 letters (all of them if it has fewer), where $uw$ denotes concatenation.
 
-Formalized by `MathlibExt.GroupTheory.FiniteStateFreeProductKourovka16Problem85Wanted.treeSection`, a definition declared in [WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#tree-section-2).
+Formalized by `MathlibExt.GroupTheory.FiniteStateFreeProductKourovka16Problem85Wanted.treeSection`, a definition declared in [WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#tree-section-2).
 
 ## Finite-state automorphisms of the regular rooted tree (Kourovka 16.85)
 
@@ -107,7 +107,7 @@ number $d$, let $X^*$ be the set of finite words over $X = \{0, \dots, d-1\}$. A
 of $X^*$ is a finite-state automorphism when it is an automorphism of the $d$-regular rooted tree
 and its sections at the vertices $u \in X^*$ form a finite set of maps $X^* \to X^*$.
 
-Formalized by `MathlibExt.GroupTheory.FiniteStateFreeProductKourovka16Problem85Wanted.IsFiniteStateAut`, a definition declared in [WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#is-finite-state-aut-2).
+Formalized by `MathlibExt.GroupTheory.FiniteStateFreeProductKourovka16Problem85Wanted.IsFiniteStateAut`, a definition declared in [WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#is-finite-state-aut-2).
 
 ## Faithful actions by finite-state tree automorphisms
 
@@ -117,7 +117,7 @@ injective group homomorphism $\varphi$ from $G$ to the group of permutations of 
 words over $\{0, \dots, d-1\}$ such that $\varphi(g)$ is a finite-state automorphism of the
 $d$-regular rooted tree for every $g \in G$.
 
-Formalized by `MathlibExt.GroupTheory.FiniteStateFreeProductKourovka16Problem85Wanted.ActsFaithfullyByFiniteStateAuts`, a definition declared in [WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#acts-faithfully-by-finite-state-auts).
+Formalized by `MathlibExt.GroupTheory.FiniteStateFreeProductKourovka16Problem85Wanted.ActsFaithfullyByFiniteStateAuts`, a definition declared in [WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#acts-faithfully-by-finite-state-auts).
 
 ## Finite-state actions of free products (Kourovka Problem 16.85)
 
@@ -126,7 +126,7 @@ groups $G$ and $H$, if $G$ and $H$ each act faithfully on a regular rooted tree 
 automorphisms (the two trees may have different degrees), then so does their free product
 $G \ast H$.
 
-Formalized by `MathlibExt.GroupTheory.FiniteStateFreeProductKourovka16Problem85Wanted.finiteStateFreeProduct`, a definition declared in [WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#finite-state-free-product).
+Formalized by `MathlibExt.GroupTheory.FiniteStateFreeProductKourovka16Problem85Wanted.finiteStateFreeProduct`, a definition declared in [WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#finite-state-free-product).
 
 ## Fedorova–Oliynyk theorem (Kourovka Problem 16.85)
 
@@ -138,7 +138,7 @@ $G \ast H$ acts faithfully on some regular rooted tree by finite-state automorph
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 16.85 (V. I. Sushchanskiĭ); resolution: M. Fedorova and A. Oliynyk, Finite automaton actions of free products of groups, Algebra Discrete Math. 23 (2017), no. 2, 230-236, abstract (for groups G and H that act faithfully by finite state automorphisms on regular rooted trees, G ∗ H admits a faithful action by finite state automorphisms on some regular rooted tree) and Theorem 1 (FAut T_n ∗ FAut T_n is isomorphic to a subgroup of FAut T_3n); Kourovka Archive, Problem 16.85 (Yes, it can), https://admjournal.luguniv.edu.ua/index.php/adm/article/view/477.
 
-Stated but not proved: `MathlibExt.GroupTheory.FiniteStateFreeProductKourovka16Problem85Wanted.finiteStateFreeProduct_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#finite-state-free-product-holds).
+Stated but not proved: `MathlibExt.GroupTheory.FiniteStateFreeProductKourovka16Problem85Wanted.finiteStateFreeProduct_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateFreeProductKourovka16Problem85Wanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#finite-state-free-product-holds).
 
 ## Automorphisms of the regular rooted tree
 
@@ -151,7 +151,7 @@ words $v$ and $w$ there is a word $u$ of the same length as $w$ with $g(vw) = g(
 For a permutation of the words this says that $g$ preserves lengths and the prefix order, so it is
 an automorphism of the tree as a graph.
 
-Formalized by `MathlibExt.GroupTheory.FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.IsTreeAutomorphism`, a definition declared in [WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#is-tree-automorphism).
+Formalized by `MathlibExt.GroupTheory.FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.IsTreeAutomorphism`, a definition declared in [WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#is-tree-automorphism).
 
 ## Section of a word permutation at a vertex
 
@@ -162,7 +162,7 @@ deleting its first $|g(v)|$ letters, where $vw$ is the concatenation of $v$ and 
 the length of $g(v)$. When $g$ is a tree automorphism, the image of $w$ is the word $u$ with
 $g(vw) = g(v)u$.
 
-Formalized by `MathlibExt.GroupTheory.FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.treeSection`, a definition declared in [WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#tree-section-3).
+Formalized by `MathlibExt.GroupTheory.FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.treeSection`, a definition declared in [WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#tree-section-3).
 
 ## Finite-state automorphisms of a regular rooted tree
 
@@ -175,7 +175,7 @@ distinct sections.
 These automorphisms are closed under products and inverses, so the subgroup consists of exactly
 them.
 
-Formalized by `MathlibExt.GroupTheory.FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.finiteStateAutomorphisms`, a definition declared in [WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#finite-state-automorphisms).
+Formalized by `MathlibExt.GroupTheory.FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.finiteStateAutomorphisms`, a definition declared in [WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#finite-state-automorphisms).
 
 ## Kourovka Problem 16.86 (Sushchanskiĭ): irreducible generators of finite-state automorphism groups
 
@@ -184,7 +184,7 @@ groups.** The statement that for every integer $d \ge 2$ the group of finite-sta
 the $d$-regular rooted tree has an irreducible system of generators: a set $S$ of elements of the
 group that generates the group and no proper subset of which generates the group.
 
-Formalized by `MathlibExt.GroupTheory.FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.finiteStateAutomorphismsIrreducibleGenerators`, a definition declared in [WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#finite-state-automorphisms-irreducible-g).
+Formalized by `MathlibExt.GroupTheory.FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.finiteStateAutomorphismsIrreducibleGenerators`, a definition declared in [WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#finite-state-automorphisms-irreducible-g).
 
 ## Lavrenyuk's theorem on irreducible generators of finite-state automorphism groups
 
@@ -197,7 +197,7 @@ no proper subset of which generates the group.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 16.86 (V. I. Sushchanskiĭ); resolution: Ya. Lavrenyuk, The group of all finite-state automorphisms of a regular rooted tree has a minimal generating set, Geom. Dedicata 183 (2016), 59-67 (preprint: Minimal generating sets in wreath products, arXiv:1210.0150), arXiv:1210.0150, Theorem 3.8 (for a regular rooted tree over any alphabet of at least two letters, the group of finite-state automorphisms has a minimal generating set); Kourovka Archive, Problem 16.86 (Yes, it does), https://arxiv.org/abs/1210.0150.
 
-Stated but not proved: `MathlibExt.GroupTheory.FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.finiteStateAutomorphismsIrreducibleGenerators_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#finite-state-automorphisms-irreducible-g-2).
+Stated but not proved: `MathlibExt.GroupTheory.FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.finiteStateAutomorphismsIrreducibleGenerators_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FiniteStateIrreducibleGeneratorsKourovka16Problem86Wanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html#finite-state-automorphisms-irreducible-g-2).
 
 ## Depends on
 
@@ -206,4 +206,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Finite-state automorphisms of rooted trees](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/geometric-group-theory/branch-and-thompson-groups/finite-state-automorphisms-of-rooted-trees)

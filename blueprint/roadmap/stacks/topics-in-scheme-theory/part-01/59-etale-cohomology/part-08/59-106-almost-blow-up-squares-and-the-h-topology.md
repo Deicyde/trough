@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.106 Almost blow up squares and the h topology
 
-Section 59.106 of the Stacks Project, [Tag 0EWL](https://stacks.math.columbia.edu/tag/0EWL). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.106 of the Stacks Project, [Tag 0EWL](https://stacks.math.columbia.edu/tag/0EWL). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EWM, an equation
 
 [Tag 0EWM](https://stacks.math.columbia.edu/tag/0EWM) in the Stacks Project.
 
-**`AlgebraicGeometry.IsAlmostBlowUpSquare`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/Basic.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/Basic.lean#L44).
+**`AlgebraicGeometry.IsAlmostBlowUpSquare`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/Basic.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/Basic.lean#L44).
 
 > An almost blowup square with centre `I.subscheme` and modification `b`. The exceptional
 > closed subscheme is `(I.comap b).subscheme`.
@@ -28,7 +28,7 @@ public structure IsAlmostBlowUpSquare {X X' : Scheme.{u}}
 
 [Tag 0EWN](https://stacks.math.columbia.edu/tag/0EWN) in the Stacks Project.
 
-**`AlgebraicGeometry.isCSquareIso_of_essImage_almostBlowUpSquare_bigH`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/DerivedHDescent.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/DerivedHDescent.lean#L149).
+**`AlgebraicGeometry.isCSquareIso_of_essImage_almostBlowUpSquare_bigH`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/DerivedHDescent.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/DerivedHDescent.lean#L149).
 
 > **Stacks 0EWN.** Let `J' ≤ J` be a topology coarser than the h topology on the big h
 > category over `S` — the fppf topology in the source — and let `𝒪` be a sheaf of rings for the h
@@ -78,7 +78,7 @@ theorem isCSquareIso_of_essImage_almostBlowUpSquare_bigH
 
 [Tag 0EWQ](https://stacks.math.columbia.edu/tag/0EWQ) in the Stacks Project.
 
-**`AlgebraicGeometry.isCSquareIso_of_essImage_affineAlmostBlowUp_bigH`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/AffineAlmostBlowUpCriterion.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/AffineAlmostBlowUpCriterion.lean#L171). The attribute's comment: “only if”.
+**`AlgebraicGeometry.isCSquareIso_of_essImage_affineAlmostBlowUp_bigH`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/AffineAlmostBlowUpCriterion.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/AffineAlmostBlowUpCriterion.lean#L171). The attribute's comment: “only if”.
 
 > **Stacks 0EWQ, the direction "only if".** Let `J' ≤ J` be a topology coarser than the h
 > topology on the big h category over `S` and let `𝒪` be a sheaf of rings for the h topology, so
@@ -110,7 +110,7 @@ theorem isCSquareIso_of_essImage_affineAlmostBlowUp_bigH
         sq.square).IsCSquareIso K
 ```
 
-**`AlgebraicGeometry.essImage_iff_forall_isCSquareIso_affineAlmostBlowUp_bigH`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/AffineAlmostBlowUpCriterion.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/AffineAlmostBlowUpCriterion.lean#L280). The attribute's comment: “the iff, given the detection hypothesis”.
+**`AlgebraicGeometry.essImage_iff_forall_isCSquareIso_affineAlmostBlowUp_bigH`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/AffineAlmostBlowUpCriterion.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/AffineAlmostBlowUpCriterion.lean#L280). The attribute's comment: “the iff, given the detection hypothesis”.
 
 > **Stacks 0EWQ.** Let `J' ≤ J` be a topology coarser than the h topology on the big h category
 > over `S` and let `𝒪` be a sheaf of rings for the h topology, so that the identity functor is a
@@ -152,7 +152,7 @@ theorem essImage_iff_forall_isCSquareIso_affineAlmostBlowUp_bigH
         sq.square).IsCSquareIso K
 ```
 
-**`AlgebraicGeometry.essImage_iff_forall_isCSquareIso_affineAlmostBlowUp_fppf_bigH`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/AffineAlmostBlowUpFppfCriterion.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/AffineAlmostBlowUpFppfCriterion.lean#L234).
+**`AlgebraicGeometry.essImage_iff_forall_isCSquareIso_affineAlmostBlowUp_fppf_bigH`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/AffineAlmostBlowUpFppfCriterion.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/AffineAlmostBlowUpFppfCriterion.lean#L234).
 
 > **Stacks 0EWQ.** Let `𝒪` be a sheaf of rings for the h topology on the big h category over
 > `S`, and let `ε : (C_h, 𝒪_h) ⟶ (C_{fppf}, 𝒪_{fppf})` be the comparison of ringed sites given by
@@ -177,7 +177,7 @@ theorem essImage_iff_forall_isCSquareIso_affineAlmostBlowUp_fppf_bigH :
 
 [Tag 0EWR](https://stacks.math.columbia.edu/tag/0EWR) in the Stacks Project.
 
-**`AlgebraicGeometry.essImage_iff_forall_isCSquareIso_generatorAlmostBlowUp_fppf_bigH`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/GeneratorAlmostBlowUpFppfCriterion.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/GeneratorAlmostBlowUpFppfCriterion.lean#L250).
+**`AlgebraicGeometry.essImage_iff_forall_isCSquareIso_generatorAlmostBlowUp_fppf_bigH`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/GeneratorAlmostBlowUpFppfCriterion.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/GeneratorAlmostBlowUpFppfCriterion.lean#L250).
 
 > **Stacks 0EWR.** Let `𝒪` be a sheaf of rings for the h topology on the big h category over
 > `S`, and let `ε : (C_h, 𝒪_h) ⟶ (C_{fppf}, 𝒪_{fppf})` be the comparison of ringed sites given by
@@ -199,7 +199,7 @@ theorem essImage_iff_forall_isCSquareIso_generatorAlmostBlowUp_fppf_bigH :
       (GeneratorAlmostBlowUpSquare.toAffineAlmostBlowUpSquare (B := B) (S := S) (hS := hS))
 ```
 
-**`AlgebraicGeometry.isCSquareIso_of_essImage_principalCenterModelPair_bigH`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/PrincipalCenterHDescent.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/PrincipalCenterHDescent.lean#L233). The attribute's comment: “only if, for the almost blow up squares of More on Flatness, Example 0EVG”.
+**`AlgebraicGeometry.isCSquareIso_of_essImage_principalCenterModelPair_bigH`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/PrincipalCenterHDescent.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/PrincipalCenterHDescent.lean#L233). The attribute's comment: “only if, for the almost blow up squares of More on Flatness, Example 0EVG”.
 
 > **Stacks 0EWR, the "only if" direction for the almost blow up squares of More on Flatness,
 > Example 0EVG.** Let `J' ≤ J` be a topology coarser than the h topology on the big h category
@@ -252,4 +252,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.106, Tag 0EWL](https://stacks.math.columbia.edu/tag/0EWL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

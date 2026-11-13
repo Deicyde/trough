@@ -8,7 +8,7 @@ proof: formalized
 
 # 94.8 Categories fibred in groupoids representable by algebraic spaces
 
-Section 94.8 of the Stacks Project, [Tag 02ZV](https://stacks.math.columbia.edu/tag/02ZV). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 94.8 of the Stacks Project, [Tag 02ZV](https://stacks.math.columbia.edu/tag/02ZV). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02ZV, the section
 
@@ -16,17 +16,17 @@ Section 94.8 of the Stacks Project, [Tag 02ZV](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Stack.IsRepresentableByAlgebraicSpace`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Representability.lean#L66), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean#L35) (StacksFrontier): “representable by an algebraic space”.
-- [`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_of_isRepresentableCFG`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaAlgebraicSpaceSources.lean#L120), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean#L37) (StacksFrontier): “a representable category fibred in groupoids is representable by an algebraic space”.
-- [`AlgebraicGeometry.isRepresentableByAlgebraicSpace_iff`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableBySpace/Characterization.lean#L600), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean#L39) (StacksFrontier): “characterization by setoid fibres”.
-- [`AlgebraicGeometry.Stack.morphismSpaceEquiv`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean#L72), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean#L41) (StacksFrontier): “1-morphisms up to 2-isomorphism are morphisms of algebraic spaces”.
-- [`AlgebraicGeometry.Stack.existsUnique_twoIso_of_morphismSpaceEquiv_eq`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean#L177), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean#L43) (StacksFrontier): “uniqueness of the 1-morphism up to unique 2-isomorphism”.
+- [`AlgebraicGeometry.Stack.IsRepresentableByAlgebraicSpace`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Representability.lean#L66), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean, line 35](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean#L35) (StacksFrontier): “representable by an algebraic space”.
+- [`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_of_isRepresentableCFG`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaAlgebraicSpaceSources.lean#L120), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean#L37) (StacksFrontier): “a representable category fibred in groupoids is representable by an algebraic space”.
+- [`AlgebraicGeometry.isRepresentableByAlgebraicSpace_iff`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableBySpace/Characterization.lean#L600), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean#L39) (StacksFrontier): “characterization by setoid fibres”.
+- [`AlgebraicGeometry.Stack.morphismSpaceEquiv`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean#L72), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean#L41) (StacksFrontier): “1-morphisms up to 2-isomorphism are morphisms of algebraic spaces”.
+- [`AlgebraicGeometry.Stack.existsUnique_twoIso_of_morphismSpaceEquiv_eq`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean#L177), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableByAlgebraicSpacesSection.lean#L43) (StacksFrontier): “uniqueness of the 1-morphism up to unique 2-isomorphism”.
 
 ## Tag 04SV, a definition
 
 [Tag 04SV](https://stacks.math.columbia.edu/tag/04SV) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsRepresentableByAlgebraicSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Representability.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Representability.lean#L66).
+**`AlgebraicGeometry.Stack.IsRepresentableByAlgebraicSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Representability.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Representability.lean#L66).
 
 > **Stacks 04SV.** A category fibred in groupoids over the big fppf site of `S` is
 > *represented by an algebraic space* over `S` if it is equivalent, over that site, to the
@@ -42,7 +42,7 @@ abbrev IsRepresentableByAlgebraicSpace
 
 [Tag 02ZX](https://stacks.math.columbia.edu/tag/02ZX) in the Stacks Project.
 
-**`AlgebraicGeometry.isRepresentableByAlgebraicSpace_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableBySpace/Characterization.lean, line 600](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableBySpace/Characterization.lean#L600).
+**`AlgebraicGeometry.isRepresentableByAlgebraicSpace_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableBySpace/Characterization.lean, line 600](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableBySpace/Characterization.lean#L600).
 
 > **Stacks 02ZX.** A category fibred in groupoids over the big fppf site
 > is represented by an algebraic space precisely when its fibres are setoids
@@ -60,7 +60,7 @@ public theorem isRepresentableByAlgebraicSpace_iff
 
 [Tag 04SW](https://stacks.math.columbia.edu/tag/04SW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.morphismSpaceEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean#L72). The attribute's comment: “equivalence of morphism spaces”.
+**`AlgebraicGeometry.Stack.morphismSpaceEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean#L72). The attribute's comment: “equivalence of morphism spaces”.
 
 > **Stacks 04SW.** One-morphisms of categories fibred in groupoids represented by `F` and `G`,
 > modulo two-isomorphism, are morphisms `F ⟶ G` of the representing presheaves.
@@ -74,7 +74,7 @@ noncomputable def morphismSpaceEquiv
     Quotient (Functor.twoIsoSetoid 𝒳.val.p 𝒴.val.p) ≃ (F ⟶ G)
 ```
 
-**`AlgebraicGeometry.Stack.morphismSpaceEquiv_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean#L109). The attribute's comment: “induced map on fibre isomorphism classes”.
+**`AlgebraicGeometry.Stack.morphismSpaceEquiv_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean#L109). The attribute's comment: “induced map on fibre isomorphism classes”.
 
 > **Stacks 04SW.** On every fibre, the forward direction of
 > `AlgebraicGeometry.Stack.morphismSpaceEquiv` is the map induced by the given one-morphism on
@@ -104,7 +104,7 @@ theorem morphismSpaceEquiv_map
           (presheafOfCategories (G ⋙ typeToCat)).p.Fiber U))
 ```
 
-**`AlgebraicGeometry.Stack.existsUnique_twoIso_of_morphismSpaceEquiv_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean#L177). The attribute's comment: “uniqueness up to unique two-isomorphism”.
+**`AlgebraicGeometry.Stack.existsUnique_twoIso_of_morphismSpaceEquiv_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpace.lean#L177). The attribute's comment: “uniqueness up to unique two-isomorphism”.
 
 > **Stacks 04SW.** Two one-morphisms inducing the same morphism of representing presheaves
 > admit a unique two-isomorphism over the site.
@@ -122,7 +122,7 @@ theorem existsUnique_twoIso_of_morphismSpaceEquiv_eq
       ∀ x : 𝒳.val.obj, 𝒴.val.p.IsHomLift (𝟙 (𝒳.val.p.obj x)) (α.hom.app x)
 ```
 
-**`AlgebraicGeometry.Space.eq_inducedSpacesHom_iff_forall_sectionOfObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpaceInduced.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpaceInduced.lean#L199). The attribute's comment: “the morphism of algebraic spaces determined by a 1-morphism, characterised on named sections”.
+**`AlgebraicGeometry.Space.eq_inducedSpacesHom_iff_forall_sectionOfObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpaceInduced.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpaceInduced.lean#L199). The attribute's comment: “the morphism of algebraic spaces determined by a 1-morphism, characterised on named sections”.
 
 > **Stacks 04SW.** A morphism `g : X ⟶ Y` of algebraic spaces is the one determined by a
 > 1-morphism `f : 𝒳 ⥤ 𝒴` over the site if and only if it carries the section of `X` named by every
@@ -156,7 +156,7 @@ theorem eq_inducedSpacesHom_iff_forall_sectionOfObj
             ((Functor.congr_obj hf z).trans h)
 ```
 
-**`AlgebraicGeometry.Stack.morphismSpaceEquiv_eq_inducedSpaceMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpaceInduced.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpaceInduced.lean#L241). The attribute's comment: “the bijection is the morphism of representing presheaves induced by the 1-morphism”.
+**`AlgebraicGeometry.Stack.morphismSpaceEquiv_eq_inducedSpaceMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpaceInduced.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpaceInduced.lean#L241). The attribute's comment: “the bijection is the morphism of representing presheaves induced by the 1-morphism”.
 
 > **Stacks 04SW.** The bijection of morphism spaces takes the 2-isomorphism class of a
 > 1-morphism `Φ : 𝒳 ⥤ 𝒴` over the site to the morphism of representing presheaves that `Φ`
@@ -188,7 +188,7 @@ theorem morphismSpaceEquiv_eq_inducedSpaceMap
       Space.inducedSpaceMap B S hS F G 𝒳.val.p 𝒴.val.p eX eY Φ.1 Φ.2
 ```
 
-**`AlgebraicGeometry.Stack.morphismSpaceEquiv_app_sectionOfObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpaceSections.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpaceSections.lean#L68). The attribute's comment: “value of the induced morphism on a named section”.
+**`AlgebraicGeometry.Stack.morphismSpaceEquiv_app_sectionOfObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpaceSections.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MorphismSpaceSections.lean#L68). The attribute's comment: “value of the induced morphism on a named section”.
 
 > **Stacks 04SW.** The morphism `F ⟶ G` of representing presheaves induced by a 1-morphism `Φ`
 > over the site carries the section of `F` named by an object `z` of `𝒳` to the section of `G`
@@ -210,4 +210,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 94.8, Tag 02ZV](https://stacks.math.columbia.edu/tag/02ZV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

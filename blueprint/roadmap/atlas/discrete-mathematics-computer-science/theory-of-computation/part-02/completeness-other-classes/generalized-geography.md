@@ -7,7 +7,7 @@ statement: formalized
 
 # Generalized geography
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/completeness-other-classes/generalized-geography/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/completeness-other-classes/generalized-geography/index.html).
 
 ## Winning positions in Geography
 
@@ -23,7 +23,7 @@ Read as a game, the player to move wins when they can move the token along an ed
 vertex not in $V$ from which the opponent does not win; a player with no such move, or with no
 fuel left, loses.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GeographyPSPACEComplete.GeoWins`, a definition declared in [WantedExt/Complexity/KeyTheorems/GeographyPSPACECompleteWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/GeographyPSPACECompleteWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/completeness-other-classes/generalized-geography/index.html#geo-wins).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GeographyPSPACEComplete.GeoWins`, a definition declared in [WantedExt/Complexity/KeyTheorems/GeographyPSPACECompleteWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/GeographyPSPACECompleteWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/completeness-other-classes/generalized-geography/index.html#geo-wins).
 
 ## Geography as a decision problem
 
@@ -38,7 +38,7 @@ A play never revisits one of the $n$ vertices, so the fuel $n + 1$ never runs ou
 says that the player who moves first wins Geography on the directed graph with vertices
 $0, \ldots, n - 1$ and edge list $E$, with the token starting on $s$ and $s$ marked visited.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GeographyPSPACEComplete.geographyDec`, a definition declared in [WantedExt/Complexity/KeyTheorems/GeographyPSPACECompleteWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/GeographyPSPACECompleteWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/completeness-other-classes/generalized-geography/index.html#geography-dec).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.GeographyPSPACEComplete.geographyDec`, a definition declared in [WantedExt/Complexity/KeyTheorems/GeographyPSPACECompleteWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/GeographyPSPACECompleteWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/completeness-other-classes/generalized-geography/index.html#geography-dec).
 
 ## Geography is PSPACE-complete
 
@@ -49,7 +49,7 @@ decision problem in PSPACE has a polynomial-time many-one reduction to it.
 
 - T. J. Schaefer, "On the complexity of some two- person perfect-information games", Journal of Computer and System Sciences 16 (1978), 185-225.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.GeographyPSPACEComplete.geography_pspace_complete` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/GeographyPSPACECompleteWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/GeographyPSPACECompleteWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/completeness-other-classes/generalized-geography/index.html#geography-pspace-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.GeographyPSPACEComplete.geography_pspace_complete` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/GeographyPSPACECompleteWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/GeographyPSPACECompleteWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/completeness-other-classes/generalized-geography/index.html#geography-pspace-complete).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized geography](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/completeness-other-classes/generalized-geography/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/completeness-other-classes/generalized-geography)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/completeness-other-classes/generalized-geography)

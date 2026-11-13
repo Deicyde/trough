@@ -8,13 +8,13 @@ proof: formalized
 
 # 39.24 Finite flat groupoids
 
-Section 39.24 of the Stacks Project, [Tag 03JD](https://stacks.math.columbia.edu/tag/03JD). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 39.24 of the Stacks Project, [Tag 03JD](https://stacks.math.columbia.edu/tag/03JD). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03JE, a lemma
 
 [Tag 03JE](https://stacks.math.columbia.edu/tag/03JE) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.exists_invariant_affine_open_of_orbit_subset_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/InvariantAffineOpen.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/InvariantAffineOpen.lean#L351). References: SGA 1 V (1.8), “orbit⊂affine⇒inv affine”.
+**`AlgebraicGeometry.GroupoidScheme.exists_invariant_affine_open_of_orbit_subset_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/InvariantAffineOpen.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/InvariantAffineOpen.lean#L351). References: SGA 1 V (1.8), “orbit⊂affine⇒inv affine”.
 
 > **Stacks Project, Tag 03JE.** In a groupoid scheme with finite locally free source and
 > target maps, a point whose orbit is contained in an affine open has an invariant affine open
@@ -30,7 +30,7 @@ theorem exists_invariant_affine_open_of_orbit_subset_affine {S : Scheme.{u}}
     ∃ V : G.objects.left.Opens, IsAffineOpen V ∧ x ∈ V ∧ IsInvariantOpen G V
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.exists_isInvariantOpen_isAffineOpen_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/InvariantAffineOpen.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/InvariantAffineOpen.lean#L160). References: SGA 1 V (1.8), “orbit⊂affine⇒inv affine”.
+**`AlgebraicGeometry.GroupoidScheme.exists_isInvariantOpen_isAffineOpen_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/InvariantAffineOpen.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/InvariantAffineOpen.lean#L160). References: SGA 1 V (1.8), “orbit⊂affine⇒inv affine”.
 
 > **Stacks Project, Tag 03JE.** Let `(U, R, s, t, c)` be a groupoid scheme with `s` and `t`
 > finite locally free, and let `u` be a point of `U` whose equivalence class `t(s⁻¹({u}))` is
@@ -57,4 +57,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 39.24, Tag 03JD](https://stacks.math.columbia.edu/tag/03JD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

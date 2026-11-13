@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.32 More on Koszul regular sequences
 
-Section 15.32 of the Stacks Project, [Tag 0CEN](https://stacks.math.columbia.edu/tag/0CEN). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.32 of the Stacks Project, [Tag 0CEN](https://stacks.math.columbia.edu/tag/0CEN). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G6L, a lemma
 
 [Tag 0G6L](https://stacks.math.columbia.edu/tag/0G6L) in the Stacks Project.
 
-**`Cech.cechComplex_homology_isZero_of_isKoszulRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cech/KoszulResolution.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Cech/KoszulResolution.lean#L233).
+**`Cech.cechComplex_homology_isZero_of_isKoszulRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cech/KoszulResolution.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Cech/KoszulResolution.lean#L233).
 
 > The extended alternating Čech complex of a Koszul-regular sequence has zero cohomology in
 > every degree other than the length of the sequence.
@@ -30,7 +30,7 @@ public theorem cechComplex_homology_isZero_of_isKoszulRegular
 
 [Tag 0BIQ](https://stacks.math.columbia.edu/tag/0BIQ) in the Stacks Project.
 
-**`Koszul.exists_affineBlowup_algEquiv_mvPolynomial_quotient_of_isH1Regular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Blowup.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Blowup.lean#L199).
+**`Koszul.exists_affineBlowup_algEquiv_mvPolynomial_quotient_of_isH1Regular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Blowup.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Blowup.lean#L199).
 
 > **Stacks Project, Tag 0BIQ.** The affine blowup algebra associated to an `H₁`-regular
 > sequence is the polynomial algebra on the ratios of the remaining terms by the first term,
@@ -52,7 +52,7 @@ public theorem exists_affineBlowup_algEquiv_mvPolynomial_quotient_of_isH1Regular
 
 [Tag 063Q](https://stacks.math.columbia.edu/tag/063Q) in the Stacks Project.
 
-**`KoszulH1.cmp_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/H1BaseChange.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/H1BaseChange.lean#L383).
+**`KoszulH1.cmp_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/H1BaseChange.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/H1BaseChange.lean#L382).
 
 > **Stacks Project, Tag 063Q.**  Let `A → B` be a ring map and `f_1, …, f_r` a
 > sequence in `B` such that `B/(f_1, …, f_r)` is flat as an `A`-module.  Let
@@ -78,7 +78,7 @@ theorem cmp_surjective
 
 [Tag 0CEP](https://stacks.math.columbia.edu/tag/0CEP) in the Stacks Project.
 
-**`Koszul.quasiRegular_and_h1Regular_baseChange_of_quotient_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/FlatQuotient.lean, line 640](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/FlatQuotient.lean#L640).
+**`Koszul.quasiRegular_and_h1Regular_baseChange_of_quotient_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/FlatQuotient.lean, line 640](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/FlatQuotient.lean#L640).
 
 > **Stacks Project, Tag 0CEP.** Suppose that `B / (f₁, …, fᵣ)` is flat over `A`. If `f` is
 > quasi-regular, then its image in `B ⊗[A] A'` is quasi-regular; if `f` is H₁-regular, then its
@@ -100,7 +100,7 @@ public theorem quasiRegular_and_h1Regular_baseChange_of_quotient_flat
 
 [Tag 0CEQ](https://stacks.math.columbia.edu/tag/0CEQ) in the Stacks Project.
 
-**`Koszul.flat_quotient_span_of_isQuasiRegular_of_locallyNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/FlatQuotient.lean, line 866](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/FlatQuotient.lean#L866).
+**`Koszul.flat_quotient_span_of_isQuasiRegular_of_locallyNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/FlatQuotient.lean, line 866](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/FlatQuotient.lean#L866).
 
 > **Stacks Project, Tag 0CEQ.** A flat, finitely presented algebra remains flat after quotienting
 > by lifts of a quasi-regular sequence whose reduced quotient is flat.
@@ -123,7 +123,7 @@ public theorem flat_quotient_span_of_isQuasiRegular_of_locallyNilpotent
 
 [Tag 0CER](https://stacks.math.columbia.edu/tag/0CER) in the Stacks Project.
 
-**`Koszul.smooth_quotient_span_of_isQuasiRegular_of_locallyNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/FlatQuotient.lean, line 950](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/FlatQuotient.lean#L950).
+**`Koszul.smooth_quotient_span_of_isQuasiRegular_of_locallyNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/FlatQuotient.lean, line 950](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/FlatQuotient.lean#L950).
 
 > **Stacks Project, Tag 0CER.** A flat, finitely presented algebra remains smooth after
 > quotienting by lifts of a quasi-regular sequence whose reduced quotient is smooth.
@@ -149,4 +149,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.32, Tag 0CEN](https://stacks.math.columbia.edu/tag/0CEN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

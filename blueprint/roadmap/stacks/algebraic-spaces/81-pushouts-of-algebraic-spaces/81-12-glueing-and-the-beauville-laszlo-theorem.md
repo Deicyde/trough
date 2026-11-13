@@ -8,13 +8,13 @@ proof: formalized
 
 # 81.12 Glueing and the Beauville-Laszlo theorem
 
-Section 81.12 of the Stacks Project, [Tag 0F9M](https://stacks.math.columbia.edu/tag/0F9M). 7 tags here are carried by 28 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 81.12 of the Stacks Project, [Tag 0F9M](https://stacks.math.columbia.edu/tag/0F9M). 7 tags here are carried by 28 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F9N, an equation
 
 [Tag 0F9N](https://stacks.math.columbia.edu/tag/0F9N) in the Stacks Project.
 
-**`BeauvilleLaszlo.Space.beauvilleLaszloGlueingSpaces`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueing.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueing.lean#L303).
+**`BeauvilleLaszlo.Space.beauvilleLaszloGlueingSpaces`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueing.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueing.lean#L303).
 
 > The canonical functor from spaces over `X` to cartesian gluing triples, including its natural
 > comparison with all three base changes and the two induced arrows.
@@ -36,7 +36,7 @@ noncomputable def beauvilleLaszloGlueingSpaces
 
 [Tag 0F9P](https://stacks.math.columbia.edu/tag/0F9P) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_etaleCovering_iff_isGlueable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/BeauvilleLaszlo.lean, line 804](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/BeauvilleLaszlo.lean#L804).
+**`AlgebraicGeometry.Space.exists_etaleCovering_iff_isGlueable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/BeauvilleLaszlo.lean, line 800](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/BeauvilleLaszlo.lean#L800).
 
 > Glueability of an algebraic space can be checked on all affine schemes
 > étale over it, or on one étale covering by affine schemes.
@@ -63,7 +63,7 @@ theorem exists_etaleCovering_iff_isGlueable
 
 [Tag 0F9Q](https://stacks.math.columbia.edu/tag/0F9Q) in the Stacks Project.
 
-**`BeauvilleLaszlo.Space.isAffineSpace_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffine.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffine.lean#L110). The attribute's comment: “the functor restricts to the affine subcategories”.
+**`BeauvilleLaszlo.Space.isAffineSpace_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffine.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffine.lean#L110). The attribute's comment: “the functor restricts to the affine subcategories”.
 
 > **The gluing functor of Stacks 0F9N takes affine algebraic spaces to triples with affine
 > components.** All four schemes of the square are assumed affine, as they are in the
@@ -86,7 +86,7 @@ theorem isAffineSpace_components
     affineComponents B U' U X' hU' hU hX' gU gX' (G.functor.obj Y)
 ```
 
-**`BeauvilleLaszlo.Space.canonicalAffineGlueableRestriction_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffineCanonicalEquivalence.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffineCanonicalEquivalence.lean#L63).
+**`BeauvilleLaszlo.Space.canonicalAffineGlueableRestriction_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffineCanonicalEquivalence.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffineCanonicalEquivalence.lean#L63).
 
 > **Stacks 0F9Q.** For a Beauville--Laszlo glueing pair `(g : R → R', f)`, the glueing functor
 > of Stacks 0F9N restricts to an **equivalence** between the category of affine algebraic spaces
@@ -108,7 +108,7 @@ theorem canonicalAffineGlueableRestriction_isEquivalence {R R' : Type u} [CommRi
     (canonicalAffineGlueableRestriction g f B hU' hU hX' hX hcomm).IsEquivalence
 ```
 
-**`BeauvilleLaszlo.Space.beauvilleLaszloAffineEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffineEquivalence.lean, line 1015](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffineEquivalence.lean#L1015).
+**`BeauvilleLaszlo.Space.beauvilleLaszloAffineEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffineEquivalence.lean, line 1015](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffineEquivalence.lean#L1015).
 
 > **Stacks 0F9Q.** The glueing functor of Stacks 0F9N restricts to an equivalence between the
 > affine algebraic spaces over `X = Spec R` which are glueable for the pair `(R → R', f)` and the
@@ -143,7 +143,7 @@ noncomputable def beauvilleLaszloAffineEquivalence (f : R)
         (specSite_square_comm f B hU' hU hX' hX)).functor
 ```
 
-**`BeauvilleLaszlo.Space.essSurj_affineGlueableRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffineEssSurj.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffineEssSurj.lean#L276). The attribute's comment: “the restricted functor is essentially surjective”.
+**`BeauvilleLaszlo.Space.essSurj_affineGlueableRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffineEssSurj.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingAffineEssSurj.lean#L276). The attribute's comment: “the restricted functor is essentially surjective”.
 
 > **Stacks 0F9Q, the essential surjectivity clause.** The restriction of a glueing functor of
 > Stacks 0F9N to the affine algebraic spaces over `Spec R` which are glueable for the pair is
@@ -175,7 +175,7 @@ theorem essSurj_affineGlueableRestriction {R R' : Type u} [CommRing R] [CommRing
 
 [Tag 0F9R](https://stacks.math.columbia.edu/tag/0F9R) in the Stacks Project.
 
-**`BeauvilleLaszlo.Space.isFinite_iff_canonicalAffineGlueableRestriction_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L503). The attribute's comment: “P = finite; morphisms of affine glueable spaces”.
+**`BeauvilleLaszlo.Space.isFinite_iff_canonicalAffineGlueableRestriction_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 503](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L503). The attribute's comment: “P = finite; morphisms of affine glueable spaces”.
 
 > **Stacks 0F9R for `P` finite, on the glueing functor.** Let `(g : R → R', f)` be a glueing pair
 > and let `F` be the glueing functor of Stacks 0F9N restricted, as in Stacks 0F9Q, to the affine
@@ -207,7 +207,7 @@ theorem isFinite_iff_canonicalAffineGlueableRestriction_map
                   φ).hom).hom
 ```
 
-**`BeauvilleLaszlo.Space.isFinite_affineGlueingEquivalence_inverse_map_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 542](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L542). The attribute's comment: “P = finite; morphisms of triples with affine components”.
+**`BeauvilleLaszlo.Space.isFinite_affineGlueingEquivalence_inverse_map_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L542). The attribute's comment: “P = finite; morphisms of triples with affine components”.
 
 > **Stacks 0F9R for `P` finite, on the inverse equivalence.** Let `(g : R → R', f)` be a glueing
 > pair. For every morphism `β` of glueing triples over `U ← U' → X'` with affine components, the
@@ -235,7 +235,7 @@ theorem isFinite_affineGlueingEquivalence_inverse_map_iff
               ((overX' B _ _ _ hU' hU hX' _ _).map β.hom).hom
 ```
 
-**`BeauvilleLaszlo.Space.isClosedImmersion_iff_canonicalAffineGlueableRestriction_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 579](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L579). The attribute's comment: “P = closed immersion; morphisms of affine glueable spaces”.
+**`BeauvilleLaszlo.Space.isClosedImmersion_iff_canonicalAffineGlueableRestriction_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 579](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L579). The attribute's comment: “P = closed immersion; morphisms of affine glueable spaces”.
 
 > **Stacks 0F9R for `P` closed immersion, on the glueing functor.** Let `(g : R → R', f)` be a
 > glueing pair and let `F` be the glueing functor of Stacks 0F9N restricted, as in Stacks 0F9Q, to
@@ -267,7 +267,7 @@ theorem isClosedImmersion_iff_canonicalAffineGlueableRestriction_map
                   φ).hom).hom
 ```
 
-**`BeauvilleLaszlo.Space.isClosedImmersion_affineGlueingEquivalence_inverse_map_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L619). The attribute's comment: “P = closed immersion; morphisms of triples with affine components”.
+**`BeauvilleLaszlo.Space.isClosedImmersion_affineGlueingEquivalence_inverse_map_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 619](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L619). The attribute's comment: “P = closed immersion; morphisms of triples with affine components”.
 
 > Let `(g : R → R', f)` be a glueing pair. For every morphism `β` of glueing triples over
 > `U ← U' → X'` with affine components, the morphism of affine glueable algebraic spaces over
@@ -295,7 +295,7 @@ theorem isClosedImmersion_affineGlueingEquivalence_inverse_map_iff
               ((overX' B _ _ _ hU' hU hX' _ _).map β.hom).hom
 ```
 
-**`BeauvilleLaszlo.Space.isFlat_iff_canonicalAffineGlueableRestriction_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 657](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L657). The attribute's comment: “P = flat; morphisms of affine glueable spaces”.
+**`BeauvilleLaszlo.Space.isFlat_iff_canonicalAffineGlueableRestriction_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 657](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L657). The attribute's comment: “P = flat; morphisms of affine glueable spaces”.
 
 > **Stacks 0F9R for `P` flat, on the glueing functor.** Let `(g : R → R', f)` be a glueing pair
 > and let `F` be the glueing functor of Stacks 0F9N restricted, as in Stacks 0F9Q, to the affine
@@ -327,7 +327,7 @@ theorem isFlat_iff_canonicalAffineGlueableRestriction_map
                   φ).hom).hom
 ```
 
-**`BeauvilleLaszlo.Space.isFlat_affineGlueingEquivalence_inverse_map_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L698). The attribute's comment: “P = flat; morphisms of triples with affine components”.
+**`BeauvilleLaszlo.Space.isFlat_affineGlueingEquivalence_inverse_map_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 698](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L698). The attribute's comment: “P = flat; morphisms of triples with affine components”.
 
 > **Stacks 0F9R for `P` flat, on the inverse equivalence.** Let `(g : R → R', f)` be a glueing
 > pair. For every morphism `β` of glueing triples over `U ← U' → X'` with affine components, the
@@ -355,7 +355,7 @@ theorem isFlat_affineGlueingEquivalence_inverse_map_iff
               ((overX' B _ _ _ hU' hU hX' _ _).map β.hom).hom
 ```
 
-**`BeauvilleLaszlo.Space.isFiniteType_iff_canonicalAffineGlueableRestriction_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 737](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L737). The attribute's comment: “P = finite type; morphisms of affine glueable spaces”.
+**`BeauvilleLaszlo.Space.isFiniteType_iff_canonicalAffineGlueableRestriction_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 737](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L737). The attribute's comment: “P = finite type; morphisms of affine glueable spaces”.
 
 > **Stacks 0F9R for `P` finite type, on the glueing functor.** Let `(g : R → R', f)` be a glueing
 > pair and let `F` be the glueing functor of Stacks 0F9N restricted, as in Stacks 0F9Q, to the
@@ -387,7 +387,7 @@ theorem isFiniteType_iff_canonicalAffineGlueableRestriction_map
                   φ).hom).hom
 ```
 
-**`BeauvilleLaszlo.Space.isFiniteType_affineGlueingEquivalence_inverse_map_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 777](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L777). The attribute's comment: “P = finite type; morphisms of triples with affine components”.
+**`BeauvilleLaszlo.Space.isFiniteType_affineGlueingEquivalence_inverse_map_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 777](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L777). The attribute's comment: “P = finite type; morphisms of triples with affine components”.
 
 > **Stacks 0F9R for `P` finite type, on the inverse equivalence.** Let `(g : R → R', f)` be a
 > glueing pair. For every morphism `β` of glueing triples over `U ← U' → X'` with affine
@@ -416,7 +416,7 @@ theorem isFiniteType_affineGlueingEquivalence_inverse_map_iff
               ((overX' B _ _ _ hU' hU hX' _ _).map β.hom).hom
 ```
 
-**`BeauvilleLaszlo.Space.isFlat_and_isFinitePresentation_iff_canonicalAffineGlueableRestriction_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 815](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L815). The attribute's comment: “P = flat and finite presentation; morphisms of affine glueable spaces”.
+**`BeauvilleLaszlo.Space.isFlat_and_isFinitePresentation_iff_canonicalAffineGlueableRestriction_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 815](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L815). The attribute's comment: “P = flat and finite presentation; morphisms of affine glueable spaces”.
 
 > **Stacks 0F9R for `P` flat and finite presentation, on the glueing functor.** Let
 > `(g : R → R', f)` be a glueing pair and let `F` be the glueing functor of Stacks 0F9N
@@ -463,7 +463,7 @@ theorem isFlat_and_isFinitePresentation_iff_canonicalAffineGlueableRestriction_m
                     φ).hom).hom)
 ```
 
-**`BeauvilleLaszlo.Space.isFlat_and_isFinitePresentation_affineGlueingEquivalence_inverse_map_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 877](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L877). The attribute's comment: “P = flat and finite presentation; morphisms of triples with affine components”.
+**`BeauvilleLaszlo.Space.isFlat_and_isFinitePresentation_affineGlueingEquivalence_inverse_map_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 877](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L877). The attribute's comment: “P = flat and finite presentation; morphisms of triples with affine components”.
 
 > **Stacks 0F9R for `P` flat and finite presentation, on the inverse equivalence.** Let
 > `(g : R → R', f)` be a glueing pair. For every morphism `β` of glueing triples over
@@ -502,7 +502,7 @@ theorem isFlat_and_isFinitePresentation_affineGlueingEquivalence_inverse_map_iff
                 ((overX' B _ _ _ hU' hU hX' _ _).map β.hom).hom)
 ```
 
-**`BeauvilleLaszlo.Space.isEtale_iff_canonicalAffineGlueableRestriction_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 932](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L932). The attribute's comment: “P = étale; morphisms of affine glueable spaces”.
+**`BeauvilleLaszlo.Space.isEtale_iff_canonicalAffineGlueableRestriction_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 932](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L932). The attribute's comment: “P = étale; morphisms of affine glueable spaces”.
 
 > **Stacks 0F9R for `P` étale, on the glueing functor.** Let `(g : R → R', f)` be a glueing pair
 > and let `F` be the glueing functor of Stacks 0F9N restricted, as in Stacks 0F9Q, to the affine
@@ -534,7 +534,7 @@ theorem isEtale_iff_canonicalAffineGlueableRestriction_map
                   φ).hom).hom
 ```
 
-**`BeauvilleLaszlo.Space.isEtale_affineGlueingEquivalence_inverse_map_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 973](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L973). The attribute's comment: “P = étale; morphisms of triples with affine components”.
+**`BeauvilleLaszlo.Space.isEtale_affineGlueingEquivalence_inverse_map_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean, line 973](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingEquivalenceProperties.lean#L973). The attribute's comment: “P = étale; morphisms of triples with affine components”.
 
 > **Stacks 0F9R for `P` étale, on the inverse equivalence.** Let `(g : R → R', f)` be a glueing
 > pair. For every morphism `β` of glueing triples over `U ← U' → X'` with affine components, the
@@ -562,7 +562,7 @@ theorem isEtale_affineGlueingEquivalence_inverse_map_iff
               ((overX' B _ _ _ hU' hU hX' _ _).map β.hom).hom
 ```
 
-**`BeauvilleLaszlo.isFinite_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean#L191). The attribute's comment: “P = finite”.
+**`BeauvilleLaszlo.isFinite_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean#L191). The attribute's comment: “P = finite”.
 
 > Let `(R → R', f)` be a glueing pair. A morphism `h : Spec B → Spec A` of schemes over
 > `X = Spec R` is finite if and only if its base changes to `U = Spec R_f`, `U' = Spec R'_f` and
@@ -582,7 +582,7 @@ theorem isFinite_iff_baseChange (f : R) (hglue : IsGlueingPair (algebraMap R R')
             (algebraMap R R')))).map h).left
 ```
 
-**`BeauvilleLaszlo.isClosedImmersion_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean#L220). The attribute's comment: “P = closed immersion”.
+**`BeauvilleLaszlo.isClosedImmersion_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean#L220). The attribute's comment: “P = closed immersion”.
 
 > Let `(R → R', f)` be a glueing pair. A morphism `h : Spec B → Spec A` of schemes over
 > `X = Spec R` is a closed immersion if and only if its base changes to `U = Spec R_f`,
@@ -602,7 +602,7 @@ theorem isClosedImmersion_iff_baseChange (f : R) (hglue : IsGlueingPair (algebra
             (algebraMap R R')))).map h).left
 ```
 
-**`BeauvilleLaszlo.flat_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean#L241). The attribute's comment: “P = flat”.
+**`BeauvilleLaszlo.flat_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean#L241). The attribute's comment: “P = flat”.
 
 > Let `(R → R', f)` be a glueing pair and let the `R`-algebra `A` be glueable for it. A morphism
 > `h : Spec B → Spec A` of schemes over `X = Spec R` is flat if and only if its base changes to
@@ -623,7 +623,7 @@ theorem flat_iff_baseChange (f : R) (hglue : IsGlueingPair (algebraMap R R') f)
             (algebraMap R R')))).map h).left
 ```
 
-**`BeauvilleLaszlo.locallyOfFiniteType_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean#L262). The attribute's comment: “P = finite type”.
+**`BeauvilleLaszlo.locallyOfFiniteType_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean#L262). The attribute's comment: “P = finite type”.
 
 > Let `(R → R', f)` be a glueing pair. A morphism `h : Spec B → Spec A` of schemes over
 > `X = Spec R` is locally of finite type if and only if its base changes to `U = Spec R_f`,
@@ -644,7 +644,7 @@ theorem locallyOfFiniteType_iff_baseChange (f : R) (hglue : IsGlueingPair (algeb
             (algebraMap R R')))).map h).left
 ```
 
-**`BeauvilleLaszlo.flat_and_locallyOfFinitePresentation_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean#L284). The attribute's comment: “P = flat and finite presentation”.
+**`BeauvilleLaszlo.flat_and_locallyOfFinitePresentation_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean#L284). The attribute's comment: “P = flat and finite presentation”.
 
 > Let `(R → R', f)` be a glueing pair and let the `R`-algebra `A` be glueable for it. A morphism
 > `h : Spec B → Spec A` of schemes over `X = Spec R` is flat and locally of finite presentation if
@@ -674,7 +674,7 @@ theorem flat_and_locallyOfFinitePresentation_iff_baseChange (f : R)
           (algebraMap R R')))).map h).left)
 ```
 
-**`BeauvilleLaszlo.etale_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean#L318). The attribute's comment: “P = étale”.
+**`BeauvilleLaszlo.etale_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingProperties.lean#L318). The attribute's comment: “P = étale”.
 
 > Let `(R → R', f)` be a glueing pair and let the `R`-algebra `A` be glueable for it. A morphism
 > `h : Spec B → Spec A` of schemes over `X = Spec R` is étale if and only if its base changes to
@@ -699,7 +699,7 @@ theorem etale_iff_baseChange (f : R) (hglue : IsGlueingPair (algebraMap R R') f)
 
 [Tag 0F9S](https://stacks.math.columbia.edu/tag/0F9S) in the Stacks Project.
 
-**`BeauvilleLaszlo.Space.beauvilleLaszloGlueingSpaces_map_injective_of_isGlueable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFaithful.lean, line 669](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFaithful.lean#L669).
+**`BeauvilleLaszlo.Space.beauvilleLaszloGlueingSpaces_map_injective_of_isGlueable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFaithful.lean, line 670](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFaithful.lean#L670).
 
 > The Beauville--Laszlo gluing functor is faithful on glueable algebraic spaces over `Spec R`.
 
@@ -738,7 +738,7 @@ theorem beauvilleLaszloGlueingSpaces_map_injective_of_isGlueable
 
 [Tag 0F9T](https://stacks.math.columbia.edu/tag/0F9T) in the Stacks Project.
 
-**`BeauvilleLaszlo.Space.beauvilleLaszloGlueingSpaces_map_surjective_of_isGlueable_of_isAffineHom_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFullyFaithfulComplete.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFullyFaithfulComplete.lean#L316). The attribute's comment: “fullness”.
+**`BeauvilleLaszlo.Space.beauvilleLaszloGlueingSpaces_map_surjective_of_isGlueable_of_isAffineHom_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFullyFaithfulComplete.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFullyFaithfulComplete.lean#L316). The attribute's comment: “fullness”.
 
 > **Stacks 0F9T, fullness.** For a Beauville--Laszlo glueing pair `(g : R → R', f)`, a
 > morphism of glueing triples between the images of two algebraic spaces over `Spec R` which are
@@ -779,7 +779,7 @@ theorem beauvilleLaszloGlueingSpaces_map_surjective_of_isGlueable_of_isAffineHom
           B U' U X' X hU' hU hX' hX gU gX' jU jX' hcomm).functor.map φ)
 ```
 
-**`BeauvilleLaszlo.Space.beauvilleLaszloGlueingSpaces_map_bijective_of_isGlueable_of_isAffineHom_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFullyFaithfulComplete.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFullyFaithfulComplete.lean#L357).
+**`BeauvilleLaszlo.Space.beauvilleLaszloGlueingSpaces_map_bijective_of_isGlueable_of_isAffineHom_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFullyFaithfulComplete.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFullyFaithfulComplete.lean#L357).
 
 > **Stacks 0F9T.** For a Beauville--Laszlo glueing pair `(g : R → R', f)`, the glueing functor
 > of Stacks 0F9N is fully faithful on the full subcategory of algebraic spaces `Y/X` which are
@@ -820,13 +820,13 @@ theorem beauvilleLaszloGlueingSpaces_map_bijective_of_isGlueable_of_isAffineHom_
 
 Declarations registered for the tag:
 
-- [`BeauvilleLaszlo.Space.beauvilleLaszloGlueingSpaces_map_injective_of_isGlueable`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFaithful.lean#L669), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFullyFaithful.lean, line 1131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFullyFaithful.lean#L1131) (StacksFrontier): “faithfulness”.
+- [`BeauvilleLaszlo.Space.beauvilleLaszloGlueingSpaces_map_injective_of_isGlueable`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFaithful.lean#L670), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFullyFaithful.lean, line 1131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingFullyFaithful.lean#L1131) (StacksFrontier): “faithfulness”.
 
 ## Tag 0F9U, a lemma
 
 [Tag 0F9U](https://stacks.math.columbia.edu/tag/0F9U) in the Stacks Project.
 
-**`BeauvilleLaszlo.Space.exists_isSeparatedOver_iso_of_isQuasiAffineComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingQuasiAffineUnconditional.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingQuasiAffineUnconditional.lean#L116).
+**`BeauvilleLaszlo.Space.exists_isSeparatedOver_iso_of_isQuasiAffineComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingQuasiAffineUnconditional.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BeauvilleLaszloGlueingQuasiAffineUnconditional.lean#L116).
 
 > **Stacks 0F9U.** Let `(g : R → R', f)` be a glueing pair, and let `X = Spec R`,
 > `U = Spec R_f`, `X' = Spec R'` and `U' = Spec R'_{g f}` be the four corners of its square, all in
@@ -857,4 +857,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 81.12, Tag 0F9M](https://stacks.math.columbia.edu/tag/0F9M)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

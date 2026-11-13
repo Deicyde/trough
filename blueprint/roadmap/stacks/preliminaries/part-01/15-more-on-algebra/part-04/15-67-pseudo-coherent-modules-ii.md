@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.67 Pseudo-coherent modules, II
 
-Section 15.67 of the Stacks Project, [Tag 0G8V](https://stacks.math.columbia.edu/tag/0G8V). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.67 of the Stacks Project, [Tag 0G8V](https://stacks.math.columbia.edu/tag/0G8V). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G8W, a lemma
 
 [Tag 0G8W](https://stacks.math.columbia.edu/tag/0G8W) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.colimit_ext_comparison_isIso_of_lt_and_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Ext.lean, line 589](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Ext.lean#L589).
+**`StacksDraft.PseudoCoherence.colimit_ext_comparison_isIso_of_lt_and_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Ext.lean, line 589](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Ext.lean#L589).
 
 > **Stacks 0G8W.** If `K` is `m`-pseudo-coherent, then the canonical map from the
 > filtered colimit of `Extⁿ(K, Mᵢ)` to `Extⁿ(K, colim Mᵢ)` is an isomorphism for
@@ -40,7 +40,7 @@ theorem colimit_ext_comparison_isIso_of_lt_and_mono
 
 [Tag 0G8X](https://stacks.math.columbia.edu/tag/0G8X) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.isPseudoCoherentFrom_iff_colimit_ext_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Ext.lean, line 1246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Ext.lean#L1246).
+**`StacksDraft.PseudoCoherence.isPseudoCoherentFrom_iff_colimit_ext_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Ext.lean, line 1246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Ext.lean#L1246).
 
 > **Stacks 0G8X.** A cohomologically bounded-above object `K` is `m`-pseudo-coherent if and
 > only if, for every filtered diagram of modules, the canonical map from the filtered colimit of
@@ -70,7 +70,7 @@ theorem isPseudoCoherentFrom_iff_colimit_ext_comparison
 
 [Tag 087Q](https://stacks.math.columbia.edu/tag/087Q) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.canonicalExtTensorComparison_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/HomFlat.lean, line 468](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/HomFlat.lean#L468). References: EGA 0 (6.2.2); SGA 4 V (8.2.10), “modules over a ring”; SGA 6 I (3.7), “affine case, modules”.
+**`StacksDraft.PseudoCoherence.canonicalExtTensorComparison_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/HomFlat.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/HomFlat.lean#L453). References: EGA 0 (6.2.2); SGA 4 V (8.2.10), “modules over a ring”; SGA 6 I (3.7), “affine case, modules”.
 
 > **Stacks 087Q.** The canonical Hom--tensor map is bijective for a finitely presented
 > source and flat tensor factor. The canonical Ext--tensor map is bijective below the
@@ -95,7 +95,7 @@ theorem canonicalExtTensorComparison_bijective [HasDerivedCategory (ModuleCat.{v
 
 [Tag 087R](https://stacks.math.columbia.edu/tag/087R) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.baseChange_ext_bijective_of_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/HomFlat.lean, line 881](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/HomFlat.lean#L881).
+**`StacksDraft.PseudoCoherence.baseChange_ext_bijective_of_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/HomFlat.lean, line 637](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/HomFlat.lean#L637).
 
 > **Stacks 087R.** The canonical Ext base-change map is bijective in degree zero for finitely
 > presented modules, below the pseudo-coherence cutoff, and in every degree for finite modules
@@ -157,7 +157,7 @@ theorem baseChange_ext_bijective_of_pseudoCoherent
 
 [Tag 0CYB](https://stacks.math.columbia.edu/tag/0CYB) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.pseudoCoherent_iff_derivedTensor_preserves_products`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Products/Characterization.lean, line 725](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Products/Characterization.lean#L725).
+**`StacksDraft.PseudoCoherence.pseudoCoherent_iff_derivedTensor_preserves_products`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Products/Characterization.lean, line 731](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Products/Characterization.lean#L731).
 
 > **Stacks 0CYB.** Pseudo-coherence of a bounded-above complex is equivalent to derived
 > tensor product commuting with arbitrary products; the degreewise variants characterize
@@ -197,7 +197,7 @@ theorem pseudoCoherent_iff_derivedTensor_preserves_products
 
 [Tag 0G8Y](https://stacks.math.columbia.edu/tag/0G8Y) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.exists_finitelyPresented_module_mono_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Ext.lean, line 1319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Ext.lean#L1319).
+**`StacksDraft.PseudoCoherence.exists_finitelyPresented_module_mono_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Ext.lean, line 1319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Ext.lean#L1319).
 
 > **Stacks 0G8Y.** For every degree `i`, the degree-`i` cohomology of a pseudo-coherent
 > object of `D(R)` embeds in a finitely presented `R`-module, and the embedding is induced by a
@@ -217,7 +217,7 @@ theorem exists_finitelyPresented_module_mono_homology {R : Type u} [Ring R]
 
 [Tag 0A7D](https://stacks.math.columbia.edu/tag/0A7D) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.exists_finite_module_detecting_homology_mod_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Noetherian.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Noetherian.lean#L74).
+**`StacksDraft.PseudoCoherence.exists_finite_module_detecting_homology_mod_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Noetherian.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Noetherian.lean#L74).
 
 > **Stacks 0A7D.** If degree-`i` cohomology of a pseudo-coherent complex over a Noetherian
 > ring is nonzero modulo an ideal, it is detected by a map to a finite module annihilated by a
@@ -247,4 +247,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.67, Tag 0G8V](https://stacks.math.columbia.edu/tag/0G8V)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

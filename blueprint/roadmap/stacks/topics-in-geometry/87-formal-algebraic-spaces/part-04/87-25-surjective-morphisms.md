@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.25 Surjective morphisms
 
-Section 87.25 of the Stacks Project, [Tag 0GHN](https://stacks.math.columbia.edu/tag/0GHN). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 87.25 of the Stacks Project, [Tag 0GHN](https://stacks.math.columbia.edu/tag/0GHN). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GHP, a definition
 
 [Tag 0GHP](https://stacks.math.columbia.edu/tag/0GHP) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isSurjective_iff_isSurjectiveULift_red`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean#L97). The attribute's comment: “the definition, identified with the source's condition on the morphism of underlying reduced algebraic spaces”.
+**`AlgebraicGeometry.FormalSpace.isSurjective_iff_isSurjectiveULift_red`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean#L97). The attribute's comment: “the definition, identified with the source's condition on the morphism of underlying reduced algebraic spaces”.
 
 > Surjectivity on points of a morphism of formal algebraic spaces over `S` is the condition
 > of Stacks 0GHP on it: the morphism between any two reductions of its source and target
@@ -33,7 +33,7 @@ theorem isSurjective_iff_isSurjectiveULift_red {X Y Xred Yred : FppfSheaf B S hS
 
 [Tag 0GHQ](https://stacks.math.columbia.edu/tag/0GHQ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsSurjective.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean#L128).
+**`AlgebraicGeometry.FormalSpace.IsSurjective.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean#L128).
 
 > The composition of two surjective morphisms of fppf sheaves on the big fppf site of `S` is
 > surjective.
@@ -48,7 +48,7 @@ theorem IsSurjective.comp {X Y Z : FppfSheaf B S hS} {f : X ⟶ Y} {g : Y ⟶ Z}
 
 [Tag 0GHR](https://stacks.math.columbia.edu/tag/0GHR) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsSurjective.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean#L143).
+**`AlgebraicGeometry.FormalSpace.IsSurjective.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean#L143).
 
 > A base change of a surjective morphism of fppf sheaves on the big fppf site of `S` is
 > surjective.
@@ -63,7 +63,7 @@ theorem IsSurjective.of_isPullback {W X Z Y : FppfSheaf B S hS}
 
 [Tag 0GHS](https://stacks.math.columbia.edu/tag/0GHS) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsSurjective.hasSurjectiveFormalAtlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean#L306). The attribute's comment: “condition (1) implies condition (4)”.
+**`AlgebraicGeometry.FormalSpace.IsSurjective.hasSurjectiveFormalAtlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean#L306). The attribute's comment: “condition (1) implies condition (4)”.
 
 > **Stacks 0GHS, condition (1) implies condition (4).** If `f : X ⟶ Y` is surjective and `Y`
 > is a formal algebraic space over `S`, then the atlas of `Y` furnished by Stacks 0AIM is a
@@ -76,7 +76,7 @@ theorem IsSurjective.hasSurjectiveFormalAtlas {X Y : FppfSheaf B S hS} {f : X �
     HasSurjectiveFormalAtlas B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isSurjective_of_hasSurjectiveFormalAtlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean#L317). The attribute's comment: “condition (4) implies condition (1)”.
+**`AlgebraicGeometry.FormalSpace.isSurjective_of_hasSurjectiveFormalAtlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean#L317). The attribute's comment: “condition (4) implies condition (1)”.
 
 > **Stacks 0GHS, condition (4) implies condition (1).** If a morphism `f : X ⟶ Y` of fppf
 > sheaves on the big fppf site of `S` admits a covering `{Y_j ⟶ Y}` of its target as in
@@ -87,7 +87,7 @@ theorem isSurjective_of_hasSurjectiveFormalAtlas {X Y : FppfSheaf B S hS} {f : X
     (h : HasSurjectiveFormalAtlas B S hS f) : IsSurjective B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isSurjective_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean#L338). The attribute's comment: “conditions (1), (2), (3), (4) and (5)”.
+**`AlgebraicGeometry.FormalSpace.isSurjective_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Surjective.lean#L338). The attribute's comment: “conditions (1), (2), (3), (4) and (5)”.
 
 > For a morphism `f : X ⟶ Y` of formal algebraic spaces over `S` the following are
 > equivalent:
@@ -119,4 +119,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.25, Tag 0GHN](https://stacks.math.columbia.edu/tag/0GHN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

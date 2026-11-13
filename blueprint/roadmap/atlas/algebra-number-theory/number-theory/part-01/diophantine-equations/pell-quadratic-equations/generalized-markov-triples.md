@@ -7,7 +7,7 @@ statement: formalized
 
 # Generalized Markov triples
 
-85 results, 40 proved and 45 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html).
+85 results, 40 proved and 45 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html).
 
 ## Generalized Markov triple
 
@@ -23,7 +23,7 @@ For $k = 0$ these are the classical Markov triples.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 1.2.
 
-Formalized by `MetaMathlibExt.IsGenMarkovTriple`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-triple).
+Formalized by `MetaMathlibExt.IsGenMarkovTriple`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-triple).
 
 ## $(1, 1, 1)$ is a generalized Markov triple
 
@@ -34,7 +34,7 @@ $(1, 1, 1)$ is a $k$-generalized Markov triple.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 1.2.
 
-Formalized by `MetaMathlibExt.isGenMarkovTriple_one_one_one`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-triple-one-one-one).
+Formalized by `MetaMathlibExt.isGenMarkovTriple_one_one_one`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-triple-one-one-one).
 
 ## The Markov triple $(1, 1, 2)$
 
@@ -45,7 +45,7 @@ triple, that is, a classical Markov triple: $1^2 + 1^2 + 2^2 = 3 \cdot 1 \cdot 1
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 1.1.
 
-Formalized by `MetaMathlibExt.isGenMarkovTriple_zero_one_one_two`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-triple-zero-one-one-two).
+Formalized by `MetaMathlibExt.isGenMarkovTriple_zero_one_one_two`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-triple-zero-one-one-two).
 
 ## Generalized Markov number
 
@@ -60,7 +60,7 @@ as $b$ being an entry, in any position, of some $k$-generalized Markov triple.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 1.2.
 
-Formalized by `MetaMathlibExt.IsGenMarkovNumber`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-number).
+Formalized by `MetaMathlibExt.IsGenMarkovNumber`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-number).
 
 ## Unique maximal generalized Markov triple
 
@@ -74,7 +74,7 @@ $(a', c') = (a, c)$ or $(a', c') = (c, a)$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Conjecture 1.8.
 
-Formalized by `MetaMathlibExt.HasUniqueMaxGenMarkovTriple`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#has-unique-max-gen-markov-triple).
+Formalized by `MetaMathlibExt.HasUniqueMaxGenMarkovTriple`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#has-unique-max-gen-markov-triple).
 
 ## A unique maximum is a generalized Markov number
 
@@ -86,7 +86,7 @@ $k$-generalized Markov number.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Conjecture 1.8.
 
-Formalized by `MetaMathlibExt.HasUniqueMaxGenMarkovTriple.isGenMarkovNumber`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-number-2).
+Formalized by `MetaMathlibExt.HasUniqueMaxGenMarkovTriple.isGenMarkovNumber`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-number-2).
 
 ## Number of solutions of $x^2 + kx + 1 \equiv 0 \pmod b$
 
@@ -98,7 +98,7 @@ $x^2 + kx + 1$. For $b = 0$ it is $0$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Theorem 1.5.
 
-Formalized by `MetaMathlibExt.genMarkovCongruenceCount`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-congruence-count).
+Formalized by `MetaMathlibExt.genMarkovCongruenceCount`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-congruence-count).
 
 ## The congruence $x^2 + 1 \equiv 0 \pmod 5$ has two solutions
 
@@ -111,7 +111,7 @@ They are $x = 2$ and $x = 3$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Theorem 1.2.
 
-Formalized by `MetaMathlibExt.genMarkovCongruenceCount_zero_five`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-congruence-count-zero-five).
+Formalized by `MetaMathlibExt.genMarkovCongruenceCount_zero_five`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-congruence-count-zero-five).
 
 ## Uniqueness criterion via the congruence $x^2 + kx + 1 \equiv 0 \pmod{b}$
 
@@ -124,7 +124,7 @@ $0 \le x < b$, then $b$ is the maximum of a unique $k$-generalized Markov triple
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Theorem 1.5.
 
-Stated but not proved: `MetaMathlibExt.hasUniqueMaxGenMarkovTriple_of_congruenceCount_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#has-unique-max-gen-markov-triple-of-cong).
+Stated but not proved: `MetaMathlibExt.hasUniqueMaxGenMarkovTriple_of_congruenceCount_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#has-unique-max-gen-markov-triple-of-cong).
 
 ## Generalized Markov numbers $p$ and $2p$ are unique maxima
 
@@ -136,7 +136,7 @@ the maximum of a unique $k$-generalized Markov triple up to order.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Theorem 1.6.
 
-Stated but not proved: `MetaMathlibExt.hasUniqueMaxGenMarkovTriple_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#has-unique-max-gen-markov-triple-prime).
+Stated but not proved: `MetaMathlibExt.hasUniqueMaxGenMarkovTriple_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#has-unique-max-gen-markov-triple-prime).
 
 ## Uniqueness for prime powers $p^m$ and $2p^m$ under conditions on $k$
 
@@ -151,7 +151,7 @@ order.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Theorem 1.7.
 
-Stated but not proved: `MetaMathlibExt.hasUniqueMaxGenMarkovTriple_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#has-unique-max-gen-markov-triple-prime-p).
+Stated but not proved: `MetaMathlibExt.hasUniqueMaxGenMarkovTriple_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#has-unique-max-gen-markov-triple-prime-p).
 
 ## Uniqueness for odd prime powers $p^m$ and $2p^m$ with $p \nmid k^2 - 4$
 
@@ -164,7 +164,7 @@ the maximum of a unique $k$-generalized Markov triple up to order.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Theorem 4.10.
 
-Stated but not proved: `MetaMathlibExt.hasUniqueMaxGenMarkovTriple_odd_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#has-unique-max-gen-markov-triple-odd-pri).
+Stated but not proved: `MetaMathlibExt.hasUniqueMaxGenMarkovTriple_odd_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#has-unique-max-gen-markov-triple-odd-pri).
 
 ## Bound on the number of generalized Markov triples with a given maximum
 
@@ -182,7 +182,7 @@ $2^{n-1}$ such triples up to order.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Theorem 4.20.
 
-Stated but not proved: `MetaMathlibExt.card_maxGenMarkovTriples_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#card-max-gen-markov-triples-le).
+Stated but not proved: `MetaMathlibExt.card_maxGenMarkovTriples_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#card-max-gen-markov-triples-le).
 
 ## Generalized Markov triples are pairwise coprime
 
@@ -193,7 +193,7 @@ Markov triple, then $\gcd(a, b) = \gcd(b, c) = \gcd(a, c) = 1$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 2.3 (citing Gyoda and Matsushita, Corollary 8).
 
-Stated but not proved: `MetaMathlibExt.IsGenMarkovTriple.pairwise_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#pairwise-coprime).
+Stated but not proved: `MetaMathlibExt.IsGenMarkovTriple.pairwise_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#pairwise-coprime).
 
 ## The generalized Markov equation and the generalized second Markov equation
 
@@ -209,7 +209,7 @@ Markov equation $\mathrm{GSME}(k)$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 2.4.
 
-Stated but not proved: `MetaMathlibExt.genMarkov_iff_genSecondMarkov` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-iff-gen-second-markov).
+Stated but not proved: `MetaMathlibExt.genMarkov_iff_genSecondMarkov` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-iff-gen-second-markov).
 
 ## Vieta jumping for the second generalized Markov equation
 
@@ -225,7 +225,7 @@ equation.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 2.6.
 
-Stated but not proved: `MetaMathlibExt.genSecondMarkov_vieta` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-second-markov-vieta).
+Stated but not proved: `MetaMathlibExt.genSecondMarkov_vieta` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-second-markov-vieta).
 
 ## Trace identities in $\mathrm{SL}(2, \mathbb{Z})$
 
@@ -239,7 +239,7 @@ identity matrix.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Lemma 3.6 (citing Aigner, Lemma 4.2).
 
-Stated but not proved: `MetaMathlibExt.specialLinearGroup_two_trace_identities` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#special-linear-group-two-trace-identitie).
+Stated but not proved: `MetaMathlibExt.specialLinearGroup_two_trace_identities` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#special-linear-group-two-trace-identitie).
 
 ## At most two solutions of $x^2 + kx + 1 \equiv 0$ modulo a prime
 
@@ -251,7 +251,7 @@ $x^2 + kx + 1 \equiv 0 \pmod p$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Lemma 4.9.
 
-Stated but not proved: `MetaMathlibExt.genMarkovCongruenceCount_prime_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-congruence-count-prime-le-two).
+Stated but not proved: `MetaMathlibExt.genMarkovCongruenceCount_prime_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-congruence-count-prime-le-two).
 
 ## At most two solutions of $x^2 + kx + 1 \equiv 0$ modulo an odd prime power
 
@@ -264,7 +264,7 @@ $x^2 + kx + 1 \equiv 0 \pmod{p^m}$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Lemma 4.11.
 
-Stated but not proved: `MetaMathlibExt.genMarkovCongruenceCount_prime_pow_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-congruence-count-prime-pow-le).
+Stated but not proved: `MetaMathlibExt.genMarkovCongruenceCount_prime_pow_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-congruence-count-prime-pow-le).
 
 ## An even generalized Markov number forces $k$ to be even
 
@@ -275,7 +275,7 @@ some $k$-generalized Markov number $b$ is even, then $k$ is even.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Lemma 4.13.
 
-Stated but not proved: `MetaMathlibExt.even_of_even_genMarkovNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#even-of-even-gen-markov-number).
+Stated but not proved: `MetaMathlibExt.even_of_even_genMarkovNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#even-of-even-gen-markov-number).
 
 ## Generalized Markov numbers divisible by $4$
 
@@ -287,7 +287,7 @@ $k$-generalized Markov number is divisible by $4$, then $k \equiv 2 \pmod{4}$.
 - Only the first claim of Proposition 4.14 is stated; its "in particular" parity consequence is omitted because its displayed fraction is garbled in the record.
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 4.14.
 
-Stated but not proved: `MetaMathlibExt.mod_four_eq_two_of_four_dvd_genMarkovNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#mod-four-eq-two-of-four-dvd-gen-markov-n).
+Stated but not proved: `MetaMathlibExt.mod_four_eq_two_of_four_dvd_genMarkovNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#mod-four-eq-two-of-four-dvd-gen-markov-n).
 
 ## Large odd primes do not divide $k^2 - 4$
 
@@ -299,7 +299,7 @@ does not divide $k^2 - 4$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 4.15.
 
-Stated but not proved: `MetaMathlibExt.not_dvd_sq_sub_four_of_large_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#not-dvd-sq-sub-four-of-large-prime).
+Stated but not proved: `MetaMathlibExt.not_dvd_sq_sub_four_of_large_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#not-dvd-sq-sub-four-of-large-prime).
 
 ## Discriminant condition for prime-power generalized Markov numbers
 
@@ -317,7 +317,7 @@ proof assumes $b = p^m$ is a $k$-generalized Markov number and uses $m \ge 2$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 4.16 and its proof.
 
-Stated but not proved: `MetaMathlibExt.not_dvd_sq_sub_four_of_genMarkovNumber_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#not-dvd-sq-sub-four-of-gen-markov-number).
+Stated but not proved: `MetaMathlibExt.not_dvd_sq_sub_four_of_genMarkovNumber_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#not-dvd-sq-sub-four-of-gen-markov-number).
 
 ## 2-generalized Markov triples are squares of Markov triples
 
@@ -330,7 +330,7 @@ triple $(a, b, c)$ with $A = a^2$, $B = b^2$ and $C = c^2$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 4.17 (citing Gyoda and Matsushita, Theorem 2.9).
 
-Stated but not proved: `MetaMathlibExt.genMarkovTriple_two_iff_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-triple-two-iff-sq).
+Stated but not proved: `MetaMathlibExt.genMarkovTriple_two_iff_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-triple-two-iff-sq).
 
 ## Uniqueness criterion for classical Markov numbers
 
@@ -343,7 +343,7 @@ order.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Theorem 1.2 (citing Aigner, Corollary 3.17).
 
-Stated but not proved: `MetaMathlibExt.markov_hasUniqueMaxTriple_of_congruenceCount_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#markov-has-unique-max-triple-of-congruen).
+Stated but not proved: `MetaMathlibExt.markov_hasUniqueMaxTriple_of_congruenceCount_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#markov-has-unique-max-triple-of-congruen).
 
 ## Uniqueness for Markov numbers $p^m$ and $2p^m$ with $p$ an odd prime
 
@@ -355,7 +355,7 @@ number), then $b$ is the maximum of a unique Markov triple up to order.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Theorem 1.3 (citing Aigner, Corollary 3.20).
 
-Stated but not proved: `MetaMathlibExt.markov_hasUniqueMaxTriple_odd_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#markov-has-unique-max-triple-odd-prime-p).
+Stated but not proved: `MetaMathlibExt.markov_hasUniqueMaxTriple_odd_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#markov-has-unique-max-triple-odd-prime-p).
 
 ## Markov triples with a common characteristic number agree up to order
 
@@ -369,7 +369,7 @@ chosen independently. Then $(m_2, m_3) = (n_2, n_3)$ or $(m_2, m_3) = (n_3, n_2)
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 1.11 (citing Aigner, Proposition 3.15).
 
-Stated but not proved: `MetaMathlibExt.markov_eq_of_characteristic_number_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#markov-eq-of-characteristic-number-eq).
+Stated but not proved: `MetaMathlibExt.markov_eq_of_characteristic_number_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#markov-eq-of-characteristic-number-eq).
 
 ## Vieta jumping of generalized Markov triples
 
@@ -383,7 +383,7 @@ is indexed by the boolean value false and the right one by true.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 2.
 
-Formalized by `MetaMathlibExt.genMarkovVieta`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-vieta).
+Formalized by `MetaMathlibExt.genMarkovVieta`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-vieta).
 
 ## The wide generalized Markov tree
 
@@ -401,7 +401,7 @@ The quotients are divisions of natural numbers, rounded down, with division by $
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 2.
 
-Formalized by `MetaMathlibExt.wideGenMarkovTree`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#wide-gen-markov-tree).
+Formalized by `MetaMathlibExt.wideGenMarkovTree`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#wide-gen-markov-tree).
 
 ## Generalized Markov tree
 
@@ -415,7 +415,7 @@ the root.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 2.
 
-Formalized by `MetaMathlibExt.genMarkovTree`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-tree).
+Formalized by `MetaMathlibExt.genMarkovTree`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-tree).
 
 ## Children in the wide generalized Markov tree are Vieta jumpings
 
@@ -428,7 +428,7 @@ $d$ is the image of the vertex at $w$ under the Vieta jumping in direction $d$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 2.
 
-Formalized by `MetaMathlibExt.wideGenMarkovTree_append_singleton`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#wide-gen-markov-tree-append-singleton).
+Formalized by `MetaMathlibExt.wideGenMarkovTree_append_singleton`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#wide-gen-markov-tree-append-singleton).
 
 ## Root of the generalized Markov tree
 
@@ -439,7 +439,7 @@ $k$-generalized Markov tree $MT(k)$, its vertex at the empty path, is $(1, k + 2
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 4.
 
-Formalized by `MetaMathlibExt.genMarkovTree_nil`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-tree-nil).
+Formalized by `MetaMathlibExt.genMarkovTree_nil`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-tree-nil).
 
 ## Left child of the root of the classical Markov tree
 
@@ -450,7 +450,7 @@ Markov tree $MT(0)$ reached from the root by one left step is $(1, 5, 2)$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 2.
 
-Formalized by `MetaMathlibExt.genMarkovTree_zero_false`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-tree-zero-false).
+Formalized by `MetaMathlibExt.genMarkovTree_zero_false`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-tree-zero-false).
 
 ## Generalized Markov triples in the wide Markov tree
 
@@ -464,7 +464,7 @@ one path that starts with a right step.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 2.1 (citing Gyoda and Matsushita, Theorem 1).
 
-Stated but not proved: `MetaMathlibExt.wideGenMarkovTree_isGenMarkovTriple_and_twice` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#wide-gen-markov-tree-is-gen-markov-tripl).
+Stated but not proved: `MetaMathlibExt.wideGenMarkovTree_isGenMarkovTriple_and_twice` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#wide-gen-markov-tree-is-gen-markov-tripl).
 
 ## Vertices of the generalized Markov tree
 
@@ -477,7 +477,7 @@ such that the vertex of $MT(k)$ at $w$ is $(a, b, c)$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Corollary 2.2.
 
-Stated but not proved: `MetaMathlibExt.genMarkovTree_isGenMarkovTriple_and_once` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-tree-is-gen-markov-triple-and).
+Stated but not proved: `MetaMathlibExt.genMarkovTree_isGenMarkovTriple_and_once` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-tree-is-gen-markov-triple-and).
 
 ## Vieta jumping identities for generalized Markov triples
 
@@ -490,7 +490,7 @@ $b^2 + kbc + c^2 = a\,((3 + 3k)bc - a - k(b + c))$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 2 (display after Corollary 2.2).
 
-Stated but not proved: `MetaMathlibExt.IsGenMarkovTriple.vieta_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#vieta-eq).
+Stated but not proved: `MetaMathlibExt.IsGenMarkovTriple.vieta_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#vieta-eq).
 
 ## Induced solution of the generalized second Markov equation
 
@@ -509,7 +509,7 @@ are automatically positive since $a, b, c > 0$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 2.
 
-Formalized by `MetaMathlibExt.IsInducedGenSecondMarkovSolution`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-induced-gen-second-markov-solution).
+Formalized by `MetaMathlibExt.IsInducedGenSecondMarkovSolution`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-induced-gen-second-markov-solution).
 
 ## The root induced solution of the generalized second Markov equation
 
@@ -522,7 +522,7 @@ Markov equation $\mathrm{GSME}(k)$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 2.
 
-Formalized by `MetaMathlibExt.isInducedGenSecondMarkovSolution_root`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-induced-gen-second-markov-solution-ro).
+Formalized by `MetaMathlibExt.isInducedGenSecondMarkovSolution_root`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-induced-gen-second-markov-solution-ro).
 
 ## Vieta jumping preserves induced solutions of the generalized second Markov equation
 
@@ -534,7 +534,7 @@ $\mathrm{GSME}(k)$, then so are $(a, ab - c - k^2 - 2k, b)$ and $(b, bc - a - k^
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 2.7.
 
-Stated but not proved: `MetaMathlibExt.IsInducedGenSecondMarkovSolution.vieta` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#vieta).
+Stated but not proved: `MetaMathlibExt.IsInducedGenSecondMarkovSolution.vieta` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#vieta).
 
 ## Vertices of the second generalized Markov tree
 
@@ -549,7 +549,7 @@ vertex of $SMT(k)$ at $w$ is $(a, b, c)$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Corollary 2.8.
 
-Stated but not proved: `MetaMathlibExt.genSecondMarkovTree_induced_and_once` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-second-markov-tree-induced-and-once).
+Stated but not proved: `MetaMathlibExt.genSecondMarkovTree_induced_and_once` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-second-markov-tree-induced-and-once).
 
 ## The matrix $S$ of the generalized Cohn triple relation
 
@@ -564,7 +564,7 @@ It is the matrix in the relation $Q = PR - S$ that defines $k$-generalized Cohn 
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Definition 3.2.
 
-Formalized by `MetaMathlibExt.genCohnS`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-s).
+Formalized by `MetaMathlibExt.genCohnS`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-s).
 
 ## The matrix $S$ vanishes for $k = 0$
 
@@ -576,7 +576,7 @@ the classical Cohn relation $Q = PR$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 1.3.
 
-Formalized by `MetaMathlibExt.genCohnS_zero`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 460](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L460). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-s-zero).
+Formalized by `MetaMathlibExt.genCohnS_zero`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 460](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L460). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-s-zero).
 
 ## Generalized Cohn matrices
 
@@ -588,7 +588,7 @@ $k$-generalized Markov number, and its trace equals $(3 + 3k) p_{12} - k$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Definition 3.1.
 
-Formalized by `MetaMathlibExt.IsGenCohnMatrix`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 470](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-cohn-matrix).
+Formalized by `MetaMathlibExt.IsGenCohnMatrix`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 470](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-cohn-matrix).
 
 ## Generalized Cohn triple
 
@@ -602,7 +602,7 @@ $a$, $b$ and $c$ respectively, and $(a, b, c)$ is a $k$-generalized Markov tripl
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Definition 3.2.
 
-Formalized by `MetaMathlibExt.IsGenCohnTriple`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-cohn-triple).
+Formalized by `MetaMathlibExt.IsGenCohnTriple`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-cohn-triple).
 
 ## Generalized Cohn triples give generalized Markov triples
 
@@ -614,7 +614,7 @@ a $k$-generalized Markov triple.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Definition 3.2.
 
-Formalized by `MetaMathlibExt.IsGenCohnTriple.isGenMarkovTriple`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 488](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-triple-2).
+Formalized by `MetaMathlibExt.IsGenCohnTriple.isGenMarkovTriple`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 488](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-triple-2).
 
 ## The matrix $P_{1;\ell}$
 
@@ -626,7 +626,7 @@ $(-\ell^2 + 2k\ell + 3\ell - 1, -\ell + 2k + 3)$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 3.1.
 
-Formalized by `MetaMathlibExt.genCohnP1`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 496](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L496). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-p1).
+Formalized by `MetaMathlibExt.genCohnP1`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 496](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L496). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-p1).
 
 ## The matrix $Q_{1;\ell}$
 
@@ -639,7 +639,7 @@ $$\begin{pmatrix} k + \ell + 1 & 1 \\ k^2 - \ell^2 + 3k + \ell + 1 & k - \ell + 
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 3.1.
 
-Formalized by `MetaMathlibExt.genCohnQ1`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 503](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L503). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-q1).
+Formalized by `MetaMathlibExt.genCohnQ1`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 503](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L503). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-q1).
 
 ## The matrix $R_{1;\ell}$
 
@@ -652,7 +652,7 @@ $$\begin{pmatrix} 2k + \ell + 2 & 1 \\ -\ell^2 - 2k\ell + 2k - \ell + 1 & -\ell 
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 3.1.
 
-Formalized by `MetaMathlibExt.genCohnR1`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 510](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L510). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-r1).
+Formalized by `MetaMathlibExt.genCohnR1`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 510](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L510). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-r1).
 
 ## The matrices $P_{1;\ell}$, $Q_{1;\ell}$ and $R_{1;\ell}$ have determinant $1$
 
@@ -664,7 +664,7 @@ $Q_{1;\ell}$ and $R_{1;\ell}$ (which depend on $k$) all have determinant $1$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 3.1.
 
-Formalized by `MetaMathlibExt.genCohnPQR1_det`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 517](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L517). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-pqr1-det).
+Formalized by `MetaMathlibExt.genCohnPQR1_det`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 517](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L517). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-pqr1-det).
 
 ## One step of the wide generalized Cohn tree
 
@@ -678,7 +678,7 @@ $(Q, QR - S, R)$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 3.1.
 
-Formalized by `MetaMathlibExt.genCohnStep`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 527](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L527). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-step).
+Formalized by `MetaMathlibExt.genCohnStep`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 527](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L527). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-step).
 
 ## Paths of generalized Cohn steps
 
@@ -692,7 +692,7 @@ $(P, Q, R)$ to $(P, PQ - S, Q)$ and a right move sends $(P, Q, R)$ to $(Q, QR - 
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Theorem 1.10.
 
-Formalized by `MetaMathlibExt.genCohnPath`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 537](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L537). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-path).
+Formalized by `MetaMathlibExt.genCohnPath`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 537](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L537). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-path).
 
 ## The wide generalized Cohn tree
 
@@ -720,7 +720,7 @@ order; the empty path gives the root.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 3.1.
 
-Formalized by `MetaMathlibExt.wideGenCohnTree`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 548](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L548). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#wide-gen-cohn-tree).
+Formalized by `MetaMathlibExt.wideGenCohnTree`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 548](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L548). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#wide-gen-cohn-tree).
 
 ## The $k$-generalized Cohn tree
 
@@ -735,7 +735,7 @@ the root of $\mathrm{WGCT}(k, \ell)$ by one left move followed by the moves of $
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 3.1.
 
-Formalized by `MetaMathlibExt.genCohnTree`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 557](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L557). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-tree).
+Formalized by `MetaMathlibExt.genCohnTree`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 557](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L557). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-tree).
 
 ## Children in the wide generalized Cohn tree
 
@@ -750,7 +750,7 @@ one generalized Cohn step.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 3.1.
 
-Formalized by `MetaMathlibExt.wideGenCohnTree_append_singleton`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 565](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L565). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#wide-gen-cohn-tree-append-singleton).
+Formalized by `MetaMathlibExt.wideGenCohnTree_append_singleton`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 565](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L565). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#wide-gen-cohn-tree-append-singleton).
 
 ## Cohn steps reach every classical Cohn triple whose middle entry is largest
 
@@ -769,7 +769,7 @@ left and right Vieta jumpings of the Markov triple $(a, b, c)$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Theorem 1.9 (citing Aigner, Theorem 4.7).
 
-Stated but not proved: `MetaMathlibExt.cohnTriple_reachable` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 577](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L577). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#cohn-triple-reachable).
+Stated but not proved: `MetaMathlibExt.cohnTriple_reachable` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 577](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L577). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#cohn-triple-reachable).
 
 ## Cohn steps reach every generalized Cohn triple whose middle entry is largest
 
@@ -789,7 +789,7 @@ right Vieta jumpings of $(a, b, c)$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Theorem 1.10.
 
-Stated but not proved: `MetaMathlibExt.genCohnTriple_reachable` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 592](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L592). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-triple-reachable).
+Stated but not proved: `MetaMathlibExt.genCohnTriple_reachable` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 592](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L592). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-triple-reachable).
 
 ## Generalized Cohn triples associated with $(1, 1, 1)$
 
@@ -807,7 +807,7 @@ $Q = Q_{1;\ell}$ and $R = R_{1;\ell}$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 3.4.
 
-Stated but not proved: `MetaMathlibExt.isGenCohnTriple_one_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 606](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L606). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-cohn-triple-one-iff).
+Stated but not proved: `MetaMathlibExt.isGenCohnTriple_one_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 606](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L606). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-cohn-triple-one-iff).
 
 ## Children of a generalized Cohn triple
 
@@ -821,7 +821,7 @@ $k$-generalized Cohn triple associated with $(b, \lfloor (b^2 + kbc + c^2)/a \rf
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Theorem 3.5.
 
-Stated but not proved: `MetaMathlibExt.IsGenCohnTriple.step` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 617](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L617). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#step).
+Stated but not proved: `MetaMathlibExt.IsGenCohnTriple.step` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 617](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L617). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#step).
 
 ## A product identity for generalized Cohn matrices
 
@@ -834,7 +834,7 @@ and $M^{-1} E M^{-1} = -(\operatorname{tr} M^{-1} + k)M^{-1} + E$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Lemma 3.7.
 
-Stated but not proved: `MetaMathlibExt.IsGenCohnMatrix.mul_E_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 627](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L627). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#mul-e-mul).
+Stated but not proved: `MetaMathlibExt.IsGenCohnMatrix.mul_E_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 627](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L627). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#mul-e-mul).
 
 ## Vertices of the wide generalized Cohn tree are generalized Cohn triples
 
@@ -849,7 +849,7 @@ associated $k$-generalized Cohn triple.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Corollary 3.9.
 
-Stated but not proved: `MetaMathlibExt.wideGenCohnTree_isGenCohnTriple` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 642](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L642). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#wide-gen-cohn-tree-is-gen-cohn-triple).
+Stated but not proved: `MetaMathlibExt.wideGenCohnTree_isGenCohnTriple` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 642](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L642). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#wide-gen-cohn-tree-is-gen-cohn-triple).
 
 ## Generalized Cohn triples with largest middle entry lie in wide generalized Cohn trees
 
@@ -862,7 +862,7 @@ reached along $w$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 3.10.
 
-Stated but not proved: `MetaMathlibExt.IsGenCohnTriple.mem_wideGenCohnTree` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 653](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L653). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#mem-wide-gen-cohn-tree).
+Stated but not proved: `MetaMathlibExt.IsGenCohnTriple.mem_wideGenCohnTree` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 653](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L653). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#mem-wide-gen-cohn-tree).
 
 ## Parent triples of a generalized Cohn triple
 
@@ -876,7 +876,7 @@ $((P + S)R^{-1}, P, R)$ is a $k$-generalized Cohn triple associated with $(b', a
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Lemma 3.11.
 
-Stated but not proved: `MetaMathlibExt.IsGenCohnTriple.parent` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 663](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L663). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#parent).
+Stated but not proved: `MetaMathlibExt.IsGenCohnTriple.parent` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 663](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L663). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#parent).
 
 ## Distinct paths give distinct middle matrices in the wide generalized Cohn tree
 
@@ -889,7 +889,7 @@ sequences of left and right steps) satisfy $Q = Q'$, then $w = w'$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Theorem 3.13.
 
-Stated but not proved: `MetaMathlibExt.wideGenCohnTree_snd_injective` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 672](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L672). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#wide-gen-cohn-tree-snd-injective).
+Stated but not proved: `MetaMathlibExt.wideGenCohnTree_snd_injective` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 672](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L672). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#wide-gen-cohn-tree-snd-injective).
 
 ## Vertices of the generalized Cohn tree are Cohn triples over the Markov tree
 
@@ -906,7 +906,7 @@ $\mathrm{GCT}(k, \ell) \to \mathrm{MT}(k)$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Corollary 3.15.
 
-Stated but not proved: `MetaMathlibExt.genCohnTree_isGenCohnTriple` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 681](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L681). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-tree-is-gen-cohn-triple).
+Stated but not proved: `MetaMathlibExt.genCohnTree_isGenCohnTriple` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 681](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L681). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-tree-is-gen-cohn-triple).
 
 ## Middle matrices of the generalized Cohn tree are distinct
 
@@ -918,7 +918,7 @@ different paths have different middle matrices.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Corollary 3.16.
 
-Stated but not proved: `MetaMathlibExt.genCohnTree_snd_injective` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 689](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L689). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-tree-snd-injective).
+Stated but not proved: `MetaMathlibExt.genCohnTree_snd_injective` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 689](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L689). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-tree-snd-injective).
 
 ## Cohn triples sit at a unique vertex of a Cohn tree
 
@@ -932,7 +932,7 @@ $\mathrm{GCT}(k, \ell)$ reached along $w$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 3.17.
 
-Stated but not proved: `MetaMathlibExt.IsGenCohnTriple.existsUnique_mem_genCohnTree` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 697](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L697). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#exists-unique-mem-gen-cohn-tree).
+Stated but not proved: `MetaMathlibExt.IsGenCohnTriple.existsUnique_mem_genCohnTree` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 697](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L697). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#exists-unique-mem-gen-cohn-tree).
 
 ## The Farey tree
 
@@ -947,7 +947,7 @@ from the root by making the moves of $w$ in order.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 3.2.
 
-Formalized by `MetaMathlibExt.fareyTree`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 707](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L707). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#farey-tree).
+Formalized by `MetaMathlibExt.fareyTree`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 707](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L707). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#farey-tree).
 
 ## Left child of the root of the Farey tree
 
@@ -958,7 +958,7 @@ of the Farey tree is $(0/1, 1/2, 1/1)$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 4.
 
-Formalized by `MetaMathlibExt.fareyTree_false`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 716](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L716). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#farey-tree-false).
+Formalized by `MetaMathlibExt.fareyTree_false`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 716](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L716). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#farey-tree-false).
 
 ## Farey triples
 
@@ -976,7 +976,7 @@ The paper's printed condition writes $d/e$ for $e/f$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 3.2.
 
-Formalized by `MetaMathlibExt.IsFareyTriple`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 725](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L725). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-farey-triple).
+Formalized by `MetaMathlibExt.IsFareyTriple`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 725](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L725). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-farey-triple).
 
 ## The triple $(0/1, 1/1, 1/0)$ is a Farey triple
 
@@ -989,7 +989,7 @@ This triple is the root of the Farey tree.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 3.2.
 
-Formalized by `MetaMathlibExt.isFareyTriple_root`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 734](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L734). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-farey-triple-root).
+Formalized by `MetaMathlibExt.isFareyTriple_root`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 734](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L734). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-farey-triple-root).
 
 ## Basic properties of the Farey tree
 
@@ -1006,7 +1006,7 @@ $a/b < c/d < e/f$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 3.22 (citing Aigner, Section 3.2).
 
-Stated but not proved: `MetaMathlibExt.fareyTree_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 746](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L746). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#farey-tree-properties).
+Stated but not proved: `MetaMathlibExt.fareyTree_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 746](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L746). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#farey-tree-properties).
 
 ## Fraction labels of generalized Cohn matrices
 
@@ -1024,7 +1024,7 @@ where they were created, which gives $C_{0/1}$ and $C_{1/0}$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 3.2.
 
-Formalized by `MetaMathlibExt.IsGenCohnLabel`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 761](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L761). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-cohn-label).
+Formalized by `MetaMathlibExt.IsGenCohnLabel`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 761](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L761). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-cohn-label).
 
 ## The middle matrix of the root of $\mathrm{GCT}(k, \ell)$ has label $1/1$
 
@@ -1037,7 +1037,7 @@ $C_{1/1}(k, \ell)$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 3.2.
 
-Formalized by `MetaMathlibExt.isGenCohnLabel_one`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 770](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L770). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-cohn-label-one).
+Formalized by `MetaMathlibExt.isGenCohnLabel_one`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 770](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L770). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-cohn-label-one).
 
 ## The Cohn labeling is injective and increasing
 
@@ -1053,7 +1053,7 @@ $C' = C_{q'}(k, \ell)$ and $q < q'$, then $I_C < I_{C'}$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Corollary 3.23.
 
-Stated but not proved: `MetaMathlibExt.genCohnLabel_injective_index_strictMono` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 780](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L780). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-label-injective-index-strict-mo).
+Stated but not proved: `MetaMathlibExt.genCohnLabel_injective_index_strictMono` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 780](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L780). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-label-injective-index-strict-mo).
 
 ## Fraction labeling of generalized Markov numbers
 
@@ -1072,7 +1072,7 @@ the number $m_t$ of Gyoda and Maruyama.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 4.
 
-Formalized by `MetaMathlibExt.IsGenMarkovLabel`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 791](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L791). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-label).
+Formalized by `MetaMathlibExt.IsGenMarkovLabel`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 791](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L791). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-label).
 
 ## The fraction $1/1$ labels $k + 2$
 
@@ -1084,7 +1084,7 @@ $m_{1/1} = k + 2$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Section 4.
 
-Formalized by `MetaMathlibExt.isGenMarkovLabel_one`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 800](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L800). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-label-one).
+Formalized by `MetaMathlibExt.isGenMarkovLabel_one`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 800](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L800). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-label-one).
 
 ## Unique maximal triple via the fraction labeling
 
@@ -1098,7 +1098,7 @@ $k$-generalized Markov numbers.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Proposition 4.1.
 
-Stated but not proved: `MetaMathlibExt.hasUniqueMaxGenMarkovTriple_iff_existsUnique_label` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 809](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L809). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#has-unique-max-gen-markov-triple-iff-exi).
+Stated but not proved: `MetaMathlibExt.hasUniqueMaxGenMarkovTriple_iff_existsUnique_label` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 809](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L809). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#has-unique-max-gen-markov-triple-iff-exi).
 
 ## Uniqueness of maximal triples and injectivity of the fraction labeling
 
@@ -1113,7 +1113,7 @@ $m$ is a label of both $n/d$ and $n'/d'$, then $(n, d) = (n', d')$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Corollary 4.2.
 
-Stated but not proved: `MetaMathlibExt.genMarkovUniqueness_iff_label_injective` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 819](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L819). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-uniqueness-iff-label-injectiv).
+Stated but not proved: `MetaMathlibExt.genMarkovUniqueness_iff_label_injective` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 819](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L819). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-uniqueness-iff-label-injectiv).
 
 ## Characteristic number
 
@@ -1126,7 +1126,7 @@ $\mathbb{Z}$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Definition 4.3.
 
-Formalized by `MetaMathlibExt.IsGenMarkovCharNumber`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 829](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L829). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-char-number).
+Formalized by `MetaMathlibExt.IsGenMarkovCharNumber`, a definition declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 829](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L829). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-char-number).
 
 ## Characteristic number of $(1, 5, 2)$
 
@@ -1137,7 +1137,7 @@ $(m_r, m_t, m_s) = (1, 5, 2)$: indeed $0 < 2 < 5/2$ and $1 \cdot 2 \equiv 2 \pmo
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Definition 4.3.
 
-Formalized by `MetaMathlibExt.isGenMarkovCharNumber_one_five_two`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 836](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L836). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-char-number-one-five-two).
+Formalized by `MetaMathlibExt.isGenMarkovCharNumber_one_five_two`, a theorem declared in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 836](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L836). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#is-gen-markov-char-number-one-five-two).
 
 ## Positive corner entry of the generalized Cohn tree for $\ell = -k$
 
@@ -1150,7 +1150,7 @@ the $k$-generalized Cohn tree $\mathrm{GCT}(k, -k)$ at $w$ is positive.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Lemma 4.4.
 
-Stated but not proved: `MetaMathlibExt.genCohnTree_neg_snd_entry_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 844](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L844). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-tree-neg-snd-entry-pos).
+Stated but not proved: `MetaMathlibExt.genCohnTree_neg_snd_entry_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 844](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L844). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-tree-neg-snd-entry-pos).
 
 ## Shape of the generalized Cohn matrices for $\ell = -k$
 
@@ -1166,7 +1166,7 @@ $C_{22} = (3 + 3k)b - u - k$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Lemma 4.5.
 
-Stated but not proved: `MetaMathlibExt.genCohnTree_neg_snd_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 854](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L854). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-tree-neg-snd-eq).
+Stated but not proved: `MetaMathlibExt.genCohnTree_neg_snd_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 854](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L854). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-cohn-tree-neg-snd-eq).
 
 ## The characteristic number solves $m_r x \equiv m_s \pmod{m_t}$
 
@@ -1184,7 +1184,7 @@ characteristic number, the one with the plus sign holds.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Corollary 4.6.
 
-Stated but not proved: `MetaMathlibExt.genMarkovCharNumber_dvd_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 867](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L867). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-char-number-dvd-sub).
+Stated but not proved: `MetaMathlibExt.genMarkovCharNumber_dvd_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 867](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L867). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-char-number-dvd-sub).
 
 ## The characteristic number solves $x^2 + kx + 1 \equiv 0 \pmod{m_t}$
 
@@ -1199,7 +1199,7 @@ $u^2 + ku + 1 \equiv 0 \pmod{m_t}$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Lemma 4.7.
 
-Stated but not proved: `MetaMathlibExt.genMarkovCharNumber_sq_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 878](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L878). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-char-number-sq-add).
+Stated but not proved: `MetaMathlibExt.genMarkovCharNumber_sq_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 878](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L878). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-char-number-sq-add).
 
 ## The characteristic number is less than $m_t/2 - k$
 
@@ -1213,7 +1213,7 @@ then $2(u + k) < m_t$, that is, $u + k < m_t/2$.
 
 - Y. Gyoda and S. Maruyama, *Uniqueness Theorem of Generalized Markov Numbers That Are Prime Powers*, INTEGERS 26 (2026), Article A91, Lemma 4.8.
 
-Stated but not proved: `MetaMathlibExt.genMarkovCharNumber_add_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 888](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L888). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-char-number-add-lt).
+Stated but not proved: `MetaMathlibExt.genMarkovCharNumber_add_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean, line 888](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedMarkovUniquenessWanted.lean#L888). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html#gen-markov-char-number-add-lt).
 
 ## Depends on
 
@@ -1222,4 +1222,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized Markov triples](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/generalized-markov-triples)

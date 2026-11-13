@@ -8,13 +8,13 @@ proof: formalized
 
 # 72.5 Morphisms between integral algebraic spaces
 
-Section 72.5 of the Stacks Project, [Tag 0ENG](https://stacks.math.columbia.edu/tag/0ENG). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 72.5 of the Stacks Project, [Tag 0ENG](https://stacks.math.columbia.edu/tag/0ENG). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AD5, a lemma
 
 [Tag 0AD5](https://stacks.math.columbia.edu/tag/0AD5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.finite_residueFieldHom_genericPoint_of_hasTranscendenceDegreeAt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/EqualDeltaDimension.lean, line 486](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/EqualDeltaDimension.lean#L486). The attribute's comment: “condition (1) implies condition (2): finiteness of the residue field extension at the generic point, from vanishing of the relative transcendence degree there”.
+**`AlgebraicGeometry.Space.finite_residueFieldHom_genericPoint_of_hasTranscendenceDegreeAt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/EqualDeltaDimension.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/EqualDeltaDimension.lean#L486). The attribute's comment: “condition (1) implies condition (2): finiteness of the residue field extension at the generic point, from vanishing of the relative transcendence degree there”.
 
 > **Spaces over Fields, Lemma 0AD5, (1) implies (2).** Let `f : X ⟶ Y` be a dominant
 > morphism of integral algebraic spaces over `S` which is locally of finite type. If the
@@ -38,7 +38,7 @@ theorem finite_residueFieldHom_genericPoint_of_hasTranscendenceDegreeAt_zero
       (residueField B S hS X hXInt.2.1 (genericPoint B S hS hX hXInt))
 ```
 
-**`AlgebraicGeometry.Space.isQuasiFiniteAt_iff_forall_eq_of_pointsMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralGenericallyFinite.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralGenericallyFinite.lean#L109). The attribute's comment: “conditions (4) and (5)”.
+**`AlgebraicGeometry.Space.isQuasiFiniteAt_iff_forall_eq_of_pointsMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralGenericallyFinite.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralGenericallyFinite.lean#L109). The attribute's comment: “conditions (4) and (5)”.
 
 > **Stacks 0AD5, conditions (4) and (5).** Let `f : X ⟶ Y` be a dominant morphism locally of
 > finite type of algebraic spaces over `S` with `Y` integral, and let `x` and `y` be generic
@@ -56,7 +56,7 @@ theorem isQuasiFiniteAt_iff_forall_eq_of_pointsMap_eq
       ∀ x' : points B S hS X, pointsMap B S hS X f x' = y → x' = x
 ```
 
-**`AlgebraicGeometry.Space.hasTranscendenceDegreeAt_zero_of_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralGenericallyFinite.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralGenericallyFinite.lean#L167). The attribute's comment: “condition (4) implies condition (1)”.
+**`AlgebraicGeometry.Space.hasTranscendenceDegreeAt_zero_of_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralGenericallyFinite.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralGenericallyFinite.lean#L167). The attribute's comment: “condition (4) implies condition (1)”.
 
 > **Stacks 0AD5, condition (4) implies condition (1).** A morphism of algebraic spaces over
 > `S` which is quasi-finite at a point of its source has transcendence degree zero there: on an
@@ -71,7 +71,7 @@ theorem hasTranscendenceDegreeAt_zero_of_isQuasiFiniteAt
     HasTranscendenceDegreeAt B S hS f x 0
 ```
 
-**`AlgebraicGeometry.Space.tfae_hasTranscendenceDegreeAt_eq_zero_and_isFiniteOverAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralGenericallyFiniteTfae.lean, line 956](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralGenericallyFiniteTfae.lean#L956).
+**`AlgebraicGeometry.Space.tfae_hasTranscendenceDegreeAt_eq_zero_and_isFiniteOverAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralGenericallyFiniteTfae.lean, line 958](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralGenericallyFiniteTfae.lean#L958).
 
 > **Stacks 0AD5.** Let `S` be a scheme, let `X` and `Y` be integral algebraic spaces over
 > `S`, let `x ∈ |X|` and `y ∈ |Y|` be the generic points, and let `f : X ⟶ Y` be locally of
@@ -115,7 +115,7 @@ theorem tfae_hasTranscendenceDegreeAt_eq_zero_and_isFiniteOverAffineOpen
 
 [Tag 0AD6](https://stacks.math.columbia.edu/tag/0AD6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.degree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralDegree.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralDegree.lean#L214). The attribute's comment: “the degree of X over Y”.
+**`AlgebraicGeometry.Space.degree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralDegree.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralDegree.lean#L214). The attribute's comment: “the degree of X over Y”.
 
 > **Stacks 0AD6.** The degree of `X` over `Y` for a morphism `f : X ⟶ Y` of integral
 > algebraic spaces over `S`: the degree `[κ(x) : κ(y)]` of the extension of residue fields at
@@ -126,7 +126,7 @@ noncomputable def degree (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpace
     (hXint : IsIntegralSpace B S hS X) (hYint : IsIntegralSpace B S hS Y) (f : X ⟶ Y) : ℕ
 ```
 
-**`AlgebraicGeometry.Space.degree_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralDegree.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralDegree.lean#L244). The attribute's comment: “positivity of the degree, under condition (2) of Stacks 0AD5, which this development cannot yet deduce from the other four”.
+**`AlgebraicGeometry.Space.degree_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralDegree.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralDegree.lean#L244). The attribute's comment: “positivity of the degree, under condition (2) of Stacks 0AD5, which this development cannot yet deduce from the other four”.
 
 > **Stacks 0AD6.** The degree of `X` over `Y` is a positive integer once the extension of
 > residue fields at the generic point is finite, which is condition (2) of Stacks 0AD5.
@@ -145,7 +145,7 @@ theorem degree_pos (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpace B S h
 
 [Tag 0ENH](https://stacks.math.columbia.edu/tag/0ENH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.degree_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralDegree.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralDegree.lean#L272). The attribute's comment: “multiplicativity of the degree; local finiteness of type of the two morphisms, finiteness of the two residue field extensions and dominance of g are not needed”.
+**`AlgebraicGeometry.Space.degree_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralDegree.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralDegree.lean#L272). The attribute's comment: “multiplicativity of the degree; local finiteness of type of the two morphisms, finiteness of the two residue field extensions and dominance of g are not needed”.
 
 > **Stacks 0ENH.** For a dominant morphism `f : X ⟶ Y` and a morphism `g : Y ⟶ Z` of
 > integral algebraic spaces over `S`, the degree of `X` over `Z` is the degree of `X` over `Y`
@@ -171,4 +171,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 72.5, Tag 0ENG](https://stacks.math.columbia.edu/tag/0ENG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

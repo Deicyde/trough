@@ -8,7 +8,7 @@ proof: formalized
 
 # 47.16 Dualizing complexes over local rings
 
-Section 47.16 of the Stacks Project, [Tag 0A7M](https://stacks.math.columbia.edu/tag/0A7M). 11 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 47.16 of the Stacks Project, [Tag 0A7M](https://stacks.math.columbia.edu/tag/0A7M). 11 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A7M, the section
 
@@ -16,15 +16,15 @@ Section 47.16 of the Stacks Project, [Tag 0A7M](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`Dualizing.IsNormalizedDualizingComplex`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Normalized.lean#L59), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/NormalizedDualizingConvention.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/NormalizedDualizingConvention.lean#L46) (StacksFrontier): “the normalization convention `RHom_A(κ, ω_A^•) = κ` in degree zero”.
-- [`Dualizing.exists_isNormalizedDualizingComplex_shift`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/NormalizedShift.lean#L324), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/NormalizedDualizingConvention.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/NormalizedDualizingConvention.lean#L48) (StacksFrontier): “every dualizing complex over a Noetherian local ring is a shift of a normalized one”.
-- [`Dualizing.isNormalizedDualizingComplex_shift_iff_eq`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/NormalizedShift.lean#L349), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/NormalizedDualizingConvention.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/NormalizedDualizingConvention.lean#L50) (StacksFrontier): “the normalizing shift is unique”.
+- [`Dualizing.IsNormalizedDualizingComplex`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Normalized.lean#L59), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/NormalizedDualizingConvention.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/NormalizedDualizingConvention.lean#L46) (StacksFrontier): “the normalization convention `RHom_A(κ, ω_A^•) = κ` in degree zero”.
+- [`Dualizing.exists_isNormalizedDualizingComplex_shift`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/NormalizedShift.lean#L324), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/NormalizedDualizingConvention.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/NormalizedDualizingConvention.lean#L48) (StacksFrontier): “every dualizing complex over a Noetherian local ring is a shift of a normalized one”.
+- [`Dualizing.isNormalizedDualizingComplex_shift_iff_eq`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/NormalizedShift.lean#L349), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/NormalizedDualizingConvention.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/NormalizedDualizingConvention.lean#L50) (StacksFrontier): “the normalizing shift is unique”.
 
 ## Tag 0AX1, a lemma
 
 [Tag 0AX1](https://stacks.math.columbia.edu/tag/0AX1) in the Stacks Project.
 
-**`Dualizing.isNormalizedDualizingComplex_derivedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/NormalizedFiniteMap.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/NormalizedFiniteMap.lean#L162).
+**`Dualizing.isNormalizedDualizingComplex_derivedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/NormalizedFiniteMap.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/NormalizedFiniteMap.lean#L162).
 
 > **Stacks Project, Tag 0AX1.** If `A → B` is a finite local homomorphism of Noetherian local
 > rings and `K` is a normalized dualizing complex over `A`, then `RHom_A(B, K)` is a normalized
@@ -45,7 +45,7 @@ theorem isNormalizedDualizingComplex_derivedHom
 
 [Tag 0A7N](https://stacks.math.columbia.edu/tag/0A7N) in the Stacks Project.
 
-**`Dualizing.isNormalizedDualizingComplex_derivedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/NormalizedFiniteMap.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/NormalizedFiniteMap.lean#L162). The attribute's comment: “the surjective case, a surjection of local rings being a finite local homomorphism”.
+**`Dualizing.isNormalizedDualizingComplex_derivedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/NormalizedFiniteMap.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/NormalizedFiniteMap.lean#L162). The attribute's comment: “the surjective case, a surjection of local rings being a finite local homomorphism”.
 
 > **Stacks Project, Tag 0AX1.** If `A → B` is a finite local homomorphism of Noetherian local
 > rings and `K` is a normalized dualizing complex over `A`, then `RHom_A(B, K)` is a normalized
@@ -66,7 +66,7 @@ theorem isNormalizedDualizingComplex_derivedHom
 
 [Tag 0A7P](https://stacks.math.columbia.edu/tag/0A7P) in the Stacks Project.
 
-**`Dualizing.linearEquivalenceFiniteLengthIsoIdentity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Complex/Local.lean, line 888](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Complex/Local.lean#L888).
+**`Dualizing.linearEquivalenceFiniteLengthIsoIdentity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Complex/Local.lean, line 888](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Complex/Local.lean#L888).
 
 > Every linear self-equivalence of finite-length modules over a Noetherian local ring is
 > naturally isomorphic to the identity functor.
@@ -85,7 +85,7 @@ theorem linearEquivalenceFiniteLengthIsoIdentity
 
 [Tag 0A7Q](https://stacks.math.columbia.edu/tag/0A7Q) in the Stacks Project.
 
-**`Dualizing.derivedHomFiniteLengthIsoMatlisDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/FiniteLengthMatlisDuality/MatlisComparison.lean, line 764](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/FiniteLengthMatlisDuality/MatlisComparison.lean#L764).
+**`Dualizing.derivedHomFiniteLengthIsoMatlisDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/FiniteLengthMatlisDuality/MatlisComparison.lean, line 764](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/FiniteLengthMatlisDuality/MatlisComparison.lean#L764).
 
 > **Stacks Project, Tag 0A7Q.** Derived Hom into a normalized dualizing complex agrees
 > naturally, on finite-length modules, with Matlis duality into an injective hull of the residue
@@ -108,7 +108,7 @@ public theorem derivedHomFiniteLengthIsoMatlisDual
 
 [Tag 0A7U](https://stacks.math.columbia.edu/tag/0A7U) in the Stacks Project.
 
-**`Dualizing.depth_eq_least_nonzero_negative_ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DepthFromExt.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DepthFromExt.lean#L287). The attribute's comment: “depth\_from\_ext”.
+**`Dualizing.depth_eq_least_nonzero_negative_ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DepthFromExt.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DepthFromExt.lean#L287). The attribute's comment: “depth\_from\_ext”.
 
 > **Stacks Project, Tag 0A7U, part (3).** For a nonzero finite module over a
 > Noetherian local ring, depth is the least nonnegative integer `δ` for which
@@ -134,7 +134,7 @@ public theorem depth_eq_least_nonzero_negative_ext
         Module.depth A (IsLocalRing.maximalIdeal A) M = (delta : ℕ∞)
 ```
 
-**`Dualizing.ext_degree_mem_Icc_of_nontrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/ExtDegreeBounds.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/ExtDegreeBounds.lean#L430). The attribute's comment: “ext\_degree\_bounds”. References: SGA 2 V (3.1), “(i)”.
+**`Dualizing.ext_degree_mem_Icc_of_nontrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/ExtDegreeBounds.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/ExtDegreeBounds.lean#L430). The attribute's comment: “ext\_degree\_bounds”. References: SGA 2 V (3.1), “(i)”.
 
 > **Stacks Project, Tag 0A7U.** For a nonzero finite module `M` of support dimension `d`,
 > Ext from `M` into a normalized dualizing complex can be nonzero only in the integer degrees
@@ -155,7 +155,7 @@ theorem ext_degree_mem_Icc_of_nontrivial
     i ∈ Set.Icc (-(d : ℤ)) 0
 ```
 
-**`Dualizing.supportDim_ext_le_neg_degree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/ExtSupportBound.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/ExtSupportBound.lean#L357). The attribute's comment: “ext\_support\_bound”. References: SGA 2 V (3.1), “(ii)”.
+**`Dualizing.supportDim_ext_le_neg_degree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/ExtSupportBound.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/ExtSupportBound.lean#L357). The attribute's comment: “ext\_support\_bound”. References: SGA 2 V (3.1), “(ii)”.
 
 > **Stacks Project, Tag 0A7U, support bound.** If `K` is a normalized dualizing
 > complex over a Noetherian local ring `A` and `M` is a nonzero finite `A`-module, then
@@ -178,7 +178,7 @@ public theorem supportDim_ext_le_neg_degree
 
 [Tag 0B5A](https://stacks.math.columbia.edu/tag/0B5A) in the Stacks Project.
 
-**`Dualizing.isCohenMacaulay_iff_ext_concentrated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CohenMacaulayCriterion.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CohenMacaulayCriterion.lean#L287). The attribute's comment: “cm\_criterion”.
+**`Dualizing.isCohenMacaulay_iff_ext_concentrated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CohenMacaulayCriterion.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/CohenMacaulayCriterion.lean#L287). The attribute's comment: “cm\_criterion”.
 
 > **Stacks Project, Tag 0B5A.** For a nonzero finite module over a Noetherian local ring with
 > normalized dualizing complex, Cohen--Macaulayness is equivalent to `Ext` into the dualizing
@@ -207,7 +207,7 @@ public theorem isCohenMacaulay_iff_ext_concentrated
               (ModuleCat.of A M)) K (-i))]
 ```
 
-**`Dualizing.cohenMacaulayExtDuality`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean, line 1041](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean#L1041). The attribute's comment: “cm\_duality, that CM\_d is anti-autoequivalent to itself”.
+**`Dualizing.cohenMacaulayExtDuality`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean, line 1041](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean#L1041). The attribute's comment: “cm\_duality, that CM\_d is anti-autoequivalent to itself”.
 
 > **Cohen--Macaulay duality (Stacks Project, Tag 0B5A).** For a normalized dualizing complex,
 > `Ext` in degree minus the depth induces an anti-autoequivalence of the category of finite
@@ -222,7 +222,7 @@ public noncomputable def cohenMacaulayExtDuality
       CohenMacaulayModulesOfDepth.{u, max (u + 1) (v + 1)} A d
 ```
 
-**`Dualizing.cohenMacaulayExtDuality_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean, line 1052](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean#L1052). The attribute's comment: “cm\_duality, that the anti-autoequivalence is M ↦ Ext^\{-d}(M, ω)”.
+**`Dualizing.cohenMacaulayExtDuality_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean, line 1052](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean#L1052). The attribute's comment: “cm\_duality, that the anti-autoequivalence is M ↦ Ext^\{-d}(M, ω)”.
 
 > The duality functor, after forgetting the Cohen--Macaulay condition, is naturally the
 > canonical contravariant `Ext^{-d}` functor.
@@ -243,7 +243,7 @@ public theorem cohenMacaulayExtDuality_forget
 
 [Tag 0A7R](https://stacks.math.columbia.edu/tag/0A7R) in the Stacks Project.
 
-**`Dualizing.nonempty_iso_single_injectiveHull_of_ringKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/NormalizedZeroDimensional.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/NormalizedZeroDimensional.lean#L75).
+**`Dualizing.nonempty_iso_single_injectiveHull_of_ringKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/NormalizedZeroDimensional.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/NormalizedZeroDimensional.lean#L75).
 
 > **Stacks Project, Tag 0A7R.** A normalized dualizing complex over a zero-dimensional
 > Noetherian local ring is an injective hull of the residue field placed in degree zero.
@@ -264,7 +264,7 @@ theorem nonempty_iso_single_injectiveHull_of_ringKrullDim_eq_zero
 
 [Tag 0A7S](https://stacks.math.columbia.edu/tag/0A7S) in the Stacks Project.
 
-**`Dualizing.exists_distTriang_normalizedDualizing_quotient_finiteLengthIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/NormalizedFiniteLengthQuotient.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/NormalizedFiniteLengthQuotient.lean#L317).
+**`Dualizing.exists_distTriang_normalizedDualizing_quotient_finiteLengthIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/NormalizedFiniteLengthQuotient.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/NormalizedFiniteLengthQuotient.lean#L317).
 
 > **Stacks Project, Tag 0A7S.** If `I` is a finite-length ideal contained in the
 > maximal ideal of a Noetherian local ring `A`, a normalized dualizing complex of `A / I`,
@@ -304,7 +304,7 @@ theorem exists_distTriang_normalizedDualizing_quotient_finiteLengthIdeal
 
 [Tag 0A7T](https://stacks.math.columbia.edu/tag/0A7T) in the Stacks Project.
 
-**`Dualizing.exists_distinguishedTriangle_quotient_nonZeroDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/NormalizedRegularQuotient.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/NormalizedRegularQuotient.lean#L330).
+**`Dualizing.exists_distinguishedTriangle_quotient_nonZeroDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/NormalizedRegularQuotient.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/NormalizedRegularQuotient.lean#L330).
 
 > **Stacks Project, Tag 0A7T.** Dividing a Noetherian local ring by a nonzerodivisor in
 > its maximal ideal produces a normalized dualizing complex fitting into the distinguished
@@ -337,7 +337,7 @@ theorem exists_distinguishedTriangle_quotient_nonZeroDivisor
 
 [Tag 0A7V](https://stacks.math.columbia.edu/tag/0A7V) in the Stacks Project.
 
-**`Dualizing.nontrivial_localized_homology_iff_eq_neg_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/MinimalPrimeNonvanishing.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/MinimalPrimeNonvanishing.lean#L506).
+**`Dualizing.nontrivial_localized_homology_iff_eq_neg_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/MinimalPrimeNonvanishing.lean, line 506](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/MinimalPrimeNonvanishing.lean#L506).
 
 > **Stacks Project, Tag 0A7V.** Let `A` be a Noetherian local ring with a normalized dualizing
 > complex `K`, and let `p` be a minimal prime of `A` with `dim(A/p) = e`. Then the localization at
@@ -362,4 +362,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.16, Tag 0A7M](https://stacks.math.columbia.edu/tag/0A7M)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

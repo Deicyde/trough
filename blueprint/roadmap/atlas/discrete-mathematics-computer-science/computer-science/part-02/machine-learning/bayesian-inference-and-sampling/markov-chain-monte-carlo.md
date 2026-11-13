@@ -8,7 +8,7 @@ proof: formalized
 
 # Markov chain Monte Carlo
 
-30 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html).
+30 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html).
 
 ## Markov kernel of a transition rule
 
@@ -18,7 +18,7 @@ a probability distribution $P(x, \cdot)$ on $\alpha$ gives the Markov kernel on 
 $x$ to $P(x, \cdot)$ viewed as a probability measure, so a set $B$ gets mass
 $\sum_{y \in B} P(x, y)$.
 
-Formalized by `Cslib.MachineLearning.Sampling.pmfKernel`, a definition declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#pmf-kernel).
+Formalized by `Cslib.MachineLearning.Sampling.pmfKernel`, a definition declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#pmf-kernel).
 
 ## Detailed balance implies reversibility
 
@@ -30,7 +30,7 @@ the Markov kernel $\kappa$ of $P$ is reversible with respect to $\pi$, viewed as
 all measurable sets $A$ and $B$,
 $\int_A \kappa(x, B) \, d\pi(x) = \int_B \kappa(x, A) \, d\pi(x)$.
 
-Formalized by `Cslib.MachineLearning.Sampling.isReversible_pmfKernel`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#is-reversible-pmf-kernel).
+Formalized by `Cslib.MachineLearning.Sampling.isReversible_pmfKernel`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#is-reversible-pmf-kernel).
 
 ## Detailed balance implies invariance
 
@@ -41,7 +41,7 @@ $\alpha$. If $\pi(x) P(x, y) = \pi(y) P(y, x)$ for all $x, y \in \alpha$, then $
 measure, is invariant for the Markov kernel $\kappa$ of $P$: for every measurable set $B$,
 $\int \kappa(x, B) \, d\pi(x) = \pi(B)$.
 
-Formalized by `Cslib.MachineLearning.Sampling.invariant_pmfKernel`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#invariant-pmf-kernel).
+Formalized by `Cslib.MachineLearning.Sampling.invariant_pmfKernel`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#invariant-pmf-kernel).
 
 ## Detailed balance gives a stationary distribution
 
@@ -51,7 +51,7 @@ probability distribution $P(x, \cdot)$ on $\alpha$. If $\pi(x) P(x, y) = \pi(y) 
 $x, y \in \alpha$, then one step of $P$ started from $\pi$ is again distributed as $\pi$: for every
 $y \in \alpha$, $\sum_{x \in \alpha} \pi(x) P(x, y) = \pi(y)$.
 
-Formalized by `Cslib.MachineLearning.Sampling.bind_eq_of_detailedBalance`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#bind-eq-of-detailed-balance).
+Formalized by `Cslib.MachineLearning.Sampling.bind_eq_of_detailedBalance`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#bind-eq-of-detailed-balance).
 
 ## Metropolis–Hastings acceptance probability
 
@@ -61,7 +61,7 @@ $Q(x, \cdot)$ on $\alpha$, the acceptance probability of a move from $x$ to $y$ 
 $a(x, y) = \min\bigl(1, \pi(y) Q(y, x) / (\pi(x) Q(x, y))\bigr)$, computed in $[0, \infty]$
 with $c / 0 = \infty$ for $c \ne 0$ and $0 / 0 = 0$.
 
-Formalized by `Cslib.MachineLearning.Sampling.mhAccept`, a definition declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#mh-accept).
+Formalized by `Cslib.MachineLearning.Sampling.mhAccept`, a definition declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#mh-accept).
 
 ## Metropolis–Hastings step
 
@@ -71,7 +71,7 @@ $\alpha$, one Metropolis–Hastings step from $x$ is the distribution of the fol
 $y$ from $Q(x, \cdot)$, then move to $y$ with the Metropolis–Hastings acceptance probability
 $a(x, y)$, and otherwise stay at $x$.
 
-Formalized by `Cslib.MachineLearning.Sampling.mhStep`, a definition declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#mh-step).
+Formalized by `Cslib.MachineLearning.Sampling.mhStep`, a definition declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#mh-step).
 
 ## Detailed balance for Metropolis–Hastings
 
@@ -84,7 +84,7 @@ all $x, y \in \alpha$.
 For $x \ne y$ both sides equal $\min(\pi(x) Q(x, y), \pi(y) Q(y, x))$; no positivity or symmetry
 assumption on $\pi$ or $Q$ is needed.
 
-Formalized by `Cslib.MachineLearning.Sampling.mh_detailedBalance`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#mh-detailed-balance).
+Formalized by `Cslib.MachineLearning.Sampling.mh_detailedBalance`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#mh-detailed-balance).
 
 ## The Metropolis–Hastings kernel is reversible
 
@@ -95,7 +95,7 @@ $Q(x, \cdot)$ on $\alpha$. Then the Markov kernel $\kappa$ of the Metropolis–H
 target $\pi$ and proposal $Q$ is reversible with respect to $\pi$, viewed as a measure: for all
 measurable sets $A$ and $B$, $\int_A \kappa(x, B) \, d\pi(x) = \int_B \kappa(x, A) \, d\pi(x)$.
 
-Formalized by `Cslib.MachineLearning.Sampling.isReversible_mhKernel`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#is-reversible-mh-kernel).
+Formalized by `Cslib.MachineLearning.Sampling.isReversible_mhKernel`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#is-reversible-mh-kernel).
 
 ## The target is stationary for Metropolis–Hastings
 
@@ -108,7 +108,7 @@ set $B$, $\int \kappa(x, B) \, d\pi(x) = \pi(B)$.
 
 No positivity or symmetry assumption on $\pi$ or $Q$ is needed.
 
-Formalized by `Cslib.MachineLearning.Sampling.invariant_mhKernel`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#invariant-mh-kernel).
+Formalized by `Cslib.MachineLearning.Sampling.invariant_mhKernel`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MetropolisHastings.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#invariant-mh-kernel).
 
 ## Normalizer of the conditional law
 
@@ -118,7 +118,7 @@ configuration $x$, the normalizer is $Z_i(x) = \sum_{s \in S} \pi(x[i \mapsto s]
 where $x[i \mapsto s]$ is $x$ with coordinate $i$ set to $s$. It normalizes the conditional law of
 coordinate $i$ given the other coordinates of $x$.
 
-Formalized by `Cslib.MachineLearning.Sampling.condNorm`, a definition declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#cond-norm).
+Formalized by `Cslib.MachineLearning.Sampling.condNorm`, a definition declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#cond-norm).
 
 ## Conditional law of a coordinate
 
@@ -131,7 +131,7 @@ $Z_i(x) = \sum_{t \in S} \pi(x[i \mapsto t])$. In the usual notation this is
 $\pi(x_i = s \mid x_{-i})$, where $x_i$ is coordinate $i$ of $x$ and $x_{-i}$ is the family of
 its other coordinates.
 
-Formalized by `Cslib.MachineLearning.Sampling.condLaw`, a definition declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#cond-law).
+Formalized by `Cslib.MachineLearning.Sampling.condLaw`, a definition declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#cond-law).
 
 ## Gibbs update
 
@@ -141,7 +141,7 @@ update of coordinate $i \in \iota$ from $x$ is the probability distribution of $
 the configuration $x$ with coordinate $i$ set to $s$, where $s$ is drawn from the conditional law
 of coordinate $i$ given the other coordinates of $x$.
 
-Formalized by `Cslib.MachineLearning.Sampling.gibbsStep`, a definition declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#gibbs-step).
+Formalized by `Cslib.MachineLearning.Sampling.gibbsStep`, a definition declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#gibbs-step).
 
 ## Symmetry of differing in one coordinate
 
@@ -149,7 +149,7 @@ For functions $x, y : \iota \to S$ and a coordinate
 $i \in \iota$, if setting coordinate $i$ of $x$ to $y(i)$ gives $y$, then setting coordinate $i$ of
 $y$ to $x(i)$ gives $x$.
 
-Formalized by `Cslib.MachineLearning.Sampling.update_eq_comm`, a theorem declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#update-eq-comm).
+Formalized by `Cslib.MachineLearning.Sampling.update_eq_comm`, a theorem declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#update-eq-comm).
 
 ## Detailed balance for a Gibbs update
 
@@ -162,7 +162,7 @@ configurations $x$ and $y$.
 When $x$ and $y$ differ at most in coordinate $i$, both sides equal $\pi(x) \pi(y) / Z$ for the
 same normalizer $Z$; otherwise both sides are $0$.
 
-Formalized by `Cslib.MachineLearning.Sampling.gibbs_detailedBalance`, a theorem declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#gibbs-detailed-balance).
+Formalized by `Cslib.MachineLearning.Sampling.gibbs_detailedBalance`, a theorem declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#gibbs-detailed-balance).
 
 ## Gibbs updates are reversible
 
@@ -172,7 +172,7 @@ $x$. For every coordinate $i$, the Markov kernel $K$ of the Gibbs update of coor
 reversible with respect to $\pi$: for all measurable sets $A$ and $B$ of configurations,
 $\int_A K(x, B) \, d\pi(x) = \int_B K(x, A) \, d\pi(x)$.
 
-Formalized by `Cslib.MachineLearning.Sampling.isReversible_gibbsKernel`, a theorem declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#is-reversible-gibbs-kernel).
+Formalized by `Cslib.MachineLearning.Sampling.isReversible_gibbsKernel`, a theorem declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#is-reversible-gibbs-kernel).
 
 ## Gibbs sampling leaves the target stationary
 
@@ -182,7 +182,7 @@ every $x$. For every coordinate $i$, $\pi$ is an invariant measure of the Markov
 Gibbs update of coordinate $i$: if $x$ is drawn from $\pi$ and coordinate $i$ is resampled from
 its conditional law given the other coordinates, the result is again distributed as $\pi$.
 
-Formalized by `Cslib.MachineLearning.Sampling.invariant_gibbsKernel`, a theorem declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#invariant-gibbs-kernel).
+Formalized by `Cslib.MachineLearning.Sampling.invariant_gibbsKernel`, a theorem declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#invariant-gibbs-kernel).
 
 ## Systematic-scan Gibbs sampler
 
@@ -192,7 +192,7 @@ $x$. For a list $l = (i_1, \dots, i_n)$ of coordinates, the systematic-scan Gibb
 Markov kernel on configurations that applies the Gibbs updates of the coordinates
 $i_1, i_2, \dots, i_n$ in this order; for the empty list it is the identity kernel.
 
-Formalized by `Cslib.MachineLearning.Sampling.gibbsSweep`, a definition declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#gibbs-sweep).
+Formalized by `Cslib.MachineLearning.Sampling.gibbsSweep`, a definition declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#gibbs-sweep).
 
 ## First step of a Gibbs sweep
 
@@ -204,7 +204,7 @@ $x$, the law $K_{(i, l)}(x)$ of the sampler for the list $(i, l)$ obtained by pu
 of $l$ is the mixture $\int K_l(y) \, P_i(x, dy)$: first coordinate $i$ is updated, then the sweep
 $l$ runs from the result.
 
-Formalized by `Cslib.MachineLearning.Sampling.gibbsSweep_cons_apply`, a theorem declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#gibbs-sweep-cons-apply).
+Formalized by `Cslib.MachineLearning.Sampling.gibbsSweep_cons_apply`, a theorem declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#gibbs-sweep-cons-apply).
 
 ## A full Gibbs sweep leaves the target stationary
 
@@ -214,39 +214,39 @@ every $x$. For every finite list $l$ of coordinates, in any order and possibly w
 $\pi$ is an invariant measure of the systematic-scan Gibbs sampler that updates the coordinates in
 the order of $l$.
 
-Formalized by `Cslib.MachineLearning.Sampling.invariant_gibbsSweep`, a theorem declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#invariant-gibbs-sweep).
+Formalized by `Cslib.MachineLearning.Sampling.invariant_gibbsSweep`, a theorem declared in [CSLibExt/MachineLearning/Sampling/GibbsSampling.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/GibbsSampling.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#invariant-gibbs-sweep).
 
 ## Probabilities of a finite law sum to one
 
 The probabilities of a law on a finite type, as reals, sum to `1`.
 
-Formalized by `Cslib.MachineLearning.Sampling.sum_toReal_pmf`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#sum-to-real-pmf).
+Formalized by `Cslib.MachineLearning.Sampling.sum_toReal_pmf`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#sum-to-real-pmf).
 
 ## Metropolis–Hastings transition matrix
 
 The transition matrix `P(x, y) = mhStep π Q x y` of the Metropolis–Hastings chain, as a real
 matrix.
 
-Formalized by `Cslib.MachineLearning.Sampling.mhMatrix`, a definition declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#mh-matrix).
+Formalized by `Cslib.MachineLearning.Sampling.mhMatrix`, a definition declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#mh-matrix).
 
 ## Metropolis–Hastings matrix is stochastic
 
 The Metropolis–Hastings matrix is stochastic.
 
-Formalized by `Cslib.MachineLearning.Sampling.mhMatrix_mem_rowStochastic`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#mh-matrix-mem-row-stochastic).
+Formalized by `Cslib.MachineLearning.Sampling.mhMatrix_mem_rowStochastic`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#mh-matrix-mem-row-stochastic).
 
 ## Target is stationary for the Metropolis–Hastings matrix
 
 The target is stationary for the Metropolis–Hastings matrix.
 
-Formalized by `Cslib.MachineLearning.Sampling.vecMul_mhMatrix`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#vec-mul-mh-matrix).
+Formalized by `Cslib.MachineLearning.Sampling.vecMul_mhMatrix`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#vec-mul-mh-matrix).
 
 ## Primitivity of the Metropolis–Hastings matrix
 
 For a target with full support and a proposal with primitive transition matrix and symmetric
 support, the Metropolis–Hastings matrix is primitive.
 
-Formalized by `Cslib.MachineLearning.Sampling.isPrimitive_mhMatrix`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#is-primitive-mh-matrix).
+Formalized by `Cslib.MachineLearning.Sampling.isPrimitive_mhMatrix`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#is-primitive-mh-matrix).
 
 ## The Metropolis–Hastings chain converges to its target
 
@@ -254,40 +254,40 @@ Under the hypotheses of
 `isPrimitive_mhMatrix`, there are `C` and `0 ≤ ρ < 1` with `d_TV(Pⁿ(x, ·), π) ≤ C ρⁿ` for every
 start `x`.
 
-Formalized by `Cslib.MachineLearning.Sampling.exists_tvDist_mhMatrix_pow_le`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#exists-tv-dist-mh-matrix-pow-le).
+Formalized by `Cslib.MachineLearning.Sampling.exists_tvDist_mhMatrix_pow_le`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#exists-tv-dist-mh-matrix-pow-le).
 
 ## Transition matrix of the systematic-scan Gibbs sweep
 
 The transition matrix `P(x, y) = gibbsSweep π hπ l x {y}` of the systematic-scan Gibbs
 sweep along `l`, as a real matrix.
 
-Formalized by `Cslib.MachineLearning.Sampling.gibbsSweepMatrix`, a definition declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#gibbs-sweep-matrix).
+Formalized by `Cslib.MachineLearning.Sampling.gibbsSweepMatrix`, a definition declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#gibbs-sweep-matrix).
 
 ## Gibbs sweep matrix is stochastic
 
 The Gibbs sweep matrix is stochastic.
 
-Formalized by `Cslib.MachineLearning.Sampling.gibbsSweepMatrix_mem_rowStochastic`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#gibbs-sweep-matrix-mem-row-stochastic).
+Formalized by `Cslib.MachineLearning.Sampling.gibbsSweepMatrix_mem_rowStochastic`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#gibbs-sweep-matrix-mem-row-stochastic).
 
 ## Target is stationary for the Gibbs sweep matrix
 
 The target is stationary for the Gibbs sweep matrix.
 
-Formalized by `Cslib.MachineLearning.Sampling.vecMul_gibbsSweepMatrix`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#vec-mul-gibbs-sweep-matrix).
+Formalized by `Cslib.MachineLearning.Sampling.vecMul_gibbsSweepMatrix`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#vec-mul-gibbs-sweep-matrix).
 
 ## Positivity of Gibbs sweep transition probabilities
 
 If the sweep visits every coordinate, every transition probability of the sweep is
 positive.
 
-Formalized by `Cslib.MachineLearning.Sampling.gibbsSweepMatrix_pos`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#gibbs-sweep-matrix-pos).
+Formalized by `Cslib.MachineLearning.Sampling.gibbsSweepMatrix_pos`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#gibbs-sweep-matrix-pos).
 
 ## The systematic-scan Gibbs sampler converges to its target
 
 If the sweep visits every
 coordinate, there are `C` and `0 ≤ ρ < 1` with `d_TV(Pⁿ(x, ·), π) ≤ C ρⁿ` for every start `x`.
 
-Formalized by `Cslib.MachineLearning.Sampling.exists_tvDist_gibbsSweepMatrix_pow_le`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#exists-tv-dist-gibbs-sweep-matrix-pow-le).
+Formalized by `Cslib.MachineLearning.Sampling.exists_tvDist_gibbsSweepMatrix_pow_le`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MCMCConvergence.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html#exists-tv-dist-gibbs-sweep-matrix-pow-le).
 
 ## Depends on
 
@@ -296,4 +296,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Markov chain Monte Carlo](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/markov-chain-monte-carlo)

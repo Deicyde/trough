@@ -7,7 +7,7 @@ statement: formalized
 
 # Generalized Fermat equation
 
-7 results, 3 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html).
+7 results, 3 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html).
 
 ## Solvable generalized Fermat equation
 
@@ -19,7 +19,7 @@ $x^m + y^n = z^r$.
 
 - Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have Solutions?*, INTEGERS 24 (2024), Article A48, Section 1, equation (1).
 
-Formalized by `MetaMathlibExt.GeneralizedFermatSolvable`, a definition declared in [WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html#generalized-fermat-solvable).
+Formalized by `MetaMathlibExt.GeneralizedFermatSolvable`, a definition declared in [WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html#generalized-fermat-solvable).
 
 ## A solution of x³ + y⁶ = z²
 
@@ -30,7 +30,7 @@ integers, namely $2^3 + 1^6 = 3^2$.
 
 - Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have Solutions?*, INTEGERS 24 (2024), Article A48, Lemma 1 (the case `s = t = w = 1`).
 
-Formalized by `MetaMathlibExt.generalizedFermatSolvable_three_six_two`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html#generalized-fermat-solvable-three-six-tw).
+Formalized by `MetaMathlibExt.generalizedFermatSolvable_three_six_two`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html#generalized-fermat-solvable-three-six-tw).
 
 ## Swapping the first two exponents of a generalized Fermat equation
 
@@ -42,7 +42,7 @@ $x^n + y^m = z^r$.
 
 - Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have Solutions?*, INTEGERS 24 (2024), Article A48, Section 1, equation (1).
 
-Formalized by `MetaMathlibExt.GeneralizedFermatSolvable.swap`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html#swap).
+Formalized by `MetaMathlibExt.GeneralizedFermatSolvable.swap`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html#swap).
 
 ## Generalized Fermat equations with two non-coprime pairs of exponents
 
@@ -59,7 +59,7 @@ Positivity of $s, t, w$ is automatic from $m, n, r \ge 2$.
 
 - Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have Solutions?*, INTEGERS 24 (2024), Article A48, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.not_generalizedFermatSolvable_of_two_gcd_gt_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html#not-generalized-fermat-solvable-of-two-g).
+Stated but not proved: `MetaMathlibExt.not_generalizedFermatSolvable_of_two_gcd_gt_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html#not-generalized-fermat-solvable-of-two-g).
 
 ## The Bartolomé–Mihăilescu theorem for prime exponents
 
@@ -72,7 +72,7 @@ The source quotes this result from Bartolomé and Mihăilescu, arXiv:2108.08572.
 
 - Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have Solutions?*, INTEGERS 24 (2024), Article A48, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.pow_add_pow_ne_pow_of_prime_five_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html#pow-add-pow-ne-pow-of-prime-five-le).
+Stated but not proved: `MetaMathlibExt.pow_add_pow_ne_pow_of_prime_five_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html#pow-add-pow-ne-pow-of-prime-five-le).
 
 ## Generalized Fermat equations with exponents 3s, 6t and 2w
 
@@ -85,7 +85,7 @@ otherwise it has no solution in nonzero integers.
 
 - Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have Solutions?*, INTEGERS 24 (2024), Article A48, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.generalizedFermat_three_six_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html#generalized-fermat-three-six-two-mul).
+Stated but not proved: `MetaMathlibExt.generalizedFermat_three_six_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html#generalized-fermat-three-six-two-mul).
 
 ## Generalized Fermat equations with exponents u, uv and v
 
@@ -99,7 +99,7 @@ $3 \mid v$, and $(u, v) \ne (3, 2)$, the equation has no solution in nonzero int
 
 - Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have Solutions?*, INTEGERS 24 (2024), Article A48, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.generalizedFermat_mul_exponent` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html#generalized-fermat-mul-exponent).
+Stated but not proved: `MetaMathlibExt.generalizedFermat_mul_exponent` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFermatExponentsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html#generalized-fermat-mul-exponent).
 
 ## Depends on
 
@@ -108,4 +108,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized Fermat equation](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation)

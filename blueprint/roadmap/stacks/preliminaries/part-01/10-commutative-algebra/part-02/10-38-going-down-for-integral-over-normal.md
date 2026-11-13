@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: RingHom.IsIntegralElemOverIdeal, isIntegralElem_of_isIntegralOverIdeal, isIntegralElem_of_isIntegralElemOverIdeal, zero_isIntegralElemOverIdeal, mul_left_isIntegralElemOverIdeal, Polynomial.exists_monic_aeval_eq_zero_forall_mem_pow_of_mem_map, minpoly.isIntegrallyClosed_eq_field_fractions
+lean: RingHom.IsIntegralElemOverIdeal, isIntegralElemOverIdeal_iff_isIntegralElem, Ideal.exists_submodule_and_mul_isIntegralElemOverIdeal, Polynomial.exists_monic_aeval_eq_zero_forall_mem_pow_of_mem_map, Polynomial.isIntegral_coeff_and_coeff_mem_radical_of_monic_dvd, minpoly.isIntegrallyClosed_eq_field_fractions
 statement: formalized
 proof: formalized
 ---
 
 # 10.38 Going down for integral over normal
 
-Section 10.38 of the Stacks Project, [Tag 037E](https://stacks.math.columbia.edu/tag/037E). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.38 of the Stacks Project, [Tag 037E](https://stacks.math.columbia.edu/tag/037E). 6 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00H2, a definition
 
 [Tag 00H2](https://stacks.math.columbia.edu/tag/00H2) in the Stacks Project.
 
-**`RingHom.IsIntegralElemOverIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean#L67).
+**`RingHom.IsIntegralElemOverIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean#L67).
 
 > An element `g ∈ S` is *integral over the ideal `I ⊂ R`* with respect to the
 > ring map `φ : R →+* S` if there exists a monic polynomial `P ∈ R[X]` of degree
@@ -35,63 +35,35 @@ def IsIntegralElemOverIdeal {R S : Type*} [CommRing R] [Ring S]
 
 [Tag 00H3](https://stacks.math.columbia.edu/tag/00H3) in the Stacks Project.
 
-**`isIntegralElem_of_isIntegralOverIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean#L226). The attribute's comment: “Forward implication only: integral over I implies C s * X integral over reesAlgebra I. The converse half of the equivalence is not formalized.”.
+**`isIntegralElemOverIdeal_iff_isIntegralElem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean#L290).
 
-> If `s : S` is integral over the ideal `I ⊂ R` (with respect to `φ : R →+* S`),
-> then `C s · X ∈ S[X]` is integral over the Rees subalgebra `reesAlgebra I`
-> viewed inside `S[X]` via the coefficient-wise extension of `φ`.
-
-```lean
-theorem isIntegralElem_of_isIntegralOverIdeal (φ : R →+* S) (I : Ideal R) (s : S)
-    (h : IsIntegralOverIdeal φ I s) :
-    (reesToPolyS φ I).IsIntegralElem (C s * X)
-```
-
-**`isIntegralElem_of_isIntegralElemOverIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/OverIdealIntegrallyClosed.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/OverIdealIntegrallyClosed.lean#L92). The attribute's comment: “Forward implication only: integral over I implies C s * X integral over reesAlgebra I. The converse half of the equivalence is not formalized.”.
-
-> **[Stacks, Tag 00H3], the forward implication.** If `s : S` is integral over the ideal
-> `I ⊆ R` with respect to `φ : R →+* S`, then `C s · X ∈ S[X]` is integral over the Rees
-> subalgebra `reesAlgebra I`, viewed inside `S[X]` along the coefficientwise extension of `φ`.
+> **[Stacks, Tag 00H3].** Let `φ : R →+* S` be a ring map and `I ⊆ R` an ideal, and let
+> `A = reesAlgebra I = ∑ Iⁿ Xⁿ ⊆ R[X]`, mapped to `S[X]` along the coefficientwise extension of `φ`.
+> An element `s : S` is integral over `I` if and only if `C s · X ∈ S[X]` is integral over `A`.
 >
-> A monic witness of degree zero is `1`, whose vanishing at `s` makes `s = 0`, and then `C s · X`
-> is zero and `X` is a witness; otherwise `forwardWitness` multiplies the `i`-th coefficient by
-> `X ^ (n - i)` to land in the Rees algebra.
+> Both directions are proved: `isIntegralElem_of_isIntegralOverIdeal` (forward) and
+> `isIntegralElemOverIdeal_of_isIntegralElem` (converse, by taking the `X ^ d` coefficient).
 
 ```lean
-theorem isIntegralElem_of_isIntegralElemOverIdeal (φ : R →+* S) (I : Ideal R) (s : S)
-    (h : φ.IsIntegralElemOverIdeal I s) :
-    (reesToPolyS φ I).IsIntegralElem (C s * X)
+theorem isIntegralElemOverIdeal_iff_isIntegralElem (φ : R →+* S) (I : Ideal R) (s : S) :
+    φ.IsIntegralElemOverIdeal I s ↔ (reesToPolyS φ I).IsIntegralElem (C s * X)
 ```
 
 ## Tag 00H4, a lemma
 
 [Tag 00H4](https://stacks.math.columbia.edu/tag/00H4) in the Stacks Project.
 
-**`zero_isIntegralElemOverIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean#L264). The attribute's comment: “Partial: only that 0 is integral over I. Closure under addition, and hence the submodule conclusion of 00H4, is not formalized.”.
+**`Ideal.exists_submodule_and_mul_isIntegralElemOverIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean#L423).
 
-> The zero element of `S` is integral over any ideal `I ⊂ R`, witnessed by
-> the polynomial `X`. (Partial component of Stacks `00H4`.)
-
-```lean
-theorem zero_isIntegralElemOverIdeal
-    {R : Type*} {S : Type*} [CommRing R] [Ring S]
-    (φ : R →+* S) (I : Ideal R) :
-    RingHom.IsIntegralElemOverIdeal φ I (0 : S)
-```
-
-**`mul_left_isIntegralElemOverIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean#L290). The attribute's comment: “Partial: only closure under R-scalar multiplication. Closure under addition, and hence the submodule conclusion of 00H4, is not formalized.”.
-
-> If `g ∈ S` is integral over the ideal `I` and `r ∈ R`, then `φ r * g` is
-> integral over `I`. (Partial component of Stacks `00H4`: closure under
-> `R`-scalar multiplication, with the action expressed through the ring map
-> `φ`.)
+> **[Stacks, Tag 00H4].** Let `S` be an `R`-algebra and `I ⊆ R` an ideal. The elements of `S`
+> integral over `I` form an `R`-submodule of `S`; furthermore, if `s ∈ S` is integral over `R` and
+> `g ∈ S` is integral over `I`, then `s * g` is integral over `I`.
 
 ```lean
-theorem mul_left_isIntegralElemOverIdeal
-    {R : Type*} {S : Type*} [CommRing R] [CommRing S]
-    (φ : R →+* S) (I : Ideal R) (r : R) (g : S)
-    (h : RingHom.IsIntegralElemOverIdeal φ I g) :
-    RingHom.IsIntegralElemOverIdeal φ I (φ r * g)
+theorem Ideal.exists_submodule_and_mul_isIntegralElemOverIdeal (I : Ideal R) :
+    (∃ M : Submodule R S, ∀ g, g ∈ M ↔ (algebraMap R S).IsIntegralElemOverIdeal I g) ∧
+      ∀ s g : S, IsIntegral R s → (algebraMap R S).IsIntegralElemOverIdeal I g →
+        (algebraMap R S).IsIntegralElemOverIdeal I (s * g)
 ```
 
 ## Tag 00H5, a lemma
@@ -100,7 +72,28 @@ theorem mul_left_isIntegralElemOverIdeal
 
 Declarations registered for the tag:
 
-- [`Polynomial.exists_monic_aeval_eq_zero_forall_mem_pow_of_mem_map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.exists_monic_aeval_eq_zero_forall_mem_pow_of_mem_map#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean#L322) (StacksFrontier).
+- [`Polynomial.exists_monic_aeval_eq_zero_forall_mem_pow_of_mem_map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.exists_monic_aeval_eq_zero_forall_mem_pow_of_mem_map#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean, line 447](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/OverIdeal.lean#L447) (StacksFrontier).
+
+## Tag 00H6, a lemma
+
+[Tag 00H6](https://stacks.math.columbia.edu/tag/00H6) in the Stacks Project.
+
+**`Polynomial.isIntegral_coeff_and_coeff_mem_radical_of_monic_dvd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Polynomial/MonicDvdCoeff.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Polynomial/MonicDvdCoeff.lean#L129). The attribute's comment: “(1) is Mathlib's `Polynomial.isIntegral_coeff_of_dvd`; (2) proved here”.
+
+> **Stacks 00H6.** Let `K` be a field, and let `g = xⁿ + aₙ₋₁xⁿ⁻¹ + ⋯ + a₀` divide
+> `f = xᵐ + bₘ₋₁xᵐ⁻¹ + ⋯ + b₀` in `K[x]`. Then
+> 1. the `aᵢ` are integral over any subring `R₀ ⊆ K` containing the `bⱼ`, and
+> 2. each `aᵢ` lies in `√((b₀, …, bₘ₋₁)R)` for any subring `R ⊆ K` containing the `aᵢ` and the
+>    `bⱼ`.
+
+```lean
+theorem isIntegral_coeff_and_coeff_mem_radical_of_monic_dvd {f g : K[X]} (hf : f.Monic)
+    (hg : g.Monic) (hgf : g ∣ f) :
+    (∀ R₀ : Subring K, (∀ j, f.coeff j ∈ R₀) → ∀ i, IsIntegral R₀ (g.coeff i)) ∧
+    (∀ R : Subring K, (∀ j, f.coeff j ∈ R) → ∀ hgR : ∀ i, g.coeff i ∈ R,
+      ∀ i < g.natDegree, (⟨g.coeff i, hgR i⟩ : R) ∈
+        (Ideal.span {x : R | ∃ j < f.natDegree, (x : K) = f.coeff j}).radical)
+```
 
 ## Tag 00H7, a lemma
 
@@ -108,7 +101,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`minpoly.isIntegrallyClosed_eq_field_fractions`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=minpoly.isIntegrallyClosed_eq_field_fractions#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Ideal/GoingDown/Criteria.lean, line 21](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/GoingDown/Criteria.lean#L21) (StacksFrontier): “the minimal polynomial over the fraction field is the base change of the minimal polynomial over the integrally closed base, so its coefficients lie in the base”.
+- [`minpoly.isIntegrallyClosed_eq_field_fractions`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=minpoly.isIntegrallyClosed_eq_field_fractions#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Ideal/GoingDown/Criteria.lean, line 21](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/GoingDown/Criteria.lean#L21) (StacksFrontier): “the minimal polynomial over the fraction field is the base change of the minimal polynomial over the integrally closed base, so its coefficients lie in the base”.
 
 ## Depends on
 
@@ -117,4 +110,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.38, Tag 037E](https://stacks.math.columbia.edu/tag/037E)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

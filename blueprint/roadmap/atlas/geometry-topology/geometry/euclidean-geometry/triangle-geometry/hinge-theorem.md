@@ -8,7 +8,7 @@ proof: formalized
 
 # Hinge theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/hinge-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/hinge-theorem/index.html).
 
 ## Hinge theorem in inner product spaces
 
@@ -22,7 +22,7 @@ Proof: Expand both squared opposite sides by the law of cosines and compare them
 
 - Euclid's *Elements*, Book I, Proposition 24.
 
-Formalized by `MetaMathlibExt.hinge_theorem_of_inner_lt`, a theorem declared in [MathlibExt/Geometry/Euclidean/Hinge.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/Hinge.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/hinge-theorem/index.html#hinge-theorem-of-inner-lt).
+Formalized by `MetaMathlibExt.hinge_theorem_of_inner_lt`, a theorem declared in [MathlibExt/Geometry/Euclidean/Hinge.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/Hinge.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/hinge-theorem/index.html#hinge-theorem-of-inner-lt).
 
 ## Hinge theorem
 
@@ -40,7 +40,7 @@ Proof: The vector law of cosines compares the squared opposite sides, following 
 
 - Euclid's Elements, Book I, Proposition 24 (https://mathcs.clarku.edu/~djoyce/elements/bookI/propI24.html); see also https://en.wikipedia.org/wiki/Hinge_theorem.
 
-Formalized by `MetaMathlibExt.hinge_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/Hinge.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/Hinge.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/hinge-theorem/index.html#hinge-theorem).
+Formalized by `MetaMathlibExt.hinge_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/Hinge.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/Hinge.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/hinge-theorem/index.html#hinge-theorem).
 
 ## Depends on
 
@@ -49,4 +49,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hinge theorem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/hinge-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/hinge-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/hinge-theorem)

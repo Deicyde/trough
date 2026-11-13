@@ -8,13 +8,13 @@ proof: formalized
 
 # 25.11 Hypercoverings of spaces
 
-Section 25.11 of the Stacks Project, [Tag 01H1](https://stacks.math.columbia.edu/tag/01H1). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 25.11 of the Stacks Project, [Tag 01H1](https://stacks.math.columbia.edu/tag/01H1). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01H2, an equation
 
 [Tag 01H2](https://stacks.math.columbia.edu/tag/01H2) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.iSup_eq_top_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Spaces.lean, line 451](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Spaces.lean#L451).
+**`Stacks.CategoryTheory.Hypercovering.iSup_eq_top_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Spaces.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Spaces.lean#L455).
 
 > **Stacks Project, Tag 01H2.** In a hypercovering of a topological space, the opens attached
 > to the degree-zero indices cover the whole space.
@@ -30,7 +30,7 @@ theorem iSup_eq_top_of_isHypercovering {X : Type u} [TopologicalSpace X]
 
 [Tag 01H3](https://stacks.math.columbia.edu/tag/01H3) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.inf_eq_iSup_edges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Spaces.lean, line 468](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Spaces.lean#L468).
+**`Stacks.CategoryTheory.Hypercovering.inf_eq_iSup_edges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Spaces.lean, line 472](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Spaces.lean#L472).
 
 > **Stacks Project, Tag 01H3.** In a hypercovering of a topological space, the intersection of
 > the opens attached to two vertices is the union of the opens attached to the edges whose zeroth
@@ -52,7 +52,7 @@ theorem inf_eq_iSup_edges {X : Type u} [TopologicalSpace X]
 
 [Tag 01H4](https://stacks.math.columbia.edu/tag/01H4) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.intersection_eq_union_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Spaces.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Spaces.lean#L485).
+**`Stacks.CategoryTheory.Hypercovering.intersection_eq_union_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Spaces.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Spaces.lean#L489).
 
 > **Stacks Project, Tag 01H4.** In a hypercovering of a topological space, the intersection of
 > a compatible family of `n + 3` degree-`n + 1` opens is the union of the degree-`n + 2` opens whose
@@ -78,7 +78,7 @@ theorem intersection_eq_union_of_isHypercovering
 
 [Tag 01H6](https://stacks.math.columbia.edu/tag/01H6) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.exists_hypercovering_of_isTopologicalBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/TopologicalBasis.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/TopologicalBasis.lean#L260).
+**`Stacks.CategoryTheory.Hypercovering.exists_hypercovering_of_isTopologicalBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/TopologicalBasis.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/TopologicalBasis.lean#L260).
 
 > **Stacks Project, Tag 01H6.** Every basis of a topological space supports a hypercovering all
 > of whose constituent open subsets belong to that basis.
@@ -96,7 +96,7 @@ theorem exists_hypercovering_of_isTopologicalBasis
 
 [Tag 01H7](https://stacks.math.columbia.edu/tag/01H7) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.exists_finite_hypercovering_of_isTopologicalBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/TopologicalBasis.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/TopologicalBasis.lean#L314).
+**`Stacks.CategoryTheory.Hypercovering.exists_finite_hypercovering_of_isTopologicalBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/TopologicalBasis.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/TopologicalBasis.lean#L314).
 
 > **Stacks Project, Tag 01H7.** A quasi-compact topological space with a basis of
 > quasi-compact opens and quasi-compact intersections of quasi-compact opens has a hypercovering
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 25.11, Tag 01H1](https://stacks.math.columbia.edu/tag/01H1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

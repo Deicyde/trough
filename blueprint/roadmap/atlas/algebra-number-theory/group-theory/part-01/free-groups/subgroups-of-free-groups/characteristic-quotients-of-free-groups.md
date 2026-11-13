@@ -7,7 +7,7 @@ statement: formalized
 
 # Characteristic quotients of free groups
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/characteristic-quotients-of-free-groups/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/characteristic-quotients-of-free-groups/index.html).
 
 ## Kourovka Problem 17.62 (two-generated characteristic quotients of free groups)
 
@@ -17,7 +17,7 @@ characteristic subgroup $C \ne F_n$ such that the quotient $F_n / C$ is generate
 hence by fewer than $n$ elements. This is the positive answer to Problem 17.62 (J. Conrad) in
 every rank where two generators are fewer than $n$.
 
-Formalized by `MathlibExt.GroupTheory.FreeGroupCharacteristicQuotientRankKourovka17Problem62Wanted.characteristicQuotientFewerGenerators`, a definition declared in [WantedExt/GroupTheory/FreeGroupCharacteristicQuotientRankKourovka17Problem62Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FreeGroupCharacteristicQuotientRankKourovka17Problem62Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/characteristic-quotients-of-free-groups/index.html#characteristic-quotient-fewer-generators).
+Formalized by `MathlibExt.GroupTheory.FreeGroupCharacteristicQuotientRankKourovka17Problem62Wanted.characteristicQuotientFewerGenerators`, a definition declared in [WantedExt/GroupTheory/FreeGroupCharacteristicQuotientRankKourovka17Problem62Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FreeGroupCharacteristicQuotientRankKourovka17Problem62Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/characteristic-quotients-of-free-groups/index.html#characteristic-quotient-fewer-generators).
 
 ## Free groups of rank at least 3 have proper two-generated characteristic quotients
 
@@ -36,7 +36,7 @@ $C$ is proper since the quotient is infinite. The Kourovka Notebook (21st issue)
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 17.62 (J. Conrad); resolution: R. Coulon and F. Fournier-Facio, Infinite simple characteristic quotients, preprint, arXiv:2312.11684, Theorem 1.1 (for all n ≥ 2, the free group of rank n admits continuum many pairwise non-isomorphic, 2-generated, infinite, simple, characteristic quotients; Section 1 notes that this answers Problem 17.62); the Kourovka Notebook (21st issue) marks 17.62 solved (Yes, it is possible; moreover, for all n ≥ 2, F_n admits continuum many pairwise non-isomorphic infinite simple characteristic 2-generated quotients), https://arxiv.org/abs/2312.11684.
 
-Stated but not proved: `MathlibExt.GroupTheory.FreeGroupCharacteristicQuotientRankKourovka17Problem62Wanted.characteristicQuotientFewerGenerators_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/FreeGroupCharacteristicQuotientRankKourovka17Problem62Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FreeGroupCharacteristicQuotientRankKourovka17Problem62Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/characteristic-quotients-of-free-groups/index.html#characteristic-quotient-fewer-generators-2).
+Stated but not proved: `MathlibExt.GroupTheory.FreeGroupCharacteristicQuotientRankKourovka17Problem62Wanted.characteristicQuotientFewerGenerators_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/FreeGroupCharacteristicQuotientRankKourovka17Problem62Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FreeGroupCharacteristicQuotientRankKourovka17Problem62Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/characteristic-quotients-of-free-groups/index.html#characteristic-quotient-fewer-generators-2).
 
 ## Depends on
 
@@ -45,4 +45,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Characteristic quotients of free groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/characteristic-quotients-of-free-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/characteristic-quotients-of-free-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/characteristic-quotients-of-free-groups)

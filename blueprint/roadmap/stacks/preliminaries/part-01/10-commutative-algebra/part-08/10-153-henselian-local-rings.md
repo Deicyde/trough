@@ -1,38 +1,42 @@
 ---
 declaration: section
 origin: cited
-lean: normal_local_domain_sepClosed_fractionField_isStrictlyHenselian, hensel_uniqueness, HenselianLocalRing.TFAE_factorization_etale_quasiFinite, HenselianLocalRing.henselianLocalRing_and_finite_of_finite_of_quasiFiniteAt, exists_algEquiv_prod_of_henselianLocalRing, exists_prod_local_purelyInseparable_not_quasiFiniteAt, CommAlgCat.FiniteEtale.isEquivalence_baseChange_residueField, Algebra.IsUnramifiedIn.exists_algEquiv_prod_quotient
+lean: henselianLocalRing_iff_and_strictlyHenselianLocalRing_iff, hensel_uniqueness, HenselianLocalRing.TFAE_factorization_etale_quasiFinite, HenselianLocalRing.henselianLocalRing_and_finite_of_finite_of_quasiFiniteAt, exists_algEquiv_prod_of_henselianLocalRing, exists_prod_local_purelyInseparable_not_quasiFiniteAt, CommAlgCat.FiniteEtale.isEquivalence_baseChange_residueField, Algebra.IsUnramifiedIn.exists_algEquiv_prod_quotient
 statement: formalized
 proof: formalized
 ---
 
 # 10.153 Henselian local rings
 
-Section 10.153 of the Stacks Project, [Tag 04GE](https://stacks.math.columbia.edu/tag/04GE). 13 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.153 of the Stacks Project, [Tag 04GE](https://stacks.math.columbia.edu/tag/04GE). 13 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04GF, a definition
 
 [Tag 04GF](https://stacks.math.columbia.edu/tag/04GF) in the Stacks Project.
 
-**`normal_local_domain_sepClosed_fractionField_isStrictlyHenselian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Criteria.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Criteria.lean#L326). References: SGA 7 I (0.0.3), “partial”.
+**`henselianLocalRing_iff_and_strictlyHenselianLocalRing_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Definition.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Definition.lean#L60). The attribute's comment: “both parts: Mathlib's `HenselianLocalRing` and the library's `StrictlyHenselianLocalRing` are each shown equivalent to the Stacks wording”.
 
-> **Stacks Tag 04GF.** Let `R` be a normal local domain (a local integral domain that
-> is integrally closed in its fraction field `K`). If `K` is separably algebraically
-> closed, then `R` is strictly henselian, i.e. `R` is a henselian local ring and its
-> residue field is separably algebraically closed.
+> Let `(R, 𝔪, κ)` be a local ring. Then
+> 1. `R` is henselian if and only if for every monic `f ∈ R[T]` and every root `a₀ ∈ κ` of `f̄`
+>    with `f̄'(a₀) ≠ 0` there is `a ∈ R` with `f(a) = 0` and `ā = a₀`;
+> 2. `R` is strictly henselian if and only if `R` is henselian and `κ` is separably
+>    algebraically closed.
 
 ```lean
-theorem normal_local_domain_sepClosed_fractionField_isStrictlyHenselian
-    (R : Type*) [CommRing R] [IsLocalRing R] [IsDomain R] [IsIntegrallyClosed R]
-    (K : Type*) [Field K] [Algebra R K] [IsFractionRing R K] [IsSepClosed K] :
-    HenselianLocalRing R ∧ IsSepClosed (IsLocalRing.ResidueField R)
+theorem henselianLocalRing_iff_and_strictlyHenselianLocalRing_iff (R : Type*) [CommRing R]
+    [IsLocalRing R] :
+    (HenselianLocalRing R ↔ ∀ f : R[X], f.Monic → ∀ a₀ : ResidueField R,
+      (f.map (residue R)).eval a₀ = 0 → ((derivative f).map (residue R)).eval a₀ ≠ 0 →
+        ∃ a : R, f.eval a = 0 ∧ residue R a = a₀) ∧
+    (StrictlyHenselianLocalRing R ↔
+      HenselianLocalRing R ∧ IsSepClosed (ResidueField R))
 ```
 
 ## Tag 06RR, a lemma
 
 [Tag 06RR](https://stacks.math.columbia.edu/tag/06RR) in the Stacks Project.
 
-**`hensel_uniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Criteria.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Criteria.lean#L368). References: SGA 3 VIIB (1.6), “partial”.
+**`hensel_uniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Criteria.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Criteria.lean#L368). References: SGA 3 VIIB (1.6), “partial”.
 
 > Hensel uniqueness: in a local ring, two roots of a polynomial that are
 > congruent modulo the maximal ideal must be equal, provided the formal
@@ -51,7 +55,7 @@ theorem hensel_uniqueness {R : Type*} [CommRing R] [IsLocalRing R]
 
 [Tag 04GG](https://stacks.math.columbia.edu/tag/04GG) in the Stacks Project.
 
-**`HenselianLocalRing.TFAE_factorization_etale_quasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/TFAE/Factorization.lean, line 664](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/TFAE/Factorization.lean#L664). The attribute's comment: “The thirteen items are the entries, in the source's order, of one `List.TFAE`. `f̄` is `Polynomial.map (IsLocalRing.residue R) f`, `gcd(g₀, h₀) = 1` is `IsCoprime`, degrees are `Polynomial.degree` and item (6) carries the source's tacit `g₀ ≠ 0`, without which it holds only for fields. A retraction is an element of `S →ₐ[R] R`, `κ = κ(q)` is bijectivity of the canonical `Ideal.ResidueField.mapₐ`. A product of local rings is a `RingEquiv` onto a `Pi` type; the two-factor decompositions of (11)–(13) are `AlgEquiv`s. The source's quasi-finite of Definition 00PM is `Algebra.FiniteType` together with Mathlib's weaker `Algebra.QuasiFinite`. See the module docstring.”. References: EGA IV (18.5.13), “a'') existence half”; EGA IV (18.5.9), “(ii)”; EGA IV (18.5.11), “a), a'), b)”; SGA 4 VIII (4.1), “(i)–(iv)”.
+**`HenselianLocalRing.TFAE_factorization_etale_quasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/TFAE/Factorization.lean, line 664](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/TFAE/Factorization.lean#L664). The attribute's comment: “The thirteen items are the entries, in the source's order, of one `List.TFAE`. `f̄` is `Polynomial.map (IsLocalRing.residue R) f`, `gcd(g₀, h₀) = 1` is `IsCoprime`, degrees are `Polynomial.degree` and item (6) carries the source's tacit `g₀ ≠ 0`, without which it holds only for fields. A retraction is an element of `S →ₐ[R] R`, `κ = κ(q)` is bijectivity of the canonical `Ideal.ResidueField.mapₐ`. A product of local rings is a `RingEquiv` onto a `Pi` type; the two-factor decompositions of (11)–(13) are `AlgEquiv`s. The source's quasi-finite of Definition 00PM is `Algebra.FiniteType` together with Mathlib's weaker `Algebra.QuasiFinite`. See the module docstring.”. References: EGA IV (18.5.13), “a'') existence half”; EGA IV (18.5.9), “(ii)”; EGA IV (18.5.11), “a), a'), b)”; SGA 4 VIII (4.1), “(i)–(iv)”.
 
 > **Characterisations of henselian local rings** (Stacks 04GG). For a local ring `(R, 𝔪, κ)`
 > the following are equivalent: (1) `R` is henselian; (2) every `f ∈ R[T]` and every root `a₀ ∈ κ`
@@ -122,7 +126,7 @@ public theorem HenselianLocalRing.TFAE_factorization_etale_quasiFinite
 
 [Tag 04GH](https://stacks.math.columbia.edu/tag/04GH) in the Stacks Project.
 
-**`HenselianLocalRing.henselianLocalRing_and_finite_of_finite_of_quasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/QuasiFinite.lean, line 783](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/QuasiFinite.lean#L783). The attribute's comment: “The four items are the four conjuncts, in the source's order. A finite product of local rings is an `AlgEquiv` onto a `Pi` type over a `Finite` index type (04GG (10)'s spelling, upgraded from `RingEquiv` because the factors are required finite over `R`); `S_q` is any `IsLocalization.AtPrime Sq q` in a scalar tower over `R`; the source's quasi-finiteness at `q` is `Algebra.QuasiFiniteAt R q` and its quasi-finite ring map is `Algebra.FiniteType` together with Mathlib's weaker `Algebra.QuasiFinite`. Item (4) is item (3) with `q` quantified. See the module docstring.”. References: EGA IV (18.5.9), “(ii) necessity”; EGA IV (18.5.10), “R henselian local”; SGA 4 VIII (4.1), “partial”.
+**`HenselianLocalRing.henselianLocalRing_and_finite_of_finite_of_quasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/QuasiFinite.lean, line 783](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/QuasiFinite.lean#L783). The attribute's comment: “The four items are the four conjuncts, in the source's order. A finite product of local rings is an `AlgEquiv` onto a `Pi` type over a `Finite` index type (04GG (10)'s spelling, upgraded from `RingEquiv` because the factors are required finite over `R`); `S_q` is any `IsLocalization.AtPrime Sq q` in a scalar tower over `R`; the source's quasi-finiteness at `q` is `Algebra.QuasiFiniteAt R q` and its quasi-finite ring map is `Algebra.FiniteType` together with Mathlib's weaker `Algebra.QuasiFinite`. Item (4) is item (3) with `q` quantified. See the module docstring.”. References: EGA IV (18.5.9), “(ii) necessity”; EGA IV (18.5.10), “R henselian local”; SGA 4 VIII (4.1), “partial”.
 
 > **Finite and quasi-finite algebras over a henselian local ring** (Stacks 04GH). Let
 > `(R, 𝔪, κ)` be a henselian local ring. (1) A finite `R`-algebra `S` is a finite product of
@@ -156,7 +160,7 @@ public theorem HenselianLocalRing.henselianLocalRing_and_finite_of_finite_of_qua
 
 [Tag 04GJ](https://stacks.math.columbia.edu/tag/04GJ) in the Stacks Project.
 
-**`exists_algEquiv_prod_of_henselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/FiniteType/Basic/ProductOfLocalRings.lean, line 611](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/FiniteType/Basic/ProductOfLocalRings.lean#L611). References: EGA IV (18.5.9), “more general”; SGA 4 VIII (4.1), “(ii)”.
+**`exists_algEquiv_prod_of_henselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/FiniteType/Basic/ProductOfLocalRings.lean, line 611](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/FiniteType/Basic/ProductOfLocalRings.lean#L611). References: EGA IV (18.5.9), “more general”; SGA 4 VIII (4.1), “(ii)”.
 
 > Stacks Tag 04GJ (Lemma 10.153.5). A finite type algebra over a henselian local ring
 > decomposes, up to `R`-algebra isomorphism, as a finite product of local algebras finite
@@ -179,7 +183,7 @@ theorem exists_algEquiv_prod_of_henselianLocalRing (R : Type u) [CommRing R] [He
 
 [Tag 06DD](https://stacks.math.columbia.edu/tag/06DD) in the Stacks Project.
 
-**`exists_prod_local_purelyInseparable_not_quasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/FiniteType/StrictlyHenselian/ProductDecomposition.lean, line 765](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/FiniteType/StrictlyHenselian/ProductDecomposition.lean#L765).
+**`exists_prod_local_purelyInseparable_not_quasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/FiniteType/StrictlyHenselian/ProductDecomposition.lean, line 765](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/FiniteType/StrictlyHenselian/ProductDecomposition.lean#L765).
 
 > Let `(R, m, κ)` be a strictly henselian local ring (a
 > henselian local ring whose residue field is separably closed) and let `S` be a
@@ -220,7 +224,7 @@ theorem exists_prod_local_purelyInseparable_not_quasiFiniteAt (R : Type) [CommRi
 
 [Tag 04GK](https://stacks.math.columbia.edu/tag/04GK) in the Stacks Project.
 
-**`CommAlgCat.FiniteEtale.isEquivalence_baseChange_residueField`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/FiniteEtale.lean, line 793](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/FiniteEtale.lean#L793). The attribute's comment: “The functor `S ↦ S/𝔪S` of the source is Mathlib's base change functor `CommAlgCat.FiniteEtale.baseChange R (IsLocalRing.ResidueField R)`, `S ↦ κ ⊗[R] S`; the canonical identification of the two is `Algebra.TensorProduct.quotIdealMapEquivQuotTensor`. `Equivalent via the functor` is `CategoryTheory.Functor.IsEquivalence` of that functor, stated as an instance as Mathlib states the sibling `FiniteEtale.fiber Ω Ω`. The object universe is pinned to `R`'s, as in Mathlib's `CommAlgCat.FiniteEtale.equivOfIsSepClosed`. See the module docstring.”. References: EGA IV (18.3.2), “local, I = maximal ideal”; EGA IV (18.5.15), “henselian local ring”; SGA 1 IX (1.8), “more general”; SGA 7 XIII (1.2.1), “the equivalence”; SGA 1 IX (1.8), “more general”; SGA 3 VIIB (1.6.E), “(b), special case”; SGA 7 IX (2.2.4), “more general”.
+**`CommAlgCat.FiniteEtale.isEquivalence_baseChange_residueField`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/FiniteEtale.lean, line 792](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/FiniteEtale.lean#L792). The attribute's comment: “The functor `S ↦ S/𝔪S` of the source is Mathlib's base change functor `CommAlgCat.FiniteEtale.baseChange R (IsLocalRing.ResidueField R)`, `S ↦ κ ⊗[R] S`; the canonical identification of the two is `Algebra.TensorProduct.quotIdealMapEquivQuotTensor`. `Equivalent via the functor` is `CategoryTheory.Functor.IsEquivalence` of that functor, stated as an instance as Mathlib states the sibling `FiniteEtale.fiber Ω Ω`. The object universe is pinned to `R`'s, as in Mathlib's `CommAlgCat.FiniteEtale.equivOfIsSepClosed`. See the module docstring.”. References: EGA IV (18.3.2), “local, I = maximal ideal”; EGA IV (18.5.15), “henselian local ring”; SGA 1 IX (1.8), “more general”; SGA 7 XIII (1.2.1), “the equivalence”; SGA 3 VIIB (1.6.E), “(b), special case”; SGA 7 IX (2.2.4), “more general”.
 
 > **Stacks 04GK.** Let `(R, 𝔪, κ)` be a henselian local ring. Base change along the residue map
 > `R → κ`, which on objects is `S ↦ κ ⊗[R] S ≅ S/𝔪S`, is an equivalence from the category of finite
@@ -236,7 +240,7 @@ public instance CommAlgCat.FiniteEtale.isEquivalence_baseChange_residueField (R 
 
 [Tag 04GL](https://stacks.math.columbia.edu/tag/04GL) in the Stacks Project.
 
-**`Algebra.IsUnramifiedIn.exists_algEquiv_prod_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Unramified.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Unramified.lean#L359). The attribute's comment: “The source's factors `Aᵢ` with `R → Aᵢ` surjective are spelled as the quotients `R ⧸ Iᵢ` with their canonical maps (`Ideal.quotientKerAlgEquivOfSurjective` identifies the two forms), and `Iᵢ ≠ ⊤` records that the factor is nonzero, the source's locality of `Aᵢ` then being automatic. Strictly henselian is `HenselianLocalRing R` with `IsSepClosed (ResidueField R)`. The hypothesis is weakened from `Algebra.Unramified R S` to finite type together with `Algebra.IsUnramifiedIn S 𝔪`, which is what the proof uses; the source's hypothesis implies it by `Algebra.unramified_iff_forall`. See the module docstring.”.
+**`Algebra.IsUnramifiedIn.exists_algEquiv_prod_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Unramified.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Unramified.lean#L359). The attribute's comment: “The source's factors `Aᵢ` with `R → Aᵢ` surjective are spelled as the quotients `R ⧸ Iᵢ` with their canonical maps (`Ideal.quotientKerAlgEquivOfSurjective` identifies the two forms), and `Iᵢ ≠ ⊤` records that the factor is nonzero, the source's locality of `Aᵢ` then being automatic. Strictly henselian is `HenselianLocalRing R` with `IsSepClosed (ResidueField R)`. The hypothesis is weakened from `Algebra.Unramified R S` to finite type together with `Algebra.IsUnramifiedIn S 𝔪`, which is what the proof uses; the source's hypothesis implies it by `Algebra.unramified_iff_forall`. See the module docstring.”.
 
 > **Unramified algebras over a strictly henselian local ring** (Stacks 04GL). Let `(R, 𝔪, κ)` be
 > a strictly henselian local ring and let `S` be a finite type `R`-algebra which is unramified at
@@ -258,7 +262,7 @@ public theorem Algebra.IsUnramifiedIn.exists_algEquiv_prod_quotient
 
 [Tag 04GM](https://stacks.math.columbia.edu/tag/04GM) in the Stacks Project.
 
-**`henselianLocalRing_of_isAdicComplete_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Criteria.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Criteria.lean#L342). References: EGA IV (18.5.14), “local case”; EGA IV (18.5.16), “special case”; SGA 3 X (4.0), “partial”.
+**`henselianLocalRing_of_isAdicComplete_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Criteria.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Criteria.lean#L342). References: EGA IV (18.5.14), “local case”; EGA IV (18.5.16), “special case”; SGA 3 X (4.0), “partial”.
 
 > A complete local ring is Henselian: `IsAdicComplete.henselianRing` provides
 > the lifting property, and we transport the simple-root hypothesis along
@@ -275,7 +279,7 @@ theorem henselianLocalRing_of_isAdicComplete_maximalIdeal
 
 [Tag 06RS](https://stacks.math.columbia.edu/tag/06RS) in the Stacks Project.
 
-**`henselianLocalRing_of_krullDimLE_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Criteria.lean, line 590](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Criteria.lean#L590).
+**`henselianLocalRing_of_krullDimLE_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Criteria.lean, line 590](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Criteria.lean#L590).
 
 > **Stacks Tag 06RS / Lemma 10.153.10.** A local ring of Krull dimension `0` is henselian.
 
@@ -289,7 +293,7 @@ theorem henselianLocalRing_of_krullDimLE_zero (R : Type*) [CommRing R] [IsLocalR
 
 [Tag 08HQ](https://stacks.math.columbia.edu/tag/08HQ) in the Stacks Project.
 
-**`existsUnique_algHom_henselian_of_residue_datum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/EtaleLifting/HenselianRetraction.lean, line 761](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/EtaleLifting/HenselianRetraction.lean#L761).
+**`existsUnique_algHom_henselian_of_residue_datum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/EtaleLifting/HenselianRetraction.lean, line 761](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/EtaleLifting/HenselianRetraction.lean#L761).
 
 > **Stacks Tag 08HQ** (map into henselian). Let `R → S` be a ring map with `S`
 > henselian local, `p = R ∩ m_S` the contraction of the maximal ideal. Given an
@@ -318,7 +322,7 @@ theorem existsUnique_algHom_henselian_of_residue_datum
 
 [Tag 04GX](https://stacks.math.columbia.edu/tag/04GX) in the Stacks Project.
 
-**`bijOn_solutions_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/EtaleLifting/SolutionsBijection.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/EtaleLifting/SolutionsBijection.lean#L478).
+**`bijOn_solutions_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/EtaleLifting/SolutionsBijection.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/EtaleLifting/SolutionsBijection.lean#L478).
 
 > **Stacks Tag 04GX.**
 > Let `φ : R → S` be a local homomorphism of strictly henselian local rings and let
@@ -344,7 +348,7 @@ theorem bijOn_solutions_of_etale
 
 [Tag 05D6](https://stacks.math.columbia.edu/tag/05D6) in the Stacks Project.
 
-**`Module.exists_sSupIndep_finitePresentation_of_countable_span_of_mittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Henselian.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/Henselian.lean#L626). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E, as in 059M, 059N, 059P, 059R, 05CQ and 0AS7; countable generation as a countable spanning set, as in 0590; and the direct sum decomposition internally, as an independent set of submodules of `M` with supremum `⊤`, as in 058W. Test data in the universe of `M`, whence `Small.{v} R`. See the module docstring.”.
+**`Module.exists_sSupIndep_finitePresentation_of_countable_span_of_mittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Henselian.lean, line 626](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/Henselian.lean#L626). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E, as in 059M, 059N, 059P, 059R, 05CQ and 0AS7; countable generation as a countable spanning set, as in 0590; and the direct sum decomposition internally, as an independent set of submodules of `M` with supremum `⊤`, as in 058W. Test data in the universe of `M`, whence `Small.{v} R`. See the module docstring.”.
 
 > **Stacks 05D6.** Let `R` be a henselian local ring and let `M` be an `R`-module which is
 > countably generated — it admits a countable spanning set — and Mittag-Leffler, the latter in the
@@ -374,4 +378,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.153, Tag 04GE](https://stacks.math.columbia.edu/tag/04GE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

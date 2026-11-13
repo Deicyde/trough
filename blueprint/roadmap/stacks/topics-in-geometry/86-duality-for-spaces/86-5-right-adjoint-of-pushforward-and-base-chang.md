@@ -8,13 +8,13 @@ proof: formalized
 
 # 86.5 Right adjoint of pushforward and base change, II
 
-Section 86.5 of the Stacks Project, [Tag 0E5H](https://stacks.math.columbia.edu/tag/0E5H). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 86.5 of the Stacks Project, [Tag 0E5H](https://stacks.math.columbia.edu/tag/0E5H). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E5I, a lemma
 
 [Tag 0E5I](https://stacks.math.columbia.edu/tag/0E5I) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_quasicoherentDerivedRightAdjointBaseChangeMap_app_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChangeAffinePerfect.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChangeAffinePerfect.lean#L53). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.Space.isIso_quasicoherentDerivedRightAdjointBaseChangeMap_app_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChangeAffinePerfect.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChangeAffinePerfect.lean#L53). The attribute's comment: “(2)”.
 
 > **Stacks 0E5I (2).** For a cartesian square
 > ```
@@ -41,7 +41,7 @@ theorem isIso_quasicoherentDerivedRightAdjointBaseChangeMap_app_of_isPerfect
       (isAbsolutelyQuasiSeparated_of_isAffineSpace B S hS hZ hY') hTor).app K)
 ```
 
-**`AlgebraicGeometry.Space.isIso_quasicoherentDerivedRightAdjointBaseChangeMap_app_of_hasFiniteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChangeAffineTorDimension.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChangeAffineTorDimension.lean#L68). The attribute's comment: “(3)”.
+**`AlgebraicGeometry.Space.isIso_quasicoherentDerivedRightAdjointBaseChangeMap_app_of_hasFiniteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChangeAffineTorDimension.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChangeAffineTorDimension.lean#L68). The attribute's comment: “(3)”.
 
 > **Stacks 0E5I (3).** Let `g : U' ⟶ U` be a morphism of affine schemes of finite Tor dimension,
 > with `U` Noetherian, and consider a cartesian square
@@ -81,7 +81,7 @@ theorem isIso_quasicoherentDerivedRightAdjointBaseChangeMap_app_of_hasFiniteTorD
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isIso_quasicoherentDerivedRightAdjointBaseChangeMap_app_of_isFlat`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChangeAffineIso.lean#L265), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChangeAffineTags.lean, line 22](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChangeAffineTags.lean#L22) (StacksFrontier): “(1)”.
+- [`AlgebraicGeometry.Space.isIso_quasicoherentDerivedRightAdjointBaseChangeMap_app_of_isFlat`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChangeAffineIso.lean#L265), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChangeAffineTags.lean, line 22](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChangeAffineTags.lean#L22) (StacksFrontier): “(1)”.
 
 ## Depends on
 
@@ -90,4 +90,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 86.5, Tag 0E5H](https://stacks.math.columbia.edu/tag/0E5H)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

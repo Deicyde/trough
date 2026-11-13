@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.31 Flat modules
 
-Section 67.31 of the Stacks Project, [Tag 05VT](https://stacks.math.columbia.edu/tag/05VT). 6 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.31 of the Stacks Project, [Tag 05VT](https://stacks.math.columbia.edu/tag/05VT). 6 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05VU, a lemma
 
 [Tag 05VU](https://stacks.math.columbia.edu/tag/05VU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlatOverAt_exists_chartDiagram_iff_isFlatOverAtGeometricPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAtGeometricPointEquiv.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAtGeometricPointEquiv.lean#L276).
+**`AlgebraicGeometry.Space.isFlatOverAt_exists_chartDiagram_iff_isFlatOverAtGeometricPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAtGeometricPointEquiv.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAtGeometricPointEquiv.lean#L276).
 
 > **Stacks 05VU.**  Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`, let `F` be a
 > quasi-coherent `𝒪_X`-module and let `x̄` be a geometric point of `X`.  The following are
@@ -46,7 +46,7 @@ theorem isFlatOverAt_exists_chartDiagram_iff_isFlatOverAtGeometricPoint
 
 [Tag 05VV](https://stacks.math.columbia.edu/tag/05VV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsFlatOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModule.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModule.lean#L101). The attribute's comment: “flatness over the target”.
+**`AlgebraicGeometry.Space.IsFlatOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModule.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModule.lean#L101). The attribute's comment: “flatness over the target”.
 
 > **Stacks 05VV.** An `𝒪_X`-module is *flat over* `Y` along `f : X ⟶ Y` when, on every
 > commuting square of étale scheme charts of `f`, its restriction to the chart of `X` is flat
@@ -58,7 +58,7 @@ noncomputable abbrev IsFlatOver (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.C
     (F : Modules.{u, u} B S hS X hX) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsFlatOverAtPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModule.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModule.lean#L131). The attribute's comment: “flatness over the target at a point of |X|”.
+**`AlgebraicGeometry.Space.IsFlatOverAtPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModule.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModule.lean#L131). The attribute's comment: “flatness over the target at a point of |X|”.
 
 > **Stacks 05VV at a point of `|X|`.** An `𝒪_X`-module is *flat over* `Y` *at* a point `x` of
 > `|X|` when, on some commuting square of étale scheme charts of `f` and at some point of the
@@ -91,7 +91,7 @@ noncomputable def IsFlatOverAtPoint (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS :
     (F : Modules.{u, u} B S hS X hX) (x : points B S hS X) : Prop
 ```
 
-**`AlgebraicGeometry.Space.isFlatOver_iff_forall_isFlatOverAtPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAllPoints.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAllPoints.lean#L89). The attribute's comment: “the all-x characterisation, for a quasi-coherent module”.
+**`AlgebraicGeometry.Space.isFlatOver_iff_forall_isFlatOverAtPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAllPoints.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAllPoints.lean#L89). The attribute's comment: “the all-x characterisation, for a quasi-coherent module”.
 
 > **Stacks 05VV, the all-`x` characterisation.** For a quasi-coherent `𝒪_X`-module `F`,
 > flatness of `F` over `Y` in the every-chart sense of `AlgebraicGeometry.Space.IsFlatOver` holds
@@ -114,7 +114,7 @@ theorem isFlatOver_iff_forall_isFlatOverAtPoint {X Y : AlgebraicSpaces B S hS} (
 
 [Tag 05VW](https://stacks.math.columbia.edu/tag/05VW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlatOver_modulePullback_of_isFinitePresentationOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackFinitePresentationStability.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackFinitePresentationStability.lean#L104). The attribute's comment: “the final assertion for a module of finite presentation”.
+**`AlgebraicGeometry.Space.isFlatOver_modulePullback_of_isFinitePresentationOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackFinitePresentationStability.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackFinitePresentationStability.lean#L104). The attribute's comment: “the final assertion for a module of finite presentation”.
 
 > **Stacks 05VW, the final assertion, for a module of finite presentation.**  In a cartesian
 > square of algebraic spaces
@@ -144,7 +144,7 @@ theorem isFlatOver_modulePullback_of_isFinitePresentationOnSite
     IsFlatOver B S hS X'.2 f'.hom ((modulePullback B S hS g').obj F)
 ```
 
-**`AlgebraicGeometry.Space.isFlatOverAtGeometricPoint_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChange.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChange.lean#L125). The attribute's comment: “part (1): the pullback of a module flat over the target at a point is flat over the new target at every point above it”.
+**`AlgebraicGeometry.Space.isFlatOverAtGeometricPoint_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChange.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChange.lean#L125). The attribute's comment: “part (1): the pullback of a module flat over the target at a point is flat over the new target at every point above it”.
 
 > **Stacks 05VW, part (1).**  In a cartesian square of algebraic spaces
 >
@@ -172,7 +172,7 @@ theorem isFlatOverAtGeometricPoint_modulePullback
     IsFlatOverAtGeometricPoint B S hS f' ((modulePullback B S hS g').obj F) x'
 ```
 
-**`AlgebraicGeometry.Space.isFlatOverAtGeometricPoint_of_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChange.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChange.lean#L212). The attribute's comment: “part (2): relative flatness of a module at a point descends along a base change flat at the image point”.
+**`AlgebraicGeometry.Space.isFlatOverAtGeometricPoint_of_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChange.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChange.lean#L212). The attribute's comment: “part (2): relative flatness of a module at a point descends along a base change flat at the image point”.
 
 > **Stacks 05VW, part (2).**  In a cartesian square of algebraic spaces
 >
@@ -203,7 +203,7 @@ theorem isFlatOverAtGeometricPoint_of_modulePullback
     IsFlatOverAtGeometricPoint B S hS f F (geometricPointMap g'.hom x')
 ```
 
-**`AlgebraicGeometry.Space.isFlatOver_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChange.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChange.lean#L309). The attribute's comment: “the final assertion: the pullback of a quasi-coherent module flat over the target is flat over the new target”.
+**`AlgebraicGeometry.Space.isFlatOver_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChange.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChange.lean#L309). The attribute's comment: “the final assertion: the pullback of a quasi-coherent module flat over the target is flat over the new target”.
 
 > **Stacks 05VW, the final assertion.**  In a cartesian square of algebraic spaces
 >
@@ -229,7 +229,7 @@ theorem isFlatOver_modulePullback {X Y X' Y' : AlgebraicSpaces B S hS} {g' : X' 
     IsFlatOver B S hS X'.2 f'.hom ((modulePullback B S hS g').obj F)
 ```
 
-**`AlgebraicGeometry.Space.mem_flatLocus_modulePullback_of_mem_flatLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChangePoint.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChangePoint.lean#L109). The attribute's comment: “part (1) read at a point of the point space of Stacks 03BU, flatness at a point being membership of the relative flat locus of Stacks 0DLR”.
+**`AlgebraicGeometry.Space.mem_flatLocus_modulePullback_of_mem_flatLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChangePoint.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChangePoint.lean#L109). The attribute's comment: “part (1) read at a point of the point space of Stacks 03BU, flatness at a point being membership of the relative flat locus of Stacks 0DLR”.
 
 > **Stacks 05VW, part (1), at a point of the point space.**  In a cartesian square of
 > algebraic spaces
@@ -260,7 +260,7 @@ theorem mem_flatLocus_modulePullback_of_mem_flatLocus {g' : X' ⟶ X} {f' : X' �
     x' ∈ flatLocus B S hS X'.2 f'.hom ((modulePullback B S hS g').obj F)
 ```
 
-**`AlgebraicGeometry.Space.mem_flatLocus_of_mem_flatLocus_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChangePoint.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChangePoint.lean#L148). The attribute's comment: “part (2) read at a point of the point space of Stacks 03BU, flatness at a point being membership of the relative flat locus of Stacks 0DLR”.
+**`AlgebraicGeometry.Space.mem_flatLocus_of_mem_flatLocus_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChangePoint.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChangePoint.lean#L148). The attribute's comment: “part (2) read at a point of the point space of Stacks 03BU, flatness at a point being membership of the relative flat locus of Stacks 0DLR”.
 
 > **Stacks 05VW, part (2), at a point of the point space.**  In a cartesian square of
 > algebraic spaces
@@ -293,7 +293,7 @@ theorem mem_flatLocus_of_mem_flatLocus_modulePullback {g' : X' ⟶ X} {f' : X' �
     pointsMap B S hS X'.1 g'.hom x' ∈ flatLocus B S hS X.2 f.hom F
 ```
 
-**`AlgebraicGeometry.Space.isFlatOverAtPoint_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChangePoint.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChangePoint.lean#L199). The attribute's comment: “parts (1) and (2) at a point of |X'|, flatness at a point being Stacks 05VV (1), and the final assertion, for a quasi-coherent module”.
+**`AlgebraicGeometry.Space.isFlatOverAtPoint_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChangePoint.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleBaseChangePoint.lean#L199). The attribute's comment: “parts (1) and (2) at a point of |X'|, flatness at a point being Stacks 05VV (1), and the final assertion, for a quasi-coherent module”.
 
 > **Stacks 05VW.**  Let
 >
@@ -346,7 +346,7 @@ theorem isFlatOverAtPoint_baseChange {g' : X' ⟶ X} {f' : X' ⟶ Y'}
 
 [Tag 05VX](https://stacks.math.columbia.edu/tag/05VX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlatOverAtGeometricPoint_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleComposition.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleComposition.lean#L119). The attribute's comment: “part (1): flatness of a module at a point composes with flatness of the base”.
+**`AlgebraicGeometry.Space.isFlatOverAtGeometricPoint_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleComposition.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleComposition.lean#L119). The attribute's comment: “part (1): flatness of a module at a point composes with flatness of the base”.
 
 > If an `𝒪_X`-module `F` is flat at a geometric point `x̄` of `X` over `Y` and `Y` is flat
 > over `Z` at the image `ȳ` of `x̄`, then `F` is flat at `x̄` over `Z`.
@@ -363,7 +363,7 @@ theorem isFlatOverAtGeometricPoint_comp {X Y Z : AlgebraicSpaces B S hS}
     IsFlatOverAtGeometricPoint B S hS (f ≫ g) F xbar
 ```
 
-**`AlgebraicGeometry.Space.isFlatAt_of_isFaithfullyFlatOverAtGeometricPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleComposition.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleComposition.lean#L137). The attribute's comment: “part (3): flatness of the base at a point descends from a faithfully flat geometric stalk”.
+**`AlgebraicGeometry.Space.isFlatAt_of_isFaithfullyFlatOverAtGeometricPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleComposition.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleComposition.lean#L137). The attribute's comment: “part (3): flatness of the base at a point descends from a faithfully flat geometric stalk”.
 
 > If the geometric stalk `F_{x̄}` of an `𝒪_X`-module at a geometric point `x̄` of `X` is a
 > faithfully flat module over the étale local ring `𝒪_{Y, ȳ}` of the image `ȳ` of `x̄`, and `F` is
@@ -381,7 +381,7 @@ theorem isFlatAt_of_isFaithfullyFlatOverAtGeometricPoint {X Y Z : AlgebraicSpace
     IsFlatAt B S hS g.hom (geometricPointMap f.hom xbar).image
 ```
 
-**`AlgebraicGeometry.Space.isFlatAt_of_nontrivial_fibre_of_isFlatOverAtGeometricPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleComposition.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleComposition.lean#L159). The attribute's comment: “part (2): flatness of the base at a point descends from a module flat over both and with nonzero fibre at a representative of the point”.
+**`AlgebraicGeometry.Space.isFlatAt_of_nontrivial_fibre_of_isFlatOverAtGeometricPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleComposition.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleComposition.lean#L159). The attribute's comment: “part (2): flatness of the base at a point descends from a module flat over both and with nonzero fibre at a representative of the point”.
 
 > Let `F` be an `𝒪_X`-module and let `x̄` be a geometric point of `X` with image `ȳ` in `Y`.
 > If `F` is flat at `x̄` over `Y`, the fibre of `F` at `x̄` is nonzero and `F` is flat at `x̄` over
@@ -414,7 +414,7 @@ theorem isFlatAt_of_nontrivial_fibre_of_isFlatOverAtGeometricPoint
 
 [Tag 05VY](https://stacks.math.columbia.edu/tag/05VY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativeFlatnessPermanence_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeFlatnessAlongFlatPullback.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeFlatnessAlongFlatPullback.lean#L91).
+**`AlgebraicGeometry.Space.relativeFlatnessPermanence_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeFlatnessAlongFlatPullback.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeFlatnessAlongFlatPullback.lean#L91).
 
 > **Stacks 05VY.**  Let `S` be a scheme contained in the big fppf site `B`, let
 > `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of algebraic spaces over `S`, let `G` be a
@@ -447,7 +447,7 @@ theorem relativeFlatnessPermanence_modulePullback (B : BigFppfSite.{u}) (S : Sch
 
 [Tag 0CVU](https://stacks.math.columbia.edu/tag/0CVU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyOpen_of_isFlatOver_of_fullSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleUniversallyOpen.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleUniversallyOpen.lean#L122). References: EGA IV (11.3.1), “f|U open”; EGA IV (2.4.6); EGA IV (15.2.1), “more general”.
+**`AlgebraicGeometry.Space.universallyOpen_of_isFlatOver_of_fullSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleUniversallyOpen.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleUniversallyOpen.lean#L123). References: EGA IV (11.3.1), “f|U open”; EGA IV (2.4.6); EGA IV (15.2.1), “more general”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is locally of finite
 > presentation and let `𝓕` be an `𝒪_X`-module which, on charts, is quasi-coherent, of finite type,
@@ -470,4 +470,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.31, Tag 05VT](https://stacks.math.columbia.edu/tag/05VT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

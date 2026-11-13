@@ -7,7 +7,7 @@ statement: formalized
 
 # Zeckendorf sum of digits
 
-56 results, 24 proved and 32 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html).
+56 results, 24 proved and 32 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html).
 
 ## Fibonacci shifts have the same Zeckendorf variation densities as shift one
 
@@ -23,7 +23,7 @@ density $\mu(d)$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Theorem 3 (`jis-2024-24.3.2-thm-3`, for `ℓ ≥ 3`) and its restatement in Section 6 (`jis-2024-24.3.2-thm-unnumbered-1`, for `ℓ ≥ 2`).
 
-Stated but not proved: `MetaMathlibExt.zeckendorf_variation_density_fib_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeckendorf-variation-density-fib-eq-one).
+Stated but not proved: `MetaMathlibExt.zeckendorf_variation_density_fib_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeckendorf-variation-density-fib-eq-one).
 
 ## Distribution of the Zeckendorf digit-sum variation for shift one
 
@@ -37,7 +37,7 @@ $d \le 0$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Proposition 39 (`jis-2024-24.3.2-prop-39`).
 
-Stated but not proved: `MetaMathlibExt.zeckendorf_variation_density_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeckendorf-variation-density-one).
+Stated but not proved: `MetaMathlibExt.zeckendorf_variation_density_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeckendorf-variation-density-one).
 
 ## Zeckendorf variation densities exist, with finite moments and mean zero
 
@@ -52,7 +52,7 @@ $k \in \mathbb{N}$, and $\sum_{d \in \mathbb{Z}} d \, \mu(d) = 0$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Corollary 24 (`jis-2024-24.3.2-cor-24`), with the remark after it for `r = 0`.
 
-Stated but not proved: `MetaMathlibExt.zeckendorf_variation_density_exists_moments` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeckendorf-variation-density-exists-mome).
+Stated but not proved: `MetaMathlibExt.zeckendorf_variation_density_exists_moments` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeckendorf-variation-density-exists-mome).
 
 ## Geometric negative tail of the Zeckendorf variation densities
 
@@ -67,7 +67,7 @@ integer $d \le D$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Corollary 1 (`jis-2024-24.3.2-cor-1`) and its restatement in Section 5 (`jis-2024-24.3.2-cor-unnumbered-1`).
 
-Stated but not proved: `MetaMathlibExt.zeckendorf_variation_density_tail` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeckendorf-variation-density-tail).
+Stated but not proved: `MetaMathlibExt.zeckendorf_variation_density_tail` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeckendorf-variation-density-tail).
 
 ## The Zeckendorf-adic integers
 
@@ -83,7 +83,7 @@ $\mathbb{X} = \{x \in \{0,1\}^{\mathbb{N}_{\ge 2}} : x_k x_{k+1} = 0 \text{ for 
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 2.2 (arXiv:2309.14285v2).
 
-Formalized by `MetaMathlibExt.zeckAdic`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic).
+Formalized by `MetaMathlibExt.zeckAdic`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic).
 
 ## Zeckendorf digit sequence of a natural number
 
@@ -97,7 +97,7 @@ $x_k = 1$ if $k$ is one of the indices $k_1, \dots, k_m$ and $x_k = 0$ otherwise
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 2.2 (the map `i`).
 
-Formalized by `MetaMathlibExt.zeckAdicOfNat`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-of-nat).
+Formalized by `MetaMathlibExt.zeckAdicOfNat`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-of-nat).
 
 ## The Zeckendorf odometer
 
@@ -113,7 +113,7 @@ $F_k$, the map $T$ is addition of $1$, and $x + r$ denotes $T^r(x)$ for $r \in \
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 2.2 (definition of `T`).
 
-Formalized by `MetaMathlibExt.zeckOdometer`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer).
+Formalized by `MetaMathlibExt.zeckOdometer`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer).
 
 ## Zeckendorf digit sequence of zero
 
@@ -124,7 +124,7 @@ sequence: all of its digits are $0$, because the Zeckendorf representation of $0
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 2.2 (characteristic lemma for the map `i`).
 
-Formalized by `MetaMathlibExt.zeckAdicOfNat_zero`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-of-nat-zero).
+Formalized by `MetaMathlibExt.zeckAdicOfNat_zero`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-of-nat-zero).
 
 ## The odometer on a point ending in $00$
 
@@ -136,7 +136,7 @@ $x_2$ to $1$ and leaves every other digit of $x$ unchanged.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 2.2 (case `ℓ = 0` of the definition of `T`).
 
-Formalized by `MetaMathlibExt.zeckOdometer_eq_update`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-eq-update).
+Formalized by `MetaMathlibExt.zeckOdometer_eq_update`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-eq-update).
 
 ## The odometer on sequences without two consecutive zeros
 
@@ -151,7 +151,7 @@ digits from index $2$ on alternate, $(10)^\infty$ and $(01)^\infty$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 2.2 (last two cases of the definition of `T`).
 
-Formalized by `MetaMathlibExt.zeckOdometer_of_forall`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-of-forall).
+Formalized by `MetaMathlibExt.zeckOdometer_of_forall`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-of-forall).
 
 ## Truncated variation of the Zeckendorf digit sum
 
@@ -165,7 +165,7 @@ $\Delta_k^{(r)}(x) = s_k(x + r) - s_k(x)$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 4 (definition of `s_k` and `Δ_k^{(r)}`).
 
-Formalized by `MetaMathlibExt.zeckAdicTruncVariation`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-trunc-variation).
+Formalized by `MetaMathlibExt.zeckAdicTruncVariation`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-trunc-variation).
 
 ## The truncated variation vanishes for zero steps
 
@@ -178,7 +178,7 @@ $k \in \mathbb{N}$ and every binary sequence $x$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 4 (characteristic lemma for `Δ_k^{(r)}`).
 
-Formalized by `MetaMathlibExt.zeckAdicTruncVariation_zero`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-trunc-variation-zero).
+Formalized by `MetaMathlibExt.zeckAdicTruncVariation_zero`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-trunc-variation-zero).
 
 ## The variation of the Zeckendorf digit sum
 
@@ -195,7 +195,7 @@ limit does not exist form a finite set.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 4 (definition of `Δ^{(r)}` on `𝕏`).
 
-Formalized by `MetaMathlibExt.zeckAdicVariation`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation).
+Formalized by `MetaMathlibExt.zeckAdicVariation`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation).
 
 ## The variation is the eventual value of the truncated variations
 
@@ -208,7 +208,7 @@ $\Delta^{(r)}(x)$ equals $d$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 4 (characteristic lemma for `Δ^{(r)}`).
 
-Formalized by `MetaMathlibExt.zeckAdicVariation_eq_of_eventually`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-eq-of-eventually).
+Formalized by `MetaMathlibExt.zeckAdicVariation_eq_of_eventually`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-eq-of-eventually).
 
 ## The variation for $r = 0$ vanishes
 
@@ -219,7 +219,7 @@ not only for Zeckendorf-adic integers, the variation satisfies $\Delta^{(0)}(x) 
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 4 (characteristic lemma for `Δ^{(r)}`).
 
-Formalized by `MetaMathlibExt.zeckAdicVariation_zero`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-zero).
+Formalized by `MetaMathlibExt.zeckAdicVariation_zero`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-zero).
 
 ## Adding $r$ without low digits leaves the low digits unchanged
 
@@ -237,7 +237,7 @@ $(x + r)_n = x_n$ for every $n$ with $2 \le n \le \ell - 2$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Corollary 9 (`jis-2024-24.3.2-cor-9`).
 
-Stated but not proved: `MetaMathlibExt.zeckOdometer_iterate_low_digits` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-iterate-low-digits).
+Stated but not proved: `MetaMathlibExt.zeckOdometer_iterate_low_digits` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-iterate-low-digits).
 
 ## Adding a small $r$ leaves the high digits unchanged
 
@@ -252,7 +252,7 @@ $(x + r)_k = x_k$ for every $k \ge \ell + 3$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Lemma 10 (`jis-2024-24.3.2-lem-10`).
 
-Stated but not proved: `MetaMathlibExt.zeckOdometer_iterate_high_digits` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-iterate-high-digits).
+Stated but not proved: `MetaMathlibExt.zeckOdometer_iterate_high_digits` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-iterate-high-digits).
 
 ## Adding $r$ across a window of four zero digits
 
@@ -270,7 +270,7 @@ $k = 1, 2, 3, 4$, or $(x + r)_{\ell+1} = 0$ and $(x + r)_{\ell+3} = 1$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Lemma 11 (`jis-2024-24.3.2-lem-11`).
 
-Stated but not proved: `MetaMathlibExt.zeckOdometer_iterate_block_digits` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-iterate-block-digits).
+Stated but not proved: `MetaMathlibExt.zeckOdometer_iterate_block_digits` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-iterate-block-digits).
 
 ## Stopping condition for a block of size one
 
@@ -291,7 +291,7 @@ $2 \le k \le \ell + 2$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Corollary 12 (`jis-2024-24.3.2-cor-12`).
 
-Stated but not proved: `MetaMathlibExt.zeckOdometer_stopping_block_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-stopping-block-one).
+Stated but not proved: `MetaMathlibExt.zeckOdometer_stopping_block_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-stopping-block-one).
 
 ## Stopping condition for a block of size $m + 2$
 
@@ -313,7 +313,7 @@ $(x + r)_k = (x + \tilde r + S)_k$ for every $k$ with $2 \le k \le \ell + 2m + 2
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Corollary 14 (`jis-2024-24.3.2-cor-14`).
 
-Stated but not proved: `MetaMathlibExt.zeckOdometer_stopping_block` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-stopping-block).
+Stated but not proved: `MetaMathlibExt.zeckOdometer_stopping_block` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-stopping-block).
 
 ## Unique ergodicity of the Zeckendorf odometer
 
@@ -330,7 +330,7 @@ In other words, $(\mathbb{X}, T)$ is uniquely ergodic.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Proposition 15 (`jis-2024-24.3.2-prop-15`), first part.
 
-Stated but not proved: `MetaMathlibExt.zeckOdometer_uniquely_ergodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-uniquely-ergodic).
+Stated but not proved: `MetaMathlibExt.zeckOdometer_uniquely_ergodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-uniquely-ergodic).
 
 ## Mass of a cylinder under the invariant measure
 
@@ -347,7 +347,7 @@ $\mu(C) = 1/\varphi^{\ell - 1}$ if $y_\ell = 0$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Proposition 15 (`jis-2024-24.3.2-prop-15`), cylinder formula.
 
-Stated but not proved: `MetaMathlibExt.zeckOdometer_invariant_measure_cylinder` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-invariant-measure-cylinder).
+Stated but not proved: `MetaMathlibExt.zeckOdometer_invariant_measure_cylinder` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-invariant-measure-cylinder).
 
 ## Renewal property of the invariant measure
 
@@ -370,7 +370,7 @@ $\sigma^{k+1} x \in C$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Proposition 16 (`jis-2024-24.3.2-prop-16`).
 
-Stated but not proved: `MetaMathlibExt.zeckOdometer_invariant_measure_renewal` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-invariant-measure-renewal).
+Stated but not proved: `MetaMathlibExt.zeckOdometer_invariant_measure_renewal` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-invariant-measure-renewal).
 
 ## Bradley's inequality between the $\alpha$- and $\varphi$-mixing coefficients
 
@@ -388,7 +388,7 @@ $|\mathbb{P}(A \cap B) - \mathbb{P}(A)\mathbb{P}(B)| \le c/2$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Proposition 18 (Bradley) (`jis-2024-24.3.2-prop-18`).
 
-Stated but not proved: `MetaMathlibExt.alpha_mixing_le_half_phi_mixing` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#alpha-mixing-le-half-phi-mixing).
+Stated but not proved: `MetaMathlibExt.alpha_mixing_le_half_phi_mixing` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#alpha-mixing-le-half-phi-mixing).
 
 ## Mixing of the Zeckendorf digits under the invariant measure
 
@@ -408,7 +408,7 @@ that defines the $\phi$-mixing coefficient $\phi(k)$, so $\phi(k) \le 2/\varphi^
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Proposition 19 (`jis-2024-24.3.2-prop-19`).
 
-Stated but not proved: `MetaMathlibExt.zeckOdometer_invariant_measure_phi_mixing` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-invariant-measure-phi-mixi).
+Stated but not proved: `MetaMathlibExt.zeckOdometer_invariant_measure_phi_mixing` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-invariant-measure-phi-mixi).
 
 ## The Zeckendorf Markov chain
 
@@ -425,7 +425,7 @@ Zeckendorf-adic digit sequences.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 3.3 (the maps `ψ` and `(y_j)`).
 
-Formalized by `MetaMathlibExt.zeckMarkovPath`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-markov-path).
+Formalized by `MetaMathlibExt.zeckMarkovPath`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-markov-path).
 
 ## The first step of the Zeckendorf Markov chain
 
@@ -438,7 +438,7 @@ $y_2 = 1$ if and only if $U_2 < 1/\varphi^2$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 3.3 (characteristic lemma for `(y_j)`).
 
-Formalized by `MetaMathlibExt.zeckMarkovPath_two`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-markov-path-two).
+Formalized by `MetaMathlibExt.zeckMarkovPath_two`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-markov-path-two).
 
 ## After a one, the Zeckendorf Markov chain emits a zero
 
@@ -450,7 +450,7 @@ then $y_{j+1} = 0$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 3.3 (characteristic lemma: `ψ(1, t) = 0`).
 
-Formalized by `MetaMathlibExt.zeckMarkovPath_succ_of_true`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-markov-path-succ-of-true).
+Formalized by `MetaMathlibExt.zeckMarkovPath_succ_of_true`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-markov-path-succ-of-true).
 
 ## The Zeckendorf Markov chain has the invariant law
 
@@ -470,7 +470,7 @@ measure $\mu$ is the paper's $\mathbb{P}$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Lemma 20 (`jis-2024-24.3.2-lem-20`).
 
-Stated but not proved: `MetaMathlibExt.zeckMarkovPath_law` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-markov-path-law).
+Stated but not proved: `MetaMathlibExt.zeckMarkovPath_law` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-markov-path-law).
 
 ## Conditional probability that prescribed later digits vanish
 
@@ -489,7 +489,7 @@ $1/\varphi^\ell \le \mu(E \mid A) \le (2/\varphi^2)^\ell$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Proposition 21 (`jis-2024-24.3.2-prop-21`).
 
-Stated but not proved: `MetaMathlibExt.zeckOdometer_invariant_measure_cond_zeros` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 445](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L445). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-invariant-measure-cond-zer).
+Stated but not proved: `MetaMathlibExt.zeckOdometer_invariant_measure_cond_zeros` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 445](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L445). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-odometer-invariant-measure-cond-zer).
 
 ## Ergodic averages of the variation for functions of polynomial growth
 
@@ -513,7 +513,7 @@ as $k \to \infty$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Proposition 23 (`jis-2024-24.3.2-prop-23`).
 
-Stated but not proved: `MetaMathlibExt.zeckAdicVariation_ergodic_average_of_growth` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 463](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L463). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-ergodic-average-of-g).
+Stated but not proved: `MetaMathlibExt.zeckAdicVariation_ergodic_average_of_growth` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 463](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L463). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-ergodic-average-of-g).
 
 ## Counting values of the variation against the invariant measure
 
@@ -536,7 +536,7 @@ $$\frac{1}{N}\,\#\{n < N : s(n + r) - s(n) = d\} \le r\varphi^3\,\mathbb{P}(\Del
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Lemma 26 (`jis-2024-24.3.2-lem-26`).
 
-Stated but not proved: `MetaMathlibExt.zeckAdicVariation_count_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 481](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L481). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-count-le).
+Stated but not proved: `MetaMathlibExt.zeckAdicVariation_count_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 481](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L481). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-count-le).
 
 ## When the variation $\Delta^{(1)}$ exists
 
@@ -552,7 +552,7 @@ $x_{2i+1} = 0$, $x_{2i} = 1$ for $1 \le i \le d$ (the cylinder $C_{001(01)^d}$).
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Lemma 27 (`jis-2024-24.3.2-lem-27`), first part.
 
-Stated but not proved: `MetaMathlibExt.zeckAdicVariation_one_exists_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-one-exists-iff).
+Stated but not proved: `MetaMathlibExt.zeckAdicVariation_one_exists_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-one-exists-iff).
 
 ## The variation $\Delta^{(1)}$ on the cylinder $C_{00(10)^d}$
 
@@ -568,7 +568,7 @@ $k$ is odd and $k \le 2d + 1$; and $\Delta_k^{(1)}(x) = 1 - d$ if $k \ge 2d + 2$
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Lemma 27 (`jis-2024-24.3.2-lem-27`), first cylinder.
 
-Stated but not proved: `MetaMathlibExt.zeckAdicVariation_one_of_mem_cylinder_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 514](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L514). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-one-of-mem-cylinder).
+Stated but not proved: `MetaMathlibExt.zeckAdicVariation_one_of_mem_cylinder_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 514](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L514). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-one-of-mem-cylinder).
 
 ## The variation $\Delta^{(1)}$ on the cylinder $C_{001(01)^d}$
 
@@ -585,7 +585,7 @@ $\Delta_k^{(1)}(x) = -d$ if $k \ge 2d + 4$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Lemma 27 (`jis-2024-24.3.2-lem-27`), second cylinder.
 
-Stated but not proved: `MetaMathlibExt.zeckAdicVariation_one_of_mem_cylinder_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 529](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L529). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-one-of-mem-cylinder-2).
+Stated but not proved: `MetaMathlibExt.zeckAdicVariation_one_of_mem_cylinder_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 529](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L529). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-one-of-mem-cylinder-2).
 
 ## Ergodic theorem for the Zeckendorf digit-sum variation
 
@@ -604,7 +604,7 @@ as $N \to \infty$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Proposition 28 (`jis-2024-24.3.2-prop-28`).
 
-Stated but not proved: `MetaMathlibExt.zeckAdicVariation_ergodic_average` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 545](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L545). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-ergodic-average).
+Stated but not proved: `MetaMathlibExt.zeckAdicVariation_ergodic_average` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 545](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L545). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-variation-ergodic-average).
 
 ## Prefix value of a digit sequence
 
@@ -622,7 +622,7 @@ levels $\{v_k = F_{k+1} + j - 1\}$ for $1 \le j \le F_k$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 3.1 (cylinders of order `k` and the two towers).
 
-Formalized by `MetaMathlibExt.zeckAdicPrefixValue`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-prefix-value).
+Formalized by `MetaMathlibExt.zeckAdicPrefixValue`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-prefix-value).
 
 ## Prefix value of order one
 
@@ -634,7 +634,7 @@ It equals $x_2$: it is $1$ if $x_2 = 1$ and $0$ otherwise.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 3.1 (characteristic lemma: towers of order `1`).
 
-Formalized by `MetaMathlibExt.zeckAdicPrefixValue_one`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 571](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L571). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-prefix-value-one).
+Formalized by `MetaMathlibExt.zeckAdicPrefixValue_one`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 571](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L571). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-adic-prefix-value-one).
 
 ## The sets $\mathrm{CST}_k$
 
@@ -651,7 +651,7 @@ small tower except the $r$ highest levels of each tower.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 5.1 (definition of `CST_k`).
 
-Formalized by `MetaMathlibExt.zeckCST`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-cst).
+Formalized by `MetaMathlibExt.zeckCST`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-cst).
 
 ## $\mathrm{CST}_1$ is empty for every positive shift
 
@@ -662,7 +662,7 @@ $\mathrm{CST}_1$ for the shift $r$ is empty.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 5.1 ("We observe `CST_1 = ∅`").
 
-Formalized by `MetaMathlibExt.zeckCST_one`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 591](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L591). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-cst-one).
+Formalized by `MetaMathlibExt.zeckCST_one`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 591](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L591). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-cst-one).
 
 ## New-information zone
 
@@ -678,7 +678,7 @@ as $0$ when $k = 0$ (so $\mathrm{NIZ}_0 = \emptyset$).
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 5.1 (definition of `NIZ_k`).
 
-Formalized by `MetaMathlibExt.zeckNIZ`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 605](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L605). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz).
+Formalized by `MetaMathlibExt.zeckNIZ`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 605](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L605). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz).
 
 ## New-information zones lie in $\mathrm{CST}_k$
 
@@ -690,7 +690,7 @@ $\mathrm{CST}_k$ for the shift $r$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 5.1 (characteristic lemma for `NIZ_k`).
 
-Formalized by `MetaMathlibExt.zeckNIZ_subset_zeckCST`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-subset-zeck-cst).
+Formalized by `MetaMathlibExt.zeckNIZ_subset_zeckCST`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-subset-zeck-cst).
 
 ## The new-information zones as tower levels
 
@@ -715,7 +715,7 @@ integers).
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Proposition 29 (`jis-2024-24.3.2-prop-29`).
 
-Stated but not proved: `MetaMathlibExt.zeckNIZ_levels` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 625](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L625). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-levels).
+Stated but not proved: `MetaMathlibExt.zeckNIZ_levels` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 625](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L625). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-levels).
 
 ## Points of $\mathrm{NIZ}_k$ have leading digits $00$
 
@@ -728,7 +728,7 @@ $x_{k+1} \cdots x_2$ of its cylinder of order $k$ starts with $00$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Lemma 32 (`jis-2024-24.3.2-lem-32`).
 
-Stated but not proved: `MetaMathlibExt.zeckNIZ_leading_zeros` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 640](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L640). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-leading-zeros).
+Stated but not proved: `MetaMathlibExt.zeckNIZ_leading_zeros` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 640](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L640). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-leading-zeros).
 
 ## Shifting a new-information cylinder by two orders
 
@@ -748,7 +748,7 @@ implies $C_{0010 n_{k-1} \cdots n_2} \subseteq \mathrm{NIZ}_{k+2}$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Lemma 33 (`jis-2024-24.3.2-lem-33`).
 
-Stated but not proved: `MetaMathlibExt.zeckNIZ_cylinder_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 650](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L650). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-cylinder-shift).
+Stated but not proved: `MetaMathlibExt.zeckNIZ_cylinder_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 650](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L650). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-cylinder-shift).
 
 ## Lifting a cylinder of $\mathrm{NIZ}_k$ to order $k + 2$ lowers the variation by $1$
 
@@ -769,7 +769,7 @@ with $n_i = y_i$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Lemma 35 (`jis-2024-24.3.2-lem-35`).
 
-Stated but not proved: `MetaMathlibExt.zeckNIZ_variation_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 664](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L664). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-variation-shift).
+Stated but not proved: `MetaMathlibExt.zeckNIZ_variation_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 664](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L664). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-variation-shift).
 
 ## Values of the variation on $\mathrm{NIZ}_{k+2}$ are shifted by $-1$
 
@@ -790,7 +790,7 @@ $\mathrm{NIZ}_k$ shifted by $-1$, with multiplicity.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Corollary 36 (`jis-2024-24.3.2-cor-36`).
 
-Stated but not proved: `MetaMathlibExt.zeckNIZ_values_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 682](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L682). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-values-shift).
+Stated but not proved: `MetaMathlibExt.zeckNIZ_values_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 682](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L682). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-values-shift).
 
 ## Exactly $2r$ new-information cylinders carry each small value
 
@@ -808,7 +808,7 @@ $v$, so the $2r$ cylinders may have equal orders.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Proposition 37 (`jis-2024-24.3.2-prop-37`).
 
-Stated but not proved: `MetaMathlibExt.zeckNIZ_count_small_values` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 696](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L696). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-count-small-values).
+Stated but not proved: `MetaMathlibExt.zeckNIZ_count_small_values` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 696](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L696). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-count-small-values).
 
 ## The variation by $F_\ell$ on $\mathrm{NIZ}_\ell$ is $1$
 
@@ -822,7 +822,7 @@ new-information zone $\mathrm{NIZ}_\ell$ of order $\ell$ for $r = F_\ell$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Lemma 40 (`jis-2024-24.3.2-lem-40`).
 
-Stated but not proved: `MetaMathlibExt.zeckNIZ_fib_variation_order` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 706](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L706). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-fib-variation-order).
+Stated but not proved: `MetaMathlibExt.zeckNIZ_fib_variation_order` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 706](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L706). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-fib-variation-order).
 
 ## Values of the variation by $F_\ell$ on $\mathrm{NIZ}_{\ell+1}$
 
@@ -840,7 +840,7 @@ Each such $v$ stands for the level (cylinder of order $\ell + 1$) whose name is 
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Proposition 41 (`jis-2024-24.3.2-prop-41`).
 
-Stated but not proved: `MetaMathlibExt.zeckNIZ_fib_variation_order_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 716](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L716). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-fib-variation-order-succ).
+Stated but not proved: `MetaMathlibExt.zeckNIZ_fib_variation_order_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 716](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L716). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-fib-variation-order-succ).
 
 ## The variation by $F_\ell$ on $\mathrm{NIZ}_{\ell+2}$ is $0$
 
@@ -854,7 +854,7 @@ new-information zone $\mathrm{NIZ}_{\ell+2}$ of order $\ell + 2$ for $r = F_\ell
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Proposition 42 (`jis-2024-24.3.2-prop-42`).
 
-Stated but not proved: `MetaMathlibExt.zeckNIZ_fib_variation_order_add_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 727](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L727). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-fib-variation-order-add-two).
+Stated but not proved: `MetaMathlibExt.zeckNIZ_fib_variation_order_add_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 727](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L727). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-niz-fib-variation-order-add-two).
 
 ## Blocks of a Zeckendorf representation
 
@@ -870,7 +870,7 @@ each block lists its indices in decreasing order. The number of blocks of $r$ is
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Definition 2 (blocks) and Section 7.1.
 
-Formalized by `MetaMathlibExt.zeckBlocks`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 739](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L739). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-blocks).
+Formalized by `MetaMathlibExt.zeckBlocks`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 739](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L739). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-blocks).
 
 ## Block prefixes of a natural number
 
@@ -884,7 +884,7 @@ number $\rho(r)$ of blocks. Thus $r[0] = 0$ and $r[i] = r$ for $i \ge \rho(r)$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 7.1 (definition of `r[i]`).
 
-Formalized by `MetaMathlibExt.zeckBlockPrefix`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 748](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L748). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-block-prefix).
+Formalized by `MetaMathlibExt.zeckBlockPrefix`, a definition declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 748](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L748). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-block-prefix).
 
 ## The empty block prefix is zero
 
@@ -895,7 +895,7 @@ formed by the first $0$ blocks of the Zeckendorf representation of $r$, equals $
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Section 7.1 (convention `r[0] := 0`).
 
-Formalized by `MetaMathlibExt.zeckBlockPrefix_zero`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 756](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L756). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-block-prefix-zero).
+Formalized by `MetaMathlibExt.zeckBlockPrefix_zero`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 756](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L756). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-block-prefix-zero).
 
 ## Zero has no blocks
 
@@ -906,7 +906,7 @@ blocks of $0$ is $0$.
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Definition 2 (characteristic lemma: `ρ(0) = 0`).
 
-Formalized by `MetaMathlibExt.zeckBlocks_zero`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 764](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L764). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-blocks-zero).
+Formalized by `MetaMathlibExt.zeckBlocks_zero`, a theorem declared in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 764](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L764). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-blocks-zero).
 
 ## An $\alpha$-mixing bound for the block variations
 
@@ -927,7 +927,7 @@ $$|\mu(A \cap B) - \mu(A)\mu(B)| \le 12 (1 - 1/\varphi^8)^{k/6} + 1/\varphi^{2k}
 
 - Yohan Hosten, *On the Variation of the Sum of Digits in the Zeckendorf Representation: An Algorithm to Compute the Distribution and Mixing Properties*, Journal of Integer Sequences 27 (2024), Article 24.3.2, Theorem 6 (`jis-2024-24.3.2-thm-6`) and its restatement in Section 7 (`jis-2024-24.3.2-thm-unnumbered-2`).
 
-Stated but not proved: `MetaMathlibExt.zeckBlockAction_alpha_mixing` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 777](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L777). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-block-action-alpha-mixing).
+Stated but not proved: `MetaMathlibExt.zeckBlockAction_alpha_mixing` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean, line 777](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZeckendorfDigitSumVariationWanted.lean#L777). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html#zeck-block-action-alpha-mixing).
 
 ## Depends on
 
@@ -936,4 +936,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Zeckendorf sum of digits](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/numeration-automatic/zeckendorf-sum-of-digits)

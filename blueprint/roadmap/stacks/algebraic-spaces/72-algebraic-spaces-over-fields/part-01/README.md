@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 72.3 Generically finite… to 72.13 Geometrically irreducible…
+# 72.3 Generically finite… to 72.14 Geometrically integral…
 
 - [72.3 Generically finite morphisms](72-3-generically-finite-morphisms.md)
 - [72.4 Integral algebraic spaces](72-4-integral-algebraic-spaces.md)
@@ -15,3 +15,4 @@ navigation: transparent
 - [72.11 Geometrically reduced algebraic spaces](72-11-geometrically-reduced-algebraic-spaces.md)
 - [72.12 Geometrically connected algebraic spaces](72-12-geometrically-connected-algebraic-spaces.md)
 - [72.13 Geometrically irreducible algebraic spaces](72-13-geometrically-irreducible-algebraic-spaces.md)
+- [72.14 Geometrically integral algebraic spaces](72-14-geometrically-integral-algebraic-spaces.md)

@@ -8,14 +8,14 @@ proof: formalized
 
 # Tseitin transformation
 
-27 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html).
+27 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html).
 
 ## Complementary literal
 
 The complement of a literal $(x, b)$ with variable $x$ and
 polarity $b$ is the literal $(x, \lnot b)$: the same variable with the opposite polarity.
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.negLit`, an abbreviation declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#neg-lit).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.negLit`, an abbreviation declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#neg-lit).
 
 ## Tseitin clauses for a conjunction
 
@@ -24,7 +24,7 @@ the gate literal $g$ for the conjunction of $a$ and $b$ are, in this order, the 
 $\lnot g \lor a$, $\lnot g \lor b$ and $g \lor \lnot a \lor \lnot b$, where $\lnot \ell$ denotes the
 complementary literal of $\ell$ (same variable, opposite polarity).
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.andClauses`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#and-clauses).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.andClauses`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#and-clauses).
 
 ## Tseitin clauses for a disjunction
 
@@ -33,7 +33,7 @@ of the gate literal $g$ for the disjunction of $a$ and $b$ are the three clauses
 $\lnot g \lor a \lor b$, $g \lor \lnot a$ and $g \lor \lnot b$, where $\lnot \ell$ denotes the
 complementary literal of $\ell$.
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.orClauses`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#or-clauses).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.orClauses`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#or-clauses).
 
 ## Tseitin clauses for an implication
 
@@ -42,7 +42,7 @@ the gate literal $g$ for the implication from $a$ to $b$ are, in this order, the
 $\lnot g \lor \lnot a \lor b$, $g \lor a$ and $g \lor \lnot b$, where $\lnot \ell$ denotes the
 complementary literal of $\ell$ (same variable, opposite polarity).
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.impClauses`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#imp-clauses).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.impClauses`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#imp-clauses).
 
 ## One step of the Tseitin encoding
 
@@ -52,7 +52,7 @@ the two operands of a binary connective (each a literal, a clause list and a nex
 number), the step returns the positive literal $g$ of variable $2k_B+1$, the clause list $C_A$,
 then $C_B$, then $\mathit{cl}(g, a, b)$, and the next gate number $k_B+1$.
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.tseitinStep`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#tseitin-step).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.tseitinStep`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#tseitin-step).
 
 ## One step of the linear-time Tseitin builder
 
@@ -63,7 +63,7 @@ returns the positive literal $g$ of the variable $2k_B + 1$, the clause list $c(
 by $\varphi_B$, and the next free gate number $k_B + 1$. Neither $\varphi_A$ nor $k_A$ is used: in
 the builder, $\varphi_B$ is the accumulator, which already holds both operands' clauses.
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.accStep`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#acc-step).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.accStep`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#acc-step).
 
 ## Connective count of a propositional formula
 
@@ -73,7 +73,7 @@ number of occurrences of these connectives in $A$. It is $0$ for an atom, and fo
 with $\circ$ one of $\wedge$, $\vee$ and $\to$, it is the count of $B$ plus the count of $C$
 plus $1$.
 
-Formalized by `Cslib.Logic.PL.Proposition.connectiveCount`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#connective-count).
+Formalized by `Cslib.Logic.PL.Proposition.connectiveCount`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#connective-count).
 
 ## Tseitin encoding with gates numbered from $k$
 
@@ -89,7 +89,7 @@ of $g$ for $a \circ b$, and $k''+1$.
 Its list concatenations make it quadratic; the Tseitin CNF is computed by a linear-time builder
 that produces the same clauses in another order.
 
-Formalized by `Cslib.Logic.PL.Proposition.tseitinAux`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#tseitin-aux).
+Formalized by `Cslib.Logic.PL.Proposition.tseitinAux`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#tseitin-aux).
 
 ## Linear-time Tseitin builder
 
@@ -107,7 +107,7 @@ Unlike the reference Tseitin encoding, which concatenates the operands' clause l
 prepends each gate's clauses to the accumulator, so it runs in linear time and the clauses come
 out in a different order.
 
-Formalized by `Cslib.Logic.PL.Proposition.tseitinAcc`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#tseitin-acc).
+Formalized by `Cslib.Logic.PL.Proposition.tseitinAcc`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#tseitin-acc).
 
 ## The linear-time Tseitin builder agrees with the reference encoding
 
@@ -118,7 +118,7 @@ gate number as the reference Tseitin encoding of $A$ with gates numbered from $k
 clause list is $X$ followed by $\mathit{acc}$ for some list of clauses $X$ that is a
 permutation of the defining clauses of the reference encoding.
 
-Formalized by `Cslib.Logic.PL.Proposition.tseitinAcc_eq`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#tseitin-acc-eq).
+Formalized by `Cslib.Logic.PL.Proposition.tseitinAcc_eq`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#tseitin-acc-eq).
 
 ## Tseitin CNF
 
@@ -127,7 +127,7 @@ linear-time Tseitin builder on $A$ with gates numbered from $0$ and the empty ac
 obtaining a literal $\ell$ naming $A$ and a clause list $C$. The Tseitin CNF of $A$ is the unit
 clause $[\ell]$ followed by $C$.
 
-Formalized by `Cslib.Logic.PL.Proposition.tseitin`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#tseitin).
+Formalized by `Cslib.Logic.PL.Proposition.tseitin`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#tseitin).
 
 ## The Tseitin CNF reorders the reference encoding
 
@@ -136,7 +136,7 @@ natural numbers and every formula $A$, the Tseitin CNF of $A$ is the unit clause
 is the literal naming $A$ in the reference Tseitin encoding of $A$ with gates numbered from $0$,
 followed by a list of clauses that is a permutation of the defining clauses of that encoding.
 
-Formalized by `Cslib.Logic.PL.Proposition.tseitin_eq`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#tseitin-eq).
+Formalized by `Cslib.Logic.PL.Proposition.tseitin_eq`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#tseitin-eq).
 
 ## Tseitin CNF with $\bot$ false
 
@@ -145,7 +145,7 @@ $\iota$ from atoms to natural numbers and a formula $A$, this is the CNF consist
 clause whose literal is the negative literal of variable $2\iota(\bot)$, followed by the Tseitin
 CNF of $A$ with respect to $\iota$.
 
-Formalized by `Cslib.Logic.PL.Proposition.tseitinBot`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#tseitin-bot).
+Formalized by `Cslib.Logic.PL.Proposition.tseitinBot`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#tseitin-bot).
 
 ## Number of defining clauses in the Tseitin encoding
 
@@ -154,7 +154,7 @@ natural numbers, every formula $A$ and every gate number $k$, the list of defini
 produced by the Tseitin encoding of $A$ with gates numbered from $k$ has length $3c$, where $c$ is
 the number of binary connectives of $A$.
 
-Formalized by `Cslib.Logic.PL.Proposition.length_tseitinAux`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#length-tseitin-aux).
+Formalized by `Cslib.Logic.PL.Proposition.length_tseitinAux`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#length-tseitin-aux).
 
 ## Number of clauses of the Tseitin CNF
 
@@ -163,7 +163,7 @@ from atoms to natural numbers, the Tseitin CNF of $A$ with respect to $\iota$, a
 clauses counted with repetition, has length $3c + 1$, where $c$ is the number of binary
 connectives of $A$: three defining clauses per connective plus the unit clause asserting $A$.
 
-Formalized by `Cslib.Logic.PL.Proposition.length_tseitin`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#length-tseitin).
+Formalized by `Cslib.Logic.PL.Proposition.length_tseitin`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#length-tseitin).
 
 ## Tseitin clauses have at most three literals
 
@@ -171,7 +171,7 @@ For every proposition $A$ and every map
 $\iota$ from atoms to natural numbers, every clause of the Tseitin CNF of $A$ with respect to
 $\iota$ has at most three literals.
 
-Formalized by `Cslib.Logic.PL.Proposition.length_le_three_of_mem_tseitin`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#length-le-three-of-mem-tseitin).
+Formalized by `Cslib.Logic.PL.Proposition.length_le_three_of_mem_tseitin`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#length-le-three-of-mem-tseitin).
 
 ## Truth value of a literal
 
@@ -179,7 +179,7 @@ Let $\sigma$ assign a Boolean value to every natural-number
 variable, and let $\ell = (x, b)$ be a literal with variable $x$ and polarity $b$. The truth
 value of $\ell$ under $\sigma$ is true exactly when $\sigma(x) = b$.
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.litVal`, an abbreviation declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#lit-val).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.litVal`, an abbreviation declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#lit-val).
 
 ## Satisfying a concatenation of CNF formulas
 
@@ -188,14 +188,14 @@ values to the natural-number variables and all CNF formulas $\varphi$ and $\psi$
 satisfies the formula consisting of the clauses of $\varphi$ followed by those of $\psi$ if
 and only if $\sigma$ satisfies both $\varphi$ and $\psi$.
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.satisfies_append`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#satisfies-append).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.satisfies_append`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#satisfies-append).
 
 ## Gate variables in a range
 
 For natural numbers $k$ and $k'$, a variable $x \in \mathbb{N}$
 is a gate in range $[k, k')$ if $x = 2j + 1$ for some $j \in \mathbb{N}$ with $k \le j < k'$.
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.IsGate`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#is-gate).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.IsGate`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#is-gate).
 
 ## Allowed variables for a gate range
 
@@ -204,7 +204,7 @@ $x \in \mathbb{N}$ is allowed for the gate range $[k, k')$ if $x$ is even (it na
 $x$ is a gate in range $[k, k')$, that is, $x = 2j + 1$ for some $j \in \mathbb{N}$ with
 $k \le j < k'$.
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.Allowed`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#allowed).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.Allowed`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#allowed).
 
 ## Functions of the atom variables
 
@@ -213,7 +213,7 @@ $\sigma : \mathbb{N} \to \mathrm{Bool}$ to Booleans depends only on the atom var
 $f(\sigma) = f(\tau)$ for all assignments $\sigma$ and $\tau$ with $\sigma(2n) = \tau(2n)$ for
 every $n \in \mathbb{N}$.
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.AtomDependent`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#atom-dependent).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.AtomDependent`, a definition declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#atom-dependent).
 
 ## Tseitin encoding invariant
 
@@ -230,7 +230,7 @@ satisfies $\Phi$ and gives $\ell$ the value $v(\sigma)$.
 Here $r$ is meant to be the result (literal, clauses, next gate) of encoding a proposition with
 gates numbered from $k$, and $v$ the value of that proposition.
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.Spec`, a structure declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#spec).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.Spec`, a structure declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#spec).
 
 ## Satisfaction depends only on the occurring variables
 
@@ -239,7 +239,7 @@ let $\sigma$ and $\tau$ be assignments of Boolean values to the natural-number v
 agree on every variable occurring in a literal of $\varphi$. If $\sigma$ satisfies $\varphi$,
 then $\tau$ satisfies $\varphi$.
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.satisfies_of_agree`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#satisfies-of-agree).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.satisfies_of_agree`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#satisfies-of-agree).
 
 ## Value of a proposition read off the atom variables
 
@@ -248,7 +248,7 @@ natural numbers, a proposition $A$ and an assignment $\sigma : \mathbb{N} \to \m
 this is the truth value of $A$ under the valuation that gives each atom $a$ the value
 $\sigma(2\iota(a))$.
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.atomVal`, an abbreviation declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#atom-val).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.atomVal`, an abbreviation declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#atom-val).
 
 ## Correctness invariant of the Tseitin encoding
 
@@ -264,7 +264,7 @@ satisfies $\Phi$ gives $\ell$ the value $A[\sigma]$; and for every assignment $\
 an assignment $\tau$ that agrees with $\sigma$ on every variable that is not a gate in range,
 satisfies $\Phi$ and gives $\ell$ the value $A[\sigma]$.
 
-Formalized by `Cslib.Algorithms.SAT.Tseitin.spec_tseitinAux`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#spec-tseitin-aux).
+Formalized by `Cslib.Algorithms.SAT.Tseitin.spec_tseitinAux`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#spec-tseitin-aux).
 
 ## Tseitin correctness
 
@@ -273,7 +273,7 @@ $A$ be a proposition and let $v$ be a valuation of the atoms. Then $A$ is true u
 only if some assignment $\sigma : \mathbb{N} \to \mathrm{Bool}$ with $\sigma(2\iota(a)) = v(a)$
 for every atom $a$ satisfies the Tseitin CNF of $A$ with respect to $\iota$.
 
-Formalized by `Cslib.Logic.PL.Proposition.evalBool_iff_exists_satisfies_tseitin`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 445](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L445). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#eval-bool-iff-exists-satisfies-tseitin).
+Formalized by `Cslib.Logic.PL.Proposition.evalBool_iff_exists_satisfies_tseitin`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 445](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L445). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#eval-bool-iff-exists-satisfies-tseitin).
 
 ## Equisatisfiability of the Tseitin transformation
 
@@ -283,7 +283,7 @@ proposition. The Tseitin CNF of $A$ with respect to $\iota$, together with the u
 the variable $2\iota(\bot)$ false, is satisfiable if and only if $A$ is true under some valuation
 $v$ of the atoms with $v(\bot)$ false.
 
-Formalized by `Cslib.Logic.PL.Proposition.cnfSat_tseitinBot_iff`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 483](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L483). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#cnf-sat-tseitin-bot-iff).
+Formalized by `Cslib.Logic.PL.Proposition.cnfSat_tseitinBot_iff`, a theorem declared in [CSLibExt/Algorithms/SAT/Tseitin/Basic.lean, line 483](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/Tseitin/Basic.lean#L483). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html#cnf-sat-tseitin-bot-iff).
 
 ## Depends on
 
@@ -292,4 +292,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Tseitin transformation](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/tseitin-transformation/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Logic/propositional-logic/tseitin-transformation)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Logic/propositional-logic/tseitin-transformation)

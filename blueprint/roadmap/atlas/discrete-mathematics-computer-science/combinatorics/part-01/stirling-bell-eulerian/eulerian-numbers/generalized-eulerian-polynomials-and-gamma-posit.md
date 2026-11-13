@@ -7,7 +7,7 @@ statement: formalized
 
 # Generalized Eulerian polynomials and gamma-positivity
 
-11 results, 5 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html).
+11 results, 5 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html).
 
 ## Number of double excedances
 
@@ -19,7 +19,7 @@ number of double excedances of $w$.
 
 - Pasquale Petrullo and Domenico Senato, *Generalized Eulerian Polynomials with a Nonnegative Gamma Vector*, Journal of Integer Sequences 27 (2024), Article 24.1.5, Section 4.
 
-Formalized by `MetaMathlibExt.doubleExcedanceCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#double-excedance-count).
+Formalized by `MetaMathlibExt.doubleExcedanceCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#double-excedance-count).
 
 ## The identity has no double excedances
 
@@ -30,7 +30,7 @@ $\{0, 1, \dots, n-1\}$ has no double excedances.
 
 - Pasquale Petrullo and Domenico Senato, *Generalized Eulerian Polynomials with a Nonnegative Gamma Vector*, Journal of Integer Sequences 27 (2024), Article 24.1.5, Section 4.
 
-Formalized by `MetaMathlibExt.doubleExcedanceCount_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#double-excedance-count-one).
+Formalized by `MetaMathlibExt.doubleExcedanceCount_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#double-excedance-count-one).
 
 ## Generating function of the generalized Eulerian polynomials
 
@@ -47,7 +47,7 @@ denominator is zero and the formula above does not apply.
 
 - Pasquale Petrullo and Domenico Senato, *Generalized Eulerian Polynomials with a Nonnegative Gamma Vector*, Journal of Integer Sequences 27 (2024), Article 24.1.5, Equation (2).
 
-Formalized by `MetaMathlibExt.generalizedEulerianSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-series).
+Formalized by `MetaMathlibExt.generalizedEulerianSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-series).
 
 ## Generalized Eulerian polynomials
 
@@ -66,7 +66,7 @@ $P_n$ is a formal convention.
 
 - Pasquale Petrullo and Domenico Senato, *Generalized Eulerian Polynomials with a Nonnegative Gamma Vector*, Journal of Integer Sequences 27 (2024), Article 24.1.5, Equation (3).
 
-Formalized by `MetaMathlibExt.generalizedEulerianP`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-p).
+Formalized by `MetaMathlibExt.generalizedEulerianP`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-p).
 
 ## Generalized Eulerian polynomials with zero cycle weight
 
@@ -80,7 +80,7 @@ Indeed, for $q = 0$ the generating function of the polynomials $P_n(0, t; x, y)$
 
 - Pasquale Petrullo and Domenico Senato, *Generalized Eulerian Polynomials with a Nonnegative Gamma Vector*, Journal of Integer Sequences 27 (2024), Article 24.1.5, Equation (2).
 
-Formalized by `MetaMathlibExt.generalizedEulerianP_zero_left`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-p-zero-left).
+Formalized by `MetaMathlibExt.generalizedEulerianP_zero_left`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-p-zero-left).
 
 ## Exponential generating function of excedances over cyclic permutations
 
@@ -99,7 +99,7 @@ with constant term $1$.
 
 - Pasquale Petrullo and Domenico Senato, *Generalized Eulerian Polynomials with a Nonnegative Gamma Vector*, Journal of Integer Sequences 27 (2024), Article 24.1.5, Proposition 1 (`jis-2024-24.1.5-prop-1`).
 
-Stated but not proved: `MetaMathlibExt.cyclicExcedanceEGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#cyclic-excedance-egf-eq).
+Stated but not proved: `MetaMathlibExt.cyclicExcedanceEGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#cyclic-excedance-egf-eq).
 
 ## Permutation expansion of the generalized Eulerian polynomials
 
@@ -119,7 +119,7 @@ $$
 
 - Pasquale Petrullo and Domenico Senato, *Generalized Eulerian Polynomials with a Nonnegative Gamma Vector*, Journal of Integer Sequences 27 (2024), Article 24.1.5, Theorem 2 (`jis-2024-24.1.5-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.generalizedEulerianP_eq_sum_perm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-p-eq-sum-perm).
+Stated but not proved: `MetaMathlibExt.generalizedEulerianP_eq_sum_perm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-p-eq-sum-perm).
 
 ## The gamma coefficients of the generalized Eulerian polynomials have nonnegative integer coefficients
 
@@ -140,7 +140,7 @@ integer coefficients.
 
 - Pasquale Petrullo and Domenico Senato, *Generalized Eulerian Polynomials with a Nonnegative Gamma Vector*, Journal of Integer Sequences 27 (2024), Article 24.1.5, Theorem 4 (`jis-2024-24.1.5-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.generalizedEulerianP_gamma_nonneg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-p-gamma-nonneg).
+Stated but not proved: `MetaMathlibExt.generalizedEulerianP_gamma_nonneg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-p-gamma-nonneg).
 
 ## Unimodality of the generalized Eulerian polynomials
 
@@ -156,7 +156,7 @@ Only unimodality is asserted, not symmetry of the coefficients.
 
 - Pasquale Petrullo and Domenico Senato, *Generalized Eulerian Polynomials with a Nonnegative Gamma Vector*, Journal of Integer Sequences 27 (2024), Article 24.1.5, Corollary 5 (`jis-2024-24.1.5-cor-5`).
 
-Stated but not proved: `MetaMathlibExt.generalizedEulerianP_unimodal` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-p-unimodal).
+Stated but not proved: `MetaMathlibExt.generalizedEulerianP_unimodal` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-p-unimodal).
 
 ## The gamma coefficients of the generalized Eulerian polynomials count permutations
 
@@ -183,7 +183,7 @@ $\mathrm{exc}(w) = k$, $\mathrm{dexc}(w) = 0$, $\mathrm{cyc}(w) = i$ and $\mathr
 
 - Pasquale Petrullo and Domenico Senato, *Generalized Eulerian Polynomials with a Nonnegative Gamma Vector*, Journal of Integer Sequences 27 (2024), Article 24.1.5, Theorem 7 (`jis-2024-24.1.5-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.generalizedEulerianP_gamma_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-p-gamma-eq).
+Stated but not proved: `MetaMathlibExt.generalizedEulerianP_gamma_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-p-gamma-eq).
 
 ## Generalized Eulerian polynomials at $x = -1$, $y = 1$
 
@@ -205,7 +205,7 @@ where the exponent $n - \mathrm{exc}(w)$ is an integer, possibly negative.
 
 - Pasquale Petrullo and Domenico Senato, *Generalized Eulerian Polynomials with a Nonnegative Gamma Vector*, Journal of Integer Sequences 27 (2024), Article 24.1.5, Corollary 8 (`jis-2024-24.1.5-cor-8`).
 
-Stated but not proved: `MetaMathlibExt.generalizedEulerianP_neg_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-p-neg-one).
+Stated but not proved: `MetaMathlibExt.generalizedEulerianP_neg_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedEulerianGammaWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html#generalized-eulerian-p-neg-one).
 
 ## Depends on
 
@@ -214,4 +214,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized Eulerian polynomials and gamma-positivity](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/generalized-eulerian-polynomials-and-gamma-posit)

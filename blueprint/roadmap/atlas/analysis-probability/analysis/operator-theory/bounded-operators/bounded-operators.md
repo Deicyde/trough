@@ -7,7 +7,7 @@ statement: formalized
 
 # Bounded operators and operator topologies: its own results
 
-4 results, 2 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/index.html).
+4 results, 2 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/index.html).
 
 General bounded operators: Douglas lemma, direct sums, strong and weak operator convergence, uniform boundedness, Hellinger–Toeplitz, invariant subspaces (Lomonosov), hypercyclicity criteria, Wold decomposition.
 
@@ -23,7 +23,7 @@ is the operator norm of the functional $Tx$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Operator theory; General theory of linear operators), problem `ma_proofbench_l1_22`.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.SymmetricOperatorToDualBoundedWanted.exists_bound_of_symmetric_linearMap_to_strongDual` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/SymmetricOperatorToDualBoundedWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/SymmetricOperatorToDualBoundedWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/index.html#exists-bound-of-symmetric-linear-map-to).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.SymmetricOperatorToDualBoundedWanted.exists_bound_of_symmetric_linearMap_to_strongDual` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/SymmetricOperatorToDualBoundedWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/SymmetricOperatorToDualBoundedWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/index.html#exists-bound-of-symmetric-linear-map-to).
 
 ## Bartle–Graves theorem
 
@@ -37,7 +37,7 @@ for every $y \in F$.
 
 - R. G. Bartle and L. M. Graves, Mappings between function spaces, Trans. Amer. Math. Soc. 72 (1952), 400–413, DOI 10.1090/S0002-9947-1952-0047910-X; Michael selection theorem precursor; Lean states real Banach case with continuous right inverse, positive homogeneity, and linear growth bound.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BartleGravesWanted.bartle_graves`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/BartleGraves.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/BartleGraves.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/index.html#bartle-graves).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BartleGravesWanted.bartle_graves`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/BartleGraves.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/BartleGraves.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/index.html#bartle-graves).
 
 ## Lomonosov's invariant subspace theorem
 
@@ -50,7 +50,7 @@ $M \ne E$ that is invariant under $T$: $T x \in M$ for every $x \in M$.
 
 - V. Lomonosov, Functional Anal. Appl. 7 (1973) and J. Hilden elementary proof, Bull. Amer. Math. Soc.; Aronszajn-Smith 1954 precursor; Radjavi-Rosenthal invariant subspace book, 1973; Lean states complex Banach infinite-dimensional case `K≠0` compact commuting with `T` yields nontrivial closed invariant subspace.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.LomonosovInvariantSubspaceWanted.lomonosov_invariantSubspace`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/LomonosovInvariantSubspace.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/LomonosovInvariantSubspace.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/index.html#lomonosov-invariant-subspace).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.LomonosovInvariantSubspaceWanted.lomonosov_invariantSubspace`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/LomonosovInvariantSubspace.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/LomonosovInvariantSubspace.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/index.html#lomonosov-invariant-subspace).
 
 ## Strong operator convergence characterized by weak operator convergence
 
@@ -68,7 +68,7 @@ $x, y \in H$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; General theory of linear operators), problem `ma_proofbench_l2_59`.
 
-Stated but not proved: `MathlibExt.Analysis.OperatorTheory.StrongOperatorConvergenceIffWeakAndAdjointWanted.tendsto_apply_iff_tendsto_inner_and_tendsto_inner_adjoint_comp` is written with `theorem_wanted` in [WantedExt/Analysis/OperatorTheory/StrongOperatorConvergenceIffWeakAndAdjointWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/OperatorTheory/StrongOperatorConvergenceIffWeakAndAdjointWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/index.html#tendsto-apply-iff-tendsto-inner-and-tend).
+Stated but not proved: `MathlibExt.Analysis.OperatorTheory.StrongOperatorConvergenceIffWeakAndAdjointWanted.tendsto_apply_iff_tendsto_inner_and_tendsto_inner_adjoint_comp` is written with `theorem_wanted` in [WantedExt/Analysis/OperatorTheory/StrongOperatorConvergenceIffWeakAndAdjointWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/OperatorTheory/StrongOperatorConvergenceIffWeakAndAdjointWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/index.html#tendsto-apply-iff-tendsto-inner-and-tend).
 
 ## Depends on
 
@@ -77,4 +77,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bounded operators and operator topologies](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/bounded-operators/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/operator-theory/bounded-operators)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/operator-theory/bounded-operators)

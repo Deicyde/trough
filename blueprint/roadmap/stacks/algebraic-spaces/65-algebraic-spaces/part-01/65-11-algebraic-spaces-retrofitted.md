@@ -8,13 +8,13 @@ proof: formalized
 
 # 65.11 Algebraic spaces, retrofitted
 
-Section 65.11 of the Stacks Project, [Tag 02WX](https://stacks.math.columbia.edu/tag/02WX). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 65.11 of the Stacks Project, [Tag 02WX](https://stacks.math.columbia.edu/tag/02WX). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BGQ, a lemma
 
 [Tag 0BGQ](https://stacks.math.columbia.edu/tag/0BGQ) in the Stacks Project.
 
-**`AlgebraicGeometry.isAlgebraicSpace_of_surjective_etale_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleAtlasCriterionUnconditional.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleAtlasCriterionUnconditional.lean#L84).
+**`AlgebraicGeometry.isAlgebraicSpace_of_surjective_etale_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleAtlasCriterionUnconditional.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleAtlasCriterionUnconditional.lean#L84).
 
 > **Stacks 0BGQ.** A sheaf `F` on the big fppf site over `S` admitting a representable,
 > surjective, étale morphism `f : h_U ⟶ F` from an object `U` of the site is an algebraic space
@@ -40,7 +40,7 @@ theorem isAlgebraicSpace_of_surjective_etale_atlas
 
 [Tag 0BGR](https://stacks.math.columbia.edu/tag/0BGR) in the Stacks Project.
 
-**`AlgebraicGeometry.isAlgebraicSpace_of_relativelyRepresentable_surjective_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleAtlasCriterionUnconditional.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleAtlasCriterionUnconditional.lean#L102).
+**`AlgebraicGeometry.isAlgebraicSpace_of_relativelyRepresentable_surjective_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleAtlasCriterionUnconditional.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleAtlasCriterionUnconditional.lean#L102).
 
 > **Stacks 0BGR.** A sheaf `F` on the big fppf site over `S` admitting a representable,
 > surjective, étale morphism `a : G ⟶ F` from an algebraic space `G` over `S` is an algebraic space
@@ -60,7 +60,7 @@ theorem isAlgebraicSpace_of_relativelyRepresentable_surjective_etale
     IsAlgebraicSpace B S hS F
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpaceULift_of_relative_surjective_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedEtaleAtlas.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedEtaleAtlas.lean#L96). The attribute's comment: “in an arbitrary value universe”.
+**`AlgebraicGeometry.Space.isAlgebraicSpaceULift_of_relative_surjective_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedEtaleAtlas.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedEtaleAtlas.lean#L96). The attribute's comment: “in an arbitrary value universe”.
 
 > **Stacks 0BGR** for presheaves with values in a universe `max w u` independent of the
 > universe `u` of the schemes. A sheaf `F` on the big fppf site of `S` admitting a morphism
@@ -86,7 +86,7 @@ theorem isAlgebraicSpaceULift_of_relative_surjective_etale
 
 [Tag 02WY](https://stacks.math.columbia.edu/tag/02WY) in the Stacks Project.
 
-**`AlgebraicGeometry.isAlgebraicSpace_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean#L212).
+**`AlgebraicGeometry.isAlgebraicSpace_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean#L212).
 
 > A representable transformation to an algebraic space over `S` has an
 > algebraic space over `S` as its source.
@@ -104,7 +104,7 @@ theorem isAlgebraicSpace_of_relativelyRepresentable
 
 [Tag 02WZ](https://stacks.math.columbia.edu/tag/02WZ) in the Stacks Project.
 
-**`AlgebraicGeometry.presheaf_inverseImage_iff_atlas_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RepresentableAtlasTest.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RepresentableAtlasTest.lean#L75).
+**`AlgebraicGeometry.presheaf_inverseImage_iff_atlas_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RepresentableAtlasTest.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RepresentableAtlasTest.lean#L75).
 
 > **Stacks 02WZ.** A representable transformation of presheaves on the big fppf site of `S`
 > has a base-change stable, fppf local relative property exactly when its base change along one
@@ -134,7 +134,7 @@ theorem presheaf_inverseImage_iff_atlas_snd
 
 [Tag 03I2](https://stacks.math.columbia.edu/tag/03I2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_and_presheaf_of_surjectiveEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleDescentFromFppfDescent.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleDescentFromFppfDescent.lean#L411).
+**`AlgebraicGeometry.Space.isAlgebraicSpace_and_presheaf_of_surjectiveEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleDescentFromFppfDescent.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleDescentFromFppfDescent.lean#L411).
 
 > **Stacks 03I2.** Let `S` be a scheme contained in a big fppf site and let `P` be a property
 > of morphisms of schemes which is preserved by arbitrary base change, is fppf local on the base,
@@ -172,7 +172,7 @@ theorem isAlgebraicSpace_and_presheaf_of_surjectiveEtaleChart
 
 [Tag 02X1](https://stacks.math.columbia.edu/tag/02X1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_surjective_etale_chart_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleLocal.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleLocal.lean#L77).
+**`AlgebraicGeometry.Space.exists_surjective_etale_chart_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleLocal.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleLocal.lean#L77).
 
 > Let `a : F ⟶ G` be a morphism of presheaves on the big fppf site of `S` with `F` an
 > algebraic space over `S`. Every surjective étale scheme chart `q : yoneda.obj V ⟶ G` is
@@ -207,4 +207,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 65.11, Tag 02WX](https://stacks.math.columbia.edu/tag/02WX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

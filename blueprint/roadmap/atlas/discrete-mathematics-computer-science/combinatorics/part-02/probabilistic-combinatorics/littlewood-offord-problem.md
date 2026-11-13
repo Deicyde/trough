@@ -7,7 +7,7 @@ statement: formalized
 
 # Littlewood–Offord problem
 
-3 results, 1 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/littlewood-offord-problem/index.html).
+3 results, 1 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/littlewood-offord-problem/index.html).
 
 ## Sharp Littlewood–Offord bound
 
@@ -25,7 +25,7 @@ $\min_\nu |a_\nu| = 1$.
 
 - A. C. Offord, Problem 179 of the Scottish Book; the Littlewood-Offord lemma (Littlewood-Offord, 1938) and Erdős's proof giving the sharp `O(2 ^ n / √n)` bound, attained when all the `a nu` are equal. See the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
-Stated but not proved: `MathlibExt.Combinatorics.ScottishBook179Wanted.littlewoodOffordSharpBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/ScottishBook179Wanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ScottishBook179Wanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/littlewood-offord-problem/index.html#littlewood-offord-sharp-bound).
+Stated but not proved: `MathlibExt.Combinatorics.ScottishBook179Wanted.littlewoodOffordSharpBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/ScottishBook179Wanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ScottishBook179Wanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/littlewood-offord-problem/index.html#littlewood-offord-sharp-bound).
 
 ## Strong Littlewood–Offord bound in the plane
 
@@ -35,7 +35,7 @@ open disc $D$ of radius $1$ in $\mathbb{C}$, at most $\binom{n}{\lfloor n/2 \rfl
 $2^n$ sign vectors $(\varepsilon_1, \dots, \varepsilon_n) \in \{1, -1\}^n$ satisfy
 $\sum_i \varepsilon_i z_i \in D$ (Erdős Problem 498).
 
-Formalized by `MathlibExt.Combinatorics.StrongLittlewoodOffordErdosProblem498Wanted.signedSumsInUnitDiscBound`, a definition declared in [WantedExt/Combinatorics/StrongLittlewoodOffordErdosProblem498Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/StrongLittlewoodOffordErdosProblem498Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/littlewood-offord-problem/index.html#signed-sums-in-unit-disc-bound).
+Formalized by `MathlibExt.Combinatorics.StrongLittlewoodOffordErdosProblem498Wanted.signedSumsInUnitDiscBound`, a definition declared in [WantedExt/Combinatorics/StrongLittlewoodOffordErdosProblem498Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/StrongLittlewoodOffordErdosProblem498Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/littlewood-offord-problem/index.html#signed-sums-in-unit-disc-bound).
 
 ## Kleitman's theorem on signed sums in the plane
 
@@ -51,7 +51,7 @@ proved it for real $z_i$.
 
 - T. F. Bloom, Erdős Problems, Problem #498, https://www.erdosproblems.com/498 (status PROVED (LEAN)); resolution: D. J. Kleitman, On a lemma of Littlewood and Offord on the distribution of certain sums, Math. Z. (1965), 251-259, erdosproblems.com/498: solved in the affirmative by Kleitman; generalized to Hilbert spaces (Kleitman 1970), https://www.erdosproblems.com/498.
 
-Stated but not proved: `MathlibExt.Combinatorics.StrongLittlewoodOffordErdosProblem498Wanted.signedSumsInUnitDiscBound_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/StrongLittlewoodOffordErdosProblem498Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/StrongLittlewoodOffordErdosProblem498Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/littlewood-offord-problem/index.html#signed-sums-in-unit-disc-bound-holds).
+Stated but not proved: `MathlibExt.Combinatorics.StrongLittlewoodOffordErdosProblem498Wanted.signedSumsInUnitDiscBound_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/StrongLittlewoodOffordErdosProblem498Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/StrongLittlewoodOffordErdosProblem498Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/littlewood-offord-problem/index.html#signed-sums-in-unit-disc-bound-holds).
 
 ## Depends on
 
@@ -60,4 +60,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Littlewood–Offord problem](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/littlewood-offord-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/probabilistic-combinatorics/littlewood-offord-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/probabilistic-combinatorics/littlewood-offord-problem)

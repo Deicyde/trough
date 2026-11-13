@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.32 Some properties of K-injective complexes
 
-Section 20.32 of the Stacks Project, [Tag 0D5U](https://stacks.math.columbia.edu/tag/0D5U). 9 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.32 of the Stacks Project, [Tag 0D5U](https://stacks.math.columbia.edu/tag/0D5U). 9 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08BS, a lemma
 
 [Tag 08BS](https://stacks.math.columbia.edu/tag/08BS) in the Stacks Project.
 
-**`ExtensionByZeroModules.isKInjective_jStar`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ExtensionByZero/RestrictionOfKInjectives.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ExtensionByZero/RestrictionOfKInjectives.lean#L54).
+**`ExtensionByZeroModules.isKInjective_jStar`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ExtensionByZero/RestrictionOfKInjectives.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ExtensionByZero/RestrictionOfKInjectives.lean#L54).
 
 > Restriction to an open subspace preserves K-injective complexes of sheaves of modules.
 
@@ -29,7 +29,7 @@ instance isKInjective_jStar
 
 [Tag 0D5V](https://stacks.math.columbia.edu/tag/0D5V) in the Stacks Project.
 
-**`Stacks.Cohomology.OpenSubspace.cohomologyOnOpenIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyOnAnOpenSubspace.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyOnAnOpenSubspace.lean#L251). The attribute's comment: “`H^p(U, K) ≅ H^p(U, K|_U)`, natural in `K` in `D(O_X)`, for every open `U` of a ringed space `X` and every degree `p`”.
+**`Stacks.Cohomology.OpenSubspace.cohomologyOnOpenIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyOnAnOpenSubspace.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyOnAnOpenSubspace.lean#L251). The attribute's comment: “`H^p(U, K) ≅ H^p(U, K|_U)`, natural in `K` in `D(O_X)`, for every open `U` of a ringed space `X` and every degree `p`”.
 
 > Degree-`p` cohomology over an open agrees naturally with degree-`p` cohomology after
 > restriction to that open.  The component at `K` is the isomorphism
@@ -50,7 +50,7 @@ public noncomputable def cohomologyOnOpenIsoRestriction {X : TopCat.{u}}
 
 [Tag 0BKJ](https://stacks.math.columbia.edu/tag/0BKJ) in the Stacks Project.
 
-**`Stacks.Cohomology.CohomologyPresheaf.cohomologyPresheafEvaluationIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafOnOpenSubspace.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafOnOpenSubspace.lean#L41). The attribute's comment: “values on opens: the value of the presheaf on U is H^q(U, K|\_U)”.
+**`Stacks.Cohomology.CohomologyPresheaf.cohomologyPresheafEvaluationIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafOnOpenSubspace.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafOnOpenSubspace.lean#L41). The attribute's comment: “values on opens: the value of the presheaf on U is H^q(U, K|\_U)”.
 
 > **Stacks Project, Tag 0BKJ, the value on an open as cohomology of the open subspace.** The
 > value on `U` of the presheaf `U ↦ H^q(U, K)` is `H^q(U, K|_U)`, the degree-`q` cohomology of the
@@ -72,7 +72,7 @@ public def cohomologyPresheafEvaluationIsoRestriction {X : TopCat.{u}}
           DerivedCategory.homologyFunctor AddCommGrpCat.{u} q
 ```
 
-**`Stacks.Cohomology.CohomologyPresheaf.cohomologyPresheafEvaluationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafSheafification.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafSheafification.lean#L213). The attribute's comment: “values on opens”.
+**`Stacks.Cohomology.CohomologyPresheaf.cohomologyPresheafEvaluationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafSheafification.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafSheafification.lean#L213). The attribute's comment: “values on opens”.
 
 > The value on `U` of the cohomology presheaf is `H^q(U, K)`.
 
@@ -91,7 +91,7 @@ public def cohomologyPresheafEvaluationIso {X : TopCat.{u}}
           DerivedCategory.homologyFunctor AddCommGrpCat.{u} q
 ```
 
-**`Stacks.Cohomology.CohomologyPresheaf.sheafificationCohomologyPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafSheafification.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafSheafification.lean#L258). The attribute's comment: “associated sheaf”.
+**`Stacks.Cohomology.CohomologyPresheaf.sheafificationCohomologyPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafSheafification.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafSheafification.lean#L258). The attribute's comment: “associated sheaf”.
 
 > Sheafifying the presheaf `U ↦ H^q(U, K)` gives the `q`-th cohomology sheaf of `K`, naturally
 > in the derived object `K`.
@@ -112,11 +112,11 @@ public def sheafificationCohomologyPresheafIso {X : TopCat.{u}}
 
 [Tag 08FE](https://stacks.math.columbia.edu/tag/08FE) in the Stacks Project.
 
-**`Stacks.Duality.OpenImmersion.isIso_quasiCoherentDerivedRestrictBaseChangeSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionBaseChange.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionBaseChange.lean#L324). The attribute's comment: “invertibility of Stacks.Duality.OpenImmersion.quasiCoherentDerivedRestrictBaseChangeSquare, the mate of Stacks.Duality.quasiCoherentDerivedPushforwardSquareIso across the two restriction adjunctions, on the quasi-coherent derived categories of a cartesian square of schemes whose vertical arrows are open immersions, at the locally small model. The isomorphism of functors itself is Stacks.Cohomology.derivedPushforwardRestrictIso, for ringed spaces; what is added here is that this particular canonical map is the invertible one”.
+**`Stacks.Duality.OpenImmersion.isIso_quasiCoherentDerivedRestrictBaseChangeSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionBaseChange.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionBaseChange.lean#L324). The attribute's comment: “invertibility of Stacks.Duality.OpenImmersion.quasiCoherentDerivedRestrictBaseChangeSquare, the mate of Stacks.Duality.quasiCoherentDerivedPushforwardSquareIso across the two restriction adjunctions, on the quasi-coherent derived categories of a cartesian square of schemes whose vertical arrows are open immersions, at the locally small model. The isomorphism of functors itself is Stacks.Cohomology.derivedPushforwardRestrictIso, for ringed spaces; what is added here is that this particular canonical map is the invertible one”.
 
 > **The comparison `(Rf_*K)|_V ⟶ Rf'_*(K|_U)` of [Stacks, Tag 08FE] is invertible on the
 > quasi-coherent derived categories.**  This is the slot that
-> `StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionConjugate.lean`
+> `StacksFrontier.AlgebraicGeometry.Duality.OpenImmersion.TwistedInverseImageRestrictionConjugate`
 > leaves open; see the module documentation for the argument.
 
 ```lean
@@ -126,7 +126,7 @@ theorem isIso_quasiCoherentDerivedRestrictBaseChangeSquare (sq : IsPullback j' f
       (fun K i => derivedCategoryB_derivedRestrict j' K.obj K.property i) sq.w)
 ```
 
-**`AlgebraicGeometry.DerivedChow.derivedPushforwardRestrictOpenIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukai.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukai.lean#L198). The attribute's comment: “for the standard derived direct image and derived pullback of [Stacks, Tag 079W], at the inclusion of an open subscheme of the target of a morphism of schemes”.
+**`AlgebraicGeometry.DerivedChow.derivedPushforwardRestrictOpenIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukai.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukai.lean#L199). The attribute's comment: “for the standard derived direct image and derived pullback of [Stacks, Tag 079W], at the inclusion of an open subscheme of the target of a morphism of schemes”.
 
 > **[Stacks, Tag 08FE] at an open of the target of a morphism of schemes.**  Restricting the
 > derived direct image along `q` to an open `V` of the target is the derived direct image along
@@ -139,7 +139,7 @@ def derivedPushforwardRestrictOpenIso :
       derivedPullback (ofScheme (q ⁻¹ᵁ V).ι) ⋙ derivedPushforward (ofScheme (q ∣_ V))
 ```
 
-**`AlgebraicGeometry.schemeDerivedPushforwardRestrictOpenIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DerivedPushforwardOpenBase.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/DerivedPushforwardOpenBase.lean#L84). The attribute's comment: “for schemes, at the derived direct image of Tag 079W, with restriction to an open subscheme on the restriction edges”.
+**`AlgebraicGeometry.schemeDerivedPushforwardRestrictOpenIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DerivedPushforwardOpenBase.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/DerivedPushforwardOpenBase.lean#L84). The attribute's comment: “for schemes, at the derived direct image of Tag 079W, with restriction to an open subscheme on the restriction edges”.
 
 > **[Stacks, Tag 08FE] for schemes.** For a Cartesian square of schemes
 > ```
@@ -166,7 +166,7 @@ def schemeDerivedPushforwardRestrictOpenIso {X S X' T : Scheme.{u}} (f : X ⟶ S
         ((Scheme.Modules.restrictFunctor g').mapDerivedCategory.obj E)
 ```
 
-**`AlgebraicGeometry.schemeDerivedPushforwardRestrictOpensIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DerivedPushforwardOpenBase.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/DerivedPushforwardOpenBase.lean#L137). The attribute's comment: “for schemes, at the restriction of f to the preimage of an open of the base”.
+**`AlgebraicGeometry.schemeDerivedPushforwardRestrictOpensIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DerivedPushforwardOpenBase.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/DerivedPushforwardOpenBase.lean#L137). The attribute's comment: “for schemes, at the restriction of f to the preimage of an open of the base”.
 
 > **[Stacks, Tag 08FE] for schemes, at an open of the base.** The restriction to an open
 > `U ⊆ S` of `Rf_*E` is the derived direct image along `f ∣_ U : f ⁻¹ᵁ U ⟶ U` of the restriction of
@@ -184,7 +184,7 @@ def schemeDerivedPushforwardRestrictOpensIso {X S : Scheme.{u}} (f : X ⟶ S) (U
         ((Scheme.Modules.restrictFunctor (f ⁻¹ᵁ U).ι).mapDerivedCategory.obj E)
 ```
 
-**`Stacks.Cohomology.derivedPushforwardRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAndResolutions/KInjectiveRestriction.lean, line 925](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechAndResolutions/KInjectiveRestriction.lean#L925).
+**`Stacks.Cohomology.derivedPushforwardRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAndResolutions/KInjectiveRestriction.lean, line 925](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechAndResolutions/KInjectiveRestriction.lean#L925).
 
 > **Stacks 08FE.** In a Cartesian square of ringed spaces
 > ```
@@ -239,7 +239,7 @@ noncomputable def derivedPushforwardRestrictIso
     Rf ⋙ Rj ≅ Ri ⋙ Rg
 ```
 
-**`Stacks.Cohomology.derivedPushforwardRestrictIso_isCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAndResolutions/KInjectiveRestriction.lean, line 1004](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechAndResolutions/KInjectiveRestriction.lean#L1004). The attribute's comment: “canonicality”.
+**`Stacks.Cohomology.derivedPushforwardRestrictIso_isCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAndResolutions/KInjectiveRestriction.lean, line 1004](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechAndResolutions/KInjectiveRestriction.lean#L1004). The attribute's comment: “canonicality”.
 
 > The isomorphism `derivedPushforwardRestrictIso` is the canonical one: on a
 > K-injective representative it is induced by the fixed adjunction mate
@@ -298,7 +298,7 @@ theorem derivedPushforwardRestrictIso_isCanonical
 
 [Tag 0D5W](https://stacks.math.columbia.edu/tag/0D5W) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedSectionsLeray.isIso_lerayComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/LerayForDerivedSections.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/LerayForDerivedSections.lean#L428). The attribute's comment: “over an open”.
+**`Stacks.Cohomology.DerivedSectionsLeray.isIso_lerayComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/LerayForDerivedSections.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/LerayForDerivedSections.lean#L428). The attribute's comment: “over an open”.
 
 > **Stacks 0D5W, over an open.**  For a morphism `f : X ⟶ Y` of ringed spaces and an open
 > `V ⊆ Y`, derived sections over `V` after derived pushforward along `f` agree with derived sections
@@ -309,7 +309,7 @@ theorem derivedPushforwardRestrictIso_isCanonical
 theorem isIso_lerayComparison : IsIso (lerayComparison f V)
 ```
 
-**`Stacks.Cohomology.DerivedSectionsLeray.isIso_lerayComparison_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/LerayForDerivedSections.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/LerayForDerivedSections.lean#L454). The attribute's comment: “global sections”.
+**`Stacks.Cohomology.DerivedSectionsLeray.isIso_lerayComparison_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/LerayForDerivedSections.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/LerayForDerivedSections.lean#L454). The attribute's comment: “global sections”.
 
 > **Stacks 0D5W, global sections.**  `R Γ(Y, -) ∘ Rf_*` and `R Γ(X, -)` agree as functors
 > `D(𝒪_X) ⥤ D(Γ(Y, 𝒪_Y))`: the Leray comparison at `V = ⊤` is an isomorphism.  Its source is
@@ -320,7 +320,7 @@ theorem isIso_lerayComparison : IsIso (lerayComparison f V)
 theorem isIso_lerayComparison_top : IsIso (lerayComparison f ⊤)
 ```
 
-**`Stacks.Cohomology.DerivedSectionsLeray.isIso_lerayComparison_top_and_forall_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/LerayForDerivedSections.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/LerayForDerivedSections.lean#L464). The attribute's comment: “both statements, for a morphism of ringed spaces: `RΓ(Y, -) ∘ Rf_* = RΓ(X, -)`, and `RΓ(U, -) = RΓ(V, -) ∘ Rf_*` for `V ⊆ Y` open and `U = f⁻¹ V`”.
+**`Stacks.Cohomology.DerivedSectionsLeray.isIso_lerayComparison_top_and_forall_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/LerayForDerivedSections.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/LerayForDerivedSections.lean#L464). The attribute's comment: “both statements, for a morphism of ringed spaces: `RΓ(Y, -) ∘ Rf_* = RΓ(X, -)`, and `RΓ(U, -) = RΓ(V, -) ∘ Rf_*` for `V ⊆ Y` open and `U = f⁻¹ V`”.
 
 > **Stacks 0D5W**, the whole lemma, stated for an arbitrary morphism of ringed spaces
 > `f : X ⟶ Y` with no further hypothesis.  The canonical Leray comparison
@@ -337,7 +337,7 @@ theorem isIso_lerayComparison_top_and_forall_open {X₀ Y₀ : RingedSpace.{u, u
 
 [Tag 0D5X](https://stacks.math.columbia.edu/tag/0D5X) in the Stacks Project.
 
-**`Stacks.Cohomology.UnboundedHigherDirectImage.preimageCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CohomologySheavesOfADerivedPushforward.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CohomologySheavesOfADerivedPushforward.lean#L76). The attribute's comment: “preimage formula”.
+**`Stacks.Cohomology.UnboundedHigherDirectImage.preimageCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CohomologySheavesOfADerivedPushforward.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CohomologySheavesOfADerivedPushforward.lean#L76). The attribute's comment: “preimage formula”.
 
 > Cohomology over the inverse image `f⁻¹ V` agrees with cohomology over `V` after derived
 > pushforward: `H^i(f⁻¹ V, K) = H^i(V, Rf_* K)`, naturally in `K`.
@@ -350,7 +350,7 @@ def preimageCohomologyIso (V : Opens Y.carrier) (i : ℤ) :
         DerivedCategory.homologyFunctor (ModuleCat.{u} ((structureSheafRing Y).obj.obj (op V))) i
 ```
 
-**`Stacks.Cohomology.UnboundedHigherDirectImage.preimageCohomologyEvaluationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CohomologySheavesOfADerivedPushforward.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CohomologySheavesOfADerivedPushforward.lean#L87). The attribute's comment: “values on opens”.
+**`Stacks.Cohomology.UnboundedHigherDirectImage.preimageCohomologyEvaluationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CohomologySheavesOfADerivedPushforward.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CohomologySheavesOfADerivedPushforward.lean#L87). The attribute's comment: “values on opens”.
 
 > The value on an open `V ⊆ Y` of the presheaf `derivedPreimageCohomologyPresheaf` is the
 > hypercohomology `H^i(f⁻¹ V, K)` of `K` over the inverse image of `V`, naturally in `K`.
@@ -365,7 +365,7 @@ def preimageCohomologyEvaluationIso (V : Opens Y.carrier) (i : ℤ) :
         DerivedCategory.homologyFunctor (ModuleCat.{u} ((structureSheafRing Y).obj.obj (op V))) i
 ```
 
-**`Stacks.Cohomology.UnboundedHigherDirectImage.higherDirectImageIsoSheafifyPreimageCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CohomologySheavesOfADerivedPushforward.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CohomologySheavesOfADerivedPushforward.lean#L102). The attribute's comment: “associated sheaf”.
+**`Stacks.Cohomology.UnboundedHigherDirectImage.higherDirectImageIsoSheafifyPreimageCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CohomologySheavesOfADerivedPushforward.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CohomologySheavesOfADerivedPushforward.lean#L102). The attribute's comment: “associated sheaf”.
 
 > The `i`-th cohomology sheaf of `Rf_* K` is the sheaf associated to the presheaf
 > `V ↦ H^i(f⁻¹ V, K)`, naturally in `K`.
@@ -384,7 +384,7 @@ def higherDirectImageIsoSheafifyPreimageCohomology (i : ℤ) :
 
 [Tag 0D5Y](https://stacks.math.columbia.edu/tag/0D5Y) in the Stacks Project.
 
-**`Stacks.Cohomology.UnderlyingAbelianSheaf.sectionsForgetComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/UnderlyingAbelianSheafCohomology.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/UnderlyingAbelianSheafCohomology.lean#L422). The attribute's comment: “part (1)”.
+**`Stacks.Cohomology.UnderlyingAbelianSheaf.sectionsForgetComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/UnderlyingAbelianSheafCohomology.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/UnderlyingAbelianSheafCohomology.lean#L422). The attribute's comment: “part (1)”.
 
 > **Stacks 0D5Y, part (1).** Unbounded derived sections of modules agree canonically and
 > naturally with derived sections after forgetting to abelian sheaves: for every open `U ⊆ X` the
@@ -396,7 +396,7 @@ public theorem sectionsForgetComparison_isIso {X : TopCat.{u}}
     IsIso (sectionsForgetComparison O U)
 ```
 
-**`Stacks.Cohomology.UnderlyingAbelianPushforward.pushforwardForgetComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/UnderlyingAbelianSheafPushforward.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/UnderlyingAbelianSheafPushforward.lean#L309). The attribute's comment: “part (2)”.
+**`Stacks.Cohomology.UnderlyingAbelianPushforward.pushforwardForgetComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/UnderlyingAbelianSheafPushforward.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/UnderlyingAbelianSheafPushforward.lean#L309). The attribute's comment: “part (2)”.
 
 > **Stacks 0D5Y, part (2).**  The unbounded derived pushforward of a complex of
 > `𝒪_X`-modules, with the module structure forgotten, agrees canonically and naturally with the
@@ -417,7 +417,7 @@ theorem pushforwardForgetComparison_isIso :
 
 [Tag 08BT](https://stacks.math.columbia.edu/tag/08BT) in the Stacks Project.
 
-**`Stacks.ExtensionByZero.exists_derivedJShriek_restriction_adjunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ExtensionByZero/DerivedAdjunction.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ExtensionByZero/DerivedAdjunction.lean#L105).
+**`Stacks.ExtensionByZero.exists_derivedJShriek_restriction_adjunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ExtensionByZero/DerivedAdjunction.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ExtensionByZero/DerivedAdjunction.lean#L105).
 
 > For an open subset `U` of a ringed space `X`, extension by zero and restriction to `U` are
 > exact, and the functor on unbounded derived categories induced by extension by zero is left
@@ -445,7 +445,7 @@ theorem exists_derivedJShriek_restriction_adjunction
 
 [Tag 0D5Z](https://stacks.math.columbia.edu/tag/0D5Z) in the Stacks Project.
 
-**`RingedSpaceModuleAdjunction.isKInjective_modulePushforward_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/FlatPushforwardOfKInjectives.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/FlatPushforwardOfKInjectives.lean#L49).
+**`RingedSpaceModuleAdjunction.isKInjective_modulePushforward_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/FlatPushforwardOfKInjectives.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/FlatPushforwardOfKInjectives.lean#L49).
 
 > **Stacks 0D5Z.** If `f : X ⟶ Y` is a flat morphism of ringed spaces and `ℐ^•` is a
 > K-injective complex of `𝒪_X`-modules, then `f_* ℐ^•` is K-injective as a complex of
@@ -467,4 +467,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.32, Tag 0D5U](https://stacks.math.columbia.edu/tag/0D5U)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

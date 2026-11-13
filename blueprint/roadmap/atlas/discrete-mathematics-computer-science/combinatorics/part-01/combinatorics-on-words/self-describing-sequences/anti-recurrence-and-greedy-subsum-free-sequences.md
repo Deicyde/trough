@@ -7,7 +7,7 @@ statement: formalized
 
 # Anti-recurrence and greedy subsum-free sequences
 
-63 results, 42 proved and 21 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html).
+63 results, 42 proved and 21 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html).
 
 ## Least positive integer missing from a finite set
 
@@ -19,7 +19,7 @@ integers, used to build the anti-Tribonacci sequence). It always lies among $1, 
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiTribonacciMex`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-mex).
+Formalized by `MetaMathlibExt.antiTribonacciMex`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-mex).
 
 ## Mex of $\{1, 2, 3, 6\}$
 
@@ -29,7 +29,7 @@ The least positive integer not in $\{1, 2, 3, 6\}$ is $4$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiTribonacciMex_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-mex-example).
+Formalized by `MetaMathlibExt.antiTribonacciMex_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-mex-example).
 
 ## The mex of a finite set is positive
 
@@ -40,7 +40,7 @@ not in a finite set $s$ of natural numbers. For every such $s$, $\mathrm{mex}(s)
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiTribonacciMex_pos`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-mex-pos).
+Formalized by `MetaMathlibExt.antiTribonacciMex_pos`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-mex-pos).
 
 ## The mex of a finite set lies outside the set
 
@@ -51,7 +51,7 @@ integer not in a finite set $s$ of natural numbers. For every such $s$, $\mathrm
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiTribonacciMex_notMem`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-mex-not-mem).
+Formalized by `MetaMathlibExt.antiTribonacciMex_notMem`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-mex-not-mem).
 
 ## The mex is at most every missing positive integer
 
@@ -63,7 +63,7 @@ $m \notin s$, then $\mathrm{mex}(s) \le m$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiTribonacciMex_le_of_notMem`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-mex-le-of-not-mem).
+Formalized by `MetaMathlibExt.antiTribonacciMex_le_of_notMem`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-mex-le-of-not-mem).
 
 ## Anti-Tribonacci construction
 
@@ -80,7 +80,7 @@ values used so far.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiTribonacciState`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-state).
+Formalized by `MetaMathlibExt.antiTribonacciState`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-state).
 
 ## First summands of the anti-Tribonacci construction
 
@@ -93,7 +93,7 @@ $A_k$, $B_k$, $C_k$, $D_k$ with $1 \le k < n$. At $n = 0$ the definition gives $
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiTribonacciA`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-a).
+Formalized by `MetaMathlibExt.antiTribonacciA`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-a).
 
 ## Second summands of the anti-Tribonacci construction
 
@@ -107,7 +107,7 @@ $B_0 = B_1 = 2$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiTribonacciB`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-b).
+Formalized by `MetaMathlibExt.antiTribonacciB`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-b).
 
 ## Third summands of the anti-Tribonacci construction
 
@@ -121,7 +121,7 @@ $C_0 = C_1 = 3$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiTribonacciC`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-c).
+Formalized by `MetaMathlibExt.antiTribonacciC`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-c).
 
 ## Anti-Tribonacci numbers
 
@@ -134,7 +134,7 @@ $D_0 = D_1 = 6$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiTribonacciD`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-d).
+Formalized by `MetaMathlibExt.antiTribonacciD`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-d).
 
 ## First anti-Tribonacci numbers
 
@@ -145,7 +145,7 @@ the first four anti-Tribonacci numbers are $D_1 = 6$, $D_2 = 16$, $D_3 = 27$ and
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiTribonacciD_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-d-small).
+Formalized by `MetaMathlibExt.antiTribonacciD_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-tribonacci-d-small).
 
 ## Members of a greedy $3$-subsumfree sequence below a bound
 
@@ -159,7 +159,7 @@ below $m$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 6.
 
-Formalized by `MetaMathlibExt.greedySubsumfreeBelow`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#greedy-subsumfree-below).
+Formalized by `MetaMathlibExt.greedySubsumfreeBelow`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#greedy-subsumfree-below).
 
 ## First members of $S_{1,2,3}$
 
@@ -170,7 +170,7 @@ $S_{1,2,3}$ below $26$ are exactly $1, 2, 3, 4, 5, 13, 14, 15, 25$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 6.
 
-Formalized by `MetaMathlibExt.greedySubsumfreeBelow_one_two_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#greedy-subsumfree-below-one-two-three).
+Formalized by `MetaMathlibExt.greedySubsumfreeBelow_one_two_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#greedy-subsumfree-below-one-two-three).
 
 ## Hajdu–Tijdeman–Varga theorem on $(x-1)^c (x+1)^d$ modulo $3$
 
@@ -183,7 +183,7 @@ equals $3^j$, $2 \cdot 3^j$, $3^i + 3^j$ or $2 \cdot 3^i + 3^j$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Theorem 10 (`jis-2025-25.3.8-thm-10`), citing Hajdu, Tijdeman, and Varga.
 
-Stated but not proved: `MetaMathlibExt.coeff_not_dvd_three_shape` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#coeff-not-dvd-three-shape).
+Stated but not proved: `MetaMathlibExt.coeff_not_dvd_three_shape` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#coeff-not-dvd-three-shape).
 
 ## Kimberling's conjecture on the anti-Tribonacci sequence
 
@@ -198,7 +198,7 @@ $0 \le 10n + 1 - 3C_n \le 3$ and $0 \le 10n - 3 - D_n \le 2$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Theorem 12 (`jis-2025-25.3.8-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.kimberling_antiTribonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#kimberling-anti-tribonacci).
+Stated but not proved: `MetaMathlibExt.kimberling_antiTribonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#kimberling-anti-tribonacci).
 
 ## Membership in three greedy 3-subsumfree sequences
 
@@ -214,7 +214,7 @@ $n \in \{1, 9, 25\}$ or $n \bmod 43 \in \{4, 5, 6, 7, 8, 26, 27, 28, 29\}$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Theorem 15 (`jis-2025-25.3.8-thm-15`).
 
-Stated but not proved: `MetaMathlibExt.mem_greedySubsumfree_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#mem-greedy-subsumfree-iff).
+Stated but not proved: `MetaMathlibExt.mem_greedySubsumfree_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#mem-greedy-subsumfree-iff).
 
 ## Unsums of upper Wythoff numbers
 
@@ -231,7 +231,7 @@ $1$ here.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 2, defining unsums as the members of OEIS A260317.
 
-Formalized by `MetaMathlibExt.IsUpperWythoffUnsum`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#is-upper-wythoff-unsum).
+Formalized by `MetaMathlibExt.IsUpperWythoffUnsum`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#is-upper-wythoff-unsum).
 
 ## The upper Wythoff numbers below 30
 
@@ -243,7 +243,7 @@ Wythoff numbers below $30$, are exactly $2, 5, 7, 10, 13, 15, 18, 20, 23, 26, 28
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 2.
 
-Formalized by `MetaMathlibExt.upperWythoff_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-small).
+Formalized by `MetaMathlibExt.upperWythoff_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-small).
 
 ## The unsums up to 21
 
@@ -254,7 +254,7 @@ $1, 2, 3, 4, 5, 6, 8, 10, 11, 13, 14, 16, 19, 21$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 2.
 
-Formalized by `MetaMathlibExt.isUpperWythoffUnsum_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#is-upper-wythoff-unsum-small).
+Formalized by `MetaMathlibExt.isUpperWythoffUnsum_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#is-upper-wythoff-unsum-small).
 
 ## Gaps between unsums
 
@@ -267,7 +267,7 @@ is OEIS A260311 shifted by one.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 2.
 
-Formalized by `MetaMathlibExt.upperWythoffUnsumGap`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-gap).
+Formalized by `MetaMathlibExt.upperWythoffUnsumGap`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-gap).
 
 ## The first thirteen gaps between unsums
 
@@ -279,7 +279,7 @@ $g_0, g_1, \dots, g_{12}$ are $1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 2, 3, 2$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 2.
 
-Formalized by `MetaMathlibExt.upperWythoffUnsumGap_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-gap-small).
+Formalized by `MetaMathlibExt.upperWythoffUnsumGap_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-gap-small).
 
 ## Markers among the unsum gaps
 
@@ -293,7 +293,7 @@ length ten.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 2.
 
-Formalized by `MetaMathlibExt.IsUpperWythoffUnsumMarker`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#is-upper-wythoff-unsum-marker).
+Formalized by `MetaMathlibExt.IsUpperWythoffUnsumMarker`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#is-upper-wythoff-unsum-marker).
 
 ## Markers in the gaps between unsums
 
@@ -306,7 +306,7 @@ marker is the smallest one.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 2.
 
-Formalized by `MetaMathlibExt.upperWythoffUnsumMarker`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-marker).
+Formalized by `MetaMathlibExt.upperWythoffUnsumMarker`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-marker).
 
 ## Words between markers in the unsum gap sequence
 
@@ -323,7 +323,7 @@ so these words are $W_1, W_1, W_2, W_2, \ldots$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 2.
 
-Formalized by `MetaMathlibExt.upperWythoffUnsumWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 380](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L380). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-word).
+Formalized by `MetaMathlibExt.upperWythoffUnsumWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 380](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L380). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-word).
 
 ## The words $W_i$ of the unsum gap sequence
 
@@ -335,7 +335,7 @@ markers counted from zero; for $i = 0$ the definition gives the same word as for
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 2.
 
-Formalized by `MetaMathlibExt.upperWythoffUnsumPalindrome`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-palindrome).
+Formalized by `MetaMathlibExt.upperWythoffUnsumPalindrome`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-palindrome).
 
 ## The first two markers
 
@@ -347,7 +347,7 @@ the second smallest is $12$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 2.
 
-Formalized by `MetaMathlibExt.upperWythoffUnsumMarker_zero_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 403](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-marker-zero-one).
+Formalized by `MetaMathlibExt.upperWythoffUnsumMarker_zero_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 403](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-marker-zero-one).
 
 ## The first palindrome
 
@@ -360,7 +360,7 @@ $m_0 < k < m_1$, in increasing order of $k$, consists of the single digit $3$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 2.
 
-Formalized by `MetaMathlibExt.upperWythoffUnsumPalindrome_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-palindrome-one).
+Formalized by `MetaMathlibExt.upperWythoffUnsumPalindrome_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-palindrome-one).
 
 ## The last gap of size one between unsums
 
@@ -372,7 +372,7 @@ consecutive unsums, counted from zero. Then $g_9 = 1$, and $g_i \ne 1$ for every
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Lemma 1 (`jis-2025-25.3.8-lem-1`).
 
-Stated but not proved: `MetaMathlibExt.upperWythoffUnsumGap_ne_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 447](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L447). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-gap-ne-one).
+Stated but not proved: `MetaMathlibExt.upperWythoffUnsumGap_ne_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 447](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L447). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-gap-ne-one).
 
 ## Digit sums between markers are two less than Fibonacci numbers
 
@@ -384,7 +384,7 @@ number: it equals $F_m$ for some natural number $m$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Lemma 2 (`jis-2025-25.3.8-lem-2`).
 
-Stated but not proved: `MetaMathlibExt.upperWythoffUnsumWord_sum_add_two_isFib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 456](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L456). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-word-sum-add-two-is).
+Stated but not proved: `MetaMathlibExt.upperWythoffUnsumWord_sum_add_two_isFib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 456](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L456). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-word-sum-add-two-is).
 
 ## Digit sums of the words between markers
 
@@ -400,7 +400,7 @@ bare digit sum of the first word is $3 \ne F_5 = 5$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Lemma 3 (`jis-2025-25.3.8-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.upperWythoffUnsumWord_sum_add_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 468](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L468). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-word-sum-add-two).
+Stated but not proved: `MetaMathlibExt.upperWythoffUnsumWord_sum_add_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 468](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L468). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-word-sum-add-two).
 
 ## The gap words are palindromes
 
@@ -414,7 +414,7 @@ for every $i \ge 1$, the word $W_i$ read backwards is $W_i$ itself.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Lemma 4 (`jis-2025-25.3.8-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.upperWythoffUnsumPalindrome_reverse` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 476](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L476). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-palindrome-reverse).
+Stated but not proved: `MetaMathlibExt.upperWythoffUnsumPalindrome_reverse` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 476](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L476). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-palindrome-reverse).
 
 ## The palindromes begin and end with the digit 3
 
@@ -429,7 +429,7 @@ is $3$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Lemma 5 (`jis-2025-25.3.8-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.upperWythoffUnsumPalindrome_head_getLast` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 484](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L484). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-palindrome-head-get).
+Stated but not proved: `MetaMathlibExt.upperWythoffUnsumPalindrome_head_getLast` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 484](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L484). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-palindrome-head-get).
 
 ## A word $3V3$ between markers is followed by a word starting with $3V$
 
@@ -442,7 +442,7 @@ $(j+1)$-th word has the same digit sum as the $j$-th word, then the two words ar
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Lemma 6 (`jis-2025-25.3.8-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.upperWythoffUnsumWord_prefix_next` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 494](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L494). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-word-prefix-next).
+Stated but not proved: `MetaMathlibExt.upperWythoffUnsumWord_prefix_next` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 494](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L494). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-word-prefix-next).
 
 ## When one palindrome is a prefix of the next
 
@@ -456,7 +456,7 @@ for every $i \ge 1$, the word $W_i$ is a prefix of $W_{i+1}$ if and only if $i$ 
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Lemma 7 (`jis-2025-25.3.8-lem-7`).
 
-Stated but not proved: `MetaMathlibExt.upperWythoffUnsumPalindrome_isPrefix_succ_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 505](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L505). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-palindrome-is-prefix).
+Stated but not proved: `MetaMathlibExt.upperWythoffUnsumPalindrome_isPrefix_succ_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 505](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L505). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-palindrome-is-prefix).
 
 ## Recursion for the words $W_i$ of the unsum gap sequence
 
@@ -472,7 +472,7 @@ $F_1 = 1$).
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Lemma 8 (`jis-2025-25.3.8-lem-8`).
 
-Stated but not proved: `MetaMathlibExt.upperWythoffUnsumPalindrome_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 516](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L516). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-palindrome-succ).
+Stated but not proved: `MetaMathlibExt.upperWythoffUnsumPalindrome_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 516](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L516). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-palindrome-succ).
 
 ## The words $W_i$ converge to $3$ followed by the coded Fibonacci word
 
@@ -489,7 +489,7 @@ $u_{k-1} = 1$ and $5$ if $u_{k-1} = 0$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Lemma 9 (`jis-2025-25.3.8-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.upperWythoffUnsumPalindrome_tendsto` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-palindrome-tendsto).
+Stated but not proved: `MetaMathlibExt.upperWythoffUnsumPalindrome_tendsto` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#upper-wythoff-unsum-palindrome-tendsto).
 
 ## Iterates of the period-doubling substitution
 
@@ -507,7 +507,7 @@ the first letter of PD to be $1$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.periodDoublingWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 547](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L547). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#period-doubling-word).
+Formalized by `MetaMathlibExt.periodDoublingWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 547](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L547). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#period-doubling-word).
 
 ## The period-doubling word
 
@@ -521,7 +521,7 @@ That word has length $2^{\lfloor \log_2 k \rfloor + 1} \le 2k + 2$, so it contai
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.periodDoubling`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 558](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L558). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#period-doubling).
+Formalized by `MetaMathlibExt.periodDoubling`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 558](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L558). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#period-doubling).
 
 ## Length of the period-doubling iterates
 
@@ -533,7 +533,7 @@ $1$ a total of $n$ times has length $2^n$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.length_periodDoublingWord`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 565](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L565). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#length-period-doubling-word).
+Formalized by `MetaMathlibExt.length_periodDoublingWord`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 565](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L565). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#length-period-doubling-word).
 
 ## Letters of the period-doubling iterates
 
@@ -546,7 +546,7 @@ $m$ times. For all natural numbers $m$ and $k$ with $k < 2^m$, the letter of $w_
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.periodDoublingWord_getD`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 602](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L602). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#period-doubling-word-get-d).
+Formalized by `MetaMathlibExt.periodDoublingWord_getD`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 602](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L602). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#period-doubling-word-get-d).
 
 ## First letters of the period-doubling word
 
@@ -558,7 +558,7 @@ $1, 0, 1, 1, 1, 0, 1, 0$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.periodDoubling_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 624](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L624). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#period-doubling-small).
+Formalized by `MetaMathlibExt.periodDoubling_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 624](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L624). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#period-doubling-small).
 
 ## The anti-Fibonacci construction
 
@@ -577,7 +577,7 @@ numbers $A_1, B_1, A_2, B_2, \dots$ are the non-anti-Fibonacci numbers $Y_1, Y_2
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiFibonacciState`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 637](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L637). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-fibonacci-state).
+Formalized by `MetaMathlibExt.antiFibonacciState`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 637](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L637). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-fibonacci-state).
 
 ## First summands of the anti-Fibonacci construction
 
@@ -593,7 +593,7 @@ numbers.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiFibonacciA`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 650](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L650). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-fibonacci-a).
+Formalized by `MetaMathlibExt.antiFibonacciA`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 650](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L650). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-fibonacci-a).
 
 ## Second summands of the anti-Fibonacci construction
 
@@ -609,7 +609,7 @@ numbers.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiFibonacciB`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 657](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L657). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-fibonacci-b).
+Formalized by `MetaMathlibExt.antiFibonacciB`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 657](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L657). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-fibonacci-b).
 
 ## Anti-Fibonacci numbers
 
@@ -621,7 +621,7 @@ $C_n = A_n + B_n$ and $C_1 = 3$. At $n = 0$ the definition gives $C_0 = C_1 = 3$
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiFibonacciC`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 664](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L664). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-fibonacci-c).
+Formalized by `MetaMathlibExt.antiFibonacciC`, a definition declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 664](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L664). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-fibonacci-c).
 
 ## First anti-Fibonacci and non-anti-Fibonacci numbers
 
@@ -637,7 +637,7 @@ non-anti-Fibonacci numbers are $1, 2, 4, 5, 6, 7, 8, 10$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Section 4.
 
-Formalized by `MetaMathlibExt.antiFibonacci_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 672](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L672). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-fibonacci-small).
+Formalized by `MetaMathlibExt.antiFibonacci_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 672](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L672). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-fibonacci-small).
 
 ## Zaslavsky's formulas for the anti-Fibonacci numbers
 
@@ -661,7 +661,7 @@ need $\mathrm{PD}[0] = 1$.
 
 - Bosma, Bruin, Fokkink, Grube, Reuijl, and Tromp, *Using Walnut to Solve Problems from the OEIS*, Journal of Integer Sequences 28 (2025), Article 25.3.8, Theorem 11 (`jis-2025-25.3.8-thm-11`), due to Zaslavsky.
 
-Stated but not proved: `MetaMathlibExt.zaslavsky_antiFibonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 687](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L687). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#zaslavsky-anti-fibonacci).
+Stated but not proved: `MetaMathlibExt.zaslavsky_antiFibonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean, line 687](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WalnutOeisProblemsWanted.lean#L687). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#zaslavsky-anti-fibonacci).
 
 ## Block of successive mex values
 
@@ -673,7 +673,7 @@ is the least positive integer not in $s \cup \{x_1, \dots, x_{j-1}\}$.
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Section 2 (proof of Lemma 2, the mex rule).
 
-Formalized by `MetaMathlibExt.antiRecurrenceBlock`, a definition declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-block).
+Formalized by `MetaMathlibExt.antiRecurrenceBlock`, a definition declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-block).
 
 ## State of the anti-recurrence construction
 
@@ -693,7 +693,7 @@ numbers and the $A_m$ are the anti-recurrence numbers of $a$.
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Section 2 (definition of anti-recurrence sequences and Lemma 2).
 
-Formalized by `MetaMathlibExt.antiRecurrenceState`, a definition declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-state).
+Formalized by `MetaMathlibExt.antiRecurrenceState`, a definition declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-state).
 
 ## Anti-recurrence numbers
 
@@ -708,7 +708,7 @@ $A_0 = 0$, following Hofstadter.
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Section 2 (definition of anti-recurrence sequences).
 
-Formalized by `MetaMathlibExt.antiRecurrence`, a definition declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence).
+Formalized by `MetaMathlibExt.antiRecurrence`, a definition declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence).
 
 ## Non-anti-recurrence numbers
 
@@ -727,7 +727,7 @@ integers that are not anti-recurrence numbers, listed in increasing order.
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Section 2 (definition of anti-recurrence sequences).
 
-Formalized by `MetaMathlibExt.antiRecurrenceComplement`, a definition declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-complement).
+Formalized by `MetaMathlibExt.antiRecurrenceComplement`, a definition declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-complement).
 
 ## First anti-Fibonacci anti-recurrence numbers
 
@@ -740,7 +740,7 @@ anti-Fibonacci numbers $C_1, C_2, C_3, C_4$ of the Walnut anti-Fibonacci constru
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Section 1.
 
-Formalized by `MetaMathlibExt.antiRecurrence_antiFibonacci_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-anti-fibonacci-small).
+Formalized by `MetaMathlibExt.antiRecurrence_antiFibonacci_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-anti-fibonacci-small).
 
 ## First anti-Pell numbers
 
@@ -753,7 +753,7 @@ $B^1_n = B_{2n-1}$ starts $1, 3, 6, 8$ and $B^2_n = B_{2n}$ starts $2, 4, 7, 9$)
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Section 3.
 
-Formalized by `MetaMathlibExt.antiRecurrence_antiPell_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-anti-pell-small).
+Formalized by `MetaMathlibExt.antiRecurrence_antiPell_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-anti-pell-small).
 
 ## First anti-Jacobsthal numbers
 
@@ -764,7 +764,7 @@ linear form $(2, 1)$, the anti-Jacobsthal numbers (OEIS A304499), are $4, 11, 19
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Section 3.
 
-Formalized by `MetaMathlibExt.antiRecurrence_antiJacobsthal_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-anti-jacobsthal-small).
+Formalized by `MetaMathlibExt.antiRecurrence_antiJacobsthal_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-anti-jacobsthal-small).
 
 ## First anti-Tribonacci anti-recurrence numbers
 
@@ -777,7 +777,7 @@ anti-Tribonacci numbers $D_1, D_2, D_3, D_4$ of the Walnut anti-Tribonacci const
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Section 4.
 
-Formalized by `MetaMathlibExt.antiRecurrence_antiTribonacci_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-anti-tribonacci-small).
+Formalized by `MetaMathlibExt.antiRecurrence_antiTribonacci_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-anti-tribonacci-small).
 
 ## Gaps between successive anti-recurrence numbers
 
@@ -794,7 +794,7 @@ exactly one of the blocks $n$ and $n + 1$ is an interval.
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.antiRecurrence_add_length_mul_sum_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-add-length-mul-sum-le).
+Stated but not proved: `MetaMathlibExt.antiRecurrence_add_length_mul_sum_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-add-length-mul-sum-le).
 
 ## Characterization of anti-recurrence sequences
 
@@ -810,7 +810,7 @@ $y_i = B_{i+1}$ for all $i$.
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.antiRecurrence_unique` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-unique).
+Stated but not proved: `MetaMathlibExt.antiRecurrence_unique` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-unique).
 
 ## Intervals and residues of the anti-$k$-bonacci numbers
 
@@ -828,7 +828,7 @@ period-doubling sequence).
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.antiBonacci_mem_Icc_and_modEq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-bonacci-mem-icc-and-mod-eq).
+Stated but not proved: `MetaMathlibExt.antiBonacci_mem_Icc_and_modEq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-bonacci-mem-icc-and-mod-eq).
 
 ## Lower bound for the first anti-recurrence number
 
@@ -845,7 +845,7 @@ proof, $A_1 = \tau + \sum_j (j - 1) a_j$. The paper's hypothesis $k > 1$ is not 
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.antiRecurrence_one_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-one-ge).
+Stated but not proved: `MetaMathlibExt.antiRecurrence_one_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-one-ge).
 
 ## Interval location of anti-recurrence numbers for bounded forms
 
@@ -861,7 +861,7 @@ numbers: $B_{(n-1)k\tau + j} = \kappa(n - 1) + j$ for $1 \le j \le k$.
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.antiRecurrence_mem_Icc_of_bounded` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-mem-icc-of-bounded).
+Stated but not proved: `MetaMathlibExt.antiRecurrence_mem_Icc_of_bounded` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-mem-icc-of-bounded).
 
 ## Kimberling's bounds for the anti-Pell numbers
 
@@ -874,7 +874,7 @@ $0 \le A_n - 7n + 3 \le 2$, $0 \le 3B^1_n - 7n + 6 \le 3$ and $0 \le 3B^2_n - 7n
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.antiPell_kimberling_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-pell-kimberling-bounds).
+Stated but not proved: `MetaMathlibExt.antiPell_kimberling_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-pell-kimberling-bounds).
 
 ## Kimberling's bounds for the anti-Jacobsthal numbers
 
@@ -888,7 +888,7 @@ $0 \le 3B^2_n - 7n + 2 \le 3$.
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.antiJacobsthal_kimberling_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-jacobsthal-kimberling-bounds).
+Stated but not proved: `MetaMathlibExt.antiJacobsthal_kimberling_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-jacobsthal-kimberling-bounds).
 
 ## Bounded anti-recurrence sequences are automatic up to a linear term
 
@@ -906,7 +906,7 @@ paper's definition by a finite automaton with output.
 
 - Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.antiRecurrence_sub_isKAutomatic_of_bounded` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-sub-is-kautomatic-of-bou).
+Stated but not proved: `MetaMathlibExt.antiRecurrence_sub_isKAutomatic_of_bounded` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AntiRecurrenceWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html#anti-recurrence-sub-is-kautomatic-of-bou).
 
 ## Depends on
 
@@ -915,4 +915,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Anti-recurrence and greedy subsum-free sequences](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/anti-recurrence-and-greedy-subsum-free-sequences)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Topological and symbolic dynamics: its own results
 
-1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/index.html).
+1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/index.html).
 
 Topological dynamics studies continuous maps of topological spaces through orbits, periodic points and recurrence, and symbolic dynamics studies shift spaces and cellular automata on sequences of symbols.
 
@@ -28,7 +28,7 @@ of an integer.
 
 - G. Everest, A. J. van der Poorten, Y. Puri, and T. Ward, "Integer Sequences and Periodic Points," Journal of Integer Sequences 5 (2002), Article 02.2.3, Theorem, lines 243–254, https://cs.uwaterloo.ca/journals/JIS/VOL5/Ward/ward2.tex
 
-Stated but not proved: `MetaMathlibExt.binaryrec_realizable_subspace_dim` is written with `theorem_wanted` in [WantedExt/Dynamics/Periodic/BinaryRecurrenceRealizableDimensionWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/Periodic/BinaryRecurrenceRealizableDimensionWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/index.html#binaryrec-realizable-subspace-dim).
+Stated but not proved: `MetaMathlibExt.binaryrec_realizable_subspace_dim` is written with `theorem_wanted` in [WantedExt/Dynamics/Periodic/BinaryRecurrenceRealizableDimensionWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/Periodic/BinaryRecurrenceRealizableDimensionWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/index.html#binaryrec-realizable-subspace-dim).
 
 ## Depends on
 
@@ -37,4 +37,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Topological and symbolic dynamics](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/topological-symbolic-dynamics)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/topological-symbolic-dynamics)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.53 Stein factorization
 
-Section 37.53 of the Stacks Project, [Tag 03GX](https://stacks.math.columbia.edu/tag/03GX). 9 tags here are carried by 36 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.53 of the Stacks Project, [Tag 03GX](https://stacks.math.columbia.edu/tag/03GX). 9 tags here are carried by 35 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03GY, a lemma
 
 [Tag 03GY](https://stacks.math.columbia.edu/tag/03GY) in the Stacks Project.
 
-**`Stacks.SteinFactorization.toNormalization_fromNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L63). The attribute's comment: “relative\_normalization”.
+**`Stacks.SteinFactorization.toNormalization_fromNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L63). The attribute's comment: “relative\_normalization”.
 
 > **Stacks Project, Tag 03GY.**  A quasi-compact, quasi-separated morphism `f : X ⟶ S`
 > factors as `f = f' ≫ π`, where `S'` is the normalization of `S` in `X`, where `f'` is the
@@ -28,7 +28,7 @@ public theorem toNormalization_fromNormalization :
     f.toNormalization ≫ f.fromNormalization = f
 ```
 
-**`Stacks.SteinFactorization.quasiCompact_toNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L69). The attribute's comment: “first\_quasi\_compact”.
+**`Stacks.SteinFactorization.quasiCompact_toNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L69). The attribute's comment: “first\_quasi\_compact”.
 
 > **Stacks Project, Tag 03GY.**  The first map of the factorization is quasi-compact.
 
@@ -36,7 +36,7 @@ public theorem toNormalization_fromNormalization :
 public theorem quasiCompact_toNormalization : QuasiCompact f.toNormalization
 ```
 
-**`Stacks.SteinFactorization.quasiSeparated_toNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L74). The attribute's comment: “first\_quasi\_separated”.
+**`Stacks.SteinFactorization.quasiSeparated_toNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L74). The attribute's comment: “first\_quasi\_separated”.
 
 > **Stacks Project, Tag 03GY.**  The first map of the factorization is quasi-separated.
 
@@ -44,7 +44,7 @@ public theorem quasiCompact_toNormalization : QuasiCompact f.toNormalization
 public theorem quasiSeparated_toNormalization : QuasiSeparated f.toNormalization
 ```
 
-**`Stacks.SteinFactorization.isIntegralHom_fromNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L83). The attribute's comment: “integral\_second\_map”.
+**`Stacks.SteinFactorization.isIntegralHom_fromNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L83). The attribute's comment: “integral\_second\_map”.
 
 > **Stacks Project, Tag 03GY.**  The second map of the factorization, the structure morphism
 > of the normalization of `S` in `X`, is integral.
@@ -56,7 +56,7 @@ public theorem quasiSeparated_toNormalization : QuasiSeparated f.toNormalization
 public theorem isIntegralHom_fromNormalization : IsIntegralHom f.fromNormalization
 ```
 
-**`Stacks.SteinFactorization.universallyClosed_toNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L95). The attribute's comment: “first\_universally\_closed”.
+**`Stacks.SteinFactorization.universallyClosed_toNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L95). The attribute's comment: “first\_universally\_closed”.
 
 > **Stacks Project, Tag 03GY.**  The first map of the factorization of a universally closed,
 > quasi-separated morphism is universally closed.
@@ -65,7 +65,7 @@ public theorem isIntegralHom_fromNormalization : IsIntegralHom f.fromNormalizati
 public theorem universallyClosed_toNormalization : UniversallyClosed f.toNormalization
 ```
 
-**`Stacks.SteinFactorization.surjective_toNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L101). The attribute's comment: “first\_surjective”.
+**`Stacks.SteinFactorization.surjective_toNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L101). The attribute's comment: “first\_surjective”.
 
 > **Stacks Project, Tag 03GY.**  The first map of the factorization of a universally closed,
 > quasi-separated morphism is surjective: it is universally closed and dominant.
@@ -74,7 +74,7 @@ public theorem universallyClosed_toNormalization : UniversallyClosed f.toNormali
 public theorem surjective_toNormalization : Surjective f.toNormalization
 ```
 
-**`Stacks.SteinFactorization.isIso_normalizationPullback`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FlatBaseChange.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FlatBaseChange.lean#L228). The attribute's comment: “flat\_base\_change”. References: EGA III (4.3.4), “more general”.
+**`Stacks.SteinFactorization.isIso_normalizationPullback`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FlatBaseChange.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FlatBaseChange.lean#L228). The attribute's comment: “flat\_base\_change”. References: EGA III (4.3.4), “more general”.
 
 > **Stacks Project, Tag 03GY (flat\_base\_change).**  Formation of the factorization
 > `f = π ∘ f'` of a universally closed, quasi-separated morphism commutes with flat base change:
@@ -90,7 +90,7 @@ public theorem surjective_toNormalization : Surjective f.toNormalization
 public instance isIso_normalizationPullback : IsIso (f.normalizationPullback g)
 ```
 
-**`Stacks.SteinFactorization.normalizationPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FlatBaseChange.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FlatBaseChange.lean#L244). The attribute's comment: “flat\_base\_change”. References: EGA III (4.3.4), “more general”.
+**`Stacks.SteinFactorization.normalizationPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FlatBaseChange.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FlatBaseChange.lean#L244). The attribute's comment: “flat\_base\_change”. References: EGA III (4.3.4), “more general”.
 
 > **Stacks Project, Tag 03GY (flat\_base\_change).**  The identification, over `T`, of the
 > intermediate scheme of the factorization of the base change `f_T : X ×_S T ⟶ T` with the base
@@ -102,7 +102,7 @@ public noncomputable def normalizationPullbackIso :
       Over.mk (pullback.snd f.fromNormalization g)
 ```
 
-**`Stacks.SteinFactorization.toNormalization_normalizationPullbackIso_hom_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FlatBaseChange.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FlatBaseChange.lean#L252). The attribute's comment: “flat\_base\_change”.
+**`Stacks.SteinFactorization.toNormalization_normalizationPullbackIso_hom_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FlatBaseChange.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FlatBaseChange.lean#L252). The attribute's comment: “flat\_base\_change”.
 
 > **Stacks Project, Tag 03GY (flat\_base\_change).**  Under that identification the first
 > factor of the factorization of `f_T` becomes the base change of the first factor of `f`.
@@ -113,7 +113,7 @@ public theorem toNormalization_normalizationPullbackIso_hom_left :
         pullback.fst f.fromNormalization g = pullback.fst f g ≫ f.toNormalization
 ```
 
-**`Stacks.SteinFactorization.overIsoPushforwardSpectrum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean#L67). The attribute's comment: “relative\_spectrum”. References: EGA III (7.8.10), “partial”; SGA 1 X (1.2), “Y′ ≅ Spec f\_*O\_X over Y”; SGA 6 XII (2.5), “partial”.
+**`Stacks.SteinFactorization.overIsoPushforwardSpectrum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean#L67). The attribute's comment: “relative\_spectrum”. References: EGA III (7.8.10), “partial”; SGA 1 X (1.2), “Y′ ≅ Spec f\_*O\_X over Y”; SGA 6 XII (2.5), “partial”.
 
 > **Stacks Project, Tag 03GY (relative\_spectrum).**  Clause (4) of the factorization of a
 > universally closed, quasi-separated morphism `f : X ⟶ S`: the intermediate scheme `S'` of the
@@ -126,7 +126,7 @@ public noncomputable def overIsoPushforwardSpectrum :
     Over.mk f.fromNormalization ≅ Over.mk (pushforwardSpectrum f).toBase
 ```
 
-**`Stacks.SteinFactorization.toNormalization_overIsoPushforwardSpectrum_hom_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean#L79). The attribute's comment: “relative\_spectrum”. References: EGA III (7.8.10), “partial”; SGA 1 X (1.2), “Under Y′ ≅ Spec f\_*O\_X”; SGA 6 XII (2.5), “partial”.
+**`Stacks.SteinFactorization.toNormalization_overIsoPushforwardSpectrum_hom_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean#L79). The attribute's comment: “relative\_spectrum”. References: EGA III (7.8.10), “partial”; SGA 1 X (1.2), “Under Y′ ≅ Spec f\_*O\_X”; SGA 6 XII (2.5), “partial”.
 
 > **Stacks Project, Tag 03GY (relative\_spectrum).**  Under the identification of the
 > intermediate scheme of the factorization with `Spec_S(f_* 𝒪_X)`, the first factor
@@ -137,7 +137,7 @@ public theorem toNormalization_overIsoPushforwardSpectrum_hom_left :
     f.toNormalization ≫ (overIsoPushforwardSpectrum f).hom.left = canonicalMorphism f
 ```
 
-**`Stacks.SteinFactorization.isIso_c_toNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/StructureSheaf.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/StructureSheaf.lean#L158). The attribute's comment: “pushforward\_structure\_sheaf”.
+**`Stacks.SteinFactorization.isIso_c_toNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/StructureSheaf.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/StructureSheaf.lean#L158). The attribute's comment: “pushforward\_structure\_sheaf”.
 
 > **Stacks Project, Tag 03GY.**  Clause (3) of the factorization of a universally closed,
 > quasi-separated morphism `f : X ⟶ S`: the canonical map from the structure sheaf of the
@@ -152,7 +152,7 @@ public theorem isIso_c_toNormalization : IsIso f.toNormalization.c
 
 [Tag 0E0M](https://stacks.math.columbia.edu/tag/0E0M) in the Stacks Project.
 
-**`Stacks.SteinFactorization.finite_preimage_singleton_fromNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FiniteFibres.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FiniteFibres.lean#L183). The attribute's comment: “finite\_fibre”.
+**`Stacks.SteinFactorization.finite_preimage_singleton_fromNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FiniteFibres.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FiniteFibres.lean#L183). The attribute's comment: “finite\_fibre”.
 
 > For a universally closed, quasi-separated morphism `f` that is locally of finite type, the
 > fibres of the second map `π` of the factorization `X ⟶ f.normalization ⟶ S` are finite.
@@ -162,7 +162,7 @@ public theorem finite_preimage_singleton_fromNormalization (s : S) :
     (f.fromNormalization ⁻¹' {s}).Finite
 ```
 
-**`Stacks.SteinFactorization.finite_residueFieldMap_fromNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FiniteFibres.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FiniteFibres.lean#L240). The attribute's comment: “finite\_residue\_extensions”.
+**`Stacks.SteinFactorization.finite_residueFieldMap_fromNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FiniteFibres.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/FiniteFibres.lean#L240). The attribute's comment: “finite\_residue\_extensions”.
 
 > For a universally closed, quasi-separated morphism `f` that is locally of finite type, the
 > residue field of `f.normalization` at a point is a finite extension of the residue field of `S` at
@@ -178,7 +178,7 @@ public theorem finite_residueFieldMap_fromNormalization (s' : f.normalization) :
 
 [Tag 03GZ](https://stacks.math.columbia.edu/tag/03GZ) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyConnected_fiber_iff_forall_etaleNeighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/GeometricallyConnectedFibre.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/GeometricallyConnectedFibre.lean#L85).
+**`AlgebraicGeometry.geometricallyConnected_fiber_iff_forall_etaleNeighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/GeometricallyConnectedFibre.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/GeometricallyConnectedFibre.lean#L85).
 
 > **Stacks Project, Tag 03GZ.** The fibre of a morphism at a point is geometrically connected
 > if and only if the fibre at the distinguished point after pullback to every étale neighborhood
@@ -196,7 +196,7 @@ theorem geometricallyConnected_fiber_iff_forall_etaleNeighborhood
 
 [Tag 03H0](https://stacks.math.columbia.edu/tag/03H0) in the Stacks Project.
 
-**`Stacks.SteinFactorization.isFinite_fromNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L213). The attribute's comment: “clause (2): the second factor of the Stein factorization of a proper morphism over a locally Noetherian base is finite. Proved from [Stacks, Tag 02O5] (`AlgebraicGeometry.ProperCoherenceWitness.isCoherent_pushforward`), with no carried hypothesis”. References: EGA III (7.8.10), “partial”; SGA 1 X (1.2), “Y′ is finite over Y”.
+**`Stacks.SteinFactorization.isFinite_fromNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L216). The attribute's comment: “clause (2): the second factor of the Stein factorization of a proper morphism over a locally Noetherian base is finite. Proved from [Stacks, Tag 02O5] (`AlgebraicGeometry.ProperCoherenceWitness.isCoherent_pushforward`), with no carried hypothesis”. References: EGA III (7.8.10), “partial”; SGA 1 X (1.2), “Y′ is finite over Y”.
 
 > **Stacks Project, Tag 03H0, clause (2).**  For a proper morphism `f : X ⟶ S` onto a locally
 > Noetherian scheme, the second factor `π : S' ⟶ S` of the Stein factorization — the structure
@@ -214,7 +214,7 @@ theorem geometricallyConnected_fiber_iff_forall_etaleNeighborhood
 public theorem isFinite_fromNormalization : IsFinite f.fromNormalization
 ```
 
-**`Stacks.SteinFactorization.geometricallyConnected_toNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L349). The attribute's comment: “clause (1), the geometric connectedness conjunct: the first factor of the Stein factorization of a proper morphism onto a locally Noetherian base has geometrically connected fibres. The properness conjunct of the same clause is isProper\_toNormalization\_of\_isLocallyNoetherian”. References: EGA III (4.3.4), “special case”.
+**`Stacks.SteinFactorization.geometricallyConnected_toNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L352). The attribute's comment: “clause (1), the geometric connectedness conjunct: the first factor of the Stein factorization of a proper morphism onto a locally Noetherian base has geometrically connected fibres. The properness conjunct of the same clause is isProper\_toNormalization\_of\_isLocallyNoetherian”. References: EGA III (4.3.4), “special case”.
 
 > **Stacks Project, Tag 03H0, clause (1), the geometric connectedness conjunct.**  For `f`
 > proper onto a locally Noetherian scheme `S`, the first factor `f' : X ⟶ S'` of the Stein
@@ -234,7 +234,7 @@ public theorem geometricallyConnected_toNormalization (f : X ⟶ S) [IsLocallyNo
     [IsProper f] : GeometricallyConnected f.toNormalization
 ```
 
-**`Stacks.SteinFactorization.toNormalization_fromNormalization_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L373). The attribute's comment: “the factorization itself together with clause (5): f factors as X --f'--> S' --π--> S with S' the normalization of S in X (Stacks 035H), f' = f.toNormalization and π = f.fromNormalization. No carried hypothesis”.
+**`Stacks.SteinFactorization.toNormalization_fromNormalization_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L376). The attribute's comment: “the factorization itself together with clause (5): f factors as X --f'--> S' --π--> S with S' the normalization of S in X (Stacks 035H), f' = f.toNormalization and π = f.fromNormalization. No carried hypothesis”.
 
 > **Stacks Project, Tag 03H0: the factorization, together with clause (5).**  A proper morphism
 > `f : X ⟶ S` onto a locally Noetherian scheme factors as `X --f'--> S' --π--> S` *through the
@@ -252,7 +252,7 @@ public theorem toNormalization_fromNormalization_of_isLocallyNoetherian :
     f.toNormalization ≫ f.fromNormalization = f
 ```
 
-**`Stacks.SteinFactorization.isProper_toNormalization_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L385). The attribute's comment: “clause (1), the properness half: the first factor of the Stein factorization is proper. No carried hypothesis”.
+**`Stacks.SteinFactorization.isProper_toNormalization_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L388). The attribute's comment: “clause (1), the properness half: the first factor of the Stein factorization is proper. No carried hypothesis”.
 
 > **Stacks Project, Tag 03H0, clause (1), properness half.**  The first factor
 > `f' : X ⟶ S'` of the Stein factorization of a proper morphism onto a locally Noetherian scheme is
@@ -264,7 +264,7 @@ public theorem toNormalization_fromNormalization_of_isLocallyNoetherian :
 public theorem isProper_toNormalization_of_isLocallyNoetherian : IsProper f.toNormalization
 ```
 
-**`Stacks.SteinFactorization.isIso_c_toNormalization_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L396). The attribute's comment: “clause (3): f'\_* 𝒪\_X = 𝒪\_\{S'}, i.e. the canonical map 𝒪\_\{S'} ⟶ f'\_* 𝒪\_X is an isomorphism. No carried hypothesis”.
+**`Stacks.SteinFactorization.isIso_c_toNormalization_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L399). The attribute's comment: “clause (3): f'\_* 𝒪\_X = 𝒪\_\{S'}, i.e. the canonical map 𝒪\_\{S'} ⟶ f'\_* 𝒪\_X is an isomorphism. No carried hypothesis”.
 
 > **Stacks Project, Tag 03H0, clause (3).**  `f'_* 𝒪_X = 𝒪_{S'}` for the first factor of the
 > Stein factorization of a proper morphism onto a locally Noetherian scheme:  the canonical map
@@ -276,7 +276,7 @@ public theorem isProper_toNormalization_of_isLocallyNoetherian : IsProper f.toNo
 public theorem isIso_c_toNormalization_of_isLocallyNoetherian : IsIso f.toNormalization.c
 ```
 
-**`Stacks.SteinFactorization.overIsoPushforwardSpectrum_of_isLocallyNoetherian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L408). The attribute's comment: “clause (4): S' = Spec\_S(f\_* 𝒪\_X), as an isomorphism in Over S, so that π is carried to the structure morphism of the relative spectrum. No carried hypothesis”. References: EGA III (7.8.10), “partial”; SGA 1 X (1.2), “Y′ ≅ Spec f\_*O\_X over Y”; SGA 6 XII (2.5), “partial”.
+**`Stacks.SteinFactorization.overIsoPushforwardSpectrum_of_isLocallyNoetherian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L411). The attribute's comment: “clause (4): S' = Spec\_S(f\_* 𝒪\_X), as an isomorphism in Over S, so that π is carried to the structure morphism of the relative spectrum. No carried hypothesis”. References: EGA III (7.8.10), “partial”; SGA 1 X (1.2), “Y′ ≅ Spec f\_*O\_X over Y”; SGA 6 XII (2.5), “partial”.
 
 > **Stacks Project, Tag 03H0, clause (4).**  The intermediate scheme `S'` of the Stein
 > factorization of a proper morphism onto a locally Noetherian scheme is the relative spectrum
@@ -290,7 +290,7 @@ public noncomputable def overIsoPushforwardSpectrum_of_isLocallyNoetherian :
     Over.mk f.fromNormalization ≅ Over.mk (pushforwardSpectrum f).toBase
 ```
 
-**`Stacks.SteinFactorization.toNormalization_overIsoPushforwardSpectrum_hom_left_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L420). The attribute's comment: “clause (4), continued: the identification of clause (4) carries f' to the canonical morphism X ⟶ Spec\_S(f\_* 𝒪\_X) of Stacks 01LY. No carried hypothesis”. References: SGA 1 X (1.2), “Under Y′ ≅ Spec f\_*O\_X”.
+**`Stacks.SteinFactorization.toNormalization_overIsoPushforwardSpectrum_hom_left_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L423). The attribute's comment: “clause (4), continued: the identification of clause (4) carries f' to the canonical morphism X ⟶ Spec\_S(f\_* 𝒪\_X) of Stacks 01LY. No carried hypothesis”. References: SGA 1 X (1.2), “Under Y′ ≅ Spec f\_*O\_X”.
 
 > **Stacks Project, Tag 03H0, clause (4), continued.**  The identification of clause (4) carries
 > the first factor `f'` to the canonical morphism `X ⟶ Spec_S(f_* 𝒪_X)` of [Stacks, Tag 01LY];  this
@@ -303,7 +303,7 @@ public theorem toNormalization_overIsoPushforwardSpectrum_hom_left_of_isLocallyN
       canonicalMorphism f
 ```
 
-**`Stacks.SteinFactorization.exists_isSteinFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L482). References: EGA II (8.11.8), “(ii), special case”; EGA III (4.3.1); EGA III (7.8.10), “more general”; SGA 1 IX (6.6), “partial”; SGA 1 X (1.2).
+**`Stacks.SteinFactorization.exists_isSteinFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Noetherian.lean#L485). References: EGA II (8.11.8), “(ii), special case”; EGA III (4.3.1); EGA III (7.8.10), “more general”; SGA 1 IX (6.6), “partial”; SGA 1 X (1.2).
 
 > **Stacks Project, Tag 03H0 (Stein factorization, Noetherian case).**  Let `S` be a locally
 > Noetherian scheme and let `f : X ⟶ S` be proper.  Then `f` factors as `X --f'--> S' --π--> S`
@@ -329,7 +329,7 @@ public theorem exists_isSteinFactorization
 
 [Tag 03H2](https://stacks.math.columbia.edu/tag/03H2) in the Stacks Project.
 
-**`Stacks.SteinFactorization.toNormalization_fromNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L63). The attribute's comment: “normalization”.
+**`Stacks.SteinFactorization.toNormalization_fromNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L63). The attribute's comment: “normalization”.
 
 > **Stacks Project, Tag 03GY.**  A quasi-compact, quasi-separated morphism `f : X ⟶ S`
 > factors as `f = f' ≫ π`, where `S'` is the normalization of `S` in `X`, where `f'` is the
@@ -343,7 +343,7 @@ public theorem toNormalization_fromNormalization :
     f.toNormalization ≫ f.fromNormalization = f
 ```
 
-**`Stacks.SteinFactorization.isIntegralHom_fromNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L83). The attribute's comment: “integral\_second\_map”.
+**`Stacks.SteinFactorization.isIntegralHom_fromNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Basic.lean#L83). The attribute's comment: “integral\_second\_map”.
 
 > **Stacks Project, Tag 03GY.**  The second map of the factorization, the structure morphism
 > of the normalization of `S` in `X`, is integral.
@@ -355,7 +355,7 @@ public theorem toNormalization_fromNormalization :
 public theorem isIntegralHom_fromNormalization : IsIntegralHom f.fromNormalization
 ```
 
-**`Stacks.SteinFactorization.geometricallyConnected_toNormalization_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/ConnectedFibres.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/ConnectedFibres.lean#L473). The attribute's comment: “clause (1), the geometric connectedness conjunct: the first factor of the Stein factorization of a proper morphism has geometrically connected fibres, over an arbitrary base. The properness conjunct of the same clause is isProper\_toNormalization”. References: EGA III (4.3.4), “partial”.
+**`Stacks.SteinFactorization.geometricallyConnected_toNormalization_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/ConnectedFibres.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/ConnectedFibres.lean#L474). The attribute's comment: “clause (1), the geometric connectedness conjunct: the first factor of the Stein factorization of a proper morphism has geometrically connected fibres, over an arbitrary base. The properness conjunct of the same clause is isProper\_toNormalization”. References: EGA III (4.3.4), “partial”.
 
 > **Stacks Project, Tag 03H2, clause (1), the geometric connectedness conjunct.**  For `f`
 > proper onto an arbitrary scheme `S`, the first factor `f' : X ⟶ S'` of the Stein factorization —
@@ -371,7 +371,8 @@ public theorem isIntegralHom_fromNormalization : IsIntegralHom f.fromNormalizati
 > The same statement covers the connectedness conjunct of clause (1) of [Stacks, Tag 03H0], whose
 > hypotheses are strictly stronger;
 > `Stacks.SteinFactorization.geometricallyConnected_toNormalization` in
-> `StacksFrontier.AlgebraicGeometry.MoreMorphisms.SteinFactorization.Noetherian` is that reading of it.
+> `StacksFrontier.AlgebraicGeometry.MoreMorphisms.SteinFactorization.Noetherian` is that reading
+> of it.
 > The properness conjunct of clause (1) is `Stacks.SteinFactorization.isProper_toNormalization`.
 
 ```lean
@@ -379,7 +380,7 @@ public theorem geometricallyConnected_toNormalization_of_isProper :
     GeometricallyConnected f.toNormalization
 ```
 
-**`Stacks.SteinFactorization.isProper_toNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Proper.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Proper.lean#L51). The attribute's comment: “proper\_first\_map”.
+**`Stacks.SteinFactorization.isProper_toNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Proper.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/Proper.lean#L51). The attribute's comment: “proper\_first\_map”.
 
 > **Stacks Project, Tag 03H2.**  The first map of the factorization of a proper morphism is
 > proper.  It is universally closed because `f` is, separated and locally of finite type by
@@ -389,7 +390,7 @@ public theorem geometricallyConnected_toNormalization_of_isProper :
 public theorem isProper_toNormalization : IsProper f.toNormalization
 ```
 
-**`Stacks.SteinFactorization.overIsoPushforwardSpectrum_of_isProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean#L96). The attribute's comment: “relative\_spectrum”. References: EGA III (7.8.10), “partial”; SGA 1 X (1.2), “Y′ ≅ Spec f\_*O\_X over Y”; SGA 6 XII (2.5), “partial”.
+**`Stacks.SteinFactorization.overIsoPushforwardSpectrum_of_isProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean#L96). The attribute's comment: “relative\_spectrum”. References: EGA III (7.8.10), “partial”; SGA 1 X (1.2), “Y′ ≅ Spec f\_*O\_X over Y”; SGA 6 XII (2.5), “partial”.
 
 > **Stacks Project, Tag 03H2 (relative\_spectrum).**  Clause (4) of the factorization of a
 > proper morphism `f : X ⟶ S`: the intermediate scheme `S'` of the factorization is, as a scheme
@@ -400,7 +401,7 @@ public noncomputable def overIsoPushforwardSpectrum_of_isProper :
     Over.mk f.fromNormalization ≅ Over.mk (pushforwardSpectrum f).toBase
 ```
 
-**`Stacks.SteinFactorization.toNormalization_overIsoPushforwardSpectrum_hom_left_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean#L108). The attribute's comment: “relative\_spectrum”. References: EGA III (7.8.10), “partial”; SGA 1 X (1.2), “Under Y′ ≅ Spec f\_*O\_X”; SGA 6 XII (2.5), “partial”.
+**`Stacks.SteinFactorization.toNormalization_overIsoPushforwardSpectrum_hom_left_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/RelativeSpectrum.lean#L108). The attribute's comment: “relative\_spectrum”. References: EGA III (7.8.10), “partial”; SGA 1 X (1.2), “Under Y′ ≅ Spec f\_*O\_X”; SGA 6 XII (2.5), “partial”.
 
 > **Stacks Project, Tag 03H2 (relative\_spectrum).**  Under the identification of the
 > intermediate scheme of the factorization of a proper morphism with `Spec_S(f_* 𝒪_X)`, the first
@@ -413,7 +414,7 @@ public theorem toNormalization_overIsoPushforwardSpectrum_hom_left_of_isProper :
       canonicalMorphism f
 ```
 
-**`Stacks.SteinFactorization.isIso_c_toNormalization_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/StructureSheaf.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/StructureSheaf.lean#L173). The attribute's comment: “structure\_sheaf\_pushforward”.
+**`Stacks.SteinFactorization.isIso_c_toNormalization_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/StructureSheaf.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/StructureSheaf.lean#L173). The attribute's comment: “structure\_sheaf\_pushforward”.
 
 > **Stacks Project, Tag 03H2.**  Clause (3) of the factorization of a proper morphism
 > `f : X ⟶ S`: the pushforward of the structure sheaf of `X` along the first map
@@ -428,7 +429,7 @@ public theorem isIso_c_toNormalization_of_isProper {X S : Scheme.{u}} (f : X ⟶
 
 [Tag 0AY8](https://stacks.math.columbia.edu/tag/0AY8) in the Stacks Project.
 
-**`Stacks.SteinFactorization.isIso_c_of_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/NormalBase.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/NormalBase.lean#L297). The attribute's comment: “pushforward of the structure sheaf”.
+**`Stacks.SteinFactorization.isIso_c_of_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/NormalBase.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/NormalBase.lean#L297). The attribute's comment: “pushforward of the structure sheaf”.
 
 > **Stacks Project, Tag 0AY8, first conclusion.**  Let `f : X ⟶ S` be a proper morphism from a
 > reduced scheme onto a normal integral scheme with generic point `ξ`.  If every generic point of
@@ -446,7 +447,7 @@ public theorem isIso_c_of_isNormal (f : X ⟶ S) [IsProper f] [IsIntegral S]
     IsIso f.c
 ```
 
-**`Stacks.SteinFactorization.geometricallyConnected_of_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/NormalBase.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/NormalBase.lean#L373). The attribute's comment: “the second conclusion, that f has geometrically connected fibres. The first conclusion, f\_*𝒪\_X = 𝒪\_S, is isIso\_c\_of\_isNormal”. References: EGA III (4.3.8), “special case”.
+**`Stacks.SteinFactorization.geometricallyConnected_of_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/NormalBase.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/SteinFactorization/NormalBase.lean#L373). The attribute's comment: “the second conclusion, that f has geometrically connected fibres. The first conclusion, f\_*𝒪\_X = 𝒪\_S, is isIso\_c\_of\_isNormal”. References: EGA III (4.3.8), “special case”.
 
 > **Stacks Project, Tag 0AY8, the second conclusion.**  Under the hypotheses of Tag 0AY8 — `f`
 > proper, `S` integral and normal, `X` reduced, every generic point of `X` over the generic point
@@ -473,7 +474,7 @@ public theorem geometricallyConnected_of_isNormal
 
 [Tag 0BUI](https://stacks.math.columbia.edu/tag/0BUI) in the Stacks Project.
 
-**`AlgebraicGeometry.lowerSemicontinuous_numGeometricConnectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FibreConnectedComponents/LowerSemicontinuity.lean, line 492](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FibreConnectedComponents/LowerSemicontinuity.lean#L492). References: EGA IV (15.5.4), “Flat case”; EGA IV (15.5.9).
+**`AlgebraicGeometry.lowerSemicontinuous_numGeometricConnectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FibreConnectedComponents/LowerSemicontinuity.lean, line 492](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FibreConnectedComponents/LowerSemicontinuity.lean#L492). References: EGA IV (15.5.4), “Flat case”; EGA IV (15.5.9).
 
 > **[Stacks, Tag 0BUI].**  For a flat proper morphism of finite presentation, the number of
 > geometric connected components of the fibres is a lower semicontinuous function on the base.
@@ -494,7 +495,7 @@ theorem lowerSemicontinuous_numGeometricConnectedComponents {X S : Scheme.{u}} (
 
 [Tag 0E0N](https://stacks.math.columbia.edu/tag/0E0N) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyConstant_numGeometricConnectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FibreConnectedComponents/LocalConstancy.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FibreConnectedComponents/LocalConstancy.lean#L158). References: EGA IV (15.5.7), “Flat”; EGA IV (15.5.9), “(ii), special case”.
+**`AlgebraicGeometry.isLocallyConstant_numGeometricConnectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FibreConnectedComponents/LocalConstancy.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FibreConnectedComponents/LocalConstancy.lean#L158). References: EGA IV (15.5.7), “Flat”; EGA IV (15.5.9), “(ii), special case”.
 
 > **The number of geometric connected components of the fibres is locally constant**, for
 > `f : X ⟶ S` proper, flat, of finite presentation, with geometrically reduced fibres.
@@ -519,53 +520,7 @@ theorem isLocallyConstant_numGeometricConnectedComponents
 
 [Tag 0CT9](https://stacks.math.columbia.edu/tag/0CT9) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isClopen_isProper_of_henselianPair_of_compactification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ProperPartOverHenselianPair.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ProperPartOverHenselianPair.lean#L381). The attribute's comment: “the whole statement, with two inputs the source quotes carried as named hypotheses: `hcpt`, Nagata compactification (Stacks 0F41), and `hconn`, the connectedness conjunct of clause (1) of Stacks 03H2 (through Stacks 0G7X, 02OC and 02OB); neither is proved in this repository, and neither is any part of this tag's own conclusion”.
-
-> **[Stacks, Tag 0CT9] with [Stacks, Tag 0F41] carried as `hcpt` and clause (1) of
-> [Stacks, Tag 03H2] carried as `hconn`.**
->
-> Let `(A, I)` be a henselian pair and let `f : X ⟶ Spec A` be separated and of finite type.  An
-> open and closed subscheme `i : Y ⟶ X ×_{Spec A} Spec (A ⧸ I)` of the closed fibre which is proper
-> over `Spec (A ⧸ I)` is the closed fibre of an open and closed subscheme `w : W ⟶ X` which is
-> proper over `Spec A`.
->
-> Choosing a compactification `X ⟶ P ⟶ Spec A` of `f`, the image of `Y` in the closed fibre of `P`
-> is open and closed and lifts to an open and closed subset `V` of `P`.  Since the points of `V`
-> over the closed fibre lie in `X`, all of `V` does, and `V` cuts out the required subscheme of
-> `X`.
->
-> The tag's hypotheses and its full conclusion are exactly those below.  The two extra arguments
-> are the conclusions of other tags, quoted by the source and unavailable here:  `hcpt` is
-> Nagata's compactification theorem, Tag 0F41, and `hconn` is the connectedness conjunct of clause
-> (1) of Tag 03H2, which rests on Tag 0G7X and hence on Tags 02OC and 02OB.  The quantifier on
-> `hconn` is forced by `hcpt` being an existential:  the connectedness input is applied to the
-> compactification `P`, which is produced rather than given.  The source reaches the same
-> reduction through Chow's lemma (Tag 0202) and Tag 01RG instead of through Tag 0F41; that route
-> is equally unavailable, Tag 0202 being conditional here on
-> `Scheme.FiniteTypeApproximation.IsOneAffineOpenStep`.
-
-```lean
-theorem exists_isClopen_isProper_of_henselianPair_of_compactification (A : Type u) [CommRing A]
-    (I : Ideal A) (hI : HenselianPair A I) {X : Scheme.{u}} (f : X ⟶ Spec (.of A))
-    [LocallyOfFiniteType f] [QuasiCompact f] [IsSeparated f]
-    (hcpt : ∃ (P : Scheme.{u}) (j : X ⟶ P) (π : P ⟶ Spec (.of A)),
-      IsOpenImmersion j ∧ IsProper π ∧ j ≫ π = f)
-    (hconn : ∀ {P : Scheme.{u}} (π : P ⟶ Spec (.of A)) [IsProper π],
-      GeometricallyConnected π.toNormalization)
-    {Y : Scheme.{u}}
-    (i : Y ⟶ pullback f (Spec.map (CommRingCat.ofHom (Ideal.Quotient.mk I))))
-    [IsOpenImmersion i] [IsClosedImmersion i]
-    [IsProper (i ≫ pullback.snd f (Spec.map (CommRingCat.ofHom (Ideal.Quotient.mk I))))] :
-    ∃ (W : Scheme.{u}) (w : W ⟶ X) (_ : IsOpenImmersion w) (_ : IsClosedImmersion w)
-      (_ : IsProper (w ≫ f)),
-      let q := Spec.map (CommRingCat.ofHom (Ideal.Quotient.mk I))
-      let w₀ : pullback (w ≫ f) q ⟶ pullback f q :=
-        pullback.lift (pullback.fst (w ≫ f) q ≫ w) (pullback.snd (w ≫ f) q)
-          (by rw [Category.assoc]; exact pullback.condition)
-      ∃ e : Y ≅ pullback (w ≫ f) q, e.hom ≫ w₀ = i
-```
-
-**`AlgebraicGeometry.exists_isClopen_isProper_of_henselianPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ProperPartOverHenselianPair/Chow.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ProperPartOverHenselianPair/Chow.lean#L257). The attribute's comment: “the whole statement”.
+**`AlgebraicGeometry.exists_isClopen_isProper_of_henselianPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ProperPartOverHenselianPair/Chow.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ProperPartOverHenselianPair/Chow.lean#L270). The attribute's comment: “the whole statement”.
 
 > Let `(A, I)` be a henselian pair and let `f : X ⟶ Spec A` be separated and of finite type.  An
 > open and closed subscheme `i : Y ⟶ X ×_{Spec A} Spec (A ⧸ I)` of the closed fibre which is proper
@@ -596,4 +551,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.53, Tag 03GX](https://stacks.math.columbia.edu/tag/03GX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

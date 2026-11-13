@@ -8,7 +8,7 @@ proof: formalized
 
 # Fractal sequences
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/fractal-sequences/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/fractal-sequences/index.html).
 
 ## Regular fractal sequence
 
@@ -26,7 +26,7 @@ Source JIS VOL25/Kimberling,
 Source positive value `i + 1` is represented directly as the natural `i + 1`,
 and `pos i j` is the zero-based position of its `j`-th occurrence.
 
-Formalized by `MetaMathlibExt.FractalSequence`, a structure declared in [MathlibExt/Combinatorics/FractalSequence.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/FractalSequence.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/fractal-sequences/index.html#fractal-sequence).
+Formalized by `MetaMathlibExt.FractalSequence`, a structure declared in [MathlibExt/Combinatorics/FractalSequence.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/FractalSequence.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/fractal-sequences/index.html#fractal-sequence).
 
 ## Occurrence positions are distinct
 
@@ -34,7 +34,7 @@ In a regular fractal sequence with position array
 $p$, for every $i \ge 0$ the map $j \mapsto p_i(j)$, sending $j$ to the position of the $j$-th
 occurrence of $i + 1$ (counting from $j = 0$), is injective.
 
-Formalized by `MetaMathlibExt.FractalSequence.pos_injective`, a theorem declared in [MathlibExt/Combinatorics/FractalSequence.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/FractalSequence.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/fractal-sequences/index.html#pos-injective).
+Formalized by `MetaMathlibExt.FractalSequence.pos_injective`, a theorem declared in [MathlibExt/Combinatorics/FractalSequence.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/FractalSequence.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/fractal-sequences/index.html#pos-injective).
 
 ## Every value occurs infinitely often in a regular fractal sequence
 
@@ -42,7 +42,7 @@ Let $(x_n)_{n \ge 0}$
 be a regular fractal sequence. Then for every positive integer $k$ there are infinitely many $n$
 with $x_n = k$.
 
-Formalized by `MetaMathlibExt.FractalSequence.infinite_occurrences`, a theorem declared in [MathlibExt/Combinatorics/FractalSequence.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/FractalSequence.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/fractal-sequences/index.html#infinite-occurrences).
+Formalized by `MetaMathlibExt.FractalSequence.infinite_occurrences`, a theorem declared in [MathlibExt/Combinatorics/FractalSequence.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/FractalSequence.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/fractal-sequences/index.html#infinite-occurrences).
 
 ## Depends on
 
@@ -51,4 +51,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fractal sequences](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/fractal-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/fractal-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/fractal-sequences)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.8 Topological invariance of the étale site
 
-Section 76.8 of the Stacks Project, [Tag 05ZG](https://stacks.math.columbia.edu/tag/05ZG). 3 tags here are carried by 32 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.8 of the Stacks Project, [Tag 05ZG](https://stacks.math.columbia.edu/tag/05ZG). 3 tags here are carried by 32 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05ZH, a theorem
 
 [Tag 05ZH](https://stacks.math.columbia.edu/tag/05ZH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/IntegralUniversallyInjective.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/IntegralUniversallyInjective.lean#L227). The attribute's comment: “the equivalence at the tag's own class: integral, universally injective and surjective”.
+**`AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/IntegralUniversallyInjective.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/IntegralUniversallyInjective.lean#L227). The attribute's comment: “the equivalence at the tag's own class: integral, universally injective and surjective”.
 
 > For every integral, universally injective and surjective morphism `f` of algebraic spaces over
 > `S`, base change `V ↦ X ×_Y V` is an equivalence from the spaces-étale site of `Y` to that of
@@ -27,7 +27,7 @@ theorem isEquivalence_spacesBaseChange_of_isIntegralHom_of_universallyInjective 
     (spacesBaseChange B S hS f).functor.IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/LiftedEtalePresentation.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/LiftedEtalePresentation.lean#L592). The attribute's comment: “essential surjectivity at a first-order thickening”.
+**`AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/LiftedEtalePresentation.lean, line 593](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/LiftedEtalePresentation.lean#L593). The attribute's comment: “essential surjectivity at a first-order thickening”.
 
 > Base change `V ↦ X ×_Y V` is essentially surjective from the spaces-étale site of `Y` to that
 > of `X`, for the inclusion `f` of a first-order thickening.
@@ -38,7 +38,7 @@ theorem essSurj_spacesBaseChange_of_isFirstOrderThickening (f : X ⟶ Y) [Mono f
     (spacesBaseChange B S hS f).functor.EssSurj
 ```
 
-**`AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/LiftedEtalePresentation.lean, line 602](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/LiftedEtalePresentation.lean#L602). The attribute's comment: “the first-order thickening case, not the integral universally injective one”.
+**`AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/LiftedEtalePresentation.lean, line 603](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/LiftedEtalePresentation.lean#L603). The attribute's comment: “the first-order thickening case, not the integral universally injective one”.
 
 > Base change `V ↦ X ×_Y V` is an equivalence from the spaces-étale site of `Y` to that of `X`,
 > for the inclusion `f` of a first-order thickening.
@@ -49,7 +49,7 @@ theorem isEquivalence_spacesBaseChange_of_isFirstOrderThickening (f : X ⟶ Y) [
     (spacesBaseChange B S hS f).functor.IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/Thickening.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/Thickening.lean#L521). The attribute's comment: “ESSENTIAL SURJECTIVITY ONLY, at a thickening of ARBITRARY order. This lifts the FIRST-ORDER restriction of `AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isFirstOrderThickening`, which descends the two maps of the lifted etale equivalence relation by the square-zero lifting property of Stacks 0611; the route here is the source's own, where they are descended by FULLNESS at arbitrary order, `AlgebraicGeometry.Space.full_spacesBaseChange_of_isThickening`, and every uniqueness step is FAITHFULNESS at arbitrary order, `AlgebraicGeometry.Space.faithful_spacesBaseChange_of_isThickening`. Together with `AlgebraicGeometry.Space.fullyFaithfulSpacesBaseChangeOfIsThickening` this gives the EQUIVALENCE at arbitrary order, `AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isThickening`. The source states the tag for an arbitrary INTEGRAL, UNIVERSALLY INJECTIVE and SURJECTIVE morphism, which is a wider class: the library proves only that a thickening inclusion belongs to it (Stacks 05ZL, `AlgebraicGeometry.Space.isIntegralHom_universallyInjective_isSurjective_ι_of_isThickening`) and not the converse, so that wider class is NOT covered”.
+**`AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/Thickening.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/Thickening.lean#L521). The attribute's comment: “ESSENTIAL SURJECTIVITY ONLY, at a thickening of ARBITRARY order. This lifts the FIRST-ORDER restriction of `AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isFirstOrderThickening`, which descends the two maps of the lifted etale equivalence relation by the square-zero lifting property of Stacks 0611; the route here is the source's own, where they are descended by FULLNESS at arbitrary order, `AlgebraicGeometry.Space.full_spacesBaseChange_of_isThickening`, and every uniqueness step is FAITHFULNESS at arbitrary order, `AlgebraicGeometry.Space.faithful_spacesBaseChange_of_isThickening`. Together with `AlgebraicGeometry.Space.fullyFaithfulSpacesBaseChangeOfIsThickening` this gives the EQUIVALENCE at arbitrary order, `AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isThickening`. The source states the tag for an arbitrary INTEGRAL, UNIVERSALLY INJECTIVE and SURJECTIVE morphism, which is a wider class: the library proves only that a thickening inclusion belongs to it (Stacks 05ZL, `AlgebraicGeometry.Space.isIntegralHom_universallyInjective_isSurjective_ι_of_isThickening`) and not the converse, so that wider class is NOT covered”.
 
 > Let `G ⊂ Y` be a thickening of algebraic spaces over `S`, of arbitrary order. Base change
 > along the inclusion, `V ↦ G ×_Y V`, is essentially surjective from the spaces-étale site of `Y`
@@ -61,7 +61,7 @@ theorem essSurj_spacesBaseChange_of_isThickening {G : Subfunctor Y.1}
     (spacesBaseChange B S hS (IsThickening.inclusion B S hS hG)).functor.EssSurj
 ```
 
-**`AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/Thickening.lean, line 540](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/Thickening.lean#L540). The attribute's comment: “the EQUIVALENCE at a thickening of ARBITRARY order -- all three of faithfulness, fullness and essential surjectivity, with no hypothesis beyond the thickening and no monomorphism hypothesis. What is still NOT covered is the source's wider class of an arbitrary INTEGRAL, UNIVERSALLY INJECTIVE and SURJECTIVE morphism: the library proves only that a thickening inclusion lies in that class (Stacks 05ZL, `AlgebraicGeometry.Space.isIntegralHom_universallyInjective_isSurjective_ι_of_isThickening`), not the converse. The first-order statement `AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isFirstOrderThickening` is subsumed up to the identification of the source of `f` with the range of `f.hom`”.
+**`AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/Thickening.lean, line 540](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEssSurj/Thickening.lean#L540). The attribute's comment: “the EQUIVALENCE at a thickening of ARBITRARY order -- all three of faithfulness, fullness and essential surjectivity, with no hypothesis beyond the thickening and no monomorphism hypothesis. What is still NOT covered is the source's wider class of an arbitrary INTEGRAL, UNIVERSALLY INJECTIVE and SURJECTIVE morphism: the library proves only that a thickening inclusion lies in that class (Stacks 05ZL, `AlgebraicGeometry.Space.isIntegralHom_universallyInjective_isSurjective_ι_of_isThickening`), not the converse. The first-order statement `AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isFirstOrderThickening` is subsumed up to the identification of the source of `f` with the range of `f.hom`”.
 
 > Let `G ⊂ Y` be a thickening of algebraic spaces over `S`, of arbitrary order. Base change
 > along the inclusion, `V ↦ G ×_Y V`, is an equivalence from the spaces-étale site of `Y` to that
@@ -73,7 +73,7 @@ theorem isEquivalence_spacesBaseChange_of_isThickening {G : Subfunctor Y.1}
     (spacesBaseChange B S hS (IsThickening.inclusion B S hS hG)).functor.IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.faithful_spacesBaseChange_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFaithfulGeneral.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFaithfulGeneral.lean#L131). The attribute's comment: “FAITHFULNESS ONLY, for an arbitrary morphism surjective on points -- so at a thickening of ARBITRARY order, and under a hypothesis weaker than the source's integral, universally injective and surjective. The library's other Stacks 05ZH statements are restricted to a FIRST-ORDER thickening because they go through the square-zero lifting property of Stacks 0611; this one reproduces the source's own route instead. FULLNESS is also available at arbitrary order, at a thickening, as `AlgebraicGeometry.Space.full_spacesBaseChange_of_isThickening`; ESSENTIAL SURJECTIVITY remains first-order, see `AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isFirstOrderThickening`”.
+**`AlgebraicGeometry.Space.faithful_spacesBaseChange_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFaithfulGeneral.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFaithfulGeneral.lean#L131). The attribute's comment: “FAITHFULNESS ONLY, for an arbitrary morphism surjective on points -- so at a thickening of ARBITRARY order, and under a hypothesis weaker than the source's integral, universally injective and surjective. The library's other Stacks 05ZH statements are restricted to a FIRST-ORDER thickening because they go through the square-zero lifting property of Stacks 0611; this one reproduces the source's own route instead. FULLNESS is also available at arbitrary order, at a thickening, as `AlgebraicGeometry.Space.full_spacesBaseChange_of_isThickening`; ESSENTIAL SURJECTIVITY remains first-order, see `AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isFirstOrderThickening`”.
 
 > Let `f : X ⟶ Y` be a
 > morphism of algebraic spaces over `S` which is surjective on points. Base change
@@ -85,7 +85,7 @@ theorem faithful_spacesBaseChange_of_isSurjective (f : X ⟶ Y)
     (spacesBaseChange B S hS f).functor.Faithful
 ```
 
-**`AlgebraicGeometry.Space.faithful_spacesBaseChange_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFaithfulGeneral.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFaithfulGeneral.lean#L163). The attribute's comment: “FAITHFULNESS ONLY, at a thickening of ARBITRARY order. FULLNESS at arbitrary order is `AlgebraicGeometry.Space.full_spacesBaseChange_of_isThickening`; ESSENTIAL SURJECTIVITY at arbitrary order is `AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isThickening`”.
+**`AlgebraicGeometry.Space.faithful_spacesBaseChange_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFaithfulGeneral.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFaithfulGeneral.lean#L163). The attribute's comment: “FAITHFULNESS ONLY, at a thickening of ARBITRARY order. FULLNESS at arbitrary order is `AlgebraicGeometry.Space.full_spacesBaseChange_of_isThickening`; ESSENTIAL SURJECTIVITY at arbitrary order is `AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isThickening`”.
 
 > Let `G ⊂ X` be a thickening of algebraic spaces over `S`, of arbitrary order. Base change
 > along the inclusion, `V ↦ G ×_X V`, is faithful from the spaces-étale site of `X` to that of
@@ -97,7 +97,7 @@ theorem faithful_spacesBaseChange_of_isThickening {G : Subfunctor X.1}
     (spacesBaseChange B S hS (IsThickening.inclusion B S hS hG)).functor.Faithful
 ```
 
-**`AlgebraicGeometry.Space.full_spacesBaseChange_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullGeneral.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullGeneral.lean#L334). The attribute's comment: “FULLNESS ONLY, at a thickening of ARBITRARY order. Together with `AlgebraicGeometry.Space.faithful_spacesBaseChange_of_isThickening` this gives FULL FAITHFULNESS at arbitrary order, bundled as `AlgebraicGeometry.Space.fullyFaithfulSpacesBaseChangeOfIsThickening`; ESSENTIAL SURJECTIVITY is not covered here; it is proved at arbitrary order in `AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isThickening`, and the equivalence in `AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isThickening`. The library's other fullness statement, `AlgebraicGeometry.Space.full_spacesBaseChange_of_isFirstOrderThickening`, is restricted to first order because it goes through the square-zero lifting property of Stacks 0611; this one reproduces the source's graph argument instead, and the source's integrality and universal injectivity hypotheses are not needed beyond what a thickening already gives”.
+**`AlgebraicGeometry.Space.full_spacesBaseChange_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullGeneral.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullGeneral.lean#L334). The attribute's comment: “FULLNESS ONLY, at a thickening of ARBITRARY order. Together with `AlgebraicGeometry.Space.faithful_spacesBaseChange_of_isThickening` this gives FULL FAITHFULNESS at arbitrary order, bundled as `AlgebraicGeometry.Space.fullyFaithfulSpacesBaseChangeOfIsThickening`; ESSENTIAL SURJECTIVITY is not covered here; it is proved at arbitrary order in `AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isThickening`, and the equivalence in `AlgebraicGeometry.Space.isEquivalence_spacesBaseChange_of_isThickening`. The library's other fullness statement, `AlgebraicGeometry.Space.full_spacesBaseChange_of_isFirstOrderThickening`, is restricted to first order because it goes through the square-zero lifting property of Stacks 0611; this one reproduces the source's graph argument instead, and the source's integrality and universal injectivity hypotheses are not needed beyond what a thickening already gives”.
 
 > Let `G ⊂ Y` be a thickening of algebraic spaces over `S`, of arbitrary order. Base change along
 > the inclusion, `V ↦ G ×_Y V`, is full from the spaces-étale site of `Y` to that of `G`.
@@ -108,7 +108,7 @@ theorem full_spacesBaseChange_of_isThickening {G : Subfunctor Y.1}
     (spacesBaseChange B S hS (IsThickening.inclusion B S hS hG)).functor.Full
 ```
 
-**`AlgebraicGeometry.Space.fullyFaithfulSpacesBaseChangeOfIsThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullGeneral.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullGeneral.lean#L347). The attribute's comment: “FULL FAITHFULNESS ONLY, at a thickening of ARBITRARY order; ESSENTIAL SURJECTIVITY is not covered here, and is proved at arbitrary order in `AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isThickening`”.
+**`AlgebraicGeometry.Space.fullyFaithfulSpacesBaseChangeOfIsThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullGeneral.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullGeneral.lean#L347). The attribute's comment: “FULL FAITHFULNESS ONLY, at a thickening of ARBITRARY order; ESSENTIAL SURJECTIVITY is not covered here, and is proved at arbitrary order in `AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isThickening`”.
 
 > Let `G ⊂ Y` be a thickening of algebraic spaces over `S`, of arbitrary order. Base change along
 > the inclusion, `V ↦ G ×_Y V`, is fully faithful from the spaces-étale site of `Y` to that of
@@ -120,7 +120,7 @@ noncomputable def fullyFaithfulSpacesBaseChangeOfIsThickening {G : Subfunctor Y.
     (spacesBaseChange B S hS (IsThickening.inclusion B S hS hG)).functor.FullyFaithful
 ```
 
-**`AlgebraicGeometry.Space.fullyFaithfulSpacesBaseChangeOfIsFirstOrderThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean#L192). The attribute's comment: “full faithfulness at a first-order thickening”.
+**`AlgebraicGeometry.Space.fullyFaithfulSpacesBaseChangeOfIsFirstOrderThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean#L192). The attribute's comment: “full faithfulness at a first-order thickening”.
 
 > Base change `V ↦ X ×_Y V` along the inclusion `f` of a first-order thickening is fully
 > faithful from the spaces-étale site of `Y` to that of `X`.
@@ -131,7 +131,7 @@ noncomputable def fullyFaithfulSpacesBaseChangeOfIsFirstOrderThickening [Mono f.
     (spacesBaseChange B S hS f).functor.FullyFaithful
 ```
 
-**`AlgebraicGeometry.Space.faithful_spacesBaseChange_of_mono_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean#L212). The attribute's comment: “faithfulness at an arbitrary thickening”.
+**`AlgebraicGeometry.Space.faithful_spacesBaseChange_of_mono_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean#L212). The attribute's comment: “faithfulness at an arbitrary thickening”.
 
 > Base change along the inclusion
 > of a thickening — of no prescribed order — is faithful on spaces-étale sites.
@@ -142,7 +142,7 @@ theorem faithful_spacesBaseChange_of_mono_of_isThickening [Mono f.hom]
     (spacesBaseChange B S hS f).functor.Faithful
 ```
 
-**`AlgebraicGeometry.Space.full_spacesBaseChange_of_mono_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean#L222). The attribute's comment: “fullness at an arbitrary thickening”.
+**`AlgebraicGeometry.Space.full_spacesBaseChange_of_mono_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean#L222). The attribute's comment: “fullness at an arbitrary thickening”.
 
 > Base change along the inclusion of a
 > thickening — of no prescribed order — is full on spaces-étale sites.
@@ -153,7 +153,7 @@ theorem full_spacesBaseChange_of_mono_of_isThickening [Mono f.hom]
     (spacesBaseChange B S hS f).functor.Full
 ```
 
-**`AlgebraicGeometry.Space.fullyFaithfulSpacesBaseChangeOfMonoOfIsThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean#L232). The attribute's comment: “full faithfulness at an arbitrary thickening”.
+**`AlgebraicGeometry.Space.fullyFaithfulSpacesBaseChangeOfMonoOfIsThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithful.lean#L232). The attribute's comment: “full faithfulness at an arbitrary thickening”.
 
 > Base change `V ↦ X ×_Y V` is fully faithful from the spaces-étale site of `Y` to that of `X`,
 > for `f` a monomorphism whose range is a thickening of `Y` of arbitrary order.
@@ -164,7 +164,7 @@ noncomputable def fullyFaithfulSpacesBaseChangeOfMonoOfIsThickening [Mono f.hom]
     (spacesBaseChange B S hS f).functor.FullyFaithful
 ```
 
-**`AlgebraicGeometry.Space.fullyFaithfulSpacesBaseChangeOfIsThickeningRange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithfulThickening.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithfulThickening.lean#L63). The attribute's comment: “full faithfulness at a thickening of unbounded order, not the integral universally injective case”.
+**`AlgebraicGeometry.Space.fullyFaithfulSpacesBaseChangeOfIsThickeningRange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithfulThickening.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithfulThickening.lean#L64). The attribute's comment: “full faithfulness at a thickening of unbounded order, not the integral universally injective case”.
 
 > Base change `V ↦ X ×_Y V` is fully faithful from the spaces-étale site of `Y` to that of `X`,
 > for the inclusion `f` of a thickening of algebraic spaces — a monomorphism whose range is a
@@ -176,7 +176,7 @@ noncomputable def fullyFaithfulSpacesBaseChangeOfIsThickeningRange [Mono f.hom]
     (spacesBaseChange B S hS f).functor.FullyFaithful
 ```
 
-**`AlgebraicGeometry.Space.fullyFaithfulSpacesBaseChangeOfIsNthOrderThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithfulThickening.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithfulThickening.lean#L88). The attribute's comment: “full faithfulness at a thickening of finite order”.
+**`AlgebraicGeometry.Space.fullyFaithfulSpacesBaseChangeOfIsNthOrderThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithfulThickening.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleFullyFaithfulThickening.lean#L89). The attribute's comment: “full faithfulness at a thickening of finite order”.
 
 > Base change `V ↦ X ×_Y V` is fully faithful from the spaces-étale site of `Y` to that of `X`,
 > for the inclusion `f` of a thickening of order `n`, whose defining ideal has vanishing `(n+1)`st
@@ -190,13 +190,13 @@ noncomputable def fullyFaithfulSpacesBaseChangeOfIsNthOrderThickening {n : ℕ} 
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.C1573.isEquivalence_spacesBaseChange_of_isThickeningHom`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EquivalencePort/Thickenings/SpacesEtaleEquivalenceGeneral.lean#L97), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalenceGeneral.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalenceGeneral.lean#L84) (StacksFrontier): “the equivalence, for the inclusion of a thickening of arbitrary order”.
+- [`AlgebraicGeometry.Space.C1573.isEquivalence_spacesBaseChange_of_isThickeningHom`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EquivalencePort/Thickenings/SpacesEtaleEquivalenceGeneral.lean#L97), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalenceGeneral.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SpacesEtaleEquivalenceGeneral.lean#L84) (StacksFrontier): “the equivalence, for the inclusion of a thickening of arbitrary order”.
 
 ## Tag 07VW, a lemma
 
 [Tag 07VW](https://stacks.math.columbia.edu/tag/07VW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smallEtalePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean#L298). The attribute's comment: “the base-change functor on the étale schemes, which needs only integrality of `f`; the two equivalences are stated separately”.
+**`AlgebraicGeometry.Space.smallEtalePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean#L301). The attribute's comment: “the base-change functor on the étale schemes, which needs only integrality of `f`; the two equivalences are stated separately”.
 
 > **Stacks 07VW, the base-change functor on the étale schemes.** For an integral morphism
 > `f : X ⟶ Y` of algebraic spaces over `S`, base change `V ↦ X ×_Y V` carries the small étale
@@ -212,7 +212,7 @@ noncomputable def smallEtalePullback (f : X ⟶ Y) (hf : IsIntegralHom B S hS f.
     SmallEtale B S hS Y.1 ⥤ SmallEtale B S hS X.1
 ```
 
-**`AlgebraicGeometry.Space.smallEtalePullbackComparisonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean#L311). The attribute's comment: “the restriction to the étale schemes is the spaces-étale base change”.
+**`AlgebraicGeometry.Space.smallEtalePullbackComparisonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean#L314). The attribute's comment: “the restriction to the étale schemes is the spaces-étale base change”.
 
 > **Stacks 07VW, canonicity of the base-change functor on the étale schemes.**
 > `AlgebraicGeometry.Space.smallEtalePullback` is the restriction of base change on the
@@ -226,7 +226,7 @@ noncomputable def smallEtalePullbackComparisonIso (f : X ⟶ Y)
       comparisonFunctor B S hS Y ⋙ (spacesBaseChange B S hS f).functor
 ```
 
-**`AlgebraicGeometry.Space.affineEtalePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean#L372). The attribute's comment: “the base-change functor on the affine étale schemes, which needs only integrality of `f`; the two equivalences are stated separately”.
+**`AlgebraicGeometry.Space.affineEtalePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean#L375). The attribute's comment: “the base-change functor on the affine étale schemes, which needs only integrality of `f`; the two equivalences are stated separately”.
 
 > **Stacks 07VW, the base-change functor on the affine étale schemes.** For an integral
 > morphism `f : X ⟶ Y` of algebraic spaces over `S`, base change `V ↦ X ×_Y V` carries the affine
@@ -238,7 +238,7 @@ noncomputable def affineEtalePullback (f : X ⟶ Y) (hf : IsIntegralHom B S hS f
     AffineEtale B S hS Y.1 ⥤ AffineEtale B S hS X.1
 ```
 
-**`AlgebraicGeometry.Space.affineEtalePullbackInclusionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean#L382). The attribute's comment: “the restriction to the affine étale schemes is the small étale base change”.
+**`AlgebraicGeometry.Space.affineEtalePullbackInclusionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTopologicalInvariance.lean#L385). The attribute's comment: “the restriction to the affine étale schemes is the small étale base change”.
 
 > **Stacks 07VW, canonicity of the base-change functor on the affine étale schemes.**
 > `AlgebraicGeometry.Space.affineEtalePullback` is the restriction of
@@ -251,7 +251,7 @@ noncomputable def affineEtalePullbackInclusionIso (f : X ⟶ Y)
       AffineEtale.inclusion B S hS Y.1 ⋙ smallEtalePullback B S hS f hf
 ```
 
-**`AlgebraicGeometry.Space.isEquivalence_smallEtalePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TopologicalInvariance/SmallEtale.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TopologicalInvariance/SmallEtale.lean#L223). The attribute's comment: “the equivalence `Y_étale ⟶ X_étale` of small étale sites, the restriction of the equivalence of Stacks 05ZH on spaces-étale sites (that it is the restriction is `AlgebraicGeometry.Space.smallEtalePullbackComparisonIso`)”.
+**`AlgebraicGeometry.Space.isEquivalence_smallEtalePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TopologicalInvariance/SmallEtale.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TopologicalInvariance/SmallEtale.lean#L223). The attribute's comment: “the equivalence `Y_étale ⟶ X_étale` of small étale sites, the restriction of the equivalence of Stacks 05ZH on spaces-étale sites (that it is the restriction is `AlgebraicGeometry.Space.smallEtalePullbackComparisonIso`)”.
 
 > **Stacks 07VW, on the étale schemes.** Let `f : X ⟶ Y` be an integral, universally injective
 > and surjective morphism of algebraic spaces over `S`. Then base change `V ↦ X ×_Y V` is an
@@ -269,7 +269,7 @@ theorem isEquivalence_smallEtalePullback (f : X ⟶ Y) (hf : IsIntegralHom B S h
     (smallEtalePullback B S hS f hf).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.isEquivalence_affineEtalePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TopologicalInvariance/SmallEtale.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TopologicalInvariance/SmallEtale.lean#L261). The attribute's comment: “the equivalence `Y_affine,étale ⟶ X_affine,étale` of affine étale sites, the restriction of the equivalence on the small étale sites (that it is the restriction is `AlgebraicGeometry.Space.affineEtalePullbackInclusionIso`)”.
+**`AlgebraicGeometry.Space.isEquivalence_affineEtalePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TopologicalInvariance/SmallEtale.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TopologicalInvariance/SmallEtale.lean#L261). The attribute's comment: “the equivalence `Y_affine,étale ⟶ X_affine,étale` of affine étale sites, the restriction of the equivalence on the small étale sites (that it is the restriction is `AlgebraicGeometry.Space.affineEtalePullbackInclusionIso`)”.
 
 > **Stacks 07VW, on the affine étale schemes.** Let `f : X ⟶ Y` be an integral, universally
 > injective and surjective morphism of algebraic spaces over `S`. Then base change `V ↦ X ×_Y V` is
@@ -290,7 +290,7 @@ theorem isEquivalence_affineEtalePullback (f : X ⟶ Y) (hf : IsIntegralHom B S 
 
 [Tag 05ZI](https://stacks.math.columbia.edu/tag/05ZI) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_of_isFinite_of_etale_of_connectedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/AffineLineFiniteEtaleCovering.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/AffineLineFiniteEtaleCovering.lean#L29). The attribute's comment: “the input: A^1\_k has no nontrivial connected finite étale covering when k is algebraically closed of characteristic 0 (details omitted in the source)”.
+**`AlgebraicGeometry.isIso_of_isFinite_of_etale_of_connectedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/AffineLineFiniteEtaleCovering.lean, line 29](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/AffineLineFiniteEtaleCovering.lean#L29). The attribute's comment: “the input: A^1\_k has no nontrivial connected finite étale covering when k is algebraically closed of characteristic 0 (details omitted in the source)”.
 
 > Over an algebraically closed field `k` of characteristic zero, a finite étale morphism
 > `Y ⟶ 𝐀¹_k = Spec k[X]` with `Y` connected is an isomorphism.
@@ -301,7 +301,7 @@ theorem isIso_of_isFinite_of_etale_of_connectedSpace {k : Type u} [Field k] [IsA
     [ConnectedSpace Y] : IsIso f
 ```
 
-**`AlgebraicGeometry.Space.universalHomeomorphism_squaringMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean, line 772](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean#L772). The attribute's comment: “the remark's own last sentence: there exists a universal homeomorphism X ⟶ 𝐀¹\_k, exhibited directly by t ↦ t² on affine spaces. NOT asserted: that this X is the same as the quotient Y/G of the remark's alternative construction, that Y ⟶ X is a nontrivial connected finite étale covering, and that 𝐀¹\_k has no nontrivial connected finite étale coverings”.
+**`AlgebraicGeometry.Space.universalHomeomorphism_squaringMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean, line 772](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean#L772). The attribute's comment: “the remark's own last sentence: there exists a universal homeomorphism X ⟶ 𝐀¹\_k, exhibited directly by t ↦ t² on affine spaces. NOT asserted: that this X is the same as the quotient Y/G of the remark's alternative construction, that Y ⟶ X is a nontrivial connected finite étale covering, and that 𝐀¹\_k has no nontrivial connected finite étale coverings”.
 
 > **Stacks 05ZI, the last sentence: there is a universal homeomorphism `X ⟶ 𝐀¹_k`, exhibited
 > directly by `t ↦ t ^ 2` on affine space.**
@@ -324,7 +324,7 @@ theorem universalHomeomorphism_squaringMap (hchar : (2 : k) ≠ 0)
     UniversalHomeomorphism B (Spec (.of k)) hk (squaringMap k B hk)
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.whiskerLeft_punctured_comp_toQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean#L157). The attribute's comment: “a construction input only: the gluing datum of the covering `Y` of the remark, at the level of points. NEITHER assertion of the remark is asserted -- not that a universal homeomorphism of algebraic spaces need be non-representable, and not that Tag 05ZH fails for universal homeomorphisms”.
+**`AlgebraicGeometry.AffineLineInvolution.whiskerLeft_punctured_comp_toQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean#L157). The attribute's comment: “a construction input only: the gluing datum of the covering `Y` of the remark, at the level of points. NEITHER assertion of the remark is asserted -- not that a universal homeomorphism of algebraic spaces need be non-representable, and not that Tag 05ZH fails for universal homeomorphisms”.
 
 > **The overlap identity of Stacks 05ZI.** The two maps from the punctured affine line to the
 > quotient sheaf of Stacks 02Z1, one through the inclusion of the puncture and one through
@@ -339,7 +339,7 @@ theorem whiskerLeft_punctured_comp_toQuotientSheaf {C : Type v} [Category.{w} C]
         Stacks.Groupoids.toQuotientSheaf J F (involutionRelation k)
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.yoneda_puncturedChart_comp_quotientChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean#L227). The attribute's comment: “a construction input only: the two chart maps of the doubled-origin line agree over the overlap, which is the remark's `these agree on the overlap by construction of X`. The morphism `Y ⟶ X` itself is not constructed and neither assertion of the remark is asserted”.
+**`AlgebraicGeometry.AffineLineInvolution.yoneda_puncturedChart_comp_quotientChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean#L227). The attribute's comment: “a construction input only: the two chart maps of the doubled-origin line agree over the overlap, which is the remark's `these agree on the overlap by construction of X`. The morphism `Y ⟶ X` itself is not constructed and neither assertion of the remark is asserted”.
 
 > **The gluing datum of the covering of Stacks 05ZI.** The two maps from the punctured affine
 > line to the quotient `X` of Stacks 05Z6, one through the inclusion of the puncture and one
@@ -355,7 +355,7 @@ theorem yoneda_puncturedChart_comp_quotientChart :
       yoneda.map (puncturedChartNeg k B hk) ≫ quotientChart k B hk
 ```
 
-**`AlgebraicGeometry.connectedSpace_affineSpaceWithDoubledZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean#L296). The attribute's comment: “a construction input only: the doubled-origin affine space is connected. That `Y ⟶ X` is a nontrivial connected finite etale covering is NOT asserted -- this library has no notion of a connected algebraic space”.
+**`AlgebraicGeometry.connectedSpace_affineSpaceWithDoubledZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean#L296). The attribute's comment: “a construction input only: the doubled-origin affine space is connected. That `Y ⟶ X` is a nontrivial connected finite etale covering is NOT asserted -- this library has no notion of a connected algebraic space”.
 
 > **The connectedness input of Stacks 05ZI.** In positive dimension affine `n`-space over a
 > field with its origin doubled is a connected scheme: its two charts are spectra of a polynomial
@@ -367,7 +367,7 @@ theorem connectedSpace_affineSpaceWithDoubledZero (k : Type u) [Field k] (n : �
     ConnectedSpace (affineSpaceWithDoubledZero k n)
 ```
 
-**`AlgebraicGeometry.chartSwapNegationData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean#L384). The attribute's comment: “a construction input only: the involution of `Y` of the remark's alternative route, negating the coordinate and swapping the two charts. That the induced action of `{+1,-1}` is free and that `X` is its quotient are NOT asserted”.
+**`AlgebraicGeometry.chartSwapNegationData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean#L384). The attribute's comment: “a construction input only: the involution of `Y` of the remark's alternative route, negating the coordinate and swapping the two charts. That the induced action of `{+1,-1}` is free and that `X` is its quotient are NOT asserted”.
 
 > **Stacks 05ZI, the alternative construction.** The endomorphism of affine space with
 > doubled origin which negates the coordinates and swaps the two charts, packaged with its
@@ -383,7 +383,7 @@ noncomputable def chartSwapNegationData (k : Type u) [Field k] (n : ℕ) :
         chartInclusion k n 1 ≫ f = negAffineSpace k n ≫ chartInclusion k n 0 }
 ```
 
-**`AlgebraicGeometry.chartSwapNegation_comp_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean#L441). The attribute's comment: “a construction input only: that involution is an involution”.
+**`AlgebraicGeometry.chartSwapNegation_comp_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalHomeomorphismEtaleFailure.lean#L441). The attribute's comment: “a construction input only: that involution is an involution”.
 
 > **Stacks 05ZI, the alternative construction.** Negating the coordinates and swapping the
 > two charts of affine space with doubled origin is an involution, so it makes the group of
@@ -394,7 +394,7 @@ theorem chartSwapNegation_comp_self (k : Type u) [Field k] (n : ℕ) :
     chartSwapNegation k n ≫ chartSwapNegation k n = 𝟙 _
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.isPullback_chartPairToDoubledLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DoubledLineEtaleCovering/CartesianSquare.lean, line 622](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/DoubledLineEtaleCovering/CartesianSquare.lean#L622). The attribute's comment: “the remark's cartesian square: Y ← Y₁ ⨿ Y₂ over X ← 𝐀¹\_k is cartesian”.
+**`AlgebraicGeometry.AffineLineInvolution.isPullback_chartPairToDoubledLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DoubledLineEtaleCovering/CartesianSquare.lean, line 622](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/DoubledLineEtaleCovering/CartesianSquare.lean#L622). The attribute's comment: “the remark's cartesian square: Y ← Y₁ ⨿ Y₂ over X ← 𝐀¹\_k is cartesian”.
 
 > **Stacks 05ZI: the square of the remark is cartesian.** Away from characteristic two a
 > morphism into `Y` together with a morphism into the chart `𝐀¹_k` of Stacks 05Z6 having the same
@@ -414,7 +414,7 @@ theorem isPullback_chartPairToDoubledLine (hchar : (2 : k) ≠ 0) :
       (quotientChart k B hk)
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.nontrivial_connected_finiteEtale_degreeTwo_coveringMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DoubledLineEtaleCovering/FiniteEtaleDegreeTwo.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/DoubledLineEtaleCovering/FiniteEtaleDegreeTwo.lean#L397). The attribute's comment: “the remark's covering: Y, the affine line with its origin doubled, is a nontrivial connected finite étale covering of X of degree two”.
+**`AlgebraicGeometry.AffineLineInvolution.nontrivial_connected_finiteEtale_degreeTwo_coveringMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DoubledLineEtaleCovering/FiniteEtaleDegreeTwo.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/DoubledLineEtaleCovering/FiniteEtaleDegreeTwo.lean#L397). The attribute's comment: “the remark's covering: Y, the affine line with its origin doubled, is a nontrivial connected finite étale covering of X of degree two”.
 
 > **Stacks 05ZI.** The affine line with its origin doubled is a *nontrivial connected finite
 > étale covering of degree two* of the algebraic space `X = 𝐀¹_k/\{x ∼ -x ∣ x ≠ 0\}` of
@@ -437,7 +437,7 @@ theorem nontrivial_connected_finiteEtale_degreeTwo_coveringMorphism (hchar : (2 
         s ≫ coveringMorphism k B hk = 𝟙 (involutionQuotient k B hk).obj
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.doubledLine_freeAction_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DoubledLineInvolutionQuotient.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/DoubledLineInvolutionQuotient.lean#L519). The attribute's comment: “the remark's alternative construction: G = \{±1} acts freely on Y, -1 swapping the two charts and negating the coordinate, and X = Y/G in the sense of Spaces, Definition 02Z3”.
+**`AlgebraicGeometry.AffineLineInvolution.doubledLine_freeAction_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DoubledLineInvolutionQuotient.lean, line 519](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/DoubledLineInvolutionQuotient.lean#L519). The attribute's comment: “the remark's alternative construction: G = \{±1} acts freely on Y, -1 swapping the two charts and negating the coordinate, and X = Y/G in the sense of Spaces, Definition 02Z3”.
 
 > **Stacks 05ZI, the remark's alternative construction.** Away from characteristic two, the
 > affine line with its origin doubled carries an action of the group `G = \{+1, -1\} = ℤˣ` in
@@ -466,7 +466,7 @@ theorem doubledLine_freeAction_quotient (hchar : (2 : k) ≠ 0)
               (doubledLineAction k B hk))
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.squaringMap_universalHomeomorphism_not_representable_not_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/SquaringMapEtaleSiteFailure.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/SquaringMapEtaleSiteFailure.lean#L383). The attribute's comment: “the remark's two assertions: X ⟶ 𝐀¹\_k is a universal homeomorphism which is not representable, and base change along it is not an equivalence of spaces-étale sites (it is not essentially surjective), so Theorem 05ZH fails for universal homeomorphisms”.
+**`AlgebraicGeometry.AffineLineInvolution.squaringMap_universalHomeomorphism_not_representable_not_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/SquaringMapEtaleSiteFailure.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/SquaringMapEtaleSiteFailure.lean#L383). The attribute's comment: “the remark's two assertions: X ⟶ 𝐀¹\_k is a universal homeomorphism which is not representable, and base change along it is not an equivalence of spaces-étale sites (it is not essentially surjective), so Theorem 05ZH fails for universal homeomorphisms”.
 
 > **Stacks 05ZI.** Let `k` be an algebraically closed field of characteristic zero and let
 > `𝐀¹_k ⟶ X ⟶ 𝐀¹_k` be as in Stacks 05Z6, with `X ⟶ 𝐀¹_k` the morphism descended from squaring
@@ -507,4 +507,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.8, Tag 05ZG](https://stacks.math.columbia.edu/tag/05ZG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

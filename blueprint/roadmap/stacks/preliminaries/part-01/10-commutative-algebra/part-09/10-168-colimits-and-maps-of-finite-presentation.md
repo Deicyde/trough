@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.168 Colimits and maps of finite presentation, II
 
-Section 10.168 of the Stacks Project, [Tag 07RF](https://stacks.math.columbia.edu/tag/07RF). 10 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.168 of the Stacks Project, [Tag 07RF](https://stacks.math.columbia.edu/tag/07RF). 10 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02JO, a lemma
 
 [Tag 02JO](https://stacks.math.columbia.edu/tag/02JO) in the Stacks Project.
 
-**`Module.Flat.eventually_flat_of_directed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/FlatModel/DirectedModel.lean, line 786](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/SpreadingOut/FlatModel/DirectedModel.lean#L786). The attribute's comment: “(3)”. References: EGA IV (11.2.6), “affine case, (ii)”; EGA IV (11.2.6.1), “(ii) necessity”.
+**`Module.Flat.eventually_flat_of_directed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/FlatModel/DirectedModel.lean, line 779](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/SpreadingOut/FlatModel/DirectedModel.lean#L779). The attribute's comment: “(3)”. References: EGA IV (11.2.6), “affine case, (ii)”; EGA IV (11.2.6.1), “(ii) necessity”.
 
 > **Stacks 02JO (3).** Let `R → S` be of finite presentation and let `M` be a finitely
 > presented `S`-module which is flat over `R`. Let `(R → S, M) = colim_λ (R_λ → S_λ, M_λ)` be a
@@ -56,7 +56,7 @@ theorem Module.Flat.eventually_flat_of_directed {R S : Type u} [CommRing R] [Com
       letI := Module.compHom (N j) (algebraMap (A j) (B j)); Module.Flat (A j) (N j)
 ```
 
-**`Module.Flat.exists_finiteType_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/FlatModel/FiniteTypeModel.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/SpreadingOut/FlatModel/FiniteTypeModel.lean#L254). The attribute's comment: “(1)”.
+**`Module.Flat.exists_finiteType_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/FlatModel/FiniteTypeModel.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/SpreadingOut/FlatModel/FiniteTypeModel.lean#L254). The attribute's comment: “(1)”.
 
 > **Stacks 02JO (1).** Let `R → S` be of finite presentation and let `M` be a finitely
 > presented `S`-module which is flat over `R`. Then there are a ring `R₀` of finite type over `ℤ`,
@@ -77,7 +77,7 @@ theorem Module.Flat.exists_finiteType_model {R S : Type u} [CommRing R] [CommRin
         Module.Flat R₀ M₀ ∧ Algebra.IsPushout R₀ R S₀ S ∧ IsBaseChange S f
 ```
 
-**`Module.Flat.exists_finitePresentation_model_of_directed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/FlatModel/FiniteTypeModel.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/SpreadingOut/FlatModel/FiniteTypeModel.lean#L288). The attribute's comment: “(2)”. References: EGA IV (1.8.4.2).
+**`Module.Flat.exists_finitePresentation_model_of_directed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/FlatModel/FiniteTypeModel.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/SpreadingOut/FlatModel/FiniteTypeModel.lean#L288). The attribute's comment: “(2)”. References: EGA IV (1.8.4.2).
 
 > **Stacks 02JO (2).** Let `R → S` be of finite presentation and let `M` be a finitely
 > presented `S`-module which is flat over `R`. If `R = colim_λ R_λ` is a directed colimit, then
@@ -103,7 +103,7 @@ theorem Module.Flat.exists_finitePresentation_model_of_directed {R S : Type u} [
           Module.Flat (A i) P ∧ Algebra.IsPushout (A i) R T S ∧ IsBaseChange S f
 ```
 
-**`Module.Flat.exists_flat_models_and_eventually_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/FlatModel/Packaged.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/SpreadingOut/FlatModel/Packaged.lean#L47).
+**`Module.Flat.exists_flat_models_and_eventually_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/FlatModel/Packaged.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/SpreadingOut/FlatModel/Packaged.lean#L47).
 
 > **Stacks 02JO.** Let `R → S` be of finite presentation and let `M` be a finitely presented
 > `S`-module which is flat over `R`. Then:
@@ -223,7 +223,7 @@ theorem Module.Flat.exists_flat_models_and_eventually_flat
 
 [Tag 034Y](https://stacks.math.columbia.edu/tag/034Y) in the Stacks Project.
 
-**`Algebra.exists_faithfullyFlat_finitePresentation_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ColimitsII/FaithfullyFlatModel.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FinitePresentation/ColimitsII/FaithfullyFlatModel.lean#L217). The attribute's comment: “The diagram is the data `R → A₀ → A` with `IsScalarTower R A₀ A` (the left square) and `A₀ → B₀ → B`, `A₀ → A → B` through a common `A₀ → B` (the right square); `B = A ⊗_{A₀} B₀` is `Algebra.IsPushout A₀ A B₀ B`. The rings `A₀`, `B₀` live in the universe of `R`, `A` and `B`.”.
+**`Algebra.exists_faithfullyFlat_finitePresentation_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ColimitsII/FaithfullyFlatModel.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FinitePresentation/ColimitsII/FaithfullyFlatModel.lean#L216). The attribute's comment: “The diagram is the data `R → A₀ → A` with `IsScalarTower R A₀ A` (the left square) and `A₀ → B₀ → B`, `A₀ → A → B` through a common `A₀ → B` (the right square); `B = A ⊗_{A₀} B₀` is `Algebra.IsPushout A₀ A B₀ B`. The rings `A₀`, `B₀` live in the universe of `R`, `A` and `B`.”.
 
 > **Stacks 034Y.** Let `R → A → B` be ring maps with `A → B` faithfully flat of finite
 > presentation. Then there are an `R`-algebra `A₀` of finite presentation and a faithfully flat
@@ -245,7 +245,7 @@ theorem Algebra.exists_faithfullyFlat_finitePresentation_model {R : Type v} {A B
 
 [Tag 07RG](https://stacks.math.columbia.edu/tag/07RG) in the Stacks Project.
 
-**`Stacks.DirectLimit.FiniteDescent.finite_baseChange_of_colimit_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Finite.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Finite.lean#L526).
+**`Stacks.DirectLimit.FiniteDescent.finite_baseChange_of_colimit_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Finite.lean, line 525](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Finite.lean#L525).
 
 > Let `L` be the directed colimit of a directed system of `R`-algebras `(A i)`, and let
 > `φ : B →ₐ[R] C` be a map of `R`-algebras of finite type. If the base change
@@ -269,7 +269,7 @@ theorem finite_baseChange_of_colimit_finite
 
 [Tag 07RH](https://stacks.math.columbia.edu/tag/07RH) in the Stacks Project.
 
-**`surjective_baseChange_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Surjective.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Surjective.lean#L280). References: SGA 3 VIB (10.1), “special case”.
+**`surjective_baseChange_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Surjective.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Surjective.lean#L276). References: SGA 3 VIB (10.1), “special case”.
 
 > Let `A = colim_i Aᵢ` be a directed colimit of `A₀`-algebras, and let `C₀` be an
 > `A₀`-algebra that is of finite type over the `A₀`-algebra `B₀` (via the structure map
@@ -289,7 +289,7 @@ theorem surjective_baseChange_of_colimit
 
 [Tag 0C4F](https://stacks.math.columbia.edu/tag/0C4F) in the Stacks Project.
 
-**`Stacks.DirectLimit.UnramifiedDescent.colimit_unramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Unramified.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Unramified.lean#L534).
+**`Stacks.DirectLimit.UnramifiedDescent.colimit_unramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Unramified.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Unramified.lean#L530).
 
 > If the base change `Φ = id_A ⊗ φ₀` of `φ₀` to the directed colimit `A = colim_i Aᵢ` is
 > unramified and `C₀` is of finite type over `B₀` via `φ₀`, then the base change
@@ -317,7 +317,7 @@ theorem colimit_unramified
 
 [Tag 0C32](https://stacks.math.columbia.edu/tag/0C32) in the Stacks Project.
 
-**`Stacks.DirectLimit.FinitePresentationDescent.isIso_of_finitePresentation_colim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Bijective.lean, line 836](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Bijective.lean#L836).
+**`Stacks.DirectLimit.FinitePresentationDescent.isIso_of_finitePresentation_colim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Bijective.lean, line 836](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Algebra/DirectLimit/Descent/Bijective.lean#L836).
 
 > Let `A = colim_{i ∈ I} A_i` be a directed colimit of commutative rings, fix an index
 > `i₀ ∈ I`, and let `φ₀ : B₀ → C₀` be a map of `A i₀`-algebras. If the base-changed map
@@ -336,7 +336,7 @@ theorem isIso_of_finitePresentation_colim
 
 [Tag 07RI](https://stacks.math.columbia.edu/tag/07RI) in the Stacks Project.
 
-**`RingHom.Etale.exists_baseChange_etale_of_colimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/ColimitBaseChange.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/ColimitBaseChange.lean#L380). The attribute's comment: “The source's `A_0` is the base ring `R` and its index set restricted to `i ≥ 0`, which is cofinal, is the diagram; `A = colim A_i` is `Limits.ColimitPresentation J A` in `CommAlgCat R` over an arbitrary filtered `J`, together with the `PreservesColimit` instance saying the colimit is computed on underlying sets, and the base change of `φ` is Mathlib's `Algebra.TensorProduct.map (AlgHom.id R _) φ`. See the module docstring.”.
+**`RingHom.Etale.exists_baseChange_etale_of_colimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/ColimitBaseChange.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/ColimitBaseChange.lean#L378). The attribute's comment: “The source's `A_0` is the base ring `R` and its index set restricted to `i ≥ 0`, which is cofinal, is the diagram; `A = colim A_i` is `Limits.ColimitPresentation J A` in `CommAlgCat R` over an arbitrary filtered `J`, together with the `PreservesColimit` instance saying the colimit is computed on underlying sets, and the base change of `φ` is Mathlib's `Algebra.TensorProduct.map (AlgHom.id R _) φ`. See the module docstring.”.
 
 > **Étale spreads out in a filtered colimit of base rings.** Let `A` be the colimit of a
 > filtered diagram of `R`-algebras `Aᵢ`, computed on underlying sets, and let `φ : B →ₐ[R] C` be of
@@ -358,7 +358,7 @@ public theorem exists_baseChange_etale_of_colimitPresentation
 
 [Tag 0C0B](https://stacks.math.columbia.edu/tag/0C0B) in the Stacks Project.
 
-**`RingHom.Smooth.exists_baseChange_smooth_of_colimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/Smooth.lean, line 1130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/SpreadingOut/Smooth.lean#L1130). The attribute's comment: “The source's `A_0` is the base ring `R` and its index set restricted to `i ≥ 0`, which is cofinal, is the diagram; `A = colim A_i` is `Limits.ColimitPresentation J A` in `CommAlgCat R` over a filtered `J` whose colimit is computed on underlying sets, and the base change of `φ` is Mathlib's `Algebra.TensorProduct.map (AlgHom.id R _) φ`. Smooth is `RingHom.Smooth`, the source's notion by Proposition 00TN. See the module docstring.”.
+**`RingHom.Smooth.exists_baseChange_smooth_of_colimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/Smooth.lean, line 1125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/SpreadingOut/Smooth.lean#L1125). The attribute's comment: “The source's `A_0` is the base ring `R` and its index set restricted to `i ≥ 0`, which is cofinal, is the diagram; `A = colim A_i` is `Limits.ColimitPresentation J A` in `CommAlgCat R` over a filtered `J` whose colimit is computed on underlying sets, and the base change of `φ` is Mathlib's `Algebra.TensorProduct.map (AlgHom.id R _) φ`. Smooth is `RingHom.Smooth`, the source's Definition 00T2. See the module docstring.”.
 
 > **Smoothness spreads out in a filtered colimit of base rings.** Let `A` be the colimit of a
 > filtered diagram of `R`-algebras `Aᵢ`, computed on underlying sets, and let `φ : B →ₐ[R] C` be of
@@ -381,7 +381,7 @@ public theorem exists_baseChange_smooth_of_colimitPresentation
 
 [Tag 0C33](https://stacks.math.columbia.edu/tag/0C33) in the Stacks Project.
 
-**`Algebra.IsRelativeGlobalCompleteIntersection.exists_stage_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ColimitsII/TensorProductStage.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FinitePresentation/ColimitsII/TensorProductStage.lean#L262). The attribute's comment: “The relative global complete intersection case. The colimit `A` is the ring `R` with the cocone `ρ`, given elementwise: every element of `R` comes from a stage, and an element of a stage dying in `R` dies at a later stage. The maps `A_i ⊗ B₀ → A_i ⊗ C₀` are `Algebra.TensorProduct.map id φ₀`.”.
+**`Algebra.IsRelativeGlobalCompleteIntersection.exists_stage_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ColimitsII/TensorProductStage.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FinitePresentation/ColimitsII/TensorProductStage.lean#L259). The attribute's comment: “The relative global complete intersection case. The colimit `A` is the ring `R` with the cocone `ρ`, given elementwise: every element of `R` comes from a stage, and an element of a stage dying in `R` dies at a later stage. The maps `A_i ⊗ B₀ → A_i ⊗ C₀` are `Algebra.TensorProduct.map id φ₀`.”.
 
 > **Stacks 0C33, relative global complete intersections.** Let `A = colim_i A_i` be a directed
 > colimit of rings, let `0 ≤ i` be an index and `φ₀ : B₀ → C₀` a map of `A₀`-algebras with `C₀` of
@@ -405,7 +405,7 @@ theorem Algebra.IsRelativeGlobalCompleteIntersection.exists_stage_tensorProduct
       Algebra.IsRelativeGlobalCompleteIntersection (A i ⊗[A i₀] B₀) (A i ⊗[A i₀] C₀)
 ```
 
-**`Algebra.Syntomic.exists_stage_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ColimitsII/TensorProductStage.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FinitePresentation/ColimitsII/TensorProductStage.lean#L284). The attribute's comment: “The syntomic case, with the conventions of the relative global complete intersection case.”.
+**`Algebra.Syntomic.exists_stage_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ColimitsII/TensorProductStage.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FinitePresentation/ColimitsII/TensorProductStage.lean#L281). The attribute's comment: “The syntomic case, with the conventions of the relative global complete intersection case.”.
 
 > **Stacks 0C33, syntomic ring maps.** Let `A = colim_i A_i` be a directed colimit of rings,
 > let `0 ≤ i` be an index and `φ₀ : B₀ → C₀` a map of `A₀`-algebras with `C₀` of finite
@@ -433,7 +433,7 @@ theorem Algebra.Syntomic.exists_stage_tensorProduct
 
 [Tag 034Z](https://stacks.math.columbia.edu/tag/034Z) in the Stacks Project.
 
-**`Algebra.exists_quasiFinite_faithfullyFlat_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ColimitsII/QuasiFiniteFactorization.lean, line 535](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FinitePresentation/ColimitsII/QuasiFiniteFactorization.lean#L535). The attribute's comment: “The commutative triangle is the data `R → S → S'` with `IsScalarTower R S S'`; quasi-finiteness (Definition 00PL) is `Algebra.QuasiFinite`, which omits the finite type clause of the source's definition, supplied here by `Algebra.FinitePresentation`. `S'` lives in the universe of `R` and `S`.”. References: EGA IV (17.16.2), “affine case”.
+**`Algebra.exists_quasiFinite_faithfullyFlat_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ColimitsII/QuasiFiniteFactorization.lean, line 535](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FinitePresentation/ColimitsII/QuasiFiniteFactorization.lean#L535). The attribute's comment: “The commutative triangle is the data `R → S → S'` with `IsScalarTower R S S'`; quasi-finiteness (Definition 00PL) is `Algebra.QuasiFinite`, which omits the finite type clause of the source's definition, supplied here by `Algebra.FinitePresentation`. `S'` lives in the universe of `R` and `S`.”. References: EGA IV (17.16.2), “affine case”.
 
 > **Stacks 034Z.** Let `R → S` be a faithfully flat ring map of finite presentation. Then there
 > is an `S`-algebra `S'` such that `R → S'` is quasi-finite, faithfully flat and of finite
@@ -455,4 +455,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.168, Tag 07RF](https://stacks.math.columbia.edu/tag/07RF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

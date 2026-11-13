@@ -8,7 +8,7 @@ proof: formalized
 
 # Cook-Levin: generator machine for the accept family
 
-36 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html).
+36 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html).
 
 ## The family (pure specification)
 
@@ -19,7 +19,7 @@ and $u \in \mathbb{N}$, the literal list of code clause $u$ is the single litera
 is the label/state variable $X[T, u]$ (entry $u$ of the label/state block at time $T$, for
 height $H$) and which is positive exactly when $u = a_c$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.codeLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#code-lits).
+Formalized by `Cslib.Complexity.CookLevin.Accept.codeLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#code-lits).
 
 ## Literals of an accept cell clause
 
@@ -28,7 +28,7 @@ a time $T$, a height $H$ and $x \in \mathbb{N}$, the literal list of cell clause
 literal whose variable is the cell variable $C[T, k_1, 0, x]$ (time $T$, stack $k_1$, depth $0$
 from the top, symbol code $x$, for height $H$) and which is positive exactly when $x = e_a$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.cellLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#cell-lits).
+Formalized by `Cslib.Complexity.CookLevin.Accept.cellLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#cell-lits).
 
 ## The accept family of a layout
 
@@ -42,7 +42,7 @@ stack $k_1$ (variable $T W + A + k_1 H g + x$), positive if $x = e$ and negative
 clause is a dense row of $V$ slots: the slot of its variable holds the literal and every other
 slot is empty (all slots are empty if the variable is at least $V$).
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.accFam`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-fam).
+Formalized by `Cslib.Complexity.CookLevin.Accept.accFam`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-fam).
 
 ## Counters of the accept generator
 
@@ -51,14 +51,14 @@ counters, named $\mathsf{Tn}$, $\mathsf{Hs}$, $\mathsf{Gc}$, $\mathsf{HG}$, $\ma
 $\mathsf{Kc}$, $\mathsf{K1}$, $\mathsf{Vc}$, $\mathsf{TW}$, $\mathsf{CB}$, $\mathsf{P}$,
 $\mathsf{Q}$, $\mathsf{tmp}$, $\mathsf{md}$, $\mathsf{c1}$ and $\mathsf{c2}$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.CK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#ck).
+Formalized by `Cslib.Complexity.CookLevin.Accept.CK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#ck).
 
 ## Clause kinds of the accept generator
 
 For natural numbers $n_1$ and $g$, a clause kind is
 either a code clause $u$ for some $u < n_1$ or a cell clause $x$ for some $x < g$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.AK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#ak).
+Formalized by `Cslib.Complexity.CookLevin.Accept.AK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#ak).
 
 ## Base counter of an accept clause
 
@@ -66,7 +66,7 @@ For a clause kind $c$ of the accept generator, the
 base counter of its single literal is the counter $\mathsf{TW}$ when $c$ is a code clause and
 the counter $\mathsf{CB}$ when $c$ is a cell clause.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.AK.bc`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#bc).
+Formalized by `Cslib.Complexity.CookLevin.Accept.AK.bc`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#bc).
 
 ## Offset of a clause's literal
 
@@ -74,7 +74,7 @@ For $n_1, g \in \mathbb{N}$, the offset of a clause kind of
 the accept generator is its index: $u$ for the code clause $u < n_1$ and $x$ for the cell clause
 $x < g$. It is the distance of the clause's single literal from its base counter.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.AK.off`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#off).
+Formalized by `Cslib.Complexity.CookLevin.Accept.AK.off`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#off).
 
 ## Polarity of an accept clause's literal
 
@@ -82,7 +82,7 @@ Fix naturals $n_1$ and $g$, and let $a$ and $e$
 be naturals. The polarity of the code clause of $u < n_1$ is true exactly when $u = a$, and the
 polarity of the cell clause of $x < g$ is true exactly when $x = e$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.AK.sg`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#sg).
+Formalized by `Cslib.Complexity.CookLevin.Accept.AK.sg`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#sg).
 
 ## Precomputation stages of the accept generator
 
@@ -98,7 +98,7 @@ drain $\mathsf{TW}$ onto both $\mathsf{CB}$ and $\mathsf{tmp}$; drain $\mathsf{t
 $\mathsf{TW}$; push $A$ units on $\mathsf{CB}$; push $k_1$ units on $\mathsf{K1}$; multiply into
 $\mathsf{CB}$ at $s$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.PS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#ps).
+Formalized by `Cslib.Complexity.CookLevin.Accept.PS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#ps).
 
 ## Stages of the accept generator's literal routine
 
@@ -108,7 +108,7 @@ $\mathrm{dec}$, $\mathrm{cmp}$, $r(o)$ and $r_B(o)$ for each ordering $o \in \{<
 $\mathrm{emL}$, $\mathrm{bad}$, $\mathrm{slot}$ and $\mathrm{dq}$. They form a finite type with
 decidable equality.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.LS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#ls).
+Formalized by `Cslib.Complexity.CookLevin.Accept.LS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#ls).
 
 ## Labels of the accept generator
 
@@ -118,7 +118,7 @@ $\mathrm{fin}(c)$ for a clause kind $c$ (a code clause $u < n_1$ or a cell claus
 $\mathrm{lit}(c, s)$ for a clause kind $c$ and a stage $s$ of the literal routine; or the halting
 label $\mathrm{done}$. The labels form a finite type with decidable equality.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.GL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#gl).
+Formalized by `Cslib.Complexity.CookLevin.Accept.GL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#gl).
 
 ## Entry label of an accept code clause
 
@@ -126,7 +126,7 @@ For a generator with $n_1$ code clauses and $g$ cell
 clauses and $u \in \mathbb{N}$, the code-chain label at $u$ is the entry label of code clause $u$
 when $u < n_1$, and the halting label $\mathrm{done}$ when $u \ge n_1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.GL.codeFrom`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#code-from).
+Formalized by `Cslib.Complexity.CookLevin.Accept.GL.codeFrom`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#code-from).
 
 ## Start of the accept code chain
 
@@ -134,7 +134,7 @@ For a generator with $n_1$ code clauses, the code chain
 starts at the entry label of code clause $n_1 - 1$ (the last one, as clauses are emitted last
 first), or at the halting label $\mathrm{done}$ when $n_1 = 0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.GL.codeStart`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#code-start).
+Formalized by `Cslib.Complexity.CookLevin.Accept.GL.codeStart`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#code-start).
 
 ## Entry label of an accept cell clause
 
@@ -142,7 +142,7 @@ For a generator with $n_1$ code clauses and $g$ cell
 clauses and $x \in \mathbb{N}$, the cell-chain label at $x$ is the entry label of cell clause $x$
 when $x < g$, and the start of the code chain when $x \ge g$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.GL.cellFrom`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#cell-from).
+Formalized by `Cslib.Complexity.CookLevin.Accept.GL.cellFrom`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#cell-from).
 
 ## First clause label of the accept generator
 
@@ -151,7 +151,7 @@ of code clauses and of cell clauses. Clauses are emitted last first, so the labe
 emission starts is the start label of the cell clause of $g - 1$ when $g > 0$. When $g = 0$ it is
 the start label of the code clause of $n_1 - 1$ if $n_1 > 0$, and the final label if $n_1 = 0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.GL.start`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#start).
+Formalized by `Cslib.Complexity.CookLevin.Accept.GL.start`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#start).
 
 ## Next label after a clause of the accept generator
 
@@ -162,7 +162,7 @@ $u - 1$. After the cell clause $x < g$ it goes, if $x = 0$, to the start of the 
 first label of code clause $n_1 - 1$, or $\mathrm{done}$ if $n_1 = 0$), and otherwise to the
 first label of cell clause $x - 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.GL.nextC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#next-c).
+Formalized by `Cslib.Complexity.CookLevin.Accept.GL.nextC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#next-c).
 
 ## Literal routine of the accept generator
 
@@ -185,7 +185,7 @@ prepends the bits false, true to the output and goes to $\mathrm{dec}$. At $\mat
 halts. At $\mathrm{slot}$ it prepends the bits true, $\lnot\sigma(c)$ to the output and goes to
 $\mathrm{dq}$. At $\mathrm{dq}$ it empties $Q$, then goes to $\mathrm{fin}(c)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.litP`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#lit-p).
+Formalized by `Cslib.Complexity.CookLevin.Accept.litP`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#lit-p).
 
 ## Generator machine for the accept family
 
@@ -210,7 +210,7 @@ goes to the label after $c$. At its final label it halts.
 It is meant to be started with $T$ on $\mathsf{Tn}$, $H$ on $\mathsf{Hs}$ and every other
 counter empty.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.prog`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#prog).
+Formalized by `Cslib.Complexity.CookLevin.Accept.prog`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#prog).
 
 ## The accept generator as a finite multi-stack machine
 
@@ -224,7 +224,7 @@ transition function is the accept generator for $L$, $n_1$, $a$, $k_1$, $e$.
 
 It serves only to check that the generator meets the finiteness conditions of a finite machine.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.accTM`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-tm).
+Formalized by `Cslib.Complexity.CookLevin.Accept.accTM`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-tm).
 
 ## Empty scratch counters of the accept generator
 
@@ -234,7 +234,7 @@ $\mathsf{Q}$, $\mathsf{tmp}$, $\mathsf{md}$, $\mathsf{c1}$ and $\mathsf{c2}$.
 
 The generator keeps these counters empty whenever a clause starts.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.Rest`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#rest).
+Formalized by `Cslib.Complexity.CookLevin.Accept.Rest`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#rest).
 
 ## Run of the literal routine of the accept generator
 
@@ -251,14 +251,14 @@ $s\,z\,o$. Here $s$ is the two bits true, $\lnot\sigma(c)$ (the encoding of a sl
 literal of polarity $\sigma(c)$), and $z$ is $m$ copies of the two bits false, true (the
 encoding of $m$ empty slots).
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.lit_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#lit-run).
+Formalized by `Cslib.Complexity.CookLevin.Accept.lit_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#lit-run).
 
 ## Step bound for one accept clause
 
 For $V \in \mathbb{N}$, the step budget for one clause of
 the accept generator is $B(V) = V(3V + 6) + 10V + 13$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.clauseB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#clause-b).
+Formalized by `Cslib.Complexity.CookLevin.Accept.clauseB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#clause-b).
 
 ## One clause of the accept generator
 
@@ -274,7 +274,7 @@ counters $F$ and output $o$, to the label after clause $c$, with state false, th
 $F$, and output the encoding of the dense clause over $V$ variables whose only literal is the
 variable $p$ with polarity $\sigma(c)$, followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.clause_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#clause-run).
+Formalized by `Cslib.Complexity.CookLevin.Accept.clause_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#clause-run).
 
 ## Run of the code-clause chain of the accept generator
 
@@ -289,7 +289,7 @@ and output $w_0 w_1 \cdots w_u\, o$. Here $w_i$ is the encoding of the dense cla
 variables whose only literal is variable $F(\mathrm{TW}) + i$, positive if and only if
 $i = \mathrm{ac}$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.codes_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#codes-run).
+Formalized by `Cslib.Complexity.CookLevin.Accept.codes_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#codes-run).
 
 ## Run of the accept cell chain
 
@@ -307,7 +307,7 @@ $F(\mathsf{TW}) + u$, positive exactly when $u = a_c$, for $u = 0, \dots, n_1 - 
 those whose single literal is at $F(\mathsf{CB}) + y$, positive exactly when $y = e_a$, for
 $y = 0, \dots, x$, then $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.cells_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#cells-run).
+Formalized by `Cslib.Complexity.CookLevin.Accept.cells_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#cells-run).
 
 ## Initial counters of the accept generator
 
@@ -315,7 +315,7 @@ For $T, H \in \mathbb{N}$, the initial counter
 values are $T$ on the counter $\mathrm{Tn}$, $H$ on the counter $\mathrm{Hs}$, and $0$ on every
 other counter.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.initF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 403](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#init-f).
+Formalized by `Cslib.Complexity.CookLevin.Accept.initF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 403](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#init-f).
 
 ## Counters after the precomputation of the accept generator
 
@@ -327,7 +327,7 @@ $\mathrm{Wc}$, $K$ on $\mathrm{Kc}$, $k_1$ on $\mathrm{K1}$, $(T + 1)W$ on $\mat
 $\mathrm{TW}$, $TW + A + k_1Hg$ on $\mathrm{CB}$ (the index of the cell variable of stack $k_1$,
 depth $0$ and symbol code $0$ at time $T$), and $0$ on every other counter.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.preF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#pre-f).
+Formalized by `Cslib.Complexity.CookLevin.Accept.preF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#pre-f).
 
 ## Cost of the precomputation of the accept generator
 
@@ -337,7 +337,7 @@ let $W = A + KHg$ be the row width. The step budget of the precomputation is
 $3 + (H(2g + 3) + H + 2) + (K(2Hg + 3) + K + 2) + (T(2W + 3) + T + 2) + 1 +
 ((T + 1)(2W + 3) + (T + 1) + 2) + (2TW + 2) + 2 + (k_1(2Hg + 3) + k_1 + 2)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.preB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#pre-b).
+Formalized by `Cslib.Complexity.CookLevin.Accept.preB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#pre-b).
 
 ## Explicit time bound of the accept generator
 
@@ -350,7 +350,7 @@ $P = 3 + (H(2g + 3) + H + 2) + (K(2Hg + 3) + K + 2) + (T(2W + 3) + T + 2) + 1 +
 
 It is at most $314\,(A + K + g + n_1 + k_1 + 1)^5\,(T + H + 1)^4$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.accBound`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-bound).
+Formalized by `Cslib.Complexity.CookLevin.Accept.accBound`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-bound).
 
 ## Run of the accept generator's precomputation
 
@@ -365,7 +365,7 @@ $\mathsf{Hs} = H$, $\mathsf{Gc} = g$, $\mathsf{HG} = H g$, $\mathsf{Wc} = W$, $\
 $\mathsf{K1} = k_1$, $\mathsf{Vc} = (T + 1) W$, $\mathsf{TW} = T W$,
 $\mathsf{CB} = T W + A + k_1 H g$, and every other counter empty.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.pre_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 442](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L442). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#pre-run).
+Formalized by `Cslib.Complexity.CookLevin.Accept.pre_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 442](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L442). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#pre-run).
 
 ## Correctness of the accept generator, with its explicit time bound
 
@@ -381,7 +381,7 @@ of $L$ for $n_1$, $a$, $k_1$, $e$ at $T$, $H$ followed by $o$.
 The hypotheses say that the code block fits in the label block, that $k_1$ is a stack, and that
 there is a top cell.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.acc_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 486](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L486). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-run).
+Formalized by `Cslib.Complexity.CookLevin.Accept.acc_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 486](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L486). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-run).
 
 ## The accept generator's time bound on the uniform layout
 
@@ -392,7 +392,7 @@ constants equal to $k$, with $n_1 = k_1 = k$ and $T = H = y$, is at most $314\,k
 Every monomial of the bound is at most $k^5 y^4$, and the coefficients sum to $314$, the value of
 the bound at $k = y = 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.accBound_uni`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 534](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L534). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-bound-uni).
+Formalized by `Cslib.Complexity.CookLevin.Accept.accBound_uni`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 534](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L534). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-bound-uni).
 
 ## Constant of the accept generator's time bound
 
@@ -400,7 +400,7 @@ For a layout $L$ with label block size
 $A$, $K$ stacks and $g$ symbol codes, and natural numbers $n_1$, $k_1$, the constant is
 $314\,(A + K + g + n_1 + k_1 + 1)^5$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.accC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 575](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L575). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-c).
+Formalized by `Cslib.Complexity.CookLevin.Accept.accC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 575](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L575). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-c).
 
 ## Polynomial time bound of the accept generator
 
@@ -413,7 +413,7 @@ bit list $o$ on its output stack. Within at most $c\,(T + H + 1)^4$ steps it rea
 done, with some internal state, and its output stack then holds the binary encoding of the accept
 family of $L$ for $n_1$, $a$, $k_1$, $e$ at $T$, $H$ followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.acc_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 590](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L590). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-time).
+Formalized by `Cslib.Complexity.CookLevin.Accept.acc_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 590](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L590). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-time).
 
 ## The concrete accept family is a layout-level accept family
 
@@ -425,7 +425,7 @@ $n_1 = A_0$, the number of (label, state) codes of $E$; $a$, the (label, state) 
 halted configuration (no label, initial state); $k_1$, the number $E$ gives the output stack; and
 $e$, the code of $\mathit{acc}$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.accFamily_eq`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 608](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L608). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-family-eq).
+Formalized by `Cslib.Complexity.CookLevin.Accept.accFamily_eq`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 608](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L608). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-family-eq).
 
 ## Time bound of the accept generator for a concrete machine
 
@@ -441,7 +441,7 @@ an arbitrary bit list $o$ on its output stack. Within at most $c\,(T + H + 1)^4$
 the label done, with some internal state, and its output stack then holds the binary encoding of
 the accept family of $E$ for $\mathit{acc}$ at $T$, $H$ followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Accept.acc_gen_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 613](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L613). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-gen-time).
+Formalized by `Cslib.Complexity.CookLevin.Accept.acc_gen_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Accept.lean, line 613](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Accept.lean#L613). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html#acc-gen-time).
 
 ## Depends on
 
@@ -450,4 +450,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cook-Levin: generator machine for the accept family](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-accept-fami)

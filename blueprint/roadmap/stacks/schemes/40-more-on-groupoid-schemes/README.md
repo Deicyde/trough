@@ -1,6 +1,6 @@
 # 40 More on Groupoid Schemes
 
-Chapter 40 of the Stacks Project, *More on Groupoid Schemes*, [Tag 04LA](https://stacks.math.columbia.edu/tag/04LA): the 13 sections of its 15 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 58 tags are carried by 140 declarations of the repository (all in StacksFrontier) and 1 registered declaration.
+Chapter 40 of the Stacks Project, *More on Groupoid Schemes*, [Tag 04LA](https://stacks.math.columbia.edu/tag/04LA): the 13 sections of its 15 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 58 tags are carried by 141 declarations of the repository (all in StacksFrontier) and 1 registered declaration.
 
 - [40.3 Useful diagrams](40-3-useful-diagrams.md)
 - [40.4 Sheaf of differentials](40-4-sheaf-of-differentials.md)

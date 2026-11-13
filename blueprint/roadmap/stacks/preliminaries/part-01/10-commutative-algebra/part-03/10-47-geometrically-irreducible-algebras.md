@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: irreducibleSpace_primeSpectrum_of_isOpenMap_comap, irreducibleSpace_primeSpectrum_of_flat_finitePresentation, tensorProduct_unique_minimalPrime_of_isSepClosed_right_base, AlgebraicGeometry.geometricallyIrreducible_tfae, Algebra.IsGeometricallyIrreducible, Algebra.isGeometricallyIrreducible_iff_irreducibleSpace_primeSpectrum, isGeometricallyIrreducible_of_subalgebra, isGeometricallyIrreducible_of_forall_fg
+lean: irreducibleSpace_primeSpectrum_of_isOpenMap_comap, irreducibleSpace_primeSpectrum_of_flat_finitePresentation, existsUnique_mem_minimalPrimes_tensorProduct_of_isSepClosed, irreducibleSpace_primeSpectrum_tensorProduct_of_isSepClosed, AlgebraicGeometry.geometricallyIrreducible_tfae, Algebra.IsGeometricallyIrreducible, Algebra.isGeometricallyIrreducible_iff_irreducibleSpace_primeSpectrum, isGeometricallyIrreducible_of_subalgebra
 statement: formalized
 proof: formalized
 ---
 
 # 10.47 Geometrically irreducible algebras
 
-Section 10.47 of the Stacks Project, [Tag 00I2](https://stacks.math.columbia.edu/tag/00I2). 14 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.47 of the Stacks Project, [Tag 00I2](https://stacks.math.columbia.edu/tag/00I2). 14 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00I6, a lemma
 
 [Tag 00I6](https://stacks.math.columbia.edu/tag/00I6) in the Stacks Project.
 
-**`irreducibleSpace_primeSpectrum_of_isOpenMap_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean#L122). The attribute's comment: “general form”. References: EGA IV (2.3.5), “(iii), special case”; EGA IV (4.4.2), “special case”.
+**`irreducibleSpace_primeSpectrum_of_isOpenMap_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean#L127). The attribute's comment: “general form”. References: EGA IV (2.3.5), “(iii), special case”; EGA IV (4.4.2), “special case”.
 
 > **Stacks 00I6** (algebraic form, more general statement). Let `R → S` be a
 > ring map. Assume:
@@ -37,7 +37,7 @@ theorem irreducibleSpace_primeSpectrum_of_isOpenMap_comap
     IrreducibleSpace (PrimeSpectrum S)
 ```
 
-**`irreducibleSpace_primeSpectrum_of_flat_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean#L140).
+**`irreducibleSpace_primeSpectrum_of_flat_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean#L145).
 
 > **Stacks 00I6** (flat + finite-presentation form). Let `R → S` be a flat
 > ring map of finite presentation. If `Spec R` is irreducible and the
@@ -60,33 +60,36 @@ theorem irreducibleSpace_primeSpectrum_of_flat_finitePresentation
 
 [Tag 00I7](https://stacks.math.columbia.edu/tag/00I7) in the Stacks Project.
 
-**`tensorProduct_unique_minimalPrime_of_isSepClosed_right_base`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean#L227). The attribute's comment: “Only the degenerate S = k case; the general R ⊗\_k S statement is not formalized.”.
+**`existsUnique_mem_minimalPrimes_tensorProduct_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean#L406).
 
-> **Stacks Tag 00I7 (right-factor-is-the-base-field special case).**
-> Let `k` be a field and let `R` be a `k`-algebra with a unique minimal prime.
-> Then `R ⊗_k k` has a unique minimal prime.
->
-> The full Stacks lemma asserts the same conclusion for `R ⊗_k S` for any pair
-> of `k`-algebras `R`, `S` each with a unique minimal prime; that proof requires
-> the algebraic closure of `k`, generic-fibre irreducibility for the flat
-> finite-type map `R → R ⊗_k S` (Hilbert Nullstellensatz, Jacobson), and a limit
-> argument over finitely generated subalgebras.
->
-> Only the degenerate `S = k` case is formalized here, and it does not use
-> separable closedness of `k`: it is `Algebra.TensorProduct.rid` transported along
-> `unique_minimalPrime_of_ringEquiv`. Accordingly no `[IsSepClosed k]` hypothesis
-> is assumed, and the `@[stacks 00I7]` attribute is qualified -- **tag 00I7 is
-> still open** in the generality Stacks states.
+> **Stacks Tag 00I7.** Let `k` be a separably closed field and let `R`, `S` be
+> `k`-algebras. If `R` and `S` each have a unique minimal prime, then so does `R ⊗_k S`.
 
 ```lean
-alias tensorProduct_unique_minimalPrime_of_isSepClosed_right_base
+theorem existsUnique_mem_minimalPrimes_tensorProduct_of_isSepClosed (k : Type*) [Field k]
+    [IsSepClosed k] (R S : Type*) [CommRing R] [CommRing S] [Algebra k R] [Algebra k S]
+    (hR : ∃! p : Ideal R, p ∈ minimalPrimes R) (hS : ∃! p : Ideal S, p ∈ minimalPrimes S) :
+    ∃! p : Ideal (R ⊗[k] S), p ∈ minimalPrimes (R ⊗[k] S)
+```
+
+**`irreducibleSpace_primeSpectrum_tensorProduct_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean#L430). The attribute's comment: “in terms of irreducibility of spectra”.
+
+> **Stacks Tag 00I7**, in terms of spectra. Let `k` be a separably closed field and let `R`,
+> `S` be `k`-algebras whose spectra are irreducible. Then the spectrum of `R ⊗_k S` is
+> irreducible.
+
+```lean
+theorem irreducibleSpace_primeSpectrum_tensorProduct_of_isSepClosed (k : Type*) [Field k]
+    [IsSepClosed k] (R S : Type*) [CommRing R] [CommRing S] [Algebra k R] [Algebra k S]
+    [IrreducibleSpace (PrimeSpectrum R)] [IrreducibleSpace (PrimeSpectrum S)] :
+    IrreducibleSpace (PrimeSpectrum (R ⊗[k] S))
 ```
 
 ## Tag 037K, a lemma
 
 [Tag 037K](https://stacks.math.columbia.edu/tag/037K) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyIrreducible_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Criteria.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/Criteria.lean#L403).
+**`AlgebraicGeometry.geometricallyIrreducible_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Criteria.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/Criteria.lean#L406).
 
 > **Stacks 037K.** Let `k` be a field, `R` a commutative `k`-algebra, `k^{sep}` a separable
 > closure of `k` and `k̄` an algebraic closure of `k`. The following are equivalent:
@@ -113,7 +116,7 @@ public theorem AlgebraicGeometry.geometricallyIrreducible_tfae (k R : Type u) [F
 
 [Tag 037L](https://stacks.math.columbia.edu/tag/037L) in the Stacks Project.
 
-**`Algebra.IsGeometricallyIrreducible`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Defs.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/Defs.lean#L133). References: EGA IV (4.5.2), “special case”; EGA IV (4.5.9).
+**`Algebra.IsGeometricallyIrreducible`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Defs.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/Defs.lean#L133). References: EGA IV (4.5.2), “special case”; EGA IV (4.5.9).
 
 > A `k`-algebra `S` is **geometrically irreducible over `k`** if every base change of
 > `Spec S ⟶ Spec k` along a field-valued point of `Spec k` is an irreducible space, equivalently
@@ -130,7 +133,7 @@ public abbrev Algebra.IsGeometricallyIrreducible (k S : Type u) [Field k] [CommR
 
 [Tag 037M](https://stacks.math.columbia.edu/tag/037M) in the Stacks Project.
 
-**`Algebra.isGeometricallyIrreducible_iff_irreducibleSpace_primeSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Criteria.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/Criteria.lean#L528).
+**`Algebra.isGeometricallyIrreducible_iff_irreducibleSpace_primeSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Criteria.lean, line 531](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/Criteria.lean#L531).
 
 > **Stacks 037M.** Let `k` be a separably algebraically closed field and let `R` be a
 > `k`-algebra. Then `R` is geometrically irreducible over `k` if and only if the spectrum of `R`
@@ -146,7 +149,7 @@ public theorem Algebra.isGeometricallyIrreducible_iff_irreducibleSpace_primeSpec
 
 [Tag 037N](https://stacks.math.columbia.edu/tag/037N) in the Stacks Project.
 
-**`isGeometricallyIrreducible_of_subalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Subalgebra.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/Subalgebra.lean#L189). The attribute's comment: “(1)”.
+**`isGeometricallyIrreducible_of_subalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Subalgebra.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/Subalgebra.lean#L189). The attribute's comment: “(1)”.
 
 > **Statement 1 (Subalgebras).** If `S` is geometrically irreducible over `k`, then
 > every `k`-subalgebra `S' ⊆ S` is geometrically irreducible over `k`.
@@ -159,7 +162,7 @@ theorem isGeometricallyIrreducible_of_subalgebra
     Algebra.IsGeometricallyIrreducible k S'
 ```
 
-**`isGeometricallyIrreducible_of_forall_fg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Subalgebra.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/Subalgebra.lean#L278). The attribute's comment: “(2)”.
+**`isGeometricallyIrreducible_of_forall_fg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Subalgebra.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/Subalgebra.lean#L278). The attribute's comment: “(2)”.
 
 > **Statement 2 (Detection by finitely generated subalgebras).** If every finitely
 > generated `k`-subalgebra of `S` is geometrically irreducible over `k`, then `S` is
@@ -179,7 +182,7 @@ theorem isGeometricallyIrreducible_of_forall_fg
     Algebra.IsGeometricallyIrreducible k S
 ```
 
-**`isGeometricallyIrreducible_directLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Subalgebra.lean, line 708](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/Subalgebra.lean#L708). The attribute's comment: “(3)”.
+**`isGeometricallyIrreducible_directLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Subalgebra.lean, line 706](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/Subalgebra.lean#L706). The attribute's comment: “(3)”.
 
 > **Statement 3 (Directed colimits).** A directed colimit of geometrically
 > irreducible `k`-algebras is geometrically irreducible over `k`.
@@ -214,7 +217,7 @@ theorem isGeometricallyIrreducible_directLimit
 
 [Tag 037O](https://stacks.math.columbia.edu/tag/037O) in the Stacks Project.
 
-**`Algebra.IsGeometricallyIrreducible.bijOn_irreducibleComponents_primeSpectrum_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/IrreducibleComponents.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/IrreducibleComponents.lean#L190).
+**`Algebra.IsGeometricallyIrreducible.bijOn_irreducibleComponents_primeSpectrum_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/IrreducibleComponents.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/IrreducibleComponents.lean#L190).
 
 > **Stacks 037O.** Let `k` be a field, let `S` be a geometrically irreducible `k`-algebra and
 > let `R` be any `k`-algebra. Then the map `Spec (R ⊗[k] S) → Spec R` induced by `r ↦ r ⊗ₜ 1`
@@ -235,7 +238,7 @@ public theorem
 
 [Tag 037P](https://stacks.math.columbia.edu/tag/037P) in the Stacks Project.
 
-**`Algebra.IsGeometricallyIrreducible.of_algebraicClosure_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Tower.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/Tower.lean#L190).
+**`Algebra.IsGeometricallyIrreducible.of_algebraicClosure_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Tower.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/Tower.lean#L192).
 
 > Let `K/k` be a field extension. If `k` is algebraically closed in `K`, that is, if the relative
 > algebraic closure `algebraicClosure k K` is trivial, then `K` is geometrically irreducible over
@@ -251,7 +254,7 @@ public theorem Algebra.IsGeometricallyIrreducible.of_algebraicClosure_eq_bot (k 
 
 [Tag 0G30](https://stacks.math.columbia.edu/tag/0G30) in the Stacks Project.
 
-**`Algebra.IsGeometricallyIrreducible.trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Tower.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/Tower.lean#L96).
+**`Algebra.IsGeometricallyIrreducible.trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Tower.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/Tower.lean#L98).
 
 > Let `K/k` be a geometrically irreducible field extension and let `S` be a geometrically
 > irreducible `K`-algebra. Then `S` is geometrically irreducible over `k`.
@@ -267,7 +270,7 @@ public theorem Algebra.IsGeometricallyIrreducible.trans (k K S : Type u) [Field 
 
 [Tag 0G31](https://stacks.math.columbia.edu/tag/0G31) in the Stacks Project.
 
-**`AlgebraicGeometry.GeometricallyIrreducible.iff_ratFunc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/AdjoinTranscendental.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/AdjoinTranscendental.lean#L179).
+**`AlgebraicGeometry.GeometricallyIrreducible.iff_ratFunc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/AdjoinTranscendental.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/AdjoinTranscendental.lean#L179).
 
 > An extension of fields `K/k` is geometrically irreducible if and only if the induced extension
 > `K(X)/k(X)` of purely transcendental extensions in one variable is geometrically irreducible.
@@ -283,7 +286,7 @@ public theorem AlgebraicGeometry.GeometricallyIrreducible.iff_ratFunc (k K : Typ
 
 [Tag 0G32](https://stacks.math.columbia.edu/tag/0G32) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyIrreducible_specMap_adjoin_of_transcendental`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/AdjoinTranscendental.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/AdjoinTranscendental.lean#L370).
+**`AlgebraicGeometry.geometricallyIrreducible_specMap_adjoin_of_transcendental`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/AdjoinTranscendental.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/AdjoinTranscendental.lean#L370).
 
 > Let `K/L/M` be a tower of fields with `L` geometrically irreducible over `M`, and let
 > `x : K` be transcendental over `L`. Then `L(x)` is geometrically irreducible over `M(x)`,
@@ -304,7 +307,7 @@ public theorem AlgebraicGeometry.geometricallyIrreducible_specMap_adjoin_of_tran
 
 [Tag 0G33](https://stacks.math.columbia.edu/tag/0G33) in the Stacks Project.
 
-**`separableClosure.eq_bot_iff_geometricallyIrreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Tower.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/Tower.lean#L328).
+**`separableClosure.eq_bot_iff_geometricallyIrreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Tower.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/Tower.lean#L330).
 
 > Let `K/k` be an extension of fields. The separable closure of `k` in `K` is trivial — every
 > element of `K` separably algebraic over `k` lies in `k` — if and only if `K` is geometrically
@@ -320,7 +323,7 @@ public theorem separableClosure.eq_bot_iff_geometricallyIrreducible (k K : Type 
 
 [Tag 037Q](https://stacks.math.columbia.edu/tag/037Q) in the Stacks Project.
 
-**`part2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/SeparableClosure/SeparableTensor.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/SeparableClosure/SeparableTensor.lean#L287). The attribute's comment: “(2)”.
+**`part2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/SeparableClosure/SeparableTensor.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/SeparableClosure/SeparableTensor.lean#L287). The attribute's comment: “(2)”.
 
 > Statement 2 (Finiteness of `[k' : k]`). If `K/k` is a finitely generated field extension
 > (Definition 4 — finite generation as a field, encoded by `(⊤ : IntermediateField k K).FG`),
@@ -332,23 +335,25 @@ theorem part2 (k K : Type*) [Field k] [Field K] [Algebra k K]
     Module.Finite k (separableClosure k K)
 ```
 
-**`part1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/SeparableClosure/SeparablyClosedBase.lean, line 806](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/SeparableClosure/SeparablyClosedBase.lean#L806). The attribute's comment: “(1)”. References: EGA IV (4.3.2), “special case”; EGA IV (4.3.3), “special case”; EGA IV (4.4.4), “special case”; EGA IV (4.5.21), “special case”.
+**`separableClosure.isGeometricallyIrreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/Tower.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/Tower.lean#L341). The attribute's comment: “(1): `K` is geometrically irreducible over `k'`, in the 037L sense”.
 
-> Statement 1 (Geometric irreducibility over `k'`). `K` is geometrically irreducible over `k' =
-> separableClosure k K`: for every field extension `L/k'` the spectrum `Spec(K ⊗\_\{k'} L)` is
-> irreducible.
+> Let `K/k` be a field extension and let `k' = separableClosure k K` be the subextension of
+> elements of `K` separably algebraic over `k`. Then `K` is geometrically irreducible over `k'`,
+> in the sense of Stacks 037L (`Algebra.IsGeometricallyIrreducible`, test fields in the universe
+> of `K`). The proof is the source's: an element of `K` separably algebraic over `k'` is separably
+> algebraic over `k` by transitivity, so lies in `k'`, and the criterion 0G33 applies.
 
 ```lean
-theorem part1 (k K : Type*) [Field k] [Field K] [Algebra k K] :
-    ∀ (L : Type) [Field L] [Algebra (separableClosure k K) L],
-      IrreducibleSpace (PrimeSpectrum (K ⊗[separableClosure k K] L))
+public theorem separableClosure.isGeometricallyIrreducible (k : Type*) (K : Type u) [Field k]
+    [Field K] [Algebra k K] :
+    Algebra.IsGeometricallyIrreducible (separableClosure k K) K
 ```
 
 ## Tag 04KP, a lemma
 
 [Tag 04KP](https://stacks.math.columbia.edu/tag/04KP) in the Stacks Project.
 
-**`gal_acts_transitively_on_primes_of_isGalois`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/GaloisAction.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/GaloisAction.lean#L317). References: SGA 1 V (1.1), “(ii), special case”.
+**`gal_acts_transitively_on_primes_of_isGalois`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/GaloisAction.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIrreducible/GaloisAction.lean#L317). References: SGA 1 V (1.1), “(ii), special case”.
 
 > Statement 1 (Stacks Tag 04KP). The Galois group `Gal(kbar/k)` of a Galois extension
 > `kbar/k` acts transitively on the primes of `kbar ⊗[k] K`: for every pair of prime ideals
@@ -375,4 +380,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.47, Tag 00I2](https://stacks.math.columbia.edu/tag/00I2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

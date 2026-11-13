@@ -8,7 +8,7 @@ proof: formalized
 
 # Computation tree logic
 
-31 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html).
+31 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html).
 
 ## CTL
 
@@ -24,28 +24,28 @@ universal until $\mathsf{A}[\varphi\,\mathsf{U}\,\psi]$.
 The universal until is primitive rather than the classical translation through $\mathsf{EU}$
 and $\mathsf{EG}$, which is unsound on transition systems with deadlocked states.
 
-Formalized by `Cslib.CTL.Formula`, an inductive type declared in [CSLibExt/Logics/CTL/Basic.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#formula).
+Formalized by `Cslib.CTL.Formula`, an inductive type declared in [CSLibExt/Logics/CTL/Basic.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#formula).
 
 ## Falsity in CTL
 
 The CTL formula $\bot$ (falsity) is the negation $\neg\top$ of the formula
 $\top$ (truth).
 
-Formalized by `Cslib.CTL.Formula.bot`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#bot).
+Formalized by `Cslib.CTL.Formula.bot`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#bot).
 
 ## CTL disjunction
 
 For CTL formulas $\varphi$ and $\psi$, the disjunction
 $\varphi \lor \psi$ is defined as $\neg(\neg\varphi \land \neg\psi)$.
 
-Formalized by `Cslib.CTL.Formula.or`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#or).
+Formalized by `Cslib.CTL.Formula.or`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#or).
 
 ## CTL implication
 
 For CTL formulas $\varphi$ and $\psi$, the implication
 $\varphi \to \psi$ is defined as the disjunction $\neg\varphi \lor \psi$.
 
-Formalized by `Cslib.CTL.Formula.imp`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#imp).
+Formalized by `Cslib.CTL.Formula.imp`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#imp).
 
 ## CTL bi-implication
 
@@ -53,7 +53,7 @@ For CTL formulas $\varphi$ and $\psi$, the bi-implication
 $\varphi \leftrightarrow \psi$ is defined as the conjunction $(\varphi \to \psi) \land
 (\psi \to \varphi)$ of the two implications.
 
-Formalized by `Cslib.CTL.Formula.iff`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#iff).
+Formalized by `Cslib.CTL.Formula.iff`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#iff).
 
 ## Exists finally
 
@@ -63,7 +63,7 @@ existential until $\mathsf{E}[\top \mathbin{\mathsf{U}} \varphi]$ with $\top$ on
 A state satisfies $\mathsf{EF}\,\varphi$ exactly when some state reachable from it satisfies
 $\varphi$.
 
-Formalized by `Cslib.CTL.Formula.existsFinally`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-finally).
+Formalized by `Cslib.CTL.Formula.existsFinally`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-finally).
 
 ## The CTL operator $\mathsf{AX}$
 
@@ -74,14 +74,14 @@ $\neg\,\mathsf{EX}\,\neg\varphi$.
 It holds at a state exactly when every successor of that state satisfies $\varphi$, so it holds
 vacuously at a deadlocked state.
 
-Formalized by `Cslib.CTL.Formula.forallNext`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-next).
+Formalized by `Cslib.CTL.Formula.forallNext`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-next).
 
 ## The CTL operator AF (inevitably)
 
 `AF φ`: every maximal path reaches a state satisfying `φ`, as
 `A[⊤ U φ]`.
 
-Formalized by `Cslib.CTL.Formula.forallFinally`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-finally).
+Formalized by `Cslib.CTL.Formula.forallFinally`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-finally).
 
 ## The CTL operator $\mathrm{AG}$
 
@@ -89,7 +89,7 @@ For a CTL formula $\varphi$, the formula
 $\mathrm{AG}\,\varphi$ is $\neg\,\mathrm{EF}\,\neg\varphi$. It holds at a state exactly when
 every state reachable from it satisfies $\varphi$.
 
-Formalized by `Cslib.CTL.Formula.forallGlobally`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-globally).
+Formalized by `Cslib.CTL.Formula.forallGlobally`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-globally).
 
 ## Satisfaction of CTL formulas
 
@@ -107,7 +107,7 @@ with $j < k$, and second, every finite run $s = s_0, s_1, \dots, s_k$ whose last
 no outgoing transition under any label has some $j \le k$ with $\psi$ at $s_j$ and $\varphi$ at
 every $s_i$ with $i < j$.
 
-Formalized by `Cslib.CTL.Satisfies`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#satisfies).
+Formalized by `Cslib.CTL.Satisfies`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#satisfies).
 
 ## Existential predecessor operator
 
@@ -116,7 +116,7 @@ on its states, a state $s$ satisfies $\mathrm{Pre}_\exists(Z)$ when some success
 satisfies $Z$: there are a label $a$ and a state $t$ satisfying $Z$ with a transition from $s$
 to $t$ labelled $a$.
 
-Formalized by `Cslib.CTL.PreExists`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#pre-exists).
+Formalized by `Cslib.CTL.PreExists`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#pre-exists).
 
 ## Serial transition systems
 
@@ -126,7 +126,7 @@ $t$ labelled $a$.
 
 A serial system has no deadlocked states, and every maximal path in it is infinite.
 
-Formalized by `Cslib.CTL.Serial`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#serial).
+Formalized by `Cslib.CTL.Serial`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#serial).
 
 ## Finite runs extend to infinite runs in serial systems
 
@@ -136,7 +136,7 @@ $s'_0, s'_1, s'_2, \dots$ with $s'_i = s_i$ for every $i \le k$.
 
 The extension iterates a chosen successor function from $s_k$, so it uses the axiom of choice.
 
-Formalized by `Cslib.CTL.exists_omegaRun_extending_of_serial`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-omega-run-extending-of-serial).
+Formalized by `Cslib.CTL.exists_omegaRun_extending_of_serial`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-omega-run-extending-of-serial).
 
 ## $\mathsf{EF}$ via finite runs
 
@@ -145,7 +145,7 @@ system with a valuation of the atoms at its states, a state $s$ satisfies $\math
 and only if there are a sequence of states $s_0, s_1, s_2, \dots$ with $s_0 = s$ and a natural
 number $k$ such that the sequence is a finite run of length $k$ and $s_k$ satisfies $\varphi$.
 
-Formalized by `Cslib.CTL.Satisfies.existsFinally_iff`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-finally-iff).
+Formalized by `Cslib.CTL.Satisfies.existsFinally_iff`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-finally-iff).
 
 ## One-step expansion of $\mathrm{EU}$
 
@@ -155,7 +155,7 @@ $\mathrm{E}[\varphi \mathbin{\mathrm{U}} \psi]$ if and only if either $s$ satisf
 $s$ satisfies $\varphi$ and some successor of $s$ satisfies
 $\mathrm{E}[\varphi \mathbin{\mathrm{U}} \psi]$.
 
-Formalized by `Cslib.CTL.Satisfies.existsUntil_expansion`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-until-expansion).
+Formalized by `Cslib.CTL.Satisfies.existsUntil_expansion`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-until-expansion).
 
 ## $\mathsf{EF}$ means reachability
 
@@ -164,7 +164,7 @@ system with a valuation of the atoms at its states, a state $s$ satisfies $\math
 and only if some state $t$ reachable from $s$ by a finite, possibly empty, sequence of transitions
 satisfies $\varphi$.
 
-Formalized by `Cslib.CTL.Satisfies.existsFinally_iff_reachable`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-finally-iff-reachable).
+Formalized by `Cslib.CTL.Satisfies.existsFinally_iff_reachable`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-finally-iff-reachable).
 
 ## $\mathrm{AG}$ holds iff every reachable state satisfies the formula
 
@@ -173,7 +173,7 @@ CTL formula and $s$ a state of a labelled transition system with a valuation of 
 Then $s$ satisfies $\mathrm{AG}\,\varphi$ if and only if every state $t$ reachable from $s$
 (through a finite sequence of transitions, possibly empty) satisfies $\varphi$.
 
-Formalized by `Cslib.CTL.Satisfies.forallGlobally_iff_reachable`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-globally-iff-reachable).
+Formalized by `Cslib.CTL.Satisfies.forallGlobally_iff_reachable`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-globally-iff-reachable).
 
 ## Characterization of $\mathsf{AX}$
 
@@ -182,7 +182,7 @@ with an atom valuation, and let $\varphi$ be a CTL formula. Then $s$ satisfies
 $\mathsf{AX}\,\varphi$ if and only if every state $t$ with a transition from $s$ to $t$, under
 any label, satisfies $\varphi$.
 
-Formalized by `Cslib.CTL.Satisfies.forallNext_iff`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-next-iff).
+Formalized by `Cslib.CTL.Satisfies.forallNext_iff`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-next-iff).
 
 ## Maximal-path form of $\mathrm{AF}$
 
@@ -193,7 +193,7 @@ $s_0, s_1, s_2, \dots$ with $s_0 = s$ there is some $k$ such that $s_k$ satisfie
 for every finite run $s_0, s_1, s_2, \dots$ of length $k$ with $s_0 = s$ whose endpoint $s_k$
 has no outgoing transition, there is some $j \le k$ such that $s_j$ satisfies $\varphi$.
 
-Formalized by `Cslib.CTL.Satisfies.forallFinally_iff_omega_and_finite`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-finally-iff-omega-and-finite).
+Formalized by `Cslib.CTL.Satisfies.forallFinally_iff_omega_and_finite`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-finally-iff-omega-and-finite).
 
 ## $\mathsf{A}(\varphi\,\mathsf{U}\,\psi)$ at a deadlocked state
 
@@ -205,7 +205,7 @@ satisfies $\mathsf{A}[\varphi\,\mathsf{U}\,\psi]$ if and only if $s$ satisfies $
 The infinite-run condition is vacuous, since an infinite run needs a step at index $0$, and the
 constant finite run of length $0$ forces $\psi$ at $s$ itself.
 
-Formalized by `Cslib.CTL.Satisfies.forallUntil_deadlock`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-until-deadlock).
+Formalized by `Cslib.CTL.Satisfies.forallUntil_deadlock`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-until-deadlock).
 
 ## $\mathrm{AF}$ at a deadlocked state
 
@@ -213,7 +213,7 @@ Let $\varphi$ be a CTL formula and $s$ a state of a
 labelled transition system with a valuation of the atoms. If $s$ has no outgoing transition,
 then $s$ satisfies $\mathrm{AF}\,\varphi$ if and only if $s$ satisfies $\varphi$.
 
-Formalized by `Cslib.CTL.Satisfies.forallFinally_deadlock`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-finally-deadlock).
+Formalized by `Cslib.CTL.Satisfies.forallFinally_deadlock`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-finally-deadlock).
 
 ## On serial systems $\mathrm{AF}$ is $\neg\mathrm{EG}\,\neg$
 
@@ -225,7 +225,7 @@ $\mathrm{EG}\,\neg\varphi$.
 A serial system has no deadlocked states, so every maximal path is infinite and $\mathrm{AF}$
 recovers its classical form.
 
-Formalized by `Cslib.CTL.Satisfies.forallFinally_iff_not_existsGlobally_not_of_serial`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-finally-iff-not-exists-globally-n).
+Formalized by `Cslib.CTL.Satisfies.forallFinally_iff_not_existsGlobally_not_of_serial`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-finally-iff-not-exists-globally-n).
 
 ## Classical form of $\mathsf{A}(\varphi\,\mathsf{U}\,\psi)$ on serial systems
 
@@ -241,7 +241,7 @@ The forward direction extends an $\mathsf{EU}$ witness to an infinite run; the b
 direction takes, on each infinite run, the least $\psi$-position and derives an $\mathsf{EU}$
 witness from any earlier $\neg\varphi$-position.
 
-Formalized by `Cslib.CTL.Satisfies.forallUntil_iff_classical_of_serial`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 481](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L481). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-until-iff-classical-of-serial).
+Formalized by `Cslib.CTL.Satisfies.forallUntil_iff_classical_of_serial`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 481](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L481). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#forall-until-iff-classical-of-serial).
 
 ## One-step expansion of $\mathsf{EF}$
 
@@ -251,7 +251,7 @@ $\mathsf{EF}\,\varphi$ if and only if $s$ satisfies $\varphi$ or $s$ satisfies
 $\mathsf{EX}\,\mathsf{EF}\,\varphi$, that is, some successor of $s$ satisfies
 $\mathsf{EF}\,\varphi$.
 
-Formalized by `Cslib.CTL.Satisfies.existsFinally_expansion`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-finally-expansion).
+Formalized by `Cslib.CTL.Satisfies.existsFinally_expansion`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-finally-expansion).
 
 ## One-step expansion of $\mathsf{EG}$
 
@@ -263,7 +263,7 @@ $\mathsf{EG}\,\varphi$.
 
 Both directions are direct manipulations of infinite runs; no choice is needed.
 
-Formalized by `Cslib.CTL.Satisfies.existsGlobally_expansion`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 554](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L554). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-globally-expansion).
+Formalized by `Cslib.CTL.Satisfies.existsGlobally_expansion`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 554](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L554). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-globally-expansion).
 
 ## The $\mathsf{EF}$ functional
 
@@ -273,7 +273,7 @@ of states that satisfy $\varphi$ or have some successor in $Z$.
 
 Its least fixed point is the set of states satisfying $\mathsf{EF}\,\varphi$.
 
-Formalized by `Cslib.CTL.Satisfies.existsFinallyFun`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-finally-fun).
+Formalized by `Cslib.CTL.Satisfies.existsFinallyFun`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-finally-fun).
 
 ## The $\mathsf{EF}$ operator
 
@@ -282,7 +282,7 @@ its states, and a CTL formula $\varphi$, this is the monotone operator on sets o
 inclusion, sending a set $Z$ to the set of states that satisfy $\varphi$ or have some successor in
 $Z$.
 
-Formalized by `Cslib.CTL.Satisfies.existsFinallyOrderHom`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 596](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L596). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-finally-order-hom).
+Formalized by `Cslib.CTL.Satisfies.existsFinallyOrderHom`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 596](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L596). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-finally-order-hom).
 
 ## The functional for $\mathrm{EG}$
 
@@ -294,7 +294,7 @@ labelled $a$ such that $Z$ holds at $t$.
 
 Its greatest fixed point is the set of states satisfying $\mathrm{EG}\,\varphi$.
 
-Formalized by `Cslib.CTL.Satisfies.existsGloballyFun`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 607](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L607). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-globally-fun).
+Formalized by `Cslib.CTL.Satisfies.existsGloballyFun`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 607](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L607). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-globally-fun).
 
 ## The $\mathrm{EG}$ functional as a monotone operator
 
@@ -303,7 +303,7 @@ a valuation of the atoms and a CTL formula $\varphi$, this is the monotone map o
 states, ordered pointwise by implication, that sends a predicate $Z$ to the predicate holding at
 a state $s$ when $s$ satisfies $\varphi$ and some successor of $s$ satisfies $Z$.
 
-Formalized by `Cslib.CTL.Satisfies.existsGloballyOrderHom`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 620](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L620). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-globally-order-hom).
+Formalized by `Cslib.CTL.Satisfies.existsGloballyOrderHom`, a definition declared in [CSLibExt/Logics/CTL/Basic.lean, line 620](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L620). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-globally-order-hom).
 
 ## $\mathsf{EF}$ is a least fixed point
 
@@ -317,7 +317,7 @@ The fixed point is contained in $\mathsf{EF}\,\varphi$ by Park induction, using 
 expansion of $\mathsf{EF}$; the converse is induction on a path to a $\varphi$-state, unfolding the
 fixed point once per step.
 
-Formalized by `Cslib.CTL.Satisfies.existsFinally_eq_lfp`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 634](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L634). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-finally-eq-lfp).
+Formalized by `Cslib.CTL.Satisfies.existsFinally_eq_lfp`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 634](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L634). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-finally-eq-lfp).
 
 ## $\mathsf{EG}$ is a greatest fixed point
 
@@ -332,7 +332,7 @@ The inclusion of $\mathsf{EG}\,\varphi$ in the fixed point is coinduction, using
 expansion of $\mathsf{EG}$. The converse builds an infinite run by repeatedly choosing a successor
 inside the fixed point, so it uses the axiom of choice.
 
-Formalized by `Cslib.CTL.Satisfies.existsGlobally_eq_gfp`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 665](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/CTL/Basic.lean#L665). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-globally-eq-gfp).
+Formalized by `Cslib.CTL.Satisfies.existsGlobally_eq_gfp`, a theorem declared in [CSLibExt/Logics/CTL/Basic.lean, line 665](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/CTL/Basic.lean#L665). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html#exists-globally-eq-gfp).
 
 ## Depends on
 
@@ -341,4 +341,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Computation tree logic](https://deicyde.github.io/atlas-lean/roadmap/Logic/temporal-logic/computation-tree-logic/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Logic/temporal-logic/computation-tree-logic)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Logic/temporal-logic/computation-tree-logic)

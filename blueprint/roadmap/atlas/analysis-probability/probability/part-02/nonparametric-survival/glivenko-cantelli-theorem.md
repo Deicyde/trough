@@ -8,7 +8,7 @@ proof: formalized
 
 # Glivenko–Cantelli theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/nonparametric-survival/glivenko-cantelli-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/nonparametric-survival/glivenko-cantelli-theorem/index.html).
 
 ## Empirical count
 
@@ -17,7 +17,7 @@ For a natural number $n$, a point $\omega \in \Omega$ and a real number $x$, the
 the number of indices $i \in \{0, 1, \dots, n\}$ with $X_i(\omega) \le x$. Divided by $n + 1$, it
 is the value at $x$ of the empirical distribution function of $X_0(\omega), \dots, X_n(\omega)$.
 
-Formalized by `MathlibExt.Probability.Statistics.GlivenkoCantelliWanted.empiricalCount`, a definition declared in [MathlibExt/Probability/Statistics/GlivenkoCantelli.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/GlivenkoCantelli.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/nonparametric-survival/glivenko-cantelli-theorem/index.html#empirical-count).
+Formalized by `MathlibExt.Probability.Statistics.GlivenkoCantelliWanted.empiricalCount`, a definition declared in [MathlibExt/Probability/Statistics/GlivenkoCantelli.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/GlivenkoCantelli.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/nonparametric-survival/glivenko-cantelli-theorem/index.html#empirical-count).
 
 ## Glivenko–Cantelli theorem
 
@@ -38,7 +38,7 @@ uniformly on $\mathbb{R}$.
 
 - V. Glivenko, Sulla determinazione empirica delle leggi di probabilita, Giorn. Ist. Ital. Attuari 4 (1933) 92–99; F. Cantelli 1933; textbook in Durrett, Probability Theory and Examples, 5th ed., Probability and Measure
 
-Formalized by `MathlibExt.Probability.Statistics.GlivenkoCantelliWanted.glivenko_cantelli`, a theorem declared in [MathlibExt/Probability/Statistics/GlivenkoCantelli.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/GlivenkoCantelli.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/nonparametric-survival/glivenko-cantelli-theorem/index.html#glivenko-cantelli).
+Formalized by `MathlibExt.Probability.Statistics.GlivenkoCantelliWanted.glivenko_cantelli`, a theorem declared in [MathlibExt/Probability/Statistics/GlivenkoCantelli.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/GlivenkoCantelli.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/nonparametric-survival/glivenko-cantelli-theorem/index.html#glivenko-cantelli).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Glivenko–Cantelli theorem](https://deicyde.github.io/atlas-lean/roadmap/Probability/nonparametric-survival/glivenko-cantelli-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/nonparametric-survival/glivenko-cantelli-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/nonparametric-survival/glivenko-cantelli-theorem)

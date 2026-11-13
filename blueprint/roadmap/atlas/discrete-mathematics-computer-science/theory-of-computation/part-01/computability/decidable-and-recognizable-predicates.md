@@ -8,7 +8,7 @@ proof: formalized
 
 # Decidable and recognizable predicates
 
-35 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html).
+35 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html).
 
 ## Computable predicates are closed under conjunction
 
@@ -16,7 +16,7 @@ Let $\alpha$ be a type with a
 primitive recursive encoding into $\mathbb{N}$. If $p$ and $q$ are computable predicates on
 $\alpha$, then the predicate $a \mapsto p(a) \land q(a)$ is computable.
 
-Formalized by `MetaMathlibExt.ComputablePred.and`, a theorem declared in [MathlibExt/Computability/RE.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/RE.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#and).
+Formalized by `MetaMathlibExt.ComputablePred.and`, a theorem declared in [MathlibExt/Computability/RE.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/RE.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#and).
 
 ## Computable predicates are closed under disjunction
 
@@ -24,7 +24,7 @@ Let $\alpha$ be a type with a
 primitive recursive encoding into $\mathbb{N}$. If $p$ and $q$ are computable predicates on
 $\alpha$, then the predicate $a \mapsto p(a) \lor q(a)$ is computable.
 
-Formalized by `MetaMathlibExt.ComputablePred.or`, a theorem declared in [MathlibExt/Computability/RE.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/RE.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#or).
+Formalized by `MetaMathlibExt.ComputablePred.or`, a theorem declared in [MathlibExt/Computability/RE.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/RE.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#or).
 
 ## Recursively enumerable predicates are closed under conjunction
 
@@ -34,7 +34,7 @@ predicates on $\alpha$, then the predicate $a \mapsto p(a) \land q(a)$ is recurs
 
 The proof runs one semi-decision procedure, then the other.
 
-Formalized by `MetaMathlibExt.REPred.and`, a theorem declared in [MathlibExt/Computability/RE.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/RE.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#and-2).
+Formalized by `MetaMathlibExt.REPred.and`, a theorem declared in [MathlibExt/Computability/RE.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/RE.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#and-2).
 
 ## Recursively enumerable predicates are closed under disjunction
 
@@ -44,7 +44,7 @@ predicates on $\alpha$, then the predicate $a \mapsto p(a) \lor q(a)$ is recursi
 
 The proof runs both semi-decision procedures in parallel.
 
-Formalized by `MetaMathlibExt.REPred.or`, a theorem declared in [MathlibExt/Computability/RE.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/RE.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#or-2).
+Formalized by `MetaMathlibExt.REPred.or`, a theorem declared in [MathlibExt/Computability/RE.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/RE.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#or-2).
 
 ## Bounded existential quantification preserves recursive enumerability
 
@@ -58,7 +58,7 @@ enumerable.
 The proof is by dovetailing: it searches for a step bound $k$ at which the simulation of the
 semi-decision procedure for $R$ halts on $(a, b)$ for some $b$ in $c(a)$.
 
-Formalized by `MetaMathlibExt.REPred.exists_mem`, a theorem declared in [MathlibExt/Computability/RE.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/RE.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#exists-mem).
+Formalized by `MetaMathlibExt.REPred.exists_mem`, a theorem declared in [MathlibExt/Computability/RE.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/RE.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#exists-mem).
 
 ## Bounded universal quantification preserves recursive enumerability
 
@@ -72,7 +72,7 @@ enumerable.
 The proof searches for one step bound $k$ at which the simulation of the semi-decision procedure
 for $R$ halts on $(a, b)$ for every $b$ in $c(a)$; the step-bounded simulation is monotone in $k$.
 
-Formalized by `MetaMathlibExt.REPred.forall_mem`, a theorem declared in [MathlibExt/Computability/RE.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/RE.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#forall-mem).
+Formalized by `MetaMathlibExt.REPred.forall_mem`, a theorem declared in [MathlibExt/Computability/RE.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/RE.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#forall-mem).
 
 ## Searching a computable list with a computable test is computable
 
@@ -85,7 +85,7 @@ $l(x)$ is computable.
 
 The proof scans the indices of $l(x)$ by primitive recursion.
 
-Formalized by `MetaMathlibExt.computable_list_any`, a theorem declared in [MathlibExt/Computability/RE.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/RE.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#computable-list-any).
+Formalized by `MetaMathlibExt.computable_list_any`, a theorem declared in [MathlibExt/Computability/RE.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/RE.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#computable-list-any).
 
 ## Selection for r.e. relations
 
@@ -99,7 +99,7 @@ satisfies $R(a, b)$.
 The proof searches over pairs of a candidate $b$ and a step bound by dovetailing with the
 step-bounded simulation of the semi-decision procedure for $R$.
 
-Formalized by `MetaMathlibExt.REPred.exists_partrec_choose`, a theorem declared in [MathlibExt/Computability/RE.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/RE.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#exists-partrec-choose).
+Formalized by `MetaMathlibExt.REPred.exists_partrec_choose`, a theorem declared in [MathlibExt/Computability/RE.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/RE.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#exists-partrec-choose).
 
 ## Existential projection preserves recursive enumerability
 
@@ -110,7 +110,7 @@ predicate $a \mapsto \exists b \in \beta,\ R(a, b)$ is recursively enumerable.
 
 The predicate is the domain of the partial recursive function that selects a witness of $R$.
 
-Formalized by `MetaMathlibExt.REPred.exists`, a theorem declared in [MathlibExt/Computability/RE.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/RE.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#exists).
+Formalized by `MetaMathlibExt.REPred.exists`, a theorem declared in [MathlibExt/Computability/RE.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/RE.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#exists).
 
 ## Decidability by multi-stack machines
 
@@ -121,7 +121,7 @@ $f : \mathbb{N} \to \mathbb{N}$ computed by a multi-stack Turing machine, with i
 numbers written in binary, such that for every $a \in \alpha$, $f(\mathrm{encode}(a)) = 1$ if and
 only if $p(a)$.
 
-Formalized by `Cslib.Decidability.TM2Decidable`, a definition declared in [CSLibExt/Computability/Decidability/Basic.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Basic.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-decidable).
+Formalized by `Cslib.Decidability.TM2Decidable`, a definition declared in [CSLibExt/Computability/Decidability/Basic.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Basic.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-decidable).
 
 ## Recognizability by multi-stack machines
 
@@ -132,7 +132,7 @@ Turing machine $M$ and an identification of its input alphabet with the Booleans
 every $a \in \alpha$, $p(a)$ holds if and only if $M$ halts when started on the binary word of
 $\mathrm{encode}(a)$.
 
-Formalized by `Cslib.Decidability.TM2Recognizable`, a definition declared in [CSLibExt/Computability/Decidability/Basic.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Basic.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-recognizable).
+Formalized by `Cslib.Decidability.TM2Recognizable`, a definition declared in [CSLibExt/Computability/Decidability/Basic.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Basic.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-recognizable).
 
 ## Co-recognizability by multi-stack machines
 
@@ -141,7 +141,7 @@ encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ whose decoding is primitive r
 predicate $p$ on $\alpha$ is co-recognizable by a multi-stack machine when its complement
 $\neg p$ is recognizable by a multi-stack machine.
 
-Formalized by `Cslib.Decidability.TM2CoRecognizable`, a definition declared in [CSLibExt/Computability/Decidability/Basic.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Basic.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-co-recognizable).
+Formalized by `Cslib.Decidability.TM2CoRecognizable`, a definition declared in [CSLibExt/Computability/Decidability/Basic.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Basic.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-co-recognizable).
 
 ## Multi-stack decidable predicates are exactly the computable predicates
 
@@ -151,7 +151,7 @@ primitive recursive). A predicate $p$ on $\alpha$ is decidable by a multi-stack 
 only if it is computable, that is, $p$ is decidable and its Boolean characteristic function
 $\alpha \to \mathrm{Bool}$ is computable.
 
-Formalized by `Cslib.Decidability.tm2Decidable_iff_computablePred`, a theorem declared in [CSLibExt/Computability/Decidability/Basic.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Basic.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-decidable-iff-computable-pred).
+Formalized by `Cslib.Decidability.tm2Decidable_iff_computablePred`, a theorem declared in [CSLibExt/Computability/Decidability/Basic.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Basic.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-decidable-iff-computable-pred).
 
 ## Multi-stack recognizable predicates are exactly the r.e. predicates
 
@@ -161,7 +161,7 @@ primitive recursive). A predicate $p$ on $\alpha$ is recognizable by a multi-sta
 only if it is recursively enumerable, that is, the partial function on $\alpha$ that is defined,
 with a trivial value, exactly where $p$ holds is partial recursive.
 
-Formalized by `Cslib.Decidability.tm2Recognizable_iff_rePred`, a theorem declared in [CSLibExt/Computability/Decidability/Basic.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Basic.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-recognizable-iff-re-pred).
+Formalized by `Cslib.Decidability.tm2Recognizable_iff_rePred`, a theorem declared in [CSLibExt/Computability/Decidability/Basic.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Basic.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-recognizable-iff-re-pred).
 
 ## Multi-stack co-recognizable predicates are exactly the co-r.e. predicates
 
@@ -172,7 +172,7 @@ and only if its complement $\neg p$ is recursively enumerable, that is, the part
 $\alpha$ that is defined, with a trivial value, exactly where $\neg p$ holds is partial
 recursive.
 
-Formalized by `Cslib.Decidability.tm2CoRecognizable_iff_rePred_not`, a theorem declared in [CSLibExt/Computability/Decidability/Basic.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Basic.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-co-recognizable-iff-re-pred-not).
+Formalized by `Cslib.Decidability.tm2CoRecognizable_iff_rePred_not`, a theorem declared in [CSLibExt/Computability/Decidability/Basic.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Basic.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-co-recognizable-iff-re-pred-not).
 
 ## Decidable predicates are recognizable by multi-stack machines
 
@@ -181,7 +181,7 @@ primcodable type (it has an encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ w
 primitive recursive). If a predicate $p$ on $\alpha$ is decidable by a multi-stack machine, then
 $p$ is recognizable by a multi-stack machine.
 
-Formalized by `Cslib.Decidability.TM2Decidable.tm2Recognizable`, a theorem declared in [CSLibExt/Computability/Decidability/Basic.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Basic.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-recognizable-2).
+Formalized by `Cslib.Decidability.TM2Decidable.tm2Recognizable`, a theorem declared in [CSLibExt/Computability/Decidability/Basic.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Basic.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-recognizable-2).
 
 ## Decidability by multi-stack machines is closed under complement
 
@@ -190,7 +190,7 @@ primcodable type (it has an encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ w
 primitive recursive). If a predicate $p$ on $\alpha$ is decidable by a multi-stack machine, then
 so is its complement $\neg p$.
 
-Formalized by `Cslib.Decidability.TM2Decidable.not`, a theorem declared in [CSLibExt/Computability/Decidability/Basic.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Basic.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#not).
+Formalized by `Cslib.Decidability.TM2Decidable.not`, a theorem declared in [CSLibExt/Computability/Decidability/Basic.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Basic.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#not).
 
 ## Decidable predicates are co-recognizable by multi-stack machines
 
@@ -200,7 +200,7 @@ primitive recursive). If a predicate $p$ on $\alpha$ is decidable by a multi-sta
 $p$ is co-recognizable by a multi-stack machine, that is, its complement $\neg p$ is recognizable
 by a multi-stack machine.
 
-Formalized by `Cslib.Decidability.TM2Decidable.tm2CoRecognizable`, a theorem declared in [CSLibExt/Computability/Decidability/Basic.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Basic.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-co-recognizable-2).
+Formalized by `Cslib.Decidability.TM2Decidable.tm2CoRecognizable`, a theorem declared in [CSLibExt/Computability/Decidability/Basic.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Basic.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-co-recognizable-2).
 
 ## Post's theorem for multi-stack machines
 
@@ -209,7 +209,7 @@ encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ whose decoding is primitive r
 predicate $p$ on $\alpha$ is decidable by a multi-stack machine if and only if it is both
 recognizable and co-recognizable by a multi-stack machine.
 
-Formalized by `Cslib.Decidability.tm2Decidable_iff_tm2Recognizable_and_tm2CoRecognizable`, a theorem declared in [CSLibExt/Computability/Decidability/Basic.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Basic.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-decidable-iff-tm2-recognizable-and-t).
+Formalized by `Cslib.Decidability.tm2Decidable_iff_tm2Recognizable_and_tm2CoRecognizable`, a theorem declared in [CSLibExt/Computability/Decidability/Basic.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Basic.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#tm2-decidable-iff-tm2-recognizable-and-t).
 
 ## Decidable predicates are closed under conjunction
 
@@ -217,7 +217,7 @@ Let $p$ and $q$ be predicates on a
 type $\alpha$ with a primitive recursive encoding. If $p$ and $q$ are both decidable by
 multi-stack machines, then so is the predicate $a \mapsto p(a) \wedge q(a)$.
 
-Formalized by `Cslib.Decidability.TM2Decidable.and`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#and-3).
+Formalized by `Cslib.Decidability.TM2Decidable.and`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#and-3).
 
 ## Decidable predicates are closed under disjunction
 
@@ -225,7 +225,7 @@ Let $\alpha$ be a type with a
 primitive recursive encoding. If $p$ and $q$ are predicates on $\alpha$ that are decidable by a
 multi-stack Turing machine, then so is the predicate $a \mapsto p(a) \lor q(a)$.
 
-Formalized by `Cslib.Decidability.TM2Decidable.or`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#or-3).
+Formalized by `Cslib.Decidability.TM2Decidable.or`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#or-3).
 
 ## Recognizable predicates are closed under conjunction
 
@@ -233,7 +233,7 @@ Let $p$ and $q$ be predicates
 on a type $\alpha$ with a primitive recursive encoding. If $p$ and $q$ are both recognizable
 by multi-stack machines, then so is the predicate $a \mapsto p(a) \wedge q(a)$.
 
-Formalized by `Cslib.Decidability.TM2Recognizable.and`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#and-4).
+Formalized by `Cslib.Decidability.TM2Recognizable.and`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#and-4).
 
 ## Recognizable predicates are closed under disjunction
 
@@ -241,7 +241,7 @@ Let $\alpha$ be a type with a
 primitive recursive encoding. If $p$ and $q$ are predicates on $\alpha$ that are recognizable by
 a multi-stack Turing machine, then so is the predicate $a \mapsto p(a) \lor q(a)$.
 
-Formalized by `Cslib.Decidability.TM2Recognizable.or`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#or-4).
+Formalized by `Cslib.Decidability.TM2Recognizable.or`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#or-4).
 
 ## Language of a Boolean test
 
@@ -249,7 +249,7 @@ For a Boolean-valued function $f$ on words over an
 alphabet $\sigma$, the language of $f$ is the set of words $u$ over $\sigma$ with
 $f(u) = \mathrm{true}$.
 
-Formalized by `Cslib.Decidability.boolLang`, a definition declared in [CSLibExt/Computability/Decidability/Closure.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#bool-lang).
+Formalized by `Cslib.Decidability.boolLang`, a definition declared in [CSLibExt/Computability/Decidability/Closure.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#bool-lang).
 
 ## Membership in a concatenation of languages
 
@@ -257,7 +257,7 @@ For languages $L_1$ and $L_2$ over an
 alphabet $\sigma$ and a word $w$ over $\sigma$, $w$ lies in the concatenation $L_1 L_2$ if and
 only if there are words $u$ and $v$ with $w = uv$, $u \in L_1$ and $v \in L_2$.
 
-Formalized by `Cslib.Decidability.mem_mul_iff_exists_append`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#mem-mul-iff-exists-append).
+Formalized by `Cslib.Decidability.mem_mul_iff_exists_append`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#mem-mul-iff-exists-append).
 
 ## Bounded split test
 
@@ -266,7 +266,7 @@ a natural number $n$, the split test is the Boolean value that is true exactly w
 $i < n$ such that $f$ is true on the prefix of $w$ of length $\min(i, |w|)$ and $g$ is true on
 the remaining suffix of $w$.
 
-Formalized by `Cslib.Decidability.splitTest`, a definition declared in [CSLibExt/Computability/Decidability/Closure.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#split-test).
+Formalized by `Cslib.Decidability.splitTest`, a definition declared in [CSLibExt/Computability/Decidability/Closure.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#split-test).
 
 ## Decidable languages have computable membership tests
 
@@ -276,7 +276,7 @@ multi-stack machine, then there is a computable function $f$ from words over $\s
 Booleans such that $L$ is the language of $f$, that is, the set of words $u$ with
 $f(u) = \mathrm{true}$.
 
-Formalized by `Cslib.Decidability.TM2Decidable.exists_computable`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#exists-computable).
+Formalized by `Cslib.Decidability.TM2Decidable.exists_computable`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#exists-computable).
 
 ## Decidable languages are closed under concatenation
 
@@ -286,7 +286,7 @@ predicates are decidable by a multi-stack Turing machine, then the membership pr
 concatenation $L_1 L_2 = \{uv : u \in L_1, v \in L_2\}$ is also decidable by a multi-stack
 Turing machine.
 
-Formalized by `Cslib.Decidability.TM2Decidable.mul`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#mul).
+Formalized by `Cslib.Decidability.TM2Decidable.mul`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#mul).
 
 ## Splits of a word
 
@@ -295,7 +295,7 @@ $n + 1$ pairs $(u, v)$ of words with $uv = w$, ordered by the length of $u$: for
 $i = 0, 1, \dots, n$ it contains the prefix of $w$ of length $i$ paired with the remaining
 suffix.
 
-Formalized by `Cslib.Decidability.splits`, a definition declared in [CSLibExt/Computability/Decidability/Closure.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#splits).
+Formalized by `Cslib.Decidability.splits`, a definition declared in [CSLibExt/Computability/Decidability/Closure.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#splits).
 
 ## Recognizable languages are closed under concatenation
 
@@ -304,7 +304,7 @@ languages over an alphabet $\sigma$ with a primitive recursive encoding. If memb
 and membership in $L_2$ are recognizable by multi-stack machines, then so is membership in the
 concatenation $L_1 L_2$, the set of words $uv$ with $u \in L_1$ and $v \in L_2$.
 
-Formalized by `Cslib.Decidability.TM2Recognizable.mul`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#mul-2).
+Formalized by `Cslib.Decidability.TM2Recognizable.mul`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#mul-2).
 
 ## Extending a list of pieces by a letter
 
@@ -313,7 +313,7 @@ $\pi = [u_1, \dots, u_k]$ of words, the extensions of $\pi$ by $a$ are listed as
 $[[a], u_1, \dots, u_k]$, which starts a new piece $[a]$, and then, only when $k \ge 1$, also
 $[a u_1, u_2, \dots, u_k]$, which puts the letter $a$ in front of the first piece.
 
-Formalized by `Cslib.Decidability.extendPartitions`, a definition declared in [CSLibExt/Computability/Decidability/Closure.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#extend-partitions).
+Formalized by `Cslib.Decidability.extendPartitions`, a definition declared in [CSLibExt/Computability/Decidability/Closure.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#extend-partitions).
 
 ## Partitions of a word into nonempty factors
 
@@ -322,7 +322,7 @@ list of all ways to write $w$ as a concatenation $w = u_1 u_2 \cdots u_k$ of non
 $u_1, \dots, u_k$, each recorded as the list $[u_1, \dots, u_k]$. The empty word has exactly one
 such partition, the empty list.
 
-Formalized by `Cslib.Decidability.partitions`, a definition declared in [CSLibExt/Computability/Decidability/Closure.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#partitions).
+Formalized by `Cslib.Decidability.partitions`, a definition declared in [CSLibExt/Computability/Decidability/Closure.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#partitions).
 
 ## Recognizable languages are closed under Kleene star
 
@@ -331,7 +331,7 @@ alphabet $\sigma$ with a primitive recursive encoding. If membership in $L$ is r
 a multi-stack machine, then so is membership in the Kleene star $L^*$, the set of all
 concatenations $u_1 \cdots u_k$ with $k \ge 0$ and $u_1, \dots, u_k \in L$.
 
-Formalized by `Cslib.Decidability.TM2Recognizable.kstar`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#kstar).
+Formalized by `Cslib.Decidability.TM2Recognizable.kstar`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#kstar).
 
 ## Decidable languages are closed under Kleene star
 
@@ -340,7 +340,7 @@ alphabet $\sigma$ with a primitive recursive encoding. If membership in $L$ is d
 multi-stack machine, then so is membership in the Kleene star $L^*$, the set of all
 concatenations $u_1 \cdots u_k$ with $k \ge 0$ and $u_1, \dots, u_k \in L$.
 
-Formalized by `Cslib.Decidability.TM2Decidable.kstar`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#kstar-2).
+Formalized by `Cslib.Decidability.TM2Decidable.kstar`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#kstar-2).
 
 ## Recognizable languages are closed under alphabet maps
 
@@ -354,7 +354,7 @@ letter to the words of $L$.
 The recognizer searches for a preimage word by unbounded dovetailing. Every map between finite
 alphabets is primitive recursive.
 
-Formalized by `Cslib.Decidability.TM2Recognizable.map`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/Closure.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#map).
+Formalized by `Cslib.Decidability.TM2Recognizable.map`, a theorem declared in [CSLibExt/Computability/Decidability/Closure.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/Closure.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html#map).
 
 ## Depends on
 
@@ -363,4 +363,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Decidable and recognizable predicates](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/computability/decidable-and-recognizable-predicates)

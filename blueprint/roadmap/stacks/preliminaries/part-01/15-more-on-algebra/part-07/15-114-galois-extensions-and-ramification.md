@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.114 Galois extensions and ramification
 
-Section 15.114 of the Stacks Project, [Tag 09E3](https://stacks.math.columbia.edu/tag/09E3). 12 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.114 of the Stacks Project, [Tag 09E3](https://stacks.math.columbia.edu/tag/09E3). 12 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09EA, a lemma
 
 [Tag 09EA](https://stacks.math.columbia.edu/tag/09EA) in the Stacks Project.
 
-**`IsDiscreteValuationRing.galAction_transitive_on_maximalIdeals_integralClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L157).
+**`IsDiscreteValuationRing.galAction_transitive_on_maximalIdeals_integralClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L157).
 
 > For a finite Galois extension `L / K`, the canonical action of `Gal(L/K)` on the integral
 > closure of a discrete valuation ring `A` in `L` is transitive on its maximal ideals.
@@ -35,7 +35,7 @@ theorem galAction_transitive_on_maximalIdeals_integralClosure
 
 [Tag 09EB](https://stacks.math.columbia.edu/tag/09EB) in the Stacks Project.
 
-**`IsDiscreteValuationRing.exists_uniform_ramificationIdx_inertiaDeg_and_finrank_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L182).
+**`IsDiscreteValuationRing.exists_uniform_ramificationIdx_inertiaDeg_and_finrank_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L182).
 
 > In a finite Galois extension of the fraction field of a discrete valuation ring, all primes
 > of the integral closure over the maximal ideal have the same positive ramification index and
@@ -60,7 +60,7 @@ theorem exists_uniform_ramificationIdx_inertiaDeg_and_finrank_eq
 
 [Tag 09EC](https://stacks.math.columbia.edu/tag/09EC) in the Stacks Project.
 
-**`IsDiscreteValuationRing.under_eq_maximalIdeal_and_ker_stabilizerHom_eq_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L235). The attribute's comment: “The decomposition group is `MulAction.stabilizer` and the inertia group is `Ideal.inertia`, both of which Mathlib already has for an arbitrary action; what is recorded here is that they are the source's two groups, the ideal below `P` being the maximal ideal of `A` so that the extension acted on is `κ(P)/κ_A`. Stated without the fraction-field, finiteness and Galois hypotheses, which the comparison does not use, so the source's setting is a special case.”. References: SGA 7 I (0.3), “partial”.
+**`IsDiscreteValuationRing.under_eq_maximalIdeal_and_ker_stabilizerHom_eq_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L235). The attribute's comment: “The decomposition group is `MulAction.stabilizer` and the inertia group is `Ideal.inertia`, both of which Mathlib already has for an arbitrary action; what is recorded here is that they are the source's two groups, the ideal below `P` being the maximal ideal of `A` so that the extension acted on is `κ(P)/κ_A`. Stated without the fraction-field, finiteness and Galois hypotheses, which the comparison does not use, so the source's setting is a special case.”. References: SGA 7 I (0.3), “partial”.
 
 > The decomposition and the inertia group at a maximal ideal `P` of the integral closure `B`
 > of a discrete valuation ring `A` in a field extension `L / K`.
@@ -90,16 +90,16 @@ theorem under_eq_maximalIdeal_and_ker_stabilizerHom_eq_inertia
 
 Declarations registered for the tag:
 
-- [`MulAction.stabilizer`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MulAction.stabilizer#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L102) (StacksFrontier): “(1), the decomposition group”. References: SGA 1 V (6.13); SGA 3 I (2.3.3), “special case”; SGA 3 VIIB (2.5.A); SGA 3 XXI (6.7.2), “more general”; SGA 5 IIIB (5.13), “more general”; SGA 5 X (4.2).
-- [`Ideal.inertia`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.inertia#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L110) (StacksFrontier): “(2), the inertia group”. References: SGA 7 I (0.3); SGA 7 XIII (0.2).
-- [`Ideal.Quotient.stabilizerHom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.Quotient.stabilizerHom#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L114) (StacksFrontier): “The action of the decomposition group on the residue algebra”.
-- [`Ideal.Quotient.ker_stabilizerHom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.Quotient.ker_stabilizerHom#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L117) (StacksFrontier): “The inertia group as the kernel of the residue-algebra action”.
+- [`MulAction.stabilizer`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MulAction.stabilizer#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L102) (StacksFrontier): “(1), the decomposition group”. References: SGA 1 V (6.13); SGA 3 I (2.3.3), “special case”; SGA 3 VIIB (2.5.A); SGA 3 XXI (6.7.2), “more general”; SGA 5 IIIB (5.13), “more general”; SGA 5 X (4.2).
+- [`Ideal.inertia`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.inertia#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L110) (StacksFrontier): “(2), the inertia group”. References: SGA 7 I (0.3); SGA 7 XIII (0.2).
+- [`Ideal.Quotient.stabilizerHom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.Quotient.stabilizerHom#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L114) (StacksFrontier): “The action of the decomposition group on the residue algebra”.
+- [`Ideal.Quotient.ker_stabilizerHom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.Quotient.ker_stabilizerHom#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L117) (StacksFrontier): “The inertia group as the kernel of the residue-algebra action”.
 
 ## Tag 09ED, a lemma
 
 [Tag 09ED](https://stacks.math.columbia.edu/tag/09ED) in the Stacks Project.
 
-**`IsDiscreteValuationRing.residueField_normal_and_stabilizerHom_surjective_of_isGalois`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L263). References: SGA 1 V (1.1), “special case”; SGA 1 V (1.3), “special case”.
+**`IsDiscreteValuationRing.residueField_normal_and_stabilizerHom_surjective_of_isGalois`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L263). References: SGA 1 V (1.1), “special case”; SGA 1 V (1.3), “special case”.
 
 > In a finite Galois extension of the fraction field of a discrete valuation ring, every
 > residue extension at a maximal ideal of the integral closure is normal, and its decomposition
@@ -143,7 +143,7 @@ theorem residueField_normal_and_stabilizerHom_surjective_of_isGalois
 
 [Tag 09EE](https://stacks.math.columbia.edu/tag/09EE) in the Stacks Project.
 
-**`IsDiscreteValuationRing.exists_wildInertia_exact_and_tameInertia_equiv_rootsOfUnity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 847](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L847). References: SGA 1 XIII (2.0), “inertia structure”; SGA 7 I (0.3), “finite Galois case”.
+**`IsDiscreteValuationRing.exists_wildInertia_exact_and_tameInertia_equiv_rootsOfUnity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 847](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L847). References: SGA 1 XIII (2.0), “inertia structure”; SGA 7 I (0.3), “finite Galois case”.
 
 > The inertia group at a maximal ideal of the integral closure in a finite Galois extension
 > has a canonical wild–tame exact sequence. Wild inertia consists precisely of the elements of
@@ -198,7 +198,7 @@ theorem exists_wildInertia_exact_and_tameInertia_equiv_rootsOfUnity
 
 [Tag 0BU3](https://stacks.math.columbia.edu/tag/0BU3) in the Stacks Project.
 
-**`IsDiscreteValuationRing.exists_uniformizerRatioMap_to_rootsOfUnity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 992](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L992).
+**`IsDiscreteValuationRing.exists_uniformizerRatioMap_to_rootsOfUnity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean, line 992](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Galois.lean#L992).
 
 > Let a group act on a discrete valuation ring, trivially on its residue field. Suppose an
 > invariant element is a unit times the `e`-th power of a uniformizer. For every group element, its
@@ -228,7 +228,7 @@ theorem exists_uniformizerRatioMap_to_rootsOfUnity
 
 [Tag 0BU4](https://stacks.math.columbia.edu/tag/0BU4) in the Stacks Project.
 
-**`IsDiscreteValuationRing.inertiaCharacter`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean#L176).
+**`IsDiscreteValuationRing.inertiaCharacter`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean#L176).
 
 > **Stacks Project, Tag 0BU4.** The canonical character from inertia to the roots of unity of
 > order the ramification index in the residue field.
@@ -237,7 +237,7 @@ theorem exists_uniformizerRatioMap_to_rootsOfUnity
 noncomputable def inertiaCharacter
 ```
 
-**`IsDiscreteValuationRing.wildInertiaGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean#L180). References: SGA 1 XIII (2.0), “partial”.
+**`IsDiscreteValuationRing.wildInertiaGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean#L180). References: SGA 1 XIII (2.0), “partial”.
 
 > **Stacks Project, Tag 0BU4.** The wild inertia group at `P`.
 
@@ -245,7 +245,7 @@ noncomputable def inertiaCharacter
 noncomputable def wildInertiaGroup
 ```
 
-**`IsDiscreteValuationRing.tameInertiaGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean#L188). References: SGA 7 I (0.3).
+**`IsDiscreteValuationRing.tameInertiaGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean#L188). References: SGA 7 I (0.3).
 
 > **Stacks Project, Tag 0BU4.** The tame inertia group, namely inertia modulo wild inertia.
 
@@ -253,7 +253,7 @@ noncomputable def wildInertiaGroup
 abbrev tameInertiaGroup
 ```
 
-**`IsDiscreteValuationRing.tameInertiaMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean#L192).
+**`IsDiscreteValuationRing.tameInertiaMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean#L192).
 
 > **Stacks Project, Tag 0BU4.** The quotient map from inertia to tame inertia.
 
@@ -261,7 +261,7 @@ abbrev tameInertiaGroup
 noncomputable def tameInertiaMap : P.inertia Gal(L/K) →* tameInertiaGroup A K L P
 ```
 
-**`IsDiscreteValuationRing.tameInertiaEquivRootsOfUnity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean#L205). References: SGA 7 I (0.3), “finite Galois case”.
+**`IsDiscreteValuationRing.tameInertiaEquivRootsOfUnity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean#L205). References: SGA 7 I (0.3), “finite Galois case”.
 
 > **Stacks Project, Tag 0BU4.** The canonical isomorphism from tame inertia to the roots of
 > unity induced by the inertia character.
@@ -276,7 +276,7 @@ noncomputable def tameInertiaEquivRootsOfUnity :
 
 [Tag 0BU5](https://stacks.math.columbia.edu/tag/0BU5) in the Stacks Project.
 
-**`IsDiscreteValuationRing.inertiaCharacter_conj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean#L238). References: SGA 7 I (0.3), “finite Galois case”.
+**`IsDiscreteValuationRing.inertiaCharacter_conj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/Character.lean#L238). References: SGA 7 I (0.3), “finite Galois case”.
 
 > **Stacks Tag 0BU5.** The inertia character is equivariant for conjugation by the
 > decomposition group: conjugating an inertia element by a decomposition element has character
@@ -317,7 +317,7 @@ theorem inertiaCharacter_conj
 
 [Tag 09EH](https://stacks.math.columbia.edu/tag/09EH) in the Stacks Project.
 
-**`IsDiscreteValuationRing.inertia_fixedSubalgebra_isIntegralClosure_and_etale_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/InvariantRing.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/InvariantRing.lean#L229). References: SGA 7 I (0.3), “partial”.
+**`IsDiscreteValuationRing.inertia_fixedSubalgebra_isIntegralClosure_and_etale_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/InvariantRing.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/InvariantRing.lean#L229). References: SGA 7 I (0.3), “partial”.
 
 > **Stacks Tag 09EH.** The subring of the integral closure fixed by the inertia group is the
 > integral closure in the fixed field, and its localization at the prime below the chosen maximal
@@ -358,7 +358,7 @@ theorem inertia_fixedSubalgebra_isIntegralClosure_and_etale_localization
 
 [Tag 0BU6](https://stacks.math.columbia.edu/tag/0BU6) in the Stacks Project.
 
-**`IsDiscreteValuationRing.decomposition_inertia_wildInertia_tower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/DecompositionTower.lean, line 622](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/DecompositionTower.lean#L622).
+**`IsDiscreteValuationRing.decomposition_inertia_wildInertia_tower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/DecompositionTower.lean, line 624](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/DecompositionTower.lean#L624).
 
 > **Stacks Tag 0BU6.** The fixed fields, invariant rings, contracted primes, localized
 > rings, and residue fields attached to the wild inertia, inertia, and decomposition groups of
@@ -403,7 +403,7 @@ theorem decomposition_inertia_wildInertia_tower
 
 [Tag 0BU7](https://stacks.math.columbia.edu/tag/0BU7) in the Stacks Project.
 
-**`IsDiscreteValuationRing.surjective_restrictions_commute_with_residue_and_inertiaCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/GaloisTower.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/GaloisTower.lean#L197).
+**`IsDiscreteValuationRing.surjective_restrictions_commute_with_residue_and_inertiaCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/GaloisTower.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/GaloisTower.lean#L197).
 
 > **Stacks Project, Tag 0BU7.** In a tower of finite Galois extensions of the fraction field
 > of a discrete valuation ring, restriction surjects on decomposition, inertia, and wild inertia
@@ -473,7 +473,7 @@ theorem surjective_restrictions_commute_with_residue_and_inertiaCharacter
 
 [Tag 0BU8](https://stacks.math.columbia.edu/tag/0BU8) in the Stacks Project.
 
-**`IsDiscreteValuationRing.canonicalInertiaCharacter`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/GaloisTower.lean, line 486](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/GaloisTower.lean#L486).
+**`IsDiscreteValuationRing.canonicalInertiaCharacter`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/GaloisTower.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/GaloisTower.lean#L486).
 
 > **Stacks Project, Tag 0BU8.** The canonical inertia character, obtained by raising the
 > ordinary inertia character to the residue-characteristic-primary part of the ramification
@@ -485,7 +485,7 @@ noncomputable def canonicalInertiaCharacter :
       rootsOfUnity (tameRamificationIndex A L P) (integralClosure A L ⧸ P)
 ```
 
-**`IsDiscreteValuationRing.canonicalInertiaCharacter_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/GaloisTower.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/GaloisTower.lean#L518). References: SGA 7 I (0.3), “finite Galois case”.
+**`IsDiscreteValuationRing.canonicalInertiaCharacter_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/GaloisTower.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Inertia/GaloisTower.lean#L518). References: SGA 7 I (0.3), “finite Galois case”.
 
 > **Stacks Project, Tag 0BU8.** The scaled inertia character identifies tame inertia with the
 > roots of unity of order `|I_t|`.  Its order is the prime-to-residue-characteristic part of the
@@ -566,4 +566,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.114, Tag 09E3](https://stacks.math.columbia.edu/tag/09E3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

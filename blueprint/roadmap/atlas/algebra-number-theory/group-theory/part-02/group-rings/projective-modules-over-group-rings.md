@@ -7,7 +7,7 @@ statement: formalized
 
 # Projective modules over group rings
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/projective-modules-over-group-rings/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/projective-modules-over-group-rings/index.html).
 
 ## Polycyclic group
 
@@ -15,14 +15,14 @@ A group $G$ is polycyclic if for some $n \ge 0$ there are subgroups
 $1 = H_0 \le H_1 \le \cdots \le H_n = G$ such that for each $i < n$, $H_i$ is normal in
 $H_{i+1}$ and the quotient $H_{i+1} / H_i$ is cyclic.
 
-Formalized by `MathlibExt.GroupTheory.ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.IsPolycyclic`, a definition declared in [WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/projective-modules-over-group-rings/index.html#is-polycyclic).
+Formalized by `MathlibExt.GroupTheory.ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.IsPolycyclic`, a definition declared in [WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/projective-modules-over-group-rings/index.html#is-polycyclic).
 
 ## Almost polycyclic group
 
 A group $G$ is almost polycyclic (polycyclic-by-finite) if it
 has a subgroup of finite index that is polycyclic.
 
-Formalized by `MathlibExt.GroupTheory.ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.IsAlmostPolycyclic`, a definition declared in [WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/projective-modules-over-group-rings/index.html#is-almost-polycyclic).
+Formalized by `MathlibExt.GroupTheory.ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.IsAlmostPolycyclic`, a definition declared in [WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/projective-modules-over-group-rings/index.html#is-almost-polycyclic).
 
 ## Artamonov's freeness question (Kourovka 11.5)
 
@@ -32,7 +32,7 @@ has finite order) and every finitely generated projective module $P$ over the gr
 $P$ contains two elements that are linearly independent over $kG$, then $P$ is a free
 $kG$-module.
 
-Formalized by `MathlibExt.GroupTheory.ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.projectiveWithTwoIndependentFree`, a definition declared in [WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/projective-modules-over-group-rings/index.html#projective-with-two-independent-free).
+Formalized by `MathlibExt.GroupTheory.ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.projectiveWithTwoIndependentFree`, a definition declared in [WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/projective-modules-over-group-rings/index.html#projective-with-two-independent-free).
 
 ## Artamonov's freeness question has a negative answer
 
@@ -51,7 +51,7 @@ confirmed by D. Segal); the example gives nothing for field coefficients.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 11.5 (V. A. Artamonov); resolution: A. Jayadevan, A coefficient-ring obstruction to freeness of projective group-ring modules, preprint, Zenodo record 22846603 (2026), main example: `k = 𝔽₂ × 𝔽₂`, `G = 1`, `P = k² ⊕ (𝔽₂ × 0)` is projective with an independent pair but has 32 elements, while finite free `k`-modules have `4ⁿ`; the Kourovka Notebook (21st issue) marks 11.5 solved (AI solution confirmed by D. Segal), https://zenodo.org/records/22846603.
 
-Stated but not proved: `MathlibExt.GroupTheory.ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.projectiveWithTwoIndependentFree_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/projective-modules-over-group-rings/index.html#projective-with-two-independent-free-ref).
+Stated but not proved: `MathlibExt.GroupTheory.ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.projectiveWithTwoIndependentFree_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ProjectiveGroupRingModuleFreeKourovka11Problem5Wanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/projective-modules-over-group-rings/index.html#projective-with-two-independent-free-ref).
 
 ## Depends on
 
@@ -60,4 +60,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Projective modules over group rings](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/group-rings/projective-modules-over-group-rings/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/group-rings/projective-modules-over-group-rings)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/group-rings/projective-modules-over-group-rings)

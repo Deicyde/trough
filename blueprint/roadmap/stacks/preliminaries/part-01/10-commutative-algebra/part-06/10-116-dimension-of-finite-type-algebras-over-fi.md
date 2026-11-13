@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.116 Dimension of finite type algebras over fields, reprise
 
-Section 10.116 of the Stacks Project, [Tag 07NB](https://stacks.math.columbia.edu/tag/07NB). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.116 of the Stacks Project, [Tag 07NB](https://stacks.math.columbia.edu/tag/07NB). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00P0, a lemma
 
 [Tag 00P0](https://stacks.math.columbia.edu/tag/00P0) in the Stacks Project.
 
-**`ringKrullDim_eq_trdeg_and_ringKrullDim_localization_eq_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullDimension/FiniteTypeOverField.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/KrullDimension/FiniteTypeOverField.lean#L255). The attribute's comment: “The transcendence degree is compared through `Cardinal.toENat`, the field of fractions is an abstract `IsFractionRing` and the local ring an abstract `IsLocalization.AtPrime`. See the module docstring.”. References: EGA IV (5.5.8), “special case”.
+**`ringKrullDim_eq_trdeg_and_ringKrullDim_localization_eq_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullDimension/FiniteTypeOverField.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/KrullDimension/FiniteTypeOverField.lean#L255). The attribute's comment: “The transcendence degree is compared through `Cardinal.toENat`, the field of fractions is an abstract `IsFractionRing` and the local ring an abstract `IsLocalization.AtPrime`. See the module docstring.”. References: EGA IV (5.5.8), “special case”.
 
 > **Stacks 00P0.** Let `k` be a field, let `S` be a finite type `k`-algebra which is a domain,
 > and let `K` be its field of fractions. Then the Krull dimension of `S` is the transcendence
@@ -36,7 +36,7 @@ public theorem ringKrullDim_eq_trdeg_and_ringKrullDim_localization_eq_trdeg
 
 [Tag 06RP](https://stacks.math.columbia.edu/tag/06RP) in the Stacks Project.
 
-**`Ideal.trdeg_residueField_lt_trdeg_residueField_of_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TranscendenceDegree/ResidueField.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/TranscendenceDegree/ResidueField.lean#L193). The attribute's comment: “The residue field `κ(𝔮)` is Mathlib's `Ideal.ResidueField`, the fraction field of `S ⧸ 𝔮`, and the comparison is a strict inequality of `Cardinal`, both degrees being finite. See the module docstring.”.
+**`Ideal.trdeg_residueField_lt_trdeg_residueField_of_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TranscendenceDegree/ResidueField.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/TranscendenceDegree/ResidueField.lean#L193). The attribute's comment: “The residue field `κ(𝔮)` is Mathlib's `Ideal.ResidueField`, the fraction field of `S ⧸ 𝔮`, and the comparison is a strict inequality of `Cardinal`, both degrees being finite. See the module docstring.”.
 
 > **Stacks 06RP.** Let `k` be a field, let `S` be a finite type `k`-algebra, and let
 > `𝔮 ⊊ 𝔮'` be prime ideals of `S`. Then the transcendence degree over `k` of the residue field
@@ -53,7 +53,7 @@ public theorem Ideal.trdeg_residueField_lt_trdeg_residueField_of_lt
 
 [Tag 00P1](https://stacks.math.columbia.edu/tag/00P1) in the Stacks Project.
 
-**`PrimeSpectrum.localKrullDim_eq_height_add_trdeg_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/LocalDimension.lean, line 783](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/LocalDimension.lean#L783). The attribute's comment: “`dim_x X` is `TopologicalSpace.localKrullDim`, Definition 0055 (4); `dim(S_𝔭)` is `𝔭.height`, `κ(𝔭)` is `Ideal.ResidueField`, and the transcendence degree is compared through `Cardinal.toENat`. See the module docstring.”. References: EGA IV (17.15.8), “special case”.
+**`PrimeSpectrum.localKrullDim_eq_height_add_trdeg_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/LocalDimension.lean, line 783](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/LocalDimension.lean#L783). The attribute's comment: “`dim_x X` is `TopologicalSpace.localKrullDim`, Definition 0055 (4); `dim(S_𝔭)` is `𝔭.height`, `κ(𝔭)` is `Ideal.ResidueField`, and the transcendence degree is compared through `Cardinal.toENat`. See the module docstring.”. References: EGA IV (17.15.8), “special case”.
 
 > **Stacks 00P1.** Let `k` be a field, let `S` be a finite type `k`-algebra, let `X = Spec S`,
 > and let `x ∈ X` be a point, with prime ideal `𝔭 = x.asIdeal`. Then the dimension of `X` at `x` —
@@ -73,7 +73,7 @@ public theorem localKrullDim_eq_height_add_trdeg_residueField
 
 [Tag 00P2](https://stacks.math.columbia.edu/tag/00P2) in the Stacks Project.
 
-**`PrimeSpectrum.localKrullDim_comap_add_height_eq_localKrullDim_add_height_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Codimension.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Codimension.lean#L164). The attribute's comment: “`dim_x X` is `TopologicalSpace.localKrullDim`, Definition 0055 (4), and `height 𝔭` is `Ideal.height`, as in the sibling 00P1; the source's difference of differences is stated as the equivalent equality of sums, subtraction in `WithBot ℕ∞` being truncated. See the module docstring.”.
+**`PrimeSpectrum.localKrullDim_comap_add_height_eq_localKrullDim_add_height_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Codimension.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Codimension.lean#L164). The attribute's comment: “`dim_x X` is `TopologicalSpace.localKrullDim`, Definition 0055 (4), and `height 𝔭` is `Ideal.height`, as in the sibling 00P1; the source's difference of differences is stated as the equivalent equality of sums, subtraction in `WithBot ℕ∞` being truncated. See the module docstring.”.
 
 > **Stacks 00P2.** Let `k` be a field, let `f : S' → S` be a surjection of finite type
 > `k`-algebras, let `x ∈ Spec S` be a point and let `x' = comap f x` be the corresponding point of
@@ -95,7 +95,7 @@ public theorem localKrullDim_comap_add_height_eq_localKrullDim_add_height_comap
 
 [Tag 00P3](https://stacks.math.columbia.edu/tag/00P3) in the Stacks Project.
 
-**`Algebra.IsPushout.ringKrullDim_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullDimension/BaseChange.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/KrullDimension/BaseChange.lean#L246). The attribute's comment: “The base change `K ⊗_k S` is an arbitrary pushout square of `k`-algebras `Algebra.IsPushout k K S T`; the source's literal form is `inferInstance` once `Algebra.TensorProduct.rightAlgebra` is a local instance. See the module docstring.”.
+**`Algebra.IsPushout.ringKrullDim_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullDimension/BaseChange.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/KrullDimension/BaseChange.lean#L246). The attribute's comment: “The base change `K ⊗_k S` is an arbitrary pushout square of `k`-algebras `Algebra.IsPushout k K S T`; the source's literal form is `inferInstance` once `Algebra.TensorProduct.rightAlgebra` is a local instance. See the module docstring.”.
 
 > **Stacks 00P3.** Let `k` be a field, let `S` be a `k`-algebra of finite type and let `K/k` be a
 > field extension. Then `S` and its base change `T = K ⊗_k S` have the same Krull dimension.
@@ -112,7 +112,7 @@ public theorem Algebra.IsPushout.ringKrullDim_eq (k K S T : Type*) [Field k] [Fi
 
 [Tag 00P4](https://stacks.math.columbia.edu/tag/00P4) in the Stacks Project.
 
-**`Algebra.IsPushout.localKrullDim_comap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullDimension/BaseChange.lean, line 570](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/KrullDimension/BaseChange.lean#L570). The attribute's comment: “`dim_x X` is `TopologicalSpace.localKrullDim`, Definition 0055 (4), as in the siblings 00P1 and 00P2; the base change `K ⊗_k S` is an arbitrary pushout square of `k`-algebras `Algebra.IsPushout k K S T`, as in the sibling 00P3; and `q_K` lying over `q` is expressed by taking `x = PrimeSpectrum.comap (algebraMap S T) xK`. See the module docstring.”.
+**`Algebra.IsPushout.localKrullDim_comap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullDimension/BaseChange.lean, line 570](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/KrullDimension/BaseChange.lean#L570). The attribute's comment: “`dim_x X` is `TopologicalSpace.localKrullDim`, Definition 0055 (4), as in the siblings 00P1 and 00P2; the base change `K ⊗_k S` is an arbitrary pushout square of `k`-algebras `Algebra.IsPushout k K S T`, as in the sibling 00P3; and `q_K` lying over `q` is expressed by taking `x = PrimeSpectrum.comap (algebraMap S T) xK`. See the module docstring.”.
 
 > **Stacks 00P4.** Let `k` be a field, let `S` be a finite type `k`-algebra, let `K/k` be a
 > field extension and let `T = K ⊗_k S` be the base change, presented as a pushout square. Let
@@ -134,7 +134,7 @@ public theorem localKrullDim_comap_eq (k K S T : Type*) [Field k] [Field K]
 
 [Tag 0CWE](https://stacks.math.columbia.edu/tag/0CWE) in the Stacks Project.
 
-**`Algebra.IsPushout.height_fiber_add_height_eq_and_add_trdeg_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullDimension/BaseChange.lean, line 873](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/KrullDimension/BaseChange.lean#L873). The attribute's comment: “The dimension of the fibre `(S_K ⊗_S κ(𝔮))_{𝔮_K}` is the height of the image of `𝔮_K` in `S_K ⧸ 𝔮 S_K`, Mathlib's spelling in the going-down height formula (Lemma 00ON); the two equalities are stated additively rather than with a truncated subtraction in `ℕ∞`; the base change `K ⊗_k S` is an arbitrary pushout square of `k`-algebras, as in the siblings 00P3 and 00P4; and transcendence degrees are compared through `Cardinal.toENat`, as in 00P1. See the module docstring.”.
+**`Algebra.IsPushout.height_fiber_add_height_eq_and_add_trdeg_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullDimension/BaseChange.lean, line 873](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/KrullDimension/BaseChange.lean#L873). The attribute's comment: “The dimension of the fibre `(S_K ⊗_S κ(𝔮))_{𝔮_K}` is the height of the image of `𝔮_K` in `S_K ⧸ 𝔮 S_K`, Mathlib's spelling in the going-down height formula (Lemma 00ON); the two equalities are stated additively rather than with a truncated subtraction in `ℕ∞`; the base change `K ⊗_k S` is an arbitrary pushout square of `k`-algebras, as in the siblings 00P3 and 00P4; and transcendence degrees are compared through `Cardinal.toENat`, as in 00P1. See the module docstring.”.
 
 > **Stacks 0CWE.** Let `k` be a field, let `S` be a finite type `k`-algebra, let `K/k` be a
 > field extension and let `T = K ⊗_k S` be the base change, presented as a pushout square. Then for
@@ -164,4 +164,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.116, Tag 07NB](https://stacks.math.columbia.edu/tag/07NB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

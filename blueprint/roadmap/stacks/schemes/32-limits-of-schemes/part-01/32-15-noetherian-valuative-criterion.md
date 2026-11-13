@@ -8,13 +8,13 @@ proof: formalized
 
 # 32.15 Noetherian valuative criterion
 
-Section 32.15 of the Stacks Project, [Tag 0CM1](https://stacks.math.columbia.edu/tag/0CM1). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 32.15 of the Stacks Project, [Tag 0CM1](https://stacks.math.columbia.edu/tag/0CM1). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CM2, a lemma
 
 [Tag 0CM2](https://stacks.math.columbia.edu/tag/0CM2) in the Stacks Project.
 
-**`AlgebraicGeometry.nonempty_discreteValuationSpecialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/DiscreteValuationSpecialization.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/DiscreteValuationSpecialization.lean#L356).
+**`AlgebraicGeometry.nonempty_discreteValuationSpecialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/DiscreteValuationSpecialization.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/DiscreteValuationSpecialization.lean#L356).
 
 > A point in the closure of the image of a finite-type morphism into a locally Noetherian
 > scheme is reached by a discrete valuation ring, with generic point on a generic component of the
@@ -33,13 +33,13 @@ theorem nonempty_discreteValuationSpecialization {X Y : Scheme.{u}} (f : X ⟶ Y
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.ValuativeCommSq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.ValuativeCommSq#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch32.lean, line 13](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch32.lean#L13) (StacksFrontier).
+- [`AlgebraicGeometry.ValuativeCommSq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.ValuativeCommSq#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch32.lean, line 13](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch32.lean#L13) (StacksFrontier).
 
 ## Tag 0207, a lemma
 
 [Tag 0207](https://stacks.math.columbia.edu/tag/0207) in the Stacks Project.
 
-**`AlgebraicGeometry.isSeparated_tfae_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/Separatedness.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/Separatedness.lean#L626). References: EGA II (7.2.3), “Noetherian/DVR case”.
+**`AlgebraicGeometry.isSeparated_tfae_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/Separatedness.lean, line 626](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/Separatedness.lean#L626). References: EGA II (7.2.3), “Noetherian/DVR case”.
 
 > **Stacks Project, Tag 0207.** For a morphism locally of finite type over a locally
 > Noetherian scheme, separatedness is equivalent to uniqueness in the valuative criterion; it
@@ -68,7 +68,7 @@ theorem isSeparated_tfae_of_locallyOfFiniteType {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 0208](https://stacks.math.columbia.edu/tag/0208) in the Stacks Project.
 
-**`AlgebraicGeometry.isProper_of_genericDiscreteValuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/GenericProperness.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/GenericProperness.lean#L289). The attribute's comment: “condition (4) implies condition (1)”. References: EGA II (7.3.8), “(b)⇒(a)”; EGA IV (15.7.5), “c⇒a”; EGA IV (18.10.20), “partial”.
+**`AlgebraicGeometry.isProper_of_genericDiscreteValuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/GenericProperness.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/GenericProperness.lean#L289). The attribute's comment: “condition (4) implies condition (1)”. References: EGA II (7.3.8), “(b)⇒(a)”; EGA IV (15.7.5), “c⇒a”; EGA IV (18.10.20), “partial”.
 
 > **[Stacks, Tag 0208], condition (4) implies condition (1).** A morphism of finite type to a
 > locally Noetherian scheme is proper as soon as every valuative diagram whose valuation ring is a
@@ -82,7 +82,7 @@ theorem isProper_of_genericDiscreteValuativeCriterion (p : V ⟶ W)
     (h : GenericDiscreteValuativeCriterion p) : IsProper p
 ```
 
-**`AlgebraicGeometry.isProper_tfae_genericDiscreteValuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/GenericProperness.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/GenericProperness.lean#L342). References: EGA II (7.3.8); EGA IV (15.7.5), “a⇔c”.
+**`AlgebraicGeometry.isProper_tfae_genericDiscreteValuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/GenericProperness.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/GenericProperness.lean#L342). References: EGA II (7.3.8); EGA IV (15.7.5), “a⇔c”.
 
 > **[Stacks, Tag 0208].** Let `S` be locally Noetherian and `f : X ⟶ S` of finite type. The
 > following are equivalent:
@@ -111,7 +111,7 @@ theorem isProper_tfae_genericDiscreteValuativeCriterion {X S : Scheme.{u}} (f : 
         GenericDiscreteValuativeCriterion f ]
 ```
 
-**`AlgebraicGeometry.isProper_tfae_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/Properness.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/Properness.lean#L58). The attribute's comment: “conditions (1), (2) and (3)”. References: EGA II (7.3.3), “Noetherian, finite type”; EGA II (7.3.8), “proper/DVR case”; EGA I (3.7.3), “more general”.
+**`AlgebraicGeometry.isProper_tfae_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/Properness.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/NoetherianValuativeCriterion/Properness.lean#L58). The attribute's comment: “conditions (1), (2) and (3)”. References: EGA II (7.3.3), “Noetherian, finite type”; EGA II (7.3.8), “proper/DVR case”; EGA I (3.7.3), “more general”.
 
 > **Stacks Project, Tag 0208, conditions (1), (2) and (3).** For a morphism of finite type to a
 > locally Noetherian scheme, properness, the existence of exactly one dotted arrow in every
@@ -132,7 +132,7 @@ theorem isProper_tfae_of_isFiniteType {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 05JY](https://stacks.math.columbia.edu/tag/05JY) in the Stacks Project.
 
-**`AlgebraicGeometry.universallyClosed_tfae_valuative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/UniversallyClosedValuative/Basic.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/UniversallyClosedValuative/Basic.lean#L166). References: EGA II (7.3.8), “fin. type, Noeth. base”.
+**`AlgebraicGeometry.universallyClosed_tfae_valuative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/UniversallyClosedValuative/Basic.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/UniversallyClosedValuative/Basic.lean#L166). References: EGA II (7.3.8), “fin. type, Noeth. base”.
 
 > For a finite type morphism to a locally Noetherian scheme, universal closedness, closedness
 > after adjoining any finite number of affine coordinates, the existence part of the valuative
@@ -155,4 +155,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 32.15, Tag 0CM1](https://stacks.math.columbia.edu/tag/0CM1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

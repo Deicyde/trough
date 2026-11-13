@@ -8,7 +8,7 @@ proof: formalized
 
 # Cook-Levin: the five generators as sub-machines of one host
 
-22 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html).
+22 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html).
 
 ## Host stacks and the five embeddings
 
@@ -19,7 +19,7 @@ stack, and five private counter blocks: an update block and a situation-definiti
 with one stack per counter of the family generator, and a shift block, an accept block and an
 init block, with one stack per counter of the shift, accept and init generator respectively.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.HK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#hk).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.HK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#hk).
 
 ## Alphabets of the Cook–Levin host machine
 
@@ -28,7 +28,7 @@ the following alphabets: the shared output stack holds Booleans, the input-code 
 in $\{0, \dots, g - 1\}$, and every stack of every private counter block has a one-element
 alphabet.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.HΓ`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#h).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.HΓ`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#h).
 
 ## Host stack renaming for the update generator
 
@@ -37,7 +37,7 @@ clause-family generator, used as the update generator, to the host stacks that s
 stack to the shared output stack and the counter stack of each counter $x$ to the counter $x$ of
 the host's update block.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.eU`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#e-u).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.eU`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#e-u).
 
 ## Host stack renaming for the situation-definition generator
 
@@ -46,7 +46,7 @@ the clause-family generator, used as the situation-definition generator, to the 
 sends the output stack to the shared output stack and the counter stack of each counter $x$ to
 the counter $x$ of the host's situation-definition block.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.eS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#e-s).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.eS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#e-s).
 
 ## Host stack renaming for the shift generator
 
@@ -54,7 +54,7 @@ The map from the stacks of the shift
 generator to the host stacks that sends the output stack to the shared output stack and the
 counter stack of each shift counter $x$ to the counter $x$ of the host's shift block.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.eH`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#e-h).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.eH`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#e-h).
 
 ## Host stack renaming for the accept generator
 
@@ -62,7 +62,7 @@ The map from the stacks of the accept
 generator to the host stacks that sends the output stack to the shared output stack and the
 counter stack of each accept counter $x$ to the counter $x$ of the host's accept block.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.eA`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#e-a).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.eA`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#e-a).
 
 ## Host stack renaming for the init generator
 
@@ -71,7 +71,7 @@ generator to the host stacks that sends the output stack to the shared output st
 stack to the host's input-code stack, and the counter stack of each init counter $x$ to the
 counter $x$ of the host's init block.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.eI`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#e-i).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.eI`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#e-i).
 
 ## Embedding of the update generator's stacks into the host
 
@@ -82,7 +82,7 @@ output stack goes to the host's shared output stack, and the counter stack $x$ g
 $x$ of the host's private update block. Distinct stacks go to distinct host stacks, and each
 stack's alphabet is identified with its host stack's alphabet by the identity.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.embU`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#emb-u).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.embU`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#emb-u).
 
 ## Embedding of the situation-definition generator into the host
 
@@ -92,7 +92,7 @@ generator, into the host stacks that sends the output stack to the shared output
 counter stack of each counter $x$ to the counter $x$ of the host's situation-definition block,
 identifying each stack's alphabet with itself.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.embS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#emb-s).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.embS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#emb-s).
 
 ## Embedding of the shift generator into the host
 
@@ -101,7 +101,7 @@ of the shift generator's stacks into the host stacks that sends the output stack
 output stack and the counter stack of each shift counter $x$ to the counter $x$ of the host's
 shift block, identifying each stack's alphabet with itself.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.embH`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#emb-h).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.embH`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#emb-h).
 
 ## Embedding of the accept generator into the host
 
@@ -110,7 +110,7 @@ of the accept generator's stacks into the host stacks that sends the output stac
 output stack and the counter stack of each accept counter $x$ to the counter $x$ of the host's
 accept block, identifying each stack's alphabet with itself.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.embA`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#emb-a).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.embA`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#emb-a).
 
 ## Embedding of the init generator into the host
 
@@ -120,7 +120,7 @@ sends the output stack to the shared output stack, the input stack to the host's
 stack, and the counter stack of each init counter $x$ to the counter $x$ of the host's init
 block, identifying each stack's alphabet with itself.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.embI`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#emb-i).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.embI`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#emb-i).
 
 ## Labels of the Cook–Levin host machine
 
@@ -131,7 +131,7 @@ of the shift generator's labels (for $N$ situations, $K$ stacks, $g$ symbols and
 copy of the accept generator's labels (for $n_1$ code clauses and $g$ symbols), a copy of the
 init generator's labels (for $g$ symbols and $n_Y$ certificate codes), and one final label.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.HL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#hl).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.HL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#hl).
 
 ## Chaining step of the host program
 
@@ -139,7 +139,7 @@ For a host label $l$, the chaining step is the host
 statement that sets the Boolean internal state to false (the state in which every generator
 starts) and then jumps to $l$.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.chain`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#chain).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.chain`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#chain).
 
 ## The host program
 
@@ -153,7 +153,7 @@ them. At a generator's final label the host performs one chaining step: it reset
 state to false and jumps to the start label of the next generator, and after accept it jumps to
 the final host label, where it halts.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.hprog`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#hprog).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.hprog`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#hprog).
 
 ## The host as a finite multi-stack Turing machine
 
@@ -169,7 +169,7 @@ from the five generator programs.
 This is a finiteness check only: the input and output stacks are provisional until the
 precomputation is attached.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.hostTM`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#host-tm).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.hostTM`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#host-tm).
 
 ## Sequencing
 
@@ -186,7 +186,7 @@ generator's start label with state bit false on $S_0$, reaches its final label w
 $B_i + B_u + B_s + B_h + B_a + 5$ steps, with some state bit and with output
 $w_a w_h w_s w_u w_i o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.seq_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#seq-run).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.seq_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#seq-run).
 
 ## The host on the real generators of a machine
 
@@ -204,7 +204,7 @@ state of $M$, the number of the input stack, and the sorted distinct codes of th
 The input itself is not a parameter: the init generator reads it from the host's input-code
 stack.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.realProg`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#real-prog).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.realProg`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#real-prog).
 
 ## The formula emitted by the host
 
@@ -216,7 +216,7 @@ this order, of the accept family for $\mathit{acc}$, the shift family, the situa
 family, the update family, and the init family for $x$, $Y$ and $m$, all at run length $T$ and
 stack cap $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.Phi`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#phi).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.Phi`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#phi).
 
 ## Step bound of the host
 
@@ -234,7 +234,7 @@ $$c_I R^5 + c_F R^5 + c_F R^5 + c_S R^6 + c_A R^4 + 5,$$
 the bounds of the init, update, situation-definition, shift and accept generators plus five
 chaining steps.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.realB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#real-b).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.realB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#real-b).
 
 ## The assembled generator, after the precomputation
 
@@ -251,7 +251,7 @@ final label within the step bound $\mathrm{realB}(E, Y, m, T)$ (the five generat
 five chaining steps), with some state bit and with output stack the dense encoding of the formula
 $\Phi(E, x, Y, a, m, T)$ followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.real_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 389](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L389). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#real-run).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.real_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 389](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L389). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#real-run).
 
 ## Correctness of the assembled formula
 
@@ -268,7 +268,7 @@ $\mathit{acc}$ on top of the output stack.
 The proof carries the soundness and completeness of the five families through the
 concatenation.
 
-Formalized by `Cslib.Complexity.CookLevin.Assembly.phi_iff`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#phi-iff).
+Formalized by `Cslib.Complexity.CookLevin.Assembly.phi_iff`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Assembly.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Assembly.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html#phi-iff).
 
 ## Depends on
 
@@ -277,4 +277,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cook-Levin: the five generators as sub-machines of one host](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-the-five-generators-as-sub-machines-o)

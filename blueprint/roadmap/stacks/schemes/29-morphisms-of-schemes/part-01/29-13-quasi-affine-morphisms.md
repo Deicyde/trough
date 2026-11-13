@@ -8,13 +8,13 @@ proof: formalized
 
 # 29.13 Quasi-affine morphisms
 
-Section 29.13 of the Stacks Project, [Tag 01SJ](https://stacks.math.columbia.edu/tag/01SJ). 8 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.13 of the Stacks Project, [Tag 01SJ](https://stacks.math.columbia.edu/tag/01SJ). 8 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01SK, a definition
 
 [Tag 01SK](https://stacks.math.columbia.edu/tag/01SK) in the Stacks Project.
 
-**`AlgebraicGeometry.IsQuasiAffineHom`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean#L47).
+**`AlgebraicGeometry.IsQuasiAffineHom`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean#L47).
 
 > A morphism of schemes is quasi-affine if the inverse image of every affine open subscheme of
 > the target is a quasi-affine scheme.
@@ -27,7 +27,7 @@ class IsQuasiAffineHom {X S : Scheme} (f : X ⟶ S) : Prop
 
 [Tag 01SL](https://stacks.math.columbia.edu/tag/01SL) in the Stacks Project.
 
-**`AlgebraicGeometry.isSeparated_of_isQuasiAffineHom`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean#L52). The attribute's comment: “separated”. References: EGA II (1.2.4), “more general”; EGA II (5.1.6), “partial”.
+**`AlgebraicGeometry.isSeparated_of_isQuasiAffineHom`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean#L52). The attribute's comment: “separated”. References: EGA II (1.2.4), “more general”; EGA II (5.1.6), “partial”.
 
 > A quasi-affine morphism of schemes is separated.
 
@@ -36,7 +36,7 @@ instance isSeparated_of_isQuasiAffineHom {X S : Scheme.{u}} (f : X ⟶ S)
     [IsQuasiAffineHom f] : IsSeparated f
 ```
 
-**`AlgebraicGeometry.quasiCompact_of_isQuasiAffineHom`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean#L66). The attribute's comment: “quasi-compact”.
+**`AlgebraicGeometry.quasiCompact_of_isQuasiAffineHom`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean#L66). The attribute's comment: “quasi-compact”.
 
 > A quasi-affine morphism of schemes is quasi-compact.
 
@@ -49,7 +49,7 @@ instance quasiCompact_of_isQuasiAffineHom {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 01SM](https://stacks.math.columbia.edu/tag/01SM) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasiAffineHom_iff_toSpecΓ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFlatBaseChange.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFlatBaseChange.lean#L140). The attribute's comment: “(4) over an affine base”. References: EGA II (5.1.6), “(a)<=>(b), affine base”; EGA II (5.1.8).
+**`AlgebraicGeometry.isQuasiAffineHom_iff_toSpecΓ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFlatBaseChange.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFlatBaseChange.lean#L140). The attribute's comment: “(4) over an affine base”. References: EGA II (5.1.6), “(a)<=>(b), affine base”; EGA II (5.1.8).
 
 > **Stacks Project, Tag 01SM, part (4), over an affine base.** A morphism to an affine scheme
 > is quasi-affine if and only if the canonical morphism from its source to the spectrum of its
@@ -61,7 +61,7 @@ theorem isQuasiAffineHom_iff_toSpecΓ [IsAffine S] (f : X ⟶ S) :
     IsQuasiAffineHom f ↔ IsOpenImmersion X.toSpecΓ ∧ QuasiCompact X.toSpecΓ
 ```
 
-**`AlgebraicGeometry.isQuasiAffineHom_iff_exists_isOpenCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineLocal.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineLocal.lean#L154). The attribute's comment: “(1) ↔ (2)”. References: EGA II (5.1.1).
+**`AlgebraicGeometry.isQuasiAffineHom_iff_exists_isOpenCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineLocal.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineLocal.lean#L154). The attribute's comment: “(1) ↔ (2)”. References: EGA II (5.1.1).
 
 > A morphism of schemes is quasi-affine if and only if there exists an affine open covering of
 > the target all of whose members have quasi-affine inverse image.
@@ -73,7 +73,7 @@ theorem isQuasiAffineHom_iff_exists_isOpenCover {X S : Scheme.{u}} (f : X ⟶ S)
         ∀ i, Scheme.IsQuasiAffine (f ⁻¹ᵁ (U i : S.Opens)).toScheme
 ```
 
-**`AlgebraicGeometry.isQuasiAffineHom_iff_canonicalMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean#L140). The attribute's comment: “(1) ↔ (4) over a general base, carrying the quasi-compact and quasi-separated hypotheses that make `f_* 𝒪_X` quasi-coherent”. References: EGA II (5.1.2), “more general”; EGA II (5.1.6).
+**`AlgebraicGeometry.isQuasiAffineHom_iff_canonicalMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean#L140). The attribute's comment: “(1) ↔ (4) over a general base, carrying the quasi-compact and quasi-separated hypotheses that make `f_* 𝒪_X` quasi-coherent”. References: EGA II (5.1.2), “more general”; EGA II (5.1.6).
 
 > A morphism of schemes which is quasi-compact and quasi-separated — so that `f_* 𝒪_X` is a
 > quasi-coherent sheaf of `𝒪_S`-algebras and the canonical morphism `X ⟶ Spec_S(f_* 𝒪_X)` exists —
@@ -85,7 +85,7 @@ theorem isQuasiAffineHom_iff_canonicalMorphism :
       IsOpenImmersion (canonicalMorphism f) ∧ QuasiCompact (canonicalMorphism f)
 ```
 
-**`AlgebraicGeometry.isOpenImmersion_canonicalMorphism`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean#L161). The attribute's comment: “(1) ⇒ (4), the open-immersion half”.
+**`AlgebraicGeometry.isOpenImmersion_canonicalMorphism`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean#L161). The attribute's comment: “(1) ⇒ (4), the open-immersion half”.
 
 > The canonical morphism from the source of a quasi-affine morphism to the relative spectrum of
 > the pushed-forward structure sheaf is an open immersion.
@@ -95,7 +95,7 @@ instance isOpenImmersion_canonicalMorphism (f : X ⟶ S) [IsQuasiAffineHom f] :
     IsOpenImmersion (canonicalMorphism f)
 ```
 
-**`AlgebraicGeometry.quasiCompact_canonicalMorphism`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean#L168). The attribute's comment: “(1) ⇒ (4), the quasi-compactness half”.
+**`AlgebraicGeometry.quasiCompact_canonicalMorphism`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean#L168). The attribute's comment: “(1) ⇒ (4), the quasi-compactness half”.
 
 > The canonical morphism from the source of a quasi-affine morphism to the relative spectrum of
 > the pushed-forward structure sheaf is quasi-compact.
@@ -105,7 +105,7 @@ instance quasiCompact_canonicalMorphism (f : X ⟶ S) [IsQuasiAffineHom f] :
     QuasiCompact (canonicalMorphism f)
 ```
 
-**`AlgebraicGeometry.isQuasiAffineHom_iff_exists_relativeSpec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean#L175). The attribute's comment: “(1) ↔ (3) over a general base, no hypotheses”.
+**`AlgebraicGeometry.isQuasiAffineHom_iff_exists_relativeSpec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineRelativeSpec.lean#L175). The attribute's comment: “(1) ↔ (3) over a general base, no hypotheses”.
 
 > A morphism of schemes `f : X ⟶ S` is quasi-affine if and only if there is a quasi-coherent
 > sheaf `A` of `𝒪_S`-algebras and a quasi-compact open immersion `X ⟶ Spec_S(A)` over `S`.
@@ -118,7 +118,7 @@ theorem isQuasiAffineHom_iff_exists_relativeSpec (f : X ⟶ S) :
         IsOpenImmersion g ∧ QuasiCompact g ∧ g ≫ @relativeSpecToBase S A hA = f
 ```
 
-**`AlgebraicGeometry.isQuasiAffineHom_iff_of_iSup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineStability.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineStability.lean#L162). The attribute's comment: “(1) iff (2)”.
+**`AlgebraicGeometry.isQuasiAffineHom_iff_of_iSup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineStability.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineStability.lean#L162). The attribute's comment: “(1) iff (2)”.
 
 > **Stacks Project, Tag 01SM, (1) is equivalent to (2).** A morphism of schemes is
 > quasi-affine if and only if the preimages of the members of one affine open covering of the
@@ -134,7 +134,7 @@ theorem isQuasiAffineHom_iff_of_iSup_eq_top {X S : Scheme.{u}} (f : X ⟶ S) {ι
 
 [Tag 01SN](https://stacks.math.columbia.edu/tag/01SN) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasiAffineHom_isStableUnderComposition`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineStability.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineStability.lean#L185). References: EGA II (5.1.10).
+**`AlgebraicGeometry.isQuasiAffineHom_isStableUnderComposition`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineStability.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineStability.lean#L185). References: EGA II (5.1.10).
 
 > **Stacks Project, Tag 01SN.** A composition of quasi-affine morphisms of schemes is
 > quasi-affine.
@@ -149,7 +149,7 @@ instance isQuasiAffineHom_isStableUnderComposition :
 
 [Tag 01SO](https://stacks.math.columbia.edu/tag/01SO) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasiAffineHom_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineStability.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineStability.lean#L201). References: EGA IV (2.7.1), “(xiv)”.
+**`AlgebraicGeometry.isQuasiAffineHom_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineStability.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineStability.lean#L201). References: EGA IV (2.7.1), “(xiv)”.
 
 > **Stacks Project, Tag 01SO.** Quasi-affine morphisms of schemes are stable under arbitrary
 > base change.
@@ -164,7 +164,7 @@ instance isQuasiAffineHom_isStableUnderBaseChange :
 
 [Tag 02JR](https://stacks.math.columbia.edu/tag/02JR) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasiAffineHom_of_isImmersion_of_quasiCompact`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/QuasiAffineImmersion.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/QuasiAffineImmersion.lean#L40).
+**`AlgebraicGeometry.isQuasiAffineHom_of_isImmersion_of_quasiCompact`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/QuasiAffineImmersion.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/QuasiAffineImmersion.lean#L40).
 
 > **Stacks Project, Tag 02JR.** Every quasi-compact immersion of schemes is
 > quasi-affine.
@@ -179,7 +179,7 @@ instance isQuasiAffineHom_of_isImmersion_of_quasiCompact
 
 [Tag 01SP](https://stacks.math.columbia.edu/tag/01SP) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasiAffineHom_iff_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean#L74). The attribute's comment: “characterization”.
+**`AlgebraicGeometry.isQuasiAffineHom_iff_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean#L74). The attribute's comment: “characterization”.
 
 > A morphism from an affine scheme is quasi-affine if and only if it is quasi-compact.
 
@@ -188,7 +188,7 @@ theorem isQuasiAffineHom_iff_quasiCompact {X S : Scheme.{u}} [IsAffine X]
     (f : X ⟶ S) : IsQuasiAffineHom f ↔ QuasiCompact f
 ```
 
-**`AlgebraicGeometry.isQuasiAffineHom_of_isQuasiAffine_of_quasiSeparatedSpace`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean#L85). The attribute's comment: “quasi-separated target”. References: EGA II (5.1.8), “X q-affine ⇒ f q-affine”.
+**`AlgebraicGeometry.isQuasiAffineHom_of_isQuasiAffine_of_quasiSeparatedSpace`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean#L85). The attribute's comment: “quasi-separated target”. References: EGA II (5.1.8), “X q-affine ⇒ f q-affine”.
 
 > Every morphism from a quasi-affine scheme to a quasi-separated scheme is quasi-affine.
 
@@ -202,7 +202,7 @@ instance isQuasiAffineHom_of_isQuasiAffine_of_quasiSeparatedSpace
 
 [Tag 054G](https://stacks.math.columbia.edu/tag/054G) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasiAffineHom_of_isQuasiAffine_of_quasiSeparatedSpace`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean#L85). The attribute's comment: “absolute corollary”. References: EGA II (5.1.8), “X q-affine ⇒ f q-affine”.
+**`AlgebraicGeometry.isQuasiAffineHom_of_isQuasiAffine_of_quasiSeparatedSpace`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffine.lean#L85). The attribute's comment: “absolute corollary”. References: EGA II (5.1.8), “X q-affine ⇒ f q-affine”.
 
 > Every morphism from a quasi-affine scheme to a quasi-separated scheme is quasi-affine.
 
@@ -212,7 +212,7 @@ instance isQuasiAffineHom_of_isQuasiAffine_of_quasiSeparatedSpace
     (f : X ⟶ S) : IsQuasiAffineHom f
 ```
 
-**`AlgebraicGeometry.IsQuasiAffineHom.of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineQuasiSeparated.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineQuasiSeparated.lean#L36). The attribute's comment: “relative statement”.
+**`AlgebraicGeometry.IsQuasiAffineHom.of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineQuasiSeparated.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Affine/QuasiAffineQuasiSeparated.lean#L36). The attribute's comment: “relative statement”.
 
 > A morphism `g : X ⟶ Y` to a scheme quasi-separated over a base `S` via `h : Y ⟶ S` is
 > quasi-affine as soon as the structure morphism `g ≫ h` of `X` over `S` is quasi-affine.
@@ -229,4 +229,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.13, Tag 01SJ](https://stacks.math.columbia.edu/tag/01SJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

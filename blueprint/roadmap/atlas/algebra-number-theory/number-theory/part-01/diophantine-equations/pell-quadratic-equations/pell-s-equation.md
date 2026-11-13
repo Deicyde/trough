@@ -7,7 +7,7 @@ statement: formalized
 
 # Pell's equation
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-s-equation/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-s-equation/index.html).
 
 ## Composing a Pell-type solution with a norm-one unit
 
@@ -24,7 +24,7 @@ hypotheses beyond the two equations.
 
 - E. L. Roettger and H. C. Williams, "Some Remarks Concerning the Lucas-Lehmer Primality Test," Journal of Integer Sequences 28 (2025), Article 25.2.5, Theorem (an observation of Euler), equation, lines 605–614, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Roettger/roettger15.tex>
 
-Formalized by `MetaMathlibExt.pellType_solution_mul_unit`, a theorem declared in [MathlibExt/NumberTheory/QuadraticForms/PellTypeSolutionMulUnit.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/QuadraticForms/PellTypeSolutionMulUnit.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-s-equation/index.html#pell-type-solution-mul-unit).
+Formalized by `MetaMathlibExt.pellType_solution_mul_unit`, a theorem declared in [MathlibExt/NumberTheory/QuadraticForms/PellTypeSolutionMulUnit.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/QuadraticForms/PellTypeSolutionMulUnit.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-s-equation/index.html#pell-type-solution-mul-unit).
 
 ## Solutions of Pell's equation are continued-fraction convergents
 
@@ -38,7 +38,7 @@ $x / y$.
 
 - J.-L. Lagrange (1770). Listed as §84 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `pell_solution_convergent` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.PellConvergentWanted.NumberTheory.pell_solution_is_convergent` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellConvergentWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellConvergentWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-s-equation/index.html#pell-solution-is-convergent).
+Stated but not proved: `MathlibExt.NumberTheory.PellConvergentWanted.NumberTheory.pell_solution_is_convergent` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellConvergentWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellConvergentWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-s-equation/index.html#pell-solution-is-convergent).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Pell's equation](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-s-equation/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-s-equation)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-s-equation)

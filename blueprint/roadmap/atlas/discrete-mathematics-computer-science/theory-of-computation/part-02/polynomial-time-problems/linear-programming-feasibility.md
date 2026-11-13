@@ -7,14 +7,14 @@ statement: formalized
 
 # Linear programming feasibility
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/linear-programming-feasibility/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/linear-programming-feasibility/index.html).
 
 ## Signed integer from a magnitude–sign pair
 
 The integer decoded from a pair $(k, s)$ of a
 natural number $k$ and a boolean $s$ is $k$ if $s$ is true and $-k$ if $s$ is false.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LPInPWanted.decodeInt`, a definition declared in [WantedExt/Complexity/KeyTheorems/LPInPWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/LPInPWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/linear-programming-feasibility/index.html#decode-int).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LPInPWanted.decodeInt`, a definition declared in [WantedExt/Complexity/KeyTheorems/LPInPWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/LPInPWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/linear-programming-feasibility/index.html#decode-int).
 
 ## Rational linear-program feasibility
 
@@ -28,7 +28,7 @@ natural number $k$ and a boolean $s$ stands for the integer $k$ if $s$ is true a
 false, $A_{rj}$ is the integer given by the $j$-th entry of the $r$-th row and $b_r$ is the
 integer given by the $r$-th entry of $b$. Bitstrings that do not decode are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LPInPWanted.lpDec`, a definition declared in [WantedExt/Complexity/KeyTheorems/LPInPWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/LPInPWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/linear-programming-feasibility/index.html#lp-dec).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LPInPWanted.lpDec`, a definition declared in [WantedExt/Complexity/KeyTheorems/LPInPWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/LPInPWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/linear-programming-feasibility/index.html#lp-dec).
 
 ## Linear programming is in P (Khachiyan)
 
@@ -45,7 +45,7 @@ if $s$ is false.
 
 - L. G. Khachiyan, "A polynomial algorithm in linear programming", Soviet Mathematics Doklady 20 (1979), 191-194.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.LPInPWanted.lp_in_p` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/LPInPWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/LPInPWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/linear-programming-feasibility/index.html#lp-in-p).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.LPInPWanted.lp_in_p` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/LPInPWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/LPInPWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/linear-programming-feasibility/index.html#lp-in-p).
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Linear programming feasibility](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/linear-programming-feasibility/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/polynomial-time-problems/linear-programming-feasibility)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/polynomial-time-problems/linear-programming-feasibility)

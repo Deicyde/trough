@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.33 A finite flat module which is not projective
 
-Section 110.33 of the Stacks Project, [Tag 052H](https://stacks.math.columbia.edu/tag/052H). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.33 of the Stacks Project, [Tag 052H](https://stacks.math.columbia.edu/tag/052H). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05FY, a lemma
 
 [Tag 05FY](https://stacks.math.columbia.edu/tag/05FY) in the Stacks Project.
 
-**`Stacks.Examples.exists_flat_closedImmersion_not_isOpenMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Flatness/StrangeFlatModules.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Flatness/StrangeFlatModules.lean#L119). The attribute's comment: “part (2)”.
+**`Stacks.Examples.exists_flat_closedImmersion_not_isOpenMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Flatness/StrangeFlatModules.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Flatness/StrangeFlatModules.lean#L119). The attribute's comment: “part (2)”.
 
 > A flat closed immersion of schemes need not be an open map.
 
@@ -26,9 +26,9 @@ theorem exists_flat_closedImmersion_not_isOpenMap :
 
 Declarations registered for the tag:
 
-- [`Module.Finite.quotient`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Finite.quotient#doc) registered with `add_to_stacks` in [StacksFrontier/Examples/Flatness/StrangeFlatModules.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Flatness/StrangeFlatModules.lean#L53) (StacksFrontier): “part (1): finite”. References: EGA 0 (5.2.1), “special case”; SGA 6 I (3.2), “special case”.
-- [`Stacks.FiniteFlatNotProjective.quotientModule_flat`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/LocallyFree/Basic.lean#L179), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Examples/Flatness/StrangeFlatModules.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Flatness/StrangeFlatModules.lean#L54) (StacksFrontier): “part (1): flat”.
-- [`Stacks.FiniteFlatNotProjective.quotientModule_not_projective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/LocallyFree/Basic.lean#L214), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Examples/Flatness/StrangeFlatModules.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Flatness/StrangeFlatModules.lean#L55) (StacksFrontier): “part (1): not projective”.
+- [`Module.Finite.quotient`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Finite.quotient#doc) registered with `add_to_stacks` in [StacksFrontier/Examples/Flatness/StrangeFlatModules.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Flatness/StrangeFlatModules.lean#L53) (StacksFrontier): “part (1): finite”. References: EGA 0 (5.2.1), “special case”; SGA 6 I (3.2), “special case”.
+- [`Stacks.FiniteFlatNotProjective.quotientModule_flat`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/LocallyFree/Basic.lean#L183), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Examples/Flatness/StrangeFlatModules.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Flatness/StrangeFlatModules.lean#L54) (StacksFrontier): “part (1): flat”.
+- [`Stacks.FiniteFlatNotProjective.quotientModule_not_projective`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/LocallyFree/Basic.lean#L217), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Examples/Flatness/StrangeFlatModules.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Flatness/StrangeFlatModules.lean#L55) (StacksFrontier): “part (1): not projective”.
 
 ## Depends on
 
@@ -37,4 +37,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.33, Tag 052H](https://stacks.math.columbia.edu/tag/052H)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

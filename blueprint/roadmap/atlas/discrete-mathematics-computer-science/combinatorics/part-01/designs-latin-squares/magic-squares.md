@@ -7,7 +7,7 @@ statement: formalized
 
 # Magic squares
 
-7 results, 5 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html).
+7 results, 5 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html).
 
 ## Equal line sums from two orthogonal diagonal Latin squares
 
@@ -24,7 +24,7 @@ every row sum, every column sum, the main diagonal sum and the antidiagonal sum 
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 1, Entry 1.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch1.Entry1Magicsquare3.ramanujan_part1_ch1_entry1_magicsquare3`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch1Entry1.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch1Entry1.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html#ramanujan-part1-ch1-entry1-magicsquare3).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch1.Entry1Magicsquare3.ramanujan_part1_ch1_entry1_magicsquare3`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch1Entry1.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch1Entry1.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html#ramanujan-part1-ch1-entry1-magicsquare3).
 
 ## Magic squares
 
@@ -39,7 +39,7 @@ No condition is imposed on the entries themselves.
 
 - Gek L. Chia and Wai Keong Kok, *Self-Complementary Magic Squares of Singly Even Orders*, Journal of Integer Sequences 27 (2024), Article 24.1.4, Section 1.
 
-Formalized by `MetaMathlibExt.IsMagicSquare`, a definition declared in [WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html#is-magic-square).
+Formalized by `MetaMathlibExt.IsMagicSquare`, a definition declared in [WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html#is-magic-square).
 
 ## Reduced magic squares
 
@@ -55,7 +55,7 @@ with every entry reduced by $1$.
 
 - Gek L. Chia and Wai Keong Kok, *Self-Complementary Magic Squares of Singly Even Orders*, Journal of Integer Sequences 27 (2024), Article 24.1.4, Section 3.
 
-Formalized by `MetaMathlibExt.IsReducedMagicSquare`, a definition declared in [WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html#is-reduced-magic-square).
+Formalized by `MetaMathlibExt.IsReducedMagicSquare`, a definition declared in [WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html#is-reduced-magic-square).
 
 ## The reduced Lo Shu square
 
@@ -67,7 +67,7 @@ square of order $3$; its magic sum is $12$.
 
 - Gek L. Chia and Wai Keong Kok, *Self-Complementary Magic Squares of Singly Even Orders*, Journal of Integer Sequences 27 (2024), Article 24.1.4, Section 3 (reduced magic squares).
 
-Formalized by `MetaMathlibExt.isReducedMagicSquare_loShu`, a theorem declared in [WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html#is-reduced-magic-square-lo-shu).
+Formalized by `MetaMathlibExt.isReducedMagicSquare_loShu`, a theorem declared in [WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html#is-reduced-magic-square-lo-shu).
 
 ## A 2×2 square that is not a reduced magic square
 
@@ -80,7 +80,7 @@ Its entries are $0, 1, 2, 3$, each once, but its row sums are $1$ and $5$, so it
 
 - Gek L. Chia and Wai Keong Kok, *Self-Complementary Magic Squares of Singly Even Orders*, Journal of Integer Sequences 27 (2024), Article 24.1.4, Section 3 (reduced magic squares).
 
-Formalized by `MetaMathlibExt.not_isReducedMagicSquare_zero_one_two_three`, a theorem declared in [WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html#not-is-reduced-magic-square-zero-one-two).
+Formalized by `MetaMathlibExt.not_isReducedMagicSquare_zero_one_two_three`, a theorem declared in [WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html#not-is-reduced-magic-square-zero-one-two).
 
 ## Extended Strachey construction
 
@@ -102,7 +102,7 @@ ones), so the statement is vacuous there.
 
 - Gek L. Chia and Wai Keong Kok, *Self-Complementary Magic Squares of Singly Even Orders*, Journal of Integer Sequences 27 (2024), Article 24.1.4, Theorem 1, with Definitions 1-3 (`jis-2024-24.1.4-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.isReducedMagicSquare_extendedStrachey` is written with `theorem_wanted` in [WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html#is-reduced-magic-square-extended-strache).
+Stated but not proved: `MetaMathlibExt.isReducedMagicSquare_extendedStrachey` is written with `theorem_wanted` in [WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html#is-reduced-magic-square-extended-strache).
 
 ## Ref-symmetric squares from the Strachey construction
 
@@ -133,7 +133,7 @@ $A_1$ satisfies the row condition.
 
 - Gek L. Chia and Wai Keong Kok, *Self-Complementary Magic Squares of Singly Even Orders*, Journal of Integer Sequences 27 (2024), Article 24.1.4, Theorem 2, with Definitions 4-6 (`jis-2024-24.1.4-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.isReducedMagicSquare_refSymmetric_strachey` is written with `theorem_wanted` in [WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html#is-reduced-magic-square-ref-symmetric-st).
+Stated but not proved: `MetaMathlibExt.isReducedMagicSquare_refSymmetric_strachey` is written with `theorem_wanted` in [WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SinglyEvenMagicSquaresWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html#is-reduced-magic-square-ref-symmetric-st).
 
 ## Depends on
 
@@ -142,4 +142,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Magic squares](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/magic-squares/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/designs-latin-squares/magic-squares)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/designs-latin-squares/magic-squares)

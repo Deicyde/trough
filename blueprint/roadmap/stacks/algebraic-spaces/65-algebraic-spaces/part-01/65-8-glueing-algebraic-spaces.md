@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.coproductInl_isOpenImmersion, AlgebraicGeometry.coproductInl_isClosedImmersion, AlgebraicGeometry.Sheaf.exists_clopen_decomposition_of_isColimit_cofan_ulift, AlgebraicGeometry.Space.exists_clopen_scheme_coproduct, AlgebraicGeometry.Sheaf.isEmpty_toScheme_of_eq_of_ne_ulift, AlgebraicGeometry.Space.isAlgebraicSpace_of_coproduct, AlgebraicGeometry.isAlgebraicSpace_coproduct, AlgebraicGeometry.Space.isAlgebraicSpaceULift_coproduct
+lean: AlgebraicGeometry.coproductInl_isOpenImmersion, AlgebraicGeometry.coproductInl_isClosedImmersion, AlgebraicGeometry.Sheaf.exists_clopen_decomposition_of_isColimit_cofan_ulift, AlgebraicGeometry.Space.exists_clopen_scheme_coproduct, AlgebraicGeometry.Sheaf.isEmpty_toScheme_of_eq_of_ne_ulift, AlgebraicGeometry.Space.isAlgebraicSpace_of_coproduct, AlgebraicGeometry.isAlgebraicSpace_coproduct, AlgebraicGeometry.Space.isAlgebraicSpace_of_isColimit_of_contains
 statement: formalized
 proof: formalized
 ---
 
 # 65.8 Glueing algebraic spaces
 
-Section 65.8 of the Stacks Project, [Tag 02WN](https://stacks.math.columbia.edu/tag/02WN). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 65.8 of the Stacks Project, [Tag 02WN](https://stacks.math.columbia.edu/tag/02WN). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F15, a lemma
 
 [Tag 0F15](https://stacks.math.columbia.edu/tag/0F15) in the Stacks Project.
 
-**`AlgebraicGeometry.coproductInl_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoproductInclusion.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoproductInclusion.lean#L449). The attribute's comment: “open immersion”.
+**`AlgebraicGeometry.coproductInl_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoproductInclusion.lean, line 449](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoproductInclusion.lean#L449). The attribute's comment: “open immersion”.
 
 > **Stacks 0F15.** The first inclusion into a binary coproduct of sheaves on the big fppf
 > site of `S` is representable by open immersions. By symmetry the same holds for the second
@@ -27,7 +27,7 @@ theorem coproductInl_isOpenImmersion (hc : IsColimit (BinaryCofan.mk iF iG)) :
       (BigFppfOver.toScheme B S hS))) iF.hom
 ```
 
-**`AlgebraicGeometry.coproductInl_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoproductInclusion.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoproductInclusion.lean#L467). The attribute's comment: “closed immersion”.
+**`AlgebraicGeometry.coproductInl_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoproductInclusion.lean, line 467](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoproductInclusion.lean#L467). The attribute's comment: “closed immersion”.
 
 > **Stacks 0F15.** The first inclusion into a binary coproduct of sheaves on the big fppf
 > site of `S` is representable by closed immersions. By symmetry the same holds for the second
@@ -40,7 +40,7 @@ theorem coproductInl_isClosedImmersion (hc : IsColimit (BinaryCofan.mk iF iG)) :
       (BigFppfOver.toScheme B S hS))) iF.hom
 ```
 
-**`AlgebraicGeometry.Sheaf.exists_clopen_decomposition_of_isColimit_cofan_ulift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproductDecomposition.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproductDecomposition.lean#L86). The attribute's comment: “in an arbitrary value universe”.
+**`AlgebraicGeometry.Sheaf.exists_clopen_decomposition_of_isColimit_cofan_ulift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproductDecomposition.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproductDecomposition.lean#L86). The attribute's comment: “in an arbitrary value universe”.
 
 > **Stacks 02WO and Stacks 0F15 for sheaves with values in a universe `max w u` independent of
 > the universe `u` of the schemes.** A section `x` of a coproduct `P = ∐ᵢ Fᵢ` of pointwise
@@ -81,7 +81,7 @@ theorem Sheaf.exists_clopen_decomposition_of_isColimit_cofan_ulift {I : Type v} 
 
 [Tag 02WO](https://stacks.math.columbia.edu/tag/02WO) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_clopen_scheme_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Glueing/RepresentableCoproduct.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Glueing/RepresentableCoproduct.lean#L53).
+**`AlgebraicGeometry.Space.exists_clopen_scheme_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Glueing/RepresentableCoproduct.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Glueing/RepresentableCoproduct.lean#L53).
 
 > A sheaf coproduct represented by a scheme comes from an open-and-closed
 > coproduct decomposition of that scheme.
@@ -108,7 +108,7 @@ theorem exists_clopen_scheme_coproduct
         (fun i => (BigFppfOver.toScheme B S hS).map (j i))))
 ```
 
-**`AlgebraicGeometry.Sheaf.exists_clopen_decomposition_of_isColimit_cofan_ulift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproductDecomposition.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproductDecomposition.lean#L86). The attribute's comment: “in an arbitrary value universe, for pointwise `u`-small sheaves and a `u`-small index type; the smallness hypotheses are absent from `AlgebraicGeometry.Sheaf.exists_clopen_decomposition_of_isColimit_cofan`, which is the same statement in the value universe of the site”.
+**`AlgebraicGeometry.Sheaf.exists_clopen_decomposition_of_isColimit_cofan_ulift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproductDecomposition.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproductDecomposition.lean#L86). The attribute's comment: “in an arbitrary value universe, for pointwise `u`-small sheaves and a `u`-small index type; the smallness hypotheses are absent from `AlgebraicGeometry.Sheaf.exists_clopen_decomposition_of_isColimit_cofan`, which is the same statement in the value universe of the site”.
 
 > **Stacks 02WO and Stacks 0F15 for sheaves with values in a universe `max w u` independent of
 > the universe `u` of the schemes.** A section `x` of a coproduct `P = ∐ᵢ Fᵢ` of pointwise
@@ -145,7 +145,7 @@ theorem Sheaf.exists_clopen_decomposition_of_isColimit_cofan_ulift {I : Type v} 
         ∃ t' : T ⟶ W' i, t' ≫ p i = t)
 ```
 
-**`AlgebraicGeometry.Sheaf.isEmpty_toScheme_of_eq_of_ne_ulift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproductDecomposition.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproductDecomposition.lean#L197). The attribute's comment: “disjointness of the legs, in an arbitrary value universe”.
+**`AlgebraicGeometry.Sheaf.isEmpty_toScheme_of_eq_of_ne_ulift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproductDecomposition.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproductDecomposition.lean#L197). The attribute's comment: “disjointness of the legs, in an arbitrary value universe”.
 
 > **Distinct legs of a coproduct cocone of pointwise `u`-small sheaves on the big fppf site of
 > `S` have disjoint images**, for a value universe independent of the universe of the objects of
@@ -171,7 +171,7 @@ theorem Sheaf.isEmpty_toScheme_of_eq_of_ne_ulift {I : Type v} [Small.{u} I]
 
 [Tag 02WP](https://stacks.math.columbia.edu/tag/02WP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_of_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoproductSummand.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoproductSummand.lean#L233).
+**`AlgebraicGeometry.Space.isAlgebraicSpace_of_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoproductSummand.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoproductSummand.lean#L233).
 
 > **Stacks 02WP.** Every summand of a sheaf coproduct that is an algebraic space is an
 > algebraic space.
@@ -192,7 +192,7 @@ theorem isAlgebraicSpace_of_coproduct
 
 [Tag 02WQ](https://stacks.math.columbia.edu/tag/02WQ) in the Stacks Project.
 
-**`AlgebraicGeometry.isAlgebraicSpace_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoproductAlgebraic.lean, line 808](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoproductAlgebraic.lean#L808).
+**`AlgebraicGeometry.isAlgebraicSpace_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoproductAlgebraic.lean, line 808](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoproductAlgebraic.lean#L808).
 
 > **Stacks 02WQ.** A coproduct of algebraic spaces over `S` is an algebraic space over `S`,
 > provided the chosen surjective étale scheme atlases of the members have a coproduct inside the
@@ -228,7 +228,37 @@ theorem isAlgebraicSpace_coproduct
     IsAlgebraicSpace B S hS G.obj
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpaceULift_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproduct.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproduct.lean#L306). The attribute's comment: “in an arbitrary value universe, for a `u`-small index type; the index is unrestricted in `AlgebraicGeometry.isAlgebraicSpace_coproduct`, which is the same statement in the value universe of the site”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_of_isColimit_of_contains`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoproductSpaceContains.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoproductSpaceContains.lean#L61). The attribute's comment: “the precise hypothesis of the source: the coproduct of a choice of surjective étale charts of the members is an object of the site; no bound on the index type”.
+
+> **Stacks 02WQ.** Let `G` be the coproduct, in fppf sheaves over `S`, of algebraic spaces
+> `Fᵢ`, and let `aᵢ : Uᵢ → Fᵢ` be surjective étale charts whose coproduct `∐ Uᵢ` of underlying
+> schemes is an object of the site. Then `G` is an algebraic space over `S`.
+>
+> No bound on the index type and no hypothesis on the diagonal is assumed. The disjoint union
+> `∐ Uᵢ` becomes a coproduct inside the site by
+> `AlgebraicGeometry.BigFppfOver.exists_isColimit_cofan_of_size_sigma_lt`, and
+> `AlgebraicGeometry.isAlgebraicSpace_coproduct` concludes; there the diagonal of `G` is
+> `AlgebraicGeometry.relativelyRepresentable_diag_of_isColimit_cofan`, proved for an index type
+> of any size by splitting `V ×_G W` into the pieces `Vᵢ ×_{Fᵢ} Wᵢ`.
+
+```lean
+theorem isAlgebraicSpace_of_isColimit_of_contains
+    {I : Type u} {Fᵢ : I → Sheaf (BigFppfOver.topology B S hS) (Type u)}
+    (hFᵢ : ∀ i, IsAlgebraicSpace B S hS (Fᵢ i).obj)
+    {G : Sheaf (BigFppfOver.topology B S hS) (Type u)}
+    (jj : ∀ i, Fᵢ i ⟶ G) (hcoprod : IsColimit (Cofan.mk G jj))
+    (Uᵢ : I → BigFppfOver B S hS) (aᵢ : ∀ i, yoneda.obj (Uᵢ i) ⟶ (Fᵢ i).obj)
+    (hsurjᵢ : ∀ i, (MorphismProperty.presheaf (MorphismProperty.inverseImage
+      (@_root_.AlgebraicGeometry.Surjective.{u} : MorphismProperty Scheme.{u})
+      (BigFppfOver.toScheme B S hS))) (aᵢ i))
+    (hetᵢ : ∀ i, (MorphismProperty.presheaf (MorphismProperty.inverseImage
+      (@_root_.AlgebraicGeometry.Etale.{u} : MorphismProperty Scheme.{u})
+      (BigFppfOver.toScheme B S hS))) (aᵢ i))
+    (hsum : B.Contains (∐ fun i => (BigFppfOver.toScheme B S hS).obj (Uᵢ i))) :
+    IsAlgebraicSpace B S hS G.obj
+```
+
+**`AlgebraicGeometry.Space.isAlgebraicSpaceULift_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproduct.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedCoproduct.lean#L306). The attribute's comment: “in an arbitrary value universe, for a `u`-small index type; the index is unrestricted in `AlgebraicGeometry.isAlgebraicSpace_coproduct`, which is the same statement in the value universe of the site”.
 
 > **Stacks 02WQ** for presheaves with values in a universe `max w u` independent of the
 > universe `u` of the schemes. A coproduct of algebraic spaces over `S`, indexed by a `u`-small
@@ -259,11 +289,17 @@ theorem isAlgebraicSpaceULift_coproduct {I : Type v} [Small.{u} I]
 
 [Tag 02WR](https://stacks.math.columbia.edu/tag/02WR) in the Stacks Project.
 
-**`AlgebraicGeometry.isAlgebraicSpace_of_open_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenCoverAlgebraic.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OpenCoverAlgebraic.lean#L308).
+**`AlgebraicGeometry.isAlgebraicSpace_of_open_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenCoverAlgebraic.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OpenCoverAlgebraic.lean#L314).
 
 > **Stacks 02WR.** An fppf sheaf with a jointly surjective family of representable open
 > algebraic-space subfunctors is an algebraic space, when the coproduct of the family is itself
 > an algebraic space.
+>
+> The index type `I` is arbitrary, in any universe `v`, with no bound on its cardinality: the
+> existence of the coproduct `G` in the sheaf category and its being an algebraic space are
+> hypothesis (2)(e) of the source, given here as `hcoprod` and `hG`. The members are sheaves with
+> maps `ι i ≫ g` to `F` rather than subfunctors of `F`; these maps are open immersions, hence
+> monomorphisms, so this covers the source's subfunctors.
 
 ```lean
 theorem isAlgebraicSpace_of_open_cover
@@ -293,4 +329,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 65.8, Tag 02WN](https://stacks.math.columbia.edu/tag/02WN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

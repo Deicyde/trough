@@ -7,7 +7,7 @@ statement: formalized
 
 # Weakly prime-additive numbers
 
-10 results, 6 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html).
+10 results, 6 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html).
 
 ## Sums of powers of distinct prime divisors
 
@@ -20,7 +20,7 @@ $n = \sum_{p \in s} p^{e_p}$.
 
 - Wing Hong Leung, *On the Weakly Prime-Additive Numbers with Length 4*, INTEGERS 24 (2024), Article A9, Section 1, Definition (after Erdős and Hegyvári).
 
-Formalized by `MetaMathlibExt.IsPrimeDivisorPowerSum`, a definition declared in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#is-prime-divisor-power-sum).
+Formalized by `MetaMathlibExt.IsPrimeDivisorPowerSum`, a definition declared in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#is-prime-divisor-power-sum).
 
 ## Weakly prime-additive numbers
 
@@ -32,7 +32,7 @@ $p^{e_p}$, $e_p \ge 1$, over some set $s$ of distinct prime divisors of $n$.
 
 - Wing Hong Leung, *On the Weakly Prime-Additive Numbers with Length 4*, INTEGERS 24 (2024), Article A9, Section 1, Definition.
 
-Formalized by `MetaMathlibExt.IsWeaklyPrimeAdditive`, a definition declared in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#is-weakly-prime-additive).
+Formalized by `MetaMathlibExt.IsWeaklyPrimeAdditive`, a definition declared in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#is-weakly-prime-additive).
 
 ## Weakly prime-additive length
 
@@ -44,7 +44,7 @@ $\kappa_n = 0$ when $n$ has no such representation.
 
 - Wing Hong Leung, *On the Weakly Prime-Additive Numbers with Length 4*, INTEGERS 24 (2024), Article A9, Section 1, Definition.
 
-Formalized by `MetaMathlibExt.weaklyPrimeAdditiveLength`, a definition declared in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#weakly-prime-additive-length).
+Formalized by `MetaMathlibExt.weaklyPrimeAdditiveLength`, a definition declared in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#weakly-prime-additive-length).
 
 ## Thirty is a sum of powers of three of its prime divisors
 
@@ -55,7 +55,7 @@ positive powers of three distinct prime divisors of $30$, namely $30 = 2 + 3 + 5
 
 - Wing Hong Leung, *On the Weakly Prime-Additive Numbers with Length 4*, INTEGERS 24 (2024), Article A9, Section 1, Definition.
 
-Formalized by `MetaMathlibExt.isPrimeDivisorPowerSum_thirty`, a theorem declared in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#is-prime-divisor-power-sum-thirty).
+Formalized by `MetaMathlibExt.isPrimeDivisorPowerSum_thirty`, a theorem declared in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#is-prime-divisor-power-sum-thirty).
 
 ## Thirty is weakly prime-additive
 
@@ -67,7 +67,7 @@ Indeed, $30$ has the distinct prime divisors $2$, $3$, $5$ and $30 = 2 + 3 + 5^2
 
 - Wing Hong Leung, *On the Weakly Prime-Additive Numbers with Length 4*, INTEGERS 24 (2024), Article A9, Section 1, Definition.
 
-Formalized by `MetaMathlibExt.isWeaklyPrimeAdditive_thirty`, a theorem declared in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#is-weakly-prime-additive-thirty).
+Formalized by `MetaMathlibExt.isWeaklyPrimeAdditive_thirty`, a theorem declared in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#is-weakly-prime-additive-thirty).
 
 ## The length is at most the size of any representation
 
@@ -79,7 +79,7 @@ $\kappa_n$ of $n$ is at most $t$.
 
 - Wing Hong Leung, *On the Weakly Prime-Additive Numbers with Length 4*, INTEGERS 24 (2024), Article A9, Section 1, Definition (minimality of `κ_n`).
 
-Formalized by `MetaMathlibExt.weaklyPrimeAdditiveLength_le`, a theorem declared in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#weakly-prime-additive-length-le).
+Formalized by `MetaMathlibExt.weaklyPrimeAdditiveLength_le`, a theorem declared in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#weakly-prime-additive-length-le).
 
 ## Weakly prime-additive multiples of length four
 
@@ -96,7 +96,7 @@ $a$ is odd, so it is the Jacobi symbol.
 
 - Wing Hong Leung, *On the Weakly Prime-Additive Numbers with Length 4*, INTEGERS 24 (2024), Article A9, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.infinite_weaklyPrimeAdditive_length_four_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#infinite-weakly-prime-additive-length-fo).
+Stated but not proved: `MetaMathlibExt.infinite_weaklyPrimeAdditive_length_four_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#infinite-weakly-prime-additive-length-fo).
 
 ## Primes completing a four-term prime-power divisibility
 
@@ -113,7 +113,7 @@ $pqrs \mid p^{e_1} + q^{e_2} + r^{e_3} + s^{e_4}$.
 
 - Wing Hong Leung, *On the Weakly Prime-Additive Numbers with Length 4*, INTEGERS 24 (2024), Article A9, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.infinite_primes_dvd_four_prime_power_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#infinite-primes-dvd-four-prime-power-sum).
+Stated but not proved: `MetaMathlibExt.infinite_primes_dvd_four_prime_power_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#infinite-primes-dvd-four-prime-power-sum).
 
 ## Fang–Chen theorem on shortest weakly prime-additive multiples
 
@@ -125,7 +125,7 @@ $\kappa_n = 3$ if and only if $8 \nmid m$.
 
 - Wing Hong Leung, *On the Weakly Prime-Additive Numbers with Length 4*, INTEGERS 24 (2024), Article A9, Theorem 5 (Fang and Chen, Corollary 1.1).
 
-Stated but not proved: `MetaMathlibExt.infinite_shortest_weaklyPrimeAdditive_dvd_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#infinite-shortest-weakly-prime-additive).
+Stated but not proved: `MetaMathlibExt.infinite_shortest_weaklyPrimeAdditive_dvd_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#infinite-shortest-weakly-prime-additive).
 
 ## Weakly prime-additive multiples of length at most four
 
@@ -140,7 +140,7 @@ length $\kappa_n \le 4$.
 
 - Wing Hong Leung, *On the Weakly Prime-Additive Numbers with Length 4*, INTEGERS 24 (2024), Article A9, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.infinite_weaklyPrimeAdditive_length_le_four_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#infinite-weakly-prime-additive-length-le).
+Stated but not proved: `MetaMathlibExt.infinite_weaklyPrimeAdditive_length_le_four_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeaklyPrimeAdditiveWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html#infinite-weakly-prime-additive-length-le).
 
 ## Depends on
 
@@ -149,4 +149,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Weakly prime-additive numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/weakly-prime-additive-numbers)

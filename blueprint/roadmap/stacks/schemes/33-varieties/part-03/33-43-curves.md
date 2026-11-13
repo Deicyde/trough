@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.43 Curves
 
-Section 33.43 of the Stacks Project, [Tag 0A22](https://stacks.math.columbia.edu/tag/0A22). 11 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.43 of the Stacks Project, [Tag 0A22](https://stacks.math.columbia.edu/tag/0A22). 11 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A23, a definition
 
 [Tag 0A23](https://stacks.math.columbia.edu/tag/0A23) in the Stacks Project.
 
-**`AlgebraicGeometry.IsCurve`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/Defs.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/Defs.lean#L46). References: EGA II (7.4.2), “special case”.
+**`AlgebraicGeometry.IsCurve`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/Defs.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/Defs.lean#L46). References: EGA II (7.4.2), “special case”.
 
 > **Stacks Project, Tag 0A23.** A curve over a field is a variety of Krull dimension one.
 
@@ -27,7 +27,7 @@ public class IsCurve (k : Type u) [Field k] {X : Scheme.{u}} (f : X ⟶ Spec (.o
 
 [Tag 0A24](https://stacks.math.columbia.edu/tag/0A24) in the Stacks Project.
 
-**`AlgebraicGeometry.not_isProper_compl_singleton`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/Proper.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/Proper.lean#L44).
+**`AlgebraicGeometry.not_isProper_compl_singleton`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/Proper.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/Proper.lean#L44).
 
 > **Stacks 0A24.** Removing a closed point from an irreducible scheme of positive dimension
 > gives an open subscheme which is not proper over any base over which the scheme is separated.
@@ -45,7 +45,7 @@ public lemma not_isProper_compl_singleton
 
 [Tag 0A25](https://stacks.math.columbia.edu/tag/0A25) in the Stacks Project.
 
-**`Stacks.HQuasiProjectiveDimensionOne.isHQuasiProjective_of_topologicalKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HQuasiProjectiveDimensionOne/Basic.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HQuasiProjectiveDimensionOne/Basic.lean#L159). The attribute's comment: “for a scheme of topological Krull dimension zero, where reducedness is not needed because such a scheme is affine and the structure sheaf of an affine scheme is ample”.
+**`Stacks.HQuasiProjectiveDimensionOne.isHQuasiProjective_of_topologicalKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HQuasiProjectiveDimensionOne/Basic.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/HQuasiProjectiveDimensionOne/Basic.lean#L159). The attribute's comment: “for a scheme of topological Krull dimension zero, where reducedness is not needed because such a scheme is affine and the structure sheaf of an affine scheme is ample”.
 
 > A separated scheme of finite type over a field `k` of topological Krull dimension zero is
 > H-quasi-projective over `k`.
@@ -57,7 +57,7 @@ theorem isHQuasiProjective_of_topologicalKrullDim_eq_zero {k : Type u} [Field k]
     AlgebraicGeometry.IsHQuasiProjective f
 ```
 
-**`Stacks.HQuasiProjectiveDimensionOne.isHQuasiProjective_of_dimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HQuasiProjectiveDimensionOne/Basic.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HQuasiProjectiveDimensionOne/Basic.lean#L180).
+**`Stacks.HQuasiProjectiveDimensionOne.isHQuasiProjective_of_dimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HQuasiProjectiveDimensionOne/Basic.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/HQuasiProjectiveDimensionOne/Basic.lean#L180).
 
 > A separated scheme of finite type over a field `k` whose topological Krull dimension is at
 > most one is H-quasi-projective over `k`.
@@ -74,7 +74,7 @@ theorem isHQuasiProjective_of_dimension_le_one
 
 [Tag 0A26](https://stacks.math.columbia.edu/tag/0A26) in the Stacks Project.
 
-**`Stacks.HQuasiProjectiveDimensionOne.isProjectiveMorphism_of_isProper_of_topologicalKrullDim_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HQuasiProjectiveDimensionOne/Basic.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HQuasiProjectiveDimensionOne/Basic.lean#L203).
+**`Stacks.HQuasiProjectiveDimensionOne.isProjectiveMorphism_of_isProper_of_topologicalKrullDim_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HQuasiProjectiveDimensionOne/Basic.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/HQuasiProjectiveDimensionOne/Basic.lean#L203).
 
 > A proper scheme over a field `k` whose topological Krull dimension is at most one is
 > H-projective over `k`.
@@ -90,7 +90,7 @@ theorem isProjectiveMorphism_of_isProper_of_topologicalKrullDim_le_one
 
 [Tag 0BXV](https://stacks.math.columbia.edu/tag/0BXV) in the Stacks Project.
 
-**`Stacks.CurveProjectiveCompletion.exists_projective_completion_of_dimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/ProjectiveCompletion.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/ProjectiveCompletion.lean#L286). The attribute's comment: “the whole tag: all three clauses, for every separated scheme of finite type over `k` of dimension at most one”.
+**`Stacks.CurveProjectiveCompletion.exists_projective_completion_of_dimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/ProjectiveCompletion.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/ProjectiveCompletion.lean#L286). The attribute's comment: “the whole tag: all three clauses, for every separated scheme of finite type over `k` of dimension at most one”.
 
 > Let `X` be a separated scheme of finite type over a field `k` with `dim(X) ≤ 1`. Then there
 > is an open immersion `j : X ⟶ X̄` such that
@@ -116,7 +116,7 @@ theorem exists_projective_completion_of_dimension_le_one
 
 [Tag 0BXW](https://stacks.math.columbia.edu/tag/0BXW) in the Stacks Project.
 
-**`Stacks.CurveProjectiveCompletion.exists_projective_completion_discreteValuation_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/ProjectiveCompletionDiscreteValuation.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/ProjectiveCompletionDiscreteValuation.lean#L304).
+**`Stacks.CurveProjectiveCompletion.exists_projective_completion_discreteValuation_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/ProjectiveCompletionDiscreteValuation.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/ProjectiveCompletionDiscreteValuation.lean#L304).
 
 > **[Stacks, Tag 0BXW].** Let `X` be a reduced separated scheme of finite type over a field `k`
 > with `dim(X) ≤ 1`. Then there is an open immersion `j : X ⟶ X'` such that `X'` is H-projective
@@ -147,7 +147,7 @@ theorem exists_projective_completion_discreteValuation_of_isReduced
 
 [Tag 0GK5](https://stacks.math.columbia.edu/tag/0GK5) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isPurelyInseparable_smooth_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothNormalizationPurelyInseparable.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothNormalizationPurelyInseparable.lean#L132). The attribute's comment: “clauses (1) and (2), with ν smooth over k'; clauses (3), (4), (5) not established”. References: SGA 4 XIV (1.11).
+**`AlgebraicGeometry.exists_isPurelyInseparable_smooth_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothNormalizationPurelyInseparable.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothNormalizationPurelyInseparable.lean#L132). The attribute's comment: “clauses (1) and (2), with ν smooth over k'; clauses (3), (4), (5) not established”. References: SGA 4 XIV (1.11).
 
 > **[Stacks, Tag 0GK5], clauses (1) and (2), with the normalization smooth over `k'`.** Let `k`
 > be a field and let `X` be a scheme of finite type over `k` with `dim X ≤ 1`. There is a finite
@@ -167,7 +167,7 @@ public theorem exists_isPurelyInseparable_smooth_normalization (k : Type u) [Fie
         pullback.fst (spectrumMap k k') p)
 ```
 
-**`AlgebraicGeometry.exists_isPurelyInseparable_dense_openImmersion_smooth_projective_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProjectiveCompactificationCurve.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProjectiveCompactificationCurve.lean#L117). The attribute's comment: “clauses (3), (4) and (5) -- the whole diagram -- for a REDUCED X. The source's first move is to replace X by its reduction; everything after that move is proved here. The normalization of X\_\{k'} is exhibited as a DENSE OPEN SUBSCHEME of the disjoint union of the compactifications Ybar\_i (clause 3), each of which is SMOOTH, PROJECTIVE and GEOMETRICALLY IRREDUCIBLE of dimension at most one over a finite SEPARABLE extension k'\_i/k' (clauses 4 and 5), and the diagram commutes over Spec k'. What is NOT covered: the reduction step, i.e. the case of an X that is not reduced.”. References: EGA IV (17.15.14), “special case”; SGA 4 XIV (1.11), “special case”.
+**`AlgebraicGeometry.exists_isPurelyInseparable_dense_openImmersion_smooth_projective_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProjectiveCompactificationCurve.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProjectiveCompactificationCurve.lean#L117). The attribute's comment: “clauses (3), (4) and (5) -- the whole diagram -- for a REDUCED X. The source's first move is to replace X by its reduction; everything after that move is proved here. The normalization of X\_\{k'} is exhibited as a DENSE OPEN SUBSCHEME of the disjoint union of the compactifications Ybar\_i (clause 3), each of which is SMOOTH, PROJECTIVE and GEOMETRICALLY IRREDUCIBLE of dimension at most one over a finite SEPARABLE extension k'\_i/k' (clauses 4 and 5), and the diagram commutes over Spec k'. What is NOT covered: the reduction step, i.e. the case of an X that is not reduced.”. References: EGA IV (17.15.14), “special case”; SGA 4 XIV (1.11), “special case”.
 
 > **[Stacks, Tag 0GK5] for a reduced `X`.** Let `k` be a field and let `X` be a reduced
 > separated scheme of finite type over `k` with `dim(X) ≤ 1`. There is a finite purely inseparable
@@ -198,7 +198,7 @@ public theorem exists_isPurelyInseparable_dense_openImmersion_smooth_projective_
               GeometricallyIrreducible (rbar i) ∧ topologicalKrullDim (Ybar i : Type u) ≤ 1
 ```
 
-**`AlgebraicGeometry.exists_isPurelyInseparable_dense_openImmersion_smooth_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProjectiveCompactificationCurve.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProjectiveCompactificationCurve.lean#L252). References: EGA IV (17.15.14), “special case”; SGA 4 XIV (1.11), “special case”.
+**`AlgebraicGeometry.exists_isPurelyInseparable_dense_openImmersion_smooth_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProjectiveCompactificationCurve.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProjectiveCompactificationCurve.lean#L252). References: EGA IV (17.15.14), “special case”; SGA 4 XIV (1.11), “special case”.
 
 > **[Stacks, Tag 0GK5].** Let `k` be a field and let `X` be a separated scheme of finite type
 > over `k` with `dim(X) ≤ 1`. There is a finite purely inseparable extension `k'/k` (clause 1) such
@@ -229,7 +229,7 @@ public theorem exists_isPurelyInseparable_dense_openImmersion_smooth_projective
               GeometricallyIrreducible (rbar i) ∧ topologicalKrullDim (Ybar i : Type u) ≤ 1
 ```
 
-**`AlgebraicGeometry.exists_isPurelyInseparable_normalization_coproduct_smooth_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProjectiveNormalizationProper.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProjectiveNormalizationProper.lean#L88). The attribute's comment: “clauses (3), (4) and (5) for a PROPER X, where the open immersion j of clause (3) is an isomorphism and the compactifications Ybar\_i are the components Y\_i of the normalization themselves. Clauses (1) and (2) -- the finite purely inseparable k'/k and the normalization of X\_\{k'} -- are reproved here as part of the diagram. What the general separated case still needs is the compactification of Stacks 0BXW applied to X before k' is chosen, together with the identification of the normalization of X\_\{k'} with the open part of the normalization of that compactification.”. References: EGA IV (17.15.14), “Proper case of 17.15.14”; SGA 4 XIV (1.11), “special case”.
+**`AlgebraicGeometry.exists_isPurelyInseparable_normalization_coproduct_smooth_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProjectiveNormalizationProper.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProjectiveNormalizationProper.lean#L88). The attribute's comment: “clauses (3), (4) and (5) for a PROPER X, where the open immersion j of clause (3) is an isomorphism and the compactifications Ybar\_i are the components Y\_i of the normalization themselves. Clauses (1) and (2) -- the finite purely inseparable k'/k and the normalization of X\_\{k'} -- are reproved here as part of the diagram. What the general separated case still needs is the compactification of Stacks 0BXW applied to X before k' is chosen, together with the identification of the normalization of X\_\{k'} with the open part of the normalization of that compactification.”. References: EGA IV (17.15.14), “Proper case of 17.15.14”; SGA 4 XIV (1.11), “special case”.
 
 > **[Stacks, Tag 0GK5] for a proper `X`.** Let `k` be a field and let `X` be proper over `k`
 > with `dim(X) ≤ 1`. There is a finite purely inseparable extension `k'/k` such that the
@@ -255,7 +255,7 @@ public theorem exists_isPurelyInseparable_normalization_coproduct_smooth_project
           topologicalKrullDim (Y i : Type u) ≤ 1
 ```
 
-**`AlgebraicGeometry.exists_isSeparable_smooth_isProjectiveMorphism_geometricallyIrreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProperConnectedComponent.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProperConnectedComponent.lean#L98). The attribute's comment: “clauses (4) and (5), at one component: for a CONNECTED scheme Z smooth and proper over a field k with dim Z <= 1 -- that is, for one of the compactified pieces Ybar\_i of the diagram -- the field k'\_i = Gamma(Z, O\_Z) of clause (4) is a finite SEPARABLE extension of k, and Z is SMOOTH, PROJECTIVE and GEOMETRICALLY IRREDUCIBLE of dimension at most one over it, which is clause (5). The assembly of the diagram -- decomposing the normalization into its components and transporting along the open immersion j of clause (3) -- is not done here; clauses (1) and (2) are carried by AlgebraicGeometry.exists\_isPurelyInseparable\_smooth\_normalization.”.
+**`AlgebraicGeometry.exists_isSeparable_smooth_isProjectiveMorphism_geometricallyIrreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProperConnectedComponent.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SmoothProperConnectedComponent.lean#L98). The attribute's comment: “clauses (4) and (5), at one component: for a CONNECTED scheme Z smooth and proper over a field k with dim Z <= 1 -- that is, for one of the compactified pieces Ybar\_i of the diagram -- the field k'\_i = Gamma(Z, O\_Z) of clause (4) is a finite SEPARABLE extension of k, and Z is SMOOTH, PROJECTIVE and GEOMETRICALLY IRREDUCIBLE of dimension at most one over it, which is clause (5). The assembly of the diagram -- decomposing the normalization into its components and transporting along the open immersion j of clause (3) -- is not done here; clauses (1) and (2) are carried by AlgebraicGeometry.exists\_isPurelyInseparable\_smooth\_normalization.”.
 
 > **[Stacks, Tag 0GK5], clauses (4) and (5) at one component.** Let `Z` be a connected scheme,
 > smooth and proper over a field `k`, of dimension at most one. Then there is a finite separable
@@ -281,7 +281,7 @@ public theorem exists_isSeparable_smooth_isProjectiveMorphism_geometricallyIrred
 
 [Tag 0B8Y](https://stacks.math.columbia.edu/tag/0B8Y) in the Stacks Project.
 
-**`AlgebraicGeometry.isDiscreteValuationRing_stalk_tfae_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveLocalRing/Basic.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveLocalRing/Basic.lean#L144). The attribute's comment: “(1), (2) and (3)”. References: EGA II (7.4.5); EGA II (7.1.6), “curve stalk case”; EGA IV (6.7.5), “partial”; SGA 7 IX (3.2.1), “special case”.
+**`AlgebraicGeometry.isDiscreteValuationRing_stalk_tfae_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveLocalRing/Basic.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveLocalRing/Basic.lean#L144). The attribute's comment: “(1), (2) and (3)”. References: EGA II (7.4.5); EGA II (7.1.6), “curve stalk case”; EGA IV (6.7.5), “partial”; SGA 7 IX (3.2.1), “special case”.
 
 > **Items (1), (2) and (3) of [Stacks, Tag 0B8Y].** At a closed point `x` of a curve over a
 > field the local ring `𝒪_{X,x}` is regular if and only if it is normal if and only if it is a
@@ -294,7 +294,7 @@ public theorem isDiscreteValuationRing_stalk_tfae_of_isCurve [IsCurve k f] {x : 
       IsDiscreteValuationRing (X.presheaf.stalk x)]
 ```
 
-**`AlgebraicGeometry.isEffectiveCartierDivisor_closedPoint_tfae_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveLocalRing/EffectiveCartier.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveLocalRing/EffectiveCartier.lean#L130). The attribute's comment: “(1), (2), (3), (4) and (5)”. References: EGA II (7.4.5); EGA II (7.1.6), “curve stalk case”; EGA IV (6.7.5), “partial”.
+**`AlgebraicGeometry.isEffectiveCartierDivisor_closedPoint_tfae_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveLocalRing/EffectiveCartier.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveLocalRing/EffectiveCartier.lean#L130). The attribute's comment: “(1), (2), (3), (4) and (5)”. References: EGA II (7.4.5); EGA II (7.1.6), “curve stalk case”; EGA IV (6.7.5), “partial”.
 
 > At a closed point `x` of a curve over a field the following are equivalent: `𝒪_{X,x}` is
 > regular; `𝒪_{X,x}` is normal; `𝒪_{X,x}` is a discrete valuation ring; and the sheaf of ideals of
@@ -310,7 +310,7 @@ public theorem isEffectiveCartierDivisor_closedPoint_tfae_of_isCurve [IsCurve k 
         (Scheme.IdealSheafData.vanishingIdeal (⟨{x}, hx⟩ : Closeds X))]
 ```
 
-**`AlgebraicGeometry.smoothAt_closedPoint_tfae_of_isCurve_of_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveLocalRing/Smooth.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveLocalRing/Smooth.lean#L49). The attribute's comment: “(1), (2), (3), (4), (5) and (6), for κ(x) separable over k”. References: EGA IV (17.15.1), “the smoothness item”; SGA 1 II (5.4), “κ(x)/k separable”.
+**`AlgebraicGeometry.smoothAt_closedPoint_tfae_of_isCurve_of_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveLocalRing/Smooth.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveLocalRing/Smooth.lean#L49). The attribute's comment: “(1), (2), (3), (4), (5) and (6), for κ(x) separable over k”. References: EGA IV (17.15.1), “the smoothness item”; SGA 1 II (5.4), “κ(x)/k separable”.
 
 > **Smoothness at a closed point of a curve, for a separable residue field.** Let `k` be a field,
 > let `X` be a curve over `k` and let `x` be a closed point of `X` whose residue field is separable
@@ -332,7 +332,7 @@ public theorem smoothAt_closedPoint_tfae_of_isCurve_of_isSeparable [IsCurve k f]
       InfinitesimalLifting.SmoothAt f x]
 ```
 
-**`AlgebraicGeometry.smoothAt_closedPoint_tfae_of_isCurve_of_perfectField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveLocalRing/Smooth.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveLocalRing/Smooth.lean#L73). The attribute's comment: “(1), (2), (3), (4), (5) and (6), for k perfect”. References: EGA IV (17.15.2), “the smoothness item”; EGA IV (6.7.5), “special case”; SGA 1 II (5.4), “k perfect”.
+**`AlgebraicGeometry.smoothAt_closedPoint_tfae_of_isCurve_of_perfectField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveLocalRing/Smooth.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveLocalRing/Smooth.lean#L73). The attribute's comment: “(1), (2), (3), (4), (5) and (6), for k perfect”. References: EGA IV (17.15.2), “the smoothness item”; EGA IV (6.7.5), “special case”; SGA 1 II (5.4), “k perfect”.
 
 > **Smoothness at a closed point of a curve, over a perfect field.** Let `k` be a perfect field,
 > let `X` be a curve over `k` and let `x` be a closed point of `X`. Then the following are
@@ -354,7 +354,7 @@ public theorem smoothAt_closedPoint_tfae_of_isCurve_of_perfectField [PerfectFiel
 
 [Tag 0H1F](https://stacks.math.columbia.edu/tag/0H1F) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isRegular_isProjectiveMorphism_compactification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RegularCompactification.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/RegularCompactification.lean#L141). The attribute's comment: “the regular projective compactification”.
+**`AlgebraicGeometry.exists_isRegular_isProjectiveMorphism_compactification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RegularCompactification.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/RegularCompactification.lean#L141). The attribute's comment: “the regular projective compactification”.
 
 > Let `k` be a field and let `X` be a regular curve over `k`. Then there is a nonsingular
 > projective curve `X̄` over `k` and an open immersion `j : X ⟶ X̄` over `k` whose complement is a
@@ -371,7 +371,7 @@ public theorem exists_isRegular_isProjectiveMorphism_compactification
         ∀ y : Y, y ∉ Set.range j.base → IsClosed ({y} : Set Y)
 ```
 
-**`AlgebraicGeometry.exists_smooth_isProjectiveMorphism_compactification_of_perfectField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RegularCompactification.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/RegularCompactification.lean#L181). The attribute's comment: “the smooth projective compactification over a perfect field”.
+**`AlgebraicGeometry.exists_smooth_isProjectiveMorphism_compactification_of_perfectField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RegularCompactification.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/RegularCompactification.lean#L181). The attribute's comment: “the smooth projective compactification over a perfect field”.
 
 > Let `k` be a perfect field and let `X` be a regular curve over `k`. Then `X` is smooth over
 > `k`, and there is a nonsingular projective curve `X̄` over `k`, smooth over `k`, with an open
@@ -392,7 +392,7 @@ public theorem exists_smooth_isProjectiveMorphism_compactification_of_perfectFie
 
 [Tag 0A27](https://stacks.math.columbia.edu/tag/0A27) in the Stacks Project.
 
-**`AlgebraicGeometry.isAffine_or_isProjectiveMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/AffineOrProjective.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/AffineOrProjective.lean#L209).
+**`AlgebraicGeometry.isAffine_or_isProjectiveMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/AffineOrProjective.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/AffineOrProjective.lean#L209).
 
 > Let `k` be a field and let `X` be a curve over `k`. Then `X` is an affine scheme or `X` is
 > H-projective over `k`.
@@ -407,7 +407,7 @@ theorem isAffine_or_isProjectiveMorphism
 
 [Tag 0A28](https://stacks.math.columbia.edu/tag/0A28) in the Stacks Project.
 
-**`AlgebraicGeometry.isAffine_of_topologicalKrullDim_le_one_of_forall_component_not_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/AffineOfNoProperComponent.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/AffineOfNoProperComponent.lean#L205).
+**`AlgebraicGeometry.isAffine_of_topologicalKrullDim_le_one_of_forall_component_not_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/AffineOfNoProperComponent.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/AffineOfNoProperComponent.lean#L205).
 
 > **[Stacks, Tag 0A28].** Let `k` be a field and let `X` be a separated scheme of finite type
 > over `k` with `dim(X) ≤ 1`. If no irreducible component of `X`, taken with its reduced induced
@@ -441,4 +441,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.43, Tag 0A22](https://stacks.math.columbia.edu/tag/0A22)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

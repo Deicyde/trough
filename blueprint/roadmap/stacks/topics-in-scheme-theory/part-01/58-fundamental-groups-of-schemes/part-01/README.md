@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 58.2 Schemes étale over a point to 58.16 Specialization maps
+# 58.2 Schemes étale over a point to 58.19 Finite étale covers of…
 
 - [58.2 Schemes étale over a point](58-2-schemes-etale-over-a-point.md)
 - [58.3 Galois categories](58-3-galois-categories.md)
@@ -18,3 +18,6 @@ navigation: transparent
 - [58.14 Geometric and arithmetic fundamental groups](58-14-geometric-and-arithmetic-fundamental-group.md)
 - [58.15 Homotopy exact sequence](58-15-homotopy-exact-sequence.md)
 - [58.16 Specialization maps](58-16-specialization-maps.md)
+- [58.17 Restriction to a closed subscheme](58-17-restriction-to-a-closed-subscheme.md)
+- [58.18 Pushouts and fundamental groups](58-18-pushouts-and-fundamental-groups.md)
+- [58.19 Finite étale covers of punctured spectra, I](58-19-finite-etale-covers-of-punctured-spectra-i.md)

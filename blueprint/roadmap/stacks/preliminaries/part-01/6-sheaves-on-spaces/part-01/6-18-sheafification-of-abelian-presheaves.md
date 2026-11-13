@@ -8,13 +8,13 @@ proof: formalized
 
 # 6.18 Sheafification of abelian presheaves
 
-Section 6.18 of the Stacks Project, [Tag 0083](https://stacks.math.columbia.edu/tag/0083). 2 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 6.18 of the Stacks Project, [Tag 0083](https://stacks.math.columbia.edu/tag/0083). 2 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0084, a lemma
 
 [Tag 0084](https://stacks.math.columbia.edu/tag/0084) in the Stacks Project.
 
-**`TopCat.Presheaf.piPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean#L53).
+**`TopCat.Presheaf.piPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean#L53).
 
 > **Stacks 0084.** The product presheaf `Π(F)`: its sections over an open `U` are the families
 > `(σ x)_{x ∈ U}` of germs `σ x : F.stalk x`, with restriction along `V ≤ U` given by projecting onto
@@ -24,7 +24,7 @@ Section 6.18 of the Stacks Project, [Tag 0083](https://stacks.math.columbia.edu/
 noncomputable def piPresheaf (F : Presheaf (Type u) X) : Presheaf (Type u) X
 ```
 
-**`TopCat.Presheaf.toPiPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean#L69).
+**`TopCat.Presheaf.toPiPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean#L69).
 
 > **Stacks 0084.** The canonical morphism of presheaves `F ⟶ Π(F)` sending a section
 > `s ∈ F(U)` to the family `(s_x)_{x ∈ U}` of its germs.
@@ -33,7 +33,7 @@ noncomputable def piPresheaf (F : Presheaf (Type u) X) : Presheaf (Type u) X
 noncomputable def toPiPresheaf (F : Presheaf (Type u) X) : F ⟶ piPresheaf F
 ```
 
-**`TopCat.Presheaf.piPresheafGerms_comp_sheafifyGerms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean#L163).
+**`TopCat.Presheaf.piPresheafGerms_comp_sheafifyGerms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean#L163).
 
 > **Stacks 0084.** The square commutes: taking germs of a section of `F.sheafify` and then germs
 > inside `Π(F)` agrees with taking germs and then pushing them forward along `F ⟶ Π(F)`.
@@ -43,7 +43,7 @@ theorem piPresheafGerms_comp_sheafifyGerms (F : Presheaf (Type u) X) (U : Opens 
     piPresheafGerms F U ∘ sheafifyGerms F U = piPresheafStalkMap F U ∘ sheafifyGerms F U
 ```
 
-**`TopCat.Presheaf.bijective_canonicalToPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean#L267).
+**`TopCat.Presheaf.bijective_canonicalToPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Sheafify/GermFibreProduct.lean#L267).
 
 > **Stacks 0084.** The square is a fibre-product diagram of sets: the canonical map
 > `F^#(U) → Π(F)(U) ×_{∏_x Π(F)_x} ∏_x F_x` is a bijection.
@@ -57,7 +57,7 @@ theorem bijective_canonicalToPullback (F : Presheaf (Type u) X) (U : Opens X) :
 
 [Tag 0085](https://stacks.math.columbia.edu/tag/0085) in the Stacks Project.
 
-**`exists_abelian_sheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/Abelian.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Sheafify/Abelian.lean#L176).
+**`exists_abelian_sheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/Abelian.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Sheafify/Abelian.lean#L176).
 
 > **(Stacks 0085, Part 1, existence.)** A presheaf of abelian groups `F` on `X` has a
 > sheafification: a sheaf of abelian groups `Fbar` with a map `F ⟶ Fbar` whose underlying map of
@@ -71,7 +71,7 @@ theorem exists_abelian_sheafification (F : AbelianPresheafCat X) :
         toSetSheafify X (underlyingSetPresheaf X F)
 ```
 
-**`unique_abelian_sheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/Abelian.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Sheafify/Abelian.lean#L326).
+**`unique_abelian_sheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/Abelian.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Sheafify/Abelian.lean#L326).
 
 > **(Stacks 0085, Part 1, uniqueness.)**
 
@@ -92,7 +92,7 @@ theorem unique_abelian_sheafification
       (forgetAbSheafToSetPresheaf X).map φ.hom ≫ iso₂.hom = iso₁.hom
 ```
 
-**`sheafifyAbHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/Abelian.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Sheafify/Abelian.lean#L377). References: SGA 3 IV (4.3.16), “Hom(P, special case”.
+**`sheafifyAbHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/Abelian.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Sheafify/Abelian.lean#L377). References: SGA 3 IV (4.3.16), “Hom(P, special case”.
 
 > **(Stacks 0085, Part 2.)** The adjunction bijection
 > `Hom(F^#, G) ≃ Hom(F, G)` defining sheafification of presheaves of abelian groups.
@@ -109,4 +109,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 6.18, Tag 0083](https://stacks.math.columbia.edu/tag/0083)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

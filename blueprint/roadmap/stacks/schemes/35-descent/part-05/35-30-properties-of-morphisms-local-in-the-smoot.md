@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.30 Properties of morphisms local in the smooth topology on the source
 
-Section 35.30 of the Stacks Project, [Tag 036T](https://stacks.math.columbia.edu/tag/036T). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.30 of the Stacks Project, [Tag 036T](https://stacks.math.columbia.edu/tag/036T). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 036U, a lemma
 
 [Tag 036U](https://stacks.math.columbia.edu/tag/036U) in the Stacks Project.
 
-**`AlgebraicGeometry.smooth_isLocalAtSource`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/Smooth.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/Smooth.lean#L52).
+**`AlgebraicGeometry.smooth_isLocalAtSource`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/Smooth.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/Smooth.lean#L52).
 
 > **Stacks Project, Tag 036U.** Being a smooth morphism of schemes is local on the source for
 > the smooth topology.
@@ -24,7 +24,7 @@ instance smooth_isLocalAtSource :
     MorphismProperty.IsLocalAtSource (@Smooth.{u}) (Scheme.precoverage (@Smooth.{u}))
 ```
 
-**`AlgebraicGeometry.Smooth.isLocalAtSource_smoothPrecoverage`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SmoothSourceLocality.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/SmoothSourceLocality.lean#L108). References: SGA 4 IV (8.5.5), “special case”.
+**`AlgebraicGeometry.Smooth.isLocalAtSource_smoothPrecoverage`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SmoothSourceLocality.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/SmoothSourceLocality.lean#L108). References: SGA 4 IV (8.5.5), “special case”.
 
 > **Stacks 036U.** Smoothness of morphisms of schemes is local on the source for the smooth
 > topology: a morphism is smooth exactly when its composites with the members of a smooth covering
@@ -46,4 +46,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.30, Tag 036T](https://stacks.math.columbia.edu/tag/036T)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

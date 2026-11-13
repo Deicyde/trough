@@ -7,7 +7,7 @@ statement: formalized
 
 # Continuity, regularity and functional equations: its own results
 
-7 results, 2 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html).
+7 results, 2 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html).
 
 Fine structure of real functions: Blumberg's theorem, continuous nowhere-differentiable functions (Weierstrass, Takagi), the rising sun lemma, approximate continuity, midpoint convexity, and the Cauchy, exponential and almost-additive functional equations including Hyers–Ulam stability.
 
@@ -20,7 +20,7 @@ $f : \mathbb{R} \to \mathbb{R}$ that is differentiable at no point of $\mathbb{R
 
 - K. Weierstrass, 1872 lecture; P. du Bois-Reymond, J. Reine Angew. Math. 79 (1875), 21-37, DOI 10.1515/crll.1875.79.21.
 
-Formalized by `MathlibExt.Analysis.Calculus.NowhereDifferentiable.exists_continuous_nowhere_differentiable`, a theorem declared in [MathlibExt/Analysis/Calculus/NowhereDifferentiable.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/NowhereDifferentiable.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html#exists-continuous-nowhere-differentiable).
+Formalized by `MathlibExt.Analysis.Calculus.NowhereDifferentiable.exists_continuous_nowhere_differentiable`, a theorem declared in [MathlibExt/Analysis/Calculus/NowhereDifferentiable.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/NowhereDifferentiable.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html#exists-continuous-nowhere-differentiable).
 
 ## A strict liminf gap at every finite value forces countably many finite values
 
@@ -37,7 +37,7 @@ where $x$ ranges over $[0,1]$. Then the set $\{y\in[0,1] : f(y) < \infty\}$ is c
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Real functions; Functions of one variable), problem `ma_proofbench_l2_32`.
 
-Stated but not proved: `MathlibExt.MeasureTheory.StrictLiminfGapFiniteSetCountableWanted.countable_setOf_lt_top_of_lt_liminf` is written with `theorem_wanted` in [WantedExt/MeasureTheory/StrictLiminfGapFiniteSetCountableWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/StrictLiminfGapFiniteSetCountableWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html#countable-set-of-lt-top-of-lt-liminf).
+Stated but not proved: `MathlibExt.MeasureTheory.StrictLiminfGapFiniteSetCountableWanted.countable_setOf_lt_top_of_lt_liminf` is written with `theorem_wanted` in [WantedExt/MeasureTheory/StrictLiminfGapFiniteSetCountableWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/StrictLiminfGapFiniteSetCountableWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html#countable-set-of-lt-top-of-lt-liminf).
 
 ## Blumberg's theorem
 
@@ -48,7 +48,7 @@ set $D \subseteq \mathbb{R}$ such that the restriction of $f$ to $D$ is continuo
 
 - https://en.wikipedia.org/wiki/Blumberg_theorem.
 
-Formalized by `MetaMathlibExt.blumberg_theorem`, a theorem declared in [MathlibExt/Analysis/Blumberg.lean, line 945](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Blumberg.lean#L945). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html#blumberg-theorem).
+Formalized by `MetaMathlibExt.blumberg_theorem`, a theorem declared in [MathlibExt/Analysis/Blumberg.lean, line 945](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Blumberg.lean#L945). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html#blumberg-theorem).
 
 ## Continuous midpoint-convex functions are convex
 
@@ -61,7 +61,7 @@ Then $\varphi$ is convex on $(a, b)$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), problem `ma_proofbench_l1_61`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.MidpointConvexContinuousConvexWanted.convexOn_Ioo_of_continuousOn_of_midpoint_le` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/MidpointConvexContinuousConvexWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/MidpointConvexContinuousConvexWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html#convex-on-ioo-of-continuous-on-of-midpoi).
+Stated but not proved: `MathlibExt.Analysis.Calculus.MidpointConvexContinuousConvexWanted.convexOn_Ioo_of_continuousOn_of_midpoint_le` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/MidpointConvexContinuousConvexWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/MidpointConvexContinuousConvexWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html#convex-on-ioo-of-continuous-on-of-midpoi).
 
 ## Discontinuous subadditive multiplicative functions on $\mathbb{C}$
 
@@ -80,7 +80,7 @@ discontinuous field automorphism $f$ of $\mathbb{C}$.
 
 - H. Auerbach, Problem 39 of the Scottish Book; addendum of S. Mazur, 10 April 1937, in the Scottish Book, via Lebesgue's theorem on the existence of a discontinuous automorphism of `ℂ` (Kamke); see the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
-Stated but not proved: `MathlibExt.Analysis.Complex.ScottishBook39Wanted.exists_discontinuous_subadditive_multiplicative` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/ScottishBook39Wanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/ScottishBook39Wanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html#exists-discontinuous-subadditive-multipl).
+Stated but not proved: `MathlibExt.Analysis.Complex.ScottishBook39Wanted.exists_discontinuous_subadditive_multiplicative` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/ScottishBook39Wanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/ScottishBook39Wanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html#exists-discontinuous-subadditive-multipl).
 
 ## Isolated points of a graph are countable
 
@@ -93,7 +93,7 @@ is countable.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Real functions; Functions of several variables), problem `ma_proofbench_l2_63`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.GraphNonAccumulationPointsCountableWanted.countable_diff_setOf_exists_seq_tendsto_and_tendsto_apply` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/GraphNonAccumulationPointsCountableWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/GraphNonAccumulationPointsCountableWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html#countable-diff-set-of-exists-seq-tendsto).
+Stated but not proved: `MathlibExt.Analysis.Calculus.GraphNonAccumulationPointsCountableWanted.countable_diff_setOf_exists_seq_tendsto_and_tendsto_apply` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/GraphNonAccumulationPointsCountableWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/GraphNonAccumulationPointsCountableWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html#countable-diff-set-of-exists-seq-tendsto).
 
 ## Steinhaus's periodization problem (Scottish Book Problem 181)
 
@@ -105,7 +105,7 @@ the series $\sum_{n \in \mathbb{Z}} f(x + n)$ converges and its sum is $1$.
 
 - H. Steinhaus, Problem 181 of the Scottish Book; the addendum Ad 181 records that the Gaussian `(1 / √π) exp (-x ^ 2)` does not have the property, while Mazur's note gives a construction, taking a positive continuous `g` with finite periodization and dividing `g` by that periodization (e.g. `g(x) = exp (-x ^ 2)`). See the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
-Stated but not proved: `MathlibExt.Analysis.ScottishBook181Wanted.steinhaus181_periodization_one` is written with `theorem_wanted` in [WantedExt/Analysis/ScottishBook181Wanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ScottishBook181Wanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html#steinhaus181-periodization-one).
+Stated but not proved: `MathlibExt.Analysis.ScottishBook181Wanted.steinhaus181_periodization_one` is written with `theorem_wanted` in [WantedExt/Analysis/ScottishBook181Wanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ScottishBook181Wanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html#steinhaus181-periodization-one).
 
 ## Depends on
 
@@ -114,4 +114,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Continuity, regularity and functional equations](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/continuity-and-functional-equations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/real-functions/continuity-and-functional-equations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/real-functions/continuity-and-functional-equations)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Arithmetical hierarchy
 
-14 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html).
+14 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html).
 
 ## The class Δₙ of the arithmetical hierarchy
 
@@ -20,7 +20,7 @@ arithmetical hierarchy.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Definition 4.1.
 
-Formalized by `Cslib.Decidability.IsDelta`, a definition declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#is-delta).
+Formalized by `Cslib.Decidability.IsDelta`, a definition declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#is-delta).
 
 ## Computable predicates are closed under computable precomposition
 
@@ -32,7 +32,7 @@ $\{w \in \mathbb{N} : g(w) \in P\}$ is decidable.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Lemma 4.2.
 
-Formalized by `Cslib.Decidability.computablePred_comp`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#computable-pred-comp).
+Formalized by `Cslib.Decidability.computablePred_comp`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#computable-pred-comp).
 
 ## The first projection of the pairing function is computable
 
@@ -46,7 +46,7 @@ with $\langle a, b \rangle = z$ is computable.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.3.
 
-Formalized by `Cslib.Decidability.computable_unpair_fst`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#computable-unpair-fst).
+Formalized by `Cslib.Decidability.computable_unpair_fst`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#computable-unpair-fst).
 
 ## The second projection of the pairing function is computable
 
@@ -60,7 +60,7 @@ with $\langle a, b \rangle = z$ is computable.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.3.
 
-Formalized by `Cslib.Decidability.computable_unpair_snd`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#computable-unpair-snd).
+Formalized by `Cslib.Decidability.computable_unpair_snd`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#computable-unpair-snd).
 
 ## The pairing function is computable
 
@@ -73,7 +73,7 @@ is a computable function of its two arguments.
 
 - Rogers, *Theory of Recursive Functions and Effective Computability*, §1.3.
 
-Formalized by `Cslib.Decidability.computable_pair`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#computable-pair).
+Formalized by `Cslib.Decidability.computable_pair`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#computable-pair).
 
 ## Computable predicates are closed under precomposition with pairing
 
@@ -87,7 +87,7 @@ $(a, b) \in \mathbb{N} \times \mathbb{N}$ with $\langle a, b \rangle \in Q$ is d
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Lemma 4.2.
 
-Formalized by `Cslib.Decidability.computablePred_comp_prod`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#computable-pred-comp-prod).
+Formalized by `Cslib.Decidability.computablePred_comp_prod`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#computable-pred-comp-prod).
 
 ## The hierarchy is closed under computable precomposition
 
@@ -100,7 +100,7 @@ and if $P$ is in the class $\Pi_n$, then so is $\{w \in \mathbb{N} : g(w) \in P\
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Lemma 4.2.
 
-Formalized by `Cslib.Decidability.comp_closure`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#comp-closure).
+Formalized by `Cslib.Decidability.comp_closure`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#comp-closure).
 
 ## Every Σₙ predicate is Πₙ₊₁
 
@@ -118,7 +118,7 @@ The proof adds a dummy universal quantifier.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 4.3.
 
-Formalized by `Cslib.Decidability.sigma_subset_pi_succ`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#sigma-subset-pi-succ).
+Formalized by `Cslib.Decidability.sigma_subset_pi_succ`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#sigma-subset-pi-succ).
 
 ## Every Πₙ set is Σₙ₊₁
 
@@ -130,7 +130,7 @@ $\Pi_n \subseteq \Sigma_{n+1}$, by adding a dummy existential quantifier.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 4.3.
 
-Formalized by `Cslib.Decidability.pi_subset_sigma_succ`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#pi-subset-sigma-succ).
+Formalized by `Cslib.Decidability.pi_subset_sigma_succ`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#pi-subset-sigma-succ).
 
 ## Monotonicity of the hierarchy
 
@@ -145,7 +145,7 @@ other at the previous level.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 4.3.
 
-Formalized by `Cslib.Decidability.mono_aux`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#mono-aux).
+Formalized by `Cslib.Decidability.mono_aux`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#mono-aux).
 
 ## Every Σₙ predicate is Σₙ₊₁
 
@@ -161,7 +161,7 @@ predicate in $\Sigma_n$ is in $\Sigma_{n+1}$.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 4.3.
 
-Formalized by `Cslib.Decidability.sigma_mono`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#sigma-mono).
+Formalized by `Cslib.Decidability.sigma_mono`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#sigma-mono).
 
 ## Monotonicity of the Π hierarchy
 
@@ -173,7 +173,7 @@ $\Pi_n \subseteq \Pi_{n+1}$.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 4.3.
 
-Formalized by `Cslib.Decidability.pi_mono`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#pi-mono).
+Formalized by `Cslib.Decidability.pi_mono`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#pi-mono).
 
 ## Σₙ and Πₙ predicates are Δₙ₊₁
 
@@ -190,7 +190,7 @@ $\Pi_{n+1}$.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 4.3.
 
-Formalized by `Cslib.Decidability.sigma_pi_subset_delta_succ`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#sigma-pi-subset-delta-succ).
+Formalized by `Cslib.Decidability.sigma_pi_subset_delta_succ`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#sigma-pi-subset-delta-succ).
 
 ## Σ₁ is the class of recursively enumerable predicates
 
@@ -206,7 +206,7 @@ This is the first level of Post's theorem.
 
 - Soare, *Recursively Enumerable Sets and Degrees*, Ch. I, Theorem 4.4 (Post).
 
-Formalized by `Cslib.Decidability.sigma_one_eq_re`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#sigma-one-eq-re).
+Formalized by `Cslib.Decidability.sigma_one_eq_re`, a theorem declared in [CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/ArithmeticalHierarchy.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html#sigma-one-eq-re).
 
 ## Depends on
 
@@ -215,4 +215,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Arithmetical hierarchy](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/degrees-and-hierarchies/arithmetical-hierarchy)

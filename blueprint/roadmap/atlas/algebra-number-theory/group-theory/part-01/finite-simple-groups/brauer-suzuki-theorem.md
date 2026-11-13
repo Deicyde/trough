@@ -7,7 +7,7 @@ statement: formalized
 
 # Brauer–Suzuki theorem
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/brauer-suzuki-theorem/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/brauer-suzuki-theorem/index.html).
 
 ## Definitions
 
@@ -21,7 +21,7 @@ For a finite group this is the largest normal subgroup of odd order, classically
 subgroup of odd order, so the supremum is itself one. For an infinite group the definition still
 makes sense as a subgroup, though it need not be of odd order.
 
-Formalized by `MathlibExt.GroupTheory.BrauerSuzukiWanted.GroupTheory.Defs.oddCore`, a definition declared in [WantedExt/GroupTheory/BrauerSuzukiWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BrauerSuzukiWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/brauer-suzuki-theorem/index.html#odd-core).
+Formalized by `MathlibExt.GroupTheory.BrauerSuzukiWanted.GroupTheory.Defs.oddCore`, a definition declared in [WantedExt/GroupTheory/BrauerSuzukiWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BrauerSuzukiWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/brauer-suzuki-theorem/index.html#odd-core).
 
 ## Brauer–Suzuki theorem
 
@@ -34,7 +34,7 @@ If $t \in P$ has order $2$, then the image of $t$ in $G / O(G)$ lies in the cent
 
 - R. Brauer and M. Suzuki, On finite groups of even order whose 2-Sylow group is a quaternion group, Proc. Nat. Acad. Sci. U.S.A. 45 (1959), 1757-1759. https://doi.org/10.1073/pnas.45.12.1757. Problem `brauer_suzuki` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.GroupTheory.BrauerSuzukiWanted.GroupTheory.brauer_suzuki` is written with `theorem_wanted` in [WantedExt/GroupTheory/BrauerSuzukiWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BrauerSuzukiWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/brauer-suzuki-theorem/index.html#brauer-suzuki).
+Stated but not proved: `MathlibExt.GroupTheory.BrauerSuzukiWanted.GroupTheory.brauer_suzuki` is written with `theorem_wanted` in [WantedExt/GroupTheory/BrauerSuzukiWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BrauerSuzukiWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/brauer-suzuki-theorem/index.html#brauer-suzuki).
 
 ## Depends on
 
@@ -43,4 +43,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Brauer–Suzuki theorem](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-simple-groups/brauer-suzuki-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/finite-simple-groups/brauer-suzuki-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/finite-simple-groups/brauer-suzuki-theorem)

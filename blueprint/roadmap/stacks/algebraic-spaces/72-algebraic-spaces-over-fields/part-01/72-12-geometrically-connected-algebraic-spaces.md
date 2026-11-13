@@ -8,13 +8,13 @@ proof: formalized
 
 # 72.12 Geometrically connected algebraic spaces
 
-Section 72.12 of the Stacks Project, [Tag 0A0Y](https://stacks.math.columbia.edu/tag/0A0Y). 9 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 72.12 of the Stacks Project, [Tag 0A0Y](https://stacks.math.columbia.edu/tag/0A0Y). 9 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A0Z, a definition
 
 [Tag 0A0Z](https://stacks.math.columbia.edu/tag/0A0Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsGeometricallyConnected`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 492](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L492).
+**`AlgebraicGeometry.Space.IsGeometricallyConnected`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 492](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L492).
 
 > **Stacks 0A0Z.** A presheaf on the big fppf site over a field `k` — in particular an
 > algebraic space over `k` — is *geometrically connected* when for every field extension `K/k`
@@ -31,7 +31,7 @@ def IsGeometricallyConnected (B : BigFppfSite.{u}) (k : Type u) [Field k]
 
 [Tag 0A10](https://stacks.math.columbia.edu/tag/0A10) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGeometricallyConnected_iff_relocalizeRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 797](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L797).
+**`AlgebraicGeometry.Space.isGeometricallyConnected_iff_relocalizeRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 797](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L797).
 
 > **Stacks 0A10.** A presheaf on the big fppf site over a field `k` — in particular an
 > algebraic space over `k` — is geometrically connected over `k` if and only if its base change
@@ -52,7 +52,7 @@ theorem isGeometricallyConnected_iff_relocalizeRestrict (B : BigFppfSite.{u})
 
 [Tag 0A11](https://stacks.math.columbia.edu/tag/0A11) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.bijective_connectedComponents_pullback_of_isGeometricallyConnected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 1005](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L1005).
+**`AlgebraicGeometry.Space.bijective_connectedComponents_pullback_of_isGeometricallyConnected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 1005](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L1005).
 
 > **Stacks 0A11.** Let `k` be a field, let `X` and `Y` be algebraic spaces over `k` and
 > assume `X` is geometrically connected over `k`. The projection `X ×_k Y ⟶ Y` induces a
@@ -81,7 +81,7 @@ theorem bijective_connectedComponents_pullback_of_isGeometricallyConnected
 
 [Tag 0A12](https://stacks.math.columbia.edu/tag/0A12) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.bijective_connectedComponents_relocalizeRestrict_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 1188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L1188). The attribute's comment: “bijection on connected components”. References: EGA IV (4.4.6), “more general”.
+**`AlgebraicGeometry.Space.bijective_connectedComponents_relocalizeRestrict_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 1188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L1188). The attribute's comment: “bijection on connected components”. References: EGA IV (4.4.6), “more general”.
 
 > **Stacks 0A12, the bijection on connected components.** Let `k` be a separably closed
 > field, let `K/k` be a field extension whose spectrum lies in the chosen big fppf site and let
@@ -102,7 +102,7 @@ theorem bijective_connectedComponents_relocalizeRestrict_of_isSepClosed [IsSepCl
           (fieldExtensionMap B k K hk hK) X hX)).connectedComponentsMap
 ```
 
-**`AlgebraicGeometry.Space.isGeometricallyConnected_iff_connectedSpace_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 1259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L1259). The attribute's comment: “geometric connectedness”.
+**`AlgebraicGeometry.Space.isGeometricallyConnected_iff_connectedSpace_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 1259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L1259). The attribute's comment: “geometric connectedness”.
 
 > **Stacks 0A12, geometric connectedness.** Over a separably closed field an algebraic space
 > is geometrically connected exactly when its space of points is connected.
@@ -117,7 +117,7 @@ theorem isGeometricallyConnected_iff_connectedSpace_of_isSepClosed [IsSepClosed 
 
 [Tag 0A13](https://stacks.math.columbia.edu/tag/0A13) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGeometricallyConnected_iff_connectedSpace_sepClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 1291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L1291).
+**`AlgebraicGeometry.Space.isGeometricallyConnected_iff_connectedSpace_sepClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 1291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L1291).
 
 > **Stacks 0A13.** Let `k` be a field, let `K` be a separable algebraic closure of `k` whose
 > spectrum lies in the chosen big fppf site and let `X` be an algebraic space over `k`. Then `X`
@@ -142,7 +142,7 @@ theorem isGeometricallyConnected_iff_connectedSpace_sepClosure (B : BigFppfSite.
 
 [Tag 0A14](https://stacks.math.columbia.edu/tag/0A14) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.galoisActionOnBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 917](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L917). The attribute's comment: “the action”.
+**`AlgebraicGeometry.Space.galoisActionOnBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 917](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L917). The attribute's comment: “the action”.
 
 > **Stacks 0A14, the action.** The canonical action of the opposite group of `k`-algebra
 > automorphisms of `K` on the base change `X_K`, viewed again as a presheaf over `k`. For a
@@ -156,7 +156,7 @@ noncomputable def galoisActionOnBaseChange :
     Action ((BigFppfOver B (Spec (.of k)) hk)ᵒᵖ ⥤ Type u) (MulOpposite (K ≃ₐ[k] K))
 ```
 
-**`AlgebraicGeometry.Space.galoisActionOnBaseChange_ρ_app_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 948](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L948). The attribute's comment: “the action on the K-coordinate of a section”.
+**`AlgebraicGeometry.Space.galoisActionOnBaseChange_ρ_app_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 948](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L948). The attribute's comment: “the action on the K-coordinate of a section”.
 
 > **Stacks 0A14, the action on the `K`-coordinate.** An automorphism `σ` acts on a section
 > of `X_K` over a `k`-scheme by composing its morphism to `Spec K` with the automorphism of
@@ -171,7 +171,7 @@ theorem galoisActionOnBaseChange_ρ_app_fst (σ : MulOpposite (K ≃ₐ[k] K))
       x.val.1 ≫ siteMapAlgAut B k K hK σ.unop
 ```
 
-**`AlgebraicGeometry.Space.galoisActionOnBaseChange_ρ_app_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 960](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L960). The attribute's comment: “the action on the section”.
+**`AlgebraicGeometry.Space.galoisActionOnBaseChange_ρ_app_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean, line 960](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnected.lean#L960). The attribute's comment: “the action on the section”.
 
 > **Stacks 0A14, the action on the section.** An automorphism leaves the section of `X`
 > itself untouched. The equality is heterogeneous because the type of the section is indexed by
@@ -189,7 +189,7 @@ theorem galoisActionOnBaseChange_ρ_app_snd (σ : MulOpposite (K ≃ₐ[k] K))
 
 [Tag 0A15](https://stacks.math.columbia.edu/tag/0A15) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_finite_subextension_descending_isQuasiCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactOpenGaloisDescent.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactOpenGaloisDescent.lean#L616). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.exists_finite_subextension_descending_isQuasiCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactOpenGaloisDescent.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactOpenGaloisDescent.lean#L616). The attribute's comment: “part (1)”.
 
 > Let `X` be an algebraic space over a field `k` and let `K/k` be an algebraic field extension. A
 > quasi-compact open subspace of the base change of `X` to `K` is the base change of a quasi-compact
@@ -215,7 +215,7 @@ theorem exists_finite_subextension_descending_isQuasiCompact_open (B : BigFppfSi
           OverShriek.relocalizeRestrictSubfunctor (fieldExtensionMap B E K hE hK) V'
 ```
 
-**`AlgebraicGeometry.Space.exists_open_subgroup_fixing_isQuasiCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactOpenGaloisDescent.lean, line 798](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactOpenGaloisDescent.lean#L798). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.exists_open_subgroup_fixing_isQuasiCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactOpenGaloisDescent.lean, line 798](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactOpenGaloisDescent.lean#L798). The attribute's comment: “part (2)”.
 
 > Let `X` be an algebraic space over a field `k` and let `K/k` be a Galois extension. A
 > quasi-compact open subspace of the base change of `X` to `K` is fixed by an open subgroup of
@@ -239,7 +239,7 @@ theorem exists_open_subgroup_fixing_isQuasiCompact_open [IsGalois k K]
 
 [Tag 0A16](https://stacks.math.columbia.edu/tag/0A16) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_closed_subset_with_preimage_eq_of_galois_invariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GaloisInvariantClosedSubspace.lean, line 721](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GaloisInvariantClosedSubspace.lean#L721).
+**`AlgebraicGeometry.Space.exists_closed_subset_with_preimage_eq_of_galois_invariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GaloisInvariantClosedSubspace.lean, line 721](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GaloisInvariantClosedSubspace.lean#L721).
 
 > **Stacks 0A16.** Let `K/k` be a Galois extension whose spectra lie in the chosen big fppf
 > site, and let `X` be an algebraic space over `k`. A closed subset of the points of the base
@@ -266,7 +266,7 @@ theorem exists_closed_subset_with_preimage_eq_of_galois_invariant (B : BigFppfSi
 
 [Tag 0A17](https://stacks.math.columbia.edu/tag/0A17) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGeometricallyConnected_iff_connectedSpace_finite_separable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnectedFiniteSeparable.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnectedFiniteSeparable.lean#L378). References: EGA IV (8.4.5); EGA IV (4.5.18), “more general”.
+**`AlgebraicGeometry.Space.isGeometricallyConnected_iff_connectedSpace_finite_separable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnectedFiniteSeparable.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyConnectedFiniteSeparable.lean#L378). References: EGA IV (8.4.5); EGA IV (4.5.18), “more general”.
 
 > Let `k` be a field and let `X` be an algebraic space over `k`. Then `X` is
 > geometrically connected over `k` if and only if the base change `X_{k'}` has a connected space of
@@ -292,4 +292,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 72.12, Tag 0A0Y](https://stacks.math.columbia.edu/tag/0A0Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

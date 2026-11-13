@@ -8,13 +8,13 @@ proof: formalized
 
 # 90.17 Lifts of objects
 
-Section 90.17 of the Stacks Project, [Tag 06JD](https://stacks.math.columbia.edu/tag/06JD). 9 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 90.17 of the Stacks Project, [Tag 06JD](https://stacks.math.columbia.edu/tag/06JD). 9 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06JE, a definition
 
 [Tag 06JE](https://stacks.math.columbia.edu/tag/06JE) in the Stacks Project.
 
-**`Deformation.Lift`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L71). The attribute's comment: “objects”.
+**`Deformation.Lift`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Lift.lean#L71). The attribute's comment: “objects”.
 
 > The category of lifts of `x` along `f`. Its objects are arrows to `x` lying over `f`; its
 > arrows are commuting triangles whose remaining side lies over the identity.
@@ -25,7 +25,7 @@ public structure Lift
     (p : F ⥤ C) {A' A : C} (f : A' ⟶ A) (x : p.Fiber A)
 ```
 
-**`Deformation.Lift.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L86). The attribute's comment: “morphisms”.
+**`Deformation.Lift.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Lift.lean#L86). The attribute's comment: “morphisms”.
 
 > A morphism of lifts is a morphism over the identity which makes the triangle of
 > lifting arrows commute.
@@ -37,7 +37,7 @@ public structure Lift.Hom
     (a b : Lift p f x)
 ```
 
-**`Deformation.LiftClasses`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L131). The attribute's comment: “the set of lifts”.
+**`Deformation.LiftClasses`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Lift.lean#L131). The attribute's comment: “the set of lifts”.
 
 > The set of isomorphism classes of lifts of `x` along `f`.
 
@@ -51,7 +51,7 @@ public abbrev LiftClasses
 
 [Tag 06JF](https://stacks.math.columbia.edu/tag/06JF) in the Stacks Project.
 
-**`Deformation.Lift.over`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L141). The attribute's comment: “the category of lifts named by the source object”.
+**`Deformation.Lift.over`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Lift.lean#L141). The attribute's comment: “the category of lifts named by the source object”.
 
 > The category of lifts of `x` to an object `A'` of the base category given together with
 > its morphism to `A`: the lifts of `x` along that morphism, which the name leaves implicit.
@@ -62,7 +62,7 @@ public abbrev Lift.over
     (p : F ⥤ C) {A : C} (A' : Over A) (x : p.Fiber A)
 ```
 
-**`Deformation.LiftClasses.over`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L149). The attribute's comment: “the set of lifts named by the source object”.
+**`Deformation.LiftClasses.over`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Lift.lean#L149). The attribute's comment: “the set of lifts named by the source object”.
 
 > The set of isomorphism classes of lifts of `x` to an object `A'` of the base category
 > given together with its morphism to `A`, that morphism being left implicit.
@@ -77,7 +77,7 @@ public abbrev LiftClasses.over
 
 [Tag 06JG](https://stacks.math.columbia.edu/tag/06JG) in the Stacks Project.
 
-**`Deformation.liftClassesEquivObjectsOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/TangentSpaceOfLifts.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/LiftsOfObjects/TangentSpaceOfLifts.lean#L128). The attribute's comment: “lifts as localized isomorphism classes”.
+**`Deformation.liftClassesEquivObjectsOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/TangentSpaceOfLifts.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/TangentSpaceOfLifts.lean#L128). The attribute's comment: “lifts as localized isomorphism classes”.
 
 > A lift of `x₀` along a square-zero augmentation is an object of the localized category over
 > `x₀` in the source fibre, up to isomorphism.
@@ -98,7 +98,7 @@ public noncomputable def liftClassesEquivObjectsOver
             IsHomLift.domain_eq p e a.hom⟩ : q.Fiber A) }
 ```
 
-**`Deformation.liftClassesTangentSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/TangentSpaceOfLifts.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/LiftsOfObjects/TangentSpaceOfLifts.lean#L227). The attribute's comment: “tangent-space tensor identification”.
+**`Deformation.liftClassesTangentSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/TangentSpaceOfLifts.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/TangentSpaceOfLifts.lean#L227). The attribute's comment: “tangent-space tensor identification”.
 
 > Under (S2), the lifts to `k[V]` are the tangent space of the category localized at `x₀`,
 > tensored with `V`, as vector spaces.
@@ -113,7 +113,7 @@ public noncomputable def liftClassesTangentSpace
     LiftTangentSpaceData p hp hS2 x₀ V e
 ```
 
-**`Deformation.liftClassesTangentSpace_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/TangentSpaceOfLifts.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/LiftsOfObjects/TangentSpaceOfLifts.lean#L288). The attribute's comment: “naturality in the vector space”.
+**`Deformation.liftClassesTangentSpace_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/TangentSpaceOfLifts.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/TangentSpaceOfLifts.lean#L288). The attribute's comment: “naturality in the vector space”.
 
 > The tensor identification of lifts commutes with every linear map of finite-dimensional vector
 > spaces, using the induced map on localized lifts.
@@ -133,7 +133,7 @@ public theorem liftClassesTangentSpace_naturality
     let DV := liftClassesTangentSpace p hp hS2 x₀ V eV
     let DW := liftClassesTangentSpace p hp hS2 x₀ W eW
     letI : Fact (IsPredeformationCategory (BasedCategory.ofFunctor q).p) := ⟨hpq⟩
-    letI : Fact (SchlessingerConditionS2 (CategoryOfElements.π H)) := ⟨DV.associatedS2⟩
+    letI : Fact (SchlessingerConditionS2 (Functor.Elements.π H)) := ⟨DV.associatedS2⟩
     letI : AddCommGroup (artinianTangentSpace Λ k H) :=
       associatedTangentSpaceAddCommGroupUnlifted (BasedCategory.ofFunctor q)
     letI : Module k (artinianTangentSpace Λ k H) :=
@@ -151,7 +151,7 @@ public theorem liftClassesTangentSpace_naturality
 
 [Tag 06JH](https://stacks.math.columbia.edu/tag/06JH) in the Stacks Project.
 
-**`Deformation.liftClassesProdEquivPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L698). The attribute's comment: “product\_bijection”.
+**`Deformation.liftClassesProdEquivPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 698](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Lift.lean#L698). The attribute's comment: “product\_bijection”.
 
 > Isomorphism classes of lifts to a fibre product are in bijection with pairs of
 > isomorphism classes of lifts to the two factors when one structural map is surjective.
@@ -170,7 +170,7 @@ public theorem liftClassesProdEquivPullback
     Nonempty (LiftProductEquiv p c x)
 ```
 
-**`Deformation.liftClassesEquivOfFixedLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 950](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L950). The attribute's comment: “fixed\_lift\_bijection”.
+**`Deformation.liftClassesEquivOfFixedLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 950](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Lift.lean#L950). The attribute's comment: “fixed\_lift\_bijection”.
 
 > After fixing a lift over the first factor, pushing along the second projection gives
 > a bijection from lifts of the fixed object to lifts over the second factor.
@@ -189,7 +189,7 @@ public theorem liftClassesEquivOfFixedLift
     Nonempty (FixedLiftEquiv p c x a₁)
 ```
 
-**`Deformation.liftClassesEquivProdOfCompositePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 1047](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L1047). The attribute's comment: “composite\_square\_bijection”.
+**`Deformation.liftClassesEquivProdOfCompositePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 1047](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Lift.lean#L1047). The attribute's comment: “composite\_square\_bijection”.
 
 > Let `left` be a fibre square of a surjection `g : A₁' ⟶ A₁` and the first projection of
 > `right`. Isomorphism classes of lifts of the source of `a₁` along `left.fst ≫ g` are in
@@ -213,7 +213,7 @@ public theorem liftClassesEquivProdOfCompositePullback
         LiftClasses p right.fst (liftSourceFiber a₁))
 ```
 
-**`Deformation.liftClassesEquivOuterProdOfCompositePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 1071](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L1071). The attribute's comment: “composite\_square\_bijection”.
+**`Deformation.liftClassesEquivOuterProdOfCompositePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 1071](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Lift.lean#L1071). The attribute's comment: “composite\_square\_bijection”.
 
 > Let `right` be a fibre square of `f₁` and `f₂` with `f₁` surjective, and `left` a fibre
 > square of a surjection `g : A₁' ⟶ A₁` and the first projection of `right`. Isomorphism classes
@@ -244,7 +244,7 @@ public theorem liftClassesEquivOuterProdOfCompositePullback
 
 [Tag 06JI](https://stacks.math.columbia.edu/tag/06JI) in the Stacks Project.
 
-**`Deformation.liftAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean#L63). The attribute's comment: “action”.
+**`Deformation.liftAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean#L63). The attribute's comment: “action”.
 
 > **Stacks Project, Tag 06JI.** The canonical additive action of tangent vectors tensored
 > with the infinitesimal kernel on the classes of lifts.
@@ -266,7 +266,7 @@ public noncomputable def liftAction
       (.inl h𝓕.predeformation)
     letI : Fact (IsPredeformationCategory 𝓕.p) := ⟨h𝓕.predeformation⟩
     letI : Fact (SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses 𝓕 h𝓕.predeformation.cofibered))) := ⟨hS2⟩
+      (Functor.Elements.π (isomorphismClasses 𝓕 h𝓕.predeformation.cofibered))) := ⟨hS2⟩
     AddAction
       (TensorProduct k
         (artinianTangentSpace Λ k
@@ -275,7 +275,7 @@ public noncomputable def liftAction
       (LiftClasses 𝓕.p f x)
 ```
 
-**`Deformation.liftDifference_isPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean#L182). The attribute's comment: “difference is canonical pushforward”.
+**`Deformation.liftDifference_isPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean#L182). The attribute's comment: “difference is canonical pushforward”.
 
 > **Stacks Project, Tag 06JI.** The infinitesimal difference of any two lifts is exactly the
 > canonical tangent coordinate of the cocartesian pushforward of their fibre product along
@@ -298,13 +298,13 @@ public theorem liftDifference_isPushforward
       (.inl h𝓕.predeformation)
     letI : Fact (IsPredeformationCategory 𝓕.p) := ⟨h𝓕.predeformation⟩
     letI : Fact (SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses 𝓕 h𝓕.predeformation.cofibered))) := ⟨hS2⟩
+      (Functor.Elements.π (isomorphismClasses 𝓕 h𝓕.predeformation.cofibered))) := ⟨hS2⟩
     ∀ a b : LiftClasses 𝓕.p f x,
       IsPushforwardDifference 𝓕 h𝓕 f hf hann x a b
         (liftDifference 𝓕 h𝓕 f hf hann x a b)
 ```
 
-**`Deformation.liftAction_difference`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean#L253). The attribute's comment: “difference characterization”.
+**`Deformation.liftAction_difference`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean#L253). The attribute's comment: “difference characterization”.
 
 > **Stacks Project, Tag 06JI.** The action is the unique lift whose infinitesimal difference
 > from the given lift is the prescribed tangent vector.
@@ -326,7 +326,7 @@ public theorem liftAction_difference
       (.inl h𝓕.predeformation)
     letI : Fact (IsPredeformationCategory 𝓕.p) := ⟨h𝓕.predeformation⟩
     letI : Fact (SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses 𝓕 h𝓕.predeformation.cofibered))) := ⟨hS2⟩
+      (Functor.Elements.π (isomorphismClasses 𝓕 h𝓕.predeformation.cofibered))) := ⟨hS2⟩
     letI := liftAction 𝓕 h𝓕 f hf hann x
     ∀ (a : LiftClasses 𝓕.p f x)
       (t : TensorProduct k
@@ -336,7 +336,7 @@ public theorem liftAction_difference
       liftDifference 𝓕 h𝓕 f hf hann x a (t +ᵥ a) = t
 ```
 
-**`Deformation.liftAction_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean#L293). The attribute's comment: “free and transitive”.
+**`Deformation.liftAction_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/Action/FreeTransitive.lean#L293). The attribute's comment: “free and transitive”.
 
 > **Stacks Project, Tag 06JI.** From any fixed lift, addition of tangent vectors is a
 > bijection onto all isomorphism classes of lifts; equivalently, the action is free and
@@ -359,7 +359,7 @@ public theorem liftAction_bijective
       (.inl h𝓕.predeformation)
     letI : Fact (IsPredeformationCategory 𝓕.p) := ⟨h𝓕.predeformation⟩
     letI : Fact (SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses 𝓕 h𝓕.predeformation.cofibered))) := ⟨hS2⟩
+      (Functor.Elements.π (isomorphismClasses 𝓕 h𝓕.predeformation.cofibered))) := ⟨hS2⟩
     letI := liftAction 𝓕 h𝓕 f hf hann x
     ∀ a : LiftClasses 𝓕.p f x,
       Function.Bijective
@@ -373,7 +373,7 @@ public theorem liftAction_bijective
 
 [Tag 06TA](https://stacks.math.columbia.edu/tag/06TA) in the Stacks Project.
 
-**`Deformation.liftClassesEquivSquareZeroPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/SquareZeroPullback.lean, line 658](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/LiftsOfObjects/SquareZeroPullback.lean#L658).
+**`Deformation.liftClassesEquivSquareZeroPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/SquareZeroPullback.lean, line 658](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/SquareZeroPullback.lean#L658).
 
 > The canonical difference isomorphism
 > `A' ×_A A' ≅ A' ×_k k[I]` induces a bijection of lifts of `x` over these
@@ -415,13 +415,13 @@ public theorem liftClassesEquivSquareZeroPullback
 
 Declarations registered for the tag:
 
-- [`liftClassesProdEquivPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=liftClassesProdEquivPullback#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/LiftsOfObjects/SquareZeroPullback.lean, line 793](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/LiftsOfObjects/SquareZeroPullback.lean#L793) (StacksFrontier).
+- [`liftClassesProdEquivPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=liftClassesProdEquivPullback#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/LiftsOfObjects/SquareZeroPullback.lean, line 793](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/SquareZeroPullback.lean#L793) (StacksFrontier).
 
 ## Tag 06TC, an equation
 
 [Tag 06TC](https://stacks.math.columbia.edu/tag/06TC) in the Stacks Project.
 
-**`Deformation.liftClassesEquivProdOfResiduePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/CompositeProjection.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/LiftsOfObjects/CompositeProjection.lean#L178).
+**`Deformation.liftClassesEquivProdOfResiduePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/CompositeProjection.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/CompositeProjection.lean#L178).
 
 > For a composite of two fibre squares, lifts over the outer pullback are identified with a
 > lift over the inner factor and a lift over the other outer factor, via the two projections.
@@ -446,7 +446,7 @@ public theorem liftClassesEquivProdOfResiduePullback
 
 [Tag 06JJ](https://stacks.math.columbia.edu/tag/06JJ) in the Stacks Project.
 
-**`Deformation.mapLiftClasses_vadd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/Action/Functoriality.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/LiftsOfObjects/Action/Functoriality.lean#L289).
+**`Deformation.mapLiftClasses_vadd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/Action/Functoriality.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/Action/Functoriality.lean#L288).
 
 > **Stacks Project, Tag 06JJ.** The map on lift classes commutes with the torsor actions,
 > with tangent vectors mapped by the differential tensored with the identity of the kernel.
@@ -476,9 +476,9 @@ public theorem mapLiftClasses_vadd
     letI : Fact (IsPredeformationCategory 𝓕.p) := ⟨h𝓕.predeformation⟩
     letI : Fact (IsPredeformationCategory 𝓖.p) := ⟨h𝓖.predeformation⟩
     letI : Fact (SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses 𝓕 h𝓕.predeformation.cofibered))) := ⟨hS2𝓕⟩
+      (Functor.Elements.π (isomorphismClasses 𝓕 h𝓕.predeformation.cofibered))) := ⟨hS2𝓕⟩
     letI : Fact (SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses 𝓖 h𝓖.predeformation.cofibered))) := ⟨hS2𝓖⟩
+      (Functor.Elements.π (isomorphismClasses 𝓖 h𝓖.predeformation.cofibered))) := ⟨hS2𝓖⟩
     letI := liftAction 𝓕 h𝓕 f hf hann x
     letI := liftAction 𝓖 h𝓖 f hf hann ((fiberFunctor φ A).obj x)
     let dφ := IsLinearMap.mk' (differential h𝓕.predeformation.cofibered
@@ -502,4 +502,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 90.17, Tag 06JD](https://stacks.math.columbia.edu/tag/06JD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

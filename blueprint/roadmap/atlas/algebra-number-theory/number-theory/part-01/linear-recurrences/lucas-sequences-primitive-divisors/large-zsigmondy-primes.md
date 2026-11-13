@@ -7,7 +7,7 @@ statement: formalized
 
 # Large Zsigmondy primes
 
-15 results, 2 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html).
+15 results, 2 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html).
 
 ## Large Zsigmondy prime
 
@@ -21,7 +21,7 @@ $a^n - b^n$ or $p > n + 1$.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Section 1 (definition after Theorem 1).
 
-Formalized by `MetaMathlibExt.IsLargeZsigmondyPrime`, a definition declared in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#is-large-zsigmondy-prime).
+Formalized by `MetaMathlibExt.IsLargeZsigmondyPrime`, a definition declared in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#is-large-zsigmondy-prime).
 
 ## $7$ is a large Zsigmondy prime for $(2, 1, 3)$
 
@@ -33,7 +33,7 @@ and $7 > 3 + 1$.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Section 1 (definition after Theorem 1).
 
-Formalized by `MetaMathlibExt.isLargeZsigmondyPrime_two_one_three_seven`, a theorem declared in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#is-large-zsigmondy-prime-two-one-three-s).
+Formalized by `MetaMathlibExt.isLargeZsigmondyPrime_two_one_three_seven`, a theorem declared in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#is-large-zsigmondy-prime-two-one-three-s).
 
 ## Square-root lower bound for Euler's totient
 
@@ -44,7 +44,7 @@ $\varphi(n) \ge \sqrt{n}/2$, where $\varphi$ is Euler's totient function.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Lemma 1 (quoted from reference [2]).
 
-Stated but not proved: `MetaMathlibExt.sqrt_div_two_le_totient` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#sqrt-div-two-le-totient).
+Stated but not proved: `MetaMathlibExt.sqrt_div_two_le_totient` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#sqrt-div-two-le-totient).
 
 ## Homogenized cyclotomic values at $p^\beta k$
 
@@ -61,7 +61,7 @@ The paper states the second identity as a quotient; here it is cleared of its de
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.homogenizedCyclotomic_prime_pow_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#homogenized-cyclotomic-prime-pow-mul).
+Stated but not proved: `MetaMathlibExt.homogenizedCyclotomic_prime_pow_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#homogenized-cyclotomic-prime-pow-mul).
 
 ## Factorization of $a^n - b^n$ into homogenized cyclotomic values
 
@@ -77,7 +77,7 @@ homogenized cyclotomic value.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Lemma 3 (i) (quoted from reference [6]).
 
-Stated but not proved: `MetaMathlibExt.prod_divisors_homogenizedCyclotomic` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#prod-divisors-homogenized-cyclotomic).
+Stated but not proved: `MetaMathlibExt.prod_divisors_homogenizedCyclotomic` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#prod-divisors-homogenized-cyclotomic).
 
 ## Bounds for homogenized cyclotomic values
 
@@ -90,7 +90,7 @@ totient function.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Lemma 3 (ii) (quoted from reference [6]).
 
-Stated but not proved: `MetaMathlibExt.homogenizedCyclotomic_mem_Icc` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#homogenized-cyclotomic-mem-icc).
+Stated but not proved: `MetaMathlibExt.homogenizedCyclotomic_mem_Icc` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#homogenized-cyclotomic-mem-icc).
 
 ## Homogenized cyclotomic values at $pn$
 
@@ -105,7 +105,7 @@ The paper states the case $p \nmid n$ as a quotient; here it is cleared of its d
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Lemma 3 (iii) (quoted from reference [6]).
 
-Stated but not proved: `MetaMathlibExt.homogenizedCyclotomic_prime_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#homogenized-cyclotomic-prime-mul).
+Stated but not proved: `MetaMathlibExt.homogenizedCyclotomic_prime_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#homogenized-cyclotomic-prime-mul).
 
 ## $p$-adic valuation of homogenized cyclotomic values at an odd prime
 
@@ -120,7 +120,7 @@ some $\beta \ge 1$; and $v_p(\Phi_n(a, b)) = 0$ otherwise.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Lemma 3 (iv) (quoted from reference [6]).
 
-Stated but not proved: `MetaMathlibExt.padicValInt_homogenizedCyclotomic_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#padic-val-int-homogenized-cyclotomic-odd).
+Stated but not proved: `MetaMathlibExt.padicValInt_homogenizedCyclotomic_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#padic-val-int-homogenized-cyclotomic-odd).
 
 ## $2$-adic valuation of homogenized cyclotomic values
 
@@ -134,7 +134,7 @@ for some $\beta \ge 2$; and $v_2(\Phi_n(a, b)) = 0$ if $n$ is not a power of $2$
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Lemma 3 (v) (quoted from reference [6]).
 
-Stated but not proved: `MetaMathlibExt.padicValInt_two_homogenizedCyclotomic` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#padic-val-int-two-homogenized-cyclotomic).
+Stated but not proved: `MetaMathlibExt.padicValInt_two_homogenizedCyclotomic` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#padic-val-int-two-homogenized-cyclotomic).
 
 ## Prime divisors of homogenized cyclotomic values
 
@@ -151,7 +151,7 @@ $\Phi_n(a, b)$ is $1$.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.prime_dvd_homogenizedCyclotomic_cases` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#prime-dvd-homogenized-cyclotomic-cases).
+Stated but not proved: `MetaMathlibExt.prime_dvd_homogenizedCyclotomic_cases` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#prime-dvd-homogenized-cyclotomic-cases).
 
 ## Zsigmondy primes divide the homogenized cyclotomic value
 
@@ -164,7 +164,7 @@ then $p$ divides the homogenized cyclotomic value $\Phi_n(a, b)$.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.dvd_homogenizedCyclotomic_of_isPrimitivePrimeDivisor` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#dvd-homogenized-cyclotomic-of-is-primiti).
+Stated but not proved: `MetaMathlibExt.dvd_homogenizedCyclotomic_of_isPrimitivePrimeDivisor` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#dvd-homogenized-cyclotomic-of-is-primiti).
 
 ## A Zsigmondy prime $q$ that is not large satisfies $n = q - 1$
 
@@ -177,7 +177,7 @@ $(a, b, n)$, then $n = q - 1$.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.eq_sub_one_of_not_isLargeZsigmondyPrime` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#eq-sub-one-of-not-is-large-zsigmondy-pri).
+Stated but not proved: `MetaMathlibExt.eq_sub_one_of_not_isLargeZsigmondyPrime` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#eq-sub-one-of-not-is-large-zsigmondy-pri).
 
 ## A size criterion for a large Zsigmondy prime
 
@@ -193,7 +193,7 @@ than $\Phi_n(a, b)$.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.exists_isLargeZsigmondyPrime_of_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#exists-is-large-zsigmondy-prime-of-lt).
+Stated but not proved: `MetaMathlibExt.exists_isLargeZsigmondyPrime_of_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#exists-is-large-zsigmondy-prime-of-lt).
 
 ## Large Zsigmondy primes for exponents $n > 1$ outside six values
 
@@ -205,7 +205,7 @@ large Zsigmondy prime for $(a, b, n)$.
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.exists_isLargeZsigmondyPrime_of_not_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#exists-is-large-zsigmondy-prime-of-not-m).
+Stated but not proved: `MetaMathlibExt.exists_isLargeZsigmondyPrime_of_not_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#exists-is-large-zsigmondy-prime-of-not-m).
 
 ## Avcı's classification of large Zsigmondy primes
 
@@ -220,7 +220,7 @@ $(a, b) \in \{(2, 1), (3, 2)\}$; $n = 12$ and $(a, b) = (2, 1)$; $n = 18$ and $(
 
 - Ömer Avcı, *Large Zsigmondy Primes*, INTEGERS 24 (2024), Article A62, Theorem 1 (the converse is the classification in the proof of Theorem 1).
 
-Stated but not proved: `MetaMathlibExt.exists_isLargeZsigmondyPrime_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#exists-is-large-zsigmondy-prime-iff).
+Stated but not proved: `MetaMathlibExt.exists_isLargeZsigmondyPrime_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeZsigmondyPrimesWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html#exists-is-large-zsigmondy-prime-iff).
 
 ## Depends on
 
@@ -229,4 +229,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Large Zsigmondy primes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/large-zsigmondy-primes)

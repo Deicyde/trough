@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.28 The resolution property
 
-Section 75.28 of the Stacks Project, [Tag 0GUR](https://stacks.math.columbia.edu/tag/0GUR). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 75.28 of the Stacks Project, [Tag 0GUR](https://stacks.math.columbia.edu/tag/0GUR). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GUS, a definition
 
 [Tag 0GUS](https://stacks.math.columbia.edu/tag/0GUS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HasResolutionProperty`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionProperty.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionProperty.lean#L55).
+**`AlgebraicGeometry.Space.HasResolutionProperty`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionProperty.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionProperty.lean#L55).
 
 > **Stacks 0GUS.** An algebraic space has the *resolution property* when every
 > quasi-coherent module of finite type on it is a quotient of a finite locally free module.
@@ -28,7 +28,7 @@ class HasResolutionProperty (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Conta
 
 [Tag 0GUT](https://stacks.math.columbia.edu/tag/0GUT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_affine_etale_cover_hasResolutionProperty_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyRelativeAmple.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyRelativeAmple.lean#L87). The attribute's comment: “the first step of the proof: an affine surjective étale chart of the target over which the scheme fibre product carries an ample module and has the resolution property”.
+**`AlgebraicGeometry.Space.exists_affine_etale_cover_hasResolutionProperty_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyRelativeAmple.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyRelativeAmple.lean#L87). The attribute's comment: “the first step of the proof: an affine surjective étale chart of the target over which the scheme fibre product carries an ample module and has the resolution property”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over a scheme with `Y` quasi-compact, and
 > let `L` be an `f`-ample module on `X`.  Then there is an affine scheme `V` over the base with a
@@ -56,7 +56,7 @@ theorem exists_affine_etale_cover_hasResolutionProperty_of_isRelativelyAmple
               ((BigFppfOver.toScheme B S hS).obj U)
 ```
 
-**`AlgebraicGeometry.Space.hasResolutionProperty_source_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyRelativeAmpleMain.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyRelativeAmpleMain.lean#L163).
+**`AlgebraicGeometry.Space.hasResolutionProperty_source_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyRelativeAmpleMain.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyRelativeAmpleMain.lean#L163).
 
 > **Stacks 0GUT.**  Let `f : X ⟶ Y` be a morphism of algebraic spaces over a scheme `S` such
 > that `Y` is quasi-compact, quasi-separated and has the resolution property, and such that there
@@ -85,7 +85,7 @@ theorem hasResolutionProperty_source_of_isRelativelyAmple (hZ : B.Contains (⊤_
 
 [Tag 0GUU](https://stacks.math.columbia.edu/tag/0GUU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_finiteLocallyFree_modulePullback_hom_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyPushforwardSections.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyPushforwardSections.lean#L151). The attribute's comment: “the step of the proof producing the finite locally free module on the target and its transpose on the source, for a quasi-compact quasi-separated morphism: the sections of the direct image over an affine chart of the target lie in the image submodule”.
+**`AlgebraicGeometry.Space.exists_finiteLocallyFree_modulePullback_hom_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyPushforwardSections.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyPushforwardSections.lean#L151). The attribute's comment: “the step of the proof producing the finite locally free module on the target and its transpose on the source, for a quasi-compact quasi-separated morphism: the sections of the direct image over an affine chart of the target lie in the image submodule”.
 
 > **The step of the proof of Stacks 0GUU which produces the finite locally free module on the
 > source.**  In the situation of
@@ -117,7 +117,7 @@ theorem exists_finiteLocallyFree_modulePullback_hom_of_hasResolutionProperty
           (modulePullbackAdjunction B S hS f).homEquiv E F ψ = φ ≫ G.ι
 ```
 
-**`AlgebraicGeometry.Space.isQuasiAffineHom_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffine.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffine.lean#L125). The attribute's comment: “the reduction of the hypothesis: the affine case of the statement is its quasi-affine case, an affine morphism of algebraic spaces being quasi-affine”.
+**`AlgebraicGeometry.Space.isQuasiAffineHom_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffine.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffine.lean#L125). The attribute's comment: “the reduction of the hypothesis: the affine case of the statement is its quasi-affine case, an affine morphism of algebraic spaces being quasi-affine”.
 
 > **The reduction of the affine case of Stacks 0GUU to its quasi-affine case.**  An affine
 > morphism of algebraic spaces is quasi-affine: its base change to an affine test object is
@@ -131,7 +131,7 @@ theorem isQuasiAffineHom_of_isAffineHom {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Ty
     (hf : IsAffineHom B S hS f) : IsQuasiAffineHom B S hS f
 ```
 
-**`AlgebraicGeometry.Space.exists_affine_etale_cover_hasResolutionProperty_of_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffine.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffine.lean#L168). The attribute's comment: “the chart step of the proof: an affine surjective étale chart of the target over which the scheme fibre product has the resolution property”.
+**`AlgebraicGeometry.Space.exists_affine_etale_cover_hasResolutionProperty_of_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffine.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffine.lean#L168). The attribute's comment: “the chart step of the proof: an affine surjective étale chart of the target over which the scheme fibre product has the resolution property”.
 
 > **The chart step of the proof of Stacks 0GUU.** For `f : X ⟶ Y` a
 > quasi-affine morphism of algebraic spaces with `Y` quasi-compact there are an affine scheme `V`
@@ -159,7 +159,7 @@ theorem exists_affine_etale_cover_hasResolutionProperty_of_isQuasiAffineHom
               ((BigFppfOver.toScheme B S hS).obj U)
 ```
 
-**`AlgebraicGeometry.Space.hasResolutionProperty_source_of_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffineMain.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffineMain.lean#L86). The attribute's comment: “the quasi-affine case; the affine case is `AlgebraicGeometry.Space.hasResolutionProperty_source_of_isAffineHom`, and the two together are the tag's "affine or quasi-affine"”.
+**`AlgebraicGeometry.Space.hasResolutionProperty_source_of_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffineMain.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffineMain.lean#L86). The attribute's comment: “the quasi-affine case; the affine case is `AlgebraicGeometry.Space.hasResolutionProperty_source_of_isAffineHom`, and the two together are the tag's "affine or quasi-affine"”.
 
 > **Stacks 0GUU, the quasi-affine case.**  For `f : X ⟶ Y` a quasi-affine morphism of algebraic
 > spaces over `S` with `Y` quasi-compact, quasi-separated and carrying the resolution property, `X`
@@ -178,7 +178,7 @@ theorem hasResolutionProperty_source_of_isQuasiAffineHom (hZ : B.Contains (⊤_ 
     HasResolutionProperty.{u, u} B S hS X.1 X.2
 ```
 
-**`AlgebraicGeometry.Space.hasResolutionProperty_source_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffineMain.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffineMain.lean#L103). The attribute's comment: “the affine case; the quasi-affine case is `AlgebraicGeometry.Space.hasResolutionProperty_source_of_isQuasiAffineHom`, and the two together are the tag's "affine or quasi-affine"”.
+**`AlgebraicGeometry.Space.hasResolutionProperty_source_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffineMain.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyQuasiAffineMain.lean#L103). The attribute's comment: “the affine case; the quasi-affine case is `AlgebraicGeometry.Space.hasResolutionProperty_source_of_isQuasiAffineHom`, and the two together are the tag's "affine or quasi-affine"”.
 
 > **Stacks 0GUU, the affine case.**  For `f : X ⟶ Y` an affine morphism of algebraic spaces over
 > `S` with `Y` quasi-compact, quasi-separated and carrying the resolution property, `X` has the
@@ -199,7 +199,7 @@ theorem hasResolutionProperty_source_of_isAffineHom (hZ : B.Contains (⊤_ Schem
 
 [Tag 0GUV](https://stacks.math.columbia.edu/tag/0GUV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasResolutionProperty_of_isSurjective_isFiniteLocallyFree_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyFiniteLocallyFreeTrace.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyFiniteLocallyFreeTrace.lean#L185).
+**`AlgebraicGeometry.Space.hasResolutionProperty_of_isSurjective_isFiniteLocallyFree_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyFiniteLocallyFreeTrace.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyFiniteLocallyFreeTrace.lean#L186).
 
 > **Stacks 0GUV, with no further input.**  For `f : X ⟶ Y` a surjective finite locally free
 > morphism of algebraic spaces over a scheme `S`, if `X` has the resolution property then so does
@@ -225,4 +225,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.28, Tag 0GUR](https://stacks.math.columbia.edu/tag/0GUR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

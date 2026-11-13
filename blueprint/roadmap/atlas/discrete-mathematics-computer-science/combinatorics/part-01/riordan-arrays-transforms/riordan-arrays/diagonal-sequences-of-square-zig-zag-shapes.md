@@ -8,7 +8,7 @@ proof: formalized
 
 # Diagonal sequences of square zig-zag shapes
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/diagonal-sequences-of-square-zig-zag-shapes/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/diagonal-sequences-of-square-zig-zag-shapes/index.html).
 
 ## Right-down diagonal coefficient
 
@@ -16,7 +16,7 @@ For natural numbers $k$ and $i$, the coefficient
 $c_k(i)$ of the right-down diagonal recurrence is the integer $(-1)^i \binom{k+1-i}{i+1}$ when
 $i \le k+1$, and $0$ when $i > k+1$.
 
-Formalized by `MetaMathlibExt.rightDownDiagonalCoefficient`, a definition declared in [MathlibExt/Combinatorics/Enumerative/RightDownDiagonalSequences.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RightDownDiagonalSequences.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/diagonal-sequences-of-square-zig-zag-shapes/index.html#right-down-diagonal-coefficient).
+Formalized by `MetaMathlibExt.rightDownDiagonalCoefficient`, a definition declared in [MathlibExt/Combinatorics/Enumerative/RightDownDiagonalSequences.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RightDownDiagonalSequences.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/diagonal-sequences-of-square-zig-zag-shapes/index.html#right-down-diagonal-coefficient).
 
 ## Right-down diagonal families of order $k$
 
@@ -33,7 +33,7 @@ where $c_k(i) = (-1)^i \binom{k+1-i}{i+1}$ is the right-down diagonal coefficien
 
 - László Németh and László Szalay, *Sequences Involving Square Zig-Zag Shapes*, Journal of Integer Sequences 24 (2021), Article 21.5.2.
 
-Formalized by `MetaMathlibExt.IsRightDownDiagonalFamily`, a definition declared in [MathlibExt/Combinatorics/Enumerative/RightDownDiagonalSequences.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RightDownDiagonalSequences.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/diagonal-sequences-of-square-zig-zag-shapes/index.html#is-right-down-diagonal-family).
+Formalized by `MetaMathlibExt.IsRightDownDiagonalFamily`, a definition declared in [MathlibExt/Combinatorics/Enumerative/RightDownDiagonalSequences.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RightDownDiagonalSequences.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/diagonal-sequences-of-square-zig-zag-shapes/index.html#is-right-down-diagonal-family).
 
 ## Depends on
 
@@ -42,4 +42,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Diagonal sequences of square zig-zag shapes](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/diagonal-sequences-of-square-zig-zag-shapes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/diagonal-sequences-of-square-zig-zag-shapes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/diagonal-sequences-of-square-zig-zag-shapes)

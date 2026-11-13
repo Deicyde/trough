@@ -7,7 +7,7 @@ statement: formalized
 
 # Barry's Stirling-like triangle
 
-5 results, 3 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle/index.html).
+5 results, 3 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle/index.html).
 
 ## Barry's triangle recurrence
 
@@ -25,7 +25,7 @@ The triangle OEIS A080416 is $s(0, n, k)$ for $2 \le k \le n$.
 
 - Bulat Khaidarov, *Enumeration of Certain k-Block Partitions of Barry*, Journal of Integer Sequences 29 (2026), Article 26.2.8, equation (1).
 
-Formalized by `MetaMathlibExt.barryTriangleAux`, a definition declared in [WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle/index.html#barry-triangle-aux).
+Formalized by `MetaMathlibExt.barryTriangleAux`, a definition declared in [WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle/index.html#barry-triangle-aux).
 
 ## Defining recurrence of Barry's triangle
 
@@ -37,7 +37,7 @@ $s(\beta, n + 1, k + 1) = s(\beta + 1, n, k) + \beta (k + 1)\, s(\beta, n, k + 1
 
 - Khaidarov, *Enumeration of Certain k-Block Partitions of Barry*, Journal of Integer Sequences 29 (2026), Article 26.2.8, equation (1).
 
-Formalized by `MetaMathlibExt.barryTriangleAux_succ_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle/index.html#barry-triangle-aux-succ-succ).
+Formalized by `MetaMathlibExt.barryTriangleAux_succ_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle/index.html#barry-triangle-aux-succ-succ).
 
 ## Small values of Barry's triangle
 
@@ -48,7 +48,7 @@ $s(0, 2, 2) = 1$, $s(0, 4, 3) = 4$ and $s(0, 6, 4) = 67$.
 
 - Khaidarov, *Enumeration of Certain k-Block Partitions of Barry*, Journal of Integer Sequences 29 (2026), Article 26.2.8, Table 1.
 
-Formalized by `MetaMathlibExt.barryTriangleAux_small_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle/index.html#barry-triangle-aux-small-values).
+Formalized by `MetaMathlibExt.barryTriangleAux_small_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle/index.html#barry-triangle-aux-small-values).
 
 ## Matrix power formula for Barry's triangle
 
@@ -62,7 +62,7 @@ bottom-left entry $(M^{n-2})_{a-1,1}$ of the power $M^{n-2}$.
 
 - Khaidarov, *Enumeration of Certain k-Block Partitions of Barry*, Journal of Integer Sequences 29 (2026), Article 26.2.8, main result announced in the abstract, equation (7) (`jis-2026-26.2.8-abstract-main`).
 
-Stated but not proved: `MetaMathlibExt.barryTriangleAux_eq_matrix_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle/index.html#barry-triangle-aux-eq-matrix-pow).
+Stated but not proved: `MetaMathlibExt.barryTriangleAux_eq_matrix_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle/index.html#barry-triangle-aux-eq-matrix-pow).
 
 ## Matrix-free formula for Barry's triangle
 
@@ -77,7 +77,7 @@ where the sum runs over all tuples $(p_1, \dots, p_{a-1})$ of natural numbers wi
 
 - Khaidarov, *Enumeration of Certain k-Block Partitions of Barry*, Journal of Integer Sequences 29 (2026), Article 26.2.8, main result announced in the abstract, equation (11) (`jis-2026-26.2.8-abstract-main`).
 
-Stated but not proved: `MetaMathlibExt.barryTriangleAux_eq_sum_antidiagonalTuple` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle/index.html#barry-triangle-aux-eq-sum-antidiagonal-t).
+Stated but not proved: `MetaMathlibExt.barryTriangleAux_eq_sum_antidiagonalTuple` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BarryTriangleExplicitFormulasWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle/index.html#barry-triangle-aux-eq-sum-antidiagonal-t).
 
 ## Depends on
 
@@ -86,4 +86,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Barry's Stirling-like triangle](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/barry-s-stirling-like-triangle)

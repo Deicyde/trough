@@ -8,7 +8,7 @@ proof: formalized
 
 # Circles and conics: its own results
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/index.html).
 
 Configurations of circles and conics, tangency, chains of circles, lunes, and mathematical billiards in elliptic and polygonal tables.
 
@@ -33,7 +33,7 @@ radii, expand the planar Gram determinant in coordinates, and clear denominators
 
 - https://en.wikipedia.org/wiki/Descartes%27_theorem.
 
-Formalized by `MetaMathlibExt.descartes_circle_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/DescartesCircleTheorem.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/DescartesCircleTheorem.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/index.html#descartes-circle-theorem).
+Formalized by `MetaMathlibExt.descartes_circle_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/DescartesCircleTheorem.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/DescartesCircleTheorem.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/index.html#descartes-circle-theorem).
 
 ## Lens curvature recurrence
 
@@ -46,7 +46,7 @@ $$b_{n+2} = \frac{6 - 2K}{1 + K}\, b_{n+1} - b_n + \frac{-8A}{1 + K}.$$
 This is the second-order nonhomogeneous recurrence of the source for the curvatures of a chain
 of circles in a symmetric lens, where $A$ is the common curvature of the two lens circles.
 
-Formalized by `MetaMathlibExt.IsLensCurvatureRecurrence`, a definition declared in [MathlibExt/Geometry/LensCurvatureRecurrence.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/LensCurvatureRecurrence.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/index.html#is-lens-curvature-recurrence).
+Formalized by `MetaMathlibExt.IsLensCurvatureRecurrence`, a definition declared in [MathlibExt/Geometry/LensCurvatureRecurrence.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/LensCurvatureRecurrence.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/index.html#is-lens-curvature-recurrence).
 
 ## Miquel's theorem
 
@@ -61,7 +61,7 @@ three circles have a common point.
 
 - https://en.wikipedia.org/wiki/Miquel%27s_theorem.
 
-Formalized by `MetaMathlibExt.miquel_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/MiquelTheorem.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/MiquelTheorem.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/index.html#miquel-theorem).
+Formalized by `MetaMathlibExt.miquel_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/MiquelTheorem.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/MiquelTheorem.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/index.html#miquel-theorem).
 
 ## Pizza theorem
 
@@ -79,7 +79,7 @@ angles, so alternately shading the slices gives equal shaded and unshaded areas.
 
 - *Pizza theorem*, Wikipedia, https://en.wikipedia.org/wiki/Pizza_theorem.
 
-Formalized by `MetaMathlibExt.pizza_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/PizzaTheorem.lean, line 1329](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/PizzaTheorem.lean#L1329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/index.html#pizza-theorem).
+Formalized by `MetaMathlibExt.pizza_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/PizzaTheorem.lean, line 1323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/PizzaTheorem.lean#L1323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/index.html#pizza-theorem).
 
 ## Depends on
 
@@ -88,4 +88,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Circles and conics](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/circles-and-conics)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/circles-and-conics)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.42 Regular ring maps
 
-Section 15.42 of the Stacks Project, [Tag 07BY](https://stacks.math.columbia.edu/tag/07BY). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.42 of the Stacks Project, [Tag 07BY](https://stacks.math.columbia.edu/tag/07BY). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07BZ, a definition
 
 [Tag 07BZ](https://stacks.math.columbia.edu/tag/07BZ) in the Stacks Project.
 
-**`IsRegularRingHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/RegularRingHom.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Regular/RegularRingHom.lean#L92).
+**`IsRegularRingHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/RegularRingHom.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Regular/RegularRingHom.lean#L92).
 
 > A ring homomorphism is *regular* if it is flat and, over every prime of its source, its
 > residue-field fibre is Noetherian and geometrically regular over that residue field.
@@ -28,7 +28,7 @@ public def IsRegularRingHom {R : Type u} {S : Type v} [CommRing R] [CommRing S]
 
 [Tag 07C0](https://stacks.math.columbia.edu/tag/07C0) in the Stacks Project.
 
-**`isRegularRingHom_tfae_localizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/RegularRingHom.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Regular/RegularRingHom.lean#L469).
+**`isRegularRingHom_tfae_localizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/RegularRingHom.lean, line 469](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Regular/RegularRingHom.lean#L469).
 
 > A ring homomorphism with Noetherian target is regular if and only if all its induced maps on
 > local rings at corresponding prime ideals are regular, and if and only if this holds for
@@ -51,7 +51,7 @@ public theorem isRegularRingHom_tfae_localizations
 
 [Tag 07C1](https://stacks.math.columbia.edu/tag/07C1) in the Stacks Project.
 
-**`isRegularRingHom_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/RegularRingHom.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Regular/RegularRingHom.lean#L554).
+**`isRegularRingHom_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/RegularRingHom.lean, line 554](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Regular/RegularRingHom.lean#L554).
 
 > A finite-type base change of a regular ring homomorphism is regular.
 
@@ -69,7 +69,7 @@ public theorem isRegularRingHom_baseChange
 
 [Tag 07QI](https://stacks.math.columbia.edu/tag/07QI) in the Stacks Project.
 
-**`isRegularRingHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/RegularRingHom.lean, line 704](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Regular/RegularRingHom.lean#L704).
+**`isRegularRingHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/RegularRingHom.lean, line 704](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Regular/RegularRingHom.lean#L704).
 
 > The composite of two regular ring homomorphisms is regular if all its fibres are
 > Noetherian.
@@ -89,7 +89,7 @@ public theorem isRegularRingHom_comp
 
 [Tag 07EP](https://stacks.math.columbia.edu/tag/07EP) in the Stacks Project.
 
-**`isRegularRingHom_of_filteredColimit_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/RegularRingHom.lean, line 1181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Regular/RegularRingHom.lean#L1181).
+**`isRegularRingHom_of_filteredColimit_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/RegularRingHom.lean, line 1181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Regular/RegularRingHom.lean#L1181).
 
 > The colimit of a small nonempty directed system of smooth `R`-algebras, computed on
 > underlying sets, whose residue-field fibres are Noetherian is regular over `R`.
@@ -110,7 +110,7 @@ public theorem isRegularRingHom_of_filteredColimit_smooth
 
 [Tag 07EQ](https://stacks.math.columbia.edu/tag/07EQ) in the Stacks Project.
 
-**`isRegularRingHom_iff_isSeparableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/RegularRingHom.lean, line 1292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Regular/RegularRingHom.lean#L1292).
+**`isRegularRingHom_iff_isSeparableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/RegularRingHom.lean, line 1292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Regular/RegularRingHom.lean#L1292).
 
 > A field extension is a regular ring map if and only if it is separable.
 
@@ -124,7 +124,7 @@ public theorem isRegularRingHom_iff_isSeparableExtension (k : Type u) (K : Type 
 
 [Tag 07NT](https://stacks.math.columbia.edu/tag/07NT) in the Stacks Project.
 
-**`isRegularRingHom_of_comp_of_flat_of_surjectiveOnSpec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/RegularRingHom.lean, line 1314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Regular/RegularRingHom.lean#L1314).
+**`isRegularRingHom_of_comp_of_flat_of_surjectiveOnSpec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/RegularRingHom.lean, line 1314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Regular/RegularRingHom.lean#L1314).
 
 > If a composite ring homomorphism is regular and the second homomorphism is flat and
 > surjective on prime spectra, then the first homomorphism is regular.
@@ -147,4 +147,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.42, Tag 07BY](https://stacks.math.columbia.edu/tag/07BY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

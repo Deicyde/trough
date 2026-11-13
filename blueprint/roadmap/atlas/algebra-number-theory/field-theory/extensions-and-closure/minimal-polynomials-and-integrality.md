@@ -8,7 +8,7 @@ proof: formalized
 
 # Minimal polynomials and integrality
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/minimal-polynomials-and-integrality/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/minimal-polynomials-and-integrality/index.html).
 
 ## Minimal polynomials
 
@@ -21,7 +21,7 @@ $x \in L$ that is algebraic over $K$ is integral over $R$ if and only if the min
 of $x$ over $K$ is the image of a polynomial in $R[X]$ under the map $R[X] \to K[X]$ that
 applies $R \to K$ to each coefficient.
 
-Formalized by `minpoly.isIntegral_iff_mem_lifts`, a theorem declared in [MathlibExt/FieldTheory/Minpoly/IntegrallyClosed.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/Minpoly/IntegrallyClosed.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/minimal-polynomials-and-integrality/index.html#is-integral-iff-mem-lifts).
+Formalized by `minpoly.isIntegral_iff_mem_lifts`, a theorem declared in [MathlibExt/FieldTheory/Minpoly/IntegrallyClosed.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/Minpoly/IntegrallyClosed.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/minimal-polynomials-and-integrality/index.html#is-integral-iff-mem-lifts).
 
 ## Integrality via the coefficients of the minimal polynomial
 
@@ -31,7 +31,7 @@ $R$-algebra, with the $R$-algebra structure on $L$ the composite of $R \to K$ an
 An element $x \in L$ that is algebraic over $K$ is integral over $R$ if and only if every
 coefficient of the minimal polynomial of $x$ over $K$ lies in the image of $R$ in $K$.
 
-Formalized by `minpoly.isIntegral_iff_coeff_mem_range`, a theorem declared in [MathlibExt/FieldTheory/Minpoly/IntegrallyClosed.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/Minpoly/IntegrallyClosed.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/minimal-polynomials-and-integrality/index.html#is-integral-iff-coeff-mem-range).
+Formalized by `minpoly.isIntegral_iff_coeff_mem_range`, a theorem declared in [MathlibExt/FieldTheory/Minpoly/IntegrallyClosed.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/Minpoly/IntegrallyClosed.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/minimal-polynomials-and-integrality/index.html#is-integral-iff-coeff-mem-range).
 
 ## Integrality via equality of minimal polynomials
 
@@ -47,7 +47,7 @@ polynomial of $\alpha$ over $A$ is taken to be $0$ when $\alpha$ is not integral
 
 - Proposition 1.28, in equality form.
 
-Formalized by `IsIntegrallyClosed.minpoly_eq_map_iff_isIntegral`, a theorem declared in [MathlibExt/FieldTheory/Minpoly/IntegrallyClosed.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/Minpoly/IntegrallyClosed.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/minimal-polynomials-and-integrality/index.html#minpoly-eq-map-iff-is-integral).
+Formalized by `IsIntegrallyClosed.minpoly_eq_map_iff_isIntegral`, a theorem declared in [MathlibExt/FieldTheory/Minpoly/IntegrallyClosed.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/Minpoly/IntegrallyClosed.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/minimal-polynomials-and-integrality/index.html#minpoly-eq-map-iff-is-integral).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Minimal polynomials and integrality](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/minimal-polynomials-and-integrality/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/FieldTheory/extensions-and-closure/minimal-polynomials-and-integrality)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/FieldTheory/extensions-and-closure/minimal-polynomials-and-integrality)

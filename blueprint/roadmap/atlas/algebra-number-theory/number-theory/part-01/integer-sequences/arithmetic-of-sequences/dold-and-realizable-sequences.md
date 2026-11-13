@@ -7,7 +7,7 @@ statement: formalized
 
 # Dold and realizable sequences
 
-22 results, 13 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html).
+22 results, 13 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html).
 
 ## Binomial-power sequences
 
@@ -23,7 +23,7 @@ Special cases include the central Delannoy numbers ($r = s = 1$), the Apéry num
 
 - Geng-Rui Zhang, "Realizability of Some Combinatorial Sequences," Journal of Integer Sequences 27 (2024), Article 24.3.3, Theorem, lines 143–144, https://cs.uwaterloo.ca/journals/JIS/VOL27/Zhang/zhang9.tex with `A(n,r,s)` at lines 120–122 and realizability at lines 86–93.
 
-Formalized by `MetaMathlibExt.binomialPowerSeq`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#binomial-power-seq).
+Formalized by `MetaMathlibExt.binomialPowerSeq`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#binomial-power-seq).
 
 ## Dold realizable sequences
 
@@ -38,7 +38,7 @@ The divisibility condition alone is the classical Dold condition.
 
 - Wójcik, Lemma 3, for an equivalent form of the Dold condition.
 
-Formalized by `MetaMathlibExt.doldRealizable`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#dold-realizable).
+Formalized by `MetaMathlibExt.doldRealizable`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#dold-realizable).
 
 ## Dold realizable sequences satisfy the Dold congruences
 
@@ -47,7 +47,7 @@ $(a(n))_{n \ge 0}$ is Dold realizable, then for every integer $n \ge 1$, $n$ div
 $\sum_{d \mid n} \mu(d)\, a(n/d)$, where $\mu$ is the Möbius function and $d$ runs over the
 positive divisors of $n$.
 
-Formalized by `MetaMathlibExt.doldRealizable_dvd`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#dold-realizable-dvd).
+Formalized by `MetaMathlibExt.doldRealizable_dvd`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#dold-realizable-dvd).
 
 ## The Möbius transform of a Dold realizable sequence is non-negative
 
@@ -56,7 +56,7 @@ $(a(n))_{n \ge 0}$ is Dold realizable, then for every integer $n \ge 1$,
 $\sum_{d \mid n} \mu(d)\, a(n/d) \ge 0$, where $\mu$ is the Möbius function and $d$ runs over
 the positive divisors of $n$.
 
-Formalized by `MetaMathlibExt.doldRealizable_nonneg`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#dold-realizable-nonneg).
+Formalized by `MetaMathlibExt.doldRealizable_nonneg`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#dold-realizable-nonneg).
 
 ## Criterion for Dold realizability
 
@@ -65,7 +65,7 @@ $\mu$ be the Möbius function. If for every integer $n \ge 1$ the sum
 $\sum_{d \mid n} \mu(d)\, a(n/d)$ over the positive divisors $d$ of $n$ is divisible by $n$, and
 for every integer $n \ge 1$ this sum is non-negative, then $a$ is Dold realizable.
 
-Formalized by `MetaMathlibExt.doldRealizable_of_dvd_and_nonneg`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#dold-realizable-of-dvd-and-nonneg).
+Formalized by `MetaMathlibExt.doldRealizable_of_dvd_and_nonneg`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#dold-realizable-of-dvd-and-nonneg).
 
 ## Binomial-power sequences are Dold realizable
 
@@ -79,7 +79,7 @@ the Möbius function, is non-negative and divisible by $n$.
 
 - Zhang 2024, J. Integer Seq. 27, Article 24.3.3, Theorem 1.13.
 
-Formalized by `MetaMathlibExt.binomial_power_sequence_dold_realizable`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 1891](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L1891). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#binomial-power-sequence-dold-realizable).
+Formalized by `MetaMathlibExt.binomial_power_sequence_dold_realizable`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 1891](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L1891). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#binomial-power-sequence-dold-realizable).
 
 ## Dold congruences for binomial-power sequences
 
@@ -88,7 +88,7 @@ and let $A_{r,s}(m) = \sum_{k=0}^{m} \binom{m}{k}^r \binom{m+k}{k}^s$. Then for 
 $n \ge 1$, $n$ divides $\sum_{d \mid n} \mu(d)\, A_{r,s}(n/d)$, where $\mu$ is the Möbius
 function and $d$ runs over the positive divisors of $n$.
 
-Formalized by `MetaMathlibExt.binomialPowerSeq_dold_congruences`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 1964](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L1964). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#binomial-power-seq-dold-congruences).
+Formalized by `MetaMathlibExt.binomialPowerSeq_dold_congruences`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 1964](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L1964). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#binomial-power-seq-dold-congruences).
 
 ## Non-negativity of the Möbius transform of binomial-power sequences
 
@@ -97,7 +97,7 @@ $s \ge 0$ be integers and let $A_{r,s}(m) = \sum_{k=0}^{m} \binom{m}{k}^r \binom
 Then for every integer $n \ge 1$, $\sum_{d \mid n} \mu(d)\, A_{r,s}(n/d) \ge 0$, where $\mu$
 is the Möbius function and $d$ runs over the positive divisors of $n$.
 
-Formalized by `MetaMathlibExt.binomialPowerSeq_moebius_sum_nonneg`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 1972](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L1972). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#binomial-power-seq-moebius-sum-nonneg).
+Formalized by `MetaMathlibExt.binomialPowerSeq_moebius_sum_nonneg`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean, line 1972](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BinomialPowerRealizability.lean#L1972). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#binomial-power-seq-moebius-sum-nonneg).
 
 ## Dold sequences
 
@@ -110,7 +110,7 @@ constrained.
 
 - Wójcik, *Binomial Transform and Dold Sequences*, Lemma 3; this equivalent trace characterization is taken here as the definition.
 
-Formalized by `MetaMathlibExt.IsDoldSequence`, a definition declared in [MathlibExt/NumberTheory/DoldSequence.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/DoldSequence.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#is-dold-sequence).
+Formalized by `MetaMathlibExt.IsDoldSequence`, a definition declared in [MathlibExt/NumberTheory/DoldSequence.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/DoldSequence.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#is-dold-sequence).
 
 ## Fermat sequence
 
@@ -126,7 +126,7 @@ summing over the empty set of divisors of $0$.
 
 - B.-S. Du, S.-S. Huang, and M.-C. Li, *Newton, Fermat, and Exactly Realizable Sequences*, Journal of Integer Sequences 8 (2005), lines 181–190, <https://cs.uwaterloo.ca/journals/JIS/VOL8/Huang/huang11.tex>.
 
-Formalized by `MetaMathlibExt.fermatSequence`, a definition declared in [MathlibExt/NumberTheory/FermatSequence.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/FermatSequence.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#fermat-sequence).
+Formalized by `MetaMathlibExt.fermatSequence`, a definition declared in [MathlibExt/NumberTheory/FermatSequence.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/FermatSequence.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#fermat-sequence).
 
 ## Almost realizable sequences
 
@@ -143,7 +143,7 @@ value $a(0)$ is not used.
 
 - Geng-Rui Zhang, *Realizability of Some Combinatorial Sequences*, Journal of Integer Sequences 27 (2024), Article 24.3.3, Definition 3.
 
-Formalized by `MetaMathlibExt.IsAlmostRealizableSeq`, a definition declared in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#is-almost-realizable-seq).
+Formalized by `MetaMathlibExt.IsAlmostRealizableSeq`, a definition declared in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#is-almost-realizable-seq).
 
 ## The zero sequence is almost realizable
 
@@ -156,7 +156,7 @@ It is realized by the self-map of the empty set, with multiplier $m = 1$.
 
 - Geng-Rui Zhang, *Realizability of Some Combinatorial Sequences*, Journal of Integer Sequences 27 (2024), Article 24.3.3, Definition 3.
 
-Formalized by `MetaMathlibExt.isAlmostRealizableSeq_zero`, a theorem declared in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#is-almost-realizable-seq-zero).
+Formalized by `MetaMathlibExt.isAlmostRealizableSeq_zero`, a theorem declared in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#is-almost-realizable-seq-zero).
 
 ## Binomial-power sequences are almost realizable
 
@@ -171,7 +171,7 @@ binomial-power sequences are Dold realizable.
 
 - Geng-Rui Zhang, *Realizability of Some Combinatorial Sequences*, Journal of Integer Sequences 27 (2024), Article 24.3.3, Definition 3 and Theorem 13.
 
-Formalized by `MetaMathlibExt.isAlmostRealizableSeq_binomialPowerSeq`, a theorem declared in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#is-almost-realizable-seq-binomial-power).
+Formalized by `MetaMathlibExt.isAlmostRealizableSeq_binomialPowerSeq`, a theorem declared in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#is-almost-realizable-seq-binomial-power).
 
 ## Domb-type sums are Dold realizable
 
@@ -184,7 +184,7 @@ realizable.
 
 - Geng-Rui Zhang, *Realizability of Some Combinatorial Sequences*, Journal of Integer Sequences 27 (2024), Article 24.3.3, Theorem 15 (`jis-2024-24.3.3-thm-15`).
 
-Stated but not proved: `MetaMathlibExt.doldRealizable_dombTypeSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#dold-realizable-domb-type-sum).
+Stated but not proved: `MetaMathlibExt.doldRealizable_dombTypeSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#dold-realizable-domb-type-sum).
 
 ## The Catalan, Motzkin and large Schröder numbers are not almost realizable
 
@@ -197,7 +197,7 @@ $S(n)$ (OEIS A006318), given by $S(0) = 1$ and $S(n+1) = S(n) + \sum_{i=0}^{n} S
 
 - Geng-Rui Zhang, *Realizability of Some Combinatorial Sequences*, Journal of Integer Sequences 27 (2024), Article 24.3.3, Theorem 21 (`jis-2024-24.3.3-thm-21`).
 
-Stated but not proved: `MetaMathlibExt.not_isAlmostRealizableSeq_catalan_motzkin_schroder` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#not-is-almost-realizable-seq-catalan-mot).
+Stated but not proved: `MetaMathlibExt.not_isAlmostRealizableSeq_catalan_motzkin_schroder` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#not-is-almost-realizable-seq-catalan-mot).
 
 ## Helou–Terjanian congruence for primes $p \ge 5$
 
@@ -210,7 +210,7 @@ valuation.
 
 - Geng-Rui Zhang, *Realizability of Some Combinatorial Sequences*, Journal of Integer Sequences 27 (2024), Article 24.3.3, Lemma 26 (1) (`jis-2024-24.3.3-lem-26`).
 
-Stated but not proved: `MetaMathlibExt.choose_mul_prime_modEq_of_five_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#choose-mul-prime-mod-eq-of-five-le).
+Stated but not proved: `MetaMathlibExt.choose_mul_prime_modEq_of_five_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#choose-mul-prime-mod-eq-of-five-le).
 
 ## Helou–Terjanian congruence for $p = 3$
 
@@ -223,7 +223,7 @@ valuation.
 
 - Geng-Rui Zhang, *Realizability of Some Combinatorial Sequences*, Journal of Integer Sequences 27 (2024), Article 24.3.3, Lemma 26 (2) (`jis-2024-24.3.3-lem-26`).
 
-Stated but not proved: `MetaMathlibExt.choose_three_mul_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#choose-three-mul-mod-eq).
+Stated but not proved: `MetaMathlibExt.choose_three_mul_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#choose-three-mul-mod-eq).
 
 ## Helou–Terjanian congruence for $p = 2$
 
@@ -236,7 +236,7 @@ valuation.
 
 - Geng-Rui Zhang, *Realizability of Some Combinatorial Sequences*, Journal of Integer Sequences 27 (2024), Article 24.3.3, Lemma 26 (3) (`jis-2024-24.3.3-lem-26`).
 
-Stated but not proved: `MetaMathlibExt.choose_two_mul_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#choose-two-mul-mod-eq).
+Stated but not proved: `MetaMathlibExt.choose_two_mul_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#choose-two-mul-mod-eq).
 
 ## Binomial coefficients at multiples of a prime divisor
 
@@ -254,7 +254,7 @@ absolute value.
 
 - Geng-Rui Zhang, *Realizability of Some Combinatorial Sequences*, Journal of Integer Sequences 27 (2024), Article 24.3.3, Lemma 27 (`jis-2024-24.3.3-lem-27`).
 
-Stated but not proved: `MetaMathlibExt.choose_mul_prime_modEq_choose_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#choose-mul-prime-mod-eq-choose-div).
+Stated but not proved: `MetaMathlibExt.choose_mul_prime_modEq_choose_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#choose-mul-prime-mod-eq-choose-div).
 
 ## Möbius transforms of sequences growing by a factor of at least $1.221$ are nonnegative
 
@@ -270,7 +270,7 @@ that is, the Dirichlet convolution $\mu * b$ is nonnegative at $n$.
 
 - Geng-Rui Zhang, *Realizability of Some Combinatorial Sequences*, Journal of Integer Sequences 27 (2024), Article 24.3.3, Lemma 28 (`jis-2024-24.3.3-lem-28`).
 
-Stated but not proved: `MetaMathlibExt.moebius_conv_nonneg_of_geometric_growth` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#moebius-conv-nonneg-of-geometric-growth).
+Stated but not proved: `MetaMathlibExt.moebius_conv_nonneg_of_geometric_growth` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#moebius-conv-nonneg-of-geometric-growth).
 
 ## Dold congruences via prime-power congruences
 
@@ -283,7 +283,7 @@ if and only if $n$ divides $\sum_{d \mid n} \mu(n/d) V(d)$ for every integer $n 
 
 - Geng-Rui Zhang, *Realizability of Some Combinatorial Sequences*, Journal of Integer Sequences 27 (2024), Article 24.3.3, Lemma 30 (`jis-2024-24.3.3-lem-30`).
 
-Stated but not proved: `MetaMathlibExt.prime_power_congruence_iff_dold` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#prime-power-congruence-iff-dold).
+Stated but not proved: `MetaMathlibExt.prime_power_congruence_iff_dold` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#prime-power-congruence-iff-dold).
 
 ## Even-binomial-type sums are Dold realizable
 
@@ -301,7 +301,7 @@ $n = 2$ is $T(2) - T(1) = 3^s$, which is odd, so the sequence is not Dold realiz
 
 - Geng-Rui Zhang, *Realizability of Some Combinatorial Sequences*, Journal of Integer Sequences 27 (2024), Article 24.3.3, Theorem 18 (`jis-2024-24.3.3-thm-18`).
 
-Stated but not proved: `MetaMathlibExt.doldRealizable_evenBinomialTypeSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#dold-realizable-even-binomial-type-sum).
+Stated but not proved: `MetaMathlibExt.doldRealizable_evenBinomialTypeSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RealizableCombinatorialSequencesWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html#dold-realizable-even-binomial-type-sum).
 
 ## Depends on
 
@@ -310,4 +310,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Dold and realizable sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/dold-and-realizable-sequences)

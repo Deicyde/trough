@@ -1,89 +1,69 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.isLocallyNoetherian_of_mem_precoverage, AlgebraicGeometry.isLocallyNoetherian_of_isCovering, AlgebraicGeometry.isLocallyNoetherian_of_isCovering_bigFppfOver, AlgebraicGeometry.isLocallyNoetherian_of_locallyOfFiniteType_over, AlgebraicGeometry.isLocallyNoetherian_of_isPullback_over, AlgebraicGeometry.LocallyNoetherianOver.not_hasPullbacks, AlgebraicGeometry.LocallyNoetherianOver.not_isMorphismOfSites_toBigFppfOver, AlgebraicGeometry.ExtendingFunctors.isEquivalence_limitPreservingRestriction_noetherian
+lean: AlgebraicGeometry.BigSite.NoetherianOver.closure_isSite_isContinuous_isCocontinuous, AlgebraicGeometry.LocallyNoetherianOver.not_hasPullbacks, AlgebraicGeometry.LocallyNoetherianOver.not_isMorphismOfSites_toBigFppfOver, AlgebraicGeometry.ExtendingFunctors.isEquivalence_limitPreservingRestriction_noetherian, AlgebraicGeometry.locallyOfFinitePresentation_of_limitPreserving_yoneda, AlgebraicGeometry.ExtendingFunctors.relativelyRepresentable_restriction_of_limitPreservingSheaf, AlgebraicGeometry.ExtendingFunctors.isRepresentableOnAffineFiniteType_of_relativelyRepresentable, AlgebraicGeometry.ExtendingFunctors.relativelyRepresentable_of_isRepresentableOnAffineFiniteType
 statement: formalized
 proof: formalized
 ---
 
 # 98.25 Limit preserving functors on Noetherian schemes
 
-Section 98.25 of the Stacks Project, [Tag 0GE1](https://stacks.math.columbia.edu/tag/0GE1). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.25 of the Stacks Project, [Tag 0GE1](https://stacks.math.columbia.edu/tag/0GE1). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GE1, the section
 
 [Tag 0GE1](https://stacks.math.columbia.edu/tag/0GE1) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyNoetherian_of_mem_precoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/LocallyNoetherianObjects.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/LocallyNoetherianObjects.lean#L84). The attribute's comment: “part (3): the members of a covering family of a locally Noetherian scheme”.
+**`AlgebraicGeometry.BigSite.NoetherianOver.closure_isSite_isContinuous_isCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/LocallyNoetherianSite.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/LocallyNoetherianSite.lean#L327). The attribute's comment: “all five parts, for each of the topologies Zariski, étale, smooth, syntomic, fppf”.
 
-> A member of a `τ`-covering family of a locally Noetherian scheme is locally Noetherian.
-
-```lean
-public theorem isLocallyNoetherian_of_mem_precoverage (τ : CoveringTopology) {X : Scheme.{u}}
-    (hX : IsLocallyNoetherian X) {R : Presieve X}
-    (hR : R ∈ Scheme.precoverage (coveringMorphismProperty.{u} τ) X)
-    {Y : Scheme.{u}} {f : Y ⟶ X} (hf : R f) : IsLocallyNoetherian Y
-```
-
-**`AlgebraicGeometry.isLocallyNoetherian_of_isCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/LocallyNoetherianObjects.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/LocallyNoetherianObjects.lean#L93). The attribute's comment: “part (3): the sources of a covering of a locally Noetherian object”.
-
-> If a chosen covering family of a big site has locally Noetherian target, then each of its
-> sources is locally Noetherian.
-
-```lean
-public theorem isLocallyNoetherian_of_isCovering (B : BigSite.{u} τ)
-    {𝒰 : Covering (siteCategory B)} (h𝒰 : isCovering τ B 𝒰)
-    (hX : IsLocallyNoetherian ((schemeBelowInclusion (cutoff τ B)).obj 𝒰.1)) (i : 𝒰.2.I₀) :
-    IsLocallyNoetherian ((schemeBelowInclusion (cutoff τ B)).obj (𝒰.2.X i))
-```
-
-**`AlgebraicGeometry.isLocallyNoetherian_of_isCovering_bigFppfOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/LocallyNoetherianObjects.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/LocallyNoetherianObjects.lean#L103). The attribute's comment: “part (3) for the big fppf site over a base scheme”.
-
-> If a covering family of the big fppf category over `S` has locally Noetherian target, then
-> each of its sources is locally Noetherian.
+> **Stacks 0GE1.** Let `τ` be one of the topologies Zariski, étale, smooth, syntomic and fppf,
+> let `B` be a big `τ`-site and `S` a scheme of `B`, and let `(Noetherian/S)` be the full
+> subcategory of `(Sch/S)` on the locally Noetherian objects.
+> 1. If `f : X ⟶ Y` is a morphism of `(Sch/S)` locally of finite type with `Y` locally
+>    Noetherian, then `X` is locally Noetherian.
+> 2. For morphisms `f : X ⟶ Y` and `g : Z ⟶ Y` of `(Noetherian/S)` with `f` locally of finite
+>    type, the fibre product `X ×_Y Z` exists in `(Noetherian/S)` and agrees with the fibre
+>    product in `(Sch/S)`.
+> 3. The members of a covering of `(Sch/S)_τ` of a locally Noetherian object are locally
+>    Noetherian.
+> 4. The coverings of `(Sch/S)_τ` whose objects lie in `(Noetherian/S)` make `(Noetherian/S)` a
+>    site, `(Noetherian/S)_τ`.
+> 5. The inclusion `(Noetherian/S)_τ ⥤ (Sch/S)_τ` is fully faithful, continuous and cocontinuous:
+>    it carries coverings to coverings and preserves the fibre products of their members, every
+>    covering of `(Sch/S)_τ` of an object of `(Noetherian/S)` is refined by the image of a
+>    covering of `(Noetherian/S)_τ`, and on the generated topologies it is
+>    `Functor.IsContinuous` and `Functor.IsCocontinuous`.
+>
+> The source assumes `S` locally Noetherian; the statement holds without it.
 
 ```lean
-public theorem isLocallyNoetherian_of_isCovering_bigFppfOver (B : BigFppfSite.{u})
-    (S : Scheme.{u}) (hS : B.Contains S) {E : Covering (BigFppfOver B S hS)}
-    (hE : BigFppfOver.IsCovering B S hS E)
-    (hX : IsLocallyNoetherian ((BigFppfOver.toScheme B S hS).obj E.1)) (i : E.2.I₀) :
-    IsLocallyNoetherian ((BigFppfOver.toScheme B S hS).obj (E.2.X i))
-```
-
-**`AlgebraicGeometry.isLocallyNoetherian_of_locallyOfFiniteType_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/LocallyNoetherianObjects.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/LocallyNoetherianObjects.lean#L115). The attribute's comment: “part (1): a morphism locally of finite type has locally Noetherian source”. References: EGA IV (1.3.3), “special case”.
-
-> If `f : X ⟶ Y` is a morphism of the big site over `S` whose underlying morphism of schemes
-> is locally of finite type and whose target is locally Noetherian, then its source is locally
-> Noetherian.
-
-```lean
-public theorem isLocallyNoetherian_of_locallyOfFiniteType_over (B : BigSite.{u} τ)
-    (S : Scheme.{u}) (hS : S.size < cutoff τ B) {X Y : Over (base B S hS)} (f : X ⟶ Y)
-    (hY : IsLocallyNoetherian ((schemeBelowInclusion (cutoff τ B)).obj Y.left))
-    (hf : LocallyOfFiniteType ((schemeBelowInclusion (cutoff τ B)).map f.left)) :
-    IsLocallyNoetherian ((schemeBelowInclusion (cutoff τ B)).obj X.left)
-```
-
-**`AlgebraicGeometry.isLocallyNoetherian_of_isPullback_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/LocallyNoetherianObjects.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/LocallyNoetherianObjects.lean#L141). The attribute's comment: “part (2): the fibre product along a morphism locally of finite type”.
-
-> Let `f : X ⟶ Y` and `g : Z ⟶ Y` be morphisms of the big site over `S` with `f` locally of
-> finite type on underlying schemes and `Z` locally Noetherian. Then the vertex of a fibre product
-> square on `f` and `g` is locally Noetherian.
-
-```lean
-public theorem isLocallyNoetherian_of_isPullback_over (B : BigSite.{u} τ) (S : Scheme.{u})
-    (hS : S.size < cutoff τ B) {W X Y Z : Over (base B S hS)}
-    {p : W ⟶ X} {q : W ⟶ Z} {f : X ⟶ Y} {g : Z ⟶ Y} (h : IsPullback p q f g)
-    (hf : LocallyOfFiniteType ((schemeBelowInclusion (cutoff τ B)).map f.left))
-    (hZ : IsLocallyNoetherian ((schemeBelowInclusion (cutoff τ B)).obj Z.left)) :
-    IsLocallyNoetherian ((schemeBelowInclusion (cutoff τ B)).obj W.left)
+theorem closure_isSite_isContinuous_isCocontinuous :
+    (∀ {X Y : Over (base B S hS)} (f : X ⟶ Y), locallyNoetherianOver B S hS Y →
+      LocallyOfFiniteType ((schemeBelowInclusion (cutoff τ B)).map f.left) →
+        locallyNoetherianOver B S hS X) ∧
+    (∀ {X Y Z : NoetherianOver B S hS} (f : X ⟶ Y) (g : Z ⟶ Y),
+      LocallyOfFiniteType ((schemeBelowInclusion (cutoff τ B)).map f.hom.left) →
+        HasPullback f g ∧ PreservesLimit (cospan f g) (ι B S hS)) ∧
+    (∀ E : Covering.{u + 1, u, u + 1} (Over (base B S hS)), IsOverCovering B S hS E →
+      locallyNoetherianOver B S hS E.1 → ∀ i, locallyNoetherianOver B S hS (E.2.X i)) ∧
+    IsSite (IsCovering B S hS) ∧
+    ((ι B S hS).Full ∧ (ι B S hS).Faithful ∧
+      (∀ E : Covering.{u + 1, u, u + 1} (NoetherianOver B S hS), IsCovering B S hS E →
+        IsOverCovering B S hS ⟨(ι B S hS).obj E.1, E.2.map (ι B S hS)⟩ ∧
+        ∀ (i : E.2.I₀) {T : NoetherianOver B S hS} (g : T ⟶ E.1),
+          HasPullback (E.2.f i) g ∧ PreservesLimit (cospan (E.2.f i) g) (ι B S hS)) ∧
+      (∀ (X : NoetherianOver B S hS) (F : PreZeroHypercover.{u + 1} ((ι B S hS).obj X)),
+        IsOverCovering B S hS ⟨_, F⟩ → ∃ E : PreZeroHypercover.{u + 1} X,
+          IsCovering B S hS ⟨X, E⟩ ∧ Nonempty ((E.map (ι B S hS)).Hom F)) ∧
+      (ι B S hS).IsContinuous (topology B S hS) (overTopology τ B S hS) ∧
+      (ι B S hS).IsCocontinuous (topology B S hS) (overTopology τ B S hS))
 ```
 
 ## Tag 0GE2, a remark
 
 [Tag 0GE2](https://stacks.math.columbia.edu/tag/0GE2) in the Stacks Project.
 
-**`AlgebraicGeometry.LocallyNoetherianOver.not_hasPullbacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Sites/NoetherianSiteNoFibreProducts.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Sites/NoetherianSiteNoFibreProducts.lean#L475). The attribute's comment: “the first assertion, for tau = fppf and S the spectrum of a countable field”.
+**`AlgebraicGeometry.LocallyNoetherianOver.not_hasPullbacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Sites/NoetherianSiteNoFibreProducts.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Sites/NoetherianSiteNoFibreProducts.lean#L475). The attribute's comment: “the first assertion, for tau = fppf and S the spectrum of a countable field”.
 
 > **Stacks 0GE2, first assertion.** *The site `(Noetherian/S)_τ` does not have fibre
 > products*, here for `τ = fppf` and `S = Spec k` with `k` a countable field.
@@ -101,13 +81,13 @@ public theorem not_hasPullbacks (B : BigFppfSite.{u}) (baseField : Type u) [Fiel
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.LocallyNoetherianOver.not_isMorphismOfSites_toBigFppfOver`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Sites/NoetherianSiteNotMorphismOfSites.lean#L416), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Examples/Sites/NoetherianSiteNotMorphismOfSites.lean, line 486](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Sites/NoetherianSiteNotMorphismOfSites.lean#L486) (StacksFrontier): “the second assertion, for tau = fppf and S = Spec F\_p: the example of Examples, Section 0GE8 that the remark defers to”.
+- [`AlgebraicGeometry.LocallyNoetherianOver.not_isMorphismOfSites_toBigFppfOver`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Sites/NoetherianSiteNotMorphismOfSites.lean#L416), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Examples/Sites/NoetherianSiteNotMorphismOfSites.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Sites/NoetherianSiteNotMorphismOfSites.lean#L486) (StacksFrontier): “the second assertion, for tau = fppf and S = Spec F\_p: the example of Examples, Section 0GE8 that the remark defers to”.
 
 ## Tag 0GE3, a lemma
 
 [Tag 0GE3](https://stacks.math.columbia.edu/tag/0GE3) in the Stacks Project.
 
-**`AlgebraicGeometry.ExtendingFunctors.isEquivalence_limitPreservingRestriction_noetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsRestrictionFullness.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsRestrictionFullness.lean#L182).
+**`AlgebraicGeometry.ExtendingFunctors.isEquivalence_limitPreservingRestriction_noetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsRestrictionFullness.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsRestrictionFullness.lean#L182).
 
 > **Stacks 0GE3.** Let `S` be a locally Noetherian scheme and let `τ` be one of the five
 > topologies — Zariski, étale, smooth, syntomic and fppf. Restriction along the inclusion of the
@@ -130,7 +110,7 @@ theorem isEquivalence_limitPreservingRestriction_noetherian (τ : CoveringTopolo
 
 [Tag 0GE4](https://stacks.math.columbia.edu/tag/0GE4) in the Stacks Project.
 
-**`AlgebraicGeometry.locallyOfFinitePresentation_of_limitPreserving_yoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LimitPreservingNoetherian.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LimitPreservingNoetherian.lean#L119). References: SGA 3 XI (3.2), “partial”.
+**`AlgebraicGeometry.locallyOfFinitePresentation_of_limitPreserving_yoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LimitPreservingNoetherian.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LimitPreservingNoetherian.lean#L119). References: SGA 3 XI (3.2), “partial”.
 
 > A limit-preserving representable functor on the locally Noetherian site
 > represents a scheme locally of finite presentation over the base.
@@ -149,7 +129,7 @@ theorem locallyOfFinitePresentation_of_limitPreserving_yoneda
 
 [Tag 0GE5](https://stacks.math.columbia.edu/tag/0GE5) in the Stacks Project.
 
-**`AlgebraicGeometry.ExtendingFunctors.relativelyRepresentable_restriction_of_limitPreservingSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentable.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentable.lean#L398). The attribute's comment: “implication (1) ⇒ (2)”.
+**`AlgebraicGeometry.ExtendingFunctors.relativelyRepresentable_restriction_of_limitPreservingSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentable.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentable.lean#L397). The attribute's comment: “implication (1) ⇒ (2)”.
 
 > **Stacks 0GE5, implication (1) ⇒ (2).** Let `S` be a locally Noetherian scheme, let `τ` be
 > one of the five topologies — Zariski, étale, smooth, syntomic and fppf — and let `F'`, `G'` be
@@ -172,7 +152,7 @@ theorem relativelyRepresentable_restriction_of_limitPreservingSheaf
       (Functor.whiskerLeft (IsLocallyNoetherianOver (S := S)).ι.op a')
 ```
 
-**`AlgebraicGeometry.ExtendingFunctors.isRepresentableOnAffineFiniteType_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentable.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentable.lean#L412). The attribute's comment: “implication (2) ⇒ (3)”.
+**`AlgebraicGeometry.ExtendingFunctors.isRepresentableOnAffineFiniteType_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentable.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentable.lean#L411). The attribute's comment: “implication (2) ⇒ (3)”.
 
 > **Stacks 0GE5, implication (2) ⇒ (3).** If the restriction of `a'` to the locally Noetherian
 > objects over `S` is representable, then it is representable at every test object which is affine
@@ -187,7 +167,7 @@ theorem isRepresentableOnAffineFiniteType_of_relativelyRepresentable
     IsRepresentableOnAffineFiniteType.{w} a
 ```
 
-**`AlgebraicGeometry.ExtendingFunctors.relativelyRepresentable_of_isRepresentableOnAffineFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentableConverse.lean, line 951](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentableConverse.lean#L951). The attribute's comment: “implication (3) ⇒ (1)”. References: SGA 3 XI (3.4), “special case”.
+**`AlgebraicGeometry.ExtendingFunctors.relativelyRepresentable_of_isRepresentableOnAffineFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentableConverse.lean, line 951](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentableConverse.lean#L951). The attribute's comment: “implication (3) ⇒ (1)”. References: SGA 3 XI (3.4), “special case”.
 
 > **Stacks 0GE5, implication (3) ⇒ (1).** Let `S` be a locally Noetherian scheme, let `τ` be one
 > of the five topologies — Zariski, étale, smooth, syntomic and fppf — and let `F'`, `G'` be limit
@@ -213,7 +193,7 @@ theorem relativelyRepresentable_of_isRepresentableOnAffineFiniteType
     (uliftYoneda.{max w (u + 1)}).relativelyRepresentable a'
 ```
 
-**`AlgebraicGeometry.ExtendingFunctors.relativelyRepresentable_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentableConverse.lean, line 975](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentableConverse.lean#L975).
+**`AlgebraicGeometry.ExtendingFunctors.relativelyRepresentable_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentableConverse.lean, line 975](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsNoetherianRepresentableConverse.lean#L975).
 
 > **Stacks 0GE5.** Let `S` be a locally Noetherian scheme, let `τ` be one of the five
 > topologies — Zariski, étale, smooth, syntomic and fppf — and let `F'`, `G'` be limit preserving
@@ -244,4 +224,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.25, Tag 0GE1](https://stacks.math.columbia.edu/tag/0GE1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.15 Coherent sheaves on Proj, II
 
-Section 30.15 of the Stacks Project, [Tag 0BXE](https://stacks.math.columbia.edu/tag/0BXE). 3 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 30.15 of the Stacks Project, [Tag 0BXE](https://stacks.math.columbia.edu/tag/0BXE). 3 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B5Q, a lemma
 
 [Tag 0B5Q](https://stacks.math.columbia.edu/tag/0B5Q) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjCoherentII.moduleFinite_truncation_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjCoherentII/TwistedFiniteness.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjCoherentII/TwistedFiniteness.lean#L350). The attribute's comment: “clause (4)”. References: SGA 2 XII (5.3), “clause (a), special case”.
+**`Stacks.AlgebraicGeometry.ProjCoherentII.moduleFinite_truncation_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjCoherentII/TwistedFiniteness.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjCoherentII/TwistedFiniteness.lean#L350). The attribute's comment: “clause (4)”. References: SGA 2 XII (5.3), “clause (a), special case”.
 
 > Clause (4) of [Stacks, Tag 0B5Q], equivalently part (2) of [Stacks, Tag 0B5R]. For `S` a
 > Noetherian graded ring, `X = Proj S`, `ℱ` a coherent `𝒪_X`-module and `k ∈ ℤ`, the graded
@@ -35,7 +35,7 @@ public theorem moduleFinite_truncation_of_isCoherent [IsNoetherianRing S]
     Module.Finite S ((twistedGlobalSectionsModule 𝒮 F).truncation 𝒮 F k)
 ```
 
-**`Stacks.AlgebraicGeometry.Proj.isNoetherian_proj`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjNoetherian/Basic.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjNoetherian/Basic.lean#L135). The attribute's comment: “proj\_noetherian”. References: EGA II (2.7.1), “(i)”.
+**`Stacks.AlgebraicGeometry.Proj.isNoetherian_proj`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjNoetherian/Basic.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjNoetherian/Basic.lean#L135). The attribute's comment: “proj\_noetherian”. References: EGA II (2.7.1), “(i)”.
 
 > **Stacks Project, Tag 0B5Q.** The projective spectrum of a Noetherian graded ring is a
 > Noetherian scheme.
@@ -47,7 +47,7 @@ public instance isNoetherian_proj
     IsNoetherian (Proj 𝒜)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjNoetherian.proj_isNoetherian_and_coherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjNoetherian/CoherentSheaves.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjNoetherian/CoherentSheaves.lean#L51).
+**`Stacks.AlgebraicGeometry.ProjNoetherian.proj_isNoetherian_and_coherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjNoetherian/CoherentSheaves.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjNoetherian/CoherentSheaves.lean#L51).
 
 > **Stacks Project, Tag 0B5Q.** Let `A` be a Noetherian graded ring and `X = Proj A`. Then `X`
 > is a Noetherian scheme, and every coherent `𝒪_X`-module `ℱ` satisfies the four assertions of the
@@ -81,7 +81,7 @@ theorem proj_isNoetherian_and_coherent :
 
 [Tag 0B5R](https://stacks.math.columbia.edu/tag/0B5R) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjCoherentII.truncatedTwistedToShifted`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjCoherentII/Basic.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjCoherentII/Basic.lean#L227). The attribute's comment: “part (3), the canonical map N → N'”.
+**`Stacks.AlgebraicGeometry.ProjCoherentII.truncatedTwistedToShifted`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjCoherentII/Basic.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjCoherentII/Basic.lean#L227). The attribute's comment: “part (3), the canonical map N → N'”.
 
 > **Tag 0B5R (3): the canonical map `N → N'`.** The comparison assembled from the global
 > sections of Tag 01MQ's maps carries the degrees `≥ k` part of `⨁_n H⁰(X, M̃(n))` into the
@@ -92,7 +92,7 @@ def truncatedTwistedToShifted (k : ℤ) :
     twistedSectionsTruncation 𝒮 𝒨 k →+ shiftedSectionsTruncation 𝒮 𝒨 k
 ```
 
-**`Stacks.AlgebraicGeometry.ProjCoherentII.moduleToTruncatedShiftedSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjCoherentII/Basic.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjCoherentII/Basic.lean#L284). The attribute's comment: “part (4), the canonical map M → N'”.
+**`Stacks.AlgebraicGeometry.ProjCoherentII.moduleToTruncatedShiftedSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjCoherentII/Basic.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjCoherentII/Basic.lean#L284). The attribute's comment: “part (4), the canonical map M → N'”.
 
 > **Tag 0B5R (4): for `k` small enough there is a canonical map `M → N'`.** The map is Tag
 > 01MR's `M → ⨁_{n ∈ ℤ} H⁰(X, M(n)~)`, and "`k` small enough" is the hypothesis
@@ -105,7 +105,7 @@ def moduleToTruncatedShiftedSections (k : ℤ)
     M →+ shiftedSectionsTruncation 𝒮 𝒨 k
 ```
 
-**`Stacks.AlgebraicGeometry.ProjCoherentII.exists_pos_forall_bijective_twistedToShiftedComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjCoherentII/Basic.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjCoherentII/Basic.lean#L342). The attribute's comment: “part (6), N\_n ≅ N'\_n for d | n”.
+**`Stacks.AlgebraicGeometry.ProjCoherentII.exists_pos_forall_bijective_twistedToShiftedComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjCoherentII/Basic.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjCoherentII/Basic.lean#L342). The attribute's comment: “part (6), N\_n ≅ N'\_n for d | n”.
 
 > **Tag 0B5R (6).** For a Noetherian graded ring `A` and a graded `A`-module `M` there is a
 > positive `d` such that `N_n = H⁰(X, M̃(n)) → H⁰(X, M(n)~) = N'_n` is bijective for every `n`
@@ -118,7 +118,7 @@ theorem exists_pos_forall_bijective_twistedToShiftedComponent [IsNoetherianRing 
       Function.Bijective (twistedToShiftedComponent 𝒮 𝒨 n)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjCoherentII.truncatedSections_finite_and_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjCoherentII/FiniteGradedModuleSections.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjCoherentII/FiniteGradedModuleSections.lean#L163). The attribute's comment: “all six parts: (1) N' is a finite A-module; (2) N is a finite A-module; (3) the canonical map N → N'; (4) the canonical map M → N' for k small enough, i.e. for every k at most some k₀; (5) M\_n → N'\_n is an isomorphism in all sufficiently large degrees; (6) N\_n → N'\_n is an isomorphism for d | n, with d the lcm of the degrees of homogeneous generators of A over A\_0; (1), (2), (3), (5) and (6) for every k ∈ ℤ”.
+**`Stacks.AlgebraicGeometry.ProjCoherentII.truncatedSections_finite_and_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjCoherentII/FiniteGradedModuleSections.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjCoherentII/FiniteGradedModuleSections.lean#L163). The attribute's comment: “all six parts: (1) N' is a finite A-module; (2) N is a finite A-module; (3) the canonical map N → N'; (4) the canonical map M → N' for k small enough, i.e. for every k at most some k₀; (5) M\_n → N'\_n is an isomorphism in all sufficiently large degrees; (6) N\_n → N'\_n is an isomorphism for d | n, with d the lcm of the degrees of homogeneous generators of A over A\_0; (1), (2), (3), (5) and (6) for every k ∈ ℤ”.
 
 > Let `A` be a Noetherian graded ring, `f_1, …, f_r` homogeneous generators of `A` over `A_0` of
 > positive degrees `deg_1, …, deg_r`, and `d = lcm(deg_i)`. Let `M` be a finite graded `A`-module,
@@ -161,7 +161,7 @@ public theorem truncatedSections_finite_and_comparison [IsNoetherianRing S] [Mod
 
 [Tag 0BXF](https://stacks.math.columbia.edu/tag/0BXF) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.exists_coherentIrrelevantQuotientEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/CoherentEquivalence.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/CoherentEquivalence.lean#L344). The attribute's comment: “the proposition: for A a Noetherian graded ring and X = Proj(A), the functor M ↦ M~ induces an equivalence Mod^fg\_A / Mod^fg\_\{A, irrelevant} ⟶ Coh(O\_X) whose quasi-inverse is F ↦ ⨁\_\{n ≥ 0} Γ(X, F(n)). The degree d of Tag 0BXE, the lcm of the degrees of a finite homogeneous generating set of A over A\_0, is produced here as the source produces it; the same statement for an arbitrary d divisible by those degrees is coherentIrrelevantQuotientEquivalence”. References: EGA II (2.7.7), “Coherent noetherian case”.
+**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.exists_coherentIrrelevantQuotientEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/CoherentEquivalence.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/CoherentEquivalence.lean#L344). The attribute's comment: “the proposition: for A a Noetherian graded ring and X = Proj(A), the functor M ↦ M~ induces an equivalence Mod^fg\_A / Mod^fg\_\{A, irrelevant} ⟶ Coh(O\_X) whose quasi-inverse is F ↦ ⨁\_\{n ≥ 0} Γ(X, F(n)). The degree d of Tag 0BXE, the lcm of the degrees of a finite homogeneous generating set of A over A\_0, is produced here as the source produces it; the same statement for an arbitrary d divisible by those degrees is coherentIrrelevantQuotientEquivalence”. References: EGA II (2.7.7), “Coherent noetherian case”.
 
 > **[Stacks, Tag 0BXF].** Let `A` be a Noetherian graded ring and `X = Proj(A)`. There is a
 > degree `d` of the kind [Stacks, Tag 0BXE] asks for — the least common multiple of the degrees of a
@@ -192,7 +192,7 @@ public theorem exists_coherentIrrelevantQuotientEquivalence :
           toIrrelevantQuotient.{u, u, u} 𝒮 hd
 ```
 
-**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.irrelevantModules_prop_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/IrrelevantModules.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/IrrelevantModules.lean#L384). The attribute's comment: “only the step that the irrelevant finite graded modules satisfy the Serre-subcategory condition of Tag 02MO, which is what makes the quotient category in the statement exist; the equivalence with Coh(O\_X) and its twisted-section quasi-inverse are not formalized, and exactness is spelled elementwise because this library's category of graded modules has no abelian structure yet”.
+**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.irrelevantModules_prop_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/IrrelevantModules.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/IrrelevantModules.lean#L384). The attribute's comment: “only the step that the irrelevant finite graded modules satisfy the Serre-subcategory condition of Tag 02MO, which is what makes the quotient category in the statement exist; the equivalence with Coh(O\_X) and its twisted-section quasi-inverse are not formalized, and exactness is spelled elementwise because this library's category of graded modules has no abelian structure yet”.
 
 > The irrelevant finitely generated graded modules satisfy the Serre-subcategory condition of
 > Stacks 02MO inside `Mod^{fg}_A`: they contain every zero module, and they contain the middle term
@@ -208,7 +208,7 @@ public theorem irrelevantModules_prop_of_exact {d : ℕ} (hd : 0 < d)
         irrelevantModules 𝒮 d L → irrelevantModules 𝒮 d P → irrelevantModules 𝒮 d N
 ```
 
-**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.irrelevantQuotientFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/IrrelevantQuotientFunctor.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/IrrelevantQuotientFunctor.lean#L134). The attribute's comment: “the arrow of the proposition: the functor out of the quotient category Mod^fg\_A / Mod^fg\_\{A, irrelevant} induced by M ↦ M~, obtained by factoring that functor's restriction to the finitely generated graded modules through the localization at the isomorphisms modulo the irrelevant ones. Its target is written as all sheaves of O\_X-modules; its corestriction to the proposition's own target Coh(O\_X) is coherentIrrelevantQuotientFunctor. Of the proposition's assertion that this functor is an equivalence, faithfulness is proved (faithful\_irrelevantQuotientFunctor), for the corestriction too (faithful\_coherentIrrelevantQuotientFunctor); the whole proposition is now proved, as exists\_coherentIrrelevantQuotientEquivalence of CoherentEquivalence.lean. The quasi-inverse F ↦ ⨁\_\{n ≥ 0} Γ(X, F(n)) is identified on objects, by truncatedTwistedSectionsIsoOfNoetherian, and assembled into a functor to all graded modules, truncatedTwistedSectionsFunctor”.
+**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.irrelevantQuotientFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/IrrelevantQuotientFunctor.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/IrrelevantQuotientFunctor.lean#L134). The attribute's comment: “the arrow of the proposition: the functor out of the quotient category Mod^fg\_A / Mod^fg\_\{A, irrelevant} induced by M ↦ M~, obtained by factoring that functor's restriction to the finitely generated graded modules through the localization at the isomorphisms modulo the irrelevant ones. Its target is written as all sheaves of O\_X-modules; its corestriction to the proposition's own target Coh(O\_X) is coherentIrrelevantQuotientFunctor. Of the proposition's assertion that this functor is an equivalence, faithfulness is proved (faithful\_irrelevantQuotientFunctor), for the corestriction too (faithful\_coherentIrrelevantQuotientFunctor); the whole proposition is now proved, as exists\_coherentIrrelevantQuotientEquivalence of CoherentEquivalence.lean. The quasi-inverse F ↦ ⨁\_\{n ≥ 0} Γ(X, F(n)) is identified on objects, by truncatedTwistedSectionsIsoOfNoetherian, and assembled into a functor to all graded modules, truncatedTwistedSectionsFunctor”.
 
 > **The functor `Mod^fg_A / Mod^fg_{A, irrelevant} ⟶ Mod(𝒪_X)` induced by `M ↦ M̃`.** This is
 > the functor of which Stacks 0BXF asserts that it is an equivalence onto `Coh(𝒪_X)`.
@@ -221,7 +221,7 @@ public def irrelevantQuotientFunctor (hd : 0 < d) :
           (ProjectiveSpectrum.Proj.structureSheaf 𝒮))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.isSerreClass_irrelevantModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/SerreClass.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/SerreClass.lean#L213). The attribute's comment: “the Serre-subcategory step of the proposition: the irrelevant finitely generated graded modules are a Serre class in Mod^fg\_A, which is what makes the quotient category on the left of the arrow exist, and which this file turns into that quotient category. The equivalence with Coh(O\_X) and the identification of its quasi-inverse with F ↦ ⨁\_\{n ≥ 0} Γ(X, F(n)) are exists\_coherentIrrelevantQuotientEquivalence of CoherentEquivalence.lean”.
+**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.isSerreClass_irrelevantModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/SerreClass.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/SerreClass.lean#L214). The attribute's comment: “the Serre-subcategory step of the proposition: the irrelevant finitely generated graded modules are a Serre class in Mod^fg\_A, which is what makes the quotient category on the left of the arrow exist, and which this file turns into that quotient category. The equivalence with Coh(O\_X) and the identification of its quasi-inverse with F ↦ ⨁\_\{n ≥ 0} Γ(X, F(n)) are exists\_coherentIrrelevantQuotientEquivalence of CoherentEquivalence.lean”.
 
 > The irrelevant finitely generated graded modules (Tag 0BXE) are a Serre class in `Mod^fg_A`:
 > the subcategory contains a zero object and is closed under subobjects, quotients and
@@ -239,4 +239,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.15, Tag 0BXE](https://stacks.math.columbia.edu/tag/0BXE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

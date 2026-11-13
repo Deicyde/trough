@@ -8,7 +8,7 @@ proof: formalized
 
 # Interlacing families of polynomials
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials/index.html).
 
 ## Upper interlacing point
 
@@ -20,7 +20,7 @@ $a \le \operatorname{maxroot}(p)$ and, after removing one copy of $\operatorname
 from the multiset of roots of $p$ (if it occurs there), every remaining root has real part at
 most $a$.
 
-Formalized by `Polynomial.HasUpperInterlacingPoint`, a definition declared in [MathlibExt/Algebra/Polynomial/Interlacing.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/Interlacing.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials/index.html#has-upper-interlacing-point).
+Formalized by `Polynomial.HasUpperInterlacingPoint`, a definition declared in [MathlibExt/Algebra/Polynomial/Interlacing.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/Interlacing.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials/index.html#has-upper-interlacing-point).
 
 ## Common upper interlacing point
 
@@ -28,7 +28,7 @@ A family $(P_i)_{i \in I}$ of complex polynomials,
 indexed by an arbitrary type $I$, has a common upper interlacing point if some real number $a$
 is an upper interlacing point of $P_i$ for every $i \in I$.
 
-Formalized by `Polynomial.HasCommonUpperInterlacing`, a definition declared in [MathlibExt/Algebra/Polynomial/Interlacing.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/Interlacing.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials/index.html#has-common-upper-interlacing).
+Formalized by `Polynomial.HasCommonUpperInterlacing`, a definition declared in [MathlibExt/Algebra/Polynomial/Interlacing.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/Interlacing.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials/index.html#has-common-upper-interlacing).
 
 ## Nonpositivity between an upper interlacing point and the largest root
 
@@ -38,7 +38,7 @@ $\operatorname{maxroot}(p)$ be its largest root, and let $a$ be an upper interla
 of $p$. Then for every real $x$ with $a \le x \le \operatorname{maxroot}(p)$, the real part
 of $p(x)$ is at most $0$.
 
-Formalized by `Polynomial.eval_re_nonpos_of_upperInterlacing`, a theorem declared in [MathlibExt/Algebra/Polynomial/Interlacing.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/Interlacing.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials/index.html#eval-re-nonpos-of-upper-interlacing).
+Formalized by `Polynomial.eval_re_nonpos_of_upperInterlacing`, a theorem declared in [MathlibExt/Algebra/Polynomial/Interlacing.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/Interlacing.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials/index.html#eval-re-nonpos-of-upper-interlacing).
 
 ## Common upper interlacing bounds some member's largest root by a weighted sum's
 
@@ -50,7 +50,7 @@ $Q = \sum_{i \in I} w_i P_i$ is monic and all of its roots are real. Then there 
 with $\operatorname{maxroot}(P_i) \le \operatorname{maxroot}(Q)$, where
 $\operatorname{maxroot}(f)$ denotes the largest root of a real-rooted polynomial $f$.
 
-Formalized by `Polynomial.exists_maxRealRoot_le_weightedSum_of_commonUpperInterlacing`, a theorem declared in [MathlibExt/Algebra/Polynomial/Interlacing.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/Interlacing.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials/index.html#exists-max-real-root-le-weighted-sum-of).
+Formalized by `Polynomial.exists_maxRealRoot_le_weightedSum_of_commonUpperInterlacing`, a theorem declared in [MathlibExt/Algebra/Polynomial/Interlacing.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/Interlacing.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials/index.html#exists-max-real-root-le-weighted-sum-of).
 
 ## Some member's largest root is at most that of a weighted sum, via real-rooted segments
 
@@ -61,7 +61,7 @@ $t \in [0, 1]$, all roots of $(1 - t) Q + t P_i$ are real. Then there is $i \in 
 $\operatorname{maxroot}(P_i) \le \operatorname{maxroot}(Q)$, where $\operatorname{maxroot}(f)$
 denotes the largest real part of a root of $f$.
 
-Formalized by `Polynomial.exists_maxRealRoot_le_weightedSum_of_segment_realRooted`, a theorem declared in [MathlibExt/Algebra/Polynomial/Interlacing.lean, line 418](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/Interlacing.lean#L418). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials/index.html#exists-max-real-root-le-weighted-sum-of-2).
+Formalized by `Polynomial.exists_maxRealRoot_le_weightedSum_of_segment_realRooted`, a theorem declared in [MathlibExt/Algebra/Polynomial/Interlacing.lean, line 418](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/Interlacing.lean#L418). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials/index.html#exists-max-real-root-le-weighted-sum-of-2).
 
 ## Depends on
 
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Interlacing families of polynomials](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/zeros-of-polynomials/interlacing-families-of-polynomials)

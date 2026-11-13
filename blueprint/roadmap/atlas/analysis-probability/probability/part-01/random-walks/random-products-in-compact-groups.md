@@ -7,7 +7,7 @@ statement: formalized
 
 # Random products in compact groups
 
-6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html).
+6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html).
 
 ## Fair coin measure
 
@@ -15,7 +15,7 @@ The fair coin measure is the measure
 $\tfrac12 \delta_{\mathrm{false}} + \tfrac12 \delta_{\mathrm{true}}$ on the Booleans
 $\{\mathrm{false}, \mathrm{true}\}$: it gives mass $1/2$ to each of the two values.
 
-Formalized by `MathlibExt.Dynamics.ScottishBook116bWanted.coinFlip`, a definition declared in [WantedExt/Dynamics/ScottishBook116bWanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/ScottishBook116bWanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html#coin-flip).
+Formalized by `MathlibExt.Dynamics.ScottishBook116bWanted.coinFlip`, a definition declared in [WantedExt/Dynamics/ScottishBook116bWanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/ScottishBook116bWanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html#coin-flip).
 
 ## Fair coin product measure
 
@@ -24,7 +24,7 @@ Boolean sequences $c : \mathbb{N} \to \{\mathrm{false}, \mathrm{true}\}$ given b
 product, over $n \in \mathbb{N}$, of the fair coin measure, which gives mass $1/2$ to each of
 $\mathrm{false}$ and $\mathrm{true}$.
 
-Formalized by `MathlibExt.Dynamics.ScottishBook116bWanted.coinMeasure`, a definition declared in [WantedExt/Dynamics/ScottishBook116bWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/ScottishBook116bWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html#coin-measure).
+Formalized by `MathlibExt.Dynamics.ScottishBook116bWanted.coinMeasure`, a definition declared in [WantedExt/Dynamics/ScottishBook116bWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/ScottishBook116bWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html#coin-measure).
 
 ## Generator chosen by a coin sequence
 
@@ -35,7 +35,7 @@ $\psi$ if $c(n) = \mathrm{true}$.
 
 Index $0$ corresponds to $f_1$ in the Scottish Book typescript.
 
-Formalized by `MathlibExt.Dynamics.ScottishBook116bWanted.step`, a definition declared in [WantedExt/Dynamics/ScottishBook116bWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/ScottishBook116bWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html#step).
+Formalized by `MathlibExt.Dynamics.ScottishBook116bWanted.step`, a definition declared in [WantedExt/Dynamics/ScottishBook116bWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/ScottishBook116bWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html#step).
 
 ## Successive products along a coin sequence
 
@@ -49,7 +49,7 @@ $P_0$ the empty product.
 The typescript writes the terms as $f_1, f_1(f_2), f_1(f_2 f_3), \ldots$, read as successive
 products.
 
-Formalized by `MathlibExt.Dynamics.ScottishBook116bWanted.partialProd`, a definition declared in [WantedExt/Dynamics/ScottishBook116bWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/ScottishBook116bWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html#partial-prod).
+Formalized by `MathlibExt.Dynamics.ScottishBook116bWanted.partialProd`, a definition declared in [WantedExt/Dynamics/ScottishBook116bWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/ScottishBook116bWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html#partial-prod).
 
 ## Scottish Book Problem 116(b), measurable-set form
 
@@ -68,7 +68,7 @@ $$\lim_{N \to \infty} \frac{\#\{n < N : P_n \in V\}}{N} = \mu(V).$$
 The typescript's "region" is read as an arbitrary measurable set, since the typescript does not
 specify a class of regions; the set $V$ is quantified after $c$ and may depend on it.
 
-Formalized by `MathlibExt.Dynamics.ScottishBook116bWanted.ScottishBookProblem116bClaim`, a definition declared in [WantedExt/Dynamics/ScottishBook116bWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/ScottishBook116bWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html#scottish-book-problem116b-claim).
+Formalized by `MathlibExt.Dynamics.ScottishBook116bWanted.ScottishBookProblem116bClaim`, a definition declared in [WantedExt/Dynamics/ScottishBook116bWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/ScottishBook116bWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html#scottish-book-problem116b-claim).
 
 ## Scottish Book Problem 116(b) fails for arbitrary measurable sets
 
@@ -95,7 +95,7 @@ statement, filed separately in OpenConjectures.
 
 - J. Schreier and S. Ulam, Problem 116, part (b) of the Scottish Book, typescript PDF p. 56, printed p. 53; see the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
-Stated but not proved: `MathlibExt.Dynamics.ScottishBook116bWanted.scottishBook116b_refuted` is written with `theorem_wanted` in [WantedExt/Dynamics/ScottishBook116bWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/ScottishBook116bWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html#scottish-book116b-refuted).
+Stated but not proved: `MathlibExt.Dynamics.ScottishBook116bWanted.scottishBook116b_refuted` is written with `theorem_wanted` in [WantedExt/Dynamics/ScottishBook116bWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/ScottishBook116bWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html#scottish-book116b-refuted).
 
 ## Depends on
 
@@ -104,4 +104,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Random products in compact groups](https://deicyde.github.io/atlas-lean/roadmap/Probability/random-walks/random-products-in-compact-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/random-walks/random-products-in-compact-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/random-walks/random-products-in-compact-groups)

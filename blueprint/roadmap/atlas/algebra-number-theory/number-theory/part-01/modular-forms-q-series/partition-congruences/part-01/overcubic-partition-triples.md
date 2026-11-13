@@ -7,7 +7,7 @@ statement: formalized
 
 # Overcubic partition triples
 
-15 results, 4 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html).
+15 results, 4 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html).
 
 ## The overcubic partition triple series
 
@@ -20,7 +20,7 @@ coefficient is $1$.
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Section 1; the same generating function is quoted from this paper by Saikia and Sarma (arXiv:2411.00013, eq. (2)) and by Chen, Jin, and Yao (arXiv:2504.06941, eq. (1.1)).
 
-Formalized by `MetaMathlibExt.overcubicTripleSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-series).
+Formalized by `MetaMathlibExt.overcubicTripleSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-series).
 
 ## Number of overcubic partition triples
 
@@ -32,7 +32,7 @@ the power series $f_4^3 / (f_1^6 f_2^3)$, where $f_k = \prod_{j \ge 1} (1 - q^{k
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Section 1.
 
-Formalized by `MetaMathlibExt.overcubicTripleCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count).
+Formalized by `MetaMathlibExt.overcubicTripleCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count).
 
 ## Generating function for overcubic partition triples
 
@@ -47,7 +47,7 @@ $$f_1^6 f_2^3 \sum_{n \ge 0} \mathrm{bt}(n) q^n = f_4^3.$$
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Section 1.
 
-Formalized by `MetaMathlibExt.overcubicTripleCount_generatingFunction`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-generating-functi).
+Formalized by `MetaMathlibExt.overcubicTripleCount_generatingFunction`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-generating-functi).
 
 ## Overcubic partition triples of $0$
 
@@ -58,7 +58,7 @@ triples of $0$ equals $1$.
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Section 1.
 
-Formalized by `MetaMathlibExt.overcubicTripleCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-zero).
+Formalized by `MetaMathlibExt.overcubicTripleCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-zero).
 
 ## The 2-dissection of $f_1^2$
 
@@ -74,7 +74,7 @@ $f_1^2 = \frac{f_2 f_8^5}{f_4^2 f_{16}^2} - 2q \frac{f_2 f_{16}^2}{f_8}$.
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Lemma 1, eq. (39).
 
-Stated but not proved: `MetaMathlibExt.f1_sq_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#f1-sq-two-dissection).
+Stated but not proved: `MetaMathlibExt.f1_sq_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#f1-sq-two-dissection).
 
 ## The 2-dissection of $1/f_1^2$
 
@@ -90,7 +90,7 @@ $\frac{1}{f_1^2} = \frac{f_8^5}{f_2^5 f_{16}^2} + 2q \frac{f_4^2 f_{16}^2}{f_2^5
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Lemma 1, eq. (40).
 
-Stated but not proved: `MetaMathlibExt.one_div_f1_sq_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#one-div-f1-sq-two-dissection).
+Stated but not proved: `MetaMathlibExt.one_div_f1_sq_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#one-div-f1-sq-two-dissection).
 
 ## The 3-dissection of $f_1^3$
 
@@ -108,7 +108,7 @@ $f_1^3 = \frac{f_6 f_9^6}{f_3 f_{18}^3} + 4q^3 \frac{f_3^2 f_{18}^6}{f_6^2 f_9^3
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Lemma 2, eq. (41).
 
-Stated but not proved: `MetaMathlibExt.f1_cube_three_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#f1-cube-three-dissection).
+Stated but not proved: `MetaMathlibExt.f1_cube_three_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#f1-cube-three-dissection).
 
 ## Congruences for overcubic partition triples at odd arguments
 
@@ -122,7 +122,7 @@ by $8$.
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 1, eqs. (2)-(6).
 
-Stated but not proved: `MetaMathlibExt.overcubicTripleCount_congruences_odd_args` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-congruences-odd-a).
+Stated but not proved: `MetaMathlibExt.overcubicTripleCount_congruences_odd_args` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-congruences-odd-a).
 
 ## Overcubic partition triples of $24n+1$ modulo $4$
 
@@ -139,7 +139,7 @@ This is the case $\alpha = 0$ of the paper's statement.
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 2, eq. (7), case `α = 0`.
 
-Stated but not proved: `MetaMathlibExt.overcubicTripleCount_twentyFour_mul_add_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-twenty-four-mul-a).
+Stated but not proved: `MetaMathlibExt.overcubicTripleCount_twentyFour_mul_add_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-twenty-four-mul-a).
 
 ## Congruences for overcubic partition triples at arguments congruent to 2 modulo 4
 
@@ -157,7 +157,7 @@ it fails at $n = 0$.
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 4, eqs. (9)-(15) and (17).
 
-Stated but not proved: `MetaMathlibExt.overcubicTripleCount_congruences_two_mod_four_args` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-congruences-two-m).
+Stated but not proved: `MetaMathlibExt.overcubicTripleCount_congruences_two_mod_four_args` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-congruences-two-m).
 
 ## Congruences for overcubic partition triples at multiples of 4
 
@@ -171,7 +171,7 @@ and $\mathrm{bt}(64 \cdot 81^{\alpha+2} n + 216 \cdot 81^{\alpha+1})$ is divisib
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 5, eqs. (18)-(24).
 
-Stated but not proved: `MetaMathlibExt.overcubicTripleCount_congruences_four_mul_args` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-congruences-four).
+Stated but not proved: `MetaMathlibExt.overcubicTripleCount_congruences_four_mul_args` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-congruences-four).
 
 ## Overcubic partition triples of $576n+24$ modulo 8
 
@@ -186,7 +186,7 @@ This is the $\alpha = 0$ case of the paper's statement.
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 6, eq. (25), case `α = 0`.
 
-Stated but not proved: `MetaMathlibExt.overcubicTripleCount_fiveHundredSeventySix_mul_add_twentyFour` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-five-hundred-seve).
+Stated but not proved: `MetaMathlibExt.overcubicTripleCount_fiveHundredSeventySix_mul_add_twentyFour` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-five-hundred-seve).
 
 ## Congruences for overcubic partition triples at arguments congruent to 8 modulo 16
 
@@ -199,7 +199,7 @@ $\mathrm{bt}(64 \cdot 9^{\alpha+2} n + 264 \cdot 9^{\alpha+1})$ is divisible by 
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 8, eqs. (27)-(30).
 
-Stated but not proved: `MetaMathlibExt.overcubicTripleCount_congruences_eight_mod_sixteen_args` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-congruences-eight).
+Stated but not proved: `MetaMathlibExt.overcubicTripleCount_congruences_eight_mod_sixteen_args` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-congruences-eight).
 
 ## Overcubic partition triples of $192n+8$ modulo $4$
 
@@ -216,7 +216,7 @@ This is the case $\alpha = 0$ of the paper's statement.
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 9, eq. (31), case `α = 0`.
 
-Stated but not proved: `MetaMathlibExt.overcubicTripleCount_oneHundredNinetyTwo_mul_add_eight` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-one-hundred-ninet).
+Stated but not proved: `MetaMathlibExt.overcubicTripleCount_oneHundredNinetyTwo_mul_add_eight` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-one-hundred-ninet).
 
 ## Congruences for overcubic partition triples at multiples of 16
 
@@ -230,7 +230,7 @@ $\mathrm{bt}(256n+32) \equiv \mathrm{bt}(128n+16) \pmod 4$.
 
 - S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 11, eqs. (33)-(38).
 
-Stated but not proved: `MetaMathlibExt.overcubicTripleCount_congruences_sixteen_mul_args` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-congruences-sixte).
+Stated but not proved: `MetaMathlibExt.overcubicTripleCount_congruences_sixteen_mul_args` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OvercubicPartitionTriplesWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html#overcubic-triple-count-congruences-sixte).
 
 ## Depends on
 
@@ -239,4 +239,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Overcubic partition triples](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/overcubic-partition-triples)

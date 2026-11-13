@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.CategoryTheory.Hypercovering.CoveringFamilies.IsCovering, Stacks.CategoryTheory.Hypercovering.CoveringFamilies.IsCoveringOver, Stacks.CategoryTheory.Hypercovering.IsCovering.comp, Stacks.CategoryTheory.Hypercovering.IsCoveringOver.comp, Stacks.CategoryTheory.Hypercovering.IsCovering.pullback, Stacks.CategoryTheory.Hypercovering.IsCoveringOver.pullback, Stacks.CategoryTheory.Hypercovering.IsCovering.prod_map, Stacks.CategoryTheory.Hypercovering.IsCoveringOver.prod_map
+lean: Stacks.CategoryTheory.Hypercovering.CoveringFamilies.IsCovering, Stacks.CategoryTheory.Hypercovering.CoveringFamilies.IsCoveringOver, Stacks.CategoryTheory.Hypercovering.IsSiteCovering.comp, Stacks.CategoryTheory.Hypercovering.IsSiteCoveringOver.comp, Stacks.CategoryTheory.Hypercovering.IsSiteCovering.exists_hasPullback_pullback_snd, Stacks.CategoryTheory.Hypercovering.IsSiteCoveringOver.exists_hasPullback_pullback_snd, Stacks.CategoryTheory.Hypercovering.IsSiteCovering.prod_map, Stacks.CategoryTheory.Hypercovering.IsSiteCoveringOver.prod_map
 statement: formalized
 proof: formalized
 ---
 
 # 25.3 Hypercoverings
 
-Section 25.3 of the Stacks Project, [Tag 01FZ](https://stacks.math.columbia.edu/tag/01FZ). 8 tags here are carried by 23 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 25.3 of the Stacks Project, [Tag 01FZ](https://stacks.math.columbia.edu/tag/01FZ). 8 tags here are carried by 23 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01G3, a definition
 
 [Tag 01G3](https://stacks.math.columbia.edu/tag/01G3) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.CoveringFamilies.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringFamilies.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringFamilies.lean#L157). The attribute's comment: “the definition for SR(C)”.
+**`Stacks.CategoryTheory.Hypercovering.CoveringFamilies.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringFamilies.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringFamilies.lean#L157). The attribute's comment: “the definition for SR(C)”.
 
 > **Stacks Project, Tag 01G3.** A morphism of semi-representable objects is covering when
 > every one of its fibre families is a covering family of the site. The target is allowed to be an
@@ -25,7 +25,7 @@ abbrev IsCovering (Cov : CoveringFamilies.{s, w} C) {U : SetFamily.{w} C}
     {V : FormalCoproduct.{w + 1} C} (f : U.toFormalCoproduct ⟶ V) : Prop
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.CoveringFamilies.IsCoveringOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringFamilies.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringFamilies.lean#L164). The attribute's comment: “the definition for SR(C, X)”.
+**`Stacks.CategoryTheory.Hypercovering.CoveringFamilies.IsCoveringOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringFamilies.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringFamilies.lean#L164). The attribute's comment: “the definition for SR(C, X)”.
 
 > **Stacks Project, Tag 01G3.** A morphism of semi-representable objects over `X` is covering
 > when every one of its underlying fibre families is a covering family of the site.
@@ -40,84 +40,89 @@ abbrev IsCoveringOver (Cov : CoveringFamilies.{s, w} C)
 
 [Tag 01G4](https://stacks.math.columbia.edu/tag/01G4) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.IsCovering.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean#L192). The attribute's comment: “part (1), for `SR(C)`”.
+**`Stacks.CategoryTheory.Hypercovering.IsSiteCovering.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SiteCovering.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/SiteCovering.lean#L122). The attribute's comment: “part (1), for `SR(C)`, over an arbitrary site”.
 
-> **Stacks Project, Tag 01G4, part (1).** The composition of two covering morphisms of
-> semi-representable objects is a covering morphism.
+> **Stacks Project, Tag 01G4, part (1).** A composition of coverings in `SR(C)` is a
+> covering.
 
 ```lean
-theorem IsCovering.comp (J : Pretopology C)
-    [Precoverage.IsStableUnderComposition J.toPrecoverage]
+theorem IsSiteCovering.comp (J : Precoverage C) [J.IsStableUnderComposition]
     {U V W : FormalCoproduct.{w} C} {f : U ⟶ V} {g : V ⟶ W}
-    (hf : IsCovering J f) (hg : IsCovering J g) : IsCovering J (f ≫ g)
+    (hf : IsSiteCovering J f) (hg : IsSiteCovering J g) : IsSiteCovering J (f ≫ g)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.IsCoveringOver.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean#L213). The attribute's comment: “part (1), for `SR(C, X)`”.
+**`Stacks.CategoryTheory.Hypercovering.IsSiteCoveringOver.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SiteCovering.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/SiteCovering.lean#L142). The attribute's comment: “part (1), for `SR(C, X)`, over an arbitrary site”.
 
-> **Stacks Project, Tag 01G4, part (1).** The composition of two covering morphisms of
-> semi-representable objects over `X` is a covering morphism.
+> **Stacks Project, Tag 01G4, part (1)**, for `SR(C, X)`. A composition of coverings in
+> `SR(C, X)` is a covering.
 
 ```lean
-theorem IsCoveringOver.comp (J : Pretopology C)
-    [Precoverage.IsStableUnderComposition J.toPrecoverage] {X : C}
+theorem IsSiteCoveringOver.comp (J : Precoverage C) [J.IsStableUnderComposition] {X : C}
     {U V W : FormalCoproduct.{w} (Over X)} {f : U ⟶ V} {g : V ⟶ W}
-    (hf : IsCoveringOver J f) (hg : IsCoveringOver J g) : IsCoveringOver J (f ≫ g)
+    (hf : IsSiteCoveringOver J f) (hg : IsSiteCoveringOver J g) :
+    IsSiteCoveringOver J (f ≫ g)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.IsCovering.pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean#L352). The attribute's comment: “part (2), for `SR(C)`”.
+**`Stacks.CategoryTheory.Hypercovering.IsSiteCovering.exists_hasPullback_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SiteCovering.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/SiteCovering.lean#L218). The attribute's comment: “part (2), for `SR(C)`, over an arbitrary site”.
 
-> **Stacks Project, Tag 01G4, part (2).** The base change of a covering morphism of
-> semi-representable objects along any morphism exists and is a covering morphism.
+> **Stacks Project, Tag 01G4, part (2).** If `K ⟶ L` is a covering in `SR(C)` and `L' ⟶ L`
+> is a morphism, then the fibre product `K ×_L L'` exists and its projection to `L'` is a
+> covering.
 
 ```lean
-theorem IsCovering.pullback (J : Pretopology C) {U V W : FormalCoproduct.{w} C}
-    (f : U ⟶ V) (g : W ⟶ V) (hf : IsCovering J f) :
-    IsCovering J (pullbackFormalCoproduct.snd f g (pullbackConeFamily f g))
+theorem IsSiteCovering.exists_hasPullback_pullback_snd (J : Precoverage C) [J.HasIsos]
+    [J.IsStableUnderComposition] [J.IsStableUnderBaseChange] [J.HasPullbacks]
+    {K L L' : FormalCoproduct.{w} C} {f : K ⟶ L} (hf : IsSiteCovering J f) (g : L' ⟶ L) :
+    ∃ _ : HasPullback f g, IsSiteCovering J (pullback.snd f g)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.IsCoveringOver.pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean#L375). The attribute's comment: “part (2), for `SR(C, X)`”.
+**`Stacks.CategoryTheory.Hypercovering.IsSiteCoveringOver.exists_hasPullback_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SiteCovering.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/SiteCovering.lean#L283). The attribute's comment: “part (2), for `SR(C, X)`, over an arbitrary site”.
 
-> **Stacks Project, Tag 01G4, part (2).** The base change of a covering morphism of
-> semi-representable objects over `X` along any morphism exists and is a covering morphism.
+> **Stacks Project, Tag 01G4, part (2)**, for `SR(C, X)`. If `K ⟶ L` is a covering in
+> `SR(C, X)` and `L' ⟶ L` is a morphism, then the fibre product `K ×_L L'` exists and its
+> projection to `L'` is a covering.
 
 ```lean
-theorem IsCoveringOver.pullback (J : Pretopology C) {X : C}
-    {U V W : FormalCoproduct.{w} (Over X)} (f : U ⟶ V) (g : W ⟶ V) (hf : IsCoveringOver J f) :
-    IsCoveringOver J (pullbackFormalCoproduct.snd f g (pullbackConeFamilyOver f g))
+theorem IsSiteCoveringOver.exists_hasPullback_pullback_snd (J : Precoverage C) [J.HasIsos]
+    [J.IsStableUnderComposition] [J.IsStableUnderBaseChange] [J.HasPullbacks] {X : C}
+    {K L L' : FormalCoproduct.{w} (Over X)} {f : K ⟶ L} (hf : IsSiteCoveringOver J f)
+    (g : L' ⟶ L) :
+    ∃ _ : HasPullback f g, IsSiteCoveringOver J (pullback.snd f g)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.IsCovering.prod_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean#L436). The attribute's comment: “part (3), for `SR(C)`”.
+**`Stacks.CategoryTheory.Hypercovering.IsSiteCovering.prod_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SiteCovering.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/SiteCovering.lean#L297). The attribute's comment: “part (3), for `SR(C)`, over an arbitrary site with products of pairs”.
 
-> **Stacks Project, Tag 01G4, part (3).** The product of two covering morphisms of
-> semi-representable objects is a covering morphism.
+> **Stacks Project, Tag 01G4, part (3).** If `C` has products of pairs and `A ⟶ B`,
+> `K ⟶ L` are coverings in `SR(C)`, then `A × K ⟶ B × L` is a covering. The products in `SR(C)`
+> are those of `FormalCoproduct.instHasBinaryProducts` (Tag 01G2).
 
 ```lean
-theorem IsCovering.prod_map (J : Pretopology C)
-    [Precoverage.IsStableUnderComposition J.toPrecoverage]
-    [HasBinaryProducts (FormalCoproduct.{w} C)]
+theorem IsSiteCovering.prod_map (J : Precoverage C) [J.HasIsos] [J.IsStableUnderComposition]
+    [J.IsStableUnderBaseChange] [J.HasPullbacks] [HasBinaryProducts C]
     {A B K L : FormalCoproduct.{w} C} {f : A ⟶ B} {g : K ⟶ L}
-    (hf : IsCovering J f) (hg : IsCovering J g) : IsCovering J (prod.map f g)
+    (hf : IsSiteCovering J f) (hg : IsSiteCovering J g) : IsSiteCovering J (prod.map f g)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.IsCoveringOver.prod_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean#L449). The attribute's comment: “part (3), for `SR(C, X)`”.
+**`Stacks.CategoryTheory.Hypercovering.IsSiteCoveringOver.prod_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SiteCovering.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/SiteCovering.lean#L312). The attribute's comment: “part (3), for `SR(C, X)`, over an arbitrary site with fibre products”.
 
-> **Stacks Project, Tag 01G4, part (3).** The product of two covering morphisms of
-> semi-representable objects over `X` is a covering morphism.
+> **Stacks Project, Tag 01G4, part (3)**, for `SR(C, X)`. If `C` has fibre products and
+> `A ⟶ B`, `K ⟶ L` are coverings in `SR(C, X)`, then `A × K ⟶ B × L` is a covering. The products
+> in `SR(C, X)` are those of `FormalCoproduct.instHasBinaryProducts` (Tag 01G2) over the products
+> of `Over X`, which are fibre products over `X`.
 
 ```lean
-theorem IsCoveringOver.prod_map (J : Pretopology C)
-    [Precoverage.IsStableUnderComposition J.toPrecoverage] {X : C}
-    [HasBinaryProducts (FormalCoproduct.{w} (Over X))]
+theorem IsSiteCoveringOver.prod_map (J : Precoverage C) [J.HasIsos]
+    [J.IsStableUnderComposition] [J.IsStableUnderBaseChange] [HasPullbacks C] {X : C}
     {A B K L : FormalCoproduct.{w} (Over X)} {f : A ⟶ B} {g : K ⟶ L}
-    (hf : IsCoveringOver J f) (hg : IsCoveringOver J g) :
-    IsCoveringOver J (prod.map f g)
+    (hf : IsSiteCoveringOver J f) (hg : IsSiteCoveringOver J g) :
+    IsSiteCoveringOver J (prod.map f g)
 ```
 
 ## Tag 01G5, a definition
 
 [Tag 01G5](https://stacks.math.columbia.edu/tag/01G5) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.CoveringFamilies.IsHypercovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringFamilies.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringFamilies.lean#L186). References: SGA 4 V (7.3.3), “object case, no type p”.
+**`Stacks.CategoryTheory.Hypercovering.CoveringFamilies.IsHypercovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringFamilies.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringFamilies.lean#L186). References: SGA 4 V (7.3.3), “object case, no type p”.
 
 > **Stacks Project, Tag 01G5.** A hypercovering of `X` for the site's covering families: the
 > degree-zero family is one of the covering families of `X`, and all fibres of the successive
@@ -133,7 +138,7 @@ abbrev IsHypercovering (Cov : CoveringFamilies.{s, w} C) {X : C}
 
 [Tag 01G6](https://stacks.math.columbia.edu/tag/01G6) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.isCoveringOver_terminal_from_power`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L286). The attribute's comment: “condition (1) of Definition 01G5, for the degree-zero term of the Čech object”.
+**`Stacks.CategoryTheory.Hypercovering.isCoveringOver_terminal_from_power`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L286). The attribute's comment: “condition (1) of Definition 01G5, for the degree-zero term of the Čech object”.
 
 > **Stacks Project, Tag 01G6**, condition (1) of Definition 01G5 for the Čech construction.
 > If the family `U` covers `X` then so does its `α`-fold power for a one-element index type `α`,
@@ -147,7 +152,7 @@ theorem isCoveringOver_terminal_from_power (J : Pretopology C) {X : C}
     IsCoveringOver J (terminal.from (U.power α))
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.IsCechHypercovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L328). The attribute's comment: “the definition of a Čech hypercovering”.
+**`Stacks.CategoryTheory.Hypercovering.IsCechHypercovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L328). The attribute's comment: “the definition of a Čech hypercovering”.
 
 > **Stacks Project, Tag 01G6.** A simplicial object `K` of `SR(C, X)` is a *Čech
 > hypercovering* of `X` when its degree-zero family `K_0` covers `X` and `K` is the zeroth
@@ -159,7 +164,7 @@ abbrev IsCechHypercovering (J : Pretopology C) {X : C}
     (K : SimplicialObject (FormalCoproduct.{w} (Over X))) : Prop
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.IsCechHypercovering.isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L339). The attribute's comment: “condition (2) of Definition 01G5 by Tag 018B, hence the hypercovering property”.
+**`Stacks.CategoryTheory.Hypercovering.IsCechHypercovering.isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L339). The attribute's comment: “condition (2) of Definition 01G5 by Tag 018B, hence the hypercovering property”.
 
 > **Stacks Project, Tag 01G6**, condition (2) of Definition 01G5 and the hypercovering
 > property. A Čech hypercovering of `X` is a hypercovering of `X`: its degree-zero family covers
@@ -172,7 +177,7 @@ theorem IsCechHypercovering.isHypercovering {J : Pretopology C} {X : C}
     IsHypercovering J K
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.isCechHypercovering_cech`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L363). The attribute's comment: “the Čech object of a covering family is a Čech hypercovering”.
+**`Stacks.CategoryTheory.Hypercovering.isCechHypercovering_cech`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L363). The attribute's comment: “the Čech object of a covering family is a Čech hypercovering”.
 
 > **Stacks Project, Tag 01G6.** The Čech object of a covering family of `X` is a Čech
 > hypercovering of `X`: its degree-zero term is the covering family again, and it is
@@ -188,7 +193,7 @@ theorem isCechHypercovering_cech (J : Pretopology C) {X : C}
     IsCechHypercovering J A.cech
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.isHypercovering_cech_of_isCoveringOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L383). The attribute's comment: “the Čech object of a covering family is a hypercovering”.
+**`Stacks.CategoryTheory.Hypercovering.isHypercovering_cech_of_isCoveringOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L383). The attribute's comment: “the Čech object of a covering family is a hypercovering”.
 
 > **Stacks Project, Tag 01G6.** The Čech object of a covering family `{U_i → X}_{i ∈ I}` of `X`
 > is a hypercovering of `X`. Its degree-`n` term is the family of the `(n + 1)`-fold fibre products
@@ -206,7 +211,7 @@ theorem isHypercovering_cech_of_isCoveringOver (J : Pretopology C) {X : C}
     IsHypercovering J A.cech
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.isHypercovering_cosk_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L409). The attribute's comment: “the hypercovering property in the `cosk₀` form”.
+**`Stacks.CategoryTheory.Hypercovering.isHypercovering_cosk_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L409). The attribute's comment: “the hypercovering property in the `cosk₀` form”.
 
 > **Stacks Project, Tag 01G6**, in the `cosk₀` shape in which the source states it: the zeroth
 > coskeleton of a zero-truncated simplicial object of `SR(C, X)` is a hypercovering of `X` as soon
@@ -232,7 +237,7 @@ theorem isHypercovering_cosk_zero (J : Pretopology C) {X : C}
     IsHypercovering J ((SimplicialObject.Truncated.cosk 0).obj U)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.isLimitWidePullbackConePowerObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L427). The attribute's comment: “the terms in `C`: each component is the fibre product over `X` of its factors”.
+**`Stacks.CategoryTheory.Hypercovering.isLimitWidePullbackConePowerObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L427). The attribute's comment: “the terms in `C`: each component is the fibre product over `X` of its factors”.
 
 > **Stacks Project, Tag 01G6**, the terms clause read in `C`. The component at `i : α → I` of
 > the `α`-fold power of the family `A = {U_i → X}` is a product taken in `Over X`; its underlying
@@ -259,15 +264,15 @@ noncomputable def isLimitWidePullbackConePowerObj {X : C} (A : FormalCoproduct.{
 
 Declarations registered for the tag:
 
-- [`FormalCoproduct.cech_obj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FormalCoproduct.cech_obj#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 451](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L451) (StacksFrontier): “the terms: the degree-`n` term is the `(n + 1)`-fold power”.
-- [`FormalCoproduct.power_I`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FormalCoproduct.power_I#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L453) (StacksFrontier): “the terms: the index set `I^{n + 1}`”.
-- [`FormalCoproduct.power_obj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FormalCoproduct.power_obj#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L454) (StacksFrontier): “the terms: the fibre product over `X` of the indexed components”.
+- [`FormalCoproduct.cech_obj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FormalCoproduct.cech_obj#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L451) (StacksFrontier): “the terms: the degree-`n` term is the `(n + 1)`-fold power”.
+- [`FormalCoproduct.power_I`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FormalCoproduct.power_I#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L453) (StacksFrontier): “the terms: the index set `I^{n + 1}`”.
+- [`FormalCoproduct.power_obj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FormalCoproduct.power_obj#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cech.lean#L454) (StacksFrontier): “the terms: the fibre product over `X` of the indexed components”.
 
 ## Tag 0GM9, an example
 
 [Tag 0GM9](https://stacks.math.columbia.edu/tag/0GM9) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.associatedSimplicialObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/FromSimplicialObject.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/FromSimplicialObject.lean#L172). The attribute's comment: “the associated simplicial object”.
+**`Stacks.CategoryTheory.Hypercovering.associatedSimplicialObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/FromSimplicialObject.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/FromSimplicialObject.lean#L172). The attribute's comment: “the associated simplicial object”.
 
 > **Stacks Project, Tag 0GM9.** The one-summand simplicial semi-representable object associated
 > to an augmented simplicial object of the site.
@@ -277,7 +282,7 @@ def associatedSimplicialObject :
     SimplicialObject (FormalCoproduct.{w} (Over X))
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.isHypercovering_associatedSimplicialObject_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/FromSimplicialObject.lean, line 682](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/FromSimplicialObject.lean#L682). The attribute's comment: “the covering characterization”.
+**`Stacks.CategoryTheory.Hypercovering.isHypercovering_associatedSimplicialObject_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/FromSimplicialObject.lean, line 682](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/FromSimplicialObject.lean#L682). The attribute's comment: “the covering characterization”.
 
 > **Stacks Project, Tag 0GM9.** The simplicial semi-representable object over `X` associated to
 > an augmented simplicial object `U ⟶ X` is a hypercovering exactly when the augmentation in degree
@@ -300,7 +305,7 @@ theorem isHypercovering_associatedSimplicialObject_iff (J : Pretopology C) :
 
 [Tag 0GMA](https://stacks.math.columbia.edu/tag/0GMA) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.isHypercovering_cech`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CechOfCovering.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/CechOfCovering.lean#L211). The attribute's comment: “the hypercovering property”.
+**`Stacks.CategoryTheory.Hypercovering.isHypercovering_cech`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CechOfCovering.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CechOfCovering.lean#L211). The attribute's comment: “the hypercovering property”.
 
 > **Stacks Project, Tag 0GMA.** The Čech object of a covering morphism is a hypercovering of
 > its target.
@@ -317,14 +322,14 @@ theorem isHypercovering_cech (J : Pretopology C) {U X : C} (f : U ⟶ X)
 
 Declarations registered for the tag:
 
-- [`FormalCoproduct.cech`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FormalCoproduct.cech#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CechOfCovering.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/CechOfCovering.lean#L54) (StacksFrontier): “the Čech simplicial construction”.
-- [`FormalCoproduct.cech_obj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FormalCoproduct.cech_obj#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CechOfCovering.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/CechOfCovering.lean#L55) (StacksFrontier): “the terms”.
+- [`FormalCoproduct.cech`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FormalCoproduct.cech#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CechOfCovering.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CechOfCovering.lean#L54) (StacksFrontier): “the Čech simplicial construction”.
+- [`FormalCoproduct.cech_obj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FormalCoproduct.cech_obj#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CechOfCovering.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CechOfCovering.lean#L55) (StacksFrontier): “the terms”.
 
 ## Tag 01G7, a lemma
 
 [Tag 01G7](https://stacks.math.columbia.edu/tag/01G7) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.small_hypercoverings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Small.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Small.lean#L92).
+**`Stacks.CategoryTheory.Hypercovering.small_hypercoverings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Small.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Small.lean#L92).
 
 > **Stacks Project, Tag 01G7.** Hypercoverings of an object of a site with
 > fibre products form a set.
@@ -340,7 +345,7 @@ public theorem small_hypercoverings (Cov : CoveringFamilies.{s, w} C) (X : C) :
 
 [Tag 01G9](https://stacks.math.columbia.edu/tag/01G9) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.locallySurjective_augmentation_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjective.lean, line 852](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjective.lean#L852). The attribute's comment: “part (1)”.
+**`Stacks.CategoryTheory.Hypercovering.locallySurjective_augmentation_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjective.lean, line 853](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjective.lean#L853). The attribute's comment: “part (1)”.
 
 > The degree-zero augmentation of the simplicial presheaf associated to a hypercovering is
 > locally surjective.
@@ -355,7 +360,7 @@ theorem locallySurjective_augmentation_of_isHypercovering
         (Opposite.op (SimplexCategory.mk 0)))
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.locallySurjective_oneMatchingMap_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjective.lean, line 879](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjective.lean#L879). The attribute's comment: “part (2)”.
+**`Stacks.CategoryTheory.Hypercovering.locallySurjective_oneMatchingMap_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjective.lean, line 880](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjective.lean#L880). The attribute's comment: “part (2)”.
 
 > The map from one-simplices to the fibre product of two copies of the presheaf of vertices
 > over the representable presheaf of `X` is locally surjective.
@@ -371,7 +376,7 @@ theorem locallySurjective_oneMatchingMap_of_isHypercovering
         (associatedAugmentedSimplicialPresheafOver K).hom)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.locallySurjective_higherMatchingMap_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjective.lean, line 895](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjective.lean#L895). The attribute's comment: “part (3)”.
+**`Stacks.CategoryTheory.Hypercovering.locallySurjective_higherMatchingMap_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjective.lean, line 896](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjective.lean#L896). The attribute's comment: “part (3)”.
 
 > Every higher matching map of the simplicial presheaf associated to a hypercovering is
 > locally surjective.
@@ -394,4 +399,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 25.3, Tag 01FZ](https://stacks.math.columbia.edu/tag/01FZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Floor and ceiling function sums
 
-26 results, 6 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html).
+26 results, 6 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html).
 
 ## An alternating sum of floors of square roots
 
@@ -18,7 +18,7 @@ $\sum_{j=1}^{n} (-1)^{j+1} \lfloor \sqrt{jn} \rfloor = (n+1)/2$.
 
 - Marc Chamberland and Karl Dilcher, "An Alternating Sum of the Floor Function of Square Roots", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.AlternatingFloorSqrtSumWanted.alternating_sum_floor_sqrt_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlternatingFloorSqrtSumWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlternatingFloorSqrtSumWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#alternating-sum-floor-sqrt-mul).
+Stated but not proved: `MathlibExt.NumberTheory.AlternatingFloorSqrtSumWanted.alternating_sum_floor_sqrt_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlternatingFloorSqrtSumWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlternatingFloorSqrtSumWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#alternating-sum-floor-sqrt-mul).
 
 ## Ceiling analogue of Hermite's identity
 
@@ -31,7 +31,7 @@ The paper assumes $n \ge 1$; for $n = 0$ both sides are $0$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.sum_ceil_add_div_eq_ceil_mul_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#sum-ceil-add-div-eq-ceil-mul-add).
+Stated but not proved: `MetaMathlibExt.sum_ceil_add_div_eq_ceil_mul_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#sum-ceil-add-div-eq-ceil-mul-add).
 
 ## Inclusion-exclusion-like sum
 
@@ -44,7 +44,7 @@ ranges over the nonempty subsets of $\{1, \dots, n\}$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Definitions 2 and 3.
 
-Formalized by `MetaMathlibExt.inclExclLikeSum`, a definition declared in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum).
+Formalized by `MetaMathlibExt.inclExclLikeSum`, a definition declared in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum).
 
 ## The inclusion-exclusion-like sum in one variable
 
@@ -56,7 +56,7 @@ single variable $x$ is $g^{(F)}(x) = F(x)$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Definitions 2 and 3.
 
-Formalized by `MetaMathlibExt.inclExclLikeSum_one`, a theorem declared in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-one).
+Formalized by `MetaMathlibExt.inclExclLikeSum_one`, a theorem declared in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-one).
 
 ## The inclusion-exclusion-like sum in two variables
 
@@ -68,7 +68,7 @@ $g^{(F)}(x, y) = F(x) + F(y) - F(x + y)$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Definitions 2 and 3.
 
-Formalized by `MetaMathlibExt.inclExclLikeSum_two`, a theorem declared in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-two).
+Formalized by `MetaMathlibExt.inclExclLikeSum_two`, a theorem declared in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-two).
 
 ## Tverberg's sum
 
@@ -85,7 +85,7 @@ Definition 3.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Definitions 1 and 3.
 
-Formalized by `MetaMathlibExt.tverbergSum`, a definition declared in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum).
+Formalized by `MetaMathlibExt.tverbergSum`, a definition declared in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum).
 
 ## Tverberg's sum of the empty tuple
 
@@ -97,7 +97,7 @@ $f^{(F)}(\emptyset, m, k) = F(k / m)$, where $k / m$ is division in $\mathbb{R}$
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Definitions 1 and 3.
 
-Formalized by `MetaMathlibExt.tverbergSum_zero`, a theorem declared in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-zero).
+Formalized by `MetaMathlibExt.tverbergSum_zero`, a theorem declared in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-zero).
 
 ## Tverberg's sum of a single integer
 
@@ -109,7 +109,7 @@ family $(a)$, modulus $m$ and shift $k$ equals $F((k + a)/m) - F(k/m)$, with $x/
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Definitions 1 and 3.
 
-Formalized by `MetaMathlibExt.tverbergSum_one`, a theorem declared in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-one).
+Formalized by `MetaMathlibExt.tverbergSum_one`, a theorem declared in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-one).
 
 ## Relations and periodicity of the inclusion-exclusion-like sums
 
@@ -130,7 +130,7 @@ $g_1(x) = \lfloor x \rfloor$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.inclExclLikeSum_relations_and_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-relations-and-periodi).
+Stated but not proved: `MetaMathlibExt.inclExclLikeSum_relations_and_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-relations-and-periodi).
 
 ## Tverberg's sum in terms of the inclusion-exclusion-like sum
 
@@ -153,7 +153,7 @@ The paper assumes $\ell \ge 2$ and $m \ge 1$; the identities hold without these 
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.tverbergSum_eq_inclExclLikeSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-eq-incl-excl-like-sum).
+Stated but not proved: `MetaMathlibExt.tverbergSum_eq_inclExclLikeSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-eq-incl-excl-like-sum).
 
 ## Periodicity of Tverberg's sum
 
@@ -174,7 +174,7 @@ replaced by $a + q m$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.tverbergSum_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-periodic).
+Stated but not proved: `MetaMathlibExt.tverbergSum_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-periodic).
 
 ## Sharp bounds for Tverberg's floor sum
 
@@ -194,7 +194,7 @@ odd and even $\ell$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.tverbergSum_floor_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-floor-bounds).
+Stated but not proved: `MetaMathlibExt.tverbergSum_floor_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-floor-bounds).
 
 ## Extrema of the floor inclusion-exclusion-like sum
 
@@ -208,7 +208,7 @@ all coordinates $1/2 - 1/n^2$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.inclExclLikeSum_floor_extrema` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-floor-extrema).
+Stated but not proved: `MetaMathlibExt.inclExclLikeSum_floor_extrema` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-floor-extrema).
 
 ## Vanishing and periodicity of partial Tverberg sums
 
@@ -232,7 +232,7 @@ every natural $K$, every index $i$ and every integer $p$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.tverbergPartialSum_vanish_and_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-partial-sum-vanish-and-periodic).
+Stated but not proved: `MetaMathlibExt.tverbergPartialSum_vanish_and_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-partial-sum-vanish-and-periodic).
 
 ## Floor and ceiling of a quotient plus one half
 
@@ -244,7 +244,7 @@ $\lceil q/m + 1/2 \rceil = \lceil (q + \lceil m/2 \rceil)/m \rceil$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.floor_ceil_div_add_half` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#floor-ceil-div-add-half).
+Stated but not proved: `MetaMathlibExt.floor_ceil_div_add_half` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#floor-ceil-div-add-half).
 
 ## Extrema of the ceiling inclusion-exclusion-like sum
 
@@ -258,7 +258,7 @@ point with all coordinates $1/2$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.inclExclLikeSum_ceil_extrema` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-ceil-extrema).
+Stated but not proved: `MetaMathlibExt.inclExclLikeSum_ceil_extrema` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-ceil-extrema).
 
 ## Extrema of the round-half-up inclusion-exclusion-like sum
 
@@ -273,7 +273,7 @@ with all coordinates $1/2$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.inclExclLikeSum_round_extrema` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-round-extrema).
+Stated but not proved: `MetaMathlibExt.inclExclLikeSum_round_extrema` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-round-extrema).
 
 ## Extrema of the round-half-down inclusion-exclusion-like sum
 
@@ -288,7 +288,7 @@ coordinates $1/2 + 1/n^2$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.inclExclLikeSum_roundDown_extrema` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-round-down-extrema).
+Stated but not proved: `MetaMathlibExt.inclExclLikeSum_roundDown_extrema` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-round-down-extrema).
 
 ## Bounds for the four inclusion-exclusion-like sums
 
@@ -307,7 +307,7 @@ $1/2 + 1/n^2$, $g_2 = -2^{n-2} + 1 = -g_4 + 1$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.inclExclLikeSum_bounds_summary` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-bounds-summary).
+Stated but not proved: `MetaMathlibExt.inclExclLikeSum_bounds_summary` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#incl-excl-like-sum-bounds-summary).
 
 ## Sharp bounds for Tverberg's ceiling sum
 
@@ -326,7 +326,7 @@ The paper states the equality cases separately for odd and even $\ell$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.tverbergSum_ceil_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-ceil-bounds).
+Stated but not proved: `MetaMathlibExt.tverbergSum_ceil_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-ceil-bounds).
 
 ## Sharp bounds for Tverberg's sum with rounding half up
 
@@ -346,7 +346,7 @@ The paper states the equality cases separately for odd and even $\ell$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.tverbergSum_round_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-round-bounds).
+Stated but not proved: `MetaMathlibExt.tverbergSum_round_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-round-bounds).
 
 ## Sharp bounds for Tverberg's sum with rounding half down
 
@@ -366,7 +366,7 @@ The paper states the equality cases separately for odd and even $\ell$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.tverbergSum_roundDown_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-round-down-bounds).
+Stated but not proved: `MetaMathlibExt.tverbergSum_roundDown_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-sum-round-down-bounds).
 
 ## Sharp bounds for two-term tail sums of Tverberg's ceiling sum
 
@@ -384,7 +384,7 @@ not needed.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.tverbergTailSum_ceil_two_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-tail-sum-ceil-two-bounds).
+Stated but not proved: `MetaMathlibExt.tverbergTailSum_ceil_two_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-tail-sum-ceil-two-bounds).
 
 ## Bounds for tail sums of Tverberg's ceiling sum
 
@@ -404,7 +404,7 @@ which is what is stated here.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.tverbergTailSum_ceil_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-tail-sum-ceil-bounds).
+Stated but not proved: `MetaMathlibExt.tverbergTailSum_ceil_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-tail-sum-ceil-bounds).
 
 ## Bounds for partial Tverberg sums of two integers under rounding half up
 
@@ -422,7 +422,7 @@ $\sum_{k=0}^{r} f(r + 1, r + 1; 2(r + 1), k) = -(r + 1)$.
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.tverbergPartialSum_round_two_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-partial-sum-round-two-bounds).
+Stated but not proved: `MetaMathlibExt.tverbergPartialSum_round_two_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-partial-sum-round-two-bounds).
 
 ## Bounds for two-term tail sums of Tverberg's sum with half-down rounding
 
@@ -440,7 +440,7 @@ through the witness of the paper's proof, and the claims hold trivially at $m = 
 
 - Kritkhajohn Onphaeng, Tammatada Khemaratchatakumthorn, Prapanpong Pongsriiam, *Inequalities for Inclusion-Exclusion-Like Sums Involving the Ceiling and the Nearest Integer Functions*, INTEGERS 25 (2025), Article A45, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.tverbergTailSum_roundDown_two_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-tail-sum-round-down-two-bounds).
+Stated but not proved: `MetaMathlibExt.tverbergTailSum_roundDown_two_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CeilingHermiteIdentityWanted.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html#tverberg-tail-sum-round-down-two-bounds).
 
 ## Depends on
 
@@ -449,4 +449,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Floor and ceiling function sums](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/floor-and-ceiling-function-sums)

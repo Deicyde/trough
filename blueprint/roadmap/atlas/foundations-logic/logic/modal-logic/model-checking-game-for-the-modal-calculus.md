@@ -8,20 +8,20 @@ proof: formalized
 
 # Model-checking game for the modal μ-calculus
 
-97 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html).
+97 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html).
 
 ## Position of the μ-calculus model-checking game
 
 A position of the μ-calculus model-checking game: the formula, the world, and
 the stack of enclosing fixpoint binders, innermost first.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.GamePosition`, an abbreviation declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#game-position).
+Formalized by `Cslib.Modal.MuCalculus.Game.GamePosition`, an abbreviation declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#game-position).
 
 ## Player of the μ-calculus model-checking game
 
 The player to move: `true` is Verifier, `false` is Refuter.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.Player`, an abbreviation declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#player).
+Formalized by `Cslib.Modal.MuCalculus.Game.Player`, an abbreviation declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#player).
 
 ## Moves of the μ-calculus model-checking game
 
@@ -42,7 +42,7 @@ $n + 1$ entries removed.
 
 - C. Stirling, *Modal and Temporal Properties of Processes*, Springer 2001, Chapter 6.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.Move`, an inductive type declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#move).
+Formalized by `Cslib.Modal.MuCalculus.Game.Move`, an inductive type declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#move).
 
 ## Owner of a game position
 
@@ -54,7 +54,7 @@ other formula.
 
 - C. Stirling, *Modal and Temporal Properties of Processes*, Springer 2001, Chapter 6.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.Owner`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#owner).
+Formalized by `Cslib.Modal.MuCalculus.Game.Owner`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#owner).
 
 ## Priority of a game position
 
@@ -76,7 +76,7 @@ $\mu$: in $\mu X.\,\nu Y.\,X$, whose denotation is empty, Verifier would win the
 
 - E. A. Emerson and C. S. Jutla, "Tree automata, μ-calculus and determinacy", *Proceedings of FOCS 1991*, 368-377; C. Stirling, *Modal and Temporal Properties of Processes*, Springer 2001, Chapter 6; J. A. Bradfield, "The modal μ-calculus alternation hierarchy is strict", *Theoretical Computer Science* 195 (1998), 133-153 (alternation depth).
 
-Formalized by `Cslib.Modal.MuCalculus.Game.prio`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#prio).
+Formalized by `Cslib.Modal.MuCalculus.Game.prio`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#prio).
 
 ## Positions with no moves
 
@@ -84,7 +84,7 @@ In a Kripke model $M$, a game position $p$ has no moves when
 there is no position $q$ such that going from $p$ to $q$ is a move of the model-checking game
 in $M$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.NoMoves`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#no-moves).
+Formalized by `Cslib.Modal.MuCalculus.Game.NoMoves`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#no-moves).
 
 ## Winner at a terminal position
 
@@ -105,7 +105,7 @@ shifted by $|st|$ because each binder on the stack shifts de Bruijn indices by o
 
 - C. Stirling, *Modal and Temporal Properties of Processes*, Springer 2001, Chapter 6.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.TerminalWin`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#terminal-win).
+Formalized by `Cslib.Modal.MuCalculus.Game.TerminalWin`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#terminal-win).
 
 ## Parity winning condition
 
@@ -124,7 +124,7 @@ priority than any binder nested inside it.
 
 - E. A. Emerson and C. S. Jutla, "Tree automata, μ-calculus and determinacy", *Proceedings of FOCS 1991*, 368-377.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.ParityWin`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#parity-win).
+Formalized by `Cslib.Modal.MuCalculus.Game.ParityWin`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#parity-win).
 
 ## Verifier strategy
 
@@ -136,7 +136,7 @@ The move-respecting condition is what makes Verifier's winning meaningful: witho
 strategy could "win" by choosing a non-move at a Verifier position, leaving no
 legal play at all.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.Strategy`, a structure declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#strategy).
+Formalized by `Cslib.Modal.MuCalculus.Game.Strategy`, a structure declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#strategy).
 
 ## Finite plays consistent with a strategy
 
@@ -148,14 +148,14 @@ $p$ followed by any such play from $q$ is such a play from $p$.
 
 A play need not end at a position with no moves: every finite prefix counts.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.PlayFrom`, an inductive type declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#play-from).
+Formalized by `Cslib.Modal.MuCalculus.Game.PlayFrom`, an inductive type declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#play-from).
 
 ## Last position of a play
 
 The last position of a finite list of game positions is its
 final entry when the list is nonempty; the empty list has no last position.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.playLast`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#play-last).
+Formalized by `Cslib.Modal.MuCalculus.Game.playLast`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#play-last).
 
 ## Winning strategy from a position
 
@@ -168,7 +168,7 @@ with $\sigma$ whose last position has no moves ends in a position that is a term
 Verifier in $\mathit{env}$, and every infinite play from $p$ consistent with $\sigma$ satisfies
 the parity condition.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.StrategyWins`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#strategy-wins).
+Formalized by `Cslib.Modal.MuCalculus.Game.StrategyWins`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#strategy-wins).
 
 ## Verifier has a winning strategy
 
@@ -178,7 +178,7 @@ model-checking game on $M$ wins from $p$ in environment $\mathit{env}$: every co
 $\sigma$-consistent play from $p$ ends at a terminal winning position, and every infinite
 $\sigma$-consistent play from $p$ satisfies the parity condition.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.VerifierWins`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#verifier-wins).
+Formalized by `Cslib.Modal.MuCalculus.Game.VerifierWins`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#verifier-wins).
 
 ## Formulas closed at depth $d$
 
@@ -195,14 +195,14 @@ enclosing binders.
 
 - C. Stirling, *Modal and Temporal Properties of Processes*, Springer 2001, Chapter 6 (de Bruijn variables).
 
-Formalized by `Cslib.Modal.MuCalculus.Game.ClosedAt`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#closed-at).
+Formalized by `Cslib.Modal.MuCalculus.Game.ClosedAt`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#closed-at).
 
 ## Closed formulas
 
 A μ-calculus formula $\varphi$ is closed when it is closed at depth $0$,
 that is, when it has no free variables.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.Closed`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#closed).
+Formalized by `Cslib.Modal.MuCalculus.Game.Closed`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#closed).
 
 ## Closedness is monotone in the depth
 
@@ -211,7 +211,7 @@ $d \le d'$ be natural numbers. If $\varphi$ is closed at depth $d$ (every free v
 $\varphi$ is less than $d$), then $\varphi$ is closed at depth $d'$: more enclosing binders can
 only bind more variables.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.ClosedAt.mono`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#mono).
+Formalized by `Cslib.Modal.MuCalculus.Game.ClosedAt.mono`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#mono).
 
 ## Satisfaction depends only on the environment below the closure depth
 
@@ -229,7 +229,7 @@ In particular, satisfaction of a closed formula is independent of the environmen
 
 - D. Kozen, *Results on the propositional μ-calculus*, Theoretical Computer Science 27 (1983), 333-354.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.sat_eq_of_closedAt`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#sat-eq-of-closed-at).
+Formalized by `Cslib.Modal.MuCalculus.Game.sat_eq_of_closedAt`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#sat-eq-of-closed-at).
 
 ## Closed formulas are environment-independent
 
@@ -239,14 +239,14 @@ $\mathrm{env}$ and $\mathrm{env}'$, each assigning a set of worlds to every vari
 every world $w$, $\varphi$ is satisfied at $w$ in $M$ under $\mathrm{env}$ if and only if it is
 satisfied at $w$ in $M$ under $\mathrm{env}'$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.sat_closed`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#sat-closed).
+Formalized by `Cslib.Modal.MuCalculus.Game.sat_closed`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#sat-closed).
 
 ## The one-world reflexive Kripke model
 
 The Kripke model with a single world, which is
 related to itself, and a single atom, which is false at that world.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.counterexampleModel`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#counterexample-model).
+Formalized by `Cslib.Modal.MuCalculus.Game.counterexampleModel`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#counterexample-model).
 
 ## A least fixpoint over a vacuous greatest fixpoint
 
@@ -258,14 +258,14 @@ bound by the inner greatest fixpoint never occurs.
 Its denotation is empty: the outer functional is the identity, and the least fixed point of the
 identity on predicates is the empty predicate.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.counterexampleFormula`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#counterexample-formula).
+Formalized by `Cslib.Modal.MuCalculus.Game.counterexampleFormula`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#counterexample-formula).
 
 ## Starting position of the regression play
 
 The game position consisting of the formula
 $\mu X.\,\nu Y.\,X$, the unique world of the one-world model, and the empty binder stack.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.cePos0`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-pos0).
+Formalized by `Cslib.Modal.MuCalculus.Game.cePos0`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-pos0).
 
 ## Second position of the regression play
 
@@ -274,7 +274,7 @@ $\nu Y.\,X$, the unique world of the one-world model, and the binder stack
 $[\mu X.\,\nu Y.\,X]$. Here $X$ is the de Bruijn variable $1$, which refers to the binder
 $\mu X$ on the stack.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.cePos1`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-pos1).
+Formalized by `Cslib.Modal.MuCalculus.Game.cePos1`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-pos1).
 
 ## Third position of the regression play
 
@@ -283,7 +283,7 @@ the unique world of the one-world model, and the binder stack $[\nu Y.\,X,\ \mu 
 listed innermost first. Here $X$ is the de Bruijn variable $1$, which refers to the outer binder
 $\mu X$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.cePos2`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-pos2).
+Formalized by `Cslib.Modal.MuCalculus.Game.cePos2`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-pos2).
 
 ## Step map of the regression play
 
@@ -295,7 +295,7 @@ $(\nu Y.\, X, w, [\Phi])$ to $(X, w, [\nu Y.\, X, \Phi])$, and sends
 $(X, w, [\nu Y.\, X, \Phi])$ to $(\Phi, w, [\,])$, where $X$ is the variable bound by the
 outer $\mu$; every other game position is sent to itself.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.ceNext`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-next).
+Formalized by `Cslib.Modal.MuCalculus.Game.ceNext`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-next).
 
 ## The regression play
 
@@ -309,7 +309,7 @@ the sequence of positions $p_0 = P_0$, $p_{n+1} = s(p_n)$, which cycles through 
 These are the successive positions of the model-checking game for $\mu X.\,\nu Y.\,X$ on the
 one-world model.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.cePlay`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-play).
+Formalized by `Cslib.Modal.MuCalculus.Game.cePlay`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-play).
 
 ## Regression cycle, first step
 
@@ -318,7 +318,7 @@ $\ast$ the unique world, and write game positions as (formula, world, stack of e
 binders, innermost first). The step map of the regression play sends the first cycle position
 $(\Phi, \ast, [\,])$ to the second cycle position $(\nu Y.\, X, \ast, [\Phi])$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.ceNext_cePos0`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-next-ce-pos0).
+Formalized by `Cslib.Modal.MuCalculus.Game.ceNext_cePos0`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-next-ce-pos0).
 
 ## Regression cycle, second step
 
@@ -328,7 +328,7 @@ binders, innermost first). The step map of the regression play sends the second 
 $(\nu Y.\, X, \ast, [\Phi])$ to the third cycle position $(X, \ast, [\nu Y.\, X, \Phi])$, where
 $X$ is the variable bound by the outer $\mu$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.ceNext_cePos1`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-next-ce-pos1).
+Formalized by `Cslib.Modal.MuCalculus.Game.ceNext_cePos1`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-next-ce-pos1).
 
 ## Regression cycle, third step
 
@@ -338,14 +338,14 @@ binders, innermost first). The step map of the regression play sends the third c
 $(X, \ast, [\nu Y.\, X, \Phi])$, where $X$ is the variable bound by the outer $\mu$, back to
 the first cycle position $(\Phi, \ast, [\,])$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.ceNext_cePos2`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-next-ce-pos2).
+Formalized by `Cslib.Modal.MuCalculus.Game.ceNext_cePos2`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-next-ce-pos2).
 
 ## The regression play stays on the cycle
 
 For every $n \in \mathbb{N}$, the position at
 step $n$ of the regression play is the first, the second or the third cycle position.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.cePlay_mem`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-play-mem).
+Formalized by `Cslib.Modal.MuCalculus.Game.cePlay_mem`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-play-mem).
 
 ## The regression play has period three
 
@@ -353,7 +353,7 @@ Number the positions of the regression play
 from $0$. For every natural number $n$, its position number $n + 3$ equals its position
 number $n$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.cePlay_period`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-play-period).
+Formalized by `Cslib.Modal.MuCalculus.Game.cePlay_period`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-play-period).
 
 ## The regression play returns to its start every three steps
 
@@ -362,7 +362,7 @@ the regression play of $\mu X.\,\nu Y.\,X$ from $0$. For every natural number $k
 position number $3k$ is its starting position: the formula $\mu X.\,\nu Y.\,X$ at the unique
 world, with the empty binder stack.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.cePlay_mul_three`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 449](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L449). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-play-mul-three).
+Formalized by `Cslib.Modal.MuCalculus.Game.cePlay_mul_three`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 449](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L449). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-play-mul-three).
 
 ## The regression play is a play
 
@@ -370,7 +370,7 @@ For every $n \in \mathbb{N}$, in the model-checking game
 on the one-world regression model there is a move from the position at step $n$ of the
 regression play to the position at step $n + 1$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.cePlay_moves`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-play-moves).
+Formalized by `Cslib.Modal.MuCalculus.Game.cePlay_moves`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-play-moves).
 
 ## Priority of the outer binder in the regression play
 
@@ -384,7 +384,7 @@ play would be $2$ (even, Verifier wins); with priorities increasing with nesting
 $\nu$ here has priority $4$) and the least-priority rule, the least binder priority recurring on
 this play is $1$ (odd, Refuter wins).
 
-Formalized by `Cslib.Modal.MuCalculus.Game.ce_prio0`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-prio0).
+Formalized by `Cslib.Modal.MuCalculus.Game.ce_prio0`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-prio0).
 
 ## Priority of the inner binder in the regression play
 
@@ -393,7 +393,7 @@ regression play, consisting of the formula $\nu Y.\,X$, the unique world and the
 $[\mu X.\,\nu Y.\,X]$, has priority $4$: a $\nu$-binder position with $k$ binders on the stack
 has priority $2k + 2$, and here $k = 1$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.ce_prio1`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 474](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L474). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-prio1).
+Formalized by `Cslib.Modal.MuCalculus.Game.ce_prio1`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 474](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L474). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ce-prio1).
 
 ## Verifier loses the infinite play of $\mu X.\, \nu Y.\, X$
 
@@ -404,7 +404,7 @@ steps: unfold $\mu X$, unfold $\nu Y$, and follow the variable $X$ back to the f
 stack. This play does not satisfy the parity condition: it is not the case that the least binder
 priority occurring infinitely often is even.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.counterexample_parityWin_false`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#counterexample-parity-win-false).
+Formalized by `Cslib.Modal.MuCalculus.Game.counterexample_parityWin_false`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#counterexample-parity-win-false).
 
 ## $\mu X.\, \nu Y.\, X$ is false in the one-world model
 
@@ -415,7 +415,7 @@ at the unique world.
 
 This agrees with the model-checking game, where Verifier loses the play of this formula.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.counterexample_sat_false`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#counterexample-sat-false).
+Formalized by `Cslib.Modal.MuCalculus.Game.counterexample_sat_false`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#counterexample-sat-false).
 
 ## Fixpoint-free formulas
 
@@ -426,7 +426,7 @@ disjunction $\varphi \lor \psi$, necessity $\Box\varphi$ and possibility $\Diamo
 These are the formulas of basic modal logic in negation normal form: the μ-calculus formulas with
 no fixpoint operators and no variables.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.FixFreeFormula`, an inductive type declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 515](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L515). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#fix-free-formula).
+Formalized by `Cslib.Modal.MuCalculus.Game.FixFreeFormula`, an inductive type declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 515](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L515). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#fix-free-formula).
 
 ## Embedding of the fixpoint-free fragment into the μ-calculus
 
@@ -436,7 +436,7 @@ go to the same atom, negated atom, $\bot$ and $\top$, and $\varphi \wedge \psi$,
 $\varphi \vee \psi$, $\Box \varphi$ and $\Diamond \varphi$ go to the conjunction, disjunction,
 box and diamond of the images of $\varphi$ and $\psi$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.FixFreeFormula.toMu`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 536](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L536). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#to-mu).
+Formalized by `Cslib.Modal.MuCalculus.Game.FixFreeFormula.toMu`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 536](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L536). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#to-mu).
 
 ## Backward-induction winning region of the fixpoint-free fragment
 
@@ -452,7 +452,7 @@ is winning at some $v$ with $w \mathrel{R} v$.
 Verifier has a winning strategy in the model-checking game from the position $(\varphi, w, [])$
 with empty stack exactly when $\varphi$ is winning at $w$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.Wins`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 550](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L550). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins).
+Formalized by `Cslib.Modal.MuCalculus.Game.Wins`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 550](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L550). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins).
 
 ## Backward-induction winning equals satisfaction on the fixpoint-free fragment
 
@@ -465,7 +465,7 @@ lies in the backward-induction winning region of $\varphi$ if and only if $w$ sa
 
 - C. Stirling, *Modal and Temporal Properties of Processes*, Springer 2001, Chapter 6.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.wins_iff_sat`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-iff-sat).
+Formalized by `Cslib.Modal.MuCalculus.Game.wins_iff_sat`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-iff-sat).
 
 ## Size of a μ-calculus formula
 
@@ -474,7 +474,7 @@ the number of nodes of its syntax tree: an atom, a negated atom, a variable, $\b
 have size $1$; $|\varphi \wedge \psi| = |\varphi \vee \psi| = |\varphi| + |\psi| + 1$; and
 $|\Box\varphi| = |\Diamond\varphi| = |\mu\varphi| = |\nu\varphi| = |\varphi| + 1$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.MuFormula.size`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 587](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L587). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#size).
+Formalized by `Cslib.Modal.MuCalculus.Game.MuFormula.size`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 587](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L587). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#size).
 
 ## Partial inverse of the fixpoint-free embedding
 
@@ -487,7 +487,7 @@ and at least and greatest fixpoints, and at every formula with a part where it i
 
 It inverts the embedding of fixpoint-free formulas into μ-calculus formulas on its image.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.toMuInv`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 593](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L593). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#to-mu-inv).
+Formalized by `Cslib.Modal.MuCalculus.Game.toMuInv`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 593](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L593). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#to-mu-inv).
 
 ## The partial inverse recovers fixpoint-free formulas
 
@@ -495,7 +495,7 @@ For every fixpoint-free formula
 $\varphi$, the partial inverse of the embedding of fixpoint-free formulas into μ-calculus
 formulas is defined at the image of $\varphi$ under the embedding, with value $\varphi$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.toMuInv_toMu`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 605](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L605). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#to-mu-inv-to-mu).
+Formalized by `Cslib.Modal.MuCalculus.Game.toMuInv_toMu`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 605](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L605). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#to-mu-inv-to-mu).
 
 ## The embedding inverts the partial inverse
 
@@ -504,7 +504,7 @@ fixpoint-free formula $\varphi$: if the partial inverse of the embedding of fixp
 formulas into μ-calculus formulas is defined at $\psi$ with value $\varphi$, then the embedding
 sends $\varphi$ to $\psi$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.toMu_toMuInv`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 618](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L618). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#to-mu-to-mu-inv).
+Formalized by `Cslib.Modal.MuCalculus.Game.toMu_toMuInv`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 618](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L618). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#to-mu-to-mu-inv).
 
 ## The fixpoint-free embedding is injective
 
@@ -514,7 +514,7 @@ The embedding of fixpoint-free formulas into
 This is what lets the canonical fragment game recover a fragment formula from an
 embedded game position.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.FixFreeFormula.toMu_injective`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 687](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L687). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#to-mu-injective).
+Formalized by `Cslib.Modal.MuCalculus.Game.FixFreeFormula.toMu_injective`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 687](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L687). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#to-mu-injective).
 
 ## Wins-guided move
 
@@ -540,7 +540,7 @@ disjunct is not, then its right disjunct is.
 
 - C. Stirling, *Modal and Temporal Properties of Processes*, Springer 2001, Chapter 6.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.winsMove`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 704](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L704). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-move).
+Formalized by `Cslib.Modal.MuCalculus.Game.winsMove`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 704](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L704). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-move).
 
 ## The Wins-guided move at a disjunction
 
@@ -551,7 +551,7 @@ winning region of $\varphi_i$ and the Wins-guided move at the position made of t
 $\varphi_1 \vee \varphi_2$, the world $w$ and the empty binder stack is the position made of the
 embedding of $\varphi_i$, the world $w$ and the empty stack.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.winsMove_or`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 736](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L736). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-move-or).
+Formalized by `Cslib.Modal.MuCalculus.Game.winsMove_or`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 736](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L736). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-move-or).
 
 ## The Wins-guided move at a diamond
 
@@ -562,7 +562,7 @@ $\varphi$ such that the Wins-guided move at the position made of the embedding o
 $\Diamond \varphi$, the world $w$ and the empty binder stack is the position made of the
 embedding of $\varphi$, the world $v$ and the empty stack.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.winsMove_dia`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 755](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L755). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-move-dia).
+Formalized by `Cslib.Modal.MuCalculus.Game.winsMove_dia`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 755](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L755). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-move-dia).
 
 ## The Wins-guided move is legal
 
@@ -570,7 +570,7 @@ For a Kripke model $M$ and a game position $p$ owned by
 Verifier from which some move exists, the Wins-guided move at $p$ is a legal move of the
 model-checking game on $M$ from $p$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.winsMove_isMove`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 769](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L769). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-move-is-move).
+Formalized by `Cslib.Modal.MuCalculus.Game.winsMove_isMove`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 769](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L769). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-move-is-move).
 
 ## Wins-guided strategy
 
@@ -579,7 +579,7 @@ strategy of the model-checking game on $M$ that chooses, at each game position $
 the Wins-guided move at $(\psi, w, s)$. At every Verifier-owned position that has a move, this
 choice is a legal move.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.winsStrategy`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 855](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L855). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-strategy).
+Formalized by `Cslib.Modal.MuCalculus.Game.winsStrategy`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 855](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L855). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-strategy).
 
 ## Finite plays are nonempty
 
@@ -587,7 +587,7 @@ Let $M$ be a Kripke model, $\sigma$ a Verifier strategy and
 $p$ a game position. Every finite play from $p$ consistent with $\sigma$ is a nonempty list of
 positions.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.PlayFrom.ne_nil`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 862](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L862). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ne-nil).
+Formalized by `Cslib.Modal.MuCalculus.Game.PlayFrom.ne_nil`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 862](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L862). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#ne-nil).
 
 ## Prepending to a nonempty play keeps the last position
 
@@ -595,7 +595,7 @@ For a game position $p$ and a
 nonempty list $ps$ of game positions, the list obtained by prepending $p$ to $ps$ has the same
 last position as $ps$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.playLast_cons`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 870](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L870). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#play-last-cons).
+Formalized by `Cslib.Modal.MuCalculus.Game.playLast_cons`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 870](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L870). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#play-last-cons).
 
 ## Fragment moves decrease the formula size
 
@@ -606,7 +606,7 @@ to a position $(\varphi', w', [\,])$ for some fixpoint-free formula $\varphi'$ a
 and the size of $\varphi'$ is strictly smaller than the size of $\varphi$ (sizes of the embedded
 μ-calculus formulas).
 
-Formalized by `Cslib.Modal.MuCalculus.Game.move_of_toMu`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 877](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L877). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#move-of-to-mu).
+Formalized by `Cslib.Modal.MuCalculus.Game.move_of_toMu`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 877](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L877). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#move-of-to-mu).
 
 ## No infinite play from a fragment position
 
@@ -616,7 +616,7 @@ $p_0, p_1, p_2, \dots$ with $p_0 = (\varphi, w, [\,])$ (the embedded formula wit
 stack) such that each step from $p_n$ to $p_{n+1}$ is a move of the model-checking game in $M$.
 The reason is that every move strictly decreases the formula size.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.no_infinite_play_of_fixFree`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 907](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L907). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#no-infinite-play-of-fix-free).
+Formalized by `Cslib.Modal.MuCalculus.Game.no_infinite_play_of_fixFree`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 907](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L907). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#no-infinite-play-of-fix-free).
 
 ## Winning strategies stay winning along consistent moves
 
@@ -626,21 +626,21 @@ $M$. If $\sigma$ wins from a position $p$ in $\mathit{env}$, and $q$ is a positi
 $p$ by one move that is the position chosen by $\sigma$ at $p$ whenever Verifier owns $p$, then
 $\sigma$ also wins from $q$ in $\mathit{env}$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.strategyWins_of_move`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 931](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L931). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#strategy-wins-of-move).
+Formalized by `Cslib.Modal.MuCalculus.Game.strategyWins_of_move`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 931](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L931). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#strategy-wins-of-move).
 
 ## Wins-guided strategy wins finite plays (auxiliary induction)
 
 The Wins-guided strategy wins every complete finite play from a winning
 fragment position.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.winsStrategy_wins_finite_aux`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 971](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L971). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-strategy-wins-finite-aux).
+Formalized by `Cslib.Modal.MuCalculus.Game.winsStrategy_wins_finite_aux`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 971](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L971). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-strategy-wins-finite-aux).
 
 ## Wins-guided strategy wins every complete finite play
 
 The Wins-guided strategy wins every complete finite play from a winning
 fragment position.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.winsStrategy_wins_finite`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1039](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1039). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-strategy-wins-finite).
+Formalized by `Cslib.Modal.MuCalculus.Game.winsStrategy_wins_finite`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1039](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1039). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-strategy-wins-finite).
 
 ## Game-vs-satisfaction, strategy direction
 
@@ -654,7 +654,7 @@ position made of the μ-calculus embedding of $\varphi$, the world $w$ and the e
 
 - C. Stirling, *Modal and Temporal Properties of Processes*, Springer 2001, Chapter 6.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.wins_implies_verifierWins`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1052](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1052). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-implies-verifier-wins).
+Formalized by `Cslib.Modal.MuCalculus.Game.wins_implies_verifierWins`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1052](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1052). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-implies-verifier-wins).
 
 ## Inversion for disjunction moves
 
@@ -663,7 +663,7 @@ Let $M$ be a Kripke model, $\varphi$ and $\psi$
 position $(\varphi \vee \psi, w, s)$ to a position $q$ is a move of the model-checking game in
 $M$, then $q$ is $(\varphi, w, s)$ or $(\psi, w, s)$: the world and the stack are unchanged.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.Move.or_cases`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1064](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1064). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#or-cases).
+Formalized by `Cslib.Modal.MuCalculus.Game.Move.or_cases`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1064](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1064). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#or-cases).
 
 ## Moves from a diamond position
 
@@ -672,7 +672,7 @@ move from the position with formula $\Diamond\varphi$, world $w$ and binder stac
 position with formula $\varphi$, world $v$ and the same stack $s$, for some world $v$ accessible
 from $w$ in $M$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.Move.dia_cases`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1073](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1073). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#dia-cases).
+Formalized by `Cslib.Modal.MuCalculus.Game.Move.dia_cases`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1073](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1073). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#dia-cases).
 
 ## Game-vs-satisfaction, converse direction
 
@@ -687,7 +687,7 @@ $\varphi$.
 
 - C. Stirling, *Modal and Temporal Properties of Processes*, Springer 2001, Chapter 6.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.verifierWins_implies_wins`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1083](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1083). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#verifier-wins-implies-wins).
+Formalized by `Cslib.Modal.MuCalculus.Game.verifierWins_implies_wins`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1083](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1083). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#verifier-wins-implies-wins).
 
 ## Backward-induction winning equals game winning on the fixpoint-free fragment
 
@@ -701,7 +701,7 @@ of the μ-calculus embedding of $\varphi$, the world $w$ and the empty binder st
 
 - C. Stirling, *Modal and Temporal Properties of Processes*, Springer 2001, Chapter 6.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.wins_iff_verifierWins`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-iff-verifier-wins).
+Formalized by `Cslib.Modal.MuCalculus.Game.wins_iff_verifierWins`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#wins-iff-verifier-wins).
 
 ## Positions of the totalized fragment game
 
@@ -718,7 +718,7 @@ position with no moves leads to the winning state if it is a terminal win for Ve
 the losing state otherwise, and both absorbing states loop to themselves, so the game has no
 dead ends and is a parity game.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.FragPos`, an inductive type declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-pos).
+Formalized by `Cslib.Modal.MuCalculus.Game.FragPos`, an inductive type declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-pos).
 
 ## Projection of game positions onto the fragment arena
 
@@ -735,7 +735,7 @@ move from an embedded position lands on an embedded position.
 
 - C. Stirling, *Modal and Temporal Properties of Processes*, Springer 2001, Chapter 6.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragOfGamePos`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-of-game-pos).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragOfGamePos`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-of-game-pos).
 
 ## Projection of an embedded position
 
@@ -743,7 +743,7 @@ For every fixpoint-free formula $\varphi$ and world
 $w$, projecting the game position with formula $\varphi$ (read as a μ-calculus formula), world $w$
 and empty binder stack onto the fragment arena gives the embedded position $(\varphi, w)$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragOfGamePos_toMu`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-of-game-pos-to-mu).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragOfGamePos_toMu`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-of-game-pos-to-mu).
 
 ## Moves of the totalized fragment game
 
@@ -756,7 +756,7 @@ $(\varphi, w)$ with empty stack has no moves and is won by Verifier in environme
 $(\varphi, w)$ to the losing state when that game position has no moves and is not won by
 Verifier; and from each of the winning and losing states to itself.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.FragMove`, an inductive type declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-move).
+Formalized by `Cslib.Modal.MuCalculus.Game.FragMove`, an inductive type declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-move).
 
 ## Owners in the totalized fragment game
 
@@ -770,7 +770,7 @@ even player.
 Verifier plays the even player; the moves at the absorbing states are forced, so their owner
 does not matter.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragOwner`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-owner).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragOwner`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-owner).
 
 ## Priorities in the totalized fragment game
 
@@ -784,7 +784,7 @@ positions is sound because the arena contains no fixpoint positions and every mo
 embedded positions strictly decreases the formula, so no infinite play visits only embedded
 positions.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragPriority`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-priority).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragPriority`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-priority).
 
 ## Fragment parity game
 
@@ -800,7 +800,7 @@ embedded positions $(\varphi, w)$ such that Verifier owns $(\varphi, w, [])$; th
 owns the other embedded positions. Embedded positions and the winning state have priority $0$;
 the losing state has priority $1$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragmentGame`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#fragment-game).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragmentGame`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#fragment-game).
 
 ## The absorbing win state
 
@@ -808,14 +808,14 @@ In the totalized fragment game on a Kripke model $M$ with
 environment $\mathit{env}$, every move from the absorbing Verifier-wins state $\mathrm{win}$
 leads back to it: if $\mathrm{win}$ moves to $v$, then $v = \mathrm{win}$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.FragMove.win_eq`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#win-eq).
+Formalized by `Cslib.Modal.MuCalculus.Game.FragMove.win_eq`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#win-eq).
 
 ## The losing state is absorbing
 
 In the fragment game of a Kripke model $M$ and an
 environment $\rho$, every move from the losing state goes to the losing state.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.FragMove.lose_eq`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#lose-eq).
+Formalized by `Cslib.Modal.MuCalculus.Game.FragMove.lose_eq`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#lose-eq).
 
 ## Fragment moves between embedded positions are game moves
 
@@ -826,7 +826,7 @@ position $(\varphi', w')$, then the model-checking game has a move from $(\varph
 $(\varphi', w', [])$, where the fixpoint-free formulas are viewed as μ-calculus formulas and
 $[]$ is the empty binder stack.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.FragMove.pos_move_iff`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1316](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#pos-move-iff).
+Formalized by `Cslib.Modal.MuCalculus.Game.FragMove.pos_move_iff`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1316](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#pos-move-iff).
 
 ## Moves to the winning state come from terminal winning positions
 
@@ -837,7 +837,7 @@ winning state, then the game position $(\varphi, w, [])$, with $\varphi$ viewed 
 formula and an empty binder stack, has no moves, and Verifier wins there as a terminal position
 in the environment $\mathrm{env}$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.FragMove.pos_toWin`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#pos-to-win).
+Formalized by `Cslib.Modal.MuCalculus.Game.FragMove.pos_toWin`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#pos-to-win).
 
 ## Moves to the losing state come from terminal losing positions
 
@@ -848,7 +848,7 @@ losing state, then the game position $(\varphi, w, [])$, with $\varphi$ viewed a
 formula and an empty binder stack, has no moves, and Verifier does not win there as a terminal
 position in the environment $\mathrm{env}$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.FragMove.pos_toLose`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#pos-to-lose).
+Formalized by `Cslib.Modal.MuCalculus.Game.FragMove.pos_toLose`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#pos-to-lose).
 
 ## Owner of an embedded position in the totalized fragment game
 
@@ -857,7 +857,7 @@ formula $\varphi$ and world $w$, the even player owns the embedded position $(\v
 totalized fragment game if and only if Verifier owns the model-checking game position
 $(\varphi, w, [])$, with $\varphi$ embedded as a μ-calculus formula and the empty fixpoint stack.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragOwner_pos_eq_even`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-owner-pos-eq-even).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragOwner_pos_eq_even`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-owner-pos-eq-even).
 
 ## Canonical next move induced by a bespoke strategy
 
@@ -877,7 +877,7 @@ $(\varphi, w)$ with no such move is sent to $\mathrm{win}$ if $\langle \varphi, 
 satisfies the terminal winning condition for Verifier in environment $\mathit{env}$, and to
 $\mathrm{lose}$ otherwise.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.canonicalNext`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1360](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#canonical-next).
+Formalized by `Cslib.Modal.MuCalculus.Game.canonicalNext`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1360](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#canonical-next).
 
 ## The canonical move follows the bespoke strategy at Verifier positions with a move
 
@@ -892,13 +892,13 @@ $w'$ such that the canonical next move induced by $\sigma$ (in environment $\mat
 the fragment position $(\varphi, w)$ to the fragment position $(\varphi', w')$, and $\sigma$
 chooses $\langle \varphi', w' \rangle$ at $\langle \varphi, w \rangle$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.canonicalNext_pos_of_owner`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1376](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#canonical-next-pos-of-owner).
+Formalized by `Cslib.Modal.MuCalculus.Game.canonicalNext_pos_of_owner`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1376](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#canonical-next-pos-of-owner).
 
 ## Positional strategy induced by a bespoke strategy
 
 The canonical positional strategy induced by a bespoke strategy.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragStrategy`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1403](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-strategy).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragStrategy`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1403](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-strategy).
 
 ## Game position of a fragment position
 
@@ -908,7 +908,7 @@ and empty binder stack, and the absorbing winning and losing states are both sen
 
 The default is never used on plays that stay among embedded positions.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragToPos`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1466](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-to-pos).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragToPos`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1466](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-to-pos).
 
 ## Segment of a fragment play as game positions
 
@@ -919,7 +919,7 @@ list of game positions obtained from $\pi_s, \pi_{s+1}, \dots, \pi_{s+k}$, in th
 sending each embedded position $(\varphi, w)$ to the game position with formula $\varphi$, world
 $w$ and empty binder stack, and each of the absorbing winning and losing states to $p_0$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragSegment`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1471](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-segment).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragSegment`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1471](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-segment).
 
 ## Splitting off the head of a segment
 
@@ -931,7 +931,7 @@ $(\varphi, w, [])$, with $\varphi$ embedded as a μ-calculus formula and the emp
 For all natural numbers $s$ and $k$, the segment $[\hat\pi_s, \dots, \hat\pi_{s+k+1}]$ of $\pi$ is
 the list with head $\hat\pi_s$ followed by the segment $[\hat\pi_{s+1}, \dots, \hat\pi_{s+k+1}]$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragSegment_cons`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1477](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1477). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-segment-cons).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragSegment_cons`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1477](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1477). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-segment-cons).
 
 ## Segments of canonical plays through fragment positions are bespoke plays
 
@@ -948,7 +948,7 @@ $\langle \varphi_s, w_s \rangle, \langle \varphi_{s+1}, w_{s+1} \rangle, \dots,
 consistent with $\sigma$: each position has a game move to the next, and at Verifier-owned
 positions the next position is the one $\sigma$ chooses.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.canonical_playFrom_segment`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1485](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1485). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#canonical-play-from-segment).
+Formalized by `Cslib.Modal.MuCalculus.Game.canonical_playFrom_segment`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1485](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1485). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#canonical-play-from-segment).
 
 ## Plays of the totalized fragment game stay at the winning state
 
@@ -957,7 +957,7 @@ and $\mathit{env}$ an environment assigning a set of worlds to each free-variabl
 $\pi$ is a play of the totalized fragment game of $M$ and $\mathit{env}$ and $\pi_k$ is the
 absorbing winning state, then $\pi_n$ is the winning state for every $n \ge k$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragPlay_eq_win_of_le`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1533](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1533). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-play-eq-win-of-le).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragPlay_eq_win_of_le`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1533](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1533). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-play-eq-win-of-le).
 
 ## Plays of the totalized fragment game stay at the losing state
 
@@ -966,7 +966,7 @@ and $\mathit{env}$ an environment assigning a set of worlds to each free-variabl
 $\pi$ is a play of the totalized fragment game of $M$ and $\mathit{env}$ and $\pi_k$ is the
 absorbing losing state, then $\pi_n$ is the losing state for every $n \ge k$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragPlay_eq_lose_of_le`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1545](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1545). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-play-eq-lose-of-le).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragPlay_eq_lose_of_le`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1545](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1545). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-play-eq-lose-of-le).
 
 ## Sequences that stay at the win state are won by the even player
 
@@ -976,7 +976,7 @@ $\pi_0 \pi_1 \pi_2 \dots$ of positions of the totalized fragment game of $M$ and
 has a $k_0$ such that $\pi_n$ is the absorbing winning state for all $n \ge k_0$, then $\pi$ is
 won by the even player in that game.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.wonBy_even_of_eventually_win`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1557](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1557). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#won-by-even-of-eventually-win).
+Formalized by `Cslib.Modal.MuCalculus.Game.wonBy_even_of_eventually_win`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1557](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1557). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#won-by-even-of-eventually-win).
 
 ## Sequences that stay at the lose state are won by the odd player
 
@@ -986,7 +986,7 @@ $\pi_0 \pi_1 \pi_2 \dots$ of positions of the totalized fragment game of $M$ and
 has a $k_0$ such that $\pi_n$ is the absorbing losing state for all $n \ge k_0$, then $\pi$ is
 won by the odd player in that game.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.wonBy_odd_of_eventually_lose`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1579](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1579). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#won-by-odd-of-eventually-lose).
+Formalized by `Cslib.Modal.MuCalculus.Game.wonBy_odd_of_eventually_lose`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1579](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1579). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#won-by-odd-of-eventually-lose).
 
 ## Segments are nonempty
 
@@ -995,7 +995,7 @@ sequence of positions of the totalized fragment game. For all natural numbers $s
 segment of $\pi$ from index $s$ to index $s + k$, read as a list of model-checking game positions
 with $p_0$ standing for the absorbing states, is not the empty list.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragSegment_ne_nil`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1601](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1601). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-segment-ne-nil).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragSegment_ne_nil`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1601](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1601). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-segment-ne-nil).
 
 ## Last position of a segment
 
@@ -1007,7 +1007,7 @@ $(\varphi, w, [])$, with $\varphi$ embedded as a μ-calculus formula and the emp
 For all natural numbers $s$ and $k$, the segment $[\hat\pi_s, \dots, \hat\pi_{s+k}]$ has a last
 position, and it is $\hat\pi_{s+k}$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragSegment_playLast`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1609](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1609). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-segment-play-last).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragSegment_playLast`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1609](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1609). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-segment-play-last).
 
 ## Winning Verifier strategies transfer to the fragment game
 
@@ -1023,7 +1023,7 @@ reach the losing state, by the finite-play clause for $\sigma$ applied to the se
 first losing state, and it cannot stay among embedded positions forever, since fragment moves
 strictly decrease the formula.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragment_bespoke_to_canonical`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1626](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1626). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#fragment-bespoke-to-canonical).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragment_bespoke_to_canonical`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1626](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1626). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#fragment-bespoke-to-canonical).
 
 ## Moves of the totalized fragment game, by cases
 
@@ -1037,7 +1037,7 @@ Verifier in environment $e$; or $a = (\varphi, w)$, $b$ is the losing state, and
 has no moves and is not won by Verifier; or $a$ and $b$ are both the winning state; or $a$ and $b$
 are both the losing state.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragMove_cases`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1717](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1717). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-move-cases).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragMove_cases`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1717](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1717). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-move-cases).
 
 ## Verifier's positional strategies make a game move at Verifier positions that have one
 
@@ -1052,7 +1052,7 @@ $(\varphi', w')$ such that $\langle \varphi, w \rangle$ has a move to
 $\langle \varphi', w' \rangle$; in particular $\sigma$ does not move to the absorbing state
 $\mathrm{win}$ or $\mathrm{lose}$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.canonical_next_pos`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1738](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1738). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#canonical-next-pos).
+Formalized by `Cslib.Modal.MuCalculus.Game.canonical_next_pos`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1738](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1738). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#canonical-next-pos).
 
 ## The lose play
 
@@ -1061,7 +1061,7 @@ infinite sequence of positions of the fragment arena that is at the position $(\
 time $0$ and at the absorbing losing state at every later time. It is used for terminal losing
 positions $(\varphi, w)$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.losePlay`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1769](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1769). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#lose-play).
+Formalized by `Cslib.Modal.MuCalculus.Game.losePlay`, a definition declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1769](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1769). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#lose-play).
 
 ## The lose play starts at its fragment position
 
@@ -1069,7 +1069,7 @@ For a fixpoint-free formula $\varphi$
 and a world $w$, the lose play from $(\varphi, w)$ is at the fragment-arena position
 $(\varphi, w)$ at time $0$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.losePlay_zero`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1774](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1774). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#lose-play-zero).
+Formalized by `Cslib.Modal.MuCalculus.Game.losePlay_zero`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1774](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1774). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#lose-play-zero).
 
 ## The lose play stays at the losing state
 
@@ -1077,7 +1077,7 @@ For every fixpoint-free formula $\varphi$,
 world $w$ and natural number $n$, the lose play from $(\varphi, w)$ is at the losing state at
 time $n + 1$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.losePlay_succ`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1777](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1777). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#lose-play-succ).
+Formalized by `Cslib.Modal.MuCalculus.Game.losePlay_succ`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1777](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1777). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#lose-play-succ).
 
 ## Terminal losing positions are not won by the even player
 
@@ -1092,7 +1092,7 @@ region of the even player.
 The play that moves from $(\varphi, w)$ to the losing state and stays there conforms to every
 strategy of the even player and is won by the odd player.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragPos_not_mem_winningRegion_of_terminal_lose`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1783](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1783). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-pos-not-mem-winning-region-of-termi).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragPos_not_mem_winningRegion_of_terminal_lose`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1783](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1783). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#frag-pos-not-mem-winning-region-of-termi).
 
 ## The fragment game's winning region is contained in Wins
 
@@ -1106,7 +1106,7 @@ The proof is by induction on $\varphi$, using that the winning region is closed 
 opponent's moves and under the moves of a winning strategy, so no strategy composition is
 needed.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragment_canonical_to_wins`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1851](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1851). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#fragment-canonical-to-wins).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragment_canonical_to_wins`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1851](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1851). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#fragment-canonical-to-wins).
 
 ## Wins is the winning region of the fragment game
 
@@ -1116,7 +1116,7 @@ winning condition $\mathrm{Wins}_M(\varphi, w)$ holds if and only if the embedde
 $(\varphi, w)$ lies in the winning region of the even player in the fragment game of $M$ and
 $\rho$.
 
-Formalized by `Cslib.Modal.MuCalculus.Game.fragmentWins_iff_winningRegion`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1968](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1968). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#fragment-wins-iff-winning-region).
+Formalized by `Cslib.Modal.MuCalculus.Game.fragmentWins_iff_winningRegion`, a theorem declared in [CSLibExt/Logics/Modal/MuCalculusGame.lean, line 1968](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Modal/MuCalculusGame.lean#L1968). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html#fragment-wins-iff-winning-region).
 
 ## Depends on
 
@@ -1125,4 +1125,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Model-checking game for the modal μ-calculus](https://deicyde.github.io/atlas-lean/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Logic/modal-logic/model-checking-game-for-the-modal-calculus)

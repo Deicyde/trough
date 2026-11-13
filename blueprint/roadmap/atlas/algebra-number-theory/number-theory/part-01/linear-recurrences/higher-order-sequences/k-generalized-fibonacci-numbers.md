@@ -7,7 +7,7 @@ statement: formalized
 
 # k-generalized Fibonacci numbers
 
-75 results, 21 proved and 54 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html).
+75 results, 21 proved and 54 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html).
 
 ## Octanacci window
 
@@ -16,7 +16,7 @@ natural numbers with $w_0 = (1, 1, 2, 4, 8, 16, 32, 64)$ and, if $w_n = (a_1, \d
 $w_{n+1} = (a_2, \dots, a_8, a_1 + a_2 + \dots + a_8)$. The octanacci numbers $f_n$ are the first
 entries of these tuples, so $w_n = (f_n, f_{n+1}, \dots, f_{n+7})$.
 
-Formalized by `MetaMathlibExt.octanacciWindow`, a definition declared in [MathlibExt/Combinatorics/Enumerative/OctanacciNumber.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/OctanacciNumber.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#octanacci-window).
+Formalized by `MetaMathlibExt.octanacciWindow`, a definition declared in [MathlibExt/Combinatorics/Enumerative/OctanacciNumber.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/OctanacciNumber.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#octanacci-window).
 
 ## Octanacci numbers
 
@@ -26,7 +26,7 @@ $f_n = f_{n-1} + f_{n-2} + \dots + f_{n-8}$ for $n \ge 8$. It begins
 $1, 1, 2, 4, 8, 16, 32, 64, 128, 255, \dots$, and its generating function is
 $1/(1 - t - t^2 - \dots - t^8)$.
 
-Formalized by `MetaMathlibExt.octanacciNumber`, a definition declared in [MathlibExt/Combinatorics/Enumerative/OctanacciNumber.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/OctanacciNumber.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#octanacci-number).
+Formalized by `MetaMathlibExt.octanacciNumber`, a definition declared in [MathlibExt/Combinatorics/Enumerative/OctanacciNumber.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/OctanacciNumber.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#octanacci-number).
 
 ## N-step Fibonacci numbers
 
@@ -39,7 +39,7 @@ whose index $n - i$ is negative counts as $0$. In particular $F^{(0)}_n = 0$ for
 
 - Bowman, *Compositions with an Odd Number of Parts, and Other Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6, Section 4.4.
 
-Formalized by `MetaMathlibExt.nStepFibonacci`, a definition declared in [MathlibExt/NumberTheory/NStepFibonacciSequence.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NStepFibonacciSequence.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#n-step-fibonacci).
+Formalized by `MetaMathlibExt.nStepFibonacci`, a definition declared in [MathlibExt/NumberTheory/NStepFibonacciSequence.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NStepFibonacciSequence.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#n-step-fibonacci).
 
 ## Recurrence for the N-step Fibonacci numbers
 
@@ -51,7 +51,7 @@ $F^{(N)}_{n+2} = \sum_{i=0}^{N-1} F^{(N)}_{\max(n+1-i,\,0)}$.
 
 - Bowman, *Compositions with an Odd Number of Parts, and Other Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6, Section 4.4.
 
-Formalized by `MetaMathlibExt.nStepFibonacci_add_two`, a theorem declared in [MathlibExt/NumberTheory/NStepFibonacciSequence.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NStepFibonacciSequence.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#n-step-fibonacci-add-two).
+Formalized by `MetaMathlibExt.nStepFibonacci_add_two`, a theorem declared in [MathlibExt/NumberTheory/NStepFibonacciSequence.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NStepFibonacciSequence.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#n-step-fibonacci-add-two).
 
 ## Zeroth N-step Fibonacci number
 
@@ -62,7 +62,7 @@ number $F^{(N)}_0$ equals $0$.
 
 - Bowman, *Compositions with an Odd Number of Parts, and Other Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6, Section 4.4.
 
-Formalized by `MetaMathlibExt.nStepFibonacci_zero`, a theorem declared in [MathlibExt/NumberTheory/NStepFibonacciSequence.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NStepFibonacciSequence.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#n-step-fibonacci-zero).
+Formalized by `MetaMathlibExt.nStepFibonacci_zero`, a theorem declared in [MathlibExt/NumberTheory/NStepFibonacciSequence.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NStepFibonacciSequence.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#n-step-fibonacci-zero).
 
 ## First N-step Fibonacci number
 
@@ -73,7 +73,7 @@ number $F^{(N)}_1$ equals $1$.
 
 - Bowman, *Compositions with an Odd Number of Parts, and Other Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6, Section 4.4.
 
-Formalized by `MetaMathlibExt.nStepFibonacci_one`, a theorem declared in [MathlibExt/NumberTheory/NStepFibonacciSequence.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NStepFibonacciSequence.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#n-step-fibonacci-one).
+Formalized by `MetaMathlibExt.nStepFibonacci_one`, a theorem declared in [MathlibExt/NumberTheory/NStepFibonacciSequence.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NStepFibonacciSequence.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#n-step-fibonacci-one).
 
 ## The tribonacci number with index 5
 
@@ -85,7 +85,7 @@ The tribonacci numbers $F^{(3)}_0, \dots, F^{(3)}_5$ are $0, 1, 1, 2, 4, 7$.
 
 - Bowman, *Compositions with an Odd Number of Parts, and Other Congruences*, Journal of Integer Sequences 27 (2024), Article 24.3.6, Section 4.4.
 
-Formalized by `MetaMathlibExt.nStepFibonacci_three_five`, a theorem declared in [MathlibExt/NumberTheory/NStepFibonacciSequence.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NStepFibonacciSequence.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#n-step-fibonacci-three-five).
+Formalized by `MetaMathlibExt.nStepFibonacci_three_five`, a theorem declared in [MathlibExt/NumberTheory/NStepFibonacciSequence.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NStepFibonacciSequence.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#n-step-fibonacci-three-five).
 
 ## Bounds on the dominant root of the k-generalized Fibonacci polynomial
 
@@ -97,7 +97,7 @@ $2 - 1/k < \alpha < 2$, and if $k \ge 4$, moreover $2 - 1/(3k) < \alpha < 2$.
 
 - G. P. B. Dresden and Z. Du, *A Simplified Binet Formula for k-Generalized Fibonacci Numbers*, Journal of Integer Sequences 17 (2014), Article 14.4.7, Lemma `La`, line 350, <https://cs.uwaterloo.ca/journals/JIS/VOL17/Dresden/dresden6.tex>.
 
-Formalized by `MetaMathlibExt.dominant_root_bounds_k_generalized_fibonacci`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/DominantRootBounds.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/DominantRootBounds.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#dominant-root-bounds-k-generalized-fibon).
+Formalized by `MetaMathlibExt.dominant_root_bounds_k_generalized_fibonacci`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/DominantRootBounds.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/DominantRootBounds.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#dominant-root-bounds-k-generalized-fibon).
 
 ## Simplified Binet formula for k-generalized Fibonacci numbers from an initial window
 
@@ -115,7 +115,7 @@ invariant.
 
 - G. P. B. Dresden and Z. Du, *A Simplified Binet Formula for k-Generalized Fibonacci Numbers*, Journal of Integer Sequences 17 (2014), Article 14.4.7, Theorem T2, lines 209-218, <https://cs.uwaterloo.ca/journals/JIS/VOL17/Dresden/dresden6.tex>.
 
-Formalized by `MetaMathlibExt.dresden_du_simplified_binet_of_initial_window`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/DresdenDuSimplifiedBinet.lean, line 705](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/DresdenDuSimplifiedBinet.lean#L705). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#dresden-du-simplified-binet-of-initial-w).
+Formalized by `MetaMathlibExt.dresden_du_simplified_binet_of_initial_window`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/DresdenDuSimplifiedBinet.lean, line 705](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/DresdenDuSimplifiedBinet.lean#L705). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#dresden-du-simplified-binet-of-initial-w).
 
 ## Dresden–Du simplified Binet formula
 
@@ -131,7 +131,7 @@ $F(n) = \lfloor c\,\alpha^{n-1} + 1/2 \rfloor$.
 
 - G. P. B. Dresden and Z. Du, *A Simplified Binet Formula for k-Generalized Fibonacci Numbers*, Journal of Integer Sequences 17 (2014), Article 14.4.7, Theorem T2, lines 209-218, <https://cs.uwaterloo.ca/journals/JIS/VOL17/Dresden/dresden6.tex>.
 
-Formalized by `MetaMathlibExt.dresden_du_simplified_binet`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/DresdenDuSimplifiedBinet.lean, line 759](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/DresdenDuSimplifiedBinet.lean#L759). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#dresden-du-simplified-binet).
+Formalized by `MetaMathlibExt.dresden_du_simplified_binet`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/DresdenDuSimplifiedBinet.lean, line 759](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/DresdenDuSimplifiedBinet.lean#L759). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#dresden-du-simplified-binet).
 
 ## Power-weighted convolution of Fibonacci $m$-step numbers
 
@@ -152,7 +152,7 @@ $m \ge 3$; the cases $m = 1$ and $m = 2$ also hold, so the hypothesis here is $m
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci m-Step Numbers," Journal of Integer Sequences 27 (2024), Article 24.8.8, Theorem, lines 453–459, https://cs.uwaterloo.ca/journals/JIS/VOL27/Gryszka/gryszka12.tex
 
-Formalized by `MetaMathlibExt.two_pow_convolution_mstep_fibonacci`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/MStepFibonacciConvolution.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/MStepFibonacciConvolution.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-pow-convolution-mstep-fibonacci).
+Formalized by `MetaMathlibExt.two_pow_convolution_mstep_fibonacci`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/MStepFibonacciConvolution.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/MStepFibonacciConvolution.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-pow-convolution-mstep-fibonacci).
 
 ## Binet asymptotics for weighted generalized Fibonacci sequences, positive-root form
 
@@ -164,7 +164,7 @@ $p(x) = x^r - \sum_{j=1}^{r} A_j x^{r-j}$ be its characteristic polynomial. Let 
 be a root of $p$. Then there is a constant $C > 0$ such that $a_n = C \lambda^n + o(\lambda^n)$
 as $n \to \infty$, and $a_{n+1} / a_n \to \lambda$.
 
-Formalized by `MetaMathlibExt.binet_general`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/WeightedFibonacciBinet.lean, line 856](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/WeightedFibonacciBinet.lean#L856). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#binet-general).
+Formalized by `MetaMathlibExt.binet_general`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/WeightedFibonacciBinet.lean, line 856](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/WeightedFibonacciBinet.lean#L856). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#binet-general).
 
 ## Binet asymptotics for weighted generalized Fibonacci sequences
 
@@ -185,7 +185,7 @@ $c_j$ are the source's weights and initial values.
 
 - Passawan Noppakaew and Thanakorn Prinyasart, "Complete Sequences of Weighted r-Generalized Fibonacci Powers," Journal of Integer Sequences 24 (2021), Article 21.5.4, Proposition, lines 119–126, https://cs.uwaterloo.ca/journals/JIS/VOL24/Prinyasart/prin3.tex. It follows from `binet_general`; the hypotheses `hlam_simple` and `hlam_dom` are unused and keep the source's shape.
 
-Formalized by `MetaMathlibExt.binet`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/WeightedFibonacciBinet.lean, line 944](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/WeightedFibonacciBinet.lean#L944). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#binet).
+Formalized by `MetaMathlibExt.binet`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/WeightedFibonacciBinet.lean, line 944](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/WeightedFibonacciBinet.lean#L944). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#binet).
 
 ## Initial segments of the Fibonacci $m$-step sequence
 
@@ -194,7 +194,7 @@ this is the list of integers $[F_0, F_1, \dots, F_n]$, built recursively: the li
 is $[0]$, the list for $n = 1$ is $[0, 1]$, and for $n \ge 2$ the list for $n$ is the list for
 $n - 1$ followed by $F_n = \sum_{j=1}^{m} F_{n-j}$, where $F_i = 0$ for $i < 0$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStepSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step-seq).
+Formalized by `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStepSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step-seq).
 
 ## Fibonacci $m$-step numbers
 
@@ -202,14 +202,14 @@ For natural numbers $m$ and $n$, the integer $F^{(m)}_n$ is
 defined by $F^{(m)}_0 = 0$, $F^{(m)}_1 = 1$ and $F^{(m)}_n = \sum_{j=1}^{m} F^{(m)}_{n-j}$ for
 $n \ge 2$, where $F^{(m)}_i = 0$ for $i < 0$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStep`, a definition declared in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step).
+Formalized by `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStep`, a definition declared in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step).
 
 ## Jacobsthal numbers
 
 The Jacobsthal numbers are the integers $J_n$ defined by $J_0 = 0$,
 $J_1 = 1$ and $J_{n+2} = J_{n+1} + 2 J_n$ for all $n \ge 0$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.jacobsthalSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#jacobsthal-seq).
+Formalized by `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.jacobsthalSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#jacobsthal-seq).
 
 ## Generating function of the Fibonacci $m$-step numbers
 
@@ -217,7 +217,7 @@ For a natural number $m$,
 $F^{(m)}(X)$ is the formal power series $\sum_{n \ge 0} F^{(m)}_n X^n$ with rational
 coefficients, where $F^{(m)}_n$ is the $n$-th Fibonacci $m$-step number.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStepGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step-gf).
+Formalized by `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStepGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step-gf).
 
 ## Sums over compositions
 
@@ -226,7 +226,7 @@ number $n$, the sum over the compositions $K(r, n)$ of $n$ into $r$ nonnegative 
 sum, over all $(k_0, \dots, k_{r-1}) \in \mathbb{N}^r$ with $k_0 + \dots + k_{r-1} = n$, of
 $\prod_{i=0}^{r-1} a_i(k_i)$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum).
+Formalized by `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum).
 
 ## Truncated convolution of the $m$-step and $(m+1)$-step Fibonacci numbers
 
@@ -241,7 +241,7 @@ $$\sum_{j=0}^{n-m} F^{(m)}_j F^{(m+1)}_{n-m-j} = F^{(m+1)}_n - F^{(m)}_n.$$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 1.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fibStep_mul_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-step-mul-succ).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fibStep_mul_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-step-mul-succ).
 
 ## Convolution of the Fibonacci and tribonacci numbers
 
@@ -256,7 +256,7 @@ $$\sum_{j=0}^{n} F_j T_{n-j} = T_{n+2} - F_{n+2}.$$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 2.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fib_mul_trib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-mul-trib).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fib_mul_trib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-mul-trib).
 
 ## Convolution of the Fibonacci 3-step and 4-step numbers
 
@@ -271,7 +271,7 @@ $$\sum_{j=0}^{n} T_j \, Q_{n-j} = Q_{n+3} - T_{n+3}.$$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 2.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_trib_mul_tetra` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-trib-mul-tetra).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_trib_mul_tetra` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-trib-mul-tetra).
 
 ## Convolution of the Fibonacci 4-step and 5-step numbers
 
@@ -286,7 +286,7 @@ $$\sum_{j=0}^{n} Q_j \, P_{n-j} = P_{n+4} - Q_{n+4}.$$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 2.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_tetra_mul_penta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-tetra-mul-penta).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_tetra_mul_penta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-tetra-mul-penta).
 
 ## Iterated convolution of Fibonacci $m$-step and $(m+p)$-step numbers
 
@@ -304,7 +304,7 @@ where an inner sum whose upper limit $n - m - k$ is negative counts as $0$.
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 3.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_sum_fibStep_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-sum-fib-step-mul).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_sum_fibStep_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-sum-fib-step-mul).
 
 ## Convolution of the $m$-step Fibonacci numbers with consecutive sums of the $(m+2)$-step ones
 
@@ -320,7 +320,7 @@ F^{(m+2)}_n - F^{(m)}_n.$$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 4.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fibStep_mul_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-step-mul-add).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fibStep_mul_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-step-mul-add).
 
 ## Double partial sums of Fibonacci step numbers
 
@@ -335,7 +335,7 @@ where an inner sum whose upper limit is $-1$ is empty.
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 7.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStep_sub_one_eq_sum_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step-sub-one-eq-sum-sum).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStep_sub_one_eq_sum_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step-sub-one-eq-sum-sum).
 
 ## Partial sums of the Fibonacci $m$-step numbers
 
@@ -353,7 +353,7 @@ it gives $2/3$ instead of $1$.
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 8.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.mul_sum_fibStep` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#mul-sum-fib-step).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.mul_sum_fibStep` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#mul-sum-fib-step).
 
 ## Convolution of the Fibonacci and tetranacci numbers
 
@@ -370,7 +370,7 @@ where for $n = 0$ the term $Q_{n-1}$ is $Q_0 = 0$.
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollaries 9 and 16.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fib_mul_tetra` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-mul-tetra).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fib_mul_tetra` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-mul-tetra).
 
 ## Convolution of the Fibonacci and pentanacci numbers
 
@@ -386,7 +386,7 @@ The source prints this identity with a factor $1/2$; it is stated here multiplie
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 9.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_sum_fib_mul_penta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-sum-fib-mul-penta).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_sum_fib_mul_penta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-sum-fib-mul-penta).
 
 ## Convolution of the pentanacci and tribonacci numbers
 
@@ -402,7 +402,7 @@ The source prints this identity with a factor $1/2$; it is stated here multiplie
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 9.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_sum_penta_mul_trib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-sum-penta-mul-trib).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_sum_penta_mul_trib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-sum-penta-mul-trib).
 
 ## Exchange identity for convolutions of $(m-2)$-, $(m-1)$- and $m$-step Fibonacci numbers
 
@@ -417,7 +417,7 @@ $$\sum_{j=0}^{n} F^{(m-2)}_j \bigl(F^{(m)}_{n-j} - F^{(m-1)}_{n-j}\bigr) =
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 10.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fibStep_sub_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-step-sub-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fibStep_sub_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-step-sub-eq).
 
 ## Difference of the Fibonacci 3-step and 2-step numbers as a convolution
 
@@ -432,7 +432,7 @@ $$T_{n+1} - F_{n+1} = \sum_{j=0}^{n-1} T_j \, F_{n-1-j}.$$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 11.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.trib_sub_fib_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#trib-sub-fib-eq-sum).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.trib_sub_fib_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#trib-sub-fib-eq-sum).
 
 ## Convolution of the Fibonacci numbers with tribonacci minus tetranacci
 
@@ -448,7 +448,7 @@ $$\sum_{j=0}^{n} F_j (T_{n-j} - Q_{n-j}) = \sum_{j=0}^{n-1} (F_j - T_j) Q_{n-1-j
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 11.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fib_mul_sub_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-mul-sub-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fib_mul_sub_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-mul-sub-eq).
 
 ## Convolution of the Fibonacci 3-step numbers with differences of 4- and 5-step numbers
 
@@ -463,7 +463,7 @@ $$\sum_{j=0}^{n} T_j \bigl(Q_{n-j} - P_{n-j}\bigr) =
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 11.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_trib_mul_sub_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-trib-mul-sub-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_trib_mul_sub_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-trib-mul-sub-eq).
 
 ## Convolution of the $(m-1)$-step and $m$-step Fibonacci numbers against powers of two
 
@@ -478,7 +478,7 @@ $$\sum_{j=0}^{n} F^{(m-1)}_j F^{(m)}_{n-j} =
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 12.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fibStep_pred_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-step-pred-mul).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fibStep_pred_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-step-pred-mul).
 
 ## Convolution of the Fibonacci 3-step and 4-step numbers as a sum weighted by powers of 2
 
@@ -496,7 +496,7 @@ the left side is $0$ and the right side is $1$.
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 13.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_trib_mul_tetra_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-trib-mul-tetra-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_trib_mul_tetra_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-trib-mul-tetra-eq).
 
 ## Alternating sum of differences of $2m$-step and $(2m-2)$-step Fibonacci numbers
 
@@ -512,7 +512,7 @@ $$\sum_{j=0}^{n-1} (-1)^j \bigl(F^{(2m)}_j - F^{(2m-2)}_j\bigr) =
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 15.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_neg_one_pow_sub_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-neg-one-pow-sub-even).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_neg_one_pow_sub_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-neg-one-pow-sub-even).
 
 ## Alternating sums of differences of odd-order Fibonacci step numbers
 
@@ -528,7 +528,7 @@ $$\sum_{j=0}^{n-1} (-1)^{j+1} \bigl(F^{(2m+1)}_j - F^{(2m-1)}_j\bigr) =
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 17.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_neg_one_pow_sub_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-neg-one-pow-sub-odd).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_neg_one_pow_sub_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-neg-one-pow-sub-odd).
 
 ## Alternating sum of the tribonacci numbers
 
@@ -543,7 +543,7 @@ The source prints this identity with a factor $1/2$; it is stated here multiplie
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 18.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_sum_neg_one_pow_trib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-sum-neg-one-pow-trib).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_sum_neg_one_pow_trib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-sum-neg-one-pow-trib).
 
 ## Convolution of the pentanacci and tribonacci numbers, second closed form
 
@@ -559,7 +559,7 @@ The source prints this identity with a factor $1/2$; it is stated here multiplie
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 18.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_sum_penta_mul_trib'` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-sum-penta-mul-trib-2).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_sum_penta_mul_trib'` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-sum-penta-mul-trib-2).
 
 ## Convolution of the $m$-step and $(m-2)$-step Fibonacci numbers via Jacobsthal numbers
 
@@ -575,7 +575,7 @@ J_{n-1} + \sum_{j=0}^{n-2} J_j \bigl(F^{(m-2)}_{n-j} - F^{(m)}_{n-2-j}\bigr).$$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 19.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fibStep_mul_sub_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-step-mul-sub-two).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fibStep_mul_sub_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-step-mul-sub-two).
 
 ## Convolution of the Jacobsthal and tribonacci numbers
 
@@ -591,7 +591,7 @@ here multiplied by $2$.
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 20.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_sum_jacobsthal_mul_trib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-sum-jacobsthal-mul-trib).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_sum_jacobsthal_mul_trib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-sum-jacobsthal-mul-trib).
 
 ## Triple convolution of Pell numbers with two consecutive Fibonacci step sequences
 
@@ -611,7 +611,7 @@ $$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 21.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_pell_fibStep` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-pell-fib-step).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_pell_fibStep` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-pell-fib-step).
 
 ## Convolution of the Pell numbers with the Fibonacci numbers
 
@@ -627,7 +627,7 @@ $$\sum_{j=0}^{n} \mathcal{P}_j \, F_{n-j} = \mathcal{P}_n - F_n.$$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 22.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_pell_mul_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 407](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-pell-mul-fib).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_pell_mul_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 407](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-pell-mul-fib).
 
 ## Pell–Fibonacci–tribonacci triple sum via a Pell–tribonacci convolution
 
@@ -644,7 +644,7 @@ $$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 23.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_pell_fib_trib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-pell-fib-trib).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_pell_fib_trib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-pell-fib-trib).
 
 ## Closed form for the Pell–Fibonacci–tribonacci triple convolution
 
@@ -661,7 +661,7 @@ The source prints this identity with a factor $1/2$; it is stated here multiplie
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 23.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_compProdSum_pell_fib_trib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-comp-prod-sum-pell-fib-trib).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_compProdSum_pell_fib_trib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-comp-prod-sum-pell-fib-trib).
 
 ## A product identity for Fibonacci step generating functions of orders $m$, $m+p$, $m+p+q$
 
@@ -677,7 +677,7 @@ X^m (1-X)(1-X^p) F^{(m)} F^{(m+p+q)} - (1-X)^2 \left(F^{(m+p)} - F^{(m)}\right).
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 24.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStepGF_triple_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 451](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L451). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step-gf-triple-identity).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStepGF_triple_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 451](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L451). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step-gf-triple-identity).
 
 ## A product identity for three consecutive Fibonacci step generating functions
 
@@ -692,7 +692,7 @@ $$X^{2m+1} F^{(m)} F^{(m+1)} F^{(m+2)} = X^m F^{(m)} F^{(m+2)} - F^{(m+1)} + F^{
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 24.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStepGF_triple_consecutive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step-gf-triple-consecutive).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStepGF_triple_consecutive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step-gf-triple-consecutive).
 
 ## Generating-function form of the triple convolution with two consecutive step sequences
 
@@ -709,7 +709,7 @@ $$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 25.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStepGF_mixed_triple` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 483](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L483). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step-gf-mixed-triple).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStepGF_mixed_triple` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 483](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L483). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step-gf-mixed-triple).
 
 ## Triple convolution of two consecutive Fibonacci step sequences with a third
 
@@ -727,7 +727,7 @@ $$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 25.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_fibStep_triple` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 497](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L497). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-fib-step-triple).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_fibStep_triple` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 497](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L497). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-fib-step-triple).
 
 ## Closed form of the Fibonacci–tribonacci–tetranacci triple sum
 
@@ -743,7 +743,7 @@ $$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 26.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_fib_trib_tetra` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-fib-trib-tetra).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_fib_trib_tetra` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-fib-trib-tetra).
 
 ## Triple convolution of the tribonacci, tetranacci and pentanacci numbers
 
@@ -759,7 +759,7 @@ The source prints this identity with a factor $1/2$; it is stated here multiplie
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 27.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_compProdSum_trib_tetra_penta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 526](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L526). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-comp-prod-sum-trib-tetra-penta).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_compProdSum_trib_tetra_penta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 526](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L526). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-comp-prod-sum-trib-tetra-penta).
 
 ## Triple convolution of the Fibonacci 2-, 4- and 5-step numbers
 
@@ -780,7 +780,7 @@ The paper prints this identity with a factor $\tfrac{1}{2}$ on part of the right
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 28.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_compProdSum_fib_tetra_penta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 541](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L541). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-comp-prod-sum-fib-tetra-penta).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_compProdSum_fib_tetra_penta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 541](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L541). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-comp-prod-sum-fib-tetra-penta).
 
 ## Triple convolution of the Fibonacci 2-, 3- and 5-step numbers
 
@@ -801,7 +801,7 @@ The paper prints this identity with a factor $\tfrac{1}{2}$.
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 29.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_compProdSum_fib_trib_penta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 557](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L557). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-comp-prod-sum-fib-trib-penta).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_compProdSum_fib_trib_penta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 557](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L557). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-comp-prod-sum-fib-trib-penta).
 
 ## A product identity for four consecutive Fibonacci step generating functions
 
@@ -817,7 +817,7 @@ X^m F^{(m)} F^{(m+2)} F^{(m+3)} - F^{(m+1)} F^{(m+3)} + F^{(m)} F^{(m+3)}.$$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 31.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStepGF_quadruple_consecutive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 572](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step-gf-quadruple-consecutive).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStepGF_quadruple_consecutive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 572](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-step-gf-quadruple-consecutive).
 
 ## Four-fold convolution of the Fibonacci, tribonacci, tetranacci and pentanacci numbers
 
@@ -833,7 +833,7 @@ The source prints this identity with a factor $1/2$; it is stated here multiplie
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 32.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_compProdSum_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 589](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L589). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-comp-prod-sum-four).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_compProdSum_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 589](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L589). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#two-mul-comp-prod-sum-four).
 
 ## Convolution of four consecutive Fibonacci step sequences
 
@@ -854,7 +854,7 @@ here.
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 34.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_four_consecutive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 605](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L605). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-four-consecutive).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_four_consecutive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 605](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L605). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-four-consecutive).
 
 ## Convolution of an even number of consecutive Fibonacci step sequences
 
@@ -872,7 +872,7 @@ $$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 35.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 621](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L621). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-even).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 621](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L621). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-even).
 
 ## Convolution of an odd number of consecutive Fibonacci step sequences
 
@@ -891,7 +891,7 @@ $$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 35.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 637](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L637). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-odd).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 637](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L637). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-odd).
 
 ## Two convolution forms of the Fibonacci–tribonacci–tetranacci triple sum
 
@@ -909,7 +909,7 @@ $$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Corollary 36.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_fib_trib_tetra_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-fib-trib-tetra-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_fib_trib_tetra_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#comp-prod-sum-fib-trib-tetra-eq).
 
 ## Sum of $2m + 2$ consecutive Fibonacci $m$-step numbers
 
@@ -924,7 +924,7 @@ $$\sum_{k=0}^{2m+1} F^{(m)}_{n+k} = 4 F^{(m)}_{n+2m}.$$
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Lemma 39.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fibStep_window` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 671](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L671). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-step-window).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fibStep_window` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 671](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L671). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#sum-fib-step-window).
 
 ## Convolution of the Fibonacci $6$-step numbers with the Fibonacci numbers
 
@@ -941,7 +941,7 @@ The source prints this identity divided by $5$.
 
 - Robert Frontczak and Karol Gryszka, "General Convolution Sums Involving Fibonacci `m`-Step Numbers", Theorem 41.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.five_mul_sum_fibStep6_mul_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 683](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L683). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#five-mul-sum-fib-step6-mul-fib).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.five_mul_sum_fibStep6_mul_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean, line 683](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FibStepConvolutionWanted.lean#L683). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#five-mul-sum-fib-step6-mul-fib).
 
 ## Truncated binomial sum $G_n^{(k)}$
 
@@ -963,7 +963,7 @@ The paper defines $G_n^{(k)}$ only for $n, k \ge 2$.
 
 - Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, definition before Proposition 10.
 
-Formalized by `MetaMathlibExt.kFibonacciBinomialTruncation`, a definition declared in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-binomial-truncation).
+Formalized by `MetaMathlibExt.kFibonacciBinomialTruncation`, a definition declared in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-binomial-truncation).
 
 ## Value $G_2^{(2)} = 1$
 
@@ -975,7 +975,7 @@ This is the Fibonacci number $F_2$.
 
 - Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, definition before Proposition 10.
 
-Formalized by `MetaMathlibExt.kFibonacciBinomialTruncation_two_two`, a theorem declared in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-binomial-truncation-two-two).
+Formalized by `MetaMathlibExt.kFibonacciBinomialTruncation_two_two`, a theorem declared in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-binomial-truncation-two-two).
 
 ## Value $G_4^{(2)} = 3$
 
@@ -988,7 +988,7 @@ $G_n^{(2)}$ has two terms.
 
 - Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, definition before Proposition 10.
 
-Formalized by `MetaMathlibExt.kFibonacciBinomialTruncation_two_four`, a theorem declared in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-binomial-truncation-two-four).
+Formalized by `MetaMathlibExt.kFibonacciBinomialTruncation_two_four`, a theorem declared in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-binomial-truncation-two-four).
 
 ## Lagrange inversion formula
 
@@ -1003,7 +1003,7 @@ converges absolutely to $g(w) - g(z_0)$.
 
 - Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, Theorem 1 (`jis-2024-24.1.1-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.lagrange_inversion_formula_analytic` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#lagrange-inversion-formula-analytic).
+Stated but not proved: `MetaMathlibExt.lagrange_inversion_formula_analytic` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#lagrange-inversion-formula-analytic).
 
 ## Binomial series for the powers of the dominant $k$-Fibonacci root
 
@@ -1019,7 +1019,7 @@ For $n = 1$ this is the paper's series for $\rho_k$ itself.
 
 - Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, Theorem 3 (`jis-2024-24.1.1-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.kFibonacci_root_pow_eq_binomial_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-root-pow-eq-binomial-series).
+Stated but not proved: `MetaMathlibExt.kFibonacci_root_pow_eq_binomial_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-root-pow-eq-binomial-series).
 
 ## Binomial series for the powers of the golden ratio
 
@@ -1035,7 +1035,7 @@ absolutely to $2 - \varphi$.
 
 - Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, Corollary 5 (`jis-2024-24.1.1-cor-5`).
 
-Stated but not proved: `MetaMathlibExt.goldenRatio_pow_eq_binomial_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#golden-ratio-pow-eq-binomial-series).
+Stated but not proved: `MetaMathlibExt.goldenRatio_pow_eq_binomial_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#golden-ratio-pow-eq-binomial-series).
 
 ## Binomial series summed at the $k$-Fibonacci root
 
@@ -1053,7 +1053,7 @@ $$
 
 - Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, Theorem 6 (`jis-2024-24.1.1-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.hasSum_choose_div_two_pow_kFibonacci_root` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#has-sum-choose-div-two-pow-k-fibonacci-r).
+Stated but not proved: `MetaMathlibExt.hasSum_choose_div_two_pow_kFibonacci_root` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#has-sum-choose-div-two-pow-k-fibonacci-r).
 
 ## Difference binomial series at the $k$-Fibonacci root
 
@@ -1073,7 +1073,7 @@ where the term $\binom{(k+1)\ell - n}{\ell - 1}$ is taken to be $0$ for $\ell = 
 
 - Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, Theorem 8 (`jis-2024-24.1.1-thm-8`), with `As_n^{(k)}` from equation (8).
 
-Stated but not proved: `MetaMathlibExt.hasSum_binomial_series_kFibonacci_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#has-sum-binomial-series-k-fibonacci-asym).
+Stated but not proved: `MetaMathlibExt.hasSum_binomial_series_kFibonacci_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#has-sum-binomial-series-k-fibonacci-asym).
 
 ## $k$-Fibonacci numbers as truncated binomial sums
 
@@ -1090,7 +1090,7 @@ $n \ge 2$.
 
 - Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, Theorem 9 (`jis-2024-24.1.1-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.kFibonacci_eq_kFibonacciBinomialTruncation` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-eq-k-fibonacci-binomial-trun).
+Stated but not proved: `MetaMathlibExt.kFibonacci_eq_kFibonacciBinomialTruncation` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-eq-k-fibonacci-binomial-trun).
 
 ## Initial values of the truncated binomial sums
 
@@ -1102,7 +1102,7 @@ with $2 \le n \le k + 1$, and $G_{k+2}^{(k)} = 2^k - 1$.
 
 - Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, Proposition 10 (`jis-2024-24.1.1-prop-10`).
 
-Stated but not proved: `MetaMathlibExt.kFibonacciBinomialTruncation_initial_values` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-binomial-truncation-initial).
+Stated but not proved: `MetaMathlibExt.kFibonacciBinomialTruncation_initial_values` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-binomial-truncation-initial).
 
 ## Recurrence for the truncated binomial sums
 
@@ -1114,7 +1114,7 @@ $G_{n+k+1}^{(k)} = 2 G_{n+k}^{(k)} - G_n^{(k)}$.
 
 - Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, Proposition 11 (`jis-2024-24.1.1-prop-11`).
 
-Stated but not proved: `MetaMathlibExt.kFibonacciBinomialTruncation_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-binomial-truncation-recurren).
+Stated but not proved: `MetaMathlibExt.kFibonacciBinomialTruncation_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-binomial-truncation-recurren).
 
 ## Binomial-sum formula for the $k$-Fibonacci numbers
 
@@ -1131,7 +1131,7 @@ $$F_n = 2^{n-k} \sum_{\ell=0}^{\lfloor (n-k+1)/(k+1) \rfloor} \left(\binom{(k+1)
 
 - Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, Corollary 12 (`jis-2024-24.1.1-cor-12`).
 
-Stated but not proved: `MetaMathlibExt.kFibonacci_eq_binomial_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-eq-binomial-sum).
+Stated but not proved: `MetaMathlibExt.kFibonacci_eq_binomial_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-eq-binomial-sum).
 
 ## Fibonacci numbers as a truncated binomial sum
 
@@ -1150,7 +1150,7 @@ where the term $\binom{3\ell - n}{\ell - 1}$ is taken to be $0$ for $\ell = 0$.
 
 - Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, Corollary 13 (`jis-2024-24.1.1-cor-13`).
 
-Stated but not proved: `MetaMathlibExt.fib_eq_binomial_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-eq-binomial-sum).
+Stated but not proved: `MetaMathlibExt.fib_eq_binomial_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#fib-eq-binomial-sum).
 
 ## Alternating binomial formula for the $k$-Fibonacci numbers
 
@@ -1175,7 +1175,7 @@ $2^{k-1}$.
 
 - Bakir Farhi, *Some Applications of the Lagrange Inversion Formula for the k-Fibonacci Numbers*, Journal of Integer Sequences 27 (2024), Article 24.1.1, Corollary 14 (`jis-2024-24.1.1-cor-14`).
 
-Stated but not proved: `MetaMathlibExt.kFibonacci_eq_alternating_binomial_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-eq-alternating-binomial-sum).
+Stated but not proved: `MetaMathlibExt.kFibonacci_eq_alternating_binomial_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFibonacciLagrangeInversionWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html#k-fibonacci-eq-alternating-binomial-sum).
 
 ## Depends on
 
@@ -1184,4 +1184,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: k-generalized Fibonacci numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/k-generalized-fibonacci-numbers)

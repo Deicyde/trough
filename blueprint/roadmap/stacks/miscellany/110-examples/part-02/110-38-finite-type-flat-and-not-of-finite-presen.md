@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.38 Finite type, flat and not of finite presentation
 
-Section 110.38 of the Stacks Project, [Tag 05LB](https://stacks.math.columbia.edu/tag/05LB). 1 tag here is carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.38 of the Stacks Project, [Tag 05LB](https://stacks.math.columbia.edu/tag/05LB). 1 tag here is carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05LC, a lemma
 
 [Tag 05LC](https://stacks.math.columbia.edu/tag/05LC) in the Stacks Project.
 
-**`Stacks.Examples.exists_flat_finiteType_not_finitePresentation_of_curve_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Flatness/AffineCurveNotFinitePresentation.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Flatness/AffineCurveNotFinitePresentation.lean#L226). The attribute's comment: “(2)”.
+**`Stacks.Examples.exists_flat_finiteType_not_finitePresentation_of_curve_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Flatness/AffineCurveNotFinitePresentation.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Flatness/AffineCurveNotFinitePresentation.lean#L226). The attribute's comment: “(2)”.
 
 > A flat algebra of finite type with geometrically
 > connected and geometrically reduced one-dimensional complete-intersection fibres need not be
@@ -32,7 +32,7 @@ theorem exists_flat_finiteType_not_finitePresentation_of_curve_fibers :
           IsGlobalCompleteIntersection p.ResidueField (p.Fiber A))
 ```
 
-**`Stacks.Examples.exists_proper_flat_not_finitePresentation_with_nodal_or_line_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Flatness/ProjFamilyNotFinitePresentation.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Flatness/ProjFamilyNotFinitePresentation.lean#L338). The attribute's comment: “(3)”.
+**`Stacks.Examples.exists_proper_flat_not_finitePresentation_with_nodal_or_line_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Flatness/ProjFamilyNotFinitePresentation.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Flatness/ProjFamilyNotFinitePresentation.lean#L338). The attribute's comment: “(3)”.
 
 > There is a proper flat morphism of schemes, not locally of finite presentation, each of whose
 > fibres is either a projective line or the vanishing locus of `X₁X₂` in the projective plane over
@@ -53,7 +53,7 @@ theorem exists_proper_flat_not_finitePresentation_with_nodal_or_line_fibers :
               (Spec.map (CommRingCat.ofHom (algebraMap R p.ResidueField))))
 ```
 
-**`Stacks.Examples.exists_proper_flat_not_finitePresentation_with_projectiveSpace_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Flatness/ProjFamilyNotFinitePresentation.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Flatness/ProjFamilyNotFinitePresentation.lean#L370). The attribute's comment: “(4)”.
+**`Stacks.Examples.exists_proper_flat_not_finitePresentation_with_projectiveSpace_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Flatness/ProjFamilyNotFinitePresentation.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Flatness/ProjFamilyNotFinitePresentation.lean#L370). The attribute's comment: “(4)”.
 
 > There is a proper flat morphism of schemes, not locally of finite presentation, each of whose
 > fibres is either a projective line or a projective plane over the residue field of its point.
@@ -75,7 +75,7 @@ theorem exists_proper_flat_not_finitePresentation_with_projectiveSpace_fibers :
               f (Spec.map (CommRingCat.ofHom (algebraMap R p.ResidueField))))
 ```
 
-**`Stacks.Examples.exists_flat_finiteType_not_finitePresentation_with_completeIntersection_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Flatness/SquareZeroNotFinitePresentation.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Flatness/SquareZeroNotFinitePresentation.lean#L219). The attribute's comment: “(1)”.
+**`Stacks.Examples.exists_flat_finiteType_not_finitePresentation_with_completeIntersection_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Flatness/SquareZeroNotFinitePresentation.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Flatness/SquareZeroNotFinitePresentation.lean#L219). The attribute's comment: “(1)”.
 
 > A flat ring map of finite type can have geometrically irreducible complete-intersection
 > fibres without being of finite presentation.
@@ -101,4 +101,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.38, Tag 05LB](https://stacks.math.columbia.edu/tag/05LB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

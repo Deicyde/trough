@@ -8,13 +8,13 @@ proof: formalized
 
 # 109.4 The stack of polarized curves
 
-Section 109.4 of the Stacks Project, [Tag 0DPY](https://stacks.math.columbia.edu/tag/0DPY). 4 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 109.4 of the Stacks Project, [Tag 0DPY](https://stacks.math.columbia.edu/tag/0DPY). 4 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DPY, the section
 
 [Tag 0DPY](https://stacks.math.columbia.edu/tag/0DPY) in the Stacks Project.
 
-**`AlgebraicGeometry.polarizedCurvesSquareUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean#L47). The attribute's comment: “the 2-fibre product square defining PolarizedCurves”.
+**`AlgebraicGeometry.polarizedCurvesSquareUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean#L47). The attribute's comment: “the 2-fibre product square defining PolarizedCurves”.
 
 > The 2-fibre product square defining the stack of polarized curves: the cospan is the
 > forgetful 1-morphism `𝒫olarized ⟶ 𝒮paces'_{fp, flat, proper}` of Stacks 0D3Y and the inclusion
@@ -29,7 +29,7 @@ def polarizedCurvesSquareUnconditional :
       (curvesToCartesianProperFlatHom B hZ)
 ```
 
-**`AlgebraicGeometry.polarizedCurves`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean#L58). The attribute's comment: “PolarizedCurves, the apex of the 2-fibre product”.
+**`AlgebraicGeometry.polarizedCurves`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean#L58). The attribute's comment: “PolarizedCurves, the apex of the 2-fibre product”.
 
 > *PolarizedCurves* `= 𝒞urves ×_{𝒮paces'_{fp, flat, proper}} 𝒫olarized`, the stack of
 > families of curves endowed with a relatively ample invertible module, as a category fibred in
@@ -40,7 +40,7 @@ def polarizedCurves :
     CatFiberedInGroupoids.{u, u + 1, u + 1, u + 1} (BigFppfOver B integerBase hZ)
 ```
 
-**`AlgebraicGeometry.polarizedCurvesToPolarizedStack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean#L64). The attribute's comment: “the projection to Polarized”.
+**`AlgebraicGeometry.polarizedCurvesToPolarizedStack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean#L64). The attribute's comment: “the projection to Polarized”.
 
 > The projection `PolarizedCurves ⟶ 𝒫olarized`.
 
@@ -51,7 +51,7 @@ def polarizedCurvesToPolarizedStack :
         (polarizedProjection_comp_schemeOverIntegers_isFiberedInGroupoids B)
 ```
 
-**`AlgebraicGeometry.polarizedCurvesToCurves`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean#L72). The attribute's comment: “the projection to Curves”.
+**`AlgebraicGeometry.polarizedCurvesToCurves`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean#L72). The attribute's comment: “the projection to Curves”.
 
 > The projection `PolarizedCurves ⟶ 𝒞urves`, forgetting the polarization.
 
@@ -59,7 +59,7 @@ def polarizedCurvesToPolarizedStack :
 def polarizedCurvesToCurves : polarizedCurves B hZ ⟶ curvesFiberedCategory B hZ
 ```
 
-**`AlgebraicGeometry.isTwoFibreProduct_polarizedCurvesSquareUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean#L78). The attribute's comment: “the square is a 2-fibre product”.
+**`AlgebraicGeometry.isTwoFibreProduct_polarizedCurvesSquareUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesStack.lean#L78). The attribute's comment: “the square is a 2-fibre product”.
 
 > The square of `AlgebraicGeometry.polarizedCurvesSquareUnconditional` is a 2-fibre product,
 > being the canonical one.
@@ -73,7 +73,7 @@ def isTwoFibreProduct_polarizedCurvesSquareUnconditional :
 
 [Tag 0DPZ](https://stacks.math.columbia.edu/tag/0DPZ) in the Stacks Project.
 
-**`AlgebraicGeometry.isRepresentableByAlgebraicSpaces_polarizedCurvesToPolarized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurves.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurves.lean#L195). The attribute's comment: “representability by algebraic spaces, given Stacks 0D3Z”.
+**`AlgebraicGeometry.isRepresentableByAlgebraicSpaces_polarizedCurvesToPolarized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurves.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurves.lean#L195). The attribute's comment: “representability by algebraic spaces, given Stacks 0D3Z”.
 
 > **Stacks 0DPZ.** The projection `PolarizedCurves ⟶ 𝒫olarized` is representable by algebraic
 > spaces, being the base change of the inclusion of Stacks 0D50, which is representable by
@@ -86,7 +86,7 @@ theorem isRepresentableByAlgebraicSpaces_polarizedCurvesToPolarized
       (polarizedCurvesToPolarized B hZ h3Z).hom
 ```
 
-**`AlgebraicGeometry.isOpenImmersion_polarizedCurvesToPolarized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurves.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurves.lean#L209). The attribute's comment: “open immersion, given Stacks 0D3Z”.
+**`AlgebraicGeometry.isOpenImmersion_polarizedCurvesToPolarized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurves.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurves.lean#L209). The attribute's comment: “open immersion, given Stacks 0D3Z”.
 
 > **Stacks 0DPZ.** The projection `PolarizedCurves ⟶ 𝒫olarized` is an open immersion, being
 > the base change of the inclusion of Stacks 0D50, which is an open immersion by Stacks 0D5B.
@@ -97,7 +97,7 @@ theorem isOpenImmersion_polarizedCurvesToPolarized
     Stack.IsOpenImmersion B integerBase hZ (polarizedCurvesToPolarized B hZ h3Z)
 ```
 
-**`AlgebraicGeometry.isClosedImmersion_polarizedCurvesToPolarized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurves.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurves.lean#L222). The attribute's comment: “closed immersion, given Stacks 0D3Z”.
+**`AlgebraicGeometry.isClosedImmersion_polarizedCurvesToPolarized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurves.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurves.lean#L222). The attribute's comment: “closed immersion, given Stacks 0D3Z”.
 
 > **Stacks 0DPZ.** The projection `PolarizedCurves ⟶ 𝒫olarized` is a closed immersion, being
 > the base change of the inclusion of Stacks 0D50, which is a closed immersion by Stacks 0D5B.
@@ -108,7 +108,7 @@ theorem isClosedImmersion_polarizedCurvesToPolarized
     Stack.IsClosedImmersion B integerBase hZ (polarizedCurvesToPolarized B hZ h3Z)
 ```
 
-**`AlgebraicGeometry.isRepresentableByAlgebraicSpaces_polarizedCurvesToPolarizedUnconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditional.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditional.lean#L264). The attribute's comment: “representability by algebraic spaces”.
+**`AlgebraicGeometry.isRepresentableByAlgebraicSpaces_polarizedCurvesToPolarizedUnconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditional.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditional.lean#L264). The attribute's comment: “representability by algebraic spaces”.
 
 > The projection `PolarizedCurves ⟶ 𝒫olarized` is representable by algebraic spaces.
 
@@ -118,7 +118,7 @@ theorem isRepresentableByAlgebraicSpaces_polarizedCurvesToPolarizedUnconditional
       (polarizedCurvesToPolarizedUnconditional B hZ).hom
 ```
 
-**`AlgebraicGeometry.isOpenImmersion_polarizedCurvesToPolarizedUnconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditional.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditional.lean#L272). The attribute's comment: “open immersion”.
+**`AlgebraicGeometry.isOpenImmersion_polarizedCurvesToPolarizedUnconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditional.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditional.lean#L272). The attribute's comment: “open immersion”.
 
 > The projection `PolarizedCurves ⟶ 𝒫olarized` is an open immersion.
 
@@ -127,7 +127,7 @@ theorem isOpenImmersion_polarizedCurvesToPolarizedUnconditional :
     Stack.IsOpenImmersion B integerBase hZ (polarizedCurvesToPolarizedUnconditional B hZ)
 ```
 
-**`AlgebraicGeometry.isClosedImmersion_polarizedCurvesToPolarizedUnconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditional.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditional.lean#L279). The attribute's comment: “closed immersion”.
+**`AlgebraicGeometry.isClosedImmersion_polarizedCurvesToPolarizedUnconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditional.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditional.lean#L279). The attribute's comment: “closed immersion”.
 
 > The projection `PolarizedCurves ⟶ 𝒫olarized` is a closed immersion.
 
@@ -136,7 +136,7 @@ theorem isClosedImmersion_polarizedCurvesToPolarizedUnconditional :
     Stack.IsClosedImmersion B integerBase hZ (polarizedCurvesToPolarizedUnconditional B hZ)
 ```
 
-**`AlgebraicGeometry.isRepresentableByAlgebraicSpaces_polarizedCurvesToPolarized_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditionalImmersion.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditionalImmersion.lean#L127). The attribute's comment: “representability by algebraic spaces”.
+**`AlgebraicGeometry.isRepresentableByAlgebraicSpaces_polarizedCurvesToPolarized_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditionalImmersion.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditionalImmersion.lean#L127). The attribute's comment: “representability by algebraic spaces”.
 
 > The projection `PolarizedCurves ⟶ 𝒫olarized` is representable by algebraic spaces.
 
@@ -146,7 +146,7 @@ theorem isRepresentableByAlgebraicSpaces_polarizedCurvesToPolarized_unconditiona
       (polarizedCurvesToPolarizedUnconditionalUp B hZ).hom
 ```
 
-**`AlgebraicGeometry.isOpenImmersion_polarizedCurvesToPolarized_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditionalImmersion.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditionalImmersion.lean#L140). The attribute's comment: “open immersion”.
+**`AlgebraicGeometry.isOpenImmersion_polarizedCurvesToPolarized_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditionalImmersion.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditionalImmersion.lean#L140). The attribute's comment: “open immersion”.
 
 > The projection `PolarizedCurves ⟶ 𝒫olarized` is an open immersion.
 
@@ -155,7 +155,7 @@ theorem isOpenImmersion_polarizedCurvesToPolarized_unconditional :
     Stack.IsOpenImmersion B integerBase hZ (polarizedCurvesToPolarizedUnconditionalUp B hZ)
 ```
 
-**`AlgebraicGeometry.isClosedImmersion_polarizedCurvesToPolarized_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditionalImmersion.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditionalImmersion.lean#L152). The attribute's comment: “closed immersion”.
+**`AlgebraicGeometry.isClosedImmersion_polarizedCurvesToPolarized_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditionalImmersion.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesUnconditionalImmersion.lean#L152). The attribute's comment: “closed immersion”.
 
 > The projection `PolarizedCurves ⟶ 𝒫olarized` is a closed immersion.
 
@@ -168,7 +168,7 @@ theorem isClosedImmersion_polarizedCurvesToPolarized_unconditional :
 
 [Tag 0DQ0](https://stacks.math.columbia.edu/tag/0DQ0) in the Stacks Project.
 
-**`AlgebraicGeometry.isSmooth_and_isSurjective_polarizedCurvesToCurves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesToCurvesSmoothSurjective.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesToCurvesSmoothSurjective.lean#L80).
+**`AlgebraicGeometry.isSmooth_and_isSurjective_polarizedCurvesToCurves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesToCurvesSmoothSurjective.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedCurvesToCurvesSmoothSurjective.lean#L80).
 
 > The projection `PolarizedCurves ⟶ 𝒞urves` is smooth and surjective.
 >
@@ -193,7 +193,7 @@ theorem isSmooth_and_isSurjective_polarizedCurvesToCurves :
 
 [Tag 0E6F](https://stacks.math.columbia.edu/tag/0E6F) in the Stacks Project.
 
-**`AlgebraicGeometry.CurveFamily.exists_etaleCovering_isPullback_isProjectiveMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesEtaleLocallyHProjective.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesEtaleLocallyHProjective.lean#L351).
+**`AlgebraicGeometry.CurveFamily.exists_etaleCovering_isPullback_isProjectiveMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesEtaleLocallyHProjective.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesEtaleLocallyHProjective.lean#L351).
 
 > **Families of curves are étale locally H-projective schemes.** Let `X ⟶ S` be a family of
 > curves. Then there is an étale covering `{S_j ⟶ S}` (a family of étale morphisms of the site whose
@@ -217,4 +217,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 109.4, Tag 0DPY](https://stacks.math.columbia.edu/tag/0DPY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

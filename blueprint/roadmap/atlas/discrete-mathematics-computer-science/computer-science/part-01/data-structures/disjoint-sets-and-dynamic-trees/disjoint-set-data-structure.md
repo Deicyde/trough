@@ -8,7 +8,7 @@ proof: formalized
 
 # Disjoint-set data structure
 
-49 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html).
+49 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html).
 
 ## Parent forest with a depth certificate
 
@@ -18,7 +18,7 @@ with $p(x) = x$ is a root) and a depth certificate $d$ assigning a natural numbe
 vertex, such that every non-root edge strictly decreases the certificate: if $p(x) \ne x$, then
 $d(p(x)) < d(x)$.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.Forest`, a structure declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#forest).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.Forest`, a structure declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#forest).
 
 ## Root of a vertex in a parent forest
 
@@ -26,7 +26,7 @@ For a parent forest $F$ with parent map $p$ and a
 vertex $x$, the root of $x$ is found by following parent pointers from $x$: it is $x$ itself
 if $p(x) = x$, and otherwise it is the root of $p(x)$.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.find`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.find`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find).
 
 ## Path length to the root
 
@@ -34,7 +34,7 @@ For a parent forest $F$ with parent map $p$ and a vertex $x$,
 the path length of $x$ is the number of parent edges followed from $x$ to its root: it is $0$ if
 $p(x) = x$, and otherwise one more than the path length of $p(x)$.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.pathLength`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#path-length).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.pathLength`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#path-length).
 
 ## Find with cost
 
@@ -43,35 +43,35 @@ that find returns for $x$, together with the cost $\ell(x) + 1$, where $\ell(x)$
 length of $x$ (the number of non-root parent edges that find traverses from $x$). That is, it
 charges one unit for every visited vertex, including the root.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.findWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-with-cost).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.findWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-with-cost).
 
 ## Equivalent vertices of a parent forest
 
 Two vertices $x$ and $y$ of a parent forest $F$
 are equivalent when find returns the same root for $x$ as for $y$ in $F$.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.Equivalent`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#equivalent).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.Equivalent`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#equivalent).
 
 ## Find returns a root
 
 For every vertex $x$ of a parent forest $F$, the vertex $r$ that find
 returns for $x$ is a root of $F$: the parent of $r$ in $F$ is $r$ itself.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.find_isRoot`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-is-root).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.find_isRoot`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-is-root).
 
 ## Find is unchanged along a parent pointer
 
 For every vertex $x$ of a parent forest $F$,
 find returns the same root for the parent of $x$ in $F$ as for $x$.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.find_parent`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-parent).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.find_parent`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-parent).
 
 ## Every vertex is equivalent to its representative
 
 For every vertex $x$ of a parent
 forest $F$, the vertex $x$ is equivalent in $F$ to the root that find returns for $x$.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.find_in_class`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-in-class).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.find_in_class`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-in-class).
 
 ## The cost of find is the path length plus one
 
@@ -79,7 +79,7 @@ For every vertex $x$ of a parent forest $F$,
 the cost that find with cost charges on $x$ equals $\ell(x) + 1$, where $\ell(x)$ is the path
 length of $x$: the number of non-root parent edges that find traverses from $x$.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.findWithCost_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-with-cost-time).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.findWithCost_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-with-cost-time).
 
 ## The cost of find is at most the depth certificate plus one
 
@@ -87,7 +87,7 @@ For every vertex $x$ of a
 parent forest $F$ with depth certificate $d$, the cost that find with cost charges on $x$ is at
 most $d(x) + 1$.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.findWithCost_time_le_depth`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-with-cost-time-le-depth).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.findWithCost_time_le_depth`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-with-cost-time-le-depth).
 
 ## Parent map after linking two roots
 
@@ -95,7 +95,7 @@ Let $F$ be a parent forest with parent map $p$, and
 let $r$ and $s$ be vertices. The linked parent map sends $r$ to $s$ and agrees with $p$ on every
 other vertex: it maps $z$ to $s$ if $z = r$, and to $p(z)$ otherwise.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.linkParent`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#link-parent).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.linkParent`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#link-parent).
 
 ## Depth certificate after linking two roots
 
@@ -104,7 +104,7 @@ certificate $d$, and let $r$ and $s$ be vertices. The linked depth certificate a
 vertex $z$ the number $d(z) + d(s) + 1$ if $z$ is equivalent to $r$ in $F$ (that is, $z$ and $r$
 have the same root), and $d(z)$ otherwise.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.linkDepth`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#link-depth).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.linkDepth`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#link-depth).
 
 ## Linking two roots of a parent forest
 
@@ -115,7 +115,7 @@ all other parents are unchanged) and whose depth certificate is the linked depth
 certificate of every vertex equivalent to $r$ grows by $d(s) + 1$ and all others are unchanged).
 These still satisfy the decreasing-certificate condition.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.link`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#link).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.link`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#link).
 
 ## Union in a union-find forest
 
@@ -130,7 +130,7 @@ and every other vertex keeps $d(z)$.
 
 The operation is persistent: it returns a new forest and does not modify $F$.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.union`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#union).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.union`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#union).
 
 ## Representatives after a union
 
@@ -139,7 +139,7 @@ $F$, and let $F'$ be the forest obtained from $F$ by the union of $x$ and $y$. I
 equivalent to $x$ in $F$, then find returns for $z$ in $F'$ the root that find returns for $y$
 in $F$; otherwise find returns the same root for $z$ in $F'$ as in $F$.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.find_union`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-union).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.find_union`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-union).
 
 ## Union makes its arguments equivalent
 
@@ -147,14 +147,14 @@ For every parent forest $F$ and vertices $x$ and
 $y$, the vertices $x$ and $y$ are equivalent in the forest obtained from $F$ by the union of $x$
 and $y$.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.union_equivalent`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#union-equivalent).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.union_equivalent`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#union-equivalent).
 
 ## Union of equivalent vertices changes nothing
 
 If $x$ and $y$ are equivalent vertices of a
 parent forest $F$, then the union of $x$ and $y$ in $F$ is $F$ itself.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.union_eq_self_of_equivalent`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#union-eq-self-of-equivalent).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.union_eq_self_of_equivalent`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#union-eq-self-of-equivalent).
 
 ## Equivalence after a union
 
@@ -165,7 +165,7 @@ equivalent to $y$ in $F$, or $a$ is equivalent to $y$ and $b$ is equivalent to $
 
 Thus the union merges exactly the old classes of $x$ and $y$.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.equivalent_union_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#equivalent-union-iff).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.equivalent_union_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#equivalent-union-iff).
 
 ## Union preserves the representatives of unrelated classes
 
@@ -175,7 +175,7 @@ same root for $z$ in the forest obtained from $F$ by the union of $x$ and $y$ as
 
 No hypothesis on $y$ is needed.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.find_union_of_unrelated`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-union-of-unrelated).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.find_union_of_unrelated`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-union-of-unrelated).
 
 ## Union in a parent forest with cost
 
@@ -185,7 +185,7 @@ finding the root of $x$ plus the cost of finding the root of $y$ (each one unit 
 vertex, including the root), plus one more unit when the roots of $x$ and $y$ are distinct; when
 they coincide, union performs no link and none is charged.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.unionWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#union-with-cost).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.unionWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#union-with-cost).
 
 ## Cost bound for union in a parent forest
 
@@ -194,7 +194,7 @@ certificate $d$ and vertices $x$ and $y$, the cost charged for the union of $x$ 
 (two root searches at one unit per visited vertex, plus one unit for the link when the roots
 differ) is at most $d(x) + d(y) + 3$.
 
-Formalized by `Cslib.Algorithms.Lean.UnionFind.unionWithCost_time_le_depth`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#union-with-cost-time-le-depth).
+Formalized by `Cslib.Algorithms.Lean.UnionFind.unionWithCost_time_le_depth`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#union-with-cost-time-le-depth).
 
 ## Correctness of the union-find equivalence query
 
@@ -207,7 +207,7 @@ $N$ nodes, $b$ is true if and only if $x$ and $y$ are equivalent in $U$, and for
 numbers $a$ and $c$, $a$ and $c$ are equivalent in $U'$ if and only if they are equivalent
 in $U$.
 
-Formalized by `Batteries.UnionFind.checkEquiv_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#check-equiv-spec).
+Formalized by `Batteries.UnionFind.checkEquiv_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#check-equiv-spec).
 
 ## Connected components via union-find
 
@@ -220,7 +220,7 @@ performs UNION on $u$ and $v$ (union by rank with path compression). It returns 
 union-find structure, which has $n$ nodes, together with the numbers of MAKE-SET, FIND-SET and
 UNION calls made.
 
-Formalized by `Batteries.UnionFind.connectedComponents`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#connected-components).
+Formalized by `Batteries.UnionFind.connectedComponents`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#connected-components).
 
 ## Connected components allocates $n$ nodes
 
@@ -228,7 +228,7 @@ For every natural number $n$ and every list
 $E$ of pairs of vertices in $\{0, \dots, n-1\}$, the union-find structure returned by
 CONNECTED-COMPONENTS on $n$ and $E$ has exactly $n$ nodes.
 
-Formalized by `Batteries.UnionFind.connectedComponents_size`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#connected-components-size).
+Formalized by `Batteries.UnionFind.connectedComponents_size`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#connected-components-size).
 
 ## Connected components computes reachability
 
@@ -238,7 +238,7 @@ equivalent in the union-find structure returned by CONNECTED-COMPONENTS on $n$ a
 only if $a$ and $b$ are joined by a path in the simple graph on $\{0, \dots, n-1\}$ whose edges
 are the unordered pairs $\{u, v\}$ with $(u, v)$ in $E$ and $u \ne v$.
 
-Formalized by `Batteries.UnionFind.connectedComponents_equiv_iff_reachable`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#connected-components-equiv-iff-reachable).
+Formalized by `Batteries.UnionFind.connectedComponents_equiv_iff_reachable`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#connected-components-equiv-iff-reachable).
 
 ## Operation counts of connected components
 
@@ -252,7 +252,7 @@ then the number of UNION calls is at most $n - 1$.
 
 These are the call counts recorded by the cost annotation, not bounds on parent-pointer visits.
 
-Formalized by `Batteries.UnionFind.connectedComponents_time_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean, line 464](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean#L464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#connected-components-time-spec).
+Formalized by `Batteries.UnionFind.connectedComponents_time_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean, line 464](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/ConnectedComponents.lean#L464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#connected-components-time-spec).
 
 ## Cost-counted FIND auxiliary
 
@@ -267,7 +267,7 @@ tests and the second counts parent writes.
 The returned array and root are exactly those of the Batteries FIND auxiliary; only the costs
 are added.
 
-Formalized by `Batteries.UnionFind.Internal.countedAux`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-aux).
+Formalized by `Batteries.UnionFind.Internal.countedAux`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-aux).
 
 ## The cost-counted FIND auxiliary returns the uncounted result
 
@@ -276,7 +276,7 @@ structure $S$ and a node $x < |S|$, the value returned by the cost-counted FIND 
 (the compressed node array together with the root of $x$), with its cost discarded, equals the
 result of the Batteries path-compression auxiliary routine of FIND on $x$.
 
-Formalized by `Batteries.UnionFind.Internal.countedAux_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-aux-ret).
+Formalized by `Batteries.UnionFind.Internal.countedAux_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-aux-ret).
 
 ## Cost of the FIND auxiliary at a root
 
@@ -284,7 +284,7 @@ Let $S$ be a union-find structure and $x < |S|$
 a node. If the parent of $x$ in $S$ is $x$ itself, then the cost-counted FIND auxiliary on $x$
 has cost $(1, 0)$: one root test and no parent writes.
 
-Formalized by `Batteries.UnionFind.Internal.countedAux_time_root`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-aux-time-root).
+Formalized by `Batteries.UnionFind.Internal.countedAux_time_root`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-aux-time-root).
 
 ## Cost recurrence of the FIND auxiliary at a non-root
 
@@ -293,7 +293,7 @@ and $x < |S|$ a node whose parent $y$ in $S$ differs from $x$. If $c_x$ and $c_y
 of the cost-counted FIND auxiliary on $x$ and on $y$, then $c_x = (1, 0) + (c_y + (0, 1))$:
 one root test at $x$, then the run on $y$, then one parent write.
 
-Formalized by `Batteries.UnionFind.Internal.countedAux_time_step`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-aux-time-step).
+Formalized by `Batteries.UnionFind.Internal.countedAux_time_step`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-aux-time-step).
 
 ## Root tests exceed parent writes by one
 
@@ -301,7 +301,7 @@ For a union-find structure $S$ and a node
 $x < |S|$, if the cost-counted FIND auxiliary on $x$ has cost $(t, w)$, where $t$ counts root
 tests and $w$ counts parent writes, then $t = w + 1$.
 
-Formalized by `Batteries.UnionFind.Internal.countedAux_time_balance`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-aux-time-balance).
+Formalized by `Batteries.UnionFind.Internal.countedAux_time_balance`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-aux-time-balance).
 
 ## Cost-counted FIND
 
@@ -312,7 +312,7 @@ structure (whose size equals $|S|$), at cost $(t, w)$.
 
 It reuses the array and root of that single run; FIND is not run a second time.
 
-Formalized by `Batteries.UnionFind.Internal.countedFind`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-find).
+Formalized by `Batteries.UnionFind.Internal.countedFind`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-find).
 
 ## The cost-counted FIND returns the FIND result
 
@@ -321,7 +321,7 @@ $x < |S|$, the value returned by the cost-counted FIND on $x$ (the compressed un
 structure together with the root of $x$), with its cost discarded, equals the result of the
 Batteries FIND with path compression on $x$.
 
-Formalized by `Batteries.UnionFind.Internal.countedFind_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-find-ret).
+Formalized by `Batteries.UnionFind.Internal.countedFind_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-find-ret).
 
 ## Parent writes are bounded by the rank gap
 
@@ -332,7 +332,7 @@ cost) is at most $R - \operatorname{rank}(x)$.
 
 This is a per-call bound, not a logarithmic or amortized inverse-Ackermann bound.
 
-Formalized by `Batteries.UnionFind.Internal.countedAux_writes_rank`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-aux-writes-rank).
+Formalized by `Batteries.UnionFind.Internal.countedAux_writes_rank`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-aux-writes-rank).
 
 ## FIND compresses exactly the original path to the root
 
@@ -342,7 +342,7 @@ map of the structure produced by FIND with path compression on $x$. Then for eve
 $i$, $p'(i)$ is the root of $x$ if $i = p^k(x)$ for some $k \ge 0$, and $p'(i) = p(i)$
 otherwise.
 
-Formalized by `Batteries.UnionFind.find_parent_eq_ite_iterate`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-parent-eq-ite-iterate).
+Formalized by `Batteries.UnionFind.find_parent_eq_ite_iterate`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#find-parent-eq-ite-iterate).
 
 ## Effect of path-compressing find on each node
 
@@ -352,7 +352,7 @@ $s$. After find with path compression is run on $x$, for every index $i < n$ the
 the resulting array keeps its rank from $s$, and its parent is $r$ if $i = p^k(x)$ for some
 $k \ge 0$, and is its original parent $p(i)$ otherwise.
 
-Formalized by `Batteries.UnionFind.getElem_find`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#get-elem-find).
+Formalized by `Batteries.UnionFind.getElem_find`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#get-elem-find).
 
 ## The root is reached in fewer parent steps than there are nodes
 
@@ -360,7 +360,7 @@ Let $S$ be a
 union-find structure with $n$ nodes and parent map $p$, and let $x < n$. Then there is $d < n$
 such that $p^d(x)$ is the root of $x$ and $p^k(x)$ is not the root of $x$ for every $k < d$.
 
-Formalized by `Batteries.UnionFind.exists_first_iterate_rootD`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#exists-first-iterate-root-d).
+Formalized by `Batteries.UnionFind.exists_first_iterate_rootD`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Find.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#exists-first-iterate-root-d).
 
 ## Ranks after linking two nodes of an array
 
@@ -370,7 +370,7 @@ $x, y$ be indices of $A$ and let $A'$ be the array obtained from $A$ by the Batt
 of $x$ and $y$. Then for every natural number $i$, $\rho_{A'}(i) = \rho_A(y) + 1$ if $x \ne y$,
 $\rho_A(x) = \rho_A(y)$ and $i = y$, and $\rho_{A'}(i) = \rho_A(i)$ otherwise.
 
-Formalized by `Batteries.UnionFind.LinkInternal.rankD_linkAux`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#rank-d-link-aux).
+Formalized by `Batteries.UnionFind.LinkInternal.rankD_linkAux`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#rank-d-link-aux).
 
 ## Ranks after linking in a union-find structure
 
@@ -380,7 +380,7 @@ $S$ such that $y$ is a root, that is, the parent of $y$ is $y$. Let $S'$ be the 
 $x$ and $y$ by rank. Then for every natural number $i$, the rank of $i$ in $S'$ is $\rho(y) + 1$
 if $x \ne y$, $\rho(x) = \rho(y)$ and $i = y$, and is $\rho(i)$ otherwise.
 
-Formalized by `Batteries.UnionFind.rank_link`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#rank-link).
+Formalized by `Batteries.UnionFind.rank_link`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#rank-link).
 
 ## Linking two roots by rank
 
@@ -394,7 +394,7 @@ root of $i$ in $U'$ is $x$ when $\operatorname{rank}(y) < \operatorname{rank}(x)
 otherwise; if the root of $i$ in $U$ is neither $x$ nor $y$, its root in $U'$ is the same as in
 $U$.
 
-Formalized by `Batteries.UnionFind.rootD_link_eq_ite`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#root-d-link-eq-ite).
+Formalized by `Batteries.UnionFind.rootD_link_eq_ite`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#root-d-link-eq-ite).
 
 ## Union unfolds to two finds and a link
 
@@ -407,7 +407,7 @@ $r_x = r_y$; otherwise, if $\operatorname{rank}(r_y) < \operatorname{rank}(r_x)$
 parent $r_x$, and if not then $r_x$ gets parent $r_y$ and, when the two ranks are equal, the rank
 of $r_y$ increases by one.
 
-Formalized by `Batteries.UnionFind.LinkInternal.union_carried`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#union-carried).
+Formalized by `Batteries.UnionFind.LinkInternal.union_carried`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#union-carried).
 
 ## Path compression preserves ranks
 
@@ -416,7 +416,7 @@ $S$, and let $S'$ be the structure returned by FIND on $x$ with path compression
 natural number $i$, the rank of $i$ in $S'$ equals the rank of $i$ in $S$, where the rank of an
 index that is not a node is $0$.
 
-Formalized by `Batteries.UnionFind.LinkInternal.rank_find`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#rank-find).
+Formalized by `Batteries.UnionFind.LinkInternal.rank_find`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#rank-find).
 
 ## Ranks after a union
 
@@ -426,7 +426,7 @@ $x, y$ of $S$ and every natural number $i$, the rank of $i$ in the union of $x$ 
 (union by rank with path compression) is $\rho(r(y)) + 1$ if $r(x) \ne r(y)$,
 $\rho(r(x)) = \rho(r(y))$ and $r(y) = i$, and is $\rho(i)$ otherwise.
 
-Formalized by `Batteries.UnionFind.rank_union`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#rank-union).
+Formalized by `Batteries.UnionFind.rank_union`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#rank-union).
 
 ## Linking by rank with operation counts
 
@@ -440,7 +440,7 @@ and $y$ are equal it also increases the rank of $y$ by one (one rank write).
 
 The equality test $x = y$ is not counted as a rank test.
 
-Formalized by `Batteries.UnionFind.LinkInternal.countedLinkAux`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-link-aux).
+Formalized by `Batteries.UnionFind.LinkInternal.countedLinkAux`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-link-aux).
 
 ## Counted linking returns the linked array
 
@@ -448,7 +448,7 @@ For an array $A$ of union-find nodes and
 indices $x, y$ of $A$, the array returned by counted linking of $x$ and $y$ in $A$ is exactly the
 array produced by the uncounted Batteries link by rank of $x$ and $y$ in $A$.
 
-Formalized by `Batteries.UnionFind.LinkInternal.countedLinkAux_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-link-aux-ret).
+Formalized by `Batteries.UnionFind.LinkInternal.countedLinkAux_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-link-aux-ret).
 
 ## Operation counts of linking by rank
 
@@ -459,7 +459,7 @@ $(t, p, w)$ is $(0, 0, 0)$ if $x = y$, is $(1, 1, 0)$ if $x \ne y$ and $r_y < r_
 $(2, 1, 1)$ if $x \ne y$ and $r_x = r_y$, and is $(2, 1, 0)$ otherwise, that is, if $x \ne y$
 and $r_x < r_y$.
 
-Formalized by `Batteries.UnionFind.LinkInternal.countedLinkAux_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-link-aux-time).
+Formalized by `Batteries.UnionFind.LinkInternal.countedLinkAux_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-link-aux-time).
 
 ## Union by rank with operation counts
 
@@ -471,7 +471,7 @@ linking, with cost $((a, b), (t, p, w))$, where $a$ and $b$ are the total number
 and parent writes of the two FIND calls, and $(t, p, w)$ counts the rank tests, parent writes and
 rank writes of the linking.
 
-Formalized by `Batteries.UnionFind.LinkInternal.countedUnion`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-union).
+Formalized by `Batteries.UnionFind.LinkInternal.countedUnion`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-union).
 
 ## Counted union returns the union's array
 
@@ -479,7 +479,7 @@ For a union-find structure $S$ and indices
 $x, y$ of $S$, the array returned by the counted union of $x$ and $y$ in $S$ equals the node array
 of the Batteries union of $x$ and $y$ in $S$ (union by rank with path compression).
 
-Formalized by `Batteries.UnionFind.LinkInternal.countedUnion_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-union-ret).
+Formalized by `Batteries.UnionFind.LinkInternal.countedUnion_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-union-ret).
 
 ## The FIND phases of a union make two more root tests than parent writes
 
@@ -488,7 +488,7 @@ union-find structure $S$ and indices $x, y$ of $S$, in the counted union of $x$ 
 total number of root tests made by its two FIND calls equals the total number of parent writes
 they make plus $2$.
 
-Formalized by `Batteries.UnionFind.LinkInternal.countedUnion_find_balance`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-union-find-balance).
+Formalized by `Batteries.UnionFind.LinkInternal.countedUnion_find_balance`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/UnionFind/Union.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html#counted-union-find-balance).
 
 ## Depends on
 
@@ -497,4 +497,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Disjoint-set data structure](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/data-structures/disjoint-sets-and-dynamic-trees/disjoint-set-data-structure)

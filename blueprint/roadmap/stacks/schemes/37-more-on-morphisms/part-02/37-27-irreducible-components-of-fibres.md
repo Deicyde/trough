@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.27 Irreducible components of fibres
 
-Section 37.27 of the Stacks Project, [Tag 0553](https://stacks.math.columbia.edu/tag/0553). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.27 of the Stacks Project, [Tag 0553](https://stacks.math.columbia.edu/tag/0553). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0554, a lemma
 
 [Tag 0554](https://stacks.math.columbia.edu/tag/0554) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_ncard_irreducibleComponents_fiber_ge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NowhereDenseFibres/ComponentCount.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NowhereDenseFibres/ComponentCount.lean#L257). References: EGA IV (9.7.1), “irreducible components”.
+**`AlgebraicGeometry.exists_open_ncard_irreducibleComponents_fiber_ge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NowhereDenseFibres/ComponentCount.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NowhereDenseFibres/ComponentCount.lean#L257). References: EGA IV (9.7.1), “irreducible components”.
 
 > **Stacks Project, Tag 0554.** For a finite type morphism to a scheme with a chosen dense
 > generic point, the number of irreducible components of the fibres is at least the number for
@@ -32,7 +32,7 @@ theorem exists_open_ncard_irreducibleComponents_fiber_ge {X Y : Scheme.{u}} (f :
 
 [Tag 0555](https://stacks.math.columbia.edu/tag/0555) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyIrreducibleFiberLocus_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean#L193). The attribute's comment: “the locus pulls back under the chosen fibre product”.
+**`AlgebraicGeometry.geometricallyIrreducibleFiberLocus_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean#L193). The attribute's comment: “the locus pulls back under the chosen fibre product”.
 
 > **Stacks Project, Tag 0555.** The points with geometrically irreducible fibre pull back
 > exactly under an arbitrary base change.
@@ -45,7 +45,7 @@ theorem geometricallyIrreducibleFiberLocus_baseChange
       g ⁻¹' {y : Y | GeometricallyIrreducible (f.fiberToSpecResidueField y)}
 ```
 
-**`AlgebraicGeometry.geometricallyIrreducibleFiberLocus_eq_preimage_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean#L205). The attribute's comment: “the locus pulls back under an arbitrary cartesian square”.
+**`AlgebraicGeometry.geometricallyIrreducibleFiberLocus_eq_preimage_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean#L205). The attribute's comment: “the locus pulls back under an arbitrary cartesian square”.
 
 > **Stacks Project, Tag 0555.** The points with geometrically irreducible fibre pull back
 > exactly under an arbitrary cartesian square, not only under the chosen fibre product.
@@ -62,7 +62,7 @@ theorem geometricallyIrreducibleFiberLocus_eq_preimage_of_isPullback
 
 [Tag 0556](https://stacks.math.columbia.edu/tag/0556) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricIrreducibleComponentCount`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean#L114). The attribute's comment: “the function”. References: EGA IV (4.5.2), “more general”; EGA IV (4.7.4), “more general”.
+**`AlgebraicGeometry.geometricIrreducibleComponentCount`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean#L114). The attribute's comment: “the function”. References: EGA IV (4.5.2), “more general”; EGA IV (4.7.4), “more general”.
 
 > The number, as an extended natural number, of geometrically irreducible components of each
 > fibre of a morphism of schemes.
@@ -71,7 +71,7 @@ theorem geometricallyIrreducibleFiberLocus_eq_preimage_of_isPullback
 def geometricIrreducibleComponentCount {X Y : Scheme.{u}} (f : X ⟶ Y) : Y → ℕ∞
 ```
 
-**`AlgebraicGeometry.encard_irreducibleComponents_geometricFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean#L121). The attribute's comment: “well-definedness”. References: EGA IV (4.5.1), “partial”.
+**`AlgebraicGeometry.encard_irreducibleComponents_geometricFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean#L121). The attribute's comment: “well-definedness”. References: EGA IV (4.5.1), “partial”.
 
 > The number of irreducible components of the geometric fibre can be computed after extension
 > to any separably closed field containing the residue field.
@@ -83,7 +83,7 @@ theorem encard_irreducibleComponents_geometricFiber {X Y : Scheme.{u}} (f : X �
       geometricIrreducibleComponentCount f y
 ```
 
-**`AlgebraicGeometry.geometricIrreducibleComponentCount_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean#L158). The attribute's comment: “base change”.
+**`AlgebraicGeometry.geometricIrreducibleComponentCount_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/IrreducibleComponents.lean#L158). The attribute's comment: “base change”.
 
 > Formation of the function counting geometrically irreducible components of fibres commutes
 > with arbitrary base change.
@@ -99,7 +99,7 @@ theorem geometricIrreducibleComponentCount_pullback {X Y Y' : Scheme.{u}}
 
 [Tag 0557](https://stacks.math.columbia.edu/tag/0557) in the Stacks Project.
 
-**`MvPolynomial.exists_away_irreducible_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/PolynomialIrreducibility.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/PolynomialIrreducibility.lean#L313). References: EGA IV (9.7.5); EGA IV (9.7.4), “c ⇒ b”.
+**`MvPolynomial.exists_away_irreducible_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/PolynomialIrreducibility.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/PolynomialIrreducibility.lean#L313). References: EGA IV (9.7.5); EGA IV (9.7.4), “c ⇒ b”.
 
 > **Stacks Project, Tag 0557.** An absolutely irreducible polynomial over a domain
 > remains irreducible under every specialization to a field after restricting to a
@@ -121,7 +121,7 @@ theorem exists_away_irreducible_map
 
 [Tag 0559](https://stacks.math.columbia.edu/tag/0559) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyIrreducibleAfterShrinking`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GenericResidueField.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GenericResidueField.lean#L336).
+**`AlgebraicGeometry.geometricallyIrreducibleAfterShrinking`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GenericResidueField.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GenericResidueField.lean#L336).
 
 > **Stacks Project, Tag 0559.** A morphism of finite type onto an irreducible base whose
 > fibre over the generic point is geometrically irreducible has geometrically irreducible fibres
@@ -136,7 +136,7 @@ theorem geometricallyIrreducibleAfterShrinking :
 
 [Tag 055A](https://stacks.math.columbia.edu/tag/055A) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_geometricIrreducibleComponentCount_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L60).
+**`AlgebraicGeometry.exists_open_geometricIrreducibleComponentCount_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L60).
 
 > **Stacks Project, Tag 055A.** The number of geometrically irreducible components of the
 > fibres of a finite type morphism is constant on a nonempty open subset of the closure of any
@@ -153,7 +153,7 @@ theorem exists_open_geometricIrreducibleComponentCount_constant {X Y : Scheme.{u
 
 [Tag 055B](https://stacks.math.columbia.edu/tag/055B) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyConstructible_level_geometricIrreducibleComponentCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L70). References: EGA IV (9.7.9), “n(s) (irreducible)”; SGA 4 XIV (1.11), “special case”.
+**`AlgebraicGeometry.isLocallyConstructible_level_geometricIrreducibleComponentCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L70). References: EGA IV (9.7.9), “n(s) (irreducible)”; SGA 4 XIV (1.11), “special case”.
 
 > **Stacks Project, Tag 055B.** Every level set of the number of geometrically irreducible
 > components of the fibres of a morphism of finite presentation is locally constructible.
@@ -171,4 +171,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.27, Tag 0553](https://stacks.math.columbia.edu/tag/0553)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

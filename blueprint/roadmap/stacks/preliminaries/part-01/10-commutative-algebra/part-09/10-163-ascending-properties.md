@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.163 Ascending properties
 
-Section 10.163 of the Stacks Project, [Tag 0336](https://stacks.math.columbia.edu/tag/0336). 10 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.163 of the Stacks Project, [Tag 0336](https://stacks.math.columbia.edu/tag/0336). 10 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0338, a lemma
 
 [Tag 0338](https://stacks.math.columbia.edu/tag/0338) in the Stacks Project.
 
-**`Module.depth_tensorProduct_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/FlatLocalHom.lean, line 814](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/FlatLocalHom.lean#L814). The attribute's comment: “The fibre `N/𝔪_R N` has its depth taken over `S` along `𝔪_S` rather than over `S/𝔪_R S`, which is the same value, and the tensor product is written with `N` on the left.”. References: EGA IV (6.3.1); EGA IV (6.3.1); EGA IV (6.3.4), “more general”; SGA 2 III (2.11), “special case”.
+**`Module.depth_tensorProduct_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/FlatLocalHom.lean, line 814](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/FlatLocalHom.lean#L814). The attribute's comment: “The fibre `N/𝔪_R N` has its depth taken over `S` along `𝔪_S` rather than over `S/𝔪_R S`, which is the same value, and the tensor product is written with `N` on the left.”. References: EGA IV (6.3.1); EGA IV (6.3.4), “more general”; SGA 2 III (2.11), “special case”.
 
 > **Depth is additive along a flat local homomorphism.** Let `R → S` be a local homomorphism
 > of Noetherian local rings, let `M` be a finite `R`-module and let `N` be a finite `S`-module
@@ -35,7 +35,7 @@ public theorem depth_tensorProduct_of_flat {R S M N : Type*} [CommRing R] [CommR
 
 [Tag 0337](https://stacks.math.columbia.edu/tag/0337) in the Stacks Project.
 
-**`Module.depth_self_eq_depth_self_add_depth_quotient_map_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/FlatLocalHom.lean, line 880](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/FlatLocalHom.lean#L880). The attribute's comment: “Stated for `Module.depth` along the maximal ideals (Tag 00LI), with the fibre ring spelled as the `S`-module `S ⧸ 𝔪_R S`, of the same depth as the local ring `S/𝔪_R S`, and with `IsNoetherianRing R` dropped, being a consequence of faithful flatness. See the module docstring.”. References: EGA IV (6.3.1), “case M = R, N = S”; SGA 2 III (2.11), “M = A”.
+**`Module.depth_self_eq_depth_self_add_depth_quotient_map_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/FlatLocalHom.lean, line 880](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/FlatLocalHom.lean#L880). The attribute's comment: “Stated for `Module.depth` along the maximal ideals (Tag 00LI), with the fibre ring spelled as the `S`-module `S ⧸ 𝔪_R S`, of the same depth as the local ring `S/𝔪_R S`, and with `IsNoetherianRing R` dropped, being a consequence of faithful flatness. See the module docstring.”. References: EGA IV (6.3.1), “case M = R, N = S”; SGA 2 III (2.11), “M = A”.
 
 > **Depth is additive along a flat local homomorphism.** Let `R → S` be a flat local
 > homomorphism of local rings with `S` Noetherian, with maximal ideals `𝔪_R` and `𝔪_S`. Then
@@ -57,7 +57,7 @@ public theorem depth_self_eq_depth_self_add_depth_quotient_map_maximalIdeal (R S
 
 [Tag 045J](https://stacks.math.columbia.edu/tag/045J) in the Stacks Project.
 
-**`Module.isMaximalCohenMacaulay_self_iff_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/FlatLocalHom.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/FlatLocalHom.lean#L455). The attribute's comment: “Cohen-Macaulayness of a Noetherian local ring `A` (Definition 00N8) is `Module.IsMaximalCohenMacaulay A A`, i.e. `depth_{𝔪_A}(A) = dim A`; for the fibre that equation is written out, with its depth taken over `S` along `𝔪_S` as in Tag 0337, since a quotient of a local ring carries no `IsLocalRing` instance. `IsNoetherianRing R` is dropped, being a consequence of faithful flatness. See the module docstring.”. References: EGA IV (6.3.5), “CM clauses of (i),(ii)”; EGA IV (15.4.2), “partial”; EGA IV (6.3.3), “Case M = A”.
+**`Module.isMaximalCohenMacaulay_self_iff_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/FlatLocalHom.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/FlatLocalHom.lean#L455). The attribute's comment: “Cohen-Macaulayness of a Noetherian local ring `A` (Definition 00N8) is `Module.IsMaximalCohenMacaulay A A`, i.e. `depth_{𝔪_A}(A) = dim A`; for the fibre that equation is written out, with its depth taken over `S` along `𝔪_S` as in Tag 0337, since a quotient of a local ring carries no `IsLocalRing` instance. `IsNoetherianRing R` is dropped, being a consequence of faithful flatness. See the module docstring.”. References: EGA IV (6.3.5), “CM clauses of (i),(ii)”; EGA IV (15.4.2), “partial”; EGA IV (6.3.3), “Case M = A”.
 
 > **Cohen–Macaulayness along a flat local homomorphism.** Let `R → S` be a flat local
 > homomorphism of local rings with `S` Noetherian. Then `S` is Cohen–Macaulay, that is
@@ -80,7 +80,7 @@ public theorem isMaximalCohenMacaulay_self_iff_of_flat (R S : Type*) [CommRing R
 
 [Tag 0339](https://stacks.math.columbia.edu/tag/0339) in the Stacks Project.
 
-**`min_le_depth_atPrime_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Serre/FlatAscent.lean, line 872](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Serre/FlatAscent.lean#L872). The attribute's comment: “Property `(S_k)` is spelled out from Definition 031P as the inequality `min{k, dim(A_𝔮)} ≤ depth(A_𝔮)` at every prime, with `Module.depth` (Tag 00LI) along the maximal ideal of `Localization.AtPrime 𝔮` and `ringKrullDim` for the dimension, as in Tags 031Q, 031S and 0352, the inequality being read in `WithBot ℕ∞`; the fibre ring `S ⊗_R κ(𝔭)` is `Ideal.Fiber 𝔭 S`, and the ring map is an `Algebra R S` instance with `Module.Flat R S`. See the module docstring.”. References: EGA IV (6.4.1), “(ii), affine E=O,F=O”; EGA IV (12.1.5), “(i), F=O\_X, G=O\_Y”.
+**`min_le_depth_atPrime_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Serre/FlatAscent.lean, line 872](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Serre/FlatAscent.lean#L872). The attribute's comment: “Property `(S_k)` is spelled out from Definition 031P as the inequality `min{k, dim(A_𝔮)} ≤ depth(A_𝔮)` at every prime, with `Module.depth` (Tag 00LI) along the maximal ideal of `Localization.AtPrime 𝔮` and `ringKrullDim` for the dimension, as in Tags 031Q, 031S and 0352, the inequality being read in `WithBot ℕ∞`; the fibre ring `S ⊗_R κ(𝔭)` is `Ideal.Fiber 𝔭 S`, and the ring map is an `Algebra R S` instance with `Module.Flat R S`. See the module docstring.”. References: EGA IV (6.4.1), “(ii), affine E=O,F=O”; EGA IV (12.1.5), “(i), F=O\_X, G=O\_Y”.
 
 > **Stacks Tag 0339.** Let `R → S` be a flat ring map of Noetherian rings. If every fibre ring
 > `κ(𝔭) ⊗_R S` has Serre's property `(S_k)` and `R` has `(S_k)`, then `S` has `(S_k)`, property
@@ -111,7 +111,7 @@ public theorem min_le_depth_atPrime_of_flat {R : Type u} {S : Type v} [CommRing 
 
 [Tag 033A](https://stacks.math.columbia.edu/tag/033A) in the Stacks Project.
 
-**`property_Rk_of_flat_of_fibre_of_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Serre/FlatAscent.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Serre/FlatAscent.lean#L371). References: EGA IV (6.5.3), “(ii), affine case”; EGA IV (17.5.8), “(iii)”; EGA IV (7.3.8), “(v\_n), special case”; SGA 6 X (7.7), “special case”.
+**`property_Rk_of_flat_of_fibre_of_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Serre/FlatAscent.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Serre/FlatAscent.lean#L371). References: EGA IV (6.5.3), “(ii), affine case”; EGA IV (17.5.8), “(iii)”; EGA IV (7.3.8), “(v\_n), special case”; SGA 6 X (7.7), “special case”.
 
 > Let `φ : R → S` be a flat ring map between Noetherian rings and fix `k ≥ 0`. If every
 > fibre ring `S ⊗[R] κ(p)` has property `(R_k)` and `R` has property `(R_k)`, then `S` has
@@ -131,7 +131,7 @@ theorem property_Rk_of_flat_of_fibre_of_base
 
 [Tag 0C21](https://stacks.math.columbia.edu/tag/0C21) in the Stacks Project.
 
-**`isReduced_of_flat_of_isReduced_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ReducedFibres.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/ReducedFibres.lean#L143). The attribute's comment: “The ring map is an `Algebra R S` instance with `Module.Flat R S`, and the fibre ring `S ⊗_R κ(𝔭)` is Mathlib's `Ideal.Fiber 𝔭 S`, as in the statements of Tags 0339 and 033A. Reducedness is Mathlib's `IsReduced`, and the fibre hypothesis is reducedness, not geometric reducedness, so this is not an affine instance of Mathlib's `AlgebraicGeometry.GeometricallyReduced.isReduced_of_flat_of_isLocallyNoetherian`. See the module docstring.”. References: EGA IV (3.3.5), “affine case”; EGA IV (11.3.13), “(ii) reduced, Noetherian”.
+**`isReduced_of_flat_of_isReduced_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ReducedFibres.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/ReducedFibres.lean#L143). The attribute's comment: “The ring map is an `Algebra R S` instance with `Module.Flat R S`, and the fibre ring `S ⊗_R κ(𝔭)` is Mathlib's `Ideal.Fiber 𝔭 S`, as in the statements of Tags 0339 and 033A. Reducedness is Mathlib's `IsReduced`, and the fibre hypothesis is reducedness, not geometric reducedness, so this is not an affine instance of Mathlib's `AlgebraicGeometry.GeometricallyReduced.isReduced_of_flat_of_isLocallyNoetherian`. See the module docstring.”. References: EGA IV (3.3.5), “affine case”; EGA IV (11.3.13), “(ii) reduced, Noetherian”.
 
 > Let `R → S` be a flat ring map of Noetherian rings. If `R` is reduced and every fibre ring
 > `κ(𝔭) ⊗_R S` is reduced, then `S` is reduced.
@@ -147,7 +147,7 @@ public theorem isReduced_of_flat_of_isReduced_fiber {R : Type u} {S : Type v} [C
 
 [Tag 033B](https://stacks.math.columbia.edu/tag/033B) in the Stacks Project.
 
-**`Algebra.isReduced_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/Reduced.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smooth/Reduced.lean#L230). The attribute's comment: “The ring map is an `Algebra R S` instance and smoothness of it is Mathlib's `Algebra.Smooth R S` (equivalently `(algebraMap R S).Smooth`, by `RingHom.smooth_algebraMap`); reducedness is `IsReduced`. No Noetherian hypothesis, so this is not an instance of Mathlib's `AlgebraicGeometry.GeometricallyReduced.isReduced_of_flat_of_isLocallyNoetherian`. See the module docstring.”. References: SGA 1 II (3.1), “reduced, O\_y ⇒ O\_x”.
+**`Algebra.isReduced_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/Reduced.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smooth/Reduced.lean#L231). The attribute's comment: “The ring map is an `Algebra R S` instance and smoothness of it is Mathlib's `Algebra.Smooth R S` (equivalently `(algebraMap R S).Smooth`, by `RingHom.smooth_algebraMap`); reducedness is `IsReduced`. No Noetherian hypothesis, so this is not an instance of Mathlib's `AlgebraicGeometry.GeometricallyReduced.isReduced_of_flat_of_isLocallyNoetherian`. See the module docstring.”. References: SGA 1 II (3.1), “reduced, O\_y ⇒ O\_x”.
 
 > **Stacks Tag 033B.** Let `R → S` be a smooth ring map. If `R` is reduced, then `S` is
 > reduced.
@@ -161,7 +161,7 @@ public theorem Algebra.isReduced_of_smooth (R S : Type*) [CommRing R] [CommRing 
 
 [Tag 0C22](https://stacks.math.columbia.edu/tag/0C22) in the Stacks Project.
 
-**`isNormalRing_of_flat_of_isNormalRing_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/NormalFibres.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/NormalFibres.lean#L395). The attribute's comment: “The ring map is an `Algebra R S` instance with `Module.Flat R S`, and the fibre ring `S ⊗_R κ(𝔭)` is Mathlib's `Ideal.Fiber 𝔭 S`, as in the companion statements 0C21 and 0339. Normality is the library's `IsNormalRing` (Definition 00GV), definitionally the `IsDomain` plus `IsIntegrallyClosed` condition on `Localization.AtPrime 𝔮` that tags 030C(1), 031S and 033G write out, and the fibre hypothesis is normality, not geometric normality. Mathlib has neither a normal-ring predicate nor this ascent. See the module docstring.”. References: EGA IV (6.5.4), “(ii), affine case”; EGA IV (6.5.4), “(ii), affine case”.
+**`isNormalRing_of_flat_of_isNormalRing_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/NormalFibres.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/NormalFibres.lean#L395). The attribute's comment: “The ring map is an `Algebra R S` instance with `Module.Flat R S`, and the fibre ring `S ⊗_R κ(𝔭)` is Mathlib's `Ideal.Fiber 𝔭 S`, as in the companion statements 0C21 and 0339. Normality is the library's `IsNormalRing` (Definition 00GV), definitionally the `IsDomain` plus `IsIntegrallyClosed` condition on `Localization.AtPrime 𝔮` that tags 030C(1), 031S and 033G write out, and the fibre hypothesis is normality, not geometric normality. Mathlib has neither a normal-ring predicate nor this ascent. See the module docstring.”. References: EGA IV (6.5.4), “(ii), affine case”.
 
 > **Stacks Tag 0C22.** Let `R → S` be a flat ring map of Noetherian rings. If `R` is a normal
 > ring and every fibre ring `κ(𝔭) ⊗_R S` is a normal ring, then `S` is a normal ring.
@@ -177,7 +177,7 @@ public theorem isNormalRing_of_flat_of_isNormalRing_fiber {R : Type u} {S : Type
 
 [Tag 033C](https://stacks.math.columbia.edu/tag/033C) in the Stacks Project.
 
-**`Algebra.isNormalRing_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/Normal.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smooth/Normal.lean#L60). References: SGA 1 II (3.1), “normal, O\_y ⇒ O\_x”.
+**`Algebra.isNormalRing_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/Normal.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smooth/Normal.lean#L60). References: SGA 1 II (3.1), “normal, O\_y ⇒ O\_x”.
 
 > **Stacks 033C.** A smooth algebra over a normal ring is a normal ring.
 
@@ -190,7 +190,7 @@ theorem Algebra.isNormalRing_of_smooth (R S : Type*) [CommRing R] [CommRing S] [
 
 [Tag 07NF](https://stacks.math.columbia.edu/tag/07NF) in the Stacks Project.
 
-**`Algebra.isRegularRing_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/RegularRing.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smooth/RegularRing.lean#L189). The attribute's comment: “The ring map is an `Algebra R S` instance and smoothness of it is Mathlib's `Algebra.Smooth R S` (equivalently `(algebraMap R S).Smooth`, by `RingHom.smooth_algebraMap`), as in the companion statements 033B and 033C; regularity is Mathlib's `IsRegularRing`, Definition 00OD verbatim, which already contains Noetherianness, so the source's standing convention that a regular ring is Noetherian is carried by the predicate on both sides. Mathlib has the polynomial case and transport along ring equivalences, but no ascent along a smooth map. See the module docstring.”. References: SGA 1 II (3.1), “regular, O\_y ⇒ O\_x”.
+**`Algebra.isRegularRing_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/RegularRing.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smooth/RegularRing.lean#L190). The attribute's comment: “The ring map is an `Algebra R S` instance and smoothness of it is Mathlib's `Algebra.Smooth R S` (equivalently `(algebraMap R S).Smooth`, by `RingHom.smooth_algebraMap`), as in the companion statements 033B and 033C; regularity is Mathlib's `IsRegularRing`, Definition 00OD verbatim, which already contains Noetherianness, so the source's standing convention that a regular ring is Noetherian is carried by the predicate on both sides. Mathlib has the polynomial case and transport along ring equivalences, but no ascent along a smooth map. See the module docstring.”. References: SGA 1 II (3.1), “regular, O\_y ⇒ O\_x”.
 
 > **Regularity ascends along smooth maps of rings** (Stacks Tag 07NF). Let `R → S` be a smooth
 > ring map. If `R` is a regular ring, then `S` is a regular ring.
@@ -207,4 +207,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.163, Tag 0336](https://stacks.math.columbia.edu/tag/0336)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Self-dual monotone Boolean functions
 
-25 results, 8 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html).
+25 results, 8 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html).
 
 ## Complement of a Boolean vector
 
@@ -19,7 +19,7 @@ for every $i < n$.
 
 - JIS VOL28/Pawelski, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Pawelski/pawelski22.tex>, lines 72–81.
 
-Formalized by `MetaMathlibExt.booleanVectorComplement`, a definition declared in [MathlibExt/Order/BooleanFunction/SelfDual.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Order/BooleanFunction/SelfDual.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-vector-complement).
+Formalized by `MetaMathlibExt.booleanVectorComplement`, a definition declared in [MathlibExt/Order/BooleanFunction/SelfDual.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Order/BooleanFunction/SelfDual.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-vector-complement).
 
 ## Dual of a Boolean function
 
@@ -27,7 +27,7 @@ For a Boolean function $f \colon \{0,1\}^n \to \{0,1\}$, its
 dual is the Boolean function $f^\star \colon \{0,1\}^n \to \{0,1\}$ given by
 $f^\star(x) = \lnot f(\bar x)$, where $\bar x$ is the coordinatewise complement of $x$.
 
-Formalized by `MetaMathlibExt.booleanFunctionDual`, a definition declared in [MathlibExt/Order/BooleanFunction/SelfDual.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Order/BooleanFunction/SelfDual.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-function-dual).
+Formalized by `MetaMathlibExt.booleanFunctionDual`, a definition declared in [MathlibExt/Order/BooleanFunction/SelfDual.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Order/BooleanFunction/SelfDual.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-function-dual).
 
 ## Self-dual monotone Boolean functions
 
@@ -36,7 +36,7 @@ is self-dual monotone when it is monotone, that is, $f(x) \le f(y)$ for all $x, 
 with $x_i \le y_i$ for every $i < n$, and it equals its dual, that is, $f = f^\star$, where
 $f^\star(x) = \lnot f(\bar x)$ and $\bar x$ is the coordinatewise complement of $x$.
 
-Formalized by `MetaMathlibExt.IsSelfDualMonotone`, a definition declared in [MathlibExt/Order/BooleanFunction/SelfDual.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Order/BooleanFunction/SelfDual.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#is-self-dual-monotone).
+Formalized by `MetaMathlibExt.IsSelfDualMonotone`, a definition declared in [MathlibExt/Order/BooleanFunction/SelfDual.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Order/BooleanFunction/SelfDual.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#is-self-dual-monotone).
 
 ## Complementation of Boolean vectors is an involution
 
@@ -44,7 +44,7 @@ For every $n$ and every Boolean
 vector $x \in \{0,1\}^n$, writing $\bar x$ for the coordinatewise complement of $x$, we have
 $\bar{\bar x} = x$.
 
-Formalized by `MetaMathlibExt.booleanVectorComplement_complement`, a theorem declared in [MathlibExt/Order/BooleanFunction/SelfDual.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Order/BooleanFunction/SelfDual.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-vector-complement-complement).
+Formalized by `MetaMathlibExt.booleanVectorComplement_complement`, a theorem declared in [MathlibExt/Order/BooleanFunction/SelfDual.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Order/BooleanFunction/SelfDual.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-vector-complement-complement).
 
 ## Duality of Boolean functions is an involution
 
@@ -52,14 +52,14 @@ For every $n$ and every Boolean function
 $f \colon \{0,1\}^n \to \{0,1\}$, writing $f^\star$ for the dual of $f$, we have
 $(f^\star)^\star = f$.
 
-Formalized by `MetaMathlibExt.booleanFunctionDual_dual`, a theorem declared in [MathlibExt/Order/BooleanFunction/SelfDual.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Order/BooleanFunction/SelfDual.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-function-dual-dual).
+Formalized by `MetaMathlibExt.booleanFunctionDual_dual`, a theorem declared in [MathlibExt/Order/BooleanFunction/SelfDual.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Order/BooleanFunction/SelfDual.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-function-dual-dual).
 
 ## Coordinate projections are self-dual monotone
 
 For every $n$ and every index $i < n$, the
 projection $x \mapsto x_i$ on $\{0,1\}^n$ is a self-dual monotone Boolean function.
 
-Formalized by `MetaMathlibExt.selfDualMonotone_proj`, a theorem declared in [MathlibExt/Order/BooleanFunction/SelfDual.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Order/BooleanFunction/SelfDual.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#self-dual-monotone-proj).
+Formalized by `MetaMathlibExt.selfDualMonotone_proj`, a theorem declared in [MathlibExt/Order/BooleanFunction/SelfDual.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Order/BooleanFunction/SelfDual.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#self-dual-monotone-proj).
 
 ## Concatenation of a list of Boolean functions
 
@@ -74,7 +74,7 @@ counted as $1$ and false as $0$), and to false when $i \ge m$.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, the concatenation representation of `D_n^{B^k}` before Theorem 10.
 
-Formalized by `MetaMathlibExt.booleanCubeConcat`, a definition declared in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-cube-concat).
+Formalized by `MetaMathlibExt.booleanCubeConcat`, a definition declared in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-cube-concat).
 
 ## Concatenation at the all-false input
 
@@ -87,7 +87,7 @@ input when $W$ is nonempty, and the value false when $W$ is empty.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, the concatenation representation of `D_n^{B^k}` before Theorem 10.
 
-Formalized by `MetaMathlibExt.booleanCubeConcat_false`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-cube-concat-false).
+Formalized by `MetaMathlibExt.booleanCubeConcat_false`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-cube-concat-false).
 
 ## Currying monotone Boolean functions (Lemma 1)
 
@@ -101,7 +101,7 @@ pointwise.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Lemma 1 (`jis-2025-25.6.5-lem-1`).
 
-Stated but not proved: `MetaMathlibExt.monotoneBooleanFunction_orderIso_curry` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#monotone-boolean-function-order-iso-curr).
+Stated but not proved: `MetaMathlibExt.monotoneBooleanFunction_orderIso_curry` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#monotone-boolean-function-order-iso-curr).
 
 ## Duality reverses order and exchanges joins and meets
 
@@ -116,7 +116,7 @@ Part 1 of the paper's lemma, $f^{**} = f$, holds for every Boolean function.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Lemma 2 (`jis-2025-25.6.5-lem-2`).
 
-Stated but not proved: `MetaMathlibExt.booleanFunctionDual_antitone_sup_inf` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-function-dual-antitone-sup-inf).
+Stated but not proved: `MetaMathlibExt.booleanFunctionDual_antitone_sup_inf` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-function-dual-antitone-sup-inf).
 
 ## Permuting variables preserves monotonicity, duals and self-duality
 
@@ -130,7 +130,7 @@ is $f^\pi$.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Lemma 5 (`jis-2025-25.6.5-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.booleanFunction_perm_monotone_dual_selfDual` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-function-perm-monotone-dual-self).
+Stated but not proved: `MetaMathlibExt.booleanFunction_perm_monotone_dual_selfDual` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#boolean-function-perm-monotone-dual-self).
 
 ## Counting self-dual monotone functions on $n + 1$ variables
 
@@ -149,7 +149,7 @@ permutations.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Theorem 6 (`jis-2025-25.6.5-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.card_selfDualMonotone_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#card-self-dual-monotone-succ).
+Stated but not proved: `MetaMathlibExt.card_selfDualMonotone_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#card-self-dual-monotone-succ).
 
 ## Upper bound for self-dual monotone functions on $n + 1$ variables
 
@@ -161,7 +161,7 @@ of monotone Boolean functions on $n$ variables.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Corollary 7 (`jis-2025-25.6.5-cor-7`).
 
-Stated but not proved: `MetaMathlibExt.card_selfDualMonotone_succ_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#card-self-dual-monotone-succ-le).
+Stated but not proved: `MetaMathlibExt.card_selfDualMonotone_succ_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#card-self-dual-monotone-succ-le).
 
 ## Weights of monotone Boolean functions and their duals (Lemma 8)
 
@@ -182,7 +182,7 @@ $2^{n-1}$; written this way the statement also covers $n = 0$.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Lemma 8 (`jis-2025-25.6.5-lem-8`).
 
-Stated but not proved: `MetaMathlibExt.monotoneBooleanFunction_weight_dual` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#monotone-boolean-function-weight-dual).
+Stated but not proved: `MetaMathlibExt.monotoneBooleanFunction_weight_dual` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#monotone-boolean-function-weight-dual).
 
 ## Recursion for self-dual monotone functions from $n$ to $n + 1$ variables
 
@@ -208,7 +208,7 @@ The bound is the paper's $\lambda_{n+1} \le (d_n + \lambda_n) / 2$ with the divi
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Theorem 9 (`jis-2025-25.6.5-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.card_selfDualMonotone_succ_eq_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#card-self-dual-monotone-succ-eq-add).
+Stated but not proved: `MetaMathlibExt.card_selfDualMonotone_succ_eq_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#card-self-dual-monotone-succ-eq-add).
 
 ## Counting self-dual monotone functions on $n + 2$ variables
 
@@ -228,7 +228,7 @@ functions $b^\pi$ as $\pi$ ranges over all permutations.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Theorem 10 (`jis-2025-25.6.5-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.card_selfDualMonotone_add_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#card-self-dual-monotone-add-two).
+Stated but not proved: `MetaMathlibExt.card_selfDualMonotone_add_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#card-self-dual-monotone-add-two).
 
 ## Dedekind numbers bound self-dual counts from below (Corollary 11)
 
@@ -243,7 +243,7 @@ Then $d_n \le \lambda_{n+2}$.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Corollary 11 (`jis-2025-25.6.5-cor-11`).
 
-Stated but not proved: `MetaMathlibExt.le_card_selfDualMonotone_add_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#le-card-self-dual-monotone-add-two).
+Stated but not proved: `MetaMathlibExt.le_card_selfDualMonotone_add_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#le-card-self-dual-monotone-add-two).
 
 ## Self-dual monotone functions on $n+4$ variables as concatenations (Theorem 12)
 
@@ -270,7 +270,7 @@ $a, b, c, d, e, f, g, h \in D_n$ satisfying these inequalities.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Theorem 12 (`jis-2025-25.6.5-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.selfDualMonotone_add_four_iff_concat` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#self-dual-monotone-add-four-iff-concat).
+Stated but not proved: `MetaMathlibExt.selfDualMonotone_add_four_iff_concat` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#self-dual-monotone-add-four-iff-concat).
 
 ## Counting self-dual monotone functions on $n + 4$ variables
 
@@ -290,7 +290,7 @@ $$
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Theorem 13 (`jis-2025-25.6.5-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.card_selfDualMonotone_add_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#card-self-dual-monotone-add-four).
+Stated but not proved: `MetaMathlibExt.card_selfDualMonotone_add_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#card-self-dual-monotone-add-four).
 
 ## Self-dual monotone functions on $n+4$ variables, interval form (Theorem 14)
 
@@ -317,7 +317,7 @@ $a, b, c, d, e, f, g, h \in D_n$ satisfying these inequalities.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Theorem 14 (`jis-2025-25.6.5-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.selfDualMonotone_add_four_iff_concat_of_dual_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#self-dual-monotone-add-four-iff-concat-o).
+Stated but not proved: `MetaMathlibExt.selfDualMonotone_add_four_iff_concat_of_dual_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#self-dual-monotone-add-four-iff-concat-o).
 
 ## Maximal intersecting families split complementary pairs (Lemma 3, L2)
 
@@ -334,7 +334,7 @@ family, and it contains neither $\emptyset$ nor its complement $\emptyset$.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Lemma 3 (`jis-2025-25.6.5-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.maximal_intersecting_mem_iff_compl_notMem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#maximal-intersecting-mem-iff-compl-not-m).
+Stated but not proved: `MetaMathlibExt.maximal_intersecting_mem_iff_compl_notMem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#maximal-intersecting-mem-iff-compl-not-m).
 
 ## A criterion for maximal intersecting families (Lemma 4)
 
@@ -353,7 +353,7 @@ $\emptyset$, so no family satisfies the second condition.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Lemma 4 (`jis-2025-25.6.5-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.maximal_intersecting_of_isUpperSet_of_mem_iff_compl_notMem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#maximal-intersecting-of-is-upper-set-of).
+Stated but not proved: `MetaMathlibExt.maximal_intersecting_of_isUpperSet_of_mem_iff_compl_notMem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#maximal-intersecting-of-is-upper-set-of).
 
 ## Permutations with only even cycles fix no self-dual monotone function (Lemma 15)
 
@@ -371,7 +371,7 @@ The paper also assumes that $n$ is even; this follows from the condition on the 
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Lemma 15 (`jis-2025-25.6.5-lem-15`).
 
-Stated but not proved: `MetaMathlibExt.selfDualMonotone_not_fixed_of_even_minimalPeriod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#self-dual-monotone-not-fixed-of-even-min).
+Stated but not proved: `MetaMathlibExt.selfDualMonotone_not_fixed_of_even_minimalPeriod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#self-dual-monotone-not-fixed-of-even-min).
 
 ## Permutations of eight variables fixing no self-dual monotone function (Corollary 16)
 
@@ -390,7 +390,7 @@ $(12)(345678)$, $(1234)(5678)$, $(12)(34)(5678)$ and $(12)(34)(56)(78)$.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Corollary 16 (`jis-2025-25.6.5-cor-16`).
 
-Stated but not proved: `MetaMathlibExt.selfDualMonotone_eight_not_fixed` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#self-dual-monotone-eight-not-fixed).
+Stated but not proved: `MetaMathlibExt.selfDualMonotone_eight_not_fixed` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#self-dual-monotone-eight-not-fixed).
 
 ## For odd $n$, every permutation fixes a self-dual monotone function
 
@@ -402,7 +402,7 @@ function $f$ on $n$ variables with $f(x \circ \pi) = f(x)$ for every input $x$.
 
 - Bartłomiej Pawelski and Andrzej Szepietowski, *Counting Self-Dual Monotone Boolean Functions*, Journal of Integer Sequences 28 (2025), Article 25.6.5, Lemma 17 (`jis-2025-25.6.5-lem-17`).
 
-Stated but not proved: `MetaMathlibExt.exists_selfDualMonotone_fixed_of_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#exists-self-dual-monotone-fixed-of-odd).
+Stated but not proved: `MetaMathlibExt.exists_selfDualMonotone_fixed_of_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SelfDualMonotoneBooleanWanted.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html#exists-self-dual-monotone-fixed-of-odd).
 
 ## Depends on
 
@@ -411,4 +411,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Self-dual monotone Boolean functions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/boolean-functions/self-dual-monotone-boolean-functions)

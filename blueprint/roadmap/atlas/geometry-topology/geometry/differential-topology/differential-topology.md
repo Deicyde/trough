@@ -7,7 +7,7 @@ statement: formalized
 
 # Differential topology: its own results
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/index.html).
 
 Smooth manifolds and smooth maps between them: immersions, submersions, transversality, Morse theory, neighbourhood theorems and smooth structures.
 
@@ -22,7 +22,7 @@ makes $M$ a smooth ($C^\infty$) manifold.
 
 -. Problem `four_manifold_not_smooth` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.FourManifoldNotSmoothWanted.Geometry.four_manifold_not_smooth` is written with `theorem_wanted` in [WantedExt/Geometry/FourManifoldNotSmoothWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/FourManifoldNotSmoothWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/index.html#four-manifold-not-smooth).
+Stated but not proved: `MathlibExt.Geometry.FourManifoldNotSmoothWanted.Geometry.four_manifold_not_smooth` is written with `theorem_wanted` in [WantedExt/Geometry/FourManifoldNotSmoothWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/FourManifoldNotSmoothWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/index.html#four-manifold-not-smooth).
 
 ## Collar neighborhood theorem (topological form)
 
@@ -38,7 +38,7 @@ Proof: Local chart collars are glued by Brown's external-collar construction, fo
 
 - M. Hirsch, Differential Topology, GTM 33; J. Lee, Introduction to Smooth Manifolds, 2nd ed.; Kosinski, Differential Manifolds; Lean states topological collar `IsOpenEmbedding` corollary for `EuclideanHalfSpace` model.
 
-Formalized by `MathlibExt.Geometry.Manifold.CollarNeighborhoodWanted.topological_collar_neighborhood_of_smooth_manifold_with_boundary`, a theorem declared in [MathlibExt/Geometry/Manifold/CollarNeighborhood.lean, line 2766](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/CollarNeighborhood.lean#L2766). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/index.html#topological-collar-neighborhood-of-smoot).
+Formalized by `MathlibExt.Geometry.Manifold.CollarNeighborhoodWanted.topological_collar_neighborhood_of_smooth_manifold_with_boundary`, a theorem declared in [MathlibExt/Geometry/Manifold/CollarNeighborhood.lean, line 2766](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/CollarNeighborhood.lean#L2766). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/index.html#topological-collar-neighborhood-of-smoot).
 
 ## Hadamard–Caccioppoli global inverse theorem
 
@@ -51,7 +51,7 @@ $\Phi : \mathbb{R}^n \to \mathbb{R}^n$ whose underlying map is $f$.
 
 - J. Hadamard, Bull. Soc. Math. France 34 (1906) 71–84; R. Caccioppoli, Rend. Sem. Mat. Univ. Padova 3 (1932); F.-C. Plastock, Trans. Amer. Math. Soc. 200 (1974) extension to Banach spaces; J. Lee, Riemannian Manifolds? Lean states Euclidean `ℝⁿ = EuclideanSpace ℝ (Fin n)` specialization with `IsProperMap` and `IsLocalDiffeomorph` hypotheses.
 
-Formalized by `MathlibExt.Geometry.Manifold.HadamardGlobalInverseWanted.hadamard_caccioppoli_global_inverse`, a theorem declared in [MathlibExt/Geometry/Manifold/HadamardGlobalInverse.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/HadamardGlobalInverse.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/index.html#hadamard-caccioppoli-global-inverse).
+Formalized by `MathlibExt.Geometry.Manifold.HadamardGlobalInverseWanted.hadamard_caccioppoli_global_inverse`, a theorem declared in [MathlibExt/Geometry/Manifold/HadamardGlobalInverse.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/HadamardGlobalInverse.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/index.html#hadamard-caccioppoli-global-inverse).
 
 ## Hairy ball theorem
 
@@ -64,7 +64,7 @@ $x \in S$.
 
 - H. Poincaré proved the 2-sphere case in 1885 and L. E. J. Brouwer extended it to higher even-dimensional spheres in 1912; J. Milnor, Topology from the Differentiable Viewpoint hairy ball; Guillemin-Pollack, Differential Topology; Lean states even-sphere ambient finite-dimensional inner-product specialization via `inner = 0`.
 
-Formalized by `MathlibExt.Geometry.Manifold.HairyBallWanted.hairyBall_even_sphere_ambient`, a theorem declared in [MathlibExt/Geometry/Manifold/HairyBall.lean, line 1305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/HairyBall.lean#L1305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/index.html#hairy-ball-even-sphere-ambient).
+Formalized by `MathlibExt.Geometry.Manifold.HairyBallWanted.hairyBall_even_sphere_ambient`, a theorem declared in [MathlibExt/Geometry/Manifold/HairyBall.lean, line 1298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/HairyBall.lean#L1298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/index.html#hairy-ball-even-sphere-ambient).
 
 ## Smooth retraction onto a closed embedded manifold in $\mathbb{R}^n$
 
@@ -79,7 +79,7 @@ $r \colon U \to M$ such that $r(e(x)) = x$ for every $x \in M$.
 
 - Tubular neighborhood theorem; M. Hirsch, Differential Topology; J. Lee, Introduction to Smooth Manifolds; Lean states smooth-retraction corollary for closed embedding into `EuclideanSpace ℝ (Fin n)` via `Opens`.
 
-Formalized by `MathlibExt.Geometry.Manifold.TubularNeighborhoodWanted.tubular_smoothRetraction`, a theorem declared in [MathlibExt/Geometry/Manifold/TubularNeighborhood.lean, line 590](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/TubularNeighborhood.lean#L590). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/index.html#tubular-smooth-retraction).
+Formalized by `MathlibExt.Geometry.Manifold.TubularNeighborhoodWanted.tubular_smoothRetraction`, a theorem declared in [MathlibExt/Geometry/Manifold/TubularNeighborhood.lean, line 590](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/TubularNeighborhood.lean#L590). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/index.html#tubular-smooth-retraction).
 
 ## Depends on
 
@@ -88,4 +88,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Differential topology](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/differential-topology)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/differential-topology)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Several complex variables: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/index.html).
 
 Holomorphic functions on C^n: Hartogs extension and separate analyticity, Weierstrass preparation, complex Hessians.
 
@@ -27,7 +27,7 @@ $f(z, w) = u(z, w) \bigl(w^d + \sum_{j=0}^{d-1} a_j(z) w^j\bigr)$ for all $(z, w
 
 - Weierstrass preparation theorem in several complex variables; see Hörmander; Lean is finite-dimensional E × ℂ product form, order d slice factorization w^d g w, Weierstrass polynomial with vanishing coefficients and unit u, local open U, fixed field ℂ specialization.
 
-Formalized by `MathlibExt.Analysis.Complex.WeierstrassPreparationWanted.weierstrass_preparation`, a theorem declared in [MathlibExt/Analysis/Complex/WeierstrassPreparation.lean, line 1683](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/WeierstrassPreparation.lean#L1683). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/index.html#weierstrass-preparation).
+Formalized by `MathlibExt.Analysis.Complex.WeierstrassPreparationWanted.weierstrass_preparation`, a theorem declared in [MathlibExt/Analysis/Complex/WeierstrassPreparation.lean, line 1683](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/WeierstrassPreparation.lean#L1683). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/index.html#weierstrass-preparation).
 
 ## Depends on
 
@@ -36,4 +36,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Several complex variables](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/several-complex-variables)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/several-complex-variables)

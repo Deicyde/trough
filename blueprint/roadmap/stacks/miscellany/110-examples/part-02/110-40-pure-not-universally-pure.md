@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.40 Pure not universally pure
 
-Section 110.40 of the Stacks Project, [Tag 05JJ](https://stacks.math.columbia.edu/tag/05JJ). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.40 of the Stacks Project, [Tag 05JJ](https://stacks.math.columbia.edu/tag/05JJ). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05JK, a lemma
 
 [Tag 05JK](https://stacks.math.columbia.edu/tag/05JK) in the Stacks Project.
 
-**`Stacks.Examples.exists_isPureRelative_not_isUniversallyPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Flatness/PureNotUniversallyPure.lean, line 828](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Flatness/PureNotUniversallyPure.lean#L828).
+**`Stacks.Examples.exists_isPureRelative_not_isUniversallyPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Flatness/PureNotUniversallyPure.lean, line 828](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Flatness/PureNotUniversallyPure.lean#L828).
 
 > There is a morphism of affine schemes of finite presentation and a module of finite
 > presentation on its source which is pure relative to the base, but not universally pure relative
@@ -43,4 +43,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.40, Tag 05JJ](https://stacks.math.columbia.edu/tag/05JJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

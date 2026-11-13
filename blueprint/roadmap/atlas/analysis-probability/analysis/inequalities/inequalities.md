@@ -7,7 +7,7 @@ statement: formalized
 
 # Inequalities: its own results
 
-6 results, 3 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html).
+6 results, 3 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html).
 
 Classical inequalities for sums, sequences, means and integrals of real or complex numbers: Hardy, Hilbert, Carleman, Wirtinger, Opial, Landau–Kolmogorov, Hermite–Hadamard, Kantorovich and Popoviciu, power-sum and elementary log/exp bounds; inequalities stated with Sobolev norms go to Function spaces, eigenvalue inequalities to Operator theory.
 
@@ -23,7 +23,7 @@ $$
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Inequalities in real analysis), problem `ma_proofbench_l1_01`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.ReciprocalDifferenceSqrtBoundWanted.one_div_one_add_sub_one_div_one_add_mul_le` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/ReciprocalDifferenceSqrtBoundWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/ReciprocalDifferenceSqrtBoundWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html#one-div-one-add-sub-one-div-one-add-mul).
+Stated but not proved: `MathlibExt.Analysis.Calculus.ReciprocalDifferenceSqrtBoundWanted.one_div_one_add_sub_one_div_one_add_mul_le` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/ReciprocalDifferenceSqrtBoundWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/ReciprocalDifferenceSqrtBoundWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html#one-div-one-add-sub-one-div-one-add-mul).
 
 ## Hardy's inequality
 
@@ -42,7 +42,7 @@ Theorem 326.
 
 - G. H. Hardy, *Note on a theorem of Hilbert*, Mathematische Zeitschrift 6 (1920), 314-317: the discrete series form with constant `(p / (p - 1)) ^ p` for `p > 1`.
 
-Formalized by `MetaMathlibExt.hardy_inequality`, a theorem declared in [MathlibExt/Analysis/Series/HardyInequality.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Series/HardyInequality.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html#hardy-inequality).
+Formalized by `MetaMathlibExt.hardy_inequality`, a theorem declared in [MathlibExt/Analysis/Series/HardyInequality.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Series/HardyInequality.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html#hardy-inequality).
 
 ## Hermite–Hadamard inequality
 
@@ -55,7 +55,7 @@ $\frac{1}{b-a} \int_a^b f(x)\,dx \le \frac{f(a) + f(b)}{2}$.
 
 - <https://en.wikipedia.org/wiki/Hermite%E2%80%93Hadamard_inequality>.
 
-Formalized by `MetaMathlibExt.hermite_hadamard`, a theorem declared in [MathlibExt/Analysis/Convex/HermiteHadamard.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/HermiteHadamard.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html#hermite-hadamard).
+Formalized by `MetaMathlibExt.hermite_hadamard`, a theorem declared in [MathlibExt/Analysis/Convex/HermiteHadamard.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/HermiteHadamard.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html#hermite-hadamard).
 
 ## Inequality for square-summable complex sequences
 
@@ -72,7 +72,7 @@ The inequality follows from the Cauchy–Schwarz inequality.
 
 - Open Problem Garden solution comment 73221, https://www.openproblemgarden.org/op/inequality_for_square_summable_complex_series#comment-73221.
 
-Stated but not proved: `MathlibExt.Analysis.SquareSummableComplexInequalityWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Analysis/SquareSummableComplexInequalityWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/SquareSummableComplexInequalityWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Analysis.SquareSummableComplexInequalityWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Analysis/SquareSummableComplexInequalityWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/SquareSummableComplexInequalityWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html#conjecture-holds).
 
 ## Opial's inequality with one boundary condition
 
@@ -86,7 +86,7 @@ $$\int_\alpha^\beta |f(x) f'(x)|\,dx \le \frac{\beta - \alpha}{2} \int_\alpha^\b
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Inequalities in real analysis), problem `ma_proofbench_l1_76`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.OpialTypeIntegralInequalityWanted.integral_abs_mul_deriv_le_of_eq_zero_left` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/OpialTypeIntegralInequalityWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/OpialTypeIntegralInequalityWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html#integral-abs-mul-deriv-le-of-eq-zero-lef).
+Stated but not proved: `MathlibExt.Analysis.Calculus.OpialTypeIntegralInequalityWanted.integral_abs_mul_deriv_le_of_eq_zero_left` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/OpialTypeIntegralInequalityWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/OpialTypeIntegralInequalityWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html#integral-abs-mul-deriv-le-of-eq-zero-lef).
 
 ## Wirtinger's inequality
 
@@ -104,7 +104,7 @@ then let `c` tend to one.
 
 - G. H. Hardy, J. E. Littlewood, and G. Pólya, *Inequalities*, second edition, Cambridge University Press, 1952, §7.7 (the endpoint-zero form on `[0, L]`).
 
-Formalized by `MetaMathlibExt.wirtinger_inequality`, a theorem declared in [MathlibExt/Analysis/Calculus/Wirtinger.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Wirtinger.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html#wirtinger-inequality).
+Formalized by `MetaMathlibExt.wirtinger_inequality`, a theorem declared in [MathlibExt/Analysis/Calculus/Wirtinger.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Wirtinger.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html#wirtinger-inequality).
 
 ## Depends on
 
@@ -113,4 +113,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Inequalities](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/inequalities)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/inequalities)

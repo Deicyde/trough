@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.22 The ubiquity of dualizing complexes
 
-Section 47.22 of the Stacks Project, [Tag 0DWB](https://stacks.math.columbia.edu/tag/0DWB). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 47.22 of the Stacks Project, [Tag 0DWB](https://stacks.math.columbia.edu/tag/0DWB). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AWD, a lemma
 
 [Tag 0AWD](https://stacks.math.columbia.edu/tag/0AWD) in the Stacks Project.
 
-**`Dualizing.isNormalizedDualizingComplex_extendScalars_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/FlatBaseChange.lean, line 925](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/FlatBaseChange.lean#L925).
+**`Dualizing.isNormalizedDualizingComplex_extendScalars_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/FlatBaseChange.lean, line 925](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/FlatBaseChange.lean#L925).
 
 > Let `A → B` be a flat local homomorphism of Noetherian local rings for which the maximal
 > ideal of `A` generates the maximal ideal of `B`. Then the base change to `B` of a normalized
@@ -38,7 +38,7 @@ public theorem isNormalizedDualizingComplex_extendScalars_of_flat
 
 [Tag 0DWC](https://stacks.math.columbia.edu/tag/0DWC) in the Stacks Project.
 
-**`Dualizing.isDualizingComplex_extendScalars_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/FlatBaseChange.lean, line 710](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/FlatBaseChange.lean#L710).
+**`Dualizing.isDualizingComplex_extendScalars_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/FlatBaseChange.lean, line 710](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/FlatBaseChange.lean#L710).
 
 > Let `A → B` be a flat map of Noetherian commutative rings. If the induced map `A/I → B/IB`
 > is bijective and `IB` is contained in the Jacobson radical of `B`, then extending a dualizing
@@ -63,7 +63,7 @@ public theorem isDualizingComplex_extendScalars_of_flat
 
 [Tag 0DWD](https://stacks.math.columbia.edu/tag/0DWD) in the Stacks Project.
 
-**`Dualizing.isDualizingComplex_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/AdicCompletion.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/AdicCompletion.lean#L94). The attribute's comment: “ideal\_adic\_completion”.
+**`Dualizing.isDualizingComplex_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/AdicCompletion.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/AdicCompletion.lean#L94). The attribute's comment: “ideal\_adic\_completion”.
 
 > **Stacks Project, Tag 0DWD.** The derived base change of a dualizing complex
 > to the completion of a Noetherian ring along any ideal is a dualizing complex.
@@ -78,7 +78,7 @@ public theorem isDualizingComplex_adicCompletion
         (algebraMap A (AdicCompletion I A))).mapDerivedCategory).obj K)
 ```
 
-**`Dualizing.isDualizingComplex_completion_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/CompletionHenselization.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/CompletionHenselization.lean#L87). The attribute's comment: “all three parts conjoined”.
+**`Dualizing.isDualizingComplex_completion_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/CompletionHenselization.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/CompletionHenselization.lean#L87). The attribute's comment: “all three parts conjoined”.
 
 > **Stacks Project, Tag 0DWD.** Let `A` be a Noetherian ring, let `I ⊆ A` be an ideal and let
 > `ω_A^•` be a dualizing complex. Then
@@ -137,7 +137,7 @@ theorem isDualizingComplex_completion_henselization
               (algebraMap A Ash)).mapDerivedCategory.obj K))
 ```
 
-**`Dualizing.isDualizingComplex_henselizationPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean#L96). The attribute's comment: “pair\_henselization”.
+**`Dualizing.isDualizingComplex_henselizationPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean#L96). The attribute's comment: “pair\_henselization”.
 
 > **Stacks Project, Tag 0DWD, part (1).** The derived base change of a dualizing complex to
 > the henselization `A^h` of a pair `(A, I)` with `A` Noetherian is a dualizing complex.
@@ -161,7 +161,7 @@ public theorem isDualizingComplex_henselizationPair
       ((ModuleCat.extendScalars.{u, w, v} (algebraMap A Ah)).mapDerivedCategory.obj K)
 ```
 
-**`Dualizing.isDualizingComplex_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean#L147). The attribute's comment: “local\_henselization”.
+**`Dualizing.isDualizingComplex_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean#L147). The attribute's comment: “local\_henselization”.
 
 > **Stacks Project, Tag 0DWD, part (3), the henselization.** The derived base change of a
 > dualizing complex to the henselization `A^h` of a Noetherian local ring `A` is a dualizing
@@ -180,7 +180,7 @@ public theorem isDualizingComplex_henselization
       ((ModuleCat.extendScalars.{u, w, v} (algebraMap A Ah)).mapDerivedCategory.obj K)
 ```
 
-**`Dualizing.isDualizingComplex_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean#L170). The attribute's comment: “local\_strict\_henselization”.
+**`Dualizing.isDualizingComplex_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean#L170). The attribute's comment: “local\_strict\_henselization”.
 
 > **Stacks Project, Tag 0DWD, part (3), the strict henselization.** The derived base change of
 > a dualizing complex to a henselization `A^{sh}` of a Noetherian local ring `A` along a
@@ -206,7 +206,7 @@ public theorem isDualizingComplex_strictHenselization
 
 [Tag 0BFR](https://stacks.math.columbia.edu/tag/0BFR) in the Stacks Project.
 
-**`Dualizing.exists_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Ubiquity.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Ubiquity.lean#L75). The attribute's comment: “fields”.
+**`Dualizing.exists_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Ubiquity.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Ubiquity.lean#L75). The attribute's comment: “fields”.
 
 > **Stacks Project, Tag 0BFR (fields).** Every field has a dualizing complex.
 
@@ -215,7 +215,7 @@ theorem exists_isDualizingComplex (k : Type u) [Field k] :
     ∃ K : DerivedCategory (ModuleCat.{u} k), IsDualizingComplex K
 ```
 
-**`Dualizing.exists_isDualizingComplex_of_isDedekindDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Ubiquity.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Ubiquity.lean#L130). The attribute's comment: “Dedekind domains”.
+**`Dualizing.exists_isDualizingComplex_of_isDedekindDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Ubiquity.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Ubiquity.lean#L130). The attribute's comment: “Dedekind domains”.
 
 > **Stacks Project, Tag 0BFR (Dedekind domains).** A Dedekind domain has a dualizing complex,
 > namely the ring itself in degree zero.
@@ -226,7 +226,7 @@ theorem exists_isDualizingComplex_of_isDedekindDomain (A : Type u) [CommRing A]
     ∃ K : DerivedCategory (ModuleCat.{u} A), IsDualizingComplex K
 ```
 
-**`Dualizing.exists_isDualizingComplex_int`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Ubiquity.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Ubiquity.lean#L138). The attribute's comment: “the integers”.
+**`Dualizing.exists_isDualizingComplex_int`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Ubiquity.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Ubiquity.lean#L138). The attribute's comment: “the integers”.
 
 > **Stacks Project, Tag 0BFR (the integers).** The ring `ℤ` has a dualizing complex, namely
 > `ℤ[0]`: it is a Dedekind domain.
@@ -236,7 +236,7 @@ theorem exists_isDualizingComplex_int :
     ∃ K : DerivedCategory (ModuleCat.{0} ℤ), IsDualizingComplex K
 ```
 
-**`Dualizing.exists_isDualizingComplex_of_isPrecomplete_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityCompleteLocal.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityCompleteLocal.lean#L106). The attribute's comment: “Noetherian complete local rings”.
+**`Dualizing.exists_isDualizingComplex_of_isPrecomplete_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityCompleteLocal.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UbiquityCompleteLocal.lean#L106). The attribute's comment: “Noetherian complete local rings”.
 
 > **Stacks Project, Tag 0BFR, the class of Noetherian complete local rings.** Such a ring has
 > a dualizing complex; the complex produced is in fact normalized, by
@@ -252,7 +252,7 @@ public theorem exists_isDualizingComplex_of_isPrecomplete_maximalIdeal
     ∃ K : DerivedCategory (ModuleCat.{u} A), IsDualizingComplex K
 ```
 
-**`Dualizing.exists_isDualizingComplex_ubiquity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityFiveClasses.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityFiveClasses.lean#L95). The attribute's comment: “all five clauses conjoined”.
+**`Dualizing.exists_isDualizingComplex_ubiquity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityFiveClasses.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UbiquityFiveClasses.lean#L95). The attribute's comment: “all five clauses conjoined”.
 
 > **Stacks Project, Tag 0BFR.** The following types of rings have a dualizing complex:
 >
@@ -325,7 +325,7 @@ theorem exists_isDualizingComplex_ubiquity :
         ∃ M : DerivedCategory (ModuleCat.{max u v w} Ash), IsDualizingComplex M)
 ```
 
-**`Dualizing.exists_isDualizingComplex_of_essentiallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean#L78). The attribute's comment: “clause (5), algebras essentially of finite type”.
+**`Dualizing.exists_isDualizingComplex_of_essentiallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean#L78). The attribute's comment: “clause (5), algebras essentially of finite type”.
 
 > **Stacks Project, Tag 0BFR, clause (5) for algebras essentially of finite type.** If a
 > Noetherian ring `A` has a dualizing complex, then so does every `A`-algebra essentially of finite
@@ -340,7 +340,7 @@ public theorem exists_isDualizingComplex_of_essentiallyOfFiniteType {A B : Type 
       @IsDualizingComplex B _ hB' _ L
 ```
 
-**`Dualizing.exists_isDualizingComplex_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean#L91). The attribute's comment: “clause (5), ideal-adic completions”.
+**`Dualizing.exists_isDualizingComplex_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean#L91). The attribute's comment: “clause (5), ideal-adic completions”.
 
 > **Stacks Project, Tag 0BFR, clause (5) for ideal-adic completions.** If a Noetherian ring `A`
 > has a dualizing complex, then so does its `I`-adic completion for every ideal `I`: the base
@@ -354,7 +354,7 @@ public theorem exists_isDualizingComplex_adicCompletion {A : Type u} [CommRing A
     ∃ L : DerivedCategory (ModuleCat.{u} (AdicCompletion I A)), IsDualizingComplex L
 ```
 
-**`Dualizing.exists_isDualizingComplex_henselizationPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean#L103). The attribute's comment: “clause (5), henselization of a pair”.
+**`Dualizing.exists_isDualizingComplex_henselizationPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean#L103). The attribute's comment: “clause (5), henselization of a pair”.
 
 > **Stacks Project, Tag 0BFR, clause (5) for the henselization of a pair.** If a Noetherian
 > ring `A` has a dualizing complex, then so does the henselization `A^h` of a pair `(A, I)`: the
@@ -376,7 +376,7 @@ public theorem exists_isDualizingComplex_henselizationPair
     ∃ L : DerivedCategory (ModuleCat.{max v w} Ah), IsDualizingComplex L
 ```
 
-**`Dualizing.exists_isDualizingComplex_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean#L123). The attribute's comment: “clause (5), henselization of a local ring”.
+**`Dualizing.exists_isDualizingComplex_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean#L123). The attribute's comment: “clause (5), henselization of a local ring”.
 
 > **Stacks Project, Tag 0BFR, clause (5) for the henselization of a local ring.** If a
 > Noetherian local ring `A` has a dualizing complex, then so does its henselization: the base
@@ -394,7 +394,7 @@ public theorem exists_isDualizingComplex_henselization
     ∃ L : DerivedCategory (ModuleCat.{max v w} Ah), IsDualizingComplex L
 ```
 
-**`Dualizing.exists_isDualizingComplex_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean#L140). The attribute's comment: “clause (5), strict henselization of a local ring”.
+**`Dualizing.exists_isDualizingComplex_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UbiquityStability.lean#L140). The attribute's comment: “clause (5), strict henselization of a local ring”.
 
 > **Stacks Project, Tag 0BFR, clause (5) for a strict henselization of a local ring.** If a
 > Noetherian local ring `A` has a dualizing complex, then so does any henselization of `A` with a
@@ -413,7 +413,7 @@ public theorem exists_isDualizingComplex_strictHenselization
     ∃ M : DerivedCategory (ModuleCat.{max u v w} Ash), IsDualizingComplex M
 ```
 
-**`Dualizing.exists_isDualizingComplex_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean#L103). The attribute's comment: “Noetherian complete local rings”.
+**`Dualizing.exists_isDualizingComplex_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean#L103). The attribute's comment: “Noetherian complete local rings”.
 
 > **Every Noetherian complete local ring has a dualizing complex.** By the Cohen structure
 > theorem the ring is a quotient of a power series ring in finitely many variables over a field or
@@ -434,4 +434,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.22, Tag 0DWB](https://stacks.math.columbia.edu/tag/0DWB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

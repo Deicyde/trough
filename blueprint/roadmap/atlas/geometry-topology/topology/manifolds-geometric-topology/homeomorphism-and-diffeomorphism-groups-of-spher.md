@@ -7,7 +7,7 @@ statement: formalized
 
 # Homeomorphism and diffeomorphism groups of spheres
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/homeomorphism-and-diffeomorphism-groups-of-spher/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/homeomorphism-and-diffeomorphism-groups-of-spher/index.html).
 
 ## Cerf's theorem $\Gamma_4 = 0$
 
@@ -22,7 +22,7 @@ $p \in S^3$.
 
 - J. Cerf, Sur les diffeomorphismes de la sphere de dimension trois, Lecture Notes in Mathematics 53, Springer (1968). Problem `cerf_gamma_four` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Topology.CerfGammaFourWanted.Topology.cerf_gamma_four` is written with `theorem_wanted` in [WantedExt/Topology/CerfGammaFourWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/CerfGammaFourWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/homeomorphism-and-diffeomorphism-groups-of-spher/index.html#cerf-gamma-four).
+Stated but not proved: `MathlibExt.Topology.CerfGammaFourWanted.Topology.cerf_gamma_four` is written with `theorem_wanted` in [WantedExt/Topology/CerfGammaFourWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/CerfGammaFourWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/homeomorphism-and-diffeomorphism-groups-of-spher/index.html#cerf-gamma-four).
 
 ## Normal subgroups of the identity component of the homeomorphism group of a sphere
 
@@ -44,7 +44,7 @@ general.
 
 - S. Ulam, Problem 29 of the Scottish Book; D. B. A. Epstein, The simplicity of certain groups of homeomorphisms, Compositio Mathematica 22 (1970), 165-173; see the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
-Stated but not proved: `MathlibExt.Topology.Manifold.ScottishBook29Wanted.identity_component_of_sphere_homeomorphism_group_simple` is written with `theorem_wanted` in [WantedExt/Topology/Manifold/ScottishBook29Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/Manifold/ScottishBook29Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/homeomorphism-and-diffeomorphism-groups-of-spher/index.html#identity-component-of-sphere-homeomorphi).
+Stated but not proved: `MathlibExt.Topology.Manifold.ScottishBook29Wanted.identity_component_of_sphere_homeomorphism_group_simple` is written with `theorem_wanted` in [WantedExt/Topology/Manifold/ScottishBook29Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/Manifold/ScottishBook29Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/homeomorphism-and-diffeomorphism-groups-of-spher/index.html#identity-component-of-sphere-homeomorphi).
 
 ## Smale conjecture (Hatcher), relative parametrized form
 
@@ -68,7 +68,7 @@ diffeomorphisms, relative to $\partial X$, from the family $F$ to the linear fam
 
 - A. Hatcher, A proof of the Smale conjecture, Diff(S3) = O(4), Ann. of Math. 117 (1983). Problem `smale_conjecture` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Topology.SmaleConjectureWanted.Topology.smale_conjecture` is written with `theorem_wanted` in [WantedExt/Topology/SmaleConjectureWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/SmaleConjectureWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/homeomorphism-and-diffeomorphism-groups-of-spher/index.html#smale-conjecture).
+Stated but not proved: `MathlibExt.Topology.SmaleConjectureWanted.Topology.smale_conjecture` is written with `theorem_wanted` in [WantedExt/Topology/SmaleConjectureWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/SmaleConjectureWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/homeomorphism-and-diffeomorphism-groups-of-spher/index.html#smale-conjecture).
 
 ## The four-dimensional Smale conjecture is false (Watanabe)
 
@@ -92,7 +92,7 @@ is a homotopy equivalence, the analogue of Hatcher's theorem for $S^3$, does not
 
 - T. Watanabe, *Some exotic nontrivial elements of the rational homotopy groups of Diff(S⁴)*, arXiv:1812.02448 (2018). Pairs with the positive S³ statement of Hatcher (Ann. of Math. 117, 1983). Problem `watanabe_four_dim_smale_disproof` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Topology.WatanabeSmaleDisproofWanted.Topology.watanabe_four_dim_smale_disproof` is written with `theorem_wanted` in [WantedExt/Topology/WatanabeSmaleDisproofWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/WatanabeSmaleDisproofWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/homeomorphism-and-diffeomorphism-groups-of-spher/index.html#watanabe-four-dim-smale-disproof).
+Stated but not proved: `MathlibExt.Topology.WatanabeSmaleDisproofWanted.Topology.watanabe_four_dim_smale_disproof` is written with `theorem_wanted` in [WantedExt/Topology/WatanabeSmaleDisproofWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/WatanabeSmaleDisproofWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/homeomorphism-and-diffeomorphism-groups-of-spher/index.html#watanabe-four-dim-smale-disproof).
 
 ## Depends on
 
@@ -101,4 +101,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Homeomorphism and diffeomorphism groups of spheres](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/homeomorphism-and-diffeomorphism-groups-of-spher/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Topology/manifolds-geometric-topology/homeomorphism-and-diffeomorphism-groups-of-spher)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Topology/manifolds-geometric-topology/homeomorphism-and-diffeomorphism-groups-of-spher)

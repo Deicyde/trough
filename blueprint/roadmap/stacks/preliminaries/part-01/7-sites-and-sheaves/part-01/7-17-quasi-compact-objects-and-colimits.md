@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.17 Quasi-compact objects and colimits
 
-Section 7.17 of the Stacks Project, [Tag 090G](https://stacks.math.columbia.edu/tag/090G). 10 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 7.17 of the Stacks Project, [Tag 090G](https://stacks.math.columbia.edu/tag/090G). 10 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 090H, a definition
 
 [Tag 090H](https://stacks.math.columbia.edu/tag/090H) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.IsQuasiCompactObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean#L46). The attribute's comment: “A quasi-compact object of a site: every covering is refined by one that factors through only finitely many of its members.”. References: SGA 4 VI (1.1); SGA 6 II (2.1.1).
+**`CategoryTheory.GrothendieckTopology.IsQuasiCompactObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean#L46). The attribute's comment: “A quasi-compact object of a site: every covering is refined by one that factors through only finitely many of its members.”. References: SGA 4 VI (1.1); SGA 6 II (2.1.1).
 
 > An object `U` of a site `C` is *quasi-compact* if every covering `𝒰 = {U i ⟶ U}` of `U`,
 > given as a `PreZeroHypercover` whose generated sieve `sieve₀` belongs to `J`, admits a covering
@@ -29,7 +29,7 @@ def IsQuasiCompactObject (J : GrothendieckTopology C) (U : C) : Prop
 
 [Tag 0D05](https://stacks.math.columbia.edu/tag/0D05) in the Stacks Project.
 
-**`StacksProblem.finiteSubcovering_imp_finiteRefinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean#L72). The attribute's comment: “(3)⇒(2)”.
+**`StacksProblem.finiteSubcovering_imp_finiteRefinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean#L72). The attribute's comment: “(3)⇒(2)”.
 
 > **Statement (A) — (3) ⇒ (2).** If `U` has the finite subcovering property,
 > then `U` has the finite refinement property.
@@ -40,7 +40,7 @@ theorem finiteSubcovering_imp_finiteRefinement
     HasFiniteRefinement K U
 ```
 
-**`StacksProblem.finiteRefinement_imp_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean#L82). The attribute's comment: “(2)⇒(1)”.
+**`StacksProblem.finiteRefinement_imp_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean#L82). The attribute's comment: “(2)⇒(1)”.
 
 > **Statement (B) — (2) ⇒ (1).** If `U` has the finite refinement property,
 > then `U` is quasi-compact.
@@ -51,7 +51,7 @@ theorem finiteRefinement_imp_quasiCompact
     IsQuasiCompact K U
 ```
 
-**`StacksProblem.exists_finiteRefinement_not_finiteSubcovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean#L519). The attribute's comment: “(2)⇏(3)”.
+**`StacksProblem.exists_finiteRefinement_not_finiteSubcovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean, line 519](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean#L519). The attribute's comment: “(2)⇏(3)”.
 
 > **Statement (D) — (2) ⇏ (3).** There exists a site (`C`, `K`, `U`) such that
 > `U` has the finite refinement property but does not have the finite subcovering
@@ -63,7 +63,7 @@ theorem exists_finiteRefinement_not_finiteSubcovering :
       (K : Pretopology C) (U : C), HasFiniteRefinement K U ∧ ¬ HasFiniteSubcovering K U
 ```
 
-**`StacksProblem.exists_quasiCompact_not_finiteRefinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean, line 736](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean#L736). The attribute's comment: “(1)⇏(2)”.
+**`StacksProblem.exists_quasiCompact_not_finiteRefinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean, line 736](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteRefinements.lean#L736). The attribute's comment: “(1)⇏(2)”.
 
 > **Statement (C) — (1) ⇏ (2).** There exists a site (`C`, `K`, `U`) such that
 > `U` is quasi-compact but does not have the finite refinement property.
@@ -78,7 +78,7 @@ theorem exists_quasiCompact_not_finiteRefinement :
 
 [Tag 0D06](https://stacks.math.columbia.edu/tag/0D06) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.isQuasiCompactObject_iff_isQuasiCompact_sheafifiedYoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/ObjectsAndColimits.lean, line 927](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact/ObjectsAndColimits.lean#L927). The attribute's comment: “An object of a site is quasi-compact if and only if the sheafification of the presheaf it represents is a quasi-compact object of the topos of sheaves of sets.”. References: SGA 4 VI (1.2).
+**`CategoryTheory.GrothendieckTopology.isQuasiCompactObject_iff_isQuasiCompact_sheafifiedYoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/ObjectsAndColimits.lean, line 927](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact/ObjectsAndColimits.lean#L927). The attribute's comment: “An object of a site is quasi-compact if and only if the sheafification of the presheaf it represents is a quasi-compact object of the topos of sheaves of sets.”. References: SGA 4 VI (1.2).
 
 > **Stacks 0D06.** Let `C` be a site and `U` an object of `C`. The following are equivalent:
 >
@@ -101,7 +101,7 @@ public theorem isQuasiCompactObject_iff_isQuasiCompact_sheafifiedYoneda {C : Typ
 
 [Tag 0D07](https://stacks.math.columbia.edu/tag/0D07) in the Stacks Project.
 
-**`CategoryTheory.Sheaf.IsQuasiCompact`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean#L75). The tag is given by the `attribute` command at [StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean#L98). The attribute's comment: “The definition of a quasi-compact object of the topos of sheaves of sets on a site.”. References: SGA 4 IV (8.7), “more general”; SGA 4 IX (1.2).
+**`CategoryTheory.Sheaf.IsQuasiCompact`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean#L76). The attribute's comment: “A quasi-compact object of the topos of sheaves of sets on a site.”. References: SGA 4 IV (8.7), “more general”; SGA 4 IX (1.2).
 
 > An object `F` of the topos `Sh(C)` of sheaves of sets on a site is *quasi-compact* if for
 > every locally surjective map `∐_{i ∈ I} G i ⟶ F` of sheaves there is a finite subset `T ⊆ I` for
@@ -111,7 +111,7 @@ public theorem isQuasiCompactObject_iff_isQuasiCompact_sheafifiedYoneda {C : Typ
 def IsQuasiCompact (F : Sheaf J (Type max v u)) : Prop
 ```
 
-**`CategoryTheory.GrothendieckTopology.IsQuasiCompactTopos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean#L91). The tag is given by the `attribute` command at [StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean#L102). The attribute's comment: “The definition of a quasi-compact topos: its final object is a quasi-compact object.”. References: SGA 4 IV (8.7).
+**`CategoryTheory.GrothendieckTopology.IsQuasiCompactTopos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact.lean#L93). The attribute's comment: “A quasi-compact topos: its final object is a quasi-compact object.”. References: SGA 4 IV (8.7).
 
 > The topos `Sh(C)` of sheaves of sets on a site is *quasi-compact* if its final object is a
 > quasi-compact object.
@@ -124,7 +124,7 @@ def IsQuasiCompactTopos (J : GrothendieckTopology C) : Prop
 
 [Tag 0GMP](https://stacks.math.columbia.edu/tag/0GMP) in the Stacks Project.
 
-**`CategoryTheory.Sheaf.isQuasiCompact_of_isLocallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/LocallySurjectiveTransfer.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact/LocallySurjectiveTransfer.lean#L175). The attribute's comment: “(2)”.
+**`CategoryTheory.Sheaf.isQuasiCompact_of_isLocallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/LocallySurjectiveTransfer.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact/LocallySurjectiveTransfer.lean#L176). The attribute's comment: “(2)”.
 
 > Quasi-compactness of a sheaf of sets passes along a surjection `φ : F ⟶ G`.
 
@@ -134,7 +134,7 @@ theorem isQuasiCompact_of_isLocallySurjective {F G : Sheaf J (Type max u v)} (φ
     IsQuasiCompact G
 ```
 
-**`CategoryTheory.Sheaf.isQuasiCompact_sheafifiedYoneda_of_isLocallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/LocallySurjectiveTransfer.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact/LocallySurjectiveTransfer.lean#L191). The attribute's comment: “(1)”.
+**`CategoryTheory.Sheaf.isQuasiCompact_sheafifiedYoneda_of_isLocallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/LocallySurjectiveTransfer.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact/LocallySurjectiveTransfer.lean#L192). The attribute's comment: “(1)”.
 
 > If `f : U ⟶ V` sheafifies to a surjection `h_U^# ⟶ h_V^#` of sheafified representables and
 > `h_U^#` is quasi-compact, then so is `h_V^#`.
@@ -150,7 +150,7 @@ theorem isQuasiCompact_sheafifiedYoneda_of_isLocallySurjective {U V : C} (f : U 
 
 [Tag 0GMQ](https://stacks.math.columbia.edu/tag/0GMQ) in the Stacks Project.
 
-**`Sheaf.quasiCompact_coproduct_fin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteCoproducts.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteCoproducts.lean#L400). References: SGA 4 VI (1.3), “special case”; SGA 4 VI (1.4), “partial”.
+**`Sheaf.quasiCompact_coproduct_fin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteCoproducts.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact/FiniteCoproducts.lean#L400). References: SGA 4 VI (1.3), “special case”; SGA 4 VI (1.4), “partial”.
 
 > **Stacks Tag 0GMQ, Lemma 7.17.6.**
 >
@@ -173,7 +173,7 @@ theorem Sheaf.quasiCompact_coproduct_fin
 
 [Tag 0738](https://stacks.math.columbia.edu/tag/0738) in the Stacks Project.
 
-**`CategoryTheory.Sheaf.injective_and_bijective_colimit_post_sheafSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/ObjectsAndColimits.lean, line 699](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact/ObjectsAndColimits.lean#L699). The attribute's comment: “Sections over U of a filtered colimit of sheaves of sets.”. References: SGA 4 VI (1.23), “(i) qc ⇒ inj”.
+**`CategoryTheory.Sheaf.injective_and_bijective_colimit_post_sheafSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/ObjectsAndColimits.lean, line 699](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact/ObjectsAndColimits.lean#L699). The attribute's comment: “Sections over U of a filtered colimit of sheaves of sets.”. References: SGA 4 VI (1.23), “(i) qc ⇒ inj”.
 
 > **Stacks 0738.** Let `C` be a site, `F : I ⥤ Sheaf J (Type max u v)` a filtered diagram of
 > sheaves of sets and `U` an object of `C`. For the canonical map
@@ -213,7 +213,7 @@ public theorem injective_and_bijective_colimit_post_sheafSections {C : Type u} [
 
 [Tag 0GMR](https://stacks.math.columbia.edu/tag/0GMR) in the Stacks Project.
 
-**`CategoryTheory.Sheaf.injective_and_bijective_colimit_post_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/ObjectsAndColimits.lean, line 2190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact/ObjectsAndColimits.lean#L2190). The attribute's comment: “Global sections of a filtered colimit of sheaves of sets.”. References: SGA 4 VI (1.23), “(i) qc⇒inj, X terminal”.
+**`CategoryTheory.Sheaf.injective_and_bijective_colimit_post_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/ObjectsAndColimits.lean, line 2190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact/ObjectsAndColimits.lean#L2190). The attribute's comment: “Global sections of a filtered colimit of sheaves of sets.”. References: SGA 4 VI (1.23), “(i) qc⇒inj, X terminal”.
 
 > **Stacks 0GMR.** Let `C` be a site and `F : I ⥤ Sheaf J (Type max u v)` a filtered diagram
 > of sheaves of sets. For the canonical map
@@ -251,136 +251,79 @@ public theorem injective_and_bijective_colimit_post_globalSections {C : Type u} 
 
 [Tag 0GMS](https://stacks.math.columbia.edu/tag/0GMS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_fin_affineObjects_isLocallySurjective_prodLift_absolute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAbsolute.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAbsolute.lean#L238). The attribute's comment: “condition (2)(c) for the fppf site of a quasi-separated algebraic stack, with the collection B of Stacks 0GQV: the objects of the site lying over affine schemes; the family produced has one member, as in the source”.
+**`CategoryTheory.Sheaf.forall_exists_mem_coveringSetOfObjects_and_isQuasiCompact_prod_self_of_isQuasiCompactTopos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/CoveringSetFromCoversTop.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact/CoveringSetFromCoversTop.lean#L135). The attribute's comment: “case (3)”.
 
-> **Condition (2)(c) of Stacks 0GMS for the fppf site of a quasi-separated algebraic stack**, in
-> the shape
-> `AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_fppf` consumes as its
-> hypothesis `h_product`: for two objects `x`, `x'` of the site lying over affine schemes there is a
-> finite family of such objects, with a morphism to `x` and a morphism to `x'` from each, whose
-> sheafified representables jointly cover `h_x^# ⨯ h_{x'}^#`.
+> **Stacks 0GMS, case (3).** Let `C` be a site such that
 >
-> The family has one member, as in the source. It is the object the quadruple of
-> `AlgebraicGeometry.Stack.exists_quadruple_dominating` classifies, with the two morphisms that
-> quadruple classifies, and the covering assertion is
-> `AlgebraicGeometry.Stack`
-> `.isLocallySurjective_prodLift_fppfTopology_of_exists_quadruple_dominating_base`.
-> Quasi-compactness of the 2-fibre product, which is what produces the quadruple, is
-> `AlgebraicGeometry.Stack`
-> `.isQuasiCompactStack_twoFibreProductAlgebraicStack_objectMorphism_absolute`.
+> * (a) `Sh(C)` is quasi-compact (Stacks 0D07),
+> * (b) every object of `C` has a covering whose members are quasi-compact objects (Stacks 090H),
+> * (c) if `U` and `U'` are quasi-compact objects then the sheaf `h_U^# ⨯ h_{U'}^#` is
+>   quasi-compact.
+>
+> Then the hypotheses of part (4) of Stacks 0GMR are satisfied by the set `S` of finite coproducts of
+> the sheaves `h_U^#` for `U` a quasi-compact object of `C`, which is
+> `CategoryTheory.Sheaf.coveringSetOfObjects J {U | J.IsQuasiCompactObject U}`: every sheaf of sets
+> `G` surjecting onto the final sheaf receives a morphism from a member `K` of `S` with `K ⟶ *`
+> surjective, and `K ⨯ K` is quasi-compact for every `K ∈ S`.
+>
+> The source states this without proof. *Proof.* For (4)(b), (c) is hypothesis (1)(b) of the remark
+> for the set of quasi-compact objects, and
+> `CategoryTheory.Sheaf.isQuasiCompact_prod_self_of_mem_coveringSetOfObjects` applies. For (4)(a),
+> let `G ⟶ *` be surjective and index a family by the pairs `(U, s)` with `U` quasi-compact and
+> `s ∈ G(U)`. These objects cover the final object: every object `W` has a covering on whose members
+> `G` has a section, each member has a covering by quasi-compact objects by (b), and `G` has
+> sections over these by restriction. So `∐_{(U, s)} h_U^# ⟶ *` is surjective
+> (`isLocallySurjective_terminal_from_sigma_sheafifiedYoneda`); by (a) a finite subfamily is
+> already surjective, its coproduct `K` lies in `S`, and the sections `s` give `K ⟶ G`.
 
 ```lean
-theorem exists_fin_affineObjects_isLocallySurjective_prodLift_absolute
-    (hZ : B.Contains (⊤_ Scheme.{u}))
-    (h𝒳 : AlgebraicStacks.IsAbsolutelyQuasiSeparated.{u, w} B S hS hZ 𝒳) :
-    ∀ U ∈ affineObjects B S hS 𝒳.val, ∀ U' ∈ affineObjects B S hS 𝒳.val,
-      ∃ (m : ℕ) (V : Fin m → 𝒳.val.val.obj),
-        (∀ i, V i ∈ affineObjects B S hS 𝒳.val) ∧
-          ∃ (p : ∀ i, V i ⟶ U) (q : ∀ i, V i ⟶ U'),
-            Sheaf.IsLocallySurjective (Limits.Sigma.desc fun i =>
-              prod.lift ((Sheaf.sheafifiedYoneda (fppfTopology B S hS 𝒳.val)).map (p i))
-                ((Sheaf.sheafifiedYoneda (fppfTopology B S hS 𝒳.val)).map (q i)))
+theorem forall_exists_mem_coveringSetOfObjects_and_isQuasiCompact_prod_self_of_isQuasiCompactTopos
+    (ha : J.IsQuasiCompactTopos)
+    (hb : ∀ W : C, ∃ 𝒰 : PreZeroHypercover.{max u v} W,
+      𝒰.sieve₀ ∈ J W ∧ ∀ i, J.IsQuasiCompactObject (𝒰.X i))
+    (hc : ∀ U U' : C, J.IsQuasiCompactObject U → J.IsQuasiCompactObject U' →
+      IsQuasiCompact ((sheafifiedYoneda J).obj U ⨯ (sheafifiedYoneda J).obj U')) :
+    (∀ G : Sheaf J (Type max u v), IsLocallySurjective (terminal.from G) →
+        ∃ K ∈ coveringSetOfObjects J {U | J.IsQuasiCompactObject U}, Nonempty (K ⟶ G) ∧
+          IsLocallySurjective (terminal.from K)) ∧
+      ∀ K ∈ coveringSetOfObjects J {U | J.IsQuasiCompactObject U}, IsQuasiCompact (K ⨯ K)
 ```
 
-**`AlgebraicGeometry.Stack.exists_fin_affineObjects_isLocallySurjective_prodLift_etale_absolute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAbsolute.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAbsolute.lean#L368). The attribute's comment: “condition (2)(c) for the étale site of a quasi-separated algebraic stack, with the collection B of Stacks 0GQV: the objects of the site lying over affine schemes; the family produced has one member, as in the source”.
+**`CategoryTheory.Sheaf.forall_exists_mem_coveringSetOfObjects_and_isQuasiCompact_prod_self_of_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/CoveringSetOfObjects.lean, line 463](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact/CoveringSetOfObjects.lean#L463). The attribute's comment: “case (1)”.
 
-> **Condition (2)(c) of Stacks 0GMS for the étale site of a quasi-separated algebraic stack**,
-> in the shape
-> `AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_etale` consumes as its
-> hypothesis `h_product`: for two objects `x`, `x'` of the étale site lying over affine schemes
-> there is a finite family of such objects, with a morphism to `x` and a morphism to `x'` from each,
-> whose sheafified representables jointly cover `h_x^# ⨯ h_{x'}^#`.
+> **Stacks 0GMS, case (1).** Let `C` be a site and `B ⊆ Ob(C)` a set of objects such that
 >
-> This is
-> `AlgebraicGeometry.Stack`
-> `.exists_fin_affineObjects_isLocallySurjective_prodLift_associatedTopology_absolute`
-> at the big étale
-> topology, its fibre-lifting hypothesis discharged by **Stacks 06XH** part (2),
-> `AlgebraicGeometry.Stack.exists_etaleCovering_fibre_lift`, which reads the fibre lifts of a
-> surjective smooth 1-morphism off an *étale* covering of the base. The affine smooth presentation
-> of **Stacks 04YC** is smooth and surjective, which is exactly what that tag asks for, so the
-> étale case needs nothing of the presentation beyond what the fppf case needs — in particular no
-> affine étale presentation of a quasi-compact algebraic stack. The family has one member, as in the
-> source.
+> * (a) for every surjection `G ⟶ *` there are finitely many `U₁, …, U_m ∈ B` with `G(U_j)`
+>   nonempty and `∐_j h_{U_j}^# ⟶ *` surjective,
+> * (b) for `U, U' ∈ B` the sheaf `h_U^# ⨯ h_{U'}^#` is quasi-compact.
+>
+> Then the hypotheses of part (4) of Stacks 0GMR are satisfied by the set `S` of finite coproducts of
+> the sheafified representables of members of `B`, i.e.
+> `CategoryTheory.Sheaf.coveringSetOfObjects J B`: every sheaf of sets `G` surjecting onto the final
+> sheaf receives a morphism from a member `K` of `S` with `K ⟶ *` surjective, and `K ⨯ K` is
+> quasi-compact for every `K ∈ S`.
+>
+> The source states this without proof. *Proof.* For (4)(a), the coproduct `K = ∐_j h_{U_j}^#` of
+> the family (a) provides lies in `S`, the chosen sections of `G` over the `U_j` give `K ⟶ G`
+> (`CategoryTheory.Sheaf.sectionEquiv`), and `K ⟶ *` is surjective by (a). Clause (4)(b) is
+> `isQuasiCompact_prod_self_of_mem_coveringSetOfObjects`.
 
 ```lean
-theorem exists_fin_affineObjects_isLocallySurjective_prodLift_etale_absolute
-    (hZ : B.Contains (⊤_ Scheme.{u}))
-    (h𝒳 : AlgebraicStacks.IsAbsolutelyQuasiSeparated.{u, w} B S hS hZ 𝒳) :
-    ∀ U ∈ affineObjects B S hS 𝒳.val, ∀ U' ∈ affineObjects B S hS 𝒳.val,
-      ∃ (m : ℕ) (V : Fin m → 𝒳.val.val.obj),
-        (∀ i, V i ∈ affineObjects B S hS 𝒳.val) ∧
-          ∃ (p : ∀ i, V i ⟶ U) (q : ∀ i, V i ⟶ U'),
-            Sheaf.IsLocallySurjective (Limits.Sigma.desc fun i =>
-              prod.lift
-                ((Sheaf.sheafifiedYoneda
-                  (associatedTopology B S hS 𝒳.val.val.p (etaleTopology B))).map (p i))
-                ((Sheaf.sheafifiedYoneda
-                  (associatedTopology B S hS 𝒳.val.val.p (etaleTopology B))).map (q i)))
+theorem forall_exists_mem_coveringSetOfObjects_and_isQuasiCompact_prod_self_of_nonempty
+    {B : Set C}
+    (ha : ∀ G : Sheaf J (Type max u v), IsLocallySurjective (terminal.from G) →
+      ∃ (ι : Type max u v) (_ : Finite ι) (U : ι → C), (∀ i, U i ∈ B) ∧
+        (∀ i, Nonempty (G.obj.obj (op (U i)))) ∧
+        IsLocallySurjective (terminal.from (∐ fun i => (sheafifiedYoneda J).obj (U i))))
+    (hb : ∀ U ∈ B, ∀ U' ∈ B,
+      IsQuasiCompact ((sheafifiedYoneda J).obj U ⨯ (sheafifiedYoneda J).obj U')) :
+    (∀ G : Sheaf J (Type max u v), IsLocallySurjective (terminal.from G) →
+        ∃ K ∈ coveringSetOfObjects J B, Nonempty (K ⟶ G) ∧
+          IsLocallySurjective (terminal.from K)) ∧
+      ∀ K ∈ coveringSetOfObjects J B, IsQuasiCompact (K ⨯ K)
 ```
 
-**`AlgebraicGeometry.Stack.exists_fin_affineObjects_isLocallySurjective_prodLift_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleProductAffineCover.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleProductAffineCover.lean#L396). The attribute's comment: “condition (2)(c) for the étale site of an algebraic stack quasi-separated over a quasi-separated base scheme, with the collection B of Stacks 0GQV: the objects of the site lying over affine schemes; the family produced has one member, as in the source”.
-
-> **Condition (2)(c) of Stacks 0GMS for the étale site of an algebraic stack quasi-separated
-> over a quasi-separated base scheme**, in the shape
-> `AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_etale` consumes as its
-> hypothesis `h_product`: for two objects `x`, `x'` of the étale site lying over affine schemes
-> there is a finite family of such objects, with a morphism to `x` and a morphism to `x'` from each,
-> whose sheafified representables jointly cover `h_x^# ⨯ h_{x'}^#`.
->
-> This is
-> `AlgebraicGeometry.Stack`
-> `.exists_fin_affineObjects_isLocallySurjective_prodLift_associatedTopology` at the big étale
-> topology, its fibre-lifting hypothesis discharged by **Stacks 06XH** part (2),
-> `AlgebraicGeometry.Stack.exists_etaleCovering_fibre_lift`, which reads the fibre lifts of a
-> surjective smooth 1-morphism off an *étale* covering of the base. The affine smooth presentation
-> of **Stacks 04YC** is smooth and surjective, which is exactly what that tag asks for, so the
-> étale case needs nothing of the presentation beyond what the fppf case needs — in particular no
-> affine étale presentation of a quasi-compact algebraic stack. The family has one member, as in the
-> source.
-
-```lean
-theorem exists_fin_affineObjects_isLocallySurjective_prodLift_etale
-    (hqsS : QuasiSeparatedSpace S) (h𝒳 : IsQuasiSeparatedOver.{u, w} B S hS 𝒳) :
-    ∀ U ∈ affineObjects B S hS 𝒳.val, ∀ U' ∈ affineObjects B S hS 𝒳.val,
-      ∃ (m : ℕ) (V : Fin m → 𝒳.val.val.obj),
-        (∀ i, V i ∈ affineObjects B S hS 𝒳.val) ∧
-          ∃ (p : ∀ i, V i ⟶ U) (q : ∀ i, V i ⟶ U'),
-            Sheaf.IsLocallySurjective (Limits.Sigma.desc fun i =>
-              prod.lift
-                ((Sheaf.sheafifiedYoneda
-                  (associatedTopology B S hS 𝒳.val.val.p (etaleTopology B))).map (p i))
-                ((Sheaf.sheafifiedYoneda
-                  (associatedTopology B S hS 𝒳.val.val.p (etaleTopology B))).map (q i)))
-```
-
-**`AlgebraicGeometry.Stack.exists_fin_affineObjects_isLocallySurjective_prodLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyProductAffineCover.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyProductAffineCover.lean#L394). The attribute's comment: “condition (2)(c) for the fppf site of an algebraic stack quasi-separated over a quasi-separated base scheme, with the collection B of Stacks 0GQV: the objects of the site lying over affine schemes; the family produced has one member, as in the source”.
-
-> **Condition (2)(c) of Stacks 0GMS for the fppf site of an algebraic stack quasi-separated over
-> a quasi-separated base scheme**, in the shape
-> `AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_fppf` consumes as its
-> hypothesis `h_product`: for two objects `x`, `x'` of the site lying over affine schemes there is a
-> finite family of such objects, with a morphism to `x` and a morphism to `x'` from each, whose
-> sheafified representables jointly cover `h_x^# ⨯ h_{x'}^#`.
->
-> The family has one member, as in the source: it is the one of
-> `AlgebraicGeometry.Stack.exists_affineObject_exists_covering_hom_pair`, and the passage from the
-> factorisation of pairs of morphisms there to the surjection of sheaves here is
-> `AlgebraicGeometry.Stack.isLocallySurjective_prodLift_fppfTopology_of_exists_covering`.
-
-```lean
-theorem exists_fin_affineObjects_isLocallySurjective_prodLift
-    (hqsS : QuasiSeparatedSpace S) (h𝒳 : IsQuasiSeparatedOver.{u, w} B S hS 𝒳) :
-    ∀ U ∈ affineObjects B S hS 𝒳.val, ∀ U' ∈ affineObjects B S hS 𝒳.val,
-      ∃ (m : ℕ) (V : Fin m → 𝒳.val.val.obj),
-        (∀ i, V i ∈ affineObjects B S hS 𝒳.val) ∧
-          ∃ (p : ∀ i, V i ⟶ U) (q : ∀ i, V i ⟶ U'),
-            Sheaf.IsLocallySurjective (Limits.Sigma.desc fun i =>
-              prod.lift ((Sheaf.sheafifiedYoneda (fppfTopology B S hS 𝒳.val)).map (p i))
-                ((Sheaf.sheafifiedYoneda (fppfTopology B S hS 𝒳.val)).map (q i)))
-```
-
-**`CategoryTheory.Sheaf.exists_set_isLocallySurjective_and_isQuasiCompact_prod_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/CoveringSetOfObjects.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact/CoveringSetOfObjects.lean#L457). The attribute's comment: “case (2)”.
+**`CategoryTheory.Sheaf.forall_exists_mem_coveringSetOfObjects_and_isQuasiCompact_prod_self_of_finite_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/CoveringSetOfObjects.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact/CoveringSetOfObjects.lean#L499). The attribute's comment: “case (2)”.
 
 > **Stacks 0GMS, case (2).** Let `C` be a site and `B ⊆ Ob(C)` a set of objects such that
 >
@@ -389,21 +332,22 @@ theorem exists_fin_affineObjects_isLocallySurjective_prodLift
 > * (c) for `U, U' ∈ B` there are finitely many `V_1, …, V_m ∈ B` with morphisms `V_k ⟶ U` and
 >   `V_k ⟶ U'` for which `∐_k h_{V_k}^# ⟶ h_U^# ⨯ h_{U'}^#` is surjective.
 >
-> Then the hypotheses of part (4) of Stacks 0GMR are satisfied, with
-> `S = CategoryTheory.Sheaf.coveringSetOfObjects J B` the set of finite coproducts of the sheafified
-> representables of members of `B`.
+> Then the hypotheses of part (4) of Stacks 0GMR are satisfied by the set `S` of finite coproducts of
+> the sheafified representables of members of `B`, i.e.
+> `CategoryTheory.Sheaf.coveringSetOfObjects J B`: every sheaf of sets `G` surjecting onto the final
+> sheaf receives a morphism from a member `K` of `S` with `K ⟶ *` surjective, and `K ⨯ K` is
+> quasi-compact for every `K ∈ S`.
 >
-> The two clauses are `exists_mem_coveringSetOfObjects` and
-> `isQuasiCompact_prod_self_of_mem_coveringSetOfObjects`; the latter consumes (b) and (c) through
-> `CategoryTheory.GrothendieckTopology.isQuasiCompactObject_of_exists_finite_refinement` and
-> `isQuasiCompact_prod_sheafifiedYoneda_of_isLocallySurjective`. The existential over `S` is the
-> shape in which Stacks 0GMR (4) states its hypothesis, and `S` is pinned to the set the source
-> displays rather than merely asserted to exist.
->
-> Cases (1) and (3) of the remark are not proved here.
+> The source states this without proof. Clause (4)(a) is `exists_mem_coveringSetOfObjects`, from (a)
+> and (b). Clause (4)(b) is `isQuasiCompact_prod_self_of_mem_coveringSetOfObjects`, once (b) makes
+> every member of `B` a quasi-compact object
+> (`CategoryTheory.GrothendieckTopology.isQuasiCompactObject_of_exists_finite_refinement`) and (c)
+> then makes `h_U^# ⨯ h_{U'}^#` quasi-compact
+> (`isQuasiCompact_prod_sheafifiedYoneda_of_isLocallySurjective`).
 
 ```lean
-theorem exists_set_isLocallySurjective_and_isQuasiCompact_prod_self {B : Set C}
+theorem forall_exists_mem_coveringSetOfObjects_and_isQuasiCompact_prod_self_of_finite_refinement
+    {B : Set C}
     (ha : ∃ (ι : Type max u v) (_ : Finite ι) (U : ι → C), (∀ i, U i ∈ B) ∧
       IsLocallySurjective (terminal.from (∐ fun i => (sheafifiedYoneda J).obj (U i))))
     (hb : ∀ U ∈ B, ∀ 𝒰 : PreZeroHypercover.{max u v} U, 𝒰.sieve₀ ∈ J U →
@@ -413,17 +357,17 @@ theorem exists_set_isLocallySurjective_and_isQuasiCompact_prod_self {B : Set C}
       (a : ∀ i, V i ⟶ U) (b : ∀ i, V i ⟶ U'), (∀ i, V i ∈ B) ∧
         IsLocallySurjective (Sigma.desc fun i =>
           prod.lift ((sheafifiedYoneda J).map (a i)) ((sheafifiedYoneda J).map (b i)))) :
-    ∃ S : Set (Sheaf J (Type max u v)),
-      (∀ G : Sheaf J (Type max u v), IsLocallySurjective (terminal.from G) →
-          ∃ K ∈ S, Nonempty (K ⟶ G) ∧ IsLocallySurjective (terminal.from K)) ∧
-        ∀ K ∈ S, IsQuasiCompact (K ⨯ K)
+    (∀ G : Sheaf J (Type max u v), IsLocallySurjective (terminal.from G) →
+        ∃ K ∈ coveringSetOfObjects J B, Nonempty (K ⟶ G) ∧
+          IsLocallySurjective (terminal.from K)) ∧
+      ∀ K ∈ coveringSetOfObjects J B, IsQuasiCompact (K ⨯ K)
 ```
 
 ## Tag 0GS0, a lemma
 
 [Tag 0GS0](https://stacks.math.columbia.edu/tag/0GS0) in the Stacks Project.
 
-**`Stacks.Sites.ColimitCofinality.sections_commute_colimit_of_cofinality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/ColimitCofinality.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/QuasiCompact/ColimitCofinality.lean#L494).
+**`Stacks.Sites.ColimitCofinality.sections_commute_colimit_of_cofinality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/QuasiCompact/ColimitCofinality.lean, line 494](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/QuasiCompact/ColimitCofinality.lean#L494).
 
 > **(Stacks 0GS0.) Sections commute with colimits along ordinals of large enough cofinality.**
 >
@@ -448,4 +392,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.17, Tag 090G](https://stacks.math.columbia.edu/tag/090G)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

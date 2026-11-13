@@ -7,7 +7,7 @@ statement: formalized
 
 # Discrete geometry: its own results
 
-6 results, 4 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/index.html).
+6 results, 4 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/index.html).
 
 Finite point configurations and their distances, polytopes and polyhedra, dissections and tilings, lattice points and extremal shape problems.
 
@@ -22,7 +22,7 @@ if and only if $L$ is a $\mathbb{Z}$-lattice in $E$, that is, $L$ spans $E$ over
 
 - ATLAS `NumberTheoryI`, Lemma 14.3 (full-rank clause only).
 
-Formalized by `Submodule.discrete_full_rank_iff_isZLattice`, a theorem declared in [MathlibExt/Geometry/DiscreteFullRankZLattice.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/DiscreteFullRankZLattice.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/index.html#discrete-full-rank-iff-is-zlattice).
+Formalized by `Submodule.discrete_full_rank_iff_isZLattice`, a theorem declared in [MathlibExt/Geometry/DiscreteFullRankZLattice.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/DiscreteFullRankZLattice.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/index.html#discrete-full-rank-iff-is-zlattice).
 
 ## Erdős–Anning theorem
 
@@ -33,7 +33,7 @@ integer distances is collinear.
 
 - N. H. Anning and P. Erdős, "Integral distances," Bull. Amer. Math. Soc. 51 (1945), 598–600; P. Erdős, "Integral distances," Bull. Amer. Math. Soc. 51 (1945), 996. Overview: https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Anning_theorem
 
-Formalized by `MetaMathlibExt.erdos_anning`, a theorem declared in [MathlibExt/Geometry/Euclidean/ErdosAnning.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/ErdosAnning.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/index.html#erdos-anning).
+Formalized by `MetaMathlibExt.erdos_anning`, a theorem declared in [MathlibExt/Geometry/Euclidean/ErdosAnning.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/ErdosAnning.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/index.html#erdos-anning).
 
 ## Euler's polyhedron formula
 
@@ -71,7 +71,7 @@ the edges and facets of $P$.
 
 - https://en.wikipedia.org/wiki/Euler_characteristic.
 
-Stated but not proved: `MetaMathlibExt.euler_polyhedron_formula` is written with `theorem_wanted` in [WantedExt/Geometry/Polyhedra/EulerPolyhedronFormulaWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/Polyhedra/EulerPolyhedronFormulaWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/index.html#euler-polyhedron-formula).
+Stated but not proved: `MetaMathlibExt.euler_polyhedron_formula` is written with `theorem_wanted` in [WantedExt/Geometry/Polyhedra/EulerPolyhedronFormulaWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/Polyhedra/EulerPolyhedronFormulaWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/index.html#euler-polyhedron-formula).
 
 ## Monsky's theorem
 
@@ -88,7 +88,7 @@ count supplies a rainbow triangle whose area valuation rules out an odd number o
 
 - Paul Monsky, "On Dividing A Square Into Triangles," *The American Mathematical Monthly* 77(2) (1970), 161–164, DOI 10.1080/00029890.1970.11992441.
 
-Formalized by `MetaMathlibExt.monsky_theorem`, a theorem declared in [MathlibExt/Geometry/Dissections/Monsky.lean, line 2763](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Dissections/Monsky.lean#L2763). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/index.html#monsky-theorem).
+Formalized by `MetaMathlibExt.monsky_theorem`, a theorem declared in [MathlibExt/Geometry/Dissections/Monsky.lean, line 2763](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Dissections/Monsky.lean#L2763). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/index.html#monsky-theorem).
 
 ## Squaring the square with distinct squares
 
@@ -102,7 +102,7 @@ interiors.
 
 - S. Ruziewicz, Problem 59 of the Scottish Book, asking whether a square can be decomposed into a finite number of squares all different from one another; the answer is affirmative. The first published solution is R. Sprague's 1939 squaring of the square with distinct squares; see the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015), and the 2026 survey "90+ years of the Scottish Book" (arXiv:2603.27867).
 
-Stated but not proved: `MathlibExt.Geometry.ScottishBook59Wanted.squaringTheSquareDistinctSquares` is written with `theorem_wanted` in [WantedExt/Geometry/ScottishBook59Wanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/ScottishBook59Wanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-02/index.html#squaring-the-square-distinct-squares).
+Stated but not proved: `MathlibExt.Geometry.ScottishBook59Wanted.squaringTheSquareDistinctSquares` is written with `theorem_wanted` in [WantedExt/Geometry/ScottishBook59Wanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/ScottishBook59Wanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-02/index.html#squaring-the-square-distinct-squares).
 
 ## Sylvester–Gallai theorem
 
@@ -113,7 +113,7 @@ points of the set such that no third point of the set is collinear with them.
 
 - J. J. Sylvester, Mathematical Question 11851, Educational Times 59 (1893) 98; L. M. Kelly, A resolution of the Sylvester–Gallai problem, Discrete Comput. Geom. 1 (1986) 101–104 standard real-plane version.
 
-Formalized by `MathlibExt.Geometry.Euclidean.SylvesterGallaiWanted.sylvester_gallai`, a theorem declared in [MathlibExt/Geometry/Euclidean/SylvesterGallai.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/SylvesterGallai.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-02/index.html#sylvester-gallai).
+Formalized by `MathlibExt.Geometry.Euclidean.SylvesterGallaiWanted.sylvester_gallai`, a theorem declared in [MathlibExt/Geometry/Euclidean/SylvesterGallai.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/SylvesterGallai.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-02/index.html#sylvester-gallai).
 
 ## Depends on
 
@@ -122,4 +122,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Discrete geometry](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/discrete-geometry)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/discrete-geometry)

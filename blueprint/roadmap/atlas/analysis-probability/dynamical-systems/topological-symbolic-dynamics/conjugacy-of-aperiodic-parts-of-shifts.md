@@ -7,7 +7,7 @@ statement: formalized
 
 # Conjugacy of aperiodic parts of shifts
 
-9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html).
+9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html).
 
 ## The full 2-shift
 
@@ -18,7 +18,7 @@ $x = (x_i)_{i \in \mathbb{Z}}$ with every $x_i \in \{0, 1\}$, carrying the produ
 
 - [AMR-043-0001].
 
-Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.X`, an abbreviation declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#x).
+Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.X`, an abbreviation declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#x).
 
 ## The full 3-shift
 
@@ -30,7 +30,7 @@ proper 3-colouring shift.
 
 - [AMR-043-0001].
 
-Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.YAmb`, an abbreviation declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#yamb).
+Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.YAmb`, an abbreviation declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#yamb).
 
 ## The proper 3-colouring shift
 
@@ -44,7 +44,7 @@ It is a mixing shift of finite type.
 
 - [AMR-043-0001].
 
-Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.Y`, a definition declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#y).
+Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.Y`, a definition declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#y).
 
 ## Aperiodic part of the full 2-shift
 
@@ -56,7 +56,7 @@ that are not periodic for $\sigma$, that is, with $\sigma^n x \ne x$ for every $
 
 - [AMR-043-0001].
 
-Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.AperiodicX`, a definition declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#aperiodic-x).
+Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.AperiodicX`, a definition declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#aperiodic-x).
 
 ## Aperiodic part of the 3-colouring shift
 
@@ -69,7 +69,7 @@ $\sigma^n y \ne y$ for every $n \ge 1$.
 
 - [AMR-043-0001].
 
-Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.AperiodicY`, a definition declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#aperiodic-y).
+Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.AperiodicY`, a definition declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#aperiodic-y).
 
 ## Shift on the aperiodic part of the full 2-shift
 
@@ -81,7 +81,7 @@ the self-map of the aperiodic part of $X$ obtained by restricting $\sigma$ to it
 
 - [AMR-043-0001].
 
-Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.shiftXRes`, a definition declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#shift-xres).
+Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.shiftXRes`, a definition declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#shift-xres).
 
 ## Shift on the aperiodic part of the 3-colouring shift
 
@@ -94,7 +94,7 @@ to it.
 
 - [AMR-043-0001].
 
-Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.shiftYRes`, a definition declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#shift-yres).
+Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.shiftYRes`, a definition declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#shift-yres).
 
 ## Hochman's aperiodic conjugacy question
 
@@ -110,7 +110,7 @@ aperiodic parts are topologically conjugate.
 
 - [AMR-043-0001] Hochman problem 1.
 
-Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.conjecture`, a definition declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#conjecture).
+Formalized by `MathlibExt.Dynamics.AMR43Problem1Wanted.conjecture`, a definition declared in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#conjecture).
 
 ## The aperiodic parts of the full 2-shift and the 3-colouring shift are not conjugate
 
@@ -128,7 +128,7 @@ conjugate.
 
 - Ville Salo, Conjugacy of transitive SFTs minus periodic points, Proc. London Math. Soc. (accepted; arXiv v3 2023), arXiv:2104.09860, https://arxiv.org/abs/2104.09860.
 
-Stated but not proved: `MathlibExt.Dynamics.AMR43Problem1Wanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#conjecture-refuted).
+Stated but not proved: `MathlibExt.Dynamics.AMR43Problem1Wanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Dynamics/AMR43Problem1Wanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/AMR43Problem1Wanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html#conjecture-refuted).
 
 ## Depends on
 
@@ -137,4 +137,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Conjugacy of aperiodic parts of shifts](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts)

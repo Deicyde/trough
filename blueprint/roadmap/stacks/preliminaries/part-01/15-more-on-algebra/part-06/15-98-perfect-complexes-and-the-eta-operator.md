@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.98 Perfect complexes and the eta operator
 
-Section 15.98 of the Stacks Project, [Tag 0F7V](https://stacks.math.columbia.edu/tag/0F7V). 9 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.98 of the Stacks Project, [Tag 0F7V](https://stacks.math.columbia.edu/tag/0F7V). 9 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GSS, a lemma
 
 [Tag 0GSS](https://stacks.math.columbia.edu/tag/0GSS) in the Stacks Project.
 
-**`Stacks.Eta.DeterminantalIdeal.pow_mul_idealI_eq_of_derived_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/DeterminantalIdeal.lean, line 1188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Perfect/DeterminantalIdeal.lean#L1188).
+**`Stacks.Eta.DeterminantalIdeal.pow_mul_idealI_eq_of_derived_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/DeterminantalIdeal.lean, line 1189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Perfect/DeterminantalIdeal.lean#L1189).
 
 > **Stacks 0GSS.** Let `f` be a nonzerodivisor and let `M` and `N` be bounded complexes of
 > finite free modules representing isomorphic objects of the derived category. If `m` and `n`
@@ -37,7 +37,7 @@ public theorem pow_mul_idealI_eq_of_derived_iso
 
 [Tag 0GST](https://stacks.math.columbia.edu/tag/0GST) in the Stacks Project.
 
-**`idealI_unit_mul_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/BoundedComplex.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/Matrix/BoundedComplex.lean#L255).
+**`idealI_unit_mul_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/BoundedComplex.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/BoundedComplex.lean#L255).
 
 > **Stacks Tag 0GST (Lemma 15.98.2).** Let `A` be a commutative ring, `f ∈ A` a nonzerodivisor,
 > and `u ∈ A` a unit. For a bounded complex `M^•` of finite free `A`-modules and every `i ∈ ℤ`,
@@ -52,7 +52,7 @@ theorem idealI_unit_mul_eq (C : BoundedComplex A) (f : A) (u : Aˣ) (i : ℤ) :
 
 [Tag 0GSU](https://stacks.math.columbia.edu/tag/0GSU) in the Stacks Project.
 
-**`map_idealI_eq_idealI_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/BoundedComplex.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/Matrix/BoundedComplex.lean#L130).
+**`map_idealI_eq_idealI_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/BoundedComplex.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/BoundedComplex.lean#L130).
 
 > **Stacks Tag 0GSU (Lemma 15.98.3).** Let `φ : A → B` be a ring map, `f` a
 > nonzerodivisor in `A`, `C = M^•` a bounded complex of finite free `A`-modules,
@@ -69,7 +69,7 @@ theorem map_idealI_eq_idealI_baseChange {A B : Type*} [CommRing A] [CommRing B] 
 
 [Tag 0GSV](https://stacks.math.columbia.edu/tag/0GSV) in the Stacks Project.
 
-**`Stacks.DeterminantalIdeal.FreeHomology.localized_idealI_eq_span_pow_of_free_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/DeterminantalIdeal.lean, line 1437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Perfect/DeterminantalIdeal.lean#L1437).
+**`Stacks.DeterminantalIdeal.FreeHomology.localized_idealI_eq_span_pow_of_free_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/DeterminantalIdeal.lean, line 1438](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Perfect/DeterminantalIdeal.lean#L1438).
 
 > **Stacks 0GSV.** If the localization at `p` of every cohomology module of a bounded
 > complex `M` of finite free modules is free, then for every degree the localization of
@@ -92,7 +92,7 @@ public theorem localized_idealI_eq_span_pow_of_free_homology
 
 [Tag 0F7W](https://stacks.math.columbia.edu/tag/0F7W) in the Stacks Project.
 
-**`EtaPow.LocallyFree.etaTerm_finite_projective_and_split_of_idealI_isPrincipal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean#L443).
+**`EtaPow.LocallyFree.etaTerm_finite_projective_and_split_of_idealI_isPrincipal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean#L443).
 
 > **Stacks 0F7W.** Let `f` be a nonzerodivisor and let `C` be a bounded complex of finite
 > free modules. If the ideal generated by the maximal minors of `(f, dⁱ)` is principal, then the
@@ -124,7 +124,7 @@ public theorem etaTerm_finite_projective_and_split_of_idealI_isPrincipal
 
 [Tag 0F7X](https://stacks.math.columbia.edu/tag/0F7X) in the Stacks Project.
 
-**`Stacks.Eta.GoodBaseChange.isIso_etaBaseChangeMap_toCochainComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/GoodBaseChange.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Perfect/GoodBaseChange.lean#L499). The attribute's comment: “the comparison chain map of this file is an isomorphism”.
+**`Stacks.Eta.GoodBaseChange.isIso_etaBaseChangeMap_toCochainComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/GoodBaseChange.lean, line 498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Perfect/GoodBaseChange.lean#L498). The attribute's comment: “the comparison chain map of this file is an isomorphism”.
 
 > For a bounded complex `C` of finite free `A`-modules all of whose determinantal ideals
 > `I_i(C, f)` are principal, the canonical base-change comparison `B ⊗_A (η_f C) ⟶ η_g (B ⊗_A C)` is
@@ -136,7 +136,7 @@ theorem isIso_etaBaseChangeMap_toCochainComplex (C : BoundedComplex A) (f : A) (
     IsIso (etaBaseChangeMap (B := B) f C.toCochainComplex)
 ```
 
-**`Stacks.Eta.LocallyFreeTerms.eta_baseChange_of_idealI_isPrincipal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean, line 702](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean#L702).
+**`Stacks.Eta.LocallyFreeTerms.eta_baseChange_of_idealI_isPrincipal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean, line 702](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean#L702).
 
 > **Stacks 0F7X.** Let `A → B` be a ring map, let `f` be a nonzerodivisor of `A` whose image
 > is a nonzerodivisor of `B`, and let `C` be a bounded complex of finite free `A`-modules. If
@@ -163,7 +163,7 @@ public theorem eta_baseChange_of_idealI_isPrincipal
           ((C.baseChange (algebraMap A B)).d i).mulVecLin i
 ```
 
-**`Stacks.Eta.LocallyFreeTerms.etaTermBaseChangeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean, line 1045](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean#L1045). The attribute's comment: “the canonical isomorphism, degreewise: the comparison map etaTermBaseChangeMap, induced by the ambient comparison, is bijective in every degree. That these degreewise isomorphisms are compatible with the two differentials is ambientBaseChangeMap\_comp\_fLoc; they are not assembled into one isomorphism of cochain complexes here.”.
+**`Stacks.Eta.LocallyFreeTerms.etaTermBaseChangeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean, line 1045](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean#L1045). The attribute's comment: “the canonical isomorphism, degreewise: the comparison map etaTermBaseChangeMap, induced by the ambient comparison, is bijective in every degree. That these degreewise isomorphisms are compatible with the two differentials is ambientBaseChangeMap\_comp\_fLoc; they are not assembled into one isomorphism of cochain complexes here.”.
 
 > **[Stacks, Tag 0F7X] in degree `i`, as an isomorphism.** For a ring map `A → B` under which
 > the nonzerodivisor `f` stays a nonzerodivisor, and a bounded complex `M^•` of finite free
@@ -182,7 +182,7 @@ noncomputable def etaTermBaseChangeEquiv (C : BoundedComplex A) (f : A) (hf : Is
 
 [Tag 0F80](https://stacks.math.columbia.edu/tag/0F80) in the Stacks Project.
 
-**`Stacks.SplitInjectionDirectSum.main_theorem_0f80`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/SplitInjection.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/SplitInjection.lean#L351).
+**`Stacks.SplitInjectionDirectSum.main_theorem_0f80`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/SplitInjection.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/SplitInjection.lean#L350).
 
 > **Theorem (Stacks Tag 0F80, Lemma 15.98.7).**
 > Let `A` be a commutative ring, let `M`, `N₁`, `N₂` be finite projective
@@ -207,7 +207,7 @@ theorem main_theorem_0f80
 
 [Tag 0GSW](https://stacks.math.columbia.edu/tag/0GSW) in the Stacks Project.
 
-**`Stacks.Decalage.DirectSumIdeal.etaDirectSumIdeal_eq_of_derived_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/DirectSum.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Perfect/DirectSum.lean#L438).
+**`Stacks.Decalage.DirectSumIdeal.etaDirectSumIdeal_eq_of_derived_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/DirectSum.lean, line 438](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Perfect/DirectSum.lean#L438).
 
 > **Stacks 0GSW.** If `M` and `N` are bounded complexes of finite free modules representing
 > isomorphic objects in the derived category and every `I_i(M, f)` is principal, then their
@@ -227,7 +227,7 @@ public theorem etaDirectSumIdeal_eq_of_derived_iso
 
 [Tag 0F81](https://stacks.math.columbia.edu/tag/0F81) in the Stacks Project.
 
-**`Stacks.Decalage.ObstructionIdeal.exists_fg_obstructionIdeal_with_finiteProjective_etaHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/DirectSum.lean, line 1612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Perfect/DirectSum.lean#L1612).
+**`Stacks.Decalage.ObstructionIdeal.exists_fg_obstructionIdeal_with_finiteProjective_etaHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/DirectSum.lean, line 1598](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Eta/Perfect/DirectSum.lean#L1598).
 
 > **Stacks 0F81.** The sum of the degreewise direct-sum obstruction ideals is finitely
 > generated.  Its quotient is a finitely presented closed immersion, the ideal vanishes at primes
@@ -277,4 +277,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.98, Tag 0F7V](https://stacks.math.columbia.edu/tag/0F7V)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

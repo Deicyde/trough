@@ -7,7 +7,7 @@ statement: formalized
 
 # Stirling matrices
 
-30 results, 15 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html).
+30 results, 15 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html).
 
 ## Orthogonality relation for Stirling numbers
 
@@ -19,7 +19,7 @@ $$\sum_{k=0}^{n} s(n,k)\, S(k,m) = \delta_{nm},$$
 
 where $\delta_{nm}$ is $1$ if $n = m$ and $0$ otherwise.
 
-Formalized by `MetaMathlibExt.sum_signedStirlingFirst_mul_stirlingSecond`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrices.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/StirlingMatrices.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#sum-signed-stirling-first-mul-stirling-s).
+Formalized by `MetaMathlibExt.sum_signedStirlingFirst_mul_stirlingSecond`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrices.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrices.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#sum-signed-stirling-first-mul-stirling-s).
 
 ## Stirling matrices are mutually inverse and lower triangular
 
@@ -33,7 +33,7 @@ kind. Then $AB = BA = I$, and $A_{ij} = B_{ij} = 0$ whenever $i < j$.
 
 - Benjamin Schreyer, "Rigged Horse Numbers and their Modular Periodicity", Journal of Integer Sequences 28 (2025), Article 25.4.1, Proposition (equation stirlinginvs), lines 120–126, https://cs.uwaterloo.ca/journals/JIS/VOL28/Schreyer/schreyer7.tex (quoting L. Comtet, Advanced Combinatorics, Eqn. 6f, p. 144).
 
-Formalized by `MetaMathlibExt.stirlingMatrices_mutualInverse_and_lowerTriangular`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrices.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/StirlingMatrices.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-matrices-mutual-inverse-and-low).
+Formalized by `MetaMathlibExt.stirlingMatrices_mutualInverse_and_lowerTriangular`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingMatrices.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingMatrices.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-matrices-mutual-inverse-and-low).
 
 ## Shifted Stirling matrix of the second kind
 
@@ -43,9 +43,9 @@ the Stirling number of the second kind $S(i + m, j)$, for $1 \le i, j \le n$.
 
 ## Sources
 
-- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 1 (definition of `S^[m](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/n)`).
+- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 1 (definition of `S^[m](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/n)`).
 
-Formalized by `MetaMathlibExt.stirlingSecondShiftMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-shift-matrix).
+Formalized by `MetaMathlibExt.stirlingSecondShiftMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-shift-matrix).
 
 ## Shift zero gives the Stirling matrix of the second kind
 
@@ -57,9 +57,9 @@ second kind.
 
 ## Sources
 
-- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 1 (definition of `S^[m](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/n)`).
+- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 1 (definition of `S^[m](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/n)`).
 
-Formalized by `MetaMathlibExt.stirlingSecondShiftMatrix_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-shift-matrix-zero).
+Formalized by `MetaMathlibExt.stirlingSecondShiftMatrix_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-shift-matrix-zero).
 
 ## First column of a shifted Stirling matrix
 
@@ -72,7 +72,7 @@ of the first column of $S^{[m]}(n)$ equals $1$: $S(i + m, 1) = 1$ for $1 \le i \
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 1, Equation (5).
 
-Formalized by `MetaMathlibExt.stirlingSecondShiftMatrix_apply_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-shift-matrix-apply-zero).
+Formalized by `MetaMathlibExt.stirlingSecondShiftMatrix_apply_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-shift-matrix-apply-zero).
 
 ## Stirling matrix of the first kind
 
@@ -85,7 +85,7 @@ entries above the diagonal are zero, since $s(i, j) = 0$ for $j > i$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 1 (definition of `s(n)`).
 
-Formalized by `MetaMathlibExt.stirlingFirstMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-first-matrix).
+Formalized by `MetaMathlibExt.stirlingFirstMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-first-matrix).
 
 ## Diagonal of the Stirling matrix of the first kind
 
@@ -97,7 +97,7 @@ $s(n)_{i,i} = 1$ for $1 \le i \le n$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 1 (`s(n, n) = 1`).
 
-Formalized by `MetaMathlibExt.stirlingFirstMatrix_apply_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-first-matrix-apply-self).
+Formalized by `MetaMathlibExt.stirlingFirstMatrix_apply_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-first-matrix-apply-self).
 
 ## Upper bidiagonal matrix V(n)
 
@@ -109,7 +109,7 @@ $V_{i,i} = i$ on the diagonal, $V_{i,i+1} = 1$ just above the diagonal, and $0$ 
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 2 (definition of `V(n)`).
 
-Formalized by `MetaMathlibExt.stirlingVMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-vmatrix).
+Formalized by `MetaMathlibExt.stirlingVMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-vmatrix).
 
 ## Diagonal entries of the bidiagonal matrix V(n)
 
@@ -122,7 +122,7 @@ $1 \le i \le n$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 2 (definition of `V(n)`).
 
-Formalized by `MetaMathlibExt.stirlingVMatrix_apply_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-vmatrix-apply-self).
+Formalized by `MetaMathlibExt.stirlingVMatrix_apply_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-vmatrix-apply-self).
 
 ## Upper triangular matrix Ṽ(n)
 
@@ -134,7 +134,7 @@ $(i, j)$ entry is $(-1)^{j-i} (i-1)!/j!$ if $i \le j$ and $0$ if $i > j$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 2 (definition of `Ṽ(n)`).
 
-Formalized by `MetaMathlibExt.stirlingVTildeMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-vtilde-matrix).
+Formalized by `MetaMathlibExt.stirlingVTildeMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-vtilde-matrix).
 
 ## Diagonal entries of the matrix Ṽ(n)
 
@@ -147,7 +147,7 @@ Then for every $i$ with $1 \le i \le n$, the $(i, i)$ entry of $\tilde V(n)$ is 
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 2 (definition of `Ṽ(n)`).
 
-Formalized by `MetaMathlibExt.stirlingVTildeMatrix_apply_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-vtilde-matrix-apply-self).
+Formalized by `MetaMathlibExt.stirlingVTildeMatrix_apply_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-vtilde-matrix-apply-self).
 
 ## Shifted Vandermonde matrix
 
@@ -159,7 +159,7 @@ $1 \le i, j \le n$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 2 (definition of `E(n)`).
 
-Formalized by `MetaMathlibExt.shiftedVandermondeMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#shifted-vandermonde-matrix).
+Formalized by `MetaMathlibExt.shiftedVandermondeMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#shifted-vandermonde-matrix).
 
 ## First row of the shifted Vandermonde matrix
 
@@ -171,7 +171,7 @@ $E(n)_{1,j} = 1$ for $1 \le j \le n$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 2 (definition of `E(n)`).
 
-Formalized by `MetaMathlibExt.shiftedVandermondeMatrix_apply_zero_left`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#shifted-vandermonde-matrix-apply-zero-le).
+Formalized by `MetaMathlibExt.shiftedVandermondeMatrix_apply_zero_left`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#shifted-vandermonde-matrix-apply-zero-le).
 
 ## Strictly upper triangular matrix $Q^{(N)}(n)$
 
@@ -187,7 +187,7 @@ so $Q^{[0]}(n) = Q^{[1]}(n)$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 2, Equation (6).
 
-Formalized by `MetaMathlibExt.stirlingQMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-qmatrix).
+Formalized by `MetaMathlibExt.stirlingQMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-qmatrix).
 
 ## Vanishing of $Q^{(N)}(n)$ on and below the diagonal
 
@@ -201,7 +201,7 @@ $1 \le j \le i \le n$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Section 2, Equation (6).
 
-Formalized by `MetaMathlibExt.stirlingQMatrix_apply_of_le`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-qmatrix-apply-of-le).
+Formalized by `MetaMathlibExt.stirlingQMatrix_apply_of_le`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-qmatrix-apply-of-le).
 
 ## Explicit inverse of the bidiagonal matrix V(n)
 
@@ -215,7 +215,7 @@ all indices running over $1, \dots, n$. Then $V(n)^{-1} = \tilde V(n)$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.stirlingVMatrix_inv` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-vmatrix-inv).
+Stated but not proved: `MetaMathlibExt.stirlingVMatrix_inv` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-vmatrix-inv).
 
 ## Recurrence for $Q^{(N)}(n)$ in $N$
 
@@ -232,7 +232,7 @@ $$Q^{[N+1]}(n) = Q^{[N]}(n)\,(V(n) - I_n).$$
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.stirlingQMatrix_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-qmatrix-succ).
+Stated but not proved: `MetaMathlibExt.stirlingQMatrix_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-qmatrix-succ).
 
 ## Factorization of $Q^{(N)}(n)$ through $Q^{(1)}(n)$
 
@@ -249,7 +249,7 @@ $$Q^{[N]}(n) = Q^{[1]}(n)\,(V(n) - I_n)^{N-1}.$$
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.stirlingQMatrix_eq_one_mul_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-qmatrix-eq-one-mul-pow).
+Stated but not proved: `MetaMathlibExt.stirlingQMatrix_eq_one_mul_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-qmatrix-eq-one-mul-pow).
 
 ## Stirling matrix of the second kind times $V(n) - I_n$
 
@@ -268,7 +268,7 @@ $$S(n)\,(V(n) - I_n) = E(n)\,Q^{[1]}(n).$$
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Lemma 3, Equation (7).
 
-Stated but not proved: `MetaMathlibExt.stirlingMatrix2_mul_sub_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-matrix2-mul-sub-one).
+Stated but not proved: `MetaMathlibExt.stirlingMatrix2_mul_sub_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-matrix2-mul-sub-one).
 
 ## Stirling matrix of the second kind times powers of $V(n) - I_n$
 
@@ -287,7 +287,7 @@ $$S(n)\,(V(n) - I_n)^N = E(n)\,Q^{[N]}(n).$$
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.stirlingMatrix2_mul_sub_one_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-matrix2-mul-sub-one-pow).
+Stated but not proved: `MetaMathlibExt.stirlingMatrix2_mul_sub_one_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-matrix2-mul-sub-one-pow).
 
 ## Factorization and determinant of shifted Stirling matrices
 
@@ -304,7 +304,7 @@ The paper assumes $m, n \ge 1$; the cases $m = 0$ and $n = 0$ hold as well.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Theorem 2, Equation (18).
 
-Stated but not proved: `MetaMathlibExt.stirlingSecondShiftMatrix_eq_mul_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-shift-matrix-eq-mul-pow).
+Stated but not proved: `MetaMathlibExt.stirlingSecondShiftMatrix_eq_mul_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-shift-matrix-eq-mul-pow).
 
 ## Recurrence for shifted Stirling matrices
 
@@ -319,7 +319,7 @@ $\det S^{[m+1]}(n) = n! \cdot \det S^{[m]}(n)$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.stirlingSecondShiftMatrix_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-shift-matrix-succ).
+Stated but not proved: `MetaMathlibExt.stirlingSecondShiftMatrix_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-shift-matrix-succ).
 
 ## Composition of shifted Stirling matrices
 
@@ -334,7 +334,7 @@ $S^{[m_1 + m_2]}(n) = S^{[m_1]}(n)\, s(n)\, S^{[m_2]}(n)$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.stirlingSecondShiftMatrix_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-shift-matrix-add).
+Stated but not proved: `MetaMathlibExt.stirlingSecondShiftMatrix_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-shift-matrix-add).
 
 ## Inverse of a shifted Stirling matrix
 
@@ -351,7 +351,7 @@ The paper assumes $m \ge 1$; the case $m = 0$, which reads $S^{[0]}(n)^{-1} = s(
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.stirlingSecondShiftMatrix_inv` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-shift-matrix-inv).
+Stated but not proved: `MetaMathlibExt.stirlingSecondShiftMatrix_inv` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-shift-matrix-inv).
 
 ## Shifted orthogonality of Stirling numbers
 
@@ -366,7 +366,7 @@ The case $m = 0$ is included, although the source assumes $m \ge 1$.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.sum_signedStirlingFirst_mul_stirlingSecond_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#sum-signed-stirling-first-mul-stirling-s-2).
+Stated but not proved: `MetaMathlibExt.sum_signedStirlingFirst_mul_stirlingSecond_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#sum-signed-stirling-first-mul-stirling-s-2).
 
 ## Alternating binomial sums of shifted Stirling numbers of the second kind
 
@@ -381,7 +381,7 @@ $$\sum_{l=0}^{N} (-1)^{N-l} \binom{N}{l} S(i+l, j) =
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_stirlingSecond_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#sum-choose-stirling-second-eq).
+Stated but not proved: `MetaMathlibExt.sum_choose_stirlingSecond_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#sum-choose-stirling-second-eq).
 
 ## Difference of consecutive Stirling numbers of the second kind
 
@@ -396,7 +396,7 @@ $$
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.stirlingSecond_succ_sub_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-succ-sub-eq-sum).
+Stated but not proved: `MetaMathlibExt.stirlingSecond_succ_sub_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#stirling-second-succ-sub-eq-sum).
 
 ## Double-sum Kronecker delta identity for Stirling numbers
 
@@ -416,7 +416,7 @@ hypothesis $j \ge 1$ is not needed.
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.sum_sum_stirlingSecond_signedStirlingFirst_eq_ite` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#sum-sum-stirling-second-signed-stirling).
+Stated but not proved: `MetaMathlibExt.sum_sum_stirlingSecond_signedStirlingFirst_eq_ite` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#sum-sum-stirling-second-signed-stirling).
 
 ## Stirling numbers of the second kind from the next row
 
@@ -433,7 +433,7 @@ The case $j = 0$, where both sides vanish, is included although the source assum
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.sum_stirlingSecond_succ_eq_ite` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#sum-stirling-second-succ-eq-ite).
+Stated but not proved: `MetaMathlibExt.sum_stirlingSecond_succ_eq_ite` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#sum-stirling-second-succ-eq-ite).
 
 ## Double-sum shift identity for Stirling numbers
 
@@ -451,7 +451,7 @@ as in Corollary 3 of the source, and the source's hypothesis $j \ge 1$ is not ne
 
 - M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.sum_sum_stirlingSecond_signedStirlingFirst_stirlingSecond` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#sum-sum-stirling-second-signed-stirling-2).
+Stated but not proved: `MetaMathlibExt.sum_sum_stirlingSecond_signedStirlingFirst_stirlingSecond` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingSecondKindMatricesWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html#sum-sum-stirling-second-signed-stirling-2).
 
 ## Depends on
 
@@ -460,4 +460,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Stirling matrices](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-matrices)

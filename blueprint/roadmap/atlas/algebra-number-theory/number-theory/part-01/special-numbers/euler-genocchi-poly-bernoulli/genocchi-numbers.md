@@ -7,7 +7,7 @@ statement: formalized
 
 # Genocchi numbers
 
-14 results, 9 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html).
+14 results, 9 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html).
 
 ## Generating function of the Genocchi numbers
 
@@ -25,7 +25,7 @@ Kida; the sign-changed variant consumes only even-index terms, where the convent
 - Chen, JIS VOL6 (`chen50.tex`, lines 296-300): https://cs.uwaterloo.ca/journals/JIS/VOL6/Chen/chen50.html
 - Kida, JIS VOL16: https://cs.uwaterloo.ca/journals/JIS/VOL16/Kida/kida2.html
 
-Formalized by `MetaMathlibExt.genocchiPowerSeries`, a definition declared in [MathlibExt/NumberTheory/GenocchiNumber.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/GenocchiNumber.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#genocchi-power-series).
+Formalized by `MetaMathlibExt.genocchiPowerSeries`, a definition declared in [MathlibExt/NumberTheory/GenocchiNumber.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/GenocchiNumber.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#genocchi-power-series).
 
 ## Genocchi numbers
 
@@ -39,7 +39,7 @@ $\frac{2x}{e^x + 1} = \sum_{n \ge 0} G_n \frac{x^n}{n!}$.
 - Chen, JIS VOL6 (`chen50.tex`, lines 296-300): https://cs.uwaterloo.ca/journals/JIS/VOL6/Chen/chen50.html
 - Kida, JIS VOL16: https://cs.uwaterloo.ca/journals/JIS/VOL16/Kida/kida2.html
 
-Formalized by `MetaMathlibExt.genocchiNumber`, a definition declared in [MathlibExt/NumberTheory/GenocchiNumber.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/GenocchiNumber.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#genocchi-number).
+Formalized by `MetaMathlibExt.genocchiNumber`, a definition declared in [MathlibExt/NumberTheory/GenocchiNumber.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/GenocchiNumber.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#genocchi-number).
 
 ## The Genocchi power series is $2x/(e^x + 1)$
 
@@ -48,7 +48,7 @@ $2x \cdot (e^x + 1)^{-1}$ in $\mathbb{Q}[[x]]$, where $e^x = \sum_{n \ge 0} x^n 
 exponential power series and $(e^x + 1)^{-1}$ is the inverse of $e^x + 1$ among formal power
 series.
 
-Formalized by `MetaMathlibExt.genocchiPowerSeries_eq`, a theorem declared in [MathlibExt/NumberTheory/GenocchiNumber.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/GenocchiNumber.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#genocchi-power-series-eq).
+Formalized by `MetaMathlibExt.genocchiPowerSeries_eq`, a theorem declared in [MathlibExt/NumberTheory/GenocchiNumber.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/GenocchiNumber.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#genocchi-power-series-eq).
 
 ## Genocchi numbers from their generating function
 
@@ -56,7 +56,7 @@ For every natural number $n$, the
 Genocchi number $G_n$ equals $n!$ times the coefficient of $x^n$ in the Genocchi power series
 $\frac{2x}{e^x + 1} \in \mathbb{Q}[[x]]$.
 
-Formalized by `MetaMathlibExt.genocchiNumber_eq`, a theorem declared in [MathlibExt/NumberTheory/GenocchiNumber.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/GenocchiNumber.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#genocchi-number-eq).
+Formalized by `MetaMathlibExt.genocchiNumber_eq`, a theorem declared in [MathlibExt/NumberTheory/GenocchiNumber.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/GenocchiNumber.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#genocchi-number-eq).
 
 ## Genocchi numbers in terms of Bernoulli numbers
 
@@ -65,7 +65,7 @@ number $G_n$, defined by $\frac{2x}{e^x + 1} = \sum_{m \ge 0} G_m \frac{x^m}{m!}
 $G_n = 2(1 - 2^n) B_n$, where $B_n$ is the $n$-th Bernoulli number with the convention
 $B_1 = -\tfrac{1}{2}$.
 
-Formalized by `MetaMathlibExt.genocchiNumber_eq_bernoulli`, a theorem declared in [MathlibExt/NumberTheory/GenocchiBernoulli.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/GenocchiBernoulli.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#genocchi-number-eq-bernoulli).
+Formalized by `MetaMathlibExt.genocchiNumber_eq_bernoulli`, a theorem declared in [MathlibExt/NumberTheory/GenocchiBernoulli.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/GenocchiBernoulli.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#genocchi-number-eq-bernoulli).
 
 ## The two definitions of the Genocchi numbers agree
 
@@ -74,7 +74,7 @@ rational number $2(1 - 2^n) B_n$, where $B_n$ is the $n$-th Bernoulli number wit
 $B_1 = -\tfrac{1}{2}$, equals the Genocchi number $G_n$ defined by the exponential generating
 function $\frac{2x}{e^x + 1} = \sum_{m \ge 0} G_m \frac{x^m}{m!}$.
 
-Formalized by `MetaMathlibExt.genocchiNumberViaBernoulli_eq_genocchiNumber`, a theorem declared in [MathlibExt/NumberTheory/GenocchiBernoulli.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/GenocchiBernoulli.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#genocchi-number-via-bernoulli-eq-genocch).
+Formalized by `MetaMathlibExt.genocchiNumberViaBernoulli_eq_genocchiNumber`, a theorem declared in [MathlibExt/NumberTheory/GenocchiBernoulli.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/GenocchiBernoulli.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#genocchi-number-via-bernoulli-eq-genocch).
 
 ## Iterated forward differences of a power on $\mathbb{Q}$
 
@@ -84,7 +84,7 @@ forward difference operator applied to the function $y \mapsto y^n$ on $\mathbb{
 forward difference of $f \colon \mathbb{Q} \to \mathbb{Q}$ is the function
 $y \mapsto f(y + 1) - f(y)$.
 
-Formalized by `MathlibExt.NumberTheory.GenocchiExplicitWanted.diffPowEval`, a definition declared in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#diff-pow-eval).
+Formalized by `MathlibExt.NumberTheory.GenocchiExplicitWanted.diffPowEval`, a definition declared in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#diff-pow-eval).
 
 ## The Zerroukhat–Khaldi sum $U(m, k)$
 
@@ -96,7 +96,7 @@ $$U(m, k) = \sum_{j=0}^{m} (-1)^{k+j+m} \frac{(k+j-1)!}{2^{k+j-1}} S(m, j),$$
 where $S(m, j)$ is the Stirling number of the second kind and, in the term with $k = j = 0$,
 $k + j - 1$ is read as $0$, so that this term is $(-1)^m S(m, 0)$.
 
-Formalized by `MathlibExt.NumberTheory.GenocchiExplicitWanted.zerroU`, a definition declared in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#zerro-u).
+Formalized by `MathlibExt.NumberTheory.GenocchiExplicitWanted.zerroU`, a definition declared in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#zerro-u).
 
 ## The Zerroukhat–Khaldi sum $H_{n,m}$
 
@@ -108,7 +108,7 @@ $$H_{n,m} = (-1)^n \, n \sum_{k=1}^{n-m} U(m+1, k) \, S(n-m, k),$$
 where $U(m+1, k)$ is the Zerroukhat–Khaldi sum $U$, $S(n-m, k)$ is the Stirling number of the
 second kind, and $n - m$ is truncated at $0$, so that $H_{n,m} = 0$ when $m \ge n$.
 
-Formalized by `MathlibExt.NumberTheory.GenocchiExplicitWanted.zerroH`, a definition declared in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#zerro-h).
+Formalized by `MathlibExt.NumberTheory.GenocchiExplicitWanted.zerroH`, a definition declared in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#zerro-h).
 
 ## Explicit formula for Genocchi numbers via Stirling numbers
 
@@ -122,7 +122,7 @@ $G_n = (-1)^n \, n \sum_{k=1}^{n-r} c_k \, S(n-r, k)$.
 
 - Schehrazade Zerroukhat and Laala Khaldi, "A Note on Explicit Formulas for Bernoulli and Genocchi Numbers", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.GenocchiExplicitWanted.genocchiNumber_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#genocchi-number-eq-sum).
+Stated but not proved: `MathlibExt.NumberTheory.GenocchiExplicitWanted.genocchiNumber_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#genocchi-number-eq-sum).
 
 ## Bernoulli numbers via forward differences at $0$
 
@@ -137,7 +137,7 @@ $(-1)^n B_n = \frac{n}{2^n - 1} \sum_{k=1}^{n-r} d_k \, \frac{\Delta^k 0^{n-r}}{
 
 - Schehrazade Zerroukhat and Laala Khaldi, "A Note on Explicit Formulas for Bernoulli and Genocchi Numbers", Corollary 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.GenocchiExplicitWanted.neg_one_pow_mul_bernoulli_eq_sum_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#neg-one-pow-mul-bernoulli-eq-sum-zero).
+Stated but not proved: `MathlibExt.NumberTheory.GenocchiExplicitWanted.neg_one_pow_mul_bernoulli_eq_sum_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#neg-one-pow-mul-bernoulli-eq-sum-zero).
 
 ## Bernoulli numbers via forward differences at $1$
 
@@ -152,7 +152,7 @@ $(-1)^n B_n = \frac{n}{2^n - 1} \sum_{k=0}^{n-1-r} e_k \, \frac{\Delta^k 1^{n-1-
 
 - Schehrazade Zerroukhat and Laala Khaldi, "A Note on Explicit Formulas for Bernoulli and Genocchi Numbers", Corollary 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.GenocchiExplicitWanted.neg_one_pow_mul_bernoulli_eq_sum_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#neg-one-pow-mul-bernoulli-eq-sum-one).
+Stated but not proved: `MathlibExt.NumberTheory.GenocchiExplicitWanted.neg_one_pow_mul_bernoulli_eq_sum_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#neg-one-pow-mul-bernoulli-eq-sum-one).
 
 ## Recurrence for the Zerroukhat–Khaldi sums $U$
 
@@ -164,7 +164,7 @@ $U(r+1, k) = U(r, k+1) + k \, U(r, k)$.
 
 - Schehrazade Zerroukhat and Laala Khaldi, "A Note on Explicit Formulas for Bernoulli and Genocchi Numbers", Lemma 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.GenocchiExplicitWanted.zerroU_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#zerro-u-succ).
+Stated but not proved: `MathlibExt.NumberTheory.GenocchiExplicitWanted.zerroU_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#zerro-u-succ).
 
 ## A step identity for the Zerroukhat–Khaldi sums $H_{n,m}$
 
@@ -176,7 +176,7 @@ $H_{n,r} = H_{n,r-1}$.
 
 - Schehrazade Zerroukhat and Laala Khaldi, "A Note on Explicit Formulas for Bernoulli and Genocchi Numbers", Lemma 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.GenocchiExplicitWanted.zerroH_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#zerro-h-eq).
+Stated but not proved: `MathlibExt.NumberTheory.GenocchiExplicitWanted.zerroH_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenocchiExplicitWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenocchiExplicitWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html#zerro-h-eq).
 
 ## Depends on
 
@@ -185,4 +185,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Genocchi numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/genocchi-numbers)

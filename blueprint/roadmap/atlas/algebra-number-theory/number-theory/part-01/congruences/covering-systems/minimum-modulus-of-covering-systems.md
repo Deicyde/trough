@@ -7,7 +7,7 @@ statement: formalized
 
 # Minimum modulus of covering systems
 
-13 results, 1 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html).
+13 results, 1 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html).
 
 ## Krukenberg's conjecture for minimum modulus five
 
@@ -21,7 +21,7 @@ of $C$ is at least $108$.
 
 - Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.exists_modulus_ge_108_of_distinct_covering_min_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#exists-modulus-ge-108-of-distinct-coveri).
+Stated but not proved: `MetaMathlibExt.exists_modulus_ge_108_of_distinct_covering_min_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#exists-modulus-ge-108-of-distinct-coveri).
 
 ## A distinct covering system with moduli from 6 to 168
 
@@ -34,7 +34,7 @@ one of them, whose moduli all lie between $6$ and $168$ and include both $6$ and
 
 - Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Theorem 2; the paper's witness is due to Ognian Trifonov.
 
-Stated but not proved: `MetaMathlibExt.exists_distinct_covering_min_six_max_168` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#exists-distinct-covering-min-six-max-168).
+Stated but not proved: `MetaMathlibExt.exists_distinct_covering_min_six_max_168` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#exists-distinct-covering-min-six-max-168).
 
 ## Least common multiple of a covering system with minimum modulus five
 
@@ -48,7 +48,7 @@ $5$, then the least common multiple of the moduli of $C$ is at least $1440$.
 
 - Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.lcm_moduli_ge_1440_of_distinct_covering_min_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#lcm-moduli-ge-1440-of-distinct-covering).
+Stated but not proved: `MetaMathlibExt.lcm_moduli_ge_1440_of_distinct_covering_min_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#lcm-moduli-ge-1440-of-distinct-covering).
 
 ## Least common multiple of a covering system with minimum modulus six
 
@@ -62,7 +62,7 @@ $6$, then the least common multiple of the moduli of $C$ is at least $5040$.
 
 - Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.lcm_moduli_ge_5040_of_distinct_covering_min_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#lcm-moduli-ge-5040-of-distinct-covering).
+Stated but not proved: `MetaMathlibExt.lcm_moduli_ge_5040_of_distinct_covering_min_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#lcm-moduli-ge-5040-of-distinct-covering).
 
 ## A distinct covering system with minimum modulus 7 and moduli of lcm 15120
 
@@ -76,7 +76,7 @@ least common multiple $15120$.
 
 - Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.exists_distinct_covering_min_seven_lcm_15120` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#exists-distinct-covering-min-seven-lcm-1).
+Stated but not proved: `MetaMathlibExt.exists_distinct_covering_min_seven_lcm_15120` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#exists-distinct-covering-min-seven-lcm-1).
 
 ## Discarding the classes whose modulus is divisible by a large prime power
 
@@ -92,7 +92,7 @@ cover every integer.
 
 - Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Lemma 1, quoting Krukenberg, Corollary 2.3, and Dalton–Trifonov, Corollary 8.
 
-Stated but not proved: `MetaMathlibExt.isCoveringSystem_filter_not_dvd_of_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#is-covering-system-filter-not-dvd-of-lt).
+Stated but not proved: `MetaMathlibExt.isCoveringSystem_filter_not_dvd_of_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#is-covering-system-filter-not-dvd-of-lt).
 
 ## Merging the p classes whose modulus is divisible by a prime power
 
@@ -108,7 +108,7 @@ $p$ congruences by the single congruence $x \equiv r \pmod{p^{a-1} \operatorname
 
 - Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Lemma 2, quoting Dalton–Trifonov, Corollary 9.
 
-Stated but not proved: `MetaMathlibExt.exists_isCoveringSystem_merge_prime_power` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#exists-is-covering-system-merge-prime-po).
+Stated but not proved: `MetaMathlibExt.exists_isCoveringSystem_merge_prime_power` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#exists-is-covering-system-merge-prime-po).
 
 ## Translating a covering system
 
@@ -122,7 +122,7 @@ covering system.
 
 - Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.isCoveringSystem_translate` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#is-covering-system-translate).
+Stated but not proved: `MetaMathlibExt.isCoveringSystem_translate` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#is-covering-system-translate).
 
 ## Swapping two residues modulo a prime in a covering system
 
@@ -142,7 +142,7 @@ $x \equiv a \pmod m$ in $C_p(a_2)$, form a covering system.
 
 - Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Lemma 4, from the author's thesis, Lemma 2.13.
 
-Stated but not proved: `MetaMathlibExt.isCoveringSystem_swap_residues_mod_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#is-covering-system-swap-residues-mod-pri).
+Stated but not proved: `MetaMathlibExt.isCoveringSystem_swap_residues_mod_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#is-covering-system-swap-residues-mod-pri).
 
 ## Mirsky–Newman bound for distinct covering systems
 
@@ -155,7 +155,7 @@ then $\sum_{i=1}^{k} 1/m_i > 1$.
 
 - Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Lemma 5, quoting Mirsky and Newman.
 
-Stated but not proved: `MetaMathlibExt.one_lt_sum_inv_moduli_of_distinct_covering` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#one-lt-sum-inv-moduli-of-distinct-coveri).
+Stated but not proved: `MetaMathlibExt.one_lt_sum_inv_moduli_of_distinct_covering` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#one-lt-sum-inv-moduli-of-distinct-coveri).
 
 ## Replacing the largest prime factor of the modulus set
 
@@ -172,7 +172,7 @@ for some such $d$.
 
 - Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.exists_covering_divisors_replace_largest_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#exists-covering-divisors-replace-largest).
+Stated but not proved: `MetaMathlibExt.exists_covering_divisors_replace_largest_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KleinCoveringSystemsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#exists-covering-divisors-replace-largest).
 
 ## Covering systems with arbitrarily large distinct moduli (OPG-493)
 
@@ -181,7 +181,7 @@ for every natural number $N$ there are finitely many residue classes $a_1 \bmod 
 a_k \bmod m_k$ that cover $\mathbb{Z}$ (every integer lies in at least one of them) whose moduli
 are pairwise distinct and all at least $N$.
 
-Formalized by `MathlibExt.NumberTheory.LargeModulusCoveringSystemsWanted.conjecture`, a definition declared in [WantedExt/NumberTheory/LargeModulusCoveringSystemsWanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeModulusCoveringSystemsWanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#conjecture).
+Formalized by `MathlibExt.NumberTheory.LargeModulusCoveringSystemsWanted.conjecture`, a definition declared in [WantedExt/NumberTheory/LargeModulusCoveringSystemsWanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeModulusCoveringSystemsWanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#conjecture).
 
 ## Hough's minimum modulus theorem
 
@@ -193,7 +193,7 @@ Hence the conjecture of Open Garden problem OPG-493 is false.
 
 - Bob Hough, Solution of the minimum modulus problem for covering systems, Annals of Mathematics 181 (2015), 361-382; arXiv:1307.0874, https://arxiv.org/abs/1307.0874.
 
-Stated but not proved: `MathlibExt.NumberTheory.LargeModulusCoveringSystemsWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeModulusCoveringSystemsWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeModulusCoveringSystemsWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#conjecture-refuted).
+Stated but not proved: `MathlibExt.NumberTheory.LargeModulusCoveringSystemsWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeModulusCoveringSystemsWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeModulusCoveringSystemsWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html#conjecture-refuted).
 
 ## Depends on
 
@@ -202,4 +202,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Minimum modulus of covering systems](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/congruences/covering-systems/minimum-modulus-of-covering-systems)

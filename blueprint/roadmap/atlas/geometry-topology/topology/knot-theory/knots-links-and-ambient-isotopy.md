@@ -7,7 +7,7 @@ statement: formalized
 
 # Knots, links and ambient isotopy
 
-70 results, 68 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html).
+70 results, 68 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html).
 
 ## Parametrized knot
 
@@ -16,7 +16,7 @@ $C^\infty$ curve $\gamma \colon \mathbb{R} \to \mathbb{R}^3$ that is $2\pi$-peri
 ($\gamma(t + 2\pi) = \gamma(t)$ for all $t$), injective on $[0, 2\pi)$, and an immersion
 ($\gamma'(t) \neq 0$ for all $t$).
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedKnot`, a structure declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#parametrized-knot).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedKnot`, a structure declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#parametrized-knot).
 
 ## Parametrized link
 
@@ -24,7 +24,7 @@ An oriented labeled parametrized smooth link with $n$ components
 in Euclidean 3-space is a family $(\gamma_i)_{i < n}$ of parametrized knots whose traces
 $\gamma_i(\mathbb{R})$ are pairwise disjoint.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink`, a structure declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#parametrized-link).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink`, a structure declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#parametrized-link).
 
 ## Smooth ambient isotopy of Euclidean 3-space
 
@@ -34,7 +34,7 @@ indexed by times $t \in \mathbb{R}$, such that $(t, x) \mapsto H_t(x)$ and
 $(t, x) \mapsto G_t(x)$ are $C^\infty$ on $\mathbb{R} \times \mathbb{R}^3$, $G_t(H_t(x)) = x$
 and $H_t(G_t(x)) = x$ for all $t$ and $x$, and $H_0$ is the identity.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.AmbientIsotopy`, a structure declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ambient-isotopy).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.AmbientIsotopy`, a structure declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ambient-isotopy).
 
 ## Identity ambient isotopy
 
@@ -42,7 +42,7 @@ The identity ambient isotopy of $\mathbb{R}^3$ has forward
 and inverse families $H_t$ and $G_t$ equal to the identity map of $\mathbb{R}^3$ for every
 time $t$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.AmbientIsotopy.id`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#id).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.AmbientIsotopy.id`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#id).
 
 ## Inverse ambient isotopy
 
@@ -50,7 +50,7 @@ The inverse of an ambient isotopy with forward family $(H_t)$ and
 inverse family $(H_t^{-1})$ is the ambient isotopy whose forward family is $(H_t^{-1})$ and whose
 inverse family is $(H_t)$; at each time $t$ it is the inverse diffeomorphism of $H_t$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.AmbientIsotopy.symm`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#symm).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.AmbientIsotopy.symm`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#symm).
 
 ## Composition of ambient isotopies
 
@@ -59,7 +59,7 @@ $\mathbb{R}^3$ with forward families $H_t, H'_t$ and inverse families $G_t, G'_t
 composition (first $\Phi$, then $\Psi$, at the same time parameter) is the ambient isotopy
 with forward family $H'_t \circ H_t$ and inverse family $G_t \circ G'_t$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.AmbientIsotopy.comp`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#comp).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.AmbientIsotopy.comp`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#comp).
 
 ## Orientation-preserving reparametrization of the circle
 
@@ -70,14 +70,14 @@ that $f(t + 2\pi) = f(t) + 2\pi$ and $g(t + 2\pi) = g(t) + 2\pi$ for all $t$, an
 strictly increasing. Here $f$ is a lift of the reparametrization and $g$ is a lift of its
 inverse.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.CircleReparam`, a structure declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#circle-reparam).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.CircleReparam`, a structure declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#circle-reparam).
 
 ## Identity reparametrization of the circle
 
 The identity circle reparametrization has
 lift and inverse lift both equal to the identity map of $\mathbb{R}$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.CircleReparam.id`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#id-2).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.CircleReparam.id`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#id-2).
 
 ## Inverse circle reparametrization
 
@@ -85,7 +85,7 @@ The inverse of a circle reparametrization with lift
 $f$ and inverse lift $f^{-1}$ is the circle reparametrization whose lift is $f^{-1}$ and whose
 inverse lift is $f$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.CircleReparam.symm`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#symm-2).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.CircleReparam.symm`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#symm-2).
 
 ## Composition of circle reparametrizations
 
@@ -94,7 +94,7 @@ reparametrizations with lifts $f_\sigma, f_\tau$ and inverse lifts $g_\sigma, g_
 composition (first $\sigma$, then $\tau$) is the circle reparametrization with lift
 $f_\tau \circ f_\sigma$ and inverse lift $g_\sigma \circ g_\tau$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.CircleReparam.comp`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#comp-2).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.CircleReparam.comp`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#comp-2).
 
 ## Isotopy of parametrized knots
 
@@ -104,7 +104,7 @@ of $\mathbb{R}^3$ with forward family $H_t$ and an orientation-preserving repara
 of the circle with lift $f$ such that $H_1(\gamma_1(t)) = \gamma_2(f(t))$ for every
 $t \in \mathbb{R}$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedKnot.Isotopic`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#isotopic).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedKnot.Isotopic`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#isotopic).
 
 ## Isotopy of parametrized links
 
@@ -115,7 +115,7 @@ $H_t$ and, for each $i < n$, an orientation-preserving reparametrization of the 
 lift $f_i$, such that $H_1(\gamma^1_i(t)) = \gamma^2_i(f_i(t))$ for every $i < n$ and every
 $t \in \mathbb{R}$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.Isotopic`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#isotopic-2).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.Isotopic`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#isotopic-2).
 
 ## Trace of a parametrized link
 
@@ -123,7 +123,7 @@ The trace of a parametrized link $L$ in Euclidean 3-space
 is the union of the images of its component curves: the set of all points $\gamma(t)$, where
 $\gamma$ is a component of $L$ and $t \in \mathbb{R}$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.trace`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#trace).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.trace`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#trace).
 
 ## Total contour length of a parametrized link
 
@@ -132,7 +132,7 @@ Euclidean 3-space with components $\gamma_1, \dots, \gamma_n$, each a $2\pi$-per
 The total contour length of $L$ is the sum over all components $\gamma_i$ of the contour
 length of $\gamma_i$ on one period $[0, 2\pi]$. It is a value in $[0, \infty]$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.totalContourLength`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#total-contour-length).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.totalContourLength`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#total-contour-length).
 
 ## Ropelength ratio of a parametrized link
 
@@ -140,7 +140,7 @@ For a parametrized link $L$, the ropelength
 ratio of $L$ is its total contour length divided by the thickness of its trace (the union of the
 images of its components), a value in $[0, \infty]$ computed with the division of $[0, \infty]$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.ropelengthRatio`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ropelength-ratio).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.ropelengthRatio`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ropelength-ratio).
 
 ## Ropelength of a parametrized link
 
@@ -149,7 +149,7 @@ ropelength of $L$ is the infimum, in $[0, \infty]$, of the ropelength ratios of 
 links $L'$ with $n$ components that are isotopic to $L$. It is the ropelength of the oriented,
 labeled ambient-isotopy type of $L$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.ropelength`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ropelength).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.ropelength`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ropelength).
 
 ## Ropelength is at most the ratio of any isotopic link
 
@@ -157,14 +157,14 @@ Let $L$ and $L'$ be parametrized
 links with $n$ components. If $L'$ is isotopic to $L$, then the ropelength of $L$ is at most
 the ropelength ratio of $L'$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.ropelength_le_ratio_of_isotopic`, a theorem declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ropelength-le-ratio-of-isotopic).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.ropelength_le_ratio_of_isotopic`, a theorem declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ropelength-le-ratio-of-isotopic).
 
 ## Ropelength is at most the ropelength ratio
 
 For every parametrized link $L$ with $n$
 components, the ropelength of $L$ is at most the ropelength ratio of $L$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.ropelength_le_ratio_self`, a theorem declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ropelength-le-ratio-self).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.ropelength_le_ratio_self`, a theorem declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ropelength-le-ratio-self).
 
 ## Ropelength is an isotopy invariant
 
@@ -172,7 +172,7 @@ Let $L_1$ and $L_2$ be parametrized links with $n$
 components. If $L_1$ is isotopic to $L_2$ (by an oriented, labeled ambient isotopy), then the
 ropelength of $L_1$ equals the ropelength of $L_2$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.ropelength_eq_of_isotopic`, a theorem declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ropelength-eq-of-isotopic).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.ropelength_eq_of_isotopic`, a theorem declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ropelength-eq-of-isotopic).
 
 ## Parametrized knot as a one-component link
 
@@ -180,7 +180,7 @@ A parametrized knot $K$ determines the
 parametrized link with one component, whose single component is $K$; the pairwise disjointness
 condition holds trivially.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedKnot.toLink`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#to-link).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedKnot.toLink`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#to-link).
 
 ## Isotopic knots give isotopic one-component links
 
@@ -188,7 +188,7 @@ If $K_1$ and $K_2$ are parametrized
 knots and $K_1$ is isotopic to $K_2$, then the one-component parametrized link of $K_1$ is
 isotopic to the one-component parametrized link of $K_2$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedKnot.Isotopic.toLink`, a theorem declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#to-link-2).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedKnot.Isotopic.toLink`, a theorem declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#to-link-2).
 
 ## Ropelength of a parametrized knot
 
@@ -197,14 +197,14 @@ ropelength of the one-component parametrized link determined by $K$: the infimum
 $[0, \infty]$, of the ropelength ratios of all one-component parametrized links that are
 isotopic to the one-component link of $K$.
 
-Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedKnot.ropelength`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Knot/EuclideanLink.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ropelength-2).
+Formalized by `MathlibExt.Topology.Knot.Euclidean.ParametrizedKnot.ropelength`, a definition declared in [MathlibExt/Topology/Knot/EuclideanLink.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Knot/EuclideanLink.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ropelength-2).
 
 ## Euclidean space $\mathbb{R}^3$
 
 The ambient space of the knots here is $\mathbb{R}^3$ with
 its standard Euclidean inner product.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.R3`, an abbreviation declared in [WantedExt/Topology/ConwayKnotShared.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#r3).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.R3`, an abbreviation declared in [WantedExt/Topology/ConwayKnotShared.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#r3).
 
 ## Oriented smooth knot
 
@@ -213,14 +213,14 @@ $\gamma : \mathbb{R} \to \mathbb{R}^3$ that is $2\pi$-periodic, injective on $[0
 immersion, meaning $\gamma'(t) \ne 0$ for every real $t$. The orientation is the one induced by
 the parametrization.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.Knot`, a structure declared in [WantedExt/Topology/ConwayKnotShared.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#knot).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.Knot`, a structure declared in [WantedExt/Topology/ConwayKnotShared.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#knot).
 
 ## Two-component link
 
 An oriented two-component smooth link in $\mathbb{R}^3$ is a pair
 $(K, L)$ of oriented smooth knots whose images in $\mathbb{R}^3$ are disjoint.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.TwoLink`, a structure declared in [WantedExt/Topology/ConwayKnotShared.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#two-link).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.TwoLink`, a structure declared in [WantedExt/Topology/ConwayKnotShared.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#two-link).
 
 ## Smooth ambient isotopy of $\mathbb{R}^3$
 
@@ -231,7 +231,7 @@ $t \in \mathbb{R}$ such that $(t, x) \mapsto H_t(x)$ and $(t, x) \mapsto G_t(x)$
 of $H_t$ for every $t$, and $H_0$ is the identity. In particular every $H_t$ is a
 diffeomorphism of $\mathbb{R}^3$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.AmbientIsotopy`, a structure declared in [WantedExt/Topology/ConwayKnotShared.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ambient-isotopy-2).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.AmbientIsotopy`, a structure declared in [WantedExt/Topology/ConwayKnotShared.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#ambient-isotopy-2).
 
 ## Ambient isotopy of oriented knots
 
@@ -243,7 +243,7 @@ $t$. Here an orientation-preserving smooth reparametrization of the circle is a 
 increasing bijection $\sigma : \mathbb{R} \to \mathbb{R}$ with smooth inverse such that
 $\sigma(t + 2\pi) = \sigma(t) + 2\pi$ for every $t$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.Knot.Isotopic`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#isotopic-3).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.Knot.Isotopic`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#isotopic-3).
 
 ## Ambient isotopy of oriented two-component links
 
@@ -256,14 +256,14 @@ $t$. Here an orientation-preserving smooth reparametrization of the circle is a 
 increasing bijection $\sigma : \mathbb{R} \to \mathbb{R}$ with smooth inverse such that
 $\sigma(t + 2\pi) = \sigma(t) + 2\pi$ for every $t$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.TwoLink.Isotopic`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#isotopic-4).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.TwoLink.Isotopic`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#isotopic-4).
 
 ## Reflection in the $xy$-plane
 
 The reflection of $\mathbb{R}^3$ through the $xy$-plane is
 the map $(x, y, z) \mapsto (x, y, -z)$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.reflectZ`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#reflect-z).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.reflectZ`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#reflect-z).
 
 ## Chiral knot
 
@@ -277,7 +277,7 @@ if there is no smooth ambient isotopy $(H_t)$ of $\mathbb{R}^3$ together with su
 satisfying $H_1(K(t)) = \rho(K(\sigma(t)))$ for all $t \in \mathbb{R}$. Equivalently, $K$ is
 not ambient isotopic, as an oriented knot, to its mirror image $\rho \circ K$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.Knot.Chiral`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#chiral).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.Knot.Chiral`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#chiral).
 
 ## Topological ambient isotopy
 
@@ -290,7 +290,7 @@ homeomorphism of $\mathbb{R}^3$), and $H_0$ is the identity.
 The time domain is all of $\mathbb{R}$, but only $H_0$ and $H_1$ matter for the isotopy
 relation.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.TopAmbientIsotopy`, a structure declared in [WantedExt/Topology/ConwayKnotShared.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#top-ambient-isotopy).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.TopAmbientIsotopy`, a structure declared in [WantedExt/Topology/ConwayKnotShared.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#top-ambient-isotopy).
 
 ## Topological ambient isotopy of subsets
 
@@ -300,7 +300,7 @@ $\mathbb{R}^3$ whose time-one map carries $A$ onto $B$, that is, $H_1(A) = B$.
 
 "Unoriented" because this is a set-level relation that forgets any parametrization.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.Set.UnorientedTopAmbIsotopic`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#unoriented-top-amb-isotopic).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.Set.UnorientedTopAmbIsotopic`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#unoriented-top-amb-isotopic).
 
 ## Closed unit disk in the plane
 
@@ -315,7 +315,7 @@ that sphere its boundary, which has corners. At a corner, no smooth map with inj
 derivative can match a corner-free smooth knot as its boundary, so slice disks parametrized by
 the square cannot exist, and every knot would fail to be smoothly slice.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.disk2`, an abbreviation declared in [WantedExt/Topology/ConwayKnotShared.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#disk2).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.disk2`, an abbreviation declared in [WantedExt/Topology/ConwayKnotShared.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#disk2).
 
 ## Unit circle in the plane
 
@@ -323,7 +323,7 @@ The unit Euclidean circle
 $\{(x, y) \in \mathbb{R} \times \mathbb{R} \mid x^2 + y^2 = 1\}$, the source of the boundary of
 a slicing disk.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.circle1`, an abbreviation declared in [WantedExt/Topology/ConwayKnotShared.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#circle1).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.circle1`, an abbreviation declared in [WantedExt/Topology/ConwayKnotShared.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#circle1).
 
 ## Closed upper half-space
 
@@ -333,7 +333,7 @@ is the set $\mathbb{R}^3 \times [0, \infty)$ of points $(x, s)$ with $s \ge 0$.
 We identify $\mathbb{R}^3 \times [0, \infty)$ with $B^4 \setminus \{\mathrm{pt}\}$, so slice
 disks live here.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.upperHalf`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#upper-half).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.upperHalf`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#upper-half).
 
 ## Model interior $2$-plane
 
@@ -341,7 +341,7 @@ The model interior $2$-plane in $\mathbb{R}^3 \times \mathbb{R}$
 is the set of points $((x_1, x_2, x_3), t)$ with $x_2 = x_3 = 0$, where $x_1$ and $t$ are
 arbitrary. It is the local model for interior local flatness of an embedded $2$-disk.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.modelPlane2`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#model-plane2).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.modelPlane2`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#model-plane2).
 
 ## Model half-plane
 
@@ -352,7 +352,7 @@ half-space $s \ge 0$.
 
 It is the local model for boundary local flatness of a properly embedded disk.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.modelHalfPlane2`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#model-half-plane2).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.modelHalfPlane2`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#model-half-plane2).
 
 ## Smoothly slice (smooth knot version)
 
@@ -365,7 +365,7 @@ of $f(p)$ is nonnegative, and it is $0$ exactly when $p \in C$; the derivative o
 point of $\Delta$ is injective; and the image of $C$ under the $\mathbb{R}^3$-component of $f$
 is the image of $K$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.Knot.SmoothlySlice`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#smoothly-slice).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.Knot.SmoothlySlice`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#smoothly-slice).
 
 ## Local flatness at an interior point
 
@@ -376,7 +376,7 @@ The image $D(\Delta)$ is locally flat at $q$ in the interior sense if there is a
 $h : U \to V$ between open subsets $U$, $V$ of $\mathbb{R}^3 \times \mathbb{R}$ such that $q \in U$
 and $h(U \cap D(\Delta)) = V \cap P$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.IsLocallyFlatInterior`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#is-locally-flat-interior).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.IsLocallyFlatInterior`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#is-locally-flat-interior).
 
 ## Local flatness at a boundary point
 
@@ -391,7 +391,7 @@ $h(U \cap H) = V \cap H$ and $h(U \cap D(\Delta)) = V \cap P$.
 The chart is open in $\mathbb{R}^3 \times \mathbb{R}$ rather than in $H$: when the last coordinate
 of $q$ is $0$, every open neighbourhood of $q$ leaves $H$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.IsLocallyFlatBoundary`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#is-locally-flat-boundary).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.IsLocallyFlatBoundary`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#is-locally-flat-boundary).
 
 ## Topologically slice (smooth knot version)
 
@@ -408,7 +408,7 @@ $h(U \cap D(D^2)) = V \cap P$; for every $p \in S^1$ there is such a homeomorphi
 $D(p) \in U$, $h(U \cap H) = V \cap H$ and $h(U \cap D(D^2)) = V \cap P_+$; and the image of
 $S^1$ under the $\mathbb{R}^3$-component of $D$ is the image of $K$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.Knot.TopologicallySlice`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#topologically-slice).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.Knot.TopologicallySlice`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#topologically-slice).
 
 ## Parametrization of a closed polyline
 
@@ -418,7 +418,7 @@ $\gamma : \mathbb{R} \to \mathbb{R}^3$ with $\gamma(k + \alpha) = (1 - \alpha) v
 for integers $0 \le k < n$ and reals $0 \le \alpha < 1$, where indices are taken modulo $n$ (so
 $v_n = v_0$). For the empty list the curve is constantly $0$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.plCurve`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#pl-curve).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.plCurve`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#pl-curve).
 
 ## PL knot (closed polyline)
 
@@ -429,7 +429,7 @@ from $v_i$ to $v_{i+1}$ for $i < n - 1$ and from $v_{n-1}$ back to $v_0$.
 Simplicity of the polyline (that it is an embedded closed curve) is not part of the data; it is
 imposed as a separate condition.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot`, a structure declared in [WantedExt/Topology/ConwayKnotShared.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#plknot).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot`, a structure declared in [WantedExt/Topology/ConwayKnotShared.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#plknot).
 
 ## Image of a PL knot
 
@@ -439,7 +439,7 @@ half-open interval $[0, n)$ under the parametrization that sends $k + \alpha$, f
 $0 \le k < n$ and a real $0 \le \alpha < 1$, to $(1 - \alpha) v_k + \alpha v_{k+1}$, with indices
 taken modulo $n$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot.image`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#image).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot.image`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#image).
 
 ## Simple PL knot
 
@@ -451,7 +451,7 @@ the half-open interval $[0, n)$.
 Equivalently, the polyline is a simple closed curve: all vertices are distinct, non-adjacent
 edges are disjoint, and adjacent edges meet only at their shared vertex.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot.IsSimple`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#is-simple).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot.IsSimple`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#is-simple).
 
 ## Smooth representative of a PL knot
 
@@ -463,7 +463,7 @@ $\mathbb{R}^3$ satisfies $H_1(\operatorname{im} J) = \operatorname{im} K$.
 When the polyline $K$ is simple, both curves are tame, and this agrees with the usual relation
 of having the same smooth/PL knot type.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot.HasSmoothRepresentative`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#has-smooth-representative).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot.HasSmoothRepresentative`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#has-smooth-representative).
 
 ## Smoothly slice (PL knot version)
 
@@ -474,7 +474,7 @@ ambient isotopy $(H_t)$ of $\mathbb{R}^3$, the map $H_1$ carries the image of $J
 
 Piccirillo's theorem that the Conway knot is not smoothly slice is stated with this notion.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot.SmoothlySlice`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#smoothly-slice-2).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot.SmoothlySlice`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#smoothly-slice-2).
 
 ## Topologically slice (PL knot version)
 
@@ -483,14 +483,14 @@ smooth knot $J$ that is a smooth representative of $K$, meaning that the image o
 of $K$ are unoriented topologically ambient isotopic subsets of $\mathbb{R}^3$, and such that $J$
 is topologically slice as a smooth knot.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot.TopologicallySlice`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#topologically-slice-2).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot.TopologicallySlice`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#topologically-slice-2).
 
 ## Point from three coordinates
 
 For real numbers $x$, $y$, $z$, this is the point
 $(x, y, z)$ of the Euclidean space $\mathbb{R}^3$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.mkR3`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#mk-r3).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.mkR3`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#mk-r3).
 
 ## Braid closure traversal state
 
@@ -498,7 +498,7 @@ A traversal state for tracing the closure of a braid
 consists of the current strand position, a natural number, and the list of points of
 $\mathbb{R}^3$ accumulated so far, in order, as vertices of the polyline.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.State`, a structure declared in [WantedExt/Topology/ConwayKnotShared.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#state).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.State`, a structure declared in [WantedExt/Topology/ConwayKnotShared.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#state).
 
 ## Tracing a strand through one crossing
 
@@ -522,7 +522,7 @@ The step is meant for $z_{\mathrm{bot}} < z_{\mathrm{top}}$, with the crossing i
 between these heights: the strand passing over is lifted to $y = 1$, and the strand passing
 under stays at $y = 0$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.applyCrossing`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 433](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L433). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#apply-crossing).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.applyCrossing`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 433](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L433). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#apply-crossing).
 
 ## Tracing a strand through a braid word
 
@@ -532,7 +532,7 @@ one-crossing step is applied to the state for each generator in turn, starting f
 generator $w_j$ is applied with top height $-(k + j)$ and bottom height $-(k + j + 1)$. The
 result is the final state; for the empty word it is $s$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.applyWord`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 470](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#apply-word).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.applyWord`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 470](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#apply-word).
 
 ## One pass of the braid closure
 
@@ -546,7 +546,7 @@ state has position $p$ and the extended vertex list.
 When $p = 1$ the vertex $(1, 0, 0)$ is left out because the polyline starts there, so the closure
 arc already returns to its first vertex.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.onePass`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#one-pass).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.onePass`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#one-pass).
 
 ## Iterated braid-closure passes
 
@@ -558,7 +558,7 @@ otherwise iterates on $S'$ with $f - 1$ passes remaining.
 The bound $f$ guarantees termination. The braid closure on $n$ strands uses $f = n$, since at
 most $n$ distinct strand positions are visited.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.iterate`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#iterate).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.iterate`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#iterate).
 
 ## Polyline closure of a braid word
 
@@ -576,7 +576,7 @@ The layout is designed for words with $1 \le |w_j| \le n - 1$ for every $j$, whe
 sit at the $x$-positions $1, \dots, n$; other words still yield a vertex list, but not a
 meaningful one.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.braidClosure`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 503](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L503). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#braid-closure).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.braidClosure`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 503](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L503). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#braid-closure).
 
 ## Braid word for the Conway knot
 
@@ -590,7 +590,7 @@ length $11$ and writhe $-1$, and is a braid word for the Conway knot 11n34.
 
 - KnotInfo's `11n_34` record, `braid_notation` field. The Knot Atlas records a different but Markov-equivalent presentation for the same knot, `[1, 1, 2, -3, 2, 1, -3, -2, -2, -3, -3]` (which it labels `K11n34`, the mirror of the Conway knot); both representations agree on braid index 4, braid length 11, and writhe `-1`. Sliceness is mirror-invariant, so either braid word is a valid witness for `conway_knot_not_smoothly_slice`.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.conwayBraidWord`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 543](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L543). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#conway-braid-word).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.conwayBraidWord`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 543](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L543). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#conway-braid-word).
 
 ## The Conway knot
 
@@ -599,7 +599,7 @@ $\mathbb{R}^3$: its vertices are those of the polyline closure, on $4$ strands, 
 $\sigma_1^{-2} \sigma_2 \sigma_1^{-1} \sigma_2 \sigma_1^{-1} \sigma_3 \sigma_2^{-2} \sigma_3^{2}$
 for the Conway knot.
 
-Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.conwayKnot`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 548](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotShared.lean#L548). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#conway-knot).
+Formalized by `MathlibExt.Topology.ConwayKnotShared.KnotTheory.conwayKnot`, a definition declared in [WantedExt/Topology/ConwayKnotShared.lean, line 548](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotShared.lean#L548). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#conway-knot).
 
 ## Knots as parametrized knots
 
@@ -607,7 +607,7 @@ A knot in $\mathbb{R}^3$, given by a smooth $2\pi$-periodic
 immersion $\gamma : \mathbb{R} \to \mathbb{R}^3$ that is injective on $[0, 2\pi)$, is sent to the
 parametrized knot with the same parametrization $\gamma$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.toParametrizedKnot`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#to-parametrized-knot).
+Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.toParametrizedKnot`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#to-parametrized-knot).
 
 ## Parametrized knots as knots
 
@@ -615,7 +615,7 @@ A parametrized knot in $\mathbb{R}^3$, given by a smooth
 $2\pi$-periodic immersion $\gamma : \mathbb{R} \to \mathbb{R}^3$ that is injective on
 $[0, 2\pi)$, is sent to the knot with the same parametrization $\gamma$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.ofParametrizedKnot`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#of-parametrized-knot).
+Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.ofParametrizedKnot`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#of-parametrized-knot).
 
 ## Knots are the same as parametrized knots
 
@@ -623,7 +623,7 @@ Sending a knot in $\mathbb{R}^3$ to the
 parametrized knot with the same parametrization is a bijection from knots to parametrized knots,
 whose inverse sends a parametrized knot to the knot with the same parametrization.
 
-Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.knotEquiv`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#knot-equiv).
+Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.knotEquiv`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#knot-equiv).
 
 ## Conway-knot ambient isotopies as Euclidean ambient isotopies
 
@@ -635,7 +635,7 @@ $(t, x) \mapsto G_t(x)$ smooth and $G_t \circ H_t = H_t \circ G_t = \mathrm{id}$
 is sent to the smooth ambient isotopy of Euclidean 3-space, in the sense of parametrized links,
 with the same forward family $H$ and inverse family $G$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.toEuclideanAmbientIsotopy`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#to-euclidean-ambient-isotopy).
+Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.toEuclideanAmbientIsotopy`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#to-euclidean-ambient-isotopy).
 
 ## Euclidean ambient isotopies as Conway-knot ambient isotopies
 
@@ -647,7 +647,7 @@ $(t, x) \mapsto G_t(x)$ smooth and $G_t \circ H_t = H_t \circ G_t = \mathrm{id}$
 is sent to the ambient isotopy of $\mathbb{R}^3$ in the sense of the Conway knot statements with
 the same forward family $H$ and inverse family $G$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.ofEuclideanAmbientIsotopy`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#of-euclidean-ambient-isotopy).
+Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.ofEuclideanAmbientIsotopy`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#of-euclidean-ambient-isotopy).
 
 ## Conway-knot circle reparametrizations as Euclidean ones
 
@@ -658,7 +658,7 @@ $f(t + 2\pi) = f(t) + 2\pi$ and $g(t + 2\pi) = g(t) + 2\pi$ for all $t$, is sent
 reparametrization, in the sense of parametrized links, with the same lift $f$ and inverse
 lift $g$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.toEuclideanCircleReparam`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#to-euclidean-circle-reparam).
+Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.toEuclideanCircleReparam`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#to-euclidean-circle-reparam).
 
 ## Euclidean circle reparametrizations as Conway-knot ones
 
@@ -669,7 +669,7 @@ $f(t + 2\pi) = f(t) + 2\pi$ and $g(t + 2\pi) = g(t) + 2\pi$ for all $t$, is sent
 orientation-preserving smooth reparametrization of the circle in the sense of the Conway knot
 statements with the same lift $f$ and inverse lift $g$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.ofEuclideanCircleReparam`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#of-euclidean-circle-reparam).
+Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.ofEuclideanCircleReparam`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#of-euclidean-circle-reparam).
 
 ## Isotopy of knots agrees with isotopy of parametrized knots
 
@@ -677,7 +677,7 @@ For all knots $K_1$ and
 $K_2$ in $\mathbb{R}^3$, $K_1$ and $K_2$ are ambient isotopic if and only if the parametrized knots
 with the same parametrizations as $K_1$ and $K_2$ are ambient isotopic as parametrized knots.
 
-Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.knot_isotopic_iff`, a theorem declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#knot-isotopic-iff).
+Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.knot_isotopic_iff`, a theorem declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#knot-isotopic-iff).
 
 ## Two-component links as labeled links
 
@@ -686,7 +686,7 @@ component $K$ and second component $L$ is sent to the labeled parametrized link 
 components whose component $0$ is the parametrized knot with the same parametrization as $K$ and
 whose component $1$ is the parametrized knot with the same parametrization as $L$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.toParametrizedLink`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#to-parametrized-link).
+Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.toParametrizedLink`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#to-parametrized-link).
 
 ## Labeled two-component links as two-component links
 
@@ -695,7 +695,7 @@ two components $0$ and $1$ is sent to the two-component link in $\mathbb{R}^3$ w
 component is the knot with the same parametrization as component $0$ and whose second component
 is the knot with the same parametrization as component $1$.
 
-Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.ofParametrizedLink`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#of-parametrized-link).
+Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.ofParametrizedLink`, a definition declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#of-parametrized-link).
 
 ## Two-component link isotopy agrees with labeled link isotopy
 
@@ -707,7 +707,7 @@ smooth ambient isotopy carries each component of $L_1$ onto the corresponding co
 $L_2$ up to orientation-preserving reparametrizations of the circle, if and only if the
 associated labeled links are ambient isotopic.
 
-Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.twoLink_isotopic_iff`, a theorem declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#two-link-isotopic-iff).
+Formalized by `MathlibExt.Topology.ConwayKnotEuclideanBridge.twoLink_isotopic_iff`, a theorem declared in [WantedExt/Topology/ConwayKnotEuclideanBridge.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayKnotEuclideanBridge.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#two-link-isotopic-iff).
 
 ## Non-isotopic two-component links exist
 
@@ -721,7 +721,7 @@ each up to an orientation-preserving reparametrization of the circle.
 
 - Classical; see https://en.wikipedia.org/wiki/Linking_number. Problem `exists_nonisotopic_link` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Topology.LinkingWanted.KnotTheory.exists_nonisotopic_link` is written with `theorem_wanted` in [WantedExt/Topology/LinkingWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/LinkingWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#exists-nonisotopic-link).
+Stated but not proved: `MathlibExt.Topology.LinkingWanted.KnotTheory.exists_nonisotopic_link` is written with `theorem_wanted` in [WantedExt/Topology/LinkingWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/LinkingWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#exists-nonisotopic-link).
 
 ## Existence of non-isotopic knots
 
@@ -732,7 +732,7 @@ $\mathbb{R}^3$ that are not ambient-isotopic.
 
 - Classical; see https://en.wikipedia.org/wiki/Knot_invariant. Problem `exists_nonisotopic_knots` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Topology.NonIsotopicKnotsWanted.KnotTheory.exists_nonisotopic_knots` is written with `theorem_wanted` in [WantedExt/Topology/NonIsotopicKnotsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/NonIsotopicKnotsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#exists-nonisotopic-knots).
+Stated but not proved: `MathlibExt.Topology.NonIsotopicKnotsWanted.KnotTheory.exists_nonisotopic_knots` is written with `theorem_wanted` in [WantedExt/Topology/NonIsotopicKnotsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/NonIsotopicKnotsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html#exists-nonisotopic-knots).
 
 ## Depends on
 
@@ -741,4 +741,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Knots, links and ambient isotopy](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Topology/knot-theory/knots-links-and-ambient-isotopy)

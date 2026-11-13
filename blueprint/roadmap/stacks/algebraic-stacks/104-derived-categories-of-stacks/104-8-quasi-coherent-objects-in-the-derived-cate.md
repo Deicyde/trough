@@ -8,13 +8,13 @@ proof: formalized
 
 # 104.8 Quasi-coherent objects in the derived category
 
-Section 104.8 of the Stacks Project, [Tag 0H12](https://stacks.math.columbia.edu/tag/0H12). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 104.8 of the Stacks Project, [Tag 0H12](https://stacks.math.columbia.edu/tag/0H12). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H13, a lemma
 
 [Tag 0H13](https://stacks.math.columbia.edu/tag/0H13) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FlatFppf.isZero_derivedSectionsFppf_of_parasitic_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfParasiticVanishingUnconditional.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfParasiticVanishingUnconditional.lean#L69). The attribute's comment: “cohomology over an object taken as the derived functor of sections over it, and the parasitic condition of Stacks 0773 written out on abelian sheaves”.
+**`AlgebraicGeometry.Stack.FlatFppf.isZero_derivedSectionsFppf_of_parasitic_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfParasiticVanishingUnconditional.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfParasiticVanishingUnconditional.lean#L69). The attribute's comment: “cohomology over an object taken as the derived functor of sections over it, and the parasitic condition of Stacks 0773 written out on abelian sheaves”.
 
 > **Stacks 0H13.** Let `𝒳` be an algebraic stack and let `K` be an object of `D(𝒳_{fppf})`
 > whose cohomology sheaves are parasitic — the sections of every cohomology sheaf of `K` vanish at
@@ -39,7 +39,7 @@ theorem isZero_derivedSectionsFppf_of_parasitic_cohomology
 
 [Tag 0H14](https://stacks.math.columbia.edu/tag/0H14) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FlatFppf.isZero_cohomology_of_isZero_derivedSectionsFppf_flatAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatAffineCohomologyVanishing.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FlatAffineCohomologyVanishing.lean#L112). The attribute's comment: “unconditional. Cohomology over an object is the derived functor of sections over it (Tag 0DD8 convention, equal to cohomology of the slice site by Tag 03F3)”.
+**`AlgebraicGeometry.Stack.FlatFppf.isZero_cohomology_of_isZero_derivedSectionsFppf_flatAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatAffineCohomologyVanishing.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatAffineCohomologyVanishing.lean#L112). The attribute's comment: “unconditional. Cohomology over an object is the derived functor of sections over it (Tag 0DD8 convention, equal to cohomology of the slice site by Tag 03F3)”.
 
 > **Stacks 0H14.** Let `𝒳` be an algebraic stack and let `K` be an object of `D(𝒳_{fppf})` such
 > that `RΓ(x, K) = 0` for every object `x` of `𝒳` lying over an affine scheme `U` with `U → 𝒳`
@@ -68,7 +68,7 @@ theorem isZero_cohomology_of_isZero_derivedSectionsFppf_flatAffine
 
 [Tag 0H15](https://stacks.math.columbia.edu/tag/0H15) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FlatFppf.hasAffineDerivedSectionsBaseChange_derivedModuleLowerShriekSucc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasiCoherentDerivedEquivalenceOfStack.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasiCoherentDerivedEquivalenceOfStack.lean#L69).
+**`AlgebraicGeometry.Stack.FlatFppf.hasAffineDerivedSectionsBaseChange_derivedModuleLowerShriekSucc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasiCoherentDerivedEquivalenceOfStack.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasiCoherentDerivedEquivalenceOfStack.lean#L69).
 
 > **Stacks 0H15.** Let `𝒳` be an algebraic stack and `H` an object of
 > `D_QCoh(𝒪_{𝒳_{flat, fppf}})` (module universe `u + 1`). Then `Lg_! H` has the following
@@ -92,7 +92,7 @@ theorem hasAffineDerivedSectionsBaseChange_derivedModuleLowerShriekSucc :
 
 [Tag 0H16](https://stacks.math.columbia.edu/tag/0H16) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FlatFppf.quasiCoherentDerivedEquivalenceSucc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasiCoherentDerivedEquivalenceOfStack.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasiCoherentDerivedEquivalenceOfStack.lean#L98).
+**`AlgebraicGeometry.Stack.FlatFppf.quasiCoherentDerivedEquivalenceSucc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasiCoherentDerivedEquivalenceOfStack.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasiCoherentDerivedEquivalenceOfStack.lean#L98).
 
 > **Stacks 0H16.** For an algebraic stack `𝒳`, `QC(𝒳)` is canonically equivalent to
 > `D_QCoh(𝒪_𝒳)`, both at module universe `u + 1` (see the module docstring for why `u + 1`):
@@ -114,4 +114,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 104.8, Tag 0H12](https://stacks.math.columbia.edu/tag/0H12)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

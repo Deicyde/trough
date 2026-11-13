@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.40 Some results on power series rings
 
-Section 15.40 of the Stacks Project, [Tag 07NK](https://stacks.math.columbia.edu/tag/07NK). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.40 of the Stacks Project, [Tag 07NK](https://stacks.math.columbia.edu/tag/07NK). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07NL, a lemma
 
 [Tag 07NL](https://stacks.math.columbia.edu/tag/07NL) in the Stacks Project.
 
-**`isFormallySmooth_mvPowerSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesFormallySmooth.lean, line 622](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesFormallySmooth.lean#L622).
+**`isFormallySmooth_mvPowerSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesFormallySmooth.lean, line 622](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesFormallySmooth.lean#L622).
 
 > **Stacks 07NL.** Formal power series rings over a characteristic-zero field,
 > over a field of characteristic `p`, and over a Cohen ring are formally smooth
@@ -50,7 +50,7 @@ public theorem isFormallySmooth_mvPowerSeries.{u} (n p : ℕ)
 
 [Tag 07NM](https://stacks.math.columbia.edu/tag/07NM) in the Stacks Project.
 
-**`main_theorem_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean#L148). The attribute's comment: “(1)”. References: SGA 1 II (4.14), “special case”; SGA 1 III (2.3), “special case”; SGA 2 IV (5.5), “special case”; SGA 3 VIIB (5.5.2), “partial”.
+**`main_theorem_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean#L148). The attribute's comment: “(1)”. References: SGA 1 II (4.14), “special case”; SGA 1 III (2.3), “special case”; SGA 2 IV (5.5), “special case”; SGA 3 VIIB (5.5.2), “partial”.
 
 > **Statement (1).** If `y_1, ..., y_n` is a regular system of parameters of
 > `A = K[[x_1, ..., x_n]]`, then the canonical substitution map
@@ -74,7 +74,7 @@ theorem main_theorem_one (K : Type*) [Field K] (n : ℕ)
           MvPowerSeries (Fin n) K →ₐ[K] MvPowerSeries (Fin n) K))
 ```
 
-**`main_theorem_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean#L217). The attribute's comment: “(2)”. References: EGA 0 (17.1.4), “more general”; EGA 0 (17.1.7), “special case”.
+**`main_theorem_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean#L217). The attribute's comment: “(2)”. References: EGA 0 (17.1.4), “more general”; EGA 0 (17.1.7), “special case”.
 
 > **Statement (2).** If `z_1, ..., z_r` form part of a regular system of parameters for
 > `A = K[[x_1, ..., x_n]]`, then `r <= n` and `A/(z_1, ..., z_r)` is isomorphic (as a
@@ -91,7 +91,7 @@ theorem main_theorem_two (K : Type*) [Field K] (n r : ℕ)
           MvPowerSeries (Fin (n - r)) K)
 ```
 
-**`main_theorem_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean, line 594](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean#L594). The attribute's comment: “(3)”. References: SGA 1 III (2.3), “special case”.
+**`main_theorem_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean, line 594](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean#L594). The attribute's comment: “(3)”. References: SGA 1 III (2.3), “special case”.
 
 > **Statement (3).** Let `Lambda` be a Cohen ring with uniformizer the prime number
 > `pr`, and let `B = Lambda[[x_1, ..., x_n]]`. If `p, y_1, ..., y_n` is a regular system of
@@ -111,7 +111,7 @@ theorem main_theorem_three (Λ : Type*) [CommRing Λ] [IsDomain Λ] [IsDiscreteV
       Function.Bijective (cohenSubstAlgHom hΛ y)
 ```
 
-**`main_theorem_four`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean, line 778](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean#L778). The attribute's comment: “(4)”. References: EGA 0 (17.1.7), “special case”.
+**`main_theorem_four`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean, line 778](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesMaps.lean#L778). The attribute's comment: “(4)”. References: EGA 0 (17.1.7), “special case”.
 
 > **Statement (4).** Let `Lambda` be a Cohen ring with uniformizer the prime number
 > `pr`, and let `B = Lambda[[x_1, ..., x_n]]`. If `p, z_1, ..., z_r` form part of a regular
@@ -137,7 +137,7 @@ theorem main_theorem_four (Λ : Type*) [CommRing Λ] [IsDomain Λ] [IsDiscreteVa
 
 [Tag 07NN](https://stacks.math.columbia.edu/tag/07NN) in the Stacks Project.
 
-**`exists_powerSeries_presentation_of_isLocalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesFormallySmooth.lean, line 1087](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesFormallySmooth.lean#L1087). References: EGA 0 (19.8.8), “more general”; SGA 2 IV (4.8), “more general”; SGA 2 IX (2.3), “more general”.
+**`exists_powerSeries_presentation_of_isLocalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesFormallySmooth.lean, line 1087](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesFormallySmooth.lean#L1087). References: EGA 0 (19.8.8), “more general”; SGA 2 IV (4.8), “more general”; SGA 2 IX (2.3), “more general”.
 
 > **Stacks 07NN.** A local homomorphism `A → B` of Noetherian complete local rings admits
 > a commutative presentation by surjections from power series rings `R` and `S`. According to the
@@ -189,7 +189,7 @@ public theorem exists_powerSeries_presentation_of_isLocalHom
 
 [Tag 09Q8](https://stacks.math.columbia.edu/tag/09Q8) in the Stacks Project.
 
-**`isNoetherianCompleteLocalRing_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesFormallySmooth.lean, line 1415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesFormallySmooth.lean#L1415). References: EGA IV (19.3.2.1), “(iii)”.
+**`isNoetherianCompleteLocalRing_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesFormallySmooth.lean, line 1415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteLocalRing/PowerSeriesFormallySmooth.lean#L1415). References: EGA IV (19.3.2.1), “(iii)”.
 
 > **Stacks 09Q8.** The pullback of two surjective maps of complete Noetherian local rings is
 > again a complete Noetherian local ring.
@@ -218,4 +218,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.40, Tag 07NK](https://stacks.math.columbia.edu/tag/07NK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

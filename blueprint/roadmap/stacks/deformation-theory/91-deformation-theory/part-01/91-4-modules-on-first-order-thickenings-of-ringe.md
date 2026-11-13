@@ -8,13 +8,13 @@ proof: formalized
 
 # 91.4 Modules on first order thickenings of ringed spaces
 
-Section 91.4 of the Stacks Project, [Tag 08L3](https://stacks.math.columbia.edu/tag/08L3). 12 tags here are carried by 38 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 91.4 of the Stacks Project, [Tag 08L3](https://stacks.math.columbia.edu/tag/08L3). 12 tags here are carried by 38 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08L4, an equation
 
 [Tag 08L4](https://stacks.math.columbia.edu/tag/08L4) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.firstOrderExtensionAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ModuleExtension.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/ModuleExtension.lean#L616). The attribute's comment: “the canonical map”.
+**`AlgebraicGeometry.RingedSpaceThickening.firstOrderExtensionAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ModuleExtension.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/ModuleExtension.lean#L616). The attribute's comment: “the canonical map”.
 
 > **Stacks Project, Tag 08L4.** The canonical map `c_{ℱ'} : i^* ℐ ⊗_{𝒪_X} ℱ ⟶ 𝒦` of an
 > extension `0 ⟶ i_* 𝒦 ⟶ ℱ' ⟶ i_* ℱ ⟶ 0` of `𝒪_{X'}`-modules across a first order thickening
@@ -49,13 +49,13 @@ noncomputable def firstOrderExtensionAction
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Abelian.YonedaExtension`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean#L82), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/RingedSpaceThickening/ModuleExtension.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/ModuleExtension.lean#L122) (StacksFrontier): “the short exact sequence”.
+- [`CategoryTheory.Abelian.YonedaExtension`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean#L82), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/RingedSpaceThickening/ModuleExtension.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/ModuleExtension.lean#L122) (StacksFrontier): “the short exact sequence”.
 
 ## Tag 08L5, a lemma
 
 [Tag 08L5](https://stacks.math.columbia.edu/tag/08L5) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.ExtensionPair.extensionAction_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionActionNaturality.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionActionNaturality.lean#L249). The attribute's comment: “part (1): compatibility of the canonical maps”.
+**`AlgebraicGeometry.RingedSpaceThickening.ExtensionPair.extensionAction_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionActionNaturality.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionActionNaturality.lean#L276). The attribute's comment: “part (1): compatibility of the canonical maps”.
 
 > **Stacks Project, Tag 08L5**, part (1). If the middle terms of two extensions across a
 > first order thickening are linked by a map `φ'` compatible with `φ : ℱ ⟶ 𝒢` and `ψ : 𝒦 ⟶ ℒ`,
@@ -64,11 +64,13 @@ Declarations registered for the tag:
 ```lean
 theorem extensionAction_naturality (S : ExtensionPair.{u}) (c : CompatibleMap S) :
     (firstOrderExtensionAction S.i S.F S.K S.firstOrder S.firstExtension).val ≫ S.kernelMap =
-      ((Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor ⟨((S.X)).presheaf, ((S.X)).IsSheaf⟩)).map (((𝟙 (idealSheafPullback S.i)), S.quotientMap) : (_, _) ⟶ (_, _))) ≫
+      ((Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor ⟨((S.X)).presheaf,
+          ((S.X)).IsSheaf⟩)).map (((𝟙 (idealSheafPullback S.i)), S.quotientMap) : (_, _) ⟶
+          (_, _))) ≫
         (firstOrderExtensionAction S.i S.G S.L S.firstOrder S.secondExtension).val
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.ExtensionPair.exists_compatibleMap_translate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionMaps.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionMaps.lean#L143). The attribute's comment: “the action on compatible maps”.
+**`AlgebraicGeometry.RingedSpaceThickening.ExtensionPair.exists_compatibleMap_translate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionMaps.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionMaps.lean#L143). The attribute's comment: “the action on compatible maps”.
 
 > **Stacks Project, Tag 08L5.** Translating a compatible map `φ'` by a map `α : ℱ ⟶ ℒ`, that
 > is adding the composite `ℱ' ⟶ i_* ℱ ⟶ i_* ℒ ⟶ 𝒢'`, again gives a compatible map. This is the
@@ -81,7 +83,7 @@ theorem exists_compatibleMap_translate (c : CompatibleMap S) (α : S.F ⟶ S.L) 
         S.firstExtension.g ≫ (modulePushforward S.i).map α ≫ S.secondExtension.f
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.ExtensionPair.existsUnique_translate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionMaps.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionMaps.lean#L190). The attribute's comment: “freeness and transitivity of the action”.
+**`AlgebraicGeometry.RingedSpaceThickening.ExtensionPair.existsUnique_translate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionMaps.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionMaps.lean#L190). The attribute's comment: “freeness and transitivity of the action”.
 
 > **Stacks Project, Tag 08L5.** Any two compatible maps differ by a unique
 > `α : ℱ ⟶ ℒ`. Together with `exists_compatibleMap_translate` this says that the set of
@@ -99,7 +101,7 @@ theorem existsUnique_translate (c d : CompatibleMap S) :
 
 [Tag 08L6](https://stacks.math.columbia.edu/tag/08L6) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.mapLiftingObstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/LiftingObstruction.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/LiftingObstruction.lean#L155). The attribute's comment: “the obstruction class and its vanishing criterion”.
+**`AlgebraicGeometry.RingedSpaceThickening.mapLiftingObstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/LiftingObstruction.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/LiftingObstruction.lean#L155). The attribute's comment: “the obstruction class and its vanishing criterion”.
 
 > The obstruction `o(φ, ψ) ∈ Ext¹_{𝒪_X}(ℱ, ℒ)` to lifting a pair of maps `φ : ℱ ⟶ 𝒢` and
 > `ψ : 𝒦 ⟶ ℒ`, compatible with the canonical maps of two extensions across a first order
@@ -131,7 +133,7 @@ noncomputable def mapLiftingObstruction
 
 [Tag 08L7](https://stacks.math.columbia.edu/tag/08L7) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.extensionClassesWithAction_principalHomogeneous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionClassesPrincipalHomogeneous.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionClassesPrincipalHomogeneous.lean#L83). The attribute's comment: “the whole lemma, for a first order thickening of ringed spaces: the isomorphism classes of extensions as in 08L4 with `c_{ℱ'} = c`, represented by their classes in `Ext¹_{𝒪_{X'}}(i_* ℱ, i_* 𝒦)`, form a principal homogeneous space under `Ext¹_{𝒪_X}(ℱ, 𝒦)` acting through `i_*` by Baer sum”.
+**`AlgebraicGeometry.RingedSpaceThickening.extensionClassesWithAction_principalHomogeneous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionClassesPrincipalHomogeneous.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionClassesPrincipalHomogeneous.lean#L83). The attribute's comment: “the whole lemma, for a first order thickening of ringed spaces: the isomorphism classes of extensions as in 08L4 with `c_{ℱ'} = c`, represented by their classes in `Ext¹_{𝒪_{X'}}(i_* ℱ, i_* 𝒦)`, form a principal homogeneous space under `Ext¹_{𝒪_X}(ℱ, 𝒦)` acting through `i_*` by Baer sum”.
 
 > **Stacks 08L7.** Let `i : (X, 𝒪_X) ⟶ (X', 𝒪_{X'})` be a first order thickening of ringed
 > spaces, `ℱ`, `𝒦` two `𝒪_X`-modules and `c : ℐ ⊗_{𝒪_X} ℱ ⟶ 𝒦` an `𝒪_X`-linear map. The
@@ -177,7 +179,7 @@ theorem extensionClassesWithAction_principalHomogeneous
           ∃! ξ : Abelian.Ext.{e} F K 1, η + ξ.mapExactFunctor (modulePushforward i) = η'
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.exists_extClass_add_of_essImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionClassification.lean, line 666](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionClassification.lean#L666). The attribute's comment: “the action of `Ext¹_{𝒪_X}(ℱ, 𝒦)`: adding an extension of `𝒪_X`-modules, read on `X'` as one whose middle term is a direct image, does not change the canonical map. SCOPE: this clause only; the simple transitivity of the action is `existsUnique_extClass_sub_of_firstOrderExtensionAction_eq`, and the identification of the subgroup of such classes with `Ext¹_{𝒪_X}(ℱ, 𝒦)` itself is not formalized here”.
+**`AlgebraicGeometry.RingedSpaceThickening.exists_extClass_add_of_essImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionClassification.lean, line 682](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionClassification.lean#L682). The attribute's comment: “the action of `Ext¹_{𝒪_X}(ℱ, 𝒦)`: adding an extension of `𝒪_X`-modules, read on `X'` as one whose middle term is a direct image, does not change the canonical map. SCOPE: this clause only; the simple transitivity of the action is `existsUnique_extClass_sub_of_firstOrderExtensionAction_eq`, and the identification of the subgroup of such classes with `Ext¹_{𝒪_X}(ℱ, 𝒦)` itself is not formalized here”.
 
 > **Stacks 08L7, the action.** Adding to an extension one whose middle term is a direct
 > image does not change the canonical map: such an extension has vanishing canonical map
@@ -203,7 +205,7 @@ theorem exists_extClass_add_of_essImage (hi : IsFirstOrderThickening i)
           (firstOrderExtensionAction i F K hi E₀).val
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.existsUnique_extClass_sub_of_firstOrderExtensionAction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionClassification.lean, line 693](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionClassification.lean#L693). The attribute's comment: “simple transitivity: two extensions with the same canonical map differ by the class of exactly one extension whose middle term is a direct image, i.e. of an extension of `𝒪_X`-modules. SCOPE: this clause only; the identification of the group of such classes with `Ext¹_{𝒪_X}(ℱ, 𝒦)` itself is not formalized here”.
+**`AlgebraicGeometry.RingedSpaceThickening.existsUnique_extClass_sub_of_firstOrderExtensionAction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionClassification.lean, line 709](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionClassification.lean#L709). The attribute's comment: “simple transitivity: two extensions with the same canonical map differ by the class of exactly one extension whose middle term is a direct image, i.e. of an extension of `𝒪_X`-modules. SCOPE: this clause only; the identification of the group of such classes with `Ext¹_{𝒪_X}(ℱ, 𝒦)` itself is not formalized here”.
 
 > **Stacks 08L7, simple transitivity.** Two extensions across the thickening with the same
 > canonical map differ, in `Ext¹_{𝒪_{X'}}(i_* ℱ, i_* 𝒦)`, by the class of exactly one extension
@@ -230,7 +232,7 @@ theorem existsUnique_extClass_sub_of_firstOrderExtensionAction_eq (hi : IsFirstO
             (modulePushforward i).essImage D.Z.left
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.existsUnique_ext_mapExactFunctor_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatLift.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/FlatLift.lean#L295). The attribute's comment: “the identification of the group of classes whose extensions have a direct image as middle term with `Ext¹_{𝒪_X}(ℱ, 𝒦)` itself: such a class is `i_*` of exactly one class on `X`. SCOPE: this clause only; the action of those classes is `exists_extClass_add_of_essImage` and the simple transitivity is `existsUnique_extClass_sub_of_firstOrderExtensionAction_eq`”.
+**`AlgebraicGeometry.RingedSpaceThickening.existsUnique_ext_mapExactFunctor_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatLift.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/FlatLift.lean#L295). The attribute's comment: “the identification of the group of classes whose extensions have a direct image as middle term with `Ext¹_{𝒪_X}(ℱ, 𝒦)` itself: such a class is `i_*` of exactly one class on `X`. SCOPE: this clause only; the action of those classes is `exists_extClass_add_of_essImage` and the simple transitivity is `existsUnique_extClass_sub_of_firstOrderExtensionAction_eq`”.
 
 > The classes in `Ext¹_{𝒪_{X'}}(i_* ℱ, i_* 𝒦)` whose extensions have a direct image as middle
 > term are exactly the images of `Ext¹_{𝒪_X}(ℱ, 𝒦)` under `i_*`, each attained by exactly one
@@ -252,7 +254,7 @@ theorem existsUnique_ext_mapExactFunctor_eq (hi : IsThickening i)
 
 [Tag 08L8](https://stacks.math.columbia.edu/tag/08L8) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.extensionExistenceObstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExistenceObstruction.lean, line 1055](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/ExistenceObstruction.lean#L1055).
+**`AlgebraicGeometry.RingedSpaceThickening.extensionExistenceObstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExistenceObstruction.lean, line 1111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/ExistenceObstruction.lean#L1111).
 
 > **Stacks Project, Tag 08L8.** The obstruction `o(ℱ, 𝒦, c) ∈ Ext²_{𝒪_X}(ℱ, 𝒦)` to the
 > existence of an extension of `𝒪_{X'}`-modules `0 ⟶ i_* 𝒦 ⟶ ℱ' ⟶ i_* ℱ ⟶ 0` as in Tag 08L4 whose
@@ -266,7 +268,8 @@ noncomputable def extensionExistenceObstruction
     [HasExt (SheafOfModules.{u} (structureSheafRing X))]
     [HasDerivedCategory (SheafOfModules.{u} (structureSheafRing X))]
     (hi : IsFirstOrderThickening i) (F K : SheafOfModules.{u} (structureSheafRing X))
-    (c : (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u} ⟨((X)).presheaf, ((X)).IsSheaf⟩).obj ((idealSheafPullback i))).obj (F)) ⟶ K) :
+    (c : (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u} ⟨((X)).presheaf,
+        ((X)).IsSheaf⟩).obj ((idealSheafPullback i))).obj (F)) ⟶ K) :
     { o : CategoryTheory.Abelian.zExt F K 2 //
       o = 0 ↔ ∃ E : CategoryTheory.Abelian.YonedaExtension
           ((modulePushforward i).obj F) ((modulePushforward i).obj K) 0,
@@ -277,7 +280,7 @@ noncomputable def extensionExistenceObstruction
 
 [Tag 08L9](https://stacks.math.columbia.edu/tag/08L9) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.structureSheafSplitEpi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L345). The attribute's comment: “a trivialization splits the structure-sheaf map”.
+**`AlgebraicGeometry.RingedSpaceThickening.structureSheafSplitEpi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L345). The attribute's comment: “a trivialization splits the structure-sheaf map”.
 
 > **Stacks 08L9.** A trivialization of a thickening splits its structure-sheaf map: the
 > structure-sheaf map `𝒪_X ⟶ π_* 𝒪_{X'}` of the retraction, reindexed along
@@ -294,7 +297,7 @@ noncomputable def extensionExistenceObstruction
 noncomputable def structureSheafSplitEpi : SplitEpi i.hom.c
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.trivializedThickeningEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivializedThickeningEquivalence.lean, line 946](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivializedThickeningEquivalence.lean#L946). The attribute's comment: “the category of trivialized first order thickenings of (X, 𝒪\_X) is equivalent to the category of 𝒪\_X-modules; morphisms of thickenings run in the geometric direction (X'₁ ⟶ X'₂ of ringed spaces, Stacks 08LD), so the module side carries ᵒᵖ”.
+**`AlgebraicGeometry.RingedSpaceThickening.trivializedThickeningEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivializedThickeningEquivalence.lean, line 945](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivializedThickeningEquivalence.lean#L945). The attribute's comment: “the category of trivialized first order thickenings of (X, 𝒪\_X) is equivalent to the category of 𝒪\_X-modules; morphisms of thickenings run in the geometric direction (X'₁ ⟶ X'₂ of ringed spaces, Stacks 08LD), so the module side carries ᵒᵖ”.
 
 > The category of trivialized first order thickenings of a ringed space `(X, 𝒪_X)` is
 > equivalent to the opposite of the category of `𝒪_X`-modules.
@@ -316,7 +319,7 @@ noncomputable def trivializedThickeningEquivalence (X : RingedSpace.{u, u}) :
     (SheafOfModules.{u} (structureSheafRing X))ᵒᵖ ≌ TrivializedThickening X
 ```
 
-**`Deformation.RingThickening.splittingFromTrivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L126). The attribute's comment: “splitting\_from\_trivialization”. References: EGA 0 (18.2.3), “special case”.
+**`Deformation.RingThickening.splittingFromTrivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L126). The attribute's comment: “splitting\_from\_trivialization”. References: EGA 0 (18.2.3), “special case”.
 
 > A trivialization identifies a first order thickening with the trivial square-zero extension
 > by its kernel ideal.
@@ -328,7 +331,7 @@ noncomputable def splittingFromTrivialization
   PresheafTrivialSquareZeroEquiv A' A π.retraction split
 ```
 
-**`Deformation.RingThickening.retractionFromSplitting`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L174). The attribute's comment: “trivialization\_from\_splitting”.
+**`Deformation.RingThickening.retractionFromSplitting`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L174). The attribute's comment: “trivialization\_from\_splitting”.
 
 > The section of the structure-sheaf map, transported along the inverse homeomorphism of the
 > base map, defines a morphism of ringed spaces in the opposite direction.
@@ -339,7 +342,7 @@ noncomputable abbrev retractionFromSplitting {X X' : RingedSpace.{u, v}}
     (splitting : SplitEpi i.hom.c) : X' ⟶ X
 ```
 
-**`Deformation.RingThickening.retractionFromSplitting_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L183). The attribute's comment: “trivialization\_from\_splitting”.
+**`Deformation.RingThickening.retractionFromSplitting_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L183). The attribute's comment: “trivialization\_from\_splitting”.
 
 > The morphism induced by a splitting of the structure-sheaf map retracts the original
 > morphism.
@@ -353,8 +356,8 @@ theorem retractionFromSplitting_comp {X X' : RingedSpace.{u, v}}
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.SplitMono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SplitMono#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L58) (StacksFrontier): “trivial\_thickening\_and\_trivialization”.
-- [`CategoryTheory.IsSplitMono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsSplitMono#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L59) (StacksFrontier): “trivial\_thickening\_and\_trivialization”. References: SGA 4 I (10.6).
+- [`CategoryTheory.SplitMono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SplitMono#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L58) (StacksFrontier): “trivial\_thickening\_and\_trivialization”.
+- [`CategoryTheory.IsSplitMono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsSplitMono#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L59) (StacksFrontier): “trivial\_thickening\_and\_trivialization”. References: SGA 4 I (10.6).
 
 ## Tag 08LA, an equation
 
@@ -362,14 +365,14 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Deformation.RingThickening.splittingFromTrivialization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L126), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L202) (StacksFrontier): “the splitting determined by a trivialization”.
-- [`Deformation.RingThickening.PresheafTrivialSquareZeroEquiv`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L98), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L204) (StacksFrontier): “the split square-zero extension it lands in”.
+- [`Deformation.RingThickening.splittingFromTrivialization`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L126), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L202) (StacksFrontier): “the splitting determined by a trivialization”.
+- [`Deformation.RingThickening.PresheafTrivialSquareZeroEquiv`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L98), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L204) (StacksFrontier): “the split square-zero extension it lands in”.
 
 ## Tag 08LB, a remark
 
 [Tag 08LB](https://stacks.math.columbia.edu/tag/08LB) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.trivialExtensionModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 779](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L779). The attribute's comment: “part (1): the trivial extension `ℱ'_{c,triv} = ℱ ⊕ 𝒦`”.
+**`AlgebraicGeometry.RingedSpaceThickening.trivialExtensionModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 779](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L779). The attribute's comment: “part (1): the trivial extension `ℱ'_{c,triv} = ℱ ⊕ 𝒦`”.
 
 > **Stacks Project, Tag 08LB, part (1).** The *trivial extension* `ℱ'_{c,triv}` of `ℱ` by
 > `𝒦` attached to `c` and a trivialization `π`: the direct sum `ℱ ⊕ 𝒦`, carried to `X'` by `i_*`,
@@ -383,7 +386,7 @@ Declarations registered for the tag:
 noncomputable def trivialExtensionModule : SheafOfModules.{u} (structureSheafRing X')
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.trivialExtensionModule_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 799](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L799). The attribute's comment: “part (1): the action of `𝒪_{X'}` on `ℱ ⊕ 𝒦`”.
+**`AlgebraicGeometry.RingedSpaceThickening.trivialExtensionModule_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 799](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L799). The attribute's comment: “part (1): the action of `𝒪_{X'}` on `ℱ ⊕ 𝒦`”.
 
 > **Stacks Project, Tag 08LB, part (1).** The `𝒪_{X'}`-module structure of the trivial
 > extension: a section of `𝒪_{X'}` acts diagonally on `ℱ ⊕ 𝒦` and moves the `ℱ`-coordinate into
@@ -399,7 +402,7 @@ theorem trivialExtensionModule_smul (U : (Opens X'.carrier)ᵒᵖ)
       extensionPairing i F K c U (trivializationDerivation i π hi.1.1 U r) z.1)
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.trivialExtensionShortComplex_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 916](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L916). The attribute's comment: “part (2): the trivial extension is an extension as in 08L4”.
+**`AlgebraicGeometry.RingedSpaceThickening.trivialExtensionShortComplex_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 916](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L916). The attribute's comment: “part (2): the trivial extension is an extension as in 08L4”.
 
 > **Stacks Project, Tag 08LB, part (2).** The trivial extension sits in a short exact
 > sequence `0 ⟶ i_* 𝒦 ⟶ ℱ'_{c,triv} ⟶ i_* ℱ ⟶ 0` of `𝒪_{X'}`-modules: the inclusion of the
@@ -410,7 +413,7 @@ theorem trivialExtensionShortComplex_shortExact :
     (trivialExtensionShortComplex i π F K c hi).ShortExact
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.trivialYonedaExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 932](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L932). The attribute's comment: “part (2): the trivial extension as a Yoneda extension”.
+**`AlgebraicGeometry.RingedSpaceThickening.trivialYonedaExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 932](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L932). The attribute's comment: “part (2): the trivial extension as a Yoneda extension”.
 
 > **Stacks Project, Tag 08LB, part (2).** The trivial extension, read as an extension of
 > `i_* ℱ` by `i_* 𝒦` in the sense of **Stacks 08L4**.
@@ -421,7 +424,7 @@ noncomputable def trivialYonedaExtension :
       ((modulePushforward i).obj K) 0
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.trivialYonedaExtension_action`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 954](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L954). The attribute's comment: “part (2'): the canonical map of the trivial extension is `c`”.
+**`AlgebraicGeometry.RingedSpaceThickening.trivialYonedaExtension_action`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 954](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L954). The attribute's comment: “part (2'): the canonical map of the trivial extension is `c`”.
 
 > **Stacks Project, Tag 08LB, part (2').** The canonical map of the trivial extension is the
 > prescribed one: `c_{ℱ'_{c,triv}} = c`. This is what places `ℱ'_{c,triv}` in the set of
@@ -433,7 +436,7 @@ theorem trivialYonedaExtension_action :
     (firstOrderExtensionAction i F K hi (trivialYonedaExtension i π F K c hi)).1 = c
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.splitRestriction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1002](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1002). The attribute's comment: “part (3): reading an extension as an `𝒪_X`-module along the trivialization”.
+**`AlgebraicGeometry.RingedSpaceThickening.splitRestriction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1002](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1002). The attribute's comment: “part (3): reading an extension as an `𝒪_X`-module along the trivialization”.
 
 > **Stacks Project, Tag 08LB, part (3).** Reading a sheaf of `𝒪_{X'}`-modules as a sheaf of
 > `𝒪_X`-modules along a trivialization: pushforward along the retraction.
@@ -449,7 +452,7 @@ noncomputable abbrev splitRestriction :
     SheafOfModules.{u} (structureSheafRing X') ⥤ SheafOfModules.{u} (structureSheafRing X)
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.splitExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1048](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1048). The attribute's comment: “part (3): an extension read as a sequence of `𝒪_X`-modules”.
+**`AlgebraicGeometry.RingedSpaceThickening.splitExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1048](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1048). The attribute's comment: “part (3): an extension read as a sequence of `𝒪_X`-modules”.
 
 > **Stacks Project, Tag 08LB, part (3).** The extension `0 ⟶ i_* 𝒦 ⟶ ℱ' ⟶ i_* ℱ ⟶ 0` of
 > `𝒪_{X'}`-modules, read as a short complex of `𝒪_X`-modules along the trivialization. Its outer
@@ -460,7 +463,7 @@ noncomputable abbrev splitRestriction :
 noncomputable def splitExtension : ShortComplex (SheafOfModules.{u} (structureSheafRing X))
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.splitExtension_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1077](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1077). The attribute's comment: “part (3): the sequence read over `𝒪_X` is short exact”.
+**`AlgebraicGeometry.RingedSpaceThickening.splitExtension_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1077](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1077). The attribute's comment: “part (3): the sequence read over `𝒪_X` is short exact”.
 
 > **Stacks Project, Tag 08LB, part (3).** An extension across the thickening, read along the
 > trivialization, is again short exact — which is what makes the class `ξ_{ℱ'}` available.
@@ -476,7 +479,7 @@ noncomputable def splitExtension : ShortComplex (SheafOfModules.{u} (structureSh
 theorem splitExtension_shortExact : (splitExtension i π F K E).ShortExact
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.underlyingExtensionClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1093](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1093). The attribute's comment: “part (3): the class `ξ_{ℱ'}` of an extension”.
+**`AlgebraicGeometry.RingedSpaceThickening.underlyingExtensionClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1093](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1093). The attribute's comment: “part (3): the class `ξ_{ℱ'}` of an extension”.
 
 > **Stacks Project, Tag 08LB, part (3).** The class `ξ_{ℱ'} ∈ Ext¹_{𝒪_X}(ℱ, 𝒦)` of an
 > extension of `ℱ` by `𝒦` across a trivialized first order thickening of ringed spaces: the
@@ -489,7 +492,7 @@ noncomputable def underlyingExtensionClass
     CategoryTheory.Abelian.Ext F K 1
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.underlyingExtensionClass_trivialYonedaExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1197). The attribute's comment: “part (5): the trivial extension has class `ξ_{ℱ'_{c,triv}} = 0`”.
+**`AlgebraicGeometry.RingedSpaceThickening.underlyingExtensionClass_trivialYonedaExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1197). The attribute's comment: “part (5): the trivial extension has class `ξ_{ℱ'_{c,triv}} = 0`”.
 
 > **Stacks Project, Tag 08LB, part (5).** The trivial extension maps to the zero class:
 > `ξ_{ℱ'_{c,triv}} = 0` in `Ext¹_{𝒪_X}(ℱ, 𝒦)`.
@@ -506,7 +509,7 @@ theorem underlyingExtensionClass_trivialYonedaExtension
     underlyingExtensionClass i π hi.1.1 F K (trivialYonedaExtension i π F K c hi) = 0
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.exists_iso_of_underlyingExtensionClass_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1380). The attribute's comment: “part (4): injectivity of `ℱ' ↦ ξ_{ℱ'}` — two extensions as in 08L4 with the same canonical map `c` and the same class `ξ` are isomorphic as extensions”.
+**`AlgebraicGeometry.RingedSpaceThickening.exists_iso_of_underlyingExtensionClass_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1380). The attribute's comment: “part (4): injectivity of `ℱ' ↦ ξ_{ℱ'}` — two extensions as in 08L4 with the same canonical map `c` and the same class `ξ` are isomorphic as extensions”.
 
 > **Stacks Project, Tag 08LB, part (4).** *Injectivity of `ℱ' ↦ ξ_{ℱ'}` on isomorphism
 > classes:* two extensions across the thickening with the same canonical map and the same class
@@ -529,7 +532,7 @@ theorem exists_iso_of_underlyingExtensionClass_eq
     ∃ φ : E.Z.left ≅ E'.Z.left, E.f ≫ φ.hom = E'.f ∧ φ.hom ≫ E'.g = E.g
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.exists_yonedaExtension_underlyingExtensionClass_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1406). The attribute's comment: “part (4): surjectivity of `ℱ' ↦ ξ_{ℱ'}` — every class in `Ext¹_{𝒪_X}(ℱ, 𝒦)` is the class of an extension as in 08L4 with canonical map `c`”.
+**`AlgebraicGeometry.RingedSpaceThickening.exists_yonedaExtension_underlyingExtensionClass_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1406). The attribute's comment: “part (4): surjectivity of `ℱ' ↦ ξ_{ℱ'}` — every class in `Ext¹_{𝒪_X}(ℱ, 𝒦)` is the class of an extension as in 08L4 with canonical map `c`”.
 
 > **Stacks Project, Tag 08LB, part (4).** *Surjectivity of `ℱ' ↦ ξ_{ℱ'}`:* every class
 > `η ∈ Ext¹_{𝒪_X}(ℱ, 𝒦)` is the class `ξ_{ℱ'}` of an extension `ℱ'` as in **Stacks 08L4** whose
@@ -550,7 +553,7 @@ theorem exists_yonedaExtension_underlyingExtensionClass_eq
         underlyingExtensionClass i π hi.1.1 F K E = η
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.bijective_underlyingExtensionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1470). The attribute's comment: “part (4): `ℱ' ↦ ξ_{ℱ'}` is a bijection from the isomorphism classes of extensions as in 08L4 with `c = c_{ℱ'}` onto `Ext¹_{𝒪_X}(ℱ, 𝒦)`, the isomorphism classes being represented by their classes in `Ext¹_{𝒪_{X'}}(i_* ℱ, i_* 𝒦)`”.
+**`AlgebraicGeometry.RingedSpaceThickening.bijective_underlyingExtensionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean, line 1470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivialExtension.lean#L1470). The attribute's comment: “part (4): `ℱ' ↦ ξ_{ℱ'}` is a bijection from the isomorphism classes of extensions as in 08L4 with `c = c_{ℱ'}` onto `Ext¹_{𝒪_X}(ℱ, 𝒦)`, the isomorphism classes being represented by their classes in `Ext¹_{𝒪_{X'}}(i_* ℱ, i_* 𝒦)`”.
 
 > **Stacks Project, Tag 08LB, part (4).** `ℱ' ↦ ξ_{ℱ'}` *is a bijection* from the isomorphism
 > classes of extensions `0 ⟶ i_* 𝒦 ⟶ ℱ' ⟶ i_* ℱ ⟶ 0` as in **Stacks 08L4** with
@@ -578,7 +581,7 @@ theorem bijective_underlyingExtensionClass
 
 [Tag 08LC](https://stacks.math.columbia.edu/tag/08LC) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.PushoutDescentData.extensionOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionPushoutDescent.lean, line 1383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionPushoutDescent.lean#L1383). The attribute's comment: “the canonical map on extensions, by pushout along the map of kernel modules”.
+**`AlgebraicGeometry.RingedSpaceThickening.PushoutDescentData.extensionOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionPushoutDescent.lean, line 1403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionPushoutDescent.lean#L1403). The attribute's comment: “the canonical map on extensions, by pushout along the map of kernel modules”.
 
 > **Stacks Project, Tag 08LC.** The extension over the first thickening produced from an
 > extension over the second: the pushout `ℱ'₂ ⊔_{𝒦₂} 𝒦₁` carries an `𝒪_{X'}`-module structure,
@@ -594,7 +597,7 @@ noncomputable def extensionOne :
       ((modulePushforward i).obj dat.K₁) 0
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.PushoutDescentData.extensionOne_action`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionPushoutDescent.lean, line 1471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionPushoutDescent.lean#L1471). The attribute's comment: “the canonical map of the pushed-out extension is c₁”.
+**`AlgebraicGeometry.RingedSpaceThickening.PushoutDescentData.extensionOne_action`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ExtensionPushoutDescent.lean, line 1491](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/ExtensionPushoutDescent.lean#L1491). The attribute's comment: “the canonical map of the pushed-out extension is c₁”.
 
 > **Stacks Project, Tag 08LC.** The canonical map of Tag 08L4 of the extension produced over
 > the first thickening is the prescribed `c₁`.
@@ -608,7 +611,7 @@ theorem extensionOne_action :
 
 [Tag 08LD](https://stacks.math.columbia.edu/tag/08LD) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.PushoutDescentData.underlyingExtensionClass_extensionOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/PushoutDescentClass.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/PushoutDescentClass.lean#L233). The attribute's comment: “the square commutes for the extension Tag 08LC produces”.
+**`AlgebraicGeometry.RingedSpaceThickening.PushoutDescentData.underlyingExtensionClass_extensionOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/PushoutDescentClass.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/PushoutDescentClass.lean#L233). The attribute's comment: “the square commutes for the extension Tag 08LC produces”.
 
 > **Stacks Project, Tag 08LD.** The square of the remark commutes for the extension that
 > Tag 08LC produces: let `h = SecondThickening.spaceHom` be the morphism of first order
@@ -644,7 +647,7 @@ theorem underlyingExtensionClass_extensionOne
         (CategoryTheory.Abelian.Ext.mk₀ dat.kernelMap) (add_zero 1)
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.underlyingExtensionClass_eq_of_pushedExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivializedFunctoriality.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivializedFunctoriality.lean#L394). The attribute's comment: “the commutative square relating the two extension classes”.
+**`AlgebraicGeometry.RingedSpaceThickening.underlyingExtensionClass_eq_of_pushedExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivializedFunctoriality.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/TrivializedFunctoriality.lean#L394). The attribute's comment: “the commutative square relating the two extension classes”.
 
 > For a morphism `h : X'₁ ⟶ X'₂` of trivialized first order thickenings of `(X, 𝒪_X)` the square
 > relating the extension classes commutes: if `ℱ'₁` is the extension that the functoriality of Tag
@@ -685,7 +688,7 @@ theorem underlyingExtensionClass_eq_of_pushedExtension (i₁ : X ⟶ X₁) (i₂
 
 [Tag 08LE](https://stacks.math.columbia.edu/tag/08LE) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.IsComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/RingedSpace/ThickeningSequence.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/RingedSpace/ThickeningSequence.lean#L176). The attribute's comment: “complex of first order thickenings”.
+**`AlgebraicGeometry.RingedSpaceThickening.IsComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/RingedSpace/ThickeningSequence.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/RingedSpace/ThickeningSequence.lean#L176). The attribute's comment: “complex of first order thickenings”.
 
 > **Stacks Project, Tag 08LE.** A sequence of first order thickenings of `X` is a *complex*
 > when its induced maps on ideal modules compose to zero.
@@ -694,7 +697,7 @@ theorem underlyingExtensionClass_eq_of_pushedExtension (i₁ : X ⟶ X₁) (i₂
 noncomputable abbrev IsComplex (S : FirstOrderThickeningSequence.{u}) : Prop
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.IsShortExact`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/RingedSpace/ThickeningSequence.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/RingedSpace/ThickeningSequence.lean#L183). The attribute's comment: “short exact sequence of first order thickenings”.
+**`AlgebraicGeometry.RingedSpaceThickening.IsShortExact`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/RingedSpace/ThickeningSequence.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/RingedSpace/ThickeningSequence.lean#L183). The attribute's comment: “short exact sequence of first order thickenings”.
 
 > **Stacks Project, Tag 08LE.** A sequence of first order thickenings of `X` is a *short
 > exact sequence* when `0 ⟶ ℐ₃ ⟶ ℐ₂ ⟶ ℐ₁ ⟶ 0` is short exact as a sequence of
@@ -704,7 +707,7 @@ noncomputable abbrev IsComplex (S : FirstOrderThickeningSequence.{u}) : Prop
 noncomputable abbrev IsShortExact (S : FirstOrderThickeningSequence.{u}) : Prop
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.FirstOrderThickeningSequence.existsUnique_trivialization_of_isComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/RingedSpace/ThickeningTrivialization.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/RingedSpace/ThickeningTrivialization.lean#L461). The attribute's comment: “canonical trivialization of a complex”.
+**`AlgebraicGeometry.RingedSpaceThickening.FirstOrderThickeningSequence.existsUnique_trivialization_of_isComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/RingedSpace/ThickeningTrivialization.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/RingedSpace/ThickeningTrivialization.lean#L461). The attribute's comment: “canonical trivialization of a complex”.
 
 > **Stacks Project, Tag 08LE.** A complex of first order thickenings of `(X, 𝒪_X)` canonically
 > trivializes its first thickening: the composite `X₁ ⟶ X₃` factors uniquely through
@@ -719,7 +722,7 @@ theorem existsUnique_trivialization_of_isComplex (hS : IsComplex S) :
 
 [Tag 08LF](https://stacks.math.columbia.edu/tag/08LF) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.boundary_underlyingExtensionClass_eq_obstructionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/RestrictedExtensionAction.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/RestrictedExtensionAction.lean#L356).
+**`AlgebraicGeometry.RingedSpaceThickening.boundary_underlyingExtensionClass_eq_obstructionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/RestrictedExtensionAction.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/RestrictedExtensionAction.lean#L356).
 
 > **Stacks Project, Tag 08LF.** Let `(X, 𝒪_X)` be a ringed space, `ℱ` an `𝒪_X`-module and
 > `X'₁ ⟶ X'₂ ⟶ X'₃` a complex of first order thickenings of `(X, 𝒪_X)` (Tag 08LE), with ideals
@@ -771,7 +774,7 @@ theorem boundary_underlyingExtensionClass_eq_obstructionClass
       obstructionClass S.i₃ S.firstOrder₃ F K₃ c₃
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.boundary_underlyingExtensionClass_extensionOne_eq_obstructionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/RestrictedExtensionAction.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/RestrictedExtensionAction.lean#L601).
+**`AlgebraicGeometry.RingedSpaceThickening.boundary_underlyingExtensionClass_extensionOne_eq_obstructionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/RestrictedExtensionAction.lean, line 601](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/RestrictedExtensionAction.lean#L601).
 
 > **Stacks Project, Tag 08LF**, for the extension `ℱ'₁` that Tag 08LC constructs. Let
 > `X'₁ ⟶ X'₂ ⟶ X'₃` be a complex of first order thickenings of `(X, 𝒪_X)` (Tag 08LE), with
@@ -823,7 +826,7 @@ theorem boundary_underlyingExtensionClass_extensionOne_eq_obstructionClass
       obstructionClass i₃ hi₃ F K₃ c₃
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.boundary_underlyingExtensionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ThickeningComplexBoundary.lean, line 704](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/ThickeningComplexBoundary.lean#L704). The attribute's comment: “the boundary of the extension class is the obstruction class”.
+**`AlgebraicGeometry.RingedSpaceThickening.boundary_underlyingExtensionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/ThickeningComplexBoundary.lean, line 705](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/ThickeningComplexBoundary.lean#L705). The attribute's comment: “the boundary of the extension class is the obstruction class”.
 
 > **Stacks Project, Tag 08LF.** Let `(X, 𝒪_X)` be a ringed space, `ℱ` an `𝒪_X`-module, and let
 > `X'₁ ⟶ X'₂ ⟶ X'₃` be a complex of first order thickenings of `(X, 𝒪_X)`, with `π` the canonical
@@ -892,4 +895,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 91.4, Tag 08L3](https://stacks.math.columbia.edu/tag/08L3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

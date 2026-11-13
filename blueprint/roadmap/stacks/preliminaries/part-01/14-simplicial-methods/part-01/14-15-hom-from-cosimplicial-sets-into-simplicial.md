@@ -8,13 +8,13 @@ proof: formalized
 
 # 14.15 Hom from cosimplicial sets into simplicial objects
 
-Section 14.15 of the Stacks Project, [Tag 0B14](https://stacks.math.columbia.edu/tag/0B14). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 14.15 of the Stacks Project, [Tag 0B14](https://stacks.math.columbia.edu/tag/0B14). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B15, a definition
 
 [Tag 0B15](https://stacks.math.columbia.edu/tag/0B15) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.power`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Power.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Power.lean#L100). The attribute's comment: “the finiteness and nonemptiness of the `U_n` are replaced by the existence of the products they index, which is all they are used for; dual to `CosimplicialObject.power` of Tag 019V”.
+**`CategoryTheory.SimplicialObject.power`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Power.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Power.lean#L100). The attribute's comment: “the finiteness and nonemptiness of the `U_n` are replaced by the existence of the products they index, which is all they are used for; dual to `CosimplicialObject.power` of Tag 019V”.
 
 > **Stacks 0B15.** `Hom(U, V)`, the simplicial object of maps from a cosimplicial set `U` into a
 > simplicial object `V` of `C`. Its degree `n` part is the power `Hom(U, V)_n = ∏_{u ∈ U_n} V_n`, the
@@ -33,7 +33,7 @@ noncomputable def power (V : SimplicialObject C) (U : CosimplicialObject (Type w
 
 [Tag 017M](https://stacks.math.columbia.edu/tag/017M) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.bijective_comp_proj_id_of_prod_coyoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Power.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Power.lean#L304). The attribute's comment: “the source's U is characterised rather than constructed: its terms being the self products indexed by C[k]\_n of Tag 0B13, and its structure maps the reindexing, are the hypotheses, which is part (3); the two conjuncts are parts (1) and (2), the latter for an arbitrary truncation level j ≥ k”.
+**`CategoryTheory.SimplicialObject.bijective_comp_proj_id_of_prod_coyoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Power.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Power.lean#L304). The attribute's comment: “the source's U is characterised rather than constructed: its terms being the self products indexed by C[k]\_n of Tag 0B13, and its structure maps the reindexing, are the hypotheses, which is part (3); the two conjuncts are parts (1) and (2), the latter for an arbitrary truncation level j ≥ k”.
 
 > **`Hom(C[k], X)` represents evaluation in degree `k`.** Let `X` be an object of a category
 > `C`, let `k : ℕ`, and let `U` be a simplicial object of `C` with coordinates
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.15, Tag 0B14](https://stacks.math.columbia.edu/tag/0B14)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

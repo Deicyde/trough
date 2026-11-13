@@ -8,13 +8,13 @@ proof: formalized
 
 # 63.6 Upper shriek for locally quasi-finite morphisms
 
-Section 63.6 of the Stacks Project, [Tag 0F58](https://stacks.math.columbia.edu/tag/0F58). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 63.6 of the Stacks Project, [Tag 0F58](https://stacks.math.columbia.edu/tag/0F58). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F59, a lemma
 
 [Tag 0F59](https://stacks.math.columbia.edu/tag/0F59) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.fShriekModAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ModuleUpperShriekQuasiFinite.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ModuleUpperShriekQuasiFinite.lean#L71). The attribute's comment: “part (3), f\_! on étale sheaves of Λ-modules has a right adjoint f^!”.
+**`AlgebraicGeometry.SmallEtale.fShriekModAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ModuleUpperShriekQuasiFinite.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ModuleUpperShriekQuasiFinite.lean#L71). The attribute's comment: “part (3), f\_! on étale sheaves of Λ-modules has a right adjoint f^!”.
 
 > The direct image with compact support `f_!` of a locally quasi-finite morphism, on étale
 > sheaves of `Λ`-modules, is left adjoint to the upper shriek `f^!` with coefficients in `Λ`.
@@ -24,7 +24,7 @@ public def fShriekModAdjunction :
     fShriekMod.{u, v, r} B Λ f ⊣ fUpperShriekMod.{u, v, r} B Λ f
 ```
 
-**`AlgebraicGeometry.SmallEtale.fUpperShriekModForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ModuleUpperShriekQuasiFinite.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ModuleUpperShriekQuasiFinite.lean#L87). The attribute's comment: “part (3), the Λ-linear f^! agrees with f^! on underlying abelian sheaves”.
+**`AlgebraicGeometry.SmallEtale.fUpperShriekModForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ModuleUpperShriekQuasiFinite.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ModuleUpperShriekQuasiFinite.lean#L87). The attribute's comment: “part (3), the Λ-linear f^! agrees with f^! on underlying abelian sheaves”.
 
 > The upper shriek with coefficients in `Λ` agrees with the upper shriek of abelian étale
 > sheaves on underlying abelian sheaves: the abelian sheaf underlying `f^!G` is `f^!` of the
@@ -36,7 +36,7 @@ public def fUpperShriekModForgetIso :
       forgetModuleSheaf.{u, v, r} B Y Λ ⋙ fUpperShriekFunctor.{u, max v r} B f
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekFunctor_isLeftAdjoint`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UpperShriekQuasiFinite.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/UpperShriekQuasiFinite.lean#L93). The attribute's comment: “part (1), f\_! on abelian étale sheaves has a right adjoint f^!”.
+**`AlgebraicGeometry.SmallEtale.fShriekFunctor_isLeftAdjoint`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UpperShriekQuasiFinite.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/UpperShriekQuasiFinite.lean#L93). The attribute's comment: “part (1), f\_! on abelian étale sheaves has a right adjoint f^!”.
 
 > **Stacks 0F59, part (1).** The direct image with compact support
 > `f_! : Ab(X_étale) ⟶ Ab(Y_étale)` of a locally quasi-finite morphism of schemes has a right
@@ -47,7 +47,7 @@ public instance fShriekFunctor_isLeftAdjoint :
     (fShriekFunctor.{u, v} B f).IsLeftAdjoint
 ```
 
-**`AlgebraicGeometry.SmallEtale.fUpperShriekSkyscraperIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UpperShriekSkyscraper.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/UpperShriekSkyscraper.lean#L57). The attribute's comment: “part (2), f^!(ȳ\_* A) ≅ ∏\_\{f(x̄) = ȳ} x̄\_* A, naturally in A”.
+**`AlgebraicGeometry.SmallEtale.fUpperShriekSkyscraperIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UpperShriekSkyscraper.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/UpperShriekSkyscraper.lean#L57). The attribute's comment: “part (2), f^!(ȳ\_* A) ≅ ∏\_\{f(x̄) = ȳ} x̄\_* A, naturally in A”.
 
 > **Stacks 0F59, part (2).** For a locally quasi-finite morphism `f : X ⟶ Y` and a geometric
 > point `ȳ` of `Y`, the upper shriek of the skyscraper at `ȳ` is the product of the skyscrapers
@@ -63,7 +63,7 @@ public def fUpperShriekSkyscraperIso :
           AddCommGrpCat.{max (u + 1) v})
 ```
 
-**`AlgebraicGeometry.SmallEtale.fUpperShriekSkyscraperObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UpperShriekSkyscraper.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/UpperShriekSkyscraper.lean#L74). The attribute's comment: “part (2), the formula at a given abelian group A”.
+**`AlgebraicGeometry.SmallEtale.fUpperShriekSkyscraperObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UpperShriekSkyscraper.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/UpperShriekSkyscraper.lean#L74). The attribute's comment: “part (2), the formula at a given abelian group A”.
 
 > **Stacks 0F59, part (2).** The value of the isomorphism at an abelian group `A`:
 > `f^!(ȳ_* A) ≅ ∏_{f(x̄) = ȳ} x̄_* A`.
@@ -81,7 +81,7 @@ public def fUpperShriekSkyscraperObjIso (M : AddCommGrpCat.{max (u + 1) v}) :
 
 [Tag 0F5A](https://stacks.math.columbia.edu/tag/0F5A) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.etaleUpperShriekIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/EtaleUpperShriekRestriction.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/EtaleUpperShriekRestriction.lean#L67). The attribute's comment: “j^! = j^\{-1} for an étale morphism”.
+**`AlgebraicGeometry.SmallEtale.etaleUpperShriekIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/EtaleUpperShriekRestriction.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/EtaleUpperShriekRestriction.lean#L67). The attribute's comment: “j^! = j^\{-1} for an étale morphism”.
 
 > **Stacks 0F5A.** For an étale morphism `j : U ⟶ X` the upper shriek `j^!` on abelian étale
 > sheaves is the inverse image `j^{-1}`: both are right adjoint to `j_!`.
@@ -95,7 +95,7 @@ public def etaleUpperShriekIsoRestriction :
 
 [Tag 0F5B](https://stacks.math.columbia.edu/tag/0F5B) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.upperShriekCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UpperShriekComposition.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/UpperShriekComposition.lean#L94). The attribute's comment: “the canonical isomorphism (g ∘ f)^! ≅ f^! ∘ g^!”.
+**`AlgebraicGeometry.SmallEtale.upperShriekCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UpperShriekComposition.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/UpperShriekComposition.lean#L94). The attribute's comment: “the canonical isomorphism (g ∘ f)^! ≅ f^! ∘ g^!”.
 
 > **Stacks 0F5B, the canonical isomorphism.** For composable locally quasi-finite morphisms
 > `f : X ⟶ Y` and `g : Y ⟶ Z` there is a canonical isomorphism `(g ∘ f)^! ≅ f^! ∘ g^!` of upper
@@ -110,7 +110,7 @@ public def upperShriekCompIso :
       fUpperShriekFunctor.{u, v} B g ⋙ fUpperShriekFunctor.{u, v} B f
 ```
 
-**`AlgebraicGeometry.SmallEtale.upperShriekCompIso_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UpperShriekComposition.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/UpperShriekComposition.lean#L151). The attribute's comment: “the associativity square”.
+**`AlgebraicGeometry.SmallEtale.upperShriekCompIso_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UpperShriekComposition.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/UpperShriekComposition.lean#L151). The attribute's comment: “the associativity square”.
 
 > **Stacks 0F5B, the associativity square.** For locally quasi-finite morphisms
 > `f : X ⟶ Y`, `g : Y ⟶ Z` and `h : Z ⟶ T` the two isomorphisms
@@ -136,7 +136,7 @@ public theorem upperShriekCompIso_assoc :
 
 [Tag 0F5C](https://stacks.math.columbia.edu/tag/0F5C) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.upperShriekCompIso_etaleUpperShriekIsoRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/EtaleUpperShriekComposition.lean, line 468](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/EtaleUpperShriekComposition.lean#L468). The attribute's comment: “(j ∘ j')^! = (j')^! ∘ j^! agrees with (j ∘ j')^\{-1} = (j')^\{-1} ∘ j^\{-1}”.
+**`AlgebraicGeometry.SmallEtale.upperShriekCompIso_etaleUpperShriekIsoRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/EtaleUpperShriekComposition.lean, line 468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/EtaleUpperShriekComposition.lean#L468). The attribute's comment: “(j ∘ j')^! = (j')^! ∘ j^! agrees with (j ∘ j')^\{-1} = (j')^\{-1} ∘ j^\{-1}”.
 
 > **Stacks 0F5C.** Let `j : U ⟶ X` and `j' : V ⟶ U` be étale morphisms. The isomorphism
 > `(j ∘ j')^! ≅ (j')^! ∘ j^!` of Stacks 0F5B and the isomorphism
@@ -162,7 +162,7 @@ public theorem upperShriekCompIso_etaleUpperShriekIsoRestriction :
 
 [Tag 0F6U](https://stacks.math.columbia.edu/tag/0F6U) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.fUpperShriekBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UpperShriekBaseChange.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/UpperShriekBaseChange.lean#L178).
+**`AlgebraicGeometry.SmallEtale.fUpperShriekBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UpperShriekBaseChange.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/UpperShriekBaseChange.lean#L178).
 
 > **Stacks 0F6U.** For a cartesian square with horizontal morphisms `p : X' ⟶ X`,
 > `g : Y' ⟶ Y`, vertical morphisms `f : X ⟶ Y`, `f' : X' ⟶ Y'` and `f` locally quasi-finite, the
@@ -178,7 +178,7 @@ public def fUpperShriekBaseChangeIso (sq : IsPullback p f' f g) :
       abPushforward.{u, u + 1} B g ⋙ fUpperShriekFunctor.{u, u + 1} B f
 ```
 
-**`AlgebraicGeometry.SmallEtale.fUpperShriekBaseChangeObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UpperShriekBaseChange.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/UpperShriekBaseChange.lean#L192). The attribute's comment: “the identification at a single abelian sheaf”.
+**`AlgebraicGeometry.SmallEtale.fUpperShriekBaseChangeObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UpperShriekBaseChange.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/UpperShriekBaseChange.lean#L192). The attribute's comment: “the identification at a single abelian sheaf”.
 
 > **Stacks 0F6U.** For an abelian sheaf `ℱ` on `Y'_étale` the base-change isomorphism of
 > Stacks 0F6U reads `p_* (f'^! ℱ) ≅ f^! (g_* ℱ)`, which is the identification the source states
@@ -200,4 +200,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 63.6, Tag 0F58](https://stacks.math.columbia.edu/tag/0F58)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

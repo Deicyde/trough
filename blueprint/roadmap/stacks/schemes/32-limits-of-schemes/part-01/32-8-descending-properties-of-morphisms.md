@@ -1,35 +1,34 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.MorphismDescentSituation, AlgebraicGeometry.exists_isAffineHom_of_isLimit, AlgebraicGeometry.exists_isFinite_baseChange_of_isLimit, AlgebraicGeometry.exists_unramified_baseChange_of_unramified_limitBaseChange, AlgebraicGeometry.exists_isClosedImmersion_baseChange_of_isLimit, AlgebraicGeometry.exists_isSeparated_baseChange_of_isLimit, AlgebraicGeometry.exists_flat_baseChange_of_limitBaseChange, AlgebraicGeometry.exists_isFiniteLocallyFree_baseChange_of_isLimit
+lean: AlgebraicGeometry.MorphismLimitSituation, AlgebraicGeometry.exists_isAffineHom_of_isLimit, AlgebraicGeometry.exists_isFinite_baseChange_of_isLimit, AlgebraicGeometry.exists_unramified_baseChange_of_unramified_limitBaseChange, AlgebraicGeometry.exists_isClosedImmersion_baseChange_of_isLimit, AlgebraicGeometry.exists_isSeparated_baseChange_of_isLimit, AlgebraicGeometry.exists_flat_baseChange_of_limitBaseChange, AlgebraicGeometry.exists_isFiniteLocallyFree_baseChange_of_isLimit
 statement: formalized
 proof: formalized
 ---
 
 # 32.8 Descending properties of morphisms
 
-Section 32.8 of the Stacks Project, [Tag 081C](https://stacks.math.columbia.edu/tag/081C). 16 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 32.8 of the Stacks Project, [Tag 081C](https://stacks.math.columbia.edu/tag/081C). 16 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 081D, a situation
 
 [Tag 081D](https://stacks.math.columbia.edu/tag/081D) in the Stacks Project.
 
-**`AlgebraicGeometry.MorphismDescentSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Situation.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Situation.lean#L42).
+**`AlgebraicGeometry.MorphismLimitSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/LimitSituation.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/LimitSituation.lean#L58). The attribute's comment: “the base changes f\_i (i ≥ 0) and f are stageHom and limitHom; toMorphismDescentSituation restricts to the cofinal stages i ≥ 0, which are qcqs”.
 
-> A directed inverse system of quasi-compact and quasi-separated schemes with affine transition
-> morphisms, equipped with a chosen limit cone and a chosen index, together with a morphism of
-> quasi-compact and quasi-separated schemes over the scheme at that index.
+> **Stacks 081D.** A directed inverse system `(S_i)` of schemes with affine transition
+> morphisms, a chosen limit cone `S = lim S_i`, a chosen index `0`, and a morphism `f₀ : X₀ ⟶ Y₀` of
+> schemes over `S₀`, where `S₀`, `X₀` and `Y₀` are quasi-compact and quasi-separated.
 
 ```lean
-structure MorphismDescentSituation (I : Type v) [Preorder I] [IsDirected I (· ≤ ·)]
-    extends DescentSituation.{v, u} I
+structure MorphismLimitSituation (I : Type v) [Preorder I] [IsDirected I (· ≤ ·)]
 ```
 
 ## Tag 01ZN, a lemma
 
 [Tag 01ZN](https://stacks.math.columbia.edu/tag/01ZN) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAffineHom_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Affine.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Affine.lean#L177).
+**`AlgebraicGeometry.exists_isAffineHom_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Affine.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Affine.lean#L177).
 
 > If a morphism over one stage of a cofiltered inverse system becomes affine
 > after base change to the limit, it becomes affine at some later stage.
@@ -53,7 +52,7 @@ theorem exists_isAffineHom_of_isLimit
 
 [Tag 01ZO](https://stacks.math.columbia.edu/tag/01ZO) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isFinite_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Finite.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Finite.lean#L327).
+**`AlgebraicGeometry.exists_isFinite_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Finite.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Finite.lean#L327).
 
 > **Stacks Project, Tag 01ZO.** If a morphism over a stage of a cofiltered inverse system is
 > locally of finite type and its base change to the limit is finite, then its base change to some
@@ -78,7 +77,7 @@ theorem exists_isFinite_baseChange_of_isLimit
 
 [Tag 0C4W](https://stacks.math.columbia.edu/tag/0C4W) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_unramified_baseChange_of_unramified_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Unramified.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Unramified.lean#L107).
+**`AlgebraicGeometry.exists_unramified_baseChange_of_unramified_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Unramified.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Unramified.lean#L107).
 
 > If a morphism over a stage of a cofiltered inverse system is locally of finite type and its
 > base change to the limit is unramified, then its base change to some later stage is
@@ -104,7 +103,7 @@ theorem exists_unramified_baseChange_of_unramified_limitBaseChange
 
 [Tag 01ZP](https://stacks.math.columbia.edu/tag/01ZP) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isClosedImmersion_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/ClosedImmersion.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/ClosedImmersion.lean#L406).
+**`AlgebraicGeometry.exists_isClosedImmersion_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/ClosedImmersion.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/ClosedImmersion.lean#L406).
 
 > If a morphism over a stage is locally of finite type and becomes a closed
 > immersion over the inverse limit, it becomes a closed immersion at a later stage.
@@ -129,7 +128,7 @@ theorem exists_isClosedImmersion_baseChange_of_isLimit
 
 [Tag 01ZQ](https://stacks.math.columbia.edu/tag/01ZQ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isSeparated_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Diagonal.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Diagonal.lean#L129).
+**`AlgebraicGeometry.exists_isSeparated_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Diagonal.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Diagonal.lean#L129).
 
 > **Stacks Project, Tag 01ZQ.** If a morphism over a stage of a cofiltered inverse system is
 > separated after base change to the limit, then it is separated after base change to some later
@@ -153,7 +152,7 @@ theorem exists_isSeparated_baseChange_of_isLimit
 
 [Tag 04AI](https://stacks.math.columbia.edu/tag/04AI) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_flat_baseChange_of_limitBaseChange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Flat.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Flat.lean#L242).
+**`AlgebraicGeometry.exists_flat_baseChange_of_limitBaseChange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Flat.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Flat.lean#L242).
 
 > **Stacks Project, Tag 04AI.** A locally finitely presented morphism over a stage which
 > becomes flat over the inverse limit is flat at some later stage.
@@ -178,7 +177,7 @@ lemma exists_flat_baseChange_of_limitBaseChange
 
 [Tag 06AC](https://stacks.math.columbia.edu/tag/06AC) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isFiniteLocallyFree_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/FiniteLocallyFree.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/FiniteLocallyFree.lean#L68). The attribute's comment: “the plain statement; the degree-d refinement is exists\_isFiniteLocallyFreeOfRank\_baseChange\_of\_isLimit. Carries the essential smallness of the index category, a hypothesis of the inputs without which the statement is false and which the source, having no universe hierarchy, states implicitly by indexing on a directed set”.
+**`AlgebraicGeometry.exists_isFiniteLocallyFree_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/FiniteLocallyFree.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/FiniteLocallyFree.lean#L68). The attribute's comment: “the plain statement; the degree-d refinement is exists\_isFiniteLocallyFreeOfRank\_baseChange\_of\_isLimit. Carries the essential smallness of the index category, a hypothesis of the inputs without which the statement is false and which the source, having no universe hierarchy, states implicitly by indexing on a directed set”.
 
 > A morphism over a stage of a cofiltered inverse system of quasi-compact and quasi-separated
 > schemes with affine transition morphisms, essentially small in the universe of the schemes, which
@@ -201,7 +200,7 @@ theorem exists_isFiniteLocallyFree_baseChange_of_isLimit
       Stacks.Morphisms.IsFiniteLocallyFree ((Over.pullback (D.map g)).map f₀).left
 ```
 
-**`AlgebraicGeometry.exists_isFiniteLocallyFreeOfRank_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/FiniteLocallyFree.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/FiniteLocallyFree.lean#L106). The attribute's comment: “the degree-d refinement. Narrower than the plain statement in the index universes: the objects and the morphisms of the index category are both in the universe of the schemes, which is the form in which the cofiltered Tag 05F4 used to descend the degree stratum along the system of base changes of Y₀ is available, that system being indexed by the over category, which inherits both universes. The plain statement's essential smallness is implied by this narrowing rather than assumed”.
+**`AlgebraicGeometry.exists_isFiniteLocallyFreeOfRank_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/FiniteLocallyFree.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/FiniteLocallyFree.lean#L106). The attribute's comment: “the degree-d refinement. Narrower than the plain statement in the index universes: the objects and the morphisms of the index category are both in the universe of the schemes, which is the form in which the cofiltered Tag 05F4 used to descend the degree stratum along the system of base changes of Y₀ is available, that system being indexed by the over category, which inherits both universes. The plain statement's essential smallness is implied by this narrowing rather than assumed”.
 
 > A morphism over a stage of a cofiltered inverse system of quasi-compact and quasi-separated
 > schemes with affine transition morphisms, indexed in the universe of the schemes, which is locally
@@ -225,7 +224,7 @@ theorem exists_isFiniteLocallyFreeOfRank_baseChange_of_isLimit
         ((Over.pullback (D.map g)).map f₀).left d
 ```
 
-**`AlgebraicGeometry.exists_isFiniteLocallyFreeOfRank_overPullbackObj_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/FiniteLocallyFreeRank.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/FiniteLocallyFreeRank.lean#L142). The attribute's comment: “the fixed-degree refinement, for a morphism whose target is the stage itself”.
+**`AlgebraicGeometry.exists_isFiniteLocallyFreeOfRank_overPullbackObj_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/FiniteLocallyFreeRank.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/FiniteLocallyFreeRank.lean#L142). The attribute's comment: “the fixed-degree refinement, for a morphism whose target is the stage itself”.
 
 > **Stacks Project, Tag 06AC, fixed-degree form, for the structure morphism of an object over a
 > stage.** Let `D` be a cofiltered inverse system of quasi-compact and quasi-separated schemes with
@@ -250,7 +249,7 @@ theorem exists_isFiniteLocallyFreeOfRank_overPullbackObj_of_isLimit
 
 [Tag 0C0C](https://stacks.math.columbia.edu/tag/0C0C) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_smooth_baseChange_of_smooth_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Smooth.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Smooth.lean#L350). References: EGA IV (17.7.8), “(ii) smooth”; EGA IV (17.12.6), “f smooth ⇒ ∃λ”.
+**`AlgebraicGeometry.exists_smooth_baseChange_of_smooth_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Smooth.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Smooth.lean#L350). References: EGA IV (17.7.8), “(ii) smooth”; EGA IV (17.12.6), “f smooth ⇒ ∃λ”.
 
 > **Stacks Project, Tag 0C0C.** If a locally finitely presented morphism over a stage of a
 > cofiltered inverse system becomes smooth over the limit, it becomes smooth at some later
@@ -276,7 +275,7 @@ theorem exists_smooth_baseChange_of_smooth_limitBaseChange
 
 [Tag 07RP](https://stacks.math.columbia.edu/tag/07RP) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etale_pullback_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Etale.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Etale.lean#L63). References: EGA IV (17.7.8), “(ii) étale”.
+**`AlgebraicGeometry.exists_etale_pullback_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Etale.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Etale.lean#L63). References: EGA IV (17.7.8), “(ii) étale”.
 
 > **Stacks 07RP.** If a locally finitely presented morphism at one stage of a cofiltered
 > inverse system becomes étale over the limit, then it is étale at some later stage.
@@ -299,7 +298,7 @@ theorem exists_etale_pullback_of_isLimit
 
 [Tag 081E](https://stacks.math.columbia.edu/tag/081E) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isIso_baseChange_of_isIso_limitBaseChange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Isomorphism.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Isomorphism.lean#L173).
+**`AlgebraicGeometry.exists_isIso_baseChange_of_isIso_limitBaseChange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Isomorphism.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Isomorphism.lean#L173).
 
 > If the base change of a finitely presented morphism to the inverse limit is an isomorphism,
 > then its base change to some stage is already an isomorphism.
@@ -323,7 +322,7 @@ lemma exists_isIso_baseChange_of_isIso_limitBaseChange
 
 [Tag 0EUU](https://stacks.math.columbia.edu/tag/0EUU) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isOpenImmersion_pullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Etale.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Etale.lean#L100).
+**`AlgebraicGeometry.exists_isOpenImmersion_pullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Etale.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Etale.lean#L100).
 
 > **Stacks 0EUU.** An open immersion obtained by base change to the inverse limit of an
 > affine-transition inverse system descends to some stage of the system.
@@ -346,7 +345,7 @@ lemma exists_isOpenImmersion_pullback
 
 [Tag 0GTB](https://stacks.math.columbia.edu/tag/0GTB) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isImmersion_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Immersion.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Immersion.lean#L249).
+**`AlgebraicGeometry.exists_isImmersion_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Immersion.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Immersion.lean#L249).
 
 > If a locally finite type morphism becomes an immersion over the inverse limit,
 > it becomes an immersion at a later stage.
@@ -371,7 +370,7 @@ theorem exists_isImmersion_baseChange_of_isLimit
 
 [Tag 07RQ](https://stacks.math.columbia.edu/tag/07RQ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_mono_baseChange_of_mono_limitBaseChange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Monomorphism.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Monomorphism.lean#L78).
+**`AlgebraicGeometry.exists_mono_baseChange_of_mono_limitBaseChange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Monomorphism.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Monomorphism.lean#L78).
 
 > **Stacks 07RQ.** A locally finite type morphism which becomes a monomorphism over the
 > inverse limit is a monomorphism at some later stage.
@@ -395,7 +394,7 @@ lemma exists_mono_baseChange_of_mono_limitBaseChange
 
 [Tag 07RR](https://stacks.math.columbia.edu/tag/07RR) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_surjective_baseChange_of_surjective_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Surjective.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Surjective.lean#L90).
+**`AlgebraicGeometry.exists_surjective_baseChange_of_surjective_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Surjective.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/Surjective.lean#L90).
 
 > **Stacks Project, Tag 07RR.** If a locally finitely presented morphism over a stage of a
 > cofiltered inverse system becomes surjective over the inverse limit, then it is surjective at
@@ -421,7 +420,7 @@ theorem exists_surjective_baseChange_of_surjective_limitBaseChange
 
 [Tag 0C3L](https://stacks.math.columbia.edu/tag/0C3L) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_syntomic_baseChange_of_syntomic_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Finiteness/SyntomicDescentAlongLimit.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Finiteness/SyntomicDescentAlongLimit.lean#L234).
+**`AlgebraicGeometry.exists_syntomic_baseChange_of_syntomic_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Finiteness/SyntomicDescentAlongLimit.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Finiteness/SyntomicDescentAlongLimit.lean#L234).
 
 > **Stacks Project, Tag 0C3L.**  If a locally finitely presented morphism over a stage of a
 > cofiltered inverse system with affine transition morphisms becomes syntomic over the limit, it
@@ -446,4 +445,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 32.8, Tag 081C](https://stacks.math.columbia.edu/tag/081C)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

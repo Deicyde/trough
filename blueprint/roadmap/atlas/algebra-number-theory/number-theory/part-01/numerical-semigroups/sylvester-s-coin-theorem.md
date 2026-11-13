@@ -8,7 +8,7 @@ proof: formalized
 
 # Sylvester's coin theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/sylvester-s-coin-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/sylvester-s-coin-theorem/index.html).
 
 ## Sylvester's coin theorem for two distinct odd primes
 
@@ -23,7 +23,7 @@ $p$ and $q$.
 
 - Damanvir Singh Binner, "Generalization of a Result of Sylvester Related to the Frobenius Coin Problem", Journal of Integer Sequences 24 (2021), Article 21.8.4, Theorem `Sylvester'` (the Special Case of Sylvester's theorem), source lines 123–127, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Binner/binner13.tex>. The paper attributes the general coprime statement to Sylvester (1882).
 
-Formalized by `MetaMathlibExt.sylvester_coin_distinct_odd_primes`, a theorem declared in [MathlibExt/NumberTheory/SylvesterCoinDistinctOddPrimes.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/SylvesterCoinDistinctOddPrimes.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/sylvester-s-coin-theorem/index.html#sylvester-coin-distinct-odd-primes).
+Formalized by `MetaMathlibExt.sylvester_coin_distinct_odd_primes`, a theorem declared in [MathlibExt/NumberTheory/SylvesterCoinDistinctOddPrimes.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/SylvesterCoinDistinctOddPrimes.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/sylvester-s-coin-theorem/index.html#sylvester-coin-distinct-odd-primes).
 
 ## Sylvester's coin theorem
 
@@ -38,7 +38,7 @@ to be $1$, every natural number is representable, and both sides are $0$.
 
 - J. J. Sylvester on the Frobenius coin problem (1882); the count of gaps is `(a - 1) * (b - 1) / 2` for coprime `a b`.
 
-Formalized by `MetaMathlibExt.sylvester_coin_theorem`, a theorem declared in [MathlibExt/NumberTheory/SylvesterCoinTheorem.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/SylvesterCoinTheorem.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/sylvester-s-coin-theorem/index.html#sylvester-coin-theorem).
+Formalized by `MetaMathlibExt.sylvester_coin_theorem`, a theorem declared in [MathlibExt/NumberTheory/SylvesterCoinTheorem.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/SylvesterCoinTheorem.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/sylvester-s-coin-theorem/index.html#sylvester-coin-theorem).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sylvester's coin theorem](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/sylvester-s-coin-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/numerical-semigroups/sylvester-s-coin-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/numerical-semigroups/sylvester-s-coin-theorem)

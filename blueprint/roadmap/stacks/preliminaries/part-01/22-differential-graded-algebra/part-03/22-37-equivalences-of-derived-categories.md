@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.37 Equivalences of derived categories
 
-Section 22.37 of the Stacks Project, [Tag 09S5](https://stacks.math.columbia.edu/tag/09S5). 8 tags here are carried by 30 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 22.37 of the Stacks Project, [Tag 09S5](https://stacks.math.columbia.edu/tag/09S5). 8 tags here are carried by 32 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09S6, a lemma
 
 [Tag 09S6](https://stacks.math.columbia.edu/tag/09S6) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.derivedExtensionEquivalence_functor_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean#L138). The attribute's comment: “the equivalence is one of TRIANGULATED categories: exactness of the functor - ⊗\_A^𝐋 B : D(A, d) ⥤ D(B, d), under the source's hypothesis that φ is an isomorphism on cohomology and no other”.
+**`DifferentialGraded.Bimodule.derivedExtensionEquivalence_functor_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean#L138). The attribute's comment: “the equivalence is one of TRIANGULATED categories: exactness of the functor - ⊗\_A^𝐋 B : D(A, d) ⥤ D(B, d), under the source's hypothesis that φ is an isomorphism on cohomology and no other”.
 
 > For a homomorphism `φ : A ⟶ B` of differential graded `R`-algebras inducing an isomorphism
 > on cohomology, the functor `- ⊗_A^𝐋 B : D(A, d) ⥤ D(B, d)` of `derivedExtensionEquivalence φ hφ`
@@ -26,7 +26,7 @@ instance derivedExtensionEquivalence_functor_isTriangulated (φ : A.Hom B)
     (derivedExtensionEquivalence φ hφ).functor.IsTriangulated
 ```
 
-**`DifferentialGraded.Bimodule.derivedExtensionEquivalence_inverse_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean#L161). The attribute's comment: “the equivalence is one of TRIANGULATED categories: exactness of the quasi-inverse, the restriction functor N ↦ N\_A, under the source's hypothesis that φ is an isomorphism on cohomology and no other”.
+**`DifferentialGraded.Bimodule.derivedExtensionEquivalence_inverse_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean#L161). The attribute's comment: “the equivalence is one of TRIANGULATED categories: exactness of the quasi-inverse, the restriction functor N ↦ N\_A, under the source's hypothesis that φ is an isomorphism on cohomology and no other”.
 
 > For a homomorphism `φ : A ⟶ B` of differential graded `R`-algebras inducing an isomorphism
 > on cohomology, the quasi-inverse `N ↦ N_A` of `derivedExtensionEquivalence φ hφ` is a triangulated
@@ -38,7 +38,7 @@ instance derivedExtensionEquivalence_inverse_isTriangulated (φ : A.Hom B)
     (derivedExtensionEquivalence φ hφ).inverse.IsTriangulated
 ```
 
-**`DifferentialGraded.Bimodule.isEquivalence_derivedTensorFunctor_regular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean#L301). The attribute's comment: “the equivalence of triangulated categories”.
+**`DifferentialGraded.Bimodule.isEquivalence_derivedTensorFunctor_regular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean#L301). The attribute's comment: “the equivalence of triangulated categories”.
 
 > **Stacks 09S6**, in the form "`- ⊗_A^𝐋 B` is an equivalence". Let `φ : (A, d) → (B, d)` be a
 > homomorphism of differential graded algebras over a commutative ring `R` which induces an
@@ -64,7 +64,7 @@ theorem isEquivalence_derivedTensorFunctor_regular (φ : A.Hom B)
     (derivedTensorFunctor (Bimodule.regular φ)).IsEquivalence
 ```
 
-**`DifferentialGraded.Bimodule.derivedExtensionEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean#L329). The attribute's comment: “the equivalence of triangulated categories with restriction of scalars as quasi-inverse”.
+**`DifferentialGraded.Bimodule.derivedExtensionEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean#L329). The attribute's comment: “the equivalence of triangulated categories with restriction of scalars as quasi-inverse”.
 
 > **Stacks 09S6.** Let `φ : (A, d) → (B, d)` be a homomorphism of differential graded algebras
 > over a commutative ring `R` inducing an isomorphism on cohomology algebras. Then extension of
@@ -92,7 +92,7 @@ def derivedExtensionEquivalence (φ : A.Hom B)
     derivedCategory' A ≌ derivedCategory' B
 ```
 
-**`DifferentialGraded.Bimodule.derivedExtensionEquivalence_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean#L342). The attribute's comment: “the functor of the equivalence is extension of scalars”.
+**`DifferentialGraded.Bimodule.derivedExtensionEquivalence_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean#L342). The attribute's comment: “the functor of the equivalence is extension of scalars”.
 
 > **The equivalence of Tag 09S6 goes by extension of scalars.**
 
@@ -102,7 +102,7 @@ theorem derivedExtensionEquivalence_functor (φ : A.Hom B)
     (derivedExtensionEquivalence φ hφ).functor = derivedTensorFunctor (Bimodule.regular φ)
 ```
 
-**`DifferentialGraded.Bimodule.derivedExtensionEquivalence_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean#L350). The attribute's comment: “the quasi-inverse of the equivalence is restriction of scalars”.
+**`DifferentialGraded.Bimodule.derivedExtensionEquivalence_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean#L350). The attribute's comment: “the quasi-inverse of the equivalence is restriction of scalars”.
 
 > **The quasi-inverse of Tag 09S6 is restriction of scalars.** This is the half of the
 > conclusion of Tag 09S6 that names the quasi-inverse: `N ↦ N_A`.
@@ -113,7 +113,7 @@ theorem derivedExtensionEquivalence_inverse (φ : A.Hom B)
     (derivedExtensionEquivalence φ hφ).inverse = derivedRestriction φ
 ```
 
-**`DifferentialGraded.Bimodule.derivedExtensionEquivalence_linear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean#L364). The attribute's comment: “the R-linearity of the equivalence and of its quasi-inverse”.
+**`DifferentialGraded.Bimodule.derivedExtensionEquivalence_linear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean#L364). The attribute's comment: “the R-linearity of the equivalence and of its quasi-inverse”.
 
 > **The equivalence of Tag 09S6 is `R`-linear.** This is the remaining half of the source's
 > conclusion that `- ⊗_A^𝐋 B : D(A, d) → D(B, d)` is an *`R`-linear* equivalence of triangulated
@@ -135,7 +135,7 @@ theorem derivedExtensionEquivalence_linear (φ : A.Hom B)
 
 [Tag 09S7](https://stacks.math.columbia.edu/tag/09S7) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.isEquivalence_derivedTensorFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceBimodule.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceBimodule.lean#L244). The attribute's comment: “the equivalence of triangulated categories, not the R-linearity of the functor”.
+**`DifferentialGraded.Bimodule.isEquivalence_derivedTensorFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceBimodule.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceBimodule.lean#L244). The attribute's comment: “the equivalence of triangulated categories, not the R-linearity of the functor”.
 
 > **Stacks 09S7.** Let `(A, d)` and `(B, d)` be differential graded algebras over a commutative
 > ring `R` and let `N` be a differential graded `(A, B)`-bimodule. Assume
@@ -167,7 +167,7 @@ theorem isEquivalence_derivedTensorFunctor (N : Bimodule A B)
     (derivedTensorFunctor N).IsEquivalence
 ```
 
-**`DifferentialGraded.Bimodule.derivedTensorEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceBimodule.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceBimodule.lean#L267). The attribute's comment: “the equivalence, with RHom(N, -) as quasi-inverse; not the R-linearity”.
+**`DifferentialGraded.Bimodule.derivedTensorEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceBimodule.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceBimodule.lean#L267). The attribute's comment: “the equivalence, with RHom(N, -) as quasi-inverse; not the R-linearity”.
 
 > **Stacks 09S7, as an equivalence with its quasi-inverse named.** Under the hypotheses of
 > `DifferentialGraded.Bimodule.isEquivalence_derivedTensorFunctor`, the derived tensor product
@@ -192,7 +192,7 @@ def derivedTensorEquivalence (N : Bimodule A B)
     derivedCategory' A ≌ derivedCategory' B
 ```
 
-**`DifferentialGraded.Bimodule.derivedTensorFunctor_linear`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorLinear.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorLinear.lean#L164). The attribute's comment: “the R-linearity of the functor - ⊗\_A^𝐋 N”.
+**`DifferentialGraded.Bimodule.derivedTensorFunctor_linear`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorLinear.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorLinear.lean#L164). The attribute's comment: “the R-linearity of the functor - ⊗\_A^𝐋 N”.
 
 > **Stacks 09S7.** The derived tensor product `- ⊗_A^𝐋 N : D(A, d) ⥤ D(B, d)` is `R`-linear.
 >
@@ -211,7 +211,7 @@ instance derivedTensorFunctor_linear (N : Bimodule A B) :
     (derivedTensorFunctor N).Linear R
 ```
 
-**`DifferentialGraded.Bimodule.derivedTensorEquivalence_linear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorLinear.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorLinear.lean#L183). The attribute's comment: “the R-linearity of the equivalence and of its quasi-inverse”.
+**`DifferentialGraded.Bimodule.derivedTensorEquivalence_linear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorLinear.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorLinear.lean#L183). The attribute's comment: “the R-linearity of the equivalence and of its quasi-inverse”.
 
 > **Stacks 09S7.** Under the three hypotheses of that tag, the equivalence
 > `D(A, d) ≌ D(B, d)` of `DifferentialGraded.Bimodule.derivedTensorEquivalence` is `R`-linear in
@@ -233,49 +233,59 @@ theorem derivedTensorEquivalence_linear (N : Bimodule A B)
 
 [Tag 09SS](https://stacks.math.columbia.edu/tag/09SS) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.isEquivalence_derivedTensorFunctor_of_triangEnvelope_eq_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceClassicalGenerator.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceClassicalGenerator.lean#L253). The attribute's comment: “replacing condition (2) of 09S7 by classical generation of D\_compact(B, d)”.
+**`DifferentialGraded.Bimodule.isEquivalence_linear_derivedTensorFunctor_of_generator_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceClassicalGenerator.lean, line 452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceClassicalGenerator.lean#L452). The attribute's comment: “both assertions: classical generation of D\_compact(B, d), or weak generation of D\_compact(B, d) when RHom(N, B) is compact, may replace condition (2) of 09S7”.
 
-> **Stacks 09SS, first assertion.** Let `(A, d)` and `(B, d)` be differential graded algebras
-> over a commutative ring `R` and let `N` be a differential graded `(A, B)`-bimodule. Assume
+> **Stacks 09SS.** Let `(A, d)` and `(B, d)` be differential graded algebras over a commutative
+> ring `R` and let `N` be a differential graded `(A, B)`-bimodule. Assume conditions (1) and (3) of
+> [Stacks, Tag 09S7]:
 >
-> 1. the class of `N` in `D(B, d)` is a compact object,
-> 2. `N` is a classical generator for `D_{compact}(B, d)`, that is, the triangulated envelope of the
->    class of `N` is exactly the subcategory of compact objects of `D(B, d)`, and
+> 1. the class of `N` in `D(B, d)` is a compact object, and
 > 3. the canonical map `H^k(A) → Hom_{D(B,d)}(N, N[k])` of
 >    `DifferentialGraded.Bimodule.cohomologyEndomorphismComparison` is bijective for every `k : ℤ`.
 >
-> Then `- ⊗_A^𝐋 N : D(A, d) ⥤ D(B, d)` is an equivalence of categories.
+> Then each of the following replacements of condition (2) of Tag 09S7 still makes
+> `- ⊗_A^𝐋 N : D(A, d) ⥤ D(B, d)` an `R`-linear equivalence of triangulated categories, that is,
+> an equivalence which is exact (`Functor.IsTriangulated`), `R`-linear, and whose quasi-inverse is
+> `R`-linear:
 >
-> This is [Stacks, Tag 09S7] with its hypothesis (2) replaced as Tag 09SS says it may be. Hypothesis
-> (2) above gives that the class of the regular module `B`, being a compact object of `D(B, d)`,
-> lies in the triangulated envelope of the class of `N`; since that class is a weak generator of
-> `D(B, d)`, so is the class of `N`, by
-> `CategoryTheory.ObjectProperty.isWeakTriangulatedGenerator_singleton_of_prop_triangEnvelope`. That
-> is hypothesis (2) of Tag 09S7.
+> * `N` is a classical generator for `D_{compact}(B, d)`: the triangulated envelope of the class of
+>   `N` (the smallest strictly full triangulated subcategory closed under direct summands containing
+>   it) is exactly the subcategory of compact objects of `D(B, d)`;
+> * `RHom(N, B)` is a compact object of `D(A, d)`, and `N` is a weak generator for
+>   `D_{compact}(B, d)`: a compact object `X` of `D(B, d)` with `Hom_{D(B,d)}(N, X[n]) = 0` for every
+>   `n : ℤ` is zero.
 >
-> As for Tag 09S7, the functor is exact and `R`-linear before any hypothesis (Tags 09LR, 09LS and
-> 09S7), so this is the source's `R`-linear equivalence of triangulated categories, the
-> `R`-linearity being recorded at
-> `DifferentialGraded.Bimodule.linear_derivedTensorFunctor_of_isEquivalence`. The second
-> assertion of the remark — that a weak generator of `D_{compact}(B, d)` suffices once `RHom(N, B)`
-> is a compact object of `D(A, d)` — is the statement below,
-> `isEquivalence_derivedTensorFunctor_of_isWeakTriangulatedGenerator_isCompactObject`.
+> These are the two assertions of the remark, proved respectively by
+> `isEquivalence_derivedTensorFunctor_of_triangEnvelope_eq_isCompactObject` and
+> `isEquivalence_derivedTensorFunctor_of_isWeakTriangulatedGenerator_isCompactObject` above (the
+> source omits the proof of the second; it is supplied there). Exactness of `- ⊗_A^𝐋 N` is
+> `DifferentialGraded.Bimodule.derivedTensorFunctor_isTriangulated` (Tags 09LR and 09LS), its
+> `R`-linearity `DifferentialGraded.Bimodule.derivedTensorFunctor_linear` (Tag 09S7), and the
+> `R`-linearity of the quasi-inverse is Mathlib's `CategoryTheory.Equivalence.inverseLinear`.
 
 ```lean
-theorem isEquivalence_derivedTensorFunctor_of_triangEnvelope_eq_isCompactObject (N : Bimodule A B)
+theorem isEquivalence_linear_derivedTensorFunctor_of_generator_isCompactObject
+    (N : Bimodule A B)
     [IsCompactObject.{u} ((toHomotopyCategory B ⋙ (quasiIsomorphisms' B).Q).obj N.rightModule)]
-    (h2 : (ObjectProperty.singleton ((toHomotopyCategory B ⋙ (quasiIsomorphisms' B).Q).obj
-        N.rightModule)).triangEnvelope =
-      IsCompactObject.{u, _, _} (C := derivedCategory' B))
     (h3 : ∀ k : ℤ, Function.Bijective (N.cohomologyEndomorphismComparison k)) :
-    (derivedTensorFunctor N).IsEquivalence
+    ((ObjectProperty.singleton ((toHomotopyCategory B ⋙ (quasiIsomorphisms' B).Q).obj
+        N.rightModule)).triangEnvelope = IsCompactObject.{u, _, _} (C := derivedCategory' B) →
+      ∃ _ : (derivedTensorFunctor N).IsEquivalence, (derivedTensorFunctor N).IsTriangulated ∧
+        (derivedTensorFunctor N).Linear R ∧ (derivedTensorFunctor N).inv.Linear R) ∧
+    (IsCompactObject.{u} ((derivedHomData A B N.rightModule N.leftAction).functor.obj
+        ((toHomotopyCategory B ⋙ (quasiIsomorphisms' B).Q).obj (regularModule B))) →
+      (∀ X : derivedCategory' B, IsCompactObject.{u} X →
+        (∀ (n : ℤ) (f : (toHomotopyCategory B ⋙ (quasiIsomorphisms' B).Q).obj N.rightModule ⟶
+          X⟦n⟧), f = 0) → IsZero X) →
+      ∃ _ : (derivedTensorFunctor N).IsEquivalence, (derivedTensorFunctor N).IsTriangulated ∧
+        (derivedTensorFunctor N).Linear R ∧ (derivedTensorFunctor N).inv.Linear R)
 ```
 
 ## Tag 09S8, a lemma
 
 [Tag 09S8](https://stacks.math.columbia.edu/tag/09S8) in the Stacks Project.
 
-**`DifferentialGradedModule.exists_isCompactObject_and_isWeakGenerator_of_derivedEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGenerator.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGenerator.lean#L324). The attribute's comment: “(1) ⇒ (2), including the degree-zero clause as an R-algebra isomorphism A ≃ₐ[R] End P, with P the image of the regular module under the given equivalence; NOT (2) ⇒ (1) and NOT the source's final clause about the equivalence constructed from (2) — those are exists\_derivedEquivalence\_of\_isCompactObject\_and\_isWeakGenerator and the iff derivedEquivalence\_iff\_exists\_isCompactObject\_and\_isWeakGenerator, in the Converse file”.
+**`DifferentialGradedModule.exists_isCompactObject_and_isWeakGenerator_of_derivedEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGenerator.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGenerator.lean#L326). The attribute's comment: “(1) ⇒ (2), including the degree-zero clause as an R-algebra isomorphism A ≃ₐ[R] End P, with P the image of the regular module under the given equivalence; NOT (2) ⇒ (1) and NOT the source's final clause about the equivalence constructed from (2) — those are exists\_derivedEquivalence\_of\_isCompactObject\_and\_isWeakGenerator and the iff derivedEquivalence\_iff\_exists\_isCompactObject\_and\_isWeakGenerator, in the Converse file”.
 
 > Let `(A, d)` and `(B, d)` be differential graded algebras over a commutative ring `R`, and
 > assume `A = H^0(A)`, i.e. that every homogeneous component of `A` outside degree zero vanishes. Let
@@ -312,7 +322,7 @@ theorem exists_isCompactObject_and_isWeakGenerator_of_derivedEquivalence
         ((toHomotopyCategory A ⋙ (quasiIsomorphisms' A).Q).obj (regularModule A)) ≅ P)
 ```
 
-**`DifferentialGraded.Bimodule.exists_derivedEquivalence_of_isCompactObject_and_isWeakGenerator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean#L298). The attribute's comment: “(2) ⇒ (1), by an additive R-linear shift-commuting triangulated equivalence, together with the source's final clause that the equivalence constructed in (2) sends A to P”.
+**`DifferentialGraded.Bimodule.exists_derivedEquivalence_of_isCompactObject_and_isWeakGenerator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean#L298). The attribute's comment: “(2) ⇒ (1), by an additive R-linear shift-commuting triangulated equivalence, together with the source's final clause that the equivalence constructed in (2) sends A to P”.
 
 > **Stacks 09S8, the implication (2) ⇒ (1), with the source's final clause.** Let `(A, d)` and
 > `(B, d)` be differential graded `R`-algebras with `A = H^0(A)`, i.e. with every homogeneous
@@ -350,7 +360,7 @@ theorem exists_derivedEquivalence_of_isCompactObject_and_isWeakGenerator
             (regularModule A)) ≅ P)
 ```
 
-**`DifferentialGraded.Bimodule.derivedEquivalence_iff_exists_isCompactObject_and_isWeakGenerator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean#L354). The attribute's comment: “the equivalence of (1) and (2), with (1) as an additive R-linear shift-commuting triangulated equivalence and the degree-zero clause of (2) as an isomorphism of R-algebras A ≃ₐ[R] End P”.
+**`DifferentialGraded.Bimodule.derivedEquivalence_iff_exists_isCompactObject_and_isWeakGenerator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceCompactGeneratorConverse.lean#L354). The attribute's comment: “the equivalence of (1) and (2), with (1) as an additive R-linear shift-commuting triangulated equivalence and the degree-zero clause of (2) as an isomorphism of R-algebras A ≃ₐ[R] End P”.
 
 > **Stacks 09S8.** Let `(A, d)` and `(B, d)` be differential graded algebras over a commutative
 > ring `R` and assume `A = H^0(A)`. The following are equivalent.
@@ -389,7 +399,60 @@ theorem derivedEquivalence_iff_exists_isCompactObject_and_isWeakGenerator
 
 [Tag 09S9](https://stacks.math.columbia.edu/tag/09S9) in the Stacks Project.
 
-**`DifferentialGradedModule.exists_dgModule_iso_obj_q_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean#L90). The attribute's comment: “N = F(A) is represented by a differential graded B-module”.
+**`DifferentialGraded.Bimodule.isEquivalence_derivedTensorFunctor_ofDGLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceDGLift.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceDGLift.lean#L401). The attribute's comment: “if F lifts to a differential graded functor, N = F(A) is an (A, B)-bimodule as in Tag 09S7, giving the equivalence - ⊗\_A^L N”.
+
+> **Stacks 09S9, the case of a differential graded lift.** Let `(A, d)` and `(B, d)` be
+> differential graded algebras over a commutative ring `R` and let `F : D(A, d) ⥤ D(B, d)` be an
+> additive equivalence commuting with the translation. Suppose `F` lifts to a functor of
+> differential graded categories `G : Mod^dg_(A, d) ⥤ Mod^dg_(B, d)`, in the sense that
+> `K(G) : K(A, d) ⥤ K(B, d)` followed by the localization is isomorphic to the localization
+> followed by `F`. Then the left `A`-module structure on `N = G(A)` transported by `G` from the
+> regular module (`DifferentialGraded.Bimodule.ofDGLift`) makes `N` a differential graded
+> `(A, B)`-bimodule satisfying the three hypotheses of [Stacks, Tag 09S7] — its class in
+> `D(B, d)` is compact, it is a weak generator, and the canonical map
+> `H^k(A) → Hom_{D(B,d)}(N, N[k])` is bijective for every `k` — so that
+> `- ⊗_A^𝐋 N : D(A, d) ⥤ D(B, d)` is an equivalence. The class of `N` is isomorphic to `F(A)`
+> (`DifferentialGraded.Bimodule.objQRegularModuleIsoOfDGLift`).
+
+```lean
+theorem isEquivalence_derivedTensorFunctor_ofDGLift [F.IsEquivalence] [F.Additive]
+    [F.CommShift ℤ] :
+    IsCompactObject.{u}
+        ((toHomotopyCategory B ⋙ (quasiIsomorphisms' B).Q).obj (ofDGLift G).rightModule) ∧
+      (ObjectProperty.singleton ((toHomotopyCategory B ⋙ (quasiIsomorphisms' B).Q).obj
+        (ofDGLift G).rightModule)).IsWeakTriangulatedGenerator ∧
+      (∀ k : ℤ, Function.Bijective ((ofDGLift G).cohomologyEndomorphismComparison k)) ∧
+      (derivedTensorFunctor (ofDGLift G)).IsEquivalence
+```
+
+**`DifferentialGraded.Bimodule.isEquivalence_derivedTensorFunctor_of_iso_obj_q_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceDGLift.lean, line 431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceDGLift.lean#L431). The attribute's comment: “a left A-module structure on a module quasi-isomorphic to N = F(A) inducing H^k(A) = Hom(N, N[k]) gives the equivalence of Tag 09S7”.
+
+> **Stacks 09S9, the reduction to a left module structure.** Let `F : D(A, d) ⥤ D(B, d)` be an
+> additive equivalence commuting with the translation, and let `N` be a differential graded
+> `(A, B)`-bimodule whose class in `D(B, d)` is isomorphic to `F(A)` — a left `A`-module structure,
+> compatible with the differential and commuting with the right `B`-action, on a differential
+> graded `B`-module quasi-isomorphic to `F(A)`. If the left action induces the identification
+> `H^k(A) = Hom_{D(B,d)}(N, N[k])`, i.e. the canonical map is bijective for every `k`, then `N`
+> satisfies the three hypotheses of [Stacks, Tag 09S7] and `- ⊗_A^𝐋 N` is an equivalence.
+>
+> Compactness and weak generation are invariant under isomorphism and hold for `F(A)`
+> (`DifferentialGradedModule.isCompactObject_obj_q_regularModule`,
+> `DifferentialGradedModule.isWeakTriangulatedGenerator_singleton_obj_q_regularModule`).
+
+```lean
+theorem isEquivalence_derivedTensorFunctor_of_iso_obj_q_regularModule [F.IsEquivalence]
+    [F.Additive] [F.CommShift ℤ] (N : Bimodule A B)
+    (hN : ((toHomotopyCategory B ⋙ (quasiIsomorphisms' B).Q).obj N.rightModule) ≅
+      F.obj ((toHomotopyCategory A ⋙ (quasiIsomorphisms' A).Q).obj (regularModule A)))
+    (h3 : ∀ k : ℤ, Function.Bijective (N.cohomologyEndomorphismComparison k)) :
+    IsCompactObject.{u}
+        ((toHomotopyCategory B ⋙ (quasiIsomorphisms' B).Q).obj N.rightModule) ∧
+      (ObjectProperty.singleton ((toHomotopyCategory B ⋙ (quasiIsomorphisms' B).Q).obj
+        N.rightModule)).IsWeakTriangulatedGenerator ∧
+      (derivedTensorFunctor N).IsEquivalence
+```
+
+**`DifferentialGradedModule.exists_dgModule_iso_obj_q_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean#L92). The attribute's comment: “N = F(A) is represented by a differential graded B-module”.
 
 > **Stacks 09S9.** The image `N = F(A)` of the regular module under a functor
 > `F : D(A, d) ⥤ D(B, d)` is represented by a differential graded `B`-module.
@@ -401,7 +464,7 @@ theorem exists_dgModule_iso_obj_q_regularModule :
         (toHomotopyCategory B ⋙ (quasiIsomorphisms' B).Q).obj N)
 ```
 
-**`DifferentialGradedModule.isCompactObject_obj_q_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean#L101). The attribute's comment: “N = F(A) is a compact object of D(B, d)”.
+**`DifferentialGradedModule.isCompactObject_obj_q_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean#L103). The attribute's comment: “N = F(A) is a compact object of D(B, d)”.
 
 > **Stacks 09S9.** The image `N = F(A)` of the regular module under an additive equivalence
 > `F : D(A, d) ⥤ D(B, d)` is a compact object of `D(B, d)`: the regular module is compact
@@ -414,7 +477,7 @@ theorem isCompactObject_obj_q_regularModule [F.IsEquivalence] [F.Additive] :
       (F.obj ((toHomotopyCategory A ⋙ (quasiIsomorphisms' A).Q).obj (regularModule A)))
 ```
 
-**`DifferentialGradedModule.isWeakTriangulatedGenerator_singleton_obj_q_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean#L116). The attribute's comment: “N = F(A) generates D(B, d)”.
+**`DifferentialGradedModule.isWeakTriangulatedGenerator_singleton_obj_q_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean#L118). The attribute's comment: “N = F(A) generates D(B, d)”.
 
 > **Stacks 09S9.** The image `N = F(A)` of the regular module under an additive equivalence
 > `F : D(A, d) ⥤ D(B, d)` commuting with the translation generates `D(B, d)`: an object receiving
@@ -433,7 +496,7 @@ theorem isWeakTriangulatedGenerator_singleton_obj_q_regularModule
       (F.obj ((toHomotopyCategory A ⋙ (quasiIsomorphisms' A).Q).obj (regularModule A))))
 ```
 
-**`DifferentialGradedModule.cohomologyEquivDerivedHomObjRegular`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean#L143). The attribute's comment: “H^k(A) = Hom\_\{D(B,d)}(N, N[k])”.
+**`DifferentialGradedModule.cohomologyEquivDerivedHomObjRegular`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceRegularImage.lean#L145). The attribute's comment: “H^k(A) = Hom\_\{D(B,d)}(N, N[k])”.
 
 > **Stacks 09S9.** For a fully faithful `F : D(A, d) ⥤ D(B, d)` commuting with the translation
 > and `N = F(A)` the image of the regular module, `H^k(A) = Hom_{D(B, d)}(N, N[k])` for every
@@ -456,7 +519,7 @@ def cohomologyEquivDerivedHomObjRegular [F.Full] [F.Faithful] [F.CommShift ℤ] 
 
 [Tag 09SA](https://stacks.math.columbia.edu/tag/09SA) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.exists_bimodule_of_derivedEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceBimoduleExistence.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceBimoduleExistence.lean#L226). The attribute's comment: “the (A, B)-bimodule N as in Lemma 09S7, together with the equivalence it defines and the identification of its class in D(B, d) with F(A); the equivalence F is taken to be additive, R-linear and shift-commuting, Functor.IsTriangulated not being used”.
+**`DifferentialGraded.Bimodule.exists_bimodule_of_derivedEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceBimoduleExistence.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceBimoduleExistence.lean#L226). The attribute's comment: “the (A, B)-bimodule N as in Lemma 09S7, together with the equivalence it defines and the identification of its class in D(B, d) with F(A); the equivalence F is taken to be additive, R-linear and shift-commuting, Functor.IsTriangulated not being used”.
 
 > **Stacks 09SA.** Let `R` be a commutative ring, let `(A, d)` and `(B, d)` be differential
 > graded `R`-algebras and let `F : D(A, d) ≌ D(B, d)` be an additive, `R`-linear,
@@ -501,7 +564,7 @@ theorem exists_bimodule_of_derivedEquivalence (A B : DifferentialGradedAlgebra.{
 
 [Tag 09SC](https://stacks.math.columbia.edu/tag/09SC) in the Stacks Project.
 
-**`DifferentialGradedModule.exists_isPerfect_and_detectsZero_of_derivedEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickard.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickard.lean#L159). The attribute's comment: “(1) ⇒ (2), with D(A) read as the derived category of right A-modules, clause (2)(a) as StacksDraft.Perfect.IsPerfect, Ext vanishing as Subsingleton of the shifted Hom group and the degree-zero clause of (2)(c) as an isomorphism of R-algebras A ≃ₐ[R] End P; NOT (2) ⇒ (1), which needs CategoryTheory.Functor.IsTriangulated for DifferentialGradedModule.degreeZeroDerivedEquivalence, and NOT part (3)”.
+**`DifferentialGradedModule.exists_isPerfect_and_detectsZero_of_derivedEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickard.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickard.lean#L159). The attribute's comment: “(1) ⇒ (2), with D(A) read as the derived category of right A-modules, clause (2)(a) as StacksDraft.Perfect.IsPerfect, Ext vanishing as Subsingleton of the shifted Hom group and the degree-zero clause of (2)(c) as an isomorphism of R-algebras A ≃ₐ[R] End P; NOT (2) ⇒ (1), which needs CategoryTheory.Functor.IsTriangulated for DifferentialGradedModule.degreeZeroDerivedEquivalence, and NOT part (3)”.
 
 > **Stacks 09SC, the implication (1) ⇒ (2).** Let `R` be a commutative ring and let `A` and `B`
 > be `R`-algebras, not assumed commutative. Let
@@ -537,7 +600,7 @@ theorem exists_isPerfect_and_detectsZero_of_derivedEquivalence
       Nonempty (A ≃ₐ[R] End P)
 ```
 
-**`DifferentialGradedModule.exists_bimodule_derivedTensorEquivalence_of_derivedEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardBimodule.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardBimodule.lean#L176). The attribute's comment: “(1) ⇒ (3) under B flat over R, with N a DIFFERENTIAL GRADED (A,B)-bimodule -- the chapter's own unqualified sense in 09SA/09S7, which 09SC(3) cites, and the ONLY reading under which (3) is true. The literal ordinary-bimodule reading is not merely unproved but FALSE: such an N would be a one-sided tilting module with End\_B(N) = A, hence projective and a progenerator over a finite-dimensional self-injective B, forcing A Morita equivalent to B -- so (3) would say derived equivalent self-injective algebras are Morita equivalent, refuted by Brauer tree algebras (Rickard). D(A) is the derived category of right A-modules. NOT (3) ⇒ (1)”.
+**`DifferentialGradedModule.exists_bimodule_derivedTensorEquivalence_of_derivedEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardBimodule.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardBimodule.lean#L176). The attribute's comment: “(1) ⇒ (3) under B flat over R, with N a DIFFERENTIAL GRADED (A,B)-bimodule -- the chapter's own unqualified sense in 09SA/09S7, which 09SC(3) cites, and the ONLY reading under which (3) is true. The literal ordinary-bimodule reading is not merely unproved but FALSE: such an N would be a one-sided tilting module with End\_B(N) = A, hence projective and a progenerator over a finite-dimensional self-injective B, forcing A Morita equivalent to B -- so (3) would say derived equivalent self-injective algebras are Morita equivalent, refuted by Brauer tree algebras (Rickard). D(A) is the derived category of right A-modules. NOT (3) ⇒ (1)”.
 
 > **Stacks 09SC, the implication (1) ⇒ (3).** Let `R` be a commutative ring, let `A` and `B`
 > be `R`-algebras, not assumed commutative, and assume `B` is flat as an `R`-module. Let
@@ -575,7 +638,7 @@ theorem exists_bimodule_derivedTensorEquivalence_of_derivedEquivalence [Module.F
               (A := Bᵐᵒᵖ)).functor).IsEquivalence
 ```
 
-**`DifferentialGradedModule.exists_derivedEquivalence_of_isPerfect_and_detectsZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean#L162). The attribute's comment: “(2) ⇒ (1), the converse of DegreeZeroRickard's (1) ⇒ (2), with the same spellings: clause (2)(a) as StacksDraft.Perfect.IsPerfect, Ext vanishing as Subsingleton of the shifted Hom group, the degree-zero clause of (2)(c) as A ≃ₐ[R] End P, and clause (1) delivered as an additive R-linear equivalence triangulated for SOME commutation with the translation, as in 09S8's own clause (1). D(A) is the derived category of right A-modules”.
+**`DifferentialGradedModule.exists_derivedEquivalence_of_isPerfect_and_detectsZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean#L163). The attribute's comment: “(2) ⇒ (1), the converse of DegreeZeroRickard's (1) ⇒ (2), with the same spellings: clause (2)(a) as StacksDraft.Perfect.IsPerfect, Ext vanishing as Subsingleton of the shifted Hom group, the degree-zero clause of (2)(c) as A ≃ₐ[R] End P, and clause (1) delivered as an additive R-linear equivalence triangulated for SOME commutation with the translation, as in 09S8's own clause (1). D(A) is the derived category of right A-modules”.
 
 > **Stacks 09SC, the implication (2) ⇒ (1).** Let `R` be a commutative ring and let `A` and `B`
 > be `R`-algebras, not assumed commutative. Let `P` be an object of `D(Mod-B)` such that
@@ -608,7 +671,7 @@ theorem exists_derivedEquivalence_of_isPerfect_and_detectsZero
         ∃ hs : E.functor.CommShift ℤ, letI := hs; E.functor.IsTriangulated
 ```
 
-**`DifferentialGradedModule.derivedEquivalence_iff_exists_isPerfect_and_detectsZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean#L220). The attribute's comment: “the equivalence of (1) and (2), with clause (1) as an additive R-linear equivalence of the derived categories of right modules which is triangulated for SOME commutation with the translation, clause (2)(a) as StacksDraft.Perfect.IsPerfect, Ext vanishing as Subsingleton of the shifted Hom group and the degree-zero clause of (2)(c) as an isomorphism of R-algebras A ≃ₐ[R] End P”.
+**`DifferentialGradedModule.derivedEquivalence_iff_exists_isPerfect_and_detectsZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean#L221). The attribute's comment: “the equivalence of (1) and (2), with clause (1) as an additive R-linear equivalence of the derived categories of right modules which is triangulated for SOME commutation with the translation, clause (2)(a) as StacksDraft.Perfect.IsPerfect, Ext vanishing as Subsingleton of the shifted Hom group and the degree-zero clause of (2)(c) as an isomorphism of R-algebras A ≃ₐ[R] End P”.
 
 > **Stacks 09SC, the equivalence of (1) and (2).** Let `R` be a commutative ring and let `A`
 > and `B` be `R`-algebras, not assumed commutative. The following are equivalent.
@@ -637,7 +700,7 @@ theorem derivedEquivalence_iff_exists_isPerfect_and_detectsZero :
         Nonempty (A ≃ₐ[R] End P)
 ```
 
-**`DifferentialGradedModule.exists_derivedEquivalence_of_bimodule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean#L257). The attribute's comment: “(3) ⇒ (1), the converse of DegreeZeroRickardBimodule's (1) ⇒ (3), with N a differential graded (A,B)-bimodule over the degree-zero algebras and the hypothesis that its differential graded derived tensor functor is an equivalence; no flatness of B over R is needed for this direction. Clause (1) is delivered as an additive R-linear equivalence of the derived categories of right modules which is triangulated for SOME commutation with the translation”.
+**`DifferentialGradedModule.exists_derivedEquivalence_of_bimodule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean#L258). The attribute's comment: “(3) ⇒ (1), the converse of DegreeZeroRickardBimodule's (1) ⇒ (3), with N a differential graded (A,B)-bimodule over the degree-zero algebras and the hypothesis that its differential graded derived tensor functor is an equivalence; no flatness of B over R is needed for this direction. Clause (1) is delivered as an additive R-linear equivalence of the derived categories of right modules which is triangulated for SOME commutation with the translation”.
 
 > **Stacks 09SC, the implication (3) ⇒ (1).** Let `R` be a commutative ring, let `A` and `B` be
 > `R`-algebras, not assumed commutative, and let `N` be a differential graded `(A, B)`-bimodule over
@@ -662,7 +725,7 @@ theorem exists_derivedEquivalence_of_bimodule
         ∃ hs : E.functor.CommShift ℤ, letI := hs; E.functor.IsTriangulated
 ```
 
-**`DifferentialGradedModule.derivedEquivalence_iff_exists_bimodule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean#L285). The attribute's comment: “the equivalence of (1) and (3) for B flat over R, with clause (1) as an additive R-linear equivalence of the derived categories of right modules which is triangulated for SOME commutation with the translation, and N a differential graded (A,B)-bimodule over the degree-zero algebras per 09SA/09S7 rather than an ordinary bimodule”.
+**`DifferentialGradedModule.derivedEquivalence_iff_exists_bimodule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroRickardConverse.lean#L286). The attribute's comment: “the equivalence of (1) and (3) for B flat over R, with clause (1) as an additive R-linear equivalence of the derived categories of right modules which is triangulated for SOME commutation with the translation, and N a differential graded (A,B)-bimodule over the degree-zero algebras per 09SA/09S7 rather than an ordinary bimodule”.
 
 > **Stacks 09SC, the equivalence of (1) and (3).** Let `R` be a commutative ring, let `A` and
 > `B` be `R`-algebras, not assumed commutative, and assume `B` is flat as an `R`-module. The
@@ -689,7 +752,7 @@ theorem derivedEquivalence_iff_exists_bimodule [Module.Flat R B] :
         (DifferentialGraded.Bimodule.derivedTensorFunctor N).IsEquivalence
 ```
 
-**`DifferentialGradedModule.degreeZeroHomotopyFunctor_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroTriangulated.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroTriangulated.lean#L214). The attribute's comment: “exactness of the degree-zero comparison on homotopy categories”.
+**`DifferentialGradedModule.degreeZeroHomotopyFunctor_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroTriangulated.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroTriangulated.lean#L214). The attribute's comment: “exactness of the degree-zero comparison on homotopy categories”.
 
 > **The degree-zero comparison is exact on homotopy categories.** The functor
 > `K(degreeZero R S, d) ⥤ K(A)` carries distinguished triangles to distinguished triangles: a
@@ -702,7 +765,7 @@ theorem degreeZeroHomotopyFunctor_isTriangulated :
     (degreeZeroHomotopyFunctor R A (S := S)).IsTriangulated
 ```
 
-**`DifferentialGradedModule.degreeZeroDerivedEquivalence_functor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroTriangulated.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroTriangulated.lean#L296). The attribute's comment: “exactness of the degree-zero comparison equivalence of derived categories”.
+**`DifferentialGradedModule.degreeZeroDerivedEquivalence_functor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroTriangulated.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DegreeZeroTriangulated.lean#L296). The attribute's comment: “exactness of the degree-zero comparison equivalence of derived categories”.
 
 > **The comparison equivalence of derived categories is exact.** For the commutation with the
 > shift that the localization of the homotopy category induces on it, the equivalence
@@ -721,48 +784,39 @@ theorem degreeZeroDerivedEquivalence_functor_exact :
 
 [Tag 09SD](https://stacks.math.columbia.edu/tag/09SD) in the Stacks Project.
 
-**`DerivedEquivalence.centerAlgEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DerivedEquivalenceCenter.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DerivedEquivalenceCenter.lean#L132). The attribute's comment: “Z(A) to Z(B) by transporting the shift-compatible centre along the equivalence”.
+**`DerivedEquivalence.nonempty_centerAlgEquiv_of_derivedEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DerivedMoritaCenter.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DerivedMoritaCenter.lean#L100). The attribute's comment: “the centres of A and B are isomorphic R-algebras, for an additive R-linear shift-commuting equivalence D(A) ≌ D(B) of the derived categories of modules (an R-linear triangulated equivalence is one); unconditional”.
 
-> **Derived equivalent algebras have isomorphic centres.** Let `A` and `B` be algebras over a
-> commutative ring `R` whose derived categories are equivalent through an additive, `R`-linear,
-> shift-commuting equivalence `E`. If the canonical maps from `Z(A)` and from `Z(B)` to the
-> shift-compatible centres of `D(A)` and of `D(B)` are surjective — the step the Stacks project
-> defers to Rickard, assumed here and not proved — then `Z(A)` and `Z(B)` are isomorphic as
-> `R`-algebras, by transporting the shift-compatible centre along `E`.
+> **Stacks 09SD: derived equivalent algebras have isomorphic centres.** Let `R` be a
+> commutative ring and let `A` and `B` be `R`-algebras. If the derived categories `D(A)` and `D(B)`
+> of `A`-modules and of `B`-modules are equivalent through an additive, `R`-linear,
+> shift-commuting equivalence — in particular, if they are equivalent as `R`-linear triangulated
+> categories — then the centres of `A` and `B` are isomorphic as `R`-algebras.
 >
-> The `@[stacks 09SD]` part string below says "the centre of `DerivedCategory (ModuleCat A)`". Read
-> that as the SHIFT-COMPATIBLE centre `CatCenter.shiftSubalgebra`, which is the correct object: the
-> full `CatCenter` of the derived category is too big, being `∏_{n : ℤ} k` over a field `k`, so the
-> hypothesis as originally stated here was unsatisfiable and has been replaced by surjectivity of
-> `ModuleCat.centerToShiftCenterDerived`. See the note on Tag 09SD at the top of this file.
+> The proof reads the equivalence in the differential graded derived categories of `Aᵐᵒᵖ` and
+> `Bᵐᵒᵖ` placed in degree zero and applies
+> `DifferentialGradedModule.nonempty_centerAlgEquiv_of_derivedEquivalence`; the centre of an algebra
+> is the centre of its opposite (`DerivedEquivalence.centerOpAlgEquiv`).
 
 ```lean
-noncomputable def centerAlgEquiv
-    (hA : Function.Surjective (ModuleCat.centerToShiftCenterDerived R A))
-    (hB : Function.Surjective (ModuleCat.centerToShiftCenterDerived R B))
-    (E : DerivedCategory (ModuleCat.{u} A) ≌ DerivedCategory (ModuleCat.{v} B))
+theorem nonempty_centerAlgEquiv_of_derivedEquivalence
+    (E : DerivedCategory (ModuleCat.{u} A) ≌ DerivedCategory (ModuleCat.{u} B))
     [E.functor.Additive] [E.functor.Linear R] [E.functor.CommShift ℤ] :
-    (Subalgebra.center R A) ≃ₐ[R] (Subalgebra.center R B)
+    Nonempty (Subalgebra.center R A ≃ₐ[R] Subalgebra.center R B)
 ```
 
-**`DerivedEquivalence.algEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DerivedEquivalenceCenter.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DerivedEquivalenceCenter.lean#L159). The attribute's comment: “the commutative case: A to B, a commutative algebra being its own centre”.
+**`DerivedEquivalence.nonempty_algEquiv_of_derivedEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DerivedMoritaCenter.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DerivedMoritaCenter.lean#L137). The attribute's comment: “in particular, if A and B are commutative then A ≅ B as R-algebras; unconditional”.
 
-> **Derived equivalent commutative algebras are isomorphic.** A commutative algebra is its own
-> centre, so the isomorphism of centres of `DerivedEquivalence.centerAlgEquiv` is an isomorphism
-> `A ≃ₐ[R] B` when `A` and `B` are commutative. The same surjectivity of
-> `ModuleCat.centerToShiftCenterDerived` is assumed and not proved.
->
-> As for `centerAlgEquiv`, read "the centre of `DerivedCategory (ModuleCat A)`" in the part string
-> below as the SHIFT-COMPATIBLE centre; the full `CatCenter` there is too big and the hypothesis as
-> originally stated was unsatisfiable.
+> **Stacks 09SD, the commutative case: derived equivalent commutative algebras are
+> isomorphic.** Let `R` be a commutative ring and let `A` and `B` be commutative `R`-algebras whose
+> derived categories are equivalent through an additive, `R`-linear, shift-commuting equivalence.
+> Then `A ≅ B` as `R`-algebras: a commutative algebra is its own centre, so this is
+> `DerivedEquivalence.nonempty_centerAlgEquiv_of_derivedEquivalence`.
 
 ```lean
-noncomputable def algEquiv
-    (hA : Function.Surjective (ModuleCat.centerToShiftCenterDerived R A))
-    (hB : Function.Surjective (ModuleCat.centerToShiftCenterDerived R B))
-    (E : DerivedCategory (ModuleCat.{u} A) ≌ DerivedCategory (ModuleCat.{v} B))
+theorem nonempty_algEquiv_of_derivedEquivalence
+    (E : DerivedCategory (ModuleCat.{u} A) ≌ DerivedCategory (ModuleCat.{u} B))
     [E.functor.Additive] [E.functor.Linear R] [E.functor.CommShift ℤ] :
-    A ≃ₐ[R] B
+    Nonempty (A ≃ₐ[R] B)
 ```
 
 ## Depends on
@@ -772,4 +826,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.37, Tag 09S5](https://stacks.math.columbia.edu/tag/09S5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

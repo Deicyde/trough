@@ -8,7 +8,7 @@ proof: formalized
 
 # Longest common subsequence
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/longest-common-subsequence/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/longest-common-subsequence/index.html).
 
 ## Longest common subsequence by dynamic programming
 
@@ -23,7 +23,7 @@ $c_{i-1,j} \ge c_{i,j-1}$ and to $(i, j-1)$ if not. The algorithm returns the pa
 The abstract time counts one step for each table entry $c_{i,j}$ with $i, j \ge 1$ and one for
 each backward step taken from a position with $i, j \ge 1$; everything else is free.
 
-Formalized by `Cslib.Algorithms.Lean.longestCommonSubsequence`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/LongestCommonSubsequence.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/LongestCommonSubsequence.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/longest-common-subsequence/index.html#longest-common-subsequence).
+Formalized by `Cslib.Algorithms.Lean.longestCommonSubsequence`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/LongestCommonSubsequence.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/LongestCommonSubsequence.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/longest-common-subsequence/index.html#longest-common-subsequence).
 
 ## Correctness of the longest common subsequence algorithm
 
@@ -33,7 +33,7 @@ $(k, w)$ be the pair returned by the dynamic-programming longest common subseque
 $x$ and $y$. Then $w$ has length $k$, $w$ is a subsequence (not necessarily contiguous) of both
 $x$ and $y$, and every common subsequence of $x$ and $y$ has length at most the length of $w$.
 
-Formalized by `Cslib.Algorithms.Lean.longestCommonSubsequence_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/LongestCommonSubsequence.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/LongestCommonSubsequence.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/longest-common-subsequence/index.html#longest-common-subsequence-correct).
+Formalized by `Cslib.Algorithms.Lean.longestCommonSubsequence_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/LongestCommonSubsequence.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/LongestCommonSubsequence.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/longest-common-subsequence/index.html#longest-common-subsequence-correct).
 
 ## Running time of the longest common subsequence algorithm
 
@@ -42,7 +42,7 @@ lengths $m$ and $n$ over a type with a boolean equality test, the abstract time 
 dynamic-programming longest common subsequence algorithm on $x$ and $y$ (its number of table
 and reconstruction transitions) is at most $mn + (m + n)$.
 
-Formalized by `Cslib.Algorithms.Lean.longestCommonSubsequence_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/LongestCommonSubsequence.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/LongestCommonSubsequence.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/longest-common-subsequence/index.html#longest-common-subsequence-time).
+Formalized by `Cslib.Algorithms.Lean.longestCommonSubsequence_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/LongestCommonSubsequence.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/LongestCommonSubsequence.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/longest-common-subsequence/index.html#longest-common-subsequence-time).
 
 ## Depends on
 
@@ -51,4 +51,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Longest common subsequence](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/longest-common-subsequence/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/dynamic-programming/longest-common-subsequence)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/dynamic-programming/longest-common-subsequence)

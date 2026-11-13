@@ -8,7 +8,7 @@ proof: formalized
 
 # Identities for Bernoulli numbers
 
-8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html).
+8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html).
 
 ## Abel–Bernoulli sum
 
@@ -25,7 +25,7 @@ This is the first of the source's two Abel–Bernoulli sums.
 
 - Claudio de J. Pita Ruiz V., "Carlitz-Type and Other Bernoulli Identities," Journal of Integer Sequences 19 (2016), Article 16.1.8, Proposition [Abel-Bernoulli sums], equation (5.11), lines 790–794, https://cs.uwaterloo.ca/journals/JIS/VOL19/Pita/pita23.tex
 
-Formalized by `MetaMathlibExt.abel_bernoulli_sum`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/AbelBernoulliSums.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/AbelBernoulliSums.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#abel-bernoulli-sum).
+Formalized by `MetaMathlibExt.abel_bernoulli_sum`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/AbelBernoulliSums.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/AbelBernoulliSums.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#abel-bernoulli-sum).
 
 ## Abel–Hurwitz–Bernoulli multinomial identity
 
@@ -46,7 +46,7 @@ its specialization to rational $x_1, \dots, x_m$.
 
 - Claudio de J. Pita Ruiz V., "Carlitz-Type and Other Bernoulli Identities," Journal of Integer Sequences 19 (2016), Article 16.1.8, Proposition [Abel-Hurwitz-Bernoulli identity] (a), equation (5.16), lines 821–829, https://cs.uwaterloo.ca/journals/JIS/VOL19/Pita/pita23.tex
 
-Formalized by `MetaMathlibExt.abel_hurwitz_bernoulli_multinomial`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/AbelHurwitzBernoulli.lean, line 957](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/AbelHurwitzBernoulli.lean#L957). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#abel-hurwitz-bernoulli-multinomial).
+Formalized by `MetaMathlibExt.abel_hurwitz_bernoulli_multinomial`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/AbelHurwitzBernoulli.lean, line 957](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/AbelHurwitzBernoulli.lean#L957). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#abel-hurwitz-bernoulli-multinomial).
 
 ## Carlitz's Bernoulli identity
 
@@ -59,7 +59,7 @@ $$(-1)^m \sum_{k=0}^{m} \binom{m}{k} B_{n+k} = (-1)^n \sum_{k=0}^{n} \binom{n}{k
 
 - Pita Ruiz, “Carlitz-Type and Other Bernoulli Identities”; original L. Carlitz, Problem 795, Mathematics Magazine 44 (1971), p. 107.
 
-Formalized by `MetaMathlibExt.carlitz_bernoulli_sum_symm`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/CarlitzIdentity.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/CarlitzIdentity.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#carlitz-bernoulli-sum-symm).
+Formalized by `MetaMathlibExt.carlitz_bernoulli_sum_symm`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/CarlitzIdentity.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/CarlitzIdentity.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#carlitz-bernoulli-sum-symm).
 
 ## Euler's convolution identity for Bernoulli numbers
 
@@ -72,7 +72,7 @@ $$\sum_{i=0}^{n} \binom{n}{i} B_i B_{n-i} = -n B_{n-1} - (n-1) B_n.$$
 
 - Ken Kamano, "Sums of Products of Bernoulli Numbers, Including Poly-Bernoulli Numbers," Journal of Integer Sequences 13 (2010), <https://cs.uwaterloo.ca/journals/JIS/VOL13/Kamano/kamano2.tex>. Lines 98–104.
 
-Formalized by `MetaMathlibExt.euler_bernoulli_convolution`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/EulerBernoulliConvolution.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/EulerBernoulliConvolution.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#euler-bernoulli-convolution).
+Formalized by `MetaMathlibExt.euler_bernoulli_convolution`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/EulerBernoulliConvolution.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/EulerBernoulliConvolution.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#euler-bernoulli-convolution).
 
 ## Gessel's Bernoulli-number identity
 
@@ -90,7 +90,7 @@ $j = 0$ and $j = r + 1$ have exponent $-1$.
 
 - Redha Chellal and Farid Bencherif, *An Identity for Generalized Bernoulli Polynomials*, Journal of Integer Sequences 23 (2020), Article 20.11.2, formula `t5` (the special case `ℓ = n` with `r` odd), lines 142–149, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Chellal/chellal7.tex>. Quoted there from H. Belbachir and M. Rahmani, *On Gessel-Kaneko's identity for Bernoulli numbers*, Appl. Anal. Discrete Math. 7 (2013), 1–10. Original: I. M. Gessel, *Applications of the classical umbral calculus*, Algebra Universalis 49 (2003), 397–434.
 
-Formalized by `MetaMathlibExt.gessel_bernoulli_number_identity`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/GesselIdentity.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/GesselIdentity.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#gessel-bernoulli-number-identity).
+Formalized by `MetaMathlibExt.gessel_bernoulli_number_identity`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/GesselIdentity.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/GesselIdentity.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#gessel-bernoulli-number-identity).
 
 ## Gould's alternating identity for Bernoulli polynomials
 
@@ -104,7 +104,7 @@ $$\sum_{k=0}^{n} (-1)^k \binom{n}{k} B_{n+1}(x - k) = \frac{(n+1)!}{2} (2x - n -
 
 - Claudio de J. Pita Ruiz V., "Carlitz-Type and Other Bernoulli Identities", Journal of Integer Sequences 19 (2016), Article 16.1.8, Proposition (Gould-Bernoulli identities), equation (5.3), lines 727-732, <https://cs.uwaterloo.ca/journals/JIS/VOL19/Pita/pita23.tex>.
 
-Formalized by `MetaMathlibExt.gould_bernoulli_identity`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/GouldBernoulliIdentity.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/GouldBernoulliIdentity.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#gould-bernoulli-identity).
+Formalized by `MetaMathlibExt.gould_bernoulli_identity`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/GouldBernoulliIdentity.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/GouldBernoulliIdentity.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#gould-bernoulli-identity).
 
 ## Kaneko's Stirling-number formula for the Bernoulli numbers
 
@@ -122,7 +122,7 @@ $B_n^{(1)}$ come from the generating series $t/(1 - e^{-t})$).
 
 - Y. Hamahata and H. Masubuchi, "Special Multi-Poly-Bernoulli Numbers," Journal of Integer Sequences 10 (2007), Article 07.4.1, Theorem [Kaneko1], lines 144–152, https://cs.uwaterloo.ca/journals/JIS/VOL10/Hamahata/hamahata3.tex citing M. Kaneko, "Poly-Bernoulli numbers," Journal de Théorie des Nombres de Bordeaux 9 (1997), 221–228.
 
-Formalized by `MetaMathlibExt.kaneko_bernoulli_stirling_sum`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/KanekoBernoulliStirling.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/KanekoBernoulliStirling.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#kaneko-bernoulli-stirling-sum).
+Formalized by `MetaMathlibExt.kaneko_bernoulli_stirling_sum`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/KanekoBernoulliStirling.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/KanekoBernoulliStirling.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#kaneko-bernoulli-stirling-sum).
 
 ## Tuenter's power-sum identity for Bernoulli numbers
 
@@ -143,7 +143,7 @@ For a natural number $x$ and $i \ge 1$ the relation gives $\sigma_x(i) = 1^i + 2
 
 - Jitender Singh, *On an Arithmetic Convolution*, Journal of Integer Sequences 17 (2014), Article 14.6.7, Corollary with equation `eq23`, lines 339–344, identified there as Tuenter's identity at `c = 0`, line 348, <https://cs.uwaterloo.ca/journals/JIS/VOL17/Singh/singh8.tex>.
 
-Formalized by `MetaMathlibExt.tuenter_bernoulli_power_sum_identity`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/TuenterBernoulliPowerSum.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/TuenterBernoulliPowerSum.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#tuenter-bernoulli-power-sum-identity).
+Formalized by `MetaMathlibExt.tuenter_bernoulli_power_sum_identity`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/TuenterBernoulliPowerSum.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/TuenterBernoulliPowerSum.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html#tuenter-bernoulli-power-sum-identity).
 
 ## Depends on
 
@@ -152,4 +152,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Identities for Bernoulli numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/bernoulli-numbers/identities-for-bernoulli-numbers)

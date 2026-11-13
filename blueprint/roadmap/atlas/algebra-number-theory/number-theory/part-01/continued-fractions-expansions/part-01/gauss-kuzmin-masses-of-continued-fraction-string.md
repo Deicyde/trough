@@ -7,7 +7,7 @@ statement: formalized
 
 # Gauss–Kuzmin masses of continued fraction strings
 
-29 results, 15 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html).
+29 results, 15 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html).
 
 ## Convergent matrix
 
@@ -24,7 +24,7 @@ preceding convergent.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Definition 2.1 and equation (2.8).
 
-Formalized by `MetaMathlibExt.convergentMatrix`, a definition declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#convergent-matrix).
+Formalized by `MetaMathlibExt.convergentMatrix`, a definition declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#convergent-matrix).
 
 ## Convergent matrix of the empty string
 
@@ -35,7 +35,7 @@ $2 \times 2$ identity matrix.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Section 2.2.
 
-Formalized by `MetaMathlibExt.convergentMatrix_nil`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#convergent-matrix-nil).
+Formalized by `MetaMathlibExt.convergentMatrix_nil`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#convergent-matrix-nil).
 
 ## Prepending a digit to a string
 
@@ -47,7 +47,7 @@ $a$, is $C(t, a) = \begin{pmatrix} 0 & 1 \\ 1 & t \end{pmatrix} C(a)$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, equation (2.8).
 
-Formalized by `MetaMathlibExt.convergentMatrix_cons`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#convergent-matrix-cons).
+Formalized by `MetaMathlibExt.convergentMatrix_cons`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#convergent-matrix-cons).
 
 ## Fundamental interval of a string
 
@@ -63,7 +63,7 @@ finite expansion whose last digit is at least $2$ (the resolution in the paper's
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, equation (1.4).
 
-Formalized by `MetaMathlibExt.cfCylinder`, a definition declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#cf-cylinder).
+Formalized by `MetaMathlibExt.cfCylinder`, a definition declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#cf-cylinder).
 
 ## Fundamental interval of the empty string
 
@@ -74,7 +74,7 @@ the whole interval: $I(()) = [0, 1)$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, equation (1.4).
 
-Formalized by `MetaMathlibExt.cfCylinder_nil`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#cf-cylinder-nil).
+Formalized by `MetaMathlibExt.cfCylinder_nil`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#cf-cylinder-nil).
 
 ## Half-open interval between two reals
 
@@ -86,7 +86,7 @@ otherwise.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Section 2.3 (interval notation).
 
-Formalized by `MetaMathlibExt.fundInterval`, a definition declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#fund-interval).
+Formalized by `MetaMathlibExt.fundInterval`, a definition declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#fund-interval).
 
 ## Half-open interval between increasing endpoints
 
@@ -99,7 +99,7 @@ $\langle \alpha, \beta \rangle = [\alpha, \beta)$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Section 2.3.
 
-Formalized by `MetaMathlibExt.fundInterval_of_lt`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#fund-interval-of-lt).
+Formalized by `MetaMathlibExt.fundInterval_of_lt`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#fund-interval-of-lt).
 
 ## Gauss–Kuzmin mass of a string
 
@@ -112,7 +112,7 @@ Gauss–Kuzmin measure with density $\frac{1}{(1 + x) \log 2}$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, equations (1.5) and (1.6).
 
-Formalized by `MetaMathlibExt.gaussKuzminMass`, a definition declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#gauss-kuzmin-mass).
+Formalized by `MetaMathlibExt.gaussKuzminMass`, a definition declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#gauss-kuzmin-mass).
 
 ## Gauss–Kuzmin mass of the empty string
 
@@ -123,7 +123,7 @@ $P_{GK}(()) = \frac{1}{\log 2} \int_{[0, 1)} \frac{dx}{1 + x}$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, equation (1.6).
 
-Formalized by `MetaMathlibExt.gaussKuzminMass_nil`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#gauss-kuzmin-mass-nil).
+Formalized by `MetaMathlibExt.gaussKuzminMass_nil`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#gauss-kuzmin-mass-nil).
 
 ## Characteristic number of a string
 
@@ -135,7 +135,7 @@ number of $a$ is the integer $\chi(a) = (p + q)(q' + q)$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Definition 5.1, equation (5.2).
 
-Formalized by `MetaMathlibExt.characteristicNumber`, a definition declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#characteristic-number).
+Formalized by `MetaMathlibExt.characteristicNumber`, a definition declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#characteristic-number).
 
 ## Characteristic number of the empty string
 
@@ -146,7 +146,7 @@ is $\chi(()) = 1$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Definition 5.1.
 
-Formalized by `MetaMathlibExt.characteristicNumber_nil`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#characteristic-number-nil).
+Formalized by `MetaMathlibExt.characteristicNumber_nil`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#characteristic-number-nil).
 
 ## Stable strings
 
@@ -162,7 +162,7 @@ stable if $p = 2q'$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Definition 5.4, equation (5.9).
 
-Formalized by `MetaMathlibExt.IsStableString`, a definition declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#is-stable-string).
+Formalized by `MetaMathlibExt.IsStableString`, a definition declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#is-stable-string).
 
 ## The empty string is stable
 
@@ -175,7 +175,7 @@ $q'$ are both $0$, and $p = 2q'$ holds.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Definition 5.4.
 
-Formalized by `MetaMathlibExt.isStableString_nil`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#is-stable-string-nil).
+Formalized by `MetaMathlibExt.isStableString_nil`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#is-stable-string-nil).
 
 ## Nontrivial symmetry of a string
 
@@ -188,7 +188,7 @@ $P_{GK}(b) = P_{GK}(a)$, where $P_{GK}$ denotes the Gauss–Kuzmin measure of a 
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Definition 1.4.
 
-Formalized by `MetaMathlibExt.HasNontrivialSymmetry`, a definition declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#has-nontrivial-symmetry).
+Formalized by `MetaMathlibExt.HasNontrivialSymmetry`, a definition declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#has-nontrivial-symmetry).
 
 ## The empty string has no nontrivial symmetry
 
@@ -198,7 +198,7 @@ The empty string has no nontrivial symmetry.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Definition 1.4.
 
-Formalized by `MetaMathlibExt.not_hasNontrivialSymmetry_nil`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#not-has-nontrivial-symmetry-nil).
+Formalized by `MetaMathlibExt.not_hasNontrivialSymmetry_nil`, a theorem declared in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#not-has-nontrivial-symmetry-nil).
 
 ## Generalized Gauss–Kuzmin theorem
 
@@ -213,7 +213,7 @@ $P_{GK}(b)$ as $N \to \infty$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Proposition 1.2, quoted from Iosifescu and Kraaikamp, Proposition 4.1.2.
 
-Stated but not proved: `MetaMathlibExt.gaussKuzmin_string_frequency` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#gauss-kuzmin-string-frequency).
+Stated but not proved: `MetaMathlibExt.gaussKuzmin_string_frequency` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#gauss-kuzmin-string-frequency).
 
 ## Reversal symmetry of the Gauss–Kuzmin mass
 
@@ -225,7 +225,7 @@ $\overleftarrow{a}$ is the reverse of $a$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Proposition 1.3, equations (1.8) and (1.9).
 
-Stated but not proved: `MetaMathlibExt.gaussKuzminMass_reverse` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#gauss-kuzmin-mass-reverse).
+Stated but not proved: `MetaMathlibExt.gaussKuzminMass_reverse` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#gauss-kuzmin-mass-reverse).
 
 ## Reversal symmetry forces the Gauss–Kuzmin density
 
@@ -241,7 +241,7 @@ $x \in [0, 1]$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.density_eq_gaussKuzmin_of_reverse_symmetric` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#density-eq-gauss-kuzmin-of-reverse-symme).
+Stated but not proved: `MetaMathlibExt.density_eq_gaussKuzmin_of_reverse_symmetric` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#density-eq-gauss-kuzmin-of-reverse-symme).
 
 ## Symmetry up to a fixed length does not force the Gauss–Kuzmin density
 
@@ -256,7 +256,7 @@ $f(x) \ne \frac{1}{\log 2 \cdot (1 + x)}$ for some $x \in [0, 1]$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.exists_reverse_symmetric_density_ne_gaussKuzmin` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#exists-reverse-symmetric-density-ne-gaus).
+Stated but not proved: `MetaMathlibExt.exists_reverse_symmetric_density_ne_gaussKuzmin` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#exists-reverse-symmetric-density-ne-gaus).
 
 ## Convergent matrices of reversed and extended strings
 
@@ -273,7 +273,7 @@ $\overleftarrow{a} = (a_n, \ldots, a_1)$ for the reversed string. Then
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Lemma 2.2.
 
-Stated but not proved: `MetaMathlibExt.convergentMatrix_reverse_append_cons` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#convergent-matrix-reverse-append-cons).
+Stated but not proved: `MetaMathlibExt.convergentMatrix_reverse_append_cons` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#convergent-matrix-reverse-append-cons).
 
 ## Fundamental intervals of reversed and extended strings
 
@@ -296,7 +296,7 @@ zero:
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Lemma 2.4.
 
-Stated but not proved: `MetaMathlibExt.cfCylinder_reverse_append_cons_ae_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#cf-cylinder-reverse-append-cons-ae-eq).
+Stated but not proved: `MetaMathlibExt.cfCylinder_reverse_append_cons_ae_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#cf-cylinder-reverse-append-cons-ae-eq).
 
 ## Explicit Gauss–Kuzmin mass of a string
 
@@ -310,7 +310,7 @@ $P_{GK}(a) = \left|\log_2\left(1 + \frac{(-1)^n}{(p + q)(q' + q)}\right)\right|$
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Lemma 2.5, equation (2.13).
 
-Stated but not proved: `MetaMathlibExt.gaussKuzminMass_eq_abs_logb` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#gauss-kuzmin-mass-eq-abs-logb).
+Stated but not proved: `MetaMathlibExt.gaussKuzminMass_eq_abs_logb` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#gauss-kuzmin-mass-eq-abs-logb).
 
 ## Symmetric one-digit extensions fix the density at a rational point
 
@@ -327,7 +327,7 @@ every integer $t \ge 1$, then $f(p/q) = f(0)/(1 + p/q)$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Lemma 3.1.
 
-Stated but not proved: `MetaMathlibExt.density_cfValue_eq_of_append_symmetric` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#density-cf-value-eq-of-append-symmetric).
+Stated but not proved: `MetaMathlibExt.density_cfValue_eq_of_append_symmetric` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#density-cf-value-eq-of-append-symmetric).
 
 ## Reversal symmetry from agreement with the Gauss–Kuzmin measure
 
@@ -341,7 +341,7 @@ $\mu(I(a)) = \mu(I(a^{\mathrm{rev}}))$ for every string $a$ of at most $N$ posit
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Lemma 4.1.
 
-Stated but not proved: `MetaMathlibExt.reverse_symmetric_of_eq_gaussKuzmin_at_length` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#reverse-symmetric-of-eq-gauss-kuzmin-at).
+Stated but not proved: `MetaMathlibExt.reverse_symmetric_of_eq_gaussKuzmin_at_length` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#reverse-symmetric-of-eq-gauss-kuzmin-at).
 
 ## Gauss–Kuzmin masses agree exactly when characteristic numbers do
 
@@ -354,7 +354,7 @@ if $\chi(a) = \chi(b)$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Lemma 5.2.
 
-Stated but not proved: `MetaMathlibExt.gaussKuzminMass_eq_iff_characteristicNumber_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#gauss-kuzmin-mass-eq-iff-characteristic).
+Stated but not proved: `MetaMathlibExt.gaussKuzminMass_eq_iff_characteristicNumber_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#gauss-kuzmin-mass-eq-iff-characteristic).
 
 ## Swapping the first two of three digits changes the characteristic number
 
@@ -366,7 +366,7 @@ characteristic numbers: $\chi(a, b, c) \ne \chi(b, a, c)$.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Lemma 5.3.
 
-Stated but not proved: `MetaMathlibExt.characteristicNumber_swap_ne` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#characteristic-number-swap-ne).
+Stated but not proved: `MetaMathlibExt.characteristicNumber_swap_ne` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#characteristic-number-swap-ne).
 
 ## Families of stable strings
 
@@ -380,7 +380,7 @@ $n \ge 2$ there are infinitely many stable strings of $n$ positive integers.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Lemma 5.5.
 
-Stated but not proved: `MetaMathlibExt.isStableString_families` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#is-stable-string-families).
+Stated but not proved: `MetaMathlibExt.isStableString_families` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#is-stable-string-families).
 
 ## Nontrivial symmetries from stable strings
 
@@ -394,7 +394,7 @@ $P_{GK}(\sigma(a^+)) = P_{GK}(a^+)$, where $P_{GK}$ denotes the Gauss–Kuzmin m
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Lemma 5.7, equations (5.12) and (5.13).
 
-Stated but not proved: `MetaMathlibExt.stable_plus_nontrivial_symmetry` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#stable-plus-nontrivial-symmetry).
+Stated but not proved: `MetaMathlibExt.stable_plus_nontrivial_symmetry` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#stable-plus-nontrivial-symmetry).
 
 ## No nontrivial symmetries in length three, infinitely many from length four
 
@@ -406,7 +406,7 @@ many strings of $n$ positive integers that have a nontrivial symmetry.
 
 - Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.nontrivialSymmetry_length_three_and_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#nontrivial-symmetry-length-three-and-inf).
+Stated but not proved: `MetaMathlibExt.nontrivialSymmetry_length_three_and_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GaussKuzminSymmetryWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html#nontrivial-symmetry-length-three-and-inf).
 
 ## Depends on
 
@@ -415,4 +415,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Gauss–Kuzmin masses of continued fraction strings](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/gauss-kuzmin-masses-of-continued-fraction-string)

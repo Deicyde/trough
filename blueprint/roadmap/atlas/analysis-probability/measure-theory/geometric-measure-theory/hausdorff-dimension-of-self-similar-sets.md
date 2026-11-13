@@ -7,7 +7,7 @@ statement: formalized
 
 # Hausdorff dimension of self-similar sets
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/index.html).
 
 ## Attractor of an iterated function system
 
@@ -16,7 +16,7 @@ $(f_i)_{i < n}$ be a finite family of maps $X \to X$. A set $S \subseteq X$ is a
 family if it is nonempty and compact and is fixed by the Hutchinson operator, that is,
 $S = \bigcup_{i < n} f_i(S)$.
 
-Formalized by `MathlibExt.Dynamics.MoranDimensionWanted.Dynamics.IsAttractor`, a definition declared in [WantedExt/Dynamics/MoranDimensionWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/MoranDimensionWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/index.html#is-attractor).
+Formalized by `MathlibExt.Dynamics.MoranDimensionWanted.Dynamics.IsAttractor`, a definition declared in [WantedExt/Dynamics/MoranDimensionWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/MoranDimensionWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/index.html#is-attractor).
 
 ## Affine-symmetric iterated function system
 
@@ -27,7 +27,7 @@ $A_i \colon \mathbb{R}^d \to \mathbb{R}^d$ (orthogonal transformations) and vect
 $\beta_i \in \mathbb{R}^d$ such that $f_i(x) = \lambda A_i(x) + \beta_i$ for every $i < n$ and every
 $x \in \mathbb{R}^d$.
 
-Formalized by `MathlibExt.Dynamics.MoranDimensionWanted.Dynamics.IsAffineSymmetricIFS`, a definition declared in [WantedExt/Dynamics/MoranDimensionWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/MoranDimensionWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/index.html#is-affine-symmetric-ifs).
+Formalized by `MathlibExt.Dynamics.MoranDimensionWanted.Dynamics.IsAffineSymmetricIFS`, a definition declared in [WantedExt/Dynamics/MoranDimensionWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/MoranDimensionWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/index.html#is-affine-symmetric-ifs).
 
 ## Open set condition
 
@@ -36,7 +36,7 @@ $i < n$, satisfies the open set condition if there is a nonempty open set $G \su
 such that $f_i(G) \subseteq G$ for every $i < n$ and the images $f_i(G)$ and $f_j(G)$ are disjoint
 whenever $i \neq j$.
 
-Formalized by `MathlibExt.Dynamics.MoranDimensionWanted.Dynamics.OpenSetCondition`, a definition declared in [WantedExt/Dynamics/MoranDimensionWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/MoranDimensionWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/index.html#open-set-condition).
+Formalized by `MathlibExt.Dynamics.MoranDimensionWanted.Dynamics.OpenSetCondition`, a definition declared in [WantedExt/Dynamics/MoranDimensionWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/MoranDimensionWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/index.html#open-set-condition).
 
 ## Moran's equality for affine-symmetric iterated function systems
 
@@ -51,7 +51,7 @@ $$\dim_H S = -\frac{\log n}{\log \lambda}.$$
 
 - P. A. P. Moran, *Additive functions of intervals and Hausdorff measure*, Proc. Cambridge Philos. Soc. 42 (1946); J. E. Hutchinson, *Fractals and self similarity*, Indiana Univ. Math. J. 30 (1981). Knill, *Some fundamental theorems in mathematics*, §105. Problem `moran_equality_affine` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Dynamics.MoranDimensionWanted.Dynamics.moran_equality_affine` is written with `theorem_wanted` in [WantedExt/Dynamics/MoranDimensionWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/MoranDimensionWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/index.html#moran-equality-affine).
+Stated but not proved: `MathlibExt.Dynamics.MoranDimensionWanted.Dynamics.moran_equality_affine` is written with `theorem_wanted` in [WantedExt/Dynamics/MoranDimensionWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/MoranDimensionWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/index.html#moran-equality-affine).
 
 ## Depends on
 
@@ -60,4 +60,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hausdorff dimension of self-similar sets](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets)

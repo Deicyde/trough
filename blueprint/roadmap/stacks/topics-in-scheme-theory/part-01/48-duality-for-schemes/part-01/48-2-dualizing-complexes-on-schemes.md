@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.2 Dualizing complexes on schemes
 
-Section 48.2 of the Stacks Project, [Tag 0A85](https://stacks.math.columbia.edu/tag/0A85). 8 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.2 of the Stacks Project, [Tag 0A85](https://stacks.math.columbia.edu/tag/0A85). 8 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A86, a lemma
 
 [Tag 0A86](https://stacks.math.columbia.edu/tag/0A86) in the Stacks Project.
 
-**`Stacks.Duality.isDualizingComplex_iff_exists_affineOpenCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexCoverCriterion.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexCoverCriterion.lean#L414).
+**`Stacks.Duality.isDualizingComplex_iff_exists_affineOpenCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexCoverCriterion.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexCoverCriterion.lean#L414).
 
 > **Stacks Project, Tag 0A86.** On a locally Noetherian scheme an object of `D(𝒪_X)` is a
 > dualizing complex — it carries a dualizing model at every affine open — exactly when it carries
@@ -31,7 +31,7 @@ theorem isDualizingComplex_iff_exists_affineOpenCover {K : DerivedCategory X.Mod
 
 [Tag 0A87](https://stacks.math.columbia.edu/tag/0A87) in the Stacks Project.
 
-**`Stacks.Duality.IsDualizingComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexScheme.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexScheme.lean#L112).
+**`Stacks.Duality.IsDualizingComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexScheme.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexScheme.lean#L113).
 
 > **Stacks Project, Tag 0A87.** A *dualizing complex* on a locally Noetherian scheme `X` is an
 > object of `D(𝒪_X)` which, over every affine open `U ⊆ X`, is the associated sheaf of a dualizing
@@ -47,7 +47,7 @@ abbrev IsDualizingComplex (K : DerivedCategory X.Modules) : Prop
 
 [Tag 0A88](https://stacks.math.columbia.edu/tag/0A88) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_affineDerivedTildeHomComparison_of_finite_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineCoherentHomFiniteInjectiveDimension.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineCoherentHomFiniteInjectiveDimension.lean#L171).
+**`AlgebraicGeometry.isIso_affineDerivedTildeHomComparison_of_finite_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineCoherentHomFiniteInjectiveDimension.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineCoherentHomFiniteInjectiveDimension.lean#L171).
 
 > **Stacks Tag 0A88.** Let `R` be a Noetherian ring and `X = Spec R`. For `K` an object of
 > `D_Coh(R)` — all of whose cohomology modules are finite, with no boundedness hypothesis — and `L`
@@ -66,7 +66,7 @@ theorem isIso_affineDerivedTildeHomComparison_of_finite_homology (R : CommRingCa
     IsIso (affineDerivedTildeHomComparison R K L)
 ```
 
-**`AlgebraicGeometry.isIso_affineDerivedTildeHomComparison`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/Comparison.lean, line 667](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/Comparison.lean#L667). The attribute's comment: “proved for K perfect and L arbitrary over any R, rather than for K in D\_Coh(R) and L of finite injective dimension over a Noetherian R; the comparison is the canonical morphism, identified as such by affineDerivedTildeHomComparison\_perfect”.
+**`AlgebraicGeometry.isIso_affineDerivedTildeHomComparison`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/Comparison.lean, line 667](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/Comparison.lean#L667). The attribute's comment: “proved for K perfect and L arbitrary over any R, rather than for K in D\_Coh(R) and L of finite injective dimension over a Noetherian R; the comparison is the canonical morphism, identified as such by affineDerivedTildeHomComparison\_perfect”.
 
 > **Stacks Tag 0A88, for a perfect source.** For `X = Spec R` and `K, L` in `D(R)` the
 > canonical comparison
@@ -96,7 +96,7 @@ public lemma isIso_affineDerivedTildeHomComparison (R : CommRingCat.{u})
 
 [Tag 0G4I](https://stacks.math.columbia.edu/tag/0G4I) in the Stacks Project.
 
-**`Stacks.SheafOfModules.derivedSheafHomEvaluation_isIso_of_boundedCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InternalHomEvaluation/CoherentEvaluation.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InternalHomEvaluation/CoherentEvaluation.lean#L187). The attribute's comment: “case (1): on a Noetherian scheme, K bounded above with coherent cohomology, L bounded below with coherent cohomology, all three in D\_QCoh, M of finite injective dimension affine locally”.
+**`Stacks.SheafOfModules.derivedSheafHomEvaluation_isIso_of_boundedCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InternalHomEvaluation/CoherentEvaluation.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InternalHomEvaluation/CoherentEvaluation.lean#L187). The attribute's comment: “case (1): on a Noetherian scheme, K bounded above with coherent cohomology, L bounded below with coherent cohomology, all three in D\_QCoh, M of finite injective dimension affine locally”.
 
 > Let `X` be a Noetherian scheme and let `K`, `L`, `M` be objects of `D_QCoh(O_X)` with
 > `K ∈ D^-_Coh(O_X)`, `L ∈ D^+_Coh(O_X)` and `M` of finite injective dimension affine locally. Then
@@ -113,7 +113,7 @@ theorem derivedSheafHomEvaluation_isIso_of_boundedCoherent [IsNoetherian X]
     IsIso (derivedSheafHomEvaluation X.sheaf K L M)
 ```
 
-**`Stacks.SheafOfModules.derivedSheafHomEvaluation_isIso_of_coherent_finiteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InternalHomEvaluation/CoherentEvaluation.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InternalHomEvaluation/CoherentEvaluation.lean#L209). The attribute's comment: “case (2): on a Noetherian scheme, K and L with coherent cohomology, all three in D\_QCoh, RSheafHom(L, M) of finite tor dimension, L and M of finite injective dimension affine locally”.
+**`Stacks.SheafOfModules.derivedSheafHomEvaluation_isIso_of_coherent_finiteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InternalHomEvaluation/CoherentEvaluation.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InternalHomEvaluation/CoherentEvaluation.lean#L209). The attribute's comment: “case (2): on a Noetherian scheme, K and L with coherent cohomology, all three in D\_QCoh, RSheafHom(L, M) of finite tor dimension, L and M of finite injective dimension affine locally”.
 
 > Let `X` be a Noetherian scheme and let `K`, `L`, `M` be objects of `D_QCoh(O_X)` with `K`
 > and `L` in `D_Coh(O_X)`, with `RSheafHom(L, M)` of finite tor dimension, and with `L` and `M` of
@@ -134,7 +134,7 @@ theorem derivedSheafHomEvaluation_isIso_of_coherent_finiteTorDimension [IsNoethe
 
 [Tag 0A89](https://stacks.math.columbia.edu/tag/0A89) in the Stacks Project.
 
-**`Stacks.Duality.dualizingDerivedSheafHomFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDuality.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDuality.lean#L267). The attribute's comment: “the functor D = R SheafHom(-, K) on D(O\_X)”. References: SGA 5 III (6.2), “partial”.
+**`Stacks.Duality.dualizingDerivedSheafHomFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDuality.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDuality.lean#L267). The attribute's comment: “the functor D = R SheafHom(-, K) on D(O\_X)”. References: SGA 5 III (6.2), “partial”.
 
 > **Stacks Project, Tag 0A89.** The functor `D = R𝓗om_{𝒪_X}(-, K)` of the lemma: derived
 > internal Hom into `K` as a contravariant functor `D(𝒪_X)ᵒᵖ ⥤ D(𝒪_X)` on a scheme.
@@ -150,7 +150,7 @@ def dualizingDerivedSheafHomFunctor :
     (DerivedCategory X.Modules)ᵒᵖ ⥤ DerivedCategory X.Modules
 ```
 
-**`Stacks.Duality.dualizingDerivedSheafHomBiduality`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDuality.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDuality.lean#L291). The attribute's comment: “the canonical biduality morphism id → D ∘ D”.
+**`Stacks.Duality.dualizingDerivedSheafHomBiduality`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDuality.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDuality.lean#L291). The attribute's comment: “the canonical biduality morphism id → D ∘ D”.
 
 > **Stacks Project, Tag 0A89.** The canonical morphism `id → D ∘ D` of the lemma, for
 > `D = R𝓗om_{𝒪_X}(-, K)` on a scheme: the natural transformation
@@ -172,7 +172,7 @@ def dualizingDerivedSheafHomBiduality :
         dualizingDerivedSheafHomFunctor X K
 ```
 
-**`Stacks.Duality.isIso_dualizingDerivedSheafHomBiduality_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBiduality.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBiduality.lean#L157). The attribute's comment: “canonical biduality”.
+**`Stacks.Duality.isIso_dualizingDerivedSheafHomBiduality_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBiduality.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBiduality.lean#L157). The attribute's comment: “canonical biduality”.
 
 > **Stacks Project, Tag 0A89.** The canonical biduality morphism
 >
@@ -195,7 +195,7 @@ theorem isIso_dualizingDerivedSheafHomBiduality_app [IsLocallyNoetherian X]
     IsIso ((dualizingDerivedSheafHomBiduality X K).app L)
 ```
 
-**`Stacks.Duality.coherentDualizingDerivedSheafHom_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBiduality.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBiduality.lean#L213). The attribute's comment: “the anti-equivalence on coherent objects”.
+**`Stacks.Duality.coherentDualizingDerivedSheafHom_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBiduality.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBiduality.lean#L213). The attribute's comment: “the anti-equivalence on coherent objects”.
 
 > **Stacks Project, Tag 0A89.** `D = R𝓗om_{𝒪_X}(-, K)` is an anti-equivalence of
 > `D_Coh(𝒪_X)`, for `K` a dualizing complex on a locally Noetherian scheme `X`: canonical
@@ -208,7 +208,7 @@ theorem coherentDualizingDerivedSheafHom_isEquivalence (X : Scheme.{u}) [IsLocal
     (coherentDualizingDerivedSheafHomFunctor X hK).IsEquivalence
 ```
 
-**`Stacks.Duality.boundedCoherentDualizingDerivedSheafHom_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBiduality.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBiduality.lean#L280). The attribute's comment: “the bounded anti-equivalence”.
+**`Stacks.Duality.boundedCoherentDualizingDerivedSheafHom_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBiduality.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBiduality.lean#L280). The attribute's comment: “the bounded anti-equivalence”.
 
 > **Stacks Project, Tag 0A89.** `D = R𝓗om_{𝒪_X}(-, K)` is an anti-equivalence of
 > `D^b_Coh(𝒪_X)`, for `K` a dualizing complex on a quasi-compact locally Noetherian scheme `X`.
@@ -220,7 +220,7 @@ theorem boundedCoherentDualizingDerivedSheafHom_isEquivalence (X : Scheme.{u})
     (boundedCoherentDualizingDerivedSheafHomFunctor X hK).IsEquivalence
 ```
 
-**`Stacks.Duality.derivedCategoryBMinus_isCoherent_dualizingDerivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBounded.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBounded.lean#L284). The attribute's comment: “exchange of bounded below and bounded above”.
+**`Stacks.Duality.derivedCategoryBMinus_isCoherent_dualizingDerivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBounded.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBounded.lean#L284). The attribute's comment: “exchange of bounded below and bounded above”.
 
 > On a quasi-compact locally Noetherian scheme, `D = R𝓗om_{𝒪_X}(-, K)` carries `D⁺_Coh(𝒪_X)`
 > into `D⁻_Coh(𝒪_X)`, for `K` a dualizing complex.
@@ -234,7 +234,7 @@ theorem derivedCategoryBMinus_isCoherent_dualizingDerivedSheafHom [CompactSpace 
       ((dualizingDerivedSheafHomFunctor X K).obj (op L))
 ```
 
-**`Stacks.Duality.derivedCategoryBPlus_isCoherent_dualizingDerivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBounded.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBounded.lean#L302). The attribute's comment: “exchange of bounded above and bounded below”.
+**`Stacks.Duality.derivedCategoryBPlus_isCoherent_dualizingDerivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBounded.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBounded.lean#L302). The attribute's comment: “exchange of bounded above and bounded below”.
 
 > On a quasi-compact locally Noetherian scheme, `D = R𝓗om_{𝒪_X}(-, K)` carries `D⁻_Coh(𝒪_X)`
 > into `D⁺_Coh(𝒪_X)`, for `K` a dualizing complex.
@@ -251,7 +251,7 @@ theorem derivedCategoryBPlus_isCoherent_dualizingDerivedSheafHom [CompactSpace X
       ((dualizingDerivedSheafHomFunctor X K).obj (op L))
 ```
 
-**`Stacks.Duality.derivedCategoryBBounded_isCoherent_dualizingDerivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBounded.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBounded.lean#L323). The attribute's comment: “preservation of bounded coherent objects”.
+**`Stacks.Duality.derivedCategoryBBounded_isCoherent_dualizingDerivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBounded.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityBounded.lean#L323). The attribute's comment: “preservation of bounded coherent objects”.
 
 > On a quasi-compact locally Noetherian scheme, `D = R𝓗om_{𝒪_X}(-, K)` carries
 > `D^b_Coh(𝒪_X)` into itself, for `K` a dualizing complex.
@@ -271,7 +271,7 @@ theorem derivedCategoryBBounded_isCoherent_dualizingDerivedSheafHom [CompactSpac
       ((dualizingDerivedSheafHomFunctor X K).obj (op L))
 ```
 
-**`Stacks.Duality.derivedCategoryB_isCoherent_dualizingDerivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityCoherence.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityCoherence.lean#L228). The attribute's comment: “preservation of coherent objects”.
+**`Stacks.Duality.derivedCategoryB_isCoherent_dualizingDerivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityCoherence.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedDualityCoherence.lean#L228). The attribute's comment: “preservation of coherent objects”.
 
 > **Stacks Project, Tag 0A89.** `D = R𝓗om_{𝒪_X}(-, K)` carries `D_Coh(𝒪_X)` into
 > `D_Coh(𝒪_X)`, for `K` a dualizing complex on a locally Noetherian scheme `X`.
@@ -292,7 +292,7 @@ theorem derivedCategoryB_isCoherent_dualizingDerivedSheafHom
       ((dualizingDerivedSheafHomFunctor X K).obj (op L))
 ```
 
-**`Stacks.Duality.mem_coherentDerivedCategory_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedSubcategory.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedSubcategory.lean#L69). The attribute's comment: “K is an object of D\_Coh(O\_X)”.
+**`Stacks.Duality.mem_coherentDerivedCategory_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedSubcategory.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDerivedSubcategory.lean#L69). The attribute's comment: “K is an object of D\_Coh(O\_X)”.
 
 > A dualizing complex on a locally Noetherian scheme is an object of `D_Coh(𝒪_X)`: every one of
 > its cohomology sheaves is coherent.
@@ -303,7 +303,7 @@ theorem mem_coherentDerivedCategory_of_isDualizingComplex {K : DerivedCategory X
     DerivedCategoryB.derivedCategoryB (A := X.Modules) (isCoherentSheaf X) K
 ```
 
-**`Stacks.Duality.coherentDuality_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDuality.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDuality.lean#L226).
+**`Stacks.Duality.coherentDuality_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDuality.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDuality.lean#L226).
 
 > Let `K` be a dualizing complex on a locally Noetherian scheme
 > `X`. Then `K` is an object of `D_Coh(𝒪_X)`, and `D = R𝓗om(-, K)` carries `D_Coh(𝒪_X)` into itself
@@ -335,7 +335,7 @@ theorem coherentDuality_spec :
 
 [Tag 0ATP](https://stacks.math.columbia.edu/tag/0ATP) in the Stacks Project.
 
-**`Stacks.Duality.exists_isInvertible_tensor_iso_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingComplexUniqueness.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingComplexUniqueness.lean#L140).
+**`Stacks.Duality.exists_isInvertible_tensor_iso_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingComplexUniqueness.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DualizingComplexUniqueness.lean#L140).
 
 > **[Stacks, Tag 0ATP].** Let `X` be a locally Noetherian scheme and let `K`, `K'` be dualizing
 > complexes on `X` ([Stacks, Tag 0A87]). Then `K'` is isomorphic to `K ⊗^𝐋_{𝒪_X} L` for some
@@ -361,7 +361,7 @@ theorem exists_isInvertible_tensor_iso_of_isDualizingComplex [IsLocallyNoetheria
 
 [Tag 0AWF](https://stacks.math.columbia.edu/tag/0AWF) in the Stacks Project.
 
-**`Stacks.Duality.isUniversallyCatenary_and_isDimensionFunction_associatedShiftFunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DerivedStalkModel.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DerivedStalkModel.lean#L532).
+**`Stacks.Duality.isUniversallyCatenary_and_isDimensionFunction_associatedShiftFunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DerivedStalkModel.lean, line 532](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DerivedStalkModel.lean#L532).
 
 > Let `X` be a locally Noetherian scheme and `K` a dualizing complex on `X`. Then `X` is
 > universally catenary, and the function `δ : X → ℤ` defined by `x ↦ δ(x)` such that
@@ -387,7 +387,7 @@ theorem isUniversallyCatenary_and_isDimensionFunction_associatedShiftFunction
 
 [Tag 0ECM](https://stacks.math.columbia.edu/tag/0ECM) in the Stacks Project.
 
-**`Stacks.Duality.extSheaf_stalk_degree_range_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean#L87). The attribute's comment: “clause (1): E^i\_x ≠ 0 → δ(x) ≤ i ≤ δ(x) + dim Supp(F\_x), for E^i the Ext sheaf Ext^\{-i}(F, K) of a dualizing complex K with its associated dimension function δ”.
+**`Stacks.Duality.extSheaf_stalk_degree_range_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean#L87). The attribute's comment: “clause (1): E^i\_x ≠ 0 → δ(x) ≤ i ≤ δ(x) + dim Supp(F\_x), for E^i the Ext sheaf Ext^\{-i}(F, K) of a dualizing complex K with its associated dimension function δ”.
 
 > **Stacks Project, Tag 0ECM, clause (1).** For a coherent module `F` on a locally Noetherian
 > scheme and a dualizing complex `K` with associated dimension function `δ`, a nonzero stalk of the
@@ -404,7 +404,7 @@ theorem extSheaf_stalk_degree_range_of_isDualizingComplex (F : X.Modules)
         i ≤ associatedShiftFunction K x + d
 ```
 
-**`Stacks.Duality.supportDim_extSheaf_stalk_le_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean#L101). The attribute's comment: “clause (2): dim Supp(E^\{i + δ(x)}\_x) ≤ i, for E^i the Ext sheaf Ext^\{-i}(F, K) of a dualizing complex K with its associated dimension function δ”.
+**`Stacks.Duality.supportDim_extSheaf_stalk_le_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean#L101). The attribute's comment: “clause (2): dim Supp(E^\{i + δ(x)}\_x) ≤ i, for E^i the Ext sheaf Ext^\{-i}(F, K) of a dualizing complex K with its associated dimension function δ”.
 
 > **Stacks Project, Tag 0ECM, clause (2).** The stalk of `𝓔^{i + δ(x)}` at `x` has support of
 > dimension at most `i`; for `i < 0` the bound is `⊥`, which says that the stalk vanishes.
@@ -418,7 +418,7 @@ theorem supportDim_extSheaf_stalk_le_of_isDualizingComplex (F : X.Modules)
       if 0 ≤ i then ((i.toNat : ℕ∞) : WithBot ℕ∞) else ⊥
 ```
 
-**`Stacks.Duality.depth_stalk_eq_iInf_nontrivial_extSheaf_stalk_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean#L114). The attribute's comment: “clause (3): depth(F\_x) = least i ≥ 0 with E^\{i + δ(x)}\_x ≠ 0, for E^i the Ext sheaf Ext^\{-i}(F, K) of a dualizing complex K with its associated dimension function δ”.
+**`Stacks.Duality.depth_stalk_eq_iInf_nontrivial_extSheaf_stalk_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean#L114). The attribute's comment: “clause (3): depth(F\_x) = least i ≥ 0 with E^\{i + δ(x)}\_x ≠ 0, for E^i the Ext sheaf Ext^\{-i}(F, K) of a dualizing complex K with its associated dimension function δ”.
 
 > **Stacks Project, Tag 0ECM, clause (3).** The depth of `F_x` is the least `i ≥ 0` for which the
 > stalk of `𝓔^{i + δ(x)}` at `x` is nonzero. If all of these stalks vanish, both sides are `⊤`.
@@ -433,7 +433,7 @@ theorem depth_stalk_eq_iInf_nontrivial_extSheaf_stalk_of_isDualizingComplex (F :
         ↑((extSheafOf F K ((k : ℤ) + associatedShiftFunction K x)).presheaf.stalk x)), (k : ℕ∞)
 ```
 
-**`Stacks.Duality.exists_nontrivial_extSheaf_stalk_iff_depth_add_le_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean#L129). The attribute's comment: “clause (4): x ∈ Supp(⊕\_\{j ≤ i} E^j) ↔ depth(F\_x) + δ(x) ≤ i, for E^i the Ext sheaf Ext^\{-i}(F, K) of a dualizing complex K with its associated dimension function δ”.
+**`Stacks.Duality.exists_nontrivial_extSheaf_stalk_iff_depth_add_le_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafClauses.lean#L129). The attribute's comment: “clause (4): x ∈ Supp(⊕\_\{j ≤ i} E^j) ↔ depth(F\_x) + δ(x) ≤ i, for E^i the Ext sheaf Ext^\{-i}(F, K) of a dualizing complex K with its associated dimension function δ”.
 
 > **Stacks Project, Tag 0ECM, clause (4).** A point `x` lies in the support of `⨁_{j ≤ i} 𝓔^j` —
 > that is, some `𝓔^j` with `j ≤ i` has nonzero stalk at `x` — exactly when the depth of `F_x` is
@@ -449,7 +449,7 @@ theorem exists_nontrivial_extSheaf_stalk_iff_depth_add_le_of_isDualizingComplex 
           (n : ℤ) + associatedShiftFunction K x ≤ i
 ```
 
-**`Stacks.Duality.isCoherent_extSheafOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafCoherent.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafCoherent.lean#L99). The attribute's comment: “the coherence assertion: for F coherent on a locally Noetherian scheme and K a dualizing complex, each Ext sheaf E^i = Ext^\{-i}(F, K) is a coherent O\_X-module”. References: SGA 6 I (3.7), “Clause b), special case”.
+**`Stacks.Duality.isCoherent_extSheafOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafCoherent.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafCoherent.lean#L99). The attribute's comment: “the coherence assertion: for F coherent on a locally Noetherian scheme and K a dualizing complex, each Ext sheaf E^i = Ext^\{-i}(F, K) is a coherent O\_X-module”. References: SGA 6 I (3.7), “Clause b), special case”.
 
 > **The first assertion of [Stacks, Tag 0ECM].** Let `X` be a locally Noetherian scheme, `K` a
 > dualizing complex on `X` and `F` a coherent `𝒪_X`-module. Then every Ext sheaf
@@ -461,7 +461,7 @@ theorem isCoherent_extSheafOf (F : X.Modules) [hF : _root_.SheafOfModules.IsCohe
     _root_.SheafOfModules.IsCoherent (extSheafOf F K i)
 ```
 
-**`Stacks.Duality.extSheaf_stalk_degree_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean#L112). The attribute's comment: “clause (1): E^i\_x ≠ 0 → δ(x) ≤ i ≤ δ(x) + dim Supp(F\_x), given IsStalkwiseDualExt”.
+**`Stacks.Duality.extSheaf_stalk_degree_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean#L112). The attribute's comment: “clause (1): E^i\_x ≠ 0 → δ(x) ≤ i ≤ δ(x) + dim Supp(F\_x), given IsStalkwiseDualExt”.
 
 > **Stacks Project, Tag 0ECM, clause (1).** For a coherent module `F` on a locally Noetherian
 > scheme and a dualizing complex `K` with dimension function `δ`, a nonzero stalk of the Ext sheaf
@@ -477,7 +477,7 @@ theorem extSheaf_stalk_degree_range (F : X.Modules) [_root_.SheafOfModules.IsCoh
         i ≤ δ x + d
 ```
 
-**`Stacks.Duality.supportDim_extSheaf_stalk_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean#L130). The attribute's comment: “clause (2): dim Supp(E^\{i + δ(x)}\_x) ≤ i, given IsStalkwiseDualExt”.
+**`Stacks.Duality.supportDim_extSheaf_stalk_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean#L130). The attribute's comment: “clause (2): dim Supp(E^\{i + δ(x)}\_x) ≤ i, given IsStalkwiseDualExt”.
 
 > **Stacks Project, Tag 0ECM, clause (2).** The stalk of `𝓔^{i + δ(x)}` at `x` has support of
 > dimension at most `i`; for `i < 0` the bound is `⊥`, which says that the stalk vanishes.
@@ -490,7 +490,7 @@ theorem supportDim_extSheaf_stalk_le (F : X.Modules) [_root_.SheafOfModules.IsCo
       if 0 ≤ i then ((i.toNat : ℕ∞) : WithBot ℕ∞) else ⊥
 ```
 
-**`Stacks.Duality.depth_stalk_eq_iInf_nontrivial_extSheaf_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean#L145). The attribute's comment: “clause (3): depth(F\_x) = least i ≥ 0 with E^\{i + δ(x)}\_x ≠ 0, given IsStalkwiseDualExt”.
+**`Stacks.Duality.depth_stalk_eq_iInf_nontrivial_extSheaf_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean#L145). The attribute's comment: “clause (3): depth(F\_x) = least i ≥ 0 with E^\{i + δ(x)}\_x ≠ 0, given IsStalkwiseDualExt”.
 
 > **Stacks Project, Tag 0ECM, clause (3).** The depth of `F_x` is the least `i ≥ 0` for which
 > the stalk of `𝓔^{i + δ(x)}` at `x` is nonzero.  If all of these stalks vanish, both sides are
@@ -505,7 +505,7 @@ theorem depth_stalk_eq_iInf_nontrivial_extSheaf_stalk (F : X.Modules)
       ⨅ (k : ℕ) (_ : Nontrivial ↑((E ((k : ℤ) + δ x)).presheaf.stalk x)), (k : ℕ∞)
 ```
 
-**`Stacks.Duality.exists_nontrivial_extSheaf_stalk_iff_depth_add_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean#L166). The attribute's comment: “clause (4): x ∈ Supp(⊕\_\{j ≤ i} E^j) ↔ depth(F\_x) + δ(x) ≤ i, given IsStalkwiseDualExt”.
+**`Stacks.Duality.exists_nontrivial_extSheaf_stalk_iff_depth_add_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/ExtSheafDepthDimension.lean#L166). The attribute's comment: “clause (4): x ∈ Supp(⊕\_\{j ≤ i} E^j) ↔ depth(F\_x) + δ(x) ≤ i, given IsStalkwiseDualExt”.
 
 > **Stacks Project, Tag 0ECM, clause (4).** A point `x` lies in the support of
 > `⨁_{j ≤ i} 𝓔^j` — that is, some `𝓔^j` with `j ≤ i` has nonzero stalk at `x` — exactly when the
@@ -528,4 +528,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.2, Tag 0A85](https://stacks.math.columbia.edu/tag/0A85)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

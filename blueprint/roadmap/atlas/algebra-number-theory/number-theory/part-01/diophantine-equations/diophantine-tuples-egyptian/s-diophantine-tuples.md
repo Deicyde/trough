@@ -7,7 +7,7 @@ statement: formalized
 
 # S-Diophantine tuples
 
-13 results, 3 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html).
+13 results, 4 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html).
 
 ## $S$-Diophantine tuples
 
@@ -20,7 +20,7 @@ distinct positive integers is encoded by the set of its entries, which has $m$ e
 
 - Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Section 1 (definition of `S`-Diophantine `m`-tuples).
 
-Formalized by `MetaMathlibExt.IsSDiophantineTuple`, a definition declared in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#is-sdiophantine-tuple).
+Formalized by `MetaMathlibExt.IsSDiophantineTuple`, a definition declared in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#is-sdiophantine-tuple).
 
 ## $(1, 3)$ is a $\{2\}$-Diophantine pair
 
@@ -31,7 +31,7 @@ tuple, since $1 \cdot 3 + 1 = 2^2$.
 
 - Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Section 1 (definition of `S`-Diophantine `m`-tuples).
 
-Formalized by `MetaMathlibExt.isSDiophantineTuple_two_one_three`, a theorem declared in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#is-sdiophantine-tuple-two-one-three).
+Formalized by `MetaMathlibExt.isSDiophantineTuple_two_one_three`, a theorem declared in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#is-sdiophantine-tuple-two-one-three).
 
 ## $(1, 3, 8)$ is a $\{2, 3, 5\}$-Diophantine triple
 
@@ -43,7 +43,7 @@ $3 \cdot 8 + 1 = 5^2$.
 
 - Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Section 1 (definition of `S`-Diophantine `m`-tuples).
 
-Formalized by `MetaMathlibExt.isSDiophantineTuple_two_three_five_one_three_eight`, a theorem declared in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#is-sdiophantine-tuple-two-three-five-one).
+Formalized by `MetaMathlibExt.isSDiophantineTuple_two_three_five_one_three_eight`, a theorem declared in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#is-sdiophantine-tuple-two-three-five-one).
 
 ## $ac + 1$ does not divide $bc + 1$
 
@@ -56,7 +56,7 @@ The source states this for $S$-Diophantine triples; that hypothesis is not neede
 
 - Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 1, quoting Szalay and Ziegler (2013), Lemma 2.1.
 
-Stated but not proved: `MetaMathlibExt.not_mul_add_one_dvd_mul_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#not-mul-add-one-dvd-mul-add-one).
+Formalized by `MetaMathlibExt.not_mul_add_one_dvd_mul_add_one`, a theorem declared in [MathlibExt/NumberTheory/PQDiophantineTuples.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PQDiophantineTuples.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#not-mul-add-one-dvd-mul-add-one).
 
 ## The two smallest valuations coincide
 
@@ -74,7 +74,7 @@ identities $abcd = (s_1 - 1)(s_6 - 1) = (s_2 - 1)(s_5 - 1) = (s_3 - 1)(s_4 - 1)$
 
 - Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 2, quoting Szalay and Ziegler (2013), Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.padicValNat_two_smallest_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#padic-val-nat-two-smallest-eq).
+Stated but not proved: `MetaMathlibExt.padicValNat_two_smallest_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#padic-val-nat-two-smallest-eq).
 
 ## $a$, $b$, $c$, $d$ divide gcds of reduced differences
 
@@ -90,7 +90,7 @@ The source assumes that $\{a, b, c, d\}$ is $S$-Diophantine; that hypothesis is 
 
 - Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 3, quoting Szalay and Ziegler (2013), Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.dvd_gcd_sub_div_gcd` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#dvd-gcd-sub-div-gcd).
+Stated but not proved: `MetaMathlibExt.dvd_gcd_sub_div_gcd` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#dvd-gcd-sub-div-gcd).
 
 ## The Szalay–Ziegler system (4) has no solutions
 
@@ -106,7 +106,7 @@ Any solution would make $\{a, b, c, d\}$ a $\{p, q\}$-Diophantine quadruple.
 
 - Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 4, System (4), quoting Szalay and Ziegler, INTEGERS 13 (2013), Section 4.
 
-Stated but not proved: `MetaMathlibExt.not_exists_sDiophantine_system_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#not-exists-s-diophantine-system-four).
+Stated but not proved: `MetaMathlibExt.not_exists_sDiophantine_system_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#not-exists-s-diophantine-system-four).
 
 ## Exponent cases for $\{p, q\}$-Diophantine quadruples with $p \equiv 3 \pmod 4$
 
@@ -130,7 +130,7 @@ These are the four cases of Table 1 of the source.
 
 - Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 5 and Table 1, quoting Ziegler, Glas. Mat. 54 (2019), Proposition 5.1.
 
-Stated but not proved: `MetaMathlibExt.sDiophantine_quadruple_exponent_cases` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#s-diophantine-quadruple-exponent-cases).
+Stated but not proved: `MetaMathlibExt.sDiophantine_quadruple_exponent_cases` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#s-diophantine-quadruple-exponent-cases).
 
 ## No $\{p, q\}$-Diophantine quadruple when $p$ or $q$ is $3$ modulo $4$
 
@@ -142,7 +142,7 @@ numbers is a $\{p, q\}$-Diophantine tuple; that is, there is no $\{p, q\}$-Dioph
 
 - Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.not_exists_sDiophantine_quadruple_of_mod_four_eq_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#not-exists-s-diophantine-quadruple-of-mo).
+Stated but not proved: `MetaMathlibExt.not_exists_sDiophantine_quadruple_of_mod_four_eq_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#not-exists-s-diophantine-quadruple-of-mo).
 
 ## There is no $\{p, q\}$-Diophantine quintuple
 
@@ -154,7 +154,7 @@ $\{p, q\}$-Diophantine quintuple.
 
 - Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.not_exists_sDiophantine_quintuple` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#not-exists-s-diophantine-quintuple).
+Stated but not proved: `MetaMathlibExt.not_exists_sDiophantine_quintuple` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#not-exists-s-diophantine-quintuple).
 
 ## Bounds in Case III for $\{p, q\}$-Diophantine quadruples
 
@@ -172,7 +172,7 @@ $d < 1.03\, q^{2(\beta' - \beta)}$ and $b < 1.03\, q^{\beta' - \beta}$.
 
 - Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.sDiophantine_quadruple_caseIII_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#s-diophantine-quadruple-case-iii-bounds).
+Stated but not proved: `MetaMathlibExt.sDiophantine_quadruple_caseIII_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#s-diophantine-quadruple-case-iii-bounds).
 
 ## Bound on $b$ in Case IV for $\{p, q\}$-Diophantine quadruples
 
@@ -192,7 +192,7 @@ $\beta_1 > 0$.
 
 - Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.sDiophantine_quadruple_caseIV_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#s-diophantine-quadruple-case-iv-bound).
+Stated but not proved: `MetaMathlibExt.sDiophantine_quadruple_caseIV_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#s-diophantine-quadruple-case-iv-bound).
 
 ## The fourteen exponent cases for $\{p, q\}$-Diophantine quadruples
 
@@ -224,7 +224,7 @@ These are the cases of Table 2 of the source.
 
 - Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Proposition 1 and Table 2.
 
-Stated but not proved: `MetaMathlibExt.sDiophantine_quadruple_fourteen_cases` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#s-diophantine-quadruple-fourteen-cases).
+Stated but not proved: `MetaMathlibExt.sDiophantine_quadruple_fourteen_cases` is written with `theorem_wanted` in [WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html#s-diophantine-quadruple-fourteen-cases).
 
 ## Depends on
 
@@ -233,4 +233,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: S-Diophantine tuples](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/s-diophantine-tuples)

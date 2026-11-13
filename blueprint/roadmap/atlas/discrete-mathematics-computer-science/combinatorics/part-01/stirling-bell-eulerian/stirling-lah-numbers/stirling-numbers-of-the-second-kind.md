@@ -8,7 +8,7 @@ proof: formalized
 
 # Stirling numbers of the second kind
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-second-kind/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-second-kind/index.html).
 
 ## Addition formula for Stirling numbers of the second kind
 
@@ -27,7 +27,7 @@ $S(0,1) = 0$.
 
 - Grzegorz Rządkowski, "Two Formulas for Successive Derivatives and Their Applications," Journal of Integer Sequences 12 (2009), Article 09.8.2, Theorem, equation (ex33), lines 198–204, https://cs.uwaterloo.ca/journals/JIS/VOL12/Rzadkowski/rzadkowski3.tex
 
-Formalized by `MetaMathlibExt.stirlingSecond_addition`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingSecondAddition.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/StirlingSecondAddition.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-second-kind/index.html#stirling-second-addition).
+Formalized by `MetaMathlibExt.stirlingSecond_addition`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingSecondAddition.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingSecondAddition.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-second-kind/index.html#stirling-second-addition).
 
 ## Explicit formula for Stirling numbers of the second kind
 
@@ -42,7 +42,7 @@ with the convention $0^0 = 1$.
 
 - R. L. Graham, D. E. Knuth, and O. Patashnik, *Concrete Mathematics*, 2nd ed., Section 6.1.
 
-Formalized by `MetaMathlibExt.stirlingSecond_mul_factorial_eq_sum`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingSecondExplicit.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/StirlingSecondExplicit.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-second-kind/index.html#stirling-second-mul-factorial-eq-sum).
+Formalized by `MetaMathlibExt.stirlingSecond_mul_factorial_eq_sum`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingSecondExplicit.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingSecondExplicit.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-second-kind/index.html#stirling-second-mul-factorial-eq-sum).
 
 ## Exponential generating function of a shifted Stirling column
 
@@ -58,7 +58,7 @@ converges unconditionally to $e^x (e^x - 1)^j / j!$.
 
 - R. L. Graham, D. E. Knuth, and O. Patashnik, *Concrete Mathematics*, 2nd ed., Section 7.6 (the column generating function `(e^x - 1)^(j+1)/(j+1)!`, differentiated).
 
-Formalized by `MetaMathlibExt.hasSum_stirlingSecond_succ_egf`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingSecondExplicit.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/StirlingSecondExplicit.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-second-kind/index.html#has-sum-stirling-second-succ-egf).
+Formalized by `MetaMathlibExt.hasSum_stirlingSecond_succ_egf`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingSecondExplicit.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingSecondExplicit.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-second-kind/index.html#has-sum-stirling-second-succ-egf).
 
 ## Depends on
 
@@ -67,4 +67,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Stirling numbers of the second kind](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-second-kind/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-second-kind)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-second-kind)

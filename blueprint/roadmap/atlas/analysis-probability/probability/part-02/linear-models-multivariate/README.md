@@ -1,6 +1,6 @@
 # Linear models and multivariate analysis
 
-85 results of ATLAS's vault, 81 proved and 4 stated but not proved, in this branch's topics.
+85 results of ATLAS's vault, 84 proved and 1 stated but not proved, in this branch's topics.
 
 Multivariate normal theory and linear models: Gaussian maximum likelihood, Cochran's theorem on quadratic forms, t and F sampling laws, Gauss–Markov and generalized least squares, principal component analysis, and Gaussian graphical models.
 

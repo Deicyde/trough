@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.27 Other applications
 
-Section 75.27 of the Stacks Project, [Tag 0CRT](https://stacks.math.columbia.edu/tag/0CRT). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 75.27 of the Stacks Project, [Tag 0CRT](https://stacks.math.columbia.edu/tag/0CRT). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CRU, a lemma
 
 [Tag 0CRU](https://stacks.math.columbia.edu/tag/0CRU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.countable_cohomology_derivedTensor_and_ext_of_qcqs_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableCohomologyAndExtQcqsEtale.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableCohomologyAndExtQcqsEtale.lean#L76).
+**`AlgebraicGeometry.Space.countable_cohomology_derivedTensor_and_ext_of_qcqs_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableCohomologyAndExtQcqsEtale.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableCohomologyAndExtQcqsEtale.lean#L76).
 
 > **Stacks 0CRU.** Let `X` be a quasi-compact quasi-separated algebraic space over `S`, let `K`
 > be an object of `D_QCoh(𝒪_X)` such that the cohomology sheaves `H^q(K)` have countable sets of
@@ -36,8 +36,7 @@ Section 75.27 of the Stacks Project, [Tag 0CRT](https://stacks.math.columbia.edu
 
 ```lean
 theorem countable_cohomology_derivedTensor_and_ext_of_qcqs_etale
-    (X : AlgebraicSpaces B S hS) (hXqc : IsQuasiCompactSpace B S hS X.1)
-    (hXqs : IsAbsolutelyQuasiSeparated B S hS B.contains_terminal X.1)
+    (X : AlgebraicSpaces B S hS)
     (K : QuasicoherentDerivedCategory.{u, u} B S hS X.1 X.2) :
     letI := HasDerivedCategory.standard (Modules.{u, u} B S hS X.1 X.2)
     (∀ v : SmallEtale B S hS X.1, IsAffineChart B S hS X.1 v → ∀ q : ℤ,
@@ -58,7 +57,7 @@ theorem countable_cohomology_derivedTensor_and_ext_of_qcqs_etale
           ((etaleModulePullback.{u, u} B S hS U.1.hom U.2).mapDerivedCategory.obj K.obj) i)
 ```
 
-**`AlgebraicGeometry.Space.hasCountableCohomology_derivedTensor_restrict_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableSectionsDerivedTensorPerfect.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableSectionsDerivedTensorPerfect.lean#L405). The attribute's comment: “the sets H^i(U, K ⊗^𝐋 E)”.
+**`AlgebraicGeometry.Space.hasCountableCohomology_derivedTensor_restrict_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableSectionsDerivedTensorPerfect.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableSectionsDerivedTensorPerfect.lean#L405). The attribute's comment: “the sets H^i(U, K ⊗^𝐋 E)”.
 
 > Let `X` be a quasi-compact quasi-separated algebraic space over `S`, let `K` be an object of
 > `D_QCoh(𝒪_X)` whose cohomology sheaves have countable sets of sections over the affine schemes
@@ -67,8 +66,7 @@ theorem countable_cohomology_derivedTensor_and_ext_of_qcqs_etale
 
 ```lean
 theorem hasCountableCohomology_derivedTensor_restrict_of_isPerfect
-    (hZ : B.Contains (⊤_ Scheme.{u})) (hXqc : IsQuasiCompactSpace B S hS X.1)
-    (hXqs : IsAbsolutelyQuasiSeparated B S hS hZ X.1)
+    (hZ : B.Contains (⊤_ Scheme.{u}))
     (T : Stacks.SheafOfModules.DerivedTensorProduct.{u + 1, u, u, u + 1}
       (smallEtaleRingedSite B S hS X.1 X.2))
     (K : DerivedCategory (Modules.{u, u} B S hS X.1 X.2))
@@ -86,7 +84,7 @@ theorem hasCountableCohomology_derivedTensor_restrict_of_isPerfect
         ((T.tensor.obj K).obj E)))
 ```
 
-**`AlgebraicGeometry.Space.countable_ext_of_qcqs_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableSectionsEtale.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableSectionsEtale.lean#L161). The attribute's comment: “the sets Ext^i(E|\_U, K|\_U)”.
+**`AlgebraicGeometry.Space.countable_ext_of_qcqs_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableSectionsEtale.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableSectionsEtale.lean#L159). The attribute's comment: “the sets Ext^i(E|\_U, K|\_U)”.
 
 > **Stacks 0CRU, the clause on `Ext^i(E|_U, K|_U)`.** Let `X` be a quasi-compact
 > quasi-separated algebraic space over `S`, let `K` be an object of `D_QCoh(𝒪_X)` and let `E` be a
@@ -116,8 +114,6 @@ theorem hasCountableCohomology_derivedTensor_restrict_of_isPerfect
 
 ```lean
 theorem countable_ext_of_qcqs_etale (hZ : B.Contains (⊤_ Scheme.{u}))
-    (hXqc : IsQuasiCompactSpace B S hS X.obj)
-    (hXqs : IsAbsolutelyQuasiSeparated B S hS hZ X.obj)
     (K : QuasicoherentDerivedCategory.{u, u} B S hS X.obj X.property)
     (E : DerivedCategory (Modules.{u, u} B S hS X.obj X.property))
     (_hE : RingedSite.IsPerfect (smallEtaleRingedSite B S hS X.obj X.property) E)
@@ -154,7 +150,7 @@ theorem countable_ext_of_qcqs_etale (hZ : B.Contains (⊤_ Scheme.{u}))
       i)
 ```
 
-**`AlgebraicGeometry.Space.countable_ext_etaleRestrict_of_countable_sections_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtRestrictCountableSectionsPerfect.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtRestrictCountableSectionsPerfect.lean#L152). The attribute's comment: “the sets Ext^i(E|\_U, K|\_U), at the tag's own hypotheses; the H^i(U, K ⊗^𝐋 E) clause is `AlgebraicGeometry.Space.hasCountableCohomology_derivedTensor_restrict_of_isPerfect`”.
+**`AlgebraicGeometry.Space.countable_ext_etaleRestrict_of_countable_sections_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtRestrictCountableSectionsPerfect.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtRestrictCountableSectionsPerfect.lean#L152). The attribute's comment: “the sets Ext^i(E|\_U, K|\_U), at the tag's own hypotheses; the H^i(U, K ⊗^𝐋 E) clause is `AlgebraicGeometry.Space.hasCountableCohomology_derivedTensor_restrict_of_isPerfect`”.
 
 > **The `Ext` clause of [Stacks, Tag 0CRU].**  Let `X` be a quasi-compact absolutely
 > quasi-separated algebraic space over `S`, let `K` be an object of `D_QCoh(𝒪_X)` whose cohomology
@@ -174,8 +170,6 @@ theorem countable_ext_of_qcqs_etale (hZ : B.Contains (⊤_ Scheme.{u}))
 ```lean
 theorem countable_ext_etaleRestrict_of_countable_sections_of_isPerfect
     (X : AlgebraicSpaces B S hS) (hZ : B.Contains (⊤_ Scheme.{u}))
-    (hXqc : IsQuasiCompactSpace B S hS X.1)
-    (hXqs : IsAbsolutelyQuasiSeparated B S hS hZ X.1)
     (K : DerivedCategory (Modules.{u, u} B S hS X.1 X.2))
     (hqcK : ∀ q : ℤ, ((DerivedCategory.homologyFunctor (Modules.{u, u} B S hS X.1 X.2) q).obj
       K).IsQuasicoherentOnSite)
@@ -197,13 +191,13 @@ theorem countable_ext_etaleRestrict_of_countable_sections_of_isPerfect
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.exists_isHomotopyColimit_isPerfect_iff_countable`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableHomotopyColimit.lean#L379), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountablePseudoCoherentDualityTags.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountablePseudoCoherentDualityTags.lean#L34) (StacksFrontier).
+- [`AlgebraicGeometry.Space.exists_isHomotopyColimit_isPerfect_iff_countable`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableHomotopyColimit.lean#L379), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountablePseudoCoherentDualityTags.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountablePseudoCoherentDualityTags.lean#L34) (StacksFrontier).
 
 ## Tag 0CRW, a lemma
 
 [Tag 0CRW](https://stacks.math.columbia.edu/tag/0CRW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isHomotopyColimitCocone_derivedSections_tensor_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FlatPullbackSectionsHomotopyColimit.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FlatPullbackSectionsHomotopyColimit.lean#L77). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.exists_isHomotopyColimitCocone_derivedSections_tensor_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FlatPullbackSectionsHomotopyColimit.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FlatPullbackSectionsHomotopyColimit.lean#L77). The attribute's comment: “part (2)”.
 
 > **Stacks 0CRW (2).** Let `A` be a ring and `f : U ⟶ X` a flat morphism of algebraic spaces
 > of finite presentation over `A`. There is a system `(Eₙ)` of perfect objects of `D(𝒪_X)` with
@@ -235,7 +229,7 @@ theorem exists_isHomotopyColimitCocone_derivedSections_tensor_of_isFlat
             fun n ↦ (ι n).app K
 ```
 
-**`AlgebraicGeometry.Space.exists_isHomotopyColimitCocone_derivedHom_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FlatPullbackSectionsHomotopyColimit.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FlatPullbackSectionsHomotopyColimit.lean#L114). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.exists_isHomotopyColimitCocone_derivedHom_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FlatPullbackSectionsHomotopyColimit.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/FlatPullbackSectionsHomotopyColimit.lean#L114). The attribute's comment: “part (1)”.
 
 > **Stacks 0CRW (1).** Let `A` be a ring and `f : U ⟶ X` a flat morphism of algebraic spaces
 > of finite presentation over `A`. There is an inverse system `(Lₙ)` of perfect objects of
@@ -275,4 +269,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.27, Tag 0CRT](https://stacks.math.columbia.edu/tag/0CRT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

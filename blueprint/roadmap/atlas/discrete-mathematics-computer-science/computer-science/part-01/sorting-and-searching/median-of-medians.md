@@ -8,7 +8,7 @@ proof: formalized
 
 # Median of medians
 
-23 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html).
+23 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html).
 
 ## Group medians for median-of-medians selection
 
@@ -18,21 +18,21 @@ Sort each block $g$ by insertion sort and return, in block order, the entry at p
 $\lfloor (|g| - 1)/2 \rfloor$ (counting from $0$) of each sorted block, that is, its lower
 median. The cost is the total number of comparisons made by these insertion sorts.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMediansGroups`, a definition declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-groups).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMediansGroups`, a definition declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-groups).
 
 ## Comparison cost of the group medians
 
 For every list $xs$ of length $n$ over a linear
 order, computing the group medians of $xs$ takes at most $2n$ comparisons.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMediansGroups_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-groups-time).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMediansGroups_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-groups-time).
 
 ## Group medians come from the input
 
 For every list $xs$ over a linear order, every
 entry of the list of group medians of $xs$ is an element of $xs$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMediansGroups_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-groups-mem).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMediansGroups_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-groups-mem).
 
 ## Group medians are lower medians of their blocks
 
@@ -43,7 +43,7 @@ $x_1, \dots, x_m$, and for each $i$, writing $k_i = \lfloor (|g_i| - 1)/2 \rfloo
 elements of $g_i$ with multiplicity: $x_i$ belongs to $g_i$, at most $k_i$ elements of $g_i$
 are less than $x_i$, and more than $k_i$ elements of $g_i$ are less than or equal to $x_i$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMediansGroups_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-groups-correct).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMediansGroups_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-groups-correct).
 
 ## Number of group medians
 
@@ -51,7 +51,7 @@ For every list $xs$ of length $n$ over a linear order, the
 list of group medians of $xs$ has exactly $\lfloor (n + 4)/5 \rfloor = \lceil n/5 \rceil$
 entries.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMediansGroups_length`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-groups-length).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMediansGroups_length`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians/Groups.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-groups-length).
 
 ## Median-of-medians selection
 
@@ -69,7 +69,7 @@ to $x$ and above $x$, with $b$ entries below and $e$ equal. If the current rank 
 $r < b$ it recurses on the lower part with rank $r$; if $b \le r < b + e$ it returns $x$;
 otherwise it recurses on the upper part with rank $r - b - e$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians`, a definition declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians`, a definition declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians).
 
 ## Median-of-medians selection is quickselect on short lists
 
@@ -78,7 +78,7 @@ at most $140$ over a linearly ordered type and every natural number $k$, median-
 selection of rank $k$ in $L$ coincides with timed quickselect of rank $k$ in $L$: both return
 the same result and are charged the same number of comparisons.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_eq_quickselect_of_length_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-eq-quickselect-of-leng).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_eq_quickselect_of_length_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-eq-quickselect-of-leng).
 
 ## Out-of-range ranks cost no comparisons
 
@@ -86,7 +86,7 @@ For every list $L$ over a linearly ordered type
 and every natural number $k$ at least the length of $L$, median-of-medians selection of rank $k$
 in $L$ returns nothing and is charged zero comparisons.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_eq_pure_none_of_length_le_rank`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-eq-pure-none-of-length).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_eq_pure_none_of_length_le_rank`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-eq-pure-none-of-length).
 
 ## Comparison bound for median-of-medians selection on short lists
 
@@ -94,7 +94,7 @@ For every list $L$ of
 length $n \le 140$ over a linearly ordered type and every natural number $k$, median-of-medians
 selection of rank $k$ in $L$ is charged at most $80n$ comparisons.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_base_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-base-time).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_base_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-base-time).
 
 ## Correctness of median-of-medians selection on short lists
 
@@ -104,7 +104,7 @@ selection of rank $k$ in $L$ returns an element $x$, then $x$ occurs in $L$, the
 of $L$ less than $x$, counted with multiplicity, is at most $k$, and $k$ is less than the number
 of entries of $L$ that are at most $x$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_base_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-base-correct).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_base_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-base-correct).
 
 ## Correctness of median-of-medians selection
 
@@ -114,7 +114,7 @@ element $x$, then $x$ occurs in $L$, the number of entries of $L$ less than $x$,
 multiplicity, is at most $k$, and $k$ is less than the number of entries of $L$ that are at
 most $x$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-correct).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_correct`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-correct).
 
 ## Median-of-medians selection succeeds on valid ranks
 
@@ -122,7 +122,7 @@ For every list $L$ over a linearly
 ordered type and every natural number $k$ less than the length of $L$, median-of-medians
 selection of rank $k$ in $L$ returns some element.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_exists`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-exists).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_exists`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-exists).
 
 ## Median-of-medians selection fails exactly on out-of-range ranks
 
@@ -130,7 +130,7 @@ For every list $L$ over
 a linearly ordered type and every natural number $k$, median-of-medians selection of rank $k$ in
 $L$ returns nothing if and only if $k$ is at least the length of $L$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_eq_none_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-eq-none-iff).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_eq_none_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-eq-none-iff).
 
 ## Median-of-medians selection agrees with sorting
 
@@ -139,7 +139,7 @@ ordered type and every natural number $k$, median-of-medians selection of rank $
 the entry at zero-based position $k$ of the insertion sort of $L$ by $\le$ when $k$ is less than
 the length of $L$, and returns nothing otherwise.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_eq_getElem?_insertionSort`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-eq-get-elem-insertion).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_eq_getElem?_insertionSort`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-eq-get-elem-insertion).
 
 ## Set rank of a median-of-medians result
 
@@ -147,7 +147,7 @@ Let $L$ be a list without repeated entries over a
 linear order and let $k \in \mathbb{N}$. If median-of-medians selection on $L$ at zero-based rank
 $k$ returns an element $x$, then the set $\{y \in L : y \le x\}$ has exactly $k + 1$ elements.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_set_rank`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-set-rank).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_set_rank`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-set-rank).
 
 ## One-based rank of a median-of-medians result
 
@@ -155,7 +155,7 @@ Let $L$ be a list without repeated entries
 over a linear order and let $i \ge 1$. If median-of-medians selection on $L$ at zero-based rank
 $i - 1$ returns an element $x$, then the set $\{y \in L : y \le x\}$ has exactly $i$ elements.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_source_rank`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-source-rank).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_source_rank`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-source-rank).
 
 ## Median of medians selects every one-based rank
 
@@ -164,7 +164,7 @@ entries over a linear order, of length $n$, and let $1 \le i \le n$. Then median
 selection on $L$ at zero-based rank $i - 1$ returns an element $x$ of $L$, and the set
 $\{y \in L : y \le x\}$ has exactly $i$ elements.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_source_exists`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-source-exists).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_source_exists`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-source-exists).
 
 ## Median of medians finds the lower median
 
@@ -174,7 +174,7 @@ zero-based rank $k$ returns an element $x$ of $L$ such that at most $k$ entries 
 than $x$ and more than $k$ entries of $L$ are at most $x$, where entries are counted with
 repetition.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_lower_median`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-lower-median).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_lower_median`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-lower-median).
 
 ## Median of medians finds the upper median
 
@@ -184,7 +184,7 @@ zero-based rank $k$ returns an element $x$ of $L$ such that at most $k$ entries 
 than $x$ and more than $k$ entries of $L$ are at most $x$, where entries are counted with
 repetition.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_upper_median`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-upper-median).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_upper_median`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-upper-median).
 
 ## Size budget for the two median-of-medians recursive calls
 
@@ -192,7 +192,7 @@ Let $n$, $m$ and $p$ be natural
 numbers with $n \ge 140$, $m \le \lfloor (n + 4)/5 \rfloor$ and
 $p \le \lfloor 7n/10 \rfloor + 6$. Then $20m + 20p + n \le 20n$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_child_size_budget`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-child-size-budget).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_child_size_budget`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-child-size-budget).
 
 ## Cost budget for one median-of-medians step
 
@@ -201,7 +201,7 @@ natural numbers with $n \ge 140$, $m \le \lfloor (n + 4)/5 \rfloor$,
 $p \le \lfloor 7n/10 \rfloor + 6$, $c_1 \le 20am$ and $c_2 \le 20ap$. Then
 $c_1 + c_2 + an \le 20an$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_combine_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 456](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L456). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-combine-time).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_combine_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 456](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L456). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-combine-time).
 
 ## Median of medians makes linearly many comparisons
 
@@ -211,7 +211,7 @@ charges at most $80n$ comparisons, where $n$ counts repeated entries.
 
 Only order comparisons are charged; list construction, rank checks and recursion are free.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 517](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L517). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-time).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 517](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L517). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-time).
 
 ## Linear solution of the median-of-medians recurrence
 
@@ -221,7 +221,7 @@ $n > 140$ there are $m, p \in \mathbb{N}$ with $m \le \lfloor (n + 4)/5 \rfloor$
 $p \le \lfloor 7n/10 \rfloor + 6$ and $T(n) \le T(m) + T(p) + an$. Then $T(n) \le 20an$ for
 every $n \in \mathbb{N}$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_linear_recurrence`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-linear-recurrence).
+Formalized by `Cslib.Algorithms.Lean.TimeM.medianOfMedians_linear_recurrence`, a theorem declared in [CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Selection/MedianOfMedians.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html#median-of-medians-linear-recurrence).
 
 ## Depends on
 
@@ -230,4 +230,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Median of medians](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/sorting-and-searching/median-of-medians/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/sorting-and-searching/median-of-medians)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/sorting-and-searching/median-of-medians)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.9 A pushout argument
 
-Section 88.9 of the Stacks Project, [Tag 0AK8](https://stacks.math.columbia.edu/tag/0AK8). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.9 of the Stacks Project, [Tag 0AK8](https://stacks.math.columbia.edu/tag/0AK8). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ALT, a lemma
 
 [Tag 0ALT](https://stacks.math.columbia.edu/tag/0ALT) in the Stacks Project.
 
-**`Stacks.Etale.exists_finiteType_etale_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PushoutLift/Main.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/PushoutLift/Main.lean#L381).
+**`Stacks.Etale.exists_finiteType_etale_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PushoutLift/Main.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/PushoutLift/Main.lean#L381).
 
 > **Stacks 0ALT.** Let `A` be a Noetherian ring, `I ⊆ A` an ideal and `J ⊆ A` a nilpotent
 > ideal, and consider a commutative diagram of finite type ring maps
@@ -65,7 +65,7 @@ theorem exists_finiteType_etale_lift
           Ideal.Quotient.mk (J.map (algebraMap A C)) (algebraMap B C b)
 ```
 
-**`Stacks.Etale.exists_finiteType_etale_lift_of_isNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PushoutLiftAcrossNilpotent.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/PushoutLiftAcrossNilpotent.lean#L182). The attribute's comment: “extra hypothesis: the ideal I·B₀ is nilpotent, equivalently the open set Spec(B₀) minus V(I·B₀) along which the source glues is empty; the conclusion is delivered in full”.
+**`Stacks.Etale.exists_finiteType_etale_lift_of_isNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PushoutLiftAcrossNilpotent.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/PushoutLiftAcrossNilpotent.lean#L182). The attribute's comment: “extra hypothesis: the ideal I·B₀ is nilpotent, equivalently the open set Spec(B₀) minus V(I·B₀) along which the source glues is empty; the conclusion is delivered in full”.
 
 > Let `A` be a Noetherian ring, `I ⊆ A` an ideal and `J ⊆ A` a nilpotent ideal, and consider a
 > commutative diagram of finite type ring maps
@@ -120,7 +120,7 @@ theorem exists_finiteType_etale_lift_of_isNilpotent
           Ideal.Quotient.mk (J.map (algebraMap A C)) (algebraMap B C b)
 ```
 
-**`Stacks.Etale.exists_finiteType_etale_lift_of_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PushoutLiftAcrossNilpotent.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/PushoutLiftAcrossNilpotent.lean#L233). The attribute's comment: “extra hypothesis: I·B₀ is the unit ideal of B₀, equivalently the closed set V(I·B₀) in Spec(B₀) along which the source glues is empty; the conclusion is delivered in full”.
+**`Stacks.Etale.exists_finiteType_etale_lift_of_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/PushoutLiftAcrossNilpotent.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/PushoutLiftAcrossNilpotent.lean#L233). The attribute's comment: “extra hypothesis: I·B₀ is the unit ideal of B₀, equivalently the closed set V(I·B₀) in Spec(B₀) along which the source glues is empty; the conclusion is delivered in full”.
 
 > The data and the conclusion are those of `exists_finiteType_etale_lift_of_isNilpotent`, with
 > the extra hypothesis `htop` that `I B₀` is the unit ideal, equivalently that the closed set
@@ -165,4 +165,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.9, Tag 0AK8](https://stacks.math.columbia.edu/tag/0AK8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

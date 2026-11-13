@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.19 Properties of morphisms local in the étale topology on the source
 
-Section 74.19 of the Stacks Project, [Tag 06F3](https://stacks.math.columbia.edu/tag/06F3). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 74.19 of the Stacks Project, [Tag 06F3](https://stacks.math.columbia.edu/tag/06F3). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06F4, a lemma
 
 [Tag 06F4](https://stacks.math.columbia.edu/tag/06F4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtale_isLocalAtSource_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Etale.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Etale.lean#L73).
+**`AlgebraicGeometry.Space.isEtale_isLocalAtSource_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Etale.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Etale.lean#L73).
 
 > **Stacks 06F4.** Étaleness of a morphism of algebraic spaces over `S` is local on the
 > source for the étale topology.
@@ -30,7 +30,7 @@ instance isEtale_isLocalAtSource_etale :
 
 [Tag 06F5](https://stacks.math.columbia.edu/tag/06F5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_isLocalAtSource_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Etale.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Etale.lean#L92).
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_isLocalAtSource_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Etale.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Etale.lean#L92).
 
 > **Stacks 06F5.** Local quasi-finiteness of a morphism of algebraic spaces over `S` is local
 > on the source for the étale topology.
@@ -46,7 +46,7 @@ instance isLocallyQuasiFinite_isLocalAtSource_etale :
 
 [Tag 06F6](https://stacks.math.columbia.edu/tag/06F6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.unramified_isLocalAtSource_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSourceLocalityTransfer.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSourceLocalityTransfer.lean#L153).
+**`AlgebraicGeometry.Space.unramified_isLocalAtSource_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSourceLocalityTransfer.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSourceLocalityTransfer.lean#L153).
 
 > **Stacks 06F6.** Unramifiedness of a morphism of algebraic spaces over `S` is local on the
 > source for the étale topology of Stacks 03YH.
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.19, Tag 06F3](https://stacks.math.columbia.edu/tag/06F3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

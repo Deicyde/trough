@@ -7,7 +7,7 @@ statement: formalized
 
 # Longest cycle
 
-6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html).
+6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html).
 
 ## Instances of LONGEST CYCLE
 
@@ -15,7 +15,7 @@ An instance of LONGEST CYCLE is a triple $(n, E, K)$ of a
 natural number $n$ (the number of vertices), a list $E$ of pairs of natural numbers (the edges),
 and a natural number $K$ (the bound).
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.LongestCycle.LongestCycleInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/LongestCycleWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/LongestCycleWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html#longest-cycle-instance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.LongestCycle.LongestCycleInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/LongestCycleWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/LongestCycleWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html#longest-cycle-instance).
 
 ## Graph of a LONGEST CYCLE instance
 
@@ -24,7 +24,7 @@ is the simple graph on $\{0, \dots, n-1\}$ in which distinct vertices $i$ and $j
 when $(i, j)$ or $(j, i)$ belongs to $E$. Loops are dropped, and pairs with an endpoint at least
 $n$ contribute no edge.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.LongestCycle.Graph`, a definition declared in [WantedExt/Complexity/NPComplete/LongestCycleWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/LongestCycleWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html#graph).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.LongestCycle.Graph`, a definition declared in [WantedExt/Complexity/NPComplete/LongestCycleWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/LongestCycleWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html#graph).
 
 ## Well-formed LONGEST CYCLE instances
 
@@ -32,7 +32,7 @@ An instance $(n, E, K)$ of LONGEST CYCLE is well
 formed when the list $E$ has no repeated entries and every pair $(u, v)$ in $E$ satisfies
 $u < n$, $v < n$, $u \ne v$ and $(v, u) \notin E$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.LongestCycle.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/LongestCycleWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/LongestCycleWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.LongestCycle.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/LongestCycleWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/LongestCycleWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html#well-formed).
 
 ## Feasible LONGEST CYCLE instances
 
@@ -42,7 +42,7 @@ and $m \ge 3$, such that $v_j$ is adjacent to $v_{j+1}$ for every $1 \le j < m$ 
 adjacent to $v_1$. That is, the graph has a simple cycle with at least $K$ edges and at least
 three vertices.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.LongestCycle.LongestCycleFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/LongestCycleWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/LongestCycleWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html#longest-cycle-feasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.LongestCycle.LongestCycleFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/LongestCycleWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/LongestCycleWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html#longest-cycle-feasible).
 
 ## The decision problem LONGEST CYCLE
 
@@ -51,7 +51,7 @@ decodes, under the canonical bitstring encoding of instances, to an instance of 
 is well formed and feasible. Bitstrings that do not decode, and bitstrings that decode to
 instances that are not well formed, are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.LongestCycle.longestCycleDec`, a definition declared in [WantedExt/Complexity/NPComplete/LongestCycleWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/LongestCycleWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html#longest-cycle-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.LongestCycle.longestCycleDec`, a definition declared in [WantedExt/Complexity/NPComplete/LongestCycleWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/LongestCycleWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html#longest-cycle-dec).
 
 ## LONGEST CYCLE is NP-complete
 
@@ -62,7 +62,7 @@ decision problem in NP has a polynomial-time many-one reduction to LONGEST CYCLE
 
 - M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), LONGEST CYCLE.
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.LongestCycle.longestCycle_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/LongestCycleWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/LongestCycleWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html#longest-cycle-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.LongestCycle.longestCycle_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/LongestCycleWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/LongestCycleWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html#longest-cycle-np-complete).
 
 ## Depends on
 
@@ -71,4 +71,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Longest cycle](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/longest-cycle)

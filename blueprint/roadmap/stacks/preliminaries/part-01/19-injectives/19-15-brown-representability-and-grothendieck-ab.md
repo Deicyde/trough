@@ -1,30 +1,37 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Injectives.isRepresentable_of_isGrothendieckAbelian, Stacks.Injectives.exists_exact_rightAdjoint, Stacks.Injectives.exists_exact_rightAdjoint_of_isGrothendieckAbelian
+lean: Stacks.Injectives.isRepresentable_of_isHomological_of_isGrothendieckAbelian, Stacks.Injectives.exists_exact_rightAdjoint_of_isGrothendieckAbelian
 statement: formalized
 proof: formalized
 ---
 
 # 19.15 Brown representability and Grothendieck abelian categories
 
-Section 19.15 of the Stacks Project, [Tag 0F5W](https://stacks.math.columbia.edu/tag/0F5W). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 19.15 of the Stacks Project, [Tag 0F5W](https://stacks.math.columbia.edu/tag/0F5W). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F5X, a lemma
 
 [Tag 0F5X](https://stacks.math.columbia.edu/tag/0F5X) in the Stacks Project.
 
-**`Stacks.Injectives.isRepresentable_of_isGrothendieckAbelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/BrownRepresentability.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/BrownRepresentability.lean#L454).
+**`Stacks.Injectives.isRepresentable_of_isHomological_of_isGrothendieckAbelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/BrownRepresentability.lean, line 469](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/BrownRepresentability.lean#L469). The attribute's comment: “Brown representability: a contravariant cohomological functor D(A) → Ab, A a Grothendieck abelian category, which transforms direct sums into products is representable”.
 
-> **Stacks 0F5X (Brown representability for Grothendieck abelian categories).** Let `A` be a
-> Grothendieck abelian category and `H : D(A) ⥤ Ab` a contravariant cohomological functor which
-> transforms direct sums into products. Then `H` is representable.
+> **Brown representability for Grothendieck abelian categories**, with the Grothendieck
+> condition `IsGrothendieckAbelian.{v} A` in the universe `v` of the morphisms of `A`: for a
+> Grothendieck abelian category `A`, a contravariant cohomological functor
+> `H : D(A)ᵒᵖ ⥤ AddCommGrpCat.{v}` which transforms direct sums indexed by `Type v` into products
+> is representable.
+>
+> This is the statement of [Stacks, Tag 0F5X] for every ordinary Grothendieck abelian category,
+> e.g. `ModuleCat.{v} R`. The model of `D(A)` is arbitrary; in the model with morphisms in `Type v`
+> (which exists by `hasDerivedCategory_of_isGrothendieckAbelian`) the functors
+> `Hom(-, X) = preadditiveYoneda.obj X` themselves satisfy the hypotheses.
 
 ```lean
-public theorem isRepresentable_of_isGrothendieckAbelian (A : Type u) [Category.{v} A] [Abelian A]
-    [IsGrothendieckAbelian.{max w u v} A] [HasDerivedCategory.{z} A]
-    (H : (DerivedCategory A)ᵒᵖ ⥤ AddCommGrpCat.{max u v}) [H.IsHomological]
-    [∀ J : Type (max w u v), PreservesLimitsOfShape (Discrete J) H] :
+public theorem isRepresentable_of_isHomological_of_isGrothendieckAbelian (A : Type u)
+    [Category.{v} A] [Abelian A] [IsGrothendieckAbelian.{v} A] [HasDerivedCategory.{z} A]
+    (H : (DerivedCategory A)ᵒᵖ ⥤ AddCommGrpCat.{v}) [H.IsHomological]
+    [∀ J : Type v, PreservesLimitsOfShape (Discrete J) H] :
     (H ⋙ forget AddCommGrpCat).IsRepresentable
 ```
 
@@ -32,26 +39,7 @@ public theorem isRepresentable_of_isGrothendieckAbelian (A : Type u) [Category.{
 
 [Tag 0F5Y](https://stacks.math.columbia.edu/tag/0F5Y) in the Stacks Project.
 
-**`Stacks.Injectives.exists_exact_rightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/BrownRepresentability.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/BrownRepresentability.lean#L478).
-
-> **Stacks 0F5Y.** Let `A` be a Grothendieck abelian category and `D` a triangulated category.
-> An exact functor `F : D(A) ⥤ D` which transforms direct sums into direct sums has an exact right
-> adjoint: a functor `G`, an adjunction `F ⊣ G`, and a commutation of `G` with the shift making `G`
-> triangulated.
-
-```lean
-public theorem exists_exact_rightAdjoint (A : Type u) [Category.{v} A] [Abelian A]
-    [IsGrothendieckAbelian.{max w u v} A] [HasDerivedCategory.{z} A]
-    (D : Type u') [Category.{max u v} D] [HasZeroObject D] [HasShift D ℤ] [Preadditive D]
-    [∀ n : ℤ, (shiftFunctor D n).Additive] [Pretriangulated D]
-    (F : DerivedCategory A ⥤ D) [F.CommShift ℤ] [F.IsTriangulated]
-    [∀ J : Type (max w u v), PreservesColimitsOfShape (Discrete J) F] :
-    ∃ (G : D ⥤ DerivedCategory A) (_ : F ⊣ G) (commShift : G.CommShift ℤ),
-      let := commShift
-      G.IsTriangulated
-```
-
-**`Stacks.Injectives.exists_exact_rightAdjoint_of_isGrothendieckAbelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/BrownRepresentabilityRightAdjoint.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/BrownRepresentabilityRightAdjoint.lean#L121). The attribute's comment: “A Grothendieck abelian relative to its morphism universe, direct sums indexed by it; the base `exists_exact_rightAdjoint` assumes IsGrothendieckAbelian at the object universe, which no nonzero category satisfies”.
+**`Stacks.Injectives.exists_exact_rightAdjoint_of_isGrothendieckAbelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/BrownRepresentabilityRightAdjoint.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/BrownRepresentabilityRightAdjoint.lean#L121). The attribute's comment: “A Grothendieck abelian relative to its morphism universe v, direct sums indexed by Type v, Hom(F W, Y) Type v-small (the source's convention that morphisms form sets); D may be any pretriangulated category”.
 
 > **[Stacks, Tag 0F5Y].** Let `A` be a Grothendieck abelian category and `D` a pretriangulated
 > category. An exact functor `F : D(A) ⥤ D` which transforms direct sums into direct sums, and whose
@@ -78,4 +66,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 19.15, Tag 0F5W](https://stacks.math.columbia.edu/tag/0F5W)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

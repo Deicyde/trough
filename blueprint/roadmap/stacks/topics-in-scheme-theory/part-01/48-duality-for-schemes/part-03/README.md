@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# 48.22 Dualizing modules to 48.31 Preliminaries to…
+# 48.23 Cohen-Macaulay schemes to 48.34 Lichtenbaum's theorem
 
-- [48.22 Dualizing modules](48-22-dualizing-modules.md)
 - [48.23 Cohen-Macaulay schemes](48-23-cohen-macaulay-schemes.md)
 - [48.24 Gorenstein schemes](48-24-gorenstein-schemes.md)
 - [48.25 Gorenstein morphisms](48-25-gorenstein-morphisms.md)
@@ -14,3 +13,6 @@ navigation: transparent
 - [48.29 The fundamental class of an lci morphism](48-29-the-fundamental-class-of-an-lci-morphism.md)
 - [48.30 Extension by zero for coherent modules](48-30-extension-by-zero-for-coherent-modules.md)
 - [48.31 Preliminaries to compactly supported cohomology](48-31-preliminaries-to-compactly-supported-cohom.md)
+- [48.32 Compactly supported cohomology for coherent modules](48-32-compactly-supported-cohomology-for-coheren.md)
+- [48.33 Duality for compactly supported cohomology](48-33-duality-for-compactly-supported-cohomology.md)
+- [48.34 Lichtenbaum's theorem](48-34-lichtenbaums-theorem.md)

@@ -8,7 +8,7 @@ proof: formalized
 
 # First-order expansion of the determinant
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant/index.html).
 
 ## The determinant is affine along a rank-one direction
 
@@ -16,7 +16,7 @@ Let $K$ be a field, let $B$ be a
 square matrix over $K$ indexed by a finite type $n$, and let $u, v \in K^n$. Then for every
 $t \in K$, $\det(B + t\,uv^{\mathsf T}) = \det B + t\,(\det(B + uv^{\mathsf T}) - \det B)$.
 
-Formalized by `Matrix.det_add_smul_vecMulVec`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant/index.html#det-add-smul-vec-mul-vec).
+Formalized by `Matrix.det_add_smul_vecMulVec`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant/index.html#det-add-smul-vec-mul-vec).
 
 ## First-order term of the determinant
 
@@ -27,7 +27,7 @@ matrix $B$ with its $i$-th row replaced by the $i$-th row of $A$.
 
 It is the coefficient of $X$ in the polynomial $\det(B + XA)$.
 
-Formalized by `Matrix.detLinear`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant/index.html#det-linear).
+Formalized by `Matrix.detLinear`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant/index.html#det-linear).
 
 ## The coefficient of $X$ in $\det(B + XA)$
 
@@ -37,7 +37,7 @@ the polynomial ring $R[X]$. Then the coefficient of $X$ in the polynomial $\det(
 the first-order term of the determinant $L_B(A) = \sum_{i \in n} \det B^{(i)}$, where $B^{(i)}$
 is the matrix $B$ with its $i$-th row replaced by the $i$-th row of $A$.
 
-Formalized by `Matrix.coeff_one_det_add_X_smul`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant/index.html#coeff-one-det-add-x-smul).
+Formalized by `Matrix.coeff_one_det_add_X_smul`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant/index.html#coeff-one-det-add-x-smul).
 
 ## Additivity of the first-order term of the determinant
 
@@ -46,7 +46,7 @@ and let $A$, $B$, $C$ be square matrices over $R$ indexed by a finite type $n$. 
 $L_B(A) = \sum_{i \in n} \det B^{(i)}_A$, where $B^{(i)}_A$ is the matrix $B$ with its $i$-th
 row replaced by the $i$-th row of $A$. Then $L_B(A + C) = L_B(A) + L_B(C)$.
 
-Formalized by `Matrix.detLinear_add`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant/index.html#det-linear-add).
+Formalized by `Matrix.detLinear_add`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant/index.html#det-linear-add).
 
 ## Homogeneity of the first-order term of the determinant
 
@@ -55,7 +55,7 @@ let $a \in R$, and let $A$ and $B$ be square matrices over $R$ indexed by a fini
 Write $L_B(A) = \sum_{i \in n} \det B^{(i)}_A$, where $B^{(i)}_A$ is the matrix $B$ with its
 $i$-th row replaced by the $i$-th row of $A$. Then $L_B(aA) = a \, L_B(A)$.
 
-Formalized by `Matrix.detLinear_smul`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant/index.html#det-linear-smul).
+Formalized by `Matrix.detLinear_smul`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/MvPolynomial.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant/index.html#det-linear-smul).
 
 ## Depends on
 
@@ -64,4 +64,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: First-order expansion of the determinant](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/determinants-and-matrix-identities/first-order-expansion-of-the-determinant)

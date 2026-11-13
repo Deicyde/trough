@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.37 Proper morphisms
 
-Section 101.37 of the Stacks Project, [Tag 0CL4](https://stacks.math.columbia.edu/tag/0CL4). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.37 of the Stacks Project, [Tag 0CL4](https://stacks.math.columbia.edu/tag/0CL4). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CL5, a definition
 
 [Tag 0CL5](https://stacks.math.columbia.edu/tag/0CL5) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsProper`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperAlgebraicStack.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ProperAlgebraicStack.lean#L111).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsProper`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperAlgebraicStack.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ProperAlgebraicStack.lean#L111).
 
 > **Stacks 0CL5.** A 1-morphism of algebraic stacks over `S` *is proper* when it is separated
 > (**Stacks 04YW**), of finite type (**Stacks 06FS**, part (2)) and universally closed
@@ -32,7 +32,7 @@ abbrev IsProper {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ 
 
 [Tag 0CL6](https://stacks.math.columbia.edu/tag/0CL6) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperBaseChangeAlgebraicStack.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ProperBaseChangeAlgebraicStack.lean#L84).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperBaseChangeAlgebraicStack.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ProperBaseChangeAlgebraicStack.lean#L84).
 
 > **Stacks 0CL6.** A base change of a proper 1-morphism of algebraic stacks over `S` is proper:
 > if `f : 𝒳 ⟶ 𝒴` is proper and `P` is any 2-fibre product square of the cospan `(g, f)` for some
@@ -55,7 +55,7 @@ theorem isProper_baseChange {𝒳 𝒴 𝒴' : Stack.AlgebraicStacks.{u, w} B S 
 
 [Tag 0CL7](https://stacks.math.columbia.edu/tag/0CL7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperCompositionAlgebraicStack.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ProperCompositionAlgebraicStack.lean#L78).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperCompositionAlgebraicStack.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ProperCompositionAlgebraicStack.lean#L78).
 
 > **Stacks 0CL7.** A composition of proper 1-morphisms of algebraic stacks over `S` is proper:
 > if `f : 𝒳 ⟶ 𝒴` and `g : 𝒴 ⟶ 𝒵` are proper, then so is `f ≫ g`.
@@ -75,7 +75,7 @@ theorem isProper_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w} B S hS}
 
 [Tag 0CL8](https://stacks.math.columbia.edu/tag/0CL8) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperClosedImmersionAlgebraicStack.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ProperClosedImmersionAlgebraicStack.lean#L130).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperClosedImmersionAlgebraicStack.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ProperClosedImmersionAlgebraicStack.lean#L130).
 
 > **Stacks 0CL8.** A closed immersion of algebraic stacks over `S` is a proper 1-morphism of
 > algebraic stacks.
@@ -95,7 +95,7 @@ theorem isProper_of_isClosedImmersion (f : 𝒳 ⟶ 𝒴) (hf : IsClosedImmersio
 
 [Tag 0CPT](https://stacks.math.columbia.edu/tag/0CPT) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperCancellation.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ProperCancellation.lean#L146). The attribute's comment: “part (1): universal closedness”. References: EGA II (5.4.9), “5.4.3 univ. closed”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperCancellation.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ProperCancellation.lean#L146). The attribute's comment: “part (1): universal closedness”. References: EGA II (5.4.9), “5.4.3 univ. closed”.
 
 > **Stacks 0CPT, part (1).** If a composite of 1-morphisms of algebraic stacks over `S` is
 > universally closed and its second factor is separated, then its first factor is universally
@@ -112,7 +112,7 @@ theorem universallyClosed_of_comp_of_isSeparated (f : 𝒳 ⟶ 𝒴) (g : 𝒴 �
     UniversallyClosed B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_range_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperCancellation.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ProperCancellation.lean#L163). The attribute's comment: “part (1): closed image”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_range_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperCancellation.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ProperCancellation.lean#L163). The attribute's comment: “part (1): closed image”.
 
 > **Stacks 0CPT, part (1).** Under the hypotheses of
 > `AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_comp_of_isSeparated` the image of
@@ -125,7 +125,7 @@ theorem isClosed_range_of_comp_of_isSeparated (f : 𝒳 ⟶ 𝒴) (g : 𝒴 ⟶ 
       (Set.range (Stack.pointsMap B S hS 𝒳.val.val 𝒳.val.property 𝒴.val.property f.hom.hom))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperCancellation.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ProperCancellation.lean#L182). The attribute's comment: “part (2): properness”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperCancellation.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ProperCancellation.lean#L182). The attribute's comment: “part (2): properness”.
 
 > **Stacks 0CPT, part (2).** If a composite of 1-morphisms of algebraic stacks over `S` is
 > proper and its second factor is separated, then its first factor is proper.
@@ -147,7 +147,7 @@ theorem isProper_of_comp_of_isSeparated (f : 𝒳 ⟶ 𝒴) (g : 𝒴 ⟶ 𝒵)
 
 [Tag 0CQK](https://stacks.math.columbia.edu/tag/0CQK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_surjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperImageAlgebraicStack.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ProperImageAlgebraicStack.lean#L107). The attribute's comment: “universally closed image”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_surjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperImageAlgebraicStack.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ProperImageAlgebraicStack.lean#L107). The attribute's comment: “universally closed image”.
 
 > **Stacks 0CQK, universal closedness of the image.** If the composite `f ≫ q` of 1-morphisms
 > of algebraic stacks over `S` is universally closed and `f` is surjective, then `q` is universally
@@ -160,7 +160,7 @@ theorem universallyClosed_of_surjective_comp
     UniversallyClosed B S hS q
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_of_surjective_universallyClosed_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperImageAlgebraicStack.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ProperImageAlgebraicStack.lean#L139). The attribute's comment: “properness of the image”. References: EGA II (5.4.3), “(ii)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_of_surjective_universallyClosed_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProperImageAlgebraicStack.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ProperImageAlgebraicStack.lean#L139). The attribute's comment: “properness of the image”. References: EGA II (5.4.3), “(ii)”.
 
 > **Stacks 0CQK, properness of the image.** If the composite `f ≫ q` of 1-morphisms of
 > algebraic stacks over `S` is universally closed, `f` is surjective and `q` is separated and of
@@ -181,4 +181,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.37, Tag 0CL4](https://stacks.math.columbia.edu/tag/0CL4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

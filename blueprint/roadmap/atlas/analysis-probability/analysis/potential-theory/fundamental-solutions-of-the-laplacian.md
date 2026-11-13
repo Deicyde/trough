@@ -7,7 +7,7 @@ statement: formalized
 
 # Fundamental solutions of the Laplacian
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/fundamental-solutions-of-the-laplacian/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/fundamental-solutions-of-the-laplacian/index.html).
 
 ## The Newtonian kernel is harmonic away from the origin
 
@@ -19,7 +19,7 @@ Euclidean norm, is harmonic on $\mathbb{R}^m \setminus \{0\}$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of several variables), problem `ma_proofbench_l1_81`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.NormPowTwoSubDimHarmonicWanted.harmonicOnNhd_one_div_norm_pow_sub_two` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/NormPowTwoSubDimHarmonicWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/NormPowTwoSubDimHarmonicWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/fundamental-solutions-of-the-laplacian/index.html#harmonic-on-nhd-one-div-norm-pow-sub-two).
+Stated but not proved: `MathlibExt.Analysis.Calculus.NormPowTwoSubDimHarmonicWanted.harmonicOnNhd_one_div_norm_pow_sub_two` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/NormPowTwoSubDimHarmonicWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/NormPowTwoSubDimHarmonicWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/fundamental-solutions-of-the-laplacian/index.html#harmonic-on-nhd-one-div-norm-pow-sub-two).
 
 ## The logarithm of the norm is harmonic on the punctured plane
 
@@ -32,7 +32,7 @@ differentiable and its Laplacian vanishes.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functions of a complex variable; Geometric function theory), problem `ma_proofbench_l1_50`.
 
-Stated but not proved: `MathlibExt.Analysis.Complex.LogNormHarmonicPlaneWanted.harmonicOnNhd_log_norm_euclideanSpace_two` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/LogNormHarmonicPlaneWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/LogNormHarmonicPlaneWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/fundamental-solutions-of-the-laplacian/index.html#harmonic-on-nhd-log-norm-euclidean-space).
+Stated but not proved: `MathlibExt.Analysis.Complex.LogNormHarmonicPlaneWanted.harmonicOnNhd_log_norm_euclideanSpace_two` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/LogNormHarmonicPlaneWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/LogNormHarmonicPlaneWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/fundamental-solutions-of-the-laplacian/index.html#harmonic-on-nhd-log-norm-euclidean-space).
 
 ## Fundamental solution of the Laplacian in dimension three
 
@@ -45,7 +45,7 @@ $\delta_0$ is the Dirac delta at the origin.
 
 - L. Evans, *Partial Differential Equations*, §2.2.
 
-Stated but not proved: `MathlibExt.Analysis.Distribution.NewtonPotentialWanted.exists_fundamental_solution_laplacian` is written with `theorem_wanted` in [WantedExt/Analysis/Distribution/NewtonPotentialWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Distribution/NewtonPotentialWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/fundamental-solutions-of-the-laplacian/index.html#exists-fundamental-solution-laplacian).
+Stated but not proved: `MathlibExt.Analysis.Distribution.NewtonPotentialWanted.exists_fundamental_solution_laplacian` is written with `theorem_wanted` in [WantedExt/Analysis/Distribution/NewtonPotentialWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Distribution/NewtonPotentialWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/fundamental-solutions-of-the-laplacian/index.html#exists-fundamental-solution-laplacian).
 
 ## The Newton potential is harmonic away from the origin
 
@@ -57,7 +57,7 @@ $N(0) = 0$. Then the Laplacian of $N$ vanishes at every point $x \neq 0$ of $E$.
 
 - L. Evans, *Partial Differential Equations*, §2.2.
 
-Stated but not proved: `MathlibExt.Analysis.Distribution.NewtonPotentialWanted.newton_potential_harmonic` is written with `theorem_wanted` in [WantedExt/Analysis/Distribution/NewtonPotentialWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Distribution/NewtonPotentialWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/fundamental-solutions-of-the-laplacian/index.html#newton-potential-harmonic).
+Stated but not proved: `MathlibExt.Analysis.Distribution.NewtonPotentialWanted.newton_potential_harmonic` is written with `theorem_wanted` in [WantedExt/Analysis/Distribution/NewtonPotentialWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Distribution/NewtonPotentialWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/fundamental-solutions-of-the-laplacian/index.html#newton-potential-harmonic).
 
 ## Depends on
 
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fundamental solutions of the Laplacian](https://deicyde.github.io/atlas-lean/roadmap/Analysis/potential-theory/fundamental-solutions-of-the-laplacian/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/potential-theory/fundamental-solutions-of-the-laplacian)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/potential-theory/fundamental-solutions-of-the-laplacian)

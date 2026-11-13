@@ -8,7 +8,7 @@ proof: formalized
 
 # 17.10 Quasi-coherent modules
 
-Section 17.10 of the Stacks Project, [Tag 01BD](https://stacks.math.columbia.edu/tag/01BD). 8 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 17.10 of the Stacks Project, [Tag 01BD](https://stacks.math.columbia.edu/tag/01BD). 8 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01BE, a definition
 
@@ -16,14 +16,14 @@ Section 17.10 of the Stacks Project, [Tag 01BD](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`SheafOfModules.IsQuasicoherent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.IsQuasicoherent#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch17.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch17.lean#L53) (StacksFrontier): “quasi-coherent sheaf of modules”. References: EGA 0 (5.1.3); SGA 4 XVII (5.5.29), “partial”; SGA 6 0 (2.5); SGA 6 II (2.2.1).
-- [`SheafOfModules.isQuasicoherent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.isQuasicoherent#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch17.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch17.lean#L54) (StacksFrontier): “the category QCoh(O\_X)”. References: EGA 0 (5.1.3); SGA 4 Vbis (4.2.0), “Fiber G\_X”; SGA 4 XVII (5.5.29), “partial”; SGA 6 0 (2.5); SGA 6 II (2.2.1).
+- [`SheafOfModules.IsQuasicoherent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.IsQuasicoherent#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch17.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch17.lean#L53) (StacksFrontier): “quasi-coherent sheaf of modules”. References: EGA 0 (5.1.3); SGA 4 XVII (5.5.29), “partial”; SGA 6 0 (2.5); SGA 6 II (2.2.1).
+- [`SheafOfModules.isQuasicoherent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.isQuasicoherent#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch17.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch17.lean#L54) (StacksFrontier): “the category QCoh(O\_X)”. References: EGA 0 (5.1.3); SGA 4 Vbis (4.2.0), “Fiber G\_X”; SGA 4 XVII (5.5.29), “partial”; SGA 6 0 (2.5); SGA 6 II (2.2.1).
 
 ## Tag 01BF, a lemma
 
 [Tag 01BF](https://stacks.math.columbia.edu/tag/01BF) in the Stacks Project.
 
-**`directSum_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentDirectSum.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentDirectSum.lean#L78). References: EGA 0 (5.1.3), “direct sum remark”; EGA I (4.1.1), “direct sums (binary)”.
+**`directSum_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentDirectSum.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentDirectSum.lean#L78). References: EGA 0 (5.1.3), “direct sum remark”; EGA I (4.1.1), “direct sums (binary)”.
 
 > Stacks Tag 01BF (Lemma 17.10.2): the direct sum of two quasi-coherent
 > `O_X`-modules on a ringed space is quasi-coherent.
@@ -40,7 +40,7 @@ theorem directSum_isQuasicoherent
 
 [Tag 01BG](https://stacks.math.columbia.edu/tag/01BG) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.modulePullback_isQuasicoherent`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Quasicoherent.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/Quasicoherent.lean#L58).
+**`AlgebraicGeometry.SheafOfModules.modulePullback_isQuasicoherent`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Quasicoherent.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/Quasicoherent.lean#L58).
 
 > **Stacks 01BG.** The pullback of a quasi-coherent sheaf of modules along a
 > morphism of ringed spaces is quasi-coherent.
@@ -55,7 +55,7 @@ lemma modulePullback_isQuasicoherent {X Y : RingedSpace.{u, u}} (f : X ⟶ Y)
 
 [Tag 01BH](https://stacks.math.columbia.edu/tag/01BH) in the Stacks Project.
 
-**`Stacks.AssociatedSheaf.associatedSheafAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafComparison.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafComparison.lean#L392). The attribute's comment: “Mor(ℱ\_M, 𝒢) = Hom\_R(M, Γ(X,𝒢))”.
+**`Stacks.AssociatedSheaf.associatedSheafAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafComparison.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafComparison.lean#L392). The attribute's comment: “Mor(ℱ\_M, 𝒢) = Hom\_R(M, Γ(X,𝒢))”.
 
 > The tensor-sheafification adjunction: `associatedSheafFunctor` is left adjoint to global
 > sections with scalars restricted along `α`, so that `Mor_{𝒪_X}(ℱ_M, 𝒢) = Hom_R(M, Γ(X, 𝒢))`.
@@ -65,7 +65,7 @@ def associatedSheafAdjunction :
     associatedSheafFunctor.{u, max u v} X α ⊣ globalSectionsFunctor.{u, v} X α
 ```
 
-**`Stacks.AssociatedSheaf.pullbackAssociatedSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafIsos.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafIsos.lean#L515). The attribute's comment: “comparison\_of\_three\_constructions”.
+**`Stacks.AssociatedSheaf.pullbackAssociatedSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafIsos.lean, line 514](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafIsos.lean#L514). The attribute's comment: “comparison\_of\_three\_constructions”.
 
 > Pullback along `π : X ⟶ ({*}, R)` of `M` regarded as a sheaf of modules on the coefficient
 > point is construction (3), naturally in `M`, with the module universe independent of the
@@ -77,7 +77,7 @@ def pullbackAssociatedSheafIso :
       associatedSheafFunctor.{u, v} X α
 ```
 
-**`Stacks.AssociatedSheaf.pullbackAssociatedSheafIso_hom_app_apply`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafIsos.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafIsos.lean#L528). The attribute's comment: “comparison\_of\_three\_constructions”.
+**`Stacks.AssociatedSheaf.pullbackAssociatedSheafIso_hom_app_apply`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafIsos.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafIsos.lean#L527). The attribute's comment: “comparison\_of\_three\_constructions”.
 
 > The comparison `pullbackAssociatedSheafIso` carries the image of `1 ⊗ m` under the unit of
 > `π^* ⊣ π_*` to `1 ⊗ m`.
@@ -92,7 +92,7 @@ lemma pullbackAssociatedSheafIso_hom_app_apply (M : ModuleCat.{v} R) (m : M) :
       tensorUnitSection X α M (op ⊤) m
 ```
 
-**`Stacks.AssociatedSheaf.presentationSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PresentationSheafIso.lean, line 735](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PresentationSheafIso.lean#L735). The attribute's comment: “comparison\_of\_three\_constructions”.
+**`Stacks.AssociatedSheaf.presentationSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PresentationSheafIso.lean, line 736](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PresentationSheafIso.lean#L736). The attribute's comment: “comparison\_of\_three\_constructions”.
 
 > **Stacks 01BH, (2) = (3).** The cokernel of the relation matrix of a presentation of `M`
 > over the structure sheaf of `X` is the sheafification of `U ↦ 𝒪_X(U) ⊗_R M`, with the sections
@@ -104,7 +104,7 @@ def presentationSheafIso :
       SheafOfModules.uliftObj.{_, _, _, _, max w z} (associatedSheaf X α M)
 ```
 
-**`Stacks.AssociatedSheaf.presentationSheafIso_hom_app_apply`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PresentationSheafIso.lean, line 763](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PresentationSheafIso.lean#L763). The attribute's comment: “comparison\_of\_three\_constructions”.
+**`Stacks.AssociatedSheaf.presentationSheafIso_hom_app_apply`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PresentationSheafIso.lean, line 764](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PresentationSheafIso.lean#L764). The attribute's comment: “comparison\_of\_three\_constructions”.
 
 > **Stacks 01BH, the comparison of (2) and (3) is pinned down.** On every open it carries the
 > image of the `i`-th generator to the image of `1 ⊗ (generator i)`.
@@ -118,7 +118,7 @@ lemma presentationSheafIso_hom_app_apply (i : P.G) (U : Opens X.carrier) :
         (P.toSolution.π (Finsupp.single i 1)))
 ```
 
-**`Stacks.AssociatedSheaf.preservesColimitsOfSize_associatedSheafFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Free.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Free.lean#L209). The attribute's comment: “the functor M ↦ ℱ\_M commutes with arbitrary colimits”.
+**`Stacks.AssociatedSheaf.preservesColimitsOfSize_associatedSheafFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Free.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Free.lean#L209). The attribute's comment: “the functor M ↦ ℱ\_M commutes with arbitrary colimits”.
 
 > The functor `M ↦ ℱ_M`, sending an `R`-module to the associated sheaf of `𝒪_X`-modules,
 > commutes with arbitrary colimits.
@@ -128,7 +128,7 @@ instance preservesColimitsOfSize_associatedSheafFunctor :
     PreservesColimitsOfSize.{w, w} (associatedSheafFunctor.{u, max u v} X α)
 ```
 
-**`Stacks.AssociatedSheaf.isQuasicoherent_associatedSheafFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Quasicoherent.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Quasicoherent.lean#L53). The attribute's comment: “ℱ\_M is quasi-coherent”.
+**`Stacks.AssociatedSheaf.isQuasicoherent_associatedSheafFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Quasicoherent.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Quasicoherent.lean#L53). The attribute's comment: “ℱ\_M is quasi-coherent”.
 
 > **Stacks 01BH and 01BE.** The sheaf of `𝒪_X`-modules associated to an `R`-module along a
 > ring homomorphism `R ⟶ Γ(X, 𝒪_X)` is quasi-coherent, with no hypothesis on the module: the
@@ -140,7 +140,7 @@ theorem isQuasicoherent_associatedSheafFunctor_obj (X : RingedSpace.{u, u}) {R :
     ((associatedSheafFunctor.{u, u} X α).obj M).IsQuasicoherent
 ```
 
-**`Stacks.AssociatedSheaf.quasicoherentAssociatedSheafFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Quasicoherent.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Quasicoherent.lean#L66). The attribute's comment: “a functor from R-modules to quasi-coherent sheaves on X”.
+**`Stacks.AssociatedSheaf.quasicoherentAssociatedSheafFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Quasicoherent.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Quasicoherent.lean#L66). The attribute's comment: “a functor from R-modules to quasi-coherent sheaves on X”.
 
 > **Stacks 01BH, clause (2): the construction is a functor into quasi-coherent sheaves.**
 > Construction (3) lifts through the full subcategory of quasi-coherent sheaves of `𝒪_X`-modules,
@@ -154,7 +154,7 @@ noncomputable def quasicoherentAssociatedSheafFunctor : ModuleCat.{u} R ⥤
       (structureSheafRing X)).FullSubcategory
 ```
 
-**`Stacks.AssociatedSheaf.associatedSheafStalkLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/StalkLinear.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/StalkLinear.lean#L163). The attribute's comment: “the stalk of ℱ\_M is 𝒪\_\{X,x} ⊗\_R M”.
+**`Stacks.AssociatedSheaf.associatedSheafStalkLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/StalkLinear.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/StalkLinear.lean#L163). The attribute's comment: “the stalk of ℱ\_M is 𝒪\_\{X,x} ⊗\_R M”.
 
 > **`(ℱ_M)_x = 𝒪_{X,x} ⊗_A M` as `𝒪_{X,x}`-modules.**  The stalk at a point `x` of the sheaf of
 > `𝒪_X`-modules associated to an `A`-module `M` and a ring map `α : A → Γ(X, 𝒪_X)` is the base
@@ -168,7 +168,7 @@ def associatedSheafStalkLinearEquiv :
       (X.presheaf.stalk x ⊗[A] M)
 ```
 
-**`Stacks.AssociatedSheaf.associatedSheafStalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/StalkLinear.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/StalkLinear.lean#L266). The attribute's comment: “the stalk of ℱ\_M is 𝒪\_\{X,x} ⊗\_R M, functorially in M”.
+**`Stacks.AssociatedSheaf.associatedSheafStalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/StalkLinear.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/StalkLinear.lean#L265). The attribute's comment: “the stalk of ℱ\_M is 𝒪\_\{X,x} ⊗\_R M, functorially in M”.
 
 > **`(ℱ_M)_x = 𝒪_{X,x} ⊗_A M`, naturally in `M`.**  The identification
 > `(ℱ_M)_x = 𝒪_{X,x} ⊗_A M` is a natural isomorphism of functors `ModuleCat A ⥤ ModuleCat 𝒪_{X,x}`;
@@ -179,7 +179,7 @@ def associatedSheafStalkFunctorIso :
     stalkBaseChangeFunctor X α x ≅ associatedSheafStalkFunctor X α x
 ```
 
-**`Stacks.AssociatedSheaf.associatedSheafUnitIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Tensor.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Tensor.lean#L160). The attribute's comment: “construction (3) at the base ring is the structure sheaf”.
+**`Stacks.AssociatedSheaf.associatedSheafUnitIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Tensor.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Tensor.lean#L156). The attribute's comment: “construction (3) at the base ring is the structure sheaf”.
 
 > **Construction (3) carries the base ring to the structure sheaf:** `ℱ_R ≅ 𝒪_X`.
 >
@@ -197,7 +197,7 @@ def associatedSheafUnitIso :
 
 Declarations registered for the tag:
 
-- [`Stacks.AssociatedSheaf.associatedSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafComparison.lean#L307), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafTerminology.lean, line 28](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafTerminology.lean#L28) (StacksFrontier): “associated\_sheaf\_construction”.
+- [`Stacks.AssociatedSheaf.associatedSheaf`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafComparison.lean#L307), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafTerminology.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafTerminology.lean#L28) (StacksFrontier): “associated\_sheaf\_construction”.
 
 ## Tag 01BI, a definition
 
@@ -205,13 +205,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Stacks.AssociatedSheaf.associatedSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafComparison.lean#L307), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafTerminology.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafTerminology.lean#L56) (StacksFrontier).
+- [`Stacks.AssociatedSheaf.associatedSheaf`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafComparison.lean#L307), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafTerminology.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AssociatedSheafTerminology.lean#L56) (StacksFrontier).
 
 ## Tag 01BJ, a lemma
 
 [Tag 01BJ](https://stacks.math.columbia.edu/tag/01BJ) in the Stacks Project.
 
-**`Stacks.AssociatedSheaf.ringedSpacePullbackAssociatedSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Pullback.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Pullback.lean#L124).
+**`Stacks.AssociatedSheaf.ringedSpacePullbackAssociatedSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Pullback.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/Pullback.lean#L124).
 
 > **Stacks 01BJ.** The pullback of the sheaf associated to a module is the sheaf associated to
 > the module obtained by extension of scalars along the map on global sections.
@@ -232,7 +232,7 @@ def ringedSpacePullbackAssociatedSheafIso {X Y : RingedSpace.{u, u}} (g : Y ⟶ 
 
 [Tag 01BK](https://stacks.math.columbia.edu/tag/01BK) in the Stacks Project.
 
-**`Stacks.AssociatedSheaf.exists_open_associatedSheaf_iso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/QuasicoherentNearPoint.lean, line 451](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/QuasicoherentNearPoint.lean#L451).
+**`Stacks.AssociatedSheaf.exists_open_associatedSheaf_iso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/QuasicoherentNearPoint.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/AssociatedSheaf/QuasicoherentNearPoint.lean#L451).
 
 > **Stacks 01BK.** A quasi-coherent sheaf of modules is locally associated to a
 > module over the ring of sections near a point with a basis of quasi-compact
@@ -254,7 +254,7 @@ public lemma exists_open_associatedSheaf_iso (X : RingedSpace.{u, u}) (x : X)
 
 [Tag 01BL](https://stacks.math.columbia.edu/tag/01BL) in the Stacks Project.
 
-**`Stacks.AssociatedSheaf.exists_free_iso_associatedSheaf_freeModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeAssociatedSheafBasis.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeAssociatedSheafBasis.lean#L62). The attribute's comment: “associated free-module sheaves”.
+**`Stacks.AssociatedSheaf.exists_free_iso_associatedSheaf_freeModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeAssociatedSheafBasis.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeAssociatedSheafBasis.lean#L62). The attribute's comment: “associated free-module sheaves”.
 
 > **Stacks 01BL, first half.** The free sheaf of `𝒪_X`-modules on `I` is isomorphic to the sheaf
 > associated to the free `Γ(X, 𝒪_X)`-module on `I`, by an isomorphism carrying the `i`-th basis
@@ -274,7 +274,7 @@ theorem exists_free_iso_associatedSheaf_freeModule (X : RingedSpace.{u, u}) (I :
             (I →₀ X.presheaf.obj (op ⊤)))) (Finsupp.single i 1)
 ```
 
-**`Stacks.Bouquet.exists_freeSheafMorphism_not_locally_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/FreeMorphismNotMatrix.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/FreeMorphismNotMatrix.lean#L454). The attribute's comment: “non-module-induced morphism”.
+**`Stacks.Bouquet.exists_freeSheafMorphism_not_locally_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/FreeMorphismNotMatrix.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/FreeMorphismNotMatrix.lean#L454). The attribute's comment: “non-module-induced morphism”.
 
 > The countable bouquet carries a morphism of sheaves associated to free
 > modules that does not locally come from a homomorphism of the free modules:
@@ -341,4 +341,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 17.10, Tag 01BD](https://stacks.math.columbia.edu/tag/01BD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

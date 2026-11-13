@@ -7,7 +7,7 @@ statement: formalized
 
 # Total positivity
 
-20 results, 8 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html).
+20 results, 8 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html).
 
 ## Matrices with nonnegative minors
 
@@ -22,7 +22,7 @@ $k = 0$, the empty minor, is included.
 
 - Ming-Jian Ding and Jiang Zeng, "Some New Results on the Minuscule Polynomials of Type A", Journal of Integer Sequences 28 (2025), Article 25.1.2, "Total positivity of the coefficient matrix" section, definition at lines 638–639 (used by the Schoenberg–Edrei lemma, line 654), <https://cs.uwaterloo.ca/journals/JIS/VOL28/Zeng/zeng26.tex>.
 
-Formalized by `MetaMathlibExt.Matrix.HasNonnegativeMinors`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/NonnegativeMinors.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/NonnegativeMinors.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#has-nonnegative-minors).
+Formalized by `MetaMathlibExt.Matrix.HasNonnegativeMinors`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/NonnegativeMinors.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/NonnegativeMinors.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#has-nonnegative-minors).
 
 ## Matrices with positive minors
 
@@ -36,7 +36,7 @@ positive determinant. The case $k = 0$ is the empty minor, whose determinant is 
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Section 1 (total positivity).
 
-Formalized by `MetaMathlibExt.Matrix.HasPositiveMinors`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/PositiveMinors.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/PositiveMinors.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#has-positive-minors).
+Formalized by `MetaMathlibExt.Matrix.HasPositiveMinors`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/PositiveMinors.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/PositiveMinors.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#has-positive-minors).
 
 ## Entries of a matrix with positive minors are positive
 
@@ -48,7 +48,7 @@ $M_{ij} > 0$ for all $i \in R$ and $j \in C$; these entries are the $1 \times 1$
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Section 1 (total positivity).
 
-Formalized by `MetaMathlibExt.Matrix.HasPositiveMinors.entry_pos`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/PositiveMinors.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/PositiveMinors.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#entry-pos).
+Formalized by `MetaMathlibExt.Matrix.HasPositiveMinors.entry_pos`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/PositiveMinors.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/PositiveMinors.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#entry-pos).
 
 ## Gasca–Peña criterion for total positivity
 
@@ -63,7 +63,7 @@ positive determinant.
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Theorem 3, quoting Gasca and Peña (`jis-2026-26.2.5-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.hasPositiveMinors_iff_initial_minors_pos` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#has-positive-minors-iff-initial-minors-p).
+Stated but not proved: `MetaMathlibExt.hasPositiveMinors_iff_initial_minors_pos` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#has-positive-minors-iff-initial-minors-p).
 
 ## Generalized $p$-Fibonacci sequence
 
@@ -75,7 +75,7 @@ and $W_{p,n} = p W_{p,n-1} + W_{p,n-2}$ for $n \ge 2$.
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Section 1, recurrence (1).
 
-Formalized by `MetaMathlibExt.generalizedPFibonacci`, a definition declared in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-pfibonacci).
+Formalized by `MetaMathlibExt.generalizedPFibonacci`, a definition declared in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-pfibonacci).
 
 ## $p$-Fibonacci numbers as a Lucas sequence
 
@@ -87,7 +87,7 @@ $F_{p,n}$) is the Lucas sequence $U(p, -1)$: $W_{p,n} = U_n(p, -1)$ for every na
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Section 1, remark after recurrence (1) (`p`-Fibonacci numbers `F_{p,n}`).
 
-Formalized by `MetaMathlibExt.generalizedPFibonacci_zero_one`, a theorem declared in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-pfibonacci-zero-one).
+Formalized by `MetaMathlibExt.generalizedPFibonacci_zero_one`, a theorem declared in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-pfibonacci-zero-one).
 
 ## $p$-Lucas numbers as a companion Lucas sequence
 
@@ -100,7 +100,7 @@ number $n$.
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Section 1, remark after recurrence (1) (`p`-Lucas numbers `L_{p,n}`).
 
-Formalized by `MetaMathlibExt.generalizedPFibonacci_two_p`, a theorem declared in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-pfibonacci-two-p).
+Formalized by `MetaMathlibExt.generalizedPFibonacci_two_p`, a theorem declared in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-pfibonacci-two-p).
 
 ## Generalized hyper-Fibonacci numbers
 
@@ -114,7 +114,7 @@ $r \ge 1$, by $W^{(r)}_{p,n} = \sum_{k=0}^{n} p^{n-k} W^{(r-1)}_{p,k}$.
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Section 1, definition (2).
 
-Formalized by `MetaMathlibExt.generalizedHyperFibonacci`, a definition declared in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci).
+Formalized by `MetaMathlibExt.generalizedHyperFibonacci`, a definition declared in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci).
 
 ## Initial values of generalized hyper-Fibonacci numbers
 
@@ -126,7 +126,7 @@ $W^{(r)}_{p,0} = a$ and $W^{(r)}_{p,1} = p \cdot a \cdot r + b$.
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Section 1, definition (2) (initial values).
 
-Formalized by `MetaMathlibExt.generalizedHyperFibonacci_zero_one`, a theorem declared in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-zero-one).
+Formalized by `MetaMathlibExt.generalizedHyperFibonacci_zero_one`, a theorem declared in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-zero-one).
 
 ## Recurrence for generalized hyper-Fibonacci numbers
 
@@ -138,7 +138,7 @@ and $n \ge 1$, $W^{(r)}_{p,n} = p W^{(r)}_{p,n-1} + W^{(r-1)}_{p,n}$.
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Lemma 5, identity (3), quoting Ait-Amrane et al. (`jis-2026-26.2.5-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_succ_succ` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-succ-succ).
+Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_succ_succ` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-succ-succ).
 
 ## A binomial-sum formula for generalized hyper-Fibonacci numbers
 
@@ -155,7 +155,7 @@ $$
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Lemma 5, identity (4), quoting Ait-Amrane et al. (`jis-2026-26.2.5-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_sub_eq_sub` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-sub-eq-sub).
+Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_sub_eq_sub` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-sub-eq-sub).
 
 ## Hankel determinants of generalized hyper-Fibonacci numbers
 
@@ -169,7 +169,7 @@ $\det H_{r,n} = (-1)^{n+1+\lfloor (r+3)/2 \rfloor} p^{nr+r^2} b^r \Delta$.
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Proposition 7, quoting Ait-Amrane et al. (`jis-2026-26.2.5-prop-7`).
 
-Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_hankel_det` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-hankel-det).
+Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_hankel_det` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-hankel-det).
 
 ## Eventual positivity of hyper-Fibonacci Toeplitz determinants
 
@@ -183,7 +183,7 @@ $i$ and column $j$ ($0 \le i, j < m$) has positive determinant.
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Theorem 8 (`jis-2026-26.2.5-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_toeplitz_det_eventually_pos` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-toeplitz-det).
+Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_toeplitz_det_eventually_pos` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-toeplitz-det).
 
 ## Eventual positivity of lower-order hyper-Fibonacci Toeplitz determinants
 
@@ -198,7 +198,7 @@ that $\det T^{(r)}_{m,n} > 0$ for every $n \ge N$.
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Corollary 9 (`jis-2026-26.2.5-cor-9`).
 
-Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_toeplitz_det_eventually_pos_of_le` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-toeplitz-det-2).
+Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_toeplitz_det_eventually_pos_of_le` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-toeplitz-det-2).
 
 ## Eventual log-concavity of generalized hyper-Fibonacci numbers
 
@@ -212,7 +212,7 @@ $W^{(r)}_{p,n} W^{(r)}_{p,n+2} \le (W^{(r)}_{p,n+1})^2$.
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Corollary 10 (`jis-2026-26.2.5-cor-10`).
 
-Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_eventually_logConcave` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-eventually-l).
+Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_eventually_logConcave` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-eventually-l).
 
 ## Eventual log-concavity of hyper $p$-Fibonacci and hyper $p$-Lucas numbers
 
@@ -229,7 +229,7 @@ $L_{p,n}^{(r)} L_{p,n+2}^{(r)} \le (L_{p,n+1}^{(r)})^2$.
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Corollary 11 (`jis-2026-26.2.5-cor-11`).
 
-Stated but not proved: `MetaMathlibExt.hyperPFibonacci_hyperPLucas_eventually_logConcave` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#hyper-pfibonacci-hyper-plucas-eventually).
+Stated but not proved: `MetaMathlibExt.hyperPFibonacci_hyperPLucas_eventually_logConcave` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#hyper-pfibonacci-hyper-plucas-eventually).
 
 ## Eventual total positivity of hyper-Fibonacci Toeplitz matrices
 
@@ -246,7 +246,7 @@ minors for every $n \ge N$.
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Theorem 12 (`jis-2026-26.2.5-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_toeplitz_hasPositiveMinors` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-toeplitz-has).
+Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_toeplitz_hasPositiveMinors` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-toeplitz-has).
 
 ## Eventually positive bounded-order minors of hyper-Fibonacci Toeplitz matrices
 
@@ -264,7 +264,7 @@ of $T_n$ of order at most $r + 1$ is positive.
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Corollary 13 (`jis-2026-26.2.5-cor-13`).
 
-Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_toeplitz_positiveMinors_le` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-toeplitz-pos).
+Stated but not proved: `MetaMathlibExt.generalizedHyperFibonacci_toeplitz_positiveMinors_le` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#generalized-hyper-fibonacci-toeplitz-pos).
 
 ## Total positivity of hyper $p$-Fibonacci Toeplitz matrices
 
@@ -281,7 +281,7 @@ column $j$ is $\mathrm{TP}_{r+1}$: each of its minors of order at most $r + 1$ i
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Corollary 14 (`jis-2026-26.2.5-cor-14`).
 
-Stated but not proved: `MetaMathlibExt.hyperPFibonacci_toeplitz_hasPositiveMinors` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#hyper-pfibonacci-toeplitz-has-positive-m).
+Stated but not proved: `MetaMathlibExt.hyperPFibonacci_toeplitz_hasPositiveMinors` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#hyper-pfibonacci-toeplitz-has-positive-m).
 
 ## Total positivity of hyper $p$-Lucas Toeplitz matrices
 
@@ -298,7 +298,7 @@ column $j$ is $\mathrm{TP}_{r+1}$: each of its minors of order at most $r + 1$ i
 
 - Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Corollary 15 (`jis-2026-26.2.5-cor-15`).
 
-Stated but not proved: `MetaMathlibExt.hyperPLucas_toeplitz_hasPositiveMinors` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#hyper-plucas-toeplitz-has-positive-minor).
+Stated but not proved: `MetaMathlibExt.hyperPLucas_toeplitz_hasPositiveMinors` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/TotallyPositiveInitialMinorsWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html#hyper-plucas-toeplitz-has-positive-minor).
 
 ## Depends on
 
@@ -307,4 +307,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Total positivity](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/total-positivity/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/special-matrices/total-positivity)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/special-matrices/total-positivity)

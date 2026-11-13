@@ -8,14 +8,14 @@ proof: formalized
 
 # Counting satisfying assignments of a BDD
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html).
 
 ## Variables below a bound
 
 For a natural number $m$, a diagram has its variables below $m$
 when every variable tested at a node of the diagram is less than $m$.
 
-Formalized by `Cslib.Logic.PL.BDD.VarsLT`, a definition declared in [CSLibExt/Logics/Propositional/BDD/Count.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Propositional/BDD/Count.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html#vars-lt).
+Formalized by `Cslib.Logic.PL.BDD.VarsLT`, a definition declared in [CSLibExt/Logics/Propositional/BDD/Count.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Propositional/BDD/Count.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html#vars-lt).
 
 ## One-pass satisfy-count from a variable
 
@@ -29,7 +29,7 @@ subtraction, equal to $0$ when the difference would be negative.
 For $t$ ordered from $n$ whose tested variables are all below $m$, $c_m(n, t)$ is the number of
 assignments to the variables $n, \dots, m - 1$ that make $t$ true.
 
-Formalized by `Cslib.Logic.PL.BDD.satCountFrom`, a definition declared in [CSLibExt/Logics/Propositional/BDD/Count.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Propositional/BDD/Count.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html#sat-count-from).
+Formalized by `Cslib.Logic.PL.BDD.satCountFrom`, a definition declared in [CSLibExt/Logics/Propositional/BDD/Count.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Propositional/BDD/Count.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html#sat-count-from).
 
 ## Satisfy-count
 
@@ -39,7 +39,7 @@ $m$ is the one-pass satisfy-count $c_m(0, t)$ of $t$ from the variable $0$ with 
 When $t$ is ordered from $0$ and every variable it tests is below $m$, this is the number of
 assignments to the variables $0, \dots, m - 1$ that make $t$ true.
 
-Formalized by `Cslib.Logic.PL.BDD.satCount`, a definition declared in [CSLibExt/Logics/Propositional/BDD/Count.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Propositional/BDD/Count.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html#sat-count).
+Formalized by `Cslib.Logic.PL.BDD.satCount`, a definition declared in [CSLibExt/Logics/Propositional/BDD/Count.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Propositional/BDD/Count.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html#sat-count).
 
 ## Model count by enumeration
 
@@ -54,7 +54,7 @@ $x_k$ to $b_k$, a later setting overriding an earlier one of the same variable.
 When $x_1, \dots, x_k$ are distinct, this is the number of assignments that agree with $\sigma$
 outside $x_1, \dots, x_k$ and make $f$ true.
 
-Formalized by `Cslib.Logic.PL.BDD.countModels`, a definition declared in [CSLibExt/Logics/Propositional/BDD/Count.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Propositional/BDD/Count.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html#count-models).
+Formalized by `Cslib.Logic.PL.BDD.countModels`, a definition declared in [CSLibExt/Logics/Propositional/BDD/Count.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Propositional/BDD/Count.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html#count-models).
 
 ## Congruence for the model count
 
@@ -63,7 +63,7 @@ functions from assignments to truth values, and $\sigma$ an assignment. If $f(\t
 every assignment $\tau$ such that $\tau(x) = \sigma(x)$ for every variable $x$ not in the list,
 then the model counts of $f$ and of $g$ over $x_1, \dots, x_k$ from $\sigma$ are equal.
 
-Formalized by `Cslib.Logic.PL.BDD.countModels_congr`, a theorem declared in [CSLibExt/Logics/Propositional/BDD/Count.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Propositional/BDD/Count.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html#count-models-congr).
+Formalized by `Cslib.Logic.PL.BDD.countModels_congr`, a theorem declared in [CSLibExt/Logics/Propositional/BDD/Count.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Propositional/BDD/Count.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html#count-models-congr).
 
 ## The satisfy-count from a variable counts models
 
@@ -74,7 +74,7 @@ assignment $\sigma$, the one-pass satisfy-count $c_m(n, t)$ of $t$ from $n$ with
 the model count of the function $\tau \mapsto t(\tau)$ over the variables $n, n + 1, \dots, m - 1$
 from $\sigma$ (no variables when $m \le n$), where $t(\tau)$ is the value of $t$ under $\tau$.
 
-Formalized by `Cslib.Logic.PL.BDD.satCountFrom_eq_countModels`, a theorem declared in [CSLibExt/Logics/Propositional/BDD/Count.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Propositional/BDD/Count.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html#sat-count-from-eq-count-models).
+Formalized by `Cslib.Logic.PL.BDD.satCountFrom_eq_countModels`, a theorem declared in [CSLibExt/Logics/Propositional/BDD/Count.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Propositional/BDD/Count.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html#sat-count-from-eq-count-models).
 
 ## Correctness of the satisfy-count
 
@@ -85,7 +85,7 @@ count of the function $\tau \mapsto t(\tau)$ over the variables $0, 1, \dots, m 
 $\sigma$, where $t(\tau)$ is the value of $t$ under $\tau$. In other words, it is the number of
 assignments to the variables $0, \dots, m - 1$ that make $t$ true.
 
-Formalized by `Cslib.Logic.PL.BDD.satCount_eq_countModels`, a theorem declared in [CSLibExt/Logics/Propositional/BDD/Count.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Logics/Propositional/BDD/Count.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html#sat-count-eq-count-models).
+Formalized by `Cslib.Logic.PL.BDD.satCount_eq_countModels`, a theorem declared in [CSLibExt/Logics/Propositional/BDD/Count.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Logics/Propositional/BDD/Count.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html#sat-count-eq-count-models).
 
 ## Depends on
 
@@ -94,4 +94,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Counting satisfying assignments of a BDD](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Logic/propositional-logic/binary-decision-diagrams/counting-satisfying-assignments-of-a-bdd)

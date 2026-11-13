@@ -8,13 +8,13 @@ proof: formalized
 
 # 90.10 Schlessinger's conditions
 
-Section 90.10 of the Stacks Project, [Tag 06HV](https://stacks.math.columbia.edu/tag/06HV). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 90.10 of the Stacks Project, [Tag 06HV](https://stacks.math.columbia.edu/tag/06HV). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06HW, a definition
 
 [Tag 06HW](https://stacks.math.columbia.edu/tag/06HW) in the Stacks Project.
 
-**`Deformation.SchlessingerConditionS1`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Schlessinger/Basic.lean#L148). The attribute's comment: “condition (S1)”. References: SGA 7 VI (1.16), “(I)”.
+**`Deformation.SchlessingerConditionS1`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/Basic.lean#L148). The attribute's comment: “condition (S1)”. References: SGA 7 VI (1.16), “(I)”.
 
 > Schlessinger's condition (S1): every cospan whose second base map is
 > surjective has a completion over a pullback square in `C_Λ`.
@@ -25,7 +25,7 @@ public structure SchlessingerConditionS1
       (p : F ⥤ ArtinianLocalAlgCat.{u, v, w} Λ k) : Prop
 ```
 
-**`Deformation.SchlessingerConditionS2`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Schlessinger/Basic.lean#L161). The attribute's comment: “condition (S2)”.
+**`Deformation.SchlessingerConditionS2`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/Basic.lean#L161). The attribute's comment: “condition (S2)”.
 
 > Schlessinger's condition (S2): completions exist when the second map is
 > the dual-number projection, and any two completions over the same base square
@@ -41,7 +41,7 @@ public structure SchlessingerConditionS2
 
 [Tag 06SP](https://stacks.math.columbia.edu/tag/06SP) in the Stacks Project.
 
-**`Deformation.squareComparisonFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Comparison.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Schlessinger/Comparison.lean#L92).
+**`Deformation.squareComparisonFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Comparison.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/Comparison.lean#L92).
 
 > **Stacks Project, Tag 06SP.** For a pullback square of Artinian local
 > `Λ`-algebras with `f₂` surjective, choices of pushforwards in a category
@@ -68,7 +68,7 @@ public noncomputable def squareComparisonFunctor
 
 [Tag 06HX](https://stacks.math.columbia.edu/tag/06HX) in the Stacks Project.
 
-**`Deformation.schlessingerConditionS1_of_smallExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SmallExtensions.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SchlessingerConditions/SmallExtensions.lean#L288).
+**`Deformation.schlessingerConditionS1_of_smallExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SmallExtensions.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/SchlessingerConditions/SmallExtensions.lean#L288).
 
 > The small-extension cases of the completion property suffice for
 > Schlessinger's condition (S1).
@@ -91,7 +91,7 @@ theorem schlessingerConditionS1_of_smallExtensions
 
 [Tag 06HY](https://stacks.math.columbia.edu/tag/06HY) in the Stacks Project.
 
-**`Deformation.schlessingerConditionS1_elements_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SetValuedFunctor.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SchlessingerConditions/SetValuedFunctor.lean#L119). The attribute's comment: “condition (S1)”.
+**`Deformation.schlessingerConditionS1_elements_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SetValuedFunctor.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/SchlessingerConditions/SetValuedFunctor.lean#L119). The attribute's comment: “condition (S1)”.
 
 > For the category of elements of `F : 𝒞_Λ ⥤ Type t`, Schlessinger's condition (S1) says
 > that the map `F(A₁ ×_A A₂) → F(A₁) ×_{F(A)} F(A₂)` is surjective whenever `A₂ → A` is
@@ -107,7 +107,7 @@ theorem schlessingerConditionS1_elements_iff
             Function.Surjective (fibreProductComparison F g₁ g₂ f₁ f₂ hPB.w)
 ```
 
-**`Deformation.schlessingerConditionS2_elements_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SetValuedFunctor.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SchlessingerConditions/SetValuedFunctor.lean#L140). The attribute's comment: “condition (S2)”.
+**`Deformation.schlessingerConditionS2_elements_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SetValuedFunctor.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/SchlessingerConditions/SetValuedFunctor.lean#L140). The attribute's comment: “condition (S2)”.
 
 > For the category of elements of `F : 𝒞_Λ ⥤ Type t`, Schlessinger's condition (S2) says
 > that the map `F(A ×_k k[ε]) → F(A) ×_{F(k)} F(k[ε])` is bijective.
@@ -126,7 +126,7 @@ theorem schlessingerConditionS2_elements_iff
 
 [Tag 06HZ](https://stacks.math.columbia.edu/tag/06HZ) in the Stacks Project.
 
-**`Deformation.schlessingerConditionS2_completion_squareZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SquareZeroExtension.lean, line 1201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SchlessingerConditions/SquareZeroExtension.lean#L1201). The attribute's comment: “existence of completions”.
+**`Deformation.schlessingerConditionS2_completion_squareZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SquareZeroExtension.lean, line 1201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/SchlessingerConditions/SquareZeroExtension.lean#L1201). The attribute's comment: “existence of completions”.
 
 > The existence clause of (S2) extends from dual numbers to `k[V]` for
 > finite-dimensional `V`.
@@ -146,7 +146,7 @@ theorem schlessingerConditionS2_completion_squareZero
     Nonempty (PullbackCompletion p d e g gV)
 ```
 
-**`Deformation.schlessingerConditionS2_comparison_squareZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SquareZeroExtension.lean, line 1218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SchlessingerConditions/SquareZeroExtension.lean#L1218). The attribute's comment: “comparison of completions”.
+**`Deformation.schlessingerConditionS2_comparison_squareZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SquareZeroExtension.lean, line 1218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/SchlessingerConditions/SquareZeroExtension.lean#L1218). The attribute's comment: “comparison of completions”.
 
 > The comparison clause of (S2) extends from dual numbers to `k[V]` for
 > finite-dimensional `V`.
@@ -173,7 +173,7 @@ theorem schlessingerConditionS2_comparison_squareZero
 
 [Tag 06I0](https://stacks.math.columbia.edu/tag/06I0) in the Stacks Project.
 
-**`Deformation.schlessingerConditionS2_of_isIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/AssociatedFunctor.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Schlessinger/AssociatedFunctor.lean#L450). The attribute's comment: “s2\_associated\_functor”.
+**`Deformation.schlessingerConditionS2_of_isIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/AssociatedFunctor.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/AssociatedFunctor.lean#L450). The attribute's comment: “s2\_associated\_functor”.
 
 > The associated functor of isomorphism classes of a category cofibered in
 > groupoids inherits (S2) if the special fibre is a setoid or automorphisms
@@ -195,10 +195,10 @@ public theorem schlessingerConditionS2_of_isIsomorphismClasses
             (𝓕.p.map b.hom = 𝟙 (𝓕.p.obj xε)) ∧
               (b.hom ≫ e = e ≫ a.hom))) :
     SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses 𝓕 h𝓕))
+      (Functor.Elements.π (isomorphismClasses 𝓕 h𝓕))
 ```
 
-**`Deformation.schlessingerConditionS1_of_isIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Schlessinger/Basic.lean#L354). The attribute's comment: “s1\_associated\_functor”. References: SGA 7 VI (1.13), “partial”.
+**`Deformation.schlessingerConditionS1_of_isIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/Basic.lean#L354). The attribute's comment: “s1\_associated\_functor”. References: SGA 7 VI (1.13), “partial”.
 
 > The associated functor of isomorphism classes of a category cofibered in
 > groupoids inherits Schlessinger's condition (S1).
@@ -217,7 +217,7 @@ public theorem schlessingerConditionS1_of_isIsomorphismClasses
 
 [Tag 06SQ](https://stacks.math.columbia.edu/tag/06SQ) in the Stacks Project.
 
-**`Deformation.schlessingerConditionS1_objectsOverFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Schlessinger/Basic.lean#L288). The attribute's comment: “condition (S1)”.
+**`Deformation.schlessingerConditionS1_objectsOverFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/Basic.lean#L288). The attribute's comment: “condition (S1)”.
 
 > Condition (S1) passes to the category of objects over a fixed object.
 
@@ -231,7 +231,7 @@ public theorem schlessingerConditionS1_objectsOverFunctor
       (objectsOverFunctor p x)
 ```
 
-**`Deformation.schlessingerConditionS2_objectsOverFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Schlessinger/Basic.lean#L304). The attribute's comment: “condition (S2)”.
+**`Deformation.schlessingerConditionS2_objectsOverFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/Basic.lean#L304). The attribute's comment: “condition (S2)”.
 
 > Condition (S2) passes to the category of objects over a fixed object.
 
@@ -245,7 +245,7 @@ public theorem schlessingerConditionS2_objectsOverFunctor
       (objectsOverFunctor p x)
 ```
 
-**`Deformation.schlessingerConditionS2_isomorphismClasses_objectsOverFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean#L69). The attribute's comment: “condition (S2) for the associated functor of a slice”.
+**`Deformation.schlessingerConditionS2_isomorphismClasses_objectsOverFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean#L69). The attribute's comment: “condition (S2) for the associated functor of a slice”.
 
 > **Stacks Project, Tag 06SQ.** Schlessinger's condition (S2) passes from a category
 > cofibered in groupoids to the associated functor of isomorphism classes of its slice
@@ -258,7 +258,7 @@ theorem schlessingerConditionS2_isomorphismClasses_objectsOverFunctor
     (hS2 : SchlessingerConditionS2 p)
     (x : p.Fiber (residueFieldObject.{u, v, w} Λ k)) :
     SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses
+      (Functor.Elements.π (isomorphismClasses
         (BasedCategory.ofFunctor (objectsOverFunctor p x.1))
         (isPredeformationCategory_objectsOverFunctor p hp x).cofibered))
 ```
@@ -267,7 +267,7 @@ theorem schlessingerConditionS2_isomorphismClasses_objectsOverFunctor
 
 [Tag 06IS](https://stacks.math.columbia.edu/tag/06IS) in the Stacks Project.
 
-**`Deformation.exists_section_iff_exists_dualNumberLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Schlessinger/Basic.lean#L190).
+**`Deformation.exists_section_iff_exists_dualNumberLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/Basic.lean#L190).
 
 > **Stacks Project, Tag 06IS.** In a square over the pullback of an
 > Artinian local algebra and the dual numbers over the residue field, a section
@@ -294,7 +294,7 @@ public theorem exists_section_iff_exists_dualNumberLift
 
 [Tag 06IT](https://stacks.math.columbia.edu/tag/06IT) in the Stacks Project.
 
-**`Deformation.exists_lift_of_pushforward_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SmallExtensionLift.lean, line 1035](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SchlessingerConditions/SmallExtensionLift.lean#L1035). References: SGA 7 VI (1.5), “(2)”.
+**`Deformation.exists_lift_of_pushforward_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SmallExtensionLift.lean, line 1035](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/SchlessingerConditions/SmallExtensionLift.lean#L1035). References: SGA 7 VI (1.5), “(2)”.
 
 > A map from `x₁` to the pushforward of `y` along the canonical
 > infinitesimal-coordinate map produces a lift `x₁ → x₂`.
@@ -332,4 +332,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 90.10, Tag 06HV](https://stacks.math.columbia.edu/tag/06HV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

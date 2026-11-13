@@ -8,13 +8,13 @@ proof: formalized
 
 # 80.3 Morphisms representable by algebraic spaces
 
-Section 80.3 of the Stacks Project, [Tag 02YP](https://stacks.math.columbia.edu/tag/02YP). 11 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 80.3 of the Stacks Project, [Tag 02YP](https://stacks.math.columbia.edu/tag/02YP). 11 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02YQ, a definition
 
 [Tag 02YQ](https://stacks.math.columbia.edu/tag/02YQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsRepresentableByAlgebraicSpaces`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean#L85).
+**`AlgebraicGeometry.Space.IsRepresentableByAlgebraicSpaces`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean#L85).
 
 > **Stacks Project, Tag 02YQ.** A morphism of presheaves is representable by algebraic
 > spaces if its pullback to every scheme over the base is an algebraic space.
@@ -28,7 +28,7 @@ abbrev IsRepresentableByAlgebraicSpaces (B : BigFppfSite.{u}) (S : Scheme.{u})
 
 [Tag 03BN](https://stacks.math.columbia.edu/tag/03BN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_of_isAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean#L93).
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_of_isAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean#L93).
 
 > **Stacks 03BN.** A morphism between algebraic spaces over `S` is representable by
 > algebraic spaces: its base change along a scheme-valued point of its target is a fibre
@@ -45,7 +45,7 @@ theorem isRepresentableByAlgebraicSpaces_of_isAlgebraicSpace
 
 [Tag 03Y0](https://stacks.math.columbia.edu/tag/03Y0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_of_isPullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean#L222).
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_of_isPullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean#L222).
 
 > **Stacks Project, Tag 03Y0.** A cartesian base change of a morphism representable by
 > algebraic spaces is representable by algebraic spaces.
@@ -64,7 +64,7 @@ lemma isRepresentableByAlgebraicSpaces_of_isPullback
 
 [Tag 02YR](https://stacks.math.columbia.edu/tag/02YR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSheaf_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean#L157).
+**`AlgebraicGeometry.Space.isSheaf_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean#L157).
 
 > **Stacks Project, Tag 02YR.** A transformation representable by algebraic spaces has a
 > sheaf as its source if its target is a sheaf.
@@ -83,7 +83,7 @@ theorem isSheaf_of_isRepresentableByAlgebraicSpaces
 
 [Tag 05LA](https://stacks.math.columbia.edu/tag/05LA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableDiagonal.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableDiagonal.lean#L62).
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableDiagonal.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableDiagonal.lean#L62).
 
 > **Stacks Project, Tag 05LA.** The relative diagonal of a transformation representable
 > by algebraic spaces is representable by algebraic spaces.
@@ -100,7 +100,7 @@ theorem isRepresentableByAlgebraicSpaces_diagonal
 
 [Tag 02YS](https://stacks.math.columbia.edu/tag/02YS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpaceULift_of_isRepresentable_uliftYoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperLocality.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperLocality.lean#L104). The attribute's comment: “representable target, arbitrary value universe”.
+**`AlgebraicGeometry.Space.isAlgebraicSpaceULift_of_isRepresentable_uliftYoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperLocality.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperLocality.lean#L104). The attribute's comment: “representable target, arbitrary value universe”.
 
 > The source of a morphism of presheaves with values in `Type (max w u)` which is
 > representable by algebraic spaces and whose target is isomorphic to the universe-lifted Yoneda
@@ -114,7 +114,7 @@ theorem isAlgebraicSpaceULift_of_isRepresentable_uliftYoneda
     IsAlgebraicSpaceULift.{w} B S hS F
 ```
 
-**`AlgebraicGeometry.isAlgebraicSpace_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RepresentableByAlgebraicSpaces.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RepresentableByAlgebraicSpaces.lean#L187).
+**`AlgebraicGeometry.isAlgebraicSpace_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RepresentableByAlgebraicSpaces.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RepresentableByAlgebraicSpaces.lean#L187).
 
 > **Stacks 02YS.** A transformation representable by algebraic spaces to an algebraic space over
 > `S` has an algebraic space over `S` as its source.
@@ -139,7 +139,7 @@ theorem isAlgebraicSpace_of_isRepresentableByAlgebraicSpaces
 
 [Tag 03XY](https://stacks.math.columbia.edu/tag/03XY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpaceULift_pullback_of_isRepresentableULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean#L404). The attribute's comment: “in an arbitrary value universe”.
+**`AlgebraicGeometry.Space.isAlgebraicSpaceULift_pullback_of_isRepresentableULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean#L404). The attribute's comment: “in an arbitrary value universe”.
 
 > The fibre product of an algebraic space over `S` with the source of a
 > morphism representable by algebraic spaces, over the target of that morphism, is an algebraic
@@ -153,7 +153,7 @@ theorem isAlgebraicSpaceULift_pullback_of_isRepresentableULift
     IsAlgebraicSpaceULift.{w} B S hS (pullback f a)
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_pullback_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean#L103).
+**`AlgebraicGeometry.Space.isAlgebraicSpace_pullback_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean#L103).
 
 > **Stacks 03XY.** The fibre product of an algebraic space over `S` with the source of a
 > morphism representable by algebraic spaces, over the target of that morphism, is an
@@ -171,7 +171,7 @@ theorem isAlgebraicSpace_pullback_of_isRepresentableByAlgebraicSpaces
 
 [Tag 03Y1](https://stacks.math.columbia.edu/tag/03Y1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean#L118).
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean#L118).
 
 > **Stacks 03Y1.** A composite of morphisms of presheaves on the big fppf site of `S`
 > representable by algebraic spaces is representable by algebraic spaces.
@@ -191,7 +191,7 @@ theorem isRepresentableByAlgebraicSpaces_comp
 
 [Tag 046D](https://stacks.math.columbia.edu/tag/046D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_prod_map`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean#L132).
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_prod_map`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean#L132).
 
 > **Stacks 046D.** The product of two morphisms of presheaves on the big fppf site of `S`
 > representable by algebraic spaces is representable by algebraic spaces.
@@ -211,7 +211,7 @@ lemma isRepresentableByAlgebraicSpaces_prod_map
 
 [Tag 0AMN](https://stacks.math.columbia.edu/tag/0AMN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpacesULift_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean#L417). The attribute's comment: “representable by algebraic spaces in an arbitrary value universe”.
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpacesULift_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean#L417). The attribute's comment: “representable by algebraic spaces in an arbitrary value universe”.
 
 > If the relative diagonal of `b` and the composite `a ≫ b` are
 > representable by algebraic spaces, then so is `a`, for presheaves on the big fppf site of `S`
@@ -225,7 +225,7 @@ theorem isRepresentableByAlgebraicSpacesULift_of_comp
     IsRepresentableByAlgebraicSpacesULift.{w} B S hS a
 ```
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean#L153).
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Stability.lean#L153).
 
 > **Stacks 0AMN.** If the relative diagonal of `b` and the composite `a ≫ b` are
 > representable by algebraic spaces, then so is `a`.
@@ -245,7 +245,7 @@ theorem isRepresentableByAlgebraicSpaces_of_comp
 
 [Tag 07WE](https://stacks.math.columbia.edu/tag/07WE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSheaf_of_locallySurjective_representable_subfunctors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/SheafFromSubsheaves.lean, line 674](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/SheafFromSubsheaves.lean#L674).
+**`AlgebraicGeometry.Space.isSheaf_of_locallySurjective_representable_subfunctors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/SheafFromSubsheaves.lean, line 674](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/SheafFromSubsheaves.lean#L674).
 
 > **Stacks 07WE.** A Zariski sheaf on the big fppf site over `S` which is covered, locally for
 > the fppf topology, by fppf subsheaves whose inclusions are representable by algebraic spaces is
@@ -270,4 +270,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 80.3, Tag 02YP](https://stacks.math.columbia.edu/tag/02YP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

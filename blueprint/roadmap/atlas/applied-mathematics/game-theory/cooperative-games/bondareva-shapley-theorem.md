@@ -8,7 +8,7 @@ proof: formalized
 
 # Bondareva–Shapley theorem
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/cooperative-games/bondareva-shapley-theorem/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/cooperative-games/bondareva-shapley-theorem/index.html).
 
 ## Core allocation
 
@@ -17,7 +17,7 @@ cooperative game $v$ on a finite set $N$ of players if it is efficient,
 $\sum_{i \in N} x_i = v(N)$, and coalitionally rational, $v(S) \le \sum_{i \in S} x_i$ for every
 coalition $S \subseteq N$.
 
-Formalized by `MathlibExt.GameTheory.BondarevaShapleyWanted.IsCoreAllocation`, a definition declared in [MathlibExt/GameTheory/BondarevaShapley.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GameTheory/BondarevaShapley.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/cooperative-games/bondareva-shapley-theorem/index.html#is-core-allocation).
+Formalized by `MathlibExt.GameTheory.BondarevaShapleyWanted.IsCoreAllocation`, a definition declared in [MathlibExt/GameTheory/BondarevaShapley.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GameTheory/BondarevaShapley.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/cooperative-games/bondareva-shapley-theorem/index.html#is-core-allocation).
 
 ## Balanced cooperative game
 
@@ -26,7 +26,7 @@ balanced if for every family of real weights $(\lambda_S)_{S \subseteq N}$ with 
 for every coalition $S \subseteq N$ and $\sum_{S \subseteq N,\, i \in S} \lambda_S = 1$ for every
 player $i \in N$, one has $\sum_{S \subseteq N} \lambda_S \, v(S) \le v(N)$.
 
-Formalized by `MathlibExt.GameTheory.BondarevaShapleyWanted.IsBalanced`, a definition declared in [MathlibExt/GameTheory/BondarevaShapley.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GameTheory/BondarevaShapley.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/cooperative-games/bondareva-shapley-theorem/index.html#is-balanced).
+Formalized by `MathlibExt.GameTheory.BondarevaShapleyWanted.IsBalanced`, a definition declared in [MathlibExt/GameTheory/BondarevaShapley.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GameTheory/BondarevaShapley.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/cooperative-games/bondareva-shapley-theorem/index.html#is-balanced).
 
 ## Bondareva–Shapley theorem
 
@@ -38,7 +38,7 @@ the core of $v$ is nonempty, if and only if $v$ is balanced.
 
 - O. N. Bondareva, Probl. Kibernet. 10 (1963), 119-139; L. S. Shapley, Naval Res. Log. Quart. 14 (1967), 453-460, DOI 10.1002/nav.3800140404.
 
-Formalized by `MathlibExt.GameTheory.BondarevaShapleyWanted.bondareva_shapley`, a theorem declared in [MathlibExt/GameTheory/BondarevaShapley.lean, line 488](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GameTheory/BondarevaShapley.lean#L488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/cooperative-games/bondareva-shapley-theorem/index.html#bondareva-shapley).
+Formalized by `MathlibExt.GameTheory.BondarevaShapleyWanted.bondareva_shapley`, a theorem declared in [MathlibExt/GameTheory/BondarevaShapley.lean, line 488](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GameTheory/BondarevaShapley.lean#L488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/cooperative-games/bondareva-shapley-theorem/index.html#bondareva-shapley).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bondareva–Shapley theorem](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/cooperative-games/bondareva-shapley-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/cooperative-games/bondareva-shapley-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/cooperative-games/bondareva-shapley-theorem)

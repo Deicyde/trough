@@ -8,13 +8,13 @@ proof: formalized
 
 # 95.4 Quasi-coherent sheaves
 
-Section 95.4 of the Stacks Project, [Tag 03YL](https://stacks.math.columbia.edu/tag/03YL). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 95.4 of the Stacks Project, [Tag 03YL](https://stacks.math.columbia.edu/tag/03YL). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04U2, an equation
 
 [Tag 04U2](https://stacks.math.columbia.edu/tag/04U2) in the Stacks Project.
 
-**`Stacks.QCoh.exists_categoryData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Basic.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Basic.lean#L177). The attribute's comment: “quasi-coherent category and f-map homs”.
+**`Stacks.QCoh.exists_categoryData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Basic.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Basic.lean#L177). The attribute's comment: “quasi-coherent category and f-map homs”.
 
 > **Stacks 04U2.** The category of quasi-coherent pairs over `S` exists together with its
 > projection to the big fppf slice, and its morphisms are exactly the pairs of a morphism of
@@ -25,7 +25,7 @@ Section 95.4 of the Stacks Project, [Tag 03YL](https://stacks.math.columbia.edu/
 public theorem exists_categoryData : Nonempty (CategoryData B S hS)
 ```
 
-**`Stacks.QCoh.homEquivPullbackHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Basic.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Basic.lean#L209). The attribute's comment: “pullback hom equation”.
+**`Stacks.QCoh.homEquivPullbackHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Basic.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Basic.lean#L209). The attribute's comment: “pullback hom equation”.
 
 > **Stacks 04U2.** A hom-set of the category of quasi-coherent pairs is the disjoint union,
 > over the morphisms `f` of the base, of the morphisms from the pullback of the target module
@@ -42,7 +42,7 @@ public noncomputable def homEquivPullbackHom (A C : Object B S hS) :
 
 [Tag 04U3](https://stacks.math.columbia.edu/tag/04U3) in the Stacks Project.
 
-**`Stacks.QCoh.isStronglyCartesian_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StronglyCartesian.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StronglyCartesian.lean#L342).
+**`Stacks.QCoh.isStronglyCartesian_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StronglyCartesian.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StronglyCartesian.lean#L342).
 
 > **Stacks 04U3.** An arrow of quasi-coherent modules is strongly cartesian if and only if
 > its canonical pullback comparison map is an isomorphism.
@@ -58,7 +58,7 @@ public theorem isStronglyCartesian_iff :
 
 [Tag 03YM](https://stacks.math.columbia.edu/tag/03YM) in the Stacks Project.
 
-**`Stacks.QCoh.projection_isFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Fibred.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Fibred.lean#L147). The attribute's comment: “condition (1): the functor is a fibred category”. References: SGA 1 VIII (1.1), “special case”.
+**`Stacks.QCoh.projection_isFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Fibred.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Fibred.lean#L147). The attribute's comment: “condition (1): the functor is a fibred category”. References: SGA 1 VIII (1.1), “special case”.
 
 > **Stacks 03YM, condition (1) of Stacks 026F**: the projection from quasi-coherent modules on
 > the schemes of the big fppf site over `S` to that site is a fibred category. A cartesian lift of
@@ -71,7 +71,7 @@ public theorem projection_isFibered (B : AlgebraicGeometry.BigFppfSite.{u}) (S :
     (projection (B := B) (S := S) (hS := hS)).IsFibered
 ```
 
-**`Stacks.QCoh.projection_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Stack/SchemeDescent.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Stack/SchemeDescent.lean#L616). References: SGA 1 VIII (1.1), “special case”; SGA 1 VIII (1.3), “special case”.
+**`Stacks.QCoh.projection_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Stack/SchemeDescent.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Stack/SchemeDescent.lean#L616). References: SGA 1 VIII (1.1), “special case”; SGA 1 VIII (1.3), “special case”.
 
 > **Stacks 03YM.**  The projection `p : 𝒬𝒞oh ⟶ (Sch/S)_fppf` from quasi-coherent modules on the
 > schemes of the big fppf site over `S` to that site satisfies the three conditions of Stacks 026F:
@@ -103,4 +103,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 95.4, Tag 03YL](https://stacks.math.columbia.edu/tag/03YL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

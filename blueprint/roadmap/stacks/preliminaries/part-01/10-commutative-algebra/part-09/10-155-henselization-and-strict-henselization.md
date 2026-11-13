@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: IsLocalRing.exists_henselization, IsLocalRing.exists_strictHenselization, Stacks.StrictHenselization.exists_isStrictHenselization, IsLocalRing.IsHenselization, IsLocalRing.IsHenselization.exists_strictHenselization_iUnion_finiteEtale, existsUnique_ringHom_to_henselian_of_etale, HenselianLocalRing.indEtaleAlgHom, HenselianLocalRing.isLocalHom_indEtaleAlgHom
+lean: IsLocalRing.exists_henselization, Stacks.StrictHenselization.exists_henselization_isStrictHenselization, IsLocalRing.IsHenselization, IsLocalRing.IsHenselization.exists_strictHenselization_iUnion_finiteEtale, existsUnique_ringHom_to_henselian_of_etale, HenselianLocalRing.indEtaleAlgHom, HenselianLocalRing.isLocalHom_indEtaleAlgHom, HenselianLocalRing.indEtaleAlgHom_unique
 statement: formalized
 proof: formalized
 ---
 
 # 10.155 Henselization and strict henselization
 
-Section 10.155 of the Stacks Project, [Tag 0BSK](https://stacks.math.columbia.edu/tag/0BSK). 13 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.155 of the Stacks Project, [Tag 0BSK](https://stacks.math.columbia.edu/tag/0BSK). 13 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04GN, a lemma
 
 [Tag 04GN](https://stacks.math.columbia.edu/tag/04GN) in the Stacks Project.
 
-**`IsLocalRing.exists_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Henselization/Existence.lean, line 709](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Henselization/Existence.lean#L709). The attribute's comment: “The lemma's preamble, a local ring map `R → Rh`, is the `Algebra R Rh`, `IsLocalRing Rh` and `IsLocalHom (algebraMap R Rh)` binders; the four conjuncts are its items (1)–(4). `Rh` being a filtered colimit of étale `R`-algebras is `(CommAlgCat.etale R).ind`, i.e. `Rh` is ind-étale over `R`; `𝔪 Rh` is `Ideal.map`; and `κ = Rh/𝔪 Rh` is bijectivity of the canonical `IsLocalRing.ResidueField.map`. See the module docstring.”. References: EGA IV (18.6.6), “(i), part of (iii)”; SGA 4 VIII (4.1), “henselization”; SGA 4 VIII (4.1), “henselization”.
+**`IsLocalRing.exists_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Henselization/Existence.lean, line 709](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Henselization/Existence.lean#L709). The attribute's comment: “The lemma's preamble, a local ring map `R → Rh`, is the `Algebra R Rh`, `IsLocalRing Rh` and `IsLocalHom (algebraMap R Rh)` binders; the four conjuncts are its items (1)–(4). `Rh` being a filtered colimit of étale `R`-algebras is `(CommAlgCat.etale R).ind`, i.e. `Rh` is ind-étale over `R`; `𝔪 Rh` is `Ideal.map`; and `κ = Rh/𝔪 Rh` is bijectivity of the canonical `IsLocalRing.ResidueField.map`. See the module docstring.”. References: EGA IV (18.6.6), “(i), part of (iii)”; SGA 4 VIII (4.1), “henselization”.
 
 > **Existence of the henselization of a local ring** (Stacks 04GN). For a local ring
 > `(R, 𝔪, κ)` there is a local ring map `R → Rh` such that (1) `Rh` is henselian, (2) `Rh` is a
@@ -35,55 +35,46 @@ public theorem IsLocalRing.exists_henselization (R : Type u) [CommRing R] [IsLoc
 
 [Tag 04GP](https://stacks.math.columbia.edu/tag/04GP) in the Stacks Project.
 
-**`IsLocalRing.exists_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization/Existence.lean, line 898](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/StrictHenselization/Existence.lean#L898). The attribute's comment: “The diagram's middle column is a hypothesis: `Rh` is any local ind-étale `R`-algebra with residue field `κ`, which by Lemmas 04GN and 04GS is the henselization; the conclusion produces `Rsh` with the algebra structure over `Rh` and item (1). Strictly henselian is `HenselianLocalRing` plus `IsSepClosed` on the residue field, `Rsh` a filtered colimit of étale `R`-algebras is `(CommAlgCat.etale R).ind`, `𝔪 Rsh` is `Ideal.map`, and `κ^sep = Rsh/𝔪 Rsh` is an isomorphism `κ^sep ≃+* ResidueField Rsh` compatible with the maps out of `R`. See the module docstring.”. References: EGA IV (18.8.8), “(i), part of (iii)”.
+**`Stacks.StrictHenselization.exists_henselization_isStrictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization/ExistenceData.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/StrictHenselization/ExistenceData.lean#L220). The attribute's comment: “The middle column `R → Rh` is produced, with the four properties of Lemma 04GN (`IsLocalHom`, `HenselianLocalRing`, `(CommAlgCat.etale R).ind`, `𝔪 Rh` the maximal ideal, and bijectivity of the residue field map, which is the vertical `κ = κ`). The map `Rh → Rsh` is the `Algebra Rh Rsh` with `IsScalarTower R Rh Rsh`, and item (1) is `IsLocalHom (algebraMap Rh Rsh)`. Items (2)–(5) and the outer rectangle are the predicate `Stacks.StrictHenselization.IsStrictHenselization`: strictly henselian is `henselian` plus `sepClosed`, the filtered colimit is `isFilteredColimitEtale`, `𝔪 Rsh` is `maximalIdeal_map`, and `κ^sep = Rsh/𝔪 Rsh` is `residueFieldEquiv` with its compatibility `residueFieldEquiv_comp`. The right square is the last clause: the residue class of `y : Rh` in `κ` is that of any `x : R` with the same residue in `Rh`, and its image in `κ^sep` is the class of `y` in `Rsh`. The residue field of `R` is spelled `(maximalIdeal R).ResidueField`, and `κ^sep` may lie in any universe.”. References: EGA IV (18.8.7); EGA IV (18.8.8); SGA 4 VIII (4.4).
 
-> **Existence of the strict henselization of a local ring.** Let `(R, 𝔪, κ)` be a local ring,
-> let `κ ⊆ κ^sep` be a separable algebraic closure, and let `Rh` be a local `R`-algebra with
-> `R → Rh` local which is a filtered colimit of étale `R`-algebras with residue field `κ` (the
-> henselization of `R`). Then there is a commutative diagram `R → Rh → Rsh` over `κ → κ → κ^sep`
-> such that (1) `Rh → Rsh` is a local ring map, (2) `Rsh` is strictly henselian, (3) `Rsh` is a
-> filtered colimit of étale `R`-algebras, (4) `𝔪 Rsh` is the maximal ideal of `Rsh`, and (5) the
-> residue field of `Rsh` is `κ^sep`.
-
-```lean
-public theorem IsLocalRing.exists_strictHenselization (R : Type u) [CommRing R] [IsLocalRing R]
-    (Rh : Type u) [CommRing Rh] [IsLocalRing Rh] [Algebra R Rh] [IsLocalHom (algebraMap R Rh)]
-    (hRh : (CommAlgCat.etale.{u} R).ind.{u} (CommAlgCat.of R Rh))
-    (hRhres : Function.Surjective (ResidueField.map (algebraMap R Rh)))
-    (κsep : Type u) [Field κsep] [Algebra (ResidueField R) κsep]
-    [IsSepClosure (ResidueField R) κsep] :
-    ∃ (Rsh : Type u) (_ : CommRing Rsh) (_ : IsLocalRing Rsh) (_ : Algebra R Rsh)
-      (_ : Algebra Rh Rsh) (_ : IsScalarTower R Rh Rsh) (_ : IsLocalHom (algebraMap Rh Rsh)),
-      HenselianLocalRing Rsh ∧
-      IsSepClosed (ResidueField Rsh) ∧
-      (CommAlgCat.etale.{u} R).ind.{u} (CommAlgCat.of R Rsh) ∧
-      (maximalIdeal R).map (algebraMap R Rsh) = maximalIdeal Rsh ∧
-      ∃ e : κsep ≃+* ResidueField Rsh, ∀ x : R,
-        e (algebraMap (ResidueField R) κsep (residue R x)) = residue Rsh (algebraMap R Rsh x)
-```
-
-**`Stacks.StrictHenselization.exists_isStrictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization/ExistenceData.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/StrictHenselization/ExistenceData.lean#L164). The attribute's comment: “The five properties of the source's conclusion are bundled into the predicate `Stacks.StrictHenselization.IsStrictHenselization`, and the henselization `R^h`, which the sibling statement in `StrictHenselization.Existence` carries as a hypothesis, is produced here by `IsLocalRing.exists_henselization` rather than assumed; so this is the source's existential form. The separable algebraic closure is taken over `(maximalIdeal R).ResidueField`, the spelling `IsStrictHenselization` uses, and may lie in a universe independent of `R`.”. References: EGA IV (18.8.7); EGA IV (18.8.8); SGA 4 VIII (4.4).
-
-> **Existence of the strict henselization** (Stacks 04GP). A local ring `(R, 𝔪, κ)` together
-> with a separable algebraic closure `κ ⊆ κ^sep` of its residue field admits a local `R`-algebra
-> `R^{sh}` which is a strict henselization of `R` with respect to `κ ⊆ κ^sep`, that is: it is
-> strictly henselian, `R → R^{sh}` is a local ring map realizing `R^{sh}` as a filtered colimit of
-> étale `R`-algebras, `𝔪 R^{sh}` is the maximal ideal of `R^{sh}`, and the residue field of
-> `R^{sh}` is identified with `κ^sep` compatibly with `κ ⊆ κ^sep`.
+> **Existence of the henselization and the strict henselization** (Stacks 04GP). Let
+> `(R, 𝔪, κ)` be a local ring and let `κ ⊆ κ^sep` be a separable algebraic closure. There is a
+> commutative diagram
+> ```
+> κ  →  κ  →  κ^sep
+> ↑     ↑      ↑
+> R  →  Rh  →  Rsh
+> ```
+> where `R → Rh` is the henselization of `R` (Stacks 04GN: a local ring map, `Rh` henselian and a
+> filtered colimit of étale `R`-algebras, `𝔪 Rh` the maximal ideal of `Rh`, and `κ = Rh/𝔪 Rh`),
+> such that (1) `Rh → Rsh` is local, (2) `Rsh` is strictly henselian, (3) `Rsh` is a filtered
+> colimit of étale `R`-algebras, (4) `𝔪 Rsh` is the maximal ideal of `Rsh`, and
+> (5) `κ^sep = Rsh/𝔪 Rsh`.
 
 ```lean
-public theorem exists_isStrictHenselization (R : Type u) [CommRing R] [IsLocalRing R]
-    (κ : Type v) [Field κ] [Algebra (maximalIdeal R).ResidueField κ]
+public theorem exists_henselization_isStrictHenselization (R : Type u) [CommRing R]
+    [IsLocalRing R] (κ : Type v) [Field κ] [Algebra (maximalIdeal R).ResidueField κ]
     [IsSepClosure (maximalIdeal R).ResidueField κ] :
-    ∃ (Rsh : Type u) (_ : CommRing Rsh) (_ : IsLocalRing Rsh) (_ : Algebra R Rsh),
-      Nonempty (IsStrictHenselization R κ Rsh)
+    ∃ (Rh : Type u) (_ : CommRing Rh) (_ : Algebra R Rh) (_ : IsLocalRing Rh)
+      (_ : IsLocalHom (algebraMap R Rh)),
+      HenselianLocalRing Rh ∧
+      (CommAlgCat.etale.{u} R).ind.{u} (CommAlgCat.of R Rh) ∧
+      (maximalIdeal R).map (algebraMap R Rh) = maximalIdeal Rh ∧
+      Function.Bijective (ResidueField.map (algebraMap R Rh)) ∧
+      ∃ (Rsh : Type u) (_ : CommRing Rsh) (_ : IsLocalRing Rsh) (_ : Algebra R Rsh)
+        (_ : Algebra Rh Rsh) (_ : IsScalarTower R Rh Rsh) (_ : IsLocalHom (algebraMap Rh Rsh))
+        (h : IsStrictHenselization R κ Rsh), ∀ (y : Rh) (x : R),
+          residue Rh (algebraMap R Rh x) = residue Rh y →
+          h.residueFieldEquiv (algebraMap (maximalIdeal R).ResidueField κ
+              (algebraMap R (maximalIdeal R).ResidueField x)) =
+            algebraMap Rsh (maximalIdeal Rsh).ResidueField (algebraMap Rh Rsh y)
 ```
 
 ## Tag 04GQ, a definition
 
 [Tag 04GQ](https://stacks.math.columbia.edu/tag/04GQ) in the Stacks Project.
 
-**`IsLocalRing.IsHenselization`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Henselization/Defs.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Henselization/Defs.lean#L169). The attribute's comment: “One predicate for the source's three items: part (1) is `IsHenselization R (ResidueField R) Rh`, part (2) is `IsHenselization R κsep Rsh` for `κ ⊆ κ^sep` a separable algebraic closure, and part (3) is the isomorphism invariance of the three fields, which by Lemma 08HT makes them equivalent to being isomorphic to a ring Lemma 04GP constructs. `Rh` being a filtered colimit of étale `R`-algebras is `(CommAlgCat.etale R).ind`, as in Lemmas 04GN and 04GP, and the residue field condition is item (5) of Lemma 04GP. Locality of `R → Rh` and `𝔪 Rh = 𝔪_{Rh}` are consequences, not fields. See the module docstring.”. References: EGA IV (18.8.7).
+**`IsLocalRing.IsHenselization`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Henselization/Defs.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Henselization/Defs.lean#L169). The attribute's comment: “One predicate for the source's three items: part (1) is `IsHenselization R (ResidueField R) Rh`, part (2) is `IsHenselization R κsep Rsh` for `κ ⊆ κ^sep` a separable algebraic closure, and part (3) is the isomorphism invariance of the three fields, which by Lemma 08HT makes them equivalent to being isomorphic to a ring Lemma 04GP constructs. `Rh` being a filtered colimit of étale `R`-algebras is `(CommAlgCat.etale R).ind`, as in Lemmas 04GN and 04GP, and the residue field condition is item (5) of Lemma 04GP. Locality of `R → Rh` and `𝔪 Rh = 𝔪_{Rh}` are consequences, not fields. See the module docstring.”. References: EGA IV (18.8.7).
 
 > **Henselization of a local ring** (Stacks 04GQ). Let `(R, 𝔪, κ)` be a local ring and let
 > `κ ⊆ L` be an extension of its residue field. A local `R`-algebra `Rh` is a *henselization of `R`
@@ -103,7 +94,7 @@ public class IsLocalRing.IsHenselization (R : Type u) [CommRing R] [IsLocalRing 
 
 [Tag 0BSL](https://stacks.math.columbia.edu/tag/0BSL) in the Stacks Project.
 
-**`IsLocalRing.IsHenselization.exists_strictHenselization_iUnion_finiteEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization/OfHenselization.lean, line 604](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/StrictHenselization/OfHenselization.lean#L604). The attribute's comment: “The rings `R^h(κ')` are local `Rh`-algebras `A κ'` with injective embeddings `ι` into `Rsh` exhausting it, which is the union of the source. The transition maps are pinned as the unique maps compatible with the inclusions of residue fields, and each `A κ'` is unique up to a unique isomorphism inducing the identity of `κ'`. That `Rsh` is the strict henselization is `IsHenselization` over `Rh` and over `R` with residue field `κsep`.”.
+**`IsLocalRing.IsHenselization.exists_strictHenselization_iUnion_finiteEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization/OfHenselization.lean, line 604](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/StrictHenselization/OfHenselization.lean#L604). The attribute's comment: “The rings `R^h(κ')` are local `Rh`-algebras `A κ'` with injective embeddings `ι` into `Rsh` exhausting it, which is the union of the source. The transition maps are pinned as the unique maps compatible with the inclusions of residue fields, and each `A κ'` is unique up to a unique isomorphism inducing the identity of `κ'`. That `Rsh` is the strict henselization is `IsHenselization` over `Rh` and over `R` with residue field `κsep`.”.
 
 > **The strict henselization as a union of finite étale extensions of the henselization**
 > (Stacks 0BSL). Let `R → Rh` be a henselization of the local ring `R` and let `κsep` be a separable
@@ -146,7 +137,7 @@ theorem IsLocalRing.IsHenselization.exists_strictHenselization_iUnion_finiteEtal
 
 [Tag 04GR](https://stacks.math.columbia.edu/tag/04GR) in the Stacks Project.
 
-**`existsUnique_ringHom_to_henselian_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean#L543). References: EGA IV (18.5.11), “special case”; EGA IV (18.5.12), “special case”; EGA IV (18.5.17), “affine étale morphisms”; EGA IV (18.6.2); EGA IV (18.8.1), “(a)⇒(c), special case”; EGA IV (18.8.4), “special case”; SGA 1 I (6.2), “special case”; SGA 3 XI (1.11), “special case”; SGA 4 VIII (4.1), “(iii)”.
+**`existsUnique_ringHom_to_henselian_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean#L543). References: EGA IV (18.5.11), “special case”; EGA IV (18.5.12), “special case”; EGA IV (18.5.17), “affine étale morphisms”; EGA IV (18.6.2); EGA IV (18.8.1), “(a)⇒(c), special case”; EGA IV (18.8.4), “special case”; SGA 1 I (6.2), “special case”; SGA 3 XI (1.11), “special case”; SGA 4 VIII (4.1), “(iii)”.
 
 > **Stacks Tag 04GR.**
 > Let `R, S, Sh` be local rings, `R → S` (`rs`) a local ring homomorphism, and
@@ -176,7 +167,7 @@ theorem existsUnique_ringHom_to_henselian_of_etale
 
 [Tag 04GS](https://stacks.math.columbia.edu/tag/04GS) in the Stacks Project.
 
-**`HenselianLocalRing.indEtaleAlgHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean#L376). The attribute's comment: “The map of the universal property of `R^h`: the target is an arbitrary henselian local ring `Sh` with `R → Sh` local, since the source's `S` enters only through the composite `R → S → S^h`. Of the henselization `R → Rh` only the two items of Lemma 04GN that the proof uses are assumed — ind-étale, `(CommAlgCat.etale R).ind`, and surjectivity on residue fields. The commutative square is the `R`-algebra structure of the map. `isLocalHom_indEtaleAlgHom` and `indEtaleAlgHom_unique` are its defining property and its uniqueness. See the module docstring.”.
+**`HenselianLocalRing.indEtaleAlgHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean#L376). The attribute's comment: “The map of the universal property of `R^h`: the target is an arbitrary henselian local ring `Sh` with `R → Sh` local, since the source's `S` enters only through the composite `R → S → S^h`. Of the henselization `R → Rh` only the two items of Lemma 04GN that the proof uses are assumed — ind-étale, `(CommAlgCat.etale R).ind`, and surjectivity on residue fields. The commutative square is the `R`-algebra structure of the map. `isLocalHom_indEtaleAlgHom` and `indEtaleAlgHom_unique` are its defining property and its uniqueness. See the module docstring.”.
 
 > **The map given by the universal property of the henselization** (Stacks 04GS). Let
 > `(R, 𝔪, κ)` be a local ring, let `Rh` be a local `R`-algebra with `R → Rh` local which is a
@@ -198,7 +189,7 @@ noncomputable def HenselianLocalRing.indEtaleAlgHom
     Rh →ₐ[R] Sh
 ```
 
-**`HenselianLocalRing.isLocalHom_indEtaleAlgHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean#L390). The attribute's comment: “the defining property of `indEtaleAlgHom`”.
+**`HenselianLocalRing.isLocalHom_indEtaleAlgHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean#L390). The attribute's comment: “the defining property of `indEtaleAlgHom`”.
 
 > `HenselianLocalRing.indEtaleAlgHom` is a local ring map.
 
@@ -214,7 +205,7 @@ public theorem HenselianLocalRing.isLocalHom_indEtaleAlgHom
     IsLocalHom (HenselianLocalRing.indEtaleAlgHom (Sh := Sh) hind hres)
 ```
 
-**`HenselianLocalRing.indEtaleAlgHom_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean#L404). The attribute's comment: “uniqueness of `indEtaleAlgHom`”.
+**`HenselianLocalRing.indEtaleAlgHom_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/HenselizationUniversalProperty.lean#L404). The attribute's comment: “uniqueness of `indEtaleAlgHom`”.
 
 > `HenselianLocalRing.indEtaleAlgHom` is the only local `R`-algebra map `Rh → Sh`.
 
@@ -235,7 +226,7 @@ public theorem HenselianLocalRing.indEtaleAlgHom_unique
 
 [Tag 04GV](https://stacks.math.columbia.edu/tag/04GV) in the Stacks Project.
 
-**`IsLocalRing.IsHenselization.isFiltered_etaleNeighborhood_and_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Henselization/EtaleNeighborhood.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Henselization/EtaleNeighborhood.lean#L333). The attribute's comment: “Étale neighborhoods `(S, q)` with `κ(p) = κ(q)` are étale `R`-algebras with an augmentation to `κ(p)`, whose kernel is `q`. `canonically` is the characterization of the colimit maps `S → (R_p)^h`: the unique family inducing the identity of `κ(p) = κ((R_p)^h)` on residue fields; the maps `S_q → (R_p)^h` are pinned by extending them along `S → S_q`. The henselization is `IsHenselization` with residue field `κ(p)`.”. References: SGA 4 VIII (4.1), “more general”.
+**`IsLocalRing.IsHenselization.isFiltered_etaleNeighborhood_and_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Henselization/EtaleNeighborhood.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Henselization/EtaleNeighborhood.lean#L333). The attribute's comment: “Étale neighborhoods `(S, q)` with `κ(p) = κ(q)` are étale `R`-algebras with an augmentation to `κ(p)`, whose kernel is `q`. `canonically` is the characterization of the colimit maps `S → (R_p)^h`: the unique family inducing the identity of `κ(p) = κ((R_p)^h)` on residue fields; the maps `S_q → (R_p)^h` are pinned by extending them along `S → S_q`. The henselization is `IsHenselization` with residue field `κ(p)`.”. References: SGA 4 VIII (4.1), “more general”.
 
 > **The henselization as a colimit of étale neighborhoods** (Stacks 04GV). Let `p` be a prime of
 > `R` and let `Rh` be a henselization of `R_p`. The category of étale neighborhoods `(S, q)` of `p`
@@ -262,7 +253,7 @@ theorem isFiltered_etaleNeighborhood_and_isColimit :
 
 [Tag 08HU](https://stacks.math.columbia.edu/tag/08HU) in the Stacks Project.
 
-**`IsLocalRing.IsHenselization.exists_unique_prime_isHenselization_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Henselization/TensorProduct.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Henselization/TensorProduct.lean#L366). The attribute's comment: “The map `R^h → S^h` of 04GS is pinned as the unique local `R`-algebra map `f` compatible with `R_p → S_q`. The prime is characterized by its two contractions, with uniqueness, and equals `g⁻¹(𝔪_{S^h})` for the map `g` induced by `f`; that `S^h` is the henselization of `(R^h ⊗_R S)_Q` is `IsHenselization` with residue field `κ(Q)`, through an algebra structure extending `g`. All rings share one universe, as `IsHenselization` requires.”.
+**`IsLocalRing.IsHenselization.exists_unique_prime_isHenselization_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Henselization/TensorProduct.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Henselization/TensorProduct.lean#L366). The attribute's comment: “The map `R^h → S^h` of 04GS is pinned as the unique local `R`-algebra map `f` compatible with `R_p → S_q`. The prime is characterized by its two contractions, with uniqueness, and equals `g⁻¹(𝔪_{S^h})` for the map `g` induced by `f`; that `S^h` is the henselization of `(R^h ⊗_R S)_Q` is `IsHenselization` with residue field `κ(Q)`, through an algebra structure extending `g`. All rings share one universe, as `IsHenselization` requires.”.
 
 > **The henselization after a ring map** (Stacks 08HU). Let `R → S` be a ring map and let
 > `q ⊆ S` lie over `p ⊆ R`. Let `Rh` and `Sh` be henselizations of `R_p` and `S_q`. The local
@@ -298,7 +289,7 @@ theorem exists_unique_prime_isHenselization_tensorProduct [Algebra R Sq] [Algebr
             (algebraMap (Rh ⊗[R] S) (Localization.AtPrime Q)) = g.toRingHom
 ```
 
-**`StacksDraft.henselization_tensorProduct_at_unique_prime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/HenselizationUniverse/TensorProduct.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/HenselizationUniverse/TensorProduct.lean#L287). The attribute's comment: “Stated over six independent universes, as the source requires: the tag's six rings `R`, `R_p`, `R^h`, `S`, `S_q`, `S^h` are unconstrained relative to one another.”.
+**`StacksDraft.henselization_tensorProduct_at_unique_prime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/HenselizationUniverse/TensorProduct.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/HenselizationUniverse/TensorProduct.lean#L287). The attribute's comment: “Stated over six independent universes, as the source requires: the tag's six rings `R`, `R_p`, `R^h`, `S`, `S_q`, `S^h` are unconstrained relative to one another.”.
 
 > **Henselization after a ring map** (Stacks 08HU), at six independent universes. For primes
 > `q` over `p`, the canonical local map between henselizations of `R_p` and `S_q` identifies the
@@ -357,7 +348,7 @@ theorem henselization_tensorProduct_at_unique_prime
 
 [Tag 04GT](https://stacks.math.columbia.edu/tag/04GT) in the Stacks Project.
 
-**`Stacks.StrictHenselization.strict_henselization_universal_property`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization.lean, line 1104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/StrictHenselization.lean#L1104).
+**`Stacks.StrictHenselization.strict_henselization_universal_property`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization.lean, line 1104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/StrictHenselization.lean#L1104).
 
 > **Theorem (Stacks Tag 04GT).** Let `φ : R → S` be a local ring map of local rings,
 > let `κ(S) ⊂ κsep` be a separable algebraic closure of the residue field of `S`, and let
@@ -406,7 +397,7 @@ theorem strict_henselization_universal_property
 
 [Tag 04GU](https://stacks.math.columbia.edu/tag/04GU) in the Stacks Project.
 
-**`HenselianLocalRing.indEtaleAlgHomOfResidue`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/StrictHenselization.lean#L392). The attribute's comment: “The map of the universal property: the target is an arbitrary henselian local `R`-algebra `Ssh`, since the source's `S` enters only through the composite `R → S → S^sh`, and of `R^sh` only locality and ind-étaleness — `(CommAlgCat.etale R).ind`, the spelling of Lemma 04GP(3) — are used. The source's square of residue fields is `hφ`, stated at the level of `R`; `R` local and both structure maps local are consequences of it, not hypotheses. `isLocalHom_indEtaleAlgHomOfResidue`, `comp_residue_indEtaleAlgHomOfResidue` and `indEtaleAlgHomOfResidue_unique` are its two properties and its uniqueness. See the module docstring.”. References: EGA IV (18.8.8.1), “existence of A^hs->B”; EGA IV (18.8.8).
+**`HenselianLocalRing.indEtaleAlgHomOfResidue`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/StrictHenselization.lean#L392). The attribute's comment: “The map of the universal property: the target is an arbitrary henselian local `R`-algebra `Ssh`, since the source's `S` enters only through the composite `R → S → S^sh`, and of `R^sh` only locality and ind-étaleness — `(CommAlgCat.etale R).ind`, the spelling of Lemma 04GP(3) — are used. The source's square of residue fields is `hφ`, stated at the level of `R`; `R` local and both structure maps local are consequences of it, not hypotheses. `isLocalHom_indEtaleAlgHomOfResidue`, `comp_residue_indEtaleAlgHomOfResidue` and `indEtaleAlgHomOfResidue_unique` are its two properties and its uniqueness. See the module docstring.”. References: EGA IV (18.8.8.1), “existence of A^hs->B”; EGA IV (18.8.8).
 
 > **The map given by functoriality of the strict henselization** (Stacks 04GU). Let `R` be a
 > ring, let `Rsh` be a local `R`-algebra which is a filtered colimit of étale `R`-algebras, let
@@ -427,7 +418,7 @@ noncomputable def HenselianLocalRing.indEtaleAlgHomOfResidue
     Rsh →ₐ[R] Ssh
 ```
 
-**`HenselianLocalRing.comp_residue_indEtaleAlgHomOfResidue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/StrictHenselization.lean#L405). The attribute's comment: “the defining property of `indEtaleAlgHomOfResidue`”. References: EGA IV (18.8.8.1), “induces \psi on residues”; EGA IV (18.8.4), “partial”.
+**`HenselianLocalRing.comp_residue_indEtaleAlgHomOfResidue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/StrictHenselization.lean#L405). The attribute's comment: “the defining property of `indEtaleAlgHomOfResidue`”. References: EGA IV (18.8.8.1), “induces \psi on residues”; EGA IV (18.8.4), “partial”.
 
 > `HenselianLocalRing.indEtaleAlgHomOfResidue` induces `φ` on residue fields.
 
@@ -443,7 +434,7 @@ public theorem HenselianLocalRing.comp_residue_indEtaleAlgHomOfResidue
       = φ.comp (residue Rsh)
 ```
 
-**`HenselianLocalRing.isLocalHom_indEtaleAlgHomOfResidue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/StrictHenselization.lean#L420). The attribute's comment: “`indEtaleAlgHomOfResidue` is local, which the source asserts”. References: EGA IV (18.8.8.1), “locality of A^hs->B”.
+**`HenselianLocalRing.isLocalHom_indEtaleAlgHomOfResidue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/StrictHenselization.lean#L420). The attribute's comment: “`indEtaleAlgHomOfResidue` is local, which the source asserts”. References: EGA IV (18.8.8.1), “locality of A^hs->B”.
 
 > `HenselianLocalRing.indEtaleAlgHomOfResidue` is a local ring map.
 
@@ -457,7 +448,7 @@ public theorem HenselianLocalRing.isLocalHom_indEtaleAlgHomOfResidue
     IsLocalHom (HenselianLocalRing.indEtaleAlgHomOfResidue hind φ hφ)
 ```
 
-**`HenselianLocalRing.indEtaleAlgHomOfResidue_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/StrictHenselization.lean#L433). The attribute's comment: “uniqueness of `indEtaleAlgHomOfResidue`”. References: EGA IV (18.8.8.1), “uniqueness of A^hs->B”.
+**`HenselianLocalRing.indEtaleAlgHomOfResidue_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization.lean, line 433](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/StrictHenselization.lean#L433). The attribute's comment: “uniqueness of `indEtaleAlgHomOfResidue`”. References: EGA IV (18.8.8.1), “uniqueness of A^hs->B”.
 
 > `HenselianLocalRing.indEtaleAlgHomOfResidue` is the only local `R`-algebra map `Rsh → Ssh`
 > inducing `φ` on residue fields.
@@ -474,7 +465,7 @@ public theorem HenselianLocalRing.indEtaleAlgHomOfResidue_unique
     f = HenselianLocalRing.indEtaleAlgHomOfResidue hind φ hφ
 ```
 
-**`Stacks.StrictHenselization.IsStrictHenselization.existsUnique_algHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization/StrictlyHenselianTarget.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/StrictHenselization/StrictlyHenselianTarget.lean#L167). The attribute's comment: “The universal property read off `IsStrictHenselization`: the residue datum is a map out of the chosen separable closure `κ^sep` rather than out of `IsLocalRing.ResidueField R`, the convention `HenselianLocalRing.indEtaleAlgHomOfResidue` is phrased in, and the target is an arbitrary henselian local `A`-algebra as there. Existence and uniqueness among local `A`-algebra maps are the source's two assertions.”. References: EGA IV (18.8.8), “more general”; EGA IV (18.8.9), “special case”; SGA 4 VIII (4.4), “more general”.
+**`Stacks.StrictHenselization.IsStrictHenselization.existsUnique_algHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization/StrictlyHenselianTarget.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/StrictHenselization/StrictlyHenselianTarget.lean#L167). The attribute's comment: “The universal property read off `IsStrictHenselization`: the residue datum is a map out of the chosen separable closure `κ^sep` rather than out of `IsLocalRing.ResidueField R`, the convention `HenselianLocalRing.indEtaleAlgHomOfResidue` is phrased in, and the target is an arbitrary henselian local `A`-algebra as there. Existence and uniqueness among local `A`-algebra maps are the source's two assertions.”. References: EGA IV (18.8.8), “more general”; EGA IV (18.8.9), “special case”; SGA 4 VIII (4.4), “more general”.
 
 > **The universal property of the strict henselization against a henselian local algebra**
 > (Stacks 04GU). Let `A` be a local ring, let `κ^sep` be a separable algebraic closure of its
@@ -499,7 +490,7 @@ theorem IsStrictHenselization.existsUnique_algHom (hR : IsStrictHenselization A 
       (residue C).comp (f : R →+* C) = (χ.comp hR.residueFieldHom).comp (residue R)
 ```
 
-**`Stacks.StrictHenselization.IsStrictHenselization.exists_algHom_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization/StrictlyHenselianTarget.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/StrictHenselization/StrictlyHenselianTarget.lean#L200). The attribute's comment: “The source's map, in the case where the target's residue field is only known to be separably closed rather than identified with a chosen separable closure: the residue datum is then not part of the input but produced by `IsSepClosed.lift`, and only existence survives.”. References: EGA IV (18.8.8), “(ii)”.
+**`Stacks.StrictHenselization.IsStrictHenselization.exists_algHom_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization/StrictlyHenselianTarget.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/StrictHenselization/StrictlyHenselianTarget.lean#L200). The attribute's comment: “The source's map, in the case where the target's residue field is only known to be separably closed rather than identified with a chosen separable closure: the residue datum is then not part of the input but produced by `IsSepClosed.lift`, and only existence survives.”. References: EGA IV (18.8.8), “(ii)”.
 
 > **A strictly henselian local algebra receives a local map from the strict henselization.**
 > Let `A` be a local ring, let `κ^sep` be a separable algebraic closure of its residue field and let
@@ -524,7 +515,7 @@ theorem IsStrictHenselization.exists_algHom_of_isSepClosed (hR : IsStrictHenseli
 
 [Tag 04GW](https://stacks.math.columbia.edu/tag/04GW) in the Stacks Project.
 
-**`IsLocalRing.IsHenselization.isFiltered_augmentedEtale_and_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselizationColimit.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/StrictHenselizationColimit.lean#L324). The attribute's comment: “A triple `(S, q, φ)` is an étale `R`-algebra with an `R`-algebra map to `κ^sep`, whose kernel is `q`. The strict henselization of `R_p` with respect to `κ^sep` is `IsHenselization (Localization.AtPrime p) κsep Rsh`; the statement is proved for any extension `L` of `κ(p)`. `canonically` is the characterization of the colimit maps `S → Rsh`: given the identification `e : κ^sep ≅ κ(Rsh)`, they are the unique maps reducing to `S → κ^sep ≅ κ(Rsh)`; the maps `S_q → Rsh` extend them along `S → S_q`.”.
+**`IsLocalRing.IsHenselization.isFiltered_augmentedEtale_and_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselizationColimit.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/StrictHenselizationColimit.lean#L324). The attribute's comment: “A triple `(S, q, φ)` is an étale `R`-algebra with an `R`-algebra map to `κ^sep`, whose kernel is `q`. The strict henselization of `R_p` with respect to `κ^sep` is `IsHenselization (Localization.AtPrime p) κsep Rsh`; the statement is proved for any extension `L` of `κ(p)`. `canonically` is the characterization of the colimit maps `S → Rsh`: given the identification `e : κ^sep ≅ κ(Rsh)`, they are the unique maps reducing to `S → κ^sep ≅ κ(Rsh)`; the maps `S_q → Rsh` extend them along `S → S_q`.”.
 
 > **The strict henselization as a colimit of étale algebras** (Stacks 04GW). Let `p` be a prime
 > of `R`, let `L` be an extension of `κ(p)` (a separable algebraic closure `κ^sep`, in the source),
@@ -552,7 +543,7 @@ theorem isFiltered_augmentedEtale_and_isColimit [IsScalarTower R (Localization.A
 
 [Tag 08HV](https://stacks.math.columbia.edu/tag/08HV) in the Stacks Project.
 
-**`IsLocalRing.IsHenselization.exists_prime_isStrictHenselization_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization/TensorProduct.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/StrictHenselization/TensorProduct.lean#L70). The attribute's comment: “The separable algebraic closures are the residue fields of `R^sh` and `S^sh`, and the commutative square is the compatibility `hphi` of `φ` with the residue maps out of `R`. The map of 04GU is pinned as the unique local `R`-algebra map inducing `φ`. The prime is `g⁻¹(𝔪_{S^sh})` with its two contractions; that `S^sh` is the strict henselization of `(R^sh ⊗_R S)_Q` is `IsHenselization` with residue field `κ(S^sh)`, separably closed over `κ(Q)`. All rings share one universe, as `IsHenselization` requires.”.
+**`IsLocalRing.IsHenselization.exists_prime_isStrictHenselization_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization/TensorProduct.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/StrictHenselization/TensorProduct.lean#L70). The attribute's comment: “The separable algebraic closures are the residue fields of `R^sh` and `S^sh`, and the commutative square is the compatibility `hphi` of `φ` with the residue maps out of `R`. The map of 04GU is pinned as the unique local `R`-algebra map inducing `φ`. The prime is `g⁻¹(𝔪_{S^sh})` with its two contractions; that `S^sh` is the strict henselization of `(R^sh ⊗_R S)_Q` is `IsHenselization` with residue field `κ(S^sh)`, separably closed over `κ(Q)`. All rings share one universe, as `IsHenselization` requires.”.
 
 > **The strict henselization after a ring map** (Stacks 08HV). Let `R → S` be a ring map and
 > let `q ⊆ S` lie over `p ⊆ R`. Let `Rsh` and `Ssh` be strict henselizations of `R_p` and `S_q`,
@@ -591,7 +582,7 @@ theorem exists_prime_isStrictHenselization_tensorProduct [Algebra R Sq] [Algebra
               (algebraMap (Rsh ⊗[R] S) (Localization.AtPrime Q)) = g.toRingHom
 ```
 
-**`StacksDraft.strictHenselization_tensorProduct_at_induced_prime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/HenselizationUniverse/StrictTensorProduct.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/HenselizationUniverse/StrictTensorProduct.lean#L76). The attribute's comment: “Stated over six independent universes, as the source requires: the tag's six rings `R`, `R_p`, `R^sh`, `S`, `S_q`, `S^sh` are unconstrained relative to one another.”.
+**`StacksDraft.strictHenselization_tensorProduct_at_induced_prime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/HenselizationUniverse/StrictTensorProduct.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/HenselizationUniverse/StrictTensorProduct.lean#L76). The attribute's comment: “Stated over six independent universes, as the source requires: the tag's six rings `R`, `R_p`, `R^sh`, `S`, `S_q`, `S^sh` are unconstrained relative to one another.”.
 
 > **Strict henselization after a ring map** (Stacks 08HV), at six independent universes. For
 > primes `q` over `p` and compatible separable closures of their residue fields, the canonical local
@@ -659,7 +650,7 @@ theorem strictHenselization_tensorProduct_at_induced_prime
 
 [Tag 0C2Z](https://stacks.math.columbia.edu/tag/0C2Z) in the Stacks Project.
 
-**`IsLocalRing.IsHenselization.exists_algEquiv_tensorProduct_strictHenselization_atPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization/BaseChange.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/StrictHenselization/BaseChange.lean#L689). The attribute's comment: “The equality of the source is an isomorphism of `(S_q)^h`-algebras `Ssh ≃ₐ[Sh] Sh ⊗[Rh] Rsh` compatible with the local map `Rsh → Ssh` over `Rh` inducing the identity of `κ^sep` (via `eRsh`, `eSsh`), which is part of the statement. Henselizations and strict henselizations are `IsHenselization` with residue field `κ` and `κ^sep`. All seven carriers — `R`, `S`, `κ^sep`, `(R_p)^h`, `(S_q)^h`, `(R_p)^{sh}`, `(S_q)^{sh}` — lie in mutually independent universes.”.
+**`IsLocalRing.IsHenselization.exists_algEquiv_tensorProduct_strictHenselization_atPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/StrictHenselization/BaseChange.lean, line 690](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/StrictHenselization/BaseChange.lean#L690). The attribute's comment: “The equality of the source is an isomorphism of `(S_q)^h`-algebras `Ssh ≃ₐ[Sh] Sh ⊗[Rh] Rsh` compatible with the local map `Rsh → Ssh` over `Rh` inducing the identity of `κ^sep` (via `eRsh`, `eSsh`), which is part of the statement. Henselizations and strict henselizations are `IsHenselization` with residue field `κ` and `κ^sep`. All seven carriers — `R`, `S`, `κ^sep`, `(R_p)^h`, `(S_q)^h`, `(R_p)^{sh}`, `(S_q)^{sh}` — lie in mutually independent universes.”.
 
 > **The strict henselization as a base change of the henselization** (Stacks 0C2Z). Let
 > `R → S` be a ring map and let `q` be a prime of `S` lying over the prime `p` of `R` such that
@@ -674,7 +665,7 @@ theorem IsLocalRing.IsHenselization.exists_algEquiv_tensorProduct_strictHenseliz
     {R : Type u} {S : Type v} [CommRing R] [CommRing S] [Algebra R S] (p : Ideal R) (q : Ideal S)
     [p.IsPrime] [q.IsPrime] [q.LiesOver p]
     [Algebra (Localization.AtPrime p) (Localization.AtPrime q)]
-    [Localization.AtPrime.IsLiesOverAlgebra p q]
+    [IsScalarTower R (Localization.AtPrime p) (Localization.AtPrime q)]
     (hres : Function.Bijective
       (ResidueField.map (algebraMap (Localization.AtPrime p) (Localization.AtPrime q))))
     (ksep : Type w) [Field ksep] [Algebra (ResidueField (Localization.AtPrime p)) ksep]
@@ -721,4 +712,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.155, Tag 0BSK](https://stacks.math.columbia.edu/tag/0BSK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

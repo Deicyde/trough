@@ -8,13 +8,13 @@ proof: formalized
 
 # 60.9 The crystalline site
 
-Section 60.9 of the Stacks Project, [Tag 07IF](https://stacks.math.columbia.edu/tag/07IF). 9 tags here are carried by 57 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 60.9 of the Stacks Project, [Tag 07IF](https://stacks.math.columbia.edu/tag/07IF). 9 tags here are carried by 55 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07IG, a definition
 
 [Tag 07IG](https://stacks.math.columbia.edu/tag/07IG) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.Thickening.IsCrystalline`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean#L64). The attribute's comment: “(1), the condition on the objects”.
+**`Crystalline.GlobalCrystallineSituation.Thickening.IsCrystalline`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean#L64). The attribute's comment: “(1), the condition on the objects”.
 
 > The property that cuts out the small crystalline category: the structure map `U ⟶ X` of a
 > divided power thickening `(U, T, δ)` of `X` relative to `(S, I, γ)` is an open immersion.
@@ -23,7 +23,7 @@ Section 60.9 of the Stacks Project, [Tag 07IF](https://stacks.math.columbia.edu/
 abbrev IsCrystalline : ObjectProperty (Thickening S)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean#L72). The attribute's comment: “(1), the full subcategory Cris(X/S)”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean#L72). The attribute's comment: “(1), the full subcategory Cris(X/S)”.
 
 > The small crystalline category `Cris(X/S, I, γ)`, abbreviated `Cris(X/S)`: the full
 > subcategory of the big crystalline category `CRIS(X/S)` on the divided power thickenings
@@ -33,7 +33,7 @@ abbrev IsCrystalline : ObjectProperty (Thickening S)
 abbrev CrystallineThickening (S : GlobalCrystallineSituation.{u})
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.IsZariskiCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean#L92). The attribute's comment: “(1), the Zariski coverings”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.IsZariskiCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean#L92). The attribute's comment: “(1), the Zariski coverings”.
 
 > A Zariski covering family of the small crystalline category: a family of morphisms of
 > `Cris(X/S)` which is a Zariski covering family of the big crystalline category `CRIS(X/S)`, that
@@ -43,7 +43,7 @@ abbrev CrystallineThickening (S : GlobalCrystallineSituation.{u})
 abbrev IsZariskiCovering {B : CrystallineThickening S} (E : PreZeroHypercover.{u + 1} B) : Prop
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallTopology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean#L127). The attribute's comment: “(1), the small crystalline site”.
+**`Crystalline.GlobalCrystallineSituation.smallTopology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean#L127). The attribute's comment: “(1), the small crystalline site”.
 
 > The small crystalline site of `X` over `(S, I, γ)`: the full subcategory `Cris(X/S)` of
 > `CRIS(X/S)` on the thickenings `(U, T, δ)` with `U ⟶ X` an open immersion, endowed with the
@@ -54,7 +54,7 @@ abbrev smallTopology (S : GlobalCrystallineSituation.{u}) :
     GrothendieckTopology (CrystallineThickening S)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean#L140). The attribute's comment: “(2), the crystalline topos”.
+**`Crystalline.GlobalCrystallineSituation.smallTopos`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean#L140). The attribute's comment: “(2), the crystalline topos”.
 
 > The crystalline topos `(X/S)_cris`, the topos of sheaves of sets on the small crystalline
 > site.
@@ -67,7 +67,7 @@ abbrev smallTopos (S : GlobalCrystallineSituation.{u})
 
 [Tag 07IH](https://stacks.math.columbia.edu/tag/07IH) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.smallForget`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiComparison.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiComparison.lean#L89).
+**`Crystalline.GlobalCrystallineSituation.smallForget`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiComparison.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiComparison.lean#L89).
 
 > The forgetful functor `Cris(X/S) ⥤ X_Zar`, `(U, T, δ) ↦ U`, from the small crystalline site
 > to the small Zariski site: it keeps the scheme `U` with its open immersion into `X`.
@@ -81,7 +81,7 @@ def smallForget (S : GlobalCrystallineSituation.{u}) :
 
 [Tag 07II](https://stacks.math.columbia.edu/tag/07II) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.smallFree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiComparison.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiComparison.lean#L118). The attribute's comment: “the functor”.
+**`Crystalline.GlobalCrystallineSituation.smallFree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiComparison.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiComparison.lean#L118). The attribute's comment: “the functor”.
 
 > The functor `X_Zar ⥤ Cris(X/S)` sending an open `U ⟶ X` to the object `(U, U, ∅)` of the
 > small crystalline site: the scheme `U` thickened by itself, the ambient scheme carrying the zero
@@ -92,7 +92,7 @@ def smallFree (S : GlobalCrystallineSituation.{u}) :
     ZariskiOpen S ⥤ CrystallineThickening S
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallFreeForgetAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiComparison.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiComparison.lean#L156). The attribute's comment: “left adjoint”.
+**`Crystalline.GlobalCrystallineSituation.smallFreeForgetAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiComparison.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiComparison.lean#L156). The attribute's comment: “left adjoint”.
 
 > The functor `smallFree`, `U ↦ (U, U, ∅)`, is left adjoint to the forgetful functor
 > `smallForget`: a morphism `(U, U, ∅) ⟶ (V, T, δ)` of the small crystalline site is exactly a
@@ -107,7 +107,7 @@ def smallFreeForgetAdjunction (S : GlobalCrystallineSituation.{u}) :
 
 [Tag 07IJ](https://stacks.math.columbia.edu/tag/07IJ) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.ι_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean#L361). The attribute's comment: “the inclusion is cocontinuous”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.ι_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean#L361). The attribute's comment: “the inclusion is cocontinuous”.
 
 > **Stacks Project, Tag 07IJ.**  The inclusion `Cris(X/S) ⥤ CRIS(X/S)` is cocontinuous for the
 > Zariski topologies of the two crystalline sites.
@@ -117,7 +117,7 @@ instance ι_isCocontinuous :
     (ι S).IsCocontinuous (smallTopology S) (topology S)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.ι_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean#L473). The attribute's comment: “the inclusion is continuous”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.ι_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean#L473). The attribute's comment: “the inclusion is continuous”.
 
 > **Stacks Project, Tag 07IJ.**  The inclusion `Cris(X/S) ⥤ CRIS(X/S)` is continuous for the
 > Zariski topologies of the two crystalline sites: the restriction of a sheaf on the big crystalline
@@ -130,7 +130,7 @@ instance ι_isContinuous :
     (ι S).IsContinuous (smallTopology S) (topology S)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.smallToBigMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean#L505). The attribute's comment: “the morphism of topoi i induced by the inclusion”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.smallToBigMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean#L505). The attribute's comment: “the morphism of topoi i induced by the inclusion”.
 
 > **Stacks Project, Tag 07IJ.**  The morphism of topoi
 > `i : (X/S)_cris ⟶ (X/S)_CRIS` induced by the inclusion `Cris(X/S) ⥤ CRIS(X/S)`: its direct
@@ -142,7 +142,7 @@ noncomputable def smallToBigMorphism (S : GlobalCrystallineSituation.{u}) :
     MorphismOfTopoi (smallTopos S) (topos S)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.inverseImageIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean#L521). The attribute's comment: “π\_* = i^\{-1}: the inverse image of i is restriction”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.inverseImageIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean#L521). The attribute's comment: “π\_* = i^\{-1}: the inverse image of i is restriction”.
 
 > **Stacks Project, Tag 07IJ.**  The inverse image `i^{-1}` of the inclusion morphism of topoi
 > is plain restriction of a sheaf on the big crystalline site to the small one: the sheafification
@@ -157,7 +157,7 @@ noncomputable def inverseImageIsoRestriction
       (ι S).sheafPushforwardContinuous (Type (u + 1)) (smallTopology S) (topology S)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.lowerShriekRestrictionIsoId`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean, line 541](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean#L541). The attribute's comment: “the composite π ∘ i is the identity, on inverse images”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.lowerShriekRestrictionIsoId`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean, line 541](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean#L541). The attribute's comment: “the composite π ∘ i is the identity, on inverse images”.
 
 > **Stacks Project, Tag 07IJ.**  The composite `π ∘ i` is the identity, on inverse images: the
 > unit `𝟭 ⟶ i_! ⋙ i^{-1}` of the lower shriek adjunction is an isomorphism, the inclusion being
@@ -172,7 +172,7 @@ noncomputable def lowerShriekRestrictionIsoId (S : GlobalCrystallineSituation.{u
         (ι S).sheafPushforwardContinuous (Type (u + 1)) (smallTopology S) (topology S)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.preservesFiniteLimits_lowerShriekAb`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekAbelianExact.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekAbelianExact.lean#L108). The attribute's comment: “clause (6) at abelian coefficients: i\_! is exact on sheaves of abelian groups, with no covering argument needed”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.preservesFiniteLimits_lowerShriekAb`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekAbelianExact.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekAbelianExact.lean#L109). The attribute's comment: “clause (6) at abelian coefficients: i\_! is exact on sheaves of abelian groups, with no covering argument needed”.
 
 > **Stacks Project, Tag 07IJ, clause (6), at abelian coefficients: the lower shriek `i_!` along
 > the inclusion `Cris(X/S) ⥤ CRIS(X/S)` is exact on sheaves of abelian groups.**
@@ -191,7 +191,7 @@ theorem preservesFiniteLimits_lowerShriekAb :
       AddCommGrpCat.{u + 1} (smallTopology S) (topology S))
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.coversTop_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekExact.lean, line 656](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekExact.lean#L656). The attribute's comment: “clause (6), the covering step: the representables of Cris(X/S) cover the final sheaf of (X/S)\_CRIS, which the source omits in general”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.coversTop_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekExact.lean, line 656](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekExact.lean#L656). The attribute's comment: “clause (6), the covering step: the representables of Cris(X/S) cover the final sheaf of (X/S)\_CRIS, which the source omits in general”.
 
 > **Stacks Project, Tag 07IJ, clause (6), the covering step.**  The representable sheaves of the
 > objects of `Cris(X/S)` cover the final sheaf of `(X/S)_CRIS`: every object of `CRIS(X/S)` has a
@@ -207,7 +207,7 @@ theorem coversTop_ι (S : GlobalCrystallineSituation.{u}) :
     (topology S).CoversTop (ι S).obj
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.preservesFiniteLimits_lowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekExact.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekExact.lean#L703). The attribute's comment: “clause (6): i\_! is exact, whose covering step -- the part the source omits in general -- is coversTop\_ι”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.preservesFiniteLimits_lowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekExact.lean, line 703](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekExact.lean#L703). The attribute's comment: “clause (6): i\_! is exact, whose covering step -- the part the source omits in general -- is coversTop\_ι”.
 
 > **Stacks Project, Tag 07IJ, clause (6): the lower shriek `i_!` along the inclusion
 > `Cris(X/S) ⥤ CRIS(X/S)` is exact.**
@@ -228,7 +228,7 @@ theorem preservesFiniteLimits_lowerShriek (S : GlobalCrystallineSituation.{u}) :
       (Type (u + 1)) (smallTopology S) (topology S))
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.moduleLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean#L263). The attribute's comment: “the lower shriek i\_! at module coefficients”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.moduleLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean#L263). The attribute's comment: “the lower shriek i\_! at module coefficients”.
 
 > **Stacks Project, Tag 07IJ, at module coefficients: the lower shriek
 > `i_! : Mod(𝒪_{X/S} on Cris(X/S)) ⥤ Mod(𝒪_{X/S} on CRIS(X/S))`** along the inclusion of the small
@@ -247,7 +247,7 @@ theorem preservesFiniteLimits_lowerShriek (S : GlobalCrystallineSituation.{u}) :
 def moduleLowerShriek : ModuleSheaf S ⥤ BigModuleSheaf S
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.moduleLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean#L271). The attribute's comment: “i\_! is left adjoint to i^\{-1} on sheaves of modules”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.moduleLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean#L271). The attribute's comment: “i\_! is left adjoint to i^\{-1} on sheaves of modules”.
 
 > **Stacks Project, Tag 07IJ, at module coefficients: `i_! ⊣ i^{-1}`.**  The module-level lower
 > shriek is left adjoint to the restriction `...SmallSite.crisRestrictModules` of modules from
@@ -257,7 +257,7 @@ def moduleLowerShriek : ModuleSheaf S ⥤ BigModuleSheaf S
 def moduleLowerShriekAdjunction : moduleLowerShriek S ⊣ crisRestrictModules.{u + 1} S
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.isIso_moduleLowerShriekAdjunction_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean#L307). The attribute's comment: “i^\{-1} i\_! = id on sheaves of modules”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.isIso_moduleLowerShriekAdjunction_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean#L307). The attribute's comment: “i^\{-1} i\_! = id on sheaves of modules”.
 
 > **Stacks Project, Tag 07IJ: the formula `i^{-1}i_! = id`, at module coefficients.**  The unit
 > of `i_! ⊣ i^{-1}` on sheaves of modules is an isomorphism.
@@ -274,7 +274,7 @@ theorem isIso_moduleLowerShriekAdjunction_unit :
     IsIso (moduleLowerShriekAdjunction S).unit
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.ιCreatesLimitOfNonempty`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmallNonemptyFiniteLimits.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmallNonemptyFiniteLimits.lean#L76). The attribute's comment: “the inclusion commutes with finite nonempty limits”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.ιCreatesLimitOfNonempty`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmallNonemptyFiniteLimits.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmallNonemptyFiniteLimits.lean#L76). The attribute's comment: “the inclusion commutes with finite nonempty limits”.
 
 > **Stacks Project, Tag 07IJ, first assertion.**  The inclusion `Cris(X/S) ⥤ CRIS(X/S)` creates
 > the limit of every nonempty finite diagram of divided power thickenings of `X` whose maps to `X`
@@ -289,7 +289,7 @@ noncomputable def ιCreatesLimitOfNonempty (S : GlobalCrystallineSituation.{u})
     CreatesLimit F (ι S)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.hasNonemptyFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmallNonemptyFiniteLimits.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmallNonemptyFiniteLimits.lean#L87). The attribute's comment: “nonempty finite limits in Cris(X/S)”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.hasNonemptyFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmallNonemptyFiniteLimits.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmallNonemptyFiniteLimits.lean#L87). The attribute's comment: “nonempty finite limits in Cris(X/S)”.
 
 > **Stacks Project, Tag 07IJ, first assertion.**  The small crystalline category `Cris(X/S)` has
 > all finite nonempty limits.  They are created by the inclusion from the finite nonempty limits of
@@ -300,7 +300,7 @@ theorem hasNonemptyFiniteLimits (S : GlobalCrystallineSituation.{u}) :
     _root_.HasNonemptyFiniteLimits (CrystallineThickening S)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.ι_preservesNonemptyFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmallNonemptyFiniteLimits.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmallNonemptyFiniteLimits.lean#L97). The attribute's comment: “the inclusion commutes with finite nonempty limits”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.ι_preservesNonemptyFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmallNonemptyFiniteLimits.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmallNonemptyFiniteLimits.lean#L97). The attribute's comment: “the inclusion commutes with finite nonempty limits”.
 
 > **Stacks Project, Tag 07IJ, first assertion.**  The inclusion `Cris(X/S) ⥤ CRIS(X/S)` commutes
 > with finite nonempty limits.  Every nonempty finite shape is one of which `CRIS(X/S)` has limits,
@@ -312,7 +312,7 @@ theorem ι_preservesNonemptyFiniteLimits (S : GlobalCrystallineSituation.{u})
     PreservesLimitsOfShape J (ι S)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.retractionMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean#L77). The attribute's comment: “the retraction π as a morphism of topoi”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.retractionMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean#L77). The attribute's comment: “the retraction π as a morphism of topoi”.
 
 > The retraction `π : (X/S)_CRIS ⟶ (X/S)_cris` as a morphism of topoi: its direct image is
 > `i^{-1}`, restriction of a sheaf on the big crystalline site to the small one, and its inverse
@@ -323,7 +323,7 @@ noncomputable def retractionMorphism (S : GlobalCrystallineSituation.{u}) :
     MorphismOfTopoi (topos S) (smallTopos S)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.retractionPushforwardIsoInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean#L102). The attribute's comment: “π\_* = i^\{-1}, relating the direct image of π to the inverse image of i”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.retractionPushforwardIsoInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean#L102). The attribute's comment: “π\_* = i^\{-1}, relating the direct image of π to the inverse image of i”.
 
 > **`π_* = i^{-1}`**: the direct image of the retraction `π : (X/S)_CRIS ⟶ (X/S)_cris` is
 > isomorphic to the inverse image of the inclusion morphism of topoi
@@ -334,7 +334,7 @@ noncomputable def retractionPushforwardIsoInverseImage (S : GlobalCrystallineSit
     (retractionMorphism S).pushforward ≅ (smallToBigMorphism S).inverseImage
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.retractionMorphism_comp_smallToBigMorphism_inverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean#L109). The attribute's comment: “the composite π ∘ i is the identity: its inverse image is the identity functor”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.retractionMorphism_comp_smallToBigMorphism_inverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean#L109). The attribute's comment: “the composite π ∘ i is the identity: its inverse image is the identity functor”.
 
 > **The composite `π ∘ i` is the identity, on inverse images**: the inverse image of the
 > composite `(X/S)_cris ⟶ (X/S)_CRIS ⟶ (X/S)_cris` is isomorphic to the identity functor.
@@ -345,7 +345,7 @@ noncomputable def retractionMorphism_comp_smallToBigMorphism_inverseImage
       ((retractionMorphism S).comp (smallToBigMorphism S)).inverseImage
 ```
 
-**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.retractionMorphism_comp_smallToBigMorphism_pushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean#L134). The attribute's comment: “the composite π ∘ i is the identity: its direct image is the identity functor”.
+**`Crystalline.GlobalCrystallineSituation.CrystallineThickening.retractionMorphism_comp_smallToBigMorphism_pushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean#L134). The attribute's comment: “the composite π ∘ i is the identity: its direct image is the identity functor”.
 
 > **The composite `π ∘ i` is the identity, on direct images**: the direct image of the
 > composite `(X/S)_cris ⟶ (X/S)_CRIS ⟶ (X/S)_cris` is isomorphic to the identity functor, by the
@@ -359,13 +359,13 @@ noncomputable def retractionMorphism_comp_smallToBigMorphism_pushforward
 
 Declarations registered for the tag:
 
-- [`Crystalline.GlobalCrystallineSituation.CrystallineThickening.fullyFaithfulι`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean#L85), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean#L497) (StacksFrontier): “the inclusion is fully faithful”.
+- [`Crystalline.GlobalCrystallineSituation.CrystallineThickening.fullyFaithfulι`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Basic.lean#L85), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean, line 497](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BigComparison.lean#L497) (StacksFrontier): “the inclusion is fully faithful”.
 
 ## Tag 07IK, a remark
 
 [Tag 07IK](https://stacks.math.columbia.edu/tag/07IK) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.crisMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean#L148). The attribute's comment: “f\_cris = π\_Y ∘ f\_CRIS ∘ i\_X”.
+**`Crystalline.GlobalCrystallineSituation.crisMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ToposFunctoriality.lean#L148). The attribute's comment: “f\_cris = π\_Y ∘ f\_CRIS ∘ i\_X”.
 
 > The morphism of small crystalline topoi `f_cris : (X/S)_cris ⟶ (Y/S')_cris` attached to a
 > morphism of divided power bases `S ⟶ S'` and a compatible morphism `X ⟶ Y` of schemes over their
@@ -383,7 +383,7 @@ noncomputable def crisMorphism (S S' : GlobalCrystallineSituation.{u}) (f : S.S 
 
 [Tag 07IL](https://stacks.math.columbia.edu/tag/07IL) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.forgetToOpens_preservesBinaryProducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean#L198). The attribute's comment: “the functor (07IH) commutes with products”.
+**`Crystalline.GlobalCrystallineSituation.forgetToOpens_preservesBinaryProducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean#L198). The attribute's comment: “the functor (07IH) commutes with products”.
 
 > **Stacks Project, Tag 07IL.**  The forgetful functor `Cris(X/S) ⥤ X_Zar` of
 > [Stacks, Tag 07IH] commutes with products.
@@ -393,7 +393,7 @@ instance forgetToOpens_preservesBinaryProducts (S : GlobalCrystallineSituation.{
     PreservesLimitsOfShape (Discrete WalkingPair) (forgetToOpens S)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.forgetToOpens_preservesPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean#L205). The attribute's comment: “the functor (07IH) commutes with fibred products”.
+**`Crystalline.GlobalCrystallineSituation.forgetToOpens_preservesPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean#L205). The attribute's comment: “the functor (07IH) commutes with fibred products”.
 
 > **Stacks Project, Tag 07IL.**  The forgetful functor `Cris(X/S) ⥤ X_Zar` of
 > [Stacks, Tag 07IH] commutes with fibred products.
@@ -403,7 +403,7 @@ instance forgetToOpens_preservesPullbacks (S : GlobalCrystallineSituation.{u}) :
     PreservesLimitsOfShape WalkingCospan (forgetToOpens S)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.forgetToOpens_zariskiCovering_functorPushforward_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean#L242). The attribute's comment: “the functor (07IH) is continuous: it carries covering families to coverings”.
+**`Crystalline.GlobalCrystallineSituation.forgetToOpens_zariskiCovering_functorPushforward_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean#L242). The attribute's comment: “the functor (07IH) is continuous: it carries covering families to coverings”.
 
 > **Stacks Project, Tag 07IL.**  The forgetful functor `Cris(X/S) ⥤ X_Zar` of
 > [Stacks, Tag 07IH] is continuous: the image of a Zariski covering family of the small crystalline
@@ -417,7 +417,7 @@ theorem forgetToOpens_zariskiCovering_functorPushforward_mem
       Opens.grothendieckTopology S.X.carrier ((forgetToOpens S).obj A)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.forgetToOpens_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean#L275). The attribute's comment: “the functor (07IH) is cocontinuous”.
+**`Crystalline.GlobalCrystallineSituation.forgetToOpens_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean#L275). The attribute's comment: “the functor (07IH) is cocontinuous”.
 
 > **Stacks Project, Tag 07IL.**  The forgetful functor `Cris(X/S) ⥤ X_Zar` of
 > [Stacks, Tag 07IH] is cocontinuous.  A covering sieve of the open `U` of `X` underlying an object
@@ -433,7 +433,7 @@ instance forgetToOpens_isCocontinuous (S : GlobalCrystallineSituation.{u}) :
       (Opens.grothendieckTopology S.X.carrier)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.zariskiToposMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean#L319). The attribute's comment: “the morphism of topoi u\_\{X/S} : (X/S)\_cris ⟶ Sh(X\_Zar)”. References: SGA 4 III (2.3), “special case”.
+**`Crystalline.GlobalCrystallineSituation.zariskiToposMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ZariskiToposMorphism.lean#L319). The attribute's comment: “the morphism of topoi u\_\{X/S} : (X/S)\_cris ⟶ Sh(X\_Zar)”. References: SGA 4 III (2.3), “special case”.
 
 > **Stacks Project, Tag 07IL.**  The morphism of topoi
 > `u_{X/S} : (X/S)_cris ⟶ Sh(X_Zar)` relating the small crystalline topos of `X/S` with the small
@@ -451,7 +451,7 @@ def zariskiToposMorphism (S : GlobalCrystallineSituation.{u}) :
 
 [Tag 07KL](https://stacks.math.columbia.edu/tag/07KL) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.smallChangeBase_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean#L288). The attribute's comment: “the functor is continuous”.
+**`Crystalline.GlobalCrystallineSituation.smallChangeBase_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean#L288). The attribute's comment: “the functor is continuous”.
 
 > **Stacks Project, Tag 07KL.**  Change of divided power base is *continuous* for the Zariski
 > topologies of the small crystalline sites.  The topology is generated by the families of
@@ -471,7 +471,7 @@ instance smallChangeBase_isContinuous :
     (smallChangeBase S S' f g h).IsContinuous (smallTopology S) (smallTopology S')
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallChangeBase_coverPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ChangeBaseCoverPreserving.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ChangeBaseCoverPreserving.lean#L44). The attribute's comment: “the functor is cover-preserving”.
+**`Crystalline.GlobalCrystallineSituation.smallChangeBase_coverPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ChangeBaseCoverPreserving.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ChangeBaseCoverPreserving.lean#L44). The attribute's comment: “the functor is cover-preserving”.
 
 > Change of divided power base `Cris(X'/S') ⥤ Cris(X/S)` along open immersions `X' ⊆ X` and
 > `S' ⊆ S` is *cover-preserving* for the Zariski topologies of the small crystalline sites: the sieve
@@ -482,7 +482,7 @@ theorem smallChangeBase_coverPreserving :
     CoverPreserving (smallTopology S) (smallTopology S') (smallChangeBase S S' f g h)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallChangeBaseZariskiSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ChangeBaseZariski.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ChangeBaseZariski.lean#L324). The attribute's comment: “clause (c): the square formed with u\_\{X'/S'} and u\_\{X/S} commutes, as an invertible 2-morphism of topoi. Clause (d), that this square realizes a localization of morphisms of topoi as in Stacks 04H1, is covered elsewhere: the two topos-level identifications by opensSliceEquivalence and smallChangeBaseSliceEquivalence in SmallSite/OpenSubobjectSlice.lean, and in SmallSite/OpenSubobjectLocalization.lean the identification of the two horizontal arrows with the localization morphisms j\_G and j\_F (opensShriekAdjunction, smallChangeBaseShriekAdjunction) and the commutativity of the resulting square (smallChangeBaseLocalizationSquare)”.
+**`Crystalline.GlobalCrystallineSituation.smallChangeBaseZariskiSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ChangeBaseZariski.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/ChangeBaseZariski.lean#L325). The attribute's comment: “clause (c): the square formed with u\_\{X'/S'} and u\_\{X/S} commutes, as an invertible 2-morphism of topoi. Clause (d), that this square realizes a localization of morphisms of topoi as in Stacks 04H1, is covered elsewhere: the two topos-level identifications by opensSliceEquivalence and smallChangeBaseSliceEquivalence in SmallSite/OpenSubobjectSlice.lean, and in SmallSite/OpenSubobjectLocalization.lean the identification of the two horizontal arrows with the localization morphisms j\_G and j\_F (opensShriekAdjunction, smallChangeBaseShriekAdjunction) and the commutativity of the resulting square (smallChangeBaseLocalizationSquare)”.
 
 > **Stacks Project, Tag 07KL, clause (c).**  The square formed by the morphism of crystalline
 > topoi `(X'/S')_cris ⟶ (X/S)_cris` of change of divided power base, the comparisons `u_{X'/S'}` and
@@ -510,7 +510,7 @@ def smallChangeBaseZariskiSquare (S S' : GlobalCrystallineSituation.{u}) (f : S.
       ((zariskiToposMorphism S').comp (smallChangeBaseMorphism S S' f g h)).pushforward
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallChangeBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean#L240). The attribute's comment: “the functor Cris(X'/S') ⥤ Cris(X/S)”.
+**`Crystalline.GlobalCrystallineSituation.smallChangeBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean#L242). The attribute's comment: “the functor Cris(X'/S') ⥤ Cris(X/S)”.
 
 > **Stacks Project, Tag 07KL.**  Let `X' ⊆ X` and `S' ⊆ S` be open subschemes with `X'` mapping
 > into `S'`.  A divided power thickening of `X'` relative to `(S', I', γ')` whose structure map to
@@ -526,7 +526,7 @@ noncomputable def smallChangeBase (S S' : GlobalCrystallineSituation.{u}) (f : S
     CrystallineThickening S ⥤ CrystallineThickening S'
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallChangeBaseFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean#L282). The attribute's comment: “the functor is fully faithful”.
+**`Crystalline.GlobalCrystallineSituation.smallChangeBaseFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean#L284). The attribute's comment: “the functor is fully faithful”.
 
 > **Stacks Project, Tag 07KL.**  The functor `Cris(X'/S') ⥤ Cris(X/S)` induced by open
 > immersions `X' ⊆ X` and `S' ⊆ S` is fully faithful.
@@ -536,7 +536,7 @@ noncomputable def smallChangeBaseFullyFaithful [IsOpenImmersion f.hom] :
     (smallChangeBase S S' f g h).FullyFaithful
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallChangeBase_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean#L350). The attribute's comment: “the functor is cocontinuous”.
+**`Crystalline.GlobalCrystallineSituation.smallChangeBase_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean#L352). The attribute's comment: “the functor is cocontinuous”.
 
 > **Stacks Project, Tag 07KL.**  The functor `Cris(X'/S') ⥤ Cris(X/S)` is cocontinuous for the
 > Zariski topologies of the small crystalline sites.
@@ -546,7 +546,7 @@ instance smallChangeBase_isCocontinuous :
     (smallChangeBase S S' f g h).IsCocontinuous (smallTopology S) (smallTopology S')
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallChangeBaseMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean#L361). The attribute's comment: “the induced morphism of topoi”. References: SGA 4 III (2.3), “special case”.
+**`Crystalline.GlobalCrystallineSituation.smallChangeBaseMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Functoriality.lean#L363). The attribute's comment: “the induced morphism of topoi”. References: SGA 4 III (2.3), “special case”.
 
 > **Stacks Project, Tag 07KL.**  The morphism of crystalline topoi
 > `(X'/S')_cris ⟶ (X/S)_cris` induced by open immersions `X' ⊆ X` and `S' ⊆ S`: its pushforward is
@@ -561,7 +561,7 @@ noncomputable def smallChangeBaseMorphism (S S' : GlobalCrystallineSituation.{u}
     MorphismOfTopoi (smallTopos S) (smallTopos S')
 ```
 
-**`Crystalline.GlobalCrystallineSituation.nonempty_zariskiInverseImage_opensRepr_iff_essImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobject.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobject.lean#L263). The attribute's comment: “the sheaf F = u\_\{X/S}^\{-1}h\_\{X'} of clause (d), and the identification of the objects of Cris(X/S) carrying a section of it with the essential image of change of divided power base. NOT clause (d) itself, which asks that the square of smallChangeBaseZariskiSquare realize the localization of morphisms of topoi of Stacks 04H1: see the module docstring of ChangeBaseZariski.lean for what is still owed”.
+**`Crystalline.GlobalCrystallineSituation.nonempty_zariskiInverseImage_opensRepr_iff_essImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobject.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobject.lean#L263). The attribute's comment: “the sheaf F = u\_\{X/S}^\{-1}h\_\{X'} of clause (d), and the identification of the objects of Cris(X/S) carrying a section of it with the essential image of change of divided power base. NOT clause (d) itself, which asks that the square of smallChangeBaseZariskiSquare realize the localization of morphisms of topoi of Stacks 04H1: see the module docstring of ChangeBaseZariski.lean for what is still owed”.
 
 > **The site of elements of `u_{X/S}^{-1}h_{X'}` is the full subcategory of `Cris(X/S)` that
 > change of divided power base cuts out.**  An object of `Cris(X/S)` carries a section of
@@ -585,7 +585,7 @@ theorem nonempty_zariskiInverseImage_opensRepr_iff_essImage
       (smallChangeBase S S' f g h).essImage B
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallChangeBaseSliceEquivalence'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean#L145). The attribute's comment: “clause (d): (X'/S')\_cris is the slice of (X/S)\_cris at u\_\{X/S}^\{-1}h\_\{X'}, read at the inverse image itself, which is the source of MorphismOfTopoi.over”.
+**`Crystalline.GlobalCrystallineSituation.smallChangeBaseSliceEquivalence'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean#L145). The attribute's comment: “clause (d): (X'/S')\_cris is the slice of (X/S)\_cris at u\_\{X/S}^\{-1}h\_\{X'}, read at the inverse image itself, which is the source of MorphismOfTopoi.over”.
 
 > **[Stacks, Tag 07KL], clause (d): `(X'/S')_cris` is the slice of `(X/S)_cris` at
 > `u_{X/S}^{-1}h_{X'}`**, with the sheaf spelled as that inverse image rather than as the
@@ -603,7 +603,7 @@ def smallChangeBaseSliceEquivalence' [IsOpenImmersion f.hom]
       Over ((zariskiToposMorphism S').inverseImage.obj (opensReprSheaf g.opensRange))
 ```
 
-**`Crystalline.GlobalCrystallineSituation.opensShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean#L161). The attribute's comment: “clause (d): the bottom arrow of the square is the localization morphism j\_G, i.e. the slice equivalence followed by Over.forget is left adjoint to its inverse image”.
+**`Crystalline.GlobalCrystallineSituation.opensShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean#L161). The attribute's comment: “clause (d): the bottom arrow of the square is the localization morphism j\_G, i.e. the slice equivalence followed by Over.forget is left adjoint to its inverse image”.
 
 > **[Stacks, Tag 07KL], clause (d): the bottom arrow of the square is the localization morphism
 > `j_G`.**  The functor `Sh(X'_Zar) ⥤ Sh(X_Zar)` obtained from `opensSliceEquivalence` by forgetting
@@ -620,7 +620,7 @@ def opensShriekAdjunction :
       (StacksZariskiSite.opensMapMorphismOfTopoi g.base).inverseImage
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallChangeBaseShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean#L191). The attribute's comment: “clause (d): the top arrow of the square is the localization morphism j\_F, i.e. the slice equivalence followed by Over.forget is left adjoint to its inverse image”.
+**`Crystalline.GlobalCrystallineSituation.smallChangeBaseShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean#L191). The attribute's comment: “clause (d): the top arrow of the square is the localization morphism j\_F, i.e. the slice equivalence followed by Over.forget is left adjoint to its inverse image”.
 
 > **[Stacks, Tag 07KL], clause (d): the top arrow of the square is the localization morphism
 > `j_F`.**  The functor `(X'/S')_cris ⥤ (X/S)_cris` obtained from
@@ -642,7 +642,7 @@ def smallChangeBaseShriekAdjunction [IsOpenImmersion f.hom]
       (smallChangeBaseMorphism S S' f g h).inverseImage
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallChangeBaseLocalizationSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean#L259). The attribute's comment: “clause (d), and with it the whole of clause (d): the square of clause (c) IS the localization square of Stacks 04H1 at h\_\{X'}. The two slice identifications are opensSliceEquivalence and smallChangeBaseSliceEquivalence', the two horizontal arrows are the localization morphisms by opensShriekAdjunction and smallChangeBaseShriekAdjunction, and this is the commutativity of the resulting square”.
+**`Crystalline.GlobalCrystallineSituation.smallChangeBaseLocalizationSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean#L259). The attribute's comment: “clause (d), and with it the whole of clause (d): the square of clause (c) IS the localization square of Stacks 04H1 at h\_\{X'}. The two slice identifications are opensSliceEquivalence and smallChangeBaseSliceEquivalence', the two horizontal arrows are the localization morphisms by opensShriekAdjunction and smallChangeBaseShriekAdjunction, and this is the commutativity of the resulting square”.
 
 > **[Stacks, Tag 07KL], clause (d): the square of clause (c) is the localization square of
 > [Stacks, Tag 04H1].**  Under the two slice equivalences the morphism of topoi
@@ -669,7 +669,7 @@ def smallChangeBaseLocalizationSquare [IsOpenImmersion f.hom]
       (zariskiToposMorphism S).pushforward ⋙ (opensSliceEquivalence S S' g).functor
 ```
 
-**`Crystalline.GlobalCrystallineSituation.openSubspaceSliceEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean#L329). The attribute's comment: “clause (d) for an open V of X over the SAME divided power base: Cris(V/S) is the slice of Cris(X/S) at u\_\{X/S}^\{-1}h\_V, which is the form the remark 07ML uses”.
+**`Crystalline.GlobalCrystallineSituation.openSubspaceSliceEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean#L329). The attribute's comment: “clause (d) for an open V of X over the SAME divided power base: Cris(V/S) is the slice of Cris(X/S) at u\_\{X/S}^\{-1}h\_V, which is the form the remark 07ML uses”.
 
 > **[Stacks, Tag 07KL], clause (d) for an open subscheme of `X` over the same divided power
 > base: `Cris(V/S)` is the localization of `Cris(X/S)` at the open subobject `V` of the final
@@ -687,7 +687,7 @@ def openSubspaceSliceEquivalence :
       Over ((zariskiToposMorphism S).inverseImage.obj (opensReprSheaf V.ι.opensRange))
 ```
 
-**`Crystalline.GlobalCrystallineSituation.openSubspaceShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean#L339). The attribute's comment: “clause (d) for an open V of X over the same base: the inclusion of Cris(V/S) is the localization morphism at h\_V”.
+**`Crystalline.GlobalCrystallineSituation.openSubspaceShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean#L339). The attribute's comment: “clause (d) for an open V of X over the same base: the inclusion of Cris(V/S) is the localization morphism at h\_V”.
 
 > **[Stacks, Tag 07KL], clause (d) for an open of `X` over the same base: the inclusion
 > `Cris(V/S) ⟶ Cris(X/S)` is the localization morphism `j_{h_V}`.**
@@ -700,7 +700,7 @@ def openSubspaceShriekAdjunction :
         (openSubspace_changeBase_condition S V)).inverseImage
 ```
 
-**`Crystalline.GlobalCrystallineSituation.openSubspaceLocalizationSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean#L351). The attribute's comment: “clause (d) for an open V of X over the same base: the square formed with u\_\{V/S} and u\_\{X/S} is the localization square of Stacks 04H1 at h\_V”.
+**`Crystalline.GlobalCrystallineSituation.openSubspaceLocalizationSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectLocalization.lean#L351). The attribute's comment: “clause (d) for an open V of X over the same base: the square formed with u\_\{V/S} and u\_\{X/S} is the localization square of Stacks 04H1 at h\_V”.
 
 > **[Stacks, Tag 07KL], clause (d) for an open of `X` over the same base: the square is the
 > localization square of [Stacks, Tag 04H1].**
@@ -713,7 +713,7 @@ def openSubspaceLocalizationSquare :
         (opensSliceEquivalence (openSubspace S V) S V.ι).functor
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallChangeBaseSliceEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectSlice.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectSlice.lean#L87). The attribute's comment: “clause (d), the identification of (X'/S')\_cris with the slice of (X/S)\_cris at F = u\_\{X/S}^\{-1}h\_\{X'}. That the square so obtained is the localization square of Stacks 04H1 is smallChangeBaseLocalizationSquare in SmallSite/OpenSubobjectLocalization.lean”.
+**`Crystalline.GlobalCrystallineSituation.smallChangeBaseSliceEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectSlice.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectSlice.lean#L87). The attribute's comment: “clause (d), the identification of (X'/S')\_cris with the slice of (X/S)\_cris at F = u\_\{X/S}^\{-1}h\_\{X'}. That the square so obtained is the localization square of Stacks 04H1 is smallChangeBaseLocalizationSquare in SmallSite/OpenSubobjectLocalization.lean”.
 
 > **[Stacks, Tag 07KL], the crystalline half of clause (d).**  The crystalline topos of
 > `X'/S'` is the slice of the crystalline topos of `X/S` at `F = u_{X/S}^{-1} h_{X'}`, and the
@@ -728,7 +728,7 @@ def smallChangeBaseSliceEquivalence [IsOpenImmersion f.hom]
     smallTopos S ≌ Over (openSubobjectSheaf S S' g)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.opensSliceEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectSlice.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectSlice.lean#L110). The attribute's comment: “clause (d), the identification of Sh(X'\_Zar) with the slice of Sh(X\_Zar) at h\_\{X'}. That the square so obtained is the localization square of Stacks 04H1 is smallChangeBaseLocalizationSquare in SmallSite/OpenSubobjectLocalization.lean”.
+**`Crystalline.GlobalCrystallineSituation.opensSliceEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectSlice.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/OpenSubobjectSlice.lean#L110). The attribute's comment: “clause (d), the identification of Sh(X'\_Zar) with the slice of Sh(X\_Zar) at h\_\{X'}. That the square so obtained is the localization square of Stacks 04H1 is smallChangeBaseLocalizationSquare in SmallSite/OpenSubobjectLocalization.lean”.
 
 > **[Stacks, Tag 07KL], the Zariski half of clause (d).**  The small Zariski topos of `X'` is
 > the slice of the small Zariski topos of `X` at the sheaf `h_{X'}` represented by the open image
@@ -747,7 +747,7 @@ def opensSliceEquivalence :
 
 [Tag 07IM](https://stacks.math.columbia.edu/tag/07IM) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.structureToposMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L299). The attribute's comment: “the structure morphism τ\_\{X/S} : (X/S)\_cris ⟶ Sh(S\_Zar), taken along the lower route of the diagram, so defined whether or not p is locally nilpotent on S₀”.
+**`Crystalline.GlobalCrystallineSituation.structureToposMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L299). The attribute's comment: “the structure morphism τ\_\{X/S} : (X/S)\_cris ⟶ Sh(S\_Zar), taken along the lower route of the diagram, so defined whether or not p is locally nilpotent on S₀”.
 
 > **Stacks Project, Tag 07IM.**  The structure morphism
 > `τ_{X/S} : (X/S)_cris ⟶ Sh(S_Zar)`: the comparison `u_{X/S}` of [Stacks, Tag 07IL] followed by the
@@ -761,7 +761,7 @@ def structureToposMorphism (S : GlobalCrystallineSituation.{u}) :
       (Sheaf (Opens.grothendieckTopology S.S.scheme.carrier) (Type (u + 1)))
 ```
 
-**`Crystalline.GlobalCrystallineSituation.closedFiberCrisMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean#L373). The attribute's comment: “the top arrow f\_cris : (X/S)\_cris ⟶ (S₀/S)\_cris of the diagram, together with the site Cris(S₀/S) it lands in, for p locally nilpotent on S₀ = V(I), which is the remark's own standing condition on this arrow”.
+**`Crystalline.GlobalCrystallineSituation.closedFiberCrisMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean#L380). The attribute's comment: “the top arrow f\_cris : (X/S)\_cris ⟶ (S₀/S)\_cris of the diagram, together with the site Cris(S₀/S) it lands in, for p locally nilpotent on S₀ = V(I), which is the remark's own standing condition on this arrow”.
 
 > **Stacks Project, Tag 07IM.**  The top arrow
 > `f_cris : (X/S)_cris ⟶ (S₀/S)_cris` of the diagram, for `f : X ⟶ S₀` the structure morphism of `X`
@@ -779,7 +779,7 @@ def closedFiberCrisMorphism
     MorphismOfTopoi (smallTopos S) (smallTopos (closedFiberSituation S hlocnil))
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallZariskiStructureTriangle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean#L398). The attribute's comment: “the trailing arrow of the diagram: the small Zariski morphisms along X ⟶ S₀ and S₀ ⟶ S compose to the one along X ⟶ S, as an invertible 2-morphism of topoi”.
+**`Crystalline.GlobalCrystallineSituation.smallZariskiStructureTriangle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean#L405). The attribute's comment: “the trailing arrow of the diagram: the small Zariski morphisms along X ⟶ S₀ and S₀ ⟶ S compose to the one along X ⟶ S, as an invertible 2-morphism of topoi”.
 
 > **Stacks Project, Tag 07IM.**  The trailing arrow of the diagram: the small Zariski morphism
 > `f_small : Sh(X_Zar) ⟶ Sh(S₀, Zar)` along the structure morphism `f : X ⟶ S₀`, followed by the
@@ -793,7 +793,7 @@ def smallZariskiStructureTriangle :
       (opensMapMorphismOfTopoi (sourceToBase S).base).pushforward
 ```
 
-**`Crystalline.GlobalCrystallineSituation.structureToposMorphism_isoLowerRoute`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean#L414). The attribute's comment: “the structure morphism τ\_\{X/S} is the lower route of the diagram, u\_\{X/S} followed by f\_small and then by the trailing arrow, as an invertible 2-morphism of topoi, with no hypothesis on p. The diagram's upper square u\_\{S₀/S} ∘ f\_cris ≅ f\_small ∘ u\_\{X/S} is a separate clause of the remark and is registered separately, on Crystalline.GlobalCrystallineSituation.closedFiberCrisUpperSquare of SmallSite/UpperSquare.lean”.
+**`Crystalline.GlobalCrystallineSituation.structureToposMorphism_isoLowerRoute`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean#L421). The attribute's comment: “the structure morphism τ\_\{X/S} is the lower route of the diagram, u\_\{X/S} followed by f\_small and then by the trailing arrow, as an invertible 2-morphism of topoi, with no hypothesis on p. The diagram's upper square u\_\{S₀/S} ∘ f\_cris ≅ f\_small ∘ u\_\{X/S} is a separate clause of the remark and is registered separately, on Crystalline.GlobalCrystallineSituation.closedFiberCrisUpperSquare of SmallSite/UpperSquare.lean”.
 
 > **Stacks Project, Tag 07IM.**  The structure morphism
 > `τ_{X/S} : (X/S)_cris ⟶ Sh(S_Zar)` is the lower route of the diagram: the comparison `u_{X/S}` of
@@ -809,7 +809,7 @@ def structureToposMorphism_isoLowerRoute :
       (structureToposMorphism S).pushforward
 ```
 
-**`Crystalline.GlobalCrystallineSituation.closedFiberCrisUpperSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/UpperSquare.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/UpperSquare.lean#L61). The attribute's comment: “the upper square of the diagram: u\_\{S₀/S} ∘ f\_cris is isomorphic to f\_small ∘ u\_\{X/S}, for f : X ⟶ S₀ the structure morphism”.
+**`Crystalline.GlobalCrystallineSituation.closedFiberCrisUpperSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/UpperSquare.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/UpperSquare.lean#L61). The attribute's comment: “the upper square of the diagram: u\_\{S₀/S} ∘ f\_cris is isomorphic to f\_small ∘ u\_\{X/S}, for f : X ⟶ S₀ the structure morphism”.
 
 > **The upper square of the diagram of [Stacks, Tag 07IM].**  For `f : X ⟶ S₀` the structure
 > morphism of `X` over `S`, the direct image of `u_{S₀/S} ∘ f_cris` is isomorphic to that of
@@ -827,68 +827,27 @@ def closedFiberCrisUpperSquare :
 
 [Tag 07MH](https://stacks.math.columbia.edu/tag/07MH) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.smallZariskiChangeBaseSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean#L437). The attribute's comment: “the Zariski square of the remark: the small Zariski morphisms along X ⟶ S ⟶ S' and along X ⟶ Y ⟶ S' agree, as an invertible 2-morphism of topoi, both being the morphism along the single morphism of schemes X ⟶ S', with no further hypothesis”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.structureSquareTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BaseChangeSquareRinged07MS.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BaseChangeSquareRinged07MS.lean#L321). The attribute's comment: “the square of ringed topoi of the remark, τ\_\{Y/S'} ∘ f\_cris ≅ f\_Zar ∘ τ\_\{X/S} from ((X/S)\_cris, 𝒪\_\{X/S}) to (S'\_Zar, 𝒪\_\{S'}), with f\_cris = π\_Y ∘ f\_CRIS ∘ i\_X of Tag 07IK on top and the structure morphisms τ of Tag 07IM as vertical arrows, for every morphism of divided power bases f and every g : X ⟶ Y over the closed fibres; the remark's printed bottom corners Sh((Sch/S)\_Zar) are a typo for the small Zariski topoi Sh(S\_Zar) in which τ lands (errata.md)”.
 
-> **Stacks Project, Tag 07MH.**  The Zariski square of the remark commutes: the small Zariski
-> morphism along `X ⟶ S` followed by the one along `S ⟶ S'` agrees with the one along `X ⟶ Y`
-> followed by the one along `Y ⟶ S'`, both being the small Zariski morphism along the single
-> morphism of schemes `X ⟶ S'`.  This is unconditional.
-
-```lean
-def smallZariskiChangeBaseSquare (S S' : GlobalCrystallineSituation.{u}) (f : S.S ⟶ S'.S)
-    (g : S.X ⟶ S'.X)
-    (h : S.toClosedFiber ≫ DividedPowerScheme.closedFiberMap f = g ≫ S'.toClosedFiber) :
-    ((opensMapMorphismOfTopoi f.hom.base).comp
-        (opensMapMorphismOfTopoi (sourceToBase S).base)).pushforward ≅
-      ((opensMapMorphismOfTopoi (sourceToBase S').base).comp
-        (opensMapMorphismOfTopoi g.base)).pushforward
-```
-
-**`Crystalline.GlobalCrystallineSituation.changeBaseSmallStructureLowerRoute`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean#L458). The attribute's comment: “the lower route of the remark's square: the structure morphism τ\_\{X/S} followed by the Zariski morphism along S ⟶ S' is u\_\{X/S} followed by the small Zariski route X ⟶ Y ⟶ S', as an invertible 2-morphism of topoi, with no further hypothesis. NOT the remark's square itself, which is nowhere covered”.
-
-> **Stacks Project, Tag 07MH.**  The lower route of the remark's square: the structure morphism
-> `τ_{X/S}` followed by the small Zariski morphism along `S ⟶ S'` is the comparison `u_{X/S}` of
-> [Stacks, Tag 07IL] followed by the small Zariski morphisms along `X ⟶ Y` and `Y ⟶ S'`.  This is
-> unconditional, and is to the square of [Stacks, Tag 07MH] what
-> `Crystalline.GlobalCrystallineSituation.structureToposMorphism_isoLowerRoute` is to the diagram of
-> [Stacks, Tag 07IM]: it is the part of the square that does not meet the obstruction (★).
-
-```lean
-def changeBaseSmallStructureLowerRoute (S S' : GlobalCrystallineSituation.{u}) (f : S.S ⟶ S'.S)
-    (g : S.X ⟶ S'.X)
-    (h : S.toClosedFiber ≫ DividedPowerScheme.closedFiberMap f = g ≫ S'.toClosedFiber) :
-    ((opensMapMorphismOfTopoi f.hom.base).comp (structureToposMorphism S)).pushforward ≅
-      ((opensMapMorphismOfTopoi (sourceToBase S').base).comp
-        ((opensMapMorphismOfTopoi g.base).comp (zariskiToposMorphism S))).pushforward
-```
-
-**`Crystalline.GlobalCrystallineSituation.changeBaseSmallStructureSquareOfComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean#L498). The attribute's comment: “the remark's square in its displayed corners: the structure morphism of the big crystalline site read on (X/S)\_cris along i\_X, the big Zariski morphism along S ⟶ S', and f\_CRIS ∘ i\_X on top, for every f and g with no further hypothesis. Composing the top arrow with the retraction π\_Y, so that it becomes f\_cris of Stacks 07IK and lands in (Y/S')\_cris, is NOT covered: that reduces to (★), that i\_\{Y,!}(u⁻¹ h\_V) ⟶ U⁻¹ h\_\{V/Y} is an isomorphism, and the cofinality route to (★) is FALSE — over S = Spec ℤ\_(p) with divided power ideal (p), X = ⨆\_\{n ≥ 1} Spec 𝔽\_p and T = ⨆\_\{n ≥ 1} Spec ℤ/pⁿ the comma category StructuredArrow (κ A) ι is empty, so Functor.Final, Initial for the opposite functor and RepresentablyFlat fail at once, the obstruction being non-quasi-compactness. What is true is the covering-local form of (★), the open-local family of i\_! * = *, which Stacks 07HP supplies only affine-locally and 07IJ omits in general. The source is itself in doubt here: tag 07IM carries a May 2025 comment citing Berthelot, Cohomologie cristalline III, Remarque 3.2.5, that a map appearing in Situation 07MF may not be a morphism of ringed topoi at all; the project replied on 4 August 2025 that this is a mistake and linked a fixing commit, though the served page still displays the statement”.
-
-> **Stacks Project, Tag 07MH.**  The square of the remark in the corners the remark displays:
-> the two targets are the *big* Zariski topoi `Sh((Sch/S)_Zar)` and `Sh((Sch/S')_Zar)`, the vertical
-> arrows are the structure morphism of the big crystalline site of [Stacks, Tag 07IE] read on the
-> small crystalline topos along the inclusion `i_X` of [Stacks, Tag 07IJ], the bottom arrow is the
-> big Zariski morphism along `(S, I, γ) ⟶ (S', I', γ')` and the top arrow is the composite
-> `f_CRIS ∘ i_X : (X/S)_cris ⟶ (Y/S')_CRIS` of the inclusion with change of divided power base.  It
-> holds for every `f` and `g`, with no hypothesis beyond the data of the change of base: it is the
-> square of [Stacks, Tag 07MG] whiskered with the direct image of `i_X`.
+> **The square of ringed topoi of [Stacks, Tag 07MS] commutes**: the two routes
+> `f_Zar ∘ τ_{X/S}` and `τ_{X'/S'} ∘ f_cris` from `((X/S)_cris, 𝒪_{X/S})` to `(S'_Zar, 𝒪_{S'})` are
+> 2-isomorphic, by `structureSquarePushforwardIso` on direct images, which carries the structure map
+> of one to that of the other: both send a function on an open of `S'` to its pullbacks along the
+> objects of `Cris(X/S)`.
 >
-> The top arrow is the part of `f_cris = π_Y ∘ f_CRIS ∘ i_X` that does not pass through the
-> retraction `π_Y`.  Composing with `π_Y` to land in `(Y/S')_cris` is what the square cannot absorb:
-> the top-and-right route then carries the factor `i_Y^{-1}` followed by `i_{Y, *}`, and only the
-> other composite `π_Y ∘ i_Y` is the identity, [Stacks, Tag 07IJ].  See the obstruction (★) in the
-> module docstring.  The small-Zariski reading of the remark's square has its lower route in
-> `changeBaseSmallStructureLowerRoute` and its Zariski half in `smallZariskiChangeBaseSquare`, both
-> unconditional.
+> This is also the square of [Stacks, Tag 07MH]: in the situation of [Stacks, Tag 07IK] the top
+> arrow is `f_cris = π_{X'} ∘ f_CRIS ∘ i_X` (`crisRingedHomComp`, whose underlying morphism of topoi
+> is `crisMorphism` on the nose) and the vertical arrows are the structure morphisms `τ_{X/S}` and
+> `τ_{X'/S'}` of [Stacks, Tag 07IM].  The remark displays the big Zariski topoi
+> `Sh((Sch/S)_Zar)`, `Sh((Sch/S')_Zar)` as the bottom corners; that is a typo, copied from the big
+> crystalline remark [Stacks, Tag 07MG], for the small Zariski topoi `Sh(S_Zar)`, `Sh(S'_Zar)` in
+> which the structure morphisms of the small crystalline site land, and it is recorded in
+> `errata.md`.
 
 ```lean
-def changeBaseSmallStructureSquareOfComparison (S S' : GlobalCrystallineSituation.{u})
-    (f : S.S ⟶ S'.S) (g : S.X ⟶ S'.X)
-    (h : S.toClosedFiber ≫ DividedPowerScheme.closedFiberMap f = g ≫ S'.toClosedFiber) :
-    ((zariskiOverMorphism f.hom).comp
-        ((structureMorphism S).comp (smallToBigMorphism S))).pushforward ≅
-      ((structureMorphism S').comp
-        ((changeBaseMorphism S S' f g h).comp (smallToBigMorphism S))).pushforward
+def structureSquareTwoIso :
+    RingedToposHom.TwoIso (A := crisRingedTopos S) (B := zariskiRingedTopos S'.S.scheme)
+      (squareLower f) (squareUpper f g h)
 ```
 
 ## Depends on
@@ -898,4 +857,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 60.9, Tag 07IF](https://stacks.math.columbia.edu/tag/07IF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Submersions
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html).
 
 ## Changing the target chart of a submersion at a point
 
@@ -29,7 +29,7 @@ first mapped by $f$ into the second, in which $f$ reads $\mathrm{pr}_1 \circ e$ 
 the first, for some continuous linear equivalence $e : E \to E'' \times F$; a witness of this
 fixes one such $e$.
 
-Formalized by `Manifold.IsSubmersionAtOfComplement.exists_domChart_of_codChart`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionComp.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/SubmersionComp.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#exists-dom-chart-of-cod-chart).
+Formalized by `Manifold.IsSubmersionAtOfComplement.exists_domChart_of_codChart`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionComp.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/SubmersionComp.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#exists-dom-chart-of-cod-chart).
 
 ## Composition of submersions at a point with chosen complements
 
@@ -48,7 +48,7 @@ $e : E \to E'' \times F$ such that
 $\hat\psi \circ f \circ \hat\varphi^{-1} = \mathrm{pr}_1 \circ e$ on the image of $\hat\varphi$,
 where $\hat\varphi$ and $\hat\psi$ denote the charts followed by the models with corners.
 
-Formalized by `Manifold.IsSubmersionAtOfComplement.comp`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionComp.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/SubmersionComp.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#comp).
+Formalized by `Manifold.IsSubmersionAtOfComplement.comp`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionComp.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/SubmersionComp.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#comp).
 
 ## Submersions at a point are closed under composition
 
@@ -66,7 +66,7 @@ equivalence $e : E \to E'' \times F$ such that
 $\hat\psi \circ f \circ \hat\varphi^{-1} = \mathrm{pr}_1 \circ e$ on the image of $\hat\varphi$,
 where $\hat\varphi$ and $\hat\psi$ denote the charts followed by the models with corners.
 
-Formalized by `Manifold.IsSubmersionAt.comp`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionComp.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/SubmersionComp.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#comp-2).
+Formalized by `Manifold.IsSubmersionAt.comp`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionComp.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/SubmersionComp.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#comp-2).
 
 ## Composition of submersions with chosen complements
 
@@ -85,7 +85,7 @@ equivalence $e : E \to E'' \times F$ such that
 $\hat\psi \circ f \circ \hat\varphi^{-1} = \mathrm{pr}_1 \circ e$ on the image of $\hat\varphi$,
 where $\hat\varphi$ and $\hat\psi$ denote the charts followed by the models with corners.
 
-Formalized by `Manifold.IsSubmersionOfComplement.comp`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionComp.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/SubmersionComp.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#comp-3).
+Formalized by `Manifold.IsSubmersionOfComplement.comp`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionComp.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/SubmersionComp.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#comp-3).
 
 ## Submersions are closed under composition
 
@@ -102,7 +102,7 @@ a continuous linear equivalence $e : E \to E'' \times F$ such that
 $\hat\psi \circ f \circ \hat\varphi^{-1} = \mathrm{pr}_1 \circ e$ on the image of $\hat\varphi$,
 where $\hat\varphi$ and $\hat\psi$ denote the charts followed by the models with corners.
 
-Formalized by `Manifold.IsSubmersion.comp`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionComp.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/SubmersionComp.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#comp-4).
+Formalized by `Manifold.IsSubmersion.comp`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionComp.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/SubmersionComp.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#comp-4).
 
 ## Composition of submersions at a point
 
@@ -122,7 +122,7 @@ compose the two projection normal forms and use the product of their complements
 
 - J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4.
 
-Formalized by `MathlibExt.Geometry.Manifold.SubmersionCompWanted.submersionAt_comp`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionComp.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/SubmersionComp.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#submersion-at-comp).
+Formalized by `MathlibExt.Geometry.Manifold.SubmersionCompWanted.submersionAt_comp`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionComp.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/SubmersionComp.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#submersion-at-comp).
 
 ## Composition of submersions
 
@@ -142,7 +142,7 @@ complements, then package their product as the complement of the composite.
 
 - J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4.
 
-Formalized by `MathlibExt.Geometry.Manifold.SubmersionCompWanted.submersion_comp`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionComp.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/SubmersionComp.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#submersion-comp).
+Formalized by `MathlibExt.Geometry.Manifold.SubmersionCompWanted.submersion_comp`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionComp.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/SubmersionComp.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#submersion-comp).
 
 ## Surjective differential into a finite-dimensional manifold gives a submersion
 
@@ -157,7 +157,7 @@ first mapped by $f$ into the second, in which $f$ reads $(u, v) \mapsto u$ after
 identification of the model space of $M$ with the product of the model space of $N$ and some
 normed space.
 
-Formalized by `Manifold.IsSubmersionAt.of_surjective_mfderiv`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionOfSurjectiveMFDeriv.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/SubmersionOfSurjectiveMFDeriv.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#of-surjective-mfderiv).
+Formalized by `Manifold.IsSubmersionAt.of_surjective_mfderiv`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionOfSurjectiveMFDeriv.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/SubmersionOfSurjectiveMFDeriv.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#of-surjective-mfderiv).
 
 ## Surjective differential gives a submersion between finite-dimensional manifolds
 
@@ -177,7 +177,7 @@ inverse function theorem to obtain charts in which the map is the first projecti
 
 - J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4.
 
-Formalized by `MathlibExt.Geometry.Manifold.SubmersionOfSurjectiveMFDerivWanted.submersionAt_of_surjective_mfderiv`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionOfSurjectiveMFDeriv.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/SubmersionOfSurjectiveMFDeriv.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#submersion-at-of-surjective-mfderiv).
+Formalized by `MathlibExt.Geometry.Manifold.SubmersionOfSurjectiveMFDerivWanted.submersionAt_of_surjective_mfderiv`, a theorem declared in [MathlibExt/Geometry/Manifold/SubmersionOfSurjectiveMFDeriv.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/SubmersionOfSurjectiveMFDeriv.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html#submersion-at-of-surjective-mfderiv).
 
 ## Depends on
 
@@ -186,4 +186,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Submersions](https://deicyde.github.io/atlas-lean/roadmap/Geometry/differential-topology/submersions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/differential-topology/submersions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/differential-topology/submersions)

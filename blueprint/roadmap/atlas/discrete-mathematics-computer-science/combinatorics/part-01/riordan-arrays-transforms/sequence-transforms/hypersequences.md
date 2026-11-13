@@ -7,7 +7,7 @@ statement: formalized
 
 # Hypersequences
 
-44 results, 11 proved and 33 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html).
+44 results, 11 proved and 33 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html).
 
 ## Hypersequence
 
@@ -20,7 +20,7 @@ $n$. Thus each generation is the sequence of partial sums of the previous one.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Section 1, Equation (1.1).
 
-Formalized by `MetaMathlibExt.hypersequence`, a definition declared in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hypersequence).
+Formalized by `MetaMathlibExt.hypersequence`, a definition declared in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hypersequence).
 
 ## Each hypersequence generation sums the previous one
 
@@ -32,7 +32,7 @@ all natural numbers $r$ and $n$, $a^{(r+1)}_n = \sum_{k=0}^{n} a^{(r)}_k$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Section 1, Equation (1.1).
 
-Formalized by `MetaMathlibExt.hypersequence_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hypersequence-succ).
+Formalized by `MetaMathlibExt.hypersequence_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hypersequence-succ).
 
 ## First hypersequence at index zero
 
@@ -43,7 +43,7 @@ monoid and let $a^{(1)}_n$ denote its hypersequence of generation $1$. Then $a^{
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Section 1, Equation (1.1).
 
-Formalized by `MetaMathlibExt.hypersequence_one_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hypersequence-one-zero).
+Formalized by `MetaMathlibExt.hypersequence_one_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hypersequence-one-zero).
 
 ## Hyperfibonacci numbers are the hypersequences of the Fibonacci numbers
 
@@ -57,7 +57,7 @@ $a^{(r+1)}_n = \sum_{k=0}^{n} a^{(r)}_k$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Example 3 (hyperfibonacci numbers).
 
-Formalized by `MetaMathlibExt.hyperFibonacci_eq_hypersequence`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyper-fibonacci-eq-hypersequence).
+Formalized by `MetaMathlibExt.hyperFibonacci_eq_hypersequence`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyper-fibonacci-eq-hypersequence).
 
 ## Alternating binomial power sum
 
@@ -71,7 +71,7 @@ with the convention $0^0 = 1$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Section 3, Equation (3.9).
 
-Formalized by `MetaMathlibExt.alternatingBinomialPowerSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#alternating-binomial-power-sum).
+Formalized by `MetaMathlibExt.alternatingBinomialPowerSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#alternating-binomial-power-sum).
 
 ## A value of the alternating binomial power sum
 
@@ -83,7 +83,7 @@ $p_{1,1}(1, 1) = 1 - 2 = -1$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Section 3, Equation (3.9).
 
-Formalized by `MetaMathlibExt.alternatingBinomialPowerSum_one_one_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#alternating-binomial-power-sum-one-one-o).
+Formalized by `MetaMathlibExt.alternatingBinomialPowerSum_one_one_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#alternating-binomial-power-sum-one-one-o).
 
 ## Hypersequences as binomial sums
 
@@ -97,7 +97,7 @@ $$a^{(r)}_n = \sum_{k=0}^{n} \binom{n+r-1-k}{r-1} a_k = \sum_{k=0}^{n} \binom{r+
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 1, Equation (2.1).
 
-Stated but not proved: `MetaMathlibExt.hypersequence_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hypersequence-eq-sum-choose).
+Stated but not proved: `MetaMathlibExt.hypersequence_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hypersequence-eq-sum-choose).
 
 ## Recurrence between consecutive hypersequence generations
 
@@ -109,7 +109,7 @@ numbers $r$ and $n$, $a^{(r+1)}_{n+1} = a^{(r+1)}_n + a^{(r)}_{n+1}$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 2, Equation (2.2).
 
-Stated but not proved: `MetaMathlibExt.hypersequence_succ_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hypersequence-succ-succ).
+Stated but not proved: `MetaMathlibExt.hypersequence_succ_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hypersequence-succ-succ).
 
 ## Hyperfibonacci numbers in terms of Fibonacci numbers
 
@@ -123,7 +123,7 @@ $$F^{(r)}_n = F_{n+2r} - \sum_{k=0}^{r-1} \binom{n + k - 1}{k} F_{2(r-k)}.$$
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 3, Equation (2.8).
 
-Stated but not proved: `MetaMathlibExt.hyperFibonacci_eq_fib_sub_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyper-fibonacci-eq-fib-sub-sum).
+Stated but not proved: `MetaMathlibExt.hyperFibonacci_eq_fib_sub_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyper-fibonacci-eq-fib-sub-sum).
 
 ## Fibonacci numbers as binomially weighted sums
 
@@ -142,7 +142,7 @@ $$F_{n+2r} = \sum_{k=0}^{n} \binom{r + k - 1}{k} F_{n-k} +
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.fib_add_two_mul_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#fib-add-two-mul-eq-sum-choose).
+Stated but not proved: `MetaMathlibExt.fib_add_two_mul_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#fib-add-two-mul-eq-sum-choose).
 
 ## Recurrence for the hyperfibonacci numbers
 
@@ -157,7 +157,7 @@ form in which Parisse quotes this result of Cristea, Martinjak and Urbiha.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 4, Equation (2.9).
 
-Stated but not proved: `MetaMathlibExt.hyperFibonacci_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyper-fibonacci-recurrence).
+Stated but not proved: `MetaMathlibExt.hyperFibonacci_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyper-fibonacci-recurrence).
 
 ## Hyperlucas numbers in terms of Lucas numbers
 
@@ -171,7 +171,7 @@ $$L^{(r)}_n = L_{n+2r} - \sum_{k=0}^{r-1} \binom{n+k}{k} L_{2(r-k)-1}.$$
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 5, Equation (2.12).
 
-Stated but not proved: `MetaMathlibExt.hyperLucas_eq_lucas_sub_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyper-lucas-eq-lucas-sub-sum).
+Stated but not proved: `MetaMathlibExt.hyperLucas_eq_lucas_sub_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyper-lucas-eq-lucas-sub-sum).
 
 ## Lucas numbers as binomial sums
 
@@ -190,7 +190,7 @@ $$L_{n+2r} = \sum_{k=0}^{n} \binom{r+k-1}{k} L_{n-k} +
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.lucas_add_two_mul_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#lucas-add-two-mul-eq-sum-choose).
+Stated but not proved: `MetaMathlibExt.lucas_add_two_mul_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#lucas-add-two-mul-eq-sum-choose).
 
 ## Recurrence for the hyperlucas numbers
 
@@ -208,7 +208,7 @@ $$L^{(r)}_{n+2} = L^{(r)}_{n+1} + L^{(r)}_n + \frac{n+2r}{n+2} \binom{n+r}{r-1}.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 6, Equation (2.13).
 
-Stated but not proved: `MetaMathlibExt.hyperLucas_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyper-lucas-recurrence).
+Stated but not proved: `MetaMathlibExt.hyperLucas_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyper-lucas-recurrence).
 
 ## Abel summation by parts
 
@@ -222,7 +222,7 @@ $$\sum_{k=0}^{n} a_k b_k = a^{(1)}_n b_{n+1} + \sum_{k=0}^{n} a^{(1)}_k (b_k - b
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.sum_mul_eq_hypersequence_one_mul_add_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-mul-eq-hypersequence-one-mul-add-sum).
+Stated but not proved: `MetaMathlibExt.sum_mul_eq_hypersequence_one_mul_add_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-mul-eq-hypersequence-one-mul-add-sum).
 
 ## Recurrence for power-weighted sums of hypersequences
 
@@ -239,7 +239,7 @@ where the sum over $j$ is empty when $\ell = 0$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 8, Equation (3.5).
 
-Stated but not proved: `MetaMathlibExt.sum_pow_mul_hypersequence_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-pow-mul-hypersequence-recurrence).
+Stated but not proved: `MetaMathlibExt.sum_pow_mul_hypersequence_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-pow-mul-hypersequence-recurrence).
 
 ## Power-weighted sums of hypersequences
 
@@ -260,7 +260,7 @@ $$\sum_{k=0}^{n} k^\ell a^{(r)}_k = \sum_{j=0}^{\ell} \binom{\ell}{j}
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 9, Equations (3.7) and (3.8).
 
-Stated but not proved: `MetaMathlibExt.sum_pow_mul_hypersequence_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-pow-mul-hypersequence-eq).
+Stated but not proved: `MetaMathlibExt.sum_pow_mul_hypersequence_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-pow-mul-hypersequence-eq).
 
 ## Power-weighted sums of a sequence via its hypersequences
 
@@ -283,7 +283,7 @@ This is the case $r = 0$ of the corresponding identity for $\sum_{k=0}^{n} k^\el
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.sum_pow_mul_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-pow-mul-eq).
+Stated but not proved: `MetaMathlibExt.sum_pow_mul_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-pow-mul-eq).
 
 ## Boyadzhiev's and Katsuura's formulas for alternating binomial power sums
 
@@ -299,7 +299,7 @@ x^j y^{\ell-j}$, where the sum is empty (hence $0$) when $\ell < m$;
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.alternatingBinomialPowerSum_eq_sum_stirlingSecond` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#alternating-binomial-power-sum-eq-sum-st).
+Stated but not proved: `MetaMathlibExt.alternatingBinomialPowerSum_eq_sum_stirlingSecond` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#alternating-binomial-power-sum-eq-sum-st).
 
 ## Special values of alternating binomial power sums
 
@@ -318,7 +318,7 @@ $p_{m+1,m}(1, 0) = (-1)^m m! \binom{m+1}{2}$;
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Proposition 2 (i)–(iv).
 
-Stated but not proved: `MetaMathlibExt.alternatingBinomialPowerSum_special_values` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#alternating-binomial-power-sum-special-v).
+Stated but not proved: `MetaMathlibExt.alternatingBinomialPowerSum_special_values` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#alternating-binomial-power-sum-special-v).
 
 ## Small cases of alternating binomial power sums
 
@@ -338,7 +338,7 @@ $p_{\ell,\ell-1}(x, y) = (-1)^{\ell-1} \ell!\, x^{\ell-1} \left(y + \frac{\ell -
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.alternatingBinomialPowerSum_small_cases` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#alternating-binomial-power-sum-small-cas).
+Stated but not proved: `MetaMathlibExt.alternatingBinomialPowerSum_small_cases` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#alternating-binomial-power-sum-small-cas).
 
 ## Recurrences for alternating binomial power sums
 
@@ -361,7 +361,7 @@ $p_{\ell,m}(x, y) = (m x + y)\, p_{\ell-1,m}(x, y) - m x\, p_{\ell-1,m-1}(x, y)$
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.alternatingBinomialPowerSum_recurrences` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#alternating-binomial-power-sum-recurrenc).
+Stated but not proved: `MetaMathlibExt.alternatingBinomialPowerSum_recurrences` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#alternating-binomial-power-sum-recurrenc).
 
 ## Derivative and recurrence of the shifted alternating binomial power sums
 
@@ -377,7 +377,7 @@ The variable $n$ is complex here because the paper differentiates in $n$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Corollary 4, Equation (3.38).
 
-Stated but not proved: `MetaMathlibExt.carlitzSum_deriv_and_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#carlitz-sum-deriv-and-recurrence).
+Stated but not proved: `MetaMathlibExt.carlitzSum_deriv_and_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#carlitz-sum-deriv-and-recurrence).
 
 ## Sums of $m$th powers via Stirling numbers of the second kind
 
@@ -394,7 +394,7 @@ The paper takes $n \ge 1$; for $n = 0$ both sides vanish, so that case is includ
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Corollary 5, Equation (4.4).
 
-Stated but not proved: `MetaMathlibExt.sum_pow_eq_sum_stirlingSecond` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-pow-eq-sum-stirling-second).
+Stated but not proved: `MetaMathlibExt.sum_pow_eq_sum_stirlingSecond` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-pow-eq-sum-stirling-second).
 
 ## Alternating binomial expansion of a shifted binomial coefficient
 
@@ -411,7 +411,7 @@ when $j > m$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Lemma 1, Equation (4.10).
 
-Stated but not proved: `MetaMathlibExt.ringChoose_sub_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#ring-choose-sub-eq-sum).
+Stated but not proved: `MetaMathlibExt.ringChoose_sub_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#ring-choose-sub-eq-sum).
 
 ## Powers of $k + 1$ via Stirling numbers of the second kind
 
@@ -426,7 +426,7 @@ where $S(i, j)$ denotes the Stirling numbers of the second kind.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Lemma 2, Equation (4.11).
 
-Stated but not proved: `MetaMathlibExt.succ_pow_eq_sum_stirlingSecond` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#succ-pow-eq-sum-stirling-second).
+Stated but not proved: `MetaMathlibExt.succ_pow_eq_sum_stirlingSecond` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#succ-pow-eq-sum-stirling-second).
 
 ## Power-weighted sums of Fibonacci numbers
 
@@ -443,7 +443,7 @@ The paper's conjecture on the constant term, stated after this theorem, is not i
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 10, Equation (4.7).
 
-Stated but not proved: `MetaMathlibExt.sum_pow_mul_fib_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-pow-mul-fib-eq).
+Stated but not proved: `MetaMathlibExt.sum_pow_mul_fib_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-pow-mul-fib-eq).
 
 ## Power-weighted sums of Lucas numbers
 
@@ -461,7 +461,7 @@ The paper's conjecture on the constant term, stated after this theorem, is not i
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 11, Equation (4.9).
 
-Stated but not proved: `MetaMathlibExt.sum_pow_mul_lucas_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-pow-mul-lucas-eq).
+Stated but not proved: `MetaMathlibExt.sum_pow_mul_lucas_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceWeightedSumsWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-pow-mul-lucas-eq).
 
 ## Recurrence, closed form and row sums of $e_{j,k}(n)$
 
@@ -479,7 +479,7 @@ $\sum_{k=0}^{j} (-1)^k e_{j,k}(n) = (-1)^j n^{\overline{j}}$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.hyperseq_esymm_recurrence_closed_form_row_sums` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-esymm-recurrence-closed-form-ro).
+Stated but not proved: `MetaMathlibExt.hyperseq_esymm_recurrence_closed_form_row_sums` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-esymm-recurrence-closed-form-ro).
 
 ## Elementary symmetric functions of the first integers via Stirling numbers
 
@@ -495,7 +495,7 @@ $$e_{j,k} = \sum_{\ell=0}^{k} \binom{j-k+\ell}{\ell}\, c(j, j-k+\ell) = c(j + 1,
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.hyperseq_esymm_zero_recurrence_stirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-esymm-zero-recurrence-stirling).
+Stated but not proved: `MetaMathlibExt.hyperseq_esymm_zero_recurrence_stirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-esymm-zero-recurrence-stirling).
 
 ## Parisse's matrix $B(n)$
 
@@ -511,7 +511,7 @@ $n$ ranges over the integers.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Section 2, Equation (2.5).
 
-Formalized by `MetaMathlibExt.hyperseqB`, a definition declared in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-b).
+Formalized by `MetaMathlibExt.hyperseqB`, a definition declared in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-b).
 
 ## Row one of Parisse's matrix $B(n)$
 
@@ -522,7 +522,7 @@ $B(n)$ satisfy $b_{1,0}(n) = n + 1$ and $b_{1,1}(n) = -1$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Section 2, display of `B(n)`.
 
-Formalized by `MetaMathlibExt.hyperseqB_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-b-one).
+Formalized by `MetaMathlibExt.hyperseqB_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-b-one).
 
 ## Row three of Parisse's matrix $B(1)$
 
@@ -536,7 +536,7 @@ $(n + 1)(n + 2)(n + 3), -(3n^2 + 12n + 11), 3n + 6, -1$, at $n = 1$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Section 2, display of `B(n)`.
 
-Formalized by `MetaMathlibExt.hyperseqB_row_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-b-row-three).
+Formalized by `MetaMathlibExt.hyperseqB_row_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-b-row-three).
 
 ## Mitrinović's numbers
 
@@ -554,7 +554,7 @@ value is the source's Corollary 5 at $a = 0$ and its solution (4.3) at $j = 0$ f
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Section 4, Equation (4.2).
 
-Formalized by `MetaMathlibExt.mitrinovicR`, a definition declared in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#mitrinovic-r).
+Formalized by `MetaMathlibExt.mitrinovicR`, a definition declared in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#mitrinovic-r).
 
 ## Mitrinović's numbers with lower index one
 
@@ -565,7 +565,7 @@ numbers satisfy $R^0_1(a, b) = -a$ and $R^1_1(a, b) = 1$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Section 4, Equation (4.2).
 
-Formalized by `MetaMathlibExt.mitrinovicR_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#mitrinovic-r-one).
+Formalized by `MetaMathlibExt.mitrinovicR_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#mitrinovic-r-one).
 
 ## Hypersequences through elementary symmetric polynomials
 
@@ -580,7 +580,7 @@ $j! \, a^{(j+1)}_n = \sum_{k=0}^{j} (-1)^k e_{j,j-k}(n) \, t_k(n)$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Theorem 1, Equation (2.1).
 
-Stated but not proved: `MetaMathlibExt.factorial_mul_hypersequence_eq_sum_esymm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#factorial-mul-hypersequence-eq-sum-esymm).
+Stated but not proved: `MetaMathlibExt.factorial_mul_hypersequence_eq_sum_esymm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#factorial-mul-hypersequence-eq-sum-esymm).
 
 ## The inverse of Parisse's matrix $C(n)$
 
@@ -601,7 +601,7 @@ so each entry of the two products is the finite sum above.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.hyperseqC_inv_eq_hyperseqB_div_factorial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-c-inv-eq-hyperseq-b-div-factori).
+Stated but not proved: `MetaMathlibExt.hyperseqC_inv_eq_hyperseqB_div_factorial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-c-inv-eq-hyperseq-b-div-factori).
 
 ## The inverse of Parisse's matrix $B(n)$
 
@@ -621,7 +621,7 @@ of the factorials $j!$, this says $B(n)^{-1} = C(n) D^{-1}$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Corollary 1, Equation (2.9).
 
-Stated but not proved: `MetaMathlibExt.hyperseqB_inv_eq_hyperseqC_div_factorial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-b-inv-eq-hyperseq-c-div-factori).
+Stated but not proved: `MetaMathlibExt.hyperseqB_inv_eq_hyperseqC_div_factorial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-b-inv-eq-hyperseq-c-div-factori).
 
 ## The product of Parisse's matrices B(n) and C(n)
 
@@ -635,7 +635,7 @@ of $C(n)$. Then $\sum_{i=0}^{j} b_{j,i}(n)\, c_{i,m}(n)$ equals $j!$ if $j = m$ 
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.sum_hyperseqB_mul_hyperseqC` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-hyperseq-b-mul-hyperseq-c).
+Stated but not proved: `MetaMathlibExt.sum_hyperseqB_mul_hyperseqC` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#sum-hyperseq-b-mul-hyperseq-c).
 
 ## Recurrence, closed form and row sums of Parisse's $b_{j,k}(n)$
 
@@ -654,7 +654,7 @@ $\sum_{k=0}^{j} (-1)^k b_{j,k}(n) = (n + 2)^{\overline{j}}$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.hyperseqB_recurrence_closed_form_row_sums` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-b-recurrence-closed-form-row-su).
+Stated but not proved: `MetaMathlibExt.hyperseqB_recurrence_closed_form_row_sums` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-b-recurrence-closed-form-row-su).
 
 ## Parisse's $b_{j,k}(0)$ and Stirling numbers of the first kind
 
@@ -669,7 +669,7 @@ $b_{j,k}(0) = (-1)^k \sum_{\ell=k}^{j} \binom{\ell}{k} [j, \ell] = (-1)^k [j + 1
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.hyperseqB_zero_recurrence_stirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-b-zero-recurrence-stirling).
+Stated but not proved: `MetaMathlibExt.hyperseqB_zero_recurrence_stirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-b-zero-recurrence-stirling).
 
 ## Parisse's coefficients at $n$ from their values at $-1$
 
@@ -692,7 +692,7 @@ $j - k + i$ of the binomial coefficient can be negative.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.hyperseq_entries_eq_sum_at_neg_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-entries-eq-sum-at-neg-one).
+Stated but not proved: `MetaMathlibExt.hyperseq_entries_eq_sum_at_neg_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#hyperseq-entries-eq-sum-at-neg-one).
 
 ## Mitrinović's numbers at $a = 0$
 
@@ -712,7 +712,7 @@ $b = 0$ both sides of the closed form are $\delta_{j,k}$.
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.mitrinovicR_zero_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#mitrinovic-r-zero-eq).
+Stated but not proved: `MetaMathlibExt.mitrinovicR_zero_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#mitrinovic-r-zero-eq).
 
 ## Binomial expansion of Mitrinović's numbers in the first parameter
 
@@ -729,7 +729,7 @@ The source's hypothesis $b \ne 0$ is not needed: the identity also holds at $b =
 
 - Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Proposition 4, Equation (4.6).
 
-Stated but not proved: `MetaMathlibExt.mitrinovicR_eq_sum_mitrinovicR_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#mitrinovic-r-eq-sum-mitrinovic-r-zero).
+Stated but not proved: `MetaMathlibExt.mitrinovicR_eq_sum_mitrinovicR_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HypersequenceElementarySymmetricWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html#mitrinovic-r-eq-sum-mitrinovic-r-zero).
 
 ## Depends on
 
@@ -738,4 +738,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hypersequences](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/hypersequences)

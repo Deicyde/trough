@@ -7,7 +7,7 @@ statement: formalized
 
 # Nonmetric k-median
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median/index.html).
 
 ## k-median instances
 
@@ -16,14 +16,14 @@ as a list of rows of natural numbers (one row per client, one entry per location
 not have equal length), a natural number $K$ bounding the number of open locations, and a
 natural-number budget $B$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.KMedian.KMedianInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/KMedianWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/KMedianWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median/index.html#kmedian-instance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.KMedian.KMedianInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/KMedianWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/KMedianWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median/index.html#kmedian-instance).
 
 ## Well-formed k-median instances
 
 A k-median instance $(d, K, B)$ is well formed when all
 rows of its cost matrix $d$ have the same length.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.KMedian.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/KMedianWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/KMedianWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.KMedian.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/KMedianWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/KMedianWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median/index.html#well-formed).
 
 ## Feasible k-median instances
 
@@ -34,7 +34,7 @@ most $K$ locations and a choice of $a(c) \in S$ for each client $c < n$ such tha
 $\sum_{c < n} d_c(a(c)) \le B$, where $d_c(j)$ is the entry of $d_c$ at index $j$ (counting from
 $0$), read as $0$ when $d_c$ has fewer than $j + 1$ entries.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.KMedian.KMedianFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/KMedianWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/KMedianWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median/index.html#kmedian-feasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.KMedian.KMedianFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/KMedianWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/KMedianWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median/index.html#kmedian-feasible).
 
 ## The k-MEDIAN decision problem
 
@@ -46,7 +46,7 @@ $S \subseteq \{0, \dots, m-1\}$ of at most $K$ locations and a choice of $a(c) \
 client $c < n$ with $\sum_{c < n} d_{c, a(c)} \le B$. Bitstrings that do not decode are
 rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.KMedian.kMedianDec`, a definition declared in [WantedExt/Complexity/NPComplete/KMedianWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/KMedianWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median/index.html#k-median-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.KMedian.kMedianDec`, a definition declared in [WantedExt/Complexity/NPComplete/KMedianWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/KMedianWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median/index.html#k-median-dec).
 
 ## k-MEDIAN (GENERALIZED, NONMETRIC) is NP-complete
 
@@ -57,7 +57,7 @@ and every decision problem in NP has a polynomial-time many-one reduction to it.
 
 - O. Kariv and S. L. Hakimi, "An algorithmic approach to network location problems. II: The p-medians", SIAM Journal on Applied Mathematics 37 (1979), 539-560.
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.KMedian.kMedian_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/KMedianWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/KMedianWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median/index.html#k-median-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.KMedian.kMedian_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/KMedianWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/KMedianWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median/index.html#k-median-np-complete).
 
 ## Depends on
 
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Nonmetric k-median](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/set-systems-and-location/nonmetric-k-median)

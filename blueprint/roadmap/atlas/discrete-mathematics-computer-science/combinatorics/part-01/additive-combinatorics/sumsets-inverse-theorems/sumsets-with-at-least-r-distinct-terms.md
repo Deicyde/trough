@@ -7,9 +7,9 @@ statement: formalized
 
 # Sumsets with at least r distinct terms
 
-15 results, 3 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html).
+15 results, 3 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html).
 
-## Restricted twofold sumset of \{0, 1, 2}
+## Restricted twofold sumset of $\{0, 1, 2\}$
 
 In the integers, the restricted sumset
 $2^{\wedge}\{0, 1, 2\}$, the set of sums of two distinct elements of $\{0, 1, 2\}$, equals
@@ -19,7 +19,7 @@ $\{1, 2, 3\}$.
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Section 1 (definition of `h^A`).
 
-Formalized by `MetaMathlibExt.restrictedSumset_two_zero_one_two`, a theorem declared in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#restricted-sumset-two-zero-one-two).
+Formalized by `MetaMathlibExt.restrictedSumset_two_zero_one_two`, a theorem declared in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#restricted-sumset-two-zero-one-two).
 
 ## Sums with at least $r$ distinct terms
 
@@ -36,7 +36,7 @@ sumset $h^{\wedge}A$ of sums of $h$ distinct elements of $A$.
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Section 1, Definition 1.
 
-Formalized by `MetaMathlibExt.atLeastDistinctSumset`, a definition declared in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#at-least-distinct-sumset).
+Formalized by `MetaMathlibExt.atLeastDistinctSumset`, a definition declared in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#at-least-distinct-sumset).
 
 ## Example of a sumset with at least two distinct terms
 
@@ -49,7 +49,7 @@ repeated term.
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Section 1, Definition 1.
 
-Formalized by `MetaMathlibExt.atLeastDistinctSumset_three_two_zero_one_two`, a theorem declared in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#at-least-distinct-sumset-three-two-zero).
+Formalized by `MetaMathlibExt.atLeastDistinctSumset_three_two_zero_one_two`, a theorem declared in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#at-least-distinct-sumset-three-two-zero).
 
 ## Cauchy–Davenport theorem for $h$-fold sumsets
 
@@ -62,7 +62,7 @@ $|hA| \ge \min(p,\ hk - h + 1)$.
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 1 (Cauchy–Davenport theorem).
 
-Stated but not proved: `MetaMathlibExt.cauchy_davenport_nsmul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#cauchy-davenport-nsmul).
+Stated but not proved: `MetaMathlibExt.cauchy_davenport_nsmul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#cauchy-davenport-nsmul).
 
 ## Dias da Silva–Hamidoune theorem
 
@@ -75,7 +75,7 @@ $|h^{\wedge}A| \ge \min(p,\ hk - h^2 + 1)$.
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 2 (Dias da Silva–Hamidoune theorem).
 
-Stated but not proved: `MetaMathlibExt.dias_da_silva_hamidoune` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#dias-da-silva-hamidoune).
+Stated but not proved: `MetaMathlibExt.dias_da_silva_hamidoune` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#dias-da-silva-hamidoune).
 
 ## Vosper's theorem for iterated sumsets
 
@@ -89,7 +89,7 @@ length $k$ in $\mathbb{Z}/p\mathbb{Z}$.
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 3 (Vosper's theorem).
 
-Stated but not proved: `MetaMathlibExt.vosper_nsmul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#vosper-nsmul).
+Stated but not proved: `MetaMathlibExt.vosper_nsmul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#vosper-nsmul).
 
 ## Nathanson's inverse theorem for restricted sumsets
 
@@ -102,7 +102,7 @@ $A$. If $|h^{\wedge} A| = hk - h^2 + 1$, then $A$ is an arithmetic progression o
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 4 (Nathanson).
 
-Stated but not proved: `MetaMathlibExt.nathanson_restrictedSumset_inverse` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#nathanson-restricted-sumset-inverse).
+Stated but not proved: `MetaMathlibExt.nathanson_restrictedSumset_inverse` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#nathanson-restricted-sumset-inverse).
 
 ## Freiman's $3k - 4$ theorem
 
@@ -117,7 +117,7 @@ Since $|2A| \ge 2k - 1$ always, taking $b$ to be a natural number loses nothing.
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 5 (Freiman's `3k - 4` theorem).
 
-Stated but not proved: `MetaMathlibExt.freiman_three_k_sub_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#freiman-three-k-sub-four).
+Stated but not proved: `MetaMathlibExt.freiman_three_k_sub_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#freiman-three-k-sub-four).
 
 ## Plagne's theorem on the smallest iterated sumsets in cyclic groups
 
@@ -133,7 +133,7 @@ $$\min\{(h \lceil k/d \rceil - h + 1)\, d : d \text{ a positive divisor of } m\}
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 6 (Plagne).
 
-Stated but not proved: `MetaMathlibExt.plagne_min_nsmul_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#plagne-min-nsmul-card).
+Stated but not proved: `MetaMathlibExt.plagne_min_nsmul_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#plagne-min-nsmul-card).
 
 ## Bajnok's lemma on subset sums in $\mathbb{Z}/d\mathbb{Z}$
 
@@ -145,7 +145,7 @@ elements of some $t$-element subset $L \subseteq \mathbb{Z}/d\mathbb{Z}$.
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Lemma 1 (Bajnok).
 
-Stated but not proved: `MetaMathlibExt.exists_card_eq_sum_eq_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#exists-card-eq-sum-eq-zmod).
+Stated but not proved: `MetaMathlibExt.exists_card_eq_sum_eq_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#exists-card-eq-sum-eq-zmod).
 
 ## Decomposition of sums with at least $r$ distinct terms
 
@@ -160,7 +160,7 @@ $r$ distinct elements of $A$. Then $h^{(\ge r)}A = (h - r)A + r^{\wedge}A$.
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Lemma 2, equation (5).
 
-Stated but not proved: `MetaMathlibExt.atLeastDistinctSumset_eq_nsmul_add_restrictedSumset` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#at-least-distinct-sumset-eq-nsmul-add-re).
+Stated but not proved: `MetaMathlibExt.atLeastDistinctSumset_eq_nsmul_add_restrictedSumset` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#at-least-distinct-sumset-eq-nsmul-add-re).
 
 ## Sharp lower bound for sums with at least $r$ distinct terms modulo a prime
 
@@ -177,7 +177,7 @@ $|A| = k$ and $|h^{(\ge r)}A| = h(k - 1) - r(r - 1) + 1$.
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 9, equation (6).
 
-Stated but not proved: `MetaMathlibExt.atLeastDistinctSumset_card_ge_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#at-least-distinct-sumset-card-ge-zmod).
+Stated but not proved: `MetaMathlibExt.atLeastDistinctSumset_card_ge_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#at-least-distinct-sumset-card-ge-zmod).
 
 ## Inverse theorem for sums with at least $r$ distinct terms modulo a prime
 
@@ -192,7 +192,7 @@ an arithmetic progression of length $k$.
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.atLeastDistinctSumset_inverse_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#at-least-distinct-sumset-inverse-zmod).
+Stated but not proved: `MetaMathlibExt.atLeastDistinctSumset_inverse_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#at-least-distinct-sumset-inverse-zmod).
 
 ## Lower bound and inverse theorem for sums with at least $r$ distinct terms in $\mathbb{Z}$
 
@@ -207,7 +207,7 @@ arithmetic progression of length $k$.
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 12, equation (7).
 
-Stated but not proved: `MetaMathlibExt.atLeastDistinctSumset_card_ge_int` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#at-least-distinct-sumset-card-ge-int).
+Stated but not proved: `MetaMathlibExt.atLeastDistinctSumset_card_ge_int` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#at-least-distinct-sumset-card-ge-int).
 
 ## Lev's lower bound for iterated sumsets
 
@@ -222,7 +222,7 @@ $$|hA| \ge |(h - 1)A| + \min\{\max A,\ h(k - 2) + 1\}.$$
 
 - Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 13 (Lev).
 
-Stated but not proved: `MetaMathlibExt.lev_nsmul_card_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#lev-nsmul-card-ge).
+Stated but not proved: `MetaMathlibExt.lev_nsmul_card_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumsetsMinimumDistinctTermsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html#lev-nsmul-card-ge).
 
 ## Depends on
 
@@ -231,4 +231,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sumsets with at least r distinct terms](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms)

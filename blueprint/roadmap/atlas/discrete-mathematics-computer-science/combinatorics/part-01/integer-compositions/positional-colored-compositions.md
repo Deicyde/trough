@@ -7,7 +7,7 @@ statement: formalized
 
 # Positional colored compositions
 
-10 results, 2 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html).
+10 results, 2 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html).
 
 ## Positional colored compositions
 
@@ -25,7 +25,7 @@ position exactly $k$ is colored.
 
 - Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Definition 1.
 
-Formalized by `MetaMathlibExt.positionalColoredCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#positional-colored-composition-count).
+Formalized by `MetaMathlibExt.positionalColoredCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#positional-colored-composition-count).
 
 ## Colored compositions of zero
 
@@ -36,7 +36,7 @@ only composition of $0$ is the empty one.
 
 - Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Definition 1.
 
-Formalized by `MetaMathlibExt.positionalColoredCompositionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#positional-colored-composition-count-zer).
+Formalized by `MetaMathlibExt.positionalColoredCompositionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#positional-colored-composition-count-zer).
 
 ## Avoiding color 2 counts even colored compositions
 
@@ -54,7 +54,7 @@ The paper states this for positive $k$; at $k = 0$ both sides equal $1$.
 
 - Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.colorTwoRestrictedCompositions_eq_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#color-two-restricted-compositions-eq-eve).
+Stated but not proved: `MetaMathlibExt.colorTwoRestrictedCompositions_eq_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#color-two-restricted-compositions-eq-eve).
 
 ## Odd colored compositions and binomial-color compositions
 
@@ -68,7 +68,7 @@ $\binom{p}{2}$ colors.
 
 - Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.odd_eq_choose_two_colorCompositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#odd-eq-choose-two-color-compositions).
+Stated but not proved: `MetaMathlibExt.odd_eq_choose_two_colorCompositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#odd-eq-choose-two-color-compositions).
 
 ## Odd colored compositions and ternary strings
 
@@ -81,7 +81,7 @@ contain neither $01$ nor $12$ as two consecutive letters.
 
 - Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.odd_eq_ternaryStrings_avoiding` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#odd-eq-ternary-strings-avoiding).
+Stated but not proved: `MetaMathlibExt.odd_eq_ternaryStrings_avoiding` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#odd-eq-ternary-strings-avoiding).
 
 ## Even colored compositions and ternary strings
 
@@ -97,7 +97,7 @@ At $k = 0$ both sides equal $1$, the empty string being counted.
 
 - Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.even_eq_ternaryStrings_avoiding` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#even-eq-ternary-strings-avoiding).
+Stated but not proved: `MetaMathlibExt.even_eq_ternaryStrings_avoiding` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#even-eq-ternary-strings-avoiding).
 
 ## Even colored compositions and runs in binary strings
 
@@ -111,7 +111,7 @@ contributes the empty product $1$.
 
 - Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.even_succ_eq_sum_runLength_prod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#even-succ-eq-sum-run-length-prod).
+Stated but not proved: `MetaMathlibExt.even_succ_eq_sum_runLength_prod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#even-succ-eq-sum-run-length-prod).
 
 ## Odd colored compositions and runs in binary strings
 
@@ -124,7 +124,7 @@ the product of the lengths of the maximal runs of $1$s in the string.
 
 - Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.odd_eq_sum_runLength_prod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#odd-eq-sum-run-length-prod).
+Stated but not proved: `MetaMathlibExt.odd_eq_sum_runLength_prod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#odd-eq-sum-run-length-prod).
 
 ## A recurrence for positional colored compositions
 
@@ -142,7 +142,7 @@ $m \nmid k$.
 
 - Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.positionalColoredCompositionCount_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#positional-colored-composition-count-suc).
+Stated but not proved: `MetaMathlibExt.positionalColoredCompositionCount_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#positional-colored-composition-count-suc).
 
 ## Even colored compositions and 321-avoiding separable permutations
 
@@ -158,7 +158,7 @@ At $k = 0$ both sides equal $1$.
 
 - Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.even_eq_card_separable_321_avoiding` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#even-eq-card-separable-321-avoiding).
+Stated but not proved: `MetaMathlibExt.even_eq_card_separable_321_avoiding` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PositionalColoredCompositionsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html#even-eq-card-separable-321-avoiding).
 
 ## Depends on
 
@@ -167,4 +167,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Positional colored compositions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/positional-colored-compositions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-compositions/positional-colored-compositions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-compositions/positional-colored-compositions)

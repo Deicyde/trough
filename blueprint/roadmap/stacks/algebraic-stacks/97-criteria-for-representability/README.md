@@ -1,6 +1,6 @@
 # 97 Criteria for Representability
 
-Chapter 97 of the Stacks Project, *Criteria for Representability*, [Tag 05XE](https://stacks.math.columbia.edu/tag/05XE): the 16 sections of its 19 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 63 tags are carried by 142 declarations of the repository (all in StacksFrontier).
+Chapter 97 of the Stacks Project, *Criteria for Representability*, [Tag 05XE](https://stacks.math.columbia.edu/tag/05XE): the 16 sections of its 19 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 63 tags are carried by 122 declarations of the repository (all in StacksFrontier).
 
 - [97.4 Morphisms of stacks in groupoids](97-4-morphisms-of-stacks-in-groupoids.md)
 - [97.5 Limit preserving on objects](97-5-limit-preserving-on-objects.md)

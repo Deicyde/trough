@@ -8,13 +8,13 @@ proof: formalized
 
 # 99.14 The stack of polarized proper schemes
 
-Section 99.14 of the Stacks Project, [Tag 0D1L](https://stacks.math.columbia.edu/tag/0D1L). 15 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 99.14 of the Stacks Project, [Tag 0D1L](https://stacks.math.columbia.edu/tag/0D1L). 15 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D1M, a situation
 
 [Tag 0D1M](https://stacks.math.columbia.edu/tag/0D1M) in the Stacks Project.
 
-**`AlgebraicGeometry.PolarizedFamily`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean#L73). The attribute's comment: “objects”.
+**`AlgebraicGeometry.PolarizedFamily`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean#L73). The attribute's comment: “objects”.
 
 > **Stacks 0D1M.** A *polarized family*: a proper, flat, finitely presented morphism from a
 > scheme to a scheme of the big fppf site, together with an invertible module on the total space
@@ -24,7 +24,7 @@ Section 99.14 of the Stacks Project, [Tag 0D1L](https://stacks.math.columbia.edu
 structure PolarizedFamily
 ```
 
-**`AlgebraicGeometry.PolarizedFamily.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean#L103). The attribute's comment: “morphisms”.
+**`AlgebraicGeometry.PolarizedFamily.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean#L103). The attribute's comment: “morphisms”.
 
 > **Stacks 0D1M.** A morphism of polarized families: a morphism of total spaces over a morphism
 > of base schemes whose square is cartesian, together with an isomorphism from the pullback of the
@@ -34,7 +34,7 @@ structure PolarizedFamily
 structure Hom (X Y : PolarizedFamily B)
 ```
 
-**`AlgebraicGeometry.PolarizedFamily.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean#L247). The attribute's comment: “category”.
+**`AlgebraicGeometry.PolarizedFamily.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean#L247). The attribute's comment: “category”.
 
 > **Stacks 0D1M.** Polarized families, cartesian squares between them and comparisons of
 > polarizations form a category: the two underlying morphisms compose componentwise and the
@@ -44,7 +44,7 @@ structure Hom (X Y : PolarizedFamily B)
 instance instCategory : Category.{u} (PolarizedFamily B)
 ```
 
-**`AlgebraicGeometry.polarizedProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean#L278). The attribute's comment: “projection”.
+**`AlgebraicGeometry.polarizedProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamilies.lean#L278). The attribute's comment: “projection”.
 
 > **Stacks 0D1M.** The forgetful functor taking a polarized family to its base scheme, which is
 > how the category of polarized families is viewed as a category over the big fppf site.
@@ -57,7 +57,7 @@ def polarizedProjection : PolarizedFamily B ⥤ B.Schemes
 
 [Tag 0D3Y](https://stacks.math.columbia.edu/tag/0D3Y) in the Stacks Project.
 
-**`AlgebraicGeometry.forgetPolarization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesForget.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesForget.lean#L258). The attribute's comment: “the forgetful functor”.
+**`AlgebraicGeometry.forgetPolarization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesForget.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesForget.lean#L258). The attribute's comment: “the forgetful functor”.
 
 > **Stacks 0D3Y.** Forget the polarization of a polarized family, keeping the finitely
 > presented, flat and proper family of algebraic spaces over the same base.
@@ -67,7 +67,7 @@ def forgetPolarization :
     PolarizedFamily B ⥤ CartesianProperFlatSpaces B integerBase B.contains_integerBase
 ```
 
-**`AlgebraicGeometry.forgetPolarization_obj_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesForget.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesForget.lean#L306). The attribute's comment: “the forgetful functor is over the site”.
+**`AlgebraicGeometry.forgetPolarization_obj_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesForget.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesForget.lean#L306). The attribute's comment: “the forgetful functor is over the site”.
 
 > **Stacks 0D3Y.** Forgetting the polarization keeps the base scheme, so the forgetful functor
 > is a functor over the big fppf site.
@@ -78,7 +78,7 @@ theorem forgetPolarization_obj_base (X : PolarizedFamily B) :
       ((forgetPolarization B).obj X) = (schemeOverIntegers B).obj X.base
 ```
 
-**`AlgebraicGeometry.forgetPolarization_map_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesForget.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesForget.lean#L313). The attribute's comment: “the forgetful functor is over the site”.
+**`AlgebraicGeometry.forgetPolarization_map_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesForget.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesForget.lean#L313). The attribute's comment: “the forgetful functor is over the site”.
 
 > **Stacks 0D3Y.** Forgetting the polarization keeps the morphism of base schemes.
 
@@ -92,7 +92,7 @@ theorem forgetPolarization_map_base {X Y : PolarizedFamily B} (f : X ⟶ Y) :
 
 [Tag 0D3Z](https://stacks.math.columbia.edu/tag/0D3Z) in the Stacks Project.
 
-**`AlgebraicGeometry.polarizedSpacesForget_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesFiberedForget.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesFiberedForget.lean#L122). The attribute's comment: “fibred in groupoids over the stack of finitely presented, flat and proper families”.
+**`AlgebraicGeometry.polarizedSpacesForget_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesFiberedForget.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesFiberedForget.lean#L122). The attribute's comment: “fibred in groupoids over the stack of finitely presented, flat and proper families”.
 
 > **Stacks 0D3Z.** Polarized families are fibred in groupoids over the finitely presented, flat
 > and proper families of algebraic spaces of Stacks 0D1E.
@@ -107,7 +107,7 @@ theorem polarizedSpacesForget_isFiberedInGroupoids :
     (polarizedSpacesForget B).IsFiberedInGroupoids
 ```
 
-**`AlgebraicGeometry.toPolarizedSpaces_comp_polarizedSpacesForget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesFiberedForget.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesFiberedForget.lean#L149). The attribute's comment: “identification of the replacement category with the polarized families”.
+**`AlgebraicGeometry.toPolarizedSpaces_comp_polarizedSpacesForget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesFiberedForget.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesFiberedForget.lean#L149). The attribute's comment: “identification of the replacement category with the polarized families”.
 
 > **Stacks 0D3Z.** The comparison equivalence carries the projection of
 > `AlgebraicGeometry.PolarizedSpaces` to the family of algebraic spaces back to the forgetful
@@ -119,7 +119,7 @@ theorem toPolarizedSpaces_comp_polarizedSpacesForget :
     toPolarizedSpaces B ⋙ polarizedSpacesForget B = forgetPolarization B
 ```
 
-**`AlgebraicGeometry.polarizedProjection_isFiberedInGroupoids_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedStackUnconditional.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedStackUnconditional.lean#L59). The attribute's comment: “fibred in groupoids over the fppf site of schemes”.
+**`AlgebraicGeometry.polarizedProjection_isFiberedInGroupoids_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedStackUnconditional.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedStackUnconditional.lean#L59). The attribute's comment: “fibred in groupoids over the fppf site of schemes”.
 
 > **Stacks 003S for polarized families, with no hypothesis.** Polarized families of Stacks
 > 0D1M form a category fibred in groupoids over the big fppf site.
@@ -137,7 +137,7 @@ theorem polarizedProjection_isFiberedInGroupoids_unconditional {B : BigFppfSite.
 
 [Tag 0D40](https://stacks.math.columbia.edu/tag/0D40) in the Stacks Project.
 
-**`AlgebraicGeometry.polarized_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedStackRepresentable.lean, line 872](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedStackRepresentable.lean#L872).
+**`AlgebraicGeometry.polarized_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedStackRepresentable.lean, line 872](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedStackRepresentable.lean#L872).
 
 > **Stacks 0D40.** The category `𝒫olarized` of polarized families is a stack in groupoids over
 > `Spaces'_{fp, flat, proper}`, endowed with the topology inherited from the big fppf site
@@ -154,7 +154,7 @@ theorem polarized_isStackInGroupoids :
 
 [Tag 0E94](https://stacks.math.columbia.edu/tag/0E94) in the Stacks Project.
 
-**`AlgebraicGeometry.PolarizedOverSpace.polarizedBaseChange_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedOverSpaceEquivalence.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedOverSpaceEquivalence.lean#L68). The attribute's comment: “base change is an equivalence of the polarized proper flat finitely presented spaces over T with Mor\_\{Cat/Sch\_fppf}(S\_T, Polarized)”.
+**`AlgebraicGeometry.PolarizedOverSpace.polarizedBaseChange_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedOverSpaceEquivalence.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedOverSpaceEquivalence.lean#L68). The attribute's comment: “base change is an equivalence of the polarized proper flat finitely presented spaces over T with Mor\_\{Cat/Sch\_fppf}(S\_T, Polarized)”.
 
 > Let `T` be an algebraic space over `Spec(ℤ)` and `𝒮_T` its algebraic stack. Base change is an
 > equivalence from the category of pairs `(X ⟶ T, L)`, where `X ⟶ T` is a proper, flat and finitely
@@ -170,7 +170,7 @@ theorem polarizedBaseChange_isEquivalence : (polarizedBaseChange B T).IsEquivale
 
 [Tag 0D1N](https://stacks.math.columbia.edu/tag/0D1N) in the Stacks Project.
 
-**`AlgebraicGeometry.PolarizedFamilyOver`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean#L81). The attribute's comment: “objects”.
+**`AlgebraicGeometry.PolarizedFamilyOver`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean#L81). The attribute's comment: “objects”.
 
 > **Stacks 0D1N.** A *polarized family over the space* `A`: a polarized family together with a
 > structure morphism of its base scheme over the base of the site and a point of `A` there.
@@ -179,7 +179,7 @@ theorem polarizedBaseChange_isEquivalence : (polarizedBaseChange B T).IsEquivale
 structure PolarizedFamilyOver
 ```
 
-**`AlgebraicGeometry.PolarizedFamilyOver.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean#L102). The attribute's comment: “morphisms”.
+**`AlgebraicGeometry.PolarizedFamilyOver.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean#L102). The attribute's comment: “morphisms”.
 
 > **Stacks 0D1N.** A morphism of polarized families over `A`: a morphism of the underlying
 > polarized families whose base map lies over the base of the site and carries the point of the
@@ -189,7 +189,7 @@ structure PolarizedFamilyOver
 structure Hom (X Y : PolarizedFamilyOver B S hS A)
 ```
 
-**`AlgebraicGeometry.PolarizedFamilyOver.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean#L135). The attribute's comment: “category”.
+**`AlgebraicGeometry.PolarizedFamilyOver.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean#L135). The attribute's comment: “category”.
 
 > **Stacks 0D1N.** Polarized families over `A` and the morphisms compatible with their points
 > form a category, with the identities and composition of the underlying polarized families.
@@ -198,7 +198,7 @@ structure Hom (X Y : PolarizedFamilyOver B S hS A)
 instance instCategory : Category.{u} (PolarizedFamilyOver B S hS A)
 ```
 
-**`AlgebraicGeometry.PolarizedFamilyOver.isEquivalence_toCategoricalPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean#L293). The attribute's comment: “the 2-fibre product square”.
+**`AlgebraicGeometry.PolarizedFamilyOver.isEquivalence_toCategoricalPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFamiliesOverSpace.lean#L293). The attribute's comment: “the 2-fibre product square”.
 
 > **Stacks 0D1N.** The canonical comparison from polarized families over `A` to the 2-fibre
 > product of polarized families and schemes carrying a point of `A`, over the big fppf site of
@@ -213,7 +213,7 @@ theorem isEquivalence_toCategoricalPullback :
 
 [Tag 0D41](https://stacks.math.columbia.edu/tag/0D41) in the Stacks Project.
 
-**`AlgebraicGeometry.isAlgebraicMorphism_forgetPolarizationOneMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedForgetAlgebraicMorphism.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedForgetAlgebraicMorphism.lean#L65).
+**`AlgebraicGeometry.isAlgebraicMorphism_forgetPolarizationOneMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedForgetAlgebraicMorphism.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedForgetAlgebraicMorphism.lean#L65).
 
 > **Stacks 0D41.** The forgetful functor of Stacks 0D3Y, `(X ⟶ S, ℒ) ↦ (X ⟶ S)`, defines a
 > 1-morphism `Polarized ⟶ Spaces'_{fp, flat, proper}` of stacks in groupoids over the big fppf site
@@ -232,7 +232,7 @@ theorem isAlgebraicMorphism_forgetPolarizationOneMorphism :
 
 [Tag 0D42](https://stacks.math.columbia.edu/tag/0D42) in the Stacks Project.
 
-**`AlgebraicGeometry.hasRepresentableDiagonal_polarizedStackUnconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedDiagonal.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedDiagonal.lean#L64).
+**`AlgebraicGeometry.hasRepresentableDiagonal_polarizedStackUnconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedDiagonal.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedDiagonal.lean#L64).
 
 > The diagonal `𝒫olarized ⟶ 𝒫olarized × 𝒫olarized` of the stack of polarized proper flat
 > families of finite presentation, over the big fppf site of a terminal base scheme, is representable
@@ -247,7 +247,7 @@ theorem hasRepresentableDiagonal_polarizedStackUnconditional :
 
 [Tag 0D43](https://stacks.math.columbia.edu/tag/0D43) in the Stacks Project.
 
-**`AlgebraicGeometry.isLimitPreservingPolarizedUnconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedLimitPreservingProof.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedLimitPreservingProof.lean#L79). The attribute's comment: “at a small index category”.
+**`AlgebraicGeometry.isLimitPreservingPolarizedUnconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedLimitPreservingProof.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedLimitPreservingProof.lean#L80). The attribute's comment: “at a small index category”.
 
 > **Stacks 0D43.** The stack in groupoids `𝒫olarized` of polarized proper schemes is limit
 > preserving in the sense of Stacks 07XL: for every cofiltered inverse system of affine schemes over
@@ -265,7 +265,7 @@ theorem isLimitPreservingPolarizedUnconditional (B : BigFppfSite.{u}) {S : Schem
 
 [Tag 0D44](https://stacks.math.columbia.edu/tag/0D44) in the Stacks Project.
 
-**`AlgebraicGeometry.polarizedPushoutRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedPushout.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedPushout.lean#L350). The attribute's comment: “the functor of the comparison on fibre categories; that it is an equivalence is not proved here, Stacks 07RX being absent”.
+**`AlgebraicGeometry.polarizedPushoutRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedPushout.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedPushout.lean#L350). The attribute's comment: “the functor of the comparison on fibre categories; that it is an equivalence is not proved here, Stacks 07RX being absent”.
 
 > **Stacks 0D44.** For a commutative square `f ≫ h = i ≫ g` of schemes of the big fppf site,
 > the comparison functor from the polarized families with base `S'` to the 2-fibre product of those
@@ -278,7 +278,7 @@ def polarizedPushoutRestriction {T T' S S' : B.Schemes} (i : T ⟶ T') (f : T �
       (polarizedFiberPullback B f) ⊡ (polarizedFiberPullback B i)
 ```
 
-**`AlgebraicGeometry.isEquivalence_polarizedPushoutRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedPushoutEquivalence.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedPushoutEquivalence.lean#L284). The attribute's comment: “the comparison functor `polarizedPushoutRestriction` of a pushout square of schemes with `T ⟶ T'` a thickening and `T ⟶ S` affine is an equivalence”.
+**`AlgebraicGeometry.isEquivalence_polarizedPushoutRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedPushoutEquivalence.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedPushoutEquivalence.lean#L284). The attribute's comment: “the comparison functor `polarizedPushoutRestriction` of a pushout square of schemes with `T ⟶ T'` a thickening and `T ⟶ S` affine is an equivalence”.
 
 > **Stacks 0D44.** Let
 >
@@ -313,7 +313,7 @@ theorem isEquivalence_polarizedPushoutRestriction {T T' S S' : B.Schemes} (i : T
 
 [Tag 0D4S](https://stacks.math.columbia.edu/tag/0D4S) in the Stacks Project.
 
-**`AlgebraicGeometry.PolarizedDeformation.finiteDimensional_tangentFunctor_infinitesimalAutomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean#L64). The attribute's comment: “(2): for a polarized proper scheme x over any field k, the functors T\_x and Inf\_x of Stacks 07Y9 exist (𝒫olarized satisfies RS* by 0D44) and T\_x(k) and Inf\_x(k) are finite dimensional; both finiteness statements hold for every k-linear functor carrying the identifications of 07Y9”.
+**`AlgebraicGeometry.PolarizedDeformation.finiteDimensional_tangentFunctor_infinitesimalAutomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean#L64). The attribute's comment: “(2): for a polarized proper scheme x over any field k, the functors T\_x and Inf\_x of Stacks 07Y9 exist (𝒫olarized satisfies RS* by 0D44) and T\_x(k) and Inf\_x(k) are finite dimensional; both finiteness statements hold for every k-linear functor carrying the identifications of 07Y9”.
 
 > **Stacks Project, Tag 0D4S, part (2).** Let `k` be a field and let `x = (X → Spec k, ℒ)` be an
 > object of `𝒫olarized` over `Spec k`. Then the tangent functor `T_x` and the functor of
@@ -343,7 +343,7 @@ theorem finiteDimensional_tangentFunctor_infinitesimalAutomorphismFunctor {k : T
         FiniteDimensional k (I.functor.obj ((fgSiteModule B hk).obj (FGModuleCat.of k k))))
 ```
 
-**`AlgebraicGeometry.PolarizedDeformation.isFiniteDimensionalDeformationCategory_predeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean#L98). The attribute's comment: “(1): for a field k of finite type over the base and a polarized proper scheme x over k, the deformation category F\_\{X,k,x} has finite dimensional tangent space T F\_\{X,k,x} and finite dimensional Inf(F\_\{X,k,x}); the base is any terminal scheme of the site, e.g. Spec Z”.
+**`AlgebraicGeometry.PolarizedDeformation.isFiniteDimensionalDeformationCategory_predeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean#L98). The attribute's comment: “(1): for a field k of finite type over the base and a polarized proper scheme x over k, the deformation category F\_\{X,k,x} has finite dimensional tangent space T F\_\{X,k,x} and finite dimensional Inf(F\_\{X,k,x}); the base is any terminal scheme of the site, e.g. Spec Z”.
 
 > **Stacks Project, Tag 0D4S, part (1).** Let `k` be a field of finite type over the base (for
 > the base `Spec ℤ`: of finite type over `ℤ`), presented through `Spec k ⟶ Spec Λ ⟶ S`, and let
@@ -372,7 +372,7 @@ theorem isFiniteDimensionalDeformationCategory_predeformationCategory
 
 [Tag 0D4T](https://stacks.math.columbia.edu/tag/0D4T) in the Stacks Project.
 
-**`Stacks.PolarizedAlgebraization.exists_algebraization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PolarizedAlgebraization/StrongFormalEffectiveness.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PolarizedAlgebraization/StrongFormalEffectiveness.lean#L115). References: SGA 7 IX (7.1.3), “partial”.
+**`Stacks.PolarizedAlgebraization.exists_algebraization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PolarizedAlgebraization/StrongFormalEffectiveness.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PolarizedAlgebraization/StrongFormalEffectiveness.lean#L115). References: SGA 7 IX (7.1.3), “partial”.
 
 > **Strong formal effectiveness for polarized schemes.** Let `(R_n)` be an inverse system of
 > rings with surjective transition maps whose kernels are locally nilpotent, and `R = lim R_n`. Let
@@ -413,7 +413,7 @@ theorem exists_algebraization (R : ℕᵒᵖ ⥤ CommRingCat.{u})
 
 [Tag 0D4U](https://stacks.math.columbia.edu/tag/0D4U) in the Stacks Project.
 
-**`AlgebraicGeometry.polarizedFormalObject_isEffective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFormalEffective.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFormalEffective.lean#L474).
+**`AlgebraicGeometry.polarizedFormalObject_isEffective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedFormalEffective.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedFormalEffective.lean#L474).
 
 > **Stacks 0D4U.** Consider the stack `𝒫olarized` over the base scheme `Spec ℤ`. Then every
 > formal object (Stacks 07X4) is effective (Stacks 07X7): it is, up to isomorphism, the system of
@@ -433,7 +433,7 @@ theorem polarizedFormalObject_isEffective (B : BigFppfSite.{u})
 
 [Tag 0D4V](https://stacks.math.columbia.edu/tag/0D4V) in the Stacks Project.
 
-**`AlgebraicGeometry.hasOpenVersality_polarizedStackUnconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedVersality/PolarizedOpennessOfVersality.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedVersality/PolarizedOpennessOfVersality.lean#L55). The attribute's comment: “openness of versality for `𝒫olarized` over `Spec(ℤ)`”.
+**`AlgebraicGeometry.hasOpenVersality_polarizedStackUnconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedVersality/PolarizedOpennessOfVersality.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedVersality/PolarizedOpennessOfVersality.lean#L55). The attribute's comment: “openness of versality for `𝒫olarized` over `Spec(ℤ)`”.
 
 > The stack in groupoids `𝒫olarized` of polarized proper flat families of finite presentation
 > (Stacks 0D1M), over the big fppf site of `Spec(ℤ)`, satisfies openness of versality: if an object
@@ -448,7 +448,7 @@ theorem hasOpenVersality_polarizedStackUnconditional (B : BigFppfSite.{u})
         Over.post B.inclusion)
 ```
 
-**`AlgebraicGeometry.hasOpenVersality_polarizedOverNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedVersality/PolarizedOpennessOfVersality.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedVersality/PolarizedOpennessOfVersality.lean#L72). The attribute's comment: “openness of versality for `S-𝒫olarized` over a Noetherian base scheme `S`”.
+**`AlgebraicGeometry.hasOpenVersality_polarizedOverNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedVersality/PolarizedOpennessOfVersality.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedVersality/PolarizedOpennessOfVersality.lean#L72). The attribute's comment: “openness of versality for `S-𝒫olarized` over a Noetherian base scheme `S`”.
 
 > For a Noetherian scheme `S`, the stack `S-𝒫olarized` of Remark 0D1N — polarized proper flat
 > families of finite presentation together with a morphism of their base to `S` — over the big fppf
@@ -467,7 +467,7 @@ theorem hasOpenVersality_polarizedOverNoetherian (B : BigFppfSite.{u}) (S : Sche
 
 [Tag 0D4X](https://stacks.math.columbia.edu/tag/0D4X) in the Stacks Project.
 
-**`AlgebraicGeometry.isAlgebraicStack_polarizedStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedAlgebraicStack.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedAlgebraicStack.lean#L94).
+**`AlgebraicGeometry.isAlgebraicStack_polarizedStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedAlgebraicStack.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedAlgebraicStack.lean#L94).
 
 > **Stacks 0D4X.** The stack `𝒫olarized` of polarized proper schemes (Situation 0D1M) over the
 > big fppf site of `Spec ℤ` is an algebraic stack. In fact, for every algebraic space `A` over
@@ -494,4 +494,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 99.14, Tag 0D1L](https://stacks.math.columbia.edu/tag/0D1L)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

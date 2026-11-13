@@ -8,7 +8,7 @@ proof: formalized
 
 # Artin groups
 
-8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html).
+8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html).
 
 ## Coxeter Matrix
 
@@ -18,7 +18,7 @@ For elements $a$ and $b$ of a monoid and $n \in \mathbb{N}$, the
 alternating word of length $n$ starting with $a$ is the product $a b a b \cdots$ of $n$ factors
 that alternate between $a$ and $b$, beginning with $a$; for $n = 0$ it is the identity.
 
-Formalized by `CoxeterMatrix.alternatingWord`, a definition declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/ArtinGroup.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#alternating-word).
+Formalized by `CoxeterMatrix.alternatingWord`, a definition declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/ArtinGroup.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#alternating-word).
 
 ## Monoid homomorphisms preserve alternating words
 
@@ -27,7 +27,7 @@ monoids. For all $a, b \in G$ and $n \in \mathbb{N}$, $f$ maps the alternating w
 of length $n$ starting with $a$ to the alternating word $f(a) f(b) f(a) \cdots$ of length $n$
 starting with $f(a)$.
 
-Formalized by `CoxeterMatrix.map_alternatingWord`, a theorem declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/ArtinGroup.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#map-alternating-word).
+Formalized by `CoxeterMatrix.map_alternatingWord`, a theorem declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/ArtinGroup.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#map-alternating-word).
 
 ## Artin relator
 
@@ -37,7 +37,7 @@ alternating words $s_i s_j s_i \cdots$ and $s_j s_i s_j \cdots$ of length $m_{ij
 relator of the ordered pair $(i, j)$ is the element $u v^{-1}$ of the free group; setting it equal
 to $1$ imposes the braid relation $u = v$.
 
-Formalized by `CoxeterMatrix.artinRelation`, a definition declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/ArtinGroup.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#artin-relation).
+Formalized by `CoxeterMatrix.artinRelation`, a definition declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/ArtinGroup.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#artin-relation).
 
 ## Artin relators of a Coxeter matrix
 
@@ -48,7 +48,7 @@ free group, one for each ordered pair of distinct $i, j \in B$ with $m_{ij} \neq
 $v$ are the alternating words $s_i s_j s_i \cdots$ and $s_j s_i s_j \cdots$ of length $m_{ij}$.
 Pairs with $m_{ij} = \infty$ contribute no relator.
 
-Formalized by `CoxeterMatrix.artinRelationsSet`, a definition declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/ArtinGroup.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#artin-relations-set).
+Formalized by `CoxeterMatrix.artinRelationsSet`, a definition declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/ArtinGroup.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#artin-relations-set).
 
 ## Artin group
 
@@ -59,7 +59,7 @@ for every ordered pair of distinct $i, j \in B$ with $m_{ij} \neq 0$, the altern
 $s_i s_j s_i \cdots$ and $s_j s_i s_j \cdots$ of length $m_{ij}$ are equal. Unlike for the
 Coxeter group of $M$, no relations $s_i^2 = 1$ are imposed.
 
-Formalized by `CoxeterMatrix.ArtinGroup`, a definition declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/ArtinGroup.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#artin-group).
+Formalized by `CoxeterMatrix.ArtinGroup`, a definition declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/ArtinGroup.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#artin-group).
 
 ## Generators of the Artin group
 
@@ -67,7 +67,7 @@ For a Coxeter matrix $M$ over an index type $B$ and
 $i \in B$, the generator $s_i$ of the Artin group of $M$ is the image of the free generator $i$
 under the quotient map from the free group on $B$ onto the Artin group.
 
-Formalized by `CoxeterMatrix.ArtinGroup.of`, a definition declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/ArtinGroup.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#of).
+Formalized by `CoxeterMatrix.ArtinGroup.of`, a definition declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/ArtinGroup.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#of).
 
 ## The generators generate the Artin group
 
@@ -75,7 +75,7 @@ For a Coxeter matrix $M$ over an index type $B$,
 the subgroup of the Artin group of $M$ generated by its generators $s_i$, $i \in B$, is the whole
 group.
 
-Formalized by `CoxeterMatrix.ArtinGroup.closure_range_of`, a theorem declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/ArtinGroup.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#closure-range-of).
+Formalized by `CoxeterMatrix.ArtinGroup.closure_range_of`, a theorem declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/ArtinGroup.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#closure-range-of).
 
 ## Braid relations in the Artin group
 
@@ -85,7 +85,7 @@ generators of the Artin group of $M$. For distinct $i, j \in B$ with $m_{ij} \ne
 alternating words $s_i s_j s_i \cdots$ and $s_j s_i s_j \cdots$ of length $m_{ij}$ are equal in
 the Artin group.
 
-Formalized by `CoxeterMatrix.ArtinGroup.braid_relation`, a theorem declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/ArtinGroup.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#braid-relation).
+Formalized by `CoxeterMatrix.ArtinGroup.braid_relation`, a theorem declared in [MathlibExt/GroupTheory/ArtinGroup.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/ArtinGroup.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html#braid-relation).
 
 ## Depends on
 
@@ -94,4 +94,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Artin groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/artin-groups)

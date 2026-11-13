@@ -1,6 +1,6 @@
 # 3 Set Theory
 
-Chapter 3 of the Stacks Project, *Set Theory*, [Tag 0007](https://stacks.math.columbia.edu/tag/0007): the 7 sections of its 12 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 19 tags are carried by 48 declarations of the repository (all in StacksFrontier) and 1 registered declaration.
+Chapter 3 of the Stacks Project, *Set Theory*, [Tag 0007](https://stacks.math.columbia.edu/tag/0007): the 7 sections of its 12 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 19 tags are carried by 52 declarations of the repository (all in StacksFrontier) and 1 registered declaration.
 
 - [3.5 The hierarchy of sets](3-5-the-hierarchy-of-sets.md)
 - [3.7 Cofinality](3-7-cofinality.md)

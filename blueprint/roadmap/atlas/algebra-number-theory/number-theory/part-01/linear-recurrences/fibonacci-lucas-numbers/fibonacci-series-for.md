@@ -7,7 +7,7 @@ statement: formalized
 
 # Fibonacci series for π²
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-series-for/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-series-for/index.html).
 
 ## Fibonacci series for $\pi^2$ with polynomial weights
 
@@ -31,7 +31,7 @@ $$\pi^2 = \frac{1}{a_n} \Bigl(b_n + (-1)^{n+1} \sum_{k=0}^{\infty}
 
 - Joseph Tonien, *Fibonacci and Pi Squared*, The Fibonacci Quarterly 62 (2024), no. 1, Theorem 2.1.
 
-Stated but not proved: `MetaMathlibExt.pi_sq_eq_fibonacci_factorial_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-series-for/index.html#pi-sq-eq-fibonacci-factorial-series).
+Stated but not proved: `MetaMathlibExt.pi_sq_eq_fibonacci_factorial_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-series-for/index.html#pi-sq-eq-fibonacci-factorial-series).
 
 ## Two Fibonacci series for $\pi^2$
 
@@ -48,7 +48,7 @@ These are identities (2.3) and (2.4) of the paper, the case $n = 1$ of its Theor
 
 - Joseph Tonien, *Fibonacci and Pi Squared*, The Fibonacci Quarterly 62 (2024), no. 1, Lemma 2.2.
 
-Stated but not proved: `MetaMathlibExt.pi_sq_eq_fibonacci_central_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-series-for/index.html#pi-sq-eq-fibonacci-central-series).
+Stated but not proved: `MetaMathlibExt.pi_sq_eq_fibonacci_central_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-series-for/index.html#pi-sq-eq-fibonacci-central-series).
 
 ## Fibonacci closed form of the sequence $a_n$
 
@@ -65,7 +65,7 @@ $n \ge 0$ with the convention $F_{-1} = 1$; its case $n = 0$ is the initial valu
 
 - Joseph Tonien, *Fibonacci and Pi Squared*, The Fibonacci Quarterly 62 (2024), no. 1, Lemma 2.3.
 
-Stated but not proved: `MetaMathlibExt.fibPiSquared_coeff_eq_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-series-for/index.html#fib-pi-squared-coeff-eq-fib).
+Stated but not proved: `MetaMathlibExt.fibPiSquared_coeff_eq_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-series-for/index.html#fib-pi-squared-coeff-eq-fib).
 
 ## Explicit formula for the polynomials $p_n$
 
@@ -81,7 +81,7 @@ $$p_n(x) = \sum_{j=0}^{n-1} (-1)^j \binom{n-1}{j} \Bigl(\prod_{k=2j+3}^{2n} (2x 
 
 - Joseph Tonien, *Fibonacci and Pi Squared*, The Fibonacci Quarterly 62 (2024), no. 1, Lemma 2.4.
 
-Stated but not proved: `MetaMathlibExt.fibPiSquared_poly_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-series-for/index.html#fib-pi-squared-poly-eq-sum).
+Stated but not proved: `MetaMathlibExt.fibPiSquared_poly_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FibonacciPiSquaredWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-series-for/index.html#fib-pi-squared-poly-eq-sum).
 
 ## Depends on
 
@@ -90,4 +90,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fibonacci series for π²](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-series-for/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-series-for)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-series-for)

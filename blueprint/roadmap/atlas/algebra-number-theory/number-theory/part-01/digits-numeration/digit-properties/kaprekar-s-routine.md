@@ -7,7 +7,7 @@ statement: formalized
 
 # Kaprekar's routine
 
-22 results, 13 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html).
+22 results, 13 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html).
 
 ## Structure of four-digit Kaprekar dynamics in odd bases
 
@@ -33,7 +33,7 @@ are the base-$B$ digits of their Kaprekar image, so $K$ is the Kaprekar map on t
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, "Four-Digit Kaprekar Dynamics in Odd Bases", Journal of Integer Sequences 29 (2026), Article 26.4.7, Theorem `thm:structural`, lines 220-230, <https://cs.uwaterloo.ca/journals/JIS/VOL29/Ono/ono3.tex>.
 
-Formalized by `MetaMathlibExt.four_digit_kaprekar_structural_classification`, a theorem declared in [MathlibExt/NumberTheory/Digits/KaprekarStructuralClassification.lean, line 1070](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Digits/KaprekarStructuralClassification.lean#L1070). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#four-digit-kaprekar-structural-classific).
+Formalized by `MetaMathlibExt.four_digit_kaprekar_structural_classification`, a theorem declared in [MathlibExt/NumberTheory/Digits/KaprekarStructuralClassification.lean, line 1070](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Digits/KaprekarStructuralClassification.lean#L1070). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#four-digit-kaprekar-structural-classific).
 
 ## Kaprekar difference
 
@@ -48,7 +48,7 @@ with them in ascending order (leading zeros allowed).
 
 - Haruo Iwasaki, *A New Classification of the Kaprekar Numbers*, The Fibonacci Quarterly 62 (2024), Article iwasaki06162024-ASrev2, Definition 1.1.
 
-Formalized by `MetaMathlibExt.kaprekarDiff`, a definition declared in [WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-diff).
+Formalized by `MetaMathlibExt.kaprekarDiff`, a definition declared in [WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-diff).
 
 ## Kaprekar map
 
@@ -64,7 +64,7 @@ $\alpha \ge 10^n$ nothing is padded and all digits of $\alpha$ are used.
 
 - Haruo Iwasaki, *A New Classification of the Kaprekar Numbers*, The Fibonacci Quarterly 62 (2024), Article iwasaki06162024-ASrev2, Definition 1.1.
 
-Formalized by `MetaMathlibExt.kaprekarMap`, a definition declared in [WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-map).
+Formalized by `MetaMathlibExt.kaprekarMap`, a definition declared in [WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-map).
 
 ## 6174 is fixed by the four-digit Kaprekar map
 
@@ -75,7 +75,7 @@ to itself: $7641 - 1467 = 6174$.
 
 - Haruo Iwasaki, *A New Classification of the Kaprekar Numbers*, The Fibonacci Quarterly 62 (2024), Article iwasaki06162024-ASrev2, Section 1.
 
-Formalized by `MetaMathlibExt.kaprekarMap_four_6174`, a theorem declared in [WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-map-four-6174).
+Formalized by `MetaMathlibExt.kaprekarMap_four_6174`, a theorem declared in [WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-map-four-6174).
 
 ## 495 is fixed by the three-digit Kaprekar map
 
@@ -86,7 +86,7 @@ itself: $954 - 459 = 495$.
 
 - Haruo Iwasaki, *A New Classification of the Kaprekar Numbers*, The Fibonacci Quarterly 62 (2024), Article iwasaki06162024-ASrev2, Section 1.
 
-Formalized by `MetaMathlibExt.kaprekarMap_three_495`, a theorem declared in [WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-map-three-495).
+Formalized by `MetaMathlibExt.kaprekarMap_three_495`, a theorem declared in [WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-map-three-495).
 
 ## The four-digit Kaprekar map sends 495 to 9081
 
@@ -97,7 +97,7 @@ the digit string $0495$, and the Kaprekar map sends it to $9540 - 0459 = 9081$.
 
 - Haruo Iwasaki, *A New Classification of the Kaprekar Numbers*, The Fibonacci Quarterly 62 (2024), Article iwasaki06162024-ASrev2, Definition 1.1.
 
-Formalized by `MetaMathlibExt.kaprekarMap_four_495`, a theorem declared in [WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-map-four-495).
+Formalized by `MetaMathlibExt.kaprekarMap_four_495`, a theorem declared in [WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-map-four-495).
 
 ## Classification of decimal Kaprekar numbers
 
@@ -117,7 +117,7 @@ Kaprekar map on $4$-digit strings sends $495$ to $9081$.
 
 - Haruo Iwasaki, *A New Classification of the Kaprekar Numbers*, The Fibonacci Quarterly 62 (2024), Article iwasaki06162024-ASrev2, Theorem 3.1.
 
-Stated but not proved: `MetaMathlibExt.kaprekarMap_fixed_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-map-fixed-iff).
+Stated but not proved: `MetaMathlibExt.kaprekarMap_fixed_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarClassificationWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-map-fixed-iff).
 
 ## The four-digit Kaprekar map in difference coordinates
 
@@ -136,7 +136,7 @@ $(d_1, d_2)$, as in paper displays (5) and (6).
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, Section 2.1.
 
-Formalized by `MetaMathlibExt.kaprekarFourDigitStep`, a definition declared in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-four-digit-step).
+Formalized by `MetaMathlibExt.kaprekarFourDigitStep`, a definition declared in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-four-digit-step).
 
 ## Sample values of the four-digit Kaprekar map
 
@@ -150,7 +150,7 @@ In particular $(3, 1) \mapsto (5, 1) \mapsto (5, 3) \mapsto (3, 1)$ is a termina
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, Examples 7, 12 and 18.
 
-Formalized by `MetaMathlibExt.kaprekarFourDigitStep_examples`, a theorem declared in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-four-digit-step-examples).
+Formalized by `MetaMathlibExt.kaprekarFourDigitStep_examples`, a theorem declared in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-four-digit-step-examples).
 
 ## The four-digit Kaprekar state space
 
@@ -164,7 +164,7 @@ difference coordinates $(d_1, d_2) = (a_1 - a_4, a_2 - a_3)$, a point of $X_B$.
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, display (2).
 
-Formalized by `MetaMathlibExt.kaprekarFourDigitStates`, a definition declared in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-four-digit-states).
+Formalized by `MetaMathlibExt.kaprekarFourDigitStates`, a definition declared in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-four-digit-states).
 
 ## Sizes of the Kaprekar state spaces in bases 3 and 7
 
@@ -177,7 +177,7 @@ Both values agree with the general count $|X_B| = (B - 1)(B + 2)/2$.
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, display (2) and the proof of Corollary 27.
 
-Formalized by `MetaMathlibExt.kaprekarFourDigitStates_card_examples`, a theorem declared in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-four-digit-states-card-examples).
+Formalized by `MetaMathlibExt.kaprekarFourDigitStates_card_examples`, a theorem declared in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-four-digit-states-card-examples).
 
 ## Projective order of 2
 
@@ -194,7 +194,7 @@ OEIS A003558, which lists $\lambda(2k + 1)$ at index $k$.
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, Definition 19, display (13).
 
-Formalized by `MetaMathlibExt.projectiveOrderTwo`, a definition declared in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#projective-order-two).
+Formalized by `MetaMathlibExt.projectiveOrderTwo`, a definition declared in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#projective-order-two).
 
 ## Characterization of the projective order of 2
 
@@ -207,7 +207,7 @@ modulo $n$ is $\lambda(n) = m$.
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, Definition 19, display (13).
 
-Formalized by `MetaMathlibExt.projectiveOrderTwo_eq_of`, a theorem declared in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#projective-order-two-eq-of).
+Formalized by `MetaMathlibExt.projectiveOrderTwo_eq_of`, a theorem declared in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#projective-order-two-eq-of).
 
 ## Values of the projective order of 2
 
@@ -218,7 +218,7 @@ modulo $n$, we have $\lambda(7) = 3$, $\lambda(9) = 3$, $\lambda(11) = 5$ and $\
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, Examples 7-10 and 23.
 
-Formalized by `MetaMathlibExt.projectiveOrderTwo_examples`, a theorem declared in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#projective-order-two-examples).
+Formalized by `MetaMathlibExt.projectiveOrderTwo_examples`, a theorem declared in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#projective-order-two-examples).
 
 ## Cycle lengths of doubling on pairs of projective classes
 
@@ -233,7 +233,7 @@ its minimal period is at most $\lambda(B)$, the projective order of $2$ modulo $
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, Lemma 20 (`jis-2026-26.4.7-lem-20`).
 
-Stated but not proved: `MetaMathlibExt.projective_doubling_minimalPeriod_le_projectiveOrderTwo` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#projective-doubling-minimal-period-le-pr).
+Stated but not proved: `MetaMathlibExt.projective_doubling_minimalPeriod_le_projectiveOrderTwo` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#projective-doubling-minimal-period-le-pr).
 
 ## Projective order of 2 is at most half the totient
 
@@ -245,7 +245,7 @@ where $\varphi$ is Euler's totient function.
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, Lemma 21 (quoting Kay and Downes-Ward, Theorem 2) (`jis-2026-26.4.7-lem-21`).
 
-Stated but not proved: `MetaMathlibExt.projectiveOrderTwo_le_totient_div_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#projective-order-two-le-totient-div-two).
+Stated but not proved: `MetaMathlibExt.projectiveOrderTwo_le_totient_div_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#projective-order-two-le-totient-div-two).
 
 ## Long Kaprekar cycles force a prime base
 
@@ -258,7 +258,7 @@ $(B - 1)/2$ under $K_B$, then $B$ is prime.
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, Corollary 22 (`jis-2026-26.4.7-cor-22`).
 
-Stated but not proved: `MetaMathlibExt.kaprekar_minimalPeriod_le_and_prime_of_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-minimal-period-le-and-prime-of).
+Stated but not proved: `MetaMathlibExt.kaprekar_minimalPeriod_le_and_prime_of_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-minimal-period-le-and-prime-of).
 
 ## Maximal Kaprekar cycle length in odd bases
 
@@ -272,7 +272,7 @@ if and only if $B \ge 7$, $B$ is prime and $\lambda(B) = (B - 1)/2$.
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, Corollary 3 (`jis-2026-26.4.7-cor-3`).
 
-Stated but not proved: `MetaMathlibExt.kaprekar_minimalPeriod_le_and_eq_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-minimal-period-le-and-eq-iff).
+Stated but not proved: `MetaMathlibExt.kaprekar_minimalPeriod_le_and_eq_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-minimal-period-le-and-eq-iff).
 
 ## Number of Kaprekar cycles of maximal length
 
@@ -288,7 +288,7 @@ on $X_B$.
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, Corollary 5 (`jis-2026-26.4.7-cor-5`).
 
-Stated but not proved: `MetaMathlibExt.kaprekar_card_maximal_cycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-card-maximal-cycles).
+Stated but not proved: `MetaMathlibExt.kaprekar_card_maximal_cycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-card-maximal-cycles).
 
 ## Explicit count of Kaprekar cycles of each length
 
@@ -315,7 +315,7 @@ Here $N_B(L)$ is the number of terminal cycles of length $L$ of $K_B$ on $X_B$.
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, Theorem 24, with `μ_B` from display (14) (`jis-2026-26.4.7-thm-24`).
 
-Stated but not proved: `MetaMathlibExt.kaprekar_card_minimalPeriod_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-card-minimal-period-eq).
+Stated but not proved: `MetaMathlibExt.kaprekar_card_minimalPeriod_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-card-minimal-period-eq).
 
 ## At least two Kaprekar cycles whose length is the projective order of 2
 
@@ -331,7 +331,7 @@ says that $K_B$ has at least two terminal cycles of length $\lambda(B)$.
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, Corollary 27 (i) (`jis-2026-26.4.7-cor-27`).
 
-Stated but not proved: `MetaMathlibExt.two_mul_projectiveOrderTwo_le_card_kaprekar_cycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#two-mul-projective-order-two-le-card-kap).
+Stated but not proved: `MetaMathlibExt.two_mul_projectiveOrderTwo_le_card_kaprekar_cycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#two-mul-projective-order-two-le-card-kap).
 
 ## Odd bases with a unique Kaprekar cycle
 
@@ -346,7 +346,7 @@ That is, $K_B$ has a unique terminal cycle on $X_B$ exactly when $B$ is $3$, $5$
 
 - Evan Chen, Ken Ono, Richard E. Schwartz, and Dinesh Thakur, *Four-Digit Kaprekar Dynamics in Odd Bases*, Journal of Integer Sequences 29 (2026), Article 26.4.7, Corollary 27 (ii) (`jis-2026-26.4.7-cor-27`).
 
-Stated but not proved: `MetaMathlibExt.kaprekar_unique_cycle_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-unique-cycle-iff).
+Stated but not proved: `MetaMathlibExt.kaprekar_unique_cycle_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/KaprekarOddBasesWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html#kaprekar-unique-cycle-iff).
 
 ## Depends on
 
@@ -355,4 +355,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Kaprekar's routine](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/kaprekar-s-routine)

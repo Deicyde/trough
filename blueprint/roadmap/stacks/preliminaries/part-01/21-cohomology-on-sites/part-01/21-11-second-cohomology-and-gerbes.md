@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.11 Second cohomology and gerbes
 
-Section 21.11 of the Stacks Project, [Tag 0CJZ](https://stacks.math.columbia.edu/tag/0CJZ). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.11 of the Stacks Project, [Tag 0CJZ](https://stacks.math.columbia.edu/tag/0CJZ). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CK0, a lemma
 
 [Tag 0CK0](https://stacks.math.columbia.edu/tag/0CK0) in the Stacks Project.
 
-**`CategoryTheory.Gerbe.nonempty_fiber_of_cohomology_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/ExistenceOfAnObject.lean, line 1173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/ExistenceOfAnObject.lean#L1173).
+**`CategoryTheory.Gerbe.nonempty_fiber_of_cohomology_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/ExistenceOfAnObject.lean, line 1173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/ExistenceOfAnObject.lean#L1173).
 
 > **Stacks 0CK0.** Let `p : S ⥤ C` be a gerbe over the site `(C, J)` — fibred in groupoids, a
 > stack, locally nonempty, locally connected — and let `G` be the sheaf of abelian groups
@@ -84,7 +84,7 @@ public theorem nonempty_fiber_of_cohomology_vanishing
     Nonempty (p.Fiber U)
 ```
 
-**`CategoryTheory.Gerbe.exists_band_nonempty_fiber_of_cohomology_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/ExistenceOfAnObject.lean, line 1272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/ExistenceOfAnObject.lean#L1272).
+**`CategoryTheory.Gerbe.exists_band_nonempty_fiber_of_cohomology_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/ExistenceOfAnObject.lean, line 1272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/ExistenceOfAnObject.lean#L1272).
 
 > **Stacks 0CK0, with nothing assumed.** Let `p : S ⥤ C` be a gerbe over the site `(C, J)` whose
 > automorphism sheaves are abelian. Then there are a sheaf `G` of abelian groups on `C` and
@@ -152,7 +152,7 @@ public theorem exists_band_nonempty_fiber_of_cohomology_vanishing
             Subsingleton (Sheaf.H (G.over U) 2) → Nonempty (p.Fiber U)
 ```
 
-**`CategoryTheory.Gerbe.exists_covering_fiber_nonempty_of_cofinal_h1_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/SecondCohomology.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/SecondCohomology.lean#L113). The attribute's comment: “the refinement step of the proof: a covering of U drawn from the cofinal system of hypothesis (1), carrying an object of 𝒮 over each of its members”.
+**`CategoryTheory.Gerbe.exists_covering_fiber_nonempty_of_cofinal_h1_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/SecondCohomology.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/SecondCohomology.lean#L113). The attribute's comment: “the refinement step of the proof: a covering of U drawn from the cofinal system of hypothesis (1), carrying an object of 𝒮 over each of its members”.
 
 > **Stacks 0CK0, the refinement step.** Let `p : 𝒮 ⥤ 𝒞` be locally nonempty for `J` — clause
 > (2) of the definition of a gerbe, Stacks 06NZ — let `𝒢` be an abelian sheaf on `(𝒞, J)`, and let
@@ -197,4 +197,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.11, Tag 0CJZ](https://stacks.math.columbia.edu/tag/0CJZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

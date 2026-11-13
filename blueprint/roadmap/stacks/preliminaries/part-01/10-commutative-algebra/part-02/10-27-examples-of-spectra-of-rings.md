@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.27 Examples of spectra of rings
 
-Section 10.27 of the Stacks Project, [Tag 00EX](https://stacks.math.columbia.edu/tag/00EX). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.27 of the Stacks Project, [Tag 00EX](https://stacks.math.columbia.edu/tag/00EX). 4 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00EY, an example
 
 [Tag 00EY](https://stacks.math.columbia.edu/tag/00EY) in the Stacks Project.
 
-**`IntXSqSubFour.isPrime_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L178).
+**`IntXSqSubFour.isPrime_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L178).
 
 > **Classification of `Spec(R)` (Stacks Tag 00EY).**
 > An ideal `p` of `R = ℤ[x]/(x² - 4)` is prime if and only if it is one of the
@@ -38,7 +38,7 @@ theorem isPrime_iff (p : Ideal IntXSqSubFour) :
 
 [Tag 00EZ](https://stacks.math.columbia.edu/tag/00EZ) in the Stacks Project.
 
-**`Polynomial.isPrime_int_trichotomy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L303).
+**`Polynomial.isPrime_int_trichotomy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L303).
 
 > **Stacks Tag 00EZ** (Description of `Spec(ℤ[x])`).
 >
@@ -66,7 +66,7 @@ theorem Polynomial.isPrime_int_trichotomy
 
 [Tag 00F0](https://stacks.math.columbia.edu/tag/00F0) in the Stacks Project.
 
-**`Polynomial.isPrime_iff_eq_bot_or_eq_span_or_eq_span_pair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Polynomial.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Polynomial.lean#L312). The attribute's comment: “for `R[X]` over any principal ideal domain `R`; the tag is the case `R = k[x]`”.
+**`Polynomial.isPrime_iff_eq_bot_or_eq_span_or_eq_span_pair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Polynomial.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Polynomial.lean#L312). The attribute's comment: “for `R[X]` over any principal ideal domain `R`; the tag is the case `R = k[x]`”.
 
 > **Stacks 00F0**, both directions: the prime ideals of `R[X]`, for `R` a principal ideal
 > domain. The tag is the case `R = k[x]` for a field `k`.
@@ -83,7 +83,7 @@ theorem isPrime_iff_eq_bot_or_eq_span_or_eq_span_pair [IsDomain R] [IsPrincipalI
 
 [Tag 00F1](https://stacks.math.columbia.edu/tag/00F1) in the Stacks Project.
 
-**`NodalCubicAffineOpen.quotientSpanAlgEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 615](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L615). The attribute's comment: “`R ≅ ℚ[A, B]/(A³ - B² + AB)`”.
+**`NodalCubicAffineOpen.quotientSpanAlgEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 615](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L615). The attribute's comment: “`R ≅ ℚ[A, B]/(A³ - B² + AB)`”.
 
 > The isomorphism `ℚ[A, B] / (A³ - B² + A·B) ≃ₐ[ℚ] R` induced by `φ`.
 
@@ -93,7 +93,7 @@ def quotientSpanAlgEquiv :
       MvPolynomial.X 1 ^ 2 + MvPolynomial.X 0 * MvPolynomial.X 1)}) ≃ₐ[ℚ] R
 ```
 
-**`NodalCubicAffineOpen.isOpenEmbedding_comap_inclRToRa`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 792](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L792). The attribute's comment: “`θ : Spec R_a → Spec R` is an open embedding”.
+**`NodalCubicAffineOpen.isOpenEmbedding_comap_inclRToRa`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 792](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L792). The attribute's comment: “`θ : Spec R_a → Spec R` is an open embedding”.
 
 > The inclusion `R ↪ R_a` induces an open embedding
 > `θ : Spec R_a → Spec R`.
@@ -105,7 +105,7 @@ theorem isOpenEmbedding_comap_inclRToRa (a : ℚ)
       (PrimeSpectrum.comap (inclRToRa a ha0 ha1).toRingHom)
 ```
 
-**`NodalCubicAffineOpen.range_comap_inclRToRa`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 806](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L806). The attribute's comment: “the image of `θ` is `Spec R ∖ {𝔪_a}`”.
+**`NodalCubicAffineOpen.range_comap_inclRToRa`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 806](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L806). The attribute's comment: “the image of `θ` is `Spec R ∖ {𝔪_a}`”.
 
 > The image of `θ : Spec R_a → Spec R` is exactly the complement of the
 > closed point `𝔪_a` in `Spec R`.
@@ -117,11 +117,15 @@ theorem range_comap_inclRToRa (a : ℚ)
       {p : PrimeSpectrum R | p ≠ mRPoint a}
 ```
 
-**`NodalCubicAffineOpen.range_comap_inclRToRa_ne_basicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 847](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L847).
+**`NodalCubicAffineOpen.range_comap_inclRToRa_ne_basicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 851](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L851). The attribute's comment: “extra observation: the image of `θ` is not a basic open of `Spec R`”.
 
-> **Headline.** The image of `θ : Spec R_a → Spec R` is **not** the basic
-> open `D(f)` of any element `f ∈ R`. Hence `Spec R_a ⊂ Spec R` is an affine
-> open which is not standard / principal.
+> The image of `θ : Spec R_a → Spec R` is **not** the basic open `D(f)` of any
+> element `f ∈ R`. Hence `Spec R_a ⊂ Spec R` is an affine open which is not standard /
+> principal.
+>
+> This is an extra observation, not a claim of the Stacks example: it is used below
+> to show that `R_a` is not a localization of `R`, where the source argues with units
+> instead.
 
 ```lean
 theorem range_comap_inclRToRa_ne_basicOpen (a : ℚ)
@@ -130,7 +134,7 @@ theorem range_comap_inclRToRa_ne_basicOpen (a : ℚ)
       (PrimeSpectrum.basicOpen f : Set (PrimeSpectrum R))
 ```
 
-**`NodalCubicAffineOpen.not_exists_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 892](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L892). The attribute's comment: “`R_a` is not a localization of `R`”.
+**`NodalCubicAffineOpen.not_exists_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 896](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L896). The attribute's comment: “`R_a` is not a localization of `R`”.
 
 > `R_a` is **not** a localization of `R`: there is no submonoid `S ⊆ R`
 > for which `R_a` becomes the localization `S⁻¹ R` via `inclRToRa`.
@@ -142,6 +146,25 @@ theorem not_exists_isLocalization (a : ℚ)
     ¬ ∃ (S : Submonoid R), IsLocalization S (Ra a ha0 ha1)
 ```
 
+**`NodalCubicAffineOpen.adjoin_genA_genB_genW_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 1077](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L1077). The attribute's comment: “`z² - z`, `z³ - z` and `(a² - a)/(z - a) + z` generate `R_a` as a `ℚ`-algebra”.
+
+> The functions `z² - z`, `z³ - z` and `(a² - a)/(z - a) + z` generate `R_a` as a
+> `ℚ`-algebra. The source assumes `a ∉ {0, ½, 1}`; only `a ≠ 0, 1` is needed.
+
+```lean
+theorem adjoin_genA_genB_genW_eq_top (a : ℚ) (ha0 : a ≠ 0) (ha1 : a ≠ 1) :
+    Algebra.adjoin ℚ {genA a ha0 ha1, genB a ha0 ha1, genW a ha0 ha1} = ⊤
+```
+
+**`NodalCubicAffineOpen.finiteType_Ra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean, line 1100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Examples.lean#L1100). The attribute's comment: “`R_a` is a finitely generated `ℚ`-algebra”.
+
+> `R_a` is a finitely generated `ℚ`-algebra.
+
+```lean
+theorem finiteType_Ra (a : ℚ) (ha0 : a ≠ 0) (ha1 : a ≠ 1) :
+    Algebra.FiniteType ℚ (Ra a ha0 ha1)
+```
+
 ## Depends on
 
 No dependencies are recorded: this chapter reads the repository's source text without running Lean, which edges between declarations need.
@@ -149,4 +172,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.27, Tag 00EX](https://stacks.math.columbia.edu/tag/00EX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.12 Flat finitely presented modules
 
-Section 38.12 of the Stacks Project, [Tag 05I9](https://stacks.math.columbia.edu/tag/05I9). 10 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.12 of the Stacks Project, [Tag 05I9](https://stacks.math.columbia.edu/tag/05I9). 10 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05IA, a lemma
 
 [Tag 05IA](https://stacks.math.columbia.edu/tag/05IA) in the Stacks Project.
 
-**`Module.exists_freeMap_bijective_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapAtGenericFibre.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapAtGenericFibre.lean#L136). The attribute's comment: “existence”.
+**`Module.exists_freeMap_bijective_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapAtGenericFibre.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapAtGenericFibre.lean#L135). The attribute's comment: “existence”.
 
 > **Stacks Project, Tag 05IA, the existence assertion.** Let `R → S` be flat with a
 > geometrically integral fibre over the prime `r`, and let `N` be a finite `S`-module. Then the
@@ -32,7 +32,7 @@ public theorem Module.exists_freeMap_bijective_residueField {R S N : Type u} [Co
           (a.rTensor (@Ideal.ResidueField S _ (r.map (algebraMap R S)) hp))
 ```
 
-**`Module.universallyInjective_localizedMap_of_flat_localizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 656](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L656). The attribute's comment: “the implication (1) ⟹ (3), the universal injectivity of `α_𝔯` over `R_𝔯`”.
+**`Module.universallyInjective_localizedMap_of_flat_localizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 656](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L656). The attribute's comment: “the implication (1) ⟹ (3), the universal injectivity of `α_𝔯` over `R_𝔯`”.
 
 > Let `R → S` be a flat ring map of finite presentation with geometrically integral fibres,
 > let `q ⊆ S` be a prime lying over `r = q ∩ R`, write `p = rS` for the generic point of the fibre
@@ -57,7 +57,7 @@ public theorem Module.universallyInjective_localizedMap_of_flat_localizedModule
       (alpha.restrictScalars R)).restrictScalars R).rTensor Q)
 ```
 
-**`Module.exists_universallyInjective_localizedModule_away_of_flat_localizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 757](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L757). The attribute's comment: “the first half of the implication (1) ⟹ (2), the universal injectivity of `α_f`”.
+**`Module.exists_universallyInjective_localizedModule_away_of_flat_localizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 757](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L757). The attribute's comment: “the first half of the implication (1) ⟹ (2), the universal injectivity of `α_f`”.
 
 > In the situation of `Module.universallyInjective_localizedMap_of_flat_localizedModule`, with
 > `N` finitely presented and `alpha` an isomorphism over `κ(p)`, there is an `f ∈ R`, `f ∉ r`, such
@@ -79,7 +79,7 @@ public theorem Module.exists_universallyInjective_localizedModule_away_of_flat_l
           (alpha.restrictScalars R)).restrictScalars R).rTensor Q)
 ```
 
-**`Module.flat_localizedModule_coker_of_flat_localizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 869](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L869). The attribute's comment: “the flatness of `Coker(α)_𝔮`, the second half of conditions (3) to (6)”.
+**`Module.flat_localizedModule_coker_of_flat_localizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 869](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L869). The attribute's comment: “the flatness of `Coker(α)_𝔮`, the second half of conditions (3) to (6)”.
 
 > In the situation of `Module.universallyInjective_localizedMap_of_flat_localizedModule` the
 > localization of `Coker(alpha)` at `q` is flat over `R`.
@@ -99,7 +99,7 @@ public theorem Module.flat_localizedModule_coker_of_flat_localizedModule
     Module.Flat R (LocalizedModule q.primeCompl (N ⧸ LinearMap.range alpha))
 ```
 
-**`Module.exists_universallyInjective_and_flat_coker_of_flat_localizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 931](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L931). The attribute's comment: “the implication (1) ⟹ (2)”.
+**`Module.exists_universallyInjective_and_flat_coker_of_flat_localizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 931](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L931). The attribute's comment: “the implication (1) ⟹ (2)”.
 
 > Let `R → S` be a flat ring map of finite presentation with geometrically integral fibres,
 > let `q ⊆ S` be a prime lying over `r = q ∩ R`, write `p = rS`, let `N` be a finitely presented
@@ -125,7 +125,7 @@ public theorem Module.exists_universallyInjective_and_flat_coker_of_flat_localiz
       ∃ g ∈ q.primeCompl, Module.Flat R (LocalizedModule.Away g (N ⧸ LinearMap.range alpha))
 ```
 
-**`Module.universallyInjective_localizedMap_and_flat_coker_of_exists_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 1139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L1139). The attribute's comment: “the implication (2) ⟹ (3)”.
+**`Module.universallyInjective_localizedMap_and_flat_coker_of_exists_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 1139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L1139). The attribute's comment: “the implication (2) ⟹ (3)”.
 
 > If `alpha_f` is universally injective as a map of `R`-modules for some `f ∈ R`, `f ∉ r`, and
 > `Coker(alpha)_g` is `R`-flat for some `g ∈ S`, `g ∉ q`, then `alpha_r` is universally injective
@@ -147,7 +147,7 @@ public theorem Module.universallyInjective_localizedMap_and_flat_coker_of_exists
       Module.Flat R (LocalizedModule q.primeCompl (N ⧸ LinearMap.range alpha))
 ```
 
-**`Module.injective_localizedMap_of_universallyInjective_localizedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 1168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L1168). The attribute's comment: “the implication (3) ⟹ (4), the injectivity of `α_𝔯`”.
+**`Module.injective_localizedMap_of_universallyInjective_localizedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 1168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L1168). The attribute's comment: “the implication (3) ⟹ (4), the injectivity of `α_𝔯`”.
 
 > If `alpha_r` is universally injective as a map of `R`-modules then it is injective.
 
@@ -161,7 +161,7 @@ public theorem Module.injective_localizedMap_of_universallyInjective_localizedMa
     Function.Injective (LocalizedModule.map r.primeCompl (alpha.restrictScalars R))
 ```
 
-**`Module.bijective_localizedMap_map_of_injective_localizedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 1181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L1181). The attribute's comment: “the implication (4) ⟹ (5), the isomorphism `α_𝔭`”.
+**`Module.bijective_localizedMap_map_of_injective_localizedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 1181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L1181). The attribute's comment: “the implication (4) ⟹ (5), the isomorphism `α_𝔭`”.
 
 > If `alpha` is surjective over `κ(p)` and `alpha_r` is injective, then `alpha_p` is an
 > isomorphism at the generic point `p = rS` of the fibre over `r`.
@@ -180,7 +180,7 @@ public theorem Module.bijective_localizedMap_map_of_injective_localizedMap (R S 
       (LocalizedModule.map (Ideal.map (algebraMap R S) r).primeCompl alpha)
 ```
 
-**`Module.injective_localizedMap_atPrime_of_bijective_localizedMap_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 1201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L1201). The attribute's comment: “the implication (5) ⟹ (6), the injectivity of `α_𝔮`”.
+**`Module.injective_localizedMap_atPrime_of_bijective_localizedMap_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 1201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L1201). The attribute's comment: “the implication (5) ⟹ (6), the injectivity of `α_𝔮`”.
 
 > If `alpha_p` is an isomorphism at the generic point `p = rS` of the fibre over `r` then
 > `alpha_q` is injective at every prime `q` of `S` lying over `r`.
@@ -196,7 +196,7 @@ public theorem Module.injective_localizedMap_atPrime_of_bijective_localizedMap_m
     Function.Injective (LocalizedModule.map q.primeCompl alpha)
 ```
 
-**`Module.flat_localizedModule_of_injective_localizedMap_of_flat_coker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 1220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L1220). The attribute's comment: “the implication (6) ⟹ (1)”.
+**`Module.flat_localizedModule_of_injective_localizedMap_of_flat_coker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 1220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L1220). The attribute's comment: “the implication (6) ⟹ (1)”.
 
 > For `S` flat over `R`, if `alpha_q` is injective and `Coker(alpha)_q` is `R`-flat then `N_q`
 > is `R`-flat.
@@ -211,7 +211,7 @@ public theorem Module.flat_localizedModule_of_injective_localizedMap_of_flat_cok
     Module.Flat R (LocalizedModule q.primeCompl N)
 ```
 
-**`Module.flat_localizedModule_freeMap_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 1249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L1249). The attribute's comment: “the equivalence of the six conditions”.
+**`Module.flat_localizedModule_freeMap_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean, line 1249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FinitelyPresented/FreeMapSpreadingOut.lean#L1249). The attribute's comment: “the equivalence of the six conditions”.
 
 > Let `R → S` be a finitely presented flat ring map with geometrically integral fibres, let
 > `q ⊆ S` be a prime lying over `r ⊆ R`, write `p = rS` for the generic point of the fibre over `r`,
@@ -258,7 +258,7 @@ public theorem Module.flat_localizedModule_freeMap_tfae (R S : Type u) [CommRing
 
 [Tag 05IB](https://stacks.math.columbia.edu/tag/05IB) in the Stacks Project.
 
-**`Module.CompleteDevissage.exists_away_decomposition_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/DevissageAwayGeneralBase.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/DevissageAwayGeneralBase.lean#L239). The attribute's comment: “the decomposition and projectivity, over a general base”.
+**`Module.CompleteDevissage.exists_away_decomposition_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/DevissageAwayGeneralBase.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/DevissageAwayGeneralBase.lean#L239). The attribute's comment: “the decomposition and projectivity, over a general base”.
 
 > **Stacks Project, Tag 05IB.** Let `N` be a finitely presented module over a finitely
 > presented `R`-algebra `S` which is flat over `R`, and let `N/S/R` admit a complete dévissage over
@@ -286,7 +286,7 @@ public theorem exists_away_decomposition_projective (D : CompleteDevissage R S N
       Module.Projective (Localization.Away a) (LocalizedModule (Submonoid.powers a) N)
 ```
 
-**`Module.CompleteDevissage.nonempty_linearEquiv_directSum_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/EtaleNeighborhoodProjectiveSections.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/EtaleNeighborhoodProjectiveSections.lean#L223). The attribute's comment: “the decomposition, over a local base”.
+**`Module.CompleteDevissage.nonempty_linearEquiv_directSum_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/EtaleNeighborhoodProjectiveSections.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/EtaleNeighborhoodProjectiveSections.lean#L223). The attribute's comment: “the decomposition, over a local base”.
 
 > **The decomposition over a local base.** Let `R` be a local ring, let `N` be a finite
 > `S`-module flat over `R` and let `N/S/R` have a complete dévissage over the maximal ideal of `R`.
@@ -299,7 +299,7 @@ public theorem nonempty_linearEquiv_directSum_of_flat [IsLocalRing R] [Module.Fl
     Nonempty (N ≃ₗ[R] ⨁ i : Fin (D.stepCount + 1), (Fin (D.multiplicity i) →₀ D.B i))
 ```
 
-**`Module.CompleteDevissage.projective_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/EtaleNeighborhoodProjectiveSections.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/EtaleNeighborhoodProjectiveSections.lean#L233). The attribute's comment: “projectivity over a local base”.
+**`Module.CompleteDevissage.projective_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/EtaleNeighborhoodProjectiveSections.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/EtaleNeighborhoodProjectiveSections.lean#L233). The attribute's comment: “projectivity over a local base”.
 
 > **Projectivity over a local base.** In the situation of
 > `Module.CompleteDevissage.nonempty_linearEquiv_directSum_of_flat` the module `N` is projective
@@ -315,7 +315,7 @@ public theorem projective_of_flat [IsLocalRing R] [Module.Flat R N]
 
 [Tag 05ID](https://stacks.math.columbia.edu/tag/05ID) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_projective_sections_of_isFlatOverAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/ProjectiveSectionsFlatAtPoint.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/ProjectiveSectionsFlatAtPoint.lean#L244).
+**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_projective_sections_of_isFlatOverAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/ProjectiveSectionsFlatAtPoint.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/ProjectiveSectionsFlatAtPoint.lean#L245). The attribute's comment: “exactly the source's hypotheses and full conclusion, unconditional: 0399, 05HR with 05I0 and 05IB are proved in the library, not assumed”.
 
 > **Stacks Project, Tag 05ID.** A finitely presented quasi-coherent module which is flat over
 > the base at a point has projective global sections after compatible affine elementary étale
@@ -348,30 +348,38 @@ theorem exists_elementaryEtaleNeighborhood_projective_sections_of_isFlatOverAt
 
 [Tag 05KW](https://stacks.math.columbia.edu/tag/05KW) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_projective_sections_along_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/ProjectiveSectionsAlongFibre.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/ProjectiveSectionsAlongFibre.lean#L619).
+**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_projective_sections_image_contains_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/ProjectiveSectionsImageContainsFibre.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/ProjectiveSectionsImageContainsFibre.lean#L94).
 
 > **Stacks Project, Tag 05KW.** Let `f : X ⟶ S` be of finite presentation, let `F` be a
 > quasi-coherent `𝒪_X`-module of finite presentation and let `s ∈ S` be such that `F` is flat over
 > `S` at every point of the fibre `X_s`. Then there is an elementary étale neighbourhood
-> `(S', s') ⟶ (S, s)` and a commutative square whose upper arrow `g : X' ⟶ X` is étale, with `X'`
-> and `S'` affine, with `X_s ⊆ g(X')`, and with `Γ(X', g^*F)` a projective
+> `(S', s') ⟶ (S, s)` and a commutative square
+> ```
+>   X ←g— X'
+>   ↓      ↓ h
+>   S ←—— S'
+> ```
+> such that `g` is étale, the image of the induced morphism `X' ⟶ X ×_S S'` contains the fibre
+> `(X ×_S S')_{s'}`, the schemes `X'` and `S'` are affine, and `Γ(X', g^*F)` is a projective
 > `Γ(S', 𝒪_{S'})`-module.
 >
-> Tag 05ID enters as
-> `AlgebraicGeometry.exists_elementaryEtaleNeighborhood_projective_sections_of_isFlatOverAt`.
+> The fibre `(X ×_S S')_{s'}` is the set of points of `X ×_S S'` whose second projection is `s'`.
+> The statement also records the equivalent pointwise form: every point of `X_s` is `g` of a point
+> of `X'` lying over `s'`. The `Γ(S', 𝒪_{S'})`-module structure on `Γ(X', g^*F)` is restriction of
+> scalars along the map on global sections induced by `h`.
 
 ```lean
-theorem exists_elementaryEtaleNeighborhood_projective_sections_along_fibre
+theorem exists_elementaryEtaleNeighborhood_projective_sections_image_contains_fibre
     {X S : Scheme.{u}} (f : X ⟶ S) (F : X.Modules) (s : S)
     (hf : FinitePresentation f)
     [F.IsQuasicoherent] [F.IsFinitePresentation]
     (hflat : ∀ x : f.fiber s,
       IsFlatOverAt f.toLRSHom.toShHom F (f.fiberι s x)) :
     ∃ (U : EtaleNeighborhood S s) (X' : Scheme.{u})
-      (h : X' ⟶ U.scheme) (g : X' ⟶ X),
+      (h : X' ⟶ U.scheme) (g : X' ⟶ X) (hc : g ≫ f = h ≫ U.toBase),
       U.IsElementary ∧ IsAffine U.scheme ∧ IsAffine X' ∧ Etale g ∧
-      g ≫ f = h ≫ U.toBase ∧
-      f ⁻¹' {s} ⊆ Set.range g ∧
+      pullback.snd f U.toBase ⁻¹' {U.point} ⊆ Set.range (pullback.lift g h hc) ∧
+      (∀ x ∈ f ⁻¹' {s}, ∃ y : X', g y = x ∧ h y = U.point) ∧
       (let N := Γ((Scheme.Modules.pullback g).obj F, ⊤)
        letI : Module Γ(U.scheme, ⊤) N := Module.compHom N h.appTop.hom
        Module.Projective Γ(U.scheme, ⊤) N)
@@ -381,7 +389,7 @@ theorem exists_elementaryEtaleNeighborhood_projective_sections_along_fibre
 
 [Tag 05IE](https://stacks.math.columbia.edu/tag/05IE) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_projective_structureSheafSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/StructureSheafProjectiveSections.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/StructureSheafProjectiveSections.lean#L196). The attribute's comment: “the full conclusion; assumes only `hdev` of Tag 05ID at the structure sheaf”.
+**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_projective_structureSheafSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/StructureSheafProjectiveSections.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/StructureSheafProjectiveSections.lean#L198). The attribute's comment: “the full conclusion; assumes only `hdev` of Tag 05ID at the structure sheaf”.
 
 > **Stacks Project, Tag 05IE.** Let `f : X ⟶ S` be locally of finite presentation and let
 > `x : X`. If `f` is flat at `x` over `S`, then there is a commutative square of pointed schemes
@@ -401,7 +409,7 @@ theorem exists_elementaryEtaleNeighborhood_projective_sections_along_fibre
 > `𝒪_X` as a module, which Tag 05ID requires of `ℱ`, is
 > `AlgebraicGeometry.Scheme.unitModule_isFinitePresentation`.
 >
-> The hypothesis `hdev` is the hypothesis of this library's Tag 05ID,
+> The hypothesis `hdev` is the hypothesis of the conditional reduction of Tag 05ID,
 > `AlgebraicGeometry.exists_elementaryEtaleNeighborhood_projective_sections`, instantiated at
 > the structure sheaf: Proposition 05HR composed with Remark 05I0, carrying the injectivity of the
 > maps `α i` of Lemma 05IA. Nothing is assumed beyond it — in particular no Noetherian hypothesis,
@@ -447,7 +455,7 @@ theorem exists_elementaryEtaleNeighborhood_projective_structureSheafSections
          Module.Projective Γ(V.scheme, ⊤) Γ(U.scheme, ⊤))
 ```
 
-**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_projective_structureSheafSections_of_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/StructureSheafProjectiveSections.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/StructureSheafProjectiveSections.lean#L266).
+**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_projective_structureSheafSections_of_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/StructureSheafProjectiveSections.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/StructureSheafProjectiveSections.lean#L268).
 
 > **Stacks Project, Tag 05IE.** Let `f : X ⟶ S` be locally of finite presentation and let
 > `x : X`. If `f` is flat at `x` over `S`, then there is a commutative square of pointed schemes
@@ -494,7 +502,7 @@ theorem exists_elementaryEtaleNeighborhood_projective_structureSheafSections_of_
 
 [Tag 05KX](https://stacks.math.columbia.edu/tag/05KX) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_projective_structureSheafSections_along_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/StructureSheafProjectiveSectionsAlongFibre.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/StructureSheafProjectiveSectionsAlongFibre.lean#L102).
+**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_projective_structureSheafSections_along_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/StructureSheafProjectiveSectionsAlongFibre.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/StructureSheafProjectiveSectionsAlongFibre.lean#L102).
 
 > **Stacks Project, Tag 05KX.** Let `f : X ⟶ S` be of finite presentation and let `s : S` be a
 > point at which `X` is flat over `S` at every point of the fibre `X_s`. Then there are an
@@ -534,7 +542,7 @@ theorem exists_elementaryEtaleNeighborhood_projective_structureSheafSections_alo
 
 [Tag 05KY](https://stacks.math.columbia.edu/tag/05KY) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etale_neighborhood_with_free_globalSections_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsFromFiniteTypeFlatness.lean, line 652](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsFromFiniteTypeFlatness.lean#L652).
+**`AlgebraicGeometry.exists_etale_neighborhood_with_free_globalSections_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsFromFiniteTypeFlatness.lean, line 657](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsFromFiniteTypeFlatness.lean#L657). The attribute's comment: “f locally of finite presentation, F quasi-coherent of finite type, F flat at x over S: an elementary étale neighbourhood (S', s') of (S, s) and (X', x') over Spec O\_\{S',s'} with X' → X ×\_S Spec O\_\{S',s'} étale, κ(x) = κ(x'), X' affine of finite presentation over O\_\{S',s'}, g^*F of finite presentation and Γ(X', g^*F) free over O\_\{S',s'}”.
 
 > **Stacks Project, Tag 05KY.** Let `f : X ⟶ S` be locally of finite presentation, let `F` be a
 > quasi-coherent `𝒪_X`-module of finite type and let `x ∈ X` be a point at which `F` is flat over
@@ -551,7 +559,9 @@ theorem exists_elementaryEtaleNeighborhood_projective_structureSheafSections_alo
 >
 > The two inputs are Tag 05ID,
 > `AlgebraicGeometry.exists_elementaryEtaleNeighborhood_projective_sections_of_isFlatOverAt`, and
-> Tag 05I5, `AlgebraicGeometry.existsElementaryEtaleNeighborhoodFinitePresentationFlatOver`.
+> Tag 05I5, `AlgebraicGeometry.existsElementaryEtaleNeighborhoodFinitePresentationFlatOver`. The
+> flatness of `F` at `x` is used only through Tag 05I5, and projectivity of the sections becomes
+> freeness over the local ring `𝒪_{S', s'}` by Tag 0593.
 
 ```lean
 theorem exists_etale_neighborhood_with_free_globalSections_of_isFiniteType
@@ -582,7 +592,7 @@ theorem exists_etale_neighborhood_with_free_globalSections_of_isFiniteType
 
 [Tag 05KZ](https://stacks.math.columbia.edu/tag/05KZ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etale_neighborhood_with_free_globalSections_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsFiniteType.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsFiniteType.lean#L217).
+**`AlgebraicGeometry.exists_etale_neighborhood_with_free_globalSections_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsFiniteType.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsFiniteType.lean#L217).
 
 > **Stacks Project, Tag 05KZ.** Let `f : X ⟶ S` be locally of finite type, let `F` be a
 > quasi-coherent `𝒪_X`-module of finite type and let `x : X` be a point at which `F` is flat over
@@ -632,7 +642,7 @@ theorem exists_etale_neighborhood_with_free_globalSections_of_locallyOfFiniteTyp
 
 [Tag 05L0](https://stacks.math.columbia.edu/tag/05L0) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_free_sections_along_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsAlongFibre.lean, line 902](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsAlongFibre.lean#L902).
+**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_free_sections_along_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsAlongFibre.lean, line 902](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsAlongFibre.lean#L902).
 
 > **Stacks Project, Tag 05L0.** Let `f : X ⟶ S` be of finite presentation, let `F` be a
 > quasi-coherent `𝒪_X`-module of finite type and let `s : S` be such that `F` is flat over `S` at
@@ -680,7 +690,7 @@ theorem exists_elementaryEtaleNeighborhood_free_sections_along_fibre
 
 [Tag 05L1](https://stacks.math.columbia.edu/tag/05L1) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_free_sections_along_fibre_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsAlongFibre.lean, line 1031](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsAlongFibre.lean#L1031).
+**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_free_sections_along_fibre_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsAlongFibre.lean, line 1031](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSectionsAlongFibre.lean#L1031).
 
 > **Stacks Project, Tag 05L1.** Let `f : X ⟶ S` be of finite type, let `F` be a quasi-coherent
 > `𝒪_X`-module of finite type and let `s : S` be such that `F` is flat over `S` at every point of
@@ -729,4 +739,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.12, Tag 05I9](https://stacks.math.columbia.edu/tag/05I9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

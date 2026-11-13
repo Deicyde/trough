@@ -8,7 +8,7 @@ proof: formalized
 
 # Gaussian process regression
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html).
 
 ## Kernel matrix
 
@@ -16,14 +16,14 @@ For a kernel $k : X \times X \to \mathbb{R}$ and two families of inputs
 $a = (a_i)_{i \in \alpha}$ and $b = (b_j)_{j \in \beta}$ in $X$, the kernel (Gram) matrix
 $K(a, b)$ is the $\alpha \times \beta$ real matrix with entries $K(a, b)_{ij} = k(a_i, b_j)$.
 
-Formalized by `Cslib.MachineLearning.GaussianProcessRegression.kernelMatrix`, a definition declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#kernel-matrix).
+Formalized by `Cslib.MachineLearning.GaussianProcessRegression.kernelMatrix`, a definition declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#kernel-matrix).
 
 ## Joint prior covariance in Gaussian-process regression
 
 The joint prior covariance of the test values `f(x*)` and the noisy training targets
 `y = f(x) + ε`, `ε ~ N(0, σ² I)`: `[[K(x*, x*), K(x*, x)], [K(x, x*), K(x, x) + σ² I]]`.
 
-Formalized by `Cslib.MachineLearning.GaussianProcessRegression.jointCov`, a definition declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#joint-cov).
+Formalized by `Cslib.MachineLearning.GaussianProcessRegression.jointCov`, a definition declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#joint-cov).
 
 ## Test-value projection
 
@@ -33,7 +33,7 @@ identity matrix on the columns indexed by $\tau$ and a zero block on the columns
 It sends a joint vector $(u, y)$ with $u \in \mathbb{R}^{\tau}$ and $y \in \mathbb{R}^{\nu}$ to its
 block of test values $u$.
 
-Formalized by `Cslib.MachineLearning.GaussianProcessRegression.testPart`, a definition declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#test-part).
+Formalized by `Cslib.MachineLearning.GaussianProcessRegression.testPart`, a definition declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#test-part).
 
 ## Training-target projection
 
@@ -43,7 +43,7 @@ matrix with a zero block on the columns indexed by $\tau$ and the identity matri
 indexed by $\nu$. It sends a joint vector $(u, y)$ with $u \in \mathbb{R}^{\tau}$ and
 $y \in \mathbb{R}^{\nu}$ to its block of training targets $y$.
 
-Formalized by `Cslib.MachineLearning.GaussianProcessRegression.targetPart`, a definition declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#target-part).
+Formalized by `Cslib.MachineLearning.GaussianProcessRegression.targetPart`, a definition declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#target-part).
 
 ## Regularized kernel matrices are invertible
 
@@ -52,7 +52,7 @@ and $x = (x_j)_{j \in \nu}$ a finite family of inputs whose kernel matrix
 $K = (k(x_i, x_j))_{i, j \in \nu}$ is positive semidefinite. Then for every $\sigma^2 > 0$ the
 matrix $K + \sigma^2 I$ has nonzero determinant, so it is invertible.
 
-Formalized by `Cslib.MachineLearning.GaussianProcessRegression.isUnit_det_kernelMatrix_add`, a theorem declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#is-unit-det-kernel-matrix-add).
+Formalized by `Cslib.MachineLearning.GaussianProcessRegression.isUnit_det_kernelMatrix_add`, a theorem declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#is-unit-det-kernel-matrix-add).
 
 ## The joint covariance as a kernel matrix plus noise
 
@@ -63,7 +63,7 @@ equals $K + D$, where $K$ is the kernel matrix of the combined family $(x^*, x)$
 $\tau \sqcup \nu$ and $D$ is the diagonal matrix with entry $0$ at each test index and $\sigma^2$
 at each training index.
 
-Formalized by `Cslib.MachineLearning.GaussianProcessRegression.jointCov_eq_add`, a theorem declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#joint-cov-eq-add).
+Formalized by `Cslib.MachineLearning.GaussianProcessRegression.jointCov_eq_add`, a theorem declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#joint-cov-eq-add).
 
 ## The joint covariance is positive semidefinite
 
@@ -73,7 +73,7 @@ training inputs, and let $\sigma^2 \ge 0$. If the kernel matrix of the combined 
 indexed by $\tau \sqcup \nu$, is positive semidefinite, then the joint covariance of $k$,
 $\sigma^2$, $x^*$ and $x$ is positive semidefinite.
 
-Formalized by `Cslib.MachineLearning.GaussianProcessRegression.jointCov_posSemidef`, a theorem declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#joint-cov-pos-semidef).
+Formalized by `Cslib.MachineLearning.GaussianProcessRegression.jointCov_posSemidef`, a theorem declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#joint-cov-pos-semidef).
 
 ## Training blocks of positive semidefinite kernel matrices
 
@@ -83,7 +83,7 @@ $x = (x_j)_{j \in \nu}$ be families of inputs. If the kernel matrix of the combi
 $(x^*, x)$, indexed by $\tau \sqcup \nu$, is positive semidefinite, then so is the kernel matrix
 $(k(x_i, x_j))_{i, j \in \nu}$ of $x$.
 
-Formalized by `Cslib.MachineLearning.GaussianProcessRegression.kernelMatrix_posSemidef_train`, a theorem declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#kernel-matrix-pos-semidef-train).
+Formalized by `Cslib.MachineLearning.GaussianProcessRegression.kernelMatrix_posSemidef_train`, a theorem declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#kernel-matrix-pos-semidef-train).
 
 ## The Gaussian-process posterior
 
@@ -100,7 +100,7 @@ to the law of $Y$, the conditional distribution of $F$ given $Y = y$ is the Gaus
 $K(x^*, x) (K(x, x) + \sigma^2 I)^{-1} y$ and covariance
 $K(x^*, x^*) - K(x^*, x) (K(x, x) + \sigma^2 I)^{-1} K(x, x^*)$.
 
-Formalized by `Cslib.MachineLearning.GaussianProcessRegression.condDistrib_test_given_targets`, a theorem declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#cond-distrib-test-given-targets).
+Formalized by `Cslib.MachineLearning.GaussianProcessRegression.condDistrib_test_given_targets`, a theorem declared in [CSLibExt/MachineLearning/GaussianProcessRegression.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/GaussianProcessRegression.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html#cond-distrib-test-given-targets).
 
 ## Depends on
 
@@ -109,4 +109,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Gaussian process regression](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/machine-learning/supervised-learning/gaussian-process-regression)

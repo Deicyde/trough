@@ -7,7 +7,7 @@ statement: formalized
 
 # Series of reciprocal central binomial coefficients
 
-36 results, 27 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html).
+36 results, 27 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html).
 
 ## Integrand of the antiderivative condition
 
@@ -19,7 +19,7 @@ $$\frac{8x^l - S(l)(x)}{\sqrt{x}\,(4 - x)},$$
 
 where $\sqrt{x} = 0$ for $x < 0$ and a quotient with denominator $0$ is $0$.
 
-Formalized by `MetaMathlibExt.TIntegrand`, a definition declared in [MathlibExt/NumberTheory/PolynomialTL1.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PolynomialTL1.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#tintegrand).
+Formalized by `MetaMathlibExt.TIntegrand`, a definition declared in [MathlibExt/NumberTheory/PolynomialTL1.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PolynomialTL1.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#tintegrand).
 
 ## Polynomial family defined by an antiderivative
 
@@ -35,7 +35,7 @@ The term $T(l)$ stands for the polynomial $T_{l-1}$ of the source, so $T(0) = 0$
 convention $T_{-1} = 0$, and the derivative condition expresses $T_{l-1}(x)$ as
 $\frac{1}{2\sqrt{x}}$ times an antiderivative of the displayed integrand.
 
-Formalized by `MetaMathlibExt.IsPolyTFamily`, a definition declared in [MathlibExt/NumberTheory/PolynomialTL1.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PolynomialTL1.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#is-poly-tfamily).
+Formalized by `MetaMathlibExt.IsPolyTFamily`, a definition declared in [MathlibExt/NumberTheory/PolynomialTL1.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PolynomialTL1.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#is-poly-tfamily).
 
 ## Multisection formula for $\sum_k x^k / \binom{2mk}{mk}$
 
@@ -51,7 +51,7 @@ $$
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Theorem 7 (`jis-2024-24.6.8-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.tsum_div_centralBinom_mul_eq_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#tsum-div-central-binom-mul-eq-multisecti).
+Stated but not proved: `MetaMathlibExt.tsum_div_centralBinom_mul_eq_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#tsum-div-central-binom-mul-eq-multisecti).
 
 ## Multisection formula for $\sum_k x^k / (k \binom{2mk}{mk})$
 
@@ -68,7 +68,7 @@ $$
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Theorem 8 (`jis-2024-24.6.8-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.tsum_div_mul_centralBinom_mul_eq_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#tsum-div-mul-central-binom-mul-eq-multis).
+Stated but not proved: `MetaMathlibExt.tsum_div_mul_centralBinom_mul_eq_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#tsum-div-mul-central-binom-mul-eq-multis).
 
 ## Multisection formula for $\sum_k x^k / (k^2 \binom{2mk}{mk})$
 
@@ -85,7 +85,7 @@ $$
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Theorem 10 (`jis-2024-24.6.8-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.tsum_div_sq_mul_centralBinom_mul_eq_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#tsum-div-sq-mul-central-binom-mul-eq-mul).
+Stated but not proved: `MetaMathlibExt.tsum_div_sq_mul_centralBinom_mul_eq_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#tsum-div-sq-mul-central-binom-mul-eq-mul).
 
 ## Closed form of the reciprocal central binomial series
 
@@ -102,7 +102,7 @@ $H(x) = \sum_{n \ge 0} x^n / \binom{2n}{n}$.
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Section 2.
 
-Formalized by `MetaMathlibExt.centralBinomReciprocalH`, a definition declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#central-binom-reciprocal-h).
+Formalized by `MetaMathlibExt.centralBinomReciprocalH`, a definition declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#central-binom-reciprocal-h).
 
 ## The closed form $H$ equals $1$ at $0$
 
@@ -114,7 +114,7 @@ variable satisfies $H(0) = 1$.
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Section 2.
 
-Formalized by `MetaMathlibExt.centralBinomReciprocalH_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#central-binom-reciprocal-h-zero).
+Formalized by `MetaMathlibExt.centralBinomReciprocalH_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#central-binom-reciprocal-h-zero).
 
 ## Coefficients of Zurita's Q-polynomials
 
@@ -127,7 +127,7 @@ Zurita's polynomial $Q_l$. For $l = 0$ the definition gives $q_{0,k} = 0$ for ev
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Definition 1.
 
-Formalized by `MetaMathlibExt.arcsinAntiderivQCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-qcoeff).
+Formalized by `MetaMathlibExt.arcsinAntiderivQCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-qcoeff).
 
 ## Leading coefficient of a Q-polynomial
 
@@ -138,7 +138,7 @@ $q_l = q_{l,l}$ of $x^l$ in Zurita's polynomial $Q_l$ equals $-4/l$.
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Definition 1.
 
-Formalized by `MetaMathlibExt.arcsinAntiderivQCoeff_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-qcoeff-self).
+Formalized by `MetaMathlibExt.arcsinAntiderivQCoeff_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-qcoeff-self).
 
 ## Recursion for the coefficients of a Q-polynomial
 
@@ -151,7 +151,7 @@ $$q_k = \frac{4k + 6}{k}\, q_{k+1}.$$
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Definition 1.
 
-Formalized by `MetaMathlibExt.arcsinAntiderivQCoeff_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-qcoeff-of-lt).
+Formalized by `MetaMathlibExt.arcsinAntiderivQCoeff_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-qcoeff-of-lt).
 
 ## Constant coefficient of a Q-polynomial
 
@@ -163,7 +163,7 @@ $q_0 = -12 q_1$.
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Definition 1.
 
-Formalized by `MetaMathlibExt.arcsinAntiderivQCoeff_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-qcoeff-zero).
+Formalized by `MetaMathlibExt.arcsinAntiderivQCoeff_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-qcoeff-zero).
 
 ## Zurita's Q-polynomials
 
@@ -176,7 +176,7 @@ constant polynomial $Q_0 = 8$.
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Definition 1.
 
-Formalized by `MetaMathlibExt.arcsinAntiderivQ`, a definition declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-q).
+Formalized by `MetaMathlibExt.arcsinAntiderivQ`, a definition declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-q).
 
 ## Zurita's arcsine antiderivative constants
 
@@ -188,7 +188,7 @@ $Q_l$. For $l = 0$ it is $C_0 = -4$.
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Definition 1.
 
-Formalized by `MetaMathlibExt.arcsinAntiderivC`, a definition declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-c).
+Formalized by `MetaMathlibExt.arcsinAntiderivC`, a definition declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-c).
 
 ## The first two arcsine antiderivative constants
 
@@ -199,7 +199,7 @@ and $C_2 = -120$, as in Table 1 of the paper.
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Definition 1 and Table 1.
 
-Formalized by `MetaMathlibExt.arcsinAntiderivC_one_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-c-one-two).
+Formalized by `MetaMathlibExt.arcsinAntiderivC_one_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-c-one-two).
 
 ## Coefficients of Zurita's polynomial $S_l$
 
@@ -212,7 +212,7 @@ and $s_k = \frac{8(k + 1)}{2k - 1} s_{k+1}$ for $0 \le k < l$.
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Definition 3.
 
-Formalized by `MetaMathlibExt.arcsinAntiderivSCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-scoeff).
+Formalized by `MetaMathlibExt.arcsinAntiderivSCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-scoeff).
 
 ## Leading coefficient of an S-polynomial
 
@@ -223,7 +223,7 @@ $s_l = s_{l,l}$ of $x^l$ in Zurita's polynomial $S_l$ equals $8/(1 - 2l)$.
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Definition 3.
 
-Formalized by `MetaMathlibExt.arcsinAntiderivSCoeff_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-scoeff-self).
+Formalized by `MetaMathlibExt.arcsinAntiderivSCoeff_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-scoeff-self).
 
 ## Recursion for the coefficients of an S-polynomial
 
@@ -237,7 +237,7 @@ $$s_k = \frac{8(k + 1)}{2k - 1}\, s_{k+1}.$$
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Definition 3.
 
-Formalized by `MetaMathlibExt.arcsinAntiderivSCoeff_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-scoeff-of-lt).
+Formalized by `MetaMathlibExt.arcsinAntiderivSCoeff_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-scoeff-of-lt).
 
 ## Zurita's S-polynomials
 
@@ -249,7 +249,7 @@ $s_i = \frac{8(i + 1)}{2i - 1} s_{i+1}$ for $0 \le i < l$.
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Definition 3.
 
-Formalized by `MetaMathlibExt.arcsinAntiderivS`, a definition declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-s).
+Formalized by `MetaMathlibExt.arcsinAntiderivS`, a definition declared in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#arcsin-antideriv-s).
 
 ## Antiderivative of $x^l H(x)$
 
@@ -273,7 +273,7 @@ antiderivative of $x^l H(x)$ on $0 < x < 4$.
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Lemma 5 (`jis-2024-24.6.8-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.hasDerivAt_arcsinAntiderivP_pow_mul_centralBinomReciprocalH` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#has-deriv-at-arcsin-antideriv-p-pow-mul).
+Stated but not proved: `MetaMathlibExt.hasDerivAt_arcsinAntiderivP_pow_mul_centralBinomReciprocalH` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#has-deriv-at-arcsin-antideriv-p-pow-mul).
 
 ## Antiderivative of $x^{l - 1/2} H(x)$
 
@@ -295,7 +295,7 @@ Such a $T$ is unique: it is the paper's polynomial $T_{l-1}$ (Definition 4, with
 
 - Rimer Zurita, *Elementary Functions Associated with Series Involving Reciprocals of Central Binomial Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.6.8, Lemma 6 (`jis-2024-24.6.8-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.hasDerivAt_arcsinAntiderivT_pow_mul_centralBinomReciprocalH` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#has-deriv-at-arcsin-antideriv-t-pow-mul).
+Stated but not proved: `MetaMathlibExt.hasDerivAt_arcsinAntiderivT_pow_mul_centralBinomReciprocalH` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CentralBinomialReciprocalMultisectionWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#has-deriv-at-arcsin-antideriv-t-pow-mul).
 
 ## Coefficients of Zurita's polynomial $S_n$
 
@@ -308,7 +308,7 @@ the coefficients of $S_n(x) = \sum_{k=0}^{n} s_k x^k$.
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Definition 1.
 
-Formalized by `MetaMathlibExt.zuritaSCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-scoeff).
+Formalized by `MetaMathlibExt.zuritaSCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-scoeff).
 
 ## Zurita's constant $c_n$
 
@@ -320,7 +320,7 @@ $s_n/2 - 1$. For $n = 1$ this gives $c_1 = 1$, the paper's convention.
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Definition 2.
 
-Formalized by `MetaMathlibExt.zuritaC`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-c).
+Formalized by `MetaMathlibExt.zuritaC`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-c).
 
 ## Reversed coefficients of Zurita's polynomial $T_{n-2}$
 
@@ -337,7 +337,7 @@ $k = n - 2, \dots, 1$.
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Definition 2.
 
-Formalized by `MetaMathlibExt.zuritaTCoeffRev`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-tcoeff-rev).
+Formalized by `MetaMathlibExt.zuritaTCoeffRev`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-tcoeff-rev).
 
 ## Coefficients of Zurita's polynomial $T_{n-2}$
 
@@ -353,7 +353,7 @@ $t_k = u_0$.
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Definition 2.
 
-Formalized by `MetaMathlibExt.zuritaTCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-tcoeff).
+Formalized by `MetaMathlibExt.zuritaTCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-tcoeff).
 
 ## Zurita's coefficients $m_k$
 
@@ -366,7 +366,7 @@ $M_{n-1}(x) = \sum_{k=0}^{n-1} m_k x^k$.
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Definition 3.
 
-Formalized by `MetaMathlibExt.zuritaMCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-mcoeff).
+Formalized by `MetaMathlibExt.zuritaMCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-mcoeff).
 
 ## Zurita's constant $d_n$
 
@@ -380,7 +380,7 @@ $d_1 = 1$, the paper's convention.
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Definition 4.
 
-Formalized by `MetaMathlibExt.zuritaD`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-d).
+Formalized by `MetaMathlibExt.zuritaD`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-d).
 
 ## Coefficients of Zurita's polynomial $N_{n-2}$
 
@@ -394,7 +394,7 @@ coefficient of $x^k$ in $N_{n-2}(x) = \frac12 \sum_{i=0}^{n-2} \frac{m_i x^i}{i 
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Definition 4.
 
-Formalized by `MetaMathlibExt.zuritaNCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-ncoeff).
+Formalized by `MetaMathlibExt.zuritaNCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-ncoeff).
 
 ## Values from Zurita's Tables 1-4
 
@@ -411,7 +411,7 @@ $M_2(x) = 2/5 + (8/15)x + (16/15)x^2$ and $N_1(x) = -(8x + 3)/30$.
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Tables 1-4.
 
-Formalized by `MetaMathlibExt.zurita_table_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-table-values).
+Formalized by `MetaMathlibExt.zurita_table_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-table-values).
 
 ## Zurita's polynomial $S_n$
 
@@ -423,7 +423,7 @@ $s_k = \frac{k - 1 - n}{k - n + 1/2}\, s_{k-1}$ for $k \ge 1$ are the coefficien
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Definition 1.
 
-Formalized by `MetaMathlibExt.zuritaS`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-s).
+Formalized by `MetaMathlibExt.zuritaS`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-s).
 
 ## Zurita's polynomial $T_{n-2}$
 
@@ -439,7 +439,7 @@ coefficients of Zurita's polynomial $S_n$, and $c_n = s_n/2 - 1$.
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Definition 2.
 
-Formalized by `MetaMathlibExt.zuritaT`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-t).
+Formalized by `MetaMathlibExt.zuritaT`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-t).
 
 ## Zurita's polynomial $M_{n-1}$
 
@@ -452,7 +452,7 @@ $M_{n-1}(x) = \sum_{k=0}^{n-1} m_k x^k$ (so $M_{-1} = 0$).
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Definition 3.
 
-Formalized by `MetaMathlibExt.zuritaM`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-m).
+Formalized by `MetaMathlibExt.zuritaM`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-m).
 
 ## Zurita's polynomial $N_{n-2}$
 
@@ -465,7 +465,7 @@ $N_{n-2}(x) = \frac12 \sum_{k=0}^{n-2} \frac{m_k x^k}{k - n + 1}$, which is $0$ 
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Definition 4.
 
-Formalized by `MetaMathlibExt.zuritaN`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-n).
+Formalized by `MetaMathlibExt.zuritaN`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#zurita-n).
 
 ## Zurita's antiderivative of $x^{-n-1/2}\arcsin(\sqrt{x})/(1-x)^{3/2}$
 
@@ -484,7 +484,7 @@ has derivative $x^{-n-1/2} \arcsin(\sqrt{x}) / (1 - x)^{3/2}$ at $x$.
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.hasDerivAt_zurita_antiderivative_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#has-deriv-at-zurita-antiderivative-one).
+Stated but not proved: `MetaMathlibExt.hasDerivAt_zurita_antiderivative_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#has-deriv-at-zurita-antiderivative-one).
 
 ## Zurita's antiderivative of $x^{-n-1/2}\arcsin(\sqrt{x})/\sqrt{1-x}$
 
@@ -503,7 +503,7 @@ has derivative $x^{-n-1/2} \arcsin(\sqrt{x}) / \sqrt{1 - x}$ at $x$.
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.hasDerivAt_zurita_antiderivative_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#has-deriv-at-zurita-antiderivative-two).
+Stated but not proved: `MetaMathlibExt.hasDerivAt_zurita_antiderivative_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#has-deriv-at-zurita-antiderivative-two).
 
 ## Zurita's series $\sum_{k > n} 4^k x^k / ((k - n)\binom{2k}{k})$
 
@@ -526,7 +526,7 @@ $\binom{2k}{k} \le 4^k$, the series diverges for $x \ge 1$.
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.tsum_four_pow_div_sub_mul_centralBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#tsum-four-pow-div-sub-mul-central-binom).
+Stated but not proved: `MetaMathlibExt.tsum_four_pow_div_sub_mul_centralBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#tsum-four-pow-div-sub-mul-central-binom).
 
 ## Zurita's series $\sum_{k > n} 4^k x^k / ((k - n)^2\binom{2k}{k})$
 
@@ -562,7 +562,7 @@ $$
 
 - Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.tsum_four_pow_div_sub_sq_mul_centralBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#tsum-four-pow-div-sub-sq-mul-central-bin).
+Stated but not proved: `MetaMathlibExt.tsum_four_pow_div_sub_sq_mul_centralBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedCentralBinomialArcsinWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html#tsum-four-pow-div-sub-sq-mul-central-bin).
 
 ## Depends on
 
@@ -571,4 +571,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Series of reciprocal central binomial coefficients](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/series-of-reciprocal-central-binomial-coefficien)

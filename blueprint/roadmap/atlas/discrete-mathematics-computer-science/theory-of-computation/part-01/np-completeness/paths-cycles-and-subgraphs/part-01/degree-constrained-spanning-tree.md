@@ -7,7 +7,7 @@ statement: formalized
 
 # Degree-constrained spanning tree
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree/index.html).
 
 ## Instances of DEGREE-CONSTRAINED SPANNING TREE
 
@@ -15,7 +15,7 @@ An instance of DEGREE-CONSTRAINED SPANNING
 TREE is a triple $(n, E, K)$ consisting of a natural number $n$ (the number of vertices), a list
 $E$ of pairs of natural numbers (the edges) and a natural number $K$ (the degree bound).
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.DegreeConstrainedSpanningTree.DegreeConstrainedSpanningTreeInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree/index.html#degree-constrained-spanning-tree-instanc).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.DegreeConstrainedSpanningTree.DegreeConstrainedSpanningTreeInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree/index.html#degree-constrained-spanning-tree-instanc).
 
 ## Well-formed DEGREE-CONSTRAINED SPANNING TREE instances
 
@@ -24,7 +24,7 @@ DEGREE-CONSTRAINED SPANNING TREE is well formed when $n > 0$, the list $E$ has n
 entries, and every pair $(u, v)$ in $E$ satisfies $u < n$, $v < n$ and $u \ne v$, with the
 reversed pair $(v, u)$ not in $E$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.DegreeConstrainedSpanningTree.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.DegreeConstrainedSpanningTree.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree/index.html#well-formed).
 
 ## Feasibility for DEGREE-CONSTRAINED SPANNING TREE
 
@@ -38,7 +38,7 @@ as one of its two components.
 For a well-formed instance this says that the graph of $E$ on $n$ vertices has a spanning tree in
 which every vertex has degree at most $K$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.DegreeConstrainedSpanningTree.DegreeConstrainedSpanningTreeFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree/index.html#degree-constrained-spanning-tree-feasibl).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.DegreeConstrainedSpanningTree.DegreeConstrainedSpanningTreeFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree/index.html#degree-constrained-spanning-tree-feasibl).
 
 ## DEGREE-CONSTRAINED SPANNING TREE as a decision problem
 
@@ -47,7 +47,7 @@ DEGREE-CONSTRAINED SPANNING TREE accepts a bitstring $x$ exactly when bitstring 
 a triple $(n, E, K)$ succeeds and returns an instance of DEGREE-CONSTRAINED SPANNING TREE that is
 both well formed and feasible; every bitstring that does not decode is rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.DegreeConstrainedSpanningTree.degreeConstrainedSpanningTreeDec`, a definition declared in [WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree/index.html#degree-constrained-spanning-tree-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.DegreeConstrainedSpanningTree.degreeConstrainedSpanningTreeDec`, a definition declared in [WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree/index.html#degree-constrained-spanning-tree-dec).
 
 ## DEGREE-CONSTRAINED SPANNING TREE is NP-complete
 
@@ -59,7 +59,7 @@ polynomial-time many-one reduction to it.
 
 - M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), DEGREE-CONSTRAINED SPANNING TREE (the `K = 2` slice is Hamiltonian path).
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.DegreeConstrainedSpanningTree.degreeConstrainedSpanningTree_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree/index.html#degree-constrained-spanning-tree-np-comp).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.DegreeConstrainedSpanningTree.degreeConstrainedSpanningTree_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/DegreeConstrainedSpanningTreeWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree/index.html#degree-constrained-spanning-tree-np-comp).
 
 ## Depends on
 
@@ -68,4 +68,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Degree-constrained spanning tree](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/degree-constrained-spanning-tree)

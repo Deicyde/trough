@@ -1,6 +1,6 @@
 # Computer Science
 
-7,010 results of ATLAS's vault, 7,002 proved and 8 stated but not proved, in this subject's topics.
+7,010 results of ATLAS's vault, 7,003 proved and 7 stated but not proved, in this subject's topics.
 
 Computer science formalizes algorithms, programming-language structures, data abstractions, and correctness properties.
 

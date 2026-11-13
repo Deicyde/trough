@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.openEqLocus, AlgebraicGeometry.factorsThrough_openEqLocus_iff, AlgebraicGeometry.zariskiInverseImageSectionsComparison, AlgebraicGeometry.zariskiInverseImageSectionsIso, AlgebraicGeometry.etaleInverseImageSectionsComparison, AlgebraicGeometry.etaleInverseImageSectionsIso, AlgebraicGeometry.smallSiteInverseImage_sections_and_isSheaf_fpqc, Stacks.EtaleCohomology.globalSectionsSmallEtaleInverseImageIso_of_flat_quasiCompact
+lean: AlgebraicGeometry.openEqLocus, AlgebraicGeometry.factorsThrough_openEqLocus_iff, AlgebraicGeometry.zariskiInverseImageSectionsComparison, AlgebraicGeometry.zariskiInverseImageSectionsIso, AlgebraicGeometry.etaleInverseImageSectionsComparison, AlgebraicGeometry.etaleInverseImageSectionsIso, AlgebraicGeometry.smallSiteInverseImage_sections_and_isSheaf_fpqc, Stacks.EtaleCohomology.isIso_globalSectionsSmallEtaleInverseImage_of_flat_quasiCompact
 statement: formalized
 proof: formalized
 ---
 
 # 59.39 Comparing topologies
 
-Section 59.39 of the Stacks Project, [Tag 09XL](https://stacks.math.columbia.edu/tag/09XL). 5 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.39 of the Stacks Project, [Tag 09XL](https://stacks.math.columbia.edu/tag/09XL). 5 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09XM, a lemma
 
 [Tag 09XM](https://stacks.math.columbia.edu/tag/09XM) in the Stacks Project.
 
-**`AlgebraicGeometry.openEqLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/OpenEqualityLocus.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/OpenEqualityLocus.lean#L405). The attribute's comment: “open locus”.
+**`AlgebraicGeometry.openEqLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/OpenEqualityLocus.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/OpenEqualityLocus.lean#L405). The attribute's comment: “open locus”.
 
 > **Stacks 09XM, the open locus.** The largest open subscheme of `S` on which two global
 > sections of a sheaf on the small étale site of `S` agree: the supremum of the opens through
@@ -24,7 +24,7 @@ Section 59.39 of the Stacks Project, [Tag 09XL](https://stacks.math.columbia.edu
 public def openEqLocus : (B.inclusion.obj S).Opens
 ```
 
-**`AlgebraicGeometry.factorsThrough_openEqLocus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/OpenEqualityLocus.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/OpenEqualityLocus.lean#L435). The attribute's comment: “universal property”.
+**`AlgebraicGeometry.factorsThrough_openEqLocus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/OpenEqualityLocus.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/OpenEqualityLocus.lean#L435). The attribute's comment: “universal property”.
 
 > **Stacks 09XM, the universal property.** A morphism of the big étale site factors through
 > the open equality locus exactly when the two sections agree after inverse image along the
@@ -42,7 +42,7 @@ public theorem factorsThrough_openEqLocus_iff (f : T ⟶ S) :
 
 [Tag 09XN](https://stacks.math.columbia.edu/tag/09XN) in the Stacks Project.
 
-**`AlgebraicGeometry.zariskiInverseImageSectionsComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiPullbackSections.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiPullbackSections.lean#L288). The attribute's comment: “pullback\_formula”.
+**`AlgebraicGeometry.zariskiInverseImageSectionsComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiPullbackSections.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiPullbackSections.lean#L288). The attribute's comment: “pullback\_formula”.
 
 > The section comparisons for all schemes over `S`, compatible with the canonical
 > small-pullback restriction maps. The family and the compatibility are chosen together.
@@ -67,7 +67,7 @@ public noncomputable def zariskiInverseImageSectionsComparison
             (e Y).hom.app F }
 ```
 
-**`AlgebraicGeometry.zariskiInverseImageSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiPullbackSections.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiPullbackSections.lean#L366). The attribute's comment: “pullback\_formula”.
+**`AlgebraicGeometry.zariskiInverseImageSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiPullbackSections.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiPullbackSections.lean#L366). The attribute's comment: “pullback\_formula”.
 
 > **Stacks 09XN, pullback formula (Zariski case).** For a sheaf `F` on the small Zariski site
 > of `S` and a scheme `f : X ⟶ S` over `S`, the sections of `π_S⁻¹F` at `X` are the global
@@ -88,7 +88,7 @@ public noncomputable def zariskiInverseImageSectionsIso
         (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.etaleInverseImageSectionsComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtalePullbackSections.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtalePullbackSections.lean#L245). The attribute's comment: “pullback\_formula”.
+**`AlgebraicGeometry.etaleInverseImageSectionsComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtalePullbackSections.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtalePullbackSections.lean#L245). The attribute's comment: “pullback\_formula”.
 
 > The section comparisons for all schemes over `S`, compatible with the canonical
 > small-pullback restriction maps. The family and the compatibility are chosen together.
@@ -113,7 +113,7 @@ public noncomputable def etaleInverseImageSectionsComparison
             (e Y).hom.app F }
 ```
 
-**`AlgebraicGeometry.etaleInverseImageSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtalePullbackSections.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtalePullbackSections.lean#L327). The attribute's comment: “pullback\_formula”.
+**`AlgebraicGeometry.etaleInverseImageSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtalePullbackSections.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtalePullbackSections.lean#L327). The attribute's comment: “pullback\_formula”.
 
 > **Stacks 09XN, pullback formula (étale case).** For a sheaf `F` on the small étale site of
 > `S` and a scheme `f : X ⟶ S` over `S`, the sections of `π_S⁻¹F` at `X` are the global sections
@@ -134,7 +134,7 @@ public noncomputable def etaleInverseImageSectionsIso
         (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.smallSiteInverseImage_sections_and_isSheaf_fpqc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SmallSitePullbackSectionsAndFpqcSheaf.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SmallSitePullbackSectionsAndFpqcSheaf.lean#L63).
+**`AlgebraicGeometry.smallSiteInverseImage_sections_and_isSheaf_fpqc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SmallSitePullbackSectionsAndFpqcSheaf.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/SmallSitePullbackSectionsAndFpqcSheaf.lean#L63).
 
 > **Stacks 09XN.** Let `S` be a scheme, let `τ` be the Zariski or the étale topology and let
 > `π_S : (Sch/S)_τ ⟶ S_τ` be the projection from the big `τ`-topos over `S` to the small
@@ -205,26 +205,7 @@ public noncomputable def smallSiteInverseImage_sections_and_isSheaf_fpqc :
 
 [Tag 0A3H](https://stacks.math.columbia.edu/tag/0A3H) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.globalSectionsSmallEtaleInverseImageIso_of_flat_quasiCompact`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FlatSections.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FlatSections.lean#L81). The attribute's comment: “Tag 0EZK -- the same conclusion for a universally submersive morphism with geometrically connected fibres -- is a separate cited tag and is carried as the declared hypothesis `hEZK`, following the 08W5 convention. The content supplied here is that a flat quasi-compact morphism with geometrically connected fibres is universally submersive, proved unconditionally as `universally_isQuotientMap_of_flat_quasiCompact`.”.
-
-> **Stacks Project, Tag 0A3H.** Pullback along a flat quasi-compact morphism with
-> geometrically connected fibres preserves global sections of every sheaf of sets on the small
-> étale site, naturally in the sheaf.
-
-```lean
-public def globalSectionsSmallEtaleInverseImageIso_of_flat_quasiCompact
-    {T S : Scheme.{u}} (f : T ⟶ S) [Flat f] [QuasiCompact f] [GeometricallyConnected f]
-    (hEZK : ∀ {X S' : Scheme.{u}} (g : X ⟶ S'), GeometricallyConnected g →
-      (topologically @Topology.IsQuotientMap : MorphismProperty Scheme.{u}).universally g →
-      (Sheaf.Γ (smallEtaleTopology S') (Type (max (u + 1) v)) ≅
-        smallEtaleInverseImage.{u, v} g ⋙
-          Sheaf.Γ (smallEtaleTopology X) (Type (max (u + 1) v)))) :
-    Sheaf.Γ (smallEtaleTopology S) (Type (max (u + 1) v)) ≅
-      smallEtaleInverseImage.{u, v} f ⋙
-        Sheaf.Γ (smallEtaleTopology T) (Type (max (u + 1) v))
-```
-
-**`Stacks.EtaleCohomology.isIso_globalSectionsSmallEtaleInverseImage_of_flat_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FlatSectionsCanonical.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FlatSectionsCanonical.lean#L60). The attribute's comment: “the form the source asserts: the canonical comparison on global sections, rather than a bare isomorphism of global-sections functors”.
+**`Stacks.EtaleCohomology.isIso_globalSectionsSmallEtaleInverseImage_of_flat_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FlatSectionsCanonical.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FlatSectionsCanonical.lean#L60). The attribute's comment: “the form the source asserts: the canonical comparison on global sections, rather than a bare isomorphism of global-sections functors”.
 
 > **Stacks Project, Tag 0A3H.** For `f : T ⟶ S` flat and quasi-compact with geometrically
 > connected fibres, the *canonical* comparison `Γ(S, F) ⟶ Γ(T, f⁻¹F)` is an isomorphism for every
@@ -240,7 +221,7 @@ public theorem isIso_globalSectionsSmallEtaleInverseImage_of_flat_quasiCompact
     IsIso (globalSectionsSmallEtaleInverseImage.{u, v} f)
 ```
 
-**`Stacks.EtaleCohomology.globalSectionsSmallEtaleInverseImageIso_of_flat_of_quasiCompact`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FlatSectionsCanonical.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FlatSectionsCanonical.lean#L73). The attribute's comment: “the natural isomorphism of global-sections functors, with no hypothesis beyond the source's”.
+**`Stacks.EtaleCohomology.globalSectionsSmallEtaleInverseImageIso_of_flat_of_quasiCompact`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FlatSectionsCanonical.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FlatSectionsCanonical.lean#L73). The attribute's comment: “the natural isomorphism of global-sections functors, with no hypothesis beyond the source's”.
 
 > **Stacks Project, Tag 0A3H.** Pullback along a flat quasi-compact morphism with
 > geometrically connected fibres preserves global sections of every sheaf of sets on the small
@@ -260,7 +241,7 @@ public def globalSectionsSmallEtaleInverseImageIso_of_flat_of_quasiCompact
 
 [Tag 0EZK](https://stacks.math.columbia.edu/tag/0EZK) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_globalSectionsSmallEtaleInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSections.lean, line 2480](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSections.lean#L2480). The attribute's comment: “corrected: Stacks erratum. The tag in the form the source asserts it, about the canonical comparison rather than a bare isomorphism of global-sections functors. The tag is false with only `f` submersive; see the counterexample in the docstring of globalSectionsSmallEtaleInverseImageIso”.
+**`Stacks.EtaleCohomology.isIso_globalSectionsSmallEtaleInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSections.lean, line 2480](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSections.lean#L2480). The attribute's comment: “corrected: Stacks erratum. The tag in the form the source asserts it, about the canonical comparison rather than a bare isomorphism of global-sections functors. The tag is false with only `f` submersive; see the counterexample in the docstring of globalSectionsSmallEtaleInverseImageIso”.
 
 > **Stacks Project, Tag 0EZK.** For `f` universally submersive with geometrically connected
 > fibres, the *canonical* comparison `Γ(S, F) ⟶ Γ(X, f⁻¹F)` is an isomorphism, naturally in the
@@ -282,7 +263,7 @@ public theorem isIso_globalSectionsSmallEtaleInverseImage
     IsIso (globalSectionsSmallEtaleInverseImage.{u, v} f)
 ```
 
-**`Stacks.EtaleCohomology.globalSectionsSmallEtaleInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSections.lean, line 2524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSections.lean#L2524). The attribute's comment: “corrected: Stacks erratum. The tag is false with only `f` submersive, since the proof's reduction is an etale base change and submersivity does not survive one; universal submersivity is assumed instead. Counterexample in characteristic 2: the homeomorphism Spec k[t,1/t] -> Spec \{g : g(0) = g(1)} and the double cover T = Spec A[z]/(z^2 + z + a) with a = t^2 + t, for which the sections downstairs are empty while there are two upstairs; see this declaration's docstring”.
+**`Stacks.EtaleCohomology.globalSectionsSmallEtaleInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSections.lean, line 2524](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSections.lean#L2524). The attribute's comment: “corrected: Stacks erratum. The tag is false with only `f` submersive, since the proof's reduction is an etale base change and submersivity does not survive one; universal submersivity is assumed instead. Counterexample in characteristic 2: the homeomorphism Spec k[t,1/t] -> Spec \{g : g(0) = g(1)} and the double cover T = Spec A[z]/(z^2 + z + a) with a = t^2 + t, for which the sections downstairs are empty while there are two upstairs; see this declaration's docstring”.
 
 > **Stacks Project, Tag 0EZK.** Pullback along a universally submersive morphism with
 > geometrically connected fibres preserves global sections of every sheaf of sets on the small
@@ -318,7 +299,7 @@ public def globalSectionsSmallEtaleInverseImageIso
         Sheaf.Γ (smallEtaleTopology X) (Type (max (u + 1) v))
 ```
 
-**`Stacks.EtaleCohomology.isIso_globalSectionsSmallEtaleInverseImage_of_etaleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSectionsEtaleBaseChange.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSectionsEtaleBaseChange.lean#L51). The attribute's comment: “corrected: Stacks erratum: f submersive after every etale base change, the exact corrected hypothesis; the source's plain submersivity of f is not enough, see the counterexample in the docstring of globalSectionsSmallEtaleInverseImageIso. The universally submersive special case is isIso\_globalSectionsSmallEtaleInverseImage”.
+**`Stacks.EtaleCohomology.isIso_globalSectionsSmallEtaleInverseImage_of_etaleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSectionsEtaleBaseChange.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSectionsEtaleBaseChange.lean#L51). The attribute's comment: “corrected: Stacks erratum: f submersive after every etale base change, the exact corrected hypothesis; the source's plain submersivity of f is not enough, see the counterexample in the docstring of globalSectionsSmallEtaleInverseImageIso. The universally submersive special case is isIso\_globalSectionsSmallEtaleInverseImage”.
 
 > **Stacks Project, Tag 0EZK.** Let `f : X ⟶ S` have geometrically connected fibres and be
 > submersive after every étale base change: for every étale `g : V ⟶ S` the projection
@@ -334,7 +315,7 @@ public theorem isIso_globalSectionsSmallEtaleInverseImage_of_etaleBaseChange
     IsIso (globalSectionsSmallEtaleInverseImage.{u, v} f)
 ```
 
-**`Stacks.EtaleCohomology.globalSectionsSmallEtaleInverseImageIsoOfEtaleBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSectionsEtaleBaseChange.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSectionsEtaleBaseChange.lean#L77). The attribute's comment: “corrected: Stacks erratum: f submersive after every etale base change, the exact corrected hypothesis; the source's plain submersivity of f is not enough, see the counterexample in the docstring of globalSectionsSmallEtaleInverseImageIso. The universally submersive special case is globalSectionsSmallEtaleInverseImageIso”.
+**`Stacks.EtaleCohomology.globalSectionsSmallEtaleInverseImageIsoOfEtaleBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSectionsEtaleBaseChange.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubmersiveSectionsEtaleBaseChange.lean#L77). The attribute's comment: “corrected: Stacks erratum: f submersive after every etale base change, the exact corrected hypothesis; the source's plain submersivity of f is not enough, see the counterexample in the docstring of globalSectionsSmallEtaleInverseImageIso. The universally submersive special case is globalSectionsSmallEtaleInverseImageIso”.
 
 > **Stacks Project, Tag 0EZK.** Pullback along a morphism with geometrically connected fibres
 > that is submersive after every étale base change preserves global sections of every sheaf of
@@ -356,7 +337,7 @@ public noncomputable def globalSectionsSmallEtaleInverseImageIsoOfEtaleBaseChang
 
 [Tag 0A3I](https://stacks.math.columbia.edu/tag/0A3I) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.globalSectionsSmallEtaleInverseImageIso_of_isSepClosed`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SeparablyClosedBaseFieldSections.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SeparablyClosedBaseFieldSections.lean#L41). References: SGA 4 XVI (1.5), “partial”.
+**`Stacks.EtaleCohomology.globalSectionsSmallEtaleInverseImageIso_of_isSepClosed`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SeparablyClosedBaseFieldSections.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SeparablyClosedBaseFieldSections.lean#L41). References: SGA 4 XVI (1.5), “partial”.
 
 > For a scheme `S` over a separably closed field `k` and any field extension `K/k`, pullback
 > along the projection `S ×_{Spec k} Spec K ⟶ S` preserves global sections of every sheaf of sets on
@@ -381,4 +362,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.39, Tag 09XL](https://stacks.math.columbia.edu/tag/09XL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

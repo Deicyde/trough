@@ -7,7 +7,7 @@ statement: formalized
 
 # Counting integers in residue classes modulo primes
 
-20 results, 8 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html).
+20 results, 8 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html).
 
 ## Ones-diagonal determinant
 
@@ -15,7 +15,7 @@ For natural numbers $p_1, \dots, p_k$, the determinant
 $A_k(p_1, \dots, p_k)$ is the determinant of the $k \times k$ integer matrix with
 $p_1, \dots, p_k$ on the diagonal and $1$ in every other entry.
 
-Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.onesDiagDet`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#ones-diag-det).
+Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.onesDiagDet`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#ones-diag-det).
 
 ## Bordered ones-diagonal matrix
 
@@ -25,7 +25,7 @@ $1 \le i \le k$, has $p_i$ in column $i$ and $1$ in every other column. Equivale
 $k \times k$ matrix with diagonal entries $p_1, \dots, p_k$ and all other entries $1$, with a
 column of ones appended on the right and then a row of ones placed on top.
 
-Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.borderedOnesDiag`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#bordered-ones-diag).
+Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.borderedOnesDiag`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#bordered-ones-diag).
 
 ## Bordered ones-diagonal determinant
 
@@ -34,7 +34,7 @@ $F_k(p_1, \dots, p_k)$ is $(-1)^k$ times the determinant of the bordered ones-di
 $p_1, \dots, p_k$: the $(k+1) \times (k+1)$ integer matrix whose first row consists of ones and
 whose row $i + 1$, for $1 \le i \le k$, has $p_i$ in column $i$ and $1$ in every other column.
 
-Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.borderedOnesDiagDet`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#bordered-ones-diag-det).
+Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.borderedOnesDiagDet`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#bordered-ones-diag-det).
 
 ## The first primes
 
@@ -42,7 +42,7 @@ For a natural number $k$, the $k$-tuple whose entry with index $i$, for
 $0 \le i < k$, is the $(i+1)$-st prime; that is, the first $k$ primes $2, 3, 5, \dots$ in
 increasing order.
 
-Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.firstPrimes`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#first-primes).
+Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.firstPrimes`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#first-primes).
 
 ## Residue hit count
 
@@ -50,7 +50,7 @@ For natural numbers $p_1, \dots, p_k$, $r_1, \dots, r_k$ and $n$, the
 residue hit count $\gamma(n)$ is the number of indices $i$ with $n \equiv r_i \pmod{p_i}$, that
 is, the number of the residue classes $r_i \bmod p_i$ that contain $n$.
 
-Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.residueHitCount`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#residue-hit-count).
+Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.residueHitCount`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#residue-hit-count).
 
 ## Number of available integers
 
@@ -60,7 +60,7 @@ if $\gamma(n) \le 1$. This is the number of available integers $n$ with
 $1 \le n \le p_1 p_2 \cdots p_k$. For the first $k$ primes it is the count written
 $\mathrm{av}(k)$.
 
-Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#available-count).
+Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#available-count).
 
 ## Free count
 
@@ -71,7 +71,7 @@ integers $n$ with $1 \le n \le p_1 \cdots p_k$ and $\gamma(n) = 0$.
 When $p_1, \dots, p_k$ are the first $k$ primes, this is the count $\mathrm{free}(k)$ of
 Pausinger's paper.
 
-Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.freeCount`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#free-count).
+Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.freeCount`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#free-count).
 
 ## Occupied count
 
@@ -82,7 +82,7 @@ the number of integers $n$ with $1 \le n \le p_1 \cdots p_k$ and $\gamma(n) > 1$
 When $p_1, \dots, p_k$ are the first $k$ primes, this is the count $\mathrm{occ}(k)$ of
 Pausinger's paper.
 
-Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.occupiedCount`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#occupied-count).
+Formalized by `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.occupiedCount`, a definition declared in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#occupied-count).
 
 ## Recurrence for the bordered determinants of the first primes
 
@@ -96,7 +96,7 @@ $1$ in every other column. Then $f_k = (p_k - 1) f_{k-1}$.
 
 - Florian Pausinger, "Counting Appearances of Integers in Sets of Arithmetic Progressions", Lemma 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.borderedOnesDiagDet_firstPrimes_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#bordered-ones-diag-det-first-primes-recu).
+Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.borderedOnesDiagDet_firstPrimes_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#bordered-ones-diag-det-first-primes-recu).
 
 ## Lemma 2, determinant recurrence
 
@@ -111,7 +111,7 @@ Then for every $k \ge 2$, $a_k = f_{k-1} + (p_k - 1) \cdot a_{k-1}$.
 
 - Florian Pausinger, "Counting Appearances of Integers in Sets of Arithmetic Progressions", Lemma 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.onesDiagDet_firstPrimes_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#ones-diag-det-first-primes-recurrence).
+Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.onesDiagDet_firstPrimes_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#ones-diag-det-first-primes-recurrence).
 
 ## Lemma 3, occupied recurrence
 
@@ -130,7 +130,7 @@ $\mathrm{occ}(k+1) = P_k + (p_{k+1} - 1) \cdot \mathrm{occ}(k) - \mathrm{free}(k
 
 - Florian Pausinger, "Counting Appearances of Integers in Sets of Arithmetic Progressions", Lemma 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.occupiedCount_firstPrimes_succ_add_free` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#occupied-count-first-primes-succ-add-fre).
+Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.occupiedCount_firstPrimes_succ_add_free` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#occupied-count-first-primes-succ-add-fre).
 
 ## Lemma 3, free recurrence
 
@@ -144,7 +144,7 @@ $\mathrm{free}(k+1) = (p_{k+1} - 1) \cdot \mathrm{free}(k)$.
 
 - Florian Pausinger, "Counting Appearances of Integers in Sets of Arithmetic Progressions", Lemma 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.freeCount_firstPrimes_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#free-count-first-primes-succ).
+Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.freeCount_firstPrimes_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#free-count-first-primes-succ).
 
 ## Recurrence for the number of available integers
 
@@ -160,7 +160,7 @@ $\mathrm{av}(k+1) = (p_{k+1} - 1) \cdot \mathrm{av}(k) + \mathrm{free}(k)$.
 
 - Florian Pausinger, "Counting Appearances of Integers in Sets of Arithmetic Progressions", Lemma 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount_firstPrimes_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#available-count-first-primes-succ).
+Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount_firstPrimes_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#available-count-first-primes-succ).
 
 ## Available integers for the first primes
 
@@ -175,7 +175,7 @@ $p_1, \dots, p_k$ and all other entries $1$.
 
 - Florian Pausinger, "Counting Appearances of Integers in Sets of Arithmetic Progressions", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount_firstPrimes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#available-count-first-primes).
+Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount_firstPrimes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#available-count-first-primes).
 
 ## Theorem 1, free count
 
@@ -190,7 +190,7 @@ every other column.
 
 - Florian Pausinger, "Counting Appearances of Integers in Sets of Arithmetic Progressions", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.freeCount_firstPrimes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#free-count-first-primes).
+Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.freeCount_firstPrimes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#free-count-first-primes).
 
 ## Available integers for two distinct primes
 
@@ -204,7 +204,7 @@ entries $p, q$ and both other entries $1$.
 
 - Florian Pausinger, "Counting Appearances of Integers in Sets of Arithmetic Progressions", Lemma 5.
 
-Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount_two_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#available-count-two-primes).
+Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount_two_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#available-count-two-primes).
 
 ## Lemma 5, free count
 
@@ -218,7 +218,7 @@ $$F_2(p, q) = \det \begin{pmatrix} 1 & 1 & 1 \\ p & 1 & 1 \\ 1 & q & 1 \end{pmat
 
 - Florian Pausinger, "Counting Appearances of Integers in Sets of Arithmetic Progressions", Lemma 5.
 
-Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.freeCount_two_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#free-count-two-primes).
+Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.freeCount_two_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#free-count-two-primes).
 
 ## Available integers for three distinct primes
 
@@ -233,7 +233,7 @@ other entries $1$.
 
 - Florian Pausinger, "Counting Appearances of Integers in Sets of Arithmetic Progressions", Lemma 6.
 
-Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount_three_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#available-count-three-primes).
+Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount_three_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#available-count-three-primes).
 
 ## Available integers for distinct primes
 
@@ -247,7 +247,7 @@ $k \times k$ matrix with diagonal entries $p_1, \dots, p_k$ and all other entrie
 
 - Florian Pausinger, "Counting Appearances of Integers in Sets of Arithmetic Progressions", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount_distinct_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#available-count-distinct-primes).
+Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount_distinct_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#available-count-distinct-primes).
 
 ## Theorem 2, free count
 
@@ -262,7 +262,7 @@ column $i$ and $1$ in every other column.
 
 - Florian Pausinger, "Counting Appearances of Integers in Sets of Arithmetic Progressions", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.freeCount_distinct_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#free-count-distinct-primes).
+Stated but not proved: `MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.freeCount_distinct_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CountingAppearancesProgressionsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html#free-count-distinct-primes).
 
 ## Depends on
 
@@ -271,4 +271,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Counting integers in residue classes modulo primes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/sieve-methods/counting-integers-in-residue-classes-modulo-prim)

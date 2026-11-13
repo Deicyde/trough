@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.21 Generically finite morphisms
 
-Section 68.21 of the Stacks Project, [Tag 0BBA](https://stacks.math.columbia.edu/tag/0BBA). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.21 of the Stacks Project, [Tag 0BBA](https://stacks.math.columbia.edu/tag/0BBA). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ACZ, a lemma
 
 [Tag 0ACZ](https://stacks.math.columbia.edu/tag/0ACZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.finite_fieldFiber_iff_quasiFiniteAt_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean#L493). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.finite_fieldFiber_iff_quasiFiniteAt_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean, line 492](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean#L492). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 0ACZ, conditions (1) and (2).** Let `f : X ⟶ Y` be a quasi-separated morphism of
 > algebraic spaces over `S` of finite type and let `p` be a field-valued representative of a
@@ -32,7 +32,7 @@ theorem finite_fieldFiber_iff_quasiFiniteAt_fiber (hX : IsAlgebraicSpace B S hS 
         IsQuasiFiniteAt B S hS f x
 ```
 
-**`AlgebraicGeometry.Space.finite_fieldFiber_iff_finite_setFiber_of_decent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean#L515). The attribute's comment: “condition (4) for a decent target”.
+**`AlgebraicGeometry.Space.finite_fieldFiber_iff_finite_setFiber_of_decent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean, line 514](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean#L514). The attribute's comment: “condition (4) for a decent target”.
 
 > **Stacks 0ACZ, condition (4) for a decent target.** Let `f : X ⟶ Y` be a quasi-separated
 > morphism of algebraic spaces over `S` of finite type with `Y` a decent algebraic space, and
@@ -50,7 +50,7 @@ theorem finite_fieldFiber_iff_finite_setFiber_of_decent (hX : IsAlgebraicSpace B
       Set.Finite {x : points B S hS X | pointsMap B S hS X f x = y}
 ```
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_isFinite_pullback_snd_of_finite_fieldFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean, line 1360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean#L1360). The attribute's comment: “conditions (1) and (2) imply condition (3)”.
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_isFinite_pullback_snd_of_finite_fieldFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean, line 1359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean#L1359). The attribute's comment: “conditions (1) and (2) imply condition (3)”.
 
 > **Stacks 0ACZ, conditions (1) and (2) imply condition (3).** Let `f : X ⟶ Y` be a
 > quasi-separated morphism of algebraic spaces over `S` of finite type, let `y` be a point of
@@ -88,7 +88,7 @@ theorem exists_isOpenSubspace_isFinite_pullback_snd_of_finite_fieldFiber
         IsFinite B S hS (pullback.snd f V.ι)
 ```
 
-**`AlgebraicGeometry.Space.isQuasiFiniteAt_of_isFinite_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean, line 1401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean#L1401). The attribute's comment: “condition (3) implies condition (2)”.
+**`AlgebraicGeometry.Space.isQuasiFiniteAt_of_isFinite_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean, line 1400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean#L1400). The attribute's comment: “condition (3) implies condition (2)”.
 
 > **Stacks 0ACZ, condition (3) implies condition (2).** Let `f : X ⟶ Y` be a morphism of
 > algebraic spaces over `S` which is locally of finite type and let `V ⊂ Y` be an open subspace
@@ -116,7 +116,7 @@ theorem isQuasiFiniteAt_of_isFinite_pullback_snd
     IsQuasiFiniteAt B S hS f x
 ```
 
-**`AlgebraicGeometry.Space.finite_fieldFiber_iff_exists_isOpenSubspace_isFinite_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean, line 1439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean#L1439). The attribute's comment: “conditions (1) and (3)”.
+**`AlgebraicGeometry.Space.finite_fieldFiber_iff_exists_isOpenSubspace_isFinite_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean, line 1438](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean#L1438). The attribute's comment: “conditions (1) and (3)”.
 
 > **Stacks 0ACZ, conditions (1) and (3).** Let `f : X ⟶ Y` be a quasi-separated morphism of
 > algebraic spaces over `S` of finite type, let `y` be a point of `|Y|` whose local ring has
@@ -151,7 +151,7 @@ theorem finite_fieldFiber_iff_exists_isOpenSubspace_isFinite_pullback_snd
 
 [Tag 0AD0](https://stacks.math.columbia.edu/tag/0AD0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.finite_setFibre_iff_finite_fieldFibre_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean#L161). The attribute's comment: “the equivalence of conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.finite_setFibre_iff_finite_fieldFibre_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean#L162). The attribute's comment: “the equivalence of conditions (1) and (2)”.
 
 > **Stacks 0AD0, the equivalence of conditions (1) and (2).** Let `f : X ⟶ Y` be a
 > quasi-separated morphism of algebraic spaces over `S` which is locally of finite type, let `Y`
@@ -181,7 +181,7 @@ theorem finite_setFibre_iff_finite_fieldFibre_of_isAbsolutelyQuasiSeparated
       (Set.univ : Set (points B S hS (fieldFibre B S hS f p))).Finite
 ```
 
-**`AlgebraicGeometry.Space.finite_setFibre_of_isFinite_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean#L193). The attribute's comment: “condition (3) implies condition (1)”.
+**`AlgebraicGeometry.Space.finite_setFibre_of_isFinite_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean#L194). The attribute's comment: “condition (3) implies condition (1)”.
 
 > **Stacks 0AD0, condition (3) implies condition (1).** Let `f : X ⟶ Y` be a morphism of
 > presheaves on the big fppf site of `S`, let `y` be a point of `|Y|`, let `U ⊂ X` and `V ⊂ Y`
@@ -211,7 +211,7 @@ theorem finite_setFibre_of_isFinite_openRestriction (f : X ⟶ Y) (y : points B 
     {x : points B S hS X | pointsMap B S hS X f x = y}.Finite
 ```
 
-**`AlgebraicGeometry.Space.finite_fieldFibre_of_isFinite_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean#L231). The attribute's comment: “condition (3) implies condition (2)”.
+**`AlgebraicGeometry.Space.finite_fieldFibre_of_isFinite_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean#L232). The attribute's comment: “condition (3) implies condition (2)”.
 
 > **Stacks 0AD0, condition (3) implies condition (2).** In the situation of condition (3) of
 > the tag, with `f` in addition quasi-separated and locally of finite type and `Y` a
@@ -239,7 +239,7 @@ theorem finite_fieldFibre_of_isFinite_openRestriction (hX : IsAlgebraicSpace B S
     (Set.univ : Set (points B S hS (fieldFibre B S hS f p))).Finite
 ```
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_isFinite_openRestriction_of_finite_setFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean#L447). The attribute's comment: “conditions (1) and (2) imply condition (3)”.
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_isFinite_openRestriction_of_finite_setFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFiniteQuasiSeparated.lean#L448). The attribute's comment: “conditions (1) and (2) imply condition (3)”.
 
 > **Stacks 0AD0, conditions (1) and (2) imply condition (3).** Let `f : X ⟶ Y` be a
 > quasi-separated morphism of algebraic spaces over `S` which is locally of finite type, let `Y`
@@ -284,7 +284,7 @@ theorem exists_isOpenSubspace_isFinite_openRestriction_of_finite_setFibre
 
 [Tag 0BBB](https://stacks.math.columbia.edu/tag/0BBB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quasiFiniteAt_over_codimensionZeroPoint_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean#L293).
+**`AlgebraicGeometry.Space.quasiFiniteAt_over_codimensionZeroPoint_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericallyFinite.lean#L295).
 
 > **Stacks 0BBB.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` locally of
 > finite type and let `y` be a point of `Y` whose local ring has dimension zero. The following
@@ -309,7 +309,7 @@ theorem quasiFiniteAt_over_codimensionZeroPoint_tfae
 
 [Tag 0BBC](https://stacks.math.columbia.edu/tag/0BBC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isDenseOpenSubspace_isFinite_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteOverDenseOpenSubspace.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteOverDenseOpenSubspace.lean#L233).
+**`AlgebraicGeometry.Space.exists_isDenseOpenSubspace_isFinite_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteOverDenseOpenSubspace.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteOverDenseOpenSubspace.lean#L234).
 
 > **Stacks 0BBC.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is
 > locally of finite type, and write `X⁰` and `Y⁰` for the sets of points of `|X|` and `|Y|`
@@ -360,4 +360,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.21, Tag 0BBA](https://stacks.math.columbia.edu/tag/0BBA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

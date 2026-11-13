@@ -8,13 +8,13 @@ proof: formalized
 
 # 84.4 Proper base change
 
-Section 84.4 of the Stacks Project, [Tag 0DFW](https://stacks.math.columbia.edu/tag/0DFW). 9 tags here are carried by 10 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 84.4 of the Stacks Project, [Tag 0DFW](https://stacks.math.columbia.edu/tag/0DFW). 9 tags here are carried by 10 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DFX, a lemma
 
 [Tag 0DFX](https://stacks.math.columbia.edu/tag/0DFX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.unit_comp_smallToposDescentMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleDescentFork.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleDescentFork.lean#L92). The attribute's comment: “the unit equalizes the two restrictions”.
+**`AlgebraicGeometry.Space.unit_comp_smallToposDescentMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleDescentFork.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleDescentFork.lean#L92). The attribute's comment: “the unit equalizes the two restrictions”.
 
 > **Stacks 0DFX.** The unit of `f` followed by the restriction along `p` is the unit of
 > `p ≫ f`.
@@ -30,7 +30,7 @@ theorem unit_comp_smallToposDescentMap {P Y X : AlgebraicSpaces B S hS}
       (smallToposMorphism B S hS (p ≫ f)).adj.unit.app F
 ```
 
-**`AlgebraicGeometry.Space.unit_equalizes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleDescentUnit.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleDescentUnit.lean#L135). The attribute's comment: “the unit equalizes the two restrictions”.
+**`AlgebraicGeometry.Space.unit_equalizes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleDescentUnit.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleDescentUnit.lean#L135). The attribute's comment: “the unit equalizes the two restrictions”.
 
 > **Stacks 0DFX.** The fork of Stacks 0DFX commutes: the adjunction unit
 > `F ⟶ f_* f⁻¹ F` has equal composites with the two restriction maps `f_* f⁻¹ F ⟶ g_* g⁻¹ F`
@@ -51,7 +51,7 @@ theorem unit_equalizes {Y X : AlgebraicSpaces B S hS} (f : Y ⟶ X)
           (AlgebraicSpaces.isPullback_fiberProduct B S hS f f).w.symm F
 ```
 
-**`AlgebraicGeometry.Space.nonempty_isLimit_unitFork_of_isProper_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperSurjectiveEqualizer.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperSurjectiveEqualizer.lean#L70).
+**`AlgebraicGeometry.Space.nonempty_isLimit_unitFork_of_isProper_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperSurjectiveEqualizer.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperSurjectiveEqualizer.lean#L70).
 
 > **Stacks 0DFX.** Let `f : Y ⟶ X` be a surjective proper morphism of algebraic spaces over
 > `S`, let `F` be a sheaf on `X_étale` (the spaces-étale site of `X`, Stacks 03G1), and let
@@ -86,7 +86,7 @@ theorem nonempty_isLimit_unitFork_of_isProper_isSurjective {X Y : AlgebraicSpace
 
 [Tag 0DFY](https://stacks.math.columbia.edu/tag/0DFY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_globalSectionsRestriction_closedFibre_of_henselianPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperHenselianPairSections.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperHenselianPairSections.lean#L162).
+**`AlgebraicGeometry.Space.isIso_globalSectionsRestriction_closedFibre_of_henselianPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperHenselianPairSections.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperHenselianPairSections.lean#L170).
 
 > **[Stacks, Tag 0DFY].** Let `(A, I)` be a henselian pair, let `X` be an algebraic space over
 > `A` whose structure morphism `f : X ⟶ Spec A` is proper, and let `i : X₀ ⟶ X` be the inclusion of
@@ -104,7 +104,7 @@ theorem isIso_globalSectionsRestriction_closedFibre_of_henselianPair (hI : Hense
 
 [Tag 0DFZ](https://stacks.math.columbia.edu/tag/0DFZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_globalSectionsRestriction_closedFibre_of_henselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperHenselianLocalSections.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperHenselianLocalSections.lean#L51). References: SGA 4 XII (5.5), “more general”.
+**`AlgebraicGeometry.Space.isIso_globalSectionsRestriction_closedFibre_of_henselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperHenselianLocalSections.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperHenselianLocalSections.lean#L51). References: SGA 4 XII (5.5), “more general”.
 
 > **[Stacks, Tag 0DFZ].** Let `A` be a henselian local ring, let `X` be an algebraic space over
 > `A` whose structure morphism `f : X ⟶ Spec A` is proper, and let `i : X₀ ⟶ X` be the inclusion of
@@ -123,7 +123,7 @@ theorem isIso_globalSectionsRestriction_closedFibre_of_henselianLocalRing
 
 [Tag 0DG0](https://stacks.math.columbia.edu/tag/0DG0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_properBaseChangeMap_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperBaseChangeSmallEtale.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperBaseChangeSmallEtale.lean#L244).
+**`AlgebraicGeometry.Space.isIso_properBaseChangeMap_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperBaseChangeSmallEtale.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperBaseChangeSmallEtale.lean#L244).
 
 > Let `S` be a scheme, let `f : X ⟶ Y` and `g : Y' ⟶ Y` be morphisms of algebraic spaces over
 > `S` with `f` proper, and let
@@ -148,7 +148,7 @@ theorem isIso_properBaseChangeMap_of_isProper (f : X ⟶ Y) (hf : IsProper B S h
 
 [Tag 0DG1](https://stacks.math.columbia.edu/tag/0DG1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.bijective_geometricFibreSectionsMap_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperGeometricFibreSections.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperGeometricFibreSections.lean#L117).
+**`AlgebraicGeometry.Space.bijective_geometricFibreSectionsMap_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperGeometricFibreSections.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/ProperGeometricFibreSections.lean#L118).
 
 > **[Stacks, Tag 0DG1].** Let `S` be a scheme, let `f : Y ⟶ X` be a proper morphism of
 > algebraic spaces over `S` and let `x̄` be a geometric point of `X`, with geometric fibre
@@ -172,7 +172,7 @@ theorem bijective_geometricFibreSectionsMap_of_isProper (f : Y ⟶ X)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.BigEtaleSpaceSite.isIso_spacesEtaleDerivedBaseChange_app_singleFunctor_of_isProper`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleTorsionDerivedPushforwardUnconditional.lean#L78), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChange.lean, line 15](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChange.lean#L15) (StacksFrontier): “proper base change for algebraic spaces: g⁻¹ R f\_* F ≅ R f'\_* (g')⁻¹ F for f proper and F an abelian torsion sheaf”.
+- [`AlgebraicGeometry.BigEtaleSpaceSite.isIso_spacesEtaleDerivedBaseChange_app_singleFunctor_of_isProper`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleTorsionDerivedPushforwardUnconditional.lean#L77), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChange.lean, line 15](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChange.lean#L15) (StacksFrontier): “proper base change for algebraic spaces: g⁻¹ R f\_* F ≅ R f'\_* (g')⁻¹ F for f proper and F an abelian torsion sheaf”.
 
 ## Tag 0DG3, a lemma
 
@@ -180,13 +180,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.BigEtaleSpaceSite.isIso_spacesEtaleDerivedBaseChange_app_of_isProper`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleTorsionDerivedPushforwardUnconditional.lean#L64), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChangeBoundedBelow.lean, line 15](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChangeBoundedBelow.lean#L15) (StacksFrontier): “proper base change for algebraic spaces: g⁻¹ R f\_* E ≅ R f'\_* (g')⁻¹ E for f proper and E bounded below with torsion cohomology sheaves”.
+- [`AlgebraicGeometry.BigEtaleSpaceSite.isIso_spacesEtaleDerivedBaseChange_app_of_isProper`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleTorsionDerivedPushforwardUnconditional.lean#L63), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChangeBoundedBelow.lean, line 15](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChangeBoundedBelow.lean#L15) (StacksFrontier): “proper base change for algebraic spaces: g⁻¹ R f\_* E ≅ R f'\_* (g')⁻¹ E for f proper and E bounded below with torsion cohomology sheaves”.
 
 ## Tag 0DG4, a lemma
 
 [Tag 0DG4](https://stacks.math.columbia.edu/tag/0DG4) in the Stacks Project.
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.abelianSheafFiberHomologyDerivedPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/GeometricPointStalkProperBaseChange.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/GeometricPointStalkProperBaseChange.lean#L62). The attribute's comment: “(2)”. References: SGA 4 XVI (2.1), “more general”; SGA 4 XVI (2.2), “more general”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.abelianSheafFiberHomologyDerivedPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/GeometricPointStalkProperBaseChange.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/GeometricPointStalkProperBaseChange.lean#L62). The attribute's comment: “(2)”. References: SGA 4 XVI (2.1), “more general”; SGA 4 XVI (2.2), “more general”.
 
 > Let `f : Y ⟶ X` be a proper morphism of algebraic spaces over a
 > scheme `S` and `x̄ : Spec Ω ⟶ X` a geometric point, with geometric fibre `Y_x̄ = Y ×_X Spec Ω`
@@ -210,7 +210,7 @@ def abelianSheafFiberHomologyDerivedPushforwardIso
             E))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.abelianSheafFiberRightDerivedPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/GeometricPointStalkProperBaseChange.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/GeometricPointStalkProperBaseChange.lean#L90). The attribute's comment: “(1)”. References: SGA 4 XII (5.2), “more general”; SGA 4 XVI (2.1), “more general”; SGA 4 XVI (2.2), “more general”; SGA 4½ Arcata (4.1.1), “more general”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.abelianSheafFiberRightDerivedPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/GeometricPointStalkProperBaseChange.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/GeometricPointStalkProperBaseChange.lean#L91). The attribute's comment: “(1)”. References: SGA 4 XII (5.2), “more general”; SGA 4 XVI (2.1), “more general”; SGA 4 XVI (2.2), “more general”; SGA 4½ Arcata (4.1.1), “more general”.
 
 > Let `f : Y ⟶ X` be a proper morphism of algebraic spaces over a
 > scheme `S` and `x̄ : Spec Ω ⟶ X` a geometric point, with geometric fibre `Y_x̄ = Y ×_X Spec Ω`
@@ -233,7 +233,7 @@ def abelianSheafFiberRightDerivedPushforwardIso
 
 [Tag 0DG5](https://stacks.math.columbia.edu/tag/0DG5) in the Stacks Project.
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.spacesEtaleCohomologyRestrictionMap_bijective_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesSeparablyClosedFieldExtension.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesSeparablyClosedFieldExtension.lean#L126). References: SGA 4 XII (5.4), “more general”; SGA 4 XVI (1.6), “Abelian clause”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.spacesEtaleCohomologyRestrictionMap_bijective_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesSeparablyClosedFieldExtension.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesSeparablyClosedFieldExtension.lean#L126). References: SGA 4 XII (5.4), “more general”; SGA 4 XVI (1.6), “Abelian clause”.
 
 > **Étale cohomology of a proper algebraic space does not change under an extension of
 > separably closed ground fields**. Let `K/k` be an extension of separably closed fields and
@@ -267,4 +267,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 84.4, Tag 0DFW](https://stacks.math.columbia.edu/tag/0DFW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

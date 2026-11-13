@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.18 Derived pullback
 
-Section 21.18 of the Stacks Project, [Tag 06YV](https://stacks.math.columbia.edu/tag/06YV). 8 tags here are carried by 39 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.18 of the Stacks Project, [Tag 06YV](https://stacks.math.columbia.edu/tag/06YV). 8 tags here are carried by 39 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G7E, a lemma
 
 [Tag 0G7E](https://stacks.math.columbia.edu/tag/0G7E) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.isFlat_componentModulesRestrictionComplex_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean#L195). The attribute's comment: “the flat-terms clause, for restriction to a simplicial component”.
+**`CategoryTheory.SimplicialSiteSituation.isFlat_componentModulesRestrictionComplex_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean#L195). The attribute's comment: “the flat-terms clause, for restriction to a simplicial component”.
 
 > **The flat-terms clause of Stacks 0G7E at `g_n`.** The restriction to a component of a
 > complex of `O`-modules with flat terms has flat terms.
@@ -29,7 +29,7 @@ theorem isFlat_componentModulesRestrictionComplex_X
       (((S.componentModulesRestrictionComplex O n).obj K).X i)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.kFlat_componentModulesRestrictionComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean#L210). The attribute's comment: “the K-flatness clause, for restriction to a simplicial component”.
+**`CategoryTheory.SimplicialSiteSituation.kFlat_componentModulesRestrictionComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean#L210). The attribute's comment: “the K-flatness clause, for restriction to a simplicial component”.
 
 > **The K-flatness clause of Stacks 0G7E at `g_n`.** The restriction to a component of a
 > K-flat complex of `O`-modules with flat terms is K-flat.
@@ -37,14 +37,14 @@ theorem isFlat_componentModulesRestrictionComplex_X
 ```lean
 theorem kFlat_componentModulesRestrictionComplex
     (K : CochainComplex (S.totalRingedTopos O).Modules ℤ)
-    (hK : Stacks.SheafOfModules.KFlat.KFlat (S.totalRingedTopos O).O K)
+    (hK : Stacks.SheafOfModules.KFlat (S.totalRingedTopos O).O K)
     (hflatK : ∀ i : ℤ, AlgebraicGeometry.SheafOfModules.IsFlat.{u, u, u, u}
       (O := (S.totalRingedTopos O).O) (K.X i)) :
-    Stacks.SheafOfModules.KFlat.KFlat (S.componentRingedTopos O n).O
+    Stacks.SheafOfModules.KFlat (S.componentRingedTopos O n).O
       ((S.componentModulesRestrictionComplex O n).obj K)
 ```
 
-**`Stacks.Sheaves.RingedToposModules.pullbackModules_preservesZeroMorphisms`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DegreewisePullbackOfComplexes.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DegreewisePullbackOfComplexes.lean#L60). The attribute's comment: “degreewise pullback”.
+**`Stacks.Sheaves.RingedToposModules.pullbackModules_preservesZeroMorphisms`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DegreewisePullbackOfComplexes.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DegreewisePullbackOfComplexes.lean#L60). The attribute's comment: “degreewise pullback”.
 
 > Pullback of sheaves of modules along a morphism of ringed topoi preserves zero
 > morphisms: it is a left adjoint by Stacks 03D7, and a left adjoint between categories with
@@ -56,7 +56,7 @@ instance pullbackModules_preservesZeroMorphisms (f : RingedToposHom X Y) :
     (f.pullbackModules).PreservesZeroMorphisms
 ```
 
-**`Stacks.Sheaves.DerivedPullback.KFlatPullback.pullbackTopos_preservesZeroMorphisms`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/KFlatPullbackAlongRingedTopoi.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/KFlatPullbackAlongRingedTopoi.lean#L185). The attribute's comment: “degreewise pullback”.
+**`Stacks.Sheaves.DerivedPullback.KFlatPullback.pullbackTopos_preservesZeroMorphisms`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/KFlatPullbackAlongRingedTopoi.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/KFlatPullbackAlongRingedTopoi.lean#L185). The attribute's comment: “degreewise pullback”.
 
 > Pullback of sheaves of modules preserves zero morphisms, being additive.  This is what
 > makes the degreewise pullback functor on complexes available.
@@ -69,7 +69,7 @@ instance pullbackTopos_preservesZeroMorphisms
         f.pullbackTopos).PreservesZeroMorphisms
 ```
 
-**`Stacks.Sheaves.DerivedPullback.KFlatPullbackOfToposHom.isKFlat_pullbackMapHomotopy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/KFlatPullbackOfToposHom.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/KFlatPullbackOfToposHom.lean#L307). The attribute's comment: “K-flat with flat terms is preserved, for an arbitrary morphism of ringed topoi”.
+**`Stacks.Sheaves.DerivedPullback.KFlatPullbackOfToposHom.isKFlat_pullbackMapHomotopy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/KFlatPullbackOfToposHom.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/KFlatPullbackOfToposHom.lean#L307). The attribute's comment: “K-flat with flat terms is preserved, for an arbitrary morphism of ringed topoi”.
 
 > **Stacks 0G7E for an arbitrary morphism of ringed topoi, on the homotopy category.**
 > Degreewise pullback along `f` carries the class of K-flat complexes of `O`-modules with flat
@@ -92,7 +92,7 @@ theorem isKFlat_pullbackMapHomotopy (f : RingedToposHom X Y)
 
 [Tag 06YY](https://stacks.math.columbia.edu/tag/06YY) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedPullbackCommShift`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean#L97). The attribute's comment: “compatibility with shifts, for a morphism of ringed topoi presented by a morphism of the underlying sites, at RingedTopos.\{u, u, u}”.
+**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedPullbackCommShift`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean#L97). The attribute's comment: “compatibility with shifts, for a morphism of ringed topoi presented by a morphism of the underlying sites, at RingedTopos.\{u, u, u}”.
 
 > **Tag 06YY, compatibility with shifts.**  `Lf^*` commutes with the shift functors of the two
 > derived categories.  Together with `derivedPullback_isTriangulated_of_isMorphismOfSites` this is
@@ -108,7 +108,7 @@ def derivedPullbackCommShift :
     (derivedPullback f).CommShift ℤ
 ```
 
-**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedPullback_isTriangulated_of_isMorphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean#L112). The attribute's comment: “exactness, for a morphism of ringed topoi presented by a morphism of the underlying sites, at RingedTopos.\{u, u, u}”.
+**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedPullback_isTriangulated_of_isMorphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean#L112). The attribute's comment: “exactness, for a morphism of ringed topoi presented by a morphism of the underlying sites, at RingedTopos.\{u, u, u}”.
 
 > **Tag 06YY, exactness.**  `Lf^*` is an exact functor of triangulated categories: it carries a
 > distinguished triangle of `D(O')` to a distinguished triangle of `D(O)`.
@@ -123,7 +123,7 @@ theorem derivedPullback_isTriangulated_of_isMorphismOfSites :
     (derivedPullback f).IsTriangulated
 ```
 
-**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedPullbackComparison_isIso_of_kFlat_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean#L130). The attribute's comment: “computation on K-flat complexes with flat terms, for a morphism of ringed topoi presented by a morphism of the underlying sites, at RingedTopos.\{u, u, u}”.
+**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedPullbackComparison_isIso_of_kFlat_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean#L130). The attribute's comment: “computation on K-flat complexes with flat terms, for a morphism of ringed topoi presented by a morphism of the underlying sites, at RingedTopos.\{u, u, u}”.
 
 > **Tag 06YY, the computation `Lf^* K^• = f^* K^•`.**  The canonical comparison
 > `Lf^* K^• ⟶ f^* K^•` is invertible at a K-flat complex `K^•` of `O'`-modules with flat terms: the
@@ -146,7 +146,7 @@ theorem derivedPullbackComparison_isIso_of_kFlat_of_flat
       ((HomotopyCategory.quotient _ (ComplexShape.up ℤ)).obj K))
 ```
 
-**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedPullbackComparison_isIso_of_boundedAbove_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean#L151). The attribute's comment: “computation on bounded above complexes of flat modules, for a morphism of ringed topoi presented by a morphism of the underlying sites, at RingedTopos.\{u, u, u}”.
+**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedPullbackComparison_isIso_of_boundedAbove_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackAsATriangulatedFunctor.lean#L151). The attribute's comment: “computation on bounded above complexes of flat modules, for a morphism of ringed topoi presented by a morphism of the underlying sites, at RingedTopos.\{u, u, u}”.
 
 > **Tag 06YY, the computation on a bounded above complex of flat modules.**  A bounded above
 > complex of flat `O'`-modules is K-flat by Tag 06YQ, so the canonical comparison is invertible
@@ -165,7 +165,7 @@ theorem derivedPullbackComparison_isIso_of_boundedAbove_of_flat
       ((HomotopyCategory.quotient _ (ComplexShape.up ℤ)).obj K))
 ```
 
-**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.isTriangulated_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean#L172). The attribute's comment: “exactness”.
+**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.isTriangulated_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean#L172). The attribute's comment: “exactness”.
 
 > **Tag 06YY, exactness.**  The derived pullback along a morphism of ringed topoi is an exact
 > functor of triangulated categories.
@@ -174,7 +174,7 @@ theorem derivedPullbackComparison_isIso_of_boundedAbove_of_flat
 theorem isTriangulated_derivedPullback : (derivedPullback f).IsTriangulated
 ```
 
-**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.isIso_derivedPullbackComparison_app_kFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean#L180). The attribute's comment: “computation on K-flat complexes with flat terms”.
+**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.isIso_derivedPullbackComparison_app_kFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean#L180). The attribute's comment: “computation on K-flat complexes with flat terms”.
 
 > **Tag 06YY, the computation.**  The canonical comparison `Lf^* K^• ⟶ f^* K^•` is invertible
 > at a K-flat complex of `O'`-modules with flat terms: the derived pullback of such a complex is
@@ -199,7 +199,7 @@ theorem isIso_derivedPullbackComparison_app_kFlat
       ((HomotopyCategory.quotient _ (ComplexShape.up ℤ)).obj K))
 ```
 
-**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.isIso_derivedPullbackComparison_app_boundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean#L204). The attribute's comment: “computation on bounded above flat complexes”.
+**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.isIso_derivedPullbackComparison_app_boundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean#L204). The attribute's comment: “computation on bounded above flat complexes”.
 
 > **Tag 06YY, the computation on bounded above complexes of flat modules.**  A bounded above
 > complex of flat `O'`-modules is K-flat by Tag 06YQ, so its derived pullback is computed by
@@ -214,7 +214,7 @@ theorem isIso_derivedPullbackComparison_app_boundedAbove
       ((HomotopyCategory.quotient _ (ComplexShape.up ℤ)).obj K))
 ```
 
-**`Stacks.Sheaves.RingedToposDerivedPullback.derivedPullback_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfRingedTopoi.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfRingedTopoi.lean#L284). The attribute's comment: “compatibility with shifts”.
+**`Stacks.Sheaves.RingedToposDerivedPullback.derivedPullback_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfRingedTopoi.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfRingedTopoi.lean#L283). The attribute's comment: “compatibility with shifts”.
 
 > **Tag 06YY, compatibility with shifts.**  The derived pullback commutes with the shift
 > functors of the two derived categories.
@@ -224,7 +224,7 @@ noncomputable instance derivedPullback_commShift :
     (Stacks.Cohomology.DerivedPullbackPushforwardAdjunction.derivedPullback f).CommShift ℤ
 ```
 
-**`Stacks.Cohomology.DerivedPullbackOfToposHom.derivedPullback`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean#L217). The attribute's comment: “the derived pullback functor, for a morphism of ringed topoi whose two ringed topoi have their object, morphism and structure-ring universes free and unrelated, and whose geometric datum is a morphism of the underlying topoi rather than of the underlying sites”.
+**`Stacks.Cohomology.DerivedPullbackOfToposHom.derivedPullback`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean#L217). The attribute's comment: “the derived pullback functor, for a morphism of ringed topoi whose two ringed topoi have their object, morphism and structure-ring universes free and unrelated, and whose geometric datum is a morphism of the underlying topoi rather than of the underlying sites”.
 
 > **Tag 06YY, the derived pullback functor, at independent universes.**  The derived pullback
 > `Lf^* : D(𝒪') ⥤ D(𝒪)` along a morphism of ringed topoi, the total left derived functor of
@@ -244,7 +244,7 @@ noncomputable abbrev derivedPullback :
       DerivedCategory (SheafOfModules.{w} (SheafOfModules.Tensor.ringSheaf X.O))
 ```
 
-**`Stacks.Cohomology.DerivedPullbackOfToposHom.derivedPullbackComparison`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean#L227). The attribute's comment: “the canonical comparison `Lf^* ⟶ f^*`, at free and unrelated universes for the two ringed topoi and for a geometric datum which is a morphism of the underlying topoi”.
+**`Stacks.Cohomology.DerivedPullbackOfToposHom.derivedPullbackComparison`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean#L227). The attribute's comment: “the canonical comparison `Lf^* ⟶ f^*`, at free and unrelated universes for the two ringed topoi and for a geometric datum which is a morphism of the underlying topoi”.
 
 > **Tag 06YY, the canonical comparison, at independent universes.**  The comparison
 > `Lf^* ⟶ f^*` from the derived pullback to degreewise pullback, whose invertibility on a
@@ -255,7 +255,7 @@ noncomputable abbrev derivedPullbackComparison :
     DerivedCategory.Qh ⋙ derivedPullback f ⟶ pullbackOnHomotopy f
 ```
 
-**`Stacks.Cohomology.DerivedPullbackOfToposHom.derivedPullback_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean#L235). The attribute's comment: “compatibility of `Lf^*` with the shift, at free and unrelated universes for the two ringed topoi”.
+**`Stacks.Cohomology.DerivedPullbackOfToposHom.derivedPullback_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean#L235). The attribute's comment: “compatibility of `Lf^*` with the shift, at free and unrelated universes for the two ringed topoi”.
 
 > **Tag 06YY, compatibility with shifts, at independent universes.**  The derived pullback
 > commutes with the shift functors of the two derived categories.
@@ -264,7 +264,7 @@ noncomputable abbrev derivedPullbackComparison :
 noncomputable instance derivedPullback_commShift : (derivedPullback f).CommShift ℤ
 ```
 
-**`Stacks.Cohomology.DerivedPullbackOfToposHom.isIso_derivedPullbackComparison_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean#L247). The attribute's comment: “the computation `Lf^*𝒦 = f^*𝒦` on a resolving class, at free and unrelated universes for the two ringed topoi”.
+**`Stacks.Cohomology.DerivedPullbackOfToposHom.isIso_derivedPullbackComparison_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHom.lean#L247). The attribute's comment: “the computation `Lf^*𝒦 = f^*𝒦` on a resolving class, at free and unrelated universes for the two ringed topoi”.
 
 > **Tag 06YY, the computation, at independent universes.**  The canonical comparison
 > `Lf^* 𝒦^• ⟶ f^* 𝒦^•` is invertible at an object of a resolving class for `f^*`: the derived
@@ -285,7 +285,7 @@ theorem isIso_derivedPullbackComparison_app
     IsIso ((derivedPullbackComparison f).app K)
 ```
 
-**`Stacks.Cohomology.DerivedPullbackOfToposHom.derivedPullback_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHomTriangulated.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHomTriangulated.lean#L87). The attribute's comment: “exactness of the derived pullback, for a morphism of ringed topoi whose geometric datum is a morphism of the underlying topoi”.
+**`Stacks.Cohomology.DerivedPullbackOfToposHom.derivedPullback_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHomTriangulated.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackOfToposHomTriangulated.lean#L87). The attribute's comment: “exactness of the derived pullback, for a morphism of ringed topoi whose geometric datum is a morphism of the underlying topoi”.
 
 > **[Stacks, Tag 06YY], exactness, for a morphism of ringed topoi.** The derived pullback
 > `Lf^* : D(𝒪_D) ⟶ D(𝒪_C)` is a triangulated functor. Every morphism of `D(𝒪_D)` is, up to
@@ -298,7 +298,7 @@ theorem derivedPullback_isTriangulated :
     (Stacks.Cohomology.DerivedPullbackOfToposHom.derivedPullback f).IsTriangulated
 ```
 
-**`Stacks.Cohomology.DerivedPullbackPushforwardAdjunction.derivedPullback`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/AdjunctionForRingedTopoi.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/AdjunctionForRingedTopoi.lean#L425). The attribute's comment: “the derived pullback functor”.
+**`Stacks.Cohomology.DerivedPullbackPushforwardAdjunction.derivedPullback`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/AdjunctionForRingedTopoi.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/AdjunctionForRingedTopoi.lean#L426). The attribute's comment: “the derived pullback functor”.
 
 > **Tag 06YY, the derived pullback functor.**  The derived pullback `Lf^* : D(𝒪') ⥤ D(𝒪)`, the
 > total left derived functor of degreewise pullback followed by localization.
@@ -313,7 +313,7 @@ noncomputable abbrev derivedPullback :
       DerivedCategory (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O))
 ```
 
-**`Stacks.Cohomology.DerivedPullbackPushforwardAdjunction.derivedPullbackComparison`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/AdjunctionForRingedTopoi.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/AdjunctionForRingedTopoi.lean#L436). The attribute's comment: “canonical comparison”.
+**`Stacks.Cohomology.DerivedPullbackPushforwardAdjunction.derivedPullbackComparison`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/AdjunctionForRingedTopoi.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/AdjunctionForRingedTopoi.lean#L437). The attribute's comment: “canonical comparison”.
 
 > **Tag 06YY, the canonical comparison.**  The comparison `Lf^* ⟶ f^*` from the derived
 > pullback to degreewise pullback, whose invertibility on K-flat complexes with flat terms is the
@@ -324,7 +324,7 @@ noncomputable abbrev derivedPullbackComparison :
     DerivedCategory.Qh ⋙ derivedPullback f ⟶ pullbackOnHomotopy f
 ```
 
-**`Stacks.Cohomology.DerivedPullbackOfToposHom.pullbackInvertsQuasiIso_isKFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/PullbackInvertsQuasiIsoOfToposHom.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/PullbackInvertsQuasiIsoOfToposHom.lean#L144). The attribute's comment: “exactness on K-flat complexes with flat terms, for an arbitrary morphism of ringed topoi”.
+**`Stacks.Cohomology.DerivedPullbackOfToposHom.pullbackInvertsQuasiIso_isKFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/PullbackInvertsQuasiIsoOfToposHom.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/PullbackInvertsQuasiIsoOfToposHom.lean#L144). The attribute's comment: “exactness on K-flat complexes with flat terms, for an arbitrary morphism of ringed topoi”.
 
 > **The exactness clause of Stacks 06YY for an arbitrary morphism of ringed topoi.**
 > Degreewise pullback along `f` carries a quasi-isomorphism between K-flat complexes of
@@ -343,7 +343,7 @@ theorem pullbackInvertsQuasiIso_isKFlat (f : RingedToposHom X Y) :
 
 [Tag 0D6D](https://stacks.math.columbia.edu/tag/0D6D) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.isIso_derivedTransitionCompComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedPullbackComposition.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedPullbackComposition.lean#L164). The attribute's comment: “for the transition morphisms of a simplicial-site situation”.
+**`CategoryTheory.SimplicialSiteSituation.isIso_derivedTransitionCompComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedPullbackComposition.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedPullbackComposition.lean#L164). The attribute's comment: “for the transition morphisms of a simplicial-site situation”.
 
 > The canonical comparison from the composite of the derived pullbacks along the transitions
 > of `ψ` and `φ` to the derived pullback along the transition of `ψ ≫ φ` is an isomorphism, so
@@ -355,7 +355,7 @@ theorem isIso_derivedTransitionCompComparison {l m n : SimplexCategory} (ψ : l 
     IsIso (S.derivedTransitionCompComparison O ψ φ)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.derivedTransitionCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedPullbackComposition.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedPullbackComposition.lean#L177). The attribute's comment: “for the transition morphisms of a simplicial-site situation, as a natural isomorphism”.
+**`CategoryTheory.SimplicialSiteSituation.derivedTransitionCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedPullbackComposition.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedPullbackComposition.lean#L177). The attribute's comment: “for the transition morphisms of a simplicial-site situation, as a natural isomorphism”.
 
 > The natural isomorphism `Lf_ψ^* ⋙ Lf_φ^* ≅ Lf_{ψ ≫ φ}^*` given by the canonical
 > comparison.
@@ -366,7 +366,7 @@ noncomputable def derivedTransitionCompIso {l m n : SimplexCategory} (ψ : l ⟶
       S.derivedTransitionPullback O (ψ ≫ φ)
 ```
 
-**`Stacks.Cohomology.DerivedPullbackCompositionOfToposHom.isIso_derivedPullbackCompComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOfToposHom.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOfToposHom.lean#L351). The attribute's comment: “for a morphism of ringed topoi whose geometric datum is a morphism of the underlying topoi rather than a continuous functor between the underlying sites, with no morphism-of-sites hypothesis”.
+**`Stacks.Cohomology.DerivedPullbackCompositionOfToposHom.isIso_derivedPullbackCompComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOfToposHom.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOfToposHom.lean#L351). The attribute's comment: “for a morphism of ringed topoi whose geometric datum is a morphism of the underlying topoi rather than a continuous functor between the underlying sites, with no morphism-of-sites hypothesis”.
 
 > **Stacks 0D6D.** For composable morphisms of ringed topoi `f` and `g`, the canonical
 > comparison from the composite of the derived pullbacks to the derived pullback along `g ∘ f` is
@@ -383,7 +383,7 @@ theorem isIso_derivedPullbackCompComparison :
     IsIso (derivedPullbackCompComparison f g)
 ```
 
-**`Stacks.Cohomology.DerivedPullbackCompositionOfToposHom.derivedPullbackCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOfToposHom.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOfToposHom.lean#L363). The attribute's comment: “as a natural isomorphism, for a morphism of ringed topoi whose geometric datum is a morphism of the underlying topoi rather than a continuous functor between the underlying sites, with no morphism-of-sites hypothesis”.
+**`Stacks.Cohomology.DerivedPullbackCompositionOfToposHom.derivedPullbackCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOfToposHom.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOfToposHom.lean#L363). The attribute's comment: “as a natural isomorphism, for a morphism of ringed topoi whose geometric datum is a morphism of the underlying topoi rather than a continuous functor between the underlying sites, with no morphism-of-sites hypothesis”.
 
 > **Stacks 0D6D as a natural isomorphism** `Lg^* ⋙ Lf^* ≅ L(g ∘ f)^*`, for morphisms of
 > ringed topoi and with no hypothesis, obtained by inverting the canonical comparison.
@@ -393,7 +393,7 @@ def derivedPullbackCompIso :
     derivedPullback g ⋙ derivedPullback f ≅ derivedPullback (g.comp f)
 ```
 
-**`Stacks.Cohomology.DerivedPullbackCompositionOnTopoi.isIso_derivedPullbackCompComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOnRingedTopoi.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOnRingedTopoi.lean#L381).
+**`Stacks.Cohomology.DerivedPullbackCompositionOnTopoi.isIso_derivedPullbackCompComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOnRingedTopoi.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOnRingedTopoi.lean#L381).
 
 > **Stacks 0D6D.**  For composable morphisms of ringed topoi `f` and `g`, the canonical
 > comparison from the composite of the derived pullbacks to the derived pullback along `g ∘ f` is
@@ -407,7 +407,7 @@ theorem isIso_derivedPullbackCompComparison :
     IsIso (derivedPullbackCompComparison f g)
 ```
 
-**`Stacks.Cohomology.DerivedPullbackCompositionOnTopoi.derivedPullbackCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOnRingedTopoi.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOnRingedTopoi.lean#L394). The attribute's comment: “as a natural isomorphism”.
+**`Stacks.Cohomology.DerivedPullbackCompositionOnTopoi.derivedPullbackCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOnRingedTopoi.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/CompositionOnRingedTopoi.lean#L394). The attribute's comment: “as a natural isomorphism”.
 
 > **Stacks 0D6D as a natural isomorphism** `Lg^* ⋙ Lf^* ≅ L(g ∘ f)^*`, obtained by inverting
 > the canonical comparison.
@@ -421,7 +421,7 @@ def derivedPullbackCompIso :
 
 [Tag 07A4](https://stacks.math.columbia.edu/tag/07A4) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.componentDerivedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentDerivedTensor.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentDerivedTensor.lean#L94). The attribute's comment: “the canonical bifunctorial isomorphism, for the component inverse image”.
+**`CategoryTheory.SimplicialSiteSituation.componentDerivedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentDerivedTensor.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentDerivedTensor.lean#L94). The attribute's comment: “the canonical bifunctorial isomorphism, for the component inverse image”.
 
 > **The derived tensor comparison at the inclusion of a simplicial component.** The canonical
 > bifunctorial isomorphism
@@ -447,7 +447,7 @@ def componentDerivedTensorIso :
           (S.componentRingedTopos O n).O)
 ```
 
-**`Stacks.Sheaves.DerivedPullback.derivedPullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorComparison.lean, line 638](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorComparison.lean#L638). The attribute's comment: “the canonical bifunctorial isomorphism”.
+**`Stacks.Sheaves.DerivedPullback.derivedPullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorComparison.lean, line 652](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorComparison.lean#L652). The attribute's comment: “the canonical bifunctorial isomorphism”.
 
 > **Stacks 07A4.** The canonical bifunctorial isomorphism
 >
@@ -469,7 +469,7 @@ def derivedPullbackTensorIso :
           (Stacks.DerivedTensor.RingedSite.derivedTensorProductFunctor X.O)
 ```
 
-**`Stacks.Sheaves.DerivedPullback.OfToposHom.derivedPullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorComparisonOfToposHom.lean, line 555](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorComparisonOfToposHom.lean#L555). The attribute's comment: “the canonical bifunctorial isomorphism, for a morphism of ringed topoi whose geometric datum is a morphism of the underlying topoi rather than of the underlying sites”.
+**`Stacks.Sheaves.DerivedPullback.OfToposHom.derivedPullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorComparisonOfToposHom.lean, line 555](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorComparisonOfToposHom.lean#L555). The attribute's comment: “the canonical bifunctorial isomorphism, for a morphism of ringed topoi whose geometric datum is a morphism of the underlying topoi rather than of the underlying sites”.
 
 > **Stacks 07A4.** The canonical bifunctorial isomorphism
 >
@@ -493,7 +493,7 @@ def derivedPullbackTensorIso :
           (Stacks.DerivedTensor.RingedSite.derivedTensorProductFunctor X.O)
 ```
 
-**`Stacks.DerivedTensor.ExactFunctorTensor.derivedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ExactFunctorDerivedTensor.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ExactFunctorDerivedTensor.lean#L467). The attribute's comment: “for an exact functor of sheaves of modules commuting with the total tensor complex”.
+**`Stacks.DerivedTensor.ExactFunctorTensor.derivedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ExactFunctorDerivedTensor.lean, line 467](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ExactFunctorDerivedTensor.lean#L467). The attribute's comment: “for an exact functor of sheaves of modules commuting with the total tensor complex”.
 
 > **Stacks 07A4 for an exact functor commuting with the total tensor complex.** The canonical
 > bifunctorial isomorphism
@@ -520,7 +520,7 @@ def derivedTensorIso :
 
 [Tag 08I6](https://stacks.math.columbia.edu/tag/08I6) in the Stacks Project.
 
-**`Stacks.Cohomology.MixedDerivedTensor.derivedMixedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/MixedDerivedTensor/DerivedMixedTensor.lean, line 604](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/MixedDerivedTensor/DerivedMixedTensor.lean#L604). The attribute's comment: “variant: the isomorphism read in D(f⁻¹O') after restriction of scalars, for a site-presented morphism; the tag in D(O) for an arbitrary morphism of ringed topoi is Stacks.Cohomology.MixedDerivedTensor.OfToposHom.derivedMixedTensorIso”.
+**`Stacks.Cohomology.MixedDerivedTensor.derivedMixedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/MixedDerivedTensor/DerivedMixedTensor.lean, line 607](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/MixedDerivedTensor/DerivedMixedTensor.lean#L607). The attribute's comment: “variant: the isomorphism read in D(f⁻¹O') after restriction of scalars, for a site-presented morphism; the tag in D(O) for an arbitrary morphism of ringed topoi is Stacks.Cohomology.MixedDerivedTensor.OfToposHom.derivedMixedTensorIso”.
 
 > **Stacks 08I6, read after restriction of scalars to `f⁻¹O'`.**  The bifunctorial
 > isomorphism
@@ -544,7 +544,7 @@ def derivedMixedTensorIso :
     mixedDerivedTensorPullback f ≅ mixedDerivedTensorInverseImage f
 ```
 
-**`Stacks.Cohomology.MixedDerivedTensor.OfToposHom.derivedMixedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/MixedDerivedTensor/DerivedMixedTensorOfToposHom.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/MixedDerivedTensor/DerivedMixedTensorOfToposHom.lean#L601). The attribute's comment: “the canonical bifunctorial isomorphism in D(O), for an arbitrary morphism of ringed topoi”.
+**`Stacks.Cohomology.MixedDerivedTensor.OfToposHom.derivedMixedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/MixedDerivedTensor/DerivedMixedTensorOfToposHom.lean, line 624](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/MixedDerivedTensor/DerivedMixedTensorOfToposHom.lean#L624). The attribute's comment: “the canonical bifunctorial isomorphism in D(O), for an arbitrary morphism of ringed topoi”.
 
 > **Stacks 08I6.**  For a morphism of ringed topoi `f : (Sh(C), O) ⟶ (Sh(C'), O')` — a
 > morphism of the underlying topoi together with the structure map, with no hypothesis on the
@@ -572,7 +572,7 @@ def derivedMixedTensorIso :
 
 [Tag 0DEN](https://stacks.math.columbia.edu/tag/0DEN) in the Stacks Project.
 
-**`Stacks.SheafOfModules.SitePointStalkSheafify.kFlat_of_stalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SitePointStalkTensorSheafify.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SitePointStalkTensorSheafify.lean#L80). The attribute's comment: “part (2)”.
+**`Stacks.SheafOfModules.SitePointStalkSheafify.kFlat_of_stalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SitePointStalkTensorSheafify.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SitePointStalkTensorSheafify.lean#L80). The attribute's comment: “part (2)”.
 
 > **Stacks 0DEN, part (2), with no extra hypothesis.** On a ringed site whose underlying site
 > has enough points, a complex of `O`-modules whose stalk at every point is a K-flat complex of
@@ -589,7 +589,7 @@ theorem kFlat_of_stalks (hJ : J.HasConservativeFamily.{u})
     Stacks.SheafOfModules.IsKFlat O K
 ```
 
-**`Stacks.Sheaves.KFlatStalkCriterion.kFlatStalk_of_kFlat_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkRetractFromFreeModules.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkRetractFromFreeModules.lean#L246). The attribute's comment: “part (1)”.
+**`Stacks.Sheaves.KFlatStalkCriterion.kFlatStalk_of_kFlat_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkRetractFromFreeModules.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkRetractFromFreeModules.lean#L246). The attribute's comment: “part (1)”.
 
 > **Stacks 0DEN, part (1).**  On a ringed site, a K-flat complex of `O`-modules has K-flat
 > stalk complex at every point of the site.
@@ -610,7 +610,7 @@ theorem kFlatStalk_of_kFlat_unconditional (Φ : J.Point.{u})
 
 [Tag 0DEP](https://stacks.math.columbia.edu/tag/0DEP) in the Stacks Project.
 
-**`Stacks.Sheaves.DerivedPullback.KFlatPullbackMorphismOfSites.kFlat_pullbackComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeAtTheTargetPoint.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeAtTheTargetPoint.lean#L332).
+**`Stacks.Sheaves.DerivedPullback.KFlatPullbackMorphismOfSites.kFlat_pullbackComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeAtTheTargetPoint.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeAtTheTargetPoint.lean#L332).
 
 > **Stacks 0DEP.**  Let `f : (Sh(C), O) ⟶ (Sh(C'), O')` be a morphism of ringed topoi whose
 > underlying functor of the sites is a morphism of sites, and suppose the site `C` has a
@@ -633,7 +633,7 @@ theorem kFlat_pullbackComplex (hX : X.J.HasConservativeFamily.{u})
     Stacks.SheafOfModules.IsKFlat X.O ((KFlatPullback.pullbackComplex f).obj K)
 ```
 
-**`Stacks.Sheaves.DerivedPullback.StalkBaseChangeOfToposHom.kFlat_pullbackComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeOfToposHom.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeOfToposHom.lean#L372).
+**`Stacks.Sheaves.DerivedPullback.StalkBaseChangeOfToposHom.kFlat_pullbackComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeOfToposHom.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeOfToposHom.lean#L372).
 
 > **Stacks 0DEP.**  Let `f : (Sh(C), O) ⟶ (Sh(C'), O')` be a morphism of ringed topoi and
 > suppose the site `C` has a conservative family of points.  Then the degreewise pullback along
@@ -658,7 +658,7 @@ theorem kFlat_pullbackComplex (hX : X.J.HasConservativeFamily.{u})
 
 [Tag 0FPH](https://stacks.math.columbia.edu/tag/0FPH) in the Stacks Project.
 
-**`Stacks.Sheaves.DerivedPullback.OfToposHom.derivedPullback_toTensor_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorTotalSquareOfToposHom.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorTotalSquareOfToposHom.lean#L172). The attribute's comment: “for an arbitrary morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) (a morphism of the underlying topoi with its structure map, no functor between the underlying sites and no morphism-of-sites hypothesis), at RingedTopos.\{u, u, u}, for all complexes K, M; the statement carries no hypothesis or class argument”.
+**`Stacks.Sheaves.DerivedPullback.OfToposHom.derivedPullback_toTensor_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorTotalSquareOfToposHom.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorTotalSquareOfToposHom.lean#L172). The attribute's comment: “for an arbitrary morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) (a morphism of the underlying topoi with its structure map, no functor between the underlying sites and no morphism-of-sites hypothesis), at RingedTopos.\{u, u, u}, for all complexes K, M; the statement carries no hypothesis or class argument”.
 
 > **Stacks 0FPH, for a morphism of ringed topoi.**  For a morphism of ringed topoi
 > `f : (Sh(C), O_C) ⟶ (Sh(D), O_D)` — a morphism of the underlying topoi together with the
@@ -688,7 +688,7 @@ theorem derivedPullback_toTensor_square {X Y : RingedTopos.{u, u, u}}
           ((pullbackComplex f).obj K) ((pullbackComplex f).obj M)
 ```
 
-**`Stacks.Sheaves.DerivedPullback.derivedPullback_toTensor_square_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorTotalSquareUnconditional.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorTotalSquareUnconditional.lean#L113). The attribute's comment: “for a morphism of ringed topoi presented by a morphism of the underlying sites, at RingedTopos.\{u, u, u}”.
+**`Stacks.Sheaves.DerivedPullback.derivedPullback_toTensor_square_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorTotalSquareUnconditional.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackTensorTotalSquareUnconditional.lean#L113). The attribute's comment: “for a morphism of ringed topoi presented by a morphism of the underlying sites, at RingedTopos.\{u, u, u}”.
 
 > **Stacks 0FPH.** For a morphism of ringed topoi `f : (Sh(C), O_C) ⟶ (Sh(D), O_D)` and cochain
 > complexes `K`, `M` of `O_D`-modules, the square formed by the canonical maps from the derived
@@ -734,4 +734,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.18, Tag 06YV](https://stacks.math.columbia.edu/tag/06YV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 14.30 Trivial Kan fibrations
 
-Section 14.30 of the Stacks Project, [Tag 08NK](https://stacks.math.columbia.edu/tag/08NK). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 14.30 of the Stacks Project, [Tag 08NK](https://stacks.math.columbia.edu/tag/08NK). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08NL, a definition
 
 [Tag 08NL](https://stacks.math.columbia.edu/tag/08NL) in the Stacks Project.
 
-**`SSet.trivialKanFibrations`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L77). The attribute's comment: “the two clauses `X₀ → Y₀` surjective and lifting for `n ≥ 1` are the single right lifting property against all boundary inclusions, the case `n = 0` being the surjectivity since `∂Δ[0] = ⊥`”.
+**`SSet.trivialKanFibrations`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L77). The attribute's comment: “the two clauses `X₀ → Y₀` surjective and lifting for `n ≥ 1` are the single right lifting property against all boundary inclusions, the case `n = 0` being the surjectivity since `∂Δ[0] = ⊥`”.
 
 > **Stacks 08NL**.
 > The class of *trivial Kan fibrations*: the morphisms `f : X ⟶ Y` of simplicial sets having the
@@ -30,7 +30,7 @@ public def trivialKanFibrations : MorphismProperty SSet.{u}
 
 [Tag 08NM](https://stacks.math.columbia.edu/tag/08NM) in the Stacks Project.
 
-**`SSet.trivialKanFibrations_eq_rlp_monomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L246). The attribute's comment: “stated as the equality of morphism properties; the source's containment `≤` is the content, the reverse being `antitone_rlp` on `I_le_monomorphisms`, and "`Z → W` termwise injective" is `monomorphisms SSet`”.
+**`SSet.trivialKanFibrations_eq_rlp_monomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L246). The attribute's comment: “stated as the equality of morphism properties; the source's containment `≤` is the content, the reverse being `antitone_rlp` on `I_le_monomorphisms`, and "`Z → W` termwise injective" is `monomorphisms SSet`”.
 
 > **A trivial Kan fibration lifts against any degreewise injective map.** For a trivial Kan
 > fibration `f : X ⟶ Y` of simplicial sets, every solid commutative square
@@ -56,7 +56,7 @@ public theorem trivialKanFibrations_eq_rlp_monomorphisms :
 
 [Tag 08NN](https://stacks.math.columbia.edu/tag/08NN) in the Stacks Project.
 
-**`SSet.trivialKanFibrations_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L85).
+**`SSet.trivialKanFibrations_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L85).
 
 > **Stacks 08NN**.
 > Trivial Kan fibrations are stable under arbitrary base change. This is the general base-change
@@ -71,7 +71,7 @@ public instance trivialKanFibrations_isStableUnderBaseChange :
 
 [Tag 08NP](https://stacks.math.columbia.edu/tag/08NP) in the Stacks Project.
 
-**`SSet.trivialKanFibrations_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L481).
+**`SSet.trivialKanFibrations_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L481).
 
 > **Stacks 08NP**.
 > The composition of two trivial Kan fibrations is a trivial Kan fibration.
@@ -86,7 +86,7 @@ public theorem trivialKanFibrations_comp {X Y Z : SSet.{u}} (f : X ⟶ Y) (g : Y
 
 [Tag 08NQ](https://stacks.math.columbia.edu/tag/08NQ) in the Stacks Project.
 
-**`SSet.trivialKanFibrations_limit_π_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 491](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L491).
+**`SSet.trivialKanFibrations_limit_π_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 491](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L491).
 
 > **Stacks 08NQ**.
 > Let `⋯ → U² → U¹ → U⁰` be a tower of simplicial sets, encoded as a functor `F : ℕᵒᵖ ⥤ SSet`, and
@@ -103,7 +103,7 @@ public theorem trivialKanFibrations_limit_π_zero (F : ℕᵒᵖ ⥤ SSet.{u})
 
 [Tag 08NR](https://stacks.math.columbia.edu/tag/08NR) in the Stacks Project.
 
-**`SSet.isStableUnderProductsOfShape_trivialKanFibrations`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L258). The attribute's comment: “stability under products is stated for arbitrary product cones, as `IsStableUnderProductsOfShape` for the class of Tag 08NL; the source's `∏ X_i → ∏ Y_i` is the case of `Limits.Pi.map`, and the index type is in an arbitrary universe where the source says "a set"”.
+**`SSet.isStableUnderProductsOfShape_trivialKanFibrations`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L258). The attribute's comment: “stability under products is stated for arbitrary product cones, as `IsStableUnderProductsOfShape` for the class of Tag 08NL; the source's `∏ X_i → ∏ Y_i` is the case of `Limits.Pi.map`, and the index type is in an arbitrary universe where the source says "a set"”.
 
 > **A product of trivial Kan fibrations is a trivial Kan fibration.** If `f i : X i ⟶ Y i` is
 > a family of trivial Kan fibrations of simplicial sets, that is, of morphisms having the right
@@ -119,7 +119,7 @@ public instance isStableUnderProductsOfShape_trivialKanFibrations (J : Type w) :
 
 [Tag 08Q5](https://stacks.math.columbia.edu/tag/08Q5) in the Stacks Project.
 
-**`SSet.isStableUnderFilteredColimits_trivialKanFibrations`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L382). The attribute's comment: “stability under filtered colimits is stated for arbitrary colimit cocones over an arbitrary filtered index category, as `IsStableUnderFilteredColimits` for the class of Tag 08NL; the source's `colim X₁ → colim X₂` is the case of `colimMap`, and the index category is in arbitrary universes, the hypothesis `HasColimitsOfSize` being what makes the colimits degreewise as in the source's hint”.
+**`SSet.isStableUnderFilteredColimits_trivialKanFibrations`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L382). The attribute's comment: “stability under filtered colimits is stated for arbitrary colimit cocones over an arbitrary filtered index category, as `IsStableUnderFilteredColimits` for the class of Tag 08NL; the source's `colim X₁ → colim X₂` is the case of `colimMap`, and the index category is in arbitrary universes, the hypothesis `HasColimitsOfSize` being what makes the colimits degreewise as in the source's hint”.
 
 > **A filtered colimit of trivial Kan fibrations is a trivial Kan fibration.** If `J` is a
 > filtered category and `f : X₁ ⟶ X₂` is a morphism of diagrams `J ⥤ SSet` whose components
@@ -137,7 +137,7 @@ public instance isStableUnderFilteredColimits_trivialKanFibrations
 
 [Tag 08NS](https://stacks.math.columbia.edu/tag/08NS) in the Stacks Project.
 
-**`SSet.trivialKanFibrations_isHomotopyEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 691](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L691).
+**`SSet.trivialKanFibrations_isHomotopyEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean, line 691](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialSet/TrivialKanFibration.lean#L691).
 
 > **Stacks 08NS**.
 > A trivial Kan fibration `f : X ⟶ Y` of simplicial sets — one with the right lifting property
@@ -159,4 +159,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.30, Tag 08NK](https://stacks.math.columbia.edu/tag/08NK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

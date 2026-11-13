@@ -8,13 +8,13 @@ proof: formalized
 
 # 45.4 Chow motives
 
-Section 45.4 of the Stacks Project, [Tag 0FG9](https://stacks.math.columbia.edu/tag/0FG9). 10 tags here are carried by 56 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 45.4 of the Stacks Project, [Tag 0FG9](https://stacks.math.columbia.edu/tag/0FG9). 10 tags here are carried by 49 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FGA, a lemma
 
 [Tag 0FGA](https://stacks.math.columbia.edu/tag/0FGA) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ChowMotiveCat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L80). The attribute's comment: “the category M\_k of Chow motives (X, p, m) over k”.
+**`Stacks.WeilCohomology.ChowMotiveCat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L80). The attribute's comment: “the category M\_k of Chow motives (X, p, m) over k”.
 
 > The category `M_k` of Chow motives over `k`. An object is a triple `(X, p, m)` of a smooth
 > projective scheme `X` over `k`, a projector `p ∈ Corr⁰(X, X)` (`p ∘ p = p`) and a twist `m ∈ ℤ`;
@@ -25,7 +25,7 @@ Section 45.4 of the Stacks Project, [Tag 0FG9](https://stacks.math.columbia.edu/
 abbrev ChowMotiveCat : Type (u + 1)
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.homEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L269). The attribute's comment: “Hom((X, p, m), (Y, q, n)) = q o Corr^\{n-m}(X, Y) o p, as Q-vector spaces”.
+**`Stacks.WeilCohomology.ChowMotiveCat.homEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L269). The attribute's comment: “Hom((X, p, m), (Y, q, n)) = q o Corr^\{n-m}(X, Y) o p, as Q-vector spaces”.
 
 > The morphisms of `M_k` from `(X, p, m)` to `(Y, q, n)` are the correspondences in
 > `q ∘ Corr^{n-m}(X, Y) ∘ p ⊂ Corr^{n-m}(X, Y)`: an isomorphism of `ℚ`-vector spaces sending a
@@ -35,7 +35,7 @@ abbrev ChowMotiveCat : Type (u + 1)
 def homEquiv (M N : ChowMotiveCat k) : (M ⟶ N) ≃ₗ[ℚ] corrHom M N
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.homEquiv_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L296). The attribute's comment: “the identity of (X, p, m) is p”.
+**`Stacks.WeilCohomology.ChowMotiveCat.homEquiv_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L296). The attribute's comment: “the identity of (X, p, m) is p”.
 
 > The identity morphism of the motive `(X, p, m)` is the projector `p` (compared after
 > `DirectSum.of`, the degree `m - m` being `0`).
@@ -47,7 +47,7 @@ theorem homEquiv_id (M : ChowMotiveCat k) :
       DirectSum.of (fun i ↦ SmoothProjectiveCorr M.scheme M.scheme i) 0 M.projector
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.homEquiv_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L309). The attribute's comment: “composition of morphisms of motives is composition of correspondences”.
+**`Stacks.WeilCohomology.ChowMotiveCat.homEquiv_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L309). The attribute's comment: “composition of morphisms of motives is composition of correspondences”.
 
 > Composition of morphisms of motives is composition of correspondences: for
 > `f : (X, p, m) ⟶ (Y, q, n)` and `g : (Y, q, n) ⟶ (Z, r, l)` the correspondence of `f ≫ g` is
@@ -64,7 +64,7 @@ theorem homEquiv_comp {M N P : ChowMotiveCat k} (f : M ⟶ N) (g : N ⟶ P) :
           (homEquiv N P g).1)
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.linear`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L324). The attribute's comment: “M\_k is a Q-linear category”.
+**`Stacks.WeilCohomology.ChowMotiveCat.linear`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L324). The attribute's comment: “M\_k is a Q-linear category”.
 
 > The category `M_k` of Chow motives is `ℚ`-linear: the morphism spaces are the `ℚ`-vector
 > spaces `q ∘ Corr^{n-m}(X, Y) ∘ p` and composition is `ℚ`-bilinear, composition of
@@ -74,7 +74,7 @@ theorem homEquiv_comp {M N P : ChowMotiveCat k} (f : M ⟶ N) (g : N ⟶ P) :
 abbrev linear : Linear ℚ (ChowMotiveCat k)
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.h`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L335). The attribute's comment: “the contravariant functor h, h(X) = (X, 1, 0), h(f) = [Gamma\_f]”.
+**`Stacks.WeilCohomology.ChowMotiveCat.h`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L335). The attribute's comment: “the contravariant functor h, h(X) = (X, 1, 0), h(f) = [Gamma\_f]”.
 
 > The contravariant functor `h : {smooth projective schemes over k} ⟶ M_k`,
 > `h(X) = (X, 1, 0)` with `1 = [Δ_X]` the identity correspondence, and
@@ -84,7 +84,7 @@ abbrev linear : Linear ℚ (ChowMotiveCat k)
 def h : ((SmoothProjectiveScheme k).FullSubcategory)ᵒᵖ ⥤ ChowMotiveCat k
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.h_obj_projector`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L354). The attribute's comment: “h(X) = (X, 1, 0): the projector”.
+**`Stacks.WeilCohomology.ChowMotiveCat.h_obj_projector`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L354). The attribute's comment: “h(X) = (X, 1, 0): the projector”.
 
 > The projector of `h(X)` is `1 = [Δ_X] ∈ Corr⁰(X, X)`.
 
@@ -93,7 +93,7 @@ theorem h_obj_projector (X : (SmoothProjectiveScheme k).FullSubcategory) :
     ((h k).obj (Opposite.op X)).projector = correspondenceDiagonal k X
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.h_obj_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L360). The attribute's comment: “h(X) = (X, 1, 0): the twist”.
+**`Stacks.WeilCohomology.ChowMotiveCat.h_obj_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L360). The attribute's comment: “h(X) = (X, 1, 0): the twist”.
 
 > The twist of `h(X)` is `0`.
 
@@ -102,7 +102,7 @@ theorem h_obj_twist (X : (SmoothProjectiveScheme k).FullSubcategory) :
     ((h k).obj (Opposite.op X)).twist = 0
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.homEquiv_h_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L367). The attribute's comment: “h(f) = [Gamma\_f]”.
+**`Stacks.WeilCohomology.ChowMotiveCat.homEquiv_h_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Motives.lean#L367). The attribute's comment: “h(f) = [Gamma\_f]”.
 
 > For `f : Y ⟶ X`, the correspondence of `h(f) : h(X) ⟶ h(Y)` is the graph class
 > `[Γ_f] ∈ Corr⁰(X, Y)`.
@@ -112,7 +112,7 @@ theorem homEquiv_h_map {X Y : (SmoothProjectiveScheme k).FullSubcategory} (f : Y
     (homEquiv _ _ ((h k).map f.op)).1 = graphCorrespondenceSP f
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.Motive`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean#L140). The attribute's comment: “the category M\_k of Chow motives over k, whose objects are the triples (X,p,m)”.
+**`Stacks.WeilCohomology.CorrespondenceStructure.Motive`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean#L142). The attribute's comment: “the category M\_k of Chow motives over k, whose objects are the triples (X,p,m)”.
 
 > **Stacks Project, Tag 0FGA.** The category `M_k` of Chow motives over `k`: the Karoubi
 > envelope of the category of correspondences. An object is a pair of an object of the ambient
@@ -124,7 +124,7 @@ theorem homEquiv_h_map {X Y : (SmoothProjectiveScheme k).FullSubcategory} (f : Y
 abbrev Motive (S : CorrespondenceStructure.{v, u, w} D)
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.hom_motive_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean#L146). The attribute's comment: “Hom((X,p,m),(Y,q,n)) = q o Corr^\{n-m}(X,Y) o p”.
+**`Stacks.WeilCohomology.CorrespondenceStructure.hom_motive_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean#L148). The attribute's comment: “Hom((X,p,m),(Y,q,n)) = q o Corr^\{n-m}(X,Y) o p”.
 
 > **Stacks Project, Tag 0FGA.** The morphisms of `M_k` are the correspondences cut out by the
 > two projectors: `Hom((X, p, m), (Y, q, n)) = q ∘ Corr^{n-m}(X, Y) ∘ p`.
@@ -135,7 +135,7 @@ theorem hom_motive_iff (S : CorrespondenceStructure.{v, u, w} D) {M N : S.Motive
     (∃ f : M ⟶ N, f.f = c) ↔ ∃ c₀ : M.X ⟶ N.X, c = M.p ≫ c₀ ≫ N.p
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.motiveFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean#L172). The attribute's comment: “the functor h into M\_k, with h(X) = (X,1,0) and h(f) = [Gamma\_f]”.
+**`Stacks.WeilCohomology.CorrespondenceStructure.motiveFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean#L174). The attribute's comment: “the functor h into M\_k, with h(X) = (X,1,0) and h(f) = [Gamma\_f]”.
 
 > **Stacks Project, Tag 0FGA.** The functor `h` of Stacks 0FGA, from the ambient category of
 > smooth projective schemes over `k` to the category of Chow motives: `h(X) = (X, 1, 0)` is the
@@ -151,7 +151,7 @@ theorem hom_motive_iff (S : CorrespondenceStructure.{v, u, w} D) {M N : S.Motive
 def motiveFunctor (S : CorrespondenceStructure.{v, u, w} D) : D ⥤ S.Motive
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.linear`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean#L199). The attribute's comment: “M\_k is a Q-linear category, given the Q-linear structure on correspondences”.
+**`Stacks.WeilCohomology.CorrespondenceStructure.linear`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Category.lean#L201). The attribute's comment: “M\_k is a Q-linear category, given the Q-linear structure on correspondences”.
 
 > **Stacks Project, Tag 0FGA.** The category `M_k` of Chow motives is `ℚ`-linear, the
 > category of correspondences being so. The `ℚ`-linear structure of the correspondence spaces is
@@ -163,7 +163,7 @@ def linear (S : CorrespondenceStructure.{v, u, w} D) [Preadditive S.Obj] [Linear
     Linear ℚ S.Motive
 ```
 
-**`Stacks.WeilCohomology.MotiveCalculus.mem_homSubmodule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Representability.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Representability.lean#L403). The attribute's comment: “the morphisms of the category of motives are the sandwiched correspondences”.
+**`Stacks.WeilCohomology.MotiveCalculus.mem_homSubmodule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Representability.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Representability.lean#L403). The attribute's comment: “the morphisms of the category of motives are the sandwiched correspondences”.
 
 > A total correspondence is a morphism of motives `(X, p, m) → (Y, q, n)` exactly when it is a
 > sandwich `p ∘ a ∘ q` of a correspondence `a` homogeneous of degree `n - m`: the fixed set of the
@@ -179,7 +179,7 @@ theorem mem_homSubmodule_iff {M N : ChowMotive C D.toCorrespondenceCalculus}
           (D.projectorTotal N) = f
 ```
 
-**`Stacks.WeilCohomology.MotiveCalculus.category`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Representability.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Representability.lean#L428). The attribute's comment: “the category of Chow motives”.
+**`Stacks.WeilCohomology.MotiveCalculus.category`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Representability.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Representability.lean#L428). The attribute's comment: “the category of Chow motives”.
 
 > The category of Chow motives: Chow motives as objects, the sandwiched correspondences of
 > degree `n - m` as morphisms, the projector as the identity and composition of correspondences as
@@ -193,7 +193,7 @@ instance category : Category.{u} D.Obj
 
 [Tag 0FGB](https://stacks.math.columbia.edu/tag/0FGB) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ChowMotiveCat.hasKernel_of_idem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Karoubian.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Karoubian.lean#L44).
+**`Stacks.WeilCohomology.ChowMotiveCat.hasKernel_of_idem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Karoubian.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Karoubian.lean#L44).
 
 > **Stacks Project, Tag 0FGB.** The category `M_k` of Chow motives is Karoubian in the sense of
 > Homology, Definition 09SG: every idempotent endomorphism `a` of a motive `M` has a kernel.
@@ -206,7 +206,7 @@ theorem hasKernel_of_idem (M : ChowMotiveCat k) (a : M ⟶ M) (ha : a ≫ a = a)
 
 [Tag 0FGC](https://stacks.math.columbia.edu/tag/0FGC) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ChowMotiveCat.monoidalCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L74). The attribute's comment: “M\_k is monoidal for (X,p,m) ⊗ (Y,q,n) = (X × Y, p ⊗ q, m + n), unit (Spec k, 1, 0)”.
+**`Stacks.WeilCohomology.ChowMotiveCat.monoidalCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L74). The attribute's comment: “M\_k is monoidal for (X,p,m) ⊗ (Y,q,n) = (X × Y, p ⊗ q, m + n), unit (Spec k, 1, 0)”.
 
 > **Stacks Project, Tag 0FGC.** The category `M_k` of Chow motives is monoidal for
 > `(X, p, m) ⊗ (Y, q, n) = (X × Y, p ⊗ q, m + n)`, with the tensor product of correspondences on
@@ -217,7 +217,7 @@ theorem hasKernel_of_idem (M : ChowMotiveCat k) (a : M ⟶ M) (ha : a ≫ a = a)
 instance monoidalCategory : MonoidalCategory (ChowMotiveCat k)
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.braidedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L81). The attribute's comment: “the commutativity constraint of M\_k”.
+**`Stacks.WeilCohomology.ChowMotiveCat.braidedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L81). The attribute's comment: “the commutativity constraint of M\_k”.
 
 > **Stacks Project, Tag 0FGC.** The category `M_k` of Chow motives is braided by the
 > commutativity constraint of correspondences, the graph of the factor switch
@@ -227,7 +227,7 @@ instance monoidalCategory : MonoidalCategory (ChowMotiveCat k)
 instance braidedCategory : BraidedCategory (ChowMotiveCat k)
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.symmetricCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L87). The attribute's comment: “M\_k is symmetric monoidal”.
+**`Stacks.WeilCohomology.ChowMotiveCat.symmetricCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L87). The attribute's comment: “M\_k is symmetric monoidal”.
 
 > **Stacks Project, Tag 0FGC.** The category `M_k` of Chow motives is symmetric monoidal with
 > the obvious associativity and commutativity constraints and with unit `𝟏 = (Spec(k), 1, 0)`.
@@ -236,7 +236,7 @@ instance braidedCategory : BraidedCategory (ChowMotiveCat k)
 instance symmetricCategory : SymmetricCategory (ChowMotiveCat k)
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.tensorObj_mk'_p`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L131). The attribute's comment: “(X, p, m) ⊗ (Y, q, n) = (X × Y, p ⊗ q, m + n)”.
+**`Stacks.WeilCohomology.ChowMotiveCat.tensorObj_mk'_p`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L131). The attribute's comment: “(X, p, m) ⊗ (Y, q, n) = (X × Y, p ⊗ q, m + n)”.
 
 > **Stacks Project, Tag 0FGC.** The tensor product of motives on objects:
 > `(X, p, m) ⊗ (Y, q, n) = (X × Y, p ⊗ q, m + n)`; this is the projector, `p ⊗ q`, the tensor product
@@ -251,7 +251,7 @@ theorem tensorObj_mk'_p (X Y : (SmoothProjectiveScheme k).FullSubcategory)
     (mk' X p hp m ⊗ mk' Y q hq n).p = homOf (0 + 0) (CorrespondenceCategory.tensorCorr 0 0 p q)
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.tensorHom_val_eq_homOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L161). The attribute's comment: “on morphisms, (a, a') ↦ a ⊗ a' with ⊗ the tensor product of correspondences”.
+**`Stacks.WeilCohomology.ChowMotiveCat.tensorHom_val_eq_homOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L161). The attribute's comment: “on morphisms, (a, a') ↦ a ⊗ a' with ⊗ the tensor product of correspondences”.
 
 > **Stacks Project, Tag 0FGC.** The tensor product of morphisms of motives is the tensor
 > product of correspondences: if `f : (X, p, m) ⟶ (Y, q, n)` is the correspondence
@@ -266,7 +266,7 @@ theorem tensorHom_val_eq_homOf {M N M' N' : ChowMotiveCat k} (f : M ⟶ N) (f' :
     (f ⊗ₘ f').val = homOf (r + r') (CorrespondenceCategory.tensorCorr r r' a a')
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.tensorUnit_eq_tate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L171). The attribute's comment: “the unit of M\_k is 1 = (Spec k, 1, 0)”.
+**`Stacks.WeilCohomology.ChowMotiveCat.tensorUnit_eq_tate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L171). The attribute's comment: “the unit of M\_k is 1 = (Spec k, 1, 0)”.
 
 > **Stacks Project, Tag 0FGC.** The unit of `M_k` is `𝟏 = 𝟏(0) = (Spec(k), 1, 0)`.
 
@@ -274,7 +274,7 @@ theorem tensorHom_val_eq_homOf {M N M' N' : ChowMotiveCat k} (f : M ⟶ N) (f' :
 theorem tensorUnit_eq_tate : 𝟙_ (ChowMotiveCat k) = tate k 0
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.associator_hom_val`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L178). The attribute's comment: “the associativity constraint of M\_k is the obvious one”.
+**`Stacks.WeilCohomology.ChowMotiveCat.associator_hom_val`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L178). The attribute's comment: “the associativity constraint of M\_k is the obvious one”.
 
 > **Stacks Project, Tag 0FGC.** The associativity constraint of `M_k` is the obvious one: the
 > graph of the associativity isomorphism `(X × Y) × Z ≅ X × (Y × Z)`, cut down by the
@@ -286,7 +286,7 @@ theorem associator_hom_val (M N P : ChowMotiveCat k) :
       ((M ⊗ N) ⊗ P).p ≫ graphHom (α_ M.scheme N.scheme P.scheme).inv
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.braiding_hom_val`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L186). The attribute's comment: “the commutativity constraint of M\_k is the obvious one”.
+**`Stacks.WeilCohomology.ChowMotiveCat.braiding_hom_val`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesMonoidal.lean#L186). The attribute's comment: “the commutativity constraint of M\_k is the obvious one”.
 
 > **Stacks Project, Tag 0FGC.** The commutativity constraint of `M_k` is the obvious one: the
 > graph of the factor switch `X × Y ≅ Y × X`, cut down by the projectors.
@@ -296,7 +296,7 @@ theorem braiding_hom_val (M N : ChowMotiveCat k) :
     (β_ M N).hom.val = (M ⊗ N).p ≫ graphHom (β_ M.scheme N.scheme).inv
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.motiveMonoidalCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean#L58). The attribute's comment: “M\_k is monoidal for (X,p,m) ⊗ (Y,q,n) = (X × Y, p ⊗ q, m+n)”.
+**`Stacks.WeilCohomology.CorrespondenceStructure.motiveMonoidalCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean#L58). The attribute's comment: “M\_k is monoidal for (X,p,m) ⊗ (Y,q,n) = (X × Y, p ⊗ q, m+n)”.
 
 > The category `M_k` of Chow motives is monoidal for the tensor product
 > `(X, p, m) ⊗ (Y, q, n) = (X × Y, p ⊗ q, m + n)`, given the monoidal structure on the category of
@@ -306,7 +306,7 @@ theorem braiding_hom_val (M N : ChowMotiveCat k) :
 def motiveMonoidalCategory : MonoidalCategory S.Motive
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.motiveSymmetricCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean#L65). The attribute's comment: “M\_k is symmetric monoidal with unit 1 = (Spec(k), 1, 0)”.
+**`Stacks.WeilCohomology.CorrespondenceStructure.motiveSymmetricCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean#L65). The attribute's comment: “M\_k is symmetric monoidal with unit 1 = (Spec(k), 1, 0)”.
 
 > The category `M_k` of Chow motives is symmetric monoidal, with the associativity and
 > commutativity constraints of the category of correspondences cut down by the projectors, and with
@@ -316,7 +316,7 @@ def motiveMonoidalCategory : MonoidalCategory S.Motive
 def motiveSymmetricCategory : SymmetricCategory S.Motive
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.motive_associator_hom_f`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean#L83). The attribute's comment: “the associativity constraint of M\_k is the obvious one”.
+**`Stacks.WeilCohomology.CorrespondenceStructure.motive_associator_hom_f`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean#L83). The attribute's comment: “the associativity constraint of M\_k is the obvious one”.
 
 > The associativity constraint of `M_k` is the graph of the associativity constraint of the
 > ambient category, cut down by the projectors.
@@ -326,7 +326,7 @@ theorem motive_associator_hom_f (M N P : S.Motive) :
     (α_ M N P).hom.f = ((M ⊗ N) ⊗ P).p ≫ S.graph (α_ M.X.as N.X.as P.X.as).hom
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.motive_braiding_hom_f`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean#L90). The attribute's comment: “the commutativity constraint of M\_k is the obvious one”.
+**`Stacks.WeilCohomology.CorrespondenceStructure.motive_braiding_hom_f`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean#L90). The attribute's comment: “the commutativity constraint of M\_k is the obvious one”.
 
 > The commutativity constraint of `M_k` is the graph of the factor switch of the ambient
 > category, cut down by the projectors.
@@ -336,7 +336,7 @@ theorem motive_braiding_hom_f (M N : S.Motive) :
     (β_ M N).hom.f = (M ⊗ N).p ≫ S.graph (β_ M.X.as N.X.as).hom
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.motive_tensorUnit_as`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean#L97). The attribute's comment: “the unit of M\_k is 1 = (Spec(k), 1, 0)”.
+**`Stacks.WeilCohomology.CorrespondenceStructure.motive_tensorUnit_as`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean#L97). The attribute's comment: “the unit of M\_k is 1 = (Spec(k), 1, 0)”.
 
 > The scheme underlying the unit motive `𝟏 = (Spec(k), 1, 0)` is `Spec(k)`, the unit of the
 > ambient category.
@@ -345,7 +345,7 @@ theorem motive_braiding_hom_f (M N : S.Motive) :
 theorem motive_tensorUnit_as : (𝟙_ S.Motive).X.as = 𝟙_ D
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.motive_tensorUnit_p`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean#L102). The attribute's comment: “the projector of the unit of M\_k is the diagonal 1”.
+**`Stacks.WeilCohomology.CorrespondenceStructure.motive_tensorUnit_p`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/MonoidalStructure.lean#L102). The attribute's comment: “the projector of the unit of M\_k is the diagonal 1”.
 
 > The projector of the unit motive `𝟏 = (Spec(k), 1, 0)` is the diagonal correspondence.
 
@@ -357,7 +357,7 @@ theorem motive_tensorUnit_p : (𝟙_ S.Motive).p = S.id (𝟙_ D)
 
 [Tag 0FGD](https://stacks.math.columbia.edu/tag/0FGD) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ChowMotiveCat.projectiveLinePointFibreMotiveIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineSummands.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineSummands.lean#L112). The attribute's comment: “part (1): the motive (P¹\_k, c₀, 0) is isomorphic to 1 = (Spec k, 1, 0), in the category of Chow motives built on the actual composition of correspondences”.
+**`Stacks.WeilCohomology.ChowMotiveCat.projectiveLinePointFibreMotiveIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineSummands.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineSummands.lean#L112). The attribute's comment: “part (1): the motive (P¹\_k, c₀, 0) is isomorphic to 1 = (Spec k, 1, 0), in the category of Chow motives built on the actual composition of correspondences”.
 
 > **Stacks Project, Tag 0FGD (1).** For a rational point `x` of `X = P¹_k`, the motive
 > `(X, c₀, 0)`, with `c₀ = [x × X]`, is isomorphic to `1 = (Spec k, 1, 0)`. The mutually inverse
@@ -370,7 +370,7 @@ def projectiveLinePointFibreMotiveIso :
       (projectiveLinePointFibreCorr_comp_self x hx) 0 ≅ tate k 0
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.projectiveLineFibrePointMotiveIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineSummands.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineSummands.lean#L126). The attribute's comment: “part (2): the motive (P¹\_k, c₂, 0) is isomorphic to 1(-1) = (Spec k, 1, -1), with b' ∘ a' = 1 and a' ∘ b' = c₂ proved by intersecting the actual cycles”.
+**`Stacks.WeilCohomology.ChowMotiveCat.projectiveLineFibrePointMotiveIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineSummands.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineSummands.lean#L126). The attribute's comment: “part (2): the motive (P¹\_k, c₂, 0) is isomorphic to 1(-1) = (Spec k, 1, -1), with b' ∘ a' = 1 and a' ∘ b' = c₂ proved by intersecting the actual cycles”.
 
 > **Stacks Project, Tag 0FGD (2).** For a rational point `x` of `X = P¹_k`, the motive
 > `(X, c₂, 0)`, with `c₂ = [X × x]`, is isomorphic to `1(-1) = (Spec k, 1, -1)`. The mutually
@@ -382,7 +382,7 @@ def projectiveLinePointFibreMotiveIso :
 def projectiveLineFibrePointMotiveIso : lefschetzMotive x hx ≅ tate k (-1)
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.constantGraphMotiveIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ProjectiveLineSummands.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ProjectiveLineSummands.lean#L224). The attribute's comment: “part (1): the motive (X, c\_0, 0) is isomorphic to 1 = (Spec k, 1, 0)”.
+**`Stacks.WeilCohomology.CorrespondenceStructure.constantGraphMotiveIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ProjectiveLineSummands.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ProjectiveLineSummands.lean#L224). The attribute's comment: “part (1): the motive (X, c\_0, 0) is isomorphic to 1 = (Spec k, 1, 0)”.
 
 > **Stacks Project, Tag 0FGD (1).** The motive `(X, c₀, 0)` is isomorphic to the motive
 > `h(Spec k) = 1 = (Spec k, 1, 0)`.
@@ -401,17 +401,19 @@ def constantGraphMotiveIso {P Q : D} (α : P ⟶ Q) (β : Q ⟶ P) (hαβ : α �
 
 [Tag 0FGE](https://stacks.math.columbia.edu/tag/0FGE) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ChowMotiveCat.lefschetzMotive`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotive.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotive.lean#L65). The attribute's comment: “the Lefschetz motive (X, c\_2, 0) for X = P^1\_k, written L, bold L, Q(-1) or h^2(P^1\_k)”.
+**`Stacks.WeilCohomology.ChowMotiveCat.lefschetzMotive`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotive.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotive.lean#L67). The attribute's comment: “the Lefschetz motive (X, c\_2, 0) in M\_k for X = P^1\_k and c\_2 as in 0FG6, written L, bold L, Q(-1) or h^2(P^1\_k)”.
 
 > The *Lefschetz motive* `(P¹_k, c₂, 0)`: the projective line, cut down by the projector
-> `c₂ = [P¹_k × x]` of Example 0FG6 attached to a `k`-rational point `x`, with no twist. In the
-> literature it is denoted `L`, `𝐋`, `𝐐(-1)` or `h²(P¹_k)`.
+> `c₂ = [P¹_k × x]` of Example 0FG6 attached to a `k`-rational point `x`, with no twist, as an
+> object of the category `M_k` of Chow motives. In the literature it is denoted `L`, `𝐋`, `𝐐(-1)`
+> or `h²(P¹_k)`. Its invertibility, the content of Remark 0FGE, is
+> `Stacks.WeilCohomology.ChowMotiveCat.isInvertible_lefschetzMotive`.
 
 ```lean
 def lefschetzMotive : ChowMotiveCat k
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.lefschetzMotiveHasInverse`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotiveInvertible.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotiveInvertible.lean#L66). The attribute's comment: “the Lefschetz motive (P^1\_k, c\_2, 0) is invertible in M\_k, with inverse the Tate motive 1(1)”.
+**`Stacks.WeilCohomology.ChowMotiveCat.lefschetzMotiveHasInverse`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotiveInvertible.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotiveInvertible.lean#L66). The attribute's comment: “the Lefschetz motive (P^1\_k, c\_2, 0) is invertible in M\_k, with inverse the Tate motive 1(1), via the isomorphism with 1(-1) of 0FGD; unconditional”.
 
 > **Stacks Project, Tag 0FGE.** The Lefschetz motive `L = (P¹_k, c₂, 0)` is invertible in the
 > symmetric monoidal category `M_k`, with inverse the Tate motive `1(1) = (Spec k, 1, 1)`: a
@@ -422,62 +424,29 @@ def lefschetzMotive : ChowMotiveCat k
 def lefschetzMotiveHasInverse : HasInverse (lefschetzMotive x hx)
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.lefschetzMotiveHasInverse_inv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotiveInvertible.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotiveInvertible.lean#L74). The attribute's comment: “the inverse of the Lefschetz motive is the Tate motive 1(1)”.
+**`Stacks.WeilCohomology.ChowMotiveCat.lefschetzMotiveHasInverse_inv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotiveInvertible.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotiveInvertible.lean#L74). The attribute's comment: “the inverse of the Lefschetz motive is the Tate motive 1(1) = (Spec k, 1, 1)”.
 
 > **Stacks Project, Tag 0FGE.** The inverse of the Lefschetz motive is the Tate motive
-> `1(1) = (Spec k, 1, 1)`.
+> `1(1) = (Spec k, 1, 1)`, also written `L⁻¹`, `𝐋⁻¹`, `𝐓` or `𝐐(1)`.
 
 ```lean
 theorem lefschetzMotiveHasInverse_inv : (lefschetzMotiveHasInverse x hx).inv = tate k 1
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.isInvertible_lefschetzMotive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotiveInvertible.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotiveInvertible.lean#L80). The attribute's comment: “the Lefschetz motive is invertible (Definition 0FFN)”.
+**`Stacks.WeilCohomology.ChowMotiveCat.isInvertible_lefschetzMotive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotiveInvertible.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/LefschetzMotiveInvertible.lean#L80). The attribute's comment: “the Lefschetz motive is invertible in M\_k (Categories, Definition 0FFN)”.
 
-> **Stacks Project, Tag 0FGE.** The Lefschetz motive is invertible in `M_k` (Categories,
-> Definition 0FFN).
+> **Stacks Project, Tag 0FGE.** The Lefschetz motive is invertible in `M_k` in the sense of
+> Categories, Definition 0FFN, for every field `k` and `k`-rational point `x` of `P¹_k`.
 
 ```lean
 theorem isInvertible_lefschetzMotive : IsInvertible (lefschetzMotive x hx)
-```
-
-**`Stacks.WeilCohomology.CorrespondenceStructure.lefschetzMotive`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ProjectiveLineDecomposition.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ProjectiveLineDecomposition.lean#L241). The attribute's comment: “the Lefschetz motive (X, c\_2, 0), written L, bold L, Q(-1) or h^2(P^1\_k)”.
-
-> **Stacks Project, Tag 0FGE.** The *Lefschetz motive* `(X, c₂, 0)`: the formal direct factor
-> of `X` cut out by the projector `c₂ = [X × x]` of Example 0FG6, with no Tate twist. In the
-> literature it is denoted `L`, `𝐋`, `Q(-1)` or `h²(P¹_k)`.
->
-> For the source `X` is `P¹_k` and `c₂` is the class of the fibre `X × x` of a `k`-rational point
-> `x`, whose idempotence is the composition rule `c₂ ∘ c₂ = c₂` of Example 0FG6 — available as
-> `Stacks.WeilCohomology.CorrespondenceStructure.lefschetzProjector_idem` once `[Δ] = c₀ + c₂` and
-> `c₀ ∘ c₀ = c₀` are known — and without which `(X, c₂, 0)` is not a motive at all.
-
-```lean
-def lefschetzMotive (hc₂ : c₂ ≫ c₂ = c₂) : Karoubi S.Obj
-```
-
-**`Stacks.WeilCohomology.CorrespondenceStructure.lefschetzMotiveHasInverse`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ProjectiveLineDecomposition.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ProjectiveLineDecomposition.lean#L329). The attribute's comment: “the Lefschetz motive is invertible with inverse the Tate motive 1(1); granted: the monoidal structure on M\_k (Stacks 0FGC), the isomorphism L iso 1(-1) of Lemma 0FGD, and a two-sided tensor inverse of 1(-1)”.
-
-> **Stacks Project, Tag 0FGE.** The Lefschetz motive is invertible, with inverse the Tate
-> motive `1(1)`.
->
-> By Lemma 0FGD the Lefschetz motive is isomorphic to `1(-1)`, which is the hypothesis `e`; a
-> two-sided tensor inverse of `1(-1)` — its inverse object being `1(1)`, the Tate motive — is the
-> hypothesis `h`, and the symmetric monoidal structure of `M_k`, which is Stacks 0FGC and is not
-> constructed in this repository, is the instance hypothesis. The inverse object produced is the
-> one given, as recorded by
-> `Stacks.WeilCohomology.CorrespondenceStructure.lefschetzMotiveHasInverse_inv`.
-
-```lean
-def lefschetzMotiveHasInverse [MonoidalCategory (Karoubi S.Obj)] (hc₂ : c₂ ≫ c₂ = c₂)
-    {N : Karoubi S.Obj} (e : S.lefschetzMotive c₂ hc₂ ≅ N) (h : HasInverse N) :
-    HasInverse (S.lefschetzMotive c₂ hc₂)
 ```
 
 ## Tag 0FGF, a lemma
 
 [Tag 0FGF](https://stacks.math.columbia.edu/tag/0FGF) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ChowMotiveCat.hasFiniteBiproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesFiniteBiproducts.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesFiniteBiproducts.lean#L81). The attribute's comment: “M\_k is additive: finite direct sums, via (Y ⨿ Z, p + q, m) for equal twists and (Z, q, n) ≅ (Z, q, m) ⊗ (P¹, c₂, 0)^\{⊗(m-n)}”.
+**`Stacks.WeilCohomology.ChowMotiveCat.hasFiniteBiproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesFiniteBiproducts.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesFiniteBiproducts.lean#L82). The attribute's comment: “M\_k is additive: finite direct sums, via (Y ⨿ Z, p + q, m) for equal twists and (Z, q, n) ≅ (Z, q, m) ⊗ (P¹, c₂, 0)^\{⊗(m-n)}”.
 
 > The category `M_k` of Chow motives is additive: it is preadditive (`ℚ`-linear, Stacks 0FGA)
 > and has finite direct sums. A zero object is a motive with zero projector; two motives
@@ -493,7 +462,7 @@ instance hasFiniteBiproducts : HasFiniteBiproducts (ChowMotiveCat k)
 
 [Tag 0FGG](https://stacks.math.columbia.edu/tag/0FGG) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ChowMotiveCat.projectiveLineMotiveBiproductData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineMotive.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineMotive.lean#L128). The attribute's comment: “h(P^1\_k) is the direct sum of 1 and 1(-1) in M\_k: a bilimit bicone over 1 and 1(-1) with point h(P^1\_k), for the actual P^1\_k and the actual category of Chow motives”.
+**`Stacks.WeilCohomology.ChowMotiveCat.projectiveLineMotiveBiproductData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineMotive.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineMotive.lean#L129). The attribute's comment: “h(P^1\_k) is the direct sum of 1 and 1(-1) in M\_k: a bilimit bicone over 1 and 1(-1) with point h(P^1\_k), built from any k-rational point of the actual P^1\_k, in the actual category of Chow motives, with Example 0FG6 and Lemma 0FGD proved for it”.
 
 > **Stacks Project, Tag 0FGG.** In `M_k` the motive `h(P¹_k)` is the direct sum of
 > `1 = (Spec k, 1, 0)` and `1(-1) = (Spec k, 1, -1)`: a bilimit binary bicone over `1` and `1(-1)`
@@ -508,68 +477,27 @@ instance hasFiniteBiproducts : HasFiniteBiproducts (ChowMotiveCat k)
 def projectiveLineMotiveBiproductData : BinaryBiproductData (tate k 0) (tate k (-1))
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.projectiveLineMotiveIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineMotive.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineMotive.lean#L154). The attribute's comment: “in M\_k we have h(P^1\_k) iso 1 + 1(-1), for the actual P^1\_k and the actual category of Chow motives”.
+**`Stacks.WeilCohomology.ChowMotiveCat.projectiveLineMotiveIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineMotive.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineMotive.lean#L159). The attribute's comment: “in M\_k we have h(P^1\_k) iso 1 + 1(-1), for the actual P^1\_k and the actual category of Chow motives, with Example 0FG6 and Lemma 0FGD proved for P^1\_k”.
 
 > **Stacks Project, Tag 0FGG.** In `M_k` we have `h(P¹_k) ≅ 1 ⊕ 1(-1)`.
 >
 > This is `Stacks.WeilCohomology.ChowMotiveCat.projectiveLineMotiveBiproductData`, at the rational
-> point `∞` of `P¹_k`, compared with the chosen direct sum `1 ⊞ 1(-1)`.
+> point `∞` of `P¹_k`, compared with the chosen direct sum `1 ⊞ 1(-1)`, whose existence is
+> `Stacks.WeilCohomology.ChowMotiveCat.hasBinaryBiproduct_tate_zero_tate_neg_one`. Nothing beyond
+> the field `k` is assumed: the relations of Example 0FG6 and the isomorphisms of Lemma 0FGD are
+> proved for `P¹_k`. The abstract form of the deduction, for an arbitrary category of
+> correspondences, is `Stacks.WeilCohomology.CorrespondenceStructure.projectiveLineMotiveIso`.
 
 ```lean
 def projectiveLineMotiveIso :
     (h k).obj (Opposite.op (projectiveLineObj k)) ≅ tate k 0 ⊞ tate k (-1)
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.projectiveLineBiproductData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ProjectiveLineDecomposition.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ProjectiveLineDecomposition.lean#L273). The attribute's comment: “h(P^1\_k) is the direct sum of 1 and 1(-1): the bilimit bicone with point h(P^1\_k); granted: Example 0FG6's [Delta] = c\_0 + c\_2 and c\_0 o c\_0 = c\_0, and the two isomorphisms of Lemma 0FGD”.
-
-> **Stacks Project, Tag 0FGG.** In `M_k` the motive `h(P¹_k)` is the direct sum of `1` and
-> `1(-1)`: the binary bicone over `1` and `1(-1)` with point `h(P¹_k)`, together with the proof
-> that it is a bilimit.
->
-> The hypotheses `hsum` and `h₀` are the two irreducible assertions `[Δ] = c₀ + c₂` and
-> `c₀ ∘ c₀ = c₀` of Example 0FG6; the other two composition rules it states are derived. The
-> isomorphisms `e₀` and `e₂` are the two conclusions `(X, c₀, 0) ≅ 1` and `(X, c₂, 0) ≅ 1(-1)` of
-> Lemma 0FGD, `1` being the image of the monoidal unit `P = Spec k` of the ambient category and
-> `1(-1)` the image of its Tate twist `T = (Spec k, -1)`; the source's proof of Lemma 0FGG is
-> precisely the deduction from these. What is proved is that deduction: the two projectors being
-> orthogonal idempotents with sum `[Δ]`, the motive `h(P¹_k) = (P¹_k, [Δ], 0)` splits as the direct
-> sum of the two summands they cut out, which `e₀` and `e₂` then name.
-
-```lean
-def projectiveLineBiproductData (hsum : c₀ + c₂ = 𝟙 (Obj.mk Q : S.Obj)) (h₀ : c₀ ≫ c₀ = c₀)
-    (e₀ : (⟨Obj.mk Q, c₀, h₀⟩ : Karoubi S.Obj) ≅ (toKaroubi S.Obj).obj (Obj.mk P))
-    (e₂ : S.lefschetzMotive c₂ (S.lefschetzProjector_idem c₀ c₂ hsum h₀) ≅
-      (toKaroubi S.Obj).obj (Obj.mk T)) :
-    BinaryBiproductData ((toKaroubi S.Obj).obj (Obj.mk P)) ((toKaroubi S.Obj).obj (Obj.mk T))
-```
-
-**`Stacks.WeilCohomology.CorrespondenceStructure.projectiveLineMotiveIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ProjectiveLineDecomposition.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ProjectiveLineDecomposition.lean#L304). The attribute's comment: “in M\_k we have h(P^1\_k) iso 1 + 1(-1); granted: Example 0FG6's [Delta] = c\_0 + c\_2 and c\_0 o c\_0 = c\_0, and the two isomorphisms of Lemma 0FGD”.
-
-> **Stacks Project, Tag 0FGG.** In `M_k` we have `h(P¹_k) ≅ 1 ⊕ 1(-1)`.
->
-> This is the isomorphism form of
-> `Stacks.WeilCohomology.CorrespondenceStructure.projectiveLineBiproductData`, with the direct sum
-> written in the `⊞` notation; the `HasBinaryBiproduct` instance argument that notation needs is
-> discharged, from the same hypotheses, by
-> `Stacks.WeilCohomology.CorrespondenceStructure.hasBinaryBiproduct_motive`.
-
-```lean
-noncomputable def projectiveLineMotiveIso
-    (hsum : c₀ + c₂ = 𝟙 (Obj.mk Q : S.Obj)) (h₀ : c₀ ≫ c₀ = c₀)
-    (e₀ : (⟨Obj.mk Q, c₀, h₀⟩ : Karoubi S.Obj) ≅ (toKaroubi S.Obj).obj (Obj.mk P))
-    (e₂ : S.lefschetzMotive c₂ (S.lefschetzProjector_idem c₀ c₂ hsum h₀) ≅
-      (toKaroubi S.Obj).obj (Obj.mk T))
-    [HasBinaryBiproduct ((toKaroubi S.Obj).obj (Obj.mk P))
-      ((toKaroubi S.Obj).obj (Obj.mk T))] :
-    (toKaroubi S.Obj).obj (Obj.mk Q) ≅
-      (toKaroubi S.Obj).obj (Obj.mk P) ⊞ (toKaroubi S.Obj).obj (Obj.mk T)
-```
-
 ## Tag 0FGH, a lemma
 
 [Tag 0FGH](https://stacks.math.columbia.edu/tag/0FGH) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ChowMotiveCat.universalProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesUniversalProperty.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesUniversalProperty.lean#L95). The attribute's comment: “a Q-linear symmetric monoidal functor F on degree-0 correspondences with the image of F(c₂) on F(P¹) invertible factors through M\_k, uniquely up to unique monoidal isomorphism”.
+**`Stacks.WeilCohomology.ChowMotiveCat.universalProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesUniversalProperty.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotivesUniversalProperty.lean#L104). The attribute's comment: “a Q-linear symmetric monoidal functor F on degree-0 correspondences with the image of F(c₂) on F(P¹) invertible factors through M\_k, uniquely up to unique monoidal isomorphism”.
 
 > **Stacks Project, Tag 0FGH.** Let `X = P¹_k`, `x` a rational point and `c₂ = [X × x]`
 > (Example 0FG6). Let `𝒞` be a `ℚ`-linear Karoubian symmetric monoidal category. A `ℚ`-linear functor
@@ -579,6 +507,9 @@ noncomputable def projectiveLineMotiveIso
 > `X ↦ (X, 1, 0)` — by a monoidal isomorphism, `G` being moreover additive and `ℚ`-linear — and the
 > factorization is unique: any two are related by a unique monoidal isomorphism compatible with the
 > identifications.
+>
+> This is the declaration registered for Stacks 0FGH; the Karoubi-envelope lemmas of
+> `StacksFrontier.AlgebraicGeometry.WeilCohomology.Motives.UniversalProperty` are auxiliary.
 
 ```lean
 theorem universalProperty {𝒞 : Type u₂} [Category.{v₂} 𝒞] [MonoidalCategory 𝒞]
@@ -601,53 +532,11 @@ theorem universalProperty {𝒞 : Type u₂} [Category.{v₂} 𝒞] [MonoidalCat
             φ₂.hom = φ₁.hom
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.motiveExtensionCompToKaroubi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/UniversalProperty.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/UniversalProperty.lean#L99). The attribute's comment: “the extension of F to M\_k restricts to F along h”.
-
-> **Stacks Project, Tag 0FGH.** The extension restricts along the functor `h` of Stacks 0FGA to
-> the functor one started with: `F` factors through the category of Chow motives.
-
-```lean
-noncomputable def motiveExtensionCompToKaroubi :
-    toKaroubi S.Obj ⋙ motiveExtension S F ≅ F
-```
-
-**`Stacks.WeilCohomology.CorrespondenceStructure.existsUnique_natTrans_of_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/UniversalProperty.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/UniversalProperty.lean#L115). The attribute's comment: “a factorisation through M\_k is unique up to a unique isomorphism; the source's `uniquely` is corrected, the construction it gives depending on choices”.
-
-> **Stacks Project, Tag 0FGH.** A natural transformation between two functors on the category of
-> Chow motives is determined by its restriction along the functor `h` of Stacks 0FGA, and every
-> natural transformation of the restrictions arises this way. Hence a factorisation of a functor on
-> correspondences through `M_k` is unique up to a unique isomorphism.
-
-```lean
-theorem existsUnique_natTrans_of_restriction {G₁ G₂ : S.Motive ⥤ 𝒞}
-    (τ : toKaroubi S.Obj ⋙ G₁ ⟶ toKaroubi S.Obj ⋙ G₂) :
-    ∃! α : G₁ ⟶ G₂, whiskerLeft (toKaroubi S.Obj) α = τ
-```
-
-**`Stacks.WeilCohomology.CorrespondenceStructure.exists_symmetricMonoidal_factorisation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/UniversalProperty.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/UniversalProperty.lean#L130). The attribute's comment: “a Q-linear symmetric monoidal functor on degree-zero correspondences whose image of F(c2) is invertible factors through M\_k”.
-
-> **Stacks Project, Tag 0FGH.** Let `X`, `c₂` be as in Stacks 0FG6. Let `𝒞` be a `ℚ`-linear
-> Karoubian symmetric monoidal category. A `ℚ`-linear functor of symmetric monoidal categories from
-> the category of correspondences of degree zero to `𝒞`, such that the image of `F(c₂)` on `F(X)`
-> is an invertible object, factors through a functor `M_k ⟶ 𝒞` of symmetric monoidal categories;
-> the factorisation is unique up to a unique isomorphism by
-> `Stacks.WeilCohomology.CorrespondenceStructure.existsUnique_natTrans_of_restriction`.
-
-```lean
-theorem exists_symmetricMonoidal_factorisation [Preadditive S.Obj] [Linear ℚ S.Obj]
-    [Preadditive 𝒞] [Linear ℚ 𝒞] (F : S.Obj ⥤ 𝒞) [F.Braided] [F.Additive]
-    [Functor.Linear ℚ F]
-    (X : S.Obj) (c : X ⟶ X) (_hc : c ≫ c = c)
-    (_hinv : ∃ (U : 𝒞) (i : U ⟶ F.obj X) (e : F.obj X ⟶ U),
-      i ≫ e = 𝟙 U ∧ e ≫ i = F.map c ∧ IsInvertible U) :
-    ∃ (G : S.Motive ⥤ 𝒞) (_ : G.Braided), Nonempty (toKaroubi S.Obj ⋙ G ≅ F)
-```
-
 ## Tag 0FGI, a lemma
 
 [Tag 0FGI](https://stacks.math.columbia.edu/tag/0FGI) in the Stacks Project.
 
-**`Stacks.WeilCohomology.motiveExactPairing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotiveDuality.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotiveDuality.lean#L106).
+**`Stacks.WeilCohomology.motiveExactPairing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotiveDuality.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotiveDuality.lean#L106).
 
 > **Stacks Project, Tag 0FGI.** Let `X` be a smooth projective scheme over `k` which is
 > equidimensional of dimension `d`. Then `h(X)(d) = h(X) ⊗ 𝟏(d)` is a left dual of `h(X)` in the
@@ -662,7 +551,7 @@ def motiveExactPairing (hX : RelativeDimension X.obj.hom d) :
       ((ChowMotiveCat.h k).obj (op X) ⊗ ChowMotiveCat.tate k d)
 ```
 
-**`Stacks.WeilCohomology.nonempty_exactPairing_motive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotiveDuality.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotiveDuality.lean#L116).
+**`Stacks.WeilCohomology.nonempty_exactPairing_motive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotiveDuality.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/MotiveDuality.lean#L116).
 
 > **Stacks 0FGI**, as a statement: `h(X)` has `h(X)(d)` as a left dual in `M_k`.
 
@@ -672,7 +561,7 @@ theorem nonempty_exactPairing_motive (hX : RelativeDimension X.obj.hom d) :
       ((ChowMotiveCat.h k).obj (op X) ⊗ ChowMotiveCat.tate k d))
 ```
 
-**`Stacks.WeilCohomology.selfCorrespondenceEquivCoevaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Duality.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Duality.lean#L116). The attribute's comment: “the identification Corr^0(X,X) = Corr^d(Spec k, X x X) = CH^d(X x X) tensor Q, which puts the identity [D] of h(X) and the unit of the duality in one group”.
+**`Stacks.WeilCohomology.selfCorrespondenceEquivCoevaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Duality.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Duality.lean#L116). The attribute's comment: “the identification Corr^0(X,X) = Corr^d(Spec k, X x X) = CH^d(X x X) tensor Q, which puts the identity [D] of h(X) and the unit of the duality in one group”.
 
 > For `X` equidimensional of dimension `d`, so that `X × X` is
 > equidimensional of dimension `2 * d`, the canonical `ℚ`-linear isomorphism
@@ -690,7 +579,7 @@ def selfCorrespondenceEquivCoevaluation :
       Correspondence C (𝟙 C.S) (pullback.fst sX sX ≫ sX) (2 * d) d
 ```
 
-**`Stacks.WeilCohomology.selfCorrespondenceEquivEvaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Duality.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Duality.lean#L134). The attribute's comment: “the identification Corr^0(X,X) = Corr^\{-d}(X x X, Spec k) = CH\_d(X x X) tensor Q, which puts the identity [D] of h(X) and the counit of the duality in one group”.
+**`Stacks.WeilCohomology.selfCorrespondenceEquivEvaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Duality.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Duality.lean#L134). The attribute's comment: “the identification Corr^0(X,X) = Corr^\{-d}(X x X, Spec k) = CH\_d(X x X) tensor Q, which puts the identity [D] of h(X) and the counit of the duality in one group”.
 
 > For `X` equidimensional of dimension `d` the canonical
 > `ℚ`-linear isomorphism
@@ -707,7 +596,7 @@ def selfCorrespondenceEquivEvaluation :
       Correspondence C (pullback.fst sX sX ≫ sX) (𝟙 C.S) 0 (-d)
 ```
 
-**`Stacks.WeilCohomology.dualityCorrespondenceEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Duality.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Duality.lean#L148). The attribute's comment: “the identification Corr^d(Spec k, X x X) = Corr^\{-d}(X x X, Spec k) that makes one class [D] serve as identity, as unit and as counit”.
+**`Stacks.WeilCohomology.dualityCorrespondenceEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Duality.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Duality.lean#L148). The attribute's comment: “the identification Corr^d(Spec k, X x X) = Corr^\{-d}(X x X, Spec k) that makes one class [D] serve as identity, as unit and as counit”.
 
 > The group of candidate units of the duality and the group of
 > candidate counits are canonically the same, both being `CH^d(X × X) ⊗ ℚ = CH_d(X × X) ⊗ ℚ`:
@@ -724,7 +613,7 @@ def dualityCorrespondenceEquiv :
 
 [Tag 0FGJ](https://stacks.math.columbia.edu/tag/0FGJ) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ChowMotiveCat.rightRigidCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Rigid.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Rigid.lean#L82).
+**`Stacks.WeilCohomology.ChowMotiveCat.rightRigidCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Rigid.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Rigid.lean#L82).
 
 > **Stacks 0FGJ.** Every object of the category `M_k` of Chow motives has a left dual:
 > `M_k` is (right) rigid, in Mathlib's naming.
@@ -733,7 +622,7 @@ def dualityCorrespondenceEquiv :
 noncomputable instance rightRigidCategory : RightRigidCategory (ChowMotiveCat k)
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.nonempty_hasRightDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Rigid.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Rigid.lean#L89).
+**`Stacks.WeilCohomology.ChowMotiveCat.nonempty_hasRightDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Rigid.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/Rigid.lean#L89).
 
 > **Stacks 0FGJ**, objectwise: every Chow motive `M` has a left dual (Stacks' "`Mᘁ` is a left
 > dual of `M`" is Mathlib's `ExactPairing M Mᘁ`).
@@ -742,7 +631,7 @@ noncomputable instance rightRigidCategory : RightRigidCategory (ChowMotiveCat k)
 theorem nonempty_hasRightDual (M : ChowMotiveCat k) : Nonempty (HasRightDual M)
 ```
 
-**`Stacks.WeilCohomology.rightRigidCategoryOfRetractTwist`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Rigidity.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Rigidity.lean#L180). The attribute's comment: “every object of M\_k has a left dual, i.e. M\_k is right rigid in Mathlib's naming. STATED IN AN ABSTRACT MONOIDAL CATEGORY, not on this library's category of motives, because the monoidal structure on Karoubi S.Obj is Stacks 0FGC, which is not yet formalized in this repository, so the twist h(X)(m) = h(X) tensor 1(m) cannot be written on `S.Motive` at all. The statement specialises to the source's setting as soon as 0FGC is formalized, and h : D → Mot is kept untwisted on purpose, the Tate objects being supplied separately as T : Z → Mot, exactly as in the 0FGN statement of ManinIdentityPrinciple whose `hdual` hypothesis this discharges. Three pieces of data are carried rather than used, each named in the signature: Stacks 0FGI that h(X) has a left dual (hh), which this repository does prove from DiagonalPairingData and which rightRigidCategoryOfDiagonalPairingData feeds in; invertibility of the Tate motive, that 1(m) is a left dual of 1(-m) in the Stacks 0FFP sense (hT); and generation, that every motive is a retract of a twist h(X)(m) (hgen), taken in the weak Retract sense so the theorem is stronger. Karoubianness of M\_k is the typeclass IsIdempotentComplete. Reused rather than reproved: Stacks 0FFS as Mathlib's hasRightDualTensor and Stacks 0FFU as this library's nonempty\_hasRightDual\_of\_retract”.
+**`Stacks.WeilCohomology.rightRigidCategoryOfRetractTwist`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Rigidity.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/Rigidity.lean#L186). The attribute's comment: “every object of M\_k has a left dual, i.e. M\_k is right rigid in Mathlib's naming. STATED IN AN ABSTRACT MONOIDAL CATEGORY, not on this library's category of motives, because the monoidal structure on Karoubi S.Obj is Stacks 0FGC, which is not yet formalized in this repository, so the twist h(X)(m) = h(X) tensor 1(m) cannot be written on `S.Motive` at all. The statement specialises to the source's setting as soon as 0FGC is formalized, and h : D → Mot is kept untwisted on purpose, the Tate objects being supplied separately as T : Z → Mot, exactly as in the 0FGN statement of ManinIdentityPrinciple whose `hdual` hypothesis this discharges. Three pieces of data are carried rather than used, each named in the signature: Stacks 0FGI that h(X) has a left dual (hh), which this repository does prove from DiagonalPairingData and which rightRigidCategoryOfDiagonalPairingData feeds in; invertibility of the Tate motive, that 1(m) is a left dual of 1(-m) in the Stacks 0FFP sense (hT); and generation, that every motive is a retract of a twist h(X)(m) (hgen), taken in the weak Retract sense so the theorem is stronger. Karoubianness of M\_k is the typeclass IsIdempotentComplete. Reused rather than reproved: Stacks 0FFS as Mathlib's hasRightDualTensor and Stacks 0FFU as this library's nonempty\_hasRightDual\_of\_retract”.
 
 > **Stacks Project, Tag 0FGJ.** Every object of the category `M_k` of motives has a left dual,
 > i.e. `M_k` is a rigid category.
@@ -769,4 +658,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 45.4, Tag 0FG9](https://stacks.math.columbia.edu/tag/0FG9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

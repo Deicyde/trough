@@ -7,7 +7,7 @@ statement: formalized
 
 # Repetend tables
 
-41 results, 41 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html).
+41 results, 41 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html).
 
 ## Raising the base by multiples of $n$ shifts repetend digits linearly
 
@@ -21,7 +21,7 @@ $t$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.digit_add_mul_modulus_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#digit-add-mul-modulus-eq).
+Stated but not proved: `MetaMathlibExt.digit_add_mul_modulus_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#digit-add-mul-modulus-eq).
 
 ## The number of units of order $L$ is a multiple of $\varphi(L)$
 
@@ -33,7 +33,7 @@ $(\mathbb{Z}/n\mathbb{Z})^\times$ is divisible by Euler's totient $\varphi(L)$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.totient_dvd_card_orderOf_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#totient-dvd-card-order-of-eq).
+Stated but not proved: `MetaMathlibExt.totient_dvd_card_orderOf_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#totient-dvd-card-order-of-eq).
 
 ## Moduli with exactly $\varphi(L)$ units of even order $L$
 
@@ -46,7 +46,7 @@ for some $t \in \{1, 2\}$ and some odd prime power $q$ with $L \mid \varphi(q)$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.card_orderOf_eq_totient_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#card-order-of-eq-totient-classification).
+Stated but not proved: `MetaMathlibExt.card_orderOf_eq_totient_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#card-order-of-eq-totient-classification).
 
 ## Elements of order two modulo $n$
 
@@ -58,7 +58,7 @@ number $k$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.card_orderOf_eq_two_eq_two_pow_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#card-order-of-eq-two-eq-two-pow-sub-one).
+Stated but not proved: `MetaMathlibExt.card_orderOf_eq_two_eq_two_pow_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#card-order-of-eq-two-eq-two-pow-sub-one).
 
 ## Order-six elements modulo a power of a prime congruent to $1$ mod $6$
 
@@ -71,7 +71,7 @@ $\mathbb{Z}/n\mathbb{Z}$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 16.
 
-Stated but not proved: `MetaMathlibExt.orderOf_eq_six_ne_small_residues` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#order-of-eq-six-ne-small-residues).
+Stated but not proved: `MetaMathlibExt.orderOf_eq_six_ne_small_residues` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#order-of-eq-six-ne-small-residues).
 
 ## Sign balance for differences of shifted linear residues
 
@@ -87,7 +87,7 @@ $f_1 \equiv f_2 \pmod p$, the same holds among the $z$ with $1 \le z \le Q - 1$ 
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.sign_balance_shifted_linear_residues` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#sign-balance-shifted-linear-residues).
+Stated but not proved: `MetaMathlibExt.sign_balance_shifted_linear_residues` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#sign-balance-shifted-linear-residues).
 
 ## Block sums of a repetend
 
@@ -102,7 +102,7 @@ $SN = R(B^k - 1)$, and if $B^k - 1$ is coprime to $N$, then $B^k - 1$ divides $S
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.repetend_block_sum_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-block-sum-eq).
+Stated but not proved: `MetaMathlibExt.repetend_block_sum_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-block-sum-eq).
 
 ## Long division of a proper fraction
 
@@ -118,7 +118,7 @@ and $r_j n = b c_j - c_{j+1}$ for every $j \ge 0$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.long_division_remainder_expansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#long-division-remainder-expansion).
+Stated but not proved: `MetaMathlibExt.long_division_remainder_expansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#long-division-remainder-expansion).
 
 ## The last repetend digit is nonzero
 
@@ -133,7 +133,7 @@ paper's table.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 25.
 
-Stated but not proved: `MetaMathlibExt.repetend_last_digit_ne_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-last-digit-ne-zero).
+Stated but not proved: `MetaMathlibExt.repetend_last_digit_ne_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-last-digit-ne-zero).
 
 ## A constraint on $b^2 + un$ between $2$ and $n - 2$
 
@@ -146,7 +146,7 @@ The paper states this for a small base $b$; here $b$ is any natural number.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 31.
 
-Stated but not proved: `MetaMathlibExt.ne_add_one_of_sq_add_mul_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#ne-add-one-of-sq-add-mul-mem).
+Stated but not proved: `MetaMathlibExt.ne_add_one_of_sq_add_mul_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#ne-add-one-of-sq-add-mul-mem).
 
 ## Long-division remainders and small bases of prime order
 
@@ -160,7 +160,7 @@ $2 \le a \le n - 1$ whose multiplicative order modulo $n$ is $L$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.long_division_remainders_erase_one_eq_small_bases` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#long-division-remainders-erase-one-eq-sm).
+Stated but not proved: `MetaMathlibExt.long_division_remainders_erase_one_eq_small_bases` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#long-division-remainders-erase-one-eq-sm).
 
 ## Small bases of order greater than two come in pairs
 
@@ -172,7 +172,7 @@ multiplicative order modulo $n$ is $L$ is even.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.even_card_small_bases_orderOf` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#even-card-small-bases-order-of).
+Stated but not proved: `MetaMathlibExt.even_card_small_bases_orderOf` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#even-card-small-bases-order-of).
 
 ## Repetend digits are symmetric under inverse indices
 
@@ -186,7 +186,7 @@ $r_{xj, j'} = r_{x, j}$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.repetend_digit_pow_mul_eq_of_mul_modEq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-digit-pow-mul-eq-of-mul-mod-eq).
+Stated but not proved: `MetaMathlibExt.repetend_digit_pow_mul_eq_of_mul_modEq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-digit-pow-mul-eq-of-mul-mod-eq).
 
 ## Columns $j$ and $j^{-1}$ of a repetend table match
 
@@ -201,7 +201,7 @@ multisets.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.repetend_column_eq_column_of_mul_modEq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-column-eq-column-of-mul-mod-eq).
+Stated but not proved: `MetaMathlibExt.repetend_column_eq_column_of_mul_modEq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-column-eq-column-of-mul-mod-eq).
 
 ## Units modulo $L$ whose square is not $1$
 
@@ -216,7 +216,7 @@ In the paper these $j$ index the Class A columns of a repetend table.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.card_coprime_not_sq_modEq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#card-coprime-not-sq-mod-eq-one).
+Stated but not proved: `MetaMathlibExt.card_coprime_not_sq_modEq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#card-coprime-not-sq-mod-eq-one).
 
 ## The last column pairs a base with its inverse
 
@@ -229,7 +229,7 @@ $\lfloor b'^{L}/n \rfloor \bmod b' = \lfloor b^{L}/n \rfloor \bmod b$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.repetend_last_column_inv_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-last-column-inv-eq).
+Stated but not proved: `MetaMathlibExt.repetend_last_column_inv_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-last-column-inv-eq).
 
 ## Class B matched columns of repetend tables
 
@@ -248,7 +248,7 @@ The proportion conjectured in the source is not stated here.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.repetend_columns_match_iff_triple_sum_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-match-iff-triple-sum-eq).
+Stated but not proved: `MetaMathlibExt.repetend_columns_match_iff_triple_sum_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-match-iff-triple-sum-eq).
 
 ## Differences of repetend digits
 
@@ -262,7 +262,7 @@ $$n (r_{ym,e} - r_{y,d}) = b_{ym} b_{yme} - b_{ym(e+1)} - b_y b_{yd} + b_{y(d+1)
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.repetend_digit_sub_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-digit-sub-eq).
+Stated but not proved: `MetaMathlibExt.repetend_digit_sub_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-digit-sub-eq).
 
 ## The $p$-adic valuation of $B^2 - B + 1$ for a base of order $6p^j$
 
@@ -275,7 +275,7 @@ valuation of $B^2 - B + 1$ is exactly $i - j$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.padicValNat_sq_sub_add_one_of_orderOf_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#padic-val-nat-sq-sub-add-one-of-order-of).
+Stated but not proved: `MetaMathlibExt.padicValNat_sq_sub_add_one_of_orderOf_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#padic-val-nat-sq-sub-add-one-of-order-of).
 
 ## A power of $B$ equal to $B - 1$ modulo $p^i$
 
@@ -289,7 +289,7 @@ $z \equiv 1 - B \pmod Q$. Then $B^z \bmod n = B - 1$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.pow_mod_eq_sub_one_of_orderOf_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#pow-mod-eq-sub-one-of-order-of-eq).
+Stated but not proved: `MetaMathlibExt.pow_mod_eq_sub_one_of_orderOf_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#pow-mod-eq-sub-one-of-order-of-eq).
 
 ## Powers of a base of order $6p^j$ modulo $p^j$ depend only on the exponent modulo $6$
 
@@ -302,7 +302,7 @@ numbers with $y \equiv s \pmod 6$, then $b^y \equiv b^s \pmod{p^j}$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 10.
 
-Stated but not proved: `MetaMathlibExt.pow_modEq_pow_of_modEq_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#pow-mod-eq-pow-of-mod-eq-six).
+Stated but not proved: `MetaMathlibExt.pow_modEq_pow_of_modEq_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#pow-mod-eq-pow-of-mod-eq-six).
 
 ## Powers of $b^y \bmod p^i$ that differ by one
 
@@ -321,7 +321,7 @@ $Q$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 11.
 
-Stated but not proved: `MetaMathlibExt.pow_mod_eq_pow_mod_add_one_of_crt` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#pow-mod-eq-pow-mod-add-one-of-crt).
+Stated but not proved: `MetaMathlibExt.pow_mod_eq_pow_mod_add_one_of_crt` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#pow-mod-eq-pow-mod-add-one-of-crt).
 
 ## Relations among the powers $B^{zp^j} \bmod p^i$ for a base of order $6p^j$
 
@@ -338,7 +338,7 @@ $B^{-2Q}$. The paper assumes $j \ge 1$ and $i \ge 2j$; these are not needed here
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 13.
 
-Stated but not proved: `MetaMathlibExt.pow_mod_relations_of_orderOf_eq_six_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#pow-mod-relations-of-order-of-eq-six-mul).
+Stated but not proved: `MetaMathlibExt.pow_mod_relations_of_orderOf_eq_six_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#pow-mod-relations-of-order-of-eq-six-mul).
 
 ## Digit differences for a base of order $6p^j$ modulo $p^i$
 
@@ -356,7 +356,7 @@ The statement is made for all natural numbers $i$ and $j$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 14.
 
-Stated but not proved: `MetaMathlibExt.repetend_digit_sub_mem_zero_n` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-digit-sub-mem-zero-n).
+Stated but not proved: `MetaMathlibExt.repetend_digit_sub_mem_zero_n` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-digit-sub-mem-zero-n).
 
 ## Class C matched columns of repetend tables
 
@@ -375,7 +375,7 @@ clause is not stated here.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.repetend_columns_eq_of_crt_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-eq-of-crt-sq).
+Stated but not proved: `MetaMathlibExt.repetend_columns_eq_of_crt_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-eq-of-crt-sq).
 
 ## Repetend tables of length at most $2$ have no matched columns
 
@@ -389,7 +389,7 @@ distinct $i, j < L$ columns $i$ and $j$ are different.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 26.
 
-Stated but not proved: `MetaMathlibExt.repetend_columns_ne_of_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-ne-of-le-two).
+Stated but not proved: `MetaMathlibExt.repetend_columns_ne_of_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-ne-of-le-two).
 
 ## Repetend tables with one or three rows have no matched columns
 
@@ -403,7 +403,7 @@ rows, then for all distinct $i, j < L$ columns $i$ and $j$ are different.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 27.
 
-Stated but not proved: `MetaMathlibExt.repetend_columns_ne_of_card_eq_one_or_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-ne-of-card-eq-one-or-th).
+Stated but not proved: `MetaMathlibExt.repetend_columns_ne_of_card_eq_one_or_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-ne-of-card-eq-one-or-th).
 
 ## Matching columns of a two-row repetend table
 
@@ -418,7 +418,7 @@ $D_i = D_j$ or $D_i = -D_j$, and the sum of the elements of $C_i$ equals that of
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 28.
 
-Stated but not proved: `MetaMathlibExt.repetend_digit_diff_of_columns_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-digit-diff-of-columns-eq).
+Stated but not proved: `MetaMathlibExt.repetend_digit_diff_of_columns_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-digit-diff-of-columns-eq).
 
 ## Half-period symmetry of the repetend of $1/n$
 
@@ -433,7 +433,7 @@ $r_j + r_{j+L/2} = r_{L/2}$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 29.
 
-Stated but not proved: `MetaMathlibExt.pow_add_half_mod_eq_and_digit_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#pow-add-half-mod-eq-and-digit-add).
+Stated but not proved: `MetaMathlibExt.pow_add_half_mod_eq_and_digit_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#pow-add-half-mod-eq-and-digit-add).
 
 ## Two-row repetend tables of length $3$ have no matched columns
 
@@ -447,7 +447,7 @@ $j$ are different.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 30.
 
-Stated but not proved: `MetaMathlibExt.repetend_columns_ne_of_card_two_of_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-ne-of-card-two-of-three).
+Stated but not proved: `MetaMathlibExt.repetend_columns_ne_of_card_two_of_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-ne-of-card-two-of-three).
 
 ## Two-row repetend tables of length $4$ have no matched columns
 
@@ -461,7 +461,7 @@ $j$ are different.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 32.
 
-Stated but not proved: `MetaMathlibExt.repetend_columns_ne_of_card_two_of_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-ne-of-card-two-of-four).
+Stated but not proved: `MetaMathlibExt.repetend_columns_ne_of_card_two_of_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-ne-of-card-two-of-four).
 
 ## Moduli with exactly two small bases of order six
 
@@ -474,7 +474,7 @@ $n = p^k t$ for some prime $p \equiv 1 \pmod 6$, some $k \ge 1$ and some $t \in 
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 33.
 
-Stated but not proved: `MetaMathlibExt.eq_of_card_small_bases_orderOf_six_eq_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#eq-of-card-small-bases-order-of-six-eq-t).
+Stated but not proved: `MetaMathlibExt.eq_of_card_small_bases_orderOf_six_eq_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#eq-of-card-small-bases-order-of-six-eq-t).
 
 ## Order-$6$ repetend tables of $3^k t$ have no matched columns
 
@@ -488,7 +488,7 @@ columns $i$ and $j$ are different.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 34.
 
-Stated but not proved: `MetaMathlibExt.repetend_columns_ne_of_three_pow_of_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-ne-of-three-pow-of-six).
+Stated but not proved: `MetaMathlibExt.repetend_columns_ne_of_three_pow_of_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-ne-of-three-pow-of-six).
 
 ## Powers of a base of order $6$ modulo $tp^k$
 
@@ -504,7 +504,7 @@ $b_2^2 = un - b_1 + (H + 2b_1 - 1)H$ and $b_1 b_2 = un - 1 + (b_1 + 1)H$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 35.
 
-Stated but not proved: `MetaMathlibExt.pow_mod_eqs_of_orderOf_eq_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#pow-mod-eqs-of-order-of-eq-six).
+Stated but not proved: `MetaMathlibExt.pow_mod_eqs_of_orderOf_eq_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#pow-mod-eqs-of-order-of-eq-six).
 
 ## Digit differences between the rows $b_1$ and $b_1^5$ of the order-$6$ table
 
@@ -520,7 +520,7 @@ $n D_1 = (n - H) D_2$, $D_3 = D_2$ and $n D_4 = H D_2$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 36.
 
-Stated but not proved: `MetaMathlibExt.repetend_digit_diffs_of_orderOf_eq_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-digit-diffs-of-order-of-eq-six).
+Stated but not proved: `MetaMathlibExt.repetend_digit_diffs_of_orderOf_eq_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-digit-diffs-of-order-of-eq-six).
 
 ## Columns $0$ and $5$ of the order-$6$ repetend table of $t p^k$ differ
 
@@ -534,7 +534,7 @@ Then columns $0$ and $5$ are different.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 37.
 
-Stated but not proved: `MetaMathlibExt.repetend_column_zero_ne_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-column-zero-ne-five).
+Stated but not proved: `MetaMathlibExt.repetend_column_zero_ne_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-column-zero-ne-five).
 
 ## Columns $1$, $2$, $3$ of the order-$6$ repetend table differ from columns $0$ and $5$
 
@@ -549,7 +549,7 @@ different multisets.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 38.
 
-Stated but not proved: `MetaMathlibExt.repetend_columns_one_to_three_ne_zero_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 468](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L468). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-one-to-three-ne-zero-fi).
+Stated but not proved: `MetaMathlibExt.repetend_columns_one_to_three_ne_zero_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 468](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L468). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-one-to-three-ne-zero-fi).
 
 ## Column $4$ of the order-$6$ repetend table of $t p^k$ differs from columns $0$ and $5$
 
@@ -563,7 +563,7 @@ and from column $5$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 39.
 
-Stated but not proved: `MetaMathlibExt.repetend_column_four_ne_zero_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-column-four-ne-zero-five).
+Stated but not proved: `MetaMathlibExt.repetend_column_four_ne_zero_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-column-four-ne-zero-five).
 
 ## Columns $1$ to $4$ of the order-$6$ repetend table of $t p^k$ are pairwise different
 
@@ -578,7 +578,7 @@ different.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 40.
 
-Stated but not proved: `MetaMathlibExt.repetend_columns_one_to_four_pairwise_ne` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 490](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L490). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-one-to-four-pairwise-ne).
+Stated but not proved: `MetaMathlibExt.repetend_columns_one_to_four_pairwise_ne` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 490](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L490). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-one-to-four-pairwise-ne).
 
 ## Repetend tables with at most three rows have no matched columns
 
@@ -592,7 +592,7 @@ rows, then for all distinct $i, j < L$ columns $i$ and $j$ are different.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.repetend_columns_ne_of_card_le_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-ne-of-card-le-three).
+Stated but not proved: `MetaMathlibExt.repetend_columns_ne_of_card_le_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#repetend-columns-ne-of-card-le-three).
 
 ## Tail bound for sums of inverse powers
 
@@ -603,7 +603,7 @@ $\sum_{n = s+1}^{\infty} n^{-m} < \dfrac{1}{(m-1)\, s^{m-1}}$.
 
 - R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 42.
 
-Stated but not proved: `MetaMathlibExt.tsum_inv_pow_succ_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RepetendTableWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#tsum-inv-pow-succ-lt).
+Stated but not proved: `MetaMathlibExt.tsum_inv_pow_succ_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/RepetendTableWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RepetendTableWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html#tsum-inv-pow-succ-lt).
 
 ## Depends on
 
@@ -612,4 +612,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Repetend tables](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/repetend-tables)

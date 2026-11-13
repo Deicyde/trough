@@ -7,7 +7,7 @@ statement: formalized
 
 # Permutation Wordle
 
-30 results, 19 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html).
+30 results, 19 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html).
 
 ## Permuting the entries of a map along a set of positions
 
@@ -21,7 +21,7 @@ takes the value $g(i_j)$ at $i_{\sigma(j)}$ for every $j < k$ and agrees with $g
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 2 (the action of a strategy component on `𝓘_r`).
 
-Formalized by `MetaMathlibExt.permuteAlong`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#permute-along).
+Formalized by `MetaMathlibExt.permuteAlong`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#permute-along).
 
 ## Permuting along all positions
 
@@ -34,7 +34,7 @@ $g \circ \sigma^{-1}$.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, proof of Proposition 4 (`γ₂ = S[n]⁻¹`).
 
-Formalized by `MetaMathlibExt.permuteAlong_univ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#permute-along-univ).
+Formalized by `MetaMathlibExt.permuteAlong_univ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#permute-along-univ).
 
 ## One round of permutation Wordle
 
@@ -50,7 +50,7 @@ $g(i_j)$ at $i_{S_m(j)}$ for every $j < m$.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 2.
 
-Formalized by `MetaMathlibExt.permWordleNextGuess`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-next-guess).
+Formalized by `MetaMathlibExt.permWordleNextGuess`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-next-guess).
 
 ## Correct positions stay locked
 
@@ -64,7 +64,7 @@ also takes the value $g(i)$ at $i$.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 2.
 
-Formalized by `MetaMathlibExt.permWordleNextGuess_of_eq`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-next-guess-of-eq).
+Formalized by `MetaMathlibExt.permWordleNextGuess_of_eq`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-next-guess-of-eq).
 
 ## Guesses of permutation Wordle
 
@@ -80,7 +80,7 @@ $\gamma_{r+1}$.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 2.
 
-Formalized by `MetaMathlibExt.permWordleGuess`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-guess).
+Formalized by `MetaMathlibExt.permWordleGuess`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-guess).
 
 ## Recurrence for the guesses of permutation Wordle
 
@@ -94,7 +94,7 @@ round of the game with strategy $S$ and secret $\pi$ produces from $\gamma_r$.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 2.
 
-Formalized by `MetaMathlibExt.permWordleGuess_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-guess-succ).
+Formalized by `MetaMathlibExt.permWordleGuess_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-guess-succ).
 
 ## The second guess against a derangement
 
@@ -107,7 +107,7 @@ with strategy $S$ and secret $\pi$ is the inverse permutation $S_n^{-1}$.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, proof of Proposition 4.
 
-Formalized by `MetaMathlibExt.permWordleGuess_one_of_forall_ne`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-guess-one-of-forall-ne).
+Formalized by `MetaMathlibExt.permWordleGuess_one_of_forall_ne`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-guess-one-of-forall-ne).
 
 ## Permutation Wordle games solved in a given number of guesses
 
@@ -121,7 +121,7 @@ when $r \ge 1$, $\gamma_r = \pi$, and $\gamma_j \ne \pi$ for every $j$ with $1 \
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 4.
 
-Formalized by `MetaMathlibExt.PermWordleSolvedIn`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-solved-in).
+Formalized by `MetaMathlibExt.PermWordleSolvedIn`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-solved-in).
 
 ## Games won with the first guess
 
@@ -134,7 +134,7 @@ $\pi$ is the identity.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, proof of Theorem 5.
 
-Formalized by `MetaMathlibExt.permWordleSolvedIn_one_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-solved-in-one-iff).
+Formalized by `MetaMathlibExt.permWordleSolvedIn_one_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-solved-in-one-iff).
 
 ## Coefficients of the guess-count generating function
 
@@ -147,7 +147,7 @@ guesses.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 4.
 
-Formalized by `MetaMathlibExt.permWordleCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-coeff).
+Formalized by `MetaMathlibExt.permWordleCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-coeff).
 
 ## No permutation is guessed in zero guesses
 
@@ -160,7 +160,7 @@ $[x^0] f_S$ vanishes.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 4.
 
-Formalized by `MetaMathlibExt.permWordleCoeff_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-coeff-zero).
+Formalized by `MetaMathlibExt.permWordleCoeff_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-coeff-zero).
 
 ## First guess with a correct position in permutation Wordle
 
@@ -175,7 +175,7 @@ is no position $k$ with $\gamma_j(k) = \pi(k)$.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 4.2.
 
-Formalized by `MetaMathlibExt.PermWordleFirstCorrectAt`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-first-correct-at).
+Formalized by `MetaMathlibExt.PermWordleFirstCorrectAt`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-first-correct-at).
 
 ## Permutations with a correct entry in the first guess
 
@@ -189,7 +189,7 @@ point.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, proof of Theorem 10.
 
-Formalized by `MetaMathlibExt.permWordleFirstCorrectAt_one_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-first-correct-at-one-iff).
+Formalized by `MetaMathlibExt.permWordleFirstCorrectAt_one_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-first-correct-at-one-iff).
 
 ## Cyclic shift strategy
 
@@ -202,7 +202,7 @@ the rotation $i \mapsto i + 1 \pmod m$ of $\{0, 1, \dots, m-1\}$.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 2.
 
-Formalized by `MetaMathlibExt.cyclicShiftStrategy`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#cyclic-shift-strategy).
+Formalized by `MetaMathlibExt.cyclicShiftStrategy`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#cyclic-shift-strategy).
 
 ## Components of the cyclic shift strategy
 
@@ -213,7 +213,7 @@ strategy on $m$ positions is the rotation $i \mapsto i + 1 \pmod m$ of $\{0, 1, 
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 2.
 
-Formalized by `MetaMathlibExt.cyclicShiftStrategy_apply`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#cyclic-shift-strategy-apply).
+Formalized by `MetaMathlibExt.cyclicShiftStrategy_apply`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#cyclic-shift-strategy-apply).
 
 ## Cyclic shift left strategy
 
@@ -226,7 +226,7 @@ $m \ne n$ the right cyclic shift $[2, 3, \dots, m, 1]$, that is, $i \mapsto i + 
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 4.3.
 
-Formalized by `MetaMathlibExt.cyclicShiftLeftStrategy`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#cyclic-shift-left-strategy).
+Formalized by `MetaMathlibExt.cyclicShiftLeftStrategy`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#cyclic-shift-left-strategy).
 
 ## Top component of the left-shift strategy
 
@@ -238,7 +238,7 @@ of $\{0, \dots, n-1\}$, the inverse of the cyclic shift $j \mapsto j + 1 \bmod n
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 4.3.
 
-Formalized by `MetaMathlibExt.cyclicShiftLeftStrategy_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#cyclic-shift-left-strategy-self).
+Formalized by `MetaMathlibExt.cyclicShiftLeftStrategy_self`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#cyclic-shift-left-strategy-self).
 
 ## Non-top components of the left-shift strategy
 
@@ -250,7 +250,7 @@ $j \mapsto j + 1 \bmod m$ of $\{0, \dots, m-1\}$.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 4.3.
 
-Formalized by `MetaMathlibExt.cyclicShiftLeftStrategy_of_ne`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#cyclic-shift-left-strategy-of-ne).
+Formalized by `MetaMathlibExt.cyclicShiftLeftStrategy_of_ne`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#cyclic-shift-left-strategy-of-ne).
 
 ## Inductive strategy
 
@@ -263,7 +263,7 @@ $\{0, \dots, n-1\}$.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Section 3.1.
 
-Formalized by `MetaMathlibExt.IsInductivePermWordleStrategy`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#is-inductive-perm-wordle-strategy).
+Formalized by `MetaMathlibExt.IsInductivePermWordleStrategy`, a definition declared in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#is-inductive-perm-wordle-strategy).
 
 ## Average number of correct positions in the second guess
 
@@ -278,7 +278,7 @@ number of derangements of $\{0, \dots, n-1\}$, equals $n/(n-1)$.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Proposition 4 (`jis-2026-26.1.7-prop-4`).
 
-Stated but not proved: `MetaMathlibExt.avg_card_correct_second_guess_derangements` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#avg-card-correct-second-guess-derangemen).
+Stated but not proved: `MetaMathlibExt.avg_card_correct_second_guess_derangements` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#avg-card-correct-second-guess-derangemen).
 
 ## One- and two-guess counts for deranged strategies
 
@@ -291,7 +291,7 @@ guesses. Then $[x^1] f_S = 1$ and $[x^2] f_S = 2^n - n - 1$, the Eulerian number
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 5 (`jis-2026-26.1.7-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.permWordleCoeff_one_and_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-coeff-one-and-two).
+Stated but not proved: `MetaMathlibExt.permWordleCoeff_one_and_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-coeff-one-and-two).
 
 ## Cyclic shift maximizes three-guess solves among inductive strategies
 
@@ -304,7 +304,7 @@ exactly three guesses with $S$ than with the cyclic shift strategy.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 7 (`jis-2026-26.1.7-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.permWordleCoeff_three_lt_cyclicShift` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-coeff-three-lt-cyclic-shift).
+Stated but not proved: `MetaMathlibExt.permWordleCoeff_three_lt_cyclicShift` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-coeff-three-lt-cyclic-shift).
 
 ## Derangements solved in three guesses by cyclic shift
 
@@ -316,7 +316,7 @@ strategy in exactly three guesses.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Lemma 9 (`jis-2026-26.1.7-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.card_derangements_solvedIn_three_cyclicShift` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#card-derangements-solved-in-three-cyclic).
+Stated but not proved: `MetaMathlibExt.card_derangements_solvedIn_three_cyclicShift` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#card-derangements-solved-in-three-cyclic).
 
 ## Three-guess solves of permutations with a fixed point
 
@@ -331,7 +331,7 @@ $1 - 2^{n+1} + 3^n + n^2/2 + 5n/2 - n \cdot 2^n$.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 10 (`jis-2026-26.1.7-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.card_solvedIn_three_firstCorrectAt_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#card-solved-in-three-first-correct-at-on).
+Stated but not proved: `MetaMathlibExt.card_solvedIn_three_firstCorrectAt_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#card-solved-in-three-first-correct-at-on).
 
 ## A unique three-guess solve with no early correct position
 
@@ -345,7 +345,7 @@ correct position.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 11 (`jis-2026-26.1.7-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.card_solvedIn_three_firstCorrectAt_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#card-solved-in-three-first-correct-at-th).
+Stated but not proved: `MetaMathlibExt.card_solvedIn_three_firstCorrectAt_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#card-solved-in-three-first-correct-at-th).
 
 ## Three-guess solves of cyclic shift first correct at guess two
 
@@ -358,7 +358,7 @@ $2^n - 2n - 2$.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 12 (`jis-2026-26.1.7-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.card_solvedIn_three_firstCorrectAt_two_cyclicShift` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#card-solved-in-three-first-correct-at-tw).
+Stated but not proved: `MetaMathlibExt.card_solvedIn_three_firstCorrectAt_two_cyclicShift` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#card-solved-in-three-first-correct-at-tw).
 
 ## Upper bound on three-guess solves first correct at guess two
 
@@ -372,7 +372,7 @@ being the first guess that has a correct position.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 13 (`jis-2026-26.1.7-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.card_solvedIn_three_firstCorrectAt_two_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#card-solved-in-three-first-correct-at-tw-2).
+Stated but not proved: `MetaMathlibExt.card_solvedIn_three_firstCorrectAt_two_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#card-solved-in-three-first-correct-at-tw-2).
 
 ## Cyclic shift left minimizes three-guess solves among inductive strategies
 
@@ -386,7 +386,7 @@ $S$.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 14 (`jis-2026-26.1.7-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.permWordleCoeff_three_cyclicShiftLeft_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-coeff-three-cyclic-shift-lef).
+Stated but not proved: `MetaMathlibExt.permWordleCoeff_three_cyclicShiftLeft_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#perm-wordle-coeff-three-cyclic-shift-lef).
 
 ## Lucas-number count for the left-shift strategy
 
@@ -402,7 +402,7 @@ that has a correct position, is $L_n - n - 1$, where $L_n$ is the $n$-th Lucas n
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 15 (`jis-2026-26.1.7-thm-15`).
 
-Stated but not proved: `MetaMathlibExt.card_solvedIn_three_firstCorrectAt_two_cyclicShiftLeft` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#card-solved-in-three-first-correct-at-tw-3).
+Stated but not proved: `MetaMathlibExt.card_solvedIn_three_firstCorrectAt_two_cyclicShiftLeft` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#card-solved-in-three-first-correct-at-tw-3).
 
 ## Among inductive strategies, cyclic shift left minimizes three-guess solves first correct at guess two
 
@@ -420,7 +420,7 @@ guesses with the second guess being the first guess that has a correct position.
 
 - Aurora Hiveley, *Experimenting with Permutation Wordle*, Journal of Integer Sequences 29 (2026), Article 26.1.7, Theorem 16 (`jis-2026-26.1.7-thm-16`).
 
-Stated but not proved: `MetaMathlibExt.card_firstCorrectAt_two_cyclicShiftLeft_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#card-first-correct-at-two-cyclic-shift-l).
+Stated but not proved: `MetaMathlibExt.card_firstCorrectAt_two_cyclicShiftLeft_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PermutationWordleWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html#card-first-correct-at-two-cyclic-shift-l).
 
 ## Depends on
 
@@ -429,4 +429,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Permutation Wordle](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/permutations/permutation-statistics/permutation-wordle)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Geometry of Banach spaces: its own results
 
-8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html).
+8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html).
 
 Convexity and smoothness of norms (uniform convexity, Kadec–Klee, Birkhoff–James), extreme points of balls, Auerbach and Schauder bases, approximation property, isometries (Banach–Stone, Mazur–Ulam), Banach–Mazur, Dvoretzky–Rogers, Grothendieck, Rademacher type, Daugavet, Bishop–Phelps.
 
@@ -21,7 +21,7 @@ functions on $[0, 1]$ with the supremum norm, such that the range of $e$ is clos
 
 - S. Banach and S. Mazur 1932 embedding theorem; Banach, Theorie des operations lineaires; Henson-Michalewski, separable Banach as universal space; Lean states separable real Banach case with `E →ₗᵢ[ℝ] C(Icc 0 1, ℝ)` and `IsClosed (range)`.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.GeometricWanted.banachMazur_embedding`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Geometric.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/Geometric.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#banach-mazur-embedding).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.GeometricWanted.banachMazur_embedding`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Geometric.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/Geometric.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#banach-mazur-embedding).
 
 ## Banach–Stone theorem for real scalars
 
@@ -34,7 +34,7 @@ onto $C(Y, \mathbb{R})$, then $X$ and $Y$ are homeomorphic.
 
 - S. Banach, Theorie des operations lineaires, 1932 and M. Stone, Trans. Amer. Math. Soc. 41 (1937) 375-381; textbook Semadeni, Banach Spaces of Continuous Functions, 1971; Lean states compact Hausdorff case with Banach-space linear isometric isomorphism implies homeomorphism, real coefficient field specialization.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BanachStoneWanted.banachStone_real`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/BanachStone.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/BanachStone.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#banach-stone-real).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BanachStoneWanted.banachStone_real`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/BanachStone.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/BanachStone.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#banach-stone-real).
 
 ## Bishop–Phelps theorem
 
@@ -47,7 +47,7 @@ $\|x\| \le 1$, form a dense subset of $E^*$ in the norm topology.
 
 - E. Bishop and R. R. Phelps, Bull. Amer. Math. Soc. 67 (1961) 97-98 and Pacific J. Math. 1961; Bollobas quantitative version; Lean states `RCLike` Banach case as density of attaining functionals.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BanachSpaceWanted.bishop_phelps`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/BishopPhelps.lean, line 676](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/BishopPhelps.lean#L676). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#bishop-phelps).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BanachSpaceWanted.bishop_phelps`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/BishopPhelps.lean, line 676](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/BishopPhelps.lean#L676). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#bishop-phelps).
 
 ## Daugavet's theorem for compact operators
 
@@ -60,7 +60,7 @@ $\|I + T\| = 1 + \|T\|$, where the norms are operator norms.
 
 - I. K. Daugavet, Izv. Vyssh. Uchebn. Zaved. Matematika 1963; Kadets et al., 1980s Daugavet property; Werner, Recent progress on Daugavet property, 2001; Lean states `C(Icc 0 1, ℝ)` compact-operator specialization of the general Daugavet property `‖Id+T‖=1+‖T‖`.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.DaugavetWanted.daugavet`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Daugavet.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/Daugavet.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#daugavet).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.DaugavetWanted.daugavet`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Daugavet.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/Daugavet.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#daugavet).
 
 ## Dvoretzky–Rogers theorem
 
@@ -73,7 +73,7 @@ of $\mathbb{N}$, while $\sum_n \lVert x_n \rVert$ diverges.
 
 - S. Mazur and W. Orlicz, Problem 122 of the Scottish Book; A. Dvoretzky and C. A. Rogers, "Absolute and unconditional convergence in normed linear spaces", Proc. Natl. Acad. Sci. USA 36 (1950), 192-197.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook122Wanted.dvoretzky_rogers_unconditional_not_absolute` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook122Wanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook122Wanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#dvoretzky-rogers-unconditional-not-absol).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook122Wanted.dvoretzky_rogers_unconditional_not_absolute` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook122Wanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook122Wanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#dvoretzky-rogers-unconditional-not-absol).
 
 ## Grothendieck's inequality (real case)
 
@@ -88,7 +88,7 @@ K \bigl|\sum_{i=1}^{m} \sum_{j=1}^{n} a_{ij} \varepsilon_i \delta_j\bigr|$.
 
 - A. Grothendieck, Resume de la theorie metrique des produits tensoriels topologiques, Bol. Soc. Mat. Sao Paulo 8 (1953) 1-79, inequality; Pisier, Grothendieck's theorem past and present, 2012; Lean states real finite-matrix scalarized form with `Fin`-indexed unit vectors and `±1` signs, existential universal constant `K`.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.GrothendieckInequalityWanted.grothendieck_inequality_real`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/GrothendieckInequality.lean, line 935](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/GrothendieckInequality.lean#L935). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#grothendieck-inequality-real).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.GrothendieckInequalityWanted.grothendieck_inequality_real`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/GrothendieckInequality.lean, line 935](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/GrothendieckInequality.lean#L935). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#grothendieck-inequality-real).
 
 ## Milman–Pettis theorem
 
@@ -101,7 +101,7 @@ $\Phi(f) = f(x)$ for every $f \in E^*$.
 
 - D. Milman, C. R. (Doklady) Acad. Sci. URSS 18 (1938) and B. Pettis, Duke Math. J. 1939, Milman-Pettis theorem that uniformly convex Banach spaces are reflexive; Clarkson uniform convexity 1936; Lean states `RCLike` uniformly convex complete case via double-dual evaluation surjectivity.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.MilmanPettisWanted.milman_pettis`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/MilmanPettis.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/MilmanPettis.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#milman-pettis).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.MilmanPettisWanted.milman_pettis`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/MilmanPettis.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/MilmanPettis.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#milman-pettis).
 
 ## Banach–Saks theorem for uniformly convex spaces
 
@@ -114,7 +114,7 @@ means $\frac{1}{n} \sum_{i=0}^{n-1} x_{\varphi(i)}$ converge to $y$ in norm as $
 
 - S. Banach and S. Saks, Studia Math. 2 (1930) 51-57; uniformly convex form and property due to Kakutani, 1939; textbook Diestel, Sequences and Series in Banach Spaces; Lean gives uniformly convex real Banach specialization with explicit `StrictMono φ` and norm-convergent Cesàro means.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BanachSaksWanted.banach_saks`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/BanachSaks.lean, line 585](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/BanachSaks.lean#L585). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#banach-saks).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BanachSaksWanted.banach_saks`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/BanachSaks.lean, line 585](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/BanachSaks.lean#L585). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html#banach-saks).
 
 ## Depends on
 
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Geometry of Banach spaces](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.40 Proper morphisms
 
-Section 67.40 of the Stacks Project, [Tag 03ZL](https://stacks.math.columbia.edu/tag/03ZL). 9 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.40 of the Stacks Project, [Tag 03ZL](https://stacks.math.columbia.edu/tag/03ZL). 9 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03ZM, a definition
 
 [Tag 03ZM](https://stacks.math.columbia.edu/tag/03ZM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProperULift_whiskerRight_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperTransfer.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperTransfer.lean#L134). The attribute's comment: “for a universe lift”.
+**`AlgebraicGeometry.Space.isProperULift_whiskerRight_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperTransfer.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedProperTransfer.lean#L135). The attribute's comment: “for a universe lift”.
 
 > **Stacks 03ZM for a universe lift.** The universe lift of a morphism of presheaves of
 > `Type u` on the big fppf site of `S` is proper — separated, of finite type and universally
@@ -31,7 +31,7 @@ theorem isProperULift_whiskerRight_iff {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Typ
       IsProper B S hS q
 ```
 
-**`AlgebraicGeometry.Space.IsProper`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosed.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosed.lean#L132).
+**`AlgebraicGeometry.Space.IsProper`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosed.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosed.lean#L132).
 
 > A morphism of algebraic spaces over `S` is *proper* when it is separated, of finite type and
 > universally closed.
@@ -44,7 +44,7 @@ abbrev IsProper (f : F ⟶ G) : Prop
 
 [Tag 083R](https://stacks.math.columbia.edu/tag/083R) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProper_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ProperCriteria.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ProperCriteria.lean#L162).
+**`AlgebraicGeometry.Space.isProper_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ProperCriteria.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ProperCriteria.lean#L162).
 
 > **Stacks 083R.** For a morphism `f : X ⟶ Y` of algebraic spaces over `S` the following are
 > equivalent: `f` is proper; the base change of `f` along every morphism to `Y` from a presheaf
@@ -74,7 +74,7 @@ theorem isProper_tfae (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpace B 
 
 [Tag 04WP](https://stacks.math.columbia.edu/tag/04WP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProper_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperBaseChange.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperBaseChange.lean#L164).
+**`AlgebraicGeometry.Space.isProper_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperBaseChange.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperBaseChange.lean#L164).
 
 > Properness of morphisms of algebraic spaces over `S` is stable under base
 > change.
@@ -89,7 +89,7 @@ instance isProper_isStableUnderBaseChange :
 
 [Tag 04XY](https://stacks.math.columbia.edu/tag/04XY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProper_comp'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperPermanence.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperPermanence.lean#L81).
+**`AlgebraicGeometry.Space.isProper_comp'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperPermanence.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperPermanence.lean#L81).
 
 > **Stacks 04XY.** The composite of two proper morphisms of algebraic spaces over `S` is
 > proper: each of the three conjuncts of properness is stable under composition.
@@ -111,7 +111,7 @@ theorem isProper_comp' (f : X ⟶ Y) (g : Y ⟶ Z)
 
 [Tag 04XZ](https://stacks.math.columbia.edu/tag/04XZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProper_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperClosedImmersion.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperClosedImmersion.lean#L202).
+**`AlgebraicGeometry.Space.isProper_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperClosedImmersion.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperClosedImmersion.lean#L202).
 
 > **Stacks 04XZ.** A closed immersion of algebraic spaces over `S` is proper.
 
@@ -126,7 +126,7 @@ theorem isProper_of_isClosedImmersion
 
 [Tag 04NX](https://stacks.math.columbia.edu/tag/04NX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProper_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationCancellation.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparationCancellation.lean#L120). The attribute's comment: “part (2): properness”.
+**`AlgebraicGeometry.Space.isProper_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationCancellation.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparationCancellation.lean#L120). The attribute's comment: “part (2): properness”.
 
 > **Stacks 04NX, part (2).** If a composite of morphisms of algebraic spaces over `S` is proper
 > and its second factor is separated, then its first factor is proper.
@@ -145,7 +145,7 @@ theorem isProper_of_comp_of_isSeparated {X Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ 
     IsProper B S hS f
 ```
 
-**`AlgebraicGeometry.Space.universallyClosed_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedPermanence.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedPermanence.lean#L67). The attribute's comment: “part (1): universal closedness”. References: EGA II (5.4.9), “5.4.3 univ. closed”.
+**`AlgebraicGeometry.Space.universallyClosed_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedPermanence.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedPermanence.lean#L67). The attribute's comment: “part (1): universal closedness”. References: EGA II (5.4.9), “5.4.3 univ. closed”.
 
 > **Stacks 04NX, part (1).** Let `X ⟶ Y ⟶ Z` be morphisms of algebraic spaces over `S`. If
 > the composite `X ⟶ Z` is universally closed and `Y ⟶ Z` is separated, then `X ⟶ Y` is
@@ -159,7 +159,7 @@ theorem universallyClosed_of_comp_of_isSeparated {X Y Z : (BigFppfOver B S hS)�
     UniversallyClosed B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isClosed_range_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedPermanence.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedPermanence.lean#L91). The attribute's comment: “part (1): closed image”.
+**`AlgebraicGeometry.Space.isClosed_range_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedPermanence.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedPermanence.lean#L91). The attribute's comment: “part (1): closed image”.
 
 > **Stacks 04NX, part (1).** Under the hypotheses of
 > `AlgebraicGeometry.Space.universallyClosed_of_comp_of_isSeparated`, the image of `|X|` in
@@ -177,7 +177,7 @@ theorem isClosed_range_of_comp_of_isSeparated {X Y Z : (BigFppfOver B S hS)ᵒ�
 
 [Tag 08AJ](https://stacks.math.columbia.edu/tag/08AJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyClosed_of_isSurjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Proper.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Proper.lean#L120). The attribute's comment: “universally closed image”.
+**`AlgebraicGeometry.Space.universallyClosed_of_isSurjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Proper.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Proper.lean#L122). The attribute's comment: “universally closed image”.
 
 > **Stacks 08AJ, universally closed image.** Let `X ⟶ Y ⟶ T` be morphisms of algebraic
 > spaces over `S`. If `X` is universally closed over `T` and `X ⟶ Y` is surjective, then `Y` is
@@ -191,7 +191,7 @@ theorem universallyClosed_of_isSurjective_comp
     UniversallyClosed B S hS q
 ```
 
-**`AlgebraicGeometry.Space.isProper_of_isSurjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Proper.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Proper.lean#L160). The attribute's comment: “properness of the image”.
+**`AlgebraicGeometry.Space.isProper_of_isSurjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Proper.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Proper.lean#L162). The attribute's comment: “properness of the image”.
 
 > **Stacks 08AJ, properness of the image.** Let `X ⟶ Y ⟶ T` be morphisms of algebraic
 > spaces over `S`. If `X` is universally closed over `T`, the morphism `X ⟶ Y` is surjective and
@@ -206,7 +206,7 @@ theorem isProper_of_isSurjective_comp
     IsProper B S hS q
 ```
 
-**`AlgebraicGeometry.Space.universallyClosed_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedImage.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedImage.lean#L105). The attribute's comment: “first assertion: universal closedness”.
+**`AlgebraicGeometry.Space.universallyClosed_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedImage.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedImage.lean#L105). The attribute's comment: “first assertion: universal closedness”.
 
 > **Stacks 08AJ, first assertion.** Let `p : X ⟶ Z` and `q : Y ⟶ Z` be morphisms of
 > algebraic spaces over `S` and let `f : X ⟶ Y` be a morphism over `Z`. If `p` is universally
@@ -226,7 +226,7 @@ theorem universallyClosed_of_isSurjective {X Y Z : (BigFppfOver B S hS)ᵒᵖ �
     UniversallyClosed B S hS q
 ```
 
-**`AlgebraicGeometry.Space.isProper_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedImage.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedImage.lean#L124). The attribute's comment: “second assertion: properness”.
+**`AlgebraicGeometry.Space.isProper_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedImage.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyClosedImage.lean#L124). The attribute's comment: “second assertion: properness”.
 
 > **Stacks 08AJ, second assertion.** In the situation of
 > `AlgebraicGeometry.Space.universallyClosed_of_isSurjective`, if moreover `q` is separated and
@@ -246,7 +246,7 @@ theorem isProper_of_isSurjective {X Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 0AGD](https://stacks.math.columbia.edu/tag/0AGD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSurjective_toSchemeTheoreticImage_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ProperSchemeTheoreticImage.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ProperSchemeTheoreticImage.lean#L106). The attribute's comment: “second assertion: surjectivity onto the scheme-theoretic image”.
+**`AlgebraicGeometry.Space.isSurjective_toSchemeTheoreticImage_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ProperSchemeTheoreticImage.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ProperSchemeTheoreticImage.lean#L106). The attribute's comment: “second assertion: surjectivity onto the scheme-theoretic image”.
 
 > **Stacks 0AGD, second assertion.** Let `h : X ⟶ Y`, `f : X ⟶ T` and `g : Y ⟶ T` be
 > morphisms of algebraic spaces over `S` with `h ≫ g = f`. If `f` is proper and `g` is separated,
@@ -264,7 +264,7 @@ theorem isSurjective_toSchemeTheoreticImage_of_isProper
     IsSurjective B S hS (toSchemeTheoreticImage B S hS h)
 ```
 
-**`AlgebraicGeometry.Space.isProper_schemeTheoreticImageSubfunctor_inclusion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ProperSchemeTheoreticImage.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ProperSchemeTheoreticImage.lean#L149). The attribute's comment: “first assertion: the scheme-theoretic image is proper over the base”.
+**`AlgebraicGeometry.Space.isProper_schemeTheoreticImageSubfunctor_inclusion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ProperSchemeTheoreticImage.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ProperSchemeTheoreticImage.lean#L149). The attribute's comment: “first assertion: the scheme-theoretic image is proper over the base”.
 
 > **Stacks 0AGD, first assertion.** Let `h : X ⟶ Y`, `f : X ⟶ T` and `g : Y ⟶ T` be morphisms
 > of algebraic spaces over `S` with `h ≫ g = f`. If `f` is proper and `g` is separated and
@@ -290,7 +290,7 @@ theorem isProper_schemeTheoreticImageSubfunctor_inclusion_comp
 
 [Tag 04Y0](https://stacks.math.columbia.edu/tag/04Y0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparated_tfae_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperTFAE.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperTFAE.lean#L49).
+**`AlgebraicGeometry.Space.isSeparated_tfae_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperTFAE.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperTFAE.lean#L49).
 
 > For a morphism of algebraic spaces over `S` the following are equivalent: it is separated;
 > its relative diagonal is universally closed; its relative diagonal is proper.
@@ -310,4 +310,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.40, Tag 03ZL](https://stacks.math.columbia.edu/tag/03ZL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

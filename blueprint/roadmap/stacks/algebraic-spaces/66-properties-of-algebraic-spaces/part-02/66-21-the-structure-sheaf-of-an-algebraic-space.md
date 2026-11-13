@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.21 The structure sheaf of an algebraic space
 
-Section 66.21 of the Stacks Project, [Tag 04KD](https://stacks.math.columbia.edu/tag/04KD). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 66.21 of the Stacks Project, [Tag 04KD](https://stacks.math.columbia.edu/tag/04KD). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03G6, a lemma
 
 [Tag 03G6](https://stacks.math.columbia.edu/tag/03G6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.structurePresheaf_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StructureSheaf.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StructureSheaf.lean#L317).
+**`AlgebraicGeometry.Space.structurePresheaf_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StructureSheaf.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StructureSheaf.lean#L317).
 
 > **Stacks 03G6.** Global regular functions form a sheaf of commutative rings on the small
 > étale site of an algebraic space.
@@ -32,7 +32,7 @@ theorem structurePresheaf_isSheaf (_hF : IsAlgebraicSpace B S hS F) :
 
 [Tag 03G7](https://stacks.math.columbia.edu/tag/03G7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.structureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StructureSheaf.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StructureSheaf.lean#L332). The attribute's comment: “the structure sheaf of an algebraic space”.
+**`AlgebraicGeometry.Space.structureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StructureSheaf.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StructureSheaf.lean#L332). The attribute's comment: “the structure sheaf of an algebraic space”.
 
 > The structure sheaf of commutative rings on the small étale site of the algebraic space `F`.
 >
@@ -49,7 +49,7 @@ def structureSheaf (_hF : IsAlgebraicSpace B S hS F) :
 
 [Tag 03G8](https://stacks.math.columbia.edu/tag/03G8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.pushforwardAlgebraIdAlgebraIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BoundedDirectImageAlgebraFactorization.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BoundedDirectImageAlgebraFactorization.lean#L254). The attribute's comment: “the identity clause at the level of algebras: (𝟙\_Y)\_* 𝒪\_Y is 𝒪\_Y”.
+**`AlgebraicGeometry.Space.pushforwardAlgebraIdAlgebraIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BoundedDirectImageAlgebraFactorization.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BoundedDirectImageAlgebraFactorization.lean#L254). The attribute's comment: “the identity clause at the level of algebras: (𝟙\_Y)\_* 𝒪\_Y is 𝒪\_Y”.
 
 > **The direct image of `𝒪_Y` along the identity of `Y` is `𝒪_Y`, as an `𝒪_Y`-algebra**, with
 > no anti-equivalence and no hypothesis.
@@ -71,7 +71,7 @@ def pushforwardAlgebraIdAlgebraIso (Y : AlgebraicSpaces B S hS) :
     pushforwardAlgebra B S hS (Over.mk (𝟙 Y)) ≅ unitAlgebra B S hS Y
 ```
 
-**`AlgebraicGeometry.Space.isIso_fSharp_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraMorphism.lean, line 584](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraMorphism.lean#L584). The attribute's comment: “the identity clause: the structure map of an identity is an isomorphism”.
+**`AlgebraicGeometry.Space.isIso_fSharp_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraMorphism.lean, line 584](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraMorphism.lean#L584). The attribute's comment: “the identity clause: the structure map of an identity is an isomorphism”.
 
 > **The identity clause of Stacks 03G8:** the structure map of the morphism of small étale
 > ringed topoi of `𝟙 : A ⟶ A` is an isomorphism `𝒪_A ≅ (𝟙_A)_* 𝒪_A`.
@@ -90,7 +90,7 @@ theorem isIso_fSharp_id (A : AlgebraicSpaces B S hS) :
     IsIso (smallEtaleRingedToposHom B S hS (𝟙 A)).fSharp
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean#L281). The attribute's comment: “canonical morphism of ringed topoi”.
+**`AlgebraicGeometry.Space.smallEtaleRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean#L281). The attribute's comment: “canonical morphism of ringed topoi”.
 
 > The morphism of small étale ringed topoi induced by a morphism of algebraic spaces.
 
@@ -99,7 +99,7 @@ noncomputable def smallEtaleRingedToposHom (f : X ⟶ Y) :
     RingedToposHom (smallEtaleRingedTopos B S hS X) (smallEtaleRingedTopos B S hS Y)
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleRingedToposHom_pushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean#L288). The attribute's comment: “underlying geometric morphism”.
+**`AlgebraicGeometry.Space.smallEtaleRingedToposHom_pushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean#L288). The attribute's comment: “underlying geometric morphism”.
 
 > The underlying geometric morphism of `smallEtaleRingedToposHom`.
 
@@ -114,7 +114,7 @@ noncomputable def smallEtaleRingedToposHom_pushforward (f : X ⟶ Y) :
           (SmallEtale.topology B S hS Y.1) (SpacesEtale.topology B S hS Y)
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleRingedToposHom_representable`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean#L347). The attribute's comment: “agreement with scheme-chart base change”.
+**`AlgebraicGeometry.Space.smallEtaleRingedToposHom_representable`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean#L347). The attribute's comment: “agreement with scheme-chart base change”.
 
 > **Stacks 03G8.** For a representable morphism of algebraic spaces the geometric direct
 > image of `smallEtaleRingedToposHom` is base change of étale scheme charts.
@@ -128,7 +128,7 @@ noncomputable def smallEtaleRingedToposHom_representable (f : X ⟶ Y)
         (SmallEtale.topology B S hS Y.1) (SmallEtale.topology B S hS X.1)
 ```
 
-**`AlgebraicGeometry.Space.structureSharp_comp_chartProjectionSharpDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean#L352). The attribute's comment: “part (2): the structure map is pullback along the cartesian projection”.
+**`AlgebraicGeometry.Space.structureSharp_comp_chartProjectionSharpDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean#L352). The attribute's comment: “part (2): the structure map is pullback along the cartesian projection”.
 
 > **Stacks 03G8, part (2), for a representable morphism of algebraic spaces.** The structure
 > map `f♯ : 𝒪_Y ⟶ f_*𝒪_X` of Stacks 03G8, followed by the identification
@@ -145,7 +145,7 @@ theorem structureSharp_comp_chartProjectionSharpDirectImage (f : X ⟶ Y)
       cartesianProjectionSharp B S hS f hf
 ```
 
-**`AlgebraicGeometry.Space.fSharp_comp_chartProjectionSharpDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean#L401). The attribute's comment: “part (2): the same for the structure map of the morphism of ringed topoi”.
+**`AlgebraicGeometry.Space.fSharp_comp_chartProjectionSharpDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean#L401). The attribute's comment: “part (2): the same for the structure map of the morphism of ringed topoi”.
 
 > **Stacks 03G8, part (2), for a representable morphism of algebraic spaces, on the morphism
 > of ringed topoi.** The structure map `f♯` of the morphism of small étale ringed topoi of
@@ -165,7 +165,7 @@ theorem fSharp_comp_chartProjectionSharpDirectImage (f : X ⟶ Y)
       cartesianProjectionSharp B S hS f hf
 ```
 
-**`AlgebraicGeometry.Space.cartesianProjectionSharpCommRing_eq_changeOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean#L440). The attribute's comment: “part (2): for a morphism of schemes this is the Stacks 070R structure map”.
+**`AlgebraicGeometry.Space.cartesianProjectionSharpCommRing_eq_changeOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean#L440). The attribute's comment: “part (2): for a morphism of schemes this is the Stacks 070R structure map”.
 
 > **Stacks 03G8, part (2).** For a morphism of schemes, `f♯` of the space construction *is*
 > the structure-sheaf homomorphism of Stacks 070R: the small étale site of the representable
@@ -190,7 +190,7 @@ theorem cartesianProjectionSharpCommRing_eq_changeOfSites :
         (schemeChart_structure_isSheaf B S hS T')
 ```
 
-**`AlgebraicGeometry.Space.structureSharp_representedSpaceMap_eq_changeOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean#L464). The attribute's comment: “part (2): for a morphism of schemes, f♯ is the structure map of Stacks 070R”.
+**`AlgebraicGeometry.Space.structureSharp_representedSpaceMap_eq_changeOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleSchemeStructureSharp.lean#L464). The attribute's comment: “part (2): for a morphism of schemes, f♯ is the structure map of Stacks 070R”.
 
 > **Stacks 03G8, part (2).** For a morphism of schemes `g : T' ⟶ T` over `S` the structure
 > map `f♯ : 𝒪_Y ⟶ f_*𝒪_X` of Stacks 03G8, followed by the canonical identification
@@ -225,7 +225,7 @@ theorem structureSharp_representedSpaceMap_eq_changeOfSites :
           (relativelyRepresentable_yoneda_map B S hS g)
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleRingedToposHom_comp_fSharp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleStructureMapComp.lean, line 561](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleStructureMapComp.lean#L561). The attribute's comment: “compatibility with composition”.
+**`AlgebraicGeometry.Space.smallEtaleRingedToposHom_comp_fSharp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleStructureMapComp.lean, line 561](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleStructureMapComp.lean#L561). The attribute's comment: “compatibility with composition”.
 
 > The structure map of the composite morphism of small étale ringed topoi, followed by the
 > comparison of the direct images of sheaves of commutative rings, is the structure map of the
@@ -240,7 +240,7 @@ theorem smallEtaleRingedToposHom_comp_fSharp (f : X ⟶ Y) (g : Y ⟶ Z) :
       (smallEtaleRingedToposHom B S hS (f ≫ g)).fSharp
 ```
 
-**`AlgebraicGeometry.Space.exists_compRingIso_isCartesianComposition_comp_fSharp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleStructureMapComp.lean, line 595](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleStructureMapComp.lean#L595). The attribute's comment: “existence of the cartesian ring comparison”.
+**`AlgebraicGeometry.Space.exists_compRingIso_isCartesianComposition_comp_fSharp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleStructureMapComp.lean, line 595](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleStructureMapComp.lean#L595). The attribute's comment: “existence of the cartesian ring comparison”.
 
 > There is an isomorphism between the direct images of sheaves of commutative rings of the
 > composite of morphisms of ringed topoi and of the composite morphism of algebraic spaces which is
@@ -261,7 +261,7 @@ theorem exists_compRingIso_isCartesianComposition_comp_fSharp (f : X ⟶ Y) (g :
           (smallEtaleRingedToposHom B S hS (f ≫ g)).fSharp
 ```
 
-**`AlgebraicGeometry.Space.structureProjectionOfHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StructureProjectionComposition.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StructureProjectionComposition.lean#L146). The attribute's comment: “compatibility with composition at the level of modules”.
+**`AlgebraicGeometry.Space.structureProjectionOfHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StructureProjectionComposition.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StructureProjectionComposition.lean#L146). The attribute's comment: “compatibility with composition at the level of modules”.
 
 > **[Stacks Project, Tag 03G8], compatibility with composition, at the level of modules.**  For
 > `f : X ⟶ Y` and `g : Y ⟶ Z` the canonical morphism `𝒪_Z ⟶ (f ≫ g)_*𝒪_X` of `𝒪_Z`-modules is the
@@ -286,7 +286,7 @@ theorem structureProjectionOfHom_comp (f : X ⟶ Y) (g : Y ⟶ Z) :
           (SheafOfModules.unit (structureRingSheaf B S hS X))
 ```
 
-**`AlgebraicGeometry.Space.isIso_structureProjectionOfHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StructureProjectionComposition.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StructureProjectionComposition.lean#L261). The attribute's comment: “the canonical morphism of modules of an isomorphism is an isomorphism”.
+**`AlgebraicGeometry.Space.isIso_structureProjectionOfHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StructureProjectionComposition.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StructureProjectionComposition.lean#L261). The attribute's comment: “the canonical morphism of modules of an isomorphism is an isomorphism”.
 
 > **The canonical morphism `𝒪_Y ⟶ e_*𝒪_X` of modules of an isomorphism `e` of algebraic spaces
 > is invertible.**
@@ -303,13 +303,13 @@ theorem isIso_structureProjectionOfHom (e : X ≅ Y) :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.schemeSpace`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeAsSpace.lean#L66), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean, line 712](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean#L712) (StacksFrontier): “schemes regarded as algebraic spaces”.
+- [`AlgebraicGeometry.schemeSpace`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeAsSpace.lean#L66), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean, line 712](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean#L712) (StacksFrontier): “schemes regarded as algebraic spaces”.
 
 ## Tag 0BGS, a lemma
 
 [Tag 0BGS](https://stacks.math.columbia.edu/tag/0BGS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isReduced_globalFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean#L172). The attribute's comment: “global\_sections\_reduced”.
+**`AlgebraicGeometry.Space.isReduced_globalFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean#L172). The attribute's comment: “global\_sections\_reduced”.
 
 > **Stacks 0BGS.** The ring of global regular functions of a reduced algebraic space is
 > reduced.  Restriction to a reduced surjective étale chart embeds it into the ring of global
@@ -322,7 +322,7 @@ theorem isReduced_globalFunctions (hF : IsAlgebraicSpace B S hS F)
     _root_.IsReduced (globalFunctions B S hS F)
 ```
 
-**`AlgebraicGeometry.Space.eq_zero_of_forall_zeroLocus_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean#L188). The attribute's comment: “zero\_of\_full\_vanishing\_locus”.
+**`AlgebraicGeometry.Space.eq_zero_of_forall_zeroLocus_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean#L188). The attribute's comment: “zero\_of\_full\_vanishing\_locus”.
 
 > **Stacks 0BGS.** A global regular function on a reduced algebraic space whose vanishing
 > locus is all of `F` — its zero locus on every étale chart is the whole chart — is zero.  It
@@ -340,7 +340,7 @@ theorem eq_zero_of_forall_zeroLocus_eq_univ (hF : IsAlgebraicSpace B S hS F)
     f = 0
 ```
 
-**`AlgebraicGeometry.Space.isReduced_iff_forall_localRing_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean#L120). The attribute's comment: “reduced\_iff\_local\_rings\_reduced”.
+**`AlgebraicGeometry.Space.isReduced_iff_forall_localRing_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean#L120). The attribute's comment: “reduced\_iff\_local\_rings\_reduced”.
 
 > **Stacks 0BGS.** An algebraic space is reduced exactly when all of its local rings are
 > reduced. Reducedness of the space is the étale-local scheme property of Stacks 03E6 — a
@@ -364,4 +364,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.21, Tag 04KD](https://stacks.math.columbia.edu/tag/04KD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

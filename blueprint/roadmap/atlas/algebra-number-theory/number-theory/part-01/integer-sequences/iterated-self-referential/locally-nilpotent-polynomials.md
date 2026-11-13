@@ -7,7 +7,7 @@ statement: formalized
 
 # Locally nilpotent polynomials
 
-12 results, 5 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html).
+12 results, 5 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html).
 
 ## Weakly locally nilpotent polynomial at a point
 
@@ -23,7 +23,7 @@ Only the primes in $A$ matter, so $A$ is usually taken to be a set of primes.
 
 - Sayak Sengupta, *Locally Nilpotent Polynomials over Z*, INTEGERS 24 (2024), Article A13, Section 2.
 
-Formalized by `MetaMathlibExt.IsWeaklyLocallyNilpotentAt`, a definition declared in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#is-weakly-locally-nilpotent-at).
+Formalized by `MetaMathlibExt.IsWeaklyLocallyNilpotentAt`, a definition declared in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#is-weakly-locally-nilpotent-at).
 
 ## Nilpotent polynomial at a point
 
@@ -35,7 +35,7 @@ nilpotent at $r$ if $u^{(n)}(r) = 0$ for some $n \ge 1$.
 
 - Sayak Sengupta, *Locally Nilpotent Polynomials over Z*, INTEGERS 24 (2024), Article A13, Section 2.
 
-Formalized by `MetaMathlibExt.IsNilpotentAt`, a definition declared in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#is-nilpotent-at).
+Formalized by `MetaMathlibExt.IsNilpotentAt`, a definition declared in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#is-nilpotent-at).
 
 ## Infinitely many primes avoid $\gamma \alpha^n - \beta$
 
@@ -49,7 +49,7 @@ with $n \ge 1$.
 
 - Sayak Sengupta, *Locally Nilpotent Polynomials over Z*, INTEGERS 24 (2024), Article A13, Lemma 3.2.
 
-Stated but not proved: `MetaMathlibExt.infinite_primes_not_dvd_mul_pow_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#infinite-primes-not-dvd-mul-pow-sub).
+Stated but not proved: `MetaMathlibExt.infinite_primes_not_dvd_mul_pow_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#infinite-primes-not-dvd-mul-pow-sub).
 
 ## Iterates of $x + 1$
 
@@ -61,7 +61,7 @@ number $m$, $u^{(m)}(r) = r + m$.
 
 - Sayak Sengupta, *Locally Nilpotent Polynomials over Z*, INTEGERS 24 (2024), Article A13, Section 2, example (e).
 
-Formalized by `MetaMathlibExt.iterate_eval_X_add_one`, a theorem declared in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#iterate-eval-x-add-one).
+Formalized by `MetaMathlibExt.iterate_eval_X_add_one`, a theorem declared in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#iterate-eval-x-add-one).
 
 ## $x + 1$ is locally nilpotent at $1$
 
@@ -75,7 +75,7 @@ One can take $m = p - 1$, since $u^{(p-1)}(1) = p$.
 
 - Sayak Sengupta, *Locally Nilpotent Polynomials over Z*, INTEGERS 24 (2024), Article A13, Section 2, example (e).
 
-Formalized by `MetaMathlibExt.isWeaklyLocallyNilpotentAt_X_add_one`, a theorem declared in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#is-weakly-locally-nilpotent-at-x-add-one).
+Formalized by `MetaMathlibExt.isWeaklyLocallyNilpotentAt_X_add_one`, a theorem declared in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#is-weakly-locally-nilpotent-at-x-add-one).
 
 ## $x + 1$ is not nilpotent at $1$
 
@@ -88,7 +88,7 @@ Writing $u(x) = x + 1$, the iterates satisfy $u^{(n)}(1) = n + 1 \ne 0$ for ever
 
 - Sayak Sengupta, *Locally Nilpotent Polynomials over Z*, INTEGERS 24 (2024), Article A13, Section 2, example (e).
 
-Formalized by `MetaMathlibExt.not_isNilpotentAt_X_add_one`, a theorem declared in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#not-is-nilpotent-at-x-add-one).
+Formalized by `MetaMathlibExt.not_isNilpotentAt_X_add_one`, a theorem declared in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#not-is-nilpotent-at-x-add-one).
 
 ## Classification of locally nilpotent polynomials at $1$
 
@@ -101,7 +101,7 @@ $-2x^2 + 7x - 3 + p(x)(x-1)(x-2)(x-3)$; or $u = x + 1$.
 
 - Sayak Sengupta, *Locally Nilpotent Polynomials over Z*, INTEGERS 24 (2024), Article A13, Theorem 4.1.
 
-Stated but not proved: `MetaMathlibExt.locallyNilpotentAt_one_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#locally-nilpotent-at-one-classification).
+Stated but not proved: `MetaMathlibExt.locallyNilpotentAt_one_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#locally-nilpotent-at-one-classification).
 
 ## Classification of locally nilpotent polynomials at $-1$
 
@@ -116,7 +116,7 @@ These are the images of the polynomials locally nilpotent at $1$ under $u(x) \ma
 
 - Sayak Sengupta, *Locally Nilpotent Polynomials over Z*, INTEGERS 24 (2024), Article A13, Corollary 4.2.
 
-Stated but not proved: `MetaMathlibExt.locallyNilpotentAt_neg_one_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#locally-nilpotent-at-neg-one-classificat).
+Stated but not proved: `MetaMathlibExt.locallyNilpotentAt_neg_one_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#locally-nilpotent-at-neg-one-classificat).
 
 ## Locally nilpotent but not nilpotent polynomials at $\pm 1$
 
@@ -129,7 +129,7 @@ nilpotent at $-1$ is $x - 1$.
 
 - Sayak Sengupta, *Locally Nilpotent Polynomials over Z*, INTEGERS 24 (2024), Article A13, Corollary 4.3.
 
-Stated but not proved: `MetaMathlibExt.locallyNilpotent_not_nilpotentAt_one_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#locally-nilpotent-not-nilpotent-at-one-n).
+Stated but not proved: `MetaMathlibExt.locallyNilpotent_not_nilpotentAt_one_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#locally-nilpotent-not-nilpotent-at-one-n).
 
 ## Classification of locally nilpotent polynomials at $0$
 
@@ -144,7 +144,7 @@ $p \in \mathbb{Z}[x]$ with $p(0) = -1$.
 
 - Sayak Sengupta, *Locally Nilpotent Polynomials over Z*, INTEGERS 24 (2024), Article A13, Theorem 4.4.
 
-Stated but not proved: `MetaMathlibExt.locallyNilpotentAt_zero_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#locally-nilpotent-at-zero-classification).
+Stated but not proved: `MetaMathlibExt.locallyNilpotentAt_zero_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#locally-nilpotent-at-zero-classification).
 
 ## Polynomials locally nilpotent but not nilpotent at $0$
 
@@ -157,7 +157,7 @@ $b \ne 0$ such that $a$ has at least one prime divisor and every prime divisor o
 
 - Sayak Sengupta, *Locally Nilpotent Polynomials over Z*, INTEGERS 24 (2024), Article A13, Corollary 4.5.
 
-Stated but not proved: `MetaMathlibExt.locallyNilpotent_not_nilpotentAt_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#locally-nilpotent-not-nilpotent-at-zero).
+Stated but not proved: `MetaMathlibExt.locallyNilpotent_not_nilpotentAt_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#locally-nilpotent-not-nilpotent-at-zero).
 
 ## Linear polynomials weakly locally nilpotent but not nilpotent at $1$
 
@@ -174,7 +174,7 @@ is the paper's $\sum s_i \ge 1$.
 
 - Sayak Sengupta, *Locally Nilpotent Polynomials over Z*, INTEGERS 24 (2024), Article A13, Corollary 5.2.
 
-Stated but not proved: `MetaMathlibExt.linear_weaklyLocallyNilpotent_not_nilpotentAt_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#linear-weakly-locally-nilpotent-not-nilp).
+Stated but not proved: `MetaMathlibExt.linear_weaklyLocallyNilpotent_not_nilpotentAt_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LocallyNilpotentPolynomialsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html#linear-weakly-locally-nilpotent-not-nilp).
 
 ## Depends on
 
@@ -183,4 +183,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Locally nilpotent polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/integer-sequences/iterated-self-referential/locally-nilpotent-polynomials)

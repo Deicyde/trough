@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.18 Flat modules and relative assassins
 
-Section 37.18 of the Stacks Project, [Tag 0GSF](https://stacks.math.columbia.edu/tag/0GSF). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.18 of the Stacks Project, [Tag 0GSF](https://stacks.math.columbia.edu/tag/0GSF). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GSG, a lemma
 
 [Tag 0GSG](https://stacks.math.columbia.edu/tag/0GSG) in the Stacks Project.
 
-**`Module.Flat.injective_of_injective_mapQ_maximalIdeal_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/InjectiveModMaximalIdealOverValuationRing.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/InjectiveModMaximalIdealOverValuationRing.lean#L187). The attribute's comment: “injectivity”.
+**`Module.Flat.injective_of_injective_mapQ_maximalIdeal_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/InjectiveModMaximalIdealOverValuationRing.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/InjectiveModMaximalIdealOverValuationRing.lean#L187). The attribute's comment: “injectivity”.
 
 > **The injectivity half of Stacks 0GSG.** Let `A` be a valuation ring, let `A → B` be a local
 > homomorphism of local rings which is essentially of finite type, and let `u : N → M` be a map of
@@ -38,7 +38,7 @@ theorem injective_of_injective_mapQ_maximalIdeal_of_valuationRing
     Function.Injective u
 ```
 
-**`Module.Flat.flat_quotient_range_of_injective_mapQ_maximalIdeal_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/InjectiveModMaximalIdealOverValuationRing.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/InjectiveModMaximalIdealOverValuationRing.lean#L208). The attribute's comment: “flatness of the cokernel”.
+**`Module.Flat.flat_quotient_range_of_injective_mapQ_maximalIdeal_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/InjectiveModMaximalIdealOverValuationRing.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/InjectiveModMaximalIdealOverValuationRing.lean#L208). The attribute's comment: “flatness of the cokernel”.
 
 > **The cokernel half of Stacks 0GSG.** Let `A` be a valuation ring, let `A → B` be a local
 > homomorphism of local rings which is essentially of finite type, and let `u : N → M` be a map of
@@ -66,7 +66,7 @@ theorem flat_quotient_range_of_injective_mapQ_maximalIdeal_of_valuationRing
 
 [Tag 0GSH](https://stacks.math.columbia.edu/tag/0GSH) in the Stacks Project.
 
-**`Stacks.RelativeAssassin.exists_valuation_base_change_generic_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ValuationBaseChange.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ValuationBaseChange.lean#L191).
+**`Stacks.RelativeAssassin.exists_valuation_base_change_generic_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ValuationBaseChange.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ValuationBaseChange.lean#L191).
 
 > A valuation-ring base change through a prescribed generic point of a component of
 > the fibre of the integral closure of a point.
@@ -109,7 +109,7 @@ theorem exists_valuation_base_change_generic_component
 
 [Tag 0GSI](https://stacks.math.columbia.edu/tag/0GSI) in the Stacks Project.
 
-**`Stacks.RelativeAssassin.topologicalKrullDimAt_fiber_eq_fiber_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreDimension.lean, line 894](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreDimension.lean#L894). The attribute's comment: “the fibre dimension equality”. References: EGA IV (12.1.1.4), “fibre dimension equality”; EGA IV (12.1.1.5), “dim(Z'\_y)=dim(Z'\_\{y'})”.
+**`Stacks.RelativeAssassin.topologicalKrullDimAt_fiber_eq_fiber_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreDimension.lean, line 894](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreDimension.lean#L894). The attribute's comment: “the fibre dimension equality”. References: EGA IV (12.1.1.4), “fibre dimension equality”; EGA IV (12.1.1.5), “dim(Z'\_y)=dim(Z'\_\{y'})”.
 
 > **Fibre dimension at a generic point of the fibre of a closure.** Let `f : X ⟶ S` be locally
 > of finite type, `F` a quasi-coherent finite type `𝒪_X`-module and `y` a point of `Ass_{X/S}(F)`.
@@ -131,7 +131,7 @@ theorem topologicalKrullDimAt_fiber_eq_fiber_of_flat
       topologicalKrullDimAt (g.fiber s) x = topologicalKrullDim (g.fiber (f y))
 ```
 
-**`Stacks.RelativeAssassin.mem_relativeAssassin_of_isGenericPoint_fibre_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSpecialization.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSpecialization.lean#L228). The attribute's comment: “the relative assassin conclusion”. References: EGA IV (12.1.1.4), “z ∈ Ass(F\_y)”; EGA IV (12.1.1.5), “z ∈ Ass(F\_y)”.
+**`Stacks.RelativeAssassin.mem_relativeAssassin_of_isGenericPoint_fibre_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSpecialization.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSpecialization.lean#L228). The attribute's comment: “the relative assassin conclusion”. References: EGA IV (12.1.1.4), “z ∈ Ass(F\_y)”; EGA IV (12.1.1.5), “z ∈ Ass(F\_y)”.
 
 > **Relative associated points at generic points of the fibres of a closure.** Let
 > `f : X ⟶ S` be locally of finite type, `F` a quasi-coherent finite type `𝒪_X`-module and `y` a
@@ -160,7 +160,7 @@ theorem mem_relativeAssassin_of_isGenericPoint_fibre_closure
 
 [Tag 0H3X](https://stacks.math.columbia.edu/tag/0H3X) in the Stacks Project.
 
-**`Stacks.RelativeAssassin.topologicalKrullDim_supp_fiber_le_of_generic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSupportDimension.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSupportDimension.lean#L390).
+**`Stacks.RelativeAssassin.topologicalKrullDim_supp_fiber_le_of_generic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSupportDimension.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSupportDimension.lean#L390).
 
 > **Stacks Project, Tag 0H3X.** The dimension of the support of a finite type quasi-coherent
 > module flat over an irreducible base does not increase from the generic fibre to any other
@@ -186,7 +186,7 @@ theorem topologicalKrullDim_supp_fiber_le_of_generic
 
 [Tag 0GSJ](https://stacks.math.columbia.edu/tag/0GSJ) in the Stacks Project.
 
-**`Stacks.RelativeAssassin.isDominant_closureSubschemeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ClosureRelativeDimension.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ClosureRelativeDimension.lean#L131). The attribute's comment: “dominance of the canonical map”.
+**`Stacks.RelativeAssassin.isDominant_closureSubschemeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ClosureRelativeDimension.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ClosureRelativeDimension.lean#L131). The attribute's comment: “dominance of the canonical map”.
 
 > The canonical map from the reduced closure of a point to the reduced closure
 > of its image is dominant.
@@ -209,7 +209,7 @@ theorem isDominant_closureSubschemeMap
     IsDominant h
 ```
 
-**`Stacks.RelativeAssassin.relativeDimension_closureSubschemeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ClosureRelativeDimension.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ClosureRelativeDimension.lean#L212). The attribute's comment: “part (2)”. References: EGA IV (12.1.1.4), “equidimensional Z'→Y'”; EGA IV (12.1.1.5), “equidimensionality”.
+**`Stacks.RelativeAssassin.relativeDimension_closureSubschemeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ClosureRelativeDimension.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ClosureRelativeDimension.lean#L212). The attribute's comment: “part (2)”. References: EGA IV (12.1.1.4), “equidimensional Z'→Y'”; EGA IV (12.1.1.5), “equidimensionality”.
 
 > If the module is flat at component-generic fibre points, the canonical map
 > from the reduced closure of a relative associated point to the reduced closure
@@ -248,13 +248,13 @@ theorem relativeDimension_closureSubschemeMap
 
 Declarations registered for the tag:
 
-- [`Stacks.RelativeAssassin.mem_relativeAssassin_of_isGenericPoint_fibre_closure`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSpecialization.lean#L228), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ClosureRelativeDimension.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ClosureRelativeDimension.lean#L125) (StacksFrontier): “part (1)”.
+- [`Stacks.RelativeAssassin.mem_relativeAssassin_of_isGenericPoint_fibre_closure`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSpecialization.lean#L228), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ClosureRelativeDimension.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/ClosureRelativeDimension.lean#L125) (StacksFrontier): “part (1)”.
 
 ## Tag 0GSK, a remark
 
 [Tag 0GSK](https://stacks.math.columbia.edu/tag/0GSK) in the Stacks Project.
 
-**`Stacks.RelativeAssassin.relativeDimension_of_isGenericPoint_of_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/RelativeDimensionCriteria.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/RelativeDimensionCriteria.lean#L324). The attribute's comment: “first set of hypotheses”.
+**`Stacks.RelativeAssassin.relativeDimension_of_isGenericPoint_of_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/RelativeDimensionCriteria.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/RelativeDimensionCriteria.lean#L324). The attribute's comment: “first set of hypotheses”.
 
 > **Stacks Project, Tag 0GSK, first set of hypotheses.** Let `f : X ⟶ S` be locally of finite
 > type with `X` integral of generic point `ξ`, and let `F` be a quasi-coherent `𝒪_X`-module of
@@ -278,7 +278,7 @@ theorem relativeDimension_of_isGenericPoint_of_trdeg (f : X ⟶ S) [LocallyOfFin
     AlgebraicGeometry.RelativeDimension f d
 ```
 
-**`Stacks.RelativeAssassin.relativeDimension_of_dense_fiber_of_component_dim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/RelativeDimensionCriteria.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/RelativeDimensionCriteria.lean#L442). The attribute's comment: “second set of hypotheses”.
+**`Stacks.RelativeAssassin.relativeDimension_of_dense_fiber_of_component_dim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/RelativeDimensionCriteria.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/RelativeDimensionCriteria.lean#L442). The attribute's comment: “second set of hypotheses”.
 
 > **Stacks Project, Tag 0GSK, second set of hypotheses.** Let `f : X ⟶ S` be locally of finite
 > type and let `F` be a quasi-coherent `𝒪_X`-module of finite type whose support is all of `X` and
@@ -309,4 +309,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.18, Tag 0GSF](https://stacks.math.columbia.edu/tag/0GSF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

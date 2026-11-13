@@ -8,13 +8,13 @@ proof: formalized
 
 # 98.18 Strong Rim-Schlessinger
 
-Section 98.18 of the Stacks Project, [Tag 0CXN](https://stacks.math.columbia.edu/tag/0CXN). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.18 of the Stacks Project, [Tag 0CXN](https://stacks.math.columbia.edu/tag/0CXN). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CXN, the section
 
 [Tag 0CXN](https://stacks.math.columbia.edu/tag/0CXN) in the Stacks Project.
 
-**`Deformation.Artin.locallyOfFiniteType_and_quasiCompact_of_isPullback_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/FiniteTypeCorner.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/RimSchlessinger/FiniteTypeCorner.lean#L67). The attribute's comment: “observation (3): if S is locally Noetherian, A, B, B' are of finite type over S and B is finite over A, then A' = A ×\_B B' is of finite type over S”.
+**`Deformation.Artin.locallyOfFiniteType_and_quasiCompact_of_isPullback_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/FiniteTypeCorner.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/RimSchlessinger/FiniteTypeCorner.lean#L67). The attribute's comment: “observation (3): if S is locally Noetherian, A, B, B' are of finite type over S and B is finite over A, then A' = A ×\_B B' is of finite type over S”.
 
 > **Observation (3) of the section on condition (RS\*).** Let `S` be locally Noetherian, and
 > let `U = Spec B`, `V = Spec A`, `W = Spec B'`, `Z = Spec A'` be affine schemes with morphisms
@@ -34,7 +34,7 @@ public theorem locallyOfFiniteType_and_quasiCompact_of_isPullback_appTop
     LocallyOfFiniteType t ∧ QuasiCompact t
 ```
 
-**`Deformation.Artin.isPushout_of_isPullback_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/FromThickeningPushouts.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/RimSchlessinger/FromThickeningPushouts.lean#L125). The attribute's comment: “observation (1): Spec(A') = Spec(A) ⨿\_\{Spec(B)} Spec(B') in the category of schemes, for A' = A ×\_B B' with B' → B surjective (the square-zero kernel is not needed)”.
+**`Deformation.Artin.isPushout_of_isPullback_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/FromThickeningPushouts.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/RimSchlessinger/FromThickeningPushouts.lean#L125). The attribute's comment: “observation (1): Spec(A') = Spec(A) ⨿\_\{Spec(B)} Spec(B') in the category of schemes, for A' = A ×\_B B' with B' → B surjective (the square-zero kernel is not needed)”.
 
 > A cartesian square of global sections of four affine schemes, one of whose maps is surjective
 > on global sections, is a cocartesian square of schemes. This is [Stacks Project, Tag 0ET0]
@@ -48,7 +48,7 @@ public theorem isPushout_of_isPullback_appTop {U V W Z : Scheme.{u}}
     (hsurj : Function.Surjective g.appTop.hom) : IsPushout f g i j
 ```
 
-**`Deformation.Artin.satisfiesRS_of_satisfiesRSStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/RSStarImpliesRS.lean, line 685](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/RimSchlessinger/RSStarImpliesRS.lean#L685). The attribute's comment: “observation (4): if 𝒳 satisfies (RS*), then 𝒳 satisfies (RS); the base need not be locally Noetherian”.
+**`Deformation.Artin.satisfiesRS_of_satisfiesRSStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/RSStarImpliesRS.lean, line 685](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/RimSchlessinger/RSStarImpliesRS.lean#L685). The attribute's comment: “observation (4): if 𝒳 satisfies (RS*), then 𝒳 satisfies (RS); the base need not be locally Noetherian”.
 
 > **The remark following Stacks 07Y8: condition (RS\*) implies condition (RS).**
 >
@@ -69,7 +69,7 @@ public theorem satisfiesRS_of_satisfiesRSStar
 
 [Tag 07Y8](https://stacks.math.columbia.edu/tag/07Y8) in the Stacks Project.
 
-**`Deformation.Artin.isDeformationCategory_predeformationCategory_of_satisfiesRSStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/DeformationCategory.lean, line 1221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/RimSchlessinger/DeformationCategory.lean#L1221). The attribute's comment: “condition (RS*) gives a deformation category”.
+**`Deformation.Artin.isDeformationCategory_predeformationCategory_of_satisfiesRSStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/DeformationCategory.lean, line 1221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/RimSchlessinger/DeformationCategory.lean#L1221). The attribute's comment: “condition (RS*) gives a deformation category”.
 
 > **Stacks Project, Tag 07Y8.** The predeformation category of a finite-type field-valued
 > point in a fibred category satisfying (RS*) is a deformation category; only the square-zero
@@ -97,7 +97,7 @@ public theorem isDeformationCategory_predeformationCategory_of_satisfiesRSStar
     Deformation.IsDeformationCategory D.projection
 ```
 
-**`Deformation.Artin.SatisfiesRSStar`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/Strong.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/RimSchlessinger/Strong.lean#L75).
+**`Deformation.Artin.SatisfiesRSStar`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/Strong.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/RimSchlessinger/Strong.lean#L75).
 
 > Condition (RS*): for every fibre-product square of `S`-algebras in the big affine fppf
 > site, with one map surjective with square-zero kernel, the canonical functor from the fibre
@@ -116,7 +116,7 @@ public abbrev SatisfiesRSStar
 
 [Tag 0CXP](https://stacks.math.columbia.edu/tag/0CXP) in the Stacks Project.
 
-**`Deformation.Artin.satisfiesRSStar_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/AlgebraicStackRSStar.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/RimSchlessinger/AlgebraicStackRSStar.lean#L51).
+**`Deformation.Artin.satisfiesRSStar_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/AlgebraicStackRSStar.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/RimSchlessinger/AlgebraicStackRSStar.lean#L51).
 
 > **Stacks 0CXP.** Every algebraic stack over `S` satisfies condition (RS*) of
 > [Stacks Project, Tag 07Y8].
@@ -138,7 +138,7 @@ theorem satisfiesRSStar_of_isAlgebraicStack
 
 [Tag 0CXQ](https://stacks.math.columbia.edu/tag/0CXQ) in the Stacks Project.
 
-**`Deformation.Artin.twoFibreProductOver_satisfiesRSStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ArtinCriteria/RimSchlessinger.lean, line 1216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ArtinCriteria/RimSchlessinger.lean#L1216).
+**`Deformation.Artin.twoFibreProductOver_satisfiesRSStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ArtinCriteria/RimSchlessinger.lean, line 1216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ArtinCriteria/RimSchlessinger.lean#L1216).
 
 > The two-fibre product of categories fibred in groupoids satisfying condition (RS*) again
 > satisfies (RS*).
@@ -171,4 +171,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.18, Tag 0CXN](https://stacks.math.columbia.edu/tag/0CXN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

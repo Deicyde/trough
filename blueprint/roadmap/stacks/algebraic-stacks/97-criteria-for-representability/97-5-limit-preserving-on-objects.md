@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.BigFppfOver.IsLimitPreservingOnObjects, AlgebraicGeometry.Stack.isLimitPreservingOnObjects_fibredCategory, AlgebraicGeometry.BigFppfOver.isLimitPreservingOnObjects_baseChange, AlgebraicGeometry.BigFppfOver.isLimitPreservingOnObjects_comp, AlgebraicGeometry.Stack.isLimitPreservingOnObjects_iff_isLocallyOfFinitePresentation, AlgebraicGeometry.Stack.isLimitPreservingOnObjects_of_isOpenImmersion, AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_of_limitPreservingOnObjects, AlgebraicGeometry.Stack.hasRelativeProperty_of_affine_locallyOfFinitePresentation
+lean: AlgebraicGeometry.BigFppfOver.IsLimitPreservingOnObjects, AlgebraicGeometry.Stack.isLimitPreservingOnObjects_fibredCategory, AlgebraicGeometry.BigFppfOver.isLimitPreservingOnObjects_baseChange, AlgebraicGeometry.BigFppfOver.isLimitPreservingOnObjects_comp, AlgebraicGeometry.Stack.isLimitPreservingOnObjects_iff_isLocallyOfFinitePresentation, AlgebraicGeometry.Stack.isLimitPreservingOnObjects_of_isOpenImmersion_of_univLE, AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_of_limitPreservingOnObjects, AlgebraicGeometry.Stack.hasRelativeProperty_of_affine_locallyOfFinitePresentation
 statement: formalized
 proof: formalized
 ---
 
 # 97.5 Limit preserving on objects
 
-Section 97.5 of the Stacks Project, [Tag 06CT](https://stacks.math.columbia.edu/tag/06CT). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 97.5 of the Stacks Project, [Tag 06CT](https://stacks.math.columbia.edu/tag/06CT). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06CU, an equation
 
 [Tag 06CU](https://stacks.math.columbia.edu/tag/06CU) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.IsLimitPreservingOnObjects`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/LimitPreservingOnObjects.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/LimitPreservingOnObjects.lean#L67).
+**`AlgebraicGeometry.BigFppfOver.IsLimitPreservingOnObjects`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/LimitPreservingOnObjects.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/LimitPreservingOnObjects.lean#L67).
 
 > **Stacks 06CU.** A morphism of categories fibred in groupoids is limit preserving on
 > objects: every comparison over an affine inverse limit descends, with the comparison square
@@ -26,7 +26,7 @@ def IsLimitPreservingOnObjects
     (𝒳 𝒴 : CatFiberedInGroupoids (BigFppfOver B S hS)) (p : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_fibredCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/LimitPreservingPresheafStack.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/LimitPreservingPresheafStack.lean#L71). The attribute's comment: “the criterion for the category fibred in sets attached to a set-valued presheaf: limit preservation on objects of its structure morphism follows from descent of the presheaf's sections along inverse limits of affine objects”.
+**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_fibredCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/LimitPreservingPresheafStack.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/LimitPreservingPresheafStack.lean#L71). The attribute's comment: “the criterion for the category fibred in sets attached to a set-valued presheaf: limit preservation on objects of its structure morphism follows from descent of the presheaf's sections along inverse limits of affine objects”.
 
 > If every section of `F` over an inverse limit of affine objects of the site descends to a
 > stage below a prescribed index, then the structure morphism of the category `𝒮_F` fibred in sets
@@ -46,7 +46,7 @@ public theorem isLimitPreservingOnObjects_fibredCategory (F : (BigFppfOver B S h
 
 [Tag 06CV](https://stacks.math.columbia.edu/tag/06CV) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.isLimitPreservingOnObjects_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/LimitPreservingOnObjects.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/LimitPreservingOnObjects.lean#L127).
+**`AlgebraicGeometry.BigFppfOver.isLimitPreservingOnObjects_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/LimitPreservingOnObjects.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/LimitPreservingOnObjects.lean#L127).
 
 > **Stacks 06CV.** Limit preservation on objects is stable under base change.
 
@@ -62,7 +62,7 @@ theorem isLimitPreservingOnObjects_baseChange
 
 [Tag 06CW](https://stacks.math.columbia.edu/tag/06CW) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.isLimitPreservingOnObjects_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/LimitPreservingOnObjects.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/LimitPreservingOnObjects.lean#L286).
+**`AlgebraicGeometry.BigFppfOver.isLimitPreservingOnObjects_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/LimitPreservingOnObjects.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/LimitPreservingOnObjects.lean#L286).
 
 > **Stacks 06CW.** The composite of two morphisms of categories fibred in groupoids that are
 > limit preserving on objects is limit preserving on objects.
@@ -81,7 +81,7 @@ theorem isLimitPreservingOnObjects_comp
 
 [Tag 06CX](https://stacks.math.columbia.edu/tag/06CX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_iff_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/LimitPreservingFinitePresentation.lean, line 883](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/LimitPreservingFinitePresentation.lean#L883). The attribute's comment: “index categories in the universe of the schemes”.
+**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_iff_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/LimitPreservingFinitePresentation.lean, line 883](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/LimitPreservingFinitePresentation.lean#L883). The attribute's comment: “index categories in the universe of the schemes”.
 
 > **Stacks 06CX.** A 1-morphism of categories fibred in groupoids over the big fppf site of `S`
 > which is representable by algebraic spaces is limit preserving on objects exactly when it is
@@ -115,28 +115,31 @@ theorem isLimitPreservingOnObjects_iff_isLocallyOfFinitePresentation
 
 [Tag 06CY](https://stacks.math.columbia.edu/tag/06CY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/LimitPreservingOpenImmersion.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/LimitPreservingOpenImmersion.lean#L116). The attribute's comment: “index categories in the universe of the schemes, which is the scope of the formalized form of Tag 06CX that the proof uses. Limit preservation on objects for a larger index universe is a strictly stronger condition, so it does not follow from the pinned form; it is `isLimitPreservingOnObjects_of_isOpenImmersion_of_criterion`, which takes Tag 06CX at those universes as a hypothesis”.
+**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_of_isOpenImmersion_of_univLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/LimitPreservingOpenImmersion.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/LimitPreservingOpenImmersion.lean#L168). The attribute's comment: “index categories range over all cofiltered categories whose objects and morphisms lie in universes bounded by that of the schemes, which covers the directed sets of the source”.
 
 > **Stacks 06CY.** A 1-morphism of categories fibred in groupoids over the big fppf site of
 > `S` which is representable by algebraic spaces and an open immersion in the sense of Stacks 04XB
-> is limit preserving on objects.
+> is limit preserving on objects, for every index category whose objects and morphisms form sets,
+> that is, live in universes `vI` and `wI` bounded by the universe `u` of the schemes.
 >
-> An open immersion of algebraic spaces is locally of finite presentation, so the relative
-> open-immersion property of Stacks 03YK implies the relative property of being locally of finite
-> presentation; Stacks 06CX turns the latter into limit preservation on objects.
+> The directed systems of the source are sets, so these are exactly its index categories. Such an
+> index category is equivalent to one in the universe `u`, and the condition there is
+> `AlgebraicGeometry.Stack.isLimitPreservingOnObjects_of_isOpenImmersion`; the transport is
+> `AlgebraicGeometry.BigFppfOver.isLimitPreservingOnObjects_of_univLE`.
 
 ```lean
-theorem isLimitPreservingOnObjects_of_isOpenImmersion
+theorem isLimitPreservingOnObjects_of_isOpenImmersion_of_univLE
+    [UnivLE.{vI, u}] [UnivLE.{wI, u}]
     (p : 𝒳 ⟶ 𝒴) (hp : IsRepresentableByAlgebraicSpaces B S hS p.hom)
     (hopen : IsOpenImmersion B S hS p) :
-    BigFppfOver.IsLimitPreservingOnObjects.{u, u, u} B S hS 𝒳 𝒴 p
+    BigFppfOver.IsLimitPreservingOnObjects.{u, vI, wI} B S hS 𝒳 𝒴 p
 ```
 
 ## Tag 07WH, a lemma
 
 [Tag 07WH](https://stacks.math.columbia.edu/tag/07WH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_of_limitPreservingOnObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/LimitPreservingOnObjectsCriteria/Representability.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/LimitPreservingOnObjectsCriteria/Representability.lean#L572).
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_of_limitPreservingOnObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/LimitPreservingOnObjectsCriteria/Representability.lean, line 572](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/LimitPreservingOnObjectsCriteria/Representability.lean#L572).
 
 > **Stacks 07WH.** Let `S` be a scheme of a big fppf site, let `T` be an object of the big fppf
 > site of `S` and put `κ = size T`. A 1-morphism `f : 𝒳 ⟶ 𝒴` of categories fibred in groupoids over
@@ -194,7 +197,7 @@ public theorem isRepresentableByAlgebraicSpaces_of_limitPreservingOnObjects
 
 [Tag 07WI](https://stacks.math.columbia.edu/tag/07WI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_of_affine_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingRepresentable.lean, line 2177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingRepresentable.lean#L2177).
+**`AlgebraicGeometry.Stack.hasRelativeProperty_of_affine_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingRepresentable.lean, line 2180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingRepresentable.lean#L2180).
 
 > A base-change-stable, fppf-local property of a representable morphism can
 > be checked on affine bases locally of finite presentation when the target is
@@ -238,4 +241,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 97.5, Tag 06CT](https://stacks.math.columbia.edu/tag/06CT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

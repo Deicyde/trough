@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.10 Infinitesimal deformations of schemes
 
-Section 37.10 of the Stacks Project, [Tag 063X](https://stacks.math.columbia.edu/tag/063X). 6 tags here are carried by 50 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.10 of the Stacks Project, [Tag 063X](https://stacks.math.columbia.edu/tag/063X). 6 tags here are carried by 50 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 063Y, a lemma
 
 [Tag 063Y](https://stacks.math.columbia.edu/tag/063Y) in the Stacks Project.
 
-**`Stacks.Thickenings.flat_and_isPullback_of_isIso_firstOrderThickeningConormalSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalConverse.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalConverse.lean#L585). The attribute's comment: “(2) ⟹ (1) for schemes”.
+**`Stacks.Thickenings.flat_and_isPullback_of_isIso_firstOrderThickeningConormalSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalConverse.lean, line 585](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalConverse.lean#L585). The attribute's comment: “(2) ⟹ (1) for schemes”.
 
 > **[Stacks Project, Tag 063Y], (2) ⟹ (1), for schemes.** Let
 > `(f, f') : (X ⊂ X') → (S ⊂ S')` be a morphism of first-order thickenings of schemes, with
@@ -37,7 +37,7 @@ theorem flat_and_isPullback_of_isIso_firstOrderThickeningConormalSheafMap {i : X
     Flat φ.right ∧ IsPullback i φ.left φ.right j
 ```
 
-**`Stacks.Thickenings.flat_and_isPullback_iff_isIso_firstOrderThickeningConormalSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalConverse.lean, line 609](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalConverse.lean#L609).
+**`Stacks.Thickenings.flat_and_isPullback_iff_isIso_firstOrderThickeningConormalSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalConverse.lean, line 609](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalConverse.lean#L609).
 
 > **[Stacks Project, Tag 063Y] for schemes.** Let `(f, f') : (X ⊂ X') → (S ⊂ S')` be a morphism
 > of first-order thickenings of schemes with `f = φ.left` flat.  Then the following are equivalent:
@@ -61,7 +61,7 @@ theorem flat_and_isPullback_iff_isIso_firstOrderThickeningConormalSheafMap {i : 
       IsIso (firstOrderThickeningConormalSheafMap hi hj φ)
 ```
 
-**`Stacks.Thickenings.epi_firstOrderThickeningConormalSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalMap.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalMap.lean#L137). The attribute's comment: “(1) ⟹ (2) for schemes, surjectivity”.
+**`Stacks.Thickenings.epi_firstOrderThickeningConormalSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalMap.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalMap.lean#L137). The attribute's comment: “(1) ⟹ (2) for schemes, surjectivity”.
 
 > **The surjectivity half of condition (2) of [Stacks Project, Tag 063Y], for schemes.** For a
 > morphism of first-order thickenings whose square is cartesian, so that `X = S ×_{S'} X'`, the
@@ -82,7 +82,7 @@ theorem epi_firstOrderThickeningConormalSheafMap (hi : IsFirstOrderThickening i)
     Epi (firstOrderThickeningConormalSheafMap hi hj φ)
 ```
 
-**`Stacks.Thickenings.isIso_firstOrderThickeningConormalSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalMap.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalMap.lean#L183). The attribute's comment: “(1) ⟹ (2) for schemes”.
+**`Stacks.Thickenings.isIso_firstOrderThickeningConormalSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalMap.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FirstOrderThickeningConormalMap.lean#L183). The attribute's comment: “(1) ⟹ (2) for schemes”.
 
 > **[Stacks Project, Tag 063Y], (1) ⟹ (2), for schemes.**  Let `(f, f') : (X ⊂ X') → (S ⊂ S')`
 > be a morphism of first-order thickenings of schemes, with `f = φ.left` and `f' = φ.right`.  If
@@ -107,7 +107,7 @@ theorem isIso_firstOrderThickeningConormalSheafMap (hi : IsFirstOrderThickening 
     IsIso (firstOrderThickeningConormalSheafMap hi hj φ)
 ```
 
-**`Ideal.bijective_tensorSMulHomToKer_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/SquareZeroConormal.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/SquareZeroConormal.lean#L346). The attribute's comment: “affine case”. References: SGA 3 III (0.14), “partial”; SGA 3 XV (2.7), “affine case”.
+**`Ideal.bijective_tensorSMulHomToKer_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/SquareZeroConormal.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/SquareZeroConormal.lean#L346). The attribute's comment: “affine case”. References: SGA 3 III (0.14), “partial”; SGA 3 XV (2.7), “affine case”.
 
 > **Stacks 063Y, the affine case.** Let `I ^ 2 = 0` in `A'`, write `A = A' ⧸ I`, let `B` be a
 > quotient of the `A'`-algebra `B'` which is compatibly an `A`-algebra, and let `J` be the kernel of
@@ -126,7 +126,7 @@ theorem bijective_tensorSMulHomToKer_iff (hI2 : I ^ 2 = ⊥)
         (RingHom.ker (algebraMap B' B)).restrictScalars A' = I • (⊤ : Submodule A' B')
 ```
 
-**`Ideal.bijective_fibreTensorSMulHomToKer_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/SquareZeroConormal.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/SquareZeroConormal.lean#L521). The attribute's comment: “affine case, with the source the pullback of the conormal module”.
+**`Ideal.bijective_fibreTensorSMulHomToKer_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/SquareZeroConormal.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/SquareZeroConormal.lean#L521). The attribute's comment: “affine case, with the source the pullback of the conormal module”.
 
 > **Stacks 063Y in the affine case, with the source as the pullback of the conormal module.**
 > Let `I ^ 2 = 0` in `A'`, write `A = A' ⧸ I`, let `B` be a quotient of the `A'`-algebra `B'` which
@@ -152,7 +152,7 @@ theorem bijective_fibreTensorSMulHomToKer_iff (hI2 : I ^ 2 = ⊥)
 
 [Tag 06AF](https://stacks.math.columbia.edu/tag/06AF) in the Stacks Project.
 
-**`AlgebraicGeometry.flat_of_flat_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Flatness.lean, line 750](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Flatness.lean#L750). The attribute's comment: “flatness of the upper morphism”.
+**`AlgebraicGeometry.flat_of_flat_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Flatness.lean, line 750](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/Flatness.lean#L750). The attribute's comment: “flatness of the upper morphism”.
 
 > Flatness of a morphism lifts from its reduction over a finite-order
 > thickening when its source is flat over the thickened base.
@@ -170,7 +170,7 @@ public theorem flat_of_flat_reduction
     (hflatX' : Flat pX') (hflatf : Flat f) : Flat f'
 ```
 
-**`AlgebraicGeometry.flatAt_target_of_flat_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Flatness.lean, line 766](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Flatness.lean#L766). The attribute's comment: “flatness of the upper target along the image”.
+**`AlgebraicGeometry.flatAt_target_of_flat_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Flatness.lean, line 766](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/Flatness.lean#L766). The attribute's comment: “flatness of the upper target along the image”.
 
 > The thickened target is flat over the thickened base at every point in
 > the image of the upper morphism.
@@ -193,7 +193,7 @@ public theorem flatAt_target_of_flat_reduction
 
 [Tag 06AG](https://stacks.math.columbia.edu/tag/06AG) in the Stacks Project.
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.locallyOfFinitePresentation_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/FinitePresentation.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/FinitePresentation.lean#L353). The attribute's comment: “locally\_finite\_presentation”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.locallyOfFinitePresentation_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/FinitePresentation.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/FinitePresentation.lean#L353). The attribute's comment: “locally\_finite\_presentation”.
 
 > Local finite presentation is invariant under a cartesian finite-order deformation when the
 > enlarged source is flat over the enlarged base.
@@ -204,7 +204,7 @@ theorem locallyOfFinitePresentation_iff
     LocallyOfFinitePresentation D.f ↔ LocallyOfFinitePresentation D.f'
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.locallyOfFiniteType_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L70). The attribute's comment: “locally\_finite\_type”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.locallyOfFiniteType_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L70). The attribute's comment: “locally\_finite\_type”.
 
 > Local finite type is invariant under a cartesian finite-order deformation.
 
@@ -213,7 +213,7 @@ theorem locallyOfFiniteType_iff (D : CartesianFiniteOrderDeformationDiagram.{u})
     LocallyOfFiniteType D.f ↔ LocallyOfFiniteType D.f'
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.locallyQuasiFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L83). The attribute's comment: “locally\_quasi\_finite”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.locallyQuasiFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L83). The attribute's comment: “locally\_quasi\_finite”.
 
 > Local quasi-finiteness is invariant under a cartesian finite-order deformation with flat
 > enlarged source.
@@ -224,7 +224,7 @@ theorem locallyQuasiFinite_iff (D : CartesianFiniteOrderDeformationDiagram.{u}) 
       (LocallyOfFiniteType D.f' ∧ LocallyQuasiFinite D.f')
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isProper_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L108). The attribute's comment: “proper”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isProper_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L108). The attribute's comment: “proper”.
 
 > Properness is invariant under a cartesian finite-order deformation.
 
@@ -233,7 +233,7 @@ theorem isProper_iff (d : CartesianFiniteOrderDeformationDiagram.{u}) :
     IsProper d.f ↔ IsProper d.f'
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isAffineHom_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean#L96). The attribute's comment: “affine”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isAffineHom_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean#L96). The attribute's comment: “affine”.
 
 > **Stacks 06AG, affine case.** Affineness is invariant under a cartesian finite-order
 > deformation with flat ambient source.
@@ -243,7 +243,7 @@ theorem isAffineHom_iff (D : CartesianFiniteOrderDeformationDiagram.{u}) :
     IsAffineHom D.f ↔ IsAffineHom D.f'
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isIntegralHom_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean#L104). The attribute's comment: “integral”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isIntegralHom_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean#L104). The attribute's comment: “integral”.
 
 > **Stacks 06AG, integral case.** Integrality is invariant under a cartesian finite-order
 > deformation with flat ambient source: it is universal closedness together with affineness.
@@ -253,7 +253,7 @@ theorem isIntegralHom_iff (D : CartesianFiniteOrderDeformationDiagram.{u}) :
     IsIntegralHom D.f ↔ IsIntegralHom D.f'
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean#L115). The attribute's comment: “finite”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean#L115). The attribute's comment: “finite”.
 
 > **Stacks 06AG, finite case.** Finiteness is invariant under a cartesian finite-order
 > deformation with flat ambient source: it is integrality together with local finite type.
@@ -263,7 +263,7 @@ theorem isFinite_iff (D : CartesianFiniteOrderDeformationDiagram.{u}) :
     IsFinite D.f ↔ IsFinite D.f'
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.etale_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Etale.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Etale.lean#L89). The attribute's comment: “etale”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.etale_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Etale.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Etale.lean#L89). The attribute's comment: “etale”.
 
 > **Stacks 06AG, étale case.** Étaleness is invariant under a cartesian finite-order
 > deformation with flat ambient source.
@@ -273,7 +273,7 @@ theorem CartesianFiniteOrderDeformationDiagram.etale_iff
     (D : CartesianFiniteOrderDeformationDiagram.{u}) : Etale D.f ↔ Etale D.f'
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isFiniteLocallyFree_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FiniteLocallyFree.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FiniteLocallyFree.lean#L84). The attribute's comment: “finite\_locally\_free”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isFiniteLocallyFree_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FiniteLocallyFree.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FiniteLocallyFree.lean#L84). The attribute's comment: “finite\_locally\_free”.
 
 > In a cartesian finite-order deformation diagram, `f` is finite, flat and locally of finite
 > presentation if and only if `f'` is.
@@ -284,7 +284,7 @@ theorem isFiniteLocallyFree_iff (D : CartesianFiniteOrderDeformationDiagram.{u})
       (IsFinite D.f' ∧ Flat D.f' ∧ LocallyOfFinitePresentation D.f')
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isFiniteLocallyFreeOfRank_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FiniteLocallyFree.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FiniteLocallyFree.lean#L92). The attribute's comment: “finite\_locally\_free\_of\_rank”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isFiniteLocallyFreeOfRank_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FiniteLocallyFree.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FiniteLocallyFree.lean#L92). The attribute's comment: “finite\_locally\_free\_of\_rank”.
 
 > In a cartesian finite-order deformation diagram, `f` is finite locally free of rank `d` if and
 > only if `f'` is.
@@ -298,7 +298,7 @@ theorem isFiniteLocallyFreeOfRank_iff (D : CartesianFiniteOrderDeformationDiagra
         ∀ y' : D.Y', D.f'.finrank y' = d)
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.flat_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Flat.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Flat.lean#L71). The attribute's comment: “flat”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.flat_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Flat.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Flat.lean#L71). The attribute's comment: “flat”.
 
 > **Stacks 06AG, flat case.** Flatness is invariant under a cartesian finite-order deformation
 > with flat ambient source.
@@ -308,7 +308,7 @@ theorem CartesianFiniteOrderDeformationDiagram.flat_iff
     (D : CartesianFiniteOrderDeformationDiagram.{u}) : Flat D.f ↔ Flat D.f'
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isOpenImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean#L95). The attribute's comment: “open\_immersion”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isOpenImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean#L95). The attribute's comment: “open\_immersion”.
 
 > Being an open immersion is invariant under a cartesian finite-order deformation with flat
 > ambient source.
@@ -318,7 +318,7 @@ theorem isOpenImmersion_iff (D : CartesianFiniteOrderDeformationDiagram.{u}) :
     IsOpenImmersion D.f ↔ IsOpenImmersion D.f'
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isIso_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean#L107). The attribute's comment: “isomorphism”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.isIso_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean#L107). The attribute's comment: “isomorphism”.
 
 > Being an isomorphism is invariant under a cartesian finite-order deformation with flat ambient
 > source.
@@ -328,7 +328,7 @@ theorem isIso_iff (D : CartesianFiniteOrderDeformationDiagram.{u}) :
     IsIso D.f ↔ IsIso D.f'
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.mono_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean#L166). The attribute's comment: “monomorphism”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.mono_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean#L164). The attribute's comment: “monomorphism”.
 
 > Being a monomorphism is invariant under a cartesian finite-order deformation with flat ambient
 > source.
@@ -338,7 +338,7 @@ theorem mono_iff (D : CartesianFiniteOrderDeformationDiagram.{u}) :
     Mono D.f ↔ Mono D.f'
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.relativeDimension_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/RelativeDimension.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/RelativeDimension.lean#L65). The attribute's comment: “relative\_dimension”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.relativeDimension_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/RelativeDimension.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/RelativeDimension.lean#L65). The attribute's comment: “relative\_dimension”.
 
 > Being locally of finite type of relative dimension `d` is invariant under a cartesian
 > finite-order deformation with flat ambient source.
@@ -349,7 +349,7 @@ theorem relativeDimension_iff (D : CartesianFiniteOrderDeformationDiagram.{u}) (
       (∃ _ : LocallyOfFiniteType D.f', RelativeDimension D.f' d)
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.smooth_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Smooth.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Smooth.lean#L82). The attribute's comment: “smooth”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.smooth_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Smooth.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Smooth.lean#L82). The attribute's comment: “smooth”.
 
 > **Stacks 06AG, smooth case.** Smoothness is invariant under a cartesian finite-order
 > deformation with flat ambient source.
@@ -359,7 +359,7 @@ theorem CartesianFiniteOrderDeformationDiagram.smooth_iff
     (D : CartesianFiniteOrderDeformationDiagram.{u}) : Smooth D.f ↔ Smooth D.f'
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.syntomic_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Syntomic.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Syntomic.lean#L80). The attribute's comment: “syntomic”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.syntomic_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Syntomic.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Syntomic.lean#L80). The attribute's comment: “syntomic”.
 
 > **Stacks 06AG, syntomic case.** Syntomicity is invariant under a cartesian finite-order
 > deformation with flat ambient source.
@@ -369,7 +369,7 @@ theorem CartesianFiniteOrderDeformationDiagram.syntomic_iff
     (D : CartesianFiniteOrderDeformationDiagram.{u}) : Syntomic D.f ↔ Syntomic D.f'
 ```
 
-**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.unramified_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Unramified.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Unramified.lean#L87). The attribute's comment: “unramified”.
+**`Stacks.Thickenings.CartesianFiniteOrderDeformationDiagram.unramified_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Unramified.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Unramified.lean#L87). The attribute's comment: “unramified”.
 
 > **Stacks 06AG, unramified case.** Unramifiedness is invariant under a cartesian finite-order
 > deformation with flat ambient source.
@@ -381,19 +381,19 @@ theorem CartesianFiniteOrderDeformationDiagram.unramified_iff
 
 Declarations registered for the tag:
 
-- [`Stacks.Thickenings.quasiCompact_left_iff_right`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L73), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L122) (StacksFrontier): “quasi\_compact”.
-- [`Stacks.Thickenings.isSeparated_left_iff_right`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Separated.lean#L63), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L123) (StacksFrontier): “separated”.
-- [`Stacks.Thickenings.quasiSeparated_left_iff_right`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Separated.lean#L76), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L124) (StacksFrontier): “separated”.
-- [`Stacks.Thickenings.surjective_left_iff_right`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L125) (StacksFrontier): “surjective”.
-- [`Stacks.Thickenings.universallyClosed_left_iff_right`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L126), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L126) (StacksFrontier): “universally\_closed”.
-- [`Stacks.Thickenings.universallyInjective_left_iff_right`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L157), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L127) (StacksFrontier): “universally\_injective”.
-- [`Stacks.Thickenings.universallyOpen_left_iff_right`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L245), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L128) (StacksFrontier): “universally\_open”.
+- [`Stacks.Thickenings.quasiCompact_left_iff_right`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L73), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L122) (StacksFrontier): “quasi\_compact”.
+- [`Stacks.Thickenings.isSeparated_left_iff_right`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Separated.lean#L63), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L123) (StacksFrontier): “separated”.
+- [`Stacks.Thickenings.quasiSeparated_left_iff_right`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Separated.lean#L76), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L124) (StacksFrontier): “separated”.
+- [`Stacks.Thickenings.surjective_left_iff_right`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L125) (StacksFrontier): “surjective”.
+- [`Stacks.Thickenings.universallyClosed_left_iff_right`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L126), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L126) (StacksFrontier): “universally\_closed”.
+- [`Stacks.Thickenings.universallyInjective_left_iff_right`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L157), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L127) (StacksFrontier): “universally\_injective”.
+- [`Stacks.Thickenings.universallyOpen_left_iff_right`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L245), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Deformation/Properties.lean#L128) (StacksFrontier): “universally\_open”.
 
 ## Tag 0CF3, a lemma
 
 [Tag 0CF3](https://stacks.math.columbia.edu/tag/0CF3) in the Stacks Project.
 
-**`Stacks.Flatness.flat_of_flat_baseChange_thickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ThickeningBaseChange.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ThickeningBaseChange.lean#L315). The attribute's comment: “flatness of the ambient morphism”.
+**`Stacks.Flatness.flat_of_flat_baseChange_thickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ThickeningBaseChange.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ThickeningBaseChange.lean#L315). The attribute's comment: “flatness of the ambient morphism”.
 
 > **Flatness lifts across cartesian thickenings.** Let `iX : X ⟶ X'`, `iY : Y ⟶ Y'` and
 > `iS : S ⟶ S'` be thickenings, let `f : X ⟶ Y` and `f' : X' ⟶ Y'` be compatible morphisms over
@@ -420,7 +420,7 @@ theorem flat_of_flat_baseChange_thickening
     (hf : Flat f) : Flat f'
 ```
 
-**`Stacks.Flatness.flat_stalkMap_of_flat_baseChange_thickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ThickeningBaseChange.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ThickeningBaseChange.lean#L338). The attribute's comment: “flatness of the target local ring”.
+**`Stacks.Flatness.flat_stalkMap_of_flat_baseChange_thickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ThickeningBaseChange.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ThickeningBaseChange.lean#L338). The attribute's comment: “flatness of the target local ring”.
 
 > **The local ring of the target is flat over the base.** In the situation of Stacks Tag 0CF3,
 > the local ring of `Y'` at the image of a point of `X'` is flat over the local ring of `S'`.
@@ -444,7 +444,7 @@ theorem flat_stalkMap_of_flat_baseChange_thickening
     (hf : Flat f) (x' : X') : (gY'.stalkMap (f' x')).hom.Flat
 ```
 
-**`Stacks.Flatness.essentiallyOfFinitePresentation_stalkMap_of_flat_baseChange_thickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ThickeningBaseChange.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ThickeningBaseChange.lean#L361). The attribute's comment: “essential finite presentation of the target local ring”.
+**`Stacks.Flatness.essentiallyOfFinitePresentation_stalkMap_of_flat_baseChange_thickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ThickeningBaseChange.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ThickeningBaseChange.lean#L361). The attribute's comment: “essential finite presentation of the target local ring”.
 
 > **The local ring of the target is essentially of finite presentation over the base.** In the
 > situation of Stacks Tag 0CF3, the local ring of `Y'` at the image of a point of `X'` is
@@ -477,7 +477,7 @@ theorem essentiallyOfFinitePresentation_stalkMap_of_flat_baseChange_thickening
 
 [Tag 0CF4](https://stacks.math.columbia.edu/tag/0CF4) in the Stacks Project.
 
-**`Stacks.Thickenings.FlatDeformationDiagram.isAffineHom_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean#L127). The attribute's comment: “affine”.
+**`Stacks.Thickenings.FlatDeformationDiagram.isAffineHom_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean#L127). The attribute's comment: “affine”.
 
 > Affineness is invariant under a flat deformation diagram.
 
@@ -486,7 +486,7 @@ theorem isAffineHom_iff (D : FlatDeformationDiagram.{u}) :
     IsAffineHom D.f ↔ IsAffineHom D.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.isFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean#L143). The attribute's comment: “finite”.
+**`Stacks.Thickenings.FlatDeformationDiagram.isFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Affine.lean#L143). The attribute's comment: “finite”.
 
 > Finiteness is invariant under a flat deformation diagram: it is integrality together with
 > local finite type, and both horizontal morphisms are locally of finite type.
@@ -495,7 +495,7 @@ theorem isAffineHom_iff (D : FlatDeformationDiagram.{u}) :
 theorem isFinite_iff (D : FlatDeformationDiagram.{u}) : IsFinite D.f ↔ IsFinite D.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.etale_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Etale.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Etale.lean#L74). The attribute's comment: “etale”.
+**`Stacks.Thickenings.FlatDeformationDiagram.etale_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Etale.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Etale.lean#L74). The attribute's comment: “etale”.
 
 > Étaleness is invariant under a flat deformation diagram.
 
@@ -504,7 +504,7 @@ theorem FlatDeformationDiagram.etale_iff (D : FlatDeformationDiagram.{u}) :
     Etale D.f ↔ Etale D.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.finiteLocallyFree_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FiniteLocallyFree.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FiniteLocallyFree.lean#L133). The attribute's comment: “finite\_locally\_free”.
+**`Stacks.Thickenings.FlatDeformationDiagram.finiteLocallyFree_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FiniteLocallyFree.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FiniteLocallyFree.lean#L133). The attribute's comment: “finite\_locally\_free”.
 
 > Being finite locally free, and being finite locally free of a given rank `d`, are each
 > invariant under a flat deformation diagram.
@@ -519,7 +519,7 @@ theorem finiteLocallyFree_iff (D : FlatDeformationDiagram.{u}) :
         ∀ y' : D.Y', D.f'.finrank y' = d)
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.flat_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Flat.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Flat.lean#L57). The attribute's comment: “flat”.
+**`Stacks.Thickenings.FlatDeformationDiagram.flat_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Flat.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Flat.lean#L57). The attribute's comment: “flat”.
 
 > Flatness is invariant under a flat deformation diagram.
 
@@ -528,7 +528,7 @@ theorem FlatDeformationDiagram.flat_iff (D : FlatDeformationDiagram.{u}) :
     Flat D.f ↔ Flat D.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.quasiCompact_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean#L60). The attribute's comment: “quasi\_compact”.
+**`Stacks.Thickenings.FlatDeformationDiagram.quasiCompact_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean#L60). The attribute's comment: “quasi\_compact”.
 
 > Quasi-compactness is invariant under a flat deformation diagram.
 
@@ -536,7 +536,7 @@ theorem FlatDeformationDiagram.flat_iff (D : FlatDeformationDiagram.{u}) :
 theorem quasiCompact_iff : QuasiCompact D.f ↔ QuasiCompact D.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.universallyClosed_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean#L65). The attribute's comment: “universally\_closed”.
+**`Stacks.Thickenings.FlatDeformationDiagram.universallyClosed_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean#L65). The attribute's comment: “universally\_closed”.
 
 > Universal closedness is invariant under a flat deformation diagram.
 
@@ -544,7 +544,7 @@ theorem quasiCompact_iff : QuasiCompact D.f ↔ QuasiCompact D.f'
 theorem universallyClosed_iff : UniversallyClosed D.f ↔ UniversallyClosed D.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.separated_and_quasiSeparated_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean#L71). The attribute's comment: “separated”.
+**`Stacks.Thickenings.FlatDeformationDiagram.separated_and_quasiSeparated_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean#L71). The attribute's comment: “separated”.
 
 > Separatedness and quasi-separatedness are each invariant under a flat deformation
 > diagram.
@@ -554,7 +554,7 @@ theorem separated_and_quasiSeparated_iff :
     (IsSeparated D.f ↔ IsSeparated D.f') ∧ (QuasiSeparated D.f ↔ QuasiSeparated D.f')
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.surjective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean#L78). The attribute's comment: “surjective”.
+**`Stacks.Thickenings.FlatDeformationDiagram.surjective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean#L78). The attribute's comment: “surjective”.
 
 > Surjectivity is invariant under a flat deformation diagram.
 
@@ -562,7 +562,7 @@ theorem separated_and_quasiSeparated_iff :
 theorem surjective_iff : Surjective D.f ↔ Surjective D.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.universallyInjective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean#L83). The attribute's comment: “universally\_injective”.
+**`Stacks.Thickenings.FlatDeformationDiagram.universallyInjective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean#L83). The attribute's comment: “universally\_injective”.
 
 > Universal injectivity is invariant under a flat deformation diagram.
 
@@ -570,7 +570,7 @@ theorem surjective_iff : Surjective D.f ↔ Surjective D.f'
 theorem universallyInjective_iff : UniversallyInjective D.f ↔ UniversallyInjective D.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.universallyOpen_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean#L88). The attribute's comment: “universally\_open”.
+**`Stacks.Thickenings.FlatDeformationDiagram.universallyOpen_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/FromThickeningMorphism.lean#L88). The attribute's comment: “universally\_open”.
 
 > Universal openness is invariant under a flat deformation diagram.
 
@@ -578,7 +578,7 @@ theorem universallyInjective_iff : UniversallyInjective D.f ↔ UniversallyInjec
 theorem universallyOpen_iff : UniversallyOpen D.f ↔ UniversallyOpen D.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.isOpenImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean#L178). The attribute's comment: “open\_immersion”.
+**`Stacks.Thickenings.FlatDeformationDiagram.isOpenImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean#L176). The attribute's comment: “open\_immersion”.
 
 > Being an open immersion is invariant under a flat deformation diagram.
 
@@ -587,7 +587,7 @@ theorem isOpenImmersion_iff (D : FlatDeformationDiagram.{u}) :
     IsOpenImmersion D.f ↔ IsOpenImmersion D.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.isIso_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean#L187). The attribute's comment: “isomorphism”.
+**`Stacks.Thickenings.FlatDeformationDiagram.isIso_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean#L185). The attribute's comment: “isomorphism”.
 
 > Being an isomorphism is invariant under a flat deformation diagram.
 
@@ -595,7 +595,7 @@ theorem isOpenImmersion_iff (D : FlatDeformationDiagram.{u}) :
 theorem isIso_iff (D : FlatDeformationDiagram.{u}) : IsIso D.f ↔ IsIso D.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.mono_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean#L194). The attribute's comment: “monomorphism”.
+**`Stacks.Thickenings.FlatDeformationDiagram.mono_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/OpenImmersion.lean#L192). The attribute's comment: “monomorphism”.
 
 > Being a monomorphism is invariant under a flat deformation diagram.
 
@@ -603,7 +603,7 @@ theorem isIso_iff (D : FlatDeformationDiagram.{u}) : IsIso D.f ↔ IsIso D.f'
 theorem mono_iff (D : FlatDeformationDiagram.{u}) : Mono D.f ↔ Mono D.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.isProper_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Proper.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Proper.lean#L47). The attribute's comment: “proper”.
+**`Stacks.Thickenings.FlatDeformationDiagram.isProper_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Proper.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Proper.lean#L47). The attribute's comment: “proper”.
 
 > Properness is invariant under a flat deformation diagram.
 
@@ -612,7 +612,7 @@ theorem FlatDeformationDiagram.isProper_iff (d : FlatDeformationDiagram.{u}) :
     IsProper d.f ↔ IsProper d.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.locallyQuasiFinite_conditions_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/QuasiFinite.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/QuasiFinite.lean#L46). The attribute's comment: “locally\_quasi\_finite”.
+**`Stacks.Thickenings.FlatDeformationDiagram.locallyQuasiFinite_conditions_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/QuasiFinite.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/QuasiFinite.lean#L46). The attribute's comment: “locally\_quasi\_finite”.
 
 > Local quasi-finiteness is invariant under a flat deformation diagram.
 
@@ -623,7 +623,7 @@ theorem FlatDeformationDiagram.locallyQuasiFinite_conditions_iff
       (LocallyOfFiniteType D.f' ∧ LocallyQuasiFinite D.f')
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.relativeDimension_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/RelativeDimension.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/RelativeDimension.lean#L92). The attribute's comment: “relative\_dimension”.
+**`Stacks.Thickenings.FlatDeformationDiagram.relativeDimension_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/RelativeDimension.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/RelativeDimension.lean#L92). The attribute's comment: “relative\_dimension”.
 
 > Being locally of finite type of relative dimension `d` is invariant under a flat deformation
 > diagram.
@@ -634,7 +634,7 @@ theorem relativeDimension_iff (D : FlatDeformationDiagram.{u}) (d : ℕ) :
       (∃ _ : LocallyOfFiniteType D.f', RelativeDimension D.f' d)
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.smooth_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Smooth.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Smooth.lean#L69). The attribute's comment: “smooth”.
+**`Stacks.Thickenings.FlatDeformationDiagram.smooth_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Smooth.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Smooth.lean#L69). The attribute's comment: “smooth”.
 
 > Smoothness is invariant under a flat deformation diagram.
 
@@ -643,7 +643,7 @@ theorem FlatDeformationDiagram.smooth_iff (D : FlatDeformationDiagram.{u}) :
     Smooth D.f ↔ Smooth D.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.syntomic_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Syntomic.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Syntomic.lean#L60). The attribute's comment: “syntomic”.
+**`Stacks.Thickenings.FlatDeformationDiagram.syntomic_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Syntomic.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Syntomic.lean#L60). The attribute's comment: “syntomic”.
 
 > Syntomicity is invariant under a flat deformation diagram.
 
@@ -652,7 +652,7 @@ theorem FlatDeformationDiagram.syntomic_iff (D : FlatDeformationDiagram.{u}) :
     Syntomic D.f ↔ Syntomic D.f'
 ```
 
-**`Stacks.Thickenings.FlatDeformationDiagram.unramified_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Unramified.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Unramified.lean#L76). The attribute's comment: “unramified”.
+**`Stacks.Thickenings.FlatDeformationDiagram.unramified_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Unramified.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DeformationFiniteOrder/Unramified.lean#L76). The attribute's comment: “unramified”.
 
 > Unramifiedness is invariant under a flat deformation diagram.
 
@@ -665,7 +665,7 @@ theorem FlatDeformationDiagram.unramified_iff (D : FlatDeformationDiagram.{u}) :
 
 [Tag 0D4F](https://stacks.math.columbia.edu/tag/0D4F) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjectiveDeformation.exists_uniform_degreeBound_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveDeformation/DeformationsOfProjectiveSchemesFunctorial.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveDeformation/DeformationsOfProjectiveSchemesFunctorial.lean#L75).
+**`Stacks.AlgebraicGeometry.ProjectiveDeformation.exists_uniform_degreeBound_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveDeformation/DeformationsOfProjectiveSchemesFunctorial.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveDeformation/DeformationsOfProjectiveSchemesFunctorial.lean#L75).
 
 > **Deformations of projective schemes** ([Stacks, Tag 0D4F]).  Let `(f : X ⟶ S, ℒ)` be a
 > polarized family: `f` proper, flat and of finite presentation, `S` quasi-compact, `ℒ` invertible
@@ -744,4 +744,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.10, Tag 063X](https://stacks.math.columbia.edu/tag/063X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

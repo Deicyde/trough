@@ -7,7 +7,7 @@ statement: formalized
 
 # Differential calculus of one variable: its own results
 
-8 results, 1 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html).
+8 results, 1 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html).
 
 Derivatives of real functions of one real variable: mean-value and second-derivative tests, Taylor polynomials and remainders, Borel's lemma, interchange of limits and derivatives, monotone and C^n gluing results; not nowhere-differentiable constructions (see continuity subfield).
 
@@ -21,7 +21,7 @@ whose derivative $f'$ is not continuous.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), problem `ma_proofbench_l1_92`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.MonotoneDiscontinuousDerivWanted.exists_monotone_differentiable_not_continuous_deriv` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/MonotoneDiscontinuousDerivWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/MonotoneDiscontinuousDerivWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#exists-monotone-differentiable-not-conti).
+Stated but not proved: `MathlibExt.Analysis.Calculus.MonotoneDiscontinuousDerivWanted.exists_monotone_differentiable_not_continuous_deriv` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/MonotoneDiscontinuousDerivWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/MonotoneDiscontinuousDerivWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#exists-monotone-differentiable-not-conti).
 
 ## A smooth function on the unit interval with some vanishing derivative at each point is a polynomial there
 
@@ -39,7 +39,7 @@ statement assumed real analyticity, which reduces the problem to the identity th
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Real functions; Functions of one variable), problem `ma_proofbench_l2_81`, with the change above.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.PolynomialOfPointwiseVanishingDerivWanted.exists_polynomial_eq_of_forall_exists_iteratedDerivWithin_eq_zero` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/PolynomialOfPointwiseVanishingDerivWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/PolynomialOfPointwiseVanishingDerivWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#exists-polynomial-eq-of-forall-exists-it).
+Stated but not proved: `MathlibExt.Analysis.Calculus.PolynomialOfPointwiseVanishingDerivWanted.exists_polynomial_eq_of_forall_exists_iteratedDerivWithin_eq_zero` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/PolynomialOfPointwiseVanishingDerivWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/PolynomialOfPointwiseVanishingDerivWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#exists-polynomial-eq-of-forall-exists-it).
 
 ## An even $C^2$ function is a $C^1$ function of $x^2$
 
@@ -52,7 +52,7 @@ $[0,a^2]$, with $f(x)=g(x^2)$ for all $x\in[-a,a]$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), problem `ma_proofbench_l1_11`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.EvenC2SquareFactorWanted.exists_contDiffOn_comp_sq_of_even` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/EvenC2SquareFactorWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/EvenC2SquareFactorWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#exists-cont-diff-on-comp-sq-of-even).
+Stated but not proved: `MathlibExt.Analysis.Calculus.EvenC2SquareFactorWanted.exists_contDiffOn_comp_sq_of_even` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/EvenC2SquareFactorWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/EvenC2SquareFactorWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#exists-cont-diff-on-comp-sq-of-even).
 
 ## Borel's lemma
 
@@ -64,7 +64,7 @@ $f^{(n)}(0) = a_n$ for every $n \ge 0$.
 
 - E. Borel, Ann. Sci. Ec. Norm. Sup. (3) 12 (1895), 9-55, DOI 10.24033/asens.406.
 
-Formalized by `MathlibExt.Analysis.Calculus.BorelWanted.borel_jet_real`, a theorem declared in [MathlibExt/Analysis/Calculus/Borel.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Borel.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#borel-jet-real).
+Formalized by `MathlibExt.Analysis.Calculus.BorelWanted.borel_jet_real`, a theorem declared in [MathlibExt/Analysis/Calculus/Borel.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Borel.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#borel-jet-real).
 
 ## Gluing $C^n$ functions on adjacent closed intervals
 
@@ -79,7 +79,7 @@ $[a, b]$ and to $g$ elsewhere is $C^n$ on $[a, c]$.
 
 - https://en.wikipedia.org/wiki/Piecewise#Continuity_and_differentiability_of_piecewise_functions
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.PiecewiseContDiffWanted.contDiffOn_piecewise_Icc` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/PiecewiseContDiffWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/PiecewiseContDiffWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#cont-diff-on-piecewise-icc).
+Stated but not proved: `MathlibExt.Analysis.Calculus.PiecewiseContDiffWanted.contDiffOn_piecewise_Icc` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/PiecewiseContDiffWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/PiecewiseContDiffWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#cont-diff-on-piecewise-icc).
 
 ## Odd Taylor polynomials of the exponential have exactly one real zero
 
@@ -90,7 +90,7 @@ positive integer $n$, the polynomial $1+x+x^2/2!+\cdots+x^n/n!$ has exactly one 
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Polynomials, rational functions in real analysis), problem `ma_proofbench_l1_19`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.ExpTaylorPolyOddUniqueZeroWanted.existsUnique_sum_pow_div_factorial_eq_zero_of_odd` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/ExpTaylorPolyOddUniqueZeroWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/ExpTaylorPolyOddUniqueZeroWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#exists-unique-sum-pow-div-factorial-eq-z).
+Stated but not proved: `MathlibExt.Analysis.Calculus.ExpTaylorPolyOddUniqueZeroWanted.existsUnique_sum_pow_div_factorial_eq_zero_of_odd` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/ExpTaylorPolyOddUniqueZeroWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/ExpTaylorPolyOddUniqueZeroWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#exists-unique-sum-pow-div-factorial-eq-z).
 
 ## The derivative of $x^2 \sin(1/x^2)$ exists everywhere but is not integrable
 
@@ -103,7 +103,7 @@ on $[-1,1]$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), problem `ma_proofbench_l1_99`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.XSqSinInvSqNonintegrableDerivWanted.differentiable_and_not_integrableOn_deriv_sq_mul_sin_inv_sq` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/XSqSinInvSqNonintegrableDerivWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/XSqSinInvSqNonintegrableDerivWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#differentiable-and-not-integrable-on-der).
+Stated but not proved: `MathlibExt.Analysis.Calculus.XSqSinInvSqNonintegrableDerivWanted.differentiable_and_not_integrableOn_deriv_sq_mul_sin_inv_sq` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/XSqSinInvSqNonintegrableDerivWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/XSqSinInvSqNonintegrableDerivWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#differentiable-and-not-integrable-on-der).
 
 ## The map $x \mapsto e^{x-1} - e^{1-x}$ has a unique fixed point
 
@@ -114,7 +114,7 @@ real number $x$ such that $e^{x-1} - e^{1-x} = x$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), problem `ma_proofbench_l1_59`.
 
-Stated but not proved: `MathlibExt.Analysis.SpecialFunctions.ExpSubExpUniqueFixedPointWanted.existsUnique_exp_sub_one_sub_exp_one_sub_eq_self` is written with `theorem_wanted` in [WantedExt/Analysis/SpecialFunctions/ExpSubExpUniqueFixedPointWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/SpecialFunctions/ExpSubExpUniqueFixedPointWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#exists-unique-exp-sub-one-sub-exp-one-su).
+Stated but not proved: `MathlibExt.Analysis.SpecialFunctions.ExpSubExpUniqueFixedPointWanted.existsUnique_exp_sub_one_sub_exp_one_sub_eq_self` is written with `theorem_wanted` in [WantedExt/Analysis/SpecialFunctions/ExpSubExpUniqueFixedPointWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/SpecialFunctions/ExpSubExpUniqueFixedPointWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html#exists-unique-exp-sub-one-sub-exp-one-su).
 
 ## Depends on
 
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Differential calculus of one variable](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/differential-calculus/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/real-functions/differential-calculus)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/real-functions/differential-calculus)

@@ -8,7 +8,7 @@ proof: formalized
 
 # All-pairs shortest paths by min-plus products
 
-23 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html).
+23 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html).
 
 ## Shortest path weight with at most $r$ edges
 
@@ -24,7 +24,7 @@ $i$ to $j$ with at most $r$ edges.
 
 Paths may repeat vertices; no absence-of-negative-cycles hypothesis is needed.
 
-Formalized by `Cslib.Algorithms.Lean.FloydWarshall.IsEdgeBoundedShortestPathWeight`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#is-edge-bounded-shortest-path-weight).
+Formalized by `Cslib.Algorithms.Lean.FloydWarshall.IsEdgeBoundedShortestPathWeight`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#is-edge-bounded-shortest-path-weight).
 
 ## Characterization of the shortest path weight with at most $r$ edges
 
@@ -36,7 +36,7 @@ is the shortest weight of a path from $i$ to $j$ with at most $r$ edges if and o
 $d \le w(p)$ for every weighted path $p$ from $i$ to $j$ with at most $r$ edges, and either
 $d = \infty$ or $d = w(p)$ for some weighted path $p$ from $i$ to $j$ with at most $r$ edges.
 
-Formalized by `Cslib.Algorithms.Lean.FloydWarshall.isEdgeBoundedShortestPathWeight_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#is-edge-bounded-shortest-path-weight-iff).
+Formalized by `Cslib.Algorithms.Lean.FloydWarshall.isEdgeBoundedShortestPathWeight_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#is-edge-bounded-shortest-path-weight-iff).
 
 ## Entries of the min-plus matrix accumulator
 
@@ -47,7 +47,7 @@ accumulator on $A$, $B$ and the accumulator $C$ equals
 $\min\bigl(C_{ij}, \min_{k} (A_{ik} + B_{kj})\bigr)$, where $k$ ranges over
 $\{0, \dots, n-1\}$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.matrixAccumulate_minPlus_apply`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#matrix-accumulate-min-plus-apply).
+Formalized by `Cslib.Algorithms.Lean.Matrix.matrixAccumulate_minPlus_apply`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#matrix-accumulate-min-plus-apply).
 
 ## One min-plus multiplication extends shortest paths by one edge
 
@@ -62,7 +62,7 @@ matrix $B$.
 
 Paths may repeat vertices and edge weights may be negative.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.matrixAccumulate_edgeBounded`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#matrix-accumulate-edge-bounded).
+Formalized by `Cslib.Algorithms.Lean.Matrix.matrixAccumulate_edgeBounded`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Extend.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#matrix-accumulate-edge-bounded).
 
 ## Min-plus matrix powers give shortest path weights with at most $r$ edges
 
@@ -74,7 +74,7 @@ $i$ to $j$ with at most $r$ edges for the weight matrix $W$.
 
 Paths may repeat vertices.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.matrix_pow_edgeBounded`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/MatrixPower.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/MatrixPower.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#matrix-pow-edge-bounded).
+Formalized by `Cslib.Algorithms.Lean.Matrix.matrix_pow_edgeBounded`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/MatrixPower.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/MatrixPower.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#matrix-pow-edge-bounded).
 
 ## Counted copy of a square matrix
 
@@ -83,14 +83,14 @@ each a vector of $n$ entries), this computation returns the matrix whose $(i, j)
 $A_{ij}$, traversing the entries row by row and charging a cost of $(1, (0, 0))$ for each entry,
 that is, one logical assignment in the first cost coordinate and nothing in the other two.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.copyCells`, a definition declared in [CSLibExt/Algorithms/Lean/Matrix/Assignments.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Assignments.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#copy-cells).
+Formalized by `Cslib.Algorithms.Lean.Matrix.copyCells`, a definition declared in [CSLibExt/Algorithms/Lean/Matrix/Assignments.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Assignments.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#copy-cells).
 
 ## The counted matrix copy returns its input
 
 For every $n \times n$ matrix $A$ with entries
 in any type, the value returned by the counted copy of $A$ is $A$ itself.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.copyCells_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Assignments.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Assignments.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#copy-cells-ret).
+Formalized by `Cslib.Algorithms.Lean.Matrix.copyCells_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Assignments.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Assignments.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#copy-cells-ret).
 
 ## Cost of the counted matrix copy
 
@@ -98,7 +98,7 @@ For every $n \times n$ matrix $A$ with entries in any
 type, the counted copy of $A$ has total cost $(n^2, (0, 0))$: exactly $n^2$ logical assignments
 in the first cost coordinate and zero in the other two.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.copyCells_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Assignments.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Assignments.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#copy-cells-time).
+Formalized by `Cslib.Algorithms.Lean.Matrix.copyCells_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Assignments.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Assignments.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#copy-cells-time).
 
 ## Counted zero initialization of a square matrix
 
@@ -108,7 +108,7 @@ whose entries are $0$, producing the entries row by row and charging a cost of $
 each entry, that is, one logical assignment in the first cost coordinate and nothing in the
 other two.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.fillCells`, a definition declared in [CSLibExt/Algorithms/Lean/Matrix/Assignments.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Assignments.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#fill-cells).
+Formalized by `Cslib.Algorithms.Lean.Matrix.fillCells`, a definition declared in [CSLibExt/Algorithms/Lean/Matrix/Assignments.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Assignments.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#fill-cells).
 
 ## The counted zero initialization returns the zero matrix
 
@@ -116,7 +116,7 @@ For every type $\alpha$ with a
 zero element and every natural number $n$, the counted zero initialization of size $n$ over
 $\alpha$ returns the $n \times n$ matrix all of whose entries are $0$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.fillCells_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Assignments.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Assignments.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#fill-cells-ret).
+Formalized by `Cslib.Algorithms.Lean.Matrix.fillCells_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Assignments.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Assignments.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#fill-cells-ret).
 
 ## Cost of the counted zero initialization
 
@@ -125,7 +125,7 @@ every natural number $n$, the counted zero initialization of size $n$ over $\alp
 cost $(n^2, (0, 0))$: exactly $n^2$ logical assignments in the first cost coordinate and zero in
 the other two.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.fillCells_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Assignments.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Matrix/Assignments.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#fill-cells-time).
+Formalized by `Cslib.Algorithms.Lean.Matrix.fillCells_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Matrix/Assignments.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Matrix/Assignments.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#fill-cells-time).
 
 ## FASTER-APSP
 
@@ -137,7 +137,7 @@ copies $M$ into $L$ and doubles $r$. It returns the final $L$. The run also reco
 one assignment for each matrix cell copied or filled with zero, and one scalar addition and one
 scalar multiplication for each term added to an entry of $M$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.fasterAPSP`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Basic.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Basic.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#faster-apsp).
+Formalized by `Cslib.Algorithms.Lean.Matrix.fasterAPSP`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Basic.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Basic.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#faster-apsp).
 
 ## FASTER-APSP returns a power of the input matrix
 
@@ -146,7 +146,7 @@ an $n \times n$ matrix over $\alpha$, and let $k = \lceil \log_2 (n - 1) \rceil$
 natural number with $n - 1 \le 2^k$ (so $k = 0$ when $n \le 2$). The matrix returned by
 FASTER-APSP on $W$ is the matrix power $W^{2^k}$, with products computed in $\alpha$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.fasterAPSP_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Basic.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Basic.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#faster-apsp-ret).
+Formalized by `Cslib.Algorithms.Lean.Matrix.fasterAPSP_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Basic.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Basic.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#faster-apsp-ret).
 
 ## Operation counts of FASTER-APSP
 
@@ -159,7 +159,7 @@ multiplications.
 Assignments count the matrix cells copied or filled with zero; the accumulator vector updates
 inside the matrix multiplications are not counted.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.fasterAPSP_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Basic.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Basic.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#faster-apsp-time).
+Formalized by `Cslib.Algorithms.Lean.Matrix.fasterAPSP_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Basic.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Basic.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#faster-apsp-time).
 
 ## Asymptotic operation count of FASTER-APSP
 
@@ -168,7 +168,7 @@ multiplication and zero, and for each $n$ let $W_n$ be an $n \times n$ matrix ov
 total number of copy and fill assignments, scalar additions and scalar multiplications that
 FASTER-APSP performs on $W_n$ is $\Theta(n^3 \log n)$ as $n \to \infty$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.fasterAPSP_time_isTheta`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Complexity.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Complexity.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#faster-apsp-time-is-theta).
+Formalized by `Cslib.Algorithms.Lean.Matrix.fasterAPSP_time_isTheta`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Complexity.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Complexity.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#faster-apsp-time-is-theta).
 
 ## Slow all-pairs shortest paths (SLOW-APSP)
 
@@ -184,7 +184,7 @@ minimum for each update $M_{ij} \leftarrow \min(M_{ij}, L^{(r-1)}_{ik} + W_{kj})
 
 Accumulator updates inside the loop are not charged as assignments.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.slowAPSP`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#slow-apsp).
+Formalized by `Cslib.Algorithms.Lean.Matrix.slowAPSP`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#slow-apsp).
 
 ## SLOW-APSP returns a min-plus matrix power
 
@@ -193,7 +193,7 @@ the min-plus semiring on $\mathbb{Z} \cup \{\infty\}$, in which addition is $\mi
 multiplication is $+$, the matrix returned by SLOW-APSP on $W$ and $L^{(0)}$ equals the
 min-plus matrix product $L^{(0)} W^{n-1}$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.slowAPSP_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#slow-apsp-ret).
+Formalized by `Cslib.Algorithms.Lean.Matrix.slowAPSP_ret`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#slow-apsp-ret).
 
 ## Bounded-edge shortest weights from SLOW-APSP
 
@@ -208,7 +208,7 @@ path from $i$ to $j$ is a nonempty sequence of vertices that starts at $i$, ends
 $w_{xy} \ne \infty$ for each pair of consecutive vertices $x, y$; vertices may repeat, its number
 of edges is its number of vertices minus one, and its weight is the sum of these $w_{xy}$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.slowAPSP_edgeBounded`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#slow-apsp-edge-bounded).
+Formalized by `Cslib.Algorithms.Lean.Matrix.slowAPSP_edgeBounded`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#slow-apsp-edge-bounded).
 
 ## SLOW-APSP computes shortest-path weights
 
@@ -224,7 +224,7 @@ has $w_{xy} \ne \infty$ for each pair of consecutive vertices $x, y$; its weight
 these $w_{xy}$. A negative cycle is a path from a vertex to itself with at least two vertices,
 negative weight, and no repeated vertex once its last vertex is removed.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.slowAPSP_distance_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#slow-apsp-distance-spec).
+Formalized by `Cslib.Algorithms.Lean.Matrix.slowAPSP_distance_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#slow-apsp-distance-spec).
 
 ## Exact operation counts of SLOW-APSP
 
@@ -235,7 +235,7 @@ scalar additions and scalar minimums, where $n - 1$ means $\max(n - 1, 0)$.
 
 The assignment count excludes the accumulator updates inside the min-plus accumulation loop.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.slowAPSP_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#slow-apsp-time).
+Formalized by `Cslib.Algorithms.Lean.Matrix.slowAPSP_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#slow-apsp-time).
 
 ## SLOW-APSP takes quartic time
 
@@ -245,7 +245,7 @@ SLOW-APSP on $W_n$ and $L^{(0)}_n$, that is the number of cell assignments (copi
 plus the number of scalar additions plus the number of scalar minimums, is $\Theta(n^4)$ as
 $n \to \infty$.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.slowAPSP_time_isTheta`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#slow-apsp-time-is-theta).
+Formalized by `Cslib.Algorithms.Lean.Matrix.slowAPSP_time_isTheta`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/SlowAPSP.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#slow-apsp-time-is-theta).
 
 ## FASTER-APSP computes edge-bounded shortest-path weights
 
@@ -259,7 +259,7 @@ $(i, j)$ is at most the weight of every path from $i$ to $j$ with at most $2^k$ 
 finite weight, and either $d = \infty$ or $d$ is the weight of such a path. Paths are
 nonempty vertex sequences and may repeat vertices; no assumption on negative cycles is made.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.fasterAPSP_edgeBounded`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Correctness.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Correctness.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#faster-apsp-edge-bounded).
+Formalized by `Cslib.Algorithms.Lean.Matrix.fasterAPSP_edgeBounded`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Correctness.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Correctness.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#faster-apsp-edge-bounded).
 
 ## FASTER-APSP computes shortest-path weights
 
@@ -273,7 +273,7 @@ weight of every path from $i$ to $j$ all of whose edges have finite weight, and 
 $d = \infty$ or $d$ is the weight of such a path. Paths are nonempty vertex sequences and may
 repeat vertices.
 
-Formalized by `Cslib.Algorithms.Lean.Matrix.fasterAPSP_distance_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Correctness.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Correctness.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#faster-apsp-distance-spec).
+Formalized by `Cslib.Algorithms.Lean.Matrix.fasterAPSP_distance_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Correctness.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/FasterAPSP/Correctness.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html#faster-apsp-distance-spec).
 
 ## Depends on
 
@@ -282,4 +282,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: All-pairs shortest paths by min-plus products](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/graph-algorithms/shortest-paths/all-pairs-shortest-paths-by-min-plus-products)

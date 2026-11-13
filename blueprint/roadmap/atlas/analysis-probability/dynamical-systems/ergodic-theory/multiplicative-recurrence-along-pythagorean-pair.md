@@ -7,7 +7,7 @@ statement: formalized
 
 # Multiplicative recurrence along Pythagorean pairs
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/multiplicative-recurrence-along-pythagorean-pair/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/multiplicative-recurrence-along-pythagorean-pair/index.html).
 
 ## Pythagorean-pair recurrence problem (AMR-047-0034)
 
@@ -19,7 +19,7 @@ $A \subseteq X$ with $\mu(A) > 0$ admits positive integers $m > n$ with
 
 $$\mu\bigl(T_{2mn}(A) \cap T_{(m-n)(m+n)}(A)\bigr) > 0.$$
 
-Formalized by `MathlibExt.Dynamics.MultStructureRecurrenceWanted.conjecture`, a definition declared in [WantedExt/Dynamics/MultStructureRecurrenceWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/MultStructureRecurrenceWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/multiplicative-recurrence-along-pythagorean-pair/index.html#conjecture).
+Formalized by `MathlibExt.Dynamics.MultStructureRecurrenceWanted.conjecture`, a definition declared in [WantedExt/Dynamics/MultStructureRecurrenceWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/MultStructureRecurrenceWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/multiplicative-recurrence-along-pythagorean-pair/index.html#conjecture).
 
 ## Multiplicative recurrence along Pythagorean pairs
 
@@ -38,7 +38,7 @@ resolved target. Source: Frantzikinakis, Klurman, Moreira, Partition Regularity 
 Pairs, arXiv:2309.10636, Theorem 2.1(i), https://arxiv.org/abs/2309.10636. Moved from
 `OpenConjectures/Dynamics/MultStructureRecurrence`.
 
-Stated but not proved: `MathlibExt.Dynamics.MultStructureRecurrenceWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Dynamics/MultStructureRecurrenceWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/MultStructureRecurrenceWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/multiplicative-recurrence-along-pythagorean-pair/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Dynamics.MultStructureRecurrenceWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Dynamics/MultStructureRecurrenceWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/MultStructureRecurrenceWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/multiplicative-recurrence-along-pythagorean-pair/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Multiplicative recurrence along Pythagorean pairs](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/multiplicative-recurrence-along-pythagorean-pair/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/ergodic-theory/multiplicative-recurrence-along-pythagorean-pair)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/ergodic-theory/multiplicative-recurrence-along-pythagorean-pair)

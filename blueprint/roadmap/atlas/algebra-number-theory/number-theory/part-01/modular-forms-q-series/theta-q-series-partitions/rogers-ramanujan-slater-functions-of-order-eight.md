@@ -7,7 +7,7 @@ statement: formalized
 
 # Rogers–Ramanujan–Slater functions of order eighteen
 
-8 results, 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html).
+8 results, 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html).
 
 ## Ramanujan's theta function: sum of products when $ab = cd$
 
@@ -23,7 +23,7 @@ the theta series converge.
 
 - A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Lemma 2, Equation (6).
 
-Stated but not proved: `MetaMathlibExt.ramanujanTheta_mul_add_mul_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#ramanujan-theta-mul-add-mul-neg).
+Stated but not proved: `MetaMathlibExt.ramanujanTheta_mul_add_mul_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#ramanujan-theta-mul-add-mul-neg).
 
 ## Ramanujan's theta function: difference of products when $ab = cd$
 
@@ -39,7 +39,7 @@ $(c/b)abcd = ac^2 d$ and $(d/b)abcd = acd^2$.
 
 - A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Lemma 2, Equation (7).
 
-Stated but not proved: `MetaMathlibExt.ramanujanTheta_mul_sub_mul_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#ramanujan-theta-mul-sub-mul-neg).
+Stated but not proved: `MetaMathlibExt.ramanujanTheta_mul_sub_mul_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#ramanujan-theta-mul-sub-mul-neg).
 
 ## Ramanujan's theta function at $(q, q^5)$
 
@@ -53,7 +53,7 @@ $\chi(q) = (-q;q^2)_\infty$ and $\psi(q) = f(q,q^3)$.
 
 - A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Lemma 3, Equation (9).
 
-Stated but not proved: `MetaMathlibExt.ramanujanTheta_one_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#ramanujan-theta-one-five).
+Stated but not proved: `MetaMathlibExt.ramanujanTheta_one_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#ramanujan-theta-one-five).
 
 ## Product of the nonic theta functions
 
@@ -67,7 +67,7 @@ $f(-q,-q^8) f(-q^2,-q^7) f(-q^4,-q^5) = f(-q) f^3(-q^9)/f(-q^3)$ with the denomi
 
 - A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Lemma 4, Equation (10).
 
-Stated but not proved: `MetaMathlibExt.ramanujanTheta_order_nine_product` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#ramanujan-theta-order-nine-product).
+Stated but not proved: `MetaMathlibExt.ramanujanTheta_order_nine_product` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#ramanujan-theta-order-nine-product).
 
 ## Ramanujan's theta function at $(q, q^2)$
 
@@ -81,7 +81,7 @@ the denominator cleared, where $\varphi(q) = f(q,q)$ and $\chi(-q) = (q;q^2)_\in
 
 - A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Lemma 5, Equation (11).
 
-Stated but not proved: `MetaMathlibExt.ramanujanTheta_one_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#ramanujan-theta-one-two).
+Stated but not proved: `MetaMathlibExt.ramanujanTheta_one_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#ramanujan-theta-one-two).
 
 ## Eta-quotients of Ramanujan's theta functions
 
@@ -101,7 +101,7 @@ $\varphi(q) = f(q,q)$, $\psi(q) = f(q,q^3)$, $f(q) = f(q,-q^2)$ and $\chi(q) = (
 
 - A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Lemma 1 (quoted from Berndt).
 
-Stated but not proved: `MetaMathlibExt.ramanujanTheta_eta_quotients` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#ramanujan-theta-eta-quotients).
+Stated but not proved: `MetaMathlibExt.ramanujanTheta_eta_quotients` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#ramanujan-theta-eta-quotients).
 
 ## Modular relations for the order-eighteen Rogers–Ramanujan–Slater functions
 
@@ -165,7 +165,7 @@ is the value from (12)); with $f_{54}$ the relation checks exactly through $q^{1
 
 - A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Theorem 1, Equations (12)-(18).
 
-Stated but not proved: `MetaMathlibExt.slaterOrderEighteen_modular_relations` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#slater-order-eighteen-modular-relations).
+Stated but not proved: `MetaMathlibExt.slaterOrderEighteen_modular_relations` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#slater-order-eighteen-modular-relations).
 
 ## Relations between the order-eighteen and the nonic Rogers–Ramanujan functions
 
@@ -200,7 +200,7 @@ $P_1 Q_1 R_1 = \chi(-q) f_{18}^3 / (\chi(-q^3) f_6^3)$ with $\chi(-q) = (q;q^2)_
 
 - A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Theorem 2, Equations (21)-(27).
 
-Stated but not proved: `MetaMathlibExt.slaterOrderEighteen_nonic_relations` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#slater-order-eighteen-nonic-relations).
+Stated but not proved: `MetaMathlibExt.slaterOrderEighteen_nonic_relations` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/SlaterOrderEighteenThetaWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html#slater-order-eighteen-nonic-relations).
 
 ## Depends on
 
@@ -209,4 +209,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Rogers–Ramanujan–Slater functions of order eighteen](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-slater-functions-of-order-eight)

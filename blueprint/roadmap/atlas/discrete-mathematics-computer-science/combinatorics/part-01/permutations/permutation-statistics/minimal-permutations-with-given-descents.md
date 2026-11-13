@@ -8,7 +8,7 @@ proof: formalized
 
 # Minimal permutations with given descents
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/minimal-permutations-with-given-descents/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/minimal-permutations-with-given-descents/index.html).
 
 ## Characterization of minimal permutations with a given number of descents
 
@@ -28,7 +28,7 @@ $i-1, i, i+1, i+2$ form the pattern $2143$ or $3142$.
 
 - Stefano Bilotta, Elisabetta Grazzini, and Elisa Pergola, "Enumeration of Two Particular Sets of Minimal Permutations", Journal of Integer Sequences 18 (2015), Article 15.10.2, Theorem `thm:characterization`, lines 230-237, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Grazzini/graz3.tex>.
 
-Formalized by `MetaMathlibExt.descent_minimal_iff`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MinimalDescentPermutations.lean, line 573](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MinimalDescentPermutations.lean#L573). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/minimal-permutations-with-given-descents/index.html#descent-minimal-iff).
+Formalized by `MetaMathlibExt.descent_minimal_iff`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MinimalDescentPermutations.lean, line 573](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MinimalDescentPermutations.lean#L573). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/minimal-permutations-with-given-descents/index.html#descent-minimal-iff).
 
 ## Minimal permutations of length two more than their number of descents
 
@@ -42,7 +42,7 @@ than $d$ descents, equals $2^{d+2} - (d + 1)(d + 2) - 2$.
 
 - Stefano Bilotta, Elisabetta Grazzini, and Elisa Pergola, "Enumeration of Two Particular Sets of Minimal Permutations", Journal of Integer Sequences 18 (2015), Article 15.10.2, Theorem `thm:enum`, lines 324-326, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Grazzini/graz3.tex>.
 
-Formalized by `MetaMathlibExt.minimal_permutations_card`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MinimalPermutationsEnumeration.lean, line 2235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MinimalPermutationsEnumeration.lean#L2235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/minimal-permutations-with-given-descents/index.html#minimal-permutations-card).
+Formalized by `MetaMathlibExt.minimal_permutations_card`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MinimalPermutationsEnumeration.lean, line 2235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MinimalPermutationsEnumeration.lean#L2235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/minimal-permutations-with-given-descents/index.html#minimal-permutations-card).
 
 ## Depends on
 
@@ -51,4 +51,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Minimal permutations with given descents](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/minimal-permutations-with-given-descents/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/permutations/permutation-statistics/minimal-permutations-with-given-descents)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/permutations/permutation-statistics/minimal-permutations-with-given-descents)

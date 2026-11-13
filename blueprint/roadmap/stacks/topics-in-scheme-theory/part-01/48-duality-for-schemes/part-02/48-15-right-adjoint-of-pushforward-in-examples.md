@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.15 Right adjoint of pushforward in examples
 
-Section 48.15 of the Stacks Project, [Tag 0BQV](https://stacks.math.columbia.edu/tag/0BQV). 8 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.15 of the Stacks Project, [Tag 0BQV](https://stacks.math.columbia.edu/tag/0BQV). 8 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A9W, a lemma
 
 [Tag 0A9W](https://stacks.math.columbia.edu/tag/0A9W) in the Stacks Project.
 
-**`Stacks.Duality.ProjectiveBundleDualizing.nonempty_dualizingObject_iso_twistedInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProjectiveBundle/TwistedInverseImage.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProjectiveBundle/TwistedInverseImage.lean#L471). The attribute's comment: “the projective bundle P(E) is the relative Proj of Sym(E) with twists O(d) of a twist datum D, and f^*L(-n-1) is written O(-n-1) ⊗ π^*(∧^(n+1) E); the special case E = O^(n+1) on projectiveSpaceOver is nonempty\_twistedInverseImage\_derivedStructureSheaf\_iso\_of\_qcqs”.
+**`Stacks.Duality.ProjectiveBundleDualizing.nonempty_dualizingObject_iso_twistedInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProjectiveBundle/TwistedInverseImage.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ProjectiveBundle/TwistedInverseImage.lean#L471). The attribute's comment: “the projective bundle P(E) is the relative Proj of Sym(E) with twists O(d) of a twist datum D, and f^*L(-n-1) is written O(-n-1) ⊗ π^*(∧^(n+1) E); the special case E = O^(n+1) on projectiveSpaceOver is nonempty\_twistedInverseImage\_derivedStructureSheaf\_iso\_of\_qcqs”.
 
 > **[Stacks, Tag 0A9W].** Let `S` be a quasi-compact and quasi-separated scheme, `ℰ` a finite
 > locally free `𝒪_S`-module of rank `n + 1` with determinant `𝓛 = ⋀ⁿ⁺¹ ℰ`, `π : 𝐏(ℰ) ⟶ S` the
@@ -39,7 +39,7 @@ theorem nonempty_dualizingObject_iso_twistedInverseImage :
 
 [Tag 0AAC](https://stacks.math.columbia.edu/tag/0AAC) in the Stacks Project.
 
-**`Stacks.Duality.BlowupBaseChange.baseChange_example`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/BlowupBaseChange/Example.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/BlowupBaseChange/Example.lean#L238).
+**`Stacks.Duality.BlowupBaseChange.baseChange_example`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/BlowupBaseChange/Example.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/BlowupBaseChange/Example.lean#L238).
 
 > **[Stacks, Example 0AAC]: the base change map (48.5.0.1) is not an isomorphism for a
 > perfect proper `f` and a perfect `g`.** Let `k` be a field, `f : X ⟶ Y = 𝐀²_k` the blowup of
@@ -66,7 +66,7 @@ theorem baseChange_example :
 
 [Tag 0BQW](https://stacks.math.columbia.edu/tag/0BQW) in the Stacks Project.
 
-**`Stacks.Duality.normalSheafToSheafExtOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Sweep/NormalSheafAsSheafExt.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/Sweep/NormalSheafAsSheafExt.lean#L415). The attribute's comment: “the canonical map `c` itself; `isIso_normalSheafToSheafExtOne` is the assertion that it is an isomorphism”.
+**`Stacks.Duality.normalSheafToSheafExtOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Sweep/NormalSheafAsSheafExt.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/Sweep/NormalSheafAsSheafExt.lean#L415). The attribute's comment: “the canonical map `c` itself; `isIso_normalSheafToSheafExtOne` is the assertion that it is an isomorphism”.
 
 > **The canonical map `c` of [Stacks, Tag 0BQW].** The normal sheaf
 > `𝒩 = 𝓗om_{𝒪_Y}(ℐ/ℐ², 𝒪_X)` maps canonically to `𝓔xt¹_{𝒪_Y}(𝒪_X, 𝒪_X)`: precompose with
@@ -82,7 +82,7 @@ public def normalSheafToSheafExtOne :
       Stacks.RingedSpace.sheafExt Y (quotientByIdealSheaf Y I) (quotientByIdealSheaf Y I) 1
 ```
 
-**`Stacks.Duality.isIso_normalSheafToSheafExtOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Sweep/NormalSheafAsSheafExt.lean, line 815](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/Sweep/NormalSheafAsSheafExt.lean#L815).
+**`Stacks.Duality.isIso_normalSheafToSheafExtOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Sweep/NormalSheafAsSheafExt.lean, line 815](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/Sweep/NormalSheafAsSheafExt.lean#L815).
 
 > **Stacks Project, Tag 0BQW.** Let `Y` be a ringed space, let `ℐ ⊆ 𝒪_Y` be a sheaf of
 > ideals, put `𝒪_X = 𝒪_Y/ℐ` and let `𝒩 = 𝓗om_{𝒪_Y}(ℐ/ℐ², 𝒪_X)` be the normal sheaf. The
@@ -105,7 +105,7 @@ public theorem isIso_normalSheafToSheafExtOne :
 
 [Tag 0BQX](https://stacks.math.columbia.edu/tag/0BQX) in the Stacks Project.
 
-**`Stacks.Duality.secondOrderThickening_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Sweep/SecondOrderThickening.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/Sweep/SecondOrderThickening.lean#L89).
+**`Stacks.Duality.secondOrderThickening_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Sweep/SecondOrderThickening.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/Sweep/SecondOrderThickening.lean#L89).
 
 > **Stacks Project, Tag 0BQX.** For an ideal sheaf `I` on a ringed space, the canonical
 > sequence
@@ -131,7 +131,7 @@ public theorem secondOrderThickening_shortExact (Y : RingedSpace.{u, u})
 
 [Tag 0BQY](https://stacks.math.columbia.edu/tag/0BQY) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isIso_desc_app_isKoszulRegularIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularSequence/KoszulSelfExtKoszulRegular.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RegularSequence/KoszulSelfExtKoszulRegular.lean#L148).
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isIso_desc_app_isKoszulRegularIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularSequence/KoszulSelfExtKoszulRegular.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RegularSequence/KoszulSelfExtKoszulRegular.lean#L159).
 
 > Let `Y` be a ringed space, `𝓘 ⊆ O_Y` a Koszul-regular sheaf of ideals and `O_X = O_Y/𝓘`.
 > Let `A` be, with its degree-one generator `ι`, the exterior algebra over `O_X` of
@@ -157,7 +157,7 @@ theorem isIso_desc_app_isKoszulRegularIdealSheaf (hJ : IsKoszulRegularIdealSheaf
 
 [Tag 0BQZ](https://stacks.math.columbia.edu/tag/0BQZ) in the Stacks Project.
 
-**`Stacks.RegularSequence.KoszulChainData.isZero_derivedSheafExt_unit_of_notMem_Icc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularSequence/KoszulExtStructureSheaf.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RegularSequence/KoszulExtStructureSheaf.lean#L190). The attribute's comment: “ONLY the degrees outside `0, …, r` of the vanishing half of the tag: the Ext sheaves `Ext^i_{O_Y}(O_Y/I, O_Y)` are zero for `i < 0` and for `i > r`. Carried: the ideal sheaf is presented GLOBALLY by a Koszul-regular sequence of `r` sections -- a Koszul chain datum for `φ : (O_Y)^r ⟶ O_Y` whose augmentation is a quasi-isomorphism -- where the tag assumes only the local condition that `I` be Koszul-regular, so the opening reduction of its proof is not performed and the tag's locally varying `r` is here constant. NOT covered: the degrees `0, …, r - 1`, the identification of `Ext^r` with the top exterior power of the normal sheaf, and the derived-category isomorphism `RHom(O_X, O_Y) = (top exterior power of N)[-r]`”.
+**`Stacks.RegularSequence.KoszulChainData.isZero_derivedSheafExt_unit_of_notMem_Icc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularSequence/KoszulExtStructureSheaf.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RegularSequence/KoszulExtStructureSheaf.lean#L190). The attribute's comment: “ONLY the degrees outside `0, …, r` of the vanishing half of the tag: the Ext sheaves `Ext^i_{O_Y}(O_Y/I, O_Y)` are zero for `i < 0` and for `i > r`. Carried: the ideal sheaf is presented GLOBALLY by a Koszul-regular sequence of `r` sections -- a Koszul chain datum for `φ : (O_Y)^r ⟶ O_Y` whose augmentation is a quasi-isomorphism -- where the tag assumes only the local condition that `I` be Koszul-regular, so the opening reduction of its proof is not performed and the tag's locally varying `r` is here constant. NOT covered: the degrees `0, …, r - 1`, the identification of `Ext^r` with the top exterior power of the normal sheaf, and the derived-category isomorphism `RHom(O_X, O_Y) = (top exterior power of N)[-r]`”.
 
 > **The Ext sheaves of a Koszul-regular quotient into the structure sheaf vanish outside the
 > degrees `0, …, r`.** For an ideal sheaf `ℐ ⊂ O_Y` generated by a Koszul-regular sequence of `r`
@@ -181,7 +181,7 @@ theorem isZero_derivedSheafExt_unit_of_notMem_Icc (K : KoszulChainData.{u, u, u}
       (DerivedCategory.Q.obj (unitSingleComplex Rc)) n)
 ```
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.nonempty_derivedSheafHom_iso_rankExterior`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularSequence/KoszulRegularDerivedDual.lean, line 806](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RegularSequence/KoszulRegularDerivedDual.lean#L806).
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.nonempty_derivedSheafHom_iso_rankExterior`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularSequence/KoszulRegularDerivedDual.lean, line 930](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RegularSequence/KoszulRegularDerivedDual.lean#L930).
 
 > **Stacks Project, Tag 0BQZ.** Let `Y` be a ringed space, `𝓘 ⊆ O_Y` a sheaf of ideals,
 > `O_X = O_Y/𝓘` and `𝒩 = 𝓗om_{O_Y}(𝓘/𝓘², O_X)`. If `𝓘` is Koszul-regular, then
@@ -210,7 +210,7 @@ theorem nonempty_derivedSheafHom_iso_rankExterior (hJ : IsKoszulRegularIdealShea
 
 [Tag 0BR0](https://stacks.math.columbia.edu/tag/0BR0) in the Stacks Project.
 
-**`Stacks.Duality.KoszulRegular.nonempty_normalExteriorComplex_iso_rightAdjoint_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulRegularRightAdjoint.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/KoszulRegularRightAdjoint.lean#L135).
+**`Stacks.Duality.KoszulRegular.nonempty_normalExteriorComplex_iso_rightAdjoint_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulRegularRightAdjoint.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/KoszulRegularRightAdjoint.lean#L135).
 
 > **Stacks Project, Tag 0BR0.** Let `Y` be a quasi-compact and quasi-separated scheme, let
 > `i : X ⟶ Y` be a Koszul-regular closed immersion, and let `a` be the right adjoint of
@@ -252,7 +252,7 @@ theorem nonempty_normalExteriorComplex_iso_rightAdjoint_structureSheaf
 
 [Tag 0BRT](https://stacks.math.columbia.edu/tag/0BRT) in the Stacks Project.
 
-**`Stacks.Duality.singleFunctorExteriorPowerIsoRelativeDualizingComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/SmoothProper/RelativeDualizingComplex.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/SmoothProper/RelativeDualizingComplex.lean#L40).
+**`Stacks.Duality.singleFunctorExteriorPowerIsoRelativeDualizingComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/SmoothProper/RelativeDualizingComplex.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/SmoothProper/RelativeDualizingComplex.lean#L40).
 
 > **[Stacks, Tag 0BRT].** Let `S` be a Noetherian scheme and `f : X ⟶ S` a smooth proper
 > morphism of relative dimension `d`, and let `a` be the right adjoint of
@@ -277,4 +277,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.15, Tag 0BQV](https://stacks.math.columbia.edu/tag/0BQV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

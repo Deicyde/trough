@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 53.15 Glueing and squishing to 53.25 Contracting to a stable…
+# 53.15 Glueing and squishing to 53.26 Vector fields
 
 - [53.15 Glueing and squishing](53-15-glueing-and-squishing.md)
 - [53.16 Multicross and nodal singularities](53-16-multicross-and-nodal-singularities.md)
@@ -15,3 +15,4 @@ navigation: transparent
 - [53.23 Contracting rational tails](53-23-contracting-rational-tails.md)
 - [53.24 Contracting rational bridges](53-24-contracting-rational-bridges.md)
 - [53.25 Contracting to a stable curve](53-25-contracting-to-a-stable-curve.md)
+- [53.26 Vector fields](53-26-vector-fields.md)

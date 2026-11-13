@@ -8,13 +8,13 @@ proof: formalized
 
 # 89.2 Modifications
 
-Section 89.2 of the Stacks Project, [Tag 0BH8](https://stacks.math.columbia.edu/tag/0BH8). 5 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 89.2 of the Stacks Project, [Tag 0BH8](https://stacks.math.columbia.edu/tag/0BH8). 5 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AE2, an equation
 
 [Tag 0AE2](https://stacks.math.columbia.edu/tag/0AE2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.puncturedSpectrumSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean#L57). The attribute's comment: “the punctured spectrum as a subfunctor”.
+**`AlgebraicGeometry.Space.puncturedSpectrumSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean#L57). The attribute's comment: “the punctured spectrum as a subfunctor”.
 
 > **Stacks 0AE2.** The punctured spectrum of a local ring `A`, as a subfunctor of the functor
 > of points of `Spec A` on a big fppf site: a point lies in it exactly when the corresponding
@@ -26,7 +26,7 @@ noncomputable def puncturedSpectrumSubfunctor (A : Type u) [CommRing A] [IsLocal
     Subfunctor (yoneda.obj (baseTerminal B (Spec (.of A)) hS))
 ```
 
-**`AlgebraicGeometry.Space.IsProperModification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean#L74). The attribute's comment: “the three defining conditions”.
+**`AlgebraicGeometry.Space.IsProperModification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean#L74). The attribute's comment: “the three defining conditions”.
 
 > **Stacks 0AE2.** A *proper modification* of a represented algebraic space `T` outside a
 > subfunctor `U` of its functor of points: an algebraic space over `T` whose structure morphism is
@@ -38,7 +38,7 @@ def IsProperModification (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains
     (X : Over (yoneda.obj T)) : Prop
 ```
 
-**`AlgebraicGeometry.Space.ProperModification`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean#L82). The attribute's comment: “the category they form”.
+**`AlgebraicGeometry.Space.ProperModification`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean#L82). The attribute's comment: “the category they form”.
 
 > **Stacks 0AE2.** The category of proper morphisms of algebraic spaces to `Spec A` which are
 > isomorphisms over the punctured spectrum of `A`.
@@ -48,7 +48,7 @@ abbrev ProperModification (A : Type u) [CommRing A] [IsLocalRing A] [IsNoetheria
     (B : BigFppfSite.{u}) (hS : B.Contains (Spec (.of A)))
 ```
 
-**`AlgebraicGeometry.Space.isProperModification_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean#L92). The attribute's comment: “the conditions spelled out”.
+**`AlgebraicGeometry.Space.isProperModification_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperModifications.lean#L92). The attribute's comment: “the conditions spelled out”.
 
 > **Stacks 0AE2.** The three conditions defining a proper modification, spelled out: the
 > source is an algebraic space, its structure morphism is proper, and the base change of that
@@ -66,7 +66,7 @@ theorem isProperModification_iff (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.
 
 [Tag 0AE3](https://stacks.math.columbia.edu/tag/0AE3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProperModification_of_isIntegralModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationNormalPuncturedSurface.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModificationNormalPuncturedSurface.lean#L169).
+**`AlgebraicGeometry.Space.isProperModification_of_isIntegralModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationNormalPuncturedSurface.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationNormalPuncturedSurface.lean#L169).
 
 > **Stacks 0AE3.** Let `(A, 𝔪, κ)` be a two-dimensional Noetherian local domain whose
 > punctured spectrum `U = Spec A ∖ {𝔪}` is a normal scheme. Then every modification
@@ -90,7 +90,7 @@ theorem isProperModification_of_isIntegralModification [IsDomain A] [IsNoetheria
 
 [Tag 0AGM](https://stacks.math.columbia.edu/tag/0AGM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isClosedImmersion_of_isClosedImmersion_specialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperModificationSpecialFibre.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperModificationSpecialFibre.lean#L198).
+**`AlgebraicGeometry.Space.isClosedImmersion_of_isClosedImmersion_specialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperModificationSpecialFibre.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperModificationSpecialFibre.lean#L198).
 
 > **Stacks 0AGM.** Let `(A, 𝔪, κ)` be a Noetherian local ring and let `g : X ⟶ Y` be a
 > morphism of proper modifications of `Spec A` outside its punctured spectrum. If the induced
@@ -113,7 +113,7 @@ theorem isClosedImmersion_of_isClosedImmersion_specialFibre
 
 [Tag 0AYJ](https://stacks.math.columbia.edu/tag/0AYJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.dimension_fieldFibre_add_one_le_ringKrullDim_of_isIntegralModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationSpecialFibreDimension.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModificationSpecialFibreDimension.lean#L140). The attribute's comment: “case (1), f a modification”.
+**`AlgebraicGeometry.Space.dimension_fieldFibre_add_one_le_ringKrullDim_of_isIntegralModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationSpecialFibreDimension.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationSpecialFibreDimension.lean#L141). The attribute's comment: “case (1), f a modification”.
 
 > **Stacks 0AYJ, case (1).** Let `(A, 𝔪, κ)` be a Noetherian local domain of dimension at
 > least one and let `f : X → Spec A` be a modification. Then the special fibre `X_κ` has
@@ -135,7 +135,7 @@ theorem dimension_fieldFibre_add_one_le_ringKrullDim_of_isIntegralModification [
       ≤ ringKrullDim A
 ```
 
-**`AlgebraicGeometry.Space.dimension_fieldFibre_add_one_le_ringKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimension.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimension.lean#L211). The attribute's comment: “case (4), X decent”.
+**`AlgebraicGeometry.Space.dimension_fieldFibre_add_one_le_ringKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimension.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimension.lean#L211). The attribute's comment: “case (4), X decent”.
 
 > **Stacks 0AYJ, case (4).** Let `(A, 𝔪, κ)` be a Noetherian local domain of dimension at
 > least one and let `f : X → Spec A` be a morphism of algebraic spaces which is locally of finite
@@ -168,7 +168,7 @@ theorem dimension_fieldFibre_add_one_le_ringKrullDim [IsDomain A] [IsNoetherianR
       ≤ ringKrullDim A
 ```
 
-**`AlgebraicGeometry.Space.dimension_fieldFibre_add_one_le_ringKrullDim_of_isIntegralSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimension.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimension.lean#L324). The attribute's comment: “case (3), X integral”.
+**`AlgebraicGeometry.Space.dimension_fieldFibre_add_one_le_ringKrullDim_of_isIntegralSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimension.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimension.lean#L324). The attribute's comment: “case (3), X integral”.
 
 > **Stacks 0AYJ, case (3).** Let `(A, 𝔪, κ)` be a Noetherian local domain of dimension at
 > least one and let `f : X → Spec A` be a morphism of algebraic spaces which is locally of finite
@@ -200,7 +200,7 @@ theorem dimension_fieldFibre_add_one_le_ringKrullDim_of_isIntegralSpace
       ≤ ringKrullDim A
 ```
 
-**`AlgebraicGeometry.Space.dimension_fieldFibre_add_one_le_ringKrullDim'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean#L63). The attribute's comment: “case (4), X decent, at the source's hypotheses”.
+**`AlgebraicGeometry.Space.dimension_fieldFibre_add_one_le_ringKrullDim'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean#L63). The attribute's comment: “case (4), X decent, at the source's hypotheses”.
 
 > **Stacks 0AYJ, case (4)**, with the algebraicity of the special fibre supplied rather than
 > assumed: it is the base change of `f` along the residue-field point, so
@@ -225,7 +225,7 @@ theorem dimension_fieldFibre_add_one_le_ringKrullDim' [IsDomain A] [IsNoetherian
       ≤ ringKrullDim A
 ```
 
-**`AlgebraicGeometry.Space.dimension_fieldFibre_add_one_le_ringKrullDim_of_isIntegralSpace'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean#L86). The attribute's comment: “case (3), X integral, at the source's hypotheses”.
+**`AlgebraicGeometry.Space.dimension_fieldFibre_add_one_le_ringKrullDim_of_isIntegralSpace'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean#L86). The attribute's comment: “case (3), X integral, at the source's hypotheses”.
 
 > **Stacks 0AYJ, case (3)**, with the algebraicity of the special fibre supplied rather than
 > assumed, by `AlgebraicGeometry.Space.isAlgebraicSpace_fieldFibre_residueFieldPoint`; this is
@@ -249,7 +249,7 @@ theorem dimension_fieldFibre_add_one_le_ringKrullDim_of_isIntegralSpace'
       ≤ ringKrullDim A
 ```
 
-**`AlgebraicGeometry.Space.dimension_fieldFibre_add_one_le_ringKrullDim_of_isAlteration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean#L115). The attribute's comment: “case (2), f an alteration”.
+**`AlgebraicGeometry.Space.dimension_fieldFibre_add_one_le_ringKrullDim_of_isAlteration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean#L115). The attribute's comment: “case (2), f an alteration”.
 
 > **Stacks 0AYJ, case (2).** Let `(A, 𝔪, κ)` be a Noetherian local domain of dimension at
 > least one and let `f : X → Spec A` be an alteration of algebraic spaces, Stacks 0ADA. Then the
@@ -276,7 +276,7 @@ theorem dimension_fieldFibre_add_one_le_ringKrullDim_of_isAlteration
       ≤ ringKrullDim A
 ```
 
-**`AlgebraicGeometry.Space.dimension_fieldFibre_add_one_le_ringKrullDim_of_alteration_or_generic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean#L191).
+**`AlgebraicGeometry.Space.dimension_fieldFibre_add_one_le_ringKrullDim_of_alteration_or_generic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpecialFibreDimensionExtensions.lean#L191).
 
 > **Stacks 0AYJ.** Let `(A, 𝔪, κ)` be a Noetherian local domain of dimension at least one
 > and let `f : X → Spec A` be a morphism of algebraic spaces satisfying at least one of: (1) `f`
@@ -327,7 +327,7 @@ theorem dimension_fieldFibre_add_one_le_ringKrullDim_of_alteration_or_generic
 
 [Tag 0AGN](https://stacks.math.columbia.edu/tag/0AGN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_iso_isProjective_of_isIntegralModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationCompleteLocalProjective.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModificationCompleteLocalProjective.lean#L176).
+**`AlgebraicGeometry.Space.exists_iso_isProjective_of_isIntegralModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationCompleteLocalProjective.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationCompleteLocalProjective.lean#L176).
 
 > Let `(A, 𝔪, κ)` be a complete Noetherian local domain of dimension `2`. Every modification
 > `f : X ⟶ Spec A` (Stacks 0AD8) is projective over `A`: `X` is a scheme `Y`, in the sense that
@@ -358,4 +358,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 89.2, Tag 0BH8](https://stacks.math.columbia.edu/tag/0BH8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

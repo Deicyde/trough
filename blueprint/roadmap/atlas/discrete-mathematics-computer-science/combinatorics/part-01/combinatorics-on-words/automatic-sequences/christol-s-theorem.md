@@ -8,7 +8,7 @@ proof: formalized
 
 # Christol's theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/christol-s-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/christol-s-theorem/index.html).
 
 ## Christol's theorem
 
@@ -26,7 +26,7 @@ in base $q$.
 
 - Adamczewski--Bell, arXiv:1205.4091v1, lines 260--265: for `q` a positive integral power of the characteristic prime `p`, a series over `F_q` is algebraic over `F_q(t)` iff its coefficient sequence is `p`-automatic.
 
-Formalized by `MetaMathlibExt.christol_theorem`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/Christol.lean, line 1036](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PowerSeries/Christol.lean#L1036). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/christol-s-theorem/index.html#christol-theorem).
+Formalized by `MetaMathlibExt.christol_theorem`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/Christol.lean, line 1036](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PowerSeries/Christol.lean#L1036). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/christol-s-theorem/index.html#christol-theorem).
 
 ## Christol's theorem, automaton form
 
@@ -36,7 +36,7 @@ $f = \sum_n f_n X^n \in K[[X]]$ is algebraic over the polynomial ring $K[X]$ (it
 nonzero polynomial with coefficients in $K[X]$) if and only if its coefficient sequence
 $n \mapsto f_n$ is $p$-automatic in the sense of finite automata with output.
 
-Formalized by `MetaMathlibExt.christol_theorem_isKAutomaticSequence`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/Christol.lean, line 1066](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PowerSeries/Christol.lean#L1066). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/christol-s-theorem/index.html#christol-theorem-is-kautomatic-sequence).
+Formalized by `MetaMathlibExt.christol_theorem_isKAutomaticSequence`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/Christol.lean, line 1066](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PowerSeries/Christol.lean#L1066). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/christol-s-theorem/index.html#christol-theorem-is-kautomatic-sequence).
 
 ## Depends on
 
@@ -45,4 +45,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Christol's theorem](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/christol-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/christol-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/christol-s-theorem)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.14 Simplicial systems of the derived category: modules
 
-Section 85.14 of the Stacks Project, [Tag 0D9M](https://stacks.math.columbia.edu/tag/0D9M). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 85.14 of the Stacks Project, [Tag 0D9M](https://stacks.math.columbia.edu/tag/0D9M). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D9N, a definition
 
 [Tag 0D9N](https://stacks.math.columbia.edu/tag/0D9N) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.SimplicialDerivedModuleSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystem.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystem.lean#L87). The attribute's comment: “the data of a simplicial system and its cocycle condition”.
+**`CategoryTheory.SimplicialSiteSituation.SimplicialDerivedModuleSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystem.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystem.lean#L87). The attribute's comment: “the data of a simplicial system and its cocycle condition”.
 
 > **Stacks 0D9N.** A simplicial system of the derived category of modules for a sheaf of
 > commutative rings `O` on the total site of a simplicial-site situation: an object `K_n` of the
@@ -27,7 +27,7 @@ Section 85.14 of the Stacks Project, [Tag 0D9M](https://stacks.math.columbia.edu
 structure SimplicialDerivedModuleSystem
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.SimplicialDerivedModuleSystem.Cartesian`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystem.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystem.lean#L106). The attribute's comment: “cartesian systems”.
+**`CategoryTheory.SimplicialSiteSituation.SimplicialDerivedModuleSystem.Cartesian`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystem.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystem.lean#L106). The attribute's comment: “cartesian systems”.
 
 > **Stacks 0D9N.** A simplicial system of the derived category of modules is *cartesian* if
 > all of its transition maps `K_φ` are isomorphisms.
@@ -36,7 +36,7 @@ structure SimplicialDerivedModuleSystem
 abbrev Cartesian (K : SimplicialDerivedModuleSystem S O) : Prop
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.SimplicialDerivedModuleSystem.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystem.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystem.lean#L112). The attribute's comment: “morphisms of simplicial systems”.
+**`CategoryTheory.SimplicialSiteSituation.SimplicialDerivedModuleSystem.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystem.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystem.lean#L112). The attribute's comment: “morphisms of simplicial systems”.
 
 > **Stacks 0D9N.** A morphism of simplicial systems of the derived category of modules: a
 > morphism in every simplicial degree commuting with all of the transition maps.
@@ -49,7 +49,7 @@ structure Hom (K L : SimplicialDerivedModuleSystem S O)
 
 [Tag 0D9P](https://stacks.math.columbia.edu/tag/0D9P) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.derivedModuleSystemData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystemOfObject.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystemOfObject.lean#L308). The attribute's comment: “the system (K\_n, K(φ)) is a simplicial system of the derived category of modules”.
+**`CategoryTheory.SimplicialSiteSituation.derivedModuleSystemData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystemOfObject.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystemOfObject.lean#L308). The attribute's comment: “the system (K\_n, K(φ)) is a simplicial system of the derived category of modules”.
 
 > **Stacks 0D9P.** The restrictions `K_n` of an object `K` of the derived category of
 > `O`-modules on the total site, together with the derived transitions `K(φ)`, form a simplicial
@@ -66,7 +66,7 @@ noncomputable def derivedModuleSystemData
         HEq (T.map φ) ((S.derivedComponentModuleTransition O φ).app K)) }
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.derivedModuleSystem_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystemOfObject.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystemOfObject.lean#L329). The attribute's comment: “if K is cartesian then so is the system”.
+**`CategoryTheory.SimplicialSiteSituation.derivedModuleSystem_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystemOfObject.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystemOfObject.lean#L329). The attribute's comment: “if K is cartesian then so is the system”.
 
 > **Stacks 0D9P.** The simplicial system of a cartesian object of the derived category of
 > `O`-modules is cartesian: its transitions are the derived transitions, which are isomorphisms by
@@ -81,7 +81,7 @@ theorem derivedModuleSystem_cartesian (K : DerivedCategory (S.totalRingedTopos O
 
 [Tag 0GMF](https://stacks.math.columbia.edu/tag/0GMF) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.pairDerivedModuleSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedCocycleSystem/CocyclePairSystem.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedCocycleSystem/CocyclePairSystem.lean#L698). The attribute's comment: “the simplicial system”.
+**`CategoryTheory.SimplicialSiteSituation.pairDerivedModuleSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedCocycleSystem/CocyclePairSystem.lean, line 698](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedCocycleSystem/CocyclePairSystem.lean#L698). The attribute's comment: “the simplicial system”.
 
 > **Stacks 0GMF.** The simplicial system of the derived category of modules attached to a pair
 > `(K₀, α)`: in degree `n` the derived pullback of `K₀` along the last vertex of `⦋n⦌`, with the
@@ -94,7 +94,7 @@ def pairDerivedModuleSystem (Pr : S.DerivedModuleCocyclePair O) :
     SimplicialDerivedModuleSystem S O
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.pairDerivedModuleSystem_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedCocycleSystem/CocyclePairSystem.lean, line 707](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedCocycleSystem/CocyclePairSystem.lean#L707). The attribute's comment: “the objects of the system”.
+**`CategoryTheory.SimplicialSiteSituation.pairDerivedModuleSystem_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedCocycleSystem/CocyclePairSystem.lean, line 707](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedCocycleSystem/CocyclePairSystem.lean#L707). The attribute's comment: “the objects of the system”.
 
 > **Stacks 0GMF.** The object of the system in degree `n` is `Lf_{τⁿₙ}^* K₀`, the derived
 > pullback of `K₀` along the last vertex of `⦋n⦌`.
@@ -106,7 +106,7 @@ theorem pairDerivedModuleSystem_obj (Pr : S.DerivedModuleCocyclePair O) (n : Sim
         (SimplexCategory.const (SimplexCategory.mk 0) n (Fin.last n.len))).obj Pr.obj
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.pairDerivedModuleSystem_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedCocycleSystem/CocyclePairSystem.lean, line 716](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedCocycleSystem/CocyclePairSystem.lean#L716). The attribute's comment: “the system is cartesian”.
+**`CategoryTheory.SimplicialSiteSituation.pairDerivedModuleSystem_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedCocycleSystem/CocyclePairSystem.lean, line 716](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedCocycleSystem/CocyclePairSystem.lean#L716). The attribute's comment: “the system is cartesian”.
 
 > **Stacks 0GMF.** The system attached to a pair is cartesian: every transition map is an
 > isomorphism, for every simplex map and not only for the faces.
@@ -120,7 +120,7 @@ theorem pairDerivedModuleSystem_cartesian (Pr : S.DerivedModuleCocyclePair O) :
 
 [Tag 0D9Q](https://stacks.math.columbia.edu/tag/0D9Q) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.moduleResolutionTensorPostnikovSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean#L344). The attribute's comment: “part (1), the Postnikov system of - ⊗^L\_O K”.
+**`CategoryTheory.SimplicialSiteSituation.moduleResolutionTensorPostnikovSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean#L344). The attribute's comment: “part (1), the Postnikov system of - ⊗^L\_O K”.
 
 > **Stacks 0D9Q(1).** For each length `N`, the triangles
 > `Yₙ₊₁ ⟶ Xₙ₊₁ ⟶ Yₙ ⟶ Yₙ₊₁[1]` with `Xₙ = (g_{n!}Oₙ) ⊗^L_O K` and
@@ -138,7 +138,7 @@ def moduleResolutionTensorPostnikovSystem (N : ℕ) :
       (fun i : Fin N => (derivedTensorRight R T K).map (moduleResolutionTermDiff D (i : ℕ)))
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.isHomotopyColimit_moduleResolutionTensorSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean#L360). The attribute's comment: “part (2), the homotopy colimit, K = hocolim Yₙ[n] for Yₙ = (…)[-n] ⊗^L\_O K”.
+**`CategoryTheory.SimplicialSiteSituation.isHomotopyColimit_moduleResolutionTensorSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean#L360). The attribute's comment: “part (2), the homotopy colimit, K = hocolim Yₙ[n] for Yₙ = (…)[-n] ⊗^L\_O K”.
 
 > **Stacks 0D9Q(2).** `K = hocolim Yₙ[n]` in `D(O)`, where
 > `Yₙ = (g_{n!}Oₙ → … → g_{0!}O₀)[-n] ⊗^L_O K`.
@@ -154,7 +154,7 @@ theorem isHomotopyColimit_moduleResolutionTensorSystem :
     IsHomotopyColimit (moduleResolutionSystem D ⋙ derivedTensorRight R T K) K
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.map_moduleResolutionPostnikovSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean#L293). The attribute's comment: “part (1), the Postnikov system, for an exact functor in place of - ⊗^L\_O K”.
+**`CategoryTheory.SimplicialSiteSituation.map_moduleResolutionPostnikovSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean#L293). The attribute's comment: “part (1), the Postnikov system, for an exact functor in place of - ⊗^L\_O K”.
 
 > **Stacks 0D9Q(1).** For an exact functor `T` of `D(O)` — such as `- ⊗^L_O K` for an object
 > `K` of `D(O)` — the images under `T` of the brutal-truncation triangles of the module
@@ -169,7 +169,7 @@ def map_moduleResolutionPostnikovSystem
       (fun i : Fin N => T.map (moduleResolutionTermDiff D (i : ℕ)))
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.isHomotopyColimit_map_moduleResolutionSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean#L305). The attribute's comment: “part (2), the homotopy colimit, for an exact functor in place of - ⊗^L\_O K”.
+**`CategoryTheory.SimplicialSiteSituation.isHomotopyColimit_map_moduleResolutionSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean#L305). The attribute's comment: “part (2), the homotopy colimit, for an exact functor in place of - ⊗^L\_O K”.
 
 > **Stacks 0D9Q(2).** For an exact functor `T` of `D(O)` commuting with countable direct
 > sums — such as `- ⊗^L_O K` for an object `K` of `D(O)`, for which `T(O) = K` — the object
@@ -189,7 +189,7 @@ theorem isHomotopyColimit_map_moduleResolutionSystem
 
 [Tag 0D9R](https://stacks.math.columbia.edu/tag/0D9R) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.eq_zero_of_derivedComponentModuleRestriction_map_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleProjectionSituation.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleProjectionSituation.lean#L101).
+**`CategoryTheory.SimplicialSiteSituation.eq_zero_of_derivedComponentModuleRestriction_map_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleProjectionSituation.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleProjectionSituation.lean#L99).
 
 > **Stacks 0D9R.** In a simplicial-site situation (Stacks 09WE, either case) let `O` be a sheaf
 > of rings on the total site and `K, K'` objects of `D(O)`. Assume
@@ -223,7 +223,7 @@ theorem eq_zero_of_derivedComponentModuleRestriction_map_eq_zero
 
 [Tag 0D9S](https://stacks.math.columbia.edu/tag/0D9S) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.exists_hom_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedModuleMorphism.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedModuleMorphism.lean#L269).
+**`CategoryTheory.SimplicialSiteSituation.exists_hom_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedModuleMorphism.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CartesianDerivedModuleMorphism.lean#L269).
 
 > **Stacks 0D9S.** In Situation 09WE, let `O` be a sheaf of rings on the total site and let
 > `K`, `K'` be objects of `D(O)`. Assume
@@ -260,7 +260,7 @@ theorem exists_hom_of_cartesian
 
 [Tag 0D9T](https://stacks.math.columbia.edu/tag/0D9T) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.exists_isCartesianDerivedModule_of_moduleSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleOfModuleSystem.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleOfModuleSystem.lean#L97).
+**`CategoryTheory.SimplicialSiteSituation.exists_isCartesianDerivedModule_of_moduleSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleOfModuleSystem.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleOfModuleSystem.lean#L97).
 
 > **Stacks 0D9T.** In a simplicial-site situation (Stacks 09WE, either case) let `O` be a sheaf
 > of rings on the total site and let `(K_n, K_φ)` be a simplicial system of the derived category of
@@ -291,4 +291,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.14, Tag 0D9M](https://stacks.math.columbia.edu/tag/0D9M)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

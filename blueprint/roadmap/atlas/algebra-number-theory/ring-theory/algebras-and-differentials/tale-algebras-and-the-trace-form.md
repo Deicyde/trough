@@ -8,7 +8,7 @@ proof: formalized
 
 # Étale algebras and the trace form
 
-11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html).
+11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html).
 
 ## Étale criterion via semisimple base change
 
@@ -17,7 +17,7 @@ algebraically closed field extension of $K$, and $A$ a commutative $K$-algebra t
 finite-dimensional over $K$. If the ring $\Omega \otimes_K A$ is semisimple, then $A$ is étale
 over $K$.
 
-Formalized by `Algebra.Etale.of_isSemisimpleRing_tensorProduct`, a theorem declared in [MathlibExt/RingTheory/Etale/SemisimpleBaseChange.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Etale/SemisimpleBaseChange.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#of-is-semisimple-ring-tensor-product).
+Formalized by `Algebra.Etale.of_isSemisimpleRing_tensorProduct`, a theorem declared in [MathlibExt/RingTheory/Etale/SemisimpleBaseChange.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Etale/SemisimpleBaseChange.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#of-is-semisimple-ring-tensor-product).
 
 ## Trace on a finite product of algebras
 
@@ -28,7 +28,7 @@ finite-dimensional commutative $K$-algebras indexed by a finite set $I$, and let
 $P = \prod_{i \in I} A_i$. Then for every $x = (x_i)_{i \in I}$ in $P$,
 $\operatorname{Tr}_{P/K}(x) = \sum_{i \in I} \operatorname{Tr}_{A_i/K}(x_i)$.
 
-Formalized by `Algebra.trace_pi`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Etale/TraceForm.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#trace-pi).
+Formalized by `Algebra.trace_pi`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Etale/TraceForm.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#trace-pi).
 
 ## Trace form of a finite product of algebras
 
@@ -40,7 +40,7 @@ $P = \prod_{i \in I} A_i$. Then for all $x = (x_i)_{i \in I}$ and $y = (y_i)_{i 
 $\operatorname{Tr}_{P/K}(xy) = \sum_{i \in I} \operatorname{Tr}_{A_i/K}(x_i y_i)$, that is, the
 trace form of $P$ over $K$ is the sum of the trace forms of the factors.
 
-Formalized by `Algebra.traceForm_pi`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Etale/TraceForm.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#trace-form-pi).
+Formalized by `Algebra.traceForm_pi`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Etale/TraceForm.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#trace-form-pi).
 
 ## The trace form is invariant under algebra isomorphisms
 
@@ -52,7 +52,7 @@ $K$-algebras. Then for all $x, y \in R$ we have
 $\operatorname{Tr}_{S/K}(e(x)\,e(y)) = \operatorname{Tr}_{R/K}(xy)$, that is, $e$ carries the
 trace form of $R$ over $K$ to the trace form of $S$ over $K$.
 
-Formalized by `Algebra.traceForm_apply_of_algEquiv`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Etale/TraceForm.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#trace-form-apply-of-alg-equiv).
+Formalized by `Algebra.traceForm_apply_of_algEquiv`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Etale/TraceForm.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#trace-form-apply-of-alg-equiv).
 
 ## Nilpotent elements pair to zero under the trace form
 
@@ -64,7 +64,7 @@ $(x, y)$, that is, $\operatorname{Tr}_{R/K}(xy) = 0$.
 
 Multiplication by a nilpotent element is a nilpotent endomorphism, whose trace vanishes.
 
-Formalized by `Algebra.traceForm_apply_eq_zero_of_isNilpotent`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Etale/TraceForm.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#trace-form-apply-eq-zero-of-is-nilpotent).
+Formalized by `Algebra.traceForm_apply_eq_zero_of_isNilpotent`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Etale/TraceForm.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#trace-form-apply-eq-zero-of-is-nilpotent).
 
 ## A nondegenerate trace form forces the algebra to be reduced
 
@@ -76,7 +76,7 @@ nondegenerate, then $R$ is reduced, that is, its only nilpotent element is $0$.
 
 Every nilpotent element lies in the kernel of the trace form, hence is zero.
 
-Formalized by `Algebra.isReduced_of_traceForm_nondegenerate`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Etale/TraceForm.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#is-reduced-of-trace-form-nondegenerate).
+Formalized by `Algebra.isReduced_of_traceForm_nondegenerate`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Etale/TraceForm.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#is-reduced-of-trace-form-nondegenerate).
 
 ## Trace form criterion for étale algebras
 
@@ -90,7 +90,7 @@ is étale over $K$.
 
 - ATLAS NumberTheoryI Theorem 5.20.
 
-Formalized by `Algebra.traceForm_nondegenerate_iff_etale`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Etale/TraceForm.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#trace-form-nondegenerate-iff-etale).
+Formalized by `Algebra.traceForm_nondegenerate_iff_etale`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Etale/TraceForm.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#trace-form-nondegenerate-iff-etale).
 
 ## Discriminant and nondegeneracy of the trace form
 
@@ -100,7 +100,7 @@ $\operatorname{Tr}_{R/K}(z)$ for the trace of the $K$-linear map given by multip
 Then the discriminant of $b$ over $K$ is nonzero if and only if the trace form
 $(x, y) \mapsto \operatorname{Tr}_{R/K}(xy)$ of $R$ over $K$ is nondegenerate.
 
-Formalized by `Algebra.discr_ne_zero_iff_traceForm_nondegenerate`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Etale/TraceForm.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#discr-ne-zero-iff-trace-form-nondegenera).
+Formalized by `Algebra.discr_ne_zero_iff_traceForm_nondegenerate`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Etale/TraceForm.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#discr-ne-zero-iff-trace-form-nondegenera).
 
 ## Étale algebras are detected by the discriminant
 
@@ -112,7 +112,7 @@ over $K$ is nonzero if and only if $R$ is étale over $K$.
 
 - ATLAS NumberTheoryI Lemma 12.18.
 
-Formalized by `Algebra.discr_ne_zero_iff_etale`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Etale/TraceForm.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#discr-ne-zero-iff-etale).
+Formalized by `Algebra.discr_ne_zero_iff_etale`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Etale/TraceForm.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#discr-ne-zero-iff-etale).
 
 ## Étale algebras have nonzero discriminant
 
@@ -124,7 +124,7 @@ discriminant of $b$ over $K$ is nonzero.
 
 - ATLAS NumberTheoryI Lemma 12.18, one direction.
 
-Formalized by `Algebra.discr_ne_zero_of_etale`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Etale/TraceForm.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#discr-ne-zero-of-etale).
+Formalized by `Algebra.discr_ne_zero_of_etale`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Etale/TraceForm.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#discr-ne-zero-of-etale).
 
 ## A nonzero discriminant forces étaleness
 
@@ -136,7 +136,7 @@ $K$ is nonzero, then $R$ is étale over $K$.
 
 - ATLAS NumberTheoryI Lemma 12.18, one direction.
 
-Formalized by `Algebra.etale_of_discr_ne_zero`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Etale/TraceForm.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#etale-of-discr-ne-zero).
+Formalized by `Algebra.etale_of_discr_ne_zero`, a theorem declared in [MathlibExt/RingTheory/Etale/TraceForm.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Etale/TraceForm.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html#etale-of-discr-ne-zero).
 
 ## Depends on
 
@@ -145,4 +145,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Étale algebras and the trace form](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/algebras-and-differentials/tale-algebras-and-the-trace-form)

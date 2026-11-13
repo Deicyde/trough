@@ -8,7 +8,7 @@ proof: formalized
 
 # Thue–Morse sequence and its generalizations
 
-25 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html).
+25 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html).
 
 ## Cyclic letter shift
 
@@ -20,7 +20,7 @@ letters as $a_0, \dots, a_{L-1}$, it sends $a_i$ to $a_{(i + t) \bmod L}$.
 
 - JIS Definition 2.2.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.shiftLetter`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#shift-letter).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.shiftLetter`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#shift-letter).
 
 ## Cyclic shift of a word
 
@@ -29,7 +29,7 @@ alphabet $\{0, 1, \dots, L - 1\}$. The cyclic shift by $t$ of a word $w = a_1 a_
 over this alphabet is the word $\sigma_t(a_1) \sigma_t(a_2) \cdots \sigma_t(a_n)$ of the same
 length, where $\sigma_t(a) = (a + t) \bmod L$ is the cyclic shift of a letter.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.shiftWord`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#shift-word).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.shiftWord`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#shift-word).
 
 ## Letters of a cyclically shifted word
 
@@ -39,7 +39,7 @@ $\sigma_t(a) = (a + t) \bmod L$ for its cyclic shift by $t$, and for a word $w$ 
 alphabet write $\sigma_t(w)$ for the word obtained by shifting each letter of $w$. Then $b$
 occurs in $\sigma_t(w)$ if and only if $b = \sigma_t(a)$ for some letter $a$ occurring in $w$.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.shiftWord_mem`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#shift-word-mem).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.shiftWord_mem`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#shift-word-mem).
 
 ## Cyclic shifting preserves word length
 
@@ -51,7 +51,7 @@ from $w$ by shifting each letter cyclically by $t$ has the same length as $w$.
 
 - JIS Definition 2.2.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.shiftWord_length`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#shift-word-length).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.shiftWord_length`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#shift-word-length).
 
 ## Value of the cyclic letter shift
 
@@ -63,7 +63,7 @@ $(a + t) \bmod L$.
 
 - JIS Definition 2.2.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.shiftLetter_val`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#shift-letter-val).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.shiftLetter_val`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#shift-letter-val).
 
 ## Blocks of the generalized Thue–Morse sequence
 
@@ -76,7 +76,7 @@ $(L, k, \kappa)$-Thue–Morse sequence are the words given by $A_0 = 0$ (a word 
 and $A_{n+1} = A_n \, f^{\kappa(1, n)}(A_n) \, f^{\kappa(2, n)}(A_n) \cdots
 f^{\kappa(k-1, n)}(A_n)$.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.block`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#block).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.block`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#block).
 
 ## Length of a concatenation of equal-length lists
 
@@ -88,7 +88,7 @@ lists in $l$ has length $n \cdot m$, where $n$ is the number of lists in $l$.
 
 - JIS Definition 2.2.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.length_flatten_eq`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#length-flatten-eq).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.length_flatten_eq`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#length-flatten-eq).
 
 ## Length of the generalized Thue–Morse blocks
 
@@ -97,7 +97,7 @@ and let $\kappa$ assign a shift $\kappa(j, n) \in \mathbb{Z}/L\mathbb{Z}$ to eac
 $j \in \{1, \dots, k-1\}$ and each $n \ge 0$. For every $n \ge 0$, the block $A_n$ of the
 $(L, k, \kappa)$-Thue–Morse sequence has exactly $k^n$ letters.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.block_length`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#block-length).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.block_length`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#block-length).
 
 ## Each generalized Thue–Morse block is a prefix of the next
 
@@ -107,7 +107,7 @@ $j \in \{1, \dots, k-1\}$ and each $n \ge 0$. For every $n \ge 0$, the block $A_
 $(L, k, \kappa)$-Thue–Morse sequence is a prefix of $A_{n+1}$: there is a word $w$ with
 $A_{n+1} = A_n w$.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.block_prefix_succ`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#block-prefix-succ).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.block_prefix_succ`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#block-prefix-succ).
 
 ## The generalized Thue–Morse blocks form a chain of prefixes
 
@@ -117,7 +117,7 @@ $j \in \{1, \dots, k-1\}$ and each $n \ge 0$. For all natural numbers $m \le n$,
 of the $(L, k, \kappa)$-Thue–Morse sequence is a prefix of $A_n$: there is a word $w$ with
 $A_n = A_m w$.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.block_prefix`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#block-prefix).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.block_prefix`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#block-prefix).
 
 ## A crude exponential bound
 
@@ -128,7 +128,7 @@ we have $m < k^{m+1}$.
 
 - JIS Definition 2.2.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.lt_pow_succ_self`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#lt-pow-succ-self).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.lt_pow_succ_self`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#lt-pow-succ-self).
 
 ## Indexing into a concatenation
 
@@ -140,7 +140,7 @@ of $l_1$ followed by $l_2$ equals the entry at position $m$ of $l_1$ (positions 
 
 - JIS Definition 2.2.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.get_append_left`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#get-append-left).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.get_append_left`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#get-append-left).
 
 ## The infinite generalized Thue–Morse word
 
@@ -157,7 +157,7 @@ The letter is read by checked indexing, with no default letter.
 
 - JIS Definition 2.2.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.infLetter`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#inf-letter).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.infLetter`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#inf-letter).
 
 ## Later blocks agree with the infinite word
 
@@ -172,7 +172,7 @@ position $m$ of $A_\infty$ (positions start at $0$).
 
 - JIS Definition 2.2.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.infLetter_coherence`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#inf-letter-coherence).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.infLetter_coherence`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#inf-letter-coherence).
 
 ## Classical shift schedule
 
@@ -185,7 +185,7 @@ $(L, k, \kappa)$-Thue–Morse sequence with $L = k = 2$.
 
 - the classical $(2, 2, 1)$ example after JIS Definition 2.2.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.classicalKappa`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-kappa).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.classicalKappa`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-kappa).
 
 ## Classical Thue–Morse blocks
 
@@ -194,7 +194,7 @@ $(2, 2, \kappa)$-Thue–Morse sequence with $\kappa(1, n) = 1$ for every $n \ge 
 the one-letter word $0$, and $A_{n+1}$ is $A_n$ followed by the word obtained from $A_n$ by
 exchanging the letters $0$ and $1$.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.classicalBlock`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-block).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.classicalBlock`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-block).
 
 ## Length of the classical Thue–Morse blocks
 
@@ -206,35 +206,35 @@ $L = k = 2$ and $\kappa(1, i) = 1$ for all $i \in \mathbb{N}$) has exactly $2^n$
 
 - the classical $(2, 2, 1)$ example after JIS Definition 2.2.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.classical_length`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-length).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.classical_length`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-length).
 
 ## Classical Thue–Morse block of order 0
 
 The classical Thue–Morse block $A_0$ is the
 one-letter word $0$.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.classical_A0`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-a0).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.classical_A0`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-a0).
 
 ## Classical Thue–Morse block of order 1
 
 The classical Thue–Morse block $A_1$ is the word
 $01$.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.classical_A1`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-a1).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.classical_A1`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-a1).
 
 ## Classical Thue–Morse block of order 2
 
 The classical Thue–Morse block $A_2$ is the word
 $0110$.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.classical_A2`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-a2).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.classical_A2`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-a2).
 
 ## Classical Thue–Morse block of order 3
 
 The classical Thue–Morse block $A_3$ is the word
 $01101001$.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.classical_A3`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-a3).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.classical_A3`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-a3).
 
 ## The classical Thue–Morse word begins with 01101001
 
@@ -243,7 +243,7 @@ of the $(2, 2, \kappa)$-Thue–Morse sequence with $\kappa(1, n) = 1$ for every 
 letters of $A_\infty$ at positions $0, 1, \dots, 7$ are $0, 1, 1, 0, 1, 0, 0, 1$, so $A_\infty$
 begins with $01101001$.
 
-Formalized by `MetaMathlibExt.GeneralizedThueMorse.classical_inf_init`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-inf-init).
+Formalized by `MetaMathlibExt.GeneralizedThueMorse.classical_inf_init`, a theorem declared in [MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/GeneralizedThueMorseSequence.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#classical-inf-init).
 
 ## Thue–Morse substitution
 
@@ -254,7 +254,7 @@ sends each letter to a word of length two: $\sigma(0) = 01$ and $\sigma(1) = 10$
 
 - Example 2 in Scott Balchin and Dan Rust, *Computations for Symbolic Substitutions*, Journal of Integer Sequences 20 (2017): https://cs.uwaterloo.ca/journals/JIS/VOL20/Rust/rust3.tex.
 
-Formalized by `MetaMathlibExt.thueMorseSubstitution`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/ThueMorse.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/ThueMorse.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#thue-morse-substitution).
+Formalized by `MetaMathlibExt.thueMorseSubstitution`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/ThueMorse.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/ThueMorse.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#thue-morse-substitution).
 
 ## Thue–Morse blocks
 
@@ -264,7 +264,7 @@ $n$, the $n$th Thue–Morse block is the finite word $\sigma^n(0)$: the $0$th bl
 one-letter word $0$, and the $(n+1)$st block is obtained from the $n$th by replacing each letter
 $a$ with $\sigma(a)$.
 
-Formalized by `MetaMathlibExt.thueMorseBlock`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/ThueMorse.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/ThueMorse.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#thue-morse-block).
+Formalized by `MetaMathlibExt.thueMorseBlock`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/ThueMorse.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/ThueMorse.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#thue-morse-block).
 
 ## Thue–Morse sequence
 
@@ -276,7 +276,7 @@ digits equal to $1$; otherwise $t_n = 0$.
 
 - Eiji Miyanohara, *Transcendence of Digital Expansions Generated by a Generalized Thue-Morse Sequence*, Journal of Integer Sequences 18 (2015), which lists the initial blocks `0`, `01`, `0110` and `01101001` and the limit beginning `0110100110010110`: https://cs.uwaterloo.ca/journals/JIS/VOL18/Miyanohara/miy5.tex. Evaluation here uses the binary digits of the index, in time and space logarithmic in it, rather than an exponentially long block.
 
-Formalized by `MetaMathlibExt.thueMorse`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/ThueMorse.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/InfiniteWord/ThueMorse.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#thue-morse).
+Formalized by `MetaMathlibExt.thueMorse`, a definition declared in [MathlibExt/Combinatorics/InfiniteWord/ThueMorse.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/InfiniteWord/ThueMorse.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html#thue-morse).
 
 ## Depends on
 
@@ -285,4 +285,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Thue–Morse sequence and its generalizations](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/thue-morse-sequence-and-its-generalizations)

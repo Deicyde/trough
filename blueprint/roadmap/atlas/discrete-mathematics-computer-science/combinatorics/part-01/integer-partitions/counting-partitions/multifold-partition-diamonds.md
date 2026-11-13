@@ -7,7 +7,7 @@ statement: formalized
 
 # Multifold partition diamonds
 
-21 results, 17 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html).
+21 results, 17 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html).
 
 ## Value of a permutation at a natural position
 
@@ -19,7 +19,7 @@ $j < d$, and $0$ when $j \ge d$. It is used to read off descents.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Section 1 (descent statistics).
 
-Formalized by `MetaMathlibExt.permValueAt`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#perm-value-at).
+Formalized by `MetaMathlibExt.permValueAt`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#perm-value-at).
 
 ## Descent set of a permutation
 
@@ -33,7 +33,7 @@ value at $p + 1$.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Section 1.
 
-Formalized by `MetaMathlibExt.permDescentSet`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#perm-descent-set).
+Formalized by `MetaMathlibExt.permDescentSet`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#perm-descent-set).
 
 ## Number of descents from the descent set
 
@@ -45,7 +45,7 @@ number of elements of the descent set $\mathrm{Des}(\tau)$.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Section 1.
 
-Formalized by `MetaMathlibExt.permDes`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#perm-des).
+Formalized by `MetaMathlibExt.permDes`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#perm-des).
 
 ## Major index of a permutation
 
@@ -57,7 +57,7 @@ positions, numbered from $1$, in the descent set $\mathrm{Des}(\tau)$.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Section 1.
 
-Formalized by `MetaMathlibExt.permMaj`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#perm-maj).
+Formalized by `MetaMathlibExt.permMaj`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#perm-maj).
 
 ## Euler–Mahonian polynomial
 
@@ -71,7 +71,7 @@ major index of the permutation $\tau$.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Section 1.
 
-Formalized by `MetaMathlibExt.eulerMahonian`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#euler-mahonian).
+Formalized by `MetaMathlibExt.eulerMahonian`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#euler-mahonian).
 
 ## The first Euler–Mahonian polynomial is $1$
 
@@ -82,7 +82,7 @@ $x, y \in R$, the Euler–Mahonian polynomial $E_1$ satisfies $E_1(x, y) = 1$.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Section 1 (`F_1 = 1` in recursion (1)).
 
-Formalized by `MetaMathlibExt.eulerMahonian_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#euler-mahonian-one).
+Formalized by `MetaMathlibExt.eulerMahonian_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#euler-mahonian-one).
 
 ## Euler–Mahonian polynomial $E_3$ at $(2, 3)$
 
@@ -98,7 +98,7 @@ identity.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Section 1.
 
-Formalized by `MetaMathlibExt.eulerMahonian_three_two_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#euler-mahonian-three-two-three).
+Formalized by `MetaMathlibExt.eulerMahonian_three_two_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#euler-mahonian-three-two-three).
 
 ## Permutations of $S_3$ with descent set $\{1\}$
 
@@ -110,7 +110,7 @@ $\operatorname{maj}(\tau) = 1$; equivalently, their descent set is $\{1\}$.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Section 1.
 
-Formalized by `MetaMathlibExt.card_perm_three_des_one_maj_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#card-perm-three-des-one-maj-one).
+Formalized by `MetaMathlibExt.card_perm_three_des_one_maj_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#card-perm-three-des-one-maj-one).
 
 ## Position of the $k$th link of a multifold partition diamond
 
@@ -124,7 +124,7 @@ $L_k = d_1 + \dots + d_M + M$ for every $k \ge M$.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Figure 3 and Section 3.
 
-Formalized by `MetaMathlibExt.diamondLinkPos`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#diamond-link-pos).
+Formalized by `MetaMathlibExt.diamondLinkPos`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#diamond-link-pos).
 
 ## Number of parts of a multifold partition diamond
 
@@ -135,7 +135,7 @@ $M$ diamonds have $d_1, \dots, d_M$ folds has $c = d_1 + \dots + d_M + M + 1$ pa
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Figure 3 (`c = M(d + 1) + 1`).
 
-Formalized by `MetaMathlibExt.diamondSize`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#diamond-size).
+Formalized by `MetaMathlibExt.diamondSize`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#diamond-size).
 
 ## The set of link positions of a multifold partition diamond
 
@@ -149,7 +149,7 @@ parts.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Figure 3.
 
-Formalized by `MetaMathlibExt.diamondLinks`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#diamond-links).
+Formalized by `MetaMathlibExt.diamondLinks`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#diamond-links).
 
 ## Multifold partition diamonds with given fold and link sums
 
@@ -171,7 +171,7 @@ $d_k \ge 1$, $b(0)$ is the smallest of $b(0), \dots, b(c - 1)$.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Sections 2-3.
 
-Formalized by `MetaMathlibExt.IsMultifoldDiamond`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#is-multifold-diamond).
+Formalized by `MetaMathlibExt.IsMultifoldDiamond`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#is-multifold-diamond).
 
 ## Extending a part vector by zero
 
@@ -185,7 +185,7 @@ $0$ for $p \ge c$.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Section 2.
 
-Formalized by `MetaMathlibExt.diamondPart`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#diamond-part).
+Formalized by `MetaMathlibExt.diamondPart`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#diamond-part).
 
 ## Number of multifold partition diamonds
 
@@ -204,7 +204,7 @@ Every part of such a diamond is at most $i + j$, so this number is finite.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, equation (2) and Section 3.
 
-Formalized by `MetaMathlibExt.multifoldDiamondCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#multifold-diamond-count).
+Formalized by `MetaMathlibExt.multifoldDiamondCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#multifold-diamond-count).
 
 ## Single-fold diamonds with fold sum 1 and link sum 1
 
@@ -216,7 +216,7 @@ one triple of nonnegative integers $b_0 \le b_1 \le b_2$ with $b_1 = 1$ and $b_0
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, equation (2).
 
-Formalized by `MetaMathlibExt.multifoldDiamondCount_one_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#multifold-diamond-count-one-one-one).
+Formalized by `MetaMathlibExt.multifoldDiamondCount_one_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#multifold-diamond-count-one-one-one).
 
 ## Two-fold diamonds with fold sum 1 and link sum 2
 
@@ -229,7 +229,7 @@ for $f = 1, 2$, $b_1 + b_2 = 1$ and $b_0 + b_3 = 2$.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, equation (2).
 
-Formalized by `MetaMathlibExt.multifoldDiamondCount_two_one_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#multifold-diamond-count-two-one-two).
+Formalized by `MetaMathlibExt.multifoldDiamondCount_two_one_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#multifold-diamond-count-two-one-two).
 
 ## The bivariate series of multifold partition diamonds
 
@@ -244,7 +244,7 @@ such diamonds. We write $\sigma_{d,M}$ for the case $d_1 = \dots = d_M = d$.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, equation (2) and Section 3.
 
-Formalized by `MetaMathlibExt.multifoldDiamondSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#multifold-diamond-series).
+Formalized by `MetaMathlibExt.multifoldDiamondSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#multifold-diamond-series).
 
 ## Recursion for the Euler–Mahonian polynomials
 
@@ -264,7 +264,7 @@ stated multiplied by $1 - w$.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Theorem 1 with recursion (1).
 
-Stated but not proved: `MetaMathlibExt.eulerMahonian_succ_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#euler-mahonian-succ-recursion).
+Stated but not proved: `MetaMathlibExt.eulerMahonian_succ_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#euler-mahonian-succ-recursion).
 
 ## Product formula for equal-fold partition diamonds
 
@@ -285,7 +285,7 @@ $(1 - a^{Md} b^{M+1}) \prod_{n=1}^{M} \prod_{j=0}^{d} (1 - a^{nd-j} b^n)$.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.partitionDiamond_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#partition-diamond-gen-fun).
+Stated but not proved: `MetaMathlibExt.partitionDiamond_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#partition-diamond-gen-fun).
 
 ## Product formula for multifold partition diamonds
 
@@ -310,7 +310,7 @@ $ab$ would be $1$, not $2$.
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.multifoldPartitionDiamond_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#multifold-partition-diamond-gen-fun).
+Stated but not proved: `MetaMathlibExt.multifoldPartitionDiamond_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#multifold-partition-diamond-gen-fun).
 
 ## Generating function of Schmidt type $d$-fold partition diamonds
 
@@ -330,7 +330,7 @@ statement for all $N$ is equivalent to $S_d(q) = \prod_{m \ge 1} E_d(q^m, 1)/(1 
 
 - Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Corollary 1, quoting Dockery-Jameson-Sellers-Wilson.
 
-Stated but not proved: `MetaMathlibExt.schmidtPartitionDiamond_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#schmidt-partition-diamond-gen-fun).
+Stated but not proved: `MetaMathlibExt.schmidtPartitionDiamond_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionDiamondsEulerMahonianWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html#schmidt-partition-diamond-gen-fun).
 
 ## Depends on
 
@@ -339,4 +339,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Multifold partition diamonds](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/counting-partitions/multifold-partition-diamonds)

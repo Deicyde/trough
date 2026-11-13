@@ -1,6 +1,6 @@
 # 26 Schemes
 
-Chapter 26 of the Stacks Project, *Schemes*, [Tag 01H8](https://stacks.math.columbia.edu/tag/01H8): the 22 sections of its 24 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 126 tags are carried by 228 declarations of the repository (all in StacksFrontier) and 198 registered declarations.
+Chapter 26 of the Stacks Project, *Schemes*, [Tag 01H8](https://stacks.math.columbia.edu/tag/01H8): the 22 sections of its 24 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 128 tags are carried by 228 declarations of the repository (all in StacksFrontier) and 199 registered declarations.
 
 ## [26.2 Locally ringed spaces to 26.20 Valuative criterion for…](part-01/README.md)
 

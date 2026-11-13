@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.8 Cohomology on simplicial sites
 
-Section 85.8 of the Stacks Project, [Tag 0D76](https://stacks.math.columbia.edu/tag/0D76). 6 tags here are carried by 29 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 85.8 of the Stacks Project, [Tag 0D76](https://stacks.math.columbia.edu/tag/0D76). 6 tags here are carried by 29 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09WI, a lemma
 
 [Tag 09WI](https://stacks.math.columbia.edu/tag/09WI) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.simplicialIntegerResolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolution.lean, line 2511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolution.lean#L2511). The attribute's comment: “the resolution”. References: SGA 4 VIII (8.2), “resolution of Z”.
+**`CategoryTheory.SimplicialSiteSituation.simplicialIntegerResolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolution.lean, line 2511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolution.lean#L2511). The attribute's comment: “the resolution”. References: SGA 4 VIII (8.2), “resolution of Z”.
 
 > **Stacks 09WI.** The lower shriek images of the constant integer sheaves form an
 > alternating-face resolution of the constant integer sheaf on the total site.
@@ -24,7 +24,7 @@ noncomputable def simplicialIntegerResolution (S : SimplicialSiteSituation.{u}) 
     SimplicialIntegerResolution S
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.simplicialIntegerComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolution.lean, line 2528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolution.lean#L2528). The attribute's comment: “the complex”.
+**`CategoryTheory.SimplicialSiteSituation.simplicialIntegerComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolution.lean, line 2528](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/IntegerResolution.lean#L2528). The attribute's comment: “the complex”.
 
 > The alternating-face chain complex `… → g_{2!} Z → g_{1!} Z → g_{0!} Z` of the simplicial
 > resolution of Stacks 09WI.
@@ -38,7 +38,7 @@ noncomputable abbrev simplicialIntegerComplex (S : SimplicialSiteSituation.{u}) 
 
 [Tag 0D77](https://stacks.math.columbia.edu/tag/0D77) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.cechSectionsComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean#L225). The attribute's comment: “the canonical complex”.
+**`CategoryTheory.SimplicialSiteSituation.cechSectionsComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean#L225). The attribute's comment: “the canonical complex”.
 
 > The canonical complex `Γ(C_0, F_0) → Γ(C_1, F_1) → Γ(C_2, F_2) → …` of an abelian sheaf `F`
 > on the total site of a simplicial site, functorially in `F`. Its augmentation by `Γ(C_total, F)`
@@ -48,7 +48,7 @@ noncomputable abbrev simplicialIntegerComplex (S : SimplicialSiteSituation.{u}) 
 def cechSectionsComplex : Sheaf S.totalTopology Ab.{u} ⥤ CochainComplex Ab.{u} ℕ
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.cechSectionsAugmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean#L260). The attribute's comment: “the augmentation”.
+**`CategoryTheory.SimplicialSiteSituation.cechSectionsAugmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean#L260). The attribute's comment: “the augmentation”.
 
 > The augmentation `Γ(C_total, F) → Γ(C_0, F_0)` of the canonical complex, natural in the
 > abelian sheaf `F`. It is the canonical restriction of a global section to
@@ -59,7 +59,7 @@ def cechSectionsAugmentation :
     Sheaf.Γ S.totalTopology Ab.{u} ⟶ S.componentSectionsFunctor ⦋0⦌
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.cechSectionsAugmentation_app_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean#L298). The attribute's comment: “exactness in degree -1”.
+**`CategoryTheory.SimplicialSiteSituation.cechSectionsAugmentation_app_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean#L298). The attribute's comment: “exactness in degree -1”.
 
 > Exactness in degree `-1`: the augmentation `Γ(C_total, F) → Γ(C_0, F_0)` of the canonical
 > complex is a monomorphism.
@@ -69,7 +69,7 @@ theorem cechSectionsAugmentation_app_mono (F : Sheaf S.totalTopology Ab.{u}) :
     Mono ((S.cechSectionsAugmentation).app F)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.cechSectionsAugmentation_app_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean#L309). The attribute's comment: “exactness in degree -1”.
+**`CategoryTheory.SimplicialSiteSituation.cechSectionsAugmentation_app_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean#L309). The attribute's comment: “exactness in degree -1”.
 
 > Exactness in degree `-1`, concretely: the augmentation `Γ(C_total, F) → Γ(C_0, F_0)` of the
 > canonical complex is injective.
@@ -79,7 +79,7 @@ theorem cechSectionsAugmentation_app_injective (F : Sheaf S.totalTopology Ab.{u}
     Function.Injective ((S.cechSectionsAugmentation).app F)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.cechSectionsComplex_exactAt_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean#L377). The attribute's comment: “exactness in positive degrees for an injective sheaf”.
+**`CategoryTheory.SimplicialSiteSituation.cechSectionsComplex_exactAt_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean#L377). The attribute's comment: “exactness in positive degrees for an injective sheaf”.
 
 > Exactness in positive degrees for an injective sheaf: if `F` is an injective abelian sheaf on
 > the total site, the canonical complex `Γ(C_0, F_0) → Γ(C_1, F_1) → Γ(C_2, F_2) → …` is exact at
@@ -91,7 +91,7 @@ theorem cechSectionsComplex_exactAt_of_injective (F : Sheaf S.totalTopology Ab.{
     ((S.cechSectionsComplex).obj F).ExactAt n
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.cechSectionsComplex_shortComplexZero_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean#L401). The attribute's comment: “exactness in degree 0”.
+**`CategoryTheory.SimplicialSiteSituation.cechSectionsComplex_shortComplexZero_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/SectionsComplex.lean#L401). The attribute's comment: “exactness in degree 0”.
 
 > Exactness in degree `0`: the sequence `Γ(C_total, F) → Γ(C_0, F_0) → Γ(C_1, F_1)` is exact
 > at `Γ(C_0, F_0)`.
@@ -107,7 +107,7 @@ theorem cechSectionsComplex_shortComplexZero_exact (F : Sheaf S.totalTopology Ab
 
 [Tag 09WJ](https://stacks.math.columbia.edu/tag/09WJ) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.derivedSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L202). The attribute's comment: “the spectral sequence for K in D^+(C\_total), as a functor of K”.
+**`CategoryTheory.SimplicialSiteSituation.derivedSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L202). The attribute's comment: “the spectral sequence for K in D^+(C\_total), as a functor of K”.
 
 > **Stacks 09WJ, the spectral sequence.** For an object `K` of `D^+(C_total)` there is a
 > cohomological spectral sequence, functorial in `K`: the right derived functor, along the
@@ -125,7 +125,7 @@ def derivedSpectralSequence :
       CohomologicalSpectralSequence Ab.{u} 1
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.derivedSpectralSequence_pageOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L395). The attribute's comment: “the first page E\_1^\{p,q} = H^q(C\_p, K\_p) for K in D^+(C\_total), naturally in K”.
+**`CategoryTheory.SimplicialSiteSituation.derivedSpectralSequence_pageOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L395). The attribute's comment: “the first page E\_1^\{p,q} = H^q(C\_p, K\_p) for K in D^+(C\_total), naturally in K”.
 
 > **Stacks 09WJ, the first page.** `E_1^{p,q} = H^q(C_p, K_p)`: the first page of the spectral
 > sequence of Stacks 09WJ at `(p, q)` is the sheaf cohomology on the component site `C_p` of the
@@ -141,7 +141,7 @@ def derivedSpectralSequence_pageOneIso :
       S.componentDerivedCohomologyFunctor n q
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.isZero_derivedPageOne_d_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L411). The attribute's comment: “the first differential d\_1^\{p,q} : E\_1^\{p,q} → E\_1^\{p+1,q} for K in D^+(C\_total)”.
+**`CategoryTheory.SimplicialSiteSituation.isZero_derivedPageOne_d_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L411). The attribute's comment: “the first differential d\_1^\{p,q} : E\_1^\{p,q} → E\_1^\{p+1,q} for K in D^+(C\_total)”.
 
 > **Stacks 09WJ, the first differential.** `d_1^{p,q} : E_1^{p,q} → E_1^{p+1,q}`: the
 > differential of the first page out of the bidegree `(p, q)` lands in the bidegree `(p + 1, q)`,
@@ -156,7 +156,7 @@ theorem isZero_derivedPageOne_d_of_ne (K : DerivedCategory.Plus (Sheaf S.totalTo
     ((S.derivedSpectralSequence.obj K).page 1 le_rfl).d (p, q) (p', q') = 0
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.derivedSpectralSequence_abutsTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 488](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L488). The attribute's comment: “the abutment H^\{p+q}(C\_total, K) for K in D^+(C\_total)”.
+**`CategoryTheory.SimplicialSiteSituation.derivedSpectralSequence_abutsTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 488](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L488). The attribute's comment: “the abutment H^\{p+q}(C\_total, K) for K in D^+(C\_total)”.
 
 > **Stacks 09WJ, the convergence.** The spectral sequence of Stacks 09WJ abuts to
 > `H^{p+q}(C_total, K)`: its infinity page at `(p, q)` is the `p`-th graded piece of a finite
@@ -174,7 +174,7 @@ theorem derivedSpectralSequence_abutsTo
       (fun n => (S.totalDerivedCohomologyFunctor n).obj K)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.cohomologySpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean#L168). The attribute's comment: “the spectral sequence, for an abelian sheaf on the total site, functorial in it”.
+**`CategoryTheory.SimplicialSiteSituation.cohomologySpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean#L168). The attribute's comment: “the spectral sequence, for an abelian sheaf on the total site, functorial in it”.
 
 > **Stacks 09WJ, the spectral sequence.** For an abelian sheaf `F` on the total site of a
 > simplicial-site situation there is a cohomological spectral sequence, functorial in `F`: the
@@ -191,7 +191,7 @@ def cohomologySpectralSequence :
     Sheaf S.totalTopology Ab.{u} ⥤ CohomologicalSpectralSequence Ab.{u} 1
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.cohomologySpectralSequence_pageOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean#L298). The attribute's comment: “the first page E\_1^\{p,q} = H^q(C\_p, F\_p) for an abelian sheaf, naturally in it”.
+**`CategoryTheory.SimplicialSiteSituation.cohomologySpectralSequence_pageOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean#L298). The attribute's comment: “the first page E\_1^\{p,q} = H^q(C\_p, F\_p) for an abelian sheaf, naturally in it”.
 
 > **Stacks 09WJ, the first page.** `E_1^{p,q} = H^q(C_p, F_p)`: the first page of the spectral
 > sequence of the simplicial-site situation at `(p, q)` is the sheaf cohomology of the restriction
@@ -207,7 +207,7 @@ def cohomologySpectralSequence_pageOneIso :
     S.pageOneFunctor n q ≅ S.componentCohomologyFunctor ⦋n⦌ q
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.isZero_pageOne_d_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean#L323). The attribute's comment: “the first differential d\_1^\{p,q} : E\_1^\{p,q} → E\_1^\{p+1,q}”.
+**`CategoryTheory.SimplicialSiteSituation.isZero_pageOne_d_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean#L323). The attribute's comment: “the first differential d\_1^\{p,q} : E\_1^\{p,q} → E\_1^\{p+1,q}”.
 
 > **Stacks 09WJ, the first differential.** `d_1^{p,q} : E_1^{p,q} → E_1^{p+1,q}`: the
 > differential of the first page out of the bidegree `(p, q)` lands in the bidegree `(p + 1, q)`,
@@ -226,7 +226,7 @@ theorem isZero_pageOne_d_of_ne (F : Sheaf S.totalTopology Ab.{u}) (p q p' q' : �
     (((S.cohomologySpectralSequence).obj F).page 1 le_rfl).d (p, q) (p', q') = 0
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.cohomologySpectralSequence_abutsTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean#L364). The attribute's comment: “the abutment H^\{p+q}(C\_total, F) for an abelian sheaf”.
+**`CategoryTheory.SimplicialSiteSituation.cohomologySpectralSequence_abutsTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean#L364). The attribute's comment: “the abutment H^\{p+q}(C\_total, F) for an abelian sheaf”.
 
 > **Stacks 09WJ, the convergence.** The spectral sequence of the simplicial-site situation
 > abuts to `H^{p+q}(C_total, F)`: its infinity page at `(p, q)` is the `p`-th graded piece of a
@@ -246,7 +246,7 @@ theorem cohomologySpectralSequence_abutsTo :
 
 [Tag 0H0V](https://stacks.math.columbia.edu/tag/0H0V) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.sectionsProductSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequence.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequence.lean#L362). The attribute's comment: “the spectral sequence of the filtration by the simplicial coordinate of the product totalization, for a complex that is not bounded below; the identification of the first page with `H^q(C_p, K_p)` is not carried”.
+**`CategoryTheory.SimplicialSiteSituation.sectionsProductSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequence.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequence.lean#L362). The attribute's comment: “the spectral sequence of the filtration by the simplicial coordinate of the product totalization, for a complex that is not bounded below; the identification of the first page with `H^q(C_p, K_p)` is not carried”.
 
 > **Stacks 0H0V**, the spectral sequence. For a cochain complex `Z^•` of abelian sheaves on
 > the total site of a simplicial-site situation, with no boundedness hypothesis, the filtration
@@ -260,7 +260,7 @@ theorem cohomologySpectralSequence_abutsTo :
 def sectionsProductSpectralSequence : CohomologicalSpectralSequence Ab.{u} 0
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.sectionsProductSpectralSequenceZeroPageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequence.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequence.lean#L372). The attribute's comment: “the zeroth page of the spectral sequence is `Γ(C_p, Z^q_p)`”.
+**`CategoryTheory.SimplicialSiteSituation.sectionsProductSpectralSequenceZeroPageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequence.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequence.lean#L372). The attribute's comment: “the zeroth page of the spectral sequence is `Γ(C_p, Z^q_p)`”.
 
 > **`E_0^{p,q} = Γ(C_p, Z^q_p)`**: the zeroth page of the spectral sequence of Stacks 0H0V is
 > the complex of sections over `C_p` of the restriction of `Z^q`.
@@ -275,7 +275,7 @@ def sectionsProductSpectralSequenceZeroPageIso (p : ℕ) (q : ℤ) :
       (S.componentSectionsFunctor ⦋p⦌).obj (Z.X q)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.sectionsProductSpectralSequenceOnePageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequence.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequence.lean#L381). The attribute's comment: “the first page of the spectral sequence is `H^q(Γ(C_p, Z^•_p))`”.
+**`CategoryTheory.SimplicialSiteSituation.sectionsProductSpectralSequenceOnePageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequence.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequence.lean#L381). The attribute's comment: “the first page of the spectral sequence is `H^q(Γ(C_p, Z^•_p))`”.
 
 > **`E_1^{p,q} = H^q(Γ(C_p, Z^•_p))`**: the first page of the spectral sequence of Stacks 0H0V
 > is the `q`-th cohomology of the complex of sections over `C_p` of the restriction of `Z^•`,
@@ -288,7 +288,7 @@ def sectionsProductSpectralSequenceOnePageIso (p : ℕ) (q : ℤ) :
         (ComplexShape.up ℤ)).obj Z).homology q
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.sectionsProductSpectralSequencePageOneAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean#L253). The attribute's comment: “the first page of the spectral sequence is `H^q(C_p, K_p)`, for a complex that is not bounded below”.
+**`CategoryTheory.SimplicialSiteSituation.sectionsProductSpectralSequencePageOneAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean#L253). The attribute's comment: “the first page of the spectral sequence is `H^q(C_p, K_p)`, for a complex that is not bounded below”.
 
 > **Stacks 0H0V, the first page: `E_1^{p,q} = H^q(C_p, K_p)`.** For `I^•` a K-injective complex
 > of abelian sheaves on the total site representing `K` in `D(C_total)`, the first page of the
@@ -309,7 +309,7 @@ def sectionsProductSpectralSequencePageOneAddEquiv
         ((S.componentRestrictionDerived ⦋p⦌).obj (DerivedCategory.Q.obj I))⟦q⟧)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.quasiIso_totalSectionsToProductTotal`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean#L313). The attribute's comment: “`Tot_π(A^{•,•}) = RΓ(C_total, K)` for a K-injective representative, as a quasi-isomorphism of complexes”.
+**`CategoryTheory.SimplicialSiteSituation.quasiIso_totalSectionsToProductTotal`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean#L313). The attribute's comment: “`Tot_π(A^{•,•}) = RΓ(C_total, K)` for a K-injective representative, as a quasi-isomorphism of complexes”.
 
 > **Stacks 0H0V, `Tot_π(A^{•,•}) = RΓ(C_total, K)`.** For `I^•` a K-injective complex of
 > abelian sheaves on the total site, the comparison from the complex of global sections
@@ -329,7 +329,7 @@ instance quasiIso_totalSectionsToProductTotal
     QuasiIso (S.totalSectionsToProductTotal I)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.sectionsProductTotalHomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean#L328). The attribute's comment: “`H^n(Tot_π(A^{•,•})) = H^n(C_total, K)` for a K-injective representative”.
+**`CategoryTheory.SimplicialSiteSituation.sectionsProductTotalHomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean#L328). The attribute's comment: “`H^n(Tot_π(A^{•,•})) = H^n(C_total, K)` for a K-injective representative”.
 
 > **Stacks 0H0V, `Tot_π(A^{•,•}) = RΓ(C_total, K)` degreewise on cohomology**:
 > `H^n(Tot_π(A^{•,•})) = H^n(C_total, K)`.
@@ -346,7 +346,7 @@ def sectionsProductTotalHomologyAddEquiv
         (DerivedCategory.Q.obj I)⟦n⟧)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.quasiIso_globalSectionsToProductTotal`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean#L355). The attribute's comment: “`Γ(C_total, I^•) = Tot_π(A^{•,•})` for a K-injective complex, as a quasi-isomorphism of complexes”.
+**`CategoryTheory.SimplicialSiteSituation.quasiIso_globalSectionsToProductTotal`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean#L355). The attribute's comment: “`Γ(C_total, I^•) = Tot_π(A^{•,•})` for a K-injective complex, as a quasi-isomorphism of complexes”.
 
 > **Stacks 0H0V, `Γ(C_total, I^•) = Tot_π(A^{•,•})`.** For `I^•` a K-injective complex of
 > abelian sheaves on the total site, the comparison from its complex of global sections to the
@@ -360,7 +360,7 @@ instance quasiIso_globalSectionsToProductTotal
     QuasiIso (S.globalSectionsToProductTotal I)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.unboundedSpectralSequence`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean#L369). The attribute's comment: “the spectral sequence of an arbitrary object of the unbounded derived category of the total site”.
+**`CategoryTheory.SimplicialSiteSituation.unboundedSpectralSequence`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean#L369). The attribute's comment: “the spectral sequence of an arbitrary object of the unbounded derived category of the total site”.
 
 > **Stacks 0H0V, the spectral sequence of an object `K` of `D(C_total)` with no boundedness
 > hypothesis**: the spectral sequence of
@@ -372,7 +372,7 @@ abbrev unboundedSpectralSequence (K : DerivedCategory (Sheaf S.totalTopology Ab.
     CohomologicalSpectralSequence Ab.{u} 0
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.unboundedSpectralSequencePageOneAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean#L381). The attribute's comment: “the first page is `E_1^{p,q} = H^q(C_p, K_p)`, for an arbitrary object of the unbounded derived category of the total site”.
+**`CategoryTheory.SimplicialSiteSituation.unboundedSpectralSequencePageOneAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean#L381). The attribute's comment: “the first page is `E_1^{p,q} = H^q(C_p, K_p)`, for an arbitrary object of the unbounded derived category of the total site”.
 
 > **Stacks 0H0V, the first page: `E_1^{p,q} = H^q(C_p, K_p)`** for an arbitrary object `K` of
 > `D(C_total)`.
@@ -390,7 +390,7 @@ def unboundedSpectralSequencePageOneAddEquiv
         ((S.componentRestrictionDerived ⦋p⦌).obj K)⟦q⟧)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.unboundedProductTotalHomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean#L398). The attribute's comment: “`H^n(Tot_π(A^{•,•})) = H^n(C_total, K)` for an arbitrary object of the unbounded derived category of the total site”.
+**`CategoryTheory.SimplicialSiteSituation.unboundedProductTotalHomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceUnbounded.lean#L398). The attribute's comment: “`H^n(Tot_π(A^{•,•})) = H^n(C_total, K)` for an arbitrary object of the unbounded derived category of the total site”.
 
 > **Stacks 0H0V, `Tot_π(A^{•,•}) = RΓ(C_total, K)`** for an arbitrary object `K` of
 > `D(C_total)`, degreewise on cohomology.
@@ -407,7 +407,7 @@ def unboundedProductTotalHomologyAddEquiv
 
 [Tag 0H0W](https://stacks.math.columbia.edu/tag/0H0W) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.subsingleton_hom_totalIntegerSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/VanishingCohomology.lean, line 704](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/VanishingCohomology.lean#L704). The attribute's comment: “part (1): vanishing of H^0”.
+**`CategoryTheory.SimplicialSiteSituation.subsingleton_hom_totalIntegerSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/VanishingCohomology.lean, line 704](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/VanishingCohomology.lean#L704). The attribute's comment: “part (1): vanishing of H^0”.
 
 > **Stacks 0H0W (1).** In the situation of Stacks 09WE, let `K` be an object of
 > `D(C_total)`. If `H^{-p}(C_p, K_p) = 0` for all `p ≥ 0`, then `H^0(C_total, K) = 0`.
@@ -428,7 +428,7 @@ theorem subsingleton_hom_totalIntegerSheaf
       S.totalIntegerSheaf ⟶ K)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.subsingleton_hom_totalIntegerSheaf_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/VanishingCohomology.lean, line 745](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/VanishingCohomology.lean#L745). The attribute's comment: “part (2): vanishing of RΓ”.
+**`CategoryTheory.SimplicialSiteSituation.subsingleton_hom_totalIntegerSheaf_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/VanishingCohomology.lean, line 745](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/VanishingCohomology.lean#L745). The attribute's comment: “part (2): vanishing of RΓ”.
 
 > **Stacks 0H0W (2).** In the situation of Stacks 09WE, let `K` be an object of
 > `D(C_total)`. If `RΓ(C_p, K_p) = 0` for all `p ≥ 0`, then `RΓ(C_total, K) = 0`.
@@ -451,7 +451,7 @@ theorem subsingleton_hom_totalIntegerSheaf_shift
 
 [Tag 0DBZ](https://stacks.math.columbia.edu/tag/0DBZ) in the Stacks Project.
 
-**`Stacks.Cohomology.SimplicialComponent.cohomologyObj_iso_component`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSumNaturality/ComponentCohomology.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSumNaturality/ComponentCohomology.lean#L141).
+**`Stacks.Cohomology.SimplicialComponent.cohomologyObj_iso_component`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSumNaturality/ComponentCohomology.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSumNaturality/ComponentCohomology.lean#L142).
 
 > **Stacks 0DBZ.** Cohomology over an object of one simplicial component agrees with cohomology
 > over the corresponding object of the total site, with coefficients restricted to that component.
@@ -483,4 +483,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.8, Tag 0D76](https://stacks.math.columbia.edu/tag/0D76)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

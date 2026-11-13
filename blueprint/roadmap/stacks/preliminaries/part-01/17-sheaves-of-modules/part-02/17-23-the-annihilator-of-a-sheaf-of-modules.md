@@ -8,13 +8,13 @@ proof: formalized
 
 # 17.23 The annihilator of a sheaf of modules
 
-Section 17.23 of the Stacks Project, [Tag 0H2G](https://stacks.math.columbia.edu/tag/0H2G). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 17.23 of the Stacks Project, [Tag 0H2G](https://stacks.math.columbia.edu/tag/0H2G). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H2H, a definition
 
 [Tag 0H2H](https://stacks.math.columbia.edu/tag/0H2H) in the Stacks Project.
 
-**`Stacks.SheafOfModules.annihilatorSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/Annihilator.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/Annihilator.lean#L125). References: EGA 0 (5.3.7), “annihilator def”.
+**`Stacks.SheafOfModules.annihilatorSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/Annihilator.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/Annihilator.lean#L125). References: EGA 0 (5.3.7), “annihilator def”.
 
 > **Stacks Project, Tag 0H2H.** The annihilator of an `𝒪_X`-module `F` is the
 > subsheaf of `𝒪_X` consisting of the local functions that act as zero on `F`.  Equivalently,
@@ -30,7 +30,7 @@ noncomputable def annihilatorSheaf :
 
 [Tag 0H2I](https://stacks.math.columbia.edu/tag/0H2I) in the Stacks Project.
 
-**`Stacks.SheafOfModules.stalk_annihilatorSheaf_le_annihilator_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/Annihilator.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/Annihilator.lean#L257).
+**`Stacks.SheafOfModules.stalk_annihilatorSheaf_le_annihilator_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/Annihilator.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/Annihilator.lean#L257).
 
 > **Stacks Project, Tag 0H2I.** The germs of local sections of the annihilator
 > sheaf at `x` annihilate the stalk `Fₓ`.
@@ -50,7 +50,7 @@ theorem stalk_annihilatorSheaf_le_annihilator_stalk (x : X) :
 
 [Tag 0H2J](https://stacks.math.columbia.edu/tag/0H2J) in the Stacks Project.
 
-**`Stacks.SheafOfModules.annihilatorSheaf_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorStalk.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorStalk.lean#L189).
+**`Stacks.SheafOfModules.annihilatorSheaf_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorStalk.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorStalk.lean#L189).
 
 > **Stacks Project, Tag 0H2J.** For `F` of finite type, the germs at `x` of the local sections
 > of the annihilator sheaf of `F` are exactly the elements of the local ring `O_{X,x}` that
@@ -74,7 +74,7 @@ theorem annihilatorSheaf_stalk [F.IsFiniteType] (x : X) :
 
 [Tag 0H2K](https://stacks.math.columbia.edu/tag/0H2K) in the Stacks Project.
 
-**`Stacks.SheafOfModules.quotientRingSheafModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean#L184). The attribute's comment: “the descended module structure”.
+**`Stacks.SheafOfModules.quotientRingSheafModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean#L184). The attribute's comment: “the descended module structure”.
 
 > **Stacks Project, Tag 0H2K.** The canonical `𝒪_X/I`-module structure on a sheaf of modules
 > annihilated by the ideal subsheaf `I`: its underlying presheaf of abelian groups is that of `F`,
@@ -85,7 +85,7 @@ noncomputable def quotientRingSheafModule (hI : I ≤ annihilatorSheaf X F) :
     SheafOfModules.{v} (quotientRingSheaf X I).sheaf
 ```
 
-**`Stacks.SheafOfModules.quotientRingSheafModule_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean#L236). The attribute's comment: “compatibility with the given action”.
+**`Stacks.SheafOfModules.quotientRingSheafModule_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean#L236). The attribute's comment: “compatibility with the given action”.
 
 > **Stacks Project, Tag 0H2K.** The descended action is compatible with the given one:
 > restricting scalars along the quotient map returns `F`.
@@ -96,7 +96,7 @@ theorem quotientRingSheafModule_restrictScalars (hI : I ≤ annihilatorSheaf X F
       (quotientRingSheafModule X I F hI) = F
 ```
 
-**`Stacks.SheafOfModules.quotientRingSheafModule_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean#L251). The attribute's comment: “uniqueness of the descended action”.
+**`Stacks.SheafOfModules.quotientRingSheafModule_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean#L251). The attribute's comment: “uniqueness of the descended action”.
 
 > **Stacks Project, Tag 0H2K.** The descended action is the only `𝒪_X/I`-action whose
 > restriction of scalars along the quotient map is the given `𝒪_X`-action.
@@ -108,7 +108,7 @@ theorem quotientRingSheafModule_unique (hI : I ≤ annihilatorSheaf X F)
     G = quotientRingSheafModule X I F hI
 ```
 
-**`Stacks.SheafOfModules.quotientRingSheafModule_stalk_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean#L393). The attribute's comment: “the action on stalks”.
+**`Stacks.SheafOfModules.quotientRingSheafModule_stalk_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorQuotient.lean#L393). The attribute's comment: “the action on stalks”.
 
 > **Stacks Project, Tag 0H2K.** On stalks the descended action is the ordinary action of the
 > quotient ring `𝒪_{X,x}/I_x` on the stalk `F_x`, which the stalk of `I` annihilates: the class of a
@@ -128,7 +128,7 @@ theorem quotientRingSheafModule_stalk_smul (F : SheafOfModules.{u} (structureShe
 
 [Tag 0H2L](https://stacks.math.columbia.edu/tag/0H2L) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isCoherent_annihilatorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorCoherent.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorCoherent.lean#L75).
+**`Stacks.SheafOfModules.isCoherent_annihilatorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorCoherent.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/InvertibleAndOperators/AnnihilatorCoherent.lean#L75).
 
 > **Stacks Project, Tag 0H2L.** If the structure sheaf of a ringed space and an `𝒪_X`-module
 > `F` are coherent, then the annihilator of `F` is coherent.
@@ -146,4 +146,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 17.23, Tag 0H2G](https://stacks.math.columbia.edu/tag/0H2G)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

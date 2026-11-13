@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.curvesH01_isOpenSubstack_and_factors_iff_and_over_field_iff, AlgebraicGeometry.curvesH01_isOpenSubstack_and_factors_iff_and_properOverField_iff, AlgebraicGeometry.CurveFamily.isCohenMacaulayDimOneFamily_of_hasUniversallyBijectiveGlobalFunctions, AlgebraicGeometry.CurveFamily.isIso_structureSharp_and_baseChange_of_residueField, AlgebraicGeometry.CurveFamily.isFiniteLocallyFreeOnSite_firstDirectImage_of_residueField, AlgebraicGeometry.CurveFamily.nonempty_modulePullback_firstDirectImage_iso_of_residueField, AlgebraicGeometry.curvesGenus_isOpenSubstack_and_factors_iff_and_decomposition
+lean: AlgebraicGeometry.curvesH01_isOpenSubstack_and_factors_iff_and_over_field_iff, AlgebraicGeometry.curvesH01_isOpenSubstack_and_factors_iff_and_properOverField_iff, AlgebraicGeometry.CurveFamily.isCohenMacaulayDimOneFamily_of_hasUniversallyBijectiveGlobalFunctions, AlgebraicGeometry.CurveFamily.isIso_structureSharp_and_baseChange_of_residueField, AlgebraicGeometry.CurveFamily.isFiniteLocallyFreeOnSite_firstDirectImage_of_residueField, AlgebraicGeometry.CurveFamily.isIso_firstDirectImageBaseChangeMap_of_residueField, AlgebraicGeometry.curvesGenus_isOpenSubstack_and_factors_iff_and_decomposition
 statement: formalized
 proof: formalized
 ---
 
 # 109.9 Curves of a given genus
 
-Section 109.9 of the Stacks Project, [Tag 0E6H](https://stacks.math.columbia.edu/tag/0E6H). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 109.9 of the Stacks Project, [Tag 0E6H](https://stacks.math.columbia.edu/tag/0E6H). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E6I, a lemma
 
 [Tag 0E6I](https://stacks.math.columbia.edu/tag/0E6I) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesH01_isOpenSubstack_and_factors_iff_and_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesH01OpenSubstack.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesH01OpenSubstack.lean#L68).
+**`AlgebraicGeometry.curvesH01_isOpenSubstack_and_factors_iff_and_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesH01OpenSubstack.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesH01OpenSubstack.lean#L68).
 
 > There is an open substack `Curves^{h0,1} ⊂ Curves` of the stack of curves — the strictly full
 > subcategory of families with `f_*𝒪_X = 𝒪_S` universally and fibres of dimension `1` is invariant
@@ -63,7 +63,7 @@ theorem curvesH01_isOpenSubstack_and_factors_iff_and_over_field_iff :
           topologicalKrullDim ((BigFppfOver.toScheme B integerBase hZ).obj T) = 1))
 ```
 
-**`AlgebraicGeometry.curvesH01_isOpenSubstack_and_factors_iff_and_properOverField_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesH01Unconditional.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesH01Unconditional.lean#L69). The attribute's comment: “the open substack Curves^\{h0,1} of Curves (closed under isomorphisms, inclusion representable by algebraic spaces and an open immersion), with (1) for a family of curves f : X → S, the classifying morphism factors through it iff f\_*O\_X = O\_S, universally, and the fibres have dimension 1, and (2) for a scheme X proper over a field k with dim(X) ≤ 1, the classifying morphism Spec(k) → Curves factors through it iff H^0(X, O\_X) = k and dim(X) = 1. Unconditional: 0E0R at i = 0 and 0E6B (a) are proved, not assumed”.
+**`AlgebraicGeometry.curvesH01_isOpenSubstack_and_factors_iff_and_properOverField_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesH01Unconditional.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesH01Unconditional.lean#L69). The attribute's comment: “the open substack Curves^\{h0,1} of Curves (closed under isomorphisms, inclusion representable by algebraic spaces and an open immersion), with (1) for a family of curves f : X → S, the classifying morphism factors through it iff f\_*O\_X = O\_S, universally, and the fibres have dimension 1, and (2) for a scheme X proper over a field k with dim(X) ≤ 1, the classifying morphism Spec(k) → Curves factors through it iff H^0(X, O\_X) = k and dim(X) = 1. Unconditional: 0E0R at i = 0 and 0E6B (a) are proved, not assumed”.
 
 > `Curves^{h0,1}`, the strictly full subcategory of `Curves` of families of curves `f : X → S`
 > with `f_*𝒪_X = 𝒪_S`, this holding after arbitrary base change, and whose fibres have dimension `1`
@@ -113,7 +113,7 @@ theorem curvesH01_isOpenSubstack_and_factors_iff_and_properOverField_iff :
 
 [Tag 0E6J](https://stacks.math.columbia.edu/tag/0E6J) in the Stacks Project.
 
-**`AlgebraicGeometry.CurveFamily.isCohenMacaulayDimOneFamily_of_hasUniversallyBijectiveGlobalFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesH01.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesH01.lean#L469). The attribute's comment: “the objects of Curves^\{h0,1} (f\_*O\_X = O\_S universally and fibres of dimension 1) lie in Curves^\{CM,1} (Cohen-Macaulay of relative dimension 1)”.
+**`AlgebraicGeometry.CurveFamily.isCohenMacaulayDimOneFamily_of_hasUniversallyBijectiveGlobalFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesH01.lean, line 469](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesH01.lean#L469). The attribute's comment: “the objects of Curves^\{h0,1} (f\_*O\_X = O\_S universally and fibres of dimension 1) lie in Curves^\{CM,1} (Cohen-Macaulay of relative dimension 1)”.
 
 > **Stacks 0E6J.** `Curves^{h0,1} ⊂ Curves^{CM,1}`: a family of curves `f : X ⟶ S` with
 > `f_*𝒪_X = 𝒪_S`, universally, and all of whose fibres have dimension one is Cohen–Macaulay of
@@ -136,7 +136,7 @@ theorem CurveFamily.isCohenMacaulayDimOneFamily_of_hasUniversallyBijectiveGlobal
 
 [Tag 0E1J](https://stacks.math.columbia.edu/tag/0E1J) in the Stacks Project.
 
-**`AlgebraicGeometry.CurveFamily.isIso_structureSharp_and_baseChange_of_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyFirstHigherDirectImage.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyFirstHigherDirectImage.lean#L190). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.CurveFamily.isIso_structureSharp_and_baseChange_of_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyFirstHigherDirectImage.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyFirstHigherDirectImage.lean#L192). The attribute's comment: “(1)”.
 
 > Let `f : X → S` be a family of curves with `κ(s) = H⁰(X_s, 𝒪_{X_s})` for every point `s ∈ S`.
 > Then `f_*𝒪_X = 𝒪_S` — the structure map `𝒪_S ⟶ f_*𝒪_X` is an isomorphism — and this holds
@@ -151,7 +151,7 @@ theorem isIso_structureSharp_and_baseChange_of_residueField (X : CurveFamily B h
         IsIso (Space.structureSharp B integerBase hZ (pullback.snd X.toBase g))
 ```
 
-**`AlgebraicGeometry.CurveFamily.isFiniteLocallyFreeOnSite_firstDirectImage_of_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyFirstHigherDirectImage.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyFirstHigherDirectImage.lean#L203). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.CurveFamily.isFiniteLocallyFreeOnSite_firstDirectImage_of_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyFirstHigherDirectImage.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyFirstHigherDirectImage.lean#L205). The attribute's comment: “(2)”.
 
 > Let `f : X → S` be a family of curves with `κ(s) = H⁰(X_s, 𝒪_{X_s})` for every point `s ∈ S`.
 > Then `R¹f_*𝒪_X` is a finite locally free `𝒪_S`-module: every object of the small étale site of
@@ -163,25 +163,25 @@ theorem isFiniteLocallyFreeOnSite_firstDirectImage_of_residueField (X : CurveFam
     SheafOfModules.IsFiniteLocallyFreeOnSite (X.firstDirectImage B hZ)
 ```
 
-**`AlgebraicGeometry.CurveFamily.nonempty_modulePullback_firstDirectImage_iso_of_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyFirstHigherDirectImage.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyFirstHigherDirectImage.lean#L214). The attribute's comment: “(3)”.
+**`AlgebraicGeometry.CurveFamily.isIso_firstDirectImageBaseChangeMap_of_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyFirstHigherDirectImage.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyFirstHigherDirectImage.lean#L217). The attribute's comment: “(3)”.
 
 > Let `f : X → S` be a family of curves with `κ(s) = H⁰(X_s, 𝒪_{X_s})` for every point `s ∈ S`.
 > For every morphism `h : S' → S`, with `f' : X' → S'` the base change — that is, for every
 > morphism of families of curves `a : X' ⟶ X`, whose square is cartesian, over `h = a.baseMap` —
-> we have `h^*(R¹f_*𝒪_X) ≅ R¹f'_*𝒪_{X'}`.
+> the base change map `h^*(R¹f_*𝒪_X) ⟶ R¹f'_*𝒪_{X'}`
+> (`AlgebraicGeometry.CurveFamily.firstDirectImageBaseChangeMap`) is an isomorphism.
 
 ```lean
-theorem nonempty_modulePullback_firstDirectImage_iso_of_residueField (X : CurveFamily B hZ)
+theorem isIso_firstDirectImageBaseChangeMap_of_residueField (X : CurveFamily B hZ)
     (h : X.HasResidueFieldGlobalFunctions) (F : CurveFamily B hZ) (a : F ⟶ X) :
-    Nonempty ((Space.modulePullback B integerBase hZ (schemeSpaceMap a.baseMap)).obj
-        (X.firstDirectImage B hZ) ≅ F.firstDirectImage B hZ)
+    IsIso (firstDirectImageBaseChangeMap a)
 ```
 
 ## Tag 0E6K, a lemma
 
 [Tag 0E6K](https://stacks.math.columbia.edu/tag/0E6K) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesGenus_isOpenSubstack_and_factors_iff_and_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGenusDecomposition.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGenusDecomposition.lean#L144).
+**`AlgebraicGeometry.curvesGenus_isOpenSubstack_and_factors_iff_and_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGenusDecomposition.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesGenusDecomposition.lean#L144).
 
 > **Stacks 0E6K.** There is a decomposition into open and closed substacks
 > `Curves^{h0,1} = ∐_{g ≥ 0} Curves_g`, where
@@ -251,4 +251,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 109.9, Tag 0E6H](https://stacks.math.columbia.edu/tag/0E6H)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

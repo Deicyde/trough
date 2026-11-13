@@ -7,7 +7,7 @@ statement: formalized
 
 # Successive coefficients of starlike functions
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/successive-coefficients-of-starlike-functions/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/successive-coefficients-of-starlike-functions/index.html).
 
 ## Normalized univalent functions (the class $S$)
 
@@ -19,7 +19,7 @@ satisfies $f(0) = 0$ and $f'(0) = 1$, and is injective on $\mathbb{D}$.
 
 - Hayman and Lingham, Research Problems in Function Theory (2018), Problem 6.46, https://arxiv.org/abs/1809.07200.
 
-Formalized by `MathlibExt.Analysis.StarlikeCoefficientSuccessiveDifferenceWanted.IsInClassS`, a definition declared in [WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/successive-coefficients-of-starlike-functions/index.html#is-in-class-s).
+Formalized by `MathlibExt.Analysis.StarlikeCoefficientSuccessiveDifferenceWanted.IsInClassS`, a definition declared in [WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/successive-coefficients-of-starlike-functions/index.html#is-in-class-s).
 
 ## Starlike functions on the unit disc
 
@@ -31,7 +31,7 @@ $z \ne 0$ in $\mathbb{D}$, $f(z) \ne 0$ and $\operatorname{Re}\bigl(z f'(z) / f(
 
 - Hayman, Research Problems in Function Theory (2018), Problem 6.46, https://arxiv.org/abs/1809.07200.
 
-Formalized by `MathlibExt.Analysis.StarlikeCoefficientSuccessiveDifferenceWanted.IsStarlike`, a definition declared in [WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/successive-coefficients-of-starlike-functions/index.html#is-starlike).
+Formalized by `MathlibExt.Analysis.StarlikeCoefficientSuccessiveDifferenceWanted.IsStarlike`, a definition declared in [WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/successive-coefficients-of-starlike-functions/index.html#is-starlike).
 
 ## Hayman's successive coefficient problem for starlike functions
 
@@ -46,7 +46,7 @@ $\bigl| |a_{n+1}| - |a_n| \bigr| \le 1$ for every natural number $n \ge 1$.
 
 - Hayman and Lingham, Research Problems in Function Theory (2018), Problem 6.46, https://arxiv.org/abs/1809.07200.
 
-Formalized by `MathlibExt.Analysis.StarlikeCoefficientSuccessiveDifferenceWanted.conjecture`, a definition declared in [WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/successive-coefficients-of-starlike-functions/index.html#conjecture).
+Formalized by `MathlibExt.Analysis.StarlikeCoefficientSuccessiveDifferenceWanted.conjecture`, a definition declared in [WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/successive-coefficients-of-starlike-functions/index.html#conjecture).
 
 ## Leung's theorem on successive coefficients of starlike functions
 
@@ -65,7 +65,7 @@ independently by D. H. Hamilton.
 
 - Moduli difference of initial inverse logarithmic coefficients for starlike and convex functions (2026), arXiv:2603.17600, https://arxiv.org/abs/2603.17600.
 
-Stated but not proved: `MathlibExt.Analysis.StarlikeCoefficientSuccessiveDifferenceWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/successive-coefficients-of-starlike-functions/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Analysis.StarlikeCoefficientSuccessiveDifferenceWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/StarlikeCoefficientSuccessiveDifferenceWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/successive-coefficients-of-starlike-functions/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -74,4 +74,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Successive coefficients of starlike functions](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/successive-coefficients-of-starlike-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/geometric-function-theory/successive-coefficients-of-starlike-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/geometric-function-theory/successive-coefficients-of-starlike-functions)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Error term in the prime number theorem
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/error-term-in-the-prime-number-theorem/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/error-term-in-the-prime-number-theorem/index.html).
 
 ## Prime number theorem with error term for Chebyshev's $\theta$
 
@@ -20,7 +20,7 @@ $x \to \infty$.
 
 - Julian Ransford, "A Sum of Gcd's over Friable Numbers", Journal of Integer Sequences 19 (2016), Prime Number Theorem at lines 288–292; URL: https://cs.uwaterloo.ca/journals/JIS/VOL19/Ransford/ransford2.tex
 
-Stated but not proved: `MetaMathlibExt.PrimeNumberTheorem.prime_number_theorem_chebyshev_theta_error` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ChebyshevThetaPNTErrorWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/ChebyshevThetaPNTErrorWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/error-term-in-the-prime-number-theorem/index.html#prime-number-theorem-chebyshev-theta-err).
+Stated but not proved: `MetaMathlibExt.PrimeNumberTheorem.prime_number_theorem_chebyshev_theta_error` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ChebyshevThetaPNTErrorWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/ChebyshevThetaPNTErrorWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/error-term-in-the-prime-number-theorem/index.html#prime-number-theorem-chebyshev-theta-err).
 
 ## Dusart's bound for $\vartheta$ and $\psi$ from a zero-free region
 
@@ -38,7 +38,7 @@ $$\max\bigl(|\vartheta(x) - x|, |\psi(x) - x|\bigr) < x \sqrt{8/\pi}\, X^{1/2} e
 
 - Pierre Dusart, *Estimates of ψ, θ for large values of x without the Riemann hypothesis*, Math. Comp. 85 (2016), 875–888, Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.dusart2016_tail_theorem` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/Dusart2016TailWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/Dusart2016TailWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/error-term-in-the-prime-number-theorem/index.html#dusart2016-tail-theorem).
+Stated but not proved: `MetaMathlibExt.dusart2016_tail_theorem` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/Dusart2016TailWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/Dusart2016TailWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/error-term-in-the-prime-number-theorem/index.html#dusart2016-tail-theorem).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Error term in the prime number theorem](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/error-term-in-the-prime-number-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/error-term-in-the-prime-number-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/error-term-in-the-prime-number-theorem)

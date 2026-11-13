@@ -8,7 +8,7 @@ proof: formalized
 
 # Riemannian volume
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/riemannian-volume/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/riemannian-volume/index.html).
 
 ## Normalized Hausdorff measure
 
@@ -22,7 +22,7 @@ With this normalization it agrees with Lebesgue measure on $\mathbb{R}^n$ (class
 isodiametric inequality); the case $n = 1$ is checked by the computation of the Riemannian volume
 of the real line.
 
-Formalized by `Manifold.normalizedHausdorffMeasure`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/Volume.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/Volume.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/riemannian-volume/index.html#normalized-hausdorff-measure).
+Formalized by `Manifold.normalizedHausdorffMeasure`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/Volume.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/Volume.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/riemannian-volume/index.html#normalized-hausdorff-measure).
 
 ## Riemannian volume
 
@@ -37,7 +37,7 @@ The manifold and Riemannian hypotheses are not used in the formula; they tie the
 model of $M$ and restrict the definition to the setting in which, classically, this measure is the
 Riemannian volume, given in charts by the density $\sqrt{\det(g_{ij})}$ against Lebesgue measure.
 
-Formalized by `Manifold.riemannianVolume`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/Volume.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/Volume.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/riemannian-volume/index.html#riemannian-volume).
+Formalized by `Manifold.riemannianVolume`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/Volume.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/Volume.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/riemannian-volume/index.html#riemannian-volume).
 
 ## The Riemannian volume of the real line is Lebesgue measure
 
@@ -47,7 +47,7 @@ space) and with its usual distance, which is the Riemannian distance, is Lebesgu
 
 This is a normalization check of the Riemannian volume in dimension one.
 
-Formalized by `Manifold.riemannianVolume_real`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/Volume.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/Volume.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/riemannian-volume/index.html#riemannian-volume-real).
+Formalized by `Manifold.riemannianVolume_real`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/Volume.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/Volume.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/riemannian-volume/index.html#riemannian-volume-real).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Riemannian volume](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/riemannian-volume/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/riemannian-geometry/riemannian-volume)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/riemannian-geometry/riemannian-volume)

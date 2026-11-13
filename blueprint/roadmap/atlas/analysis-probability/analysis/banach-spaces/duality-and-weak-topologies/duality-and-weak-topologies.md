@@ -7,7 +7,7 @@ statement: formalized
 
 # Duality, weak topologies and reflexivity: its own results
 
-10 results, 7 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html).
+10 results, 7 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html).
 
 Hahn–Banach, annihilators and bipolars, weak and weak-star convergence and topologies, Goldstine, James, Eberlein–Šmulian, Krein–Šmulian, Banach–Alaoglu, Mazur's lemma, Banach limits, Hamel bases and discontinuous functionals, F-spaces and locally convex spaces, Choquet theory.
 
@@ -22,7 +22,7 @@ is exactly the closed unit ball of $E^{**}$.
 
 - H. H. Goldstine, Weakly complete Banach spaces, Duke Math. J. 4 (1938), DOI 10.1215/S0012-7094-38-00410-7; Rudin, Functional Analysis, 2nd ed.; Lean states `RCLike` field case with metric closedBall formulation.
 
-Formalized by `MetaMathlibExt.goldstine`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/BanachSpace.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/BanachSpace.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#goldstine).
+Formalized by `MetaMathlibExt.goldstine`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/BanachSpace.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/BanachSpace.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#goldstine).
 
 ## Continuous linear functionals on the space of all real functions
 
@@ -41,7 +41,7 @@ $\mathbb{R}^H$ is strictly larger than the span of the evaluations.
 
 - S. Banach and S. Mazur, Problem 10 of the Scottish Book, stated as a theorem in the Scottish Book typescript.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook10Wanted.continuousLinearFunctionalFiniteEvaluations` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook10Wanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook10Wanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#continuous-linear-functional-finite-eval).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook10Wanted.continuousLinearFunctionalFiniteEvaluations` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook10Wanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook10Wanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#continuous-linear-functional-finite-eval).
 
 ## Eberlein–Šmulian theorem
 
@@ -54,7 +54,7 @@ weakly to a point of the subset.
 
 - W. F. Eberlein, Weak Compactness in Banach Spaces, PNAS 33 (1947), 51–53, DOI 10.1073/pnas.33.3.51, and V. Smulian (1947); Dunford-Schwartz, Linear Operators I, 1958, V.5-6; Lean states `RCLike` Banach case with `IsCompact ↔ IsSeqCompact` in `WeakSpace`.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BanachSpaceWanted.eberlein_smulian`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/EberleinSmulian.lean, line 807](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/EberleinSmulian.lean#L807). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#eberlein-smulian).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BanachSpaceWanted.eberlein_smulian`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/EberleinSmulian.lean, line 807](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/EberleinSmulian.lean#L807). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#eberlein-smulian).
 
 ## Dunford–Pettis weak compactness criterion
 
@@ -69,7 +69,7 @@ classes $\{[f_i] : i \in \iota\}$ in the weak topology of $L^1(\mu)$ is weakly c
 
 - N. Dunford and B. J. Pettis, Linear Operations on Summable Functions, Trans. Amer. Math. Soc. 47 (1940), 323–392, DOI 10.1090/S0002-9947-1940-0002020-4, criterion for weak compactness in `L¹`; Dunford-Schwartz IV; Lean states finite-measure real `L¹` specialization with weak-space closure characterization.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.DunfordPettisWanted.dunford_pettis_compactness`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/DunfordPettis.lean, line 1234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/DunfordPettis.lean#L1234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#dunford-pettis-compactness).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.DunfordPettisWanted.dunford_pettis_compactness`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/DunfordPettis.lean, line 1234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/DunfordPettis.lean#L1234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#dunford-pettis-compactness).
 
 ## Existence of Banach limits
 
@@ -83,7 +83,7 @@ to $l$.
 
 - S. Banach, Theorie des operations lineaires, 1932, definition of generalised limit; G. Lorentz, Acta Math. 80 (1948) 167-190; Lean formalizes ℓ∞ via `BoundedContinuousFunction ℕ ℝ` and real field `ℝ` with all four classical axioms.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BanachLimit.banach_limit`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/BanachLimit.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/BanachLimit.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#banach-limit).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BanachLimit.banach_limit`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/BanachLimit.lean, line 397](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/BanachLimit.lean#L397). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#banach-limit).
 
 ## Josefson–Nissenzweig theorem
 
@@ -100,7 +100,7 @@ and Banach-limit/Rademacher route of Hagler--Johnson (1977) and Behrends (1995).
 
 - B. Josefson, Weak sequential convergence in the dual of a Banach space does not imply norm convergence, Bull. Amer. Math. Soc. 81 (1975), 166–168, DOI 10.1090/S0002-9904-1975-13691-3; and A. Nissenzweig, w* sequential convergence, Israel J. Math. 22 (1975), 266–272, DOI 10.1007/BF02761594, Josefson-Nissenzweig theorem; Diestel, Sequences and Series; Lean states `RCLike` infinite-dimensional Banach case with `‖φ n‖=1` and pointwise weak-star nullness.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.JosefsonNissenzweigWanted.josefson_nissenzweig`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/JosefsonNissenzweig.lean, line 1707](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/JosefsonNissenzweig.lean#L1707). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#josefson-nissenzweig).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.JosefsonNissenzweigWanted.josefson_nissenzweig`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/JosefsonNissenzweig.lean, line 1675](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/JosefsonNissenzweig.lean#L1675). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#josefson-nissenzweig).
 
 ## Krein–Smulian theorem
 
@@ -113,7 +113,7 @@ $\{\varphi \in C : \|\varphi\| \le r\}$ is weak-star closed.
 
 - M. Krein and V. Smulian, Ann. of Math. 41 (1940) 556-583; Dunford-Schwartz I; Lean states `RCLike` Banach case with `Convex ℝ s` and closedBall intersections.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BanachSpaceWanted.krein_smulian`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/KreinSmulian.lean, line 800](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/KreinSmulian.lean#L800). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#krein-smulian).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BanachSpaceWanted.krein_smulian`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/KreinSmulian.lean, line 782](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/KreinSmulian.lean#L782). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#krein-smulian).
 
 ## Mazur's Problem 24: additive functionals measurable along curves are continuous
 
@@ -127,7 +127,7 @@ then $F$ is continuous.
 
 - S. Mazur, Problem 24 of the Scottish Book (prize: two small beers). Solved affirmatively by I. Labuda and R. D. Mauldin, "Problem 24 of the Scottish Book concerning additive functionals", Colloquium Mathematicum 48, as quoted in Ger (2016); the proof covers additive operators into a Hausdorff topological vector space.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook24Wanted.additiveFunctionalMeasurableOnCurvesContinuous` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook24Wanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook24Wanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#additive-functional-measurable-on-curves).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook24Wanted.additiveFunctionalMeasurableOnCurvesContinuous` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook24Wanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook24Wanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#additive-functional-measurable-on-curves).
 
 ## Nearest points in reflexive Banach spaces
 
@@ -140,7 +140,7 @@ $\|x_0 - y_0\| = \inf_{y \in C} \|x_0 - y\|$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Normed linear spaces and Banach spaces; Banach lattices), problem `ma_proofbench_l2_64`.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ReflexiveBanachNearestPointWanted.exists_norm_sub_eq_iInf_of_reflexive_of_convex_of_isClosed` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ReflexiveBanachNearestPointWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ReflexiveBanachNearestPointWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#exists-norm-sub-eq-i-inf-of-reflexive-of).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ReflexiveBanachNearestPointWanted.exists_norm_sub_eq_iInf_of_reflexive_of_convex_of_isClosed` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ReflexiveBanachNearestPointWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ReflexiveBanachNearestPointWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#exists-norm-sub-eq-i-inf-of-reflexive-of).
 
 ## Principle of local reflexivity
 
@@ -161,7 +161,7 @@ bounds (the elementary proof in Albiac–Kalton, *Topics in Banach Space Theory*
 
 - J. Lindenstrauss and H. Rosenthal, Israel J. Math. 7 (1969) 325-349, principle of local reflexivity; Johnson-Rosenthal-Zippin 1971 refinements; Albiac and Kalton, Topics in Banach Space Theory; Lean states `RCLike` Banach finite- dimensional `M, N` version with `(1+ε)`-isometry and pairing preservation.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.LocalReflexivityWanted.principle_of_local_reflexivity`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/LocalReflexivity.lean, line 1591](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/LocalReflexivity.lean#L1591). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#principle-of-local-reflexivity).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.LocalReflexivityWanted.principle_of_local_reflexivity`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/LocalReflexivity.lean, line 1582](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/LocalReflexivity.lean#L1582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html#principle-of-local-reflexivity).
 
 ## Depends on
 
@@ -170,4 +170,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Duality, weak topologies and reflexivity](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/banach-spaces/duality-and-weak-topologies)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/banach-spaces/duality-and-weak-topologies)

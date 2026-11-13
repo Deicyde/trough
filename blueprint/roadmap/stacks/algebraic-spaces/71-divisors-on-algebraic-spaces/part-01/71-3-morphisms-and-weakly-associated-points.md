@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.weaklyAssociatedPoints_modulePushforward_subset_image_of_isAffineHom, AlgebraicGeometry.Space.affinePushforwardWeaklyAssociatedImage, AlgebraicGeometry.Space.weaklyAssociatedPoints_modulePushforward_eq_image_of_isAffineHom_locallyNoetherian, AlgebraicGeometry.Space.weaklyAssociatedPoints_modulePushforward_eq_image_of_isAffineHom, AlgebraicGeometry.Space.weaklyAssociatedPoints_modulePushforward_eq_image_of_isFinite, AlgebraicGeometry.Space.isWeaklyAssociatedPoint_modulePullback, AlgebraicGeometry.Space.isWeaklyAssociatedPoint_fibre_of_refines, AlgebraicGeometry.Space.isWeaklyAssociatedPoint_of_fieldBaseChange
+lean: AlgebraicGeometry.Space.weaklyAssociatedPoints_modulePushforward_subset_image_of_isAffineHom, AlgebraicGeometry.Space.affinePushforwardWeaklyAssociatedImage, AlgebraicGeometry.Space.weaklyAssociatedPoints_modulePushforward_eq_image_of_isAffineHom_locallyNoetherian, AlgebraicGeometry.Space.weaklyAssociatedPoints_modulePushforward_eq_image_of_isFinite, AlgebraicGeometry.Space.isWeaklyAssociatedPoint_modulePullback_of_hasFiberLocalRingDimension, AlgebraicGeometry.Space.isWeaklyAssociatedPoint_fibre_of_refines, AlgebraicGeometry.Space.isWeaklyAssociatedPoint_of_fieldBaseChange, AlgebraicGeometry.Space.isWeaklyAssociatedPoint_modulePullback_iff_of_isFinite_of_isFlat
 statement: formalized
 proof: formalized
 ---
 
 # 71.3 Morphisms and weakly associated points
 
-Section 71.3 of the Stacks Project, [Tag 0CU1](https://stacks.math.columbia.edu/tag/0CU1). 7 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 71.3 of the Stacks Project, [Tag 0CU1](https://stacks.math.columbia.edu/tag/0CU1). 7 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CU2, a lemma
 
 [Tag 0CU2](https://stacks.math.columbia.edu/tag/0CU2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.weaklyAssociatedPoints_modulePushforward_subset_image_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceAffineDirectImage.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceAffineDirectImage.lean#L148).
+**`AlgebraicGeometry.Space.weaklyAssociatedPoints_modulePushforward_subset_image_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceAffineDirectImage.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceAffineDirectImage.lean#L148).
 
 > Let `f : X ⟶ Y` be an affine morphism of algebraic spaces over `S` and let `F` be a
 > quasi-coherent `𝒪_X`-module. Then every weakly associated point of `f_*F` is the image of a
@@ -28,7 +28,7 @@ theorem weaklyAssociatedPoints_modulePushforward_subset_image_of_isAffineHom
       pointsMap B S hS X.1 f.hom '' weaklyAssociatedPoints B S hS X F
 ```
 
-**`AlgebraicGeometry.Space.affinePushforwardWeaklyAssociatedImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceAffinePushforward.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceAffinePushforward.lean#L62). The attribute's comment: “the reduction to a target represented by an affine scheme of the site, which is the hypothesis h; that case needs the comparison of the Zariski and small-étale modules of a represented algebraic space, absent here”.
+**`AlgebraicGeometry.Space.affinePushforwardWeaklyAssociatedImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceAffinePushforward.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceAffinePushforward.lean#L62). The attribute's comment: “the reduction to a target represented by an affine scheme of the site, which is the hypothesis h; that case needs the comparison of the Zariski and small-étale modules of a represented algebraic space, absent here”.
 
 > Let `f : X ⟶ Y` be an affine morphism of algebraic spaces over `S` and let `F` be a
 > quasi-coherent `𝒪_X`-module. Granted the hypothesis `h`, the same inclusion for a target
@@ -45,7 +45,7 @@ theorem affinePushforwardWeaklyAssociatedImage
 
 [Tag 0CU8](https://stacks.math.columbia.edu/tag/0CU8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.weaklyAssociatedPoints_modulePushforward_eq_image_of_isAffineHom_locallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceAffineDirectImageLocallyNoetherian.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceAffineDirectImageLocallyNoetherian.lean#L58).
+**`AlgebraicGeometry.Space.weaklyAssociatedPoints_modulePushforward_eq_image_of_isAffineHom_locallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceAffineDirectImageLocallyNoetherian.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceAffineDirectImageLocallyNoetherian.lean#L59). The attribute's comment: “WeakAss(f\_*F) = f(WeakAss F) for f affine, X locally Noetherian, F quasi-coherent”.
 
 > Let `f : X ⟶ Y` be an affine morphism of algebraic spaces over `S` and let `F` be a
 > quasi-coherent `𝒪_X`-module. If `X` is locally Noetherian, then the weakly associated points of
@@ -61,41 +61,11 @@ theorem weaklyAssociatedPoints_modulePushforward_eq_image_of_isAffineHom_locally
       pointsMap B S hS X.1 f.hom '' weaklyAssociatedPoints B S hS X F
 ```
 
-**`AlgebraicGeometry.Space.weaklyAssociatedPoints_modulePushforward_eq_image_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeaklyAssociatedAffinePushforward.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeaklyAssociatedAffinePushforward.lean#L342).
-
-> **Stacks 0CU8.** Let `f : X → Y` be an affine morphism of algebraic spaces with `X` locally
-> Noetherian and let `F` be a quasi-coherent `𝒪_X`-module. Then the weakly associated points of
-> the direct image `f_*F` are exactly the images of the weakly associated points of `F`.
->
-> The inclusion `h0CU2` is Stacks 0CU2, and `h05VP` is the affine chart presentation of the two
-> geometric stalks of Stacks 05VP, which also carries the quasi-coherence of the direct image of
-> Stacks 03M9; both are assumed here in the affine, locally Noetherian, quasi-coherent situation
-> in which they are asserted.
-
-```lean
-theorem weaklyAssociatedPoints_modulePushforward_eq_image_of_isAffineHom
-    (hf : IsAffineHom B S hS f.hom)
-    (hX : HasEtaleLocalProperty B S hS X.1 (fun T : Scheme.{u} => IsLocallyNoetherian T))
-    (F : Modules.{u, u} B S hS X.1 X.2) (hF : F.IsQuasicoherentOnSite)
-    (h0CU2 : IsAffineHom B S hS f.hom →
-      HasEtaleLocalProperty B S hS X.1 (fun T : Scheme.{u} => IsLocallyNoetherian T) →
-      F.IsQuasicoherentOnSite →
-      weaklyAssociatedPoints B S hS Y ((modulePushforward B S hS f).obj F) ⊆
-        pointsMap B S hS X.1 f.hom '' weaklyAssociatedPoints B S hS X F)
-    (h05VP : IsAffineHom B S hS f.hom →
-      HasEtaleLocalProperty B S hS X.1 (fun T : Scheme.{u} => IsLocallyNoetherian T) →
-      F.IsQuasicoherentOnSite →
-      ∀ xbar : GeometricPoint B S hS X.1,
-        HasAffineStalkSquare B S hS f F ((modulePushforward B S hS f).obj F) xbar) :
-    weaklyAssociatedPoints B S hS Y ((modulePushforward B S hS f).obj F) =
-      pointsMap B S hS X.1 f.hom '' weaklyAssociatedPoints B S hS X F
-```
-
 ## Tag 0CU9, a lemma
 
 [Tag 0CU9](https://stacks.math.columbia.edu/tag/0CU9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.weaklyAssociatedPoints_modulePushforward_eq_image_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFiniteDirectImage.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFiniteDirectImage.lean#L164).
+**`AlgebraicGeometry.Space.weaklyAssociatedPoints_modulePushforward_eq_image_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFiniteDirectImage.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFiniteDirectImage.lean#L165).
 
 > **Weakly associated points of a finite direct image.** Let `f : X ⟶ Y` be a finite morphism
 > of algebraic spaces over a scheme `S` and let `F` be a quasi-coherent `𝒪_X`-module. Then
@@ -114,42 +84,27 @@ theorem weaklyAssociatedPoints_modulePushforward_eq_image_of_isFinite
 
 [Tag 0CUA](https://stacks.math.columbia.edu/tag/0CUA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isWeaklyAssociatedPoint_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpacePullback.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpacePullback.lean#L368). The attribute's comment: “the zero-dimensional local ring of the fibre read as the equality of the maximal ideal of the étale local ring with the radical of the ideal extended from the maximal ideal of the target, at a geometric point above the given point”.
+**`AlgebraicGeometry.Space.isWeaklyAssociatedPoint_modulePullback_of_hasFiberLocalRingDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpacePullbackFibreDimension.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpacePullbackFibreDimension.lean#L159). The attribute's comment: “for an arbitrary 𝒪\_Y-module G; the source takes G quasi-coherent”.
 
 > **Stacks 0CUA.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over a scheme `S`, let
-> `G` be an `𝒪_Y`-module, let `x` be a point of `X` with image `y`, and let `x̄` be a geometric
-> point above `x`. Suppose that `y` is weakly associated to `G`, that `f` is flat at `x`, and
-> that the local ring of the fibre of `f` at `x̄` has dimension zero — that is, the maximal ideal
-> of `𝒪_{X, x̄}` is the radical of the ideal generated by the maximal ideal of `𝒪_{Y, ȳ}`. Then
-> `x` is weakly associated to `f^*G`.
->
-> The stalk of `f^*G` at `x̄` is the base change `𝒪_{X, x̄} ⊗_{𝒪_{Y, ȳ}} G_{ȳ}` by the
-> base-change clause of Stacks 05VQ, and weak association at `ȳ` follows from weak association
-> of `y` because the condition does not depend on the geometric point chosen above a point.
+> `G` be an `𝒪_Y`-module and let `x ∈ |X|` with image `y = f(x) ∈ |Y|`. If `y` is weakly
+> associated to `G`, `f` is flat at `x`, and the local ring of the fibre of `f` at `x` has
+> dimension zero (Stacks 04NM), then `x` is weakly associated to `f^*G`.
 
 ```lean
-theorem isWeaklyAssociatedPoint_modulePullback (f : X ⟶ Y) (x : points B S hS X.1)
-    (xbar : GeometricPoint B S hS X.1) (hxbar : xbar.LiesOver x)
-    (hflat : IsFlatAt B S hS f.hom x) (G : Modules.{u, u} B S hS Y.1 Y.2) :
-    letI : IsLocalRing (etaleLocalRing B S hS Y.1 (geometricPointMap f.hom xbar)) :=
-      isLocalRing_etaleLocalRing B S hS Y.1 Y.2 (geometricPointMap f.hom xbar)
-    letI : IsLocalRing (etaleLocalRing B S hS X.1 xbar) :=
-      isLocalRing_etaleLocalRing B S hS X.1 X.2 xbar
-    letI : Algebra (etaleLocalRing B S hS Y.1 (geometricPointMap f.hom xbar))
-        (etaleLocalRing B S hS X.1 xbar) := (etaleLocalRingMap X.2 f.hom xbar).toAlgebra
-    (Ideal.map (algebraMap (etaleLocalRing B S hS Y.1 (geometricPointMap f.hom xbar))
-            (etaleLocalRing B S hS X.1 xbar))
-          (maximalIdeal (etaleLocalRing B S hS Y.1 (geometricPointMap f.hom xbar)))).radical =
-        maximalIdeal (etaleLocalRing B S hS X.1 xbar) →
-      IsWeaklyAssociatedPoint B S hS Y G (pointsMap B S hS X.1 f.hom x) →
-        IsWeaklyAssociatedPoint B S hS X ((modulePullback B S hS f).obj G) x
+theorem isWeaklyAssociatedPoint_modulePullback_of_hasFiberLocalRingDimension (f : X ⟶ Y)
+    (G : Modules.{u, u} B S hS Y.1 Y.2) (x : points B S hS X.1)
+    (hG : IsWeaklyAssociatedPoint B S hS Y G (pointsMap B S hS X.1 f.hom x))
+    (hflat : IsFlatAt B S hS f.hom x)
+    (hdim : HasFiberLocalRingDimension 0 B S hS X.2 Y.2 f.hom x) :
+    IsWeaklyAssociatedPoint B S hS X ((modulePullback B S hS f).obj G) x
 ```
 
 ## Tag 0CUS, a lemma
 
 [Tag 0CUS](https://stacks.math.columbia.edu/tag/0CUS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isWeaklyAssociatedPoint_fibre_of_refines`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFibreEtaleRefinement.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFibreEtaleRefinement.lean#L163). The attribute's comment: “at a refinement of field-valued points of the target, read on the comparison of the two fibres”.
+**`AlgebraicGeometry.Space.isWeaklyAssociatedPoint_fibre_of_refines`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFibreEtaleRefinement.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFibreEtaleRefinement.lean#L163). The attribute's comment: “at a refinement of field-valued points of the target, read on the comparison of the two fibres”.
 
 > **Weak association descends along a refinement of field-valued points.** Let `f : X ⟶ Y`
 > be a morphism of algebraic spaces over `S`, let `F` be a quasi-coherent `𝒪_X`-module, let `q`
@@ -177,7 +132,7 @@ theorem isWeaklyAssociatedPoint_fibre_of_refines (f : X ⟶ Y)
       (pointsMap B S hS (fibreAtFieldValuedPoint B S hS f q).1 π.hom ζ)
 ```
 
-**`AlgebraicGeometry.Space.isWeaklyAssociatedPoint_of_fieldBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFieldBaseChange.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFieldBaseChange.lean#L61).
+**`AlgebraicGeometry.Space.isWeaklyAssociatedPoint_of_fieldBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFieldBaseChange.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFieldBaseChange.lean#L62).
 
 > **Weak association descends along a field extension.** Let `K/k` be a field extension,
 > presented by objects `Tk` and `Tk'` of the site with underlying schemes `Spec k` and `Spec K` and
@@ -206,7 +161,7 @@ theorem isWeaklyAssociatedPoint_of_fieldBaseChange (k K : Type u) [Field k] [Fie
 
 [Tag 0CUT](https://stacks.math.columbia.edu/tag/0CUT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isWeaklyAssociatedPoint_modulePullback_iff_of_isFinite_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFiniteFlatPullback.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFiniteFlatPullback.lean#L60).
+**`AlgebraicGeometry.Space.isWeaklyAssociatedPoint_modulePullback_iff_of_isFinite_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFiniteFlatPullback.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFiniteFlatPullback.lean#L60).
 
 > **Stacks 0CUT.** Let `f : X ⟶ Y` be a finite flat morphism of algebraic spaces over a
 > scheme `S`, let `G` be an `𝒪_Y`-module and let `x ∈ |X|` be a point with image `y ∈ |Y|`.
@@ -222,7 +177,7 @@ theorem isWeaklyAssociatedPoint_modulePullback_iff_of_isFinite_of_isFlat (f : X 
       IsWeaklyAssociatedPoint B S hS Y G (pointsMap B S hS X.1 f.hom x)
 ```
 
-**`AlgebraicGeometry.Space.isWeaklyAssociatedPrime_geometricModuleStalk_modulePullback_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpacePullback.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpacePullback.lean#L271). The attribute's comment: “at the étale local ring, for the geometric stalk of the pullback module”.
+**`AlgebraicGeometry.Space.isWeaklyAssociatedPrime_geometricModuleStalk_modulePullback_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpacePullback.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpacePullback.lean#L275). The attribute's comment: “at the étale local ring, for the geometric stalk of the pullback module”.
 
 > **Stacks 0CUT** at the étale local ring, for the geometric stalk of the pullback module.
 > Let `f : X ⟶ Y` be a finite flat morphism of algebraic spaces and let `x̄` be a geometric point
@@ -257,7 +212,7 @@ theorem isWeaklyAssociatedPrime_geometricModuleStalk_modulePullback_iff (f : X �
 
 [Tag 0CUU](https://stacks.math.columbia.edu/tag/0CUU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isWeaklyAssociatedPoint_modulePullback_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceEtalePullback.lean, line 551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceEtalePullback.lean#L551).
+**`AlgebraicGeometry.Space.isWeaklyAssociatedPoint_modulePullback_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceEtalePullback.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceEtalePullback.lean#L551).
 
 > **Weak association along an étale pullback.** Let `f : X ⟶ Y` be an étale morphism of
 > algebraic spaces over a scheme `S`, let `G` be an `𝒪_Y`-module and let `x` be a point of `X` with
@@ -271,7 +226,7 @@ theorem isWeaklyAssociatedPoint_modulePullback_iff (f : X ⟶ Y) (hf : IsEtale B
       IsWeaklyAssociatedPoint B S hS Y G (pointsMap B S hS X.1 f.hom x)
 ```
 
-**`AlgebraicGeometry.Space.isWeaklyAssociatedPoint_fibre_refines_iff_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFibreEtaleRefinement.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFibreEtaleRefinement.lean#L206). The attribute's comment: “at an etale refinement of field-valued points of the target, read on the comparison of the two fibres”.
+**`AlgebraicGeometry.Space.isWeaklyAssociatedPoint_fibre_refines_iff_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFibreEtaleRefinement.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFibreEtaleRefinement.lean#L206). The attribute's comment: “at an etale refinement of field-valued points of the target, read on the comparison of the two fibres”.
 
 > **Weak association transfers along an étale refinement of field-valued points.** In the
 > situation of `AlgebraicGeometry.Space.isWeaklyAssociatedPoint_fibre_of_refines`, with `F` an
@@ -304,4 +259,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 71.3, Tag 0CU1](https://stacks.math.columbia.edu/tag/0CU1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

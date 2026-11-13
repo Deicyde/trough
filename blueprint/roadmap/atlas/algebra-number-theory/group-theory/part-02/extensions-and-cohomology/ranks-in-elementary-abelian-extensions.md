@@ -7,14 +7,14 @@ statement: formalized
 
 # Ranks in elementary abelian extensions
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/extensions-and-cohomology/ranks-in-elementary-abelian-extensions/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/extensions-and-cohomology/ranks-in-elementary-abelian-extensions/index.html).
 
 ## Elementary abelian subgroups
 
 A subgroup $H$ of a group $G$ is elementary abelian if any
 two of its elements commute and there is a prime $p$ with $x^p = 1$ for all $x \in H$.
 
-Formalized by `MathlibExt.GroupTheory.CentreDerivedRankExtensionKourovka21Problem150Wanted.IsElementaryAbelian`, a definition declared in [WantedExt/GroupTheory/CentreDerivedRankExtensionKourovka21Problem150Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/CentreDerivedRankExtensionKourovka21Problem150Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/extensions-and-cohomology/ranks-in-elementary-abelian-extensions/index.html#is-elementary-abelian).
+Formalized by `MathlibExt.GroupTheory.CentreDerivedRankExtensionKourovka21Problem150Wanted.IsElementaryAbelian`, a definition declared in [WantedExt/GroupTheory/CentreDerivedRankExtensionKourovka21Problem150Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/CentreDerivedRankExtensionKourovka21Problem150Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/extensions-and-cohomology/ranks-in-elementary-abelian-extensions/index.html#is-elementary-abelian).
 
 ## Zenkov's rank bound in elementary abelian extensions (Kourovka 21.150)
 
@@ -30,7 +30,7 @@ of at most $k$ elements. That is, the rank of $Z(H) \cap H'$ is at most the rank
 
 The question is due to V. I. Zenkov.
 
-Formalized by `MathlibExt.GroupTheory.CentreDerivedRankExtensionKourovka21Problem150Wanted.centreDerivedRankLeComplementRank`, a definition declared in [WantedExt/GroupTheory/CentreDerivedRankExtensionKourovka21Problem150Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/CentreDerivedRankExtensionKourovka21Problem150Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/extensions-and-cohomology/ranks-in-elementary-abelian-extensions/index.html#centre-derived-rank-le-complement-rank).
+Formalized by `MathlibExt.GroupTheory.CentreDerivedRankExtensionKourovka21Problem150Wanted.centreDerivedRankLeComplementRank`, a definition declared in [WantedExt/GroupTheory/CentreDerivedRankExtensionKourovka21Problem150Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/CentreDerivedRankExtensionKourovka21Problem150Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/extensions-and-cohomology/ranks-in-elementary-abelian-extensions/index.html#centre-derived-rank-le-complement-rank).
 
 ## Zenkov's rank bound fails (Kourovka 21.150)
 
@@ -52,7 +52,7 @@ issue of the Kourovka Notebook marks 21.150 solved ("No, not always").
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 21.150 (V. I. Zenkov); resolution: P. Monticone, letter of 21 March 2026 and solution note, Kourovka Notebook site; W. van Doorn, E. Judin, P. Monticone and D. Morrison, On some problems from the Kourovka Notebook, preprint, arXiv:2607.17477 (2026), Kourovka Notebook (21st issue), Problem 21.150: No, not always: A = F₃[x, y]/I³ (I = (x, y)), B = ⟨1 + x, 1 + y⟩ acting by multiplication, G = A ⋊ B, a = 1; then C_B(a) = 1 and Z(H) ∩ H' = ⟨x², xy, y²⟩ has rank 3 while B has rank 2; van Doorn-Judin-Monticone-Morrison, Theorem 9.1, https://arxiv.org/abs/2607.17477.
 
-Stated but not proved: `MathlibExt.GroupTheory.CentreDerivedRankExtensionKourovka21Problem150Wanted.centreDerivedRankLeComplementRank_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/CentreDerivedRankExtensionKourovka21Problem150Wanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/CentreDerivedRankExtensionKourovka21Problem150Wanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/extensions-and-cohomology/ranks-in-elementary-abelian-extensions/index.html#centre-derived-rank-le-complement-rank-r).
+Stated but not proved: `MathlibExt.GroupTheory.CentreDerivedRankExtensionKourovka21Problem150Wanted.centreDerivedRankLeComplementRank_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/CentreDerivedRankExtensionKourovka21Problem150Wanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/CentreDerivedRankExtensionKourovka21Problem150Wanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/extensions-and-cohomology/ranks-in-elementary-abelian-extensions/index.html#centre-derived-rank-le-complement-rank-r).
 
 ## Depends on
 
@@ -61,4 +61,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ranks in elementary abelian extensions](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/extensions-and-cohomology/ranks-in-elementary-abelian-extensions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/extensions-and-cohomology/ranks-in-elementary-abelian-extensions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/extensions-and-cohomology/ranks-in-elementary-abelian-extensions)

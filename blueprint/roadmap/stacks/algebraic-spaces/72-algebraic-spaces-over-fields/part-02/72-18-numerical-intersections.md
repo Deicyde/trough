@@ -8,13 +8,13 @@ proof: formalized
 
 # 72.18 Numerical intersections
 
-Section 72.18 of the Stacks Project, [Tag 0DN3](https://stacks.math.columbia.edu/tag/0DN3). 8 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 72.18 of the Stacks Project, [Tag 0DN3](https://stacks.math.columbia.edu/tag/0DN3). 8 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DN4, a lemma
 
 [Tag 0DN4](https://stacks.math.columbia.edu/tag/0DN4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isTwistedEulerNumericalPolynomial_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerNumericalPolynomialProper.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerNumericalPolynomialProper.lean#L76). The attribute's comment: “for every closed subspace Z with F = i\_*G, G coherent; the scheme-theoretic support is the smallest such Z (Stacks 07U0), and the bound at it is hasTwistedEulerPolynomialOfDegreeLE\_coherentSchemeTheoreticSupport”. References: SGA 6 X (2.3.1), “more general”.
+**`AlgebraicGeometry.Space.isTwistedEulerNumericalPolynomial_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerNumericalPolynomialProper.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerNumericalPolynomialProper.lean#L76). The attribute's comment: “for every closed subspace Z with F = i\_*G, G coherent; the scheme-theoretic support is the smallest such Z (Stacks 07U0), and the bound at it is hasTwistedEulerPolynomialOfDegreeLE\_coherentSchemeTheoreticSupport”. References: SGA 6 X (2.3.1), “more general”.
 
 > **Stacks 0DN4.**  Let `k` be a field, `X` a proper algebraic space over `k`, `F` a coherent
 > `𝒪_X`-module and `L₁, …, L_r` invertible `𝒪_X`-modules.  For every closed subspace `i : Z ⟶ X`
@@ -36,7 +36,7 @@ theorem isTwistedEulerNumericalPolynomial_of_isCoherent
       (isCoherent_twistedModuleUlift_of_isProper.{u, w} k B hk X f hf L F hF)
 ```
 
-**`AlgebraicGeometry.Space.hasTwistedEulerPolynomialOfDegreeLE_coherentSchemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerNumericalPolynomialProper.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerNumericalPolynomialProper.lean#L101).
+**`AlgebraicGeometry.Space.hasTwistedEulerPolynomialOfDegreeLE_coherentSchemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerNumericalPolynomialProper.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerNumericalPolynomialProper.lean#L101).
 
 > **Stacks 0DN4.**  Let `k` be a field, `X` a proper algebraic space over `k`, `F` a coherent
 > `𝒪_X`-module and `L₁, …, L_r` invertible `𝒪_X`-modules.  The map
@@ -65,7 +65,7 @@ theorem hasTwistedEulerPolynomialOfDegreeLE_coherentSchemeTheoreticSupport
           (coherentSchemeTheoreticSupport B (Spec (.of k)) hk X F)).2)
 ```
 
-**`AlgebraicGeometry.Space.hasTwistedEulerPolynomialOfDegreeLE_fin_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerPolynomial.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerPolynomial.lean#L374). The attribute's comment: “the case r = 0 of no invertible modules: the constant function χ(X, F) is represented by a constant polynomial, of total degree 0, which is at most the dimension of the closed subspace carrying F whenever that subspace has a point. The empty-support case, and every case with invertible modules present, is not proved”.
+**`AlgebraicGeometry.Space.hasTwistedEulerPolynomialOfDegreeLE_fin_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerPolynomial.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerPolynomial.lean#L374). The attribute's comment: “the case r = 0 of no invertible modules: the constant function χ(X, F) is represented by a constant polynomial, of total degree 0, which is at most the dimension of the closed subspace carrying F whenever that subspace has a point. The empty-support case, and every case with invertible modules present, is not proved”.
 
 > **Stacks 0DN4 in the case `r = 0`.**  With no invertible modules to twist by, the function
 > on `ℤ ^ 0` is the constant `χ(X, F)`, so it is represented by a constant polynomial, whose total
@@ -96,7 +96,7 @@ theorem hasTwistedEulerPolynomialOfDegreeLE_fin_zero
 
 [Tag 0EDE](https://stacks.math.columbia.edu/tag/0EDE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_twistedEuler_sub_finsum_mul_twistedEuler_topDimensionalComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerTopDimensionalComponents.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerTopDimensionalComponents.lean#L210).
+**`AlgebraicGeometry.Space.exists_twistedEuler_sub_finsum_mul_twistedEuler_topDimensionalComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerTopDimensionalComponents.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerTopDimensionalComponents.lean#L210).
 
 > **Stacks 0EDE.**  Let `X` be proper over a field `k`, `F` a coherent `𝒪_X`-module and
 > `L₁, …, L_r` invertible `𝒪_X`-modules.  Let `Z_C` be the reduced closed subspace on an
@@ -165,7 +165,7 @@ theorem exists_twistedEuler_sub_finsum_mul_twistedEuler_topDimensionalComponent
 
 [Tag 0EDF](https://stacks.math.columbia.edu/tag/0EDF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.intersectionNumber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean, line 776](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean#L776). References: SGA 6 X (4.4), “defn, algebraic spaces”.
+**`AlgebraicGeometry.Space.intersectionNumber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean, line 785](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean#L785). References: SGA 6 X (4.4), “defn, algebraic spaces”.
 
 > **Stacks 0EDF.** The intersection number `(L₁ ⋯ L_d · Z)` of `d` invertible
 > `𝒪_X`-modules against a closed subspace `i : Z ⟶ X` of dimension `d` of a proper algebraic
@@ -184,11 +184,12 @@ def intersectionNumber (d : ℕ) (f : X.1 ⟶ yoneda.obj (baseObject k B hk))
     (_hd : dimension B (Spec (.of k)) hk Z.1 Z.2 = d)
     (L : Fin d → Modules.{u, u} B (Spec (.of k)) hk X.1 X.2)
     [∀ j, Stacks.SheafOfModules.IsInvertible (structurePresheaf B (Spec (.of k)) hk X.1)
-      (Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B (Spec (.of k)) hk X.1 X.2).O).property (L j)] :
+      (Stacks.SheafOfModules.Tensor.ringSheaf
+        (smallEtaleRingedSite B (Spec (.of k)) hk X.1 X.2).O).property (L j)] :
     ℤ
 ```
 
-**`AlgebraicGeometry.Space.intersectionNumber_eq_coeff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean, line 820](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean#L820). The attribute's comment: “the coefficient of n\_1 ⋯ n\_d”. References: SGA 6 X (4.4), “defn, algebraic spaces”.
+**`AlgebraicGeometry.Space.intersectionNumber_eq_coeff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean, line 831](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean#L831). The attribute's comment: “the coefficient of n\_1 ⋯ n\_d”. References: SGA 6 X (4.4), “defn, algebraic spaces”.
 
 > **Stacks 0EDF, the coefficient of `n₁ ⋯ n_d`.**  If a rational polynomial `P` in `d`
 > variables of total degree at most `d` takes the Euler characteristics
@@ -207,7 +208,8 @@ theorem intersectionNumber_eq_coeff (d : ℕ) (f : X.1 ⟶ yoneda.obj (baseObjec
     (hd : dimension B (Spec (.of k)) hk Z.1 Z.2 = d)
     (L : Fin d → Modules.{u, u} B (Spec (.of k)) hk X.1 X.2)
     [∀ j, Stacks.SheafOfModules.IsInvertible (structurePresheaf B (Spec (.of k)) hk X.1)
-      (Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B (Spec (.of k)) hk X.1 X.2).O).property (L j)]
+      (Stacks.SheafOfModules.Tensor.ringSheaf
+        (smallEtaleRingedSite B (Spec (.of k)) hk X.1 X.2).O).property (L j)]
     (P : MvPolynomial (Fin d) ℚ)
     (hP : ∀ n : Fin d → ℤ, MvPolynomial.eval (fun j => (n j : ℚ)) P =
       ((@eulerCharacteristic.{u, w} k _ B hk X.1 X.2 f hf
@@ -220,7 +222,7 @@ theorem intersectionNumber_eq_coeff (d : ℕ) (f : X.1 ⟶ yoneda.obj (baseObjec
       P.coeff (Finsupp.equivFunOnFinite.symm fun _ => 1)
 ```
 
-**`AlgebraicGeometry.Space.selfIntersectionNumber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean, line 891](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean#L891). The attribute's comment: “the self-intersection notation (L^d · Z)”.
+**`AlgebraicGeometry.Space.selfIntersectionNumber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean, line 906](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean#L906). The attribute's comment: “the self-intersection notation (L^d · Z)”.
 
 > **Stacks 0EDF, the self-intersection notation `(L^d · Z)`.**  The intersection number of a
 > single invertible `𝒪_X`-module `L` repeated `d` times against a closed subspace `i : Z ⟶ X` of
@@ -233,7 +235,8 @@ def selfIntersectionNumber (d : ℕ) (f : X.1 ⟶ yoneda.obj (baseObject k B hk)
     (hd : dimension B (Spec (.of k)) hk Z.1 Z.2 = d)
     (L : Modules.{u, u} B (Spec (.of k)) hk X.1 X.2)
     [Stacks.SheafOfModules.IsInvertible (structurePresheaf B (Spec (.of k)) hk X.1)
-      (Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B (Spec (.of k)) hk X.1 X.2).O).property L] :
+      (Stacks.SheafOfModules.Tensor.ringSheaf
+        (smallEtaleRingedSite B (Spec (.of k)) hk X.1 X.2).O).property L] :
     ℤ
 ```
 
@@ -241,7 +244,7 @@ def selfIntersectionNumber (d : ℕ) (f : X.1 ⟶ yoneda.obj (baseObject k B hk)
 
 [Tag 0EDG](https://stacks.math.columbia.edu/tag/0EDG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_eval_eq_eulerCharacteristic_and_exists_intCast_eq_coeff_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberAdditivity.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberAdditivity.lean#L128). References: SGA 6 X (2.3.1), “special case”.
+**`AlgebraicGeometry.Space.exists_eval_eq_eulerCharacteristic_and_exists_intCast_eq_coeff_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberAdditivity.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberAdditivity.lean#L129). The attribute's comment: “the numerical polynomial and the integrality of its coefficient of n\_1 ⋯ n\_d”. References: SGA 6 X (2.3.1), “special case”.
 
 > **Stacks 0EDG.**  In the situation of Definition 0EDF — `X` a proper algebraic space over a
 > field `k`, `i : Z ⟶ X` a closed subspace of dimension `d` and `L₁, …, L_d` invertible
@@ -282,42 +285,11 @@ theorem exists_eval_eq_eulerCharacteristic_and_exists_intCast_eq_coeff_one (d : 
       ∃ m : ℤ, P.coeff (Finsupp.equivFunOnFinite.symm fun _ => 1) = (m : ℚ)
 ```
 
-**`AlgebraicGeometry.Space.exists_intCast_eq_coeff_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean, line 868](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean#L868). The attribute's comment: “granted a representing numerical polynomial, whose existence is Tag 0DN4”.
-
-> **Stacks 0EDG.**  The intersection number `(L₁ ⋯ L_d · Z)` is an integer: the coefficient of
-> `n₁ ⋯ n_d` in a rational polynomial of total degree at most `d` taking the Euler characteristics
-> `χ(X, i_*𝒪_Z ⊗ L₁^{⊗ n₁} ⊗ ⋯ ⊗ L_d^{⊗ n_d})` as its values at the integral tuples is the cast of
-> an integer, namely of `AlgebraicGeometry.Space.intersectionNumber`.
->
-> That coefficient is a priori only rational, and integrality is special to it: a numerical
-> polynomial such as `n (n - 1) / 2` has coefficients which are not integers, and it is the degree
-> bound that makes the coefficient of the squarefree monomial a mixed finite difference of
-> finitely many integer values.
-
-```lean
-theorem exists_intCast_eq_coeff_one (d : ℕ) (f : X.1 ⟶ yoneda.obj (baseObject k B hk))
-    (hf : IsProper B (Spec (.of k)) hk f) (i : Z ⟶ X)
-    (hi : IsClosedImmersion B (Spec (.of k)) hk i.hom)
-    (hd : dimension B (Spec (.of k)) hk Z.1 Z.2 = d)
-    (L : Fin d → Modules.{u, u} B (Spec (.of k)) hk X.1 X.2)
-    [∀ j, Stacks.SheafOfModules.IsInvertible (structurePresheaf B (Spec (.of k)) hk X.1)
-      (Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B (Spec (.of k)) hk X.1 X.2).O).property (L j)]
-    (P : MvPolynomial (Fin d) ℚ)
-    (hP : ∀ n : Fin d → ℤ, MvPolynomial.eval (fun j => (n j : ℚ)) P =
-      ((@eulerCharacteristic.{u, w} k _ B hk X.1 X.2 f hf
-        (twistedModuleUlift.{u, w} B (Spec (.of k)) hk X.1 X.2
-          (structureSheafPushforward B (Spec (.of k)) hk i) L n)
-          (isCoherent_twistedModuleUlift_structureSheafPushforward.{u, w}
-            k B hk X Z f hf i hi L n) : ℤ) : ℚ))
-    (hdeg : P.totalDegree ≤ d) :
-    ∃ m : ℤ, P.coeff (Finsupp.equivFunOnFinite.symm fun _ => 1) = (m : ℚ)
-```
-
 ## Tag 0EDH, a lemma
 
 [Tag 0EDH](https://stacks.math.columbia.edu/tag/0EDH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.intersectionNumber_eq_add_intersectionNumber_of_iso_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberAdditivity.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberAdditivity.lean#L169).
+**`AlgebraicGeometry.Space.intersectionNumber_eq_add_intersectionNumber_of_iso_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberAdditivity.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberAdditivity.lean#L170). The attribute's comment: “additivity in each of the d invertible modules”.
 
 > **Stacks 0EDH.**  In the situation of Definition 0EDF, the intersection number is additive
 > in each of its invertible modules: if `L_{i₀} ≅ L_{i₀}' ⊗ L_{i₀}''`, and `L'` and `L''` agree with
@@ -357,74 +329,11 @@ theorem intersectionNumber_eq_add_intersectionNumber_of_iso_tensorSheaf (d : ℕ
         intersectionNumber.{u, w} k B hk X Z d f hf i hi hd L''
 ```
 
-**`AlgebraicGeometry.Space.intersectionNumber_eq_add_of_iso_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean, line 925](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean#L925). The attribute's comment: “with the numerical polynomial of Stacks 0DN4 for the split family of d + 1 invertible modules carried as a hypothesis”.
-
-> **Stacks 0EDH.**  Additivity of the intersection number in each of its invertible modules.
-> Let `k` be a field, let `X` be a proper algebraic space over `k`, let `i : Z ⟶ X` be a closed
-> subspace of dimension `d` and let `L₁, …, L_d` be invertible `𝒪_X`-modules.  Let `L'` and `L''`
-> be two families agreeing with `L` away from one index `i₀` and satisfying
-> `L_{i₀} ≅ L_{i₀}' ⊗ L_{i₀}''`.  Then
->
-> `(L₁ ⋯ L_{i₀} ⋯ L_d · Z) = (L₁ ⋯ L_{i₀}' ⋯ L_d · Z) + (L₁ ⋯ L_{i₀}'' ⋯ L_d · Z)`.
->
-> The mechanism is the source's.  The Euler characteristics of the twists of `i_*𝒪_Z` by the
-> `d + 1` invertible modules `L_{i₀}'', L_1', …, L_d'` are the values of a rational polynomial `Q`
-> of total degree at most `d` in `d + 1` variables, which is Stacks 0DN4 and is the one thing
-> carried, as the hypotheses `Q`, `hQ` and `hQdeg`; the three intersection numbers are then the
-> three mixed finite differences of `Q` obtained by tying the two new variables together, by
-> setting the second to zero, and by setting the first to zero.  Their alternating combination is
-> the `(d + 1)`-fold mixed finite difference of `Q`, which vanishes because the squarefree monomial
-> in `d + 1` variables has degree `d + 1`;
-> this is `MvPolynomial.sum_neg_one_pow_mul_sub_eval_cons_eq_zero`.
->
-> The three comparisons of the twists by the split family with the twists by `L`, `L'` and `L''`
-> are proved: at the indicator tuples only the exponents `0` and `1` occur, where the constraints
-> of the sheaf tensor product suffice and no multiplication of tensor powers is needed.  See the
-> implementation notes.
-
-```lean
-theorem intersectionNumber_eq_add_of_iso_tensorSheaf (d : ℕ)
-    (f : X.1 ⟶ yoneda.obj (baseObject k B hk)) (hf : IsProper B (Spec (.of k)) hk f)
-    (i : Z ⟶ X) (hi : IsClosedImmersion B (Spec (.of k)) hk i.hom)
-    (hd : dimension B (Spec (.of k)) hk Z.1 Z.2 = d) (i₀ : Fin d)
-    (L L' L'' : Fin d → Modules.{u, u} B (Spec (.of k)) hk X.1 X.2)
-    [∀ j, Stacks.SheafOfModules.IsInvertible (structurePresheaf B (Spec (.of k)) hk X.1)
-      (Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B (Spec (.of k)) hk X.1 X.2).O).property (L j)]
-    [∀ j, Stacks.SheafOfModules.IsInvertible (structurePresheaf B (Spec (.of k)) hk X.1)
-      (Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B (Spec (.of k)) hk X.1 X.2).O).property (L' j)]
-    [∀ j, Stacks.SheafOfModules.IsInvertible (structurePresheaf B (Spec (.of k)) hk X.1)
-      (Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B (Spec (.of k)) hk X.1 X.2).O).property (L'' j)]
-    [∀ n : Fin d → ℤ, IsCoherent B (Spec (.of k)) hk X.1 X.2
-      (twistedModuleUlift.{u, w} B (Spec (.of k)) hk X.1 X.2
-        (structureSheafPushforward B (Spec (.of k)) hk i) L n)]
-    [∀ n : Fin d → ℤ, IsCoherent B (Spec (.of k)) hk X.1 X.2
-      (twistedModuleUlift.{u, w} B (Spec (.of k)) hk X.1 X.2
-        (structureSheafPushforward B (Spec (.of k)) hk i) L' n)]
-    [∀ n : Fin d → ℤ, IsCoherent B (Spec (.of k)) hk X.1 X.2
-      (twistedModuleUlift.{u, w} B (Spec (.of k)) hk X.1 X.2
-        (structureSheafPushforward B (Spec (.of k)) hk i) L'' n)]
-    [∀ m : Fin (d + 1) → ℤ, IsCoherent B (Spec (.of k)) hk X.1 X.2
-      (twistedModuleUlift.{u, w} B (Spec (.of k)) hk X.1 X.2
-        (structureSheafPushforward B (Spec (.of k)) hk i) (Fin.cons (L'' i₀) L') m)]
-    (hL' : ∀ j, j ≠ i₀ → L' j = L j) (hL'' : ∀ j, j ≠ i₀ → L'' j = L j)
-    (hL : L i₀ ≅ (((Stacks.SheafOfModules.Tensor.sheafTensor
-      (smallEtaleRingedSite B (Spec (.of k)) hk X.1 X.2).O).obj (L' i₀)).obj (L'' i₀) :
-        Modules.{u, u} B (Spec (.of k)) hk X.1 X.2))
-    (Q : MvPolynomial (Fin (d + 1)) ℚ) (hQdeg : Q.totalDegree ≤ d)
-    (hQ : ∀ m : Fin (d + 1) → ℤ, MvPolynomial.eval (fun p => (m p : ℚ)) Q =
-      ((eulerCharacteristic.{u, w} k B hk X.1 X.2 f hf
-        (twistedModuleUlift.{u, w} B (Spec (.of k)) hk X.1 X.2
-          (structureSheafPushforward B (Spec (.of k)) hk i) (Fin.cons (L'' i₀) L') m) : ℤ) : ℚ)) :
-    intersectionNumber.{u, w} k B hk X Z d f hf i hi hd L =
-      intersectionNumber.{u, w} k B hk X Z d f hf i hi hd L' +
-        intersectionNumber.{u, w} k B hk X Z d f hf i hi hd L''
-```
-
 ## Tag 0EDI, a lemma
 
 [Tag 0EDI](https://stacks.math.columbia.edu/tag/0EDI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.intersectionNumber_eq_finsum_mul_intersectionNumber_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberComponents.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberComponents.lean#L308). References: SGA 6 X (4.4), “partial”.
+**`AlgebraicGeometry.Space.intersectionNumber_eq_finsum_mul_intersectionNumber_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberComponents.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberComponents.lean#L308). References: SGA 6 X (4.4), “partial”.
 
 > **Stacks 0EDI.**  Let `k` be a field, `X` a proper algebraic space over `k`, `i : Z ⟶ X` a
 > closed subspace of dimension `d` and `L₁, …, L_d` invertible `𝒪_X`-modules.  Let `Z_C ⊆ Z` be the
@@ -486,7 +395,7 @@ theorem intersectionNumber_eq_finsum_mul_intersectionNumber_irreducibleComponent
 
 [Tag 0EDJ](https://stacks.math.columbia.edu/tag/0EDJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.intersectionNumber_modulePullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberProperImage.lean, line 668](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberProperImage.lean#L668).
+**`AlgebraicGeometry.Space.intersectionNumber_modulePullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberProperImage.lean, line 668](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberProperImage.lean#L668).
 
 > **Stacks 0EDJ.** Let `k` be a field, let `f : Y ⟶ X` be a morphism of algebraic spaces proper
 > over `k`, let `Z ⊂ Y` be an integral closed subspace of dimension `d` and let `L₁, …, L_d` be
@@ -542,7 +451,7 @@ theorem intersectionNumber_modulePullback_eq (f : Y ⟶ X)
 
 [Tag 0EDK](https://stacks.math.columbia.edu/tag/0EDK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.intersectionNumber_eq_sum_of_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberCartierDivisor.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberCartierDivisor.lean#L168). The attribute's comment: “the right-hand side as the defining sum of Definition 0EDF for D, of dimension at most d; it is intersectionNumber D when dim D = d and 0 when dim D < d”.
+**`AlgebraicGeometry.Space.intersectionNumber_eq_sum_of_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberCartierDivisor.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntersectionNumberCartierDivisor.lean#L168). The attribute's comment: “the right-hand side as the defining sum of Definition 0EDF for D, of dimension at most d; it is intersectionNumber D when dim D = d and 0 when dim D < d”.
 
 > **Stacks 0EDK.**  Let `k` be a field, let `X` be a proper algebraic space over `k`, let
 > `i : Z ⟶ X` be a closed subspace of dimension `d + 1` and let `L₁, …, L_{d+1}` be invertible
@@ -598,4 +507,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 72.18, Tag 0DN3](https://stacks.math.columbia.edu/tag/0DN3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.76 Complexes with constructible cohomology
 
-Section 59.76 of the Stacks Project, [Tag 095V](https://stacks.math.columbia.edu/tag/095V). 6 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.76 of the Stacks Project, [Tag 095V](https://stacks.math.columbia.edu/tag/095V). 6 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 095W, a definition
 
 [Tag 095W](https://stacks.math.columbia.edu/tag/095W) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.ConstructibleDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/Basic.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/Basic.lean#L67). References: SGA 5 I (App.1.1), “constant Λ coefficients”; SGA 5 IIIB (6.1), “D\_c(-)”.
+**`Stacks.EtaleCohomology.ConstructibleDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/Basic.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/Basic.lean#L67). References: SGA 5 I (App.1.1), “constant Λ coefficients”; SGA 5 IIIB (6.1), “D\_c(-)”.
 
 > The full subcategory of the unbounded derived category of small-étale
 > `Λ`-module sheaves with constructible cohomology sheaves.
@@ -31,7 +31,7 @@ public abbrev ConstructibleDerivedCategory (B : BigEtaleSite.{u}) (X : B.Scheme)
       HasWeakSheafify ((SmallEtale.topology B T.1 T.property).over V) (ModuleCat.{w} Λ)]
 ```
 
-**`Stacks.EtaleCohomology.ConstructibleEtaleDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ConstructibleEtaleDerivedCategory.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ConstructibleEtaleDerivedCategory.lean#L48). The attribute's comment: “the full subcategory of D(X\_ét, Λ) of complexes whose cohomology sheaves are constructible, for module sections in any universe containing that of the schemes”. References: SGA 5 IIIB (6.1).
+**`Stacks.EtaleCohomology.ConstructibleEtaleDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ConstructibleEtaleDerivedCategory.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ConstructibleEtaleDerivedCategory.lean#L48). The attribute's comment: “the full subcategory of D(X\_ét, Λ) of complexes whose cohomology sheaves are constructible, for module sections in any universe containing that of the schemes”. References: SGA 5 IIIB (6.1).
 
 > **Stacks 095W.** `D_c(X_ét, Λ)`: the full subcategory of the unbounded derived category of
 > sheaves of `Λ`-modules on the small étale site of `X` on the complexes all of whose cohomology
@@ -46,7 +46,7 @@ public abbrev ConstructibleEtaleDerivedCategory (B : BigEtaleSite.{u}) (X : B.Sc
 
 [Tag 095X](https://stacks.math.columbia.edu/tag/095X) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isConstructible_derivedRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZero.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZero.lean#L148). The attribute's comment: “part (1)”.
+**`Stacks.EtaleCohomology.isConstructible_derivedRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZero.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZero.lean#L149). The attribute's comment: “part (1)”.
 
 > Let `Λ` be a Noetherian ring, let `X` be a scheme and let `U` be an object of the small étale
 > site of `X`. If a complex `K` of étale sheaves of `Λ`-modules on `X` lies in `D_c(X_étale, Λ)`,
@@ -62,7 +62,7 @@ public theorem isConstructible_derivedRestriction
         Λ).mapDerivedCategory.obj K)
 ```
 
-**`Stacks.EtaleCohomology.isConstructible_derivedModuleExtensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZero.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZero.lean#L168). The attribute's comment: “part (2)”.
+**`Stacks.EtaleCohomology.isConstructible_derivedModuleExtensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZero.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZero.lean#L169). The attribute's comment: “part (2)”.
 
 > Let `Λ` be a Noetherian ring, let `X` be a scheme and let `U` be an object of the small étale
 > site of `X` whose structure morphism `j : U ⟶ X` is quasi-compact and quasi-separated. If a complex
@@ -84,7 +84,7 @@ public theorem isConstructible_derivedModuleExtensionByZero
 
 [Tag 095Y](https://stacks.math.columbia.edu/tag/095Y) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isConstructible_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/InverseImage.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/InverseImage.lean#L109).
+**`Stacks.EtaleCohomology.isConstructible_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/InverseImage.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/InverseImage.lean#L110).
 
 > **Stacks 095Y.** Let `Λ` be a Noetherian ring and `f : X ⟶ Y` a morphism of schemes. If a
 > complex of étale sheaves of `Λ`-modules on `Y` lies in `D_c(Y_étale, Λ)`, that is has
@@ -111,7 +111,7 @@ public theorem isConstructible_derivedPullback {X Y : B.Scheme} (f : X ⟶ Y)
         (SmallEtale.topology B X.obj X.property)).mapDerivedCategory.obj K)
 ```
 
-**`Stacks.EtaleCohomology.isConstructible_mapDerivedCategory_smallEtaleSheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/InverseImageUnconditional.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/InverseImageUnconditional.lean#L68).
+**`Stacks.EtaleCohomology.isConstructible_mapDerivedCategory_smallEtaleSheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/InverseImageUnconditional.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/InverseImageUnconditional.lean#L68).
 
 > **Stacks 095Y.** Let `Λ` be a Noetherian ring and `f : X ⟶ Y` a morphism of schemes. If
 > `K ∈ D_c(Y_étale, Λ)`, that is the cohomology sheaves of `K` are constructible in every degree,
@@ -138,7 +138,7 @@ public theorem isConstructible_mapDerivedCategory_smallEtaleSheafPullback {X Y :
 
 [Tag 095Z](https://stacks.math.columbia.edu/tag/095Z) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.exists_shriekConstant_cover_of_isConstructible_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekCoverOfCohomology.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekCoverOfCohomology.lean#L168).
+**`Stacks.EtaleCohomology.exists_shriekConstant_cover_of_isConstructible_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekCoverOfCohomology.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekCoverOfCohomology.lean#L168).
 
 > **Stacks 095Z.** Let `X` be a quasi-compact and quasi-separated scheme, let `Λ` be a
 > Noetherian ring, let `K ∈ D(X_étale, Λ)` and let `b` be an integer for which `H^b(K)` is
@@ -180,7 +180,7 @@ public theorem exists_shriekConstant_cover_of_isConstructible_homology (X : B.Sc
           (ModuleCat.{max (u + 1) r} Λ)) b).map f)
 ```
 
-**`Stacks.EtaleCohomology.exists_shriekConstant_cover_of_isConstructibleModuleEtaleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekCoverOfCohomologyEtale.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekCoverOfCohomologyEtale.lean#L68).
+**`Stacks.EtaleCohomology.exists_shriekConstant_cover_of_isConstructibleModuleEtaleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekCoverOfCohomologyEtale.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekCoverOfCohomologyEtale.lean#L68).
 
 > **Stacks 095Z.** Let `X` be a quasi-compact and quasi-separated scheme, let `Λ` be a
 > Noetherian ring, let `K ∈ D(X_étale, Λ)` and let `b` be an integer such that `H^b(K)` is
@@ -212,7 +212,7 @@ public theorem exists_shriekConstant_cover_of_isConstructibleModuleEtaleSheaf (X
 
 [Tag 0960](https://stacks.math.columbia.edu/tag/0960) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isConstructible_of_isRepresentedByBoundedAboveConstructibleFlatComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/BoundedAboveShriekComplex.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/BoundedAboveShriekComplex.lean#L373). The attribute's comment: “the implication (3) => (1), from the weak Serre property `hSerre` of the constructible sheaves of modules”.
+**`Stacks.EtaleCohomology.isConstructible_of_isRepresentedByBoundedAboveConstructibleFlatComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/BoundedAboveShriekComplex.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/BoundedAboveShriekComplex.lean#L373). The attribute's comment: “the implication (3) => (1), from the weak Serre property `hSerre` of the constructible sheaves of modules”.
 
 > **Tag 0960, the implication (3) ⟹ (1).** An object of `D(X_étale, Λ)` represented by a
 > bounded above complex of flat constructible sheaves of `Λ`-modules has constructible cohomology
@@ -236,7 +236,7 @@ public theorem isConstructible_of_isRepresentedByBoundedAboveConstructibleFlatCo
     IsConstructible B X Λ K
 ```
 
-**`Stacks.EtaleCohomology.isRepresentedByBoundedAboveConstructibleFlatComplex_of_shriekSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/BoundedAboveShriekComplex.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/BoundedAboveShriekComplex.lean#L430). The attribute's comment: “the implication (2) => (3)”.
+**`Stacks.EtaleCohomology.isRepresentedByBoundedAboveConstructibleFlatComplex_of_shriekSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/BoundedAboveShriekComplex.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/BoundedAboveShriekComplex.lean#L430). The attribute's comment: “the implication (2) => (3)”.
 
 > **Tag 0960, the implication (2) ⟹ (3).** A bounded above complex whose terms are finite
 > direct sums of sheaves `j_{U!} Λ-underline` with `U` affine is a bounded above complex of flat
@@ -262,7 +262,7 @@ public theorem isRepresentedByBoundedAboveConstructibleFlatComplex_of_shriekSum
     IsRepresentedByBoundedAboveConstructibleFlatComplex.{u, max (u + 1) r, r} B X Λ K
 ```
 
-**`Stacks.EtaleCohomology.isConstructible_of_isRepresentedByAffineShriekSumComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/BoundedAboveShriekComplex.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/BoundedAboveShriekComplex.lean#L455). The attribute's comment: “the implication (2) => (1)”.
+**`Stacks.EtaleCohomology.isConstructible_of_isRepresentedByAffineShriekSumComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/BoundedAboveShriekComplex.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/BoundedAboveShriekComplex.lean#L455). The attribute's comment: “the implication (2) => (1)”.
 
 > **Tag 0960, the implication (2) ⟹ (1).** An object of `D(X_étale, Λ)` represented by a
 > bounded above complex whose terms are finite direct sums of sheaves `j_{U!} Λ-underline` with
@@ -286,7 +286,7 @@ public theorem isConstructible_of_isRepresentedByAffineShriekSumComplex
     IsConstructible B X Λ K
 ```
 
-**`Stacks.EtaleCohomology.isRepresentedByAffineShriekSumComplex_of_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean#L307). The attribute's comment: “the implication (1) => (2)”.
+**`Stacks.EtaleCohomology.isRepresentedByAffineShriekSumComplex_of_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean#L307). The attribute's comment: “the implication (1) => (2)”.
 
 > **Tag 0960, the implication (1) ⟹ (2).** Let `X` be a quasi-compact and quasi-separated
 > scheme, let `Λ` be a Noetherian ring and let `K ∈ D^-(X_étale, Λ)` have constructible cohomology
@@ -320,7 +320,7 @@ public theorem isRepresentedByAffineShriekSumComplex_of_isConstructible
     IsRepresentedByAffineShriekSumComplex.{u, r} B X Λ K
 ```
 
-**`Stacks.EtaleCohomology.isRepresentedByBoundedAboveConstructibleFlatComplex_of_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean#L346). The attribute's comment: “the implication (1) => (3)”. References: SGA 4½ Rapport (4.7), “partial”.
+**`Stacks.EtaleCohomology.isRepresentedByBoundedAboveConstructibleFlatComplex_of_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean#L346). The attribute's comment: “the implication (1) => (3)”. References: SGA 4½ Rapport (4.7), “partial”.
 
 > **Tag 0960, the implication (1) ⟹ (3).** Let `X` be a quasi-compact and quasi-separated
 > scheme, let `Λ` be a Noetherian ring and let `K ∈ D^-(X_étale, Λ)` have constructible cohomology
@@ -343,7 +343,7 @@ public theorem isRepresentedByBoundedAboveConstructibleFlatComplex_of_isConstruc
     IsRepresentedByBoundedAboveConstructibleFlatComplex.{u, max (u + 1) r, r} B X Λ K
 ```
 
-**`Stacks.EtaleCohomology.isRepresentedByAffineShriekSumComplex_of_constructibleFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean#L368). The attribute's comment: “the implication (3) => (2)”.
+**`Stacks.EtaleCohomology.isRepresentedByAffineShriekSumComplex_of_constructibleFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean#L368). The attribute's comment: “the implication (3) => (2)”.
 
 > **Tag 0960, the implication (3) ⟹ (2).** An object of `D(X_étale, Λ)` represented by a
 > bounded above complex of flat constructible sheaves of `Λ`-modules is represented by a bounded
@@ -366,7 +366,7 @@ public theorem isRepresentedByAffineShriekSumComplex_of_constructibleFlat
     IsRepresentedByAffineShriekSumComplex.{u, r} B X Λ K
 ```
 
-**`Stacks.EtaleCohomology.isConstructible_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean#L400). References: SGA 4½ Rapport (4.7), “(1) ⇒ (3)”.
+**`Stacks.EtaleCohomology.isConstructible_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ShriekSumResolution.lean#L400). References: SGA 4½ Rapport (4.7), “(1) ⇒ (3)”.
 
 > **Tag 0960.** Let `X` be a quasi-compact and quasi-separated scheme, let `Λ` be a Noetherian
 > ring and let `K ∈ D^-(X_étale, Λ)`, the bound being the hypothesis `hvan`. Then the following
@@ -403,7 +403,7 @@ public theorem isConstructible_tfae
 
 [Tag 0961](https://stacks.math.columbia.edu/tag/0961) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.minus_and_isConstructible_derivedTensor_of_arbitraryScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/DerivedTensorArbitraryScheme.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/DerivedTensorArbitraryScheme.lean#L334). The attribute's comment: “for an arbitrary scheme: both halves of the conclusion, the boundedness estimate for the derived tensor product and the constructible case alike, from the bounded above representative with flat etale stalks of Stacks 05T7 and 093B (2), the quasi-compact quasi-separated case of Stacks 0960 and 095I, and Zariski descent for constructibility, Stacks 095F”.
+**`Stacks.EtaleCohomology.minus_and_isConstructible_derivedTensor_of_arbitraryScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/DerivedTensorArbitraryScheme.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/DerivedTensorArbitraryScheme.lean#L334). The attribute's comment: “for an arbitrary scheme: both halves of the conclusion, the boundedness estimate for the derived tensor product and the constructible case alike, from the bounded above representative with flat etale stalks of Stacks 05T7 and 093B (2), the quasi-compact quasi-separated case of Stacks 0960 and 095I, and Zariski descent for constructibility, Stacks 095F”.
 
 > **Stacks 0961.** Let `X` be a scheme, `Λ` a Noetherian ring and `K, L ∈ D_c^-(X_étale, Λ)`.
 > Then `K ⊗_Λ^L L` is in `D_c^-(X_étale, Λ)`: it is bounded above, and all of its cohomology
@@ -429,7 +429,7 @@ public theorem minus_and_isConstructible_derivedTensor_of_arbitraryScheme
       IsConstructible B X Λ ((T.obj K.obj).obj L.obj)
 ```
 
-**`Stacks.EtaleCohomology.minus_and_isConstructible_etaleModuleSheafDerivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/EtaleModuleSheafDerivedTensor.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/EtaleModuleSheafDerivedTensor.lean#L299). The attribute's comment: “for the derived tensor product of sheaves of Lambda-modules on the small etale site of an arbitrary scheme, built on K-flat resolutions (Stacks 06YS, 06YU) and shown to be computed by total tensor complexes on bounded above complexes of flat sheaves (Stacks 06YQ)”.
+**`Stacks.EtaleCohomology.minus_and_isConstructible_etaleModuleSheafDerivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/EtaleModuleSheafDerivedTensor.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/EtaleModuleSheafDerivedTensor.lean#L299). The attribute's comment: “for the derived tensor product of sheaves of Lambda-modules on the small etale site of an arbitrary scheme, built on K-flat resolutions (Stacks 06YS, 06YU) and shown to be computed by total tensor complexes on bounded above complexes of flat sheaves (Stacks 06YQ)”.
 
 > **Stacks 0961.** Let `X` be a scheme, `Λ` a Noetherian ring and `K, L ∈ D_c^-(X_étale, Λ)`.
 > Then `K ⊗_Λ^L L` is in `D_c^-(X_étale, Λ)`: it is bounded above, and all of its cohomology
@@ -461,4 +461,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.76, Tag 095V](https://stacks.math.columbia.edu/tag/095V)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

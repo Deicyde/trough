@@ -1,6 +1,6 @@
 # 71 Divisors on Algebraic Spaces
 
-Chapter 71 of the Stacks Project, *Divisors on Algebraic Spaces*, [Tag 0838](https://stacks.math.columbia.edu/tag/0838): the 18 sections of its 19 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 135 tags are carried by 419 declarations of the repository (all in StacksFrontier) and 1 registered declaration.
+Chapter 71 of the Stacks Project, *Divisors on Algebraic Spaces*, [Tag 0838](https://stacks.math.columbia.edu/tag/0838): the 18 sections of its 19 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 135 tags are carried by 407 declarations of the repository (all in StacksFrontier) and 1 registered declaration.
 
 ## [71.2 Associated and weakly… to 71.10 Meromorphic functions and…](part-01/README.md)
 

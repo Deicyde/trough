@@ -8,13 +8,13 @@ proof: formalized
 
 # 82.4 Multiplicities
 
-Section 82.4 of the Stacks Project, [Tag 0EE0](https://stacks.math.columbia.edu/tag/0EE0). 5 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 82.4 of the Stacks Project, [Tag 0EE0](https://stacks.math.columbia.edu/tag/0EE0). 5 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EE1, a lemma
 
 [Tag 0EE1](https://stacks.math.columbia.edu/tag/0EE1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.geometricLength_eq_iff_forall_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricLengthPointIndependence.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricLengthPointIndependence.lean#L168). The attribute's comment: “conditions (1) and (3)”.
+**`AlgebraicGeometry.Space.geometricLength_eq_iff_forall_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricLengthPointIndependence.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricLengthPointIndependence.lean#L168). The attribute's comment: “conditions (1) and (3)”.
 
 > **Stacks 0EE1, conditions (1) and (3).** The length of a quasi-coherent `F` at a geometric
 > point `x̄` is `d` exactly when the length of the Zariski stalk of `φ^* F` is `d` at the point of
@@ -33,7 +33,7 @@ theorem geometricLength_eq_iff_forall_etaleChart {x : GeometricPoint B S hS X}
         chartZariskiLength.{u, u} B S hS hX V.chart (chartPoint B S hS X V) F = d
 ```
 
-**`AlgebraicGeometry.Space.geometricLength_eq_iff_exists_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricLengthPointIndependence.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricLengthPointIndependence.lean#L185). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.geometricLength_eq_iff_exists_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricLengthPointIndependence.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricLengthPointIndependence.lean#L185). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 0EE1, conditions (1) and (2).** The length of a quasi-coherent `F` at a geometric
 > point `x̄` is `d` exactly when the length of the Zariski stalk of `φ^* F` is `d` at the point of
@@ -52,7 +52,7 @@ theorem geometricLength_eq_iff_exists_etaleChart {x : GeometricPoint B S hS X}
         chartZariskiLength.{u, u} B S hS hX V.chart (chartPoint B S hS X V) F = d
 ```
 
-**`AlgebraicGeometry.Space.geometricLength_eq_of_image_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricLengthPointIndependence.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricLengthPointIndependence.lean#L238). The attribute's comment: “independence of the chosen geometric point above a point of the space”.
+**`AlgebraicGeometry.Space.geometricLength_eq_of_image_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricLengthPointIndependence.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricLengthPointIndependence.lean#L238). The attribute's comment: “independence of the chosen geometric point above a point of the space”.
 
 > **Stacks 0EE1: the length at a geometric point does not depend on the geometric point.**
 > Let `F` be a quasi-coherent `𝒪_X`-module and let `x̄` and `ȳ` be geometric points of `X` lying
@@ -71,7 +71,7 @@ theorem geometricLength_eq_of_image_eq (x y : GeometricPoint B S hS X)
     geometricLength B S hS ⟨X, hX⟩ x F = geometricLength B S hS ⟨X, hX⟩ y F
 ```
 
-**`AlgebraicGeometry.Space.length_etaleLocalRing_eq_length_chartLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkLength.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkLength.lean#L93). The attribute's comment: “the structure sheaf: lengths agree on an étale scheme chart”.
+**`AlgebraicGeometry.Space.length_etaleLocalRing_eq_length_chartLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkLength.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkLength.lean#L93). The attribute's comment: “the structure sheaf: lengths agree on an étale scheme chart”.
 
 > **Stacks 0EE1 for the structure sheaf.** The étale local ring of an algebraic space at a
 > geometric point has the same length as the local ring of any étale scheme chart at a point over
@@ -89,7 +89,7 @@ theorem length_etaleLocalRing_eq_length_chartLocalRing {x : GeometricPoint B S h
       Module.length ↥(chartLocalRing B S hS X V) ↥(chartLocalRing B S hS X V)
 ```
 
-**`AlgebraicGeometry.Space.tfae_hasLengthAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LengthAtPoint.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LengthAtPoint.lean#L200).
+**`AlgebraicGeometry.Space.tfae_hasLengthAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LengthAtPoint.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LengthAtPoint.lean#L200).
 
 > **Stacks 0EE1 at a point `x` of `|X|`: conditions (1), (2) and (3) are equivalent.** For a
 > quasi-coherent `𝒪_X`-module `F`, a point `x ∈ |X|` and `d ∈ ℕ∞`, the following are
@@ -127,7 +127,7 @@ theorem tfae_hasLengthAt (F : Modules.{u, u} B S hS X hX) [F.IsQuasicoherentOnSi
 
 [Tag 0EE2](https://stacks.math.columbia.edu/tag/0EE2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.geometricLength`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricLength.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricLength.lean#L98). The attribute's comment: “at a geometric point; no declaration packages a chosen geometric point above a point of `|X|` together with the independence of Lemma 0EE1 (`AlgebraicGeometry.Space.geometricLength_eq_of_image_eq`) into the definition at a point of `|X|`”.
+**`AlgebraicGeometry.Space.geometricLength`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricLength.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricLength.lean#L98). The attribute's comment: “at a geometric point; no declaration packages a chosen geometric point above a point of `|X|` together with the independence of Lemma 0EE1 (`AlgebraicGeometry.Space.geometricLength_eq_of_image_eq`) into the definition at a point of `|X|`”.
 
 > **The length of an `𝒪_X`-module at a geometric point.** For an algebraic space `X` over a
 > scheme `S`, a geometric point `x̄` of `X` and an `𝒪_X`-module `F`, this is the length of the
@@ -145,7 +145,7 @@ def geometricLength (X : AlgebraicSpaces B S hS) (x : GeometricPoint B S hS X.1)
     (F : Modules.{u, m} B S hS X.1 X.2) : ℕ∞
 ```
 
-**`AlgebraicGeometry.Space.HasLengthAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LengthAtPoint.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LengthAtPoint.lean#L102).
+**`AlgebraicGeometry.Space.HasLengthAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LengthAtPoint.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LengthAtPoint.lean#L102).
 
 > **Stacks 0EE2: `F` has length `d` at `x`.** For a quasi-coherent `𝒪_X`-module `F`, a point
 > `x` of `|X|` and `d ∈ ℕ∞`, this says that the stalk `F_{x̄}` has length `d` over the étale local
@@ -168,7 +168,7 @@ def HasLengthAt (F : Modules.{u, u} B S hS X hX) [F.IsQuasicoherentOnSite]
 
 [Tag 0EE3](https://stacks.math.columbia.edu/tag/0EE3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.geometricLength_chartDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionGeometricLength.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionGeometricLength.lean#L450). The attribute's comment: “at a geometric point of the source, and for the direct image of modules along base change of étale scheme charts; the form at a point of the space is `AlgebraicGeometry.Space.lengthAtPoint_chartDirectImage_iff` of `StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionLengthAtPoint.lean`”.
+**`AlgebraicGeometry.Space.geometricLength_chartDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionGeometricLength.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionGeometricLength.lean#L450). The attribute's comment: “at a geometric point of the source, and for the direct image of modules along base change of étale scheme charts; the form at a point of the space is `AlgebraicGeometry.Space.lengthAtPoint_chartDirectImage_iff` of `StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionLengthAtPoint.lean`”.
 
 > **Stacks 0EE3 for algebraic spaces, at a geometric point.** Let `f : X ⟶ Y` be a closed
 > immersion of algebraic spaces over a scheme `S`, let `G` be an `𝒪_X`-module and let `x̄` be a
@@ -192,7 +192,7 @@ theorem geometricLength_chartDirectImage (f : X ⟶ Y) (hf : IsClosedImmersion B
       geometricLength B S hS X x G
 ```
 
-**`AlgebraicGeometry.Space.geometricLength_chartDirectImage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionGeometricLength.lean, line 470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionGeometricLength.lean#L470). The attribute's comment: “at a geometric point of the source, and for the direct image of modules along base change of étale scheme charts; the form at a point of the space is `AlgebraicGeometry.Space.lengthAtPoint_chartDirectImage_iff` of `StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionLengthAtPoint.lean`”.
+**`AlgebraicGeometry.Space.geometricLength_chartDirectImage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionGeometricLength.lean, line 470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionGeometricLength.lean#L470). The attribute's comment: “at a geometric point of the source, and for the direct image of modules along base change of étale scheme charts; the form at a point of the space is `AlgebraicGeometry.Space.lengthAtPoint_chartDirectImage_iff` of `StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionLengthAtPoint.lean`”.
 
 > **Stacks 0EE3 for algebraic spaces, at a geometric point**, in the iff form of the source:
 > for every `d` in `ℕ∞ = {0, 1, 2, …, ∞}`, the module `G` has length `d` at the geometric
@@ -209,7 +209,7 @@ theorem geometricLength_chartDirectImage_iff (f : X ⟶ Y)
         ((smallBaseChangeModulePushforward B S hS f hf.rep).obj G) = d
 ```
 
-**`AlgebraicGeometry.Space.lengthAtPoint_chartDirectImage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionLengthAtPoint.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionLengthAtPoint.lean#L226). The attribute's comment: “at a point of the space, for the direct image of modules along base change of étale scheme charts”.
+**`AlgebraicGeometry.Space.lengthAtPoint_chartDirectImage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionLengthAtPoint.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionLengthAtPoint.lean#L226). The attribute's comment: “at a point of the space, for the direct image of modules along base change of étale scheme charts”.
 
 > **Stacks 0EE3 at a point of the space.** Let `f : X ⟶ Y` be a closed immersion of algebraic
 > spaces over a scheme `S`, let `G` be a quasi-coherent `𝒪_X`-module, let `p` be a point of `|X|`
@@ -230,7 +230,7 @@ theorem lengthAtPoint_chartDirectImage_iff (f : X ⟶ Y)
         (chartDirectImage B S hS f hf G) = d
 ```
 
-**`Stacks.ClosedImmersion.length_stalkObj_pushforward_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/StalkLength.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/StalkLength.lean#L186). The attribute's comment: “for a closed immersion of schemes”.
+**`Stacks.ClosedImmersion.length_stalkObj_pushforward_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/StalkLength.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/StalkLength.lean#L186). The attribute's comment: “for a closed immersion of schemes”.
 
 > **Stacks 0EE3 for a closed immersion of schemes**, in the form the source states: for
 > `d ∈ {0, 1, 2, …, ∞}`, the module `G` has length `d` at `z` if and only if `i_* G` has length
@@ -253,7 +253,7 @@ theorem length_stalkObj_pushforward_eq_iff {Z X : Scheme.{u}} (i : Z ⟶ X)
 
 [Tag 0EE4](https://stacks.math.columbia.edu/tag/0EE4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isDecentSpace_iff_isAbsolutelyQuasiSeparated_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/MultiplicityAtPoint.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/MultiplicityAtPoint.lean#L126). The attribute's comment: “decent iff quasi-separated”.
+**`AlgebraicGeometry.Space.isDecentSpace_iff_isAbsolutelyQuasiSeparated_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/MultiplicityAtPoint.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/MultiplicityAtPoint.lean#L126). The attribute's comment: “decent iff quasi-separated”.
 
 > **The parenthetical of Stacks 0EE4.**  A locally Noetherian algebraic space over `S` is
 > decent if and only if it is quasi-separated.
@@ -269,7 +269,7 @@ theorem isDecentSpace_iff_isAbsolutelyQuasiSeparated_of_isLocallyNoetherian
     IsDecentSpace B S hS X ↔ IsAbsolutelyQuasiSeparated B S hS B.contains_terminal X
 ```
 
-**`AlgebraicGeometry.Space.tfae_isGenericPoint_supp_restrictToChart_geometricLength`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/MultiplicityAtPoint.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/MultiplicityAtPoint.lean#L325). The attribute's comment: “conditions (1), (2) and (3)”.
+**`AlgebraicGeometry.Space.tfae_isGenericPoint_supp_restrictToChart_geometricLength`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/MultiplicityAtPoint.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/MultiplicityAtPoint.lean#L325). The attribute's comment: “conditions (1), (2) and (3)”.
 
 > **Stacks 0EE4, conditions (1), (2) and (3).**  Let `X` be a locally Noetherian algebraic
 > space over `S`, let `F` be a coherent `𝒪_X`-module and let `x ∈ |X|`.  The following are
@@ -311,7 +311,7 @@ theorem tfae_isGenericPoint_supp_restrictToChart_geometricLength
           geometricLength B S hS X xbar F ≠ ⊤ ∧ 0 < geometricLength B S hS X xbar F]
 ```
 
-**`AlgebraicGeometry.Space.tfae_isGenericPoint_supportOfSheaf_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/MultiplicityAtPoint.lean, line 451](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/MultiplicityAtPoint.lean#L451). The attribute's comment: “conditions (1) to (4), for a decent space”.
+**`AlgebraicGeometry.Space.tfae_isGenericPoint_supportOfSheaf_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/MultiplicityAtPoint.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/MultiplicityAtPoint.lean#L451). The attribute's comment: “conditions (1) to (4), for a decent space”.
 
 > **Stacks 0EE4, conditions (1) to (4), for a decent space.**  Let `X` be a locally Noetherian
 > algebraic space over `S` which is decent (equivalently, by
@@ -354,7 +354,7 @@ theorem tfae_isGenericPoint_supportOfSheaf_of_isDecentSpace
 
 [Tag 0EE6](https://stacks.math.columbia.edu/tag/0EE6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGenericPoint_of_deltaDimensionClosed_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/MaximalDeltaDimension.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/MaximalDeltaDimension.lean#L60).
+**`AlgebraicGeometry.Space.isGenericPoint_of_deltaDimensionClosed_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/MaximalDeltaDimension.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/MaximalDeltaDimension.lean#L60).
 
 > **Stacks 0EE6.** A point of a closed set of points at which the induced dimension function
 > attains the delta-dimension bound is a generic point of an irreducible component of that set.
@@ -375,4 +375,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 82.4, Tag 0EE0](https://stacks.math.columbia.edu/tag/0EE0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

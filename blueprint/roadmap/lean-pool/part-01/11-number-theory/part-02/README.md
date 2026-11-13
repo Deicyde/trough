@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Exceptional Set in the abc… to Modular forms and the…
+# Exact odd-prime distributions… to Minimum modulus for the unique…
 
+- [Exact odd-prime distributions of central-binomial valuations](odd-prime-valuation-distribution.md)
 - [Exceptional Set in the abc Conjecture](abc-exceptions.md)
 - [Fermat's Last Theorem for regular primes](flt-regular.md)
 - [FLT Eichler-Shimura](flt-eichler-shimura.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Linear independence of 1, zeta(2), and zeta(3)](zeta2-zeta3-linear-independence.md)
 - [Markoff mod p](markoff-modp.md)
 - [Minimum modulus for the unique multiset-sum problem](min-modulus-unique-multiset-sum.md)
-- [Modular forms and the generalized residue theorem](leanmodularforms.md)

@@ -8,7 +8,7 @@ proof: formalized
 
 # 20.12 Flasque sheaves
 
-Section 20.12 of the Stacks Project, [Tag 09SV](https://stacks.math.columbia.edu/tag/09SV). 6 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.12 of the Stacks Project, [Tag 09SV](https://stacks.math.columbia.edu/tag/09SV). 6 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09SW, a definition
 
@@ -16,14 +16,14 @@ Section 20.12 of the Stacks Project, [Tag 09SV](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`TopCat.Presheaf.IsFlasque`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopCat.Presheaf.IsFlasque#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch20.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch20.lean#L45) (StacksFrontier): “flasque presheaf: every restriction map is an epimorphism (for presheaves in any category)”.
-- [`CategoryTheory.epi_iff_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.epi_iff_surjective#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch20.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch20.lean#L47) (StacksFrontier): “for presheaves of sets, an epimorphism is a surjection”.
+- [`TopCat.Presheaf.IsFlasque`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopCat.Presheaf.IsFlasque#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch20.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch20.lean#L45) (StacksFrontier): “flasque presheaf: every restriction map is an epimorphism (for presheaves in any category)”.
+- [`CategoryTheory.epi_iff_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.epi_iff_surjective#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch20.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch20.lean#L47) (StacksFrontier): “for presheaves of sets, an epimorphism is a surjection”.
 
 ## Tag 09SX, a lemma
 
 [Tag 09SX](https://stacks.math.columbia.edu/tag/09SX) in the Stacks Project.
 
-**`Stacks.Cohomology.isFlasque_of_injective_module`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveFlasqueModules.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveFlasqueModules.lean#L158). References: EGA 0 (12.2.1), “partial”; SGA 4 V (4.10), “2), F=A, ringed space”.
+**`Stacks.Cohomology.isFlasque_of_injective_module`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveFlasqueModules.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveFlasqueModules.lean#L158). References: EGA 0 (12.2.1), “partial”; SGA 4 V (4.10), “2), F=A, ringed space”.
 
 > **Stacks Project, Tag 09SX.** An injective sheaf of modules on a ringed space is flasque,
 > stated with Mathlib's `TopCat.Presheaf.IsFlasque` for the underlying sheaf of abelian groups.
@@ -41,7 +41,7 @@ instance isFlasque_of_injective_module
 
 [Tag 09SY](https://stacks.math.columbia.edu/tag/09SY) in the Stacks Project.
 
-**`Stacks.Cohomology.FlasqueAcyclic.rightAcyclic_evaluation_of_isFlasque`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/FlasqueModulesAreAcyclic.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/FlasqueModulesAreAcyclic.lean#L76). References: SGA 4 V (4.6), “special case”.
+**`Stacks.Cohomology.FlasqueAcyclic.rightAcyclic_evaluation_of_isFlasque`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/FlasqueModulesAreAcyclic.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/FlasqueModulesAreAcyclic.lean#L76). References: SGA 4 V (4.6), “special case”.
 
 > **Stacks 09SY.** A flasque sheaf of modules is acyclic for the derived sections functor
 > on every open subset. Taking `U = ⊤` gives acyclicity for global sections.
@@ -57,7 +57,7 @@ public lemma rightAcyclic_evaluation_of_isFlasque
 
 [Tag 09SZ](https://stacks.math.columbia.edu/tag/09SZ) in the Stacks Project.
 
-**`Stacks.Cohomology.FlasqueCech.isZero_cechComplex_homology_of_isFlasque`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/FlasqueCechVanishing.lean, line 776](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/FlasqueCechVanishing.lean#L776).
+**`Stacks.Cohomology.FlasqueCech.isZero_cechComplex_homology_of_isFlasque`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/FlasqueCechVanishing.lean, line 776](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/FlasqueCechVanishing.lean#L776).
 
 > **Stacks 09SZ.** A flasque sheaf has zero Čech cohomology in every positive degree.
 
@@ -73,7 +73,7 @@ public lemma isZero_cechComplex_homology_of_isFlasque
 
 [Tag 09T0](https://stacks.math.columbia.edu/tag/09T0) in the Stacks Project.
 
-**`Stacks.Cohomology.FlasquePushforward.isZero_rightDerivedPlus_modulePushforward_of_isFlasque`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/FlasquePushforwardVanishing.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/FlasquePushforwardVanishing.lean#L220). References: SGA 4 V (5.2), “special case”.
+**`Stacks.Cohomology.FlasquePushforward.isZero_rightDerivedPlus_modulePushforward_of_isFlasque`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/FlasquePushforwardVanishing.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/FlasquePushforwardVanishing.lean#L220). References: SGA 4 V (5.2), “special case”.
 
 > A flasque sheaf of modules has vanishing positive higher direct images under any
 > morphism of ringed spaces.
@@ -91,7 +91,7 @@ public lemma isZero_rightDerivedPlus_modulePushforward_of_isFlasque
 
 [Tag 0A36](https://stacks.math.columbia.edu/tag/0A36) in the Stacks Project.
 
-**`Stacks.Cohomology.RaviCech.isZero_cechCohomology_of_surjective_restrictions`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/VanishingFromSurjectiveRestrictions.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/VanishingFromSurjectiveRestrictions.lean#L206).
+**`Stacks.Cohomology.RaviCech.isZero_cechCohomology_of_surjective_restrictions`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/VanishingFromSurjectiveRestrictions.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/VanishingFromSurjectiveRestrictions.lean#L206).
 
 > If restriction from the covered open to every union of nonempty finite intersections of
 > members of the cover is surjective, then the positive-degree Čech cohomology of the cover
@@ -116,4 +116,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.12, Tag 09SV](https://stacks.math.columbia.edu/tag/09SV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

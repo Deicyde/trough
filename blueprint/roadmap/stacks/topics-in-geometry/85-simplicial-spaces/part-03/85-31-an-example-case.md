@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.31 An example case
 
-Section 85.31 of the Stacks Project, [Tag 024F](https://stacks.math.columbia.edu/tag/024F). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 85.31 of the Stacks Project, [Tag 024F](https://stacks.math.columbia.edu/tag/024F). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 024G, a lemma
 
 [Tag 024G](https://stacks.math.columbia.edu/tag/024G) in the Stacks Project.
 
-**`AlgebraicGeometry.Simplicial.pointClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean#L135). The attribute's comment: “the subset T\_y”.
+**`AlgebraicGeometry.Simplicial.pointClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean#L135). The attribute's comment: “the subset T\_y”.
 
 > The points reached from `y` by a one-simplex whose first face is `y`.
 
@@ -23,7 +23,7 @@ def pointClass (Y : SimplicialObject Scheme.{u}) (y : Y _⦋0⦌) :
     Set (Y _⦋0⦌)
 ```
 
-**`AlgebraicGeometry.Simplicial.mem_pointClass_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean#L142). The attribute's comment: “membership of y in T\_y”.
+**`AlgebraicGeometry.Simplicial.mem_pointClass_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean#L142). The attribute's comment: “membership of y in T\_y”.
 
 > A point belongs to the subset of points reachable from it.
 
@@ -34,7 +34,7 @@ theorem mem_pointClass_self {X S : Scheme.{u}} (f : X ⟶ S)
     y ∈ pointClass Y y
 ```
 
-**`AlgebraicGeometry.Simplicial.pointClass_eq_of_nonempty_inter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean#L151). The attribute's comment: “intersecting classes are equal”.
+**`AlgebraicGeometry.Simplicial.pointClass_eq_of_nonempty_inter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean#L151). The attribute's comment: “intersecting classes are equal”.
 
 > If two subsets of reachable points meet, they are the same subset.
 
@@ -50,7 +50,7 @@ theorem pointClass_eq_of_nonempty_inter {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 024H](https://stacks.math.columbia.edu/tag/024H) in the Stacks Project.
 
-**`AlgebraicGeometry.Simplicial.isCompact_relatedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean#L220).
+**`AlgebraicGeometry.Simplicial.isCompact_relatedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean#L220).
 
 > The vertices connected to a fixed vertex in a cartesian simplicial scheme
 > over the Čech nerve of a quasi-compact morphism form a quasi-compact set.
@@ -68,7 +68,7 @@ theorem isCompact_relatedPoints {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 024I](https://stacks.math.columbia.edu/tag/024I) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentDatum.isEffective_of_iso_sigma_spec_isArtinianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ArtinianDisjointUnionDescent.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ArtinianDisjointUnionDescent.lean#L199). The attribute's comment: “effectivity of a datum carried by a disjoint union of Artinian spectra”.
+**`AlgebraicGeometry.DescentDatum.isEffective_of_iso_sigma_spec_isArtinianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ArtinianDisjointUnionDescent.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ArtinianDisjointUnionDescent.lean#L199). The attribute's comment: “effectivity of a datum carried by a disjoint union of Artinian spectra”.
 
 > Let `f : X ⟶ S` be a quasi-compact, flat, surjective morphism of schemes and let `(V, φ)` be a
 > descent datum relative to `X/S`. If `V` is a disjoint union of spectra of Artinian rings then
@@ -89,4 +89,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.31, Tag 024F](https://stacks.math.columbia.edu/tag/024F)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

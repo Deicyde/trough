@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.112 Group actions and integral closure
 
-Section 15.112 of the Stacks Project, [Tag 0BRE](https://stacks.math.columbia.edu/tag/0BRE). 11 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.112 of the Stacks Project, [Tag 0BRE](https://stacks.math.columbia.edu/tag/0BRE). 11 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BRF, a lemma
 
 [Tag 0BRF](https://stacks.math.columbia.edu/tag/0BRF) in the Stacks Project.
 
-**`MulSemiringAction.exists_monic_map_eq_X_sub_C_pow_card`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 1050](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Quotient.lean#L1050).
+**`MulSemiringAction.exists_monic_map_eq_X_sub_C_pow_card`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 1050](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Quotient.lean#L1050).
 
 > **Stacks 0BRF.** Let `φ : A → B` be a surjective `G`-equivariant ring homomorphism for a
 > finite group `G`.  Every `b ∈ B^G` is matched by a monic polynomial `P` over `A^G` whose image
@@ -45,7 +45,7 @@ theorem exists_monic_map_eq_X_sub_C_pow_card
 
 [Tag 09EG](https://stacks.math.columbia.edu/tag/09EG) in the Stacks Project.
 
-**`FixedPoints.quotientComparison_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Quotient.lean#L376).
+**`FixedPoints.quotientComparison_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Quotient.lean#L376).
 
 > **(Well-definedness of `R^G/I^G ⊆ (R/I)^G`.)** The canonical comparison map
 > `φ` is injective, so `R^G / I^G` is (isomorphic to) a subring of `(R/I)^G`.
@@ -61,7 +61,7 @@ theorem quotientComparison_injective :
     Function.Injective (compMap R G I hcompat)
 ```
 
-**`FixedPoints.compMap_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Quotient.lean#L461).
+**`FixedPoints.compMap_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Quotient.lean#L461).
 
 > **(Integrality.)** Via the comparison map `φ`, the ring `(R/I)^G` is an
 > integral extension of `R^G / I^G`: every element of `(R/I)^G` is a root of a monic
@@ -82,7 +82,7 @@ theorem compMap_isIntegral :
       (FixedPoints.subring (R ⧸ I) G)
 ```
 
-**`FixedPoints.quotientComparison_comap_isHomeomorph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Quotient.lean#L475).
+**`FixedPoints.quotientComparison_comap_isHomeomorph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Quotient.lean#L475).
 
 > **(Homeomorphism on spectra.)** The induced map on prime spectra
 > `Spec(φ) : Spec((R/I)^G) → Spec(R^G/I^G)` is a homeomorphism for the Zariski topologies.
@@ -95,7 +95,7 @@ theorem quotientComparison_comap_isHomeomorph :
     IsHomeomorph (PrimeSpectrum.comap (compMap R G I hcompat))
 ```
 
-**`FixedPoints.quotientComparison_residueField_isPurelyInseparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Quotient.lean#L504).
+**`FixedPoints.quotientComparison_residueField_isPurelyInseparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Quotient.lean#L504).
 
 > **(Purely inseparable residue extensions.)** For every prime `𝔮 ⊆ (R/I)^G` with
 > contraction `𝔭 = φ⁻¹(𝔮) ⊆ R^G/I^G`, the induced extension of residue fields
@@ -116,7 +116,7 @@ theorem quotientComparison_residueField_isPurelyInseparable
 
 [Tag 0H34](https://stacks.math.columbia.edu/tag/0H34) in the Stacks Project.
 
-**`Stacks.Invariant.QuotientComparison.charpolyFixed_map_mk_of_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 861](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Quotient.lean#L861).
+**`Stacks.Invariant.QuotientComparison.charpolyFixed_map_mk_of_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 861](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Quotient.lean#L861).
 
 > **Stacks 0H34 (tag 0H34 = Lemma 15.112.3).** For `x ∈ JR`, the characteristic
 > polynomial `∏_{σ ∈ G} (T - σ x) = T^n + a₁T^{n-1} + … + aₙ` has all its non-leading
@@ -141,7 +141,7 @@ theorem charpolyFixed_map_mk_of_mem [Fintype G] (J : Ideal (FixedPoints.subring 
 
 [Tag 0H35](https://stacks.math.columbia.edu/tag/0H35) in the Stacks Project.
 
-**`Stacks.Invariant.QuotientComparison.exists_monic_map_eq_X_sub_C_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 898](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Quotient.lean#L898). The attribute's comment: “(1)”.
+**`Stacks.Invariant.QuotientComparison.exists_monic_map_eq_X_sub_C_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 898](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Quotient.lean#L898). The attribute's comment: “(1)”.
 
 > **(Lifting characteristic-polynomial form.)** For every `b ∈ (R / JR)^G`
 > there is a monic polynomial `P ∈ (R^G / J)[T]` whose image under
@@ -157,7 +157,7 @@ theorem exists_monic_map_eq_X_sub_C_pow [Fintype G] (J : Ideal (FixedPoints.subr
           = (Polynomial.X - Polynomial.C b) ^ (Fintype.card G)
 ```
 
-**`Stacks.Invariant.QuotientComparison.X_sub_C_pow_eq_X_pow_of_mem_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 928](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Quotient.lean#L928). The attribute's comment: “(2)”.
+**`Stacks.Invariant.QuotientComparison.X_sub_C_pow_eq_X_pow_of_mem_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 928](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Quotient.lean#L928). The attribute's comment: “(2)”.
 
 > **(Kernel elements are nilpotent-like.)** For every
 > `a ∈ ker(invariantComparison J)` we have `(X - C a) ^ n = X ^ n` in
@@ -170,7 +170,7 @@ theorem X_sub_C_pow_eq_X_pow_of_mem_ker [Fintype G] (J : Ideal (FixedPoints.subr
       = (Polynomial.X : Polynomial ((FixedPoints.subring R G) ⧸ J)) ^ (Fintype.card G)
 ```
 
-**`Stacks.Invariant.QuotientComparison.invariantComparison_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 974](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Quotient.lean#L974). The attribute's comment: “final statement, integrality”.
+**`Stacks.Invariant.QuotientComparison.invariantComparison_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 974](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Quotient.lean#L974). The attribute's comment: “final statement, integrality”.
 
 > **(In particular: integrality.)** The comparison map
 > `Φ : R^G / J → (R / JR)^G` is an integral ring map: every `b ∈ (R / JR)^G` is a root
@@ -182,7 +182,7 @@ theorem invariantComparison_isIntegral [Fintype G] (J : Ideal (FixedPoints.subri
     (invariantComparison J).IsIntegral
 ```
 
-**`Stacks.Invariant.QuotientComparison.invariantComparison_comap_isHomeomorph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 986](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Quotient.lean#L986). The attribute's comment: “final statement, homeomorphism on spectra”.
+**`Stacks.Invariant.QuotientComparison.invariantComparison_comap_isHomeomorph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 986](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Quotient.lean#L986). The attribute's comment: “final statement, homeomorphism on spectra”.
 
 > **(In particular: homeomorphism on spectra.)** `Spec(Φ) : Spec((R / JR)^G) →
 > Spec(R^G / J)` is a homeomorphism.  This is `PrimeSpectrum.isHomeomorph\_comap`
@@ -195,7 +195,7 @@ theorem invariantComparison_comap_isHomeomorph [Fintype G] (J : Ideal (FixedPoin
     IsHomeomorph (PrimeSpectrum.comap (invariantComparison J))
 ```
 
-**`Stacks.Invariant.QuotientComparison.invariantComparison_residueField_isPurelyInseparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 1000](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Quotient.lean#L1000). The attribute's comment: “final statement, purely inseparable residue fields”.
+**`Stacks.Invariant.QuotientComparison.invariantComparison_residueField_isPurelyInseparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 1000](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Quotient.lean#L1000). The attribute's comment: “final statement, purely inseparable residue fields”.
 
 > **(In particular: purely inseparable residue extensions.)** For every prime
 > `𝔮 ⊆ (R / JR)^G` with contraction `𝔭 = Φ⁻¹(𝔮) ⊆ R^G / J`, the induced extension of
@@ -217,7 +217,7 @@ theorem invariantComparison_residueField_isPurelyInseparable [Fintype G]
 
 [Tag 0H36](https://stacks.math.columbia.edu/tag/0H36) in the Stacks Project.
 
-**`Stacks.Invariant.QuotientComparison.invariantComparison_bijective_of_isUnit_card`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 1107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Quotient.lean#L1107).
+**`Stacks.Invariant.QuotientComparison.invariantComparison_bijective_of_isUnit_card`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 1107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Quotient.lean#L1107).
 
 > **Stacks 0H36.** If the order of the finite group `G` acting on `R` is invertible in `R`,
 > the canonical comparison map `Φ : R^G / J → (R / JR)^G` is an isomorphism.
@@ -238,7 +238,7 @@ theorem invariantComparison_bijective_of_isUnit_card
 
 [Tag 0BRG](https://stacks.math.columbia.edu/tag/0BRG) in the Stacks Project.
 
-**`FixedPoints.exists_monic_polynomial_and_pow_eq_of_invariant_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/BaseChange.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/BaseChange.lean#L399).
+**`FixedPoints.exists_monic_polynomial_and_pow_eq_of_invariant_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/BaseChange.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/BaseChange.lean#L397).
 
 > **Stacks 0BRG.** Invariants in `A ⊗[R^G] R` lift to monic degree-`|G|` polynomial
 > relations over `A`; moreover, an element in the kernel of the canonical map from `A` to those
@@ -277,7 +277,7 @@ theorem exists_monic_polynomial_and_pow_eq_of_invariant_tensorProduct
 
 [Tag 0BRH](https://stacks.math.columbia.edu/tag/0BRH) in the Stacks Project.
 
-**`FixedPoints.canonicalMap_to_invariants_bijective_of_flat_and_isIntegral_isHomeomorph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/BaseChange.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/BaseChange.lean#L500).
+**`FixedPoints.canonicalMap_to_invariants_bijective_of_flat_and_isIntegral_isHomeomorph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/BaseChange.lean, line 498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/BaseChange.lean#L498).
 
 > **Stacks 0BRH.** The canonical map from a flat algebra over an invariant ring to the
 > invariants after extension of scalars is bijective.  In general, the map is integral, is a
@@ -320,7 +320,7 @@ theorem canonicalMap_to_invariants_bijective_of_flat_and_isIntegral_isHomeomorph
 
 Declarations registered for the tag:
 
-- [`Algebra.IsInvariant.exists_smul_of_under_eq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.IsInvariant.exists_smul_of_under_eq#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Invariant/Primes.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Primes.lean#L60) (StacksFrontier).
+- [`Algebra.IsInvariant.exists_smul_of_under_eq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.IsInvariant.exists_smul_of_under_eq#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Invariant/Primes.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Primes.lean#L60) (StacksFrontier).
 
 ## Tag 0BRJ, a lemma
 
@@ -328,14 +328,14 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Ideal.IsFractionRing.normal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.IsFractionRing.normal#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Invariant/Primes.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Primes.lean#L62) (StacksFrontier): “normality, hence algebraicity, of the residue field extension”.
-- [`IsFractionRing.stabilizerHom_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsFractionRing.stabilizerHom_surjective#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Invariant/Primes.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Primes.lean#L65) (StacksFrontier): “surjectivity of the decomposition group onto the relative automorphisms”. References: SGA 1 V (1.1), “more general”; SGA 1 V (1.3), “special case”.
+- [`Ideal.IsFractionRing.normal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.IsFractionRing.normal#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Invariant/Primes.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Primes.lean#L62) (StacksFrontier): “normality, hence algebraicity, of the residue field extension”.
+- [`IsFractionRing.stabilizerHom_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsFractionRing.stabilizerHom_surjective#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Invariant/Primes.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Primes.lean#L65) (StacksFrontier): “surjectivity of the decomposition group onto the relative automorphisms”. References: SGA 1 V (1.1), “more general”; SGA 1 V (1.3), “special case”.
 
 ## Tag 0BRK, a lemma
 
 [Tag 0BRK](https://stacks.math.columbia.edu/tag/0BRK) in the Stacks Project.
 
-**`IsIntegralClosure.exists_smul_of_under_eq_and_residue_normal_stabilizerHom_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Primes.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Primes.lean#L337). References: SGA 1 V (1.1), “special case”; SGA 1 V (1.3), “special case”.
+**`IsIntegralClosure.exists_smul_of_under_eq_and_residue_normal_stabilizerHom_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Primes.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Primes.lean#L337). References: SGA 1 V (1.1), “special case”; SGA 1 V (1.3), “special case”.
 
 > In a possibly infinite Galois extension, the primes of an integral closure above a fixed
 > prime form one Galois orbit.  The induced residue-field extension is normal, and its
@@ -371,7 +371,7 @@ theorem exists_smul_of_under_eq_and_residue_normal_stabilizerHom_surjective
 
 [Tag 0BSX](https://stacks.math.columbia.edu/tag/0BSX) in the Stacks Project.
 
-**`IsIntegralClosure.image_stabilizer_and_inertia_restrictNormalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Primes.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Primes.lean#L403).
+**`IsIntegralClosure.image_stabilizer_and_inertia_restrictNormalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Primes.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Primes.lean#L403).
 
 > In a tower of possibly infinite Galois extensions, restriction maps the decomposition group
 > and the inertia group at a prime of the larger integral closure onto the corresponding groups at
@@ -420,4 +420,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.112, Tag 0BRE](https://stacks.math.columbia.edu/tag/0BRE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

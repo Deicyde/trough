@@ -8,26 +8,26 @@ proof: formalized
 
 # Sharpness of the phase transition for Bernoulli bond percolation on ℤ^d
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/sharpness-of-the-phase-transition-for-bernoulli/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/sharpness-of-the-phase-transition-for-bernoulli/index.html).
 
 ## Positivity of the Duminil-Copin–Tassion threshold
 
 `p̃_c(d) > 0` for `d ≥ 1`: at `p = 1/(4d + 1)`, `φ_p({0}) ≤ 2dp < 1`.
 
-Formalized by `StatMech.Percolation.tildePc_pos`, a theorem declared in [MathlibExt/Probability/Percolation/SharpnessTheorem.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Percolation/SharpnessTheorem.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/sharpness-of-the-phase-transition-for-bernoulli/index.html#tilde-pc-pos).
+Formalized by `StatMech.Percolation.tildePc_pos`, a theorem declared in [MathlibExt/Probability/Percolation/SharpnessTheorem.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Percolation/SharpnessTheorem.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/sharpness-of-the-phase-transition-for-bernoulli/index.html#tilde-pc-pos).
 
 ## Straight path along the first coordinate axis
 
 The direction sequence of the straight path from the origin along the first coordinate axis.
 
-Formalized by `StatMech.Percolation.lineWord`, a definition declared in [MathlibExt/Probability/Percolation/SharpnessTheorem.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Percolation/SharpnessTheorem.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/sharpness-of-the-phase-transition-for-bernoulli/index.html#line-word).
+Formalized by `StatMech.Percolation.lineWord`, a definition declared in [MathlibExt/Probability/Percolation/SharpnessTheorem.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Percolation/SharpnessTheorem.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/sharpness-of-the-phase-transition-for-bernoulli/index.html#line-word).
 
 ## Exponential decay of the one-arm probability below the threshold
 
 Exponential decay of the one-arm probability for every `p ∈ tildePcSet d`, i.e. every `p`
 admitting a finite `S ∋ 0` with `φ_p(S) < 1`.
 
-Formalized by `StatMech.Percolation.crossProb_exp_decay_of_mem_tildePcSet`, a theorem declared in [MathlibExt/Probability/Percolation/SharpnessTheorem.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Percolation/SharpnessTheorem.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/sharpness-of-the-phase-transition-for-bernoulli/index.html#cross-prob-exp-decay-of-mem-tilde-pc-set).
+Formalized by `StatMech.Percolation.crossProb_exp_decay_of_mem_tildePcSet`, a theorem declared in [MathlibExt/Probability/Percolation/SharpnessTheorem.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Percolation/SharpnessTheorem.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/sharpness-of-the-phase-transition-for-bernoulli/index.html#cross-prob-exp-decay-of-mem-tilde-pc-set).
 
 ## Sharpness of the phase transition
 
@@ -49,7 +49,7 @@ Scope of the items:
   (`StatMech.Percolation.pc_two_lt_one_via_fk`), which with item 1 makes item 3 non-vacuous
   there.
 
-Formalized by `StatMech.Percolation.sharp_phase_transition`, a theorem declared in [MathlibExt/Probability/Percolation/SharpnessTheorem.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Percolation/SharpnessTheorem.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/sharpness-of-the-phase-transition-for-bernoulli/index.html#sharp-phase-transition).
+Formalized by `StatMech.Percolation.sharp_phase_transition`, a theorem declared in [MathlibExt/Probability/Percolation/SharpnessTheorem.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Percolation/SharpnessTheorem.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/sharpness-of-the-phase-transition-for-bernoulli/index.html#sharp-phase-transition).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sharpness of the phase transition for Bernoulli bond percolation on ℤ^d](https://deicyde.github.io/atlas-lean/roadmap/Probability/percolation/sharpness/sharpness-of-the-phase-transition-for-bernoulli/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/percolation/sharpness/sharpness-of-the-phase-transition-for-bernoulli)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/percolation/sharpness/sharpness-of-the-phase-transition-for-bernoulli)

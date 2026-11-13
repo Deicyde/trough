@@ -7,7 +7,7 @@ statement: formalized
 
 # Alternating sum- and difference-dominated sets
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/alternating-sum-and-difference-dominated-sets/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/alternating-sum-and-difference-dominated-sets/index.html).
 
 ## Sums and differences of an interval with one point removed
 
@@ -20,7 +20,7 @@ $B - B = \{b - b' : b, b' \in B\}$ is the set of integers from $-(m - 1)$ to $m 
 
 - Yorick Herrmann, Connor Hill, Merlin Phillips, Daniel Flores, Steven J. Miller and Steven Senger, *Additional Constructions of Sequences of Alternating Sum and Difference Dominated Sets*, INTEGERS 26 (2026), Article A88, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.interval_erase_add_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/alternating-sum-and-difference-dominated-sets/index.html#interval-erase-add-sub).
+Stated but not proved: `MetaMathlibExt.interval_erase_add_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/alternating-sum-and-difference-dominated-sets/index.html#interval-erase-add-sub).
 
 ## Alternating sum- and difference-dominated sets from shifted copies
 
@@ -40,7 +40,7 @@ $A_{2l-1} \subsetneq A_{2l} \subsetneq A_{2l+1}$.
 
 - Yorick Herrmann, Connor Hill, Merlin Phillips, Daniel Flores, Steven J. Miller and Steven Senger, *Additional Constructions of Sequences of Alternating Sum and Difference Dominated Sets*, INTEGERS 26 (2026), Article A88, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.alternating_sequence_of_copies` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/alternating-sum-and-difference-dominated-sets/index.html#alternating-sequence-of-copies).
+Stated but not proved: `MetaMathlibExt.alternating_sequence_of_copies` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/alternating-sum-and-difference-dominated-sets/index.html#alternating-sequence-of-copies).
 
 ## Nathanson's sum-dominated set
 
@@ -56,7 +56,7 @@ $\{a - m : a \in A^*\} \subseteq A^* - A^*$.
 
 - Yorick Herrmann, Connor Hill, Merlin Phillips, Daniel Flores, Steven J. Miller and Steven Senger, *Additional Constructions of Sequences of Alternating Sum and Difference Dominated Sets*, INTEGERS 26 (2026), Article A88, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.nathanson_mstd_construction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/alternating-sum-and-difference-dominated-sets/index.html#nathanson-mstd-construction).
+Stated but not proved: `MetaMathlibExt.nathanson_mstd_construction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/alternating-sum-and-difference-dominated-sets/index.html#nathanson-mstd-construction).
 
 ## Alternating sum- and difference-dominated sets from Nathanson's construction
 
@@ -80,7 +80,7 @@ $|A_{2r} + A_{2r}| \le |A_{2r} - A_{2r}| - m + 3$.
 
 - Yorick Herrmann, Connor Hill, Merlin Phillips, Daniel Flores, Steven J. Miller and Steven Senger, *Additional Constructions of Sequences of Alternating Sum and Difference Dominated Sets*, INTEGERS 26 (2026), Article A88, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.alternating_sequence_from_nathanson` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/alternating-sum-and-difference-dominated-sets/index.html#alternating-sequence-from-nathanson).
+Stated but not proved: `MetaMathlibExt.alternating_sequence_from_nathanson` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/AlternatingSumDifferenceDominatedWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/alternating-sum-and-difference-dominated-sets/index.html#alternating-sequence-from-nathanson).
 
 ## Depends on
 
@@ -89,4 +89,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Alternating sum- and difference-dominated sets](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/alternating-sum-and-difference-dominated-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/alternating-sum-and-difference-dominated-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/alternating-sum-and-difference-dominated-sets)

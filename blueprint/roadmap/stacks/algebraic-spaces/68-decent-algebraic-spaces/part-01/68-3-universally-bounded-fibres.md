@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.3 Universally bounded fibres
 
-Section 68.3 of the Stacks Project, [Tag 03JK](https://stacks.math.columbia.edu/tag/03JK). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.3 of the Stacks Project, [Tag 03JK](https://stacks.math.columbia.edu/tag/03JK). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03JL, a definition
 
 [Tag 03JL](https://stacks.math.columbia.edu/tag/03JL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HasUniversallyBoundedFibers`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibres.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibres.lean#L57).
+**`AlgebraicGeometry.Space.HasUniversallyBoundedFibers`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibres.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibres.lean#L57).
 
 > A scheme morphism to a presheaf has universally bounded fibres if every field-valued
 > base change is represented by a finite scheme and all their degrees have one integer bound.
@@ -29,7 +29,7 @@ abbrev HasUniversallyBoundedFibers (B : BigFppfSite.{u}) (S : Scheme.{u})
 
 [Tag 03JM](https://stacks.math.columbia.edu/tag/03JM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasUniversallyBoundedFibers_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibresComposition.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibresComposition.lean#L170).
+**`AlgebraicGeometry.Space.hasUniversallyBoundedFibers_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibresComposition.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibresComposition.lean#L170).
 
 > **Stacks 03JM.** Let `X` be a presheaf on the big fppf site of `S`, let `f : V ⟶ U` be a
 > morphism of schemes over `S` and let `g : U ⟶ X` be a morphism over `S`. If the fibres of `f`
@@ -48,7 +48,7 @@ theorem hasUniversallyBoundedFibers_comp
 
 [Tag 03JN](https://stacks.math.columbia.edu/tag/03JN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasUniversallyBoundedFibers_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibres.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibres.lean#L72).
+**`AlgebraicGeometry.Space.hasUniversallyBoundedFibers_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibres.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibres.lean#L72).
 
 > A representable base change of a scheme morphism with universally bounded fibres
 > is represented by a scheme whose fibres remain universally bounded.
@@ -69,7 +69,7 @@ theorem hasUniversallyBoundedFibers_baseChange
 
 [Tag 03JO](https://stacks.math.columbia.edu/tag/03JO) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasUniversallyBoundedFibers_of_baseChange_of_range_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibresDescent.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibresDescent.lean#L298).
+**`AlgebraicGeometry.Space.hasUniversallyBoundedFibers_of_baseChange_of_range_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibresDescent.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibresDescent.lean#L299).
 
 > **Stacks 03JO.** Let `g : Y ⟶ X` be a morphism of algebraic spaces over `S`, let
 > `f : h_U ⟶ X` be a morphism from a scheme over `S`, and let `h_V ⟶ Y` be a base change of `f`
@@ -94,7 +94,7 @@ theorem hasUniversallyBoundedFibers_of_baseChange_of_range_subset
 
 [Tag 03JP](https://stacks.math.columbia.edu/tag/03JP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasUniversallyBoundedFibers_of_comp_of_surjective_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibresDescent.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibresDescent.lean#L127).
+**`AlgebraicGeometry.Space.hasUniversallyBoundedFibers_of_comp_of_surjective_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibresDescent.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyBoundedFibresDescent.lean#L128).
 
 > **Stacks 03JP.** Let `X` be an algebraic space over `S`, let `U ⟶ V` be a morphism of
 > schemes over `S` and let `V ⟶ X` be a morphism over `S`. If the fibres of the composite
@@ -116,7 +116,7 @@ theorem hasUniversallyBoundedFibers_of_comp_of_surjective_flat
 
 [Tag 03JQ](https://stacks.math.columbia.edu/tag/03JQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.cardinalMk_pointFiber_le_of_hasUniversallyBoundedFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/BoundedPointFibres.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/BoundedPointFibres.lean#L84).
+**`AlgebraicGeometry.Space.cardinalMk_pointFiber_le_of_hasUniversallyBoundedFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/BoundedPointFibres.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/BoundedPointFibres.lean#L84).
 
 > **Stacks 03JQ.** If the fibres of a morphism `f : h_U ⟶ X` from a represented presheaf
 > are universally bounded, then one natural number bounds the number of points of `|h_U|`
@@ -136,4 +136,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.3, Tag 03JK](https://stacks.math.columbia.edu/tag/03JK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Repetitions in words: its own results
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/repetitions-in-words/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/repetitions-in-words/index.html).
 
 Squares, overlaps, cubes and fractional powers in words: square-free and overlap-free words, abelian and k-abelian repetitions, power-free morphisms, Crochemore's test and Dejean's repetition threshold.
 
@@ -35,7 +35,7 @@ Sequences 23 (2020), Article 20.3.1.
 - Period/exponent and `r`/`r⁺`-free definitions, lines 93--99; repetition-threshold definition and exact values, lines 100--113. Original definition/conjecture: Françoise Dejean, "Sur un théorème de Thue", Journal of Combinatorial Theory, Series A 13(1) (1972), 90--99, DOI 10.1016/0097-3165(72)90011-8. Final cases confirmed in 2011 by James D. Currie and Narad Rampersad, "A proof of Dejean's conjecture", Mathematics of Computation 80 (2011), 1063--1070, arXiv:0905.1129, and independently by Michaël Rao, "Last cases of Dejean's conjecture", Theoretical Computer Science 412(27) (2011), 3010--3018, DOI 10.1016/j.tcs.2010.06.020. Lean representation: `Fin n` harmlessly relabels the source `n`-letter alphabet `A_n`; the universal period clause expresses absence of factors with exponent strictly greater than `r`, i.e. `r⁺`-freeness; `RT` is the real-valued `sInf` over `r > 1` admitting such an infinite word.
 - <https://cs.uwaterloo.ca/journals/JIS/VOL23/Mol/mol2.tex>.
 
-Stated but not proved: `MetaMathlibExt.dejean_repetition_threshold` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DejeanRepetitionThresholdWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/DejeanRepetitionThresholdWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/repetitions-in-words/index.html#dejean-repetition-threshold).
+Stated but not proved: `MetaMathlibExt.dejean_repetition_threshold` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/DejeanRepetitionThresholdWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/DejeanRepetitionThresholdWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/repetitions-in-words/index.html#dejean-repetition-threshold).
 
 ## Exponential lower bound for ternary abelian-cube-free words
 
@@ -49,7 +49,7 @@ $2^{n/24} \le C a_n$ for all sufficiently large $n$.
 
 - Ali Aberkane and James D. Currie, *The Number of Ternary Words Avoiding Abelian Cubes Grows Exponentially*, Journal of Integer Sequences 7 (2004), Article 04.2.7, <https://cs.uwaterloo.ca/journals/JIS/VOL7/Currie/currie18.tex>, Second Main Theorem, lines 558-561.
 
-Formalized by `MetaMathlibExt.abelianCubeFree`, a theorem declared in [MathlibExt/Combinatorics/Words/TernaryAbelianCubeFreeLowerBound.lean, line 2229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Words/TernaryAbelianCubeFreeLowerBound.lean#L2229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/repetitions-in-words/index.html#abelian-cube-free).
+Formalized by `MetaMathlibExt.abelianCubeFree`, a theorem declared in [MathlibExt/Combinatorics/Words/TernaryAbelianCubeFreeLowerBound.lean, line 2229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Words/TernaryAbelianCubeFreeLowerBound.lean#L2229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/repetitions-in-words/index.html#abelian-cube-free).
 
 ## Kurosaki's words are $(7/4)^+$-power-free
 
@@ -65,7 +65,7 @@ $4|u| \le 7p$; that is, every factor of $\varphi^n(2)$ has exponent at most $7/4
 
 - Serina Camungol and Narad Rampersad, "Concerning Kurosaki's Squarefree Word," Journal of Integer Sequences 16 (2013), Article 13.9.4, Theorem, lines 184–188, with the σ/ρ/φ definitions at lines 116–124, https://cs.uwaterloo.ca/journals/JIS/VOL16/Camungol/ramper4.tex
 
-Formalized by `MetaMathlibExt.kurosaki_phi_pow_power_free`, a theorem declared in [MathlibExt/Combinatorics/Words/KurosakiPowerFree.lean, line 1165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Words/KurosakiPowerFree.lean#L1165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/repetitions-in-words/index.html#kurosaki-phi-pow-power-free).
+Formalized by `MetaMathlibExt.kurosaki_phi_pow_power_free`, a theorem declared in [MathlibExt/Combinatorics/Words/KurosakiPowerFree.lean, line 1165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Words/KurosakiPowerFree.lean#L1165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/repetitions-in-words/index.html#kurosaki-phi-pow-power-free).
 
 ## Depends on
 
@@ -74,4 +74,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Repetitions in words](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/repetitions-in-words/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/repetitions-in-words)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/repetitions-in-words)

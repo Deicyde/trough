@@ -1,8 +1,8 @@
 # 43 Intersection Theory
 
-Chapter 43 of the Stacks Project, *Intersection Theory*, [Tag 0AZ6](https://stacks.math.columbia.edu/tag/0AZ6): the 18 sections of its 28 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 59 tags are carried by 159 declarations of the repository (all in StacksFrontier) and 6 registered declarations.
+Chapter 43 of the Stacks Project, *Intersection Theory*, [Tag 0AZ6](https://stacks.math.columbia.edu/tag/0AZ6): the 18 sections of its 28 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 59 tags are carried by 156 declarations of the repository (all in StacksFrontier) and 6 registered declarations.
 
-## [43.6 Proper pushforward to 43.22 Projection formula for…](part-01/README.md)
+## [43.6 Proper pushforward to 43.23 Projections](part-01/README.md)
 
 - [43.6 Proper pushforward](part-01/43-6-proper-pushforward.md)
 - [43.7 Flat pullback](part-01/43-7-flat-pullback.md)
@@ -18,10 +18,10 @@ Chapter 43 of the Stacks Project, *Intersection Theory*, [Tag 0AZ6](https://stac
 - [43.20 Associativity of intersections](part-01/43-20-associativity-of-intersections.md)
 - [43.21 Flat pullback and intersection products](part-01/43-21-flat-pullback-and-intersection-products.md)
 - [43.22 Projection formula for flat proper morphisms](part-01/43-22-projection-formula-for-flat-proper-morphis.md)
+- [43.23 Projections](part-01/43-23-projections.md)
 
-## [43.23 Projections to 43.27 Pullback for a general…](part-02/README.md)
+## [43.24 Moving Lemma to 43.27 Pullback for a general…](part-02/README.md)
 
-- [43.23 Projections](part-02/43-23-projections.md)
 - [43.24 Moving Lemma](part-02/43-24-moving-lemma.md)
 - [43.25 Intersection products and rational equivalence](part-02/43-25-intersection-products-and-rational-equival.md)
 - [43.27 Pullback for a general morphism](part-02/43-27-pullback-for-a-general-morphism.md)

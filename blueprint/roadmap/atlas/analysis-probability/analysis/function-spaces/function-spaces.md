@@ -7,7 +7,7 @@ statement: formalized
 
 # Function spaces and Sobolev inequalities: its own results
 
-7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html).
+7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html).
 
 L^p and Sobolev spaces of functions: embeddings (Morrey, Rellich, radial, trace), Ehrling, Agmon, Ladyzhenskaya, Gagliardo–Nirenberg and weighted Hardy–Sobolev inequalities, sup-norm bounds by H¹ energy, L^p limits and weak convergence in L^p.
 
@@ -25,7 +25,7 @@ Lebesgue measure on $\mathbb{R}$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Real functions; Inequalities in real analysis), problem `ma_proofbench_l2_94`.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.AgmonInequalitySchwartzLineWanted.exists_norm_toLp_top_le_mul_sqrt_norm_toLp_two_mul_sqrt_deriv` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/AgmonInequalitySchwartzLineWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/AgmonInequalitySchwartzLineWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html#exists-norm-to-lp-top-le-mul-sqrt-norm-t).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.AgmonInequalitySchwartzLineWanted.exists_norm_toLp_top_le_mul_sqrt_norm_toLp_two_mul_sqrt_deriv` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/AgmonInequalitySchwartzLineWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/AgmonInequalitySchwartzLineWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html#exists-norm-to-lp-top-le-mul-sqrt-norm-t).
 
 ## Closed subspaces of $L^2((0,1))$ inside $C((0,1))$ are finite-dimensional
 
@@ -38,7 +38,7 @@ Then $H$ is finite-dimensional.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l2_11`.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ClosedL2SubspaceOfContinuousFiniteDimWanted.finiteDimensional_of_isClosed_of_le_range_toLp` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ClosedL2SubspaceOfContinuousFiniteDimWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ClosedL2SubspaceOfContinuousFiniteDimWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html#finite-dimensional-of-is-closed-of-le-ra).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ClosedL2SubspaceOfContinuousFiniteDimWanted.finiteDimensional_of_isClosed_of_le_range_toLp` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ClosedL2SubspaceOfContinuousFiniteDimWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ClosedL2SubspaceOfContinuousFiniteDimWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html#finite-dimensional-of-is-closed-of-le-ra).
 
 ## Ehrling's inequality
 
@@ -51,7 +51,7 @@ $\|i(u)\|_Y \le \varepsilon \|u\|_X + C_\varepsilon \|j(i(u))\|_Z$ for all $u \i
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Normed linear spaces and Banach spaces; Banach lattices), problem `ma_proofbench_l2_36`.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.EhrlingInequalityWanted.ehrling_inequality` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/EhrlingInequalityWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/EhrlingInequalityWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html#ehrling-inequality).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.EhrlingInequalityWanted.ehrling_inequality` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/EhrlingInequalityWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/EhrlingInequalityWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html#ehrling-inequality).
 
 ## Nonlinear interpolation of Lipschitz maps on Lebesgue spaces (Scottish Book Problem 87)
 
@@ -68,7 +68,7 @@ has $Ux \in L^\gamma(\mu)$ and $\|Ux\|_\gamma \le M_\gamma \|x\|_\gamma$.
 
 - S. Banach, Problem 87 of the Scottish Book; affirmative solution by L. Maligranda, commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015). The linear case follows from the Riesz interpolation theorem, and Banach showed the case `α = ∞`; Maligranda's solution covers the nonlinear case as stated here, with `α = ⊤` allowed.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook87Wanted.nonlinearInterpolationLp` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook87Wanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook87Wanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html#nonlinear-interpolation-lp).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook87Wanted.nonlinearInterpolationLp` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook87Wanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook87Wanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html#nonlinear-interpolation-lp).
 
 ## Sobolev trace bound on the plane $z = 0$ in $\mathbb{R}^3$
 
@@ -91,7 +91,7 @@ problem; conversely, if $f_n$ satisfies that bound, then $f_n / \sqrt{3}$ satisf
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l2_56`.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.SobolevTraceR3PlaneBoundedWanted.exists_bound_integral_sq_trace_of_integral_sq_add_fderiv_sq_le_one` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/SobolevTraceR3PlaneBoundedWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/SobolevTraceR3PlaneBoundedWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html#exists-bound-integral-sq-trace-of-integr).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.SobolevTraceR3PlaneBoundedWanted.exists_bound_integral_sq_trace_of_integral_sq_add_fderiv_sq_le_one` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/SobolevTraceR3PlaneBoundedWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/SobolevTraceR3PlaneBoundedWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html#exists-bound-integral-sq-trace-of-integr).
 
 ## The constant in Young's $L^1$–$L^p$ convolution inequality cannot be lowered
 
@@ -110,7 +110,7 @@ respect to Lebesgue measure.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l1_45`.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.YoungConvolutionSharpWanted.exists_eLpNorm_convolution_gt_one_sub_mul` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/YoungConvolutionSharpWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/YoungConvolutionSharpWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html#exists-e-lp-norm-convolution-gt-one-sub).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.YoungConvolutionSharpWanted.exists_eLpNorm_convolution_gt_one_sub_mul` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/YoungConvolutionSharpWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/YoungConvolutionSharpWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html#exists-e-lp-norm-convolution-gt-one-sub).
 
 ## Weighted Ladyzhenskaya inequality in the plane
 
@@ -128,7 +128,7 @@ $$
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Real functions; Inequalities in real analysis), problem `ma_proofbench_l2_48`.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.WeightedLadyzhenskayaPlaneWanted.exists_const_integral_pow_four_mul_weight_le` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/WeightedLadyzhenskayaPlaneWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/WeightedLadyzhenskayaPlaneWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html#exists-const-integral-pow-four-mul-weigh).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.WeightedLadyzhenskayaPlaneWanted.exists_const_integral_pow_four_mul_weight_le` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/WeightedLadyzhenskayaPlaneWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/WeightedLadyzhenskayaPlaneWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html#exists-const-integral-pow-four-mul-weigh).
 
 ## Depends on
 
@@ -137,4 +137,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Function spaces and Sobolev inequalities](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/function-spaces)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/function-spaces)

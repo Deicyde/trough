@@ -8,7 +8,7 @@ proof: formalized
 
 # 18.9 Presheaves of modules
 
-Section 18.9 of the Stacks Project, [Tag 03CS](https://stacks.math.columbia.edu/tag/03CS). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.9 of the Stacks Project, [Tag 03CS](https://stacks.math.columbia.edu/tag/03CS). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03CT, a definition
 
@@ -16,15 +16,15 @@ Section 18.9 of the Stacks Project, [Tag 03CS](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`PresheafOfModules`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModules#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch18.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch18.lean#L48) (StacksFrontier): “(1) presheaf of O-modules”. References: SGA 3 I (4.7.1.1); SGA 4 II (6.7); SGA 3 I (3.1), “O-module definition”.
-- [`PresheafOfModules.Hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModules.Hom#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch18.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch18.lean#L49) (StacksFrontier): “(2) and (3) morphisms of presheaves of O-modules”. References: SGA 3 I (3.1), “Hom\_O(F,F')”.
-- [`PresheafOfModules.instCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModules.instCategory#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch18.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch18.lean#L50) (StacksFrontier): “(4) the category PMod(O)”. References: SGA 3 I (3.1), “category (O-Mod.)”.
+- [`PresheafOfModules`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModules#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch18.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch18.lean#L49) (StacksFrontier): “(1) presheaf of O-modules”. References: SGA 3 I (4.7.1.1); SGA 4 II (6.7); SGA 3 I (3.1), “O-module definition”.
+- [`PresheafOfModules.Hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModules.Hom#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch18.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch18.lean#L50) (StacksFrontier): “(2) and (3) morphisms of presheaves of O-modules”. References: SGA 3 I (3.1), “Hom\_O(F,F')”.
+- [`PresheafOfModules.instCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModules.instCategory#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch18.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch18.lean#L51) (StacksFrontier): “(4) the category PMod(O)”. References: SGA 3 I (3.1), “category (O-Mod.)”.
 
 ## Tag 03CU, a lemma
 
 [Tag 03CU](https://stacks.math.columbia.edu/tag/03CU) in the Stacks Project.
 
-**`Stacks.PresheafOfModules.ChangeOfRings.homEquivCore`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/ChangeOfRingsAdjunction.lean, line 535](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/ChangeOfRingsAdjunction.lean#L535). The attribute's comment: “the canonical bijection of Hom-sets”.
+**`Stacks.PresheafOfModules.ChangeOfRings.homEquivCore`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/ChangeOfRingsAdjunction.lean, line 535](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/ChangeOfRingsAdjunction.lean#L535). The attribute's comment: “the canonical bijection of Hom-sets”.
 
 > **The canonical bijection of Tag 03CU.**
 >
@@ -41,7 +41,7 @@ noncomputable def homEquivCore (θ : O₁ ⟶ O₂) (G : PMod O₁) (F : PMod O�
     ((changeOfRings θ).obj G ⟶ F) ≃ (G ⟶ (restrictScalars θ).obj F)
 ```
 
-**`Stacks.PresheafOfModules.ChangeOfRings.changeOfRingsAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/ChangeOfRingsAdjunction.lean, line 577](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/ChangeOfRingsAdjunction.lean#L577). The attribute's comment: “the adjunction: restriction and change of rings are adjoint”.
+**`Stacks.PresheafOfModules.ChangeOfRings.changeOfRingsAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Presheaf/ChangeOfRingsAdjunction.lean, line 577](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Presheaf/ChangeOfRingsAdjunction.lean#L577). The attribute's comment: “the adjunction: restriction and change of rings are adjoint”.
 
 > **Main statement of Tag 03CU.**
 >
@@ -64,4 +64,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.9, Tag 03CS](https://stacks.math.columbia.edu/tag/03CS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

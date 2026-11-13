@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.bijective_globalSectionsRestriction_closedFibre_of_henselianPair_of_isProper, Stacks.EtaleCohomology.isIso_globalSectionsComparison_closedFibre_of_henselianPair_of_isProper, Stacks.EtaleCohomology.bijective_globalSectionsComparison_app_closedFibre_of_henselianPair_of_isProper, Stacks.EtaleCohomology.isIso_globalSectionsComparison_closedFibre_of_isProper, Stacks.EtaleCohomology.bijective_globalSectionsComparison_app_closedFibre_of_isProper, Stacks.EtaleCohomology.pushforwardSheafFiberClosedPointIsoGeometricFibreGamma, Stacks.EtaleCohomology.isIso_properGeometricFibreComparison_of_isProper, Stacks.EtaleCohomology.isIso_smallEtaleSetBaseChange_of_isProper
+lean: AlgebraicGeometry.bijective_globalSectionsRestriction_closedFibre_of_henselianPair_of_isProper, Stacks.EtaleCohomology.isIso_globalSectionsComparison_closedFibre_of_henselianPair_of_isProper, Stacks.EtaleCohomology.bijective_globalSectionsComparison_app_closedFibre_of_henselianPair_of_isProper, Stacks.EtaleCohomology.isIso_globalSectionsComparison_closedFibre_of_isProper, Stacks.EtaleCohomology.bijective_globalSectionsComparison_app_closedFibre_of_isProper, Stacks.EtaleCohomology.isIso_properGeometricFibreComparison_of_isProper, Stacks.EtaleCohomology.isIso_smallEtaleSetBaseChange_of_isProper, Stacks.EtaleCohomology.etaleAbelianDerivedBaseChange
 statement: formalized
 proof: formalized
 ---
 
 # 59.91 The proper base change theorem
 
-Section 59.91 of the Stacks Project, [Tag 095S](https://stacks.math.columbia.edu/tag/095S). 15 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.91 of the Stacks Project, [Tag 095S](https://stacks.math.columbia.edu/tag/095S). 15 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A0B, a lemma
 
 [Tag 0A0B](https://stacks.math.columbia.edu/tag/0A0B) in the Stacks Project.
 
-**`AlgebraicGeometry.bijective_globalSectionsRestriction_closedFibre_of_henselianPair_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreGlobalSections.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreGlobalSections.lean#L223).
+**`AlgebraicGeometry.bijective_globalSectionsRestriction_closedFibre_of_henselianPair_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreGlobalSections.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreGlobalSections.lean#L223).
 
 > For `(A, I)` a henselian pair and `f : X ⟶ Spec A` proper, restriction to the closed fibre
 > `X ×_{Spec A} Spec (A ⧸ I)` is bijective on global sections of every sheaf of sets on the space
@@ -33,7 +33,7 @@ theorem bijective_globalSectionsRestriction_closedFibre_of_henselianPair_of_isPr
 
 [Tag 0A0C](https://stacks.math.columbia.edu/tag/0A0C) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_globalSectionsComparison_closedFibre_of_henselianPair_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean#L119). References: SGA 4 XII (6.13), “partial, special case”.
+**`Stacks.EtaleCohomology.isIso_globalSectionsComparison_closedFibre_of_henselianPair_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean#L119). References: SGA 4 XII (6.13), “partial, special case”.
 
 > **[Stacks, Tag 0A0C].** Let `(A, I)` be a henselian pair and let `f : X ⟶ Spec A` be proper.
 > For every sheaf of sets `ℱ` on the small étale site of `X`, restriction of global sections to the
@@ -49,7 +49,7 @@ public theorem isIso_globalSectionsComparison_closedFibre_of_henselianPair_of_is
       (pullback.fst f (Spec.map (CommRingCat.ofHom (Ideal.Quotient.mk I))))).val
 ```
 
-**`Stacks.EtaleCohomology.bijective_globalSectionsComparison_app_closedFibre_of_henselianPair_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean#L137). References: SGA 4 XII (6.13), “partial, special case”.
+**`Stacks.EtaleCohomology.bijective_globalSectionsComparison_app_closedFibre_of_henselianPair_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean#L137). References: SGA 4 XII (6.13), “partial, special case”.
 
 > **[Stacks, Tag 0A0C], sheaf by sheaf.** Let `(A, I)` be a henselian pair and let
 > `f : X ⟶ Spec A` be proper. For every sheaf of sets `ℱ` on the small étale site of `X`, the
@@ -68,7 +68,7 @@ public theorem bijective_globalSectionsComparison_app_closedFibre_of_henselianPa
 
 [Tag 0A3S](https://stacks.math.columbia.edu/tag/0A3S) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_globalSectionsComparison_closedFibre_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean#L152). References: SGA 4 XII (6.13), “special case”.
+**`Stacks.EtaleCohomology.isIso_globalSectionsComparison_closedFibre_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean#L152). References: SGA 4 XII (6.13), “special case”.
 
 > **[Stacks, Tag 0A3S].** Let `A` be a henselian local ring, let `f : X ⟶ Spec A` be proper
 > and let `X₀ = X ×_{Spec A} Spec κ(A)` be the fibre of `f` over the closed point. For every sheaf of
@@ -83,7 +83,7 @@ public theorem isIso_globalSectionsComparison_closedFibre_of_isProper [Henselian
       (closedFibreInclusion A f)).val
 ```
 
-**`Stacks.EtaleCohomology.bijective_globalSectionsComparison_app_closedFibre_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean#L165).
+**`Stacks.EtaleCohomology.bijective_globalSectionsComparison_app_closedFibre_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreEtaleSectionsProper.lean#L165).
 
 > **[Stacks, Tag 0A3S], sheaf by sheaf.** Let `A` be a henselian local ring, let
 > `f : X ⟶ Spec A` be proper and let `X₀ = X ×_{Spec A} Spec κ(A)` be the fibre over the closed
@@ -102,48 +102,18 @@ public theorem bijective_globalSectionsComparison_app_closedFibre_of_isProper
 
 [Tag 0A3T](https://stacks.math.columbia.edu/tag/0A3T) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.pushforwardSheafFiberClosedPointIsoGeometricFibreGamma`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/GeometricFibreSections.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/GeometricFibreSections.lean#L494). The attribute's comment: “conditional on the base being `Spec R` for a strictly henselian local ring `R`, the reduction of a general base to the strict henselization being Tag 03Q9 for sheaves of sets, which is absent; and carrying `hcompat`, the hypothesis of the library's Tag 0A3S”.
+**`Stacks.EtaleCohomology.isIso_properGeometricFibreComparison_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperPushforwardBaseChangeUnconditional.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperPushforwardBaseChangeUnconditional.lean#L64). The attribute's comment: “for every sheaf of sets on the small étale site of `X`, naturally in the sheaf”.
 
-> **The stalk of a direct image along a proper morphism over a strictly henselian local base is
-> the set of global sections over the geometric fibre**, granted compatible presenting families.
-> For `R` strictly henselian local with residue field `κ(R)`, `f : X ⟶ Spec R` proper, `Ω` an
-> extension of `κ(R)` and `x` a geometric point of `Spec R` above the closed point,
-> `(f_*F)_x = Γ(X_Ω, F|_{X_Ω})` with `X_Ω = (X ×_{Spec R} Spec κ(R)) ×_{Spec κ(R)} Spec Ω`,
-> naturally in the sheaf of sets `F`.
->
-> This is the whole of the proof of [Stacks, Tag 0A3T] except for the reduction of a general base
-> to the strict henselization, which is Tag 03Q9 and is absent: Tag 03Q9 over the already strictly
-> henselian base is `pushforwardSheafFiberClosedPointIsoGamma`, Tag 0A3S is the hypothesis
-> `hcompat`, and the extension of the separably closed residue field to `Ω` is [Stacks, Tag 0A3I].
-> That the right-hand side is the geometric fibre of `f` at `x` is
-> `closedFibreBaseChange_fst_comp_closedFibreInclusion`, for `x` the composite point.
+> **Stacks Project, Tag 0A3T.** Let `f : X ⟶ S` be proper and `x : Spec Ω ⟶ S` a geometric
+> point (`Ω` separably closed). For every sheaf of sets `F` on `X_étale` the canonical map
+> `(f_* F)_x ⟶ Γ(X_x, F_x)` is bijective.
 
 ```lean
-def pushforwardSheafFiberClosedPointIsoGeometricFibreGamma [IsProper f]
-    (hcompat : ∀ (F : Sheaf (Scheme.smallEtaleTopology X) (Type (max (u + 1) v)))
-      (t : ((smallEtaleInverseImage.{u, v} (closedFibreInclusion R f)).obj F).obj.obj
-        (op (terminal (closedFibre R f).Etale))),
-      ∃ (α : Type (u + 1)) (W : α → X.Etale) (s : ∀ j, F.obj.obj (op (W j))),
-        (⨆ j, smallEtaleImage (W j)) = ⊤ ∧ SmallEtaleCompatible F W s ∧
-          ∀ j, ((smallEtaleInverseImage.{u, v} (closedFibreInclusion R f)).obj F).obj.map
-                (terminal.from ((smallEtaleBaseChange
-                  (closedFibreInclusion R f)).obj (W j))).op t
-              = smallEtaleSectionPullback.{u, v} (closedFibreInclusion R f) F (W j) (s j)) :
-    (smallEtaleBaseChange f).sheafPushforwardContinuous (Type (max (u + 1) v))
-          (smallEtaleTopology (Spec (.of R))) (smallEtaleTopology X) ⋙
-        (pointSmallEtale x).sheafFiber ≅
-      smallEtaleInverseImage.{u, v}
-          (pullback.fst (closedFibreProjection R f)
-            (Spec.map (CommRingCat.ofHom
-              (algebraMap (IsLocalRing.ResidueField R) Ω))) ≫ closedFibreInclusion R f) ⋙
-        Sheaf.Γ (smallEtaleTopology (pullback (closedFibreProjection R f)
-          (Spec.map (CommRingCat.ofHom (algebraMap (IsLocalRing.ResidueField R) Ω)))))
-          (Type (max (u + 1) v))
+theorem isIso_properGeometricFibreComparison_of_isProper
+    {X S : Scheme.{u}} (f : X ⟶ S) [IsProper f] {Ω : Type u} [Field Ω] [IsSepClosed Ω]
+    (x : Spec (.of Ω) ⟶ S) :
+    IsIso (properGeometricFibreComparison.{u, 0} f x)
 ```
-
-Declarations registered for the tag:
-
-- [`Stacks.EtaleCohomology.isIso_properGeometricFibreComparison_of_isProper`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperPushforwardBaseChangeUnconditional.lean#L63), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean#L47) (StacksFrontier).
 
 ## Tag 0A3U, a lemma
 
@@ -151,13 +121,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Stacks.EtaleCohomology.isIso_smallEtaleSetBaseChange_of_isProper`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperPushforwardBaseChangeUnconditional.lean#L42), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean#L49) (StacksFrontier).
+- [`Stacks.EtaleCohomology.isIso_smallEtaleSetBaseChange_of_isProper`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperPushforwardBaseChangeUnconditional.lean#L42), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean#L45) (StacksFrontier).
 
 ## Tag 0A2A, an equation
 
 [Tag 0A2A](https://stacks.math.columbia.edu/tag/0A2A) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.etaleAbelianDerivedBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMap.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMap.lean#L158).
+**`Stacks.EtaleCohomology.etaleAbelianDerivedBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMap.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMap.lean#L158).
 
 > The canonical base change map `g^{-1} Rf_* ⟶ Rf'_* (g')^{-1}` on the
 > unbounded derived categories of abelian sheaves for the small étale topology, attached to a
@@ -169,7 +139,7 @@ public def etaleAbelianDerivedBaseChange :
       etaleAbelianDerivedInverseImage.{u, v} g' ⋙ etaleAbelianDerivedDirectImage.{u, v} f'
 ```
 
-**`Stacks.EtaleCohomology.etaleAbelianDerivedBaseChange_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMap.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMap.lean#L241). The attribute's comment: “canonical comparison on unbounded complexes”.
+**`Stacks.EtaleCohomology.etaleAbelianDerivedBaseChange_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMap.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMap.lean#L241). The attribute's comment: “canonical comparison on unbounded complexes”.
 
 > For every complex `K` of abelian sheaves on `X_étale`, the base change map at the object it
 > represents, precomposed with the exactness comparison for `g^{-1}` and with the derived-functor
@@ -196,7 +166,7 @@ public theorem etaleAbelianDerivedBaseChange_fac :
 
 [Tag 0A4A](https://stacks.math.columbia.edu/tag/0A4A) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.etaleAbelianSheafDerivedBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMap.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMap.lean#L277).
+**`Stacks.EtaleCohomology.etaleAbelianSheafDerivedBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMap.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMap.lean#L277).
 
 > The base change map for a single abelian sheaf `F` on `X_étale`, placed in
 > degree zero: the canonical morphism `g^{-1} Rf_* F ⟶ Rf'_* (g')^{-1} F` in the derived category
@@ -222,13 +192,13 @@ public def etaleAbelianSheafDerivedBaseChange
 
 Declarations registered for the tag:
 
-- [`Stacks.EtaleCohomology.cohomologyCommutesWithBaseChange_iff_higherDirectImagesVanishOnInjectives`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperPushforwardBaseChangeUnconditional.lean#L74), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperPushforwardBaseChangeRegistration.lean, line 15](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperPushforwardBaseChangeRegistration.lean#L15) (StacksFrontier): “(1) cohomology commutes with base change for f iff (2) higher direct images of pulled-back injective Z/lZ-sheaves vanish”.
+- [`Stacks.EtaleCohomology.cohomologyCommutesWithBaseChange_iff_higherDirectImagesVanishOnInjectives`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperPushforwardBaseChangeUnconditional.lean#L75), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperPushforwardBaseChangeRegistration.lean, line 15](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperPushforwardBaseChangeRegistration.lean#L15) (StacksFrontier): “(1) cohomology commutes with base change for f iff (2) higher direct images of pulled-back injective Z/lZ-sheaves vanish”.
 
 ## Tag 0A4C, a lemma
 
 [Tag 0A4C](https://stacks.math.columbia.edu/tag/0A4C) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_etaleAbelianBaseChange_of_mono_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/SurjectiveCancellation.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/SurjectiveCancellation.lean#L297). The attribute's comment: “RESTRICTED: degree zero only — each `cohomology commutes with base change` is invertibility of the underived comparison of Tag 0A2A at every abelian sheaf, not of the derived comparison at every torsion sheaf, the bridge between the two being Tag 0A4B, absent here; hypothesis (3) is carried as monomorphy of the unit `A ⟶ f_*f⁻¹A`, which `mono_etaleAbelianUnit_of_surjective` supplies from `Surjective f`; properness is unused”.
+**`Stacks.EtaleCohomology.isIso_etaleAbelianBaseChange_of_mono_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/SurjectiveCancellation.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/SurjectiveCancellation.lean#L297). The attribute's comment: “RESTRICTED: degree zero only — each `cohomology commutes with base change` is invertibility of the underived comparison of Tag 0A2A at every abelian sheaf, not of the derived comparison at every torsion sheaf, the bridge between the two being Tag 0A4B, absent here; hypothesis (3) is carried as monomorphy of the unit `A ⟶ f_*f⁻¹A`, which `mono_etaleAbelianUnit_of_surjective` supplies from `Surjective f`; properness is unused”.
 
 > **Stacks 0A4C in degree zero: cancelling a surjection from a composite.**  Let `f : X ⟶ Y`
 > and `g : Y ⟶ Z` be morphisms of schemes with named composite `gf : X ⟶ Z`, let `c : Z' ⟶ Z`, and
@@ -270,7 +240,7 @@ public theorem isIso_etaleAbelianBaseChange_of_mono_unit
     IsIso ((etaleAbelianBaseChange.{u, v} g c d g' sq₁).app A)
 ```
 
-**`Stacks.EtaleCohomology.CohomologyCommutesWithBaseChange.of_comp_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/SurjectiveCancellationUnconditional.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/SurjectiveCancellationUnconditional.lean#L233).
+**`Stacks.EtaleCohomology.CohomologyCommutesWithBaseChange.of_comp_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/SurjectiveCancellationUnconditional.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/SurjectiveCancellationUnconditional.lean#L233).
 
 > **[Stacks, Tag 0A4C]: cancelling a surjection from a composite.** Let `f : X ⟶ Y` and
 > `g : Y ⟶ Z` be morphisms of schemes. Assume
@@ -300,7 +270,7 @@ public theorem CohomologyCommutesWithBaseChange.of_comp_of_surjective (f : X ⟶
 
 [Tag 0A4D](https://stacks.math.columbia.edu/tag/0A4D) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.etaleAbelianDerivedBaseChange_isIso_of_compDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/CompositeMorphismBaseChange.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/CompositeMorphismBaseChange.lean#L328). The attribute's comment: “the derived half: for K in D(X\_étale), if c⁻¹Rg\_*(Rf\_*K) → Rg'\_*d⁻¹(Rf\_*K) and d⁻¹Rf\_*K → Rf'\_*e⁻¹K are isomorphisms then c⁻¹R(g∘f)\_*K → R(g'∘f')\_*e⁻¹K is an isomorphism; the R^q statement of the same tag, and the reduction to injective Z/l-modules of 0A4B that the source proof uses to obtain it, are not covered here”.
+**`Stacks.EtaleCohomology.etaleAbelianDerivedBaseChange_isIso_of_compDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/CompositeMorphismBaseChange.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/CompositeMorphismBaseChange.lean#L328). The attribute's comment: “the derived half: for K in D(X\_étale), if c⁻¹Rg\_*(Rf\_*K) → Rg'\_*d⁻¹(Rf\_*K) and d⁻¹Rf\_*K → Rf'\_*e⁻¹K are isomorphisms then c⁻¹R(g∘f)\_*K → R(g'∘f')\_*e⁻¹K is an isomorphism; the R^q statement of the same tag, and the reduction to injective Z/l-modules of 0A4B that the source proof uses to obtain it, are not covered here”.
 
 > **Stacks 0A4D, the derived half.**  Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of schemes
 > with named composite `gf : X ⟶ Z`, let `c : Z' ⟶ Z`, and consider commutative squares
@@ -337,7 +307,7 @@ public theorem etaleAbelianDerivedBaseChange_isIso_of_compDirectImage
     IsIso ((etaleAbelianDerivedBaseChange.{u, v} gf c e q hyp).app K)
 ```
 
-**`Stacks.EtaleCohomology.CohomologyCommutesWithBaseChange.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/CompositeMorphismBaseChangeUnconditional.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/CompositeMorphismBaseChangeUnconditional.lean#L270).
+**`Stacks.EtaleCohomology.CohomologyCommutesWithBaseChange.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/CompositeMorphismBaseChangeUnconditional.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/CompositeMorphismBaseChangeUnconditional.lean#L270).
 
 > **[Stacks, Tag 0A4D]: cohomology commutes with base change for a composite.**  Let
 > `f : X ⟶ Y` and `g : Y ⟶ Z` be proper morphisms of schemes.  Assume
@@ -370,7 +340,7 @@ public theorem CohomologyCommutesWithBaseChange.comp {f : X ⟶ Y} {g : Y ⟶ Z}
 
 [Tag 0A4E](https://stacks.math.columbia.edu/tag/0A4E) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_etaleAbelianSheafDerivedBaseChange_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/AbelianCoefficientTransfer.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/AbelianCoefficientTransfer.lean#L618). The attribute's comment: “RESTRICTED: the cartesian square is carried as four objects and four morphisms of the underlying category of a given big étale site `B`, the conclusion being about their images under `B.inclusion`; that containment is the only hypothesis beyond the square being cartesian with `f` finite, and coefficients are the abelian groups of `AddCommGrpCat.{u+1}`, which is `Ab.{u+1}`. No torsion condition and no invertibility is assumed.”. References: SGA 4 XII (5.1), “(iii)”.
+**`Stacks.EtaleCohomology.isIso_etaleAbelianSheafDerivedBaseChange_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/AbelianCoefficientTransfer.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/AbelianCoefficientTransfer.lean#L618). The attribute's comment: “RESTRICTED: the cartesian square is carried as four objects and four morphisms of the underlying category of a given big étale site `B`, the conclusion being about their images under `B.inclusion`; that containment is the only hypothesis beyond the square being cartesian with `f` finite, and coefficients are the abelian groups of `AddCommGrpCat.{u+1}`, which is `Ab.{u+1}`. No torsion condition and no invertibility is assumed.”. References: SGA 4 XII (5.1), “(iii)”.
 
 > **Stacks 0A4E: cohomology commutes with base change for a finite morphism.** For a cartesian
 > square
@@ -404,7 +374,7 @@ public theorem isIso_etaleAbelianSheafDerivedBaseChange_of_isFinite
       (B.inclusion.map g') (B.inclusion.map f') sq.w F)
 ```
 
-**`Stacks.EtaleCohomology.cohomologyCommutesWithBaseChange_of_isFinite_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/FiniteBaseChangeUniverse.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/FiniteBaseChangeUniverse.lean#L187). References: SGA 4 XII (5.2), “(iii), special case”; SGA 4½ Th finitude (5.1.3), “1.3.1, special case”.
+**`Stacks.EtaleCohomology.cohomologyCommutesWithBaseChange_of_isFinite_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/FiniteBaseChangeUniverse.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/FiniteBaseChangeUniverse.lean#L188). References: SGA 4 XII (5.2), “(iii), special case”; SGA 4½ Th finitude (5.1.3), “1.3.1, special case”.
 
 > **Proper base change for finite morphisms.** Cohomology commutes with base change for a finite
 > morphism of schemes `f : X ⟶ Y`: for every cartesian square with
@@ -424,7 +394,7 @@ theorem cohomologyCommutesWithBaseChange_of_isFinite_univ {X Y : Scheme.{u}} (f 
 
 [Tag 0A4F](https://stacks.math.columbia.edu/tag/0A4F) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.cohomologyCommutesWithBaseChange_of_projectiveLine_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProjectiveLineReductionGeneral.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProjectiveLineReductionGeneral.lean#L197).
+**`Stacks.EtaleCohomology.cohomologyCommutesWithBaseChange_of_projectiveLine_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProjectiveLineReductionGeneral.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProjectiveLineReductionGeneral.lean#L197).
 
 > **[Stacks, Tag 0A4F].** To prove that cohomology commutes with base change for every proper
 > morphism of schemes it suffices to prove it for the morphism `ℙ¹_S ⟶ S` for every scheme `S`:
@@ -445,13 +415,13 @@ public theorem cohomologyCommutesWithBaseChange_of_projectiveLine_unconditional
 
 Declarations registered for the tag:
 
-- [`Stacks.EtaleCohomology.isIso_etaleAbelianSheafDerivedBaseChange_of_isProper`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeTheoremUnconditional.lean#L164), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean#L53) (StacksFrontier).
+- [`Stacks.EtaleCohomology.isIso_etaleAbelianSheafDerivedBaseChange_of_isProper`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeTheoremUnconditional.lean#L164), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean#L49) (StacksFrontier).
 
 ## Tag 0DDE, a lemma
 
 [Tag 0DDE](https://stacks.math.columbia.edu/tag/0DDE) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_etaleAbelianDerivedBaseChange_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/DerivedProperBaseChange.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/DerivedProperBaseChange.lean#L45). References: SGA 4 XVII (4.3.2), “special case”; SGA 4 XVII (5.2.7), “(ii), special case”.
+**`Stacks.EtaleCohomology.isIso_etaleAbelianDerivedBaseChange_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/DerivedProperBaseChange.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/DerivedProperBaseChange.lean#L45). References: SGA 4 XVII (4.3.2), “special case”; SGA 4 XVII (5.2.7), “(ii), special case”.
 
 > **Stacks Project, Tag 0DDE.** Let `f : X ⟶ Y` be a proper morphism of schemes, `g : Y' ⟶ Y`
 > a morphism of schemes, and `X' = Y' ×_Y X`, given as a cartesian square `sq` with projections
@@ -472,7 +442,7 @@ theorem isIso_etaleAbelianDerivedBaseChange_of_isProper {X Y X' Y' : Scheme.{u}}
 
 [Tag 0DDF](https://stacks.math.columbia.edu/tag/0DDF) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.etaleAbelianSheafFiberRightDerivedDirectImageIsoOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperGeometricFibreStalk.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperGeometricFibreStalk.lean#L48). The attribute's comment: “part (1)”.
+**`Stacks.EtaleCohomology.etaleAbelianSheafFiberRightDerivedDirectImageIsoOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperGeometricFibreStalk.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperGeometricFibreStalk.lean#L48). The attribute's comment: “part (1)”.
 
 > **Stacks 0DDF (1).** For a proper morphism `f : X ⟶ Y`, a geometric point `ȳ : Spec Ω ⟶ Y`
 > and a torsion abelian sheaf `F` on `X_étale`, the stalk of `Rⁿf_* F` at `ȳ` is the étale
@@ -489,7 +459,7 @@ def etaleAbelianSheafFiberRightDerivedDirectImageIsoOfIsProper
       (Sheaf.H.{u + 1} ((etaleAbelianInverseImage.{u, 0} (pullback.fst f y)).obj F) n)
 ```
 
-**`Stacks.EtaleCohomology.etaleAbelianSheafFiberHomologyDerivedDirectImageIsoOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperGeometricFibreStalk.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperGeometricFibreStalk.lean#L65). The attribute's comment: “part (2)”.
+**`Stacks.EtaleCohomology.etaleAbelianSheafFiberHomologyDerivedDirectImageIsoOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperGeometricFibreStalk.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperGeometricFibreStalk.lean#L65). The attribute's comment: “part (2)”.
 
 > **Stacks 0DDF (2).** For a proper morphism `f : X ⟶ Y`, a geometric point `ȳ : Spec Ω ⟶ Y`
 > and an object `E` of `D⁺(X_étale)` with torsion cohomology sheaves, the stalk at `ȳ` of the
@@ -518,4 +488,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.91, Tag 095S](https://stacks.math.columbia.edu/tag/095S)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

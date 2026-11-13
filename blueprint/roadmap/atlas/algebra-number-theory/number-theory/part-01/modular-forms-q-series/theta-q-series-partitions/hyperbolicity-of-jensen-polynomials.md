@@ -7,7 +7,7 @@ statement: formalized
 
 # Hyperbolicity of Jensen polynomials
 
-5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials/index.html).
+5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials/index.html).
 
 ## An integral formula for $\log \Gamma(1/N)$
 
@@ -24,7 +24,7 @@ $$
 
 - Jashan Bal, Fern Haraldson, Joshua Males and Ian Thompson, *Jensen Polynomials Associated with Wright's Circle Method: Hyperbolicity and Turán Inequalities*, INTEGERS 25 (2025), Article A36, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.integral_exp_div_one_sub_exp_sub_eq_log_Gamma` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials/index.html#integral-exp-div-one-sub-exp-sub-eq-log).
+Stated but not proved: `MetaMathlibExt.integral_exp_div_one_sub_exp_sub_eq_log_Gamma` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials/index.html#integral-exp-div-one-sub-exp-sub-eq-log).
 
 ## A twisted sum of digamma values
 
@@ -42,7 +42,7 @@ where $\operatorname{Log}$ is the principal branch of the complex logarithm.
 
 - Jashan Bal, Fern Haraldson, Joshua Males and Ian Thompson, *Jensen Polynomials Associated with Wright's Circle Method: Hyperbolicity and Turán Inequalities*, INTEGERS 25 (2025), Article A36, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.sum_exp_mul_digamma_div_eq_mul_log_one_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials/index.html#sum-exp-mul-digamma-div-eq-mul-log-one-s).
+Stated but not proved: `MetaMathlibExt.sum_exp_mul_digamma_div_eq_mul_log_one_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials/index.html#sum-exp-mul-digamma-div-eq-mul-log-one-s).
 
 ## Hyperbolicity of Jensen polynomials from a log-ratio expansion
 
@@ -68,7 +68,7 @@ polynomials; that conclusion is not part of this statement.
 
 - Jashan Bal, Fern Haraldson, Joshua Males and Ian Thompson, *Jensen Polynomials Associated with Wright's Circle Method: Hyperbolicity and Turán Inequalities*, INTEGERS 25 (2025), Article A36, Theorem 5, quoted there from Griffin, Ono, Rolen and Zagier.
 
-Stated but not proved: `MetaMathlibExt.eventually_jensen_hyperbolic_of_log_ratio_expansion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials/index.html#eventually-jensen-hyperbolic-of-log-rati).
+Stated but not proved: `MetaMathlibExt.eventually_jensen_hyperbolic_of_log_ratio_expansion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials/index.html#eventually-jensen-hyperbolic-of-log-rati).
 
 ## Eventual hyperbolicity for colored partitions
 
@@ -92,7 +92,7 @@ which are not part of this statement.
 
 - Jashan Bal, Fern Haraldson, Joshua Males and Ian Thompson, *Jensen Polynomials Associated with Wright's Circle Method: Hyperbolicity and Turán Inequalities*, INTEGERS 25 (2025), Article A36, Theorem 3, part 1.
 
-Stated but not proved: `MetaMathlibExt.eventually_jensen_hyperbolic_coloredPartitions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials/index.html#eventually-jensen-hyperbolic-colored-par).
+Stated but not proved: `MetaMathlibExt.eventually_jensen_hyperbolic_coloredPartitions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials/index.html#eventually-jensen-hyperbolic-colored-par).
 
 ## Eventual hyperbolicity for partitions into parts $\equiv a \pmod{p}$
 
@@ -112,7 +112,7 @@ this statement.
 
 - Jashan Bal, Fern Haraldson, Joshua Males and Ian Thompson, *Jensen Polynomials Associated with Wright's Circle Method: Hyperbolicity and Turán Inequalities*, INTEGERS 25 (2025), Article A36, Theorem 4, part 2.
 
-Stated but not proved: `MetaMathlibExt.eventually_jensen_hyperbolic_partitions_parts_mod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials/index.html#eventually-jensen-hyperbolic-partitions).
+Stated but not proved: `MetaMathlibExt.eventually_jensen_hyperbolic_partitions_parts_mod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/JensenPolynomialsWrightCircleWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials/index.html#eventually-jensen-hyperbolic-partitions).
 
 ## Depends on
 
@@ -121,4 +121,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hyperbolicity of Jensen polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/hyperbolicity-of-jensen-polynomials)

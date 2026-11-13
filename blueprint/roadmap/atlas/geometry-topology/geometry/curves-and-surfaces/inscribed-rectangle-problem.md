@@ -7,7 +7,7 @@ statement: formalized
 
 # Inscribed rectangle problem
 
-8 results, 6 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html).
+8 results, 6 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html).
 
 ## Axis-aligned rectangle
 
@@ -15,7 +15,7 @@ For points $a = (a_1, a_2)$ and $b = (b_1, b_2)$ of $\mathbb{R}^2$,
 the axis-aligned (possibly degenerate) rectangle with opposite corners $a$ and $b$ is the list of
 its four vertices $(a_1, a_2)$, $(b_1, a_2)$, $(b_1, b_2)$, $(a_1, b_2)$, in this order.
 
-Formalized by `MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.axisAlignedRectangleCorners`, a definition declared in [WantedExt/Geometry/InscribedRectanglesWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/InscribedRectanglesWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#axis-aligned-rectangle-corners).
+Formalized by `MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.axisAlignedRectangleCorners`, a definition declared in [WantedExt/Geometry/InscribedRectanglesWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/InscribedRectanglesWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#axis-aligned-rectangle-corners).
 
 ## Rotated rectangle
 
@@ -24,7 +24,7 @@ the rotated rectangle given by $a$, $b$ and $\theta$ is the list of four points 
 the rotation $(x, y) \mapsto (x \cos\theta + y \sin\theta, -x \sin\theta + y \cos\theta)$ about the
 origin to each vertex, in order, of the axis-aligned rectangle with opposite corners $a$ and $b$.
 
-Formalized by `MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.rectangleCorners`, a definition declared in [WantedExt/Geometry/InscribedRectanglesWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/InscribedRectanglesWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#rectangle-corners).
+Formalized by `MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.rectangleCorners`, a definition declared in [WantedExt/Geometry/InscribedRectanglesWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/InscribedRectanglesWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#rectangle-corners).
 
 ## Inscribed rectangle
 
@@ -35,7 +35,7 @@ each lies in the image of $\gamma$.
 
 The map $\gamma$ need not be smooth, or even a Jordan curve, for this definition.
 
-Formalized by `MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.IsInscribedRectangle`, a definition declared in [WantedExt/Geometry/InscribedRectanglesWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/InscribedRectanglesWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#is-inscribed-rectangle).
+Formalized by `MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.IsInscribedRectangle`, a definition declared in [WantedExt/Geometry/InscribedRectanglesWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/InscribedRectanglesWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#is-inscribed-rectangle).
 
 ## Aspect ratio
 
@@ -44,7 +44,7 @@ aspect ratio of the axis-aligned rectangle with opposite corners $a$ and $b$ is
 $|a_1 - b_1| / |a_2 - b_2|$, the ratio of its horizontal side length to its vertical side
 length; it is $0$ when $a_2 = b_2$.
 
-Formalized by `MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.aspectRatio`, a definition declared in [WantedExt/Geometry/InscribedRectanglesWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/InscribedRectanglesWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#aspect-ratio).
+Formalized by `MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.aspectRatio`, a definition declared in [WantedExt/Geometry/InscribedRectanglesWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/InscribedRectanglesWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#aspect-ratio).
 
 ## Aspect-ratio parameters of inscribed rectangles
 
@@ -54,7 +54,7 @@ $a, b \in \mathbb{R}^2$ and an angle $\theta \in \mathbb{R}$ such that the rotat
 by $a$, $b$ and $\theta$ is inscribed in $\gamma$ and the axis-aligned rectangle with opposite
 corners $a$ and $b$ has aspect ratio $\tan(r\pi/4)$.
 
-Formalized by `MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.X`, a definition declared in [WantedExt/Geometry/InscribedRectanglesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/InscribedRectanglesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#x).
+Formalized by `MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.X`, a definition declared in [WantedExt/Geometry/InscribedRectanglesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/InscribedRectanglesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#x).
 
 ## Hugelmeyer's theorem on aspect ratios of inscribed rectangles
 
@@ -68,7 +68,7 @@ least $1/3$.
 
 - C. Hugelmeyer, `Inscribed rectangles in a smooth Jordan curve attain at least one third of all aspect ratios`, Annals of Math, 194 (2) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_inscribed_rectangles` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.theorem_1` is written with `theorem_wanted` in [WantedExt/Geometry/InscribedRectanglesWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/InscribedRectanglesWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#theorem-1).
+Stated but not proved: `MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.theorem_1` is written with `theorem_wanted` in [WantedExt/Geometry/InscribedRectanglesWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/InscribedRectanglesWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#theorem-1).
 
 ## Rotated rectangle with given opposite corners
 
@@ -80,7 +80,7 @@ axis-parallel rectangle with opposite corners $z$ and $w$, rotated about the ori
 The rectangle is degenerate when $z$ and $w$ have the same real part or the same imaginary
 part.
 
-Formalized by `MathlibExt.Geometry.RectangularPegProblemWanted.RectangularPegProblem.R`, a definition declared in [WantedExt/Geometry/RectangularPegProblemWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/RectangularPegProblemWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#r).
+Formalized by `MathlibExt.Geometry.RectangularPegProblemWanted.RectangularPegProblem.R`, a definition declared in [WantedExt/Geometry/RectangularPegProblemWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/RectangularPegProblemWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#r).
 
 ## Rectangular peg theorem (Greene–Lobb)
 
@@ -100,7 +100,7 @@ four vertices of $R(z', w', \theta')$ lie on $\gamma$.
 
 - J. E. Greene and A. Lobb, `The rectangular peg problem`, Annals of Math, 194 (2) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_rectangular_peg_problem` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.RectangularPegProblemWanted.RectangularPegProblem.theorem_1` is written with `theorem_wanted` in [WantedExt/Geometry/RectangularPegProblemWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/RectangularPegProblemWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#theorem-1-2).
+Stated but not proved: `MathlibExt.Geometry.RectangularPegProblemWanted.RectangularPegProblem.theorem_1` is written with `theorem_wanted` in [WantedExt/Geometry/RectangularPegProblemWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/RectangularPegProblemWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html#theorem-1-2).
 
 ## Depends on
 
@@ -109,4 +109,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Inscribed rectangle problem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/curves-and-surfaces/inscribed-rectangle-problem)

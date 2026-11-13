@@ -7,7 +7,7 @@ statement: formalized
 
 # F-spaces
 
-11 results, 9 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html).
+11 results, 9 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html).
 
 ## Spaces of type (F)
 
@@ -17,7 +17,7 @@ is a metric $d$ on $E$ that is translation invariant, $d(x + z, y + z) = d(x, y)
 $x, y, z \in E$, that induces the topology of $E$, and that is complete: every Cauchy sequence
 for $d$ converges for $d$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook15Point1Wanted.IsTypeF`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#is-type-f).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook15Point1Wanted.IsTypeF`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#is-type-f).
 
 ## Spheres in the ray sense
 
@@ -25,7 +25,7 @@ Let $E$ be a real vector space. A set $K \subseteq E$ is a
 sphere when $0 \notin K$ and for every $x \ne 0$ in $E$ there is exactly one real $t > 0$ with
 $t x \in K$; that is, every open ray from the origin meets $K$ exactly once.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook15Point1Wanted.IsSphere`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#is-sphere).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook15Point1Wanted.IsSphere`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#is-sphere).
 
 ## Sequentially bounded sets
 
@@ -36,7 +36,7 @@ $(t_n)$ of real numbers with $t_n \to 0$, the sequence $(t_n x_n)$ tends to $0$ 
 This is the definition of boundedness as printed in the statement of Scottish Book
 Problem 15.1.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook15Point1Wanted.IsBoundedSet`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#is-bounded-set).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook15Point1Wanted.IsBoundedSet`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#is-bounded-set).
 
 ## Spaces of type (B)
 
@@ -47,14 +47,14 @@ $x, y \in E$ and $a \in \mathbb{R}$, such that a set $U \subseteq E$ is open exa
 $x \in U$ has an $\varepsilon > 0$ with $y \in U$ whenever $\|y - x\| < \varepsilon$, and such
 that every Cauchy sequence for $\|\cdot\|$ converges in $E$ for $\|\cdot\|$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook15Point1Wanted.AdmitsBanachNorm`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#admits-banach-norm).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook15Point1Wanted.AdmitsBanachNorm`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#admits-banach-norm).
 
 ## Scottish Book Problem 15.1
 
 The claim of Mazur and Orlicz that every real vector space $E$
 with a topology that is of type (F) and contains a bounded sphere is of type (B).
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook15Point1Wanted.ScottishBookProblem15Point1Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#scottish-book-problem15-point1-claim).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook15Point1Wanted.ScottishBookProblem15Point1Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#scottish-book-problem15-point1-claim).
 
 ## Negative answer to Scottish Book Problem 15.1
 
@@ -66,7 +66,7 @@ bounded sphere, but is not of type (B).
 
 - S. Mazur and W. Orlicz, Problem 15.1 of the Scottish Book; the typescript itself records the negative answer (Ad 15.1, Mazur, May 1 1937) with the spaces `ℓ ^ p` and `L ^ p` for `0 < p < 1`, with quasi-norm given by the sum (respectively integral) of `|·| ^ p`, as counterexamples: they are of type (F), possess a bounded sphere, and are not normable, hence not of type (B).
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook15Point1Wanted.boundedSphereFImpliesB_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#bounded-sphere-fimplies-b-refuted).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook15Point1Wanted.boundedSphereFImpliesB_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook15Point1Wanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#bounded-sphere-fimplies-b-refuted).
 
 ## Spaces of type (F) in Scottish Book Problem 26
 
@@ -76,7 +76,7 @@ invariant, $d(x + z, y + z) = d(x, y)$ for all $x, y, z \in E$, and is complete,
 addition $E \times E \to E$ and scalar multiplication $\mathbb{R} \times E \to E$ are
 continuous.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook26Wanted.IsTypeF`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#is-type-f-2).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook26Wanted.IsTypeF`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#is-type-f-2).
 
 ## Bounded sets in Scottish Book Problem 26
 
@@ -86,7 +86,7 @@ every real sequence $(t_n)_{n \ge 0}$ with $t_n \to 0$, we have $t_n x_n \to 0$ 
 
 This sequential definition is the one printed in the problem statement.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook26Wanted.IsBoundedSet`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#is-bounded-set-2).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook26Wanted.IsBoundedSet`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#is-bounded-set-2).
 
 ## Spaces of type $\{F_o\}$
 
@@ -95,7 +95,7 @@ it is of type (F) and, for every sequence $(x_n)_{n \ge 0}$ in $E$ with $x_n \to
 real sequence $(t_n)_{n \ge 0}$ with $\sum_n |t_n| < \infty$, the series $\sum_n t_n x_n$
 converges in $E$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook26Wanted.IsTypeFo`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#is-type-fo).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook26Wanted.IsTypeFo`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#is-type-fo).
 
 ## Scottish Book Problem 26 (Mazur and Orlicz's claim)
 
@@ -109,7 +109,7 @@ Here $F_n \to 0$ uniformly on a set $S$ means that for every $\varepsilon > 0$ t
 with $|F_n(x)| < \varepsilon$ for all $n \ge N$ and all $x \in S$. The $F_n$ are only assumed
 linear, not continuous.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook26Wanted.ScottishBookProblem26Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#scottish-book-problem26-claim).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook26Wanted.ScottishBookProblem26Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#scottish-book-problem26-claim).
 
 ## Mazur and Orlicz's Problem 26 has a negative answer
 
@@ -123,7 +123,7 @@ $0$.
 
 - S. Mazur and W. Orlicz, Problem 26 of the Scottish Book (prize: one small beer); the typescript itself records the answer on the same page: "Ad 26, The answer is negative. M. Eidelheit, June 4, 1938."
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook26Wanted.foBoundedUniformNeighborhood_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#fo-bounded-uniform-neighborhood-refuted).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook26Wanted.foBoundedUniformNeighborhood_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook26Wanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html#fo-bounded-uniform-neighborhood-refuted).
 
 ## Depends on
 
@@ -132,4 +132,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: F-spaces](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/f-spaces)

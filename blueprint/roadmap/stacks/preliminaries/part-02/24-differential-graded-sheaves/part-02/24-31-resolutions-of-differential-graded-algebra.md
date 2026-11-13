@@ -8,13 +8,13 @@ proof: formalized
 
 # 24.31 Resolutions of differential graded algebras
 
-Section 24.31 of the Stacks Project, [Tag 0FU0](https://stacks.math.columbia.edu/tag/0FU0). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 24.31 of the Stacks Project, [Tag 0FU0](https://stacks.math.columbia.edu/tag/0FU0). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FU1, a lemma
 
 [Tag 0FU1](https://stacks.math.columbia.edu/tag/0FU1) in the Stacks Project.
 
-**`SheafOfModules.freeDGAlgebra_colimit_isGoodToposBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeDifferentialGradedAlgebraGood.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeDifferentialGradedAlgebraGood.lean#L241).
+**`SheafOfModules.freeDGAlgebra_colimit_isGoodToposBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeDifferentialGradedAlgebraGood.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeDifferentialGradedAlgebraGood.lean#L241).
 
 > **Tag 0FU1.** *"In the situation above the differential graded `O`-algebra `A = colim Aᵢ` has
 > the following property: for any morphism `(f, f^♯) : (Sh(C'), O') ⟶ (Sh(C), O)` of ringed topoi,
@@ -44,7 +44,7 @@ theorem freeDGAlgebra_colimit_isGoodToposBaseChange :
 
 [Tag 0FU2](https://stacks.math.columbia.edu/tag/0FU2) in the Stacks Project.
 
-**`SheafOfModules.exists_good_quasiIso_differentialGradedAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAlgebraGoodResolution.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAlgebraGoodResolution.lean#L104).
+**`SheafOfModules.exists_good_quasiIso_differentialGradedAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAlgebraGoodResolution.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAlgebraGoodResolution.lean#L104).
 
 > **Tag 0FU2.** *"Let `(C, O)` be a ringed site. Let `(B, d)` be a differential graded
 > `O`-algebra. There exists a quasi-isomorphism of differential graded `O`-algebras
@@ -71,4 +71,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 24.31, Tag 0FU0](https://stacks.math.columbia.edu/tag/0FU0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.32 Generic flatness
 
-Section 67.32 of the Stacks Project, [Tag 06QR](https://stacks.math.columbia.edu/tag/06QR). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.32 of the Stacks Project, [Tag 06QR](https://stacks.math.columbia.edu/tag/06QR). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06QS, a proposition
 
 [Tag 06QS](https://stacks.math.columbia.edu/tag/06QS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_dense_open_genericFlatness_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean#L179). The attribute's comment: “the one-chart core of the proof: Tag 052B read on a commuting square of affine étale charts”.
+**`AlgebraicGeometry.Space.exists_dense_open_genericFlatness_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean#L179). The attribute's comment: “the one-chart core of the proof: Tag 052B read on a commuting square of affine étale charts”.
 
 > **Stacks 06QS, the one-chart core.** On a commuting square of étale charts of `f` whose
 > source and target charts are affine and whose target chart is reduced, the chart morphism
@@ -53,7 +53,7 @@ theorem exists_dense_open_genericFlatness_chart
               finitePresentationLocus B S hS hX F
 ```
 
-**`AlgebraicGeometry.Space.exists_dense_open_genericFlatness_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean#L415). The attribute's comment: “step 3 of the proof: the case of a reduced affine base”.
+**`AlgebraicGeometry.Space.exists_dense_open_genericFlatness_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean#L415). The attribute's comment: “step 3 of the proof: the case of a reduced affine base”.
 
 > **Stacks 06QS for a reduced affine base**, step 3 of the source. A finite-type morphism of
 > algebraic spaces to a reduced affine scheme of the site, together with a module which is
@@ -81,7 +81,7 @@ theorem exists_dense_open_genericFlatness_of_isAffine
           x ∈ flatLocus B S hS hX f F ∧ x ∈ finitePresentationLocus B S hS hX F
 ```
 
-**`AlgebraicGeometry.Space.exists_dense_open_genericFlatness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean#L689).
+**`AlgebraicGeometry.Space.exists_dense_open_genericFlatness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean, line 689](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean#L689).
 
 > **Stacks 06QS.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` of finite type
 > with `Y` reduced, and let `F` be an `𝒪_X`-module which is quasi-coherent of finite type on
@@ -108,7 +108,7 @@ theorem exists_dense_open_genericFlatness
             x ∈ finitePresentationLocus B S hS hX F
 ```
 
-**`AlgebraicGeometry.Space.exists_dense_open_genericFlatness_of_isScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean, line 736](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean#L736). The attribute's comment: “step 2 of the proof: the case of a reduced scheme base”.
+**`AlgebraicGeometry.Space.exists_dense_open_genericFlatness_of_isScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean, line 736](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatness.lean#L736). The attribute's comment: “step 2 of the proof: the case of a reduced scheme base”.
 
 > **Stacks 06QS for a reduced scheme base**, step 2 of the source. This is the general
 > statement for a base which is represented by an object of the site, where the identity may be
@@ -137,7 +137,7 @@ theorem exists_dense_open_genericFlatness_of_isScheme
 
 [Tag 06QT](https://stacks.math.columbia.edu/tag/06QT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_dense_open_genericFlatness_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatnessFinitePresentation.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatnessFinitePresentation.lean#L107).
+**`AlgebraicGeometry.Space.exists_dense_open_genericFlatness_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatnessFinitePresentation.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatnessFinitePresentation.lean#L107).
 
 > **Stacks 06QT.** Let `f : X ⟶ Y` be a quasi-separated morphism of algebraic spaces over `S`
 > of finite type with `Y` reduced, and let `F` be an `𝒪_X`-module which is quasi-coherent of
@@ -167,7 +167,7 @@ theorem exists_dense_open_genericFlatness_isFinitePresentation
             x ∈ finitePresentationLocus B S hS hX F
 ```
 
-**`AlgebraicGeometry.Space.exists_dense_open_genericFlatness_isFinitePresentation_of_isScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatnessFinitePresentation.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatnessFinitePresentation.lean#L131). The attribute's comment: “the case of a base represented by an object of the site”.
+**`AlgebraicGeometry.Space.exists_dense_open_genericFlatness_isFinitePresentation_of_isScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatnessFinitePresentation.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/GenericFlatnessFinitePresentation.lean#L131). The attribute's comment: “the case of a base represented by an object of the site”.
 
 > **Stacks 06QT for a base represented by an object of the site.** This is the statement of
 > the tag for a reduced scheme base, where the identity may be taken as the surjective étale
@@ -198,4 +198,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.32, Tag 06QR](https://stacks.math.columbia.edu/tag/06QR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

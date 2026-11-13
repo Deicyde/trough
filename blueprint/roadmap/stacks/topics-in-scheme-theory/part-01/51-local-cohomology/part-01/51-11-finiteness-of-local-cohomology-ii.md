@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.11 Finiteness of local cohomology, II
 
-Section 51.11 of the Stacks Project, [Tag 0BJQ](https://stacks.math.columbia.edu/tag/0BJQ). 8 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.11 of the Stacks Project, [Tag 0BJQ](https://stacks.math.columbia.edu/tag/0BJQ). 8 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EFD, a proposition
 
 [Tag 0EFD](https://stacks.math.columbia.edu/tag/0EFD) in the Stacks Project.
 
-**`Stacks.LocalCohomology.finite_localCohomologyWithSupportIn_iff_depth_add_dim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FinitenessDepthDimension.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/FinitenessDepthDimension.lean#L61).
+**`Stacks.LocalCohomology.finite_localCohomologyWithSupportIn_iff_depth_add_dim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FinitenessDepthDimension.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/FinitenessDepthDimension.lean#L61).
 
 > **Faltings' finiteness criterion.** For a finite module `M` over a Noetherian ring `A` with a
 > dualizing complex and a specialization-stable `T ⊆ Spec(A)`, the local cohomology modules
@@ -43,7 +43,7 @@ public theorem finite_localCohomologyWithSupportIn_iff_depth_add_dim
 
 [Tag 0BJR](https://stacks.math.columbia.edu/tag/0BJR) in the Stacks Project.
 
-**`Stacks.LocalCohomology.localCohomologyCutoff`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FinitenessCutoff.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/FinitenessCutoff.lean#L54).
+**`Stacks.LocalCohomology.localCohomologyCutoff`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FinitenessCutoff.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/FinitenessCutoff.lean#L54).
 
 > The local cohomology finiteness cutoff
 > `s_{A,I}(M) = min_{p ∉ V(I), q ∈ V(I), p ⊆ q} (depth(Mₚ) + dim((A / p)ₒ))`.
@@ -57,7 +57,7 @@ public noncomputable def localCohomologyCutoff (A : Type*) [CommRing A] (I : Ide
 
 [Tag 0BJS](https://stacks.math.columbia.edu/tag/0BJS) in the Stacks Project.
 
-**`Module.localCohomologyCutoff_map_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomologyCutoff/FiniteMap.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomologyCutoff/FiniteMap.lean#L125).
+**`Module.localCohomologyCutoff_map_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomologyCutoff/FiniteMap.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomologyCutoff/FiniteMap.lean#L125).
 
 > For a finite homomorphism of Noetherian rings, extension of an ideal does not change the
 > local cohomology finiteness cutoff of a finite module if the source is universally catenary.
@@ -76,7 +76,7 @@ theorem localCohomologyCutoff_map_eq
 
 [Tag 0EHW](https://stacks.math.columbia.edu/tag/0EHW) in the Stacks Project.
 
-**`Stacks.Algebraization.completedStalkDepth_add_ringKrullDim_succ_eq_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CompletedStalkDepthSpecialization.lean, line 944](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/CompletedStalkDepthSpecialization.lean#L944). The attribute's comment: “second display, along a specialization of points”.
+**`Stacks.Algebraization.completedStalkDepth_add_ringKrullDim_succ_eq_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CompletedStalkDepthSpecialization.lean, line 944](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CompletedStalkDepthSpecialization.lean#L944). The attribute's comment: “second display, along a specialization of points”.
 
 > **[Stacks, Tag 0EHW] along a specialization of points**, the final step in the proof of
 > [Stacks, Tag 0EJA].
@@ -125,7 +125,7 @@ public theorem completedStalkDepth_add_ringKrullDim_succ_eq_of_specializes
           (PrimeSpectrum.comap (completedLocalRingSpecializes J h) p).asIdeal)
 ```
 
-**`Module.depth_localized_adicCompletion_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/FinitenessLocalCohomology/DepthAdicCompletion.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/FinitenessLocalCohomology/DepthAdicCompletion.lean#L45). The attribute's comment: “first display, the inequality `depth(M_𝔭) ≤ depth(M'_{𝔭'})`, without the dualizing complex and without the outer pair of primes”.
+**`Module.depth_localized_adicCompletion_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/FinitenessLocalCohomology/DepthAdicCompletion.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/FinitenessLocalCohomology/DepthAdicCompletion.lean#L45). The attribute's comment: “first display, the inequality `depth(M_𝔭) ≤ depth(M'_{𝔭'})`, without the dualizing complex and without the outer pair of primes”.
 
 > The depth of a finite module at a prime cannot decrease after adic completion and
 > localization at a prime above it.
@@ -142,7 +142,7 @@ theorem depth_localized_adicCompletion_le
         (LocalizedModule p'.primeCompl (AdicCompletion I M))
 ```
 
-**`Module.depth_add_ringKrullDim_quotient_localization_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/FinitenessLocalCohomology/DepthDimAdicCompletion.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/FinitenessLocalCohomology/DepthDimAdicCompletion.lean#L150). The attribute's comment: “second display”.
+**`Module.depth_add_ringKrullDim_quotient_localization_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/FinitenessLocalCohomology/DepthDimAdicCompletion.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/FinitenessLocalCohomology/DepthDimAdicCompletion.lean#L151). The attribute's comment: “second display”.
 
 > **Stacks Project, Tag 0EHW, second display.** Let `A` be a Noetherian ring admitting a
 > dualizing complex, let `I` be an ideal, let `M` be a finite `A`-module and write `A'` and `M'` for
@@ -174,7 +174,7 @@ public theorem depth_add_ringKrullDim_quotient_localization_adicCompletion
 
 [Tag 0BJT](https://stacks.math.columbia.edu/tag/0BJT) in the Stacks Project.
 
-**`Stacks.LocalCohomology.localCohomologyCutoff_adicCompletion_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Cutoff/Completion.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Cutoff/Completion.lean#L123). The attribute's comment: “cutoff\_completion\_le”.
+**`Stacks.LocalCohomology.localCohomologyCutoff_adicCompletion_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Cutoff/Completion.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Cutoff/Completion.lean#L123). The attribute's comment: “cutoff\_completion\_le”.
 
 > **Stacks 0BJT.** Completion at the maximal ideal cannot increase the local cohomology
 > finiteness cutoff of a finite module over a universally catenary Noetherian local ring.
@@ -190,7 +190,7 @@ public theorem localCohomologyCutoff_adicCompletion_le
       localCohomologyCutoff A I M
 ```
 
-**`Stacks.LocalCohomology.min_succ_le_localCohomologyCutoff_adicCompletion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CutoffCompletionSerre.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CutoffCompletionSerre.lean#L312). The attribute's comment: “cutoff\_completion\_lower\_bound\_of\_serre”.
+**`Stacks.LocalCohomology.min_succ_le_localCohomologyCutoff_adicCompletion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CutoffCompletionSerre.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CutoffCompletionSerre.lean#L312). The attribute's comment: “cutoff\_completion\_lower\_bound\_of\_serre”.
 
 > If the formal fibres of a universally catenary Noetherian local ring
 > satisfy `(Sₙ)`, the cutoff after completion is at least the minimum of the
@@ -213,7 +213,7 @@ public lemma min_succ_le_localCohomologyCutoff_adicCompletion
 
 [Tag 0BJU](https://stacks.math.columbia.edu/tag/0BJU) in the Stacks Project.
 
-**`Stacks.LocalCohomology.finite_lt_and_not_finite_localCohomologyCutoff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/GorensteinFiniteness.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/GorensteinFiniteness.lean#L168).
+**`Stacks.LocalCohomology.finite_lt_and_not_finite_localCohomologyCutoff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/GorensteinFiniteness.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/GorensteinFiniteness.lean#L168).
 
 > **Stacks Project, Tag 0BJU.** Let `A` be a Gorenstein Noetherian local ring, let `I ⊆ A` be
 > an ideal, let `Z = V(I)` and let `M` be a finite `A`-module. Let `s = s_{A,I}(M)` be the cutoff
@@ -247,7 +247,7 @@ public theorem finite_lt_and_not_finite_localCohomologyCutoff
 
 [Tag 0BJV](https://stacks.math.columbia.edu/tag/0BJV) in the Stacks Project.
 
-**`Stacks.LocalCohomology.finite_localCohomologyWithSupportIn_of_lt_localCohomologyCutoff_of_formalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean, line 462](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean#L462). The attribute's comment: “finiteness in the degrees below the cutoff”.
+**`Stacks.LocalCohomology.finite_localCohomologyWithSupportIn_of_lt_localCohomologyCutoff_of_formalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean, line 462](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean#L462). The attribute's comment: “finiteness in the degrees below the cutoff”.
 
 > **Stacks Project, Tag 0BJV, finiteness below the cutoff.** Let `A` be a universally
 > catenary Noetherian ring whose local rings have Cohen–Macaulay formal fibres, let `I ⊆ A` be an
@@ -268,7 +268,7 @@ public theorem finite_localCohomologyWithSupportIn_of_lt_localCohomologyCutoff_o
         ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj (ModuleCat.of A M)) i)
 ```
 
-**`Stacks.LocalCohomology.not_finite_localCohomologyWithSupportIn_localCohomologyCutoff_of_formalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean#L484). The attribute's comment: “non-finiteness in the cutoff degree”.
+**`Stacks.LocalCohomology.not_finite_localCohomologyWithSupportIn_localCohomologyCutoff_of_formalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean, line 484](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean#L484). The attribute's comment: “non-finiteness in the cutoff degree”.
 
 > **Stacks Project, Tag 0BJV, non-finiteness at the cutoff.** In the situation of
 > `finite_localCohomologyWithSupportIn_of_lt_localCohomologyCutoff_of_formalFibers`, if the cutoff
@@ -291,7 +291,7 @@ public theorem not_finite_localCohomologyWithSupportIn_localCohomologyCutoff_of_
         ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj (ModuleCat.of A M)) (s : ℤ))
 ```
 
-**`Stacks.LocalCohomology.finite_lt_and_not_finite_localCohomologyCutoff_of_formalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean#L523).
+**`Stacks.LocalCohomology.finite_lt_and_not_finite_localCohomologyCutoff_of_formalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/FaltingsFiniteness.lean#L523).
 
 > **Stacks Project, Tag 0BJV.** Let `A` be a Noetherian ring, let `I ⊆ A` be an ideal, let
 > `Z = V(I) ⊆ Spec(A)` and let `M` be a finite `A`-module. Set `s = s_{A,I}(M)` as in Tag 0BJR.
@@ -322,7 +322,7 @@ public theorem finite_lt_and_not_finite_localCohomologyCutoff_of_formalFibers
 
 [Tag 0BJW](https://stacks.math.columbia.edu/tag/0BJW) in the Stacks Project.
 
-**`Stacks.LocalCohomology.finite_localCohomologyWithSupportIn_of_lt_localCohomologyCutoff_of_serreFormalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean#L135). The attribute's comment: “finiteness through degree n when the formal fibres are (S\_n)”.
+**`Stacks.LocalCohomology.finite_localCohomologyWithSupportIn_of_lt_localCohomologyCutoff_of_serreFormalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean#L135). The attribute's comment: “finiteness through degree n when the formal fibres are (S\_n)”.
 
 > **Stacks Project, Tag 0BJW, finiteness through a degree below the cutoff.** Let `A` be a
 > universally catenary Noetherian ring, let `I ⊆ A` be an ideal, let `Z = V(I)` and let `M` be a
@@ -348,7 +348,7 @@ public theorem
         ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj (ModuleCat.of A M)) i)
 ```
 
-**`Stacks.LocalCohomology.not_finite_localCohomologyWithSupportIn_localCohomologyCutoff_of_serreFormalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean#L163). The attribute's comment: “non-finiteness in the cutoff degree when the formal fibres are (S\_\{s-1})”.
+**`Stacks.LocalCohomology.not_finite_localCohomologyWithSupportIn_localCohomologyCutoff_of_serreFormalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean#L163). The attribute's comment: “non-finiteness in the cutoff degree when the formal fibres are (S\_\{s-1})”.
 
 > **Stacks Project, Tag 0BJW, non-finiteness at the cutoff.** In the situation of
 > `finite_localCohomologyWithSupportIn_of_lt_localCohomologyCutoff_of_serreFormalFibers`, if the
@@ -376,7 +376,7 @@ public theorem
         ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj (ModuleCat.of A M)) (s : ℤ))
 ```
 
-**`Stacks.LocalCohomology.finite_lt_and_not_finite_localCohomologyCutoff_of_serreFormalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean#L220).
+**`Stacks.LocalCohomology.finite_lt_and_not_finite_localCohomologyCutoff_of_serreFormalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean#L220).
 
 > **Stacks Project, Tag 0BJW.** In the situation of Tag 0BJV — `A` a Noetherian ring,
 > `I ⊆ A` an ideal, `Z = V(I) ⊆ Spec(A)`, `M` a finite `A`-module and `s = s_{A,I}(M)` the cutoff
@@ -422,4 +422,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.11, Tag 0BJQ](https://stacks.math.columbia.edu/tag/0BJQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

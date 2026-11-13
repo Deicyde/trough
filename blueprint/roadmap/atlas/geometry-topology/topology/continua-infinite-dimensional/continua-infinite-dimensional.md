@@ -7,7 +7,7 @@ statement: formalized
 
 # Continuum theory and infinite-dimensional topology: its own results
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/index.html).
 
 Compact connected spaces, Peano continua and space-filling curves, absolute retracts, hyperspaces, the Hilbert cube and fixed-point properties.
 
@@ -21,7 +21,7 @@ surjection from the closed unit interval $[0,1]$ onto $X$.
 
 - H. Hahn, Jahresber. DMV 23 (1914); S. Mazurkiewicz, Fund. Math. 1 (1920) (announcement 1913); Willard, General Topology; Munkres, Topology 2nd ed., second-countable Hausdorff compact formulation.
 
-Formalized by `MathlibExt.Topology.Continuum.HahnMazurkiewiczWanted.hahnMazurkiewicz`, a theorem declared in [MathlibExt/Topology/Continuum/HahnMazurkiewicz.lean, line 1279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Continuum/HahnMazurkiewicz.lean#L1279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/index.html#hahn-mazurkiewicz).
+Formalized by `MathlibExt.Topology.Continuum.HahnMazurkiewiczWanted.hahnMazurkiewicz`, a theorem declared in [MathlibExt/Topology/Continuum/HahnMazurkiewicz.lean, line 1279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Continuum/HahnMazurkiewicz.lean#L1279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/index.html#hahn-mazurkiewicz).
 
 ## Peano's space-filling curve
 
@@ -31,7 +31,7 @@ There exists a continuous surjection from the closed unit interval to its square
 
 - G. Peano, "Sur une courbe, qui remplit toute une aire plane", Mathematische Annalen 36 (1890), 157-160.
 
-Formalized by `MathlibExt.Topology.Continuum.PeanoCurveWanted.peano_curve_exists`, a theorem declared in [MathlibExt/Topology/Continuum/PeanoCurve.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Topology/Continuum/PeanoCurve.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/index.html#peano-curve-exists).
+Formalized by `MathlibExt.Topology.Continuum.PeanoCurveWanted.peano_curve_exists`, a theorem declared in [MathlibExt/Topology/Continuum/PeanoCurve.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Topology/Continuum/PeanoCurve.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/index.html#peano-curve-exists).
 
 ## Unit spheres of infinite-dimensional Banach spaces are unicoherent
 
@@ -54,7 +54,7 @@ recorded in the addendum.
 
 - S. Banach, Problem 46 of the Scottish Book; addendum in the Scottish Book citing Borsuk and Eilenberg, Fund. Math. 26, p. 61; see the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
-Stated but not proved: `MathlibExt.Topology.ScottishBook46Wanted.sphere_in_banach_space_is_unicoherent` is written with `theorem_wanted` in [WantedExt/Topology/ScottishBook46Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ScottishBook46Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/index.html#sphere-in-banach-space-is-unicoherent).
+Stated but not proved: `MathlibExt.Topology.ScottishBook46Wanted.sphere_in_banach_space_is_unicoherent` is written with `theorem_wanted` in [WantedExt/Topology/ScottishBook46Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ScottishBook46Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/index.html#sphere-in-banach-space-is-unicoherent).
 
 ## Depends on
 
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Continuum theory and infinite-dimensional topology](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Topology/continua-infinite-dimensional)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Topology/continua-infinite-dimensional)

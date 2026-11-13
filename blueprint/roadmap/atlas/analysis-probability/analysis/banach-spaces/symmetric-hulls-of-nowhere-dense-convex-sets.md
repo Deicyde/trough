@@ -7,7 +7,7 @@ statement: formalized
 
 # Symmetric hulls of nowhere dense convex sets
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/symmetric-hulls-of-nowhere-dense-convex-sets/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/symmetric-hulls-of-nowhere-dense-convex-sets/index.html).
 
 ## Mazur's symmetric hull claim (Scottish Book Problem 65)
 
@@ -22,7 +22,7 @@ larger in general; the smallest-set reading is adopted here. For the Ad 65 count
 (non-decreasing functions, a cone) the two constructions coincide, so the counterexample still
 applies.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook65Wanted.ScottishBookProblem65Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook65Wanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook65Wanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/symmetric-hulls-of-nowhere-dense-convex-sets/index.html#scottish-book-problem65-claim).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook65Wanted.ScottishBookProblem65Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook65Wanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook65Wanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/symmetric-hulls-of-nowhere-dense-convex-sets/index.html#scottish-book-problem65-claim).
 
 ## Mazur's Problem 65 has a negative answer
 
@@ -35,7 +35,7 @@ $W \cup (-W)$ has nonempty interior.
 
 - S. Mazur, Problem 65 of the Scottish Book; typescript Ad 65 records the negative answer, with the counterexample of the set `W` of non-decreasing functions in the space `(C)` of continuous functions: `W` is convex, nowhere dense, and contains `0`, while the symmetric convex set containing `W` contains all functions of bounded variation and is not nowhere dense (indeed, it is dense, since it contains the polynomials). For this `W` (a cone) the `W ∪ -W` hull and the difference-set construction coincide, so the counterexample refutes the corrected claim too.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook65Wanted.mazur65_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook65Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook65Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/symmetric-hulls-of-nowhere-dense-convex-sets/index.html#mazur65-refuted).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook65Wanted.mazur65_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook65Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook65Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/symmetric-hulls-of-nowhere-dense-convex-sets/index.html#mazur65-refuted).
 
 ## Depends on
 
@@ -44,4 +44,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Symmetric hulls of nowhere dense convex sets](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/symmetric-hulls-of-nowhere-dense-convex-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/banach-spaces/symmetric-hulls-of-nowhere-dense-convex-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/banach-spaces/symmetric-hulls-of-nowhere-dense-convex-sets)

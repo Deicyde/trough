@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.6 Fibre products of rings, II
 
-Section 15.6 of the Stacks Project, [Tag 0D2G](https://stacks.math.columbia.edu/tag/0D2G). 10 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.6 of the Stacks Project, [Tag 0D2G](https://stacks.math.columbia.edu/tag/0D2G). 10 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08KH, a situation
 
 [Tag 08KH](https://stacks.math.columbia.edu/tag/08KH) in the Stacks Project.
 
-**`RingFibreProduct.Situation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FibreProduct.lean#L75).
+**`RingFibreProduct.Situation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FibreProduct.lean#L75).
 
 > The setup for a ring fibre product `B ×_A A'` in which `A' → A` is surjective and
 > has the specified ideal `I` as its kernel.
@@ -24,7 +24,7 @@ public structure Situation (toBase : B →+* A) (surjection : A' →+* A)
     (I : Ideal A') : Prop
 ```
 
-**`RingFibreProduct.Situation.pullbackCone`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FibreProduct.lean#L91).
+**`RingFibreProduct.Situation.pullbackCone`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FibreProduct.lean#L91).
 
 > The canonical cone whose point is `B ×_A A'` and whose legs are the two projections.
 
@@ -34,7 +34,7 @@ public abbrev pullbackCone {toBase : B →+* A} {surjection : A' →+* A} {I : I
     PullbackCone (CommRingCat.ofHom toBase) (CommRingCat.ofHom surjection)
 ```
 
-**`RingFibreProduct.Situation.pullbackConeIsLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FibreProduct.lean#L98).
+**`RingFibreProduct.Situation.pullbackConeIsLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FibreProduct.lean#L98).
 
 > The canonical square defining `B ×_A A'` is cartesian.
 
@@ -48,7 +48,7 @@ public def pullbackConeIsLimit {toBase : B →+* A} {surjection : A' →+* A}
 
 [Tag 0B7J](https://stacks.math.columbia.edu/tag/0B7J) in the Stacks Project.
 
-**`RingFibreProduct.primeSpectrum_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct/Spectrum.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FibreProduct/Spectrum.lean#L459).
+**`RingFibreProduct.primeSpectrum_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct/Spectrum.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FibreProduct/Spectrum.lean#L459).
 
 > **Stacks 0B7J.** The prime spectrum of `B ×_A A'`, where `A' → A` is surjective,
 > is the pushout of `Spec(B)` and `Spec(A')` over `Spec(A)` as a topological space.
@@ -71,7 +71,7 @@ public theorem primeSpectrum_isPushout
 
 [Tag 0E1S](https://stacks.math.columbia.edu/tag/0E1S) in the Stacks Project.
 
-**`RingFibreProduct.pullback_snd_isIntegral_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FibreProduct.lean#L315).
+**`RingFibreProduct.pullback_snd_isIntegral_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FibreProduct.lean#L315).
 
 > The second projection `B ×_A A' → A'` is integral when `B → A` is integral and
 > `A' → A` is surjective.
@@ -87,7 +87,7 @@ public theorem pullback_snd_isIntegral_of_surjective (toBase : B →+* A) (surje
 
 [Tag 08KI](https://stacks.math.columbia.edu/tag/08KI) in the Stacks Project.
 
-**`ModuleGlueing.extensionOfScalarsToPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/CategoricalPullback.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/CategoricalPullback.lean#L96).
+**`ModuleGlueing.extensionOfScalarsToPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/CategoricalPullback.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/CategoricalPullback.lean#L96).
 
 > A commutative square of commutative rings induces the
 > extension-of-scalars functor
@@ -109,7 +109,7 @@ noncomputable def extensionOfScalarsToPullback.{u, uB', uB, uA', uA}
 
 [Tag 07RU](https://stacks.math.columbia.edu/tag/07RU) in the Stacks Project.
 
-**`MilnorPatching.compatiblePairsRightAdjoint_counit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/Adjunction.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/Adjunction.lean#L489).
+**`MilnorPatching.compatiblePairsRightAdjoint_counit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/Adjunction.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/Adjunction.lean#L483).
 
 > **Stacks Project, Tag 07RU.** For a fibre product `B' = B ×_A A'` with `A' → A`
 > surjective, the compatible-pairs construction is right adjoint to extension of scalars from
@@ -143,7 +143,7 @@ public theorem compatiblePairsRightAdjoint_counit_isIso
 
 [Tag 08IG](https://stacks.math.columbia.edu/tag/08IG) in the Stacks Project.
 
-**`MilnorPatching.compatiblePairs_adjunctionMap_surjective_and_not_injective_in_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/AdjunctionUnit.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/AdjunctionUnit.lean#L352).
+**`MilnorPatching.compatiblePairs_adjunctionMap_surjective_and_not_injective_in_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/AdjunctionUnit.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/AdjunctionUnit.lean#L352).
 
 > **Stacks Project, Tag 08IG.** For a fibre product `B' = B ×_A A'` with `A' → A`
 > surjective, the adjunction map from any `B'`-module to the compatible pairs of its scalar
@@ -196,7 +196,7 @@ public theorem compatiblePairs_adjunctionMap_surjective_and_not_injective_in_gen
 
 [Tag 08KJ](https://stacks.math.columbia.edu/tag/08KJ) in the Stacks Project.
 
-**`MilnorPatching.fibreProdMap_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching.lean#L230).
+**`MilnorPatching.fibreProdMap_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching.lean#L230).
 
 > **Theorem (Stacks Tag `08KJ`, Lemma 15.6.6).**  If both component maps
 > `a : N₁ → N₂` and `b : M'₁ → M'₂` of a morphism in the fibre product category are
@@ -214,7 +214,7 @@ theorem fibreProdMap_surjective
 
 [Tag 0D2H](https://stacks.math.columbia.edu/tag/0D2H) in the Stacks Project.
 
-**`MilnorPatching.finite_rightAdjoint_obj_of_finite_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/ModuleProperties.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/ModuleProperties.lean#L69).
+**`MilnorPatching.finite_rightAdjoint_obj_of_finite_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/ModuleProperties.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/ModuleProperties.lean#L69).
 
 > **Stacks Project, Tag 0D2H.** Let `B' = B ×_A A'`, with `A' → A` surjective.
 > For the compatible-pairs right adjoint of Tag 07RU, if both component modules are finite,
@@ -243,7 +243,7 @@ public theorem finite_rightAdjoint_obj_of_finite_components
 
 [Tag 0D2I](https://stacks.math.columbia.edu/tag/0D2I) in the Stacks Project.
 
-**`MilnorPatching.flatModulesEquivalenceOverFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/ModuleProperties.lean, line 1025](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/ModuleProperties.lean#L1025).
+**`MilnorPatching.flatModulesEquivalenceOverFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/ModuleProperties.lean, line 1025](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/ModuleProperties.lean#L1025).
 
 > **Stacks Project, Tag 0D2I.** Over a fibre product `B' = B ×_A A'` with `A' → A`
 > surjective, compatible pairs of flat modules are flat, every flat `B'`-module is canonically
@@ -290,7 +290,7 @@ public theorem flatModulesEquivalenceOverFibreProduct
 
 [Tag 0D2J](https://stacks.math.columbia.edu/tag/0D2J) in the Stacks Project.
 
-**`MilnorPatching.finiteProjectiveModulesEquivalenceOverFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/ProjectiveModules.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/ProjectiveModules.lean#L269).
+**`MilnorPatching.finiteProjectiveModulesEquivalenceOverFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/ProjectiveModules.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/ProjectiveModules.lean#L274).
 
 > **Stacks Project, Tag 0D2J.** Over a fibre product `B' = B ×_A A'` with `A' → A`
 > surjective, extension of scalars gives an equivalence from finite projective `B'`-modules to
@@ -327,4 +327,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.6, Tag 0D2G](https://stacks.math.columbia.edu/tag/0D2G)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

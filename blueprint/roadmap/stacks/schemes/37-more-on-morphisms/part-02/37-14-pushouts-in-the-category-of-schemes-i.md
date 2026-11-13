@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.14 Pushouts in the category of schemes, I
 
-Section 37.14 of the Stacks Project, [Tag 07RS](https://stacks.math.columbia.edu/tag/07RS). 6 tags here are carried by 30 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.14 of the Stacks Project, [Tag 07RS](https://stacks.math.columbia.edu/tag/07RS). 6 tags here are carried by 30 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ET0, a lemma
 
 [Tag 0ET0](https://stacks.math.columbia.edu/tag/0ET0) in the Stacks Project.
 
-**`Stacks.Pushout.isPushout_spec_map_of_isPullback_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Pushout/SchemePushout.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Pushout/SchemePushout.lean#L88).
+**`Stacks.Pushout.isPushout_spec_map_of_isPullback_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Pushout/SchemePushout.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Pushout/SchemePushout.lean#L88).
 
 > **Stacks Project, Tag 0ET0.**  A fibre product of rings over a surjective map is sent by
 > `Spec` to a pushout of schemes: if `p : A' ⟶ A` is surjective and the square with sides `p'`,
@@ -33,7 +33,7 @@ theorem isPushout_spec_map_of_isPullback_of_surjective
 
 [Tag 0BMP](https://stacks.math.columbia.edu/tag/0BMP) in the Stacks Project.
 
-**`AlgebraicGeometry.isColimit_of_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FpqcLocalColimit.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FpqcLocalColimit.lean#L195).
+**`AlgebraicGeometry.isColimit_of_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FpqcLocalColimit.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FpqcLocalColimit.lean#L195).
 
 > **Stacks Project, Tag 0BMP.** The colimit property for a cocone of schemes can be checked
 > on an fpqc covering of its vertex and on all pairwise overlaps.
@@ -53,7 +53,7 @@ public theorem isColimit_of_fpqc {J : Type v} [Category.{w} J]
 
 [Tag 07RT](https://stacks.math.columbia.edu/tag/07RT) in the Stacks Project.
 
-**`Stacks.Pushout.exists_isPushout_isPullback_isThickening_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean#L154). The attribute's comment: “the existence of the pushout, that Y ⊂ Y' is a thickening and that the square is cartesian; for a thickening of finite order”.
+**`Stacks.Pushout.exists_isPushout_isPullback_isThickening_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean#L154). The attribute's comment: “the existence of the pushout, that Y ⊂ Y' is a thickening and that the square is cartesian; for a thickening of finite order”.
 
 > **Stacks Project, Tag 07RT for a finite-order thickening, on an explicitly constructed
 > apex.**  For a finite-order thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y` there is
@@ -67,7 +67,7 @@ theorem exists_isPushout_isPullback_isThickening_of_isFiniteOrderThickening (i :
       IsPushout i f A B ∧ IsPullback i f A B ∧ IsThickening B
 ```
 
-**`Stacks.Pushout.hasPushout_of_isFiniteOrderThickening_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean#L168). The attribute's comment: “the existence of the pushout, for a thickening of finite order”.
+**`Stacks.Pushout.hasPushout_of_isFiniteOrderThickening_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean#L168). The attribute's comment: “the existence of the pushout, for a thickening of finite order”.
 
 > **Stacks Project, Tag 07RT, first assertion, for a finite-order thickening.**  A finite-order
 > thickening and an affine morphism have a pushout in the category of schemes.
@@ -77,7 +77,7 @@ theorem hasPushout_of_isFiniteOrderThickening_of_isAffineHom (i : X ⟶ X') (f :
     (hi : IsFiniteOrderThickening i) [IsAffineHom f] : HasPushout i f
 ```
 
-**`Stacks.Pushout.isPullback_pushout_of_isFiniteOrderThickening_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean#L178). The attribute's comment: “that the square is cartesian, X = Y ×\_\{Y'} X'; for a thickening of finite order”.
+**`Stacks.Pushout.isPullback_pushout_of_isFiniteOrderThickening_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean#L178). The attribute's comment: “that the square is cartesian, X = Y ×\_\{Y'} X'; for a thickening of finite order”.
 
 > **Stacks Project, Tag 07RT, third assertion, for a finite-order thickening.**  The pushout
 > square of a finite-order thickening and an affine morphism is also cartesian, that is,
@@ -89,7 +89,7 @@ theorem isPullback_pushout_of_isFiniteOrderThickening_of_isAffineHom (i : X ⟶ 
     IsPullback i f (pushout.inl i f) (pushout.inr i f)
 ```
 
-**`Stacks.Pushout.pushout_inr_isThickening_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean#L191). The attribute's comment: “that Y ⊂ Y' is a thickening, for a thickening of finite order”.
+**`Stacks.Pushout.pushout_inr_isThickening_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean#L191). The attribute's comment: “that Y ⊂ Y' is a thickening, for a thickening of finite order”.
 
 > **Stacks Project, Tag 07RT, second assertion, for a finite-order thickening.**  The map from
 > `Y` into the pushout of a finite-order thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y`
@@ -101,7 +101,7 @@ theorem pushout_inr_isThickening_of_isFiniteOrderThickening (i : X ⟶ X') (f : 
     IsThickening (pushout.inr i f)
 ```
 
-**`Stacks.Pushout.pushout_structureSheaf_isPullback_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean#L207). The attribute's comment: “the description of 𝒪\_\{Y'} as 𝒪\_Y ×\_\{f\_*𝒪\_X} f'\_*𝒪\_\{X'}; for a thickening of finite order”.
+**`Stacks.Pushout.pushout_structureSheaf_isPullback_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean#L207). The attribute's comment: “the description of 𝒪\_\{Y'} as 𝒪\_Y ×\_\{f\_*𝒪\_X} f'\_*𝒪\_\{X'}; for a thickening of finite order”.
 
 > **Stacks Project, Tag 07RT, fourth assertion, for a finite-order thickening.**  On every open
 > `U` of the pushout of a finite-order thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y`
@@ -119,7 +119,7 @@ theorem pushout_structureSheaf_isPullback_of_isFiniteOrderThickening (i : X ⟶ 
           (pushout.condition (f := i) (g := f)))))
 ```
 
-**`Stacks.Pushout.exists_isPushout_isPullback_isThickening_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L77). The attribute's comment: “the existence of the pushout, that Y ⊂ Y' is a thickening and that the square is cartesian, X = Y ×\_\{Y'} X'”.
+**`Stacks.Pushout.exists_isPushout_isPullback_isThickening_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L77). The attribute's comment: “the existence of the pushout, that Y ⊂ Y' is a thickening and that the square is cartesian, X = Y ×\_\{Y'} X'”.
 
 > **Stacks Project, Tag 07RT for an arbitrary thickening, on an explicitly constructed apex.**
 > For a thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y` there is a scheme `Q` with maps
@@ -133,7 +133,7 @@ theorem exists_isPushout_isPullback_isThickening_of_isThickening (i : X ⟶ X') 
       IsPushout i f A B ∧ IsPullback i f A B ∧ IsThickening B
 ```
 
-**`Stacks.Pushout.hasPushout_of_isThickening_of_isAffineHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L91). The attribute's comment: “the existence of the pushout”.
+**`Stacks.Pushout.hasPushout_of_isThickening_of_isAffineHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L91). The attribute's comment: “the existence of the pushout”.
 
 > **Stacks Project, Tag 07RT, first assertion.**  A thickening and an affine morphism have a
 > pushout in the category of schemes.
@@ -143,7 +143,7 @@ theorem hasPushout_of_isThickening_of_isAffineHom' (i : X ⟶ X') (f : X ⟶ Y)
     (hi : IsThickening i) [IsAffineHom f] : HasPushout i f
 ```
 
-**`Stacks.Pushout.pushout_inr_isThickening'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L99). The attribute's comment: “that Y ⊂ Y' is a thickening”.
+**`Stacks.Pushout.pushout_inr_isThickening'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L99). The attribute's comment: “that Y ⊂ Y' is a thickening”.
 
 > **Stacks Project, Tag 07RT, second assertion.**  The map from `Y` into the pushout of a
 > thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y` is again a thickening; stated for
@@ -154,7 +154,7 @@ theorem pushout_inr_isThickening' (i : X ⟶ X') (f : X ⟶ Y) (hi : IsThickenin
     [HasPushout i f] : IsThickening (pushout.inr i f)
 ```
 
-**`Stacks.Pushout.isPullback_pushout_of_isThickening_of_isAffineHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L107). The attribute's comment: “that the square is cartesian, X = Y ×\_\{Y'} X'”.
+**`Stacks.Pushout.isPullback_pushout_of_isThickening_of_isAffineHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L107). The attribute's comment: “that the square is cartesian, X = Y ×\_\{Y'} X'”.
 
 > **Stacks Project, Tag 07RT, third assertion.**  The pushout square of a thickening and an
 > affine morphism is also cartesian, that is, `X = Y ×_{Y'} X'`; stated for Mathlib's canonical
@@ -166,7 +166,7 @@ theorem isPullback_pushout_of_isThickening_of_isAffineHom' (i : X ⟶ X') (f : X
     IsPullback i f (pushout.inl i f) (pushout.inr i f)
 ```
 
-**`Stacks.Pushout.pushout_structureSheaf_isPullback'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L117). The attribute's comment: “the description of 𝒪\_\{Y'} as 𝒪\_Y ×\_\{f\_*𝒪\_X} f'\_*𝒪\_\{X'}”.
+**`Stacks.Pushout.pushout_structureSheaf_isPullback'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L117). The attribute's comment: “the description of 𝒪\_\{Y'} as 𝒪\_Y ×\_\{f\_*𝒪\_X} f'\_*𝒪\_\{X'}”.
 
 > **Stacks Project, Tag 07RT, fourth assertion.**  On every open `U` of the pushout of a
 > thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y` the ring of sections is the fibre
@@ -187,7 +187,7 @@ theorem pushout_structureSheaf_isPullback' (i : X ⟶ X') (f : X ⟶ Y) (hi : Is
 
 [Tag 07RV](https://stacks.math.columbia.edu/tag/07RV) in the Stacks Project.
 
-**`Stacks.Pushout.baseChangeFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean#L165). The attribute's comment: “the base-change functor F”.
+**`Stacks.Pushout.baseChangeFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean#L165). The attribute's comment: “the base-change functor F”.
 
 > Base change from schemes over the pushout to compatible schemes over
 > its two constituent pieces.
@@ -199,7 +199,7 @@ noncomputable def baseChangeFunctor {X X' Y : Scheme.{u}}
     Over (pushout i f) ⥤ gluingData i f
 ```
 
-**`Stacks.Pushout.gluingFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean, line 486](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean#L486). The attribute's comment: “the left adjoint G”.
+**`Stacks.Pushout.gluingFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean#L486). The attribute's comment: “the left adjoint G”.
 
 > Gluing compatible schemes over `Y` and `X'` to a scheme over their
 > pushout. Its objectwise pushout property is stated below.
@@ -212,7 +212,7 @@ noncomputable def gluingFunctor {X X' Y : Scheme.{u}}
     gluingData i f ⥤ Over (pushout i f)
 ```
 
-**`Stacks.Pushout.gluingFunctor_obj_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean#L562). The attribute's comment: “the left adjoint sends a triple to the pushout V ⨿\_\{V ×\_Y X} U'”.
+**`Stacks.Pushout.gluingFunctor_obj_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean, line 562](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean#L562). The attribute's comment: “the left adjoint sends a triple to the pushout V ⨿\_\{V ×\_Y X} U'”.
 
 > The glued scheme is the pushout of its two components along their
 > identified restrictions to `X`, with the induced map to the ambient pushout.
@@ -232,7 +232,7 @@ theorem gluingFunctor_obj_isPushout {X X' Y : Scheme.{u}}
         T.obj.right.hom ≫ pushout.inl i f
 ```
 
-**`Stacks.Pushout.gluingAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean, line 1018](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean#L1018). The attribute's comment: “the adjunction G ⊣ F”.
+**`Stacks.Pushout.gluingAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean, line 1018](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean#L1018). The attribute's comment: “the adjunction G ⊣ F”.
 
 > **Stacks Project, Tag 07RV, the adjunction.**  Gluing is left adjoint to
 > base change: a morphism from the glued scheme `V ⨿_U U'` to a scheme `Z` over `Y'` is the same
@@ -249,7 +249,7 @@ noncomputable def gluingAdjunction {X X' Y : Scheme.{u}}
     gluingFunctor i f hi ⊣ baseChangeFunctor i f hi
 ```
 
-**`Stacks.Pushout.gluingCompBaseChangeIsoId`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean, line 1528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean#L1528). The attribute's comment: “the composition F ∘ G is isomorphic to the identity functor”.
+**`Stacks.Pushout.gluingCompBaseChangeIsoId`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean, line 1529](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean#L1529). The attribute's comment: “the composition F ∘ G is isomorphic to the identity functor”.
 
 > **Stacks Project, Tag 07RV, the last assertion.**  The composition of
 > gluing with base change is isomorphic to the identity functor: a compatible pair `(V, U', φ)` is
@@ -271,7 +271,7 @@ noncomputable def gluingCompBaseChangeIsoId {X X' Y : Scheme.{u}}
 
 [Tag 08KU](https://stacks.math.columbia.edu/tag/08KU) in the Stacks Project.
 
-**`Stacks.Pushout.isEquivalence_flatBaseChangeTripleFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushout08KU.lean, line 916](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushout08KU.lean#L916). The attribute's comment: “the equivalence of the first clause”.
+**`Stacks.Pushout.isEquivalence_flatBaseChangeTripleFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushout08KU.lean, line 916](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushout08KU.lean#L916). The attribute's comment: “the equivalence of the first clause”.
 
 > **Stacks Project, Tag 08KU, the equivalence of the first clause.**  For a thickening
 > `i : X ⟶ X'`, an affine morphism `f : X ⟶ Y`, the pushout `Y' = Y ⨿_X X'` and any
@@ -294,7 +294,7 @@ theorem isEquivalence_flatBaseChangeTripleFunctor (hi : IsThickening i) [IsAffin
     ∀ g : V' ⟶ pushout i f, (flatBaseChangeTripleFunctor i f g hi).IsEquivalence
 ```
 
-**`Stacks.Pushout.baseChangeTripleFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean#L182). The attribute's comment: “the comparison functor of the tag, on all modules on V'”.
+**`Stacks.Pushout.baseChangeTripleFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean#L182). The attribute's comment: “the comparison functor of the tag, on all modules on V'”.
 
 > The comparison functor, sending a module on `V'` to its two restrictions to `V` and to `U'`
 > together with the canonical isomorphism `Stacks.Pushout.overlapComparison` between their
@@ -306,7 +306,7 @@ noncomputable def baseChangeTripleFunctor (hi : IsThickening i) [IsAffineHom f] 
     ∀ g : V' ⟶ pushout i f, V'.Modules ⥤ GluingTriple i f g
 ```
 
-**`Stacks.Pushout.isFiniteType_baseChangeTripleFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean#L203). The attribute's comment: “the finite type clause, for an arbitrary module on V'”.
+**`Stacks.Pushout.isFiniteType_baseChangeTripleFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean#L203). The attribute's comment: “the finite type clause, for an arbitrary module on V'”.
 
 > If a module on `V'` is of finite type, then both components of its comparison triple, its
 > restrictions to `V` and to `U'`, are of finite type.
@@ -319,7 +319,7 @@ theorem isFiniteType_baseChangeTripleFunctor_obj (hi : IsThickening i) [IsAffine
         ((baseChangeTripleFunctor i f hi g).obj M).ambient.IsFiniteType
 ```
 
-**`Stacks.Pushout.isFinitePresentation_baseChangeTripleFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean#L220). The attribute's comment: “the finite presentation clause, for an arbitrary module on V'”.
+**`Stacks.Pushout.isFinitePresentation_baseChangeTripleFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean#L220). The attribute's comment: “the finite presentation clause, for an arbitrary module on V'”.
 
 > If a module on `V'` is of finite presentation, then both components of its comparison
 > triple, its restrictions to `V` and to `U'`, are of finite presentation.
@@ -332,7 +332,7 @@ theorem isFinitePresentation_baseChangeTripleFunctor_obj (hi : IsThickening i) [
         ((baseChangeTripleFunctor i f hi g).obj M).ambient.IsFinitePresentation
 ```
 
-**`Stacks.Pushout.isFiniteType_iff_baseChangeTripleFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean, line 583](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean#L583). The attribute's comment: “the finite type clause”.
+**`Stacks.Pushout.isFiniteType_iff_baseChangeTripleFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean, line 583](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean#L583). The attribute's comment: “the finite type clause”.
 
 > A quasi-coherent module on `V'` flat over `Y'` is of finite type if and only if both
 > components of its comparison triple, its restrictions to `V` and to `U'`, are of finite type.
@@ -346,7 +346,7 @@ theorem isFiniteType_iff_baseChangeTripleFunctor_obj (hi : IsThickening i) [IsAf
           ((baseChangeTripleFunctor i f hi g).obj M.obj).ambient.IsFiniteType
 ```
 
-**`Stacks.Pushout.isFinitePresentation_iff_baseChangeTripleFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean, line 1158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean#L1158). The attribute's comment: “the finite presentation clause”.
+**`Stacks.Pushout.isFinitePresentation_iff_baseChangeTripleFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean, line 1158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutModules.lean#L1158). The attribute's comment: “the finite presentation clause”.
 
 > If `V' ⟶ Y'` is locally of finite presentation, a quasi-coherent module on `V'` flat over `Y'`
 > is of finite presentation if and only if both components of its comparison triple, its
@@ -367,7 +367,7 @@ theorem isFinitePresentation_iff_baseChangeTripleFunctor_obj (hi : IsThickening 
 
 [Tag 07RX](https://stacks.math.columbia.edu/tag/07RX) in the Stacks Project.
 
-**`Stacks.Pushout.gluingAdjunction_counit_app_isIso_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushout07RXFlat.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushout07RXFlat.lean#L383). The attribute's comment: “the closing paragraph: the counit G(F(W')) ⟶ W' is an isomorphism for W' flat over Y', for the adjunction of Tag 07RV over Mathlib's canonical pushout”.
+**`Stacks.Pushout.gluingAdjunction_counit_app_isIso_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushout07RXFlat.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushout07RXFlat.lean#L383). The attribute's comment: “the closing paragraph: the counit G(F(W')) ⟶ W' is an isomorphism for W' flat over Y', for the adjunction of Tag 07RV over Mathlib's canonical pushout”.
 
 > **[Stacks, Tag 07RX], the closing paragraph, first assertion.**  If `W'` is flat over the
 > pushout `Y' = Y ⨿_X X'` of a thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y`, then
@@ -382,7 +382,7 @@ theorem gluingAdjunction_counit_app_isIso_of_flat (i : X ⟶ X') (f : X ⟶ Y)
       IsIso ((gluingAdjunction i f hi).counit.app W')
 ```
 
-**`Stacks.Pushout.flatGluingEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushout07RXFlat.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushout07RXFlat.lean#L494). The attribute's comment: “the closing paragraph: F and G are mutually quasi-inverse between the schemes flat over Y' and the triples with both components flat, for Tag 07RV over Mathlib's canonical pushout”.
+**`Stacks.Pushout.flatGluingEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushout07RXFlat.lean, line 494](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushout07RXFlat.lean#L494). The attribute's comment: “the closing paragraph: F and G are mutually quasi-inverse between the schemes flat over Y' and the triples with both components flat, for Tag 07RV over Mathlib's canonical pushout”.
 
 > **[Stacks, Tag 07RX], the closing paragraph, second assertion.**  For the pushout
 > `Y' = Y ⨿_X X'` of a thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y`, the functors `F`
@@ -400,7 +400,7 @@ noncomputable def flatGluingEquivalence (i : X ⟶ X') (f : X ⟶ Y) (hi : IsThi
     FlatGluingEquivalenceData i f hi
 ```
 
-**`Stacks.Pushout.etale_gluingFunctor_obj_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutEtale.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutEtale.lean#L160). The attribute's comment: “clause (5): étale, for the gluing functor of Tag 07RV over Mathlib's canonical pushout”.
+**`Stacks.Pushout.etale_gluingFunctor_obj_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutEtale.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutEtale.lean#L160). The attribute's comment: “clause (5): étale, for the gluing functor of Tag 07RV over Mathlib's canonical pushout”.
 
 > **Stacks 07RX, clause (5).** The glued scheme of Tag 07RV over Mathlib's canonical pushout is
 > étale over the pushout exactly when both of its pieces are étale over their bases.
@@ -413,7 +413,7 @@ theorem etale_gluingFunctor_obj_iff {X X' Y : Scheme.{u}} (i : X ⟶ X') (f : X 
       (Etale T.obj.left.hom ∧ Etale T.obj.right.hom)
 ```
 
-**`Stacks.Pushout.locallyOfFiniteType_gluingFunctor_obj_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean#L78). The attribute's comment: “clause (1): locally of finite type, for the gluing functor of Tag 07RV over Mathlib's canonical pushout”.
+**`Stacks.Pushout.locallyOfFiniteType_gluingFunctor_obj_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean#L78). The attribute's comment: “clause (1): locally of finite type, for the gluing functor of Tag 07RV over Mathlib's canonical pushout”.
 
 > **[Stacks, Tag 07RX], clause (1).**  The scheme glued from a triple `(V, U', φ)` across the
 > pushout `Y' = Y ⨿_X X'` of a thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y` is
@@ -427,7 +427,7 @@ theorem locallyOfFiniteType_gluingFunctor_obj_iff (i : X ⟶ X') (f : X ⟶ Y)
       (LocallyOfFiniteType T.obj.left.hom ∧ LocallyOfFiniteType T.obj.right.hom)
 ```
 
-**`Stacks.Pushout.flat_gluingFunctor_obj_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean#L92). The attribute's comment: “clause (2): flat, for the gluing functor of Tag 07RV over Mathlib's canonical pushout”.
+**`Stacks.Pushout.flat_gluingFunctor_obj_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean#L92). The attribute's comment: “clause (2): flat, for the gluing functor of Tag 07RV over Mathlib's canonical pushout”.
 
 > **[Stacks, Tag 07RX], clause (2).**  The scheme glued from a triple `(V, U', φ)` across the
 > pushout `Y' = Y ⨿_X X'` of a thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y` is flat
@@ -441,7 +441,7 @@ theorem flat_gluingFunctor_obj_iff (i : X ⟶ X') (f : X ⟶ Y)
       (Flat T.obj.left.hom ∧ Flat T.obj.right.hom)
 ```
 
-**`Stacks.Pushout.flat_and_locallyOfFinitePresentation_gluingFunctor_obj_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean#L106). The attribute's comment: “clause (3): flat and locally of finite presentation, for the gluing functor of Tag 07RV over Mathlib's canonical pushout”.
+**`Stacks.Pushout.flat_and_locallyOfFinitePresentation_gluingFunctor_obj_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean#L106). The attribute's comment: “clause (3): flat and locally of finite presentation, for the gluing functor of Tag 07RV over Mathlib's canonical pushout”.
 
 > **[Stacks, Tag 07RX], clause (3).**  The scheme glued from a triple `(V, U', φ)` across the
 > pushout `Y' = Y ⨿_X X'` of a thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y` is flat
@@ -457,7 +457,7 @@ theorem flat_and_locallyOfFinitePresentation_gluingFunctor_obj_iff (i : X ⟶ X'
         (Flat T.obj.right.hom ∧ LocallyOfFinitePresentation T.obj.right.hom))
 ```
 
-**`Stacks.Pushout.smooth_gluingFunctor_obj_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean#L123). The attribute's comment: “clause (4): smooth, for the gluing functor of Tag 07RV over Mathlib's canonical pushout”.
+**`Stacks.Pushout.smooth_gluingFunctor_obj_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluingUnconditional.lean#L123). The attribute's comment: “clause (4): smooth, for the gluing functor of Tag 07RV over Mathlib's canonical pushout”.
 
 > **[Stacks, Tag 07RX], clause (4).**  The scheme glued from a triple `(V, U', φ)` across the
 > pushout `Y' = Y ⨿_X X'` of a thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y` is
@@ -478,4 +478,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.14, Tag 07RS](https://stacks.math.columbia.edu/tag/07RS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# 29.23 Constructible sets to 29.35 Smooth morphisms
+# 29.22 Morphisms of finite… to 29.35 Smooth morphisms
 
+- [29.22 Morphisms of finite presentation](29-22-morphisms-of-finite-presentation.md)
 - [29.23 Constructible sets](29-23-constructible-sets.md)
 - [29.24 Open morphisms](29-24-open-morphisms.md)
 - [29.25 Submersive morphisms](29-25-submersive-morphisms.md)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.14 Coherent sheaves on Proj, I
 
-Section 30.14 of the Stacks Project, [Tag 01YR](https://stacks.math.columbia.edu/tag/01YR). 4 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 30.14 of the Stacks Project, [Tag 01YR](https://stacks.math.columbia.edu/tag/01YR). 4 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01YS, a lemma
 
 [Tag 01YS](https://stacks.math.columbia.edu/tag/01YS) in the Stacks Project.
 
-**`Stacks.ProjectiveCohomology.isZero_Hgroup_of_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveCohomology/Basic.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveCohomology/Basic.lean#L256). The attribute's comment: “clause (2), vanishing above the dimension”. References: EGA III (2.2.2), “(ii), P^n case”.
+**`Stacks.ProjectiveCohomology.isZero_Hgroup_of_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveCohomology/Basic.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveCohomology/Basic.lean#L256). The attribute's comment: “clause (2), vanishing above the dimension”. References: EGA III (2.2.2), “(ii), P^n case”.
 
 > **[Stacks, Tag 01YS], clause (2).** The cohomology of a quasi-coherent module on projective
 > `n`-space over a ring vanishes in every degree above `n`.
@@ -31,7 +31,7 @@ theorem isZero_Hgroup_of_lt (F : (projectiveSpaceOverRing n R).Modules) [F.IsQua
     IsZero (Hgroup (projectiveSpaceOverRing n R).ringCatSheaf ⊤ q F)
 ```
 
-**`Stacks.ProjectiveSpace.exists_epi_biproduct_tensorPowModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/CoherentQuotientOfTwists.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/CoherentQuotientOfTwists.lean#L88). The attribute's comment: “assertion (1)”.
+**`Stacks.ProjectiveSpace.exists_epi_biproduct_tensorPowModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/CoherentQuotientOfTwists.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/CoherentQuotientOfTwists.lean#L88). The attribute's comment: “assertion (1)”.
 
 > **Assertion (1) of [Stacks, Tag 01YS].** A quasi-coherent module of finite type on projective
 > `n`-space over an affine base is a quotient of a finite direct sum of twists
@@ -57,7 +57,7 @@ theorem exists_epi_biproduct_tensorPowModule (n : ℕ) (S : Scheme.{u}) [IsAffin
       (_ : b.IsBilimit) (p : b.pt ⟶ F), Epi p ∧ ∀ j, d j ≤ k
 ```
 
-**`Stacks.ProjectiveSpace.SerreVanishing.moduleFinite_cohomology_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/CoherentSerreVanishing.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/CoherentSerreVanishing.lean#L217). The attribute's comment: “(3) finiteness of the cohomology modules”. References: EGA III (2.2.2), “clause (i), special case”.
+**`Stacks.ProjectiveSpace.SerreVanishing.moduleFinite_cohomology_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/CoherentSerreVanishing.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/CoherentSerreVanishing.lean#L217). The attribute's comment: “(3) finiteness of the cohomology modules”. References: EGA III (2.2.2), “clause (i), special case”.
 
 > **[Stacks, Tag 01YS] clause (3).** Let `R` be a Noetherian ring, `n ≥ 0` and `ℱ` a coherent
 > sheaf on `ℙⁿ_R = Proj R[T₀, …, Tₙ]`. For every `i` the cohomology `H^i(ℙⁿ_R, ℱ)` is a finite
@@ -80,7 +80,7 @@ theorem moduleFinite_cohomology_of_isCoherent [IsNoetherianRing R]
           (AlgebraicGeometry.Proj (polyGrading R n))).rightDerived q).obj F))
 ```
 
-**`Stacks.ProjectiveSpace.SerreVanishing.exists_isZero_Hgroup_twist_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/CoherentSerreVanishing.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/CoherentSerreVanishing.lean#L243). The attribute's comment: “(4) eventual vanishing of the higher cohomology of the twists”.
+**`Stacks.ProjectiveSpace.SerreVanishing.exists_isZero_Hgroup_twist_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/CoherentSerreVanishing.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/CoherentSerreVanishing.lean#L243). The attribute's comment: “(4) eventual vanishing of the higher cohomology of the twists”.
 
 > **[Stacks, Tag 01YS] clause (4).** Let `R` be a Noetherian ring, `n ≥ 0` and `ℱ` a coherent
 > sheaf on `ℙⁿ_R = Proj R[T₀, …, Tₙ]`. For every `i > 0` the cohomology `H^i(ℙⁿ_R, ℱ(d))` vanishes
@@ -101,7 +101,7 @@ theorem exists_isZero_Hgroup_twist_of_isCoherent [IsNoetherianRing R] (i : ℕ) 
         (twistSheafOfModules (polyGrading R n) F d))
 ```
 
-**`Stacks.ProjectiveSpace.Cohomology.isZero_cohomology_of_lt_zero_or_dim_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/CohomologicalDimension.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/CohomologicalDimension.lean#L64). The attribute's comment: “assertion (2)”. References: EGA III (2.2.2), “(ii), P^n case”.
+**`Stacks.ProjectiveSpace.Cohomology.isZero_cohomology_of_lt_zero_or_dim_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/CohomologicalDimension.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/CohomologicalDimension.lean#L64). The attribute's comment: “assertion (2)”. References: EGA III (2.2.2), “(ii), P^n case”.
 
 > **The cohomological dimension of projective space**: the cohomology of a quasi-coherent
 > module on projective `n`-space over an affine base vanishes in every degree outside `0, …, n`.
@@ -113,7 +113,7 @@ theorem isZero_cohomology_of_lt_zero_or_dim_lt (n : ℕ) (S : Scheme.{u}) [IsAff
     IsZero (((sectionsFunctor (projectiveSpaceOver n S) ⊤).rightDerivedPlus i).obj F)
 ```
 
-**`Stacks.ProjectiveSpace.Cohomology.moduleFinite_truncation_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/TwistSectionsDegreeOne.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/TwistSectionsDegreeOne.lean#L291). The attribute's comment: “(5) finiteness of the graded module of twisted global sections”. References: SGA 2 XII (5.3), “clause (a), case i = 0”.
+**`Stacks.ProjectiveSpace.Cohomology.moduleFinite_truncation_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/TwistSectionsDegreeOne.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/TwistSectionsDegreeOne.lean#L291). The attribute's comment: “(5) finiteness of the graded module of twisted global sections”. References: SGA 2 XII (5.3), “clause (a), case i = 0”.
 
 > **[Stacks, Tag 01YS] clause (5).** Let `R` be a Noetherian ring, `n ≥ 0` and `ℱ` a coherent
 > sheaf on `ℙⁿ_R = Proj R[T₀, …, Tₙ]`. For every `k ∈ ℤ` the graded `R[T₀, …, Tₙ]`-module
@@ -138,7 +138,7 @@ theorem moduleFinite_truncation_of_isCoherent [IsNoetherianRing R]
 
 [Tag 0AG6](https://stacks.math.columbia.edu/tag/0AG6) in the Stacks Project.
 
-**`Stacks.ProjCoherentDegreeOne.proj_isNoetherian_and_forall_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjCoherentDegreeOne/Main.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjCoherentDegreeOne/Main.lean#L110). References: EGA III (2.2.2).
+**`Stacks.ProjCoherentDegreeOne.proj_isNoetherian_and_forall_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjCoherentDegreeOne/Main.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjCoherentDegreeOne/Main.lean#L110). References: EGA III (2.2.2).
 
 > **[Stacks, Tag 0AG6].** Let `A` be a graded ring such that `A₀` is Noetherian and `A` is
 > generated by finitely many elements of `A₁` over `A₀`. Set `X = Proj A`. Then `X` is a Noetherian
@@ -170,13 +170,13 @@ theorem proj_isNoetherian_and_forall_isCoherent :
 
 Declarations registered for the tag:
 
-- [`Stacks.AlgebraicGeometry.Proj.isNoetherian_proj`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjNoetherian/Basic.lean#L135), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/ProjNoetherian.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/ProjNoetherian.lean#L29) (StacksFrontier): “proj\_noetherian”.
+- [`Stacks.AlgebraicGeometry.Proj.isNoetherian_proj`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjNoetherian/Basic.lean#L135), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/ProjNoetherian.lean, line 29](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/ProjNoetherian.lean#L29) (StacksFrontier): “proj\_noetherian”.
 
 ## Tag 0AG7, a lemma
 
 [Tag 0AG7](https://stacks.math.columbia.edu/tag/0AG7) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjLargeDegreeSections.exists_bijective_degreeNToGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjLargeDegreeSections/Basic.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjLargeDegreeSections/Basic.lean#L114). The attribute's comment: “bijectivity in all large degrees, from homogeneous generators of the kernel and of the cokernel annihilated, respectively carried into the image, by a power of the irrelevant ideal”.
+**`Stacks.AlgebraicGeometry.ProjLargeDegreeSections.exists_bijective_degreeNToGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjLargeDegreeSections/Basic.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjLargeDegreeSections/Basic.lean#L114). The attribute's comment: “bijectivity in all large degrees, from homogeneous generators of the kernel and of the cokernel annihilated, respectively carried into the image, by a power of the irrelevant ideal”.
 
 > The comparison maps are bijective in all large degrees, with the finiteness input of the
 > source replaced by homogeneous generating data for the kernel and the cokernel of the comparison.
@@ -216,7 +216,7 @@ theorem exists_bijective_degreeNToGlobalSections
     ∃ n₀ : ℤ, ∀ n : ℤ, n₀ ≤ n → Function.Bijective (degreeNToGlobalSections 𝒮 𝒨 n)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjLargeDegreeSections.exists_bijective_degreeNToGlobalSections_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjLargeDegreeSections/Noetherian.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjLargeDegreeSections/Noetherian.lean#L322). The attribute's comment: “the maps M\_n to Gamma(Proj A, M(n)~) of Equation 01MR are isomorphisms in all sufficiently large degrees, for A\_0 Noetherian, A generated over A\_0 by finitely many elements of A\_1, and M a finite graded A-module”.
+**`Stacks.AlgebraicGeometry.ProjLargeDegreeSections.exists_bijective_degreeNToGlobalSections_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjLargeDegreeSections/Noetherian.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjLargeDegreeSections/Noetherian.lean#L322). The attribute's comment: “the maps M\_n to Gamma(Proj A, M(n)~) of Equation 01MR are isomorphisms in all sufficiently large degrees, for A\_0 Noetherian, A generated over A\_0 by finitely many elements of A\_1, and M a finite graded A-module”.
 
 > Let `S = ⨁_{d ≥ 0} 𝒮 d` be a graded ring whose degree-zero part is Noetherian and which is
 > generated over that part by finitely many elements `fam 0, …` of `𝒮 1`, let `M = ⨁_{n ∈ ℤ} 𝒨 n`
@@ -237,7 +237,7 @@ theorem exists_bijective_degreeNToGlobalSections_of_finite [IsNoetherianRing ↥
 
 [Tag 0BXD](https://stacks.math.columbia.edu/tag/0BXD) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.equivalence_coherentQuotientFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/Equivalence.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/Equivalence.lean#L458). The attribute's comment: “the equivalence Mod^fg\_A / Mod^fg\_\{A,torsion} ⟶ Coh(O\_X) induced by M ↦ M~, with quasi-inverse F ↦ ⨁\_\{n ≥ 0} Γ(X, F(n)), at the source's hypotheses: A\_0 Noetherian and A generated by finitely many elements of A\_1 over A\_0. The torsion subcategory is the irrelevant finitely generated graded modules in generation degree one, which for a Noetherian A generated in degree one is the source's Mod^fg\_\{A,torsion}. The Noetherianity of A, its finite type over A\_0 and the quasi-compactness of Proj A are derived from those hypotheses rather than assumed, which is why the statement opens with haveI. The equality clauses pin the functor to M ↦ M~ and the inverse to F ↦ ⨁\_\{n ≥ 0} Γ(X, F(n)) on the nose, and the last clause says the functor is induced by M ↦ M~”. References: EGA III (2.3.3), “(F), special case”.
+**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.equivalence_coherentQuotientFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/Equivalence.lean, line 462](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/Equivalence.lean#L462). The attribute's comment: “the equivalence Mod^fg\_A / Mod^fg\_\{A,torsion} ⟶ Coh(O\_X) induced by M ↦ M~, with quasi-inverse F ↦ ⨁\_\{n ≥ 0} Γ(X, F(n)), at the source's hypotheses: A\_0 Noetherian and A generated by finitely many elements of A\_1 over A\_0. The torsion subcategory is the irrelevant finitely generated graded modules in generation degree one, which for a Noetherian A generated in degree one is the source's Mod^fg\_\{A,torsion}. The Noetherianity of A, its finite type over A\_0 and the quasi-compactness of Proj A are derived from those hypotheses rather than assumed, which is why the statement opens with haveI. The equality clauses pin the functor to M ↦ M~ and the inverse to F ↦ ⨁\_\{n ≥ 0} Γ(X, F(n)) on the nose, and the last clause says the functor is induced by M ↦ M~”. References: EGA III (2.3.3), “(F), special case”.
 
 > Let `A` be a graded ring such that `A₀` is Noetherian and `A` is generated by finitely many
 > elements of `A₁` over `A₀`, and set `X = Proj A`. Then `M ↦ M̃` induces an equivalence
@@ -265,7 +265,7 @@ theorem equivalence_coherentQuotientFunctor :
           finiteAssociatedSheafFunctor.{u, u} 𝒜)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.isZero_associatedModuleSheaf_of_isIPowerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/TorsionVanishing.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/TorsionVanishing.lean#L84). The attribute's comment: “the functor M ↦ M~ kills the torsion modules, the step that lets it be defined on the quotient category; stated for 𝒜₊-power torsion modules, with no finiteness, Noetherian or degree-one generation hypothesis”. References: EGA II (2.5.6), “sufficiency clause”.
+**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.isZero_associatedModuleSheaf_of_isIPowerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/TorsionVanishing.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/TorsionVanishing.lean#L84). The attribute's comment: “the functor M ↦ M~ kills the torsion modules, the step that lets it be defined on the quotient category; stated for 𝒜₊-power torsion modules, with no finiteness, Noetherian or degree-one generation hypothesis”. References: EGA II (2.5.6), “sufficiency clause”.
 
 > The associated sheaf `M̃` of an `𝒜₊`-power torsion graded module `M` is a zero object.
 
@@ -275,7 +275,7 @@ theorem isZero_associatedModuleSheaf_of_isIPowerTorsion
     Limits.IsZero (associatedModuleSheaf 𝒜 𝒨)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.isZero_associatedModuleSheaf_of_eventually_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/TorsionVanishing.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/TorsionVanishing.lean#L140). The attribute's comment: “the functor M ↦ M~ kills the torsion subcategory, with torsion in the form the source defines the subcategory Mod^fg\_\{A,torsion}: the homogeneous components vanish in all large degrees; no finiteness hypothesis is used”. References: EGA II (2.5.6), “sufficiency clause”; EGA II (2.7.2), “If M satisfies (TN)”; EGA II (2.7.3), “(ii)”; EGA II (3.4.2), “special case”.
+**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.isZero_associatedModuleSheaf_of_eventually_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/TorsionVanishing.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/TorsionVanishing.lean#L140). The attribute's comment: “the functor M ↦ M~ kills the torsion subcategory, with torsion in the form the source defines the subcategory Mod^fg\_\{A,torsion}: the homogeneous components vanish in all large degrees; no finiteness hypothesis is used”. References: EGA II (2.5.6), “sufficiency clause”; EGA II (2.7.2), “If M satisfies (TN)”; EGA II (2.7.3), “(ii)”; EGA II (3.4.2), “special case”.
 
 > A graded module whose homogeneous components vanish in all sufficiently large degrees has zero
 > associated sheaf.
@@ -286,7 +286,7 @@ theorem isZero_associatedModuleSheaf_of_eventually_eq_zero [DirectSum.Decomposit
     Limits.IsZero (associatedModuleSheaf 𝒜 𝒨)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.isZero_associatedModuleSheafFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/TorsionVanishing.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/TorsionVanishing.lean#L151). The attribute's comment: “the bundled functor M ↦ M~ sends torsion graded modules to zero objects, the step that lets it be defined on the quotient category”.
+**`Stacks.AlgebraicGeometry.ProjSerreCorrespondence.isZero_associatedModuleSheafFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/TorsionVanishing.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjSerreCorrespondence/TorsionVanishing.lean#L151). The attribute's comment: “the bundled functor M ↦ M~ sends torsion graded modules to zero objects, the step that lets it be defined on the quotient category”.
 
 > The associated-sheaf functor `M ↦ M̃` sends an `𝒜₊`-power torsion graded module to a zero
 > object.
@@ -304,4 +304,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.14, Tag 01YR](https://stacks.math.columbia.edu/tag/01YR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

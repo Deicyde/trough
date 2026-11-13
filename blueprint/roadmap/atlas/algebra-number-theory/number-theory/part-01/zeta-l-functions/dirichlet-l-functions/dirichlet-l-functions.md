@@ -8,7 +8,7 @@ proof: formalized
 
 # Dirichlet characters and L-functions: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/index.html).
 
 Dirichlet characters, conductors, primitive and quadratic characters, Dirichlet series continuation, L-function bounds, Artin and Selberg-class functions.
 
@@ -28,7 +28,7 @@ $\beta(r) = \cos(\pi r/2)\, (\pi/2)^{r-1}\, \Gamma(1 - r)\, \beta(1 - r)$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry18Bernoullidiff.ramanujan_part1_ch7_entry18_bernoullidiff`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry18Bernoullidiff.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry18Bernoullidiff.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/index.html#ramanujan-part1-ch7-entry18-bernoullidif).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry18Bernoullidiff.ramanujan_part1_ch7_entry18_bernoullidiff`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry18Bernoullidiff.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry18Bernoullidiff.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/index.html#ramanujan-part1-ch7-entry18-bernoullidif).
 
 ## Depends on
 
@@ -37,4 +37,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Dirichlet characters and L-functions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions)

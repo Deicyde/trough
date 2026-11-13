@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.7 Relative assassin
 
-Section 31.7 of the Stacks Project, [Tag 05AS](https://stacks.math.columbia.edu/tag/05AS). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.7 of the Stacks Project, [Tag 05AS](https://stacks.math.columbia.edu/tag/05AS). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05AT, a definition
 
 [Tag 05AT](https://stacks.math.columbia.edu/tag/05AT) in the Stacks Project.
 
-**`Stacks.Divisors.relativeAssassin`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/WeaklyAssociated.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/WeaklyAssociated.lean#L176).
+**`Stacks.Divisors.relativeAssassin`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/WeaklyAssociated.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/WeaklyAssociated.lean#L176).
 
 > **Stacks Project, Tag 05AT.** The *relative assassin* `Ass_{X/S}(F)` of an `𝒪_X`-module
 > along `f : X ⟶ S` is the union over the points of `S` of the images in `X` of the associated
@@ -28,7 +28,7 @@ noncomputable def relativeAssassin (f : X ⟶ S) (F : X.Modules) : Set X
 
 [Tag 0CU5](https://stacks.math.columbia.edu/tag/0CU5) in the Stacks Project.
 
-**`AlgebraicGeometry.mem_relativeAssassin_of_mem_relativeAssassin_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/AffineOpen.lean, line 568](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/AffineOpen.lean#L568). The attribute's comment: “forward implication”.
+**`AlgebraicGeometry.mem_relativeAssassin_of_mem_relativeAssassin_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/AffineOpen.lean, line 568](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/AffineOpen.lean#L568). The attribute's comment: “forward implication”.
 
 > **Stacks Project, Tag 0CU5.** A relative associated prime of the sections on an affine open
 > gives a relative associated point of the sheaf.
@@ -48,7 +48,7 @@ public theorem mem_relativeAssassin_of_mem_relativeAssassin_sections
       x ∈ Stacks.Divisors.relativeAssassin f F
 ```
 
-**`AlgebraicGeometry.mem_relativeAssassin_sections_iff_of_locallyNoetherian_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/AffineOpen.lean, line 605](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/AffineOpen.lean#L605). The attribute's comment: “locally Noetherian equivalence”.
+**`AlgebraicGeometry.mem_relativeAssassin_sections_iff_of_locallyNoetherian_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/AffineOpen.lean, line 605](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/AffineOpen.lean#L605). The attribute's comment: “locally Noetherian equivalence”.
 
 > **Stacks Project, Tag 0CU5.** With locally Noetherian fibres, the relative associated
 > primes of affine sections are exactly the relative associated points of the sheaf.
@@ -73,7 +73,7 @@ public theorem mem_relativeAssassin_sections_iff_of_locallyNoetherian_fibers
 
 [Tag 05DC](https://stacks.math.columbia.edu/tag/05DC) in the Stacks Project.
 
-**`AlgebraicGeometry.mem_relativeAssassin_pullback_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismAssociatedPoints/BaseChange.lean, line 552](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismAssociatedPoints/BaseChange.lean#L552).
+**`AlgebraicGeometry.mem_relativeAssassin_pullback_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismAssociatedPoints/BaseChange.lean, line 552](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismAssociatedPoints/BaseChange.lean#L552).
 
 > **Stacks Project, Tag 05DC.** Under arbitrary base change, a point is in
 > the relative assassin of the pulled-back quasi-coherent module exactly when
@@ -97,7 +97,7 @@ theorem mem_relativeAssassin_pullback_iff
 
 [Tag 05KL](https://stacks.math.columbia.edu/tag/05KL) in the Stacks Project.
 
-**`AlgebraicGeometry.relativeAssassin_pullback_subset_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/BaseChange.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/BaseChange.lean#L194). The attribute's comment: “unconditional containment”.
+**`AlgebraicGeometry.relativeAssassin_pullback_subset_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/BaseChange.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/BaseChange.lean#L194). The attribute's comment: “unconditional containment”.
 
 > **Stacks Project, Tag 05KL.** After arbitrary base change, the relative assassin of the
 > pulled-back module is contained in the inverse image of the original relative assassin.
@@ -112,7 +112,7 @@ public theorem relativeAssassin_pullback_subset_preimage
         Stacks.Divisors.relativeAssassin f F
 ```
 
-**`AlgebraicGeometry.preimage_relativeAssassin_eq_pullback_of_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/BaseChange.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/BaseChange.lean#L206). The attribute's comment: “equality for locally quasi-finite base change”.
+**`AlgebraicGeometry.preimage_relativeAssassin_eq_pullback_of_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/BaseChange.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/BaseChange.lean#L206). The attribute's comment: “equality for locally quasi-finite base change”.
 
 > **Stacks Project, Tag 05KL.** A locally quasi-finite base change pulls the relative
 > assassin back exactly.
@@ -127,7 +127,7 @@ public theorem preimage_relativeAssassin_eq_pullback_of_locallyQuasiFinite
         ((Scheme.Modules.pullback (pullback.fst (C := Scheme.{u}) f g)).obj F)
 ```
 
-**`AlgebraicGeometry.preimage_relativeAssassin_eq_pullback_of_isAlgebraic_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/BaseChange.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/BaseChange.lean#L225). The attribute's comment: “equality for algebraic residue-field extensions”.
+**`AlgebraicGeometry.preimage_relativeAssassin_eq_pullback_of_isAlgebraic_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/BaseChange.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RelativeAssassinTwo/BaseChange.lean#L225). The attribute's comment: “equality for algebraic residue-field extensions”.
 
 > **Stacks Project, Tag 05KL.** If every residue-field extension induced by the base-change
 > morphism is algebraic, then it pulls the relative assassin back exactly.
@@ -151,4 +151,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.7, Tag 05AS](https://stacks.math.columbia.edu/tag/05AS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

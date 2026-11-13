@@ -8,7 +8,7 @@ proof: formalized
 
 # Binomial transforms
 
-8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html).
+8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html).
 
 ## Exponential generating function of the binomial transform
 
@@ -25,7 +25,7 @@ assumed only at the point $t$ under consideration.
 
 - Ayhan Dil, Veli Kurt, and Mehmet Cenkci, *Algorithms for Bernoulli and Related Polynomials*, Journal of Integer Sequences 10 (2007), Article 07.5.4, <https://cs.uwaterloo.ca/journals/JIS/VOL10/Dil/dil11.tex>, Proposition `prop2` (proof attributed to Seidel), lines 221-233; the binomial-transform relation `a_0^n = Σᵢ C(n,i) a_i^0` is equation (8)/(9), lines 188-199.
 
-Formalized by `MetaMathlibExt.exponentialGeneratingFunction_binomialTransform`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BinomialTransformExponentialGeneratingFunction.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BinomialTransformExponentialGeneratingFunction.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#exponential-generating-function-binomial).
+Formalized by `MetaMathlibExt.exponentialGeneratingFunction_binomialTransform`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BinomialTransformExponentialGeneratingFunction.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BinomialTransformExponentialGeneratingFunction.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#exponential-generating-function-binomial).
 
 ## Falling k-binomial transform
 
@@ -34,7 +34,7 @@ the falling $k$-binomial transform of $a$ is the integer sequence $(b_n)_{n \ge 
 
 $$b_n = \sum_{i=0}^{n} \binom{n}{i} k^{n-i} a_i.$$
 
-Formalized by `MetaMathlibExt.fallingKBinomialTransform`, a definition declared in [MathlibExt/Combinatorics/Enumerative/FallingKBinomialTransform.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/FallingKBinomialTransform.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#falling-kbinomial-transform).
+Formalized by `MetaMathlibExt.fallingKBinomialTransform`, a definition declared in [MathlibExt/Combinatorics/Enumerative/FallingKBinomialTransform.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/FallingKBinomialTransform.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#falling-kbinomial-transform).
 
 ## Binomial transform
 
@@ -42,7 +42,7 @@ The binomial transform of an integer sequence $(a_i)_{i \ge 0}$ is the
 falling k-binomial transform of $a$ with $k = 1$, the sequence whose $n$-th term is
 $\sum_{i=0}^{n} \binom{n}{i} 1^{n-i} a_i$.
 
-Formalized by `MetaMathlibExt.binomialTransform`, a definition declared in [MathlibExt/Combinatorics/Enumerative/FallingKBinomialTransform.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/FallingKBinomialTransform.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#binomial-transform).
+Formalized by `MetaMathlibExt.binomialTransform`, a definition declared in [MathlibExt/Combinatorics/Enumerative/FallingKBinomialTransform.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/FallingKBinomialTransform.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#binomial-transform).
 
 ## Binomial transform as a binomial sum
 
@@ -50,7 +50,7 @@ For every integer sequence $(a_i)_{i \ge 0}$ and
 every $n \in \mathbb{N}$, the $n$-th term of the binomial transform of $a$ equals
 $\sum_{i=0}^{n} \binom{n}{i} a_i$.
 
-Formalized by `MetaMathlibExt.binomialTransform_eq_sum`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/FallingKBinomialTransform.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/FallingKBinomialTransform.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#binomial-transform-eq-sum).
+Formalized by `MetaMathlibExt.binomialTransform_eq_sum`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/FallingKBinomialTransform.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/FallingKBinomialTransform.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#binomial-transform-eq-sum).
 
 ## Multiple binomial transform
 
@@ -74,7 +74,7 @@ Concept `jis_term_c157679dc9eb88c4ba264101`; source statements
 
 -
 
-Formalized by `MetaMathlibExt.multipleBinomialTransform`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MultipleBinomialTransform.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MultipleBinomialTransform.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#multiple-binomial-transform).
+Formalized by `MetaMathlibExt.multipleBinomialTransform`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MultipleBinomialTransform.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MultipleBinomialTransform.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#multiple-binomial-transform).
 
 ## The k-fold binomial transform is the falling k-binomial transform
 
@@ -88,7 +88,7 @@ $k$-binomial transform of $a$. In both cases the equality is one of integer sequ
 
 - Michael Z. Spivey and Laura L. Steil, "The k-Binomial Transforms and the Hankel Transform", Journal of Integer Sequences 9 (2006), Article 06.1.1, Theorem `falling_equiv`, lines 636-640, <https://cs.uwaterloo.ca/journals/JIS/VOL9/Spivey/spivey7.tex>.
 
-Formalized by `MetaMathlibExt.falling_equiv`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/FallingBinomialTransform.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/FallingBinomialTransform.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#falling-equiv).
+Formalized by `MetaMathlibExt.falling_equiv`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/FallingBinomialTransform.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/FallingBinomialTransform.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#falling-equiv).
 
 ## Generating function of the binomial transform over a field
 
@@ -99,7 +99,7 @@ transform $n \mapsto \sum_{k=0}^{n} \binom{n}{k} a_k$ of $a$ equals
 $(1 - X)^{-1} \cdot A\big(X (1 - X)^{-1}\big)$ in $K[[X]]$, where $A\big(X (1 - X)^{-1}\big)$ is
 the power series obtained by substituting $X (1 - X)^{-1}$ for $X$ in $A$.
 
-Formalized by `MetaMathlibExt.mk_sum_choose_mul_eq_inv_one_sub_mul_subst`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/BinomialTransformGeneratingFunction.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PowerSeries/BinomialTransformGeneratingFunction.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#mk-sum-choose-mul-eq-inv-one-sub-mul-sub).
+Formalized by `MetaMathlibExt.mk_sum_choose_mul_eq_inv_one_sub_mul_subst`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/BinomialTransformGeneratingFunction.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PowerSeries/BinomialTransformGeneratingFunction.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#mk-sum-choose-mul-eq-inv-one-sub-mul-sub).
 
 ## Ordinary generating function of the binomial transform
 
@@ -115,7 +115,7 @@ in $A$.
 
 - Ayhan Dil, Veli Kurt, and Mehmet Cenkci, "Algorithms for Bernoulli and Related Polynomials," Journal of Integer Sequences 10 (2007), Article 07.5.4, Proposition, lines 205–218 (proof attributed to Euler there). <https://cs.uwaterloo.ca/journals/JIS/VOL10/Dil/dil11.tex> It is the case `K = ℝ` of `mk_sum_choose_mul_eq_inv_one_sub_mul_subst`.
 
-Formalized by `MetaMathlibExt.ordinary_generating_function_binomial_transform`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/BinomialTransformGeneratingFunction.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PowerSeries/BinomialTransformGeneratingFunction.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#ordinary-generating-function-binomial-tr).
+Formalized by `MetaMathlibExt.ordinary_generating_function_binomial_transform`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/BinomialTransformGeneratingFunction.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PowerSeries/BinomialTransformGeneratingFunction.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html#ordinary-generating-function-binomial-tr).
 
 ## Depends on
 
@@ -124,4 +124,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Binomial transforms](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/binomial-transforms)

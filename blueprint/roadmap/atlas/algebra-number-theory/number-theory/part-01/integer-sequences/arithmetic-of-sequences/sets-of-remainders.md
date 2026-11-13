@@ -7,7 +7,7 @@ statement: formalized
 
 # Sets of remainders
 
-15 results, 8 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html).
+15 results, 8 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html).
 
 ## Remainder set
 
@@ -19,7 +19,7 @@ modulo the integers from $1$ to $\lfloor n/2 \rfloor$.
 
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Section 1 (definition of `S(n)`).
 
-Formalized by `MetaMathlibExt.remainderSet`, a definition declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-set).
+Formalized by `MetaMathlibExt.remainderSet`, a definition declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-set).
 
 ## Remainder count
 
@@ -31,7 +31,7 @@ $1 \le k \le \lfloor n/2 \rfloor$ (OEIS A283190).
 
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Section 1 (definition of `s(n)`).
 
-Formalized by `MetaMathlibExt.remainderCount`, a definition declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-count).
+Formalized by `MetaMathlibExt.remainderCount`, a definition declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-count).
 
 ## The remainder count of 11
 
@@ -44,7 +44,7 @@ These remainders form the set $S(11) = \{0, 1, 2, 3\}$ (Table 1 of the paper).
 
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Table 1.
 
-Formalized by `MetaMathlibExt.remainderCount_eleven`, a theorem declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-count-eleven).
+Formalized by `MetaMathlibExt.remainderCount_eleven`, a theorem declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-count-eleven).
 
 ## The remainder count of 12
 
@@ -58,7 +58,7 @@ $1 \le k \le 5$ (Table 1 of the paper).
 
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Table 1.
 
-Formalized by `MetaMathlibExt.remainderCount_twelve`, a theorem declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-count-twelve).
+Formalized by `MetaMathlibExt.remainderCount_twelve`, a theorem declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-count-twelve).
 
 ## The remainder-set constant
 
@@ -72,7 +72,7 @@ Numerically, $c \approx 0.2296$.
 
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, equation `eq:asymp`.
 
-Formalized by `MetaMathlibExt.remainderConstant`, a definition declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-constant).
+Formalized by `MetaMathlibExt.remainderConstant`, a definition declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-constant).
 
 ## Asymptotic formula for the number of remainders
 
@@ -85,7 +85,7 @@ $s(n) - cn = O\bigl(n / (\log n \cdot \log \log n)\bigr)$, and $s(n)/n \to c$.
 
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Theorem 1 (`thm:asymp`).
 
-Stated but not proved: `MetaMathlibExt.remainderCount_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-count-asymptotic).
+Stated but not proved: `MetaMathlibExt.remainderCount_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-count-asymptotic).
 
 ## Unbounded drops in the number of remainders
 
@@ -98,7 +98,7 @@ $\liminf_{n \to \infty} (s(n+1) - s(n)) = -\infty$.
 
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Proposition 17 (`prop:diffs_unbounded`).
 
-Stated but not proved: `MetaMathlibExt.remainderCount_drops_unbounded` is written with `theorem_wanted` in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-count-drops-unbounded).
+Stated but not proved: `MetaMathlibExt.remainderCount_drops_unbounded` is written with `theorem_wanted` in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-count-drops-unbounded).
 
 ## Consecutive differences of the number of remainders
 
@@ -113,7 +113,7 @@ $\liminf_{n \to \infty} (s(n+1) - s(n)) = -\infty$.
 
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Theorem 2 (`thm:diffs`).
 
-Stated but not proved: `MetaMathlibExt.remainderCount_consecutive_differences` is written with `theorem_wanted` in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-count-consecutive-differences).
+Stated but not proved: `MetaMathlibExt.remainderCount_consecutive_differences` is written with `theorem_wanted` in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#remainder-count-consecutive-differences).
 
 ## Counting integers with a given least prime factor in an interval
 
@@ -130,7 +130,7 @@ where $\pi$ is the prime-counting function.
 
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Lemma 6 (`lem:Dp`).
 
-Stated but not proved: `MetaMathlibExt.card_leastPrimeFactor_interval_error` is written with `theorem_wanted` in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#card-least-prime-factor-interval-error).
+Stated but not proved: `MetaMathlibExt.card_leastPrimeFactor_interval_error` is written with `theorem_wanted` in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#card-least-prime-factor-interval-error).
 
 ## Upper bound $1.3\, n / \log n$ for the prime-counting function
 
@@ -142,7 +142,7 @@ $\pi(n) \le 1.3\, n / \log n$, where $\log$ is the natural logarithm.
 
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Lemma 7 (`lem:primecounting_ub`).
 
-Stated but not proved: `MetaMathlibExt.primeCounting_le_thirteen_tenths` is written with `theorem_wanted` in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#prime-counting-le-thirteen-tenths).
+Stated but not proved: `MetaMathlibExt.primeCounting_le_thirteen_tenths` is written with `theorem_wanted` in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#prime-counting-le-thirteen-tenths).
 
 ## Tail of the sum of inverse prime squares
 
@@ -154,7 +154,7 @@ than $n$ is $O(1/(n \log n))$.
 
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Lemma 8 (`lem:psquared_sum_est`).
 
-Stated but not proved: `MetaMathlibExt.tsum_inv_sq_primes_gt_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#tsum-inv-sq-primes-gt-is-big-o).
+Stated but not proved: `MetaMathlibExt.tsum_inv_sq_primes_gt_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#tsum-inv-sq-primes-gt-is-big-o).
 
 ## Iterated remainder sets
 
@@ -166,7 +166,7 @@ $j \ge 0$, $S_{j+1}(n) = \{n \bmod k : k \in S_j(n),\ k \ne 0\}$.
 
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Section 2 (definition of `S_j(n)`).
 
-Formalized by `MetaMathlibExt.iteratedRemainderSet`, a definition declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#iterated-remainder-set).
+Formalized by `MetaMathlibExt.iteratedRemainderSet`, a definition declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#iterated-remainder-set).
 
 ## The first iterated remainder set is the remainder set
 
@@ -178,7 +178,7 @@ $S(n) = \{n \bmod k : 1 \le k \le \lfloor n/2 \rfloor\}$.
 
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Section 2 (`S(n) = S_1(n)`).
 
-Formalized by `MetaMathlibExt.iteratedRemainderSet_one`, a theorem declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#iterated-remainder-set-one).
+Formalized by `MetaMathlibExt.iteratedRemainderSet_one`, a theorem declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#iterated-remainder-set-one).
 
 ## Iterated remainder sets of 35
 
@@ -189,7 +189,7 @@ $S_6(35) = \{0\}$ and $S_7(35) = \emptyset$.
 
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Section 2 (definition of `S_j(n)`).
 
-Formalized by `MetaMathlibExt.iteratedRemainderSet_thirtyFive`, a theorem declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#iterated-remainder-set-thirty-five).
+Formalized by `MetaMathlibExt.iteratedRemainderSet_thirtyFive`, a theorem declared in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#iterated-remainder-set-thirty-five).
 
 ## Maximal Pierce length via iterated remainder sets
 
@@ -210,7 +210,7 @@ $S_0(2) = \{1\}$.
 - the forward direction of the first equivalence (for `t ≥ 1`) is proved as `S_eq_singleton_zero_of_maxLength_eq` in `FormalizedPapers/NumberTheory/BaraskarGokhaleJainKiezun2026`.
 - Omkar Baraskar and Ingrid Vukusic, *Bounds for Sets of Remainders*, Journal of Integer Sequences 29 (2026), Article 26.1.4, Lemma 19.
 
-Stated but not proved: `MetaMathlibExt.pierce_maxLength_eq_succ_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#pierce-max-length-eq-succ-iff).
+Stated but not proved: `MetaMathlibExt.pierce_maxLength_eq_succ_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/RemainderSetBoundsWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RemainderSetBoundsWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html#pierce-max-length-eq-succ-iff).
 
 ## Depends on
 
@@ -219,4 +219,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sets of remainders](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/sets-of-remainders)

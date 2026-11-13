@@ -8,7 +8,7 @@ proof: formalized
 
 # One-log and double-log bounds on actual torus functions
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/one-log-and-double-log-bounds-on-actual-torus-fu/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/one-log-and-double-log-bounds-on-actual-torus-fu/index.html).
 
 ## One-log bound with coefficient $c$ and constant $K$
 
@@ -20,7 +20,7 @@ satisfies, at every point $x \in \mathbb{T}$,
 
 $$u(x)^2 \le c\,E(u)\bigl(\log\delta(u) + K\bigr).$$
 
-Formalized by `TorusSobolev.OneLogBound`, a definition declared in [MathlibExt/Analysis/Fourier/TorusSobolev/LogarithmicBounds.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/TorusSobolev/LogarithmicBounds.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/one-log-and-double-log-bounds-on-actual-torus-fu/index.html#one-log-bound).
+Formalized by `TorusSobolev.OneLogBound`, a definition declared in [MathlibExt/Analysis/Fourier/TorusSobolev/LogarithmicBounds.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/TorusSobolev/LogarithmicBounds.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/one-log-and-double-log-bounds-on-actual-torus-fu/index.html#one-log-bound).
 
 ## Double-log bound with coefficient $a$ and constant $L$
 
@@ -35,7 +35,7 @@ $$u(x)^2 \le \frac{E(u)}{4\pi}\bigl(\log\delta(u) + a\log\bigl(1 + \log\delta(u)
 The inner logarithm is taken of $1 + \log\delta(u)$, which is at least $1$ because
 $\delta(u) \ge 1$.
 
-Formalized by `TorusSobolev.DoubleLogBound`, a definition declared in [MathlibExt/Analysis/Fourier/TorusSobolev/LogarithmicBounds.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/TorusSobolev/LogarithmicBounds.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/one-log-and-double-log-bounds-on-actual-torus-fu/index.html#double-log-bound).
+Formalized by `TorusSobolev.DoubleLogBound`, a definition declared in [MathlibExt/Analysis/Fourier/TorusSobolev/LogarithmicBounds.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/TorusSobolev/LogarithmicBounds.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/one-log-and-double-log-bounds-on-actual-torus-fu/index.html#double-log-bound).
 
 ## Optimal one-log coefficient
 
@@ -43,7 +43,7 @@ The infimum, taken in the extended reals, of all real
 numbers $c$ for which there is a real constant $K$ such that the one-log bound with
 coefficient $c$ and constant $K$ holds. It is $+\infty$ when no such $c$ exists.
 
-Formalized by `TorusSobolev.oneLogLeadingCoefficientInfimum`, a definition declared in [MathlibExt/Analysis/Fourier/TorusSobolev/LogarithmicBounds.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/TorusSobolev/LogarithmicBounds.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/one-log-and-double-log-bounds-on-actual-torus-fu/index.html#one-log-leading-coefficient-infimum).
+Formalized by `TorusSobolev.oneLogLeadingCoefficientInfimum`, a definition declared in [MathlibExt/Analysis/Fourier/TorusSobolev/LogarithmicBounds.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/TorusSobolev/LogarithmicBounds.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/one-log-and-double-log-bounds-on-actual-torus-fu/index.html#one-log-leading-coefficient-infimum).
 
 ## Depends on
 
@@ -52,4 +52,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: One-log and double-log bounds on actual torus functions](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/one-log-and-double-log-bounds-on-actual-torus-fu/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/one-log-and-double-log-bounds-on-actual-torus-fu)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/harmonic-analysis/fourier-series/brezis-gallou-t-inequality-on-the-two-dimensiona/one-log-and-double-log-bounds-on-actual-torus-fu)

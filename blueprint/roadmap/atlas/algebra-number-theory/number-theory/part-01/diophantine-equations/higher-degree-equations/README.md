@@ -1,6 +1,6 @@
 # Higher-degree Diophantine equations
 
-79 results of ATLAS's vault, 19 proved and 60 stated but not proved, in this branch's topics.
+79 results of ATLAS's vault, 19 proved, 57 stated but not proved and 3 whose declaration the Lean read here does not declare, in this branch's topics.
 
 Thue equations, generalized Fermat equations, sums of cubes, x^y = y^x, abc conjecture, Brocard–Ramanujan and symmetric-function equations.
 

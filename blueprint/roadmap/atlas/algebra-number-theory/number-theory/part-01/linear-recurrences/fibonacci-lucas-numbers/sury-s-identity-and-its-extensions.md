@@ -7,7 +7,7 @@ statement: formalized
 
 # Sury's identity and its extensions
 
-8 results, 2 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html).
+8 results, 2 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html).
 
 ## Fibonacci numbers extended to negative indices
 
@@ -15,7 +15,7 @@ For an integer $n$, the Fibonacci number
 $F_n$ as a rational number, where $F_0 = 0$, $F_1 = 1$, $F_{m+2} = F_{m+1} + F_m$ for natural
 numbers $m$, and $F_{-m} = (-1)^{m+1} F_m$ for natural numbers $m$.
 
-Formalized by `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.fibAtInt`, an abbreviation declared in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#fib-at-int).
+Formalized by `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.fibAtInt`, an abbreviation declared in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#fib-at-int).
 
 ## Lucas numbers at integer indices
 
@@ -23,7 +23,7 @@ For an integer $n$, the Lucas number $L_n$ as a
 rational number, where $L_0 = 2$, $L_1 = 1$, $L_{m+2} = L_{m+1} + L_m$ for natural numbers $m$,
 and $L_{-m} = (-1)^m L_m$ for natural numbers $m$.
 
-Formalized by `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.lucasAtInt`, a definition declared in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#lucas-at-int).
+Formalized by `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.lucasAtInt`, a definition declared in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#lucas-at-int).
 
 ## Sury's identity for a second-order recurrence starting at 1
 
@@ -38,7 +38,7 @@ $$A_{n+2} - A_1 A_{n+1} = (A_2 - A_1^2) \sum_{i=0}^{n} t^{n-i} A_i.$$
 
 - Gregory Dresden and Xiaoya Gao, "Further Extensions of Sury's Identity", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.second_order_recurrence_initial_one_sury_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#second-order-recurrence-initial-one-sury).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.second_order_recurrence_initial_one_sury_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#second-order-recurrence-initial-one-sury).
 
 ## Offset form of Sury's identity for a second-order recurrence
 
@@ -57,7 +57,7 @@ paper's backward extension of the sequence, which uses $c_2 \neq 0$.
 
 - Gregory Dresden and Xiaoya Gao, "Further Extensions of Sury's Identity", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.second_order_recurrence_offset_sury_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#second-order-recurrence-offset-sury-sum).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.second_order_recurrence_offset_sury_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#second-order-recurrence-offset-sury-sum).
 
 ## Step extension of Sury's identity for Fibonacci numbers
 
@@ -72,7 +72,7 @@ When $n = 0$ the index $j(n-1) = -j$ is negative, so $F_{-j} = (-1)^{j+1} F_j$ e
 
 - Gregory Dresden and Xiaoya Gao, "Further Extensions of Sury's Identity", Theorem 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.fib_step_sury_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#fib-step-sury-sum).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.fib_step_sury_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#fib-step-sury-sum).
 
 ## Step extension of Sury's identity for Lucas numbers
 
@@ -87,7 +87,7 @@ $$2 \left(\frac{L_j}{2}\right)^{n+1} \frac{F_{jn}}{F_j} + 2 (-1)^{jn} =
 
 - Gregory Dresden and Xiaoya Gao, "Further Extensions of Sury's Identity", Theorem 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.lucas_step_sury_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#lucas-step-sury-sum).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.lucas_step_sury_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#lucas-step-sury-sum).
 
 ## Offset step extension of Sury's identity, Fibonacci form
 
@@ -102,7 +102,7 @@ $$F_{j(n+1)} = \frac{F_j}{F_k} \sum_{i=0}^{n}
 
 - Gregory Dresden and Xiaoya Gao, "Further Extensions of Sury's Identity", Theorem 5, formula (53).
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.fib_step_offset_sury_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#fib-step-offset-sury-sum).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.fib_step_offset_sury_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#fib-step-offset-sury-sum).
 
 ## Offset step extension of Sury's identity, Lucas form
 
@@ -117,7 +117,7 @@ $$F_{j(n+1)} = \frac{F_j}{L_k} \sum_{i=0}^{n}
 
 - Gregory Dresden and Xiaoya Gao, "Further Extensions of Sury's Identity", Theorem 5, formula (54).
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.lucas_step_offset_sury_fib_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#lucas-step-offset-sury-fib-sum).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.lucas_step_offset_sury_fib_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SuryIdentityExtensionsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html#lucas-step-offset-sury-fib-sum).
 
 ## Depends on
 
@@ -126,4 +126,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sury's identity and its extensions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/sury-s-identity-and-its-extensions)

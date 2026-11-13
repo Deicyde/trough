@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.9 Čech cohomology as a functor on presheaves
 
-Section 21.9 of the Stacks Project, [Tag 03AO](https://stacks.math.columbia.edu/tag/03AO). 7 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.9 of the Stacks Project, [Tag 03AO](https://stacks.math.columbia.edu/tag/03AO). 7 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03AP, an equation
 
 [Tag 03AP](https://stacks.math.columbia.edu/tag/03AP) in the Stacks Project.
 
-**`Stacks.CechSite.cechComplexPlusFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexAsBoundedBelowFunctor.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexAsBoundedBelowFunctor.lean#L51).
+**`Stacks.CechSite.cechComplexPlusFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexAsBoundedBelowFunctor.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexAsBoundedBelowFunctor.lean#L51).
 
 > **Stacks 03AP.** The Čech complex as a functor of the coefficient presheaf, with its
 > nonnegative grading regarded canonically as a bounded-below integer grading.
@@ -30,7 +30,7 @@ public noncomputable def cechComplexPlusFunctor {A : Type u'} [Category.{v'} A]
 
 [Tag 03AQ](https://stacks.math.columbia.edu/tag/03AQ) in the Stacks Project.
 
-**`Stacks.CechSite.cechComplexPlusFunctor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexExactness.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexExactness.lean#L61).
+**`Stacks.CechSite.cechComplexPlusFunctor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexExactness.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/ComplexExactness.lean#L61).
 
 > Taking the bounded-below Čech complex of a presheaf of abelian groups is an exact functor.
 
@@ -48,7 +48,7 @@ theorem cechComplexPlusFunctor_exact
 
 [Tag 03AR](https://stacks.math.columbia.edu/tag/03AR) in the Stacks Project.
 
-**`Stacks.CechSite.cechCohomologyDeltaFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DeltaFunctor.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DeltaFunctor.lean#L63).
+**`Stacks.CechSite.cechCohomologyDeltaFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DeltaFunctor.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DeltaFunctor.lean#L63).
 
 > The Čech cohomology functors of a family of morphisms with fixed target
 > form a cohomological delta functor on abelian presheaves, whose `n`-th functor is the `n`-th
@@ -68,7 +68,7 @@ public noncomputable def cechCohomologyDeltaFunctor
 
 [Tag 03AS](https://stacks.math.columbia.edu/tag/03AS) in the Stacks Project.
 
-**`Stacks.CechSite.integralCechComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean#L146). The attribute's comment: “the integral Čech complex”.
+**`Stacks.CechSite.integralCechComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean#L146). The attribute's comment: “the integral Čech complex”.
 
 > The canonical integral Čech chain complex. Its degree `n` term is
 > `\bigoplus_{i : Fin (n+1) → E.I₀} ℤ[U_i]`, with `U_i` the corresponding fibre
@@ -82,7 +82,7 @@ public noncomputable def integralCechComplex
     ChainComplex (Cᵒᵖ ⥤ AddCommGrpCat.{max v a}) ℕ
 ```
 
-**`Stacks.CechSite.integralCechComplex_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean#L156). The attribute's comment: “the terms of the integral Čech complex”.
+**`Stacks.CechSite.integralCechComplex_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean#L156). The attribute's comment: “the terms of the integral Čech complex”.
 
 > The degree-`n` term of the integral Čech complex is the indicated direct sum of
 > free abelian representable presheaves.
@@ -97,7 +97,7 @@ public theorem integralCechComplex_X
       freeAbelianYoneda.{v, u, a}.obj ((∏ᶜ (fun a ↦ Over.mk (E.f (i a)))).left)
 ```
 
-**`Stacks.CechSite.integralCechComplex_d`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean#L167). The attribute's comment: “the differential of the integral Čech complex”.
+**`Stacks.CechSite.integralCechComplex_d`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean#L167). The attribute's comment: “the differential of the integral Čech complex”.
 
 > The differential of the integral Čech complex is the alternating sum of the canonical maps
 > which omit one factor.
@@ -112,7 +112,7 @@ public theorem integralCechComplex_d
       (integralCechSimplicialObject.{w, v, u, a} E).δ j
 ```
 
-**`Stacks.CechSite.homIntegralCechComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean#L282). The attribute's comment: “the functorial Hom identification”.
+**`Stacks.CechSite.homIntegralCechComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplex.lean#L282). The attribute's comment: “the functorial Hom identification”.
 
 > Mapping the integral Čech chain complex into an abelian presheaf is naturally isomorphic, as a
 > cochain complex, to its Čech complex.
@@ -131,7 +131,7 @@ public noncomputable def homIntegralCechComplexIso
 
 [Tag 03AT](https://stacks.math.columbia.edu/tag/03AT) in the Stacks Project.
 
-**`Stacks.CechSite.integralCechComplex_homology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexIsAResolution.lean, line 1015](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexIsAResolution.lean#L1015). References: SGA 4 V (1.11), “partial”.
+**`Stacks.CechSite.integralCechComplex_homology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexIsAResolution.lean, line 1008](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexIsAResolution.lean#L1008). References: SGA 4 V (1.11), “partial”.
 
 > The homology presheaves of the integral Čech chain complex vanish in every positive degree:
 > the complex of abelian presheaves is exact in all degrees except `0`. The degree-`0` term of
@@ -147,7 +147,7 @@ public theorem integralCechComplex_homology_isZero (n : ℕ) (hn : 0 < n) :
 
 [Tag 03F5](https://stacks.math.columbia.edu/tag/03F5) in the Stacks Project.
 
-**`Stacks.CechSite.integralCechComplexTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean, line 827](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean#L827). The attribute's comment: “the tensor product presheaf complex”.
+**`Stacks.CechSite.integralCechComplexTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean, line 826](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean#L826). The attribute's comment: “the tensor product presheaf complex”.
 
 > The presheaf-of-`O`-modules complex obtained by tensoring the integral Čech
 > complex with `O` over the constant integer presheaf.
@@ -160,7 +160,7 @@ public noncomputable def integralCechComplexTensor
     IntegralCechComplexTensorSpec E O
 ```
 
-**`Stacks.CechSite.integralCechComplexTensor_homology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean, line 869](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean#L869). The attribute's comment: “positive-degree exactness”.
+**`Stacks.CechSite.integralCechComplexTensor_homology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean, line 868](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean#L868). The attribute's comment: “positive-degree exactness”.
 
 > **Stacks Project, Tag 03F5.** Tensoring the integral Čech complex with a
 > presheaf of rings leaves it exact in every positive degree.
@@ -174,7 +174,7 @@ public theorem integralCechComplexTensor_homology_isZero
     IsZero ((integralCechComplexTensor E O).K.homology n)
 ```
 
-**`Stacks.CechSite.integralCechComplexTensorRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean, line 928](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean#L928). The attribute's comment: “the tensor product presheaf complex”.
+**`Stacks.CechSite.integralCechComplexTensorRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean, line 927](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean#L927). The attribute's comment: “the tensor product presheaf complex”.
 
 > The presheaf-of-`R`-modules complex obtained by tensoring the integral Čech
 > complex with `R` over the constant integer presheaf.
@@ -187,7 +187,7 @@ public noncomputable def integralCechComplexTensorRing
     ChainComplex (_root_.PresheafOfModules.{max v z} R) ℕ
 ```
 
-**`Stacks.CechSite.integralCechComplexTensorRing_homology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean, line 954](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean#L954). The attribute's comment: “positive-degree exactness”.
+**`Stacks.CechSite.integralCechComplexTensorRing_homology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean, line 953](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/IntegralComplexFlatness.lean#L953). The attribute's comment: “positive-degree exactness”.
 
 > **Stacks Project, Tag 03F5.** Tensoring the integral Čech complex with a
 > presheaf of rings leaves it exact in every positive degree.
@@ -205,7 +205,7 @@ public theorem integralCechComplexTensorRing_homology_isZero
 
 [Tag 03AU](https://stacks.math.columbia.edu/tag/03AU) in the Stacks Project.
 
-**`Stacks.CechSite.existsUnique_cechCohomologyIsoRightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZero.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZero.lean#L244). The attribute's comment: “the canonical δ-functor isomorphism”.
+**`Stacks.CechSite.existsUnique_cechCohomologyIsoRightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZero.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZero.lean#L244). The attribute's comment: “the canonical δ-functor isomorphism”.
 
 > **Stacks Project, Tag 03AU.** The Čech cohomology functors `Ȟ^p(E, -)` of a family of
 > morphisms with fixed target are canonically isomorphic, as a cohomological `δ`-functor on
@@ -222,7 +222,7 @@ theorem existsUnique_cechCohomologyIsoRightDerived :
       e.hom.app 0 = (cechH0IsoRightDerivedZero.{w, v, a, u} E).hom
 ```
 
-**`Stacks.CechSite.cechComplexIsoRightDerivedFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZero.lean, line 921](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZero.lean#L921). The attribute's comment: “the functorial quasi-isomorphism”. References: SGA 7 VI (3.1(b)), “RH^0 = Čech complex”.
+**`Stacks.CechSite.cechComplexIsoRightDerivedFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZero.lean, line 922](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZero.lean#L922). The attribute's comment: “the functorial quasi-isomorphism”. References: SGA 7 VI (3.1(b)), “RH^0 = Čech complex”.
 
 > **Stacks Project, Tag 03AU**, the functorial quasi-isomorphism. For any right derived
 > functor `RȞ⁰(E, -) : D⁺(PAb(C)) ⥤ D⁺(Ab)` of degree-zero Čech cohomology, the Čech complex is
@@ -247,7 +247,7 @@ def cechComplexIsoRightDerivedFunctor
       DerivedCategory.Plus.singleFunctor (Cᵒᵖ ⥤ AddCommGrpCat.{max u v w a}) 0 ⋙ RF
 ```
 
-**`Stacks.CechSite.cechH0IsoRightDerivedPlusZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZeroViaDeltaFunctors.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZeroViaDeltaFunctors.lean#L273). The attribute's comment: “the degree-zero comparison”.
+**`Stacks.CechSite.cechH0IsoRightDerivedPlusZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZeroViaDeltaFunctors.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZeroViaDeltaFunctors.lean#L273). The attribute's comment: “the degree-zero comparison”.
 
 > **Stacks 03AU.** The degree-zero Čech cohomology functor is its own zeroth right derived
 > functor, normalized by `H ⁰` of the unit of the right derived functor.
@@ -259,7 +259,7 @@ noncomputable def cechH0IsoRightDerivedPlusZero :
       e.hom = (cechH0RightDerivedPlusZeroIso.{w, v, a, u} E).inv }
 ```
 
-**`Stacks.CechSite.rightDerivedCechDeltaFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZeroViaDeltaFunctors.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZeroViaDeltaFunctors.lean#L282). The attribute's comment: “the delta functor of higher right derived functors”.
+**`Stacks.CechSite.rightDerivedCechDeltaFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZeroViaDeltaFunctors.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZeroViaDeltaFunctors.lean#L282). The attribute's comment: “the delta functor of higher right derived functors”.
 
 > **Stacks 03AU.** The higher right derived functors of degree-zero Čech cohomology, equipped
 > with their universal cohomological δ-functor structure.
@@ -271,7 +271,7 @@ noncomputable def rightDerivedCechDeltaFunctor :
       R.IsUniversal }
 ```
 
-**`Stacks.CechSite.existsUnique_cechCohomologyDeltaFunctorIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZeroViaDeltaFunctors.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZeroViaDeltaFunctors.lean#L304). The attribute's comment: “the canonical delta-functor isomorphism”. References: SGA 7 VI (3.1(b)), “H^p = R^p H^0 of cover”.
+**`Stacks.CechSite.existsUnique_cechCohomologyDeltaFunctorIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZeroViaDeltaFunctors.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/RightDerivedOfDegreeZeroViaDeltaFunctors.lean#L304). The attribute's comment: “the canonical delta-functor isomorphism”. References: SGA 7 VI (3.1(b)), “H^p = R^p H^0 of cover”.
 
 > **Stacks 03AU.** Čech cohomology is canonically isomorphic, as a cohomological δ-functor, to
 > the higher right derived functors of degree-zero Čech cohomology. The isomorphism is unique with
@@ -292,4 +292,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.9, Tag 03AO](https://stacks.math.columbia.edu/tag/03AO)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

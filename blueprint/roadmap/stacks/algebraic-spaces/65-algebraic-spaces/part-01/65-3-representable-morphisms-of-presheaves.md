@@ -8,7 +8,7 @@ proof: formalized
 
 # 65.3 Representable morphisms of presheaves
 
-Section 65.3 of the Stacks Project, [Tag 025U](https://stacks.math.columbia.edu/tag/025U). 6 tags here are carried by 3 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 65.3 of the Stacks Project, [Tag 025U](https://stacks.math.columbia.edu/tag/025U). 6 tags here are carried by 3 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02W9, a lemma
 
@@ -16,7 +16,7 @@ Section 65.3 of the Stacks Project, [Tag 025U](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.relativelyRepresentable.map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.relativelyRepresentable.map#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean#L59) (StacksFrontier): “for the Yoneda embedding of a category with fibre products, `h_f` is representable”.
+- [`CategoryTheory.Functor.relativelyRepresentable.map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.relativelyRepresentable.map#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean#L59) (StacksFrontier): “for the Yoneda embedding of a category with fibre products, `h_f` is representable”.
 
 ## Tag 02WA, a lemma
 
@@ -24,7 +24,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.relativelyRepresentable.isMultiplicative`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.relativelyRepresentable.isMultiplicative#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean#L63) (StacksFrontier): “representable transformations are stable under composition”.
+- [`CategoryTheory.Functor.relativelyRepresentable.isMultiplicative`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.relativelyRepresentable.isMultiplicative#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean#L63) (StacksFrontier): “representable transformations are stable under composition”.
 
 ## Tag 02WB, a lemma
 
@@ -32,13 +32,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.relativelyRepresentable.isStableUnderBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.relativelyRepresentable.isStableUnderBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean#L66) (StacksFrontier): “representable transformations are stable under base change”.
+- [`CategoryTheory.Functor.relativelyRepresentable.isStableUnderBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.relativelyRepresentable.isStableUnderBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable.lean#L66) (StacksFrontier): “representable transformations are stable under base change”.
 
 ## Tag 02WC, a lemma
 
 [Tag 02WC](https://stacks.math.columbia.edu/tag/02WC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativelyRepresentable_prod_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Products.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Products.lean#L44).
+**`AlgebraicGeometry.Space.relativelyRepresentable_prod_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Products.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Products.lean#L44).
 
 > **Stacks Project, Tag 02WC.** The product of two representable transformations of
 > presheaves on the big fppf site over `S` is representable.
@@ -56,7 +56,7 @@ public theorem relativelyRepresentable_prod_map
 
 [Tag 02WD](https://stacks.math.columbia.edu/tag/02WD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSheaf_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Sheaf.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Sheaf.lean#L39).
+**`AlgebraicGeometry.Space.isSheaf_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Sheaf.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Sheaf.lean#L39).
 
 > A representable transformation into a sheaf on the big fppf site over `S` has a sheaf as its
 > source.
@@ -74,7 +74,7 @@ public theorem isSheaf_of_relativelyRepresentable
 
 [Tag 05L9](https://stacks.math.columbia.edu/tag/05L9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativelyRepresentable_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Diagonal.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Diagonal.lean#L36).
+**`AlgebraicGeometry.Space.relativelyRepresentable_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Diagonal.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Diagonal.lean#L36).
 
 > The diagonal of a representable transformation of presheaves on the big fppf site over `S` is
 > representable.
@@ -94,4 +94,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 65.3, Tag 025U](https://stacks.math.columbia.edu/tag/025U)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

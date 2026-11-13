@@ -8,7 +8,7 @@ proof: formalized
 
 # Summability and Tauberian theorems: its own results
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/summability/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/summability/index.html).
 
 Matrix summability methods (Silverman–Toeplitz, Cesàro means, permanent methods) and Tauberian theorems of Tauber, Hardy–Littlewood, Wiener and Newman.
 
@@ -25,7 +25,7 @@ No monotonicity is assumed below $1$.
 
 - ATLAS `NumberTheoryI` Lemma 16.8.
 
-Formalized by `Asymptotics.isEquivalent_id_of_monotoneOn_of_tendsto_integral_sub_div_sq`, a theorem declared in [MathlibExt/Analysis/Asymptotics/MonotoneIntegralCriterion.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Asymptotics/MonotoneIntegralCriterion.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/summability/index.html#is-equivalent-id-of-monotone-on-of-tends).
+Formalized by `Asymptotics.isEquivalent_id_of_monotoneOn_of_tendsto_integral_sub_div_sq`, a theorem declared in [MathlibExt/Analysis/Asymptotics/MonotoneIntegralCriterion.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Asymptotics/MonotoneIntegralCriterion.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/summability/index.html#is-equivalent-id-of-monotone-on-of-tends).
 
 ## Newman's Tauberian theorem
 
@@ -36,7 +36,7 @@ of the closed half-plane $\{s : \operatorname{Re} s \ge 0\}$, and suppose that f
 with $\operatorname{Re} s > 0$ the Laplace transform of $f$ converges at $s$ and equals $G(s)$.
 Then $\int_0^T f(t)\,dt \to G(0)$ as $T \to \infty$.
 
-Formalized by `newman_tauberian`, a theorem declared in [MathlibExt/Analysis/LaplaceTransform/NewmanTauberian.lean, line 1597](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/LaplaceTransform/NewmanTauberian.lean#L1597). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/summability/index.html#newman-tauberian).
+Formalized by `newman_tauberian`, a theorem declared in [MathlibExt/Analysis/LaplaceTransform/NewmanTauberian.lean, line 1597](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/LaplaceTransform/NewmanTauberian.lean#L1597). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/summability/index.html#newman-tauberian).
 
 ## Silverman–Toeplitz theorem (sufficiency)
 
@@ -51,7 +51,7 @@ $\sum_k a_{nk} x_k \to L$ as $n \to \infty$.
 
 - https://en.wikipedia.org/wiki/Silverman%E2%80%93Toeplitz_theorem.
 
-Formalized by `MetaMathlibExt.silverman_toeplitz`, a theorem declared in [MathlibExt/Analysis/Series/SilvermanToeplitz.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Series/SilvermanToeplitz.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/summability/index.html#silverman-toeplitz).
+Formalized by `MetaMathlibExt.silverman_toeplitz`, a theorem declared in [MathlibExt/Analysis/Series/SilvermanToeplitz.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Series/SilvermanToeplitz.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/summability/index.html#silverman-toeplitz).
 
 ## Wiener's Tauberian theorem on $L^1(\mathbb{R})$
 
@@ -68,7 +68,7 @@ subspace of $L^1(\mathbb{R})$.
 
 - N. Wiener, Ann. of Math. 33 (1932) 1–100, DOI 10.2307/1968102, Thm I; Rudin, Fourier Analysis on Groups
 
-Formalized by `MathlibExt.Analysis.Fourier.WienerWanted.wiener_tauberian_L1`, a theorem declared in [MathlibExt/Analysis/Fourier/WienerTauberian.lean, line 1898](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/WienerTauberian.lean#L1898). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/summability/index.html#wiener-tauberian-l1).
+Formalized by `MathlibExt.Analysis.Fourier.WienerWanted.wiener_tauberian_L1`, a theorem declared in [MathlibExt/Analysis/Fourier/WienerTauberian.lean, line 1898](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/WienerTauberian.lean#L1898). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/summability/index.html#wiener-tauberian-l1).
 
 ## Depends on
 
@@ -77,4 +77,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Summability and Tauberian theorems](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/summability/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/sequences-and-series/summability)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/sequences-and-series/summability)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Sums of squares of Tribonacci and Tetranacci numbers
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/sums-of-squares-of-tribonacci-and-tetranacci-num/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/sums-of-squares-of-tribonacci-and-tetranacci-num/index.html).
 
 ## Sum of products of Tribonacci terms two apart
 
@@ -21,7 +21,7 @@ $$4 \sum_{k=1}^{n} T(k)\,T(k-2) = \bigl(T(n+1) - T(n-1)\bigr)^2 - \bigl(T(1) - T
 
 - Karol Gryszka, "A Simple Proof of the Formula for the Sum of Tribonacci and Tetranacci Numbers Squared", Lemma 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.TribonacciTetranacciSumsOfSquaresWanted.four_mul_sum_tribonacci_mul_sub_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/sums-of-squares-of-tribonacci-and-tetranacci-num/index.html#four-mul-sum-tribonacci-mul-sub-two).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.TribonacciTetranacciSumsOfSquaresWanted.four_mul_sum_tribonacci_mul_sub_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/sums-of-squares-of-tribonacci-and-tetranacci-num/index.html#four-mul-sum-tribonacci-mul-sub-two).
 
 ## Sum of squares of a Tribonacci sequence
 
@@ -35,7 +35,7 @@ $$4 \sum_{k=1}^{n} T(k)^2 = 4\,T(n)\,T(n+1) - 4\,T(0)\,T(1) -
 
 - Karol Gryszka, "A Simple Proof of the Formula for the Sum of Tribonacci and Tetranacci Numbers Squared", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.TribonacciTetranacciSumsOfSquaresWanted.four_mul_sum_tribonacci_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/sums-of-squares-of-tribonacci-and-tetranacci-num/index.html#four-mul-sum-tribonacci-sq).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.TribonacciTetranacciSumsOfSquaresWanted.four_mul_sum_tribonacci_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/sums-of-squares-of-tribonacci-and-tetranacci-num/index.html#four-mul-sum-tribonacci-sq).
 
 ## Sum of products of Tetranacci terms two and three apart
 
@@ -53,7 +53,7 @@ paper's telescoping calculation.
 
 - Karol Gryszka, "A Simple Proof of the Formula for the Sum of Tribonacci and Tetranacci Numbers Squared", Lemma 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.TribonacciTetranacciSumsOfSquaresWanted.three_mul_sum_tetranacci_mul_sub_two_add_sub_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/sums-of-squares-of-tribonacci-and-tetranacci-num/index.html#three-mul-sum-tetranacci-mul-sub-two-add).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.TribonacciTetranacciSumsOfSquaresWanted.three_mul_sum_tetranacci_mul_sub_two_add_sub_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/sums-of-squares-of-tribonacci-and-tetranacci-num/index.html#three-mul-sum-tetranacci-mul-sub-two-add).
 
 ## Sum of squares of a Tetranacci sequence
 
@@ -71,7 +71,7 @@ Gryszka's Lemma 2; this sign is the one forced by the paper's telescoping calcul
 
 - Karol Gryszka, "A Simple Proof of the Formula for the Sum of Tribonacci and Tetranacci Numbers Squared", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.TribonacciTetranacciSumsOfSquaresWanted.three_mul_sum_tetranacci_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/sums-of-squares-of-tribonacci-and-tetranacci-num/index.html#three-mul-sum-tetranacci-sq).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.TribonacciTetranacciSumsOfSquaresWanted.three_mul_sum_tetranacci_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/TribonacciTetranacciSumsOfSquaresWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/sums-of-squares-of-tribonacci-and-tetranacci-num/index.html#three-mul-sum-tetranacci-sq).
 
 ## Depends on
 
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sums of squares of Tribonacci and Tetranacci numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/sums-of-squares-of-tribonacci-and-tetranacci-num/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/sums-of-squares-of-tribonacci-and-tetranacci-num)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/sums-of-squares-of-tribonacci-and-tetranacci-num)

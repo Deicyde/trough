@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.4 Cohomological dimension
 
-Section 51.4 of the Stacks Project, [Tag 0DX6](https://stacks.math.columbia.edu/tag/0DX6). 11 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.4 of the Stacks Project, [Tag 0DX6](https://stacks.math.columbia.edu/tag/0DX6). 11 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DX7, a lemma
 
 [Tag 0DX7](https://stacks.math.columbia.edu/tag/0DX7) in the Stacks Project.
 
-**`Stacks.LocalCohomology.localCohomology_vanishing_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/HighBoundTFAE.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/HighBoundTFAE.lean#L141).
+**`Stacks.LocalCohomology.localCohomology_vanishing_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/HighBoundTFAE.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/HighBoundTFAE.lean#L141).
 
 > **[Stacks, Tag 0DX7].** Let `I` be a finitely generated ideal of a commutative ring `A`, let
 > `Y = V(I) ⊆ X = Spec A` and let `d ≥ -1` be an integer. The following are equivalent:
@@ -55,7 +55,7 @@ theorem localCohomology_vanishing_tfae
 
 [Tag 0DX8](https://stacks.math.columbia.edu/tag/0DX8) in the Stacks Project.
 
-**`Stacks.LocalCohomology.cohomologicalDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/CohomologicalDimension.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/CohomologicalDimension.lean#L58). The attribute's comment: “the least integer”.
+**`Stacks.LocalCohomology.cohomologicalDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/CohomologicalDimension.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/CohomologicalDimension.lean#L58). The attribute's comment: “the least integer”.
 
 > **Stacks Project, Tag 0DX8.** The cohomological dimension of a finitely generated ideal is
 > the least integer `d ≥ -1` above which its local cohomology vanishes.
@@ -65,7 +65,7 @@ def cohomologicalDimension
     (A : Type u) [CommRing A] (I : Ideal A) (hI : I.FG) : ℤ
 ```
 
-**`Stacks.LocalCohomology.exists_localCohomologyBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/CohomologicalDimension.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/CohomologicalDimension.lean#L65). The attribute's comment: “existence of a vanishing bound”.
+**`Stacks.LocalCohomology.exists_localCohomologyBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/CohomologicalDimension.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/CohomologicalDimension.lean#L65). The attribute's comment: “existence of a vanishing bound”.
 
 > Finite generation gives a finite upper bound on the degrees in which local cohomology is
 > nonzero; equivalently, the set defining the cohomological dimension is nonempty.
@@ -80,7 +80,7 @@ theorem exists_localCohomologyBound
 
 [Tag 0DX9](https://stacks.math.columbia.edu/tag/0DX9) in the Stacks Project.
 
-**`Stacks.LocalCohomology.cohomologicalDimension_le_card_affine_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineCover.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineCover.lean#L100). The attribute's comment: “part (3): the bound by an affine cover of the complement”.
+**`Stacks.LocalCohomology.cohomologicalDimension_le_card_affine_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineCover.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineCover.lean#L100). The attribute's comment: “part (3): the bound by an affine cover of the complement”.
 
 > **Stacks Project, Tag 0DX9 (3).** The cohomological dimension of a finitely generated ideal
 > `I` of `A` is at most the number of members of an affine open cover of `Spec A ∖ V(I)`.
@@ -94,7 +94,7 @@ theorem cohomologicalDimension_le_card_affine_cover
     cohomologicalDimension A I hI ≤ (c : ℤ)
 ```
 
-**`Stacks.LocalCohomology.cohomologicalDimension_le_card_zeroLocus_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimensionBounds.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimensionBounds.lean#L92). The attribute's comment: “part (2): the bound by a family cutting out the same zero locus”.
+**`Stacks.LocalCohomology.cohomologicalDimension_le_card_zeroLocus_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimensionBounds.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimensionBounds.lean#L92). The attribute's comment: “part (2): the bound by a family cutting out the same zero locus”.
 
 > The cohomological dimension is at most the number of equations in any finite family
 > defining the same zero locus.
@@ -108,7 +108,7 @@ theorem cohomologicalDimension_le_card_zeroLocus_generators
     cohomologicalDimension A I hI ≤ (n : ℤ)
 ```
 
-**`Stacks.LocalCohomology.cohomologicalDimension_le_card_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimensionBounds.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimensionBounds.lean#L111). The attribute's comment: “part (1): the bound by the number of generators”.
+**`Stacks.LocalCohomology.cohomologicalDimension_le_card_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimensionBounds.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimensionBounds.lean#L111). The attribute's comment: “part (1): the bound by the number of generators”.
 
 > The cohomological dimension is at most the number of generators in any finite generating
 > family of the ideal.
@@ -124,7 +124,7 @@ theorem cohomologicalDimension_le_card_generators
 
 [Tag 0ECP](https://stacks.math.columbia.edu/tag/0ECP) in the Stacks Project.
 
-**`Stacks.LocalCohomology.cohomologicalDimension_add_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/Sum.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/Sum.lean#L67).
+**`Stacks.LocalCohomology.cohomologicalDimension_add_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/Sum.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/Sum.lean#L67).
 
 > **[Stacks, Tag 0ECP].** For finitely generated ideals `I` and `J` of a commutative ring `A`,
 > the cohomological dimension of `I + J` is at most the sum of those of `I` and `J`, bounded below
@@ -141,7 +141,7 @@ theorem cohomologicalDimension_add_le (A : Type u) [CommRing A] (I J : Ideal A)
 
 [Tag 0DXA](https://stacks.math.columbia.edu/tag/0DXA) in the Stacks Project.
 
-**`Stacks.LocalCohomology.cohomologicalDimension_map_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/ChangeOfRings.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/ChangeOfRings.lean#L195). The attribute's comment: “inequality under a ring map”.
+**`Stacks.LocalCohomology.cohomologicalDimension_map_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/ChangeOfRings.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/ChangeOfRings.lean#L195). The attribute's comment: “inequality under a ring map”.
 
 > **Stacks Project, Tag 0DXA.** Cohomological dimension does not increase under extension of
 > the ideal along a ring homomorphism.
@@ -153,7 +153,7 @@ theorem cohomologicalDimension_map_le
     cohomologicalDimension B (I.map f) (hI.map f) ≤ cohomologicalDimension A I hI
 ```
 
-**`Stacks.LocalCohomology.cohomologicalDimension_map_eq_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/ChangeOfRings.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/ChangeOfRings.lean#L229). The attribute's comment: “equality under faithfully flat extension”.
+**`Stacks.LocalCohomology.cohomologicalDimension_map_eq_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/ChangeOfRings.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/ChangeOfRings.lean#L229). The attribute's comment: “equality under faithfully flat extension”.
 
 > **Stacks Project, Tag 0DXA.** Faithfully flat extension preserves cohomological
 > dimension.
@@ -169,7 +169,7 @@ theorem cohomologicalDimension_map_eq_of_faithfullyFlat
 
 [Tag 0DXB](https://stacks.math.columbia.edu/tag/0DXB) in the Stacks Project.
 
-**`Stacks.LocalCohomology.cohomologicalDimension_eq_sSup_localizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/Localization.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/Localization.lean#L144).
+**`Stacks.LocalCohomology.cohomologicalDimension_eq_sSup_localizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/Localization.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/Localization.lean#L144).
 
 > **Stacks Project, Tag 0DXB.** The cohomological dimension of a finitely generated ideal is
 > the supremum of the cohomological dimensions of its extensions to the local rings of the
@@ -189,7 +189,7 @@ theorem cohomologicalDimension_eq_sSup_localizations
 
 [Tag 0DXC](https://stacks.math.columbia.edu/tag/0DXC) in the Stacks Project.
 
-**`Stacks.LocalCohomology.cohomologicalDimension_le_of_ringKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/KrullDimension.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/KrullDimension.lean#L129). The attribute's comment: “the bound of the cohomological dimension by the Krull dimension”.
+**`Stacks.LocalCohomology.cohomologicalDimension_le_of_ringKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/KrullDimension.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/KrullDimension.lean#L129). The attribute's comment: “the bound of the cohomological dimension by the Krull dimension”.
 
 > **Stacks Project, Tag 0DXC.** The cohomological dimension of a finitely generated ideal of a
 > commutative ring is at most the Krull dimension of the ring.
@@ -204,7 +204,7 @@ theorem cohomologicalDimension_le_of_ringKrullDim_le
     cohomologicalDimension A I hI ≤ (d : ℤ)
 ```
 
-**`Stacks.LocalCohomology.isZero_localCohomologyModule_of_supportDim_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/KrullDimension.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/KrullDimension.lean#L147). The attribute's comment: “the vanishing above the dimension of the support”. References: SGA 2 V (3.1), “(i)”.
+**`Stacks.LocalCohomology.isZero_localCohomologyModule_of_supportDim_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/KrullDimension.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/KrullDimension.lean#L147). The attribute's comment: “the vanishing above the dimension of the support”. References: SGA 2 V (3.1), “(i)”.
 
 > **Stacks Project, Tag 0DXC.** For a finite module `M` over a commutative ring `A` and a
 > finitely generated ideal `I ⊆ A`, the local cohomology `H^i_{V(I)}(M)` vanishes in every degree
@@ -227,7 +227,7 @@ theorem isZero_localCohomologyModule_of_supportDim_lt
 
 [Tag 0DXD](https://stacks.math.columbia.edu/tag/0DXD) in the Stacks Project.
 
-**`Stacks.LocalCohomology.nonempty_compl_zeroLocus_of_cohomologicalDimension_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineComplement.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineComplement.lean#L117). The attribute's comment: “nonemptiness”.
+**`Stacks.LocalCohomology.nonempty_compl_zeroLocus_of_cohomologicalDimension_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineComplement.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineComplement.lean#L117). The attribute's comment: “nonemptiness”.
 
 > **Stacks Project, Tag 0DXD.** If a finitely generated ideal has cohomological dimension one,
 > the complement of its zero locus in the prime spectrum is nonempty.
@@ -238,7 +238,7 @@ theorem nonempty_compl_zeroLocus_of_cohomologicalDimension_eq_one
     (PrimeSpectrum.zeroLocus (I : Set A))ᶜ.Nonempty
 ```
 
-**`Stacks.LocalCohomology.isAffine_complZeroLocusOpen_of_cohomologicalDimension_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineComplement.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineComplement.lean#L157). The attribute's comment: “affineness”.
+**`Stacks.LocalCohomology.isAffine_complZeroLocusOpen_of_cohomologicalDimension_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineComplement.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineComplement.lean#L157). The attribute's comment: “affineness”.
 
 > **Stacks Project, Tag 0DXD.** If a finitely generated ideal has cohomological dimension one,
 > the complement of its zero locus, as an open subscheme of `Spec A`, is affine.
@@ -257,7 +257,7 @@ theorem isAffine_complZeroLocusOpen_of_cohomologicalDimension_eq_one
     IsAffine (complZeroLocusOpen A I).toScheme
 ```
 
-**`Stacks.LocalCohomology.nonempty_and_isAffine_complZeroLocusOpen_of_cohomologicalDimension_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineComplement.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineComplement.lean#L181).
+**`Stacks.LocalCohomology.nonempty_and_isAffine_complZeroLocusOpen_of_cohomologicalDimension_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineComplement.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/AffineComplement.lean#L181).
 
 > **Stacks Project, Tag 0DXD.** Let `I` be a finitely generated ideal of a commutative ring
 > `A`. If the cohomological dimension `cd(A, I)` equals `1`, then `Spec A ∖ V(I)` is a nonempty
@@ -279,7 +279,7 @@ theorem nonempty_and_isAffine_complZeroLocusOpen_of_cohomologicalDimension_eq_on
 
 [Tag 0DXE](https://stacks.math.columbia.edu/tag/0DXE) in the Stacks Project.
 
-**`Stacks.LocalCohomology.cohomologicalDimension_maximalIdeal_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean#L222). The attribute's comment: “cohomological dimension of the maximal ideal; existence of a normalized dualizing complex on the completion, the local case of Stacks 0BFR, is an explicit hypothesis”.
+**`Stacks.LocalCohomology.cohomologicalDimension_maximalIdeal_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean#L222). The attribute's comment: “cohomological dimension of the maximal ideal; existence of a normalized dualizing complex on the completion, the local case of Stacks 0BFR, is an explicit hypothesis”.
 
 > Let `(A, 𝔪)` be a Noetherian local ring of dimension `d` whose completion carries a normalized
 > dualizing complex. Then `cd(A, 𝔪) = d`.
@@ -295,7 +295,7 @@ theorem cohomologicalDimension_maximalIdeal_eq
     cohomologicalDimension A (IsLocalRing.maximalIdeal A) hm = (d : ℤ)
 ```
 
-**`Stacks.LocalCohomology.not_isZero_topLocalCohomologyModule_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean#L258). The attribute's comment: “nonvanishing of top local cohomology; existence of a normalized dualizing complex on the completion, the local case of Stacks 0BFR, is an explicit hypothesis”. References: SGA 2 V (3.1), “(iii), special case”.
+**`Stacks.LocalCohomology.not_isZero_topLocalCohomologyModule_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean#L258). The attribute's comment: “nonvanishing of top local cohomology; existence of a normalized dualizing complex on the completion, the local case of Stacks 0BFR, is an explicit hypothesis”. References: SGA 2 V (3.1), “(iii), special case”.
 
 > Let `(A, 𝔪)` be a Noetherian local ring of dimension `d` whose completion carries a normalized
 > dualizing complex. Then `H^d_𝔪(A)` is nonzero.
@@ -312,7 +312,7 @@ theorem not_isZero_topLocalCohomologyModule_maximalIdeal
       (ModuleCat.of A A) (d : ℤ))
 ```
 
-**`Stacks.LocalCohomology.cohomologicalDimension_maximalIdeal_eq'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean#L294).
+**`Stacks.LocalCohomology.cohomologicalDimension_maximalIdeal_eq'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean#L294).
 
 > Let `(A, 𝔪)` be a Noetherian local ring of dimension `d`. Then `cd(A, 𝔪) = d`.
 
@@ -324,7 +324,7 @@ theorem cohomologicalDimension_maximalIdeal_eq'
     cohomologicalDimension A (IsLocalRing.maximalIdeal A) hm = (d : ℤ)
 ```
 
-**`Stacks.LocalCohomology.not_isZero_topLocalCohomologyModule_maximalIdeal'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean#L304). References: SGA 2 V (3.1), “(iii), special case”.
+**`Stacks.LocalCohomology.not_isZero_topLocalCohomologyModule_maximalIdeal'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/TopLocalCohomology.lean#L304). References: SGA 2 V (3.1), “(iii), special case”.
 
 > Let `(A, 𝔪)` be a Noetherian local ring of dimension `d`. Then `H^d_𝔪(A)` is nonzero.
 
@@ -341,7 +341,7 @@ theorem not_isZero_topLocalCohomologyModule_maximalIdeal'
 
 [Tag 0DXF](https://stacks.math.columbia.edu/tag/0DXF) in the Stacks Project.
 
-**`Stacks.LocalCohomology.ringKrullDim_quotient_le_cohomologicalDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/IsolatedPrime.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/IsolatedPrime.lean#L133). The attribute's comment: “existence of a normalized dualizing complex on the completion of A/𝔭, the local case of Stacks 0BFR, is an explicit hypothesis”.
+**`Stacks.LocalCohomology.ringKrullDim_quotient_le_cohomologicalDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/IsolatedPrime.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/IsolatedPrime.lean#L133). The attribute's comment: “existence of a normalized dualizing complex on the completion of A/𝔭, the local case of Stacks 0BFR, is an explicit hypothesis”.
 
 > **Stacks Project, Tag 0DXF.** Let `(A, 𝔪)` be a Noetherian local ring, `I ⊆ A` a finitely
 > generated ideal and `𝔭 ⊆ A` a prime ideal with `V(𝔭) ∩ V(I) = {𝔪}`. Then
@@ -363,7 +363,7 @@ theorem ringKrullDim_quotient_le_cohomologicalDimension
     (d : ℤ) ≤ cohomologicalDimension A I hI
 ```
 
-**`Stacks.LocalCohomology.ringKrullDim_quotient_le_cohomologicalDimension'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/IsolatedPrime.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/IsolatedPrime.lean#L197).
+**`Stacks.LocalCohomology.ringKrullDim_quotient_le_cohomologicalDimension'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/IsolatedPrime.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/IsolatedPrime.lean#L197).
 
 > **Stacks Project, Tag 0DXF.** Let `(A, 𝔪)` be a Noetherian local ring, `I ⊆ A` a finitely
 > generated ideal and `𝔭 ⊆ A` a prime ideal with `V(𝔭) ∩ V(I) = {𝔪}`. Then
@@ -386,7 +386,7 @@ theorem ringKrullDim_quotient_le_cohomologicalDimension'
 
 [Tag 0EHU](https://stacks.math.columbia.edu/tag/0EHU) in the Stacks Project.
 
-**`Stacks.LocalCohomology.cohomologicalDimension_le_of_blowUp_fibre_dim_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/BlowupFibreDimension.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/BlowupFibreDimension.lean#L178). The attribute's comment: “cd(A, I) ≤ d from fibres of the blowup of dimension ≤ d - 1”.
+**`Stacks.LocalCohomology.cohomologicalDimension_le_of_blowUp_fibre_dim_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/BlowupFibreDimension.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/VanishingTFAE/BlowupFibreDimension.lean#L178). The attribute's comment: “cd(A, I) ≤ d from fibres of the blowup of dimension ≤ d - 1”.
 
 > Let `A` be a Noetherian ring, `I ⊆ A` an ideal and `b : X' ⟶ X = Spec A` the blowup of `I`.
 > If every fibre of `b` has dimension `< d`, that is at most `d - 1`, then the cohomological
@@ -415,4 +415,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.4, Tag 0DX6](https://stacks.math.columbia.edu/tag/0DX6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

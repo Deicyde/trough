@@ -7,7 +7,7 @@ statement: formalized
 
 # Shadow Markov triples
 
-7 results, 5 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html).
+7 results, 5 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html).
 
 ## Shadow Markoff mutation
 
@@ -24,7 +24,7 @@ Division by $0$ gives $0$: if $x_i = 0$, the new $x_i$ and the new $y_i$ are bot
 
 - Nathan Bonin, *Conditions of Positivity on a Shadow Markoff Tree*, Journal of Integer Sequences 27 (2024), Article 24.8.3, Section 1, equations (MutA) and (SMarmutBis).
 
-Formalized by `MetaMathlibExt.shadowMarkoffMutate`, a definition declared in [WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html#shadow-markoff-mutate).
+Formalized by `MetaMathlibExt.shadowMarkoffMutate`, a definition declared in [WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html#shadow-markoff-mutate).
 
 ## Initial triple of a shadow Markoff tree
 
@@ -39,7 +39,7 @@ $y = (\alpha, \beta, \gamma) \in \mathbb{Q}^3$.
 
 - Nathan Bonin, *Conditions of Positivity on a Shadow Markoff Tree*, Journal of Integer Sequences 27 (2024), Article 24.8.3, Section 1, equation (InitTrip).
 
-Formalized by `MetaMathlibExt.shadowMarkoffRoot`, a definition declared in [WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html#shadow-markoff-root).
+Formalized by `MetaMathlibExt.shadowMarkoffRoot`, a definition declared in [WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html#shadow-markoff-root).
 
 ## Lower nodes of a shadow Markoff tree
 
@@ -59,7 +59,7 @@ are the nodes of the tree below the paper's $(1, 1, 2)$.
 
 - Nathan Bonin, *Conditions of Positivity on a Shadow Markoff Tree*, Journal of Integer Sequences 27 (2024), Article 24.8.3, Section 2 (the classical Markoff tree: "The initial triple `(1,1,1)` is the root of the tree. It is followed by `(1,1,2)` and `(1,2,5)`. After that, any mutation is allowed.") and Section 4.
 
-Formalized by `MetaMathlibExt.ShadowMarkoffTreeNode`, an inductive type declared in [WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html#shadow-markoff-tree-node).
+Formalized by `MetaMathlibExt.ShadowMarkoffTreeNode`, an inductive type declared in [WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html#shadow-markoff-tree-node).
 
 ## Shadow Markoff tree
 
@@ -73,7 +73,7 @@ of $v$.
 
 - Nathan Bonin, *Conditions of Positivity on a Shadow Markoff Tree*, Journal of Integer Sequences 27 (2024), Article 24.8.3, Sections 2 and 4.
 
-Formalized by `MetaMathlibExt.shadowMarkoffTree`, a definition declared in [WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html#shadow-markoff-tree).
+Formalized by `MetaMathlibExt.shadowMarkoffTree`, a definition declared in [WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html#shadow-markoff-tree).
 
 ## The first two mutations in the tree of the vertex $(0:0:1)$
 
@@ -91,7 +91,7 @@ These match the labels $2\ 2$ and $5\ 10$ of the paper's figure.
 
 - Nathan Bonin, *Conditions of Positivity on a Shadow Markoff Tree*, Journal of Integer Sequences 27 (2024), Article 24.8.3, Section 4.1 (the tree of the vertex `(0:0:1)`).
 
-Formalized by `MetaMathlibExt.shadowMarkoffMutate_vertex_001`, a theorem declared in [WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html#shadow-markoff-mutate-vertex-001).
+Formalized by `MetaMathlibExt.shadowMarkoffMutate_vertex_001`, a theorem declared in [WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html#shadow-markoff-mutate-vertex-001).
 
 ## Nonnegativity on a shadow Markoff tree is governed by finitely many points
 
@@ -111,7 +111,7 @@ statement above asserts only that some finite set $V$ exists.
 
 - Nathan Bonin, *Conditions of Positivity on a Shadow Markoff Tree*, Journal of Integer Sequences 27 (2024), Article 24.8.3, Theorem 2 (`jis-2024-24.8.3-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.exists_polygon_shadowMarkoffTree_nonneg_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html#exists-polygon-shadow-markoff-tree-nonne).
+Stated but not proved: `MetaMathlibExt.exists_polygon_shadowMarkoffTree_nonneg_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html#exists-polygon-shadow-markoff-tree-nonne).
 
 ## Shadow parts equal classical parts when $v = (1, 1, 1)$
 
@@ -126,7 +126,7 @@ So the shadow parts of this tree reproduce the classical Markoff tree.
 
 - Nathan Bonin, *Conditions of Positivity on a Shadow Markoff Tree*, Journal of Integer Sequences 27 (2024), Article 24.8.3, Lemma 3 (`jis-2024-24.8.3-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.shadowMarkoffTree_one_shadow_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html#shadow-markoff-tree-one-shadow-eq).
+Stated but not proved: `MetaMathlibExt.shadowMarkoffTree_one_shadow_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ShadowMarkoffTreeWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html#shadow-markoff-tree-one-shadow-eq).
 
 ## Depends on
 
@@ -135,4 +135,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Shadow Markov triples](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/shadow-markov-triples)

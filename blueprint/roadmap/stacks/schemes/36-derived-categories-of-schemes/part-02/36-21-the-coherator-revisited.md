@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Duality.Coherator.isLeftAdjoint_quasiCoherentι, Stacks.Duality.Coherator.exists_isTriangulated_rightAdjoint_quasiCoherentι, Stacks.Duality.coheratorDerivedPushforwardIso, Stacks.Duality.coheratorDerivedPushforwardIsoOfQcqs, Stacks.Duality.Coherator.mayerVietorisTriangle, Stacks.Duality.Coherator.mayerVietorisTriangle_distinguished, Stacks.Duality.Coherator.exists_distTriang_rightAdjoint_quasiCoherentι, Stacks.Duality.Coherator.exists_coherator_distTriang
+lean: Stacks.Duality.Coherator.isLeftAdjoint_quasiCoherentι, Stacks.Duality.Coherator.exists_isTriangulated_rightAdjoint_quasiCoherentι, Stacks.Duality.coheratorDerivedPushforwardIso, Stacks.Duality.coheratorDerivedPushforwardIsoOfQcqs, Stacks.Duality.Coherator.mayerVietorisTriangle_mem_distTriang, Stacks.Duality.Coherator.mayerVietorisTriangle_rightAdjoint_mem_distTriang, Stacks.Duality.Coherator.exists_isGE_isLE_coherator_obj_of_qcqs, AlgebraicGeometry.isZero_cohomology_of_isDerivedLimit_single_of_isAffineOpen
 statement: formalized
 proof: formalized
 ---
 
 # 36.21 The coherator revisited
 
-Section 36.21 of the Stacks Project, [Tag 0CQZ](https://stacks.math.columbia.edu/tag/0CQZ). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.21 of the Stacks Project, [Tag 0CQZ](https://stacks.math.columbia.edu/tag/0CQZ). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CR0, a lemma
 
 [Tag 0CR0](https://stacks.math.columbia.edu/tag/0CR0) in the Stacks Project.
 
-**`Stacks.Duality.Coherator.isLeftAdjoint_quasiCoherentι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QcqsCoherator.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QcqsCoherator.lean#L183).
+**`Stacks.Duality.Coherator.isLeftAdjoint_quasiCoherentι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QcqsCoherator.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QcqsCoherator.lean#L183).
 
 > Let `X` be a quasi-compact and quasi-separated scheme. The inclusion functor
 > `D_QCoh(𝒪_X) ⥤ D(𝒪_X)` has a right adjoint `DQ_X`.
@@ -23,7 +23,7 @@ Section 36.21 of the Stacks Project, [Tag 0CQZ](https://stacks.math.columbia.edu
 theorem isLeftAdjoint_quasiCoherentι : (quasiCoherentι X).IsLeftAdjoint
 ```
 
-**`Stacks.Duality.Coherator.exists_isTriangulated_rightAdjoint_quasiCoherentι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QcqsCoherator.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QcqsCoherator.lean#L190). The attribute's comment: “the coherator is exact”.
+**`Stacks.Duality.Coherator.exists_isTriangulated_rightAdjoint_quasiCoherentι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QcqsCoherator.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QcqsCoherator.lean#L190). The attribute's comment: “the coherator is exact”.
 
 > For a quasi-compact quasi-separated scheme `X` the inclusion `D_QCoh(𝒪_X) ⥤ D(𝒪_X)` has a
 > right adjoint `DQ_X` together with a `Functor.CommShift ℤ` structure making the adjunction
@@ -39,7 +39,7 @@ theorem exists_isTriangulated_rightAdjoint_quasiCoherentι :
 
 [Tag 0CR1](https://stacks.math.columbia.edu/tag/0CR1) in the Stacks Project.
 
-**`Stacks.Duality.coheratorDerivedPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DerivedPushforwardCommutation.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DerivedPushforwardCommutation.lean#L132).
+**`Stacks.Duality.coheratorDerivedPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DerivedPushforwardCommutation.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DerivedPushforwardCommutation.lean#L132).
 
 > **Derived direct image commutes with the coherator.** Let `f : X ⟶ Y` be a morphism of
 > schemes along which `Rf_*` preserves quasi-coherence of cohomology — as it does whenever `f` is
@@ -55,7 +55,7 @@ def coheratorDerivedPushforwardIso :
     DQX ⋙ quasiCoherentDerivedPushforward f hpush ≅ derivedPushforward f ⋙ DQY
 ```
 
-**`Stacks.Duality.coheratorDerivedPushforwardIsoOfQcqs`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DerivedPushforwardCommutationQcqs.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DerivedPushforwardCommutationQcqs.lean#L63).
+**`Stacks.Duality.coheratorDerivedPushforwardIsoOfQcqs`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DerivedPushforwardCommutationQcqs.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DerivedPushforwardCommutationQcqs.lean#L63).
 
 > Derived direct image commutes with the coherator. Let `f : X ⟶ Y` be a quasi-compact and
 > quasi-separated morphism of schemes and suppose the inclusions `D_QCoh ⥤ D` admit right adjoints
@@ -80,123 +80,77 @@ def coheratorDerivedPushforwardIsoOfQcqs :
 
 [Tag 0CR2](https://stacks.math.columbia.edu/tag/0CR2) in the Stacks Project.
 
-**`Stacks.Duality.Coherator.mayerVietorisTriangle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/MayerVietorisTriangle.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/MayerVietorisTriangle.lean#L186). The attribute's comment: “the canonical triangle, as data”.
+**`Stacks.Duality.Coherator.mayerVietorisTriangle_mem_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/MayerVietorisTriangle.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/MayerVietorisTriangle.lean#L288). The attribute's comment: “the canonical triangle: `DQ_X` of the Mayer--Vietoris triangle of Tag 08BV with its maps, through the identifications of Tag 0CR1, for coherators given as right adjoints”.
 
-> The canonical triangle
+> **[Stacks, Tag 0CR2].** Let `X` be a quasi-compact and quasi-separated scheme, let
+> `X = U ∪ V` with `U` and `V` quasi-compact open, and let `DQ_X`, `DQ_U`, `DQ_V`, `DQ_{U ∩ V}` be
+> coherators — right adjoints of the inclusions `D_QCoh ⥤ D`. Then for every object `K` of
+> `D(𝒪_X)` the canonical triangle
 >
 > `DQ_X(K) ⟶ Rj_{U,*}DQ_U(K|_U) ⊕ Rj_{V,*}DQ_V(K|_V) ⟶ Rj_{U ∩ V,*}DQ_{U ∩ V}(K|_{U ∩ V}) ⟶`
 >
-> attached to a scheme `X`, two opens `U`, `V` of `X`, coherators `DQ_X`, `DQ_U`, `DQ_V`,
-> `DQ_{U ∩ V}` with `DQ_X` commuting with the shift, an object `K` of `D(𝒪_X)`, and the last two maps
-> `mor₂`, `mor₃` of the Mayer--Vietoris triangle of [Stacks, Tag 08BV] for the cover `X = U ∪ V`.
->
-> It is the image under `DQ_X` of that Mayer--Vietoris triangle, conjugated by
-> `Stacks.Duality.Coherator.mayerVietorisMiddleIso` and
-> `Stacks.Duality.Coherator.mayerVietorisThirdIso`: the first map is `DQ_X` of the canonical
-> `biprod.lift` of the two units of `j_W^* ⊣ Rj_{W,*}` followed by the middle identification, the
-> second is `DQ_X(mor₂)` read through both identifications, and the third is `DQ_X(mor₃)` read
-> through the third identification and the commutation of `DQ_X` with the shift.
+> is distinguished in `D_QCoh(𝒪_X)`. The triangle is `DQ_X` applied to the Mayer--Vietoris
+> triangle `Stacks.Duality.Coherator.mayerVietorisDerivedTriangle` of [Stacks, Tag 08BV] (the pair
+> of units, the difference of the restriction maps `Stacks.Duality.Coherator.restrictPushforwardRes`,
+> and the connecting map `Stacks.Duality.Coherator.mayerVietorisDerivedδ`), read through the three
+> identifications `DQ_X ∘ Rj_{W,*} ≅ Rj_{W,*} ∘ DQ_W` of [Stacks, Tag 0CR1]; the shift structure
+> of `DQ_X` is the one it inherits as a right adjoint of the exact inclusion.
 
 ```lean
-def mayerVietorisTriangle [DQX.CommShift ℤ]
-    (mor₂ : restrictPushforward U K ⊞ restrictPushforward V K ⟶ restrictPushforward (U ⊓ V) K)
-    (mor₃ : restrictPushforward (U ⊓ V) K ⟶ K⟦(1 : ℤ)⟧) :
-    Triangle (quasiCoherentDerivedCategory X)
+theorem mayerVietorisTriangle_mem_distTriang (hUV : U ⊔ V = ⊤) :
+    letI : DQX.CommShift ℤ := adjX.rightAdjointCommShift ℤ
+    mayerVietorisTriangle U V DQX DQU DQV DQUV adjX adjU adjV adjUV
+        (isQuasicoherent_homology_derivedPushforward_opens U)
+        (isQuasicoherent_homology_derivedPushforward_opens V)
+        (isQuasicoherent_homology_derivedPushforward_opens (U ⊓ V)) K
+        (biprod.desc (restrictPushforwardRes (inf_le_left : U ⊓ V ≤ U) K)
+          (-restrictPushforwardRes (inf_le_right : U ⊓ V ≤ V) K))
+        (mayerVietorisDerivedδ U V hUV K) ∈
+      distTriang (quasiCoherentDerivedCategory X)
 ```
 
-**`Stacks.Duality.Coherator.mayerVietorisTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/MayerVietorisTriangle.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/MayerVietorisTriangle.lean#L242). The attribute's comment: “the distinguished triangle of the tag, over arbitrary coherators”.
-
-> Let `X` be a quasi-compact and quasi-separated scheme, let `X = U ∪ V` with `U` and `V`
-> quasi-compact open, and let `DQ_X`, `DQ_U`, `DQ_V`, `DQ_{U ∩ V}` be coherators — right adjoints of
-> the inclusions `D_QCoh ⥤ D`. Then for every object `K` of `D(𝒪_X)` there is a distinguished
-> triangle
->
-> `DQ_X(K) ⟶ Rj_{U,*}DQ_U(K|_U) ⊕ Rj_{V,*}DQ_V(K|_V) ⟶ Rj_{U ∩ V,*}DQ_{U ∩ V}(K|_{U ∩ V}) ⟶`
->
-> in `D_QCoh(𝒪_X)`.
-
-```lean
-theorem mayerVietorisTriangle_distinguished (hUV : U ⊔ V = ⊤) :
-    ∃ (f : DQX.obj K ⟶
-          coheratorPushforwardOpens U DQU K ⊞ coheratorPushforwardOpens V DQV K)
-      (g : coheratorPushforwardOpens U DQU K ⊞ coheratorPushforwardOpens V DQV K ⟶
-          coheratorPushforwardOpens (U ⊓ V) DQUV K)
-      (h : coheratorPushforwardOpens (U ⊓ V) DQUV K ⟶ (DQX.obj K)⟦(1 : ℤ)⟧),
-      Triangle.mk f g h ∈ distTriang (quasiCoherentDerivedCategory X)
-```
-
-**`Stacks.Duality.Coherator.exists_distTriang_rightAdjoint_quasiCoherentι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/QcqsMayerVietorisTriangle.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/QcqsMayerVietorisTriangle.lean#L118). The attribute's comment: “the distinguished triangle at the coherators of `X`, `U`, `V` and `U ∩ V` supplied by Tag 0CR0”.
+**`Stacks.Duality.Coherator.mayerVietorisTriangle_rightAdjoint_mem_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/QcqsMayerVietorisTriangle.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/QcqsMayerVietorisTriangle.lean#L194). The attribute's comment: “the canonical triangle at the coherators of `X`, `U`, `V` and `U ∩ V` supplied by Tag 0CR0”.
 
 > **[Stacks, Tag 0CR2].** Let `X` be a quasi-compact and quasi-separated scheme covered by two
-> quasi-compact opens, `X = U ∪ V`, and write `DQ_Z` for the coherator of `Z`, the right adjoint of
-> the inclusion `D_QCoh(𝒪_Z) ⥤ D(𝒪_Z)` whose existence for `Z` quasi-compact and quasi-separated is
-> [Stacks, Tag 0CR0] (`Stacks.Duality.Coherator.isLeftAdjoint_quasiCoherentι`). Then for every
-> object `K` of `D(𝒪_X)` there is a distinguished triangle
+> quasi-compact opens, `X = U ∪ V`. By [Stacks, Tag 0CR0] the coherators `DQ_X`, `DQ_U`, `DQ_V`,
+> `DQ_{U ∩ V}` exist — here the right adjoints `(quasiCoherentι Z).rightAdjoint` — and for every
+> object `K` of `D(𝒪_X)` the canonical triangle
 >
 > `DQ_X(K) ⟶ Rj_{U,*}DQ_U(K|_U) ⊕ Rj_{V,*}DQ_V(K|_V) ⟶ Rj_{U ∩ V,*}DQ_{U ∩ V}(K|_{U ∩ V}) ⟶`
 >
-> in `D_QCoh(𝒪_X)`.
->
-> The four coherators are the ones [Stacks, Tag 0CR0] produces at `X`, `U`, `V` and `U ∩ V`: the
-> three opens are quasi-compact — `U ∩ V` because `X` is quasi-separated — and quasi-separated,
-> being opens of a quasi-separated scheme. The triangle is then
-> `Stacks.Duality.Coherator.mayerVietorisTriangle_distinguished` at those coherators.
+> is distinguished in `D_QCoh(𝒪_X)`. The triangle is `DQ_X` applied to the Mayer--Vietoris
+> triangle `Stacks.Duality.Coherator.mayerVietorisDerivedTriangle` of [Stacks, Tag 08BV], read
+> through the identifications of [Stacks, Tag 0CR1]; this is
+> `Stacks.Duality.Coherator.mayerVietorisTriangle_mem_distTriang` at those coherators.
 
 ```lean
-theorem exists_distTriang_rightAdjoint_quasiCoherentι (hUV : U ⊔ V = ⊤)
+theorem mayerVietorisTriangle_rightAdjoint_mem_distTriang (hUV : U ⊔ V = ⊤)
     (K : DerivedCategory X.Modules) :
     letI := isLeftAdjoint_quasiCoherentι X
     letI := isLeftAdjoint_quasiCoherentι U.toScheme
     letI := isLeftAdjoint_quasiCoherentι V.toScheme
     letI := isLeftAdjoint_quasiCoherentι (U ⊓ V).toScheme
-    ∃ (f : (quasiCoherentι X).rightAdjoint.obj K ⟶
-          coheratorPushforwardOpens U (quasiCoherentι U.toScheme).rightAdjoint K ⊞
-            coheratorPushforwardOpens V (quasiCoherentι V.toScheme).rightAdjoint K)
-      (g : coheratorPushforwardOpens U (quasiCoherentι U.toScheme).rightAdjoint K ⊞
-            coheratorPushforwardOpens V (quasiCoherentι V.toScheme).rightAdjoint K ⟶
-          coheratorPushforwardOpens (U ⊓ V) (quasiCoherentι (U ⊓ V).toScheme).rightAdjoint K)
-      (h : coheratorPushforwardOpens (U ⊓ V) (quasiCoherentι (U ⊓ V).toScheme).rightAdjoint K ⟶
-          ((quasiCoherentι X).rightAdjoint.obj K)⟦(1 : ℤ)⟧),
-      Triangle.mk f g h ∈ distTriang (quasiCoherentDerivedCategory X)
-```
-
-**`Stacks.Duality.Coherator.exists_coherator_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/QcqsMayerVietorisTriangle.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/QcqsMayerVietorisTriangle.lean#L156). The attribute's comment: “coherators of the four schemes exist and the triangle of the tag is distinguished for them”.
-
-> **[Stacks, Tag 0CR2], in existential form.** For a quasi-compact quasi-separated scheme `X`
-> covered by two quasi-compact opens, `X = U ∪ V`, there are coherators `DQ_X`, `DQ_U`, `DQ_V`,
-> `DQ_{U ∩ V}` of `X`, `U`, `V` and `U ∩ V` — right adjoints of the inclusions
-> `D_QCoh(𝒪_Z) ⥤ D(𝒪_Z)`, [Stacks, Tag 0CR0] — such that every object `K` of `D(𝒪_X)` sits in a
-> distinguished triangle
->
-> `DQ_X(K) ⟶ Rj_{U,*}DQ_U(K|_U) ⊕ Rj_{V,*}DQ_V(K|_V) ⟶ Rj_{U ∩ V,*}DQ_{U ∩ V}(K|_{U ∩ V}) ⟶`
->
-> in `D_QCoh(𝒪_X)`. A coherator is unique up to a canonical isomorphism, so this is the same
-> assertion as `Stacks.Duality.Coherator.exists_distTriang_rightAdjoint_quasiCoherentι`, read
-> without naming the right adjoints.
-
-```lean
-theorem exists_coherator_distTriang (hUV : U ⊔ V = ⊤) :
-    ∃ (DQX : DerivedCategory X.Modules ⥤ quasiCoherentDerivedCategory X)
-      (DQU : DerivedCategory U.toScheme.Modules ⥤ quasiCoherentDerivedCategory U.toScheme)
-      (DQV : DerivedCategory V.toScheme.Modules ⥤ quasiCoherentDerivedCategory V.toScheme)
-      (DQUV : DerivedCategory (U ⊓ V).toScheme.Modules ⥤
-        quasiCoherentDerivedCategory (U ⊓ V).toScheme)
-      (_ : quasiCoherentι X ⊣ DQX) (_ : quasiCoherentι U.toScheme ⊣ DQU)
-      (_ : quasiCoherentι V.toScheme ⊣ DQV) (_ : quasiCoherentι (U ⊓ V).toScheme ⊣ DQUV),
-      ∀ K : DerivedCategory X.Modules,
-        ∃ (f : DQX.obj K ⟶
-              coheratorPushforwardOpens U DQU K ⊞ coheratorPushforwardOpens V DQV K)
-          (g : coheratorPushforwardOpens U DQU K ⊞ coheratorPushforwardOpens V DQV K ⟶
-              coheratorPushforwardOpens (U ⊓ V) DQUV K)
-          (h : coheratorPushforwardOpens (U ⊓ V) DQUV K ⟶ (DQX.obj K)⟦(1 : ℤ)⟧),
-          Triangle.mk f g h ∈ distTriang (quasiCoherentDerivedCategory X)
+    letI : (quasiCoherentι X).rightAdjoint.CommShift ℤ :=
+      (Adjunction.ofIsLeftAdjoint (quasiCoherentι X)).rightAdjointCommShift ℤ
+    mayerVietorisTriangle U V _ _ _ _
+        (Adjunction.ofIsLeftAdjoint (quasiCoherentι X))
+        (Adjunction.ofIsLeftAdjoint (quasiCoherentι U.toScheme))
+        (Adjunction.ofIsLeftAdjoint (quasiCoherentι V.toScheme))
+        (Adjunction.ofIsLeftAdjoint (quasiCoherentι (U ⊓ V).toScheme))
+        (isQuasicoherent_homology_derivedPushforward_opens U)
+        (isQuasicoherent_homology_derivedPushforward_opens V)
+        (isQuasicoherent_homology_derivedPushforward_opens (U ⊓ V)) K
+        (biprod.desc (restrictPushforwardRes (inf_le_left : U ⊓ V ≤ U) K)
+          (-restrictPushforwardRes (inf_le_right : U ⊓ V ≤ V) K))
+        (mayerVietorisDerivedδ U V hUV K) ∈
+      distTriang (quasiCoherentDerivedCategory X)
 ```
 
 ## Tag 0CSA, a lemma
 
 [Tag 0CSA](https://stacks.math.columbia.edu/tag/0CSA) in the Stacks Project.
 
-**`Stacks.Duality.Coherator.exists_isGE_isLE_coherator_obj_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/UnconditionalBoundedness.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/UnconditionalBoundedness.lean#L401).
+**`Stacks.Duality.Coherator.exists_isGE_isLE_coherator_obj_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/UnconditionalBoundedness.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/UnconditionalBoundedness.lean#L401).
 
 > **[Stacks, Tag 0CSA].** Let `X` be a quasi-compact and quasi-separated scheme and let
 > `DQ_X : D(𝒪_X) ⥤ D_QCoh(𝒪_X)` be a coherator of `X`, i.e. a right adjoint of the inclusion
@@ -227,7 +181,7 @@ theorem exists_isGE_isLE_coherator_obj_of_qcqs (X : Scheme.{u}) [CompactSpace X]
 
 [Tag 0CSB](https://stacks.math.columbia.edu/tag/0CSB) in the Stacks Project.
 
-**`AlgebraicGeometry.isZero_cohomology_of_isDerivedLimit_single_of_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitAffineCohomology.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitAffineCohomology.lean#L110). The attribute's comment: “the cohomology computation on an affine open: H^i(U, R lim 𝓕ₙ) = 0 for i outside [0, 1]”.
+**`AlgebraicGeometry.isZero_cohomology_of_isDerivedLimit_single_of_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitAffineCohomology.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitAffineCohomology.lean#L110). The attribute's comment: “the cohomology computation on an affine open: H^i(U, R lim 𝓕ₙ) = 0 for i outside [0, 1]”.
 
 > **[Stacks, Tag 0CSB].** Let `X` be a scheme, let `(𝓕ₙ)` be an inverse system of
 > quasi-coherent `𝒪_X`-modules and let `L` be a derived limit in `D(𝒪_X)` of the system `(𝓕ₙ)`
@@ -250,7 +204,7 @@ theorem isZero_cohomology_of_isDerivedLimit_single_of_isAffineOpen (X : Scheme.{
       ((derivedSectionsOverObject (schemeOpensRingedSite X) U).obj L))
 ```
 
-**`Stacks.Duality.Coherator.exists_isGE_isLE_coherator_obj_of_isDerivedLimit_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitBounded.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitBounded.lean#L185). The attribute's comment: “the conclusion that the R lim in D\_QCoh(𝒪\_X), i.e. DQ\_X(R lim 𝓕ₙ), lies in D^b\_QCoh(𝒪\_X), for every coherator DQ of X”.
+**`Stacks.Duality.Coherator.exists_isGE_isLE_coherator_obj_of_isDerivedLimit_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitBounded.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitBounded.lean#L185). The attribute's comment: “the conclusion that the R lim in D\_QCoh(𝒪\_X), i.e. DQ\_X(R lim 𝓕ₙ), lies in D^b\_QCoh(𝒪\_X), for every coherator DQ of X”.
 
 > **[Stacks, Tag 0CSB].** Let `X` be a quasi-compact and quasi-separated scheme, let `DQ` be a
 > coherator of `X` and let `L` be a derived limit in `D(𝒪_X)` of an inverse system `(𝓕ₙ)` of
@@ -276,7 +230,7 @@ theorem exists_isGE_isLE_coherator_obj_of_isDerivedLimit_single (X : Scheme.{u})
       ((quasiCoherentι X).obj (DQ.obj L)).IsLE (1 + N)
 ```
 
-**`Stacks.Duality.Coherator.isDerivedLimit_coherator_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitQuasiCoherent.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitQuasiCoherent.lean#L147). The attribute's comment: “the identification DQ\_X(R lim 𝓕ₙ) = (R lim in D\_QCoh(𝒪\_X))(𝓕ₙ), for every coherator DQ of X, i.e. every exact right adjoint of the inclusion; one exists on any quasi-compact quasi-separated scheme by Stacks 0CR0, `Stacks.Duality.Coherator.exists_isTriangulated_rightAdjoint_quasiCoherentι`”.
+**`Stacks.Duality.Coherator.isDerivedLimit_coherator_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitQuasiCoherent.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitQuasiCoherent.lean#L147). The attribute's comment: “the identification DQ\_X(R lim 𝓕ₙ) = (R lim in D\_QCoh(𝒪\_X))(𝓕ₙ), for every coherator DQ of X, i.e. every exact right adjoint of the inclusion; one exists on any quasi-compact quasi-separated scheme by Stacks 0CR0, `Stacks.Duality.Coherator.exists_isTriangulated_rightAdjoint_quasiCoherentι`”.
 
 > **[Stacks, Tag 0CSB].** Let `X` be a scheme and let `DQ` be a right adjoint of the inclusion
 > `D_QCoh(𝒪_X) ⥤ D(𝒪_X)` which makes the adjunction triangulated. If `L` is a derived limit in
@@ -308,4 +262,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.21, Tag 0CQZ](https://stacks.math.columbia.edu/tag/0CQZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

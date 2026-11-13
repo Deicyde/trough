@@ -8,7 +8,7 @@ proof: formalized
 
 # Ramification of cyclotomic extensions
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions/index.html).
 
 ## Without primitive $p$-th roots of unity, every $p$-th root of unity is trivial
 
@@ -18,7 +18,7 @@ with $\eta^p = 1$ equals $1$.
 
 The order of $\eta$ divides the prime $p$, so it is $1$ or $p$, and $p$ is excluded.
 
-Formalized by `pth_root_unity_eq_one_of_no_prim_root`, a theorem declared in [MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions/index.html#pth-root-unity-eq-one-of-no-prim-root).
+Formalized by `pth_root_unity_eq_one_of_no_prim_root`, a theorem declared in [MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions/index.html#pth-root-unity-eq-one-of-no-prim-root).
 
 ## No primitive p-th root in an unramified DVR extension
 
@@ -34,7 +34,7 @@ lies in the maximal ideal, while their product is exactly `p`; hence
 ramification index `1` (for `p = 2` the argument is replaced by the
 observation that `-1` would be a primitive square root in the base field).
 
-Formalized by `no_prim_root_in_unramified_ext_of_prime_spans_maximal_ideal`, a theorem declared in [MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions/index.html#no-prim-root-in-unramified-ext-of-prime).
+Formalized by `no_prim_root_in_unramified_ext_of_prime_spans_maximal_ideal`, a theorem declared in [MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions/index.html#no-prim-root-in-unramified-ext-of-prime).
 
 ## Over a complete base with maximal ideal $(p)$ and no primitive $p$-th root of unity, an index-one extension has no nontrivial $p$-th roots of unity
 
@@ -48,7 +48,7 @@ ramification index of the maximal ideal $\mathfrak m_B$ of $B$ over $\mathfrak m
 $n$ with $\mathfrak m_A B \subseteq \mathfrak m_B^n$) is $1$. If $K$ contains no primitive $p$-th
 root of unity, then every $\eta \in L$ with $\eta^p = 1$ equals $1$.
 
-Formalized by `no_prim_pth_root_in_unramified_ext_of_prime_spans_maximal_ideal`, a theorem declared in [MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions/index.html#no-prim-pth-root-in-unramified-ext-of-pr).
+Formalized by `no_prim_pth_root_in_unramified_ext_of_prime_spans_maximal_ideal`, a theorem declared in [MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions/index.html#no-prim-pth-root-in-unramified-ext-of-pr).
 
 ## Over a complete base with maximal ideal $(p)$, the $p$-th roots of unity in an index-one extension come from the base
 
@@ -62,7 +62,7 @@ $\mathfrak m_B$ of $B$ over $\mathfrak m_A$ (the largest $n$ with
 $\mathfrak m_A B \subseteq \mathfrak m_B^n$) is $1$. Then every $\eta \in L$ with $\eta^p = 1$ is
 the image of an element of $K$.
 
-Formalized by `unramified_pth_root_in_base_of_prime_spans_maximal_ideal`, a theorem declared in [MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions/index.html#unramified-pth-root-in-base-of-prime-spa).
+Formalized by `unramified_pth_root_in_base_of_prime_spans_maximal_ideal`, a theorem declared in [MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions/index.html#unramified-pth-root-in-base-of-prime-spa).
 
 ## Over a complete base with maximal ideal $(p)$ and no nontrivial $p$-th roots of unity, cyclotomic extensions of order divisible by $p$ ramify
 
@@ -80,7 +80,7 @@ $\mathfrak m_A$ (the largest $n$ with $\mathfrak m_A B \subseteq \mathfrak m_B^n
 
 - ATLAS NumberTheoryI, Section 10.2, Corollary 10.18, a special case of the ramified implication: the source does not assume $\mathfrak m_A = (p)$, and the converse is not proved.
 
-Formalized by `dvr_pth_root_ramified_of_prime_spans_maximal_ideal`, a theorem declared in [MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions/index.html#dvr-pth-root-ramified-of-prime-spans-max).
+Formalized by `dvr_pth_root_ramified_of_prime_spans_maximal_ideal`, a theorem declared in [MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions/index.html#dvr-pth-root-ramified-of-prime-spans-max).
 
 ## Depends on
 
@@ -89,4 +89,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ramification of cyclotomic extensions](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/ramification/ramification-of-cyclotomic-extensions)

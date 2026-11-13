@@ -8,13 +8,13 @@ proof: formalized
 
 # 71.10 Meromorphic functions and sections
 
-Section 71.10 of the Stacks Project, [Tag 0EN2](https://stacks.math.columbia.edu/tag/0EN2). 11 tags here are carried by 32 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 71.10 of the Stacks Project, [Tag 0EN2](https://stacks.math.columbia.edu/tag/0EN2). 11 tags here are carried by 32 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EN3, a definition
 
 [Tag 0EN3](https://stacks.math.columbia.edu/tag/0EN3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.meromorphicFunctionSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctions.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctions.lean#L214). The attribute's comment: “the sheaf of meromorphic functions”.
+**`AlgebraicGeometry.Space.meromorphicFunctionSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctions.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctions.lean#L214). The attribute's comment: “the sheaf of meromorphic functions”.
 
 > **Stacks 0EN3.** The *sheaf of meromorphic functions* `𝒦_F` on the algebraic space `F`: the
 > sheaf on the small étale site of `F` associated to the presheaf of sectionwise localizations
@@ -25,7 +25,7 @@ noncomputable def meromorphicFunctionSheaf (hF : IsAlgebraicSpace B S hS F) :
     Sheaf (SmallEtale.topology B S hS F) CommRingCat.{u}
 ```
 
-**`AlgebraicGeometry.Space.MeromorphicFunction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctions.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctions.lean#L227). The attribute's comment: “meromorphic functions”.
+**`AlgebraicGeometry.Space.MeromorphicFunction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctions.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctions.lean#L227). The attribute's comment: “meromorphic functions”.
 
 > **Stacks 0EN3.** A *meromorphic function* on the algebraic space `F` is a global section of
 > its sheaf of meromorphic functions `𝒦_F`.
@@ -38,7 +38,7 @@ abbrev MeromorphicFunction (hF : IsAlgebraicSpace B S hS F)
 
 [Tag 0EN4](https://stacks.math.columbia.edu/tag/0EN4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRegularSection_iff_mem_nonZeroDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctions.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctions.lean#L336).
+**`AlgebraicGeometry.Space.isRegularSection_iff_mem_nonZeroDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctions.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctions.lean#L336).
 
 > **Stacks 0EN4.** Over an affine étale chart `U` of the algebraic space `F` the regular
 > sections of `𝒪_F` are exactly the nonzerodivisors of the ring of sections `𝒪_F(U)`.
@@ -54,7 +54,7 @@ theorem isRegularSection_iff_mem_nonZeroDivisors (U : SmallEtale B S hS F)
 
 [Tag 0EN5](https://stacks.math.columbia.edu/tag/0EN5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.meromorphicSectionSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSections.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSections.lean#L148). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.meromorphicSectionSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSections.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSections.lean#L148). The attribute's comment: “part (1)”.
 
 > The sheaf `𝒦_F(M)` of *meromorphic sections* of a sheaf of `𝒪_F`-modules `M`: the extension
 > of scalars of `M` along `𝒪_F ⟶ 𝒦_F`, sheafified.
@@ -66,7 +66,7 @@ noncomputable abbrev meromorphicSectionSheaf (hF : IsAlgebraicSpace B S hS F)
       (Stacks.SheafOfModules.Tensor.ringSheaf (meromorphicRingedSite B S hS F hF).O)
 ```
 
-**`AlgebraicGeometry.Space.MeromorphicSection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSections.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSections.lean#L161). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.MeromorphicSection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSections.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSections.lean#L161). The attribute's comment: “part (2)”.
 
 > A *meromorphic section* of a sheaf of `𝒪_F`-modules `M` is a global section of the sheaf
 > `𝒦_F(M)` of meromorphic sections of `M`.
@@ -80,7 +80,7 @@ noncomputable abbrev MeromorphicSection (hF : IsAlgebraicSpace B S hS F)
 
 [Tag 0EN6](https://stacks.math.columbia.edu/tag/0EN6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFractionRing_meromorphicFunctionSheaf_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicQuasicoherent.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicQuasicoherent.lean#L343). The attribute's comment: “part (2): over an affine object of the small étale site the ring of meromorphic functions is the total ring of fractions of the ring of sections”.
+**`AlgebraicGeometry.Space.isFractionRing_meromorphicFunctionSheaf_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicQuasicoherent.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicQuasicoherent.lean#L342). The attribute's comment: “part (2): over an affine object of the small étale site the ring of meromorphic functions is the total ring of fractions of the ring of sections”.
 
 > For an affine object `U` of the small étale site of an algebraic
 > space `X` satisfying hypotheses (a) and (b), the ring `𝒦_X(U)` of meromorphic functions over `U`
@@ -98,7 +98,7 @@ theorem isFractionRing_meromorphicFunctionSheaf_obj
       ((meromorphicFunctionSheaf B S hS X.1 X.2).obj.obj (op U))
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherent_meromorphicAlgebraSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicQuasicoherent.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicQuasicoherent.lean#L389). The attribute's comment: “part (1): the sheaf of meromorphic functions is a quasi-coherent sheaf of algebras”.
+**`AlgebraicGeometry.Space.isQuasicoherent_meromorphicAlgebraSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicQuasicoherent.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicQuasicoherent.lean#L388). The attribute's comment: “part (1): the sheaf of meromorphic functions is a quasi-coherent sheaf of algebras”.
 
 > For an algebraic space `X` satisfying hypotheses (a) and (b), the
 > sheaf of meromorphic functions `𝒦_X` is a quasi-coherent sheaf of `𝒪_X`-algebras.
@@ -110,7 +110,7 @@ theorem isQuasicoherent_meromorphicAlgebraSheaf
     (meromorphicAlgebraSheaf B S hS X).IsQuasicoherent
 ```
 
-**`AlgebraicGeometry.Space.regularSectionsStalk_eq_nonZeroDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicStalks.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicStalks.lean#L408). The attribute's comment: “part (3): for a geometric point the germs of regular sections are exactly the nonzerodivisors of the étale local ring”.
+**`AlgebraicGeometry.Space.regularSectionsStalk_eq_nonZeroDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicStalks.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicStalks.lean#L408). The attribute's comment: “part (3): for a geometric point the germs of regular sections are exactly the nonzerodivisors of the étale local ring”.
 
 > **Stacks 0EN6, part (3).** Let `X` be an algebraic space over a scheme `S` such that every
 > weakly associated point of `X` is a point of codimension `0` and every quasi-compact open of
@@ -126,7 +126,7 @@ theorem regularSectionsStalk_eq_nonZeroDivisors (X : AlgebraicSpaces B S hS)
     regularSectionsStalk x = (etaleLocalRing B S hS X.1 x)⁰
 ```
 
-**`AlgebraicGeometry.Space.isFractionRing_meromorphicStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicStalks.lean, line 608](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicStalks.lean#L608). The attribute's comment: “part (4): for a geometric point the stalk of the sheaf of meromorphic functions is the total ring of fractions of the étale local ring”.
+**`AlgebraicGeometry.Space.isFractionRing_meromorphicStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicStalks.lean, line 608](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicStalks.lean#L608). The attribute's comment: “part (4): for a geometric point the stalk of the sheaf of meromorphic functions is the total ring of fractions of the étale local ring”.
 
 > **Stacks 0EN6, part (4).** Let `X` be an algebraic space over a scheme `S` such that every
 > weakly associated point of `X` is a point of codimension `0` and every quasi-compact open of
@@ -151,7 +151,7 @@ theorem isFractionRing_meromorphicStalk
 
 [Tag 0EN7](https://stacks.math.columbia.edu/tag/0EN7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.nonempty_meromorphicFunctionSheaf_iso_representedMeromorphicAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicRepresentableComparison.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicRepresentableComparison.lean#L373).
+**`AlgebraicGeometry.Space.nonempty_meromorphicFunctionSheaf_iso_representedMeromorphicAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicRepresentableComparison.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicRepresentableComparison.lean#L373).
 
 > **Stacks 0EN7.**  Let `X` be an algebraic space over `S` all of whose weakly associated
 > points are points of codimension `0` and which satisfies the condition of Stacks 0BB1, and let
@@ -172,7 +172,7 @@ public theorem nonempty_meromorphicFunctionSheaf_iso_representedMeromorphicAlgeb
 
 [Tag 0EN8](https://stacks.math.columbia.edu/tag/0EN8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PullbacksMeromorphicSections`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean#L145).
+**`AlgebraicGeometry.Space.PullbacksMeromorphicSections`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean#L145).
 
 > **Stacks 0EN8.** *Pullbacks of meromorphic functions are defined for `f : X ⟶ Y`* when, for
 > every commuting square of an étale chart `U` of `X` over an étale chart `V` of `Y`, the pullback
@@ -187,7 +187,7 @@ abbrev PullbacksMeromorphicSections {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u
 
 [Tag 0EN9](https://stacks.math.columbia.edu/tag/0EN9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.pullbacksMeromorphicSections_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean#L156). The attribute's comment: “part (2): flat”. References: EGA IV (20.3.13), “flat: pullback defined”.
+**`AlgebraicGeometry.Space.pullbacksMeromorphicSections_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean#L156). The attribute's comment: “part (2): flat”. References: EGA IV (20.3.13), “flat: pullback defined”.
 
 > **Stacks 0EN9, part (2).** Pullbacks of meromorphic functions are defined along a flat
 > morphism `f : X ⟶ Y`: the morphism of schemes underlying a commuting square of étale charts of
@@ -199,7 +199,7 @@ theorem pullbacksMeromorphicSections_of_flat {X Y : (BigFppfOver B S hS)ᵒᵖ �
     (hf : IsFlat B S hS f) : PullbacksMeromorphicSections B S hS f
 ```
 
-**`AlgebraicGeometry.Space.pullbacksMeromorphicSections_of_mapsTo_codimensionZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackWeaklyAssociated.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackWeaklyAssociated.lean#L70). The attribute's comment: “part (1): weakly associated points of X mapped to codimension-zero points of Y”.
+**`AlgebraicGeometry.Space.pullbacksMeromorphicSections_of_mapsTo_codimensionZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackWeaklyAssociated.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackWeaklyAssociated.lean#L70). The attribute's comment: “part (1): weakly associated points of X mapped to codimension-zero points of Y”.
 
 > **Stacks 0EN9, part (1).** Pullbacks of meromorphic functions are defined along a morphism
 > `f : X ⟶ Y` of algebraic spaces carrying every weakly associated point of `X` to a point of
@@ -222,7 +222,7 @@ theorem pullbacksMeromorphicSections_of_mapsTo_codimensionZero
 
 [Tag 0ENA](https://stacks.math.columbia.edu/tag/0ENA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_codimensionZeroPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CodimensionZeroSchematicLocus.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CodimensionZeroSchematicLocus.lean#L361). The attribute's comment: “the assertion of the statement that the construction makes sense: the set of codimension-zero points is contained in the schematic locus, so that the local rings and the morphisms j\_η are defined”.
+**`AlgebraicGeometry.Space.exists_codimensionZeroPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CodimensionZeroSchematicLocus.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CodimensionZeroSchematicLocus.lean#L361). The attribute's comment: “the assertion of the statement that the construction makes sense: the set of codimension-zero points is contained in the schematic locus, so that the local rings and the morphisms j\_η are defined”.
 
 > **Stacks 0ENA, the assertion that the construction makes sense.** Let `X` be an algebraic
 > space over a scheme `S` satisfying hypotheses (b) and (c) of Stacks 0ENA — the equivalent
@@ -243,7 +243,7 @@ theorem exists_codimensionZeroPresentation
     Nonempty (CodimensionZeroPresentation B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.codimensionZero_mem_schematicLocus_of_hasLocallyFiniteIrreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CodimensionZeroSchematicLocus.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CodimensionZeroSchematicLocus.lean#L387). The attribute's comment: “the assertion of the statement that the construction makes sense, read on the schematic locus of Tag 03JH”.
+**`AlgebraicGeometry.Space.codimensionZero_mem_schematicLocus_of_hasLocallyFiniteIrreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CodimensionZeroSchematicLocus.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CodimensionZeroSchematicLocus.lean#L387). The attribute's comment: “the assertion of the statement that the construction makes sense, read on the schematic locus of Tag 03JH”.
 
 > **Stacks 0ENA, the assertion that the construction makes sense**, stated with the
 > schematic locus of Stacks 03JH: under hypotheses (b) and (c) of Stacks 0ENA every point of
@@ -262,7 +262,7 @@ theorem codimensionZero_mem_schematicLocus_of_hasLocallyFiniteIrreducibleCompone
       (schematicLocus B S hS X).ι)
 ```
 
-**`AlgebraicGeometry.Space.CodimensionZeroPresentation.exists_codimensionZeroPresentation_isIso_genericPointComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicCodimensionZeroProduct.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicCodimensionZeroProduct.lean#L373). The attribute's comment: “the first conclusion: the sheaf of meromorphic functions is the direct sum, and equally the product, over the codimension-zero points of the direct images of the local rings there, through the canonical comparisons”.
+**`AlgebraicGeometry.Space.CodimensionZeroPresentation.exists_codimensionZeroPresentation_isIso_genericPointComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicCodimensionZeroProduct.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicCodimensionZeroProduct.lean#L373). The attribute's comment: “the first conclusion: the sheaf of meromorphic functions is the direct sum, and equally the product, over the codimension-zero points of the direct images of the local rings there, through the canonical comparisons”.
 
 > **Stacks 0ENA, the first conclusion.** Let `X` be an algebraic space over a scheme `S` such
 > that
@@ -300,7 +300,7 @@ theorem exists_codimensionZeroPresentation_isIso_genericPointComparison
           P.genericPointModule η.2)
 ```
 
-**`AlgebraicGeometry.Space.CodimensionZeroPresentation.exists_codimensionZeroPresentation_isIso_meromorphicSectionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicCodimensionZeroSectionProduct.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicCodimensionZeroSectionProduct.lean#L380). The attribute's comment: “the second conclusion: for every quasi-coherent module the sheaf of its meromorphic sections is the direct sum, and equally the product, over the codimension-zero points of the direct images of its inverse images there, through the canonical comparisons”.
+**`AlgebraicGeometry.Space.CodimensionZeroPresentation.exists_codimensionZeroPresentation_isIso_meromorphicSectionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicCodimensionZeroSectionProduct.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicCodimensionZeroSectionProduct.lean#L380). The attribute's comment: “the second conclusion: for every quasi-coherent module the sheaf of its meromorphic sections is the direct sum, and equally the product, over the codimension-zero points of the direct images of its inverse images there, through the canonical comparisons”.
 
 > **Stacks 0ENA, the second conclusion.** Let `X` be an algebraic space over a scheme `S` such
 > that
@@ -341,7 +341,7 @@ theorem exists_codimensionZeroPresentation_isIso_meromorphicSectionComparison
               (P.genericPointMeromorphicModule η.2 F))
 ```
 
-**`AlgebraicGeometry.Space.exists_ringEquiv_rationalFunctions_meromorphicFunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpaceRationalFunctionsMeromorphic.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpaceRationalFunctionsMeromorphic.lean#L475). The attribute's comment: “the third conclusion: the ring of rational functions of the space is its ring of meromorphic functions, R(X) = Γ(X, 𝒦\_X), through the comparison that reads a rational function regular on a dense open subspace as a meromorphic function on every étale chart lying in that subspace”. References: EGA IV (20.1.13), “Algebraic clause only”.
+**`AlgebraicGeometry.Space.exists_ringEquiv_rationalFunctions_meromorphicFunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpaceRationalFunctionsMeromorphic.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpaceRationalFunctionsMeromorphic.lean#L475). The attribute's comment: “the third conclusion: the ring of rational functions of the space is its ring of meromorphic functions, R(X) = Γ(X, 𝒦\_X), through the comparison that reads a rational function regular on a dense open subspace as a meromorphic function on every étale chart lying in that subspace”. References: EGA IV (20.1.13), “Algebraic clause only”.
 
 > **Stacks 0ENA, the third conclusion.**  Let `X` be an algebraic space over a scheme `S`
 > such that (a) every weakly associated point of `X` has codimension `0`, (b) the irreducible
@@ -379,7 +379,7 @@ theorem exists_ringEquiv_rationalFunctions_meromorphicFunction
 
 [Tag 0ENB](https://stacks.math.columbia.edu/tag/0ENB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsRegularMeromorphicSection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSections.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSections.lean#L168). References: EGA IV (20.1.8), “regular section defn”.
+**`AlgebraicGeometry.Space.IsRegularMeromorphicSection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSections.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSections.lean#L168). References: EGA IV (20.1.8), “regular section defn”.
 
 > A meromorphic section `s` of a sheaf of `𝒪_F`-modules `L` is *regular* when the induced map
 > `𝒦_F ⟶ 𝒦_F(L)`, multiplication by `s`, is injective; this is tested on every étale chart of `F`.
@@ -394,7 +394,7 @@ noncomputable abbrev IsRegularMeromorphicSection (hF : IsAlgebraicSpace B S hS F
 
 [Tag 0ENC](https://stacks.math.columbia.edu/tag/0ENC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRegularMeromorphicSection_pullbackMeromorphicSectionOfGood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardOfDivisorPullback.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardOfDivisorPullback.lean#L149). The attribute's comment: “part (2) in the vocabulary of this chapter: the pullback f^*s of a regular meromorphic section of an invertible sheaf on a good algebraic space is regular”.
+**`AlgebraicGeometry.Space.isRegularMeromorphicSection_pullbackMeromorphicSectionOfGood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardOfDivisorPullback.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardOfDivisorPullback.lean#L149). The attribute's comment: “part (2) in the vocabulary of this chapter: the pullback f^*s of a regular meromorphic section of an invertible sheaf on a good algebraic space is regular”.
 
 > **Stacks 0ENC, part (2), in this chapter's vocabulary.** The pullback `f^*s` of a nonzero —
 > that is, regular — meromorphic section of an invertible `𝒪_Y`-module `ℒ` is again a nonzero
@@ -409,7 +409,7 @@ theorem isRegularMeromorphicSection_pullbackMeromorphicSectionOfGood
       (pullbackMeromorphicSectionOfGood D sX hX sY hY L σ hPull)
 ```
 
-**`AlgebraicGeometry.Space.chartMeromorphicFunctionPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctionsChartPullback.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctionsChartPullback.lean#L140). The attribute's comment: “part (1), chartwise on the SHEAVES of meromorphic functions: the fraction rule a/b ↦ f♯a/f♯b over an étale chart diagram as a homomorphism 𝒦\_Y(V) ⟶ 𝒦\_X(U), where AlgebraicGeometry.Space.chartPullbackMeromorphicFunctions is the same rule on the presheaves of sectionwise localizations. This is the coefficient rule for part (1) read through the second of the two descriptions of 𝒦(F) in Stacks 0EN5, the sheafification of F ⊗\_𝒪 𝒦, which is the one AlgebraicGeometry.Space.MeromorphicSection and hence part (2) use. The global map Γ(Y, 𝒦\_Y(F)) ⟶ Γ(X, 𝒦\_X(f^*F)) of part (1) is asserted for the first description by AlgebraicGeometry.Space.pullbackSheafifiedRegularSections, and for the second by AlgebraicGeometry.Space.pullbackMeromorphicSection, which is built over this rule. Part (2) is proved for an invertible module by AlgebraicGeometry.Space.isRegularMeromorphicSection\_pullbackMeromorphicSection, over that same description, and is not asserted here”.
+**`AlgebraicGeometry.Space.chartMeromorphicFunctionPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctionsChartPullback.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicFunctionsChartPullback.lean#L140). The attribute's comment: “part (1), chartwise on the SHEAVES of meromorphic functions: the fraction rule a/b ↦ f♯a/f♯b over an étale chart diagram as a homomorphism 𝒦\_Y(V) ⟶ 𝒦\_X(U), where AlgebraicGeometry.Space.chartPullbackMeromorphicFunctions is the same rule on the presheaves of sectionwise localizations. This is the coefficient rule for part (1) read through the second of the two descriptions of 𝒦(F) in Stacks 0EN5, the sheafification of F ⊗\_𝒪 𝒦, which is the one AlgebraicGeometry.Space.MeromorphicSection and hence part (2) use. The global map Γ(Y, 𝒦\_Y(F)) ⟶ Γ(X, 𝒦\_X(f^*F)) of part (1) is asserted for the first description by AlgebraicGeometry.Space.pullbackSheafifiedRegularSections, and for the second by AlgebraicGeometry.Space.pullbackMeromorphicSection, which is built over this rule. Part (2) is proved for an invertible module by AlgebraicGeometry.Space.isRegularMeromorphicSection\_pullbackMeromorphicSection, over that same description, and is not asserted here”.
 
 > **The chartwise pullback of meromorphic functions on the sheaves.**  Over a commuting square
 > of étale charts `U` of `X` above `V` of `Y` the comparison `𝒦_Y ⟶ f_*𝒦_X` projects to a
@@ -421,7 +421,7 @@ noncomputable def chartMeromorphicFunctionPullback (d : ChartDiagram B S hS X.1 
       (meromorphicFunctionSheaf B S hS X.1 X.2).obj.obj (op d.U)
 ```
 
-**`AlgebraicGeometry.Space.chartPullbackMeromorphicFunctions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean#L238). The attribute's comment: “part (1), chartwise: the local fraction rule a/b ↦ f♯a/f♯b over an étale chart diagram, on the presheaf of sectionwise localizations. The global map Γ(Y, 𝒦\_Y(F)) ⟶ Γ(X, 𝒦\_X(f^*F)) of part (1) is asserted for ONE of the two spellings of 𝒦(F): AlgebraicGeometry.Space.pullbackSheafifiedRegularSections gives it with 𝒦(F) read as the first description in Stacks 0EN5, the sheafification of the presheaf of sectionwise localizations. It is asserted for AlgebraicGeometry.Space.MeromorphicSection, which realizes Stacks 0EN5 through the other description there, the sheafification of F ⊗\_𝒪 𝒦, by AlgebraicGeometry.Space.pullbackMeromorphicSection. Stacks 0EMD, which identifies the two descriptions, is not proved and neither map uses it. Part (2), stated through AlgebraicGeometry.Space.IsRegularMeromorphicSection, is not asserted here; it is proved for an invertible module by AlgebraicGeometry.Space.isRegularMeromorphicSection\_pullbackMeromorphicSection. Erratum: part (2) as printed reads 'invertible 𝒪\_X-module', but pulling back along f : X ⟶ Y needs an 𝒪\_Y-module, which is what the scheme-level form of the lemma, 02OY, says”.
+**`AlgebraicGeometry.Space.chartPullbackMeromorphicFunctions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean#L238). The attribute's comment: “part (1), chartwise: the local fraction rule a/b ↦ f♯a/f♯b over an étale chart diagram, on the presheaf of sectionwise localizations. The global map Γ(Y, 𝒦\_Y(F)) ⟶ Γ(X, 𝒦\_X(f^*F)) of part (1) is asserted for ONE of the two spellings of 𝒦(F): AlgebraicGeometry.Space.pullbackSheafifiedRegularSections gives it with 𝒦(F) read as the first description in Stacks 0EN5, the sheafification of the presheaf of sectionwise localizations. It is asserted for AlgebraicGeometry.Space.MeromorphicSection, which realizes Stacks 0EN5 through the other description there, the sheafification of F ⊗\_𝒪 𝒦, by AlgebraicGeometry.Space.pullbackMeromorphicSection. Stacks 0EMD, which identifies the two descriptions, is not proved and neither map uses it. Part (2), stated through AlgebraicGeometry.Space.IsRegularMeromorphicSection, is not asserted here; it is proved for an invertible module by AlgebraicGeometry.Space.isRegularMeromorphicSection\_pullbackMeromorphicSection. Erratum: part (2) as printed reads 'invertible 𝒪\_X-module', but pulling back along f : X ⟶ Y needs an 𝒪\_Y-module, which is what the scheme-level form of the lemma, 02OY, says”.
 
 > **The local fraction rule `a/b ↦ f^♯a/f^♯b`.**  When pullbacks of meromorphic functions
 > are defined for `f`, the pullback along a chart diagram carries the sectionwise localization
@@ -435,7 +435,7 @@ noncomputable def chartPullbackMeromorphicFunctions
       (regularSectionsSubpresheaf B S hS X hX).localizationPresheaf.obj (op d.U)
 ```
 
-**`AlgebraicGeometry.Space.fmapMeromorphicFunctions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean#L328). The attribute's comment: “part (1), chartwise: the fraction rule is canonical, being an f-map of Stacks 03G3 on the presheaves of sectionwise localizations. The global pullback map of part (1) is asserted for the sheafification of those presheaves, the first of the two descriptions of 𝒦 in Stacks 0EN5, by AlgebraicGeometry.Space.pullbackSheafifiedRegularSections, and for the second, AlgebraicGeometry.Space.MeromorphicSection, by AlgebraicGeometry.Space.pullbackMeromorphicSection. Part (2) is not asserted here; it is proved for an invertible module by AlgebraicGeometry.Space.isRegularMeromorphicSection\_pullbackMeromorphicSection”.
+**`AlgebraicGeometry.Space.fmapMeromorphicFunctions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullback.lean#L328). The attribute's comment: “part (1), chartwise: the fraction rule is canonical, being an f-map of Stacks 03G3 on the presheaves of sectionwise localizations. The global pullback map of part (1) is asserted for the sheafification of those presheaves, the first of the two descriptions of 𝒦 in Stacks 0EN5, by AlgebraicGeometry.Space.pullbackSheafifiedRegularSections, and for the second, AlgebraicGeometry.Space.MeromorphicSection, by AlgebraicGeometry.Space.pullbackMeromorphicSection. Part (2) is not asserted here; it is proved for an invertible module by AlgebraicGeometry.Space.isRegularMeromorphicSection\_pullbackMeromorphicSection”.
 
 > The chartwise fraction rules assemble into an `f`-map of presheaves of sets from the
 > sectionwise localization `𝒮_Y⁻¹𝒪_Y` to `𝒮_X⁻¹𝒪_X`, in the sense of Stacks 03G3: pullback of
@@ -450,7 +450,7 @@ noncomputable def fmapMeromorphicFunctions (hf : PullbacksMeromorphicSections B 
         CategoryTheory.forget CommRingCat.{u})
 ```
 
-**`AlgebraicGeometry.Space.pullbackSheafifiedRegularSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackGlobalSections.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackGlobalSections.lean#L149). The attribute's comment: “part (1), for the first of the two descriptions of the sheaf of meromorphic sections in Stacks 0EN5: the global map Γ(Y, 𝒦\_Y(F)) ⟶ Γ(X, 𝒦\_X(f^*F)) with 𝒦(F) taken to be the sheafification of the presheaf of sectionwise localizations U ↦ 𝒮(U)⁻¹F(U). The same map for AlgebraicGeometry.Space.MeromorphicSection, which realizes Stacks 0EN5 through the other description there, the sheafification of the extension of scalars F ⊗\_𝒪 𝒦, is AlgebraicGeometry.Space.pullbackMeromorphicSection. Stacks 0EMD, which identifies the two descriptions, is not proved and neither map uses it. Additivity of the map is not asserted, and neither is part (2), which is stated through AlgebraicGeometry.Space.IsRegularMeromorphicSection and proved for an invertible module by AlgebraicGeometry.Space.isRegularMeromorphicSection\_pullbackMeromorphicSection”.
+**`AlgebraicGeometry.Space.pullbackSheafifiedRegularSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackGlobalSections.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackGlobalSections.lean#L150). The attribute's comment: “part (1), for the first of the two descriptions of the sheaf of meromorphic sections in Stacks 0EN5: the global map Γ(Y, 𝒦\_Y(F)) ⟶ Γ(X, 𝒦\_X(f^*F)) with 𝒦(F) taken to be the sheafification of the presheaf of sectionwise localizations U ↦ 𝒮(U)⁻¹F(U). The same map for AlgebraicGeometry.Space.MeromorphicSection, which realizes Stacks 0EN5 through the other description there, the sheafification of the extension of scalars F ⊗\_𝒪 𝒦, is AlgebraicGeometry.Space.pullbackMeromorphicSection. Stacks 0EMD, which identifies the two descriptions, is not proved and neither map uses it. Additivity of the map is not asserted, and neither is part (2), which is stated through AlgebraicGeometry.Space.IsRegularMeromorphicSection and proved for an invertible module by AlgebraicGeometry.Space.isRegularMeromorphicSection\_pullbackMeromorphicSection”.
 
 > **Stacks 0ENC, part (1), for the sheafification of the sectionwise localizations.**  When
 > pullbacks of meromorphic functions are defined for `f`, there is a canonical map on global
@@ -482,7 +482,7 @@ noncomputable def pullbackSheafifiedRegularSections
         ((modulePullback B S hS f).obj M)).obj.sections
 ```
 
-**`AlgebraicGeometry.Space.chartPullbackMeromorphicSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackModule.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackModule.lean#L202). The attribute's comment: “part (1), chartwise for an arbitrary sheaf of 𝒪\_Y-modules F: the local fraction rule m/b ↦ (f^*m)/(f♯b) on the sectionwise localizations over an étale chart diagram. This generalizes the structure-sheaf case AlgebraicGeometry.Space.chartPullbackMeromorphicFunctions from F = 𝒪\_Y to an arbitrary F. The global map Γ(Y, 𝒦\_Y(F)) ⟶ Γ(X, 𝒦\_X(f^*F)) of part (1) is asserted for ONE of the two spellings of 𝒦(F): AlgebraicGeometry.Space.pullbackSheafifiedRegularSections gives it with 𝒦(F) read as the first description in Stacks 0EN5, the sheafification of this presheaf of sectionwise localizations, and AlgebraicGeometry.Space.pullbackMeromorphicSection gives it for the other description there, the sheafification of F ⊗\_𝒪 𝒦, which is the one AlgebraicGeometry.Space.MeromorphicSection uses. Stacks 0EMD, which identifies the two descriptions, is not proved and neither map uses it. Part (2), stated through AlgebraicGeometry.Space.IsRegularMeromorphicSection, is not asserted here; it is proved for an invertible module by AlgebraicGeometry.Space.isRegularMeromorphicSection\_pullbackMeromorphicSection”.
+**`AlgebraicGeometry.Space.chartPullbackMeromorphicSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackModule.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackModule.lean#L202). The attribute's comment: “part (1), chartwise for an arbitrary sheaf of 𝒪\_Y-modules F: the local fraction rule m/b ↦ (f^*m)/(f♯b) on the sectionwise localizations over an étale chart diagram. This generalizes the structure-sheaf case AlgebraicGeometry.Space.chartPullbackMeromorphicFunctions from F = 𝒪\_Y to an arbitrary F. The global map Γ(Y, 𝒦\_Y(F)) ⟶ Γ(X, 𝒦\_X(f^*F)) of part (1) is asserted for ONE of the two spellings of 𝒦(F): AlgebraicGeometry.Space.pullbackSheafifiedRegularSections gives it with 𝒦(F) read as the first description in Stacks 0EN5, the sheafification of this presheaf of sectionwise localizations, and AlgebraicGeometry.Space.pullbackMeromorphicSection gives it for the other description there, the sheafification of F ⊗\_𝒪 𝒦, which is the one AlgebraicGeometry.Space.MeromorphicSection uses. Stacks 0EMD, which identifies the two descriptions, is not proved and neither map uses it. Part (2), stated through AlgebraicGeometry.Space.IsRegularMeromorphicSection, is not asserted here; it is proved for an invertible module by AlgebraicGeometry.Space.isRegularMeromorphicSection\_pullbackMeromorphicSection”.
 
 > **The local fraction rule `m/b ↦ (f^*m)/(f^♯b)`.**  When pullbacks of meromorphic functions
 > are defined for `f`, the pullback along a chart diagram carries the sectionwise localization
@@ -499,7 +499,7 @@ noncomputable def chartPullbackMeromorphicSections
         ((modulePullback B S hS f).obj M)).obj (op d.U)
 ```
 
-**`AlgebraicGeometry.Space.fmapMeromorphicSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackModule.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackModule.lean#L332). The attribute's comment: “part (1), chartwise for an arbitrary sheaf of 𝒪\_Y-modules F: the fraction rule m/b ↦ (f^*m)/(f♯b) is canonical, being an f-map of Stacks 03G3 from the presheaf of sectionwise localizations of F to that of f^*F. This generalizes the structure-sheaf case AlgebraicGeometry.Space.fmapMeromorphicFunctions from F = 𝒪\_Y to an arbitrary F. It is a statement about the presheaves of sectionwise localizations, not about their sheafifications; the global map Γ(Y, 𝒦\_Y(F)) ⟶ Γ(X, 𝒦\_X(f^*F)) of part (1) that this f-map descends to is AlgebraicGeometry.Space.pullbackSheafifiedRegularSections, which is part (1) with 𝒦(F) read as the first description in Stacks 0EN5, the sheafification of these sectionwise localizations. Part (1) for AlgebraicGeometry.Space.MeromorphicSection, which realizes Stacks 0EN5 through the other description there, the sheafification of F ⊗\_𝒪 𝒦, is AlgebraicGeometry.Space.pullbackMeromorphicSection, built over the same rule taken over the sheaf 𝒦 instead of the presheaf 𝒮⁻¹𝒪. Part (2), stated through AlgebraicGeometry.Space.IsRegularMeromorphicSection, is not asserted here; it is proved for an invertible module by AlgebraicGeometry.Space.isRegularMeromorphicSection\_pullbackMeromorphicSection”.
+**`AlgebraicGeometry.Space.fmapMeromorphicSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackModule.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicPullbackModule.lean#L323). The attribute's comment: “part (1), chartwise for an arbitrary sheaf of 𝒪\_Y-modules F: the fraction rule m/b ↦ (f^*m)/(f♯b) is canonical, being an f-map of Stacks 03G3 from the presheaf of sectionwise localizations of F to that of f^*F. This generalizes the structure-sheaf case AlgebraicGeometry.Space.fmapMeromorphicFunctions from F = 𝒪\_Y to an arbitrary F. It is a statement about the presheaves of sectionwise localizations, not about their sheafifications; the global map Γ(Y, 𝒦\_Y(F)) ⟶ Γ(X, 𝒦\_X(f^*F)) of part (1) that this f-map descends to is AlgebraicGeometry.Space.pullbackSheafifiedRegularSections, which is part (1) with 𝒦(F) read as the first description in Stacks 0EN5, the sheafification of these sectionwise localizations. Part (1) for AlgebraicGeometry.Space.MeromorphicSection, which realizes Stacks 0EN5 through the other description there, the sheafification of F ⊗\_𝒪 𝒦, is AlgebraicGeometry.Space.pullbackMeromorphicSection, built over the same rule taken over the sheaf 𝒦 instead of the presheaf 𝒮⁻¹𝒪. Part (2), stated through AlgebraicGeometry.Space.IsRegularMeromorphicSection, is not asserted here; it is proved for an invertible module by AlgebraicGeometry.Space.isRegularMeromorphicSection\_pullbackMeromorphicSection”.
 
 > The chartwise fraction rules for a sheaf of `𝒪_Y`-modules `M` assemble into an `f`-map of
 > presheaves of sets from the sectionwise localization `𝒮_Y⁻¹M` to `𝒮_X⁻¹(f^*M)`, in the sense of
@@ -518,7 +518,7 @@ noncomputable def fmapMeromorphicSections
         CategoryTheory.forget AddCommGrpCat.{u})
 ```
 
-**`AlgebraicGeometry.Space.pullbackMeromorphicSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullback.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullback.lean#L199). The attribute's comment: “part (1): the global map Γ(Y, 𝒦\_Y(F)) ⟶ Γ(X, 𝒦\_X(f^*F)) on AlgebraicGeometry.Space.MeromorphicSection, the meromorphic sections of Stacks 0EN5 as the library spells them -- global sections of the sheafification of F ⊗\_𝒪 𝒦. AlgebraicGeometry.Space.pullbackSheafifiedRegularSections is the same map for the other description in Stacks 0EN5, the sheafification of the presheaf of sectionwise localizations. Additivity and semilinearity of this map are AlgebraicGeometry.Space.pullbackMeromorphicSection\_eval\_add and AlgebraicGeometry.Space.pullbackMeromorphicSection\_eval\_smul\_chartDiagram, and global additivity is AlgebraicGeometry.Space.pullbackMeromorphicSection\_add; part (2) for an invertible module is AlgebraicGeometry.Space.isRegularMeromorphicSection\_pullbackMeromorphicSection”.
+**`AlgebraicGeometry.Space.pullbackMeromorphicSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullback.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullback.lean#L200). The attribute's comment: “part (1): the global map Γ(Y, 𝒦\_Y(F)) ⟶ Γ(X, 𝒦\_X(f^*F)) on AlgebraicGeometry.Space.MeromorphicSection, the meromorphic sections of Stacks 0EN5 as the library spells them -- global sections of the sheafification of F ⊗\_𝒪 𝒦. AlgebraicGeometry.Space.pullbackSheafifiedRegularSections is the same map for the other description in Stacks 0EN5, the sheafification of the presheaf of sectionwise localizations. Additivity and semilinearity of this map are AlgebraicGeometry.Space.pullbackMeromorphicSection\_eval\_add and AlgebraicGeometry.Space.pullbackMeromorphicSection\_eval\_smul\_chartDiagram, and global additivity is AlgebraicGeometry.Space.pullbackMeromorphicSection\_add; part (2) for an invertible module is AlgebraicGeometry.Space.isRegularMeromorphicSection\_pullbackMeromorphicSection”.
 
 > **Stacks 0ENC, part (1).**  When pullbacks of meromorphic functions are defined for `f`,
 > there is a canonical map on global meromorphic sections
@@ -552,7 +552,7 @@ noncomputable def pullbackMeromorphicSection :
       MeromorphicSection.{u, u} B S hS X.1 X.2 ((modulePullback B S hS f).obj M)
 ```
 
-**`AlgebraicGeometry.Space.pullbackMeromorphicSection_eval_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullbackLinear.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullbackLinear.lean#L297). The attribute's comment: “the algebra of the part (1) map, which its construction leaves unasserted: the global map on meromorphic sections is additive”.
+**`AlgebraicGeometry.Space.pullbackMeromorphicSection_eval_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullbackLinear.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullbackLinear.lean#L297). The attribute's comment: “the algebra of the part (1) map, which its construction leaves unasserted: the global map on meromorphic sections is additive”.
 
 > **The global pullback map of Stacks 0ENC, part (1) is additive.**  Let `w` be a meromorphic
 > section of `M` whose value over every étale scheme chart of `Y` is the sum of the values of `s`
@@ -576,7 +576,7 @@ theorem pullbackMeromorphicSection_eval_add
         (pullbackMeromorphicSection B S hS f M hf s').eval (op U)
 ```
 
-**`AlgebraicGeometry.Space.pullbackMeromorphicSection_eval_smul_chartDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullbackLinear.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullbackLinear.lean#L334). The attribute's comment: “the algebra of the part (1) map, which its construction leaves unasserted: the global map on meromorphic sections is semilinear over the chartwise pullback of meromorphic functions. The coefficient over the chart of X of a commuting square of affine etale charts is the image of the coefficient over its chart of Y under AlgebraicGeometry.Space.chartMeromorphicPullbackHom; a single coefficient over all of X would need the global map on meromorphic functions, which is not available”.
+**`AlgebraicGeometry.Space.pullbackMeromorphicSection_eval_smul_chartDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullbackLinear.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullbackLinear.lean#L334). The attribute's comment: “the algebra of the part (1) map, which its construction leaves unasserted: the global map on meromorphic sections is semilinear over the chartwise pullback of meromorphic functions. The coefficient over the chart of X of a commuting square of affine etale charts is the image of the coefficient over its chart of Y under AlgebraicGeometry.Space.chartMeromorphicPullbackHom; a single coefficient over all of X would need the global map on meromorphic functions, which is not available”.
 
 > **The global pullback map of Stacks 0ENC, part (1) is semilinear over the chartwise pullback
 > of meromorphic functions.**  Let `d` be a commuting square of affine étale scheme charts, `d.U`
@@ -609,7 +609,7 @@ theorem pullbackMeromorphicSection_eval_smul_chartDiagram
         (pullbackMeromorphicSection B S hS f M hf s').eval (op d.U)
 ```
 
-**`AlgebraicGeometry.Space.pullbackMeromorphicSection_sectionsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullbackNatural.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullbackNatural.lean#L203). The attribute's comment: “the algebra of the part (1) map, which its construction leaves unasserted: the global map on meromorphic sections is natural in the module, for the action of the sheaf of meromorphic sections on morphisms of modules”.
+**`AlgebraicGeometry.Space.pullbackMeromorphicSection_sectionsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullbackNatural.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionGlobalPullbackNatural.lean#L194). The attribute's comment: “the algebra of the part (1) map, which its construction leaves unasserted: the global map on meromorphic sections is natural in the module, for the action of the sheaf of meromorphic sections on morphisms of modules”.
 
 > The global pullback of meromorphic sections is natural in the module: for a morphism
 > `φ : M ⟶ N` of sheaves of `𝒪_Y`-modules the pullback of the image of a meromorphic section of
@@ -625,7 +625,7 @@ theorem pullbackMeromorphicSection_sectionsMap (φ : M ⟶ N)
         (pullbackMeromorphicSection B S hS f M hf s)
 ```
 
-**`AlgebraicGeometry.Space.isRegularMeromorphicSection_pullbackMeromorphicSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionPullbackRegular.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionPullbackRegular.lean#L215). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isRegularMeromorphicSection_pullbackMeromorphicSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionPullbackRegular.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionPullbackRegular.lean#L215). The attribute's comment: “part (2)”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces for which pullbacks of meromorphic
 > functions are defined, let `L` be an invertible `𝒪_Y`-module and let `s` be a regular meromorphic
@@ -647,7 +647,7 @@ theorem isRegularMeromorphicSection_pullbackMeromorphicSection (f : X ⟶ Y)
 
 [Tag 0EPQ](https://stacks.math.columbia.edu/tag/0EPQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isRegularMeromorphicSection_of_isTrivialAtCodimensionZeroPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularMeromorphicSectionExistence.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularMeromorphicSectionExistence.lean#L299). The attribute's comment: “every invertible module on an algebraic space satisfying conditions (a), (b) and (c) of Tag 0ENA has a regular meromorphic section”.
+**`AlgebraicGeometry.Space.exists_isRegularMeromorphicSection_of_isTrivialAtCodimensionZeroPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularMeromorphicSectionExistence.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RegularMeromorphicSectionExistence.lean#L299). The attribute's comment: “every invertible module on an algebraic space satisfying conditions (a), (b) and (c) of Tag 0ENA has a regular meromorphic section”.
 
 > **Stacks 0EPQ.** Let `X` be an algebraic space over a scheme `S` satisfying conditions (a),
 > (b) and (c) of Stacks 0ENA — every weakly associated point of `X` has codimension `0`, the
@@ -684,4 +684,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 71.10, Tag 0EN2](https://stacks.math.columbia.edu/tag/0EN2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

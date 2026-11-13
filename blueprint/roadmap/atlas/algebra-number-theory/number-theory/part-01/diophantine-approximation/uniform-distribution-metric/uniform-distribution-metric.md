@@ -8,7 +8,7 @@ proof: formalized
 
 # Uniform distribution and metric approximation: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/index.html).
 
 Weyl equidistribution, three-gap theorem, Duffin–Schaeffer, normal numbers, Beatty sequences, discrepancy, lattice points and Minkowski-type theorems.
 
@@ -26,7 +26,7 @@ $\frac{1}{N} \sum_{n=0}^{N-1} e^{2\pi i h x_n} \to 0$ as $N \to \infty$.
 
 - https://en.wikipedia.org/wiki/Equidistribution_theorem.
 
-Formalized by `MetaMathlibExt.weyl_criterion`, a theorem declared in [MathlibExt/NumberTheory/DiophantineApproximation/WeylCriterion.lean, line 1211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/DiophantineApproximation/WeylCriterion.lean#L1211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/index.html#weyl-criterion).
+Formalized by `MetaMathlibExt.weyl_criterion`, a theorem declared in [MathlibExt/NumberTheory/DiophantineApproximation/WeylCriterion.lean, line 1211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/DiophantineApproximation/WeylCriterion.lean#L1211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/index.html#weyl-criterion).
 
 ## Depends on
 
@@ -35,4 +35,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Uniform distribution and metric approximation](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric)

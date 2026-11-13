@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.24 The divisor associated to an invertible sheaf
 
-Section 42.24 of the Stacks Project, [Tag 02SI](https://stacks.math.columbia.edu/tag/02SI). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.24 of the Stacks Project, [Tag 02SI](https://stacks.math.columbia.edu/tag/02SI). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02SJ, a definition
 
 [Tag 02SJ](https://stacks.math.columbia.edu/tag/02SJ) in the Stacks Project.
 
-**`Stacks.Chow.firstChernClassCapFundamental`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DivisorOfInvertibleSheaf.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DivisorOfInvertibleSheaf.lean#L90). The attribute's comment: “part (2): the Weil divisor class c₁(L) ∩ [X] in CH\_\{n-1}(X)”. References: SGA 5 VII (3.9), “partial”.
+**`Stacks.Chow.firstChernClassCapFundamental`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DivisorOfInvertibleSheaf.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DivisorOfInvertibleSheaf.lean#L90). The attribute's comment: “part (2): the Weil divisor class c₁(L) ∩ [X] in CH\_\{n-1}(X)”. References: SGA 5 VII (3.9), “partial”.
 
 > **The Weil divisor class of an invertible module, Stacks 02SJ (2).** On an integral scheme `X`
 > of delta-dimension `n`, locally of finite type over the base of a Chow situation, the class
@@ -33,7 +33,7 @@ Section 42.24 of the Stacks Project, [Tag 02SI](https://stacks.math.columbia.edu
 def firstChernClassCapFundamental : chowGroup C p (n - 1)
 ```
 
-**`Stacks.Chow.firstChernClassCapFundamental_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DivisorOfInvertibleSheaf.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DivisorOfInvertibleSheaf.lean#L106). The attribute's comment: “part (2): c₁(L) ∩ [X] is the class of div\_L(s) for every nonzero regular meromorphic section s, so the definition does not depend on the chosen section”.
+**`Stacks.Chow.firstChernClassCapFundamental_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DivisorOfInvertibleSheaf.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DivisorOfInvertibleSheaf.lean#L106). The attribute's comment: “part (2): c₁(L) ∩ [X] is the class of div\_L(s) for every nonzero regular meromorphic section s, so the definition does not depend on the chosen section”.
 
 > **The Weil divisor class is the class of `div_L(s)` for every nonzero section,
 > Stacks 02SJ (2).** In `CH_{n-1}(X)` the class `c₁(L) ∩ [X]` is represented by the divisor cycle
@@ -53,7 +53,7 @@ theorem firstChernClassCapFundamental_eq
       QuotientAddGroup.mk (divisorOfMeromorphicSectionCycle C p n hn L s hs)
 ```
 
-**`Stacks.Chow.divisorOfMeromorphicSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/MeromorphicCascade/DivisorCycle.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/MeromorphicCascade/DivisorCycle.lean#L88). The attribute's comment: “part (1): div\_L(s) = ∑\_Z ord\_\{Z, L}(s) [Z] as an element of Z\_\{n-1}(X), together with its coefficients”.
+**`Stacks.Chow.divisorOfMeromorphicSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/MeromorphicCascade/DivisorCycle.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/MeromorphicCascade/DivisorCycle.lean#L88). The attribute's comment: “part (1): div\_L(s) = ∑\_Z ord\_\{Z, L}(s) [Z] as an element of Z\_\{n-1}(X), together with its coefficients”.
 
 > **The divisor cycle of a regular meromorphic section, Stacks 02SJ (1).** The Weil divisor
 > `div_L(s)` of a regular meromorphic section of an invertible module on an integral scheme of
@@ -80,7 +80,7 @@ def divisorOfMeromorphicSection (C : ChowSituation.{u}) {X : Scheme.{u}} (p : X 
 
 [Tag 02SK](https://stacks.math.columbia.edu/tag/02SK) in the Stacks Project.
 
-**`Stacks.ChernCap42.divisorOfMeromorphicSectionCycle_eq_cycleAssociatedToZeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCap42/DivisorOfSectionCycle.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernCap42/DivisorOfSectionCycle.lean#L279). The attribute's comment: “divisor cycle”.
+**`Stacks.ChernCap42.divisorOfMeromorphicSectionCycle_eq_cycleAssociatedToZeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCap42/DivisorOfSectionCycle.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernCap42/DivisorOfSectionCycle.lean#L279). The attribute's comment: “divisor cycle”.
 
 > Let `X` be an integral scheme locally of finite type over the base of
 > chapter 42, of delta-dimension `n`, let `L` be an invertible `𝒪_X`-module and let `s` be a nonzero
@@ -99,7 +99,7 @@ theorem divisorOfMeromorphicSectionCycle_eq_cycleAssociatedToZeroScheme (C : Cho
         (Stacks.Divisors.zeroScheme X L s).subschemeι (n - 1)
 ```
 
-**`Stacks.ChernCap42.firstChernClassCapOfInvertible_fundamentalCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCap42/DivisorOfSectionCycle.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernCap42/DivisorOfSectionCycle.lean#L405). The attribute's comment: “first Chern class”.
+**`Stacks.ChernCap42.firstChernClassCapOfInvertible_fundamentalCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCap42/DivisorOfSectionCycle.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernCap42/DivisorOfSectionCycle.lean#L405). The attribute's comment: “first Chern class”.
 
 > Let `X` be an integral scheme locally of finite type over the base of chapter 42, of
 > delta-dimension `n`, let `L` be an invertible `𝒪_X`-module and let `s` be a nonzero global section
@@ -123,7 +123,7 @@ theorem firstChernClassCapOfInvertible_fundamentalCycle (C : ChowSituation.{u}) 
 
 [Tag 02SM](https://stacks.math.columbia.edu/tag/02SM) in the Stacks Project.
 
-**`Stacks.Chow.mk_flatPullback_meromorphicDivisorCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/FlatPullbackMeromorphicDivisorIntegral.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/FlatPullbackMeromorphicDivisorIntegral.lean#L143). The attribute's comment: “the flat pullback read on the divisor of a nonzero meromorphic section”.
+**`Stacks.Chow.mk_flatPullback_meromorphicDivisorCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/FlatPullbackMeromorphicDivisorIntegral.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/FlatPullbackMeromorphicDivisorIntegral.lean#L146). The attribute's comment: “the flat pullback read on the divisor of a nonzero meromorphic section”.
 
 > **Stacks 02SM.** Let `C = (S, δ)` be the base situation of chapter 42, let `X` and `Y` be
 > integral and locally of finite type over `S` with `n = dim_δ(Y)`, and let `f : X ⟶ Y` be flat of
@@ -133,6 +133,9 @@ theorem firstChernClassCapOfInvertible_fundamentalCycle (C : ChowSituation.{u}) 
 >
 > in `A_{n + r - 1}(X)`, where either side is the class of the divisor of a nonzero meromorphic
 > section, read on `Y` and pulled back on the left and read on `X` on the right.
+>
+> The integrality of `X` is a hypothesis of the source, which assumes both `X` and `Y` integral;
+> the case of a general `X` is subsumed by Stacks 02SS.
 
 ```lean
 theorem mk_flatPullback_meromorphicDivisorCycle (hs : s ≠ 0) :
@@ -152,4 +155,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.24, Tag 02SI](https://stacks.math.columbia.edu/tag/02SI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

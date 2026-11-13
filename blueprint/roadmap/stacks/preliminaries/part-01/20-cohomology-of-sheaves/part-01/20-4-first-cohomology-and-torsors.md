@@ -8,7 +8,7 @@ proof: formalized
 
 # 20.4 First cohomology and torsors
 
-Section 20.4 of the Stacks Project, [Tag 02FN](https://stacks.math.columbia.edu/tag/02FN). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.4 of the Stacks Project, [Tag 02FN](https://stacks.math.columbia.edu/tag/02FN). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02FO, a definition
 
@@ -16,15 +16,15 @@ Section 20.4 of the Stacks Project, [Tag 02FN](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`Stacks.SpaceTorsor.Action.IsTorsor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PresheavesOfGroupsAndActions.lean#L190), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/Defs.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/Defs.lean#L39) (StacksFrontier): “the torsor condition on an action”.
-- [`Stacks.SpaceTorsor.TorsorHom`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PresheavesOfGroupsAndActions.lean#L209), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/Defs.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/Defs.lean#L40) (StacksFrontier): “an equivariant morphism of torsors”.
-- [`Stacks.SpaceTorsor.PresheafOfGroups.trivialAction`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PresheavesOfGroupsAndActions.lean#L241), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/Defs.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/Defs.lean#L41) (StacksFrontier): “the action defining the trivial torsor”.
+- [`Stacks.SpaceTorsor.Action.IsTorsor`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PresheavesOfGroupsAndActions.lean#L190), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/Defs.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/Defs.lean#L39) (StacksFrontier): “the torsor condition on an action”.
+- [`Stacks.SpaceTorsor.TorsorHom`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PresheavesOfGroupsAndActions.lean#L209), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/Defs.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/Defs.lean#L40) (StacksFrontier): “an equivariant morphism of torsors”.
+- [`Stacks.SpaceTorsor.PresheafOfGroups.trivialAction`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PresheavesOfGroupsAndActions.lean#L241), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/Defs.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/Defs.lean#L41) (StacksFrontier): “the action defining the trivial torsor”.
 
 ## Tag 02FP, a lemma
 
 [Tag 02FP](https://stacks.math.columbia.edu/tag/02FP) in the Stacks Project.
 
-**`Stacks.SpaceTorsor.torsor_trivial_iff_global_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PresheavesOfGroupsAndActions.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PresheavesOfGroupsAndActions.lean#L261).
+**`Stacks.SpaceTorsor.torsor_trivial_iff_global_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PresheavesOfGroupsAndActions.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/PresheavesOfGroupsAndActions.lean#L261).
 
 > Let `X` be a topological space, `G` a sheaf of (possibly non-commutative) groups on `X`, and
 > `F` a sheaf of sets with an action `a` of `G` making it a `G`-torsor. Then `F` is trivial if and
@@ -43,7 +43,7 @@ theorem torsor_trivial_iff_global_section
 
 [Tag 02FQ](https://stacks.math.columbia.edu/tag/02FQ) in the Stacks Project.
 
-**`Stacks.Cohomology.SheafTorsor.torsorCohomologyClassification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/FirstCohomologyClassification/Classification.lean, line 502](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/FirstCohomologyClassification/Classification.lean#L502). References: EGA IV (16.5.15), “abelian sheaf of groups”.
+**`Stacks.Cohomology.SheafTorsor.torsorCohomologyClassification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/FirstCohomologyClassification/Classification.lean, line 502](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/FirstCohomologyClassification/Classification.lean#L502). References: EGA IV (16.5.15), “abelian sheaf of groups”.
 
 > **Stacks Project, Tag 02FQ.** The canonical classification, with the
 > transition-cocycle, trivial-torsor and contracted-product laws.
@@ -55,7 +55,7 @@ noncomputable def torsorCohomologyClassification (X : TopCat.{u})
     TorsorCohomologyClassification X H
 ```
 
-**`Stacks.Cohomology.SheafTorsor.torsorClassEquivSheafCohomologyOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/FirstCohomologyClassification/Classification.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/FirstCohomologyClassification/Classification.lean#L512). The attribute's comment: “the canonical bijection”. References: EGA IV (16.5.15), “abelian sheaf of groups”; SGA 4½ Cycle (1.1.1), “topological space”; SGA 4½ Arcata (1.6.6), “topological space”.
+**`Stacks.Cohomology.SheafTorsor.torsorClassEquivSheafCohomologyOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/FirstCohomologyClassification/Classification.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/FirstCohomologyClassification/Classification.lean#L512). The attribute's comment: “the canonical bijection”. References: EGA IV (16.5.15), “abelian sheaf of groups”; SGA 4½ Cycle (1.1.1), “topological space”; SGA 4½ Arcata (1.6.6), “topological space”.
 
 > The canonical bijection between torsor classes and first sheaf cohomology.
 
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.4, Tag 02FN](https://stacks.math.columbia.edu/tag/02FN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

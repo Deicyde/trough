@@ -8,13 +8,13 @@ proof: formalized
 
 # 54.2 A trace map in positive characteristic
 
-Section 54.2 of the Stacks Project, [Tag 0ADY](https://stacks.math.columbia.edu/tag/0ADY). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 54.2 of the Stacks Project, [Tag 0ADY](https://stacks.math.columbia.edu/tag/0ADY). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ADZ, a lemma
 
 [Tag 0ADZ](https://stacks.math.columbia.edu/tag/0ADZ) in the Stacks Project.
 
-**`KaehlerDifferential.pthRootDifferentialTrace_eq_comp_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/TraceMapPositive/Basic.lean, line 655](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/TraceMapPositive/Basic.lean#L655).
+**`KaehlerDifferential.pthRootDifferentialTrace_eq_comp_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/TraceMapPositive/Basic.lean, line 655](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/TraceMapPositive/Basic.lean#L655).
 
 > Differential traces for two presentations of a degree-`p` purely inseparable algebra
 > are intertwined by every `R`-algebra homomorphism between the presentations.
@@ -37,7 +37,7 @@ theorem pthRootDifferentialTrace_eq_comp_map (p : ℕ) [Fact p.Prime]
 
 [Tag 0AX5](https://stacks.math.columbia.edu/tag/0AX5) in the Stacks Project.
 
-**`KaehlerDifferential.higherTrace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean, line 686](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean#L686). The attribute's comment: “the trace map”.
+**`KaehlerDifferential.higherTrace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean, line 682](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean#L682). The attribute's comment: “the trace map”.
 
 > The higher trace on differential forms for a presentation
 > `S ≅ R[X]/(X ^ p - a)`.
@@ -48,7 +48,7 @@ public noncomputable def higherTrace (hp : p.Prime) [CharP Λ p] (a : R)
     (⋀[S]^(t + 1) (Ω[S⁄Λ])) →ₗ[R] (⋀[R]^(t + 1) (Ω[R⁄Λ]))
 ```
 
-**`KaehlerDifferential.higherTrace_apply_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean, line 707](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean#L707). The attribute's comment: “values below the top power”.
+**`KaehlerDifferential.higherTrace_apply_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean, line 703](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean#L703). The attribute's comment: “values below the top power”.
 
 > The higher trace of `η₁ ∧ ⋯ ∧ ηₜ ∧ xⁱ dx` vanishes for `i ≤ p - 2`.
 
@@ -64,7 +64,7 @@ public theorem higherTrace_apply_of_le (hp : p.Prime) [CharP Λ p] (a : R)
               (e (AdjoinRoot.root (Polynomial.X ^ p - Polynomial.C a)))))) = 0
 ```
 
-**`KaehlerDifferential.higherTrace_apply_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean, line 726](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean#L726). The attribute's comment: “value at the top power”.
+**`KaehlerDifferential.higherTrace_apply_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean, line 722](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean#L722). The attribute's comment: “value at the top power”.
 
 > The higher trace of `η₁ ∧ ⋯ ∧ ηₜ ∧ x^(p-1) dx` is
 > `η₁ ∧ ⋯ ∧ ηₜ ∧ da`.
@@ -83,7 +83,7 @@ public theorem higherTrace_apply_top (hp : p.Prime) [CharP Λ p] (a : R)
         (Fin.snoc η (KaehlerDifferential.D Λ R a))
 ```
 
-**`KaehlerDifferential.higherTrace_smul_baseForm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean, line 747](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean#L747). The attribute's comment: “vanishing on forms from the base”.
+**`KaehlerDifferential.higherTrace_smul_baseForm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean, line 743](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean#L743). The attribute's comment: “vanishing on forms from the base”.
 
 > The higher trace annihilates the image of
 > `S ⊗[R] Ω^{t+1}_{R/Λ} → Ω^{t+1}_{S/Λ}`.  The displayed elements are a generating family for
@@ -98,7 +98,7 @@ public theorem higherTrace_smul_baseForm (hp : p.Prime) [CharP Λ p] (a : R)
         (fun j => KaehlerDifferential.map Λ Λ R S (η j))) = 0
 ```
 
-**`KaehlerDifferential.higherTrace_eq_of_presentations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean, line 762](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean#L762). The attribute's comment: “independence of presentation”.
+**`KaehlerDifferential.higherTrace_eq_of_presentations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean, line 758](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/Basic/TraceMap.lean#L758). The attribute's comment: “independence of presentation”.
 
 > The higher trace is independent of the presentation of `S` as an algebra obtained by
 > adjoining a `p`-th root. In particular, changing the chosen generator does not change the
@@ -117,7 +117,7 @@ public theorem higherTrace_eq_of_presentations (hp : p.Prime) [CharP Λ p]
 
 [Tag 0FLF](https://stacks.math.columbia.edu/tag/0FLF) in the Stacks Project.
 
-**`KaehlerDifferential.relativeTraceComplex_trace_eq_higherTraceComplexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/TraceMapPositive/TraceIdentification.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/TraceMapPositive/TraceIdentification.lean#L99). The attribute's comment: “Tr = Θ\_\{S/R}, for Θ\_\{S/R} the map of relative de Rham complexes induced (0FLC (3)) by the trace maps on absolute forms of the framed algebra S/R”.
+**`KaehlerDifferential.relativeTraceComplex_trace_eq_higherTraceComplexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/TraceMapPositive/TraceIdentification.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/TraceMapPositive/TraceIdentification.lean#L99). The attribute's comment: “Tr = Θ\_\{S/R}, for Θ\_\{S/R} the map of relative de Rham complexes induced (0FLC (3)) by the trace maps on absolute forms of the framed algebra S/R”.
 
 > **Tr = Θ\_\{S/R}.**  Let `𝐅_p ⊂ Λ ⊂ R ⊂ S` with `S ≅ R[x]/(x ^ p - a)`, and let `f` be any
 > frame of `S/R` (for instance the monogenic one, `KaehlerDifferential.rootExtFrame`; the trace maps
@@ -137,7 +137,7 @@ theorem relativeTraceComplex_trace_eq_higherTraceComplexMap (hp : p.Prime) [Char
 
 [Tag 0AX6](https://stacks.math.columbia.edu/tag/0AX6) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_higherTraceExtension_relativeDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/ReflexiveHullExtensionSupplement.lean, line 947](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/ReflexiveHullExtensionSupplement.lean#L947). The attribute's comment: “the existence and uniqueness of the canonical trace map `f_*Ω^i_{Y/S} ⟶ (Ω^i_{X/S})^∨∨` whose stalk at the generic point is the trace map of [Stacks, Tag 0AX5], through the constructed identifications of both generic stalks”.
+**`AlgebraicGeometry.existsUnique_higherTraceExtension_relativeDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/ReflexiveHullExtensionSupplement.lean, line 947](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/HigherTrace/ReflexiveHullExtensionSupplement.lean#L947). The attribute's comment: “the existence and uniqueness of the canonical trace map `f_*Ω^i_{Y/S} ⟶ (Ω^i_{X/S})^∨∨` whose stalk at the generic point is the trace map of [Stacks, Tag 0AX5], through the constructed identifications of both generic stalks”.
 
 > Let `f : Y ⟶ X` be a finite dominant morphism of integral
 > schemes over `S` with `X` normal and locally Noetherian, let the extension of function fields
@@ -191,4 +191,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 54.2, Tag 0ADY](https://stacks.math.columbia.edu/tag/0ADY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

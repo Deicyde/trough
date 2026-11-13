@@ -8,7 +8,7 @@ proof: formalized
 
 # Probabilistic principal component analysis
 
-16 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html).
+16 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html).
 
 ## The transpose of a real matrix is its adjoint
 
@@ -16,7 +16,7 @@ For every real $d \times q$ matrix $W$ and
 all $z \in \mathbb{R}^q$ and $t \in \mathbb{R}^d$, the Euclidean inner products satisfy
 $\langle Wz, t\rangle = \langle z, W^\top t\rangle$.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.inner_toEuclideanLin`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#inner-to-euclidean-lin).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.inner_toEuclideanLin`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#inner-to-euclidean-lin).
 
 ## Characteristic function of a linear image
 
@@ -26,7 +26,7 @@ $\varphi_\nu(t) = \int e^{i\langle x, t\rangle}\,d\nu(x)$ for the characteristic
 measure $\nu$. Then the pushforward $W_*\mu$ of $\mu$ under $z \mapsto Wz$ satisfies
 $\varphi_{W_*\mu}(t) = \varphi_\mu(W^\top t)$ for every $t \in \mathbb{R}^d$.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.charFun_map_toEuclideanLin`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#char-fun-map-to-euclidean-lin).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.charFun_map_toEuclideanLin`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#char-fun-map-to-euclidean-lin).
 
 ## The marginal of probabilistic PCA and factor analysis is Gaussian
 
@@ -40,7 +40,7 @@ law $N(\mu, WW^\top + \Psi)$.
 This is the marginal of Tipping and Bishop's model: probabilistic PCA is the case
 $\Psi = \sigma^2 I$, factor analysis the case of a diagonal $\Psi$.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.map_eq_multivariateGaussian`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#map-eq-multivariate-gaussian).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.map_eq_multivariateGaussian`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#map-eq-multivariate-gaussian).
 
 ## The probabilistic PCA marginal
 
@@ -50,7 +50,7 @@ standard Gaussian law $N(0, I_q)$ and $E$ has the isotropic law $N(0, \sigma^2 I
 $\sigma^2 \ge 0$. Then for every real $d \times q$ matrix $W$ and every $\mu \in \mathbb{R}^d$, the
 random vector $WZ + \mu + E$ has law $N(\mu, WW^\top + \sigma^2 I_d)$.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.ppca_map_eq`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#ppca-map-eq).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.ppca_map_eq`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#ppca-map-eq).
 
 ## The factor-analysis marginal
 
@@ -61,14 +61,14 @@ $\psi \in \mathbb{R}^d$ with $\psi_i \ge 0$ for all $i$. Then for every real $d 
 $W$ and every $\mu \in \mathbb{R}^d$, the random vector $WZ + \mu + E$ has law
 $N(\mu, WW^\top + \operatorname{diag}\psi)$.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.factorAnalysis_map_eq`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#factor-analysis-map-eq).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.factorAnalysis_map_eq`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCA.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#factor-analysis-map-eq).
 
 ## Probabilistic PCA covariance
 
 For a real $d \times q$ matrix $W$ and a real number
 $\sigma^2$, the probabilistic PCA covariance is the $d \times d$ matrix $W W^\top + \sigma^2 I$.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.ppcaCov`, a definition declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#ppca-cov).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.ppcaCov`, a definition declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#ppca-cov).
 
 ## The density of the probabilistic PCA observation
 
@@ -80,7 +80,7 @@ law of $x = W z + \mu + \varepsilon$ has density $\mathcal{N}(x \mid \mu, W W^\t
 with respect to Lebesgue measure on $\mathbb{R}^d$, where $\mathcal{N}(x \mid \mu, \Sigma)$ is the
 multivariate Gaussian density with mean $\mu$ and covariance $\Sigma$.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.ppca_map_eq_withDensity`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#ppca-map-eq-with-density).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.ppca_map_eq_withDensity`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#ppca-map-eq-with-density).
 
 ## Probabilistic PCA log-likelihood
 
@@ -105,7 +105,7 @@ matter only when $W W^\top + \sigma^2 I$ is not positive definite. When $\sigma^
 $W W^\top + \sigma^2 I$ is positive definite, and this is the density of the Gaussian with mean
 $\mu$ and covariance $W W^\top + \sigma^2 I$.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.logLik`, a definition declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#log-lik).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.logLik`, a definition declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#log-lik).
 
 ## Sample mean
 
@@ -114,7 +114,7 @@ $\bar x = \frac{1}{N} \sum_{n=1}^{N} x_n \in \mathbb{R}^d$.
 
 When $N = 0$ the sample mean is $0$.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.sampleMean`, an abbreviation declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#sample-mean).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.sampleMean`, an abbreviation declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#sample-mean).
 
 ## Sample covariance
 
@@ -123,7 +123,7 @@ $\bar{x}$, the sample covariance is the $d \times d$ matrix
 $S = \frac{1}{N} \sum_{n=1}^N (x_n - \bar{x})(x_n - \bar{x})^\top$, taken to be $0$ when
 $N = 0$.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.sampleCov`, an abbreviation declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#sample-cov).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.sampleCov`, an abbreviation declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#sample-cov).
 
 ## The log-likelihood of no data is zero
 
@@ -131,7 +131,7 @@ For the empty data set ($N = 0$), the
 probabilistic PCA log-likelihood at every $\mu \in \mathbb{R}^d$, every real $d \times q$ matrix
 $W$ and every real number $\sigma^2$ is $0$.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.logLik_of_N_eq_zero`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#log-lik-of-n-eq-zero).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.logLik_of_N_eq_zero`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#log-lik-of-n-eq-zero).
 
 ## The mean MLE is the sample mean
 
@@ -140,7 +140,7 @@ sample mean $\bar{x}$. For every $\mu \in \mathbb{R}^d$, every real $d \times q$
 $W$ and every real $\sigma^2 > 0$, the probabilistic PCA log-likelihood of the data at
 $(\mu, W, \sigma^2)$ is at most its value at $(\bar{x}, W, \sigma^2)$.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.logLik_le_sampleMean`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#log-lik-le-sample-mean).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.logLik_le_sampleMean`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#log-lik-le-sample-mean).
 
 ## The probabilistic PCA likelihood is at most the unconstrained Gaussian maximum
 
@@ -155,7 +155,7 @@ and covariance $S$.
 The sample covariance is positive definite, for example, when the data do not all lie in an
 affine hyperplane.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.logLik_le_gaussianMLE`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#log-lik-le-gaussian-mle).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.logLik_le_gaussianMLE`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#log-lik-le-gaussian-mle).
 
 ## Probabilistic PCA maximum-likelihood estimate
 
@@ -167,7 +167,7 @@ $\mu \in \mathbb{R}^d$, every real $d \times q$ matrix $W$ and every real $\sigm
 probabilistic PCA log-likelihood of the data at $(\mu, W, \sigma^2)$ is at most its value at
 $(\mu_0, W_0, \sigma_0^2)$.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.IsMLE`, a definition declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#is-mle).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.IsMLE`, a definition declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#is-mle).
 
 ## Probabilistic PCA MLE when the sample covariance has the model form
 
@@ -177,7 +177,7 @@ If $W_0$ is a real $d \times q$ matrix and $\sigma_0^2 > 0$ is a real number wit
 $S = W_0 W_0^\top + \sigma_0^2 I$, then $(\bar{x}, W_0, \sigma_0^2)$ is a probabilistic PCA
 maximum-likelihood estimate for the data.
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.isMLE_of_sampleCov_eq`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#is-mle-of-sample-cov-eq).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.isMLE_of_sampleCov_eq`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#is-mle-of-sample-cov-eq).
 
 ## No latent factors: the noise-variance MLE is the average sample variance
 
@@ -191,7 +191,7 @@ $(\bar{x}, 0, \operatorname{tr} S / d)$.
 Here $\operatorname{tr} S / d$ is the average sample variance (Tipping and Bishop's $\sigma^2$
 estimate with no retained components).
 
-Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.logLik_zero_le`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#log-lik-zero-le).
+Formalized by `Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.logLik_zero_le`, a theorem declared in [CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/LatentVariable/ProbabilisticPCAMLE.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html#log-lik-zero-le).
 
 ## Depends on
 
@@ -200,4 +200,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Probabilistic principal component analysis](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/machine-learning/unsupervised-learning/probabilistic-principal-component-analysis)

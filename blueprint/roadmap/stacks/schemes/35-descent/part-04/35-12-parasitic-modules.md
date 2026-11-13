@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.12 Parasitic modules
 
-Section 35.12 of the Stacks Project, [Tag 07AF](https://stacks.math.columbia.edu/tag/07AF). 4 tags here are carried by 27 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.12 of the Stacks Project, [Tag 07AF](https://stacks.math.columbia.edu/tag/07AF). 4 tags here are carried by 27 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06ZL, a definition
 
 [Tag 06ZL](https://stacks.math.columbia.edu/tag/06ZL) in the Stacks Project.
 
-**`AlgebraicGeometry.IsParasitic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/Defs.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/Defs.lean#L53). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.IsParasitic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/Defs.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/Defs.lean#L53). The attribute's comment: “part (1)”.
 
 > A presheaf of modules is *parasitic* when its sections vanish on every object of the site
 > which is flat over the base scheme.
@@ -24,7 +24,7 @@ public abbrev IsParasitic (S : Scheme.{u}) {C : Type (u + 1)} [Category.{u} C]
     (toOver : C ⥤ Over S) {𝒪 : Cᵒᵖ ⥤ RingCat.{u}} (F : PresheafOfModules.{u} 𝒪) : Prop
 ```
 
-**`AlgebraicGeometry.IsParasiticFor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/Defs.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/Defs.lean#L60). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.IsParasiticFor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/Defs.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/Defs.lean#L60). The attribute's comment: “part (2)”.
 
 > A presheaf of modules is *parasitic for a topology* when its sections vanish on every
 > member of every covering family of the base scheme.
@@ -39,7 +39,7 @@ public abbrev IsParasiticFor (S : Scheme.{u}) {C : Type (u + 1)} [Category.{u} C
 
 [Tag 0755](https://stacks.math.columbia.edu/tag/0755) in the Stacks Project.
 
-**`AlgebraicGeometry.bigZariskiCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L318). The attribute's comment: “flat\_parasitic\_vanishing”.
+**`AlgebraicGeometry.bigZariskiCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L318). The attribute's comment: “flat\_parasitic\_vanishing”.
 
 > A parasitic module on the big Zariski site has no cohomology at a flat object.
 
@@ -57,7 +57,7 @@ public theorem bigZariskiCohomology_isZero_of_isParasitic
     IsZero (((SheafOfModules.toSheaf _).obj F).H' p U)
 ```
 
-**`AlgebraicGeometry.bigEtaleCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L380). The attribute's comment: “flat\_parasitic\_vanishing”.
+**`AlgebraicGeometry.bigEtaleCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L380). The attribute's comment: “flat\_parasitic\_vanishing”.
 
 > A parasitic module on the big étale site has no cohomology at a flat object.
 
@@ -75,7 +75,7 @@ public theorem bigEtaleCohomology_isZero_of_isParasitic
     IsZero (((SheafOfModules.toSheaf _).obj F).H' p U)
 ```
 
-**`AlgebraicGeometry.bigSmoothCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L440). The attribute's comment: “flat\_parasitic\_vanishing”.
+**`AlgebraicGeometry.bigSmoothCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L440). The attribute's comment: “flat\_parasitic\_vanishing”.
 
 > A parasitic module on the big smooth site has no cohomology at a flat object.
 
@@ -94,7 +94,7 @@ public theorem bigSmoothCohomology_isZero_of_isParasitic
     IsZero (((SheafOfModules.toSheaf _).obj F).H' p U)
 ```
 
-**`AlgebraicGeometry.bigSyntomicCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L512). The attribute's comment: “flat\_parasitic\_vanishing”.
+**`AlgebraicGeometry.bigSyntomicCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L512). The attribute's comment: “flat\_parasitic\_vanishing”.
 
 > A parasitic module on the big syntomic site has no cohomology at a flat object.
 
@@ -112,7 +112,7 @@ public theorem bigSyntomicCohomology_isZero_of_isParasitic
     IsZero (((SheafOfModules.toSheaf _).obj F).H' p U)
 ```
 
-**`AlgebraicGeometry.bigFppfCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 596](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L596). The attribute's comment: “flat\_parasitic\_vanishing”.
+**`AlgebraicGeometry.bigFppfCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 596](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L596). The attribute's comment: “flat\_parasitic\_vanishing”.
 
 > A parasitic module on the big fppf site has no cohomology at a flat object.
 
@@ -130,7 +130,7 @@ public theorem bigFppfCohomology_isZero_of_isParasitic
     IsZero (((SheafOfModules.toSheaf _).obj F).H' p U)
 ```
 
-**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L469). The attribute's comment: “topology\_parasitic\_vanishing”.
+**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 469](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L469). The attribute's comment: “topology\_parasitic\_vanishing”.
 
 > Vanishing on objects open over the base in the big Zariski site.
 
@@ -151,7 +151,7 @@ public theorem cohomology_isZero_of_isParasiticFor_zariski
     IsZero (((SheafOfModules.toSheaf _).obj G).H' p U)
 ```
 
-**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L504). The attribute's comment: “topology\_parasitic\_vanishing”.
+**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L504). The attribute's comment: “topology\_parasitic\_vanishing”.
 
 > Vanishing on objects étale over the base in the big étale site.
 
@@ -172,7 +172,7 @@ public theorem cohomology_isZero_of_isParasiticFor_etale
     IsZero (((SheafOfModules.toSheaf _).obj G).H' p U)
 ```
 
-**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L538). The attribute's comment: “topology\_parasitic\_vanishing”.
+**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 538](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L538). The attribute's comment: “topology\_parasitic\_vanishing”.
 
 > Vanishing on objects smooth over the base in the big smooth site.
 
@@ -193,7 +193,7 @@ public theorem cohomology_isZero_of_isParasiticFor_smooth
     IsZero (((SheafOfModules.toSheaf _).obj G).H' p U)
 ```
 
-**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L572). The attribute's comment: “topology\_parasitic\_vanishing”.
+**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 572](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L572). The attribute's comment: “topology\_parasitic\_vanishing”.
 
 > Vanishing on objects syntomic over the base in the big syntomic site.
 
@@ -214,7 +214,7 @@ public theorem cohomology_isZero_of_isParasiticFor_syntomic
     IsZero (((SheafOfModules.toSheaf _).obj G).H' p U)
 ```
 
-**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 602](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L602). The attribute's comment: “topology\_parasitic\_vanishing”.
+**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 602](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L602). The attribute's comment: “topology\_parasitic\_vanishing”.
 
 > Vanishing on objects flat and locally of finite presentation over the
 > base in the big fppf site.
@@ -241,7 +241,7 @@ public theorem cohomology_isZero_of_isParasiticFor_fppf
 
 [Tag 07AG](https://stacks.math.columbia.edu/tag/07AG) in the Stacks Project.
 
-**`AlgebraicGeometry.bigZariskiPushforward_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L490). The attribute's comment: “big Zariski direct image”.
+**`AlgebraicGeometry.bigZariskiPushforward_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L490). The attribute's comment: “big Zariski direct image”.
 
 > Direct image of a parasitic module on the big Zariski site is parasitic.
 
@@ -261,7 +261,7 @@ public theorem bigZariskiPushforward_isParasitic
       ((SheafOfModules.pushforward.{u} φ).obj F).val
 ```
 
-**`AlgebraicGeometry.bigZariskiHigherDirectImage_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L510). The attribute's comment: “big Zariski higher direct images”.
+**`AlgebraicGeometry.bigZariskiHigherDirectImage_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L510). The attribute's comment: “big Zariski higher direct images”.
 
 > Every higher direct image of a parasitic module on the big Zariski site is
 > parasitic.
@@ -283,7 +283,7 @@ public theorem bigZariskiHigherDirectImage_isParasitic
         (SheafOfModules.pushforward.{u} φ) i).obj F).val
 ```
 
-**`AlgebraicGeometry.bigEtalePushforward_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 546](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L546). The attribute's comment: “big étale direct image”.
+**`AlgebraicGeometry.bigEtalePushforward_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 546](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L546). The attribute's comment: “big étale direct image”.
 
 > Direct image of a parasitic module on the big étale site is parasitic.
 
@@ -303,7 +303,7 @@ public theorem bigEtalePushforward_isParasitic
       ((SheafOfModules.pushforward.{u} φ).obj F).val
 ```
 
-**`AlgebraicGeometry.bigEtaleHigherDirectImage_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L565). The attribute's comment: “big étale higher direct images”.
+**`AlgebraicGeometry.bigEtaleHigherDirectImage_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L565). The attribute's comment: “big étale higher direct images”.
 
 > Higher direct images of a parasitic module on the big étale site are parasitic.
 
@@ -324,7 +324,7 @@ public theorem bigEtaleHigherDirectImage_isParasitic
         (SheafOfModules.pushforward.{u} φ) i).obj F).val
 ```
 
-**`AlgebraicGeometry.bigSmoothPushforward_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L601). The attribute's comment: “big smooth direct image”.
+**`AlgebraicGeometry.bigSmoothPushforward_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 601](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L601). The attribute's comment: “big smooth direct image”.
 
 > Direct image of a parasitic module on the big smooth site is parasitic.
 
@@ -344,7 +344,7 @@ public theorem bigSmoothPushforward_isParasitic
       ((SheafOfModules.pushforward.{u} φ).obj F).val
 ```
 
-**`AlgebraicGeometry.bigSmoothHigherDirectImage_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 620](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L620). The attribute's comment: “big smooth higher direct images”.
+**`AlgebraicGeometry.bigSmoothHigherDirectImage_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 620](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L620). The attribute's comment: “big smooth higher direct images”.
 
 > Higher direct images of a parasitic module on the big smooth site are parasitic.
 
@@ -365,7 +365,7 @@ public theorem bigSmoothHigherDirectImage_isParasitic
         (SheafOfModules.pushforward.{u} φ) i).obj F).val
 ```
 
-**`AlgebraicGeometry.bigSyntomicPushforward_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 656](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L656). The attribute's comment: “big syntomic direct image”.
+**`AlgebraicGeometry.bigSyntomicPushforward_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 656](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L656). The attribute's comment: “big syntomic direct image”.
 
 > Direct image of a parasitic module on the big syntomic site is parasitic.
 
@@ -385,7 +385,7 @@ public theorem bigSyntomicPushforward_isParasitic
       ((SheafOfModules.pushforward.{u} φ).obj F).val
 ```
 
-**`AlgebraicGeometry.bigSyntomicHigherDirectImage_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 675](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L675). The attribute's comment: “big syntomic higher direct images”.
+**`AlgebraicGeometry.bigSyntomicHigherDirectImage_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 675](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L675). The attribute's comment: “big syntomic higher direct images”.
 
 > Higher direct images of a parasitic module on the big syntomic site are parasitic.
 
@@ -406,7 +406,7 @@ public theorem bigSyntomicHigherDirectImage_isParasitic
         (SheafOfModules.pushforward.{u} φ) i).obj F).val
 ```
 
-**`AlgebraicGeometry.bigFppfPushforward_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 711](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L711). The attribute's comment: “big fppf direct image”.
+**`AlgebraicGeometry.bigFppfPushforward_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 711](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L711). The attribute's comment: “big fppf direct image”.
 
 > Direct image of a parasitic module on the big fppf site is parasitic.
 
@@ -426,7 +426,7 @@ public theorem bigFppfPushforward_isParasitic
       ((SheafOfModules.pushforward.{u} φ).obj F).val
 ```
 
-**`AlgebraicGeometry.bigFppfHigherDirectImage_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 730](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L730). The attribute's comment: “big fppf higher direct images”.
+**`AlgebraicGeometry.bigFppfHigherDirectImage_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean, line 730](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/ParasiticPushforward.lean#L730). The attribute's comment: “big fppf higher direct images”.
 
 > Higher direct images of a parasitic module on the big fppf site are parasitic.
 
@@ -451,7 +451,7 @@ public theorem bigFppfHigherDirectImage_isParasitic
 
 [Tag 0756](https://stacks.math.columbia.edu/tag/0756) in the Stacks Project.
 
-**`AlgebraicGeometry.bigFppfCohomology_map_bijective_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyComparison.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyComparison.lean#L299). The attribute's comment: “cohomology comparison step, from Tag 0755”.
+**`AlgebraicGeometry.bigFppfCohomology_map_bijective_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyComparison.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyComparison.lean#L299). The attribute's comment: “cohomology comparison step, from Tag 0755”.
 
 > **A morphism of sheaves of `𝒪`-modules on the big fppf site over `S` whose kernel and
 > cokernel are parasitic induces isomorphisms `H^p(U, ℱ) → H^p(U, 𝒢)` at every object `U` flat
@@ -494,7 +494,7 @@ public theorem bigFppfCohomology_map_bijective_of_isParasitic
         ((SheafOfModules.toSheaf 𝒪).map φ) p U)
 ```
 
-**`AlgebraicGeometry.bigFppfCohomology_map_bijective_of_isParasiticFor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyComparison.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyComparison.lean#L358). The attribute's comment: “cohomology comparison step, from Tag 0755, at the objects flat and locally of finite presentation over S, which is the shape 0756 uses”.
+**`AlgebraicGeometry.bigFppfCohomology_map_bijective_of_isParasiticFor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyComparison.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyComparison.lean#L358). The attribute's comment: “cohomology comparison step, from Tag 0755, at the objects flat and locally of finite presentation over S, which is the shape 0756 uses”.
 
 > **A morphism of sheaves of `𝒪`-modules on the big fppf site over `S` whose kernel and
 > cokernel are parasitic for the fppf topology induces isomorphisms `H^p(U, ℱ) → H^p(U, 𝒢)` at
@@ -544,7 +544,7 @@ public theorem bigFppfCohomology_map_bijective_of_isParasiticFor
         ((SheafOfModules.toSheaf 𝒪).map φ) p U)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.flatSmallEtaleSiteCohomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyEtaleConclusion.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyEtaleConclusion.lean#L277). The attribute's comment: “étale topology”.
+**`AlgebraicGeometry.BigFppfOver.flatSmallEtaleSiteCohomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyEtaleConclusion.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyEtaleConclusion.lean#L277). The attribute's comment: “étale topology”.
 
 > **The conclusion of [Stacks, Tag 0756] at `τ = étale`.**  Let `B` be a big fppf site, `S` a
 > scheme below its cutoff and `𝒢` a sheaf of `𝒪`-modules on `(Sch/S)_fppf` such that
@@ -583,7 +583,7 @@ public def flatSmallEtaleSiteCohomologyAddEquiv (p : ℕ) :
           (objSmallEtaleRestrict B S hS U G)) p
 ```
 
-**`AlgebraicGeometry.BigFppfOver.flatSmallSiteCohomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyGeneralBase.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyGeneralBase.lean#L457). The attribute's comment: “Zariski topology”.
+**`AlgebraicGeometry.BigFppfOver.flatSmallSiteCohomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyGeneralBase.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyGeneralBase.lean#L457). The attribute's comment: “Zariski topology”.
 
 > **The conclusion of [Stacks, Tag 0756] at `τ = Zar`.**  Let `B` be a big fppf site, `S` a
 > scheme below its cutoff and `𝒢` a sheaf of `𝒪`-modules on `(Sch/S)_fppf` such that
@@ -632,7 +632,7 @@ public def flatSmallSiteCohomologyAddEquiv (p : ℕ) :
           ((objRestrict B S hS U).obj G))) p
 ```
 
-**`AlgebraicGeometry.BigFppfOver.flatSmallZariskiSiteCohomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyGeneralBase.lean, line 488](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyGeneralBase.lean#L488). The attribute's comment: “Zariski topology, with the small site read as in 020T (2)”.
+**`AlgebraicGeometry.BigFppfOver.flatSmallZariskiSiteCohomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyGeneralBase.lean, line 488](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatCohomologyGeneralBase.lean#L488). The attribute's comment: “Zariski topology, with the small site read as in 020T (2)”.
 
 > **The conclusion of [Stacks, Tag 0756] at `τ = Zar`, with the right-hand side on the small
 > Zariski site.**  Under the hypotheses of
@@ -671,4 +671,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.12, Tag 07AF](https://stacks.math.columbia.edu/tag/07AF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

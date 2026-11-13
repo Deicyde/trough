@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.50 Integral algebraic stacks
 
-Section 101.50 of the Stacks Project, [Tag 0GWA](https://stacks.math.columbia.edu/tag/0GWA). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.50 of the Stacks Project, [Tag 0GWA](https://stacks.math.columbia.edu/tag/0GWA). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GWB, a definition
 
 [Tag 0GWB](https://stacks.math.columbia.edu/tag/0GWB) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsIntegral`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IntegralAlgebraicStack.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/IntegralAlgebraicStack.lean#L72).
+**`AlgebraicGeometry.Stack.IsIntegral`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IntegralAlgebraicStack.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/IntegralAlgebraicStack.lean#L72).
 
 > An algebraic stack `𝒳` over `S` is *integral* when it is reduced, it is
 > decent, its inertia projection `I_𝒳 ⟶ 𝒳` is quasi-compact, and its space of points `|𝒳|` is
@@ -28,7 +28,7 @@ abbrev IsIntegral (𝒳 : AlgebraicStacks.{u, w} B S hS) : Prop
 
 [Tag 0GWC](https://stacks.math.columbia.edu/tag/0GWC) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.stacksSober_and_exists_openSubstack_isGerbeOver_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IntegralAlgebraicStackStructure.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/IntegralAlgebraicStackStructure.lean#L266).
+**`AlgebraicGeometry.Stack.stacksSober_and_exists_openSubstack_isGerbeOver_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IntegralAlgebraicStackStructure.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/IntegralAlgebraicStackStructure.lean#L266).
 
 > **Stacks 0GWC.** Let `𝒳` be an integral algebraic stack over `S` (**Stacks 0GWB**). Then
 > 1. `|𝒳|` is sober (Stacks 004X), irreducible, and has a unique generic point;
@@ -56,7 +56,7 @@ theorem stacksSober_and_exists_openSubstack_isGerbeOver_of_isIntegral
 
 [Tag 0GWD](https://stacks.math.columbia.edu/tag/0GWD) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isIntegral_of_isReducedStack_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IntegralQuasiSeparatedStack.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/IntegralQuasiSeparatedStack.lean#L198).
+**`AlgebraicGeometry.Stack.isIntegral_of_isReducedStack_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IntegralQuasiSeparatedStack.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/IntegralQuasiSeparatedStack.lean#L198).
 
 > **Stacks 0GWD.** An algebraic stack `𝒳` over `S` which is reduced and quasi-separated and
 > whose space of points `|𝒳|` is irreducible is integral in the sense of Stacks 0GWB.
@@ -80,7 +80,7 @@ theorem isIntegral_of_isReducedStack_of_isAbsolutelyQuasiSeparated
 
 [Tag 0GWE](https://stacks.math.columbia.edu/tag/0GWE) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.bijective_pointClosure_and_bijective_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IntegralClosedSubstack.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/IntegralClosedSubstack.lean#L114).
+**`AlgebraicGeometry.Stack.bijective_pointClosure_and_bijective_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IntegralClosedSubstack.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/IntegralClosedSubstack.lean#L114).
 
 > **Stacks 0GWE.** Let `𝒳` be a decent algebraic stack over `S` whose inertia projection
 > `I_𝒳 ⟶ 𝒳` is quasi-compact. Then the map `x ↦ closure {x}` from the points of `𝒳` to the
@@ -102,4 +102,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.50, Tag 0GWA](https://stacks.math.columbia.edu/tag/0GWA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

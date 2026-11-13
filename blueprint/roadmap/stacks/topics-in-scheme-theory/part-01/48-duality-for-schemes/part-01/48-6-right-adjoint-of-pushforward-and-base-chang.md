@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.6 Right adjoint of pushforward and base change, II
 
-Section 48.6 of the Stacks Project, [Tag 0BZF](https://stacks.math.columbia.edu/tag/0BZF). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.6 of the Stacks Project, [Tag 0BZF](https://stacks.math.columbia.edu/tag/0BZF). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E9S, a remark
 
 [Tag 0E9S](https://stacks.math.columbia.edu/tag/0E9S) in the Stacks Project.
 
-**`Stacks.Duality.torIndependentTwistedInverseImageBaseChange_restrict_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeRestriction.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeRestriction.lean#L243). The attribute's comment: “the commutative square of maps exhibiting the isomorphism: the two maps of 0A9L and the identifications of restriction with derived pullback carry the restriction to U' of the base change map 0AA6 to that of the square of opens”.
+**`Stacks.Duality.torIndependentTwistedInverseImageBaseChange_restrict_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeRestriction.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeRestriction.lean#L243). The attribute's comment: “the commutative square of maps exhibiting the isomorphism: the two maps of 0A9L and the identifications of restriction with derived pullback carry the restriction to U' of the base change map 0AA6 to that of the square of opens”.
 
 > **The restriction of the base change map to `U'`, as a commutative square.** For a Tor
 > independent cartesian square of quasi-compact quasi-separated schemes and quasi-compact opens
@@ -46,7 +46,7 @@ theorem torIndependentTwistedInverseImageBaseChange_restrict_comm
           (torIndependent_morphismRestrict_resLE f g hTor hVV')).app (Rs[V.ι].obj K)
 ```
 
-**`Stacks.Duality.torIndependentTwistedInverseImageBaseChangeRestrictArrowIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeRestriction.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeRestriction.lean#L320).
+**`Stacks.Duality.torIndependentTwistedInverseImageBaseChangeRestrictArrowIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeRestriction.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeRestriction.lean#L320).
 
 > **[Stacks, Tag 0E9S].** Consider a cartesian square of quasi-compact and quasi-separated
 > schemes
@@ -85,7 +85,7 @@ def torIndependentTwistedInverseImageBaseChangeRestrictArrowIso
 
 [Tag 0AA8](https://stacks.math.columbia.edu/tag/0AA8) in the Stacks Project.
 
-**`Stacks.Duality.isIso_twistedInverseImageBaseChangeMap_app_of_finiteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/AffineBaseChangeFiniteTorDimension.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/AffineBaseChangeFiniteTorDimension.lean#L202). The attribute's comment: “(3)”.
+**`Stacks.Duality.isIso_twistedInverseImageBaseChangeMap_app_of_finiteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/AffineBaseChangeFiniteTorDimension.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/AffineBaseChangeFiniteTorDimension.lean#L202). The attribute's comment: “(3)”.
 
 > **[Stacks, Tag 0AA8] part (3).** In a cartesian square of quasi-compact and quasi-separated
 > schemes, let `g : Y' ⟶ Y` be a morphism of affine schemes, `f : X ⟶ Y` proper, and `f`, `g` Tor
@@ -113,7 +113,7 @@ theorem isIso_twistedInverseImageBaseChangeMap_app_of_finiteTorDimension
       sq).app K)
 ```
 
-**`Stacks.Duality.isIso_twistedInverseImageBaseChangeMap_app_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/AffineBaseChangeFlat.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/AffineBaseChangeFlat.lean#L37). The attribute's comment: “(1)”.
+**`Stacks.Duality.isIso_twistedInverseImageBaseChangeMap_app_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/AffineBaseChangeFlat.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/AffineBaseChangeFlat.lean#L37). The attribute's comment: “(1)”.
 
 > In a cartesian square of quasi-compact and quasi-separated schemes, let `g : Y' ⟶ Y` be a
 > morphism of affine schemes, `f : X ⟶ Y` proper, and `f`, `g` Tor independent. If `f` is flat and
@@ -135,7 +135,7 @@ theorem isIso_twistedInverseImageBaseChangeMap_app_of_flat (sq : IsPullback g' f
 
 Declarations registered for the tag:
 
-- [`Stacks.Duality.isIso_twistedInverseImageBaseChangeMap_app_of_perfect`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/AffineBaseChangePerfect.lean#L43), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/AffineBaseChangePerfectRegistration.lean, line 17](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/AffineBaseChangePerfectRegistration.lean#L17) (StacksFrontier): “(2)”.
+- [`Stacks.Duality.isIso_twistedInverseImageBaseChangeMap_app_of_perfect`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/AffineBaseChangePerfect.lean#L43), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/AffineBaseChangePerfectRegistration.lean, line 17](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/AffineBaseChangePerfectRegistration.lean#L17) (StacksFrontier): “(2)”.
 
 ## Depends on
 
@@ -144,4 +144,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.6, Tag 0BZF](https://stacks.math.columbia.edu/tag/0BZF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,14 +8,14 @@ proof: formalized
 
 # Reversing multiple-zeta summation conventions
 
-10 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html).
+10 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html).
 
 ## Reversed index
 
 The reverse of an index $(k_0, \dots, k_{d-1})$ is the index
 $(k_{d-1}, \dots, k_0)$ with the same entries in the opposite order.
 
-Formalized by `MetaMathlibExt.MultipleZeta.Index.reverse`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#reverse).
+Formalized by `MetaMathlibExt.MultipleZeta.Index.reverse`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#reverse).
 
 ## Strictly increasing tuples
 
@@ -24,7 +24,7 @@ length $d$ is a tuple $(m_0, \dots, m_{d-1})$ of positive natural numbers with
 $m_0 < m_1 < \cdots < m_{d-1}$. These are the summation variables of the increasing
 multiple-zeta convention.
 
-Formalized by `MetaMathlibExt.MultipleZeta.StrictIncreasingTuple`, an abbreviation declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#strict-increasing-tuple).
+Formalized by `MetaMathlibExt.MultipleZeta.StrictIncreasingTuple`, an abbreviation declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#strict-increasing-tuple).
 
 ## Admissibility in the increasing convention
 
@@ -36,7 +36,7 @@ that the index is nonempty and its last entry is at least two.
 
 This is the convention in arXiv:2304.08722 and arXiv:2608.10675.
 
-Formalized by `MetaMathlibExt.MultipleZeta.Index.IsIncreasingAdmissible`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#is-increasing-admissible).
+Formalized by `MetaMathlibExt.MultipleZeta.Index.IsIncreasingAdmissible`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#is-increasing-admissible).
 
 ## Increasing admissibility is admissibility of the reverse
 
@@ -44,7 +44,7 @@ An index is admissible in the
 increasing convention (nonempty with last entry at least two) if and only if its reverse is
 admissible (nonempty with first entry at least two).
 
-Formalized by `MetaMathlibExt.MultipleZeta.Index.isIncreasingAdmissible_iff_reverse_isAdmissible`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#is-increasing-admissible-iff-reverse-is).
+Formalized by `MetaMathlibExt.MultipleZeta.Index.isIncreasingAdmissible_iff_reverse_isAdmissible`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#is-increasing-admissible-iff-reverse-is).
 
 ## Entries of the reversed index
 
@@ -52,7 +52,7 @@ Let $k = (k_0, \dots, k_{d-1})$ be an index of depth $d$;
 its reverse also has depth $d$. For every $i < d$, the $i$-th entry of the reverse of $k$ is
 $k_{d-1-i}$.
 
-Formalized by `MetaMathlibExt.MultipleZeta.Index.reverse_entry`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#reverse-entry).
+Formalized by `MetaMathlibExt.MultipleZeta.Index.reverse_entry`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#reverse-entry).
 
 ## Summand of the increasing multiple-zeta series
 
@@ -64,7 +64,7 @@ $$\Bigl(\prod_{i=0}^{d-1} m_i^{k_i}\Bigr)^{-1}.$$
 
 This is the convention in arXiv:2304.08722 and arXiv:2608.10675.
 
-Formalized by `MetaMathlibExt.MultipleZeta.increasingSummand`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#increasing-summand).
+Formalized by `MetaMathlibExt.MultipleZeta.increasingSummand`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#increasing-summand).
 
 ## Multiple zeta value in the increasing convention
 
@@ -79,7 +79,7 @@ be $0$ if the family is not summable).
 
 This is the convention in arXiv:2304.08722 and arXiv:2608.10675.
 
-Formalized by `MetaMathlibExt.MultipleZeta.increasingValue`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#increasing-value).
+Formalized by `MetaMathlibExt.MultipleZeta.increasingValue`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#increasing-value).
 
 ## Reversal of strictly increasing tuples
 
@@ -89,7 +89,7 @@ natural numbers to the reversed tuple $(m_{d-1}, \dots, m_0)$ is a bijection fro
 increasing tuples of length $d$ onto the strictly decreasing tuples of length $d$, whose inverse
 again reverses the order of the coordinates.
 
-Formalized by `MetaMathlibExt.MultipleZeta.increasingEquivDecreasing`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#increasing-equiv-decreasing).
+Formalized by `MetaMathlibExt.MultipleZeta.increasingEquivDecreasing`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#increasing-equiv-decreasing).
 
 ## Reversal preserves each summand
 
@@ -99,7 +99,7 @@ numbers. Then the summand of the increasing multiple-zeta series of $k$ at $m$ e
 summand of the strict multiple-zeta series of the reversed index $(k_{d-1}, \dots, k_0)$ at the
 strictly decreasing tuple $(m_{d-1}, \dots, m_0)$.
 
-Formalized by `MetaMathlibExt.MultipleZeta.increasingSummand_eq_strictSummand_reverse`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#increasing-summand-eq-strict-summand-rev).
+Formalized by `MetaMathlibExt.MultipleZeta.increasingSummand_eq_strictSummand_reverse`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#increasing-summand-eq-strict-summand-rev).
 
 ## Increasing values agree with strict values of the reverse
 
@@ -114,7 +114,7 @@ $$\sum_{0 < m_0 < \cdots < m_{d-1}} \prod_{i=0}^{d-1} m_i^{-k_i}
 where both sides are unconditional sums of real numbers (taken to be $0$ for a non-summable
 family).
 
-Formalized by `MetaMathlibExt.MultipleZeta.increasingValue_eq_strictValue_reverse`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#increasing-value-eq-strict-value-reverse).
+Formalized by `MetaMathlibExt.MultipleZeta.increasingValue_eq_strictValue_reverse`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/Reversal.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/Reversal.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html#increasing-value-eq-strict-value-reverse).
 
 ## Depends on
 
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Reversing multiple-zeta summation conventions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/reversing-multiple-zeta-summation-conventions)

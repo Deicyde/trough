@@ -7,7 +7,7 @@ statement: formalized
 
 # Multiple knapsack problem
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/multiple-knapsack-problem/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/multiple-knapsack-problem/index.html).
 
 ## Multiple-knapsack instances
 
@@ -15,7 +15,7 @@ A multiple-knapsack instance consists of a finite list of
 items, each a pair $(w, v)$ of natural numbers giving its weight $w$ and value $v$, a finite list
 of natural-number knapsack capacities, and a natural-number target value.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.MultipleKnapsack.MultipleKnapsackInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/multiple-knapsack-problem/index.html#multiple-knapsack-instance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.MultipleKnapsack.MultipleKnapsackInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/multiple-knapsack-problem/index.html#multiple-knapsack-instance).
 
 ## Feasible multiple-knapsack instances
 
@@ -27,7 +27,7 @@ and $a_j = m$ leaves item $j$ out, such that for every $b < m$ the total weight
 $\sum_{j : a_j = b} w_j$ is at most $c_b$, and the total value $\sum_{j : a_j < m} v_j$ is at
 least $V$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.MultipleKnapsack.MultipleKnapsackFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/multiple-knapsack-problem/index.html#multiple-knapsack-feasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.MultipleKnapsack.MultipleKnapsackFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/multiple-knapsack-problem/index.html#multiple-knapsack-feasible).
 
 ## MULTIPLE KNAPSACK as a decision problem
 
@@ -35,7 +35,7 @@ The decision problem MULTIPLE KNAPSACK accepts a
 bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a feasible
 multiple-knapsack instance. Bitstrings that do not decode are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.MultipleKnapsack.multipleKnapsackDec`, a definition declared in [WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/multiple-knapsack-problem/index.html#multiple-knapsack-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.MultipleKnapsack.multipleKnapsackDec`, a definition declared in [WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/multiple-knapsack-problem/index.html#multiple-knapsack-dec).
 
 ## MULTIPLE KNAPSACK is NP-complete
 
@@ -46,7 +46,7 @@ and every decision problem in NP has a polynomial-time many-one reduction to MUL
 
 - M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), MULTIPLE KNAPSACK.
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.MultipleKnapsack.multipleKnapsack_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/multiple-knapsack-problem/index.html#multiple-knapsack-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.MultipleKnapsack.multipleKnapsack_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/MultipleKnapsackWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/multiple-knapsack-problem/index.html#multiple-knapsack-np-complete).
 
 ## Depends on
 
@@ -55,4 +55,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Multiple knapsack problem](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/multiple-knapsack-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/multiple-knapsack-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/multiple-knapsack-problem)

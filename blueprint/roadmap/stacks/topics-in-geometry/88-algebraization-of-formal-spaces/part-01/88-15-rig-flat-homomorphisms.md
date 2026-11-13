@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.15 Rig-flat homomorphisms
 
-Section 88.15 of the Stacks Project, [Tag 0GGK](https://stacks.math.columbia.edu/tag/0GGK). 10 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.15 of the Stacks Project, [Tag 0GGK](https://stacks.math.columbia.edu/tag/0GGK). 10 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GGL, a lemma
 
 [Tag 0GGL](https://stacks.math.columbia.edu/tag/0GGL) in the Stacks Project.
 
-**`Rig.naivelyRigFlat_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Flat.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Flat.lean#L333).
+**`Rig.naivelyRigFlat_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Flat.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/Flat.lean#L333).
 
 > For an adic morphism of weakly admissible adic topological rings with
 > finitely generated ideals of definition, flatness after localization may be
@@ -54,7 +54,7 @@ public theorem naivelyRigFlat_tfae
 
 [Tag 0GGM](https://stacks.math.columbia.edu/tag/0GGM) in the Stacks Project.
 
-**`Rig.RingHom.IsNaivelyRigFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Flat.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Flat.lean#L116).
+**`Rig.RingHom.IsNaivelyRigFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Flat.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/Flat.lean#L116).
 
 > A ring homomorphism `φ : A →+* B` is naively rig-flat if it is adic, topologically of finite
 > type, and `B[1 / φ(f)]` is flat over `A` for every topologically nilpotent `f : A`.
@@ -68,7 +68,7 @@ public abbrev IsNaivelyRigFlat {A B : Type*} [CommRing A] [CommRing B]
 
 [Tag 0GGN](https://stacks.math.columbia.edu/tag/0GGN) in the Stacks Project.
 
-**`Rig.exists_isNaivelyRigFlat_not_isNaivelyRigFlat_completedAwayMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatRecompletionExample.lean, line 594](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/FlatRecompletionExample.lean#L594).
+**`Rig.exists_isNaivelyRigFlat_not_isNaivelyRigFlat_completedAwayMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatRecompletionExample.lean, line 594](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/FlatRecompletionExample.lean#L594).
 
 > **Stacks 0GGN.** Naive rig-flatness is not preserved by passing to completed principal
 > localizations: there is a two-dimensional Noetherian local domain `A`, complete for a principal
@@ -125,7 +125,7 @@ public theorem exists_isNaivelyRigFlat_not_isNaivelyRigFlat_completedAwayMap :
 
 [Tag 0GGP](https://stacks.math.columbia.edu/tag/0GGP) in the Stacks Project.
 
-**`Rig.RingHom.IsRigFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Flat.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Flat.lean#L182).
+**`Rig.RingHom.IsRigFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Flat.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/Flat.lean#L182).
 
 > A ring homomorphism is rig-flat if it is adic and topologically of finite
 > type, and all the induced maps between completed principal localizations are
@@ -140,7 +140,7 @@ public abbrev IsRigFlat {A B : Type*} [CommRing A] [CommRing B]
 
 [Tag 0GGQ](https://stacks.math.columbia.edu/tag/0GGQ) in the Stacks Project.
 
-**`Rig.RingHom.isRigFlat_of_isNaivelyRigFlat_of_isJacobsonRing_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatJacobson.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/FlatJacobson.lean#L490).
+**`Rig.RingHom.isRigFlat_of_isNaivelyRigFlat_of_isJacobsonRing_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatJacobson.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/FlatJacobson.lean#L490).
 
 > **Stacks 0GGQ.** A naively rig-flat arrow of `WAdm^Noeth` whose source has a Jacobson
 > reduction modulo an ideal of definition is rig-flat.
@@ -163,7 +163,7 @@ public theorem isRigFlat_of_isNaivelyRigFlat_of_isJacobsonRing_quotient
 
 [Tag 0GGR](https://stacks.math.columbia.edu/tag/0GGR) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigFlat_completedTensorProduct_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatBaseChangeAdicFiniteType.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatBaseChangeAdicFiniteType.lean#L453).
+**`AlgebraicGeometry.FormalSpace.isRigFlat_completedTensorProduct_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatBaseChangeAdicFiniteType.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatBaseChangeAdicFiniteType.lean#L450).
 
 > **Stacks 0GGR.**  Let `A → B` and `A → C` be arrows of `WAdm^Noeth`.  If `A → B` is rig-flat
 > and `A → C` is adic and topologically of finite type, then `C → B ⊗̂_A C` is rig-flat.
@@ -188,7 +188,7 @@ public theorem isRigFlat_completedTensorProduct_baseChange
       (CompletedTensorProduct (R := A) (M := B) (N := C)))
 ```
 
-**`Rig.flat_atPrime_completedTensorProduct_restrictedPowerSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/CompletedTensorProductFlat.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/CompletedTensorProductFlat.lean#L269). The attribute's comment: “the last step only: for `C` the restricted power series ring `A{σ}` on a finite set of variables rather than an arbitrary adic `A → C` of topologically finite type, and flatness of `C → B ⊗̂_A C` localized at one rig-closed prime whose contraction to `A` is also rig-closed, rather than rig-flatness of `C → B ⊗̂_A C`”.
+**`Rig.flat_atPrime_completedTensorProduct_restrictedPowerSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/CompletedTensorProductFlat.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/ClosedPoint/CompletedTensorProductFlat.lean#L269). The attribute's comment: “the last step only: for `C` the restricted power series ring `A{σ}` on a finite set of variables rather than an arbitrary adic `A → C` of topologically finite type, and flatness of `C → B ⊗̂_A C` localized at one rig-closed prime whose contraction to `A` is also rig-closed, rather than rig-flatness of `C → B ⊗̂_A C`”.
 
 > **Flatness of `A{σ} → B ⊗̂[A] A{σ}` at a rig-closed point.**  Let `A → B` be a continuous
 > adic and naively rig-flat homomorphism of Noetherian adic topological rings, complete along an
@@ -241,7 +241,7 @@ public theorem flat_atPrime_completedTensorProduct_restrictedPowerSeries
 
 [Tag 0GGS](https://stacks.math.columbia.edu/tag/0GGS) in the Stacks Project.
 
-**`Rig.isRigFlat_of_flat_etale_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatEtaleLocalization.lean, line 1241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/FlatEtaleLocalization.lean#L1241).
+**`Rig.isRigFlat_of_flat_etale_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatEtaleLocalization.lean, line 1241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/FlatEtaleLocalization.lean#L1241).
 
 > **Stacks 0GGS.** Rig-flatness ascends across the flat horizontal maps of a commutative
 > square of adic homomorphisms of topological finite type between Noetherian weakly admissible
@@ -285,7 +285,7 @@ public theorem isRigFlat_of_flat_etale_square
 
 [Tag 0GGT](https://stacks.math.columbia.edu/tag/0GGT) in the Stacks Project.
 
-**`Rig.RingHom.isRigFlat_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatDescent.lean, line 742](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/FlatDescent.lean#L742).
+**`Rig.RingHom.isRigFlat_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatDescent.lean, line 742](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/FlatDescent.lean#L742).
 
 > **Stacks 0GGT.** Rig-flatness descends in a commutative square of adic homomorphisms of
 > topological finite type between Noetherian weakly admissible rings whose lower horizontal map is
@@ -320,7 +320,7 @@ public theorem isRigFlat_of_faithfullyFlat
 
 [Tag 0GGU](https://stacks.math.columbia.edu/tag/0GGU) in the Stacks Project.
 
-**`Rig.rigFlat_isLocalNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatIsLocal.lean, line 750](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/FlatIsLocal.lean#L750).
+**`Rig.rigFlat_isLocalNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatIsLocal.lean, line 749](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/FlatIsLocal.lean#L749).
 
 > **Rig-flatness is a local property of arrows of `WAdm^Noeth`** (Stacks 0GGU): it ascends
 > along completed étale localization diagrams, descends along faithfully flat ones, and is
@@ -334,7 +334,7 @@ theorem rigFlat_isLocalNoetherian :
         RingHom.IsRigFlat φ)
 ```
 
-**`Rig.rigFlat_isLocalNoetherian'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatIsLocalRefined.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/FlatIsLocalRefined.lean#L162).
+**`Rig.rigFlat_isLocalNoetherian'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatIsLocalRefined.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/FlatIsLocalRefined.lean#L161).
 
 > **Rig-flatness is a local property of arrows of `WAdm^Noeth`**: it is
 > independent of the presentations of its source and target, ascends along completed étale
@@ -353,7 +353,7 @@ theorem rigFlat_isLocalNoetherian' :
 
 [Tag 0GGV](https://stacks.math.columbia.edu/tag/0GGV) in the Stacks Project.
 
-**`Rig.rigFlat_isStableUnderCompositionNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatStableUnderComposition.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/FlatStableUnderComposition.lean#L214).
+**`Rig.rigFlat_isStableUnderCompositionNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatStableUnderComposition.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/FlatStableUnderComposition.lean#L214).
 
 > **Rig-flatness is stable under composition on `WAdm^Noeth`** (Stacks 0GGV). Adicness and
 > topological finite type of the composite are Stacks 0GBZ; naive rig-flatness of the induced map
@@ -375,4 +375,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.15, Tag 0GGK](https://stacks.math.columbia.edu/tag/0GGK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

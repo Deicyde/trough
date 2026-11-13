@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.29 Gysin homomorphisms
 
-Section 42.29 of the Stacks Project, [Tag 02T7](https://stacks.math.columbia.edu/tag/02T7). 8 tags here are carried by 39 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.29 of the Stacks Project, [Tag 02T7](https://stacks.math.columbia.edu/tag/02T7). 8 tags here are carried by 39 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02T8, a definition
 
 [Tag 02T8](https://stacks.math.columbia.edu/tag/02T8) in the Stacks Project.
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernComponent/ClassRule.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernComponent/ClassRule.lean#L132). The attribute's comment: “Gysin homomorphism”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernComponent/ClassRule.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernComponent/ClassRule.lean#L132). The attribute's comment: “Gysin homomorphism”.
 
 > The Gysin homomorphism of the zero scheme of a global section `s` of an invertible module:
 > `Stacks.Chow.gysinHomomorphism` at the first Chern class component rule of `L`.
@@ -24,7 +24,7 @@ abbrev gysinHomomorphismOfInvertible : CycleGroup C p (k + 1) →+
     chowGroup C ((Stacks.Divisors.zeroScheme X L s).subschemeι ≫ p) k
 ```
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible_of_not_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernComponent/ClassRule.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernComponent/ClassRule.lean#L146). The attribute's comment: “integral component not contained in the zero scheme”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible_of_not_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernComponent/ClassRule.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernComponent/ClassRule.lean#L146). The attribute's comment: “integral component not contained in the zero scheme”.
 
 > The Gysin image of an integral closed subscheme not contained in the zero scheme is the class
 > of its scheme-theoretic intersection with that zero scheme.
@@ -42,7 +42,7 @@ theorem gysinHomomorphismOfInvertible_of_not_le (W : X.IdealSheafData)
           ((W.comap (Stacks.Divisors.zeroScheme X L s).subschemeι).subschemeι) k)
 ```
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean#L151). The attribute's comment: “integral component contained in the zero scheme”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean#L151). The attribute's comment: “integral component contained in the zero scheme”.
 
 > The Gysin image of an integral closed subscheme contained in the zero scheme of `s` is the
 > proper Chow pushforward into that zero scheme of the first Chern class of `L|_W`.
@@ -66,7 +66,7 @@ theorem gysinHomomorphismOfInvertible_of_le (W : X.IdealSheafData)
         (firstChernComponentClass C p k L W hW hDim)
 ```
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean#L168). The attribute's comment: “locally finite component formula”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean#L168). The attribute's comment: “locally finite component formula”.
 
 > The locally finite component formula for the Gysin map of an invertible module.
 
@@ -86,7 +86,7 @@ theorem gysinHomomorphismOfInvertible_finsum {J : Type u} (W : J → X.IdealShea
             (W j) (hW j) (hDim j)).1 x
 ```
 
-**`Stacks.Chow.effectiveCartierIntersectionOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean#L187). The attribute's comment: “intersection with an effective Cartier divisor”.
+**`Stacks.Chow.effectiveCartierIntersectionOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/InvertibleChernSpecialization.lean#L187). The attribute's comment: “intersection with an effective Cartier divisor”.
 
 > Intersection with the zero scheme of `s`, when that zero scheme is an effective Cartier
 > divisor, read as a class on the ambient scheme: the Gysin map of the zero scheme followed by
@@ -102,7 +102,7 @@ def effectiveCartierIntersectionOfInvertible
 
 [Tag 0B70](https://stacks.math.columbia.edu/tag/0B70) in the Stacks Project.
 
-**`Stacks.Chow.VirtualNormalTriple`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L86). The attribute's comment: “the triple (D, N, σ): D locally principal, N an invertible O\_D-module, σ a surjection from the inverse of N onto the pullback of the ideal sheaf of D”.
+**`Stacks.Chow.VirtualNormalTriple`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L86). The attribute's comment: “the triple (D, N, σ): D locally principal, N an invertible O\_D-module, σ a surjection from the inverse of N onto the pullback of the ideal sheaf of D”.
 
 > **Remark 0B70.** A triple `(D, 𝒩, σ)` on a scheme `X`: a locally principal closed subscheme
 > `i : D ⟶ X`, an invertible `𝒪_D`-module `𝒩` (the virtual normal bundle of `D` in `X`) and a
@@ -112,7 +112,7 @@ def effectiveCartierIntersectionOfInvertible
 structure VirtualNormalTriple (X : Scheme.{u})
 ```
 
-**`Stacks.Chow.VirtualNormalTriple.normalIsoOfIsEffectiveCartier`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L175). The attribute's comment: “footnote: if D is an effective Cartier divisor, then N is isomorphic to the restriction of O\_X(D) to D”.
+**`Stacks.Chow.VirtualNormalTriple.normalIsoOfIsEffectiveCartier`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L175). The attribute's comment: “footnote: if D is an effective Cartier divisor, then N is isomorphic to the restriction of O\_X(D) to D”.
 
 > **The footnote of Remark 0B70.** If `D` is an effective Cartier divisor, then
 > `𝒩 ≅ 𝒪_X(D)|_D`.
@@ -122,7 +122,7 @@ def normalIsoOfIsEffectiveCartier :
     T.N ≅ (Scheme.Modules.pullback T.D.subschemeι).obj (divisorSheaf T.D)
 ```
 
-**`Stacks.Chow.virtualNormalGysinOfIdeal_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L427). The attribute's comment: “the construction generalizes Definition 02T8: for D = Z(s) and N isomorphic to the restriction of L the two Gysin maps are equal”.
+**`Stacks.Chow.virtualNormalGysinOfIdeal_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L427). The attribute's comment: “the construction generalizes Definition 02T8: for D = Z(s) and N isomorphic to the restriction of L the two Gysin maps are equal”.
 
 > **The construction generalizes Definition 02T8.** For the zero scheme `D = Z(s)` of a section
 > `s` of an invertible module `ℒ`, and any invertible `𝒪_D`-module `𝒩 ≅ ℒ|_D`, the Gysin map of
@@ -140,7 +140,7 @@ theorem virtualNormalGysinOfIdeal_zeroScheme (L : X.Modules)
       gysinHomomorphismOfInvertible C p k L s
 ```
 
-**`Stacks.Chow.VirtualNormalTriple.gysin`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L476). The attribute's comment: “the Gysin homomorphism i^* from (k+1)-cycles on X to CH\_k(D) of a triple”.
+**`Stacks.Chow.VirtualNormalTriple.gysin`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L476). The attribute's comment: “the Gysin homomorphism i^* from (k+1)-cycles on X to CH\_k(D) of a triple”.
 
 > **Remark 0B70.** The Gysin homomorphism `i^* : Z_{k+1}(X) ⟶ A_k(D)` of a triple
 > `(D, 𝒩, σ)`.
@@ -149,7 +149,7 @@ theorem virtualNormalGysinOfIdeal_zeroScheme (L : X.Modules)
 def gysin : CycleGroup C p (k + 1) →+ chowGroup C (T.D.subschemeι ≫ p) k
 ```
 
-**`Stacks.Chow.VirtualNormalTriple.gysin_of_not_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L482). The attribute's comment: “rule (1)(a) of Definition 02T8 for a triple: W not contained in D”.
+**`Stacks.Chow.VirtualNormalTriple.gysin_of_not_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L482). The attribute's comment: “rule (1)(a) of Definition 02T8 for a triple: W not contained in D”.
 
 > **Remark 0B70, rule (1)(a) of Definition 02T8 for a triple.** For an integral closed
 > subscheme `W ⊆ X` of delta-dimension `k + 1` with `W ⊄ D`, `i^*[W] = [D ∩ W]_k`.
@@ -163,7 +163,7 @@ theorem gysin_of_not_le (W : X.IdealSheafData) (hW : IsIntegral W.subscheme)
           ((W.comap T.D.subschemeι).subschemeι) k)
 ```
 
-**`Stacks.Chow.VirtualNormalTriple.gysin_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L494). The attribute's comment: “rule (1)(b) of Definition 02T8 for a triple: W contained in D, with c\_1(N|\_W)”.
+**`Stacks.Chow.VirtualNormalTriple.gysin_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 494](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L494). The attribute's comment: “rule (1)(b) of Definition 02T8 for a triple: W contained in D, with c\_1(N|\_W)”.
 
 > **Remark 0B70, rule (1)(b) of Definition 02T8 for a triple.** For an integral closed
 > subscheme `W ⊆ D` of delta-dimension `k + 1`, `i^*[W] = i'_*(c₁(𝒩|_W) ∩ [W])`, where
@@ -181,7 +181,7 @@ theorem gysin_of_le (W : X.IdealSheafData) (hW : IsIntegral W.subscheme)
         (virtualNormalChernClass C p k T.D T.N W hW hDim h)
 ```
 
-**`Stacks.Chow.VirtualNormalTriple.gysin_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 508](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L508). The attribute's comment: “rule (2) of Definition 02T8 for a triple: locally finite sums”.
+**`Stacks.Chow.VirtualNormalTriple.gysin_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 508](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L508). The attribute's comment: “rule (2) of Definition 02T8 for a triple: locally finite sums”.
 
 > **Remark 0B70, rule (2) of Definition 02T8 for a triple.** For `α = ∑ n_j [W_j]` locally
 > finite, `i^*α = ∑ n_j i^*[W_j]`.
@@ -201,7 +201,7 @@ theorem gysin_finsum {J : Type u} (W : J → X.IdealSheafData)
           (W j) (hW j) (hDim j)).1 x
 ```
 
-**`Stacks.Chow.VirtualNormalTriple.nonempty_normalIso_of_isEffectiveCartier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L526). The attribute's comment: “footnote: if D is an effective Cartier divisor, then N is isomorphic to the restriction of O\_X(D) to D”.
+**`Stacks.Chow.VirtualNormalTriple.nonempty_normalIso_of_isEffectiveCartier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 526](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L526). The attribute's comment: “footnote: if D is an effective Cartier divisor, then N is isomorphic to the restriction of O\_X(D) to D”.
 
 > **The footnote of Remark 0B70.** If `D` is an effective Cartier divisor, then
 > `𝒩 ≅ 𝒪_X(D)|_D`.
@@ -211,7 +211,7 @@ theorem nonempty_normalIso_of_isEffectiveCartier (hD : IsEffectiveCartierDivisor
     Nonempty (T.N ≅ (Scheme.Modules.pullback T.D.subschemeι).obj (divisorSheaf T.D))
 ```
 
-**`Stacks.Chow.VirtualNormalTriple.gysin_heq_of_zeroScheme_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L536). The attribute's comment: “the construction generalizes Definition 02T8: agreement when D = Z(s) and N is the restriction of L”.
+**`Stacks.Chow.VirtualNormalTriple.gysin_heq_of_zeroScheme_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 536](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L536). The attribute's comment: “the construction generalizes Definition 02T8: agreement when D = Z(s) and N is the restriction of L”.
 
 > **Remark 0B70: the construction generalizes Definition 02T8.** If `D = Z(s)` for a global
 > section `s` of an invertible `𝒪_X`-module `ℒ` and `𝒩 ≅ ℒ|_D`, the Gysin map of the triple is the
@@ -225,7 +225,7 @@ theorem gysin_heq_of_zeroScheme_eq (L : X.Modules)
     HEq (T.gysin C p k) (gysinHomomorphismOfInvertible C p k L s)
 ```
 
-**`Stacks.Chow.VirtualNormalTriple.gysin_heq_divisorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L547). The attribute's comment: “agreement with Definition 02T8 when D is an effective Cartier divisor”.
+**`Stacks.Chow.VirtualNormalTriple.gysin_heq_divisorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 547](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L547). The attribute's comment: “agreement with Definition 02T8 when D is an effective Cartier divisor”.
 
 > **Remark 0B70 at an effective Cartier divisor.** If `D` is an effective Cartier divisor (so
 > that `𝒩 ≅ 𝒪_X(D)|_D` by the footnote), the Gysin map of the triple is the Gysin map of
@@ -237,7 +237,7 @@ theorem gysin_heq_divisorSheaf (hD : IsEffectiveCartierDivisor T.D) :
       (gysinHomomorphismOfInvertible C p k (divisorSheaf T.D) (divisorSheafGlobalSection T.D))
 ```
 
-**`Stacks.Chow.VirtualNormalTriple.chowPushforwardOfIso_gysinHomomorphismOfInvertible_divisorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 581](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L581). The attribute's comment: “agreement with Definition 02T8 when D is an effective Cartier divisor, as an identity of Chow classes”.
+**`Stacks.Chow.VirtualNormalTriple.chowPushforwardOfIso_gysinHomomorphismOfInvertible_divisorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 581](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L581). The attribute's comment: “agreement with Definition 02T8 when D is an effective Cartier divisor, as an identity of Chow classes”.
 
 > **Remark 0B70 at an effective Cartier divisor**, as an identity of Chow classes: the Gysin
 > map of Definition 02T8 of `(𝒪_X(D), 1_D)`, transported along `Z(1_D) = D`, is the Gysin map of
@@ -258,7 +258,7 @@ theorem chowPushforwardOfIso_gysinHomomorphismOfInvertible_divisorSheaf
       T.gysin C p k α
 ```
 
-**`Stacks.Chow.virtualNormalTriple_remark`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 611](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L611). The attribute's comment: “the whole remark: the footnote, the Gysin homomorphism of a triple with the rules of Definition 02T8, and its agreement with Definition 02T8”.
+**`Stacks.Chow.virtualNormalTriple_remark`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 611](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L611). The attribute's comment: “the whole remark: the footnote, the Gysin homomorphism of a triple with the rules of Definition 02T8, and its agreement with Definition 02T8”.
 
 > **Remark 0B70**, all of its assertions together. Let `X` be locally of finite type over the
 > base of a Chow situation (Situation 02QL) and let `(D, 𝒩, σ)` be a triple: `D` a locally
@@ -323,7 +323,7 @@ theorem virtualNormalTriple_remark (C : ChowSituation.{u}) {X : Scheme.{u}} (p :
 
 [Tag 02T9](https://stacks.math.columbia.edu/tag/02T9) in the Stacks Project.
 
-**`Stacks.Chow.properChowPushforward_gysinHomomorphismOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinPushforwardChernCap.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinPushforwardChernCap.lean#L255).
+**`Stacks.Chow.properChowPushforward_gysinHomomorphismOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinPushforwardChernCap.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinPushforwardChernCap.lean#L255).
 
 > **Stacks 02T9.** Pushing the Gysin class of the zero scheme `i : D = Z(s) ⟶ X` forward to `X`
 > is capping with the first Chern class of `L`: `i_* i^* α = c₁(L) ∩ α` in `A_k(X)` for every
@@ -343,7 +343,7 @@ theorem properChowPushforward_gysinHomomorphismOfInvertible (α : CycleGroup C p
       firstChernClassCapOfInvertible C p k L α
 ```
 
-**`Stacks.Chow.effectiveCartierIntersection_divisorSheaf_eq_firstChernClassCapOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinPushforwardChernCap.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinPushforwardChernCap.lean#L388). The attribute's comment: “in particular”.
+**`Stacks.Chow.effectiveCartierIntersection_divisorSheaf_eq_firstChernClassCapOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinPushforwardChernCap.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinPushforwardChernCap.lean#L388). The attribute's comment: “in particular”.
 
 > **Stacks 02T9, the "in particular" clause for a given effective Cartier divisor.** For an
 > effective Cartier divisor `D` on `X`, intersection with `D` — taken through the canonical section
@@ -366,7 +366,7 @@ theorem effectiveCartierIntersection_divisorSheaf_eq_firstChernClassCapOfInverti
 
 [Tag 02TB](https://stacks.math.columbia.edu/tag/02TB) in the Stacks Project.
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible_cycleAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinCartierIntersection/ClosedSubschemeCycle.lean, line 712](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinCartierIntersection/ClosedSubschemeCycle.lean#L712). The attribute's comment: “part (1)”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible_cycleAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinCartierIntersection/ClosedSubschemeCycle.lean, line 712](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinCartierIntersection/ClosedSubschemeCycle.lean#L712). The attribute's comment: “part (1)”.
 
 > Intersecting a closed subscheme properly with a Cartier zero scheme computes
 > its Gysin class.
@@ -391,7 +391,7 @@ theorem gysinHomomorphismOfInvertible_cycleAssociatedToClosedSubscheme
             k)
 ```
 
-**`Stacks.Chow.schemeDeltaDimension_pullback_support_le_of_mono_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinCoherentSheaf.lean, line 1081](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinCoherentSheaf.lean#L1081). The attribute's comment: “part (2): support bound”.
+**`Stacks.Chow.schemeDeltaDimension_pullback_support_le_of_mono_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinCoherentSheaf.lean, line 1124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinCoherentSheaf.lean#L1124). The attribute's comment: “part (2): support bound”.
 
 > The support of a coherent sheaf on which a Cartier section is regular
 > loses at least one dimension upon restriction to the zero scheme.
@@ -406,7 +406,10 @@ theorem schemeDeltaDimension_pullback_support_le_of_mono_section
     (hF : schemeDeltaDimension C
       ((reducedSupport F).subschemeι ≫ p) ≤
         ((k + 1 : ℤ) : EInt))
-    (hs : Mono (((Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor ⟨((X.toRingedSpace)).presheaf, ((X.toRingedSpace)).IsSheaf⟩)).map (((𝟙 F), (L.unitHomEquiv.symm s)) : (_, _) ⟶ (_, _))))) :
+    (hs : Mono (((Functor.uncurry.obj
+      (Stacks.SheafOfModules.Tensor.sheafTensor
+        ⟨((X.toRingedSpace)).presheaf, ((X.toRingedSpace)).IsSheaf⟩)).map
+        (((𝟙 F), (L.unitHomEquiv.symm s)) : (_, _) ⟶ (_, _))))) :
     schemeDeltaDimension C
       ((@reducedSupport _
           ((Scheme.Modules.pullback
@@ -420,7 +423,7 @@ theorem schemeDeltaDimension_pullback_support_le_of_mono_section
         (Stacks.Divisors.zeroScheme X L (s.eval (.op ⊤))).subschemeι ≫ p) ≤ (k : EInt)
 ```
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible_cycleAssociatedToCoherentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinCoherentSheaf.lean, line 1121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinCoherentSheaf.lean#L1121). The attribute's comment: “part (2): Gysin formula”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible_cycleAssociatedToCoherentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinCoherentSheaf.lean, line 1167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinCoherentSheaf.lean#L1167). The attribute's comment: “part (2): Gysin formula”.
 
 > Gysin pullback of the associated cycle of a coherent sheaf on which the
 > section is regular is the associated cycle of its restriction.
@@ -435,7 +438,10 @@ theorem gysinHomomorphismOfInvertible_cycleAssociatedToCoherentSheaf
     (hF : schemeDeltaDimension C
       ((reducedSupport F).subschemeι ≫ p) ≤
         ((k + 1 : ℤ) : EInt))
-    (hs : Mono (((Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor ⟨((X.toRingedSpace)).presheaf, ((X.toRingedSpace)).IsSheaf⟩)).map (((𝟙 F), (L.unitHomEquiv.symm s)) : (_, _) ⟶ (_, _))))) :
+    (hs : Mono (((Functor.uncurry.obj
+      (Stacks.SheafOfModules.Tensor.sheafTensor
+        ⟨((X.toRingedSpace)).presheaf, ((X.toRingedSpace)).IsSheaf⟩)).map
+        (((𝟙 F), (L.unitHomEquiv.symm s)) : (_, _) ⟶ (_, _))))) :
     gysinHomomorphismOfInvertible C p k L (s.eval (.op ⊤))
         (cycleAssociatedToCoherentSheaf C p F
           (k + 1) hF) =
@@ -459,7 +465,7 @@ theorem gysinHomomorphismOfInvertible_cycleAssociatedToCoherentSheaf
 
 [Tag 0B6Z](https://stacks.math.columbia.edu/tag/0B6Z) in the Stacks Project.
 
-**`Stacks.Chow.gysinCycleMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean#L295). The attribute's comment: “the canonical map on cycles”.
+**`Stacks.Chow.gysinCycleMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean#L296). The attribute's comment: “the canonical map on cycles”.
 
 > The canonical Gysin map on cycles `i^* : Z_{k+1}(X) ⟶ Z_k(D)` attached to a section `s` of an
 > invertible module whose restriction to the zero scheme `D = Z(s)` is trivial: the extension of
@@ -476,7 +482,7 @@ def gysinCycleMap
       CycleGroup C ((Stacks.Divisors.zeroScheme X L s).subschemeι ≫ p) k
 ```
 
-**`Stacks.Chow.gysinCycleMap_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean#L312). The attribute's comment: “vanishing on integral closed subschemes contained in the zero scheme”.
+**`Stacks.Chow.gysinCycleMap_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean#L313). The attribute's comment: “vanishing on integral closed subschemes contained in the zero scheme”.
 
 > An integral closed subscheme contained in the zero scheme has zero image under the canonical
 > map on cycles.
@@ -489,7 +495,7 @@ theorem gysinCycleMap_of_le (W : X.IdealSheafData) (hW : IsIntegral W.subscheme)
       (cycleAssociatedToClosedSubscheme C p W.subschemeι (k + 1)) = 0
 ```
 
-**`Stacks.Chow.gysinCycleMap_of_not_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean#L325). The attribute's comment: “agreement with Stacks 02T8 off the zero scheme”.
+**`Stacks.Chow.gysinCycleMap_of_not_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean#L326). The attribute's comment: “agreement with Stacks 02T8 off the zero scheme”.
 
 > The canonical map on cycles sends an integral closed subscheme `W` not contained in `D` to the
 > fundamental cycle of the scheme-theoretic intersection `W ∩ D`.
@@ -504,7 +510,7 @@ theorem gysinCycleMap_of_not_le (W : X.IdealSheafData) (hW : IsIntegral W.subsch
         ((W.comap (Stacks.Divisors.zeroScheme X L s).subschemeι).subschemeι) k
 ```
 
-**`Stacks.Chow.isGysinCycleMap_gysinCycleMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean#L356). The attribute's comment: “the locally finite component formula”.
+**`Stacks.Chow.isGysinCycleMap_gysinCycleMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean#L357). The attribute's comment: “the locally finite component formula”.
 
 > The canonical map on cycles satisfies the locally finite component formula.
 
@@ -513,7 +519,7 @@ theorem isGysinCycleMap_gysinCycleMap :
     IsGysinCycleMap C p k L s (gysinCycleMap C p k L s htriv)
 ```
 
-**`Stacks.Chow.eq_gysinCycleMap_of_isGysinCycleMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean#L365). The attribute's comment: “canonicity”.
+**`Stacks.Chow.eq_gysinCycleMap_of_isGysinCycleMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestriction.lean#L366). The attribute's comment: “canonicity”.
 
 > Any additive map `Z_{k+1}(X) ⟶ Z_k(D)` satisfying the locally finite component formula is the
 > canonical map on cycles.
@@ -530,7 +536,7 @@ theorem eq_gysinCycleMap_of_isGysinCycleMap
 
 [Tag 0B6Y](https://stacks.math.columbia.edu/tag/0B6Y) in the Stacks Project.
 
-**`Stacks.Divisors.zeroScheme_pullback_comp_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/BaseChangeComparison.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/BaseChangeComparison.lean#L68). The attribute's comment: “the zero scheme of a section pulled back along a composite does not depend on the factorization”.
+**`Stacks.Divisors.zeroScheme_pullback_comp_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/BaseChangeComparison.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/BaseChangeComparison.lean#L68). The attribute's comment: “the zero scheme of a section pulled back along a composite does not depend on the factorization”.
 
 > **Stacks 0B6Y.** The zero scheme of a section pulled back to `A` depends only on the morphism
 > `A ⟶ T`, not on a factorization of it: two factorizations `q₁ ≫ q₂ = r₁ ≫ r₂` give equal zero
@@ -549,7 +555,7 @@ theorem zeroScheme_pullback_comp_comp {A B B' T : Scheme.{u}} (q₁ : A ⟶ B) (
           (AlgebraicGeometry.pullbackGlobalSections r₂ L s))
 ```
 
-**`Stacks.Divisors.zeroScheme_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean#L109). The attribute's comment: “the pulled-back zero scheme”.
+**`Stacks.Divisors.zeroScheme_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean#L109). The attribute's comment: “the pulled-back zero scheme”.
 
 > **Stacks 0B6Y.** The zero scheme of the pulled-back section is the scheme-theoretic inverse
 > image of the zero scheme: `Z(f^* s) = f⁻¹(Z(s))` as quasi-coherent ideal sheaves on `X'`.
@@ -567,15 +573,15 @@ theorem zeroScheme_pullback {X X' : Scheme.{u}} (f : X' ⟶ X) (L : X.Modules)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.IdealSheafData.comapIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.IdealSheafData.comapIso#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean#L159) (StacksFrontier): “the cartesian square”. References: EGA IV (19.4.1), “more general”.
-- [`AlgebraicGeometry.Scheme.IdealSheafData.comapIso_hom_fst`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.IdealSheafData.comapIso_hom_fst#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean#L161) (StacksFrontier): “the pulled-back inclusion”. References: EGA I (4.4.1), “closed case”.
-- [`AlgebraicGeometry.Scheme.IdealSheafData.comapIso_hom_snd`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.IdealSheafData.comapIso_hom_snd#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean#L164) (StacksFrontier): “the map to the original zero scheme”.
+- [`AlgebraicGeometry.Scheme.IdealSheafData.comapIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.IdealSheafData.comapIso#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean#L159) (StacksFrontier): “the cartesian square”. References: EGA IV (19.4.1), “more general”.
+- [`AlgebraicGeometry.Scheme.IdealSheafData.comapIso_hom_fst`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.IdealSheafData.comapIso_hom_fst#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean#L161) (StacksFrontier): “the pulled-back inclusion”. References: EGA I (4.4.1), “closed case”.
+- [`AlgebraicGeometry.Scheme.IdealSheafData.comapIso_hom_snd`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.IdealSheafData.comapIso_hom_snd#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ZeroSchemePullback/Basic.lean#L164) (StacksFrontier): “the map to the original zero scheme”.
 
 ## Tag 02TA, a lemma
 
 [Tag 02TA](https://stacks.math.columbia.edu/tag/02TA) in the Stacks Project.
 
-**`Stacks.Chow.canonicalGysinSystem_isNaturalUnderInverseIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean#L370). The attribute's comment: “the inverse-isomorphism case of the naturality of the Gysin operation, for the canonical Gysin system of Stacks 02TO, with no hypothesis”.
+**`Stacks.Chow.canonicalGysinSystem_isNaturalUnderInverseIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean#L370). The attribute's comment: “the inverse-isomorphism case of the naturality of the Gysin operation, for the canonical Gysin system of Stacks 02TO, with no hypothesis”.
 
 > **The canonical Gysin system is natural under inverse isomorphisms**: the inverse-isomorphism
 > case of the naturality of the Gysin operation.
@@ -585,7 +591,7 @@ theorem canonicalGysinSystem_isNaturalUnderInverseIso (C : ChowSituation.{u}) :
     (canonicalGysinSystem C).IsNaturalUnderInverseIso
 ```
 
-**`Stacks.Chow.canonicalGysinSystem_isNaturalUnderBaseChangeIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean#L378). The attribute's comment: “the base-change-isomorphism case of the naturality of the Gysin operation, for the canonical Gysin system of Stacks 02TO, with no hypothesis”.
+**`Stacks.Chow.canonicalGysinSystem_isNaturalUnderBaseChangeIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean#L378). The attribute's comment: “the base-change-isomorphism case of the naturality of the Gysin operation, for the canonical Gysin system of Stacks 02TO, with no hypothesis”.
 
 > **The canonical Gysin system is natural under base-change isomorphisms**: the
 > base-change-isomorphism case of the naturality of the Gysin operation.
@@ -595,7 +601,7 @@ theorem canonicalGysinSystem_isNaturalUnderBaseChangeIso (C : ChowSituation.{u})
     (canonicalGysinSystem C).IsNaturalUnderBaseChangeIso
 ```
 
-**`Stacks.Chow.gysinSystemOfInvertible_isNaturalUnderBaseChangeIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/GysinSystemOfInvertible.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/GysinSystemOfInvertible.lean#L101). The attribute's comment: “the isomorphism case of the naturality of the Gysin operation of a Gysin system, for an invertible module pulled back from a test scheme to both schemes -- the form the Gysin axiom of a bivariant class quantifies over -- with no hypothesis”.
+**`Stacks.Chow.gysinSystemOfInvertible_isNaturalUnderBaseChangeIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/GysinSystemOfInvertible.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantComposition/GysinSystemOfInvertible.lean#L101). The attribute's comment: “the isomorphism case of the naturality of the Gysin operation of a Gysin system, for an invertible module pulled back from a test scheme to both schemes -- the form the Gysin axiom of a bivariant class quantifies over -- with no hypothesis”.
 
 > The Gysin system of the first Chern class rule of an invertible module is natural under
 > pushforward along an isomorphism `u : A ⟶ B` of two schemes over a test scheme carrying the module,
@@ -606,7 +612,7 @@ theorem gysinSystemOfInvertible_isNaturalUnderBaseChangeIso (C : ChowSituation.{
     (gysinSystemOfInvertible C).IsNaturalUnderBaseChangeIso
 ```
 
-**`Stacks.Chow.gysinSystemOfInvertible_isNaturalUnderOpensRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantDisjoint/PieceGysinSystemOfInvertible.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantDisjoint/PieceGysinSystemOfInvertible.lean#L425). The attribute's comment: “the open-immersion case of the naturality of the Gysin operation of a Gysin system, for an invertible module on the ambient scheme: restriction along an open immersion over the base carries the Gysin map of Z(s) to the Gysin map of Z(u^*s) across the square of Remark 0B6Y, with no hypothesis”.
+**`Stacks.Chow.gysinSystemOfInvertible_isNaturalUnderOpensRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantDisjoint/PieceGysinSystemOfInvertible.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantDisjoint/PieceGysinSystemOfInvertible.lean#L425). The attribute's comment: “the open-immersion case of the naturality of the Gysin operation of a Gysin system, for an invertible module on the ambient scheme: restriction along an open immersion over the base carries the Gysin map of Z(s) to the Gysin map of Z(u^*s) across the square of Remark 0B6Y, with no hypothesis”.
 
 > **The open-immersion case of Stacks 02TA for the Gysin operation of a Gysin system, with the
 > module on the ambient scheme.** The Gysin system of the first Chern class rule of an invertible
@@ -622,7 +628,7 @@ theorem gysinSystemOfInvertible_isNaturalUnderOpensRestriction (C : ChowSituatio
     (gysinSystemOfInvertible C).IsNaturalUnderOpensRestriction
 ```
 
-**`Stacks.Chow.gysinSystemOfInvertible_isNaturalUnderOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantDisjoint/PieceGysinSystemOfInvertible.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantDisjoint/PieceGysinSystemOfInvertible.lean#L465). The attribute's comment: “the open-immersion case of the naturality of the Gysin operation of a Gysin system, for an invertible module pulled back from a test scheme to both schemes -- the form the Gysin axiom of a bivariant class quantifies over -- with no hypothesis”.
+**`Stacks.Chow.gysinSystemOfInvertible_isNaturalUnderOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantDisjoint/PieceGysinSystemOfInvertible.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantDisjoint/PieceGysinSystemOfInvertible.lean#L465). The attribute's comment: “the open-immersion case of the naturality of the Gysin operation of a Gysin system, for an invertible module pulled back from a test scheme to both schemes -- the form the Gysin axiom of a bivariant class quantifies over -- with no hypothesis”.
 
 > **The open-immersion case of Stacks 02TA for the Gysin operation of a Gysin system.** The
 > Gysin system of the first Chern class rule of an invertible module is natural under restriction
@@ -643,7 +649,7 @@ theorem gysinSystemOfInvertible_isNaturalUnderOpenImmersion (C : ChowSituation.{
     (gysinSystemOfInvertible C).IsNaturalUnderOpenImmersion
 ```
 
-**`Stacks.Chow.GenuineChern.gysinSystemOfInvertible_isNaturalUnderInverseIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/InverseIsoGysin.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/InverseIsoGysin.lean#L64). The attribute's comment: “the inverse-isomorphism case of the naturality of the Gysin operation of a Gysin system, for the system of the first Chern class rule of an invertible module”.
+**`Stacks.Chow.GenuineChern.gysinSystemOfInvertible_isNaturalUnderInverseIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/InverseIsoGysin.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/InverseIsoGysin.lean#L64). The attribute's comment: “the inverse-isomorphism case of the naturality of the Gysin operation of a Gysin system, for the system of the first Chern class rule of an invertible module”.
 
 > **The isomorphism case of Stacks 02TA for the Gysin system of the first Chern class rule**,
 > with the invertible module on the source of the isomorphism: for an isomorphism `u : A ⟶ B` over
@@ -662,7 +668,7 @@ theorem gysinSystemOfInvertible_isNaturalUnderInverseIso (C : ChowSituation.{u})
     (gysinSystemOfInvertible C).IsNaturalUnderInverseIso
 ```
 
-**`Stacks.Chow.gysinSystemOfInvertible_isNaturalUnderProperPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ProperPushforwardGysinSystem.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ProperPushforwardGysinSystem.lean#L121). The attribute's comment: “the naturality of the Gysin operation of a Gysin system under pushforward along a general proper morphism”.
+**`Stacks.Chow.gysinSystemOfInvertible_isNaturalUnderProperPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ProperPushforwardGysinSystem.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ProperPushforwardGysinSystem.lean#L121). The attribute's comment: “the naturality of the Gysin operation of a Gysin system under pushforward along a general proper morphism”.
 
 > The Gysin system of the first Chern class rule of an invertible module is natural under
 > pushforward along an arbitrary proper morphism over the base.
@@ -672,7 +678,7 @@ theorem gysinSystemOfInvertible_isNaturalUnderProperPushforward (C : ChowSituati
     (gysinSystemOfInvertible C).IsNaturalUnderProperPushforward
 ```
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible_properPushforward_of_gysinCompatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ProperPushforwardInvertible.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ProperPushforwardInvertible.lean#L274). The attribute's comment: “the identity i^* f\_* α' = g\_* (i')^* α' in A\_k(Z(s)) over the square of Remark 0B6Y, for the Gysin map of an invertible module and a global section, with no hypothesis beyond properness of f and the commutativity of f over the base”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible_properPushforward_of_gysinCompatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ProperPushforwardInvertible.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ProperPushforwardInvertible.lean#L274). The attribute's comment: “the identity i^* f\_* α' = g\_* (i')^* α' in A\_k(Z(s)) over the square of Remark 0B6Y, for the Gysin map of an invertible module and a global section, with no hypothesis beyond properness of f and the commutativity of f over the base”.
 
 > **Stacks 02TA.** Gysin pullback through the zero scheme of a global section of an invertible
 > module commutes with proper pushforward across the square of Remark 0B6Y:
@@ -708,7 +714,7 @@ theorem gysinHomomorphismOfInvertible_properPushforward_of_gysinCompatible [IsPr
 
 [Tag 0B71](https://stacks.math.columbia.edu/tag/0B71) in the Stacks Project.
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible_flatPullback_cycleAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullbackInvertible.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullbackInvertible.lean#L220). The attribute's comment: “closed subscheme meeting the zero scheme properly; 02S1 along g carried”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible_flatPullback_cycleAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullbackInvertible.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullbackInvertible.lean#L221). The attribute's comment: “closed subscheme meeting the zero scheme properly; 02S1 along g carried”.
 
 > **Stacks 0B71 on the fundamental cycle of a closed subscheme meeting the zero scheme
 > properly.** For a closed subscheme `Z ⊆ X` of delta-dimension at most `k + 1` whose intersection
@@ -761,7 +767,7 @@ theorem gysinHomomorphismOfInvertible_flatPullback_cycleAssociatedToClosedSubsch
           (cycleAssociatedToClosedSubscheme C p Z.subschemeι (k + 1)))
 ```
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible_flatPullback_of_invertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullbackRationallyCompatible.lean, line 1260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullbackRationallyCompatible.lean#L1260). The attribute's comment: “the Gysin map commutes with flat pullback, (i')^* f^* = g^* i^* on A\_\{k+r}(D'), with no hypothesis: the component identity is replaced by its rational-equivalence form, proved here, and the vanishing of 02S1 along g by the general theorem”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible_flatPullback_of_invertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullbackRationallyCompatible.lean, line 1260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullbackRationallyCompatible.lean#L1260). The attribute's comment: “the Gysin map commutes with flat pullback, (i')^* f^* = g^* i^* on A\_\{k+r}(D'), with no hypothesis: the component identity is replaced by its rational-equivalence form, proved here, and the vanishing of 02S1 along g by the general theorem”.
 
 > **Stacks 0B71 for an arbitrary cycle at the Gysin map of an invertible module, with no
 > hypothesis.** Gysin pullback through the zero scheme of a section of an invertible module
@@ -803,4 +809,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.29, Tag 02T7](https://stacks.math.columbia.edu/tag/02T7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.21 Regular morphisms
 
-Section 37.21 of the Stacks Project, [Tag 07R6](https://stacks.math.columbia.edu/tag/07R6). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.21 of the Stacks Project, [Tag 07R6](https://stacks.math.columbia.edu/tag/07R6). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07R7, a definition
 
 [Tag 07R7](https://stacks.math.columbia.edu/tag/07R7) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.IsRegularAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/RegularMorphism.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/RegularMorphism.lean#L48). The attribute's comment: “part (1)”. References: EGA IV (6.8.1).
+**`AlgebraicGeometry.Scheme.Hom.IsRegularAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/RegularMorphism.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/RegularMorphism.lean#L48). The attribute's comment: “part (1)”. References: EGA IV (6.8.1).
 
 > **Stacks Project, Tag 07R7, part (1).** Regularity of a scheme morphism at a point.
 
@@ -22,7 +22,7 @@ Section 37.21 of the Stacks Project, [Tag 07R6](https://stacks.math.columbia.edu
 public abbrev IsRegularAt {X Y : Scheme.{u}} (f : X ⟶ Y) (x : X) : Prop
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.IsRegular`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/RegularMorphism.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/RegularMorphism.lean#L54). The attribute's comment: “part (2)”. References: EGA IV (6.8.1).
+**`AlgebraicGeometry.Scheme.Hom.IsRegular`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/RegularMorphism.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/RegularMorphism.lean#L54). The attribute's comment: “part (2)”. References: EGA IV (6.8.1).
 
 > **Stacks Project, Tag 07R7, part (2).** Regularity at every source point.
 
@@ -34,7 +34,7 @@ public abbrev IsRegular {X Y : Scheme.{u}} (f : X ⟶ Y) : Prop
 
 [Tag 07R8](https://stacks.math.columbia.edu/tag/07R8) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.regular_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/Characterization.lean, line 596](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/Characterization.lean#L596).
+**`AlgebraicGeometry.Scheme.Hom.regular_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/Characterization.lean, line 596](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/Characterization.lean#L596).
 
 > The five characterizations of a regular morphism with locally Noetherian fibres.
 
@@ -69,7 +69,7 @@ public theorem Scheme.Hom.regular_tfae {X Y : Scheme.{u}} (f : X ⟶ Y)
 
 [Tag 07R9](https://stacks.math.columbia.edu/tag/07R9) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.isRegular_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/Smooth.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/Smooth.lean#L41). References: EGA IV (17.5.2), “Necessity”; EGA IV (6.8.6), “Implication a) ⇒ b)”.
+**`AlgebraicGeometry.Scheme.Hom.isRegular_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/Smooth.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/Smooth.lean#L41). References: EGA IV (17.5.2), “Necessity”; EGA IV (6.8.6), “Implication a) ⇒ b)”.
 
 > A smooth morphism of schemes is regular.
 
@@ -82,7 +82,7 @@ public theorem Scheme.Hom.isRegular_of_smooth {X Y : Scheme.{u}} (f : X ⟶ Y) [
 
 [Tag 07RA](https://stacks.math.columbia.edu/tag/07RA) in the Stacks Project.
 
-**`AlgebraicGeometry.regularWithLocallyNoetherianFibers_isLocalAtTarget_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/FppfLocalTarget.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/FppfLocalTarget.lean#L168). The attribute's comment: “fppf local on the target”.
+**`AlgebraicGeometry.regularWithLocallyNoetherianFibers_isLocalAtTarget_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/FppfLocalTarget.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/FppfLocalTarget.lean#L168). The attribute's comment: “fppf local on the target”.
 
 > **Stacks Project, Tag 07RA.** Having locally Noetherian fibres and being regular is local on
 > the target for the fppf topology.
@@ -93,7 +93,7 @@ public instance regularWithLocallyNoetherianFibers_isLocalAtTarget_fppf :
       Scheme.fppfPrecoverage
 ```
 
-**`AlgebraicGeometry.regularWithLocallyNoetherianFibers_isLocalAtSource_smooth`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/SmoothLocalSource.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/SmoothLocalSource.lean#L126). The attribute's comment: “smooth local on the source”.
+**`AlgebraicGeometry.regularWithLocallyNoetherianFibers_isLocalAtSource_smooth`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/SmoothLocalSource.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularMorphism/SmoothLocalSource.lean#L126). The attribute's comment: “smooth local on the source”.
 
 > **Stacks Project, Tag 07RA.** Having locally Noetherian fibres and being regular is local on
 > the source for the smooth topology.
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.21, Tag 07R6](https://stacks.math.columbia.edu/tag/07R6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

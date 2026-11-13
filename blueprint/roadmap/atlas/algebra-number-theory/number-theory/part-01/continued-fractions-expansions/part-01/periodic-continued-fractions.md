@@ -8,7 +8,7 @@ proof: formalized
 
 # Periodic continued fractions
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions/index.html).
 
 ## Eventually periodic continued fractions
 
@@ -22,7 +22,7 @@ that $a_{n+p} = a_n$ for every $n \ge n_0$.
 
 - Nimbran–Levrie lines 130–134.
 
-Formalized by `MetaMathlibExt.ContinuedFractionEventuallyPeriodic`, a definition declared in [MathlibExt/NumberTheory/ContinuedFractions/LagrangePeriodic.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ContinuedFractions/LagrangePeriodic.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions/index.html#continued-fraction-eventually-periodic).
+Formalized by `MetaMathlibExt.ContinuedFractionEventuallyPeriodic`, a definition declared in [MathlibExt/NumberTheory/ContinuedFractions/LagrangePeriodic.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ContinuedFractions/LagrangePeriodic.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions/index.html#continued-fraction-eventually-periodic).
 
 ## Real quadratic irrationals
 
@@ -37,21 +37,21 @@ irrational root of a quadratic polynomial with rational coefficients.
 
 - Nimbran–Levrie line 136 (Euler–Lagrange statement).
 
-Formalized by `MetaMathlibExt.IsRealQuadraticIrrational`, a definition declared in [MathlibExt/NumberTheory/ContinuedFractions/LagrangePeriodic.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ContinuedFractions/LagrangePeriodic.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions/index.html#is-real-quadratic-irrational).
+Formalized by `MetaMathlibExt.IsRealQuadraticIrrational`, a definition declared in [MathlibExt/NumberTheory/ContinuedFractions/LagrangePeriodic.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ContinuedFractions/LagrangePeriodic.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions/index.html#is-real-quadratic-irrational).
 
 ## Lagrange's theorem on periodic continued fractions
 
 If a real number $x$ is a real
 quadratic irrational, then the continued fraction of $x$ is eventually periodic.
 
-Formalized by `MetaMathlibExt.continuedFractionEventuallyPeriodic_of_isRealQuadraticIrrational`, a theorem declared in [MathlibExt/NumberTheory/ContinuedFractions/LagrangePeriodic.lean, line 895](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ContinuedFractions/LagrangePeriodic.lean#L895). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions/index.html#continued-fraction-eventually-periodic-o).
+Formalized by `MetaMathlibExt.continuedFractionEventuallyPeriodic_of_isRealQuadraticIrrational`, a theorem declared in [MathlibExt/NumberTheory/ContinuedFractions/LagrangePeriodic.lean, line 895](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ContinuedFractions/LagrangePeriodic.lean#L895). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions/index.html#continued-fraction-eventually-periodic-o).
 
 ## Euler's theorem on periodic continued fractions
 
 If the continued fraction of a real
 number $x$ is eventually periodic, then $x$ is a real quadratic irrational.
 
-Formalized by `MetaMathlibExt.isRealQuadraticIrrational_of_continuedFractionEventuallyPeriodic`, a theorem declared in [MathlibExt/NumberTheory/ContinuedFractions/EulerPeriodic.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ContinuedFractions/EulerPeriodic.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions/index.html#is-real-quadratic-irrational-of-continue).
+Formalized by `MetaMathlibExt.isRealQuadraticIrrational_of_continuedFractionEventuallyPeriodic`, a theorem declared in [MathlibExt/NumberTheory/ContinuedFractions/EulerPeriodic.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ContinuedFractions/EulerPeriodic.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions/index.html#is-real-quadratic-irrational-of-continue).
 
 ## Euler–Lagrange theorem
 
@@ -65,7 +65,7 @@ irrationals.
 
 - Nimbran–Levrie line 136.
 
-Formalized by `MetaMathlibExt.continuedFractionEventuallyPeriodic_iff_isRealQuadraticIrrational`, a theorem declared in [MathlibExt/NumberTheory/ContinuedFractions/EulerPeriodic.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ContinuedFractions/EulerPeriodic.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions/index.html#continued-fraction-eventually-periodic-i).
+Formalized by `MetaMathlibExt.continuedFractionEventuallyPeriodic_iff_isRealQuadraticIrrational`, a theorem declared in [MathlibExt/NumberTheory/ContinuedFractions/EulerPeriodic.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ContinuedFractions/EulerPeriodic.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions/index.html#continued-fraction-eventually-periodic-i).
 
 ## Depends on
 
@@ -74,4 +74,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Periodic continued fractions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/periodic-continued-fractions)

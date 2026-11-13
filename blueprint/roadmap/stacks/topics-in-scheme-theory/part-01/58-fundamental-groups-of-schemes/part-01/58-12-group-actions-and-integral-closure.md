@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.12 Group actions and integral closure
 
-Section 58.12 of the Stacks Project, [Tag 0BSN](https://stacks.math.columbia.edu/tag/0BSN). 5 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 58.12 of the Stacks Project, [Tag 0BSN](https://stacks.math.columbia.edu/tag/0BSN). 5 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BSP, a lemma
 
 [Tag 0BSP](https://stacks.math.columbia.edu/tag/0BSP) in the Stacks Project.
 
-**`IsLocalRing.isAlgClosed_residueField_of_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GroupActionsIntegral/ResidueFields.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GroupActionsIntegral/ResidueFields.lean#L101).
+**`IsLocalRing.isAlgClosed_residueField_of_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GroupActionsIntegral/ResidueFields.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GroupActionsIntegral/ResidueFields.lean#L101).
 
 > The residue field at a nonzero prime ideal of a normal domain whose fraction field is
 > separably closed is algebraically closed.
@@ -33,13 +33,13 @@ public theorem isAlgClosed_residueField_of_normal
 
 Declarations registered for the tag:
 
-- [`normal_local_domain_sepClosed_fractionField_isStrictlyHenselian`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Criteria.lean#L326), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GroupActionsIntegral/ResidueFields.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GroupActionsIntegral/ResidueFields.lean#L38) (StacksFrontier).
+- [`normal_local_domain_sepClosed_fractionField_isStrictlyHenselian`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Criteria.lean#L326), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GroupActionsIntegral/ResidueFields.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GroupActionsIntegral/ResidueFields.lean#L38) (StacksFrontier).
 
 ## Tag 0BSS, a lemma
 
 [Tag 0BSS](https://stacks.math.columbia.edu/tag/0BSS) in the Stacks Project.
 
-**`MulSemiringAction.inertia_eq_inertia_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GroupActionsIntegral/Inertia.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GroupActionsIntegral/Inertia.lean#L105). References: SGA 1 V (2.1), “special case”.
+**`MulSemiringAction.inertia_eq_inertia_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GroupActionsIntegral/Inertia.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GroupActionsIntegral/Inertia.lean#L103). References: SGA 1 V (2.1), “special case”.
 
 > The inertia group of an ideal is unchanged after arbitrary base change from the invariant
 > subring, for any ideal of the base change lying above it.
@@ -57,7 +57,7 @@ public theorem inertia_eq_inertia_baseChange
 
 [Tag 0BST](https://stacks.math.columbia.edu/tag/0BST) in the Stacks Project.
 
-**`MulSemiringAction.exists_etale_away_fixedPoints_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Inertia.lean, line 610](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Inertia.lean#L610).
+**`MulSemiringAction.exists_etale_away_fixedPoints_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Inertia.lean, line 608](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/Inertia.lean#L608).
 
 > For a finite group acting on a ring, the inclusion of the invariant ring into the ring of
 > invariants of the inertia subgroup at a prime `q` is étale at the prime below `q`.
@@ -77,7 +77,7 @@ public theorem exists_etale_away_fixedPoints_inertia (q : Ideal R) [q.IsPrime] :
 
 [Tag 0BSU](https://stacks.math.columbia.edu/tag/0BSU) in the Stacks Project.
 
-**`IsIntegralClosure.isFilteredColimitOfEtale_localization_fixedPoints_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/InertiaIndEtale.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/InertiaIndEtale.lean#L512).
+**`IsIntegralClosure.isFilteredColimitOfEtale_localization_fixedPoints_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/InertiaIndEtale.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Invariant/InertiaIndEtale.lean#L512).
 
 > **Stacks 0BSU.** Let `A` be a normal domain with fraction field `K`, let `L / K` be a
 > possibly infinite Galois extension with group `G = Gal(L/K)`, and let `B` be the integral
@@ -102,4 +102,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.12, Tag 0BSN](https://stacks.math.columbia.edu/tag/0BSN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

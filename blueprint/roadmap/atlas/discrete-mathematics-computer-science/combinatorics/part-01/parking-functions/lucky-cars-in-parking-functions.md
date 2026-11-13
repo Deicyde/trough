@@ -7,7 +7,7 @@ statement: formalized
 
 # Lucky cars in parking functions
 
-23 results, 11 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html).
+23 results, 11 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html).
 
 ## Expected number of lucky cars in weakly increasing parking functions
 
@@ -22,7 +22,7 @@ number counts both the lucky cars and the lucky spots.
 
 - Steve Butler, Kimberly Hadaway, Victoria Lenius, Preston Martens, and Marshall Moats, "Lucky Cars and Lucky Spots in Parking Functions," Journal of Integer Sequences 29 (2026), Article 26.1.1, Corollary, lines 631–633 (supporting lemma lines 619–629), https://cs.uwaterloo.ca/journals/JIS/VOL29/Hadaway/had3.tex The corollary attributes the Dyck-path expectation value to Deutsch.
 
-Formalized by `MetaMathlibExt.expected_lucky_spots_weakly_increasing_parking_functions`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/LuckyParkingFunctions.lean, line 1174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/LuckyParkingFunctions.lean#L1174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#expected-lucky-spots-weakly-increasing-p).
+Formalized by `MetaMathlibExt.expected_lucky_spots_weakly_increasing_parking_functions`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/LuckyParkingFunctions.lean, line 1174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/LuckyParkingFunctions.lean#L1174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#expected-lucky-spots-weakly-increasing-p).
 
 ## Next free spot
 
@@ -30,7 +30,7 @@ Number the $n$ spots $0, \dots, n-1$. Given a set $S$ of occupied
 spots and a spot $a$, the next free spot is the least spot $s \ge a$ with $s \notin S$; when
 every spot $s \ge a$ is occupied, it is $a$ itself.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.nextFreeSpot`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#next-free-spot).
+Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.nextFreeSpot`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#next-free-spot).
 
 ## Greedy parking from an occupied set
 
@@ -40,7 +40,7 @@ order and car $k$ takes the least spot at or after $a_k$ that is neither in $S$ 
 $1, \dots, k-1$ (or $a_k$ itself if there is none). The result is the list of spots taken, in
 arrival order.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.parkSpotsFrom`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#park-spots-from).
+Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.parkSpotsFrom`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#park-spots-from).
 
 ## Greedy parking outcome
 
@@ -49,7 +49,7 @@ preferred spot of each of $n$ cars. Starting from an empty lot with spots $0, \d
 $0, 1, \dots, n-1$ arrive in order, and each takes the least free spot at or after its preference
 (or its preference itself if there is none). The outcome sends each car $i$ to the spot it takes.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.parkSpots`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#park-spots).
+Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.parkSpots`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#park-spots).
 
 ## Lucky car under greedy parking
 
@@ -60,7 +60,7 @@ when there is no such spot. Car $i$ is lucky if the spot it takes is its preferr
 
 For a parking function a free spot always exists.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.IsLuckyCar`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#is-lucky-car).
+Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.IsLuckyCar`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#is-lucky-car).
 
 ## Number of lucky cars
 
@@ -70,7 +70,7 @@ spot at or after its preference not taken by an earlier car, or its preferred sp
 there is no such spot. The number of lucky cars of $f$ is the number of cars $i$ whose spot is
 $f(i)$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.luckyCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#lucky-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.luckyCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#lucky-count).
 
 ## Lucky-car counts
 
@@ -81,7 +81,7 @@ parks in spot $f(i)$.
 
 In the one-based indexing of Butler et al. this is $q_n(i+1, j+1)$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.q`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#q).
+Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.q`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#q).
 
 ## Increasing lucky-car counts
 
@@ -92,7 +92,7 @@ that is, parks in spot $f(i)$.
 
 In the one-based indexing of Butler et al. this is $q^i_n(i+1, j+1)$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.qInc`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#q-inc).
+Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.qInc`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#q-inc).
 
 ## Decreasing lucky-car counts
 
@@ -103,7 +103,7 @@ that is, parks in spot $f(i)$.
 
 In the one-based indexing of Butler et al. this is $q^d_n(i+1, j+1)$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.qDec`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#q-dec).
+Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.qDec`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#q-dec).
 
 ## Lucky-car polynomial
 
@@ -113,7 +113,7 @@ $$f_n(x) = \frac{1}{n+1} \prod_{i=0}^{n-1} \bigl((n+1-i)\,x + i\bigr).$$
 
 Equivalently, $f_n(x) = \frac{1}{n+1} \prod_{i=1}^{n} \bigl((n+2-i)\,x + (i-1)\bigr)$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.luckyGenPoly`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#lucky-gen-poly).
+Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.luckyGenPoly`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#lucky-gen-poly).
 
 ## Parking functions with prescribed lucky and unlucky cars
 
@@ -131,7 +131,7 @@ In the paper's numbering of cars from $1$, the factors are $n + 2 - i$ and $i - 
 
 - Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Theorem 4.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.card_parking_lucky_on` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#card-parking-lucky-on).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.card_parking_lucky_on` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#card-parking-lucky-on).
 
 ## Generating polynomial of lucky cars
 
@@ -145,7 +145,7 @@ $$\frac{1}{n+1} \prod_{i=0}^{n-1} \bigl((n+1-i)x + i\bigr) = \sum_{k=0}^{n} c_k 
 
 - Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Corollary 5.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.luckyGenPoly_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#lucky-gen-poly-eq-sum).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.luckyGenPoly_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#lucky-gen-poly-eq-sum).
 
 ## Factorial moments of the number of lucky cars
 
@@ -164,7 +164,7 @@ is the $\ell$-th falling-factorial moment of $X$ for a uniformly random parking 
 
 - Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Proposition 6.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.expected_descFactorial_luckyCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#expected-desc-factorial-lucky-count).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.expected_descFactorial_luckyCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#expected-desc-factorial-lucky-count).
 
 ## Boundary values of lucky-car counts (Lemma 9)
 
@@ -193,7 +193,7 @@ In the one-based indexing of the source, car $i$ and spot $j$ here are car $i+1$
 
 - Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Lemma 9.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.q_boundary_values` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#q-boundary-values).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.q_boundary_values` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#q-boundary-values).
 
 ## Number of parking functions in which a given car is lucky
 
@@ -211,7 +211,7 @@ the count for the $i$-th car is $(n + 2 - i)(n + 1)^{n-2}$.
 
 - Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Corollary 10.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.sum_q_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#sum-q-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.sum_q_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#sum-q-eq).
 
 ## Number of parking functions in which the second spot is lucky
 
@@ -228,7 +228,7 @@ length $n$ in which the second spot is lucky, that is, the car parking there pre
 
 - Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Theorem 12.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.sum_q_second_spot` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#sum-q-second-spot).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.sum_q_second_spot` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#sum-q-second-spot).
 
 ## Increasing lucky-car counts (Lemma 18)
 
@@ -244,7 +244,7 @@ In the one-based indexing of the source the diagonal value reads $C_{i-1} C_{n-i
 
 - Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Lemma 18.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.qInc_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#q-inc-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.qInc_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#q-inc-eq).
 
 ## Ballot paths
 
@@ -253,7 +253,7 @@ $k + \ell$ in up steps and right steps with exactly $\ell$ up steps such that ev
 least as many up steps as right steps; equivalently, a lattice path from $(0,0)$ to $(k, \ell)$
 with unit up and right steps that stays on or above the line $y = x$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.BallotPath`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#ballot-path).
+Formalized by `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.BallotPath`, a definition declared in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#ballot-path).
 
 ## Number of ballot paths
 
@@ -265,7 +265,7 @@ is $\frac{\ell - k + 1}{\ell + 1} \binom{k + \ell}{k}$.
 
 - Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Lemma 21.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.card_ballotPath` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#card-ballot-path).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.card_ballotPath` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#card-ballot-path).
 
 ## Decreasing lucky-car counts (Lemma 22)
 
@@ -284,7 +284,7 @@ In the one-based indexing of the source the condition reads $i + j \le n + 1$.
 
 - Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Lemma 22.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.qDec_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#q-dec-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.qDec_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#q-dec-eq).
 
 ## Lucky spots of weakly decreasing parking functions as a sum
 
@@ -303,7 +303,7 @@ is, taken by a car that prefers it.
 
 - Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Corollary 23.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.card_dec_lucky_spot_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#card-dec-lucky-spot-eq-sum).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.card_dec_lucky_spot_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#card-dec-lucky-spot-eq-sum).
 
 ## Lucky spots of weakly decreasing parking functions as a Catalan convolution
 
@@ -323,7 +323,7 @@ is, taken by a car that prefers it.
 
 - Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Theorem 24.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.card_dec_lucky_spot_eq_sum_catalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#card-dec-lucky-spot-eq-sum-catalan).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.card_dec_lucky_spot_eq_sum_catalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#card-dec-lucky-spot-eq-sum-catalan).
 
 ## Expected number of lucky cars in weakly decreasing parking functions
 
@@ -339,7 +339,7 @@ of lucky cars, which equals the expected number of lucky spots.
 
 - Steve Butler et al., "Lucky Cars and Lucky Spots in Parking Functions", Theorem 25.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.expected_lucky_dec` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#expected-lucky-dec).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.expected_lucky_dec` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LuckyCarsWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html#expected-lucky-dec).
 
 ## Depends on
 
@@ -348,4 +348,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lucky cars in parking functions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/parking-functions/lucky-cars-in-parking-functions)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 40.7 Comparing fibres
 
-Section 40.7 of the Stacks Project, [Tag 04LJ](https://stacks.math.columbia.edu/tag/04LJ). 1 tag here is carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 40.7 of the Stacks Project, [Tag 04LJ](https://stacks.math.columbia.edu/tag/04LJ). 1 tag here is carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02YF, a lemma
 
 [Tag 02YF](https://stacks.math.columbia.edu/tag/02YF) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_common_field_fiber_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean#L134). The attribute's comment: “common\_field”.
+**`AlgebraicGeometry.exists_common_field_fiber_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean#L134). The attribute's comment: “common\_field”.
 
 > If two arrows in a groupoid scheme have the same target, then the fibres of the source
 > map over their sources become isomorphic after extending both residue fields to a common
@@ -38,7 +38,7 @@ public theorem exists_common_field_fiber_iso {S : Scheme.{u}}
             (algebraMap (G.objects.left.residueField (G.source.left r')) K)))))
 ```
 
-**`AlgebraicGeometry.exists_common_field_fiber_iso_mapping_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean#L162). The attribute's comment: “point\_compatible”.
+**`AlgebraicGeometry.exists_common_field_fiber_iso_mapping_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean#L162). The attribute's comment: “point\_compatible”.
 
 > The common field and source-fibre isomorphism for two arrows with the same target can be
 > chosen so that the isomorphism carries a point above the first arrow to a point above the
@@ -74,7 +74,7 @@ public theorem exists_common_field_fiber_iso_mapping_point {S : Scheme.{u}}
               G.source.left.fiberι (G.source.left r')).base (e.hom.left.base x) = r'
 ```
 
-**`AlgebraicGeometry.flatIsoLocallyOnBase_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean#L170). The attribute's comment: “(3)”.
+**`AlgebraicGeometry.flatIsoLocallyOnBase_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean#L170). The attribute's comment: “(3)”.
 
 > **Stacks 02YF (3).** If the source and target maps of a groupoid scheme are flat, then for
 > two arrows with the same target the two germs of the source map, at the first arrow over its
@@ -87,7 +87,7 @@ theorem flatIsoLocallyOnBase_source {S : Scheme.{u}} (G : GroupoidScheme S)
     FlatIsoLocallyOnBase G.source.left r G.source.left r'
 ```
 
-**`AlgebraicGeometry.isoLocallyOnBase_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean#L183). The attribute's comment: “(4)”.
+**`AlgebraicGeometry.isoLocallyOnBase_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean#L183). The attribute's comment: “(4)”.
 
 > **Stacks 02YF (4).** If the source and target maps of a groupoid scheme have a property `P`
 > of morphisms of schemes, then for two arrows with the same target the two germs of the source
@@ -101,7 +101,7 @@ theorem isoLocallyOnBase_source {S : Scheme.{u}} (G : GroupoidScheme S)
     IsoLocallyOnBase P G.source.left r G.source.left r'
 ```
 
-**`AlgebraicGeometry.isoLocallyOnBase_source_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean#L192). The attribute's comment: “(4) etale”.
+**`AlgebraicGeometry.isoLocallyOnBase_source_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean#L192). The attribute's comment: “(4) etale”.
 
 > **Stacks 02YF (4), the étale case.**
 
@@ -112,7 +112,7 @@ theorem isoLocallyOnBase_source_etale {S : Scheme.{u}} (G : GroupoidScheme S)
     IsoLocallyOnBase @Etale G.source.left r G.source.left r'
 ```
 
-**`AlgebraicGeometry.isoLocallyOnBase_source_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean#L200). The attribute's comment: “(4) smooth”.
+**`AlgebraicGeometry.isoLocallyOnBase_source_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean#L200). The attribute's comment: “(4) smooth”.
 
 > **Stacks 02YF (4), the smooth case.**
 
@@ -123,7 +123,7 @@ theorem isoLocallyOnBase_source_smooth {S : Scheme.{u}} (G : GroupoidScheme S)
     IsoLocallyOnBase @Smooth G.source.left r G.source.left r'
 ```
 
-**`AlgebraicGeometry.isoLocallyOnBase_source_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean#L208). The attribute's comment: “(4) syntomic”.
+**`AlgebraicGeometry.isoLocallyOnBase_source_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean#L208). The attribute's comment: “(4) syntomic”.
 
 > **Stacks 02YF (4), the syntomic case.**
 
@@ -134,7 +134,7 @@ theorem isoLocallyOnBase_source_syntomic {S : Scheme.{u}} (G : GroupoidScheme S)
     IsoLocallyOnBase @Syntomic G.source.left r G.source.left r'
 ```
 
-**`AlgebraicGeometry.isoLocallyOnBase_source_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean#L217). The attribute's comment: “(4) fppf”.
+**`AlgebraicGeometry.isoLocallyOnBase_source_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean#L217). The attribute's comment: “(4) fppf”.
 
 > **Stacks 02YF (4), the fppf case:** source and target flat and locally of finite
 > presentation.
@@ -148,7 +148,7 @@ theorem isoLocallyOnBase_source_fppf {S : Scheme.{u}} (G : GroupoidScheme S)
       G.source.left r'
 ```
 
-**`AlgebraicGeometry.source_fiber_comparison_of_target_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean#L250).
+**`AlgebraicGeometry.source_fiber_comparison_of_target_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/GermComparison.lean#L250).
 
 > **Stacks 02YF.** Let `(U, R, s, t, c)` be a groupoid over a scheme `S` and let `r`, `r'` be
 > two arrows with the same target.  Writing `u = s r` and `u' = s r'`, and `F_u = s⁻¹(u)`,
@@ -234,4 +234,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 40.7, Tag 04LJ](https://stacks.math.columbia.edu/tag/04LJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

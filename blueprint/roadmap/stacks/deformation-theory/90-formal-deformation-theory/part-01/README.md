@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 90.3 The base category to 90.15 Miniversal formal objects…
+# 90.3 The base category to 90.14 Minimal versal formal…
 
 - [90.3 The base category](90-3-the-base-category.md)
 - [90.4 The completed base category](90-4-the-completed-base-category.md)
@@ -16,4 +16,3 @@ navigation: transparent
 - [90.12 Tangent spaces of predeformation categories](90-12-tangent-spaces-of-predeformation-categorie.md)
 - [90.13 Versal formal objects](90-13-versal-formal-objects.md)
 - [90.14 Minimal versal formal objects](90-14-minimal-versal-formal-objects.md)
-- [90.15 Miniversal formal objects and tangent spaces](90-15-miniversal-formal-objects-and-tangent-spac.md)

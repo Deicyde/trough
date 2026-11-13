@@ -7,7 +7,7 @@ statement: formalized
 
 # Congruences between Eisenstein series and cusp forms
 
-5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f/index.html).
+5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f/index.html).
 
 ## Lu's congruence for the Eisenstein series $G_k$
 
@@ -32,7 +32,7 @@ $G_k \equiv \sum_{i=1}^m \gamma_i \Delta^i E_{k-12i} \pmod{N'_k}$ coefficientwis
 
 - Qing Lu, *Explicit Congruences for Modular Forms of Higher Weights*, Journal of Integer Sequences 29 (2026), Article 26.5.1, Theorem 1 (`jis-2026-26.5.1-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.eisenstein_congr_sum_delta_pow_mul_eisenstein` is written with `theorem_wanted` in [WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f/index.html#eisenstein-congr-sum-delta-pow-mul-eisen).
+Stated but not proved: `MetaMathlibExt.eisenstein_congr_sum_delta_pow_mul_eisenstein` is written with `theorem_wanted` in [WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f/index.html#eisenstein-congr-sum-delta-pow-mul-eisen).
 
 ## Lu's congruence for the divisor sums $\sigma_{k-1}(n)$
 
@@ -58,7 +58,7 @@ $n \ge 1$, $\sigma_{k-1}(n) \equiv
 
 - Qing Lu, *Explicit Congruences for Modular Forms of Higher Weights*, Journal of Integer Sequences 29 (2026), Article 26.5.1, Corollary 3 (`jis-2026-26.5.1-cor-3`).
 
-Stated but not proved: `MetaMathlibExt.sigma_congr_sum_tau_conv_sigma` is written with `theorem_wanted` in [WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f/index.html#sigma-congr-sum-tau-conv-sigma).
+Stated but not proved: `MetaMathlibExt.sigma_congr_sum_tau_conv_sigma` is written with `theorem_wanted` in [WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f/index.html#sigma-congr-sum-tau-conv-sigma).
 
 ## Lu's one-term congruence for $G_k$
 
@@ -81,7 +81,7 @@ every $n \ge 1$.
 
 - Qing Lu, *Explicit Congruences for Modular Forms of Higher Weights*, Journal of Integer Sequences 29 (2026), Article 26.5.1, Corollary 5 (`jis-2026-26.5.1-cor-5`).
 
-Stated but not proved: `MetaMathlibExt.eisenstein_congr_delta_mul_eisenstein_dim_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f/index.html#eisenstein-congr-delta-mul-eisenstein-di).
+Stated but not proved: `MetaMathlibExt.eisenstein_congr_delta_mul_eisenstein_dim_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f/index.html#eisenstein-congr-delta-mul-eisenstein-di).
 
 ## Lu's two-term congruence for $G_k$
 
@@ -105,7 +105,7 @@ particular the congruence holds for every $n \ge 1$.
 
 - Qing Lu, *Explicit Congruences for Modular Forms of Higher Weights*, Journal of Integer Sequences 29 (2026), Article 26.5.1, Corollary 6 (`jis-2026-26.5.1-cor-6`).
 
-Stated but not proved: `MetaMathlibExt.eisenstein_congr_delta_mul_eisenstein_dim_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f/index.html#eisenstein-congr-delta-mul-eisenstein-di-2).
+Stated but not proved: `MetaMathlibExt.eisenstein_congr_delta_mul_eisenstein_dim_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f/index.html#eisenstein-congr-delta-mul-eisenstein-di-2).
 
 ## Lu's three-term congruence for $G_k$
 
@@ -132,7 +132,7 @@ $G_k \equiv \Delta E_{k-12} + \gamma_2 \Delta^2 E_{k-24} + \gamma_3 \Delta^3 E_{
 
 - Qing Lu, *Explicit Congruences for Modular Forms of Higher Weights*, Journal of Integer Sequences 29 (2026), Article 26.5.1, Corollary 7 (`jis-2026-26.5.1-cor-7`).
 
-Stated but not proved: `MetaMathlibExt.eisenstein_congr_delta_mul_eisenstein_dim_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f/index.html#eisenstein-congr-delta-mul-eisenstein-di-3).
+Stated but not proved: `MetaMathlibExt.eisenstein_congr_delta_mul_eisenstein_dim_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EisensteinRamanujanCongruenceWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f/index.html#eisenstein-congr-delta-mul-eisenstein-di-3).
 
 ## Depends on
 
@@ -141,4 +141,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Congruences between Eisenstein series and cusp forms](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/modular-forms/congruences-between-eisenstein-series-and-cusp-f)

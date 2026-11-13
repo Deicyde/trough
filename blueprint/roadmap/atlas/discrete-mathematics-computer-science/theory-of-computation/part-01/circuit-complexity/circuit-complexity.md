@@ -7,7 +7,7 @@ statement: formalized
 
 # Boolean circuit complexity: its own results
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/index.html).
 
 Boolean circuits as a model of computation, including arithmetic circuits built from gates (adders, two's complement), parallel classes AC0, NC1 and NC, and circuit lower bounds (parity and majority not in AC0, Smolensky, Razborov's monotone bound, Shannon counting, Williams).
 
@@ -22,7 +22,7 @@ families of well-formed flat Boolean circuits in which every mod gate has modulu
 
 - R. Smolensky, "Algebraic methods in the theory of lower bounds for Boolean circuit complexity", Proceedings of the Nineteenth Annual ACM Symposium on Theory of Computing (STOC 1987), 77-82.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Smolensky.smolensky` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/SmolenskyWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/SmolenskyWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/index.html#smolensky).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Smolensky.smolensky` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/SmolenskyWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/SmolenskyWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/index.html#smolensky).
 
 ## Williams: NEXP is not contained in ACC0
 
@@ -33,7 +33,7 @@ $\mathsf{ACC}^0$.
 
 - R. Williams, "Non-uniform ACC circuit lower bounds", Journal of the ACM 61 (2014), 1-32 (CCC 2011).
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Williams.williams_nexp_not_in_acc0` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/WilliamsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/WilliamsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/index.html#williams-nexp-not-in-acc0).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Williams.williams_nexp_not_in_acc0` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/WilliamsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/WilliamsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/index.html#williams-nexp-not-in-acc0).
 
 ## Depends on
 
@@ -42,4 +42,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Boolean circuit complexity](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/circuit-complexity)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/circuit-complexity)

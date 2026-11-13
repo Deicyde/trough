@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.24 Existence of lower shriek
 
-Section 7.24 of the Stacks Project, [Tag 09YW](https://stacks.math.columbia.edu/tag/09YW). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 7.24 of the Stacks Project, [Tag 09YW](https://stacks.math.columbia.edu/tag/09YW). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09YX, a lemma
 
 [Tag 09YX](https://stacks.math.columbia.edu/tag/09YX) in the Stacks Project.
 
-**`CategoryTheory.Sheaf.isRightAdjoint_of_isCorepresentable_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/ExistenceOfLowerShriek.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/ExistenceOfLowerShriek.lean#L319). The attribute's comment: “Existence of lower shriek: the inverse image of a morphism of topoi has a left adjoint as soon as it is corepresentable on sections over a family of objects covering everything.”.
+**`CategoryTheory.Sheaf.isRightAdjoint_of_isCorepresentable_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/ExistenceOfLowerShriek.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/ExistenceOfLowerShriek.lean#L320). The attribute's comment: “Existence of lower shriek: the inverse image of a morphism of topoi has a left adjoint as soon as it is corepresentable on sections over a family of objects covering everything.”.
 
 > **Stacks 09YX.** Let `C`, `D` be sites and let `finv : Sh(C) ⥤ Sh(D)` be a functor between
 > their topoi of sheaves of sets — for instance the inverse image `f⁻¹` of a morphism of topoi
@@ -43,4 +43,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.24, Tag 09YW](https://stacks.math.columbia.edu/tag/09YW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

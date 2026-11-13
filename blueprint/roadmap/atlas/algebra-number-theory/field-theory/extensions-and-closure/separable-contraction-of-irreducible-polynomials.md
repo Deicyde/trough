@@ -8,7 +8,7 @@ proof: formalized
 
 # Separable contraction of irreducible polynomials
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/separable-contraction-of-irreducible-polynomials/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/separable-contraction-of-irreducible-polynomials/index.html).
 
 ## Irreducible polynomials are expansions of separable irreducibles
 
@@ -21,7 +21,7 @@ that $f(x) = g(x^{p^n})$, where $0^0 = 1$.
 
 - ATLAS NumberTheoryI, Corollary 4.5 (existence).
 
-Formalized by `Polynomial.exists_irreducible_separable_expand_eq`, a theorem declared in [MathlibExt/Algebra/Polynomial/SeparableExpand.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/SeparableExpand.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/separable-contraction-of-irreducible-polynomials/index.html#exists-irreducible-separable-expand-eq).
+Formalized by `Polynomial.exists_irreducible_separable_expand_eq`, a theorem declared in [MathlibExt/Algebra/Polynomial/SeparableExpand.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/SeparableExpand.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/separable-contraction-of-irreducible-polynomials/index.html#exists-irreducible-separable-expand-eq).
 
 ## The separable irreducible underlying an irreducible polynomial is unique
 
@@ -35,7 +35,7 @@ $0^0 = 1$, then $n_1 = n_2$ and $g_1 = g_2$.
 
 - ATLAS NumberTheoryI, Corollary 4.5 (uniqueness).
 
-Formalized by `Polynomial.unique_irreducible_separable_expand_eq`, a theorem declared in [MathlibExt/Algebra/Polynomial/SeparableExpand.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/SeparableExpand.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/separable-contraction-of-irreducible-polynomials/index.html#unique-irreducible-separable-expand-eq).
+Formalized by `Polynomial.unique_irreducible_separable_expand_eq`, a theorem declared in [MathlibExt/Algebra/Polynomial/SeparableExpand.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/SeparableExpand.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/separable-contraction-of-irreducible-polynomials/index.html#unique-irreducible-separable-expand-eq).
 
 ## Irreducible polynomials are uniquely expansions of separable irreducibles
 
@@ -50,7 +50,7 @@ $f(x) = g'(x^{p^{n'}})$ we have $n' = n$ and $g' = g$.
 
 - ATLAS NumberTheoryI, Corollary 4.5.
 
-Formalized by `Polynomial.exists_unique_irreducible_separable_expand_eq`, a theorem declared in [MathlibExt/Algebra/Polynomial/SeparableExpand.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/SeparableExpand.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/separable-contraction-of-irreducible-polynomials/index.html#exists-unique-irreducible-separable-expa).
+Formalized by `Polynomial.exists_unique_irreducible_separable_expand_eq`, a theorem declared in [MathlibExt/Algebra/Polynomial/SeparableExpand.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/SeparableExpand.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/separable-contraction-of-irreducible-polynomials/index.html#exists-unique-irreducible-separable-expa).
 
 ## Depends on
 
@@ -59,4 +59,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Separable contraction of irreducible polynomials](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/separable-contraction-of-irreducible-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/FieldTheory/extensions-and-closure/separable-contraction-of-irreducible-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/FieldTheory/extensions-and-closure/separable-contraction-of-irreducible-polynomials)

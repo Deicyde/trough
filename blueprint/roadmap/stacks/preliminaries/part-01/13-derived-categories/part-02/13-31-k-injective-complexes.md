@@ -8,7 +8,7 @@ proof: formalized
 
 # 13.31 K-injective complexes
 
-Section 13.31 of the Stacks Project, [Tag 070G](https://stacks.math.columbia.edu/tag/070G). 9 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.31 of the Stacks Project, [Tag 070G](https://stacks.math.columbia.edu/tag/070G). 9 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 070H, a definition
 
@@ -16,14 +16,14 @@ Section 13.31 of the Stacks Project, [Tag 070G](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CochainComplex.IsKInjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.IsKInjective#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 15](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch13.lean#L15) (StacksFrontier): “definition: every chain map from an acyclic complex is null-homotopic”.
-- [`CochainComplex.isKInjective_iff_rightOrthogonal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.isKInjective_iff_rightOrthogonal#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 17](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch13.lean#L17) (StacksFrontier): “Hom\_\{K(A)}(M, I) = 0 for every acyclic M”.
+- [`CochainComplex.IsKInjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.IsKInjective#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 15](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch13.lean#L15) (StacksFrontier): “definition: every chain map from an acyclic complex is null-homotopic”.
+- [`CochainComplex.isKInjective_iff_rightOrthogonal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.isKInjective_iff_rightOrthogonal#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 17](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch13.lean#L17) (StacksFrontier): “Hom\_\{K(A)}(M, I) = 0 for every acyclic M”.
 
 ## Tag 070I, a lemma
 
 [Tag 070I](https://stacks.math.columbia.edu/tag/070I) in the Stacks Project.
 
-**`CochainComplex.isKInjective_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean#L549).
+**`CochainComplex.isKInjective_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean, line 600](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean#L600).
 
 > **Stacks 070I.** Let `A` be an abelian category and `I` a cochain complex in `A`. The
 > following are equivalent: (1) `I` is K-injective; (2) for every quasi-isomorphism `M ⟶ N` in
@@ -46,7 +46,7 @@ public theorem isKInjective_tfae {A : Type u} [Category.{v} A] [Abelian A]
 
 [Tag 090X](https://stacks.math.columbia.edu/tag/090X) in the Stacks Project.
 
-**`CochainComplex.isKInjective_two_out_of_three_of_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean#L569).
+**`CochainComplex.isKInjective_two_out_of_three_of_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean, line 620](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean#L620).
 
 > **Stacks 090X.** Let `A` be an abelian category and let `(K, L, M, f, g, h)` be a
 > distinguished triangle of the homotopy category `K(A)` of cochain complexes in `A`, where `K`,
@@ -74,13 +74,13 @@ public theorem isKInjective_two_out_of_three_of_distTriang
 
 Declarations registered for the tag:
 
-- [`CochainComplex.isKInjective_of_injective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.isKInjective_of_injective#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 20](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch13.lean#L20) (StacksFrontier).
+- [`CochainComplex.isKInjective_of_injective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.isKInjective_of_injective#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 20](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch13.lean#L20) (StacksFrontier).
 
 ## Tag 0BK6, a lemma
 
 [Tag 0BK6](https://stacks.math.columbia.edu/tag/0BK6) in the Stacks Project.
 
-**`Stacks.Injectives.KInjectiveProduct.product_isKInjective`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/AdjointAndProducts.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/AdjointAndProducts.lean#L345).
+**`Stacks.Injectives.KInjectiveProduct.product_isKInjective`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/AdjointAndProducts.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/AdjointAndProducts.lean#L345).
 
 > Statement 1. A product of K-injective complexes is K-injective.
 
@@ -88,7 +88,7 @@ Declarations registered for the tag:
 alias product_isKInjective
 ```
 
-**`Stacks.Injectives.KInjectiveProduct.product_repr_derived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/AdjointAndProducts.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/AdjointAndProducts.lean#L409).
+**`Stacks.Injectives.KInjectiveProduct.product_repr_derived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/AdjointAndProducts.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/AdjointAndProducts.lean#L409).
 
 > Statement 2. The product complex `∏ᶜ X` represents the product of the family `(I_t)`
 > in the derived category `D(A)`: for every complex `K`, the natural comparison map
@@ -107,7 +107,7 @@ theorem product_repr_derived [HasDerivedCategory C]
 
 [Tag 070Y](https://stacks.math.columbia.edu/tag/070Y) in the Stacks Project.
 
-**`CategoryTheory.Functor.exists_isRightDerivedValueAt_and_isIso_of_isKInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean#L386).
+**`CategoryTheory.Functor.exists_isRightDerivedValueAt_and_isIso_of_isKInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean#L390).
 
 > **Stacks 070Y.** Let `A` be an abelian category and `F : K(A) ⥤ H` a functor on the homotopy
 > category of `ℤ`-indexed cochain complexes. Let `I` be a K-injective complex. Then:
@@ -143,28 +143,39 @@ public theorem exists_isRightDerivedValueAt_and_isIso_of_isKInjective
 
 [Tag 070K](https://stacks.math.columbia.edu/tag/070K) in the Stacks Project.
 
-**`CategoryTheory.Functor.hasPointwiseRightDerivedFunctor_and_isIso_app_of_exists_quasiIso_isKInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean#L423).
+**`CategoryTheory.Functor.isRightDerivable_and_computesRightDerived_of_exists_quasiIso_isKInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/Locality.lean#L477).
 
 > **Stacks 070K.** Let `A` be an abelian category such that every complex admits a
 > quasi-isomorphism towards a K-injective complex, and let `F : K(A) ⥤ D'` be a functor on the
-> homotopy category of `ℤ`-indexed cochain complexes. Then:
+> homotopy category of `ℤ`-indexed cochain complexes, `Qis(A)` its class of quasi-isomorphisms.
+> Then `F` has a right derived functor `RF : D(A) ⥤ D'` and `RF(I) = F(I)` for K-injective `I`:
 >
-> * `F` has a pointwise right derived functor with respect to the quasi-isomorphisms `Qis(A)` of
->   `K(A)`; in particular `F.HasRightDerivedFunctor Qis(A)` holds, i.e. `F` has a right derived
->   functor `RF : D(A) ⥤ D'`, a left Kan extension of `F` along the localization `K(A) ⥤ D(A)`;
-> * every K-injective complex `I` computes `RF`: for any localization functor `L` for `Qis(A)` and
->   any right derived functor `RF` of `F` with unit `α : F ⟶ L ⋙ RF`, the canonical map
->   `α.app I : F(I) ⟶ RF(I)` is an isomorphism, which is the source's `RF(I) = F(I)`.
+> * `F` is right derivable with respect to `Qis(A)`, i.e. `RF` is everywhere defined in the sense of
+>   Tag 05SV: for every object `X` of `K(A)` the ind-object `X/Qis(A) ⥤ D'`,
+>   `(s : X ⟶ X') ↦ F(X')`, is essentially constant (`CategoryTheory.Functor.IsRightDerivable`);
+> * every K-injective complex `I` computes `RF` in the sense of Tag 05SX: `RF` is defined at `I` and
+>   the canonical map `F(I) ⟶ RF(I)` is an isomorphism
+>   (`CategoryTheory.Functor.ComputesRightDerived`);
+> * in Mathlib's terms, `F` has a pointwise right derived functor with respect to `Qis(A)` — a
+>   pointwise left Kan extension `RF : D(A) ⥤ D'` of `F` along the localization `K(A) ⥤ D(A)` —
+>   and for any localization functor `L` for `Qis(A)` and any right derived functor `RF` of `F`
+>   with unit `α : F ⟶ L ⋙ RF`, the component `α.app I : F(I) ⟶ RF(I)` at a K-injective `I` is an
+>   isomorphism.
 >
-> The source assumes `F` exact between triangulated categories; neither conclusion uses this.
+> The source assumes `F` exact between triangulated categories; none of the conclusions uses this,
+> so the statement is for an arbitrary functor.
 
 ```lean
-public theorem hasPointwiseRightDerivedFunctor_and_isIso_app_of_exists_quasiIso_isKInjective
+public theorem isRightDerivable_and_computesRightDerived_of_exists_quasiIso_isKInjective
     {A : Type u₁} [Category.{v₁} A] [Abelian A] {H : Type u₂} [Category.{v₂} H]
     (F : HomotopyCategory A (ComplexShape.up ℤ) ⥤ H)
     (hA : ∀ K : CochainComplex A ℤ, ∃ (I : CochainComplex A ℤ) (f : K ⟶ I),
       I.IsKInjective ∧ QuasiIso f) :
-    F.HasPointwiseRightDerivedFunctor (HomotopyCategory.quasiIso A (ComplexShape.up ℤ)) ∧
+    F.IsRightDerivable (HomotopyCategory.quasiIso A (ComplexShape.up ℤ)) ∧
+      (∀ I : CochainComplex A ℤ, I.IsKInjective →
+        F.ComputesRightDerived (HomotopyCategory.quasiIso A (ComplexShape.up ℤ))
+          ((HomotopyCategory.quotient A (ComplexShape.up ℤ)).obj I)) ∧
+      F.HasPointwiseRightDerivedFunctor (HomotopyCategory.quasiIso A (ComplexShape.up ℤ)) ∧
       ∀ {D : Type u₃} [Category.{v₃} D] (L : HomotopyCategory A (ComplexShape.up ℤ) ⥤ D)
         [L.IsLocalization (HomotopyCategory.quasiIso A (ComplexShape.up ℤ))]
         (RF : D ⥤ H) (α : F ⟶ L ⋙ RF)
@@ -177,7 +188,7 @@ public theorem hasPointwiseRightDerivedFunctor_and_isIso_app_of_exists_quasiIso_
 
 [Tag 070L](https://stacks.math.columbia.edu/tag/070L) in the Stacks Project.
 
-**`isKInjective_limit_of_inverseSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/InverseLimit.lean, line 533](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/InverseLimit.lean#L533).
+**`isKInjective_limit_of_inverseSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/InverseLimit.lean, line 533](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/InverseLimit.lean#L533).
 
 > **Stacks Tag 070L (Lemma 13.31.8).** Let `A` be an abelian category and let
 > `F : ℕᵒᵖ ⥤ CochainComplex A ℤ` be an inverse system of complexes (transition maps
@@ -205,7 +216,7 @@ theorem isKInjective_limit_of_inverseSystem
 
 [Tag 08BJ](https://stacks.math.columbia.edu/tag/08BJ) in the Stacks Project.
 
-**`CochainComplex.isKInjective_mapHomologicalComplex_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/AdjointAndProducts.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/AdjointAndProducts.lean#L171).
+**`CochainComplex.isKInjective_mapHomologicalComplex_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/AdjointAndProducts.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/KInjective/AdjointAndProducts.lean#L171).
 
 > **Stacks 08BJ.** Adjoint criterion for K-injectivity, exactness form: let `u : A ⥤ B` and
 > `v : B ⥤ A` be additive functors between abelian categories such that `u` is right adjoint to `v`
@@ -227,4 +238,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.31, Tag 070G](https://stacks.math.columbia.edu/tag/070G)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

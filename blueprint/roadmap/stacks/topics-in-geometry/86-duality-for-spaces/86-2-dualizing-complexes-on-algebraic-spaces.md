@@ -8,13 +8,13 @@ proof: formalized
 
 # 86.2 Dualizing complexes on algebraic spaces
 
-Section 86.2 of the Stacks Project, [Tag 0E4X](https://stacks.math.columbia.edu/tag/0E4X). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 86.2 of the Stacks Project, [Tag 0E4X](https://stacks.math.columbia.edu/tag/0E4X). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E4Y, a lemma
 
 [Tag 0E4Y](https://stacks.math.columbia.edu/tag/0E4Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.forall_isDualizingOnChart_iff_exists_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualizingComplexEtaleCharts.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualizingComplexEtaleCharts.lean#L295).
+**`AlgebraicGeometry.Space.forall_isDualizingOnChart_iff_exists_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualizingComplexEtaleCharts.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualizingComplexEtaleCharts.lean#L297).
 
 > **Stacks Project, Tag 0E4Y.** Let `X` be a locally Noetherian algebraic space over `S` and
 > let `K` be an object of `D_QCoh(𝒪_X)`. Then the restriction `K|_U` is a dualizing complex on `U`,
@@ -50,7 +50,7 @@ theorem forall_isDualizingOnChart_iff_exists_surjective
 
 [Tag 0E4Z](https://stacks.math.columbia.edu/tag/0E4Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsDualizingComplex`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualizingComplexEtaleCharts.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualizingComplexEtaleCharts.lean#L331). The attribute's comment: “the every-chart condition of 0E4Y; the restrictions of K to the etale scheme charts of X are the family L”.
+**`AlgebraicGeometry.Space.IsDualizingComplex`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualizingComplexEtaleCharts.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualizingComplexEtaleCharts.lean#L333). The attribute's comment: “the every-chart condition of 0E4Y; the restrictions of K to the etale scheme charts of X are the family L”.
 
 > **Stacks Project, Tag 0E4Z.** An object of `D_QCoh(𝒪_X)` on a locally Noetherian algebraic
 > space `X` over `S` is a *dualizing complex* when its restriction to every étale scheme chart of
@@ -73,7 +73,7 @@ structure IsDualizingComplex (hX : IsAlgebraicSpace B S hS X)
       DerivedCategory ((BigFppfOver.toScheme B S hS).obj U).Modules) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsDualizingComplexOnSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualizingComplexEtaleCharts.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualizingComplexEtaleCharts.lean#L461).
+**`AlgebraicGeometry.Space.IsDualizingComplexOnSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualizingComplexEtaleCharts.lean, line 463](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualizingComplexEtaleCharts.lean#L463).
 
 > **Stacks Project, Tag 0E4Z.** An object `K` of `D_QCoh(𝒪_X)` on a locally Noetherian algebraic
 > space `X` over `S` is a *dualizing complex* when it satisfies the equivalent conditions of Stacks
@@ -93,7 +93,7 @@ def IsDualizingComplexOnSpace (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 0E50](https://stacks.math.columbia.edu/tag/0E50) in the Stacks Project.
 
-**`AlgebraicGeometry.AffineEtaleDuality.isIso_comparison_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleDuality/Derived.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleDuality/Derived.lean#L366).
+**`AlgebraicGeometry.AffineEtaleDuality.isIso_comparison_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleDuality/Derived.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleDuality/Derived.lean#L367).
 
 > **Stacks 0E50.** Let `A` be a Noetherian ring and `X = Spec A`, let `𝒪_étale` be the
 > structure sheaf of the small étale site of `X`, and let `ε : (X_étale, 𝒪_étale) ⟶ (X, 𝒪_X)` be
@@ -115,7 +115,7 @@ theorem isIso_comparison_app [IsNoetherianRing A] (K L : DerivedCategory (Module
 
 [Tag 0E51](https://stacks.math.columbia.edu/tag/0E51) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.dualizingComplex_duality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedDuality/SpaceDuality.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedDuality/SpaceDuality.lean#L240).
+**`AlgebraicGeometry.Space.dualizingComplex_duality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedDuality/SpaceDuality.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivedDuality/SpaceDuality.lean#L240).
 
 > **Stacks 0E51.** Let `X` be a locally Noetherian algebraic space and `K` a dualizing complex
 > on `X` (Stacks 0E4Z). Then
@@ -173,7 +173,7 @@ theorem dualizingComplex_duality (K : QuasicoherentDerivedCategory.{u, u} B S hS
 
 [Tag 0E52](https://stacks.math.columbia.edu/tag/0E52) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isInvertible_tensor_iso_of_isDualizingComplexOnSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualizingUniqueness/Uniqueness.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualizingUniqueness/Uniqueness.lean#L195).
+**`AlgebraicGeometry.Space.exists_isInvertible_tensor_iso_of_isDualizingComplexOnSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualizingUniqueness/Uniqueness.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualizingUniqueness/Uniqueness.lean#L195).
 
 > **Stacks 0E52.** Let `S` be a scheme and `X` a locally Noetherian algebraic space over `S`. If
 > `K` and `K'` are dualizing complexes on `X` (Stacks 0E4Z), then `K'` is isomorphic to
@@ -200,7 +200,7 @@ theorem exists_isInvertible_tensor_iso_of_isDualizingComplexOnSpace
 
 [Tag 0E53](https://stacks.math.columbia.edu/tag/0E53) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_dimensionFunction_of_isDualizingComplex_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualizingDimensionFunction.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualizingDimensionFunction.lean#L108).
+**`AlgebraicGeometry.Space.exists_dimensionFunction_of_isDualizingComplex_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualizingDimensionFunction.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualizingDimensionFunction.lean#L108).
 
 > Let `X` be a locally Noetherian quasi-separated algebraic space over a scheme `S` and let
 > `ω_X^•` be a dualizing complex on `X` (Stacks 0E4Z). Then the function `δ : |X| → ℤ` for which
@@ -220,7 +220,7 @@ theorem exists_dimensionFunction_of_isDualizingComplex_chart
     ∃ d : DimensionFunction (points B S hS X), ∀ x : points B S hS X, d x = δ x
 ```
 
-**`AlgebraicGeometry.Space.exists_dimensionFunction_isNormalizedDualizingComplex_geometricDerivedStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualizingDimensionFunction.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualizingDimensionFunction.lean#L371).
+**`AlgebraicGeometry.Space.exists_dimensionFunction_isNormalizedDualizingComplex_geometricDerivedStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualizingDimensionFunction.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualizingDimensionFunction.lean#L371).
 
 > Let `X` be a locally Noetherian quasi-separated algebraic space over a scheme `S` and let
 > `ω_X^•` be a dualizing complex on `X` (Stacks 0E4Z). Then there is a dimension function `δ` on
@@ -253,4 +253,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 86.2, Tag 0E4X](https://stacks.math.columbia.edu/tag/0E4X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

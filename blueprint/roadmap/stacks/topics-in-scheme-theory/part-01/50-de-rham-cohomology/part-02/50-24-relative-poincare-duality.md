@@ -8,13 +8,13 @@ proof: formalized
 
 # 50.24 Relative Poincaré duality
 
-Section 50.24 of the Stacks Project, [Tag 0G8F](https://stacks.math.columbia.edu/tag/0G8F). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 50.24 of the Stacks Project, [Tag 0G8F](https://stacks.math.columbia.edu/tag/0G8F). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G8G, a situation
 
 [Tag 0G8G](https://stacks.math.columbia.edu/tag/0G8G) in the Stacks Project.
 
-**`AlgebraicGeometry.RelativeDualitySituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/Basic.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/Basic.lean#L37).
+**`AlgebraicGeometry.RelativeDualitySituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/Basic.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/Basic.lean#L37).
 
 > A proper smooth morphism over a quasi-compact quasi-separated scheme, with all fibres
 > nonempty and equidimensional of dimension `n`.
@@ -27,7 +27,7 @@ structure RelativeDualitySituation
 
 [Tag 0G8H](https://stacks.math.columbia.edu/tag/0G8H) in the Stacks Project.
 
-**`AlgebraicGeometry.RelativeDualitySituation.structureSheafDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/StructureSheafDirectImage.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/StructureSheafDirectImage.lean#L68). The attribute's comment: “the three assertions: (1) f\_*O\_X is a finite étale O\_S-algebra (its relative Spec is finite étale over S); (2) locally on S, Rf\_*O\_X = f\_*O\_X ⊕ P in D(O\_S) with P perfect of tor amplitude in [1, ∞); (3) d : f\_*O\_X → f\_*Ω\_\{X/S} is zero”.
+**`AlgebraicGeometry.RelativeDualitySituation.structureSheafDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/StructureSheafDirectImage.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/StructureSheafDirectImage.lean#L68). The attribute's comment: “the three assertions: (1) f\_*O\_X is a finite étale O\_S-algebra (its relative Spec is finite étale over S); (2) locally on S, Rf\_*O\_X = f\_*O\_X ⊕ P in D(O\_S) with P perfect of tor amplitude in [1, ∞); (3) d : f\_*O\_X → f\_*Ω\_\{X/S} is zero”.
 
 > In the relative duality situation `f : X ⟶ S`:
 >
@@ -62,7 +62,7 @@ theorem structureSheafDirectImage (D : RelativeDualitySituation.{u}) :
 
 [Tag 0G8I](https://stacks.math.columbia.edu/tag/0G8I) in the Stacks Project.
 
-**`AlgebraicGeometry.RelativeDualitySituation.existsUnique_isRelativePoincareTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/TraceFromModel.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/TraceFromModel.lean#L102). The attribute's comment: “relative Poincaré duality trace: there is t : Rf\_*Omega^n[n] -> O\_S, unique up to a unit of H^0(X, O\_X), all of whose pairings Rf\_*Omega^p (x)^L Rf\_*Omega^\{n-p}[n] -> O\_S are perfect pairings of perfect complexes”.
+**`AlgebraicGeometry.RelativeDualitySituation.existsUnique_isRelativePoincareTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/TraceFromModel.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/TraceFromModel.lean#L102). The attribute's comment: “relative Poincaré duality trace: there is t : Rf\_*Omega^n[n] -> O\_S, unique up to a unit of H^0(X, O\_X), all of whose pairings Rf\_*Omega^p (x)^L Rf\_*Omega^\{n-p}[n] -> O\_S are perfect pairings of perfect complexes”.
 
 > In the situation of relative Poincaré duality ([Stacks, Tag 0G8G]), `f : X ⟶ S` proper and
 > smooth over a quasi-compact quasi-separated base, all of whose fibres are nonempty and
@@ -85,7 +85,7 @@ theorem existsUnique_isRelativePoincareTrace :
 
 [Tag 0G8J](https://stacks.math.columbia.edu/tag/0G8J) in the Stacks Project.
 
-**`Stacks.WeilDeRham.higherDirectImage_map_deRham_d_top_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilDeRham/TopDifferentialRelative.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilDeRham/TopDifferentialRelative.lean#L71).
+**`Stacks.WeilDeRham.higherDirectImage_map_deRham_d_top_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilDeRham/TopDifferentialRelative.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilDeRham/TopDifferentialRelative.lean#L71).
 
 > **Stacks Project, Tag 0G8J.** In the situation of relative Poincaré duality
 > ([Stacks, Tag 0G8G]) — `S` quasi-compact and quasi-separated, `f : X ⟶ S` proper and smooth, all
@@ -102,7 +102,7 @@ theorem higherDirectImage_map_deRham_d_top_eq_zero (D : RelativeDualitySituation
 
 [Tag 0G8K](https://stacks.math.columbia.edu/tag/0G8K) in the Stacks Project.
 
-**`AlgebraicGeometry.RelativeDualitySituation.existsUnique_deRhamPoincareTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/DeRhamTrace/Main.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/DeRhamTrace/Main.lean#L168). The attribute's comment: “relative Poincaré duality for de Rham cohomology: there is t : R^\{2n}f\_*Omega^. -> O\_S, unique up to a unit of H^0(X, O\_X), such that (xi, xi') |-> t(xi cup xi') is a perfect pairing Rf\_*Omega^. (x)^L Rf\_*Omega^.[2n] -> O\_S of perfect complexes”.
+**`AlgebraicGeometry.RelativeDualitySituation.existsUnique_deRhamPoincareTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/DeRhamTrace/Main.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/RelativePoincareDuality/DeRhamTrace/Main.lean#L168). The attribute's comment: “relative Poincaré duality for de Rham cohomology: there is t : R^\{2n}f\_*Omega^. -> O\_S, unique up to a unit of H^0(X, O\_X), such that (xi, xi') |-> t(xi cup xi') is a perfect pairing Rf\_*Omega^. (x)^L Rf\_*Omega^.[2n] -> O\_S of perfect complexes”.
 
 > **[Stacks, Tag 0G8K].** In the situation of relative Poincaré duality ([Stacks, Tag 0G8G]):
 > `S` quasi-compact and quasi-separated, `f : X ⟶ S` proper and smooth, all of whose fibres are
@@ -131,4 +131,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 50.24, Tag 0G8F](https://stacks.math.columbia.edu/tag/0G8F)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,6 +1,6 @@
 # Operator theory
 
-816 results of ATLAS's vault, 792 proved and 24 stated but not proved, in this branch's topics.
+812 results of ATLAS's vault, 788 proved and 24 stated but not proved, in this branch's topics.
 
 Bounded linear operators on Banach and Hilbert spaces: spectra, compact and Fredholm operators, shifts and other concrete operators, and eigenvalue inequalities.
 

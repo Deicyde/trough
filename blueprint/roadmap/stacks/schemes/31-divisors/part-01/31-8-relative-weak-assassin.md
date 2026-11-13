@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.8 Relative weak assassin
 
-Section 31.8 of the Stacks Project, [Tag 05AU](https://stacks.math.columbia.edu/tag/05AU). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.8 of the Stacks Project, [Tag 05AU](https://stacks.math.columbia.edu/tag/05AU). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05AV, a definition
 
 [Tag 05AV](https://stacks.math.columbia.edu/tag/05AV) in the Stacks Project.
 
-**`AlgebraicGeometry.relativeWeaklyAssociatedPoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/RelativeWeakAssassin.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/RelativeWeakAssassin.lean#L54).
+**`AlgebraicGeometry.relativeWeaklyAssociatedPoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/RelativeWeakAssassin.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/RelativeWeakAssassin.lean#L54).
 
 > **Stacks Project, Tag 05AV.** The relative weak assassin of an `𝒪_X`-module `F` along
 > `f : X ⟶ S`, viewed as a set of points of `X`.
@@ -28,7 +28,7 @@ noncomputable abbrev relativeWeaklyAssociatedPoints {X S : Scheme.{u}} (f : X �
 
 [Tag 05F2](https://stacks.math.columbia.edu/tag/05F2) in the Stacks Project.
 
-**`AlgebraicGeometry.relativeWeaklyAssociatedPoints_eq_relativeAssassin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/RelativeWeakAssassin.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/RelativeWeakAssassin.lean#L62).
+**`AlgebraicGeometry.relativeWeaklyAssociatedPoints_eq_relativeAssassin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/RelativeWeakAssassin.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/RelativeWeakAssassin.lean#L62).
 
 > **Stacks Project, Tag 05F2.** For a morphism locally of finite type the relative weak
 > assassin of a module is its relative assassin.
@@ -43,7 +43,7 @@ theorem relativeWeaklyAssociatedPoints_eq_relativeAssassin {X S : Scheme.{u}} (f
 
 [Tag 0CUD](https://stacks.math.columbia.edu/tag/0CUD) in the Stacks Project.
 
-**`AlgebraicGeometry.relativeWeaklyAssociatedPoints_pushforward_eq_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RelativeWeakAssassin/FinitePushforward.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RelativeWeakAssassin/FinitePushforward.lean#L111).
+**`AlgebraicGeometry.relativeWeaklyAssociatedPoints_pushforward_eq_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RelativeWeakAssassin/FinitePushforward.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RelativeWeakAssassin/FinitePushforward.lean#L111).
 
 > **Stacks Project, Tag 0CUD.**  The relative weak assassin of a finite direct image is the
 > image of the relative weak assassin on the source.
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.8, Tag 05AU](https://stacks.math.columbia.edu/tag/05AU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

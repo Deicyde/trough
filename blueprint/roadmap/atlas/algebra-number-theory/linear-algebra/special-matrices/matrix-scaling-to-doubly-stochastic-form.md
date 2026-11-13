@@ -8,7 +8,7 @@ proof: formalized
 
 # Matrix scaling to doubly stochastic form
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/matrix-scaling-to-doubly-stochastic-form/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/matrix-scaling-to-doubly-stochastic-form/index.html).
 
 ## Csima–Datta: sufficiency of total support
 
@@ -19,14 +19,14 @@ support has a positive vector `d` with `diag(d) A diag(d)` doubly stochastic.
 
 - Csima & Datta (1972); Sinkhorn & Knopp (1967).
 
-Formalized by `MathlibExt.Biology.Dynamics.SystemsBiology.exists_symmetric_balancing_of_hasTotalSupport`, a theorem declared in [MathlibExt/Biology/Dynamics/TotalSupportBalancing.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/Dynamics/TotalSupportBalancing.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/matrix-scaling-to-doubly-stochastic-form/index.html#exists-symmetric-balancing-of-has-total).
+Formalized by `MathlibExt.Biology.Dynamics.SystemsBiology.exists_symmetric_balancing_of_hasTotalSupport`, a theorem declared in [MathlibExt/Biology/Dynamics/TotalSupportBalancing.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/Dynamics/TotalSupportBalancing.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/matrix-scaling-to-doubly-stochastic-form/index.html#exists-symmetric-balancing-of-has-total).
 
 ## Csima–Datta theorem
 
 For `0 < n`, a symmetric nonnegative matrix has a positive vector
 `d` with `diag(d) A diag(d)` doubly stochastic if and only if it has total support.
 
-Formalized by `MathlibExt.Biology.Dynamics.SystemsBiology.exists_symmetric_balancing_iff_hasTotalSupport`, a theorem declared in [MathlibExt/Biology/Dynamics/TotalSupportBalancing.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/Dynamics/TotalSupportBalancing.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/matrix-scaling-to-doubly-stochastic-form/index.html#exists-symmetric-balancing-iff-has-total).
+Formalized by `MathlibExt.Biology.Dynamics.SystemsBiology.exists_symmetric_balancing_iff_hasTotalSupport`, a theorem declared in [MathlibExt/Biology/Dynamics/TotalSupportBalancing.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/Dynamics/TotalSupportBalancing.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/matrix-scaling-to-doubly-stochastic-form/index.html#exists-symmetric-balancing-iff-has-total).
 
 ## Sinkhorn's scaling theorem
 
@@ -39,7 +39,7 @@ its entries are nonnegative and each of its rows and each of its columns sums to
 
 - R. Sinkhorn, Ann. Math. Statist. 35 (1964), 876-879, DOI 10.1214/aoms/1177703591.
 
-Formalized by `MathlibExt.LinearAlgebra.Matrix.SinkhornWanted.sinkhorn_scaling`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/Sinkhorn.lean, line 474](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/Sinkhorn.lean#L474). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/matrix-scaling-to-doubly-stochastic-form/index.html#sinkhorn-scaling).
+Formalized by `MathlibExt.LinearAlgebra.Matrix.SinkhornWanted.sinkhorn_scaling`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/Sinkhorn.lean, line 474](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/Sinkhorn.lean#L474). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/matrix-scaling-to-doubly-stochastic-form/index.html#sinkhorn-scaling).
 
 ## Depends on
 
@@ -48,4 +48,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Matrix scaling to doubly stochastic form](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/matrix-scaling-to-doubly-stochastic-form/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/special-matrices/matrix-scaling-to-doubly-stochastic-form)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/special-matrices/matrix-scaling-to-doubly-stochastic-form)

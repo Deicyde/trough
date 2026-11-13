@@ -8,13 +8,13 @@ proof: formalized
 
 # 46.6 Parasitic adequate modules
 
-Section 46.6 of the Stacks Project, [Tag 06ZK](https://stacks.math.columbia.edu/tag/06ZK). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 46.6 of the Stacks Project, [Tag 06ZK](https://stacks.math.columbia.edu/tag/06ZK). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06ZM, a lemma
 
 [Tag 06ZM](https://stacks.math.columbia.edu/tag/06ZM) in the Stacks Project.
 
-**`Stacks.Adequate.tfae_isZero_restrictModule_of_isAdequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean#L475).
+**`Stacks.Adequate.tfae_isZero_restrictModule_of_isAdequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean#L475).
 
 > **[Stacks, Tag 06ZM].** Let `𝓕` be an adequate `𝒪`-module on a chosen big `τ`-site over
 > `S`, for `τ` any of the five topologies `Zar`, `étale`, `smooth`, `syntomic`, `fppf`. The
@@ -45,7 +45,7 @@ public theorem tfae_isZero_restrictModule_of_isAdequate (B : BigSite τ S)
 
 [Tag 06ZN](https://stacks.math.columbia.edu/tag/06ZN) in the Stacks Project.
 
-**`Stacks.Adequate.BigSite.isSerreClass_parasiticAdequate`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean#L525). The attribute's comment: “the subcategory of parasitic adequate modules is a Serre subcategory”.
+**`Stacks.Adequate.BigSite.isSerreClass_parasiticAdequate`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean, line 525](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean#L525). The attribute's comment: “the subcategory of parasitic adequate modules is a Serre subcategory”.
 
 > **[Stacks, Tag 06ZN], the Serre subcategory.** The parasitic adequate `𝒪`-modules form a
 > Serre subcategory `𝒞` of `Adeq(𝒪)`: it is the kernel of the exact functor
@@ -60,7 +60,7 @@ public theorem tfae_isZero_restrictModule_of_isAdequate (B : BigSite τ S)
 public instance BigSite.isSerreClass_parasiticAdequate : B.parasiticAdequate.IsSerreClass
 ```
 
-**`Stacks.Adequate.BigSite.isLocalization_restrictModuleQCoh`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean#L554). The attribute's comment: “the functor `v` induces an equivalence `Adeq(𝒪)/𝒞 = QCoh(𝒪_S)`: `v` is a localization functor for the isomorphisms modulo the Serre subcategory `𝒞`”.
+**`Stacks.Adequate.BigSite.isLocalization_restrictModuleQCoh`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean, line 554](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean#L554). The attribute's comment: “the functor `v` induces an equivalence `Adeq(𝒪)/𝒞 = QCoh(𝒪_S)`: `v` is a localization functor for the isomorphisms modulo the Serre subcategory `𝒞`”.
 
 > **[Stacks, Tag 06ZN], the quotient equivalence.** The functor `v : Adeq(𝒪) ⥤ QCoh(𝒪_S)`
 > induces an equivalence `Adeq(𝒪)/𝒞 ≌ QCoh(𝒪_S)`, where `𝒞` is the Serre subcategory of
@@ -83,7 +83,7 @@ public instance BigSite.isLocalization_restrictModuleQCoh :
 
 [Tag 06ZP](https://stacks.math.columbia.edu/tag/06ZP) in the Stacks Project.
 
-**`Stacks.Adequate.isAdequate_and_isParasitic_directImage_ofAmbient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDirectImage.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDirectImage.lean#L367).
+**`Stacks.Adequate.isAdequate_and_isParasitic_directImage_ofAmbient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDirectImage.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDirectImage.lean#L367).
 
 > **[Stacks, Tag 06ZP].** Let `f : T ⟶ S` be a quasi-compact and quasi-separated morphism of
 > schemes and let `𝓕` be a parasitic adequate `𝒪_T`-module on `(Sch/T)_τ`, for `τ` any of the five
@@ -127,4 +127,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 46.6, Tag 06ZK](https://stacks.math.columbia.edu/tag/06ZK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

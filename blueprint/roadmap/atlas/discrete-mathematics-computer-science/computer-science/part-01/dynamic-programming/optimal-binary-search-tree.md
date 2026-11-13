@@ -8,7 +8,7 @@ proof: formalized
 
 # Optimal binary search tree
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html).
 
 ## Expected search cost of a binary search tree
 
@@ -25,7 +25,7 @@ $$\sum_{k=0}^{n-1} (d(k) + 1) \cdot p_k + \sum_{i=0}^{n} (\ell_i + 1) \cdot q_i,
 
 where $m \cdot x$ denotes the $m$-fold sum of $x$ in $R$.
 
-Formalized by `Cslib.Algorithms.Lean.OptimalBST.expectedSearchCost`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Basic.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Basic.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html#expected-search-cost).
+Formalized by `Cslib.Algorithms.Lean.OptimalBST.expectedSearchCost`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Basic.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Basic.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html#expected-search-cost).
 
 ## Optimal binary search tree procedure
 
@@ -44,7 +44,7 @@ and the earliest minimizing $r$ at position $(a, b-1)$ of the root table. The pr
 the cost table $e$ and the root table, with running time equal to the total number of candidate
 roots examined.
 
-Formalized by `Cslib.Algorithms.Lean.OptimalBST.optimalBST`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Basic.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Basic.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html#optimal-bst).
+Formalized by `Cslib.Algorithms.Lean.OptimalBST.optimalBST`, a definition declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Basic.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Basic.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html#optimal-bst).
 
 ## Optimal BST with no keys
 
@@ -53,7 +53,7 @@ which addition is monotone. For $n = 0$ keys and a single dummy weight $q_0 \in 
 binary search tree procedure returns the $1 \times 1$ cost table whose only entry is $q_0$, the
 empty $0 \times 0$ root table, and running time $0$.
 
-Formalized by `Cslib.Algorithms.Lean.OptimalBST.optimalBST_empty`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Correctness.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Correctness.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html#optimal-bst-empty).
+Formalized by `Cslib.Algorithms.Lean.OptimalBST.optimalBST_empty`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Correctness.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Correctness.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html#optimal-bst-empty).
 
 ## Optimal BST table recurrence
 
@@ -71,7 +71,7 @@ $$e[a][b] \le e[a][t] + e[t+1][b] + w(a, b),$$
 with strict inequality when $t < r$. So $e[a][b]$ is the minimum of
 $e[a][t] + e[t+1][b] + w(a, b)$ over $a \le t < b$, and $r$ is the earliest $t$ attaining it.
 
-Formalized by `Cslib.Algorithms.Lean.OptimalBST.optimalBST_table_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Correctness.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Correctness.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html#optimal-bst-table-spec).
+Formalized by `Cslib.Algorithms.Lean.OptimalBST.optimalBST_table_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Correctness.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Correctness.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html#optimal-bst-table-spec).
 
 ## The optimal BST procedure finds the minimum expected search cost
 
@@ -84,7 +84,7 @@ labelled by elements of $\{0, \dots, n-1\}$ and whose inorder traversal is $0, 1
 some such tree has expected search cost $e[0][n]$, and every such tree has expected search cost
 at least $e[0][n]$.
 
-Formalized by `Cslib.Algorithms.Lean.OptimalBST.optimalBST_minimal`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Correctness.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Correctness.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html#optimal-bst-minimal).
+Formalized by `Cslib.Algorithms.Lean.OptimalBST.optimalBST_minimal`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Correctness.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Correctness.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html#optimal-bst-minimal).
 
 ## Exact running time of the optimal BST procedure
 
@@ -94,7 +94,7 @@ $p_0, \dots, p_{n-1}, q_0, \dots, q_n \in R$, the running time of the optimal bi
 procedure on these weights, which is the number of candidate roots it examines, equals
 $\binom{n+2}{3}$.
 
-Formalized by `Cslib.Algorithms.Lean.OptimalBST.optimalBST_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Cost.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Cost.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html#optimal-bst-time).
+Formalized by `Cslib.Algorithms.Lean.OptimalBST.optimalBST_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Cost.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Cost.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html#optimal-bst-time).
 
 ## Cubic running time of the optimal BST procedure
 
@@ -104,7 +104,7 @@ $p_0, \dots, p_{n-1}, q_0, \dots, q_n \in R$, the running time $T$ of the optima
 tree procedure on these weights, which is the number of candidate roots it examines, satisfies
 $n^3 \le 6T$ and $T \le n^3$.
 
-Formalized by `Cslib.Algorithms.Lean.OptimalBST.optimalBST_time_bounds`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Cost.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Cost.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html#optimal-bst-time-bounds).
+Formalized by `Cslib.Algorithms.Lean.OptimalBST.optimalBST_time_bounds`, a theorem declared in [CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Cost.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DynamicProgramming/OptimalBST/Cost.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html#optimal-bst-time-bounds).
 
 ## Depends on
 
@@ -113,4 +113,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Optimal binary search tree](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/dynamic-programming/optimal-binary-search-tree)

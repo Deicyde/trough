@@ -7,7 +7,7 @@ statement: formalized
 
 # Max-rook numbers of partitions
 
-22 results, 8 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html).
+22 results, 8 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html).
 
 ## Max-rook number of a board
 
@@ -20,7 +20,7 @@ column, that is, the largest number of non-attacking rooks that can be placed on
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Section 2 (max-rook number).
 
-Formalized by `MetaMathlibExt.boardMaxRookNumber`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#board-max-rook-number).
+Formalized by `MetaMathlibExt.boardMaxRookNumber`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#board-max-rook-number).
 
 ## Ferrers board of a partition
 
@@ -33,7 +33,7 @@ that is, such that more than $i$ parts of $p$, counted with multiplicity, exceed
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Section 1 (Ferrers diagram and Ferrers board).
 
-Formalized by `MetaMathlibExt.partitionFerrersBoard`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#partition-ferrers-board).
+Formalized by `MetaMathlibExt.partitionFerrersBoard`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#partition-ferrers-board).
 
 ## Max-rook number of a partition
 
@@ -45,7 +45,7 @@ of cells of the board, no two in the same row and no two in the same column.
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Section 2.
 
-Formalized by `MetaMathlibExt.partitionMaxRookNumber`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#partition-max-rook-number).
+Formalized by `MetaMathlibExt.partitionMaxRookNumber`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#partition-max-rook-number).
 
 ## Partitions with a given max-rook number
 
@@ -57,7 +57,7 @@ on the Ferrers board, equals $k$.
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Equation (2.2).
 
-Formalized by `MetaMathlibExt.maxRookPartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count).
+Formalized by `MetaMathlibExt.maxRookPartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count).
 
 ## Largest max-rook number among partitions of $n$
 
@@ -69,7 +69,7 @@ largest number of non-attacking rooks on the Ferrers board of $\pi$. By conventi
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Equation (2.1).
 
-Formalized by `MetaMathlibExt.partitionMaxRookNumberMax`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#partition-max-rook-number-max).
+Formalized by `MetaMathlibExt.partitionMaxRookNumberMax`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#partition-max-rook-number-max).
 
 ## Ferrers board of the partition $(2, 1)$
 
@@ -81,7 +81,7 @@ $(0, 1)$ and $(1, 0)$.
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Section 1 (Ferrers board); characteristic check of `partitionFerrersBoard`.
 
-Formalized by `MetaMathlibExt.partitionFerrersBoard_two_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#partition-ferrers-board-two-one).
+Formalized by `MetaMathlibExt.partitionFerrersBoard_two_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#partition-ferrers-board-two-one).
 
 ## Max-rook number of the partition $(5, 3, 2, 1)$
 
@@ -92,7 +92,7 @@ has max-rook number $4$.
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Figure 1.
 
-Formalized by `MetaMathlibExt.partitionMaxRookNumber_five_three_two_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#partition-max-rook-number-five-three-two).
+Formalized by `MetaMathlibExt.partitionMaxRookNumber_five_three_two_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#partition-max-rook-number-five-three-two).
 
 ## The convention $F(0) = 1$
 
@@ -103,7 +103,7 @@ largest max-rook number of a partition of $n$, takes the value $F(0) = 1$ at $n 
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, after Equation (2.1).
 
-Formalized by `MetaMathlibExt.partitionMaxRookNumberMax_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#partition-max-rook-number-max-zero).
+Formalized by `MetaMathlibExt.partitionMaxRookNumberMax_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#partition-max-rook-number-max-zero).
 
 ## Generating function of the largest max-rook number
 
@@ -119,7 +119,7 @@ where $(a;q)_\infty = \prod_{k \ge 0} (1 - a q^k)$ is the infinite q-Pochhammer 
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 1 (`jis-2026-26.2.6-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.hasSum_partitionMaxRookNumberMax` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#has-sum-partition-max-rook-number-max).
+Stated but not proved: `MetaMathlibExt.hasSum_partitionMaxRookNumberMax` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#has-sum-partition-max-rook-number-max).
 
 ## Generating function of $R_3(n)$
 
@@ -135,7 +135,7 @@ This is the rational generating function of $R_3(n)$ with its denominator cleare
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 2 (`jis-2026-26.2.6-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_three_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-three-gen-fun).
+Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_three_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-three-gen-fun).
 
 ## Linear recurrence for $R_3(n)$
 
@@ -147,7 +147,7 @@ $R_3(n) = 2R_3(n-1) - R_3(n-2) + R_3(n-3) - 2R_3(n-4) + R_3(n-5)$.
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Corollary 3 (`jis-2026-26.2.6-cor-3`).
 
-Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_three_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-three-recurrenc).
+Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_three_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-three-recurrenc).
 
 ## Generating function of partitions with max-rook number 4
 
@@ -166,7 +166,7 @@ q^{16}.$$
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 4 (`jis-2026-26.2.6-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_four_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-four-gen-fun).
+Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_four_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-four-gen-fun).
 
 ## Generating function of partitions with max-rook number 5
 
@@ -186,7 +186,7 @@ q^{22} - q^{23} + q^{24}.$$
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 5 (`jis-2026-26.2.6-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_five_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-five-gen-fun).
+Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_five_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-five-gen-fun).
 
 ## Quasi-polynomial formula for partitions with max-rook number 3
 
@@ -199,7 +199,7 @@ or $6m^2 - 7m - 1$ according as $a = 0$, $a = 1$ or $a = 2$.
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 6, first part (`jis-2026-26.2.6-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_three_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-three-formula).
+Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_three_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-three-formula).
 
 ## Periodicity of $R_3(n)$ modulo $p$
 
@@ -211,7 +211,7 @@ $R_3(n + 3p) \equiv R_3(n) \pmod{p}$.
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 6, second part (`jis-2026-26.2.6-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_three_modEq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-three-mod-eq).
+Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_three_modEq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-three-mod-eq).
 
 ## Asymptotic growth of $R_3(n)$
 
@@ -222,7 +222,7 @@ max-rook number $3$. Then $R_3(n) \sim \frac{2}{3} n^2$ as $n \to \infty$.
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Corollary 7 (`jis-2026-26.2.6-cor-7`).
 
-Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_three_isEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-three-is-equiva).
+Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_three_isEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-three-is-equiva).
 
 ## Quasi-polynomial formula for partitions with max-rook number 4
 
@@ -241,7 +241,7 @@ $(d_a) = (-3, 5, 5, 7, 4, 3, -2, -3, -5, -5, -3, 3)$.
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 8, first part (`jis-2026-26.2.6-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_four_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-four-formula).
+Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_four_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-four-formula).
 
 ## A congruence for partitions with max-rook number 4
 
@@ -253,7 +253,7 @@ $R_4(n + 12p) \equiv R_4(n) \pmod p$.
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 8, second part (`jis-2026-26.2.6-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_four_modEq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-four-mod-eq).
+Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_four_modEq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-four-mod-eq).
 
 ## Asymptotics of partitions with max-rook number 4
 
@@ -264,7 +264,7 @@ of $n$ with max-rook number $4$. Then $R_4(n) \sim n^3/9$ as $n \to \infty$.
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Corollary 9 (`jis-2026-26.2.6-cor-9`).
 
-Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_four_isEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-four-is-equival).
+Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_four_isEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-four-is-equival).
 
 ## Parity of $R_3(n)$
 
@@ -275,7 +275,7 @@ $3$. For every natural number $n > 9$, $R_3(n)$ is even if $n$ is odd and odd if
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 10 (`jis-2026-26.2.6-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_three_mod_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-three-mod-two).
+Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_three_mod_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-three-mod-two).
 
 ## Parity of the number of partitions with max-rook number 4
 
@@ -287,7 +287,7 @@ $n \equiv 4 \pmod 8$ or $n \equiv 6 \pmod 8$, and odd otherwise.
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 11 (`jis-2026-26.2.6-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_four_mod_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-four-mod-two).
+Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_four_mod_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-four-mod-two).
 
 ## Parity of the number of partitions with max-rook number 5
 
@@ -299,7 +299,7 @@ $n \equiv 5 \pmod 8$ or $n \equiv 7 \pmod 8$, and odd otherwise.
 
 - N. Guru Sharan, *Rook Decomposition of the Partition Function*, Journal of Integer Sequences 29 (2026), Article 26.2.6, Theorem 13 (`jis-2026-26.2.6-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_five_mod_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-five-mod-two).
+Stated but not proved: `MetaMathlibExt.maxRookPartitionCount_five_mod_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RookDecompositionWanted.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html#max-rook-partition-count-five-mod-two).
 
 ## Depends on
 
@@ -308,4 +308,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Max-rook numbers of partitions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/max-rook-numbers-of-partitions)

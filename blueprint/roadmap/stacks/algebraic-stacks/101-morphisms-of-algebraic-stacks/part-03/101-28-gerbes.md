@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.28 Gerbes
 
-Section 101.28 of the Stacks Project, [Tag 06QB](https://stacks.math.columbia.edu/tag/06QB). 15 tags here are carried by 35 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.28 of the Stacks Project, [Tag 06QB](https://stacks.math.columbia.edu/tag/06QB). 15 tags here are carried by 35 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06QC, a definition
 
 [Tag 06QC](https://stacks.math.columbia.edu/tag/06QC) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsGerbeOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Gerbe.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Gerbe.lean#L64). The attribute's comment: “gerbe over an algebraic stack”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsGerbeOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Gerbe.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Gerbe.lean#L64). The attribute's comment: “gerbe over an algebraic stack”.
 
 > **Stacks 06QC.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` makes `𝒳` a *gerbe
 > over* `𝒴` when its underlying functor makes `𝒳` a gerbe over `𝒴` in the sense of Stacks 06P2,
@@ -24,7 +24,7 @@ Section 101.28 of the Stacks Project, [Tag 06QB](https://stacks.math.columbia.ed
 abbrev IsGerbeOver {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsGerbe`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Gerbe.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Gerbe.lean#L72). The attribute's comment: “gerbe”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsGerbe`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Gerbe.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Gerbe.lean#L72). The attribute's comment: “gerbe”.
 
 > **Stacks 06QC.** An algebraic stack `𝒳` over `S` *is a gerbe* when there is an algebraic
 > stack `𝒴` representable by an algebraic space over `S` and a 1-morphism `𝒳 ⟶ 𝒴` making `𝒳` a
@@ -38,7 +38,7 @@ abbrev IsGerbe (𝒳 : Stack.AlgebraicStacks.{u, w} B S hS) : Prop
 
 [Tag 06QD](https://stacks.math.columbia.edu/tag/06QD) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_algebraicSpace_isGerbeOver_isoClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeIsoClasses.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeIsoClasses.lean#L107).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_algebraicSpace_isGerbeOver_isoClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeIsoClasses.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeIsoClasses.lean#L107).
 
 > **Stacks 06QD.** If an algebraic stack `𝒳` over `S` is a gerbe, then the fppf sheafification
 > of the presheaf `U ↦ Ob(𝒳_U)/≅` is (the universe lift of) an algebraic space `F`, and `𝒳` is a
@@ -61,7 +61,7 @@ theorem exists_algebraicSpace_isGerbeOver_isoClasses (𝒳 : Stack.AlgebraicStac
               (BigFppfOver.topology B S hS).toSheafify (isoClassPresheaf B S hS 𝒳)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_isGerbeOver_isoClassSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeOverIsoClassSpace.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeOverIsoClassSpace.lean#L70).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_isGerbeOver_isoClassSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeOverIsoClassSpace.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeOverIsoClassSpace.lean#L70).
 
 > **Stacks 06QD.** If an algebraic stack `𝒳` over `S` is a gerbe, then the fppf sheafification
 > of the presheaf `U ↦ Ob(𝒳_U)/≅` is (the universe lift of) an algebraic space `F`, and `𝒳` is a
@@ -95,7 +95,7 @@ theorem exists_isGerbeOver_isoClassSpace
 
 [Tag 06QE](https://stacks.math.columbia.edu/tag/06QE) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbeOver_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeBaseChange.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeBaseChange.lean#L119).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbeOver_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeBaseChange.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeBaseChange.lean#L119).
 
 > **Stacks 06QE.** In a 2-fibre-product square of algebraic stacks over `S` with cospan
 > `(f : 𝒳 ⟶ 𝒴, g : 𝒴' ⟶ 𝒴)`, if `f` makes `𝒳` a gerbe over `𝒴` then the projection to `𝒴'` makes
@@ -114,13 +114,13 @@ theorem isGerbeOver_of_isTwoFibreProduct {𝒴' : Stack.AlgebraicStacks.{u, w} B
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.IsGerbeOver.comp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/Basic.lean#L174), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Gerbe/Basic.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/Basic.lean#L229) (StacksFrontier).
+- [`CategoryTheory.IsGerbeOver.comp`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/Basic.lean#L175), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Gerbe/Basic.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/Basic.lean#L230) (StacksFrontier).
 
 ## Tag 06QF, a lemma
 
 [Tag 06QF](https://stacks.math.columbia.edu/tag/06QF) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbeOver_of_snd_of_isSurjective_isFlat_isLfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeFppfDescent.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeFppfDescent.lean#L159).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbeOver_of_snd_of_isSurjective_isFlat_isLfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeFppfDescent.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeFppfDescent.lean#L159).
 
 > **Stacks 06QF.** Let
 >
@@ -152,7 +152,7 @@ theorem isGerbeOver_of_snd_of_isSurjective_isFlat_isLfp {f : 𝒳 ⟶ 𝒴} {g :
 
 [Tag 06QG](https://stacks.math.columbia.edu/tag/06QG) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_and_isLocallyOfFinitePresentation_section_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeFlatLocalSection.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeFlatLocalSection.lean#L191). The attribute's comment: “part (3): flatness and local finite presentation of the section”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_and_isLocallyOfFinitePresentation_section_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeFlatLocalSection.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeFlatLocalSection.lean#L191). The attribute's comment: “part (3): flatness and local finite presentation of the section”.
 
 > **A section of a gerbe over an algebraic space is flat and locally of finite presentation.**
 > Let `π : 𝒳 ⟶ 𝒰` make `𝒳` a gerbe over an algebraic stack `𝒰` which is representable by an
@@ -185,7 +185,7 @@ theorem isFlat_and_isLocallyOfFinitePresentation_section_of_isGerbeOver
     IsFlat B S hS x ∧ IsLocallyOfFinitePresentation B S hS x
 ```
 
-**`AlgebraicGeometry.Stack.isSurjective_of_section_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeIsomGroupSection.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeIsomGroupSection.lean#L67). The attribute's comment: “part (3): surjectivity only; (1), (2), flatness and finite presentation unproved”.
+**`AlgebraicGeometry.Stack.isSurjective_of_section_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeIsomGroupSection.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeIsomGroupSection.lean#L67). The attribute's comment: “part (3): surjectivity of the section”.
 
 > Let `π : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` making `𝒳` a gerbe over `𝒴`,
 > and let `x : 𝒴 ⟶ 𝒳` be a section of `π`, i.e. a 1-morphism with a 2-isomorphism
@@ -198,50 +198,46 @@ theorem isSurjective_of_section_of_isGerbeOver
     IsSurjective B S hS x
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_grpObj_nonempty_equivalenceOver_quotientStackOfAction_of_section_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeSectionClassifyingStack.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeSectionClassifyingStack.lean#L351).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_equivalenceOver_gerbeSectionClassifyingFunctor_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeSectionCanonicalEquivalence.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeSectionCanonicalEquivalence.lean#L194).
 
 > **Stacks 06QG.** Let `π : 𝒳 ⟶ 𝒰` be a 1-morphism from an algebraic stack `𝒳` over `S` to the
 > algebraic stack `𝒰` of an algebraic space `Z` over `S`, let `x : 𝒰 ⟶ 𝒳` be a section of `π` — a
 > 1-morphism together with a 2-isomorphism `x ≫ π ≅ 𝟙 𝒰` — and let `π` make `𝒳` a gerbe over `𝒰`.
-> Write `G = Isom_𝒳(x, x)` for the automorphism sheaf of the section, an algebraic space over `Z`
-> through `AlgebraicGeometry.Stack.isomSpaceOverSpaceProj`. Then
+> Let `G = Isom_𝒳(x, x)` be the group algebraic space over `Z` of **Stacks 06PP**, whose group law
+> is composition of automorphisms (`AlgebraicGeometry.Stack.relativeAutomorphismGroupAlgebraicSpace`
+> at `π`; since `𝒰` is an algebraic space, its sections are all the automorphisms of `x`, by
+> `AlgebraicGeometry.Stack.isIso_relativeAutomorphismToIsomSpace`). Then
 >
-> 1. `G` carries the structure of a group algebraic space over `Z`, and the quotient stack of its
->    *trivial* action on `Z` is equivalent, over the big fppf site of `S`, to `𝒳`;
+> 1. the canonical 1-morphism `x_can : [Z/G] ⟶ 𝒳`
+>    (`AlgebraicGeometry.Stack.AlgebraicStacks.gerbeSectionClassifyingFunctor`) out of the
+>    quotient stack of the *trivial* action of `G` on `Z` is an equivalence of stacks in groupoids
+>    over the big fppf site of `S`;
 > 2. `G ⟶ Z` is flat and locally of finite presentation;
 > 3. `x` is surjective, flat and locally of finite presentation.
->
-> Part (1) is stated as the existence of a group algebraic space `G'` over `Z` together with an
-> isomorphism of `G'` with `G` *over `Z`*; that `G'` is the stabilizer of the self-intersection
-> groupoid of **Stacks 04T4** (4), whose group law is groupoid composition — composition of
-> automorphisms of `x` — by **Stacks 0447**
-> (`AlgebraicGeometry.GroupoidInAlgebraicSpaces.stabilizer_mul_comp_arrow`), and which is all of
-> the arrow space of that groupoid because for a section its source and target agree. The
-> equivalence is the canonical 1-morphism of Stacks 04T4 (5), carried across the identification of
-> the self-intersection groupoid with the trivial-action groupoid of its stabilizer.
 
 ```lean
-theorem exists_grpObj_nonempty_equivalenceOver_quotientStackOfAction_of_section_of_isGerbeOver
+theorem exists_equivalenceOver_gerbeSectionClassifyingFunctor_of_isGerbeOver
     (π : 𝒳 ⟶ Stack.algebraicSpaceStack.{u, w} B S hS Z hZ)
+    (x : Stack.algebraicSpaceStack.{u, w} B S hS Z hZ ⟶ 𝒳)
     (hx : x ≫ π ≅ 𝟙 (Stack.algebraicSpaceStack.{u, w} B S hS Z hZ))
     (hπ : IsGerbeOver B S hS π) :
-    (∃ (G : Over (⟨Z, hZ⟩ : AlgebraicSpaces B S hS).obj) (hGrp : GrpObj G)
-        (hG : IsAlgebraicSpace B S hS G.left)
-        (_ι : G ≅ Over.mk (Stack.isomSpaceOverSpaceProj B S hS Z hZ x x)),
-        letI : GrpObj G := hGrp
-        letI : ModObj G (𝟙_ (Over (⟨Z, hZ⟩ : AlgebraicSpaces B S hS).obj)) :=
-          ModObj.trivialAction G _
-        Nonempty (StacksRepresentableCFG.EquivalenceOver
-          (Stack.quotientStackOfAction (⟨Z, hZ⟩ : AlgebraicSpaces B S hS) G (𝟙_ _) hG hZ).p
-          𝒳.val.val.p)) ∧
-      Space.IsFlat B S hS (Stack.isomSpaceOverSpaceProj B S hS Z hZ x x) ∧
+    letI : ModObj (Stack.relativeAutomorphismGroupAlgebraicSpace B S hS Z hZ π x).obj.X
+      (𝟙_ (Over Z)) := ModObj.trivialAction _ _
+    (∃ e : StacksRepresentableCFG.EquivalenceOver
+        (Stack.quotientStackOfAction (⟨Z, hZ⟩ : AlgebraicSpaces B S hS)
+          (Stack.relativeAutomorphismGroupAlgebraicSpace B S hS Z hZ π x).obj.X (𝟙_ _)
+          (Stack.relativeAutomorphismGroupAlgebraicSpace B S hS Z hZ π x).property hZ).p
+        𝒳.val.val.p,
+        e.hom.functor = gerbeSectionClassifyingFunctor B S hS π x hx) ∧
+      Space.IsFlat B S hS
+        (Stack.relativeAutomorphismGroupAlgebraicSpace B S hS Z hZ π x).obj.X.hom ∧
       Space.IsLocallyOfFinitePresentation B S hS
-        (Stack.isomSpaceOverSpaceProj B S hS Z hZ x x) ∧
+        (Stack.relativeAutomorphismGroupAlgebraicSpace B S hS Z hZ π x).obj.X.hom ∧
       Stack.IsSurjective B S hS x ∧ IsFlat B S hS x ∧
         IsLocallyOfFinitePresentation B S hS x
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.source_eq_target_selfIntersectionPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeSectionQuotientPresentation.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeSectionQuotientPresentation.lean#L284). The attribute's comment: “part (1): the self-intersection groupoid of a section of a gerbe has equal source and target, so the group algebraic space of part (1) acts trivially”.
+**`AlgebraicGeometry.Stack.SelfIntersection.source_eq_target_selfIntersectionPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeSectionQuotientPresentation.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeSectionQuotientPresentation.lean#L286). The attribute's comment: “part (1): the self-intersection groupoid of a section of a gerbe has equal source and target, so the group algebraic space of part (1) acts trivially”.
 
 > **Stacks 06QG, part (1): the action is trivial**, read on the presentation datum of
 > Stacks 04T4 (4) and (5): the groupoid in algebraic spaces it builds from a section of a gerbe has
@@ -255,7 +251,7 @@ theorem source_eq_target_selfIntersectionPresentation
       (selfIntersectionPresentation eU eR h𝒳).groupoid.target
 ```
 
-**`AlgebraicGeometry.Stack.SelfIntersection.nonempty_isEquivalenceOver_canonicalMap_of_section_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeSectionQuotientPresentation.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeSectionQuotientPresentation.lean#L316). The attribute's comment: “part (1): the canonical 1-morphism out of the quotient stack of the self-intersection groupoid is an equivalence”.
+**`AlgebraicGeometry.Stack.SelfIntersection.nonempty_isEquivalenceOver_canonicalMap_of_section_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeSectionQuotientPresentation.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeSectionQuotientPresentation.lean#L319). The attribute's comment: “part (1): the canonical 1-morphism out of the quotient stack of the self-intersection groupoid is an equivalence”.
 
 > **Stacks 06QG, part (1): the canonical equivalence.** Let `𝒳` be an algebraic stack over `S`,
 > let `π : 𝒳 ⟶ 𝒴` make `𝒳` a gerbe over `𝒴`, let `x : 𝒴 ⟶ 𝒳` be a section of `π`, let `𝒴` be
@@ -274,11 +270,12 @@ theorem source_eq_target_selfIntersectionPresentation
 > `G = Isom_𝒳(x, x)`. That is this equivalence: the self-intersection groupoid has equal source and
 > target (`source_eq_target_selfIntersectionPresentation`), hence is the groupoid of the trivial
 > action of its stabilizer group of **Stacks 0447** on the object space, and that stabilizer is
-> `Isom_𝒳(x, x)` over the object space. The passage is
-> `exists_grpObj_nonempty_equivalenceOver_quotientStackOfAction_of_section_of_isGerbeOver`, in the
-> namespace `AlgebraicGeometry.Stack.AlgebraicStacks` of
-> `StacksFrontier.AlgebraicGeometry.Stacks.GerbeSectionClassifyingStack`, where the whole of Stacks 06QG
-> is assembled.
+> `Isom_𝒳(x, x)` with its group law of Stacks 06PP
+> (`AlgebraicGeometry.Stack.sectionAutomorphismStabilizerIso`). The passage is
+> `exists_equivalenceOver_gerbeSectionClassifyingFunctor_of_isGerbeOver`, in the namespace
+> `AlgebraicGeometry.Stack.AlgebraicStacks` of
+> `StacksFrontier.AlgebraicGeometry.Stacks.GerbeSectionCanonicalEquivalence`, where the whole of
+> Stacks 06QG is assembled.
 
 ```lean
 theorem nonempty_isEquivalenceOver_canonicalMap_of_section_of_isGerbeOver
@@ -295,7 +292,7 @@ theorem nonempty_isEquivalenceOver_canonicalMap_of_section_of_isGerbeOver
 
 [Tag 06QH](https://stacks.math.columbia.edu/tag/06QH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbeOver_of_equivalenceOver_quotientStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeCharacterization.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeCharacterization.lean#L85). The attribute's comment: “(2) implies (1); the converse needs Stacks 06QG”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbeOver_of_equivalenceOver_quotientStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeCharacterization.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeCharacterization.lean#L85). The attribute's comment: “(2) implies (1); the converse needs Stacks 06QG”.
 
 > Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`, let `U` be an algebraic space
 > over `S`, let `G` be a group algebraic space flat and locally of finite presentation over `U`,
@@ -321,7 +318,7 @@ theorem isGerbeOver_of_equivalenceOver_quotientStack
     IsGerbeOver B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbeOver_of_hasClassifyingFppfCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeClassifyingCoverReduction.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeClassifyingCoverReduction.lean#L157). The attribute's comment: “(2) implies (1), with clause (2) bundled”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbeOver_of_hasClassifyingFppfCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeClassifyingCoverReduction.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeClassifyingCoverReduction.lean#L157). The attribute's comment: “(2) implies (1), with clause (2) bundled”.
 
 > **Stacks 06QH, the implication (2) ⟹ (1), packaged.** A 1-morphism of algebraic stacks over
 > `S` which fppf-locally on its target is the classifying stack of a flat, locally finitely
@@ -339,7 +336,7 @@ theorem isGerbeOver_of_hasClassifyingFppfCover
     IsGerbeOver B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.hasClassifyingFppfCover_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeClassifyingCoverReduction.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeClassifyingCoverReduction.lean#L180). The attribute's comment: “(1) implies (2): the reduction along a surjective, flat, locally finitely presented base change”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.hasClassifyingFppfCover_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeClassifyingCoverReduction.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeClassifyingCoverReduction.lean#L180). The attribute's comment: “(1) implies (2): the reduction along a surjective, flat, locally finitely presented base change”.
 
 > **The reduction step of Stacks 06QH, (1) ⟹ (2): clause (2) descends along a surjective, flat,
 > locally finitely presented base change.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks
@@ -365,7 +362,7 @@ theorem hasClassifyingFppfCover_of_baseChange
     HasClassifyingFppfCover.{u, w} B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbeOver_iff_hasClassifyingFppfCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeClassifyingFppfCover.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeClassifyingFppfCover.lean#L314).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbeOver_iff_hasClassifyingFppfCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeClassifyingFppfCover.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeClassifyingFppfCover.lean#L314).
 
 > **Stacks 06QH.** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` the following are
 > equivalent:
@@ -389,7 +386,7 @@ theorem isGerbeOver_iff_hasClassifyingFppfCover
 
 [Tag 06QI](https://stacks.math.columbia.edu/tag/06QI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_and_isLocallyOfFinitePresentation_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeFlatness.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeFlatness.lean#L381). The attribute's comment: “flat and locally of finite presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_and_isLocallyOfFinitePresentation_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeFlatness.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeFlatness.lean#L381). The attribute's comment: “flat and locally of finite presentation”.
 
 > **Stacks 06QI, flatness and local finite presentation.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of
 > algebraic stacks over `S` which makes `𝒳` a gerbe over `𝒴` is flat and locally of finite
@@ -411,7 +408,7 @@ theorem isFlat_and_isLocallyOfFinitePresentation_of_isGerbeOver
     IsFlat B S hS f ∧ IsLocallyOfFinitePresentation B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isSurjective_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeSurjective.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeSurjective.lean#L135). The attribute's comment: “surjective”.
+**`AlgebraicGeometry.Stack.isSurjective_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeSurjective.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeSurjective.lean#L135). The attribute's comment: “surjective”.
 
 > **Stacks 06QI**, surjectivity. A 1-morphism of algebraic stacks over `S` whose underlying
 > functor exhibits its source as a gerbe over its target for the localized big fppf topology is
@@ -437,7 +434,7 @@ theorem isSurjective_of_isGerbeOver
 
 [Tag 06QJ](https://stacks.math.columbia.edu/tag/06QJ) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isGerbeOver_quotientStackToBase_overArrowStabilizerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotientGerbe.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotientGerbe.lean#L280). The attribute's comment: “the implication (2) implies (1): the quotient stack is a gerbe over U/(R/S)”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isGerbeOver_quotientStackToBase_overArrowStabilizerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotientGerbe.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotientGerbe.lean#L280). The attribute's comment: “the implication (2) implies (1): the quotient stack is a gerbe over U/(R/S)”.
 
 > **Stacks 06QJ, the geometric half of the implication (2) `⟹` (1).** The structure arrow
 > `[U/R] ⟶ X` of **Stacks 044R** of the groupoid read over `X = U/R'` makes the quotient stack a
@@ -458,7 +455,7 @@ theorem isGerbeOver_quotientStackToBase_overArrowStabilizerQuotient
       (quotientStackToBase (overArrowStabilizerQuotient G hX)).toFunctor
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.mono_arrowStabilizerQuotientPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotientRelation.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotientRelation.lean#L396). The attribute's comment: “the implication (2) implies (1): j' = (t', s') is a monomorphism”. References: SGA 3 V (10.4), “partial”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.mono_arrowStabilizerQuotientPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotientRelation.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotientRelation.lean#L396). The attribute's comment: “the implication (2) implies (1): j' = (t', s') is a monomorphism”. References: SGA 3 V (10.4), “partial”.
 
 > **Stacks 043C part (2) for `R/S`: `j' = (t', s')` is a monomorphism.** This is the step of
 > the proof of **Stacks 06QJ**, the implication (2) `⟹` (1), which makes the quotient `R' = R/S` of
@@ -476,7 +473,7 @@ theorem mono_arrowStabilizerQuotientPreRelation
     Mono (arrowStabilizerQuotientPreRelation G)
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isEquivalenceRelation_arrowStabilizerQuotientPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotientRelation.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotientRelation.lean#L565). The attribute's comment: “the implication (2) implies (1): j' = (t', s') is an equivalence relation”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isEquivalenceRelation_arrowStabilizerQuotientPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotientRelation.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotientRelation.lean#L565). The attribute's comment: “the implication (2) implies (1): j' = (t', s') is an equivalence relation”.
 
 > **The quotient `R' = R/S` of the arrow space by the stabilizer action is an equivalence
 > relation on the object space** — **Stacks 043C** part (4). This is the step of the proof of
@@ -496,7 +493,7 @@ theorem isEquivalenceRelation_arrowStabilizerQuotientPreRelation
       (arrowStabilizerQuotientPreRelation G).source
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_and_isLocallyOfFinitePresentation_inertiaProjection_of_isGerbe`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeInertiaCharacterization.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeInertiaCharacterization.lean#L172). The attribute's comment: “(1) implies (2)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_and_isLocallyOfFinitePresentation_inertiaProjection_of_isGerbe`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeInertiaCharacterization.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeInertiaCharacterization.lean#L172). The attribute's comment: “(1) implies (2)”.
 
 > **Stacks 06QJ, the implication (1) `⟹` (2).** If an algebraic stack `𝒳` over `S` is a gerbe,
 > then the forgetful 1-morphism `I_𝒳 ⟶ 𝒳` of its inertia is flat and locally of finite
@@ -521,7 +518,7 @@ theorem isFlat_and_isLocallyOfFinitePresentation_inertiaProjection_of_isGerbe
         (Stack.inertiaProjectionAlgebraicStacks B S hS 𝒳)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbe_iff_isFlat_and_isLocallyOfFinitePresentation_inertiaProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeInertiaCharacterization.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeInertiaCharacterization.lean#L224).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbe_iff_isFlat_and_isLocallyOfFinitePresentation_inertiaProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeInertiaCharacterization.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeInertiaCharacterization.lean#L224).
 
 > **Stacks 06QJ.** An algebraic stack `𝒳` over `S` is a gerbe if and only if the forgetful
 > 1-morphism `I_𝒳 ⟶ 𝒳` of its inertia is flat and locally of finite presentation.
@@ -539,7 +536,7 @@ theorem isGerbe_iff_isFlat_and_isLocallyOfFinitePresentation_inertiaProjection
           (Stack.inertiaProjectionAlgebraicStacks B S hS 𝒳)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbe_of_isFlat_and_isLocallyOfFinitePresentation_inertiaProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeOfFlatInertia.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeOfFlatInertia.lean#L175). The attribute's comment: “(2) implies (1): an algebraic stack whose inertia projection is flat and locally of finite presentation is a gerbe”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbe_of_isFlat_and_isLocallyOfFinitePresentation_inertiaProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeOfFlatInertia.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeOfFlatInertia.lean#L175). The attribute's comment: “(2) implies (1): an algebraic stack whose inertia projection is flat and locally of finite presentation is a gerbe”.
 
 > An algebraic stack `𝒳` over `S` whose inertia projection `I_𝒳 ⟶ 𝒳` is flat and locally of
 > finite presentation is a gerbe: there are an algebraic space `X` and a 1-morphism `𝒳 ⟶ X` making
@@ -554,7 +551,7 @@ theorem isGerbe_of_isFlat_and_isLocallyOfFinitePresentation_inertiaProjection
     IsGerbe B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isFlat_presentationStabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationStabilizerFlat.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PresentationStabilizerFlat.lean#L91). The attribute's comment: “the implication (2) implies (1): flatness of the stabilizer of a presentation”.
+**`AlgebraicGeometry.Stack.isFlat_presentationStabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationStabilizerFlat.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PresentationStabilizerFlat.lean#L91). The attribute's comment: “the implication (2) implies (1): flatness of the stabilizer of a presentation”.
 
 > If the inertia projection `ℐ_𝒳 ⟶ 𝒳` of an algebraic stack `𝒳` over `S` is flat, then for
 > every presentation `[U/R] ⟶ 𝒳` the structure morphism `G ⟶ U` of the stabilizer group algebraic
@@ -566,7 +563,7 @@ theorem isFlat_presentationStabilizer
     Space.IsFlat B S hS (GroupoidInAlgebraicSpaces.stabilizer P.groupoid).hom
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyOfFinitePresentation_presentationStabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationStabilizerFlat.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PresentationStabilizerFlat.lean#L106). The attribute's comment: “the implication (2) implies (1): local finite presentation of the stabilizer of a presentation”.
+**`AlgebraicGeometry.Stack.isLocallyOfFinitePresentation_presentationStabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationStabilizerFlat.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PresentationStabilizerFlat.lean#L106). The attribute's comment: “the implication (2) implies (1): local finite presentation of the stabilizer of a presentation”.
 
 > If the inertia projection `ℐ_𝒳 ⟶ 𝒳` of an algebraic stack `𝒳` over `S` is locally of finite
 > presentation, then for every presentation `[U/R] ⟶ 𝒳` the structure morphism `G ⟶ U` of the
@@ -584,7 +581,7 @@ theorem isLocallyOfFinitePresentation_presentationStabilizer
 
 [Tag 0CPR](https://stacks.math.columbia.edu/tag/0CPR) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSurjective_and_isFlat_and_isLocallyOfFinitePresentation_relativeDiagonal_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean#L120). The attribute's comment: “part (2): the relative diagonal is surjective, flat and locally of finite presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSurjective_and_isFlat_and_isLocallyOfFinitePresentation_relativeDiagonal_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean#L120). The attribute's comment: “part (2): the relative diagonal is surjective, flat and locally of finite presentation”.
 
 > **Stacks 0CPR, part (2).** If a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` makes
 > `𝒳` a gerbe over `𝒴`, then its relative diagonal `Δ_f : 𝒳 ⟶ 𝒳 ×_𝒴 𝒳` is surjective, flat and
@@ -604,7 +601,7 @@ theorem isSurjective_and_isFlat_and_isLocallyOfFinitePresentation_relativeDiagon
       IsLocallyOfFinitePresentation B S hS (Stack.relativeDiagonalAlgebraicStacks B S hS f)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_and_isLocallyOfFinitePresentation_relativeInertiaProjection_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean#L139). The attribute's comment: “part (1): the relative inertia is flat and locally of finite presentation over the source”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_and_isLocallyOfFinitePresentation_relativeInertiaProjection_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean#L139). The attribute's comment: “part (1): the relative inertia is flat and locally of finite presentation over the source”.
 
 > **Stacks 0CPR, part (1).** If a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` makes
 > `𝒳` a gerbe over `𝒴`, then the forgetful 1-morphism `I_{𝒳/𝒴} ⟶ 𝒳` of the relative inertia is
@@ -623,7 +620,7 @@ theorem isFlat_and_isLocallyOfFinitePresentation_relativeInertiaProjection_of_is
       IsLocallyOfFinitePresentation B S hS (Stack.relativeInertiaProjection B S hS f)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSurjective_and_isFlat_and_isLocallyOfFinitePresentation_comparison_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean#L176). The attribute's comment: “part (3): the comparison of the two fibre products of a pair of algebraic spaces over the stacks is surjective, flat and locally of finite presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSurjective_and_isFlat_and_isLocallyOfFinitePresentation_comparison_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean#L176). The attribute's comment: “part (3): the comparison of the two fibre products of a pair of algebraic spaces over the stacks is surjective, flat and locally of finite presentation”.
 
 > **Stacks 0CPR, part (3).** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`
 > making `𝒳` a gerbe over `𝒴`, let `T₁` and `T₂` be algebraic spaces over `S` and let
@@ -648,7 +645,7 @@ theorem isSurjective_and_isFlat_and_isLocallyOfFinitePresentation_comparison_of_
       IsLocallyOfFinitePresentation B S hS (Stack.comparison B S hS x₁ x₂ f)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isomMap_isSurjective_and_isFlat_and_isLocallyOfFinitePresentation_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean#L222). The attribute's comment: “part (4): the morphism of isomorphism spaces is surjective, flat and locally of finite presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isomMap_isSurjective_and_isFlat_and_isLocallyOfFinitePresentation_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeRelativeDiagonal.lean#L222). The attribute's comment: “part (4): the morphism of isomorphism spaces is surjective, flat and locally of finite presentation”.
 
 > **Stacks 0CPR, part (4).** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`
 > making `𝒳` a gerbe over `𝒴`, let `T` be an algebraic space over `S` and let `x₁, x₂ : T ⟶ 𝒳` be
@@ -701,7 +698,7 @@ theorem isomMap_isSurjective_and_isFlat_and_isLocallyOfFinitePresentation_of_isG
 
 [Tag 0CPS](https://stacks.math.columbia.edu/tag/0CPS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbeOver_iff_isSurjective_isFlat_isLfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeFlatDiagonalCharacterization.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeFlatDiagonalCharacterization.lean#L195).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isGerbeOver_iff_isSurjective_isFlat_isLfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeFlatDiagonalCharacterization.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeFlatDiagonalCharacterization.lean#L195).
 
 > **Stacks 0CPS.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`. Then `𝒳` is
 > a gerbe over `𝒴` if and only if `f` and its relative diagonal `Δ_f : 𝒳 ⟶ 𝒳 ×_𝒴 𝒳` are both
@@ -728,7 +725,7 @@ theorem isGerbeOver_iff_isSurjective_isFlat_isLfp
 
 [Tag 06QK](https://stacks.math.columbia.edu/tag/06QK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_gerbeOver_reducedLocallyNoetherianWithUniquePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedSingletonStackGerbe.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ReducedSingletonStackGerbe.lean#L109). The attribute's comment: “The field cover of Stacks 06MP (1) implies (2), the flatness and local finite presentation of the inertia and their fppf descent, Stacks 06QJ (2) implies (1), the gerbe 1-morphism being surjective, flat and locally of finite presentation by Stacks 06QI, and the conclusion about the base by Stacks 06MP (2) implies (1) applied to the composite from the field spectrum”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_gerbeOver_reducedLocallyNoetherianWithUniquePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedSingletonStackGerbe.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ReducedSingletonStackGerbe.lean#L109). The attribute's comment: “The field cover of Stacks 06MP (1) implies (2), the flatness and local finite presentation of the inertia and their fppf descent, Stacks 06QJ (2) implies (1), the gerbe 1-morphism being surjective, flat and locally of finite presentation by Stacks 06QI, and the conclusion about the base by Stacks 06MP (2) implies (1) applied to the composite from the field spectrum”.
 
 > **Stacks 06QK.** Let `𝒵` be a reduced, locally Noetherian algebraic stack over `S` whose
 > space of points is a singleton. Then there is an algebraic stack `Z` over `S` which is
@@ -745,7 +742,7 @@ theorem exists_gerbeOver_reducedLocallyNoetherianWithUniquePoint
           Stack.IsReducedLocallyNoetherianWithUniquePoint B S hS Z
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_gerbeOver_reducedLocallyNoetherianWithUniquePoint_unconditional`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedSingletonStackGerbeUnconditional.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ReducedSingletonStackGerbeUnconditional.lean#L52). The attribute's comment: “unconditional. The field cover of Stacks 06MP (1) implies (2), the flatness and local finite presentation of the inertia and their fppf descent, Stacks 06QJ (2) implies (1) cited from GerbeOfFlatInertia, the gerbe 1-morphism being surjective, flat and locally of finite presentation by Stacks 06QI, and the conclusion about the base by Stacks 06MP (2) implies (1) applied to the composite from the field spectrum”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_gerbeOver_reducedLocallyNoetherianWithUniquePoint_unconditional`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedSingletonStackGerbeUnconditional.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ReducedSingletonStackGerbeUnconditional.lean#L52). The attribute's comment: “unconditional. The field cover of Stacks 06MP (1) implies (2), the flatness and local finite presentation of the inertia and their fppf descent, Stacks 06QJ (2) implies (1) cited from GerbeOfFlatInertia, the gerbe 1-morphism being surjective, flat and locally of finite presentation by Stacks 06QI, and the conclusion about the base by Stacks 06MP (2) implies (1) applied to the composite from the field spectrum”.
 
 > Let `𝒵` be a reduced, locally Noetherian algebraic stack over `S` whose space of points is a
 > singleton. Then there is an algebraic stack `Z` over `S` which is representable by an algebraic
@@ -760,7 +757,7 @@ alias exists_gerbeOver_reducedLocallyNoetherianWithUniquePoint_unconditional
 
 [Tag 06R9](https://stacks.math.columbia.edu/tag/06R9) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.universalHomeomorphism_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeUniversalHomeo.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeUniversalHomeo.lean#L191).
+**`AlgebraicGeometry.Stack.universalHomeomorphism_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeUniversalHomeo.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeUniversalHomeo.lean#L191).
 
 > **Stacks 06R9.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` which exhibits `𝒳` as
 > a gerbe over `𝒴` is a universal homeomorphism in the sense of Stacks 0CI7.
@@ -778,7 +775,7 @@ theorem universalHomeomorphism_of_isGerbeOver {𝒳 𝒴 : AlgebraicStacks.{u, w
 
 [Tag 0DQL](https://stacks.math.columbia.edu/tag/0DQL) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiCompactMorphism_diagonal_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactDiagonalGerbe.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactDiagonalGerbe.lean#L485).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiCompactMorphism_diagonal_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactDiagonalGerbe.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactDiagonalGerbe.lean#L485).
 
 > Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` which makes `𝒳` a gerbe over
 > `𝒴`. If the diagonal of `𝒳` is quasi-compact, then so is the diagonal of `𝒴`.
@@ -794,7 +791,7 @@ theorem isQuasiCompactMorphism_diagonal_of_isGerbeOver (f : 𝒳 ⟶ 𝒴)
 
 [Tag 06RA](https://stacks.math.columbia.edu/tag/06RA) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasSingletonPointMonomorphism_of_isGerbe`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeResidualGerbeExistence.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeResidualGerbeExistence.lean#L187).
+**`AlgebraicGeometry.Stack.hasSingletonPointMonomorphism_of_isGerbe`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeResidualGerbeExistence.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeResidualGerbeExistence.lean#L187).
 
 > **Stacks 06RA.** An algebraic stack over `S` which is a gerbe (**Stacks 06QC**) satisfies
 > condition (1) of **Stacks 06MT** at every point of its space of points; that is, its residual
@@ -820,4 +817,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.28, Tag 06QB](https://stacks.math.columbia.edu/tag/06QB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

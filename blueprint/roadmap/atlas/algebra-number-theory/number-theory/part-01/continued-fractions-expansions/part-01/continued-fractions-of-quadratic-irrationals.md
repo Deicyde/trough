@@ -7,7 +7,7 @@ statement: formalized
 
 # Continued fractions of quadratic irrationals
 
-23 results, 7 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html).
+23 results, 7 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html).
 
 ## Convergent denominators as continuants
 
@@ -25,7 +25,7 @@ $i \ge 1$.
 
 - Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, notation of Proposition 2.
 
-Formalized by `MetaMathlibExt.convergentDen`, a definition declared in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den).
+Formalized by `MetaMathlibExt.convergentDen`, a definition declared in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den).
 
 ## The convergent denominator $q_0$ equals $1$
 
@@ -36,7 +36,7 @@ $a_0, a_1, a_2, \dots$ with convergent denominators $q_0, q_1, q_2, \dots$, we h
 
 - Jun Ho Lee, INTEGERS 26 (2026), Article A69, notation of Proposition 2.
 
-Formalized by `MetaMathlibExt.convergentDen_zero`, a theorem declared in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den-zero).
+Formalized by `MetaMathlibExt.convergentDen_zero`, a theorem declared in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den-zero).
 
 ## The convergent denominator $q_1$ equals $a_1$
 
@@ -47,7 +47,7 @@ $a_0, a_1, a_2, \dots$ with convergent denominators $q_0, q_1, q_2, \dots$, we h
 
 - Jun Ho Lee, INTEGERS 26 (2026), Article A69, notation of Proposition 2.
 
-Formalized by `MetaMathlibExt.convergentDen_one`, a theorem declared in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den-one).
+Formalized by `MetaMathlibExt.convergentDen_one`, a theorem declared in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den-one).
 
 ## Recurrence for the convergent denominators
 
@@ -59,7 +59,7 @@ number $n$, we have $q_{n+2} = a_{n+2} q_{n+1} + q_n$.
 
 - Jun Ho Lee, INTEGERS 26 (2026), Article A69, notation of Proposition 2.
 
-Formalized by `MetaMathlibExt.convergentDen_add_two`, a theorem declared in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den-add-two).
+Formalized by `MetaMathlibExt.convergentDen_add_two`, a theorem declared in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den-add-two).
 
 ## The convergent denominator $q_2$ equals $a_2 a_1 + 1$
 
@@ -71,7 +71,7 @@ $q_2 = a_2 a_1 + 1$.
 
 - Jun Ho Lee, INTEGERS 26 (2026), Article A69, notation of Proposition 2.
 
-Formalized by `MetaMathlibExt.convergentDen_two`, a theorem declared in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den-two).
+Formalized by `MetaMathlibExt.convergentDen_two`, a theorem declared in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den-two).
 
 ## Continued fractions with a prescribed period
 
@@ -86,7 +86,7 @@ divides $k$ and $a_{k \bmod l}$ otherwise. The period $l$ need not be minimal.
 
 - Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, the expansions `√d = [a₀; a₁, …, a_{l-1}, 2a₀]` of Theorem 1.
 
-Formalized by `MetaMathlibExt.HasPeriodicCF`, a definition declared in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#has-periodic-cf).
+Formalized by `MetaMathlibExt.HasPeriodicCF`, a definition declared in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#has-periodic-cf).
 
 ## The integer part of a periodic continued fraction is the floor
 
@@ -101,7 +101,7 @@ is $[a_0; a_1, \dots, a_{l-1}, c, a_1, \dots, a_{l-1}, c, \dots]$. Then $\lfloor
 
 - Jun Ho Lee, INTEGERS 26 (2026), Article A69, Theorem 1 (`a₀ = ⌊√d⌋`).
 
-Formalized by `MetaMathlibExt.HasPeriodicCF.floor_eq`, a theorem declared in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#floor-eq).
+Formalized by `MetaMathlibExt.HasPeriodicCF.floor_eq`, a theorem declared in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#floor-eq).
 
 ## Parity criterion for $\sqrt{d}$ with a given symmetric period, odd length
 
@@ -119,7 +119,7 @@ Proposition 2.
 
 - Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Theorem 1 (i).
 
-Stated but not proved: `MetaMathlibExt.sqrt_hasPeriodicCF_exists_iff_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#sqrt-has-periodic-cf-exists-iff-of-odd).
+Stated but not proved: `MetaMathlibExt.sqrt_hasPeriodicCF_exists_iff_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#sqrt-has-periodic-cf-exists-iff-of-odd).
 
 ## Parity criterion for $\sqrt{d}$ with a given symmetric period, even length
 
@@ -135,7 +135,7 @@ $q_{l-1}$ are both odd, or $a_{l/2}$ is even.
 
 - Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Theorem 1 (ii).
 
-Stated but not proved: `MetaMathlibExt.sqrt_hasPeriodicCF_exists_iff_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#sqrt-has-periodic-cf-exists-iff-of-even).
+Stated but not proved: `MetaMathlibExt.sqrt_hasPeriodicCF_exists_iff_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#sqrt-has-periodic-cf-exists-iff-of-even).
 
 ## Splitting the last convergent denominator of a symmetric sequence
 
@@ -152,7 +152,7 @@ The case $i = 0$ of the paper, which uses $q_{-1} = 0$, is omitted.
 
 - Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Proposition 3 (i).
 
-Stated but not proved: `MetaMathlibExt.convergentDen_symm_split` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den-symm-split).
+Stated but not proved: `MetaMathlibExt.convergentDen_symm_split` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den-symm-split).
 
 ## Splitting the shifted continuant of a symmetric sequence
 
@@ -170,7 +170,7 @@ omitted.
 
 - Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Proposition 3 (ii).
 
-Stated but not proved: `MetaMathlibExt.shifted_convergentDen_symm_split` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#shifted-convergent-den-symm-split).
+Stated but not proved: `MetaMathlibExt.shifted_convergentDen_symm_split` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#shifted-convergent-den-symm-split).
 
 ## Parity of $q_{l-1}$ for a symmetric sequence, even $l$
 
@@ -182,7 +182,7 @@ such that $a_i = a_{l-i}$ for $1 \le i < l$. Then $q_{l-1} \equiv a_{l/2} \, q_{
 
 - Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Corollary 1 (i).
 
-Stated but not proved: `MetaMathlibExt.convergentDen_parity_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den-parity-of-even).
+Stated but not proved: `MetaMathlibExt.convergentDen_parity_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den-parity-of-even).
 
 ## Parity of the shifted continuant of a symmetric sequence, even length
 
@@ -198,7 +198,7 @@ The case $l = 2$ of the paper, which needs $r_0 = 0$, is omitted.
 
 - Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Corollary 1 (ii).
 
-Stated but not proved: `MetaMathlibExt.shifted_convergentDen_parity_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#shifted-convergent-den-parity-of-even).
+Stated but not proved: `MetaMathlibExt.shifted_convergentDen_parity_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#shifted-convergent-den-parity-of-even).
 
 ## Parity of $q_{l-1}$ for a symmetric sequence, odd $l$
 
@@ -211,7 +211,7 @@ $q_{l-1} \equiv q_{(l-1)/2} + q_{(l-3)/2} \pmod 2$.
 
 - Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Corollary 2 (i).
 
-Stated but not proved: `MetaMathlibExt.convergentDen_parity_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den-parity-of-odd).
+Stated but not proved: `MetaMathlibExt.convergentDen_parity_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#convergent-den-parity-of-odd).
 
 ## Parity of the shifted continuant of a symmetric sequence, odd length
 
@@ -227,7 +227,7 @@ The case $l = 3$ of the paper, which needs $r_0 = 0$, is omitted.
 
 - Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Corollary 2 (ii).
 
-Stated but not proved: `MetaMathlibExt.shifted_convergentDen_parity_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#shifted-convergent-den-parity-of-odd).
+Stated but not proved: `MetaMathlibExt.shifted_convergentDen_parity_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#shifted-convergent-den-parity-of-odd).
 
 ## Number of unrealizable parity patterns for $\sqrt{d}$, odd length
 
@@ -246,7 +246,7 @@ $A_m = A_{m-1} + 2A_{m-2}$ for $m \ge 3$.
 
 - Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.sqrt_periodicCF_obstruction_count_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#sqrt-periodic-cf-obstruction-count-of-od).
+Stated but not proved: `MetaMathlibExt.sqrt_periodicCF_obstruction_count_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#sqrt-periodic-cf-obstruction-count-of-od).
 
 ## Number of unrealizable parity patterns for $\sqrt{d}$, even length
 
@@ -262,7 +262,7 @@ $3B = 2^{l/2 - 1} - (-1)^{l/2 - 1}$.
 
 - Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.sqrt_periodicCF_obstruction_count_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#sqrt-periodic-cf-obstruction-count-of-ev).
+Stated but not proved: `MetaMathlibExt.sqrt_periodicCF_obstruction_count_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#sqrt-periodic-cf-obstruction-count-of-ev).
 
 ## Every parity pattern is realized by $(1 + \sqrt{d})/2$ for odd period length
 
@@ -278,7 +278,7 @@ of patterns that are not realized is $0$.
 
 - Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.half_one_add_sqrt_periodicCF_obstruction_count_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#half-one-add-sqrt-periodic-cf-obstructio).
+Stated but not proved: `MetaMathlibExt.half_one_add_sqrt_periodicCF_obstruction_count_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#half-one-add-sqrt-periodic-cf-obstructio).
 
 ## Unrealizable parity patterns for $(1 + \sqrt d)/2$ with even $l$
 
@@ -300,7 +300,7 @@ realizes $a_1 = 2$.
 
 - Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.half_one_add_sqrt_periodicCF_obstruction_count_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#half-one-add-sqrt-periodic-cf-obstructio-2).
+Stated but not proved: `MetaMathlibExt.half_one_add_sqrt_periodicCF_obstruction_count_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFNonexistenceWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#half-one-add-sqrt-periodic-cf-obstructio-2).
 
 ## Parity criterion for $\sqrt{d}$ with a given symmetric period
 
@@ -316,7 +316,7 @@ $q_{l-1}$ is odd, or $q_{l-1}$ and $r_{l-2}$ are even and $q_{l-2}$ is odd.
 
 - Jun Ho Lee, *Classification for Existence of the Continued Fraction Expansions of √D and (1 + √D)/2*, INTEGERS 24 (2024), Article A50, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.sqrt_hasPeriodicCF_exists_iff_parity` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#sqrt-has-periodic-cf-exists-iff-parity).
+Stated but not proved: `MetaMathlibExt.sqrt_hasPeriodicCF_exists_iff_parity` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#sqrt-has-periodic-cf-exists-iff-parity).
 
 ## Parity criterion for $(1 + \sqrt{d})/2$ with a given symmetric period
 
@@ -337,7 +337,7 @@ violate the criterion.
 
 - Jun Ho Lee, *Classification for Existence of the Continued Fraction Expansions of √D and (1 + √D)/2*, INTEGERS 24 (2024), Article A50, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.half_one_add_sqrt_hasPeriodicCF_exists_iff_parity` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#half-one-add-sqrt-has-periodic-cf-exists).
+Stated but not proved: `MetaMathlibExt.half_one_add_sqrt_hasPeriodicCF_exists_iff_parity` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#half-one-add-sqrt-has-periodic-cf-exists).
 
 ## Existence of $(1 + \sqrt{d})/2$ with a given symmetric period
 
@@ -351,7 +351,7 @@ such $d$ and $a_0$ exist if and only if $a_{l/2}$ is odd.
 
 - Jun Ho Lee, *Classification for Existence of the Continued Fraction Expansions of √D and (1 + √D)/2*, INTEGERS 24 (2024), Article A50, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.half_one_add_sqrt_hasPeriodicCF_exists_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#half-one-add-sqrt-has-periodic-cf-exists-2).
+Stated but not proved: `MetaMathlibExt.half_one_add_sqrt_hasPeriodicCF_exists_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#half-one-add-sqrt-has-periodic-cf-exists-2).
 
 ## Fundamental unit from the period of $\sqrt{d}$
 
@@ -371,7 +371,7 @@ since $\mathbb{Q}(\sqrt{1})$ is not a quadratic field.
 
 - Jun Ho Lee, *Classification for Existence of the Continued Fraction Expansions of √D and (1 + √D)/2*, INTEGERS 24 (2024), Article A50, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.fundamentalUnit_eq_convergent_or_cube` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#fundamental-unit-eq-convergent-or-cube).
+Stated but not proved: `MetaMathlibExt.fundamentalUnit_eq_convergent_or_cube` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticIrrationalCFClassificationWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html#fundamental-unit-eq-convergent-or-cube).
 
 ## Depends on
 
@@ -380,4 +380,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Continued fractions of quadratic irrationals](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/continued-fractions-of-quadratic-irrationals)

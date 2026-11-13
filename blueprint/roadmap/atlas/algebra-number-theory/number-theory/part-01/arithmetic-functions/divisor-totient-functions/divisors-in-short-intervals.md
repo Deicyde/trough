@@ -7,7 +7,7 @@ statement: formalized
 
 # Divisors in short intervals
 
-17 results, 5 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html).
+17 results, 5 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html).
 
 ## Number of divisors in a short interval
 
@@ -19,7 +19,7 @@ $X \le d \le X + Y$. Here $0$ is taken to have no divisors, so $D_0(X, Y) = 0$.
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Section 1 (definition of `D_n(X, Y)`).
 
-Formalized by `MetaMathlibExt.shortIntervalDivisorCount`, a definition declared in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#short-interval-divisor-count).
+Formalized by `MetaMathlibExt.shortIntervalDivisorCount`, a definition declared in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#short-interval-divisor-count).
 
 ## Trivial bound for the short-interval divisor count
 
@@ -32,7 +32,7 @@ have no divisors, so $D_0(X, Y) = \tau(0) = 0$.
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Section 1 (definition of `D_n(X, Y)`).
 
-Formalized by `MetaMathlibExt.shortIntervalDivisorCount_le_card_divisors`, a theorem declared in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#short-interval-divisor-count-le-card-div).
+Formalized by `MetaMathlibExt.shortIntervalDivisorCount_le_card_divisors`, a theorem declared in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#short-interval-divisor-count-le-card-div).
 
 ## Letendre's saving exponent
 
@@ -47,7 +47,7 @@ $2\eta \le 3\theta - 1$ and $\xi(\theta, \eta) = 4(\theta - \eta)$ when $2\eta >
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Theorem 1, display (2).
 
-Formalized by `MetaMathlibExt.letendreXi`, a definition declared in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#letendre-xi).
+Formalized by `MetaMathlibExt.letendreXi`, a definition declared in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#letendre-xi).
 
 ## Letendre's exponent equals $1$ when $\eta \le \theta^2$
 
@@ -58,7 +58,7 @@ $\eta$ with $\eta \le \theta^2$, Letendre's saving exponent satisfies $\xi(\thet
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Theorem 1, display (2).
 
-Formalized by `MetaMathlibExt.letendreXi_of_le_sq`, a theorem declared in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#letendre-xi-of-le-sq).
+Formalized by `MetaMathlibExt.letendreXi_of_le_sq`, a theorem declared in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#letendre-xi-of-le-sq).
 
 ## Letendre's exponent for $\theta^2 < \eta$, $\theta \le 1/2$ and $\theta < 2\eta$
 
@@ -70,7 +70,7 @@ Letendre's saving exponent satisfies $\xi(\theta, \eta) = 4(\theta - \eta)$.
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Theorem 1, display (2).
 
-Formalized by `MetaMathlibExt.letendreXi_of_small_theta_large_eta`, a theorem declared in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#letendre-xi-of-small-theta-large-eta).
+Formalized by `MetaMathlibExt.letendreXi_of_small_theta_large_eta`, a theorem declared in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#letendre-xi-of-small-theta-large-eta).
 
 ## Cohen's lcm–gcd inequality
 
@@ -86,7 +86,7 @@ where the exponent $t(t+1)/2$ is an integer.
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.prod_zpow_le_lcm_zpow_mul_prod_gcd` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#prod-zpow-le-lcm-zpow-mul-prod-gcd).
+Stated but not proved: `MetaMathlibExt.prod_zpow_le_lcm_zpow_mul_prod_gcd` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#prod-zpow-le-lcm-zpow-mul-prod-gcd).
 
 ## Reordering so that prefix sums compare
 
@@ -101,7 +101,7 @@ No positivity of the $x_i$ or $y_i$ is assumed.
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.exists_perm_prefix_sum_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-perm-prefix-sum-le).
+Stated but not proved: `MetaMathlibExt.exists_perm_prefix_sum_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-perm-prefix-sum-le).
 
 ## Arithmetic large sieve with prime-power moduli
 
@@ -121,7 +121,7 @@ $p \in S$ and $p^{\beta_p}$ exactly divides $q$, and $h_p(q) = 0$ otherwise (so 
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.card_le_of_avoids_residues_primePow` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#card-le-of-avoids-residues-prime-pow).
+Stated but not proved: `MetaMathlibExt.card_le_of_avoids_residues_primePow` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#card-le-of-avoids-residues-prime-pow).
 
 ## Counting $x$ with $x^2 + p^v u$ not a square modulo $p^{v+1}$
 
@@ -136,7 +136,7 @@ $v \ge 2$.
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.card_unsolvable_sq_add_primePow` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#card-unsolvable-sq-add-prime-pow).
+Stated but not proved: `MetaMathlibExt.card_unsolvable_sq_add_primePow` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#card-unsolvable-sq-add-prime-pow).
 
 ## Divisors in windows of length $n^{\theta^2 - \varepsilon}$
 
@@ -151,7 +151,7 @@ C \left(\theta(1 - \theta)/\varepsilon + 1/(\theta(1 - \theta))\right)$.
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.exists_shortIntervalDivisorCount_le_of_window_theta_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-short-interval-divisor-count-le-o).
+Stated but not proved: `MetaMathlibExt.exists_shortIntervalDivisorCount_le_of_window_theta_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-short-interval-divisor-count-le-o).
 
 ## Letendre's exponent as the largest admissible exponent
 
@@ -171,7 +171,7 @@ $A$ is unbounded when $\eta = \theta^2$.
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.isGreatest_letendreXi` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#is-greatest-letendre-xi).
+Stated but not proved: `MetaMathlibExt.isGreatest_letendreXi` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#is-greatest-letendre-xi).
 
 ## Exponents with a margin in Letendre's inequality
 
@@ -186,7 +186,7 @@ numbers $\alpha$ and $t$ with $0 < \alpha \le A$ and $0 \le t \le 1 - \alpha$.
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.exists_alpha_with_margin` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-alpha-with-margin).
+Stated but not proved: `MetaMathlibExt.exists_alpha_with_margin` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-alpha-with-margin).
 
 ## Letendre's bound for divisors in short intervals
 
@@ -203,7 +203,7 @@ $D_n(n^\theta, n^\eta) \le C \tau(n)^{1 - \xi(\theta, \eta)} V(n) \log \tau(n) /
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.exists_shortIntervalDivisorCount_le_letendre` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-short-interval-divisor-count-le-l).
+Stated but not proved: `MetaMathlibExt.exists_shortIntervalDivisorCount_le_letendre` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-short-interval-divisor-count-le-l).
 
 ## Arbitrarily large integers with a divisor in a short window
 
@@ -219,7 +219,7 @@ for all $n \ge 1$ is at least $1$; that weaker statement already follows from $n
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.exists_large_shortIntervalDivisorCount_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-large-short-interval-divisor-coun).
+Stated but not proved: `MetaMathlibExt.exists_large_shortIntervalDivisorCount_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-large-short-interval-divisor-coun).
 
 ## Lower bound for constants bounding divisors in short windows
 
@@ -234,7 +234,7 @@ at most $k$. Then $c \sqrt{\varepsilon} \, (\theta(1 - \theta))^{3/2} \,
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.exists_lower_bound_conjecture_constant` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-lower-bound-conjecture-constant).
+Stated but not proved: `MetaMathlibExt.exists_lower_bound_conjecture_constant` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-lower-bound-conjecture-constant).
 
 ## Letendre's square-root bound for divisors in short intervals
 
@@ -250,7 +250,7 @@ $D_n(n^\theta, n^\eta) \le C \tau(n)^{1 - \xi(\theta, \eta)/2}
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Corollary 1 (journal version).
 
-Stated but not proved: `MetaMathlibExt.exists_shortIntervalDivisorCount_le_sqrt_letendre` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-short-interval-divisor-count-le-s).
+Stated but not proved: `MetaMathlibExt.exists_shortIntervalDivisorCount_le_sqrt_letendre` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-short-interval-divisor-count-le-s).
 
 ## Divisors near $\sqrt{an/b}$
 
@@ -266,7 +266,7 @@ $$D_n\bigl(x_0, \sqrt{i x_0 / b}\bigr) \le C \min\bigl(i, \; i/w + w (\log w)^2\
 
 - Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Proposition 5 (journal version).
 
-Stated but not proved: `MetaMathlibExt.exists_shortIntervalDivisorCount_sqrt_window_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-short-interval-divisor-count-sqrt).
+Stated but not proved: `MetaMathlibExt.exists_shortIntervalDivisorCount_sqrt_window_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorsShortIntervalWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html#exists-short-interval-divisor-count-sqrt).
 
 ## Depends on
 
@@ -275,4 +275,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Divisors in short intervals](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/divisors-in-short-intervals)

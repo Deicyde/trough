@@ -8,7 +8,7 @@ proof: formalized
 
 # Baker–Davenport reduction
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction/index.html).
 
 ## Nearest-integer estimate in the Baker–Davenport reduction
 
@@ -22,7 +22,7 @@ $\varepsilon \le q \, |u\kappa - v + \mu|$.
 
 - Nearest-integer Baker–Davenport reduction core: a named reusable arithmetic prerequisite stage extracted from Lemma (lines 285--292) of Eric F. Bravo, Carlos A. Gómez, and Florian Luca, "Product of Consecutive Tribonacci Numbers With Only One Distinct Digit", Journal of Integer Sequences 22 (2019), Article 19.6.3. <https://cs.uwaterloo.ca/journals/JIS/VOL22/Gomez/gomez3.tex>. Scope: the printed lemma defines nearest-integer distance by `‖x‖ = |x - round x|` and `ε := ‖μq‖ - M‖κq‖`; this stage records the reverse-triangle inequality used by the reduction argument. It does not claim to formalize the full lemma. The source's irrationality, continued-fraction, `q > 6M`, and logarithmic hypotheses belong to the later wrapper and are deliberately omitted from this arithmetic stage, as are the source's `0 < q` and `0 < ε`, which the inequality does not need. The explicit `heq` equality hypothesis is necessary: a prior default-valued epsilon binder did not assert the definition and made the statement false.
 
-Formalized by `MetaMathlibExt.nearestInteger_reduction_core`, a theorem declared in [MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportNearestIntegerCore.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportNearestIntegerCore.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction/index.html#nearest-integer-reduction-core).
+Formalized by `MetaMathlibExt.nearestInteger_reduction_core`, a theorem declared in [MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportNearestIntegerCore.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportNearestIntegerCore.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction/index.html#nearest-integer-reduction-core).
 
 ## Baker–Davenport reduction for an arbitrary denominator, absolute-value form
 
@@ -34,7 +34,7 @@ $\varepsilon = \lVert \mu q \rVert - M \lVert \kappa q \rVert$ and suppose that 
 Then there are no natural numbers $r$, $s$, $w$ with $r \le M$,
 $w \ge \log(Aq/\varepsilon) / \log B$ and $|r\kappa - s + \mu| < A B^{-w}$.
 
-Formalized by `MetaMathlibExt.bakerDavenport_reduction_absolute_general`, a theorem declared in [MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportAbsolute.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportAbsolute.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction/index.html#baker-davenport-reduction-absolute-gener).
+Formalized by `MetaMathlibExt.bakerDavenport_reduction_absolute_general`, a theorem declared in [MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportAbsolute.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportAbsolute.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction/index.html#baker-davenport-reduction-absolute-gener).
 
 ## Baker–Davenport reduction lemma, absolute-value form
 
@@ -56,7 +56,7 @@ positive denominator.
 
 - Eric F. Bravo, Carlos A. Gomez, and Florian Luca, "Product of Consecutive Tribonacci Numbers With Only One Distinct Digit," Journal of Integer Sequences 22 (2019), Article 19.6.3, Lemma `bd`, lines 285–292. Source URL <https://cs.uwaterloo.ca/journals/JIS/VOL22/Gomez/gomez3.tex>.
 
-Formalized by `MetaMathlibExt.bakerDavenport_reduction_absolute`, a theorem declared in [MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportAbsolute.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportAbsolute.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction/index.html#baker-davenport-reduction-absolute).
+Formalized by `MetaMathlibExt.bakerDavenport_reduction_absolute`, a theorem declared in [MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportAbsolute.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportAbsolute.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction/index.html#baker-davenport-reduction-absolute).
 
 ## Baker–Davenport reduction for an arbitrary denominator, one-sided form
 
@@ -67,7 +67,7 @@ numbers with $A > 0$ and $B > 1$. Put $\xi = \lVert \mu q \rVert - N \lVert \gam
 suppose that $\xi > 0$. Then there are no natural numbers $u$, $v$, $w$ with $u \le N$,
 $w \ge \log(Aq/\xi) / \log B$ and $0 < u\gamma - v + \mu < A B^{-w}$.
 
-Formalized by `MetaMathlibExt.bakerDavenport_reduction_oneSided_general`, a theorem declared in [MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportOneSided.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportOneSided.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction/index.html#baker-davenport-reduction-one-sided-gene).
+Formalized by `MetaMathlibExt.bakerDavenport_reduction_oneSided_general`, a theorem declared in [MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportOneSided.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportOneSided.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction/index.html#baker-davenport-reduction-one-sided-gene).
 
 ## Baker–Davenport reduction lemma, one-sided form
 
@@ -88,7 +88,7 @@ not needed: the statement follows from the version for an arbitrary positive den
 
 - Bilizimbéyé Edjeou, Amadou Tall, and Mohamed Ben Fraj Ben Maaouia, "Powers of Two as Sums of Three Lucas Numbers," Journal of Integer Sequences 23 (2020), Article 20.8.8, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Edjeou/edj4.tex>, Lemma, lines 200–211.
 
-Formalized by `MetaMathlibExt.bakerDavenport_reduction_oneSided`, a theorem declared in [MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportOneSided.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportOneSided.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction/index.html#baker-davenport-reduction-one-sided).
+Formalized by `MetaMathlibExt.bakerDavenport_reduction_oneSided`, a theorem declared in [MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportOneSided.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/DiophantineApproximation/BakerDavenportOneSided.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction/index.html#baker-davenport-reduction-one-sided).
 
 ## Depends on
 
@@ -97,4 +97,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Baker–Davenport reduction](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/roth-linear-forms/baker-davenport-reduction)

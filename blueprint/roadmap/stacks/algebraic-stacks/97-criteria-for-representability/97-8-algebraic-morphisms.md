@@ -8,13 +8,13 @@ proof: formalized
 
 # 97.8 Algebraic morphisms
 
-Section 97.8 of the Stacks Project, [Tag 05XX](https://stacks.math.columbia.edu/tag/05XX). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 97.8 of the Stacks Project, [Tag 05XX](https://stacks.math.columbia.edu/tag/05XX). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06CF, a definition
 
 [Tag 06CF](https://stacks.math.columbia.edu/tag/06CF) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsAlgebraicMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphism.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphism.lean#L44).
+**`AlgebraicGeometry.Stack.IsAlgebraicMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphism.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphism.lean#L44).
 
 > A morphism of stacks is algebraic if every base change along a
 > scheme-valued point of its target is an algebraic stack.
@@ -35,7 +35,7 @@ abbrev IsAlgebraicMorphism.{u, wX, wY, w, vX, uX, vY, uY}
 
 [Tag 05XY](https://stacks.math.columbia.edu/tag/05XY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_of_isAlgebraicMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphismSourceAlgebraic.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphismSourceAlgebraic.lean#L88).
+**`AlgebraicGeometry.Stack.isAlgebraicStack_of_isAlgebraicMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphismSourceAlgebraic.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphismSourceAlgebraic.lean#L88).
 
 > Let `F : 𝒳 ⟶ 𝒴` be a 1-morphism of stacks in groupoids over the big fppf site of `S`. If `𝒴`
 > is an algebraic stack and `F` is algebraic in the sense of Stacks 06CF, then `𝒳` is an algebraic
@@ -57,7 +57,7 @@ theorem isAlgebraicStack_of_isAlgebraicMorphism
 
 [Tag 06CG](https://stacks.math.columbia.edu/tag/06CG) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicMorphism_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphismFromAlgebraicStack.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphismFromAlgebraicStack.lean#L82).
+**`AlgebraicGeometry.Stack.isAlgebraicMorphism_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphismFromAlgebraicStack.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphismFromAlgebraicStack.lean#L82).
 
 > **Stacks 06CG.** Let `F : 𝒳 ⟶ 𝒴` be a 1-morphism of stacks in groupoids over the big fppf
 > site of `S`. If `𝒳` is an algebraic stack and the diagonal of `𝒴` is representable by algebraic
@@ -81,7 +81,7 @@ theorem isAlgebraicMorphism_of_isAlgebraicStack
 
 [Tag 0D3R](https://stacks.math.columbia.edu/tag/0D3R) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasRepresentableDiagonal_of_isAlgebraicMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphismRepresentableDiagonal.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphismRepresentableDiagonal.lean#L111).
+**`AlgebraicGeometry.Stack.hasRepresentableDiagonal_of_isAlgebraicMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphismRepresentableDiagonal.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicMorphismRepresentableDiagonal.lean#L111).
 
 > **Stacks 0D3R.** An algebraic 1-morphism of stacks in groupoids over the big fppf site of
 > `S` inherits a diagonal representable by algebraic spaces from its target.
@@ -108,4 +108,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 97.8, Tag 05XX](https://stacks.math.columbia.edu/tag/05XX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

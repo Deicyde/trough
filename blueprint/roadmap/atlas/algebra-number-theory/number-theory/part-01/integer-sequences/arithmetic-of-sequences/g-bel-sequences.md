@@ -7,7 +7,7 @@ statement: formalized
 
 # Göbel sequences
 
-56 results, 20 proved and 36 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html).
+56 results, 20 proved and 36 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html).
 
 ## The (k, l)-Göbel sequence
 
@@ -26,7 +26,7 @@ value at $n = 0$ is a convention and plays no role.
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Definition 1.
 
-Formalized by `MetaMathlibExt.gobelSequence`, a definition declared in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence).
+Formalized by `MetaMathlibExt.gobelSequence`, a definition declared in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence).
 
 ## Initial value of the $(k, l)$-Göbel sequence
 
@@ -37,7 +37,7 @@ $(k, l)$-Göbel sequence $g_{k,l}$ satisfies $g_{k,l}(1) = l$.
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Definition 1.
 
-Formalized by `MetaMathlibExt.gobelSequence_one`, a theorem declared in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-one).
+Formalized by `MetaMathlibExt.gobelSequence_one`, a theorem declared in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-one).
 
 ## Recursion for the (k, l)-Göbel sequence
 
@@ -52,7 +52,7 @@ where $k - 1$ is truncated subtraction, so the exponent is $0$ when $k = 0$.
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Definition 1.
 
-Formalized by `MetaMathlibExt.gobelSequence_succ`, a theorem declared in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-succ).
+Formalized by `MetaMathlibExt.gobelSequence_succ`, a theorem declared in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-succ).
 
 ## Göbel's original sequence
 
@@ -63,7 +63,7 @@ $g_{2,2}(2) = 3$, $g_{2,2}(3) = 5$, $g_{2,2}(4) = 10$ and $g_{2,2}(5) = 28$.
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Section 1.
 
-Formalized by `MetaMathlibExt.gobelSequence_two_two_small`, a theorem declared in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-two-two-small).
+Formalized by `MetaMathlibExt.gobelSequence_two_two_small`, a theorem declared in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-two-two-small).
 
 ## Integrality of the early terms of $(k, l)$-Göbel sequences
 
@@ -80,7 +80,7 @@ $l \equiv 3 \pmod 7$.
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Theorem 2 (`jis-2024-24.8.1-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_integral_le_six_and_seven_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-integral-le-six-and-seven).
+Stated but not proved: `MetaMathlibExt.gobelSequence_integral_le_six_and_seven_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-integral-le-six-and-seven).
 
 ## Asymptotic expansion of the $(k, l)$-Göbel sequence
 
@@ -98,7 +98,7 @@ an asymptotic expansion, generalizing Zagier's asymptotic for Göbel's sequence.
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Theorem 4 (`jis-2024-24.8.1-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_asymptotic_expansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-asymptotic-expansion).
+Stated but not proved: `MetaMathlibExt.gobelSequence_asymptotic_expansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-asymptotic-expansion).
 
 ## Key $p$-adic properties of the $(k, l)$-Göbel sequences
 
@@ -124,7 +124,7 @@ $g_{k,l_1}(n) - g_{k,l_2}(n) \in p^{r - \nu_p(n!)} \mathbb{Z}_{(p)}$.
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 5 (`jis-2024-24.8.1-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_padic_key_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-padic-key-properties).
+Stated but not proved: `MetaMathlibExt.gobelSequence_padic_key_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-padic-key-properties).
 
 ## Integrality of Göbel sequences up to index 7 via finite $p$-adic checks
 
@@ -148,7 +148,7 @@ Statement (i) is Theorem 2 of the source.
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 6 (`jis-2024-24.8.1-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_seven_iff_padic_claims` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-seven-iff-padic-claims).
+Stated but not proved: `MetaMathlibExt.gobelSequence_seven_iff_padic_claims` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-seven-iff-padic-claims).
 
 ## Strict decrease of the normalized Göbel roots
 
@@ -160,7 +160,7 @@ number. Then $C_{k,l}(n) > C_{k,l}(n + 1) > 1$ for every natural number $n \ge 1
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 7 (`jis-2024-24.8.1-lem-7`).
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_root_strictAnti` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-root-strict-anti).
+Stated but not proved: `MetaMathlibExt.gobelSequence_root_strictAnti` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-root-strict-anti).
 
 ## Root asymptotics of Somos-type sequences
 
@@ -177,7 +177,7 @@ read in the non-strict sense.
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 8 (`jis-2024-24.8.1-lem-8`).
 
-Stated but not proved: `MetaMathlibExt.somosLike_root_antitone_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#somos-like-root-antitone-tendsto).
+Stated but not proved: `MetaMathlibExt.somosLike_root_antitone_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#somos-like-root-antitone-tendsto).
 
 ## Somos-type sequences lie below Göbel sequences
 
@@ -193,7 +193,7 @@ for $n \ge 1$; for odd $k$, $x \mapsto x^k$ is monotone), so that hypothesis is 
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 9 (`jis-2024-24.8.1-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.somosLike_le_gobelSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#somos-like-le-gobel-sequence).
+Stated but not proved: `MetaMathlibExt.somosLike_le_gobelSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#somos-like-le-gobel-sequence).
 
 ## The normalized Göbel roots converge to a limit greater than 1
 
@@ -207,7 +207,7 @@ The paper defines $C_{k,l}$ as this limit.
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Proposition 10 (`jis-2024-24.8.1-prop-10`).
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_root_tendsto_gt_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-root-tendsto-gt-one).
+Stated but not proved: `MetaMathlibExt.gobelSequence_root_tendsto_gt_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-root-tendsto-gt-one).
 
 ## The Göbel error term decays faster than every power of $n$
 
@@ -223,7 +223,7 @@ $$\exp\Bigl(\sum_{m=1}^{\infty} \frac{\log(m + n)}{k^m}\Bigr) -
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Theorem 11 (`jis-2024-24.8.1-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_error_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-error-is-big-o).
+Stated but not proved: `MetaMathlibExt.gobelSequence_error_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-error-is-big-o).
 
 ## Series formula and bound for the Göbel error
 
@@ -244,7 +244,7 @@ $$\varepsilon_{k,l}(n) = \sum_{m=1}^{\infty} \frac{1}{k^m}
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 12 (`jis-2024-24.8.1-lem-12`).
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_error_eq_tsum_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-error-eq-tsum-le).
+Stated but not proved: `MetaMathlibExt.gobelSequence_error_eq_tsum_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-error-eq-tsum-le).
 
 ## Sondow–Hadjicostas asymptotic expansion
 
@@ -268,7 +268,7 @@ In the paper $S_j$ appears as $A_j(k) / (k - 1)^{j+1}$, with $A_j$ the Eulerian 
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Theorem 15, quoting Sondow and Hadjicostas (2007), Theorem 9 and Lemma 1 (`jis-2024-24.8.1-thm-15`).
 
-Stated but not proved: `MetaMathlibExt.somos_tsum_asymptotic_expansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#somos-tsum-asymptotic-expansion).
+Stated but not proved: `MetaMathlibExt.somos_tsum_asymptotic_expansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#somos-tsum-asymptotic-expansion).
 
 ## Residue of a rational number modulo an integer
 
@@ -285,7 +285,7 @@ ring $\mathbb{Z}_{(p)}$ of rational numbers whose denominator is prime to $p$.
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Section 4 (residues of `g_{k,l}(n)` modulo `p^r` in `ℤ_(p)`).
 
-Formalized by `MetaMathlibExt.ratResidue`, a definition declared in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#rat-residue).
+Formalized by `MetaMathlibExt.ratResidue`, a definition declared in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#rat-residue).
 
 ## Residue of an integer
 
@@ -296,7 +296,7 @@ modulo $m$ of $z$, viewed as a rational number, is the image of $z$ in $\mathbb{
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Section 4.
 
-Formalized by `MetaMathlibExt.ratResidue_intCast`, a theorem declared in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#rat-residue-int-cast).
+Formalized by `MetaMathlibExt.ratResidue_intCast`, a theorem declared in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#rat-residue-int-cast).
 
 ## Residues of the $(k, l)$-Göbel sequence modulo $p^r$
 
@@ -313,7 +313,7 @@ many elements as $I$.
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Theorem 18 (`jis-2024-24.8.1-thm-18`).
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_residues_singleton_or_injective` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-residues-singleton-or-inj).
+Stated but not proved: `MetaMathlibExt.gobelSequence_residues_singleton_or_injective` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-residues-singleton-or-inj).
 
 ## Propagation of a congruence along the $(k, l)$-Göbel sequence
 
@@ -328,7 +328,7 @@ $n \, g_{k,l}(n) \equiv a b p^{r-1} \pmod{p^r}$ for every natural number $n$ wit
 
 - Gima, Matsusaka, Miyazaki, and Yara, *On Integrality and Asymptotic Behavior of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 27 (2024), Article 24.8.1, Lemma 20 (`jis-2024-24.8.1-lem-20`).
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_mul_index_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelSequenceWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-mul-index-congr).
+Stated but not proved: `MetaMathlibExt.gobelSequence_mul_index_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelSequenceWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelSequenceWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-mul-index-congr).
 
 ## The residue walk $\tilde g_l$
 
@@ -347,7 +347,7 @@ For an odd prime $p$ the Jacobi symbol is the Legendre symbol.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Section 2 definition of `tilde g_l`.
 
-Formalized by `MetaMathlibExt.gobelResidueWalk`, a definition declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk).
+Formalized by `MetaMathlibExt.gobelResidueWalk`, a definition declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk).
 
 ## Initial value of the residue walk
 
@@ -358,7 +358,7 @@ $\tilde g_l$ of $p$ starting at $l$ satisfies $\tilde g_l(1) = l$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Section 2 definition of `tilde g_l`.
 
-Formalized by `MetaMathlibExt.gobelResidueWalk_one`, a theorem declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk-one).
+Formalized by `MetaMathlibExt.gobelResidueWalk_one`, a theorem declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk-one).
 
 ## Recurrence of the residue walk at interior values
 
@@ -375,7 +375,7 @@ is never negative because $\tilde g_l(n) \ge 1$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Section 2 definition of `tilde g_l`.
 
-Formalized by `MetaMathlibExt.gobelResidueWalk_succ_of_between`, a theorem declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk-succ-of-between).
+Formalized by `MetaMathlibExt.gobelResidueWalk_succ_of_between`, a theorem declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk-succ-of-between).
 
 ## The residue walk stays at $0$
 
@@ -387,7 +387,7 @@ $\tilde g_l(n+1) = 0$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Section 2 definition of `tilde g_l`.
 
-Formalized by `MetaMathlibExt.gobelResidueWalk_succ_of_eq_zero`, a theorem declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk-succ-of-eq-zero).
+Formalized by `MetaMathlibExt.gobelResidueWalk_succ_of_eq_zero`, a theorem declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk-succ-of-eq-zero).
 
 ## The residue walk stays at $p$
 
@@ -399,7 +399,7 @@ $\tilde g_l(n+1) = p$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Section 2 definition of `tilde g_l`.
 
-Formalized by `MetaMathlibExt.gobelResidueWalk_succ_of_eq_prime`, a theorem declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk-succ-of-eq-prime).
+Formalized by `MetaMathlibExt.gobelResidueWalk_succ_of_eq_prime`, a theorem declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk-succ-of-eq-prime).
 
 ## Zigzag order on integer sequences
 
@@ -415,7 +415,7 @@ outside $1 \le n \le p$ play no role.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)- Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Section 2 definition of `⪯`.
 
-Formalized by `MetaMathlibExt.IsZigzagBelow`, a definition declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#is-zigzag-below).
+Formalized by `MetaMathlibExt.IsZigzagBelow`, a definition declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#is-zigzag-below).
 
 ## The sign sequence $a_{p,l}$
 
@@ -432,7 +432,7 @@ sequence becomes uniqueness of the function.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Proposition 17.
 
-Formalized by `MetaMathlibExt.IsGobelASequence`, a definition declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#is-gobel-asequence).
+Formalized by `MetaMathlibExt.IsGobelASequence`, a definition declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#is-gobel-asequence).
 
 ## The periodic sign sequence $b_{l,s}$
 
@@ -446,7 +446,7 @@ $b(s-n) = b(s+1+n)$ for every integer $n$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Proposition 20.
 
-Formalized by `MetaMathlibExt.IsGobelBSequence`, a definition declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#is-gobel-bsequence).
+Formalized by `MetaMathlibExt.IsGobelBSequence`, a definition declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#is-gobel-bsequence).
 
 ## Left boundary of the even Göbel residue walks
 
@@ -461,7 +461,7 @@ $\tilde g_l(p) = 0$ is nonempty and $l_L$ is its maximum plus $2$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, proof of Theorem 1.
 
-Formalized by `MetaMathlibExt.IsGobelLeftBoundary`, a definition declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#is-gobel-left-boundary).
+Formalized by `MetaMathlibExt.IsGobelLeftBoundary`, a definition declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#is-gobel-left-boundary).
 
 ## Right boundary of the even Göbel residue walks
 
@@ -475,7 +475,7 @@ satisfies $l_R \le l$. In other words, $l_R$ is the least even $l < p$ with $\ti
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, proof of Theorem 1.
 
-Formalized by `MetaMathlibExt.IsGobelRightBoundary`, a definition declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#is-gobel-right-boundary).
+Formalized by `MetaMathlibExt.IsGobelRightBoundary`, a definition declared in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#is-gobel-right-boundary).
 
 ## Göbel sequences at index $p$ for primes $p \equiv 3 \pmod 4$
 
@@ -489,7 +489,7 @@ $\mathbb{Z}_{(p)}$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 1(a).
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_half_pred_mem_localization_of_three_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-half-pred-mem-localizatio).
+Stated but not proved: `MetaMathlibExt.gobelSequence_half_pred_mem_localization_of_three_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-half-pred-mem-localizatio).
 
 ## Odd starting values give a $p$-integral $p$-th term when $p \equiv 1 \pmod 4$
 
@@ -502,7 +502,7 @@ the localization $\mathbb{Z}_{(p)}$, that is, its $p$-adic valuation is nonnegat
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)- Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 1(b), odd case.
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_half_pred_mem_localization_of_one_mod_four_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-half-pred-mem-localizatio-2).
+Stated but not proved: `MetaMathlibExt.gobelSequence_half_pred_mem_localization_of_one_mod_four_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-half-pred-mem-localizatio-2).
 
 ## Unique boundary pair for Göbel sequences when $p \equiv 1 \pmod 4$
 
@@ -519,7 +519,7 @@ $l_R \le l$, and $g_{(p-1)/2,\,l}(p)$ lies in $\mathbb{Z}_{(p)}$ exactly on the 
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 1(b), unique decomposition.
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_half_pred_unique_even_localization_decomposition` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-half-pred-unique-even-loc).
+Stated but not proved: `MetaMathlibExt.gobelSequence_half_pred_unique_even_localization_decomposition` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-half-pred-unique-even-loc).
 
 ## A congruence class of non-integral Göbel sequences
 
@@ -536,7 +536,7 @@ Every such $k$ is positive and even, as the paper requires.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_nonintegral_congruence_class_of_odd_multiple` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-nonintegral-congruence-cl).
+Stated but not proved: `MetaMathlibExt.gobelSequence_nonintegral_congruence_class_of_odd_multiple` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-nonintegral-congruence-cl).
 
 ## The odd multiples of $(p-1)/2$ admit no finite subcover
 
@@ -550,7 +550,7 @@ $A_q$ with $q \in S$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)- Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.odd_multiple_prime_half_sets_not_finitely_coverable` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#odd-multiple-prime-half-sets-not-finitel).
+Stated but not proved: `MetaMathlibExt.odd_multiple_prime_half_sets_not_finitely_coverable` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#odd-multiple-prime-half-sets-not-finitel).
 
 ## Index-scaled Göbel terms with $k = (p-1)/2$ are congruent to the residue walk
 
@@ -567,7 +567,7 @@ $\tilde g_l(p) = 0$ or $\tilde g_l(p) = p$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_half_pred_congruent_residue_walk` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-half-pred-congruent-resid).
+Stated but not proved: `MetaMathlibExt.gobelSequence_half_pred_congruent_residue_walk` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-half-pred-congruent-resid).
 
 ## The residue walk stays on the diagonal
 
@@ -579,7 +579,7 @@ $\tilde g_l(m) = m$, then $\tilde g_l(n) = n$ for every $n$ with $m \le n \le p$
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.gobelResidueWalk_eq_index_of_eq_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk-eq-index-of-eq-index).
+Stated but not proved: `MetaMathlibExt.gobelResidueWalk_eq_index_of_eq_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk-eq-index-of-eq-index).
 
 ## The diagonal is zigzag-below every odd residue walk
 
@@ -592,7 +592,7 @@ $n < \tilde g_l(n)$ for all $1 \le n \le m$ and $\tilde g_l(n) = n$ for all $m <
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Proposition 9.
 
-Stated but not proved: `MetaMathlibExt.diagonal_isZigzagBelow_gobelResidueWalk_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#diagonal-is-zigzag-below-gobel-residue-w).
+Stated but not proved: `MetaMathlibExt.diagonal_isZigzagBelow_gobelResidueWalk_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#diagonal-is-zigzag-below-gobel-residue-w).
 
 ## Even residue walks lie zigzag-below the antidiagonal when $p \equiv 3 \pmod 4$
 
@@ -606,7 +606,7 @@ for $1 \le n \le m$ and $\tilde g_l(n) = p - n$ for $m < n \le p$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Proposition 10.
 
-Stated but not proved: `MetaMathlibExt.gobelResidueWalk_isZigzagBelow_antidiagonal_of_three_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk-is-zigzag-below-antid).
+Stated but not proved: `MetaMathlibExt.gobelResidueWalk_isZigzagBelow_antidiagonal_of_three_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk-is-zigzag-below-antid).
 
 ## Consecutive even residue walks form a zigzag chain when $p \equiv 1 \pmod 4$
 
@@ -623,7 +623,7 @@ $\tilde g_0 \preceq \tilde g_2 \preceq \cdots \preceq \tilde g_{p-1}$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)- Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Proposition 11.
 
-Stated but not proved: `MetaMathlibExt.gobelResidueWalk_even_chain_of_one_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk-even-chain-of-one-mod).
+Stated but not proved: `MetaMathlibExt.gobelResidueWalk_even_chain_of_one_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-walk-even-chain-of-one-mod).
 
 ## Equality of the left and right boundaries via Legendre symbols
 
@@ -640,7 +640,7 @@ where $\left(\frac{\cdot}{p}\right)$ is the Legendre symbol.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 15.
 
-Stated but not proved: `MetaMathlibExt.gobel_boundaries_eq_iff_jacobi_symmetries` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-boundaries-eq-iff-jacobi-symmetrie).
+Stated but not proved: `MetaMathlibExt.gobel_boundaries_eq_iff_jacobi_symmetries` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-boundaries-eq-iff-jacobi-symmetrie).
 
 ## Arithmetic billiards in a tilted rectangle
 
@@ -660,7 +660,7 @@ where $P_i = (x_i, y_i)$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Lemma 16 (`lem:billiards`).
 
-Stated but not proved: `MetaMathlibExt.arithmetic_billiards_rotated_rectangle` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#arithmetic-billiards-rotated-rectangle).
+Stated but not proved: `MetaMathlibExt.arithmetic_billiards_rotated_rectangle` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#arithmetic-billiards-rotated-rectangle).
 
 ## Existence and uniqueness of the sequence $a_{p,l}$
 
@@ -675,7 +675,7 @@ $a(n) = a(l + 1 + n)$ for $1 \le n \le p - l - 2$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Proposition 17.
 
-Stated but not proved: `MetaMathlibExt.existsUnique_gobelASequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#exists-unique-gobel-asequence).
+Stated but not proved: `MetaMathlibExt.existsUnique_gobelASequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#exists-unique-gobel-asequence).
 
 ## Existence and uniqueness of the sequence $b_{l,s}$
 
@@ -690,7 +690,7 @@ every $n$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Proposition 20.
 
-Stated but not proved: `MetaMathlibExt.existsUnique_gobelBSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#exists-unique-gobel-bsequence).
+Stated but not proved: `MetaMathlibExt.existsUnique_gobelBSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#exists-unique-gobel-bsequence).
 
 ## Complementary sequences $b_{l,s}$ and $b_{l,l-s}$
 
@@ -704,7 +704,7 @@ $n$, and $b_1(n) = -b_2(n)$ if $l + 1$ divides $n$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Lemma 22.
 
-Stated but not proved: `MetaMathlibExt.gobelBSequence_complement` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-bsequence-complement).
+Stated but not proved: `MetaMathlibExt.gobelBSequence_complement` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-bsequence-complement).
 
 ## Translation and reflection identities for $b_{l,s}$
 
@@ -721,7 +721,7 @@ by $l + 1$, $b(t - n) = b(t + n)$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Lemma 23.
 
-Stated but not proved: `MetaMathlibExt.gobelBSequence_translation_identities` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-bsequence-translation-identities).
+Stated but not proved: `MetaMathlibExt.gobelBSequence_translation_identities` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-bsequence-translation-identities).
 
 ## The sequence $a_{p,l}$ is not multiplicative at an even index
 
@@ -734,7 +734,7 @@ positive integer $m$ with $2m \le p - 3$ such that $a(2m) \ne a(2)\,a(m)$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 25.
 
-Stated but not proved: `MetaMathlibExt.gobelASequence_not_multiplicative_at_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-asequence-not-multiplicative-at-ev).
+Stated but not proved: `MetaMathlibExt.gobelASequence_not_multiplicative_at_even_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-asequence-not-multiplicative-at-ev).
 
 ## The first non-integral term of $g_{2600725,2}$ is at index $9011$
 
@@ -748,7 +748,7 @@ $N_{2600725} = 9011$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 26.
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_first_nonintegral_2600725` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-first-nonintegral-2600725).
+Stated but not proved: `MetaMathlibExt.gobelSequence_first_nonintegral_2600725` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-first-nonintegral-2600725).
 
 ## A non-integral term of $g_{k,2}$ by index $9011$ for $2 \le k \le 10^7$
 
@@ -766,7 +766,7 @@ explicitly by computation; that claim is not part of this statement.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 26.
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_nonintegral_index_le_9011` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-nonintegral-index-le-9011).
+Stated but not proved: `MetaMathlibExt.gobelSequence_nonintegral_index_le_9011` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-nonintegral-index-le-9011).
 
 ## Counting prime first nonintegral indices of $g_{k,2}$ for $k \le 10^7$
 
@@ -779,7 +779,7 @@ and $g_{k,2}(n)$ is an integer for every $1 \le n < q$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)- Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 26.
 
-Stated but not proved: `MetaMathlibExt.card_gobelSequence_prime_first_nonintegral_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#card-gobel-sequence-prime-first-noninteg).
+Stated but not proved: `MetaMathlibExt.card_gobelSequence_prime_first_nonintegral_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#card-gobel-sequence-prime-first-noninteg).
 
 ## A non-integral term of $g_{k,2}$ by index $29363$ for $2 \le k \le 10^{14}$
 
@@ -795,7 +795,7 @@ says $N_k \le 29363$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 29.
 
-Stated but not proved: `MetaMathlibExt.gobelSequence_nonintegral_index_le_29363` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-nonintegral-index-le-2936).
+Stated but not proved: `MetaMathlibExt.gobelSequence_nonintegral_index_le_29363` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelNonIntegralityWanted.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelNonIntegralityWanted.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-sequence-nonintegral-index-le-2936).
 
 ## Residue sequence of the $k$-Göbel sequence
 
@@ -821,7 +821,7 @@ Values with $\nu_p(n!) > r$ and at $n = 0$ are junk and never used.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *On the Length over Which k-Göbel Sequences Remain Integers*, INTEGERS 26 (2026), Article A23, Section 2 (definition of `g_{k,p,r}`, after Matsuhira, Matsusaka, and Tsuchida, Definition 9).
 
-Formalized by `MetaMathlibExt.gobelResidue`, a definition declared in [WantedExt/NumberTheory/GobelResidueWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelResidueWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue).
+Formalized by `MetaMathlibExt.gobelResidue`, a definition declared in [WantedExt/NumberTheory/GobelResidueWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelResidueWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue).
 
 ## Initial value of the Göbel residue sequence
 
@@ -833,7 +833,7 @@ residue sequence satisfies $g_{k,p,r}(1) = 2 \bmod p^r$, the residue class of $2
 
 - Yuh Kobayashi and Shin-ichiro Seki, *On the Length over Which k-Göbel Sequences Remain Integers*, INTEGERS 26 (2026), Article A23, Section 2 (definition of `g_{k,p,r}`).
 
-Formalized by `MetaMathlibExt.gobelResidue_one`, a theorem declared in [WantedExt/NumberTheory/GobelResidueWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelResidueWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-one).
+Formalized by `MetaMathlibExt.gobelResidue_one`, a theorem declared in [WantedExt/NumberTheory/GobelResidueWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelResidueWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-one).
 
 ## Failure of the Göbel residue sequence persists
 
@@ -845,7 +845,7 @@ $g_{k,p,r}(n) = F$, then $g_{k,p,r}(n + 1) = F$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *On the Length over Which k-Göbel Sequences Remain Integers*, INTEGERS 26 (2026), Article A23, Section 2 (definition of `g_{k,p,r}`).
 
-Formalized by `MetaMathlibExt.gobelResidue_succ_of_eq_none`, a theorem declared in [WantedExt/NumberTheory/GobelResidueWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelResidueWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-succ-of-eq-none).
+Formalized by `MetaMathlibExt.gobelResidue_succ_of_eq_none`, a theorem declared in [WantedExt/NumberTheory/GobelResidueWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelResidueWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-succ-of-eq-none).
 
 ## Example value of the Göbel residue sequence
 
@@ -858,7 +858,7 @@ $(1 \cdot 2 + 2^2) \cdot 2^{-1} = 6 \cdot 2^{-1} \equiv 0 \pmod 3$.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *On the Length over Which k-Göbel Sequences Remain Integers*, INTEGERS 26 (2026), Article A23, Section 2 (definition of `g_{k,p,r}`).
 
-Formalized by `MetaMathlibExt.gobelResidue_two_three_one_two`, a theorem declared in [WantedExt/NumberTheory/GobelResidueWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelResidueWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-two-three-one-two).
+Formalized by `MetaMathlibExt.gobelResidue_two_three_one_two`, a theorem declared in [WantedExt/NumberTheory/GobelResidueWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelResidueWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-two-three-one-two).
 
 ## Failure of the residue sequence detects non-integrality
 
@@ -874,7 +874,7 @@ This is Lemma 10 of Matsuhira, Matsusaka, and Tsuchida.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *On the Length over Which k-Göbel Sequences Remain Integers*, INTEGERS 26 (2026), Article A23, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.gobelResidue_eq_none_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelResidueWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelResidueWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-eq-none-iff).
+Stated but not proved: `MetaMathlibExt.gobelResidue_eq_none_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelResidueWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelResidueWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-eq-none-iff).
 
 ## Periodicity of the Göbel residue sequence in the exponent
 
@@ -891,7 +891,7 @@ This is Proposition 12 of Matsuhira, Matsusaka, and Tsuchida.
 
 - Yuh Kobayashi and Shin-ichiro Seki, *On the Length over Which k-Göbel Sequences Remain Integers*, INTEGERS 26 (2026), Article A23, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.gobelResidue_eq_of_modEq_totient` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelResidueWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GobelResidueWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-eq-of-mod-eq-totient).
+Stated but not proved: `MetaMathlibExt.gobelResidue_eq_of_modEq_totient` is written with `theorem_wanted` in [WantedExt/NumberTheory/GobelResidueWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GobelResidueWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html#gobel-residue-eq-of-mod-eq-totient).
 
 ## Depends on
 
@@ -900,4 +900,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Göbel sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/g-bel-sequences)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.7 Locality of cohomology
 
-Section 20.7 of the Stacks Project, [Tag 01E0](https://stacks.math.columbia.edu/tag/01E0). 5 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.7 of the Stacks Project, [Tag 01E0](https://stacks.math.columbia.edu/tag/01E0). 5 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01E1, a lemma
 
 [Tag 01E1](https://stacks.math.columbia.edu/tag/01E1) in the Stacks Project.
 
-**`AlgebraicGeometry.cohomologyOverNatIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean#L133). The attribute's comment: “cohomology\_of\_open”.
+**`AlgebraicGeometry.cohomologyOverNatIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean#L133). The attribute's comment: “cohomology\_of\_open”.
 
 > The cohomology of a sheaf of modules over an open is naturally isomorphic
 > to the cohomology of its restriction to that open subspace.
@@ -30,7 +30,7 @@ public noncomputable def cohomologyOverNatIsoRestriction (X : SheafedSpace RingC
             AddCommGrpCat.{u}).rightDerived p)
 ```
 
-**`AlgebraicGeometry.cohomologyOverModuleNatIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean#L172). The attribute's comment: “cohomology\_of\_open, as modules over the sections on the open”.
+**`AlgebraicGeometry.cohomologyOverModuleNatIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean#L172). The attribute's comment: “cohomology\_of\_open, as modules over the sections on the open”.
 
 > The cohomology of a sheaf of modules over an open is naturally isomorphic, as a module over
 > the sections of `𝒪_X` on that open, to the cohomology of its restriction to the open subspace.
@@ -46,7 +46,7 @@ public noncomputable def cohomologyOverModuleNatIsoRestriction (X : SheafedSpace
         SheafOfModules.{u} (OUSh X U) ⥤ _).rightDerived p)
 ```
 
-**`Stacks.Perfect.LocalCohomologyExcision.restrictFunctor_preservesInjectiveObjects`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/LocalCohomologyExcision.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/LocalCohomologyExcision.lean#L167). The attribute's comment: “restriction of modules to an open subscheme preserves injective objects”.
+**`Stacks.Perfect.LocalCohomologyExcision.restrictFunctor_preservesInjectiveObjects`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/LocalCohomologyExcision.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/LocalCohomologyExcision.lean#L167). The attribute's comment: “restriction of modules to an open subscheme preserves injective objects”.
 
 > **[Stacks, Tag 01E1]: restriction to an open subscheme preserves injective objects.**  This
 > is `Stacks.Cohomology.HigherDirectImage.jStar_preservesInjectiveObjects` read through
@@ -57,7 +57,7 @@ instance restrictFunctor_preservesInjectiveObjects :
     (Scheme.Modules.restrictFunctor U.ι).PreservesInjectiveObjects
 ```
 
-**`Stacks.Cohomology.HigherDirectImage.restMod_preservesInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/RestrictionPreservesInjectives.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/RestrictionPreservesInjectives.lean#L49). The attribute's comment: “restriction\_preserves\_injectives”.
+**`Stacks.Cohomology.HigherDirectImage.restMod_preservesInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/RestrictionPreservesInjectives.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/RestrictionPreservesInjectives.lean#L49). The attribute's comment: “restriction\_preserves\_injectives”.
 
 > The restriction of an injective sheaf of modules to an open subspace is injective.
 
@@ -73,13 +73,13 @@ public theorem restMod_preservesInjective (X : SheafedSpace.{u + 1, u, u} RingCa
 
 Declarations registered for the tag:
 
-- [`Hrestrict`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Locality/CohomologyVanishesLocally.lean#L124), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean#L95) (StacksFrontier).
+- [`Hrestrict`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Locality/CohomologyVanishesLocally.lean#L124), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean#L95) (StacksFrontier).
 
 ## Tag 01E3, a lemma
 
 [Tag 01E3](https://stacks.math.columbia.edu/tag/01E3) in the Stacks Project.
 
-**`locality_of_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Locality/CohomologyVanishesLocally.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Locality/CohomologyVanishesLocally.lean#L464). References: SGA 4 V (3.1), “special case”.
+**`locality_of_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Locality/CohomologyVanishesLocally.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Locality/CohomologyVanishesLocally.lean#L464). References: SGA 4 V (3.1), “special case”.
 
 > **Stacks Project Tag 01E3 (Lemma 20.7.2), Locality of cohomology.**
 > For a ringed space with structure sheaf `R`, a sheaf of `O_X`-modules `F`, an open `U`, a positive
@@ -117,7 +117,7 @@ theorem locality_of_cohomology
 
 [Tag 01E4](https://stacks.math.columbia.edu/tag/01E4) in the Stacks Project.
 
-**`Stacks.Cohomology.HigherDirectImagePresheaf.preimageCohomologyPresheaf_evaluation_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean, line 1122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean#L1122). The attribute's comment: “values on opens”.
+**`Stacks.Cohomology.HigherDirectImagePresheaf.preimageCohomologyPresheaf_evaluation_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean, line 1122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean#L1122). The attribute's comment: “values on opens”.
 
 > The value on `V` of the cohomology presheaf is canonically and naturally isomorphic
 > to `Hⁿ(f⁻¹(V), -)`.
@@ -132,7 +132,7 @@ public noncomputable def preimageCohomologyPresheaf_evaluation_iso
     Hfunctor (structureSheafRing X) ((opensMap f).obj V) n
 ```
 
-**`Stacks.Cohomology.HigherDirectImagePresheaf.preimageCohomologyPresheaf_map_eq_Hrestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean, line 1139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean#L1139). The attribute's comment: “restriction mappings”.
+**`Stacks.Cohomology.HigherDirectImagePresheaf.preimageCohomologyPresheaf_map_eq_Hrestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean, line 1139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean#L1139). The attribute's comment: “restriction mappings”.
 
 > Under the canonical identifications of its values with cohomology, the map of the
 > cohomology presheaf along `U ⊆ V` is the restriction map of Tag 01E2.
@@ -150,7 +150,7 @@ public theorem preimageCohomologyPresheaf_map_eq_Hrestrict
         Hrestrict (structureSheafRing X) (leOfHom ((opensMap f).map (homOfLE h))) n F
 ```
 
-**`Stacks.Cohomology.HigherDirectImagePresheaf.higherDirectImage_iso_sheafify_preimageCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean, line 1167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean#L1167). The attribute's comment: “associated sheaf”.
+**`Stacks.Cohomology.HigherDirectImagePresheaf.higherDirectImage_iso_sheafify_preimageCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean, line 1167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean#L1167). The attribute's comment: “associated sheaf”.
 
 > The `n`-th higher direct image is naturally isomorphic to the sheafification of the
 > presheaf `V ↦ Hⁿ(f⁻¹(V), -)`.
@@ -164,7 +164,7 @@ public noncomputable def higherDirectImage_iso_sheafify_preimageCohomology
         PresheafOfModules.sheafification (𝟙 (structureSheafRing Y).obj)
 ```
 
-**`Stacks.Cohomology.HigherDirectImagePresheaf.preimageHypercohomologyPresheaf_evaluation_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean, line 1211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean#L1211). The attribute's comment: “bounded below values on opens”.
+**`Stacks.Cohomology.HigherDirectImagePresheaf.preimageHypercohomologyPresheaf_evaluation_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean, line 1211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean#L1211). The attribute's comment: “bounded below values on opens”.
 
 > The value on `V` of the bounded-below hypercohomology presheaf is canonically and
 > naturally isomorphic to the `i`-th hypercohomology of `K` on `f⁻¹(V)`.
@@ -180,7 +180,7 @@ public noncomputable def preimageHypercohomologyPresheaf_evaluation_iso
         DerivedCategory.Plus.homologyFunctor AddCommGrpCat.{u} i
 ```
 
-**`Stacks.Cohomology.HigherDirectImagePresheaf.preimageHypercohomologyPresheaf_map_eq_hypercohomologyRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean, line 1255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean#L1255). The attribute's comment: “bounded below restriction mappings”.
+**`Stacks.Cohomology.HigherDirectImagePresheaf.preimageHypercohomologyPresheaf_map_eq_hypercohomologyRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean, line 1255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean#L1255). The attribute's comment: “bounded below restriction mappings”.
 
 > Under the canonical identifications of its values with hypercohomology, the map of
 > the bounded-below hypercohomology presheaf along `U ⊆ V` is the restriction map
@@ -198,7 +198,7 @@ public theorem preimageHypercohomologyPresheaf_map_eq_hypercohomologyRestrict
           (leOfHom ((opensMap f).map (homOfLE h))) i).app K
 ```
 
-**`Stacks.Cohomology.HigherDirectImagePresheaf.derivedPushforwardPlus_homology_iso_sheafify_preimageHypercohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean, line 1282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean#L1282). The attribute's comment: “bounded below associated sheaf”. References: EGA 0 (12.4.3), “special case”.
+**`Stacks.Cohomology.HigherDirectImagePresheaf.derivedPushforwardPlus_homology_iso_sheafify_preimageHypercohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean, line 1282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/SheafifiedCohomologyPresheaf.lean#L1282). The attribute's comment: “bounded below associated sheaf”. References: EGA 0 (12.4.3), “special case”.
 
 > For a bounded below complex, the `i`-th cohomology sheaf of its derived pushforward
 > is naturally isomorphic to the sheafification of `V ↦ Hⁱ(f⁻¹(V), K)`.
@@ -218,7 +218,7 @@ public noncomputable def
 
 [Tag 01E5](https://stacks.math.columbia.edu/tag/01E5) in the Stacks Project.
 
-**`Stacks.Cohomology.HigherDirectImage.rightDerivedPushforwardRestrictIso_ofLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationCocycle.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationCocycle.lean#L112). The attribute's comment: “compatibility across nested opens, every degree”.
+**`Stacks.Cohomology.HigherDirectImage.rightDerivedPushforwardRestrictIso_ofLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationCocycle.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationCocycle.lean#L112). The attribute's comment: “compatibility across nested opens, every degree”.
 
 > The comparison `rightDerivedPushforwardRestrictIso` attached to `V'` is the comparison
 > attached to `V`, whiskered by restriction along `V' ≤ V` and followed by the derived middle
@@ -239,7 +239,7 @@ theorem rightDerivedPushforwardRestrictIso_ofLE (p : ℕ) :
         (rightDerivedPushforwardRestrictIso f V' p).hom
 ```
 
-**`Stacks.Cohomology.HigherDirectImage.higherDirectImageRestrictIsoSucc_ofLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationCocycle.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationCocycle.lean#L168). The attribute's comment: “higher direct images, compatibility across nested opens”.
+**`Stacks.Cohomology.HigherDirectImage.higherDirectImageRestrictIsoSucc_ofLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationCocycle.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationCocycle.lean#L168). The attribute's comment: “higher direct images, compatibility across nested opens”.
 
 > The comparison `higherDirectImageRestrictIsoSucc` attached to `V`, whiskered by restriction
 > along `V' ≤ V` and followed by the transitivity isomorphism `moduleRestrictionOfLEIso` on the
@@ -256,7 +256,7 @@ theorem higherDirectImageRestrictIsoSucc_ofLE (p : ℕ) :
         (higherDirectImageRestrictIsoSucc f V' p).hom
 ```
 
-**`Stacks.Cohomology.HigherDirectImage.higherDirectImageRestrictIso_injectiveResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationInDegreeZero.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationInDegreeZero.lean#L251). The attribute's comment: “compatibility with injective resolutions”.
+**`Stacks.Cohomology.HigherDirectImage.higherDirectImageRestrictIso_injectiveResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationInDegreeZero.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationInDegreeZero.lean#L251). The attribute's comment: “compatibility with injective resolutions”.
 
 > **Stacks 01E5, compatibility with injective resolutions.**  On injective resolutions,
 > localization of a higher direct image is obtained by restricting the resolution and applying
@@ -290,7 +290,7 @@ theorem higherDirectImageRestrictIso_injectiveResolution (p : ℕ)
           I.cocomplex).sc p).mapHomologyIso (moduleRestriction Y V)).hom
 ```
 
-**`Stacks.Cohomology.HigherDirectImage.higherDirectImageRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean#L189). The attribute's comment: “higher direct images”. References: SGA 4 V (5.1), “Clause 3, special case”.
+**`Stacks.Cohomology.HigherDirectImage.higherDirectImageRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean#L189). The attribute's comment: “higher direct images”. References: SGA 4 V (5.1), “Clause 3, special case”.
 
 > **Stacks 01E5, higher direct images.**  Higher direct images commute naturally with
 > restriction to an open subspace: for `U = f⁻¹(V)`, restricting a sheaf of `𝒪_X`-modules to `U`
@@ -308,7 +308,7 @@ noncomputable def higherDirectImageRestrictIso (p : ℕ) :
         (modulePushforward f).rightDerived p ⋙ moduleRestriction Y V
 ```
 
-**`Stacks.Cohomology.HigherDirectImage.higherDirectImageRestrictIso_zero_compatibility`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean#L201). The attribute's comment: “degree-zero compatibility”.
+**`Stacks.Cohomology.HigherDirectImage.higherDirectImageRestrictIso_zero_compatibility`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean#L201). The attribute's comment: “degree-zero compatibility”.
 
 > **Stacks 01E5, degree-zero compatibility.**  In degree zero the higher-direct-image
 > comparison is the ordinary restriction comparison, after the canonical maps to the zeroth right
@@ -325,7 +325,7 @@ theorem higherDirectImageRestrictIso_zero_compatibility :
           (moduleRestriction Y V)
 ```
 
-**`Stacks.Cohomology.HigherDirectImage.derivedPushforwardPlusRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean#L318). The attribute's comment: “bounded below derived image”.
+**`Stacks.Cohomology.HigherDirectImage.derivedPushforwardPlusRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean#L318). The attribute's comment: “bounded below derived image”.
 
 > **Stacks 01E5, bounded below derived image.**  The total right derived pushforward of a
 > bounded below complex commutes naturally with restriction to an open subspace: deriving
@@ -345,7 +345,7 @@ noncomputable def derivedPushforwardPlusRestrictIso :
           (moduleRestriction Y V).rightDerivedFunctorPlus
 ```
 
-**`Stacks.Cohomology.HigherDirectImage.derivedPushforwardPlusRestrictIso_unit_compatibility`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean#L340). The attribute's comment: “compatibility with derived units”.
+**`Stacks.Cohomology.HigherDirectImage.derivedPushforwardPlusRestrictIso_unit_compatibility`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationIsomorphisms.lean#L340). The attribute's comment: “compatibility with derived units”.
 
 > **Stacks 01E5, compatibility with derived units.**  The derived localization isomorphism is
 > the one induced by the undeived comparison: after precomposition with the localization functor
@@ -363,7 +363,7 @@ theorem derivedPushforwardPlusRestrictIso_unit_compatibility :
           (derivedPushforwardPlusRestrictIso f V).hom
 ```
 
-**`Stacks.Cohomology.HigherDirectImage.modulePushforwardRestrictIso_ofLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationNaturality.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationNaturality.lean#L493). The attribute's comment: “compatibility across nested opens, before deriving”.
+**`Stacks.Cohomology.HigherDirectImage.modulePushforwardRestrictIso_ofLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationNaturality.lean, line 494](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationNaturality.lean#L494). The attribute's comment: “compatibility across nested opens, before deriving”.
 
 > **Stacks 01E5, compatibility across nested opens, before deriving.**  Stacks 01E5 asserts
 > an *equality* of
@@ -395,7 +395,7 @@ theorem modulePushforwardRestrictIso_ofLE :
         Functor.whiskerLeft (modulePushforward f) (moduleRestrictionOfLEIso Y h).hom
 ```
 
-**`Stacks.Cohomology.HigherDirectImage.higherDirectImageRestrictIso_zero_ofLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationNaturality.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationNaturality.lean#L526). The attribute's comment: “compatibility across nested opens, degree zero”.
+**`Stacks.Cohomology.HigherDirectImage.higherDirectImageRestrictIso_zero_ofLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationNaturality.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/LocalizationNaturality.lean#L527). The attribute's comment: “compatibility across nested opens, degree zero”.
 
 > **Stacks 01E5, compatibility across nested opens in degree zero.**  The degree-zero
 > derived comparison `higherDirectImageRestrictIso f V' 0` is compatible with shrinking `V` to
@@ -431,4 +431,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.7, Tag 01E0](https://stacks.math.columbia.edu/tag/01E0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

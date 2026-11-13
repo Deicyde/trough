@@ -7,7 +7,7 @@ statement: formalized
 
 # Nonattacking bishops and anassas
 
-33 results, 18 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html).
+33 results, 18 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html).
 
 ## Nonattacking placements
 
@@ -22,7 +22,7 @@ $(q_1 - p_1) v_2 \ne (q_2 - p_2) v_1$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Section 1.
 
-Formalized by `MetaMathlibExt.nonattackingPlacements`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#nonattacking-placements).
+Formalized by `MetaMathlibExt.nonattackingPlacements`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#nonattacking-placements).
 
 ## Exactly one nonattacking placement of no pieces
 
@@ -34,7 +34,7 @@ exactly one nonattacking placement of $0$ pieces with basic moves $M$ on $B$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Section 1.
 
-Formalized by `MetaMathlibExt.card_nonattackingPlacements_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#card-nonattacking-placements-zero).
+Formalized by `MetaMathlibExt.card_nonattackingPlacements_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#card-nonattacking-placements-zero).
 
 ## The square board
 
@@ -45,7 +45,7 @@ $(i, j) \in \mathbb{Z}^2$ with $1 \le i \le m$ and $1 \le j \le m$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Section 2.
 
-Formalized by `MetaMathlibExt.squareBoard`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#square-board).
+Formalized by `MetaMathlibExt.squareBoard`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#square-board).
 
 ## White squares of the square board
 
@@ -57,7 +57,7 @@ even.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Section 2, Table 1.
 
-Formalized by `MetaMathlibExt.whiteSquares`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#white-squares).
+Formalized by `MetaMathlibExt.whiteSquares`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#white-squares).
 
 ## Black squares of the square board
 
@@ -68,7 +68,7 @@ $m \times m$ board $S_m = [1, m]^2$ are the squares $(i, j) \in S_m$ with $i + j
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Section 2, Table 1.
 
-Formalized by `MetaMathlibExt.blackSquares`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#black-squares).
+Formalized by `MetaMathlibExt.blackSquares`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#black-squares).
 
 ## Basic moves of the bishop
 
@@ -79,7 +79,7 @@ and $(-1, 1)$ in $\mathbb{Z}^2$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Section 2.
 
-Formalized by `MetaMathlibExt.bishopMoves`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishop-moves).
+Formalized by `MetaMathlibExt.bishopMoves`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishop-moves).
 
 ## Basic moves of the anassa
 
@@ -90,7 +90,7 @@ and $(1, 1)$ in $\mathbb{Z}^2$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Section 3.
 
-Formalized by `MetaMathlibExt.anassaMoves`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#anassa-moves).
+Formalized by `MetaMathlibExt.anassaMoves`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#anassa-moves).
 
 ## Nonattacking bishops on a square board
 
@@ -103,7 +103,7 @@ slope $1$ or $-1$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 2.1.
 
-Formalized by `MetaMathlibExt.bishopsSquare`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-square).
+Formalized by `MetaMathlibExt.bishopsSquare`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-square).
 
 ## Nonattacking bishops on the white squares
 
@@ -119,7 +119,7 @@ whose rows and columns are the diagonals of the white squares of $S_m$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 2.2.
 
-Formalized by `MetaMathlibExt.bishopsWhite`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-white).
+Formalized by `MetaMathlibExt.bishopsWhite`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-white).
 
 ## Nonattacking bishops on the black squares
 
@@ -135,7 +135,7 @@ whose rows and columns are the diagonals of the black squares of $S_m$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 2.2.
 
-Formalized by `MetaMathlibExt.bishopsBlack`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-black).
+Formalized by `MetaMathlibExt.bishopsBlack`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-black).
 
 ## Nonattacking anassas by number below the diagonal
 
@@ -149,7 +149,7 @@ $(i, j)$ satisfy $j < i$, that is, lie strictly below the main diagonal.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 3.1.
 
-Formalized by `MetaMathlibExt.anassasBelow`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#anassas-below).
+Formalized by `MetaMathlibExt.anassasBelow`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#anassas-below).
 
 ## Extended Stirling numbers of the second kind
 
@@ -163,7 +163,7 @@ number of permutations of $j$ elements with exactly $i$ cycles.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Section 1 (extended Stirling numbers, with the identity `{-j, -k} = [k, j]`).
 
-Formalized by `MetaMathlibExt.extStirlingSecond`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#ext-stirling-second).
+Formalized by `MetaMathlibExt.extStirlingSecond`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#ext-stirling-second).
 
 ## Extended Stirling numbers at natural arguments
 
@@ -175,7 +175,7 @@ kind $S(n, k)$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Section 1.
 
-Formalized by `MetaMathlibExt.extStirlingSecond_natCast`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#ext-stirling-second-nat-cast).
+Formalized by `MetaMathlibExt.extStirlingSecond_natCast`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#ext-stirling-second-nat-cast).
 
 ## Extended Stirling numbers at negative arguments
 
@@ -187,7 +187,7 @@ of the first kind $c(b, a)$, the number of permutations of $b$ elements with exa
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, proof of Theorem 2.2.
 
-Formalized by `MetaMathlibExt.extStirlingSecond_neg_neg`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#ext-stirling-second-neg-neg).
+Formalized by `MetaMathlibExt.extStirlingSecond_neg_neg`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#ext-stirling-second-neg-neg).
 
 ## Santos's coefficients
 
@@ -205,7 +205,7 @@ where $\binom{w}{n} = w(w-1)\cdots(w-n+1)/n!$ for complex $w$ and natural $n$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Lemma 2.7, equation (9).
 
-Formalized by `MetaMathlibExt.santosBeta`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#santos-beta).
+Formalized by `MetaMathlibExt.santosBeta`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#santos-beta).
 
 ## Santos's coefficient with all indices zero
 
@@ -216,7 +216,7 @@ coefficient satisfies $\beta_0(0, 0, z) = 1$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Lemma 2.7.
 
-Formalized by `MetaMathlibExt.santosBeta_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#santos-beta-zero).
+Formalized by `MetaMathlibExt.santosBeta_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#santos-beta-zero).
 
 ## Constituent coefficients for bishops on one color
 
@@ -238,7 +238,7 @@ and black squares.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 2.8.
 
-Formalized by `MetaMathlibExt.bishopColorQuasiCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishop-color-quasi-coeff).
+Formalized by `MetaMathlibExt.bishopColorQuasiCoeff`, a definition declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishop-color-quasi-coeff).
 
 ## Constituent coefficient for no bishops
 
@@ -249,7 +249,7 @@ coefficient $c_{0,0}(z)$ of the bishop quasi-polynomials (the case $k = d = 0$) 
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 2.8.
 
-Formalized by `MetaMathlibExt.bishopColorQuasiCoeff_zero_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishop-color-quasi-coeff-zero-zero).
+Formalized by `MetaMathlibExt.bishopColorQuasiCoeff_zero_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishop-color-quasi-coeff-zero-zero).
 
 ## Arshon's formula for nonattacking bishops (Kotěšovec's form)
 
@@ -271,7 +271,7 @@ $b \ge 0$ and $0$ when $b < 0$ (Knuth's extended Stirling numbers of the second 
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 3 (Arshon, Kotěšovec) (`jis-2025-25.8.6-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.bishopsSquare_eq_arshon` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-square-eq-arshon).
+Stated but not proved: `MetaMathlibExt.bishopsSquare_eq_arshon` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-square-eq-arshon).
 
 ## Recurrence for bishops on white squares
 
@@ -290,7 +290,7 @@ $R_W(m, 0) = 1$ and $R_W(0, k + 1) = 0$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 4 (`jis-2025-25.8.6-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.bishopsWhite_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-white-recurrence).
+Stated but not proved: `MetaMathlibExt.bishopsWhite_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-white-recurrence).
 
 ## Recurrence for bishops on the black squares
 
@@ -308,7 +308,7 @@ $k \ge 1$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 4 (`jis-2025-25.8.6-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.bishopsBlack_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-black-recurrence).
+Stated but not proved: `MetaMathlibExt.bishopsBlack_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-black-recurrence).
 
 ## Extended Stirling formula for bishops on white squares
 
@@ -328,7 +328,7 @@ kind with arguments $-b, -a$ when $a, b < 0$, and $0$ otherwise.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 4 (`jis-2025-25.8.6-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.bishopsWhite_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-white-eq-sum).
+Stated but not proved: `MetaMathlibExt.bishopsWhite_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-white-eq-sum).
 
 ## Sum formula for bishops on the black squares
 
@@ -343,7 +343,7 @@ $$R_K(m, k) = \sum_{j=0}^{k} \binom{\lfloor m/2 \rfloor}{j} {m-j \brace m-k}.$$
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 4 (`jis-2025-25.8.6-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.bishopsBlack_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-black-eq-sum).
+Stated but not proved: `MetaMathlibExt.bishopsBlack_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-black-eq-sum).
 
 ## Extended Stirling formula for bishops on a square board
 
@@ -364,7 +364,7 @@ kind with arguments $-b, -a$ when $a, b < 0$, and $0$ otherwise.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 6 (`jis-2025-25.8.6-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.bishopsSquare_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-square-eq-sum).
+Stated but not proved: `MetaMathlibExt.bishopsSquare_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-square-eq-sum).
 
 ## Ward's identity for Stirling numbers of the second kind
 
@@ -379,7 +379,7 @@ numbers of the second kind.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Lemma 8 (`jis-2025-25.8.6-lem-8`).
 
-Stated but not proved: `MetaMathlibExt.stirlingSecond_sub_eq_sum_associated` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#stirling-second-sub-eq-sum-associated).
+Stated but not proved: `MetaMathlibExt.stirlingSecond_sub_eq_sum_associated` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#stirling-second-sub-eq-sum-associated).
 
 ## Santos's expansion of a product of binomial coefficients
 
@@ -395,7 +395,7 @@ $\binom{w}{n} = w(w-1)\cdots(w-n+1)/n!$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Lemma 9 (`jis-2025-25.8.6-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.choose_mul_choose_eq_sum_santosBeta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#choose-mul-choose-eq-sum-santos-beta).
+Stated but not proved: `MetaMathlibExt.choose_mul_choose_eq_sum_santosBeta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#choose-mul-choose-eq-sum-santos-beta).
 
 ## Quasi-polynomial formula for bishops on white squares
 
@@ -414,7 +414,7 @@ $$
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 10 (`jis-2025-25.8.6-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.bishopsWhite_eq_quasi` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-white-eq-quasi).
+Stated but not proved: `MetaMathlibExt.bishopsWhite_eq_quasi` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-white-eq-quasi).
 
 ## Quasi-polynomial formula for bishops on the black squares
 
@@ -431,7 +431,7 @@ in $\mathbb{C}$, where $\pi(m) \in \{0, 1\}$ is the remainder of $m$ modulo $2$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 10 (`jis-2025-25.8.6-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.bishopsBlack_eq_quasi` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-black-eq-quasi).
+Stated but not proved: `MetaMathlibExt.bishopsBlack_eq_quasi` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-black-eq-quasi).
 
 ## Quasi-polynomial formula for bishops on a square board
 
@@ -454,7 +454,7 @@ quasi-polynomial formulas for bishops on the white and on the black squares.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 10 (`jis-2025-25.8.6-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.bishopsSquare_eq_quasi` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-square-eq-quasi).
+Stated but not proved: `MetaMathlibExt.bishopsSquare_eq_quasi` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#bishops-square-eq-quasi).
 
 ## Recurrence for anassas below the diagonal
 
@@ -476,7 +476,7 @@ $A(m, k, 0) = {m+1 \brace m-k+1}$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 11 (`jis-2025-25.8.6-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.anassasBelow_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#anassas-below-recurrence).
+Stated but not proved: `MetaMathlibExt.anassasBelow_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#anassas-below-recurrence).
 
 ## Sum formula for anassas below the diagonal
 
@@ -495,7 +495,7 @@ $\binom{k-p-1}{j}$ is the generalized binomial coefficient, so that $\binom{-1}{
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 11 (`jis-2025-25.8.6-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.anassasBelow_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#anassas-below-eq-sum).
+Stated but not proved: `MetaMathlibExt.anassasBelow_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#anassas-below-eq-sum).
 
 ## Total number of nonattacking anassas on the square board
 
@@ -519,7 +519,7 @@ ordinary Stirling number when $m - k + j \ge 0$ and $0$ otherwise.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 13 (`jis-2025-25.8.6-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.sum_anassasBelow_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 354](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L354). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#sum-anassas-below-eq).
+Stated but not proved: `MetaMathlibExt.sum_anassasBelow_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 354](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L354). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#sum-anassas-below-eq).
 
 ## Polynomial formula for the number of nonattacking anassas
 
@@ -546,7 +546,7 @@ $U(i, k) = \min(\lceil k/2 \rceil, 2k - i)$ and $L(i, k) = \max(0, i - k)$.
 
 - Eder G. Santos, *Counting Nonattacking Chess Piece Placements: Bishops and Anassas*, Journal of Integer Sequences 28 (2025), Article 25.8.6, Theorem 16 (`jis-2025-25.8.6-thm-16`).
 
-Stated but not proved: `MetaMathlibExt.sum_anassasBelow_eq_poly` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#sum-anassas-below-eq-poly).
+Stated but not proved: `MetaMathlibExt.sum_anassasBelow_eq_poly` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NonattackingBishopsAnassasWanted.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html#sum-anassas-below-eq-poly).
 
 ## Depends on
 
@@ -555,4 +555,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Nonattacking bishops and anassas](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/tilings-board-placements/nonattacking-bishops-and-anassas)

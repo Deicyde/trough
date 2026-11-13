@@ -1,6 +1,6 @@
 # 7 Sites and Sheaves
 
-Chapter 7 of the Stacks Project, *Sites and Sheaves*, [Tag 00UZ](https://stacks.math.columbia.edu/tag/00UZ): the 47 sections of its 52 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 229 tags are carried by 368 declarations of the repository (5 in StacksCore and 363 in StacksFrontier) and 98 registered declarations.
+Chapter 7 of the Stacks Project, *Sites and Sheaves*, [Tag 00UZ](https://stacks.math.columbia.edu/tag/00UZ): the 47 sections of its 52 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 233 tags are carried by 411 declarations of the repository (5 in StacksCore and 406 in StacksFrontier) and 99 registered declarations.
 
 ## [7.2 Presheaves to 7.23 Cocontinuous functors…](part-01/README.md)
 

@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.71 An interesting compact object
 
-Section 110.71 of the Stacks Project, [Tag 09R4](https://stacks.math.columbia.edu/tag/09R4). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.71 of the Stacks Project, [Tag 09R4](https://stacks.math.columbia.edu/tag/09R4). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09R5, a lemma
 
 [Tag 09R5](https://stacks.math.columbia.edu/tag/09R5) in the Stacks Project.
 
-**`Stacks.Examples.exists_isCompactObject_not_representable_by_finite_gradedProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/CompactObjectNoFiniteProjectiveModel.lean, line 1081](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/CompactObjectNoFiniteProjectiveModel.lean#L1081).
+**`Stacks.Examples.exists_isCompactObject_not_representable_by_finite_gradedProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/CompactObjectNoFiniteProjectiveModel.lean, line 1080](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Algebra/CompactObjectNoFiniteProjectiveModel.lean#L1080).
 
 > **[Stacks, Tag 09R5].** *"There exists a differential graded algebra `(A, d)` and a compact
 > object `E` of `D(A, d)` such that `E` cannot be represented by a finite and graded projective
@@ -43,4 +43,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.71, Tag 09R4](https://stacks.math.columbia.edu/tag/09R4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

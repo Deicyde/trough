@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.87 Inverse systems
 
-Section 10.87 of the Stacks Project, [Tag 03C9](https://stacks.math.columbia.edu/tag/03C9). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.87 of the Stacks Project, [Tag 03C9](https://stacks.math.columbia.edu/tag/03C9). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03CA, a lemma
 
 [Tag 03CA](https://stacks.math.columbia.edu/tag/03CA) in the Stacks Project.
 
-**`CategoryTheory.ShortComplex.shortExact_map_lim_of_isMittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean#L252). References: EGA 0 (13.2.2), “ℕ-indexed systems”; EGA III (4.1.7.21), “more general”.
+**`CategoryTheory.ShortComplex.shortExact_map_lim_of_isMittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean#L252). References: EGA 0 (13.2.2), “ℕ-indexed systems”; EGA III (4.1.7.21), “more general”.
 
 > **Stacks 03CA.** Let `R` be a ring and let `S` be a short complex of towers of `R`-modules,
 > that is of functors `ℕᵒᵖ ⥤ ModuleCat R`, which is short exact at every index: for each `i` the
@@ -38,4 +38,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.87, Tag 03C9](https://stacks.math.columbia.edu/tag/03C9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

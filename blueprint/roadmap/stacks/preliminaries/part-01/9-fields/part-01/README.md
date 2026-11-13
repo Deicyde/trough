@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 9.3 Examples of fields to 9.26 Transcendence
+# 9.3 Examples of fields to 9.25 Artin-Schreier extensions
 
 - [9.3 Examples of fields](9-3-examples-of-fields.md)
 - [9.4 Vector spaces](9-4-vector-spaces.md)
@@ -17,10 +17,10 @@ navigation: transparent
 - [9.14 Purely inseparable extensions](9-14-purely-inseparable-extensions.md)
 - [9.15 Normal extensions](9-15-normal-extensions.md)
 - [9.16 Splitting fields](9-16-splitting-fields.md)
+- [9.17 Roots of unity](9-17-roots-of-unity.md)
 - [9.20 Trace and norm](9-20-trace-and-norm.md)
 - [9.21 Galois theory](9-21-galois-theory.md)
 - [9.22 Infinite Galois theory](9-22-infinite-galois-theory.md)
 - [9.23 The complex numbers](9-23-the-complex-numbers.md)
 - [9.24 Kummer extensions](9-24-kummer-extensions.md)
 - [9.25 Artin-Schreier extensions](9-25-artin-schreier-extensions.md)
-- [9.26 Transcendence](9-26-transcendence.md)

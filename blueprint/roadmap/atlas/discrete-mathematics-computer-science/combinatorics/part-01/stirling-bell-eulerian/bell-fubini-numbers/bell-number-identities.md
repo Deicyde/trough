@@ -8,7 +8,7 @@ proof: formalized
 
 # Bell number identities
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/bell-number-identities/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/bell-number-identities/index.html).
 
 ## Gould–Quaintance double-sum formula for Bell numbers
 
@@ -25,7 +25,7 @@ The source states the formula for $p \ge 1$; with $0^0 = 1$ it also holds for $p
 
 - H. W. Gould and Jocelyn Quaintance, "Implications of Spivey's Bell Number Formula," Journal of Integer Sequences 11 (2008), Article 08.3.7, Theorem, equation (E:4), lines 177–182, https://cs.uwaterloo.ca/journals/JIS/VOL11/Gould/gould35.tex
 
-Formalized by `MetaMathlibExt.bell_eq_signed_stirlingFirst_convolution`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BellConvolution.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BellConvolution.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/bell-number-identities/index.html#bell-eq-signed-stirling-first-convolutio).
+Formalized by `MetaMathlibExt.bell_eq_signed_stirlingFirst_convolution`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BellConvolution.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BellConvolution.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/bell-number-identities/index.html#bell-eq-signed-stirling-first-convolutio).
 
 ## Bell numbers are row sums of Stirling numbers of the second kind
 
@@ -37,7 +37,7 @@ Stirling number of the second kind.
 
 - Michael Z. Spivey, *A Generalized Recurrence for Bell Numbers*, Journal of Integer Sequences 11 (2008), Article 08.2.5, equation `Stir`, lines 107–108 (quoting the classical formula), <https://cs.uwaterloo.ca/journals/JIS/VOL11/Spivey/spivey25.tex>.
 
-Formalized by `MetaMathlibExt.bell_eq_sum_stirlingSecond`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BellStirlingSum.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BellStirlingSum.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/bell-number-identities/index.html#bell-eq-sum-stirling-second).
+Formalized by `MetaMathlibExt.bell_eq_sum_stirlingSecond`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BellStirlingSum.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BellStirlingSum.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/bell-number-identities/index.html#bell-eq-sum-stirling-second).
 
 ## Depends on
 
@@ -46,4 +46,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bell number identities](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/bell-number-identities/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/bell-number-identities)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/bell-number-identities)

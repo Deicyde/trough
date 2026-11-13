@@ -8,13 +8,13 @@ proof: formalized
 
 # 98.8 Tangent spaces
 
-Section 98.8 of the Stacks Project, [Tag 07WY](https://stacks.math.columbia.edu/tag/07WY). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.8 of the Stacks Project, [Tag 07WY](https://stacks.math.columbia.edu/tag/07WY). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07WY, the section
 
 [Tag 07WY](https://stacks.math.columbia.edu/tag/07WY) in the Stacks Project.
 
-**`Deformation.Artin.tangentSpaceModuleOfSatisfiesRS`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean#L99). The attribute's comment: “if X satisfies (RS), TF\_\{X,k,x\_0} has a natural k-vector space structure (Lemma 06IH, assumptions by Lemma 07WU and Remark 07WV)”.
+**`Deformation.Artin.tangentSpaceModuleOfSatisfiesRS`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean#L99). The attribute's comment: “if X satisfies (RS), TF\_\{X,k,x\_0} has a natural k-vector space structure (Lemma 06IH, assumptions by Lemma 07WU and Remark 07WV)”.
 
 > **The tangent space as a vector space.** For `𝒳` satisfying (RS), the tangent space
 > `T𝓕_{𝒳,k,x₀}` of the predeformation category, with the natural `k`-vector space structure of
@@ -24,7 +24,7 @@ Section 98.8 of the Stacks Project, [Tag 07WY](https://stacks.math.columbia.edu/
 def tangentSpaceModuleOfSatisfiesRS : ModuleCat.{max (u + 1) v w} k
 ```
 
-**`Deformation.Artin.tangentSpaceModuleOfSatisfiesRS_carrier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean#L116). The attribute's comment: “the underlying set of the k-vector space TF\_\{X,k,x\_0} is the set of isomorphism classes of objects of F\_\{X,k,x\_0} over k[ε]”.
+**`Deformation.Artin.tangentSpaceModuleOfSatisfiesRS_carrier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean#L116). The attribute's comment: “the underlying set of the k-vector space TF\_\{X,k,x\_0} is the set of isomorphism classes of objects of F\_\{X,k,x\_0} over k[ε]”.
 
 > The underlying set of the `k`-vector space `tangentSpaceModuleOfSatisfiesRS` is the tangent
 > space `T𝓕_{𝒳,k,x₀}`: the set of isomorphism classes of the fibre of `𝓕_{𝒳,k,x₀}` over the dual
@@ -40,7 +40,7 @@ theorem tangentSpaceModuleOfSatisfiesRS_carrier :
         (D.projection.Fiber (artinianDualNumbers.{u, u, u} Λ k)))
 ```
 
-**`Deformation.Artin.infinitesimalAutomorphismModuleOfSatisfiesRS`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean#L133). The attribute's comment: “Inf(F\_\{X,k,x\_0}) has a natural k-vector space structure (Lemma 06JX)”.
+**`Deformation.Artin.infinitesimalAutomorphismModuleOfSatisfiesRS`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean#L133). The attribute's comment: “Inf(F\_\{X,k,x\_0}) has a natural k-vector space structure (Lemma 06JX)”.
 
 > **Infinitesimal automorphisms as a vector space.** For `𝒳` satisfying (RS), the
 > infinitesimal automorphisms `Inf(𝓕_{𝒳,k,x₀})` at an object `x` of `𝓕_{𝒳,k,x₀}` over `k` and a
@@ -58,7 +58,7 @@ def infinitesimalAutomorphismModuleOfSatisfiesRS
     ModuleCat.{max u w} k
 ```
 
-**`Deformation.Artin.infinitesimalAutomorphismModuleOfSatisfiesRS_carrier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean#L154). The attribute's comment: “the k-vector space structure on Inf(F\_\{X,k,x\_0}) is such that addition agrees with composition of automorphisms”.
+**`Deformation.Artin.infinitesimalAutomorphismModuleOfSatisfiesRS_carrier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean#L154). The attribute's comment: “the k-vector space structure on Inf(F\_\{X,k,x\_0}) is such that addition agrees with composition of automorphisms”.
 
 > **Addition on `Inf` is composition.** The underlying set of
 > `infinitesimalAutomorphismModuleOfSatisfiesRS` is the kernel of the restriction homomorphism
@@ -88,7 +88,7 @@ theorem infinitesimalAutomorphismModuleOfSatisfiesRS_carrier
             (cast h a).1
 ```
 
-**`Deformation.Artin.isFiniteDimensionalDeformationCategory_predeformationCategory_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean#L198). The attribute's comment: “the natural condition: the vector spaces TF\_\{X,k,x\_0} and Inf(F\_\{X,k,x\_0}) have finite dimension”.
+**`Deformation.Artin.isFiniteDimensionalDeformationCategory_predeformationCategory_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/TangentSpaceVectorStructure.lean#L198). The attribute's comment: “the natural condition: the vector spaces TF\_\{X,k,x\_0} and Inf(F\_\{X,k,x\_0}) have finite dimension”.
 
 > **The finite-dimensionality condition.** For `𝒳` satisfying (RS), the condition
 > `Deformation.IsFiniteDimensionalDeformationCategory` on `𝓕_{𝒳,k,x₀}` holds exactly when the two
@@ -111,7 +111,7 @@ theorem isFiniteDimensionalDeformationCategory_predeformationCategory_iff :
 
 [Tag 07WZ](https://stacks.math.columbia.edu/tag/07WZ) in the Stacks Project.
 
-**`Deformation.Artin.squareZeroLiftClasses`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/TangentFunctor.lean, line 923](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/TangentFunctor.lean#L923). The attribute's comment: “lift classes at the dual numbers”.
+**`Deformation.Artin.squareZeroLiftClasses`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/TangentFunctor.lean, line 923](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Infinitesimal/TangentFunctor.lean#L923). The attribute's comment: “lift classes at the dual numbers”.
 
 > Isomorphism classes of lifts of `x` to `Spec A[M]`, together with their identification
 > with `x` after restriction to `Spec A`.
@@ -124,7 +124,7 @@ public abbrev squareZeroLiftClasses (M : SiteModule A B) : Type _
 
 [Tag 07X0](https://stacks.math.columbia.edu/tag/07X0) in the Stacks Project.
 
-**`Deformation.Artin.infinitesimalAutomorphisms_equiv_restrictionKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/TangentSpace.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/TangentSpace.lean#L403).
+**`Deformation.Artin.infinitesimalAutomorphisms_equiv_restrictionKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/TangentSpace.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/TangentSpace.lean#L403).
 
 > **Infinitesimal automorphisms of `𝓕_{𝓧,k,x₀}`.** Let `𝓧` be fibred in groupoids over the
 > big fppf site of `S` and let `x₀` lie over `Spec k`. For a pushforward `z₀ ⟶ zε` of a point of
@@ -170,7 +170,7 @@ public theorem infinitesimalAutomorphisms_equiv_restrictionKernel
 
 [Tag 07X1](https://stacks.math.columbia.edu/tag/07X1) in the Stacks Project.
 
-**`Deformation.Artin.isFiniteDimensionalDeformationCategory_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/AlgebraicStackFiniteDimensional.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/AlgebraicStackFiniteDimensional.lean#L351).
+**`Deformation.Artin.isFiniteDimensionalDeformationCategory_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/AlgebraicStackFiniteDimensional.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/AlgebraicStackFiniteDimensional.lean#L351).
 
 > **Stacks Project, Tag 07X1.** Let `S` be a locally Noetherian scheme, `𝒳` an algebraic
 > stack over `S`, `U` a scheme locally of finite type over `S`, and `(Sch/U) ⟶ 𝒳` a smooth
@@ -197,7 +197,7 @@ theorem isFiniteDimensionalDeformationCategory_of_isAlgebraicStack [IsLocallyNoe
     IsFiniteDimensionalDeformationCategory D.projection
 ```
 
-**`Deformation.Artin.isFiniteDimensionalDeformationCategory_of_algebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FiniteDimensional/AlgebraicStack.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FiniteDimensional/AlgebraicStack.lean#L53).
+**`Deformation.Artin.isFiniteDimensionalDeformationCategory_of_algebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FiniteDimensional/AlgebraicStack.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FiniteDimensional/AlgebraicStack.lean#L53).
 
 > Let `S` be a locally Noetherian scheme, `𝒳` an algebraic stack over `S`, `U` a scheme locally
 > of finite type over `S` and `f : (Sch/U)_{fppf} ⟶ 𝒳` a smooth surjective 1-morphism. Then for every
@@ -239,7 +239,7 @@ theorem isFiniteDimensionalDeformationCategory_of_algebraicStack [IsLocallyNoeth
 
 [Tag 07X2](https://stacks.math.columbia.edu/tag/07X2) in the Stacks Project.
 
-**`Deformation.Artin.sixTermExact_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ArtinCriteria/TangentSpace/SixTermExact.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ArtinCriteria/TangentSpace/SixTermExact.lean#L202).
+**`Deformation.Artin.sixTermExact_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ArtinCriteria/TangentSpace/SixTermExact.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ArtinCriteria/TangentSpace/SixTermExact.lean#L202).
 
 > **Stacks Project, Tag 07X2**, the full six-term exact sequence.
 >
@@ -370,11 +370,6 @@ public theorem sixTermExact_twoFibreProduct
       hD𝒴.predeformation.cofibered (mF.toFunctor.obj (mA.toFunctor.obj w₀'.1))
     let PF' := Deformation.chosenPushforwardsAtOfCofiberedInGroupoids
       hD𝒴.predeformation.cofibered (data.rightFunctor.obj (mB.toFunctor.obj w₀'.1))
-    let PL := Deformation.transportChosenPushforwardsAt
-      (TwoFibreProductOver.lift (mF.toFunctor ⋙ D𝒴.projection)
-        (data.rightFunctor ⋙ D𝒴.projection) D𝒴.projection mF.toFunctor data.rightFunctor
-        D𝒲.projection mA.toFunctor mB.toFunctor hA' hB' data.filler data.filler_vertical)
-      (TwoFibreProductOver.lift_comp_structureFunctor ..) w₀'.1 PW
     letI := Deformation.naturalLocalizedTangentAddCommGroup PW hD𝒲.satisfiesRS
     letI := Deformation.naturalLocalizedTangentModule PW hD𝒲.satisfiesRS
     letI := Deformation.naturalLocalizedTangentAddCommGroup QH hH'.satisfiesRS
@@ -477,4 +472,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.8, Tag 07WY](https://stacks.math.columbia.edu/tag/07WY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

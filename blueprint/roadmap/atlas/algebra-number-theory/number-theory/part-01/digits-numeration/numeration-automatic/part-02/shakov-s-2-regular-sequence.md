@@ -7,7 +7,7 @@ statement: formalized
 
 # Shakov's 2-regular sequence
 
-7 results, 2 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html).
+7 results, 2 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html).
 
 ## Shakov's $2$-regular sequence
 
@@ -17,7 +17,7 @@ $s(4k+1) = 2s(2k) + s(2k+1)$, $s(4k+2) = 2s(2k+1) + s(2k)$ and $s(4k+3) = 2s(2k+
 
 The value $s(0)$ plays no role in the recursion; the source's sequence starts at $n = 1$.
 
-Formalized by `MathlibExt.NumberTheory.ShakovTwoRegularWanted.shakovSeq`, a definition declared in [WantedExt/NumberTheory/ShakovTwoRegularWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ShakovTwoRegularWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html#shakov-seq).
+Formalized by `MathlibExt.NumberTheory.ShakovTwoRegularWanted.shakovSeq`, a definition declared in [WantedExt/NumberTheory/ShakovTwoRegularWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ShakovTwoRegularWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html#shakov-seq).
 
 ## Shakov's auxiliary sequence
 
@@ -28,7 +28,7 @@ $n \equiv 3 \pmod 4$.
 
 The value $a(0)$ plays no role in the recursion; the source's sequence starts at $n = 1$.
 
-Formalized by `MathlibExt.NumberTheory.ShakovTwoRegularWanted.shakovA`, a definition declared in [WantedExt/NumberTheory/ShakovTwoRegularWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ShakovTwoRegularWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html#shakov-a).
+Formalized by `MathlibExt.NumberTheory.ShakovTwoRegularWanted.shakovA`, a definition declared in [WantedExt/NumberTheory/ShakovTwoRegularWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ShakovTwoRegularWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html#shakov-a).
 
 ## Shakov's sequence counts the divisors of $m^2 + 1$
 
@@ -44,7 +44,7 @@ $\sum_{m \ge 0} \tau(m^2 + 1) x^m = \sum_{n \ge 1} x^{s(n)}$ of formal power ser
 
 - Anton Shakov, "A 2-Regular Sequence That Counts The Divisors of `n^2 + 1`", Theorem 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.ShakovTwoRegularWanted.fiber_card` is written with `theorem_wanted` in [WantedExt/NumberTheory/ShakovTwoRegularWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ShakovTwoRegularWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html#fiber-card).
+Stated but not proved: `MathlibExt.NumberTheory.ShakovTwoRegularWanted.fiber_card` is written with `theorem_wanted` in [WantedExt/NumberTheory/ShakovTwoRegularWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ShakovTwoRegularWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html#fiber-card).
 
 ## Block averages of Shakov's sequence
 
@@ -62,7 +62,7 @@ where the exponent $2n - 1$ is read as $0$ when $n = 0$ (both sides are then $0$
 
 - Anton Shakov, "A 2-Regular Sequence That Counts The Divisors of `n^2 + 1`", Proposition 7.
 
-Stated but not proved: `MathlibExt.NumberTheory.ShakovTwoRegularWanted.block_average` is written with `theorem_wanted` in [WantedExt/NumberTheory/ShakovTwoRegularWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ShakovTwoRegularWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html#block-average).
+Stated but not proved: `MathlibExt.NumberTheory.ShakovTwoRegularWanted.block_average` is written with `theorem_wanted` in [WantedExt/NumberTheory/ShakovTwoRegularWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ShakovTwoRegularWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html#block-average).
 
 ## Primality of $n^2 + 1$ from the fibers of Shakov's sequence
 
@@ -74,7 +74,7 @@ only if the set of natural numbers $m$ with $s(m) = n$ is exactly $\{2^n, 2^{n+1
 
 - Anton Shakov, "A 2-Regular Sequence That Counts The Divisors of `n^2 + 1`", Proposition 8.
 
-Stated but not proved: `MathlibExt.NumberTheory.ShakovTwoRegularWanted.prime_iff_fiber` is written with `theorem_wanted` in [WantedExt/NumberTheory/ShakovTwoRegularWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ShakovTwoRegularWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html#prime-iff-fiber).
+Stated but not proved: `MathlibExt.NumberTheory.ShakovTwoRegularWanted.prime_iff_fiber` is written with `theorem_wanted` in [WantedExt/NumberTheory/ShakovTwoRegularWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ShakovTwoRegularWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html#prime-iff-fiber).
 
 ## Shakov's sequence takes Fibonacci values along the auxiliary sequence
 
@@ -90,7 +90,7 @@ this reads $s(a(n)) = F_n$.
 
 - Anton Shakov, "A 2-Regular Sequence That Counts The Divisors of `n^2 + 1`", Proposition 9.
 
-Stated but not proved: `MathlibExt.NumberTheory.ShakovTwoRegularWanted.shakovSeq_shakovA` is written with `theorem_wanted` in [WantedExt/NumberTheory/ShakovTwoRegularWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ShakovTwoRegularWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html#shakov-seq-shakov-a).
+Stated but not proved: `MathlibExt.NumberTheory.ShakovTwoRegularWanted.shakovSeq_shakovA` is written with `theorem_wanted` in [WantedExt/NumberTheory/ShakovTwoRegularWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ShakovTwoRegularWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html#shakov-seq-shakov-a).
 
 ## Fibonacci squares plus one are eventually composite
 
@@ -105,7 +105,7 @@ In the source's numbering of the Fibonacci numbers, which is shifted by one, thi
 
 - Anton Shakov, "A 2-Regular Sequence That Counts The Divisors of `n^2 + 1`", Corollary 10.
 
-Stated but not proved: `MathlibExt.NumberTheory.ShakovTwoRegularWanted.fib_sq_add_one_composite` is written with `theorem_wanted` in [WantedExt/NumberTheory/ShakovTwoRegularWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ShakovTwoRegularWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html#fib-sq-add-one-composite).
+Stated but not proved: `MathlibExt.NumberTheory.ShakovTwoRegularWanted.fib_sq_add_one_composite` is written with `theorem_wanted` in [WantedExt/NumberTheory/ShakovTwoRegularWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ShakovTwoRegularWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html#fib-sq-add-one-composite).
 
 ## Depends on
 
@@ -114,4 +114,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Shakov's 2-regular sequence](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/numeration-automatic/shakov-s-2-regular-sequence)

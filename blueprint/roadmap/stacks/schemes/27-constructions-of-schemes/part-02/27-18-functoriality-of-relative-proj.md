@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.AlgebraicGeometry.Tag07ZGTwist.relativeProjMapTriple, Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.relativeMapDomain_mapHom_twistMap_comp, Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.domain_closedImmersion_twistEpi_of_eventually_epi, Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.domain_isIso_twistIsIso_of_eventually_isIso, Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.domain_closedImmersion_twistIsIso_of_generatedInDegreeOne
+lean: Stacks.AlgebraicGeometry.Tag07ZGTwist.relativeProjMapTriple, Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.relativeMapDomain_mapHom_twistMap_comp, Stacks.AlgebraicGeometry.Tag07ZGTwistCounterexample.exists_epi_not_isIso_relativeTwistMap, Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.domain_closedImmersion_twistEpi_of_eventually_epi, Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.domain_isIso_twistIsIso_of_eventually_isIso, Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.domain_closedImmersion_twistIsIso_of_generatedInDegreeOne
 statement: formalized
 proof: formalized
 ---
 
 # 27.18 Functoriality of relative Proj
 
-Section 27.18 of the Stacks Project, [Tag 07ZF](https://stacks.math.columbia.edu/tag/07ZF). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 27.18 of the Stacks Project, [Tag 07ZF](https://stacks.math.columbia.edu/tag/07ZF). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07ZG, a lemma
 
 [Tag 07ZG](https://stacks.math.columbia.edu/tag/07ZG) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.Tag07ZGTwist.relativeProjMapTriple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphism/TwistAlgebra.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphism/TwistAlgebra.lean#L239). The attribute's comment: “the tag in one statement: the open U(ψ) of Proj\_S(B), the morphism r\_ψ : U(ψ) ⟶ Proj\_S(A) over S, and θ as a map of ℤ-graded 𝒪\_\{U(ψ)}-algebras, together with the characterisation of all three over every affine open of the base by the triple Lemma 01MY attaches to the induced homomorphism of graded rings of sections, and the uniqueness of each”. References: EGA II (3.5.1), “partial”; EGA II (8.12.4), “special case”.
+**`Stacks.AlgebraicGeometry.Tag07ZGTwist.relativeProjMapTriple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphism/TwistAlgebra.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphism/TwistAlgebra.lean#L239). The attribute's comment: “the tag in one statement: the open U(ψ) of Proj\_S(B), the morphism r\_ψ : U(ψ) ⟶ Proj\_S(A) over S, and θ as a map of ℤ-graded 𝒪\_\{U(ψ)}-algebras, together with the characterisation of all three over every affine open of the base by the triple Lemma 01MY attaches to the induced homomorphism of graded rings of sections, and the uniqueness of each”. References: EGA II (3.5.1), “partial”; EGA II (8.12.4), “special case”.
 
 > Let `S` be a scheme, let `A` and `B` be quasi-coherent graded `𝒪_S`-algebras, set
 > `p : X = Proj_S(A) ⟶ S` and `q : Y = Proj_S(B) ⟶ S`, and let `ψ : A ⟶ B` be a homomorphism of
@@ -82,7 +82,7 @@ public theorem relativeProjMapTriple :
 
 [Tag 07ZH](https://stacks.math.columbia.edu/tag/07ZH) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.relativeMapDomain_mapHom_twistMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphism/TwistCompStatement.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphism/TwistCompStatement.lean#L107). The attribute's comment: “the tag's three assertions in one statement: the domain of the composite is the inverse image of the inner factor's domain along `r_ψ`, the morphism of the composite is the restriction of `r_ψ` followed by `r_φ`, and the maps on twists compose. The first conjunct is the intended reading `U(psi.comp phi) = r_psi^{-1}(U(phi))` of a source statement printed as `U(psi.comp phi) = r_phi^{-1}(U(psi))`, which is TYPE-INCORRECT -- `r_phi` is defined on `U(phi)` in `Proj_S(B)` and so accepts opens of `Proj_S(A)`, whereas `U(psi)` is an open of `Proj_S(C)`, the two names having been interchanged; the deviation is documented in the module docstring”.
+**`Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.relativeMapDomain_mapHom_twistMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphism/TwistCompStatement.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphism/TwistCompStatement.lean#L107). The attribute's comment: “the tag's three assertions in one statement: the domain of the composite is the inverse image of the inner factor's domain along `r_ψ`, the morphism of the composite is the restriction of `r_ψ` followed by `r_φ`, and the maps on twists compose. The first conjunct is the intended reading `U(psi.comp phi) = r_psi^{-1}(U(phi))` of a source statement printed as `U(psi.comp phi) = r_phi^{-1}(U(psi))`, which is TYPE-INCORRECT -- `r_phi` is defined on `U(phi)` in `Proj_S(B)` and so accepts opens of `Proj_S(A)`, whereas `U(psi)` is an open of `Proj_S(C)`, the two names having been interchanged; the deviation is documented in the module docstring”.
 
 > **[Stacks, Tag 07ZH].** Let `S` be a scheme, let `A`, `B` and `C` be quasi-coherent graded
 > `𝒪_S`-algebras and let `φ : A ⟶ B` and `ψ : B ⟶ C` be homomorphisms between them. Then the open,
@@ -145,7 +145,29 @@ theorem relativeMapDomain_mapHom_twistMap_comp :
 
 [Tag 07ZI](https://stacks.math.columbia.edu/tag/07ZI) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.domain_closedImmersion_twistEpi_of_eventually_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphism/TwistEventualStatement.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphism/TwistEventualStatement.lean#L87). The attribute's comment: “the tag's three assertions in one statement: under degreewise surjectivity in all large degrees the domain of definition is all of `Proj_S(B)`, the induced morphism `r_ψ` is a closed immersion, and every comparison map `θ_n` on twists is an epimorphism”. References: EGA II (2.9.2), “more general”.
+**`Stacks.AlgebraicGeometry.Tag07ZGTwistCounterexample.exists_epi_not_isIso_relativeTwistMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphism/TwistEventualCounterexample.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphism/TwistEventualCounterexample.lean#L58). The attribute's comment: “(3), second half: the maps θ are surjective but not isomorphisms in general, even if A → B is surjective — a map ψ of quasi-coherent graded algebras surjective in every degree with θ₁ not an isomorphism (A = R[x,y]/(x²), deg x = 1, deg y = 2, B = A/(x), on Spec R)”.
+
+> **[Stacks, Tag 07ZI] (3), second half.** The maps `θ_n : r_ψ^* 𝒪_X(n) ⟶ 𝒪_Y(n)` of Tag 07ZG
+> are not isomorphisms in general, even if `A → B` is surjective: there are a scheme `S`,
+> quasi-coherent graded `𝒪_S`-algebras `A` and `B` and a homomorphism `ψ : A ⟶ B` such that every
+> `ψ_n : A_n ⟶ B_n` is an epimorphism (so the hypothesis of Tag 07ZI holds in every degree), every
+> `θ_n` is an epimorphism, as the first half of assertion (3) says, and `θ_1` is not an
+> isomorphism.
+>
+> The witness is `S = Spec R` for `R = ULift ℤ`, `A = R[x, y]/(x²)` with `deg x = 1`, `deg y = 2`,
+> `B = A/(x)` and `ψ` the quotient map:
+> `Stacks.AlgebraicGeometry.ProjTwistCompare.NotIsoExample.epi_sheafHom_app`,
+> `Stacks.AlgebraicGeometry.Tag07ZGTwist.epi_relativeTwistMap_of_eventually_epi` and
+> `Stacks.AlgebraicGeometry.ProjTwistCompare.NotIsoExample.not_isIso_relativeTwistMap`.
+
+```lean
+theorem exists_epi_not_isIso_relativeTwistMap :
+    ∃ (S : Scheme.{u}) (A B : SheafGradedAlgebra S) (ψ : SheafGradedAlgebraHom A B),
+      (∀ n : ℤ, Epi (ψ.app n)) ∧ (∀ n : ℤ, Epi (relativeTwistMap ψ n)) ∧
+        ¬ IsIso (relativeTwistMap ψ ((1 : ℕ) : ℤ))
+```
+
+**`Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.domain_closedImmersion_twistEpi_of_eventually_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphism/TwistEventualStatement.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphism/TwistEventualStatement.lean#L97). The attribute's comment: “the tag's three assertions in one statement: under degreewise surjectivity in all large degrees the domain of definition is all of `Proj_S(B)`, the induced morphism `r_ψ` is a closed immersion, and every comparison map `θ_n` on twists is an epimorphism”. References: EGA II (2.9.2), “more general”.
 
 > **[Stacks, Tag 07ZI].** Let `S` be a scheme, let `A` and `B` be quasi-coherent graded
 > `𝒪_S`-algebras and let `ψ : A ⟶ B` be a homomorphism between them. If `A_d → B_d` is surjective
@@ -163,6 +185,10 @@ theorem relativeMapDomain_mapHom_twistMap_comp :
 > `Stacks.AlgebraicGeometry.RelativeProjMapDomain.isClosedImmersion_relativeMapHom_of_eventually_epi`
 > and `Stacks.AlgebraicGeometry.Tag07ZGTwist.epi_relativeTwistMap_of_eventually_epi`. The only
 > hypothesis is the source's, degreewise surjectivity in all large degrees.
+>
+> The source's assertion (3) adds that the maps `θ_n` are not isomorphisms in general, even if
+> `A → B` is surjective. That is an existence statement, not a consequence of the hypothesis, and is
+> `Stacks.AlgebraicGeometry.Tag07ZGTwistCounterexample.exists_epi_not_isIso_relativeTwistMap`.
 
 ```lean
 theorem domain_closedImmersion_twistEpi_of_eventually_epi
@@ -176,7 +202,7 @@ theorem domain_closedImmersion_twistEpi_of_eventually_epi
 
 [Tag 07ZJ](https://stacks.math.columbia.edu/tag/07ZJ) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.domain_isIso_twistIsIso_of_eventually_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphism/TwistEventualStatement.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphism/TwistEventualStatement.lean#L117). The attribute's comment: “the tag's three assertions in one statement: under degreewise invertibility in all large degrees the domain of definition is all of `Proj_S(B)`, the induced morphism `r_ψ` is an isomorphism, and every comparison map `θ_n` on twists is an isomorphism”. References: EGA II (3.6.1), “TN-bijective clause”.
+**`Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.domain_isIso_twistIsIso_of_eventually_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphism/TwistEventualStatement.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphism/TwistEventualStatement.lean#L127). The attribute's comment: “the tag's three assertions in one statement: under degreewise invertibility in all large degrees the domain of definition is all of `Proj_S(B)`, the induced morphism `r_ψ` is an isomorphism, and every comparison map `θ_n` on twists is an isomorphism”. References: EGA II (3.6.1), “TN-bijective clause”.
 
 > **[Stacks, Tag 07ZJ].** Let `S` be a scheme, let `A` and `B` be quasi-coherent graded
 > `𝒪_S`-algebras and let `ψ : A ⟶ B` be a homomorphism between them. If `A_d → B_d` is an
@@ -208,7 +234,7 @@ theorem domain_isIso_twistIsIso_of_eventually_isIso
 
 [Tag 07ZK](https://stacks.math.columbia.edu/tag/07ZK) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.domain_closedImmersion_twistIsIso_of_generatedInDegreeOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphism/TwistEventualStatement.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphism/TwistEventualStatement.lean#L149). The attribute's comment: “the tag's three assertions in one statement: under degreewise surjectivity in all large degrees and generation in degree one the domain of definition is all of `Proj_S(B)`, the induced morphism `r_ψ` is a closed immersion, and every comparison map `θ_n` on twists is an isomorphism”. References: EGA II (3.5.1), “special case”.
+**`Stacks.AlgebraicGeometry.Tag07ZGTwistStatement.domain_closedImmersion_twistIsIso_of_generatedInDegreeOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphism/TwistEventualStatement.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphism/TwistEventualStatement.lean#L159). The attribute's comment: “the tag's three assertions in one statement: under degreewise surjectivity in all large degrees and generation in degree one the domain of definition is all of `Proj_S(B)`, the induced morphism `r_ψ` is a closed immersion, and every comparison map `θ_n` on twists is an isomorphism”. References: EGA II (3.5.1), “special case”.
 
 > **[Stacks, Tag 07ZK].** Let `S` be a scheme, let `A` and `B` be quasi-coherent graded
 > `𝒪_S`-algebras and let `ψ : A ⟶ B` be a homomorphism between them. If `A_d → B_d` is surjective
@@ -246,4 +272,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.18, Tag 07ZF](https://stacks.math.columbia.edu/tag/07ZF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

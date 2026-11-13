@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.16 Cohomology on Hausdorff quasi-compact spaces
 
-Section 20.16 of the Stacks Project, [Tag 09V0](https://stacks.math.columbia.edu/tag/09V0). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.16 of the Stacks Project, [Tag 09V0](https://stacks.math.columbia.edu/tag/09V0). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09V1, a lemma
 
 [Tag 09V1](https://stacks.math.columbia.edu/tag/09V1) in the Stacks Project.
 
-**`Stacks.Cohomology.CechRefinement.isIso_colimitToCohomology_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/DegreeOneIsomorphism.lean, line 750](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/DegreeOneIsomorphism.lean#L750).
+**`Stacks.Cohomology.CechRefinement.isIso_colimitToCohomology_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/DegreeOneIsomorphism.lean, line 750](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/DegreeOneIsomorphism.lean#L750).
 
 > The canonical comparison from the first Čech cohomology of a topological space — the
 > colimit, over all open coverings, of the first Čech cohomology of the covering — to the first
@@ -30,7 +30,7 @@ theorem isIso_colimitToCohomology_one
 
 [Tag 09V2](https://stacks.math.columbia.edu/tag/09V2) in the Stacks Project.
 
-**`Stacks.Cohomology.CechRefinement.isIso_colimitToCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/HausdorffQuasiCompactIsomorphism.lean, line 857](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/HausdorffQuasiCompactIsomorphism.lean#L857). The attribute's comment: “the comparison of Stacks 09UZ is an isomorphism in every degree”.
+**`Stacks.Cohomology.CechRefinement.isIso_colimitToCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/HausdorffQuasiCompactIsomorphism.lean, line 857](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/HausdorffQuasiCompactIsomorphism.lean#L857). The attribute's comment: “the comparison of Stacks 09UZ is an isomorphism in every degree”.
 
 > **Stacks Project, Tag 09V2.** Let `X` be a Hausdorff quasi-compact topological space and
 > `F` an abelian sheaf on `X`.  The canonical comparison of Stacks 09UZ from the Čech cohomology
@@ -47,7 +47,7 @@ theorem isIso_colimitToCohomology
 
 [Tag 09V3](https://stacks.math.columbia.edu/tag/09V3) in the Stacks Project.
 
-**`Stacks.Topology.isIso_cohomologyOfClosedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/ClosedMapIso.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/ClosedMapIso.lean#L247). References: SGA 4 Vbis (4.1.3).
+**`Stacks.Topology.isIso_cohomologyOfClosedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/ClosedMapIso.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/ClosedMapIso.lean#L247). References: SGA 4 Vbis (4.1.3).
 
 > For a quasi-compact subset `Z` of a topological space `X` any two
 > distinct points of which have disjoint open neighbourhoods in `X`, the canonical map from the
@@ -60,7 +60,7 @@ theorem isIso_cohomologyOfClosedMap
     IsIso (cohomologyOfClosedMap Z F p)
 ```
 
-**`Stacks.Topology.isIso_sectionsOfClosedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/SubsetSections.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/SubsetSections.lean#L352). The attribute's comment: “degree-zero comparison for sheaves of sets”. References: SGA 4 Vbis (4.1.3), “i = 0”.
+**`Stacks.Topology.isIso_sectionsOfClosedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/SubsetSections.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/SubsetSections.lean#L352). The attribute's comment: “degree-zero comparison for sheaves of sets”. References: SGA 4 Vbis (4.1.3), “i = 0”.
 
 > For a quasi-compact subset whose distinct points have disjoint open neighbourhoods in the
 > ambient space, the canonical restriction map from the sections on the open neighbourhoods of
@@ -81,4 +81,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.16, Tag 09V0](https://stacks.math.columbia.edu/tag/09V0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

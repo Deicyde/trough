@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: MorphismOfTopoi.IsEmbedding, IsSubtopos, CategoryTheory.Sites.Subtopos.MorphismOfTopoi.isEmbedding_overLocalization_iff_isSubterminal, OpenSubtopos.IsOpenSubtopos, CategoryTheory.Sites.Subtopos.isSubtopos_closedComplement, IsClosedSubtopos, MorphismOfTopoi.IsOpenImmersion, MorphismOfTopoi.IsClosedImmersion
+lean: MorphismOfTopoi.IsEmbedding, IsSubtopos, CategoryTheory.Sites.Subtopos.MorphismOfTopoi.isEmbedding_overLocalization_iff_isSubterminal, IsOpenSubtopos, CategoryTheory.Sites.Subtopos.isSubtopos_closedComplement, IsClosedSubtopos, MorphismOfTopoi.IsClosedImmersion, MorphismOfTopoi.IsOpenImmersionOfSlicePushforward
 statement: formalized
 proof: formalized
 ---
 
 # 7.43 Subtopoi
 
-Section 7.43 of the Stacks Project, [Tag 08LT](https://stacks.math.columbia.edu/tag/08LT). 8 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 7.43 of the Stacks Project, [Tag 08LT](https://stacks.math.columbia.edu/tag/08LT). 8 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08LU, a definition
 
 [Tag 08LU](https://stacks.math.columbia.edu/tag/08LU) in the Stacks Project.
 
-**`MorphismOfTopoi.IsEmbedding`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Embedding.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/Embedding.lean#L37). References: SGA 4 IV (9.1.1), “a)”; SGA 4 IV (9.1), “embedding def”.
+**`MorphismOfTopoi.IsEmbedding`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Embedding.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/Embedding.lean#L37). References: SGA 4 IV (9.1.1), “a)”; SGA 4 IV (9.1), “embedding def”.
 
 > **Stacks Project, Definition 7.43.1 (tag 08LU).**
 >
@@ -28,7 +28,7 @@ def IsEmbedding (f : MorphismOfTopoi E F) : Prop
 
 [Tag 08LV](https://stacks.math.columbia.edu/tag/08LV) in the Stacks Project.
 
-**`IsSubtopos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Defs.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/Defs.lean#L50). References: SGA 4 IV (9.1), “subtopos def”; SGA 4 IV (9.1.1), “b)”.
+**`IsSubtopos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Defs.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/Defs.lean#L50). References: SGA 4 IV (9.1), “subtopos def”; SGA 4 IV (9.1.1), “b)”.
 
 > **Stacks Project, Definition 7.43.2 (tag 08LV).**
 >
@@ -53,7 +53,7 @@ def IsSubtopos (J : GrothendieckTopology C) (P : ObjectProperty (Sheaf J (Type w
 
 [Tag 08LW](https://stacks.math.columbia.edu/tag/08LW) in the Stacks Project.
 
-**`CategoryTheory.Sites.Subtopos.MorphismOfTopoi.isEmbedding_overLocalization_iff_isSubterminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Subtopoi.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/Subtopoi.lean#L183). The attribute's comment: “The localization j\_F : E/F ⟶ E is an embedding of topoi, i.e. E/F is a subtopos of E, if and only if F is a subobject of the final object.”. References: SGA 4 IV (9.2.1), “(9.2.2) is an embedding”; SGA 4 VI (4.1), “open inclusion j”.
+**`CategoryTheory.Sites.Subtopos.MorphismOfTopoi.isEmbedding_overLocalization_iff_isSubterminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Subtopoi.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/Subtopoi.lean#L183). The attribute's comment: “The localization j\_F : E/F ⟶ E is an embedding of topoi, i.e. E/F is a subtopos of E, if and only if F is a subobject of the final object.”. References: SGA 4 IV (9.2.1), “(9.2.2) is an embedding”; SGA 4 VI (4.1), “open inclusion j”.
 
 > **Stacks 08LW.** Let `E` be a topos and `F` an object of `E` (in the source, a sheaf on a
 > site `C`), and let `j_F : E/F ⟶ E` be the localization morphism of Stacks 04GZ, given by a right
@@ -71,28 +71,26 @@ public theorem MorphismOfTopoi.isEmbedding_overLocalization_iff_isSubterminal {E
 
 [Tag 08LX](https://stacks.math.columbia.edu/tag/08LX) in the Stacks Project.
 
-**`OpenSubtopos.IsOpenSubtopos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Open.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/Open.lean#L97).
+**`IsOpenSubtopos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/IsOpen.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/IsOpen.lean#L67). The attribute's comment: “A strictly full subcategory E of Sh(C) is an open subtopos if there is a subsheaf F of the final object such that E is the essential image of the pushforward j\_\{F,*} of the localization morphism j\_F : Sh(C)/F → Sh(C), the right adjoint of H ↦ H × F / F.”.
 
-> **Open subtopos.**
+> **Stacks Project, Definition 7.43.4 (tag 08LX).**
 >
-> A strictly full subcategory `E ⊂ Sh(C)`, modelled as an
-> `ObjectProperty (Sheaf J (Type w))` closed under isomorphisms, is an
-> *open subtopos* of `Sh(C)` if there exists a subsheaf `F` of the terminal
-> sheaf such that `E` is the subtopos `Sh(C)/F`. We capture "`E` is the
-> subtopos `Sh(C)/F`" by an equivalence of categories
-> `P.FullSubcategory ≌ Over F` compatible with the inclusion `P.ι` into
-> `Sh(C)` and the canonical forgetful functor `Over.forget F`.
+> A strictly full subcategory `E ⊆ Sh(C, J)`, given by the property `P` of its objects, is an
+> *open subtopos* if there is a subsheaf `F` of the final object of `Sh(C, J)` such that `E` is
+> the subtopos `Sh(C, J)/F` of Stacks 08LW, that is, the essential image of the pushforward
+> `j_{F,*} : Sh(C, J)/F ⥤ Sh(C, J)` of the localization morphism `j_F`. Here `j_{F,*}` is a right
+> adjoint `p` of the pullback `j_F⁻¹ = toOver F : H ↦ (H × F ⟶ F)`.
 
 ```lean
-def IsOpenSubtopos [Limits.HasTerminal (Sheaf J (Type w))]
-    (P : ObjectProperty (Sheaf J (Type w))) : Prop
+def IsOpenSubtopos (J : GrothendieckTopology C) (P : ObjectProperty (Sheaf J (Type w))) :
+    Prop
 ```
 
 ## Tag 08LY, a lemma
 
 [Tag 08LY](https://stacks.math.columbia.edu/tag/08LY) in the Stacks Project.
 
-**`CategoryTheory.Sites.Subtopos.isSubtopos_closedComplement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Subtopoi.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/Subtopoi.lean#L585). The attribute's comment: “The full subcategory of sheaves G with F ⨯ G ⟶ F an isomorphism is a subtopos of Sh(C). Stated for an arbitrary sheaf F, the source's hypothesis that F be a subsheaf of the final object being unused in its proof.”. References: SGA 4 IV (9.3.1), “for any topos and open U”; SGA 4 IV (9.3.4), “partial”; SGA 4 VI (4.1), “partial”.
+**`CategoryTheory.Sites.Subtopos.isSubtopos_closedComplement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Subtopoi.lean, line 585](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/Subtopoi.lean#L585). The attribute's comment: “The full subcategory of sheaves G with F ⨯ G ⟶ F an isomorphism is a subtopos of Sh(C). Stated for an arbitrary sheaf F, the source's hypothesis that F be a subsheaf of the final object being unused in its proof.”. References: SGA 4 IV (9.3.1), “for any topos and open U”; SGA 4 IV (9.3.4), “partial”; SGA 4 VI (4.1), “partial”.
 
 > **Stacks Project, Lemma 7.43.5 (tag 08LY).** Let `(C, J)` be a site and let `F` be a sheaf
 > of sets on it. The strictly full subcategory `closedComplement F` of `Sh(C, J)`, consisting of
@@ -113,7 +111,7 @@ public theorem isSubtopos_closedComplement {C : Type u} [Category.{v} C]
 
 [Tag 08LZ](https://stacks.math.columbia.edu/tag/08LZ) in the Stacks Project.
 
-**`IsClosedSubtopos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Closed.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/Closed.lean#L46). References: SGA 4 IV (9.3.1), “closed subtopos defn”; SGA 4 IV (9.3.5), “closed subtopos”.
+**`IsClosedSubtopos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Closed.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/Closed.lean#L46). References: SGA 4 IV (9.3.1), “closed subtopos defn”; SGA 4 IV (9.3.5), “closed subtopos”.
 
 > **Stacks Project, Definition 7.43.6 (tag 08LZ).**
 >
@@ -131,18 +129,7 @@ def IsClosedSubtopos (J : GrothendieckTopology C) (P : ObjectProperty (Sheaf J (
 
 [Tag 08M0](https://stacks.math.columbia.edu/tag/08M0) in the Stacks Project.
 
-**`MorphismOfTopoi.IsOpenImmersion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Immersions.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/Immersions.lean#L36). References: SGA 4 IV (9.2.1), “open embedding def”.
-
-> **Stacks Project, Definition 7.43.7(1) (tag 08M0).**
->
-> A morphism of topoi `f : Sh(D, K) → Sh(C, J)` is an *open immersion* if it is an embedding and
-> the essential image of `f_*` is an open subtopos of `Sh(C, J)`.
-
-```lean
-def IsOpenImmersion (f : MorphismOfTopoi (Sheaf K (Type w)) (Sheaf J (Type w))) : Prop
-```
-
-**`MorphismOfTopoi.IsClosedImmersion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Immersions.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/Immersions.lean#L44). References: SGA 4 IV (9.3.5), “closed embedding”.
+**`MorphismOfTopoi.IsClosedImmersion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Immersions.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/Immersions.lean#L52). The attribute's comment: “(2) closed immersion; part (1) is MorphismOfTopoi.IsOpenImmersionOfSlicePushforward”. References: SGA 4 IV (9.3.5), “closed embedding”.
 
 > **Stacks Project, Definition 7.43.7(2) (tag 08M0).**
 >
@@ -153,11 +140,25 @@ def IsOpenImmersion (f : MorphismOfTopoi (Sheaf K (Type w)) (Sheaf J (Type w))) 
 def IsClosedImmersion (f : MorphismOfTopoi (Sheaf K (Type w)) (Sheaf J (Type w))) : Prop
 ```
 
+**`MorphismOfTopoi.IsOpenImmersionOfSlicePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/OpenImmersion.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/OpenImmersion.lean#L98). The attribute's comment: “(1) open immersion; part (2) is MorphismOfTopoi.IsClosedImmersion”.
+
+> **Stacks Project, Definition 7.43.7(1) (tag 08M0).**
+>
+> A morphism of topoi `f : Sh(D, K) → Sh(C, J)` is an *open immersion* if it is an embedding and
+> the essential image of `f_*` is an open subtopos of `Sh(C, J)`: the essential image of the
+> pushforward `j_{F,*}` of the localization `j_F : Sh(C)/F → Sh(C)` at a subsheaf `F` of the
+> final sheaf. Part (2) of the definition is `MorphismOfTopoi.IsClosedImmersion`.
+
+```lean
+def IsOpenImmersionOfSlicePushforward
+    (f : MorphismOfTopoi (Sheaf K (Type w)) (Sheaf J (Type w))) : Prop
+```
+
 ## Tag 08M1, a lemma
 
 [Tag 08M1](https://stacks.math.columbia.edu/tag/08M1) in the Stacks Project.
 
-**`MorphismOfTopoi.IsClosedImmersion.fullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean#L174).
+**`MorphismOfTopoi.IsClosedImmersion.fullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean#L174).
 
 > The pushforward of a closed immersion of topoi is fully faithful. This is the first
 > assertion of Stacks 08M1; it already holds for an embedding.
@@ -166,7 +167,7 @@ def IsClosedImmersion (f : MorphismOfTopoi (Sheaf K (Type w)) (Sheaf J (Type w))
 noncomputable def fullyFaithful (hi : i.IsClosedImmersion) : i.pushforward.FullyFaithful
 ```
 
-**`MorphismOfTopoi.IsClosedImmersion.preservesColimitsOfShape_walkingParallelPair`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean#L197).
+**`MorphismOfTopoi.IsClosedImmersion.preservesColimitsOfShape_walkingParallelPair`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean#L197).
 
 > **Stacks Project, Lemma 7.43.8 (tag 08M1).** The pushforward of a closed immersion of
 > topoi commutes with coequalizers.
@@ -176,7 +177,7 @@ lemma preservesColimitsOfShape_walkingParallelPair (hi : i.IsClosedImmersion) :
     PreservesColimitsOfShape WalkingParallelPair i.pushforward
 ```
 
-**`MorphismOfTopoi.IsClosedImmersion.preservesColimitsOfShape_walkingSpan`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean#L204).
+**`MorphismOfTopoi.IsClosedImmersion.preservesColimitsOfShape_walkingSpan`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean#L204).
 
 > **Stacks Project, Lemma 7.43.8 (tag 08M1).** The pushforward of a closed immersion of
 > topoi commutes with pushouts.
@@ -186,7 +187,7 @@ lemma preservesColimitsOfShape_walkingSpan (hi : i.IsClosedImmersion) :
     PreservesColimitsOfShape WalkingSpan i.pushforward
 ```
 
-**`MorphismOfTopoi.IsClosedImmersion.preservesEpimorphisms`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean#L211).
+**`MorphismOfTopoi.IsClosedImmersion.preservesEpimorphisms`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean#L211).
 
 > **Stacks Project, Lemma 7.43.8 (tag 08M1).** The pushforward of a closed immersion of
 > topoi transforms surjections into surjections.
@@ -196,7 +197,7 @@ lemma preservesEpimorphisms (hi : i.IsClosedImmersion) :
     i.pushforward.PreservesEpimorphisms
 ```
 
-**`MorphismOfTopoi.IsClosedImmersion.reflectsMonomorphisms`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean#L221).
+**`MorphismOfTopoi.IsClosedImmersion.reflectsMonomorphisms`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean#L221).
 
 > **Stacks Project, Lemma 7.43.8 (tag 08M1).** The pushforward of a closed immersion of
 > topoi reflects injections.
@@ -206,7 +207,7 @@ lemma reflectsMonomorphisms (hi : i.IsClosedImmersion) :
     i.pushforward.ReflectsMonomorphisms
 ```
 
-**`MorphismOfTopoi.IsClosedImmersion.reflectsEpimorphisms`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean#L229).
+**`MorphismOfTopoi.IsClosedImmersion.reflectsEpimorphisms`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean#L229).
 
 > **Stacks Project, Lemma 7.43.8 (tag 08M1).** The pushforward of a closed immersion of
 > topoi reflects surjections.
@@ -216,7 +217,7 @@ lemma reflectsEpimorphisms (hi : i.IsClosedImmersion) :
     i.pushforward.ReflectsEpimorphisms
 ```
 
-**`MorphismOfTopoi.IsClosedImmersion.reflectsIsomorphisms`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean#L237).
+**`MorphismOfTopoi.IsClosedImmersion.reflectsIsomorphisms`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Subtopos/ClosedImmersion.lean#L237).
 
 > **Stacks Project, Lemma 7.43.8 (tag 08M1).** The pushforward of a closed immersion of
 > topoi reflects bijections.
@@ -233,4 +234,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.43, Tag 08LT](https://stacks.math.columbia.edu/tag/08LT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

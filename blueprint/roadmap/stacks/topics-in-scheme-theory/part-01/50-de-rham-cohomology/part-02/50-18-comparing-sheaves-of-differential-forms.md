@@ -8,13 +8,13 @@ proof: formalized
 
 # 50.18 Comparing sheaves of differential forms
 
-Section 50.18 of the Stacks Project, [Tag 0FL7](https://stacks.math.columbia.edu/tag/0FL7). 6 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 50.18 of the Stacks Project, [Tag 0FL7](https://stacks.math.columbia.edu/tag/0FL7). 6 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FL8, a lemma
 
 [Tag 0FL8](https://stacks.math.columbia.edu/tag/0FL8) in the Stacks Project.
 
-**`Stacks.DeRham.exists_funnyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean, line 962](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean#L962). The attribute's comment: “top-wedge construction”.
+**`Stacks.DeRham.exists_funnyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean, line 962](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean#L962). The attribute's comment: “top-wedge construction”.
 
 > The top-wedge construction descends to `⋀ᵖ(L / d(M⁻¹))`, independently of both the
 > retraction and the basis: there is a family of maps whose value on the image of every
@@ -36,7 +36,7 @@ theorem exists_funnyMap (n : ℕ)
             funnyMapLift p n r π d b η
 ```
 
-**`Stacks.DeRham.funnyMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean, line 996](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean#L996). The attribute's comment: “canonical maps”.
+**`Stacks.DeRham.funnyMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean, line 996](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean#L996). The attribute's comment: “canonical maps”.
 
 > The canonical maps `cᵖ : ⋀ᵖ(L / d(M⁻¹)) → ⋀ᵖK ⊗ det(M⁻¹ → M⁰)` attached to the exact
 > two-term diagram, characterized by `funnyMap_apply_lift`.
@@ -53,7 +53,7 @@ noncomputable def funnyMap (n : ℕ)
       (⋀[R]^p K) ⊗[R] twoTermDeterminant R n Mneg Mzero
 ```
 
-**`Stacks.DeRham.funnyMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean, line 1026](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean#L1026). The attribute's comment: “restriction to K”.
+**`Stacks.DeRham.funnyMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean, line 1026](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean#L1026). The attribute's comment: “restriction to K”.
 
 > Restricting the degree-`p` canonical map to `K` is tensoring with the determinant
 > element.
@@ -71,7 +71,7 @@ theorem funnyMap_comp (n p : ℕ)
       ω ⊗ₜ[R] twoTermDeterminantElement R dM hneg
 ```
 
-**`Stacks.DeRham.funnyMap_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean, line 1082](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean#L1082). The attribute's comment: “degree zero”.
+**`Stacks.DeRham.funnyMap_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean, line 1082](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean#L1082). The attribute's comment: “degree zero”.
 
 > In degree zero, the canonical map takes `1` to the determinant element.
 
@@ -89,7 +89,7 @@ theorem funnyMap_zero (n : ℕ)
         twoTermDeterminantElement R dM hneg
 ```
 
-**`Stacks.DeRham.funnyMap_wedge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean, line 1104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean#L1104). The attribute's comment: “wedge compatibility”.
+**`Stacks.DeRham.funnyMap_wedge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean, line 1104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/FunnyMap.lean#L1104). The attribute's comment: “wedge compatibility”.
 
 > The canonical maps commute with wedging on the left by an exterior power of `K`.
 
@@ -114,7 +114,7 @@ theorem funnyMap_wedge (n q p : ℕ)
 
 [Tag 0H9F](https://stacks.math.columbia.edu/tag/0H9F) in the Stacks Project.
 
-**`Stacks.DeRham.funnyMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Complex/FunnyMapNaturality.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Complex/FunnyMapNaturality.lean#L41).
+**`Stacks.DeRham.funnyMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Complex/FunnyMapNaturality.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Complex/FunnyMapNaturality.lean#L41).
 
 > The canonical maps `Stacks.DeRham.funnyMap` are natural for compatible morphisms of two-term
 > diagrams, provided the two terms of the complex are carried isomorphically to their scalar
@@ -189,7 +189,7 @@ theorem funnyMap_naturality
 
 [Tag 0FL9](https://stacks.math.columbia.edu/tag/0FL9) in the Stacks Project.
 
-**`Stacks.DeRham.presentationFunnyMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean#L336). The attribute's comment: “canonical maps”.
+**`Stacks.DeRham.presentationFunnyMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean#L336). The attribute's comment: “canonical maps”.
 
 > The canonical maps on absolute differential forms associated to a square presentation of `B`
 > over `A` which is a relative global complete intersection:
@@ -202,7 +202,7 @@ noncomputable def presentationFunnyMap (p : ℕ) :
         twoTermDeterminant B n P.toExtension.Cotangent P.toExtension.CotangentSpace
 ```
 
-**`Stacks.DeRham.presentationFunnyMap_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean#L345). The attribute's comment: “degree zero”.
+**`Stacks.DeRham.presentationFunnyMap_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean#L345). The attribute's comment: “degree zero”.
 
 > In degree zero the canonical map takes the unit to the determinant element of the relative
 > naive cotangent complex.
@@ -214,7 +214,7 @@ theorem presentationFunnyMap_zero :
         cotangentDeterminantElement P
 ```
 
-**`Stacks.DeRham.presentationFunnyMap_wedge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean#L354). The attribute's comment: “wedge compatibility”.
+**`Stacks.DeRham.presentationFunnyMap_wedge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean#L354). The attribute's comment: “wedge compatibility”.
 
 > The canonical maps commute with wedging by a base-changed absolute differential form
 > on `A`.
@@ -230,7 +230,7 @@ theorem presentationFunnyMap_wedge (q p : ℕ) (ω : ⋀[B]^q (B ⊗[A] Ω[A⁄�
         (presentationFunnyMap P p η)
 ```
 
-**`Stacks.DeRham.presentationFunnyMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean#L367). The attribute's comment: “composition with pullback”.
+**`Stacks.DeRham.presentationFunnyMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean#L367). The attribute's comment: “composition with pullback”.
 
 > Composing the canonical map on forms with pullback from `A` is multiplication by the
 > determinant element of the relative naive cotangent complex.
@@ -242,7 +242,7 @@ theorem presentationFunnyMap_comp (p : ℕ) (ω : ⋀[B]^p (B ⊗[A] Ω[A⁄ℤ]
       ω ⊗ₜ[B] cotangentDeterminantElement P
 ```
 
-**`Algebra.isRelativeGlobalCompleteIntersection_of_quasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/QuasiFinite.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/QuasiFinite.lean#L60). The attribute's comment: “the source's `B` is a relative global complete intersection over `A`, at the level of the algebra; the presentation-level form, which is what the rest of the remark uses, is `Algebra.Presentation.isRelativeGlobalCompleteIntersection_of_quasiFinite`”.
+**`Algebra.isRelativeGlobalCompleteIntersection_of_quasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/QuasiFinite.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/QuasiFinite.lean#L60). The attribute's comment: “the source's `B` is a relative global complete intersection over `A`, at the level of the algebra; the presentation-level form, which is what the rest of the remark uses, is `Algebra.Presentation.isRelativeGlobalCompleteIntersection_of_quasiFinite`”.
 
 > A quasi-finite `A`-algebra `B` admitting a presentation
 > `B = A[x_1, …, x_n]/(f_1, …, f_n)` by as many relations as variables is a relative global
@@ -256,15 +256,15 @@ theorem isRelativeGlobalCompleteIntersection_of_quasiFinite {n : ℕ}
 
 Declarations registered for the tag:
 
-- [`Algebra.Presentation.exists_basis_cotangent_relation`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean#L981), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean#L62) (StacksFrontier): “conormal basis”.
-- [`Stacks.DeRham.cotangentDiagram`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean#L192), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescriptionQuasiFinite.lean, line 31](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescriptionQuasiFinite.lean#L31) (StacksFrontier): “the displayed diagram itself, instantiated at a square presentation which is a relative global complete intersection: the short exact sequence 0 -> B (x)\_A Omega\_\{A/Z} -> B (x)\_P Omega\_\{P/Z} -> Omega\_\{P/A} (x)\_P B -> 0 of B-modules whose outer terms are free of rank n, the two-term complex out of the conormal module into it, the commuting square identifying that complex with the cotangent complex of the presentation, and the identification of the cokernel with Omega\_\{B/Z} under which the base-change map from Omega\_\{A/Z} becomes the quotient map. The type of such diagrams is the structure Stacks.DeRham.CotangentDiagram; this is the witness, so the diagram is exhibited and not just described”.
-- [`Algebra.Presentation.isRelativeGlobalCompleteIntersection_of_quasiFinite`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/QuasiFinite.lean#L103), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/CompleteIntersection/QuasiFinite.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/QuasiFinite.lean#L39) (StacksFrontier): “the relative global complete intersection: the source's `A → B` quasi-finite is `Algebra.QuasiFinite A B`, which for an algebra with a finite presentation is its Definition 00PL, and `B = A[x_1, …, x_n]/(f_1, …, f_n)` is a presentation with `Nat.card σ = Nat.card ι`”.
+- [`Algebra.Presentation.exists_basis_cotangent_relation`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean#L981), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean#L62) (StacksFrontier): “conormal basis”.
+- [`Stacks.DeRham.cotangentDiagram`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescription.lean#L192), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescriptionQuasiFinite.lean, line 31](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Complex/LocalDescriptionQuasiFinite.lean#L31) (StacksFrontier): “the displayed diagram itself, instantiated at a square presentation which is a relative global complete intersection: the short exact sequence 0 -> B (x)\_A Omega\_\{A/Z} -> B (x)\_P Omega\_\{P/Z} -> Omega\_\{P/A} (x)\_P B -> 0 of B-modules whose outer terms are free of rank n, the two-term complex out of the conormal module into it, the commuting square identifying that complex with the cotangent complex of the presentation, and the identification of the cokernel with Omega\_\{B/Z} under which the base-change map from Omega\_\{A/Z} becomes the quotient map. The type of such diagrams is the structure Stacks.DeRham.CotangentDiagram; this is the witness, so the diagram is exhibited and not just described”.
+- [`Algebra.Presentation.isRelativeGlobalCompleteIntersection_of_quasiFinite`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/QuasiFinite.lean#L103), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/CompleteIntersection/QuasiFinite.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/QuasiFinite.lean#L39) (StacksFrontier): “the relative global complete intersection: the source's `A → B` quasi-finite is `Algebra.QuasiFinite A B`, which for an algebra with a finite presentation is its Definition 00PL, and `B = A[x_1, …, x_n]/(f_1, …, f_n)` is a presentation with `Nat.card σ = Nat.card ι`”.
 
 ## Tag 0H9G, a lemma
 
 [Tag 0H9G](https://stacks.math.columbia.edu/tag/0H9G) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.GarelMaps.subsingleton_isCompatible_detNLPullbackIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Comparison/Uniqueness.lean, line 881](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Comparison/Uniqueness.lean#L881). The attribute's comment: “at most one collection c'^p satisfying 0H9C and 0H9D compatible with c through the square, using the 07HX maps and the 0FKB identification b^*det(NL\_\{Y/X}) = det(NL\_\{Y'/X'})”.
+**`AlgebraicGeometry.Scheme.Hom.GarelMaps.subsingleton_isCompatible_detNLPullbackIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Comparison/Uniqueness.lean, line 881](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Comparison/Uniqueness.lean#L881). The attribute's comment: “at most one collection c'^p satisfying 0H9C and 0H9D compatible with c through the square, using the 07HX maps and the 0FKB identification b^*det(NL\_\{Y/X}) = det(NL\_\{Y'/X'})”.
 
 > **Stacks Project, Lemma 0H9G.** Consider a commutative square `b ≫ f = f' ≫ a` of schemes
 > which induces an isomorphism of `Y'` with an open subscheme of `X' ×_X Y`, with `f` locally
@@ -292,7 +292,7 @@ theorem GarelMaps.subsingleton_isCompatible_detNLPullbackIso (w : b ≫ f = f' �
 
 [Tag 0H9H](https://stacks.math.columbia.edu/tag/0H9H) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.exists_garelMaps_isCompatible_resLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Comparison/LocalCompatibility.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Comparison/LocalCompatibility.lean#L73). The attribute's comment: “for every y' there are opens V' ∋ y', V, U', U of the square and maps c^p\_\{V/U}, c^p\_\{V'/U'} satisfying 0H9C and 0H9D compatible in the sense of 0H9G”.
+**`AlgebraicGeometry.Scheme.Hom.exists_garelMaps_isCompatible_resLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Comparison/LocalCompatibility.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Comparison/LocalCompatibility.lean#L73). The attribute's comment: “for every y' there are opens V' ∋ y', V, U', U of the square and maps c^p\_\{V/U}, c^p\_\{V'/U'} satisfying 0H9C and 0H9D compatible in the sense of 0H9G”.
 
 > **Stacks Project, Lemma 0H9H.** Let `b ≫ f = f' ≫ a` be a commutative square of schemes
 > which induces an isomorphism of `Y'` with an open subscheme of `X' ×_X Y`, with `f` locally
@@ -332,7 +332,7 @@ theorem exists_garelMaps_isCompatible_resLE (w : b ≫ f = f' ≫ a)
 
 [Tag 0FLA](https://stacks.math.columbia.edu/tag/0FLA) in the Stacks Project.
 
-**`AlgebraicGeometry.GarelRule.existsUnique_isNormalized_isMultiplicative_isCompatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Comparison/ExistenceBaseChange.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Comparison/ExistenceBaseChange.lean#L335). The attribute's comment: “the unique rule c^p\_\{Y/X} satisfying 0H9C, 0H9D and 0H9E, and its composition with f^*Ω^p\_\{X/Z} → Ω^p\_\{Y/Z} is multiplication by δ(NL\_\{Y/X})”.
+**`AlgebraicGeometry.GarelRule.existsUnique_isNormalized_isMultiplicative_isCompatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Comparison/ExistenceBaseChange.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Comparison/ExistenceBaseChange.lean#L323). The attribute's comment: “the unique rule c^p\_\{Y/X} satisfying 0H9C, 0H9D and 0H9E, and its composition with f^*Ω^p\_\{X/Z} → Ω^p\_\{Y/Z} is multiplication by δ(NL\_\{Y/X})”.
 
 > There exists a unique rule that to every locally quasi-finite syntomic morphism of schemes
 > `f : Y ⟶ X` assigns `𝒪_Y`-module maps
@@ -357,4 +357,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 50.18, Tag 0FL7](https://stacks.math.columbia.edu/tag/0FL7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

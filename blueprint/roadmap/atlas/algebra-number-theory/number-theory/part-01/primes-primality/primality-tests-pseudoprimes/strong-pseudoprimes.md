@@ -7,7 +7,7 @@ statement: formalized
 
 # Strong pseudoprimes
 
-19 results, 7 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html).
+19 results, 7 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html).
 
 ## Strong pseudoprime
 
@@ -25,7 +25,7 @@ through its residue class modulo $n$.
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Section 1, Congruences (2) and (3).
 
-Formalized by `MetaMathlibExt.IsStrongPseudoprime`, a definition declared in [MathlibExt/NumberTheory/StrongPseudoprime.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/StrongPseudoprime.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-strong-pseudoprime).
+Formalized by `MetaMathlibExt.IsStrongPseudoprime`, a definition declared in [MathlibExt/NumberTheory/StrongPseudoprime.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/StrongPseudoprime.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-strong-pseudoprime).
 
 ## 2047 is a strong pseudoprime to base 2
 
@@ -38,7 +38,7 @@ Indeed $2046 = 2 \cdot 1023$ with $1023$ odd, and $2^{1023} = (2^{11})^{93} = 1$
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Section 1 (first strong pseudoprime to base 2 in the list given there).
 
-Formalized by `MetaMathlibExt.isStrongPseudoprime_2047_two`, a theorem declared in [MathlibExt/NumberTheory/StrongPseudoprime.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/StrongPseudoprime.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-strong-pseudoprime-2047-two).
+Formalized by `MetaMathlibExt.isStrongPseudoprime_2047_two`, a theorem declared in [MathlibExt/NumberTheory/StrongPseudoprime.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/StrongPseudoprime.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-strong-pseudoprime-2047-two).
 
 ## Every odd composite is a strong pseudoprime to base 1
 
@@ -49,7 +49,7 @@ is a strong pseudoprime to the base $1$.
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, proof of Theorem 6 ("every composite `n` is spsp(1)").
 
-Formalized by `MetaMathlibExt.isStrongPseudoprime_one`, a theorem declared in [MathlibExt/NumberTheory/StrongPseudoprime.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/StrongPseudoprime.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-strong-pseudoprime-one).
+Formalized by `MetaMathlibExt.isStrongPseudoprime_one`, a theorem declared in [MathlibExt/NumberTheory/StrongPseudoprime.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/StrongPseudoprime.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-strong-pseudoprime-one).
 
 ## Unfolded definition of strong pseudoprimes
 
@@ -58,28 +58,28 @@ class modulo $n$. Then $n$ is a strong pseudoprime to the base $b$ if and only i
 not prime, $n$ is odd, and there are natural numbers $k$ and $d$ with $n - 1 = 2^k d$ and $d$ odd
 such that $b^d = 1$ or $b^{2^i d} = -1$ in $\mathbb{Z}/n\mathbb{Z}$ for some $i < k$.
 
-Formalized by `MetaMathlibExt.isStrongPseudoprime_iff`, a theorem declared in [MathlibExt/NumberTheory/StrongPseudoprime.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/StrongPseudoprime.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-strong-pseudoprime-iff).
+Formalized by `MetaMathlibExt.isStrongPseudoprime_iff`, a theorem declared in [MathlibExt/NumberTheory/StrongPseudoprime.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/StrongPseudoprime.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-strong-pseudoprime-iff).
 
 ## Strong pseudoprimes exceed one
 
 If $n$ is a strong pseudoprime to some base $b$ modulo
 $n$, then $n > 1$.
 
-Formalized by `MetaMathlibExt.IsStrongPseudoprime.one_lt`, a theorem declared in [MathlibExt/NumberTheory/StrongPseudoprime.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/StrongPseudoprime.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#one-lt).
+Formalized by `MetaMathlibExt.IsStrongPseudoprime.one_lt`, a theorem declared in [MathlibExt/NumberTheory/StrongPseudoprime.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/StrongPseudoprime.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#one-lt).
 
 ## Strong pseudoprimes are not prime
 
 If $n$ is a strong pseudoprime to some base $b$
 modulo $n$, then $n$ is not prime.
 
-Formalized by `MetaMathlibExt.IsStrongPseudoprime.not_prime`, a theorem declared in [MathlibExt/NumberTheory/StrongPseudoprime.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/StrongPseudoprime.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#not-prime).
+Formalized by `MetaMathlibExt.IsStrongPseudoprime.not_prime`, a theorem declared in [MathlibExt/NumberTheory/StrongPseudoprime.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/StrongPseudoprime.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#not-prime).
 
 ## Strong pseudoprimes are odd
 
 If $n$ is a strong pseudoprime to some base $b$ modulo $n$,
 then $n$ is odd.
 
-Formalized by `MetaMathlibExt.IsStrongPseudoprime.odd`, a theorem declared in [MathlibExt/NumberTheory/StrongPseudoprime.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/StrongPseudoprime.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#odd).
+Formalized by `MetaMathlibExt.IsStrongPseudoprime.odd`, a theorem declared in [MathlibExt/NumberTheory/StrongPseudoprime.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/StrongPseudoprime.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#odd).
 
 ## Number of Fermat pseudoprime bases (Monier; Baillie–Wagstaff)
 
@@ -92,7 +92,7 @@ $\prod_p \gcd(n - 1, p - 1)$, where $p$ runs over the distinct prime divisors of
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.card_fermatPsp_bases_eq_prod_gcd` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#card-fermat-psp-bases-eq-prod-gcd).
+Stated but not proved: `MetaMathlibExt.card_fermatPsp_bases_eq_prod_gcd` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#card-fermat-psp-bases-eq-prod-gcd).
 
 ## Products of two distinct primes have a square number of Fermat pseudoprime bases
 
@@ -105,7 +105,7 @@ square.
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.isSquare_card_fermatPsp_bases_mul_of_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-square-card-fermat-psp-bases-mul-of-p).
+Stated but not proved: `MetaMathlibExt.isSquare_card_fermatPsp_bases_mul_of_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-square-card-fermat-psp-bases-mul-of-p).
 
 ## Monier's formula for the number of strong pseudoprime bases
 
@@ -123,7 +123,7 @@ where the product runs over the distinct prime divisors $p$ of $n$.
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 3, Formula (5).
 
-Stated but not proved: `MetaMathlibExt.card_strongPseudoprime_bases` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#card-strong-pseudoprime-bases).
+Stated but not proved: `MetaMathlibExt.card_strongPseudoprime_bases` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#card-strong-pseudoprime-bases).
 
 ## When the strong pseudoprime bases form a subgroup
 
@@ -141,7 +141,7 @@ or $n$ is a prime power.
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.strongPseudoprime_bases_subgroup_tfae` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#strong-pseudoprime-bases-subgroup-tfae).
+Stated but not proved: `MetaMathlibExt.strongPseudoprime_bases_subgroup_tfae` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#strong-pseudoprime-bases-subgroup-tfae).
 
 ## Strong pseudoprime bases almost always form a subgroup
 
@@ -153,7 +153,7 @@ pseudoprime to the base $b$ do not form a subgroup of the unit group has natural
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.hasDensity_zero_strongPseudoprime_bases_not_subgroup` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#has-density-zero-strong-pseudoprime-base).
+Stated but not proved: `MetaMathlibExt.hasDensity_zero_strongPseudoprime_bases_not_subgroup` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#has-density-zero-strong-pseudoprime-base).
 
 ## The subgroup criteria for strong pseudoprime bases hold almost always
 
@@ -171,7 +171,7 @@ numbers $n$ for which at least one of (a)–(d) fails has natural density $0$.
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.hasDensity_zero_strongPseudoprime_bases_conditions_fail` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#has-density-zero-strong-pseudoprime-base-2).
+Stated but not proved: `MetaMathlibExt.hasDensity_zero_strongPseudoprime_bases_conditions_fail` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#has-density-zero-strong-pseudoprime-base-2).
 
 ## Composite divisors of primitive parts without their intrinsic factor are strong pseudoprimes
 
@@ -188,7 +188,7 @@ dividing by the greatest common divisor with $m$ removes the intrinsic prime fac
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.isStrongPseudoprime_of_dvd_primitivePart` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-strong-pseudoprime-of-dvd-primitive-p).
+Stated but not proved: `MetaMathlibExt.isStrongPseudoprime_of_dvd_primitivePart` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-strong-pseudoprime-of-dvd-primitive-p).
 
 ## Composite divisors of primitive parts without the intrinsic factor are strong pseudoprimes to every power of the base
 
@@ -206,7 +206,7 @@ removed.
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.isStrongPseudoprime_zpow_of_dvd_primitivePart` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-strong-pseudoprime-zpow-of-dvd-primit).
+Stated but not proved: `MetaMathlibExt.isStrongPseudoprime_zpow_of_dvd_primitivePart` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-strong-pseudoprime-zpow-of-dvd-primit).
 
 ## Strong pseudoprime bases are closed under powers and negation
 
@@ -222,7 +222,7 @@ $b^{n-1} = 1$; it also gives meaning to negative exponents.
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.isStrongPseudoprime_zpow_and_neg` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-strong-pseudoprime-zpow-and-neg).
+Stated but not proved: `MetaMathlibExt.isStrongPseudoprime_zpow_and_neg` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#is-strong-pseudoprime-zpow-and-neg).
 
 ## Composite Fermat numbers are strong pseudoprimes to every power of $2$
 
@@ -235,7 +235,7 @@ unit group of $\mathbb{Z}/F_k\mathbb{Z}$ (in which $2$ is a unit because $F_k$ i
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.fermatNumber_isStrongPseudoprime_two_zpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#fermat-number-is-strong-pseudoprime-two).
+Stated but not proved: `MetaMathlibExt.fermatNumber_isStrongPseudoprime_two_zpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#fermat-number-is-strong-pseudoprime-two).
 
 ## Strong pseudoprime bases $2^{2^{k-1}+t} \pm 2^t$ of composite Fermat numbers
 
@@ -248,7 +248,7 @@ $2^{2^{k-1}+t} - 2^t$, computed modulo $F_k$.
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.fermatNumber_isStrongPseudoprime_two_pow_add_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#fermat-number-is-strong-pseudoprime-two-2).
+Stated but not proved: `MetaMathlibExt.fermatNumber_isStrongPseudoprime_two_pow_add_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#fermat-number-is-strong-pseudoprime-two-2).
 
 ## A subgroup of strong pseudoprime bases of a composite Fermat number
 
@@ -266,7 +266,7 @@ subgroup is cyclic for $k = 5$.
 
 - Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.fermatNumber_strongPseudoprime_bases_subgroup` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#fermat-number-strong-pseudoprime-bases-s).
+Stated but not proved: `MetaMathlibExt.fermatNumber_strongPseudoprime_bases_subgroup` is written with `theorem_wanted` in [WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PseudoprimeBasesFermatNumbersWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html#fermat-number-strong-pseudoprime-bases-s).
 
 ## Depends on
 
@@ -275,4 +275,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Strong pseudoprimes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/strong-pseudoprimes)

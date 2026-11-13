@@ -7,7 +7,7 @@ statement: formalized
 
 # Ramanujan's binomial–harmonic identity
 
-6 results, 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html).
+6 results, 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html).
 
 ## Shifted binomial–harmonic convolution (Alzer–Kwong, Corollary 1)
 
@@ -25,7 +25,7 @@ where $H_m = \sum_{j=1}^{m} 1/j$ is the $m$-th harmonic number.
 
 - Horst Alzer and Man Kam Kwong, "Ramanujan and a Combinatorial Identity Involving Harmonic Numbers", Corollary 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.RamanujanHarmonicIdentityWanted.sum_choose_sub_choose_mul_harmonic_succ_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html#sum-choose-sub-choose-mul-harmonic-succ).
+Stated but not proved: `MathlibExt.NumberTheory.RamanujanHarmonicIdentityWanted.sum_choose_sub_choose_mul_harmonic_succ_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html#sum-choose-sub-choose-mul-harmonic-succ).
 
 ## Shifted binomial–harmonic convolution (Alzer–Kwong, Corollary 2)
 
@@ -43,7 +43,7 @@ where $H_m = \sum_{j=1}^{m} 1/j$ is the $m$-th harmonic number.
 
 - Horst Alzer and Man Kam Kwong, "Ramanujan and a Combinatorial Identity Involving Harmonic Numbers", Corollary 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.RamanujanHarmonicIdentityWanted.sum_choose_sub_choose_mul_harmonic_eq_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html#sum-choose-sub-choose-mul-harmonic-eq-ad).
+Stated but not proved: `MathlibExt.NumberTheory.RamanujanHarmonicIdentityWanted.sum_choose_sub_choose_mul_harmonic_eq_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html#sum-choose-sub-choose-mul-harmonic-eq-ad).
 
 ## Ramanujan's binomial sine series
 
@@ -57,7 +57,7 @@ is the generalized binomial coefficient, and $2^N$ and $(\cos \theta)^N$ are rea
 
 - Horst Alzer and Man Kam Kwong, "Ramanujan and a Combinatorial Identity Involving Harmonic Numbers", Lemma 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.RamanujanHarmonicIdentityWanted.hasSum_ringChoose_mul_sin` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html#has-sum-ring-choose-mul-sin).
+Stated but not proved: `MathlibExt.NumberTheory.RamanujanHarmonicIdentityWanted.hasSum_ringChoose_mul_sin` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html#has-sum-ring-choose-mul-sin).
 
 ## The Rung-Obaid trigonometric identity
 
@@ -71,7 +71,7 @@ $$\sum_{\nu=1}^{n} 2^\nu \left( \binom{n+k-\nu-1}{k-1} - \binom{n+k-\nu-1}{n-1} 
 
 - Horst Alzer and Man Kam Kwong, "Ramanujan and a Combinatorial Identity Involving Harmonic Numbers", Lemma 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.RamanujanHarmonicIdentityWanted.sum_two_pow_choose_sub_mul_cos_pow_sin` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html#sum-two-pow-choose-sub-mul-cos-pow-sin).
+Stated but not proved: `MathlibExt.NumberTheory.RamanujanHarmonicIdentityWanted.sum_two_pow_choose_sub_mul_cos_pow_sin` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html#sum-two-pow-choose-sub-mul-cos-pow-sin).
 
 ## Gould's reciprocal binomial identity (Alzer–Kwong, Lemma 4)
 
@@ -88,7 +88,7 @@ where $\binom{x}{N} = x(x-1)\cdots(x-N+1)/N!$ is the generalized binomial coeffi
 
 - Horst Alzer and Man Kam Kwong, "Ramanujan and a Combinatorial Identity Involving Harmonic Numbers", Lemma 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.RamanujanHarmonicIdentityWanted.sum_neg_one_pow_div_mul_choose_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html#sum-neg-one-pow-div-mul-choose-eq).
+Stated but not proved: `MathlibExt.NumberTheory.RamanujanHarmonicIdentityWanted.sum_neg_one_pow_div_mul_choose_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html#sum-neg-one-pow-div-mul-choose-eq).
 
 ## Uniqueness of the harmonic solution of the diagonal Ramanujan identity
 
@@ -107,7 +107,7 @@ $r \ge 1$, where $H_r = \sum_{j=1}^{r} 1/j$ is the $r$-th harmonic number.
 
 - Horst Alzer and Man Kam Kwong, "Ramanujan and a Combinatorial Identity Involving Harmonic Numbers", Theorem 8.
 
-Stated but not proved: `MathlibExt.NumberTheory.RamanujanHarmonicIdentityWanted.eq_lambda_mul_harmonic_of_sum_choose_sub_mul_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html#eq-lambda-mul-harmonic-of-sum-choose-sub).
+Stated but not proved: `MathlibExt.NumberTheory.RamanujanHarmonicIdentityWanted.eq_lambda_mul_harmonic_of_sum_choose_sub_mul_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanHarmonicIdentityWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html#eq-lambda-mul-harmonic-of-sum-choose-sub).
 
 ## Depends on
 
@@ -116,4 +116,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ramanujan's binomial–harmonic identity](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/harmonic-numbers/ramanujan-s-binomial-harmonic-identity)

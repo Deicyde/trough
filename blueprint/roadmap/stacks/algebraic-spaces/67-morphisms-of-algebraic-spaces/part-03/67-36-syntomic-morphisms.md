@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.36 Syntomic morphisms
 
-Section 67.36 of the Stacks Project, [Tag 03Z6](https://stacks.math.columbia.edu/tag/03Z6). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.36 of the Stacks Project, [Tag 03Z6](https://stacks.math.columbia.edu/tag/03Z6). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03Z7, a definition
 
 [Tag 03Z7](https://stacks.math.columbia.edu/tag/03Z7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsSyntomic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Syntomic.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Syntomic.lean#L59). The attribute's comment: “part (1): syntomic morphisms”.
+**`AlgebraicGeometry.Space.IsSyntomic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Syntomic.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Syntomic.lean#L59). The attribute's comment: “part (1): syntomic morphisms”.
 
 > **Stacks 03Z7, part (1).** A morphism of algebraic spaces over `S` is *syntomic* when
 > the scheme morphism underlying every commuting square of étale scheme charts of it is
@@ -24,7 +24,7 @@ Section 67.36 of the Stacks Project, [Tag 03Z6](https://stacks.math.columbia.edu
 abbrev IsSyntomic (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsSyntomicAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Syntomic.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Syntomic.lean#L67). The attribute's comment: “part (2): syntomic at a point”.
+**`AlgebraicGeometry.Space.IsSyntomicAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Syntomic.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Syntomic.lean#L67). The attribute's comment: “part (2): syntomic at a point”.
 
 > **Stacks 03Z7, part (2).** A morphism of algebraic spaces over `S` is *syntomic at* a
 > point `x` of its source when it is syntomic on some open subspace of the source having a
@@ -38,7 +38,7 @@ abbrev IsSyntomicAt (f : X ⟶ Y) (x : points B S hS X) : Prop
 
 [Tag 03Z8](https://stacks.math.columbia.edu/tag/03Z8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSyntomic_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean#L162).
+**`AlgebraicGeometry.Space.isSyntomic_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean#L162).
 
 > **Stacks 03Z8.** The composite of two syntomic morphisms of algebraic spaces over `S` is
 > syntomic.
@@ -59,7 +59,7 @@ theorem isSyntomic_comp
 
 [Tag 03Z9](https://stacks.math.columbia.edu/tag/03Z9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSyntomic_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean#L178).
+**`AlgebraicGeometry.Space.isSyntomic_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean#L178).
 
 > **Stacks 03Z9.** Syntomic morphisms of algebraic spaces over `S` are stable under base
 > change.
@@ -78,7 +78,7 @@ theorem isSyntomic_isStableUnderBaseChange :
 
 [Tag 03ZA](https://stacks.math.columbia.edu/tag/03ZA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSyntomic_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SyntomicTfae.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SyntomicTfae.lean#L92).
+**`AlgebraicGeometry.Space.isSyntomic_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SyntomicTfae.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SyntomicTfae.lean#L92).
 
 > **Stacks 03ZA.** Nine criteria for a morphism of algebraic spaces over `S` to be syntomic:
 > pointwise syntomicity, syntomicity of every base change to a scheme or to an affine scheme or
@@ -125,7 +125,7 @@ theorem isSyntomic_tfae (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpace 
 
 [Tag 0DEY](https://stacks.math.columbia.edu/tag/0DEY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_isSyntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean#L128).
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_isSyntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean#L128).
 
 > **Stacks 0DEY.** A syntomic morphism of algebraic spaces over `S` is locally of finite
 > presentation.
@@ -143,7 +143,7 @@ theorem isLocallyOfFinitePresentation_of_isSyntomic {f : X ⟶ Y}
 
 [Tag 0DEZ](https://stacks.math.columbia.edu/tag/0DEZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlat_of_isSyntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean#L139).
+**`AlgebraicGeometry.Space.isFlat_of_isSyntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean#L139).
 
 > **Stacks 0DEZ.** A syntomic morphism of algebraic spaces over `S` is flat.
 >
@@ -159,7 +159,7 @@ theorem isFlat_of_isSyntomic {f : X ⟶ Y} (hf : IsSyntomic B S hS f) : IsFlat B
 
 [Tag 0DF0](https://stacks.math.columbia.edu/tag/0DF0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyOpen_of_isSyntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Flat.lean, line 814](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Flat.lean#L814).
+**`AlgebraicGeometry.Space.universallyOpen_of_isSyntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Flat.lean, line 814](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Flat.lean#L814).
 
 > A syntomic morphism of algebraic spaces over `S` is universally open in the sense of
 > Stacks 03Z2.
@@ -177,4 +177,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.36, Tag 03Z6](https://stacks.math.columbia.edu/tag/03Z6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

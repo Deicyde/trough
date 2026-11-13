@@ -7,7 +7,7 @@ statement: formalized
 
 # Restricted signed sumsets
 
-35 results, 15 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html).
+35 results, 15 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html).
 
 ## Restricted sumset
 
@@ -22,7 +22,7 @@ The source works in the integers; here $G$ is an arbitrary additive commutative 
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Definition of restricted sumset.
 
-Formalized by `MetaMathlibExt.restrictedSumset`, a definition declared in [MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#restricted-sumset).
+Formalized by `MetaMathlibExt.restrictedSumset`, a definition declared in [MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#restricted-sumset).
 
 ## Restricted signed sumset
 
@@ -36,7 +36,7 @@ elements of $N$ are given a negative sign.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Definition of restricted signed sumset.
 
-Formalized by `MetaMathlibExt.restrictedSignedSumset`, a definition declared in [MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#restricted-signed-sumset).
+Formalized by `MetaMathlibExt.restrictedSignedSumset`, a definition declared in [MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#restricted-signed-sumset).
 
 ## Coefficient description of the restricted sumset
 
@@ -49,7 +49,7 @@ $a \in A$, $\sum_{a \in A} c(a) = h$ and $x = \sum_{a \in A} c(a)\, a$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Definition of restricted sumset.
 
-Formalized by `MetaMathlibExt.mem_restrictedSumset_iff`, a theorem declared in [MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#mem-restricted-sumset-iff).
+Formalized by `MetaMathlibExt.mem_restrictedSumset_iff`, a theorem declared in [MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#mem-restricted-sumset-iff).
 
 ## Coefficient description of the restricted signed sumset
 
@@ -63,7 +63,7 @@ $x = \sum_{a \in A} c(a)\, a$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Definition of restricted signed sumset.
 
-Formalized by `MetaMathlibExt.mem_restrictedSignedSumset_iff`, a theorem declared in [MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#mem-restricted-signed-sumset-iff).
+Formalized by `MetaMathlibExt.mem_restrictedSignedSumset_iff`, a theorem declared in [MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/RestrictedSignedSumset.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#mem-restricted-signed-sumset-iff).
 
 ## Set of values of a finite integer sequence
 
@@ -76,7 +76,7 @@ No order or injectivity is assumed; the statements that use it assume what they 
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, notation for ordered finite sets.
 
-Formalized by `MetaMathlibExt.orderedFinset`, a definition declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#ordered-finset).
+Formalized by `MetaMathlibExt.orderedFinset`, a definition declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#ordered-finset).
 
 ## Initial segment of a finite integer sequence
 
@@ -89,7 +89,7 @@ of the sequence when $n \ge k$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, notation for initial subsets.
 
-Formalized by `MetaMathlibExt.initialSegment`, a definition declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#initial-segment).
+Formalized by `MetaMathlibExt.initialSegment`, a definition declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#initial-segment).
 
 ## Finite integer sequences in arithmetic progression
 
@@ -104,7 +104,7 @@ first term.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, definition of arithmetic progression.
 
-Formalized by `MetaMathlibExt.IsIndexedAP`, a definition declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#is-indexed-ap).
+Formalized by `MetaMathlibExt.IsIndexedAP`, a definition declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#is-indexed-ap).
 
 ## Dilation of a finite set of integers
 
@@ -115,7 +115,7 @@ integers, the dilation $d \cdot B$ is the set $\{db : b \in B\}$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, dilation notation.
 
-Formalized by `MetaMathlibExt.scaleFinset`, a definition declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#scale-finset).
+Formalized by `MetaMathlibExt.scaleFinset`, a definition declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#scale-finset).
 
 ## The first $k$ odd positive integers
 
@@ -126,7 +126,7 @@ $\{1, 3, \dots, 2k - 1\} = \{2i + 1 : 0 \le i < k\}$; it is empty when $k = 0$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, odd-progression notation.
 
-Formalized by `MetaMathlibExt.oddProgression`, a definition declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#odd-progression).
+Formalized by `MetaMathlibExt.oddProgression`, a definition declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#odd-progression).
 
 ## Values of a finite integer sequence after its first term
 
@@ -139,7 +139,7 @@ $A = \{a_0, \dots, a_{k-1}\}$ by removing its least element.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, notation `A'`.
 
-Formalized by `MetaMathlibExt.tailFinset`, a definition declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#tail-finset).
+Formalized by `MetaMathlibExt.tailFinset`, a definition declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#tail-finset).
 
 ## Zero-based integer interval
 
@@ -150,7 +150,7 @@ the set $\{0, 1, \dots, k-1\}$ of integers $i$ with $0 \le i < k$; it is empty w
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, interval notation.
 
-Formalized by `MetaMathlibExt.zeroInterval`, a definition declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#zero-interval).
+Formalized by `MetaMathlibExt.zeroInterval`, a definition declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#zero-interval).
 
 ## The restricted signed 4-fold sumset of $\{1, 3, 5, 7, 9\}$
 
@@ -164,7 +164,7 @@ attains that theorem's lower bound $25$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Theorem 10 example.
 
-Formalized by `MetaMathlibExt.card_restrictedSignedSumset_four_odd_five`, a theorem declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-odd-f).
+Formalized by `MetaMathlibExt.card_restrictedSignedSumset_four_odd_five`, a theorem declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-odd-f).
 
 ## The restricted signed 4-fold sumset of $\{0, 1, 2, 4, 6\}$
 
@@ -179,7 +179,7 @@ refutes the inverse sentence of that theorem (the counterexample is ours, not th
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Theorem 11 (lower bound `8k - 19` at `k = 5`).
 
-Formalized by `MetaMathlibExt.card_restrictedSignedSumset_four_counterexample`, a theorem declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-count).
+Formalized by `MetaMathlibExt.card_restrictedSignedSumset_four_counterexample`, a theorem declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-count).
 
 ## $\{0, 1, 2, 4, 6\}$ is not a dilate of $\{0, 1, 2, 3, 4\}$
 
@@ -193,7 +193,7 @@ Indeed, $1 = di$ with $0 \le i \le 4$ forces $d = \pm 1$, and then $6$ is not of
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Theorem 11 (inverse sentence, `A = d * [0,k-1]`).
 
-Formalized by `MetaMathlibExt.ne_scaleFinset_zeroInterval_five`, a theorem declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#ne-scale-finset-zero-interval-five).
+Formalized by `MetaMathlibExt.ne_scaleFinset_zeroInterval_five`, a theorem declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#ne-scale-finset-zero-interval-five).
 
 ## The restricted signed 3-fold sumset of $\{1, 2, 3, 4\}$
 
@@ -204,7 +204,7 @@ sumset $3^{\wedge}_{\pm} \{1, 2, 3, 4\}$ has exactly $19$ elements.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Definition of restricted signed sumset.
 
-Formalized by `MetaMathlibExt.card_restrictedSignedSumset_three_four`, a theorem declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-three-four).
+Formalized by `MetaMathlibExt.card_restrictedSignedSumset_three_four`, a theorem declared in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-three-four).
 
 ## Lower bounds for restricted signed sumsets of nonnegative integers
 
@@ -221,7 +221,7 @@ $h = 1$, $h = 2$ and $h = k$ is not part of this statement.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_general_lower_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-general-lo).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_general_lower_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-general-lo).
 
 ## Nathanson's bound for restricted sumsets and its inverse
 
@@ -236,7 +236,7 @@ first term $a$ and difference $d$, that is, $A = \{a + nd : 0 \le n < k\}$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSumset_ge_and_eq_iff_ap` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-sumset-ge-and-eq-iff-ap).
+Stated but not proved: `MetaMathlibExt.card_restrictedSumset_ge_and_eq_iff_ap` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-sumset-ge-and-eq-iff-ap).
 
 ## Restricted signed sumsets of arithmetic progressions with one more term than summands
 
@@ -251,7 +251,7 @@ and only if $d = 2a_1$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_ap_h_add_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-ap-h-add-o).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_ap_h_add_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-ap-h-add-o).
 
 ## Lower bound for restricted signed sumsets of arithmetic progressions
 
@@ -267,7 +267,7 @@ $|h^{\wedge}_{\pm} A| = 2hk - h^2 + 1$ if and only if $d = 2a_1$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_ap_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-ap-ge).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_ap_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-ap-ge).
 
 ## Restricted signed sumsets of arithmetic progressions containing zero
 
@@ -281,7 +281,7 @@ be the restricted signed sumset of $A$. Then $|h^{\wedge}_{\pm} A| = 2hk - h(h+1
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_ap_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-ap-zero).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_ap_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-ap-zero).
 
 ## Inverse theorem for the extremal restricted signed sumset of positive integers
 
@@ -305,7 +305,7 @@ Then $A = a_1 \cdot \{1, 3, \dots, 2k - 1\} = \{(2i - 1) a_1 : 1 \le i \le k\}$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.eq_scaled_oddProgression_of_extremal` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#eq-scaled-odd-progression-of-extremal).
+Stated but not proved: `MetaMathlibExt.eq_scaled_oddProgression_of_extremal` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#eq-scaled-odd-progression-of-extremal).
 
 ## Inverse theorem for the extremal restricted signed sumset of sets containing zero
 
@@ -329,7 +329,7 @@ Then $A = a_1 \cdot \{0, 1, \dots, k - 1\} = \{i a_1 : 0 \le i < k\}$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.eq_scaled_zeroInterval_of_extremal` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#eq-scaled-zero-interval-of-extremal).
+Stated but not proved: `MetaMathlibExt.eq_scaled_zeroInterval_of_extremal` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#eq-scaled-zero-interval-of-extremal).
 
 ## Restricted signed sumsets of sets with Fibonacci-type growth
 
@@ -342,7 +342,7 @@ $h$-fold sumset of $A = \{a_1, \dots, a_{h+1}\}$. Then $|h^{\wedge}_{\pm} A| \ge
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_ge_of_fibonacci_growth` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-ge-of-fibo).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_ge_of_fibonacci_growth` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-ge-of-fibo).
 
 ## Restricted signed sumsets under gap conditions
 
@@ -356,7 +356,7 @@ Then $|h^{\wedge}_{\pm} A| \ge (h+1)^2 + 1$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_ge_of_gap_conditions` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-ge-of-gap).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_ge_of_gap_conditions` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-ge-of-gap).
 
 ## Lower bound for restricted signed 4-fold sumsets of positive integers
 
@@ -372,7 +372,7 @@ The source states only that equality forces this form; the converse is included 
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge).
 
 ## Restricted signed fourfold sumsets of five positive integers
 
@@ -389,7 +389,7 @@ converse is included here.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_five_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-five).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_five_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-five).
 
 ## Lower bound for restricted signed 4-fold sumsets of nonnegative sets containing zero
 
@@ -405,7 +405,7 @@ has $|4^{\wedge}_{\pm} A| = 21 = 8 \cdot 5 - 19$ but is not of that form.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_nonnegative_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-nonne).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_nonnegative_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-nonne).
 
 ## Extending a restricted signed sumset bound from the first $h+1$ elements
 
@@ -419,7 +419,7 @@ $|h^{\wedge}_{\pm} A_{h+1}| \ge (h+1)^2 + t$, then $|h^{\wedge}_{\pm} A| \ge 2hk
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_ge_of_initialSegment` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-ge-of-init).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_ge_of_initialSegment` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-ge-of-init).
 
 ## Restricted signed 4-fold sumsets when exactly one gap differs from twice the minimum
 
@@ -432,7 +432,7 @@ $|4^{\wedge}_{\pm} A| \ge 26$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_one_exceptional_gap` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge-of).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_one_exceptional_gap` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge-of).
 
 ## Restricted signed fourfold sumsets when exactly two gaps differ from twice the least element
 
@@ -446,7 +446,7 @@ $|4^{\wedge}_{\pm} A| \ge 26$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_two_exceptional_gaps` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge-of-2).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_two_exceptional_gaps` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge-of-2).
 
 ## Restricted signed fourfold sumsets when exactly one gap equals twice the least element
 
@@ -458,7 +458,7 @@ $a_{i+1} - a_i$ ($1 \le i \le 4$) equals $2a_1$, then $|4^{\wedge}_{\pm} A| \ge 
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_one_regular_gap` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge-of-3).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_one_regular_gap` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge-of-3).
 
 ## Restricted signed fourfold sumsets when no gap equals twice the least element and the first and third gaps differ
 
@@ -472,7 +472,7 @@ $a_4 - a_3 \ne a_2 - a_1$, then $|4^{\wedge}_{\pm} A| \ge 26$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_unequal_outer_gaps` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge-of-4).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_unequal_outer_gaps` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge-of-4).
 
 ## Restricted signed fourfold sumsets when no gap equals twice the least element, the first and third gaps agree, and the last two gaps do not sum to twice the least element
 
@@ -487,7 +487,7 @@ $a_5 - a_3 \ne 2a_1$, then $|4^{\wedge}_{\pm} A| \ge 26$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_equal_outer_gaps_ne` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge-of-5).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_equal_outer_gaps_ne` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge-of-5).
 
 ## Restricted signed fourfold sumsets when no gap equals twice the least element, the first and third gaps agree, and the last two gaps sum to twice the least element
 
@@ -502,7 +502,7 @@ $a_5 - a_3 = 2a_1$, then $|4^{\wedge}_{\pm} A| \ge 26$.
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_equal_outer_gaps_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge-of-6).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_equal_outer_gaps_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge-of-6).
 
 ## Restricted signed 4-fold sumsets when no gap equals twice the minimum
 
@@ -515,7 +515,7 @@ $a_{i+1} - a_i \ne 2a_1$ for every $i \in \{1, 2, 3, 4\}$, then $|4^{\wedge}_{\p
 
 - Mohan, Raj Kumar Mistri, Ram Krishna Pandey, *Some Direct and Inverse Problems for the Restricted Signed Sumset in the Set of Integers*, INTEGERS 24 (2024), Article A81, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_no_regular_gap` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge-of-7).
+Stated but not proved: `MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_no_regular_gap` is written with `theorem_wanted` in [WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RestrictedSignedSumsetWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html#card-restricted-signed-sumset-four-ge-of-7).
 
 ## Depends on
 
@@ -524,4 +524,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Restricted signed sumsets](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/restricted-signed-sumsets)

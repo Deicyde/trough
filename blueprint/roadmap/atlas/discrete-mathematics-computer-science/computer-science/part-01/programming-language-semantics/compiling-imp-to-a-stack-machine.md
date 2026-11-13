@@ -8,7 +8,7 @@ proof: formalized
 
 # Compiling IMP to a stack machine
 
-17 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html).
+17 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html).
 
 ## Stack machine instructions
 
@@ -19,7 +19,7 @@ Boolean instructions $\mathsf{eq}$, $\mathsf{le}$, $\mathsf{not}$ and $\mathsf{a
 jumps $\mathsf{jump}\ t$ and $\mathsf{jumpIfZero}\ t$ for a natural number $t$. Jump targets are
 absolute program counters.
 
-Formalized by `Cslib.IMP.StackMachine.Instr`, an inductive type declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#instr).
+Formalized by `Cslib.IMP.StackMachine.Instr`, an inductive type declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#instr).
 
 ## Stack machine configurations
 
@@ -28,7 +28,7 @@ $(pc, \sigma, s)$ of a program counter $pc \in \mathbb{N}$, a stack $\sigma$, wh
 of natural numbers whose head is the top of the stack, and a state $s$ assigning a natural number
 to each variable.
 
-Formalized by `Cslib.IMP.StackMachine.Config`, an abbreviation declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#config).
+Formalized by `Cslib.IMP.StackMachine.Config`, an abbreviation declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#config).
 
 ## Step relation of the stack machine
 
@@ -56,7 +56,7 @@ $s[x \mapsto v]$ is the state $s$ with variable $x$ set to $v$.
 For binary instructions the top of the stack $a$ is thus the right operand and the value below it
 $b$ is the left operand.
 
-Formalized by `Cslib.IMP.StackMachine.Step`, an inductive type declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#step).
+Formalized by `Cslib.IMP.StackMachine.Step`, an inductive type declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#step).
 
 ## Multi-step execution of the stack machine
 
@@ -64,7 +64,7 @@ For a program $P$, the multi-step relation on
 configurations is the reflexive transitive closure of the step relation of the stack machine
 running $P$: it relates $c$ to $c'$ when $c'$ is obtained from $c$ by zero or more steps.
 
-Formalized by `Cslib.IMP.StackMachine.Steps`, an abbreviation declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#steps).
+Formalized by `Cslib.IMP.StackMachine.Steps`, an abbreviation declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#steps).
 
 ## Determinism of the stack machine
 
@@ -72,7 +72,7 @@ For every program $P$, the step relation of the stack
 machine running $P$ is deterministic: if a configuration $x$ steps to $y$ and to $z$, then
 $y = z$. The fetched instruction and the shape of the stack determine the next configuration.
 
-Formalized by `Cslib.IMP.StackMachine.Step.deterministic`, a theorem declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#deterministic).
+Formalized by `Cslib.IMP.StackMachine.Step.deterministic`, a theorem declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#deterministic).
 
 ## No step past the end of the program
 
@@ -84,7 +84,7 @@ position $pc$ to fetch.
 Hence the length of the code compiled from a command at base address $0$ is a halt address for
 that code.
 
-Formalized by `Cslib.IMP.StackMachine.no_step_of_length_le`, a theorem declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#no-step-of-length-le).
+Formalized by `Cslib.IMP.StackMachine.no_step_of_length_le`, a theorem declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#no-step-of-length-le).
 
 ## Instruction count of an arithmetic expression
 
@@ -95,7 +95,7 @@ $\ell(a) = \ell(a_1) + \ell(a_2) + 1$.
 
 It is the number of stack-machine instructions generated when $a$ is compiled.
 
-Formalized by `Cslib.IMP.StackMachine.alen`, a definition declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#alen).
+Formalized by `Cslib.IMP.StackMachine.alen`, a definition declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#alen).
 
 ## Instruction count of a Boolean expression
 
@@ -107,7 +107,7 @@ conjunction of $b_1$ and $b_2$ has count $\ell(b_1) + \ell(b_2) + 1$.
 
 It is the number of stack-machine instructions generated when $b$ is compiled.
 
-Formalized by `Cslib.IMP.StackMachine.blen`, a definition declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#blen).
+Formalized by `Cslib.IMP.StackMachine.blen`, a definition declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#blen).
 
 ## Instruction count of a command
 
@@ -121,7 +121,7 @@ and $\ell(\mathbf{while}\ b\ \mathbf{do}\ c_1) = \ell(b) + 1 + \ell(c_1) + 1$.
 
 It is the number of stack-machine instructions generated when $c$ is compiled.
 
-Formalized by `Cslib.IMP.StackMachine.codeLength`, a definition declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#code-length).
+Formalized by `Cslib.IMP.StackMachine.codeLength`, a definition declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#code-length).
 
 ## Compilation of arithmetic expressions
 
@@ -133,7 +133,7 @@ single instruction add, sub or mul respectively.
 
 Running this code leaves the value of the expression on top of the stack.
 
-Formalized by `Cslib.IMP.StackMachine.compileA`, a definition declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#compile-a).
+Formalized by `Cslib.IMP.StackMachine.compileA`, a definition declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#compile-a).
 
 ## Compilation of Boolean expressions
 
@@ -147,7 +147,7 @@ and $b_2$ compiles to the code of $b_1$, then the code of $b_2$, then the conjun
 
 Running this code leaves $1$ (true) or $0$ (false) on top of the stack.
 
-Formalized by `Cslib.IMP.StackMachine.compileB`, a definition declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#compile-b).
+Formalized by `Cslib.IMP.StackMachine.compileB`, a definition declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#compile-b).
 
 ## Compilation of commands
 
@@ -162,7 +162,7 @@ $C_q(c_1)$, then jump to $r + \ell(c_2)$, then $C_r(c_2)$. For the loop
 $\mathbf{while}\ b\ \mathbf{do}\ c_1$, put $q = p + \ell(b) + 1$; its code is the code of $b$,
 then jump-if-zero to $q + \ell(c_1) + 1$, then $C_q(c_1)$, then jump to $p$.
 
-Formalized by `Cslib.IMP.StackMachine.compile`, a definition declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#compile).
+Formalized by `Cslib.IMP.StackMachine.compile`, a definition declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#compile).
 
 ## Fetching from an embedded code segment
 
@@ -171,7 +171,7 @@ let $i < |S|$ be a natural number. Then the instruction at position $|B| + i$ of
 $B\,S\,A$ of the three lists equals the instruction at position $i$ of $S$, positions being
 counted from $0$.
 
-Formalized by `Cslib.IMP.StackMachine.fetch_segment`, a theorem declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#fetch-segment).
+Formalized by `Cslib.IMP.StackMachine.fetch_segment`, a theorem declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#fetch-segment).
 
 ## Compiled arithmetic code pushes the value of the expression
 
@@ -183,7 +183,7 @@ finitely many steps from program counter $|P|$, stack $\sigma$ and state $s$ to 
 $|P| + \ell(a)$, the stack obtained from $\sigma$ by pushing the value of $a$ in $s$, and the
 same state $s$.
 
-Formalized by `Cslib.IMP.StackMachine.compileA_runs`, a theorem declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#compile-a-runs).
+Formalized by `Cslib.IMP.StackMachine.compileA_runs`, a theorem declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#compile-a-runs).
 
 ## Compiled Boolean code pushes the truth value of the expression
 
@@ -195,7 +195,7 @@ finitely many steps from program counter $|P|$, stack $\sigma$ and state $s$ to 
 $|P| + \ell(b)$, the stack obtained from $\sigma$ by pushing $1$ if $b$ evaluates to true in $s$
 and $0$ otherwise, and the same state $s$.
 
-Formalized by `Cslib.IMP.StackMachine.compileB_runs`, a theorem declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#compile-b-runs).
+Formalized by `Cslib.IMP.StackMachine.compileB_runs`, a theorem declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#compile-b-runs).
 
 ## Compiled command code simulates big-step execution
 
@@ -207,7 +207,7 @@ stack machine running the program $P \, C_{|P|}(c) \, Q$ (the concatenation of $
 $C_{|P|}(c)$ and $Q$) goes in finitely many steps from program counter $|P|$, stack $\sigma$ and
 state $s$ to program counter $|P| + \ell(c)$, the same stack $\sigma$ and state $s'$.
 
-Formalized by `Cslib.IMP.StackMachine.compile_runs`, a theorem declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 606](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L606). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#compile-runs).
+Formalized by `Cslib.IMP.StackMachine.compile_runs`, a theorem declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 606](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L606). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#compile-runs).
 
 ## Correctness of compilation to the stack machine
 
@@ -221,7 +221,7 @@ Since $C_0(c)$ has exactly $\ell(c)$ instructions, no step is possible at progra
 $\ell(c)$, so the machine halts there. Only this forward simulation is claimed, not its
 converse.
 
-Formalized by `Cslib.IMP.StackMachine.compile_correct`, a theorem declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 860](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/IMP/StackMachine.lean#L860). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#compile-correct).
+Formalized by `Cslib.IMP.StackMachine.compile_correct`, a theorem declared in [CSLibExt/Languages/IMP/StackMachine.lean, line 860](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/IMP/StackMachine.lean#L860). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html#compile-correct).
 
 ## Depends on
 
@@ -230,4 +230,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Compiling IMP to a stack machine](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/programming-language-semantics/compiling-imp-to-a-stack-machine)

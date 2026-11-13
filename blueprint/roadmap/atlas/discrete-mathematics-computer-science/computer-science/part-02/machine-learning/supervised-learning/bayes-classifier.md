@@ -8,7 +8,7 @@ proof: formalized
 
 # Bayes classifier
 
-12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html).
+12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html).
 
 ## The 0-1 loss
 
@@ -16,7 +16,7 @@ For elements $c$ and $y$ of a type $C$ of classes, the 0-1 loss of
 predicting $y$ when the true class is $c$ is the extended nonnegative real number that equals
 $0$ if $y = c$ and $1$ if $y \ne c$.
 
-Formalized by `Cslib.MachineLearning.BayesClassifier.zeroOneLoss`, a definition declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#zero-one-loss).
+Formalized by `Cslib.MachineLearning.BayesClassifier.zeroOneLoss`, a definition declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#zero-one-loss).
 
 ## Expected 0-1 loss of a fixed prediction
 
@@ -25,7 +25,7 @@ singleton is measurable, let $\nu$ be a measure on $C$, and let $y \in C$. Writi
 for the 0-1 loss of predicting $y$ when the true class is $c$, we have
 $\int \ell(c, y) \, d\nu(c) = \nu(C \setminus \{y\})$.
 
-Formalized by `Cslib.MachineLearning.BayesClassifier.lintegral_zeroOneLoss`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#lintegral-zero-one-loss).
+Formalized by `Cslib.MachineLearning.BayesClassifier.lintegral_zeroOneLoss`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#lintegral-zero-one-loss).
 
 ## Integrating the 0-1 loss over the prediction
 
@@ -37,7 +37,7 @@ $\int_C \ell(c, y)\,\nu(dy) = \nu(C \setminus \{c\})$.
 When $\nu$ is the law of a random prediction, this is its expected 0-1 loss when the true class
 is $c$.
 
-Formalized by `Cslib.MachineLearning.BayesClassifier.lintegral_zeroOneLoss_right`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#lintegral-zero-one-loss-right).
+Formalized by `Cslib.MachineLearning.BayesClassifier.lintegral_zeroOneLoss_right`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#lintegral-zero-one-loss-right).
 
 ## The 0-1 risk of a deterministic classifier
 
@@ -53,7 +53,7 @@ $\int_C P(c)(\{x \in \mathcal X : f(x) \ne c\})\,\pi(dc)$.
 When each $P(c)$ is a probability measure, $P(c)(\{x : f(x) \ne c\})$ is the probability that
 $f$ misclassifies an observation of class $c$.
 
-Formalized by `Cslib.MachineLearning.BayesClassifier.avgRisk_zeroOneLoss_deterministic`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#avg-risk-zero-one-loss-deterministic).
+Formalized by `Cslib.MachineLearning.BayesClassifier.avgRisk_zeroOneLoss_deterministic`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#avg-risk-zero-one-loss-deterministic).
 
 ## Posterior argmax classifier
 
@@ -68,7 +68,7 @@ $P^\dagger_\pi(x)(\{y\}) \le P^\dagger_\pi(x)(\{f(x)\})$ for every $y \in C$.
 Countably many classes with measurable singletons make the posterior masses of classes
 meaningful, and give the standard Borel structure the posterior needs.
 
-Formalized by `Cslib.MachineLearning.BayesClassifier.IsPosteriorArgmax`, a structure declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#is-posterior-argmax).
+Formalized by `Cslib.MachineLearning.BayesClassifier.IsPosteriorArgmax`, a structure declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#is-posterior-argmax).
 
 ## A posterior argmax classifier is an argmin estimator for the 0-1 loss
 
@@ -82,7 +82,7 @@ estimator for $\ell$: it is measurable and, for $(P \circ \pi)$-almost every $x$
 $\int_C \ell(c, f(x))\,P^\dagger_\pi(x)(dc)$ equals
 $\inf_{y \in C} \int_C \ell(c, y)\,P^\dagger_\pi(x)(dc)$.
 
-Formalized by `Cslib.MachineLearning.BayesClassifier.IsPosteriorArgmax.isArgminEstimator`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#is-argmin-estimator).
+Formalized by `Cslib.MachineLearning.BayesClassifier.IsPosteriorArgmax.isArgminEstimator`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#is-argmin-estimator).
 
 ## Posterior argmax classifiers are exactly the argmin estimators for the 0-1 loss
 
@@ -96,14 +96,14 @@ is an argmin estimator for $\ell$: $f$ is measurable and, for $(P \circ \pi)$-al
 $\int_C \ell(c, f(x))\,P^\dagger_\pi(x)(dc)$ equals
 $\inf_{y \in C} \int_C \ell(c, y)\,P^\dagger_\pi(x)(dc)$.
 
-Formalized by `Cslib.MachineLearning.BayesClassifier.isPosteriorArgmax_iff_isArgminEstimator`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#is-posterior-argmax-iff-is-argmin-estima).
+Formalized by `Cslib.MachineLearning.BayesClassifier.isPosteriorArgmax_iff_isArgminEstimator`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#is-posterior-argmax-iff-is-argmin-estima).
 
 ## The Bayes classifier is optimal
 
 A posterior argmax classifier attains the Bayes risk
 for the 0-1 loss.
 
-Formalized by `Cslib.MachineLearning.BayesClassifier.IsPosteriorArgmax.isBayesEstimator`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#is-bayes-estimator).
+Formalized by `Cslib.MachineLearning.BayesClassifier.IsPosteriorArgmax.isBayesEstimator`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#is-bayes-estimator).
 
 ## A posterior argmax classifier has minimal 0-1 risk
 
@@ -117,7 +117,7 @@ posterior argmax classifier for $P$ and $\pi$, then for every Markov kernel $\ka
 $\mathcal X$ to $C$ (a randomized classifier), the average 0-1 risk of the deterministic kernel
 $x \mapsto \delta_{f(x)}$ is at most the average 0-1 risk of $\kappa$.
 
-Formalized by `Cslib.MachineLearning.BayesClassifier.IsPosteriorArgmax.avgRisk_le`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#avg-risk-le).
+Formalized by `Cslib.MachineLearning.BayesClassifier.IsPosteriorArgmax.avgRisk_le`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#avg-risk-le).
 
 ## MAP classifiers are posterior argmax classifiers
 
@@ -132,7 +132,7 @@ classifier for $P$ and $\pi$.
 Since posterior argmax classifiers attain the Bayes risk for the 0-1 loss, MAP classification is
 Bayes optimal; observations of zero evidence may be classified arbitrarily.
 
-Formalized by `Cslib.MachineLearning.BayesClassifier.isPosteriorArgmax_of_isMAP`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#is-posterior-argmax-of-is-map).
+Formalized by `Cslib.MachineLearning.BayesClassifier.isPosteriorArgmax_of_isMAP`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#is-posterior-argmax-of-is-map).
 
 ## Existence of a posterior argmax classifier
 
@@ -144,7 +144,7 @@ $f : \mathcal X \to C$ for $P$ and $\pi$.
 The classifier constructed takes, at each observation, the first maximizer of the posterior
 probability in an enumeration of the classes.
 
-Formalized by `Cslib.MachineLearning.BayesClassifier.exists_isPosteriorArgmax`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#exists-is-posterior-argmax).
+Formalized by `Cslib.MachineLearning.BayesClassifier.exists_isPosteriorArgmax`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#exists-is-posterior-argmax).
 
 ## The Bayes risk for the 0-1 loss
 
@@ -159,7 +159,7 @@ write $(\kappa \circ P)(c) = \int_{\mathcal X} \kappa(x)\,P(c)(dx)$. Then the Ba
 $\int_{\mathcal X} \inf_{y \in C} P^\dagger_\pi(x)(C \setminus \{y\})\,(P \circ \pi)(dx)$: the
 average over the observations of the posterior probability of error of the best guess.
 
-Formalized by `Cslib.MachineLearning.BayesClassifier.bayesRisk_zeroOneLoss`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#bayes-risk-zero-one-loss).
+Formalized by `Cslib.MachineLearning.BayesClassifier.bayesRisk_zeroOneLoss`, a theorem declared in [CSLibExt/MachineLearning/Generative/BayesClassifier.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Generative/BayesClassifier.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html#bayes-risk-zero-one-loss).
 
 ## Depends on
 
@@ -168,4 +168,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bayes classifier](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/machine-learning/supervised-learning/bayes-classifier)

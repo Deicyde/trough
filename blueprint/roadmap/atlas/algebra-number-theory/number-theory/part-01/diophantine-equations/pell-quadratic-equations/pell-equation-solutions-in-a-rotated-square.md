@@ -7,7 +7,7 @@ statement: formalized
 
 # Pell equation solutions in a rotated square
 
-19 results, 8 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html).
+19 results, 8 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html).
 
 ## The Pell interpolation function u
 
@@ -20,7 +20,7 @@ square root (zero when $D < 0$) and $(\cdot)^x$ is the real power.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Section 1, Equation (1.3).
 
-Formalized by `MetaMathlibExt.pellU`, a definition declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-u).
+Formalized by `MetaMathlibExt.pellU`, a definition declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-u).
 
 ## The Pell interpolation function v
 
@@ -34,7 +34,7 @@ $0$; in particular $v$ is identically $0$ when $D \le 0$.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Section 1, Equation (1.4).
 
-Formalized by `MetaMathlibExt.pellV`, a definition declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-v).
+Formalized by `MetaMathlibExt.pellV`, a definition declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-v).
 
 ## Value of the Pell interpolation function u at 0
 
@@ -46,7 +46,7 @@ variable $x$ satisfies $u(0) = 1$.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Section 1, Equation (1.3).
 
-Formalized by `MetaMathlibExt.pellU_zero`, a theorem declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-u-zero).
+Formalized by `MetaMathlibExt.pellU_zero`, a theorem declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-u-zero).
 
 ## Value of the Pell interpolation function v at 0
 
@@ -59,7 +59,7 @@ gives $0$, satisfies $v(0) = 0$.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Section 1, Equation (1.4).
 
-Formalized by `MetaMathlibExt.pellV_zero`, a theorem declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-v-zero).
+Formalized by `MetaMathlibExt.pellV_zero`, a theorem declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-v-zero).
 
 ## Pell solutions are signed powers of the fundamental solution
 
@@ -75,7 +75,7 @@ signs $i, j \in \{1, -1\}$.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Proposition 1.1.
 
-Stated but not proved: `MetaMathlibExt.pell_solutions_eq_signed_powers` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-solutions-eq-signed-powers).
+Stated but not proved: `MetaMathlibExt.pell_solutions_eq_signed_powers` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-solutions-eq-signed-powers).
 
 ## The Pell interpolation functions agree with the solution sequence at natural numbers
 
@@ -92,7 +92,7 @@ $v(n) = v_n$ for every natural number $n$.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Proposition 1.2.
 
-Stated but not proved: `MetaMathlibExt.pellU_pellV_natCast` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-u-pell-v-nat-cast).
+Stated but not proved: `MetaMathlibExt.pellU_pellV_natCast` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-u-pell-v-nat-cast).
 
 ## Closed form for inverting the sum of the Pell interpolating functions
 
@@ -110,7 +110,7 @@ Here $\log(z + \sqrt{z^2 - 1})$ is $\cosh^{-1}(z)$ written in logarithmic form.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Theorem 2.2, Equation (2.1).
 
-Stated but not proved: `MetaMathlibExt.pell_inverse_closed_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-inverse-closed-form).
+Stated but not proved: `MetaMathlibExt.pell_inverse_closed_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-inverse-closed-form).
 
 ## Floor of the inverse of the sum of the Pell interpolating functions
 
@@ -127,7 +127,7 @@ $C = \log(2 \sqrt{D} / (1 + \sqrt{D}))$.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Theorem 2.3, Equation (2.5).
 
-Stated but not proved: `MetaMathlibExt.pell_inverse_floor` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-inverse-floor).
+Stated but not proved: `MetaMathlibExt.pell_inverse_floor` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-inverse-floor).
 
 ## Pell solutions in a closed rotated square
 
@@ -148,7 +148,7 @@ $2 + 4\lfloor t \rfloor$ elements.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Theorem 2.1.
 
-Stated but not proved: `MetaMathlibExt.pell_solutions_in_rotated_square` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-solutions-in-rotated-square).
+Stated but not proved: `MetaMathlibExt.pell_solutions_in_rotated_square` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-solutions-in-rotated-square).
 
 ## Explicit count of Pell solutions in a closed rotated square
 
@@ -168,7 +168,7 @@ exactly $2 + 4m$ elements.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Corollary 2.4.
 
-Stated but not proved: `MetaMathlibExt.pell_solutions_in_rotated_square_explicit` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-solutions-in-rotated-square-explici).
+Stated but not proved: `MetaMathlibExt.pell_solutions_in_rotated_square_explicit` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-solutions-in-rotated-square-explici).
 
 ## Shifted real Pell solutions eventually lie in the closed quadrants
 
@@ -192,7 +192,7 @@ quadrants; this statement follows the reading of the source's proof.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Proposition 3.1.
 
-Stated but not proved: `MetaMathlibExt.pell_shifted_real_solutions_eventually_in_quadrants` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shifted-real-solutions-eventually-i).
+Stated but not proved: `MetaMathlibExt.pell_shifted_real_solutions_eventually_in_quadrants` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shifted-real-solutions-eventually-i).
 
 ## Largest intercept norm of a shifted Pell curve
 
@@ -206,7 +206,7 @@ is $|a| + \sqrt{1 + D b^2}$.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Proposition 3.2.
 
-Stated but not proved: `MetaMathlibExt.pell_shifted_intercepts_max` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shifted-intercepts-max).
+Stated but not proved: `MetaMathlibExt.pell_shifted_intercepts_max` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shifted-intercepts-max).
 
 ## The $L^1$ norm along a shifted Pell curve
 
@@ -230,7 +230,7 @@ $(X - a)^2 - D (Y - b)^2 = 1$.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Section 3, definition of `f_{i,j}`.
 
-Formalized by `MetaMathlibExt.pellShiftedNorm`, a definition declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shifted-norm).
+Formalized by `MetaMathlibExt.pellShiftedNorm`, a definition declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shifted-norm).
 
 ## Value at zero of the shifted Pell norm function
 
@@ -248,7 +248,7 @@ condition is placed on the integers.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Section 3, definition of `f_{i,j}`.
 
-Formalized by `MetaMathlibExt.pellShiftedNorm_zero`, a theorem declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shifted-norm-zero).
+Formalized by `MetaMathlibExt.pellShiftedNorm_zero`, a theorem declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shifted-norm-zero).
 
 ## The bound $K$ for the shifted Pell equation
 
@@ -260,7 +260,7 @@ $K = |a| + \max(|b| + 1, \sqrt{1 + D b^2})$, where $\sqrt{s}$ is taken to be $0$
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Theorem 3.3, definition of `K`.
 
-Formalized by `MetaMathlibExt.pellShiftBound`, a definition declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shift-bound).
+Formalized by `MetaMathlibExt.pellShiftBound`, a definition declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shift-bound).
 
 ## The bound $K$ of the unshifted Pell equation
 
@@ -271,7 +271,7 @@ $K = |a| + \max(|b| + 1, \sqrt{1 + D b^2})$ with $a = b = 0$ equals $1$.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Theorem 3.3, definition of `K`.
 
-Formalized by `MetaMathlibExt.pellShiftBound_zero_zero`, a theorem declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shift-bound-zero-zero).
+Formalized by `MetaMathlibExt.pellShiftBound_zero_zero`, a theorem declared in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shift-bound-zero-zero).
 
 ## The shifted Pell norm function at zero is at most the bound
 
@@ -290,7 +290,7 @@ further condition is placed on the integers.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Lemma 3.5.
 
-Stated but not proved: `MetaMathlibExt.pellShiftedNorm_zero_le_pellShiftBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shifted-norm-zero-le-pell-shift-bou).
+Stated but not proved: `MetaMathlibExt.pellShiftedNorm_zero_le_pellShiftBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shifted-norm-zero-le-pell-shift-bou).
 
 ## The shifted Pell norm function is at most the bound up to its last crossing
 
@@ -308,7 +308,7 @@ Then $f_{i,j}(x) \le K$ for every real $x$ with $0 \le x \le x_1$.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Lemma 3.6.
 
-Stated but not proved: `MetaMathlibExt.pellShiftedNorm_le_pellShiftBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shifted-norm-le-pell-shift-bound).
+Stated but not proved: `MetaMathlibExt.pellShiftedNorm_le_pellShiftBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shifted-norm-le-pell-shift-bound).
 
 ## The shifted Pell norm function is increasing past its last crossing of the bound
 
@@ -328,7 +328,7 @@ $[K, \infty)$.
 
 - Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Lemma 3.7.
 
-Stated but not proved: `MetaMathlibExt.pellShiftedNorm_bijOn_Ici` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shifted-norm-bij-on-ici).
+Stated but not proved: `MetaMathlibExt.pellShiftedNorm_bijOn_Ici` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellRotatedSquareWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellRotatedSquareWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html#pell-shifted-norm-bij-on-ici).
 
 ## Depends on
 
@@ -337,4 +337,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Pell equation solutions in a rotated square](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/pell-equation-solutions-in-a-rotated-square)

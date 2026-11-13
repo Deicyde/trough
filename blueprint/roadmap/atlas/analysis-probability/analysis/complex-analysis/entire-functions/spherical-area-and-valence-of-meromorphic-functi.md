@@ -7,7 +7,7 @@ statement: formalized
 
 # Spherical area and valence of meromorphic functions
 
-8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html).
+8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html).
 
 ## Root count
 
@@ -17,7 +17,7 @@ $|z| < r$, counted with multiplicity: the sum over $z \in \mathbb{C}$ of the pos
 the divisor of $f - a$ on that disk at $z$ (the sum is taken to be $0$ if infinitely many terms
 are nonzero).
 
-Formalized by `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.rootCount`, a definition declared in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#root-count).
+Formalized by `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.rootCount`, a definition declared in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#root-count).
 
 ## Maximum valence
 
@@ -28,7 +28,7 @@ $r$, that is, of the number of roots of $f(z) = a$ in $|z| < r$ counted with mul
 This is a conditional supremum of real numbers, so it is meaningful only when these root counts
 are bounded above as $a$ varies; see bounded root counts.
 
-Formalized by `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.n`, a definition declared in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#n).
+Formalized by `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.n`, a definition declared in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#n).
 
 ## Spherical density
 
@@ -36,7 +36,7 @@ For $f\colon \mathbb{C} \to \mathbb{C}$ and $z \in \mathbb{C}$, the
 spherical density of $f$ at $z$ is $|f'(z)|^2 / (1 + |f(z)|^2)^2$, where $f'(z)$ is the complex
 derivative of $f$ at $z$, taken to be $0$ where $f$ is not differentiable.
 
-Formalized by `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.sphericalDensity`, a definition declared in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#spherical-density).
+Formalized by `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.sphericalDensity`, a definition declared in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#spherical-density).
 
 ## Normalized spherical area
 
@@ -46,7 +46,7 @@ Lebesgue integral of the spherical density of $f$ over the open disk
 $\{z \in \mathbb{C} : |z| < r\}$ (the integral is taken to be $0$ if the density is not
 integrable there).
 
-Formalized by `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.A`, a definition declared in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#a).
+Formalized by `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.A`, a definition declared in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#a).
 
 ## Germ-wise nonconstant function
 
@@ -58,7 +58,7 @@ This excludes pointwise-modified constant functions (for example $f(0) = 1$ and 
 $z \ne 0$), which are meromorphic with zero derivative density but represent the constant zero
 germ.
 
-Formalized by `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.IsNonconstant`, a definition declared in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#is-nonconstant).
+Formalized by `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.IsNonconstant`, a definition declared in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#is-nonconstant).
 
 ## Bounded root counts
 
@@ -70,7 +70,7 @@ $\mathbb{C}$.
 This guarantees that the supremum over $a$ defining the maximum valence of $f$ in radius $r$ is
 taken over a bounded set.
 
-Formalized by `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.HasBoundedRootCounts`, a definition declared in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#has-bounded-root-counts).
+Formalized by `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.HasBoundedRootCounts`, a definition declared in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#has-bounded-root-counts).
 
 ## Hayman's spherical-area ratio conjecture
 
@@ -94,7 +94,7 @@ asserted.
 
 - problem record AMR-022-1016 (W. K. Hayman).
 
-Formalized by `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.conjecture`, a definition declared in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#conjecture).
+Formalized by `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.conjecture`, a definition declared in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#conjecture).
 
 ## Hayman's spherical-area ratio conjecture is false
 
@@ -112,7 +112,7 @@ $\liminf_{r \to \infty} n(f, r)/A(f, r) \ge 80/79$, and Hinkkanen and Miles (arX
 
 - A. Hinkkanen and J. Miles, Maximum and Average Valence of Meromorphic Functions, arXiv preprint (2024), arXiv:2401.13808, https://arxiv.org/abs/2401.13808.
 
-Stated but not proved: `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#conjecture-refuted).
+Stated but not proved: `MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanSphericalAreaRatioWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html#conjecture-refuted).
 
 ## Depends on
 
@@ -121,4 +121,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Spherical area and valence of meromorphic functions](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/entire-functions/spherical-area-and-valence-of-meromorphic-functi)

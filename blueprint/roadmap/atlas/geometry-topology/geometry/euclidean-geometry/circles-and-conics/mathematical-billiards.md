@@ -7,7 +7,7 @@ statement: formalized
 
 # Mathematical billiards
 
-3 results, 1 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/mathematical-billiards/index.html).
+3 results, 1 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/mathematical-billiards/index.html).
 
 ## Elliptic billiard invariant $k_{602}$
 
@@ -31,7 +31,7 @@ perpendicular from $f_j$ to the $i$-th side.
 
 - [AMR-050-0031] Reznik, Garcia and Koiller, Eighty New Invariants of N-Periodics in the Elliptic Billiard (2021), Table row $k_{602}$, arXiv:2004.12497.
 
-Formalized by `MathlibExt.Geometry.EllipticBilliard602Wanted.conjecture`, a definition declared in [WantedExt/Geometry/EllipticBilliard602Wanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/EllipticBilliard602Wanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/mathematical-billiards/index.html#conjecture).
+Formalized by `MathlibExt.Geometry.EllipticBilliard602Wanted.conjecture`, a definition declared in [WantedExt/Geometry/EllipticBilliard602Wanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/EllipticBilliard602Wanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/mathematical-billiards/index.html#conjecture).
 
 ## Bialy–Tabachnikov: $k_{602}$ is invariant
 
@@ -53,7 +53,7 @@ semi-minor axis $b$ the two focal distances multiply to $b^2$, so the common val
 
 - M. Bialy, S. Tabachnikov, Dan Reznik's identities and more, European Journal of Mathematics (2020), arXiv:2001.08469, https://arxiv.org/abs/2001.08469.
 
-Stated but not proved: `MathlibExt.Geometry.EllipticBilliard602Wanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Geometry/EllipticBilliard602Wanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/EllipticBilliard602Wanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/mathematical-billiards/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Geometry.EllipticBilliard602Wanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Geometry/EllipticBilliard602Wanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/EllipticBilliard602Wanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/mathematical-billiards/index.html#conjecture-holds).
 
 ## Lattice step of the billiard unfolding in a rectangle
 
@@ -74,7 +74,7 @@ formalize the reflected trajectory and does not prove Problem 147.
 
 - H. Auerbach and S. Mazur, Problem 147 of the Scottish Book; the typescript labels the entry Theorem (Problem Mazur). Elementary unfolding argument for polygonal billiards, see e.g. S. Tabachnikov, Geometry and Billiards.
 
-Stated but not proved: `MathlibExt.Geometry.ScottishBook147Wanted.billiardUnfoldingDiagonalLemma` is written with `theorem_wanted` in [WantedExt/Geometry/ScottishBook147Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/ScottishBook147Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/mathematical-billiards/index.html#billiard-unfolding-diagonal-lemma).
+Stated but not proved: `MathlibExt.Geometry.ScottishBook147Wanted.billiardUnfoldingDiagonalLemma` is written with `theorem_wanted` in [WantedExt/Geometry/ScottishBook147Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/ScottishBook147Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/mathematical-billiards/index.html#billiard-unfolding-diagonal-lemma).
 
 ## Depends on
 
@@ -83,4 +83,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Mathematical billiards](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/circles-and-conics/mathematical-billiards/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/circles-and-conics/mathematical-billiards)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/circles-and-conics/mathematical-billiards)

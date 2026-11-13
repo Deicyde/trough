@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.4 Preparation for tame symbols
 
-Section 42.4 of the Stacks Project, [Tag 0EAD](https://stacks.math.columbia.edu/tag/0EAD). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.4 of the Stacks Project, [Tag 0EAD](https://stacks.math.columbia.edu/tag/0EAD). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EAE, a lemma
 
 [Tag 0EAE](https://stacks.math.columbia.edu/tag/0EAE) in the Stacks Project.
 
-**`Stacks.RingHomGluing.exists_ringHom_inducing_at_maximal_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/RingHomGluing/MaximalIdealGluing.lean, line 593](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/RingHomGluing/MaximalIdealGluing.lean#L593).
+**`Stacks.RingHomGluing.exists_ringHom_inducing_at_maximal_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/RingHomGluing/MaximalIdealGluing.lean, line 594](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/RingHomGluing/MaximalIdealGluing.lean#L594).
 
 > Ring maps over the localizations at finitely many pairwise distinct maximal ideals glue to
 > one global ring map. The map has kernel and cokernel killed by powers of the
@@ -44,7 +44,7 @@ theorem exists_ringHom_inducing_at_maximal_ideal
 
 [Tag 02Q7](https://stacks.math.columbia.edu/tag/02Q7) in the Stacks Project.
 
-**`Stacks.PrepareNonZeroDivisors.exists_finiteExtension_factorization_of_ringKrullDim_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalRing/PrepareTwoNonZeroDivisors.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalRing/PrepareTwoNonZeroDivisors.lean#L47).
+**`Stacks.PrepareNonZeroDivisors.exists_finiteExtension_factorization_of_ringKrullDim_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalRing/PrepareTwoNonZeroDivisors.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalRing/PrepareTwoNonZeroDivisors.lean#L47).
 
 > **Stacks Project, Tag 02Q7.** Let `R` be a one-dimensional Noetherian local ring and let `a`
 > and `b` be nonzerodivisors. There is a finite ring extension in which they have a common
@@ -74,7 +74,7 @@ theorem exists_finiteExtension_factorization_of_ringKrullDim_eq_one
 
 [Tag 0EAF](https://stacks.math.columbia.edu/tag/0EAF) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_bound_factorization_exponent_of_finite_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PreparationTameSymbols/Basic.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/PreparationTameSymbols/Basic.lean#L221).
+**`AlgebraicGeometry.exists_bound_factorization_exponent_of_finite_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PreparationTameSymbols/Basic.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PreparationTameSymbols/Basic.lean#L221).
 
 > **Stacks Project, Tag 0EAF.** Let `R` be a one-dimensional Noetherian local ring and let
 > `a` and `b` be nonzerodivisors, with `a` in the maximal ideal. There is a uniform bound on an
@@ -94,7 +94,7 @@ public theorem exists_bound_factorization_exponent_of_finite_extension
 
 [Tag 0EAG](https://stacks.math.columbia.edu/tag/0EAG) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_tameSymbolPreparation_of_ringKrullDim_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PreparationTameSymbols/Existence.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/PreparationTameSymbols/Existence.lean#L36).
+**`AlgebraicGeometry.exists_tameSymbolPreparation_of_ringKrullDim_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PreparationTameSymbols/Existence.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PreparationTameSymbols/Existence.lean#L36).
 
 > **Stacks Project, Tag 0EAG.** Nonzerodivisors in a one-dimensional Noetherian local ring, not
 > all of which are units, admit a simultaneous tame-symbol preparation after a finite extension
@@ -116,4 +116,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.4, Tag 0EAD](https://stacks.math.columbia.edu/tag/0EAD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

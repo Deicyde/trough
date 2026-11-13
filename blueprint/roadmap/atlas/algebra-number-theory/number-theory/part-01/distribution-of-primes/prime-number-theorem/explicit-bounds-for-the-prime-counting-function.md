@@ -7,7 +7,7 @@ statement: formalized
 
 # Explicit bounds for the prime-counting function
 
-35 results, 35 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html).
+35 results, 35 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html).
 
 ## Axler's six-term upper bound for the prime-counting function
 
@@ -24,7 +24,7 @@ $$
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.primeCounting_lt_div_log_sub_six_terms` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-lt-div-log-sub-six-terms).
+Stated but not proved: `MetaMathlibExt.primeCounting_lt_div_log_sub_six_terms` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-lt-div-log-sub-six-terms).
 
 ## Axler's six-term lower bound for the prime-counting function
 
@@ -44,7 +44,7 @@ $p \le x$.
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.div_log_sub_six_terms_lt_primeCounting` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#div-log-sub-six-terms-lt-prime-counting).
+Stated but not proved: `MetaMathlibExt.div_log_sub_six_terms_lt_primeCounting` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#div-log-sub-six-terms-lt-prime-counting).
 
 ## Axler's unconditional three-term lower bound for the prime-counting function
 
@@ -64,7 +64,7 @@ $x \ge 65405887$ under the Riemann hypothesis.
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Theorem 4, inequality (14).
 
-Stated but not proved: `MetaMathlibExt.div_log_sub_three_terms_lt_primeCounting` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#div-log-sub-three-terms-lt-prime-countin).
+Stated but not proved: `MetaMathlibExt.div_log_sub_three_terms_lt_primeCounting` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#div-log-sub-three-terms-lt-prime-countin).
 
 ## Axler's upper bound for the prime-counting function above 29.53
 
@@ -79,7 +79,7 @@ $$
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.primeCounting_lt_div_log_sub_four_terms` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-lt-div-log-sub-four-terms).
+Stated but not proved: `MetaMathlibExt.primeCounting_lt_div_log_sub_four_terms` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-lt-div-log-sub-four-terms).
 
 ## Eight-term upper bound for the prime-counting function
 
@@ -93,7 +93,7 @@ $\pi(x) < \frac{x}{\log x} + \frac{x}{\log^2 x} + \frac{2x}{\log^3 x} +
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.primeCounting_lt_eight_term_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-lt-eight-term-series).
+Stated but not proved: `MetaMathlibExt.primeCounting_lt_eight_term_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-lt-eight-term-series).
 
 ## Axler's four-term series lower bound for the prime-counting function
 
@@ -108,7 +108,7 @@ $$
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.four_term_series_lt_primeCounting` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#four-term-series-lt-prime-counting).
+Stated but not proved: `MetaMathlibExt.four_term_series_lt_primeCounting` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#four-term-series-lt-prime-counting).
 
 ## Axler's primes in short intervals
 
@@ -123,7 +123,7 @@ $p$ with $x < p \le x\,(1 + 46^n b/\log^n x)$.
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Theorem 1 and Table 1.
 
-Stated but not proved: `MetaMathlibExt.exists_prime_mem_Ioc_mul_one_add_div_log_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#exists-prime-mem-ioc-mul-one-add-div-log).
+Stated but not proved: `MetaMathlibExt.exists_prime_mem_Ioc_mul_one_add_div_log_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#exists-prime-mem-ioc-mul-one-add-div-log).
 
 ## Axler's Table 2 upper bounds for the prime-counting function
 
@@ -140,7 +140,7 @@ $$
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Corollary 1 and Table 2.
 
-Stated but not proved: `MetaMathlibExt.primeCounting_lt_div_log_sub_table_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-lt-div-log-sub-table-two).
+Stated but not proved: `MetaMathlibExt.primeCounting_lt_div_log_sub_table_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-lt-div-log-sub-table-two).
 
 ## Axler's Table 3 upper bounds for the prime-counting function
 
@@ -158,7 +158,7 @@ $$
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Corollary 2 and Table 3.
 
-Stated but not proved: `MetaMathlibExt.primeCounting_lt_div_log_sub_table_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-lt-div-log-sub-table-thre).
+Stated but not proved: `MetaMathlibExt.primeCounting_lt_div_log_sub_table_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-lt-div-log-sub-table-thre).
 
 ## Three-term upper bounds for the prime-counting function (Table 4)
 
@@ -176,7 +176,7 @@ $(0.29, 57720805589)$.
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Corollary 3 and Table 4.
 
-Stated but not proved: `MetaMathlibExt.primeCounting_lt_three_term_series_table_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-lt-three-term-series-tabl).
+Stated but not proved: `MetaMathlibExt.primeCounting_lt_three_term_series_table_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-lt-three-term-series-tabl).
 
 ## Axler's Table 5 lower bounds for the prime-counting function
 
@@ -195,7 +195,7 @@ $$
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Corollary 4 and Table 5.
 
-Stated but not proved: `MetaMathlibExt.div_log_sub_table_five_lt_primeCounting` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#div-log-sub-table-five-lt-prime-counting).
+Stated but not proved: `MetaMathlibExt.div_log_sub_table_five_lt_primeCounting` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#div-log-sub-table-five-lt-prime-counting).
 
 ## Axler's Table 6 lower bounds for the prime-counting function
 
@@ -217,7 +217,7 @@ $$
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Corollary 5 and Table 6.
 
-Stated but not proved: `MetaMathlibExt.eight_term_series_table_six_lt_primeCounting` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#eight-term-series-table-six-lt-prime-cou).
+Stated but not proved: `MetaMathlibExt.eight_term_series_table_six_lt_primeCounting` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#eight-term-series-table-six-lt-prime-cou).
 
 ## Axler's cubic-logarithm bound for Chebyshev's theta function
 
@@ -235,7 +235,7 @@ $p \le x$.
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 1, inequality (6).
 
-Stated but not proved: `MetaMathlibExt.abs_theta_sub_lt_div_log_cube` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-theta-sub-lt-div-log-cube).
+Stated but not proved: `MetaMathlibExt.abs_theta_sub_lt_div_log_cube` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-theta-sub-lt-div-log-cube).
 
 ## Axler's four bounds for Chebyshev's theta function
 
@@ -253,7 +253,7 @@ These bounds are re-established after the correction of Faber and Kadiri's bound
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 3, inequalities (25)-(28).
 
-Stated but not proved: `MetaMathlibExt.abs_theta_sub_lt_axler_four_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-theta-sub-lt-axler-four-bounds).
+Stated but not proved: `MetaMathlibExt.abs_theta_sub_lt_axler_four_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-theta-sub-lt-axler-four-bounds).
 
 ## Axler's explicit Mertens second theorem
 
@@ -272,7 +272,7 @@ $\gamma + \sum_p (\log(1 - 1/p) + 1/p)$, with $\gamma$ Euler's constant.
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Theorem 5, inequality (17).
 
-Stated but not proved: `MetaMathlibExt.abs_sum_inv_prime_sub_log_log_sub_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-sum-inv-prime-sub-log-log-sub-le).
+Stated but not proved: `MetaMathlibExt.abs_sum_inv_prime_sub_log_log_sub_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-sum-inv-prime-sub-log-log-sub-le).
 
 ## Axler's explicit Mertens first theorem
 
@@ -291,7 +291,7 @@ $-\gamma - \sum_p \log p / (p(p-1)) = -1.3325\ldots$, with $\gamma$ Euler's cons
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.abs_sum_log_div_prime_sub_log_sub_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-sum-log-div-prime-sub-log-sub-le).
+Stated but not proved: `MetaMathlibExt.abs_sum_log_div_prime_sub_log_sub_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-sum-log-div-prime-sub-log-sub-le).
 
 ## Explicit Mertens third theorem
 
@@ -305,7 +305,7 @@ $\frac{e^{-\gamma}}{\log x} \exp(-f(x)) < \prod_{p \le x} \left(1 - \frac{1}{p}\
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.prod_one_sub_inv_prime_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prod-one-sub-inv-prime-bounds).
+Stated but not proved: `MetaMathlibExt.prod_one_sub_inv_prime_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prod-one-sub-inv-prime-bounds).
 
 ## Explicit bounds for $\prod_{p \le x} (1 + 1/p)$
 
@@ -320,7 +320,7 @@ $\frac{6 e^{\gamma}}{\pi^2} \exp\left(-f(x) - \frac{1.02}{(x - 1) \log x}\right)
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Corollary 7.
 
-Stated but not proved: `MetaMathlibExt.prod_one_add_inv_prime_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prod-one-add-inv-prime-bounds).
+Stated but not proved: `MetaMathlibExt.prod_one_add_inv_prime_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prod-one-add-inv-prime-bounds).
 
 ## Converting a lower bound for $\pi(x)$ into a truncated series
 
@@ -340,7 +340,7 @@ statement prints $b_{k-1}$ instead, which would give $b_3 = 9.951332$ there.
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.series_lt_primeCounting_of_lt_primeCounting` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#series-lt-prime-counting-of-lt-prime-cou).
+Stated but not proved: `MetaMathlibExt.series_lt_primeCounting_of_lt_primeCounting` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#series-lt-prime-counting-of-lt-prime-cou).
 
 ## Prime counting between the auxiliary functions $J$
 
@@ -359,7 +359,7 @@ The inequalities are non-strict, as the paper prints them.
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.primeCounting_mem_Icc_auxJ` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-mem-icc-aux-j).
+Stated but not proved: `MetaMathlibExt.primeCounting_mem_Icc_auxJ` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-mem-icc-aux-j).
 
 ## Büthe's bound of the prime-counting function by the logarithmic integral
 
@@ -374,7 +374,7 @@ The paper prints the non-strict form; Büthe's original bound is strict.
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Lemma 2 (Büthe).
 
-Stated but not proved: `MetaMathlibExt.primeCounting_le_logarithmicIntegral` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-le-logarithmic-integral).
+Stated but not proved: `MetaMathlibExt.primeCounting_le_logarithmicIntegral` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-counting-le-logarithmic-integral).
 
 ## Johnston's range for Schoenfeld's inequality
 
@@ -392,7 +392,7 @@ integral.
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Lemma 3 (Johnston).
 
-Stated but not proved: `MetaMathlibExt.abs_primeCounting_sub_logarithmicIntegral_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-prime-counting-sub-logarithmic-integ).
+Stated but not proved: `MetaMathlibExt.abs_primeCounting_sub_logarithmicIntegral_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-prime-counting-sub-logarithmic-integ).
 
 ## Tails of prime power sums from a Chebyshev bound
 
@@ -412,7 +412,7 @@ where $\operatorname{li}$ is the logarithmic integral and the sums run over prim
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.abs_logarithmicIntegral_add_tsum_inv_prime_pow_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-logarithmic-integral-add-tsum-inv-pr).
+Stated but not proved: `MetaMathlibExt.abs_logarithmicIntegral_add_tsum_inv_prime_pow_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-logarithmic-integral-add-tsum-inv-pr).
 
 ## The Mertens remainder from a Chebyshev bound
 
@@ -433,7 +433,7 @@ where $\operatorname{li}$ is the logarithmic integral.
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 8; `S(x)` as in the paper's equation (6.5).
 
-Stated but not proved: `MetaMathlibExt.abs_mertensRemainder_sub_tsum_logarithmicIntegral_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-mertens-remainder-sub-tsum-logarithm).
+Stated but not proved: `MetaMathlibExt.abs_mertensRemainder_sub_tsum_logarithmicIntegral_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-mertens-remainder-sub-tsum-logarithm).
 
 ## Tails of prime power sums under the Riemann hypothesis
 
@@ -451,7 +451,7 @@ where $\operatorname{li}$ is the logarithmic integral and the sum runs over the 
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 9.
 
-Stated but not proved: `MetaMathlibExt.abs_logarithmicIntegral_add_tsum_inv_prime_pow_lt_of_RH` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-logarithmic-integral-add-tsum-inv-pr-2).
+Stated but not proved: `MetaMathlibExt.abs_logarithmicIntegral_add_tsum_inv_prime_pow_lt_of_RH` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#abs-logarithmic-integral-add-tsum-inv-pr-2).
 
 ## The last branch of Axler's error factor is nonincreasing
 
@@ -473,7 +473,7 @@ $a(t) \le a(x_1)$ show that $a_n$ is a typo for $a$.
 
 - Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Lemma 5, with the function `a` defined at the start of Section 6.
 
-Stated but not proved: `MetaMathlibExt.axlerThetaErrorFactor_tail_antitone` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 389](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L389). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#axler-theta-error-factor-tail-antitone).
+Stated but not proved: `MetaMathlibExt.axlerThetaErrorFactor_tail_antitone` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean, line 389](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/AxlerEffectivePrimeEstimatesWanted.lean#L389). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#axler-theta-error-factor-tail-antitone).
 
 ## Dusart's primes in short intervals
 
@@ -485,7 +485,7 @@ logarithm.
 
 - Pierre Dusart, arXiv:1002.0442v1, Proposition at source lines 549--552; stable ID `lead:dusart-2010-prime-interval:aee139bd68`.
 
-Stated but not proved: `dusart_2010_prime_interval_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/Dusart2010.lean, line 19](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/Dusart2010.lean#L19). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-2010-prime-interval-bound).
+Stated but not proved: `dusart_2010_prime_interval_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/Dusart2010.lean, line 19](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/Dusart2010.lean#L19). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-2010-prime-interval-bound).
 
 ## Dusart's upper bound for $\pi(x)$ for all $x > 1$
 
@@ -497,7 +497,7 @@ $\pi(x) \le \frac{x}{\log x} \bigl(1 + \frac{1.2762}{\log x}\bigr)$.
 
 - Pierre Dusart, "Explicit estimates of some functions over primes," *The Ramanujan Journal* 45 (2018), 227-251, Corollary 5.2(d).
 
-Stated but not proved: `dusart_pi_upper` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/Dusart2010.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/Dusart2010.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-pi-upper).
+Stated but not proved: `dusart_pi_upper` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/Dusart2010.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/Dusart2010.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-pi-upper).
 
 ## Dusart's lower bound for $\pi(x)$ for $x \ge 599$
 
@@ -509,7 +509,7 @@ $\frac{x}{\log x} \bigl(1 + \frac{1}{\log x}\bigr) \le \pi(x)$.
 
 - Pierre Dusart, "Explicit estimates of some functions over primes," *The Ramanujan Journal* 45 (2018), 227-251, Corollary 5.2(c).
 
-Stated but not proved: `dusart_pi_lower` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/Dusart2010.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/Dusart2010.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-pi-lower).
+Stated but not proved: `dusart_pi_lower` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/Dusart2010.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/Dusart2010.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-pi-lower).
 
 ## Dusart's asymptotic expansion of $\pi(x)$ with explicit error
 
@@ -523,7 +523,7 @@ $$\pi(x) = \frac{x}{\log x} \Bigl(1 + \frac{1}{\log x} + \frac{2}{(\log x)^2} + 
 
 - Pierre Dusart, *Explicit estimates of some functions over primes*, Ramanujan J. 45(1) (2018), 227–251, <https://doi.org/10.1007/s11139-016-9839-4>, Theorem 5.1.
 
-Stated but not proved: `MetaMathlibExt.dusart_pi_asymptotic_expansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/DusartPiAsymptoticExpansionWanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/DusartPiAsymptoticExpansionWanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-pi-asymptotic-expansion).
+Stated but not proved: `MetaMathlibExt.dusart_pi_asymptotic_expansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/DusartPiAsymptoticExpansionWanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/DusartPiAsymptoticExpansionWanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-pi-asymptotic-expansion).
 
 ## Dusart's second-order lower bound for $\pi(x)$
 
@@ -536,7 +536,7 @@ $$\pi(x) \ge \frac{x}{\log x}\left(1 + \frac{1}{\log x} + \frac{2}{(\log x)^2}\r
 
 - Pierre Dusart, *Explicit estimates of some functions over primes*, Ramanujan J. 45(1) (2018), 227–251, <https://doi.org/10.1007/s11139-016-9839-4>, Corollary 5.2(e).
 
-Stated but not proved: `MetaMathlibExt.dusart_pi_lower_second_order` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/DusartPiLowerSecondOrderWanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/DusartPiLowerSecondOrderWanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-pi-lower-second-order).
+Stated but not proved: `MetaMathlibExt.dusart_pi_lower_second_order` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/DusartPiLowerSecondOrderWanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/DusartPiLowerSecondOrderWanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-pi-lower-second-order).
 
 ## Dusart's shifted-logarithm lower bound for $\pi(x)$
 
@@ -548,7 +548,7 @@ $\pi(x) \ge \frac{x}{\log x - 1}$.
 
 - Pierre Dusart, *Explicit estimates of some functions over primes*, Ramanujan J. 45(1) (2018), 227–251, <https://doi.org/10.1007/s11139-016-9839-4>, Corollary 5.3(a).
 
-Stated but not proved: `MetaMathlibExt.dusart_pi_lower_shifted_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/DusartPiLowerShiftedLogWanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/DusartPiLowerShiftedLogWanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-pi-lower-shifted-log).
+Stated but not proved: `MetaMathlibExt.dusart_pi_lower_shifted_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/DusartPiLowerShiftedLogWanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/DusartPiLowerShiftedLogWanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-pi-lower-shifted-log).
 
 ## Dusart's second-order upper bound for $\pi(x)$
 
@@ -561,7 +561,7 @@ $$\pi(x) \le \frac{x}{\log x}\left(1 + \frac{1}{\log x} + \frac{2.53816}{(\log x
 
 - Pierre Dusart, *Explicit estimates of some functions over primes*, Ramanujan J. 45(1) (2018), 227–251, <https://doi.org/10.1007/s11139-016-9839-4>, Corollary 5.2(f).
 
-Stated but not proved: `MetaMathlibExt.dusart_pi_upper_second_order` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/DusartPiUpperSecondOrderWanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/DusartPiUpperSecondOrderWanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-pi-upper-second-order).
+Stated but not proved: `MetaMathlibExt.dusart_pi_upper_second_order` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/DusartPiUpperSecondOrderWanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/DusartPiUpperSecondOrderWanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-pi-upper-second-order).
 
 ## Dusart's shifted-logarithm upper bound for $\pi(x)$
 
@@ -573,7 +573,7 @@ $\pi(x) \le \frac{x}{\log x - 1.112}$.
 
 - Pierre Dusart, *Explicit estimates of some functions over primes*, Ramanujan J. 45(1) (2018), 227–251, <https://doi.org/10.1007/s11139-016-9839-4>, Corollary 5.3(b).
 
-Stated but not proved: `MetaMathlibExt.dusart_pi_upper_shifted_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/DusartPiUpperShiftedLogWanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/DusartPiUpperShiftedLogWanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-pi-upper-shifted-log).
+Stated but not proved: `MetaMathlibExt.dusart_pi_upper_shifted_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/DusartPiUpperShiftedLogWanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/DusartPiUpperShiftedLogWanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#dusart-pi-upper-shifted-log).
 
 ## Counting primes with prime subscripts
 
@@ -590,7 +590,7 @@ $$
 
 - Kevin A. Broughan and A. Ross Barnett, "On the Subsequence of Primes Having Prime Subscripts," Journal of Integer Sequences 12 (2009), Article 09.2.3, Theorem, lines 225–234, <https://cs.uwaterloo.ca/journals/JIS/VOL12/Broughan/broughan16.tex>.
 
-Stated but not proved: `MetaMathlibExt.prime_prime_counting_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/PrimePrimeCountingWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/PrimePrimeCountingWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-prime-counting-asymptotic).
+Stated but not proved: `MetaMathlibExt.prime_prime_counting_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/PrimePrimeCountingWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/PrimePrimeCountingWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html#prime-prime-counting-asymptotic).
 
 ## Depends on
 
@@ -599,4 +599,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Explicit bounds for the prime-counting function](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/explicit-bounds-for-the-prime-counting-function)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.79 Cohomology with support in a closed subscheme
 
-Section 59.79 of the Stacks Project, [Tag 09XP](https://stacks.math.columbia.edu/tag/09XP). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.79 of the Stacks Project, [Tag 09XP](https://stacks.math.columbia.edu/tag/09XP). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09XQ, a lemma
 
 [Tag 09XQ](https://stacks.math.columbia.edu/tag/09XQ) in the Stacks Project.
 
-**`AlgebraicGeometry.injective_supportedSections_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedSectionsInjective.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedSectionsInjective.lean#L313).
+**`AlgebraicGeometry.injective_supportedSections_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedSectionsInjective.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedSectionsInjective.lean#L313).
 
 > **Stacks 09XQ.** The sections with support in a closed subscheme of an injective abelian
 > sheaf on the small étale site of the ambient scheme form an injective abelian sheaf on the
@@ -29,7 +29,7 @@ public theorem injective_supportedSections_obj (I : SmallEtaleAbelianSheaf B X) 
 
 [Tag 09XR](https://stacks.math.columbia.edu/tag/09XR) in the Stacks Project.
 
-**`AlgebraicGeometry.isZero_rightDerivedPlus_supportedSections_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupport.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupport.lean#L230).
+**`AlgebraicGeometry.isZero_rightDerivedPlus_supportedSections_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupport.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupport.lean#L230).
 
 > **Stacks 09XR.** The cohomology sheaves with support in a closed subscheme of the direct
 > image of an injective abelian sheaf on that subscheme vanish in positive degrees.
@@ -47,7 +47,7 @@ public theorem isZero_rightDerivedPlus_supportedSections_pushforward
 
 [Tag 0A45](https://stacks.math.columbia.edu/tag/0A45) in the Stacks Project.
 
-**`AlgebraicGeometry.mono_supportedSectionsPushforwardInclusion_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportSequence.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportSequence.lean#L211). The attribute's comment: “exactness of 0 ⟶ i\_*ℋ\_Z(F) ⟶ F ⟶ j\_*(F|\_U): the first map is a monomorphism”.
+**`AlgebraicGeometry.mono_supportedSectionsPushforwardInclusion_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportSequence.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportSequence.lean#L211). The attribute's comment: “exactness of 0 ⟶ i\_*ℋ\_Z(F) ⟶ F ⟶ j\_*(F|\_U): the first map is a monomorphism”.
 
 > **Stacks 0A45.** The sections with support in the closed subscheme include into an abelian
 > sheaf: the first map of the sequence `0 ⟶ i_*ℋ_Z(F) ⟶ F ⟶ j_*(F|_U)` is a monomorphism.
@@ -58,7 +58,7 @@ public theorem mono_supportedSectionsPushforwardInclusion_app
     Mono ((supportedSectionsPushforwardInclusion B i).app F)
 ```
 
-**`AlgebraicGeometry.supportedSectionsShortComplex_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportSequence.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportSequence.lean#L223). The attribute's comment: “exactness of 0 ⟶ i\_*ℋ\_Z(F) ⟶ F ⟶ j\_*(F|\_U): exactness at F”.
+**`AlgebraicGeometry.supportedSectionsShortComplex_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportSequence.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportSequence.lean#L223). The attribute's comment: “exactness of 0 ⟶ i\_*ℋ\_Z(F) ⟶ F ⟶ j\_*(F|\_U): exactness at F”.
 
 > **Stacks 0A45.** The sequence `0 ⟶ i_*ℋ_Z(F) ⟶ F ⟶ j_*(F|_U)` is exact at `F`: a section
 > restricting to zero on the open complement has support in the closed subscheme.  Together with
@@ -69,7 +69,7 @@ public theorem supportedSectionsShortComplex_exact (F : SmallEtaleAbelianSheaf B
     (supportedSectionsShortComplex B i F).Exact
 ```
 
-**`AlgebraicGeometry.cohomologyWithSupportSequences`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportTriangle.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportTriangle.lean#L369).
+**`AlgebraicGeometry.cohomologyWithSupportSequences`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportTriangle.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportTriangle.lean#L369).
 
 > **Stacks 0A45.**  Let `i : Z ⟶ X` be a closed immersion of schemes and let `j : U ⟶ X` be
 > the inclusion of the complement of `Z`.  For an abelian sheaf `F` on `X_étale` there is a
@@ -104,7 +104,7 @@ public def cohomologyWithSupportSequences : CohomologyWithSupportSequences B i
 
 [Tag 0AEG](https://stacks.math.columbia.edu/tag/0AEG) in the Stacks Project.
 
-**`AlgebraicGeometry.closedImmersionSupportedDerivedEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionSupportedDerivedEquivalence.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionSupportedDerivedEquivalence.lean#L341).
+**`AlgebraicGeometry.closedImmersionSupportedDerivedEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionSupportedDerivedEquivalence.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionSupportedDerivedEquivalence.lean#L341).
 
 > **Stacks 0AEG.** Let `i : Z ⟶ X` be a closed immersion of schemes.  Direct image of abelian
 > sheaves along `i` is exact, so `Ri_{small,*} = i_{small,*} : D(Z_étale) ⟶ D(X_étale)`, and it
@@ -118,7 +118,7 @@ public def closedImmersionSupportedDerivedEquivalence :
     ClosedImmersionSupportedDerivedEquivalence.{w₁, w₂} B i
 ```
 
-**`AlgebraicGeometry.smallEtalePushforward_exact_ab`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean#L359). The attribute's comment: “Ri\_* = i\_* : direct image is exact, hence equal to its right derived functor”.
+**`AlgebraicGeometry.smallEtalePushforward_exact_ab`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean#L359). The attribute's comment: “Ri\_* = i\_* : direct image is exact, hence equal to its right derived functor”.
 
 > **Stacks 0AEG.** Direct image of abelian sheaves along a closed immersion is exact, so it
 > coincides with its own right derived functor: `Ri_{small,*} = i_{small,*}`.
@@ -131,7 +131,7 @@ public theorem smallEtalePushforward_exact_ab :
         (SmallEtale.topology B Z.1 Z.property))
 ```
 
-**`AlgebraicGeometry.smallEtalePushforwardSupportedEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean#L464). The attribute's comment: “i\_* induces an equivalence D(Z\_étale) → D\_Z(X\_étale)”.
+**`AlgebraicGeometry.smallEtalePushforwardSupportedEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean#L464). The attribute's comment: “i\_* induces an equivalence D(Z\_étale) → D\_Z(X\_étale)”.
 
 > **Stacks 0AEG.** Direct image along a closed immersion induces an equivalence of
 > `D(Z_étale)` with the full subcategory `D_Z(X_étale)` of `D(X_étale)` of complexes whose
@@ -142,7 +142,7 @@ public def smallEtalePushforwardSupportedEquivalence :
     DerivedCategory (SmallEtaleAbelianSheaf B Z) ≌ SupportedDerivedCategory.{w₂} B i
 ```
 
-**`AlgebraicGeometry.smallEtalePushforwardSupportedEquivalence_functor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean#L473). The attribute's comment: “the equivalence is induced by i\_*”.
+**`AlgebraicGeometry.smallEtalePushforwardSupportedEquivalence_functor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean#L473). The attribute's comment: “the equivalence is induced by i\_*”.
 
 > **Stacks 0AEG.** The equivalence is given by direct image: composed with the inclusion of
 > `D_Z(X_étale)` into `D(X_étale)` it is the functor induced by `i_*`.
@@ -156,7 +156,7 @@ public def smallEtalePushforwardSupportedEquivalence_functor :
         (SmallEtale.topology B Z.obj Z.property)).mapDerivedCategory
 ```
 
-**`AlgebraicGeometry.smallEtalePushforwardSupportedEquivalence_inverse`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean#L484). The attribute's comment: “the quasi-inverse is i^\{-1} restricted to D\_Z(X\_étale)”.
+**`AlgebraicGeometry.smallEtalePushforwardSupportedEquivalence_inverse`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean, line 484](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean#L484). The attribute's comment: “the quasi-inverse is i^\{-1} restricted to D\_Z(X\_étale)”.
 
 > **Stacks 0AEG.** The quasi-inverse of the equivalence is inverse image restricted to
 > `D_Z(X_étale)`: `i^{-1}|_{D_Z(X_étale)}`.
@@ -174,7 +174,7 @@ public def smallEtalePushforwardSupportedEquivalence_inverse :
 
 [Tag 0A46](https://stacks.math.columbia.edu/tag/0A46) in the Stacks Project.
 
-**`AlgebraicGeometry.supportedCohomologyEtaleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportEtaleZariski.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportEtaleZariski.lean#L226). The attribute's comment: “clause (1): cohomology with support in a closed subset agrees between the small etale site and the Zariski site, for a quasi-coherent module, in every degree, with no hypothesis beyond the source's. Clause (2) is supportedCohomology\_isQuasicoherent\_and\_associatedSheaf, on the size-bounded small etale site”.
+**`AlgebraicGeometry.supportedCohomologyEtaleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportEtaleZariski.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportEtaleZariski.lean#L226). The attribute's comment: “clause (1): cohomology with support in a closed subset agrees between the small etale site and the Zariski site, for a quasi-coherent module, in every degree, with no hypothesis beyond the source's. Clause (2) is supportedCohomology\_isQuasicoherent\_and\_associatedSheaf, on the size-bounded small etale site”.
 
 > **Stacks 0A46, clause (1).**  For a quasi-coherent `𝒪_X`-module `F` and a closed subset `Z`
 > of a scheme `X`, cohomology with support in `Z` of the associated sheaf `Fᵃ` on the small étale
@@ -196,7 +196,7 @@ public def supportedCohomologyEtaleIso (F : X.Modules) [F.IsQuasicoherent] (q : 
         ((SheafOfModules.toSheaf X.ringCatSheaf).obj F)
 ```
 
-**`AlgebraicGeometry.supportedCohomology_isQuasicoherent_and_associatedSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportQuasicoherent.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportQuasicoherent.lean#L181). The attribute's comment: “clause (2): for a closed immersion with retrocompact open complement and a quasi-coherent module F, i\_*H^q\_Z(F) is quasi-coherent and i\_*H^q\_Z(F^a) = (i\_*H^q\_Z(F))^a on the small etale site, for every q”.
+**`AlgebraicGeometry.supportedCohomology_isQuasicoherent_and_associatedSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportQuasicoherent.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologyWithSupportQuasicoherent.lean#L181). The attribute's comment: “clause (2): for a closed immersion with retrocompact open complement and a quasi-coherent module F, i\_*H^q\_Z(F) is quasi-coherent and i\_*H^q\_Z(F^a) = (i\_*H^q\_Z(F))^a on the small etale site, for every q”.
 
 > Let `i : Z ⟶ X` be a closed immersion whose open complement is retrocompact in `X`, and let
 > `𝓕` be a quasi-coherent `𝒪_X`-module.  Then for every `q` the Zariski sheaf `i_*ℋ^q_Z(𝓕)` is a
@@ -236,4 +236,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.79, Tag 09XP](https://stacks.math.columbia.edu/tag/09XP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

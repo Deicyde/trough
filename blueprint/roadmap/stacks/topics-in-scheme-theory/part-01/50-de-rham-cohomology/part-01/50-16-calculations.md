@@ -8,13 +8,13 @@ proof: formalized
 
 # 50.16 Calculations
 
-Section 50.16 of the Stacks Project, [Tag 0FUB](https://stacks.math.columbia.edu/tag/0FUB). 3 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 50.16 of the Stacks Project, [Tag 0FUB](https://stacks.math.columbia.edu/tag/0FUB). 3 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FUR, a lemma
 
 [Tag 0FUR](https://stacks.math.columbia.edu/tag/0FUR) in the Stacks Project.
 
-**`Stacks.DeRham.isIso_coordinateFormsRestrictionHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDerivedComparison.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDerivedComparison.lean#L72). The attribute's comment: “clause (3), in the setting of Section 0FUB, which fixes a ring R and sets S = Spec(R), Z = A^m\_S ⊂ X = A^\{m+n}\_S with n ≥ 1”.
+**`Stacks.DeRham.isIso_coordinateFormsRestrictionHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDerivedComparison.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDerivedComparison.lean#L72). The attribute's comment: “clause (3), in the setting of Section 0FUB, which fixes a ring R and sets S = Spec(R), Z = A^m\_S ⊂ X = A^\{m+n}\_S with n ≥ 1”.
 
 > **[Stacks, Tag 0FUR], clause (3).** For `n ≥ 1`, every `a ≥ 0` and every `q ≥ 1`, the map
 > `H^q(Rb_*Ω^a_{L/S}) ⟶ H^q(Rb_*j_*Ω^a_{E/S})` induced by restricting forms to the exceptional
@@ -28,7 +28,7 @@ theorem isIso_coordinateFormsRestrictionHomology (hn : 1 ≤ n) (a : ℕ) (q : �
       (coordinateBlowupToAmbient R m n ≫ coordinateAmbientToBase R m n) a q)
 ```
 
-**`Stacks.DeRham.isIso_homology_coordinateBlowupFormsDerivedComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDerivedComparison.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDerivedComparison.lean#L85). The attribute's comment: “clause (3), for the comparison map Rb\_*Ω^a ⟶ i\_*Rp\_*Ω^a, in the setting of Section 0FUB, which fixes a ring R and sets S = Spec(R), Z = A^m\_S ⊂ X = A^\{m+n}\_S with n ≥ 1”.
+**`Stacks.DeRham.isIso_homology_coordinateBlowupFormsDerivedComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDerivedComparison.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDerivedComparison.lean#L86). The attribute's comment: “clause (3), for the comparison map Rb\_*Ω^a ⟶ i\_*Rp\_*Ω^a, in the setting of Section 0FUB, which fixes a ring R and sets S = Spec(R), Z = A^m\_S ⊂ X = A^\{m+n}\_S with n ≥ 1”.
 
 > **[Stacks, Tag 0FUR], clause (3), for the comparison map** `Rb_*Ω^a_{L/S} ⟶ i_*Rp_*Ω^a_{E/S}`
 > (`Stacks.DeRham.blowupFormsDerivedComparison` of the coordinate closed immersion
@@ -43,7 +43,7 @@ theorem isIso_homology_coordinateBlowupFormsDerivedComparison (hn : 1 ≤ n) (a 
         (Stacks.MoreMorphisms.coordinateEmbedding R m n) (a : ℤ)))
 ```
 
-**`Stacks.DeRham.isIso_coordinateBlowupFormsDirectImage_of_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDirectImage.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDirectImage.lean#L252). The attribute's comment: “clause (1) for n = 1, in every degree a ≥ 0; n > 1 is not proved”.
+**`Stacks.DeRham.isIso_coordinateBlowupFormsDirectImage_of_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDirectImage.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDirectImage.lean#L252). The attribute's comment: “clause (1) for n = 1, in every degree a ≥ 0; n > 1 is not proved”.
 
 > **[Stacks, Tag 0FUR], clause (1), in the case `n = 1`.** The canonical map
 > `Ω^a_{X/S} ⟶ b_*Ω^a_{L/S}` is an isomorphism in every degree `a ≥ 0`, because for `n = 1` the
@@ -55,7 +55,7 @@ theorem isIso_coordinateBlowupFormsDirectImage_of_one (a : ℕ) :
     IsIso (coordinateBlowupFormsDirectImage R m 1 a)
 ```
 
-**`Stacks.DeRham.isIso_coordinateBundleFormsDirectImage_of_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDirectImage.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDirectImage.lean#L264). The attribute's comment: “clause (2) for n = 1, in every degree a ≥ 0; at general n only the single degree a = 0 is proved, by Stacks.DeRham.isIso\_coordinateBundleFormsDirectImage\_zero in StacksFrontier.AlgebraicGeometry.DeRham.CoordinateBundleFormsDegreeZero; the degrees a > 0 at general n are not proved”.
+**`Stacks.DeRham.isIso_coordinateBundleFormsDirectImage_of_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDirectImage.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsDirectImage.lean#L264). The attribute's comment: “clause (2) for n = 1, in every degree a ≥ 0; at general n only the single degree a = 0 is proved, by Stacks.DeRham.isIso\_coordinateBundleFormsDirectImage\_zero in StacksFrontier.AlgebraicGeometry.DeRham.CoordinateBundleFormsDegreeZero; the degrees a > 0 at general n are not proved”.
 
 > **[Stacks, Tag 0FUR], clause (2), in the case `n = 1`.** The canonical map
 > `Ω^a_{Z/S} ⟶ p_*Ω^a_{P/S}` is an isomorphism in every degree `a ≥ 0`, because for `n = 1` the
@@ -66,7 +66,7 @@ theorem isIso_coordinateBundleFormsDirectImage_of_one (a : ℕ) :
     IsIso (coordinateBundleFormsDirectImage R m 1 a)
 ```
 
-**`Stacks.DeRham.isIso_coordinateBlowupFormsDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsExtension.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsExtension.lean#L168). The attribute's comment: “clause (1), in the setting of Section 0FUB, which fixes a ring R and sets S = Spec(R), Z = A^m\_S ⊂ X = A^\{m+n}\_S with n ≥ 1”.
+**`Stacks.DeRham.isIso_coordinateBlowupFormsDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsExtension.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupFormsExtension.lean#L168). The attribute's comment: “clause (1), in the setting of Section 0FUB, which fixes a ring R and sets S = Spec(R), Z = A^m\_S ⊂ X = A^\{m+n}\_S with n ≥ 1”.
 
 > **[Stacks, Tag 0FUR], clause (1).** For every ring `R`, every `m`, every `n ≥ 1` and every
 > degree `a ≥ 0`, the canonical map `Ω^a_{X/S} ⟶ b_*Ω^a_{L/S}` is an isomorphism, where
@@ -80,7 +80,7 @@ theorem isIso_coordinateBlowupFormsDirectImage (m n : ℕ) (hn : 1 ≤ n) (a : �
     IsIso (coordinateBlowupFormsDirectImage R m n a)
 ```
 
-**`Stacks.DeRham.isIso_coordinateBundleFormsDirectImage_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBundleFormsDegreeZero.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBundleFormsDegreeZero.lean#L210). The attribute's comment: “clause (2) in the single degree a = 0, at general n: the canonical map Ω^0\_\{Z/S} ⟶ p\_*Ω^0\_\{P/S} is an isomorphism for every n, with no restriction on n; the degrees a > 0 of clause (2) at n > 1, clause (1) at n > 1, and clause (3) in any case, are not proved here”.
+**`Stacks.DeRham.isIso_coordinateBundleFormsDirectImage_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBundleFormsDegreeZero.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBundleFormsDegreeZero.lean#L210). The attribute's comment: “clause (2) in the single degree a = 0, at general n: the canonical map Ω^0\_\{Z/S} ⟶ p\_*Ω^0\_\{P/S} is an isomorphism for every n, with no restriction on n; the degrees a > 0 of clause (2) at n > 1, clause (1) at n > 1, and clause (3) in any case, are not proved here”.
 
 > **[Stacks, Tag 0FUR], clause (2), in degree `a = 0`, for every `n`.** The canonical map
 > `Ω^0_{Z/S} ⟶ p_*Ω^0_{P/S}` is an isomorphism, with no restriction on `n`.
@@ -99,7 +99,7 @@ theorem isIso_coordinateBundleFormsDirectImage_zero :
     IsIso (coordinateBundleFormsDirectImage R m n 0)
 ```
 
-**`Stacks.DeRham.isIso_coordinateBundleFormsDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBundleFormsPushforward.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBundleFormsPushforward.lean#L273). The attribute's comment: “clause (2), in the setting of Section 0FUB, which fixes a ring R and sets S = Spec(R), Z = A^m\_S ⊂ X = A^\{m+n}\_S with n ≥ 1”.
+**`Stacks.DeRham.isIso_coordinateBundleFormsDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBundleFormsPushforward.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBundleFormsPushforward.lean#L273). The attribute's comment: “clause (2), in the setting of Section 0FUB, which fixes a ring R and sets S = Spec(R), Z = A^m\_S ⊂ X = A^\{m+n}\_S with n ≥ 1”.
 
 > **[Stacks, Tag 0FUR], clause (2).** For every ring `R`, all `m, n` and every degree
 > `a ≥ 0`, the canonical map `Ω^a_{Z/S} ⟶ p_*Ω^a_{P/S}` is an isomorphism, where `Z = 𝐀^m_S`,
@@ -113,7 +113,7 @@ theorem isIso_coordinateBundleFormsDirectImage (a : ℕ) :
     IsIso (coordinateBundleFormsDirectImage R m n a)
 ```
 
-**`Stacks.DeRham.CoordinateCone.isIso_coneBundleFormsDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateConeFormsDirectImage.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateConeFormsDirectImage.lean#L272). The attribute's comment: “clause (2): Ω^a\_\{Z/S} ⟶ p\_*Ω^a\_\{P/S} is an isomorphism, every a ≥ 0, every n ≥ 1, for P = Proj(A) and Z = Spec(A₀) as in Section 50.16”.
+**`Stacks.DeRham.CoordinateCone.isIso_coneBundleFormsDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateConeFormsDirectImage.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateConeFormsDirectImage.lean#L272). The attribute's comment: “clause (2): Ω^a\_\{Z/S} ⟶ p\_*Ω^a\_\{P/S} is an isomorphism, every a ≥ 0, every n ≥ 1, for P = Proj(A) and Z = Spec(A₀) as in Section 50.16”.
 
 > **[Stacks, Tag 0FUR], clause (2).** In the standard situation of Section 50.16 — a ring `R`,
 > `S = Spec R`, `m ≥ 0`, `n ≥ 1`, `A = R[x₁, …, x_m, y₁, …, y_n]` graded by `deg xᵢ = 0`,
@@ -132,7 +132,7 @@ theorem isIso_coneBundleFormsDirectImage (hn : 1 ≤ n) (a : ℕ) :
       (a : ℤ))
 ```
 
-**`Stacks.DeRham.CoordinateCone.isIso_homology_coneFormsDerivedComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateConeFormsKernelCech.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateConeFormsKernelCech.lean#L361). The attribute's comment: “clause (3): Rb\_*Ω^a\_\{L/S} ⟶ i\_*Rp\_*Ω^a\_\{P/S} is an isomorphism on cohomology sheaves in every degree q ≥ 1, every a ≥ 0, every n ≥ 1, for the blowup L of X = Spec(A) along Z = Spec(A₀) as in Section 50.16”.
+**`Stacks.DeRham.CoordinateCone.isIso_homology_coneFormsDerivedComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateConeFormsKernelCech.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateConeFormsKernelCech.lean#L361). The attribute's comment: “clause (3): Rb\_*Ω^a\_\{L/S} ⟶ i\_*Rp\_*Ω^a\_\{P/S} is an isomorphism on cohomology sheaves in every degree q ≥ 1, every a ≥ 0, every n ≥ 1, for the blowup L of X = Spec(A) along Z = Spec(A₀) as in Section 50.16”.
 
 > **Clause (3) of [Stacks, Tag 0FUR].** In the standard situation of Section 50.16 — `X = Spec A`
 > for `A = R[x₁, …, x_m, y₁, …, y_n]`, `Z = Spec A₀ = V(y₁, …, y_n)`, `b : L ⟶ X` the blowing up of
@@ -147,7 +147,7 @@ theorem isIso_coneBundleFormsDirectImage (hn : 1 ≤ n) (a : ℕ) :
 > the zero section.
 
 ```lean
-theorem isIso_homology_coneFormsDerivedComparison (hn : 1 ≤ n) (a q : ℕ) (hq : 1 ≤ q) :
+theorem isIso_homology_coneFormsDerivedComparison (a q : ℕ) (hq : 1 ≤ q) :
     IsIso ((DerivedCategory.homologyFunctor _ (q : ℤ)).map
       (coneFormsDerivedComparison R m n (a : ℤ)))
 ```
@@ -156,7 +156,7 @@ theorem isIso_homology_coneFormsDerivedComparison (hn : 1 ≤ n) (a q : ℕ) (hq
 
 [Tag 0G5G](https://stacks.math.columbia.edu/tag/0G5G) in the Stacks Project.
 
-**`Stacks.DeRham.blowupFormsPullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/BlowupDifferentialFormsComparison.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/BlowupDifferentialFormsComparison.lean#L131). The attribute's comment: “the first canonical map b^*Ω^a\_\{X/S} ⟶ Ω^a\_\{L/S}”.
+**`Stacks.DeRham.blowupFormsPullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/BlowupDifferentialFormsComparison.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/BlowupDifferentialFormsComparison.lean#L131). The attribute's comment: “the first canonical map b^*Ω^a\_\{X/S} ⟶ Ω^a\_\{L/S}”.
 
 > **Stacks Project, Tag 0G5G, the first canonical map.** The canonical map
 > `b^*Ω^a_{X/S} ⟶ Ω^a_{L/S}` of the commutative square
@@ -184,7 +184,7 @@ noncomputable def blowupFormsPullbackMap (a : ℕ) :
       Scheme.Hom.relativeDifferentialForms (coordinateBlowupToBase R m n) a
 ```
 
-**`Stacks.DeRham.blowupFormsTwistedComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/BlowupFormsTwistedComparison.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/BlowupFormsTwistedComparison.lean#L77). The attribute's comment: “the second canonical map Ω^a\_\{L/S} ⟶ b^*Ω^a\_\{X/S} ⊗\_\{𝒪\_L} 𝒪\_L((n-1)E)”.
+**`Stacks.DeRham.blowupFormsTwistedComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/BlowupFormsTwistedComparison.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/BlowupFormsTwistedComparison.lean#L77). The attribute's comment: “the second canonical map Ω^a\_\{L/S} ⟶ b^*Ω^a\_\{X/S} ⊗\_\{𝒪\_L} 𝒪\_L((n-1)E)”.
 
 > **Stacks Project, Tag 0G5G, the second canonical map.** The map
 > `Ω^a_{L/S} ⟶ b^*Ω^a_{X/S} ⊗_{𝒪_L} 𝒪_L((n-1)E)`.
@@ -201,7 +201,7 @@ noncomputable def blowupFormsTwistedComparison (a : ℕ) :
       blowupFormsExceptionalTwist R m n a
 ```
 
-**`Stacks.DeRham.blowupFormsPullbackMap_comp_twistedComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/BlowupFormsTwistedComparison.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/BlowupFormsTwistedComparison.lean#L91). The attribute's comment: “the composite of the two maps is induced by the inclusion 𝒪\_L ⊆ 𝒪\_L((n-1)E)”.
+**`Stacks.DeRham.blowupFormsPullbackMap_comp_twistedComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/BlowupFormsTwistedComparison.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/BlowupFormsTwistedComparison.lean#L91). The attribute's comment: “the composite of the two maps is induced by the inclusion 𝒪\_L ⊆ 𝒪\_L((n-1)E)”.
 
 > **Stacks Project, Tag 0G5G, the composite of the two canonical maps.** The composite of
 > `Stacks.DeRham.blowupFormsPullbackMap` with `Stacks.DeRham.blowupFormsTwistedComparison` is the
@@ -220,7 +220,7 @@ theorem blowupFormsPullbackMap_comp_twistedComparison (a : ℕ) :
 
 [Tag 0G5H](https://stacks.math.columbia.edu/tag/0G5H) in the Stacks Project.
 
-**`Stacks.DeRham.isIso_coordinateBlowupTwistDerivedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupTwistDerivedDirectImage.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupTwistDerivedDirectImage.lean#L80).
+**`Stacks.DeRham.isIso_coordinateBlowupTwistDerivedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupTwistDerivedDirectImage.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/CoordinateBlowupTwistDerivedDirectImage.lean#L80).
 
 > **Stacks Project, Tag 0G5H.** Let `b : L ⟶ X = 𝐀^{m+n}_R` be the blowing up of affine space
 > along the coordinate subspace `𝐀^m_R`, `n ≥ 1`, with exceptional divisor `E`. For every locally
@@ -241,4 +241,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 50.16, Tag 0FUB](https://stacks.math.columbia.edu/tag/0FUB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

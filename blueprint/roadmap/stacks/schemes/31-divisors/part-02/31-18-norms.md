@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.18 Norms
 
-Section 31.18 of the Stacks Project, [Tag 0BCX](https://stacks.math.columbia.edu/tag/0BCX). 11 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.18 of the Stacks Project, [Tag 0BCX](https://stacks.math.columbia.edu/tag/0BCX). 11 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BCX, the section
 
 [Tag 0BCX](https://stacks.math.columbia.edu/tag/0BCX) in the Stacks Project.
 
-**`Stacks.Norm.MorphismNorm`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteLocallyFree/Norm.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteLocallyFree/Norm.lean#L125). The attribute's comment: “norm of degree d”.
+**`Stacks.Norm.MorphismNorm`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteLocallyFree/Norm.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteLocallyFree/Norm.lean#L125). The attribute's comment: “norm of degree d”.
 
 > **Stacks Project, Section 0BCX.** A norm of degree `d` for a morphism of schemes: a
 > multiplicative map of sheaves preserving pointwise vanishing whose value on a function pulled
@@ -28,7 +28,7 @@ structure MorphismNorm {X Y : Scheme.{u}} (f : X ⟶ Y) (d : ℕ) extends Morphi
 
 [Tag 0BUT](https://stacks.math.columbia.edu/tag/0BUT) in the Stacks Project.
 
-**`Stacks.Divisors.exists_isTrivial_restrict_preimage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteTrivialize/TargetCover.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FiniteTrivialize/TargetCover.lean#L188).
+**`Stacks.Divisors.exists_isTrivial_restrict_preimage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteTrivialize/TargetCover.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FiniteTrivialize/TargetCover.lean#L188).
 
 > **Stacks Project, Tag 0BUT**, written with `Stacks.SheafOfModules.IsTrivial`: for a finite
 > morphism `f : X ⟶ Y`, an invertible `𝒪_X`-module `L` and a point `y` of `Y`, there is an open
@@ -48,7 +48,7 @@ theorem exists_isTrivial_restrict_preimage_of_isFinite {X Y : Scheme.{u}} (f : X
 
 [Tag 0BCY](https://stacks.math.columbia.edu/tag/0BCY) in the Stacks Project.
 
-**`Stacks.Divisors.hasNormPullbackPower_normPicardData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/PullbackPower.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/PullbackPower.lean#L270). The attribute's comment: “the pullback-power formula”.
+**`Stacks.Divisors.hasNormPullbackPower_normPicardData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/PullbackPower.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormInvertible/PullbackPower.lean#L270). The attribute's comment: “the pullback-power formula”.
 
 > **Stacks Project, Tag 0BCY**, the pullback--power clause: the homomorphism of Picard groups
 > induced by a norm of degree `d` carries the class of `f^*𝒩` to the class of `𝒩^{⊗ d}`, for every
@@ -63,7 +63,7 @@ theorem hasNormPullbackPower_normPicardData (g : X ⟶ Y) [IsFinite g] (e : ℕ)
     HasNormPullbackPower g e (normPicardData g e M).picardMap
 ```
 
-**`Stacks.Divisors.exists_normPicardAddMonoidHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/TensorAdditive.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/TensorAdditive.lean#L335). The attribute's comment: “the homomorphism of abelian groups”.
+**`Stacks.Divisors.exists_normPicardAddMonoidHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/TensorAdditive.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormInvertible/TensorAdditive.lean#L335). The attribute's comment: “the homomorphism of abelian groups”.
 
 > **The norm descends to a homomorphism of Picard groups.**
 
@@ -83,7 +83,7 @@ theorem exists_normPicardAddMonoidHom (f : X ⟶ Y) [IsFinite f] {d : ℕ}
 
 [Tag 0BCZ](https://stacks.math.columbia.edu/tag/0BCZ) in the Stacks Project.
 
-**`Stacks.Divisors.normMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Map.lean, line 571](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/Map.lean#L571). The attribute's comment: “the norm map”.
+**`Stacks.Divisors.normMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Map.lean, line 571](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormInvertible/Map.lean#L571). The attribute's comment: “the norm map”.
 
 > **The norm of a map of invertible modules.** A norm `N` of degree `d` on functions along a
 > finite morphism `f : X ⟶ Y` carries a map `φ : L ⟶ L'` of invertible `𝒪_X`-modules to a map of
@@ -94,7 +94,7 @@ noncomputable def normMap :
     normInvertible f N.toMorphismNormMap L ⟶ normInvertible f N.toMorphismNormMap L'
 ```
 
-**`Stacks.Divisors.normMap_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Map.lean, line 582](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/Map.lean#L582). The attribute's comment: “local generator formula”.
+**`Stacks.Divisors.normMap_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Map.lean, line 582](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormInvertible/Map.lean#L582). The attribute's comment: “local generator formula”.
 
 > **In local frames the norm map is multiplication by the norm of the coefficient.** If `φ`
 > carries a frame `s` of `L` over `f ⁻¹ᵁ U` to `a` times a frame `t` of `L'` there, then the norm
@@ -118,7 +118,7 @@ theorem normMap_generator (U : Y.Opens)
           (hasTrivializingTargetCover_of_isInvertible f L') U t).val
 ```
 
-**`Stacks.Divisors.normMap_zeroAt_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Map.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/Map.lean#L603). The attribute's comment: “vanishing locus”.
+**`Stacks.Divisors.normMap_zeroAt_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Map.lean, line 603](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormInvertible/Map.lean#L603). The attribute's comment: “vanishing locus”.
 
 > **The norm map vanishes at `y` exactly when the original map vanishes at some point of the
 > fibre over `y`**: the vanishing locus of the norm of `φ` is the image of the vanishing locus
@@ -135,7 +135,7 @@ theorem normMap_zeroAt_iff (y : Y) :
 
 [Tag 0BD0](https://stacks.math.columbia.edu/tag/0BD0) in the Stacks Project.
 
-**`Stacks.Divisors.exists_isAmple_of_morphismNorm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormAmple/Basic.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormAmple/Basic.lean#L95).
+**`Stacks.Divisors.exists_isAmple_of_morphismNorm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormAmple/Basic.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormAmple/Basic.lean#L95).
 
 > Let `f : X ⟶ Y` be a finite morphism of schemes admitting a norm of degree `d ≥ 1`. If `X`
 > has an ample invertible sheaf, then so has `Y`.
@@ -151,7 +151,7 @@ theorem exists_isAmple_of_morphismNorm (f : X ⟶ Y) [IsFinite f] {d : ℕ} (hd 
       @AlgebraicGeometry.Scheme.Modules.IsAmple Y M hM
 ```
 
-**`Stacks.Divisors.exists_isAmple_of_hasNormOfDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean#L467).
+**`Stacks.Divisors.exists_isAmple_of_hasNormOfDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean, line 467](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean#L467).
 
 > **Stacks Project, Tag 0BD0.** Let `f : X ⟶ Y` be a finite morphism of schemes carrying a
 > norm of positive degree. If `X` has an ample invertible `𝒪_X`-module then so does `Y`: the norm
@@ -171,7 +171,7 @@ theorem exists_isAmple_of_hasNormOfDegree (f : X ⟶ Y) [IsFinite f] (L : X.Modu
 
 [Tag 0BD1](https://stacks.math.columbia.edu/tag/0BD1) in the Stacks Project.
 
-**`Stacks.Divisors.isQuasiAffine_of_isFinite_of_hasNormOfDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Norm/QuasiAffine.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Norm/QuasiAffine.lean#L144).
+**`Stacks.Divisors.isQuasiAffine_of_isFinite_of_hasNormOfDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Norm/QuasiAffine.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Norm/QuasiAffine.lean#L144).
 
 > **Stacks Project, Tag 0BD1.** The target of a finite morphism carrying a norm of positive
 > degree is quasi-affine as soon as its source is.
@@ -182,7 +182,7 @@ theorem isQuasiAffine_of_isFinite_of_hasNormOfDegree (f : X ⟶ Y) [IsFinite f]
     Scheme.IsQuasiAffine Y
 ```
 
-**`Stacks.Divisors.isQuasiAffine_of_morphismNorm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormQuasiAffine/Basic.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormQuasiAffine/Basic.lean#L46).
+**`Stacks.Divisors.isQuasiAffine_of_morphismNorm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormQuasiAffine/Basic.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormQuasiAffine/Basic.lean#L46).
 
 > Let `f : X ⟶ Y` be a finite morphism of schemes admitting a norm of degree `d ≥ 1`. If `X`
 > is quasi-affine, then so is `Y`.
@@ -196,7 +196,7 @@ public theorem isQuasiAffine_of_morphismNorm (f : X ⟶ Y) [IsFinite f] {d : ℕ
 
 [Tag 0BD2](https://stacks.math.columbia.edu/tag/0BD2) in the Stacks Project.
 
-**`Stacks.Divisors.finiteLocallyFreeNorm`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Norm/Basic.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Norm/Basic.lean#L409). The attribute's comment: “the canonical norm”. References: EGA II (6.5.1), “special case”; SGA 3 V (4.1.1), “more general”.
+**`Stacks.Divisors.finiteLocallyFreeNorm`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Norm/Basic.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Norm/Basic.lean#L409). The attribute's comment: “the canonical norm”. References: EGA II (6.5.1), “special case”; SGA 3 V (4.1.1), “more general”.
 
 > **Stacks Project, Tag 0BD2.** The canonical determinant norm constructed in the proof,
 > for an arbitrary finite locally free morphism, including varying and zero rank.
@@ -211,7 +211,7 @@ noncomputable def finiteLocallyFreeNorm {X Y : Scheme.{u}} (f : X ⟶ Y)
     [Morphisms.IsFiniteLocallyFree f] : DeterminantNorm f
 ```
 
-**`Stacks.Divisors.finiteLocallyFreeNormOfRank`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Norm/Basic.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Norm/Basic.lean#L454). The attribute's comment: “the norm of positive constant degree”. References: EGA II (6.5.1), “special case”.
+**`Stacks.Divisors.finiteLocallyFreeNormOfRank`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Norm/Basic.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Norm/Basic.lean#L454). The attribute's comment: “the norm of positive constant degree”. References: EGA II (6.5.1), “special case”.
 
 > **Stacks Project, Tag 0BD2.** At positive constant rank `d`, the canonical determinant
 > norm is a norm of degree `d` in the sense of the Norms section.
@@ -222,7 +222,7 @@ noncomputable def finiteLocallyFreeNormOfRank {X Y : Scheme.{u}} (f : X ⟶ Y) (
     {N : MorphismNorm f d // IsDeterminantNorm N.toMorphismNormMap}
 ```
 
-**`Stacks.Divisors.finiteLocallyFreeNorm_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormBaseChange/Basic.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormBaseChange/Basic.lean#L64). The attribute's comment: “compatibility with arbitrary base change”.
+**`Stacks.Divisors.finiteLocallyFreeNorm_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormBaseChange/Basic.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormBaseChange/Basic.lean#L64). The attribute's comment: “compatibility with arbitrary base change”.
 
 > **Stacks Project, Tag 0BD2.** Formation of the canonical determinant norm commutes with
 > arbitrary base change, even when the rank is not constant: around a cartesian square the base
@@ -247,7 +247,7 @@ theorem finiteLocallyFreeNorm_baseChange
           g.app U ((finiteLocallyFreeNorm f).app U s)
 ```
 
-**`Stacks.Divisors.finiteLocallyFreeNormOfRank_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormBaseChange/Rank.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormBaseChange/Rank.lean#L58). The attribute's comment: “compatibility of the degree-d norm with arbitrary base change”.
+**`Stacks.Divisors.finiteLocallyFreeNormOfRank_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormBaseChange/Rank.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormBaseChange/Rank.lean#L58). The attribute's comment: “compatibility of the degree-d norm with arbitrary base change”.
 
 > **Stacks Project, Tag 0BD2.** At positive constant rank, arbitrary base change preserves the
 > specified degree and the norm on sections: around a cartesian square the base change `f'` of a
@@ -277,7 +277,7 @@ theorem finiteLocallyFreeNormOfRank_baseChange
 
 [Tag 0BD3](https://stacks.math.columbia.edu/tag/0BD3) in the Stacks Project.
 
-**`Stacks.Divisors.exists_norm_of_finite_surjective_of_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Norm/FunctionFieldDegree.lean, line 551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Norm/FunctionFieldDegree.lean#L551).
+**`Stacks.Divisors.exists_norm_of_finite_surjective_of_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Norm/FunctionFieldDegree.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Norm/FunctionFieldDegree.lean#L551).
 
 > **Stacks Project, Tag 0BD3.** A finite surjective morphism of integral schemes with
 > normal target carries a norm of the function-field extension degree.
@@ -299,7 +299,7 @@ theorem exists_norm_of_finite_surjective_of_normal
 
 [Tag 0BDZ](https://stacks.math.columbia.edu/tag/0BDZ) in the Stacks Project.
 
-**`Stacks.Divisors.exists_normOfDegree_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Norm/Reduction.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Norm/Reduction.lean#L201).
+**`Stacks.Divisors.exists_normOfDegree_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Norm/Reduction.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Norm/Reduction.lean#L201).
 
 > **Stacks Project, Tag 0BDZ.** On a Noetherian scheme in prime characteristic `p` a
 > sufficiently high Frobenius power supplies a norm of degree a positive power of `p` for the
@@ -317,7 +317,7 @@ theorem exists_normOfDegree_reduction (X : Scheme.{u}) [IsNoetherian X]
 
 [Tag 0BD4](https://stacks.math.columbia.edu/tag/0BD4) in the Stacks Project.
 
-**`Stacks.Divisors.exists_isAmple_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean#L482). The attribute's comment: “finite\_locally\_free\_case”. References: EGA II (6.6.1), “absolute, loc free case”; EGA II (6.6.2), “locally free case”.
+**`Stacks.Divisors.exists_isAmple_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean#L482). The attribute's comment: “finite\_locally\_free\_case”. References: EGA II (6.6.1), “absolute, loc free case”; EGA II (6.6.2), “locally free case”.
 
 > **Stacks Project, Tag 0BD4, case (1).** A finite locally free, finite surjective morphism
 > descends the existence of an ample invertible module. The canonical determinant norm of
@@ -331,7 +331,7 @@ theorem exists_isAmple_of_isFiniteLocallyFree (f : X ⟶ Y) [IsFinite f] [Surjec
     ∃ (M : Y.Modules) (hM : IsInvertibleModule Y M), @Stacks.Ample.IsAmple Y M hM
 ```
 
-**`Stacks.Divisors.exists_isAmple_of_isAmple_reduction_char_p`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean#L494). The attribute's comment: “reduction\_characteristic\_p\_case”.
+**`Stacks.Divisors.exists_isAmple_of_isAmple_reduction_char_p`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean, line 494](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean#L494). The attribute's comment: “reduction\_characteristic\_p\_case”.
 
 > **Stacks Project, Tag 0BD4, case (3).** On a Noetherian scheme of prime characteristic `p`,
 > an ample invertible module on the reduction descends to an ample invertible module on the scheme:
@@ -348,7 +348,7 @@ theorem exists_isAmple_of_isAmple_reduction_char_p (Y : Scheme.{u}) [IsNoetheria
     ∃ (M : Y.Modules) (hM : IsInvertibleModule Y M), @Stacks.Ample.IsAmple Y M hM
 ```
 
-**`Stacks.Divisors.exists_isAmple_of_isIntegral_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean#L511). The attribute's comment: “integral\_normal\_case”. References: EGA II (6.6.1), “absolute, Y normal”; EGA II (6.6.2), “Y integral normal”.
+**`Stacks.Divisors.exists_isAmple_of_isIntegral_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean, line 511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean#L511). The attribute's comment: “integral\_normal\_case”. References: EGA II (6.6.1), “absolute, Y normal”; EGA II (6.6.2), “Y integral normal”.
 
 > **Stacks Project, Tag 0BD4, case (2).** A finite surjective morphism onto an integral normal
 > scheme descends the existence of an ample invertible module. The source is replaced by an
@@ -366,7 +366,7 @@ theorem exists_isAmple_of_isIntegral_isNormal {X Y : Scheme.{u}} (f : X ⟶ Y) [
 
 [Tag 0BD5](https://stacks.math.columbia.edu/tag/0BD5) in the Stacks Project.
 
-**`Stacks.Divisors.isQuasiAffine_of_isFinite_surjective_of_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Norm/QuasiAffineFiniteSurjective.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Norm/QuasiAffineFiniteSurjective.lean#L132). The attribute's comment: “integral normal target case”.
+**`Stacks.Divisors.isQuasiAffine_of_isFinite_surjective_of_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Norm/QuasiAffineFiniteSurjective.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Norm/QuasiAffineFiniteSurjective.lean#L132). The attribute's comment: “integral normal target case”.
 
 > **Stacks Project, Tag 0BD5, case (2).** Quasi-affineness descends along a finite surjective
 > morphism onto an integral normal scheme.
@@ -377,7 +377,7 @@ theorem isQuasiAffine_of_isFinite_surjective_of_isNormal {X Y : Scheme.{u}} (f :
     Scheme.IsQuasiAffine Y
 ```
 
-**`Stacks.Divisors.isQuasiAffine_of_isFiniteLocallyFree_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Norm/QuasiAffineFiniteSurjective.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Norm/QuasiAffineFiniteSurjective.lean#L176). The attribute's comment: “finite locally free case”.
+**`Stacks.Divisors.isQuasiAffine_of_isFiniteLocallyFree_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Norm/QuasiAffineFiniteSurjective.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Norm/QuasiAffineFiniteSurjective.lean#L176). The attribute's comment: “finite locally free case”.
 
 > **Stacks Project, Tag 0BD5, case (1).** Quasi-affineness descends along a finite locally
 > free surjective morphism.
@@ -395,4 +395,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.18, Tag 0BCX](https://stacks.math.columbia.edu/tag/0BCX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

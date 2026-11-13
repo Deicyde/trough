@@ -7,7 +7,7 @@ statement: formalized
 
 # Split families of Thue equations
 
-8 results, 3 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html).
+8 results, 3 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html).
 
 ## Split Thue recurrence family
 
@@ -32,7 +32,7 @@ are their second dominant roots.
 
 - Tobias Hilgart, *On Split Families of Thue Equations with Linear Recurrence Sequences as Factors*, INTEGERS 25 (2025), Article A35, Theorem 1 (conditions 1-3); dominant roots taken real and nonnegative as in the paper's standing assumption after Corollary 1.
 
-Formalized by `MetaMathlibExt.IsSplitThueRecurrenceFamily`, a definition declared in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#is-split-thue-recurrence-family).
+Formalized by `MetaMathlibExt.IsSplitThueRecurrenceFamily`, a definition declared in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#is-split-thue-recurrence-family).
 
 ## A split Thue recurrence family has at least three sequences
 
@@ -43,7 +43,7 @@ is a split Thue recurrence family, then $d \ge 3$.
 
 - Tobias Hilgart, *On Split Families of Thue Equations with Linear Recurrence Sequences as Factors*, INTEGERS 25 (2025), Article A35, Theorem 1 (the conditions mention `γ (d - 2)`).
 
-Formalized by `MetaMathlibExt.IsSplitThueRecurrenceFamily.three_le`, a theorem declared in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#three-le).
+Formalized by `MetaMathlibExt.IsSplitThueRecurrenceFamily.three_le`, a theorem declared in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#three-le).
 
 ## Example of a split Thue recurrence family
 
@@ -57,7 +57,7 @@ second dominant roots of $G_2, G_3$ are $1, 2$.
 
 - Tobias Hilgart, *On Split Families of Thue Equations with Linear Recurrence Sequences as Factors*, INTEGERS 25 (2025), Article A35, Theorem 1 (conditions 1-3).
 
-Formalized by `MetaMathlibExt.isSplitThueRecurrenceFamily_example`, a theorem declared in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#is-split-thue-recurrence-family-example).
+Formalized by `MetaMathlibExt.isSplitThueRecurrenceFamily_example`, a theorem declared in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#is-split-thue-recurrence-family-example).
 
 ## Hilgart's theorem on split families of Thue equations
 
@@ -73,7 +73,7 @@ we have $\log |x| \le \kappa$, $\log |y| \le \kappa$ and $n \le \kappa$ (where $
 
 - Tobias Hilgart, *On Split Families of Thue Equations with Linear Recurrence Sequences as Factors*, INTEGERS 25 (2025), Article A35, Theorem 1. The computability of `κ` is not recorded.
 
-Stated but not proved: `MetaMathlibExt.splitThue_recurrence_solutions_bounded` is written with `theorem_wanted` in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#split-thue-recurrence-solutions-bounded).
+Stated but not proved: `MetaMathlibExt.splitThue_recurrence_solutions_bounded` is written with `theorem_wanted` in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#split-thue-recurrence-solutions-bounded).
 
 ## Split Thue families eventually have only trivial solutions
 
@@ -90,7 +90,7 @@ $(x, y) = (G_i(n), 1)$ or $(x, y) = (-G_i(n), -1)$.
 
 - Tobias Hilgart, *On Split Families of Thue Equations with Linear Recurrence Sequences as Factors*, INTEGERS 25 (2025), Article A35, Corollary 1. The computability of `n₀` is not recorded.
 
-Stated but not proved: `MetaMathlibExt.splitThue_recurrence_solutions_eventually_trivial` is written with `theorem_wanted` in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#split-thue-recurrence-solutions-eventual).
+Stated but not proved: `MetaMathlibExt.splitThue_recurrence_solutions_eventually_trivial` is written with `theorem_wanted` in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#split-thue-recurrence-solutions-eventual).
 
 ## Asymptotics of the roots of a split Thue family
 
@@ -113,7 +113,7 @@ $\Gamma_i = \gamma_d^{d-2} |\delta_d|$ otherwise.
 
 - Tobias Hilgart, *On Split Families of Thue Equations with Linear Recurrence Sequences as Factors*, INTEGERS 25 (2025), Article A35, Lemma 1. The `O`-term is written as `|(α⁽ⁱ⁾ - G i n) * ∏_{k ≠ i} (G i n - G k n) - 1| ≤ C * γ_ε⁻ⁿ`; `δ d` enters through its modulus.
 
-Stated but not proved: `MetaMathlibExt.splitThue_recurrence_roots_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#split-thue-recurrence-roots-asymptotic).
+Stated but not proved: `MetaMathlibExt.splitThue_recurrence_roots_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#split-thue-recurrence-roots-asymptotic).
 
 ## Growth of the roots of a split Thue family
 
@@ -130,7 +130,7 @@ otherwise.
 
 - Tobias Hilgart, *On Split Families of Thue Equations with Linear Recurrence Sequences as Factors*, INTEGERS 25 (2025), Article A35, Lemma 2, including its last sentence (the same bounds with `α⁽ʲ⁾` replaced by `G j n`). `Ω` is the paper's lower bound `|f n| ≥ c * g n` for large `n`.
 
-Stated but not proved: `MetaMathlibExt.splitThue_recurrence_roots_growth` is written with `theorem_wanted` in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#split-thue-recurrence-roots-growth).
+Stated but not proved: `MetaMathlibExt.splitThue_recurrence_roots_growth` is written with `theorem_wanted` in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#split-thue-recurrence-roots-growth).
 
 ## Determinants of logarithms in a split Thue family
 
@@ -147,7 +147,7 @@ $n \ge N'$.
 
 - Tobias Hilgart, *On Split Families of Thue Equations with Linear Recurrence Sequences as Factors*, INTEGERS 25 (2025), Article A35, Lemma 3. `Real.log` is the logarithm of the absolute value; `Θ` is the paper's two-sided bound `c₁ n ^ k ≤ |det B_k| ≤ c₂ n ^ k` for large `n`.
 
-Stated but not proved: `MetaMathlibExt.splitThue_recurrence_logUnitDet_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#split-thue-recurrence-log-unit-det-asymp).
+Stated but not proved: `MetaMathlibExt.splitThue_recurrence_logUnitDet_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SplitThueRecurrenceWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html#split-thue-recurrence-log-unit-det-asymp).
 
 ## Depends on
 
@@ -156,4 +156,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Split families of Thue equations](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/higher-degree-equations/split-families-of-thue-equations)

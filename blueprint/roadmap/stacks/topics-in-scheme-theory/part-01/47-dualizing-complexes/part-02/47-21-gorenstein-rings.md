@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.21 Gorenstein rings
 
-Section 47.21 of the Stacks Project, [Tag 0DW6](https://stacks.math.columbia.edu/tag/0DW6). 9 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 47.21 of the Stacks Project, [Tag 0DW6](https://stacks.math.columbia.edu/tag/0DW6). 10 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DW7, a definition
 
 [Tag 0DW7](https://stacks.math.columbia.edu/tag/0DW7) in the Stacks Project.
 
-**`Dualizing.IsGorensteinLocalRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Gorenstein.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Gorenstein.lean#L61). The attribute's comment: “(1)”.
+**`Dualizing.IsGorensteinLocalRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Gorenstein.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Gorenstein.lean#L61). The attribute's comment: “(1)”.
 
 > A Noetherian local ring is Gorenstein when the ring as a
 > complex concentrated in degree zero is a dualizing complex.
@@ -24,7 +24,7 @@ abbrev IsGorensteinLocalRing (A : Type u) [CommRing A] [IsNoetherianRing A]
     [IsLocalRing A] : Prop
 ```
 
-**`Dualizing.IsGorensteinRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Gorenstein.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Gorenstein.lean#L69). The attribute's comment: “(2)”.
+**`Dualizing.IsGorensteinRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Gorenstein.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Gorenstein.lean#L69). The attribute's comment: “(2)”.
 
 > A Noetherian ring is Gorenstein when its localization at
 > every prime ideal is a Gorenstein local ring.
@@ -37,7 +37,7 @@ abbrev IsGorensteinRing (A : Type u) [CommRing A] [IsNoetherianRing A] : Prop
 
 [Tag 0DW8](https://stacks.math.columbia.edu/tag/0DW8) in the Stacks Project.
 
-**`Dualizing.IsGorensteinRing.isCohenMacaulayRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinCohenMacaulay.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinCohenMacaulay.lean#L84).
+**`Dualizing.IsGorensteinRing.isCohenMacaulayRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinCohenMacaulay.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinCohenMacaulay.lean#L84).
 
 > A Gorenstein ring is Cohen--Macaulay: its localization at every prime is a Cohen--Macaulay
 > local ring.
@@ -51,7 +51,7 @@ public theorem IsGorensteinRing.isCohenMacaulayRing (A : Type u) [CommRing A]
 
 [Tag 0AWX](https://stacks.math.columbia.edu/tag/0AWX) in the Stacks Project.
 
-**`Dualizing.IsRegularLocalRing.isGorensteinLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Gorenstein.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Gorenstein.lean#L464). The attribute's comment: “regular local rings”.
+**`Dualizing.IsRegularLocalRing.isGorensteinLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Gorenstein.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Gorenstein.lean#L464). The attribute's comment: “regular local rings”.
 
 > A regular local ring is Gorenstein.
 
@@ -60,7 +60,7 @@ public theorem IsRegularLocalRing.isGorensteinLocalRing (A : Type u) [CommRing A
     [IsRegularLocalRing A] : IsGorensteinLocalRing A
 ```
 
-**`Dualizing.IsRegularRing.isGorensteinRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Gorenstein.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Gorenstein.lean#L521). The attribute's comment: “regular rings”.
+**`Dualizing.IsRegularRing.isGorensteinRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Gorenstein.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Gorenstein.lean#L521). The attribute's comment: “regular rings”.
 
 > A regular ring is Gorenstein.
 
@@ -73,7 +73,7 @@ public theorem IsRegularRing.isGorensteinRing (A : Type u) [CommRing A]
 
 [Tag 0DW9](https://stacks.math.columbia.edu/tag/0DW9) in the Stacks Project.
 
-**`Dualizing.isGorensteinRing_iff_isInvertible_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinCriteria.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinCriteria.lean#L140). The attribute's comment: “(1)(a)”.
+**`Dualizing.isGorensteinRing_iff_isInvertible_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinCriteria.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinCriteria.lean#L140). The attribute's comment: “(1)(a)”.
 
 > **Stacks Project, Tag 0DW9 (1)(a).** A Noetherian ring with a dualizing complex is
 > Gorenstein exactly when that complex is invertible, for the canonical derived tensor product
@@ -88,7 +88,7 @@ theorem isGorensteinRing_iff_isInvertible_canonical
     Dualizing.IsGorensteinRing A ↔ MonoidalCategory.IsInvertible K
 ```
 
-**`Dualizing.isGorensteinRing_iff_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinCriteria.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinCriteria.lean#L170). The attribute's comment: “(1)(a) at a larger module universe”.
+**`Dualizing.isGorensteinRing_iff_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinCriteria.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinCriteria.lean#L170). The attribute's comment: “(1)(a) at a larger module universe”.
 
 > **Stacks Project, Tag 0DW9 (1)(a)**, for a dualizing complex whose module universe is larger
 > than the ring's. A Noetherian ring with a dualizing complex is Gorenstein if and only if that
@@ -104,7 +104,7 @@ theorem isGorensteinRing_iff_isInvertible
     IsGorensteinRing A ↔ MonoidalCategory.IsInvertible K
 ```
 
-**`Dualizing.isOpen_gorensteinLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinOpenLocus.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinOpenLocus.lean#L196). The attribute's comment: “(1)(c)”.
+**`Dualizing.isOpen_gorensteinLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinOpenLocus.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinOpenLocus.lean#L196). The attribute's comment: “(1)(c)”.
 
 > **Stacks Project, Tag 0DW9 (1)(c).** If a Noetherian ring admits a dualizing complex, then the
 > set of primes whose local ring is Gorenstein is open in the prime spectrum.
@@ -117,7 +117,7 @@ theorem isOpen_gorensteinLocus
       Dualizing.IsGorensteinLocalRing (Localization.AtPrime p.asIdeal)}
 ```
 
-**`Dualizing.exists_isDualizingComplex_iff_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinRingDualizing.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinRingDualizing.lean#L181). The attribute's comment: “(2)”.
+**`Dualizing.exists_isDualizingComplex_iff_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinRingDualizing.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinRingDualizing.lean#L181). The attribute's comment: “(2)”.
 
 > **Stacks Project, Tag 0DW9 (2).** A Noetherian Gorenstein ring has a dualizing complex if and
 > only if the ring itself, placed in degree zero, is a dualizing complex.
@@ -131,7 +131,7 @@ theorem exists_isDualizingComplex_iff_regularModule
         ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj (ModuleCat.of A A))
 ```
 
-**`Dualizing.isGorensteinLocalRing_iff_isInvertible_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCriterionInvertible.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCriterionInvertible.lean#L358). The attribute's comment: “(1)(b)”.
+**`Dualizing.isGorensteinLocalRing_iff_isInvertible_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCriterionInvertible.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCriterionInvertible.lean#L358). The attribute's comment: “(1)(b)”.
 
 > **Stacks Project, Tag 0DW9 (1)(b).** The localization of a Noetherian
 > ring at a prime is Gorenstein if and only if the localization of a dualizing complex
@@ -155,7 +155,7 @@ theorem isGorensteinLocalRing_iff_isInvertible_localization
 
 [Tag 0BJI](https://stacks.math.columbia.edu/tag/0BJI) in the Stacks Project.
 
-**`Dualizing.isGorensteinLocalRing_iff_residueField_ext_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Gorenstein.lean, line 866](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Gorenstein.lean#L866).
+**`Dualizing.isGorensteinLocalRing_iff_residueField_ext_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Gorenstein.lean, line 866](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Gorenstein.lean#L866).
 
 > A Noetherian local ring is Gorenstein precisely when its
 > Ext groups from the residue field to the regular module vanish in high degrees.
@@ -172,11 +172,31 @@ public theorem isGorensteinLocalRing_iff_residueField_ext_vanishing
             ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj (ModuleCat.of A A)) i)
 ```
 
+## Tag 0HB2, a lemma
+
+[Tag 0HB2](https://stacks.math.columbia.edu/tag/0HB2) in the Stacks Project.
+
+**`Dualizing.exists_hasInjectiveDimensionLE_self_iff_isGorensteinRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFiniteInjectiveDimension.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinFiniteInjectiveDimension.lean#L183).
+
+> **Stacks Project, Tag 0HB2.** Let `A` be a Noetherian ring. Then `A` has finite injective
+> dimension as a module over itself if and only if `A` is Gorenstein and finite dimensional. In this
+> case `A[0]` is a dualizing complex, in any model of the derived category of `A`-modules.
+
+```lean
+theorem exists_hasInjectiveDimensionLE_self_iff_isGorensteinRing
+    (A : Type u) [CommRing A] [IsNoetherianRing A] [HasDerivedCategory.{w} (ModuleCat.{u} A)] :
+    ((∃ n : ℕ, HasInjectiveDimensionLE (ModuleCat.of A A) n) ↔
+        IsGorensteinRing A ∧ ringKrullDim A < ⊤) ∧
+      ((∃ n : ℕ, HasInjectiveDimensionLE (ModuleCat.of A A) n) →
+        IsDualizingComplex
+          ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj (ModuleCat.of A A)))
+```
+
 ## Tag 0BJJ, a lemma
 
 [Tag 0BJJ](https://stacks.math.columbia.edu/tag/0BJJ) in the Stacks Project.
 
-**`Stacks.Divisors.isGorenstein_subscheme_of_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/GorensteinEffectiveCartier.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/GorensteinEffectiveCartier.lean#L70). The attribute's comment: “scheme-theoretic form: an effective Cartier divisor on a Gorenstein scheme”.
+**`Stacks.Divisors.isGorenstein_subscheme_of_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/GorensteinEffectiveCartier.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/GorensteinEffectiveCartier.lean#L70). The attribute's comment: “scheme-theoretic form: an effective Cartier divisor on a Gorenstein scheme”.
 
 > **The closed subscheme cut out by an effective Cartier divisor on a Gorenstein scheme is
 > Gorenstein.**
@@ -188,7 +208,7 @@ public theorem isGorenstein_subscheme_of_isEffectiveCartierDivisor {X : Scheme.{
     AlgebraicGeometry.IsGorenstein D.subscheme
 ```
 
-**`Dualizing.isGorensteinLocalRing_quotient_span_singleton_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinRegularElement.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinRegularElement.lean#L221).
+**`Dualizing.isGorensteinLocalRing_quotient_span_singleton_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinRegularElement.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinRegularElement.lean#L221).
 
 > Quotienting a Noetherian local ring by a nonzerodivisor in its maximal ideal preserves and
 > reflects the Gorenstein property.
@@ -210,7 +230,7 @@ theorem isGorensteinLocalRing_quotient_span_singleton_iff
 
 [Tag 0DWA](https://stacks.math.columbia.edu/tag/0DWA) in the Stacks Project.
 
-**`Dualizing.isGorensteinRing_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinLocalCompleteIntersection.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinLocalCompleteIntersection.lean#L340).
+**`Dualizing.isGorensteinRing_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinLocalCompleteIntersection.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinLocalCompleteIntersection.lean#L340).
 
 > The target of a local complete intersection homomorphism from a Noetherian Gorenstein ring is
 > Gorenstein.
@@ -230,7 +250,7 @@ public theorem isGorensteinRing_of_isLocalCompleteIntersection
 
 [Tag 0BJL](https://stacks.math.columbia.edu/tag/0BJL) in the Stacks Project.
 
-**`Dualizing.isGorensteinLocalRing_iff_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/FlatLocalGorenstein.lean, line 567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/FlatLocalGorenstein.lean#L567).
+**`Dualizing.isGorensteinLocalRing_iff_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/FlatLocalGorenstein.lean, line 566](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/FlatLocalGorenstein.lean#L566).
 
 > For a flat local homomorphism of Noetherian local rings, the target is Gorenstein if and only
 > if the source and the closed fibre are Gorenstein.
@@ -257,7 +277,7 @@ public theorem isGorensteinLocalRing_iff_of_flat
 
 [Tag 0EBT](https://stacks.math.columbia.edu/tag/0EBT) in the Stacks Project.
 
-**`Dualizing.LocalDuality.isZero_tor_injectiveHull_residueField_of_ne_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/InjectiveHullTor.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/InjectiveHullTor.lean#L378). The attribute's comment: “vanishing away from the dimension”.
+**`Dualizing.LocalDuality.isZero_tor_injectiveHull_residueField_of_ne_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/InjectiveHullTor.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/InjectiveHullTor.lean#L378). The attribute's comment: “vanishing away from the dimension”.
 
 > For `(A, 𝔪, κ)` a Noetherian local Gorenstein ring of dimension `d` and `E` an injective hull
 > of `κ`, the group `Tor_i^A(E, κ)` vanishes for every `i ≠ d`.
@@ -273,7 +293,7 @@ theorem isZero_tor_injectiveHull_residueField_of_ne_dimension
       (ModuleCat.of A (IsLocalRing.ResidueField A)))
 ```
 
-**`Dualizing.LocalDuality.tor_injectiveHull_residueField_iso_of_eq_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/InjectiveHullTor.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/InjectiveHullTor.lean#L394). The attribute's comment: “the Tor group in the dimension”.
+**`Dualizing.LocalDuality.tor_injectiveHull_residueField_iso_of_eq_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/InjectiveHullTor.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/InjectiveHullTor.lean#L394). The attribute's comment: “the Tor group in the dimension”.
 
 > For `(A, 𝔪, κ)` a Noetherian local Gorenstein ring of dimension `d` and `E` an injective hull
 > of `κ`, the group `Tor_d^A(E, κ)` is isomorphic to `κ`.
@@ -297,4 +317,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.21, Tag 0DW6](https://stacks.math.columbia.edu/tag/0DW6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

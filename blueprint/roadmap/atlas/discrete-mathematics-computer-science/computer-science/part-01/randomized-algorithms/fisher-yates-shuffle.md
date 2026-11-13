@@ -8,7 +8,7 @@ proof: formalized
 
 # Fisher–Yates shuffle
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html).
 
 ## Fisher–Yates shuffle with supplied draws
 
@@ -19,7 +19,7 @@ and at position $i$ swaps the entries at positions $i$ and $i + d_i$ of the curr
 returns the final vector together with a cost pair in $\mathbb{N} \times \mathbb{N}$: each retrieved
 draw adds $(1, 0)$ and each swap adds $(0, 1)$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermute`, a definition declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Basic.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Basic.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute).
+Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermute`, a definition declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Basic.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Basic.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute).
 
 ## Cost of the Fisher–Yates shuffle
 
@@ -31,7 +31,7 @@ and performs exactly $n$ swaps.
 When $n \ge 1$, this count includes the final draw $d_{n-1} = 0$ and the self-swap at position
 $n - 1$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermute_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Basic.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Basic.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-time).
+Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermute_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Basic.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Basic.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-time).
 
 ## Fisher–Yates output is a rearrangement of its input
 
@@ -41,7 +41,7 @@ $0 \le d_i < n - i$, the list of entries of the vector returned by the Fisher–
 $x$ and $d$ is a permutation of the list of entries of $x$. In particular every value occurs
 equally often in both, even when values of $x$ repeat.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermute_perm`, a theorem declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Correctness.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Correctness.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-perm).
+Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermute_perm`, a theorem declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Correctness.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Correctness.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-perm).
 
 ## Fisher–Yates on the empty vector
 
@@ -49,7 +49,7 @@ For the empty vector $x$ (of length $0$) and its empty
 draw history, the Fisher–Yates computation returns $x$ with cost pair $(0, 0)$: it retrieves no
 draws and performs no swaps.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermute_empty`, a theorem declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Correctness.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Correctness.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-empty).
+Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermute_empty`, a theorem declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Correctness.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Correctness.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-empty).
 
 ## Fisher–Yates on a one-element vector
 
@@ -57,7 +57,7 @@ For every vector $x$ of length $1$ and every draw
 history $d$, the Fisher–Yates computation returns $x$ unchanged with cost pair $(1, 1)$: it still
 retrieves the single draw $d_0 = 0$ and performs the self-swap at position $0$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermute_singleton`, a theorem declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Correctness.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Correctness.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-singleton).
+Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermute_singleton`, a theorem declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Correctness.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Correctness.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-singleton).
 
 ## Output distribution of the Fisher–Yates shuffle
 
@@ -70,7 +70,7 @@ the result of the Fisher–Yates computation on $x$ and $d$.
 This models an ideal source of random draws, not an executable pseudorandom generator, and does
 not assume that the output permutation is uniform.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermuteDistribution`, a definition declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-distribution).
+Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermuteDistribution`, a definition declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-distribution).
 
 ## Probability of a Fisher–Yates outcome
 
@@ -84,7 +84,7 @@ $\prod_{i=0}^{n-1} \frac{1}{n - i}$.
 Distinct histories that yield the same outcome (for example when values of $x$ repeat) add up,
 and an outcome that no history yields has probability $0$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermuteDistribution_apply`, a theorem declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-distribution-apply).
+Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermuteDistribution_apply`, a theorem declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-distribution-apply).
 
 ## Fisher–Yates produces a uniformly random permutation
 
@@ -93,7 +93,7 @@ vector and let $\sigma$ be a permutation of $\{0, \dots, n - 1\}$ chosen uniform
 the Fisher–Yates output distribution of $x$ equals the distribution of the outcome consisting of
 the vector $(x_{\sigma(0)}, \dots, x_{\sigma(n-1)})$ with cost pair $(n, n)$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermuteDistribution_eq_map_uniform`, a theorem declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-distribution-eq-map-uni).
+Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermuteDistribution_eq_map_uniform`, a theorem declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-distribution-eq-map-uni).
 
 ## Prefix probabilities of the Fisher–Yates shuffle
 
@@ -107,7 +107,7 @@ every $p < k$ equals $(n - k)!/n!$.
 There are exactly $n!$ draw histories, so this is the probability of the prefix under a uniformly
 random history. The cases $k = 0$ and $k = n$ are included.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermute_prefix_probability`, a theorem declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-prefix-probability).
+Formalized by `Cslib.Algorithms.Lean.TimeM.randomlyPermute_prefix_probability`, a theorem declared in [CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Random/RandomlyPermute/Probability.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html#randomly-permute-prefix-probability).
 
 ## Depends on
 
@@ -116,4 +116,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fisher–Yates shuffle](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/randomized-algorithms/fisher-yates-shuffle)

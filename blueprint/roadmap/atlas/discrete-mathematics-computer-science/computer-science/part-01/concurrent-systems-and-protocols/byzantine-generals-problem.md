@@ -8,7 +8,7 @@ proof: formalized
 
 # Byzantine generals problem
 
-31 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html).
+31 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html).
 
 ## Oral-message protocol
 
@@ -26,7 +26,7 @@ every general sends its messages from its current state and then moves to the st
 transition function on the messages it received. Only the commander's initial state depends on
 the order.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol`, a structure declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#oral-protocol).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol`, a structure declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#oral-protocol).
 
 ## Local views determine states
 
@@ -41,7 +41,7 @@ $\mu'_r(k)$; that $s_0(k) = s'_0(k)$ for every $k$ satisfying $L$; and that for 
 $s_r(k) = s'_r(k)$ for all $k$ satisfying $L$, then $\mu_r(k) = \mu'_r(k)$ for all $k$
 satisfying $L$. Then $s_r(k) = s'_r(k)$ for every $r$ and every $k$ satisfying $L$.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.states_eq_of_inbox_eq`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#states-eq-of-inbox-eq).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.states_eq_of_inbox_eq`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#states-eq-of-inbox-eq).
 
 ## Initial state of a general
 
@@ -50,14 +50,14 @@ general $i$ is the initial state that the protocol assigns to a commander with o
 $i = c$, and the initial state that the protocol assigns to $i$ as a general other than the
 commander if $i \ne c$.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.initState`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#init-state).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.initState`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#init-state).
 
 ## Initial state of the commander
 
 When the commander $c$ has order $v$, the initial state of
 $c$ is the initial state that the protocol assigns to a commander with order $v$.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.initState_self`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#init-state-self).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.initState_self`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#init-state-self).
 
 ## Initial state of a lieutenant
 
@@ -65,7 +65,7 @@ If general $i$ is not the commander $c$, then the initial
 state of $i$ when $c$ has order $v$ is the initial state that the protocol assigns to $i$ as a
 general other than the commander; in particular, it does not depend on $v$.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.initState_of_ne`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#init-state-of-ne).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.initState_of_ne`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#init-state-of-ne).
 
 ## Executions of an oral-message protocol
 
@@ -78,7 +78,7 @@ to which $i$ moves by its code for round $r$ from its state after $r$ rounds, on
 $a_r(j, i)$ from each traitor $j \in S$ and, from each other general $j$, the message that $P$
 has $j$ send to $i$ in round $r$ from the state of $j$ after $r$ rounds.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.state`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#state).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.state`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#state).
 
 ## Messages received in a round
 
@@ -88,7 +88,7 @@ general $i$ receives in round $r$ form the function of the sender $j$ whose valu
 $\mathrm{adv}(r, j, i)$ if $j$ is a traitor, and otherwise the message that $P$ has $j$ send to
 $i$ in round $r$ from the state of $j$ after $r$ rounds.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.inbox`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#inbox).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.inbox`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#inbox).
 
 ## The start of an execution
 
@@ -97,7 +97,7 @@ commander $c$, order $v$, any set of traitors and any traitor behaviour, every g
 its initial state after $0$ rounds: the commander in the initial state given by the order $v$,
 and every other general in its order-independent initial state.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.state_zero`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#state-zero).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.state_zero`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#state-zero).
 
 ## One round of an execution
 
@@ -106,7 +106,7 @@ commander, order, set of traitors and traitor behaviour, for every round $r$ and
 $i$, the state of $i$ after $r + 1$ rounds is the state to which $i$ moves by its code for round
 $r$ from its state after $r$ rounds on the messages it receives in round $r$.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.state_succ`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#state-succ).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.state_succ`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#state-succ).
 
 ## Decision of a general
 
@@ -114,7 +114,7 @@ In the execution of a protocol $P$ with commander $c$, order $v$, a
 set of traitors and a behaviour of the traitors, the decision of general $i$ after $T$ rounds is
 the value that the decision function of $P$ assigns to $i$ in its state after $T$ rounds.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.decision`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#decision).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.decision`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#decision).
 
 ## Agreement condition (IC1)
 
@@ -123,7 +123,7 @@ order $v$, a set of traitors and a behaviour of the traitors. Condition IC1 hold
 rounds when any two generals $i$ and $j$, neither of which is the commander or a traitor, decide
 the same value after $T$ rounds of this execution.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.Agreement`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#agreement).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.Agreement`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#agreement).
 
 ## Validity in the Byzantine generals problem
 
@@ -132,7 +132,7 @@ with commander $c$, order $v$, a set of traitors and a traitor behaviour, condit
 (validity) holds after $T$ rounds if, provided the commander is loyal, every loyal general
 other than the commander decides $v$ after $T$ rounds.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.Validity`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#validity).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.Validity`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#validity).
 
 ## Solving the Byzantine generals problem
 
@@ -142,7 +142,7 @@ $T$ rounds if, for every order $v$, every set of at most $m$ traitors and every 
 the traitors (the message each traitor sends to each general in each round), conditions IC1
 (agreement) and IC2 (validity) hold after $T$ rounds.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.Solves`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#solves).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.Solves`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#solves).
 
 ## No protocol for three generals tolerates one traitor
 
@@ -155,7 +155,7 @@ condition (IC1) or the validity condition (IC2) fails after $T$ rounds.
 This is the theorem of Pease, Shostak and Lamport, proved here by a commander version of the
 hexagon argument of Fischer, Lynch and Merritt.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.exists_violation_three`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#exists-violation-three).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.exists_violation_three`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#exists-violation-three).
 
 ## No protocol for three generals solves the Byzantine generals problem with one traitor
 
@@ -165,7 +165,7 @@ three generals $0$, $1$, $2$ with commander $0$ and every number of rounds $T$, 
 not solve the Byzantine generals problem with commander $0$ and at most one traitor in $T$
 rounds.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.not_solves_three`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 333](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L333). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#not-solves-three).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.not_solves_three`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 333](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L333). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#not-solves-three).
 
 ## Three generals simulating a protocol
 
@@ -187,7 +187,7 @@ holds the state to which general $i$ of $P$ moves in round $r$ from $s(i)$ on re
 $\mu_{\mathrm{grp}(j)}(j, i)$ from each $j \in G$. General $g$ in final state $s$ decides
 what general $\mathrm{rep}(g)$ of $P$ decides in state $s(\mathrm{rep}(g))$.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.simulate`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#simulate).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.simulate`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#simulate).
 
 ## The simulation is faithful
 
@@ -204,7 +204,7 @@ round $r$. Then for every $r \in \mathbb{N}$ and every $i \in G$ with $\mathrm{g
 the entry at $i$ of the state of general $\mathrm{grp}(i)$ after $r$ rounds of the first
 execution equals the state of general $i$ after $r$ rounds of the second.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.state_simulate`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#state-simulate).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.state_simulate`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#state-simulate).
 
 ## Simulation reduces many generals to three
 
@@ -217,7 +217,7 @@ $|\{i \in G : \mathrm{grp}(i) = g\}| \le m$ for every $g$. Then the simulation o
 $\mathrm{grp}$ and $\mathrm{rep}$ solves the Byzantine generals problem for the generals
 $\{0, 1, 2\}$ with commander $0$ and at most one traitor in $T$ rounds.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.solves_simulate`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#solves-simulate).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.solves_simulate`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#solves-simulate).
 
 ## No protocol for $n$ generals tolerates $m$ traitors when $3 \le n \le 3m$
 
@@ -231,7 +231,7 @@ behaviour of the traitors for which the agreement condition (IC1) or the validit
 
 This is the theorem of Lamport, Shostak and Pease, proved by reduction to three generals.
 
-Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.not_solves_of_card_le_three_mul`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#not-solves-of-card-le-three-mul).
+Formalized by `Cslib.Distributed.Byzantine.Impossibility.OralProtocol.not_solves_of_card_le_three_mul`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/Impossibility.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#not-solves-of-card-le-three-mul).
 
 ## Majority of a multiset
 
@@ -239,7 +239,7 @@ The majority of a finite multiset $s$ of values is the value $x$
 such that more than half of the elements of $s$ are equal to $x$ (counted with multiplicity),
 if there is one (there is at most one), and a fixed default value (retreat) otherwise.
 
-Formalized by `Cslib.Distributed.Byzantine.OralMessages.majority`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#majority).
+Formalized by `Cslib.Distributed.Byzantine.OralMessages.majority`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#majority).
 
 ## A value filling more than half of a multiset is its majority
 
@@ -247,7 +247,7 @@ If more than half of the
 elements of a multiset $s$ of values are equal to $x$ (counted with multiplicity), then the
 majority of $s$ is $x$.
 
-Formalized by `Cslib.Distributed.Byzantine.OralMessages.majority_eq_of_lt_count`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#majority-eq-of-lt-count).
+Formalized by `Cslib.Distributed.Byzantine.OralMessages.majority_eq_of_lt_count`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#majority-eq-of-lt-count).
 
 ## Majority falls back to the default value
 
@@ -255,7 +255,7 @@ If, for every value $x$, at most half of the
 elements of a multiset $s$ of values are equal to $x$ (counted with multiplicity), then the
 majority of $s$ is the default value (retreat).
 
-Formalized by `Cslib.Distributed.Byzantine.OralMessages.majority_eq_default`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#majority-eq-default).
+Formalized by `Cslib.Distributed.Byzantine.OralMessages.majority_eq_default`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#majority-eq-default).
 
 ## Value received from a commander
 
@@ -265,7 +265,7 @@ recipient. The value that lieutenant $p$ receives from commander $c$, who holds 
 whose superiors form the sequence $\sigma$, is $v$ if $c$ is loyal, and is
 $\mathrm{adv}(\sigma c, p)$ if $c$ is a traitor, where $\sigma c$ is $\sigma$ followed by $c$.
 
-Formalized by `Cslib.Distributed.Byzantine.OralMessages.received`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#received).
+Formalized by `Cslib.Distributed.Byzantine.OralMessages.received`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#received).
 
 ## The oral messages algorithm
 
@@ -280,14 +280,14 @@ decides the majority of the multiset of values $w_q$ for $q \in S$, where $w_p =
 $q \ne p$, $w_q$ is the value $p$ decides under $\mathrm{OM}(m)$ when $q$, holding $r_q$ with the
 superiors $\sigma c$, sends it to the lieutenants $S \setminus \{q\}$.
 
-Formalized by `Cslib.Distributed.Byzantine.OralMessages.om`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#om).
+Formalized by `Cslib.Distributed.Byzantine.OralMessages.om`, a definition declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#om).
 
 ## A loyal commander sends its value
 
 If the commander $c$ is loyal, then for every value $v$,
 every list of superiors of $c$ and every general $p$, the value $p$ receives from $c$ is $v$.
 
-Formalized by `Cslib.Distributed.Byzantine.OralMessages.received_of_loyal`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#received-of-loyal).
+Formalized by `Cslib.Distributed.Byzantine.OralMessages.received_of_loyal`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#received-of-loyal).
 
 ## A traitorous commander sends the adversary's value
 
@@ -297,7 +297,7 @@ If the commander $c$ is a traitor, then for every value $v$, every list $\sigma$
 $c$ and every general $p$, the value $p$ receives from $c$ is $\mathrm{adv}(\sigma c, p)$, where
 $\sigma c$ is $\sigma$ followed by $c$.
 
-Formalized by `Cslib.Distributed.Byzantine.OralMessages.received_of_not_loyal`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#received-of-not-loyal).
+Formalized by `Cslib.Distributed.Byzantine.OralMessages.received_of_not_loyal`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#received-of-not-loyal).
 
 ## A loyal commander is obeyed under oral messages
 
@@ -309,7 +309,7 @@ traitors send, every loyal lieutenant $p \in S$ decides $v$.
 
 This is Lemma 1 of Lamport–Shostak–Pease.
 
-Formalized by `Cslib.Distributed.Byzantine.OralMessages.om_eq_of_loyal`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#om-eq-of-loyal).
+Formalized by `Cslib.Distributed.Byzantine.OralMessages.om_eq_of_loyal`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#om-eq-of-loyal).
 
 ## Validity under oral messages (IC2)
 
@@ -321,7 +321,7 @@ decides $v$.
 
 This is condition IC2 of Theorem 1 of Lamport–Shostak–Pease.
 
-Formalized by `Cslib.Distributed.Byzantine.OralMessages.om_valid`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#om-valid).
+Formalized by `Cslib.Distributed.Byzantine.OralMessages.om_valid`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#om-valid).
 
 ## Agreement under oral messages (IC1)
 
@@ -333,7 +333,7 @@ $p, p' \in S$ decide the same value.
 
 This is condition IC1 of Theorem 1 of Lamport–Shostak–Pease.
 
-Formalized by `Cslib.Distributed.Byzantine.OralMessages.om_agree`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#om-agree).
+Formalized by `Cslib.Distributed.Byzantine.OralMessages.om_agree`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#om-agree).
 
 ## Oral messages achieve interactive consistency
 
@@ -346,7 +346,7 @@ $S$ decides $v$ (IC2).
 
 This is Theorem 1 of Lamport–Shostak–Pease.
 
-Formalized by `Cslib.Distributed.Byzantine.OralMessages.om_interactive_consistency`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#om-interactive-consistency).
+Formalized by `Cslib.Distributed.Byzantine.OralMessages.om_interactive_consistency`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#om-interactive-consistency).
 
 ## The oral messages algorithm solves the Byzantine generals problem
 
@@ -358,7 +358,7 @@ and if $c$ is loyal, every loyal lieutenant decides $v$.
 
 This is Theorem 1 of Lamport–Shostak–Pease, applied to all the generals.
 
-Formalized by `Cslib.Distributed.Byzantine.OralMessages.byzantine_generals`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#byzantine-generals).
+Formalized by `Cslib.Distributed.Byzantine.OralMessages.byzantine_generals`, a theorem declared in [CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Distributed/Byzantine/OralMessages.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html#byzantine-generals).
 
 ## Depends on
 
@@ -367,4 +367,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Byzantine generals problem](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/concurrent-systems-and-protocols/byzantine-generals-problem)

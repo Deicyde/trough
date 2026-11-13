@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.24 Grothendieck's existence theorem, I
 
-Section 30.24 of the Stacks Project, [Tag 087V](https://stacks.math.columbia.edu/tag/087V). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 30.24 of the Stacks Project, [Tag 087V](https://stacks.math.columbia.edu/tag/087V). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0883, a lemma
 
 [Tag 0883](https://stacks.math.columbia.edu/tag/0883) in the Stacks Project.
 
-**`Stacks.Algebraization.fullyFaithful_completionFunctor_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/FullyFaithfulComplete.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/FullyFaithfulComplete.lean#L283).
+**`Stacks.Algebraization.fullyFaithful_completionFunctor_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/FullyFaithfulComplete.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/FullyFaithfulComplete.lean#L285).
 
 > **Stacks 0883.** Let `A` be a Noetherian ring complete with respect to an ideal `J`, let
 > `f : X ⟶ Spec A` be proper and let `𝓙 = J · 𝒪_X`. Then the completion functor
@@ -30,7 +30,7 @@ public theorem fullyFaithful_completionFunctor_of_isProper :
 
 [Tag 0884](https://stacks.math.columbia.edu/tag/0884) in the Stacks Project.
 
-**`Stacks.Coherent.exists_isZero_Hgroup_transitionKernel_tensorPowModule_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/TransitionKernelTwistVanishingAmple.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/TransitionKernelTwistVanishingAmple.lean#L73).
+**`Stacks.Coherent.exists_isZero_Hgroup_transitionKernel_tensorPowModule_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/TransitionKernelTwistVanishingAmple.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicSystem/TransitionKernelTwistVanishingAmple.lean#L73).
 
 > **Stacks 0884.** Let `A` be a Noetherian ring, `I ⊆ A` an ideal, `f : X ⟶ Spec A` a proper
 > morphism and `L` an invertible `𝒪_X`-module ample relative to `f`. Let `𝓕` be an object of
@@ -65,7 +65,7 @@ public theorem exists_isZero_Hgroup_transitionKernel_tensorPowModule_of_isRelati
 
 [Tag 0885](https://stacks.math.columbia.edu/tag/0885) in the Stacks Project.
 
-**`Stacks.Algebraization.isEquivalence_completionFunctor_of_isProjective_of_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProjectiveEquivalence.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProjectiveEquivalence.lean#L148).
+**`Stacks.Algebraization.isEquivalence_completionFunctor_of_isProjective_of_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProjectiveEquivalence.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProjectiveEquivalence.lean#L148).
 
 > **Grothendieck's existence theorem for a projective morphism**, [Stacks, Tag 0885], read at
 > clause (1) of Tag 01W8.
@@ -108,4 +108,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.24, Tag 087V](https://stacks.math.columbia.edu/tag/087V)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

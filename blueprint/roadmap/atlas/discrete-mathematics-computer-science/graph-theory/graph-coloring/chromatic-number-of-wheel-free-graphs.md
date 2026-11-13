@@ -7,7 +7,7 @@ statement: formalized
 
 # Chromatic number of wheel-free graphs
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/chromatic-number-of-wheel-free-graphs/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/chromatic-number-of-wheel-free-graphs/index.html).
 
 ## Induced wheels
 
@@ -22,7 +22,7 @@ The hub may have further neighbours on the rim.
 
 - James Davies, *Triangle-free graphs with large chromatic number and no induced wheel*, arXiv:2104.05907v3, page 1, defining paragraph, https://arxiv.org/pdf/2104.05907v3.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.DaviesWheelFreeChromaticWanted.hasInducedWheel`, a definition declared in [WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/chromatic-number-of-wheel-free-graphs/index.html#has-induced-wheel).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.DaviesWheelFreeChromaticWanted.hasInducedWheel`, a definition declared in [WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/chromatic-number-of-wheel-free-graphs/index.html#has-induced-wheel).
 
 ## Wheel-free graphs
 
@@ -34,7 +34,7 @@ adjacent to at least three vertices of the cycle.
 
 - James Davies, arXiv:2104.05907v3, page 1, wheel definition, https://arxiv.org/pdf/2104.05907v3.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.DaviesWheelFreeChromaticWanted.wheelFree`, a definition declared in [WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/chromatic-number-of-wheel-free-graphs/index.html#wheel-free).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.DaviesWheelFreeChromaticWanted.wheelFree`, a definition declared in [WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/chromatic-number-of-wheel-free-graphs/index.html#wheel-free).
 
 ## Triangle-free wheel-free graphs of large chromatic number (proposition)
 
@@ -49,7 +49,7 @@ Since $G$ is finite, its chromatic number is finite.
 
 - Davies, arXiv:2104.05907v3, Corollary 2, page 1; the finite constructions are given on pages 5 and 6, https://arxiv.org/pdf/2104.05907v3.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.DaviesWheelFreeChromaticWanted.largeChromaticTriangleFreeWheelFree`, a definition declared in [WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/chromatic-number-of-wheel-free-graphs/index.html#large-chromatic-triangle-free-wheel-free).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.DaviesWheelFreeChromaticWanted.largeChromaticTriangleFreeWheelFree`, a definition declared in [WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/chromatic-number-of-wheel-free-graphs/index.html#large-chromatic-triangle-free-wheel-free).
 
 ## Davies's theorem on triangle-free wheel-free graphs
 
@@ -62,7 +62,7 @@ chromatic number of $G$ is at least $k$.
 
 - James Davies, arXiv:2104.05907v3, Corollary 2, page 1, https://arxiv.org/pdf/2104.05907v3.
 
-Stated but not proved: `MathlibExt.Combinatorics.SimpleGraph.DaviesWheelFreeChromaticWanted.largeChromaticTriangleFreeWheelFree_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/chromatic-number-of-wheel-free-graphs/index.html#large-chromatic-triangle-free-wheel-free-2).
+Stated but not proved: `MathlibExt.Combinatorics.SimpleGraph.DaviesWheelFreeChromaticWanted.largeChromaticTriangleFreeWheelFree_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SimpleGraph/DaviesWheelFreeChromaticWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/chromatic-number-of-wheel-free-graphs/index.html#large-chromatic-triangle-free-wheel-free-2).
 
 ## Depends on
 
@@ -71,4 +71,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Chromatic number of wheel-free graphs](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/chromatic-number-of-wheel-free-graphs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/graph-coloring/part-01/chromatic-number-of-wheel-free-graphs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/graph-coloring/part-01/chromatic-number-of-wheel-free-graphs)

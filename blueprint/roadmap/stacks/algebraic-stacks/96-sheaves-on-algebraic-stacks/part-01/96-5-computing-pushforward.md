@@ -8,13 +8,13 @@ proof: formalized
 
 # 96.5 Computing pushforward
 
-Section 96.5 of the Stacks Project, [Tag 06W5](https://stacks.math.columbia.edu/tag/06W5). 4 tags here are carried by 10 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 96.5 of the Stacks Project, [Tag 06W5](https://stacks.math.columbia.edu/tag/06W5). 4 tags here are carried by 10 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06W6, an equation
 
 [Tag 06W6](https://stacks.math.columbia.edu/tag/06W6) in the Stacks Project.
 
-**`CategoryTheory.Presheaf.pushforwardSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/PushforwardSections.lean, line 705](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/PushforwardSections.lean#L705). The attribute's comment: “canonical identification”.
+**`CategoryTheory.Presheaf.pushforwardSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/PushforwardSections.lean, line 705](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/PushforwardSections.lean#L705). The attribute's comment: “canonical identification”.
 
 > The pushforward formula for a presheaf along a functor into a category fibred
 > in groupoids.
@@ -33,7 +33,7 @@ public noncomputable def pushforwardSectionsEquiv
         ((TwoFibreProductOver.snd (Over.forget V) p𝒳 p𝒴 (c.sliceFunctor y) f).op ⋙ ℱ)
 ```
 
-**`CategoryTheory.Presheaf.pushforwardSectionsEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/PushforwardSections.lean, line 721](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/PushforwardSections.lean#L721). The attribute's comment: “componentwise characterization by the right Kan counit”.
+**`CategoryTheory.Presheaf.pushforwardSectionsEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/PushforwardSections.lean, line 721](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/PushforwardSections.lean#L721). The attribute's comment: “componentwise characterization by the right Kan counit”.
 
 > At a pair in the two-fibre product, the section corresponding to a pushforward
 > section is obtained by restricting along the comparison arrow to `y` and then
@@ -55,7 +55,7 @@ public theorem pushforwardSectionsEquiv_apply
         ((f.op.ran.obj ℱ).map (P.iso.inv ≫ c.map P.x.hom y).op s)
 ```
 
-**`CategoryTheory.Presheaf.pushforwardSectionsEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/PushforwardSections.lean, line 739](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/PushforwardSections.lean#L739). The attribute's comment: “naturality in the presheaf”.
+**`CategoryTheory.Presheaf.pushforwardSectionsEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/PushforwardSections.lean, line 739](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/PushforwardSections.lean#L739). The attribute's comment: “naturality in the presheaf”.
 
 > The pushforward identification commutes with maps of presheaves.
 
@@ -78,7 +78,7 @@ public theorem pushforwardSectionsEquiv_naturality
 
 [Tag 075B](https://stacks.math.columbia.edu/tag/075B) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.abelianPresheafBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean#L256). The attribute's comment: “abelian coefficients”.
+**`AlgebraicGeometry.Stack.abelianPresheafBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean#L256). The attribute's comment: “abelian coefficients”.
 
 > **Stacks 075B at abelian coefficients.** For the canonical 2-cartesian square of categories
 > fibred in groupoids over `𝒞`, the base-change transformation `g⁻¹f_* ⟶ f'_*(g')⁻¹` of
@@ -104,7 +104,7 @@ noncomputable def abelianPresheafBaseChangeIso
         (TwoFibreProductOver.snd p𝒳 p𝒴' p𝒴 f g).op.ran
 ```
 
-**`AlgebraicGeometry.Stack.modulePresheafBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean, line 659](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean#L659). The attribute's comment: “module coefficients, on underlying abelian presheaves”.
+**`AlgebraicGeometry.Stack.modulePresheafBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean, line 659](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean#L659). The attribute's comment: “module coefficients, on underlying abelian presheaves”.
 
 > **Stacks 075B at module coefficients.** For the canonical 2-cartesian square of categories
 > fibred in groupoids over the big fppf category of `S` and any topology `τ` on `B.Schemes`, the
@@ -149,7 +149,7 @@ noncomputable def modulePresheafBaseChangeIso
         PresheafOfModules.toPresheaf (ringStructureSheafCore B S hS p𝒴' h𝒴' τ hτ).obj)
 ```
 
-**`CategoryTheory.TwoFibreProductOver.isIso_presheafRanBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafBaseChange.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafBaseChange.lean#L183).
+**`CategoryTheory.TwoFibreProductOver.isIso_presheafRanBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafBaseChange.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/PresheafBaseChange.lean#L183).
 
 > **Stacks 075B**: in a 2-cartesian square of categories fibred in groupoids, the canonical
 > base-change transformation `g⁻¹ f_* ⟶ f'_* (g')⁻¹` for presheaves is an isomorphism, naturally in
@@ -176,7 +176,7 @@ theorem isIso_presheafRanBaseChange
 
 [Tag 06W7](https://stacks.math.columbia.edu/tag/06W7) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.isRepresentableMorphism_iff_forall_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Representable.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Representable.lean#L344).
+**`AlgebraicGeometry.BigFppfOver.isRepresentableMorphism_iff_forall_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Representable.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Representable.lean#L344).
 
 > **Stacks 06W7.** A morphism of categories fibred in groupoids over the big fppf category of
 > `S` is representable if and only if every presheaf `x ↦ Hom(F x, y)` on the source category is
@@ -198,7 +198,7 @@ theorem isRepresentableMorphism_iff_forall_isRepresentable
 
 [Tag 06W8](https://stacks.math.columbia.edu/tag/06W8) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.isLeftAdjoint_of_isRepresentableMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean#L74). The attribute's comment: “existence of the right adjoint”.
+**`AlgebraicGeometry.BigFppfOver.isLeftAdjoint_of_isRepresentableMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean#L74). The attribute's comment: “existence of the right adjoint”.
 
 > A representable 1-morphism of categories fibred in groupoids over the big fppf category of
 > `S` has a right adjoint: its value at `y` is a representing object for the presheaf
@@ -211,7 +211,7 @@ theorem isLeftAdjoint_of_isRepresentableMorphism (hF : F ⋙ p𝒴 = p𝒳)
     F.IsLeftAdjoint
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isContinuous_rightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean#L93). The attribute's comment: “continuity of the right adjoint”.
+**`AlgebraicGeometry.BigFppfOver.isContinuous_rightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean#L93). The attribute's comment: “continuity of the right adjoint”.
 
 > The right adjoint of a representable 1-morphism is continuous for the topologies associated
 > (Stacks 06TP) to a topology `τ` on the underlying category of schemes: `F` is cocontinuous by
@@ -225,7 +225,7 @@ theorem isContinuous_rightAdjoint (τ : GrothendieckTopology B.Schemes) :
       (Stack.associatedTopology B S hS p𝒳 τ)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isMorphismOfSites_rightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean#L112). The attribute's comment: “the morphism of sites”.
+**`AlgebraicGeometry.BigFppfOver.isMorphismOfSites_rightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean#L112). The attribute's comment: “the morphism of sites”.
 
 > The right adjoint of a representable 1-morphism defines a morphism of sites from the
 > associated site of `𝒳` to that of `𝒴`: it is continuous, and the left exact left adjoint of its
@@ -241,8 +241,8 @@ theorem isMorphismOfSites_rightAdjoint (τ : GrothendieckTopology B.Schemes) :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.ranIsoRestrictionOfAdjunction`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L215), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean#L139) (StacksFrontier): “the presheaf direct image along the right adjoint is restriction”.
-- [`CategoryTheory.Adjunction.sheafPushforwardCocontinuousIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/PushforwardAdjunction.lean#L70), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean#L142) (StacksFrontier): “agreement of the two direct images”.
+- [`CategoryTheory.Functor.ranIsoRestrictionOfAdjunction`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L215), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean#L139) (StacksFrontier): “the presheaf direct image along the right adjoint is restriction”.
+- [`CategoryTheory.Adjunction.sheafPushforwardCocontinuousIso`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/PushforwardAdjunction.lean#L70), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentablePushforward.lean#L142) (StacksFrontier): “agreement of the two direct images”.
 
 ## Depends on
 
@@ -251,4 +251,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 96.5, Tag 06W5](https://stacks.math.columbia.edu/tag/06W5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

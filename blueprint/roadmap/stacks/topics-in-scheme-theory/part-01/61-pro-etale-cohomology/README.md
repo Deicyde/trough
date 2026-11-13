@@ -1,6 +1,6 @@
 # 61 Pro-étale Cohomology
 
-Chapter 61 of the Stacks Project, *Pro-étale Cohomology*, [Tag 0965](https://stacks.math.columbia.edu/tag/0965): the 30 sections of its 31 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 164 tags are carried by 477 declarations of the repository (all in StacksFrontier) and 55 registered declarations.
+Chapter 61 of the Stacks Project, *Pro-étale Cohomology*, [Tag 0965](https://stacks.math.columbia.edu/tag/0965): the 30 sections of its 31 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 164 tags are carried by 479 declarations of the repository (all in StacksFrontier) and 54 registered declarations.
 
 ## [61.2 Some topology to 61.18 Points of the pro-étale…](part-01/README.md)
 

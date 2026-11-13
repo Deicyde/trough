@@ -8,7 +8,7 @@ proof: formalized
 
 # Field extensions and algebraic closure: its own results
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/index.html).
 
 Algebraic field extensions and closures: minimal polynomials, separable and purely inseparable extensions, base change to separably closed fields, algebraic closures of series fields and quasi-algebraically closed fields.
 
@@ -18,7 +18,7 @@ If `S` is finite over `R` and `χ' : S →+* K` sends `R` into the image of
 `E` in `K`, then the field generated over `E` by the range of `χ'` is
 finite-dimensional over `E`.
 
-Formalized by `RingHom.finiteDimensional_adjoin_range_of_finite_of_forall_mem_range`, a theorem declared in [MathlibExt/FieldTheory/IntermediateField/AdjoinRange.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/IntermediateField/AdjoinRange.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/index.html#finite-dimensional-adjoin-range-of-finit).
+Formalized by `RingHom.finiteDimensional_adjoin_range_of_finite_of_forall_mem_range`, a theorem declared in [MathlibExt/FieldTheory/IntermediateField/AdjoinRange.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/IntermediateField/AdjoinRange.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/index.html#finite-dimensional-adjoin-range-of-finit).
 
 ## Finite separable extensions are quotients by separable irreducible polynomials
 
@@ -26,7 +26,7 @@ Let $L/K$
 be a finite field extension. Then $L/K$ is separable if and only if there is a monic, irreducible,
 separable polynomial $f \in K[X]$ such that $L$ is isomorphic as a $K$-algebra to $K[X]/(f)$.
 
-Formalized by `Algebra.isSeparable_iff_exists_monic_irreducible_separable`, a theorem declared in [MathlibExt/FieldTheory/SeparableAdjoinRoot.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/SeparableAdjoinRoot.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/index.html#is-separable-iff-exists-monic-irreducibl).
+Formalized by `Algebra.isSeparable_iff_exists_monic_irreducible_separable`, a theorem declared in [MathlibExt/FieldTheory/SeparableAdjoinRoot.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/SeparableAdjoinRoot.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/index.html#is-separable-iff-exists-monic-irreducibl).
 
 ## Purely inseparable extensions of prime degree
 
@@ -36,7 +36,7 @@ $[L : K] = p$. Then there are $\alpha \in L$ and $a \in K$ such that the minimal
 $\alpha$ over $K$ is $X^p - a$, $a$ is not a $p$-th power in $K$ (that is, $b^p \neq a$ for every
 $b \in K$), and $L = K(\alpha)$.
 
-Formalized by `IsPurelyInseparable.exists_minpoly_X_pow_sub_C_of_finrank_eq_prime`, a theorem declared in [MathlibExt/FieldTheory/PurelyInseparablePrimeDegree.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/PurelyInseparablePrimeDegree.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/index.html#exists-minpoly-x-pow-sub-c-of-finrank-eq).
+Formalized by `IsPurelyInseparable.exists_minpoly_X_pow_sub_C_of_finrank_eq_prime`, a theorem declared in [MathlibExt/FieldTheory/PurelyInseparablePrimeDegree.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/PurelyInseparablePrimeDegree.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/index.html#exists-minpoly-x-pow-sub-c-of-finrank-eq).
 
 ## Tsen's theorem
 
@@ -50,7 +50,7 @@ words, $k(X)$ is a $C_1$ field.
 
 - C. Tsen, Divisionsalgebren über Funktionenkörpern, Nachr. Ges. Wiss. Göttingen 1933 335–339; reformulated by C. Chevalley and Lang; textbook in Lang, Algebra, rev 3rd ed.
 
-Formalized by `MathlibExt.FieldTheory.TsenWanted.tsen`, a theorem declared in [MathlibExt/FieldTheory/Tsen.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/FieldTheory/Tsen.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/index.html#tsen).
+Formalized by `MathlibExt.FieldTheory.TsenWanted.tsen`, a theorem declared in [MathlibExt/FieldTheory/Tsen.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/FieldTheory/Tsen.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/index.html#tsen).
 
 ## Depends on
 
@@ -59,4 +59,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Field extensions and algebraic closure](https://deicyde.github.io/atlas-lean/roadmap/FieldTheory/extensions-and-closure/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/FieldTheory/extensions-and-closure)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/FieldTheory/extensions-and-closure)

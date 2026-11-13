@@ -1,6 +1,6 @@
 # 20 Cohomology of Sheaves
 
-Chapter 20 of the Stacks Project, *Cohomology of Sheaves*, [Tag 01DW](https://stacks.math.columbia.edu/tag/01DW): the 54 sections of its 55 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 311 tags are carried by 712 declarations of the repository (all in StacksFrontier) and 35 registered declarations.
+Chapter 20 of the Stacks Project, *Cohomology of Sheaves*, [Tag 01DW](https://stacks.math.columbia.edu/tag/01DW): the 54 sections of its 55 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 311 tags are carried by 708 declarations of the repository (all in StacksFrontier) and 34 registered declarations.
 
 ## [20.2 Cohomology of sheaves to 20.21 Cohomology with support…](part-01/README.md)
 

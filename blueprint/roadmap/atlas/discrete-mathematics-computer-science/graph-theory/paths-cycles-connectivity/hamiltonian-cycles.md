@@ -7,7 +7,7 @@ statement: formalized
 
 # Hamiltonian cycles
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles/index.html).
 
 ## Dirac's theorem
 
@@ -19,7 +19,7 @@ every vertex exactly once.
 
 - G. A. Dirac, Some Theorems on Abstract Graphs, Proc. London Math. Soc. s3-2 (1952), 69–81, DOI 10.1112/plms/s3-2.1.69.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.DiracWanted.dirac`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/Dirac.lean, line 529](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/Dirac.lean#L529). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles/index.html#dirac).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.DiracWanted.dirac`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/Dirac.lean, line 529](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/Dirac.lean#L529). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles/index.html#dirac).
 
 ## A cyclic listing of the vertices gives a Hamiltonian cycle
 
@@ -29,7 +29,7 @@ which $v_{i-1}$ and $v_i$ are adjacent in $G$ for each $1 \le i \le n$. If $v_1,
 pairwise distinct, every vertex of $V$ is among them, and $n \ge 3$, then $G$ is Hamiltonian: it
 has a cycle that visits every vertex exactly once.
 
-Formalized by `SimpleGraph.IsHamiltonian.of_cyclic_list`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/HamiltonianCycle.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/HamiltonianCycle.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles/index.html#of-cyclic-list).
+Formalized by `SimpleGraph.IsHamiltonian.of_cyclic_list`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/HamiltonianCycle.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/HamiltonianCycle.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles/index.html#of-cyclic-list).
 
 ## Ore's theorem
 
@@ -41,7 +41,7 @@ is Hamiltonian.
 
 - O. Ore, Note on Hamilton Circuits, Amer. Math. Monthly 67 (1960), 55, DOI 10.2307/2308928.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.OreWanted.ore`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/Ore.lean, line 727](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/Ore.lean#L727). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles/index.html#ore).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.OreWanted.ore`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/Ore.lean, line 727](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/Ore.lean#L727). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles/index.html#ore).
 
 ## Prism-Hamiltonicity conjecture for 3-connected planar graphs
 
@@ -50,7 +50,7 @@ graph $G$ that is $3$-vertex-connected and straight-line planar, the prism
 $G \mathbin{\square} K_2$, the Cartesian product of $G$ with the complete graph on two
 vertices, is Hamiltonian.
 
-Formalized by `MathlibExt.Combinatorics.PlanarGraphPrismHamiltonicityWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/PlanarGraphPrismHamiltonicityWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PlanarGraphPrismHamiltonicityWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles/index.html#conjecture).
+Formalized by `MathlibExt.Combinatorics.PlanarGraphPrismHamiltonicityWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/PlanarGraphPrismHamiltonicityWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PlanarGraphPrismHamiltonicityWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles/index.html#conjecture).
 
 ## Špacapan's counterexample to prism-Hamiltonicity
 
@@ -63,7 +63,7 @@ Hamiltonian.
 
 - S. Špacapan, A counterexample to prism-hamiltonicity of 3-connected planar graphs, Journal of Combinatorial Theory, Series B 148 (2021), 46–52, https://arxiv.org/abs/1906.06683.
 
-Stated but not proved: `MathlibExt.Combinatorics.PlanarGraphPrismHamiltonicityWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/PlanarGraphPrismHamiltonicityWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PlanarGraphPrismHamiltonicityWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles/index.html#conjecture-refuted).
+Stated but not proved: `MathlibExt.Combinatorics.PlanarGraphPrismHamiltonicityWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/PlanarGraphPrismHamiltonicityWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PlanarGraphPrismHamiltonicityWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles/index.html#conjecture-refuted).
 
 ## Depends on
 
@@ -72,4 +72,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hamiltonian cycles](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/paths-cycles-connectivity/hamiltonian-cycles)

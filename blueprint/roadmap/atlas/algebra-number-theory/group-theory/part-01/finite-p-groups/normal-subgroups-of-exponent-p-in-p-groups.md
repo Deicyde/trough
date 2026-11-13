@@ -7,7 +7,7 @@ statement: formalized
 
 # Normal subgroups of exponent p in p-groups
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/normal-subgroups-of-exponent-p-in-p-groups/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/normal-subgroups-of-exponent-p-in-p-groups/index.html).
 
 ## Berkovich's question on normal subgroups of exponent p, for p > n
 
@@ -20,7 +20,7 @@ Berkovich asked this for $p$ sufficiently large relative to $n$; the explicit bo
 one of the resolution. For $n \ge 1$ the condition $x^p = 1$ on a group of order $p^n$ says that it
 has exponent exactly $p$.
 
-Formalized by `MathlibExt.GroupTheory.NormalExponentPSubgroupKourovka15Problem24Wanted.normalExponentPSubgroupOfLargePrime`, a definition declared in [WantedExt/GroupTheory/NormalExponentPSubgroupKourovka15Problem24Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/NormalExponentPSubgroupKourovka15Problem24Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/normal-subgroups-of-exponent-p-in-p-groups/index.html#normal-exponent-psubgroup-of-large-prime).
+Formalized by `MathlibExt.GroupTheory.NormalExponentPSubgroupKourovka15Problem24Wanted.normalExponentPSubgroupOfLargePrime`, a definition declared in [WantedExt/GroupTheory/NormalExponentPSubgroupKourovka15Problem24Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/NormalExponentPSubgroupKourovka15Problem24Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/normal-subgroups-of-exponent-p-in-p-groups/index.html#normal-exponent-psubgroup-of-large-prime).
 
 ## Normal subgroups of exponent p in p-groups when p > n
 
@@ -37,7 +37,7 @@ order $p$ of $\zeta_{p-1}(M)$ form a normal subgroup of $G$ containing $H$.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 15.24 (Ya. G. Berkovich); resolution: A. Mann, letter of 1 October 2002, as recorded in the Kourovka Archive, Problem 15.24, Archive answer: Yes if p > n (H of exponent p and order p^n normal in a maximal subgroup M lies in ζ_{p-1}(M), whose elements of order p form a normal subgroup of G), https://arxiv.org/abs/1401.0300v49.
 
-Stated but not proved: `MathlibExt.GroupTheory.NormalExponentPSubgroupKourovka15Problem24Wanted.normalExponentPSubgroupOfLargePrime_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/NormalExponentPSubgroupKourovka15Problem24Wanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/NormalExponentPSubgroupKourovka15Problem24Wanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/normal-subgroups-of-exponent-p-in-p-groups/index.html#normal-exponent-psubgroup-of-large-prime-2).
+Stated but not proved: `MathlibExt.GroupTheory.NormalExponentPSubgroupKourovka15Problem24Wanted.normalExponentPSubgroupOfLargePrime_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/NormalExponentPSubgroupKourovka15Problem24Wanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/NormalExponentPSubgroupKourovka15Problem24Wanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/normal-subgroups-of-exponent-p-in-p-groups/index.html#normal-exponent-psubgroup-of-large-prime-2).
 
 ## Depends on
 
@@ -46,4 +46,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Normal subgroups of exponent p in p-groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/normal-subgroups-of-exponent-p-in-p-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/finite-p-groups/normal-subgroups-of-exponent-p-in-p-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/finite-p-groups/normal-subgroups-of-exponent-p-in-p-groups)

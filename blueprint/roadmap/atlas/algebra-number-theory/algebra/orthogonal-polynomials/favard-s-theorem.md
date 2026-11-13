@@ -8,7 +8,7 @@ proof: formalized
 
 # Favard's theorem
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/favard-s-theorem/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/favard-s-theorem/index.html).
 
 ## Formally orthogonal polynomial family
 
@@ -21,7 +21,7 @@ and $L(p_n^2) \ne 0$ for every $n$.
 
 - Barry, JIS VOL14 (`Barry1/barry97r2.tex`), lines 326-331. URL: https://cs.uwaterloo.ca/journals/JIS/VOL14/Barry1/barry97r2.tex
 
-Formalized by `MetaMathlibExt.Polynomial.IsFormallyOrthogonal`, a definition declared in [MathlibExt/Algebra/Polynomial/FormalOrthogonality.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/FormalOrthogonality.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/favard-s-theorem/index.html#is-formally-orthogonal).
+Formalized by `MetaMathlibExt.Polynomial.IsFormallyOrthogonal`, a definition declared in [MathlibExt/Algebra/Polynomial/FormalOrthogonality.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/FormalOrthogonality.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/favard-s-theorem/index.html#is-formally-orthogonal).
 
 ## Favard's theorem, forward direction
 
@@ -35,7 +35,7 @@ $p_{n+1} = (x - \alpha_n) \, p_n - \beta_n \, p_{n-1}$ for all $n \ge 1$.
 
 - Barry, JIS VOL14 (`Barry1/barry97r2.tex`), lines 346-352. URL: https://cs.uwaterloo.ca/journals/JIS/VOL14/Barry1/barry97r2.tex
 
-Formalized by `MetaMathlibExt.favard_forward`, a theorem declared in [MathlibExt/Algebra/Polynomial/FavardForward.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/FavardForward.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/favard-s-theorem/index.html#favard-forward).
+Formalized by `MetaMathlibExt.favard_forward`, a theorem declared in [MathlibExt/Algebra/Polynomial/FavardForward.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/FavardForward.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/favard-s-theorem/index.html#favard-forward).
 
 ## Favard's theorem
 
@@ -49,7 +49,7 @@ $p_{n+1} = (x - \alpha_n) \, p_n - \beta_n \, p_{n-1}$ for all $n \ge 1$.
 
 - Paul Barry, "Riordan Arrays, Orthogonal Polynomials as Moments, and Hankel Transforms," Journal of Integer Sequences 14 (2011), Article 11.2.2, https://cs.uwaterloo.ca/journals/JIS/VOL14/Barry1/barry97r2.tex, Favard theorem at lines 346–352.
 
-Formalized by `MetaMathlibExt.favard_iff`, a theorem declared in [MathlibExt/Algebra/Polynomial/FavardIff.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/FavardIff.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/favard-s-theorem/index.html#favard-iff).
+Formalized by `MetaMathlibExt.favard_iff`, a theorem declared in [MathlibExt/Algebra/Polynomial/FavardIff.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/FavardIff.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/favard-s-theorem/index.html#favard-iff).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Favard's theorem](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/favard-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/orthogonal-polynomials/favard-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/orthogonal-polynomials/favard-s-theorem)

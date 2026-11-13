@@ -7,7 +7,7 @@ statement: formalized
 
 # Nottingham group
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/nottingham-group/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/nottingham-group/index.html).
 
 ## Nottingham condition on automorphisms of power series
 
@@ -20,7 +20,7 @@ For a prime $p$ and $R = \mathbb{Z}/p\mathbb{Z}$, every ring automorphism of $R[
 $R$-linear and preserves the maximal ideal, so it is the substitution $x \mapsto \varphi(x)$; the
 automorphisms satisfying the Nottingham condition then form the Nottingham group $N(R)$.
 
-Formalized by `MathlibExt.GroupTheory.NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.IsNottingham`, a definition declared in [WantedExt/GroupTheory/NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/nottingham-group/index.html#is-nottingham).
+Formalized by `MathlibExt.GroupTheory.NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.IsNottingham`, a definition declared in [WantedExt/GroupTheory/NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/nottingham-group/index.html#is-nottingham).
 
 ## Kourovka Problem 12.24 (free subgroups of the Nottingham group)
 
@@ -30,7 +30,7 @@ ring automorphisms of $(\mathbb{Z}/p\mathbb{Z})[[x]]$ whose image consists of au
 $\varphi$ with $\varphi(x) - x \in (x^2)$, that is, of elements of the Nottingham group
 $N(\mathbb{Z}/p\mathbb{Z})$.
 
-Formalized by `MathlibExt.GroupTheory.NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.nottinghamContainsFreeGroup`, a definition declared in [WantedExt/GroupTheory/NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/nottingham-group/index.html#nottingham-contains-free-group).
+Formalized by `MathlibExt.GroupTheory.NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.nottinghamContainsFreeGroup`, a definition declared in [WantedExt/GroupTheory/NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/nottingham-group/index.html#nottingham-contains-free-group).
 
 ## The Nottingham group contains a free subgroup of rank 2
 
@@ -49,7 +49,7 @@ free groups are residually $p$.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 12.24 (D. L. Johnson); resolution: R. Camina, J. Algebra 196 (1997), no. 1, 101-113, Camina's theorem that every countably based (in particular every finitely generated) pro-p group embeds in N(F_p); Kourovka Archive, Problem 12.24.
 
-Stated but not proved: `MathlibExt.GroupTheory.NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.nottinghamContainsFreeGroup_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/nottingham-group/index.html#nottingham-contains-free-group-holds).
+Stated but not proved: `MathlibExt.GroupTheory.NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.nottinghamContainsFreeGroup_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/NottinghamGroupFreeSubgroupKourovka12Problem24Wanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/nottingham-group/index.html#nottingham-contains-free-group-holds).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Nottingham group](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/nottingham-group/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/profinite-and-topological-groups/nottingham-group)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/profinite-and-topological-groups/nottingham-group)

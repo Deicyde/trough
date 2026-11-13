@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.87 The naive cotangent complex
 
-Section 15.87 of the Stacks Project, [Tag 0FUX](https://stacks.math.columbia.edu/tag/0FUX). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.87 of the Stacks Project, [Tag 0FUX](https://stacks.math.columbia.edu/tag/0FUX). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FUY, a lemma
 
 [Tag 0FUY](https://stacks.math.columbia.edu/tag/0FUY) in the Stacks Project.
 
-**`NaiveCotangent.naiveCotangent_baseChange_truncGE_comparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/DerivedBaseChange.lean, line 561](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/DerivedBaseChange.lean#L561).
+**`NaiveCotangent.naiveCotangent_baseChange_truncGE_comparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/DerivedBaseChange.lean, line 556](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/DerivedBaseChange.lean#L556).
 
 > **Stacks 0FUY.** For `R → S → S'`, the canonical comparison from derived to termwise base
 > change of the naive cotangent complex induces an isomorphism after truncation in degrees at
@@ -76,7 +76,7 @@ public theorem naiveCotangent_baseChange_truncGE_comparison_isIso
 
 [Tag 0FUZ](https://stacks.math.columbia.edu/tag/0FUZ) in the Stacks Project.
 
-**`NaiveCotangent.naiveCotangentComplex_baseChange_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/DerivedBaseChange.lean, line 486](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/DerivedBaseChange.lean#L486).
+**`NaiveCotangent.naiveCotangentComplex_baseChange_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/DerivedBaseChange.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/DerivedBaseChange.lean#L481).
 
 > **Stacks 0FUZ.** Formation of the naive cotangent complex commutes with arbitrary base change
 > on `H⁰` and is surjective on `H⁻¹`, both for a chosen polynomial presentation and for the
@@ -117,7 +117,7 @@ public theorem naiveCotangentComplex_baseChange_homology
 
 [Tag 0FJU](https://stacks.math.columbia.edu/tag/0FJU) in the Stacks Project.
 
-**`NaiveCotangent.naiveCotangentComplex_quasiIso_baseChange_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Cocartesian.lean, line 830](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/Cocartesian.lean#L830).
+**`NaiveCotangent.naiveCotangentComplex_quasiIso_baseChange_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Cocartesian.lean, line 829](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Cocartesian.lean#L829).
 
 > **Stacks 0FJU.** Let `A → B` be flat, let `A → A'` be arbitrary and let `B' = A' ⊗[A] B` be
 > the pushout, so that the square with corners `A, A', B, B'` is cocartesian. Then the canonical
@@ -261,7 +261,7 @@ public theorem naiveCotangentComplex_quasiIso_baseChange_of_flat
 
 [Tag 0FV0](https://stacks.math.columbia.edu/tag/0FV0) in the Stacks Project.
 
-**`NaiveCotangent.naiveCotangentComplex_isPerfect_and_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/NaiveCotangentPerfect.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/NaiveCotangentPerfect.lean#L414). References: SGA 6 0 (4.4), “affine case”.
+**`NaiveCotangent.naiveCotangentComplex_isPerfect_and_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/NaiveCotangentPerfect.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/NaiveCotangentPerfect.lean#L415). References: SGA 6 0 (4.4), “affine case”.
 
 > The naive cotangent complex of a local complete intersection is perfect and
 > has Tor-amplitude in `[-1, 0]`.
@@ -294,7 +294,7 @@ public theorem naiveCotangentComplex_isPerfect_and_hasTorAmplitude
 
 [Tag 0FV1](https://stacks.math.columbia.edu/tag/0FV1) in the Stacks Project.
 
-**`NaiveCotangent.finite_projective_ker_naiveCotangent_baseChange_homology_negOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/CocartesianKernel.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/CocartesianKernel.lean#L294).
+**`NaiveCotangent.finite_projective_ker_naiveCotangent_baseChange_homology_negOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/CocartesianKernel.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/CocartesianKernel.lean#L294).
 
 > **Stacks 0FV1.** In a pushout square of rings, if both parallel maps are local complete
 > intersections, then the kernel of the base-change map on degree `-1` homology of the naive
@@ -324,4 +324,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.87, Tag 0FUX](https://stacks.math.columbia.edu/tag/0FUX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

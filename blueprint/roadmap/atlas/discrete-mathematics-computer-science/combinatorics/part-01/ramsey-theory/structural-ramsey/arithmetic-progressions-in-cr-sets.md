@@ -7,7 +7,7 @@ statement: formalized
 
 # Arithmetic progressions in CR-sets
 
-28 results, 15 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html).
+28 results, 15 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html).
 
 ## Thick set in a commutative semigroup
 
@@ -19,7 +19,7 @@ that is, $e + x \in A$ for every $e \in E$.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 1 (definition of thick sets).
 
-Formalized by `MetaMathlibExt.IsAddThick`, a definition declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-add-thick).
+Formalized by `MetaMathlibExt.IsAddThick`, a definition declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-add-thick).
 
 ## Piecewise syndetic set in a commutative semigroup
 
@@ -31,7 +31,7 @@ $\bigcup_{t \in F} (-t + A)$ is thick, where $-t + A = \{s \in S : t + s \in A\}
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 1 (definition of piecewise syndetic sets).
 
-Formalized by `MetaMathlibExt.IsAddPiecewiseSyndetic`, a definition declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-add-piecewise-syndetic).
+Formalized by `MetaMathlibExt.IsAddPiecewiseSyndetic`, a definition declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-add-piecewise-syndetic).
 
 ## J-sets in commutative semigroups
 
@@ -44,7 +44,7 @@ $H \subseteq \mathbb{N}$ such that $a + \sum_{n \in H} f(n) \in A$ for every $f 
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Definition 1.
 
-Formalized by `MetaMathlibExt.IsJSet`, a definition declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-jset).
+Formalized by `MetaMathlibExt.IsJSet`, a definition declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-jset).
 
 ## CR-set
 
@@ -63,7 +63,7 @@ semigroup. Over a nonempty $S$ the two definitions agree.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Definition 2.
 
-Formalized by `MetaMathlibExt.IsCRSet`, a definition declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-crset).
+Formalized by `MetaMathlibExt.IsCRSet`, a definition declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-crset).
 
 ## Essential CR-set
 
@@ -76,7 +76,7 @@ $p + p = p$, all of whose members are CR-sets, such that $A \in p$.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (definition of essential CR-sets before Theorem 7).
 
-Formalized by `MetaMathlibExt.IsEssentialCRSet`, a definition declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-essential-crset).
+Formalized by `MetaMathlibExt.IsEssentialCRSet`, a definition declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-essential-crset).
 
 ## The whole commutative semigroup is thick
 
@@ -87,7 +87,7 @@ then $S$ itself is a thick subset of $S$.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 1 (definition of thick sets).
 
-Formalized by `MetaMathlibExt.isAddThick_univ`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-add-thick-univ).
+Formalized by `MetaMathlibExt.isAddThick_univ`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-add-thick-univ).
 
 ## The empty set is not thick
 
@@ -98,7 +98,7 @@ thick.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 1 (definition of thick sets).
 
-Formalized by `MetaMathlibExt.not_isAddThick_empty`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#not-is-add-thick-empty).
+Formalized by `MetaMathlibExt.not_isAddThick_empty`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#not-is-add-thick-empty).
 
 ## The whole commutative semigroup is piecewise syndetic
 
@@ -109,7 +109,7 @@ semigroup, then $S$ itself is a piecewise syndetic subset of $S$.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 1 (definition of piecewise syndetic sets).
 
-Formalized by `MetaMathlibExt.isAddPiecewiseSyndetic_univ`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-add-piecewise-syndetic-univ).
+Formalized by `MetaMathlibExt.isAddPiecewiseSyndetic_univ`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-add-piecewise-syndetic-univ).
 
 ## The whole semigroup is a J-set
 
@@ -120,7 +120,7 @@ itself is a $J$-set.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Definition 1.
 
-Formalized by `MetaMathlibExt.isJSet_univ`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-jset-univ).
+Formalized by `MetaMathlibExt.isJSet_univ`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-jset-univ).
 
 ## The whole commutative semigroup is a CR-set
 
@@ -131,7 +131,7 @@ then $S$ itself is a CR-set in $S$.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Definition 2.
 
-Formalized by `MetaMathlibExt.isCRSet_univ`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-crset-univ).
+Formalized by `MetaMathlibExt.isCRSet_univ`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-crset-univ).
 
 ## The empty set is not a CR-set
 
@@ -142,7 +142,7 @@ CR-set.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Definition 2.
 
-Formalized by `MetaMathlibExt.not_isCRSet_empty`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#not-is-crset-empty).
+Formalized by `MetaMathlibExt.not_isCRSet_empty`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#not-is-crset-empty).
 
 ## Families with the Ramsey property
 
@@ -155,7 +155,7 @@ $A \in F$ or $B \in F$.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (families and the Ramsey property).
 
-Formalized by `MetaMathlibExt.IsRamseyFamily`, a definition declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-ramsey-family).
+Formalized by `MetaMathlibExt.IsRamseyFamily`, a definition declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-ramsey-family).
 
 ## The set β(F) of ultrafilters inside a family
 
@@ -167,7 +167,7 @@ $\mathcal F$, that is, $A \in \mathcal F$ for every $A \in p$.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (definition of `β(F)`).
 
-Formalized by `MetaMathlibExt.betaFamily`, a definition declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#beta-family).
+Formalized by `MetaMathlibExt.betaFamily`, a definition declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#beta-family).
 
 ## Membership in β(F)
 
@@ -178,7 +178,7 @@ ultrafilter on $S$. Then $p \in \beta(F)$ if and only if every member of $p$ bel
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (definition of `β(F)`).
 
-Formalized by `MetaMathlibExt.mem_betaFamily`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#mem-beta-family).
+Formalized by `MetaMathlibExt.mem_betaFamily`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#mem-beta-family).
 
 ## β of the nonempty sets is all of βS
 
@@ -190,7 +190,7 @@ $\beta(\mathcal F) = \beta S$, the set of all ultrafilters on $S$.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Section 2 (definition of `β(F)`).
 
-Formalized by `MetaMathlibExt.betaFamily_nonempty_sets`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#beta-family-nonempty-sets).
+Formalized by `MetaMathlibExt.betaFamily_nonempty_sets`, a theorem declared in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#beta-family-nonempty-sets).
 
 ## Ultrafilters inside a Ramsey family form a closed set
 
@@ -202,7 +202,7 @@ members lie in $F$ is closed in the space $\beta S$ of all ultrafilters on $S$.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.isClosed_betaFamily` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-closed-beta-family).
+Stated but not proved: `MetaMathlibExt.isClosed_betaFamily` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-closed-beta-family).
 
 ## Theorem 3, part 2: a Ramsey family is the union of its ultrafilters
 
@@ -215,7 +215,7 @@ $A \in p$ for some $p \in \beta(F)$; that is, $F = \bigcup \beta(F)$.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.mem_iff_exists_mem_betaFamily` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#mem-iff-exists-mem-beta-family).
+Stated but not proved: `MetaMathlibExt.mem_iff_exists_mem_betaFamily` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#mem-iff-exists-mem-beta-family).
 
 ## Nonempty closed sets of ultrafilters come from Ramsey families
 
@@ -233,7 +233,7 @@ hence not a family.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.isRamseyFamily_and_betaFamily_eq_of_isClosed` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-ramsey-family-and-beta-family-eq-of-i).
+Stated but not proved: `MetaMathlibExt.isRamseyFamily_and_betaFamily_eq_of_isClosed` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-ramsey-family-and-beta-family-eq-of-i).
 
 ## β(F) contains an idempotent when it is a subsemigroup
 
@@ -247,7 +247,7 @@ $p \in \beta(\mathcal F)$ with $pp = p$.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.exists_idempotent_mem_betaFamily` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#exists-idempotent-mem-beta-family).
+Stated but not proved: `MetaMathlibExt.exists_idempotent_mem_betaFamily` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#exists-idempotent-mem-beta-family).
 
 ## Left-ideal criterion for β(F)
 
@@ -269,7 +269,7 @@ ideal.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.betaFamily_isLeftIdeal_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#beta-family-is-left-ideal-iff).
+Stated but not proved: `MetaMathlibExt.betaFamily_isLeftIdeal_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#beta-family-is-left-ideal-iff).
 
 ## Subsemigroup criterion for β(F)
 
@@ -287,7 +287,7 @@ The source's intersection $\bigcap_{q \in H} x^{-1}E$ is read as $\bigcap_{x \in
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.betaFamily_isSubsemigroup_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#beta-family-is-subsemigroup-iff).
+Stated but not proved: `MetaMathlibExt.betaFamily_isSubsemigroup_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#beta-family-is-subsemigroup-iff).
 
 ## Decreasing shift-closed sequences give essential sets
 
@@ -309,7 +309,7 @@ than $1$.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.exists_idempotent_mem_of_decreasing_sequence` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#exists-idempotent-mem-of-decreasing-sequ).
+Stated but not proved: `MetaMathlibExt.exists_idempotent_mem_of_decreasing_sequence` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#exists-idempotent-mem-of-decreasing-sequ).
 
 ## Essential F-sets contain shift-closed decreasing sequences (countable case)
 
@@ -329,7 +329,7 @@ omitted. The sequence is indexed from $0$.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.exists_decreasing_sequence_of_idempotent_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#exists-decreasing-sequence-of-idempotent).
+Stated but not proved: `MetaMathlibExt.exists_decreasing_sequence_of_idempotent_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#exists-decreasing-sequence-of-idempotent).
 
 ## Furstenberg–Glasner theorem on progressions in piecewise syndetic sets
 
@@ -344,7 +344,7 @@ The paper takes $k \ge 1$; the case $k = 0$ is included.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.IsAddPiecewiseSyndetic.arithmeticProgressions_int` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#arithmetic-progressions-int).
+Stated but not proved: `MetaMathlibExt.IsAddPiecewiseSyndetic.arithmeticProgressions_int` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#arithmetic-progressions-int).
 
 ## Debnath–Goswami theorem on progressions in J-sets
 
@@ -360,7 +360,7 @@ included.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.IsJSet.arithmeticProgressions_pnat` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#arithmetic-progressions-pnat).
+Stated but not proved: `MetaMathlibExt.IsJSet.arithmeticProgressions_pnat` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#arithmetic-progressions-pnat).
 
 ## Essential CR-sets via decreasing sequences
 
@@ -376,7 +376,7 @@ The sequence is indexed from $0$ rather than $1$.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.isEssentialCRSet_iff_exists_decreasing_sequence` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-essential-crset-iff-exists-decreasing).
+Stated but not proved: `MetaMathlibExt.isEssentialCRSet_iff_exists_decreasing_sequence` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#is-essential-crset-iff-exists-decreasing).
 
 ## Arithmetic progressions in CR-sets
 
@@ -391,7 +391,7 @@ The paper takes $l \ge 1$; the case $l = 0$ is included.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.IsCRSet.arithmeticProgressions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#arithmetic-progressions).
+Stated but not proved: `MetaMathlibExt.IsCRSet.arithmeticProgressions` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#arithmetic-progressions).
 
 ## Arithmetic progressions in essential CR-sets of the positive integers
 
@@ -408,7 +408,7 @@ included.
 
 - De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.IsEssentialCRSet.arithmeticProgressions_pnat` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#arithmetic-progressions-pnat-2).
+Stated but not proved: `MetaMathlibExt.IsEssentialCRSet.arithmeticProgressions_pnat` is written with `theorem_wanted` in [WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CRSetArithmeticProgressionWanted.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html#arithmetic-progressions-pnat-2).
 
 ## Depends on
 
@@ -417,4 +417,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Arithmetic progressions in CR-sets](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/structural-ramsey/arithmetic-progressions-in-cr-sets)

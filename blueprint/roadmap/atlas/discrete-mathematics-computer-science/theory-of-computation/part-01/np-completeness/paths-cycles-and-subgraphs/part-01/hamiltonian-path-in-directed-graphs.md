@@ -8,7 +8,7 @@ proof: formalized
 
 # Hamiltonian path in directed graphs
 
-214 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/index.html).
+214 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/index.html).
 
 ## Hamiltonian paths
 
@@ -17,7 +17,7 @@ on $0, \dots, n - 1$ whose arcs are the pairs in $E$ with both ends below $n$. A
 Hamiltonian path from $s$ to $t$ when it lists each of the vertices $0, \dots, n - 1$ exactly
 once, starts at $s$, ends at $t$, and each two consecutive entries of $p$ form an arc.
 
-Formalized by `Cslib.Complexity.Karp.IsHamPath`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#is-ham-path).
+Formalized by `Cslib.Complexity.Karp.IsHamPath`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#is-ham-path).
 
 ## The HAMPATH problem
 
@@ -25,21 +25,21 @@ The decision problem that accepts a bit string $x$ exactly when, for
 some $s$, $t$, $n$ and list of pairs $E$, $x$ is the PATH encoding of $s$, $t$ and the digraph on
 $0, \dots, n - 1$ with edge list $E$, and this digraph has a Hamiltonian path from $s$ to $t$.
 
-Formalized by `Cslib.Complexity.Karp.hamPathDec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#ham-path-dec).
+Formalized by `Cslib.Complexity.Karp.hamPathDec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#ham-path-dec).
 
 ## Distinct variables of a formula
 
 The list of the distinct variables of a CNF formula
 $\varphi$, in order of occurrence in $\varphi$, with each variable kept at its last occurrence.
 
-Formalized by `Cslib.Complexity.Karp.hamVars`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#ham-vars).
+Formalized by `Cslib.Complexity.Karp.hamVars`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#ham-vars).
 
 ## Tops of the diamonds
 
 In the HAMPATH construction with $m$ clauses, the top of
 diamond $i$ is the vertex $m + i(3m + 2)$; it is also the bottom of diamond $i - 1$.
 
-Formalized by `Cslib.Complexity.Karp.hpT`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#hp-t).
+Formalized by `Cslib.Complexity.Karp.hpT`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#hp-t).
 
 ## Row vertices of a diamond
 
@@ -47,7 +47,7 @@ In the HAMPATH construction with $m$ clauses, write $T(i)$
 for the top of diamond $i$. Row vertex $l$ of diamond $i$ is the number $T(i) + 1 + l$; the row
 of diamond $i$ consists of the vertices with $l \le 3m$.
 
-Formalized by `Cslib.Complexity.Karp.hpR`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#hp-r).
+Formalized by `Cslib.Complexity.Karp.hpR`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#hp-r).
 
 ## Arcs of a variable diamond
 
@@ -60,7 +60,7 @@ $j \to R(i, 3j + 2)$ if $x$ occurs positively in clause $j$, and the arcs $R(i, 
 and $j \to R(i, 3j + 1)$ if $x$ occurs negatively in clause $j$. Here $j$ is the vertex of
 clause $j$.
 
-Formalized by `Cslib.Complexity.Karp.diamondEdges`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#diamond-edges).
+Formalized by `Cslib.Complexity.Karp.diamondEdges`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#diamond-edges).
 
 ## Arcs of the HAMPATH construction
 
@@ -69,7 +69,7 @@ $x_0, \dots, x_{k-1}$ be its distinct variables, in the order of the distinct-va
 $\varphi$. The arcs of the construction for $\varphi$ are the arcs of diamond $i$ for variable
 $x_i$, for $i = 0, \dots, k - 1$, concatenated in this order.
 
-Formalized by `Cslib.Complexity.Karp.hamEdges`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#ham-edges).
+Formalized by `Cslib.Complexity.Karp.hamEdges`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#ham-edges).
 
 ## Sipser's HAMPATH instance of a CNF formula
 
@@ -84,7 +84,7 @@ $R_{i,l+1} \to R_{i,l}$ for every $l < 3m$; and, for every clause $j < m$, the a
 $R_{i,3j+1} \to j$ and $j \to R_{i,3j+2}$ if the literal $x_i$ occurs in clause $j$, and the
 arcs $R_{i,3j+2} \to j$ and $j \to R_{i,3j+1}$ if the literal $\neg x_i$ occurs in clause $j$.
 
-Formalized by `Cslib.Complexity.Karp.toHam`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#to-ham).
+Formalized by `Cslib.Complexity.Karp.toHam`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#to-ham).
 
 ## A fixed HAMPATH no-instance
 
@@ -94,7 +94,7 @@ with no arcs, whose source and target are both $0$.
 It is a no-instance of HAMPATH: a Hamiltonian path would visit both vertices and start and end
 at $0$, so it would visit $0$ twice.
 
-Formalized by `Cslib.Complexity.Karp.noHam`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#no-ham).
+Formalized by `Cslib.Complexity.Karp.noHam`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#no-ham).
 
 ## The SAT-to-HAMPATH reduction map
 
@@ -103,7 +103,7 @@ $\varphi$ is sent to Sipser's HAMPATH instance of $\varphi$, and a bit string th
 decode to a CNF formula is sent to the fixed HAMPATH no-instance (two vertices, no arcs, source
 and target $0$).
 
-Formalized by `Cslib.Complexity.Karp.reduceHam`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#reduce-ham).
+Formalized by `Cslib.Complexity.Karp.reduceHam`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#reduce-ham).
 
 ## Normal clause detours
 
@@ -113,14 +113,14 @@ $\varphi$. A list of vertices $p$ has normal detours when for every clause $j < 
 diamond $i < k$ such that $p$ contains $R(i, 3j + 1), j, R(i, 3j + 2)$ or
 $R(i, 3j + 2), j, R(i, 3j + 1)$ as consecutive entries.
 
-Formalized by `Cslib.Complexity.Karp.DetoursNormal`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#detours-normal).
+Formalized by `Cslib.Complexity.Karp.DetoursNormal`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#detours-normal).
 
 ## Tops are monotone in the diamond index
 
 In the HAMPATH construction with $m$ clauses,
 if $i \le i'$ then the top of diamond $i$ is at most the top of diamond $i'$.
 
-Formalized by `Cslib.Complexity.Karp.hpT_mono`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#hp-t-mono).
+Formalized by `Cslib.Complexity.Karp.hpT_mono`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#hp-t-mono).
 
 ## Row vertices lie below the next top
 
@@ -128,7 +128,7 @@ In the HAMPATH construction with $m$ clauses, for
 every diamond $i$ and every $l \le 3m$, row vertex $l$ of diamond $i$ is a smaller number than
 the top of diamond $i + 1$.
 
-Formalized by `Cslib.Complexity.Karp.hpR_lt_hpT_succ`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#hp-r-lt-hp-t-succ).
+Formalized by `Cslib.Complexity.Karp.hpR_lt_hpT_succ`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPath.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPath.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#hp-r-lt-hp-t-succ).
 
 ## Bits of an edge list, first edge first
 
@@ -137,14 +137,14 @@ of natural numbers, the bit encoding of the edge list whose first edge is $(u, v
 remaining edges are $E$ is: $u$ copies of true, then false, then $v$ copies of true, then false,
 then the bit encoding of $E$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.edgeBits_cons`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#edge-bits-cons).
+Formalized by `Cslib.Complexity.Karp.HamVerify.edgeBits_cons`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#edge-bits-cons).
 
 ## Edge bits of the empty edge list
 
 The edge-list bit encoding of the empty list of edges
 is the empty bit string.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.edgeBits_nil`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#edge-bits-nil).
+Formalized by `Cslib.Complexity.Karp.HamVerify.edgeBits_nil`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#edge-bits-nil).
 
 ## Bits of concatenated edge lists
 
@@ -152,7 +152,7 @@ For all lists $E$ and $E'$ of pairs of natural numbers,
 the bit encoding of the concatenation of $E$ and $E'$ is the bit encoding of $E$ followed by the
 bit encoding of $E'$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.edgeBits_append`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#edge-bits-append).
+Formalized by `Cslib.Complexity.Karp.HamVerify.edgeBits_append`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#edge-bits-append).
 
 ## Witness encoding
 
@@ -160,7 +160,7 @@ The witness encoding of a list $p$ of natural numbers (the vertices of a
 candidate path) is the bit string obtained by writing each entry $v$ of $p$, in order, as $v$
 copies of true followed by one false, and concatenating the results.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.encW`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#enc-w).
+Formalized by `Cslib.Complexity.Karp.HamVerify.encW`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#enc-w).
 
 ## Witness decoder
 
@@ -170,14 +170,14 @@ of $w$, a run of $v$ copies of true ended by false, and if decoding the remainin
 list $p$, it returns $v$ followed by $p$. It fails if no unary number can be read from a
 nonempty list, or if decoding the remaining bits fails.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.decodeW`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#decode-w).
+Formalized by `Cslib.Complexity.Karp.HamVerify.decodeW`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#decode-w).
 
 ## Witness encoding of the empty list
 
 The witness encoding of the empty list of vertices is
 the empty bit string.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.encW_nil`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#enc-w-nil).
+Formalized by `Cslib.Complexity.Karp.HamVerify.encW_nil`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#enc-w-nil).
 
 ## Witness encoding of a nonempty list
 
@@ -185,7 +185,7 @@ For a natural number $v$ and a list $p$ of natural
 numbers, the witness encoding of the list with first entry $v$ followed by $p$ is the bit string
 made of $v$ copies of true, then one false, then the witness encoding of $p$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.encW_cons`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#enc-w-cons).
+Formalized by `Cslib.Complexity.Karp.HamVerify.encW_cons`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-01/index.html#enc-w-cons).
 
 ## The witness encoding respects concatenation
 
@@ -193,14 +193,14 @@ For lists $p$ and $p'$ of natural numbers,
 the witness encoding of the concatenation of $p$ and $p'$ is the witness encoding of $p$ followed
 by the witness encoding of $p'$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.encW_append`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#enc-w-append).
+Formalized by `Cslib.Complexity.Karp.HamVerify.encW_append`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#enc-w-append).
 
 ## Decoding the empty witness
 
 The witness decoder succeeds on the empty list of bits and
 returns the empty list of vertices.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.decodeW_nil`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#decode-w-nil).
+Formalized by `Cslib.Complexity.Karp.HamVerify.decodeW_nil`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#decode-w-nil).
 
 ## Witness decoding fails on a cut-off first number
 
@@ -208,7 +208,7 @@ If a list $w$ of bits is nonempty and
 reading a unary number (a run of true ended by false) from the front of $w$ fails, that is, every
 bit of $w$ is true, then the witness decoder fails on $w$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.decodeW_of_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#decode-w-of-none).
+Formalized by `Cslib.Complexity.Karp.HamVerify.decodeW_of_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#decode-w-of-none).
 
 ## Decoding peels off the first number
 
@@ -217,7 +217,7 @@ $w$ of bits returns $v$ with remaining bits $r$, that is, $w$ is $v$ copies of t
 then $r$, then the witness decoder succeeds on $w$ exactly when it succeeds on $r$, and its
 result on $w$ is $v$ followed by its result on $r$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.decodeW_of_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#decode-w-of-some).
+Formalized by `Cslib.Complexity.Karp.HamVerify.decodeW_of_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#decode-w-of-some).
 
 ## Decoding inverts the witness encoding
 
@@ -225,7 +225,7 @@ For every list $p$ of natural numbers, the witness
 decoder applied to the witness encoding of $p$ (each entry $v$ written as $v$ copies of true
 followed by false) succeeds and returns $p$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.decodeW_encW`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#decode-w-enc-w).
+Formalized by `Cslib.Complexity.Karp.HamVerify.decodeW_encW`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#decode-w-enc-w).
 
 ## The witness decoder succeeds only on encodings
 
@@ -233,7 +233,7 @@ For every bit string $w$ and every list
 $p$ of natural numbers, if the witness decoder returns $p$ on $w$, then $w$ is the witness
 encoding of $p$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.encW_of_decodeW`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#enc-w-of-decode-w).
+Formalized by `Cslib.Complexity.Karp.HamVerify.encW_of_decodeW`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#enc-w-of-decode-w).
 
 ## The witness codec
 
@@ -241,28 +241,28 @@ For every list $w$ of bits and every list $p$ of natural numbers, the
 witness decoder returns $p$ on $w$ if and only if $w$ is the witness encoding of $p$, which
 writes each entry $v$ of $p$ as $v$ copies of true followed by false.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.decodeW_eq_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#decode-w-eq-some).
+Formalized by `Cslib.Complexity.Karp.HamVerify.decodeW_eq_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#decode-w-eq-some).
 
 ## Witness length
 
 For every list $p = (v_1, \dots, v_k)$ of natural numbers, the witness
 encoding of $p$ has length $\sum_{i=1}^{k} (v_i + 1)$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.length_encW`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#length-enc-w).
+Formalized by `Cslib.Complexity.Karp.HamVerify.length_encW`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#length-enc-w).
 
 ## Witness length bound
 
 For every natural number $n$ and every list $p$ of natural numbers
 all below $n$, the witness encoding of $p$ has length at most $|p| \cdot n$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.length_encW_le`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#length-enc-w-le).
+Formalized by `Cslib.Complexity.Karp.HamVerify.length_encW_le`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#length-enc-w-le).
 
 ## A witness is at least as long as its vertex list
 
 For every list $p$ of natural numbers,
 the witness encoding of $p$ has length at least $|p|$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.length_le_length_encW`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#length-le-length-enc-w).
+Formalized by `Cslib.Complexity.Karp.HamVerify.length_le_length_encW`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#length-le-length-enc-w).
 
 ## Arc check of a vertex list
 
@@ -271,7 +271,7 @@ numbers, the arc check of a list $p$ of natural numbers returns true when every 
 entries $u, v$ of $p$ satisfy $(u, v) \in E$, $u < n$ and $v < n$, and false otherwise; in
 particular every list with fewer than two entries passes.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.chainOk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#chain-ok).
+Formalized by `Cslib.Complexity.Karp.HamVerify.chainOk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#chain-ok).
 
 ## Checking a vertex list against the arcs
 
@@ -280,7 +280,7 @@ pairs of natural numbers and every list $p$ of natural numbers, the arc check of
 $n$ and $E$ returns true if and only if every two consecutive entries $u, v$ of $p$ form an arc
 of the digraph on $0, \dots, n - 1$ listed by $E$, that is, $(u, v) \in E$, $u < n$ and $v < n$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.chainOk_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#chain-ok-iff).
+Formalized by `Cslib.Complexity.Karp.HamVerify.chainOk_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#chain-ok-iff).
 
 ## The Hamiltonian path check
 
@@ -289,7 +289,7 @@ $t$ and a list $p$ of natural numbers, the Boolean test that $p$ has no repeated
 length $n$, has all entries below $n$, has first entry $s$ and last entry $t$, and that every two
 consecutive entries $u, v$ of $p$ satisfy $(u, v) \in E$, $u < n$ and $v < n$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.hamOk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#ham-ok).
+Formalized by `Cslib.Complexity.Karp.HamVerify.hamOk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#ham-ok).
 
 ## The Hamiltonian path check is correct
 
@@ -298,7 +298,7 @@ list $E$ and every list $p$ of natural numbers, the Hamiltonian path check on $(
 returns true if and only if $p$ is a Hamiltonian path from $s$ to $t$ in the digraph on
 $\{0, \dots, n-1\}$ with edge list $E$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.hamOk_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#ham-ok-iff).
+Formalized by `Cslib.Complexity.Karp.HamVerify.hamOk_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#ham-ok-iff).
 
 ## The HAMPATH verifier
 
@@ -309,7 +309,7 @@ both decodings succeed, it accepts exactly when the Hamiltonian path check passe
 $p$ is a Hamiltonian path from $s$ to $t$ in the digraph on $\{0, \dots, n-1\}$ with edge list
 $E$. If either decoding fails, it rejects.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.hamCheck`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#ham-check).
+Formalized by `Cslib.Complexity.Karp.HamVerify.hamCheck`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#ham-check).
 
 ## What the HAMPATH verifier accepts
 
@@ -319,7 +319,7 @@ natural numbers and a list $p$ of natural numbers such that $x$ is the PATH enco
 $(s, t, n, es)$, $w$ is the witness encoding of $p$, and $p$ is a Hamiltonian path from $s$ to $t$
 in the digraph on $0, \dots, n - 1$ with edge list $es$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.hamCheck_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#ham-check-iff).
+Formalized by `Cslib.Complexity.Karp.HamVerify.hamCheck_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#ham-check-iff).
 
 ## The verifier on an encoded instance and witness
 
@@ -328,7 +328,7 @@ $es$ of pairs of natural numbers and a list $p$ of natural numbers, the HAMPATH 
 the PATH encoding of $(s, t, n, es)$ and the witness encoding of $p$ returns the same boolean as
 the Hamiltonian path check on $n$, $es$, $s$, $t$ and $p$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.hamCheck_encode`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#ham-check-encode).
+Formalized by `Cslib.Complexity.Karp.HamVerify.hamCheck_encode`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#ham-check-encode).
 
 ## Instances that do not decode are rejected
 
@@ -336,14 +336,14 @@ If the PATH instance decoder fails on a bit
 string $x$, then for every bit string $w$ the HAMPATH verifier rejects $(x, w)$, that is, returns
 false.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.hamCheck_of_decodeP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#ham-check-of-decode-p).
+Formalized by `Cslib.Complexity.Karp.HamVerify.hamCheck_of_decodeP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#ham-check-of-decode-p).
 
 ## Witnesses that do not decode are rejected
 
 If the witness decoder fails on a bit string
 $w$, then for every bit string $x$ the HAMPATH verifier rejects $(x, w)$, that is, returns false.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.hamCheck_of_decodeW`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#ham-check-of-decode-w).
+Formalized by `Cslib.Complexity.Karp.HamVerify.hamCheck_of_decodeW`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#ham-check-of-decode-w).
 
 ## Length of an encoded PATH instance
 
@@ -351,7 +351,7 @@ For all natural numbers $s$, $t$, $n$ and every edge
 list $E$, the encoding of the PATH instance $(s, t, n, E)$ has length $s + t + n + 3 + \ell$,
 where $\ell$ is the length of the bit encoding of the edge list $E$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.length_encodeP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#length-encode-p).
+Formalized by `Cslib.Complexity.Karp.HamVerify.length_encodeP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-02/index.html#length-encode-p).
 
 ## HAMPATH is verified with quadratic-size witnesses
 
@@ -359,7 +359,7 @@ For every bit string $x$, $x$ is a
 yes-instance of HAMPATH if and only if there is a bit string $w$ of length at most
 $(|x| + 1)^2$ such that the HAMPATH verifier accepts $(x, w)$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.hamPathDec_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-path-dec-iff).
+Formalized by `Cslib.Complexity.Karp.HamVerify.hamPathDec_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-path-dec-iff).
 
 ## One step of the HAMPATH walk
 
@@ -368,7 +368,7 @@ $c$ of vertices already seen, the previous vertex $b$, the current vertex $a$ an
 remaining vertices, the step check is true exactly when $a < n$, $a$ does not occur in $q$, and
 either $c = 0$ and $a = s$, or $c \neq 0$ and $(b, a) \in E$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.stepOk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#step-ok).
+Formalized by `Cslib.Complexity.Karp.HamVerify.stepOk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#step-ok).
 
 ## The walk check of the HAMPATH verifier
 
@@ -381,7 +381,7 @@ vertices, the last of which was $a$. The step check requires $a < n$; it require
 $c = 0$, and that $(b, a)$ is an entry of $E$ when $c \neq 0$; and it requires that $a$ does not
 occur in $q'$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.walkOk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#walk-ok).
+Formalized by `Cslib.Complexity.Karp.HamVerify.walkOk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#walk-ok).
 
 ## The walk check after the first vertex
 
@@ -392,7 +392,7 @@ the last of which was $b$ if and only if every $q_i$ is less than $n$, every pai
 consecutive entries of the list $(b, q_1, \dots, q_k)$ is an entry of $E$, the entries of $q$ are
 pairwise distinct, $c + k = n$, and the last entry of $(b, q_1, \dots, q_k)$ is $t$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.walkOk_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#walk-ok-iff).
+Formalized by `Cslib.Complexity.Karp.HamVerify.walkOk_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#walk-ok-iff).
 
 ## The machine's walk is the check
 
@@ -400,7 +400,7 @@ For all natural numbers $s$, $t$, $n$, every edge list
 $E$ and every list $p$ of natural numbers, the walk over $p$ started with count $0$ and previous
 vertex $0$ returns the same Boolean value as the Hamiltonian path check on $(n, E, s, t, p)$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.walkOk_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#walk-ok-eq).
+Formalized by `Cslib.Complexity.Karp.HamVerify.walkOk_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCheck.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#walk-ok-eq).
 
 ## Tops of distinct diamonds are at least $3m + 2$ apart
 
@@ -409,7 +409,7 @@ Hamiltonian path construction with $m$ clauses, where the top of diamond $i$ is 
 $T(i) = m + i(3m + 2)$, any two indices $i \ne i'$ satisfy $T(i) + 3m + 2 \le T(i')$ or
 $T(i') + 3m + 2 \le T(i)$.
 
-Formalized by `Cslib.Complexity.Karp.hpT_sep`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#hp-t-sep).
+Formalized by `Cslib.Complexity.Karp.hpT_sep`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#hp-t-sep).
 
 ## Arcs of the Hamiltonian path construction
 
@@ -424,7 +424,7 @@ $l < 3m$; or, for some $j < m$, either $C_j$ contains the literal $x_i$ and $(u,
 $(R(i, 3j + 1), j)$ or $(j, R(i, 3j + 2))$, or $C_j$ contains the literal $\lnot x_i$ and
 $(u, v)$ is $(R(i, 3j + 2), j)$ or $(j, R(i, 3j + 1))$.
 
-Formalized by `Cslib.Complexity.Karp.mem_hamEdges`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#mem-ham-edges).
+Formalized by `Cslib.Complexity.Karp.mem_hamEdges`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#mem-ham-edges).
 
 ## Classification of the arcs of Sipser's graph
 
@@ -439,7 +439,7 @@ $v \in \{R_{i,3j+1}, R_{i,3j+2}\}$.
 
 The last case does not record whether the detour comes from a positive or a negative literal.
 
-Formalized by `Cslib.Complexity.Karp.hamEdges_cases`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-edges-cases).
+Formalized by `Cslib.Complexity.Karp.hamEdges_cases`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-edges-cases).
 
 ## In-neighbours of a row vertex in Sipser's graph
 
@@ -449,7 +449,7 @@ natural numbers, and let $(v, R_{i,l})$ be an arc of Sipser's construction for $
 $l < 3m$ and $v = R_{i,l+1}$; or $0 < l$ and $v = R_{i,l-1}$; or $l \in \{0, 3m\}$ and
 $v = T_i$; or $v < m$ and $l \in \{3v + 1, 3v + 2\}$.
 
-Formalized by `Cslib.Complexity.Karp.hamEdges_to_hpR`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-edges-to-hp-r).
+Formalized by `Cslib.Complexity.Karp.hamEdges_to_hpR`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-edges-to-hp-r).
 
 ## Out-neighbours of a row vertex in Sipser's graph
 
@@ -459,7 +459,7 @@ natural numbers, and let $(R_{i,l}, v)$ be an arc of Sipser's construction for $
 $l < 3m$ and $v = R_{i,l+1}$; or $0 < l$ and $v = R_{i,l-1}$; or $l \in \{0, 3m\}$ and
 $v = T_{i+1}$; or $v < m$ and $l \in \{3v + 1, 3v + 2\}$.
 
-Formalized by `Cslib.Complexity.Karp.hamEdges_from_hpR`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-edges-from-hp-r).
+Formalized by `Cslib.Complexity.Karp.hamEdges_from_hpR`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-edges-from-hp-r).
 
 ## In-neighbours of a clause vertex in Sipser's graph
 
@@ -468,7 +468,7 @@ $m$ clauses and $k$ distinct variables, and write $R_{i,l} = m + i(3m + 2) + 1 +
 vertex $l$ of diamond $i$. If $j < m$ and $(v, j)$ is an arc of Sipser's construction for
 $\varphi$, then there is $i < k$ with $v = R_{i,3j+1}$ or $v = R_{i,3j+2}$.
 
-Formalized by `Cslib.Complexity.Karp.hamEdges_to_clause`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-edges-to-clause).
+Formalized by `Cslib.Complexity.Karp.hamEdges_to_clause`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-edges-to-clause).
 
 ## Out-neighbours of a clause vertex in Sipser's graph
 
@@ -477,7 +477,7 @@ $m$ clauses and $k$ distinct variables, and write $R_{i,l} = m + i(3m + 2) + 1 +
 vertex $l$ of diamond $i$. If $j < m$ and $(j, v)$ is an arc of Sipser's construction for
 $\varphi$, then there is $i < k$ with $v = R_{i,3j+1}$ or $v = R_{i,3j+2}$.
 
-Formalized by `Cslib.Complexity.Karp.hamEdges_from_clause`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-edges-from-clause).
+Formalized by `Cslib.Complexity.Karp.hamEdges_from_clause`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-edges-from-clause).
 
 ## A Hamiltonian path visits every vertex
 
@@ -485,7 +485,7 @@ If $p$ is a Hamiltonian path from $s$ to $t$ in
 the digraph on the vertices $0, \dots, n - 1$ with arc list $E$, then every vertex $v < n$
 occurs in $p$.
 
-Formalized by `Cslib.Complexity.Karp.mem_of_isHamPath`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#mem-of-is-ham-path).
+Formalized by `Cslib.Complexity.Karp.mem_of_isHamPath`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#mem-of-is-ham-path).
 
 ## Consecutive vertices of a Hamiltonian path of Sipser's graph form arcs
 
@@ -495,7 +495,7 @@ be a Hamiltonian path from $T_0$ to $T_k$ in the digraph on the vertices $0, \do
 arcs are those of Sipser's construction for $\varphi$. If $v$ comes immediately after $u$ in $p$,
 then $(u, v)$ is an arc of the construction.
 
-Formalized by `Cslib.Complexity.Karp.hamEdges_of_infix`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-edges-of-infix).
+Formalized by `Cslib.Complexity.Karp.hamEdges_of_infix`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-edges-of-infix).
 
 ## A Hamiltonian path of Sipser's graph does not cross a diamond through one row end
 
@@ -506,7 +506,7 @@ to $T_k$ in the digraph on the vertices $0, \dots, T_k$ whose arcs are those of 
 construction for $\varphi$. For $i < k$ and $l \in \{0, 3m\}$, it is impossible that $R_{i,l}$
 comes immediately after $T_i$ in $p$ and $T_{i+1}$ comes immediately after $R_{i,l}$ in $p$.
 
-Formalized by `Cslib.Complexity.Karp.hamPath_rowEnd_false`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-path-row-end-false).
+Formalized by `Cslib.Complexity.Karp.hamPath_rowEnd_false`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-path-row-end-false).
 
 ## A separator is next to each of its row neighbours on a Hamiltonian path
 
@@ -517,7 +517,7 @@ the vertices $0, \dots, T_k$ whose arcs are those of Sipser's construction for $
 $i < k$, let $l \le 3m$ be a multiple of $3$, and let $l' \le 3m$ satisfy $l' = l + 1$ or
 $l' + 1 = l$. Then $R_{i,l'}$ comes immediately before or immediately after $R_{i,l}$ in $p$.
 
-Formalized by `Cslib.Complexity.Karp.hamPath_separator_false`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-path-separator-false).
+Formalized by `Cslib.Complexity.Karp.hamPath_separator_false`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-path-separator-false).
 
 ## A clause detour returns to its own pair (Sipser's separator argument)
 
@@ -529,7 +529,7 @@ $i < k$ and $j < m$, and let $(l_a, l_c)$ be $(3j + 1, 3j + 2)$ or $(3j + 2, 3j 
 clause vertex $j$ comes immediately after $R_{i,l_a}$ in $p$, then every vertex that comes
 immediately after $j$ in $p$ is $R_{i,l_c}$.
 
-Formalized by `Cslib.Complexity.Karp.hamPath_pair_false`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-path-pair-false).
+Formalized by `Cslib.Complexity.Karp.hamPath_pair_false`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#ham-path-pair-false).
 
 ## Hamiltonian paths of Sipser's graph have normal detours
 
@@ -541,7 +541,7 @@ Sipser's construction for $\varphi$ has normal detours: for every clause $j < m$
 such that $R_{i,3j+1}, j, R_{i,3j+2}$ or $R_{i,3j+2}, j, R_{i,3j+1}$ occur in this order as
 consecutive vertices of the path.
 
-Formalized by `Cslib.Complexity.Karp.detoursNormal_of_isHamPath`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#detours-normal-of-is-ham-path).
+Formalized by `Cslib.Complexity.Karp.detoursNormal_of_isHamPath`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathDetours.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#detours-normal-of-is-ham-path).
 
 ## The HAMPATH instance as unary blocks and arc bits
 
@@ -552,7 +552,7 @@ vertex $s = m$), then $t$ ones and a zero (the target vertex $t$), then $t + 1$ 
 (the vertex count $n = t + 1$), followed by the arcs of the construction, each arc $(u, v)$
 written as $u$ ones, a zero, $v$ ones and a zero.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.toHam_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#to-ham-eq).
+Formalized by `Cslib.Complexity.Karp.EmitHam.toHam_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#to-ham-eq).
 
 ## The frame of a diamond
 
@@ -562,7 +562,7 @@ vertex $l$. The frame of diamond $i$ is the list of the four arcs $(t_i, r_{i,0}
 $(t_i, r_{i,3m})$, $(r_{i,0}, t_{i+1})$ and $(r_{i,3m}, t_{i+1})$: the top points to both row
 ends, and both row ends point to the top of the next diamond.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.frameE`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#frame-e).
+Formalized by `Cslib.Complexity.Karp.EmitHam.frameE`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-03/index.html#frame-e).
 
 ## The row arcs of a diamond
 
@@ -571,7 +571,7 @@ let $r_{i,l} = m + i(3m + 2) + 1 + l$ be row vertex $l$ of diamond $i$. The row 
 vertices $l$ and $l + 1$ of diamond $i$ are the list of the two arcs $(r_{i,l}, r_{i,l+1})$ and
 $(r_{i,l+1}, r_{i,l})$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.rowE`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#row-e).
+Formalized by `Cslib.Complexity.Karp.EmitHam.rowE`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#row-e).
 
 ## Clause detours in a diamond
 
@@ -582,7 +582,7 @@ $x$ are the list of the arcs $(r_{i,3j+1}, j)$ and $(j, r_{i,3j+2})$ if the posi
 $x$ is in $C$, followed by the arcs $(r_{i,3j+2}, j)$ and $(j, r_{i,3j+1})$ if the negative
 literal $\lnot x$ is in $C$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.detE`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#det-e).
+Formalized by `Cslib.Complexity.Karp.EmitHam.detE`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#det-e).
 
 ## The next diamond top follows the row
 
@@ -591,7 +591,7 @@ $i$, write $t_i = m + i(3m + 2)$ for the top of diamond $i$ and $r_{i,l} = t_i +
 row vertex $l$. Then $t_{i+1} = r_{i,3m} + 1$: the top of diamond $i + 1$ comes right after the
 last row vertex of diamond $i$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.hpT_succ_eq_hpR`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#hp-t-succ-eq-hp-r).
+Formalized by `Cslib.Complexity.Karp.EmitHam.hpT_succ_eq_hpR`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#hp-t-succ-eq-hp-r).
 
 ## Splitting off the middle clause of a concatenation
 
@@ -603,7 +603,7 @@ to a list of elements of a type $\alpha$. Then concatenating the lists $f(j, \va
 $j < |P| + 1$ in increasing order gives the concatenation of the lists $f(j, \varphi_j)$ over
 $j < |P|$, followed by $f(|P|, C)$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.range_flatMap_getD`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#range-flat-map-get-d).
+Formalized by `Cslib.Complexity.Karp.EmitHam.range_flatMap_getD`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#range-flat-map-get-d).
 
 ## Insert a variable if new
 
@@ -611,7 +611,7 @@ For a natural number $x$ and a list $V$ of natural numbers,
 inserting $x$ into $V$ gives $V$ itself if $x$ occurs in $V$, and otherwise the list obtained
 by prepending $x$ to $V$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.insV`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#ins-v).
+Formalized by `Cslib.Complexity.Karp.EmitHam.insV`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#ins-v).
 
 ## Removing duplicates by insertion
 
@@ -619,7 +619,7 @@ For every list $l$ of natural numbers, folding $l$ from
 the right into the empty list, prepending each element unless it is already present, gives
 $l$ with duplicates removed: each element is kept at its last occurrence in $l$, in order.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.foldr_insV`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#foldr-ins-v).
+Formalized by `Cslib.Complexity.Karp.EmitHam.foldr_insV`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#foldr-ins-v).
 
 ## Consecutive row vertices
 
@@ -627,7 +627,7 @@ In the HAMPATH construction with $m$ clauses, for every diamond
 $i$ and every $l \in \mathbb{N}$, row vertex $l + 1$ of diamond $i$ is one more than row
 vertex $l$ of diamond $i$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.hpR_succ`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#hp-r-succ).
+Formalized by `Cslib.Complexity.Karp.EmitHam.hpR_succ`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#hp-r-succ).
 
 ## Length bound for the bit encoding of an edge list
 
@@ -636,7 +636,7 @@ list of pairs of natural numbers such that every pair $(u, v)$ in $E$ has $u \le
 $v \le B$. Then the bit encoding of $E$, which writes each pair $(u, v)$ as $u$ ones, a zero,
 $v$ ones and a zero, has length at most $|E| \cdot (2B + 2)$, where $|E|$ is the length of $E$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.edgeBits_length_le`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#edge-bits-length-le).
+Formalized by `Cslib.Complexity.Karp.EmitHam.edgeBits_length_le`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitSpec.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#edge-bits-length-le).
 
 ## Stacks of the HAMPATH emitter
 
@@ -647,7 +647,7 @@ scratch), $C$ (the clause count), $M$ (three times the clause count), $P$ (the d
 (the row end), $R$ (the row vertex), $L$ (the row loop index), $J$ (the clause index), $D$ (the
 detour vertex) and $Z$ (copy scratch).
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#k).
+Formalized by `Cslib.Complexity.Karp.EmitHam.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#k).
 
 ## Stack alphabets of the HAMPATH emitter
 
@@ -656,7 +656,7 @@ bits (booleans); every other stack has the token symbols as its alphabet.
 
 The counter stacks only ever hold the symbol $\mathrm{cl}$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.Γ`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#untitled).
+Formalized by `Cslib.Complexity.Karp.EmitHam.Γ`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#untitled).
 
 ## Counters read by HAMPATH copy sites
 
@@ -664,7 +664,7 @@ The type with the five elements $p, n, r, j, d$, naming
 the counters of the HAMPATH emitter that a copy site can read: the diamond top $p$, the row end
 $n$, the row vertex $r$, the clause index $j$ and the detour vertex $d$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.Src`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#src).
+Formalized by `Cslib.Complexity.Karp.EmitHam.Src`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#src).
 
 ## Stack of a HAMPATH copy-site counter
 
@@ -672,7 +672,7 @@ The counters $p$, $n$, $r$, $j$, $d$ that a copy site
 of the HAMPATH emitter reads are held on the emitter's stacks $P$, $N$, $R$, $J$, $D$ respectively
 (the diamond top, the row end, the row vertex, the clause index and the detour vertex).
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.Src.k`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#k-2).
+Formalized by `Cslib.Complexity.Karp.EmitHam.Src.k`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#k-2).
 
 ## Unit symbol of an emitter counter
 
@@ -680,7 +680,7 @@ For every counter $s$ read by copy sites, the unit
 symbol of $s$ is the token symbol $\mathrm{cl}$, as a letter of the alphabet of the stack that
 holds $s$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.Src.unit`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#unit).
+Formalized by `Cslib.Complexity.Karp.EmitHam.Src.unit`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#unit).
 
 ## Copy sites of the HAMPATH emitter
 
@@ -690,7 +690,7 @@ source and $v$ for the target: the sites $f_iu, f_iv$ for $i = 1, \dots, 4$ belo
 frame edges, $w_iu, w_iv$ for $i = 1, 2$ to the two row edges, and $d_iu, d_iv$ for
 $i = 1, \dots, 4$ to the detour edges, positive for $i = 1, 2$ and negative for $i = 3, 4$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.Site`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#site).
+Formalized by `Cslib.Complexity.Karp.EmitHam.Site`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#site).
 
 ## Copy sites of the HAMPATH emitter, listed
 
@@ -699,7 +699,7 @@ HAMPATH emitter, in this order: the frame sites $f_1u, f_1v, f_2u, f_2v, f_3u, f
 the row sites $w_1u, w_1v, w_2u, w_2v$, and the detour sites
 $d_1u, d_1v, d_2u, d_2v, d_3u, d_3v, d_4u, d_4v$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.Site.all`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#all).
+Formalized by `Cslib.Complexity.Karp.EmitHam.Site.all`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#all).
 
 ## Counter read by a copy site
 
@@ -708,7 +708,7 @@ $f_1u, f_1v, f_2u, f_3u$ to the diamond top $p$; $f_2v, f_3v, f_4u, f_4v$ to the
 $w_1u, w_1v, w_2u, w_2v$ to the row vertex $r$; $d_1u, d_2v, d_3u, d_4v$ to the detour vertex
 $d$; and $d_1v, d_2u, d_3v, d_4u$ to the clause index $j$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.Site.src`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#src-2).
+Formalized by `Cslib.Complexity.Karp.EmitHam.Site.src`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#src-2).
 
 ## Extra ones of a copy site
 
@@ -716,7 +716,7 @@ The number of extra ones a copy site adds to its counter's value
 is $1$ for the sites $f_{1v}$, $f_{3u}$, $f_{3v}$, $f_{4v}$, $w_{1v}$, $w_{2u}$, $d_{2v}$ and
 $d_{3u}$, and $0$ for every other site.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.Site.ext`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#ext).
+Formalized by `Cslib.Complexity.Karp.EmitHam.Site.ext`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#ext).
 
 ## Labels of the HAMPATH emitter
 
@@ -745,7 +745,7 @@ moves $T$ back to $F$, and $\mathrm{t1}$ to $\mathrm{t8}$ drop the entry and adv
 $\mathrm{z0}$ to $\mathrm{z9}$ produce the output, and $\mathrm{cpA}(j, b)$, $\mathrm{cpB}(j, b)$,
 $\mathrm{post}(j, b)$ copy site $j$, passing $b$ on.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#lab).
+Formalized by `Cslib.Complexity.Karp.EmitHam.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#lab).
 
 ## The four pairs of Booleans
 
@@ -753,7 +753,7 @@ The list of all pairs of Booleans in the order
 $(\mathrm{true}, \mathrm{true})$, $(\mathrm{true}, \mathrm{false})$,
 $(\mathrm{false}, \mathrm{true})$, $(\mathrm{false}, \mathrm{false})$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.bb`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#bb).
+Formalized by `Cslib.Complexity.Karp.EmitHam.bb`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#bb).
 
 ## Label after a HAMPATH copy site
 
@@ -765,7 +765,7 @@ $d_{3u}, d_{3v}, d_{4u}, d_{4v}$. At the ends of the chains it is $\mathrm{r0}$ 
 $\mathrm{wi}$ after $w_{2v}$ and $\mathrm{dj}$ after $d_{4v}$, whatever $b$ is; after $d_{2v}$ it
 is $\mathrm{cpA}(d_{3u}, \mathrm{false})$ if $b$ is true and $\mathrm{dj}$ if $b$ is false.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.Site.nxt`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#nxt).
+Formalized by `Cslib.Complexity.Karp.EmitHam.Site.nxt`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-04/index.html#nxt).
 
 ## End of a clause in the detour walk
 
@@ -776,7 +776,7 @@ site $d_{1u}$ starts with passed bit $p_n$ if $p_p$ is true; otherwise, if $p_n$
 label where the first negative detour site $d_{3u}$ starts with passed bit false; and otherwise at
 the label that ends the clause.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.clEnd`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#cl-end).
+Formalized by `Cslib.Complexity.Karp.EmitHam.clEnd`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#cl-end).
 
 ## The HAMPATH emitter machine
 
@@ -857,14 +857,14 @@ of the counter that $j$ reads, and go to $\mathrm{post}(j, b)$; at $\mathrm{post
 step push on $Q$ one $\mathrm{bit}(\mathrm{true})$ for each of the ones that $j$ adds to its
 counter and then $\mathrm{bit}(\mathrm{false})$, and go to the label that follows $j$ for $b$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#prog).
+Formalized by `Cslib.Complexity.Karp.EmitHam.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#prog).
 
 ## Start label of the HAMPATH emitter
 
 The emitter machine starts at the label $a_0$, the
 first phase A label, which reads the next token.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#start).
+Formalized by `Cslib.Complexity.Karp.EmitHam.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#start).
 
 ## Quiescent states of the HAMPATH emitter
 
@@ -880,7 +880,7 @@ On the emitter's stacks such a state holds each counter as a unary stack of $\ma
 and the edge bits $q$ on $Q$ reversed, as name-bit symbols; the scratch stacks $Y$ and $Z$ are
 empty, and $X$ is empty except while a new name is copied onto $V$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.MS`, a structure declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#ms).
+Formalized by `Cslib.Complexity.Karp.EmitHam.MS`, a structure declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#ms).
 
 ## Stacks of a quiescent emitter state
 
@@ -893,7 +893,7 @@ for three times the clause count, the diamond top, the row end, the row vertex, 
 index, the clause index and the detour vertex), with no relation imposed between these values;
 and the scratch stacks $Y$ and $Z$ are empty.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.MS.stk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#stk).
+Formalized by `Cslib.Complexity.Karp.EmitHam.MS.stk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#stk).
 
 ## Counter values of a quiescent emitter state
 
@@ -901,7 +901,7 @@ For a quiescent state $s$, the value of the
 counters $p$, $n$, $r$, $j$, $d$ is respectively the diamond top, the row end, the row vertex,
 the clause index and the detour vertex recorded in $s$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.MS.val`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#val).
+Formalized by `Cslib.Complexity.Karp.EmitHam.MS.val`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#val).
 
 ## Copying a counter in the HAMPATH emitter
 
@@ -915,7 +915,7 @@ then for every flag $v$ there is a flag $v'$ such that the machine goes in exact
 from label $l_1$ with flag $v$ and stacks $S$ to label $l'$ with flag $v'$ and the stacks $S$
 with $n$ copies of $x$ pushed onto $c$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.cp_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#cp-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.cp_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#cp-run).
 
 ## Bits pushed by a copy site of the HAMPATH emitter
 
@@ -924,7 +924,7 @@ HAMPATH emitter and a copy site $j$, the atom of $j$ in $s$ is the list of $c + 
 true followed by one false, where $c$ is the value in $s$ of the counter that $j$ copies and
 $e \in \{0, 1\}$ is the number of extra ones that $j$ adds.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.atom`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#atom).
+Formalized by `Cslib.Complexity.Karp.EmitHam.atom`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#atom).
 
 ## Run of a HAMPATH copy site
 
@@ -935,7 +935,7 @@ internal state $v$ and the stacks of $s$, the emitter runs in exactly $2c + 3$ s
 that follows $j$ for $b$, with some internal state and the stacks of the quiescent state obtained
 from $s$ by appending $c + e$ copies of true followed by one false to its edge bits.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.site_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 460](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L460). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#site-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.site_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 460](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L460). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#site-run).
 
 ## Copy sites chained in the HAMPATH emitter
 
@@ -945,7 +945,7 @@ passed bit $b$, the label where each $j_i$ with $i < n$ continues with passed bi
 at which $j_{i+1}$ starts with passed bit $b$, and $j_n$ continues at $l$ with passed bit $b$. The
 empty list of sites is chained from $l_0$ to $l$ exactly when $l_0 = l$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.Chain`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 483](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L483). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#chain).
+Formalized by `Cslib.Complexity.Karp.EmitHam.Chain`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 483](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L483). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#chain).
 
 ## Step count of a list of copy sites in the HAMPATH emitter
 
@@ -953,7 +953,7 @@ For a quiescent state $s$ and
 copy sites $j_1, \dots, j_n$, the step count is $\sum_{i=1}^{n} (2 v_i + 3)$, where $v_i$ is the
 value in $s$ of the counter that $j_i$ copies.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.chainCost`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 488](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#chain-cost).
+Formalized by `Cslib.Complexity.Karp.EmitHam.chainCost`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 488](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#chain-cost).
 
 ## Running a chain of copy sites in the HAMPATH emitter
 
@@ -964,7 +964,7 @@ the step count of $j_1, \dots, j_n$ at $s$, from label $l_0$ with flag $v$ and t
 label $l$ with flag $v'$ and the stacks of the state that differs from $s$ only in that the atoms
 of $j_1, \dots, j_n$ at $s$, concatenated in this order, are appended to its edge bits.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.chain_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 507](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L507). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#chain-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.chain_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 507](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L507). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#chain-run).
 
 ## A symbol that reads as a name bit is that bit
 
@@ -972,7 +972,7 @@ For every symbol $x$ of the stack alphabet
 of the SAT verifier and every bit $b$, if $x$ reads as the name bit $b$, then $x$ is the name-bit
 symbol for $b$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.bit_inv`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 532](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L532). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#bit-inv).
+Formalized by `Cslib.Complexity.Karp.EmitHam.bit_inv`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 532](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L532). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#bit-inv).
 
 ## Comparing a name with the top entry of the variable stack
 
@@ -988,7 +988,7 @@ a flag $v'$ such that the machine goes in at most $3 |w| + 3$ steps from label $
 and the stacks of $s$ to label $n_x(b_T)$ if $u = w$ and to $n_x(b_F)$ otherwise, with flag $v'$
 and again the stacks of $s$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.cmpR_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 537](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L537). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#cmp-r-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.cmpR_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 537](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L537). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#cmp-r-run).
 
 ## Name of a variable in the HAMPATH emitter
 
@@ -997,7 +997,7 @@ list of name-bit symbols $\mathrm{bit}(b_0), \dots, \mathrm{bit}(b_{k-1})$, wher
 $b_0 \cdots b_{k-1}$ is the binary encoding of $x$, least significant bit first (the empty list
 for $x = 0$).
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.name`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 574](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L574). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#name).
+Formalized by `Cslib.Complexity.Karp.EmitHam.name`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 574](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L574). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#name).
 
 ## Variable stack of the HAMPATH emitter
 
@@ -1007,7 +1007,7 @@ $i = 1, \dots, k$ in order, the name bits of $x_i$ followed by the separator sym
 $\mathrm{cl}$. With the head of the list on top, $x_1$ is the top entry and each name sits above
 its separator.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.vstk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 577](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L577). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#vstk).
+Formalized by `Cslib.Complexity.Karp.EmitHam.vstk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 577](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L577). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#vstk).
 
 ## Variable-stack symbols of the HAMPATH emitter
 
@@ -1015,7 +1015,7 @@ A token symbol is a variable-stack symbol
 when it is a name bit $\mathrm{bit}(b)$ for some bit $b$ or the separator $\mathrm{cl}$; the
 polarity markers, the value markers and the dead marker are not.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.isVS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 580](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L580). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#is-vs).
+Formalized by `Cslib.Complexity.Karp.EmitHam.isVS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 580](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L580). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#is-vs).
 
 ## HAMPATH emitter, phase A: moving the walk stack back onto the variable stack
 
@@ -1027,7 +1027,7 @@ emitter goes in exactly $|L|$ steps from label $\mathrm{ab}(f)$, variable $v$ an
 $s$ to label $\mathrm{ab}(f)$, variable $v'$ and the stacks of the state obtained from $s$ by
 emptying $W$ and replacing $V$ by the reverse of $L$ followed by the old contents of $V$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.ab_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 641](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L641). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#ab-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.ab_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 641](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L641). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#ab-run).
 
 ## HAMPATH emitter, phase A: searching the variable stack for a name
 
@@ -1046,7 +1046,7 @@ stacks of $s$ to label $\mathrm{ab}(g)$, variable $v'$ and the stacks of the sta
 from $s$ by emptying $V$ and replacing $W$ by the reverse of $\mathrm{vstk}(\mathit{vs})$
 followed by the old contents of $W$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.aw_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 660](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L660). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#aw-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.aw_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 660](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L660). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#aw-run).
 
 ## HAMPATH emitter, phase A: copying a reversed name onto two stacks
 
@@ -1058,7 +1058,7 @@ $v$ and the stacks of $s$ to label $\mathrm{a0}$, variable $v'$ and the stacks o
 obtained from $s$ by emptying $X$ and replacing each of $F$ and $V$ by the reverse of $u$ (as
 name-bit symbols) followed by its old contents.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.ad3_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 710](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L710). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#ad3-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.ad3_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 710](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L710). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-05/index.html#ad3-run).
 
 ## HAMPATH emitter, phase A: one literal
 
@@ -1079,7 +1079,7 @@ label $\mathrm{a0}$, variable $v$ and the stacks of $s$ to label $\mathrm{a0}$, 
 and the stacks of the state obtained from $s$ by setting $T$ to $R$, $F$ to the tokens of $\ell$
 followed by the old contents of $F$, and $V$ to $\mathrm{vstk}(\mathrm{ins}(x, \mathit{vs}))$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.alit_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 757](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L757). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#alit-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.alit_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 757](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L757). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#alit-run).
 
 ## HAMPATH emitter, phase A: the literals of a clause
 
@@ -1103,7 +1103,7 @@ $s$ by setting $T$ to $R$, $F$ to the concatenated tokens of $\ell_1, \dots, \el
 the old contents of $F$, and $V$ to
 $\mathrm{vstk}(\mathrm{ins}(x_1, \dots \mathrm{ins}(x_k, \mathit{vs}) \dots))$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.alits_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 812](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L812). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#alits-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.alits_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 812](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L812). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#alits-run).
 
 ## HAMPATH emitter, phase A: one clause
 
@@ -1129,7 +1129,7 @@ $R$, $F$ to the tokens of $C$ followed by the old contents of $F$, and $V$ to
 $\mathrm{vstk}(\mathrm{ins}(x_1, \dots \mathrm{ins}(x_k, \mathit{vs}) \dots))$, and by
 increasing the clause count by $1$ and the triple clause count by $3$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.aclause_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 850](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L850). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#aclause-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.aclause_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 850](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L850). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#aclause-run).
 
 ## HAMPATH emitter, phase A: the clauses of a formula
 
@@ -1158,7 +1158,7 @@ $R$, $F$ to the tokens of $\varphi$ followed by the old contents of $F$, and $V$
 $\mathrm{vstk}(\mathrm{ins}(y_1, \dots \mathrm{ins}(y_n, \mathit{vs}) \dots))$, and by
 increasing the clause count by $m$ and the triple clause count by $3m$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.aformula_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 880](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L880). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#aformula-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.aformula_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 880](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L880). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#aformula-run).
 
 ## Initial state of the HAMPATH emitter
 
@@ -1167,7 +1167,7 @@ the initial state is the quiescent state whose token stack holds the tokens of $
 reverse reading order, whose output stack is $o$, and all of whose other stacks are empty and
 counters zero.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.initMS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 914](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L914). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#init-ms).
+Formalized by `Cslib.Complexity.Karp.EmitHam.initMS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 914](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L914). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#init-ms).
 
 ## The emitter state before the diamonds
 
@@ -1181,7 +1181,7 @@ and other counters zero.
 It is the state that phase A, followed by setting the diamond top, reaches from the initial
 state.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.diaMS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 919](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L919). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#dia-ms).
+Formalized by `Cslib.Complexity.Karp.EmitHam.diaMS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 919](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L919). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#dia-ms).
 
 ## Phase A of the HAMPATH emitter
 
@@ -1195,7 +1195,7 @@ after phase A (the tokens of $\varphi$ on $F$, the variable stack of the distinc
 $\varphi$ on $V$, $m$ on the counters $C$ and $P$, $3m$ on $M$, $o$ on the output stack, and
 everything else empty).
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.phaseA_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 924](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L924). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#phase-a-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.phaseA_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean, line 924](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmitMachine.lean#L924). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#phase-a-run).
 
 ## Token symbols of the HAMPATH emitter
 
@@ -1203,7 +1203,7 @@ A symbol is a token when it is a name bit, a
 polarity marker or the clause separator $\mathsf{cl}$; the value markers and the dead marker are
 not tokens. The emitter moves tokens between its stacks $T$ and $F$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.isTok`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#is-tok).
+Formalized by `Cslib.Complexity.Karp.EmitHam.isTok`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#is-tok).
 
 ## The tokens of a literal do not start with a clause end
 
@@ -1211,7 +1211,7 @@ For every literal $(n, p)$ with
 variable index $n \in \mathbb{N}$ and polarity $p$, the token list of $(n, p)$ is nonempty and
 its first symbol is not the clause-end marker $\mathsf{cl}$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.litToks_head`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#lit-toks-head).
+Formalized by `Cslib.Complexity.Karp.EmitHam.litToks_head`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#lit-toks-head).
 
 ## One literal of the detour walk
 
@@ -1226,7 +1226,7 @@ detour-walk label with clause flags $(p_+ \lor (z = y \land b), p_- \lor (z = y 
 and state bit $v'$, with the stacks of $s$ changed as follows: $F$ becomes $\rho$ and $\tau$
 reversed is prepended to $T$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.dlit_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#dlit-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.dlit_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#dlit-run).
 
 ## The literals of a clause in the detour walk
 
@@ -1242,7 +1242,7 @@ $(p_+ \lor ((y, \mathrm{true}) \in C), p_- \lor ((y, \mathrm{false}) \in C))$ an
 with the stacks of $s$ changed as follows: $F$ becomes $\rho$ and $\tau$ reversed is prepended to
 $T$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.dlits_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#dlits-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.dlits_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#dlits-run).
 
 ## One clause of the detour walk
 
@@ -1259,7 +1259,7 @@ stacks of $s$ changed as follows: $F$ becomes $\rho$, $\mathrm{toks}(C)$ reverse
 $T$, $J$ becomes $j + 1$, $D$ increases by $3$, and the edge-bit list $q$ is extended by the bits
 of the detour arcs of clause $j$ (contents $C$) in diamond $i$ for variable $y$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.dclause_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#dclause-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.dclause_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#dclause-run).
 
 ## The detour walk of a diamond in the HAMPATH emitter
 
@@ -1286,7 +1286,7 @@ setting $T$ to $\mathrm{toks}(\varphi)$ reversed, $J = m$ and $D = \rho_{3m+1}$,
 edge bits to $q_0$ followed by the codes of the detour arcs of the clauses $j < m$ in increasing
 order of $j$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.dwalk_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#dwalk-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.dwalk_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#dwalk-run).
 
 ## Frame copy sites of the HAMPATH emitter
 
@@ -1294,7 +1294,7 @@ The list of the eight copy sites of a diamond's
 frame arcs, in order: the source site and then the target site of the first, second, third and
 fourth frame arc.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.frameSites`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 340](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#frame-sites).
+Formalized by `Cslib.Complexity.Karp.EmitHam.frameSites`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 340](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#frame-sites).
 
 ## Row copy sites of the HAMPATH emitter
 
@@ -1302,7 +1302,7 @@ The list of the four copy sites of the two row arcs
 between consecutive row vertices of a diamond, in order: the source site and then the target site
 of the first and of the second row arc.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.rowSites`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#row-sites).
+Formalized by `Cslib.Complexity.Karp.EmitHam.rowSites`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#row-sites).
 
 ## Front of a diamond
 
@@ -1315,7 +1315,7 @@ with state bit $b$ and the stacks of $s$ to label $\mathrm{r0}$ with state bit $
 of $s$ with $N$ set to row vertex $3m$ of diamond $i$ and the edge-bit list $q$ extended by the
 bits of the frame arcs of diamond $i$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.dfront_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#dfront-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.dfront_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#dfront-run).
 
 ## The row loop of a diamond in the HAMPATH emitter
 
@@ -1330,7 +1330,7 @@ $\mathsf{e0}$ with bit $v'$ and the stacks of the state obtained from $s$ by set
 $R = \rho_{3m}$ and appending to its edge bits the codes of the arcs $(\rho_l, \rho_{l+1})$ and
 $(\rho_{l+1}, \rho_l)$ for $l = 0, \dots, 3m-1$, in this order.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.drow_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 389](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L389). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#drow-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.drow_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 389](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L389). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#drow-run).
 
 ## Adding units along no stacks
 
@@ -1338,7 +1338,7 @@ For every $i \in \mathbb{N}$ and all stack contents $S$ of
 the HAMPATH emitter, adding $i$ units to the stacks named in the empty list of (stack, symbol)
 pairs leaves $S$ unchanged: $\mathrm{addU}([\,], i, S) = S$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.addU_nil`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#add-u-nil).
+Formalized by `Cslib.Complexity.Karp.EmitHam.addU_nil`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#add-u-nil).
 
 ## Draining a counter
 
@@ -1349,7 +1349,7 @@ consists of $n$ copies of a symbol $u$, then for every state bit $b$ the emitter
 $n + 1$ steps from label $\ell$ with state bit $b$ and stacks $S$ to label $\ell'$ with state bit
 false and the stacks $S$ with stack $k$ emptied.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.drain_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 445](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L445). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#drain-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.drain_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 445](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L445). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#drain-run).
 
 ## Moving the tokens back in the HAMPATH emitter
 
@@ -1360,7 +1360,7 @@ $\mathsf{t0}$ with bit $v$ and the stacks of $s$ to label $\mathsf{t1}$ with bit
 stacks of the state obtained from $s$ by emptying $T$ and replacing $F$ by $L$ reversed followed
 by $F$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.t0_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#t0-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.t0_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-06/index.html#t0-run).
 
 ## The row of a diamond in the HAMPATH emitter
 
@@ -1375,7 +1375,7 @@ stacks of the state obtained from $s$ by setting $R = \rho_{3m}$ and appending t
 the codes of the arcs $(\rho_l, \rho_{l+1})$ and $(\rho_{l+1}, \rho_l)$ for $l = 0, \dots, 3m-1$,
 in this order.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.drowFull_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 476](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L476). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#drow-full-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.drowFull_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 476](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L476). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#drow-full-run).
 
 ## The detours of a diamond
 
@@ -1394,7 +1394,7 @@ $m$, $D$ becomes row vertex $3m + 1$ of diamond $i$, and the edge-bit list $q$ i
 bits of the detour arcs, for $j = 0, \dots, m - 1$ in order, of clause $j$ of $\varphi$ in diamond
 $i$ for variable $y$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.ddet_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 495](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L495). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#ddet-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.ddet_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 495](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L495). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#ddet-run).
 
 ## End of a diamond
 
@@ -1410,7 +1410,7 @@ and the stacks of the quiescent state obtained from $s$ by emptying $T$, setting
 $\mathrm{toks}(\varphi)$ and $V$ to $\nu$, prepending the reversed name of $y$ to $G$, setting
 $P$ to $n + 1$, and setting $N$, $R$, $J$ and $D$ to $0$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.dback_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 519](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L519). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#dback-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.dback_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 519](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L519). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#dback-run).
 
 ## One diamond
 
@@ -1427,7 +1427,7 @@ $s$ changed as follows: $V$ becomes the variable stack of $u$, $P$ becomes the t
 $i + 1$, the edge-bit list $q$ is extended by the bits of the arcs of diamond $i$ of $\varphi$ for
 variable $y$, and the reversed name of $y$ is prepended to $G$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.diamond_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 569](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L569). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#diamond-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.diamond_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 569](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L569). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#diamond-run).
 
 ## The diamonds
 
@@ -1446,7 +1446,7 @@ $\mathrm{h0}$ with state bit $b$ and the stacks of $s$ back to label $\mathrm{h0
 $b'$ and the stacks of $s$ changed as follows: $V$ becomes empty, $P$ becomes the top of diamond
 $k$, $q$ becomes the bits of all arcs of the construction for $\varphi$, and $G$ becomes $g'$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.diamonds_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#diamonds-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.diamonds_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#diamonds-run).
 
 ## The output phase of the HAMPATH emitter
 
@@ -1457,7 +1457,7 @@ stacks $S'$ such that the emitter goes in exactly $|q| + 4p + 2c + 11$ steps fro
 $\mathsf{h0}$ with bit $v$ and the stacks of $s$ to label $\mathsf{done}$ with bit $v'$ and stacks
 $S'$, and the output stack of $S'$ is $1^c 0 1^p 0 1^{p+1} 0$ followed by $q$ and then $o$.
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.final_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 650](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L650). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#final-run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.final_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 650](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L650). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#final-run).
 
 ## Correctness and running time of the HAMPATH emitter
 
@@ -1470,7 +1470,7 @@ from its start label with bit $v$ and stacks $S$ to label $\mathsf{done}$ with b
 $S'$, and the output stack of $S'$ is Sipser's HAMPATH instance for $\varphi$ followed by $o$
 (so the instance is read top-first).
 
-Formalized by `Cslib.Complexity.Karp.EmitHam.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 694](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L694). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#run).
+Formalized by `Cslib.Complexity.Karp.EmitHam.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean, line 694](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathEmit.lean#L694). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#run).
 
 ## The row of a diamond with its clauses inserted
 
@@ -1480,7 +1480,7 @@ vertices of diamond $i$. The row of diamond $i$ for $c$ is the list $r_0, r_1, \
 which, for every $j < m$ with $c(j) = i$, the clause vertex $j$ is inserted right after
 $r_{3j+1}$.
 
-Formalized by `Cslib.Complexity.Karp.hfRow`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#hf-row).
+Formalized by `Cslib.Complexity.Karp.hfRow`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#hf-row).
 
 ## Clauses picked up by a diamond
 
@@ -1490,7 +1490,7 @@ $j < m$ with $c(j) = i$, in increasing order.
 
 These are the clause vertices of the row of diamond $i$, in row order.
 
-Formalized by `Cslib.Complexity.Karp.hfPicks`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#hf-picks).
+Formalized by `Cslib.Complexity.Karp.hfPicks`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#hf-picks).
 
 ## The visit of a diamond
 
@@ -1499,7 +1499,7 @@ a direction $b$, the visit of diamond $i$ is the list consisting of its top
 $T_i = m + i(3m+2)$ followed by its row with the clauses sent to $i$ by $c$ inserted, read left
 to right if $b$ is true and right to left otherwise.
 
-Formalized by `Cslib.Complexity.Karp.hfDiamond`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#hf-diamond).
+Formalized by `Cslib.Complexity.Karp.hfDiamond`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#hf-diamond).
 
 ## The forward path through the diamonds
 
@@ -1514,7 +1514,7 @@ $r_l = m + i(3m + 2) + 1 + l$ and the clause vertex $j$ is inserted right after 
 every $j < m$ with $c(j) = i$; the row is read left to right if $d(i)$ is true and right to left
 otherwise.
 
-Formalized by `Cslib.Complexity.Karp.hfPath`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#hf-path).
+Formalized by `Cslib.Complexity.Karp.hfPath`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#hf-path).
 
 ## Clause vertices picked up by a row
 
@@ -1522,7 +1522,7 @@ Let $m$ and $i$ be natural numbers and let
 $c : \mathbb{N} \to \mathbb{N}$. A natural number $v$ is one of the clause vertices picked up by the
 row of diamond $i$ under $c$, for $m$ clauses, if and only if $v < m$ and $c(v) = i$.
 
-Formalized by `Cslib.Complexity.Karp.mem_hfPicks`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#mem-hf-picks).
+Formalized by `Cslib.Complexity.Karp.mem_hfPicks`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#mem-hf-picks).
 
 ## The clause vertices of a row are distinct
 
@@ -1530,7 +1530,7 @@ For all natural numbers $m$, $i$ and every
 function $c : \mathbb{N} \to \mathbb{N}$, the list of clause vertices picked up by the row of
 diamond $i$ under $c$, for $m$ clauses, has no repeated entries.
 
-Formalized by `Cslib.Complexity.Karp.nodup_hfPicks`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#nodup-hf-picks).
+Formalized by `Cslib.Complexity.Karp.nodup_hfPicks`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#nodup-hf-picks).
 
 ## Each clause is picked up by exactly one row
 
@@ -1540,7 +1540,7 @@ $j < m$ with $c(j) = i$ in increasing order (the clause vertices picked up by th
 diamond $i$). Concatenating these lists for $i = 0, \dots, k - 1$ gives a permutation of
 $0, 1, \dots, m - 1$.
 
-Formalized by `Cslib.Complexity.Karp.flatMap_hfPicks_perm`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#flat-map-hf-picks-perm).
+Formalized by `Cslib.Complexity.Karp.flatMap_hfPicks_perm`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#flat-map-hf-picks-perm).
 
 ## The vertices of a diamond row
 
@@ -1550,7 +1550,7 @@ diamond $i$. The row of diamond $i$ for $c$ (with its clause vertices inserted) 
 of the concatenation of the list $r, r + 1, \dots, r + 3m$ and the list of clauses picked up by
 diamond $i$ for $c$, that is, of all $j < m$ with $c(j) = i$ in increasing order.
 
-Formalized by `Cslib.Complexity.Karp.hfRow_perm`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#hf-row-perm).
+Formalized by `Cslib.Complexity.Karp.hfRow_perm`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#hf-row-perm).
 
 ## A diamond visit is a block of consecutive vertices plus its clauses
 
@@ -1560,7 +1560,7 @@ of diamond $i$. The visit of diamond $i$ in direction $b$ is a rearrangement of 
 consists of $T_i, T_i + 1, \dots, T_i + 3m + 1$ and then the clauses $j < m$ with $c(j) = i$ in
 increasing order.
 
-Formalized by `Cslib.Complexity.Karp.hfDiamond_perm`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#hf-diamond-perm).
+Formalized by `Cslib.Complexity.Karp.hfDiamond_perm`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#hf-diamond-perm).
 
 ## The first $t$ diamonds occupy consecutive vertices
 
@@ -1570,7 +1570,7 @@ $T_i, T_i + 1, \dots, T_i + 3m + 1$ of $3m + 2$ consecutive numbers (the top and
 diamond $i$) gives the list $m, m + 1, \dots, m + t(3m+2) - 1$, that is, the numbers from $m$
 to $T_t - 1$ in increasing order.
 
-Formalized by `Cslib.Complexity.Karp.flatMap_range'_hpT`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#flat-map-range-hp-t).
+Formalized by `Cslib.Complexity.Karp.flatMap_range'_hpT`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#flat-map-range-hp-t).
 
 ## The forward path visits every vertex once
 
@@ -1579,7 +1579,7 @@ every clause $j < m$ to a diamond $c(j) < k$, let $d$ be any directions, and let
 $T_k = m + k(3m+2)$. The forward path through the first $k$ diamonds in directions $d$ with
 clause choice $c$ is a permutation of the list $0, 1, \dots, T_k$.
 
-Formalized by `Cslib.Complexity.Karp.hfPath_perm`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#hf-path-perm).
+Formalized by `Cslib.Complexity.Karp.hfPath_perm`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#hf-path-perm).
 
 ## Chain condition for a diamond row
 
@@ -1590,7 +1590,7 @@ for every $l < 3m$, and $R(r_{3j+1}, j)$ and $R(j, r_{3j+2})$ hold for every $j 
 $c(j) = i$, then the row of diamond $i$ for $c$ is a chain for $R$: every entry is related by
 $R$ to the next one.
 
-Formalized by `Cslib.Complexity.Karp.isChain_hfRow`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#is-chain-hf-row).
+Formalized by `Cslib.Complexity.Karp.isChain_hfRow`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#is-chain-hf-row).
 
 ## A row starts at its left end
 
@@ -1599,7 +1599,7 @@ map $c$, the row of diamond $i$ read left to right, with the clauses sent to $i$
 inserted, starts at its left end, the row vertex $T_i + 1$, where $T_i = m + i(3m+2)$ is the
 top of diamond $i$.
 
-Formalized by `Cslib.Complexity.Karp.head?_hfRow`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#head-hf-row).
+Formalized by `Cslib.Complexity.Karp.head?_hfRow`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-07/index.html#head-hf-row).
 
 ## A row ends at its right end
 
@@ -1608,7 +1608,7 @@ map $c$, the row of diamond $i$ read left to right, with the clauses sent to $i$
 inserted, ends at the row vertex $T_i + 1 + 3m$, where $T_i = m + i(3m+2)$ is the top of
 diamond $i$.
 
-Formalized by `Cslib.Complexity.Karp.getLast?_hfRow`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#get-last-hf-row).
+Formalized by `Cslib.Complexity.Karp.getLast?_hfRow`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#get-last-hf-row).
 
 ## Chain condition for a diamond traversal
 
@@ -1623,7 +1623,7 @@ hold for every $j < m$ with $c(j) = i$. Then the traversal of diamond $i$ for $c
 direction $b$, followed by $t_{i+1}$, is a chain for $R$: every entry is related by $R$ to the
 next one.
 
-Formalized by `Cslib.Complexity.Karp.isChain_hfDiamond`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#is-chain-hf-diamond).
+Formalized by `Cslib.Complexity.Karp.isChain_hfDiamond`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#is-chain-hf-diamond).
 
 ## Chain condition for the forward path
 
@@ -1635,7 +1635,7 @@ $d(i)$, followed by $t_{i+1}$, is a chain for $R$ (every entry is related by $R$
 one), then the forward path through the first $k$ diamonds for $c$ and $d$ is a chain for
 $R$.
 
-Formalized by `Cslib.Complexity.Karp.isChain_hfPath`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#is-chain-hf-path).
+Formalized by `Cslib.Complexity.Karp.isChain_hfPath`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#is-chain-hf-path).
 
 ## The forward path starts at the first top
 
@@ -1643,7 +1643,7 @@ For $m$ clauses, $k$ diamonds, any
 clause-to-diamond map $c$ and any directions $d$, the forward path through the first $k$
 diamonds in directions $d$ with clause choice $c$ starts at the top $T_0 = m$ of diamond $0$.
 
-Formalized by `Cslib.Complexity.Karp.head?_hfPath`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#head-hf-path).
+Formalized by `Cslib.Complexity.Karp.head?_hfPath`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#head-hf-path).
 
 ## The forward path ends at the last top
 
@@ -1651,7 +1651,7 @@ For $m$ clauses, $k$ diamonds, any
 clause-to-diamond map $c$ and any directions $d$, the forward path through the first $k$
 diamonds in directions $d$ with clause choice $c$ ends at the top $T_k = m + k(3m+2)$.
 
-Formalized by `Cslib.Complexity.Karp.getLast?_hfPath`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#get-last-hf-path).
+Formalized by `Cslib.Complexity.Karp.getLast?_hfPath`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#get-last-hf-path).
 
 ## Diamond arcs are arcs of the construction
 
@@ -1660,7 +1660,7 @@ $x_0, \dots, x_{k-1}$ be its distinct variables in the order used by the constru
 $i < k$. Every arc of diamond $i$ for variable $x_i$ is an arc of the HAMPATH construction for
 $\varphi$.
 
-Formalized by `Cslib.Complexity.Karp.mem_hamEdges_of_mem_diamondEdges`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#mem-ham-edges-of-mem-diamond-edges).
+Formalized by `Cslib.Complexity.Karp.mem_hamEdges_of_mem_diamondEdges`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#mem-ham-edges-of-mem-diamond-edges).
 
 ## The frame arcs of a diamond
 
@@ -1670,7 +1670,7 @@ $r_l = t_i + 1 + l$ for the row vertices of diamond $i$. The four arcs $(t_i, r_
 $(t_i, r_{3m})$, $(r_0, t_{i+1})$ and $(r_{3m}, t_{i+1})$ are arcs of diamond $i$ for the
 variable $x$ in the construction for $\varphi$.
 
-Formalized by `Cslib.Complexity.Karp.mem_diamondEdges_frame`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#mem-diamond-edges-frame).
+Formalized by `Cslib.Complexity.Karp.mem_diamondEdges_frame`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#mem-diamond-edges-frame).
 
 ## Row arcs of a diamond
 
@@ -1679,7 +1679,7 @@ natural numbers, and write $r_i(l)$ for row vertex $l$ of diamond $i$. For every
 of diamond $i$ for variable $x$ include both the arc from $r_i(l)$ to $r_i(l+1)$ and the arc from
 $r_i(l+1)$ to $r_i(l)$.
 
-Formalized by `Cslib.Complexity.Karp.mem_diamondEdges_row`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#mem-diamond-edges-row).
+Formalized by `Cslib.Complexity.Karp.mem_diamondEdges_row`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#mem-diamond-edges-row).
 
 ## Positive detour arcs of a diamond
 
@@ -1689,7 +1689,7 @@ $i$. If the variable $x$ occurs positively in clause $j$ of $\varphi$ (counting 
 then the arcs of diamond $i$ for variable $x$ include both the arc from $r_i(3j+1)$ to clause
 vertex $j$ and the arc from clause vertex $j$ to $r_i(3j+2)$.
 
-Formalized by `Cslib.Complexity.Karp.mem_diamondEdges_pos`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#mem-diamond-edges-pos).
+Formalized by `Cslib.Complexity.Karp.mem_diamondEdges_pos`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#mem-diamond-edges-pos).
 
 ## The detour arcs of a negative occurrence
 
@@ -1699,7 +1699,7 @@ $r_l = m + i(3m + 2) + 1 + l$ for the row vertices of diamond $i$. If the negati
 $\neg x$ occurs in clause $j$ of $\varphi$, then $(r_{3j+2}, j)$ and $(j, r_{3j+1})$ are arcs
 of diamond $i$ for the variable $x$ in the construction for $\varphi$.
 
-Formalized by `Cslib.Complexity.Karp.mem_diamondEdges_neg`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#mem-diamond-edges-neg).
+Formalized by `Cslib.Complexity.Karp.mem_diamondEdges_neg`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#mem-diamond-edges-neg).
 
 ## A satisfying choice gives a Hamiltonian path
 
@@ -1713,7 +1713,7 @@ otherwise). Then the forward path through the first $k$ diamonds for $c$, with d
 traversed in direction $\sigma(v_i)$, is a Hamiltonian path from $t_0$ to $t_k$ in the digraph
 on the vertices $0, \dots, t_k$ whose arcs are the arcs of the construction for $\varphi$.
 
-Formalized by `Cslib.Complexity.Karp.isHamPath_hfPath`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#is-ham-path-hf-path).
+Formalized by `Cslib.Complexity.Karp.isHamPath_hfPath`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#is-ham-path-hf-path).
 
 ## Satisfiable formulas give Hamiltonian paths (SAT ≤ HAMPATH, forward direction)
 
@@ -1723,7 +1723,7 @@ $T_i = m + i(3m+2)$ be the top of diamond $i$. Then the digraph on the vertices
 $0, \dots, T_k$ whose arcs are the arcs of the HAMPATH construction for $\varphi$ has a
 Hamiltonian path from $T_0$ to $T_k$.
 
-Formalized by `Cslib.Complexity.Karp.exists_isHamPath_of_cnfSat`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#exists-is-ham-path-of-cnf-sat).
+Formalized by `Cslib.Complexity.Karp.exists_isHamPath_of_cnfSat`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathForward.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathForward.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#exists-is-ham-path-of-cnf-sat).
 
 ## Out-neighbours of a top
 
@@ -1731,7 +1731,7 @@ Let $\varphi$ be a CNF formula with $m$ clauses. In Sipser's
 HAMPATH graph for $\varphi$, every arc out of the top $t_i$ of diamond $i$ ends at one of the two
 ends $r_{i,0}$ and $r_{i,3m}$ of the row of diamond $i$.
 
-Formalized by `Cslib.Complexity.Karp.hpT_arc`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#hp-t-arc).
+Formalized by `Cslib.Complexity.Karp.hpT_arc`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#hp-t-arc).
 
 ## Arcs from a row into a clause vertex
 
@@ -1742,7 +1742,7 @@ is vertex $j$, and $r_{i,l}$ denotes vertex $l$ of the row of diamond $i$. If $l
 and $(r_{i,l}, j)$ is an arc of the graph, then either $l = 3j + 1$ and the literal $x_i$ occurs
 in $C_j$, or $l = 3j + 2$ and the literal $\neg x_i$ occurs in $C_j$.
 
-Formalized by `Cslib.Complexity.Karp.hpR_arc_clause`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#hp-r-arc-clause).
+Formalized by `Cslib.Complexity.Karp.hpR_arc_clause`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#hp-r-arc-clause).
 
 ## Row vertices counted from either end
 
@@ -1752,7 +1752,7 @@ $r_{i,l}$ if $b$ is true and $r_{i,3m - l}$ if $b$ is false, where $3m - l$ is t
 subtraction ($0$ when $l > 3m$). For $l \le 3m$ it is vertex $l$ of the row counted from the left
 end ($b$ true) or from the right end ($b$ false).
 
-Formalized by `Cslib.Complexity.Karp.hpRo`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#hp-ro).
+Formalized by `Cslib.Complexity.Karp.hpRo`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#hp-ro).
 
 ## Out-neighbours of a row vertex outside the clause vertices
 
@@ -1764,7 +1764,7 @@ end if $b$ is false. Let $l \le 3m$ and $v \ge m$. If $(\rho_b(i, l), v)$ is an 
 then $l < 3m$ and $v = \rho_b(i, l + 1)$, or $l > 0$ and $v = \rho_b(i, l - 1)$, or
 $l \in \{0, 3m\}$ and $v = t_{i+1}$.
 
-Formalized by `Cslib.Complexity.Karp.hpRo_arc`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#hp-ro-arc).
+Formalized by `Cslib.Complexity.Karp.hpRo_arc`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#hp-ro-arc).
 
 ## In-neighbours of a row vertex outside the clause vertices
 
@@ -1776,7 +1776,7 @@ $l \le 3m$ and $u \ge m$. If $(u, \rho_b(i, l))$ is an arc of the graph, then $l
 $u = \rho_b(i, l - 1)$, or $l < 3m$ and $u = \rho_b(i, l + 1)$, or $l \in \{0, 3m\}$ and
 $u = t_i$.
 
-Formalized by `Cslib.Complexity.Karp.arc_hpRo`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#arc-hp-ro).
+Formalized by `Cslib.Complexity.Karp.arc_hpRo`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#arc-hp-ro).
 
 ## Deleting the clause vertices from a path
 
@@ -1785,7 +1785,7 @@ For a CNF formula $\varphi$ with $m$ clauses
 numbers, the list obtained from $p$ by deleting every entry $v < m$, keeping the other entries in
 their order.
 
-Formalized by `Cslib.Complexity.Karp.dropClauses`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#drop-clauses).
+Formalized by `Cslib.Complexity.Karp.dropClauses`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#drop-clauses).
 
 ## Contracting a clause detour
 
@@ -1794,7 +1794,7 @@ a list of natural numbers, and let $q$ be the list obtained from $p$ by deleting
 than $m$. If $a, j, c$ occur consecutively in $p$ with $j < m$, $a \ge m$ and $c \ge m$, then
 $a$ is immediately followed by $c$ in $q$.
 
-Formalized by `Cslib.Complexity.Karp.infix_dropClauses`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#infix-drop-clauses).
+Formalized by `Cslib.Complexity.Karp.infix_dropClauses`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#infix-drop-clauses).
 
 ## Consecutive vertices of the contracted path are joined by arcs
 
@@ -1807,7 +1807,7 @@ such that $j$ sits in $p$ immediately between $r_{i,3j+1}$ and $r_{i,3j+2}$, in 
 $p'$ be $p$ with the clause vertices deleted. If $v$ comes right after $u$ in $p'$, then
 $(u, v)$ is an arc of the graph, $u \ge m$ and $v \ge m$.
 
-Formalized by `Cslib.Complexity.Karp.arc_of_infix_dropClauses`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#arc-of-infix-drop-clauses).
+Formalized by `Cslib.Complexity.Karp.arc_of_infix_dropClauses`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-08/index.html#arc-of-infix-drop-clauses).
 
 ## Every vertex of the contracted path except its end has a successor
 
@@ -1818,7 +1818,7 @@ Hamiltonian path of this graph (on the vertices $0, \dots, t_k$) from $t_0$ to $
 be $p$ with the clause vertices deleted. Then every vertex $v \ne t_k$ of $p'$ is immediately
 followed in $p'$ by some vertex $w$.
 
-Formalized by `Cslib.Complexity.Karp.exists_infix_dropClauses`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#exists-infix-drop-clauses).
+Formalized by `Cslib.Complexity.Karp.exists_infix_dropClauses`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#exists-infix-drop-clauses).
 
 ## Entering a row and leaving it at once is impossible
 
@@ -1833,7 +1833,7 @@ either order. Let $q$ be $p$ with the clause vertices $0, \dots, m - 1$ deleted.
 $i < n$ and each end $e$ of row $i$, it is not the case that in $q$ the top $t_i$ is immediately
 followed by $e$ and $e$ is immediately followed by $t_{i+1}$.
 
-Formalized by `Cslib.Complexity.Karp.no_shortcut`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#no-shortcut).
+Formalized by `Cslib.Complexity.Karp.no_shortcut`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#no-shortcut).
 
 ## A row entered at one end is run to the other end
 
@@ -1850,7 +1850,7 @@ counted from $e$, that is $r_l = t_i + 1 + l$ if $e$ is the left end and $r_l = 
 if $e$ is the right end. If the top $t_i$ is immediately followed by $r_0$ in $q$, then for every
 $l < 3m$ the vertex $r_l$ is immediately followed by $r_{l+1}$ in $q$.
 
-Formalized by `Cslib.Complexity.Karp.row_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#row-run).
+Formalized by `Cslib.Complexity.Karp.row_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#row-run).
 
 ## Every top but the last is followed by an end of its row
 
@@ -1863,7 +1863,7 @@ such that $j$ sits in $p$ immediately between $r_{i,3j+1}$ and $r_{i,3j+2}$, in 
 $p'$ be $p$ with the clause vertices deleted. Then for every $i < k$, the top $t_i$ is
 immediately followed in $p'$ by $r_{i,0}$ or by $r_{i,3m}$.
 
-Formalized by `Cslib.Complexity.Karp.exists_top_succ`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 447](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L447). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#exists-top-succ).
+Formalized by `Cslib.Complexity.Karp.exists_top_succ`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 447](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L447). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#exists-top-succ).
 
 ## Positions in the list of distinct variables
 
@@ -1871,7 +1871,7 @@ Let $\varphi$ be a CNF formula, let
 $v_0, \dots, v_{k-1}$ be the list of distinct variables of $\varphi$, and let $i < k$. Then the
 first position at which $v_i$ occurs in this list is $i$.
 
-Formalized by `Cslib.Complexity.Karp.idxOf_getD_hamVars`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 459](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L459). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#idx-of-get-d-ham-vars).
+Formalized by `Cslib.Complexity.Karp.idxOf_getD_hamVars`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 459](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L459). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#idx-of-get-d-ham-vars).
 
 ## Backward direction of SAT ≤ HAMPATH for paths with normal detours
 
@@ -1886,7 +1886,7 @@ order, then $\varphi$ is satisfiable.
 The satisfying assignment makes the variable of diamond $i$ true iff row $i$ is traversed from
 left to right.
 
-Formalized by `Cslib.Complexity.Karp.cnfSat_of_isHamPath`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#cnf-sat-of-is-ham-path).
+Formalized by `Cslib.Complexity.Karp.cnfSat_of_isHamPath`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathNormal.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#cnf-sat-of-is-ham-path).
 
 ## The construction has a Hamiltonian path iff the formula is satisfiable
 
@@ -1896,7 +1896,7 @@ $t_i = m + i(3m + 2)$ be the top vertex of diamond $i$ in Sipser's construction.
 the vertices $0, \dots, t_k$ whose arcs are the arcs of the construction for $\varphi$ has a
 Hamiltonian path from $t_0$ to $t_k$ if and only if $\varphi$ is satisfiable.
 
-Formalized by `Cslib.Complexity.Karp.exists_isHamPath_iff_cnfSat`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#exists-is-ham-path-iff-cnf-sat).
+Formalized by `Cslib.Complexity.Karp.exists_isHamPath_iff_cnfSat`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#exists-is-ham-path-iff-cnf-sat).
 
 ## HAMPATH on an encoded instance
 
@@ -1905,7 +1905,7 @@ of pairs of natural numbers, the HAMPATH decision problem accepts the PATH encod
 $(s, t, n, E)$ if and only if the digraph on $0, \dots, n - 1$ with edge list $E$ has a
 Hamiltonian path from $s$ to $t$.
 
-Formalized by `Cslib.Complexity.Karp.hamPathDec_encodeP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#ham-path-dec-encode-p).
+Formalized by `Cslib.Complexity.Karp.hamPathDec_encodeP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#ham-path-dec-encode-p).
 
 ## HAMPATH rejects the fixed no-instance
 
@@ -1913,14 +1913,14 @@ The HAMPATH decision problem rejects the PATH
 encoding of the digraph on the two vertices $0, 1$ with no arcs and $s = t = 0$: a path from $0$
 to $0$ that visits both vertices would repeat $0$.
 
-Formalized by `Cslib.Complexity.Karp.hamPathDec_noHam`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#ham-path-dec-no-ham).
+Formalized by `Cslib.Complexity.Karp.hamPathDec_noHam`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#ham-path-dec-no-ham).
 
 ## SAT ≤ HAMPATH preserves membership
 
 For every bit string $x$, SAT accepts $x$ if and only
 if HAMPATH accepts the image of $x$ under the SAT-to-HAMPATH reduction map.
 
-Formalized by `Cslib.Complexity.Karp.satDec_eq_hamPathDec_reduceHam`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#sat-dec-eq-ham-path-dec-reduce-ham).
+Formalized by `Cslib.Complexity.Karp.satDec_eq_hamPathDec_reduceHam`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathCorrect.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#sat-dec-eq-ham-path-dec-reduce-ham).
 
 ## Stacks of the Hamiltonian path verifier
 
@@ -1929,7 +1929,7 @@ and the witness $W$; the counters $S$, $T$, $N$ (holding $s$, $t$, $n$), $C$ (th
 vertices seen), $A$ (the current vertex) and $B$ (the previous one); the save stacks $E$ (for
 $X$) and $Z$ (for $W$); and the scratch stacks $R$ and $Q$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#k).
+Formalized by `Cslib.Complexity.Karp.HamVerify.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#k).
 
 ## Counter comparisons of the HAMPATH verifier
 
@@ -1938,7 +1938,7 @@ verifier makes between its counters: the current vertex $a$ with the vertex coun
 current vertex $a$ with the start vertex $s$, the number $c$ of vertices seen with $n$, and the
 previous vertex $b$ with the end vertex $t$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.CI`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#ci).
+Formalized by `Cslib.Complexity.Karp.HamVerify.CI`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#ci).
 
 ## Labels of the Hamiltonian path verifier
 
@@ -1951,7 +1951,7 @@ verdict so far, restoring the counters, putting the edge list back); the repeat 
 flagged comparisons and restores, then putting the witness back); the final nonzero-count
 check; counting the vertex and making it the previous one; accept; and reject.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#lab).
+Formalized by `Cslib.Complexity.Karp.HamVerify.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#lab).
 
 ## Statements of the Hamiltonian-path verifier
 
@@ -1959,7 +1959,7 @@ A statement of the verifier is a statement of
 a multi-stack Turing machine whose stacks are indexed by the verifier's stacks $K$, each stack
 over the alphabet $\mathrm{Sym}$, with labels $\mathrm{Lab}$ and a Boolean internal variable.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.Stmt`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#stmt).
+Formalized by `Cslib.Complexity.Karp.HamVerify.Stmt`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#stmt).
 
 ## The unary reader of the Hamiltonian path verifier
 
@@ -1973,7 +1973,7 @@ Boolean variable.
 Run in a loop at $\ell$, it reads a unary number off $\mathsf{src}$ onto the counter $c$ and
 consumes the terminator.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.readU`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#read-u).
+Formalized by `Cslib.Complexity.Karp.HamVerify.readU`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#read-u).
 
 ## The unary mover of the Hamiltonian path verifier
 
@@ -1987,7 +1987,7 @@ is `false`. Each of the two tests also stores its outcome in the Boolean variabl
 Run in a loop at $\ell$, it moves a unary number, terminator included, from $\mathsf{src}$ to
 $\mathsf{dst}$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.skipU`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#skip-u).
+Formalized by `Cslib.Complexity.Karp.HamVerify.skipU`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#skip-u).
 
 ## Emptiness test
 
@@ -1995,7 +1995,7 @@ For a stack $k$ and labels $e$ and $ne$, the verifier instruction that
 looks at the top of stack $k$ without changing any stack, then goes to $e$ if $k$ is empty and
 to $ne$ otherwise.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.ifE`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#if-e).
+Formalized by `Cslib.Complexity.Karp.HamVerify.ifE`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#if-e).
 
 ## Step of the HAMPATH verifier's unary comparison loop
 
@@ -2012,7 +2012,7 @@ $\mathit{fin}(\mathrm{false})$ otherwise.
 Iterated, it compares the next unary number of $\mathit{src}$ with the counter $c$, one unit of $c$
 per true, parked on $R$: $\mathit{ok}$ is the verdict so far, falsified when $c$ runs out early.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.cbS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#cb-s).
+Formalized by `Cslib.Complexity.Karp.HamVerify.cbS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#cb-s).
 
 ## First counter of a HAMPATH-verifier comparison
 
@@ -2023,7 +2023,7 @@ current-vertex counter $A$, the comparison of the number of vertices seen with t
 to the vertices-seen counter $C$, and the comparison of the previous vertex with the end vertex
 to the previous-vertex counter $B$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.ca`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#ca).
+Formalized by `Cslib.Complexity.Karp.HamVerify.ca`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#ca).
 
 ## Second counter of a HAMPATH-verifier comparison
 
@@ -2034,7 +2034,7 @@ vertex-count counter $N$, the comparison of the current vertex with the start ve
 start-vertex counter $S$, and the comparison of the previous vertex with the end vertex to the
 end-vertex counter $T$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.cb`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#cb).
+Formalized by `Cslib.Complexity.Karp.HamVerify.cb`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-09/index.html#cb).
 
 ## Exit labels of the counter comparisons
 
@@ -2046,7 +2046,7 @@ if $a = s$; after comparing $c$ with $n$ it goes to the nonzero-count check if $
 comparing $b$ with $t$ it goes to the accept label if $b = t$; in every other case it goes to
 the reject label.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.cout`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#cout).
+Formalized by `Cslib.Complexity.Karp.HamVerify.cout`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#cout).
 
 ## The Hamiltonian path verifier machine
 
@@ -2109,7 +2109,7 @@ found a symbol, and an emptiness test stores there whether the stack is empty.
 
 The verifier parses and validates the input and the witness, then walks the vertices.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#prog).
+Formalized by `Cslib.Complexity.Karp.HamVerify.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#prog).
 
 ## Start label of the Hamiltonian-path verifier
 
@@ -2117,7 +2117,7 @@ The verifier starts at the label
 $\mathsf{rdS}$, where it reads the first unary number of the input stack $X$ (the start vertex
 $s$) onto the counter stack $S$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#start).
+Formalized by `Cslib.Complexity.Karp.HamVerify.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#start).
 
 ## Interleaved stack updates in the Hamiltonian-path verifier
 
@@ -2126,7 +2126,7 @@ the verifier, $S$ an assignment of a list of symbols to each stack, and $p, p', 
 symbols. Setting $a$ to $p$, then $b$ to $t$, then $a$ to $p'$, then $b$ to $t'$ in $S$ gives the
 same assignment as setting $a$ to $p'$ and then $b$ to $t'$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.update_update_update_update`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#update-update-update-update).
+Formalized by `Cslib.Complexity.Karp.HamVerify.update_update_update_update`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#update-update-update-update).
 
 ## A single step of the Hamiltonian-path verifier
 
@@ -2136,7 +2136,7 @@ at $l$ with flag $v$ and stacks $S$ jumps to the label $l'$ and leaves the stack
 verifier goes in exactly one step from label $l$, flag $v$ and stacks $S$ to label $l'$ and
 stacks $S'$, with some flag value.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.step1`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#step1).
+Formalized by `Cslib.Complexity.Karp.HamVerify.step1`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#step1).
 
 ## One step of the emptiness test
 
@@ -2145,7 +2145,7 @@ emptiness test of stack $k$ with targets $e$ and $ne$, then from label $l$, in a
 and on any stacks, exactly one step of the verifier leads to label $e$ if stack $k$ is empty and
 to label $ne$ otherwise, in some internal state and with the stacks unchanged.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.ifE_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#if-e-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.ifE_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#if-e-run).
 
 ## The unary reader of the Hamiltonian path verifier reads a terminated number
 
@@ -2159,7 +2159,7 @@ variable, the verifier reaches label $m$ in exactly $k + 1$ steps, with $\mathsf
 the bits of $r$, $c$ holding $k + j$ copies of the bit `true`, and every other stack
 unchanged.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.readU_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#read-u-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.readU_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#read-u-run).
 
 ## The unary reader of the Hamiltonian path verifier rejects an unterminated number
 
@@ -2171,7 +2171,7 @@ $m$. Let $l$ be a bit list from which no unary length can be read (that is, $l$ 
 top). Then from label $\ell$, with either value of the Boolean variable and any contents of the
 other stacks, the verifier reaches label $\mathrm{no}$ within $|l| + 1$ steps.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.readU_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#read-u-none).
+Formalized by `Cslib.Complexity.Karp.HamVerify.readU_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#read-u-none).
 
 ## Extending a reversed unary block
 
@@ -2181,7 +2181,7 @@ of true followed by one false), that is, the bit symbol of false followed by $a$
 true. Then for every list $L$ of symbols, $\beta_a$ followed by the bit symbol of true and then
 $L$ equals $\beta_{a+1}$ followed by $L$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.blk_succ`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#blk-succ).
+Formalized by `Cslib.Complexity.Karp.HamVerify.blk_succ`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#blk-succ).
 
 ## The unary mover of the Hamiltonian path verifier moves a terminated number
 
@@ -2195,7 +2195,7 @@ label $m$ in exactly $k + 1$ steps, with $\mathsf{src}$ holding the bits of $r$,
 $\mathsf{dst}$ holding the bit `false` followed by $k$ copies of the bit `true` on top of its
 previous contents, and with every other stack unchanged.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.skipU_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#skip-u-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.skipU_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#skip-u-run).
 
 ## The unary mover of the Hamiltonian path verifier rejects an unterminated number
 
@@ -2208,7 +2208,7 @@ symbols, first bit on top). Then from label $\ell$, with either value of the Boo
 and any contents of the other stacks, the verifier reaches label $\mathrm{no}$ within
 $|l| + 1$ steps.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.skipU_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#skip-u-none).
+Formalized by `Cslib.Complexity.Karp.HamVerify.skipU_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#skip-u-none).
 
 ## Moving a stack of bits
 
@@ -2219,7 +2219,7 @@ takes exactly $|l| + 1$ steps to reach label $p'$, in some internal state, with 
 stack $b$ holding the bits of $l$ in reverse order followed by its old contents, and every other
 stack unchanged.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.mv_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#mv-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.mv_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#mv-run).
 
 ## Run of a HAMPATH-verifier counter comparison
 
@@ -2233,7 +2233,7 @@ label $\mathrm{cout}(i, o)$ that comparison $i$ picks on the ordering
 $o = \mathrm{compare}(m, n) \in \{\mathrm{lt}, \mathrm{eq}, \mathrm{gt}\}$ of $m$ and $n$, with flag
 false and the same stacks $\sigma$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.cmpI_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#cmp-i-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.cmpI_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#cmp-i-run).
 
 ## Outcome of the HAMPATH verifier's vertex-range comparison
 
@@ -2242,7 +2242,7 @@ the label that the comparison of the current vertex with the vertex count picks 
 $\mathrm{compare}(m, n)$ of $m$ and $n$ is the head-or-edge dispatch label $\mathrm{hd}$ if
 $m < n$, and the reject label $\mathrm{no}$ otherwise.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.cout_an`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#cout-an).
+Formalized by `Cslib.Complexity.Karp.HamVerify.cout_an`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#cout-an).
 
 ## Outcome of a HAMPATH-verifier equality comparison
 
@@ -2254,7 +2254,7 @@ $\mathrm{no}$ for every ordering $o \ne \mathrm{eq}$. Then for all $m, n \in \ma
 $\mathrm{cout}(i, \mathrm{compare}(m, n))$ on the ordering of $m$ and $n$ is $l$ if $m = n$ and
 $\mathrm{no}$ otherwise.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.cout_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#cout-eq).
+Formalized by `Cslib.Complexity.Karp.HamVerify.cout_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#cout-eq).
 
 ## Run of the HAMPATH verifier's unary comparison loop
 
@@ -2274,7 +2274,7 @@ such that $\sigma'(\mathit{src}) = \bar r$, $\sigma'(\mathit{sv}) = 0\,1^a\,\sig
 $\sigma'(c) = 1^{\max(u - a, 0)}$, $\sigma'(R) = 1^{\min(a, u) + j}$, and $\sigma'(k) = \sigma(k)$
 for every other stack $k$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.cb_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#cb-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.cb_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#cb-run).
 
 ## HAMPATH-verifier unary comparison with the counter restored
 
@@ -2295,7 +2295,7 @@ $v$ and stacks $\sigma$ to label $\mathrm{nx}(b)$, where $b$ is true exactly whe
 true and $a = u$, with some flag and with the stacks of $\sigma$ except that $\mathit{src}$ now
 holds $\bar r$ and $\mathit{sv}$ holds $0\,1^a$ followed by $\sigma(\mathit{sv})$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.cmpN_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 433](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L433). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#cmp-n-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.cmpN_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 433](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L433). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#cmp-n-run).
 
 ## The edge-list check of the Hamiltonian-path verifier
 
@@ -2308,7 +2308,7 @@ $r$ decodes, the final stacks are $St$ with $X$ emptied and $E$ holding the reve
 concatenation of $acc$ and $r$ (that is, $r$ reversed on top of $acc$ reversed), all other
 stacks unchanged.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.valE_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 474](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L474). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#val-e-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.valE_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 474](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L474). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#val-e-run).
 
 ## The witness check of the Hamiltonian-path verifier
 
@@ -2321,7 +2321,7 @@ decodes, the final stacks are $St$ with $W$ emptied and $Z$ holding the reverse 
 concatenation of $acc$ and $w$ (that is, $w$ reversed on top of $acc$ reversed), all other
 stacks unchanged.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.valW_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#val-w-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.valW_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#val-w-run).
 
 ## The edge scan of the Hamiltonian path verifier
 
@@ -2338,7 +2338,7 @@ label $\mathrm{nd}$ if $(b, a)$ is one of the pairs of $r$ and the label $\mathr
 otherwise. In the first case its stacks are then the initial ones except that $\mathsf{X}$
 holds the encoding $\mathrm{bits}$ of the list $d$ followed by $r$, and $\mathsf{E}$ is empty.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.scan_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 580](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L580). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#scan-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.scan_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 580](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L580). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-10/index.html#scan-run).
 
 ## The repeat scan of the Hamiltonian path verifier
 
@@ -2354,7 +2354,7 @@ label $\mathrm{no}$ if $a$ is an entry of $q$ and the label $\mathrm{incC}$ othe
 second case its stacks are then the initial ones except that $\mathsf{W}$ holds the bits of the
 encoding of $d$ followed by $q$, and $\mathsf{Z}$ is empty.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.nd_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 649](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L649). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#nd-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.nd_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 649](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L649). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#nd-run).
 
 ## Stack layout between vertex steps
 
@@ -2364,7 +2364,7 @@ the edge list $es$, $W$ holds the bits of the witness encoding of $q$, the count
 $N$, $C$ and $B$ hold $s$, $t$, $n$, $c$ and $b$ in unary, and the stacks $A$, $E$, $Z$, $R$
 and $Q$ are empty.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.lay`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 703](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L703). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#lay).
+Formalized by `Cslib.Complexity.Karp.HamVerify.lay`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 703](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L703). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#lay).
 
 ## Stack layout during a vertex step
 
@@ -2372,7 +2372,7 @@ For an edge list $es$, numbers $s, t, n, c, b, a$ and
 a list $q$ of vertices, the stacks of the verifier during the step on vertex $a$: the layout
 between vertex steps for $es, s, t, n, c, b, q$, except that stack $A$ holds $a$ in unary.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.mid`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 718](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L718). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#mid).
+Formalized by `Cslib.Complexity.Karp.HamVerify.mid`, a definition declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 718](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L718). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#mid).
 
 ## Running the head-or-edge check
 
@@ -2384,7 +2384,7 @@ reaches within $3a + 4\ell + 7$ steps, where $\ell$ is the number of bits of $es
 scan if the check passes and the reject label otherwise, in some internal state and with some
 stacks; if the check passes, these stacks are the ones it started on.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.hd_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 723](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L723). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#hd-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.hd_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 723](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L723). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#hd-run).
 
 ## The rest of a vertex step in the Hamiltonian-path verifier
 
@@ -2398,7 +2398,7 @@ the label $\mathsf{loop}$ if $a \notin q$. In the second case ($a$ has been coun
 the previous vertex) the stacks end in the between-steps layout for $es$, $s$, $t$, $n$, count
 $c + 1$, previous vertex $a$ and remaining vertices $q$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.tail_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 752](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L752). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#tail-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.tail_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 752](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L752). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#tail-run).
 
 ## One vertex step of the Hamiltonian-path verifier
 
@@ -2413,7 +2413,7 @@ $a < n$, $a = s$ in case $c = 0$ and $(b, a) \in es$ in case $c \ne 0$, and $a \
 it passes, the stacks end in the between-steps layout for $es$, $s$, $t$, $n$, count $c + 1$,
 previous vertex $a$ and remaining vertices $q$.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.step_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 783](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L783). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#step-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.step_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 783](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L783). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#step-run).
 
 ## Running the vertex loop
 
@@ -2425,7 +2425,7 @@ between vertex steps for $es, s, t, n, c, b, q$ reaches within $(|q| + 1)(20L + 
 some internal state and stacks, the accept label if the walk check for $s, t, n, es, c, b, q$
 passes and the reject label otherwise.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.loop_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 829](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L829). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#loop-run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.loop_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 829](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L829). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#loop-run).
 
 ## Correctness and running time of the Hamiltonian path verifier
 
@@ -2438,7 +2438,7 @@ otherwise.
 
 The machine in fact takes quadratically many steps; the theorem states only the quartic bound.
 
-Formalized by `Cslib.Complexity.Karp.HamVerify.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 890](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L890). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#run).
+Formalized by `Cslib.Complexity.Karp.HamVerify.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean, line 890](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathVerify.lean#L890). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#run).
 
 ## The HAMPATH verifier as a host component
 
@@ -2447,13 +2447,13 @@ are those of the HAMPATH verifier machine, whose stacks are the twelve stacks of
 input $X$, the witness $W$, the counters $S, T, N, C, A, B$, the save stacks $E, Z$ and the scratch
 stacks $R, Q$), each over the symbol alphabet of the SAT verifier.
 
-Formalized by `Cslib.Complexity.Karp.hamVerifyComp`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#ham-verify-comp).
+Formalized by `Cslib.Complexity.Karp.hamVerifyComp`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#ham-verify-comp).
 
 ## HAMPATH is in NP
 
 **HAMPATH is in NP**.
 
-Formalized by `Cslib.Complexity.Karp.hamPathDec_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#ham-path-dec-mem-np).
+Formalized by `Cslib.Complexity.Karp.hamPathDec_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#ham-path-dec-mem-np).
 
 ## The HAMPATH emitter
 
@@ -2464,7 +2464,7 @@ symbol maps being the identity), and has step bound $B(n) = 2000 (n + 1)^5$ for 
 output for a CNF formula $\varphi$ is Sipser's HAMPATH instance of $\varphi$, and for an
 undecodable input the fixed HAMPATH no-instance (two vertices, no arcs, source and target $0$).
 
-Formalized by `Cslib.Complexity.Karp.emitHam`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#emit-ham).
+Formalized by `Cslib.Complexity.Karp.emitHam`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#emit-ham).
 
 ## SAT ≤ HAMPATH is polynomial-time
 
@@ -2473,7 +2473,7 @@ to a CNF formula $\varphi$ to Sipser's HAMPATH instance for $\varphi$, and every
 to the fixed no-instance with two vertices, no arcs and $s = t = 0$, is computable in polynomial
 time.
 
-Formalized by `Cslib.Complexity.Karp.isPolyTime_reduceHam`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#is-poly-time-reduce-ham).
+Formalized by `Cslib.Complexity.Karp.isPolyTime_reduceHam`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#is-poly-time-reduce-ham).
 
 ## HAMPATH is NP-hard
 
@@ -2481,7 +2481,7 @@ Every decision problem $L$ in NP has a polynomial-time many-one
 reduction to HAMPATH: a polynomial-time computable map $f$ on bit strings such that, for every
 bit string $x$, $L$ accepts $x$ exactly when HAMPATH accepts $f(x)$.
 
-Formalized by `Cslib.Complexity.Karp.hamPathDec_npHard`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#ham-path-dec-np-hard).
+Formalized by `Cslib.Complexity.Karp.hamPathDec_npHard`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#ham-path-dec-np-hard).
 
 ## HAMPATH is NP-complete
 
@@ -2493,7 +2493,7 @@ strings such that, for every bit string $x$, $L$ accepts $x$ exactly when HAMPAT
 
 - Sipser, Theorem 7.46.
 
-Formalized by `Cslib.Complexity.Karp.hamPathDec_npComplete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#ham-path-dec-np-complete).
+Formalized by `Cslib.Complexity.Karp.hamPathDec_npComplete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/HamPathComplete.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/part-11/index.html#ham-path-dec-np-complete).
 
 ## Depends on
 
@@ -2502,4 +2502,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hamiltonian path in directed graphs](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/hamiltonian-path-in-directed-graphs)

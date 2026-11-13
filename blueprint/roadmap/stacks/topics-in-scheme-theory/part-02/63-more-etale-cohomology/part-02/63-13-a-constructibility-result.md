@@ -8,13 +8,13 @@ proof: formalized
 
 # 63.13 A constructibility result
 
-Section 63.13 of the Stacks Project, [Tag 0GKT](https://stacks.math.columbia.edu/tag/0GKT). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 63.13 of the Stacks Project, [Tag 0GKT](https://stacks.math.columbia.edu/tag/0GKT). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GKU, a lemma
 
 [Tag 0GKU](https://stacks.math.columbia.edu/tag/0GKU) in the Stacks Project.
 
-**`AlgebraicGeometry.isZero_cokernel_and_isConstructible_kernel_frobeniusSemilinear_sub_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/FrobeniusKernelConstructible.lean, line 824](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/FrobeniusKernelConstructible.lean#L824).
+**`AlgebraicGeometry.isZero_cokernel_and_isConstructible_kernel_frobeniusSemilinear_sub_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/FrobeniusKernelConstructible.lean, line 825](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/FrobeniusKernelConstructible.lean#L825).
 
 > Let `p` be a prime, let `S` be a scheme over `𝔽_p`, let `E` be a finite locally free module on
 > the small étale site of `S` and let `F : E ⟶ E` be a morphism of abelian sheaves with
@@ -47,7 +47,7 @@ theorem isZero_cokernel_and_isConstructible_kernel_frobeniusSemilinear_sub_id
 
 [Tag 0GKV](https://stacks.math.columbia.edu/tag/0GKV) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isConstructibleEtaleModule_rightDerivedConstantUnit_of_isProper_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleSheaves/ProperSmoothCurveHigherDirectImage.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleSheaves/ProperSmoothCurveHigherDirectImage.lean#L63). References: SGA 4 XIV (1.11), “partial”.
+**`Stacks.EtaleCohomology.isConstructibleEtaleModule_rightDerivedConstantUnit_of_isProper_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleSheaves/ProperSmoothCurveHigherDirectImage.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleSheaves/ProperSmoothCurveHigherDirectImage.lean#L63). References: SGA 4 XIV (1.11), “partial”.
 
 > **Stacks Project, Tag 0GKV.** Let `f : X ⟶ S` be a proper smooth morphism of schemes with
 > geometrically connected fibres of dimension at most `1` (the source: of dimension `1`), and let
@@ -72,7 +72,7 @@ theorem isConstructibleEtaleModule_rightDerivedConstantUnit_of_isProper_of_smoot
 
 [Tag 0GKW](https://stacks.math.columbia.edu/tag/0GKW) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isConstructibleEtaleModule_rightDerived_constantSheaf_of_isProper_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleSheaves/ProperSmoothCurveConstantModule.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleSheaves/ProperSmoothCurveConstantModule.lean#L56).
+**`Stacks.EtaleCohomology.isConstructibleEtaleModule_rightDerived_constantSheaf_of_isProper_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleSheaves/ProperSmoothCurveConstantModule.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleSheaves/ProperSmoothCurveConstantModule.lean#L56).
 
 > **Stacks Project, Tag 0GKW.** Let `f : X ⟶ S` be a proper smooth morphism of schemes with
 > geometrically connected fibres of dimension at most `1` (the source: of dimension `1`), let `Λ`
@@ -97,4 +97,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 63.13, Tag 0GKT](https://stacks.math.columbia.edu/tag/0GKT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

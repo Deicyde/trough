@@ -8,13 +8,13 @@ proof: formalized
 
 # 96.19 The relative Čech complex
 
-Section 96.19 of the Stacks Project, [Tag 06X7](https://stacks.math.columbia.edu/tag/06X7). 12 tags here are carried by 34 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 96.19 of the Stacks Project, [Tag 06X7](https://stacks.math.columbia.edu/tag/06X7). 12 tags here are carried by 34 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06X8, a remark
 
 [Tag 06X8](https://stacks.math.columbia.edu/tag/06X8) in the Stacks Project.
 
-**`Stacks.RelativeCech.complex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/RelativeCechComplex.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/RelativeCechComplex.lean#L221). The attribute's comment: “presheaf\_relative\_cech\_complex”.
+**`Stacks.RelativeCech.complex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/RelativeCechComplex.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/RelativeCechComplex.lean#L221). The attribute's comment: “presheaf\_relative\_cech\_complex”.
 
 > **Stacks 06X8.** The relative Čech complex of an abelian presheaf for a functor over a
 > base category: the alternating-coface complex of the relative Čech cosimplicial presheaf.
@@ -24,7 +24,7 @@ public noncomputable def complex (F : Xᵒᵖ ⥤ AddCommGrpCat.{max uU uX vX w}
     CochainComplex (Xᵒᵖ ⥤ AddCommGrpCat.{max uU uX vX w}) ℕ
 ```
 
-**`Stacks.presheafPullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean#L83). The attribute's comment: “the pullback map on presheaf direct images”.
+**`Stacks.presheafPullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean#L83). The attribute's comment: “the pullback map on presheaf direct images”.
 
 > **Stacks 06X8.** The canonical map from the direct image of a presheaf along `f` to the
 > direct image along `h ⋙ f` of its restriction along `h`: the direct image of the adjunction
@@ -36,7 +36,7 @@ public noncomputable def presheafPullbackMap (G : Uᵒᵖ ⥤ A) :
     f.op.ran.obj G ⟶ (h.op ⋙ f.op).ran.obj (h.op ⋙ G)
 ```
 
-**`Stacks.presheafPullbackMap_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean#L90). The attribute's comment: “naturality of the pullback map on presheaf direct images”.
+**`Stacks.presheafPullbackMap_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean#L90). The attribute's comment: “naturality of the pullback map on presheaf direct images”.
 
 > **Stacks 06X8.** The presheaf pullback map is natural in the presheaf.
 
@@ -47,7 +47,7 @@ public theorem presheafPullbackMap_natural {G H : Uᵒᵖ ⥤ A} (α : G ⟶ H) 
         (h.op ⋙ f.op).ran.map (Functor.whiskerLeft h.op α)
 ```
 
-**`Stacks.presheafPullbackMap_whiskerLeft_ranCounit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean#L151). The attribute's comment: “the counit factorisation of the presheaf pullback map”.
+**`Stacks.presheafPullbackMap_whiskerLeft_ranCounit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean#L151). The attribute's comment: “the counit factorisation of the presheaf pullback map”.
 
 > **Stacks 06X8.** The defining property of the presheaf pullback map against the
 > Kan-extension counits: restricting the counit of `f` along `h` factors through it.
@@ -59,7 +59,7 @@ public theorem presheafPullbackMap_whiskerLeft_ranCounit (G : Xᵒᵖ ⥤ A) :
         (h.op ⋙ f.op).ranCounit.app (h.op ⋙ f.op ⋙ G)
 ```
 
-**`Stacks.RelativeCech.reindexMap_eq_presheafPullbackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean#L190). The attribute's comment: “the Čech reindexing maps are pullback maps”.
+**`Stacks.RelativeCech.reindexMap_eq_presheafPullbackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean#L190). The attribute's comment: “the Čech reindexing maps are pullback maps”.
 
 > **Stacks 06X8.** Each reindexing map of the relative Čech complex of an abelian presheaf is
 > the canonical pullback map along the corresponding reindexing functor of relative Čech
@@ -74,7 +74,7 @@ public theorem reindexMap_eq_presheafPullbackMap {U : Type uU} {X : Type uX} {C 
         (Tuple.reindex p f φ.toOrderHom) ((Tuple.projection p f m).op ⋙ F)
 ```
 
-**`Stacks.sheafPullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean#L226). The attribute's comment: “the pullback map on sheaf direct images”.
+**`Stacks.sheafPullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean#L226). The attribute's comment: “the pullback map on sheaf direct images”.
 
 > **Stacks 06X8.** The canonical map from the direct image of a sheaf along `f` to the direct
 > image along `h ⋙ f` of its restriction along `h`, formed from the unit of the
@@ -88,7 +88,7 @@ public noncomputable def sheafPullbackMap (G : Sheaf K A) :
         ((h.sheafPushforwardContinuous A J K).obj G)
 ```
 
-**`Stacks.sheafPullbackMap_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean#L240). The attribute's comment: “agreement of the sheaf and presheaf pullback maps”.
+**`Stacks.sheafPullbackMap_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean#L240). The attribute's comment: “agreement of the sheaf and presheaf pullback maps”.
 
 > **Stacks 06X8.** The underlying presheaf morphism of the sheaf pullback map is the presheaf
 > pullback map.
@@ -100,7 +100,7 @@ public theorem sheafPullbackMap_hom (G : Sheaf K A) :
     (sheafPullbackMap J K L f h G).hom = presheafPullbackMap f h G.obj
 ```
 
-**`Stacks.sheafPullbackMap_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean#L255). The attribute's comment: “naturality of the pullback map on sheaf direct images”.
+**`Stacks.sheafPullbackMap_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/PullbackMap.lean#L255). The attribute's comment: “naturality of the pullback map on sheaf direct images”.
 
 > **Stacks 06X8.** The sheaf pullback map is natural in the sheaf.
 
@@ -117,7 +117,7 @@ public theorem sheafPullbackMap_natural {G H : Sheaf K A} (α : G ⟶ H) :
 
 [Tag 06X9](https://stacks.math.columbia.edu/tag/06X9) in the Stacks Project.
 
-**`Stacks.RelativeCech.baseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeGeneralities.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeGeneralities.lean#L249). The attribute's comment: “part (1)”.
+**`Stacks.RelativeCech.baseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeGeneralities.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeGeneralities.lean#L249). The attribute's comment: “part (1)”.
 
 > **Stacks 06X9, part (1).** The canonical comparison is assembled from the
 > right-Kan-extension adjunction in each Čech degree.
@@ -133,7 +133,7 @@ public noncomputable def baseChangeMap
         (e ⋙ pX) g (e.op ⋙ F)
 ```
 
-**`Stacks.RelativeCech.isIso_baseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeGeneralities.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeGeneralities.lean#L264). The attribute's comment: “part (2)”.
+**`Stacks.RelativeCech.isIso_baseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeGeneralities.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeGeneralities.lean#L264). The attribute's comment: “part (2)”.
 
 > **Stacks 06X9, part (2).** If the two horizontal 1-morphisms `h` and `e` of the
 > square are equivalences, then the base-change morphism of part (1) is an
@@ -147,7 +147,7 @@ public theorem isIso_baseChangeMap
     IsIso (baseChangeMap pX f e g h α hα F)
 ```
 
-**`Stacks.RelativeCech.nonempty_complexIso_of_natIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeGeneralities.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeGeneralities.lean#L278). The attribute's comment: “part (3)”.
+**`Stacks.RelativeCech.nonempty_complexIso_of_natIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeGeneralities.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeGeneralities.lean#L278). The attribute's comment: “part (3)”.
 
 > **Stacks 06X9, part (3).** 2-isomorphic 1-morphisms `f, f' : 𝒰 ⟶ 𝒳` over the
 > base have isomorphic relative Čech complexes.
@@ -166,7 +166,7 @@ public theorem nonempty_complexIso_of_natIso
 
 [Tag 06XA](https://stacks.math.columbia.edu/tag/06XA) in the Stacks Project.
 
-**`Stacks.RelativeCech.nonempty_homotopy_extendedSheafComplex_id_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeHomotopy.lean, line 639](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeHomotopy.lean#L639).
+**`Stacks.RelativeCech.nonempty_homotopy_extendedSheafComplex_id_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeHomotopy.lean, line 639](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeHomotopy.lean#L639).
 
 > **Stacks 06XA.** If there is a `1`-morphism `s : 𝒳 ⥤ 𝒰` such that `f ∘ s` is `2`-isomorphic
 > to `id_𝒳` by a vertical `2`-isomorphism, then the extended relative Čech complex is homotopic to
@@ -184,7 +184,7 @@ public theorem nonempty_homotopy_extendedSheafComplex_id_zero
 
 [Tag 06XB](https://stacks.math.columbia.edu/tag/06XB) in the Stacks Project.
 
-**`Stacks.RelativeCech.nerveBaseChangeEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean#L479). The attribute's comment: “equivalence of Čech nerves”.
+**`Stacks.RelativeCech.nerveBaseChangeEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean#L479). The attribute's comment: “equivalence of Čech nerves”.
 
 > The Čech nerve of the base change of `f` to the slice over `p(x)` is, in each degree, the base
 > change of the Čech nerve of `f`.
@@ -198,7 +198,7 @@ public def nerveBaseChangeEquivalence (p : X ⥤ C) (f : U ⥤ X) (c : p.ChoiceO
         (c.sliceFunctor x) (Tuple.projection p f n)
 ```
 
-**`Stacks.RelativeCech.nerveBaseChangeEquivalence_functor_comp_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean#L490). The attribute's comment: “equivalence of Čech nerves”.
+**`Stacks.RelativeCech.nerveBaseChangeEquivalence_functor_comp_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean#L490). The attribute's comment: “equivalence of Čech nerves”.
 
 > The first projection of the base change of the Čech nerve corresponds, under the equivalence,
 > to the projection of the Čech nerve of the base change.
@@ -213,7 +213,7 @@ public theorem nerveBaseChangeEquivalence_functor_comp_fst (p : X ⥤ C) (f : U 
         (TwoFibreProductOver.fst (Over.forget V) (f ⋙ p) p (c.sliceFunctor x) f) n
 ```
 
-**`Stacks.RelativeCech.nerveBaseChangeEquivalence_functor_comp_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean, line 502](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean#L502). The attribute's comment: “equivalence of Čech nerves”.
+**`Stacks.RelativeCech.nerveBaseChangeEquivalence_functor_comp_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean, line 502](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean#L502). The attribute's comment: “equivalence of Čech nerves”.
 
 > The second projection of the base change of the Čech nerve corresponds, under the equivalence,
 > to the `1`-morphism of Čech nerves of `Stacks.Cech.nerveMap`.
@@ -233,7 +233,7 @@ public theorem nerveBaseChangeEquivalence_functor_comp_snd (p : X ⥤ C) (f : U 
         (isHomLift_psi_inv (Over.forget V) p (c.sliceFunctor x) f) n
 ```
 
-**`Stacks.RelativeCech.complexSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean, line 663](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean#L663). The attribute's comment: “isomorphism of complexes”.
+**`Stacks.RelativeCech.complexSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean, line 663](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean#L663). The attribute's comment: “isomorphism of complexes”.
 
 > The value at an object `x` of `𝒳` of the relative Čech complex of `f` is canonically the Čech
 > complex of the base change of `f` to the slice `𝒞/p(x)`, which represents `x`. This is an
@@ -251,7 +251,7 @@ public def complexSectionsIso (p : X ⥤ C) (f : U ⥤ X) (hp : p.IsFiberedInGro
         ((c.sliceFunctor x).op ⋙ F)
 ```
 
-**`Stacks.RelativeCech.complexSectionsIso_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean, line 695](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean#L695). The attribute's comment: “componentwise identification”.
+**`Stacks.RelativeCech.complexSectionsIso_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean, line 695](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean#L695). The attribute's comment: “componentwise identification”.
 
 > On a Čech tuple of the base-changed covering, the identification of complexes restricts a
 > relative section along the chosen pullback comparison of the tuple's target and then applies the
@@ -280,7 +280,7 @@ public theorem complexSectionsIso_π (p : X ⥤ C) (f : U ⥤ X) (hp : p.IsFiber
           (c.map a.target.hom x).op s)
 ```
 
-**`Stacks.RelativeCech.complexSectionsIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean, line 720](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean#L720). The attribute's comment: “naturality in the coefficient presheaf”.
+**`Stacks.RelativeCech.complexSectionsIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean, line 720](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSections.lean#L720). The attribute's comment: “naturality in the coefficient presheaf”.
 
 > The identification commutes in every degree with a morphism of coefficient presheaves; in
 > particular it is natural in the abelian presheaf.
@@ -302,7 +302,7 @@ public theorem complexSectionsIso_naturality (p : X ⥤ C) (f : U ⥤ X)
 
 [Tag 06XC](https://stacks.math.columbia.edu/tag/06XC) in the Stacks Project.
 
-**`Stacks.RelativeCech.isIso_baseChangeMap_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeBaseChange.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeBaseChange.lean#L371).
+**`Stacks.RelativeCech.isIso_baseChangeMap_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeBaseChange.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeBaseChange.lean#L371).
 
 > **Stacks 06XC.** Base change along a 2-fibre-product square induces an
 > isomorphism of relative Čech complexes of abelian presheaves. The comparison
@@ -340,7 +340,7 @@ public theorem isIso_baseChangeMap_of_isTwoFibreProduct
 
 [Tag 06XD](https://stacks.math.columbia.edu/tag/06XD) in the Stacks Project.
 
-**`Stacks.exact_of_exact_inverseImage_of_covering_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/ExactnessCriterion.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/ExactnessCriterion.lean#L56).
+**`Stacks.exact_of_exact_inverseImage_of_covering_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/ExactnessCriterion.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/ExactnessCriterion.lean#L56).
 
 > Exactness of a complex of abelian sheaves can be checked after pullback to
 > a fibred category whose image covers the target locally.
@@ -379,7 +379,7 @@ public theorem exact_of_exact_inverseImage_of_covering_image
 
 [Tag 06XE](https://stacks.math.columbia.edu/tag/06XE) in the Stacks Project.
 
-**`Stacks.RelativeCech.mono_sheafAugmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeExactness.lean, line 615](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeExactness.lean#L615). The attribute's comment: “exactness at the initial sheaf”.
+**`Stacks.RelativeCech.mono_sheafAugmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeExactness.lean, line 615](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeExactness.lean#L615). The attribute's comment: “exactness at the initial sheaf”.
 
 > **Stacks 06XE.** Exactness of the extended relative Čech complex at its initial term: if the
 > image of `f` covers every object of `𝒳` locally, the augmentation of an abelian sheaf into degree
@@ -397,7 +397,7 @@ public theorem mono_sheafAugmentation
     Mono (sheafAugmentation.{u, vᵤ, vₓ, wᵤ, wₓ, t} B S hS q f τ 𝓕)
 ```
 
-**`Stacks.RelativeCech.exact_sheafAugmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeExactness.lean, line 682](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeExactness.lean#L682). The attribute's comment: “exactness at degree zero”.
+**`Stacks.RelativeCech.exact_sheafAugmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeExactness.lean, line 682](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeExactness.lean#L682). The attribute's comment: “exactness at degree zero”.
 
 > **Stacks 06XE.** Exactness of the extended relative Čech complex in degree zero: if `f` is a
 > `1`-morphism of categories fibred in groupoids whose image covers every object of `𝒳` locally,
@@ -420,7 +420,7 @@ public theorem exact_sheafAugmentation
       (sheafAugmentation_comp_d.{u, vᵤ, vₓ, wᵤ, wₓ, t} B S hS q f τ 𝓕)).Exact
 ```
 
-**`Stacks.RelativeCech.exactAt_sheafComplex_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeExactness.lean, line 707](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeExactness.lean#L707). The attribute's comment: “exactness in positive degrees”.
+**`Stacks.RelativeCech.exactAt_sheafComplex_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeExactness.lean, line 707](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeExactness.lean#L707). The attribute's comment: “exactness in positive degrees”.
 
 > **Stacks 06XE.** Exactness of the extended relative Čech complex in every positive degree: if
 > `f` is a `1`-morphism of categories fibred in groupoids whose image covers every object of `𝒳`
@@ -445,7 +445,7 @@ public theorem exactAt_sheafComplex_succ
 
 [Tag 06XF](https://stacks.math.columbia.edu/tag/06XF) in the Stacks Project.
 
-**`Stacks.RelativeCech.exists_spectralSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequence/Abelian.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequence/Abelian.lean#L120).
+**`Stacks.RelativeCech.exists_spectralSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequence/Abelian.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequence/Abelian.lean#L120).
 
 > For a faithful `1`-morphism `f : 𝒰 ⥤ 𝒳` of categories fibred in groupoids over the big fppf
 > site of `S`, with equalizers in `𝒰` and image covering `𝒳` locally, there is a first-quadrant
@@ -478,7 +478,7 @@ public theorem exists_spectralSequenceData
 
 [Tag 06XG](https://stacks.math.columbia.edu/tag/06XG) in the Stacks Project.
 
-**`Stacks.RelativeCech.exists_moduleSpectralSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequenceModules/Abutment.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequenceModules/Abutment.lean#L484).
+**`Stacks.RelativeCech.exists_moduleSpectralSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequenceModules/Abutment.lean, line 484](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequenceModules/Abutment.lean#L484).
 
 > For a faithful 1-morphism `f : 𝒰 ⥤ 𝒳` of categories fibred in groupoids over `(Sch/S)_fppf`
 > with equalizers in `𝒰`, whose image covers `𝒳` locally in the `τ`-topology, every sheaf of
@@ -504,7 +504,7 @@ public theorem exists_moduleSpectralSequenceData
 
 [Tag 06XH](https://stacks.math.columbia.edu/tag/06XH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_singleton_fppf_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/LocalLifts.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/LocalLifts.lean#L55). The attribute's comment: “part (1): fppf-local lifts along a surjective flat morphism”.
+**`AlgebraicGeometry.Stack.exists_singleton_fppf_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/LocalLifts.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/LocalLifts.lean#L55). The attribute's comment: “part (1): fppf-local lifts along a surjective flat morphism”.
 
 > Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of categories fibred in groupoids over the big fppf site of
 > `S` which is representable by algebraic spaces, and assume that the structure morphism of the
@@ -533,7 +533,7 @@ theorem exists_singleton_fppf_lift
       Sieve.generate (Presieve.singleton a) ∈ fppfTopology B S hS 𝒴 y
 ```
 
-**`AlgebraicGeometry.Stack.exists_etaleLocalLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean#L291). The attribute's comment: “part (2): étale-local lifts along a surjective smooth morphism”.
+**`AlgebraicGeometry.Stack.exists_etaleLocalLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean#L291). The attribute's comment: “part (2): étale-local lifts along a surjective smooth morphism”.
 
 > Let `f : 𝒳 ⟶ 𝒴` be a surjective smooth 1-morphism of algebraic stacks. Then every object `y`
 > of `𝒴` admits an object `x` of `𝒳` and a morphism `f(x) ⟶ y` whose singleton generates a covering
@@ -549,7 +549,7 @@ theorem exists_etaleLocalLift {𝒳 𝒴 : AlgebraicStacks.{u, w} B S hS} (f : �
         BigFppfOver.associatedTopology B S hS 𝒴.val.val.p .etale y
 ```
 
-**`AlgebraicGeometry.Stack.exists_etaleCovering_fibre_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean#L305). The attribute's comment: “part (2): étale covering of the base with a lift over every arrow”.
+**`AlgebraicGeometry.Stack.exists_etaleCovering_fibre_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean#L305). The attribute's comment: “part (2): étale covering of the base with a lift over every arrow”.
 
 > Along a surjective smooth 1-morphism of algebraic stacks, every object of the base carries a
 > covering sieve of the étale topology over each of whose arrows the given object of the fibre
@@ -566,7 +566,7 @@ theorem exists_etaleCovering_fibre_lift {𝒳 𝒴 : AlgebraicStacks.{u, w} B S 
           𝒴.val.val.p.IsHomLift k α
 ```
 
-**`AlgebraicGeometry.Stack.exists_etaleLocalLift_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean#L390). The attribute's comment: “part (2) in full generality: étale-local lifts along a 1-morphism of CFGs”.
+**`AlgebraicGeometry.Stack.exists_etaleLocalLift_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean#L390). The attribute's comment: “part (2) in full generality: étale-local lifts along a 1-morphism of CFGs”.
 
 > Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of categories fibred in groupoids over the big fppf site of
 > `S` which is representable by algebraic spaces, and suppose that every algebraic space
@@ -597,7 +597,7 @@ theorem exists_etaleLocalLift_of_representable
         BigFppfOver.associatedTopology B S hS 𝒴.val.p .etale y
 ```
 
-**`AlgebraicGeometry.Stack.exists_etaleCovering_fibre_lift_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean#L418). The attribute's comment: “part (2) in full generality, family form: an étale covering of the base”.
+**`AlgebraicGeometry.Stack.exists_etaleCovering_fibre_lift_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/EtaleLocalLifts.lean#L418). The attribute's comment: “part (2) in full generality, family form: an étale covering of the base”.
 
 > Along a 1-morphism of categories fibred in groupoids representable by algebraic spaces whose
 > base change along every scheme-valued point is surjective and smooth, every object of the base
@@ -627,7 +627,7 @@ theorem exists_etaleCovering_fibre_lift_of_representable
           𝒴.val.p.IsHomLift k α
 ```
 
-**`AlgebraicGeometry.Stack.exists_fppfLocalLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FppfLocalLifts.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FppfLocalLifts.lean#L130). The attribute's comment: “fppf\_local\_lifts”.
+**`AlgebraicGeometry.Stack.exists_fppfLocalLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FppfLocalLifts.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FppfLocalLifts.lean#L130). The attribute's comment: “fppf\_local\_lifts”.
 
 > Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of categories fibred in groupoids over the big fppf site of
 > `S` which is representable by algebraic spaces, and suppose that every algebraic space
@@ -663,7 +663,7 @@ theorem exists_fppfLocalLift
 
 [Tag 072D](https://stacks.math.columbia.edu/tag/072D) in the Stacks Project.
 
-**`Stacks.RelativeCech.exists_pushforwardSpectralSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequence/Abelian.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequence/Abelian.lean#L429).
+**`Stacks.RelativeCech.exists_pushforwardSpectralSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequence/Abelian.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequence/Abelian.lean#L429).
 
 > Let `f : 𝒰 ⥤ 𝒳` and `g : 𝒳 ⥤ 𝒴` be `1`-morphisms of categories fibred in groupoids over the
 > big fppf site of `S`, with `f` faithful, with equalizers in `𝒰` and with the image of `f` covering
@@ -700,7 +700,7 @@ public theorem exists_pushforwardSpectralSequenceData
 
 [Tag 072E](https://stacks.math.columbia.edu/tag/072E) in the Stacks Project.
 
-**`Stacks.RelativeCech.nonempty_modulePushforwardSpectralSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/ModulePushforwardSpectralSequence.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/ModulePushforwardSpectralSequence.lean#L79).
+**`Stacks.RelativeCech.nonempty_modulePushforwardSpectralSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/ModulePushforwardSpectralSequence.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/ModulePushforwardSpectralSequence.lean#L79).
 
 > **Stacks 072E.** Let `f : 𝒰 ⥤ 𝒳` and `g : 𝒳 ⥤ 𝒴` be `1`-morphisms of categories fibred in
 > groupoids over the big fppf site of `S`, with `f` faithful, with equalizers in `𝒰` and with the
@@ -720,7 +720,7 @@ public theorem nonempty_modulePushforwardSpectralSequenceData
       B S hS p q r f g τ hp hq hr hf hg 𝓕)
 ```
 
-**`Stacks.RelativeCech.exists_modulePushforwardSpectralSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequence/Modules.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequence/Modules.lean#L325).
+**`Stacks.RelativeCech.exists_modulePushforwardSpectralSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequence/Modules.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/RelativeSpectralSequence/Modules.lean#L325).
 
 > Let `f : 𝒰 ⥤ 𝒳` and `g : 𝒳 ⥤ 𝒴` be `1`-morphisms of categories fibred in groupoids over the
 > big fppf site of `S`, with `f` faithful, with equalizers in `𝒰` and with the image of `f` covering
@@ -771,4 +771,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 96.19, Tag 06X7](https://stacks.math.columbia.edu/tag/06X7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

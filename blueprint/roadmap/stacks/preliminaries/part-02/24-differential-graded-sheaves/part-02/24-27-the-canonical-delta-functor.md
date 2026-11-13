@@ -8,13 +8,13 @@ proof: formalized
 
 # 24.27 The canonical delta-functor
 
-Section 24.27 of the Stacks Project, [Tag 0FTA](https://stacks.math.columbia.edu/tag/0FTA). 2 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 24.27 of the Stacks Project, [Tag 0FTA](https://stacks.math.columbia.edu/tag/0FTA). 2 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FTB, a lemma
 
 [Tag 0FTB](https://stacks.math.columbia.edu/tag/0FTB) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.coneDescHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean#L253). The attribute's comment: “the comparison q of the cone with the quotient”.
+**`SheafOfModules.DifferentialGradedModule.coneDescHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean#L253). The attribute's comment: “the comparison q of the cone with the quotient”.
 
 > **The comparison `q : C(a) ⟶ M`.** For a short complex `K --a--> L --b--> M` of right
 > differential graded `A`-modules, this is the morphism of differential graded modules out of the
@@ -28,7 +28,7 @@ def coneDescHom (S : ShortComplex (DifferentialGradedModule.{t, a, m} A)) :
     (conePackage S.f).cone ⟶ S.X₃
 ```
 
-**`SheafOfModules.DifferentialGradedModule.coneIncl_coneDescHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean#L269). The attribute's comment: “the comparison q restricts to b along the cone inclusion”.
+**`SheafOfModules.DifferentialGradedModule.coneIncl_coneDescHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean#L269). The attribute's comment: “the comparison q restricts to b along the cone inclusion”.
 
 > The comparison restricts along the cone's inclusion of the middle term to the second map of
 > the short complex: this is the equation `i ≫ q = b` that identifies `q` with the map of the
@@ -39,7 +39,7 @@ theorem coneIncl_coneDescHom (S : ShortComplex (DifferentialGradedModule.{t, a, 
     (conePackage S.f).inclusion ≫ coneDescHom S = S.g
 ```
 
-**`SheafOfModules.DifferentialGradedModule.quasiIso_coneDescHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean#L278). The attribute's comment: “q is a quasi-isomorphism”.
+**`SheafOfModules.DifferentialGradedModule.quasiIso_coneDescHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean#L278). The attribute's comment: “q is a quasi-isomorphism”.
 
 > **The comparison is a quasi-isomorphism** when the short complex is short exact. The
 > underlying complex of the cone is Mathlib's mapping cone, the underlying short complex of
@@ -51,7 +51,7 @@ theorem quasiIso_coneDescHom {S : ShortComplex (DifferentialGradedModule.{t, a, 
     (hS : S.ShortExact) : QuasiIso (coneDescHom S).toHomologicalComplex
 ```
 
-**`SheafOfModules.DifferentialGradedModule.moduleToDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean#L308). The attribute's comment: “the localization functor Mod(A,d) → D(A,d)”.
+**`SheafOfModules.DifferentialGradedModule.moduleToDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean#L308). The attribute's comment: “the localization functor Mod(A,d) → D(A,d)”.
 
 > The localization functor `Mod(A, d) ⥤ D(A, d)`: the quotient by homotopy of tag 0FS1 followed
 > by the localization at the quasi-isomorphisms of tag 0FT5.
@@ -61,7 +61,7 @@ abbrev moduleToDerivedCategory (A : DifferentialGradedAlgebra.{t, a} R) :
     DifferentialGradedModule.{t, a, m} A ⥤ derivedCategory.{t, a, m} A
 ```
 
-**`SheafOfModules.DifferentialGradedModule.isIso_moduleToDerivedCategory_map_coneDescHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean#L323). The attribute's comment: “q is invertible in D(A,d)”.
+**`SheafOfModules.DifferentialGradedModule.isIso_moduleToDerivedCategory_map_coneDescHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean#L323). The attribute's comment: “q is invertible in D(A,d)”.
 
 > **The comparison `q` becomes invertible in `D(A, d)`**, so that `q⁻¹` is available there.
 
@@ -71,7 +71,7 @@ theorem isIso_moduleToDerivedCategory_map_coneDescHom
     IsIso ((moduleToDerivedCategory A).map (coneDescHom S))
 ```
 
-**`SheafOfModules.DifferentialGradedModule.shortExactδ`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean#L341). The attribute's comment: “the connecting morphism δ = - p ∘ q⁻¹”.
+**`SheafOfModules.DifferentialGradedModule.shortExactδ`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean#L341). The attribute's comment: “the connecting morphism δ = - p ∘ q⁻¹”.
 
 > **The connecting morphism `δ = - p ∘ q⁻¹` of a short exact sequence of right differential
 > graded modules**, as a morphism of `D(A, d)` from the image of the third term to the image of the
@@ -91,7 +91,7 @@ def shortExactδ {S : ShortComplex (DifferentialGradedModule.{t, a, m} A)} (hS :
       (moduleToDerivedCategory A).obj (shift S.X₁)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.shortExactδ_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean#L352). The attribute's comment: “the connecting morphism δ = - p ∘ q⁻¹”.
+**`SheafOfModules.DifferentialGradedModule.shortExactδ_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeComparison.lean#L352). The attribute's comment: “the connecting morphism δ = - p ∘ q⁻¹”.
 
 > **Tag 0FTB, the formula for the connecting morphism**: it is `- p ∘ q⁻¹`, with `q` the
 > comparison of the cone with the third term — which restricts to the second map of the sequence
@@ -107,7 +107,7 @@ theorem shortExactδ_eq {S : ShortComplex (DifferentialGradedModule.{t, a, m} A)
             (moduleToDerivedCategory A).map (-(conePackage S.f).projection)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.shortExactδ_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeFunctoriality.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeFunctoriality.lean#L415). The attribute's comment: “the naturality of the connecting morphism δ in the short exact sequence”.
+**`SheafOfModules.DifferentialGradedModule.shortExactδ_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeFunctoriality.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedConeFunctoriality.lean#L415). The attribute's comment: “the naturality of the connecting morphism δ in the short exact sequence”.
 
 > **The naturality of the connecting morphism.** For a morphism `φ` of short exact
 > sequences of right differential graded `A`-modules, the square formed by the connecting
@@ -129,7 +129,7 @@ theorem shortExactδ_naturality {S₁ S₂ : ShortComplex (DifferentialGradedMod
       (moduleToDerivedCategory A).map φ.τ₃ ≫ shortExactδ h₂
 ```
 
-**`SheafOfModules.DifferentialGradedModule.shortExactδTranslate_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDeltaFunctorTriangle.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDeltaFunctorTriangle.lean#L151). The attribute's comment: “the distinguished-triangle axiom of the delta-functor”.
+**`SheafOfModules.DifferentialGradedModule.shortExactδTranslate_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDeltaFunctorTriangle.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDeltaFunctorTriangle.lean#L151). The attribute's comment: “the distinguished-triangle axiom of the delta-functor”.
 
 > For a short exact sequence `0 → K --a--> L --b--> M → 0` of right differential graded
 > modules, the triangle `(F K, F L, F M, F a, F b, δ)` with `δ = shortExactδTranslate hS` is
@@ -143,7 +143,7 @@ theorem shortExactδTranslate_distinguished
       distTriang (derivedCategory.{u, v, w} A)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.shortExactδTranslate_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDeltaFunctorTriangle.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDeltaFunctorTriangle.lean#L207). The attribute's comment: “naturality of the connecting morphism in maps of short exact sequences”.
+**`SheafOfModules.DifferentialGradedModule.shortExactδTranslate_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDeltaFunctorTriangle.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDeltaFunctorTriangle.lean#L207). The attribute's comment: “naturality of the connecting morphism in maps of short exact sequences”.
 
 > The connecting morphism `shortExactδTranslate` is natural in the short exact sequence.
 
@@ -155,7 +155,7 @@ theorem shortExactδTranslate_naturality
       (moduleToDerivedCategory A).map φ.τ₃ ≫ shortExactδTranslate h₂
 ```
 
-**`SheafOfModules.DifferentialGradedModule.deltaFunctorStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDeltaFunctorTriangle.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDeltaFunctorTriangle.lean#L220). The attribute's comment: “the canonical delta-functor: the localization Mod(A, d) to D(A, d) carries the natural structure of a delta-functor, with delta equal to -p after q inverse, unconditionally”.
+**`SheafOfModules.DifferentialGradedModule.deltaFunctorStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDeltaFunctorTriangle.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDeltaFunctorTriangle.lean#L220). The attribute's comment: “the canonical delta-functor: the localization Mod(A, d) to D(A, d) carries the natural structure of a delta-functor, with delta equal to -p after q inverse, unconditionally”.
 
 > The `δ`-functor structure on the localization functor `Mod(A, d) ⥤ D(A, d)`, with
 > `δ = - p ∘ q⁻¹` the connecting morphism `shortExactδTranslate`.
@@ -170,7 +170,7 @@ def deltaFunctorStructure :
 
 [Tag 0FTC](https://stacks.math.columbia.edu/tag/0FTC) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.isHomotopyColimit_moduleToDerivedCategory_obj_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedColimits.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedColimits.lean#L221).
+**`SheafOfModules.DifferentialGradedModule.isHomotopyColimit_moduleToDerivedCategory_obj_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedColimits.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedColimits.lean#L221).
 
 > **Stacks 0FTC.** *"Let `(C, O)` be a ringed site. Let `(A, d)` be a sheaf of differential
 > graded algebras on `(C, O)`. Let `Mₙ` be a system of differential graded `A`-modules. Then the
@@ -203,4 +203,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 24.27, Tag 0FTA](https://stacks.math.columbia.edu/tag/0FTA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

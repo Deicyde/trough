@@ -8,13 +8,13 @@ proof: formalized
 
 # 64.11 Filtrations and perfect complexes
 
-Section 64.11 of the Stacks Project, [Tag 03TJ](https://stacks.math.columbia.edu/tag/03TJ). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 64.11 of the Stacks Project, [Tag 03TJ](https://stacks.math.columbia.edu/tag/03TJ). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03TK, a lemma
 
 [Tag 03TK](https://stacks.math.columbia.edu/tag/03TK) in the Stacks Project.
 
-**`CategoryTheory.FilteredDerived.perfectDerivedTrace_eq_sum_grDF`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/FilteredTrace.lean, line 507](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/FilteredTrace.lean#L507). References: SGA 4½ Rapport (4.4), “(4.4.1)”; SGA 5 IIIB (5.6), “(5.6.5), F = A”.
+**`CategoryTheory.FilteredDerived.perfectDerivedTrace_eq_sum_grDF`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/FilteredTrace.lean, line 507](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/FilteredTrace.lean#L507). References: SGA 4½ Rapport (4.4), “(4.4.1)”; SGA 5 IIIB (5.6), “(5.6.5), F = A”.
 
 > **Stacks 03TK.** Trace is additive along the filtration of a perfect
 > filtered derived complex.
@@ -36,7 +36,7 @@ public theorem perfectDerivedTrace_eq_sum_grDF (R : Type u) [Ring R]
 
 [Tag 03TL](https://stacks.math.columbia.edu/tag/03TL) in the Stacks Project.
 
-**`CategoryTheory.FilteredDerived.projectiveModuleTrace_eq_sum_grP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/FilteredModuleTrace.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/FilteredModuleTrace.lean#L132). References: SGA 4½ Rapport (4.2), “(4.2.2) ungraded”; SGA 5 IIIB (5.6), “special case”.
+**`CategoryTheory.FilteredDerived.projectiveModuleTrace_eq_sum_grP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/FilteredModuleTrace.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/FilteredModuleTrace.lean#L132). References: SGA 4½ Rapport (4.2), “(4.2.2) ungraded”; SGA 5 IIIB (5.6), “special case”.
 
 > The trace of a filtered endomorphism of a finite projective module is the sum of the traces on
 > its associated graded pieces.
@@ -74,4 +74,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 64.11, Tag 03TJ](https://stacks.math.columbia.edu/tag/03TJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

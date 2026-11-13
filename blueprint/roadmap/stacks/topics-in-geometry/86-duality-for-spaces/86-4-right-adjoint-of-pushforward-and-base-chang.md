@@ -8,13 +8,13 @@ proof: formalized
 
 # 86.4 Right adjoint of pushforward and base change, I
 
-Section 86.4 of the Stacks Project, [Tag 0E5A](https://stacks.math.columbia.edu/tag/0E5A). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 86.4 of the Stacks Project, [Tag 0E5A](https://stacks.math.columbia.edu/tag/0E5A). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E5B, an equation
 
 [Tag 0E5B](https://stacks.math.columbia.edu/tag/0E5B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.TorIndependentBaseChangeSquare`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChange.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChange.lean#L71). The attribute's comment: “the Tor-independent cartesian square”.
+**`AlgebraicGeometry.Space.TorIndependentBaseChangeSquare`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChange.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChange.lean#L71). The attribute's comment: “the Tor-independent cartesian square”.
 
 > A cartesian square of algebraic spaces over `S` whose upper right and
 > lower left corners are Tor independent over the lower right corner.
@@ -24,7 +24,7 @@ structure TorIndependentBaseChangeSquare (B : BigFppfSite.{u}) (S : Scheme.{u})
     (hS : B.Contains S)
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedRightAdjointBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChange.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChange.lean#L178).
+**`AlgebraicGeometry.Space.quasicoherentDerivedRightAdjointBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChange.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointBaseChange.lean#L178).
 
 > For a cartesian square of algebraic spaces with `X` and `Y'` quasi-compact and
 > quasi-separated and `Y` quasi-separated, the transformation `Rg'_* ∘ a' ⟶ a ∘ Rg_*` between the
@@ -51,7 +51,7 @@ def quasicoherentDerivedRightAdjointBaseChange :
 
 [Tag 0E5C](https://stacks.math.columbia.edu/tag/0E5C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_quasicoherentDerivedRightAdjointBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean#L105).
+**`AlgebraicGeometry.Space.isIso_quasicoherentDerivedRightAdjointBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean#L105).
 
 > **Stacks 0E5C.**  For a cartesian square of quasi-compact quasi-separated algebraic spaces
 > with `X` and `Y'` Tor independent over `Y`, the base change transformation
@@ -66,7 +66,7 @@ theorem isIso_quasicoherentDerivedRightAdjointBaseChange :
 
 [Tag 0E5D](https://stacks.math.columbia.edu/tag/0E5D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.TorIndependentBaseChangeSquare.DualityData.twistedInverseImageBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChange.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChange.lean#L165).
+**`AlgebraicGeometry.Space.TorIndependentBaseChangeSquare.DualityData.twistedInverseImageBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChange.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChange.lean#L165).
 
 > The base change map `L(g')^* ∘ a ⟶ a' ∘ Lg^*` between twisted inverse
 > images, the composition of the unit of `Lg^* ⊣ Rg_*`, the inverse of the base change map
@@ -77,7 +77,7 @@ noncomputable def twistedInverseImageBaseChange (hbc : IsIso D.baseChange) :
     D.twistedInverseImage ⋙ D.pullbackG' ⟶ D.pullbackG ⋙ D.twistedInverseImage'
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedRightAdjointBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean#L117).
+**`AlgebraicGeometry.Space.quasicoherentDerivedRightAdjointBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean#L117).
 
 > **The base change map `L(g')^* ∘ a ⟶ a' ∘ Lg^*`** (Stacks 0E5D) of a cartesian square of
 > quasi-compact quasi-separated algebraic spaces with `X` and `Y'` Tor independent over `Y`:
@@ -97,7 +97,7 @@ def quasicoherentDerivedRightAdjointBaseChangeMap :
 
 [Tag 0E5E](https://stacks.math.columbia.edu/tag/0E5E) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedRightAdjointBaseChangeMap_vertical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean#L214).
+**`AlgebraicGeometry.Space.quasicoherentDerivedRightAdjointBaseChangeMap_vertical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean#L214).
 
 > **Stacks 0E5E.**  For two vertically stacked cartesian squares of quasi-compact
 > quasi-separated algebraic spaces, with `f` and `l` as well as `g` and `m` Tor independent, the
@@ -148,7 +148,7 @@ theorem quasicoherentDerivedRightAdjointBaseChangeMap_vertical (K) :
 
 [Tag 0E5F](https://stacks.math.columbia.edu/tag/0E5F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedRightAdjointBaseChangeMap_horizontal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean#L288).
+**`AlgebraicGeometry.Space.quasicoherentDerivedRightAdjointBaseChangeMap_horizontal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMap.lean#L288).
 
 > **Stacks 0E5F.**  For two horizontally composed cartesian squares of quasi-compact
 > quasi-separated algebraic spaces, with `f` and `h` as well as `f'` and `h'` Tor independent, the
@@ -176,7 +176,7 @@ theorem quasicoherentDerivedRightAdjointBaseChangeMap_horizontal (K) :
 
 [Tag 0E5G](https://stacks.math.columbia.edu/tag/0E5G) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedRightAdjointBaseChangeMap_grid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMapGrid.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMapGrid.lean#L276).
+**`AlgebraicGeometry.Space.quasicoherentDerivedRightAdjointBaseChangeMap_grid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMapGrid.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityBaseChangeMapGrid.lean#L276).
 
 > **Stacks 0E5G.**  Let `S` be a scheme and consider a commutative diagram
 >
@@ -231,4 +231,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 86.4, Tag 0E5A](https://stacks.math.columbia.edu/tag/0E5A)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

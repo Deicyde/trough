@@ -8,7 +8,7 @@ proof: formalized
 
 # 37.12 Smoothness over a Noetherian base
 
-Section 37.12 of the Stacks Project, [Tag 02HW](https://stacks.math.columbia.edu/tag/02HW). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.12 of the Stacks Project, [Tag 02HW](https://stacks.math.columbia.edu/tag/02HW). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02HX, a lemma
 
@@ -16,13 +16,13 @@ Section 37.12 of the Stacks Project, [Tag 02HW](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`InfinitesimalLifting.infinitesimal_lifting_criterion_for_smoothness`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/InfinitesimalLifting.lean#L2700), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean#L49) (StacksFrontier).
+- [`InfinitesimalLifting.infinitesimal_lifting_criterion_for_smoothness`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Smooth/InfinitesimalLifting.lean#L2699), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean#L49) (StacksFrontier).
 
 ## Tag 02HY, a lemma
 
 [Tag 02HY](https://stacks.math.columbia.edu/tag/02HY) in the Stacks Project.
 
-**`AlgebraicGeometry.smooth_iff_lifts_finiteType_smallExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean#L172). References: EGA IV (17.5.4); SGA 1 III (3.1), “(i)<=>(iii), Noetherian”.
+**`AlgebraicGeometry.smooth_iff_lifts_finiteType_smallExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean#L172). References: EGA IV (17.5.4); SGA 1 III (3.1), “(i)<=>(iii), Noetherian”.
 
 > A locally finite type morphism to a locally Noetherian scheme
 > is smooth exactly when it lifts against all Artinian small extensions whose map to the base is
@@ -45,7 +45,7 @@ public theorem smooth_iff_lifts_finiteType_smallExtensions
 
 [Tag 0A43](https://stacks.math.columbia.edu/tag/0A43) in the Stacks Project.
 
-**`AlgebraicGeometry.smoothAt_of_smooth_infinitesimalNeighbourhoods`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean#L339). The attribute's comment: “smooth”.
+**`AlgebraicGeometry.smoothAt_of_smooth_infinitesimalNeighbourhoods`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean#L339). The attribute's comment: “smooth”.
 
 > Let `f : X ⟶ S` be a morphism locally of finite type to a locally Noetherian scheme and let
 > `i : Z ⟶ S` be a closed subscheme. If the base change `Xₙ = Zₙ ×_S X ⟶ Zₙ` of `f` to the `n`th
@@ -61,7 +61,7 @@ public theorem smoothAt_of_smooth_infinitesimalNeighbourhoods
     InfinitesimalLifting.SmoothAt f x
 ```
 
-**`AlgebraicGeometry.etaleAt_of_etale_infinitesimalNeighbourhoods`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean#L386). The attribute's comment: “etale”.
+**`AlgebraicGeometry.etaleAt_of_etale_infinitesimalNeighbourhoods`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/SmoothnessOverNoetherianBase.lean#L386). The attribute's comment: “etale”.
 
 > Let `f : X ⟶ S` be a morphism locally of finite type to a locally Noetherian scheme and let
 > `i : Z ⟶ S` be a closed subscheme. If the base change `Xₙ = Zₙ ×_S X ⟶ Zₙ` of `f` to the `n`th
@@ -81,7 +81,7 @@ public theorem etaleAt_of_etale_infinitesimalNeighbourhoods
 
 [Tag 0D4G](https://stacks.math.columbia.edu/tag/0D4G) in the Stacks Project.
 
-**`AlgebraicGeometry.isFlatAt_of_flat_infinitesimalNeighbourhoods`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalNeighbourhood/Flatness.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalNeighbourhood/Flatness.lean#L380).
+**`AlgebraicGeometry.isFlatAt_of_flat_infinitesimalNeighbourhoods`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalNeighbourhood/Flatness.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalNeighbourhood/Flatness.lean#L380).
 
 > Flatness over a closed subscheme can be checked on every infinitesimal
 > neighbourhood of that subscheme when the schemes are locally Noetherian.
@@ -102,4 +102,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.12, Tag 02HW](https://stacks.math.columbia.edu/tag/02HW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

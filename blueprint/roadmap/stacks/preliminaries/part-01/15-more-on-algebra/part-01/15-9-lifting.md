@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.9 Lifting
 
-Section 15.9 of the Stacks Project, [Tag 07LW](https://stacks.math.columbia.edu/tag/07LW). 14 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.9 of the Stacks Project, [Tag 07LW](https://stacks.math.columbia.edu/tag/07LW). 14 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07LX, a lemma
 
 [Tag 07LX](https://stacks.math.columbia.edu/tag/07LX) in the Stacks Project.
 
-**`Algebra.exists_etale_bijective_quotientMap_isUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftUnitsIdempotents.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LiftUnitsIdempotents.lean#L111).
+**`Algebra.exists_etale_bijective_quotientMap_isUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftUnitsIdempotents.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LiftUnitsIdempotents.lean#L111).
 
 > **Stacks 07LX**.
 > For an ideal `I` of `A` and a unit `u` of `A ⧸ I`, there is an étale `A`-algebra `A'` such that
@@ -36,7 +36,7 @@ theorem Algebra.exists_etale_bijective_quotientMap_isUnit {A : Type u} [CommRing
 
 [Tag 07LY](https://stacks.math.columbia.edu/tag/07LY) in the Stacks Project.
 
-**`Algebra.exists_etale_bijective_quotientMap_isIdempotentElem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftUnitsIdempotents.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LiftUnitsIdempotents.lean#L69).
+**`Algebra.exists_etale_bijective_quotientMap_isIdempotentElem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftUnitsIdempotents.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LiftUnitsIdempotents.lean#L69).
 
 > **Stacks 07LY**.
 > For an ideal `I` of `A` and an idempotent `e` of `A ⧸ I`, there is an étale `A`-algebra `A'` such
@@ -58,7 +58,7 @@ theorem Algebra.exists_etale_bijective_quotientMap_isIdempotentElem {A : Type u}
 
 [Tag 07LZ](https://stacks.math.columbia.edu/tag/07LZ) in the Stacks Project.
 
-**`exists_etale_lift_of_finite_disjoint_open_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftUnitsIdempotents.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LiftUnitsIdempotents.lean#L343).
+**`exists_etale_lift_of_finite_disjoint_open_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftUnitsIdempotents.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LiftUnitsIdempotents.lean#L343).
 
 > **Stacks 07LZ.** A finite disjoint open covering of `Spec(A ⧸ I)` lifts to a finite disjoint
 > open covering after an étale extension `A → A'` inducing an isomorphism modulo `I`.
@@ -88,7 +88,7 @@ theorem exists_etale_lift_of_finite_disjoint_open_cover
 
 [Tag 07M0](https://stacks.math.columbia.edu/tag/07M0) in the Stacks Project.
 
-**`exists_isUnit_quotient_mk_and_etale_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/Locus.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/Locus.lean#L92).
+**`exists_isUnit_quotient_mk_and_etale_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/Locus.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/Locus.lean#L92).
 
 > **Stacks 07M0.** If `A → B` is étale at every prime containing `J`, there is an element
 > `g : B` whose image in `B ⧸ J` is a unit and such that `B` localized away from `g` is étale
@@ -107,7 +107,7 @@ theorem exists_isUnit_quotient_mk_and_etale_away
 
 [Tag 0ALH](https://stacks.math.columbia.edu/tag/0ALH) in the Stacks Project.
 
-**`exists_etale_lift_of_isCoprime_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftFactorization.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LiftFactorization.lean#L68).
+**`exists_etale_lift_of_isCoprime_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftFactorization.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LiftFactorization.lean#L68).
 
 > **Stacks 0ALH.** A factorization of a monic polynomial into coprime monic factors modulo an
 > ideal lifts to a factorization into monic polynomials over an étale algebra which induces an
@@ -140,7 +140,7 @@ theorem exists_etale_lift_of_isCoprime_factorization
 
 [Tag 07M1](https://stacks.math.columbia.edu/tag/07M1) in the Stacks Project.
 
-**`exists_etale_lift_of_isUnit_leadingCoeff_isCoprime_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftFactorization.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LiftFactorization.lean#L290).
+**`exists_etale_lift_of_isUnit_leadingCoeff_isCoprime_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftFactorization.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LiftFactorization.lean#L290).
 
 > **Stacks 07M1.** A coprime factorization modulo an ideal, with invertible leading coefficient
 > of the first factor, lifts to a factorization over an étale algebra which induces an isomorphism
@@ -173,7 +173,7 @@ theorem exists_etale_lift_of_isUnit_leadingCoeff_isCoprime_factorization
 
 [Tag 07M2](https://stacks.math.columbia.edu/tag/07M2) in the Stacks Project.
 
-**`counterexample_to_etale_lift_without_isUnit_leadingCoeff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftFactorization.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LiftFactorization.lean#L626).
+**`counterexample_to_etale_lift_without_isUnit_leadingCoeff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftFactorization.lean, line 626](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LiftFactorization.lean#L626).
 
 > **Stacks 07M2.** The monic polynomial `1` factors modulo `4` as `(2X² + 2X + 1)²`, with
 > coprime factors but non-invertible leading coefficient. Nevertheless there is no étale extension
@@ -224,7 +224,7 @@ theorem counterexample_to_etale_lift_without_isUnit_leadingCoeff :
 
 [Tag 07M3](https://stacks.math.columbia.edu/tag/07M3) in the Stacks Project.
 
-**`exists_quotient_eq_one_and_map_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Image.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Image.lean#L285).
+**`exists_quotient_eq_one_and_map_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Image.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Image.lean#L285).
 
 > **Stacks Tag 07M3.** If the closure of the image of `V(J)` under `Spec(φ)` is
 > disjoint from `V(I)`, then there is `f ∈ R` mapping to `1` in `R/I` with `φ(f) ∈ J`.
@@ -241,7 +241,7 @@ theorem exists_quotient_eq_one_and_map_mem {R S : Type*} [CommRing R] [CommRing 
 
 [Tag 09XG](https://stacks.math.columbia.edu/tag/09XG) in the Stacks Project.
 
-**`exists_monic_aeval_eq_zero_map_eq_of_sq_sub_mem_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Idempotents/Lifting.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Idempotents/Lifting.lean#L59).
+**`exists_monic_aeval_eq_zero_map_eq_of_sq_sub_mem_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Idempotents/Lifting.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Idempotents/Lifting.lean#L59).
 
 > Stacks Tag 09XG, Lemma 15.9.9.
 >
@@ -264,7 +264,7 @@ theorem exists_monic_aeval_eq_zero_map_eq_of_sq_sub_mem_map
 
 [Tag 07M4](https://stacks.math.columbia.edu/tag/07M4) in the Stacks Project.
 
-**`exists_etale_baseChange_idempotent_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftIdempotentsAndModules.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LiftIdempotentsAndModules.lean#L81).
+**`exists_etale_baseChange_idempotent_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftIdempotentsAndModules.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LiftIdempotentsAndModules.lean#L81).
 
 > **Stacks 07M4.** An idempotent of `B ⧸ IB`, for an integral `A`-algebra `B`, lifts to
 > `B ⊗[A] A'` after an étale base change `A → A'` which induces an isomorphism modulo `I`.
@@ -294,7 +294,7 @@ theorem exists_etale_baseChange_idempotent_lift
 
 [Tag 07M5](https://stacks.math.columbia.edu/tag/07M5) in the Stacks Project.
 
-**`exists_etale_baseChange_finite_projective_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftIdempotentsAndModules.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LiftIdempotentsAndModules.lean#L549).
+**`exists_etale_baseChange_finite_projective_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftIdempotentsAndModules.lean, line 549](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LiftIdempotentsAndModules.lean#L549).
 
 > **Stacks 07M5.** A finite projective module over `A ⧸ I` lifts after an étale base change
 > `A → A'` which induces an isomorphism `A ⧸ I ≃+* A' ⧸ I A'`.
@@ -321,14 +321,21 @@ theorem exists_etale_baseChange_finite_projective_lift
 
 [Tag 07EV](https://stacks.math.columbia.edu/tag/07EV) in the Stacks Project.
 
-**`cotangentComplex_of_isSymmetricAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/SymmetricAlgebra.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smooth/SymmetricAlgebra.lean#L212).
+**`cotangentComplex_of_isSymmetricAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/SymmetricAlgebra.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smooth/SymmetricAlgebra.lean#L225). The attribute's comment: “corrected: K ⊗\_A C → J/J² is a canonical surjection, compatible with the maps to ⊕ C dy\_j, and Ω\_\{C/A} = M ⊗\_A C; the isomorphism K ⊗\_A C ≅ J/J² claimed by Stacks fails”.
 
-> **Stacks 07EV.** Let `0 → K → Aᵐ → M → 0` be exact and let `C` be the symmetric algebra on
-> `M`. For the induced polynomial presentation of `C`, there is a canonical surjection
+> **Stacks 07EV, corrected.** Let `0 → K → Aᵐ → M → 0` be exact and let `C` be the symmetric
+> algebra on `M`. For the induced polynomial presentation of `C`, there is a canonical surjection
 > `C ⊗[A] K → P.Cotangent` compatible with the map into `Cᵐ`, and `Ω[C⁄A]` is canonically
 > `C ⊗[A] M`. The last three conditions pin down the canonical maps: polynomial differentials go to
 > the standard basis, `1 ⊗ₜ k` goes to the conormal class of its linear relation, and the
 > differential of a symmetric-algebra generator goes to `1 ⊗ₜ x`.
+>
+> Stacks states that `NL(α) = (K ⊗_A C → ⊕ C dy_j)`, i.e. that this surjection is an isomorphism.
+> That is false: `not_forall_cotangentEquiv_of_isSymmetricAlgebra` gives `A = ℤ`, `K = ℤ²`,
+> `i = 2`, `M = (ℤ/2)²`, where `y₂ ⊗ e₁ - y₁ ⊗ e₂` is a nonzero element of the kernel. What is true in
+> general is the statement here: the conormal module is a quotient of `K ⊗_A C` compatibly with the
+> maps to `⊕ C dy_j`, so `Ω_{C/A} = M ⊗_A C`. (When `M` is projective, `K → Aᵐ` splits and the map
+> is an isomorphism.)
 
 ```lean
 theorem cotangentComplex_of_isSymmetricAlgebra
@@ -355,11 +362,37 @@ theorem cotangentComplex_of_isSymmetricAlgebra
         ∀ x, eΩ (KaehlerDifferential.D A C (ι x)) = 1 ⊗ₜ x
 ```
 
+**`not_forall_cotangentEquiv_of_isSymmetricAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/SymmetricAlgebra.lean, line 472](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smooth/SymmetricAlgebra.lean#L472). The attribute's comment: “counterexample: for A = ℤ, K = ℤ², i = 2, M = (ℤ/2)², the canonical map K ⊗\_A C → J/J² has nonzero kernel, so J/J² is not K ⊗\_A C as claimed”.
+
+> **Stacks 07EV is false as printed.** The lemma asserts that for an exact sequence
+> `0 → K → Aᵐ → M → 0` and `C = Sym_A(M)` presented by `α : A[y_1, …, y_m] → C`, the conormal
+> module `J/J²` of `α` is `K ⊗_A C`, with `1 ⊗ k` corresponding to the class of the linear relation
+> `∑ i(k)_j y_j`. This fails for `A = ℤ`, `K = ℤ²`, `i = 2`, `M = (ℤ/2)²`: the element
+> `y₂ ⊗ e₁ - y₁ ⊗ e₂` of `C ⊗ K` is nonzero but goes to the class of `y₂ · 2y₁ - y₁ · 2y₂ = 0`.
+> So no `C`-linear isomorphism `C ⊗[A] K ≃ P.Cotangent` sends `1 ⊗ₜ k` to that class. The correct
+> statement is `cotangentComplex_of_isSymmetricAlgebra`, where the canonical map is surjective.
+
+```lean
+theorem not_forall_cotangentEquiv_of_isSymmetricAlgebra :
+    ¬ ∀ (A K M : Type) [CommRing A] [AddCommGroup K] [Module A K] [AddCommGroup M] [Module A M]
+      (m : ℕ) (i : K →ₗ[A] (Fin m → A)) (p : (Fin m → A) →ₗ[A] M),
+      Function.Injective i → Function.Exact i p → Function.Surjective p →
+      ∀ (C : Type) [CommRing C] [Algebra A C] (ι : M →ₗ[A] C), IsSymmetricAlgebra ι →
+      ∀ (α : MvPolynomial (Fin m) A →ₐ[A] C) (hα : Function.Surjective α),
+      (∀ j, α (MvPolynomial.X j) = ι (p ((Pi.basisFun A (Fin m)) j))) →
+      let P := Algebra.Extension.ofSurjective α hα
+      ∃ eK : C ⊗[A] K ≃ₗ[C] P.Cotangent,
+        ∀ k : K, ∃ hk : (∑ j : Fin m, MvPolynomial.C (σ := Fin m) (i k j) *
+            MvPolynomial.X (R := A) j) ∈ P.ker,
+          eK (1 ⊗ₜ k) = Algebra.Extension.Cotangent.mk
+            ⟨∑ j, MvPolynomial.C (i k j) * MvPolynomial.X j, hk⟩
+```
+
 ## Tag 07M6, a lemma
 
 [Tag 07M6](https://stacks.math.columbia.edu/tag/07M6) in the Stacks Project.
 
-**`symmetricAlgebra_smooth_iff_finite_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/SymmetricAlgebra.lean, line 470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smooth/SymmetricAlgebra.lean#L470). References: EGA 0 (19.3.2), “special case”.
+**`symmetricAlgebra_smooth_iff_finite_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smooth/SymmetricAlgebra.lean, line 657](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smooth/SymmetricAlgebra.lean#L657). References: EGA 0 (19.3.2), “special case”.
 
 > **Stacks 07M6.** The symmetric algebra of an `A`-module `M` is smooth over `A` if and only if
 > `M` is finite projective.
@@ -375,7 +408,7 @@ theorem symmetricAlgebra_smooth_iff_finite_projective
 
 [Tag 07M7](https://stacks.math.columbia.edu/tag/07M7) in the Stacks Project.
 
-**`exists_etale_lift_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftSmoothMap.lean, line 647](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LiftSmoothMap.lean#L647).
+**`exists_etale_lift_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LiftSmoothMap.lean, line 648](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LiftSmoothMap.lean#L648).
 
 > **Stacks 07M7.** A map from a smooth `A`-algebra `B` to `A ⧸ I` lifts to an étale
 > `A`-algebra which induces an isomorphism modulo the extension of `I`.
@@ -401,4 +434,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.9, Tag 07LW](https://stacks.math.columbia.edu/tag/07LW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

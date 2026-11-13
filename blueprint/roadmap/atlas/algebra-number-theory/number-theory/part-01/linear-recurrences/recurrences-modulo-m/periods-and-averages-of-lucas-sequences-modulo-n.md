@@ -7,7 +7,7 @@ statement: formalized
 
 # Periods and averages of Lucas sequences modulo n
 
-70 results, 21 proved and 49 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html).
+70 results, 21 proved and 49 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html).
 
 ## Period of a Lucas sequence modulo $m$
 
@@ -25,7 +25,7 @@ value has no meaning in the paper (for the Fibonacci sequence it is $0$).
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Section 1, equation (1.11).
 
-Formalized by `MetaMathlibExt.lucasUPeriod`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod).
+Formalized by `MetaMathlibExt.lucasUPeriod`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod).
 
 ## Restricted period of a Lucas sequence modulo $m$
 
@@ -40,7 +40,7 @@ $s = \rho_U(m)$ this $U_{s+1}$ is the multiplier $M_U(m)$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Section 1, equations (1.10) and (1.12).
 
-Formalized by `MetaMathlibExt.lucasURestrictedPeriod`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-urestricted-period).
+Formalized by `MetaMathlibExt.lucasURestrictedPeriod`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-urestricted-period).
 
 ## Moduli divisible by their Lucas period
 
@@ -53,7 +53,7 @@ $n$ divides $n$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Remark 2.2.
 
-Formalized by `MetaMathlibExt.lucasPeriodSet`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-set).
+Formalized by `MetaMathlibExt.lucasPeriodSet`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-set).
 
 ## Average set of a Lucas sequence
 
@@ -67,7 +67,7 @@ that is, those $n \in S(U)$ for which the average $(U_1 + \dots + U_n)/n$ is an 
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Remark 2.2.
 
-Formalized by `MetaMathlibExt.lucasAverageSet`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-average-set).
+Formalized by `MetaMathlibExt.lucasAverageSet`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-average-set).
 
 ## Integral averages of all recurrences
 
@@ -84,7 +84,7 @@ $w_{k+2} = a w_{k+1} + b w_k$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Section 2 (definition of `B_W(n)` and `A_W(n)`).
 
-Formalized by `MetaMathlibExt.lucasAllAveragesIntegral`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-all-averages-integral).
+Formalized by `MetaMathlibExt.lucasAllAveragesIntegral`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-all-averages-integral).
 
 ## Period of a Lucas sequence modulo 1
 
@@ -95,7 +95,7 @@ period $\pi_U(1)$ of $U$ modulo $1$ equals $1$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 1.4 (ix).
 
-Formalized by `MetaMathlibExt.lucasUPeriod_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-one).
+Formalized by `MetaMathlibExt.lucasUPeriod_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-one).
 
 ## Period of the Fibonacci sequence modulo 2
 
@@ -106,7 +106,7 @@ sequence with parameters $(P, Q) = (1, -1)$, has period $3$ modulo $2$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 1.4 (i) (`π_U(2) = 3` when `2 ∤ bD`).
 
-Formalized by `MetaMathlibExt.lucasUPeriod_fibonacciLucasParams_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-fibonacci-lucas-params-two).
+Formalized by `MetaMathlibExt.lucasUPeriod_fibonacciLucasParams_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-fibonacci-lucas-params-two).
 
 ## Restricted period of a Lucas sequence modulo 1
 
@@ -117,7 +117,7 @@ the least restricted period $\rho_U(1)$ of $U$ modulo $1$ equals $1$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 1.4 (ix).
 
-Formalized by `MetaMathlibExt.lucasURestrictedPeriod_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-urestricted-period-one).
+Formalized by `MetaMathlibExt.lucasURestrictedPeriod_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-urestricted-period-one).
 
 ## Restricted period of the Fibonacci sequence modulo 2
 
@@ -128,7 +128,7 @@ modulo $2$ of the Fibonacci sequence $F = U(1, -1)$ equals $3$ (note $F_3 = 2$).
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, equation (1.12).
 
-Formalized by `MetaMathlibExt.lucasURestrictedPeriod_fibonacciLucasParams_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-urestricted-period-fibonacci-lucas).
+Formalized by `MetaMathlibExt.lucasURestrictedPeriod_fibonacciLucasParams_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-urestricted-period-fibonacci-lucas).
 
 ## The Lucas period set contains $1$
 
@@ -140,7 +140,7 @@ $Q$ whose period $\pi_U(n)$ modulo $n$ divides $n$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Remark 2.2.
 
-Formalized by `MetaMathlibExt.one_mem_lucasPeriodSet`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#one-mem-lucas-period-set).
+Formalized by `MetaMathlibExt.one_mem_lucasPeriodSet`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#one-mem-lucas-period-set).
 
 ## The Lucas average set contains $1$
 
@@ -152,7 +152,7 @@ $S(U)$ with $n \mid U_1 + \dots + U_n$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Remark 2.2.
 
-Formalized by `MetaMathlibExt.one_mem_lucasAverageSet`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#one-mem-lucas-average-set).
+Formalized by `MetaMathlibExt.one_mem_lucasAverageSet`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#one-mem-lucas-average-set).
 
 ## Index-divisible set of a Lucas sequence
 
@@ -165,7 +165,7 @@ consists of the positive integers $n$ with $\gcd(n, Q) = 1$ and $n \mid U_n$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Remark 2.2.
 
-Formalized by `MetaMathlibExt.lucasIndexDivisibleSet`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-index-divisible-set).
+Formalized by `MetaMathlibExt.lucasIndexDivisibleSet`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-index-divisible-set).
 
 ## The index-divisible set of a Lucas sequence contains $1$
 
@@ -177,7 +177,7 @@ $n \mid U_n$, where $U = U(P, Q)$ is their Lucas sequence.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Remark 2.2.
 
-Formalized by `MetaMathlibExt.one_mem_lucasIndexDivisibleSet`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#one-mem-lucas-index-divisible-set).
+Formalized by `MetaMathlibExt.one_mem_lucasIndexDivisibleSet`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#one-mem-lucas-index-divisible-set).
 
 ## The average at $n = 1$ is integral
 
@@ -189,7 +189,7 @@ that is, the average $A_W(1) = w_1$ is an integer.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Section 2.
 
-Formalized by `MetaMathlibExt.lucasAllAveragesIntegral_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-all-averages-integral-one).
+Formalized by `MetaMathlibExt.lucasAllAveragesIntegral_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-all-averages-integral-one).
 
 ## Doubling formulas and divisibility for Lucas sequences
 
@@ -202,7 +202,7 @@ natural numbers $m$ and $n$ with $m \mid n$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Lemma 1.1.
 
-Stated but not proved: `MetaMathlibExt.lucasU_two_mul_and_lucasU_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-two-mul-and-lucas-u-dvd).
+Stated but not proved: `MetaMathlibExt.lucasU_two_mul_and_lucasU_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-two-mul-and-lucas-u-dvd).
 
 ## Periods of second-order recurrences modulo $m$
 
@@ -217,7 +217,7 @@ $w_{n + \rho(m)} \equiv U_{\rho(m) + 1} w_n \pmod m$ for every natural number $n
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.lucasUPeriod_isPeriod_of_secondOrder` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-is-period-of-second-order).
+Stated but not proved: `MetaMathlibExt.lucasUPeriod_isPeriod_of_secondOrder` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-is-period-of-second-order).
 
 ## Periods of Lucas sequences modulo a least common multiple
 
@@ -234,7 +234,7 @@ $\rho^i(\operatorname{lcm}(m, n)) = \operatorname{lcm}(\rho^i(m), \rho^i(n))$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 1.2.
 
-Stated but not proved: `MetaMathlibExt.lucasUPeriod_lcm` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-lcm).
+Stated but not proved: `MetaMathlibExt.lucasUPeriod_lcm` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-lcm).
 
 ## Closed forms of eight degenerate second-order recurrences
 
@@ -256,7 +256,7 @@ $(0, -1)$, $(1, -1)$, $(-1, -1)$, $(2, -1)$, $(-2, -1)$, $(1, 0)$ and $(-1, 0)$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 1.3.
 
-Stated but not proved: `MetaMathlibExt.degenerate_secondOrder_closedForms` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#degenerate-second-order-closed-forms).
+Stated but not proved: `MetaMathlibExt.degenerate_secondOrder_closedForms` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#degenerate-second-order-closed-forms).
 
 ## Sums of eight degenerate second-order recurrences
 
@@ -282,7 +282,7 @@ $(0, -1)$, $(1, -1)$, $(-1, -1)$, $(2, -1)$, $(-2, -1)$, $(1, 0)$ and $(-1, 0)$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.1.
 
-Stated but not proved: `MetaMathlibExt.degenerate_secondOrder_sums` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#degenerate-second-order-sums).
+Stated but not proved: `MetaMathlibExt.degenerate_secondOrder_sums` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#degenerate-second-order-sums).
 
 ## Sum formula for second-order recurrences
 
@@ -308,7 +308,7 @@ one has $\gcd(3, 7) = 1$ and $\pi_U(3) = 2$, but $K(2) = 40$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.2.
 
-Stated but not proved: `MetaMathlibExt.secondOrder_sum_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#second-order-sum-formula).
+Stated but not proved: `MetaMathlibExt.secondOrder_sum_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#second-order-sum-formula).
 
 ## Sum of the first $n$ terms of a Lucas sequence
 
@@ -322,7 +322,7 @@ $(Q - 1) B(n) = U_{n+1} - 1 - n$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 2.1.
 
-Stated but not proved: `MetaMathlibExt.lucasU_sum_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-sum-formula).
+Stated but not proved: `MetaMathlibExt.lucasU_sum_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-sum-formula).
 
 ## Sums of a second-order recurrence over whole periods
 
@@ -342,7 +342,7 @@ $U_1 + U_2 = 1 - 6 = -5$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 2.2.
 
-Stated but not proved: `MetaMathlibExt.secondOrder_sum_dvd_of_period_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#second-order-sum-dvd-of-period-dvd).
+Stated but not proved: `MetaMathlibExt.secondOrder_sum_dvd_of_period_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#second-order-sum-dvd-of-period-dvd).
 
 ## Multiplying a member of $S(U)$ by one of its prime factors
 
@@ -359,7 +359,7 @@ $w_{k+2} = a w_{k+1} + b w_k$ for all $k \ge 0$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.3.
 
-Stated but not proved: `MetaMathlibExt.prime_mul_mem_lucasPeriodSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#prime-mul-mem-lucas-period-set).
+Stated but not proved: `MetaMathlibExt.prime_mul_mem_lucasPeriodSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#prime-mul-mem-lucas-period-set).
 
 ## Multiplying a member of $S(U)$ by a number with no new prime factors
 
@@ -376,7 +376,7 @@ $w$ with $w_{k+2} = a w_{k+1} + b w_k$ for all $k \ge 0$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 2.3.
 
-Stated but not proved: `MetaMathlibExt.mul_mem_lucasPeriodSet_of_primeFactors` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#mul-mem-lucas-period-set-of-prime-factor).
+Stated but not proved: `MetaMathlibExt.mul_mem_lucasPeriodSet_of_primeFactors` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#mul-mem-lucas-period-set-of-prime-factor).
 
 ## Closure of the period set under lcm and products
 
@@ -401,7 +401,7 @@ In the paper's notation $a = P$ and $b = -Q$, so $P - Q - 1 = a + b - 1$ and $Q 
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.4.
 
-Stated but not proved: `MetaMathlibExt.lcm_mem_lucasPeriodSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lcm-mem-lucas-period-set).
+Stated but not proved: `MetaMathlibExt.lcm_mem_lucasPeriodSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lcm-mem-lucas-period-set).
 
 ## The average set is closed under lcm
 
@@ -419,7 +419,7 @@ every integer sequence $(w_k)_{k \ge 0}$ with $w_{k+2} = P w_{k+1} - Q w_k$ for 
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.5.
 
-Stated but not proved: `MetaMathlibExt.lcm_mem_lucasAverageSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lcm-mem-lucas-average-set).
+Stated but not proved: `MetaMathlibExt.lcm_mem_lucasAverageSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lcm-mem-lucas-average-set).
 
 ## Divisibility of Lucas sums when $P = 1$
 
@@ -431,7 +431,7 @@ $n$ coprime to $Q$, $n \mid U_1 + \cdots + U_n$ if and only if $U_{n+2} \equiv 1
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.6.
 
-Stated but not proved: `MetaMathlibExt.lucasU_sum_dvd_iff_of_p_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-sum-dvd-iff-of-p-eq-one).
+Stated but not proved: `MetaMathlibExt.lucasU_sum_dvd_iff_of_p_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-sum-dvd-iff-of-p-eq-one).
 
 ## Integral averages extend to least common multiples
 
@@ -451,7 +451,7 @@ In the paper's notation $a = P$ and $b = -Q$, and the recurrences are the sequen
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.7.
 
-Stated but not proved: `MetaMathlibExt.lucasAllAveragesIntegral_lcm` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-all-averages-integral-lcm).
+Stated but not proved: `MetaMathlibExt.lucasAllAveragesIntegral_lcm` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-all-averages-integral-lcm).
 
 ## Integral averages when $n$ divides $Q$
 
@@ -470,7 +470,7 @@ In the paper's notation $a = P$ and $b = -Q$, so $n \mid Q$ is the paper's $n \m
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.10.
 
-Stated but not proved: `MetaMathlibExt.lucasAllAveragesIntegral_of_dvd_q` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 449](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L449). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-all-averages-integral-of-dvd-q).
+Stated but not proved: `MetaMathlibExt.lucasAllAveragesIntegral_of_dvd_q` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 449](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L449). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-all-averages-integral-of-dvd-q).
 
 ## Non-integer period average of a Lucas sequence when $\gcd(n, a, b) > 1$
 
@@ -481,7 +481,7 @@ Theorem 2.13: for nondegenerate `U(a, b)` with `d = gcd(a, b) > 1` and
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.13.
 
-Stated but not proved: `MetaMathlibExt.not_dvd_lucasU_sum_of_gcd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 460](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L460). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#not-dvd-lucas-u-sum-of-gcd).
+Stated but not proved: `MetaMathlibExt.not_dvd_lucasU_sum_of_gcd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 460](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L460). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#not-dvd-lucas-u-sum-of-gcd).
 
 ## Lucas sums and powers of two for even $P$ and odd $Q$
 
@@ -495,7 +495,7 @@ divisible by $n$. For every $k \ge 0$, $2^k$ is the least element of $S$ divisib
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.14.
 
-Stated but not proved: `MetaMathlibExt.lucasU_sum_odd_of_even_p` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-sum-odd-of-even-p).
+Stated but not proved: `MetaMathlibExt.lucasU_sum_odd_of_even_p` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-sum-odd-of-even-p).
 
 ## Powers of two when $P \equiv 2$ and $-Q \equiv 1 \pmod 4$
 
@@ -519,7 +519,7 @@ $b \equiv 1 \pmod 4$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.15.
 
-Stated but not proved: `MetaMathlibExt.lucasAverageSet_two_pow_of_p_two_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 485](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L485). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-average-set-two-pow-of-p-two-mod-f).
+Stated but not proved: `MetaMathlibExt.lucasAverageSet_two_pow_of_p_two_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 485](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L485). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-average-set-two-pow-of-p-two-mod-f).
 
 ## Lucas sums not divisible by $2^k$ when $P \equiv 0$ and $-Q \equiv 1 \pmod 4$
 
@@ -539,7 +539,7 @@ $b \equiv 1 \pmod 4$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.16.
 
-Stated but not proved: `MetaMathlibExt.lucasU_sum_not_dvd_of_p_zero_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 504](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L504). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-sum-not-dvd-of-p-zero-mod-four).
+Stated but not proved: `MetaMathlibExt.lucasU_sum_not_dvd_of_p_zero_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 504](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L504). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-sum-not-dvd-of-p-zero-mod-four).
 
 ## Powers of two when $P \equiv 0$ and $-Q \equiv -1 \pmod 4$
 
@@ -563,7 +563,7 @@ $b \equiv -1 \pmod 4$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.17.
 
-Stated but not proved: `MetaMathlibExt.lucasAverageSet_two_pow_of_p_zero_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 520](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L520). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-average-set-two-pow-of-p-zero-mod).
+Stated but not proved: `MetaMathlibExt.lucasAverageSet_two_pow_of_p_zero_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 520](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L520). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-average-set-two-pow-of-p-zero-mod).
 
 ## Lucas sums not divisible by $2^k$ when $P \equiv 2$ and $-Q \equiv -1 \pmod 4$
 
@@ -583,7 +583,7 @@ $b \equiv -1 \pmod 4$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.18.
 
-Stated but not proved: `MetaMathlibExt.lucasU_sum_not_dvd_of_p_two_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 539](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L539). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-sum-not-dvd-of-p-two-mod-four).
+Stated but not proved: `MetaMathlibExt.lucasU_sum_not_dvd_of_p_two_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 539](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L539). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-sum-not-dvd-of-p-two-mod-four).
 
 ## Wyler's theorem on the period of a Lucas sequence
 
@@ -599,7 +599,7 @@ valuations of $h$ and $\rho(m)$ differ, and $\pi(m) = H$ when they are equal and
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 3.1.
 
-Stated but not proved: `MetaMathlibExt.lucasUPeriod_eq_lcm_orderOf` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 555](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L555). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-eq-lcm-order-of).
+Stated but not proved: `MetaMathlibExt.lucasUPeriod_eq_lcm_orderOf` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 555](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L555). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-eq-lcm-order-of).
 
 ## Period and restricted period of Lucas sequences with $Q = -1$
 
@@ -615,7 +615,7 @@ odd. Finally, $\pi(m)$ is even unless $m = 2$ and $P$ is odd.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 3.1.
 
-Stated but not proved: `MetaMathlibExt.lucasUPeriod_of_q_eq_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 581](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L581). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-of-q-eq-neg-one).
+Stated but not proved: `MetaMathlibExt.lucasUPeriod_of_q_eq_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 581](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L581). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-of-q-eq-neg-one).
 
 ## Period and restricted period of Lucas sequences with $Q = 1$
 
@@ -629,7 +629,7 @@ $\ell$ and some $i \ge 1$ and $\rho(m)$ is even, then $\pi(m) = 2\rho(m)$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 3.2.
 
-Stated but not proved: `MetaMathlibExt.lucasUPeriod_of_q_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 602](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L602). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-of-q-eq-one).
+Stated but not proved: `MetaMathlibExt.lucasUPeriod_of_q_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 602](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L602). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-of-q-eq-one).
 
 ## Primes dividing the discriminant when $Q = \pm 1$
 
@@ -649,7 +649,7 @@ one has $D = 12$ and $P \equiv 2 \pmod 2$, but $\pi_U(4) = 4$ and $\rho_U(4) = 2
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 3.2.
 
-Stated but not proved: `MetaMathlibExt.lucasUPeriod_prime_dvd_discr` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 619](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L619). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-prime-dvd-discr).
+Stated but not proved: `MetaMathlibExt.lucasUPeriod_prime_dvd_discr` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 619](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L619). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-prime-dvd-discr).
 
 ## Lucas sequences with $P = Q + 1$
 
@@ -664,7 +664,7 @@ every positive integer $n$ with $\gcd(n, Q) = 1$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 3.3.
 
-Stated but not proved: `MetaMathlibExt.lucasUPeriod_eq_restricted_of_p_eq_q_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 638](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L638). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-eq-restricted-of-p-eq-q-ad).
+Stated but not proved: `MetaMathlibExt.lucasUPeriod_eq_restricted_of_p_eq_q_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 638](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L638). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-eq-restricted-of-p-eq-q-ad).
 
 ## Lucas sequences with $P = -Q - 1$
 
@@ -683,7 +683,7 @@ The hypothesis $n > 1$ in the odd case is needed: for $n = 1$ one has $\rho(1) =
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 3.4.
 
-Stated but not proved: `MetaMathlibExt.lucasUPeriod_of_p_eq_neg_q_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 659](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L659). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-of-p-eq-neg-q-sub-one).
+Stated but not proved: `MetaMathlibExt.lucasUPeriod_of_p_eq_neg_q_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 659](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L659). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-of-p-eq-neg-q-sub-one).
 
 ## Prime-power divisibility of Lucas sums
 
@@ -697,7 +697,7 @@ $\ell^i \mid U_1 + U_2 + \cdots + U_{2m\ell^i}$ for all $m \ge 1$ and $i \ge 1$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Lemma 2.1.
 
-Stated but not proved: `MetaMathlibExt.lucasU_sum_two_mul_prime_pow_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 682](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L682). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-sum-two-mul-prime-pow-dvd).
+Stated but not proved: `MetaMathlibExt.lucasU_sum_two_mul_prime_pow_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 682](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L682). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-sum-two-mul-prime-pow-dvd).
 
 ## Members of $S(U)$ of the form $2^i 3^j$
 
@@ -719,7 +719,7 @@ The paper's condition $\operatorname{rad}(n) \mid 6$ is implied by these forms o
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.12.
 
-Stated but not proved: `MetaMathlibExt.mem_lucasPeriodSet_of_two_three_smooth` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 702](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L702). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#mem-lucas-period-set-of-two-three-smooth).
+Stated but not proved: `MetaMathlibExt.mem_lucasPeriodSet_of_two_three_smooth` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 702](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L702). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#mem-lucas-period-set-of-two-three-smooth).
 
 ## Odd moduli in the average set when $P \equiv 2$ and $Q \equiv 1$
 
@@ -738,7 +738,7 @@ and $b \equiv -1 \pmod{\operatorname{rad}(n)}$, and $P^2 - 4Q$ is the discrimina
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.19.
 
-Stated but not proved: `MetaMathlibExt.isLeast_lucasAverageSet_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 726](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L726). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#is-least-lucas-average-set-of-odd).
+Stated but not proved: `MetaMathlibExt.isLeast_lucasAverageSet_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 726](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L726). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#is-least-lucas-average-set-of-odd).
 
 ## Least multiples of $2^k n_1$ in the period set for even $P$
 
@@ -761,7 +761,7 @@ is $n$, and $n$ is integral for all recurrences.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.20.
 
-Stated but not proved: `MetaMathlibExt.lucasPeriodSet_isLeast_of_even_p` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 746](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L746). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-set-is-least-of-even-p).
+Stated but not proved: `MetaMathlibExt.lucasPeriodSet_isLeast_of_even_p` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 746](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L746). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-set-is-least-of-even-p).
 
 ## Multiples of $6$ in the average set when $P \equiv 1$ and $Q \equiv 1$
 
@@ -779,7 +779,7 @@ $b \equiv -1 \pmod{\operatorname{rad}(n)}$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.21.
 
-Stated but not proved: `MetaMathlibExt.isLeast_lucasAverageSet_of_six_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 767](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L767). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#is-least-lucas-average-set-of-six-dvd).
+Stated but not proved: `MetaMathlibExt.isLeast_lucasAverageSet_of_six_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 767](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L767). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#is-least-lucas-average-set-of-six-dvd).
 
 ## Multiples of $3$ in the average set when $P \equiv -1$ and $Q \equiv 1$
 
@@ -797,7 +797,7 @@ $b \equiv -1 \pmod{\operatorname{rad}(n)}$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.22.
 
-Stated but not proved: `MetaMathlibExt.isLeast_lucasAverageSet_of_three_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 779](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L779). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#is-least-lucas-average-set-of-three-dvd).
+Stated but not proved: `MetaMathlibExt.isLeast_lucasAverageSet_of_three_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 779](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L779). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#is-least-lucas-average-set-of-three-dvd).
 
 ## Multiples of $4$ in the average set when $P \equiv 0$ and $Q \equiv 1$
 
@@ -816,7 +816,7 @@ $b \equiv -1 \pmod{4 \operatorname{rad}(n_1)}$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.23.
 
-Stated but not proved: `MetaMathlibExt.isLeast_lucasAverageSet_of_four_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 792](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L792). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#is-least-lucas-average-set-of-four-dvd).
+Stated but not proved: `MetaMathlibExt.isLeast_lucasAverageSet_of_four_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 792](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L792). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#is-least-lucas-average-set-of-four-dvd).
 
 ## Period set equals index-divisible set for nondegenerate $U(P, Q)$ with $P = Q + 1$
 
@@ -831,7 +831,7 @@ positive integers $n$ with $\gcd(n, Q) = 1$ and $n \mid U_n$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 4.2.
 
-Stated but not proved: `MetaMathlibExt.lucasPeriodSet_eq_lucasIndexDivisibleSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 805](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L805). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-set-eq-lucas-index-divisibl).
+Stated but not proved: `MetaMathlibExt.lucasPeriodSet_eq_lucasIndexDivisibleSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 805](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L805). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-set-eq-lucas-index-divisibl).
 
 ## Closing of the period orbit
 
@@ -850,7 +850,7 @@ orbit of $n$ closes at some step.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Remark 2.4.
 
-Formalized by `MetaMathlibExt.LucasPeriodOrbitCloses`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 815](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L815). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-closes).
+Formalized by `MetaMathlibExt.LucasPeriodOrbitCloses`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 815](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L815). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-closes).
 
 ## The orbit index $\omega(n)$
 
@@ -865,7 +865,7 @@ $j \le k$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Remark 2.4.
 
-Formalized by `MetaMathlibExt.lucasPeriodOrbitIndex`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 824](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L824). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-index).
+Formalized by `MetaMathlibExt.lucasPeriodOrbitIndex`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 824](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L824). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-index).
 
 ## The orbit lcm $L(n)$
 
@@ -882,7 +882,7 @@ It is meaningful when $\omega(n)$ exists.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.8, equation (2.14).
 
-Formalized by `MetaMathlibExt.lucasPeriodOrbitLcm`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 833](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L833). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-lcm).
+Formalized by `MetaMathlibExt.lucasPeriodOrbitLcm`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 833](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L833). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-lcm).
 
 ## The period orbit of $1$ closes at step $0$
 
@@ -895,7 +895,7 @@ $\pi_U^1(1) = \pi_U^0(1)$, that is, $\pi_U(1) = 1$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Remark 2.4 and Theorem 1.4 (ix).
 
-Formalized by `MetaMathlibExt.lucasPeriodOrbitCloses_one_zero`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 841](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L841). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-closes-one-zero).
+Formalized by `MetaMathlibExt.lucasPeriodOrbitCloses_one_zero`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 841](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L841). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-closes-one-zero).
 
 ## The orbit index of $1$ is zero
 
@@ -906,7 +906,7 @@ of $1$ is $\omega(1) = 0$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Remark 2.4.
 
-Formalized by `MetaMathlibExt.lucasPeriodOrbitIndex_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 851](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L851). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-index-one).
+Formalized by `MetaMathlibExt.lucasPeriodOrbitIndex_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 851](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L851). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-index-one).
 
 ## The orbit lcm of $1$ is $1$
 
@@ -920,7 +920,7 @@ $\omega(n)$ of $n$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, equation (2.14).
 
-Formalized by `MetaMathlibExt.lucasPeriodOrbitLcm_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 859](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L859). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-lcm-one).
+Formalized by `MetaMathlibExt.lucasPeriodOrbitLcm_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 859](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L859). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-lcm-one).
 
 ## $n$ divides $L(n)$
 
@@ -936,7 +936,7 @@ $L(n) = \operatorname{lcm}(\pi_U^0(n), \pi_U^1(n), \dots, \pi_U^{\omega(n)}(n))$
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Remark 2.6.
 
-Formalized by `MetaMathlibExt.dvd_lucasPeriodOrbitLcm`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 867](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L867). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#dvd-lucas-period-orbit-lcm).
+Formalized by `MetaMathlibExt.dvd_lucasPeriodOrbitLcm`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 867](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L867). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#dvd-lucas-period-orbit-lcm).
 
 ## Periods of a Lucas sequence modulo a prime
 
@@ -973,7 +973,7 @@ hypothesis $p \nmid 2QD$ of (i).
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 1.4.
 
-Stated but not proved: `MetaMathlibExt.lucasUPeriod_prime_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 889](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L889). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-prime-properties).
+Stated but not proved: `MetaMathlibExt.lucasUPeriod_prime_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 889](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L889). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-prime-properties).
 
 ## Uniform distribution of Lucas sequences modulo primes dividing the discriminant
 
@@ -997,7 +997,7 @@ valuation of $P^2 - Q$ is $d \ge 2$, then $\rho(3^i) = 3^{\max(i + 1 - d, 1)}$ f
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 1.5.
 
-Stated but not proved: `MetaMathlibExt.lucasU_uniform_of_prime_dvd_discr` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 946](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L946). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-uniform-of-prime-dvd-discr).
+Stated but not proved: `MetaMathlibExt.lucasU_uniform_of_prime_dvd_discr` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 946](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L946). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-u-uniform-of-prime-dvd-discr).
 
 ## Least multiples in $S(U)$ and the orbit lcm $L(n)$
 
@@ -1023,7 +1023,7 @@ the paper's hypothesis $\gcd(n, b) = 1$ is the case $i = 0$ of the closing condi
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.8.
 
-Stated but not proved: `MetaMathlibExt.isLeast_lucasPeriodSet_eq_lucasPeriodOrbitLcm` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 988](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L988). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#is-least-lucas-period-set-eq-lucas-perio).
+Stated but not proved: `MetaMathlibExt.isLeast_lucasPeriodSet_eq_lucasPeriodOrbitLcm` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 988](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L988). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#is-least-lucas-period-set-eq-lucas-perio).
 
 ## Divisibility and multiplicativity of the orbit lcm
 
@@ -1050,7 +1050,7 @@ implicit in the paper's statements about $L(g)$ and $L(rs)$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 2.4.
 
-Stated but not proved: `MetaMathlibExt.lucasPeriodOrbitLcm_dvd_of_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1008](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1008). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-lcm-dvd-of-dvd).
+Stated but not proved: `MetaMathlibExt.lucasPeriodOrbitLcm_dvd_of_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1008](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1008). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-lcm-dvd-of-dvd).
 
 ## The orbit lcms $L(2)$ and $L(3)$
 
@@ -1089,7 +1089,7 @@ $\pi_U(3) = 3$, so $L(3) = 3$, in line with (iv).
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.9.
 
-Stated but not proved: `MetaMathlibExt.lucasPeriodOrbitLcm_two_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1041](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1041). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-lcm-two-three).
+Stated but not proved: `MetaMathlibExt.lucasPeriodOrbitLcm_two_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1041](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1041). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-orbit-lcm-two-three).
 
 ## Least multiples in $S(U)$ for nondegenerate $U(P, Q)$
 
@@ -1120,7 +1120,7 @@ is $1$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.11.
 
-Stated but not proved: `MetaMathlibExt.exists_lucasPeriodSet_multiple` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1090](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1090). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#exists-lucas-period-set-multiple).
+Stated but not proved: `MetaMathlibExt.exists_lucasPeriodSet_multiple` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1090](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1090). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#exists-lucas-period-set-multiple).
 
 ## Integral averages for $U(P, -1)$
 
@@ -1144,7 +1144,7 @@ follow from the displayed forms.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 2.5.
 
-Stated but not proved: `MetaMathlibExt.mem_lucasAverageSet_of_q_eq_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#mem-lucas-average-set-of-q-eq-neg-one).
+Stated but not proved: `MetaMathlibExt.mem_lucasAverageSet_of_q_eq_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#mem-lucas-average-set-of-q-eq-neg-one).
 
 ## Integral averages for $U(P, 1)$
 
@@ -1170,7 +1170,7 @@ $a \ne 0, \pm 1, \pm 2$ in (i) is nondegeneracy.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 2.6.
 
-Stated but not proved: `MetaMathlibExt.mem_lucasAverageSet_of_q_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#mem-lucas-average-set-of-q-eq-one).
+Stated but not proved: `MetaMathlibExt.mem_lucasAverageSet_of_q_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#mem-lucas-average-set-of-q-eq-one).
 
 ## Least period and average multiples for $Q = -1$
 
@@ -1210,7 +1210,7 @@ $3$ is $12$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.24.
 
-Stated but not proved: `MetaMathlibExt.lucasPeriodSet_of_q_eq_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-set-of-q-eq-neg-one).
+Stated but not proved: `MetaMathlibExt.lucasPeriodSet_of_q_eq_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-set-of-q-eq-neg-one).
 
 ## Least period and average multiples for $Q = 1$
 
@@ -1243,7 +1243,7 @@ it does not exist when $n$ is even or $\gcd(n, P + 2) > 1$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.25.
 
-Stated but not proved: `MetaMathlibExt.lucasPeriodSet_of_q_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-set-of-q-eq-one).
+Stated but not proved: `MetaMathlibExt.lucasPeriodSet_of_q_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-period-set-of-q-eq-one).
 
 ## Period and average sets when $P = Q + 1$
 
@@ -1273,7 +1273,7 @@ $\pi_U(3) = 3$ and $3 \mid U_1 + U_2 + U_3 = 1 + 8 + 57 = 66$, so $3 \in S'(U)$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.26.
 
-Stated but not proved: `MetaMathlibExt.lucasAverageSet_of_p_eq_q_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-average-set-of-p-eq-q-add-one).
+Stated but not proved: `MetaMathlibExt.lucasAverageSet_of_p_eq_q_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-average-set-of-p-eq-q-add-one).
 
 ## Period and average sets when $P = -Q - 1$
 
@@ -1298,7 +1298,7 @@ conditions $a \ne 0, -1, -2$ follow from nondegeneracy.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.27.
 
-Stated but not proved: `MetaMathlibExt.lucasAverageSet_of_p_eq_neg_q_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-average-set-of-p-eq-neg-q-sub-one).
+Stated but not proved: `MetaMathlibExt.lucasAverageSet_of_p_eq_neg_q_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-average-set-of-p-eq-neg-q-sub-one).
 
 ## Smyth's description of the indices $n$ with $n \mid U_n$
 
@@ -1319,7 +1319,7 @@ $T(U)$; and if $D = 1$, then $T(U) = \{1\}$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 4.1.
 
-Stated but not proved: `MetaMathlibExt.mem_lucasIndexDivisibleSet_iff_chain` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#mem-lucas-index-divisible-set-iff-chain).
+Stated but not proved: `MetaMathlibExt.mem_lucasIndexDivisibleSet_iff_chain` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#mem-lucas-index-divisible-set-iff-chain).
 
 ## Period quotients and seeds of $S(U)$
 
@@ -1348,7 +1348,7 @@ $n_2 = 1378$, while $\pi_U(1378) = 78 \nmid 1378$.
 
 - Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 4.3.
 
-Stated but not proved: `MetaMathlibExt.lucasUPeriod_quotient_dvd_and_seed_mem_lucasPeriodSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-quotient-dvd-and-seed-mem).
+Stated but not proved: `MetaMathlibExt.lucasUPeriod_quotient_dvd_and_seed_mem_lucasPeriodSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean, line 1356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasPeriodAverageWanted.lean#L1356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html#lucas-uperiod-quotient-dvd-and-seed-mem).
 
 ## Depends on
 
@@ -1357,4 +1357,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Periods and averages of Lucas sequences modulo n](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/periods-and-averages-of-lucas-sequences-modulo-n)

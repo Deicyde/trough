@@ -2,8 +2,13 @@
 navigation: transparent
 ---
 
-# 52.7 The theorem on formal… to 52.9 Algebraization of local…
+# 52.15 The completion functor to 52.22 Algebraization of…
 
-- [52.7 The theorem on formal functions](52-7-the-theorem-on-formal-functions.md)
-- [52.8 Algebraization of local cohomology, I](52-8-algebraization-of-local-cohomology-i.md)
-- [52.9 Algebraization of local cohomology, II](52-9-algebraization-of-local-cohomology-ii.md)
+- [52.15 The completion functor](52-15-the-completion-functor.md)
+- [52.16 Algebraization of coherent formal modules, I](52-16-algebraization-of-coherent-formal-modules.md)
+- [52.17 Algebraization of coherent formal modules, II](52-17-algebraization-of-coherent-formal-modules.md)
+- [52.18 A distance function](52-18-a-distance-function.md)
+- [52.19 Algebraization of coherent formal modules, III](52-19-algebraization-of-coherent-formal-modules.md)
+- [52.20 Algebraization of coherent formal modules, IV](52-20-algebraization-of-coherent-formal-modules.md)
+- [52.21 Improving coherent formal modules](52-21-improving-coherent-formal-modules.md)
+- [52.22 Algebraization of coherent formal modules, V](52-22-algebraization-of-coherent-formal-modules.md)

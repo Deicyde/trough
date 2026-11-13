@@ -7,7 +7,7 @@ statement: formalized
 
 # Divisors of the middle binomial coefficient
 
-7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html).
+7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html).
 
 ## Valuation of a product of consecutive integers
 
@@ -23,7 +23,7 @@ is stated also for $m = 0$ and $k = 0$.
 
 - Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.padicValNat_factorial_div_factorial_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html#padic-val-nat-factorial-div-factorial-le).
+Stated but not proved: `MetaMathlibExt.padicValNat_factorial_div_factorial_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html#padic-val-nat-factorial-div-factorial-le).
 
 ## Valuations of the middle binomial coefficient on a set of density one
 
@@ -39,7 +39,7 @@ $3 < p < 2 \log m$.
 
 - Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.exists_density_one_padicValNat_centralBinom_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html#exists-density-one-padic-val-nat-central).
+Stated but not proved: `MetaMathlibExt.exists_density_one_padicValNat_centralBinom_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html#exists-density-one-padic-val-nat-central).
 
 ## Products of consecutive integers dividing the middle binomial coefficient
 
@@ -54,7 +54,7 @@ The constant $1 / \log 4$ is the threshold imposed by the prime $2$.
 
 - Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.factorial_div_factorial_dvd_centralBinom_density_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html#factorial-div-factorial-dvd-central-bino).
+Stated but not proved: `MetaMathlibExt.factorial_div_factorial_dvd_centralBinom_density_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html#factorial-div-factorial-dvd-central-bino).
 
 ## Short runs of consecutive integers have small valuations almost always
 
@@ -67,7 +67,7 @@ $\frac{1}{2} \log m < k < \log m$ and every prime $p \le 2k$ has natural density
 
 - Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.max_padicValNat_add_le_density_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html#max-padic-val-nat-add-le-density-one).
+Stated but not proved: `MetaMathlibExt.max_padicValNat_add_le_density_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html#max-padic-val-nat-add-le-density-one).
 
 ## Small valuations of the middle binomial coefficient are rare
 
@@ -83,7 +83,7 @@ For large $x$ every prime $p \le 2K$ is at most $x$, so $D_p \ge 2$ and $\log D_
 
 - Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.card_padicValNat_centralBinom_le_isLittleO` is written with `theorem_wanted` in [WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html#card-padic-val-nat-central-binom-le-is-l).
+Stated but not proved: `MetaMathlibExt.card_padicValNat_centralBinom_le_isLittleO` is written with `theorem_wanted` in [WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html#card-padic-val-nat-central-binom-le-is-l).
 
 ## Large valuations in short runs of consecutive integers are rare
 
@@ -100,7 +100,7 @@ For large $x$ every prime $p < 2K$ is at most $x$, so $D_p \ge 2$ and $\log D_p 
 
 - Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.card_max_padicValNat_add_gt_isLittleO` is written with `theorem_wanted` in [WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html#card-max-padic-val-nat-add-gt-is-little).
+Stated but not proved: `MetaMathlibExt.card_max_padicValNat_add_gt_isLittleO` is written with `theorem_wanted` in [WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html#card-max-padic-val-nat-add-gt-is-little).
 
 ## Binomial coefficients dividing the middle binomial coefficient
 
@@ -112,7 +112,7 @@ $1 \le k \le \exp(0.8 \sqrt{\log m})$ has natural density $1$.
 
 - Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.choose_dvd_centralBinom_density_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html#choose-dvd-central-binom-density-one).
+Stated but not proved: `MetaMathlibExt.choose_dvd_centralBinom_density_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MiddleBinomialCoefficientWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html#choose-dvd-central-binom-density-one).
 
 ## Depends on
 
@@ -121,4 +121,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Divisors of the middle binomial coefficient](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/binomial-coefficients/divisors-of-the-middle-binomial-coefficient)

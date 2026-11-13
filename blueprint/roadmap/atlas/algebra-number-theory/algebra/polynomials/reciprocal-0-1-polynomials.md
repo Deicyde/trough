@@ -7,7 +7,7 @@ statement: formalized
 
 # Reciprocal 0,1-polynomials
 
-13 results, 6 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html).
+13 results, 6 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html).
 
 ## Reciprocal polynomial
 
@@ -20,7 +20,7 @@ $0 \le i \le d$.
 
 - Pradipto Banerjee and Amit Kundu, "On an Irreducibility Question Concerning Palindromic Non-cyclotomic 0,1-Polynomials", Section 1 (terminology).
 
-Formalized by `MathlibExt.Algebra.PalindromicZeroOneWanted.IsReciprocalPoly`, a definition declared in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#is-reciprocal-poly).
+Formalized by `MathlibExt.Algebra.PalindromicZeroOneWanted.IsReciprocalPoly`, a definition declared in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#is-reciprocal-poly).
 
 ## Characterization of reciprocal polynomials
 
@@ -32,7 +32,7 @@ $x^d f(1/x)$ equals $f$.
 
 - Pradipto Banerjee and Amit Kundu, "On an Irreducibility Question Concerning Palindromic Non-cyclotomic 0,1-Polynomials", Section 1 (terminology).
 
-Formalized by `MathlibExt.Algebra.PalindromicZeroOneWanted.isReciprocalPoly_iff`, a theorem declared in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#is-reciprocal-poly-iff).
+Formalized by `MathlibExt.Algebra.PalindromicZeroOneWanted.isReciprocalPoly_iff`, a theorem declared in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#is-reciprocal-poly-iff).
 
 ## 0,1-polynomial
 
@@ -43,7 +43,7 @@ coefficient of $f$ is $0$ or $1$.
 
 - Pradipto Banerjee and Amit Kundu, "On an Irreducibility Question Concerning Palindromic Non-cyclotomic 0,1-Polynomials", Section 1 (terminology).
 
-Formalized by `MathlibExt.Algebra.PalindromicZeroOneWanted.IsZeroOnePoly`, a definition declared in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#is-zero-one-poly).
+Formalized by `MathlibExt.Algebra.PalindromicZeroOneWanted.IsZeroOnePoly`, a definition declared in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#is-zero-one-poly).
 
 ## Characterization of 0,1-polynomials
 
@@ -55,7 +55,7 @@ $0$ or $1$.
 
 - Pradipto Banerjee and Amit Kundu, "On an Irreducibility Question Concerning Palindromic Non-cyclotomic 0,1-Polynomials", Section 1 (terminology).
 
-Formalized by `MathlibExt.Algebra.PalindromicZeroOneWanted.isZeroOnePoly_iff`, a theorem declared in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#is-zero-one-poly-iff).
+Formalized by `MathlibExt.Algebra.PalindromicZeroOneWanted.isZeroOnePoly_iff`, a theorem declared in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#is-zero-one-poly-iff).
 
 ## Non-cyclotomic polynomial
 
@@ -67,7 +67,7 @@ polynomial.
 
 - Pradipto Banerjee and Amit Kundu, "On an Irreducibility Question Concerning Palindromic Non-cyclotomic 0,1-Polynomials", Section 1 (terminology).
 
-Formalized by `MathlibExt.Algebra.PalindromicZeroOneWanted.IsNoncyclotomic`, a definition declared in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#is-noncyclotomic).
+Formalized by `MathlibExt.Algebra.PalindromicZeroOneWanted.IsNoncyclotomic`, a definition declared in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#is-noncyclotomic).
 
 ## Characterization of non-cyclotomic polynomials
 
@@ -79,7 +79,7 @@ denotes the $n$-th cyclotomic polynomial.
 
 - Pradipto Banerjee and Amit Kundu, "On an Irreducibility Question Concerning Palindromic Non-cyclotomic 0,1-Polynomials", Section 1 (terminology).
 
-Formalized by `MathlibExt.Algebra.PalindromicZeroOneWanted.isNoncyclotomic_iff`, a theorem declared in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#is-noncyclotomic-iff).
+Formalized by `MathlibExt.Algebra.PalindromicZeroOneWanted.isNoncyclotomic_iff`, a theorem declared in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#is-noncyclotomic-iff).
 
 ## Even–odd decomposition of a reciprocal polynomial
 
@@ -98,7 +98,7 @@ $\ell$ and $h_o$; so this amounts to a unique triple $(h_e, h_o, \ell)$.
 
 - Pradipto Banerjee and Amit Kundu, "On an Irreducibility Question Concerning Palindromic Non-cyclotomic 0,1-Polynomials", Lemma 2.1.
 
-Stated but not proved: `MathlibExt.Algebra.PalindromicZeroOneWanted.existsUnique_evenOdd_reciprocal` is written with `theorem_wanted` in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#exists-unique-even-odd-reciprocal).
+Stated but not proved: `MathlibExt.Algebra.PalindromicZeroOneWanted.existsUnique_evenOdd_reciprocal` is written with `theorem_wanted` in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#exists-unique-even-odd-reciprocal).
 
 ## Even–odd decomposition of a reciprocal 0,1-polynomial
 
@@ -117,7 +117,7 @@ $\ell$ and $f_o$; so this amounts to a unique triple $(f_e, f_o, \ell)$.
 
 - Pradipto Banerjee and Amit Kundu, "On an Irreducibility Question Concerning Palindromic Non-cyclotomic 0,1-Polynomials", Lemma 2.2.
 
-Stated but not proved: `MathlibExt.Algebra.PalindromicZeroOneWanted.existsUnique_evenOdd_zeroOne` is written with `theorem_wanted` in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#exists-unique-even-odd-zero-one).
+Stated but not proved: `MathlibExt.Algebra.PalindromicZeroOneWanted.existsUnique_evenOdd_zeroOne` is written with `theorem_wanted` in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#exists-unique-even-odd-zero-one).
 
 ## Position of the first odd exponent
 
@@ -132,7 +132,7 @@ $0$ for every $1 \le e < \ell$, the coefficient of $x^\ell$ in $f$ is nonzero, a
 
 - Pradipto Banerjee and Amit Kundu, "On an Irreducibility Question Concerning Palindromic Non-cyclotomic 0,1-Polynomials", Lemma 2.3.
 
-Stated but not proved: `MathlibExt.Algebra.PalindromicZeroOneWanted.l_eq_min_support_and_lt` is written with `theorem_wanted` in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#l-eq-min-support-and-lt).
+Stated but not proved: `MathlibExt.Algebra.PalindromicZeroOneWanted.l_eq_min_support_and_lt` is written with `theorem_wanted` in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#l-eq-min-support-and-lt).
 
 ## Irreducibility under repeated squaring of the variable
 
@@ -145,7 +145,7 @@ number $n$.
 
 - Pradipto Banerjee and Amit Kundu, "On an Irreducibility Question Concerning Palindromic Non-cyclotomic 0,1-Polynomials", Theorem 1.1.
 
-Stated but not proved: `MathlibExt.Algebra.PalindromicZeroOneWanted.irreducible_comp_pow_two_pow_of_card_lt` is written with `theorem_wanted` in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#irreducible-comp-pow-two-pow-of-card-lt).
+Stated but not proved: `MathlibExt.Algebra.PalindromicZeroOneWanted.irreducible_comp_pow_two_pow_of_card_lt` is written with `theorem_wanted` in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#irreducible-comp-pow-two-pow-of-card-lt).
 
 ## Capelli's theorem for $f(x^r)$
 
@@ -158,7 +158,7 @@ $f(x^4)$ is reducible. Here reducible means not irreducible in $\mathbb{Z}[x]$.
 
 - Pradipto Banerjee and Amit Kundu, "On an Irreducibility Question Concerning Palindromic Non-cyclotomic 0,1-Polynomials", Theorem 1.2 (Capelli; the root-theoretic equivalents stated there are omitted).
 
-Stated but not proved: `MathlibExt.Algebra.PalindromicZeroOneWanted.not_irreducible_comp_pow_iff` is written with `theorem_wanted` in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#not-irreducible-comp-pow-iff).
+Stated but not proved: `MathlibExt.Algebra.PalindromicZeroOneWanted.not_irreducible_comp_pow_iff` is written with `theorem_wanted` in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#not-irreducible-comp-pow-iff).
 
 ## Square compositions of $0,1$-polynomials modulo $4$
 
@@ -172,7 +172,7 @@ same image in $(\mathbb{Z}/4\mathbb{Z})[x]$.
 
 - Pradipto Banerjee and Amit Kundu, "On an Irreducibility Question Concerning Palindromic Non-cyclotomic 0,1-Polynomials", Theorem 1.3.
 
-Stated but not proved: `MathlibExt.Algebra.PalindromicZeroOneWanted.map_comp_sq_eq_mul` is written with `theorem_wanted` in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#map-comp-sq-eq-mul).
+Stated but not proved: `MathlibExt.Algebra.PalindromicZeroOneWanted.map_comp_sq_eq_mul` is written with `theorem_wanted` in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#map-comp-sq-eq-mul).
 
 ## Reducibility of $f(x^4)$ and $f(x^2)$ for $0,1$-polynomials
 
@@ -185,7 +185,7 @@ irreducible in $\mathbb{Z}[x]$ if and only if $f(x^2)$ is not irreducible in $\m
 
 - Pradipto Banerjee and Amit Kundu, "On an Irreducibility Question Concerning Palindromic Non-cyclotomic 0,1-Polynomials", Theorem 1.4.
 
-Stated but not proved: `MathlibExt.Algebra.PalindromicZeroOneWanted.not_irreducible_comp_four_iff` is written with `theorem_wanted` in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#not-irreducible-comp-four-iff).
+Stated but not proved: `MathlibExt.Algebra.PalindromicZeroOneWanted.not_irreducible_comp_four_iff` is written with `theorem_wanted` in [WantedExt/Algebra/PalindromicZeroOneWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PalindromicZeroOneWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html#not-irreducible-comp-four-iff).
 
 ## Depends on
 
@@ -194,4 +194,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Reciprocal 0,1-polynomials](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/polynomials/reciprocal-0-1-polynomials)

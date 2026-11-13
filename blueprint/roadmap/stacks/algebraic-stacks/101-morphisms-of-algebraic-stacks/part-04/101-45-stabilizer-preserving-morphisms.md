@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.45 Stabilizer preserving morphisms
 
-Section 101.45 of the Stacks Project, [Tag 0DU6](https://stacks.math.columbia.edu/tag/0DU6). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.45 of the Stacks Project, [Tag 0DU6](https://stacks.math.columbia.edu/tag/0DU6). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DU7, a lemma
 
 [Tag 0DU7](https://stacks.math.columbia.edu/tag/0DU7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableByAlgebraicSpaces_of_inertiaPullbackComparison_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreservingRepresentable.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreservingRepresentable.lean#L192).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableByAlgebraicSpaces_of_inertiaPullbackComparison_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreservingRepresentable.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreservingRepresentable.lean#L192).
 
 > **Stacks 0DU7.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`. If the
 > canonical comparison `ℐ_𝒳 ⟶ 𝒳 ×_𝒴 ℐ_𝒴` of Stacks 06R5 is an isomorphism, then `f` is
@@ -38,7 +38,7 @@ theorem isRepresentableByAlgebraicSpaces_of_inertiaPullbackComparison_isEquivale
 
 [Tag 0DU8](https://stacks.math.columbia.edu/tag/0DU8) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.HigherDiagonal.prop_isomMap_of_prop_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L511).
+**`AlgebraicGeometry.Stack.HigherDiagonal.prop_isomMap_of_prop_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L511).
 
 > **Stacks 0DU8.** Let `x : T ⟶ 𝒳` have an algebraic space as source, and let `G ⟶ H` be the
 > pullback to `T` of the stabilizer comparison `ℐ_𝒳 ⟶ 𝒳 ×_𝒴 ℐ_𝒴`, that is, the map
@@ -89,7 +89,7 @@ theorem prop_isomMap_of_prop_relativeDiagonal
 
 [Tag 0DU9](https://stacks.math.columbia.edu/tag/0DU9) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.inertiaPullbackComparison_isEquivalenceOver_iff_inducesIsomorphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreservingUnramified.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreservingUnramified.lean#L187).
+**`AlgebraicGeometry.Stack.inertiaPullbackComparison_isEquivalenceOver_iff_inducesIsomorphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreservingUnramified.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreservingUnramified.lean#L187).
 
 > **Stacks 0DU9.** Let `f : 𝒳 ⟶ 𝒴` be an unramified 1-morphism of algebraic stacks over `S`.
 > Then the canonical comparison `ℐ_𝒳 ⟶ 𝒳 ×_𝒴 ℐ_𝒴` of Stacks 06R5 is an isomorphism (an
@@ -115,7 +115,7 @@ theorem inertiaPullbackComparison_isEquivalenceOver_iff_inducesIsomorphismAt
 
 [Tag 0DUA](https://stacks.math.columbia.edu/tag/0DUA) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_openSubstack_isStabilizerPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreservingLocus.lean, line 694](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreservingLocus.lean#L694).
+**`AlgebraicGeometry.Stack.exists_openSubstack_isStabilizerPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreservingLocus.lean, line 694](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreservingLocus.lean#L694).
 
 > **Stacks 0DUA.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` which is
 > representable by algebraic spaces and unramified, and assume the inertia `ℐ_𝒴 ⟶ 𝒴` is proper.
@@ -138,7 +138,7 @@ theorem exists_openSubstack_isStabilizerPreserving
 
 [Tag 0DUB](https://stacks.math.columbia.edu/tag/0DUB) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.inducesIsomorphismAt_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupBaseChange.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupBaseChange.lean#L309). The attribute's comment: “the automorphism groups at a point of a base change”.
+**`AlgebraicGeometry.Stack.inducesIsomorphismAt_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupBaseChange.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismGroupBaseChange.lean#L311). The attribute's comment: “the automorphism groups at a point of a base change”.
 
 > **Stacks 0DUB, part (1).** In a 2-cartesian square of algebraic stacks with apex `𝒳'`,
 > first projection `f' : 𝒳' ⟶ 𝒴'` and second projection `𝒳' ⟶ 𝒳`, if `f` induces an isomorphism
@@ -158,7 +158,7 @@ theorem inducesIsomorphismAt_baseChange (f : 𝒳 ⟶ 𝒴) (g : 𝒴' ⟶ 𝒴)
     InducesIsomorphismAt B S hS P.fst x'
 ```
 
-**`AlgebraicGeometry.Stack.nonempty_inertiaPullbackComparison_isEquivalenceOver_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreserving.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreserving.lean#L79). The attribute's comment: “the inertia map of a base change”.
+**`AlgebraicGeometry.Stack.nonempty_inertiaPullbackComparison_isEquivalenceOver_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreserving.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StabilizerPreserving.lean#L79). The attribute's comment: “the inertia map of a base change”.
 
 > **Stacks 0DUB, part (2).** In a cartesian square of algebraic stacks, if the canonical
 > comparison from the inertia of `𝒳` to `𝒳 ×_𝒴 ℐ_𝒴` is an equivalence, then so is the
@@ -188,7 +188,7 @@ theorem nonempty_inertiaPullbackComparison_isEquivalenceOver_baseChange
 
 [Tag 0DUC](https://stacks.math.columbia.edu/tag/0DUC) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isoClassMk_eq_of_isoClassMk_eq_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FieldValuedPointsBaseChange.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FieldValuedPointsBaseChange.lean#L208). The attribute's comment: “field-valued points of a base change, injective on isomorphism classes”.
+**`AlgebraicGeometry.Stack.isoClassMk_eq_of_isoClassMk_eq_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FieldValuedPointsBaseChange.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FieldValuedPointsBaseChange.lean#L208). The attribute's comment: “field-valued points of a base change, injective on isomorphism classes”.
 
 > **Stacks 0DUC.** Let `𝒳'` be the apex of a 2-cartesian square of algebraic stacks with
 > `f' : 𝒳' ⟶ 𝒴'` its first projection, over `f : 𝒳 ⟶ 𝒴` and `g : 𝒴' ⟶ 𝒴`, and suppose `f`
@@ -232,7 +232,7 @@ theorem isoClassMk_eq_of_isoClassMk_eq_components (f : 𝒳 ⟶ 𝒴) (g : 𝒴'
 
 [Tag 0DUD](https://stacks.math.columbia.edu/tag/0DUD) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isEquivalence_of_isEtale_of_inducesIsomorphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleStabilizerPreservingIsomorphism.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleStabilizerPreservingIsomorphism.lean#L295).
+**`AlgebraicGeometry.Stack.isEquivalence_of_isEtale_of_inducesIsomorphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleStabilizerPreservingIsomorphism.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleStabilizerPreservingIsomorphism.lean#L295).
 
 > **Stacks 0DUD.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`. Assume `f`
 > is étale, that `f` induces an isomorphism between the automorphism groups at `x` and at `f(x)`
@@ -264,4 +264,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.45, Tag 0DU6](https://stacks.math.columbia.edu/tag/0DU6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Boyer–Moore string-search algorithm
 
-14 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html).
+14 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html).
 
 ## Boyer–Moore preprocessing
 
@@ -25,7 +25,7 @@ $i = 0, 1, \dots, m - 2$ in turn, the entry $G_{m - 1 - s_i}$ is set to $m - 1 -
 The event cost includes table slots, copies, fill iterations and canonical Z events;
 it does not count machine instructions or unbounded-integer bit operations.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.BoyerMoore.preprocess`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#preprocess).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.BoyerMoore.preprocess`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#preprocess).
 
 ## Cost of Boyer–Moore preprocessing
 
@@ -36,7 +36,7 @@ most $\sigma + 10m - 6$ when $m \ge 1$.
 The cost counts the selected events of the preprocessor, including initialization of the
 alphabet table; it is not a word-RAM or bit-cost bound.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.BoyerMoore.preprocess_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#preprocess-time-le).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.BoyerMoore.preprocess_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#preprocess-time-le).
 
 ## Bad-character table of Boyer–Moore preprocessing
 
@@ -49,7 +49,7 @@ that $B_c = m - 1 - j$ and every $k$ with $k + 1 < m$ and $p_k = c$ satisfies $k
 Thus $B_c$ is the distance from the last position of $p$ to the rightmost occurrence of $c$
 before that position, or $m$ if $c$ does not occur there.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.BoyerMoore.preprocess_badCharacter`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#preprocess-bad-character).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.BoyerMoore.preprocess_badCharacter`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#preprocess-bad-character).
 
 ## Good-suffix table of Boyer–Moore preprocessing
 
@@ -64,7 +64,7 @@ After a mismatch at position $i$, shifting by $G_i$ keeps the matched suffix
 $p_{i+1} \cdots p_{m-1}$ aligned where it overlaps and, when $G_i \le i$, places the symbol
 $p_{i - G_i} \ne p_i$ under the mismatched position.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.BoyerMoore.preprocess_goodSuffix`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean, line 693](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean#L693). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#preprocess-good-suffix).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.BoyerMoore.preprocess_goodSuffix`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean, line 693](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean#L693). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#preprocess-good-suffix).
 
 ## The full-match shift is the least period of the pattern
 
@@ -78,7 +78,7 @@ least positive period of $p$.
 So after a full match the matcher may shift by $G_0$ without discarding overlapping
 occurrences.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.BoyerMoore.preprocess_fullMatch`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean, line 713](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean#L713). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#preprocess-full-match).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.BoyerMoore.preprocess_fullMatch`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean, line 713](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Preprocessing.lean#L713). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#preprocess-full-match).
 
 ## Boyer–Moore matcher for all occurrences
 
@@ -100,7 +100,7 @@ the order they were found.
 The result is every occurrence of $p$ in $t$, in increasing order and including overlaps. The
 cost counts these selected events, not machine instructions.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches).
+Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches).
 
 ## Boyer–Moore with the empty pattern
 
@@ -108,7 +108,7 @@ For every text $t$ of length $n$ over the alphabet
 $\{0, \dots, \sigma - 1\}$, the Boyer–Moore matcher with the empty pattern and text $t$ returns
 the list $0, 1, \dots, n$ of all offsets from $0$ to $n$ in increasing order, at cost $n + 1$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_nil_pattern`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean, line 468](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean#L468). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches-nil-pattern).
+Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_nil_pattern`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean, line 468](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean#L468). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches-nil-pattern).
 
 ## Boyer–Moore with a pattern longer than the text
 
@@ -117,7 +117,7 @@ alphabet $\{0, \dots, \sigma - 1\}$. If $t$ is strictly shorter than $p$, then t
 matcher with pattern $p$ and text $t$ returns the empty list at cost $0$: no preprocessing or
 search events are charged.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_of_length_lt`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches-of-length-lt).
+Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_of_length_lt`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches-of-length-lt).
 
 ## Boyer–Moore returns exactly the occurrences
 
@@ -127,7 +127,7 @@ returned by the Boyer–Moore matcher with pattern $p$ and text $t$ if and only 
 $t$ at offset $k$, that is, $k \le |t|$ and $p$ is a prefix of the word obtained from $t$ by
 deleting its first $k$ letters. In particular, overlapping occurrences are all returned.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.mem_boyerMooreMatches_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#mem-boyer-moore-matches-iff).
+Formalized by `Cslib.Algorithms.Lean.TimeM.mem_boyerMooreMatches_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#mem-boyer-moore-matches-iff).
 
 ## Boyer–Moore returns offsets in strictly increasing order
 
@@ -136,7 +136,7 @@ the alphabet $\{0, \dots, \sigma - 1\}$, the list of offsets returned by the Boy
 with pattern $p$ and text $t$ is strictly increasing: each entry is smaller than every entry
 after it.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_pairwise`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean, line 510](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean#L510). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches-pairwise).
+Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_pairwise`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean, line 510](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean#L510). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches-pairwise).
 
 ## Boyer–Moore agrees with the naive matcher
 
@@ -145,7 +145,7 @@ $\{0, \dots, \sigma - 1\}$, the list of offsets returned by the Boyer–Moore ma
 $p$ and text $t$ equals the list returned by the naive matcher with pattern $p$ and text $t$,
 entry by entry and in the same order. Only the returned lists are compared, not the costs.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_eq_naiveMatches`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean, line 532](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean#L532). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches-eq-naive-matches).
+Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_eq_naiveMatches`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean, line 532](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean#L532). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches-eq-naive-matches).
 
 ## Worst-case cost of Boyer–Moore matching
 
@@ -157,7 +157,7 @@ $\sigma + n + 11m - 6 + (m + 4)(n - m + 1)$ if $1 \le m \le n$.
 The cost counts the matcher's selected events, not machine instructions. The bound is quadratic
 and does not assert linear all-match comparison complexity or machine runtime.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean, line 542](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean#L542). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches-time-le).
+Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean, line 542](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Basic.lean#L542). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches-time-le).
 
 ## Exact Boyer–Moore cost when pattern and text repeat the same letter
 
@@ -170,7 +170,7 @@ the cost of the Boyer–Moore preprocessing of the pattern $x^m$.
 Of this cost, $m(n - m + 1)$ counts character tests: every alignment is a match and compares all
 $m$ pattern letters.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_time_replicate`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Complexity.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Complexity.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches-time-replicate).
+Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_time_replicate`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Complexity.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Complexity.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches-time-replicate).
 
 ## Exact Boyer–Moore cost when the pattern repeats one letter and ends in another, which alone makes up the text
 
@@ -184,7 +184,7 @@ the pattern $a^{m-1}b$.
 
 On these inputs every alignment makes two character tests and is followed by a shift by $m$.
 
-Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_time_replicate_append`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Complexity.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Complexity.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches-time-replicate-appen).
+Formalized by `Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_time_replicate_append`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Complexity.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/BoyerMoore/Complexity.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html#boyer-moore-matches-time-replicate-appen).
 
 ## Depends on
 
@@ -193,4 +193,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Boyer–Moore string-search algorithm](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/string-algorithms/boyer-moore-string-search-algorithm)

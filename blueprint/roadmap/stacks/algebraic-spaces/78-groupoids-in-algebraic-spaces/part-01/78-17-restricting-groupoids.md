@@ -8,13 +8,13 @@ proof: formalized
 
 # 78.17 Restricting groupoids
 
-Section 78.17 of the Stacks Project, [Tag 044A](https://stacks.math.columbia.edu/tag/044A). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 78.17 of the Stacks Project, [Tag 044A](https://stacks.math.columbia.edu/tag/044A). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 044B, a lemma
 
 [Tag 044B](https://stacks.math.columbia.edu/tag/044B) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.restrict_isRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidRestriction/Restrict.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidRestriction/Restrict.lean#L588).
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.restrict_isRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidRestriction/Restrict.lean, line 588](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidRestriction/Restrict.lean#L588).
 
 > **Stacks 044B.** Let `G = (U, R, s, t, c)` be a groupoid in algebraic spaces over `B` and let
 > `g : U' ⟶ U` be a morphism of algebraic spaces. Form the fibre product squares
@@ -116,7 +116,7 @@ public theorem restrict_isRestriction
 
 [Tag 044C](https://stacks.math.columbia.edu/tag/044C) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidRestriction/Restrict.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidRestriction/Restrict.lean#L59). The attribute's comment: “the restriction of the groupoid to U'”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidRestriction/Restrict.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidRestriction/Restrict.lean#L59). The attribute's comment: “the restriction of the groupoid to U'”.
 
 > Restriction along an arbitrary map to the object space, with its canonical
 > composition law and functor to the original groupoid.
@@ -134,7 +134,7 @@ public noncomputable def restrict
 
 [Tag 044D](https://stacks.math.columbia.edu/tag/044D) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.existsUnique_iso_restriction_groupoidPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionComparison.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionComparison.lean#L368). The attribute's comment: “restricting a groupoid, then taking its pre-relation”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.existsUnique_iso_restriction_groupoidPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionComparison.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionComparison.lean#L368). The attribute's comment: “restricting a groupoid, then taking its pre-relation”.
 
 > **Stacks 044D**, restricting a groupoid and then taking its pre-relation. Let `G` be a
 > groupoid in algebraic spaces over `B` and `g : U' ⟶ U` a morphism to its space of objects. The
@@ -157,7 +157,7 @@ theorem existsUnique_iso_restriction_groupoidPreRelation (G : GroupoidInAlgebrai
           Over.homMk (G.restrict g).hom.toGroupoidHom.mapArrows (G.restrict g).hom.mapArrows_over
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_isomorphism_restrict_groupoidOfIsEquivalenceRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionComparison.lean, line 581](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionComparison.lean#L581). The attribute's comment: “restricting an equivalence relation, then taking its groupoid”.
+**`AlgebraicGeometry.Space.existsUnique_isomorphism_restrict_groupoidOfIsEquivalenceRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionComparison.lean, line 581](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/RestrictionComparison.lean#L581). The attribute's comment: “restricting an equivalence relation, then taking its groupoid”.
 
 > **Stacks 044D**, restricting an equivalence relation and then taking its groupoid. Let
 > `j : R ⟶ U ×_B U` be an equivalence relation of algebraic spaces over `B`, let
@@ -188,4 +188,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 78.17, Tag 044A](https://stacks.math.columbia.edu/tag/044A)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

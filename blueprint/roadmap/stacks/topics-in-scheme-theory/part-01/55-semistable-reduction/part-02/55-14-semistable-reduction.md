@@ -8,13 +8,13 @@ proof: formalized
 
 # 55.14 Semistable reduction
 
-Section 55.14 of the Stacks Project, [Tag 0CDB](https://stacks.math.columbia.edu/tag/0CDB). 8 tags here are carried by 29 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 55.14 of the Stacks Project, [Tag 0CDB](https://stacks.math.columbia.edu/tag/0CDB). 8 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CDC, an example
 
 [Tag 0CDC](https://stacks.math.columbia.edu/tag/0CDC) in the Stacks Project.
 
-**`Stacks.nodalModel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L106). The attribute's comment: “the scheme X = Spec A of the family A = R[x, y]/(xy - πⁿ)”.
+**`Stacks.nodalModel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L106). The attribute's comment: “the scheme X = Spec A of the family A = R[x, y]/(xy - πⁿ)”.
 
 > The standard nodal model `X = Spec R[x, y]/(xy - πⁿ)` of exponent `n`, an affine scheme over
 > `S = Spec R`.
@@ -23,7 +23,7 @@ Section 55.14 of the Stacks Project, [Tag 0CDB](https://stacks.math.columbia.edu
 public def nodalModel (R : Type u) [CommRing R] (π : R) (n : ℕ) : Scheme.{u}
 ```
 
-**`Stacks.nodalModelHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L112). The attribute's comment: “the morphism X ⟶ S = Spec R induced by R → A = R[x, y]/(xy - πⁿ)”.
+**`Stacks.nodalModelHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L112). The attribute's comment: “the morphism X ⟶ S = Spec R induced by R → A = R[x, y]/(xy - πⁿ)”.
 
 > The structure morphism `X ⟶ S = Spec R` of the standard nodal model, the morphism of schemes
 > induced by the ring map `R → A = R[x, y]/(xy - πⁿ)`.
@@ -33,7 +33,7 @@ public def nodalModelHom (R : Type u) [CommRing R] (π : R) (n : ℕ) :
     nodalModel R π n ⟶ Spec (CommRingCat.of R)
 ```
 
-**`Stacks.smooth_nodalModelHom_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L121). The attribute's comment: “if n = 0 then X → S is smooth”.
+**`Stacks.smooth_nodalModelHom_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L121). The attribute's comment: “if n = 0 then X → S is smooth”.
 
 > **The exponent zero model is smooth over the base.** For `n = 0` the defining relation reads
 > `xy = 1`, and `X ⟶ S` is smooth; no hypothesis on `R` or `π` is needed.
@@ -42,7 +42,7 @@ public def nodalModelHom (R : Type u) [CommRing R] (π : R) (n : ℕ) :
 public theorem smooth_nodalModelHom_zero (π : R) : Smooth (nodalModelHom R π 0)
 ```
 
-**`Stacks.span_nodalGen_eq_nodalModelOrigin_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L187). The attribute's comment: “if n = 1 then (x, y) generate the maximal ideal 𝔪 = (π, x, y)”.
+**`Stacks.span_nodalGen_eq_nodalModelOrigin_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L187). The attribute's comment: “if n = 1 then (x, y) generate the maximal ideal 𝔪 = (π, x, y)”.
 
 > **At exponent one the two coordinates generate the maximal ideal of the origin.** The
 > defining relation reads `π = xy`, so the uniformizer already lies in `(x, y)` and
@@ -53,7 +53,7 @@ public theorem span_nodalGen_eq_nodalModelOrigin_one (π : R) :
     Ideal.span {nodalGen R (π ^ 1) 0, nodalGen R (π ^ 1) 1} = nodalModelOrigin R π 1
 ```
 
-**`Stacks.span_nodalGen_lt_nodalModelOrigin_of_two_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L226). The attribute's comment: “if n > 1 then (x, y) no longer generate the maximal ideal 𝔪 = (π, x, y)”.
+**`Stacks.span_nodalGen_lt_nodalModelOrigin_of_two_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L226). The attribute's comment: “if n > 1 then (x, y) no longer generate the maximal ideal 𝔪 = (π, x, y)”.
 
 > **For exponent at least two the two coordinates no longer generate the maximal ideal of the
 > origin.** The ideal `(x, y)` of `R[x, y]/(xy - πⁿ)` is strictly smaller than `𝔪 = (π, x, y)`.
@@ -64,7 +64,7 @@ public theorem span_nodalGen_lt_nodalModelOrigin_of_two_le [IsDomain R] {π : R}
     Ideal.span {nodalGen R (π ^ n) 0, nodalGen R (π ^ n) 1} < nodalModelOrigin R π n
 ```
 
-**`Stacks.isAtWorstNodalOfRelativeDimensionOne_nodalModelHom_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L313). The attribute's comment: “the exponent zero member of the family is at-worst-nodal of relative dimension one”.
+**`Stacks.isAtWorstNodalOfRelativeDimensionOne_nodalModelHom_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L313). The attribute's comment: “the exponent zero member of the family is at-worst-nodal of relative dimension one”.
 
 > **The exponent zero model is at-worst-nodal of relative dimension one over the base.** It is
 > smooth of relative dimension one, and a smooth family of curves has empty relative singular
@@ -75,7 +75,7 @@ public theorem isAtWorstNodalOfRelativeDimensionOne_nodalModelHom_zero (π : R) 
     IsAtWorstNodalOfRelativeDimensionOne (nodalModelHom R π 0)
 ```
 
-**`Stacks.isAtWorstNodalOfRelativeDimensionOne_nodalModelHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L323). The attribute's comment: “for all n the morphism X → S is at-worst-nodal of relative dimension 1”.
+**`Stacks.isAtWorstNodalOfRelativeDimensionOne_nodalModelHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L323). The attribute's comment: “for all n the morphism X → S is at-worst-nodal of relative dimension 1”.
 
 > **Every member of the family is at-worst-nodal of relative dimension one over the base.** For
 > every exponent `n` the morphism `X = Spec R[x, y]/(xy - πⁿ) ⟶ S = Spec R` is syntomic of relative
@@ -87,7 +87,7 @@ public theorem isAtWorstNodalOfRelativeDimensionOne_nodalModelHom (π : R) (n : 
     IsAtWorstNodalOfRelativeDimensionOne (nodalModelHom R π n)
 ```
 
-**`Stacks.isRegular_nodalModel_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L336). The attribute's comment: “if n = 1 then X is regular”. References: SGA 7 XVI (1.13), “Case 1, special case”.
+**`Stacks.isRegular_nodalModel_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L336). The attribute's comment: “if n = 1 then X is regular”. References: SGA 7 XVI (1.13), “Case 1, special case”.
 
 > **The exponent one model is regular.** For `π` a uniformizer of a discrete valuation ring the
 > scheme `Spec R[x, y]/(xy - π)` is regular.
@@ -97,7 +97,7 @@ public theorem isRegular_nodalModel_one {π : R} (hπ : Irreducible π) :
     IsRegular (nodalModel R π 1)
 ```
 
-**`Stacks.not_isRegular_nodalModel_of_one_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L343). The attribute's comment: “if n > 1 then X is not regular”.
+**`Stacks.not_isRegular_nodalModel_of_one_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModel.lean#L343). The attribute's comment: “if n > 1 then X is not regular”.
 
 > **A model of exponent greater than one is not regular.** It is singular at the origin
 > `(π, x, y)`, where the two coordinates no longer span the maximal ideal.
@@ -107,7 +107,7 @@ public theorem not_isRegular_nodalModel_of_one_lt {π : R} (hπ : Irreducible π
     (hn : 1 < n) : ¬ IsRegular (nodalModel R π n)
 ```
 
-**`Stacks.nodalModelBlowup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean#L157). The attribute's comment: “to ameliorate the situation in case n > 1 we consider the blowup b : X' → X of X in 𝔪: the scheme X'”.
+**`Stacks.nodalModelBlowup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean#L157). The attribute's comment: “to ameliorate the situation in case n > 1 we consider the blowup b : X' → X of X in 𝔪: the scheme X'”.
 
 > **The blowup `X'` of the standard nodal model `X = Spec R[x, y]/(xy - πⁿ)` in the ideal
 > `𝔪 = (π, x, y)` of its singular point.** It is the `Proj` of the Rees algebra of `𝔪`; that this
@@ -118,7 +118,7 @@ public theorem not_isRegular_nodalModel_of_one_lt {π : R} (hπ : Irreducible π
 public def nodalModelBlowup (R : Type u) [CommRing R] (π : R) (n : ℕ) : Scheme.{u}
 ```
 
-**`Stacks.nodalModelBlowupHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean#L163). The attribute's comment: “to ameliorate the situation in case n > 1 we consider the blowup b : X' → X of X in 𝔪: the morphism b”.
+**`Stacks.nodalModelBlowupHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean#L163). The attribute's comment: “to ameliorate the situation in case n > 1 we consider the blowup b : X' → X of X in 𝔪: the morphism b”.
 
 > **The blowup morphism `b : X' ⟶ X` of the standard nodal model in `𝔪 = (π, x, y)`.**
 
@@ -127,7 +127,7 @@ public def nodalModelBlowupHom (R : Type u) [CommRing R] (π : R) (n : ℕ) :
     nodalModelBlowup R π n ⟶ nodalModel R π n
 ```
 
-**`Stacks.iSup_opensRange_nodalModelBlowupChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean#L190). The attribute's comment: “by construction X' is covered by three affine pieces corresponding to the blowup algebras A[𝔪/π], A[𝔪/x] and A[𝔪/y]”.
+**`Stacks.iSup_opensRange_nodalModelBlowupChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean#L190). The attribute's comment: “by construction X' is covered by three affine pieces corresponding to the blowup algebras A[𝔪/π], A[𝔪/x] and A[𝔪/y]”.
 
 > **By construction `X'` is covered by three affine pieces, the spectra of the blowup algebras
 > `A[𝔪/π]`, `A[𝔪/x]` and `A[𝔪/y]`.**
@@ -137,7 +137,7 @@ public theorem iSup_opensRange_nodalModelBlowupChart (π : R) (n : ℕ) :
     ⨆ i, (nodalModelBlowupChart R π n i).opensRange = ⊤
 ```
 
-**`Stacks.isAtWorstNodalOfRelativeDimensionOne_nodalModelBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean#L390). The attribute's comment: “thus we see that X' → S is at-worst-nodal of relative dimension 1”.
+**`Stacks.isAtWorstNodalOfRelativeDimensionOne_nodalModelBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean#L390). The attribute's comment: “thus we see that X' → S is at-worst-nodal of relative dimension 1”.
 
 > **`X' ⟶ S` is at-worst-nodal of relative dimension one.** The three charts cover `X'`, an
 > open immersion is étale, and over `S` each chart is a standard nodal model: the central one with
@@ -149,7 +149,7 @@ public theorem isAtWorstNodalOfRelativeDimensionOne_nodalModelBlowupToBase
     IsAtWorstNodalOfRelativeDimensionOne (nodalModelBlowupToBase R π n)
 ```
 
-**`Stacks.exists_isOpenImmersion_nodalModel_sub_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean#L443). The attribute's comment: “X' is regular, except for one point which has an affine open neighbourhood exactly as above but with n replaced by n - 2: that neighbourhood, as the standard nodal model of exponent n - 2 over S”.
+**`Stacks.exists_isOpenImmersion_nodalModel_sub_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean#L443). The attribute's comment: “X' is regular, except for one point which has an affine open neighbourhood exactly as above but with n replaced by n - 2: that neighbourhood, as the standard nodal model of exponent n - 2 over S”.
 
 > **The one point at which `X'` can fail to be regular has an affine open neighbourhood
 > exactly as the original situation, with `n` replaced by `n - 2`.** The central chart `A[𝔪/π]` is
@@ -164,7 +164,7 @@ public theorem exists_isOpenImmersion_nodalModel_sub_two (hπ : π ≠ 0) (hn : 
         Set.range j.base = Set.range (nodalModelBlowupChart R π n 0).base
 ```
 
-**`Stacks.isRegular_nodalModelBlowup_of_le_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean, line 516](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean#L516). The attribute's comment: “using induction on n: for 2 ≤ n ≤ 3 the sequence of blowing ups in closed points X\_\{⌊n/2⌋} → … → X₁ → X₀ = X is the single blowup b : X' → X, and X\_\{⌊n/2⌋} = X' is regular”.
+**`Stacks.isRegular_nodalModelBlowup_of_le_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean, line 516](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean#L516). The attribute's comment: “using induction on n: for 2 ≤ n ≤ 3 the sequence of blowing ups in closed points X\_\{⌊n/2⌋} → … → X₁ → X₀ = X is the single blowup b : X' → X, and X\_\{⌊n/2⌋} = X' is regular”.
 
 > **For `2 ≤ n ≤ 3` the single blowup already resolves the singularity: `X'` is regular.** The
 > exponent drop `n ↦ n - 2` of the central chart lands on `0` or `1`, where the standard nodal
@@ -178,7 +178,7 @@ public theorem isRegular_nodalModelBlowup_of_le_three {π : R} (hπ : Irreducibl
     (h2 : 2 ≤ n) (h3 : n ≤ 3) : IsRegular (nodalModelBlowup R π n)
 ```
 
-**`Stacks.exists_pointBlowupChainOfLength_nodalModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelResolution.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelResolution.lean#L330). The attribute's comment: “using induction on n we conclude that there is a sequence of blowing ups in closed points X\_\{⌊n/2⌋} → … → X₁ → X₀ = X such that X\_\{⌊n/2⌋} → S is at-worst-nodal of relative dimension 1 and X\_\{⌊n/2⌋} is regular”.
+**`Stacks.exists_pointBlowupChainOfLength_nodalModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelResolution.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelResolution.lean#L330). The attribute's comment: “using induction on n we conclude that there is a sequence of blowing ups in closed points X\_\{⌊n/2⌋} → … → X₁ → X₀ = X such that X\_\{⌊n/2⌋} → S is at-worst-nodal of relative dimension 1 and X\_\{⌊n/2⌋} is regular”.
 
 > **Stacks Project, Tag 0CDC.** Using induction on `n` there is a sequence of blowups at closed
 > points
@@ -195,7 +195,7 @@ public theorem exists_pointBlowupChainOfLength_nodalModel {π : R} (hπ : Irredu
       IsAtWorstNodalOfRelativeDimensionOne (g ≫ nodalModelHom R π n) ∧ IsRegular Y
 ```
 
-**`Stacks.nodalXChart_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NodalChart/Blowup.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NodalChart/Blowup.lean#L386). The attribute's comment: “the algebra A[𝔪/x] has generators x, u = π/x subject to the relation xu - π”.
+**`Stacks.nodalXChart_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NodalChart/Blowup.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NodalChart/Blowup.lean#L386). The attribute's comment: “the algebra A[𝔪/x] has generators x, u = π/x subject to the relation xu - π”.
 
 > **The `x`-chart of the blowup of the standard nodal model.** For `n ≥ 2` the affine blowup
 > algebra `A[𝔪/x]` of `A = R[x, y]/(xy - πⁿ)` at `x`, where `𝔪 = (π, x, y)`, is
@@ -214,7 +214,7 @@ public theorem nodalXChart_equiv [IsDomain R] [UniqueFactorizationMonoid R]
         = nodalGen R π 1 * algebraMap R (nodalChartRing R π) (π ^ (n - 1))
 ```
 
-**`Stacks.nodalCentralChart_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NodalChart/Blowup.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NodalChart/Blowup.lean#L585). The attribute's comment: “the algebra A[𝔪/π] has generators x' = x/π and y' = y/π with x'y' = π^(n-2), so this part of X' is the spectrum of R[x', y']/(x'y' - π^(n-2))”.
+**`Stacks.nodalCentralChart_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NodalChart/Blowup.lean, line 585](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NodalChart/Blowup.lean#L585). The attribute's comment: “the algebra A[𝔪/π] has generators x' = x/π and y' = y/π with x'y' = π^(n-2), so this part of X' is the spectrum of R[x', y']/(x'y' - π^(n-2))”.
 
 > **The central chart of the blowup of the standard nodal model, and the drop `n ↦ n - 2`.**
 > For `n ≥ 2` the affine blowup algebra `A[𝔪/π]` of `A = R[x, y]/(xy - πⁿ)` at `π`, where
@@ -235,7 +235,7 @@ public theorem nodalCentralChart_equiv [IsDomain R] [UniqueFactorizationMonoid R
               nodalGen R (π ^ (n - 2)) i)
 ```
 
-**`Stacks.nodalYChart_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NodalChart/Blowup.lean, line 771](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NodalChart/Blowup.lean#L771). The attribute's comment: “by symmetry the case of the algebra A[𝔪/y] is the same as the case of A[𝔪/x]”.
+**`Stacks.nodalYChart_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NodalChart/Blowup.lean, line 771](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NodalChart/Blowup.lean#L771). The attribute's comment: “by symmetry the case of the algebra A[𝔪/y] is the same as the case of A[𝔪/x]”.
 
 > **The `y`-chart of the blowup of the standard nodal model.** For `n ≥ 2` the affine blowup
 > algebra `A[𝔪/y]` of `A = R[x, y]/(xy - πⁿ)` at `y`, where `𝔪 = (π, x, y)`, is
@@ -254,7 +254,7 @@ public theorem nodalYChart_equiv [IsDomain R] [UniqueFactorizationMonoid R]
         = nodalGen R π 1 * algebraMap R (nodalChartRing R π) (π ^ (n - 1))
 ```
 
-**`Stacks.isRegular_spec_nodalXChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NodalChart/Regularity.lean, line 555](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NodalChart/Regularity.lean#L555). The attribute's comment: “the x-chart of X' is regular”.
+**`Stacks.isRegular_spec_nodalXChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NodalChart/Regularity.lean, line 555](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NodalChart/Regularity.lean#L555). The attribute's comment: “the x-chart of X' is regular”.
 
 > **The `x`-chart of the blowup of the standard nodal model is regular.** It is the exponent one
 > model `R[x, u]/(xu - π)`, by `Stacks.nodalXChart_equiv`.
@@ -267,7 +267,7 @@ public theorem isRegular_spec_nodalXChart {π : R} (hπ : Irreducible π) {n : �
     IsRegular (Spec (CommRingCat.of ↥(nodalXChart π n S)))
 ```
 
-**`Stacks.isRegular_spec_nodalYChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NodalChart/Regularity.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NodalChart/Regularity.lean#L565). The attribute's comment: “the y-chart of X' is regular”.
+**`Stacks.isRegular_spec_nodalYChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NodalChart/Regularity.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NodalChart/Regularity.lean#L565). The attribute's comment: “the y-chart of X' is regular”.
 
 > **The `y`-chart of the blowup of the standard nodal model is regular.**
 
@@ -283,41 +283,7 @@ public theorem isRegular_spec_nodalYChart {π : R} (hπ : Irreducible π) {n : �
 
 [Tag 0CDD](https://stacks.math.columbia.edu/tag/0CDD) in the Stacks Project.
 
-**`Stacks.Models.exists_etale_nodalChart_pow_uniformizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableNodalChart.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableNodalChart.lean#L453). The attribute's comment: “the TRANSLATION STEP ONLY, with the etale local structure carried as a hypothesis. CARRIED HYPOTHESES, each inherited and not discharged here: `hCBY : Stacks.NodalEtaleLocalStructure.NodalChartNeighbourhood f x` is the EXISTENCE half of [Stacks, Tag 0CBY] -- an etale neighbourhood `U` of `x`, an affine etale neighbourhood `Spec B` of its image, a parameter `h` of `B` and an etale `U -> Spec B[x,y]/(xy-h)` over `Spec B` -- which is the CHART form of the tag and is still not proved in this repository. [Stacks, Tag 0CBY] ITSELF IS PROVED: `Stacks.NodalEtaleLocalStructure.nonempty_standardNodalDiagram_of_isAtWorstNodal` at StacksFrontier/AlgebraicGeometry/Curves/NodalEtaleLocalStructureAssembly.lean proves the tag's own statement, with no hypothesis beyond the tag's, in the DIAGRAM form `Stacks.NodalEtaleLocalStructure.StandardNodalDiagram` -- etale `U -> X`, etale `V -> S`, etale `U -> W` and a cartesian square presenting `W` as a base change of the standard nodal family. What separates that from `hCBY` is not the existence but the PACKAGING: the chart form asks for the base `V` to be AFFINE, say `Spec B`, and for an actual parameter `h` in `B`, so passing from the diagram to the chart means shrinking `V` to an affine open and reading the local model off `Stacks.NodalEtaleLocalStructure.chartIsoOfIsPullback`, which is a step nobody has taken. `_hf : IsAtWorstNodalOfRelativeDimensionOne f` is the tag's own hypothesis; it appears in the statement for faithfulness but is NOT consumed, because the whole use of nodality in the source proof is to produce `hCBY`. WHAT IS PROVED HERE, and is exactly what the source calls the translation: the affine etale base `Spec B` is shrunk to a discrete valuation ring `R'` with `R` -> `R'` etale and `R` ⊆ `R'` an extension of discrete valuation rings in the sense of [Stacks, Tag 09E4] (`exists_isDiscreteValuationRing_localizationAtPrime_of_etale`, the route of [Stacks, Tag 0AP2]); the chart is base changed along `B -> R'` and is again a nodal chart (`isPullback_specMap_nodalChartMap`); and the resulting parameter is normalised to `0` or a power of a uniformizer by rescaling a coordinate by a unit (`exists_pow_irreducible_nodalChartRing_algEquiv`). The SMOOTH case of the source proof, which routes through [Stacks, Tag 054L] instead of 0CBY, is not covered by this statement: see the module documentation”.
-
-> **Stacks 0CDD.** Let `R` be a discrete valuation ring, let `f : X ⟶ Spec R` be at-worst-nodal
-> of relative dimension one, and let `x` be a point of the special fibre. Then there is an étale
-> extension `R ⊆ R'` of discrete valuation rings, a scheme `U` with étale morphisms `U ⟶ X` and
-> `U ⟶ Spec A` over `Spec R'`, and a point `x'` of `U` above `x`, with
->
-> `A = R'[u, v]/(uv)`  or  `A = R'[u, v]/(uv - π ^ n)`
->
-> for a uniformizer `π` of `R'` and `n ≥ 0`; the two cases are the vanishing and the nonvanishing
-> of the parameter `h`, which is a power of a uniformizer in the second case.
->
-> The étale local structure in chart form over an arbitrary affine étale base is carried as the
-> hypothesis `hCBY`; everything else — shrinking that base to a discrete valuation ring and
-> normalising the parameter — is proved here.
-
-```lean
-public theorem exists_etale_nodalChart_pow_uniformizer
-    {R : Type u} [CommRing R] [IsDomain R] [IsDiscreteValuationRing R]
-    {X : Scheme.{u}} (f : X ⟶ Spec (.of R))
-    (_hf : IsAtWorstNodalOfRelativeDimensionOne f)
-    (x : X) (hx : f.base x = IsLocalRing.closedPoint R)
-    (hCBY : NodalChartNeighbourhood f x) :
-    ∃ (R' : Type u) (_ : CommRing R') (_ : IsDomain R')
-      (_ : IsDiscreteValuationRing R') (_ : Algebra R R')
-      (_ : IsDiscreteValuationRing.IsExtension R R') (_ : Algebra.Etale R R') (h : R'),
-      (h = 0 ∨ ∃ (π : R') (n : ℕ), Irreducible π ∧ h = π ^ n) ∧
-        ∃ (U : Scheme.{u}) (g : U ⟶ X) (j : U ⟶ Spec (.of (nodalChartRing R' h))) (x' : U),
-          Etale g ∧ Etale j ∧ g.base x' = x ∧
-            g ≫ f = j ≫
-              Spec.map (CommRingCat.ofHom (algebraMap R' (nodalChartRing R' h))) ≫
-                Spec.map (CommRingCat.ofHom (algebraMap R R'))
-```
-
-**`Stacks.Models.exists_etale_nodalChart_pow_uniformizer_of_isAtWorstNodal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableNodalChartOfNodal.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableNodalChartOfNodal.lean#L313).
+**`Stacks.Models.exists_etale_nodalChart_pow_uniformizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableNodalChart.lean, line 538](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableNodalChart.lean#L538).
 
 > **Stacks 0CDD.** Let `R` be a discrete valuation ring, let `f : X ⟶ Spec R` be at-worst-nodal
 > of relative dimension one, and let `x` be a point of the special fibre. Then there is an étale
@@ -330,12 +296,13 @@ public theorem exists_etale_nodalChart_pow_uniformizer
 > of the parameter `h`, which is a power of a uniformizer in the second case.
 >
 > The étale local structure in chart form is
-> `Stacks.NodalEtaleLocalStructure.nonempty_nodalChartNeighbourhood_of_isAtWorstNodal` (Tag 0CBY at
+> `Stacks.NodalEtaleLocalStructure.nonempty_nodalChartNeighbourhood_of_atWorstNodal` (Tag 0CBY at
 > a singular point of the fibre, Tag 054L at a smooth one), and the translation into the
-> statement of the tag is `Stacks.Models.exists_etale_nodalChart_pow_uniformizer`.
+> statement of the tag is
+> `Stacks.Models.exists_etale_nodalChart_pow_uniformizer_of_nodalChartNeighbourhood`.
 
 ```lean
-public theorem exists_etale_nodalChart_pow_uniformizer_of_isAtWorstNodal
+public theorem exists_etale_nodalChart_pow_uniformizer
     {R : Type u} [CommRing R] [IsDomain R] [IsDiscreteValuationRing R]
     {X : Scheme.{u}} (f : X ⟶ Spec (.of R))
     (hf : IsAtWorstNodalOfRelativeDimensionOne f)
@@ -344,8 +311,7 @@ public theorem exists_etale_nodalChart_pow_uniformizer_of_isAtWorstNodal
       (_ : IsDiscreteValuationRing R') (_ : Algebra R R')
       (_ : IsDiscreteValuationRing.IsExtension R R') (_ : Algebra.Etale R R') (h : R'),
       (h = 0 ∨ ∃ (π : R') (n : ℕ), Irreducible π ∧ h = π ^ n) ∧
-        ∃ (U : Scheme.{u}) (g : U ⟶ X)
-          (j : U ⟶ Spec (.of (nodalChartRing R' h))) (x' : U),
+        ∃ (U : Scheme.{u}) (g : U ⟶ X) (j : U ⟶ Spec (.of (nodalChartRing R' h))) (x' : U),
           Etale g ∧ Etale j ∧ g.base x' = x ∧
             g ≫ f = j ≫
               Spec.map (CommRingCat.ofHom (algebraMap R' (nodalChartRing R' h))) ≫
@@ -356,7 +322,7 @@ public theorem exists_etale_nodalChart_pow_uniformizer_of_isAtWorstNodal
 
 [Tag 0CDE](https://stacks.math.columbia.edu/tag/0CDE) in the Stacks Project.
 
-**`Stacks.SemistableReduction.exists_nodalBlowupChain_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NodalResolution.lean, line 542](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/NodalResolution.lean#L542).
+**`Stacks.SemistableReduction.exists_nodalBlowupChain_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NodalResolution.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/NodalResolution.lean#L542).
 
 > **Stacks Project, Tag 0CDE.** Let `R` be a discrete valuation ring and let `X` be a
 > quasi-compact scheme which is at-worst-nodal of relative dimension one over `R`, with smooth
@@ -380,7 +346,7 @@ public theorem exists_nodalBlowupChain_isRegular {X : Scheme.{u}} [CompactSpace 
 
 [Tag 0CDF](https://stacks.math.columbia.edu/tag/0CDF) in the Stacks Project.
 
-**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_of_isContractionOfExceptionalCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NodalContraction/Nodal.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NodalContraction/Nodal.lean#L50).
+**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_of_isContractionOfExceptionalCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NodalContraction/Nodal.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NodalContraction/Nodal.lean#L50).
 
 > **Stacks Project, Tag 0CDF.** Let `R` be a discrete valuation ring and let
 > `f : X ⟶ Spec R` be at-worst-nodal of relative dimension one. Let `b : X ⟶ X'` be the
@@ -415,7 +381,7 @@ public theorem isAtWorstNodalOfRelativeDimensionOne_of_isContractionOfExceptiona
 
 [Tag 0CDG](https://stacks.math.columbia.edu/tag/0CDG) in the Stacks Project.
 
-**`Stacks.Models.tfae_hasSemistableReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/ReductionTypes.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/ReductionTypes.lean#L139).
+**`Stacks.Models.tfae_hasSemistableReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/ReductionTypes.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/ReductionTypes.lean#L139).
 
 > **Stacks Project, Tag 0CDG.** Let `R` be a discrete valuation ring with fraction field `K` and
 > let `C` be a smooth projective curve over `K` with `H⁰(C, 𝒪_C) = K`. The following are equivalent:
@@ -445,7 +411,7 @@ public theorem tfae_hasSemistableReduction {C : Scheme.{u}} (c : C ⟶ Spec (.of
 
 [Tag 0CDH](https://stacks.math.columbia.edu/tag/0CDH) in the Stacks Project.
 
-**`Stacks.Models.HasSemistableReduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/Reduction.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/Reduction.lean#L70). The attribute's comment: “existence of a proper model of the curve that is at-worst-nodal of relative dimension one”.
+**`Stacks.Models.HasSemistableReduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/Reduction.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/Reduction.lean#L70). The attribute's comment: “existence of a proper model of the curve that is at-worst-nodal of relative dimension one”.
 
 > **Stacks Project, Tag 0CDH.** A smooth projective curve `C` over the fraction field `K` of
 > a discrete valuation ring `R`, with `H⁰(C, 𝒪_C) = K`, has *semistable reduction* if there is a
@@ -461,7 +427,7 @@ def HasSemistableReduction {C : Scheme.{u}} (C_to_K : C ⟶ Spec (.of K))
 
 [Tag 0CDI](https://stacks.math.columbia.edu/tag/0CDI) in the Stacks Project.
 
-**`Stacks.Models.tfae_hasGoodReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/ReductionTypes.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/ReductionTypes.lean#L170).
+**`Stacks.Models.tfae_hasGoodReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/ReductionTypes.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SemistableReduction/ReductionTypes.lean#L170).
 
 > **Stacks Project, Tag 0CDI.** Let `R` be a discrete valuation ring with fraction field `K` and
 > let `C` be a smooth projective curve over `K` with `H⁰(C, 𝒪_C) = K`. The following are equivalent:
@@ -491,7 +457,7 @@ public theorem tfae_hasGoodReduction {C : Scheme.{u}} (c : C ⟶ Spec (.of K))
 
 [Tag 0CDJ](https://stacks.math.columbia.edu/tag/0CDJ) in the Stacks Project.
 
-**`Stacks.Models.HasGoodReduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/Reduction.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/Reduction.lean#L81). The attribute's comment: “existence of a proper smooth model of the curve”.
+**`Stacks.Models.HasGoodReduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/Reduction.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/Reduction.lean#L81). The attribute's comment: “existence of a proper smooth model of the curve”.
 
 > **Stacks Project, Tag 0CDJ.** A smooth projective curve `C` over the fraction field `K` of
 > a discrete valuation ring `R`, with `H⁰(C, 𝒪_C) = K`, has *good reduction* if there is a
@@ -510,4 +476,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 55.14, Tag 0CDB](https://stacks.math.columbia.edu/tag/0CDB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

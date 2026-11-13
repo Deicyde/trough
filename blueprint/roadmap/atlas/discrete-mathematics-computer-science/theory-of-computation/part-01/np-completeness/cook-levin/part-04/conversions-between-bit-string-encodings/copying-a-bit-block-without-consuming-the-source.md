@@ -8,27 +8,27 @@ proof: formalized
 
 # Copying a bit block without consuming the source
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/conversions-between-bit-string-encodings/copying-a-bit-block-without-consuming-the-source/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/conversions-between-bit-string-encodings/copying-a-bit-block-without-consuming-the-source/index.html).
 
 ## Two-destination bit-block transfer
 
 Pop a bit block onto two distinct destinations, reversing both copies.
 
-Formalized by `Cslib.Complexity.PolynomialEncoding.splitB`, a definition declared in [CSLibExt/Computability/Complexity/PolynomialEncoding/Copy.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/PolynomialEncoding/Copy.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/conversions-between-bit-string-encodings/copying-a-bit-block-without-consuming-the-source/index.html#split-b).
+Formalized by `Cslib.Complexity.PolynomialEncoding.splitB`, a definition declared in [CSLibExt/Computability/Complexity/PolynomialEncoding/Copy.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/PolynomialEncoding/Copy.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/conversions-between-bit-string-encodings/copying-a-bit-block-without-consuming-the-source/index.html#split-b).
 
 ## Two-destination bit transfer takes one step per bit plus one
 
 Two-destination bit transfer takes one step per bit plus one,
 with exact suffix and unrelated-stack preservation.
 
-Formalized by `Cslib.Complexity.PolynomialEncoding.splitB_run`, a theorem declared in [CSLibExt/Computability/Complexity/PolynomialEncoding/Copy.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/PolynomialEncoding/Copy.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/conversions-between-bit-string-encodings/copying-a-bit-block-without-consuming-the-source/index.html#split-b-run).
+Formalized by `Cslib.Complexity.PolynomialEncoding.splitB_run`, a theorem declared in [CSLibExt/Computability/Complexity/PolynomialEncoding/Copy.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/PolynomialEncoding/Copy.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/conversions-between-bit-string-encodings/copying-a-bit-block-without-consuming-the-source/index.html#split-b-run).
 
 ## Bit-block copy keeps the order and restores source and scratch
 
 Copy a bit block in its original order, restoring both the source
 and scratch, in exactly `2 * p.length + 2` steps.
 
-Formalized by `Cslib.Complexity.PolynomialEncoding.copyB_run`, a theorem declared in [CSLibExt/Computability/Complexity/PolynomialEncoding/Copy.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/PolynomialEncoding/Copy.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/conversions-between-bit-string-encodings/copying-a-bit-block-without-consuming-the-source/index.html#copy-b-run).
+Formalized by `Cslib.Complexity.PolynomialEncoding.copyB_run`, a theorem declared in [CSLibExt/Computability/Complexity/PolynomialEncoding/Copy.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/PolynomialEncoding/Copy.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/conversions-between-bit-string-encodings/copying-a-bit-block-without-consuming-the-source/index.html#copy-b-run).
 
 ## Depends on
 
@@ -37,4 +37,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Copying a bit block without consuming the source](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/conversions-between-bit-string-encodings/copying-a-bit-block-without-consuming-the-source/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/conversions-between-bit-string-encodings/copying-a-bit-block-without-consuming-the-source)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/conversions-between-bit-string-encodings/copying-a-bit-block-without-consuming-the-source)

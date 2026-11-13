@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.19 Dimension of fibres
 
-Section 33.19 of the Stacks Project, [Tag 0B2H](https://stacks.math.columbia.edu/tag/0B2H). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.19 of the Stacks Project, [Tag 0B2H](https://stacks.math.columbia.edu/tag/0B2H). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B2I, a lemma
 
 [Tag 0B2I](https://stacks.math.columbia.edu/tag/0B2I) in the Stacks Project.
 
-**`AlgebraicGeometry.topologicalKrullDimAt_fiber_eq_of_target_dim_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/HigherCodimension.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/HigherCodimension.lean#L366). References: EGA IV (7.1.13).
+**`AlgebraicGeometry.topologicalKrullDimAt_fiber_eq_of_target_dim_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/HigherCodimension.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/HigherCodimension.lean#L366). References: EGA IV (7.1.13).
 
 > **Stacks Project, Tag 0B2I.** If the local ring of the target at `y` is Noetherian of
 > dimension at most one, and the fibre dimension at every generic point of an irreducible
@@ -33,7 +33,7 @@ theorem topologicalKrullDimAt_fiber_eq_of_target_dim_le_one (f : X ⟶ Y) [Local
 
 [Tag 0B2J](https://stacks.math.columbia.edu/tag/0B2J) in the Stacks Project.
 
-**`AlgebraicGeometry.specialFiber_equidimensional`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ValuationFibreDimension.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ValuationFibreDimension.lean#L498). The attribute's comment: “equidimensionality”.
+**`AlgebraicGeometry.specialFiber_equidimensional`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ValuationFibreDimension.lean, line 498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ValuationFibreDimension.lean#L498). The attribute's comment: “equidimensionality”.
 
 > **Stacks Project, Tag 0B2J (equidimensionality).** The special fibre of a surjective,
 > locally finite type morphism from an irreducible scheme to the spectrum of a valuation ring is
@@ -47,7 +47,7 @@ lemma specialFiber_equidimensional {R : Type u} [CommRing R] [IsDomain R] [Valua
       (f.fiber (⟨IsLocalRing.maximalIdeal R, inferInstance⟩ : PrimeSpectrum R))
 ```
 
-**`AlgebraicGeometry.topologicalKrullDim_specialFiber_eq_genericFiber`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ValuationFibreDimension.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ValuationFibreDimension.lean#L527). The attribute's comment: “equality of fibre dimensions”. References: EGA IV (14.3.10), “surjective f”; SGA 3 XXV (4.3), “special case”.
+**`AlgebraicGeometry.topologicalKrullDim_specialFiber_eq_genericFiber`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ValuationFibreDimension.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ValuationFibreDimension.lean#L527). The attribute's comment: “equality of fibre dimensions”. References: EGA IV (14.3.10), “surjective f”; SGA 3 XXV (4.3), “special case”.
 
 > **Stacks Project, Tag 0B2J (dimension).** The special and generic fibres of a surjective,
 > locally finite type morphism from an irreducible scheme to the spectrum of a valuation ring
@@ -67,7 +67,7 @@ lemma topologicalKrullDim_specialFiber_eq_genericFiber
 
 [Tag 0B2K](https://stacks.math.columbia.edu/tag/0B2K) in the Stacks Project.
 
-**`AlgebraicGeometry.topologicalKrullDimAt_fiber_add_one_le_of_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/HigherCodimension.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/HigherCodimension.lean#L216).
+**`AlgebraicGeometry.topologicalKrullDimAt_fiber_add_one_le_of_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/HigherCodimension.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/HigherCodimension.lean#L216).
 
 > **Stacks Project, Tag 0B2K.** The dimension at a point of a fibre is bounded by the
 > generic fibre dimension plus the dimension of the base local ring minus one, provided every
@@ -90,4 +90,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.19, Tag 0B2H](https://stacks.math.columbia.edu/tag/0B2H)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

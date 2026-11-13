@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.5 Conormal sheaf of an immersion
 
-Section 76.5 of the Stacks Project, [Tag 04CM](https://stacks.math.columbia.edu/tag/04CM). 6 tags here are carried by 36 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.5 of the Stacks Project, [Tag 04CM](https://stacks.math.columbia.edu/tag/04CM). 6 tags here are carried by 36 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04CN, a definition
 
 [Tag 04CN](https://stacks.math.columbia.edu/tag/04CN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.conormalModuleOfImmersion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebra.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebra.lean#L410). The attribute's comment: “construction as the pullback of the ideal sheaf, via the closed factorisation”.
+**`AlgebraicGeometry.Space.conormalModuleOfImmersion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebra.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebra.lean#L410). The attribute's comment: “construction as the pullback of the ideal sheaf, via the closed factorisation”.
 
 > **Stacks 04CN for an immersion.**  The conormal module `𝒞_{Z/X}` of an immersion
 > `i : Z ⟶ X` of algebraic spaces: the inverse image along the closed factorisation
@@ -39,7 +39,7 @@ noncomputable def conormalModuleOfImmersion (hX : IsAlgebraicSpace B S hS X₀)
     Modules.{u, u} B S hS Z₀ hZ
 ```
 
-**`AlgebraicGeometry.Space.conormalModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModule.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModule.lean#L192). The attribute's comment: “construction as the pullback of the ideal sheaf, closed immersion”. References: SGA 6 0 (2.1), “more general”.
+**`AlgebraicGeometry.Space.conormalModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModule.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModule.lean#L192). The attribute's comment: “construction as the pullback of the ideal sheaf, closed immersion”. References: SGA 6 0 (2.1), “more general”.
 
 > **Stacks 04CN for a closed immersion.**  The conormal module `𝒞_{Z/X}` of a closed subspace
 > `Z` of an algebraic space `X`: the inverse image along the inclusion `i : Z ⟶ X` of the defining
@@ -55,7 +55,7 @@ noncomputable def conormalModule (X : AlgebraicSpaces B S hS)
     Modules.{u, u} B S hS Z.1.toFunctor Z.2.1
 ```
 
-**`AlgebraicGeometry.Space.conormalIdealQuotientIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersion.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersion.lean#L518). The attribute's comment: “the identification of the conormal module with 𝓘/𝓘², for a closed immersion”.
+**`AlgebraicGeometry.Space.conormalIdealQuotientIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersion.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersion.lean#L518). The attribute's comment: “the identification of the conormal module with 𝓘/𝓘², for a closed immersion”.
 
 > **Stacks 04CN, the identification with `𝓘/𝓘²`.**  For a closed immersion `i : Z ⟶ X` of
 > algebraic spaces the canonical map induced by the unit of `i^* ⊣ i_*` is an isomorphism
@@ -73,7 +73,7 @@ def conormalIdealQuotientIso (i : Z ⟶ X) (hi : IsClosedImmersion B S hS i.hom)
       (modulePushforward B S hS i).obj (conormalModuleOfHom B S hS i)
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_conormalModuleOfImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersion.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersion.lean#L569). The attribute's comment: “the conormal sheaf is a quasi-coherent module”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_conormalModuleOfImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersion.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersion.lean#L569). The attribute's comment: “the conormal sheaf is a quasi-coherent module”.
 
 > **The quasi-coherence clause of Stacks 04CN for an arbitrary immersion**, unconditionally:
 > the closed factorisation of Stacks 04CE is a closed immersion, where
@@ -89,7 +89,7 @@ theorem isQuasicoherentOnSite_conormalModuleOfImmersion (hX : IsAlgebraicSpace B
     (conormalModuleOfImmersion B S hS hX hZ i hi).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_and_nonempty_conormalIdealQuotientIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersion.lean, line 599](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersion.lean#L599).
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_and_nonempty_conormalIdealQuotientIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersion.lean, line 599](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersion.lean#L599).
 
 > **Stacks Project, Tag 04CN.**  The *conormal sheaf* `𝒞_{Z/X}` of an immersion
 > `i : Z ⟶ X` of algebraic spaces over `S`, constructed as
@@ -112,7 +112,7 @@ theorem isQuasicoherentOnSite_and_nonempty_conormalIdealQuotientIso
 
 [Tag 04CO](https://stacks.math.columbia.edu/tag/04CO) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.conormalModuleEtaleRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleEtaleRestriction.lean, line 954](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleEtaleRestriction.lean#L954). The attribute's comment: “the conormal module commutes with etale base change”. References: SGA 3 I (6.8.5), “étale base change”.
+**`AlgebraicGeometry.Space.conormalModuleEtaleRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleEtaleRestriction.lean, line 964](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleEtaleRestriction.lean#L964). The attribute's comment: “the conormal module commutes with etale base change”. References: SGA 3 I (6.8.5), “étale base change”.
 
 > **Stacks 04CO for the conormal module.**  Let `φ : U ⟶ X` be an étale morphism of algebraic
 > spaces and `Z ⊆ X` a closed subspace, with inverse image `Z_U = U ×_X Z` and projection
@@ -141,7 +141,7 @@ noncomputable def conormalModuleEtaleRestrictionIso (φ : U ⟶ X) (hφ : IsEtal
         ClosedSubspaces B S hS U.1)
 ```
 
-**`AlgebraicGeometry.Space.conormalModuleEtaleRestrictionCanonicalIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleEtaleRestrictionCanonical.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleEtaleRestrictionCanonical.lean#L189). The attribute's comment: “the identification, as the canonical map of 04CP, for an etale source”.
+**`AlgebraicGeometry.Space.conormalModuleEtaleRestrictionCanonicalIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleEtaleRestrictionCanonical.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleEtaleRestrictionCanonical.lean#L189). The attribute's comment: “the identification, as the canonical map of 04CP, for an etale source”.
 
 > **Stacks 04CO.**  Let `Z ⊆ X` be a closed subspace of an algebraic space over `S`, let
 > `g : X' ⟶ X` be étale — written `φ : U ⟶ X` in the source — and let
@@ -174,7 +174,7 @@ noncomputable def conormalModuleEtaleRestrictionCanonicalIso
       conormalModule B S hS X Z
 ```
 
-**`AlgebraicGeometry.Space.conormalModuleEtaleRestrictionCanonicalIso_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleEtaleRestrictionCanonical.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleEtaleRestrictionCanonical.lean#L239). The attribute's comment: “functoriality in the etale source U”.
+**`AlgebraicGeometry.Space.conormalModuleEtaleRestrictionCanonicalIso_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleEtaleRestrictionCanonical.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleEtaleRestrictionCanonical.lean#L239). The attribute's comment: “functoriality in the etale source U”.
 
 > **Stacks 04CO, the functoriality in the étale source `U`.**  Let `Z ⊆ X` be a closed
 > subspace, let `g' : X' ⟶ X''` and `g : X ⟶ X'` be étale — written `φ : U ⟶ X` and `ψ : V ⟶ U` in
@@ -223,7 +223,7 @@ theorem conormalModuleEtaleRestrictionCanonicalIso_comp
           (conormalModuleEtaleRestrictionCanonicalIso B S hS Z Z' g f hsq hcart hg).hom
 ```
 
-**`AlgebraicGeometry.Space.isLocallyClosedSubspace_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean#L168). The attribute's comment: “Z\_U = U ×\_X Z is a locally closed subspace of U”.
+**`AlgebraicGeometry.Space.isLocallyClosedSubspace_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean#L168). The attribute's comment: “Z\_U = U ×\_X Z is a locally closed subspace of U”.
 
 > **Stacks 04CO, the locally closed clause.**  The inverse image of a locally closed subspace
 > of an algebraic space along a morphism of algebraic spaces over `S` is a locally closed subspace
@@ -243,7 +243,7 @@ theorem isLocallyClosedSubspace_preimage
     IsLocallyClosedSubspace B S hS (Z.preimage f)
 ```
 
-**`AlgebraicGeometry.Space.conormalModuleOfImmersionEtaleRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean#L295). The attribute's comment: “the conormal module of an immersion commutes with etale localisation”.
+**`AlgebraicGeometry.Space.conormalModuleOfImmersionEtaleRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean#L295). The attribute's comment: “the conormal module of an immersion commutes with etale localisation”.
 
 > **Stacks 04CO.**  Let `i : Z ⟶ X` be an immersion of algebraic spaces over `S`, let
 > `φ : U ⟶ X` be étale and let `Z_U = U ×_X Z` with projections `p : Z_U ⟶ Z` and `i_U : Z_U ⟶ U`.
@@ -266,7 +266,7 @@ noncomputable def conormalModuleOfImmersionEtaleRestrictionIso (p : ZU ⟶ Z) (i
       immersionConormalModule B S hS iU (isImmersion_of_isPullback B S hS sq hi)
 ```
 
-**`AlgebraicGeometry.Space.conormalModuleSubspaceEtaleRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean#L334). The attribute's comment: “the conormal module of a locally closed subspace commutes with etale localisation”.
+**`AlgebraicGeometry.Space.conormalModuleSubspaceEtaleRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean#L334). The attribute's comment: “the conormal module of a locally closed subspace commutes with etale localisation”.
 
 > **Stacks 04CO in the shape the source states it.**  Let `Z` be a locally closed subspace of
 > an algebraic space `X` over `S`, let `φ : U ⟶ X` be étale and let `Z_U = U ×_X Z` be the inverse
@@ -299,7 +299,7 @@ noncomputable def conormalModuleSubspaceEtaleRestrictionIso (φ : U ⟶ X)
         (isLocallyClosedSubspace_preimage B S hS φ.hom Z X.2 U.2 hZ).2
 ```
 
-**`AlgebraicGeometry.Space.conormalModuleSchemeEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleSchemeEtaleRestriction.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleSchemeEtaleRestriction.lean#L208).
+**`AlgebraicGeometry.Space.conormalModuleSchemeEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleSchemeEtaleRestriction.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleSchemeEtaleRestriction.lean#L208).
 
 > **Stacks 04CO.**  Let `i : Z ⟶ X` be an immersion of algebraic spaces over `S`, let `U` be a
 > scheme of the site and `φ : U ⟶ X` étale.  Then
@@ -364,7 +364,7 @@ theorem conormalModuleSchemeEtaleRestriction (i : Z ⟶ X) (hi : IsImmersion B S
                   (toShHom_square_of_comp_eq B S hS j' j b ψ hb)))
 ```
 
-**`AlgebraicGeometry.Space.etaleIdealSheafRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleIdealSheafRestriction.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleIdealSheafRestriction.lean#L196). The attribute's comment: “the ideal sheaf of the inverse image is the restriction of the ideal sheaf”.
+**`AlgebraicGeometry.Space.etaleIdealSheafRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleIdealSheafRestriction.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleIdealSheafRestriction.lean#L196). The attribute's comment: “the ideal sheaf of the inverse image is the restriction of the ideal sheaf”.
 
 > **Stacks 04CO.** The étale restriction of the defining ideal sheaf of a closed subspace
 > `Z ⊆ X` along an étale `φ : U ⟶ X` is the defining ideal sheaf of the inverse image `φ⁻¹(Z)`.
@@ -383,7 +383,7 @@ noncomputable def etaleIdealSheafRestrictionIso (φ : U ⟶ X) (hφ : IsEtale B 
         ClosedSubspaces B S hS U.1)).toSheafOfModules
 ```
 
-**`AlgebraicGeometry.Space.conormalModuleEtaleRestrictionIso_hom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsConormalAction.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsConormalAction.lean#L294). The attribute's comment: “functoriality in the étale source”.
+**`AlgebraicGeometry.Space.conormalModuleEtaleRestrictionIso_hom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsConormalAction.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/SectionsConormalAction.lean#L294). The attribute's comment: “functoriality in the étale source”.
 
 > **The functoriality of Stacks 04CO in the étale source.**  For étale morphisms
 > `ψ : V ⟶ U` and `φ : U ⟶ X` of algebraic spaces with étale composite and a closed subspace
@@ -448,7 +448,7 @@ theorem conormalModuleEtaleRestrictionIso_hom_comp (ψ : V ⟶ U) (φ : U ⟶ X)
 
 [Tag 04CP](https://stacks.math.columbia.edu/tag/04CP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.conormalMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFunctorial.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFunctorial.lean#L283). The attribute's comment: “the canonical map, for closed immersions”.
+**`AlgebraicGeometry.Space.conormalMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFunctorial.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFunctorial.lean#L283). The attribute's comment: “the canonical map, for closed immersions”.
 
 > **Stacks 04CP for closed immersions.**  The canonical map of `𝒪_Z`-modules
 > `f^*𝒞_{Z'/X'} ⟶ 𝒞_{Z/X}` attached to a commutative square of algebraic spaces in which `Z` is a
@@ -468,7 +468,7 @@ noncomputable def conormalMap
       conormalModule B S hS X Z
 ```
 
-**`AlgebraicGeometry.Space.conormalMapOfImmersions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionFunctorial.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionFunctorial.lean#L601). The attribute's comment: “the canonical map, for arbitrary immersions”.
+**`AlgebraicGeometry.Space.conormalMapOfImmersions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionFunctorial.lean, line 602](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionFunctorial.lean#L602). The attribute's comment: “the canonical map, for arbitrary immersions”.
 
 > **Stacks 04CP.**  Let
 > ```
@@ -505,7 +505,7 @@ noncomputable def conormalMapOfImmersions (i : Z ⟶ X) (i' : Z' ⟶ X') (f : Z 
 
 [Tag 04G2](https://stacks.math.columbia.edu/tag/04G2) in the Stacks Project.
 
-**`Stacks.Immersion.immersionConormalSheafMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean#L454). The attribute's comment: “part (3) for schemes”.
+**`Stacks.Immersion.immersionConormalSheafMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean#L454). The attribute's comment: “part (3) for schemes”.
 
 > **[Stacks Project, Tag 01R4] is functorial for stacked squares.** For two commutative squares
 > of immersions stacked vertically, the induced map of conormal sheaves of the composite square is
@@ -538,7 +538,7 @@ theorem immersionConormalSheafMap_comp {Z₁ Z₂ Z₃ X₁ X₂ X₃ : Scheme.{
         immersionConormalSheafMap i₁ i₂ f₁ g₁ (toShHom_square comm₁)
 ```
 
-**`AlgebraicGeometry.Space.conormalModuleOfImmersionRepresentedIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalLeadingIdentityStack.lean, line 657](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalLeadingIdentityStack.lean#L657). The attribute's comment: “part (2): for a commutative square of the big fppf site whose two horizontal morphisms are immersions of schemes, the comparison of part (1) carries the canonical map of conormal modules of 04CP to the associated module of the canonical map of Morphisms, Lemma 01R4”.
+**`AlgebraicGeometry.Space.conormalModuleOfImmersionRepresentedIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalLeadingIdentityStack.lean, line 658](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalLeadingIdentityStack.lean#L658). The attribute's comment: “part (2): for a commutative square of the big fppf site whose two horizontal morphisms are immersions of schemes, the comparison of part (1) carries the canonical map of conormal modules of 04CP to the associated module of the canonical map of Morphisms, Lemma 01R4”.
 
 > **Part (2) of [Stacks Project, Tag 04G2] at immersion generality.**
 >
@@ -579,7 +579,7 @@ theorem conormalModuleOfImmersionRepresentedIso_naturality (hsq : j ≫ a = b �
                 (toShHom_square_of_comp_eq B S hS j j' b a hsq)))
 ```
 
-**`AlgebraicGeometry.Space.isIso_comp_conormalMap_of_isIso_conormalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleComposition.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleComposition.lean#L574). The attribute's comment: “invertibility of the conormal map of a composite, on the small étale site of an algebraic space”.
+**`AlgebraicGeometry.Space.isIso_comp_conormalMap_of_isIso_conormalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleComposition.lean, line 574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleComposition.lean#L574). The attribute's comment: “invertibility of the conormal map of a composite, on the small étale site of an algebraic space”.
 
 > **Invertibility of the conormal map of a composite descends to the two factors**, part (3)
 > of [Stacks Project, Tag 04G2] in the form invertibility consumes.  If the conormal map of the
@@ -598,7 +598,7 @@ theorem isIso_comp_conormalMap_of_isIso_conormalMap
       conormalMap B S hS Z Z' g f hsq)
 ```
 
-**`AlgebraicGeometry.Space.conormalMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleComposition.lean, line 641](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleComposition.lean#L641). The attribute's comment: “part (3), for closed subspaces of algebraic spaces”.
+**`AlgebraicGeometry.Space.conormalMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleComposition.lean, line 641](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleComposition.lean#L641). The attribute's comment: “part (3), for closed subspaces of algebraic spaces”.
 
 > **The composition formula for conormal maps**, part (3) of [Stacks Project, Tag 04G2], for
 > closed subspaces of algebraic spaces.  For two vertically composable commutative squares of
@@ -620,7 +620,7 @@ theorem conormalMap_comp :
           conormalMap B S hS Z Z' g f hsq
 ```
 
-**`AlgebraicGeometry.Space.conormalMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleComposition.lean, line 641](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleComposition.lean#L641). The attribute's comment: “part (3): the composition law for the conormal map, on the small étale site of an algebraic space”.
+**`AlgebraicGeometry.Space.conormalMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleComposition.lean, line 641](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleComposition.lean#L641). The attribute's comment: “part (3): the composition law for the conormal map, on the small étale site of an algebraic space”.
 
 > **The composition formula for conormal maps**, part (3) of [Stacks Project, Tag 04G2], for
 > closed subspaces of algebraic spaces.  For two vertically composable commutative squares of
@@ -642,7 +642,7 @@ theorem conormalMap_comp :
           conormalMap B S hS Z Z' g f hsq
 ```
 
-**`AlgebraicGeometry.Space.conormalModuleClosedSubspaceRangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleSchemeAgreement.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleSchemeAgreement.lean#L427). The attribute's comment: “part (1): the conormal sheaf of a closed immersion of schemes of the site is the associated module of the conormal sheaf of Morphisms, Definition 01R2”.
+**`AlgebraicGeometry.Space.conormalModuleClosedSubspaceRangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleSchemeAgreement.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleSchemeAgreement.lean#L429). The attribute's comment: “part (1): the conormal sheaf of a closed immersion of schemes of the site is the associated module of the conormal sheaf of Morphisms, Definition 01R2”.
 
 > **Stacks 04G2, part (1).**  For a morphism `j` of the big fppf category over `S` whose
 > underlying morphism of schemes is a closed immersion, the conormal module of [Stacks Project,
@@ -666,7 +666,7 @@ noncomputable def conormalModuleClosedSubspaceRangeIso :
           (Stacks.Conormal.conormalSheaf ((BigFppfOver.toScheme B S hS).map j)))
 ```
 
-**`AlgebraicGeometry.Space.conormalModuleOfImmersionRepresentedIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleSchemeAgreementImmersion.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleSchemeAgreementImmersion.lean#L196). The attribute's comment: “part (1): for an immersion of schemes of the site, the conormal sheaf of 04CN of the represented morphism is the associated module of the conormal sheaf of Morphisms, Definition 01R2”.
+**`AlgebraicGeometry.Space.conormalModuleOfImmersionRepresentedIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleSchemeAgreementImmersion.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleSchemeAgreementImmersion.lean#L196). The attribute's comment: “part (1): for an immersion of schemes of the site, the conormal sheaf of 04CN of the represented morphism is the associated module of the conormal sheaf of Morphisms, Definition 01R2”.
 
 > **Stacks 04G2, part (1).**  For a morphism `j : R ⟶ V` of the big fppf category over `S`
 > whose underlying morphism of schemes is an **immersion**, the conormal module of [Stacks Project,
@@ -690,7 +690,7 @@ def conormalModuleOfImmersionRepresentedIso (j : R ⟶ V)
           (Stacks.Conormal.conormalSheaf ((BigFppfOver.toScheme B S hS).map j)))
 ```
 
-**`AlgebraicGeometry.Space.conormalMapOfImmersions_comp_of_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSquarePieceMapCompositionLaw.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSquarePieceMapCompositionLaw.lean#L359). The attribute's comment: “part (3): the composition law for the canonical map of 04CP, for arbitrary immersions of algebraic spaces”.
+**`AlgebraicGeometry.Space.conormalMapOfImmersions_comp_of_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSquarePieceMapCompositionLaw.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSquarePieceMapCompositionLaw.lean#L359). The attribute's comment: “part (3): the composition law for the canonical map of 04CP, for arbitrary immersions of algebraic spaces”.
 
 > **Stacks 04G2, part (3), at the generality the source states it.**  Let
 > ```
@@ -731,7 +731,7 @@ theorem conormalMapOfImmersions_comp_of_comm :
 
 [Tag 04CQ](https://stacks.math.columbia.edu/tag/04CQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.epi_conormalMap_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeCartesian.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeCartesian.lean#L269). The attribute's comment: “surjectivity, at an arbitrary fibre product square”.
+**`AlgebraicGeometry.Space.epi_conormalMap_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeCartesian.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeCartesian.lean#L269). The attribute's comment: “surjectivity, at an arbitrary fibre product square”.
 
 > **The surjectivity clause of [Stacks Project, Tag 04CQ].**  Let
 > ```
@@ -765,7 +765,7 @@ theorem epi_conormalMap_of_isPullback
     Epi (conormalMap B S hS Z Z' g f hsq)
 ```
 
-**`AlgebraicGeometry.Space.isIso_conormalMap_of_isPullback_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeCartesian.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeCartesian.lean#L289). The attribute's comment: “flat isomorphism, at an arbitrary fibre product square”.
+**`AlgebraicGeometry.Space.isIso_conormalMap_of_isPullback_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeCartesian.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeCartesian.lean#L289). The attribute's comment: “flat isomorphism, at an arbitrary fibre product square”.
 
 > **The flat clause of [Stacks Project, Tag 04CQ].**  For a fibre product square as in
 > `AgebraicGeometry.Space.epi_conormalMap_of_isPullback`, if `g` is flat — that is, if the
@@ -787,7 +787,7 @@ theorem isIso_conormalMap_of_isPullback_of_isFlat
     IsIso (conormalMap B S hS Z Z' g f hsq)
 ```
 
-**`AlgebraicGeometry.Space.epi_conormalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeEpi.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeEpi.lean#L230). The attribute's comment: “surjectivity”.
+**`AlgebraicGeometry.Space.epi_conormalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeEpi.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeEpi.lean#L230). The attribute's comment: “surjectivity”.
 
 > **The surjectivity clause of [Stacks Project, Tag 04CQ], for closed immersions.**  Let `Z'`
 > be a closed subspace of an algebraic space `X'` and let `g : X ⟶ X'` be a morphism of algebraic
@@ -814,7 +814,7 @@ theorem epi_conormalMap (g : X ⟶ X') (Z' : ClosedSubspaces B S hS X'.1) :
       (conormalEtaleRestrictionSquare B S hS g Z'))
 ```
 
-**`AlgebraicGeometry.Space.isIso_conormalMap_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeFlat.lean, line 783](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeFlat.lean#L783). The attribute's comment: “isomorphism when the morphism of small etale ringed topoi is flat”.
+**`AlgebraicGeometry.Space.isIso_conormalMap_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeFlat.lean, line 784](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeFlat.lean#L784). The attribute's comment: “isomorphism when the morphism of small etale ringed topoi is flat”.
 
 > **The flat clause of [Stacks Project, Tag 04CQ], for closed immersions.**  If `g` is flat —
 > that is, if the morphism of small étale ringed topoi it induces is flat in the sense of
@@ -830,7 +830,7 @@ theorem isIso_conormalMap_of_isFlat (g : X ⟶ X') (Z' : ClosedSubspaces B S hS 
       (conormalEtaleRestrictionSquare B S hS g Z'))
 ```
 
-**`AlgebraicGeometry.Space.epi_conormalMap_of_epi_idealSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFlatBaseChange.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFlatBaseChange.lean#L111). The attribute's comment: “surjectivity, reduced to surjectivity of the map of defining ideal sheaves”.
+**`AlgebraicGeometry.Space.epi_conormalMap_of_epi_idealSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFlatBaseChange.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleFlatBaseChange.lean#L111). The attribute's comment: “surjectivity, reduced to surjectivity of the map of defining ideal sheaves”.
 
 > **The surjectivity clause of Stacks 04CQ, reduced to the map of defining ideal sheaves.**
 > If the map `g^*𝓘' ⟶ 𝓘` of `AlgebraicGeometry.Space.idealSheafMap` attached to a commutative
@@ -855,7 +855,7 @@ theorem epi_conormalMap_of_epi_idealSheafMap
     Epi (conormalMap B S hS Z Z' g f hsq)
 ```
 
-**`AlgebraicGeometry.Space.epi_conormalMapOfImmersions_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfImmersionBaseChange.lean, line 577](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfImmersionBaseChange.lean#L577). The attribute's comment: “surjectivity, for a fibre product square of immersions”.
+**`AlgebraicGeometry.Space.epi_conormalMapOfImmersions_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfImmersionBaseChange.lean, line 577](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfImmersionBaseChange.lean#L577). The attribute's comment: “surjectivity, for a fibre product square of immersions”.
 
 > **The surjectivity clause of [Stacks Project, Tag 04CQ].**  Let
 > ```
@@ -877,7 +877,7 @@ theorem epi_conormalMapOfImmersions_of_isPullback
     Epi (conormalMapOfImmersions B S hS i i' f g hi hi' hcart.w)
 ```
 
-**`AlgebraicGeometry.Space.isIso_conormalMapOfImmersions_of_isPullback_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfImmersionBaseChange.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfImmersionBaseChange.lean#L606). The attribute's comment: “isomorphism when g is flat, for a fibre product square of immersions”.
+**`AlgebraicGeometry.Space.isIso_conormalMapOfImmersions_of_isPullback_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfImmersionBaseChange.lean, line 606](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfImmersionBaseChange.lean#L606). The attribute's comment: “isomorphism when g is flat, for a fibre product square of immersions”.
 
 > **The flat clause of [Stacks Project, Tag 04CQ].**  For a fibre product square as in
 > `AlgebraicGeometry.Space.epi_conormalMapOfImmersions_of_isPullback`, if `g` is flat as a
@@ -896,7 +896,7 @@ theorem isIso_conormalMapOfImmersions_of_isPullback_of_isFlat
 
 [Tag 06BD](https://stacks.math.columbia.edu/tag/06BD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.epi_conormalMap_closedSubspaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeEpi.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeEpi.lean#L255). The attribute's comment: “exactness at the right term”.
+**`AlgebraicGeometry.Space.epi_conormalMap_closedSubspaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeEpi.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleBaseChangeEpi.lean#L255). The attribute's comment: “exactness at the right term”.
 
 > **Exactness at the right term of [Stacks Project, Tag 06BD].**  Let `Y` and `Z` be closed
 > subspaces of an algebraic space `X` with `Z ⊆ Y`.  The canonical map `𝒞_{Z/X} ⟶ 𝒞_{Z/Y}` of
@@ -925,7 +925,7 @@ theorem epi_conormalMap_closedSubspaces (Y Z : ClosedSubspaces B S hS X.1)
       (conormalEtaleRestrictionSquare B S hS (subspaceInclusion B S hS X Y) Z))
 ```
 
-**`AlgebraicGeometry.Space.conormalMap_comp_conormalMap_closedSubspaces_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleClosedSubspacesComplex.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleClosedSubspacesComplex.lean#L106). The attribute's comment: “the sequence is a complex: the composite of i^*𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} and 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} is zero”.
+**`AlgebraicGeometry.Space.conormalMap_comp_conormalMap_closedSubspaces_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleClosedSubspacesComplex.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleClosedSubspacesComplex.lean#L106). The attribute's comment: “the sequence is a complex: the composite of i^*𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} and 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} is zero”.
 
 > **The composite-is-zero clause of [Stacks Project, Tag 06BD].**  Let `Y` and `Z` be closed
 > subspaces of an algebraic space `X` with `Z` contained in `Y` through `f : Z ⟶ Y`.  The composite
@@ -958,7 +958,7 @@ theorem conormalMap_comp_conormalMap_closedSubspaces_eq_zero
         (conormalEtaleRestrictionSquare B S hS (subspaceInclusion B S hS X Y) Z) = 0
 ```
 
-**`AlgebraicGeometry.Space.conormalSequenceImmersion_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceImmersion.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceImmersion.lean#L263). The attribute's comment: “the canonical exact sequence i^*C\_\{Y/X} → C\_\{Z/X} → C\_\{Z/Y} → 0 for immersions Z → Y → X of algebraic spaces, with the maps of Tag 04CP: the composite is zero, the sequence is exact at C\_\{Z/X}, and C\_\{Z/X} → C\_\{Z/Y} is an epimorphism”.
+**`AlgebraicGeometry.Space.conormalSequenceImmersion_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceImmersion.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceImmersion.lean#L263). The attribute's comment: “the canonical exact sequence i^*C\_\{Y/X} → C\_\{Z/X} → C\_\{Z/Y} → 0 for immersions Z → Y → X of algebraic spaces, with the maps of Tag 04CP: the composite is zero, the sequence is exact at C\_\{Z/X}, and C\_\{Z/X} → C\_\{Z/Y} is an epimorphism”.
 
 > **[Stacks Project, Tag 06BD].**  Let `i : Z ⟶ Y` and `j : Y ⟶ X` be immersions of algebraic
 > spaces over `S`.  The canonical sequence of `𝒪_Z`-modules
@@ -982,7 +982,7 @@ theorem conormalSequenceImmersion_exact :
         Epi (conormalSequenceImmersionSecondMap B S hS hX hY hZ i j hi hj)
 ```
 
-**`AlgebraicGeometry.Space.conormalMap_comp_conormalMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IdealSheafMapVanishing.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IdealSheafMapVanishing.lean#L214). The attribute's comment: “the vanishing of the composite of the two maps of the sequence”.
+**`AlgebraicGeometry.Space.conormalMap_comp_conormalMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IdealSheafMapVanishing.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IdealSheafMapVanishing.lean#L214). The attribute's comment: “the vanishing of the composite of the two maps of the sequence”.
 
 > **The vanishing of the composite in Stacks 06BD.**  Let `Y` and `Z` be closed subspaces of
 > an algebraic space `X` with `Z ⊆ Y`, let `j : Y ⟶ X` be the inclusion and let `p : j⁻¹(Z) ⟶ Z`
@@ -1017,7 +1017,7 @@ theorem conormalMap_comp_conormalMap_eq_zero {X : AlgebraicSpaces B S hS}
         (conormalEtaleRestrictionSquare B S hS (subspaceInclusion B S hS X Y) Z) = 0
 ```
 
-**`AlgebraicGeometry.Space.exact_conormalShortComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IdealSheafSequenceExact.lean, line 676](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IdealSheafSequenceExact.lean#L676). The attribute's comment: “exactness at the middle term”. References: SGA 6 VIII (2.2), “partial”.
+**`AlgebraicGeometry.Space.exact_conormalShortComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IdealSheafSequenceExact.lean, line 676](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IdealSheafSequenceExact.lean#L676). The attribute's comment: “exactness at the middle term”. References: SGA 6 VIII (2.2), “partial”.
 
 > **Exactness in the middle of [Stacks Project, Tag 06BD].**  Let `Y` and `Z` be closed
 > subspaces of an algebraic space `X` with `Z ⊆ Y`, let `j : Y ⟶ X` be the inclusion and let
@@ -1079,4 +1079,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.5, Tag 04CM](https://stacks.math.columbia.edu/tag/04CM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

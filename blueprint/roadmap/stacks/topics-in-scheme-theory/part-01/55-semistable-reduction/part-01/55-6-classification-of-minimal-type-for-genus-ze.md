@@ -8,13 +8,13 @@ proof: formalized
 
 # 55.6 Classification of minimal type for genus zero and one
 
-Section 55.6 of the Stacks Project, [Tag 0C8R](https://stacks.math.columbia.edu/tag/0C8R). 2 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 55.6 of the Stacks Project, [Tag 0C8R](https://stacks.math.columbia.edu/tag/0C8R). 2 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C8S, a lemma
 
 [Tag 0C8S](https://stacks.math.columbia.edu/tag/0C8S) in the Stacks Project.
 
-**`AlgebraicGeometry.NumericalType.componentCount_eq_one_of_isMinimal_of_genus_eq_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroOne.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroOne.lean#L47). The attribute's comment: “component count”.
+**`AlgebraicGeometry.NumericalType.componentCount_eq_one_of_isMinimal_of_genus_eq_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroOne.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroOne.lean#L47). The attribute's comment: “component count”.
 
 > A minimal numerical type of genus zero has exactly one component.
 
@@ -24,7 +24,7 @@ public lemma componentCount_eq_one_of_isMinimal_of_genus_eq_zero
     T.componentCount = 1
 ```
 
-**`AlgebraicGeometry.NumericalType.existsUnique_minimal_genus_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroOne.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroOne.lean#L58). The attribute's comment: “existence and uniqueness”.
+**`AlgebraicGeometry.NumericalType.existsUnique_minimal_genus_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroOne.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroOne.lean#L58). The attribute's comment: “existence and uniqueness”.
 
 > There is exactly one minimal numerical type of genus zero.
 
@@ -33,7 +33,7 @@ public lemma existsUnique_minimal_genus_zero :
     ∃! T : NumericalType, IsMinimal T ∧ genus T = 0
 ```
 
-**`AlgebraicGeometry.NumericalType.data_of_isMinimal_of_genus_eq_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroOne.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroOne.lean#L76). The attribute's comment: “explicit numerical type”.
+**`AlgebraicGeometry.NumericalType.data_of_isMinimal_of_genus_eq_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroOne.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/GenusZeroOne.lean#L76). The attribute's comment: “explicit numerical type”.
 
 > The minimal numerical type of genus zero, explicitly: a minimal numerical
 > type of genus zero has a single component, of multiplicity one, self-intersection
@@ -54,7 +54,7 @@ public lemma data_of_isMinimal_of_genus_eq_zero
 
 [Tag 0C8T](https://stacks.math.columbia.edu/tag/0C8T) in the Stacks Project.
 
-**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_neighborCount_le_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneChain.lean, line 1243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneChain.lean#L1243). The attribute's comment: “the classification when every component meets at most two others and there are at least five of them: the cycle, cases (16) and (25), and the chains, cases (17)-(21) for five components and cases (26), (27) and (28) for six or more”.
+**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_neighborCount_le_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneChain.lean, line 1245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneChain.lean#L1245). The attribute's comment: “the classification when every component meets at most two others and there are at least five of them: the cycle, cases (16) and (25), and the chains, cases (17)-(21) for five components and cases (26), (27) and (28) for six or more”.
 
 > **Stacks Project, Tag 0C8T** for a numerical type each of whose components meets at most two
 > others. With at least five components it is minimal of genus one exactly when it is the cycle —
@@ -70,7 +70,7 @@ public theorem isMinimal_and_genus_eq_one_iff_of_neighborCount_le_two (T : Numer
     (IsMinimal T ∧ genus T = 1) ↔ IsGenusOneConfiguration T
 ```
 
-**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_of_isGenusOneConfiguration`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/Basic.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/Basic.lean#L353). The attribute's comment: “every numerical type on the list is minimal of genus one”.
+**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_of_isGenusOneConfiguration`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/Basic.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/Basic.lean#L353). The attribute's comment: “every numerical type on the list is minimal of genus one”.
 
 > **Stacks Project, Tag 0C8T**, the direction from the list to minimality and genus one.
 > Every configuration on the genus-one list is a minimal numerical type of genus one.
@@ -80,7 +80,7 @@ public lemma isMinimal_and_genus_eq_one_of_isGenusOneConfiguration (T : Numerica
     (h : IsGenusOneConfiguration T) : IsMinimal T ∧ genus T = 1
 ```
 
-**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_componentCount_eq_one`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/Basic.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/Basic.lean#L402). The attribute's comment: “the classification for one component, case (1)”.
+**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_componentCount_eq_one`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/Basic.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/Basic.lean#L402). The attribute's comment: “the classification for one component, case (1)”.
 
 > **Stacks Project, Tag 0C8T**, case (1). A numerical type with a single component is
 > minimal of genus one exactly when it is the one-component genus-one configuration: diagonal
@@ -93,7 +93,7 @@ public lemma isMinimal_and_genus_eq_one_iff_of_componentCount_eq_one (T : Numeri
     (IsMinimal T ∧ genus T = 1) ↔ IsGenusOneConfiguration T
 ```
 
-**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_componentCount_eq_two`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/Basic.lean, line 556](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/Basic.lean#L556). The attribute's comment: “the classification for two components, cases (2) and (3)”.
+**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_componentCount_eq_two`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/Basic.lean, line 556](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/Basic.lean#L556). The attribute's comment: “the classification for two components, cases (2) and (3)”.
 
 > **Stacks Project, Tag 0C8T**, cases (2) and (3). A numerical type with two components is
 > minimal of genus one exactly when it is one of the first two exceptional configurations.
@@ -104,7 +104,7 @@ public lemma isMinimal_and_genus_eq_one_iff_of_componentCount_eq_two (T : Numeri
     (IsMinimal T ∧ genus T = 1) ↔ IsGenusOneConfiguration T
 ```
 
-**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_componentCount_eq_four`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/FourComponents.lean, line 687](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/FourComponents.lean#L687). The attribute's comment: “the classification for four components, cases (10)-(15)”.
+**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_componentCount_eq_four`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/FourComponents.lean, line 687](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/FourComponents.lean#L687). The attribute's comment: “the classification for four components, cases (10)-(15)”.
 
 > **Stacks Project, Tag 0C8T**, cases (10)-(15). A numerical type with four components is
 > minimal of genus one exactly when it is one of the six four-component exceptional
@@ -116,7 +116,7 @@ public lemma isMinimal_and_genus_eq_one_iff_of_componentCount_eq_four (T : Numer
     (IsMinimal T ∧ genus T = 1) ↔ IsGenusOneConfiguration T
 ```
 
-**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_componentCount_eq_three`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/ThreeComponents.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/ThreeComponents.lean#L459). The attribute's comment: “the classification for three components, cases (4)-(9)”.
+**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_componentCount_eq_three`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/ThreeComponents.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneConfiguration/ThreeComponents.lean#L459). The attribute's comment: “the classification for three components, cases (4)-(9)”.
 
 > **Stacks Project, Tag 0C8T**, cases (4)-(9). A numerical type with three components is
 > minimal of genus one exactly when it is one of the six three-component exceptional
@@ -128,7 +128,7 @@ public lemma isMinimal_and_genus_eq_one_iff_of_componentCount_eq_three (T : Nume
     (IsMinimal T ∧ genus T = 1) ↔ IsGenusOneConfiguration T
 ```
 
-**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_two_le_neighborCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneCycle.lean, line 1229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneCycle.lean#L1229). The attribute's comment: “the classification when every component meets at least two others and there are at least five of them: the n-cycle, case (16) for five components and case (25) for six or more”.
+**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_two_le_neighborCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneCycle.lean, line 1230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneCycle.lean#L1230). The attribute's comment: “the classification when every component meets at least two others and there are at least five of them: the n-cycle, case (16) for five components and case (25) for six or more”.
 
 > **Stacks Project, Tag 0C8T** for a numerical type each of whose components meets at least
 > two others and which has at least five components: it is minimal of genus one exactly when it
@@ -140,7 +140,7 @@ public theorem isMinimal_and_genus_eq_one_iff_of_two_le_neighborCount (T : Numer
     (IsMinimal T ∧ genus T = 1) ↔ IsGenusOneConfiguration T
 ```
 
-**`AlgebraicGeometry.NumericalType.exists_affine_extension_of_three_le_neighborCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneFork.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneFork.lean#L132). The attribute's comment: “the reduction for at least five components one of which meets three or more others — cases (22), (23), (24), (29), (30), (31), (32), (33) and (34): deleting a component that meets exactly one other leaves a Dynkin configuration whose shape, attachment vertex and level are one of seven explicit possibilities”.
+**`AlgebraicGeometry.NumericalType.exists_affine_extension_of_three_le_neighborCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneFork.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneFork.lean#L135). The attribute's comment: “the reduction for at least five components one of which meets three or more others — cases (22), (23), (24), (29), (30), (31), (32), (33) and (34): deleting a component that meets exactly one other leaves a Dynkin configuration whose shape, attachment vertex and level are one of seven explicit possibilities”.
 
 > **Stacks Project, Tag 0C8T**, the reduction for a component meeting three or more others.
 > In a minimal numerical type of genus one with at least five components, one of which meets three
@@ -171,7 +171,7 @@ public theorem exists_affine_extension_of_three_le_neighborCount (T : NumericalT
           (d = .E8 ∧ r₀.val = 0 ∧ k = 1))
 ```
 
-**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_three_le_neighborCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneForkClassification.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneForkClassification.lean#L119). The attribute's comment: “the classification when some component meets three or more others and there are at least five of them: cases (22), (23) and (24) for five components, the unbounded fork families (29), (30) and (31) for six or more, and the exceptional configurations (32), (33) and (34) on seven, eight and nine components”.
+**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_three_le_neighborCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneForkClassification.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneForkClassification.lean#L122). The attribute's comment: “the classification when some component meets three or more others and there are at least five of them: cases (22), (23) and (24) for five components, the unbounded fork families (29), (30) and (31) for six or more, and the exceptional configurations (32), (33) and (34) on seven, eight and nine components”.
 
 > **Stacks Project, Tag 0C8T** for a numerical type with at least five components one of
 > which meets three or more others: it is minimal of genus one exactly when it is one of the forks
@@ -183,7 +183,7 @@ public theorem isMinimal_and_genus_eq_one_iff_of_three_le_neighborCount (T : Num
     (IsMinimal T ∧ genus T = 1) ↔ IsGenusOneConfiguration T
 ```
 
-**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_five_le_componentCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneForkClassification.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneForkClassification.lean#L134). The attribute's comment: “the classification for at least five components: cases (16)-(34)”.
+**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff_of_five_le_componentCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneForkClassification.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneForkClassification.lean#L137). The attribute's comment: “the classification for at least five components: cases (16)-(34)”.
 
 > **Stacks Project, Tag 0C8T** for five or more components. A numerical type with at least
 > five components is minimal of genus one exactly when it is one of the configurations on the
@@ -198,7 +198,7 @@ public theorem isMinimal_and_genus_eq_one_iff_of_five_le_componentCount (T : Num
     (IsMinimal T ∧ genus T = 1) ↔ IsGenusOneConfiguration T
 ```
 
-**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneForkClassification.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneForkClassification.lean#L149). The attribute's comment: “the classification: a numerical type is minimal of genus one exactly when it is one of the thirty-four configurations listed, cases (1)-(34)”.
+**`AlgebraicGeometry.NumericalType.isMinimal_and_genus_eq_one_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneForkClassification.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Surfaces/GenusOneForkClassification.lean#L153). The attribute's comment: “the classification: a numerical type is minimal of genus one exactly when it is one of the thirty-four configurations listed, cases (1)-(34)”.
 
 > **Stacks Project, Tag 0C8T.** A numerical type is minimal of genus one exactly when it is
 > one of the thirty-four configurations of the list: the single component of genus one, case (1);
@@ -217,4 +217,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 55.6, Tag 0C8R](https://stacks.math.columbia.edu/tag/0C8R)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

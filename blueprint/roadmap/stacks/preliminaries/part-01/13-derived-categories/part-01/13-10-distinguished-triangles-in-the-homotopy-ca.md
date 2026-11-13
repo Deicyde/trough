@@ -1,30 +1,82 @@
 ---
 declaration: section
 origin: cited
-lean: HomotopyCategory.Pretriangulated.distinguishedTriangles, HomotopyCategory.distinguished_iff_iso_trianglehOfDegreewiseSplit, CochainComplex.trianglehOfDegreewiseSplit, exists_octahedron_of_termwiseSplitInj, HomotopyCategory.instIsTriangulatedIntUp, HomotopyCategory.instPretriangulatedIntUp, HomotopyCategory.isTriangulated_minus_bounded, CategoryTheory.Functor.isTriangulated_mapHomotopyCategoryMinus
+lean: HomotopyCategory.Plus.distinguished_iff_iso_trianglehOfDegreewiseSplit, HomotopyCategory.Minus.distinguished_iff_iso_trianglehOfDegreewiseSplit, HomotopyCategory.Bounded.distinguished_iff_iso_trianglehOfDegreewiseSplit, HomotopyCategory.Pretriangulated.distinguishedTriangles, HomotopyCategory.distinguished_iff_iso_trianglehOfDegreewiseSplit, CochainComplex.trianglehOfDegreewiseSplit, exists_octahedron_of_termwiseSplitInj, HomotopyCategory.instIsTriangulatedIntUp
 statement: formalized
 proof: formalized
 ---
 
 # 13.10 Distinguished triangles in the homotopy category
 
-Section 13.10 of the Stacks Project, [Tag 014P](https://stacks.math.columbia.edu/tag/014P). 7 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.10 of the Stacks Project, [Tag 014P](https://stacks.math.columbia.edu/tag/014P). 7 tags here are carried by 12 declarations of the repository (all in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 014Q, a definition
 
 [Tag 014Q](https://stacks.math.columbia.edu/tag/014Q) in the Stacks Project.
 
+**`HomotopyCategory.Plus.distinguished_iff_iso_trianglehOfDegreewiseSplit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 748](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L748). The attribute's comment: “the same definition for K⁺(A): distinguished iff isomorphic to the triangle of a termwise split exact sequence of bounded below complexes”.
+
+> **Stacks 014Q for `K⁺(C)`.** Let `C` be an additive category. A triangle of the homotopy
+> category `K⁺(C)` of bounded below complexes is distinguished if and only if it is isomorphic to
+> the triangle associated to a termwise split exact sequence `0 → X^• → Y^• → Z^• → 0` of bounded
+> below complexes, i.e. a short complex `S` of bounded below cochain complexes with a splitting
+> `σ n` of each degreewise evaluation. The isomorphism is taken in `K(C)`, into which `K⁺(C)`
+> embeds fully faithfully.
+
+```lean
+theorem Plus.distinguished_iff_iso_trianglehOfDegreewiseSplit (T : Triangle (Plus C)) :
+    T ∈ distTriang (Plus C) ↔ ∃ (S : ShortComplex (CochainComplex C ℤ))
+      (σ : ∀ n, (S.map (HomologicalComplex.eval C (ComplexShape.up ℤ) n)).Splitting),
+      CochainComplex.plus C S.X₁ ∧ CochainComplex.plus C S.X₂ ∧ CochainComplex.plus C S.X₃ ∧
+        Nonempty ((Plus.ι C).mapTriangle.obj T ≅ trianglehOfDegreewiseSplit S σ)
+```
+
+**`HomotopyCategory.Minus.distinguished_iff_iso_trianglehOfDegreewiseSplit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 775](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L775). The attribute's comment: “the same definition for K⁻(A): distinguished iff isomorphic to the triangle of a termwise split exact sequence of bounded above complexes”.
+
+> **Stacks 014Q for `K⁻(C)`.** Let `C` be an additive category. A triangle of the homotopy
+> category `K⁻(C)` of bounded above complexes is distinguished if and only if it is isomorphic to
+> the triangle associated to a termwise split exact sequence `0 → X^• → Y^• → Z^• → 0` of bounded
+> above complexes, i.e. a short complex `S` of bounded above cochain complexes with a splitting
+> `σ n` of each degreewise evaluation. The isomorphism is taken in `K(C)`, into which `K⁻(C)`
+> embeds fully faithfully.
+
+```lean
+theorem Minus.distinguished_iff_iso_trianglehOfDegreewiseSplit (T : Triangle (Minus C)) :
+    T ∈ distTriang (Minus C) ↔ ∃ (S : ShortComplex (CochainComplex C ℤ))
+      (σ : ∀ n, (S.map (HomologicalComplex.eval C (ComplexShape.up ℤ) n)).Splitting),
+      CochainComplex.minus C S.X₁ ∧ CochainComplex.minus C S.X₂ ∧ CochainComplex.minus C S.X₃ ∧
+        Nonempty ((Minus.ι C).mapTriangle.obj T ≅ trianglehOfDegreewiseSplit S σ)
+```
+
+**`HomotopyCategory.Bounded.distinguished_iff_iso_trianglehOfDegreewiseSplit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 802](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L802). The attribute's comment: “the same definition for K^b(A): distinguished iff isomorphic to the triangle of a termwise split exact sequence of bounded complexes”.
+
+> **Stacks 014Q for `K^b(C)`.** Let `C` be an additive category. A triangle of the homotopy
+> category `K^b(C)` of bounded complexes is distinguished if and only if it is isomorphic to the
+> triangle associated to a termwise split exact sequence `0 → X^• → Y^• → Z^• → 0` of bounded
+> complexes, i.e. a short complex `S` of bounded cochain complexes with a splitting `σ n` of each
+> degreewise evaluation. The isomorphism is taken in `K(C)`, into which `K^b(C)` embeds fully
+> faithfully.
+
+```lean
+theorem Bounded.distinguished_iff_iso_trianglehOfDegreewiseSplit (T : Triangle (Bounded C)) :
+    T ∈ distTriang (Bounded C) ↔ ∃ (S : ShortComplex (CochainComplex C ℤ))
+      (σ : ∀ n, (S.map (HomologicalComplex.eval C (ComplexShape.up ℤ) n)).Splitting),
+      CochainComplex.bounded C S.X₁ ∧ CochainComplex.bounded C S.X₂ ∧
+        CochainComplex.bounded C S.X₃ ∧
+        Nonempty ((Bounded.ι C).mapTriangle.obj T ≅ trianglehOfDegreewiseSplit S σ)
+```
+
 Declarations registered for the tag:
 
-- [`HomotopyCategory.Pretriangulated.distinguishedTriangles`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyCategory.Pretriangulated.distinguishedTriangles#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L82) (StacksFrontier): “the distinguished triangles of the homotopy category”. References: SGA 4½ Etat 0 (1.2.2); SGA 6 I (1.1.5), “partial”; SGA 4 XVII (1.1.1), “distinguished triangles”.
-- [`HomotopyCategory.distinguished_iff_iso_trianglehOfDegreewiseSplit`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyCategory.distinguished_iff_iso_trianglehOfDegreewiseSplit#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L88) (StacksFrontier): “a triangle is distinguished iff it is isomorphic to the triangle of a termwise split exact sequence”. References: SGA 4 XVII (1.1.1), “distinguished <=> split”; SGA 4½ Etat 0 (1.2.4), “ρ essentially surjective”; SGA 7 XIII (1.4.2), “partial”.
-- [`CochainComplex.trianglehOfDegreewiseSplit`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.trianglehOfDegreewiseSplit#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L90) (StacksFrontier): “the triangle associated to a termwise split exact sequence”. References: SGA 7 XIII (1.4.2), “partial”; SGA 4½ Etat 0 (1.2.4), “triangle from semi-split”; SGA 4 XVII (1.1.1), “triangle of split seq”.
+- [`HomotopyCategory.Pretriangulated.distinguishedTriangles`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyCategory.Pretriangulated.distinguishedTriangles#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L86) (StacksFrontier): “the distinguished triangles of the homotopy category”. References: SGA 4½ Etat 0 (1.2.2); SGA 6 I (1.1.5), “partial”; SGA 4 XVII (1.1.1), “distinguished triangles”.
+- [`HomotopyCategory.distinguished_iff_iso_trianglehOfDegreewiseSplit`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyCategory.distinguished_iff_iso_trianglehOfDegreewiseSplit#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L92) (StacksFrontier): “a triangle is distinguished iff it is isomorphic to the triangle of a termwise split exact sequence”. References: SGA 4 XVII (1.1.1), “distinguished <=> split”; SGA 4½ Etat 0 (1.2.4), “ρ essentially surjective”; SGA 7 XIII (1.4.2), “partial”.
+- [`CochainComplex.trianglehOfDegreewiseSplit`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.trianglehOfDegreewiseSplit#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L94) (StacksFrontier): “the triangle associated to a termwise split exact sequence”. References: SGA 7 XIII (1.4.2), “partial”; SGA 4½ Etat 0 (1.2.4), “triangle from semi-split”; SGA 4 XVII (1.1.1), “triangle of split seq”.
 
 ## Tag 014R, a lemma
 
 [Tag 014R](https://stacks.math.columbia.edu/tag/014R) in the Stacks Project.
 
-**`exists_octahedron_of_termwiseSplitInj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 1329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L1329).
+**`exists_octahedron_of_termwiseSplitInj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 1527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L1527).
 
 > **Theorem (Stacks Tag 014R, Lemma 13.10.2).**
 > Let `A` be an additive category and let `α : Acx → Bcx` and `β : Bcx → Ccx` be termwise split
@@ -69,15 +121,15 @@ theorem exists_octahedron_of_termwiseSplitInj
 
 Declarations registered for the tag:
 
-- [`HomotopyCategory.instIsTriangulatedIntUp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyCategory.instIsTriangulatedIntUp#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch13.lean#L60) (StacksFrontier): “`K(A)` with its translation functors and distinguished triangles is a triangulated category (TR4, on top of the pre-triangulated structure)”. References: SGA 4 Vbis (2.5.1), “more general”; SGA 4 XVII (2.2.9), “(i), special case”; SGA 4½ Etat 0 (1.2.2), “partial”; SGA 6 I (1.1.5), “K(C\_X) is triangulated”.
-- [`HomotopyCategory.instPretriangulatedIntUp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyCategory.instPretriangulatedIntUp#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch13.lean#L63) (StacksFrontier): “the pre-triangulated structure of `K(A)` (TR1, TR2, TR3)”. References: SGA 4 Vbis (2.5.1), “partial”; SGA 4 XVII (2.2.9), “(i)”; SGA 4½ Etat 0 (1.2.2), “partial”; SGA 6 I (1.1.5), “partial”.
-- [`HomotopyCategory.distinguished_iff_iso_trianglehOfDegreewiseSplit`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyCategory.distinguished_iff_iso_trianglehOfDegreewiseSplit#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch13.lean#L65) (StacksFrontier): “Mathlib's distinguished triangles (mapping cones) are the Stacks ones: the triangles isomorphic to the triangle of a termwise split exact sequence”. References: SGA 4 XVII (1.1.1), “distinguished <=> split”; SGA 4½ Etat 0 (1.2.4), “ρ essentially surjective”; SGA 7 XIII (1.4.2), “partial”.
+- [`HomotopyCategory.instIsTriangulatedIntUp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyCategory.instIsTriangulatedIntUp#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch13.lean#L60) (StacksFrontier): “`K(A)` with its translation functors and distinguished triangles is a triangulated category (TR4, on top of the pre-triangulated structure)”. References: SGA 4 Vbis (2.5.1), “more general”; SGA 4 XVII (2.2.9), “(i), special case”; SGA 4½ Etat 0 (1.2.2), “partial”; SGA 6 I (1.1.5), “K(C\_X) is triangulated”.
+- [`HomotopyCategory.instPretriangulatedIntUp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyCategory.instPretriangulatedIntUp#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch13.lean#L63) (StacksFrontier): “the pre-triangulated structure of `K(A)` (TR1, TR2, TR3)”. References: SGA 4 Vbis (2.5.1), “partial”; SGA 4 XVII (2.2.9), “(i)”; SGA 4½ Etat 0 (1.2.2), “partial”; SGA 6 I (1.1.5), “partial”.
+- [`HomotopyCategory.distinguished_iff_iso_trianglehOfDegreewiseSplit`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyCategory.distinguished_iff_iso_trianglehOfDegreewiseSplit#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch13.lean#L65) (StacksFrontier): “Mathlib's distinguished triangles (mapping cones) are the Stacks ones: the triangles isomorphic to the triangle of a termwise split exact sequence”. References: SGA 4 XVII (1.1.1), “distinguished <=> split”; SGA 4½ Etat 0 (1.2.4), “ρ essentially surjective”; SGA 7 XIII (1.4.2), “partial”.
 
 ## Tag 05RQ, a lemma
 
 [Tag 05RQ](https://stacks.math.columbia.edu/tag/05RQ) in the Stacks Project.
 
-**`HomotopyCategory.isTriangulated_minus_bounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L559). The attribute's comment: “K⁻(A) and K^b(A); K⁺(A) is (HomotopyCategory.plus A).IsTriangulated”. References: SGA 6 I (1.1.5), “K^-, K^b triangulated”; SGA 4 XVII (2.2.10), “(A), special case”; SGA 4½ Etat 0 (1.2.3), “(A)”.
+**`HomotopyCategory.isTriangulated_minus_bounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L569). The attribute's comment: “K⁻(A) and K^b(A); K⁺(A) is (HomotopyCategory.plus A).IsTriangulated”. References: SGA 6 I (1.1.5), “K^-, K^b triangulated”; SGA 4 XVII (2.2.10), “(A), special case”; SGA 4½ Etat 0 (1.2.3), “(A)”.
 
 > **Stacks 05RQ.** Let `A` be an additive category. The categories `K⁻(A)` of complexes
 > bounded above and `K^b(A)` of bounded complexes are full triangulated subcategories of `K(A)`.
@@ -95,7 +147,7 @@ public theorem isTriangulated_minus_bounded
 
 [Tag 014X](https://stacks.math.columbia.edu/tag/014X) in the Stacks Project.
 
-**`CategoryTheory.Functor.isTriangulated_mapHomotopyCategoryMinus`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L355). The attribute's comment: “bounded-above homotopy categories”.
+**`CategoryTheory.Functor.isTriangulated_mapHomotopyCategoryMinus`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L365). The attribute's comment: “bounded-above homotopy categories”.
 
 > **Stacks 014X (bounded above).** An additive functor induces an exact
 > functor on bounded-above homotopy categories of cochain complexes.
@@ -106,7 +158,7 @@ instance isTriangulated_mapHomotopyCategoryMinus [HasZeroObject C] [HasBinaryBip
     F.mapHomotopyCategoryMinus.IsTriangulated
 ```
 
-**`CategoryTheory.Functor.isTriangulated_mapHomotopyCategoryBounded`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L378). The attribute's comment: “bounded homotopy categories”.
+**`CategoryTheory.Functor.isTriangulated_mapHomotopyCategoryBounded`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L388). The attribute's comment: “bounded homotopy categories”.
 
 > **Stacks 014X (bounded).** An additive functor induces an exact functor on
 > bounded homotopy categories of cochain complexes.
@@ -117,7 +169,7 @@ instance isTriangulated_mapHomotopyCategoryBounded [HasZeroObject C] [HasBinaryB
     F.mapHomotopyCategoryBounded.IsTriangulated
 ```
 
-**`mapHomotopyCategory_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L393). The attribute's comment: “unbounded homotopy categories”. References: SGA 4 Vbis (2.5.1), “more general”; SGA 4 XVII (7.3.3), “special case”; SGA 6 I (1.1.5), “partial”.
+**`mapHomotopyCategory_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L403). The attribute's comment: “unbounded homotopy categories”. References: SGA 4 Vbis (2.5.1), “more general”; SGA 4 XVII (7.3.3), “special case”; SGA 6 I (1.1.5), “partial”.
 
 > **Stacks 014X (unbounded).** An additive functor induces an exact functor
 > on homotopy categories of cochain complexes.
@@ -131,7 +183,7 @@ theorem mapHomotopyCategory_isTriangulated
     (F.mapHomotopyCategory (ComplexShape.up ℤ)).IsTriangulated
 ```
 
-**`mapHomotopyCategoryPlus_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L404). The attribute's comment: “bounded-below homotopy categories”.
+**`mapHomotopyCategoryPlus_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L414). The attribute's comment: “bounded-below homotopy categories”.
 
 > **Stacks 014X (bounded below).** An additive functor induces an exact
 > functor on bounded-below homotopy categories of cochain complexes.
@@ -149,7 +201,7 @@ theorem mapHomotopyCategoryPlus_isTriangulated
 
 [Tag 0G6C](https://stacks.math.columbia.edu/tag/0G6C) in the Stacks Project.
 
-**`HomotopyCategory.exists_trianglehOfDegreewiseSplit_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 593](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L593). References: SGA 4 XVII (1.1.1), “every antidist. arises”; SGA 4½ Etat 0 (1.2.4), “ρ ess. surjective”.
+**`HomotopyCategory.exists_trianglehOfDegreewiseSplit_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean, line 603](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomotopyCategory/Triangulated.lean#L603). References: SGA 4 XVII (1.1.1), “every antidist. arises”; SGA 4½ Etat 0 (1.2.4), “ρ ess. surjective”.
 
 > **A distinguished triangle of `K(𝒜)` is the triangle of a degreewise split short exact
 > sequence of complexes, after changing its middle term.** Let `𝒜` be an additive category and
@@ -182,7 +234,7 @@ public theorem exists_trianglehOfDegreewiseSplit_of_distinguished
 
 [Tag 0G6E](https://stacks.math.columbia.edu/tag/0G6E) in the Stacks Project.
 
-**`Stacks.SheafOfModules.Tensor.bifunctor_homotopy_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean#L104). The attribute's comment: “(1)”. References: SGA 4 XVII (7.3.3), “special case”; SGA 4½ Etat 0 (1.3.3), “partial”.
+**`Stacks.SheafOfModules.Tensor.bifunctor_homotopy_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean#L104). The attribute's comment: “(1)”. References: SGA 4 XVII (7.3.3), “special case”; SGA 4½ Etat 0 (1.3.3), “partial”.
 
 > **The general reduction (Derived Categories, Remark 13.10.9 / tag 0G6E).**
 > For additive categories `A, B, D` with `D` having the countable direct sums
@@ -213,7 +265,7 @@ theorem bifunctor_homotopy_isTriangulated
           (letI := ξ; Φ.IsTriangulated)
 ```
 
-**`Stacks.SheafOfModules.Tensor.bifunctor_homotopy_flip_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean#L129). The attribute's comment: “(2)”. References: SGA 4 XVII (7.3.3), “special case”; SGA 4½ Etat 0 (1.3.3), “partial”.
+**`Stacks.SheafOfModules.Tensor.bifunctor_homotopy_flip_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean#L129). The attribute's comment: “(2)”. References: SGA 4 XVII (7.3.3), “special case”; SGA 4½ Etat 0 (1.3.3), “partial”.
 
 > **Stacks 0G6E (2).** The right-variable version of
 > `bifunctor_homotopy_isTriangulated`: fixing a complex of `B` and totalizing in the `A`
@@ -248,4 +300,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.10, Tag 014P](https://stacks.math.columbia.edu/tag/014P)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

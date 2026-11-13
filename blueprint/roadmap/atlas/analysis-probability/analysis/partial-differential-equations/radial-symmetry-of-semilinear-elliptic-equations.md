@@ -7,7 +7,7 @@ statement: formalized
 
 # Radial symmetry of semilinear elliptic equations
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/radial-symmetry-of-semilinear-elliptic-equations/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/radial-symmetry-of-semilinear-elliptic-equations/index.html).
 
 ## Semilinear Poisson problem on the unit ball
 
@@ -20,7 +20,7 @@ unit sphere.
 The definition imposes no differentiability on $u$; regularity is assumed separately where it is
 needed.
 
-Formalized by `MathlibExt.Analysis.RadialSymmetryWanted.Analysis.PDE.SolvesSemilinearPoisson`, a definition declared in [WantedExt/Analysis/RadialSymmetryWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/RadialSymmetryWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/radial-symmetry-of-semilinear-elliptic-equations/index.html#solves-semilinear-poisson).
+Formalized by `MathlibExt.Analysis.RadialSymmetryWanted.Analysis.PDE.SolvesSemilinearPoisson`, a definition declared in [WantedExt/Analysis/RadialSymmetryWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/RadialSymmetryWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/radial-symmetry-of-semilinear-elliptic-equations/index.html#solves-semilinear-poisson).
 
 ## Radial symmetry of positive solutions of the semilinear Poisson problem
 
@@ -36,7 +36,7 @@ $u(x) = v(\|x\|)$ for every $x \in \overline{B}$.
 
 - B. Gidas, W. M. Ni, and L. Nirenberg, Symmetry and related properties via the maximum principle, Comm. Math. Phys. 68 (1979), 209-243. Also stated as Theorem 2 (Radial symmetry) in L. C. Evans, Partial Differential Equations, Section 9 on nonvariational techniques. Problem `semilinear_poisson_radial_symmetry` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.RadialSymmetryWanted.Analysis.PDE.semilinear_poisson_radial_symmetry` is written with `theorem_wanted` in [WantedExt/Analysis/RadialSymmetryWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/RadialSymmetryWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/radial-symmetry-of-semilinear-elliptic-equations/index.html#semilinear-poisson-radial-symmetry).
+Stated but not proved: `MathlibExt.Analysis.RadialSymmetryWanted.Analysis.PDE.semilinear_poisson_radial_symmetry` is written with `theorem_wanted` in [WantedExt/Analysis/RadialSymmetryWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/RadialSymmetryWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/radial-symmetry-of-semilinear-elliptic-equations/index.html#semilinear-poisson-radial-symmetry).
 
 ## Depends on
 
@@ -45,4 +45,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Radial symmetry of semilinear elliptic equations](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/radial-symmetry-of-semilinear-elliptic-equations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/partial-differential-equations/radial-symmetry-of-semilinear-elliptic-equations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/partial-differential-equations/radial-symmetry-of-semilinear-elliptic-equations)

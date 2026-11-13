@@ -8,7 +8,7 @@ proof: formalized
 
 # Clausen functions
 
-16 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html).
+16 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html).
 
 ## Termwise bound for the Clausen series (Chapter 9, Entry 13)
 
@@ -16,7 +16,7 @@ For natural numbers $m$ and
 $k$ and a real number $x$, let $t_k = \sin((k+1)x)/(k+1)^m$ if $m$ is even and
 $t_k = \cos((k+1)x)/(k+1)^m$ if $m$ is odd. Then $\lvert t_k\rvert \le 1/(k+1)^m$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry13Bernoulligen.chapter9ClausenTerm_norm_bound`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-clausen-term-norm-bound).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry13Bernoulligen.chapter9ClausenTerm_norm_bound`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-clausen-term-norm-bound).
 
 ## Summability of the Clausen series (Chapter 9, Entry 13)
 
@@ -24,7 +24,7 @@ For every natural number
 $m \ge 2$ and every real $x$, the series $\sum_{k \ge 1} \sin(kx)/k^m$ (if $m$ is even) or
 $\sum_{k \ge 1} \cos(kx)/k^m$ (if $m$ is odd) is summable.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry13Bernoulligen.chapter9ClausenTerm_summable_of_two_le`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-clausen-term-summable-of-two-le).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry13Bernoulligen.chapter9ClausenTerm_summable_of_two_le`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-clausen-term-summable-of-two-le).
 
 ## Clausen function of order zero (Chapter 9, Entry 13)
 
@@ -33,7 +33,7 @@ of Entry 13 are defined by $C_1(x) = -\log\lvert 2\sin(x/2)\rvert$ and, for $m \
 $C_m(x) = \sum_{k \ge 1} \sin(kx)/k^m$ for even $m$ and $C_m(x) = \sum_{k \ge 1} \cos(kx)/k^m$
 for odd $m$, together with the convention $C_0 = 0$: for every real $x$, $C_0(x) = 0$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry13Bernoulligen.chapter9Clausen_zero`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-clausen-zero).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry13Bernoulligen.chapter9Clausen_zero`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-clausen-zero).
 
 ## Clausen function of order one (Chapter 9, Entry 13)
 
@@ -42,7 +42,7 @@ $C_1$ of Entry 13 is the log-sine function: for every real $x$,
 $C_1(x) = -\log\lvert 2\sin(x/2)\rvert$, with the convention $\log 0 = 0$, so that $C_1$ vanishes
 at the integer multiples of $2\pi$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry13Bernoulligen.chapter9Clausen_one`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-clausen-one).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry13Bernoulligen.chapter9Clausen_one`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-clausen-one).
 
 ## Clausen functions of order at least two as series (Chapter 9, Entry 13)
 
@@ -51,7 +51,7 @@ Clausen-type function of Entry 13, with $C_0 = 0$ and $C_1(x) = -\log\lvert 2\si
 For every natural number $m \ge 2$ and every real $x$, $C_m(x) = \sum_{k \ge 1} \sin(kx)/k^m$ if
 $m$ is even and $C_m(x) = \sum_{k \ge 1} \cos(kx)/k^m$ if $m$ is odd.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry13Bernoulligen.chapter9Clausen_of_two_le`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-clausen-of-two-le).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry13Bernoulligen.chapter9Clausen_of_two_le`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-clausen-of-two-le).
 
 ## Integrals of $u^n \cot(u/2)$ via Clausen functions (Chapter 9, Entry 13)
 
@@ -73,7 +73,7 @@ $$
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry13Bernoulligen.ramanujan_part1_ch9_entry13_bernoulligen`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean, line 1708](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean#L1708). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#ramanujan-part1-ch9-entry13-bernoulligen).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry13Bernoulligen.ramanujan_part1_ch9_entry13_bernoulligen`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean, line 1698](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry13Bernoulligen.lean#L1698). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#ramanujan-part1-ch9-entry13-bernoulligen).
 
 ## Bound on the terms of the odd Clausen series
 
@@ -82,7 +82,7 @@ $m$ is even and $s_m = \cos$ if $m$ is odd. Then for all integers $m, k \ge 0$ a
 
 $$\left| \frac{s_m((2k+1)x)}{(2k+1)^m} \right| \le \frac{1}{(2k+1)^m}.$$
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9OddClausenTerm_norm_bound`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-odd-clausen-term-norm-bound).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9OddClausenTerm_norm_bound`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-odd-clausen-term-norm-bound).
 
 ## Summability of the odd Clausen series for $m \ge 2$
 
@@ -90,7 +90,7 @@ Let $m \ge 2$ be an integer, and let
 $s_m = \sin$ if $m$ is even and $s_m = \cos$ if $m$ is odd. Then for every real $x$ the series
 $\sum_{k \ge 0} s_m((2k+1)x)/(2k+1)^m$ is summable.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9OddClausenTerm_summable_of_two_le`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-odd-clausen-term-summable-of-tw).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9OddClausenTerm_summable_of_two_le`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-odd-clausen-term-summable-of-tw).
 
 ## The odd Clausen function vanishes at $m = 0$
 
@@ -100,7 +100,7 @@ $m \ge 0$, are given by $O_1(x) = -\tfrac{1}{2} \log|\tan(x/2)|$, by
 $O_m(x) = \sum_{k \ge 0} s_m((2k+1)x)/(2k+1)^m$ for $m \ge 2$, and at $m = 0$ by zero: for every
 real $x$, $O_0(x) = 0$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9OddClausen_zero`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-odd-clausen-zero).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9OddClausen_zero`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-odd-clausen-zero).
 
 ## The odd Clausen function at $m = 1$
 
@@ -109,7 +109,7 @@ even and $s_m = \cos$ if $m$ is odd. The odd Clausen functions $O_m$, for intege
 given by $O_0 = 0$, by $O_m(x) = \sum_{k \ge 0} s_m((2k+1)x)/(2k+1)^m$ for $m \ge 2$, and at
 $m = 1$ by a closed form: for every real $x$, $O_1(x) = -\tfrac{1}{2} \log|\tan(x/2)|$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9OddClausen_one`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-odd-clausen-one).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9OddClausen_one`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-odd-clausen-one).
 
 ## The odd Clausen function as a series for $m \ge 2$
 
@@ -119,7 +119,7 @@ function $O_m(x)$ is $0$ if $m = 0$, is $-\tfrac{1}{2} \log|\tan(x/2)|$ if $m = 
 otherwise given by a series: for every integer $m \ge 2$ and every real $x$,
 $O_m(x) = \sum_{k \ge 0} s_m((2k+1)x)/(2k+1)^m$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9OddClausen_of_two_le`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-odd-clausen-of-two-le).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9OddClausen_of_two_le`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-odd-clausen-of-two-le).
 
 ## Odd-frequency part of a Clausen series for $m \ge 2$
 
@@ -128,7 +128,7 @@ $s_m = \sin$ if $m$ is even and $s_m = \cos$ if $m$ is odd. For real $x$ write
 $C_m(x) = \sum_{k \ge 1} s_m(kx)/k^m$ and $O_m(x) = \sum_{k \ge 0} s_m((2k+1)x)/(2k+1)^m$. Then
 for every real $x$, $O_m(x) = C_m(x) - 2^{-m} C_m(2x)$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9OddClausen_eq_clausen_sub_of_two_le`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-odd-clausen-eq-clausen-sub-of-t).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9OddClausen_eq_clausen_sub_of_two_le`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-odd-clausen-eq-clausen-sub-of-t).
 
 ## Odd-frequency part of a Clausen function for $0 < |x| < \pi$
 
@@ -139,7 +139,7 @@ $C_m(x) = \sum_{k \ge 1} s_m(kx)/k^m$ and $O_m(x) = \sum_{k \ge 0} s_m((2k+1)x)/
 for every integer $m \ge 1$ and every real $x$ with $x \ne 0$ and $|x| < \pi$,
 $O_m(x) = C_m(x) - 2^{-m} C_m(2x)$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9OddClausen_eq_clausen_sub`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-odd-clausen-eq-clausen-sub).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9OddClausen_eq_clausen_sub`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-odd-clausen-eq-clausen-sub).
 
 ## Odd reciprocal power sums in terms of $\zeta$
 
@@ -149,7 +149,7 @@ $$\sum_{k \ge 0} \frac{1}{(2k+1)^m} = \left(1 - \frac{1}{2^m}\right) \operatorna
 
 where $\zeta$ is the Riemann zeta function.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9ChiAtOne_eq_zeta`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-chi-at-one-eq-zeta).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9ChiAtOne_eq_zeta`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 475](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L475). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#chapter9-chi-at-one-eq-zeta).
 
 ## Entry 14 of Chapter 9: the integral of $u^n / (2 \sin u)$
 
@@ -174,7 +174,7 @@ Associated Functions*, Chapter 4.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.ramanujan_part1_ch9_entry14_xoversin`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 717](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L717). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#ramanujan-part1-ch9-entry14-xoversin).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.ramanujan_part1_ch9_entry14_xoversin`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean, line 703](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry14Xoversin.lean#L703). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#ramanujan-part1-ch9-entry14-xoversin).
 
 ## Entry 15 of Chapter 9: integrals of $u^n \cot u$ at $\pi/2 - x$
 
@@ -191,7 +191,7 @@ $$2^n F_n(\pi/2 - x) = \sum_{k=0}^{n} (-1)^k \binom{n}{k} \pi^{n-k}
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry15Xcot.ramanujan_part1_ch9_entry15_xcot`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry15Xcot.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry15Xcot.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#ramanujan-part1-ch9-entry15-xcot).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry15Xcot.ramanujan_part1_ch9_entry15_xcot`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry15Xcot.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry15Xcot.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html#ramanujan-part1-ch9-entry15-xcot).
 
 ## Depends on
 
@@ -200,4 +200,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Clausen functions](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/clausen-functions)

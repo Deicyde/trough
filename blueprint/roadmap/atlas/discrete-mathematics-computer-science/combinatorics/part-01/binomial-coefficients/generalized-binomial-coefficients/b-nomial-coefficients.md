@@ -8,14 +8,14 @@ proof: formalized
 
 # b-nomial coefficients
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html).
 
 ## Base polynomial of the $b$-nomial coefficients
 
 For a natural number $b \ge 2$, this is
 the integer polynomial $1 + X + \dots + X^{b-1} = \sum_{i=0}^{b-1} X^i \in \mathbb{Z}[X]$.
 
-Formalized by `MetaMathlibExt.bNomialBase`, a definition declared in [MathlibExt/NumberTheory/BNomialCoefficient.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BNomialCoefficient.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html#b-nomial-base).
+Formalized by `MetaMathlibExt.bNomialBase`, a definition declared in [MathlibExt/NumberTheory/BNomialCoefficient.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BNomialCoefficient.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html#b-nomial-base).
 
 ## Type-1 $b$-nomial coefficients
 
@@ -23,7 +23,7 @@ For natural numbers $b \ge 2$ and $n$ and an integer
 $k$, the type-1 $b$-nomial coefficient in row $n$ and column $k$ is the coefficient of $X^k$ in
 $(1 + X + \dots + X^{b-1})^n \in \mathbb{Z}[X]$ when $k \ge 0$, and $0$ when $k < 0$.
 
-Formalized by `MetaMathlibExt.bNomialCoefficient`, a definition declared in [MathlibExt/NumberTheory/BNomialCoefficient.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BNomialCoefficient.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html#b-nomial-coefficient).
+Formalized by `MetaMathlibExt.bNomialCoefficient`, a definition declared in [MathlibExt/NumberTheory/BNomialCoefficient.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BNomialCoefficient.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html#b-nomial-coefficient).
 
 ## Digits of a string extended by zero
 
@@ -34,7 +34,7 @@ $j < n$, and $0$ if $j \ge n$.
 Positions in $x$ run from left to right, so $x_0$ represents the source's leftmost digit $a_n$.
 In particular, position $n$ represents the stipulated boundary digit $a_0 = 0$.
 
-Formalized by `MetaMathlibExt.bNomialDigitAtOrZero`, a definition declared in [MathlibExt/NumberTheory/BNomialNumberType3.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BNomialNumberType3.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html#b-nomial-digit-at-or-zero).
+Formalized by `MetaMathlibExt.bNomialDigitAtOrZero`, a definition declared in [MathlibExt/NumberTheory/BNomialNumberType3.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BNomialNumberType3.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html#b-nomial-digit-at-or-zero).
 
 ## Indispensable digits
 
@@ -50,14 +50,14 @@ $r \le i + 1$, although only the boundary digit $a_0$ (position $n$) is defined.
 extension the final case $r = i + 1$ is unsatisfiable, so the predicate agrees with the source in
 every case the source defines.
 
-Formalized by `MetaMathlibExt.IsBNomialIndispensableDigit`, a definition declared in [MathlibExt/NumberTheory/BNomialNumberType3.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BNomialNumberType3.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html#is-bnomial-indispensable-digit).
+Formalized by `MetaMathlibExt.IsBNomialIndispensableDigit`, a definition declared in [MathlibExt/NumberTheory/BNomialNumberType3.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BNomialNumberType3.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html#is-bnomial-indispensable-digit).
 
 ## Number of indispensable digits
 
 For a $b$-ary string $x$ of finite length, $\iota(x)$ is
 the number of positions of $x$ that are indispensable.
 
-Formalized by `MetaMathlibExt.bNomialIndispensableDigitCount`, a definition declared in [MathlibExt/NumberTheory/BNomialNumberType3.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BNomialNumberType3.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html#b-nomial-indispensable-digit-count).
+Formalized by `MetaMathlibExt.bNomialIndispensableDigitCount`, a definition declared in [MathlibExt/NumberTheory/BNomialNumberType3.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BNomialNumberType3.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html#b-nomial-indispensable-digit-count).
 
 ## Type-3 b-nomial numbers
 
@@ -68,7 +68,7 @@ $k < 0$.
 
 At $n = 0$ this gives the source convention: the value is one at $k = 0$ and zero otherwise.
 
-Formalized by `MetaMathlibExt.bNomialNumberType3`, a definition declared in [MathlibExt/NumberTheory/BNomialNumberType3.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BNomialNumberType3.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html#b-nomial-number-type3).
+Formalized by `MetaMathlibExt.bNomialNumberType3`, a definition declared in [MathlibExt/NumberTheory/BNomialNumberType3.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BNomialNumberType3.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html#b-nomial-number-type3).
 
 ## Depends on
 
@@ -77,4 +77,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: b-nomial coefficients](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/b-nomial-coefficients)

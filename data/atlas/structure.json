@@ -1,7 +1,7 @@
 {
  "schema": "trough-atlas/v1",
  "repo": "Deicyde/atlas-lean",
- "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "rev": "035e1808ca0c8983682b74153a02628d616d77ce",
  "areas": [
   {
    "title": "Foundations & Logic",
@@ -61771,9 +61771,6 @@
             "prose": "",
             "entries": [
              {
-              "article": "Analysis/harmonic-analysis/discrete-fourier-analysis/donoho-stark-uncertainty-principle/norm-add-char-apply.md"
-             },
-             {
               "article": "Analysis/harmonic-analysis/discrete-fourier-analysis/donoho-stark-uncertainty-principle/sum-norm-sq-dft-fun.md"
              },
              {
@@ -66020,9 +66017,6 @@
               "article": "Analysis/operator-theory/integral-and-multiplication/ces-ro-operator/cesaro-mean.md"
              },
              {
-              "article": "Analysis/operator-theory/integral-and-multiplication/ces-ro-operator/cesaro-den-ne-zero.md"
-             },
-             {
               "article": "Analysis/operator-theory/integral-and-multiplication/ces-ro-operator/norm-cesaro-den.md"
              },
              {
@@ -66317,9 +66311,6 @@
               "article": "Analysis/operator-theory/integral-and-multiplication/multiplication-operators-on-l/essential-range-count-eq-range.md"
              },
              {
-              "article": "Analysis/operator-theory/integral-and-multiplication/multiplication-operators-on-l/mem-lp-const-top.md"
-             },
-             {
               "article": "Analysis/operator-theory/integral-and-multiplication/multiplication-operators-on-l/mem-lp-mul-of-mem-lp-top.md"
              },
              {
@@ -66441,12 +66432,6 @@
              },
              {
               "article": "Analysis/operator-theory/integral-and-multiplication/schur-test/schur-inf-single-le.md"
-             },
-             {
-              "article": "Analysis/operator-theory/integral-and-multiplication/schur-test/summable-sum-finset.md"
-             },
-             {
-              "article": "Analysis/operator-theory/integral-and-multiplication/schur-test/tsum-sum-finset.md"
              },
              {
               "article": "Analysis/operator-theory/integral-and-multiplication/schur-test/schur-inf-nonneg-of-row.md"
@@ -69997,989 +69982,1016 @@
      "node": {
       "path": "Probability/distributions",
       "title": "Probability distributions",
-      "prose": "Named discrete and continuous laws and their moments, densities, mass functions and tails (binomial, Poisson-binomial, hypergeometric, negative binomial, beta, gamma, exponential, chi-square, Dirichlet, multivariate Gaussian and Gaussian conditioning, Gaussian orthant probabilities), expectation under a probability mass function, joint laws, distribution functions, quantiles and medians; sampling laws used in tests (t, F) go to Linear models and multivariate analysis.",
+      "prose": "Named discrete and continuous laws and their moments, densities, mass functions and tails, together with distribution functions, quantiles, medians and joint laws; sampling laws used in tests (t, F) go to Linear models and multivariate analysis.",
       "entries": [
        {
         "node": {
-         "path": "Probability/distributions/beta-distribution",
-         "title": "Beta distribution",
-         "prose": "",
+         "path": "Probability/distributions/discrete",
+         "title": "Discrete distributions",
+         "prose": "Laws on countable sets, with their mass functions, moments and tails: discrete uniform, binomial, Poisson binomial, hypergeometric, multinomial, negative binomial and beta-binomial laws, and expectation under a probability mass function.",
          "entries": [
           {
-           "article": "Probability/distributions/beta-distribution/beta-pdfreal-nonneg.md"
+           "node": {
+            "path": "Probability/distributions/discrete/binomial-distribution",
+            "title": "Binomial distribution",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/discrete/binomial-distribution/integral-mul-sub-one-map-cast-binomial.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/binomial-distribution/integral-sq-map-cast-binomial.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/binomial-distribution/variance-id-map-cast-binomial.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/binomial-distribution/integral-mul-sub-one-of-has-law-binomial.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/binomial-distribution/integral-sq-of-has-law-binomial.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/binomial-distribution/variance-of-has-law-binomial.md"
+             }
+            ]
+           }
           },
           {
-           "article": "Probability/distributions/beta-distribution/integral-beta-pdfreal.md"
+           "node": {
+            "path": "Probability/distributions/discrete/discrete-uniform-distribution",
+            "title": "Discrete uniform distribution",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/discrete/discrete-uniform-distribution/uniform-finset.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/discrete-uniform-distribution/uniform-fintype.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/discrete-uniform-distribution/uniform-finset-univ.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/discrete-uniform-distribution/to-outer-measure-uniform-fintype-apply.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/discrete-uniform-distribution/to-measure-uniform-fintype-apply.md"
+             }
+            ]
+           }
           },
           {
-           "article": "Probability/distributions/beta-distribution/integral-beta-measure.md"
+           "node": {
+            "path": "Probability/distributions/discrete/expectation-under-a-probability-mass-function",
+            "title": "Expectation under a probability mass function",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-eq-tsum.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-eq-sum.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-const.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-uniform-of-fintype.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-add.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-sum.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-const-mul.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-smul.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-nonneg.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-le-expect.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-eq-sum-of-finite-support.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-map.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-indicator-decide.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-enn.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-enn-eq-sum.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-enn-const.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-enn-uniform-of-fintype.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-enn-add.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-enn-sum.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-enn-eq-sum-of-finite-support.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-enn-map.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/expectation-under-a-probability-mass-function/expect-enn-nat-cast-to-real.md"
+             }
+            ]
+           }
           },
           {
-           "article": "Probability/distributions/beta-distribution/beta-add-one-left.md"
+           "node": {
+            "path": "Probability/distributions/discrete/hypergeometric-distribution",
+            "title": "Hypergeometric distribution",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/discrete/hypergeometric-distribution/hypergeometric-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/hypergeometric-distribution/hypergeometric-real-nonneg.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/hypergeometric-distribution/hypergeometric-real-of-lt.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/hypergeometric-distribution/hypergeometric-real-of-lt-2.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/hypergeometric-distribution/sum-hypergeometric-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/hypergeometric-distribution/sum-mul-hypergeometric-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/hypergeometric-distribution/hypergeometric.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/hypergeometric-distribution/hypergeometric-apply.md"
+             }
+            ]
+           }
           },
           {
-           "article": "Probability/distributions/beta-distribution/beta-comm.md"
+           "node": {
+            "path": "Probability/distributions/discrete/multinomial-distribution",
+            "title": "Multinomial distribution",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/multinomial-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/multinomial-real-nonneg.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/multinomial-real-of-sum-ne.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/multinomial-real-eq-factorial-div.md"
+             },
+             {
+              "before": "## Support",
+              "article": "Probability/distributions/discrete/multinomial-distribution/multinomial-real-of-not-mem.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/sum-multinomial-real-eq-pow.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/sum-multinomial-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/multinomial.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/multinomial-apply.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/sum-mul-multinomial-real-eq.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/sum-mul-mul-multinomial-real-of-ne-eq.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/sum-mul-sub-one-multinomial-real-eq.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/sum-mul-multinomial-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/sum-mul-mul-multinomial-real-of-ne.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/sum-mul-sub-one-multinomial-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/sum-covariance-multinomial-real.md"
+             },
+             {
+              "before": "## Poisson Conditioning",
+              "article": "Probability/distributions/discrete/multinomial-distribution/cond-measure-real-eq-multinomial-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/multinomial-distribution/cond-measure-real-eq-binomial.md"
+             }
+            ]
+           }
           },
           {
-           "article": "Probability/distributions/beta-distribution/beta-pdfreal-mul-pow.md"
+           "node": {
+            "path": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution",
+            "title": "Negative binomial and beta-binomial distributions",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/neg-binomial-pmf.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/beta-binomial-pmf.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/asc-pochhammer-eval-add-eq-sum.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/sum-beta-binomial-pmf.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/has-sum-neg-binomial-pmf.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/sum-neg-binomial-pmf-mul.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/neg-binomial-pmf-mul-div-eq-beta-binomia.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/measure-cond-eq-beta-binomial-pmf.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/sum-mul-beta-binomial-pmf.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/sum-mul-sub-one-beta-binomial-pmf.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/variance-beta-binomial.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/poisson-mixture-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/poisson-mixture-real-zero.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/poisson-mixture-real-nonneg.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/poisson-mixture-real-dirac.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/has-sum-poisson-mixture-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/exp-neg-integral-le-poisson-mixture-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/has-sum-mul-poisson-mixture-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/has-sum-mul-sub-one-poisson-mixture-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/has-sum-sq-poisson-mixture-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/variance-poisson-mixture.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/cv-sq-poisson-mixture.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/neg-binomial-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/neg-binomial-real-eq-neg-binomial-pmf.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/neg-binomial-real-nonneg.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/neg-binomial-real-zero.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/neg-binomial-real-mean-zero.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/exp-neg-le-neg-binomial-real-zero.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/poisson-mixture-real-gamma-measure.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/poisson-mixture-real-gamma-measure-mean.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/has-sum-neg-binomial-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/has-sum-mul-neg-binomial-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/has-sum-sq-neg-binomial-real.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/variance-neg-binomial.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/gamma-pdfreal-posterior.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/posterior-predictive-gamma-poisson.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/immigration-death-flow.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/immigration-death-flow-poisson.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/fano-poisson.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/burst-death-flow.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/burst-death-flow-neg-binomial.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/negative-binomial-and-beta-binomial-distribution/fano-neg-binomial.md"
+             }
+            ]
+           }
           },
           {
-           "article": "Probability/distributions/beta-distribution/integral-pow-mul-one-sub-pow-beta-measur.md"
-          },
-          {
-           "article": "Probability/distributions/beta-distribution/integral-id-beta-measure.md"
-          },
-          {
-           "article": "Probability/distributions/beta-distribution/integral-sq-beta-measure.md"
-          },
-          {
-           "article": "Probability/distributions/beta-distribution/integral-mul-one-sub-beta-measure.md"
+           "node": {
+            "path": "Probability/distributions/discrete/poisson-binomial-distribution",
+            "title": "Poisson binomial distribution",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/is-bernoulli-rv.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/nonneg.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/le-one.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/has-law.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/measure-zero.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/measure-one.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/bernoulli-sum-pmf.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/bernoulli-sum-pmf-iid.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/poisson-binomial-pmf.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/poisson-binomial-tail.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/poisson-binomial-pmf-nonneg.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/poisson-binomial-pmf-eq-zero-of-lt.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/poisson-binomial-pmf-cons-zero.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/poisson-binomial-pmf-cons-succ.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/sum-poisson-binomial-pmf.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/poisson-binomial-tail-eq-add.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/poisson-binomial-tail-cons-succ.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/poisson-binomial-tail-mono.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/poisson-binomial-pmf-const.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/binomial-tail-mono.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/binomial-real-ici-mono.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/measure-le-sum-eq-poisson-binomial-tail.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/sum-range-abs-poisson-binomial-pmf-sub-p.md"
+             },
+             {
+              "article": "Probability/distributions/discrete/poisson-binomial-distribution/tsum-abs-poisson-binomial-pmf-sub-poisso.md"
+             }
+            ]
+           }
           }
          ]
         }
        },
        {
         "node": {
-         "path": "Probability/distributions/binomial-distribution",
-         "title": "Binomial distribution",
-         "prose": "",
+         "path": "Probability/distributions/continuous",
+         "title": "Continuous distributions",
+         "prose": "Laws with densities, with their moments and tails: beta, gamma, exponential, chi-square, log-normal, Weibull and Dirichlet laws, the multivariate normal law with Gaussian conditioning, orthant probabilities and L² limits, and the Poisson–Gamma duality.",
          "entries": [
           {
-           "article": "Probability/distributions/binomial-distribution/integral-mul-sub-one-map-cast-binomial.md"
+           "node": {
+            "path": "Probability/distributions/continuous/beta-distribution",
+            "title": "Beta distribution",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/continuous/beta-distribution/beta-pdfreal-nonneg.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/beta-distribution/integral-beta-pdfreal.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/beta-distribution/integral-beta-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/beta-distribution/beta-add-one-left.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/beta-distribution/beta-comm.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/beta-distribution/beta-pdfreal-mul-pow.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/beta-distribution/integral-pow-mul-one-sub-pow-beta-measur.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/beta-distribution/integral-id-beta-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/beta-distribution/integral-sq-beta-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/beta-distribution/integral-mul-one-sub-beta-measure.md"
+             }
+            ]
+           }
           },
           {
-           "article": "Probability/distributions/binomial-distribution/integral-sq-map-cast-binomial.md"
+           "node": {
+            "path": "Probability/distributions/continuous/chi-square-distribution",
+            "title": "Chi-square distribution",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/continuous/chi-square-distribution/chi-square-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/chi-square-distribution/mgf-sq-std-gaussian.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/chi-square-distribution/integrable-exp-mul-sq-std-gaussian.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/chi-square-distribution/iio-subset-integrable-exp-set-map-sq-std.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/chi-square-distribution/mgf-id-map-sq-std-gaussian.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/chi-square-distribution/mgf-gamma-measure-half-half-eq-sqrt.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/chi-square-distribution/mgf-chi-square-measure-of-lt.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/chi-square-distribution/integrable-exp-mul-chi-square-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/chi-square-distribution/gaussian-real-map-sq.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/chi-square-distribution/prod-mgf-chi-square-measure-eq-mgf-sum.md"
+             }
+            ]
+           }
           },
           {
-           "article": "Probability/distributions/binomial-distribution/variance-id-map-cast-binomial.md"
+           "node": {
+            "path": "Probability/distributions/continuous/closure-of-gaussian-laws-under-l-limits",
+            "title": "Closure of Gaussian laws under L² limits",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/continuous/closure-of-gaussian-laws-under-l-limits/of-tendsto-e-lp-norm-real.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/closure-of-gaussian-laws-under-l-limits/of-tendsto-e-lp-norm.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/closure-of-gaussian-laws-under-l-limits/of-tendsto-e-lp-norm-2.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/closure-of-gaussian-laws-under-l-limits/tendsto-integral-mul-of-tendsto-e-lp-nor.md"
+             }
+            ]
+           }
           },
           {
-           "article": "Probability/distributions/binomial-distribution/integral-mul-sub-one-of-has-law-binomial.md"
+           "node": {
+            "path": "Probability/distributions/continuous/dirichlet-distribution",
+            "title": "Dirichlet distribution",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/continuous/dirichlet-distribution/lintegral-ioo-rpow-mul-rpow.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/dirichlet-distribution/dirichlet-density.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/dirichlet-distribution/multi-beta.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/dirichlet-distribution/lintegral-dirichlet-density-zero.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/dirichlet-distribution/lintegral-fin-succ.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/dirichlet-distribution/lintegral-comp-smul-fin.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/dirichlet-distribution/dirichlet-density-cons-smul.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/dirichlet-distribution/lintegral-dirichlet-density.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/dirichlet-distribution/simplex-completion.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/dirichlet-distribution/dirichlet-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/dirichlet-distribution/ae-dirichlet-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/dirichlet-distribution/dirichlet-density-mul-prod-pow.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/dirichlet-distribution/with-density-prod-pow-dirichlet-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/dirichlet-distribution/lintegral-dirichlet-measure-apply.md"
+             }
+            ]
+           }
           },
           {
-           "article": "Probability/distributions/binomial-distribution/integral-sq-of-has-law-binomial.md"
+           "node": {
+            "path": "Probability/distributions/continuous/exponential-distribution",
+            "title": "Exponential distribution",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/continuous/exponential-distribution/gamma-pdfreal-one-eq-indicator.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/exponential-distribution/integral-exp-measure-eq-set-integral.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/exponential-distribution/integrable-exp-measure-iff.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/exponential-distribution/pow-eq-rpow-mul-exp.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/exponential-distribution/integrable-pow-exp-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/exponential-distribution/integral-pow-exp-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/exponential-distribution/integrable-id-exp-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/exponential-distribution/integral-id-exp-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/exponential-distribution/integral-sq-exp-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/exponential-distribution/variance-id-exp-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/exponential-distribution/integrable-of-exp-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/exponential-distribution/integral-eq-inv-of-exp-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/exponential-distribution/variance-eq-of-exp-measure.md"
+             }
+            ]
+           }
           },
           {
-           "article": "Probability/distributions/binomial-distribution/variance-of-has-law-binomial.md"
+           "node": {
+            "path": "Probability/distributions/continuous/gamma-distribution",
+            "title": "Gamma distribution",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/integrable-on-rpow-mul-exp-neg-mul-ioi.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/integrable-exp-mul-gamma-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/mgf-gamma-measure-of-lt.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/iio-subset-integrable-exp-set-gamma-meas.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/ioo-subset-interior-integrable-exp-set-g.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/gamma-add-nat-eq.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/pow-mul-rpow-sub-one.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/ae-nonneg-gamma-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/integrable-pow-mul-exp-neg-mul-gamma-mea.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/integral-pow-mul-exp-neg-mul-gamma-measu.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/integrable-id-gamma-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/integrable-sq-gamma-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/integrable-exp-set-gamma-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/eq-gamma-measure-of-mgf-eq.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/upper-incomplete-gamma.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/upper-incomplete-gamma-zero.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/upper-incomplete-gamma-one.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/upper-incomplete-gamma-add-one.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/upper-incomplete-gamma-nat-cast-add-one.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/integral-rpow-gamma-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/integral-id-gamma-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/integral-sq-gamma-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/mem-lp-id-gamma-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/variance-id-gamma-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/gamma-measure-map-const-mul.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/gamma-measure-real-ioi.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gamma-distribution/gamma-measure-real-ioi-nat-cast-add-one.md"
+             }
+            ]
+           }
+          },
+          {
+           "node": {
+            "path": "Probability/distributions/continuous/gaussian-conditioning",
+            "title": "Gaussian conditioning",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/noise-kernel.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/cond-distrib-add-of-indep-fun.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/cond-distrib-of-has-gaussian-law.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/map-to-euclidean-lin-multivariate-gaussi.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/map-add-multivariate-gaussian.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/block-row.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/covariance-inner-of-map-eq.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/cond-distrib-multivariate-gaussian.md"
+             },
+             {
+              "before": "## Independent Gaussian blocks",
+              "article": "Probability/distributions/continuous/gaussian-conditioning/pos-semidef-from-blocks-zero.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/inner-sum-equiv-prod-symm.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/char-fun-map-sum-equiv-prod-symm-prod.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/map-sum-equiv-prod-symm-prod-multivariat.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/map-sum-equiv-prod-symm-of-indep-fun.md"
+             },
+             {
+              "before": "## Linear-Gaussian models: marginals and Bayes' theorem",
+              "article": "Probability/distributions/continuous/gaussian-conditioning/from-blocks-one-zero-mul-mul-transpose.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/pos-semidef-from-blocks-linear.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/pos-semidef-sub-mul-inv-mul.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/map-linear-add-of-indep-fun.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/gaussian-conditioning/cond-distrib-linear-add-of-indep-fun.md"
+             }
+            ]
+           }
+          },
+          {
+           "node": {
+            "path": "Probability/distributions/continuous/multivariate-normal-distribution",
+            "title": "Multivariate normal distribution",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/continuous/multivariate-normal-distribution/std-gaussian-pdfreal.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/multivariate-normal-distribution/std-gaussian-density-measure.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/multivariate-normal-distribution/std-gaussian-eq-with-density.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/multivariate-normal-distribution/map-with-density-measurable-equiv.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/multivariate-normal-distribution/affine-equiv.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/multivariate-normal-distribution/map-affine-equiv-volume.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/multivariate-normal-distribution/multivariate-gaussian-pdfreal.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/multivariate-normal-distribution/norm-sq-sqrt-inv-apply.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/multivariate-normal-distribution/multivariate-gaussian-eq-with-density.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/multivariate-normal-distribution/sheppard-quadrant-probability-arcsine.md"
+             }
+            ]
+           }
+          },
+          {
+           "node": {
+            "path": "Probability/distributions/continuous/poisson-gamma-duality",
+            "title": "Poisson–Gamma duality",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/poisson-cdf.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/poisson-measure-real-iic.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/poisson-cdf-zero-left.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/poisson-cdf-zero-right.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/poisson-cdf-pos.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/has-deriv-at-poisson-cdf.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/continuous-poisson-cdf.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/gamma-measure-real-ioi-poisson-cdf.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/poisson-cdf-strict-anti-on.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/poisson-cdf-lt-poisson-cdf-succ.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/poisson-cdf-mono.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/tendsto-poisson-cdf-at-top.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/tendsto-poisson-cdf-nat.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/garwood-upper.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/garwood-upper-pos.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/poisson-cdf-garwood-upper.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/le-garwood-upper-iff.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/garwood-upper-strict-mono.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/garwood-upper-zero.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/poisson-measure-real-poisson-cdf-le.md"
+             },
+             {
+              "article": "Probability/distributions/continuous/poisson-gamma-duality/garwood-upper-coverage.md"
+             }
+            ]
+           }
           }
          ]
         }
        },
        {
         "node": {
-         "path": "Probability/distributions/closure-of-gaussian-laws-under-l-limits",
-         "title": "Closure of Gaussian laws under L² limits",
-         "prose": "",
+         "path": "Probability/distributions/distribution-functions",
+         "title": "Distribution functions and quantiles",
+         "prose": "Cumulative distribution functions and their continuity points, quantile functions and inverse transform sampling, medians, and joint laws.",
          "entries": [
           {
-           "article": "Probability/distributions/closure-of-gaussian-laws-under-l-limits/of-tendsto-e-lp-norm-real.md"
+           "node": {
+            "path": "Probability/distributions/distribution-functions/cumulative-distribution-function",
+            "title": "Cumulative distribution function",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/distribution-functions/cumulative-distribution-function/measure-singleton-eq-cdf-sub-left-lim.md"
+             },
+             {
+              "article": "Probability/distributions/distribution-functions/cumulative-distribution-function/continuous-at-cdf-iff-measure-singleton.md"
+             },
+             {
+              "article": "Probability/distributions/distribution-functions/cumulative-distribution-function/cdf-continuous-at-singleton-null.md"
+             },
+             {
+              "article": "Probability/distributions/distribution-functions/cumulative-distribution-function/cdf-continuous-at-frontier-iic-null.md"
+             },
+             {
+              "article": "Probability/distributions/distribution-functions/cumulative-distribution-function/measure-ioc-eq-of-real-cdf.md"
+             },
+             {
+              "article": "Probability/distributions/distribution-functions/cumulative-distribution-function/dense-cdf-continuity-points.md"
+             }
+            ]
+           }
           },
           {
-           "article": "Probability/distributions/closure-of-gaussian-laws-under-l-limits/of-tendsto-e-lp-norm.md"
+           "node": {
+            "path": "Probability/distributions/distribution-functions/median-of-a-distribution",
+            "title": "Median of a distribution",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/distribution-functions/median-of-a-distribution/is-median.md"
+             },
+             {
+              "article": "Probability/distributions/distribution-functions/median-of-a-distribution/integrable-abs-sub-iff.md"
+             },
+             {
+              "article": "Probability/distributions/distribution-functions/median-of-a-distribution/integral-abs-sub-le-of-is-median.md"
+             }
+            ]
+           }
           },
           {
-           "article": "Probability/distributions/closure-of-gaussian-laws-under-l-limits/of-tendsto-e-lp-norm-2.md"
+           "node": {
+            "path": "Probability/distributions/distribution-functions/quantile-function-and-inverse-transform-sampling",
+            "title": "Quantile function and inverse transform sampling",
+            "prose": "",
+            "entries": [
+             {
+              "article": "Probability/distributions/distribution-functions/quantile-function-and-inverse-transform-sampling/cdf-quantile.md"
+             },
+             {
+              "article": "Probability/distributions/distribution-functions/quantile-function-and-inverse-transform-sampling/cdf-quantile-mem.md"
+             },
+             {
+              "article": "Probability/distributions/distribution-functions/quantile-function-and-inverse-transform-sampling/cdf-quantile-le-iff.md"
+             },
+             {
+              "article": "Probability/distributions/distribution-functions/quantile-function-and-inverse-transform-sampling/cdf-quantile-mono-on.md"
+             },
+             {
+              "article": "Probability/distributions/distribution-functions/quantile-function-and-inverse-transform-sampling/measurable-cdf-quantile.md"
+             },
+             {
+              "article": "Probability/distributions/distribution-functions/quantile-function-and-inverse-transform-sampling/map-cdf-quantile-restrict-icc.md"
+             }
+            ]
+           }
           },
           {
-           "article": "Probability/distributions/closure-of-gaussian-laws-under-l-limits/tendsto-integral-mul-of-tendsto-e-lp-nor.md"
+           "article": "Probability/distributions/distribution-functions/map-prod-mk-apply-prod.md"
           }
          ]
         }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/cumulative-distribution-function",
-         "title": "Cumulative distribution function",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/cumulative-distribution-function/measure-singleton-eq-cdf-sub-left-lim.md"
-          },
-          {
-           "article": "Probability/distributions/cumulative-distribution-function/continuous-at-cdf-iff-measure-singleton.md"
-          },
-          {
-           "article": "Probability/distributions/cumulative-distribution-function/cdf-continuous-at-singleton-null.md"
-          },
-          {
-           "article": "Probability/distributions/cumulative-distribution-function/cdf-continuous-at-frontier-iic-null.md"
-          },
-          {
-           "article": "Probability/distributions/cumulative-distribution-function/measure-ioc-eq-of-real-cdf.md"
-          },
-          {
-           "article": "Probability/distributions/cumulative-distribution-function/dense-cdf-continuity-points.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/dirichlet-distribution",
-         "title": "Dirichlet distribution",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/dirichlet-distribution/lintegral-ioo-rpow-mul-rpow.md"
-          },
-          {
-           "article": "Probability/distributions/dirichlet-distribution/dirichlet-density.md"
-          },
-          {
-           "article": "Probability/distributions/dirichlet-distribution/multi-beta.md"
-          },
-          {
-           "article": "Probability/distributions/dirichlet-distribution/lintegral-dirichlet-density-zero.md"
-          },
-          {
-           "article": "Probability/distributions/dirichlet-distribution/lintegral-fin-succ.md"
-          },
-          {
-           "article": "Probability/distributions/dirichlet-distribution/lintegral-comp-smul-fin.md"
-          },
-          {
-           "article": "Probability/distributions/dirichlet-distribution/dirichlet-density-cons-smul.md"
-          },
-          {
-           "article": "Probability/distributions/dirichlet-distribution/lintegral-dirichlet-density.md"
-          },
-          {
-           "article": "Probability/distributions/dirichlet-distribution/simplex-completion.md"
-          },
-          {
-           "article": "Probability/distributions/dirichlet-distribution/dirichlet-measure.md"
-          },
-          {
-           "article": "Probability/distributions/dirichlet-distribution/ae-dirichlet-measure.md"
-          },
-          {
-           "article": "Probability/distributions/dirichlet-distribution/dirichlet-density-mul-prod-pow.md"
-          },
-          {
-           "article": "Probability/distributions/dirichlet-distribution/with-density-prod-pow-dirichlet-measure.md"
-          },
-          {
-           "article": "Probability/distributions/dirichlet-distribution/lintegral-dirichlet-measure-apply.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/discrete-uniform-distribution",
-         "title": "Discrete uniform distribution",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/discrete-uniform-distribution/uniform-finset.md"
-          },
-          {
-           "article": "Probability/distributions/discrete-uniform-distribution/uniform-fintype.md"
-          },
-          {
-           "article": "Probability/distributions/discrete-uniform-distribution/uniform-finset-univ.md"
-          },
-          {
-           "article": "Probability/distributions/discrete-uniform-distribution/to-outer-measure-uniform-fintype-apply.md"
-          },
-          {
-           "article": "Probability/distributions/discrete-uniform-distribution/to-measure-uniform-fintype-apply.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/expectation-under-a-probability-mass-function",
-         "title": "Expectation under a probability mass function",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-eq-tsum.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-eq-sum.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-const.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-uniform-of-fintype.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-add.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-sum.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-const-mul.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-smul.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-nonneg.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-le-expect.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-eq-sum-of-finite-support.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-map.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-indicator-decide.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-enn.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-enn-eq-sum.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-enn-const.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-enn-uniform-of-fintype.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-enn-add.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-enn-sum.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-enn-eq-sum-of-finite-support.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-enn-map.md"
-          },
-          {
-           "article": "Probability/distributions/expectation-under-a-probability-mass-function/expect-enn-nat-cast-to-real.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/gamma-distribution",
-         "title": "Gamma distribution",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/gamma-distribution/integrable-on-rpow-mul-exp-neg-mul-ioi.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/integrable-exp-mul-gamma-measure.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/mgf-gamma-measure-of-lt.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/iio-subset-integrable-exp-set-gamma-meas.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/ioo-subset-interior-integrable-exp-set-g.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/gamma-add-nat-eq.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/pow-mul-rpow-sub-one.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/ae-nonneg-gamma-measure.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/integrable-pow-mul-exp-neg-mul-gamma-mea.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/integral-pow-mul-exp-neg-mul-gamma-measu.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/integrable-id-gamma-measure.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/integrable-sq-gamma-measure.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/integrable-exp-set-gamma-measure.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/eq-gamma-measure-of-mgf-eq.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/upper-incomplete-gamma.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/upper-incomplete-gamma-zero.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/upper-incomplete-gamma-one.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/upper-incomplete-gamma-add-one.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/upper-incomplete-gamma-nat-cast-add-one.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/integral-rpow-gamma-measure.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/integral-id-gamma-measure.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/integral-sq-gamma-measure.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/mem-lp-id-gamma-measure.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/variance-id-gamma-measure.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/gamma-measure-map-const-mul.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/gamma-measure-real-ioi.md"
-          },
-          {
-           "article": "Probability/distributions/gamma-distribution/gamma-measure-real-ioi-nat-cast-add-one.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/chi-square-distribution",
-         "title": "Chi-square distribution",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/chi-square-distribution/chi-square-measure.md"
-          },
-          {
-           "article": "Probability/distributions/chi-square-distribution/mgf-sq-std-gaussian.md"
-          },
-          {
-           "article": "Probability/distributions/chi-square-distribution/integrable-exp-mul-sq-std-gaussian.md"
-          },
-          {
-           "article": "Probability/distributions/chi-square-distribution/iio-subset-integrable-exp-set-map-sq-std.md"
-          },
-          {
-           "article": "Probability/distributions/chi-square-distribution/mgf-id-map-sq-std-gaussian.md"
-          },
-          {
-           "article": "Probability/distributions/chi-square-distribution/mgf-gamma-measure-half-half-eq-sqrt.md"
-          },
-          {
-           "article": "Probability/distributions/chi-square-distribution/mgf-chi-square-measure-of-lt.md"
-          },
-          {
-           "article": "Probability/distributions/chi-square-distribution/integrable-exp-mul-chi-square-measure.md"
-          },
-          {
-           "article": "Probability/distributions/chi-square-distribution/gaussian-real-map-sq.md"
-          },
-          {
-           "article": "Probability/distributions/chi-square-distribution/prod-mgf-chi-square-measure-eq-mgf-sum.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/exponential-distribution",
-         "title": "Exponential distribution",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/exponential-distribution/gamma-pdfreal-one-eq-indicator.md"
-          },
-          {
-           "article": "Probability/distributions/exponential-distribution/integral-exp-measure-eq-set-integral.md"
-          },
-          {
-           "article": "Probability/distributions/exponential-distribution/integrable-exp-measure-iff.md"
-          },
-          {
-           "article": "Probability/distributions/exponential-distribution/pow-eq-rpow-mul-exp.md"
-          },
-          {
-           "article": "Probability/distributions/exponential-distribution/integrable-pow-exp-measure.md"
-          },
-          {
-           "article": "Probability/distributions/exponential-distribution/integral-pow-exp-measure.md"
-          },
-          {
-           "article": "Probability/distributions/exponential-distribution/integrable-id-exp-measure.md"
-          },
-          {
-           "article": "Probability/distributions/exponential-distribution/integral-id-exp-measure.md"
-          },
-          {
-           "article": "Probability/distributions/exponential-distribution/integral-sq-exp-measure.md"
-          },
-          {
-           "article": "Probability/distributions/exponential-distribution/variance-id-exp-measure.md"
-          },
-          {
-           "article": "Probability/distributions/exponential-distribution/integrable-of-exp-measure.md"
-          },
-          {
-           "article": "Probability/distributions/exponential-distribution/integral-eq-inv-of-exp-measure.md"
-          },
-          {
-           "article": "Probability/distributions/exponential-distribution/variance-eq-of-exp-measure.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/gaussian-conditioning",
-         "title": "Gaussian conditioning",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/gaussian-conditioning/noise-kernel.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/cond-distrib-add-of-indep-fun.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/cond-distrib-of-has-gaussian-law.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/map-to-euclidean-lin-multivariate-gaussi.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/map-add-multivariate-gaussian.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/block-row.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/covariance-inner-of-map-eq.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/cond-distrib-multivariate-gaussian.md"
-          },
-          {
-           "before": "## Independent Gaussian blocks",
-           "article": "Probability/distributions/gaussian-conditioning/pos-semidef-from-blocks-zero.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/inner-sum-equiv-prod-symm.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/char-fun-map-sum-equiv-prod-symm-prod.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/map-sum-equiv-prod-symm-prod-multivariat.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/map-sum-equiv-prod-symm-of-indep-fun.md"
-          },
-          {
-           "before": "## Linear-Gaussian models: marginals and Bayes' theorem",
-           "article": "Probability/distributions/gaussian-conditioning/from-blocks-one-zero-mul-mul-transpose.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/pos-semidef-from-blocks-linear.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/pos-semidef-sub-mul-inv-mul.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/map-linear-add-of-indep-fun.md"
-          },
-          {
-           "article": "Probability/distributions/gaussian-conditioning/cond-distrib-linear-add-of-indep-fun.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/hypergeometric-distribution",
-         "title": "Hypergeometric distribution",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/hypergeometric-distribution/hypergeometric-real.md"
-          },
-          {
-           "article": "Probability/distributions/hypergeometric-distribution/hypergeometric-real-nonneg.md"
-          },
-          {
-           "article": "Probability/distributions/hypergeometric-distribution/hypergeometric-real-of-lt.md"
-          },
-          {
-           "article": "Probability/distributions/hypergeometric-distribution/hypergeometric-real-of-lt-2.md"
-          },
-          {
-           "article": "Probability/distributions/hypergeometric-distribution/sum-hypergeometric-real.md"
-          },
-          {
-           "article": "Probability/distributions/hypergeometric-distribution/sum-mul-hypergeometric-real.md"
-          },
-          {
-           "article": "Probability/distributions/hypergeometric-distribution/hypergeometric.md"
-          },
-          {
-           "article": "Probability/distributions/hypergeometric-distribution/hypergeometric-apply.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/median-of-a-distribution",
-         "title": "Median of a distribution",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/median-of-a-distribution/is-median.md"
-          },
-          {
-           "article": "Probability/distributions/median-of-a-distribution/integrable-abs-sub-iff.md"
-          },
-          {
-           "article": "Probability/distributions/median-of-a-distribution/integral-abs-sub-le-of-is-median.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/multinomial-distribution",
-         "title": "Multinomial distribution",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/multinomial-distribution/multinomial-real.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/multinomial-real-nonneg.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/multinomial-real-of-sum-ne.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/multinomial-real-eq-factorial-div.md"
-          },
-          {
-           "before": "## Support",
-           "article": "Probability/distributions/multinomial-distribution/multinomial-real-of-not-mem.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/sum-multinomial-real-eq-pow.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/sum-multinomial-real.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/multinomial.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/multinomial-apply.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/sum-mul-multinomial-real-eq.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/sum-mul-mul-multinomial-real-of-ne-eq.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/sum-mul-sub-one-multinomial-real-eq.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/sum-mul-multinomial-real.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/sum-mul-mul-multinomial-real-of-ne.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/sum-mul-sub-one-multinomial-real.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/sum-covariance-multinomial-real.md"
-          },
-          {
-           "before": "## Poisson Conditioning",
-           "article": "Probability/distributions/multinomial-distribution/cond-measure-real-eq-multinomial-real.md"
-          },
-          {
-           "article": "Probability/distributions/multinomial-distribution/cond-measure-real-eq-binomial.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/multivariate-normal-distribution",
-         "title": "Multivariate normal distribution",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/multivariate-normal-distribution/std-gaussian-pdfreal.md"
-          },
-          {
-           "article": "Probability/distributions/multivariate-normal-distribution/std-gaussian-density-measure.md"
-          },
-          {
-           "article": "Probability/distributions/multivariate-normal-distribution/std-gaussian-eq-with-density.md"
-          },
-          {
-           "article": "Probability/distributions/multivariate-normal-distribution/map-with-density-measurable-equiv.md"
-          },
-          {
-           "article": "Probability/distributions/multivariate-normal-distribution/affine-equiv.md"
-          },
-          {
-           "article": "Probability/distributions/multivariate-normal-distribution/map-affine-equiv-volume.md"
-          },
-          {
-           "article": "Probability/distributions/multivariate-normal-distribution/multivariate-gaussian-pdfreal.md"
-          },
-          {
-           "article": "Probability/distributions/multivariate-normal-distribution/norm-sq-sqrt-inv-apply.md"
-          },
-          {
-           "article": "Probability/distributions/multivariate-normal-distribution/multivariate-gaussian-eq-with-density.md"
-          },
-          {
-           "article": "Probability/distributions/multivariate-normal-distribution/sheppard-quadrant-probability-arcsine.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/negative-binomial-and-beta-binomial-distribution",
-         "title": "Negative binomial and beta-binomial distributions",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/neg-binomial-pmf.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/beta-binomial-pmf.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/asc-pochhammer-eval-add-eq-sum.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/sum-beta-binomial-pmf.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/has-sum-neg-binomial-pmf.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/sum-neg-binomial-pmf-mul.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/neg-binomial-pmf-mul-div-eq-beta-binomia.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/measure-cond-eq-beta-binomial-pmf.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/sum-mul-beta-binomial-pmf.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/sum-mul-sub-one-beta-binomial-pmf.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/variance-beta-binomial.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/poisson-mixture-real.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/poisson-mixture-real-zero.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/poisson-mixture-real-nonneg.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/poisson-mixture-real-dirac.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/has-sum-poisson-mixture-real.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/exp-neg-integral-le-poisson-mixture-real.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/has-sum-mul-poisson-mixture-real.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/has-sum-mul-sub-one-poisson-mixture-real.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/has-sum-sq-poisson-mixture-real.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/variance-poisson-mixture.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/cv-sq-poisson-mixture.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/neg-binomial-real.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/neg-binomial-real-eq-neg-binomial-pmf.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/neg-binomial-real-nonneg.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/neg-binomial-real-zero.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/neg-binomial-real-mean-zero.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/exp-neg-le-neg-binomial-real-zero.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/poisson-mixture-real-gamma-measure.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/poisson-mixture-real-gamma-measure-mean.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/has-sum-neg-binomial-real.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/has-sum-mul-neg-binomial-real.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/has-sum-sq-neg-binomial-real.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/variance-neg-binomial.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/gamma-pdfreal-posterior.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/posterior-predictive-gamma-poisson.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/immigration-death-flow.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/immigration-death-flow-poisson.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/fano-poisson.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/burst-death-flow.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/burst-death-flow-neg-binomial.md"
-          },
-          {
-           "article": "Probability/distributions/negative-binomial-and-beta-binomial-distribution/fano-neg-binomial.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/poisson-binomial-distribution",
-         "title": "Poisson binomial distribution",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/is-bernoulli-rv.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/nonneg.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/le-one.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/has-law.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/measure-zero.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/measure-one.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/bernoulli-sum-pmf.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/bernoulli-sum-pmf-iid.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/poisson-binomial-pmf.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/poisson-binomial-tail.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/poisson-binomial-pmf-nonneg.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/poisson-binomial-pmf-eq-zero-of-lt.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/poisson-binomial-pmf-cons-zero.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/poisson-binomial-pmf-cons-succ.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/sum-poisson-binomial-pmf.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/poisson-binomial-tail-eq-add.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/poisson-binomial-tail-cons-succ.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/poisson-binomial-tail-mono.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/poisson-binomial-pmf-const.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/binomial-tail-mono.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/binomial-real-ici-mono.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/measure-le-sum-eq-poisson-binomial-tail.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/sum-range-abs-poisson-binomial-pmf-sub-p.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-binomial-distribution/tsum-abs-poisson-binomial-pmf-sub-poisso.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/poisson-gamma-duality",
-         "title": "Poisson–Gamma duality",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/poisson-cdf.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/poisson-measure-real-iic.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/poisson-cdf-zero-left.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/poisson-cdf-zero-right.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/poisson-cdf-pos.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/has-deriv-at-poisson-cdf.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/continuous-poisson-cdf.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/gamma-measure-real-ioi-poisson-cdf.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/poisson-cdf-strict-anti-on.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/poisson-cdf-lt-poisson-cdf-succ.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/poisson-cdf-mono.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/tendsto-poisson-cdf-at-top.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/tendsto-poisson-cdf-nat.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/garwood-upper.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/garwood-upper-pos.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/poisson-cdf-garwood-upper.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/le-garwood-upper-iff.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/garwood-upper-strict-mono.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/garwood-upper-zero.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/poisson-measure-real-poisson-cdf-le.md"
-          },
-          {
-           "article": "Probability/distributions/poisson-gamma-duality/garwood-upper-coverage.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "Probability/distributions/quantile-function-and-inverse-transform-sampling",
-         "title": "Quantile function and inverse transform sampling",
-         "prose": "",
-         "entries": [
-          {
-           "article": "Probability/distributions/quantile-function-and-inverse-transform-sampling/cdf-quantile.md"
-          },
-          {
-           "article": "Probability/distributions/quantile-function-and-inverse-transform-sampling/cdf-quantile-mem.md"
-          },
-          {
-           "article": "Probability/distributions/quantile-function-and-inverse-transform-sampling/cdf-quantile-le-iff.md"
-          },
-          {
-           "article": "Probability/distributions/quantile-function-and-inverse-transform-sampling/cdf-quantile-mono-on.md"
-          },
-          {
-           "article": "Probability/distributions/quantile-function-and-inverse-transform-sampling/measurable-cdf-quantile.md"
-          },
-          {
-           "article": "Probability/distributions/quantile-function-and-inverse-transform-sampling/map-cdf-quantile-restrict-icc.md"
-          }
-         ]
-        }
-       },
-       {
-        "article": "Probability/distributions/map-prod-mk-apply-prod.md"
        }
       ]
      }
@@ -71439,6 +71451,18 @@
           },
           {
            "article": "Probability/convergence-of-measures/helly-s-selection-theorem/helly-selection.md"
+          }
+         ]
+        }
+       },
+       {
+        "node": {
+         "path": "Probability/convergence-of-measures/slutsky-s-theorem-and-the-delta-method",
+         "title": "Slutsky's theorem and the delta method",
+         "prose": "",
+         "entries": [
+          {
+           "article": "Probability/convergence-of-measures/slutsky-s-theorem-and-the-delta-method/tendsto-in-measure-of-tendsto-in-distrib.md"
           }
          ]
         }
@@ -78523,9 +78547,6 @@
          "title": "Asymptotic normality of maximum likelihood",
          "prose": "## Measure Theory",
          "entries": [
-          {
-           "article": "Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/tendsto-in-measure-of-tendsto-in-distrib.md"
-          },
           {
            "article": "Probability/statistical-estimation/asymptotic-normality-of-maximum-likelihood/mul-tendsto-in-measure-zero.md"
           },
@@ -142234,435 +142255,488 @@
      "node": {
       "path": "ComputerScience/cryptography",
       "title": "Cryptography",
-      "prose": "Cryptographic schemes and their correctness and security reductions: public-key encryption and key agreement, signatures, identification protocols, pseudorandom functions, perfect secrecy and hash-function constructions including the birthday bound.",
+      "prose": "Cryptographic schemes and their correctness and security reductions: the game-based framework of security proofs, symmetric-key encryption and authentication, hash functions and Merkle trees, public-key encryption and key agreement, signatures, identification protocols and commitments.",
       "entries": [
        {
         "node": {
-         "path": "ComputerScience/cryptography/birthday-bound",
-         "title": "Birthday bound",
-         "prose": "",
+         "path": "ComputerScience/cryptography/security-games",
+         "title": "Security games and proof techniques",
+         "prose": "The framework of game-based security proofs: adaptive oracle algorithms and their probabilistic semantics, games and advantages, generic security experiments for encryption, MACs and signatures, asymptotic security, the hybrid argument and the difference lemma, and lazy sampling with the PRP/PRF switching lemma.",
          "entries": [
           {
-           "article": "ComputerScience/cryptography/birthday-bound/collision-game.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/birthday-bound/collision-prob.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/birthday-bound/collision-prob-eq.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/birthday-bound/collision-prob-le.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/birthday-bound/one-sub-exp-le-collision-prob.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/birthday-bound/div-one-add-le-collision-prob.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/birthday-bound/collision-prob-ge.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/birthday-bound/collision-prob-ge-of-le-sqrt.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/birthday-bound/collision-prob-ge-of-le-sqrt-card.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/birthday-bound/half-le-collision-prob.md"
+           "node": {
+            "path": "ComputerScience/cryptography/security-games/oracle-algorithms",
+            "title": "Oracle algorithms",
+            "prose": "## Single-oracle computations",
+            "entries": [
+             {
+              "article": "ComputerScience/cryptography/security-games/oracle-algorithms/oracle-sig.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/security-games/oracle-algorithms/oracle-comp.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/security-games/oracle-algorithms/done.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/security-games/oracle-algorithms/query.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/security-games/oracle-algorithms/run.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/security-games/oracle-algorithms/queries.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/security-games/oracle-algorithms/run-congr.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/security-games/oracle-algorithms/run-bind.md"
+             }
+            ]
+           }
           }
          ]
         }
        },
        {
         "node": {
-         "path": "ComputerScience/cryptography/diffie-hellman-key-exchange",
-         "title": "Diffie–Hellman key exchange",
-         "prose": "",
+         "path": "ComputerScience/cryptography/symmetric-key",
+         "title": "Symmetric-key cryptography",
+         "prose": "Perfect secrecy and the one-time pad, pseudorandom generators and stream ciphers, pseudorandom functions and permutations, message authentication, and authenticated encryption by encrypt-then-MAC.",
          "entries": [
           {
-           "article": "ComputerScience/cryptography/diffie-hellman-key-exchange/gpow.md"
+           "node": {
+            "path": "ComputerScience/cryptography/symmetric-key/one-time-pad-over-a-finite-group",
+            "title": "One-time pad over a finite group",
+            "prose": "",
+            "entries": [
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/one-time-pad-over-a-finite-group/group-otp.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/one-time-pad-over-a-finite-group/group-otp-ciphertext-dist-eq-uniform.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/one-time-pad-over-a-finite-group/group-otp-perfectly-secret.md"
+             }
+            ]
+           }
           },
           {
-           "article": "ComputerScience/cryptography/diffie-hellman-key-exchange/dh-agree.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/diffie-hellman-key-exchange/dh-key-eq.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/diffie-hellman-key-exchange/gpow-equiv.md"
+           "node": {
+            "path": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions",
+            "title": "Pseudorandom functions",
+            "prose": "## The PRF experiment",
+            "entries": [
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/prf-real.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/prf-rand.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/prf-advantage.md"
+             },
+             {
+              "before": "## The MAC from a PRF",
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/mac-wins.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/mac-game.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/mac-reduction.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/mac-game-eq-prf-real.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/card-mac-wins-mul-le.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/prf-rand-mac-reduction-le.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/mac-game-le.md"
+             },
+             {
+              "before": "## CPA encryption from a PRF",
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/encrypt.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/decrypt.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/decrypt-encrypt.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/pick.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/run-enc.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/cpaadversary.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/cpa-guess.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/cpa-game.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/cpa-advantage.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/sim-enc.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/cpa-reduction.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/cpa-game-eq-prf-real.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/run-enc-congr.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/prf-rand-cpa-reduction.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/symmetric-key/pseudorandom-functions/cpa-advantage-le.md"
+             }
+            ]
+           }
           }
          ]
         }
        },
        {
         "node": {
-         "path": "ComputerScience/cryptography/elgamal-encryption",
-         "title": "ElGamal encryption",
-         "prose": "## ElGamal",
+         "path": "ComputerScience/cryptography/hash-functions",
+         "title": "Hash functions",
+         "prose": "Collisions and the birthday bound, the Merkle–Damgård transform and its padding, and Merkle trees with authentication paths.",
          "entries": [
           {
-           "article": "ComputerScience/cryptography/elgamal-encryption/public-key.md"
+           "node": {
+            "path": "ComputerScience/cryptography/hash-functions/birthday-bound",
+            "title": "Birthday bound",
+            "prose": "",
+            "entries": [
+             {
+              "article": "ComputerScience/cryptography/hash-functions/birthday-bound/collision-game.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/birthday-bound/collision-prob.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/birthday-bound/collision-prob-eq.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/birthday-bound/collision-prob-le.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/birthday-bound/one-sub-exp-le-collision-prob.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/birthday-bound/div-one-add-le-collision-prob.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/birthday-bound/collision-prob-ge.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/birthday-bound/collision-prob-ge-of-le-sqrt.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/birthday-bound/collision-prob-ge-of-le-sqrt-card.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/birthday-bound/half-le-collision-prob.md"
+             }
+            ]
+           }
           },
           {
-           "article": "ComputerScience/cryptography/elgamal-encryption/encrypt.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/elgamal-encryption/decrypt.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/elgamal-encryption/decrypt-encrypt.md"
-          },
-          {
-           "before": "## Eavesdropping security from DDH",
-           "article": "ComputerScience/cryptography/elgamal-encryption/pick.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/elgamal-encryption/adversary.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/elgamal-encryption/eav-game.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/elgamal-encryption/eav-advantage.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/elgamal-encryption/ddh-real.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/elgamal-encryption/ddh-rand.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/elgamal-encryption/ddh-advantage.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/elgamal-encryption/reduction.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/elgamal-encryption/eav-game-eq-ddh-real.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/elgamal-encryption/ddh-rand-reduction-true.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/elgamal-encryption/eav-advantage-eq-ddh-advantage.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/elgamal-encryption/eav-advantage-le.md"
+           "node": {
+            "path": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction",
+            "title": "Merkle–Damgård construction",
+            "prose": "",
+            "entries": [
+             {
+              "article": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/chain-rev.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/chain.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/hash.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/search.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/is-collision.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/find-collision.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/find-collision-spec.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/hash-collision-game.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/compression-collision-game.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/reduction.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/hash-functions/merkle-damg-rd-construction/hash-collision-game-le.md"
+             }
+            ]
+           }
           }
          ]
         }
        },
        {
         "node": {
-         "path": "ComputerScience/cryptography/lamport-signature",
-         "title": "Lamport signature",
-         "prose": "",
+         "path": "ComputerScience/cryptography/public-key",
+         "title": "Public-key cryptography",
+         "prose": "Discrete-logarithm, Diffie–Hellman and RSA hardness assumptions, Diffie–Hellman key agreement, ElGamal and RSA encryption with their security and insecurity, deterministic encryption, and key encapsulation with hybrid encryption.",
          "entries": [
           {
-           "article": "ComputerScience/cryptography/lamport-signature/public-key.md"
+           "node": {
+            "path": "ComputerScience/cryptography/public-key/diffie-hellman-key-exchange",
+            "title": "Diffie–Hellman key exchange",
+            "prose": "",
+            "entries": [
+             {
+              "article": "ComputerScience/cryptography/public-key/diffie-hellman-key-exchange/gpow.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/diffie-hellman-key-exchange/dh-agree.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/diffie-hellman-key-exchange/dh-key-eq.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/diffie-hellman-key-exchange/gpow-equiv.md"
+             }
+            ]
+           }
           },
           {
-           "article": "ComputerScience/cryptography/lamport-signature/sign.md"
+           "node": {
+            "path": "ComputerScience/cryptography/public-key/elgamal-encryption",
+            "title": "ElGamal encryption",
+            "prose": "## ElGamal",
+            "entries": [
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/public-key.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/encrypt.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/decrypt.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/decrypt-encrypt.md"
+             },
+             {
+              "before": "## Eavesdropping security from DDH",
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/pick.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/adversary.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/eav-game.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/eav-advantage.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/ddh-real.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/ddh-rand.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/ddh-advantage.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/reduction.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/eav-game-eq-ddh-real.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/ddh-rand-reduction-true.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/eav-advantage-eq-ddh-advantage.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/elgamal-encryption/eav-advantage-le.md"
+             }
+            ]
+           }
           },
           {
-           "article": "ComputerScience/cryptography/lamport-signature/verify.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/lamport-signature/verify-sign.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/lamport-signature/forger.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/lamport-signature/wins.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/lamport-signature/forge-game.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/lamport-signature/invert-game.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/lamport-signature/plant.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/lamport-signature/invert.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/lamport-signature/forge-game-le.md"
+           "node": {
+            "path": "ComputerScience/cryptography/public-key/rsa-cryptosystem",
+            "title": "RSA cryptosystem",
+            "prose": "## RSA",
+            "entries": [
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/pow-eq-self-of-mod-eq.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/pow-eq-pow-of-mod-eq.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/one-le-mod.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/key.md"
+             },
+             {
+              "before": "## Key",
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/n.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/encrypt.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/decrypt.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/crt.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/pow-eq-self-of-crt.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/pow-ed.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/decrypt-encrypt.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/encrypt-bijective.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/decrypt-encrypt-nat.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/crt-decrypt.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/crt-decrypt-eq.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/crt-decrypt-mod-eq.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/public-key/rsa-cryptosystem/of-totient.md"
+             }
+            ]
+           }
           }
          ]
         }
        },
        {
         "node": {
-         "path": "ComputerScience/cryptography/merkle-damg-rd-construction",
-         "title": "Merkle–Damgård construction",
-         "prose": "",
+         "path": "ComputerScience/cryptography/signatures-and-protocols",
+         "title": "Signatures, identification and commitments",
+         "prose": "Lamport one-time and Merkle many-time signatures, Schnorr identification and sigma protocols, and hash-based and Pedersen commitments.",
          "entries": [
           {
-           "article": "ComputerScience/cryptography/merkle-damg-rd-construction/chain-rev.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/merkle-damg-rd-construction/chain.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/merkle-damg-rd-construction/hash.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/merkle-damg-rd-construction/search.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/merkle-damg-rd-construction/is-collision.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/merkle-damg-rd-construction/find-collision.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/merkle-damg-rd-construction/find-collision-spec.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/merkle-damg-rd-construction/hash-collision-game.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/merkle-damg-rd-construction/compression-collision-game.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/merkle-damg-rd-construction/reduction.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/merkle-damg-rd-construction/hash-collision-game-le.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "ComputerScience/cryptography/one-time-pad-over-a-finite-group",
-         "title": "One-time pad over a finite group",
-         "prose": "",
-         "entries": [
-          {
-           "article": "ComputerScience/cryptography/one-time-pad-over-a-finite-group/group-otp.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/one-time-pad-over-a-finite-group/group-otp-ciphertext-dist-eq-uniform.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/one-time-pad-over-a-finite-group/group-otp-perfectly-secret.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "ComputerScience/cryptography/pseudorandom-functions",
-         "title": "Pseudorandom functions",
-         "prose": "",
-         "entries": [
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/oracle-sig.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/oracle-comp.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/done.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/query.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/run.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/queries.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/run-congr.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/run-bind.md"
-          },
-          {
-           "before": "## The PRF experiment",
-           "article": "ComputerScience/cryptography/pseudorandom-functions/prf-real.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/prf-rand.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/prf-advantage.md"
-          },
-          {
-           "before": "## The MAC from a PRF",
-           "article": "ComputerScience/cryptography/pseudorandom-functions/mac-wins.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/mac-game.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/mac-reduction.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/mac-game-eq-prf-real.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/card-mac-wins-mul-le.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/prf-rand-mac-reduction-le.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/mac-game-le.md"
-          },
-          {
-           "before": "## CPA encryption from a PRF",
-           "article": "ComputerScience/cryptography/pseudorandom-functions/encrypt.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/decrypt.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/decrypt-encrypt.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/pick.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/run-enc.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/cpaadversary.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/cpa-guess.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/cpa-game.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/cpa-advantage.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/sim-enc.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/cpa-reduction.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/cpa-game-eq-prf-real.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/run-enc-congr.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/prf-rand-cpa-reduction.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/pseudorandom-functions/cpa-advantage-le.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "ComputerScience/cryptography/rsa-cryptosystem",
-         "title": "RSA cryptosystem",
-         "prose": "## RSA",
-         "entries": [
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/pow-eq-self-of-mod-eq.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/pow-eq-pow-of-mod-eq.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/one-le-mod.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/key.md"
-          },
-          {
-           "before": "## Key",
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/n.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/encrypt.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/decrypt.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/crt.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/pow-eq-self-of-crt.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/pow-ed.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/decrypt-encrypt.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/encrypt-bijective.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/decrypt-encrypt-nat.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/crt-decrypt.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/crt-decrypt-eq.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/crt-decrypt-mod-eq.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/rsa-cryptosystem/of-totient.md"
-          }
-         ]
-        }
-       },
-       {
-        "node": {
-         "path": "ComputerScience/cryptography/schnorr-identification-scheme",
-         "title": "Schnorr identification scheme",
-         "prose": "",
-         "entries": [
-          {
-           "article": "ComputerScience/cryptography/schnorr-identification-scheme/accepts.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/schnorr-identification-scheme/respond.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/schnorr-identification-scheme/accepts-honest.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/schnorr-identification-scheme/extract.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/schnorr-identification-scheme/extract-spec.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/schnorr-identification-scheme/honest-transcript.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/schnorr-identification-scheme/sim-transcript.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/schnorr-identification-scheme/transcript.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/schnorr-identification-scheme/simulate.md"
-          },
-          {
-           "article": "ComputerScience/cryptography/schnorr-identification-scheme/transcript-eq-simulate.md"
+           "node": {
+            "path": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature",
+            "title": "Lamport signature",
+            "prose": "",
+            "entries": [
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/public-key.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/sign.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/verify.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/verify-sign.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/forger.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/wins.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/forge-game.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/invert-game.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/plant.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/invert.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/lamport-signature/forge-game-le.md"
+             }
+            ]
+           }
+          },
+          {
+           "node": {
+            "path": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme",
+            "title": "Schnorr identification scheme",
+            "prose": "",
+            "entries": [
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/accepts.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/respond.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/accepts-honest.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/extract.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/extract-spec.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/honest-transcript.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/sim-transcript.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/transcript.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/simulate.md"
+             },
+             {
+              "article": "ComputerScience/cryptography/signatures-and-protocols/schnorr-identification-scheme/transcript-eq-simulate.md"
+             }
+            ]
+           }
           }
          ]
         }

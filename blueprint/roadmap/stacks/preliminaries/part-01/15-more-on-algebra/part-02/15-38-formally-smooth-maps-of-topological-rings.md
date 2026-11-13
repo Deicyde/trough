@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.38 Formally smooth maps of topological rings
 
-Section 15.38 of the Stacks Project, [Tag 07EA](https://stacks.math.columbia.edu/tag/07EA). 9 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.38 of the Stacks Project, [Tag 07EA](https://stacks.math.columbia.edu/tag/07EA). 9 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07EB, a definition
 
 [Tag 07EB](https://stacks.math.columbia.edu/tag/07EB) in the Stacks Project.
 
-**`IsFormallySmooth`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicCriterion.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicCriterion.lean#L96). References: EGA 0 (19.3.1), “linearly topologized”.
+**`IsFormallySmooth`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicCriterion.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicCriterion.lean#L96). References: EGA 0 (19.3.1), “linearly topologized”.
 
 > A homomorphism between linearly topologized rings is formally smooth if it
 > is continuous and every compatible square-zero lifting problem with a discrete
@@ -31,7 +31,7 @@ def IsFormallySmooth.{u, v, w} {R : Type v} {S : Type w}
 
 [Tag 07EC](https://stacks.math.columbia.edu/tag/07EC) in the Stacks Project.
 
-**`RingHom.FormallySmoothTop.of_formallySmooth_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/Algebraic.lean, line 25](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/Algebraic.lean#L25). References: EGA 0 (19.3.8), “discrete topologies”.
+**`RingHom.FormallySmoothTop.of_formallySmooth_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/Algebraic.lean, line 25](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/Algebraic.lean#L25). References: EGA 0 (19.3.8), “discrete topologies”.
 
 > Algebraic formal smoothness implies topological formal smoothness for an adic target.
 
@@ -45,7 +45,7 @@ theorem of_formallySmooth_of_isAdic.{u, v, w}
     RingHom.FormallySmoothTop.{u, v, w} phi
 ```
 
-**`isFormallySmooth_of_formallySmooth_and_isAdic_and_iff_discrete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicCriterion.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicCriterion.lean#L181).
+**`isFormallySmooth_of_formallySmooth_and_isAdic_and_iff_discrete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicCriterion.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicCriterion.lean#L181).
 
 > Algebraic formal smoothness implies formal smoothness for any continuous
 > map from a linearly topologized ring to a pre-adic ring. Moreover, for ideals
@@ -89,7 +89,7 @@ public theorem isFormallySmooth_of_formallySmooth_and_isAdic_and_iff_discrete.{u
 
 [Tag 07NI](https://stacks.math.columbia.edu/tag/07NI) in the Stacks Project.
 
-**`RingHom.FormallySmoothNAdic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/Topological.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/Topological.lean#L144).
+**`RingHom.FormallySmoothNAdic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/Topological.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/Topological.lean#L144).
 
 > `φ : R →+* S` is *formally smooth for the `n`-adic topology*, where `n` is an
 > ideal of `S`: for every square-zero ideal `J` of a ring `A`, every ring map
@@ -107,10 +107,17 @@ def FormallySmoothNAdic {R : Type v} {S : Type w} [CommRing R] [CommRing S]
 
 [Tag 07ED](https://stacks.math.columbia.edu/tag/07ED) in the Stacks Project.
 
-**`isFormallySmooth_iff_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/Completion.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/Completion.lean#L465). References: EGA 0 (19.3.6), “adic top., f.g. ideals”; EGA 0 (19.9.4), “a) <=> b) <=> c)”; EGA IV (17.5.3), “d) ⇔ d')”.
+**`isFormallySmooth_iff_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/Completion.lean, line 472](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/Completion.lean#L472). References: EGA 0 (19.3.6), “adic top., f.g. ideals”; EGA 0 (19.9.4), “a) <=> b) <=> c)”; EGA IV (17.5.3), “d) ⇔ d')”.
 
 > Formal smoothness of a continuous homomorphism of adic rings is unchanged
 > by completing the target, or by completing both source and target.
+>
+> The hypotheses are exactly those of Stacks 07ED: rings `R` and `S` with
+> finitely generated ideals `m` and `n`, endowed with the `m`-adic and `n`-adic
+> topologies, and a continuous ring homomorphism `f : R →+* S`. The completions
+> carry the adic topologies of the extended ideals `m R^∧` and `n S^∧`; since `m`
+> and `n` are finitely generated, these are the `m`-adic and `n`-adic topologies
+> of the completions (Stacks 05GG).
 
 ```lean
 public theorem isFormallySmooth_iff_adicCompletion.{u, v, w}
@@ -137,7 +144,7 @@ public theorem isFormallySmooth_iff_adicCompletion.{u, v, w}
 
 [Tag 07NJ](https://stacks.math.columbia.edu/tag/07NJ) in the Stacks Project.
 
-**`RingHom.FormallySmoothTop.exists_continuous_lift_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/AdicLifting.lean, line 508](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/AdicLifting.lean#L508).
+**`RingHom.FormallySmoothTop.exists_continuous_lift_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/AdicLifting.lean, line 508](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/AdicLifting.lean#L508).
 
 > A formally smooth homomorphism lifts continuously through a closed quotient of an adic
 > complete ring, provided a positive power of the quotient ideal lies in an ideal of definition.
@@ -160,7 +167,7 @@ theorem exists_continuous_lift_of_isAdic
       (Ideal.Quotient.mk J).comp φ = ψ
 ```
 
-**`exists_continuous_lift_of_isFormallySmooth_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicBaseChange.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicBaseChange.lean#L129).
+**`exists_continuous_lift_of_isFormallySmooth_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicBaseChange.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicBaseChange.lean#L129).
 
 > A formally smooth homomorphism for the `n`-adic topology lifts continuously through a closed
 > quotient of an adic ring when a positive power of the quotient ideal lies in an ideal of
@@ -188,7 +195,7 @@ public theorem exists_continuous_lift_of_isFormallySmooth_of_isAdic
 
 [Tag 07EE](https://stacks.math.columbia.edu/tag/07EE) in the Stacks Project.
 
-**`RingHom.FormallySmoothNAdic.mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/Topological.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/Topological.lean#L158). References: EGA 0 (19.3.8), “adic topologies on S”.
+**`RingHom.FormallySmoothNAdic.mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/Topological.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/Topological.lean#L158). References: EGA 0 (19.3.8), “adic topologies on S”.
 
 > Stacks Tag 07EE, Lemma 15.38.6: if `n ≤ n'` are ideals of `S` and `φ : R → S`
 > is formally smooth for the `n`-adic topology, then it is formally smooth for the
@@ -204,7 +211,7 @@ theorem FormallySmoothNAdic.mono {R : Type v} {S : Type w} [CommRing R] [CommRin
 
 [Tag 07EF](https://stacks.math.columbia.edu/tag/07EF) in the Stacks Project.
 
-**`RingHom.FormallySmoothTop.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/Topological.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/Topological.lean#L108).
+**`RingHom.FormallySmoothTop.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/Topological.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/Topological.lean#L108).
 
 > Stacks Lemma 15.38.7 (Tag 07EF). A composition of formally smooth continuous
 > ring homomorphisms of topological rings is formally smooth: if `φ : R →+* S` and
@@ -226,7 +233,7 @@ theorem FormallySmoothTop.comp {R : Type v} {S : Type w} {T : Type z}
 
 [Tag 07EG](https://stacks.math.columbia.edu/tag/07EG) in the Stacks Project.
 
-**`RingHom.formallySmoothTop_iff_formallySmoothNAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/Adic.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/Adic.lean#L69).
+**`RingHom.formallySmoothTop_iff_formallySmoothNAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/Adic.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/Adic.lean#L69).
 
 > For a discrete source and an adic target, topological formal smoothness is equivalent to
 > formal smoothness for the adic topology.
@@ -240,7 +247,7 @@ theorem formallySmoothTop_iff_formallySmoothNAdic.{u, v, w}
     FormallySmoothTop.{u, v, w} phi ↔ FormallySmoothNAdic.{u, v, w} phi n
 ```
 
-**`RingHom.FormallySmoothNAdic.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/BaseChange.lean, line 32](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/BaseChange.lean#L32). References: EGA 0 (19.3.5), “(iii)”; EGA 0 (19.9.3), “adic topology case”.
+**`RingHom.FormallySmoothNAdic.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/BaseChange.lean, line 32](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/BaseChange.lean#L32). References: EGA 0 (19.3.5), “(iii)”; EGA 0 (19.9.3), “adic topology case”.
 
 > Formal smoothness for the `n`-adic topology is preserved by arbitrary base change from
 > `R` to `R'`; on `S ⊗[R] R'`, the adic ideal is the extension of `n`.
@@ -260,7 +267,7 @@ theorem baseChange.{u, v, w, z}
 
 [Tag 07EH](https://stacks.math.columbia.edu/tag/07EH) in the Stacks Project.
 
-**`isFormallySmooth_adic_of_split_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicBaseChange.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicBaseChange.lean#L375).
+**`isFormallySmooth_adic_of_split_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicBaseChange.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/TopologicalRings/AdicBaseChange.lean#L374).
 
 > If `R → R'` admits an `R`-linear retraction and the base change
 > `R' → S ⊗[R] R'` is formally smooth for the topology defined by the
@@ -299,4 +306,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.38, Tag 07EA](https://stacks.math.columbia.edu/tag/07EA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

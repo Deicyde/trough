@@ -7,7 +7,7 @@ statement: formalized
 
 # Rainbow-free colorings for x − y = z^k
 
-23 results, 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html).
+23 results, 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html).
 
 ## Rainbow-free 3-colorings modulo a prime have a singleton color class
 
@@ -21,7 +21,7 @@ one element of $\mathbb{Z}/p\mathbb{Z}$.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.exists_card_colorClass_eq_one_of_rainbowFree_powDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#exists-card-color-class-eq-one-of-rainbo).
+Stated but not proved: `MetaMathlibExt.exists_card_colorClass_eq_one_of_rainbowFree_powDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#exists-card-color-class-eq-one-of-rainbo).
 
 ## Zero has a color class of its own
 
@@ -35,7 +35,7 @@ then $a = 0$.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.eq_zero_of_color_eq_color_zero_of_rainbowFree_powDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#eq-zero-of-color-eq-color-zero-of-rainbo).
+Stated but not proved: `MetaMathlibExt.eq_zero_of_color_eq_color_zero_of_rainbowFree_powDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#eq-zero-of-color-eq-color-zero-of-rainbo).
 
 ## Rainbow-free colorings of $\mathbb{Z}/n\mathbb{Z}$ lift to the positive integers
 
@@ -52,7 +52,7 @@ and $i \bmod 0 = i$.)
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.rainbowFree_powDiff_lift_of_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#rainbow-free-pow-diff-lift-of-zmod).
+Stated but not proved: `MetaMathlibExt.rainbowFree_powDiff_lift_of_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#rainbow-free-pow-diff-lift-of-zmod).
 
 ## Coprime representatives at a coprime distance
 
@@ -66,7 +66,7 @@ color of $i_1$ and $j_2$ has the color of $i_2$.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.exists_coprime_same_colors_of_coprime_dist` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#exists-coprime-same-colors-of-coprime-di).
+Stated but not proved: `MetaMathlibExt.exists_coprime_same_colors_of_coprime_dist` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#exists-coprime-same-colors-of-coprime-di).
 
 ## Rainbow-free colorings modulo a prime are symmetric under negation
 
@@ -80,7 +80,7 @@ $a \in \mathbb{Z}/p\mathbb{Z}$.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 10.
 
-Stated but not proved: `MetaMathlibExt.color_neg_eq_of_rainbowFree_powDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#color-neg-eq-of-rainbow-free-pow-diff).
+Stated but not proved: `MetaMathlibExt.color_neg_eq_of_rainbowFree_powDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#color-neg-eq-of-rainbow-free-pow-diff).
 
 ## Each component of the power digraph has exactly one cycle
 
@@ -96,7 +96,7 @@ for some $m \ge 0$. Thus every component of $G^k_p$ contains exactly one cycle.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 12.
 
-Stated but not proved: `MetaMathlibExt.powMap_component_unique_cycle` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#pow-map-component-unique-cycle).
+Stated but not proved: `MetaMathlibExt.powMap_component_unique_cycle` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#pow-map-component-unique-cycle).
 
 ## Power digraphs modulo a prime with two components
 
@@ -115,7 +115,7 @@ $p - 1 = 2^{\beta_0} q_1^{\beta_1} \cdots q_\ell^{\beta_\ell}$ with all $\beta_i
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.card_powMap_components_eq_two_iff_of_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#card-pow-map-components-eq-two-iff-of-ev).
+Stated but not proved: `MetaMathlibExt.card_powMap_components_eq_two_iff_of_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#card-pow-map-components-eq-two-iff-of-ev).
 
 ## Power digraphs modulo a prime with three components
 
@@ -130,7 +130,7 @@ divides $k$.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.card_powMap_components_eq_three_iff_of_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#card-pow-map-components-eq-three-iff-of).
+Stated but not proved: `MetaMathlibExt.card_powMap_components_eq_three_iff_of_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#card-pow-map-components-eq-three-iff-of).
 
 ## Large multiples of the gcd are nonnegative combinations
 
@@ -142,7 +142,7 @@ written as $m = ui + vj$ with nonnegative integers $u$ and $v$.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.exists_forall_gcd_dvd_eq_add_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#exists-forall-gcd-dvd-eq-add-mul).
+Stated but not proved: `MetaMathlibExt.exists_forall_gcd_dvd_eq_add_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#exists-forall-gcd-dvd-eq-add-mul).
 
 ## Upper density threshold for rainbow solutions of $x - y = z^k$
 
@@ -158,7 +158,7 @@ such that $c(x)$, $c(y)$, $c(z)$ are pairwise distinct.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.exists_rainbow_powDiff_of_upperDensity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#exists-rainbow-pow-diff-of-upper-density).
+Stated but not proved: `MetaMathlibExt.exists_rainbow_powDiff_of_upperDensity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#exists-rainbow-pow-diff-of-upper-density).
 
 ## Small color classes in rainbow-free 3-colorings modulo an odd integer
 
@@ -173,7 +173,7 @@ $n / r_1$ elements.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.exists_card_colorClass_le_div_minFac_of_rainbowFree_powDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#exists-card-color-class-le-div-min-fac-o).
+Stated but not proved: `MetaMathlibExt.exists_card_colorClass_le_div_minFac_of_rainbowFree_powDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#exists-card-color-class-le-div-min-fac-o).
 
 ## Rainbow-free colorings of $\mathbb{Z}/p\mathbb{Z}$ for $x - y = z^k$
 
@@ -189,7 +189,7 @@ $c(-a) = c(a)$ for every $a$.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.rainbowFree_powDiff_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#rainbow-free-pow-diff-iff).
+Stated but not proved: `MetaMathlibExt.rainbowFree_powDiff_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#rainbow-free-pow-diff-iff).
 
 ## Rainbow number of the power-difference equation modulo a prime, even exponent
 
@@ -208,7 +208,7 @@ colors.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.rainbowNumber_powDiff_of_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#rainbow-number-pow-diff-of-even).
+Stated but not proved: `MetaMathlibExt.rainbowNumber_powDiff_of_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#rainbow-number-pow-diff-of-even).
 
 ## Rainbow number of the power-difference equation modulo a prime, odd exponent
 
@@ -224,7 +224,7 @@ $k$, and $4$ otherwise.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.rainbowNumber_powDiff_of_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#rainbow-number-pow-diff-of-odd).
+Stated but not proved: `MetaMathlibExt.rainbowNumber_powDiff_of_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#rainbow-number-pow-diff-of-odd).
 
 ## The color of one dominates bichromatic strings
 
@@ -239,7 +239,7 @@ integers has the color $c(1)$.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.color_one_dominant_of_rainbowFree_powDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#color-one-dominant-of-rainbow-free-pow-d).
+Stated but not proved: `MetaMathlibExt.color_one_dominant_of_rainbowFree_powDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#color-one-dominant-of-rainbow-free-pow-d).
 
 ## Shifting monochromatic strings by $k$-th powers
 
@@ -257,7 +257,7 @@ is a color $e' \in \{B, G\}$ with $c(i - j^k + t) = e'$ for all $0 \le t < \ell$
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.monochromatic_shift_of_rainbowFree_powDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#monochromatic-shift-of-rainbow-free-pow).
+Stated but not proved: `MetaMathlibExt.monochromatic_shift_of_rainbowFree_powDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#monochromatic-shift-of-rainbow-free-pow).
 
 ## Zhan's small-gap lemma
 
@@ -271,7 +271,7 @@ $1 \le d \le n_0 - 1$ such that $j$ and $j + d$ both lie in $S$ for arbitrarily 
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.exists_small_gap_of_limsup_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#exists-small-gap-of-limsup-count).
+Stated but not proved: `MetaMathlibExt.exists_small_gap_of_limsup_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#exists-small-gap-of-limsup-count).
 
 ## Non-dominant monochromatic strings have bounded length
 
@@ -291,7 +291,7 @@ $0 \le t < \ell$, then $\ell \le L$.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.nondominant_string_length_bounded` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#nondominant-string-length-bounded).
+Stated but not proved: `MetaMathlibExt.nondominant_string_length_bounded` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#nondominant-string-length-bounded).
 
 ## Coprime numbers of a non-dominant color cannot both have the $A$-property
 
@@ -315,7 +315,7 @@ of this lemma ends by contradicting Lemma 4.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 5; `A`-property as defined before Lemma 5 in arXiv:2305.15133.
 
-Stated but not proved: `MetaMathlibExt.not_both_aProperty_of_coprime` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#not-both-a-property-of-coprime).
+Stated but not proved: `MetaMathlibExt.not_both_aProperty_of_coprime` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#not-both-a-property-of-coprime).
 
 ## Coprime pairs in both non-dominant colors force a rainbow solution of $x - y = z^k$
 
@@ -334,7 +334,7 @@ $c(x)$, $c(y)$, $c(z)$ are pairwise distinct.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.exists_rainbow_powDiff_of_coprime_pairs` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#exists-rainbow-pow-diff-of-coprime-pairs).
+Stated but not proved: `MetaMathlibExt.exists_rainbow_powDiff_of_coprime_pairs` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#exists-rainbow-pow-diff-of-coprime-pairs).
 
 ## Dominant colors on power-step strings modulo a prime
 
@@ -349,7 +349,7 @@ $0 \le t < \ell$ take exactly two colors, then one of these elements has the col
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.color_dominant_powStrings_of_rainbowFree_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#color-dominant-pow-strings-of-rainbow-fr).
+Stated but not proved: `MetaMathlibExt.color_dominant_powStrings_of_rainbowFree_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#color-dominant-pow-strings-of-rainbow-fr).
 
 ## Components avoiding the color of zero are monochromatic
 
@@ -369,7 +369,7 @@ $(f(a), 0, a)$ of $x - y = f(z)$, and the reading $x - y = f(x)$ fails on small 
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 11.
 
-Stated but not proved: `MetaMathlibExt.component_monochromatic_of_rainbowFree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#component-monochromatic-of-rainbow-free).
+Stated but not proved: `MetaMathlibExt.component_monochromatic_of_rainbowFree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#component-monochromatic-of-rainbow-free).
 
 ## Cycle vertices of the $k$-th power map modulo $p$
 
@@ -385,7 +385,7 @@ vertices, and two components exactly when $t = 1$) are not.
 
 - Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Theorem 6 (after Lucheta, Miller and Reiter).
 
-Stated but not proved: `MetaMathlibExt.isCycleVertex_powMap_iff_orderOf_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#is-cycle-vertex-pow-map-iff-order-of-dvd).
+Stated but not proved: `MetaMathlibExt.isCycleVertex_powMap_iff_orderOf_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/RainbowPowerDifferenceWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html#is-cycle-vertex-pow-map-iff-order-of-dvd).
 
 ## Depends on
 
@@ -394,4 +394,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Rainbow-free colorings for x − y = z^k](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/rainbow-free-colorings-for-x-y-z-k)

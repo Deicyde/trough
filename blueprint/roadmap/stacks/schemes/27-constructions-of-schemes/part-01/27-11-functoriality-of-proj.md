@@ -8,17 +8,17 @@ proof: formalized
 
 # 27.11 Functoriality of Proj
 
-Section 27.11 of the Stacks Project, [Tag 01MX](https://stacks.math.columbia.edu/tag/01MX). 8 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 27.11 of the Stacks Project, [Tag 01MX](https://stacks.math.columbia.edu/tag/01MX). 8 tags here are carried by 27 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01MY, a lemma
 
 [Tag 01MY](https://stacks.math.columbia.edu/tag/01MY) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjMapCard.projMapData_preserves_products`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjMapCard/Multiplication.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjMapCard/Multiplication.lean#L345). The attribute's comment: “graded-algebra multiplication”.
+**`Stacks.AlgebraicGeometry.ProjMapCard.projMapData_preserves_products`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjMapCard/Multiplication.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjMapCard/Multiplication.lean#L345). The attribute's comment: “graded-algebra multiplication”.
 
 > **Tag 01MY, graded-algebra multiplication, on the canonical bundle.** The tagged
-> statement's spelling of `twistMap_comp_pullbackTwistMultiplication`: the morphism and the twist maps are the
-> fields of `Stacks.AlgebraicGeometry.ProjTwistCompare.projMapData`.
+> statement's spelling of `twistMap_comp_pullbackTwistMultiplication`: the morphism and the twist
+> maps are the fields of `Stacks.AlgebraicGeometry.ProjTwistCompare.projMapData`.
 
 ```lean
 public theorem projMapData_preserves_products (ψ : 𝒜 →+*ᵍ ℬ)
@@ -32,10 +32,10 @@ public theorem projMapData_preserves_products (ψ : 𝒜 →+*ᵍ ℬ)
       pullbackTwistMultiplication ℬ (mapDomain 𝒜 ℬ ψ).ι n m
 ```
 
-**`Stacks.AlgebraicGeometry.ProjMapCardUnit.projMapData_preserves_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjMapCardUnit/Basic.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjMapCardUnit/Basic.lean#L332). The attribute's comment: “graded-algebra unit”.
+**`Stacks.AlgebraicGeometry.ProjMapCardUnit.projMapData_preserves_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjMapCardUnit/Basic.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjMapCardUnit/Basic.lean#L332). The attribute's comment: “graded-algebra unit”.
 
-> **Tag 01MY, the graded-algebra unit, on the canonical bundle.** The Stacks statement's spelling of
-> `twistMap_comp_pullbackTwistUnit`: the morphism and the twist maps are the fields of
+> **Tag 01MY, the graded-algebra unit, on the canonical bundle.** The Stacks statement's
+> spelling of `twistMap_comp_pullbackTwistUnit`: the morphism and the twist maps are the fields of
 > `Stacks.AlgebraicGeometry.ProjTwistCompare.projMapData`.
 
 ```lean
@@ -44,7 +44,7 @@ theorem projMapData_preserves_unit (ψ : 𝒜 →+*ᵍ ℬ) :
       pullbackTwistUnit ℬ (mapDomain 𝒜 ℬ ψ).ι
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistChain.awayToSection_comp_appLE_mapHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjMapData/Basic.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjMapData/Basic.lean#L165). The attribute's comment: “part (2), localization map on standard opens”.
+**`Stacks.AlgebraicGeometry.ProjTwistChain.awayToSection_comp_appLE_mapHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjMapData/Basic.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjMapData/Basic.lean#L166). The attribute's comment: “part (2), localization map on standard opens”.
 
 > **Stacks 01MY (2)**: on the standard open `D₊(ψ f)` of the domain of definition, the
 > morphism induced by `ψ` is the one induced by the map `𝒜_{(f)} → ℬ_{(ψ f)}` of degree-zero
@@ -66,7 +66,7 @@ public theorem awayToSection_comp_appLE_mapHom (ψ : 𝒜 →+*ᵍ ℬ) (f : A) 
           ((mapDomain 𝒜 ℬ ψ).ι ⁻¹ᵁ Proj.basicOpen ℬ (ψ f)) le_rfl
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistChain.eq_mapHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjMapData/Basic.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjMapData/Basic.lean#L182). The attribute's comment: “uniqueness of the scheme morphism”.
+**`Stacks.AlgebraicGeometry.ProjTwistChain.eq_mapHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjMapData/Basic.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjMapData/Basic.lean#L183). The attribute's comment: “uniqueness of the scheme morphism”.
 
 > **Stacks 01MY (2), uniqueness**: a morphism out of the domain of definition that has the
 > inverse images of standard opens of Tag 01MY (2), and that on each of them is induced by the
@@ -90,7 +90,7 @@ public theorem eq_mapHom (ψ : 𝒜 →+*ᵍ ℬ)
     p = mapHom 𝒜 ℬ ψ
 ```
 
-**`Stacks.AlgebraicGeometry.ProjMapUniqueTwist.projMapData_twistMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjMapUniqueTwist/Basic.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjMapUniqueTwist/Basic.lean#L282). The attribute's comment: “uniqueness of the graded-algebra map”.
+**`Stacks.AlgebraicGeometry.ProjMapUniqueTwist.projMapData_twistMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjMapUniqueTwist/Basic.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjMapUniqueTwist/Basic.lean#L283). The attribute's comment: “uniqueness of the graded-algebra map”.
 
 > **Tag 01MY, uniqueness of the graded-algebra map.** A bundle of the canonical morphism with
 > maps on all twists which satisfies condition (1) at `⊤`, the multiplication law in all integer
@@ -123,7 +123,7 @@ public theorem projMapData_twistMap_unique (𝒜 : ℕ → σ) (ℬ : ℕ → τ
     D = projMapData 𝒜 ℬ ψ
 ```
 
-**`Stacks.AlgebraicGeometry.ProjShared.mapDomain`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjShared/MapDomain.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjShared/MapDomain.lean#L89). The attribute's comment: “the open domain”. References: EGA II (2.8.1); EGA II (3.5.6), “partial”.
+**`Stacks.AlgebraicGeometry.ProjShared.mapDomain`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjShared/MapDomain.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjShared/MapDomain.lean#L89). The attribute's comment: “the open domain”. References: EGA II (2.8.1); EGA II (3.5.6), “partial”.
 
 > The union of the standard opens `D₊(ψ f)` of `Proj ℬ` for `f` homogeneous of positive
 > degree: the largest open on which a graded ring homomorphism `ψ` induces a morphism to
@@ -133,7 +133,7 @@ public theorem projMapData_twistMap_unique (𝒜 : ℕ → σ) (ℬ : ℕ → τ
 public def mapDomain (ψ : 𝒜 →+*ᵍ ℬ) : (Proj ℬ).Opens
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistChain.mapHom_preimage_basicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistChain/MY.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistChain/MY.lean#L248). The attribute's comment: “part (2), inverse images of standard opens”. References: EGA II (2.8.1).
+**`Stacks.AlgebraicGeometry.ProjTwistChain.mapHom_preimage_basicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistChain/MY.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistChain/MY.lean#L248). The attribute's comment: “part (2), inverse images of standard opens”. References: EGA II (2.8.1).
 
 > **Stacks 01MY (2)**: the inverse image of a standard open of `Proj 𝒜` under the induced
 > morphism is the standard open of the image element.
@@ -145,7 +145,7 @@ public theorem mapHom_preimage_basicOpen (ψ : 𝒜 →+*ᵍ ℬ) (f : A) (d : �
       (mapDomain 𝒜 ℬ ψ).ι ⁻¹ᵁ AlgebraicGeometry.Proj.basicOpen ℬ (ψ f)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistCompare.projMapData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistCompare/Twist.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistCompare/Twist.lean#L356). The attribute's comment: “the morphism and the maps on all twists”.
+**`Stacks.AlgebraicGeometry.ProjTwistCompare.projMapData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistCompare/Twist.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistCompare/Twist.lean#L358). The attribute's comment: “the morphism and the maps on all twists”.
 
 > **The canonical bundle of Tag 01MY**: the glued morphism `mapHom` together with the
 > comparison maps `θ` on all twists.
@@ -154,7 +154,7 @@ public theorem mapHom_preimage_basicOpen (ψ : 𝒜 →+*ᵍ ℬ) (f : A) (d : �
 public def projMapData (ψ : 𝒜 →+*ᵍ ℬ) : ProjMapData 𝒜 ℬ ψ
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistGradedAlgebra.thetaGraded`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistGradedAlgebra/Basic.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistGradedAlgebra/Basic.lean#L198). The attribute's comment: “theta as a single morphism of sheaves of Z-graded algebras: the comparison maps on all integer twists, assembled into one morphism from the pullback along r\_psi of the graded algebra of integer twists of Proj A to the pullback along the inclusion of U(psi) of that of Proj B”.
+**`Stacks.AlgebraicGeometry.ProjTwistGradedAlgebra.thetaGraded`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistGradedAlgebra/Basic.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistGradedAlgebra/Basic.lean#L198). The attribute's comment: “theta as a single morphism of sheaves of Z-graded algebras: the comparison maps on all integer twists, assembled into one morphism from the pullback along r\_psi of the graded algebra of integer twists of Proj A to the pullback along the inclusion of U(psi) of that of Proj B”.
 
 > The comparison maps on all integer twists, as one homomorphism of sheaves of `ℤ`-graded
 > algebras
@@ -167,7 +167,7 @@ def thetaGraded (ψ : 𝒜 →+*ᵍ ℬ) :
       pullbackTwistAlgebra ℬ (mapDomain 𝒜 ℬ ψ).ι
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistTheta.twistMap_degreeSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistTheta/DegreeSection.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistTheta/DegreeSection.lean#L225). The attribute's comment: “part (1), homogeneous global sections”.
+**`Stacks.AlgebraicGeometry.ProjTwistTheta.twistMap_degreeSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistTheta/DegreeSection.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistTheta/DegreeSection.lean#L225). The attribute's comment: “part (1), homogeneous global sections”.
 
 > **Tag 01MY, part (1), homogeneous global sections.** The comparison map on the `n`-th twist
 > carries the global section of `O(n)` attached to a homogeneous element `a` of degree `n` to the
@@ -189,7 +189,7 @@ public theorem twistMap_degreeSection (ψ : 𝒜 →+*ᵍ ℬ) (n : ℕ) (a : �
 
 [Tag 01MZ](https://stacks.math.columbia.edu/tag/01MZ) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjTwistCompTwistMap.mapDomain_mapHom_twistMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistCompTwistMap/Statement.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistCompTwistMap/Statement.lean#L100). The attribute's comment: “the tag's three assertions in one statement, for an arbitrary composable pair of homomorphisms of nonnegatively graded rings: the domain of definition of the composite is the inverse image under `r_ψ` of the domain of definition of `φ`, the morphism of the composite is `r_φ ∘ r_ψ` restricted to that open, and the comparison maps on every twist compose”. References: EGA II (2.8.4).
+**`Stacks.AlgebraicGeometry.ProjTwistCompTwistMap.mapDomain_mapHom_twistMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistCompTwistMap/Statement.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistCompTwistMap/Statement.lean#L100). The attribute's comment: “the tag's three assertions in one statement, for an arbitrary composable pair of homomorphisms of nonnegatively graded rings: the domain of definition of the composite is the inverse image under `r_ψ` of the domain of definition of `φ`, the morphism of the composite is `r_φ ∘ r_ψ` restricted to that open, and the comparison maps on every twist compose”. References: EGA II (2.8.4).
 
 > **[Stacks, Tag 01MZ].** Let `𝒜`, `ℬ`, `𝒞` be nonnegatively graded rings, write
 > `X = Proj 𝒜`, `Y = Proj ℬ`, `Z = Proj 𝒞`, and let `φ : 𝒜 →+*ᵍ ℬ` and `ψ : ℬ →+*ᵍ 𝒞` be
@@ -254,35 +254,23 @@ public theorem mapDomain_mapHom_twistMap_comp (φ : 𝒜 →+*ᵍ ℬ) (ψ : ℬ
 
 [Tag 01N0](https://stacks.math.columbia.edu/tag/01N0) in the Stacks Project.
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.pullbackGlobalSections_degreeSection_eq_zero_iff_degreeSection_map_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSaturation/QuotientComparison.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSaturation/QuotientComparison.lean#L250). The attribute's comment: “part (3), the comparison θ : r\_ψ^* 𝒪\_X(n) ⟶ 𝒪\_Y(n) on the canonical twisted sections: for ψ surjective out of a Noetherian graded ring generated in degree one, θ is injective on them, so the pulled-back section of a ∈ 𝒮 n vanishes iff the section of ψ a does. Surjectivity of θ is twist\_surjective; sheaf-level isomorphy of θ, and the source's counterexample to it, are not proved.”.
+**`Stacks.AlgebraicGeometry.ProjTwistCompare.NotIsoExample.surjective_and_not_isIso_projMapData_twistMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistCompare/NotIsoExample.lean, line 492](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistCompare/NotIsoExample.lean#L492). The attribute's comment: “part (3), second half: the maps θ are not isomorphisms in general, even if A → B is surjective: A = R[x,y]/(x²) with deg x = 1, deg y = 2 over a nonzero ring R, B = A/(x); ψ is surjective in every degree and as a ring map, and θ₁ is not an isomorphism”.
 
-> **Tag 01N0 part (3) on canonical twisted sections, for a surjective homomorphism of graded
-> rings out of a Noetherian ring generated in degree one.** Write `X = Proj 𝒮`, `Y = Proj ℬ` and
-> `r = r_ψ : Y ⟶ X` for the closed immersion of part (2). For `a ∈ 𝒮 n`, the pullback along `r` of
-> the canonical section of `𝒪_X(n)` attached to `a` vanishes exactly when the canonical section of
-> `𝒪_Y(n)` attached to `ψ a` vanishes.
->
-> The source's part (3) says the comparison maps `θ : r^* 𝒪_X(n) ⟶ 𝒪_Y(n)` of Tag 01MY are
-> surjective but in general not injective, even for a surjective `ψ`; its counterexample is
-> `𝒮 = k[x, y]` with `deg x = 1`, `deg y = 2` and `Ker ψ = (x)`. The statement here is that `θ`
-> *is* injective on the canonical sections once `𝒮` is generated in degree one — the hypothesis the
-> counterexample violates. Surjectivity of `θ` is
+> **Stacks 01N0 (3), the maps `θ` are not isomorphisms in general, even for a surjective
+> `ψ`.** The quotient map `ψ : R[x, y]/(x²) ⟶ R[x, y]/(x)`, with `deg x = 1` and `deg y = 2` over a
+> nonzero ring `R`, is surjective in every degree (so it satisfies the hypothesis of Tag 01N0) and
+> surjective as a ring map, while the comparison map `θ₁` of Tag 01MY's bundle `projMapData` is not
+> an isomorphism. The surjectivity of every `θ_n` under the hypothesis of Tag 01N0 is
 > `Stacks.AlgebraicGeometry.ProjTwistEpi.epi_projMapData_twistMap_of_eventually_surjective`.
->
-> Both sides are the saturation of `Ker ψ`: the left by `mem_idealOfClosedSubscheme_map_iff` and
-> the right by `AlgebraicGeometry.ProjectiveSpectrum.Proj.degreeSection_eq_zero_iff` on `ℬ`, which
-> inherits Noetherianness and degree-one generation from `𝒮` along `ψ`.
 
 ```lean
-theorem pullbackGlobalSections_degreeSection_eq_zero_iff_degreeSection_map_eq_zero
-    [IsNoetherianRing S] (hψ : Function.Surjective ψ)
-    (hgen : Algebra.adjoin (𝒮 0) (𝒮 1 : Set S) = ⊤) {n : ℕ} (b : 𝒮 n) :
-    pullbackGlobalSections (Proj.map ψ hq) (twistingSheaf 𝒮 (n : ℤ))
-          (degreeSection 𝒮 n b) = 0 ↔
-      degreeSection ℬ n ⟨ψ (b : S), ψ.map_mem b.2⟩ = 0
+theorem surjective_and_not_isIso_projMapData_twistMap :
+    (∀ d, Function.Surjective (GradedRingHom.gradedAddHom (psi R) d)) ∧
+      Function.Surjective (psi R) ∧
+      ¬ IsIso ((projMapData (gradA R) (gradB R) (psi R)).twistMap ((1 : ℕ) : ℤ))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistEpi.epi_projMapData_twistMap_of_eventually_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistEpi/Basic.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistEpi/Basic.lean#L201). The attribute's comment: “twist\_surjective”.
+**`Stacks.AlgebraicGeometry.ProjTwistEpi.epi_projMapData_twistMap_of_eventually_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistEpi/Basic.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistEpi/Basic.lean#L202). The attribute's comment: “part (3), first half: θ : r\_ψ^* 𝒪(n) ⟶ 𝒪(n) is surjective for every n when A\_d → B\_d is surjective for all d ≫ 0”.
 
 > If `ψ` is surjective on homogeneous components of all sufficiently large degree, then the
 > twist maps of the bundle `projMapData 𝒜 ℬ ψ` are epimorphisms of sheaves of modules.
@@ -293,10 +281,10 @@ public theorem epi_projMapData_twistMap_of_eventually_surjective (ψ : 𝒜 →+
     (n : ℤ) : Epi ((projMapData 𝒜 ℬ ψ).twistMap n)
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjChain.mapDomain_eq_top_of_eventually_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean#L155). The attribute's comment: “domain”.
+**`Stacks.AlgebraicGeometry.RelativeProjChain.mapDomain_eq_top_of_eventually_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean#L160). The attribute's comment: “part (1): U(ψ) = Proj B when A\_d → B\_d is surjective for all d ≫ 0”.
 
-> **Stacks 01N1 (1)**: a graded ring homomorphism surjective in all sufficiently large degrees
-> is defined on the whole of `Proj ℬ`.
+> **Stacks 01N0 (1) and 01N1 (1)**: a graded ring homomorphism surjective in all sufficiently
+> large degrees is defined on the whole of `Proj ℬ`.
 >
 > A point of `Proj ℬ` omits some homogeneous `g` of positive degree `m`; a large power `g ^ k` is
 > homogeneous of degree `k * m`, is still omitted because the point is prime, and is in the image
@@ -308,12 +296,12 @@ public theorem mapDomain_eq_top_of_eventually_surjective (ψ : 𝒜 →+*ᵍ ℬ
     mapDomain 𝒜 ℬ ψ = ⊤
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjChain.isClosedImmersion_projMapData_hom_of_eventually_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean#L223). The attribute's comment: “closed\_immersion”.
+**`Stacks.AlgebraicGeometry.RelativeProjChain.isClosedImmersion_projMapData_hom_of_eventually_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean#L230). The attribute's comment: “part (2): r\_ψ : Proj B ⟶ Proj A is a closed immersion when A\_d → B\_d is surjective for all d ≫ 0”.
 
-> **Stacks 01N1 (2)** on Tag 01MY's bundle: the underlying morphism of
+> **Stacks 01N0 (2) and 01N1 (2)** on Tag 01MY's bundle: the underlying morphism of
 > `Stacks.AlgebraicGeometry.ProjTwistCompare.projMapData` is a closed immersion. This is the form
-> the statements of the chain quantify over, and it is the previous result unchanged, since the bundle's
-> morphism is `mapHom` by definition.
+> the statements of the chain quantify over, and it is the previous result unchanged, since the
+> bundle's morphism is `mapHom` by definition.
 
 ```lean
 public theorem isClosedImmersion_projMapData_hom_of_eventually_surjective (ψ : 𝒜 →+*ᵍ ℬ)
@@ -321,29 +309,11 @@ public theorem isClosedImmersion_projMapData_hom_of_eventually_surjective (ψ : 
     IsClosedImmersion (ProjTwistCompare.projMapData 𝒜 ℬ ψ).hom
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjChain.isClosedImmersion_projToProjectiveSpaceGradeZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/PolynomialSurjection.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjChain/PolynomialSurjection.lean#L233). The attribute's comment: “part (2) at a polynomial ring: closed immersion into ℙⁿ”. References: EGA II (2.9.5), “special case”.
-
-> **Stacks Tag 01N0 at a polynomial ring: a graded ring generated in degree one by `n + 1`
-> elements is a closed subscheme of `ℙⁿ`.** Let `S` be a graded ring and let `x_0, …, x_n ∈ S_1`
-> generate `S` as an `S_0`-algebra. Then the induced morphism
-> `Proj S ⟶ ℙⁿ_{S_0} = Proj S_0[T_0, …, T_n]` is a closed immersion.
->
-> This is the source's hypothesis "`S` is generated by `S_1` over `S_0`" together with a choice of
-> `n + 1` generators, and it is `isClosedImmersion_projToProjectiveSpace` with `R = S_0` and the
-> inclusion of the degree-zero part as the structure map.
-
-```lean
-theorem isClosedImmersion_projToProjectiveSpaceGradeZero (x : Fin (n + 1) → S)
-    (hx : ∀ i, x i ∈ 𝒮 1) (hgen : Algebra.adjoin (𝒮 0) (Set.range x) = ⊤) :
-    IsClosedImmersion
-      (projToProjectiveSpace 𝒮 (R := (𝒮 0)) (fun r => r.2) x hx hgen)
-```
-
 ## Tag 07ZE, a lemma
 
 [Tag 07ZE](https://stacks.math.columbia.edu/tag/07ZE) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjChain.mapDomain_eq_top_of_eventually_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualBijective.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualBijective.lean#L166). The attribute's comment: “part (1), the domain is all of Proj B”.
+**`Stacks.AlgebraicGeometry.RelativeProjChain.mapDomain_eq_top_of_eventually_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualBijective.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualBijective.lean#L166). The attribute's comment: “part (1), the domain is all of Proj B”.
 
 > **Stacks 07ZE (1)**: a graded homomorphism bijective in all large degrees is defined on all
 > of `Proj ℬ`. Only surjectivity is used, so this is Stacks 01N1's first assertion.
@@ -354,12 +324,12 @@ public theorem mapDomain_eq_top_of_eventually_bijective (ψ : 𝒜 →+*ᵍ ℬ)
     mapDomain 𝒜 ℬ ψ = ⊤
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjChain.isIso_projMapData_hom_of_eventually_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualBijective.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualBijective.lean#L197). The attribute's comment: “part (2), the projective-spectrum morphism is an isomorphism”.
+**`Stacks.AlgebraicGeometry.RelativeProjChain.isIso_projMapData_hom_of_eventually_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualBijective.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualBijective.lean#L197). The attribute's comment: “part (2), the projective-spectrum morphism is an isomorphism”.
 
 > **Stacks 07ZE (2)** on Tag 01MY's bundle: the underlying morphism of
 > `Stacks.AlgebraicGeometry.ProjTwistCompare.projMapData` is an isomorphism. This is the form the
-> statements of the chain quantify over, and it is the previous result unchanged, since the bundle's morphism
-> is `mapHom` by definition.
+> statements of the chain quantify over, and it is the previous result unchanged, since the bundle's
+> morphism is `mapHom` by definition.
 
 ```lean
 public theorem isIso_projMapData_hom_of_eventually_bijective (ψ : 𝒜 →+*ᵍ ℬ)
@@ -367,7 +337,7 @@ public theorem isIso_projMapData_hom_of_eventually_bijective (ψ : 𝒜 →+*ᵍ
     IsIso (ProjTwistCompare.projMapData 𝒜 ℬ ψ).hom
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjChain.isIso_projMapData_twistMap_of_eventually_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualBijective.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualBijective.lean#L383). The attribute's comment: “part (3), the maps on twists are isomorphisms”.
+**`Stacks.AlgebraicGeometry.RelativeProjChain.isIso_projMapData_twistMap_of_eventually_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualBijective.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualBijective.lean#L383). The attribute's comment: “part (3), the maps on twists are isomorphisms”.
 
 > **Stacks 07ZE (3)**: a graded homomorphism bijective in all large degrees makes Tag 01MY's
 > comparison map on the `n`-th twist an isomorphism, for every `n : ℤ`.
@@ -386,7 +356,7 @@ public theorem isIso_projMapData_twistMap_of_eventually_bijective (ψ : 𝒜 →
 
 [Tag 01N1](https://stacks.math.columbia.edu/tag/01N1) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjTwistMono.isIso_projMapData_twistMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistMono/Assembly.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistMono/Assembly.lean#L125). The attribute's comment: “part (3): isomorphisms on all twists”.
+**`Stacks.AlgebraicGeometry.ProjTwistMono.isIso_projMapData_twistMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistMono/Assembly.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistMono/Assembly.lean#L125). The attribute's comment: “part (3): isomorphisms on all twists”.
 
 > **Tag 01N1's third assertion.** For a homomorphism of graded rings surjective on homogeneous
 > components of all large degree, with the source generated in degree one over its degree-zero
@@ -399,10 +369,10 @@ theorem isIso_projMapData_twistMap (ψ : 𝒜 →+*ᵍ ℬ)
     IsIso ((ProjTwistCompare.projMapData 𝒜 ℬ ψ).twistMap n)
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjChain.mapDomain_eq_top_of_eventually_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean#L155). The attribute's comment: “part (1): the domain is all of Proj”.
+**`Stacks.AlgebraicGeometry.RelativeProjChain.mapDomain_eq_top_of_eventually_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean#L160). The attribute's comment: “part (1): the domain is all of Proj”.
 
-> **Stacks 01N1 (1)**: a graded ring homomorphism surjective in all sufficiently large degrees
-> is defined on the whole of `Proj ℬ`.
+> **Stacks 01N0 (1) and 01N1 (1)**: a graded ring homomorphism surjective in all sufficiently
+> large degrees is defined on the whole of `Proj ℬ`.
 >
 > A point of `Proj ℬ` omits some homogeneous `g` of positive degree `m`; a large power `g ^ k` is
 > homogeneous of degree `k * m`, is still omitted because the point is prime, and is in the image
@@ -414,12 +384,12 @@ public theorem mapDomain_eq_top_of_eventually_surjective (ψ : 𝒜 →+*ᵍ ℬ
     mapDomain 𝒜 ℬ ψ = ⊤
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjChain.isClosedImmersion_projMapData_hom_of_eventually_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean#L223). The attribute's comment: “part (2): the closed immersion”.
+**`Stacks.AlgebraicGeometry.RelativeProjChain.isClosedImmersion_projMapData_hom_of_eventually_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjChain/EventualSurjective.lean#L230). The attribute's comment: “part (2): the closed immersion”.
 
-> **Stacks 01N1 (2)** on Tag 01MY's bundle: the underlying morphism of
+> **Stacks 01N0 (2) and 01N1 (2)** on Tag 01MY's bundle: the underlying morphism of
 > `Stacks.AlgebraicGeometry.ProjTwistCompare.projMapData` is a closed immersion. This is the form
-> the statements of the chain quantify over, and it is the previous result unchanged, since the bundle's
-> morphism is `mapHom` by definition.
+> the statements of the chain quantify over, and it is the previous result unchanged, since the
+> bundle's morphism is `mapHom` by definition.
 
 ```lean
 public theorem isClosedImmersion_projMapData_hom_of_eventually_surjective (ψ : 𝒜 →+*ᵍ ℬ)
@@ -431,7 +401,7 @@ public theorem isClosedImmersion_projMapData_hom_of_eventually_surjective (ψ : 
 
 [Tag 01N2](https://stacks.math.columbia.edu/tag/01N2) in the Stacks Project.
 
-**`Stacks.ProjBaseChange.mapDomain_isPullback_isIso_twistMap_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ProjBaseChangeStatement.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ProjBaseChangeStatement.lean#L98). The attribute's comment: “the tag's three assertions in one statement, for the base change of a graded `R`-algebra `A` along an `R`-algebra `S`: the domain of definition of the base-change homomorphism is the whole of `Proj (S ⊗[R] A)`, the square it forms with the structure morphisms to `Spec S` and `Spec R` is a fibre product, and the comparison map on every twist is an isomorphism”.
+**`Stacks.ProjBaseChange.mapDomain_isPullback_isIso_twistMap_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ProjBaseChangeStatement.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ProjBaseChangeStatement.lean#L98). The attribute's comment: “the tag's three assertions in one statement, for the base change of a graded `R`-algebra `A` along an `R`-algebra `S`: the domain of definition of the base-change homomorphism is the whole of `Proj (S ⊗[R] A)`, the square it forms with the structure morphisms to `Spec S` and `Spec R` is a fibre product, and the comparison map on every twist is an isomorphism”.
 
 > **[Stacks, Tag 01N2].** Let `A` be a graded `R`-algebra with grading `𝒜`, let `S` be an
 > `R`-algebra, write `X = Proj 𝒜` and `Y = Proj (S ⊗[R] 𝒜)`, and let `ψ : a ↦ 1 ⊗ₜ a` be the
@@ -479,7 +449,7 @@ theorem mapDomain_isPullback_isIso_twistMap_baseChange :
 
 [Tag 01N3](https://stacks.math.columbia.edu/tag/01N3) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjShared.mapDomain_eq_top_of_isLocalizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjShared/MapDomain.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjShared/MapDomain.lean#L181). The attribute's comment: “the open domain”.
+**`Stacks.AlgebraicGeometry.ProjShared.mapDomain_eq_top_of_isLocalizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjShared/MapDomain.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjShared/MapDomain.lean#L181). The attribute's comment: “the open domain”.
 
 > **A graded homomorphism that presents its target as a localization of its source at a
 > degree-zero element is everywhere defined.**
@@ -502,7 +472,7 @@ public theorem mapDomain_eq_top_of_isLocalizationAway (ψ : 𝒜 →+*ᵍ ℬ) (
     mapDomain 𝒜 ℬ ψ = ⊤
 ```
 
-**`Stacks.AlgebraicGeometry.TwistBaseChange.isOpenImmersion_mapHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistBaseChange/Fibre.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwistBaseChange/Fibre.lean#L204). The attribute's comment: “the open immersion”.
+**`Stacks.AlgebraicGeometry.TwistBaseChange.isOpenImmersion_mapHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistBaseChange/Fibre.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TwistBaseChange/Fibre.lean#L204). The attribute's comment: “the open immersion”.
 
 > **The induced morphism of a graded localization away from a degree-zero element is an open
 > immersion.**
@@ -513,7 +483,7 @@ public theorem isOpenImmersion_mapHom (ψ : 𝒜 →+*ᵍ ℬ) {g : A} (hg : g �
     IsOpenImmersion (mapHom 𝒜 ℬ ψ)
 ```
 
-**`Stacks.AlgebraicGeometry.TwistBaseChange.opensRange_mapHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistBaseChange/Fibre.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwistBaseChange/Fibre.lean#L269). The attribute's comment: “the inverse image of D(g)”.
+**`Stacks.AlgebraicGeometry.TwistBaseChange.opensRange_mapHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistBaseChange/Fibre.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TwistBaseChange/Fibre.lean#L269). The attribute's comment: “the inverse image of D(g)”.
 
 > For a graded ring homomorphism exhibiting `B` as a localization of `A` away from an element
 > `g` of degree `0`, the open immersion `Proj ℬ ⟶ Proj 𝒜` identifies `Proj ℬ` with the inverse
@@ -528,7 +498,7 @@ public theorem opensRange_mapHom (ψ : 𝒜 →+*ᵍ ℬ) {g : A} (hg : g ∈ �
       Proj.toSpecZero 𝒜 ⁻¹ᵁ PrimeSpectrum.basicOpen (⟨g, hg⟩ : 𝒜 0)
 ```
 
-**`Stacks.AlgebraicGeometry.TwistBaseChange.isIso_projMapData_twistMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistBaseChange/Iso.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwistBaseChange/Iso.lean#L290). The attribute's comment: “the maps on twists”.
+**`Stacks.AlgebraicGeometry.TwistBaseChange.isIso_projMapData_twistMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistBaseChange/Iso.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TwistBaseChange/Iso.lean#L290). The attribute's comment: “the maps on twists”.
 
 > If `ψ` presents `B` as the localization `A_g` of `A` at a degree-zero element `g`, then the
 > comparison map `θ : r_ψ^* 𝒪_X(n) → 𝒪_Y(n)` of
@@ -544,7 +514,7 @@ public theorem isIso_projMapData_twistMap (ψ : 𝒜 →+*ᵍ ℬ) {g : A} (hg :
 
 [Tag 0B5J](https://stacks.math.columbia.edu/tag/0B5J) in the Stacks Project.
 
-**`Stacks.Veronese.tag0B5J`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjVeroneseStatement.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjVeroneseStatement.lean#L157). The attribute's comment: “the canonical isomorphism i : Proj S to Proj S^(d) induced by the inclusion S^(d) in S, described on homogeneous primes and on the standard opens D+(f) = Spec S\_(f); assertion (1), the canonical isomorphism from the sheaf of a graded S-module M, in any universe, to the pullback of the sheaf of M^(d), described on the standard opens; assertion (2), the isomorphisms O\_X(nd) to i^* O\_X'(n) obtained from (1) at M = S(nd); and the compatibility of these isomorphisms with the multiplication maps of associated sheaves (through the comparison map from M^(d) tensor N^(d) to (M tensor N)^(d)), with the multiplication of twists, with the maps O(n) tensor F(m) to F(n+m) and M~ tensor O(n) to M(n)~, with the maps from S and from M to twisted global sections, and with the products of twisted global sections”. References: EGA II (8.14.13), “partial”.
+**`Stacks.Veronese.tag0B5J`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjVeroneseStatement.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjVeroneseStatement.lean#L157). The attribute's comment: “the canonical isomorphism i : Proj S to Proj S^(d) induced by the inclusion S^(d) in S, described on homogeneous primes and on the standard opens D+(f) = Spec S\_(f); assertion (1), the canonical isomorphism from the sheaf of a graded S-module M, in any universe, to the pullback of the sheaf of M^(d), described on the standard opens; assertion (2), the isomorphisms O\_X(nd) to i^* O\_X'(n) obtained from (1) at M = S(nd); and the compatibility of these isomorphisms with the multiplication maps of associated sheaves (through the comparison map from M^(d) tensor N^(d) to (M tensor N)^(d)), with the multiplication of twists, with the maps O(n) tensor F(m) to F(n+m) and M~ tensor O(n) to M(n)~, with the maps from S and from M to twisted global sections, and with the products of twisted global sections”. References: EGA II (8.14.13), “partial”.
 
 > **[Stacks, Tag 0B5J].** Let `S` be a graded ring and `d ≥ 1`. Set `S' = S⁽ᵈ⁾`,
 > `X = Proj S` and `X' = Proj S'`. There is a canonical isomorphism `i : X ⟶ X'` of schemes such
@@ -709,4 +679,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.11, Tag 01MX](https://stacks.math.columbia.edu/tag/01MX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

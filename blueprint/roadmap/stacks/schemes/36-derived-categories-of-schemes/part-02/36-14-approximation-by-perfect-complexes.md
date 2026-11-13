@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.14 Approximation by perfect complexes
 
-Section 36.14 of the Stacks Project, [Tag 08EL](https://stacks.math.columbia.edu/tag/08EL). 6 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.14 of the Stacks Project, [Tag 08EL](https://stacks.math.columbia.edu/tag/08EL). 6 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08EM, a definition
 
 [Tag 08EM](https://stacks.math.columbia.edu/tag/08EM) in the Stacks Project.
 
-**`AlgebraicGeometry.HasPerfectApproximation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/Defs.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/Defs.lean#L65).
+**`AlgebraicGeometry.HasPerfectApproximation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/Defs.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/Defs.lean#L65).
 
 > Approximation holds for the triple `(T, E, m)`: there is a perfect object of the derived
 > category of `𝒪_X`-modules, cohomologically supported on `T`, mapping to `E` by a map which is an
@@ -30,7 +30,7 @@ abbrev HasPerfectApproximation (X : Scheme.{u}) (T : Set X)
 
 [Tag 08EN](https://stacks.math.columbia.edu/tag/08EN) in the Stacks Project.
 
-**`AlgebraicGeometry.HasApproximationByPerfectComplexes`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/Defs.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/Defs.lean#L79).
+**`AlgebraicGeometry.HasApproximationByPerfectComplexes`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/Defs.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/Defs.lean#L79).
 
 > The scheme `X` satisfies approximation by perfect complexes: for every closed subset `T`
 > with retrocompact complement there is an integer `r` such that every sufficiently
@@ -45,7 +45,7 @@ abbrev HasApproximationByPerfectComplexes (X : Scheme.{u}) : Prop
 
 [Tag 08EP](https://stacks.math.columbia.edu/tag/08EP) in the Stacks Project.
 
-**`AlgebraicGeometry.hasPerfectApproximation_of_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Approximation/OpenSubscheme.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Approximation/OpenSubscheme.lean#L276).
+**`AlgebraicGeometry.hasPerfectApproximation_of_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Approximation/OpenSubscheme.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/Approximation/OpenSubscheme.lean#L276).
 
 > **Stacks Project, Tag 08EP.** Let `T` be a closed subset of a scheme `X` contained in an
 > open subscheme `U`, and let `E` be an object of the derived category of `𝒪_X`-modules whose
@@ -78,7 +78,7 @@ theorem hasPerfectApproximation_of_open
 
 [Tag 08EQ](https://stacks.math.columbia.edu/tag/08EQ) in the Stacks Project.
 
-**`AlgebraicGeometry.PerfectApproximation.approximationHolds_of_affineCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/AffineCover.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/AffineCover.lean#L386). The attribute's comment: “first assertion: approximation for triples on an affine scheme”.
+**`AlgebraicGeometry.PerfectApproximation.approximationHolds_of_affineCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/AffineCover.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/AffineCover.lean#L386). The attribute's comment: “first assertion: approximation for triples on an affine scheme”.
 
 > Let `X` be an affine scheme. Approximation holds for every triple `(T, E, m)` with `E` an
 > object of `D_QCoh(𝒪_X)` for which there is an integer `r ≥ 0` such that
@@ -100,7 +100,7 @@ theorem approximationHolds_of_affineCover (X : Scheme.{u}) [IsAffine X] (T : Set
     ApproximationHolds X T E m
 ```
 
-**`AlgebraicGeometry.PerfectApproximation.approximationByPerfectComplexes_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/AffineScheme.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/AffineScheme.lean#L256). The attribute's comment: “second assertion: approximation by perfect complexes on an affine scheme”.
+**`AlgebraicGeometry.PerfectApproximation.approximationByPerfectComplexes_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/AffineScheme.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/AffineScheme.lean#L256). The attribute's comment: “second assertion: approximation by perfect complexes on an affine scheme”.
 
 > **Approximation by perfect complexes holds on an affine scheme.** This is the second
 > assertion of [Stacks, Tag 08EQ]: the case of `Spec R`,
@@ -112,7 +112,7 @@ theorem approximationByPerfectComplexes_of_isAffine (X : Scheme.{u}) [IsAffine X
     ApproximationByPerfectComplexes X
 ```
 
-**`AlgebraicGeometry.PerfectApproximation.hasApproximationByPerfectComplexes_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/AffineScheme.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/AffineScheme.lean#L264). The attribute's comment: “second assertion: approximation by perfect complexes on an affine scheme”.
+**`AlgebraicGeometry.PerfectApproximation.hasApproximationByPerfectComplexes_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/AffineScheme.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/AffineScheme.lean#L264). The attribute's comment: “second assertion: approximation by perfect complexes on an affine scheme”.
 
 > **Approximation by perfect complexes holds on an affine scheme**, in the encoding of
 > `AlgebraicGeometry.HasApproximationByPerfectComplexes`.
@@ -126,7 +126,7 @@ theorem hasApproximationByPerfectComplexes_of_isAffine (X : Scheme.{u}) [IsAffin
 
 [Tag 08ER](https://stacks.math.columbia.edu/tag/08ER) in the Stacks Project.
 
-**`AlgebraicGeometry.PerfectApproximation.hasApproximationByPerfectComplexes_of_sup_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/QuasiCompactQuasiSeparated.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/QuasiCompactQuasiSeparated.lean#L356).
+**`AlgebraicGeometry.PerfectApproximation.hasApproximationByPerfectComplexes_of_sup_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/QuasiCompactQuasiSeparated.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/QuasiCompactQuasiSeparated.lean#L356).
 
 > Let `X = U ∪ V` be an open cover with `U` quasi-compact, `V` affine and `U ∩ V`
 > quasi-compact. If approximation by perfect complexes holds on `U`, then it holds on `X`.
@@ -138,7 +138,7 @@ theorem hasApproximationByPerfectComplexes_of_sup_affine {X : Scheme.{u}} (U V :
     HasApproximationByPerfectComplexes X
 ```
 
-**`AlgebraicGeometry.PerfectApproximation.approximationByPerfectComplexes_sup_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/UnionAffine.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/UnionAffine.lean#L124). The attribute's comment: “approximation by perfect complexes passes from a quasi-compact open to its union with an affine open meeting it in a quasi-compact open; nothing is carried, and the statement is at the standard derived category of the sheaves of modules of the scheme, the model the whole chapter is written at”.
+**`AlgebraicGeometry.PerfectApproximation.approximationByPerfectComplexes_sup_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/UnionAffine.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/UnionAffine.lean#L124). The attribute's comment: “approximation by perfect complexes passes from a quasi-compact open to its union with an affine open meeting it in a quasi-compact open; nothing is carried, and the statement is at the standard derived category of the sheaves of modules of the scheme, the model the whole chapter is written at”.
 
 > **[Stacks, Tag 08ER].** Let `X` be a scheme, let `X = U ∪ V` be an open covering with `U`
 > quasi-compact, `V` affine and `U ∩ V` quasi-compact. If approximation by perfect complexes holds
@@ -162,7 +162,7 @@ theorem approximationByPerfectComplexes_sup_affine (X : Scheme.{u}) (U V : X.Ope
     ApproximationByPerfectComplexes X
 ```
 
-**`AlgebraicGeometry.PerfectApproximation.hasApproximationByPerfectComplexes_sup_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/UnionAffine.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/UnionAffine.lean#L287). The attribute's comment: “the same statement in the second encoding of the property of Tag 08EN; nothing is carried, and the derived category is the standard model, as in the first encoding”.
+**`AlgebraicGeometry.PerfectApproximation.hasApproximationByPerfectComplexes_sup_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/UnionAffine.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/UnionAffine.lean#L287). The attribute's comment: “the same statement in the second encoding of the property of Tag 08EN; nothing is carried, and the derived category is the standard model, as in the first encoding”.
 
 > **[Stacks, Tag 08ER]**, in the encoding of
 > `AlgebraicGeometry.HasApproximationByPerfectComplexes`.
@@ -179,7 +179,7 @@ theorem hasApproximationByPerfectComplexes_sup_affine (X : Scheme.{u}) (U V : X.
 
 [Tag 08ES](https://stacks.math.columbia.edu/tag/08ES) in the Stacks Project.
 
-**`AlgebraicGeometry.PerfectApproximation.approximationByPerfectComplexes_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/Qcqs.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/Qcqs.lean#L65). The attribute's comment: “approximation by perfect complexes on a quasi-compact quasi-separated scheme; nothing is carried, and the statement is at the standard derived category of the sheaves of modules of the scheme, the model the whole chapter is written at”.
+**`AlgebraicGeometry.PerfectApproximation.approximationByPerfectComplexes_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/Qcqs.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/Qcqs.lean#L65). The attribute's comment: “approximation by perfect complexes on a quasi-compact quasi-separated scheme; nothing is carried, and the statement is at the standard derived category of the sheaves of modules of the scheme, the model the whole chapter is written at”.
 
 > **[Stacks, Tag 08ES].** Approximation by perfect complexes holds on every quasi-compact and
 > quasi-separated scheme.
@@ -193,7 +193,7 @@ theorem approximationByPerfectComplexes_of_qcqs (X : Scheme.{u}) [CompactSpace X
     [QuasiSeparatedSpace X] : ApproximationByPerfectComplexes X
 ```
 
-**`AlgebraicGeometry.PerfectApproximation.hasApproximationByPerfectComplexes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/QuasiCompactQuasiSeparated.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/QuasiCompactQuasiSeparated.lean#L485).
+**`AlgebraicGeometry.PerfectApproximation.hasApproximationByPerfectComplexes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/QuasiCompactQuasiSeparated.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/QuasiCompactQuasiSeparated.lean#L485).
 
 > Approximation by perfect complexes holds on every quasi-compact and quasi-separated scheme.
 
@@ -209,4 +209,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.14, Tag 08EL](https://stacks.math.columbia.edu/tag/08EL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

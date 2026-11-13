@@ -7,7 +7,7 @@ statement: formalized
 
 # High-dimensional and geometric probability: its own results
 
-1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/index.html).
+1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/index.html).
 
 Probability in high dimension and on geometric objects: log-concave and uniform convex-body laws, isotropic constants, the KLS and thin-shell conjectures and their bounds, random matrices (singularity of Bernoulli matrices, Tracy–Widom limits), and random Euclidean optimization (Beardwood–Halton–Hammersley).
 
@@ -26,7 +26,7 @@ Let `q` be the Hastings–McLeod solution of Painlevé II
 
 - I. M. Johnstone, Ann. Statist. 29 (2001), 295–327, Theorem 1.1; Tracy–Widom (1996) for `F₁`; Hastings–McLeod (1980) for `q`.
 
-Stated but not proved: `MathlibExt.Probability.TracyWidomWanted.johnstone_largest_eigenvalue_tracyWidom` is written with `theorem_wanted` in [WantedExt/Probability/TracyWidomWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/TracyWidomWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/index.html#johnstone-largest-eigenvalue-tracy-widom).
+Stated but not proved: `MathlibExt.Probability.TracyWidomWanted.johnstone_largest_eigenvalue_tracyWidom` is written with `theorem_wanted` in [WantedExt/Probability/TracyWidomWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/TracyWidomWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/index.html#johnstone-largest-eigenvalue-tracy-widom).
 
 ## Depends on
 
@@ -35,4 +35,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: High-dimensional and geometric probability](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/high-dimensional-probability)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/high-dimensional-probability)

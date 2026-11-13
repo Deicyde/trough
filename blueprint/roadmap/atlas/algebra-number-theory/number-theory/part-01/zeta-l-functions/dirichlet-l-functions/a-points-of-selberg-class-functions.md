@@ -7,7 +7,7 @@ statement: formalized
 
 # a-points of Selberg class functions
 
-16 results, 6 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html).
+16 results, 6 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html).
 
 ## The Selberg class
 
@@ -40,7 +40,7 @@ such that:
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Section 2.
 
-Formalized by `MetaMathlibExt.SelbergClassFunction`, a structure declared in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#selberg-class-function).
+Formalized by `MetaMathlibExt.SelbergClassFunction`, a structure declared in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#selberg-class-function).
 
 ## Degree of a function in the Selberg class
 
@@ -52,7 +52,7 @@ $d_F = 2 \sum_{j=1}^{r} \lambda_j$.
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Section 2.
 
-Formalized by `MetaMathlibExt.SelbergClassFunction.degree`, a definition declared in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#degree).
+Formalized by `MetaMathlibExt.SelbergClassFunction.degree`, a definition declared in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#degree).
 
 ## Nonnegativity of the degree
 
@@ -64,7 +64,7 @@ satisfies $d_F \ge 0$.
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Section 2.
 
-Formalized by `MetaMathlibExt.SelbergClassFunction.degree_nonneg`, a theorem declared in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#degree-nonneg).
+Formalized by `MetaMathlibExt.SelbergClassFunction.degree_nonneg`, a theorem declared in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#degree-nonneg).
 
 ## Holomorphy of Selberg class functions away from $s = 1$
 
@@ -75,7 +75,7 @@ Selberg class, $F$ is complex differentiable at every $s \in \mathbb{C}$ with $s
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Section 2.
 
-Formalized by `MetaMathlibExt.SelbergClassFunction.differentiableAt_toFun`, a theorem declared in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#differentiable-at-to-fun).
+Formalized by `MetaMathlibExt.SelbergClassFunction.differentiableAt_toFun`, a theorem declared in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#differentiable-at-to-fun).
 
 ## Counting function of a-points of derivatives
 
@@ -91,7 +91,7 @@ A point near which $F^{(k)} - a$ vanishes identically is given multiplicity $0$.
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Theorem 1 and Section 2.
 
-Formalized by `MetaMathlibExt.SelbergClassFunction.aPointCount`, a definition declared in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#a-point-count).
+Formalized by `MetaMathlibExt.SelbergClassFunction.aPointCount`, a definition declared in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#a-point-count).
 
 ## The a-point count vanishes at nonpositive height
 
@@ -105,7 +105,7 @@ $0 < \operatorname{Im} s < T$.
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Theorem 1.
 
-Formalized by `MetaMathlibExt.SelbergClassFunction.aPointCount_of_nonpos`, a theorem declared in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#a-point-count-of-nonpos).
+Formalized by `MetaMathlibExt.SelbergClassFunction.aPointCount_of_nonpos`, a theorem declared in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#a-point-count-of-nonpos).
 
 ## Lemma 1 (no a-points of derivatives far to the right)
 
@@ -121,7 +121,7 @@ For $F = 1$ and $a = 0$ every point is a $0$-point, so the hypothesis on $a$ can
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.SelbergClassFunction.exists_no_aPoint_right` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#exists-no-a-point-right).
+Stated but not proved: `MetaMathlibExt.SelbergClassFunction.exists_no_aPoint_right` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#exists-no-a-point-right).
 
 ## Asymptotics of the derivatives of the reflected function (Lemma 2)
 
@@ -142,7 +142,7 @@ $s \in \mathbb{C}$ with $\operatorname{Re} s > c$ and $|\operatorname{Im} s| \ge
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.SelbergClassFunction.iteratedDeriv_reflected_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#iterated-deriv-reflected-asymptotic).
+Stated but not proved: `MetaMathlibExt.SelbergClassFunction.iteratedDeriv_reflected_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#iterated-deriv-reflected-asymptotic).
 
 ## No $a$-points of derivatives far to the left (Lemma 3)
 
@@ -158,7 +158,7 @@ For $F = 1$ and $a = 0$ every point is a $0$-point, so the hypothesis on $a$ can
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.SelbergClassFunction.exists_no_aPoint_left` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#exists-no-a-point-left).
+Stated but not proved: `MetaMathlibExt.SelbergClassFunction.exists_no_aPoint_left` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#exists-no-a-point-left).
 
 ## Lemma 4 (a-points of derivatives in windows of unit height)
 
@@ -175,7 +175,7 @@ The paper takes $E_1$ and $E_2$ from Lemmas 1 and 3; the bound is stated here fo
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.SelbergClassFunction.aPointCount_unit_window` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#a-point-count-unit-window).
+Stated but not proved: `MetaMathlibExt.SelbergClassFunction.aPointCount_unit_window` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#a-point-count-unit-window).
 
 ## Local partial-fraction formula at the a-points of the k-th derivative (Lemma 5)
 
@@ -196,7 +196,7 @@ $F^{(k)} - a$ at $\rho$.
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.SelbergClassFunction.logDeriv_aPoint_partialFraction` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#log-deriv-a-point-partial-fraction).
+Stated but not proved: `MetaMathlibExt.SelbergClassFunction.logDeriv_aPoint_partialFraction` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#log-deriv-a-point-partial-fraction).
 
 ## Lemma 6, case a ≠ 0 (expansion of the logarithmic derivative)
 
@@ -221,7 +221,7 @@ terms vanish because $\log 1 = 0$ and $a(n) = 0$ for $2 \le n < \ell$.
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.SelbergClassFunction.hasSum_logDeriv_aPoint_of_ne_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#has-sum-log-deriv-a-point-of-ne-zero).
+Stated but not proved: `MetaMathlibExt.SelbergClassFunction.hasSum_logDeriv_aPoint_of_ne_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#has-sum-log-deriv-a-point-of-ne-zero).
 
 ## Expansion of the logarithmic derivative of the k-th derivative (Lemma 6, zeros case)
 
@@ -241,7 +241,7 @@ and the sum over all pairs of $l$ and $(n_0, \dots, n_l)$ converges absolutely.
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.SelbergClassFunction.hasSum_logDeriv_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#has-sum-log-deriv-zero).
+Stated but not proved: `MetaMathlibExt.SelbergClassFunction.hasSum_logDeriv_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#has-sum-log-deriv-zero).
 
 ## Asymptotic count of a-points of derivatives in the Selberg class
 
@@ -265,7 +265,7 @@ The bounds $E_1 \ge 1$ and $E_2 \le 0$ of Lemmas 1 and 3 are not needed and are 
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.SelbergClassFunction.aPointCount_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#a-point-count-asymptotic).
+Stated but not proved: `MetaMathlibExt.SelbergClassFunction.aPointCount_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#a-point-count-asymptotic).
 
 ## Landau-type formula for the a-points of the k-th derivative (Theorem 2, a ≠ 0)
 
@@ -296,7 +296,7 @@ sum is empty for $x \notin \mathbb{Z}$ is immediate from the condition on the $n
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.SelbergClassFunction.sum_aPoint_pow_of_ne_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#sum-a-point-pow-of-ne-zero).
+Stated but not proved: `MetaMathlibExt.SelbergClassFunction.sum_aPoint_pow_of_ne_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#sum-a-point-pow-of-ne-zero).
 
 ## Landau-type formula for the zeros of the k-th derivative (Theorem 2, zeros case)
 
@@ -326,7 +326,7 @@ empty when $\ell^n x \notin \mathbb{Z}$ for all $n$ is not stated separately.
 
 - M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.SelbergClassFunction.sum_zero_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#sum-zero-pow).
+Stated but not proved: `MetaMathlibExt.SelbergClassFunction.sum_zero_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SelbergClassDerivativeAPointsWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html#sum-zero-pow).
 
 ## Depends on
 
@@ -335,4 +335,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: a-points of Selberg class functions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/dirichlet-l-functions/a-points-of-selberg-class-functions)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 65.13 Separation conditions on algebraic spaces
 
-Section 65.13 of the Stacks Project, [Tag 02X3](https://stacks.math.columbia.edu/tag/02X3). 3 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 65.13 of the Stacks Project, [Tag 02X3](https://stacks.math.columbia.edu/tag/02X3). 3 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02X3, the section
 
 [Tag 02X3](https://stacks.math.columbia.edu/tag/02X3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiSeparatedOver_of_isSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactDiagonalQuasiAffine.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactDiagonalQuasiAffine.lean#L82). The attribute's comment: “separated gives a quasi-compact diagonal”.
+**`AlgebraicGeometry.Space.isQuasiSeparatedOver_of_isSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactDiagonalQuasiAffine.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactDiagonalQuasiAffine.lean#L82). The attribute's comment: “separated gives a quasi-compact diagonal”.
 
 > **Stacks 02X3.** An algebraic space separated over `S` is quasi-separated over `S`: a
 > diagonal which is a closed immersion is in particular quasi-compact. Together with the
@@ -26,7 +26,7 @@ theorem isQuasiSeparatedOver_of_isSeparatedOver (F : (BigFppfOver B S hS)ᵒᵖ 
     (hF : IsSeparatedOver B S hS F) : IsQuasiSeparatedOver B S hS F
 ```
 
-**`AlgebraicGeometry.Space.presheaf_isSeparated_inf_quasiFinite_diag_of_isQuasiSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactDiagonalQuasiAffine.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactDiagonalQuasiAffine.lean#L98). The attribute's comment: “a quasi-compact diagonal is quasi-finite and separated”.
+**`AlgebraicGeometry.Space.presheaf_isSeparated_inf_quasiFinite_diag_of_isQuasiSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactDiagonalQuasiAffine.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactDiagonalQuasiAffine.lean#L98). The attribute's comment: “a quasi-compact diagonal is quasi-finite and separated”.
 
 > **Stacks 02X3.** Let `F` be an algebraic space over `S` whose diagonal is quasi-compact,
 > that is, which is quasi-separated over `S`. Then the diagonal is separated and quasi-finite:
@@ -47,7 +47,7 @@ theorem presheaf_isSeparated_inf_quasiFinite_diag_of_isQuasiSeparatedOver
       (BigFppfOver.toScheme B S hS))) (diag F)
 ```
 
-**`AlgebraicGeometry.Space.presheaf_isQuasiAffineHom_diag_of_isQuasiSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactDiagonalQuasiAffine.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactDiagonalQuasiAffine.lean#L120). The attribute's comment: “a quasi-compact diagonal is quasi-affine”.
+**`AlgebraicGeometry.Space.presheaf_isQuasiAffineHom_diag_of_isQuasiSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactDiagonalQuasiAffine.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactDiagonalQuasiAffine.lean#L120). The attribute's comment: “a quasi-compact diagonal is quasi-affine”.
 
 > **Stacks 02X3.** Let `F` be an algebraic space over `S` whose diagonal is quasi-compact,
 > that is, which is quasi-separated over `S`. Then the diagonal is quasi-affine: every
@@ -69,7 +69,7 @@ theorem presheaf_isQuasiAffineHom_diag_of_isQuasiSeparatedOver
 
 [Tag 02X4](https://stacks.math.columbia.edu/tag/02X4) in the Stacks Project.
 
-**`AlgebraicGeometry.presheaf_locallyOfFiniteType_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean#L332). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.presheaf_locallyOfFiniteType_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean#L332). The attribute's comment: “part (1)”.
 
 > **Stacks 02X4, part (1).** The diagonal of an algebraic space over `S` is locally of
 > finite type: every represented base change of it is a morphism of schemes locally of finite
@@ -83,7 +83,7 @@ theorem presheaf_locallyOfFiniteType_diag (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Ty
       (BigFppfOver.toScheme B S hS))) (diag F)
 ```
 
-**`AlgebraicGeometry.presheaf_monomorphisms_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean#L346). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.presheaf_monomorphisms_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean#L346). The attribute's comment: “part (2)”.
 
 > **Stacks 02X4, part (2).** The diagonal of an algebraic space over `S` is a monomorphism:
 > every represented base change of it is a monomorphism of schemes.
@@ -96,7 +96,7 @@ theorem presheaf_monomorphisms_diag (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u)
       (BigFppfOver.toScheme B S hS))) (diag F)
 ```
 
-**`AlgebraicGeometry.presheaf_isSeparated_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean#L360). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.presheaf_isSeparated_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean#L360). The attribute's comment: “part (3)”.
 
 > **Stacks 02X4, part (3).** The diagonal of an algebraic space over `S` is separated: every
 > represented base change of it is a separated morphism of schemes. This follows from part (2),
@@ -110,7 +110,7 @@ theorem presheaf_isSeparated_diag (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u)
       (BigFppfOver.toScheme B S hS))) (diag F)
 ```
 
-**`AlgebraicGeometry.presheaf_locallyQuasiFinite_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean#L374). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.presheaf_locallyQuasiFinite_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DiagonalProperties.lean#L374). The attribute's comment: “part (4)”.
 
 > **Stacks 02X4, part (4).** The diagonal of an algebraic space over `S` is locally
 > quasi-finite: every represented base change of it is a morphism of schemes which is locally of
@@ -129,7 +129,7 @@ theorem presheaf_locallyQuasiFinite_diag (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Typ
 
 [Tag 02X5](https://stacks.math.columbia.edu/tag/02X5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsSeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L57). The attribute's comment: “separated”.
+**`AlgebraicGeometry.Space.IsSeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L57). The attribute's comment: “separated”.
 
 > An algebraic space over `S` is *separated over `S`* when its diagonal is a closed immersion
 > of algebraic spaces.
@@ -138,7 +138,7 @@ theorem presheaf_locallyQuasiFinite_diag (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Typ
 abbrev IsSeparatedOver (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsLocallySeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L63). The attribute's comment: “locally\_separated”.
+**`AlgebraicGeometry.Space.IsLocallySeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L63). The attribute's comment: “locally\_separated”.
 
 > An algebraic space over `S` is *locally separated over `S`* when its diagonal is an
 > immersion of algebraic spaces.
@@ -147,7 +147,7 @@ abbrev IsSeparatedOver (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 abbrev IsLocallySeparatedOver (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiSeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L69). The attribute's comment: “quasi\_separated”.
+**`AlgebraicGeometry.Space.IsQuasiSeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L69). The attribute's comment: “quasi\_separated”.
 
 > An algebraic space over `S` is *quasi-separated over `S`* when its diagonal is
 > quasi-compact after every representable base change.
@@ -156,7 +156,7 @@ abbrev IsLocallySeparatedOver (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 abbrev IsQuasiSeparatedOver (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsZariskiLocallyQuasiSeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L77). The attribute's comment: “zariski\_locally\_quasi\_separated”.
+**`AlgebraicGeometry.Space.IsZariskiLocallyQuasiSeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L77). The attribute's comment: “zariski\_locally\_quasi\_separated”.
 
 > An algebraic space over `S` is *Zariski locally quasi-separated over `S`* when it admits a
 > Zariski covering by open subspaces which are quasi-separated over `S`.
@@ -172,4 +172,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 65.13, Tag 02X3](https://stacks.math.columbia.edu/tag/02X3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

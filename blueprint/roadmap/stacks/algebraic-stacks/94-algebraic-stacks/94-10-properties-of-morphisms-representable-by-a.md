@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_schemePoint, AlgebraicGeometry.Stack.SchemePointHasRelativeProperty, AlgebraicGeometry.Stack.surjective_smooth_etale_relativePropertyHypotheses, AlgebraicGeometry.Stack.HasRelativeProperty, AlgebraicGeometry.Stack.hasRelativeProperty_iff_of_equivalences, AlgebraicGeometry.Stack.hasRelativeProperty_iff_of_equivalences', AlgebraicGeometry.Stack.holdsOnEverySchemePoint_iff_hasRelativeProperty, AlgebraicGeometry.Stack.isoClassMap_holdsOnEverySchemePoint_iff
+lean: AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_schemePoint, AlgebraicGeometry.Stack.SchemePointHasRelativeProperty, AlgebraicGeometry.Stack.surjective_smooth_etale_relativePropertyHypotheses, AlgebraicGeometry.Stack.HasRelativeProperty, AlgebraicGeometry.Stack.hasRelativeProperty_iff_of_equivalences, AlgebraicGeometry.Stack.hasRelativeProperty_iff_of_equivalences', AlgebraicGeometry.Stack.holdsOnEverySchemePoint_iff_hasRelativeProperty, AlgebraicGeometry.Stack.isoClassMap_holdsOnEverySchemePoint_iff_model
 statement: formalized
 proof: formalized
 ---
 
 # 94.10 Properties of morphisms representable by algebraic spaces
 
-Section 94.10 of the Stacks Project, [Tag 03YJ](https://stacks.math.columbia.edu/tag/03YJ). 12 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 94.10 of the Stacks Project, [Tag 03YJ](https://stacks.math.columbia.edu/tag/03YJ). 12 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03YJ, the section
 
 [Tag 03YJ](https://stacks.math.columbia.edu/tag/03YJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_schemePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean#L82). The attribute's comment: “in the situation of Lemma 045G, every 1-morphism x : (Sch/U)\_fppf -> X is representable by algebraic spaces, so that saying x has P makes sense”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_schemePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean#L82). The attribute's comment: “in the situation of Lemma 045G, every 1-morphism x : (Sch/U)\_fppf -> X is representable by algebraic spaces, so that saying x has P makes sense”.
 
 > **Stacks, Section 03YJ.** If the diagonal of a category fibred in groupoids `𝒳` over the
 > big fppf site of `S` is representable by algebraic spaces, then every 1-morphism
@@ -29,7 +29,7 @@ theorem isRepresentableByAlgebraicSpaces_schemePoint
     IsRepresentableByAlgebraicSpaces B S hS x.hom
 ```
 
-**`AlgebraicGeometry.Stack.SchemePointHasRelativeProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean#L98). The attribute's comment: “for X as in Lemma 045G and P as in Definition 03YK, the property that a 1-morphism x : (Sch/U)\_fppf -> X has P”.
+**`AlgebraicGeometry.Stack.SchemePointHasRelativeProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean#L98). The attribute's comment: “for X as in Lemma 045G and P as in Definition 03YK, the property that a 1-morphism x : (Sch/U)\_fppf -> X has P”.
 
 > **Stacks, Section 03YJ.** Let `𝒳` be a category fibred in groupoids over the big fppf site
 > of `S` whose diagonal is representable by algebraic spaces, and let `𝒫` be a property of
@@ -48,7 +48,7 @@ abbrev SchemePointHasRelativeProperty
     (x : schemeFibredCategory B S hS U ⟶ 𝒳) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.surjective_smooth_etale_relativePropertyHypotheses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean#L111). The attribute's comment: “surjective, smooth and etale are properties as in Definition 03YK”.
+**`AlgebraicGeometry.Stack.surjective_smooth_etale_relativePropertyHypotheses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean#L111). The attribute's comment: “surjective, smooth and etale are properties as in Definition 03YK”.
 
 > **Stacks, Section 03YJ.** Surjectivity, smoothness and étaleness of morphisms of algebraic
 > spaces over `S` are each properties as in Definition 03YK: each is stable under base change and
@@ -71,7 +71,7 @@ theorem surjective_smooth_etale_relativePropertyHypotheses :
 
 [Tag 03YK](https://stacks.math.columbia.edu/tag/03YK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.HasRelativeProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeProperty.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeProperty.lean#L51).
+**`AlgebraicGeometry.Stack.HasRelativeProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeProperty.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativeProperty.lean#L51).
 
 > A 1-morphism of categories fibred in groupoids over the big fppf site of `S` which is
 > representable by algebraic spaces *has the property `P`* when every algebraic space representing
@@ -93,7 +93,7 @@ abbrev HasRelativeProperty
 
 [Tag 0459](https://stacks.math.columbia.edu/tag/0459) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_iff_of_equivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyEquivalence.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyEquivalence.lean#L78). The attribute's comment: “a vertical 1-morphism of a 2-commutative square whose horizontals are equivalences has the relative property exactly when the other vertical one does”.
+**`AlgebraicGeometry.Stack.hasRelativeProperty_iff_of_equivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyEquivalence.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyEquivalence.lean#L78). The attribute's comment: “a vertical 1-morphism of a 2-commutative square whose horizontals are equivalences has the relative property exactly when the other vertical one does”.
 
 > In a 2-commutative square of categories fibred in groupoids over the big fppf site of `S`
 > whose two horizontal 1-morphisms are equivalences, a vertical 1-morphism representable by
@@ -116,7 +116,7 @@ theorem hasRelativeProperty_iff_of_equivalences
           hf)
 ```
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_iff_of_equivalences'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyEquivalenceIff.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyEquivalenceIff.lean#L182). The attribute's comment: “the same biconditional assembled from the two one-directional statements”.
+**`AlgebraicGeometry.Stack.hasRelativeProperty_iff_of_equivalences'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyEquivalenceIff.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyEquivalenceIff.lean#L182). The attribute's comment: “the same biconditional assembled from the two one-directional statements”.
 
 > **Stacks 0459.** In a 2-commutative square of categories fibred in groupoids over the big fppf
 > site of `S` whose two horizontal 1-morphisms are equivalences, a vertical 1-morphism representable
@@ -151,7 +151,7 @@ theorem hasRelativeProperty_iff_of_equivalences' (P : MorphismProperty (Algebrai
 
 [Tag 045A](https://stacks.math.columbia.edu/tag/045A) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.holdsOnEverySchemePoint_iff_hasRelativeProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresheafRepresentability.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PresheafRepresentability.lean#L183).
+**`AlgebraicGeometry.Stack.holdsOnEverySchemePoint_iff_hasRelativeProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresheafRepresentability.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PresheafRepresentability.lean#L183).
 
 > **Stacks 045A.** Let `P` be a property of morphisms of algebraic spaces over `S` which is
 > stable under base change and local on the target for the fppf precoverage. A map `a : F ⟶ G` of
@@ -175,31 +175,36 @@ theorem holdsOnEverySchemePoint_iff_hasRelativeProperty
 
 [Tag 04TC](https://stacks.math.columbia.edu/tag/04TC) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isoClassMap_holdsOnEverySchemePoint_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SetoidRelativeProperty.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SetoidRelativeProperty.lean#L55).
+**`AlgebraicGeometry.Stack.isoClassMap_holdsOnEverySchemePoint_iff_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SetoidRepresentabilityModel.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SetoidRepresentabilityModel.lean#L339).
 
-> **Stacks 04TC.** For a 1-morphism `f` of categories fibred in setoids over the big fppf site
-> of `S` whose induced map `a` of isomorphism-class presheaves is representable by algebraic
-> spaces, `a` has a property `P` in the sense of Stacks 03XZ exactly when `f` has `P` in the
-> relative sense of Stacks 03YK.
+> **Stacks 04TC.** Let `P` be a property of morphisms of algebraic spaces over `S` as in
+> Stacks 03YK (stable under base change and fppf local on the target), and let `f : 𝒳 ⟶ 𝒴` be a
+> 1-morphism of categories fibred in setoids over the big fppf site of `S`, with total objects in
+> an arbitrary universe. Let `F`, resp. `G`, be the presheaf of isomorphism classes of `𝒳`,
+> resp. `𝒴`, taken through its `Type u` model, and let `a : F ⟶ G` be the map corresponding to
+> `f`. Then `a` has `P` exactly when `f` has `P` in the relative sense.
+>
+> The `u`-smallness instances on the presheaves of isomorphism classes say that `F` and `G` are
+> presheaves of sets on the site, which the source presupposes when it calls them presheaves. As
+> in the source ("the lemma makes sense by Stacks 04SY"), representability of `a` is not assumed
+> but derived from representability of `f` by Stacks 04SY.
 
 ```lean
-theorem isoClassMap_holdsOnEverySchemePoint_iff
-    (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
+public theorem isoClassMap_holdsOnEverySchemePoint_iff_model
     (P : MorphismProperty (AlgebraicSpaces B S hS))
     [P.IsStableUnderBaseChange]
     [P.IsLocalAtTarget (Space.Topology.fppf.precoverage B S hS)]
-    {𝒳 𝒴 : CatFiberedInSetoids.{u, v, u + 1, u} (BigFppfOver B S hS)} (f : 𝒳 ⟶ 𝒴)
-    (a : 𝒳.val.p.isoClassPresheaf ⟶ 𝒴.val.p.isoClassPresheaf)
-    (ha : ∀ (U : BigFppfOver B S hS) (x : 𝒳.val.p.Fiber U),
-      a.app (Opposite.op U) (Functor.isoClassMk 𝒳.val.p x) =
-        Functor.isoClassMk 𝒴.val.p
-          ((Functor.Fiber.mapOfComp 𝒳.val.p 𝒴.val.p
-            (CatFiberedInGroupoids.homFunctor f)
-            (CatFiberedInGroupoids.homFunctor_comp_p f) U).obj x))
+    (a : CategoryTheory.Functor.isoClassPresheafModel.{u} 𝒳.val.p ⟶
+      CategoryTheory.Functor.isoClassPresheafModel.{u} 𝒴.val.p)
+    (ha : IsoClassCompatible B S hS f
+      (CategoryTheory.Functor.isoClassPresheafModel.{u} 𝒳.val.p)
+      (CategoryTheory.Functor.isoClassPresheafModel.{u} 𝒴.val.p)
+      (CategoryTheory.Functor.isoClassPresheafModelEquiv.{u} 𝒳.val.p)
+      (CategoryTheory.Functor.isoClassPresheafModelEquiv.{u} 𝒴.val.p) a)
     (hf : IsRepresentableByAlgebraicSpaces B S hS
       (CatFiberedInSetoids.inclusion.map f).hom) :
     Space.HasProperty B S hS P a
-        ((isoClassMap_isRepresentableByAlgebraicSpaces_iff B S hS f a ha).mpr hf) ↔
+        ((isoClassMap_isRepresentableByAlgebraicSpaces_iff_model B S hS f a ha).mpr hf) ↔
       HasRelativeProperty B S hS P (CatFiberedInSetoids.inclusion.map f) hf
 ```
 
@@ -207,7 +212,7 @@ theorem isoClassMap_holdsOnEverySchemePoint_iff
 
 [Tag 045B](https://stacks.math.columbia.edu/tag/045B) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyComp.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyComp.lean#L301).
+**`AlgebraicGeometry.Stack.hasRelativeProperty_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyComp.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyComp.lean#L301).
 
 > **Stacks 045B.** Let `P` be a property of morphisms of algebraic spaces over `S` which is
 > stable under base change, local on the target for the fppf precoverage, and stable under
@@ -236,7 +241,7 @@ theorem hasRelativeProperty_comp
 
 [Tag 045C](https://stacks.math.columbia.edu/tag/045C) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isImmersion_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean#L67). The attribute's comment: “the immersion property of Stacks 04XB, for the first projection”.
+**`AlgebraicGeometry.Stack.isImmersion_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean#L67). The attribute's comment: “the immersion property of Stacks 04XB, for the first projection”.
 
 > **Stacks 045C at the immersion property of Stacks 04XB.** In a 2-fibre product square over a
 > cospan `g : 𝒵 ⟶ 𝒴`, `f : 𝒳 ⟶ 𝒴` of categories fibred in groupoids over the big fppf site of `S`,
@@ -252,7 +257,7 @@ theorem isImmersion_baseChange
     Stack.IsImmersion B S hS R.fst
 ```
 
-**`AlgebraicGeometry.Stack.isImmersion_twoFibreProductSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean#L83). The attribute's comment: “the immersion property of Stacks 04XB, for the canonical second projection”.
+**`AlgebraicGeometry.Stack.isImmersion_twoFibreProductSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean#L83). The attribute's comment: “the immersion property of Stacks 04XB, for the canonical second projection”.
 
 > **Stacks 045C at the immersion property, for the second projection.** The second projection
 > of the canonical 2-fibre product square over a cospan `(g, f)` of categories fibred in groupoids
@@ -266,7 +271,7 @@ theorem isImmersion_twoFibreProductSnd
       (CatFiberedInGroupoids.twoFibreProductSquare.{u, u, u + 1, u + 1} g f).snd
 ```
 
-**`AlgebraicGeometry.Stack.isImmersion_snd_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean#L110). The attribute's comment: “the immersion property of Stacks 04XB, at a 2-fibre product of algebraic stacks”.
+**`AlgebraicGeometry.Stack.isImmersion_snd_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean#L110). The attribute's comment: “the immersion property of Stacks 04XB, at a 2-fibre product of algebraic stacks”.
 
 > **Stacks 045C at the immersion property, for the second projection of a 2-fibre product
 > square of algebraic stacks.** If `g : 𝒵 ⟶ 𝒴` is an immersion in the sense of Stacks 04XB and `P`
@@ -284,7 +289,7 @@ theorem isImmersion_snd_of_isTwoFibreProduct
     Stack.IsImmersion B S hS P.snd.hom
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isImmersion_snd_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean#L143). The attribute's comment: “the immersion property of Stacks 04XB, conjoined with representability, at a 2-fibre product of algebraic stacks”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isImmersion_snd_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean#L143). The attribute's comment: “the immersion property of Stacks 04XB, conjoined with representability, at a 2-fibre product of algebraic stacks”.
 
 > Base change of an immersion of algebraic stacks. If `g : 𝒵 ⟶ 𝒴` is an immersion of
 > algebraic stacks over `S` and `P` is a 2-fibre product of the cospan `(g, f)` in the 2-category of
@@ -304,7 +309,7 @@ theorem isImmersion_snd_of_isTwoFibreProduct
     IsImmersion B S hS P.snd
 ```
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyBaseChange.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyBaseChange.lean#L135).
+**`AlgebraicGeometry.Stack.hasRelativeProperty_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyBaseChange.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyBaseChange.lean#L135).
 
 > **Stacks 045C.** Let `P` be a property of morphisms of algebraic spaces over `S` which is
 > stable under base change and local on the target for the fppf precoverage. In a 2-fibre product
@@ -333,7 +338,7 @@ theorem hasRelativeProperty_baseChange
 
 [Tag 045D](https://stacks.math.columbia.edu/tag/045D) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyDescent.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyDescent.lean#L266).
+**`AlgebraicGeometry.Stack.hasRelativeProperty_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyDescent.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyDescent.lean#L266).
 
 > **Stacks 045D.** Let `P` be a property of morphisms of algebraic spaces over `S` which is
 > stable under base change and local on the target for the fppf precoverage, let `f : 𝒳 ⟶ 𝒴` be a
@@ -373,7 +378,7 @@ theorem hasRelativeProperty_of_baseChange
 
 [Tag 045E](https://stacks.math.columbia.edu/tag/045E) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_productMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProductRelativeProperty.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ProductRelativeProperty.lean#L140).
+**`AlgebraicGeometry.Stack.hasRelativeProperty_productMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ProductRelativeProperty.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ProductRelativeProperty.lean#L140).
 
 > **Stacks 045E.** A property of morphisms of algebraic spaces over `S` which is stable under
 > base change, local on the target for the fppf precoverage and stable under composition, and which
@@ -398,7 +403,7 @@ theorem hasRelativeProperty_productMap (f₁ : 𝒳₁ ⟶ 𝒴₁) (f₂ : 𝒳
 
 [Tag 045F](https://stacks.math.columbia.edu/tag/045F) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyMono.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyMono.lean#L58).
+**`AlgebraicGeometry.Stack.hasRelativeProperty_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyMono.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyMono.lean#L58).
 
 > **Stacks 045F.** If a property `P` of morphisms of algebraic spaces over `S` implies a
 > property `P'`, then a 1-morphism of categories fibred in groupoids over `(Sch/S)_fppf` which is
@@ -424,7 +429,7 @@ theorem hasRelativeProperty_mono
 
 [Tag 05UK](https://stacks.math.columbia.edu/tag/05UK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.full_and_faithful_homFunctor_of_mono_representingMaps`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismFullyFaithful.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismFullyFaithful.lean#L276).
+**`AlgebraicGeometry.Stack.full_and_faithful_homFunctor_of_mono_representingMaps`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismFullyFaithful.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismFullyFaithful.lean#L276).
 
 > **Stacks 05UK, with Stacks 003Z: the implication (1) ⟹ (2) of Stacks 04ZZ.** A 1-morphism
 > `j : 𝒳 ⟶ 𝒴` of categories fibred in groupoids over the big fppf site of `S` which is
@@ -461,7 +466,7 @@ theorem full_and_faithful_homFunctor_of_mono_representingMaps
 
 [Tag 045G](https://stacks.math.columbia.edu/tag/045G) in the Stacks Project.
 
-**`AlgebraicGeometry.isRepresentableFromSchemes_iff_isRepresentableFromRepresentableCategories`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableDiagonal/SchemeAndRepresentableSources.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableDiagonal/SchemeAndRepresentableSources.lean#L164). The attribute's comment: “parts (3) and (5)”.
+**`AlgebraicGeometry.isRepresentableFromSchemes_iff_isRepresentableFromRepresentableCategories`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableDiagonal/SchemeAndRepresentableSources.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableDiagonal/SchemeAndRepresentableSources.lean#L164). The attribute's comment: “parts (3) and (5)”.
 
 > **Stacks 045G, conditions (3) and (5).** For a category fibred in groupoids `𝒳` over the big
 > fppf site of `S`, every 1-morphism to `𝒳` out of a slice of the site is representable by
@@ -474,7 +479,7 @@ public theorem isRepresentableFromSchemes_iff_isRepresentableFromRepresentableCa
       IsRepresentableFromRepresentableCategories.{u, v, w, u, u + 1} B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.hasRepresentableDiagonal_iff_isAlgebraicSpaceIsomPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteria.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteria.lean#L42). The attribute's comment: “parts (1) and (2)”.
+**`AlgebraicGeometry.Stack.hasRepresentableDiagonal_iff_isAlgebraicSpaceIsomPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteria.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteria.lean#L42). The attribute's comment: “parts (1) and (2)”.
 
 > The diagonal of a category fibred in groupoids over the big fppf site of `S` is representable
 > by algebraic spaces if and only if every isomorphism sheaf `Isom(x, y)` of two objects of a fibre
@@ -485,7 +490,7 @@ theorem hasRepresentableDiagonal_iff_isAlgebraicSpaceIsomPresheaf :
     HasRepresentableDiagonal B S hS 𝒳 ↔ IsAlgebraicSpaceIsomPresheaf B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableFromAlgebraicSpaces_iff_hasAlgebraicSpaceProducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaAlgebraicSpaceProducts.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaAlgebraicSpaceProducts.lean#L109). The attribute's comment: “parts (7) and (8)”.
+**`AlgebraicGeometry.Stack.isRepresentableFromAlgebraicSpaces_iff_hasAlgebraicSpaceProducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaAlgebraicSpaceProducts.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaAlgebraicSpaceProducts.lean#L109). The attribute's comment: “parts (7) and (8)”.
 
 > **Stacks 045G, the equivalence of conditions (7) and (8).** Every 1-morphism to `𝒳` out of a
 > category fibred in groupoids representable by an algebraic space over `S` is representable by
@@ -498,7 +503,7 @@ theorem isRepresentableFromAlgebraicSpaces_iff_hasAlgebraicSpaceProducts :
       HasAlgebraicSpaceProducts.{u, v, w, v₁, w₁, v₂, w₂} B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.hasAlgebraicSpaceRepresentableProducts_iff_isRepresentableFromAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaAlgebraicSpaceSources.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaAlgebraicSpaceSources.lean#L207). The attribute's comment: “parts (6) and (7)”.
+**`AlgebraicGeometry.Stack.hasAlgebraicSpaceRepresentableProducts_iff_isRepresentableFromAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaAlgebraicSpaceSources.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaAlgebraicSpaceSources.lean#L207). The attribute's comment: “parts (6) and (7)”.
 
 > **Stacks 045G, the equivalence of conditions (6) and (7).** The 2-fibre product over `𝒳` of
 > any two 1-morphisms out of representable categories fibred in groupoids is representable by an
@@ -511,7 +516,7 @@ theorem hasAlgebraicSpaceRepresentableProducts_iff_isRepresentableFromAlgebraicS
       IsRepresentableFromAlgebraicSpaces.{u, v, w, v₁, w₁} B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicSpaceIsomPresheaf_iff_isRepresentableFromSchemes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaProductsToDiagonal.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaProductsToDiagonal.lean#L434). The attribute's comment: “parts (2) and (3)”.
+**`AlgebraicGeometry.Stack.isAlgebraicSpaceIsomPresheaf_iff_isRepresentableFromSchemes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaProductsToDiagonal.lean, line 434](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaProductsToDiagonal.lean#L434). The attribute's comment: “parts (2) and (3)”.
 
 > **Stacks 045G, the equivalence of conditions (2) and (3).** Every isomorphism sheaf
 > `Isom(x, y)` of two objects of a fibre of `𝒳` is an algebraic space over the scheme the fibre sits
@@ -523,7 +528,7 @@ theorem isAlgebraicSpaceIsomPresheaf_iff_isRepresentableFromSchemes :
     IsAlgebraicSpaceIsomPresheaf B S hS 𝒳 ↔ IsRepresentableFromSchemes B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.representableFromCategories_iff_algebraicSpaceProducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaRepresentableProducts.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaRepresentableProducts.lean#L144). The attribute's comment: “parts (5) and (6)”.
+**`AlgebraicGeometry.Stack.representableFromCategories_iff_algebraicSpaceProducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaRepresentableProducts.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaRepresentableProducts.lean#L144). The attribute's comment: “parts (5) and (6)”.
 
 > **Stacks 045G, the equivalence of conditions (5) and (6).** Every 1-morphism to `𝒳` from a
 > representable category fibred in groupoids is representable by algebraic spaces if and only if the
@@ -535,7 +540,7 @@ theorem representableFromCategories_iff_algebraicSpaceProducts :
       HasAlgebraicSpaceRepresentableProducts.{u, v, w, v₁, w₁, v₂, w₂} B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.hasAlgebraicSpaceSchemePointProducts_iff_isRepresentableFromRepresentableCategories`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaRepresentableSources.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaRepresentableSources.lean#L126). The attribute's comment: “parts (4) and (5)”.
+**`AlgebraicGeometry.Stack.hasAlgebraicSpaceSchemePointProducts_iff_isRepresentableFromRepresentableCategories`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaRepresentableSources.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaRepresentableSources.lean#L126). The attribute's comment: “parts (4) and (5)”.
 
 > **Stacks 045G, the equivalence of conditions (4) and (5).** The 2-fibre product over `𝒳` of
 > any two scheme-valued points of `𝒳` is representable by an algebraic space if and only if every
@@ -548,7 +553,7 @@ theorem hasAlgebraicSpaceSchemePointProducts_iff_isRepresentableFromRepresentabl
       IsRepresentableFromRepresentableCategories.{u, v, w, v₁, w₁} B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableFromSchemes_iff_hasAlgebraicSpaceSchemePointProducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaSchemePoints.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaSchemePoints.lean#L79). The attribute's comment: “parts (3) and (4)”.
+**`AlgebraicGeometry.Stack.isRepresentableFromSchemes_iff_hasAlgebraicSpaceSchemePointProducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaSchemePoints.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalCriteriaSchemePoints.lean#L79). The attribute's comment: “parts (3) and (4)”.
 
 > Every 1-morphism to `𝒳` from the category represented by a scheme over `S` is representable
 > by algebraic spaces if and only if the 2-fibre product over `𝒳` of any two such 1-morphisms is
@@ -566,4 +571,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 94.10, Tag 03YJ](https://stacks.math.columbia.edu/tag/03YJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Convergence in probability
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/convergence-of-measures/convergence-in-probability/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/convergence-of-measures/convergence-in-probability/index.html).
 
 ## Convergence in measure in the textbook ε-formulation
 
@@ -22,7 +22,7 @@ real $\varepsilon > 0$.
 
 The second condition is the definition of convergence in probability used in the book.
 
-Formalized by `MathlibExt.Probability.ConvergenceInProbability.tendstoInMeasure_iff_tendsto_measure_abs_sub`, a theorem declared in [MathlibExt/Probability/ConvergenceInProbability.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ConvergenceInProbability.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/convergence-of-measures/convergence-in-probability/index.html#tendsto-in-measure-iff-tendsto-measure-a).
+Formalized by `MathlibExt.Probability.ConvergenceInProbability.tendstoInMeasure_iff_tendsto_measure_abs_sub`, a theorem declared in [MathlibExt/Probability/ConvergenceInProbability.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ConvergenceInProbability.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/convergence-of-measures/convergence-in-probability/index.html#tendsto-in-measure-iff-tendsto-measure-a).
 
 ## Convergence in probability via subsequential a.s. convergence
 
@@ -39,7 +39,7 @@ $\omega \in \Omega$.
 
 - Lecture 9, convergence in probability via subsequential a.s. convergence.
 
-Formalized by `MathlibExt.Probability.ConvergenceInProbability.convergence_in_probability_iff_subsequential_ae_convergence`, a theorem declared in [MathlibExt/Probability/ConvergenceInProbability.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ConvergenceInProbability.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/convergence-of-measures/convergence-in-probability/index.html#convergence-in-probability-iff-subsequen).
+Formalized by `MathlibExt.Probability.ConvergenceInProbability.convergence_in_probability_iff_subsequential_ae_convergence`, a theorem declared in [MathlibExt/Probability/ConvergenceInProbability.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ConvergenceInProbability.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/convergence-of-measures/convergence-in-probability/index.html#convergence-in-probability-iff-subsequen).
 
 ## Depends on
 
@@ -48,4 +48,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Convergence in probability](https://deicyde.github.io/atlas-lean/roadmap/Probability/convergence-of-measures/convergence-in-probability/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/convergence-of-measures/convergence-in-probability)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/convergence-of-measures/convergence-in-probability)

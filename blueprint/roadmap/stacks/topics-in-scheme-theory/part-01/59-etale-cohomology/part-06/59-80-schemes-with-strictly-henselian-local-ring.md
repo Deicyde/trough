@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.80 Schemes with strictly henselian local rings
 
-Section 59.80 of the Stacks Project, [Tag 0EZN](https://stacks.math.columbia.edu/tag/0EZN). 9 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.80 of the Stacks Project, [Tag 0EZN](https://stacks.math.columbia.edu/tag/0EZN). 9 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09AX, a lemma
 
 [Tag 09AX](https://stacks.math.columbia.edu/tag/09AX) in the Stacks Project.
 
-**`AlgebraicGeometry.etaleZariskiSheafHAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/EtaleZariskiCohomology.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/EtaleZariskiCohomology.lean#L194).
+**`AlgebraicGeometry.etaleZariskiSheafHAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/EtaleZariskiCohomology.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/EtaleZariskiCohomology.lean#L194).
 
 > Let `S` be a scheme all of whose local rings are strictly henselian. Then
 > for every abelian sheaf `F` on the small étale site of `S` and every degree `p`, étale cohomology
@@ -32,7 +32,7 @@ public def etaleZariskiSheafHAddEquiv
 
 [Tag 0GY0](https://stacks.math.columbia.edu/tag/0GY0) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.StrictlyHenselian.subsingleton_H_of_degreeOne_kernel_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianSpectrumVanishing.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianSpectrumVanishing.lean#L419).
+**`Stacks.EtaleCohomology.StrictlyHenselian.subsingleton_H_of_degreeOne_kernel_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianSpectrumVanishing.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianSpectrumVanishing.lean#L419).
 
 > Let `R` be a ring all of whose local rings are strictly henselian and let `F` be an abelian
 > sheaf on the small étale site of `Spec R`. If for all `f, g ∈ R` the kernel of
@@ -59,7 +59,7 @@ public theorem subsingleton_H_of_degreeOne_kernel_eq_zero
 
 [Tag 09AY](https://stacks.math.columbia.edu/tag/09AY) in the Stacks Project.
 
-**`AlgebraicGeometry.subsingleton_etaleCohomology_of_closed_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointsVanishing.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointsVanishing.lean#L200).
+**`AlgebraicGeometry.subsingleton_etaleCohomology_of_closed_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointsVanishing.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointsVanishing.lean#L200).
 
 > **Positive-degree étale cohomology vanishes on an affine scheme all of whose points are
 > closed and all of whose residue fields are separably closed.**
@@ -75,7 +75,7 @@ public theorem subsingleton_etaleCohomology_of_closed_points
     Subsingleton (Sheaf.H.{w, max u v} F q)
 ```
 
-**`AlgebraicGeometry.subsingleton_etaleCohomology_of_closed_points'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointsVanishing.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointsVanishing.lean#L216). The attribute's comment: “at the coefficient universe of the small étale site”.
+**`AlgebraicGeometry.subsingleton_etaleCohomology_of_closed_points'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointsVanishing.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointsVanishing.lean#L216). The attribute's comment: “at the coefficient universe of the small étale site”.
 
 > **Positive-degree étale cohomology vanishes on an affine scheme all of whose points are
 > closed and all of whose residue fields are separably closed**, for abelian sheaves at the
@@ -94,7 +94,7 @@ public theorem subsingleton_etaleCohomology_of_closed_points'
 
 [Tag 09Z9](https://stacks.math.columbia.edu/tag/09Z9) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_coproduct_open_immersions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/NormalSepClosedFunctionField.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/NormalSepClosedFunctionField.lean#L216). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exists_coproduct_open_immersions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/NormalSepClosedFunctionField.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/NormalSepClosedFunctionField.lean#L216). The attribute's comment: “part (1)”.
 
 > A separated étale morphism to an integral normal scheme with separably closed function field
 > is a disjoint union of open immersions.
@@ -109,7 +109,7 @@ theorem exists_coproduct_open_immersions
       e.hom ≫ Sigma.desc j = f
 ```
 
-**`AlgebraicGeometry.stalk_strictlyHenselian`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/NormalSepClosedFunctionField.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/NormalSepClosedFunctionField.lean#L260). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.stalk_strictlyHenselian`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/NormalSepClosedFunctionField.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/NormalSepClosedFunctionField.lean#L260). The attribute's comment: “part (2)”.
 
 > Every local ring of an integral normal scheme with separably closed function field is
 > strictly henselian.
@@ -125,7 +125,7 @@ instance stalk_strictlyHenselian
 
 [Tag 0EZP](https://stacks.math.columbia.edu/tag/0EZP) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isZero_rightDerived_smallEtalePushforward_constantSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/NormalSepClosedConstantDirectImage.lean, line 804](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/NormalSepClosedConstantDirectImage.lean#L804).
+**`Stacks.EtaleCohomology.isZero_rightDerived_smallEtalePushforward_constantSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/NormalSepClosedConstantDirectImage.lean, line 804](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/NormalSepClosedConstantDirectImage.lean#L804).
 
 > **Stacks Project, Tag 0EZP.** Higher direct images of a constant abelian
 > étale sheaf vanish when the source is integral, normal, and has separably
@@ -148,7 +148,7 @@ public theorem isZero_rightDerived_smallEtalePushforward_constantSheaf
 
 [Tag 09ZA](https://stacks.math.columbia.edu/tag/09ZA) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finite_coproduct_open_immersions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean#L284). The attribute's comment: “finite disjoint union”.
+**`AlgebraicGeometry.exists_finite_coproduct_open_immersions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean#L284). The attribute's comment: “finite disjoint union”.
 
 > **Stacks Project, Tag 09ZA, first assertion.** An affine etale scheme over a closed
 > subscheme of an integral normal affine scheme with separably closed function field is a finite
@@ -165,7 +165,7 @@ theorem exists_finite_coproduct_open_immersions
       e.hom ≫ Sigma.desc j = f
 ```
 
-**`AlgebraicGeometry.exists_section_of_surjective_finite_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean#L457). The attribute's comment: “section”.
+**`AlgebraicGeometry.exists_section_of_surjective_finite_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean#L457). The attribute's comment: “section”.
 
 > **Stacks Project, Tag 09ZA, final assertion.** A surjective finite etale morphism over a
 > closed subscheme of an integral normal affine scheme with separably closed function field has a
@@ -185,7 +185,7 @@ theorem exists_section_of_surjective_finite_etale
 
 [Tag 09ZB](https://stacks.math.columbia.edu/tag/09ZB) in the Stacks Project.
 
-**`AlgebraicGeometry.subsingleton_smallEtaleH1_constantSheaf'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean, line 899](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean#L899).
+**`AlgebraicGeometry.subsingleton_smallEtaleH1_constantSheaf'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean, line 899](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean#L899).
 
 > **Stacks Project, Tag 09ZB.** The first cohomology of the small étale site of a closed
 > subscheme of an integral normal affine scheme with separably closed function field, with
@@ -215,7 +215,7 @@ theorem subsingleton_smallEtaleH1_constantSheaf'
 
 [Tag 09ZC](https://stacks.math.columbia.edu/tag/09ZC) in the Stacks Project.
 
-**`AlgebraicGeometry.subsingleton_smallEtaleH_constantSheaf'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean, line 1086](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean#L1086).
+**`AlgebraicGeometry.subsingleton_smallEtaleH_constantSheaf'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean, line 1086](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/ClosedSubschemeOfNormal.lean#L1086).
 
 > **Stacks Project, Tag 09ZC.** The étale cohomology of a closed subscheme of a normal
 > integral affine scheme with separably closed function field, with coefficients in a finite
@@ -246,8 +246,8 @@ theorem subsingleton_smallEtaleH_constantSheaf'
 
 Declarations registered for the tag:
 
-- [`Stacks.EtaleCohomology.exists_isIntegralHom_surjective_forall_subsingleton_H`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/IntegralCoverVanishing.lean#L95), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/AffineAnalogRegistration.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/AffineAnalogRegistration.lean#L30) (StacksFrontier): “part (1): an affine scheme has an integral surjective cover X' → X such that every closed subscheme Z' of X' has H^q\_ét(Z', M) = 0 for every finite abelian group M and every q ≥ 1”.
-- [`Stacks.EtaleCohomology.exists_isFinite_surjective_restriction_constantSheaf_eq_zero`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/FiniteCoverKilling.lean#L182), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/AffineAnalogRegistration.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/AffineAnalogRegistration.lean#L34) (StacksFrontier): “part (2): for a closed subscheme Z of an affine X, a finite abelian group M, q ≥ 1 and ξ ∈ H^q\_ét(Z, M), some finite surjective X' → X of finite presentation makes ξ pull back to zero in H^q\_ét(X' ×\_X Z, M)”.
+- [`Stacks.EtaleCohomology.exists_isIntegralHom_surjective_forall_subsingleton_H`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/IntegralCoverVanishing.lean#L95), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/AffineAnalogRegistration.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/AffineAnalogRegistration.lean#L30) (StacksFrontier): “part (1): an affine scheme has an integral surjective cover X' → X such that every closed subscheme Z' of X' has H^q\_ét(Z', M) = 0 for every finite abelian group M and every q ≥ 1”.
+- [`Stacks.EtaleCohomology.exists_isFinite_surjective_restriction_constantSheaf_eq_zero`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/FiniteCoverKilling.lean#L182), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/AffineAnalogRegistration.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/AffineAnalogRegistration.lean#L34) (StacksFrontier): “part (2): for a closed subscheme Z of an affine X, a finite abelian group M, q ≥ 1 and ξ ∈ H^q\_ét(Z, M), some finite surjective X' → X of finite presentation makes ξ pull back to zero in H^q\_ét(X' ×\_X Z, M)”.
 
 ## Depends on
 
@@ -256,4 +256,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.80, Tag 0EZN](https://stacks.math.columbia.edu/tag/0EZN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Rankin–Selberg coefficients in arithmetic progressions
 
-15 results, 8 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html).
+15 results, 8 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html).
 
 ## Normalized Fourier coefficients of a cusp form
 
@@ -24,7 +24,7 @@ gives $0$.
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Section 1 (Fourier expansion of `f ∈ H_k^*`).
 
-Formalized by `MetaMathlibExt.cuspFormNormalizedCoeff`, a definition declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#cusp-form-normalized-coeff).
+Formalized by `MetaMathlibExt.cuspFormNormalizedCoeff`, a definition declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#cusp-form-normalized-coeff).
 
 ## Normalized cusp form coefficient at one
 
@@ -38,7 +38,7 @@ $q$-expansion of $f$.
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Section 1.
 
-Formalized by `MetaMathlibExt.cuspFormNormalizedCoeff_one`, a theorem declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#cusp-form-normalized-coeff-one).
+Formalized by `MetaMathlibExt.cuspFormNormalizedCoeff_one`, a theorem declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#cusp-form-normalized-coeff-one).
 
 ## Normalized Hecke eigenform
 
@@ -56,7 +56,7 @@ $q$-expansion of $f$.
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Section 1, Equation (1).
 
-Formalized by `MetaMathlibExt.IsNormalizedHeckeEigenform`, a definition declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#is-normalized-hecke-eigenform).
+Formalized by `MetaMathlibExt.IsNormalizedHeckeEigenform`, a definition declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#is-normalized-hecke-eigenform).
 
 ## Hecke relation at the square of a prime
 
@@ -68,7 +68,7 @@ $\lambda_f$. Then $\lambda_f(p)^2 = \lambda_f(p^2) + 1$ for every prime $p$.
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Equation (1) with `m = n = p`.
 
-Formalized by `MetaMathlibExt.IsNormalizedHeckeEigenform.normalizedCoeff_prime_sq`, a theorem declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#normalized-coeff-prime-sq).
+Formalized by `MetaMathlibExt.IsNormalizedHeckeEigenform.normalizedCoeff_prime_sq`, a theorem declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#normalized-coeff-prime-sq).
 
 ## Rankin–Selberg coefficients
 
@@ -88,7 +88,7 @@ $\lambda_{f \times f}$ under Dirichlet convolution is denoted $\lambda_{w, f \ti
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Section 1 (definition of `λ_{f×f}` and `λ_{w,f×f}`).
 
-Formalized by `MetaMathlibExt.rankinSelbergCoeff`, a definition declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#rankin-selberg-coeff).
+Formalized by `MetaMathlibExt.rankinSelbergCoeff`, a definition declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#rankin-selberg-coeff).
 
 ## Rankin–Selberg coefficients as a sum over square divisors
 
@@ -102,7 +102,7 @@ $n$ that are perfect squares (so the sum is empty when $n = 0$).
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Section 1.
 
-Formalized by `MetaMathlibExt.rankinSelbergCoeff_apply`, a theorem declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#rankin-selberg-coeff-apply).
+Formalized by `MetaMathlibExt.rankinSelbergCoeff_apply`, a theorem declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#rankin-selberg-coeff-apply).
 
 ## Rankin–Selberg coefficient at one
 
@@ -114,7 +114,7 @@ coefficients $\lambda_{f \times f}$. Then $\lambda_{f \times f}(1) = \lambda_f(1
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Section 1.
 
-Formalized by `MetaMathlibExt.rankinSelbergCoeff_one`, a theorem declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#rankin-selberg-coeff-one).
+Formalized by `MetaMathlibExt.rankinSelbergCoeff_one`, a theorem declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#rankin-selberg-coeff-one).
 
 ## Rankin–Selberg coefficients at primes
 
@@ -127,7 +127,7 @@ for every prime $p$.
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Section 1.
 
-Formalized by `MetaMathlibExt.rankinSelbergCoeff_prime`, a theorem declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#rankin-selberg-coeff-prime).
+Formalized by `MetaMathlibExt.rankinSelbergCoeff_prime`, a theorem declared in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#rankin-selberg-coeff-prime).
 
 ## Sums of squared normalized coefficients at perfect powers in arithmetic progressions
 
@@ -150,7 +150,7 @@ constant $C$ depends only on $f$, $j$ and $\varepsilon$.
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.sum_cuspFormNormalizedCoeff_pow_sq_arithmeticProgression` is written with `theorem_wanted` in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#sum-cusp-form-normalized-coeff-pow-sq-ar).
+Stated but not proved: `MetaMathlibExt.sum_cuspFormNormalizedCoeff_pow_sq_arithmeticProgression` is written with `theorem_wanted` in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#sum-cusp-form-normalized-coeff-pow-sq-ar).
 
 ## Hua's theorem on squared Rankin–Selberg coefficients in arithmetic progressions
 
@@ -173,7 +173,7 @@ $q \le x^{\eta}$.
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Theorem 1.2.
 
-Stated but not proved: `MetaMathlibExt.sum_rankinSelbergCoeff_sq_arithmeticProgression` is written with `theorem_wanted` in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#sum-rankin-selberg-coeff-sq-arithmetic-p).
+Stated but not proved: `MetaMathlibExt.sum_rankinSelbergCoeff_sq_arithmeticProgression` is written with `theorem_wanted` in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#sum-rankin-selberg-coeff-sq-arithmetic-p).
 
 ## Sums of Rankin–Selberg convolution powers in arithmetic progressions
 
@@ -197,7 +197,7 @@ $\varepsilon$.
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Theorem 1.3.
 
-Stated but not proved: `MetaMathlibExt.sum_rankinSelbergCoeff_pow_arithmeticProgression` is written with `theorem_wanted` in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#sum-rankin-selberg-coeff-pow-arithmetic).
+Stated but not proved: `MetaMathlibExt.sum_rankinSelbergCoeff_pow_arithmeticProgression` is written with `theorem_wanted` in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#sum-rankin-selberg-coeff-pow-arithmetic).
 
 ## Sums of squared Rankin–Selberg coefficients twisted by a primitive character
 
@@ -216,7 +216,7 @@ $$
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Proposition 3.1.
 
-Stated but not proved: `MetaMathlibExt.sum_rankinSelbergCoeff_sq_mul_primitive_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#sum-rankin-selberg-coeff-sq-mul-primitiv).
+Stated but not proved: `MetaMathlibExt.sum_rankinSelbergCoeff_sq_mul_primitive_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#sum-rankin-selberg-coeff-sq-mul-primitiv).
 
 ## Sums of squared Rankin–Selberg coefficients twisted by the principal character
 
@@ -238,7 +238,7 @@ for every prime $q$ and every real $x \ge q$.
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Proposition 3.2.
 
-Stated but not proved: `MetaMathlibExt.sum_rankinSelbergCoeff_sq_mul_principal_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#sum-rankin-selberg-coeff-sq-mul-principa).
+Stated but not proved: `MetaMathlibExt.sum_rankinSelbergCoeff_sq_mul_principal_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#sum-rankin-selberg-coeff-sq-mul-principa).
 
 ## Sums of Rankin–Selberg convolution powers twisted by a primitive character
 
@@ -259,7 +259,7 @@ $$
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Proposition 4.1.
 
-Stated but not proved: `MetaMathlibExt.sum_rankinSelbergCoeff_pow_mul_primitive_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#sum-rankin-selberg-coeff-pow-mul-primiti).
+Stated but not proved: `MetaMathlibExt.sum_rankinSelbergCoeff_pow_mul_primitive_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#sum-rankin-selberg-coeff-pow-mul-primiti).
 
 ## Sums of Rankin–Selberg convolution powers twisted by the principal character
 
@@ -282,7 +282,7 @@ for every prime $q$ and every real $x \ge q$.
 
 - Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Proposition 4.2.
 
-Stated but not proved: `MetaMathlibExt.sum_rankinSelbergCoeff_pow_mul_principal_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#sum-rankin-selberg-coeff-pow-mul-princip).
+Stated but not proved: `MetaMathlibExt.sum_rankinSelbergCoeff_pow_mul_principal_character` is written with `theorem_wanted` in [WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HuaCuspFormDivisorProblemWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html#sum-rankin-selberg-coeff-pow-mul-princip).
 
 ## Depends on
 
@@ -291,4 +291,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Rankin–Selberg coefficients in arithmetic progressions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/modular-forms/rankin-selberg-coefficients-in-arithmetic-progre)

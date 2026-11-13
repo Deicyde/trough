@@ -8,7 +8,7 @@ proof: formalized
 
 # Strongly regular graphs
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs/index.html).
 
 ## Two-edge paths close into triangles when μ = 0
 
@@ -19,7 +19,7 @@ distinct nonadjacent vertices have no common neighbor. If $u$, $v$, $w$ are vert
 such that $u$ is adjacent to $v$, $v$ is adjacent to $w$, and $u \neq w$, then $u$ is adjacent
 to $w$.
 
-Formalized by `SimpleGraph.IsSRGWith.adj_of_adj_of_adj_of_mu_zero`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs/index.html#adj-of-adj-of-adj-of-mu-zero).
+Formalized by `SimpleGraph.IsSRGWith.adj_of_adj_of_adj_of_mu_zero`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs/index.html#adj-of-adj-of-adj-of-mu-zero).
 
 ## Non-principal eigenvalues of a strongly regular graph
 
@@ -30,7 +30,7 @@ nonadjacent vertices have exactly $\mu$ common neighbors. Let $A$ be the adjacen
 over $\mathbb{C}$. Then every eigenvalue $x \in \mathbb{C}$ of $A$ with $x \neq k$ satisfies
 $x^2 = (\ell - \mu) x + (k - \mu)$.
 
-Formalized by `SimpleGraph.IsSRGWith.nonprincipal_eigenvalue_quadratic`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs/index.html#nonprincipal-eigenvalue-quadratic).
+Formalized by `SimpleGraph.IsSRGWith.nonprincipal_eigenvalue_quadratic`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs/index.html#nonprincipal-eigenvalue-quadratic).
 
 ## Connected strongly regular graphs with μ = 0 are complete
 
@@ -49,7 +49,7 @@ fact: $\mu = 0$ makes the graph a disjoint union of complete graphs.
 
 - A. E. Brouwer and W. H. Haemers, Spectra of Graphs, Springer 2012, Ch. 9 (disconnected and complete strongly regular graphs); C. Godsil and G. Royle, Algebraic Graph Theory, GTM 207, Ch. 10.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted.srg_connected_mu_zero_complete`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs/index.html#srg-connected-mu-zero-complete).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted.srg_connected_mu_zero_complete`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs/index.html#srg-connected-mu-zero-complete).
 
 ## Components of a strongly regular graph with μ = 0 are cliques
 
@@ -71,7 +71,7 @@ result: $\mu = 0$ makes the graph a disjoint union of complete graphs.
 
 - A. E. Brouwer and W. H. Haemers, Spectra of Graphs, Springer 2012, Ch. 9 (a disconnected strongly regular graph is a disjoint union of complete graphs); C. Godsil and G. Royle, Algebraic Graph Theory, GTM 207, Ch. 10.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted.srg_reachable_eq_or_adj_mu_zero`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs/index.html#srg-reachable-eq-or-adj-mu-zero).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted.srg_reachable_eq_or_adj_mu_zero`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs/index.html#srg-reachable-eq-or-adj-mu-zero).
 
 ## Non-principal eigenvalues of a connected non-complete strongly regular graph
 
@@ -92,7 +92,7 @@ Section 9.1.3.
 
 - A. E. Brouwer and W. H. Haemers, Spectra of Graphs, Springer 2012, Ch. 9, eigenvalues of strongly regular graphs; C. Godsil and G. Royle, Algebraic Graph Theory, GTM 207, Ch. 10 (eigenvalues of strongly regular graphs).
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted.srg_nonprincipal_eigenvalue_quadratic`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs/index.html#srg-nonprincipal-eigenvalue-quadratic).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted.srg_nonprincipal_eigenvalue_quadratic`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/StronglyRegular.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs/index.html#srg-nonprincipal-eigenvalue-quadratic).
 
 ## Depends on
 
@@ -101,4 +101,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Strongly regular graphs](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/algebraic-graph-theory/part-01/strongly-regular-graphs)

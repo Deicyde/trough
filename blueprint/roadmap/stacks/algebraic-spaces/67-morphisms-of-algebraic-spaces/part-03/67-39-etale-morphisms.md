@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.39 Étale morphisms
 
-Section 67.39 of the Stacks Project, [Tag 03XS](https://stacks.math.columbia.edu/tag/03XS). 12 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.39 of the Stacks Project, [Tag 03XS](https://stacks.math.columbia.edu/tag/03XS). 12 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04RH, a definition
 
 [Tag 04RH](https://stacks.math.columbia.edu/tag/04RH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsEtaleAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/EtaleAtPoint.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/EtaleAtPoint.lean#L41).
+**`AlgebraicGeometry.Space.IsEtaleAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/EtaleAtPoint.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/EtaleAtPoint.lean#L41).
 
 > A morphism of algebraic spaces is étale at a point if it is étale on an open subspace
 > containing that point.
@@ -29,7 +29,7 @@ abbrev IsEtaleAt (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 
 [Tag 03XT](https://stacks.math.columbia.edu/tag/03XT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtale_local_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleLocalTfae.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleLocalTfae.lean#L128).
+**`AlgebraicGeometry.Space.isEtale_local_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleLocalTfae.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleLocalTfae.lean#L129).
 
 > **Stacks 03XT.** Nine equivalent criteria for a morphism `f : X ⟶ Y` of algebraic spaces
 > over `S` to be étale: `f` is étale; `f` is étale at every point of `|X|`; the base change of
@@ -73,7 +73,7 @@ theorem isEtale_local_tfae
 
 [Tag 0465](https://stacks.math.columbia.edu/tag/0465) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtale_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L75). The attribute's comment: “the composition of two etale morphisms of algebraic spaces is etale”.
+**`AlgebraicGeometry.Space.isEtale_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L75). The attribute's comment: “the composition of two etale morphisms of algebraic spaces is etale”.
 
 > The composite of two étale morphisms of presheaves on the big fppf site of `S` is étale.
 
@@ -86,7 +86,7 @@ theorem isEtale_comp {F G H : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} {f : F ⟶ 
 
 [Tag 0466](https://stacks.math.columbia.edu/tag/0466) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtale_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L254). The attribute's comment: “the base change of an étale morphism of algebraic spaces is étale”. References: SGA 1 IX (1.3).
+**`AlgebraicGeometry.Space.isEtale_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L254). The attribute's comment: “the base change of an étale morphism of algebraic spaces is étale”. References: SGA 1 IX (1.3).
 
 > A base change of an étale morphism of algebraic spaces over `S` is étale.
 
@@ -101,7 +101,7 @@ theorem isEtale_of_isPullback {X' X Z Y : AlgebraicSpaces B S hS}
 
 [Tag 03XU](https://stacks.math.columbia.edu/tag/03XU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean#L454).
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean#L455).
 
 > **Stacks 03XU.** An étale morphism of algebraic spaces over `S` is locally quasi-finite: an
 > étale morphism of schemes is locally of finite type and locally quasi-finite (Stacks 03II).
@@ -119,7 +119,7 @@ theorem isLocallyQuasiFinite_of_isEtale
 
 [Tag 04XX](https://stacks.math.columbia.edu/tag/04XX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSmooth_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtlas.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtlas.lean#L124).
+**`AlgebraicGeometry.Space.isSmooth_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtlas.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtlas.lean#L124).
 
 > **Stacks 04XX.** An étale morphism of algebraic spaces over `S` is smooth: an étale
 > morphism of schemes is smooth.
@@ -135,7 +135,7 @@ theorem isSmooth_of_isEtale
 
 [Tag 0467](https://stacks.math.columbia.edu/tag/0467) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlat_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtlas.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtlas.lean#L139).
+**`AlgebraicGeometry.Space.isFlat_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtlas.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtlas.lean#L139).
 
 > **Stacks 0467.** An étale morphism of algebraic spaces over `S` is flat: in every commuting
 > square of étale charts the chart morphism of schemes is étale, by cancellation
@@ -153,7 +153,7 @@ theorem isFlat_of_isEtale {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} {f : F �
 
 [Tag 0468](https://stacks.math.columbia.edu/tag/0468) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtlas.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtlas.lean#L152).
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtlas.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtlas.lean#L152).
 
 > **Stacks 0468.** An étale morphism of algebraic spaces over `S` is locally of finite
 > presentation: the chart morphism of schemes in every commuting square of étale charts is étale,
@@ -171,7 +171,7 @@ theorem isLocallyOfFinitePresentation_of_isEtale
 
 [Tag 06LT](https://stacks.math.columbia.edu/tag/06LT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_isEtale'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypePermanence.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypePermanence.lean#L45).
+**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_isEtale'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypePermanence.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypePermanence.lean#L45).
 
 > An étale morphism of presheaves on the big fppf site of `S` is locally of finite type; neither
 > the source nor the target has to be an algebraic space.
@@ -181,7 +181,7 @@ theorem isLocallyOfFiniteType_of_isEtale' (f : F ⟶ G) (hf : IsEtale B S hS f) 
     IsLocallyOfFiniteType B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean#L441).
+**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/QuasiFinite.lean#L442).
 
 > **Stacks 06LT.** An étale morphism of algebraic spaces over `S` is locally of finite type:
 > an étale morphism of schemes is.
@@ -199,7 +199,7 @@ theorem isLocallyOfFiniteType_of_isEtale
 
 [Tag 06CR](https://stacks.math.columbia.edu/tag/06CR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isUnramified_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Etale.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Etale.lean#L88).
+**`AlgebraicGeometry.Space.isUnramified_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Etale.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Etale.lean#L88).
 
 > **Stacks 06CR.** An étale morphism of algebraic spaces over `S` is unramified.
 >
@@ -216,7 +216,7 @@ theorem isUnramified_of_isEtale {f : X ⟶ Y} (hf : IsEtale B S hS f) :
 
 [Tag 05W3](https://stacks.math.columbia.edu/tag/05W3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtale_of_isEtale_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L378). The attribute's comment: “a morphism over Z between algebraic spaces étale over Z is étale”.
+**`AlgebraicGeometry.Space.isEtale_of_isEtale_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L378). The attribute's comment: “a morphism over Z between algebraic spaces étale over Z is étale”.
 
 > A morphism between two algebraic spaces which are étale over a common algebraic space is
 > itself étale.
@@ -233,7 +233,7 @@ theorem isEtale_of_isEtale_over {F G H : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 06LU](https://stacks.math.columbia.edu/tag/06LU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtale_of_isFlat_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Etale.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Etale.lean#L106).
+**`AlgebraicGeometry.Space.isEtale_of_isFlat_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Etale.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Etale.lean#L106).
 
 > **Stacks 06LU.** A morphism of algebraic spaces over `S` which is locally of finite
 > presentation, flat and unramified is étale.
@@ -260,4 +260,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.39, Tag 03XS](https://stacks.math.columbia.edu/tag/03XS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

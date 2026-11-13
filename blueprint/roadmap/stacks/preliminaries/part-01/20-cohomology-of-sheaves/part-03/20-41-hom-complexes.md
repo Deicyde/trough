@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.41 Hom complexes
 
-Section 20.41 of the Stacks Project, [Tag 0A8K](https://stacks.math.columbia.edu/tag/0A8K). 10 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.41 of the Stacks Project, [Tag 0A8K](https://stacks.math.columbia.edu/tag/0A8K). 10 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A8K, the section
 
 [Tag 0A8K](https://stacks.math.columbia.edu/tag/0A8K) in the Stacks Project.
 
-**`Stacks.SheafOfModules.sheafHomComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexQuasiIso.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexQuasiIso.lean#L121).
+**`Stacks.SheafOfModules.sheafHomComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexQuasiIso.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexQuasiIso.lean#L121).
 
 > **Stacks 0A8K.** The internal Hom complex `SheafHom•(K, I)` of two complexes of
 > `O_X`-modules on a ringed space: in degree `n` its sections over an open `U` are the degree-`n`
@@ -30,7 +30,7 @@ abbrev sheafHomComplex (K I : CochainComplex (StructureSheafModules Rc) ℤ) :
 
 [Tag 0A8L](https://stacks.math.columbia.edu/tag/0A8L) in the Stacks Project.
 
-**`Stacks.SheafOfModules.sheafHomComplexHomologyEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexCohomology.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexCohomology.lean#L99). The attribute's comment: “H^n(Γ(U, SheafHom^•(L, M))) = Hom\_\{K(O\_U)}(L|\_U, M|\_U[n]) for every open U of X and every n ∈ ℤ, with SheafHom^•(L, M) the internal Hom complex constructed in Tag 0A8K.”.
+**`Stacks.SheafOfModules.sheafHomComplexHomologyEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexCohomology.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexCohomology.lean#L99). The attribute's comment: “H^n(Γ(U, SheafHom^•(L, M))) = Hom\_\{K(O\_U)}(L|\_U, M|\_U[n]) for every open U of X and every n ∈ ℤ, with SheafHom^•(L, M) the internal Hom complex constructed in Tag 0A8K.”.
 
 > **Stacks 0A8L.** The `n`-th cohomology of the sections over `U` of the internal Hom complex
 > `SheafHom^•(L, M)` of [Stacks, Tag 0A8K] is canonically the group of morphisms from `L|_U` to
@@ -48,7 +48,7 @@ noncomputable def sheafHomComplexHomologyEquiv (U : Opens X)
           (ComplexShape.up ℤ)).obj ((restrictComplex Rc M U)⟦n⟧))
 ```
 
-**`Stacks.SheafOfModules.sheafHomComplexHomologyEquivHomotopyCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/HomotopyCategoryHoms.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/HomotopyCategoryHoms.lean#L55).
+**`Stacks.SheafOfModules.sheafHomComplexHomologyEquivHomotopyCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/HomotopyCategoryHoms.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/HomotopyCategoryHoms.lean#L55).
 
 > The `n`-th cohomology of the sections over `U` of the internal Hom complex from `L` to `M` is
 > canonically the group of morphisms from `L|_U` to `M|_U[n]` in the homotopy category of complexes
@@ -73,7 +73,7 @@ noncomputable def sheafHomComplexHomologyEquivHomotopyCategory
 
 [Tag 0A8M](https://stacks.math.columbia.edu/tag/0A8M) in the Stacks Project.
 
-**`Stacks.Cohomology.SheafHomComplexCurrying.sheafHomTensorIsoConstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/TensorHomAdjunction.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/TensorHomAdjunction.lean#L385).
+**`Stacks.Cohomology.SheafHomComplexCurrying.sheafHomTensorIsoConstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/TensorHomAdjunction.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/TensorHomAdjunction.lean#L386).
 
 > **Stacks 0A8M.** For complexes `K`, `L`, `M` of `O_X`-modules on a ringed space there is an
 > isomorphism `SheafHom•(K, SheafHom•(L, M)) ≅ SheafHom•(Tot(K ⊗_{O_X} L), M)` of complexes of
@@ -87,7 +87,7 @@ def sheafHomTensorIsoConstruction : SheafHomTensorIsoConstruction Rc
 
 [Tag 0A8N](https://stacks.math.columbia.edu/tag/0A8N) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.compositionConstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/CompositionMorphism.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/CompositionMorphism.lean#L406). The attribute's comment: “the ringed space case”.
+**`AlgebraicGeometry.RingedSite.compositionConstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/CompositionMorphism.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/CompositionMorphism.lean#L406). The attribute's comment: “the ringed space case”.
 
 > **Stacks 0A91.** For complexes `K`, `L`, `M` of modules on a ringed site there is a
 > canonical morphism of complexes of `O`-modules
@@ -108,7 +108,7 @@ noncomputable def compositionConstruction : CompositionConstruction X
 
 [Tag 0BYR](https://stacks.math.columbia.edu/tag/0BYR) in the Stacks Project.
 
-**`Stacks.SheafOfModules.diagonalBetterConstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean#L283). The attribute's comment: “the canonical morphism”.
+**`Stacks.SheafOfModules.diagonalBetterConstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean#L283). The attribute's comment: “the canonical morphism”.
 
 > **Stacks 0BYR.** The canonical diagonal morphisms
 > `Tot(K ⊗ SheafHom(M, L)) ⟶ SheafHom(M, Tot(K ⊗ L))` for complexes of modules on a ringed
@@ -119,7 +119,7 @@ noncomputable def compositionConstruction : CompositionConstruction X
 noncomputable def diagonalBetterConstruction : DiagonalBetterConstruction Rc
 ```
 
-**`Stacks.SheafOfModules.diagonalBetter_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean#L382). The attribute's comment: “functoriality in the first complex”.
+**`Stacks.SheafOfModules.diagonalBetter_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean#L382). The attribute's comment: “functoriality in the first complex”.
 
 > **Stacks 0BYR.** The canonical diagonal morphism is covariant in the tensor factor.
 
@@ -131,7 +131,7 @@ theorem diagonalBetter_natural_left
       tensorTotalMap Rc f (𝟙 (sheafHomComplex Rc M L).obj) ≫ diagonalBetter Rc K' L M
 ```
 
-**`Stacks.SheafOfModules.diagonalBetter_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean#L392). The attribute's comment: “functoriality in the second complex”.
+**`Stacks.SheafOfModules.diagonalBetter_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean#L392). The attribute's comment: “functoriality in the second complex”.
 
 > **Stacks 0BYR.** The canonical diagonal morphism is covariant in the target of the
 > internal Hom complex.
@@ -145,7 +145,7 @@ theorem diagonalBetter_natural_right
       tensorTotalMap Rc (𝟙 K) (sheafHomComplexMap Rc (𝟙 M) g) ≫ diagonalBetter Rc K L' M
 ```
 
-**`Stacks.SheafOfModules.diagonalBetter_natural_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean#L403). The attribute's comment: “functoriality in the third complex”.
+**`Stacks.SheafOfModules.diagonalBetter_natural_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorSheafHom.lean#L403). The attribute's comment: “functoriality in the third complex”.
 
 > **Stacks 0BYR.** The canonical diagonal morphism is contravariant in the source of the
 > internal Hom complex.
@@ -162,7 +162,7 @@ theorem diagonalBetter_natural_hom
 
 [Tag 0A8Q](https://stacks.math.columbia.edu/tag/0A8Q) in the Stacks Project.
 
-**`Stacks.SheafOfModules.diagonalTensorHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorHom.lean, line 573](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorHom.lean#L573). The attribute's comment: “canonical diagonal morphism”.
+**`Stacks.SheafOfModules.diagonalTensorHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorHom.lean, line 573](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorHom.lean#L573). The attribute's comment: “canonical diagonal morphism”.
 
 > The diagonal morphism sends a homogeneous section `k` of `K` to the homogeneous map
 > `l ↦ k ⊗ l` from `L` to the total tensor product.
@@ -173,7 +173,7 @@ noncomputable def diagonalTensorHom
     K ⟶ (sheafHomComplex Rc L (tensorTotal Rc K L)).obj
 ```
 
-**`Stacks.SheafOfModules.diagonalTensorHom_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorHom.lean, line 581](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorHom.lean#L581). The attribute's comment: “canonical characterization”.
+**`Stacks.SheafOfModules.diagonalTensorHom_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorHom.lean, line 581](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorHom.lean#L581). The attribute's comment: “canonical characterization”.
 
 > On local sections, the diagonal morphism is inclusion of the pure tensor in the
 > appropriate summand of the total complex.
@@ -189,7 +189,7 @@ theorem diagonalTensorHom_apply
       tensorTotalSection Rc K L U n p k l
 ```
 
-**`Stacks.SheafOfModules.diagonalTensorHom_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorHom.lean, line 627](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorHom.lean#L627). The attribute's comment: “functoriality in both complexes”.
+**`Stacks.SheafOfModules.diagonalTensorHom_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorHom.lean, line 627](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/DiagonalTensorHom.lean#L627). The attribute's comment: “functoriality in both complexes”.
 
 > The diagonal morphism is natural in `K` and dinatural in `L`.
 
@@ -207,7 +207,7 @@ theorem diagonalTensorHom_natural
 
 [Tag 0A8P](https://stacks.math.columbia.edu/tag/0A8P) in the Stacks Project.
 
-**`Stacks.SheafOfModules.evaluationConstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/TensorTotalEvaluation.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/TensorTotalEvaluation.lean#L65). The attribute's comment: “canonical evaluation morphism”.
+**`Stacks.SheafOfModules.evaluationConstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/TensorTotalEvaluation.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/TensorTotalEvaluation.lean#L65). The attribute's comment: “canonical evaluation morphism”.
 
 > **Stacks 0A8P.** The canonical evaluation morphisms for internal Hom complexes of modules
 > on a ringed space, specified on homogeneous local pure tensors by the signed formula
@@ -218,7 +218,7 @@ theorem diagonalTensorHom_natural
 noncomputable def evaluationConstruction : EvaluationConstruction Rc
 ```
 
-**`Stacks.SheafOfModules.evaluateAndMore_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/TensorTotalEvaluation.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/TensorTotalEvaluation.lean#L80). The attribute's comment: “functoriality in all three complexes”.
+**`Stacks.SheafOfModules.evaluateAndMore_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/TensorTotalEvaluation.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/TensorTotalEvaluation.lean#L80). The attribute's comment: “functoriality in all three complexes”.
 
 > **Stacks 0A8P.** Evaluation is covariant in `K` and `M` and contravariant in `L`.
 
@@ -236,7 +236,7 @@ theorem evaluateAndMore_natural
 
 [Tag 0A8R](https://stacks.math.columbia.edu/tag/0A8R) in the Stacks Project.
 
-**`Stacks.SheafOfModules.sheafHomComplexHomologyEquivDerivedCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategoryHoms.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategoryHoms.lean#L118).
+**`Stacks.SheafOfModules.sheafHomComplexHomologyEquivDerivedCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategoryHoms.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategoryHoms.lean#L118).
 
 > **Stacks 0A8R.** If `I` is K-injective, degree-zero cohomology over `U` of the internal
 > Hom complex from `L` to `I` is canonically the group of derived morphisms between the objects
@@ -259,7 +259,7 @@ noncomputable def sheafHomComplexHomologyEquivDerivedCategory
       (LU ⟶ MU)
 ```
 
-**`Stacks.SheafOfModules.sheafHomComplexHomologyEquivDerivedCategory_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategoryHoms.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategoryHoms.lean#L161). The attribute's comment: “canonical comparison on section classes”.
+**`Stacks.SheafOfModules.sheafHomComplexHomologyEquivDerivedCategory_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategoryHoms.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategoryHoms.lean#L161). The attribute's comment: “canonical comparison on section classes”.
 
 > **Stacks 0A8R.** The canonical identification sends a section cohomology class first to its
 > homotopy-class morphism, transports that morphism from the slice-site model to the
@@ -301,7 +301,7 @@ theorem sheafHomComplexHomologyEquivDerivedCategory_apply
 
 [Tag 0A8S](https://stacks.math.columbia.edu/tag/0A8S) in the Stacks Project.
 
-**`Stacks.SheafOfModules.sheafHomComplexMap_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexQuasiIso.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexQuasiIso.lean#L158).
+**`Stacks.SheafOfModules.sheafHomComplexMap_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexQuasiIso.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexQuasiIso.lean#L158).
 
 > **Stacks 0A8S.** A quasi-isomorphism between K-injective complexes, together with a
 > quasi-isomorphism in the contravariant variable, induces a quasi-isomorphism between the
@@ -320,7 +320,7 @@ theorem sheafHomComplexMap_quasiIso
 
 [Tag 0A8T](https://stacks.math.columbia.edu/tag/0A8T) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isKInjective_sheafHomComplex_of_isKFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/KFlatIntoKInjective.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/KFlatIntoKInjective.lean#L45).
+**`Stacks.SheafOfModules.isKInjective_sheafHomComplex_of_isKFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/KFlatIntoKInjective.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/KFlatIntoKInjective.lean#L45).
 
 > The internal Hom complex `SheafHom^•(L, I)` from a K-flat complex `L` of `O_X`-modules into a
 > K-injective complex `I` of `O_X`-modules is K-injective.
@@ -339,4 +339,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.41, Tag 0A8K](https://stacks.math.columbia.edu/tag/0A8K)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

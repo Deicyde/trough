@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.53 Compact objects
 
-Section 20.53 of the Stacks Project, [Tag 09J6](https://stacks.math.columbia.edu/tag/09J6). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.53 of the Stacks Project, [Tag 09J6](https://stacks.math.columbia.edu/tag/09J6). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F5Z, a lemma
 
 [Tag 0F5Z](https://stacks.math.columbia.edu/tag/0F5Z) in the Stacks Project.
 
-**`Stacks.Cohomology.CompactObjects.isCompactObject_jShriek_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RecoveryB/CompactObjectExtensionByZero.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/RecoveryB/CompactObjectExtensionByZero.lean#L576).
+**`Stacks.Cohomology.CompactObjects.isCompactObject_jShriek_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RecoveryB/CompactObjectExtensionByZero.lean, line 576](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/RecoveryB/CompactObjectExtensionByZero.lean#L576).
 
 > Finite cohomological dimension and commutation of cohomology with direct sums make
 > `j_! 𝒪_U` compact in the unbounded derived category of `𝒪_X`-modules.
@@ -38,7 +38,7 @@ public theorem isCompactObject_jShriek_structureSheaf
 
 [Tag 09J7](https://stacks.math.columbia.edu/tag/09J7) in the Stacks Project.
 
-**`Stacks.Cohomology.RingedSpaceCompact.isCompactObject_of_isPerfect_of_finiteCohomDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnARingedSpaceUnconditional.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnARingedSpaceUnconditional.lean#L135). The attribute's comment: “(b): on a ringed space satisfying (1), (2) and (3) and of finite cohomological dimension, a perfect object is a compact object of D(O\_X)”.
+**`Stacks.Cohomology.RingedSpaceCompact.isCompactObject_of_isPerfect_of_finiteCohomDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnARingedSpaceUnconditional.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnARingedSpaceUnconditional.lean#L135). The attribute's comment: “(b): on a ringed space satisfying (1), (2) and (3) and of finite cohomological dimension, a perfect object is a compact object of D(O\_X)”.
 
 > **Stacks 09J7 (b).** Let `X` be a ringed space whose underlying topological
 > space is quasi-compact, has a basis of quasi-compact opens, and has quasi-compact intersections
@@ -70,7 +70,7 @@ theorem isCompactObject_of_isPerfect_of_finiteCohomDim [CompactSpace X.carrier]
     IsCompactObject.{u} K
 ```
 
-**`Stacks.Cohomology.RingedSpaceCompact.hom_coproduct_bijective_of_isPerfect_of_compactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnARingedSpaceUnconditional.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnARingedSpaceUnconditional.lean#L221). The attribute's comment: “(a): on a ringed space satisfying (1), (2) and (3), a perfect object K satisfies Hom(K, ⨁ M\_i) = ⨁ Hom(K, M\_i) whenever ⨁ M\_i is bounded below”.
+**`Stacks.Cohomology.RingedSpaceCompact.hom_coproduct_bijective_of_isPerfect_of_compactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnARingedSpaceUnconditional.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnARingedSpaceUnconditional.lean#L221). The attribute's comment: “(a): on a ringed space satisfying (1), (2) and (3), a perfect object K satisfies Hom(K, ⨁ M\_i) = ⨁ Hom(K, M\_i) whenever ⨁ M\_i is bounded below”.
 
 > **Stacks 09J7 (a).** Let `X` be a ringed space whose underlying topological
 > space is quasi-compact, has a basis of quasi-compact opens, and has quasi-compact intersections
@@ -112,4 +112,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.53, Tag 09J6](https://stacks.math.columbia.edu/tag/09J6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

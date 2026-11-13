@@ -8,7 +8,7 @@ proof: formalized
 
 # Refined Eulerian polynomials
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/refined-eulerian-polynomials/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/refined-eulerian-polynomials/index.html).
 
 ## Marginals of the refined Eulerian polynomial
 
@@ -28,7 +28,7 @@ $$A_n(1, q) = \frac{n!}{2^{\lfloor (n-1)/2 \rfloor}} (1+q)^{\lfloor (n-1)/2 \rfl
 
 - Hua Sun, "A New Class of Refined Eulerian Polynomials", Journal of Integer Sequences 21 (2018), Article 18.5.5, Proposition lines 248-254, <https://cs.uwaterloo.ca/journals/JIS/VOL21/Sun/sun2.tex>.
 
-Formalized by `MetaMathlibExt.sun_refined_eulerian_marginals`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RefinedEulerianMarginals.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RefinedEulerianMarginals.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/refined-eulerian-polynomials/index.html#sun-refined-eulerian-marginals).
+Formalized by `MetaMathlibExt.sun_refined_eulerian_marginals`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RefinedEulerianMarginals.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RefinedEulerianMarginals.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/refined-eulerian-polynomials/index.html#sun-refined-eulerian-marginals).
 
 ## Palindromicity of the refined Eulerian polynomials
 
@@ -46,7 +46,7 @@ nonzero real $p$ and $q$.
 
 - Hua Sun, "A New Class of Refined Eulerian Polynomials," Journal of Integer Sequences 21 (2018), Article 18.5.5, Theorem, lines 160–162 (polynomial definition lines 135–136, palindromic-darga definition lines 105–110). <https://cs.uwaterloo.ca/journals/JIS/VOL21/Sun/sun2.tex>
 
-Formalized by `MetaMathlibExt.refinedEulerianPolynomial_palindromic`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RefinedEulerianPolynomial.lean, line 1531](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RefinedEulerianPolynomial.lean#L1531). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/refined-eulerian-polynomials/index.html#refined-eulerian-polynomial-palindromic).
+Formalized by `MetaMathlibExt.refinedEulerianPolynomial_palindromic`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RefinedEulerianPolynomial.lean, line 1531](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RefinedEulerianPolynomial.lean#L1531). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/refined-eulerian-polynomials/index.html#refined-eulerian-polynomial-palindromic).
 
 ## Depends on
 
@@ -55,4 +55,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Refined Eulerian polynomials](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/refined-eulerian-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/refined-eulerian-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/refined-eulerian-polynomials)

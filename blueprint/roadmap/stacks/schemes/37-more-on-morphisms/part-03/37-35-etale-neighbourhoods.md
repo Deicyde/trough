@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.35 Étale neighbourhoods
 
-Section 37.35 of the Stacks Project, [Tag 02LD](https://stacks.math.columbia.edu/tag/02LD). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.35 of the Stacks Project, [Tag 02LD](https://stacks.math.columbia.edu/tag/02LD). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02LE, a definition
 
 [Tag 02LE](https://stacks.math.columbia.edu/tag/02LE) in the Stacks Project.
 
-**`AlgebraicGeometry.EtaleNeighborhood`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/EtaleNeighborhood.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/EtaleNeighborhood.lean#L62). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.EtaleNeighborhood`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/EtaleNeighborhood.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/EtaleNeighborhood.lean#L62). The attribute's comment: “part (1)”.
 
 > An *étale neighbourhood* of a scheme `S` at a point `s` is a scheme which is étale over `S`,
 > together with a distinguished point lying over `s`.
@@ -23,7 +23,7 @@ Section 37.35 of the Stacks Project, [Tag 02LD](https://stacks.math.columbia.edu
 structure EtaleNeighborhood (S : Scheme.{u}) (s : S)
 ```
 
-**`AlgebraicGeometry.EtaleNeighborhood.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/EtaleNeighborhood.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/EtaleNeighborhood.lean#L82). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.EtaleNeighborhood.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/EtaleNeighborhood.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/EtaleNeighborhood.lean#L82). The attribute's comment: “part (2)”.
 
 > A morphism of étale neighbourhoods of `(S, s)` is a morphism of schemes over `S` which
 > carries the distinguished point to the distinguished point.
@@ -32,7 +32,7 @@ structure EtaleNeighborhood (S : Scheme.{u}) (s : S)
 structure Hom (U V : EtaleNeighborhood S s)
 ```
 
-**`AlgebraicGeometry.EtaleNeighborhood.IsElementary`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/EtaleNeighborhood.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/EtaleNeighborhood.lean#L127). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.EtaleNeighborhood.IsElementary`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/EtaleNeighborhood.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/EtaleNeighborhood.lean#L127). The attribute's comment: “part (3)”.
 
 > An étale neighbourhood is *elementary* if the induced extension of residue fields is
 > trivial.
@@ -45,7 +45,7 @@ abbrev IsElementary (U : EtaleNeighborhood S s) : Prop
 
 [Tag 02LF](https://stacks.math.columbia.edu/tag/02LF) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etaleNeighborhood_residueField_algEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/ResidueField.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/ResidueField.lean#L133). References: EGA IV (18.8.6), “more general”; SGA 2 XIV (3.4).
+**`AlgebraicGeometry.exists_etaleNeighborhood_residueField_algEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/ResidueField.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/ResidueField.lean#L133). References: EGA IV (18.8.6), “more general”; SGA 2 XIV (3.4).
 
 > **Stacks Project, Tag 02LF.** Every finite separable extension of the
 > residue field at a point is realized by the residue field at the chosen point
@@ -66,7 +66,7 @@ theorem exists_etaleNeighborhood_residueField_algEquiv
 
 [Tag 057A](https://stacks.math.columbia.edu/tag/057A) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_common_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Refinement.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Refinement.lean#L68). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exists_common_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Refinement.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Refinement.lean#L68). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 057A, part (1).** Two étale neighborhoods of a point
 > admit a common refinement.
@@ -77,7 +77,7 @@ theorem exists_common_refinement {S : Scheme.{u}} {s : S}
     ∃ W : EtaleNeighborhood S s, Nonempty ((W ⟶ U) × (W ⟶ V))
 ```
 
-**`AlgebraicGeometry.exists_equalizing_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Refinement.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Refinement.lean#L144). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.exists_equalizing_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Refinement.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Refinement.lean#L144). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 057A, part (2).** Two neighborhood maps which induce
 > the same map on residue fields become equal after a refinement.
@@ -95,7 +95,7 @@ theorem exists_equalizing_refinement (f g : U ⟶ V)
 
 [Tag 057B](https://stacks.math.columbia.edu/tag/057B) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isCofiltered_elementaryEtaleNeighborhood`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleStalk/ElementaryFiber.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleStalk/ElementaryFiber.lean#L288).
+**`Stacks.EtaleCohomology.isCofiltered_elementaryEtaleNeighborhood`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleStalk/ElementaryFiber.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleStalk/ElementaryFiber.lean#L288).
 
 > **Stacks 057B.** The category of elementary étale neighbourhoods of a point of a scheme is
 > cofiltered: two neighbourhoods are dominated by their fibre product and two morphisms of
@@ -110,7 +110,7 @@ public instance isCofiltered_elementaryEtaleNeighborhood (X : Scheme.{u}) (x : X
 
 [Tag 05KS](https://stacks.math.columbia.edu/tag/05KS) in the Stacks Project.
 
-**`AlgebraicGeometry.instIsFilteredOppositeElementaryEtaleNeighborhood`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean, line 1253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean#L1253). The attribute's comment: “the indexing category is filtered”. References: EGA IV (18.6.3), “more general”.
+**`AlgebraicGeometry.instIsFilteredOppositeElementaryEtaleNeighborhood`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean, line 1253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean#L1253). The attribute's comment: “the indexing category is filtered”. References: EGA IV (18.6.3), “more general”.
 
 > **Stacks Project, Tag 05KS.** The opposite of the category of elementary
 > étale neighborhoods of a point is filtered.
@@ -121,7 +121,7 @@ instance instIsFilteredOppositeElementaryEtaleNeighborhood
     IsFiltered (ElementaryEtaleNeighborhood S s)ᵒᵖ
 ```
 
-**`AlgebraicGeometry.isColimit_globalSections`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean, line 1354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean#L1354). The attribute's comment: “the henselization is the colimit”.
+**`AlgebraicGeometry.isColimit_globalSections`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean, line 1354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean#L1354). The attribute's comment: “the henselization is the colimit”.
 
 > **Stacks Project, Tag 05KS.** A henselization of the local ring of a
 > scheme at a point is a colimit of the rings of global sections of its
@@ -153,7 +153,7 @@ lemma isColimit_globalSections (S : Scheme.{u}) (s : S)
 
 [Tag 0CAS](https://stacks.math.columbia.edu/tag/0CAS) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etaleNeighborhood_fiber_openImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberLifting.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberLifting.lean#L455).
+**`AlgebraicGeometry.exists_etaleNeighborhood_fiber_openImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberLifting.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberLifting.lean#L455).
 
 > **Stacks Project, Tag 0CAS.** An étale neighborhood on a fiber can be
 > refined by an open immersion from the fiber of an étale neighborhood on the
@@ -183,4 +183,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.35, Tag 02LD](https://stacks.math.columbia.edu/tag/02LD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

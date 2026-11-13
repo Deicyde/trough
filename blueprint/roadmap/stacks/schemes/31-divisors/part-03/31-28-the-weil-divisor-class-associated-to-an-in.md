@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.28 The Weil divisor class associated to an invertible module
 
-Section 31.28 of the Stacks Project, [Tag 02SE](https://stacks.math.columbia.edu/tag/02SE). 8 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.28 of the Stacks Project, [Tag 02SE](https://stacks.math.columbia.edu/tag/02SE). 8 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02SF, a definition
 
 [Tag 02SF](https://stacks.math.columbia.edu/tag/02SF) in the Stacks Project.
 
-**`Stacks.Divisors.orderOfVanishingMeromorphic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/MeromorphicCascade/OrderOfVanishing.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/MeromorphicCascade/OrderOfVanishing.lean#L75). References: EGA IV (21.6.7), “o\_x(f) = mult\_x(div f)”.
+**`Stacks.Divisors.orderOfVanishingMeromorphic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/MeromorphicCascade/OrderOfVanishing.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/MeromorphicCascade/OrderOfVanishing.lean#L75). References: EGA IV (21.6.7), “o\_x(f) = mult\_x(div f)”.
 
 > **The order of vanishing of a regular meromorphic section along a prime divisor, Stacks
 > 02SF.** The meromorphic section is a global section `s` of the sheaf `𝒦_X(L)` of meromorphic
@@ -34,7 +34,7 @@ def orderOfVanishingMeromorphic (X : Scheme.{u}) [IsLocallyNoetherian X] [IsInte
     (Z : PrimeDivisor X) : ℤ
 ```
 
-**`AlgebraicGeometry.orderOfVanishingMeromorphicData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/OrderOfVanishingMeromorphic.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/OrderOfVanishingMeromorphic.lean#L95).
+**`AlgebraicGeometry.orderOfVanishingMeromorphicData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/OrderOfVanishingMeromorphic.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/OrderOfVanishingMeromorphic.lean#L95).
 
 > A choice of the data provided by
 > `AlgebraicGeometry.nonempty_orderOfVanishingMeromorphicData`: the quasi-coherence of `L`, the
@@ -74,7 +74,7 @@ def orderOfVanishingMeromorphicData
         isCoordinate m a → q.2 = X.ord a ξ) }
 ```
 
-**`AlgebraicGeometry.orderOfVanishingMeromorphic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/OrderOfVanishingMeromorphic.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/OrderOfVanishingMeromorphic.lean#L130).
+**`AlgebraicGeometry.orderOfVanishingMeromorphic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/OrderOfVanishingMeromorphic.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/OrderOfVanishingMeromorphic.lean#L130).
 
 > The order of vanishing along a prime divisor `Z` of a regular meromorphic section `s` of an
 > invertible module `L` on a locally Noetherian integral scheme: the order in `𝒪_{X, ξ}` of the
@@ -94,7 +94,7 @@ def orderOfVanishingMeromorphic
 
 [Tag 02SG](https://stacks.math.columbia.edu/tag/02SG) in the Stacks Project.
 
-**`AlgebraicGeometry.locallyFinite_primeDivisors_not_representedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean#L164). The attribute's comment: “nonintegral\_stalk\_locus”.
+**`AlgebraicGeometry.locallyFinite_primeDivisors_not_representedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean#L164). The attribute's comment: “nonintegral\_stalk\_locus”.
 
 > The prime divisors at whose generic point a meromorphic section of a quasi-coherent module
 > on a locally Noetherian integral scheme is not an ordinary section form a locally finite
@@ -108,7 +108,7 @@ theorem locallyFinite_primeDivisors_not_representedAt [IsLocallyNoetherian X] [I
       (fun Z : { Z : PrimeDivisor X // ¬ IsRepresentedAt L s Z.genericPoint } => Z.1.support)
 ```
 
-**`AlgebraicGeometry.locallyFinite_primeDivisors_orderOfVanishingMeromorphic_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean#L198). The attribute's comment: “nonzero\_order\_locus”.
+**`AlgebraicGeometry.locallyFinite_primeDivisors_orderOfVanishingMeromorphic_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean#L198). The attribute's comment: “nonzero\_order\_locus”.
 
 > The prime divisors along which a regular meromorphic section of an invertible module on a
 > locally Noetherian integral scheme has nonzero order of vanishing form a locally finite
@@ -124,7 +124,7 @@ theorem locallyFinite_primeDivisors_orderOfVanishingMeromorphic_ne_zero :
 
 [Tag 02SH](https://stacks.math.columbia.edu/tag/02SH) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_meromorphicSectionRatio`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionRatio.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionRatio.lean#L154). The attribute's comment: “ratio”. References: EGA IV (20.1.8), “partial”.
+**`AlgebraicGeometry.existsUnique_meromorphicSectionRatio`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionRatio.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionRatio.lean#L154). The attribute's comment: “ratio”. References: EGA IV (20.1.8), “partial”.
 
 > Two regular meromorphic sections of an invertible module on an integral scheme have a unique
 > ratio in the units of the ring of rational functions.
@@ -136,7 +136,7 @@ theorem existsUnique_meromorphicSectionRatio
     ∃! f : (Stacks.Chow.rationalFunctions X)ˣ, IsMeromorphicSectionRatio X L s s' f
 ```
 
-**`AlgebraicGeometry.meromorphicWeilDivisor_eq_add_principalDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionRatio.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionRatio.lean#L242). The attribute's comment: “divisor identity”.
+**`AlgebraicGeometry.meromorphicWeilDivisor_eq_add_principalDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionRatio.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/SectionRatio.lean#L242). The attribute's comment: “divisor identity”.
 
 > The Weil divisors of two regular meromorphic sections of an invertible
 > module on a locally Noetherian integral scheme differ by the principal divisor of their ratio.
@@ -154,7 +154,7 @@ theorem meromorphicWeilDivisor_eq_add_principalDivisor [IsLocallyNoetherian X]
 
 [Tag 0BE6](https://stacks.math.columbia.edu/tag/0BE6) in the Stacks Project.
 
-**`AlgebraicGeometry.weilDivisorClassOfInvertibleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DivisorClass.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DivisorClass.lean#L47). The attribute's comment: “part (2): divisor class of an invertible sheaf”.
+**`AlgebraicGeometry.weilDivisorClassOfInvertibleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DivisorClass.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DivisorClass.lean#L47). The attribute's comment: “part (2): divisor class of an invertible sheaf”.
 
 > The Weil divisor class of an invertible sheaf on a locally Noetherian integral scheme: the
 > class in `Cl(X)` of the Weil divisor of a chosen regular meromorphic section of `L`.
@@ -163,7 +163,7 @@ theorem meromorphicWeilDivisor_eq_add_principalDivisor [IsLocallyNoetherian X]
 def weilDivisorClassOfInvertibleSheaf : weilDivisorClassGroup X
 ```
 
-**`AlgebraicGeometry.weilDivisorClassOfInvertibleSheaf_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DivisorClass.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DivisorClass.lean#L56). The attribute's comment: “part (2): independence of the meromorphic section”.
+**`AlgebraicGeometry.weilDivisorClassOfInvertibleSheaf_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DivisorClass.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/DivisorClass.lean#L56). The attribute's comment: “part (2): independence of the meromorphic section”.
 
 > The Weil divisor of any regular meromorphic section of an invertible sheaf `L` has class
 > `AlgebraicGeometry.weilDivisorClassOfInvertibleSheaf X L` in `Cl(X)`.
@@ -176,7 +176,7 @@ theorem weilDivisorClassOfInvertibleSheaf_eq (s : MeromorphicSection X.sheaf L)
         weilDivisorClassGroup X)
 ```
 
-**`AlgebraicGeometry.weilDivisorOfMeromorphicSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean#L241). The attribute's comment: “part (1): divisor of a meromorphic section”.
+**`AlgebraicGeometry.weilDivisorOfMeromorphicSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean#L241). The attribute's comment: “part (1): divisor of a meromorphic section”.
 
 > The Weil divisor `div_L(s) = ∑_Z ord_{Z, L}(s) [Z]` of a regular meromorphic section of an
 > invertible module on a locally Noetherian integral scheme.
@@ -189,7 +189,7 @@ def weilDivisorOfMeromorphicSection : WeilDivisor X
 
 [Tag 02SL](https://stacks.math.columbia.edu/tag/02SL) in the Stacks Project.
 
-**`AlgebraicGeometry.tensorMeromorphicSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean#L179). The attribute's comment: “tensor product of meromorphic sections”.
+**`AlgebraicGeometry.tensorMeromorphicSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean#L179). The attribute's comment: “tensor product of meromorphic sections”.
 
 > **Stacks 02SL: the tensor product of two meromorphic sections.** The meromorphic section of
 > `L ⊗_{𝒪_X} N` whose generic value is the pure tensor of the generic values of `s` and `t`. On an
@@ -204,7 +204,7 @@ def tensorMeromorphicSection [L.IsQuasicoherent] [N.IsQuasicoherent]
     MeromorphicSection X.sheaf (Scheme.Modules.tensorObj L N)
 ```
 
-**`AlgebraicGeometry.meromorphicSectionSheafIsoConstant_tensorMeromorphicSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean#L220). The attribute's comment: “pure-tensor characterization”.
+**`AlgebraicGeometry.meromorphicSectionSheafIsoConstant_tensorMeromorphicSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean#L220). The attribute's comment: “pure-tensor characterization”.
 
 > **Stacks 02SL: at the generic point the product is the pure tensor.** If the meromorphic
 > sections `s` and `t` are, at the generic point, the germs of honest sections `m` of `L` and `n`
@@ -230,7 +230,7 @@ theorem meromorphicSectionSheafIsoConstant_tensorMeromorphicSection
         (PresheafOfModules.tensorSheafGerm X.sheaf L N (genericPoint X) U hU m n)
 ```
 
-**`AlgebraicGeometry.isRegularMeromorphicSection_tensorMeromorphicSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean#L269). The attribute's comment: “nonzero product”. References: EGA IV (20.1.10), “integral; tensor clause”.
+**`AlgebraicGeometry.isRegularMeromorphicSection_tensorMeromorphicSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean#L269). The attribute's comment: “nonzero product”. References: EGA IV (20.1.10), “integral; tensor clause”.
 
 > **Stacks 02SL: a product of nonzero meromorphic sections is nonzero.** Regularity in the
 > sense of Tag 02OX is injectivity of multiplication by the generic value. Writing the generic
@@ -249,7 +249,7 @@ theorem isRegularMeromorphicSection_tensorMeromorphicSection
       (tensorMeromorphicSection X L N s t)
 ```
 
-**`AlgebraicGeometry.weilDivisorOfMeromorphicSection_tensorMeromorphicSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean#L357). The attribute's comment: “divisor additivity”.
+**`AlgebraicGeometry.weilDivisorOfMeromorphicSection_tensorMeromorphicSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean#L357). The attribute's comment: “divisor additivity”.
 
 > **Stacks 02SL: the divisor of a product is the sum of the divisors.** The Weil divisor of
 > Tag 0BE6 part (1) is additive in the product of regular meromorphic sections of invertible
@@ -268,7 +268,7 @@ theorem weilDivisorOfMeromorphicSection_tensorMeromorphicSection
       weilDivisorOfMeromorphicSection X L s hs + weilDivisorOfMeromorphicSection X N t ht
 ```
 
-**`AlgebraicGeometry.weilDivisorClassOfInvertibleSheaf_tensorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean#L378). The attribute's comment: “divisor-class additivity”.
+**`AlgebraicGeometry.weilDivisorClassOfInvertibleSheaf_tensorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TensorSection.lean#L378). The attribute's comment: “divisor-class additivity”.
 
 > **Stacks 02SL: the divisor class of a tensor product is the sum of the divisor classes.**
 > The Weil divisor class of Tag 0BE6 part (2) is additive in the tensor product of invertible
@@ -289,7 +289,7 @@ theorem weilDivisorClassOfInvertibleSheaf_tensorObj
 
 [Tag 0BE7](https://stacks.math.columbia.edu/tag/0BE7) in the Stacks Project.
 
-**`AlgebraicGeometry.picardToWeilDivisorClassGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClass.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClass.lean#L129).
+**`AlgebraicGeometry.picardToWeilDivisorClassGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClass.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClass.lean#L129).
 
 > **Stacks 0BE7: the first Chern class.** On a locally Noetherian integral scheme the Weil
 > divisor class of an invertible module defines a homomorphism from the Picard group to the Weil
@@ -309,7 +309,7 @@ def picardToWeilDivisorClassGroup :
 
 [Tag 0BE8](https://stacks.math.columbia.edu/tag/0BE8) in the Stacks Project.
 
-**`AlgebraicGeometry.picardToWeilDivisorClassGroup_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassInjective.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassInjective.lean#L466). References: EGA IV (21.6.10), “(i), integral case”; SGA 2 XI (3.8), “partial”.
+**`AlgebraicGeometry.picardToWeilDivisorClassGroup_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassInjective.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassInjective.lean#L466). References: EGA IV (21.6.10), “(i), integral case”; SGA 2 XI (3.8), “partial”.
 
 > **Stacks 0BE8.** On a normal locally Noetherian integral scheme the first Chern class
 > `Pic(X) → Cl(X)` of Tag 0BE7 is injective.
@@ -329,7 +329,7 @@ theorem picardToWeilDivisorClassGroup_injective [IsNormal X] :
 
 [Tag 0BE9](https://stacks.math.columbia.edu/tag/0BE9) in the Stacks Project.
 
-**`AlgebraicGeometry.isNormal_of_forall_uniqueFactorizationMonoid_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean#L63). The attribute's comment: “(1) → (2): factorial local rings give a normal scheme”.
+**`AlgebraicGeometry.isNormal_of_forall_uniqueFactorizationMonoid_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean#L63). The attribute's comment: “(1) → (2): factorial local rings give a normal scheme”.
 
 > A scheme whose local rings are unique factorization domains is normal: a unique
 > factorization domain is integrally closed, which is Tag 0AFV.
@@ -341,7 +341,7 @@ theorem isNormal_of_forall_uniqueFactorizationMonoid_stalk
     (h : ∀ x : X, UniqueFactorizationMonoid (X.presheaf.stalk x)) : IsNormal X
 ```
 
-**`AlgebraicGeometry.picardToWeilDivisorClassGroup_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean#L75). The attribute's comment: “final clause under (2): on a normal scheme a surjective c\_1 is bijective”.
+**`AlgebraicGeometry.picardToWeilDivisorClassGroup_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean#L75). The attribute's comment: “final clause under (2): on a normal scheme a surjective c\_1 is bijective”.
 
 > On a normal locally Noetherian integral scheme a surjective first Chern class
 > `Pic(X) → Cl(X)` is bijective, since it is injective by Tag 0BE8.
@@ -354,7 +354,7 @@ theorem picardToWeilDivisorClassGroup_bijective [IsNormal X]
     Function.Bijective (picardToWeilDivisorClassGroup X)
 ```
 
-**`AlgebraicGeometry.forall_uniqueFactorizationMonoid_stalk_iff_isNormal_and_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean#L105). The attribute's comment: “the equivalence of conditions (1) and (2)”. References: SGA 2 XI (3.8), “partial”.
+**`AlgebraicGeometry.forall_uniqueFactorizationMonoid_stalk_iff_isNormal_and_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean#L105). The attribute's comment: “the equivalence of conditions (1) and (2)”. References: SGA 2 XI (3.8), “partial”.
 
 > **Stacks 0BE9.** For a locally Noetherian integral scheme the local rings are unique
 > factorization domains exactly when the scheme is normal and the first Chern class
@@ -370,7 +370,7 @@ theorem forall_uniqueFactorizationMonoid_stalk_iff_isNormal_and_surjective :
       (IsNormal X ∧ Function.Surjective (picardToWeilDivisorClassGroup X))
 ```
 
-**`AlgebraicGeometry.picardToWeilDivisorClassGroup_bijective_of_forall_uniqueFactorizationMonoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean#L123). The attribute's comment: “the isomorphism Pic(X) = Cl(X)”. References: EGA IV (21.6.10), “(i), injectivity, (ii)”; SGA 2 XI (3.7.1), “special case”; SGA 2 XI (3.8), “special case”.
+**`AlgebraicGeometry.picardToWeilDivisorClassGroup_bijective_of_forall_uniqueFactorizationMonoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean#L123). The attribute's comment: “the isomorphism Pic(X) = Cl(X)”. References: EGA IV (21.6.10), “(i), injectivity, (ii)”; SGA 2 XI (3.7.1), “special case”; SGA 2 XI (3.8), “special case”.
 
 > **Stacks 0BE9, the final clause.** On a locally Noetherian integral scheme whose local rings
 > are unique factorization domains the first Chern class `Pic(X) → Cl(X)` is an isomorphism:
@@ -383,7 +383,7 @@ theorem picardToWeilDivisorClassGroup_bijective_of_forall_uniqueFactorizationMon
     Function.Bijective (picardToWeilDivisorClassGroup X)
 ```
 
-**`AlgebraicGeometry.forall_uniqueFactorizationMonoid_stalk_iff_isNormal_and_surjective_and_picardEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean#L155). The attribute's comment: “the full statement: (1) ⟺ (2), and in that case Pic(X) ≅ Cl(X)”. References: SGA 2 XI (3.7.1), “special case”; SGA 2 XI (3.8), “partial”.
+**`AlgebraicGeometry.forall_uniqueFactorizationMonoid_stalk_iff_isNormal_and_surjective_and_picardEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean#L155). The attribute's comment: “the full statement: (1) ⟺ (2), and in that case Pic(X) ≅ Cl(X)”. References: SGA 2 XI (3.7.1), “special case”; SGA 2 XI (3.8), “partial”.
 
 > **Stacks 0BE9.** Let `X` be a locally Noetherian integral scheme and consider the first Chern
 > class `Pic(X) → Cl(X)` of Tag 0BE7. The following are equivalent:
@@ -415,4 +415,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.28, Tag 02SE](https://stacks.math.columbia.edu/tag/02SE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

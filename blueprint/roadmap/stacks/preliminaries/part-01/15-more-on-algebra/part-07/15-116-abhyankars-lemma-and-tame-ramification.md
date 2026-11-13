@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.116 Abhyankar's lemma and tame ramification
 
-Section 15.116 of the Stacks Project, [Tag 0EXT](https://stacks.math.columbia.edu/tag/0EXT). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.116 of the Stacks Project, [Tag 0EXT](https://stacks.math.columbia.edu/tag/0EXT). 9 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09EM, a remark
 
 [Tag 09EM](https://stacks.math.columbia.edu/tag/09EM) in the Stacks Project.
 
-**`IsDiscreteValuationRing.integralClosures_after_finite_fraction_field_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/BaseChangeClosure.lean, line 744](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/BaseChangeClosure.lean#L744).
+**`IsDiscreteValuationRing.integralClosures_after_finite_fraction_field_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/BaseChangeClosure.lean, line 743](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/BaseChangeClosure.lean#L743).
 
 > The integral closures attached to a finite extension `K₁/K` and an extension of discrete
 > valuation rings `A → B` have the product, spectral, local, henselian, inseparable, separable,
@@ -113,7 +113,7 @@ theorem integralClosures_after_finite_fraction_field_extension
 
 [Tag 09EV](https://stacks.math.columbia.edu/tag/09EV) in the Stacks Project.
 
-**`Stacks.KummerExtension.intermediateField_eq_adjoin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/IntermediateFields.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/IntermediateFields.lean#L406). The attribute's comment: “(6)”.
+**`Stacks.KummerExtension.intermediateField_eq_adjoin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/IntermediateFields.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/IntermediateFields.lean#L406). The attribute's comment: “(6)”.
 
 > If `n` is prime to the residue characteristic of `A`, then every intermediate field
 > `K ⊆ L ⊆ K_1` is of the form `L = K[pi^{1/d}]` for some positive divisor `d | n`: `L` is generated
@@ -131,7 +131,7 @@ theorem intermediateField_eq_adjoin [Fact (Irreducible (kummerPoly K π n))]
       Module.finrank L (K1 K π n) = n / d
 ```
 
-**`Stacks.KummerExtension.isDiscreteValuationRing_A1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean#L184). The attribute's comment: “(3)”.
+**`Stacks.KummerExtension.isDiscreteValuationRing_A1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean#L184). The attribute's comment: “(3)”.
 
 > `A_1` is a discrete valuation ring.
 
@@ -141,7 +141,7 @@ theorem isDiscreteValuationRing_A1 [Fact (Irreducible (kummerPoly K π n))]
     IsDiscreteValuationRing (A1 K π n)
 ```
 
-**`Stacks.KummerExtension.exists_ramificationIdx_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean#L221). The attribute's comment: “(4)”.
+**`Stacks.KummerExtension.exists_ramificationIdx_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean#L221). The attribute's comment: “(4)”.
 
 > `A_1` has a unique maximal ideal `m` lying over `m_A`, and the ramification index of `m`
 > over `m_A` is `n`.
@@ -155,7 +155,7 @@ theorem exists_ramificationIdx_eq (hn : 2 ≤ n) (hπ : Irreducible π) :
       Ideal.ramificationIdx' (IsLocalRing.maximalIdeal A) m = n
 ```
 
-**`Stacks.KummerExtension.isTotallyRamified_K1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean#L284). The attribute's comment: “(5)”.
+**`Stacks.KummerExtension.isTotallyRamified_K1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean#L284). The attribute's comment: “(5)”.
 
 > `K_1 / K` is totally ramified with respect to `A`, whatever the residue characteristic of
 > `A`.
@@ -166,7 +166,7 @@ theorem isTotallyRamified_K1 [Fact (Irreducible (kummerPoly K π n))]
     IsTotallyRamified A K (K1 K π n)
 ```
 
-**`Stacks.KummerExtension.isTamelyRamified_K1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean#L371). The attribute's comment: “(6)”.
+**`Stacks.KummerExtension.isTamelyRamified_K1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Ramification.lean#L371). The attribute's comment: “(6)”.
 
 > If `n` is prime to the residue characteristic of `A`, then `K_1 / K` is tamely ramified
 > with respect to `A`.
@@ -180,7 +180,7 @@ theorem isTamelyRamified_K1 [Fact (Irreducible (kummerPoly K π n))]
     IsTamelyRamified A K (K1 K π n)
 ```
 
-**`Stacks.KummerExtension.finrank_K1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/RingOfIntegers.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/RingOfIntegers.lean#L396). The attribute's comment: “(1)”.
+**`Stacks.KummerExtension.finrank_K1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/RingOfIntegers.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/RingOfIntegers.lean#L396). The attribute's comment: “(1)”.
 
 > `[K_1 : K] = n`.
 
@@ -189,7 +189,7 @@ theorem finrank_K1 (hn : 2 ≤ n) (hπ : Irreducible π) :
     Module.finrank K (K1 K π n) = n
 ```
 
-**`Stacks.KummerExtension.integralClosure_eq_adjoin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/RingOfIntegers.lean, line 555](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/RingOfIntegers.lean#L555). The attribute's comment: “(2)”.
+**`Stacks.KummerExtension.integralClosure_eq_adjoin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/RingOfIntegers.lean, line 555](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/RingOfIntegers.lean#L555). The attribute's comment: “(2)”.
 
 > The integral closure `A_1` of `A` in `K_1` is the `A`-subalgebra `A[pi'] = A[pi^{1/n}]`
 > generated by `pi'`.
@@ -203,11 +203,12 @@ theorem integralClosure_eq_adjoin (hn : 2 ≤ n) (hπ : Irreducible π) :
 
 [Tag 09EQ](https://stacks.math.columbia.edu/tag/09EQ) in the Stacks Project.
 
-**`IsDiscreteValuationRing.formallySmooth_localizations_after_finite_fraction_field_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/FiniteFractionFieldExtension.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/FiniteFractionFieldExtension.lean#L348).
+**`IsDiscreteValuationRing.formallySmooth_localizations_after_finite_fraction_field_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/FiniteFractionFieldExtension.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/FiniteFractionFieldExtension.lean#L359). The attribute's comment: “Corrected statement. The formal smoothness of every local extension `(A₁)_{𝔪_i} → (B₁)_{𝔪_ij}` holds for every finite `K₁ / K`, as printed, and so does `B₁ = (B ⊗_A A₁)_red`. The printed equalities `L₁ = L ⊗_K K₁` and `B₁ = B ⊗_A A₁` are false in general (`exists_formallySmoothNAdic_not_isReduced_tensorProduct`); both say that `L ⊗_K K₁` is reduced, and both are proved here in exactly that case. Recorded in `errata.md`.”.
 
 > Formal smoothness of an extension of discrete valuation rings persists at every local factor
 > after a finite extension of the fraction field.  The integral closure upstairs is the reduced
-> tensor product, and it is the unreduced tensor product whenever `L ⊗_K K₁` is reduced.
+> tensor product, and it is the unreduced tensor product whenever `L ⊗_K K₁` is reduced, which is
+> exactly when `L₁ = L ⊗_K K₁`.
 
 ```lean
 theorem formallySmooth_localizations_after_finite_fraction_field_extension
@@ -268,11 +269,35 @@ theorem formallySmooth_localizations_after_finite_fraction_field_extension
                 (IsLocalRing.maximalIdeal (Localization q.primeCompl)))
 ```
 
+**`IsDiscreteValuationRing.exists_formallySmoothNAdic_not_isReduced_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/FiniteFractionFieldExtensionCounterexample.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/FiniteFractionFieldExtensionCounterexample.lean#L69). The attribute's comment: “The printed equalities `L₁ = L ⊗_K K₁` and `B₁ = B ⊗_A A₁` are false in general: this is the counterexample, `A → A^` for a non-excellent discrete valuation ring of characteristic two and a purely inseparable `K₁ / K` of degree two. The corrected statement, with the equalities under the hypothesis that `L ⊗_K K₁` is reduced, is `formallySmooth_localizations_after_finite_fraction_field_extension`.”.
+
+> **The equalities of Tag 09EQ fail as printed.** There are an extension `A → B` of discrete
+> valuation rings, formally smooth for the `𝔪_B`-adic topology, and a finite extension `K₁ / K` of
+> the fraction field of `A`, such that neither `L ⊗_K K₁` nor `B ⊗_A A₁` is reduced, where `L` is
+> the fraction field of `B` and `A₁` the integral closure of `A` in `K₁`. Since `L₁ = (L ⊗_K K₁)_red`
+> and its subring `B₁` are reduced, neither `L₁ = L ⊗_K K₁` nor `B₁ = B ⊗_A A₁` holds.
+>
+> The witness is `A → A^` for the characteristic-two discrete valuation ring of Tag 00PB, with
+> `K₁ = K(√a)` for an `a ∈ A` that is a square in `A^` but not in `K`.
+
+```lean
+theorem exists_formallySmoothNAdic_not_isReduced_tensorProduct :
+    ∃ (A B K L K₁ : Type u) (_ : CommRing A) (_ : IsDomain A) (_ : IsDiscreteValuationRing A)
+      (_ : CommRing B) (_ : IsDomain B) (_ : IsDiscreteValuationRing B) (_ : Algebra A B)
+      (_ : IsExtension A B) (_ : Field K) (_ : Field L) (_ : Field K₁)
+      (_ : Algebra A K) (_ : Algebra A L) (_ : Algebra B L) (_ : Algebra K L)
+      (_ : Algebra K K₁) (_ : Algebra A K₁)
+      (_ : IsScalarTower A B L) (_ : IsScalarTower A K L) (_ : IsScalarTower A K K₁)
+      (_ : IsFractionRing A K) (_ : IsFractionRing B L) (_ : Module.Finite K K₁),
+      RingHom.FormallySmoothNAdic.{u} (algebraMap A B) (maximalIdeal B) ∧
+        ¬ IsReduced (L ⊗[K] K₁) ∧ ¬ IsReduced (B ⊗[A] integralClosure A K₁)
+```
+
 ## Tag 0BRM, a lemma
 
 [Tag 0BRM](https://stacks.math.columbia.edu/tag/0BRM) in the Stacks Project.
 
-**`IsDiscreteValuationRing.formallySmooth_localizations_of_ramificationIndex_dvd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/AbhyankarLemma.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/AbhyankarLemma.lean#L97).
+**`IsDiscreteValuationRing.formallySmooth_localizations_of_ramificationIndex_dvd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/AbhyankarLemma.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/AbhyankarLemma.lean#L97).
 
 > **Abhyankar's lemma.** A tamely ramified extension of discrete valuation rings becomes
 > formally smooth at every local factor after a finite fraction-field extension whose local
@@ -341,7 +366,7 @@ theorem formallySmooth_localizations_of_ramificationIndex_dvd
 
 [Tag 0EXU](https://stacks.math.columbia.edu/tag/0EXU) in the Stacks Project.
 
-**`IsDiscreteValuationRing.isTamelyRamified_tower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/TameRamification.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/TameRamification.lean#L307).
+**`IsDiscreteValuationRing.isTamelyRamified_tower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/TameRamification.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/TameRamification.lean#L307).
 
 > Tame ramification composes in a tower of finite separable extensions when
 > the upper extension is tamely ramified at every maximal localization of the
@@ -380,7 +405,7 @@ theorem isTamelyRamified_tower
 
 [Tag 0EXV](https://stacks.math.columbia.edu/tag/0EXV) in the Stacks Project.
 
-**`IsDiscreteValuationRing.isTamelyRamified_of_isTamelyRamified_tower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/TameRamification.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/TameRamification.lean#L398). References: SGA 1 XIII (2.0.3), “subalgebra of tame”.
+**`IsDiscreteValuationRing.isTamelyRamified_of_isTamelyRamified_tower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/TameRamification.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/TameRamification.lean#L398). References: SGA 1 XIII (2.0.3), “subalgebra of tame”.
 
 > Every intermediate extension of a finite separable extension tamely ramified
 > with respect to a discrete valuation ring is itself tamely ramified.
@@ -406,7 +431,7 @@ theorem isTamelyRamified_of_isTamelyRamified_tower
 
 [Tag 0EXW](https://stacks.math.columbia.edu/tag/0EXW) in the Stacks Project.
 
-**`IsDiscreteValuationRing.isTamelyRamifiedWithRespectTo_tfae_hasUnramifiedKummerOverfield`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/TameRamificationKummer.lean, line 764](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/TameRamificationKummer.lean#L764).
+**`IsDiscreteValuationRing.isTamelyRamifiedWithRespectTo_tfae_hasUnramifiedKummerOverfield`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/TameRamificationKummer.lean, line 764](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/TameRamificationKummer.lean#L764).
 
 > A finite separable extension of the fraction field of a discrete valuation ring is tamely
 > ramified if and only if it embeds into an unramified extension after some Kummer base change;
@@ -434,7 +459,7 @@ theorem isTamelyRamifiedWithRespectTo_tfae_hasUnramifiedKummerOverfield
 
 [Tag 0EXX](https://stacks.math.columbia.edu/tag/0EXX) in the Stacks Project.
 
-**`IsDiscreteValuationRing.exists_isGalois_and_common_extension_isTamelyRamifiedWithRespectTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/TameGaloisClosure.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/TameGaloisClosure.lean#L249).
+**`IsDiscreteValuationRing.exists_isGalois_and_common_extension_isTamelyRamifiedWithRespectTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/TameGaloisClosure.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/TameGaloisClosure.lean#L249).
 
 > **Stacks 0EXX.** Every finite separable extension of the fraction field of a discrete
 > valuation ring which is tamely ramified with respect to the ring is contained in a finite
@@ -471,7 +496,7 @@ theorem exists_isGalois_and_common_extension_isTamelyRamifiedWithRespectTo
 
 [Tag 0EXY](https://stacks.math.columbia.edu/tag/0EXY) in the Stacks Project.
 
-**`IsDiscreteValuationRing.exists_algEquiv_pi_field_and_ramification_goes_up`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/RamificationGoesUp.lean, line 783](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/RamificationGoesUp.lean#L783). References: SGA 1 XIII (2.0.3), “tame after DVR extension”; SGA 1 XIII (2.0.2), “⇒: tameness ascends”.
+**`IsDiscreteValuationRing.exists_algEquiv_pi_field_and_ramification_goes_up`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/RamificationGoesUp.lean, line 780](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Abhyankar/RamificationGoesUp.lean#L780). References: SGA 1 XIII (2.0.3), “tame after DVR extension”; SGA 1 XIII (2.0.2), “⇒: tameness ascends”.
 
 > **Stacks 0EXY.** A finite separable field extension remains a finite product of fields after
 > scalar extension along an extension of discrete valuation rings. If the original extension is
@@ -513,4 +538,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.116, Tag 0EXT](https://stacks.math.columbia.edu/tag/0EXT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

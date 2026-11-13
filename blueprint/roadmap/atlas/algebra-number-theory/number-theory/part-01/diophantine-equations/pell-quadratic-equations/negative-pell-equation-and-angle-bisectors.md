@@ -7,7 +7,7 @@ statement: formalized
 
 # Negative Pell equation and angle bisectors
 
-48 results, 17 proved and 31 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html).
+48 results, 18 proved and 30 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html).
 
 ## Second coordinate of the fundamental negative Pell solution
 
@@ -19,7 +19,7 @@ $Y = 0$ when there is no such $y$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (23)-(24).
 
-Formalized by `MetaMathlibExt.negPellFundY`, a definition declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-fund-y).
+Formalized by `MetaMathlibExt.negPellFundY`, a definition declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-fund-y).
 
 ## First coordinate of the fundamental negative Pell solution
 
@@ -33,7 +33,7 @@ exists, and $X = 0$ otherwise.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (23)-(24).
 
-Formalized by `MetaMathlibExt.negPellFundX`, a definition declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-fund-x).
+Formalized by `MetaMathlibExt.negPellFundX`, a definition declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-fund-x).
 
 ## The fundamental negative Pell solution solves the equation
 
@@ -46,7 +46,7 @@ and $X^2 + 1 = d Y^2$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (24).
 
-Formalized by `MetaMathlibExt.negPellFund_spec`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-fund-spec).
+Formalized by `MetaMathlibExt.negPellFund_spec`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-fund-spec).
 
 ## Minimality of the fundamental negative Pell solution
 
@@ -58,7 +58,7 @@ integer such that $x^2 - d y^2 = -1$ for some natural number $x$, then $Y \le y$
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (24).
 
-Formalized by `MetaMathlibExt.negPellFundY_le`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-fund-y-le).
+Formalized by `MetaMathlibExt.negPellFundY_le`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-fund-y-le).
 
 ## The fundamental solution of the negative Pell equation for d = 2
 
@@ -70,7 +70,7 @@ first coordinate is $X = 1$; that is, the fundamental solution for $d = 2$ is $(
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (23)-(24).
 
-Formalized by `MetaMathlibExt.negPellFund_two`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-fund-two).
+Formalized by `MetaMathlibExt.negPellFund_two`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-fund-two).
 
 ## First coordinates of the powers of the fundamental negative Pell solution
 
@@ -86,7 +86,7 @@ $\varepsilon^n = f_n + g_n \sqrt{d}$ for some integer $g_n$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (23).
 
-Formalized by `MetaMathlibExt.negPellF`, a definition declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-f).
+Formalized by `MetaMathlibExt.negPellF`, a definition declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-f).
 
 ## Second coordinates of the powers of the fundamental negative Pell solution
 
@@ -102,7 +102,7 @@ $\varepsilon^n = f_n + g_n \sqrt{d}$ for some integer $f_n$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (23).
 
-Formalized by `MetaMathlibExt.negPellG`, a definition declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-g).
+Formalized by `MetaMathlibExt.negPellG`, a definition declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-g).
 
 ## Initial values of the negative Pell sequences
 
@@ -114,7 +114,7 @@ $g_0 = 0$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (23).
 
-Formalized by `MetaMathlibExt.negPellF_zero_negPellG_zero`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-f-zero-neg-pell-g-zero).
+Formalized by `MetaMathlibExt.negPellF_zero_negPellG_zero`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-f-zero-neg-pell-g-zero).
 
 ## Recurrence for the negative Pell sequences
 
@@ -129,7 +129,7 @@ $$f_{n+1} = f_n X + d g_n Y, \qquad g_{n+1} = f_n Y + g_n X.$$
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (23).
 
-Formalized by `MetaMathlibExt.negPell_succ`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-succ).
+Formalized by `MetaMathlibExt.negPell_succ`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-succ).
 
 ## The negative Pell sequences for d = 2 at n = 1
 
@@ -141,7 +141,7 @@ $g_n$ be the integers with $(X + Y\sqrt 2)^n = f_n + g_n \sqrt 2$. Then $f_1 = g
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (23).
 
-Formalized by `MetaMathlibExt.negPellF_two_one`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-f-two-one).
+Formalized by `MetaMathlibExt.negPellF_two_one`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-f-two-one).
 
 ## Angle bisectors satisfy the bisector equation
 
@@ -163,7 +163,7 @@ is equidistant from both lines, that is, when $|a - s| / \sqrt{a^2 + 1} = |b - s
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 1(a).
 
-Stated but not proved: `MetaMathlibExt.bisector_slope_equation` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-slope-equation).
+Stated but not proved: `MetaMathlibExt.bisector_slope_equation` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-slope-equation).
 
 ## Rational solutions of the bisector equation
 
@@ -177,7 +177,7 @@ $c = (a b_2 + a_2 b) / (a_2 + b_2)$, or $b_2 - a_2 \ne 0$ and $c = (a b_2 - a_2 
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 1(b).
 
-Stated but not proved: `MetaMathlibExt.bisector_equation_rat_solution` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-rat-solution).
+Stated but not proved: `MetaMathlibExt.bisector_equation_rat_solution` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-rat-solution).
 
 ## Symmetries of the bisector equation
 
@@ -189,7 +189,7 @@ satisfy the same equation, and so does $(a, b, -c^{-1})$ when $c \ne 0$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 2(a).
 
-Stated but not proved: `MetaMathlibExt.bisector_equation_symm` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-symm).
+Stated but not proved: `MetaMathlibExt.bisector_equation_symm` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-symm).
 
 ## No nontrivial integer solutions of the bisector equation with $a = 0$ or $b = 0$
 
@@ -201,7 +201,7 @@ $(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$. Then $|a| = |b|$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 2(b).
 
-Stated but not proved: `MetaMathlibExt.bisector_equation_int_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-int-zero).
+Stated but not proved: `MetaMathlibExt.bisector_equation_int_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-int-zero).
 
 ## Integer solutions of the bisector equation
 
@@ -230,7 +230,7 @@ Here $g^{(d)}_{(2m-1) 2n} / g^{(d)}_{2m-1}$ is the integer quotient; the divisio
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.bisector_equation_int_solution` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-int-solution).
+Stated but not proved: `MetaMathlibExt.bisector_equation_int_solution` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-int-solution).
 
 ## Bisector-equation solutions from the negative Pell sequences
 
@@ -248,7 +248,7 @@ $$(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1).$$
 - converse of Theorem 3 for Form (9); the square-freeness of $d$ is not needed here.
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 3, converse for (9).
 
-Stated but not proved: `MetaMathlibExt.bisector_equation_form_nine` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-form-nine).
+Stated but not proved: `MetaMathlibExt.bisector_equation_form_nine` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-form-nine).
 
 ## Bisector-equation solutions from the powers of $1 + \sqrt{2}$
 
@@ -263,7 +263,7 @@ $$(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1).$$
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 3, converse for (10).
 
-Stated but not proved: `MetaMathlibExt.bisector_equation_form_ten` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-form-ten).
+Stated but not proved: `MetaMathlibExt.bisector_equation_form_ten` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-form-ten).
 
 ## Finitely many classes of solutions of a general Pell equation
 
@@ -282,7 +282,7 @@ powers, so this form implies the paper's.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 6 (quoting its reference [4, Corollary 3.5]).
 
-Stated but not proved: `MetaMathlibExt.generalPell_finitely_many_classes` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#general-pell-finitely-many-classes).
+Stated but not proved: `MetaMathlibExt.generalPell_finitely_many_classes` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#general-pell-finitely-many-classes).
 
 ## Rational solvability of the negative Pell equation
 
@@ -294,7 +294,7 @@ $d$ is congruent to $3$ modulo $4$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.negPell_rat_solvable_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-rat-solvable-iff).
+Stated but not proved: `MetaMathlibExt.negPell_rat_solvable_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-rat-solvable-iff).
 
 ## Basic properties of the negative Pell sequences
 
@@ -317,7 +317,7 @@ The sequence $(f_n)_{n \ge 0}$ is not strictly increasing when $d = 2$, since $f
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.negPell_sequences_basic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-sequences-basic).
+Stated but not proved: `MetaMathlibExt.negPell_sequences_basic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-sequences-basic).
 
 ## Addition and doubling formulas for the negative Pell sequences
 
@@ -342,7 +342,7 @@ The paper also assumes $d > 1$; this is not needed.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.negPell_addition_formulas` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-addition-formulas).
+Stated but not proved: `MetaMathlibExt.negPell_addition_formulas` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-addition-formulas).
 
 ## Sum and difference formulas for the negative Pell sequences
 
@@ -372,7 +372,7 @@ The source also assumes $d > 1$, which is not needed.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.negPell_sum_difference_formulas` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-sum-difference-formulas).
+Stated but not proved: `MetaMathlibExt.negPell_sum_difference_formulas` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-sum-difference-formulas).
 
 ## Comparison of the negative Pell sequences
 
@@ -389,7 +389,7 @@ $f_1 = 2$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Corollary 2, first sentence.
 
-Stated but not proved: `MetaMathlibExt.negPellG_le_negPellF` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-g-le-neg-pell-f).
+Stated but not proved: `MetaMathlibExt.negPellG_le_negPellF` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-g-le-neg-pell-f).
 
 ## Coprimality of the negative Pell sequences
 
@@ -402,7 +402,7 @@ Then for every $n > 0$, $\gcd(d, f_n) = 1$ and $\gcd(f_n, g_n) = 1$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 11(a).
 
-Stated but not proved: `MetaMathlibExt.negPell_gcd_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-gcd-eq-one).
+Stated but not proved: `MetaMathlibExt.negPell_gcd_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-gcd-eq-one).
 
 ## Coprimality of negative Pell terms whose indices have an even ratio
 
@@ -416,7 +416,7 @@ natural numbers such that $n$ divides $m$ and $m / n$ is even, then $\gcd(f_m, f
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 11(b).
 
-Stated but not proved: `MetaMathlibExt.negPellF_gcd_of_even_quotient` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-f-gcd-of-even-quotient).
+Stated but not proved: `MetaMathlibExt.negPellF_gcd_of_even_quotient` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 354](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L354). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-f-gcd-of-even-quotient).
 
 ## Divisibility between terms of the negative Pell sequence
 
@@ -431,7 +431,7 @@ and $m / n$ is odd.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 11(c).
 
-Stated but not proved: `MetaMathlibExt.negPellF_dvd_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-f-dvd-iff).
+Stated but not proved: `MetaMathlibExt.negPellF_dvd_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-f-dvd-iff).
 
 ## Divisibility of the second coordinates of negative Pell powers
 
@@ -445,7 +445,7 @@ if and only if $n$ divides $m$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 11(d).
 
-Stated but not proved: `MetaMathlibExt.negPellG_dvd_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-g-dvd-iff).
+Stated but not proved: `MetaMathlibExt.negPellG_dvd_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#neg-pell-g-dvd-iff).
 
 ## $|x^2 - d y^2|$ is never $2 \bmod 4$ when $d \equiv 1 \pmod 4$
 
@@ -458,7 +458,7 @@ and $y$.
 - the source's hypothesis $z > 1$ is not needed. The second sentence of part (a) (on $S(d)$ and $l_2$) is not stated here.
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Lemma 1(a), first sentence.
 
-Stated but not proved: `MetaMathlibExt.abs_sq_sub_mul_sq_ne_of_two_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#abs-sq-sub-mul-sq-ne-of-two-mod-four).
+Formalized by `MetaMathlibExt.abs_sq_sub_mul_sq_ne_of_two_mod_four`, a theorem declared in [MathlibExt/NumberTheory/GeneralPellBisectors.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/GeneralPellBisectors.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#abs-sq-sub-mul-sq-ne-of-two-mod-four).
 
 ## Solutions of |x² − dy²| = z are even when d ≡ 1 and z ≡ 4 (mod 8)
 
@@ -473,7 +473,7 @@ paper's lemma, on the fundamental unit, is not stated here.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Lemma 1(c), first sentence.
 
-Stated but not proved: `MetaMathlibExt.even_of_abs_sq_sub_mul_sq_four_mod_eight` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#even-of-abs-sq-sub-mul-sq-four-mod-eight).
+Stated but not proved: `MetaMathlibExt.even_of_abs_sq_sub_mul_sq_four_mod_eight` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#even-of-abs-sq-sub-mul-sq-four-mod-eight).
 
 ## Solutions of |x² − dy²| = z are even when d ≡ 5 and z ≡ 0 (mod 8)
 
@@ -487,7 +487,7 @@ The paper also assumes $z > 1$; this is not needed.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Lemma 1(d).
 
-Stated but not proved: `MetaMathlibExt.even_of_abs_sq_sub_mul_sq_zero_mod_eight` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 405](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L405). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#even-of-abs-sq-sub-mul-sq-zero-mod-eight).
+Stated but not proved: `MetaMathlibExt.even_of_abs_sq_sub_mul_sq_zero_mod_eight` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#even-of-abs-sq-sub-mul-sq-zero-mod-eight).
 
 ## Primes with strictly primitive representations
 
@@ -499,7 +499,7 @@ primitive integral solution, that is, integers $x, y$ with $x$ and $d y$ coprime
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Notation 2.
 
-Formalized by `MetaMathlibExt.strictPrimitivePrimes`, a definition declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-primes).
+Formalized by `MetaMathlibExt.strictPrimitivePrimes`, a definition declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 405](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L405). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-primes).
 
 ## Strictly primitive exponent
 
@@ -513,7 +513,7 @@ integral solution; if $p \notin S(d)$, then $l_p = 0$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Notation 2.
 
-Formalized by `MetaMathlibExt.strictPrimitiveExponent`, a definition declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-exponent).
+Formalized by `MetaMathlibExt.strictPrimitiveExponent`, a definition declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-exponent).
 
 ## Vanishing of the strictly primitive exponent
 
@@ -527,7 +527,7 @@ in particular for every $p$ that is not prime.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Notation 2.
 
-Formalized by `MetaMathlibExt.strictPrimitiveExponent_of_not_mem`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-exponent-of-not-mem).
+Formalized by `MetaMathlibExt.strictPrimitiveExponent_of_not_mem`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-exponent-of-not-mem).
 
 ## The strictly primitive exponent is attained
 
@@ -541,7 +541,7 @@ primitive integral solution.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Notation 2.
 
-Formalized by `MetaMathlibExt.strictPrimitiveExponent_spec`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 445](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L445). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-exponent-spec).
+Formalized by `MetaMathlibExt.strictPrimitiveExponent_spec`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-exponent-spec).
 
 ## Minimality of the strictly primitive exponent
 
@@ -555,7 +555,7 @@ primitive integral solution, then $l_p \le l$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Notation 2.
 
-Formalized by `MetaMathlibExt.strictPrimitiveExponent_le`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 459](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L459). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-exponent-le).
+Formalized by `MetaMathlibExt.strictPrimitiveExponent_le`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 449](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L449). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-exponent-le).
 
 ## $7$ is a strictly primitive prime for $d = 2$
 
@@ -567,7 +567,7 @@ $2 y$ coprime) for some integer $l > 0$. A witness is $3^2 - 2 \cdot 1^2 = 7$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Notation 2.
 
-Formalized by `MetaMathlibExt.seven_mem_strictPrimitivePrimes_two`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#seven-mem-strict-primitive-primes-two).
+Formalized by `MetaMathlibExt.seven_mem_strictPrimitivePrimes_two`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 461](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L461). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#seven-mem-strict-primitive-primes-two).
 
 ## The strictly primitive exponent of 7 for d = 2
 
@@ -579,7 +579,7 @@ an integral solution with $x$ and $2 y$ coprime exists and equals $1$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Notation 2.
 
-Formalized by `MetaMathlibExt.strictPrimitiveExponent_two_seven`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-exponent-two-seven).
+Formalized by `MetaMathlibExt.strictPrimitiveExponent_two_seven`, a theorem declared in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 470](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-exponent-two-seven).
 
 ## Pythagorean parametrization of rational solutions of the bisector equation
 
@@ -598,7 +598,7 @@ $$c = \frac{l m - n^2}{(l + m) n} \qquad \text{or} \qquad c = -\frac{(l + m) n}{
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 1(i).
 
-Stated but not proved: `MetaMathlibExt.bisector_equation_rat_solution_pythagorean` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-rat-solution-pythagore).
+Stated but not proved: `MetaMathlibExt.bisector_equation_rat_solution_pythagorean` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-rat-solution-pythagore).
 
 ## Parametric rational solutions of the bisector equation
 
@@ -617,7 +617,7 @@ satisfies $(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 1, converse for (2).
 
-Stated but not proved: `MetaMathlibExt.bisector_equation_form_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 512](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L512). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-form-two).
+Stated but not proved: `MetaMathlibExt.bisector_equation_form_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-form-two).
 
 ## Rational solutions of the bisector equation for square-free $d > 1$
 
@@ -640,7 +640,7 @@ $(\alpha\beta - (\alpha\beta)') / (\alpha + \beta - (\alpha + \beta)')$.
 - the theorem's second part (the factorization of $\alpha, \beta$ through $\eta$, $\xi_p$ and $S(d)$) is not stated here.
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 1(ii), first sentence.
 
-Stated but not proved: `MetaMathlibExt.bisector_equation_rat_solution_negPell` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 532](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L532). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-rat-solution-neg-pell).
+Stated but not proved: `MetaMathlibExt.bisector_equation_rat_solution_negPell` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-rat-solution-neg-pell).
 
 ## Bisector-equation solutions from two solutions of $x^2 - d y^2 = -1$
 
@@ -656,7 +656,7 @@ and if $a b_2 + a_2 b \ne 0$, then $c = -(a_2 + b_2) / (a b_2 + a_2 b)$ satisfie
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 1, converse for (3).
 
-Stated but not proved: `MetaMathlibExt.bisector_equation_form_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 549](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L549). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-form-three).
+Stated but not proved: `MetaMathlibExt.bisector_equation_form_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 539](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L539). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#bisector-equation-form-three).
 
 ## Products of strictly primitive solutions
 
@@ -674,7 +674,7 @@ The sign $\pm$ in the source's equation (13) is dropped; negation preserves both
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 3(a).
 
-Stated but not proved: `MetaMathlibExt.strictlyPrimitive_prod` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 565](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L565). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strictly-primitive-prod).
+Stated but not proved: `MetaMathlibExt.strictlyPrimitive_prod` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 555](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L555). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strictly-primitive-prod).
 
 ## Powers of strictly primitive solutions
 
@@ -693,7 +693,7 @@ $\pm$ in the source's equation (14) is dropped.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 3(b).
 
-Stated but not proved: `MetaMathlibExt.strictlyPrimitive_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strictly-primitive-pow).
+Stated but not proved: `MetaMathlibExt.strictlyPrimitive_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 572](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strictly-primitive-pow).
 
 ## Negating the value of a strictly primitive solution
 
@@ -706,7 +706,7 @@ $x^2 - d y^2 = -z$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.strictlyPrimitive_neg` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 593](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L593). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strictly-primitive-neg).
+Stated but not proved: `MetaMathlibExt.strictlyPrimitive_neg` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 583](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L583). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strictly-primitive-neg).
 
 ## Strictly primitive solutions modulo p and splitting of p
 
@@ -727,7 +727,7 @@ $\mathbb{Q}(\sqrt 3)$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.exists_strictlyPrimitive_dvd_iff_split` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 610](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L610). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#exists-strictly-primitive-dvd-iff-split).
+Stated but not proved: `MetaMathlibExt.exists_strictlyPrimitive_dvd_iff_split` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 600](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L600). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#exists-strictly-primitive-dvd-iff-split).
 
 ## Strictly primitive primes are the split primes
 
@@ -749,7 +749,7 @@ $\mathbb{Q}(\sqrt{3})$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 8(a).
 
-Stated but not proved: `MetaMathlibExt.strictPrimitivePrimes_eq_split` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 626](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L626). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-primes-eq-split).
+Stated but not proved: `MetaMathlibExt.strictPrimitivePrimes_eq_split` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 616](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L616). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-primes-eq-split).
 
 ## Strictly primitive primes are 2 and the split primes
 
@@ -766,7 +766,7 @@ exactly two prime ideals of $\mathcal{O}_K$ lie over $p\mathbb{Z}$.
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 8(b).
 
-Stated but not proved: `MetaMathlibExt.strictPrimitivePrimes_eq_split_insert_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 641](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L641). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-primes-eq-split-insert).
+Stated but not proved: `MetaMathlibExt.strictPrimitivePrimes_eq_split_insert_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 631](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L631). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-primes-eq-split-insert).
 
 ## The strictly primitive exponent is at most the class number
 
@@ -788,7 +788,7 @@ units lie in $\mathbb{Z}[\sqrt{37}]$).
 
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.strictPrimitiveExponent_le_classNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 660](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L660). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-exponent-le-class-numbe).
+Stated but not proved: `MetaMathlibExt.strictPrimitiveExponent_le_classNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean, line 650](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean#L650). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html#strict-primitive-exponent-le-class-numbe).
 
 ## Depends on
 
@@ -797,4 +797,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Negative Pell equation and angle bisectors](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/negative-pell-equation-and-angle-bisectors)

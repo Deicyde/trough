@@ -8,7 +8,7 @@ proof: formalized
 
 # Bell numbers, Fubini numbers and Bell polynomials: its own results
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/index.html).
 
 Bell numbers (Dobinski, Spivey, Touchard and Turán-type identities, log-convexity), complete, partial and generalized Bell polynomials, potential polynomials, Fubini (ordered Bell) numbers and their congruences, and horse numbers.
 
@@ -27,7 +27,7 @@ where the quotient is a natural number, mapped into $R$.
 
 - Mihoubi, *Some Congruences for the Partial Bell Polynomials*, J. Integer Seq. 12 (2009), Article 09.4.1.
 
-Formalized by `MetaMathlibExt.partialBellPolynomial`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PartialBellPolynomial.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PartialBellPolynomial.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/index.html#partial-bell-polynomial).
+Formalized by `MetaMathlibExt.partialBellPolynomial`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PartialBellPolynomial.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PartialBellPolynomial.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/index.html#partial-bell-polynomial).
 
 ## Dobinski's formula
 
@@ -40,7 +40,7 @@ At $n = 0$ the term $k = 0$ is $0^0 / 0! = 1$, matching the exponential series.
 
 - <https://cs.uwaterloo.ca/journals/JIS/VOL14/Mezo/mezo9.tex>, lines 283-293. Only the classical Bell-number identity is stated here; the r-Bell generalizations are excluded.
 
-Formalized by `MetaMathlibExt.dobinski_formula_hasSum`, a theorem declared in [MathlibExt/Combinatorics/DobinskiBell.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/DobinskiBell.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/index.html#dobinski-formula-has-sum).
+Formalized by `MetaMathlibExt.dobinski_formula_hasSum`, a theorem declared in [MathlibExt/Combinatorics/DobinskiBell.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/DobinskiBell.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/index.html#dobinski-formula-has-sum).
 
 ## Schreyer's Fubini formula for r-horse numbers
 
@@ -64,7 +64,7 @@ shift operators.
 
 - Benjamin Schreyer, "Rigged Horse Numbers and their Modular Periodicity," Journal of Integer Sequences 28 (2025), Article 25.4.1, Theorem, lines 211–215, https://cs.uwaterloo.ca/journals/JIS/VOL28/Schreyer/schreyer7.tex
 
-Formalized by `MetaMathlibExt.rHorseNumber_eq_stirlingFirst_sum_fubini`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RHorseNumberFubini.lean, line 504](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RHorseNumberFubini.lean#L504). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/index.html#r-horse-number-eq-stirling-first-sum-fub).
+Formalized by `MetaMathlibExt.rHorseNumber_eq_stirlingFirst_sum_fubini`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RHorseNumberFubini.lean, line 504](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RHorseNumberFubini.lean#L504). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/index.html#r-horse-number-eq-stirling-first-sum-fub).
 
 ## Depends on
 
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bell numbers, Fubini numbers and Bell polynomials](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers)

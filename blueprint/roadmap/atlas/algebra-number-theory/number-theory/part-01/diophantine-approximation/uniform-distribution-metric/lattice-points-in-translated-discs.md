@@ -7,7 +7,7 @@ statement: formalized
 
 # Lattice points in translated discs
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/lattice-points-in-translated-discs/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/lattice-points-in-translated-discs/index.html).
 
 ## Lattice points in a translated unit disc
 
@@ -16,7 +16,7 @@ natural number $n$, the disc lattice count is the number of integer points
 $(p_1, p_2) \in \mathbb{Z}^2$ in the closed disc of radius $1$ centred at $n w$, that is, with
 $(p_1 - n w_1)^2 + (p_2 - n w_2)^2 \le 1$.
 
-Formalized by `MathlibExt.NumberTheory.DiophantineApproximation.ScottishBook152Wanted.DiscLatticeCount`, a definition declared in [WantedExt/NumberTheory/DiophantineApproximation/ScottishBook152Wanted.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineApproximation/ScottishBook152Wanted.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/lattice-points-in-translated-discs/index.html#disc-lattice-count).
+Formalized by `MathlibExt.NumberTheory.DiophantineApproximation.ScottishBook152Wanted.DiscLatticeCount`, a definition declared in [WantedExt/NumberTheory/DiophantineApproximation/ScottishBook152Wanted.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineApproximation/ScottishBook152Wanted.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/lattice-points-in-translated-discs/index.html#disc-lattice-count).
 
 ## Steinhaus's disc frequencies exist
 
@@ -35,7 +35,7 @@ $w$.
 
 - H. Steinhaus, Problem 152 of the Scottish Book; J. Mycielski's commentary in Mauldin (ed.), The Scottish Book, 2nd ed. (2015) explains the solution using facts from Diophantine approximation, as reported in the 2026 survey "90+ years of the Scottish Book" (arXiv:2603.27867).
 
-Stated but not proved: `MathlibExt.NumberTheory.DiophantineApproximation.ScottishBook152Wanted.steinhausDiscFrequenciesExist` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/ScottishBook152Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiophantineApproximation/ScottishBook152Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/lattice-points-in-translated-discs/index.html#steinhaus-disc-frequencies-exist).
+Stated but not proved: `MathlibExt.NumberTheory.DiophantineApproximation.ScottishBook152Wanted.steinhausDiscFrequenciesExist` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiophantineApproximation/ScottishBook152Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiophantineApproximation/ScottishBook152Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/lattice-points-in-translated-discs/index.html#steinhaus-disc-frequencies-exist).
 
 ## Depends on
 
@@ -44,4 +44,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lattice points in translated discs](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/lattice-points-in-translated-discs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/lattice-points-in-translated-discs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/lattice-points-in-translated-discs)

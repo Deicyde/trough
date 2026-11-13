@@ -1,39 +1,43 @@
 ---
 declaration: section
 origin: cited
-lean: LinearMap.setOf_localizedMap_atPrime_surjective_eq_setOf_baseChange_surjective, LinearMap.isOpen_setOf_localizedMap_atPrime_bijective, Module.FinitePresentation.exists_free_localizedModule_powers, Stacks.FiniteProjective.MapLocus.isOpen_injLocus_and_localized, Stacks.FiniteProjective.MapLocus.isOpen_surjLocus_and_localized, Stacks.FiniteProjective.MapLocus.isOpen_isoLocus_and_localized
+lean: LinearMap.surjectivityLocus_eq_and_isOpen_and_surjective_away, LinearMap.isOpen_setOf_localizedMap_atPrime_bijective, Module.FinitePresentation.exists_free_localizedModule_powers, Stacks.FiniteProjective.MapLocus.isOpen_injLocus_and_localized, Stacks.FiniteProjective.MapLocus.isOpen_surjLocus_and_localized, Stacks.FiniteProjective.MapLocus.isOpen_isoLocus_and_localized
 statement: formalized
 proof: formalized
 ---
 
 # 10.79 Open loci defined by module maps
 
-Section 10.79 of the Stacks Project, [Tag 05GD](https://stacks.math.columbia.edu/tag/05GD). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.79 of the Stacks Project, [Tag 05GD](https://stacks.math.columbia.edu/tag/05GD). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05GE, a lemma
 
 [Tag 05GE](https://stacks.math.columbia.edu/tag/05GE) in the Stacks Project.
 
-**`LinearMap.setOf_localizedMap_atPrime_surjective_eq_setOf_baseChange_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/SurjectivityLocus.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/SurjectivityLocus.lean#L122). The attribute's comment: “the equality of the two loci in the displayed formula”.
+**`LinearMap.surjectivityLocus_eq_and_isOpen_and_surjective_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/SurjectivityLocusOpen.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/SurjectivityLocusOpen.lean#L72).
 
-> Let `R` be a ring and let `φ : M →ₗ[R] N` be a map of `R`-modules whose cokernel `N ⧸ φ.range`
-> is a finite `R`-module. Then the set of primes `p` of `R` such that the localized map
-> `φ_p : M_p → N_p` is surjective is the set of primes `p` such that the fibre map
-> `φ ⊗ κ(p) : M ⊗_R κ(p) → N ⊗_R κ(p)` is surjective.
+> Let `R` be a ring and let `φ : M →ₗ[R] N` be a map of `R`-modules with `N` a finite
+> `R`-module. Let `U` be the set of primes `p` such that `φ_p : M_p → N_p` is surjective. Then `U`
+> is the set of primes `p` such that `φ ⊗ κ(p) : M ⊗_R κ(p) → N ⊗_R κ(p)` is surjective, `U` is open
+> in `Spec R`, and for every `f : R` with `D(f) ⊆ U` the map `M_f → N_f` is surjective.
 
 ```lean
-public theorem LinearMap.setOf_localizedMap_atPrime_surjective_eq_setOf_baseChange_surjective
-    {R M N : Type*} [CommRing R] [AddCommGroup M] [Module R M] [AddCommGroup N] [Module R N]
-    (φ : M →ₗ[R] N) [Module.Finite R (N ⧸ φ.range)] :
+theorem surjectivityLocus_eq_and_isOpen_and_surjective_away (φ : M →ₗ[R] N)
+    [Module.Finite R N] :
     {p : PrimeSpectrum R | Function.Surjective (LocalizedModule.map p.asIdeal.primeCompl φ)} =
-      {p | Function.Surjective (φ.baseChange p.asIdeal.ResidueField)}
+        {p | Function.Surjective (φ.baseChange p.asIdeal.ResidueField)} ∧
+      IsOpen {p : PrimeSpectrum R |
+        Function.Surjective (LocalizedModule.map p.asIdeal.primeCompl φ)} ∧
+      ∀ f : R, (PrimeSpectrum.basicOpen f : Set (PrimeSpectrum R)) ⊆
+          {p | Function.Surjective (LocalizedModule.map p.asIdeal.primeCompl φ)} →
+        Function.Surjective (LocalizedModule.map (Submonoid.powers f) φ)
 ```
 
 ## Tag 05GF, a lemma
 
 [Tag 05GF](https://stacks.math.columbia.edu/tag/05GF) in the Stacks Project.
 
-**`LinearMap.isOpen_setOf_localizedMap_atPrime_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/FinitePresentation/Locus.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/FinitePresentation/Locus.lean#L102).
+**`LinearMap.isOpen_setOf_localizedMap_atPrime_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/FinitePresentation/Locus.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/FinitePresentation/Locus.lean#L102).
 
 > Let `R` be a ring and let `φ : M →ₗ[R] N` be a map of `R`-modules with `M` a finite
 > `R`-module and `N` a finitely presented `R`-module. Then the set of primes `p` of `R` such that
@@ -53,13 +57,13 @@ public theorem LinearMap.isOpen_setOf_localizedMap_atPrime_bijective
 
 Declarations registered for the tag:
 
-- [`Module.FinitePresentation.exists_free_localizedModule_powers`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.FinitePresentation.exists_free_localizedModule_powers#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L255) (StacksFrontier). References: EGA IV (8.5.5), “special case”.
+- [`Module.FinitePresentation.exists_free_localizedModule_powers`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.FinitePresentation.exists_free_localizedModule_powers#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L256) (StacksFrontier). References: EGA IV (8.5.5), “special case”.
 
 ## Tag 00O0, a lemma
 
 [Tag 00O0](https://stacks.math.columbia.edu/tag/00O0) in the Stacks Project.
 
-**`Stacks.FiniteProjective.MapLocus.isOpen_injLocus_and_localized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/Locus.lean, line 882](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/Locus.lean#L882). The attribute's comment: “(1)”. References: EGA 0 (19.1.12), “P₁,P₂ finite projective”; EGA IV (11.3.7), “affine case, b)=>a)”.
+**`Stacks.FiniteProjective.MapLocus.isOpen_injLocus_and_localized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/Locus.lean, line 880](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/Locus.lean#L880). The attribute's comment: “(1)”. References: EGA 0 (19.1.12), “P₁,P₂ finite projective”; EGA IV (11.3.7), “affine case, b)=>a)”.
 
 > **(Injectivity locus.)** The injectivity locus `U` is open, and for every
 > `f` with `D(f) ⊆ U`:
@@ -79,7 +83,7 @@ theorem isOpen_injLocus_and_localized
         (Localization.Away f ⊗[R] (P₂ ⧸ LinearMap.range φ))
 ```
 
-**`Stacks.FiniteProjective.MapLocus.isOpen_surjLocus_and_localized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/Locus.lean, line 901](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/Locus.lean#L901). The attribute's comment: “(2)”.
+**`Stacks.FiniteProjective.MapLocus.isOpen_surjLocus_and_localized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/Locus.lean, line 899](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/Locus.lean#L899). The attribute's comment: “(2)”.
 
 > **(Surjectivity locus.)** The surjectivity locus `W` is open, and for every
 > `f` with `D(f) ⊆ W`:
@@ -99,7 +103,7 @@ theorem isOpen_surjLocus_and_localized
         (Localization.Away f ⊗[R] (LinearMap.ker φ))
 ```
 
-**`Stacks.FiniteProjective.MapLocus.isOpen_isoLocus_and_localized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/Locus.lean, line 924](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/Locus.lean#L924). The attribute's comment: “(3)”.
+**`Stacks.FiniteProjective.MapLocus.isOpen_isoLocus_and_localized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/Locus.lean, line 922](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/Locus.lean#L922). The attribute's comment: “(3)”.
 
 > **(Isomorphism locus.)** The isomorphism locus `V` is open, and for every
 > `f` with `D(f) ⊆ V`, the localized map `φ_f` is bijective.
@@ -126,4 +130,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.79, Tag 05GD](https://stacks.math.columbia.edu/tag/05GD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

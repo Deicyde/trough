@@ -8,13 +8,13 @@ proof: formalized
 
 # 40.11 Morphisms of groupoids on fields
 
-Section 40.11 of the Stacks Project, [Tag 04Q4](https://stacks.math.columbia.edu/tag/04Q4). 9 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 40.11 of the Stacks Project, [Tag 04Q4](https://stacks.math.columbia.edu/tag/04Q4). 9 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04Q5, a situation
 
 [Tag 04Q5](https://stacks.math.columbia.edu/tag/04Q5) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidMorphismOverFieldSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Situation.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Situation.lean#L56).
+**`AlgebraicGeometry.GroupoidMorphismOverFieldSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Situation.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Situation.lean#L56).
 
 > The standing data of Situation 04Q5: two groupoid schemes over a base scheme sharing a
 > scheme of objects which is the spectrum of a field, and a morphism between them whose
@@ -28,7 +28,7 @@ structure GroupoidMorphismOverFieldSituation
 
 [Tag 04Q6](https://stacks.math.columbia.edu/tag/04Q6) in the Stacks Project.
 
-**`AlgebraicGeometry.isClosed_range_mapArrows_of_isOpen`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/OpenImageOverField.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/OpenImageOverField.lean#L228).
+**`AlgebraicGeometry.isClosed_range_mapArrows_of_isOpen`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/OpenImageOverField.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/OpenImageOverField.lean#L227).
 
 > **Stacks Project, Tag 04Q6.** If a morphism of groupoid schemes whose common object
 > scheme is the spectrum of a field has open image on arrows, then that image is closed.
@@ -48,7 +48,7 @@ public lemma isClosed_range_mapArrows_of_isOpen
 
 [Tag 04Q7](https://stacks.math.columbia.edu/tag/04Q7) in the Stacks Project.
 
-**`AlgebraicGeometry.comp_mapsTo_closure_range_mapArrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ImageClosure.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ImageClosure.lean#L66).
+**`AlgebraicGeometry.comp_mapsTo_closure_range_mapArrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ImageClosure.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ImageClosure.lean#L66).
 
 > **Stacks Project, Tag 04Q7.** For a morphism of groupoid schemes over a field which is the
 > identity on the common scheme of objects, the closure of the image on arrows is stable under
@@ -71,7 +71,7 @@ theorem comp_mapsTo_closure_range_mapArrows {S : Scheme.{u}} {k : Type u} [Field
 
 [Tag 04Q8](https://stacks.math.columbia.edu/tag/04Q8) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.reducedClosureImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean#L476). The attribute's comment: “construction”. References: SGA 3 VIA (0.2), “special case”.
+**`AlgebraicGeometry.GroupoidScheme.reducedClosureImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean#L476). The attribute's comment: “construction”. References: SGA 3 VIA (0.2), “special case”.
 
 > **Stacks Project, Tag 04Q8.** The reduced closure of the image on arrows of a morphism of
 > groupoid schemes over a perfect field which is the identity on objects carries a groupoid
@@ -84,7 +84,7 @@ noncomputable def reducedClosureImage {k : Type u} [Field k] [PerfectField k]
     (hmapObjects : F.mapObjects = eqToHom hobjects) : ReducedClosureImage F
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.reducedClosureGroupoid_objects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean#L500). The attribute's comment: “object scheme”.
+**`AlgebraicGeometry.GroupoidScheme.reducedClosureGroupoid_objects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean, line 500](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean#L500). The attribute's comment: “object scheme”.
 
 > **Stacks Project, Tag 04Q8.** The reduced-closure groupoid has the same scheme of objects
 > as the target groupoid.
@@ -97,7 +97,7 @@ theorem reducedClosureGroupoid_objects {k : Type u} [Field k] [PerfectField k]
     (reducedClosureGroupoid F hobjects hfield hmapObjects).objects = G₂.objects
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.reducedClosureGroupoid_arrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean#L510). The attribute's comment: “arrow scheme”.
+**`AlgebraicGeometry.GroupoidScheme.reducedClosureGroupoid_arrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean#L510). The attribute's comment: “arrow scheme”.
 
 > **Stacks Project, Tag 04Q8.** The scheme of arrows of the reduced-closure groupoid is the
 > reduced closure of the image on arrows.
@@ -110,7 +110,7 @@ theorem reducedClosureGroupoid_arrows {k : Type u} [Field k] [PerfectField k]
     (reducedClosureGroupoid F hobjects hfield hmapObjects).arrows = reducedClosureArrows F
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.reducedClosureInclusion_mapObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean, line 520](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean#L520). The attribute's comment: “inclusion on objects”.
+**`AlgebraicGeometry.GroupoidScheme.reducedClosureInclusion_mapObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean, line 520](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean#L520). The attribute's comment: “inclusion on objects”.
 
 > **Stacks Project, Tag 04Q8.** The canonical morphism from the reduced-closure groupoid is
 > the identity on objects.
@@ -124,7 +124,7 @@ theorem reducedClosureInclusion_mapObjects {k : Type u} [Field k] [PerfectField 
       eqToHom (reducedClosureGroupoid_objects F hobjects hfield hmapObjects)
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.reducedClosureInclusion_mapArrows_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean, line 542](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean#L542). The attribute's comment: “inclusion on arrows”.
+**`AlgebraicGeometry.GroupoidScheme.reducedClosureInclusion_mapArrows_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ReducedClosureGroupoid.lean#L542). The attribute's comment: “inclusion on arrows”.
 
 > **Stacks Project, Tag 04Q8.** On arrows the canonical morphism from the reduced-closure
 > groupoid is the closed immersion of the reduced closure of the image.
@@ -144,7 +144,7 @@ theorem reducedClosureInclusion_mapArrows_left {k : Type u} [Field k] [PerfectFi
 
 [Tag 04Q9](https://stacks.math.columbia.edu/tag/04Q9) in the Stacks Project.
 
-**`AlgebraicGeometry.isClosed_range_mapArrows_of_isLocallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/LocallyClosedImage.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/LocallyClosedImage.lean#L391).
+**`AlgebraicGeometry.isClosed_range_mapArrows_of_isLocallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/LocallyClosedImage.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/LocallyClosedImage.lean#L391).
 
 > **Stacks Project, Tag 04Q9.** The image on arrows of a morphism of groupoid schemes over a
 > field which is the identity on their common scheme of objects is closed as soon as it is
@@ -163,7 +163,7 @@ theorem isClosed_range_mapArrows_of_isLocallyClosed {k : Type u} [Field k]
 
 [Tag 04QA](https://stacks.math.columbia.edu/tag/04QA) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_groupoidScheme_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/ArrowImageOverField.lean, line 627](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/ArrowImageOverField.lean#L627).
+**`AlgebraicGeometry.exists_groupoidScheme_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/ArrowImageOverField.lean, line 627](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/ArrowImageOverField.lean#L627).
 
 > **Stacks Project, Tag 04QA.** The scheme-theoretic image of a quasi-compact
 > arrow map of groupoid schemes over a field has the restricted groupoid structure.
@@ -189,7 +189,7 @@ public theorem exists_groupoidScheme_image
 
 [Tag 04QB](https://stacks.math.columbia.edu/tag/04QB) in the Stacks Project.
 
-**`AlgebraicGeometry.comp_mapsTo_closure_range_groupoidPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ClosureComposition.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ClosureComposition.lean#L71).
+**`AlgebraicGeometry.comp_mapsTo_closure_range_groupoidPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ClosureComposition.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ClosureComposition.lean#L71).
 
 > **Stacks Project, Tag 04QB.** Let `(U, R, s, t, c)` be a groupoid scheme over `S` with `U`
 > the spectrum of a field, and let `Z` be the closure of the image of `j = (t, s)` in `U ×_S U`.
@@ -213,7 +213,7 @@ theorem comp_mapsTo_closure_range_groupoidPreRelation :
 
 [Tag 04QC](https://stacks.math.columbia.edu/tag/04QC) in the Stacks Project.
 
-**`AlgebraicGeometry.reducedClosureGroupoidPreRelation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ClosureComposition.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ClosureComposition.lean#L89).
+**`AlgebraicGeometry.reducedClosureGroupoidPreRelation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ClosureComposition.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ClosureComposition.lean#L89).
 
 > **Stacks Project, Tag 04QC.** For a groupoid scheme `(U, R, s, t, c)` over `S` with `U` the
 > spectrum of a perfect field, the reduced closed subscheme `Z` of `U ×_S U` supported on the
@@ -229,7 +229,7 @@ noncomputable def reducedClosureGroupoidPreRelation [PerfectField k] :
 
 [Tag 04QD](https://stacks.math.columbia.edu/tag/04QD) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_groupoidScheme_image_groupoidPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ClosureComposition.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ClosureComposition.lean#L117).
+**`AlgebraicGeometry.exists_groupoidScheme_image_groupoidPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ClosureComposition.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/ClosureComposition.lean#L117).
 
 > **Stacks Project, Tag 04QD.** For a groupoid scheme `(U, R, s, t, c)` over `S` with `U` the
 > spectrum of a field and `R` quasi-compact, the scheme-theoretic image of `j = (t, s)` in
@@ -254,4 +254,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 40.11, Tag 04Q4](https://stacks.math.columbia.edu/tag/04Q4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

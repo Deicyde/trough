@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.RelativeSpec.relativeSpecFunctor, relativeSpecFunctor, Stacks.RelativeSpec.algebraPullback_nonempty, Stacks.RelativeSpec.relativeSpecFunctorPullbackToOriginal_base, Stacks.RelativeSpec.relativeSpecFunctorPullbackToOriginal_algebra, Stacks.RelativeSpec.relativeSpecFunctor_pullback_iso_pullback, Stacks.RelativeSpec.relativeSpecFunctor_pullback_iso_pullback_fst, Stacks.RelativeSpec.relativeSpecFunctor_pullback_iso_pullback_snd
+lean: Stacks.RelativeSpec.relativeSpecFunctor, Stacks.RelativeSpec.algebraPullback_nonempty, Stacks.RelativeSpec.relativeSpecFunctorPullbackToOriginal_base, Stacks.RelativeSpec.relativeSpecFunctorPullbackToOriginal_algebra, Stacks.RelativeSpec.relativeSpecFunctor_pullback_iso_pullback, Stacks.RelativeSpec.relativeSpecFunctor_pullback_iso_pullback_fst, Stacks.RelativeSpec.relativeSpecFunctor_pullback_iso_pullback_snd, Stacks.RelativeSpec.RelativeSpecSituation.baseChange
 statement: formalized
 proof: formalized
 ---
 
 # 27.4 Relative spectrum as a functor
 
-Section 27.4 of the Stacks Project, [Tag 01LQ](https://stacks.math.columbia.edu/tag/01LQ). 8 tags here are carried by 26 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 27.4 of the Stacks Project, [Tag 01LQ](https://stacks.math.columbia.edu/tag/01LQ). 8 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01LR, an equation
 
 [Tag 01LR](https://stacks.math.columbia.edu/tag/01LR) in the Stacks Project.
 
-**`Stacks.RelativeSpec.relativeSpecFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecRepresentability/Basic.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpecRepresentability/Basic.lean#L283).
+**`Stacks.RelativeSpec.relativeSpecFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecRepresentability/Basic.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpecRepresentability/Basic.lean#L283).
 
 > The contravariant functor sending a test scheme `T` to the pairs
 > `(f : T ⟶ X, φ : A ⟶ f_* 𝒪_T)` and a morphism of test schemes to pullback of such pairs.
@@ -24,15 +24,11 @@ noncomputable def relativeSpecFunctor (s : RelativeSpecSituation.{u}) :
     Scheme.{u}ᵒᵖ ⥤ Type u
 ```
 
-Declarations registered for the tag:
-
-- [`relativeSpecFunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=relativeSpecFunctor#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorOfPoints.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorOfPoints.lean#L97) (StacksFrontier).
-
 ## Tag 01LS, a lemma
 
 [Tag 01LS](https://stacks.math.columbia.edu/tag/01LS) in the Stacks Project.
 
-**`Stacks.RelativeSpec.algebraPullback_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean#L129). The attribute's comment: “existence of the pulled-back algebra”.
+**`Stacks.RelativeSpec.algebraPullback_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean#L129). The attribute's comment: “existence of the pulled-back algebra”.
 
 > **Stacks Project, Tag 01LS.** Extension of scalars of a quasi-coherent algebra sheaf along
 > any morphism of schemes exists and is quasi-coherent.
@@ -41,7 +37,7 @@ Declarations registered for the tag:
 theorem algebraPullback_nonempty : Nonempty (AlgebraPullback s g)
 ```
 
-**`Stacks.RelativeSpec.relativeSpecFunctorPullbackToOriginal_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean#L233). The attribute's comment: “base component of the canonical map to the original functor”.
+**`Stacks.RelativeSpec.relativeSpecFunctorPullbackToOriginal_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean#L233). The attribute's comment: “base component of the canonical map to the original functor”.
 
 > **Stacks Project, Tag 01LS.** On a test scheme, the canonical map composes the structural
 > morphism with the base-change morphism.
@@ -52,7 +48,7 @@ theorem relativeSpecFunctorPullbackToOriginal_base {T : Scheme.{u}}
     ((relativeSpecFunctorPullbackToOriginal s g).app (.op T) p).1 = p.1 ≫ g
 ```
 
-**`Stacks.RelativeSpec.relativeSpecFunctorPullbackToOriginal_algebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean#L240). The attribute's comment: “algebra component of the canonical map to the original functor”.
+**`Stacks.RelativeSpec.relativeSpecFunctorPullbackToOriginal_algebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean#L240). The attribute's comment: “algebra component of the canonical map to the original functor”.
 
 > **Stacks Project, Tag 01LS.** The algebra component of the canonical map is obtained from
 > the transpose of `g⁻¹A ⟶ g⁺A`, then pushed forward along the test-scheme map.
@@ -67,7 +63,7 @@ theorem relativeSpecFunctorPullbackToOriginal_algebra {T : Scheme.{u}}
         (TopCat.Presheaf.pushforward CommRingCat g.base).map p.2.right)
 ```
 
-**`Stacks.RelativeSpec.relativeSpecFunctor_pullback_iso_pullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean#L330). The attribute's comment: “canonical base-change isomorphism”.
+**`Stacks.RelativeSpec.relativeSpecFunctor_pullback_iso_pullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean#L330). The attribute's comment: “canonical base-change isomorphism”.
 
 > **Stacks Project, Tag 01LS.** Formation of the relative spectrum functor commutes with
 > arbitrary base change.
@@ -78,7 +74,7 @@ noncomputable def relativeSpecFunctor_pullback_iso_pullback :
       pullback (yoneda.map g) (relativeSpecFunctorToBase s)
 ```
 
-**`Stacks.RelativeSpec.relativeSpecFunctor_pullback_iso_pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean#L338). The attribute's comment: “first component of the canonical isomorphism”.
+**`Stacks.RelativeSpec.relativeSpecFunctor_pullback_iso_pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean#L338). The attribute's comment: “first component of the canonical isomorphism”.
 
 > **Stacks Project, Tag 01LS.** The first component of the canonical base-change isomorphism
 > remembers the map from a test scheme to the new base.
@@ -90,7 +86,7 @@ theorem relativeSpecFunctor_pullback_iso_pullback_fst :
       relativeSpecFunctorToBase (pullbackAlgebra s g).situation
 ```
 
-**`Stacks.RelativeSpec.relativeSpecFunctor_pullback_iso_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean#L347). The attribute's comment: “second component of the canonical isomorphism”.
+**`Stacks.RelativeSpec.relativeSpecFunctor_pullback_iso_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/BaseChange.lean#L347). The attribute's comment: “second component of the canonical isomorphism”.
 
 > **Stacks Project, Tag 01LS.** The second component of the isomorphism is the canonical
 > transformation induced by the algebra pullback map.
@@ -102,7 +98,7 @@ theorem relativeSpecFunctor_pullback_iso_pullback_snd :
       relativeSpecFunctorPullbackToOriginal s g
 ```
 
-**`Stacks.RelativeSpec.RelativeSpecSituation.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean#L153). The attribute's comment: “the base-changed situation (S', g^*A)”.
+**`Stacks.RelativeSpec.RelativeSpecSituation.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean#L153). The attribute's comment: “the base-changed situation (S', g^*A)”.
 
 > **Stacks Project, Tag 01LS.** The relative-spectrum situation obtained from `(S, A)` by base
 > change along `g : S' ⟶ S`: the base is `S'` and the algebra is `A' = g^*A`, the pullback
@@ -113,7 +109,7 @@ def RelativeSpecSituation.baseChange (s : RelativeSpecSituation.{u}) {S' : Schem
     (g : S' ⟶ s.base) : RelativeSpecSituation.{u}
 ```
 
-**`Stacks.RelativeSpec.baseChangeToOriginal_app_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean#L207). The attribute's comment: “base component of the canonical map to the original functor”.
+**`Stacks.RelativeSpec.baseChangeToOriginal_app_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean#L207). The attribute's comment: “base component of the canonical map to the original functor”.
 
 > **Stacks Project, Tag 01LS.** The morphism to `S` underlying the image of a pair under the
 > canonical transformation `F' ⟶ F` is the morphism to `S'` of the pair, composed with `g`.
@@ -124,7 +120,7 @@ theorem baseChangeToOriginal_app_fst {T : Scheme.{u}}
     ((baseChangeToOriginal s g).app (.op T) p).1 = p.1 ≫ g
 ```
 
-**`Stacks.RelativeSpec.baseChangeToOriginal_app_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean#L216). The attribute's comment: “algebra component of the canonical map to the original functor”.
+**`Stacks.RelativeSpec.baseChangeToOriginal_app_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean#L216). The attribute's comment: “algebra component of the canonical map to the original functor”.
 
 > **Stacks Project, Tag 01LS.** The algebra map of the image of a pair under the canonical
 > transformation `F' ⟶ F` is the direct image along `g` of the pair's algebra map, precomposed
@@ -140,7 +136,7 @@ theorem baseChangeToOriginal_app_right {T : Scheme.{u}}
         (TopCat.Presheaf.pushforward CommRingCat g.base).map p.2.right
 ```
 
-**`Stacks.RelativeSpec.relativeSpecFunctorBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean#L321). The attribute's comment: “canonical base-change isomorphism”.
+**`Stacks.RelativeSpec.relativeSpecFunctorBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean#L321). The attribute's comment: “canonical base-change isomorphism”.
 
 > **Stacks Project, Tag 01LS.** Formation of the relative-spectrum functor commutes with
 > arbitrary base change: the functor attached to `(S', g^*A)` is canonically the fibre product
@@ -153,7 +149,7 @@ def relativeSpecFunctorBaseChangeIso :
       pullback (yoneda.map g) (relativeSpecFunctorToBase s)
 ```
 
-**`Stacks.RelativeSpec.relativeSpecFunctorBaseChangeIso_hom_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean#L329). The attribute's comment: “first component of the canonical isomorphism”.
+**`Stacks.RelativeSpec.relativeSpecFunctorBaseChangeIso_hom_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean#L329). The attribute's comment: “first component of the canonical isomorphism”.
 
 > **Stacks Project, Tag 01LS.** The first component of the base-change isomorphism is the
 > structural map of `F'` to the functor of points of the new base.
@@ -165,7 +161,7 @@ theorem relativeSpecFunctorBaseChangeIso_hom_fst :
       relativeSpecFunctorToBase (s.baseChange g)
 ```
 
-**`Stacks.RelativeSpec.relativeSpecFunctorBaseChangeIso_hom_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean#L338). The attribute's comment: “second component of the canonical isomorphism”.
+**`Stacks.RelativeSpec.relativeSpecFunctorBaseChangeIso_hom_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/FunctorBaseChange.lean#L338). The attribute's comment: “second component of the canonical isomorphism”.
 
 > **Stacks Project, Tag 01LS.** The second component of the base-change isomorphism is the
 > canonical transformation `F' ⟶ F` induced by the base-change map of algebras.
@@ -181,7 +177,7 @@ theorem relativeSpecFunctorBaseChangeIso_hom_snd :
 
 [Tag 01LT](https://stacks.math.columbia.edu/tag/01LT) in the Stacks Project.
 
-**`Stacks.AffineAlgebraEquivalence.relativeSpecIsoSpecSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecOpenRestriction/RelativeSpecAffineBase.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpecOpenRestriction/RelativeSpecAffineBase.lean#L99). The attribute's comment: “the scheme-level form: over an affine base the relative spectrum is the spectrum of the ring of global sections of the algebra”.
+**`Stacks.AffineAlgebraEquivalence.relativeSpecIsoSpecSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecOpenRestriction/RelativeSpecAffineBase.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpecOpenRestriction/RelativeSpecAffineBase.lean#L99). The attribute's comment: “the scheme-level form: over an affine base the relative spectrum is the spectrum of the ring of global sections of the algebra”.
 
 > **[Stacks, Tag 01LT] at the level of schemes.** Over an affine base the relative spectrum
 > of a quasi-coherent sheaf of algebras is the spectrum of the ring of global sections of the
@@ -201,7 +197,7 @@ public noncomputable def relativeSpecIsoSpecSections [IsAffine S] :
     relativeSpec A ≅ Spec (A.right.obj.obj (op (⊤ : S.Opens)))
 ```
 
-**`Stacks.RelativeSpec.relativeSpecFunctor_representableBy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecRepresentability/Basic.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpecRepresentability/Basic.lean#L496).
+**`Stacks.RelativeSpec.relativeSpecFunctor_representableBy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecRepresentability/Basic.lean, line 496](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpecRepresentability/Basic.lean#L496).
 
 > If the base is affine, the functor of relative-spectrum pairs associated to a quasi-coherent
 > algebra is represented by the spectrum of the algebra's ring of global sections.
@@ -216,7 +212,7 @@ theorem relativeSpecFunctor_representableBy (s : RelativeSpecSituation.{u}) [IsA
 
 [Tag 01LU](https://stacks.math.columbia.edu/tag/01LU) in the Stacks Project.
 
-**`Stacks.RelativeSpec.relativeSpecFunctor_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean#L409).
+**`Stacks.RelativeSpec.relativeSpecFunctor_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean#L409).
 
 > The functor associated to a quasi-coherent algebra on a scheme is representable by a
 > scheme.
@@ -229,7 +225,7 @@ theorem relativeSpecFunctor_isRepresentable : (relativeSpecFunctor s).IsRepresen
 
 [Tag 01LV](https://stacks.math.columbia.edu/tag/01LV) in the Stacks Project.
 
-**`Stacks.RelativeSpec.relativeSpecRepresentableBy`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean#L374).
+**`Stacks.RelativeSpec.relativeSpecRepresentableBy`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean#L374).
 
 > The glued relative spectrum represents the relative spectrum functor, with universal element
 > the structure morphism together with the universal algebra map.
@@ -239,7 +235,7 @@ noncomputable def relativeSpecRepresentableBy :
     (relativeSpecFunctor s).RepresentableBy (gluedSpectrum s).scheme
 ```
 
-**`Stacks.RelativeSpec.gluedSpectrumIso_hom_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean#L432). The attribute's comment: “canonical comparison over the base”.
+**`Stacks.RelativeSpec.gluedSpectrumIso_hom_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean#L432). The attribute's comment: “canonical comparison over the base”.
 
 > The canonical comparison between the glued relative spectrum and a scheme representing the
 > relative spectrum functor is a morphism over the base, where the representing scheme carries the
@@ -255,7 +251,7 @@ theorem gluedSpectrumIso_hom_toBase {X : Scheme.{u}}
 
 [Tag 01LW](https://stacks.math.columbia.edu/tag/01LW) in the Stacks Project.
 
-**`Stacks.RelativeSpec.relativeSpecRepresentableBy`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean#L374). The attribute's comment: “the relative spectrum with its universal algebra map”.
+**`Stacks.RelativeSpec.relativeSpecRepresentableBy`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/Representability.lean#L374). The attribute's comment: “the relative spectrum with its universal algebra map”.
 
 > The glued relative spectrum represents the relative spectrum functor, with universal element
 > the structure morphism together with the universal algebra map.
@@ -269,7 +265,7 @@ noncomputable def relativeSpecRepresentableBy :
 
 [Tag 01LX](https://stacks.math.columbia.edu/tag/01LX) in the Stacks Project.
 
-**`Stacks.AffineAlgebraEquivalence.isAffineOpen_preimage_relativeSpecToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineAlgebraEquivalence2/RelativeSpec.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineAlgebraEquivalence2/RelativeSpec.lean#L137). The attribute's comment: “affine\_inverse\_image”. References: SGA 3 I (4.2), “Spec(A) affine over S”.
+**`Stacks.AffineAlgebraEquivalence.isAffineOpen_preimage_relativeSpecToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineAlgebraEquivalence2/RelativeSpec.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineAlgebraEquivalence2/RelativeSpec.lean#L137). The attribute's comment: “affine\_inverse\_image”. References: SGA 3 I (4.2), “Spec(A) affine over S”.
 
 > **Stacks Project, Tag 01LX(1).** The preimage of an affine open of the base in the relative
 > spectrum is affine.
@@ -279,7 +275,7 @@ public theorem isAffineOpen_preimage_relativeSpecToBase (U : S.affineOpens) :
     IsAffineOpen (relativeSpecToBase A ⁻¹ᵁ (U : S.Opens))
 ```
 
-**`Stacks.AffineAlgebraEquivalence.pushforwardAlgebraIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecEssSurj/Basic.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpecEssSurj/Basic.lean#L296). The attribute's comment: “universal\_map\_iso”. References: SGA 3 I (4.2), “A ≅ π\_*O\_Spec(A)”.
+**`Stacks.AffineAlgebraEquivalence.pushforwardAlgebraIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecEssSurj/Basic.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpecEssSurj/Basic.lean#L296). The attribute's comment: “universal\_map\_iso”. References: SGA 3 I (4.2), “A ≅ π\_*O\_Spec(A)”.
 
 > **Stacks Project, Tag 01LX(3).** The isomorphism of sheaves of `𝒪_S`-algebras
 > `(relativeSpecToBase A)_* 𝒪 ≅ A`. Its inverse is the universal map
@@ -290,7 +286,7 @@ public theorem isAffineOpen_preimage_relativeSpecToBase (U : S.affineOpens) :
 public noncomputable def pushforwardAlgebraIso : pushforwardAlgebra (relativeSpecToBase A) ≅ A
 ```
 
-**`Stacks.AffineAlgebraEquivalence.relativeSpecBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecOpenRestriction/RelativeSpecBaseChange.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpecOpenRestriction/RelativeSpecBaseChange.lean#L113). The attribute's comment: “part (2): Spec\_S(A) ×\_S T = Spec\_T(g^*A) for an arbitrary morphism g : T → S”. References: EGA II (1.5.6); SGA 3 III (0.1.7); SGA 3 VIA (2.1.2), “more general”.
+**`Stacks.AffineAlgebraEquivalence.relativeSpecBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecOpenRestriction/RelativeSpecBaseChange.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpecOpenRestriction/RelativeSpecBaseChange.lean#L113). The attribute's comment: “part (2): Spec\_S(A) ×\_S T = Spec\_T(g^*A) for an arbitrary morphism g : T → S”. References: EGA II (1.5.6); SGA 3 III (0.1.7); SGA 3 VIA (2.1.2), “more general”.
 
 > **Stacks Project, Tag 01LX part (2).** For a quasi-coherent sheaf of `𝒪_S`-algebras `A` and
 > an arbitrary morphism of schemes `g : T ⟶ S`, the fibre product
@@ -312,7 +308,7 @@ public noncomputable def relativeSpecBaseChangeIso :
 
 [Tag 01LY](https://stacks.math.columbia.edu/tag/01LY) in the Stacks Project.
 
-**`Stacks.RelativeSpec.AlgebraSheaf.isQuasicoherent_pushforwardAlgebra`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean#L106). The attribute's comment: “quasi-coherence of the pushed-forward algebra”. References: EGA I (4.1.1), “more general”; EGA I (9.2.2), “special case”; EGA IV (11.10.3); EGA IV (21.12.1); EGA IV (3.1.10.2), “special case”; SGA 3 III (0.13), “special case”; SGA 3 VIB (11.0), “special case”.
+**`Stacks.RelativeSpec.AlgebraSheaf.isQuasicoherent_pushforwardAlgebra`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean#L106). The attribute's comment: “quasi-coherence of the pushed-forward algebra”. References: EGA I (4.1.1), “more general”; EGA I (9.2.2), “special case”; EGA IV (11.10.3); EGA IV (21.12.1); EGA IV (3.1.10.2), “special case”; SGA 3 III (0.13), “special case”; SGA 3 VIB (11.0), “special case”.
 
 > For a quasi-compact and quasi-separated morphism of schemes `f : X ⟶ S`, the sheaf of
 > `𝒪_S`-algebras `f_* 𝒪_X` is quasi-coherent.
@@ -325,7 +321,7 @@ instance AlgebraSheaf.isQuasicoherent_pushforwardAlgebra [QuasiCompact f] [Quasi
     AlgebraSheaf.IsQuasicoherent (pushforwardAlgebra f)
 ```
 
-**`Stacks.RelativeSpec.toRelativeSpec`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean#L156). The attribute's comment: “canonical morphism”. References: EGA III (4.3.1).
+**`Stacks.RelativeSpec.toRelativeSpec`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean#L156). The attribute's comment: “canonical morphism”. References: EGA III (4.3.1).
 
 > The canonical morphism `can : X ⟶ Spec_S(f_* 𝒪_X)` from the source of a quasi-compact,
 > quasi-separated morphism to the relative spectrum of the direct image of its structure sheaf. It
@@ -336,7 +332,7 @@ instance AlgebraSheaf.isQuasicoherent_pushforwardAlgebra [QuasiCompact f] [Quasi
 noncomputable def toRelativeSpec : X ⟶ (gluedSpectrum (pushforwardSituation f)).scheme
 ```
 
-**`Stacks.RelativeSpec.toRelativeSpec_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean#L171). The attribute's comment: “morphism over the base”.
+**`Stacks.RelativeSpec.toRelativeSpec_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean#L171). The attribute's comment: “morphism over the base”.
 
 > The canonical morphism to the relative spectrum of `f_* 𝒪_X` is a morphism of schemes over
 > `S`.
@@ -346,7 +342,7 @@ theorem toRelativeSpec_toBase :
     toRelativeSpec f ≫ (gluedSpectrum (pushforwardSituation f)).toBase = f
 ```
 
-**`Stacks.RelativeSpec.ι_toRelativeSpec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean#L192). The attribute's comment: “identification on affine opens”.
+**`Stacks.RelativeSpec.ι_toRelativeSpec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeSpec/CanonicalMorphism.lean#L192). The attribute's comment: “identification on affine opens”.
 
 > Over an affine open `U` of the base, the canonical morphism to the relative spectrum of
 > `f_* 𝒪_X` restricts on `f⁻¹(U)` to the canonical morphism `f⁻¹(U) ⟶ Spec Γ(f⁻¹(U), 𝒪_X)`,
@@ -365,4 +361,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.4, Tag 01LQ](https://stacks.math.columbia.edu/tag/01LQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 80.10 Final bootstrap
 
-Section 80.10 of the Stacks Project, [Tag 04S5](https://stacks.math.columbia.edu/tag/04S5). 1 tag here is carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 80.10 of the Stacks Project, [Tag 04S5](https://stacks.math.columbia.edu/tag/04S5). 1 tag here is carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04S6, a theorem
 
 [Tag 04S6](https://stacks.math.columbia.edu/tag/04S6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_of_diag_of_flat_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrap.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrap.lean#L90). The attribute's comment: “condition (5)”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_of_diag_of_flat_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrap.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrap.lean#L90). The attribute's comment: “condition (5)”.
 
 > **Stacks 04S6, condition (5).** Let `F` be a sheaf on the big fppf site of a scheme `S`
 > whose absolute diagonal is representable by algebraic spaces, and suppose there is an algebraic
@@ -40,7 +40,7 @@ theorem isAlgebraicSpace_of_diag_of_flat_chart
     IsAlgebraicSpace B S hS F
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_of_relativelyRepresentable_diag_of_flat_scheme_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrap.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrap.lean#L115). The attribute's comment: “condition (6)”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_of_relativelyRepresentable_diag_of_flat_scheme_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrap.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrap.lean#L115). The attribute's comment: “condition (6)”.
 
 > **Stacks 04S6, condition (6).** Let `F` be a sheaf on the big fppf site of a scheme `S`
 > whose absolute diagonal is representable, and suppose there is a scheme `U` over `S` and a
@@ -73,7 +73,7 @@ theorem isAlgebraicSpace_of_relativelyRepresentable_diag_of_flat_scheme_chart
     IsAlgebraicSpace B S hS F
 ```
 
-**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_quotient_groupoidInAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean, line 1154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean#L1154). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_quotient_groupoidInAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean, line 1154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean#L1154). The attribute's comment: “part (1)”.
 
 > Condition (1): the quotient of a flat, locally finitely presented
 > equivalence-relation groupoid in algebraic spaces is an algebraic space.
@@ -96,7 +96,7 @@ public theorem isAlgebraicSpace_quotient_groupoidInAlgebraicSpaces
         (AlgebraicGeometry.Space.groupoidPreRelation G)).obj
 ```
 
-**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_of_representable_hasProperty_surjective_flat_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean, line 1413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean#L1413). The attribute's comment: “part (3), surjectivity on base changes”.
+**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_of_representable_hasProperty_surjective_flat_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean, line 1413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean#L1413). The attribute's comment: “part (3), surjectivity on base changes”.
 
 > Condition (3) with surjectivity read, like flatness and local finite presentation, on
 > every scheme-valued base change of `f`.
@@ -125,7 +125,7 @@ public theorem
     AlgebraicGeometry.IsAlgebraicSpace site S hS F
 ```
 
-**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_of_representable_surjective_flat_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean, line 1453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean#L1453). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_of_representable_surjective_flat_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean, line 1453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean#L1453). The attribute's comment: “part (3)”.
 
 > Condition (3): a representable, surjective, flat, locally finitely
 > presented map from an algebraic space presents an algebraic space.
@@ -148,7 +148,7 @@ public theorem isAlgebraicSpace_of_representable_surjective_flat_locallyOfFinite
     AlgebraicGeometry.IsAlgebraicSpace site S hS F
 ```
 
-**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_of_representable_hasProperty_surjective_flat_locallyOfFinitePresentation_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean, line 1476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean#L1476). The attribute's comment: “part (4), surjectivity on base changes”.
+**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_of_representable_hasProperty_surjective_flat_locallyOfFinitePresentation_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean, line 1476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean#L1476). The attribute's comment: “part (4), surjectivity on base changes”.
 
 > Condition (4) with surjectivity read on every scheme-valued base change of `f`:
 > `isAlgebraicSpace_of_representable_hasProperty_surjective_flat_locallyOfFinitePresentation`
@@ -173,7 +173,7 @@ public theorem
     AlgebraicGeometry.IsAlgebraicSpace site S hS F
 ```
 
-**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_of_representable_surjective_flat_locallyOfFinitePresentation_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean, line 1498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean#L1498). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_of_representable_surjective_flat_locallyOfFinitePresentation_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean, line 1498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean#L1498). The attribute's comment: “part (4)”.
 
 > Condition (4): the preceding criterion with a scheme as the source.
 
@@ -194,7 +194,7 @@ public theorem isAlgebraicSpace_of_representable_surjective_flat_locallyOfFinite
     AlgebraicGeometry.IsAlgebraicSpace site S hS F
 ```
 
-**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_of_representableDiagonal_surjective_flat_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean, line 1520](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean#L1520). The attribute's comment: “part (5)”.
+**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_of_representableDiagonal_surjective_flat_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean, line 1520](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean#L1520). The attribute's comment: “part (5)”.
 
 > Condition (5): a sheaf with diagonal representable by algebraic spaces
 > and a surjective flat locally finitely presented algebraic-space presentation
@@ -220,7 +220,7 @@ public theorem isAlgebraicSpace_of_representableDiagonal_surjective_flat_locally
     AlgebraicGeometry.IsAlgebraicSpace site S hS F
 ```
 
-**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_of_representableDiagonal_surjective_flat_locallyOfFinitePresentation_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean, line 1550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean#L1550). The attribute's comment: “part (6)”.
+**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_of_representableDiagonal_surjective_flat_locallyOfFinitePresentation_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean, line 1550](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrapTheorem.lean#L1550). The attribute's comment: “part (6)”.
 
 > Condition (6): a scheme presentation suffices when the diagonal is
 > representable by schemes.
@@ -245,7 +245,7 @@ public theorem
     AlgebraicGeometry.IsAlgebraicSpace site S hS F
 ```
 
-**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_quotientSheaf_groupoidScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FlatRelationQuotient.lean, line 3609](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FlatRelationQuotient.lean#L3609). The attribute's comment: “condition (2): the quotient of a scheme by a flat, locally finitely presented equivalence relation groupoid scheme is an algebraic space”.
+**`AlgebraicGeometry.Bootstrap04S6.isAlgebraicSpace_quotientSheaf_groupoidScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FlatRelationQuotient.lean, line 3612](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FlatRelationQuotient.lean#L3612). The attribute's comment: “condition (2): the quotient of a scheme by a flat, locally finitely presented equivalence relation groupoid scheme is an algebraic space”.
 
 > **Stacks 04S6, condition (2).** Let `(U, R, s, t, c)` be a groupoid scheme over `S` whose
 > object scheme belongs to the big fppf site, such that `s, t` are flat and locally of finite
@@ -266,7 +266,7 @@ theorem isAlgebraicSpace_quotientSheaf_groupoidScheme
         (Over.post site.inclusion) (AlgebraicGeometry.groupoidPreRelation G)).obj
 ```
 
-**`AlgebraicGeometry.Space.bootstrap04S6QuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FlatRelationQuotient.lean, line 3736](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FlatRelationQuotient.lean#L3736). The attribute's comment: “condition (1): the quotient of an algebraic space by a flat, locally finitely presented equivalence relation of algebraic spaces is an algebraic space”.
+**`AlgebraicGeometry.Space.bootstrap04S6QuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FlatRelationQuotient.lean, line 3740](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FlatRelationQuotient.lean#L3740). The attribute's comment: “condition (1): the quotient of an algebraic space by a flat, locally finitely presented equivalence relation of algebraic spaces is an algebraic space”.
 
 > **Stacks 04S6, condition (1).** Let `j : R ⟶ U ×_Z U` be an equivalence relation of
 > algebraic spaces over a presheaf `Z` on the big fppf site of `S`, whose target and source
@@ -285,7 +285,7 @@ theorem bootstrap04S6QuotientSheaf (site : BigFppfSite.{u}) (S : Scheme.{u})
     (hS : site.Contains S) : Bootstrap04S6QuotientSheaf site S hS
 ```
 
-**`AlgebraicGeometry.Space.isBootstrapAlgebraicSpaceAlongFlatSurjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Unconditional.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Unconditional.lean#L51). The attribute's comment: “condition (3): a sheaf with a surjective, flat, locally finitely presented chart from an algebraic space, representable by algebraic spaces, is an algebraic space”.
+**`AlgebraicGeometry.Space.isBootstrapAlgebraicSpaceAlongFlatSurjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Unconditional.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Unconditional.lean#L51). The attribute's comment: “condition (3): a sheaf with a surjective, flat, locally finitely presented chart from an algebraic space, representable by algebraic spaces, is an algebraic space”.
 
 > Let `F` be a sheaf on the big fppf site of `S`, and suppose there are an algebraic space `X`
 > over `S` and a morphism `X ⟶ F` which is representable by algebraic spaces, surjective, flat and
@@ -296,7 +296,7 @@ theorem isBootstrapAlgebraicSpaceAlongFlatSurjection :
     IsBootstrapAlgebraicSpaceAlongFlatSurjection B S hS
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_of_flat_scheme_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Unconditional.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Unconditional.lean#L61). The attribute's comment: “condition (4)”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_of_flat_scheme_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Unconditional.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Unconditional.lean#L61). The attribute's comment: “condition (4)”.
 
 > Let `F` be a sheaf on the big fppf site of `S`, and suppose there are a scheme `U` of the site
 > and a morphism `h_U ⟶ F` which is representable by algebraic spaces (in particular, one
@@ -322,4 +322,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 80.10, Tag 04S5](https://stacks.math.columbia.edu/tag/04S5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

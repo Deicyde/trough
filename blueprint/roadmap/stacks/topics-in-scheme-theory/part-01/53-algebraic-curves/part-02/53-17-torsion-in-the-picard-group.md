@@ -8,13 +8,13 @@ proof: formalized
 
 # 53.17 Torsion in the Picard group
 
-Section 53.17 of the Stacks Project, [Tag 0C1Y](https://stacks.math.columbia.edu/tag/0C1Y). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 53.17 of the Stacks Project, [Tag 0C1Y](https://stacks.math.columbia.edu/tag/0C1Y). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C1Z, a lemma
 
 [Tag 0C1Z](https://stacks.math.columbia.edu/tag/0C1Z) in the Stacks Project.
 
-**`Stacks.Picard.nonempty_torsionBy_addEquiv_pi_zmod_of_smoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/TorsionSmoothProjectiveCurve/Unconditional.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/TorsionSmoothProjectiveCurve/Unconditional.lean#L121). The attribute's comment: “clause (1)”.
+**`Stacks.Picard.nonempty_torsionBy_addEquiv_pi_zmod_of_smoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/TorsionSmoothProjectiveCurve/Unconditional.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/TorsionSmoothProjectiveCurve/Unconditional.lean#L121). The attribute's comment: “clause (1)”.
 
 > **Stacks Project, Tag 0C1Z (1).** Let `k` be an algebraically closed field and `X` a smooth
 > projective curve of genus `g` over `k`. If `n ≥ 1` is invertible in `k`, then
@@ -27,7 +27,7 @@ theorem nonempty_torsionBy_addEquiv_pi_zmod_of_smoothProjectiveCurve (k : Type u
     Nonempty (Submodule.torsionBy ℤ (ofScheme X) (n : ℤ) ≃+ (Fin (2 * genus f) → ZMod n))
 ```
 
-**`Stacks.Picard.exists_rank_torsionBy_prime_pow_addEquiv_pi_zmod_of_smoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/TorsionSmoothProjectiveCurve/Unconditional.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/TorsionSmoothProjectiveCurve/Unconditional.lean#L134). The attribute's comment: “clause (2)”.
+**`Stacks.Picard.exists_rank_torsionBy_prime_pow_addEquiv_pi_zmod_of_smoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/TorsionSmoothProjectiveCurve/Unconditional.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/TorsionSmoothProjectiveCurve/Unconditional.lean#L134). The attribute's comment: “clause (2)”.
 
 > **Stacks Project, Tag 0C1Z (2).** Let `k` be an algebraically closed field of characteristic
 > `p > 0` and `X` a smooth projective curve of genus `g` over `k`. Then there is an integer
@@ -45,7 +45,7 @@ theorem exists_rank_torsionBy_prime_pow_addEquiv_pi_zmod_of_smoothProjectiveCurv
 
 [Tag 0CDU](https://stacks.math.columbia.edu/tag/0CDU) in the Stacks Project.
 
-**`Stacks.Picard.exists_finite_separable_torsionBy_of_genus_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PicardTorsionVisible.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PicardTorsionVisible.lean#L112). The attribute's comment: “(1)”.
+**`Stacks.Picard.exists_finite_separable_torsionBy_of_genus_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PicardTorsionVisible.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/PicardTorsionVisible.lean#L112). The attribute's comment: “(1)”.
 
 > **Stacks Project, Tag 0CDU (1).** Let `k` be a field, let `n` be prime to the characteristic
 > of `k`, and let `X` be a smooth proper curve over `k` with `H⁰(X, 𝒪_X) = k` and of genus `1`.
@@ -67,7 +67,7 @@ theorem exists_finite_separable_torsionBy_of_genus_eq_one [IsCurve k f] [Smooth 
         (Fin 2 → ZMod n))
 ```
 
-**`Stacks.Picard.exists_finite_separable_torsionBy_of_two_le_genus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PicardTorsionVisible.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PicardTorsionVisible.lean#L137). The attribute's comment: “(2)”.
+**`Stacks.Picard.exists_finite_separable_torsionBy_of_two_le_genus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PicardTorsionVisible.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/PicardTorsionVisible.lean#L137). The attribute's comment: “(2)”.
 
 > **Stacks Project, Tag 0CDU (2).** Let `k` be a field, let `n` be prime to the characteristic
 > of `k`, and let `X` be a smooth proper curve over `k` with `H⁰(X, 𝒪_X) = k` and of genus
@@ -94,7 +94,7 @@ theorem exists_finite_separable_torsionBy_of_two_le_genus [IsCurve k f] [Smooth 
 
 [Tag 0C20](https://stacks.math.columbia.edu/tag/0C20) in the Stacks Project.
 
-**`AlgebraicGeometry.finrank_picardTorsion_le_genus_add_geometricGenus_of_isReduced_dim_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/TorsionReducedProperCurve.lean, line 768](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/TorsionReducedProperCurve.lean#L768). The attribute's comment: “the bound dim Pic(X)[l] ≤ g + g\_geom (connectedness not needed)”.
+**`AlgebraicGeometry.finrank_picardTorsion_le_genus_add_geometricGenus_of_isReduced_dim_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/TorsionReducedProperCurve.lean, line 768](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/TorsionReducedProperCurve.lean#L768). The attribute's comment: “the bound dim Pic(X)[l] ≤ g + g\_geom (connectedness not needed)”.
 
 > **Stacks Project, Tag 0C20, the bound.**
 >
@@ -126,7 +126,7 @@ theorem finrank_picardTorsion_le_genus_add_geometricGenus_of_isReduced_dim_one (
         genus (X ↘ Spec (.of k)) + geometricGenus k (X ↘ Spec (.of k))
 ```
 
-**`AlgebraicGeometry.finrank_picardTorsion_eq_iff_forall_isMulticrossSingularity_of_isReduced_dim_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/TorsionReducedProperCurve.lean, line 802](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/TorsionReducedProperCurve.lean#L802). The attribute's comment: “the equality criterion: equality iff all singularities are multicross”.
+**`AlgebraicGeometry.finrank_picardTorsion_eq_iff_forall_isMulticrossSingularity_of_isReduced_dim_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/TorsionReducedProperCurve.lean, line 802](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/TorsionReducedProperCurve.lean#L802). The attribute's comment: “the equality criterion: equality iff all singularities are multicross”.
 
 > **Stacks Project, Tag 0C20, the equality criterion.**
 >
@@ -163,4 +163,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.17, Tag 0C1Y](https://stacks.math.columbia.edu/tag/0C1Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

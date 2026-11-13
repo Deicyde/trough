@@ -8,7 +8,7 @@ proof: formalized
 
 # 10.52 Length
 
-Section 10.52 of the Stacks Project, [Tag 00IU](https://stacks.math.columbia.edu/tag/00IU). 14 tags here are carried by 12 declarations of the repository (all in StacksFrontier) and 11 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.52 of the Stacks Project, [Tag 00IU](https://stacks.math.columbia.edu/tag/00IU). 14 tags here are carried by 12 declarations of the repository (all in StacksFrontier) and 11 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02LY, a definition
 
@@ -16,9 +16,9 @@ Section 10.52 of the Stacks Project, [Tag 00IU](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`Module.length`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.length#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Defs.lean#L29) (StacksFrontier): “the length of a module”. References: EGA IV (3.4.1).
-- [`Module.length_eq_height`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.length_eq_height#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 31](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Defs.lean#L31) (StacksFrontier): “as a supremum over chains of submodules”.
-- [`Module.length_compositionSeries`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.length_compositionSeries#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 32](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Defs.lean#L32) (StacksFrontier): “read off a composition series”.
+- [`Module.length`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.length#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 29](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Defs.lean#L29) (StacksFrontier): “the length of a module”. References: EGA IV (3.4.1).
+- [`Module.length_eq_height`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.length_eq_height#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 31](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Defs.lean#L31) (StacksFrontier): “as a supremum over chains of submodules”.
+- [`Module.length_compositionSeries`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.length_compositionSeries#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 32](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Defs.lean#L32) (StacksFrontier): “read off a composition series”.
 
 ## Tag 02LZ, a lemma
 
@@ -26,9 +26,9 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Module.length_ne_top_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.length_ne_top_iff#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L201) (StacksFrontier): “step 1: length ≠ ⊤ ↔ finite length”.
-- [`isFiniteLength_iff_isNoetherian_isArtinian`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isFiniteLength_iff_isNoetherian_isArtinian#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L202) (StacksFrontier): “step 2: finite length → Noetherian (and Artinian)”. References: SGA 3 VIIB (0.4.2), “more general”.
-- [`Module.IsNoetherian.finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.IsNoetherian.finite#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L204) (StacksFrontier): “step 3: Noetherian → finite”.
+- [`Module.length_ne_top_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.length_ne_top_iff#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L200) (StacksFrontier): “step 1: length ≠ ⊤ ↔ finite length”.
+- [`isFiniteLength_iff_isNoetherian_isArtinian`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isFiniteLength_iff_isNoetherian_isArtinian#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L201) (StacksFrontier): “step 2: finite length → Noetherian (and Artinian)”. References: SGA 3 VIIB (0.4.2), “more general”.
+- [`Module.IsNoetherian.finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.IsNoetherian.finite#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L203) (StacksFrontier): “step 3: Noetherian → finite”.
 
 ## Tag 00IV, a lemma
 
@@ -36,13 +36,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Module.length_eq_add_of_exact`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.length_eq_add_of_exact#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Defs.lean#L39) (StacksFrontier).
+- [`Module.length_eq_add_of_exact`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.length_eq_add_of_exact#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Defs.lean#L39) (StacksFrontier).
 
 ## Tag 00IW, a lemma
 
 [Tag 00IW](https://stacks.math.columbia.edu/tag/00IW) in the Stacks Project.
 
-**`exists_pow_maximalIdeal_smul_eq_bot_of_length_lt_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/Finiteness.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Finiteness.lean#L103).
+**`exists_pow_maximalIdeal_smul_eq_bot_of_length_lt_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/Finiteness.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Finiteness.lean#L103).
 
 > **Stacks 00IW.** For a local ring `R` with maximal ideal `m`, if the `R`-module `M` has
 > finite length then `m ^ n M = 0` for some `n ≥ 0`.
@@ -59,7 +59,7 @@ theorem exists_pow_maximalIdeal_smul_eq_bot_of_length_lt_top
 
 [Tag 00IX](https://stacks.math.columbia.edu/tag/00IX) in the Stacks Project.
 
-**`Module.length_le_length_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/Comparison.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Comparison.lean#L67). The attribute's comment: “(1)”.
+**`Module.length_le_length_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/Comparison.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Comparison.lean#L67). The attribute's comment: “(1)”.
 
 > For a ring map `φ : R → S` and an `S`-module `M`, viewed as an `R`-module by restriction of
 > scalars along `φ`, the length over `R` is at least the length over `S`.
@@ -72,7 +72,7 @@ theorem Module.length_le_length_restrictScalars
     Module.length S M ≤ Module.length R M
 ```
 
-**`length_restrictScalars_eq_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/Comparison.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Comparison.lean#L78). The attribute's comment: “(2)”.
+**`length_restrictScalars_eq_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/Comparison.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Comparison.lean#L78). The attribute's comment: “(2)”.
 
 > For a surjective ring map `φ : R → S` and an `S`-module `M`, viewed as an `R`-module by
 > restriction of scalars along `φ`, the length over `R` equals the length over `S`.
@@ -90,7 +90,7 @@ theorem length_restrictScalars_eq_of_surjective
 
 [Tag 00IY](https://stacks.math.columbia.edu/tag/00IY) in the Stacks Project.
 
-**`length_eq_rank_of_maximal_smul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/Comparison.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Comparison.lean#L129). The attribute's comment: “(1)”.
+**`length_eq_rank_of_maximal_smul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/Comparison.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Comparison.lean#L129). The attribute's comment: “(1)”.
 
 > Length of `M` as an `R`-module equals the dimension of `M` as an
 > `R ⧸ m`-vector space, when `m M = 0` for a maximal ideal `m`.
@@ -106,7 +106,7 @@ theorem length_eq_rank_of_maximal_smul_eq_zero
     Module.length R M = Cardinal.toENat (Module.rank (R ⧸ m) M)
 ```
 
-**`length_lt_top_iff_finite_of_smul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/Comparison.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Comparison.lean#L145). The attribute's comment: “(2)”.
+**`length_lt_top_iff_finite_of_smul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/Comparison.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Comparison.lean#L145). The attribute's comment: “(2)”.
 
 > The length of `M` is finite if and only if `M` is a finite `R`-module,
 > when `m M = 0` for a maximal ideal `m`.
@@ -123,7 +123,7 @@ theorem length_lt_top_iff_finite_of_smul_eq_zero
 
 [Tag 00IZ](https://stacks.math.columbia.edu/tag/00IZ) in the Stacks Project.
 
-**`Module.length_localizedModule_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/Comparison.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Comparison.lean#L194).
+**`Module.length_localizedModule_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/Comparison.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Comparison.lean#L194).
 
 > **Stacks Tag 00IZ.** Let `R` be a ring, `M` an `R`-module, and `S ⊆ R` a multiplicative
 > subset. Then `length_R(M) ≥ length_{S⁻¹R}(S⁻¹M)`.
@@ -137,7 +137,7 @@ theorem Module.length_localizedModule_le :
 
 [Tag 00J0](https://stacks.math.columbia.edu/tag/00J0) in the Stacks Project.
 
-**`length_lt_top_of_pow_smul_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/Finiteness.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Finiteness.lean#L234).
+**`length_lt_top_of_pow_smul_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/Finiteness.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Finiteness.lean#L234).
 
 > **Stacks 00J0.** Let `R` be a commutative ring with finitely generated maximal ideal `m`.
 > If `M` is a finite `R`-module with `m ^ n • M = 0` for some `n`, then `length_R M < ∞`.
@@ -157,8 +157,8 @@ theorem length_lt_top_of_pow_smul_eq_bot
 
 Declarations registered for the tag:
 
-- [`IsSimpleModule`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsSimpleModule#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Defs.lean#L35) (StacksFrontier): “simple modules”.
-- [`isSimpleModule_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isSimpleModule_iff#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Defs.lean#L36) (StacksFrontier): “unfolded”.
+- [`IsSimpleModule`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsSimpleModule#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 35](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Defs.lean#L35) (StacksFrontier): “simple modules”.
+- [`isSimpleModule_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isSimpleModule_iff#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Defs.lean#L36) (StacksFrontier): “unfolded”.
 
 ## Tag 00J2, a lemma
 
@@ -166,41 +166,50 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Module.length_eq_one_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.length_eq_one_iff#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Defs.lean#L42) (StacksFrontier): “simple ↔ length one”.
-- [`isSimpleModule_iff_quot_maximal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isSimpleModule_iff_quot_maximal#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/Defs.lean#L43) (StacksFrontier): “simple ↔ a quotient by a maximal ideal”.
+- [`Module.length_eq_one_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.length_eq_one_iff#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Defs.lean#L42) (StacksFrontier): “simple ↔ length one”.
+- [`isSimpleModule_iff_quot_maximal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isSimpleModule_iff_quot_maximal#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Length/Defs.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/Defs.lean#L43) (StacksFrontier): “simple ↔ a quotient by a maximal ideal”.
 
 ## Tag 00J3, a lemma
 
 [Tag 00J3](https://stacks.math.columbia.edu/tag/00J3) in the Stacks Project.
 
-**`length_eq_and_subQuot_isSimpleModule_and_exists_quot_maximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/CompositionSeries.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/CompositionSeries.lean#L124).
+**`length_eq_and_subQuot_isSimpleModule_and_exists_quot_maximal_and_ncard_eq_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/CompositionSeriesLocalization.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/CompositionSeriesLocalization.lean#L36).
 
-> **Stacks 00J3** (parts 1, 2, 3). For a finite-length `R`-module `M` and a
-> maximal chain `0 = M_0 ⊂ M_1 ⊂ … ⊂ M_n = M` of submodules, we have
+> **Stacks 00J3**. Let `M` be an `R`-module and `0 = M_0 ⊂ M_1 ⊂ … ⊂ M_n = M` a maximal
+> chain of submodules with `M_i ≠ M_{i-1}`. Then
 >
-> * `n = length_R(M)` (length is well-defined on maximal chains);
-> * each successive quotient `M_{i+1}/M_i` is simple;
-> * each successive quotient is isomorphic to `R/𝔪` for some maximal ideal `𝔪`.
+> 1. `n = length_R(M)`;
+> 2. each successive quotient `M_{i+1}/M_i` is simple;
+> 3. each successive quotient is isomorphic to `R/𝔪_i` for some maximal ideal `𝔪_i`;
+> 4. for any choice of such maximal ideals `𝔪_i` (part (3)) and every maximal ideal `𝔪` of `R`,
+>    `#{i | 𝔪_i = 𝔪} = length_{R_𝔪}(M_𝔪)`.
 >
-> Part (4) of Stacks 00J3, which counts the indices `i` with `𝔪_i = 𝔪` in terms of the length
-> of a localization, is not covered by this statement.
+> The source assumes `M` has finite length; this is not needed as a hypothesis, since a finite
+> maximal chain forces it (and part (1) records it). The length in part (1) is `Module.length`
+> in `ℕ∞`, and `M_𝔪`, `R_𝔪` are `LocalizedModule 𝔪.primeCompl M` and
+> `Localization.AtPrime 𝔪`. In part (4) the ideal `𝔪_i` is in fact determined by `M_{i+1}/M_i`
+> (it is its annihilator), so the count does not depend on the choice.
 
 ```lean
-theorem length_eq_and_subQuot_isSimpleModule_and_exists_quot_maximal
+theorem length_eq_and_subQuot_isSimpleModule_and_exists_quot_maximal_and_ncard_eq_length
     {R : Type*} [CommRing R] {M : Type*} [AddCommGroup M] [Module R M]
     {n : ℕ} (M' : Fin (n + 1) → Submodule R M) (hchain : IsMaximalChainPrime M') :
-    ((compositionSeriesOfMaximalChain M' hchain).length : ℕ∞)
-        = Module.length R M ∧
+    (n : ℕ∞) = Module.length R M ∧
       (∀ i : Fin n, IsSimpleModule R (subQuot M' i)) ∧
       (∀ i : Fin n, ∃ (𝔪 : Ideal R) (_ : 𝔪.IsMaximal),
-        Nonempty (subQuot M' i ≃ₗ[R] R ⧸ 𝔪))
+        Nonempty (subQuot M' i ≃ₗ[R] R ⧸ 𝔪)) ∧
+      ∀ 𝔪s : Fin n → Ideal R,
+        (∀ i : Fin n, (𝔪s i).IsMaximal ∧ Nonempty (subQuot M' i ≃ₗ[R] R ⧸ 𝔪s i)) →
+        ∀ (𝔪 : Ideal R) [𝔪.IsMaximal],
+          ({i | 𝔪s i = 𝔪}.ncard : ℕ∞) =
+            Module.length (Localization.AtPrime 𝔪) (LocalizedModule 𝔪.primeCompl M)
 ```
 
 ## Tag 02M0, a lemma
 
 [Tag 02M0](https://stacks.math.columbia.edu/tag/02M0) in the Stacks Project.
 
-**`length_eq_sum_residue_degree_mul_localized_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/SemiLocal.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/SemiLocal.lean#L200). References: EGA IV (21.10.11), “partial”; SGA 3 VIIB (1.2.6), “partial”.
+**`length_eq_sum_residue_degree_mul_localized_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/SemiLocal.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/SemiLocal.lean#L200). References: EGA IV (21.10.11), “partial”; SGA 3 VIIB (1.2.6), “partial”.
 
 > **Stacks 02M0.** Length over a local ring `A` of a finite-length module
 > `M` over a semi-local `A`-algebra `B`, expressed as a sum over the (finitely
@@ -239,7 +248,7 @@ theorem length_eq_sum_residue_degree_mul_localized_length
 
 [Tag 02M1](https://stacks.math.columbia.edu/tag/02M1) in the Stacks Project.
 
-**`length_baseChange_eq_length_mul_length_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/FlatLocalHom.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/FlatLocalHom.lean#L57). References: EGA IV (2.5.5.3); EGA IV (2.5.5.2), “case N = B”; EGA IV (2.5.5.1), “F = structure sheaf”; EGA IV (4.7.1), “more general”; EGA IV (4.7.2), “more general”.
+**`length_baseChange_eq_length_mul_length_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/FlatLocalHom.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/FlatLocalHom.lean#L57). References: EGA IV (2.5.5.3); EGA IV (2.5.5.2), “case N = B”; EGA IV (2.5.5.1), “F = structure sheaf”; EGA IV (4.7.1), “more general”; EGA IV (4.7.2), “more general”.
 
 > For a flat local homomorphism `A → B` of local rings and
 > every `A`-module `M`, the length of `M` over `A` times the length of `B / m_A B` over `B`
@@ -255,7 +264,7 @@ theorem length_baseChange_eq_length_mul_length_quotient
       Module.length B (B ⊗[A] M)
 ```
 
-**`finite_length_iff_finite_length_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/FlatLocalHom.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/FlatLocalHom.lean#L70). References: EGA IV (2.5.5.3), “in particular”; EGA IV (4.7.1).
+**`finite_length_iff_finite_length_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/FlatLocalHom.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/FlatLocalHom.lean#L70). References: EGA IV (2.5.5.3), “in particular”; EGA IV (4.7.1).
 
 > For a flat local homomorphism `A → B` of local rings such that `B / m_A B` has finite length
 > over `B`, an `A`-module `M` has finite length over `A` if and only if its base change `B ⊗[A] M`
@@ -274,7 +283,7 @@ theorem finite_length_iff_finite_length_baseChange
 
 [Tag 02M2](https://stacks.math.columbia.edu/tag/02M2) in the Stacks Project.
 
-**`length_quotient_maximalIdeal_map_mul_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/FlatLocalHom.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/FlatLocalHom.lean#L143). References: EGA IV (2.5.5.1), “special case”; EGA IV (2.5.5.2), “special case”; EGA IV (2.5.5.3), “special case”.
+**`length_quotient_maximalIdeal_map_mul_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/FlatLocalHom.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/FlatLocalHom.lean#L143). References: EGA IV (2.5.5.1), “special case”; EGA IV (2.5.5.2), “special case”; EGA IV (2.5.5.3), “special case”.
 
 > For flat local homomorphisms of local rings `f : A → B` and
 > `g : B → C`, the length of `B / m_A B` over `B` times the length of `C / m_B C`
@@ -297,4 +306,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.52, Tag 00IU](https://stacks.math.columbia.edu/tag/00IU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

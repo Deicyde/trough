@@ -7,7 +7,7 @@ statement: formalized
 
 # Resource-constrained project scheduling
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling/index.html).
 
 ## Instances of resource-constrained project scheduling
 
@@ -17,7 +17,7 @@ $J$ of jobs, each a pair $(p, r) \in \mathbb{N} \times \mathbb{N}$ of a duration
 resource demand $r$; a list $P$ of precedence pairs $(a, b) \in \mathbb{N} \times \mathbb{N}$ of
 job indices; a resource capacity $C \in \mathbb{N}$; and a deadline $D \in \mathbb{N}$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.RCPSP.RCPSPInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/RCPSPWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/RCPSPWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling/index.html#rcpspinstance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.RCPSP.RCPSPInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/RCPSPWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/RCPSPWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling/index.html#rcpspinstance).
 
 ## Well-formed RCPSP instances
 
@@ -26,7 +26,7 @@ $n$ jobs is well formed when every precedence pair $(a, b) \in P$ satisfies $a <
 $a \ne b$, and there is a listing of $0, 1, \dots, n-1$, each exactly once, in which $a$ comes
 before $b$ for every $(a, b) \in P$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.RCPSP.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/RCPSPWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/RCPSPWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.RCPSP.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/RCPSPWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/RCPSPWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling/index.html#well-formed).
 
 ## Feasible RCPSP instances
 
@@ -38,7 +38,7 @@ $j < n$), every precedence pair $(a, b) \in P$ satisfies $s_a + p_a \le s_b$, an
 $t < D$ the total demand of the jobs active at $t$ (the jobs $j < n$ with
 $s_j \le t < s_j + p_j$) is at most $C$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.RCPSP.RCPSPFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/RCPSPWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/RCPSPWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling/index.html#rcpspfeasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.RCPSP.RCPSPFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/RCPSPWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/RCPSPWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling/index.html#rcpspfeasible).
 
 ## Resource-constrained project scheduling as a decision problem
 
@@ -47,7 +47,7 @@ PROJECT SCHEDULING is the decision problem that accepts a bitstring $x$ exactly 
 under the canonical bitstring encoding of RCPSP instances, to an RCPSP instance that is well
 formed and feasible. Bitstrings that do not decode to an instance are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.RCPSP.rcpspDec`, a definition declared in [WantedExt/Complexity/NPComplete/RCPSPWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/RCPSPWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling/index.html#rcpsp-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.RCPSP.rcpspDec`, a definition declared in [WantedExt/Complexity/NPComplete/RCPSPWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/RCPSPWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling/index.html#rcpsp-dec).
 
 ## RESOURCE-CONSTRAINED PROJECT SCHEDULING is NP-complete
 
@@ -59,7 +59,7 @@ polynomial-time many-one reduction to it.
 
 - M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), BIN PACKING; J. Blazewicz, J. K. Lenstra, and A. H. G. Rinnooy Kan, "Scheduling subject to resource constraints: classification and complexity", Discrete Applied Mathematics 5 (1983), 11-24 (classification).
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.RCPSP.rcpsp_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/RCPSPWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/RCPSPWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling/index.html#rcpsp-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.RCPSP.rcpsp_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/RCPSPWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/RCPSPWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling/index.html#rcpsp-np-complete).
 
 ## Depends on
 
@@ -68,4 +68,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Resource-constrained project scheduling](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/scheduling/resource-constrained-project-scheduling)

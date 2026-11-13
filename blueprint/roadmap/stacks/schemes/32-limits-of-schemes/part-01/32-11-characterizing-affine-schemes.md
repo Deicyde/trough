@@ -8,13 +8,13 @@ proof: formalized
 
 # 32.11 Characterizing affine schemes
 
-Section 32.11 of the Stacks Project, [Tag 01ZS](https://stacks.math.columbia.edu/tag/01ZS). 6 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 32.11 of the Stacks Project, [Tag 01ZS](https://stacks.math.columbia.edu/tag/01ZS). 6 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01ZT, a lemma
 
 [Tag 01ZT](https://stacks.math.columbia.edu/tag/01ZT) in the Stacks Project.
 
-**`Stacks.AffineFromFiniteSurjective.isAffine_of_finite_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/AffineFromFiniteSurjective.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/AffineFromFiniteSurjective.lean#L133).
+**`Stacks.AffineFromFiniteSurjective.isAffine_of_finite_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/AffineFromFiniteSurjective.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/AffineFromFiniteSurjective.lean#L133).
 
 > The target of a finite surjective morphism of schemes is affine when
 > its source is affine.
@@ -28,7 +28,7 @@ theorem isAffine_of_finite_surjective {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 05YU](https://stacks.math.columbia.edu/tag/05YU) in the Stacks Project.
 
-**`Stacks.AffineFromUniversallyClosed.isAffine_of_surjective_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/AffineFromSurjectiveUniversallyClosed.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/AffineFromSurjectiveUniversallyClosed.lean#L220).
+**`Stacks.AffineFromUniversallyClosed.isAffine_of_surjective_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/AffineFromSurjectiveUniversallyClosed.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/AffineFromSurjectiveUniversallyClosed.lean#L220).
 
 > **[Stacks, Tag 05YU].** A scheme admitting a surjective universally closed morphism from an
 > affine scheme is affine.
@@ -50,7 +50,7 @@ theorem isAffine_of_surjective_universallyClosed [IsAffine X] [Surjective f]
 
 [Tag 09NL](https://stacks.math.columbia.edu/tag/09NL) in the Stacks Project.
 
-**`Stacks.AffineClosedUnion.isAffine_of_isClosedImmersion_iUnion_of_surjective_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Reduction.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Reduction.lean#L131).
+**`Stacks.AffineClosedUnion.isAffine_of_isClosedImmersion_iUnion_of_surjective_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Reduction.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Reduction.lean#L131).
 
 > **[Stacks, Tag 09NL], granted that global functions lift to the ambient scheme.** A scheme
 > which is set theoretically the union of finitely many affine closed subschemes is affine,
@@ -70,7 +70,7 @@ theorem isAffine_of_isClosedImmersion_iUnion_of_surjective_appTop {ι : Type*} [
     (hlift : Function.Surjective X.nilradical.subschemeι.appTop.hom) : IsAffine X
 ```
 
-**`Stacks.AffineClosedUnion.isAffine_of_surjective_sigmaDesc_of_surjective_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Reduction.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Reduction.lean#L147).
+**`Stacks.AffineClosedUnion.isAffine_of_surjective_sigmaDesc_of_surjective_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Reduction.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Reduction.lean#L147).
 
 > **[Stacks, Tag 09NL] in the tag's own vocabulary, granted that global functions lift to the
 > ambient scheme.** The covering hypothesis is surjectivity of the morphism from the coproduct, as
@@ -87,7 +87,7 @@ theorem isAffine_of_surjective_sigmaDesc_of_surjective_appTop {ι : Type v} [Fin
     (hlift : Function.Surjective X.nilradical.subschemeι.appTop.hom) : IsAffine X
 ```
 
-**`Stacks.AffineClosedUnion.isAffine_of_isClosedImmersion_iUnion_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Unconditional.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Unconditional.lean#L61).
+**`Stacks.AffineClosedUnion.isAffine_of_isClosedImmersion_iUnion_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Unconditional.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Unconditional.lean#L61).
 
 > **[Stacks, Tag 09NL].** A scheme which is set theoretically the union of finitely many
 > affine closed subschemes is affine. Nothing is assumed about the ambient scheme.
@@ -104,7 +104,7 @@ theorem isAffine_of_isClosedImmersion_iUnion_unconditional {ι : Type*} [Finite 
     [∀ i, IsAffine (Z i)] (hcov : ⋃ i, Set.range (f i).base = Set.univ) : IsAffine X
 ```
 
-**`Stacks.AffineClosedUnion.isAffine_of_surjective_sigmaDesc_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Unconditional.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Unconditional.lean#L72).
+**`Stacks.AffineClosedUnion.isAffine_of_surjective_sigmaDesc_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Unconditional.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineClosedUnion/Unconditional.lean#L72).
 
 > **[Stacks, Tag 09NL] in the tag's own vocabulary.** The covering is surjectivity of the
 > morphism from the coproduct of the affine closed subschemes, as the tag states it; it is the
@@ -121,7 +121,7 @@ theorem isAffine_of_surjective_sigmaDesc_unconditional {ι : Type v} [Finite ι]
 
 [Tag 09MW](https://stacks.math.columbia.edu/tag/09MW) in the Stacks Project.
 
-**`Stacks.AmpleThickeningAscent.isAmple_modulePullback_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleThickeningAscent/Basic.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleThickeningAscent/Basic.lean#L66).
+**`Stacks.AmpleThickeningAscent.isAmple_modulePullback_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleThickeningAscent/Basic.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleThickeningAscent/Basic.lean#L66).
 
 > **[Stacks, Tag 09MW].** Let `i : Z ⟶ X` be a closed immersion of schemes inducing a
 > homeomorphism of underlying topological spaces, and `𝓛` an invertible `𝒪_X`-module. Then `i^* 𝓛`
@@ -137,7 +137,7 @@ theorem isAmple_modulePullback_iff {Z X : Scheme.{u}} (i : Z ⟶ X) [IsClosedImm
     IsAmple Z ((modulePullback i.toLRSHom.toShHom).obj L) ↔ IsAmple X L
 ```
 
-**`Stacks.AmpleThickeningLimit.isAmple_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleThickeningLimit/Basic.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleThickeningLimit/Basic.lean#L121). The attribute's comment: “the implication `L` ample ⟹ `i^* L` ample”.
+**`Stacks.AmpleThickeningLimit.isAmple_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleThickeningLimit/Basic.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleThickeningLimit/Basic.lean#L123). The attribute's comment: “the implication `L` ample ⟹ `i^* L` ample”.
 
 > **The implication `L` ample `⟹` `i^* L` ample of [Stacks, Tag 09MW].** For a closed immersion
 > `i : Z ⟶ X` inducing a homeomorphism of underlying spaces and an invertible `𝒪_X`-module `L`,
@@ -162,7 +162,7 @@ theorem isAmple_modulePullback [IsClosedImmersion i] (_hi : IsHomeomorph i.base)
     IsAmple Z ((modulePullback i.toLRSHom.toShHom).obj L)
 ```
 
-**`Stacks.AmpleThickeningLimit.isAmple_modulePullback_iff_of_isHomeomorph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleThickeningLimit/Unconditional.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleThickeningLimit/Unconditional.lean#L213).
+**`Stacks.AmpleThickeningLimit.isAmple_modulePullback_iff_of_isHomeomorph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleThickeningLimit/Unconditional.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleThickeningLimit/Unconditional.lean#L213).
 
 > **[Stacks, Tag 09MW].** Let `i : Z ⟶ X` be a closed immersion of schemes inducing a
 > homeomorphism of underlying topological spaces, and let `L` be an invertible `𝒪_X`-module. Then
@@ -183,7 +183,7 @@ theorem isAmple_modulePullback_iff_of_isHomeomorph [IsClosedImmersion i]
 
 [Tag 0B7L](https://stacks.math.columbia.edu/tag/0B7L) in the Stacks Project.
 
-**`Stacks.Thickenings.isQuasiAffine_of_isQuasiAffine_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Affine.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Affine.lean#L292). The attribute's comment: “the implication: ambient quasi-affine ⟹ closed subscheme quasi-affine”.
+**`Stacks.Thickenings.isQuasiAffine_of_isQuasiAffine_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Affine.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Affine.lean#L293). The attribute's comment: “the implication: ambient quasi-affine ⟹ closed subscheme quasi-affine”.
 
 > **The implication *ambient quasi-affine `⟹` closed subscheme quasi-affine* of
 > [Stacks Project, Tag 0B7L].** If the ambient scheme of a thickening `i : X ⟶ X'` is quasi-affine,
@@ -214,7 +214,7 @@ theorem isQuasiAffine_of_isQuasiAffine_ambient {X X' : Scheme.{u}} {i : X ⟶ X'
     (hi : IsThickening i) (hX' : Scheme.IsQuasiAffine X') : Scheme.IsQuasiAffine X
 ```
 
-**`Stacks.Thickenings.isQuasiAffine_iff_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/QuasiAffineLimit.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/QuasiAffineLimit.lean#L315).
+**`Stacks.Thickenings.isQuasiAffine_iff_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/QuasiAffineLimit.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/QuasiAffineLimit.lean#L315).
 
 > **[Stacks Project, Tag 0B7L].** For a closed immersion inducing a homeomorphism of underlying
 > spaces — equivalently, a surjective closed immersion — the ambient scheme is quasi-affine if and
@@ -235,7 +235,7 @@ theorem isQuasiAffine_iff_of_isThickening {Y Y' : Scheme.{u}} {k : Y ⟶ Y'}
 
 [Tag 0E21](https://stacks.math.columbia.edu/tag/0E21) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.exists_affine_nonvanishingOpen_factorsThrough`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/CommonStage.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/CommonStage.lean#L285).
+**`AlgebraicGeometry.Scheme.Modules.exists_affine_nonvanishingOpen_factorsThrough`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/CommonStage.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/CommonStage.lean#L285).
 
 > **[Stacks, Tag 0E21].**
 >
@@ -275,4 +275,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 32.11, Tag 01ZS](https://stacks.math.columbia.edu/tag/01ZS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

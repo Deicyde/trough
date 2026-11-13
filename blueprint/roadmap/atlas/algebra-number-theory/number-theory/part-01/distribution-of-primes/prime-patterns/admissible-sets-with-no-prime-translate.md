@@ -7,7 +7,7 @@ statement: formalized
 
 # Admissible sets with no prime translate
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-patterns/admissible-sets-with-no-prime-translate/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-patterns/admissible-sets-with-no-prime-translate/index.html).
 
 ## Sparse admissible sets without prime translates (Erdős Problem 429)
 
@@ -21,7 +21,7 @@ Resolved false: Disproved by Weisenberg (2024); ported as a formal statement. So
 Weisenberg, Sparse Admissible Sets and a Problem of Erdős and Graham, Integers (2024). Moved
 from `OpenConjectures/NumberTheory/ErdosProblem429`.
 
-Stated but not proved: `MathlibExt.NumberTheory.ErdosProblem429Wanted.erdos429_refuted` is written with `theorem_wanted` in [WantedExt/NumberTheory/ErdosProblem429Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ErdosProblem429Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-patterns/admissible-sets-with-no-prime-translate/index.html#erdos429-refuted).
+Stated but not proved: `MathlibExt.NumberTheory.ErdosProblem429Wanted.erdos429_refuted` is written with `theorem_wanted` in [WantedExt/NumberTheory/ErdosProblem429Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ErdosProblem429Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-patterns/admissible-sets-with-no-prime-translate/index.html#erdos429-refuted).
 
 ## Sparse subsets of powers with no prime translate
 
@@ -39,7 +39,7 @@ which meet both residue classes modulo $2$.
 
 - Desmond Weisenberg, *Sparse Admissible Sets and a Problem of Erdős and Graham*, INTEGERS 24 (2024), Article A89, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.exists_sparse_subset_pow_no_prime_translate` is written with `theorem_wanted` in [WantedExt/NumberTheory/SparseAdmissiblePowerSetsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SparseAdmissiblePowerSetsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-patterns/admissible-sets-with-no-prime-translate/index.html#exists-sparse-subset-pow-no-prime-transl).
+Stated but not proved: `MetaMathlibExt.exists_sparse_subset_pow_no_prime_translate` is written with `theorem_wanted` in [WantedExt/NumberTheory/SparseAdmissiblePowerSetsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SparseAdmissiblePowerSetsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-patterns/admissible-sets-with-no-prime-translate/index.html#exists-sparse-subset-pow-no-prime-transl).
 
 ## Depends on
 
@@ -48,4 +48,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Admissible sets with no prime translate](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-patterns/admissible-sets-with-no-prime-translate/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-patterns/admissible-sets-with-no-prime-translate)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-patterns/admissible-sets-with-no-prime-translate)

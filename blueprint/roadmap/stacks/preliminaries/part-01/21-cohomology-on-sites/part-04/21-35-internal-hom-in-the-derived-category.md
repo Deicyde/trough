@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.35 Internal hom in the derived category
 
-Section 21.35 of the Stacks Project, [Tag 08J7](https://stacks.math.columbia.edu/tag/08J7). 13 tags here are carried by 57 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.35 of the Stacks Project, [Tag 08J7](https://stacks.math.columbia.edu/tag/08J7). 13 tags here are carried by 57 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08J8, an equation
 
 [Tag 08J8](https://stacks.math.columbia.edu/tag/08J8) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.derivedCurrySectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/TensorHomSectionsCurrying.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/TensorHomSectionsCurrying.lean#L142). The attribute's comment: “the bijection of morphism groups over an object of the site”.
+**`AlgebraicGeometry.RingedSite.derivedCurrySectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/TensorHomSectionsCurrying.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/TensorHomSectionsCurrying.lean#L142). The attribute's comment: “the bijection of morphism groups over an object of the site”.
 
 > **The tensor–internal-Hom bijection of [Stacks, Tag 08J8] over an object `U` of the site.**
 > Morphisms `K|_U ⟶ RSheafHom(B, Z)|_U` are morphisms `(K ⊗^L_O B)|_U ⟶ Z|_U`.
@@ -38,7 +38,7 @@ def derivedCurrySectionsEquiv
             U).mapDerivedCategory.obj Z)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCurrySectionsEquiv_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/TensorHomSectionsCurrying.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/TensorHomSectionsCurrying.lean#L222). The attribute's comment: “the bijection over an object of the site restricts the global one”.
+**`AlgebraicGeometry.RingedSite.derivedCurrySectionsEquiv_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/TensorHomSectionsCurrying.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/TensorHomSectionsCurrying.lean#L222). The attribute's comment: “the bijection over an object of the site restricts the global one”.
 
 > **The bijection of [Stacks, Tag 08J8] over `U` is the restriction of the bijection over
 > `C`.**  For `g : K ⟶ RSheafHom(B, Z)` the morphism `(K ⊗^L_O B)|_U ⟶ Z|_U` matched with `g|_U`
@@ -60,7 +60,7 @@ theorem derivedCurrySectionsEquiv_restriction
         (derivedCurryHomEquiv X K B Z g)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCurrySectionsEquiv_naturality_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/TensorHomSectionsCurrying.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/TensorHomSectionsCurrying.lean#L343). The attribute's comment: “functoriality in the source, over an object of the site”.
+**`AlgebraicGeometry.RingedSite.derivedCurrySectionsEquiv_naturality_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/TensorHomSectionsCurrying.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/TensorHomSectionsCurrying.lean#L343). The attribute's comment: “functoriality in the source, over an object of the site”.
 
 > **The bijection of [Stacks, Tag 08J8] over `U` is natural in its source variable.**  For a
 > morphism `u : K' ⟶ K` of `D(O)`, precomposing a morphism `K|_U ⟶ RSheafHom(B, Z)|_U` with `u|_U`
@@ -85,7 +85,7 @@ theorem derivedCurrySectionsEquiv_naturality_source
         derivedCurrySectionsEquiv X U K B Z h
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrying.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrying.lean#L221). The attribute's comment: “the tensor-internal-Hom bijection of morphism groups”.
+**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrying.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrying.lean#L221). The attribute's comment: “the tensor-internal-Hom bijection of morphism groups”.
 
 > **The tensor–internal-Hom isomorphism of morphism groups**, Stacks 08J8 as 08J9 gives it:
 > morphisms `K ⟶ RSheafHom(L, M)` in `D(O)` are morphisms `K ⊗^L_O L ⟶ M`.
@@ -99,7 +99,7 @@ def derivedCurryHomEquiv :
       (((Stacks.SheafOfModules.derivedTensorProductFunctor X).obj K).obj L ⟶ M)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingCounitFormula.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingCounitFormula.lean#L83). The attribute's comment: “the bijection is tensoring with the identity followed by the evaluation morphism”.
+**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingCounitFormula.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingCounitFormula.lean#L83). The attribute's comment: “the bijection is tensoring with the identity followed by the evaluation morphism”.
 
 > **The tensor–internal-Hom bijection is tensoring and then evaluating.** For objects `K`, `A`,
 > `B` of `D(O)` it carries `g : K ⟶ RSheafHom(A, B)` to
@@ -118,7 +118,7 @@ theorem derivedCurryHomEquiv_apply
         derivedSheafHomCounit Y A B
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingHomEquivNaturality.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingHomEquivNaturality.lean#L73). The attribute's comment: “naturality of the tensor-internal-Hom bijection in all three objects”.
+**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingHomEquivNaturality.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingHomEquivNaturality.lean#L73). The attribute's comment: “naturality of the tensor-internal-Hom bijection in all three objects”.
 
 > **The tensor–internal-Hom bijection of Stacks 08J8 is natural in all three objects.** For
 > morphisms `k : K' ⟶ K`, `l : L' ⟶ L` and `m : M ⟶ M'` of `D(O)`, the bijection carries a
@@ -140,7 +140,7 @@ theorem derivedCurryHomEquiv_naturality
         derivedCurryHomEquiv X K L M θ ≫ m
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv_dinaturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingInternalHomNaturality.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingInternalHomNaturality.lean#L136). The attribute's comment: “dinaturality of the bijection of morphism groups in the internal-Hom variable”.
+**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv_dinaturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingInternalHomNaturality.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingInternalHomNaturality.lean#L136). The attribute's comment: “dinaturality of the bijection of morphism groups in the internal-Hom variable”.
 
 > **Stacks 08J8, dinaturality in the internal-Hom variable.** Postcomposing a morphism
 > `h : A ⟶ RSheafHom(B, Z)` with the map `RSheafHom(B, Z) ⟶ RSheafHom(B', Z)` induced by
@@ -162,7 +162,7 @@ theorem derivedCurryHomEquiv_dinaturality
         derivedCurryHomEquiv X A B Z h
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv_naturality_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrySourceNaturality.lean, line 537](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrySourceNaturality.lean#L537). The attribute's comment: “the tensor-internal-Hom bijection is natural in the source variable”.
+**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv_naturality_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrySourceNaturality.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrySourceNaturality.lean#L537). The attribute's comment: “the tensor-internal-Hom bijection is natural in the source variable”.
 
 > **Stacks 08J8 is natural in its source variable.** Precomposing a morphism
 > `h : A ⟶ RSheafHom(B, Z)` with `u : A' ⟶ A` corresponds, under the tensor-internal-Hom
@@ -185,7 +185,7 @@ theorem derivedCurryHomEquiv_naturality_source
         derivedCurryHomEquiv X A B Z h
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv_naturality_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryTargetNaturality.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryTargetNaturality.lean#L275). The attribute's comment: “the tensor-internal-Hom bijection is natural in the target variable”.
+**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv_naturality_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryTargetNaturality.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryTargetNaturality.lean#L275). The attribute's comment: “the tensor-internal-Hom bijection is natural in the target variable”.
 
 > **Stacks 08J8 is natural in its target variable.** Postcomposing a morphism
 > `h : A ⟶ RSheafHom(B, Z)` with `RSheafHom(B, w)`, for `w : Z ⟶ Z'`, corresponds under the
@@ -207,7 +207,7 @@ theorem derivedCurryHomEquiv_naturality_target
       derivedCurryHomEquiv X A B Z h ≫ w
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedTensorSheafHomAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryTargetNaturality.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryTargetNaturality.lean#L314). The attribute's comment: “the tensor-internal-Hom bijection as an adjunction, at a fixed middle object”.
+**`AlgebraicGeometry.RingedSite.derivedTensorSheafHomAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryTargetNaturality.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryTargetNaturality.lean#L314). The attribute's comment: “the tensor-internal-Hom bijection as an adjunction, at a fixed middle object”.
 
 > **Stacks 08J8 as an adjunction.** For an object `B` of `D(O)`, the derived tensor product
 > with `B` is left adjoint to the derived internal Hom out of `B`:
@@ -225,7 +225,7 @@ def derivedTensorSheafHomAdjunction
       (derivedSheafHomBifunctor X).obj (op B)
 ```
 
-**`Stacks.Cohomology.DerivedInternalHomPullback.tensorHomEquivDinatural_ringedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackDinaturality.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackDinaturality.lean#L284). The attribute's comment: “dinaturality of the bijection of morphism groups of Tag 08DI in its internal-hom variable, read on a ringed space at the uncurried spelling of the derived tensor product; the companion clause in the source variable is tensorHomEquivNaturalLeft\_ringedSpace”.
+**`Stacks.Cohomology.DerivedInternalHomPullback.tensorHomEquivDinatural_ringedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackDinaturality.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackDinaturality.lean#L284). The attribute's comment: “dinaturality of the bijection of morphism groups of Tag 08DI in its internal-hom variable, read on a ringed space at the uncurried spelling of the derived tensor product; the companion clause in the source variable is tensorHomEquivNaturalLeft\_ringedSpace”.
 
 > **The bijection of Tag 08DI on a ringed space is dinatural in its internal-hom variable.**
 > This is `Transpose.TensorHomEquivDinatural` for the bijection of Tag 08DI, the companion of
@@ -254,7 +254,7 @@ theorem tensorHomEquivDinatural_ringedSpace :
 
 [Tag 08JA](https://stacks.math.columbia.edu/tag/08JA) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.derivedSheafHomGlobalSectionsEquiv_naturality_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrySourceNaturality.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrySourceNaturality.lean#L446). The attribute's comment: “global sections, naturality in the source variable”.
+**`AlgebraicGeometry.RingedSite.derivedSheafHomGlobalSectionsEquiv_naturality_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrySourceNaturality.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrySourceNaturality.lean#L446). The attribute's comment: “global sections, naturality in the source variable”.
 
 > **Stacks 08JA globally is natural in the source variable, for an arbitrary morphism of
 > `D(O)`**: the identification of the degree-zero global hypercohomology of `RSheafHom(L, M)`
@@ -276,7 +276,7 @@ theorem derivedSheafHomGlobalSectionsEquiv_naturality_source
       u ≫ derivedSheafHomGlobalSectionsEquiv X A W x
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedSheafHomGlobalSectionsEquiv_naturality_target_globalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryTargetNaturality.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryTargetNaturality.lean#L168). The attribute's comment: “global sections, naturality in the target variable”.
+**`AlgebraicGeometry.RingedSite.derivedSheafHomGlobalSectionsEquiv_naturality_target_globalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryTargetNaturality.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryTargetNaturality.lean#L168). The attribute's comment: “global sections, naturality in the target variable”.
 
 > **Stacks 08JA globally is natural in the target variable, for an arbitrary morphism of
 > `D(O)`**: the identification of the degree-zero global hypercohomology of `RSheafHom(A, W)`
@@ -298,7 +298,7 @@ theorem derivedSheafHomGlobalSectionsEquiv_naturality_target_globalMap
       derivedSheafHomGlobalSectionsEquiv X A W x ≫ v
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedSheafHomGlobalSectionsEquiv_naturality_bifunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsNaturality.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsNaturality.lean#L239). The attribute's comment: “global sections, naturality in both variables”.
+**`AlgebraicGeometry.RingedSite.derivedSheafHomGlobalSectionsEquiv_naturality_bifunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsNaturality.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsNaturality.lean#L239). The attribute's comment: “global sections, naturality in both variables”.
 
 > **Stacks 08JA globally is natural in both variables.** For arbitrary morphisms `f : L' ⟶ L`
 > and `g : M ⟶ M'` of `D(O)`, the identification of the degree-zero global hypercohomology of
@@ -321,7 +321,7 @@ theorem derivedSheafHomGlobalSectionsEquiv_naturality_bifunctor
       f ≫ derivedSheafHomGlobalSectionsEquiv X L M z ≫ g
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedSheafHomGlobalSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsOnDerivedObjects.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsOnDerivedObjects.lean#L227). The attribute's comment: “global sections”. References: SGA 6 I (8.1), “partial”.
+**`AlgebraicGeometry.RingedSite.derivedSheafHomGlobalSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsOnDerivedObjects.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsOnDerivedObjects.lean#L227). The attribute's comment: “global sections”. References: SGA 6 I (8.1), “partial”.
 
 > **Stacks 08JA globally.** For arbitrary objects `L`, `M` of `D(O)` the degree-zero global
 > hypercohomology of the derived internal Hom `RSheafHom(L, M)` is the group of morphisms
@@ -340,7 +340,7 @@ def derivedSheafHomGlobalSectionsEquiv
           (((derivedSheafHomBifunctor X).obj (op L)).obj M)) : Type u) ≃+ (L ⟶ M)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedSheafHomSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsOnDerivedObjects.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsOnDerivedObjects.lean#L269). The attribute's comment: “sections over an object”.
+**`AlgebraicGeometry.RingedSite.derivedSheafHomSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsOnDerivedObjects.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsOnDerivedObjects.lean#L269). The attribute's comment: “sections over an object”.
 
 > **Stacks 08JA over an object of the site.** For arbitrary objects `L`, `M` of `D(O)` the
 > degree-zero hypercohomology over `U` of the derived internal Hom `RSheafHom(L, M)` is the
@@ -363,7 +363,7 @@ def derivedSheafHomSectionsEquiv
           (Stacks.SheafOfModules.Tensor.ringSheaf X.O) U).mapDerivedCategory.obj M)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedSheafHomSectionsEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsOverAnObjectNaturality.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsOverAnObjectNaturality.lean#L475). The attribute's comment: “sections over an object, naturality in both variables”.
+**`AlgebraicGeometry.RingedSite.derivedSheafHomSectionsEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsOverAnObjectNaturality.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsOverAnObjectNaturality.lean#L475). The attribute's comment: “sections over an object, naturality in both variables”.
 
 > **Stacks 08JA over an object of the site is natural in both variables.** For arbitrary
 > morphisms `f : L' ⟶ L` and `g : M ⟶ M'` of `D(O)`, the identification of the degree-zero
@@ -393,7 +393,7 @@ theorem derivedSheafHomSectionsEquiv_naturality
             U).mapDerivedCategory.map g
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedSheafHomGlobalSectionsEquiv_naturality_source_homologyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsSourceNaturality.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsSourceNaturality.lean#L421). The attribute's comment: “global sections, naturality in the source”.
+**`AlgebraicGeometry.RingedSite.derivedSheafHomGlobalSectionsEquiv_naturality_source_homologyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsSourceNaturality.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsSourceNaturality.lean#L414). The attribute's comment: “global sections, naturality in the source”.
 
 > **Stacks 08JA, naturality in the source variable.** For objects `L'`, `L`, `M` of `D(O)` and
 > an arbitrary morphism `u : L' ⟶ L`, the identification of the degree-zero global
@@ -415,7 +415,7 @@ theorem derivedSheafHomGlobalSectionsEquiv_naturality_source_homologyMap
       u ≫ derivedSheafHomGlobalSectionsEquiv X L M x
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedSheafHomGlobalSectionsEquiv_naturality_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsTargetNaturality.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsTargetNaturality.lean#L326). The attribute's comment: “global sections, naturality in the target”.
+**`AlgebraicGeometry.RingedSite.derivedSheafHomGlobalSectionsEquiv_naturality_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsTargetNaturality.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsTargetNaturality.lean#L338). The attribute's comment: “global sections, naturality in the target”.
 
 > **Stacks 08JA, naturality in the target variable.** For objects `L`, `M`, `M'` of `D(O)` and
 > an arbitrary morphism `φ : M ⟶ M'`, the identification of the degree-zero global
@@ -437,7 +437,7 @@ theorem derivedSheafHomGlobalSectionsEquiv_naturality_target
       derivedSheafHomGlobalSectionsEquiv X L M x ≫ φ
 ```
 
-**`AlgebraicGeometry.RingedSite.globalDerivedHomDegreeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/GlobalDerivedHomShift.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/GlobalDerivedHomShift.lean#L186). The attribute's comment: “global sections in every degree, via the translation in the covariant variable”.
+**`AlgebraicGeometry.RingedSite.globalDerivedHomDegreeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/GlobalDerivedHomShift.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/GlobalDerivedHomShift.lean#L186). The attribute's comment: “global sections in every degree, via the translation in the covariant variable”.
 
 > **Stacks 0B6E, the cohomology of the global derived hom in every degree.** The degree-`n`
 > cohomology of `RHom_O(K, L)` is the group of morphisms `K ⟶ L[n]` in `D(O)`, that is the
@@ -459,7 +459,7 @@ def globalDerivedHomDegreeEquiv
         (((globalDerivedHom X).obj (op K)).obj L) : Type u) ≃+ (K ⟶ L⟦n⟧)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedStructureSheafGlobalSectionsDegreeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/StructureSheafHypercohomology.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/StructureSheafHypercohomology.lean#L72). The attribute's comment: “hypercohomology out of the structure sheaf in every degree”.
+**`AlgebraicGeometry.RingedSite.derivedStructureSheafGlobalSectionsDegreeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/StructureSheafHypercohomology.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/StructureSheafHypercohomology.lean#L72). The attribute's comment: “hypercohomology out of the structure sheaf in every degree”.
 
 > **Hypercohomology in every degree is morphisms out of the structure sheaf.** For an object
 > `Z` of `D(O)` the hypercohomology group `H^n(C, Z)`, the degree-`n` homology of unbounded derived
@@ -480,7 +480,7 @@ def derivedStructureSheafGlobalSectionsDegreeEquiv
       (derivedStructureSheaf X ⟶ Z⟦n⟧)
 ```
 
-**`Stacks.SheafOfModules.derivedStructureSheafGlobalSectionsDegreeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StructureSheafHypercohomologyOnASpace.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StructureSheafHypercohomologyOnASpace.lean#L57). The attribute's comment: “hypercohomology of a ringed space out of the structure sheaf in every degree”.
+**`Stacks.SheafOfModules.derivedStructureSheafGlobalSectionsDegreeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StructureSheafHypercohomologyOnASpace.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StructureSheafHypercohomologyOnASpace.lean#L57). The attribute's comment: “hypercohomology of a ringed space out of the structure sheaf in every degree”.
 
 > **Hypercohomology of a ringed space in every degree is morphisms out of the structure
 > sheaf.** For an object `Z` of `D(O_X)` the hypercohomology group `H^n(X, Z)`, the degree-`n`
@@ -501,7 +501,7 @@ def derivedStructureSheafGlobalSectionsDegreeEquiv
 
 [Tag 08J9](https://stacks.math.columbia.edu/tag/08J9) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrying.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrying.lean#L235). The attribute's comment: “recovers the morphism-group bijection on H^0”.
+**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrying.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrying.lean#L235). The attribute's comment: “recovers the morphism-group bijection on H^0”.
 
 > **The isomorphism of morphism groups is the derived currying isomorphism on global
 > hypercohomology.** This is the last assertion of Stacks 08J9: taking degree-zero global
@@ -522,7 +522,7 @@ theorem derivedCurryHomEquiv_globalSections
         (derivedCurryGlobalEquiv X K L M x)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv_globalSections_homologyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrying.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrying.lean#L252). The attribute's comment: “recovers the morphism-group bijection on H^0”.
+**`AlgebraicGeometry.RingedSite.derivedCurryHomEquiv_globalSections_homologyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrying.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurrying.lean#L252). The attribute's comment: “recovers the morphism-group bijection on H^0”.
 
 > `derivedCurryHomEquiv_globalSections` with the additive equivalence
 > `derivedCurryGlobalEquiv` spelled out as the map induced by `derivedCurryIso`.
@@ -542,7 +542,7 @@ theorem derivedCurryHomEquiv_globalSections_homologyMap
           ((derivedModuleGlobalSections X).map (derivedCurryIso X K L M).hom) x)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCurryNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingNaturality.lean, line 514](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingNaturality.lean#L514). The attribute's comment: “functoriality in all three objects”. References: SGA 6 I (7.4), “first isomorphism”.
+**`AlgebraicGeometry.RingedSite.derivedCurryNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingNaturality.lean, line 514](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingNaturality.lean#L514). The attribute's comment: “functoriality in all three objects”. References: SGA 6 I (7.4), “first isomorphism”.
 
 > **Stacks 08J9: the derived currying isomorphism is a natural isomorphism.** The canonical
 > isomorphism
@@ -558,7 +558,7 @@ theorem derivedCurryHomEquiv_globalSections_homologyMap
 def derivedCurryNatIso : iteratedHomFunctor X ≅ tensorHomFunctor X
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCurryIso_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingNaturality.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingNaturality.lean#L559). The attribute's comment: “functoriality in all three objects”. References: SGA 6 I (7.4), “functoriality, 1st iso”.
+**`AlgebraicGeometry.RingedSite.derivedCurryIso_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingNaturality.lean, line 559](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingNaturality.lean#L559). The attribute's comment: “functoriality in all three objects”. References: SGA 6 I (7.4), “functoriality, 1st iso”.
 
 > **Functoriality of the derived currying isomorphism in all three objects.** For morphisms
 > `k : K' ⟶ K`, `l : L' ⟶ L` and `m : M ⟶ M'` of `D(O)` the square formed by `derivedCurryIso`
@@ -585,7 +585,7 @@ theorem derivedCurryIso_natural
               m
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCurryIso_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingNaturality.lean, line 604](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingNaturality.lean#L604). The attribute's comment: “comparison with currying of complexes”.
+**`AlgebraicGeometry.RingedSite.derivedCurryIso_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingNaturality.lean, line 604](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCurryingNaturality.lean#L604). The attribute's comment: “comparison with currying of complexes”.
 
 > **The comparison of Stacks 08J9 with the currying isomorphism of complexes of Stacks
 > 0A90.** For complexes `A`, `B`, `I` with `B` K-flat and `I` K-injective, `derivedCurryIso` on
@@ -612,7 +612,7 @@ theorem derivedCurryIso_comparison
 
 [Tag 08JB](https://stacks.math.columbia.edu/tag/08JB) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.DerivedHomRestriction.complexMap_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean, line 727](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean#L727). The attribute's comment: “restriction on local homogeneous cochains”.
+**`AlgebraicGeometry.RingedSite.DerivedHomRestriction.complexMap_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean, line 727](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean#L727). The attribute's comment: “restriction on local homogeneous cochains”.
 
 > The component of the complex map restricts each local homogeneous map
 > along the iterated slice, as in the canonical comparison of Tag 0E8H.
@@ -635,7 +635,7 @@ theorem DerivedHomRestriction.complexMap_apply
           (op (Over.mk W.unop.hom.left)) x)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedHom_restriction_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean, line 809](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean#L809).
+**`AlgebraicGeometry.RingedSite.derivedHom_restriction_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean, line 809](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean#L809).
 
 > Derived internal Hom commutes, naturally in both arguments, with
 > restriction to the slice site over any object.
@@ -645,7 +645,7 @@ theorem derivedHom_restriction_exists :
     Nonempty (DerivedHomRestriction X U)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedHomRestriction_complexMap_isRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean, line 864](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean#L864). The attribute's comment: “restriction of internal-Hom complexes”.
+**`AlgebraicGeometry.RingedSite.derivedHomRestriction_complexMap_isRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean, line 864](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean#L864). The attribute's comment: “restriction of internal-Hom complexes”.
 
 > Restriction of internal-Hom complexes is induced on every homogeneous
 > component by the canonical internal-Hom restriction isomorphism of Tag 0E8H.
@@ -657,7 +657,7 @@ theorem derivedHomRestriction_complexMap_isRestriction
       ((derivedHomRestriction X U).complexMap A B)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedHomRestriction_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean, line 874](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean#L874). The attribute's comment: “canonical model characterization”.
+**`AlgebraicGeometry.RingedSite.derivedHomRestriction_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean, line 874](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomRestriction.lean#L874). The attribute's comment: “canonical model characterization”.
 
 > Under the fixed K-injective and exact-restriction comparisons, the full
 > derived comparison is the localization of the restriction map of internal-Hom
@@ -677,7 +677,7 @@ theorem derivedHomRestriction_model
 
 [Tag 08JC](https://stacks.math.columbia.edu/tag/08JC) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.exists_distinguished_derivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomTriangulated.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomTriangulated.lean#L174). The attribute's comment: “contravariant variable”.
+**`AlgebraicGeometry.RingedSite.exists_distinguished_derivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomTriangulated.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomTriangulated.lean#L174). The attribute's comment: “contravariant variable”.
 
 > **Stacks 08JC, contravariant variable.**  The derived internal Hom into a fixed object carries
 > a distinguished triangle of `D(O)` to a distinguished triangle: for any distinguished `T` and any
@@ -704,7 +704,7 @@ theorem exists_distinguished_derivedSheafHom
           (DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)))
 ```
 
-**`AlgebraicGeometry.RingedSite.exists_distinguished_derivedSheafHom_second`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/Exactness.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/Exactness.lean#L176). The attribute's comment: “covariant variable”.
+**`AlgebraicGeometry.RingedSite.exists_distinguished_derivedSheafHom_second`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/Exactness.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/Exactness.lean#L176). The attribute's comment: “covariant variable”.
 
 > The derived internal Hom out of a fixed object carries a distinguished triangle of `D(O)` to
 > a distinguished triangle: for any distinguished `T` and any `E`, the two morphisms
@@ -731,7 +731,7 @@ theorem exists_distinguished_derivedSheafHom_second
 
 [Tag 0A97](https://stacks.math.columbia.edu/tag/0A97) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.derivedEvaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedEvaluation.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedEvaluation.lean#L505). The attribute's comment: “the canonical evaluation morphism”.
+**`AlgebraicGeometry.RingedSite.derivedEvaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedEvaluation.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedEvaluation.lean#L505). The attribute's comment: “the canonical evaluation morphism”.
 
 > **Stacks 0A97: the canonical evaluation morphism of derived internal Homs.** For arbitrary
 > objects `K`, `L`, `M` of `D(Mod(O))` there is a canonical morphism
@@ -747,7 +747,7 @@ def derivedEvaluation
         (op (((derivedInternalHomFunctor.{u, d} X).obj (op K)).obj L))).obj M
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedEvaluation_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedEvaluation.lean, line 517](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedEvaluation.lean#L517). The attribute's comment: “comparison with evaluation of complexes”.
+**`AlgebraicGeometry.RingedSite.derivedEvaluation_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedEvaluation.lean, line 517](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedEvaluation.lean#L517). The attribute's comment: “comparison with evaluation of complexes”.
 
 > **Stacks 0A97.** On a K-flat source and K-injective targets, the canonical evaluation
 > morphism is the class of the evaluation morphism of internal Hom complexes of Stacks 0A92.
@@ -766,7 +766,7 @@ theorem derivedEvaluation_model
         DerivedCategory.Q.map (evaluationMap X A B C)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedEvaluation_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedEvaluation.lean, line 533](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedEvaluation.lean#L533). The attribute's comment: “functoriality in all three objects”.
+**`AlgebraicGeometry.RingedSite.derivedEvaluation_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedEvaluation.lean, line 533](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedEvaluation.lean#L533). The attribute's comment: “functoriality in all three objects”.
 
 > **Stacks 0A97.** The canonical evaluation morphism is natural in the source object and in
 > the target object, and contranatural in the intermediate object.
@@ -794,7 +794,7 @@ theorem derivedEvaluation_natural
 
 [Tag 0A98](https://stacks.math.columbia.edu/tag/0A98) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.derivedSheafHomCompositionConstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCompositionConstruction.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCompositionConstruction.lean#L263).
+**`AlgebraicGeometry.RingedSite.derivedSheafHomCompositionConstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCompositionConstruction.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedCompositionConstruction.lean#L263).
 
 > **Stacks 0A98: the composition morphism of derived internal Homs.** For arbitrary objects
 > `K`, `L`, `M` of `D(Mod(O))` there is a canonical morphism
@@ -813,7 +813,7 @@ def derivedSheafHomCompositionConstruction : DerivedSheafHomComposition X T Hd
 
 [Tag 0BYU](https://stacks.math.columbia.edu/tag/0BYU) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.derivedTensorHomInterchange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorHomInterchange.lean, line 568](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorHomInterchange.lean#L568). The attribute's comment: “the canonical morphism”.
+**`AlgebraicGeometry.RingedSite.derivedTensorHomInterchange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorHomInterchange.lean, line 568](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorHomInterchange.lean#L568). The attribute's comment: “the canonical morphism”.
 
 > **Stacks 0BYU.** For objects `K`, `L`, `M` of `D(O)` there is a canonical morphism
 >
@@ -832,7 +832,7 @@ def derivedTensorHomInterchange
         (((Stacks.SheafOfModules.derivedTensorProductFunctor X).obj K).obj L)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedTensorHomInterchange_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorHomInterchange.lean, line 597](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorHomInterchange.lean#L597). The attribute's comment: “comparison with the interchange morphism of complexes”.
+**`AlgebraicGeometry.RingedSite.derivedTensorHomInterchange_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorHomInterchange.lean, line 597](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorHomInterchange.lean#L597). The attribute's comment: “comparison with the interchange morphism of complexes”.
 
 > **The comparison of Stacks 0BYU with the interchange morphism of complexes of Stacks
 > 0BYT.** For complexes `A`, `I`, `C` with `A` K-flat and `I` K-injective, the canonical morphism
@@ -857,7 +857,7 @@ theorem derivedTensorHomInterchange_comparison
           homMap X (𝟙 C) ((kInjectiveAugmentation X).app (tensorTotal X A I)))
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedTensorHomInterchange_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorHomInterchange.lean, line 615](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorHomInterchange.lean#L615). The attribute's comment: “functoriality in all three objects”.
+**`AlgebraicGeometry.RingedSite.derivedTensorHomInterchange_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorHomInterchange.lean, line 615](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorHomInterchange.lean#L615). The attribute's comment: “functoriality in all three objects”.
 
 > **Functoriality of the interchange morphism of Stacks 0BYU in all three objects.** For
 > morphisms `k : K ⟶ K'`, `l : L ⟶ L'` and `m : M' ⟶ M` of `D(O)` the square formed by the
@@ -888,7 +888,7 @@ theorem derivedTensorHomInterchange_natural
 
 [Tag 0A99](https://stacks.math.columbia.edu/tag/0A99) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.canonicalDerivedDiagonal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean#L336). The attribute's comment: “the canonical morphism”.
+**`AlgebraicGeometry.RingedSite.canonicalDerivedDiagonal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean#L336). The attribute's comment: “the canonical morphism”.
 
 > **Stacks 0A99.** For objects `K`, `L` of `D(O)` the canonical morphism
 >
@@ -905,7 +905,7 @@ def canonicalDerivedDiagonal
       (((Stacks.SheafOfModules.derivedTensorProductFunctor X).obj K).obj L)
 ```
 
-**`AlgebraicGeometry.RingedSite.canonicalDerivedDiagonal_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean#L348). The attribute's comment: “the characterisation on representatives”.
+**`AlgebraicGeometry.RingedSite.canonicalDerivedDiagonal_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean#L348). The attribute's comment: “the characterisation on representatives”.
 
 > **The canonical morphism of Stacks 0A99 is the class of the resolved diagonal of complexes**,
 > read through the comparisons of its source and target with classes of complexes.  In particular
@@ -919,7 +919,7 @@ theorem canonicalDerivedDiagonal_eq
       DerivedCategory.Q.map (diagonalComplexMap X (kFlatModel X K) (kInjectiveModel X L))
 ```
 
-**`AlgebraicGeometry.RingedSite.canonicalDerivedDiagonal_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean#L530). The attribute's comment: “functoriality in L”.
+**`AlgebraicGeometry.RingedSite.canonicalDerivedDiagonal_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean#L530). The attribute's comment: “functoriality in L”.
 
 > **Stacks 0A99: the canonical morphism is functorial in `L`.** For a morphism `l : L' ⟶ L` of
 > `D(O)` the square
@@ -947,7 +947,7 @@ theorem canonicalDerivedDiagonal_natural_right
           (((Stacks.SheafOfModules.derivedTensorProductFunctor X).obj K).map l)
 ```
 
-**`AlgebraicGeometry.RingedSite.canonicalDerivedDiagonal_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean, line 774](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean#L774). The attribute's comment: “functoriality in K”.
+**`AlgebraicGeometry.RingedSite.canonicalDerivedDiagonal_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean, line 774](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedDiagonal.lean#L774). The attribute's comment: “functoriality in K”.
 
 > **Stacks 0A99: the canonical morphism is functorial in `K`.** For a morphism `f : K ⟶ K'` of
 > `D(O)` the square
@@ -979,7 +979,7 @@ theorem canonicalDerivedDiagonal_natural_left
 
 [Tag 08JD](https://stacks.math.columbia.edu/tag/08JD) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.derivedTensorDualGlobalSectionsMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsTargetNaturality.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsTargetNaturality.lean#L411). The attribute's comment: “functoriality in M of the map on degree-zero derived global sections”.
+**`AlgebraicGeometry.RingedSite.derivedTensorDualGlobalSectionsMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsTargetNaturality.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedSectionsTargetNaturality.lean#L424). The attribute's comment: “functoriality in M of the map on degree-zero derived global sections”.
 
 > **The map of Stacks 08JD on degree-zero global hypercohomology is natural in `M`.** For
 > `m : M ⟶ M'` the map `H⁰(C, M ⊗^L_O L^∨) ⟶ Hom_{D(O)}(L, M)` of
@@ -989,8 +989,9 @@ theorem canonicalDerivedDiagonal_natural_left
 > That map is the degree-zero global hypercohomology of the canonical map
 > `M ⊗^L_O L^∨ ⟶ RSheafHom(L, M)` followed by Stacks 08JA, so this is the naturality in `M` of
 > those two pieces: `derivedTensorDualSectionsMap_naturality` for the first, and
-> `derivedSheafHomGlobalSectionsEquiv_naturality_target` above for the second. No bijectivity of the map, hence no perfectness of `L`, is
-> involved: this is functoriality of the comparison of Stacks 08JD, not Stacks 08DQ.
+> `derivedSheafHomGlobalSectionsEquiv_naturality_target` above for the second. No bijectivity of the
+> map, hence no perfectness of `L`, is involved: this is functoriality of the comparison of Stacks
+> 08JD, not Stacks 08DQ.
 
 ```lean
 theorem derivedTensorDualGlobalSectionsMap_naturality
@@ -1007,7 +1008,7 @@ theorem derivedTensorDualGlobalSectionsMap_naturality
       derivedTensorDualGlobalSectionsMap X T L M z ≫ m
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedTensorDualToSheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorDual.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorDual.lean#L169). The attribute's comment: “the canonical map”.
+**`AlgebraicGeometry.RingedSite.derivedTensorDualToSheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorDual.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorDual.lean#L169). The attribute's comment: “the canonical map”.
 
 > **Stacks 08JD: the canonical map `M ⊗^L_O L^∨ ⟶ RSheafHom(L, M)`.** It is the composition
 > morphism of derived internal Homs of Stacks 0A98, taken at intermediate object the structure
@@ -1020,7 +1021,7 @@ def derivedTensorDualToSheafHom
       ((derivedSheafHomBifunctor X).obj (op L)).obj M
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedTensorDualGlobalSectionsMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorDual.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorDual.lean#L303). The attribute's comment: “map on degree-zero derived global sections”.
+**`AlgebraicGeometry.RingedSite.derivedTensorDualGlobalSectionsMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorDual.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedTensorDual.lean#L303). The attribute's comment: “map on degree-zero derived global sections”.
 
 > **Stacks 08JD: the canonical map on degree-zero global hypercohomology.** The canonical map
 > `M ⊗^L_O L^∨ ⟶ RSheafHom(L, M)` induces a map of abelian groups
@@ -1042,7 +1043,7 @@ def derivedTensorDualGlobalSectionsMap
 
 [Tag 0B6D](https://stacks.math.columbia.edu/tag/0B6D) in the Stacks Project.
 
-**`Stacks.Cohomology.ProjectionFormulaInternalHomOnRingedTopoi.derivedPushforwardSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/ProjectionFormulaInternalHom.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/ProjectionFormulaInternalHom.lean#L403). The attribute's comment: “the canonical map, variant: the special case of a morphism of ringed topoi presented by a morphism of sites; the tag for an arbitrary morphism of ringed topoi is Stacks.Cohomology.PushforwardInternalHomOfToposHom.derivedPushforwardSheafHomMap”.
+**`Stacks.Cohomology.ProjectionFormulaInternalHomOnRingedTopoi.derivedPushforwardSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/ProjectionFormulaInternalHom.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/ProjectionFormulaInternalHom.lean#L403). The attribute's comment: “the canonical map, variant: the special case of a morphism of ringed topoi presented by a morphism of sites; the tag for an arbitrary morphism of ringed topoi is Stacks.Cohomology.PushforwardInternalHomOfToposHom.derivedPushforwardSheafHomMap”.
 
 > The canonical map of [Stacks, Tag 0B6D] when the morphism of ringed topoi
 > `f : (Sh(C), O_C) ⟶ (Sh(D), O_D)` comes from a morphism of sites: for objects `L`, `M` of
@@ -1063,7 +1064,7 @@ def derivedPushforwardSheafHomMap
         (op ((derivedPushforward f).obj L))).obj ((derivedPushforward f).obj M)
 ```
 
-**`Stacks.Cohomology.ProjectionFormulaInternalHomOnRingedTopoi.derivedPushforwardSheafHomMap_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/ProjectionFormulaInternalHom.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/ProjectionFormulaInternalHom.lean#L435). The attribute's comment: “the defining adjunction property, variant: the special case of a morphism of ringed topoi presented by a morphism of sites; the tag for an arbitrary morphism of ringed topoi is Stacks.Cohomology.PushforwardInternalHomOfToposHom.derivedPushforwardSheafHomMap\_homEquiv”.
+**`Stacks.Cohomology.ProjectionFormulaInternalHomOnRingedTopoi.derivedPushforwardSheafHomMap_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/ProjectionFormulaInternalHom.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/ProjectionFormulaInternalHom.lean#L435). The attribute's comment: “the defining adjunction property, variant: the special case of a morphism of ringed topoi presented by a morphism of sites; the tag for an arbitrary morphism of ringed topoi is Stacks.Cohomology.PushforwardInternalHomOfToposHom.derivedPushforwardSheafHomMap\_homEquiv”.
 
 > **The defining property of the canonical map of [Stacks, Tag 0B6D]**: its adjunct under the
 > tensor–internal-Hom bijection of [Stacks, Tag 08J8] on `D(O_D)` is the relative cup product of
@@ -1086,7 +1087,7 @@ theorem derivedPushforwardSheafHomMap_homEquiv
           ((derivedTensorHomBijection (RingedTopos.toRingedSite X)).evaluation L M)
 ```
 
-**`Stacks.Cohomology.PushforwardInternalHomOfToposHom.derivedPushforwardSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/PushforwardInternalHomOfToposHom.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/PushforwardInternalHomOfToposHom.lean#L210). The attribute's comment: “the canonical map, for an arbitrary morphism of ringed topoi (no morphism-of-sites hypothesis); its defining property is `derivedPushforwardSheafHomMap_homEquiv`”.
+**`Stacks.Cohomology.PushforwardInternalHomOfToposHom.derivedPushforwardSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/PushforwardInternalHomOfToposHom.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/PushforwardInternalHomOfToposHom.lean#L210). The attribute's comment: “the canonical map, for an arbitrary morphism of ringed topoi (no morphism-of-sites hypothesis); its defining property is `derivedPushforwardSheafHomMap_homEquiv`”.
 
 > **[Stacks, Tag 0B6D].**  For a morphism of ringed topoi
 > `f : (Sh(C), O_C) ⟶ (Sh(D), O_D)` and objects `L`, `M` of `D(O_C)`, the canonical map
@@ -1107,7 +1108,7 @@ def derivedPushforwardSheafHomMap
         (op ((derivedPushforward f).obj L))).obj ((derivedPushforward f).obj M)
 ```
 
-**`Stacks.Cohomology.PushforwardInternalHomOfToposHom.derivedPushforwardSheafHomMap_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/PushforwardInternalHomOfToposHom.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/PushforwardInternalHomOfToposHom.lean#L240). The attribute's comment: “the defining property: the 08J8 adjunct of the canonical map is the relative cup product of 0B6C followed by Rf\_* of evaluation, for an arbitrary morphism of ringed topoi”.
+**`Stacks.Cohomology.PushforwardInternalHomOfToposHom.derivedPushforwardSheafHomMap_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/PushforwardInternalHomOfToposHom.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/PushforwardInternalHomOfToposHom.lean#L240). The attribute's comment: “the defining property: the 08J8 adjunct of the canonical map is the relative cup product of 0B6C followed by Rf\_* of evaluation, for an arbitrary morphism of ringed topoi”.
 
 > **The defining property of the canonical map of [Stacks, Tag 0B6D]**: its adjunct under the
 > tensor–internal-Hom bijection of [Stacks, Tag 08J8] on `D(O_D)` is the relative cup product of
@@ -1134,7 +1135,7 @@ theorem derivedPushforwardSheafHomMap_homEquiv
 
 [Tag 08JF](https://stacks.math.columbia.edu/tag/08JF) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedToposSiteHom.derivedPullbackSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedPullbackOfInternalHom.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedPullbackOfInternalHom.lean#L176).
+**`AlgebraicGeometry.RingedToposSiteHom.derivedPullbackSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedPullbackOfInternalHom.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedPullbackOfInternalHom.lean#L176).
 
 > **Stacks 08JF: the canonical map `Lh^* RSheafHom(K, L) ⟶ RSheafHom(Lh^* K, Lh^* L)`** in
 > `D(O)`, for a morphism of ringed topoi `h : (Sh(C), O) ⟶ (Sh(C'), O')` and objects `K`, `L` of
@@ -1150,7 +1151,7 @@ def derivedPullbackSheafHomMap :
         (op ((derivedPullback h).obj K))).obj ((derivedPullback h).obj L)
 ```
 
-**`AlgebraicGeometry.RingedToposHom.derivedPullbackSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedPullbackOfInternalHomOfToposHom.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedPullbackOfInternalHomOfToposHom.lean#L110). The attribute's comment: “for a morphism of ringed topoi in the sense of Tag 01D3, part (2) -- a morphism of the underlying topoi together with the map of structure sheaves, with no functor between the underlying sites”.
+**`AlgebraicGeometry.RingedToposHom.derivedPullbackSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedPullbackOfInternalHomOfToposHom.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedPullbackOfInternalHomOfToposHom.lean#L110). The attribute's comment: “for a morphism of ringed topoi in the sense of Tag 01D3, part (2) -- a morphism of the underlying topoi together with the map of structure sheaves, with no functor between the underlying sites”.
 
 > **Stacks 08JF: the canonical map `Lh^* RSheafHom(K, L) ⟶ RSheafHom(Lh^* K, Lh^* L)`** in
 > `D(O)`, for a morphism of ringed topoi `h : (Sh(C), O) ⟶ (Sh(C'), O')` in the sense of
@@ -1170,7 +1171,7 @@ def derivedPullbackSheafHomMap :
 
 [Tag 08JG](https://stacks.math.columbia.edu/tag/08JG) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedInternalHomBaseChangeOnTopoi.derivedBaseChangeSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean#L175). The attribute's comment: “derived\_base\_change\_sheaf\_hom\_map, variant: the special case of a square of morphisms of ringed topoi presented by morphisms of sites; the tag for an arbitrary commutative square of morphisms of ringed topoi is Stacks.Cohomology.DerivedInternalHomBaseChangeOfToposHom.derivedBaseChangeSheafHomMap”.
+**`Stacks.Cohomology.DerivedInternalHomBaseChangeOnTopoi.derivedBaseChangeSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean#L175). The attribute's comment: “derived\_base\_change\_sheaf\_hom\_map, variant: the special case of a square of morphisms of ringed topoi presented by morphisms of sites; the tag for an arbitrary commutative square of morphisms of ringed topoi is Stacks.Cohomology.DerivedInternalHomBaseChangeOfToposHom.derivedBaseChangeSheafHomMap”.
 
 > The base change map for the internal hom in the derived category (Stacks 08JG), for a square
 > of morphisms of sites.  For a
@@ -1194,7 +1195,7 @@ def derivedBaseChangeSheafHomMap :
             (op ((derivedPullback h).obj K))).obj ((derivedPullback h).obj L))
 ```
 
-**`Stacks.Cohomology.DerivedInternalHomBaseChangeOnTopoi.derivedBaseChangeSheafHomMap_adjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean#L201). The attribute's comment: “derived\_base\_change\_sheaf\_hom\_map: adjoint characterization, variant: the special case of a square of morphisms of ringed topoi presented by morphisms of sites; the tag for an arbitrary commutative square of morphisms of ringed topoi is Stacks.Cohomology.DerivedInternalHomBaseChangeOfToposHom.derivedBaseChangeSheafHomMap\_adjoint”.
+**`Stacks.Cohomology.DerivedInternalHomBaseChangeOnTopoi.derivedBaseChangeSheafHomMap_adjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean#L201). The attribute's comment: “derived\_base\_change\_sheaf\_hom\_map: adjoint characterization, variant: the special case of a square of morphisms of ringed topoi presented by morphisms of sites; the tag for an arbitrary commutative square of morphisms of ringed topoi is Stacks.Cohomology.DerivedInternalHomBaseChangeOfToposHom.derivedBaseChangeSheafHomMap\_adjoint”.
 
 > The adjoint characterization of the base change map (Stacks 08JG), for a square of morphisms
 > of sites.  Under the derived adjunction
@@ -1229,7 +1230,7 @@ theorem derivedBaseChangeSheafHomMap_adjoint :
         RingedToposSiteHom.derivedPullbackSheafHomMap h hmosh K L
 ```
 
-**`Stacks.Cohomology.DerivedInternalHomBaseChangeOfToposHom.derivedBaseChangeSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHomOfToposHom.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHomOfToposHom.lean#L117). The attribute's comment: “for a commutative square of morphisms of ringed topoi in the sense of Tag 01D3, part (2), with no hypothesis beyond commutativity”.
+**`Stacks.Cohomology.DerivedInternalHomBaseChangeOfToposHom.derivedBaseChangeSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHomOfToposHom.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHomOfToposHom.lean#L117). The attribute's comment: “for a commutative square of morphisms of ringed topoi in the sense of Tag 01D3, part (2), with no hypothesis beyond commutativity”.
 
 > **Stacks 08JG: the base change map for the internal hom in the derived category.**  For a
 > commutative square of morphisms of ringed topoi, with `h : (Sh(C'), O_{C'}) ⟶ (Sh(C), O_C)`
@@ -1252,7 +1253,7 @@ def derivedBaseChangeSheafHomMap :
             (op ((derivedPullback h).obj K))).obj ((derivedPullback h).obj L))
 ```
 
-**`Stacks.Cohomology.DerivedInternalHomBaseChangeOfToposHom.derivedBaseChangeSheafHomMap_adjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHomOfToposHom.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHomOfToposHom.lean#L137). The attribute's comment: “adjoint characterization, for a commutative square of morphisms of ringed topoi in the sense of Tag 01D3, part (2)”.
+**`Stacks.Cohomology.DerivedInternalHomBaseChangeOfToposHom.derivedBaseChangeSheafHomMap_adjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHomOfToposHom.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHomOfToposHom.lean#L137). The attribute's comment: “adjoint characterization, for a commutative square of morphisms of ringed topoi in the sense of Tag 01D3, part (2)”.
 
 > **Stacks 08JG, the adjoint characterization.**  Under the derived adjunction
 > `L(f')^* ⊣ R(f')_*` of Stacks 07A6, the base change map for the internal hom is the composition
@@ -1291,4 +1292,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.35, Tag 08J7](https://stacks.math.columbia.edu/tag/08J7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

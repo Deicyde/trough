@@ -7,7 +7,7 @@ statement: formalized
 
 # Merca's identities for sums of different parts
 
-21 results, 7 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html).
+21 results, 7 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html).
 
 ## Sum of different parts congruent to $r$ modulo $m$
 
@@ -20,7 +20,7 @@ with $0 \le r < m$, where $x \bmod m = r$ means $x \equiv r \pmod m$.
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Section 1 (definition of `a_{r,m}(n)`).
 
-Formalized by `MetaMathlibExt.sumDistinctPartsModEq`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq).
+Formalized by `MetaMathlibExt.sumDistinctPartsModEq`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq).
 
 ## Sum of different parts appearing at least $m$ times
 
@@ -33,7 +33,7 @@ multiplicity.
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Section 1 (definition of `s_m(n)`).
 
-Formalized by `MetaMathlibExt.sumDistinctPartsMultAtLeast`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mult-at-least).
+Formalized by `MetaMathlibExt.sumDistinctPartsMultAtLeast`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mult-at-least).
 
 ## Small values of Merca's distinct-part sums
 
@@ -50,7 +50,7 @@ The empty partition of $0$ has no parts, and $1$ has the single partition $1$.
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Section 1 (definitions of `a_{r,m}(n)` and `s_m(n)`).
 
-Formalized by `MetaMathlibExt.sumDistinctParts_small_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-small-values).
+Formalized by `MetaMathlibExt.sumDistinctParts_small_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-small-values).
 
 ## Dyson's rank of a partition
 
@@ -63,7 +63,7 @@ empty partition has rank $0$.
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Section 2 (definition of the rank before Theorem 8).
 
-Formalized by `MetaMathlibExt.dysonRank`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#dyson-rank).
+Formalized by `MetaMathlibExt.dysonRank`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#dyson-rank).
 
 ## Rank of the partitions of $0$ and $1$
 
@@ -77,7 +77,7 @@ $k = 1$, no partition of $1$ has positive rank, and no partition of $0$ has rank
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Section 2 (definition of the rank before Theorem 8).
 
-Formalized by `MetaMathlibExt.dysonRank_small_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#dyson-rank-small-values).
+Formalized by `MetaMathlibExt.dysonRank_small_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#dyson-rank-small-values).
 
 ## Crank of a partition
 
@@ -91,7 +91,7 @@ larger than $\omega(\mu)$, counted with multiplicity, minus $\omega(\mu)$.
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Section 2 (definition of the crank before Theorem 11).
 
-Formalized by `MetaMathlibExt.partitionCrank`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#partition-crank).
+Formalized by `MetaMathlibExt.partitionCrank`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#partition-crank).
 
 ## Crank of the partitions of $0$ and $1$
 
@@ -105,7 +105,7 @@ $1$ has nonnegative crank.
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Section 2 (definition of the crank before Theorem 11).
 
-Formalized by `MetaMathlibExt.partitionCrank_small_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#partition-crank-small-values).
+Formalized by `MetaMathlibExt.partitionCrank_small_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#partition-crank-small-values).
 
 ## Merca's identity for different parts in a residue class
 
@@ -120,7 +120,7 @@ $$a_{r,m}(n) = \sum_{j \ge 0,\ mj + r \le n} (mj + r)\, p(n - mj - r).$$
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 1 (i).
 
-Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_eq_sum_partition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-eq-sum-partiti).
+Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_eq_sum_partition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-eq-sum-partiti).
 
 ## Merca's identity for $s_m(n)$
 
@@ -134,7 +134,7 @@ The paper's hypothesis $0 \le r < m$ forces $m \ge 1$; for $m = 0$ the right sid
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 1 (ii).
 
-Stated but not proved: `MetaMathlibExt.sumDistinctPartsMultAtLeast_eq_sum_partition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mult-at-least-eq-sum).
+Stated but not proved: `MetaMathlibExt.sumDistinctPartsMultAtLeast_eq_sum_partition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mult-at-least-eq-sum).
 
 ## Different parts in a residue class and even-minus-odd partition counts
 
@@ -152,7 +152,7 @@ $$a_{r,m}(n) + 2 \sum_{k \ge 1,\ k^2 \le n} (-1)^k a_{r,m}(n - k^2)
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_square_eq_evenOdd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-square-eq-even).
+Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_square_eq_evenOdd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-square-eq-even).
 
 ## Twice-square sum of $a_{r,m}$ and distinct odd parts
 
@@ -170,7 +170,7 @@ $$
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_twiceSquare_eq_oddDistinct` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-twice-square-e).
+Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_twiceSquare_eq_oddDistinct` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-twice-square-e).
 
 ## Signed triangular sum of $a_{r,m}$ and distinct partitions
 
@@ -189,7 +189,7 @@ $$
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_triangular_eq_distinct_half` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-triangular-eq).
+Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_triangular_eq_distinct_half` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-triangular-eq).
 
 ## Signed triangular sum of $s_m$ and distinct partitions
 
@@ -209,7 +209,7 @@ The paper says $m \ge 0$; for $m = 0$ the right side diverges.
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.sumDistinctPartsMultAtLeast_triangular_eq_distinct_half` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mult-at-least-triangu).
+Stated but not proved: `MetaMathlibExt.sumDistinctPartsMultAtLeast_triangular_eq_distinct_half` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mult-at-least-triangu).
 
 ## Different parts in a residue class and partitions of nonnegative rank
 
@@ -226,7 +226,7 @@ $$\sum_{j \ge 0,\ j(3j+1)/2 \le n} (-1)^j a_{r,m}(n - j(3j+1)/2)
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 8 (i).
 
-Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_pentagonal_eq_nonnegRank` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-pentagonal-eq).
+Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_pentagonal_eq_nonnegRank` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-pentagonal-eq).
 
 ## Different parts in a residue class and partitions of positive rank
 
@@ -243,7 +243,7 @@ $$\sum_{j \ge 1,\ j(3j+1)/2 \le n} (-1)^{j+1} a_{r,m}(n - j(3j+1)/2)
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 8 (ii).
 
-Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_pentagonal_eq_posRank` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-pentagonal-eq-2).
+Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_pentagonal_eq_posRank` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-pentagonal-eq-2).
 
 ## Pentagonal sum of $s_m$ and nonnegative rank
 
@@ -262,7 +262,7 @@ The paper says $m \ge 0$; for $m = 0$ the right side diverges.
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 9 (i).
 
-Stated but not proved: `MetaMathlibExt.sumDistinctPartsMultAtLeast_pentagonal_eq_nonnegRank` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mult-at-least-pentago).
+Stated but not proved: `MetaMathlibExt.sumDistinctPartsMultAtLeast_pentagonal_eq_nonnegRank` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mult-at-least-pentago).
 
 ## Pentagonal sum of $s_m$ and positive rank
 
@@ -281,7 +281,7 @@ The paper says $m \ge 0$; for $m = 0$ the right side diverges.
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 9 (ii).
 
-Stated but not proved: `MetaMathlibExt.sumDistinctPartsMultAtLeast_pentagonal_eq_posRank` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mult-at-least-pentago-2).
+Stated but not proved: `MetaMathlibExt.sumDistinctPartsMultAtLeast_pentagonal_eq_posRank` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mult-at-least-pentago-2).
 
 ## Different parts in a residue class and Garden of Eden partitions
 
@@ -301,7 +301,7 @@ $m = 1$, $r = 0$ and $n = 1$ the left side becomes $-a_{0,1}(1) = -1$ while the 
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 10 (i).
 
-Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_eq_gardenOfEden` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-eq-garden-of-e).
+Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_eq_gardenOfEden` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-eq-garden-of-e).
 
 ## Garden of Eden identity for $s_m$
 
@@ -321,7 +321,7 @@ The paper says $m \ge 0$; for $m = 0$ the right side diverges.
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 10 (ii).
 
-Stated but not proved: `MetaMathlibExt.sumDistinctPartsMultAtLeast_eq_gardenOfEden` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mult-at-least-eq-gard).
+Stated but not proved: `MetaMathlibExt.sumDistinctPartsMultAtLeast_eq_gardenOfEden` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mult-at-least-eq-gard).
 
 ## Different parts in a residue class and partitions of nonnegative crank
 
@@ -343,7 +343,7 @@ its right side is $0$).
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 11 (i).
 
-Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_triangular_eq_nonnegCrank` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-triangular-eq-2).
+Stated but not proved: `MetaMathlibExt.sumDistinctPartsModEq_triangular_eq_nonnegCrank` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mod-eq-triangular-eq-2).
 
 ## Signed triangular sum of $s_m$ and nonnegative crank
 
@@ -364,7 +364,7 @@ side $D(1) + 2 D(0) = 0$).
 
 - Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 12 (i).
 
-Stated but not proved: `MetaMathlibExt.sumDistinctPartsMultAtLeast_triangular_eq_nonnegCrank` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mult-at-least-triangu-2).
+Stated but not proved: `MetaMathlibExt.sumDistinctPartsMultAtLeast_triangular_eq_nonnegCrank` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/MercaDistinctPartsSumWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html#sum-distinct-parts-mult-at-least-triangu-2).
 
 ## Depends on
 
@@ -373,4 +373,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Merca's identities for sums of different parts](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/partition-identities/merca-s-identities-for-sums-of-different-parts)

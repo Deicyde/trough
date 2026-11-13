@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.45 Pullback maps
 
-Section 7.45 of the Stacks Project, [Tag 06UM](https://stacks.math.columbia.edu/tag/06UM). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 7.45 of the Stacks Project, [Tag 06UM](https://stacks.math.columbia.edu/tag/06UM). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06UM, the section
 
 [Tag 06UM](https://stacks.math.columbia.edu/tag/06UM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.locallyQuasicoherentStructurePullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean#L180). The attribute's comment: “the relative pullback map w\_*𝒪\_𝒲 ⟶ f\_*𝒪\_𝒬 at the structure sheaf of the middle stack of a factorization 𝒬 ⟶ 𝒲 ⟶ 𝒳 of algebraic stacks, on LQCoh^fbc, for direct images wStar, fStar and an adjunction adjPr with an identification cmp : prStar ⋙ wStar ≅ fStar”.
+**`AlgebraicGeometry.Stack.locallyQuasicoherentStructurePullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean#L180). The attribute's comment: “the relative pullback map w\_*𝒪\_𝒲 ⟶ f\_*𝒪\_𝒬 at the structure sheaf of the middle stack of a factorization 𝒬 ⟶ 𝒲 ⟶ 𝒳 of algebraic stacks, on LQCoh^fbc, for direct images wStar, fStar and an adjunction adjPr with an identification cmp : prStar ⋙ wStar ≅ fStar”.
 
 > **The relative pullback map on `LQCoh^fbc` at the structure sheaf.**  For a factorization
 > `𝒬 --pr--> 𝒲 --w--> 𝒳` of 1-morphisms of algebraic stacks with direct images `wStar`, `fStar`
@@ -33,7 +33,7 @@ def locallyQuasicoherentStructurePullbackMap :
         (FibredSite.quasicoherentTensorUnit B S hS 𝒬.val.val.p 𝒬.val.property))
 ```
 
-**`AlgebraicGeometry.Stack.quasicoherentRelativePullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean#L221). The attribute's comment: “the relative pullback map w\_\{QCoh,*}𝒪\_𝒲 ⟶ f\_\{QCoh,*}𝒪\_𝒬 in QCoh(𝒪\_𝒳), the coherator of Lemma 0778 applied to the map on LQCoh^fbc, over the same data of Proposition 0771 together with the coherator inputs hincX, hclosed, hpres, hls, hlsD, hwp, hsep of Lemma 0778”.
+**`AlgebraicGeometry.Stack.quasicoherentRelativePullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean#L221). The attribute's comment: “the relative pullback map w\_\{QCoh,*}𝒪\_𝒲 ⟶ f\_\{QCoh,*}𝒪\_𝒬 in QCoh(𝒪\_𝒳), the coherator of Lemma 0778 applied to the map on LQCoh^fbc, over the same data of Proposition 0771 together with the coherator inputs hincX, hclosed, hpres, hls, hlsD, hwp, hsep of Lemma 0778”.
 
 > **The relative pullback map in `QCoh(𝒪_𝒳)` at the structure sheaf.**  The coherator `Q` of
 > **Lemma 0778** applied to
@@ -57,7 +57,7 @@ def quasicoherentRelativePullbackMap :
           hincP).obj (FibredSite.quasicoherentTensorUnit B S hS 𝒬.val.val.p 𝒬.val.property)))
 ```
 
-**`CategoryTheory.Adjunction.relativePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean#L89). The attribute's comment: “the relative pullback map g\_*ℱ ⟶ h\_*f^\{-1}ℱ of a commutative triangle of morphisms of topoi, stated for an adjunction f^\{-1} ⊣ f\_*, two direct images and an isomorphism f\_* ⋙ g\_* ≅ h\_* in place of the source's equality of functors”.
+**`CategoryTheory.Adjunction.relativePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean#L89). The attribute's comment: “the relative pullback map g\_*ℱ ⟶ h\_*f^\{-1}ℱ of a commutative triangle of morphisms of topoi, stated for an adjunction f^\{-1} ⊣ f\_*, two direct images and an isomorphism f\_* ⋙ g\_* ≅ h\_* in place of the source's equality of functors”.
 
 > **The relative pullback map of a commutative triangle.**  For an adjunction
 > `f^{-1} ⊣ f_*` and direct images `g_*`, `h_*` to a third category identified by
@@ -71,7 +71,7 @@ def quasicoherentRelativePullbackMap :
 def relativePullback : gstar ⟶ finv ⋙ hstar
 ```
 
-**`CategoryTheory.Adjunction.relativePullbackMapOfHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean#L111). The attribute's comment: “the variant g\_*ℱ ⟶ h\_*𝒢 of the relative pullback map attached to a morphism f^\{-1}ℱ ⟶ 𝒢”.
+**`CategoryTheory.Adjunction.relativePullbackMapOfHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean#L111). The attribute's comment: “the variant g\_*ℱ ⟶ h\_*𝒢 of the relative pullback map attached to a morphism f^\{-1}ℱ ⟶ 𝒢”.
 
 > **The relative pullback map attached to a morphism `f^{-1}ℱ ⟶ 𝒢`.**  The pullback map
 > `g_*ℱ ⟶ h_*f^{-1}ℱ` followed by `h_*φ`.
@@ -85,7 +85,7 @@ def relativePullbackMapOfHom (F : 𝒞) {G : 𝒟} (φ : finv.obj F ⟶ G) :
 
 [Tag 06UN](https://stacks.math.columbia.edu/tag/06UN) in the Stacks Project.
 
-**`CategoryTheory.Presheaf.isTerminalConstPUnit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/GlobalSections.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/GlobalSections.lean#L38).
+**`CategoryTheory.Presheaf.isTerminalConstPUnit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/GlobalSections.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/GlobalSections.lean#L38).
 
 > The presheaf constant at a singleton is the final object of the category of presheaves
 > on `C`.
@@ -95,7 +95,7 @@ def isTerminalConstPUnit :
     IsTerminal ((Functor.const Cᵒᵖ).obj (PUnit.{w + 1}))
 ```
 
-**`CategoryTheory.Presheaf.globalSections`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/GlobalSections.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/GlobalSections.lean#L45).
+**`CategoryTheory.Presheaf.globalSections`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/GlobalSections.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/GlobalSections.lean#L45).
 
 > The *global sections* of a presheaf of sets `F` on `C`: the set
 > `Γ(C, F) = Mor_{PSh(C)}(*, F)` of morphisms of presheaves from the final presheaf `*` to `F`.
@@ -108,7 +108,7 @@ abbrev globalSections (F : Cᵒᵖ ⥤ Type w) : Type _
 
 [Tag 0792](https://stacks.math.columbia.edu/tag/0792) in the Stacks Project.
 
-**`Stacks.Sites.GlobalSectionsAsEqualizer.globalSectionsForkIsLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/GlobalSections/AsEqualizer.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/GlobalSections/AsEqualizer.lean#L186).
+**`Stacks.Sites.GlobalSectionsAsEqualizer.globalSectionsForkIsLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/GlobalSections/AsEqualizer.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/GlobalSections/AsEqualizer.lean#L186).
 
 > **Stacks Tag 0792**: `Γ(C, F)` is the equalizer of `a^*, b^*`.
 
@@ -123,7 +123,7 @@ noncomputable def globalSectionsForkIsLimit {V U : C} (a b : V ⟶ U)
 
 [Tag 0F6X](https://stacks.math.columbia.edu/tag/0F6X) in the Stacks Project.
 
-**`ToposBaseChange.main`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/GlobalSections/BaseChangeComposition.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/GlobalSections/BaseChangeComposition.lean#L111). References: SGA 4 XII (4.4), “more general”.
+**`ToposBaseChange.main`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/GlobalSections/BaseChangeComposition.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/GlobalSections/BaseChangeComposition.lean#L111). References: SGA 4 XII (4.4), “more general”.
 
 > **Tag 0F6X (vertical composition of base change maps).** The base change map
 > `\beta_rect` of the outer rectangle equals the pasted composite obtained from
@@ -150,4 +150,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.45, Tag 06UM](https://stacks.math.columbia.edu/tag/06UM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

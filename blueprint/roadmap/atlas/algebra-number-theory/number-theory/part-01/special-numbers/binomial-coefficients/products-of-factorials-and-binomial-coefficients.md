@@ -7,7 +7,7 @@ statement: formalized
 
 # Products of factorials and binomial coefficients
 
-19 results, 9 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html).
+19 results, 9 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html).
 
 ## Glaisher–Kinkelin constant
 
@@ -22,7 +22,7 @@ is real, $\log A = \frac{1}{12} - \zeta'(-1)$.
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Section 2.
 
-Formalized by `MetaMathlibExt.glaisherKinkelinConstant`, a definition declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#glaisher-kinkelin-constant).
+Formalized by `MetaMathlibExt.glaisherKinkelinConstant`, a definition declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#glaisher-kinkelin-constant).
 
 ## Logarithm of the Glaisher–Kinkelin constant
 
@@ -34,7 +34,7 @@ of the Riemann zeta function.
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Section 2.
 
-Formalized by `MetaMathlibExt.log_glaisherKinkelinConstant`, a theorem declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#log-glaisher-kinkelin-constant).
+Formalized by `MetaMathlibExt.log_glaisherKinkelinConstant`, a theorem declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#log-glaisher-kinkelin-constant).
 
 ## Factorial-product constants
 
@@ -54,7 +54,7 @@ $n \to \infty$; that formula is a separate statement.
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, equation (3) (Kellner 2009, Theorems 12 and 13).
 
-Formalized by `MetaMathlibExt.factorialProductConstant`, a definition declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#factorial-product-constant).
+Formalized by `MetaMathlibExt.factorialProductConstant`, a definition declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#factorial-product-constant).
 
 ## Logarithm of the first factorial product constant
 
@@ -68,7 +68,7 @@ Equivalently, $F_1 = (2\pi)^{1/4} e^{1/12} A^{-2}$.
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Table 1.
 
-Formalized by `MetaMathlibExt.log_factorialProductConstant_one`, a theorem declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#log-factorial-product-constant-one).
+Formalized by `MetaMathlibExt.log_factorialProductConstant_one`, a theorem declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#log-factorial-product-constant-one).
 
 ## Positivity of the factorial-product constants
 
@@ -79,7 +79,7 @@ factorial-product constant $F_k$ is positive.
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Section 2.
 
-Formalized by `MetaMathlibExt.factorialProductConstant_pos`, a theorem declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#factorial-product-constant-pos).
+Formalized by `MetaMathlibExt.factorialProductConstant_pos`, a theorem declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#factorial-product-constant-pos).
 
 ## Comparison function for products of factorials
 
@@ -92,7 +92,7 @@ $$P_k(x) = (k^k)^{x(x+1)/2} \left(\frac{2\pi k x}{e}\right)^{x/2} x^{(3k+1)/(12k
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Theorem 5.
 
-Formalized by `MetaMathlibExt.factorialProductComparison`, a definition declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#factorial-product-comparison).
+Formalized by `MetaMathlibExt.factorialProductComparison`, a definition declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#factorial-product-comparison).
 
 ## Value of the factorial-product comparison function at $1$
 
@@ -103,7 +103,7 @@ $k$, the factorial-product comparison function $P_k$ satisfies $P_k(1) = k^k (2\
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Theorem 5.
 
-Formalized by `MetaMathlibExt.factorialProductComparison_one`, a theorem declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#factorial-product-comparison-one).
+Formalized by `MetaMathlibExt.factorialProductComparison_one`, a theorem declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#factorial-product-comparison-one).
 
 ## Comparison function for products of binomial coefficients
 
@@ -118,7 +118,7 @@ $$P_{a,b}(x) = \left(\frac{a^a}{b^b c^c}\right)^{x(x+1)/2} x^{(1/a - a/(bc))/12 
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Theorem 6.
 
-Formalized by `MetaMathlibExt.binomialProductComparison`, a definition declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#binomial-product-comparison).
+Formalized by `MetaMathlibExt.binomialProductComparison`, a definition declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#binomial-product-comparison).
 
 ## Value of the binomial-product comparison function at $1$
 
@@ -132,7 +132,7 @@ $$P_{a,b}(1) = \frac{a^a / (b^b c^c)}{\bigl((2\pi/e)(bc/a)\bigr)^{1/2}}.$$
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Theorem 6.
 
-Formalized by `MetaMathlibExt.binomialProductComparison_one`, a theorem declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#binomial-product-comparison-one).
+Formalized by `MetaMathlibExt.binomialProductComparison_one`, a theorem declared in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#binomial-product-comparison-one).
 
 ## Asymptotics of products of factorials of multiples
 
@@ -151,7 +151,7 @@ The divergent asymptotic expansion (4) of the source is not part of this stateme
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Theorem 1 (Kellner 2009, Theorems 12 and 13).
 
-Stated but not proved: `MetaMathlibExt.tendsto_prod_factorial_mul_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#tendsto-prod-factorial-mul-div).
+Stated but not proved: `MetaMathlibExt.tendsto_prod_factorial_mul_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#tendsto-prod-factorial-mul-div).
 
 ## The factorial-product constants decrease strictly to $1$
 
@@ -163,7 +163,7 @@ $k \to \infty$.
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.factorialProductConstant_strictAnti_tendsto_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#factorial-product-constant-strict-anti-t).
+Stated but not proved: `MetaMathlibExt.factorialProductConstant_strictAnti_tendsto_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#factorial-product-constant-strict-anti-t).
 
 ## Bounds for $1/a + 1/b - 1/(a+b)$
 
@@ -174,7 +174,7 @@ and $a + b \ge 3$, and put $g(a,b) = 1/a + 1/b - 1/(a+b)$. Then $0 < g(a,b) \le 
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.inv_add_inv_sub_inv_add_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#inv-add-inv-sub-inv-add-bounds).
+Stated but not proved: `MetaMathlibExt.inv_add_inv_sub_inv_add_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#inv-add-inv-sub-inv-add-bounds).
 
 ## Bounds for the binomial-product constants
 
@@ -190,7 +190,7 @@ that is, $c_{2,1} \le c_{a,b} < 1$.
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.factorialProductConstant_ratio_mem_Ico` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#factorial-product-constant-ratio-mem-ico).
+Stated but not proved: `MetaMathlibExt.factorialProductConstant_ratio_mem_Ico` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#factorial-product-constant-ratio-mem-ico).
 
 ## Asymptotics of products of multinomial coefficients
 
@@ -205,7 +205,7 @@ tends to $c_{a,b} (2\pi)^{(1-r)/4}$; moreover $0 < c_{a,b} < 1$.
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.tendsto_prod_multinomial_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#tendsto-prod-multinomial-div).
+Stated but not proved: `MetaMathlibExt.tendsto_prod_multinomial_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#tendsto-prod-multinomial-div).
 
 ## Asymptotics of products of binomial coefficients $\binom{an}{bn}$
 
@@ -222,7 +222,7 @@ The decimal approximations of the constants are not part of this statement.
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.tendsto_prod_choose_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#tendsto-prod-choose-div).
+Stated but not proved: `MetaMathlibExt.tendsto_prod_choose_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#tendsto-prod-choose-div).
 
 ## Asymptotics of products of central binomial coefficients and Catalan numbers
 
@@ -239,7 +239,7 @@ The decimal approximations of the constants are not part of this statement.
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Corollary 7.
 
-Stated but not proved: `MetaMathlibExt.tendsto_prod_centralBinom_catalan_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#tendsto-prod-central-binom-catalan-div).
+Stated but not proved: `MetaMathlibExt.tendsto_prod_centralBinom_catalan_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#tendsto-prod-central-binom-catalan-div).
 
 ## Asymptotics of the product of a row of Pascal's triangle
 
@@ -253,7 +253,7 @@ tends to $C_{\mathrm{row}}$, and $C_{\mathrm{row}} = A^2 / \left((2\pi)^{1/2} e^
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.tendsto_prod_choose_row_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#tendsto-prod-choose-row-div).
+Stated but not proved: `MetaMathlibExt.tendsto_prod_choose_row_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#tendsto-prod-choose-row-div).
 
 ## Pascal-row asymptotics as a limit of binomial-product asymptotics
 
@@ -270,7 +270,7 @@ The source does not state the range of $x$; the hypothesis $x > 0$ is added here
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.tendsto_binomialProduct_limit_row` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#tendsto-binomial-product-limit-row).
+Stated but not proved: `MetaMathlibExt.tendsto_binomialProduct_limit_row` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#tendsto-binomial-product-limit-row).
 
 ## Hirschhorn's constant
 
@@ -288,7 +288,7 @@ Hirschhorn's asymptotic expansion with divergent Bernoulli sums is not part of t
 
 - Bernd C. Kellner, *Asymptotic Products of Binomial and Multinomial Coefficients Revisited*, INTEGERS 24 (2024), Article A59, Theorem 12 (Hirschhorn) and the discussion after it.
 
-Stated but not proved: `MetaMathlibExt.tendsto_hirschhorn_constant` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#tendsto-hirschhorn-constant).
+Stated but not proved: `MetaMathlibExt.tendsto_hirschhorn_constant` is written with `theorem_wanted` in [WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BinomialProductAsymptoticsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html#tendsto-hirschhorn-constant).
 
 ## Depends on
 
@@ -297,4 +297,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Products of factorials and binomial coefficients](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/binomial-coefficients/products-of-factorials-and-binomial-coefficients)

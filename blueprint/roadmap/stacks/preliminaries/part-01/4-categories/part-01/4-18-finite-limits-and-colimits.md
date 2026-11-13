@@ -8,13 +8,13 @@ proof: formalized
 
 # 4.18 Finite limits and colimits
 
-Section 4.18 of the Stacks Project, [Tag 04AS](https://stacks.math.columbia.edu/tag/04AS). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 4.18 of the Stacks Project, [Tag 04AS](https://stacks.math.columbia.edu/tag/04AS). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05XU, a lemma
 
 [Tag 05XU](https://stacks.math.columbia.edu/tag/05XU) in the Stacks Project.
 
-**`CategoryTheory.exists_finCategory_functor_of_finitelyGeneratedShape`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/FiniteIndexReduction.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/Finite/FiniteIndexReduction.lean#L403).
+**`CategoryTheory.exists_finCategory_functor_of_finitelyGeneratedShape`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/FiniteIndexReduction.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/Finite/FiniteIndexReduction.lean#L403).
 
 > **Stacks Tag 05XU.**  Let `I` be a small category whose objects form a finite type
 > and whose morphisms are generated, by composition, from a finite list of arrows.
@@ -59,7 +59,7 @@ theorem exists_finCategory_functor_of_finitelyGeneratedShape {I : Type u} [Small
 
 [Tag 04AT](https://stacks.math.columbia.edu/tag/04AT) in the Stacks Project.
 
-**`CategoryTheory.Limits.hasLimitsOfShape_isConnected_iff_hasEqualizers_and_hasPullbacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/Connected.lean, line 643](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/Finite/Connected.lean#L643).
+**`CategoryTheory.Limits.hasLimitsOfShape_isConnected_iff_hasEqualizers_and_hasPullbacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/Connected.lean, line 643](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/Finite/Connected.lean#L643).
 
 > **Stacks 04AT.** A category `C` admits limits over every finite connected shape
 > if and only if it has equalizers and pullbacks.
@@ -75,7 +75,7 @@ theorem hasLimitsOfShape_isConnected_iff_hasEqualizers_and_hasPullbacks
 
 [Tag 04AU](https://stacks.math.columbia.edu/tag/04AU) in the Stacks Project.
 
-**`nonempty_finite_limits_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/Nonempty.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/Finite/Nonempty.lean#L242).
+**`nonempty_finite_limits_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/Nonempty.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/Finite/Nonempty.lean#L242).
 
 > **Stacks 04AU**. For a category `C`, having every limit indexed by a finite nonempty shape is
 > equivalent to having binary products together with equalizers, and equivalent to having binary
@@ -93,7 +93,7 @@ theorem nonempty_finite_limits_tfae :
 
 [Tag 002O](https://stacks.math.columbia.edu/tag/002O) in the Stacks Project.
 
-**`CategoryTheory.Limits.hasFiniteLimits_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/Defs.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/Finite/Defs.lean#L40). References: SGA 4 I (2.3.1).
+**`CategoryTheory.Limits.hasFiniteLimits_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/Defs.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/Finite/Defs.lean#L40). References: SGA 4 I (2.3.1).
 
 > **Stacks 002O.** For a category `C` the following are equivalent:
 > 1. finite limits exist in `C`;
@@ -112,7 +112,7 @@ theorem hasFiniteLimits_tfae (C : Type*) [Category C] :
 
 [Tag 04AV](https://stacks.math.columbia.edu/tag/04AV) in the Stacks Project.
 
-**`CategoryTheory.Limits.hasColimitsOfShape_isConnected_iff_hasCoequalizers_and_hasPushouts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/ConnectedColimits.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/Finite/ConnectedColimits.lean#L51).
+**`CategoryTheory.Limits.hasColimitsOfShape_isConnected_iff_hasCoequalizers_and_hasPushouts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/ConnectedColimits.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/Finite/ConnectedColimits.lean#L51).
 
 > **Stacks 04AV.** A category `C` admits colimits over every finite connected shape
 > if and only if it has coequalizers and pushouts.
@@ -128,7 +128,7 @@ theorem hasColimitsOfShape_isConnected_iff_hasCoequalizers_and_hasPushouts
 
 [Tag 04AW](https://stacks.math.columbia.edu/tag/04AW) in the Stacks Project.
 
-**`CategoryTheory.Limits.HasNonemptyFiniteColimits`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/NonemptyColimits.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/Finite/NonemptyColimits.lean#L52).
+**`CategoryTheory.Limits.HasNonemptyFiniteColimits`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/NonemptyColimits.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/Finite/NonemptyColimits.lean#L52).
 
 > `HasNonemptyFiniteColimits C` says that `C` has all colimits of shape `J` for `J` a
 > small, finite, *nonempty* category; equivalently, every nonempty finite diagram in `C`
@@ -139,7 +139,7 @@ theorem hasColimitsOfShape_isConnected_iff_hasCoequalizers_and_hasPushouts
 class HasNonemptyFiniteColimits : Prop
 ```
 
-**`CategoryTheory.Limits.hasNonemptyFiniteColimits_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/NonemptyColimits.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/Finite/NonemptyColimits.lean#L134).
+**`CategoryTheory.Limits.hasNonemptyFiniteColimits_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/NonemptyColimits.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/Finite/NonemptyColimits.lean#L134).
 
 > **Stacks 04AW.** For a category `C` the following are equivalent:
 > 1. nonempty finite colimits exist in `C`;
@@ -158,7 +158,7 @@ theorem hasNonemptyFiniteColimits_tfae :
 
 [Tag 002Q](https://stacks.math.columbia.edu/tag/002Q) in the Stacks Project.
 
-**`CategoryTheory.Limits.hasFiniteColimits_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/Colimits.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/Finite/Colimits.lean#L41). References: SGA 4 I (2.3.1).
+**`CategoryTheory.Limits.hasFiniteColimits_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/Finite/Colimits.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/Finite/Colimits.lean#L41). References: SGA 4 I (2.3.1).
 
 > **Stacks 002Q.** For a category `C` the following are equivalent:
 > 1. finite colimits exist in `C`;
@@ -180,4 +180,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 4.18, Tag 04AS](https://stacks.math.columbia.edu/tag/04AS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

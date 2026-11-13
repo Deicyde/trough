@@ -8,7 +8,7 @@ proof: formalized
 
 # A deterministic DPLL solver
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html).
 
 ## First unit literal
 
@@ -16,7 +16,7 @@ For a CNF formula $\varphi$, read as a list of clauses, this returns
 the literal $\ell$ of the first clause of $\varphi$ that consists of the single literal $\ell$,
 and returns nothing when no clause of $\varphi$ has exactly one literal.
 
-Formalized by `Cslib.Algorithms.SAT.DPLL.firstUnit`, a definition declared in [CSLibExt/Algorithms/SAT/DPLL/Solver.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/DPLL/Solver.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html#first-unit).
+Formalized by `Cslib.Algorithms.SAT.DPLL.firstUnit`, a definition declared in [CSLibExt/Algorithms/SAT/DPLL/Solver.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/DPLL/Solver.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html#first-unit).
 
 ## First variable of a CNF formula
 
@@ -25,7 +25,7 @@ this returns the variable of the first literal of the first nonempty clause of $
 is, the first variable occurring in $\varphi$ in source order, and returns nothing when every
 clause of $\varphi$ is empty (in particular when $\varphi$ has no clauses).
 
-Formalized by `Cslib.Algorithms.SAT.DPLL.firstVariable`, a definition declared in [CSLibExt/Algorithms/SAT/DPLL/Solver.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/DPLL/Solver.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html#first-variable).
+Formalized by `Cslib.Algorithms.SAT.DPLL.firstVariable`, a definition declared in [CSLibExt/Algorithms/SAT/DPLL/Solver.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/DPLL/Solver.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html#first-variable).
 
 ## Boolean clause satisfaction check
 
@@ -34,7 +34,7 @@ variables $0, 1, 2, \ldots$ and a clause $C$, whose literals are pairs $(x, b)$ 
 $x$ and a polarity $b$, this Boolean is true exactly when some literal $(x, b)$ of $C$ satisfies
 $v(x) = b$.
 
-Formalized by `Cslib.Algorithms.SAT.DPLL.clauseSatisfied`, a definition declared in [CSLibExt/Algorithms/SAT/DPLL/Solver.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/DPLL/Solver.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html#clause-satisfied).
+Formalized by `Cslib.Algorithms.SAT.DPLL.clauseSatisfied`, a definition declared in [CSLibExt/Algorithms/SAT/DPLL/Solver.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/DPLL/Solver.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html#clause-satisfied).
 
 ## Boolean formula satisfaction check
 
@@ -43,7 +43,7 @@ variables $0, 1, 2, \ldots$ and a CNF formula $\varphi$, this Boolean is true ex
 clause of $\varphi$ passes the Boolean clause satisfaction check for $v$, that is, every clause
 contains a literal $(x, b)$ with $v(x) = b$.
 
-Formalized by `Cslib.Algorithms.SAT.DPLL.formulaSatisfied`, a definition declared in [CSLibExt/Algorithms/SAT/DPLL/Solver.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/DPLL/Solver.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html#formula-satisfied).
+Formalized by `Cslib.Algorithms.SAT.DPLL.formulaSatisfied`, a definition declared in [CSLibExt/Algorithms/SAT/DPLL/Solver.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/DPLL/Solver.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html#formula-satisfied).
 
 ## DPLL with a fuel budget
 
@@ -64,14 +64,14 @@ removes every literal with variable $x$ from the remaining clauses. A decision b
 polarities, a unit literal gives a single recursive call, and no satisfying assignment is
 returned.
 
-Formalized by `Cslib.Algorithms.SAT.DPLL.decideWithFuel`, a definition declared in [CSLibExt/Algorithms/SAT/DPLL/Solver.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/DPLL/Solver.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html#decide-with-fuel).
+Formalized by `Cslib.Algorithms.SAT.DPLL.decideWithFuel`, a definition declared in [CSLibExt/Algorithms/SAT/DPLL/Solver.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/DPLL/Solver.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html#decide-with-fuel).
 
 ## The DPLL procedure
 
 On a CNF formula $\varphi$, the DPLL procedure runs DPLL with fuel
 equal to the number of distinct variables occurring in $\varphi$ and returns its Boolean result.
 
-Formalized by `Cslib.Algorithms.SAT.DPLL.dpll`, a definition declared in [CSLibExt/Algorithms/SAT/DPLL/Solver.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/SAT/DPLL/Solver.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html#dpll).
+Formalized by `Cslib.Algorithms.SAT.DPLL.dpll`, a definition declared in [CSLibExt/Algorithms/SAT/DPLL/Solver.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/SAT/DPLL/Solver.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html#dpll).
 
 ## Depends on
 
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: A deterministic DPLL solver](https://deicyde.github.io/atlas-lean/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Logic/propositional-logic/dpll-algorithm/a-deterministic-dpll-solver)

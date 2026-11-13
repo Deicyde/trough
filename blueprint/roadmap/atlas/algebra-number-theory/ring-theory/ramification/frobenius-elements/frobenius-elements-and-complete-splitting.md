@@ -8,7 +8,7 @@ proof: formalized
 
 # Frobenius elements and complete splitting
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/frobenius-elements-and-complete-splitting/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/frobenius-elements-and-complete-splitting/index.html).
 
 ## Splits Completely
 
@@ -21,7 +21,7 @@ $p$ be an ideal of $A$ and $P$ a prime of $B$ lying over $p$. Then the stabilize
 (the decomposition group of $P$) is trivial if and only if the number of primes of $B$ lying
 over $p$ equals the order of $G$.
 
-Formalized by `Ideal.stabilizer_eq_bot_iff_ncard_primesOver_eq_card`, a theorem declared in [MathlibExt/RingTheory/Frobenius/Splitting.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Frobenius/Splitting.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/frobenius-elements-and-complete-splitting/index.html#stabilizer-eq-bot-iff-ncard-primes-over).
+Formalized by `Ideal.stabilizer_eq_bot_iff_ncard_primesOver_eq_card`, a theorem declared in [MathlibExt/RingTheory/Frobenius/Splitting.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Frobenius/Splitting.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/frobenius-elements-and-complete-splitting/index.html#stabilizer-eq-bot-iff-ncard-primes-over).
 
 ## Trivial Frobenius and the number of primes above, assuming the Frobenius generates
 
@@ -34,7 +34,7 @@ number of elements of $A/p$. Suppose every element of the stabilizer of $P$ in $
 $\mathrm{Frob}_P^n$ for some natural number $n$. Then $\mathrm{Frob}_P = 1$ if and only if the
 number of primes of $B$ lying over $p$ equals the order of $G$.
 
-Formalized by `arithFrobAt_eq_one_iff_ncard_primesOver_eq_card_of_generates`, a theorem declared in [MathlibExt/RingTheory/Frobenius/Splitting.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Frobenius/Splitting.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/frobenius-elements-and-complete-splitting/index.html#arith-frob-at-eq-one-iff-ncard-primes-ov).
+Formalized by `arithFrobAt_eq_one_iff_ncard_primesOver_eq_card_of_generates`, a theorem declared in [MathlibExt/RingTheory/Frobenius/Splitting.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Frobenius/Splitting.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/frobenius-elements-and-complete-splitting/index.html#arith-frob-at-eq-one-iff-ncard-primes-ov).
 
 ## The Frobenius element generates the decomposition group at an unramified prime
 
@@ -49,7 +49,7 @@ $x \in B$, where $q$ is the number of elements of $A/p$. Then every element of t
 $P$ in $G$ (the decomposition group of $P$) equals $\mathrm{Frob}_P^n$ for some natural
 number $n$.
 
-Formalized by `arithFrobAt_generates_stabilizer_of_isUnramifiedAt`, a theorem declared in [MathlibExt/RingTheory/Frobenius/Splitting.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Frobenius/Splitting.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/frobenius-elements-and-complete-splitting/index.html#arith-frob-at-generates-stabilizer-of-is).
+Formalized by `arithFrobAt_generates_stabilizer_of_isUnramifiedAt`, a theorem declared in [MathlibExt/RingTheory/Frobenius/Splitting.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Frobenius/Splitting.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/frobenius-elements-and-complete-splitting/index.html#arith-frob-at-generates-stabilizer-of-is).
 
 ## The Frobenius element is trivial iff the prime splits completely
 
@@ -63,7 +63,7 @@ $P$, an element $\sigma \in G$ with $\sigma(x) \equiv x^q \pmod P$ for all $x \i
 is the number of elements of $A/p$. Then $\mathrm{Frob}_P = 1$ if and only if the number of
 primes of $B$ lying over $p$ equals the order of $G$.
 
-Formalized by `arithFrobAt_eq_one_iff_ncard_primesOver_eq_card`, a theorem declared in [MathlibExt/RingTheory/Frobenius/Splitting.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Frobenius/Splitting.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/frobenius-elements-and-complete-splitting/index.html#arith-frob-at-eq-one-iff-ncard-primes-ov-2).
+Formalized by `arithFrobAt_eq_one_iff_ncard_primesOver_eq_card`, a theorem declared in [MathlibExt/RingTheory/Frobenius/Splitting.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Frobenius/Splitting.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/frobenius-elements-and-complete-splitting/index.html#arith-frob-at-eq-one-iff-ncard-primes-ov-2).
 
 ## Depends on
 
@@ -72,4 +72,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Frobenius elements and complete splitting](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/frobenius-elements-and-complete-splitting/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/ramification/frobenius-elements/frobenius-elements-and-complete-splitting)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/ramification/frobenius-elements/frobenius-elements-and-complete-splitting)

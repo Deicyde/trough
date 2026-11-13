@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.104 Miscellany
 
-Section 15.104 of the Stacks Project, [Tag 0926](https://stacks.math.columbia.edu/tag/0926). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.104 of the Stacks Project, [Tag 0926](https://stacks.math.columbia.edu/tag/0926). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DYJ, a lemma
 
 [Tag 0DYJ](https://stacks.math.columbia.edu/tag/0DYJ) in the Stacks Project.
 
-**`Stacks.AdicSystem.ExtEssentiallyConstant.ext_quotient_ideal_pow_essentially_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean, line 1323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean#L1323).
+**`Stacks.AdicSystem.ExtEssentiallyConstant.ext_quotient_ideal_pow_essentially_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean, line 1323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean#L1323).
 
 > **Stacks 0DYJ.** If high-degree Ext from a pseudo-coherent complex into every finite module is
 > `I`-power torsion, then the inverse system `Ext^p(K, M / I ^ n M)` is essentially constant with
@@ -56,7 +56,7 @@ public theorem ext_quotient_ideal_pow_essentially_constant
 
 [Tag 0FXN](https://stacks.math.columbia.edu/tag/0FXN) in the Stacks Project.
 
-**`Stacks.TorIdealPowerVanishing.torMap_idealPowerInclusion_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Tor/IdealPower.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Tor/IdealPower.lean#L143).
+**`Stacks.TorIdealPowerVanishing.torMap_idealPowerInclusion_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Tor/IdealPower.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Tor/IdealPower.lean#L142).
 
 > **Stacks Project, Tag 0FXN.** If `M` is a finite module over a Noetherian ring and `N`
 > is annihilated by an ideal `I`, then for some positive power of `I` the inclusion
@@ -82,7 +82,7 @@ public theorem torMap_idealPowerInclusion_eq_zero
 
 [Tag 0D2L](https://stacks.math.columbia.edu/tag/0D2L) in the Stacks Project.
 
-**`Stacks.PseudoCoherent.DerivedInverseLimit.derivedLimit_tensor_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/InverseLimit.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/InverseLimit.lean#L179).
+**`Stacks.PseudoCoherent.DerivedInverseLimit.derivedLimit_tensor_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/InverseLimit.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/InverseLimit.lean#L179).
 
 > **Stacks Project, Tag 0D2L.** Let `K` be pseudo-coherent and `(Mₙ)` an inverse
 > system of modules. If `L` and `L'` are derived inverse limits of `(Mₙ)` and
@@ -118,7 +118,7 @@ theorem derivedLimit_tensor_iso
 
 [Tag 0929](https://stacks.math.columbia.edu/tag/0929) in the Stacks Project.
 
-**`Stacks.ProjectiveDimension.Additivity.projectiveDimension_restrictScalars_quotient_eq_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ProjectiveDimension/Quotient.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/ProjectiveDimension/Quotient.lean#L338).
+**`Stacks.ProjectiveDimension.Additivity.projectiveDimension_restrictScalars_quotient_eq_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ProjectiveDimension/Quotient.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/ProjectiveDimension/Quotient.lean#L338).
 
 > **Stacks 0929.** Let `R` be a Noetherian local ring, `I` an ideal of `R`, and `E` a
 > nonzero finite `R ⧸ I`-module. If `R ⧸ I` has finite projective dimension over `R` and `E` has
@@ -143,7 +143,7 @@ theorem projectiveDimension_restrictScalars_quotient_eq_add
 
 [Tag 0GYI](https://stacks.math.columbia.edu/tag/0GYI) in the Stacks Project.
 
-**`Stacks.SubcomplexEnlargement.exists_enlargements_killing_kernel_and_covering_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/SubcomplexEnlargement/CompatibleEnlargements.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/SubcomplexEnlargement/CompatibleEnlargements.lean#L370).
+**`Stacks.SubcomplexEnlargement.exists_enlargements_killing_kernel_and_covering_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/SubcomplexEnlargement/CompatibleEnlargements.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/SubcomplexEnlargement/CompatibleEnlargements.lean#L370).
 
 > Compatible subcomplexes of quasi-isomorphic complexes after derived base change can be
 > enlarged, with a bound depending only on the ring map, so that the kernel defect vanishes and the
@@ -204,7 +204,7 @@ public theorem exists_enlargements_killing_kernel_and_covering_image
 
 [Tag 0H84](https://stacks.math.columbia.edu/tag/0H84) in the Stacks Project.
 
-**`Stacks.DerivedCategory.MultiplicationCone.homology_isZero_of_localization_and_cone_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/ConeBoundedness.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/ConeBoundedness.lean#L94).
+**`Stacks.DerivedCategory.MultiplicationCone.homology_isZero_of_localization_and_cone_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/ConeBoundedness.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/ConeBoundedness.lean#L94).
 
 > Let `C` be a cone of multiplication by `f` on `M`. If every negative cohomology module of
 > `M` vanishes after localizing away from `f`, and the cohomology of `C` vanishes in degrees below
@@ -230,7 +230,7 @@ theorem homology_isZero_of_localization_and_cone_isZero
 
 [Tag 0H85](https://stacks.math.columbia.edu/tag/0H85) in the Stacks Project.
 
-**`Stacks.Flatness.LocalizationReduction.isomorphic_to_flat_module_of_localization_and_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalizationReduction.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/LocalizationReduction.lean#L506).
+**`Stacks.Flatness.LocalizationReduction.isomorphic_to_flat_module_of_localization_and_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalizationReduction.lean, line 502](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/LocalizationReduction.lean#L502).
 
 > Let `M ∈ D(R)` have no positive cohomology. If its derived base changes to the
 > localization `R_f` and the quotient `R / fR` are each isomorphic to a flat module placed in
@@ -266,4 +266,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.104, Tag 0926](https://stacks.math.columbia.edu/tag/0926)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

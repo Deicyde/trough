@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.75 Derived hom
 
-Section 15.75 of the Stacks Project, [Tag 0A5W](https://stacks.math.columbia.edu/tag/0A5W). 8 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.75 of the Stacks Project, [Tag 0A5W](https://stacks.math.columbia.edu/tag/0A5W). 8 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A63, an equation
 
 [Tag 0A63](https://stacks.math.columbia.edu/tag/0A63) in the Stacks Project.
 
-**`StacksDraft.DerivedHom.homInternalHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/DerivedAdjunction.lean, line 2909](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/DerivedAdjunction.lean#L2909).
+**`StacksDraft.DerivedHom.homInternalHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/DerivedAdjunction.lean, line 2932](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/DerivedAdjunction.lean#L2932).
 
 > **Stacks 0A63.** The canonical characterization equation in `D(R)`:
 > `Hom(K, RHom(L, M)) ≃+ Hom(K ⊗ᴸ L, M)`. The bifunctors and the equivalence are
@@ -35,7 +35,7 @@ public noncomputable def homInternalHomEquiv {R : Type u} [CommRing R]
 
 [Tag 0A64](https://stacks.math.columbia.edu/tag/0A64) in the Stacks Project.
 
-**`homComplex_of_isKInjective_represents_RHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/RHom.lean#L272).
+**`homComplex_of_isKInjective_represents_RHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/RHom.lean#L272).
 
 > **Stacks 0A64**.
 > If `I` is K-injective, then the degree-`n` cohomology of the Hom complex `Hom^•(L, I)` is
@@ -55,7 +55,7 @@ theorem homComplex_of_isKInjective_represents_RHom (L I : CochainComplex C ℤ) 
 
 [Tag 0A65](https://stacks.math.columbia.edu/tag/0A65) in the Stacks Project.
 
-**`StacksDraft.DerivedHom.derivedHomCurrying`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/DerivedAdjunction.lean, line 3927](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/DerivedAdjunction.lean#L3927). References: SGA 6 I (7.4), “affine case, 1st iso”; SGA 7 VIII (1.1), “(1.1.2) in D(R)”.
+**`StacksDraft.DerivedHom.derivedHomCurrying`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/DerivedAdjunction.lean, line 3950](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/DerivedAdjunction.lean#L3950). References: SGA 6 I (7.4), “affine case, 1st iso”; SGA 7 VIII (1.1), “(1.1.2) in D(R)”.
 
 > **Stacks 0A65.** Derived Hom satisfies the canonical currying isomorphism
 > `RHom(K, RHom(L, M)) ≅ RHom(K ⊗ᴸ L, M)`, functorially in `K`, `L`, and `M`.
@@ -72,7 +72,7 @@ public noncomputable def derivedHomCurrying {R : Type u} [CommRing R]
 
 [Tag 0A66](https://stacks.math.columbia.edu/tag/0A66) in the Stacks Project.
 
-**`StacksDraft.DerivedHom.projectiveHomComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/ProjectiveRHom.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/ProjectiveRHom.lean#L387).
+**`StacksDraft.DerivedHom.projectiveHomComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/ProjectiveRHom.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/ProjectiveRHom.lean#L387).
 
 > **Stacks 0A66.** A bounded-above complex of projective modules computes the derived
 > internal Hom against every target complex. The comparison is natural in both variables,
@@ -84,7 +84,7 @@ def projectiveHomComparison {R : Type u} [CommRing R]
     [HasDerivedCategory.{w} (ModuleCat.{u} R)] : ProjectiveHomComparison R
 ```
 
-**`StacksDraft.DerivedHom.projectiveHomComparisonULift`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/ProjectiveRHom.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/ProjectiveRHom.lean#L403).
+**`StacksDraft.DerivedHom.projectiveHomComparisonULift`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/ProjectiveRHom.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/ProjectiveRHom.lean#L403).
 
 > The comparison of Stacks 0A66 in an independently chosen module universe. The lifted
 > ring is canonically isomorphic to `R`, and retains all naturality and model comparisons.
@@ -95,7 +95,7 @@ abbrev projectiveHomComparisonULift {R : Type u} [CommRing R]
     ProjectiveHomComparison (ULift.{v} R)
 ```
 
-**`cohomologyClassRHomAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/RHom.lean#L293).
+**`cohomologyClassRHomAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/RHom.lean#L293).
 
 > **Stacks 0A66**.
 > Let `P` be a bounded above complex of projective `R`-modules and `L` a complex of `R`-modules.
@@ -114,7 +114,7 @@ noncomputable def cohomologyClassRHomAddEquiv (P L : CochainComplex (ModuleCat R
           ((HomotopyCategory.quotient (ModuleCat R) (ComplexShape.up ℤ)).obj (L⟦n⟧)))
 ```
 
-**`homComplexHomologyRHomAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/RHom.lean#L319).
+**`homComplexHomologyRHomAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/RHom.lean#L319).
 
 > **Stacks 0A66**.
 > The comparison isomorphism of [stacks 0A66] read on the homology of the Hom complex: for `P` a
@@ -131,7 +131,7 @@ noncomputable def homComplexHomologyRHomAddEquiv (P L : CochainComplex (ModuleCa
           ((HomotopyCategory.quotient (ModuleCat R) (ComplexShape.up ℤ)).obj (L⟦n⟧)))
 ```
 
-**`homComplex_represents_RHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/RHom.lean#L353). References: SGA 4 XVII (5.5.6.3), “more general”; SGA 4½ Rapport (4.3), “more general”; SGA 5 IIIB (5.7), “partial”; SGA 6 I (7.1.1), “partial”.
+**`homComplex_represents_RHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/RHom.lean#L353). References: SGA 4 XVII (5.5.6.3), “more general”; SGA 4½ Rapport (4.3), “more general”; SGA 5 IIIB (5.7), “partial”; SGA 6 I (7.1.1), “partial”.
 
 > **Stacks 0A66**.
 > Let `P` be a bounded above complex of projective `R`-modules and `L` a complex of `R`-modules.
@@ -150,7 +150,7 @@ theorem homComplex_represents_RHom (P L : CochainComplex (ModuleCat R) ℤ) (d n
         DerivedCategory.Qh.map (CochainComplex.HomComplex.CohomologyClass.homAddEquiv c))
 ```
 
-**`cohomologyClassRHomAddEquiv_naturality_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/RHom.lean#L366).
+**`cohomologyClassRHomAddEquiv_naturality_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/RHom.lean#L366).
 
 > **Stacks 0A66**.
 > Naturality of the comparison isomorphism in the first variable: for `f : P' ⟶ P` a morphism of
@@ -169,7 +169,7 @@ theorem cohomologyClassRHomAddEquiv_naturality_left (P P' L : CochainComplex (Mo
         cohomologyClassRHomAddEquiv P L d n c
 ```
 
-**`cohomologyClassRHomAddEquiv_naturality_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/RHom.lean#L384).
+**`cohomologyClassRHomAddEquiv_naturality_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/RHom.lean#L384).
 
 > **Stacks 0A66**.
 > Naturality of the comparison isomorphism in the second variable: for `g : L ⟶ L'` the square
@@ -187,7 +187,7 @@ theorem cohomologyClassRHomAddEquiv_naturality_right (P L L' : CochainComplex (M
           ((HomotopyCategory.quotient (ModuleCat R) (ComplexShape.up ℤ)).map (g⟦n⟧'))
 ```
 
-**`homComplexRHom_isKInjective_model_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/RHom.lean#L402).
+**`homComplexRHom_isKInjective_model_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/RHom.lean#L402).
 
 > **Stacks 0A66**.
 > Compatibility of the two routes to `RHom`: for `g : L ⟶ I` with `I` K-injective, the square whose
@@ -207,7 +207,7 @@ theorem homComplexRHom_isKInjective_model_comm (P L I : CochainComplex (ModuleCa
           ((HomotopyCategory.quotient (ModuleCat R) (ComplexShape.up ℤ)).map (g⟦n⟧'))
 ```
 
-**`homComplexRHom_eq_isKInjective_model_route`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/RHom.lean#L419).
+**`homComplexRHom_eq_isKInjective_model_route`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/RHom.lean#L419).
 
 > **Stacks 0A66**.
 > The comparison of [stacks 0A66] is *computed by* the comparison of [stacks 0A64] through a
@@ -227,7 +227,7 @@ theorem homComplexRHom_eq_isKInjective_model_route (P L I : CochainComplex (Modu
           ((HomotopyCategory.quotient (ModuleCat R) (ComplexShape.up ℤ)).map (g⟦n⟧')))
 ```
 
-**`Dualizing.homComplexRHomologyLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RelativeBaseChangeAssemblyLinear.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/RelativeBaseChangeAssemblyLinear.lean#L99).
+**`Dualizing.homComplexRHomologyLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RelativeBaseChangeAssemblyLinear.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/RelativeBaseChangeAssemblyLinear.lean#L99).
 
 > **[stacks 0A66] read on the derived category, `S`-linearly.**  For `P` a bounded above complex
 > of projective `S`-modules and `L` any complex, the degree-`n` cohomology of the `S`-linear Hom
@@ -255,7 +255,7 @@ def homComplexRHomologyLinearEquiv (P L : CochainComplex (ModuleCat.{u} S) ℤ) 
 
 [Tag 0A67](https://stacks.math.columbia.edu/tag/0A67) in the Stacks Project.
 
-**`StacksDraft.DerivedHom.exists_evaluationToIteratedDerivedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/DerivedAdjunction.lean, line 4019](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/DerivedAdjunction.lean#L4019).
+**`StacksDraft.DerivedHom.exists_evaluationToIteratedDerivedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/DerivedAdjunction.lean, line 4042](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/DerivedAdjunction.lean#L4042).
 
 > **Stacks 0A67.** There is a canonical morphism
 > `RHom_R(L, M) ⊗ᴸ_R K ⟶ RHom_R(RHom_R(K, L), M)` for arbitrary objects of `D(R)`,
@@ -296,7 +296,7 @@ public theorem exists_evaluationToIteratedDerivedHom :
 
 [Tag 0A8J](https://stacks.math.columbia.edu/tag/0A8J) in the Stacks Project.
 
-**`StacksDraft.DerivedHom.derivedInternalHomComposition_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/DerivedComposition.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/DerivedComposition.lean#L48).
+**`StacksDraft.DerivedHom.derivedInternalHomComposition_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/DerivedComposition.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/DerivedComposition.lean#L48).
 
 > **Stacks 0A8J.** The canonical composition morphisms
 > `RHom(L, M) ⊗ᴸ RHom(K, L) ⟶ RHom(K, M)` in `D(R)` are contravariantly natural in
@@ -340,7 +340,7 @@ theorem derivedInternalHomComposition_natural
 
 [Tag 0BYN](https://stacks.math.columbia.edu/tag/0BYN) in the Stacks Project.
 
-**`StacksDraft.DerivedHom.derivedTensorHomDiagonal`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/DerivedTensorHom.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/DerivedTensorHom.lean#L66).
+**`StacksDraft.DerivedHom.derivedTensorHomDiagonal`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/DerivedTensorHom.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/DerivedTensorHom.lean#L66).
 
 > **Stacks 0BYN.** The canonical morphism
 > `K ⊗ᴸ RHom(M, L) ⟶ RHom(M, K ⊗ᴸ L)` in the derived category.
@@ -349,7 +349,7 @@ theorem derivedInternalHomComposition_natural
 alias derivedTensorHomDiagonal
 ```
 
-**`StacksDraft.DerivedHom.derivedTensorHomDiagonal_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/DerivedTensorHom.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/DerivedTensorHom.lean#L71).
+**`StacksDraft.DerivedHom.derivedTensorHomDiagonal_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/DerivedTensorHom.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/DerivedTensorHom.lean#L71).
 
 > **Stacks 0BYN.** The derived tensor--Hom diagonal is covariantly natural in `K` and `L`
 > and contravariantly natural in `M`.
@@ -383,7 +383,7 @@ theorem derivedTensorHomDiagonal_natural :
 
 [Tag 0A6B](https://stacks.math.columbia.edu/tag/0A6B) in the Stacks Project.
 
-**`StacksDraft.DerivedHom.derivedTensorHomCoevaluation_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/DerivedTensorHom.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/DerivedTensorHom.lean#L100).
+**`StacksDraft.DerivedHom.derivedTensorHomCoevaluation_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/DerivedTensorHom.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/DerivedTensorHom.lean#L100).
 
 > **Stacks 0A6B.** The canonical morphism `K ⟶ RHom(L, K ⊗ᴸ L)` is the transpose
 > of the identity on `K ⊗ᴸ L`; it is covariantly natural in `K` and dinatural in `L`.
@@ -419,4 +419,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.75, Tag 0A5W](https://stacks.math.columbia.edu/tag/0A5W)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

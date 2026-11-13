@@ -8,13 +8,13 @@ proof: formalized
 
 # 60.11 Crystals in modules
 
-Section 60.11 of the Stacks Project, [Tag 07IR](https://stacks.math.columbia.edu/tag/07IR). 3 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 60.11 of the Stacks Project, [Tag 07IR](https://stacks.math.columbia.edu/tag/07IR). 3 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07IS, a definition
 
 [Tag 07IS](https://stacks.math.columbia.edu/tag/07IS) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.IsLocallyQuasiCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/LocallyQuasicoherent.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/LocallyQuasicoherent.lean#L88). The attribute's comment: “part (1): locally quasi-coherent, on the big site CRIS(X/S)”.
+**`Crystalline.GlobalCrystallineSituation.IsLocallyQuasiCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/LocallyQuasicoherent.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/LocallyQuasicoherent.lean#L88). The attribute's comment: “part (1): locally quasi-coherent, on the big site CRIS(X/S)”.
 
 > A sheaf of `𝒪_{X/S}`-modules on the big crystalline site is *locally quasi-coherent* when
 > for every object `(U, T, δ)` the restriction `F_T` is a quasi-coherent `𝒪_T`-module.
@@ -23,7 +23,7 @@ Section 60.11 of the Stacks Project, [Tag 07IR](https://stacks.math.columbia.edu
 def IsLocallyQuasiCoherent (M : SheafOfModules.{u} (crystallineStructureSheaf S)) : Prop
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.IsLocallyQuasiCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/LocallyQuasicoherent.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/LocallyQuasicoherent.lean#L104). The attribute's comment: “part (1): locally quasi-coherent, on the small site Cris(X/S)”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.IsLocallyQuasiCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/LocallyQuasicoherent.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/LocallyQuasicoherent.lean#L104). The attribute's comment: “part (1): locally quasi-coherent, on the small site Cris(X/S)”.
 
 > A sheaf of `𝒪_{X/S}`-modules on the small crystalline site is *locally quasi-coherent* when
 > for every object `(U, T, δ)` of `Cris(X/S)` the restriction `F_T` is a quasi-coherent
@@ -35,7 +35,7 @@ def IsLocallyQuasiCoherent (M : SheafOfModules.{u} (crystallineStructureSheaf S)
 def IsLocallyQuasiCoherent (M : SheafOfModules.{u} (structureSheaf S)) : Prop
 ```
 
-**`Crystalline.GlobalCrystallineSituation.IsSheafCrystal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/SheafCrystal.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/SheafCrystal.lean#L294). The attribute's comment: “part (3): crystal in modules on the big site CRIS(X/S), with the comparison maps of sheaves of modules”.
+**`Crystalline.GlobalCrystallineSituation.IsSheafCrystal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/SheafCrystal.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/SheafCrystal.lean#L294). The attribute's comment: “part (3): crystal in modules on the big site CRIS(X/S), with the comparison maps of sheaves of modules”.
 
 > **Stacks Project, Tag 07IS.**  A sheaf of `𝒪_{X/S}`-modules on the big crystalline site is a
 > *crystal in `𝒪_{X/S}`-modules* when for every morphism `f : (U, T, δ) ⟶ (U', T', δ')` of the site
@@ -52,7 +52,7 @@ def IsSheafCrystal {S : GlobalCrystallineSituation.{u}}
     (M : SheafOfModules.{u} (crystallineStructureSheaf S)) : Prop
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.IsSheafCrystal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SheafCrystal.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SheafCrystal.lean#L219). The attribute's comment: “part (3): crystal in modules on the small site Cris(X/S), with the comparison maps of sheaves”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.IsSheafCrystal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SheafCrystal.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SheafCrystal.lean#L220). The attribute's comment: “part (3): crystal in modules on the small site Cris(X/S), with the comparison maps of sheaves”.
 
 > **Stacks Project, Tag 07IS, part (3) for `𝒞 = Cris(X/S)`.**  A sheaf of `𝒪_{X/S}`-modules on
 > the small crystalline site is a *crystal in `𝒪_{X/S}`-modules* when for every morphism
@@ -72,13 +72,13 @@ def IsSheafCrystal {S : GlobalCrystallineSituation.{u}}
 
 Declarations registered for the tag:
 
-- [`SheafOfModules.IsQuasicoherentOnSite`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/QuasicoherentOnSite.lean#L99), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/Basic.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/Basic.lean#L34) (StacksFrontier): “part (2): quasi-coherent, on either crystalline site”.
+- [`SheafOfModules.IsQuasicoherentOnSite`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/QuasicoherentOnSite.lean#L99), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/Basic.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/Basic.lean#L34) (StacksFrontier): “part (2): quasi-coherent, on either crystalline site”.
 
 ## Tag 07IT, a lemma
 
 [Tag 07IT](https://stacks.math.columbia.edu/tag/07IT) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.isSheafCrystal_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentCrystal.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentCrystal.lean#L405). The attribute's comment: “the implication (1) ⇒ (2)(b) on the big site CRIS(X/S): a quasi-coherent sheaf of 𝒪\_\{X/S}-modules is a crystal in 𝒪\_\{X/S}-modules, the crystal condition being read with the comparison maps of sheaves of modules. The same implication on the small site Cris(X/S), and the implication (1) ⇒ (2)(a) on each of the two sites, carry this tag separately. The converse (2) ⇒ (1) is a separate statement”.
+**`Crystalline.GlobalCrystallineSituation.isSheafCrystal_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentCrystal.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentCrystal.lean#L405). The attribute's comment: “the implication (1) ⇒ (2)(b) on the big site CRIS(X/S): a quasi-coherent sheaf of 𝒪\_\{X/S}-modules is a crystal in 𝒪\_\{X/S}-modules, the crystal condition being read with the comparison maps of sheaves of modules. The same implication on the small site Cris(X/S), and the implication (1) ⇒ (2)(a) on each of the two sites, carry this tag separately. The converse (2) ⇒ (1) is a separate statement”.
 
 > **Stacks Project, Tag 07IT, the implication (1) ⇒ (2)(b): a quasi-coherent sheaf of
 > `𝒪_{X/S}`-modules on the big crystalline site is a crystal in `𝒪_{X/S}`-modules.**
@@ -102,7 +102,7 @@ theorem isSheafCrystal_of_isQuasicoherentOnSite
     IsSheafCrystal M
 ```
 
-**`Crystalline.GlobalCrystallineSituation.isLocallyQuasiCoherent_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentImpliesLocal.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentImpliesLocal.lean#L489). The attribute's comment: “the implication (1) ⇒ (2)(a) on the big site CRIS(X/S): quasi-coherent implies locally quasi-coherent. The same implication on the small site Cris(X/S), and the other half (1) ⇒ (2)(b) that a quasi-coherent module is a crystal, on each of the two sites, carry this tag separately. The converse (2) ⇒ (1) is a separate statement”.
+**`Crystalline.GlobalCrystallineSituation.isLocallyQuasiCoherent_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentImpliesLocal.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentImpliesLocal.lean#L490). The attribute's comment: “the implication (1) ⇒ (2)(a) on the big site CRIS(X/S): quasi-coherent implies locally quasi-coherent. The same implication on the small site Cris(X/S), and the other half (1) ⇒ (2)(b) that a quasi-coherent module is a crystal, on each of the two sites, carry this tag separately. The converse (2) ⇒ (1) is a separate statement”.
 
 > **Stacks Project, Tag 07IT, the implication (1) ⇒ (2)(a): a quasi-coherent sheaf of
 > `𝒪_{X/S}`-modules on the big crystalline site is locally quasi-coherent.**
@@ -130,7 +130,7 @@ theorem isLocallyQuasiCoherent_of_isQuasicoherentOnSite
     IsLocallyQuasiCoherent M
 ```
 
-**`Crystalline.GlobalCrystallineSituation.isQuasicoherentOnSite_of_isLocallyQuasiCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentOfCrystal.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentOfCrystal.lean#L352). The attribute's comment: “the implication (2) ⇒ (1) on the big site CRIS(X/S): a sheaf of 𝒪\_\{X/S}-modules whose restrictions F\_T are all quasi-coherent and which is a crystal in 𝒪\_\{X/S}-modules is quasi-coherent on the site”.
+**`Crystalline.GlobalCrystallineSituation.isQuasicoherentOnSite_of_isLocallyQuasiCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentOfCrystal.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentOfCrystal.lean#L352). The attribute's comment: “the implication (2) ⇒ (1) on the big site CRIS(X/S): a sheaf of 𝒪\_\{X/S}-modules whose restrictions F\_T are all quasi-coherent and which is a crystal in 𝒪\_\{X/S}-modules is quasi-coherent on the site”.
 
 > **The implication (2) ⇒ (1) of [Stacks, Tag 07IT] on the big crystalline site `CRIS(X/S)`: a
 > locally quasi-coherent sheaf of `𝒪_{X/S}`-modules which is a crystal in `𝒪_{X/S}`-modules is
@@ -152,7 +152,7 @@ theorem isQuasicoherentOnSite_of_isLocallyQuasiCoherent
     (hcrys : IsSheafCrystal M) : M.IsQuasicoherentOnSite
 ```
 
-**`Crystalline.GlobalCrystallineSituation.isQuasicoherentOnSite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentOfCrystal.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentOfCrystal.lean#L371). The attribute's comment: “the equivalence on the big site CRIS(X/S), with the crystal condition read with the comparison maps of sheaves of modules”.
+**`Crystalline.GlobalCrystallineSituation.isQuasicoherentOnSite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentOfCrystal.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/QuasicoherentOfCrystal.lean#L371). The attribute's comment: “the equivalence on the big site CRIS(X/S), with the crystal condition read with the comparison maps of sheaves of modules”.
 
 > **[Stacks, Tag 07IT] on the big crystalline site `CRIS(X/S)`:** a sheaf of
 > `𝒪_{X/S}`-modules is quasi-coherent on the site if and only if all its restrictions `F_T` are
@@ -170,7 +170,7 @@ theorem isQuasicoherentOnSite_iff (M : SheafOfModules.{u} (crystallineStructureS
     M.IsQuasicoherentOnSite ↔ IsLocallyQuasiCoherent M ∧ IsSheafCrystal M
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.isSheafCrystal_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentCrystal.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentCrystal.lean#L497). The attribute's comment: “the implication (1) ⇒ (2)(b) on the small site Cris(X/S): a quasi-coherent sheaf of 𝒪\_\{X/S}-modules is a crystal in 𝒪\_\{X/S}-modules, the crystal condition being read with the comparison maps of sheaves of modules. The same implication on the big site CRIS(X/S), and the implication (1) ⇒ (2)(a) on each of the two sites, carry this tag separately. The converse (2) ⇒ (1) is a separate statement”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.isSheafCrystal_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentCrystal.lean, line 497](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentCrystal.lean#L497). The attribute's comment: “the implication (1) ⇒ (2)(b) on the small site Cris(X/S): a quasi-coherent sheaf of 𝒪\_\{X/S}-modules is a crystal in 𝒪\_\{X/S}-modules, the crystal condition being read with the comparison maps of sheaves of modules. The same implication on the big site CRIS(X/S), and the implication (1) ⇒ (2)(a) on each of the two sites, carry this tag separately. The converse (2) ⇒ (1) is a separate statement”.
 
 > **Stacks Project, Tag 07IT, the implication (1) ⇒ (2)(b): a quasi-coherent sheaf of
 > `𝒪_{X/S}`-modules on the small crystalline site is a crystal in `𝒪_{X/S}`-modules.**
@@ -197,7 +197,7 @@ theorem isSheafCrystal_of_isQuasicoherentOnSite
     IsSheafCrystal M
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.isLocallyQuasiCoherent_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentImpliesLocal.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentImpliesLocal.lean#L384). The attribute's comment: “the implication (1) ⇒ (2)(a) on the small site Cris(X/S): quasi-coherent implies locally quasi-coherent. The same implication on the big site CRIS(X/S), and the other half (1) ⇒ (2)(b) that a quasi-coherent module is a crystal, on each of the two sites, carry this tag separately. The converse (2) ⇒ (1) is a separate statement”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.isLocallyQuasiCoherent_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentImpliesLocal.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentImpliesLocal.lean#L384). The attribute's comment: “the implication (1) ⇒ (2)(a) on the small site Cris(X/S): quasi-coherent implies locally quasi-coherent. The same implication on the big site CRIS(X/S), and the other half (1) ⇒ (2)(b) that a quasi-coherent module is a crystal, on each of the two sites, carry this tag separately. The converse (2) ⇒ (1) is a separate statement”.
 
 > **Stacks Project, Tag 07IT for `𝒞 = Cris(X/S)`, the implication (1) ⇒ (2)(a): a quasi-coherent
 > sheaf of `𝒪_{X/S}`-modules on the small crystalline site is locally quasi-coherent.**
@@ -222,7 +222,7 @@ theorem isLocallyQuasiCoherent_of_isQuasicoherentOnSite
     IsLocallyQuasiCoherent M
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.isQuasicoherentOnSite_of_isLocallyQuasiCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentOfCrystal.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentOfCrystal.lean#L333). The attribute's comment: “the implication (2) ⇒ (1) on the small site Cris(X/S): a sheaf of 𝒪\_\{X/S}-modules whose restrictions F\_T are all quasi-coherent and which is a crystal in 𝒪\_\{X/S}-modules is quasi-coherent on the site”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.isQuasicoherentOnSite_of_isLocallyQuasiCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentOfCrystal.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentOfCrystal.lean#L333). The attribute's comment: “the implication (2) ⇒ (1) on the small site Cris(X/S): a sheaf of 𝒪\_\{X/S}-modules whose restrictions F\_T are all quasi-coherent and which is a crystal in 𝒪\_\{X/S}-modules is quasi-coherent on the site”.
 
 > **The implication (2) ⇒ (1) of [Stacks, Tag 07IT] on the small crystalline site `Cris(X/S)`: a
 > locally quasi-coherent sheaf of `𝒪_{X/S}`-modules which is a crystal in `𝒪_{X/S}`-modules is
@@ -244,7 +244,7 @@ theorem isQuasicoherentOnSite_of_isLocallyQuasiCoherent
     (hcrys : IsSheafCrystal M) : M.IsQuasicoherentOnSite
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.isQuasicoherentOnSite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentOfCrystal.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentOfCrystal.lean#L353). The attribute's comment: “the equivalence on the small site Cris(X/S), with the crystal condition read with the comparison maps of sheaves of modules”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.isQuasicoherentOnSite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentOfCrystal.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/QuasicoherentOfCrystal.lean#L353). The attribute's comment: “the equivalence on the small site Cris(X/S), with the crystal condition read with the comparison maps of sheaves of modules”.
 
 > **[Stacks, Tag 07IT] on the small crystalline site `Cris(X/S)`:** a sheaf of
 > `𝒪_{X/S}`-modules is quasi-coherent on the site if and only if all its restrictions `F_T` are
@@ -267,7 +267,7 @@ theorem isQuasicoherentOnSite_iff (M : SheafOfModules.{u} (structureSheaf S)) :
 
 [Tag 07IU](https://stacks.math.columbia.edu/tag/07IU) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.IsFiniteLocallyFreeQuasicoherentCrystal`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/FiniteLocallyFreeCrystal.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/FiniteLocallyFreeCrystal.lean#L135). The attribute's comment: “crystals in finite locally free modules on the small site Cris(X/S), with the crystal in quasi-coherent modules taken as condition (1) of Stacks 07IT”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.IsFiniteLocallyFreeQuasicoherentCrystal`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/FiniteLocallyFreeCrystal.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/FiniteLocallyFreeCrystal.lean#L135). The attribute's comment: “crystals in finite locally free modules on the small site Cris(X/S), with the crystal in quasi-coherent modules taken as condition (1) of Stacks 07IT”.
 
 > **Stacks Project, Tag 07IU.**  A *crystal in finite locally free modules* on the small
 > crystalline site: a sheaf of `𝒪_{X/S}`-modules on `Cris(X/S)` which is a crystal in quasi-coherent
@@ -281,7 +281,7 @@ structure IsFiniteLocallyFreeQuasicoherentCrystal {S : GlobalCrystallineSituatio
     (M : SheafOfModules.{u} (structureSheaf S)) : Prop
 ```
 
-**`Crystalline.GlobalCrystallineSituation.IsFiniteLocallyFreeQuasicoherentCrystal`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FCrystal.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/FCrystal.lean#L380). The attribute's comment: “crystals in finite locally free modules on the big site CRIS(X/S), with the crystal in quasi-coherent modules taken as condition (1) of Stacks 07IT”.
+**`Crystalline.GlobalCrystallineSituation.IsFiniteLocallyFreeQuasicoherentCrystal`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FCrystal.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FCrystal.lean#L389). The attribute's comment: “crystals in finite locally free modules on the big site CRIS(X/S), with the crystal in quasi-coherent modules taken as condition (1) of Stacks 07IT”.
 
 > **Stacks Project, Tag 07IU.**  A *crystal in finite locally free modules* on the big
 > crystalline site: a sheaf of `𝒪_{X/S}`-modules on `CRIS(X/S)` which is a crystal in quasi-coherent
@@ -289,9 +289,9 @@ structure IsFiniteLocallyFreeQuasicoherentCrystal {S : GlobalCrystallineSituatio
 > free, every object of the site having a covering on whose members the restricted module is a
 > finite free module over the restricted structure sheaf.
 >
-> This is the condition [Stacks, Tag 07N3] builds its F-crystal on, so it is stated here, upstream
-> of `Crystalline.FCrystal`; the small-site form of the same condition and what either form gives
-> through [Stacks, Tag 07IT] are in
+> This is the big-site form of the condition [Stacks, Tag 07N3] builds its F-crystal on, so it is
+> stated here, upstream of `Crystalline.FCrystal`; the small-site form of the same condition and
+> what either form gives through [Stacks, Tag 07IT] are in
 > `StacksFrontier.AlgebraicGeometry.Crystalline.CrystalsModules.FiniteLocallyFreeCrystal`.
 
 ```lean
@@ -301,7 +301,7 @@ structure IsFiniteLocallyFreeQuasicoherentCrystal {S : GlobalCrystallineSituatio
 
 Declarations registered for the tag:
 
-- [`SheafOfModules.IsQuasicoherentOnSite`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/QuasicoherentOnSite.lean#L99), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/FiniteLocallyFreeCrystal.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/FiniteLocallyFreeCrystal.lean#L112) (StacksFrontier): “a crystal in quasi-coherent modules on either crystalline site is a quasi-coherent sheaf of modules, condition (1) of Stacks 07IT”.
+- [`SheafOfModules.IsQuasicoherentOnSite`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/QuasicoherentOnSite.lean#L99), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/FiniteLocallyFreeCrystal.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsModules/FiniteLocallyFreeCrystal.lean#L112) (StacksFrontier): “a crystal in quasi-coherent modules on either crystalline site is a quasi-coherent sheaf of modules, condition (1) of Stacks 07IT”.
 
 ## Depends on
 
@@ -310,4 +310,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 60.11, Tag 07IR](https://stacks.math.columbia.edu/tag/07IR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

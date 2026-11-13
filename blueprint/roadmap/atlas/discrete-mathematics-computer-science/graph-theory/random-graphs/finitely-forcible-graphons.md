@@ -7,7 +7,7 @@ statement: formalized
 
 # Finitely forcible graphons
 
-7 results, 6 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html).
+7 results, 6 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html).
 
 ## Graphon
 
@@ -17,7 +17,7 @@ and takes values in $[0, 1]$ at every point of $\mathbb{R}^2$.
 
 Only the values of $W$ on $[0, 1]^2$ enter the densities.
 
-Formalized by `MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.IsGraphon`, a definition declared in [WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html#is-graphon).
+Formalized by `MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.IsGraphon`, a definition declared in [WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html#is-graphon).
 
 ## Labelled density
 
@@ -34,7 +34,7 @@ When $W$ is a graphon, $\tau(G, W)$ is the probability that the $W$-random graph
 $\{0, \dots, k-1\}$ (independent uniform points $x_i \in [0, 1]$, each pair $\{i, j\}$ joined
 independently with probability $W(x_i, x_j)$) equals $G$.
 
-Formalized by `MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.labelledDensity`, a definition declared in [WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html#labelled-density).
+Formalized by `MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.labelledDensity`, a definition declared in [WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html#labelled-density).
 
 ## Density of a graph in a graphon
 
@@ -45,7 +45,7 @@ $\tau(G, W)$ over all graphs $G$ on $\{0, \dots, k-1\}$ that are isomorphic to $
 When $W$ is a graphon, $d(H, W)$ is the probability that the $W$-random graph on
 $\{0, \dots, k-1\}$ is isomorphic to $H$.
 
-Formalized by `MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.density`, a definition declared in [WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html#density).
+Formalized by `MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.density`, a definition declared in [WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html#density).
 
 ## Weak isomorphism
 
@@ -55,7 +55,7 @@ $\{0, \dots, k-1\}$, where $d(H, W)$ is the density of $H$ in $W$.
 
 The notion is meant for graphons, but no graphon condition is imposed on $W_1$ and $W_2$.
 
-Formalized by `MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.WeaklyIsomorphic`, a definition declared in [WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html#weakly-isomorphic).
+Formalized by `MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.WeaklyIsomorphic`, a definition declared in [WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html#weakly-isomorphic).
 
 ## Finitely forcible graphon
 
@@ -63,7 +63,7 @@ A function $W$ of two real variables is finitely forcible if
 there are finitely many graphs $H_1, \dots, H_\ell$ such that every graphon $W'$ with
 $d(H_i, W') = d(H_i, W)$ for all $i$ is weakly isomorphic to $W$.
 
-Formalized by `MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.IsFinitelyForcible`, a definition declared in [WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html#is-finitely-forcible).
+Formalized by `MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.IsFinitelyForcible`, a definition declared in [WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html#is-finitely-forcible).
 
 ## Lovász's finitely forcible optimum conjecture
 
@@ -75,7 +75,7 @@ $d(H_i, W_0) = d_i$ for every $i$.
 This is Lovász's conjecture that every extremal problem has a finitely forcible optimum
 (Oberwolfach Report 11/2010, p. 554), in the form of Grzesik, Kráľ and Lovász, Conjecture 1.
 
-Formalized by `MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.finitelyForcibleOptimum`, a definition declared in [WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html#finitely-forcible-optimum).
+Formalized by `MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.finitelyForcibleOptimum`, a definition declared in [WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html#finitely-forcible-optimum).
 
 ## Lovász's finitely forcible optimum conjecture is false
 
@@ -91,7 +91,7 @@ graphons is finitely forcible.
 
 - L. Lovász (joint work with B. Szegedy), Extremal graphs and graph limits, in Graph Theory, Oberwolfach Reports 7 (2010), no. 11, pp. 554-555, question 1, DOI 10.4171/OWR/2010/11; resolution: A. Grzesik, D. Kráľ and L. M. Lovász, Elusive extremal graphs, Proc. Lond. Math. Soc. (3) 121 (2020), 1685-1736, DOI 10.1112/plms.12382, arXiv:1807.01141, Conjecture 1 (Lovász): if some convergent sequence of graphs has limit densities d(H_i) = d_i for i = 1, ..., ℓ, then some finitely forcible such sequence does; Theorem 18: there are a family W of graphons, graphs H_1, ..., H_ℓ and reals d_1, ..., d_ℓ such that a graphon is weakly isomorphic to a member of W if and only if d(H_i, W) = d_i for all i, and no graphon in W is finitely forcible; 'Our main result (Theorem 18) implies that the conjecture is false', https://arxiv.org/abs/1807.01141.
 
-Stated but not proved: `MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.finitelyForcibleOptimum_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html#finitely-forcible-optimum-refuted).
+Stated but not proved: `MathlibExt.Combinatorics.FinitelyForcibleOptimumOWR4212Problem011Wanted.finitelyForcibleOptimum_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FinitelyForcibleOptimumOWR4212Problem011Wanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html#finitely-forcible-optimum-refuted).
 
 ## Depends on
 
@@ -100,4 +100,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Finitely forcible graphons](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/random-graphs/finitely-forcible-graphons)

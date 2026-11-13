@@ -7,7 +7,7 @@ statement: formalized
 
 # Impagliazzo's five worlds
 
-18 results, 17 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html).
+18 results, 17 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html).
 
 ## Serialized gates of five-worlds circuits
 
@@ -16,7 +16,7 @@ pair $(k, r)$ of a natural number $k$ (the gate kind) and a list $r$ of natural 
 references, depending on the kind: an input index, a constant bit, or indices of other gates), in
 the shared encoding of gates as (kind, references) pairs.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.FWGate`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#fwgate).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.FWGate`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#fwgate).
 
 ## Evaluation of an encoded flat circuit
 
@@ -28,7 +28,7 @@ $i$ to $a_i$.
 
 Decoding turns an input variable $x_i$ with $i \ge k$ into the constant false.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.fwCircuitEval`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#fw-circuit-eval).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.fwCircuitEval`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#fw-circuit-eval).
 
 ## Outputs of an encoded flat circuit
 
@@ -36,7 +36,7 @@ For an encoded flat Boolean circuit $C$, a list of
 booleans $a$ and a natural number $k$, the outputs of $C$ on $a$ are the last $k$ entries of the
 list of gate values of $C$ on $a$, or the whole list if $C$ has fewer than $k$ gates.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.fwCircuitOutputs`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#fw-circuit-outputs).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.fwCircuitOutputs`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#fw-circuit-outputs).
 
 ## Inversion success probability of a circuit
 
@@ -46,7 +46,7 @@ $x'$ consists of the last $n$ gate values of $C$ on input $f(x)$ (all of them if
 than $n$ gates), padded with false to length $n$. The inversion success probability of $C$
 against $f$ is the fraction of the $2^n$ strings $x$ for which $f(x') = f(x)$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.fwInvertSucc`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#fw-invert-succ).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.fwInvertSucc`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#fw-invert-succ).
 
 ## One-way functions exist
 
@@ -64,7 +64,7 @@ The functions need not be injective, and they are computed by a single uniform p
 algorithm: per-length polynomial-size circuits would admit noncomputable $\mathsf{P/poly}$
 families.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.OWFExists`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#owfexists).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.OWFExists`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#owfexists).
 
 ## Samplable distributions
 
@@ -79,7 +79,7 @@ noncomputable $\mathsf{P/poly}$ samplers. The coin count is a polynomial rather 
 distribution giving probability $2^{-(n+1)}$ to one output is samplable with $n + 1$ coins but
 not from $n$ uniform coins.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.Samplable`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#samplable).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.Samplable`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#samplable).
 
 ## Easy on average
 
@@ -98,7 +98,7 @@ The algorithm $A$ does not depend on $c$, so its error is negligible. Requiring 
 $1 - 1/(q(n) + 1)$ for a single polynomial $q$ instead would be vacuous: the zero polynomial
 gives the lower bound $0$, which every algorithm meets.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.AvgEasy`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#avg-easy).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.AvgEasy`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#avg-easy).
 
 ## Hard on average
 
@@ -112,7 +112,7 @@ $S_n(r)$ for at least a fraction $1 - 1/(n^c + 1)$ of the $2^{p(n)}$ coin string
 Since hardness is the logical complement of easiness, if $\mathrm{P} \ne \mathrm{NP}$ and
 Heuristica fails, then some NP problem is hard on average for some samplable ensemble.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.AvgHard`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#avg-hard).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.AvgHard`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#avg-hard).
 
 ## Key pair produced by a key generator
 
@@ -121,7 +121,7 @@ generator) and a bitstring $r$ of coins, the key pair of $G$ on $r$ is the pair 
 obtained by decoding $G(r)$ with the canonical bitstring encoding of pairs of bitstrings, or the
 pair of empty bitstrings if this decoding fails.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.fwKeyPair`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#fw-key-pair).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.fwKeyPair`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#fw-key-pair).
 
 ## Eavesdropping advantage against a public-key scheme
 
@@ -135,7 +135,7 @@ circuit $C$ succeeds on $(r, s, b)$ when it has a last gate value on the bitstri
 the pair $(pk, e)$ and that value equals $b$. If $N$ is the number of triples $(r, s, b)$ on
 which $C$ succeeds, the advantage of $C$ at length $n$ is $|N / 2^{2\ell(n) + 1} - 1/2|$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.fwPKAdv`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#fw-pkadv).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.fwPKAdv`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#fw-pkadv).
 
 ## Public-key encryption exists
 
@@ -153,21 +153,21 @@ of $C_n$ is $|P_n - 1/2|$, where $P_n$ is the fraction of triples $(r, s, b)$ of
 and $s$ of length $\ell(n)$ and a bit $b$ for which the last gate value of $C_n$ on input
 $(\mathit{pk}, E(\mathit{pk}, [b], s))$ is $b$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.PKExists`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#pkexists).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.PKExists`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#pkexists).
 
 ## Algorithmica
 
 Algorithmica is the statement that the complexity classes $\mathrm{P}$ and
 $\mathrm{NP}$ are equal.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.Algorithmica`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#algorithmica).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.Algorithmica`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#algorithmica).
 
 ## Heuristica
 
 Heuristica: `P ≠ NP`, but every NP problem is easy on average for every samplable
 distribution.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.Heuristica`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#heuristica).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.Heuristica`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#heuristica).
 
 ## Pessiland
 
@@ -177,13 +177,13 @@ samplable distribution: there are a polynomial $p$ with natural-number coefficie
 $S$ of maps $S_n$ from $p(n)$-bit coin strings to bitstrings such that $(p, S)$ is samplable and
 $L$ is hard on average with respect to $S$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.Pessiland`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#pessiland).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.Pessiland`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#pessiland).
 
 ## Minicrypt
 
 Minicrypt: one-way functions exist, but public-key cryptography does not.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.Minicrypt`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#minicrypt).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.Minicrypt`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#minicrypt).
 
 ## Cryptomania
 
@@ -200,7 +200,7 @@ natural-number coefficients such that each $C_n$ has at most $q(n)$ gates, and f
 number $c$, there is $N$ such that for all $n \ge N$ the eavesdropping advantage of $C_n$
 against $(G, E)$ with polynomial $\ell$ at length $n$ is at most $1/n^c$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.Cryptomania`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#cryptomania).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.Cryptomania`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#cryptomania).
 
 ## Exactly one of Impagliazzo's five worlds holds
 
@@ -208,7 +208,7 @@ Exactly one of the statements
 Algorithmica, Heuristica, Pessiland, Minicrypt and Cryptomania is true: one of them holds and
 the other four fail.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.ExactlyOneWorld`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#exactly-one-world).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.ExactlyOneWorld`, a definition declared in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#exactly-one-world).
 
 ## Impagliazzo's five worlds
 
@@ -225,7 +225,7 @@ worlds Algorithmica, Heuristica, Pessiland, Minicrypt and Cryptomania holds.
 
 - R. Impagliazzo, "A personal view of average-case complexity", Proceedings of the Tenth Annual Structure in Complexities Theory Conference (1995), 134-147.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.impagliazzo_five_worlds` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#impagliazzo-five-worlds).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.FiveWorlds.impagliazzo_five_worlds` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FiveWorldsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html#impagliazzo-five-worlds).
 
 ## Depends on
 
@@ -234,4 +234,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Impagliazzo's five worlds](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/impagliazzo-s-five-worlds)

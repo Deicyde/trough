@@ -8,13 +8,13 @@ proof: formalized
 
 # 86.8 Right adjoint of pushforward for proper flat morphisms
 
-Section 86.8 of the Stacks Project, [Tag 0E5S](https://stacks.math.columbia.edu/tag/0E5S). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 86.8 of the Stacks Project, [Tag 0E5S](https://stacks.math.columbia.edu/tag/0E5S). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E5T, a lemma
 
 [Tag 0E5T](https://stacks.math.columbia.edu/tag/0E5T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.preservesCoproducts_rightAdjoint_quasicoherentDerivedPushforward_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointDirectSums.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointDirectSums.lean#L75).
+**`AlgebraicGeometry.Space.preservesCoproducts_rightAdjoint_quasicoherentDerivedPushforward_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointDirectSums.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityRightAdjointDirectSums.lean#L75).
 
 > Let `Y` be a quasi-compact and quasi-separated algebraic space and
 > `f : X ⟶ Y` a proper, flat morphism of finite presentation. Then the right adjoint `a` of
@@ -36,7 +36,7 @@ theorem preservesCoproducts_rightAdjoint_quasicoherentDerivedPushforward_of_isPr
 
 [Tag 0E5U](https://stacks.math.columbia.edu/tag/0E5U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_quasicoherentDerivedCompareWithPullback_app_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityPullbackComparisonProperFlat.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityPullbackComparisonProperFlat.lean#L43).
+**`AlgebraicGeometry.Space.isIso_quasicoherentDerivedCompareWithPullback_app_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityPullbackComparisonProperFlat.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityPullbackComparisonProperFlat.lean#L43).
 
 > Let `Y` be a quasi-compact and quasi-separated algebraic space and `f : X ⟶ Y` a proper,
 > flat morphism of finite presentation, with right adjoint `a` of
@@ -58,7 +58,7 @@ theorem isIso_quasicoherentDerivedCompareWithPullback_app_of_isProper
 
 [Tag 0E5V](https://stacks.math.columbia.edu/tag/0E5V) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLE_derivedModulePushforward_affineRightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityRelativeDualizingAffineBounds.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityRelativeDualizingAffineBounds.lean#L50). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.Space.isLE_derivedModulePushforward_affineRightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityRelativeDualizingAffineBounds.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DualityRelativeDualizingAffineBounds.lean#L50). The attribute's comment: “(2)”.
 
 > **Stacks 0E5V (2).** For `Y` affine and `f : X ⟶ Y` proper, flat and of finite
 > presentation, `Rf_* a(𝒪_Y)` has vanishing cohomology sheaves in positive degrees.
@@ -72,7 +72,7 @@ theorem isLE_derivedModulePushforward_affineRightAdjoint (hf : IsProper B S hS f
         (derivedStructureSheaf B S hS Y.1 Y.2)).obj).IsLE 0
 ```
 
-**`AlgebraicGeometry.Space.isPerfectRelativeToCanonical_affineRightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean#L61). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.Space.isPerfectRelativeToCanonical_affineRightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean#L61). The attribute's comment: “(1)”.
 
 > **Stacks 0E5V (1).** For `Y` affine and `f : X ⟶ Y` proper, flat and of finite
 > presentation, with `a` the right adjoint of `Rf_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)`, the object
@@ -86,7 +86,7 @@ theorem isPerfectRelativeToCanonical_affineRightAdjoint {X Y : AlgebraicSpaces B
       ((affineRightAdjoint hZ f hfp hY).obj (derivedStructureSheaf B S hS Y.1 Y.2)).obj
 ```
 
-**`AlgebraicGeometry.Space.isIso_smallEtaleDerivedHomothety_affineRightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean#L114). The attribute's comment: “(3)”.
+**`AlgebraicGeometry.Space.isIso_smallEtaleDerivedHomothety_affineRightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean#L114). The attribute's comment: “(3)”.
 
 > **Stacks 0E5V (3).** For `Y` affine and `f : X ⟶ Y` proper, flat and of finite
 > presentation, with `a` the right adjoint of `Rf_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)`, the map
@@ -107,4 +107,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 86.8, Tag 0E5S](https://stacks.math.columbia.edu/tag/0E5S)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

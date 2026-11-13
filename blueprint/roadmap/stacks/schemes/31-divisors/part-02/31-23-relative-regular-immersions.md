@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.23 Relative regular immersions
 
-Section 31.23 of the Stacks Project, [Tag 063P](https://stacks.math.columbia.edu/tag/063P). 12 tags here are carried by 25 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.23 of the Stacks Project, [Tag 063P](https://stacks.math.columbia.edu/tag/063P). 12 tags here are carried by 25 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 063R, a lemma
 
 [Tag 063R](https://stacks.math.columbia.edu/tag/063R) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.isQuasiRegularImmersion_baseChange_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularImmersion/BaseChange.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RegularImmersion/BaseChange.lean#L369). The attribute's comment: “quasi\_base\_change”.
+**`Stacks.AlgebraicGeometry.isQuasiRegularImmersion_baseChange_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularImmersion/BaseChange.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RegularImmersion/BaseChange.lean#L369). The attribute's comment: “quasi\_base\_change”.
 
 > **Stacks Project, Tag 063R, the quasi-regular half.**  A quasi-regular immersion whose source
 > is flat over the base remains quasi-regular after any base change of the base scheme.
@@ -29,7 +29,7 @@ theorem isQuasiRegularImmersion_baseChange_of_flat {S X Z S' : Scheme.{u}} (f : 
     IsQuasiRegularImmersion (pullback.fst (pullback.snd g f) i)
 ```
 
-**`Stacks.AlgebraicGeometry.isH1RegularImmersion_baseChange_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularImmersion/H1BaseChange.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RegularImmersion/H1BaseChange.lean#L185). The attribute's comment: “h1\_base\_change”.
+**`Stacks.AlgebraicGeometry.isH1RegularImmersion_baseChange_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularImmersion/H1BaseChange.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RegularImmersion/H1BaseChange.lean#L185). The attribute's comment: “h1\_base\_change”.
 
 > **Stacks Project, Tag 063R, the `H₁`-regular half.**  An `H₁`-regular immersion whose source
 > is flat over the base remains `H₁`-regular after any base change of the base scheme.
@@ -44,7 +44,7 @@ theorem isH1RegularImmersion_baseChange_of_flat {S X Z S' : Scheme.{u}} (f : X �
 
 [Tag 063S](https://stacks.math.columbia.edu/tag/063S) in the Stacks Project.
 
-**`AlgebraicGeometry.IsRelativeH1RegularImmersion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/RelativeDefs.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/RelativeDefs.lean#L49). The attribute's comment: “part (2): relative H₁-regular immersion”.
+**`AlgebraicGeometry.IsRelativeH1RegularImmersion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/RelativeDefs.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/RelativeDefs.lean#L49). The attribute's comment: “part (2): relative H₁-regular immersion”.
 
 > **Part (2) of Stacks tag 063S.**  An immersion into a scheme over a base is a *relative
 > `H₁`-regular immersion* when the immersed scheme is flat over the base and the immersion is
@@ -55,7 +55,7 @@ abbrev IsRelativeH1RegularImmersion {Z X S : Scheme.{u}}
     (f : X ⟶ S) (i : Z ⟶ X) [IsImmersion i] : Prop
 ```
 
-**`Stacks.AlgebraicGeometry.IsRelativeQuasiRegularImmersion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularImmersion/Basic.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RegularImmersion/Basic.lean#L84). The attribute's comment: “part (1): relative quasi-regular immersion”.
+**`Stacks.AlgebraicGeometry.IsRelativeQuasiRegularImmersion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularImmersion/Basic.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RegularImmersion/Basic.lean#L84). The attribute's comment: “part (1): relative quasi-regular immersion”.
 
 > **Part (1) of Stacks tag 063S.** An immersion into a scheme over a base is a *relative
 > quasi-regular immersion* when the immersed scheme is flat over the base and the immersion is
@@ -70,7 +70,7 @@ abbrev IsRelativeQuasiRegularImmersion {Z X S : Scheme.{u}} (f : X ⟶ S) (i : Z
 
 [Tag 063T](https://stacks.math.columbia.edu/tag/063T) in the Stacks Project.
 
-**`AlgebraicGeometry.isFlatAt_of_isRelativeQuasiRegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/RelativeFlatness.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/RelativeFlatness.lean#L377).
+**`AlgebraicGeometry.isFlatAt_of_isRelativeQuasiRegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/RelativeFlatness.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/RelativeFlatness.lean#L375).
 
 > Let `f : X ⟶ S` be a morphism of schemes and `i : Z ⟶ X` a relative quasi-regular immersion
 > over `S`.  Then `f` is flat at every point of the image of `i` whose local ring on `X` is
@@ -89,7 +89,7 @@ theorem isFlatAt_of_isRelativeQuasiRegularImmersion
 
 [Tag 063U](https://stacks.math.columbia.edu/tag/063U) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.isRegularImmersion_baseChange_of_isRelativeQuasiRegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularImmersion/BaseChange.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RegularImmersion/BaseChange.lean#L385). The attribute's comment: “regularity after arbitrary base change”. References: EGA IV (19.2.4), “c') => b')”.
+**`Stacks.AlgebraicGeometry.isRegularImmersion_baseChange_of_isRelativeQuasiRegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularImmersion/BaseChange.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RegularImmersion/BaseChange.lean#L385). The attribute's comment: “regularity after arbitrary base change”. References: EGA IV (19.2.4), “c') => b')”.
 
 > **Stacks Project, Tag 063U, regularity after an arbitrary base change.**  A relative
 > quasi-regular immersion into a scheme flat and locally of finite presentation over the base
@@ -108,7 +108,7 @@ theorem isRegularImmersion_baseChange_of_isRelativeQuasiRegularImmersion {S X Z 
     IsRegularImmersion (pullback.fst (pullback.snd g f) i)
 ```
 
-**`Stacks.AlgebraicGeometry.isRegularImmersion_of_isRelativeQuasiRegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularImmersion/Relative.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RegularImmersion/Relative.lean#L216). The attribute's comment: “regularity of the immersion”. References: EGA IV (19.2.4), “c') => c)”.
+**`Stacks.AlgebraicGeometry.isRegularImmersion_of_isRelativeQuasiRegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularImmersion/Relative.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RegularImmersion/Relative.lean#L216). The attribute's comment: “regularity of the immersion”. References: EGA IV (19.2.4), “c') => c)”.
 
 > A relative quasi-regular immersion into a scheme flat and locally of finite presentation over
 > the base is a regular immersion.
@@ -123,7 +123,7 @@ theorem isRegularImmersion_of_isRelativeQuasiRegularImmersion {S X Z : Scheme.{u
 
 [Tag 0FUD](https://stacks.math.columbia.edu/tag/0FUD) in the Stacks Project.
 
-**`AlgebraicGeometry.isRegular_atPrime_baseChange_of_isQuasiRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/QuasiRegularBaseChange.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/QuasiRegularBaseChange.lean#L91). The attribute's comment: “regularity at primes after base change”.
+**`AlgebraicGeometry.isRegular_atPrime_baseChange_of_isQuasiRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/QuasiRegularBaseChange.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/QuasiRegularBaseChange.lean#L91). The attribute's comment: “regularity at primes after base change”.
 
 > Let `A → B` be flat and of finite presentation and let `f₁, …, f_r ∈ B` be a quasi-regular
 > sequence whose quotient is flat over `A`.  For any `A`-algebra `A'` and any prime `q` of
@@ -146,13 +146,13 @@ theorem isRegular_atPrime_baseChange_of_isQuasiRegular
 
 Declarations registered for the tag:
 
-- [`Koszul.quasiRegular_and_h1Regular_baseChange_of_quotient_flat`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/FlatQuotient.lean#L640), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/QuasiRegularBaseChange.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/QuasiRegularBaseChange.lean#L38) (StacksFrontier): “quasi-regularity and constant length after base change”.
+- [`Koszul.quasiRegular_and_h1Regular_baseChange_of_quotient_flat`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/FlatQuotient.lean#L640), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/QuasiRegularBaseChange.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/QuasiRegularBaseChange.lean#L38) (StacksFrontier): “quasi-regularity and constant length after base change”.
 
 ## Tag 063V, a lemma
 
 [Tag 063V](https://stacks.math.columbia.edu/tag/063V) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.exists_open_flat_of_isRelativeH1RegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhood.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhood.lean#L506). The attribute's comment: “part (1): flat open neighbourhood of a relative H₁-regular immersion”.
+**`Stacks.AlgebraicGeometry.exists_open_flat_of_isRelativeH1RegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhood.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhood.lean#L505). The attribute's comment: “part (1): flat open neighbourhood of a relative H₁-regular immersion”.
 
 > Let `f : X ⟶ S` be locally of finite presentation and let `i : Z ⟶ X` be a relative
 > `H₁`-regular immersion over `S`.  Then there is an open subscheme of `X` containing the image of
@@ -166,7 +166,7 @@ theorem exists_open_flat_of_isRelativeH1RegularImmersion
     ∃ U : X.Opens, Set.range i.base ⊆ (U : Set X) ∧ Flat (U.ι ≫ f)
 ```
 
-**`Stacks.AlgebraicGeometry.isRegularImmersion_of_isRelativeH1RegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhoodRegularity.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhoodRegularity.lean#L115). The attribute's comment: “part (2): the immersion is regular”.
+**`Stacks.AlgebraicGeometry.isRegularImmersion_of_isRelativeH1RegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhoodRegularity.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhoodRegularity.lean#L115). The attribute's comment: “part (2): the immersion is regular”.
 
 > **Stacks Project, Tag 063V, part (2): the immersion is regular.**  A relative `H₁`-regular
 > immersion into a scheme locally of finite presentation over the base is a regular immersion.
@@ -177,7 +177,7 @@ theorem isRegularImmersion_of_isRelativeH1RegularImmersion {S X Z : Scheme.{u}} 
     (hi : AlgebraicGeometry.IsRelativeH1RegularImmersion f i) : IsRegularImmersion i
 ```
 
-**`Stacks.AlgebraicGeometry.isRegularImmersion_baseChange_of_isRelativeH1RegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhoodRegularity.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhoodRegularity.lean#L126). The attribute's comment: “part (2): the immersion stays regular after any base change”.
+**`Stacks.AlgebraicGeometry.isRegularImmersion_baseChange_of_isRelativeH1RegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhoodRegularity.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatNeighbourhoodRegularity.lean#L126). The attribute's comment: “part (2): the immersion stays regular after any base change”.
 
 > **Stacks Project, Tag 063V, part (2): regularity after an arbitrary base change.**  A
 > relative `H₁`-regular immersion into a scheme locally of finite presentation over the base
@@ -194,7 +194,7 @@ theorem isRegularImmersion_baseChange_of_isRelativeH1RegularImmersion {S X Z S' 
 
 [Tag 063W](https://stacks.math.columbia.edu/tag/063W) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.exists_mem_isRelativeQuasiRegularImmersion_le_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/Containing.lean, line 638](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/Containing.lean#L638). The attribute's comment: “item (1): containing”.
+**`Stacks.AlgebraicGeometry.exists_mem_isRelativeQuasiRegularImmersion_le_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/Containing.lean, line 638](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/Containing.lean#L638). The attribute's comment: “item (1): containing”.
 
 > **Stacks tag 063W, item (1).**  Let `f : X ⟶ S` be flat and locally of finite presentation,
 > let `T` be a closed subscheme of `X` and let `x` be a point of `T` whose fibre over `f x` is a
@@ -212,7 +212,7 @@ theorem exists_mem_isRelativeQuasiRegularImmersion_le_comap (f : X ⟶ S) [Flat 
           = (T.comap (f.fiberι (f x))).comap (f.fiberι (f x) ⁻¹ᵁ U).ι
 ```
 
-**`Stacks.AlgebraicGeometry.exists_mem_isRelativeQuasiRegularImmersion_of_dim_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/EqualityEquationCount.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/EqualityEquationCount.lean#L159). The attribute's comment: “item (3): equation count”.
+**`Stacks.AlgebraicGeometry.exists_mem_isRelativeQuasiRegularImmersion_of_dim_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/EqualityEquationCount.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/EqualityEquationCount.lean#L159). The attribute's comment: “item (3): equation count”.
 
 > **Stacks tag 063W, item (3).**  Let `f : X ⟶ S` be flat and locally of finite presentation,
 > let `T` be a closed subscheme of `X` and let `x` be a point of `T` such that the fibre of `T`
@@ -236,7 +236,7 @@ theorem exists_mem_isRelativeQuasiRegularImmersion_of_dim_eq (f : X ⟶ S) [Flat
         IsRegularImmersion (T.comap U.ι).subschemeι
 ```
 
-**`Stacks.AlgebraicGeometry.exists_mem_isRelativeQuasiRegularImmersion_of_flatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/EqualityFlat.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/EqualityFlat.lean#L71). The attribute's comment: “equality\_flat”. References: EGA IV (19.2.4), “b) => c)”.
+**`Stacks.AlgebraicGeometry.exists_mem_isRelativeQuasiRegularImmersion_of_flatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/EqualityFlat.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/EqualityFlat.lean#L71). The attribute's comment: “equality\_flat”. References: EGA IV (19.2.4), “b) => c)”.
 
 > **Stacks tag 063W, item (2).**  Let `f : X ⟶ S` be flat and locally of finite presentation,
 > let `T` be a closed subscheme of `X` whose closed immersion into `X` is locally of finite
@@ -257,7 +257,7 @@ theorem exists_mem_isRelativeQuasiRegularImmersion_of_flatAt {X S : Scheme.{u}} 
         IsRegularImmersion (T.comap U.ι).subschemeι
 ```
 
-**`Stacks.AlgebraicGeometry.isRelativeQuasiRegularImmersion_subschemeι_of_forall_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/Fibrewise.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/Fibrewise.lean#L82). The attribute's comment: “fibrewise criterion”.
+**`Stacks.AlgebraicGeometry.isRelativeQuasiRegularImmersion_subschemeι_of_forall_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/Fibrewise.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/Fibrewise.lean#L82). The attribute's comment: “fibrewise criterion”.
 
 > **The fibrewise criterion of Stacks tag 063W.**  Let `f : X ⟶ S` be flat and locally of finite
 > presentation and let `T` be a closed subscheme of `X` which is flat and locally of finite
@@ -276,7 +276,7 @@ theorem isRelativeQuasiRegularImmersion_subschemeι_of_forall_fiber (f : X ⟶ S
 
 [Tag 067R](https://stacks.math.columbia.edu/tag/067R) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.isRegularImmersion_of_smooth_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Relative/SmoothSection.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Relative/SmoothSection.lean#L65). References: EGA IV (17.12.3), “necessity”; SGA 6 VII (1.10), “section case”; SGA 6 VII (4.2), “more general”; SGA 6 VIII (1.3), “more general”; SGA 6 VIII (2.4), “special case”.
+**`Stacks.AlgebraicGeometry.isRegularImmersion_of_smooth_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Relative/SmoothSection.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Relative/SmoothSection.lean#L65). References: EGA IV (17.12.3), “necessity”; SGA 6 VII (1.10), “section case”; SGA 6 VII (4.2), “more general”; SGA 6 VIII (1.3), “more general”; SGA 6 VIII (2.4), “special case”.
 
 > **Stacks Project, Tag 067R.**  A section `σ` of a smooth morphism `f : X ⟶ S` of schemes is a
 > regular immersion.
@@ -292,7 +292,7 @@ theorem isRegularImmersion_of_smooth_section (f : X ⟶ S) [Smooth f] (σ : S �
 
 [Tag 067S](https://stacks.math.columbia.edu/tag/067S) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isRegularImmersion_of_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean#L81). The attribute's comment: “regular”.
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isRegularImmersion_of_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean#L81). The attribute's comment: “regular”.
 
 > **Stacks 067S** for regular immersions. If the composite of an immersion with a smooth
 > morphism is regular, the immersion is regular.
@@ -303,7 +303,7 @@ theorem isRegularImmersion_of_comp_of_smooth
     (hj : IsRegularImmersion (i ≫ f)) : IsRegularImmersion i
 ```
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isKoszulRegularImmersion_of_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean#L103). The attribute's comment: “koszul\_regular”.
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isKoszulRegularImmersion_of_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean#L103). The attribute's comment: “koszul\_regular”.
 
 > **Stacks 067S** for Koszul-regular immersions. If the composite of an immersion with a smooth
 > morphism is Koszul-regular, the immersion is Koszul-regular.
@@ -314,7 +314,7 @@ theorem isKoszulRegularImmersion_of_comp_of_smooth
     (hj : IsKoszulRegularImmersion (i ≫ f)) : IsKoszulRegularImmersion i
 ```
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isH1RegularImmersion_of_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean#L130). The attribute's comment: “h1\_regular”.
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isH1RegularImmersion_of_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean#L130). The attribute's comment: “h1\_regular”.
 
 > **Stacks 067S** for `H₁`-regular immersions. If the composite of an immersion with a smooth
 > morphism is `H₁`-regular, the immersion is `H₁`-regular.
@@ -325,7 +325,7 @@ theorem isH1RegularImmersion_of_comp_of_smooth
     (hj : IsH1RegularImmersion (i ≫ f)) : IsH1RegularImmersion i
 ```
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isQuasiRegularImmersion_of_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean#L147). The attribute's comment: “quasi\_regular”.
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isQuasiRegularImmersion_of_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothPermanence.lean#L147). The attribute's comment: “quasi\_regular”.
 
 > **Stacks 067S** for quasi-regular immersions. If the composite of an immersion with a smooth
 > morphism is quasi-regular, the immersion is quasi-regular.
@@ -340,7 +340,7 @@ theorem isQuasiRegularImmersion_of_comp_of_smooth
 
 [Tag 067T](https://stacks.math.columbia.edu/tag/067T) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.isRegularImmersion_of_syntomic_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/SyntomicIntoSmooth.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/SyntomicIntoSmooth.lean#L82). References: SGA 6 VII (1.10), “more general”.
+**`Stacks.AlgebraicGeometry.isRegularImmersion_of_syntomic_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/SyntomicIntoSmooth.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/SyntomicIntoSmooth.lean#L82). References: SGA 6 VII (1.10), “more general”.
 
 > **Stacks Project, Tag 067T.**  Let `i : Y ⟶ X` be an immersion and `f : X ⟶ S` a smooth
 > morphism such that the structure morphism `i ≫ f` of `Y` over `S` is syntomic.  Then `i` is a
@@ -355,7 +355,7 @@ theorem isRegularImmersion_of_syntomic_of_smooth [IsImmersion i] [Smooth f]
 
 [Tag 067U](https://stacks.math.columbia.edu/tag/067U) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.isRegularImmersion_of_smooth_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/SyntomicIntoSmooth.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/SyntomicIntoSmooth.lean#L135). References: SGA 6 VII (1.10); SGA 1 II (4.16), “X smooth ⇒ i regular”; SGA 6 VIII (1.1), “more general”; SGA 6 VIII (1.3), “more general”; SGA 6 VIII (1.8), “partial, special case”; SGA 6 VIII (2.4), “special case”.
+**`Stacks.AlgebraicGeometry.isRegularImmersion_of_smooth_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/SyntomicIntoSmooth.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeRegularImmersion/SyntomicIntoSmooth.lean#L135). References: SGA 6 VII (1.10); SGA 1 II (4.16), “X smooth ⇒ i regular”; SGA 6 VIII (1.1), “more general”; SGA 6 VIII (1.3), “more general”; SGA 6 VIII (1.8), “partial, special case”; SGA 6 VIII (2.4), “special case”.
 
 > **Stacks Project, Tag 067U.**  An immersion `i : Y ⟶ X` between two schemes smooth over `S`
 > is a regular immersion.  This is the case of Stacks tag 067T in which the structure morphism of
@@ -370,7 +370,7 @@ theorem isRegularImmersion_of_smooth_of_smooth [IsImmersion i] [Smooth f] [Smoot
 
 [Tag 0693](https://stacks.math.columbia.edu/tag/0693) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isKoszulRegularImmersion_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothTargetPermanence.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothTargetPermanence.lean#L481). The attribute's comment: “koszul\_regular”.
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isKoszulRegularImmersion_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothTargetPermanence.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothTargetPermanence.lean#L481). The attribute's comment: “koszul\_regular”.
 
 > **Stacks tag 0693 for Koszul-regular immersions.** In a commutative triangle `Y ⟶ X ⟶ S` with
 > `X ⟶ S` smooth and both `Y ⟶ X` and `Y ⟶ S` immersions, the composite `Y ⟶ S` of a Koszul-regular
@@ -388,7 +388,7 @@ theorem isKoszulRegularImmersion_comp_of_smooth (i : Y ⟶ X) (f : X ⟶ S) [IsI
     IsKoszulRegularImmersion (i ≫ f)
 ```
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isH1RegularImmersion_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothTargetPermanence.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothTargetPermanence.lean#L549). The attribute's comment: “h1\_regular”.
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isH1RegularImmersion_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothTargetPermanence.lean, line 549](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothTargetPermanence.lean#L549). The attribute's comment: “h1\_regular”.
 
 > **Stacks tag 0693 for `H₁`-regular immersions.** In a commutative triangle `Y ⟶ X ⟶ S` with
 > `X ⟶ S` smooth and both `Y ⟶ X` and `Y ⟶ S` immersions, the composite `Y ⟶ S` of an `H₁`-regular
@@ -406,7 +406,7 @@ theorem isH1RegularImmersion_comp_of_smooth (i : Y ⟶ X) (f : X ⟶ S) [IsImmer
     IsH1RegularImmersion (i ≫ f)
 ```
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isQuasiRegularImmersion_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothTargetQuasiRegular.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothTargetQuasiRegular.lean#L260). The attribute's comment: “quasi\_regular”.
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isQuasiRegularImmersion_comp_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothTargetQuasiRegular.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/SmoothTargetQuasiRegular.lean#L260). The attribute's comment: “quasi\_regular”.
 
 > **Smooth postcomposition.** In a commutative triangle `Y ⟶ X ⟶ S` with `X ⟶ S` smooth and
 > both `Y ⟶ X` and `Y ⟶ S` immersions, the composite `Y ⟶ S` of a quasi-regular immersion `Y ⟶ X`
@@ -425,4 +425,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.23, Tag 063P](https://stacks.math.columbia.edu/tag/063P)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

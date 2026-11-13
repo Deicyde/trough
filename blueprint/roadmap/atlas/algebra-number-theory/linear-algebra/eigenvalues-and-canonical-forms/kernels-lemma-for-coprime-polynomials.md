@@ -8,7 +8,7 @@ proof: formalized
 
 # Kernels lemma for coprime polynomials
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/kernels-lemma-for-coprime-polynomials/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/kernels-lemma-for-coprime-polynomials/index.html).
 
 ## Kernel of a product of pairwise coprime polynomials
 
@@ -18,7 +18,7 @@ polynomials in $R[X]$ that are pairwise coprime, meaning that for all $i \ne j$ 
 $a, b \in R[X]$ with $a p_i + b p_j = 1$. Then for every finite set $s \subseteq \iota$, the sum
 of the submodules $\ker p_i(f)$ over $i \in s$ equals $\ker \bigl(\prod_{i \in s} p_i\bigr)(f)$.
 
-Formalized by `MathlibExt.LinearAlgebra.KernelsLemmaWanted.iSup_ker_aeval_eq_ker_aeval_prod_of_pairwise_isCoprime`, a theorem declared in [MathlibExt/LinearAlgebra/KernelsLemma.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/KernelsLemma.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/kernels-lemma-for-coprime-polynomials/index.html#i-sup-ker-aeval-eq-ker-aeval-prod-of-pai).
+Formalized by `MathlibExt.LinearAlgebra.KernelsLemmaWanted.iSup_ker_aeval_eq_ker_aeval_prod_of_pairwise_isCoprime`, a theorem declared in [MathlibExt/LinearAlgebra/KernelsLemma.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/KernelsLemma.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/kernels-lemma-for-coprime-polynomials/index.html#i-sup-ker-aeval-eq-ker-aeval-prod-of-pai).
 
 ## Kernels of pairwise coprime polynomials are independent over a finite set
 
@@ -29,7 +29,7 @@ for all $i \ne j$ there are $a, b \in R[X]$ with $a p_i + b p_j = 1$. Then for e
 $s \subseteq \iota$, every $i \in s$ and every $t \subseteq s$ with $i \notin t$, the submodule
 $\ker p_i(f)$ meets the sum of the submodules $\ker p_j(f)$ over $j \in t$ only in $0$.
 
-Formalized by `MathlibExt.LinearAlgebra.KernelsLemmaWanted.supIndep_ker_aeval_of_pairwise_isCoprime`, a theorem declared in [MathlibExt/LinearAlgebra/KernelsLemma.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/KernelsLemma.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/kernels-lemma-for-coprime-polynomials/index.html#sup-indep-ker-aeval-of-pairwise-is-copri).
+Formalized by `MathlibExt.LinearAlgebra.KernelsLemmaWanted.supIndep_ker_aeval_of_pairwise_isCoprime`, a theorem declared in [MathlibExt/LinearAlgebra/KernelsLemma.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/KernelsLemma.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/kernels-lemma-for-coprime-polynomials/index.html#sup-indep-ker-aeval-of-pairwise-is-copri).
 
 ## Independence and sum of kernels of pairwise coprime polynomials
 
@@ -40,7 +40,7 @@ meaning that for all $i \ne j$ there are $a, b \in R[X]$ with $a p_i + b p_j = 1
 submodules $\ker p_i(f)$ are independent (each meets the sum of the others only in $0$), and
 their sum is $\ker \bigl(\prod_{i \in \iota} p_i\bigr)(f)$.
 
-Formalized by `MathlibExt.LinearAlgebra.KernelsLemmaWanted.iSupIndep_ker_aeval_and_iSup_eq_of_pairwise_isCoprime`, a theorem declared in [MathlibExt/LinearAlgebra/KernelsLemma.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/KernelsLemma.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/kernels-lemma-for-coprime-polynomials/index.html#i-sup-indep-ker-aeval-and-i-sup-eq-of-pa).
+Formalized by `MathlibExt.LinearAlgebra.KernelsLemmaWanted.iSupIndep_ker_aeval_and_iSup_eq_of_pairwise_isCoprime`, a theorem declared in [MathlibExt/LinearAlgebra/KernelsLemma.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/KernelsLemma.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/kernels-lemma-for-coprime-polynomials/index.html#i-sup-indep-ker-aeval-and-i-sup-eq-of-pa).
 
 ## Kernels lemma
 
@@ -63,7 +63,7 @@ $q$ is the product of the other polynomials.
 
 - https://fr.wikipedia.org/wiki/Lemme_des_noyaux; S. Axler, Linear Algebra Done Right, 4th ed., Springer (2024), Section 8C.
 
-Formalized by `MathlibExt.LinearAlgebra.KernelsLemmaWanted.kernels_lemma_pairwise_isCoprime`, a theorem declared in [MathlibExt/LinearAlgebra/KernelsLemma.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/KernelsLemma.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/kernels-lemma-for-coprime-polynomials/index.html#kernels-lemma-pairwise-is-coprime).
+Formalized by `MathlibExt.LinearAlgebra.KernelsLemmaWanted.kernels_lemma_pairwise_isCoprime`, a theorem declared in [MathlibExt/LinearAlgebra/KernelsLemma.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/KernelsLemma.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/kernels-lemma-for-coprime-polynomials/index.html#kernels-lemma-pairwise-is-coprime).
 
 ## Depends on
 
@@ -72,4 +72,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Kernels lemma for coprime polynomials](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/kernels-lemma-for-coprime-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/kernels-lemma-for-coprime-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/kernels-lemma-for-coprime-polynomials)

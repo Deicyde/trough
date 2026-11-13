@@ -7,7 +7,7 @@ statement: formalized
 
 # Euler–Lagrange equation
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/euler-lagrange-equation/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/euler-lagrange-equation/index.html).
 
 ## Partial derivative of the Lagrangian in position
 
@@ -19,7 +19,7 @@ the function $y \mapsto L(t, y, x'(t))$.
 By convention, a derivative that does not exist is taken to be $0$, both for $x'(t)$ and for
 the derivative in $y$.
 
-Formalized by `MathlibExt.Analysis.EulerLagrangeWanted.Analysis.lagrangianPartialX`, a definition declared in [WantedExt/Analysis/EulerLagrangeWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/EulerLagrangeWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/euler-lagrange-equation/index.html#lagrangian-partial-x).
+Formalized by `MathlibExt.Analysis.EulerLagrangeWanted.Analysis.lagrangianPartialX`, a definition declared in [WantedExt/Analysis/EulerLagrangeWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/EulerLagrangeWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/euler-lagrange-equation/index.html#lagrangian-partial-x).
 
 ## Partial derivative of the Lagrangian in velocity
 
@@ -31,7 +31,7 @@ the function $v \mapsto L(t, x(t), v)$.
 By convention, a derivative that does not exist is taken to be $0$, both for $x'(t)$ and for
 the derivative in $v$.
 
-Formalized by `MathlibExt.Analysis.EulerLagrangeWanted.Analysis.lagrangianPartialV`, a definition declared in [WantedExt/Analysis/EulerLagrangeWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/EulerLagrangeWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/euler-lagrange-equation/index.html#lagrangian-partial-v).
+Formalized by `MathlibExt.Analysis.EulerLagrangeWanted.Analysis.lagrangianPartialV`, a definition declared in [WantedExt/Analysis/EulerLagrangeWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/EulerLagrangeWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/euler-lagrange-equation/index.html#lagrangian-partial-v).
 
 ## Variational extremum
 
@@ -51,7 +51,7 @@ is $0$.
 By convention, a derivative that does not exist is taken to be $0$, and so is the integral of a
 function that is not integrable.
 
-Formalized by `MathlibExt.Analysis.EulerLagrangeWanted.Analysis.IsVariationalExtremum`, a definition declared in [WantedExt/Analysis/EulerLagrangeWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/EulerLagrangeWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/euler-lagrange-equation/index.html#is-variational-extremum).
+Formalized by `MathlibExt.Analysis.EulerLagrangeWanted.Analysis.IsVariationalExtremum`, a definition declared in [WantedExt/Analysis/EulerLagrangeWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/EulerLagrangeWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/euler-lagrange-equation/index.html#is-variational-extremum).
 
 ## Euler–Lagrange equation
 
@@ -71,7 +71,7 @@ $$
 
 - L. Euler (1744) and J.-L. Lagrange (1755). Listed as §44 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `euler_lagrange_equation` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.EulerLagrangeWanted.Analysis.euler_lagrange_equation` is written with `theorem_wanted` in [WantedExt/Analysis/EulerLagrangeWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/EulerLagrangeWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/euler-lagrange-equation/index.html#euler-lagrange-equation).
+Stated but not proved: `MathlibExt.Analysis.EulerLagrangeWanted.Analysis.euler_lagrange_equation` is written with `theorem_wanted` in [WantedExt/Analysis/EulerLagrangeWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/EulerLagrangeWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/euler-lagrange-equation/index.html#euler-lagrange-equation).
 
 ## Depends on
 
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Euler–Lagrange equation](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/euler-lagrange-equation/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/convex-analysis-and-variations/euler-lagrange-equation)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/convex-analysis-and-variations/euler-lagrange-equation)

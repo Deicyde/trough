@@ -7,7 +7,7 @@ statement: formalized
 
 # Unate and monotone Boolean functions
 
-34 results, 19 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html).
+34 results, 19 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html).
 
 ## Weight of a Boolean function
 
@@ -19,7 +19,7 @@ $f(x) = 1$.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 2.
 
-Formalized by `MetaMathlibExt.boolFunWeight`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-weight).
+Formalized by `MetaMathlibExt.boolFunWeight`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-weight).
 
 ## Weight of the constant one function
 
@@ -30,7 +30,7 @@ variables has weight $2^n$.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 2.
 
-Formalized by `MetaMathlibExt.boolFunWeight_const_true`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-weight-const-true).
+Formalized by `MetaMathlibExt.boolFunWeight_const_true`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-weight-const-true).
 
 ## Boolean functions increasing in a variable
 
@@ -43,7 +43,7 @@ $x'_i = 1$.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 2.
 
-Formalized by `MetaMathlibExt.IsBoolFunIncreasingIn`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-increasing-in).
+Formalized by `MetaMathlibExt.IsBoolFunIncreasingIn`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-increasing-in).
 
 ## Boolean functions decreasing in a variable
 
@@ -56,7 +56,7 @@ $x'_i = 1$.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 2.
 
-Formalized by `MetaMathlibExt.IsBoolFunDecreasingIn`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-decreasing-in).
+Formalized by `MetaMathlibExt.IsBoolFunDecreasingIn`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-decreasing-in).
 
 ## Unate Boolean function
 
@@ -69,7 +69,7 @@ decreasing in $x_i$ (that change never increases the value of $f$).
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 1.
 
-Formalized by `MetaMathlibExt.IsUnateBoolFun`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-unate-bool-fun).
+Formalized by `MetaMathlibExt.IsUnateBoolFun`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-unate-bool-fun).
 
 ## Monotone Boolean functions are unate
 
@@ -80,7 +80,7 @@ is monotone, for the coordinatewise order on $\{0,1\}^n$ with $0 \le 1$, is unat
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 1.
 
-Formalized by `MetaMathlibExt.isUnateBoolFun_of_monotone`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-unate-bool-fun-of-monotone).
+Formalized by `MetaMathlibExt.isUnateBoolFun_of_monotone`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-unate-bool-fun-of-monotone).
 
 ## Non-degeneracy in a variable
 
@@ -92,7 +92,7 @@ $x \in \{0,1\}^n$ with $f(x) \ne f(x')$, where $x'$ is $x$ with its $i$-th coord
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 2.
 
-Formalized by `MetaMathlibExt.IsBoolFunNondegenerateOn`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-nondegenerate-on).
+Formalized by `MetaMathlibExt.IsBoolFunNondegenerateOn`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-nondegenerate-on).
 
 ## Non-degenerate Boolean functions
 
@@ -106,7 +106,7 @@ non-degenerate, matching the paper's convention.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 2 and Remark 2.
 
-Formalized by `MetaMathlibExt.IsNondegenerateBoolFun`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-nondegenerate-bool-fun).
+Formalized by `MetaMathlibExt.IsNondegenerateBoolFun`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-nondegenerate-bool-fun).
 
 ## A projection is non-degenerate on its own variable
 
@@ -118,7 +118,7 @@ the variable $x_i$.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 2.
 
-Formalized by `MetaMathlibExt.isBoolFunNondegenerateOn_proj`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-nondegenerate-on-proj).
+Formalized by `MetaMathlibExt.isBoolFunNondegenerateOn_proj`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-nondegenerate-on-proj).
 
 ## Concatenation of two Boolean functions
 
@@ -132,7 +132,7 @@ $(g \,\|\, h)(x) = \bar{x}_1 g(x_2, \dots, x_{n+1}) \oplus x_1 h(x_2, \dots, x_{
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 2, equation (1).
 
-Formalized by `MetaMathlibExt.boolFunConcat`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-concat).
+Formalized by `MetaMathlibExt.boolFunConcat`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-concat).
 
 ## Evaluating a concatenation
 
@@ -144,7 +144,7 @@ at the input $(b, x_1, \dots, x_n)$ if $b = 0$ and the value $h(x)$ there if $b 
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 2, equation (1).
 
-Formalized by `MetaMathlibExt.boolFunConcat_cons`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-concat-cons).
+Formalized by `MetaMathlibExt.boolFunConcat_cons`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-concat-cons).
 
 ## Permutation equivalence of Boolean functions
 
@@ -157,7 +157,7 @@ $g(x_1, \ldots, x_n) = f(x_{\sigma(1)}, \ldots, x_{\sigma(n)})$ for every $x \in
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 2.1.
 
-Formalized by `MetaMathlibExt.IsBoolFunVarPermEquiv`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-var-perm-equiv).
+Formalized by `MetaMathlibExt.IsBoolFunVarPermEquiv`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-var-perm-equiv).
 
 ## Permutation equivalence is reflexive
 
@@ -168,7 +168,7 @@ permutation-equivalent to itself.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 2.1.
 
-Formalized by `MetaMathlibExt.isBoolFunVarPermEquiv_refl`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-var-perm-equiv-refl).
+Formalized by `MetaMathlibExt.isBoolFunVarPermEquiv_refl`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-var-perm-equiv-refl).
 
 ## NN-equivalence of Boolean functions
 
@@ -182,7 +182,7 @@ $g(x) = f(x \oplus a) \oplus c$ for every $x \in \{0,1\}^n$, where $\oplus$ is e
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 13.
 
-Formalized by `MetaMathlibExt.IsBoolFunNNEquiv`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-nnequiv).
+Formalized by `MetaMathlibExt.IsBoolFunNNEquiv`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-nnequiv).
 
 ## NN-equivalence is reflexive
 
@@ -192,7 +192,7 @@ Every Boolean function is NN-equivalent to itself.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 13.
 
-Formalized by `MetaMathlibExt.isBoolFunNNEquiv_refl`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-nnequiv-refl).
+Formalized by `MetaMathlibExt.isBoolFunNNEquiv_refl`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-nnequiv-refl).
 
 ## NPN-equivalence of Boolean functions
 
@@ -207,7 +207,7 @@ $x \in \{0,1\}^n$, where $\oplus$ is exclusive or.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 14.
 
-Formalized by `MetaMathlibExt.IsBoolFunNPNEquiv`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-npnequiv).
+Formalized by `MetaMathlibExt.IsBoolFunNPNEquiv`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-npnequiv).
 
 ## NPN-equivalence is reflexive
 
@@ -218,7 +218,7 @@ itself.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 14.
 
-Formalized by `MetaMathlibExt.isBoolFunNPNEquiv_refl`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-npnequiv-refl).
+Formalized by `MetaMathlibExt.isBoolFunNPNEquiv_refl`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-npnequiv-refl).
 
 ## Number of classes of Boolean functions
 
@@ -233,7 +233,7 @@ under permutation of the variables.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 2.1.
 
-Formalized by `MetaMathlibExt.boolFunClassCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-class-count).
+Formalized by `MetaMathlibExt.boolFunClassCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-class-count).
 
 ## The empty property has no classes
 
@@ -245,7 +245,7 @@ holds for no function is $0$.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Section 2.1.
 
-Formalized by `MetaMathlibExt.boolFunClassCount_false`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-class-count-false).
+Formalized by `MetaMathlibExt.boolFunClassCount_false`, a theorem declared in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-class-count-false).
 
 ## Counting Boolean functions by their non-degenerate restrictions
 
@@ -266,7 +266,7 @@ functions, then $P_1 = 4$ but the right-hand side is $0 + 2 = 2$.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 1 (`jis-2025-25.3.4-prop-1`).
 
-Stated but not proved: `MetaMathlibExt.card_boolFun_eq_sum_choose_card_nondegenerate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#card-bool-fun-eq-sum-choose-card-nondege).
+Stated but not proved: `MetaMathlibExt.card_boolFun_eq_sum_choose_card_nondegenerate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#card-bool-fun-eq-sum-choose-card-nondege).
 
 ## Counting non-degenerate Boolean functions by inclusion–exclusion
 
@@ -284,7 +284,7 @@ $$\mathrm{nd}\text{-}P_n = \sum_{i=0}^{n} (-1)^{n-i} \binom{n}{i} P_i.$$
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 1 (`jis-2025-25.3.4-prop-1`).
 
-Stated but not proved: `MetaMathlibExt.card_nondegenerate_boolFun_eq_alternating_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#card-nondegenerate-bool-fun-eq-alternati).
+Stated but not proved: `MetaMathlibExt.card_nondegenerate_boolFun_eq_alternating_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#card-nondegenerate-bool-fun-eq-alternati).
 
 ## Unate versus monotone Boolean function counts
 
@@ -300,7 +300,7 @@ $BU_n \le 2^n BM_n$.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 3 (`jis-2025-25.3.4-prop-3`).
 
-Stated but not proved: `MetaMathlibExt.card_unate_boolFun_relations` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#card-unate-bool-fun-relations).
+Stated but not proved: `MetaMathlibExt.card_unate_boolFun_relations` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#card-unate-bool-fun-relations).
 
 ## Monotone concatenations of Boolean functions (Bakoev)
 
@@ -314,7 +314,7 @@ monotone and $g(x) \le h(x)$ for every $x \in \{0,1\}^n$.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 4 (`jis-2025-25.3.4-prop-4`), quoting Bakoev.
 
-Stated but not proved: `MetaMathlibExt.monotone_boolFunConcat_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#monotone-bool-fun-concat-iff).
+Stated but not proved: `MetaMathlibExt.monotone_boolFunConcat_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#monotone-bool-fun-concat-iff).
 
 ## The dual of a monotone Boolean function is monotone
 
@@ -329,7 +329,7 @@ the function whose truth table is that of $f$ reversed.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 5 (`jis-2025-25.3.4-prop-5`).
 
-Stated but not proved: `MetaMathlibExt.monotone_booleanFunctionDual` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#monotone-boolean-function-dual).
+Stated but not proved: `MetaMathlibExt.monotone_booleanFunctionDual` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#monotone-boolean-function-dual).
 
 ## Unateness of a concatenation
 
@@ -344,7 +344,7 @@ pointwise or $h \le g$ pointwise.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 6 (`jis-2025-25.3.4-prop-6`).
 
-Stated but not proved: `MetaMathlibExt.isUnateBoolFun_boolFunConcat_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-unate-bool-fun-bool-fun-concat-iff).
+Stated but not proved: `MetaMathlibExt.isUnateBoolFun_boolFunConcat_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-unate-bool-fun-bool-fun-concat-iff).
 
 ## The negation of a unate function is unate
 
@@ -355,7 +355,7 @@ unate, then so is its negation $x \mapsto \lnot f(x)$.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 7 (`jis-2025-25.3.4-prop-7`).
 
-Stated but not proved: `MetaMathlibExt.isUnateBoolFun_not` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-unate-bool-fun-not).
+Stated but not proved: `MetaMathlibExt.isUnateBoolFun_not` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-unate-bool-fun-not).
 
 ## Weight symmetry of monotone Boolean functions
 
@@ -369,7 +369,7 @@ The source assumes $n \ge 1$; the case $n = 0$ is included here.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 8 (`jis-2025-25.3.4-prop-8`).
 
-Stated but not proved: `MetaMathlibExt.card_monotone_boolFun_weight_symm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#card-monotone-bool-fun-weight-symm).
+Stated but not proved: `MetaMathlibExt.card_monotone_boolFun_weight_symm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#card-monotone-bool-fun-weight-symm).
 
 ## Weight symmetry of unate Boolean functions
 
@@ -383,7 +383,7 @@ The source assumes $n \ge 1$; the case $n = 0$ is included here.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 9 (`jis-2025-25.3.4-prop-9`).
 
-Stated but not proved: `MetaMathlibExt.card_unate_boolFun_weight_symm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#card-unate-bool-fun-weight-symm).
+Stated but not proved: `MetaMathlibExt.card_unate_boolFun_weight_symm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#card-unate-bool-fun-weight-symm).
 
 ## Permutation classes counted by non-degenerate ones
 
@@ -406,7 +406,7 @@ $n \ne 1$, then $[P]_1 = 4$ but $\mathrm{nd}[P]_0 + \mathrm{nd}[P]_1 = 0 + 2 = 2
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 11 (`jis-2025-25.3.4-prop-11`).
 
-Stated but not proved: `MetaMathlibExt.boolFunClassCount_varPerm_eq_sum_nondegenerate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-class-count-var-perm-eq-sum-non).
+Stated but not proved: `MetaMathlibExt.boolFunClassCount_varPerm_eq_sum_nondegenerate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-class-count-var-perm-eq-sum-non).
 
 ## Non-degenerate permutation classes as a difference
 
@@ -430,7 +430,7 @@ summation form of Proposition 11.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 11 (`jis-2025-25.3.4-prop-11`).
 
-Stated but not proved: `MetaMathlibExt.boolFunClassCount_varPerm_nondegenerate_eq_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-class-count-var-perm-nondegener).
+Stated but not proved: `MetaMathlibExt.boolFunClassCount_varPerm_nondegenerate_eq_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-class-count-var-perm-nondegener).
 
 ## Unate versus monotone permutation classes
 
@@ -447,7 +447,7 @@ $[U]_n \le 2^n [M]_n$ and $[BU]_n \le 2^n [BM]_n$.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 12 (`jis-2025-25.3.4-prop-12`).
 
-Stated but not proved: `MetaMathlibExt.boolFunClassCount_varPerm_unate_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-class-count-var-perm-unate-le).
+Stated but not proved: `MetaMathlibExt.boolFunClassCount_varPerm_unate_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-class-count-var-perm-unate-le).
 
 ## NN-equivalence of monotone Boolean functions
 
@@ -464,7 +464,7 @@ and $f(x) = x_1$, the only monotone function NN-equivalent to $f$ is $f$ itself.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 13 (`jis-2025-25.3.4-prop-13`).
 
-Stated but not proved: `MetaMathlibExt.isBoolFunNNEquiv_monotone_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-nnequiv-monotone-iff).
+Stated but not proved: `MetaMathlibExt.isBoolFunNNEquiv_monotone_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#is-bool-fun-nnequiv-monotone-iff).
 
 ## Unate and monotone functions have equally many NN- and NPN-classes
 
@@ -478,7 +478,7 @@ for the coordinatewise order with $0 < 1$.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 14(a) (`jis-2025-25.3.4-prop-14`).
 
-Stated but not proved: `MetaMathlibExt.boolFunClassCount_unate_eq_monotone` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-class-count-unate-eq-monotone).
+Stated but not proved: `MetaMathlibExt.boolFunClassCount_unate_eq_monotone` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-class-count-unate-eq-monotone).
 
 ## Balanced unate and balanced monotone functions have equally many NN- and NPN-classes
 
@@ -493,7 +493,7 @@ order with $0 < 1$.
 
 - Biswas and Sarkar, *Counting Unate and Monotone Boolean Functions under Restrictions of Balancedness and Non-Degeneracy*, Journal of Integer Sequences 28 (2025), Article 25.3.4, Proposition 14(b) (`jis-2025-25.3.4-prop-14`).
 
-Stated but not proved: `MetaMathlibExt.boolFunClassCount_balanced_unate_eq_monotone` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-class-count-balanced-unate-eq-m).
+Stated but not proved: `MetaMathlibExt.boolFunClassCount_balanced_unate_eq_monotone` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/UnateMonotoneBooleanWanted.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html#bool-fun-class-count-balanced-unate-eq-m).
 
 ## Depends on
 
@@ -502,4 +502,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Unate and monotone Boolean functions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/boolean-functions/unate-and-monotone-boolean-functions)

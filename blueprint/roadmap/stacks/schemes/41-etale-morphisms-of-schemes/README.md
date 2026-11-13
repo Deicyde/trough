@@ -1,6 +1,6 @@
 # 41 Étale Morphisms of Schemes
 
-Chapter 41 of the Stacks Project, *Étale Morphisms of Schemes*, [Tag 024J](https://stacks.math.columbia.edu/tag/024J): the 19 sections of its 21 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 66 tags are carried by 131 declarations of the repository (all in StacksFrontier) and 22 registered declarations.
+Chapter 41 of the Stacks Project, *Étale Morphisms of Schemes*, [Tag 024J](https://stacks.math.columbia.edu/tag/024J): the 19 sections of its 21 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 66 tags are carried by 134 declarations of the repository (all in StacksFrontier) and 22 registered declarations.
 
 - [41.3 Unramified morphisms](41-3-unramified-morphisms.md)
 - [41.4 Three other characterizations of unramified morphisms](41-4-three-other-characterizations-of-unramified.md)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Chinese remainder theorem for polynomial quotients
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/chinese-remainder-theorem-for-polynomial-quotien/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/chinese-remainder-theorem-for-polynomial-quotien/index.html).
 
 ## Ideal
 
@@ -21,7 +21,7 @@ $I_i + I_j = R$ for $i \ne j$. Then the map sending the class of $r \in R$ to
 $(r \bmod I_i)_{i \in \iota}$ is an isomorphism of $K$-algebras from $R / \bigcap_i I_i$ to
 $\prod_i R / I_i$.
 
-Formalized by `Ideal.quotientInfAlgEquivPiQuotient`, a definition declared in [MathlibExt/RingTheory/Polynomial/AdjoinRootTensorProduct.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Polynomial/AdjoinRootTensorProduct.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/chinese-remainder-theorem-for-polynomial-quotien/index.html#quotient-inf-alg-equiv-pi-quotient).
+Formalized by `Ideal.quotientInfAlgEquivPiQuotient`, a definition declared in [MathlibExt/RingTheory/Polynomial/AdjoinRootTensorProduct.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Polynomial/AdjoinRootTensorProduct.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/chinese-remainder-theorem-for-polynomial-quotien/index.html#quotient-inf-alg-equiv-pi-quotient).
 
 ## Base change of $K(X)/(f)$ along a factorization of $f$ over $K'$
 
@@ -41,7 +41,7 @@ classes of $c\,p$ modulo the $g_i$, with $p$ read in $K'[X]$.
 
 - This is the algebraic decomposition in ATLAS N86, Corollary 4.39 of [MIT 18.785 *Number Theory I*](https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/). The corresponding upstream declaration is [`TensorSplitting.adjoinRoot_tensor_algEquiv_prod`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/Chapter4/TensorSplitting.lean#L146-L160). There, `L` is presented as `K[X] / (f)`, the extension `K' / K` is arbitrary, and the distinct irreducible factors of `f` over `K'` are represented here by `g`, `hirr`, `hne`, and `hprod`. The source assumes that `f` is irreducible and separable in order to say that `L / K` is a finite separable field extension. Those assumptions are not needed for this CRT decomposition of the explicitly presented algebra `AdjoinRoot f`; accordingly, this theorem makes no stronger field or finite-etale claim about its factors.
 
-Formalized by `AdjoinRoot.tensorProductAlgEquivPi`, a definition declared in [MathlibExt/RingTheory/Polynomial/AdjoinRootTensorProduct.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Polynomial/AdjoinRootTensorProduct.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/chinese-remainder-theorem-for-polynomial-quotien/index.html#tensor-product-alg-equiv-pi).
+Formalized by `AdjoinRoot.tensorProductAlgEquivPi`, a definition declared in [MathlibExt/RingTheory/Polynomial/AdjoinRootTensorProduct.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Polynomial/AdjoinRootTensorProduct.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/chinese-remainder-theorem-for-polynomial-quotien/index.html#tensor-product-alg-equiv-pi).
 
 ## Depends on
 
@@ -50,4 +50,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Chinese remainder theorem for polynomial quotients](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ideals-and-constructions/chinese-remainder-theorem-for-polynomial-quotien/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/ideals-and-constructions/chinese-remainder-theorem-for-polynomial-quotien)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/ideals-and-constructions/chinese-remainder-theorem-for-polynomial-quotien)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Intersecting families, Sperner theory and sunflowers: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/index.html).
 
 Erdős–Ko–Rado and its variants, Chvátal's conjecture, forbidden and singleton intersections, comparable pairs, union-free and union-closed families, shadows (Kruskal–Katona, Macaulay), Harper's isoperimetric inequality, and sunflower bounds.
 
@@ -31,7 +31,7 @@ inequality and induction on coordinate slices (their route from Theorem 1 to The
 
 - Bernardo M. Ábrego, Silvia Fernández-Merchant, and Bernardo Llano, "An Inequality for Macaulay Functions," Journal of Integer Sequences 14 (2011), Theorem M, lines 215–223. Source: <https://cs.uwaterloo.ca/journals/JIS/VOL14/Abrego/abrego2.tex>.
 
-Formalized by `MetaMathlibExt.macaulay_multiset_shadow_minimal`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MacaulayMonomialShadow.lean, line 1503](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MacaulayMonomialShadow.lean#L1503). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/index.html#macaulay-multiset-shadow-minimal).
+Formalized by `MetaMathlibExt.macaulay_multiset_shadow_minimal`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MacaulayMonomialShadow.lean, line 1503](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MacaulayMonomialShadow.lean#L1503). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/index.html#macaulay-multiset-shadow-minimal).
 
 ## Depends on
 
@@ -40,4 +40,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Intersecting families, Sperner theory and sunflowers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/extremal-set-theory/intersecting-families)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/extremal-set-theory/intersecting-families)

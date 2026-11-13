@@ -7,7 +7,7 @@ statement: formalized
 
 # Impartial pebbling games
 
-42 results, 19 proved and 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html).
+42 results, 19 proved and 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html).
 
 ## A $(k+1:k)$-pebbling move
 
@@ -24,7 +24,7 @@ Subtraction is truncated at $0$, so $b_i = 0$ when $i \ne j$ and $a_i < k + 1$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 1 (definition of a `(k+1:k)`-pebbling move).
 
-Formalized by `MetaMathlibExt.pebblingStep`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-step).
+Formalized by `MetaMathlibExt.pebblingStep`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-step).
 
 ## A pebbling move removes exactly one pebble
 
@@ -38,7 +38,7 @@ $\sum_x b(x) + 1 = \sum_x a(x)$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 1 (definition of a `(k+1:k)`-pebbling move).
 
-Formalized by `MetaMathlibExt.sum_pebblingStep_add_one`, a theorem declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#sum-pebbling-step-add-one).
+Formalized by `MetaMathlibExt.sum_pebblingStep_add_one`, a theorem declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#sum-pebbling-step-add-one).
 
 ## Moves of the $(k+1:k)$-pebbling game
 
@@ -52,7 +52,7 @@ $k + 1$ pebbles from $i$ and add $k$ pebbles to $j$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 1 (successors of a game).
 
-Formalized by `MetaMathlibExt.pebblingMoves`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-moves).
+Formalized by `MetaMathlibExt.pebblingMoves`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-moves).
 
 ## Successors of a pebbling position
 
@@ -67,7 +67,7 @@ pebbles to $j$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 1 (successors of a game).
 
-Formalized by `MetaMathlibExt.mem_pebblingMoves`, a theorem declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#mem-pebbling-moves).
+Formalized by `MetaMathlibExt.mem_pebblingMoves`, a theorem declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#mem-pebbling-moves).
 
 ## The $(k+1:k)$-pebbling game
 
@@ -84,7 +84,7 @@ Its designated start position, which is not used, is the empty distribution.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 1.
 
-Formalized by `MetaMathlibExt.pebblingGame`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-game).
+Formalized by `MetaMathlibExt.pebblingGame`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-game).
 
 ## Positions with at most $k$ pebbles on every vertex are P-positions
 
@@ -99,7 +99,7 @@ Such a position is terminating: no move is possible from it.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 1 (terminating games are P-games).
 
-Formalized by `MetaMathlibExt.pebblingGame_isP_of_forall_le`, a theorem declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-game-is-p-of-forall-le).
+Formalized by `MetaMathlibExt.pebblingGame_isP_of_forall_le`, a theorem declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-game-is-p-of-forall-le).
 
 ## Totals at which every pebbling game is an N-game
 
@@ -117,7 +117,7 @@ lies in the set, because the empty position is a P-position.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 1 (definition of `m^{(k+1:k)}(G)`).
 
-Formalized by `MetaMathlibExt.pebblingAllNTotals`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-all-ntotals).
+Formalized by `MetaMathlibExt.pebblingAllNTotals`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-all-ntotals).
 
 ## The total zero is never an all-N total
 
@@ -130,7 +130,7 @@ the empty position admits no move, so it is a P-game.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 1 (definition of `m^{(k+1:k)}(G)`).
 
-Formalized by `MetaMathlibExt.zero_not_mem_pebblingAllNTotals`, a theorem declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#zero-not-mem-pebbling-all-ntotals).
+Formalized by `MetaMathlibExt.zero_not_mem_pebblingAllNTotals`, a theorem declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#zero-not-mem-pebbling-all-ntotals).
 
 ## Winning positions of $(2:1)$-pebbling on $K_2$
 
@@ -144,7 +144,7 @@ only if $a_0 \equiv a_1 \pmod 3$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 1(a), quoting E. Fiorini, M. Lind, A. Woldar, and T. W. H. Wong, J. Integer Sequences 24 (2021), Article 21.6.4.
 
-Stated but not proved: `MetaMathlibExt.pebbling_completeTwo_isN_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-two-is-n-iff).
+Stated but not proved: `MetaMathlibExt.pebbling_completeTwo_isN_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-two-is-n-iff).
 
 ## No all-N threshold for $(2:1)$-pebbling on $K_2$
 
@@ -156,7 +156,7 @@ $m^{(2:1)}(K_2)$, the least total at which every game is an N-game, does not exi
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 1(a), quoting Fiorini, Lind, Woldar, and Wong (2021).
 
-Stated but not proved: `MetaMathlibExt.pebblingAllNTotals_completeTwo_eq_empty` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-all-ntotals-complete-two-eq-emp).
+Stated but not proved: `MetaMathlibExt.pebblingAllNTotals_completeTwo_eq_empty` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-all-ntotals-complete-two-eq-emp).
 
 ## All-N threshold of $(2:1)$-pebbling on $K_3$
 
@@ -168,7 +168,7 @@ $m^{(2:1)}(K_3)$, exists and equals $7$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 1(b), quoting Fiorini, Lind, Woldar, and Wong (2021).
 
-Stated but not proved: `MetaMathlibExt.isLeast_pebblingAllNTotals_completeThree_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#is-least-pebbling-all-ntotals-complete-t).
+Stated but not proved: `MetaMathlibExt.isLeast_pebblingAllNTotals_completeThree_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#is-least-pebbling-all-ntotals-complete-t).
 
 ## All-N threshold of $(2:1)$-pebbling on $K_4$
 
@@ -180,7 +180,7 @@ $m^{(2:1)}(K_4)$, exists and equals $23$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 1(c), quoting Fiorini, Lind, Woldar, and Wong (2021).
 
-Stated but not proved: `MetaMathlibExt.isLeast_pebblingAllNTotals_completeFour_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#is-least-pebbling-all-ntotals-complete-f).
+Stated but not proved: `MetaMathlibExt.isLeast_pebblingAllNTotals_completeFour_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#is-least-pebbling-all-ntotals-complete-f).
 
 ## All-N threshold of $(2:1)$-pebbling on $K_n$ for odd $n$
 
@@ -192,7 +192,7 @@ pebbles in total is an N-game, written $m^{(2:1)}(K_n)$, exists and equals $n + 
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 1(d), quoting Fiorini, Lind, Woldar, and Wong (2021).
 
-Stated but not proved: `MetaMathlibExt.isLeast_pebblingAllNTotals_complete_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#is-least-pebbling-all-ntotals-complete-o).
+Stated but not proved: `MetaMathlibExt.isLeast_pebblingAllNTotals_complete_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#is-least-pebbling-all-ntotals-complete-o).
 
 ## All-N threshold of $(2:1)$-pebbling on $K_n$ for even $n$
 
@@ -204,7 +204,7 @@ pebbles in total is an N-game, written $m^{(2:1)}(K_n)$, exists and equals $n + 
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 1(e), quoting Fiorini, Lind, Woldar, and Wong (2021).
 
-Stated but not proved: `MetaMathlibExt.isLeast_pebblingAllNTotals_complete_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#is-least-pebbling-all-ntotals-complete-e).
+Stated but not proved: `MetaMathlibExt.isLeast_pebblingAllNTotals_complete_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#is-least-pebbling-all-ntotals-complete-e).
 
 ## All-N threshold of $(k+1:k)$-pebbling on $K_3$
 
@@ -216,7 +216,7 @@ total is an N-game, written $m^{(k+1:k)}(K_3)$, exists and equals $6k + 1$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.isLeast_pebblingAllNTotals_completeThree` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#is-least-pebbling-all-ntotals-complete-t-2).
+Stated but not proved: `MetaMathlibExt.isLeast_pebblingAllNTotals_completeThree` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#is-least-pebbling-all-ntotals-complete-t-2).
 
 ## Pebbling on the triangle: a single pile of 2k+3 pebbles is a P-position
 
@@ -229,7 +229,7 @@ $2k + 3$ pebbles on one vertex and none on the other two is a P-position.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isP_twoKAddThree` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-p-two-kadd-th).
+Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isP_twoKAddThree` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-p-two-kadd-th).
 
 ## Pebbling on the triangle: a two-parameter family of P-positions
 
@@ -243,7 +243,7 @@ $2k - 1 - \ell_1 - \ell_2$, $k - \ell_1$ and $k - \ell_2$ in some order is a P-p
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isP_twoKSubOne` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-p-two-ksub-on).
+Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isP_twoKSubOne` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-p-two-ksub-on).
 
 ## Pebbling on the triangle: piles 4k+1, k-1, k-1 form a P-position
 
@@ -256,7 +256,7 @@ are $4k + 1$, $k - 1$ and $k - 1$ in some order is a P-position.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isP_fourKAddOne` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-p-four-kadd-o).
+Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isP_fourKAddOne` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-p-four-kadd-o).
 
 ## Pebbling on the triangle: a reply that brings every pile below the bound
 
@@ -272,7 +272,7 @@ reachable from $b$ by one move in which every pile has at most $3k - \ell - 1$ p
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.pebbling_completeThree_response_lowersMax` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-response-lowers).
+Stated but not proved: `MetaMathlibExt.pebbling_completeThree_response_lowersMax` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-response-lowers).
 
 ## Pebbling on the triangle: total 6k-2ℓ with no pile above half is a P-position
 
@@ -286,7 +286,7 @@ every pile is at most $3k - \ell$ is a P-position.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isP_of_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-p-of-le).
+Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isP_of_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-p-of-le).
 
 ## Pebbling on the triangle: N-positions with total 6k-2ℓ+1 and a small pile
 
@@ -301,7 +301,7 @@ N-position, that is, not a P-position.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isN_of_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-n-of-le).
+Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isN_of_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-n-of-le).
 
 ## Pebbling on the triangle: total 6k-1 with every pile at most 4k
 
@@ -314,7 +314,7 @@ pebbles in total in which every pile is at most $4k$ is an N-position, that is, 
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Corollary 10.
 
-Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isN_of_le_fourK` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-n-of-le-four).
+Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isN_of_le_fourK` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-n-of-le-four).
 
 ## Pebbling on the triangle: N-positions with an empty vertex
 
@@ -331,7 +331,7 @@ The paper's ordering $a_1 \ge a_2$ follows from these hypotheses.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Lemma 11.
 
-Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isN_of_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-n-of-zero).
+Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isN_of_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-n-of-zero).
 
 ## Pebbling on the triangle: total 6k-1 with a pile of at least 4k+1
 
@@ -346,7 +346,7 @@ P-position.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Lemma 12.
 
-Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isN_of_ge_fourKAddOne` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-n-of-ge-four).
+Stated but not proved: `MetaMathlibExt.pebbling_completeThree_isN_of_ge_fourKAddOne` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-complete-three-is-n-of-ge-four).
 
 ## The set $X_{aaab}$ of $C_4$ positions
 
@@ -359,7 +359,7 @@ $a_i \equiv a_{i+1} \equiv a_{i+2} \pmod 3$ and $a_{i-1} \not\equiv a_i \pmod 3$
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definition of `X_{aaab}`).
 
-Formalized by `MetaMathlibExt.C4PatternAAAB`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-aaab).
+Formalized by `MetaMathlibExt.C4PatternAAAB`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-aaab).
 
 ## The set $X_{abab}$ of $C_4$ positions
 
@@ -371,7 +371,7 @@ when $a_0 \equiv a_2 \pmod 3$, $a_1 \equiv a_3 \pmod 3$ and $a_0 \not\equiv a_1 
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definition of `X_{abab}`).
 
-Formalized by `MetaMathlibExt.C4PatternABAB`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 330](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L330). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-abab).
+Formalized by `MetaMathlibExt.C4PatternABAB`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 330](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L330). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-abab).
 
 ## The set $X_{aabc}$ of $C_4$ positions
 
@@ -384,7 +384,7 @@ that $a_i$, $a_{i+2}$ and $a_{i-1}$ are pairwise incongruent modulo $3$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definition of `X_{aabc}`).
 
-Formalized by `MetaMathlibExt.C4PatternAABC`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-aabc).
+Formalized by `MetaMathlibExt.C4PatternAABC`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-aabc).
 
 ## The set $X_{abac}$ of $C_4$ positions
 
@@ -397,7 +397,7 @@ such that $a_i$, $a_{i+1}$ and $a_{i-1}$ are pairwise incongruent modulo $3$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definition of `X_{abac}`).
 
-Formalized by `MetaMathlibExt.C4PatternABAC`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-abac).
+Formalized by `MetaMathlibExt.C4PatternABAC`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-abac).
 
 ## The set $\hat X_{aabb}$ of $C_4$ positions
 
@@ -410,7 +410,7 @@ $a_i \equiv a_{i+1} \pmod 3$ and $a_{i+2} \equiv a_{i-1} \pmod 3$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definition of `\hat X_{aabb}`).
 
-Formalized by `MetaMathlibExt.C4PatternAABBHat`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-aabbhat).
+Formalized by `MetaMathlibExt.C4PatternAABBHat`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-aabbhat).
 
 ## The set $Y_{aabc}$ of $C_4$ positions
 
@@ -423,7 +423,7 @@ and $a_{i+1} \equiv a_{i-1} + 1 \pmod 4$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definition of `Y_{aabc}`).
 
-Formalized by `MetaMathlibExt.C4ModFourAABC`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-mod-four-aabc).
+Formalized by `MetaMathlibExt.C4ModFourAABC`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-mod-four-aabc).
 
 ## The set $\hat Y_{abac}$ of $C_4$ positions
 
@@ -436,7 +436,7 @@ and $a_{i+1} \equiv a_{i-1} + 1 \pmod 4$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definition of `\hat Y_{abac}`).
 
-Formalized by `MetaMathlibExt.C4ModFourABACHat`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 374](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L374). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-mod-four-abachat).
+Formalized by `MetaMathlibExt.C4ModFourABACHat`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 374](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L374). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-mod-four-abachat).
 
 ## The set $\hat Y_{abab}$ of $C_4$ positions
 
@@ -448,7 +448,7 @@ $\hat Y_{abab}$ when $a_0 \equiv a_2 \pmod 4$ and $a_1 \equiv a_3 \pmod 4$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definition of `\hat Y_{abab}`).
 
-Formalized by `MetaMathlibExt.C4ModFourABABHat`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-mod-four-ababhat).
+Formalized by `MetaMathlibExt.C4ModFourABABHat`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-mod-four-ababhat).
 
 ## The complement set $(\hat Y_{abab})^c$ of $C_4$ positions
 
@@ -461,7 +461,7 @@ not lie in $\hat Y_{abab}$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definition of `(\hat Y_{abab})^c`).
 
-Formalized by `MetaMathlibExt.C4ModFourABABHatCompl`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-mod-four-ababhat-compl).
+Formalized by `MetaMathlibExt.C4ModFourABABHatCompl`, a definition declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-mod-four-ababhat-compl).
 
 ## Examples of the mod-$3$ pattern classes on $C_4$
 
@@ -474,7 +474,7 @@ $(0,0,1,2) \in X_{aabc}$, $(0,1,0,2) \in X_{abac}$, and $(0,0,0,0) \notin X_{aaa
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definitions of the sets `X`).
 
-Formalized by `MetaMathlibExt.c4Pattern_examples`, a theorem declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-examples).
+Formalized by `MetaMathlibExt.c4Pattern_examples`, a theorem declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-examples).
 
 ## Examples of positions in the sets $Y$ for $C_4$
 
@@ -487,7 +487,7 @@ in $\hat Y_{abab}$, and the position $(1, 1, 0, 0)$ lies in $(\hat Y_{abab})^c$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Section 3 (definitions of the sets `Y`).
 
-Formalized by `MetaMathlibExt.c4ModFour_examples`, a theorem declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-mod-four-examples).
+Formalized by `MetaMathlibExt.c4ModFour_examples`, a theorem declared in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-mod-four-examples).
 
 ## Invariance of the mod-$3$ pattern classes under symmetric replies on $C_4$
 
@@ -505,7 +505,7 @@ $X_{aabc}$, $X_{abac}$ and $\hat X_{aabb}$, if $a$ lies in the set, then so does
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Lemma 14.
 
-Stated but not proved: `MetaMathlibExt.c4Pattern_invariant_rotationalSymmetric_reflectional` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-invariant-rotational-symmetri).
+Stated but not proved: `MetaMathlibExt.c4Pattern_invariant_rotationalSymmetric_reflectional` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-invariant-rotational-symmetri).
 
 ## Closure of the mod-$3$ pattern classes under moves on $C_4$
 
@@ -520,7 +520,7 @@ $b \in X_{aaab} \cup X_{abab} \cup X_{aabc}$.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Lemma 15.
 
-Stated but not proved: `MetaMathlibExt.c4Pattern_closed_under_moves` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-closed-under-moves).
+Stated but not proved: `MetaMathlibExt.c4Pattern_closed_under_moves` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#c4-pattern-closed-under-moves).
 
 ## Parity decides $(2:1)$-pebbling on $C_4$ in $\hat X_{aabb} \cup X_{abac}$
 
@@ -537,7 +537,7 @@ Then $a$ is a P-position if and only if $a_0 + a_1 + a_2 + a_3$ is even.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 16.
 
-Stated but not proved: `MetaMathlibExt.pebbling_cycleFour_isP_iff_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-cycle-four-is-p-iff-even).
+Stated but not proved: `MetaMathlibExt.pebbling_cycleFour_isP_iff_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-cycle-four-is-p-iff-even).
 
 ## Positions in $\hat Y_{abab}$ are P-positions of $(2:1)$-pebbling on $C_4$
 
@@ -554,7 +554,7 @@ which lies in $\hat Y_{abab}$ and is a P-position because no move is possible fr
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 17.
 
-Stated but not proved: `MetaMathlibExt.pebbling_cycleFour_isP_of_modFourABABHat` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-cycle-four-is-p-of-mod-four-aba).
+Stated but not proved: `MetaMathlibExt.pebbling_cycleFour_isP_of_modFourABABHat` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-cycle-four-is-p-of-mod-four-aba).
 
 ## Positions in $(X_{abab} \cup X_{aabc} \cup X_{aaab}) \cap \hat Y_{abac}$ are P-positions of $(2:1)$-pebbling on $C_4$
 
@@ -574,7 +574,7 @@ Then $a$ is a P-position.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 18.
 
-Stated but not proved: `MetaMathlibExt.pebbling_cycleFour_isP_of_modFourABACHat` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 475](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L475). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-cycle-four-is-p-of-mod-four-aba-2).
+Stated but not proved: `MetaMathlibExt.pebbling_cycleFour_isP_of_modFourABACHat` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 475](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L475). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-cycle-four-is-p-of-mod-four-aba-2).
 
 ## Positions in $Y_{aabc}$ are N-positions of $(2:1)$-pebbling on $C_4$
 
@@ -588,7 +588,7 @@ $a_{i+1} \equiv a_{i-1} + 1 \pmod 4$. Then $a$ is an N-position, that is, not a 
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 19.
 
-Stated but not proved: `MetaMathlibExt.pebbling_cycleFour_isN_of_modFourAABC` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 484](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L484). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-cycle-four-is-n-of-mod-four-aab).
+Stated but not proved: `MetaMathlibExt.pebbling_cycleFour_isN_of_modFourAABC` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 484](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L484). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-cycle-four-is-n-of-mod-four-aab).
 
 ## Positions in $(X_{abab} \cup X_{aabc} \cup X_{aaab}) \cap (\hat Y_{abab})^c$ are N-positions of $(2:1)$-pebbling on $C_4$
 
@@ -609,7 +609,7 @@ P-position.
 
 - Barker, DeStefano, Fiorini, Gohn, Miller, Roeder, and Wong, *Generalized Impartial Two-player Pebbling Games on `K_3` and `C_4`*, Journal of Integer Sequences 27 (2024), Article 24.5.8, Theorem 20.
 
-Stated but not proved: `MetaMathlibExt.pebbling_cycleFour_isN_of_modFourABABHatCompl` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-cycle-four-is-n-of-mod-four-aba).
+Stated but not proved: `MetaMathlibExt.pebbling_cycleFour_isN_of_modFourABABHatCompl` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImpartialPebblingGameWanted.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html#pebbling-cycle-four-is-n-of-mod-four-aba).
 
 ## Depends on
 
@@ -618,4 +618,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Impartial pebbling games](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/combinatorial-games/impartial-pebbling-games)

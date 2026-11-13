@@ -8,7 +8,7 @@ proof: formalized
 
 # Bernoulli numbers and polynomials: its own results
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/index.html).
 
 Bernoulli numbers and polynomials, identities, denominators, Kummer congruences, Faulhaber sums, Appell sequences, higher-order and Apostol variants.
 
@@ -20,7 +20,7 @@ is the sequence of Apostol–Bernoulli numbers $\beta_k(\alpha)$ when $\alpha \n
 $\alpha \ne 1$, and for every complex number $t$ with $|t| < |\log \alpha|$ the series
 $\sum_{k \ge 0} \beta_k t^k / k!$ converges unconditionally to $t / (\alpha e^t - 1)$.
 
-Formalized by `MetaMathlibExt.IsApostolBernoulliSequence`, a definition declared in [MathlibExt/NumberTheory/ApostolBernoulliNumber.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ApostolBernoulliNumber.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/index.html#is-apostol-bernoulli-sequence).
+Formalized by `MetaMathlibExt.IsApostolBernoulliSequence`, a definition declared in [MathlibExt/NumberTheory/ApostolBernoulliNumber.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ApostolBernoulliNumber.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/index.html#is-apostol-bernoulli-sequence).
 
 ## Appell sequence
 
@@ -29,7 +29,7 @@ $(p_n)_{n \ge 0}$ over $R$ is an Appell sequence when, for every $n$, the polyno
 degree exactly $n$ (in particular $p_n \ne 0$) and the formal derivative of $p_{n+1}$ equals
 $(n + 1)\, p_n$.
 
-Formalized by `MetaMathlibExt.IsAppellSequence`, a definition declared in [MathlibExt/NumberTheory/AppellSequence.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/AppellSequence.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/index.html#is-appell-sequence).
+Formalized by `MetaMathlibExt.IsAppellSequence`, a definition declared in [MathlibExt/NumberTheory/AppellSequence.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/AppellSequence.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/index.html#is-appell-sequence).
 
 ## Faulhaber-type summation formula for Bernoulli polynomials
 
@@ -45,7 +45,7 @@ $$\sum_{j=1}^{n} B_k(X + j) = \frac{1}{k+1} \sum_{r=0}^{k} \binom{k+1}{r+1}
 
 - Claudio de J. Pita Ruiz V., *Carlitz-Type and Other Bernoulli Identities*, Journal of Integer Sequences 19 (2016), Article 16.1.8, <https://cs.uwaterloo.ca/journals/JIS/VOL19/Pita/pita23.tex>, Proposition [Faulhaber-type formula], equation (5.32), lines 1001-1007.
 
-Formalized by `MetaMathlibExt.faulhaber_bernoulli_polynomial_sum`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/FaulhaberBernoulliPolynomialSummation.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/FaulhaberBernoulliPolynomialSummation.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/index.html#faulhaber-bernoulli-polynomial-sum).
+Formalized by `MetaMathlibExt.faulhaber_bernoulli_polynomial_sum`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/FaulhaberBernoulliPolynomialSummation.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/FaulhaberBernoulliPolynomialSummation.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/index.html#faulhaber-bernoulli-polynomial-sum).
 
 ## Kummer's congruence
 
@@ -67,7 +67,7 @@ Ireland--Rosen, Ch. 15 §2, and Washington, Cor. 5.14, back to Kummer's 1851 pap
 
 - Ernst Eduard Kummer, "Über eine allgemeine Eigenschaft der rationalen Entwickelungscoefficienten einer bestimmten Gattung analytischer Functionen," Journal für die reine und angewandte Mathematik 41 (1851), 368–372, DOI 10.1515/crll.1851.41.368, https://doi.org/10.1515/crll.1851.41.368.
 
-Formalized by `MetaMathlibExt.kummer_congruence`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/KummerCongruence.lean, line 699](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/KummerCongruence.lean#L699). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/index.html#kummer-congruence).
+Formalized by `MetaMathlibExt.kummer_congruence`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/KummerCongruence.lean, line 699](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/KummerCongruence.lean#L699). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/index.html#kummer-congruence).
 
 ## Depends on
 
@@ -76,4 +76,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bernoulli numbers and polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/bernoulli-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/bernoulli-numbers)

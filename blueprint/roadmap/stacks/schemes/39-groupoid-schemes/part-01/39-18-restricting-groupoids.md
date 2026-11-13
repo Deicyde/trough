@@ -8,13 +8,13 @@ proof: formalized
 
 # 39.18 Restricting groupoids
 
-Section 39.18 of the Stacks Project, [Tag 02VA](https://stacks.math.columbia.edu/tag/02VA). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 39.18 of the Stacks Project, [Tag 02VA](https://stacks.math.columbia.edu/tag/02VA). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02VB, a lemma
 
 [Tag 02VB](https://stacks.math.columbia.edu/tag/02VB) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean#L69).
+**`AlgebraicGeometry.GroupoidScheme.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean#L69).
 
 > Restriction of a groupoid scheme along a morphism to its scheme of objects.
 
@@ -23,7 +23,7 @@ noncomputable def restrict {S : Scheme.{u}} (G : Stacks.Groupoids.GroupoidScheme
     {U' : Over S} (g : U' ⟶ G.objects) : Restriction G g
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.restrictGroupoid_isRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoidDisplayed.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoidDisplayed.lean#L401).
+**`AlgebraicGeometry.GroupoidScheme.restrictGroupoid_isRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoidDisplayed.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoidDisplayed.lean#L400).
 
 > **Stacks Lemma 02VB.**  Let `(U, R, s, t, c)` be a groupoid scheme over `S` and
 > `g : U' ⟶ U` a morphism.  With `R' = (U' ×_{g, U, t} R) ×_R (R ×_{s, U, g} U')` the iterated
@@ -82,7 +82,7 @@ theorem restrictGroupoid_isRestriction :
 
 [Tag 02VC](https://stacks.math.columbia.edu/tag/02VC) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean#L69). The attribute's comment: “the restriction R|\_\{U'} of a groupoid scheme to U', with its morphism to the”.
+**`AlgebraicGeometry.GroupoidScheme.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean#L69). The attribute's comment: “the restriction R|\_\{U'} of a groupoid scheme to U', with its morphism to the”.
 
 > Restriction of a groupoid scheme along a morphism to its scheme of objects.
 
@@ -95,7 +95,7 @@ noncomputable def restrict {S : Scheme.{u}} (G : Stacks.Groupoids.GroupoidScheme
 
 [Tag 02VD](https://stacks.math.columbia.edu/tag/02VD) in the Stacks Project.
 
-**`AlgebraicGeometry.restriction_groupoidScheme_agrees_restriction_preRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionRelation.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionRelation.lean#L417).
+**`AlgebraicGeometry.restriction_groupoidScheme_agrees_restriction_preRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionRelation.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionRelation.lean#L417).
 
 > Restricting groupoid schemes and restricting (pre-)equivalence relations
 > agree via the constructions of Tags 0232 and 0233.
@@ -143,7 +143,7 @@ theorem restriction_groupoidScheme_agrees_restriction_preRelation {S : Scheme.{u
 
 [Tag 04ML](https://stacks.math.columbia.edu/tag/04ML) in the Stacks Project.
 
-**`AlgebraicGeometry.restrictStabilizerIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionStabilizer.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionStabilizer.lean#L238).
+**`AlgebraicGeometry.restrictStabilizerIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionStabilizer.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionStabilizer.lean#L238).
 
 > **Stacks Project, Tag 04ML.** The stabilizer of a restricted groupoid scheme is canonically
 > the base change of the original stabilizer.
@@ -165,4 +165,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 39.18, Tag 02VA](https://stacks.math.columbia.edu/tag/02VA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

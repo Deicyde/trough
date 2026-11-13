@@ -7,7 +7,7 @@ statement: formalized
 
 # Number of arithmetic progressions in dense sets
 
-7 results, 5 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html).
+7 results, 5 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html).
 
 ## Containing a $k$-term arithmetic progression
 
@@ -16,7 +16,7 @@ contains a $k$-term arithmetic progression when there are natural numbers $a$ an
 $a + i d \in A$ for every natural number $i < k$, that is, $a, a + d, \dots, a + (k - 1) d$ all
 lie in $A$. For $k = 0$ this holds vacuously.
 
-Formalized by `MathlibExt.Combinatorics.ManyThreeTermProgressionsErdosProblem179Wanted.HasAP`, a definition declared in [WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html#has-ap).
+Formalized by `MathlibExt.Combinatorics.ManyThreeTermProgressionsErdosProblem179Wanted.HasAP`, a definition declared in [WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html#has-ap).
 
 ## Number of $k$-term arithmetic progressions in a set
 
@@ -27,7 +27,7 @@ every natural number $i < k$. For $k \ge 2$ the conditions $a \in A$ and $d \le 
 from the others, so $\mathrm{AP}_k(A)$ counts the $k$-term progressions
 $a, a + d, \dots, a + (k - 1) d$ in $A$ with $d \ge 1$.
 
-Formalized by `MathlibExt.Combinatorics.ManyThreeTermProgressionsErdosProblem179Wanted.apCount`, a definition declared in [WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html#ap-count).
+Formalized by `MathlibExt.Combinatorics.ManyThreeTermProgressionsErdosProblem179Wanted.apCount`, a definition declared in [WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html#ap-count).
 
 ## The progression threshold $F_k(N, \ell)$
 
@@ -41,7 +41,7 @@ progressions in $A$ with $d \ge 1$); if no such $m$ exists, $F_k(N, \ell) = 0$.
 For $k \ge 2$ such an $m$ always exists, since an $N$-element set has at most $N^2$ $k$-term
 progressions.
 
-Formalized by `MathlibExt.Combinatorics.ManyThreeTermProgressionsErdosProblem179Wanted.apThreshold`, a definition declared in [WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html#ap-threshold).
+Formalized by `MathlibExt.Combinatorics.ManyThreeTermProgressionsErdosProblem179Wanted.apThreshold`, a definition declared in [WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html#ap-threshold).
 
 ## Erdős Problem 179: is $F_3(N, 4) = o(N^2)$?
 
@@ -51,7 +51,7 @@ least $m$ such that every $N$-element set $A \subseteq \mathbb{N}$ containing at
 three-term arithmetic progressions $a, a + d, a + 2d$ with $d \ge 1$ contains a $4$-term
 arithmetic progression.
 
-Formalized by `MathlibExt.Combinatorics.ManyThreeTermProgressionsErdosProblem179Wanted.threeAPThresholdForFourAPLittleO`, a definition declared in [WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html#three-apthreshold-for-four-aplittle-o).
+Formalized by `MathlibExt.Combinatorics.ManyThreeTermProgressionsErdosProblem179Wanted.threeAPThresholdForFourAPLittleO`, a definition declared in [WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html#three-apthreshold-for-four-aplittle-o).
 
 ## Erdős Problem 179: does $\log F_3(N, \ell) / \log N$ tend to $2$?
 
@@ -61,7 +61,7 @@ natural numbers, where $F_3(N, \ell)$ is the least $m$ such that every $N$-eleme
 $A \subseteq \mathbb{N}$ containing at least $m$ three-term arithmetic progressions
 $a, a + d, a + 2d$ with $d \ge 1$ contains an $\ell$-term arithmetic progression.
 
-Formalized by `MathlibExt.Combinatorics.ManyThreeTermProgressionsErdosProblem179Wanted.threeAPThresholdExponentTwo`, a definition declared in [WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html#three-apthreshold-exponent-two).
+Formalized by `MathlibExt.Combinatorics.ManyThreeTermProgressionsErdosProblem179Wanted.threeAPThresholdExponentTwo`, a definition declared in [WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html#three-apthreshold-exponent-two).
 
 ## Erdős Problem 179: $F_3(N, 4) = o(N^2)$
 
@@ -82,7 +82,7 @@ $F_k(N, \ell) \le N^2 / (\log \log N)^{C_\ell}$ for a constant $C_\ell$ dependin
 
 - T. F. Bloom, Erdős Problems, Problem #179, https://www.erdosproblems.com/179 (status PROVED); resolution: J. Fox and C. Pohoata, Sets without k-term progressions can have many shorter progressions, Random Structures Algorithms 58 (2021), 383-389, arXiv:1908.09905, main theorem: for all k > s ≥ 3, log f_{s,k}(n) / log n → 2, where f_{s,k}(n) = F_s(n, k) - 1 is the largest number of s-term progressions in an n-set with no k-term progression; erdosproblems.com/179: F_k(N, ℓ) ≤ N² / (log log N)^{C_ℓ}, https://arxiv.org/abs/1908.09905.
 
-Stated but not proved: `MathlibExt.Combinatorics.ManyThreeTermProgressionsErdosProblem179Wanted.threeAPThresholdForFourAPLittleO_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html#three-apthreshold-for-four-aplittle-o-ho).
+Stated but not proved: `MathlibExt.Combinatorics.ManyThreeTermProgressionsErdosProblem179Wanted.threeAPThresholdForFourAPLittleO_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html#three-apthreshold-for-four-aplittle-o-ho).
 
 ## Erdős Problem 179: $\log F_3(N, \ell) / \log N$ tends to $2$
 
@@ -101,7 +101,7 @@ gives the statement.
 
 - T. F. Bloom, Erdős Problems, Problem #179, https://www.erdosproblems.com/179 (status PROVED); resolution: J. Fox and C. Pohoata, Sets without k-term progressions can have many shorter progressions, Random Structures Algorithms 58 (2021), 383-389, arXiv:1908.09905, main theorem: for all k > s ≥ 3, log f_{s,k}(n) / log n → 2, where f_{s,k}(n) = F_s(n, k) - 1 is the largest number of s-term progressions in an n-set with no k-term progression; erdosproblems.com/179: F_k(N, ℓ) ≤ N² / (log log N)^{C_ℓ}, https://arxiv.org/abs/1908.09905.
 
-Stated but not proved: `MathlibExt.Combinatorics.ManyThreeTermProgressionsErdosProblem179Wanted.threeAPThresholdExponentTwo_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html#three-apthreshold-exponent-two-holds).
+Stated but not proved: `MathlibExt.Combinatorics.ManyThreeTermProgressionsErdosProblem179Wanted.threeAPThresholdExponentTwo_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ManyThreeTermProgressionsErdosProblem179Wanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html#three-apthreshold-exponent-two-holds).
 
 ## Depends on
 
@@ -110,4 +110,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Number of arithmetic progressions in dense sets](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/progressions-dense-sets/number-of-arithmetic-progressions-in-dense-sets)
